@@ -32,10 +32,10 @@ FC.cases('psychology', 'u1', [
 
   /* ---------- Something one person does to another ---------- */
   { id: 'g-ret-holiday', use: 'return', tier: 'clean', setting: 'home', topic: 'weekends away with a sister',
-    text: "Each time Noelle books a weekend away with her sister, her husband tells her that the children cry for her the whole time, and that a good mother would not need to get away. She has cancelled the last two trips.",
+    text: "Each time Noelle books a weekend trip with her sister, her husband tells her that the children cry for her the whole time, and that a good mother would not need to get away. She has canceled the last two trips.",
     route: { D1: ['tactic'] },
     cues: { D1: 'her husband tells her that the children cry for her the whole time, and that a good mother would not need to get away' },
-    reason: { D1: 'One person is saying something to another, about her: {cue:D1}. The case shows where it leaves Noelle: two cancelled trips.' },
+    reason: { D1: 'One person is saying something to another, about her: {cue:D1}. The case shows where it leaves Noelle: two canceled trips.' },
     not: { outcome: 'pattern', why: 'It happens each time, but always between the same two people. The case shows no other place and no other relationship of his.' },
     wouldChange: 'If the case showed him speaking this way to his first wife, to his sisters and to the women he manages, over twenty years, it would be {a:D1.pattern}.' },
 
@@ -53,11 +53,11 @@ FC.cases('psychology', 'u1', [
     cues: { D1: ['has stopped copying him into the project emails since he questioned her figures in a meeting', 'she says he must have deleted them'] },
     reason: { D1: 'Something is done to one person, and then something is said to him, and both follow from what passed between the two of them in that meeting: {cue:D1}. The case shows where it leaves Farid: searching his own inbox.' },
     not: { outcome: 'none', why: 'This is not a mood that falls on the whole team. It falls on one person only, and it began with something he did in a meeting.' },
-    wouldChange: 'If she had been slow to answer everyone’s emails for a fortnight, after an emergency at home, it would be {a:D1.none}.' },
+    wouldChange: 'If she had been slow to answer everyone’s emails for two weeks, after an emergency at home, it would be {a:D1.none}.' },
 
   /* ---------- A lasting way someone is ---------- */
   { id: 'g-ret-coach', use: 'return', tier: 'clean', setting: 'leisure', topic: 'a coach of forty years',
-    text: "Players he coached in the 1980s, players he coaches now, and the parents of both say the same about Mr Lindqvist: he has never raised his voice, and nobody has ever left one of his sessions without one thing to practise. His own grown-up children say he was the same at home.",
+    text: "Players he coached in the 1980s, players he coaches now, and the parents of both say the same about Mr. Lindqvist: he has never raised his voice, and nobody has ever left one of his sessions without one thing to practice. His own grown-up children say he was the same at home.",
     route: { D1: ['pattern'] },
     cues: { D1: ['Players he coached in the 1980s, players he coaches now, and the parents of both say the same', 'His own grown-up children say he was the same at home'] },
     reason: { D1: 'The case is a long view of one man: {cue:D1}. Forty years, a club and a home, and players, parents and children all saying the same.' },
@@ -74,19 +74,19 @@ FC.cases('psychology', 'u1', [
 
   { id: 'g-ret-tenant', use: 'return', tier: 'varied', setting: 'money', topic: 'rent that is late most months',
     also: ['reasoning'],
-    text: "This month Corin's rent is late again, and he has a reason: his bank made an error. His landlady has kept his letters. In nine years, at this address and at the two before it, according to the landlords she rang, the rent has been late most months, and each letter gives a different reason.",
+    text: "This month Corin's rent is late again, and he has a reason: his bank made an error. His landlady has kept his letters. In nine years, at this address and at the two before it, according to the landlords she called, the rent has been late most months, and each letter gives a different reason.",
     route: { D1: ['pattern'] },
-    cues: { D1: 'In nine years, at this address and at the two before it, according to the landlords she rang, the rent has been late most months' },
+    cues: { D1: 'In nine years, at this address and at the two before it, according to the landlords she called, the rent has been late most months' },
     reason: { D1: 'The case opens on one late payment and one reason, and then gives a long view of one man: {cue:D1}. Nine years, three addresses and three landlords, with the same thing in each.' },
     not: { outcome: 'reasoning', why: 'A reason for one late payment would be {a:D1.reasoning} if the case ended there. It goes on to show the same thing for nine years and at three addresses, and when a case shows both, the answer is the larger one.' },
     wouldChange: 'If the case showed only this month’s late rent and his reason for it, it would be {a:D1.reasoning}.' },
 
   /* ---------- A passing moment ---------- */
   { id: 'g-ret-puppy', use: 'return', tier: 'clean', setting: 'home', topic: 'the week a puppy arrived',
-    text: "The week the puppy arrived, nobody in the Brennan house slept, and Mr Brennan, who is usually the calm one, shouted at the television, the toaster and a parking meter. A fortnight later the puppy was sleeping through the night, and so was he.",
+    text: "The week the puppy arrived, nobody in the Brennan house slept, and Mr. Brennan, who is usually the calm one, shouted at the television, the toaster and a parking meter. Two weeks later the puppy was sleeping through the night, and so was he.",
     route: { D1: ['none'] },
     cues: { D1: 'The week the puppy arrived' },
-    reason: { D1: 'The case is one short stretch, with something real behind it: {cue:D1}. A fortnight later it has passed, and the case even tells you he is usually the calm one.' },
+    reason: { D1: 'The case is one short stretch, with something real behind it: {cue:D1}. Two weeks later it has passed, and the case even tells you he is usually the calm one.' },
     not: { outcome: 'pattern', why: 'One week is not years, and the case says outright that this is not how he usually is.' },
     wouldChange: 'If his family said he had shouted at things in every house and every job for thirty years, it would be {a:D1.pattern}.' },
 
@@ -99,10 +99,10 @@ FC.cases('psychology', 'u1', [
     wouldChange: 'If she had told her father that his nagging was the reason she could not face the envelope, something would have been said to him about him, and it would be {a:D1.tactic}.' },
 
   { id: 'g-ret-party', use: 'return', tier: 'varied', setting: 'community', topic: 'dancing on a table at a street party',
-    text: "At the street's summer party, Mr Achterberg, whom nobody had heard say more than good morning in five years, danced on a table and sang two songs. On Monday he said good morning as usual.",
+    text: "At the street's summer party, Mr. Achterberg, whom nobody had heard say more than good morning in five years, danced on a table and sang two songs. On Monday he said good morning as usual.",
     route: { D1: ['none'] },
     cues: { D1: ["At the street's summer party", 'On Monday he said good morning as usual'] },
     reason: { D1: 'The case is one occasion: {cue:D1}. No cause is given, and none is needed. One evening is all the case shows, and by Monday it has passed.' },
     not: { outcome: 'pattern', why: 'If anything, the five years point the other way: this is not how he is. One evening on a table does not become a way of being by standing out.' },
-    wouldChange: 'If neighbours from three streets he had lived on said he did this at every party for twenty years, it would be {a:D1.pattern}.' }
+    wouldChange: 'If neighbors from three streets he had lived on said he did this at every party for twenty years, it would be {a:D1.pattern}.' }
 ]);

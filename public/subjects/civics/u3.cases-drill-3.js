@@ -15,7 +15,7 @@ FC.cases('civics', 'u3', [
     options: [
       { text: '"The bill puts a tax on every ticket, and taxing is something Congress may do."', voice: 'enumerated' },
       { text: '"Congress cannot tell every school what to read. That is for the states."', voice: 'beyondcong' },
-      { text: '"The programme is dead: nobody voted the money."', voice: 'purse' },
+      { text: '"The program is dead: nobody voted the money."', voice: 'purse' },
       { text: '"She cannot start until the Senate votes to approve her."', voice: 'confirm' }
     ],
     why: 'It is a law passed by both chambers on a matter the Constitution lists, here a tax, with no right taken away.' },
@@ -76,10 +76,10 @@ FC.cases('civics', 'u3', [
     corrected: 'Congress passed it and the President signed it. That tells you the law went through its votes, not that Congress was allowed to pass it. It is {o:enumerated} only if the matter is on the Constitution’s list and the law takes no right away.' },
 
   { id: 'claim-unfunded', use: 'claim',
-    text: '"The money for the library programme ran out, so the programme closed. That is the power of the purse."',
+    text: '"The money for the library program ran out, so the program closed. That is the power of the purse."',
     ask: { type: 'missing', name: 'purse' },
-    fault: 'The claim points at a programme closing for lack of money and stops there. It never shows Congress deciding about the money. The money may have run out because it was spent, or because an office used it up, and neither is Congress deciding. Without a vote, a cut or a gap left by Congress in the case, nothing here is {o:purse}.',
-    corrected: 'The money for the library programme ran out and the programme closed. That is {o:purse} only if the case shows Congress deciding about the money: voting it, cutting it or leaving it out.' },
+    fault: 'The claim points at a program closing for lack of money and stops there. It never shows Congress deciding about the money. The money may have run out because it was spent, or because an office used it up, and neither is Congress deciding. Without a vote, a cut or a gap left by Congress in the case, nothing here is {o:purse}.',
+    corrected: 'The money for the library program ran out and the program closed. That is {o:purse} only if the case shows Congress deciding about the money: voting it, cutting it or leaving it out.' },
 
   { id: 'claim-impeached', use: 'claim',
     text: '"The House impeached the secretary last month, so that is the end of the secretary’s time in office. Impeachment means removal."',

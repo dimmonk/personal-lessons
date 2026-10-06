@@ -44,7 +44,7 @@ FC.cards('ideology', 'u3', [
         reason: 'What will happen to the vote, and to those who disagree? The flyer asks people to come to a meeting and to vote: {cue:N2}. It does not ask for anyone\'s say to be taken away, so the vote stays.' }
     ],
     hold: {
-      neighbour: 'pop',
+      neighbor: 'pop',
       prompt: { kind: 'reason',
         lead: 'The flyer is angry at the planners and the developers, so the case can look like a text with nothing else attached.',
         choices: [
@@ -81,7 +81,7 @@ FC.cards('ideology', 'u3', [
         reason: 'What will happen to the vote, and to those who disagree? Look at the last sentences: {cue:N2}. The leader invites his opponents to stand against him and says the voters will judge between them. The vote and the right to oppose stay.' }
     ],
     hold: {
-      neighbour: 'fasc',
+      neighbor: 'fasc',
       prompt: { kind: 'reason',
         lead: 'The speech has torches, black shirts and talk of iron, so it can look like the rally speech.',
         choices: [

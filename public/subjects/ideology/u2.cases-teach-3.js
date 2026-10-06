@@ -6,22 +6,22 @@ FC.cases('ideology', 'u2', [
 
   /* ---------- Marxism ---------- */
   { id: 'c-mx-mill', use: 'teach', tier: 'clean', setting: 'work', topic: 'a mill and the gap between pay and cloth', name: 'The weaver’s sums',
-    text: "From a pamphlet written for the weavers of Hallam Mill: 'A weaver is paid £60 for a day's work. In that day she makes cloth that sells for £100, once the thread and the running of the loom are taken off. The £40 left over goes to the mill's owner, and the owner and the weavers want opposite things from it. This is not because the owner is cruel. Every owner has to keep a gap like it, because that is how the arrangement works: owners live from what workers make and are not paid for. We write this for the weavers, and for everyone who works for wages.'",
+    text: "From a pamphlet written for the weavers of Hallam Mill: 'A weaver is paid $60 for a day's work. In that day she makes cloth that sells for $100, once the thread and the running of the loom are taken off. The $40 left over goes to the mill's owner, and the owner and the weavers want opposite things from it. This is not because the owner is cruel. Every owner has to keep a gap like it, because that is how the arrangement works: owners live from what workers make and are not paid for. We write this for the weavers, and for everyone who works for wages.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'Every owner has to keep a gap like it, because that is how the arrangement works: owners live from what workers make and are not paid for' } },
 
   { id: 'c-mx-class', use: 'teach', tier: 'clean', setting: 'schooling', topic: 'an evening class on the fight over who gets what', name: 'The evening class',
-    text: "From notes for an evening class at the Greyfriars workers' school: 'Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history. The owners of today's farms, shops and banks gain from what workers make and are not paid for. We teach this to working people, so that they can see how the arrangement works, and whose side it favours.'",
+    text: "From notes for an evening class at the Grayfriars workers' school: 'Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history. The owners of today's farms, shops and banks gain from what workers make and are not paid for. We teach this to working people, so that they can see how the arrangement works, and whose side it favors.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: ['the owners and the workers fight over who gets what, and that fight is what moves history', "The owners of today's farms, shops and banks gain from what workers make and are not paid for"] },
     segments: [
       { text: 'Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history', note: 'That is half of what the text explains. The other half is how the owners gain.' },
       { text: "The owners of today's farms, shops and banks gain from what workers make and are not paid for" },
-      { text: 'We teach this to working people, so that they can see how the arrangement works, and whose side it favours', note: 'That says who the text is for and what it is for. The explanation itself is in the sentences before it.' }
+      { text: 'We teach this to working people, so that they can see how the arrangement works, and whose side it favors', note: 'That says who the text is for and what it is for. The explanation itself is in the sentences before it.' }
     ] },
 
   { id: 'c-mx-care', use: 'check', tier: 'clean', setting: 'health', topic: 'a care chain and where its profit comes from', name: 'A care chain and where its profit comes from',
-    text: "From a column in a care workers' newsletter: 'Why can a care chain make a profit at all? Because the home pays its carers less than the care is worth to the people who pay the fees. The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work. We write for the carers.'",
+    text: "From a column in a care workers' newsletter: 'Why can a care chain make a profit at all? Because the home pays its caregivers less than the care is worth to the people who pay the fees. The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work. We write for the caregivers.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work' },
     reason: { C1: 'The text does not ask for anything to be done with the homes. It explains how the owners come to make a profit: {cue:C1}. That is an explanation of how the arrangement works.' } },
@@ -39,34 +39,34 @@ FC.cases('ideology', 'u2', [
 
   /* ---------- The look-alike pair: Marxism and Marxism-Leninism (the same explanation) ---------- */
   { id: 'c-lk-mxml-mx', use: 'teach', tier: 'clean', setting: 'work', topic: 'a spinner’s gap, with no plan', name: 'A spinner’s gap, with no plan',
-    text: "From a pamphlet at the Reed Mill: 'A spinner is paid £50 for a day's work. She makes yarn that sells for £90, once the running costs are taken off. The £40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners.'",
+    text: "From a pamphlet at the Reed Mill: 'A spinner is paid $50 for a day's work. She makes yarn that sells for $90, once the running costs are taken off. The $40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'Every owner has to keep a gap like it, because that is how the arrangement works' } },
 
   { id: 'c-lk-mxml-ml', use: 'teach', tier: 'clean', setting: 'work', topic: 'a spinner’s gap, and a league taking charge', name: 'A spinner’s gap, and a league taking charge',
-    text: "From a pamphlet at the Reed Mill: 'A spinner is paid £50 for a day's work. She makes yarn that sells for £90, once the running costs are taken off. The £40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners. The spinners' party must take power and keep it, and allow no rival party.'",
+    text: "From a pamphlet at the Reed Mill: 'A spinner is paid $50 for a day's work. She makes yarn that sells for $90, once the running costs are taken off. The $40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners. The spinners' party must take power and keep it, and allow no rival party.'",
     outcome: 'ml', route: { D1: ['class'], C1: ['explain'], C2: ['seize'] },
     cues: { C1: 'Every owner has to keep a gap like it, because that is how the arrangement works', C2: "The spinners' party must take power and keep it, and allow no rival party" } },
 
   /* ---------- The look-alike pair: Marxism and Anarchism (the same explanation, put to the voters or with no government) ---------- */
   { id: 'c-lk-mxan-mx', use: 'teach', tier: 'clean', setting: 'work', topic: 'a pike-mill gap, argued to the voters', name: 'A pike-mill gap, argued to the voters',
-    text: "From a pamphlet at the Pike Mill: 'A spinner is paid £48 for a day's work. She makes yarn that sells for £85, once the running costs are taken off. The £37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we will make this case to the voters at every election.'",
+    text: "From a pamphlet at the Pike Mill: 'A spinner is paid $48 for a day's work. She makes yarn that sells for $85, once the running costs are taken off. The $37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we will make this case to the voters at every election.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['vote'] },
     cues: { C1: 'Every owner has to keep a gap like it, because that is how the arrangement works', C2: 'we will make this case to the voters at every election' } },
 
   { id: 'c-lk-mxan-an', use: 'teach', tier: 'clean', setting: 'work', topic: 'a pike-mill gap, and no rulers', name: 'A pike-mill gap, and no rulers',
-    text: "From a pamphlet at the Pike Mill: 'A spinner is paid £48 for a day's work. She makes yarn that sells for £85, once the running costs are taken off. The £37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we want no government at all: we will run the mill and the town together, in meetings.'",
+    text: "From a pamphlet at the Pike Mill: 'A spinner is paid $48 for a day's work. She makes yarn that sells for $85, once the running costs are taken off. The $37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we want no government at all: we will run the mill and the town together, in meetings.'",
     outcome: 'anarch', route: { D1: ['class'], C1: ['explain'], C2: ['gone'] },
     cues: { C1: 'Every owner has to keep a gap like it, because that is how the arrangement works', C2: 'we want no government at all: we will run the mill and the town together, in meetings' } },
 
   /* ---------- The look-alike pair: Class politics with nothing attached and Marxism (the same carpet mill) ---------- */
   { id: 'c-lk-comx-co', use: 'teach', tier: 'clean', setting: 'work', topic: 'a carpet mill and a complaint against one owner', name: 'A carpet mill and a complaint against one owner',
-    text: "From a notice at the Dunmore carpet mill: 'The owner of the carpet mill paid himself a bonus this year and told us there was no money for a raise. We are on the side of the weavers. Come to the canteen on Wednesday.'",
+    text: "From a notice at the Dunmore carpet mill: 'The owner of the carpet mill paid himself a bonus this year and told us there was no money for a raise. We are on the side of the weavers. Come to the cafeteria on Wednesday.'",
     outcome: 'classonly', route: { D1: ['class'], C1: ['none'], C2: ['none'] },
-    cues: { C1: 'Come to the canteen on Wednesday' } },
+    cues: { C1: 'Come to the cafeteria on Wednesday' } },
 
   { id: 'c-lk-comx-mx', use: 'teach', tier: 'clean', setting: 'work', topic: 'a carpet mill and an account of every owner’s gap', name: 'A carpet mill and an account of every owner’s gap',
-    text: "From a pamphlet at the Dunmore carpet mill: 'The owner of the carpet mill pays a weaver £60 for a day, and the weaver makes carpet worth £100 once the running costs are taken off. The gap is not this owner's greed. Every owner has to keep a gap like it, because that is how the arrangement works. We write this for the weavers.'",
+    text: "From a pamphlet at the Dunmore carpet mill: 'The owner of the carpet mill pays a weaver $60 for a day, and the weaver makes carpet worth $100 once the running costs are taken off. The gap is not this owner's greed. Every owner has to keep a gap like it, because that is how the arrangement works. We write this for the weavers.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'Every owner has to keep a gap like it, because that is how the arrangement works' } },
 

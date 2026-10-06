@@ -7,9 +7,9 @@ FC.cards('wealth', 'u2', [
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.',
     body: [
-      'Every case in this unit has two layers. The top layer is the story: a pension, a flat, a retirement, a shop. The layer underneath is what is taking money out of {t:pot} every year, and that is the only layer the question asks about.',
-      'The six names belong to the layer underneath. A pension can carry any of them, and so can a rented flat. Size is part of the story too: a charge of £250 and a charge of £25,000 can be the same name, and a charge of £3,000 can be a problem in one case and fine in the next.',
-      'Two more things change on purpose. One is who is paid: {t:fund}, an adviser, the tax office, or the person themselves. The other is whether anything is wrong at all. In some cases what comes out is worth it, or already as low as it can be, and one of the six names is for those. Seeing that is part of the skill, and not looking for a problem the case does not show is part of seeing it.'
+      'Every case in this unit has two layers. The top layer is the story: an IRA, a rental condo, a retirement, a shop. The layer underneath is what is taking money out of {t:pot} every year, and that is the only layer the question asks about.',
+      'The six names belong to the layer underneath. An IRA can carry any of them, and so can a rental condo. Size is part of the story too: a charge of $250 and a charge of $25,000 can be the same name, and a charge of $3,000 can be a problem in one case and fine in the next.',
+      'Two more things change on purpose. One is who is paid: {t:fund}, an adviser, the IRS, or the person themselves. The other is whether anything is wrong at all. In some cases what comes out is worth it, or already as low as it can be, and one of the six names is for those. Seeing that is part of the skill, and not looking for a problem the case does not show is part of seeing it.'
     ],
     fixed: ['what is taking money out of {t:pot} every year, which is what the question is about: {q:E1}'],
     varies: ['the kind of account', 'the people', 'the size of the sums', 'who is paid', 'whether anything is wrong at all'] },
@@ -18,20 +18,20 @@ FC.cards('wealth', 'u2', [
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:feecore} in real life, where nobody marks the words for you.',
     typical: [
       'The charge is a percentage of {t:pot}, so it grows when {t:pot} does. A pot that doubles pays twice as much for the same choosing.',
-      'It is usually split into layers: the fund’s own charge, the charge of the platform, which is the firm or website that holds the account, and the adviser’s. Each is a small percentage, and the total is what counts.',
+      'It is usually split into layers: the fund’s own charge, the account fee of the firm or website that holds the account, and the adviser’s. Each is a small percentage, and the total is what counts.',
       'It comes out of the fund’s price or out of the account without a bill. Nobody is asked to pay; the balance is simply a little lower than it would have been.',
       'The letter that describes it uses words like “selection”, “research”, “our team” or “our house view”. Those words all name choosing. A charge for choosing is the same thing whatever it is called.',
       'The person is often content. They do not know what {t:fund} that copies a published list charges, so they have nothing to compare it with.'
     ],
     not: 'A charge is not this name just because it is large, or because it is a percentage. What decides it is what the charge pays for. If the case shows named work that would not otherwise get done, at a set price, then the charge is not for choosing alone, and this name does not apply, however large the price looks. Nor does a good record change the name: two good years do not change what the charge pays for.',
     wild: ['"It\'s only 1% a year."', '"The fund takes its charge out of the price, so you never see it."', '"Our research team selects the best funds for you."', '"My adviser looks after all that."', '"The fund has beaten the market, so it has earned its charge."'],
-    self: 'In your own life you find it in the line of a statement headed “ongoing charges” or “total expense”, in the letter that says what the adviser is paid, and in the fund’s own fact sheet. Add up every layer before you decide whether the total is small.',
-    ask: '"What does this charge pay for, and how much is it every year in pounds?" If the answer is "choosing the investments" and nothing else, you are probably looking at this name.',
+    self: 'In your own life you find it in the line of a statement headed “expense ratio” or “total annual operating expenses”, in the letter that says what the adviser is paid, and in the fund’s own fact sheet. Add up every layer before you decide whether the total is small.',
+    ask: '"What does this charge pay for, and how much is it every year in dollars?" If the answer is "choosing the investments" and nothing else, you are probably looking at this name.',
     act: [
-      'First, find every charge and add them up: the fund’s yearly charge, the platform’s, and the adviser’s. Write the total as a percentage and as pounds a year on your pot.',
+      'First, find every charge and add them up: the fund’s yearly charge, the account fee, and the adviser’s. Write the total as a percentage and as dollars a year on your pot.',
       'Second, ask what each charge pays for. Ask the adviser in writing what they have done for you since they recommended the funds.',
-      'Third, find what {t:fund} that copies a published list charges, and work out the difference in pounds a year.',
-      'Fourth, find out what switching would cost. In a pension, selling the old fund and buying the new one usually brings no tax. In an ordinary account, selling can bring tax on any profit you have made, so ask for that figure before you sell.',
+      'Third, find what {t:fund} that copies a published list charges, and work out the difference in dollars a year.',
+      'Fourth, find out what switching would cost. In an IRA or a 401(k), selling the old fund and buying the new one brings no tax. In an ordinary brokerage account, selling can bring tax on any profit you have made, so ask for that figure before you sell.',
       'Fifth, if nothing else is paid for, move the money into funds that copy a published list. Write down the date and the old and new charges, so that you can check later that the change did what you expected.'
     ] },
 
@@ -58,8 +58,8 @@ FC.cards('wealth', 'u2', [
     link: 'The next name is about a cost that is already worth paying or already as low as it can be. One of the ways a cost can be as low as it can be depends on the kind of account the investments sit in, so first a word for it.',
     case: 'e-t-shelter',
     plain: [
-      'Leila holds the same fund in two places, and she pays different tax on it. In the pension, the law does not tax the £1,600 the fund pays out each year; it taxes what she takes out in old age. In the ordinary account, the £1,600 is taxed in full every year, and she pays 25% of it, £400. The fund, the amount and the income are the same. Only the place differs.',
-      'Which accounts are taxed less, and how, differs from country to country and changes often, so the cases in this unit use a general version: a pension is the sheltered account, and an ordinary investment account is not. Another name for an ordinary investment account, taxed in full, is a taxable account, and the cases may use either. The tax rate of 25% on income is an example to show how the idea works.'
+      'Leila holds the same fund in two places, and she pays different tax on it. In the IRA, the law does not tax the $1,600 the fund pays out each year; it taxes what she takes out in retirement. In the brokerage account, the $1,600 is taxed every year, and she pays 25% of it, $400. The fund, the amount and the income are the same. Only the place differs.',
+      'In the US the sheltered accounts are the ones the law sets up for retirement and a few other purposes: a 401(k) at work, an IRA, a Roth IRA (where what is taken out in retirement is not taxed at all), a health savings account (HSA) and a 529 plan for college. Each has its own rules, most have a yearly limit on what can be paid in, and Congress changes them often, so the cases in this unit use a general version: an IRA or a 401(k) is the sheltered account, and an ordinary brokerage account is not. Another name for an ordinary brokerage account is a taxable account, and the cases may use either.', 'The tax rate of 25% on income such as interest and rent is an example, standing for federal and state income tax together. Most dividends from shares are taxed at a lower rate, and the cases use 15% for them. Both rates are there to show how the idea works.'
     ],
     after: [
       'So a person who has both kinds of account has a choice about which investment goes where. Over the years that choice decides how much tax is paid on the income. An investment that pays out little costs almost nothing to hold in an ordinary account, and one that pays out a lot costs the most there.',

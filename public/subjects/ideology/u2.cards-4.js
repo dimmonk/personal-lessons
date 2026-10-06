@@ -17,7 +17,7 @@ FC.cards('ideology', 'u2', [
     explain: [
       'The earlier texts asked the government for things, or promised to win the next election and pass a law. This text does not. It says that the owners’ strength cannot be beaten by votes, so the workers must take power themselves, through a party, and hold it. And it says that no rival party will be allowed.',
       'Notice the two halves. One is how power is won: taken, and not voted for. The other is how it is kept: held by one party, with no rivals and no election it could lose. Either half is enough to point to, and a text may give one or both. What matters is that the text does not offer to give power up at an election.',
-      'People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organised party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. This course does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.',
+      'People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organized party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. This course does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.',
       'On this card the marked words answer the question about the government, and not the one about the businesses. That is because here the words about power are what decide, and the words about the mills could be changed without changing the name.'
     ],
     feature: { step: 'C2', option: 'seize' },
@@ -40,12 +40,12 @@ FC.cards('ideology', 'u2', [
       'A party, a committee or the workers themselves are to take power, and the text says so.',
       'It usually says why votes will not do: the owners and their allies are too strong, or elections only leave things as they are.',
       'Power is to be held, not lent: no rival parties, and no election the party could lose, at least until the change is done.',
-      'The language is often of struggle, discipline and organisation.',
+      'The language is often of struggle, discipline and organization.',
       'The text may name the businesses, and say they pass to the government the party forms. It may also name nothing but the taking of power.'
     ],
     not: 'Wanting big changes is not enough, and neither is anger. A text that wants the businesses handed over by a vote is {o:demsoc}, however fiercely it says so. A text that is on the workers’ side and says nothing about who holds power is not this name. What you point to is the party, or the workers, taking power and keeping it, with no offer to give it up at an election.',
     wild: ['"The party will take power, and the party will keep it."', '"No rival parties while the change is in danger."', '"Elections are a game the owners always win."', '"A disciplined party must lead the workers."'],
-    self: 'In your own life it is mostly the way a word like "communist" is thrown about: at a union, at a plan for a public health service, at a neighbour. Check the words before you use the name. Does the text say that a party will take power and keep it?',
+    self: 'In your own life it is mostly the way a word like "communist" is thrown about: at a union, at a plan for a public health service, at a neighbor. Check the words before you use the name. Does the text say that a party will take power and keep it?',
     ask: '"Does the text say that a party, or the workers, will take power and keep it, and does it offer to give it up at an election?" If it says neither, this is not the name.' },
 
   { id: 'check-ml', kind: 'check', after: 'ml',

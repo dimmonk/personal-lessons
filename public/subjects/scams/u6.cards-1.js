@@ -19,7 +19,7 @@ FC.cards('scams', 'u6', [
     ],
     add: [
       'Each group in this unit starts from one thing that can leave your hands, such as money, a way into an account, control of a device, or papers and numbers. It opens with a short story, then explains the idea, then gives the facts for that group in a table. After the table, each fact is asked once, from memory.',
-      'Two things in this unit depend on where you live and on which bank you use: the name of the fraud-reporting service, and whether a payment can still be recalled. Where that is so, the unit says so. The unit does not promise that any step will get anything back. It says what the steps are, because they are what gives you a chance.'
+      'One thing in this unit depends on which bank you use: whether a payment can still be recalled. Where that is so, the unit says so. The unit does not promise that any step will get anything back. It says what the steps are, because they are what gives you a chance.'
     ] },
 
   /* ---------- group one: money sent, and the call to the bank ---------- */
@@ -30,8 +30,8 @@ FC.cards('scams', 'u6', [
     plain: [
       'Look at what Priya did, and at what she did not do. She was tempted to wait, and to sort it out herself, and she did neither. She went straight to the one place that can try to get a payment back: the bank that sent it for her.',
       'Money is the loss that moves fastest. A payment that you sent yourself is hard for your bank to take back, and the bank’s own fraud checks usually let it through, because you were the one who sent it. That is why this group comes first.',
-      'There is one good chance, and it is short. In the first hours, a payment can sometimes still be recalled, which means that your bank asks the bank that received the money to send it back. Whether that works depends on your bank and on how quickly you ring, and nobody can promise it. What is certain is that every hour you wait uses some of the chance up. A call that turns out to be unnecessary costs ten minutes. A call that you put off can cost the money.',
-      'The five facts below are the whole call: whom you ring, which number, one trap if the scam began with a phone call, what you say, and how soon.'
+      'There is one good chance, and it is short. In the first hours, a payment can sometimes still be recalled, which means that your bank asks the bank that received the money to send it back. Whether that works depends on your bank and on how quickly you call, and nobody can promise it. What is certain is that every hour you wait uses some of the chance up. A call that turns out to be unnecessary costs ten minutes. A call that you put off can cost the money.',
+      'The five facts below are the whole call: whom you call, which number, one trap if the scam began with a phone call, what you say, and how soon.'
     ] },
 
   { id: 'facts-money', kind: 'facts',
@@ -39,15 +39,15 @@ FC.cards('scams', 'u6', [
     link: 'These are the five facts of the call, each with how it fits the idea that the first hours are the chance.',
     concept: 'con-money',
     rows: [
-      { id: 'mo-who', q: 'Whom do you ring first after money has gone to a scammer?', a: 'Ring your bank',
+      { id: 'mo-who', q: 'Whom do you call first after money has gone to a scammer?', a: 'Call your bank',
         relates: 'Your bank is the one that sent the payment, so it is the one you can ask to try to get it back. It comes before anyone else because the first hours are the chance.' },
-      { id: 'mo-number', q: 'Which number do you ring?', a: 'Use the number on your card',
+      { id: 'mo-number', q: 'Which number do you call?', a: 'Use the number on your card',
         relates: 'The number on the back of your card was yours before the scam began, so it is {t:already}. A number that came with the scam never is, even if you are the one who dials it.' },
-      { id: 'mo-line', q: 'The scam began with a phone call. What do you do before you ring your bank?', a: 'Wait a few minutes, or use a different phone',
+      { id: 'mo-line', q: 'The scam began with a phone call. What do you do before you call your bank?', a: 'Wait a few minutes, or use a different phone',
         relates: 'A scammer can keep the line open and answer your call to ‘the bank’. Waiting a few minutes, or using a different phone, is what makes sure that your call goes to your bank and not to them.' },
       { id: 'mo-say', q: 'What do you say to your bank on that call?', a: 'Say it was a scam payment, and ask the bank to try to recall it',
         relates: 'The first part tells the bank what it is dealing with: a payment that you were tricked into making. The second part is what you are asking it to do about it. Recalling is the job that the first hours are for.' },
-      { id: 'mo-when', q: 'How soon do you ring?', a: 'Ring straight away',
+      { id: 'mo-when', q: 'How soon do you call?', a: 'Call right away',
         relates: 'In the first hours a payment can sometimes still be recalled. That is the chance, and waiting uses it up. A call that was not needed costs ten minutes, and a call put off can cost the money.' }
     ] },
 
@@ -75,8 +75,8 @@ FC.cards('scams', 'u6', [
     link: 'The call to your bank is for getting money back. Whatever was lost, there is a second job: telling the people who deal with scams, and keeping the record of what happened.',
     case: 'late-report',
     plain: [
-      'Dan rang his bank, and that part was right. What went wrong was what came after. Out of embarrassment he deleted the chat and told nobody for three days. Each day cost him something. The messages were the record of what the caller had said and asked for, and once they were deleted he could not show them to anyone.',
-      'There are two things to do beside the call to your bank. The first is to report the scam to your country’s fraud-reporting service. Its name and how you reach it depend on where you live, so find your own country’s, and do it after the call to your bank. The second is to keep the messages: leave the chat, the emails and the call log as they are.',
+      'Dan called his bank, and that part was right. What went wrong was what came after. Out of embarrassment he deleted the chat and told nobody for three days. Each day cost him something. The messages were the record of what the caller had said and asked for, and once they were deleted he could not show them to anyone.',
+      'There are two things to do beside the call to your bank. The first is to report the scam to the Federal Trade Commission (FTC) at ReportFraud.ftc.gov, and to do it after the call to your bank. If the scam happened over the internet, you can also report it to the FBI’s Internet Crime Complaint Center at IC3.gov. The second is to keep the messages: leave the chat, the emails and the call log as they are.',
       'Under both is a feeling. Scammers rely on embarrassment to keep people quiet, and a person who keeps quiet gives the scammer time. Speed matters more than shame.'
     ] },
 
@@ -85,8 +85,8 @@ FC.cards('scams', 'u6', [
     link: 'These are the three facts for the second job, with how each fits the idea of telling the right people and keeping what you have.',
     concept: 'con-report',
     rows: [
-      { id: 're-report', q: 'Besides your bank, whom do you report a scam to?', a: 'Report it to your country’s fraud-reporting service',
-        relates: 'It is one of the real places to get help. What it is called and how you reach it depend on the country you live in, so look up your own country’s, and report after your call to your bank.' },
+      { id: 're-report', q: 'Besides your bank, whom do you report a scam to?', a: 'Report it to the FTC at ReportFraud.ftc.gov',
+        relates: 'It is one of the real places to get help. The FTC takes reports of fraud at ReportFraud.ftc.gov, and a report adds to what it knows about the scam. An internet crime can also be reported to the FBI at IC3.gov. Report after your call to your bank.' },
       { id: 're-keep', q: 'What do you keep, and not delete?', a: 'Keep the messages',
         relates: 'They are the record of what the scammer said and asked for. A chat that has been deleted is a record that you no longer have.' },
       { id: 're-shame', q: 'You feel too embarrassed to say anything. What matters more than that feeling?', a: 'Speed',

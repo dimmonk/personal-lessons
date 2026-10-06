@@ -8,14 +8,14 @@ FC.cards('wealth', 'u1', [
     link: 'One answer is left, and it asks you to say that you see nothing. It is the answer for a case in which nothing could lose the money.',
     case: 'w-saver', mark: 'D1',
     strip: [
-      'There is one person, Aisha, and money she is putting away: a pension, and some savings.',
-      'She will not need the pension for thirty years.',
+      'There is one person, Aisha, and money she is putting away: a 401(k), and some savings.',
+      'She will not need the 401(k) for thirty years.',
       'The case says nothing about a charge, a tax bill or a sum she spends from it.',
       'It says nothing about one thing that most of it depends on, a bill on a date, or a death or an illness.',
       'Aisha asks whether she should be doing something. The case gives her no reason to.'
     ],
     explain: [
-      'Set this case against the four answers you have met. Nothing comes out of Aisha’s money every year that the case mentions. No one thing is most of it, and no claim or loan is in the story. She does not need the pension for thirty years, so a fall in prices does not catch her out: she has years in which prices can come back. And the case is not about a death, an illness or a gift.',
+      'Set this case against the four answers you have met. Nothing comes out of Aisha’s money every year that the case mentions. No one thing is most of it, and no claim or loan is in the story. She does not need the 401(k) for thirty years, so a fall in prices does not catch her out: she has years in which prices can come back. And the case is not about a death, an illness or a gift.',
       'What is left is money being kept, with nothing that could lose it. That is a fifth kind of case, and a very ordinary one: a person saving steadily, with nothing in the account that raises a problem.',
       'Questions with no place for it would force every case into one of the four. A reader of those questions would find a problem in every account of money, and would recommend a cure for it. Cures cost money and effort, and a cure for a problem the case does not have costs both for nothing. So there is an answer for this case, so that "there is nothing here to name" is something you can say, and say with a reason.',
       'The answer does not promise that nothing could ever go wrong. It says that this case raises none of the four. The test is the words in the case: can you point to words that raise one of the four? If you can, give that answer. If you cannot, do not invent one.'
@@ -29,7 +29,7 @@ FC.cards('wealth', 'u1', [
   { id: 'again-none', kind: 'again', family: 'none',
     link: 'Aisha’s case gave you what to point to: {needs:none}. Here is a second case with a different story, in which someone has been given an idea for a cure.',
     first: 'w-saver', second: 'w-friend', step: 'D1',
-    instruction: 'Find what the two cases share. Ignore the difference between a pension and a savings account, and ignore that in each case someone wonders whether to do something. Look at one thing only: which words show how long it will be before the money is needed?',
+    instruction: 'Find what the two cases share. Ignore the difference between a 401(k) and a savings account, and ignore that in each case someone wonders whether to do something. Look at one thing only: which words show how long it will be before the money is needed?',
     prompt: { kind: 'phrase', answer: 'He does not expect to need the money for fifteen years' },
     shared: [
       'Both cases show money being put away by a person with a steady life, who will not need it for a long time. In neither case does the story mention something coming out of it, one thing most of it rests on, a bill due on a date, or a death. In both, someone asks whether they should be doing something.',
@@ -39,7 +39,7 @@ FC.cards('wealth', 'u1', [
   { id: 'portrait-none', kind: 'portrait', family: 'none',
     link: 'You know what to point to for {a:D1.none}. Because this answer is partly made of what is not there, the rest of the picture matters more than usual.',
     typical: [
-      'There is money being kept, in savings, a pension or a home. The case may say how much, and where it is held.',
+      'There is money being kept, in savings, a 401(k) or a home. The case may say how much, and where it is held.',
       'The case raises no charge, tax bill or sum being spent. If one is mentioned, it is mentioned as a fact and not as something that is wrong.',
       'The money is not needed soon. Often the case says so: "I will not touch it for thirty years", "there is no rush".',
       'No one thing is most of it, and there is no claim or loan.',
@@ -50,14 +50,14 @@ FC.cards('wealth', 'u1', [
       'This answer is not a promise that the money is safe for ever. Something could go wrong next year, and if the case showed it, the answer would be a different one. The answer is about what this case shows.',
       'It is also not a case where something is wrong and a small problem is being ignored. If the case points to a charge, a tax bill, one big thing, a fall that would catch it out or a handover, that is the answer, however small it looks.'
     ],
-    wild: ['"Am I missing something?"', '"I don’t really touch it."', '"It’s just sitting there for retirement."', '"I haven’t got round to it, and I’m not sure I need to."', '"My cousin says I should have a trust."'],
+    wild: ['"Am I missing something?"', '"I don’t really touch it."', '"It’s just sitting there for retirement."', '"I haven’t gotten around to it, and I’m not sure I need to."', '"My cousin says I should have a trust."'],
     self: 'In your own life it is the money that no one has given you a reason to worry about. An offer to "do something" with it has to supply that reason first.',
     ask: '"Which of the four can I point to in these words?" If you can point to none of them, you are probably looking at this kind.' },
 
   { id: 'check-none', kind: 'check', after: 'none',
     case: 'w-nurse',
     ask: { type: 'phrase', step: 'D1', say: 'Which words show that the money will not be needed for a long time? Tap them.',
-           answer: 'a workplace pension that she will start drawing at 67' } },
+           answer: 'a 401(k) at work that she will not touch until she retires at 67' } },
 
   /* ---------- A wrong idea: a special structure is the first thing you need ---------- */
   { id: 'refute-offshore', kind: 'refute', about: 'D1',
@@ -79,20 +79,20 @@ FC.cards('wealth', 'u1', [
     instruction: 'Both cases are about Ines, who is 38, in a year when prices have fallen by a fifth. Compare one thing: when is the money needed, and is anything waiting for it?',
     prompt: { kind: 'which', option: 'D1.none', answer: 'w-la-quiet' },
     difference: [
-      'In Case A prices have fallen by 20%, and Ines has noticed. But she will not need the £30,000 for twenty-five years, and she is selling nothing. A fall only does harm if something has to be sold or paid on the day, and nothing does. There are twenty-five years for prices to come back. The answer is {a:D1.none}.',
-      'In Case B prices have fallen by the same fifth, but Ines needs £30,000 on 1 June, four months from now, and the money is in funds that hold shares. After the fall her £30,000 is £24,000, which is £6,000 short of the deposit, and four months is not long for prices to recover. The answer is {a:D1.timing}.',
+      'In Case A prices have fallen by 20%, and Ines has noticed. But she will not need the $30,000 for twenty-five years, and she is selling nothing. A fall only does harm if something has to be sold or paid on the day, and nothing does. There are twenty-five years for prices to come back. The answer is {a:D1.none}.',
+      'In Case B prices have fallen by the same fifth, but Ines needs $30,000 on June 1, four months from now, and the money is in funds that hold shares. After the fall her $30,000 is $24,000, which is $6,000 short of the down payment, and four months is not long for prices to recover. The answer is {a:D1.timing}.',
       'The fall is the same in both cases, and so is the person. What separates them is whether money is needed soon, and so whether the fall catches anything. A fall that catches nothing raises nothing.'
     ] },
 
   { id: 'look-none-erosion', kind: 'lookalike', ledger: 'none~erosion',
-    link: 'The next pair is the fifth answer and the first. Both can be about money kept in a pension for many years, and in both the person may have no complaint.',
+    link: 'The next pair is the fifth answer and the first. Both can be about money kept in a 401(k) for many years, and in both the person may have no complaint.',
     cases: ['w-la-april', 'w-la-statement'],
-    instruction: 'Both cases are about Mei, who is 45 and pays into a pension. Compare one thing: does the case say anything about something that comes out of the money?',
+    instruction: 'Both cases are about Mei, who is 45 and pays into a 401(k). Compare one thing: does the case say anything about something that comes out of the money?',
     prompt: { kind: 'which', option: 'D1.erosion', answer: 'w-la-statement' },
     difference: [
-      'In Case A the case says nothing about a charge, a tax bill or a sum taken out. It tells you only that Mei has a pension, that she will not touch it until she is 67, and that she files her statement unread. The statement may well contain a charge, but the case does not tell you so, and there are no words to point to. The answer is {a:D1.none}.',
+      'In Case A the case says nothing about a charge, a tax bill or a sum taken out. It tells you only that Mei has a 401(k), that she will not touch it until she is 67, and that she files her statement unread. The statement may well contain a charge, but the case does not tell you so, and there are no words to point to. The answer is {a:D1.none}.',
       'In Case B the same woman reads the same statement and finds that the fund takes 1.6% of her money every year. Now there are words to point to, and they are about something that comes out every year. The answer is {a:D1.erosion}.',
-      'Nothing about Mei or her pension is different. What is different is what the case says. The answer is for the case in front of you, and it does not invent what an unread statement might hold.'
+      'Nothing about Mei or her 401(k) is different. What is different is what the case says. The answer is for the case in front of you, and it does not invent what an unread statement might hold.'
     ] },
 
   { id: 'look-none-handover', kind: 'lookalike', ledger: 'none~handover',
@@ -109,11 +109,11 @@ FC.cards('wealth', 'u1', [
   { id: 'look-none-shock', kind: 'lookalike', ledger: 'none~shock',
     link: 'The last pair is the fifth answer and the third. In both the person may own shares or property and may feel well off.',
     cases: ['w-la-spread', 'w-la-flat'],
-    instruction: 'Both cases are about Owen, who is 50 and has £500,000. Compare one thing: is one company, property, business, claim or loan most of what the case shows, or is the money spread, with nothing that could reach everything?',
+    instruction: 'Both cases are about Owen, who is 50 and has $500,000. Compare one thing: is one company, property, business, claim or loan most of what the case shows, or is the money spread, with nothing that could reach everything?',
     prompt: { kind: 'which', option: 'D1.shock', answer: 'w-la-flat' },
     difference: [
-      'In Case A the money is in three places, none of them more than 45%: savings, a pension held in funds spread over thousands of companies, and the flat he lives in. No loan or claim is in the case. If any one of them fell, the other two would still be there. The answer is {a:D1.none}.',
-      'In Case B £400,000 of his £500,000 is one flat. If that flat lost a quarter of its value, he would lose £100,000 on the flat alone, a fifth of everything he has, and nothing else he owns could take its place. The answer is {a:D1.shock}.',
-      'Both cases are about a man with property and about £500,000. What separates them is whether one thing is most of it. Spread out, the money is a case with nothing to name. Concentrated in one place, it is not.'
+      'In Case A the money is in three places, none of them more than 45%: savings, a 401(k) held in funds spread over thousands of companies, and the condo he lives in. No loan or claim is in the case. If any one of them fell, the other two would still be there. The answer is {a:D1.none}.',
+      'In Case B $400,000 of his $500,000 is one condo. If that condo lost a quarter of its value, he would lose $100,000 on the condo alone, a fifth of everything he has, and nothing else he owns could take its place. The answer is {a:D1.shock}.',
+      'Both cases are about a man with property and about $500,000. What separates them is whether one thing is most of it. Spread out, the money is a case with nothing to name. Concentrated in one place, it is not.'
     ] }
 ]);

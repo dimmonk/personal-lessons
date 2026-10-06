@@ -16,7 +16,7 @@ FC.cards('civics', 'u5', [
     explain: [
       'Look at what the riders are asking. They are not saying the fare breaks the Constitution. They are not asking what a law means. They are asking the judge to choose: $2 or $1. That is a question about which policy is better, and people can disagree about it for good reasons, as they do about taxes, school hours and speed limits.',
       'A judge works by applying rules: a law, or the Constitution. Here no rule decides between $2 and $1, so there is nothing for the judge to apply, and a judge who chose would be putting the judge’s own view in the place of the town’s. The Constitution leaves choices like this to voters and the leaders they elect, and a court will decline.',
-      'That does not leave the riders stuck. They can vote, sign petitions, write to the council and organise a campaign. A lawsuit will not change the fare.'
+      'That does not leave the riders stuck. They can vote, sign petitions, write to the council and organize a campaign. A lawsuit will not change the fare.'
     ],
     feature: { step: 'J1', option: 'policy' },
     name: 'The name for this is {o:notlegal}. "Political" in this name does not mean "about parties". It means a choice that is made by voting and not by a legal test, so the judge leaves it to the voters.' },
@@ -38,11 +38,11 @@ FC.cards('civics', 'u5', [
       'No law and no right in the Constitution settles it. The people asking cannot point to one, and that is the whole of the case.',
       'The judge declines. The words you hear are "the court declined to decide" and "that is not for the courts".',
       'It is not that the question is unimportant. These are often the questions people care about most. The point is who decides: the voters and the leaders they elect, through an election, and not a judge, through a lawsuit.',
-      'The people asking can still act. They can vote, petition, write to their representatives and organise a campaign.'
+      'The people asking can still act. They can vote, petition, write to their representatives and organize a campaign.'
     ],
     not: 'Asking a judge for something is not enough, and neither is a request that sounds political. If the policy itself breaks the Constitution, for example by singling out one religion, a judge can decide that, because there is a rule to apply. This name is for a request where nobody can point to a law or a right that settles it.',
     wild: ['"That is a matter for the legislature."', '"The court declined to decide."', '"Not for the courts."', '"Take it to the voters."'],
-    self: 'In your own life you meet it whenever you wish a price, a school rule or a local service were different and think of "taking it to court". The way to change it is to vote, petition and organise.',
+    self: 'In your own life you meet it whenever you wish a price, a school rule or a local service were different and think of "taking it to court". The way to change it is to vote, petition and organize.',
     ask: '"Can the person asking point to a law or a right in the Constitution that the judge could apply?" If they cannot, and they only say that it would be better, the judge is being asked to choose, and the judge will decline.' },
 
   { id: 'check-notlegal', kind: 'check', after: 'notlegal',
@@ -77,7 +77,7 @@ FC.cards('civics', 'u5', [
     link: 'The last cards kept the pair tidy. A real request can sound like a plea for a better policy and still contain something a judge can check against the Constitution, and then the case is the first name of this unit.',
     case: 'x-hall',
     setup: 'The Mehta family ask the judge to change a town rule, and they say the rule is unfair. That is how people ask for a better policy, and it is what you point to for {a:J1.policy}. Yet the answer for this case is {a:J1.check}.',
-    prompt: { kind: 'phrase', answer: 'the Constitution does not allow a town to favour one religion' },
+    prompt: { kind: 'phrase', answer: 'the Constitution does not allow a town to favor one religion' },
     because: [
       'Look at what has happened to the family, and at what they say. They were turned away from the hall, so they have been harmed. And they do not say only that the rule is unfair: they say the Constitution does not allow it. That gives the judge something to check the rule against.',
       'A request is not for a better policy just because it says "unfair" or asks the judge to order a change. If someone points to a place in the Constitution where the rule clashes, the judge can decide, because there is a rule to apply. A request that points to nothing but "it would be better" is the other name.'

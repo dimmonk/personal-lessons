@@ -52,7 +52,7 @@ FC.cases('civics', 'u5', [
     cues: { D1: 'The House and the Senate vote for a law', C1: 'makes it a crime for more than ten people to hold a prayer meeting in a private home' } },
 
   { id: 'ls-print-vote', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a national vote on printing pamphlets', name: 'The vote on pamphlets',
-    text: 'The House and the Senate vote for a law that makes it a crime to print any pamphlet that criticises the government. The House passes it by 240 votes to 190.',
+    text: 'The House and the Senate vote for a law that makes it a crime to print any pamphlet that criticizes the government. The House passes it by 240 votes to 190.',
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
-    cues: { D1: 'The House and the Senate vote for a law', C1: 'makes it a crime to print any pamphlet that criticises the government' } }
+    cues: { D1: 'The House and the Senate vote for a law', C1: 'makes it a crime to print any pamphlet that criticizes the government' } }
 ]);

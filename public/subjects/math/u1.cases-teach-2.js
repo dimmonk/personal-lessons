@@ -5,9 +5,9 @@ FC.cases('math', 'u1', [
 
   /* ---------- The fourth kind: counting ways, and chance ---------- */
   { id: 'gt-outfits', use: 'teach', tier: 'clean', setting: 'travel', topic: 'outfits packed for a trip', name: 'The packing',
-    text: 'Zara is packing for a trip. She will wear one top, one pair of trousers and one pair of shoes. She has 5 tops, 4 pairs of trousers and 3 pairs of shoes. How many different outfits can she make?',
+    text: 'Zara is packing for a trip. She will wear one top, one pair of pants and one pair of shoes. She has 5 tops, 4 pairs of pants and 3 pairs of shoes. How many different outfits can she make?',
     route: { M1: ['chance'] },
-    cues: { M1: ['one top, one pair of trousers and one pair of shoes', 'How many different outfits can she make?'] } },
+    cues: { M1: ['one top, one pair of pants and one pair of shoes', 'How many different outfits can she make?'] } },
 
   { id: 'gt-flagged', use: 'teach', tier: 'clean', setting: 'work', topic: 'a machine that flags faulty parts', name: 'The flagged part',
     text: 'A factory machine flags faulty parts. One part in 500 is faulty. The machine flags 95 of every 100 faulty parts, and also flags 3 of every 100 good parts. A part has just been flagged. How likely is it that the part is really faulty?',
@@ -21,11 +21,11 @@ FC.cases('math', 'u1', [
       { text: 'How likely is it that the part is really faulty?' }
     ] },
 
-  { id: 'gt-trains', use: 'check', tier: 'clean', setting: 'travel', topic: 'trains that may be cancelled',
-    text: 'Three trains connect Eli’s village to the city. Each one is cancelled one day in ten, whatever the others do. On any day, how likely is it that at least one of the three is cancelled?',
+  { id: 'gt-trains', use: 'check', tier: 'clean', setting: 'travel', topic: 'trains that may be canceled',
+    text: 'Three trains connect Eli’s village to the city. Each one is canceled one day in ten, whatever the others do. On any day, how likely is it that at least one of the three is canceled?',
     route: { M1: ['chance'] },
-    cues: { M1: ['Each one is cancelled one day in ten', 'how likely is it that at least one of the three is cancelled'] },
-    reason: { M1: 'The problem gives a risk for every train and asks how likely it is that one or more is cancelled: {cue:M1}. That is a question about how likely something is. Nothing is hidden for a calculation to fit, and nothing is followed as time passes, even though the trains run every day.' } },
+    cues: { M1: ['Each one is canceled one day in ten', 'how likely is it that at least one of the three is canceled'] },
+    reason: { M1: 'The problem gives a risk for every train and asks how likely it is that one or more is canceled: {cue:M1}. That is a question about how likely something is. Nothing is hidden for a calculation to fit, and nothing is followed as time passes, even though the trains run every day.' } },
 
   /* ---------- A word the fifth kind leans on ---------- */
   { id: 'gt-sheet', use: 'teach', tier: 'clean', setting: 'home', topic: 'a sheet of paper cut across', name: 'The sheet cut across',
@@ -38,11 +38,11 @@ FC.cases('math', 'u1', [
     cues: { M1: ['9 km due north and then 12 km due east', 'How far in a straight line is she from where she started?'] } },
 
   { id: 'gt-floor', use: 'teach', tier: 'clean', setting: 'building', topic: 'two floors of the same shape', name: 'The two floors',
-    text: 'Ana’s bathroom floor measures 2 m across and has an area of 5 square metres. The hall floor is exactly the same shape, but 6 m across. What is the area of the hall floor?',
+    text: 'Ana’s bathroom floor measures 2 m across and has an area of 5 square meters. The hall floor is exactly the same shape, but 6 m across. What is the area of the hall floor?',
     route: { M1: ['shape'] },
     cues: { M1: ['exactly the same shape, but 6 m across', 'What is the area of the hall floor?'] },
     segments: [
-      { text: 'Ana’s bathroom floor measures 2 m across and has an area of 5 square metres', note: 'That gives the first floor. It is one of the two things the problem compares, and the words that say the two are copies of each other come next.' },
+      { text: 'Ana’s bathroom floor measures 2 m across and has an area of 5 square meters', note: 'That gives the first floor. It is one of the two things the problem compares, and the words that say the two are copies of each other come next.' },
       { text: 'The hall floor is exactly the same shape, but 6 m across' },
       { text: 'What is the area of the hall floor?', note: 'That is the question. It says what is to be worked out, an area. But the words that show which shape the problem is about are in the sentence before.' }
     ] },

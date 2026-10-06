@@ -13,7 +13,7 @@ FC.cards('scams', 'u3', [
       'The page, the code and the {t:permission} can all be real, and they are real in the scams too. How a request looks, whose name is on it, and where it sits among your messages tell you nothing. Whether you started it tells you what you need, and you can answer that at the moment.',
       'When you cannot say that you started it, stop, and start again from an app, an address or a number that you already had. That is {t:check}, and a real company never minds it.',
       'When a page asks for a password and then for a code, the answer is the one for the password.',
-      'If you have already given something away: change a password at once; ring the company at once about a code; and remove the app for an Allow, because changing the password does not take it away.'
+      'If you have already given something away: change a password at once; call the company at once about a code; and remove the app for an Allow, because changing the password does not take it away.'
     ] },
 
   { id: 'transfer', kind: 'transfer',
@@ -42,7 +42,7 @@ FC.cards('scams', 'u3', [
       { cue: 'a message, a call or a pop-up that I did not ask for sends me to a page that wants a password',
         then: 'close it, and sign in only by opening the app myself or typing the address myself' },
       { cue: 'someone who contacted me asks me to read out or send on a code that has just come to my phone',
-        then: 'say no and end the call or the chat, and then ring the company on a number I already had' },
+        then: 'say no and end the call or the chat, and then call the company at a number I already had' },
       { cue: 'a permission screen asks me to press Allow for an app that came to me, or for much more than its job needs',
         then: 'press Cancel, and if I ever pressed Allow, remove the app in my account\'s list of connected apps' },
       { cue: 'a sign-in, a code or an Allow that I started myself, from an app or an address I already had',

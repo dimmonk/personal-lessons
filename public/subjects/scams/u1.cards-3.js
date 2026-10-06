@@ -9,7 +9,7 @@ FC.cards('scams', 'u1', [
     link: 'The next kind of message is about your phone or computer itself, and one of the things it can ask for is hard to picture until you have seen it.',
     case: 'g-t-share',
     plain: [
-      'Jo’s laptop would not connect to the office printer, so she rang the company help desk on the number printed on her work badge. The helper asked her to open a meeting app and press a button that shares what is on her laptop with him. From then on he could see everything Jo could see, at the same moment, and he could move things on it if she let him.',
+      'Jo’s laptop would not connect to the office printer, so she called the company help desk at the number printed on her work badge. The helper asked her to open a meeting app and press a button that shares what is on her laptop with him. From then on he could see everything Jo could see, at the same moment, and he could move things on it if she let him.',
       'That is useful: it is how many real help desks work. It is also a very large thing to hand over. Anyone who can watch your computer can read your email and your bank pages as you open them, and may be able to take over the mouse. You are trusting the person completely, for as long as it lasts.',
       'It happens through an app, or through a code that you type in, and it lasts until you stop it.'
     ] },
@@ -26,7 +26,7 @@ FC.cards('scams', 'u1', [
     ],
     explain: [
       'What you are shown is a request to put something on a device: here, a program, downloaded on the strength of a phone call. That is all a message of this kind is made of: one phone or computer, and a request to install, open or share something that reaches into it.',
-      'The request can take three forms, and all three count as one kind. You can be asked to install a program or an app. You can be asked to open or run a file, such as an attachment. Or you can be asked to let someone watch or control your device from far away, which is {t:screenshare}. A warning that says your device has a problem and gives you someone to ring to fix it counts as this kind too, because the person you reach will ask for one of the three.',
+      'The request can take three forms, and all three count as one kind. You can be asked to install a program or an app. You can be asked to open or run a file, such as an attachment. Or you can be asked to let someone watch or control your device from far away, which is {t:screenshare}. A warning that says your device has a problem and gives you someone to call to fix it counts as this kind too, because the person you reach will ask for one of the three.',
       'It is a kind of its own because of how far it reaches. Once a program is installed, or someone can watch your device, the risk is no longer one account but everything the device holds. They can read your accounts, copy your passwords as you type them, and stay on the device after the call has ended.',
       'Here again the story does not decide it. Diane’s caller might be a real engineer, and the case would be the same. What decides it is the request: a program to download.'
     ],
@@ -51,7 +51,7 @@ FC.cards('scams', 'u1', [
       'There is a phone or computer of yours, and something is to be put on it, opened on it or shown from it.',
       'The request is for one of three things: install a program or an app; open or run a file; or let someone watch or control your device from far away.',
       'It is often wrapped in a problem: an error, an infection, an update that must be done, a refund to be sorted out, a document you must open to see an invoice.',
-      'It can come as a call, a text, an email with a file, or a pop-up that gives you a number to ring. It can also come from nobody in particular: your own phone offers to install an update.',
+      'It can come as a call, a text, an email with a file, or a pop-up that gives you a number to call. It can also come from nobody in particular: your own phone offers to install an update.',
       'What gets installed or opened can keep working long after the message is gone.'
     ],
     not: [
@@ -59,7 +59,7 @@ FC.cards('scams', 'u1', [
       'It is not always a scam. Updates, work software and a helper at the other end of a phone line are all everyday requests of this kind. The request is the same when it is not fine, and that is why the answer to this question cannot say which it is.'
     ],
     wild: ['"Please download this program so I can fix it from here."', '"Open the attached file and click Enable Editing."', '"Press Share so that I can see your screen."', '"Your computer is infected. Call this number now."', '"An update is ready. Install now?"'],
-    self: 'Updates on your phone and your games console, work software that your employer pushes out, a helper on the end of a phone line: these are everyday requests of this kind, and most of them are fine.',
+    self: 'Updates on your phone and your game console, work software that your employer pushes out, a helper on the end of a phone line: these are everyday requests of this kind, and most of them are fine.',
     ask: '"Is anything being put on my phone or computer, opened on it, or shown from it?" If it is, the answer is the one for a request about your device.' },
 
   { id: 'check-device', kind: 'check', after: 'device',

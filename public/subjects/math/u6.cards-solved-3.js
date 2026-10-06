@@ -28,11 +28,11 @@ FC.cards('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '6 euros × 9 = 54 euros',
-        why: 'The small pane’s glass costs 6 euros, and the larger pane has 9 times as much glass, so, if the cost goes with the amount of glass, it costs 9 times as much: 6 × 9 = 54 euros. Multiplying by 3 instead, as for a length, would give 18 euros, which would pay for only a third of the glass in the larger pane.'
+        working: '6 dollars × 9 = 54 dollars',
+        why: 'The small pane’s glass costs 6 dollars, and the larger pane has 9 times as much glass, so, if the cost goes with the amount of glass, it costs 9 times as much: 6 × 9 = 54 dollars. Multiplying by 3 instead, as for a length, would give 18 dollars, which would pay for only a third of the glass in the larger pane.'
       }
     ],
-    result: 'The glass for the larger pane costs 54 euros.',
+    result: 'The glass for the larger pane costs 54 dollars.',
     hold: {
       step: 2,
       prompt: {

@@ -28,7 +28,7 @@ FC.cards('psychology', 'u1', [
     link: 'Start with the first of the four kinds: a person telling you what they have decided, and why.',
     case: 'g-job', mark: 'D1',
     strip: [
-      'There is one person at the centre: Leila.',
+      'There is one person at the center: Leila.',
       'There is a choice, and it is hers: whether to take the job.',
       'There are her reasons, in her own words: the pay on one side, the train and her children on the other.',
       'Her sister is there, but only to listen. Nothing is said about the sister, and nothing is done to her.',
@@ -61,7 +61,7 @@ FC.cards('psychology', 'u1', [
       'Every case in this unit has two layers. The top layer is the story: a job, a street, a marriage, an office. The layer underneath is what the case is made of. So far you have met one thing a case can be made of: one person’s reasons. There are three more to come.',
       'The four kinds belong to the layer underneath. A case about a marriage can be any of the four, and so can a case about an office. The story tells you nothing about the kind.',
       'From here on, the cases change their stories on purpose. Sometimes two cases will share the same people and the same story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
-      'One more thing changes on purpose: how bad the behaviour sounds. An ugly remark and a gentle one can be the same kind of thing, and something that sounds alarming can turn out to be the kind with nothing in it to name. The kind is not a verdict on anyone. It only says what there is to look at.'
+      'One more thing changes on purpose: how bad the behavior sounds. An ugly remark and a gentle one can be the same kind of thing, and something that sounds alarming can turn out to be the kind with nothing in it to name. The kind is not a verdict on anyone. It only says what there is to look at.'
     ],
     fixed: ['what the case is made of, which is what the question asks about: {q:D1}'],
     varies: ['the topic', 'the people', 'how bad it sounds', 'whether you like the person', 'whether anything is wrong at all'] },
@@ -83,5 +83,5 @@ FC.cards('psychology', 'u1', [
   { id: 'check-reasoning', kind: 'check', after: 'reasoning',
     case: 'g-car',
     ask: { type: 'phrase', step: 'D1', say: 'Which part of this case gives a person’s reasons for a choice of her own? Tap it.',
-           answer: 'The repair was £300, and a new one would cost me £200 a month' } }
+           answer: 'The repair was $300, and a new one would cost me $200 a month' } }
 ]);

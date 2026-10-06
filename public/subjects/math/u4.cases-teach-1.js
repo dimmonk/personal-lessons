@@ -13,7 +13,7 @@ FC.cases('math', 'u4', [
     setting: 'shopping',
     topic: 'a novel in a bookshop',
     name: 'The bookshop novel',
-    text: 'A bookshop sells a novel for €20. In January the owner puts the price up by 5%, and she works the new price out in two ways. First she takes 5% of €20, which is €1, and adds it: €20 + €1 = €21. Second she multiplies €20 by 1.05, and also gets €21. In the summer sale the same novel goes down by 15%, and she multiplies €20 by 0.85 and gets €17.'
+    text: 'A bookshop sells a novel for $20. In January the owner puts the price up by 5%, and she works the new price out in two ways. First she takes 5% of $20, which is $1, and adds it: $20 + $1 = $21. Second she multiplies $20 by 1.05, and also gets $21. In the summer sale the same novel goes down by 15%, and she multiplies $20 by 0.85 and gets $17.'
   },
 
   {
@@ -23,7 +23,7 @@ FC.cases('math', 'u4', [
     setting: 'leisure',
     topic: 'a museum chart of weights',
     name: 'The museum chart',
-    text: 'A museum draws a chart of animal weights. The gridlines up the side are labelled 1 g, 10 g, 100 g, 1,000 g and 10,000 g, and they are drawn the same distance apart. A mouse of 10 g sits on the 10 g gridline. A hen of 1,000 g sits two gridlines above the mouse, so a visitor who reads the chart works out that the hen is 10 × 10 = 100 times as heavy.'
+    text: 'A museum draws a chart of animal weights. The gridlines up the side are labeled 1 g, 10 g, 100 g, 1,000 g and 10,000 g, and they are drawn the same distance apart. A mouse of 10 g sits on the 10 g gridline. A hen of 1,000 g sits two gridlines above the mouse, so a visitor who reads the chart works out that the hen is 10 × 10 = 100 times as heavy.'
   },
 
   {
@@ -34,11 +34,11 @@ FC.cases('math', 'u4', [
     topic: 'a toddler’s jar',
     name: 'The toddler’s jar',
     outcome: 'lin',
-    text: 'A toddler has a jar with €12 in it. Every week her grandmother puts in €3 more, and nothing is ever taken out. How much will the jar hold after 10 weeks?',
+    text: 'A toddler has a jar with $12 in it. Every week her grandmother puts in $3 more, and nothing is ever taken out. How much will the jar hold after 10 weeks?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
-      M1: ['Every week her grandmother puts in €3 more', 'after 10 weeks'],
-      G1: ['Every week her grandmother puts in €3 more'],
+      M1: ['Every week her grandmother puts in $3 more', 'after 10 weeks'],
+      G1: ['Every week her grandmother puts in $3 more'],
       G2: ['How much will the jar hold after 10 weeks?']
     }
   },
@@ -51,11 +51,11 @@ FC.cases('math', 'u4', [
     topic: 'boxes in a warehouse',
     name: 'The warehouse',
     outcome: 'lin',
-    text: 'A warehouse holds 500 boxes. Every day a lorry delivers 40 more, and none leave. How many boxes will the warehouse hold after 9 days?',
+    text: 'A warehouse holds 500 boxes. Every day a truck delivers 40 more, and none leave. How many boxes will the warehouse hold after 9 days?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
-      M1: ['Every day a lorry delivers 40 more', 'after 9 days'],
-      G1: ['Every day a lorry delivers 40 more'],
+      M1: ['Every day a truck delivers 40 more', 'after 9 days'],
+      G1: ['Every day a truck delivers 40 more'],
       G2: ['How many boxes will the warehouse hold after 9 days?']
     },
     segments: [
@@ -63,7 +63,7 @@ FC.cases('math', 'u4', [
         text: 'A warehouse holds 500 boxes.',
         note: 'That gives the start of the amount. You are asked for the words that say how it changes each time.'
       },
-      { text: 'Every day a lorry delivers 40 more, and none leave.' },
+      { text: 'Every day a truck delivers 40 more, and none leave.' },
       {
         text: 'How many boxes will the warehouse hold after 9 days?',
         note: 'That is the question, and it gives a time or a target. The words that say how the amount changes each time come before it.'
@@ -111,7 +111,7 @@ FC.cases('math', 'u4', [
     topic: 'savings and interest',
     name: 'The savings account',
     outcome: 'expg',
-    text: 'A saver puts €2,000 into an account that pays 4% interest a year. She leaves all the interest in the account. How much will she have after 3 years?',
+    text: 'A saver puts $2,000 into an account that pays 4% interest a year. She leaves all the interest in the account. How much will she have after 3 years?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     cues: {
       M1: ['pays 4% interest a year', 'after 3 years'],
@@ -260,11 +260,11 @@ FC.cases('math', 'u4', [
     topic: 'a gym fee',
     name: 'The gym fee',
     outcome: 'oneoff',
-    text: 'A gym charged €30 a month for years. In March it started charging €36 a month, and it has charged €36 a month ever since. What will the gym charge after 2 more years?',
+    text: 'A gym charged $30 a month for years. In March it started charging $36 a month, and it has charged $36 a month ever since. What will the gym charge after 2 more years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['it has charged €36 a month ever since', 'after 2 more years'],
-      G1: ['In March it started charging €36 a month', 'it has charged €36 a month ever since'],
+      M1: ['it has charged $36 a month ever since', 'after 2 more years'],
+      G1: ['In March it started charging $36 a month', 'it has charged $36 a month ever since'],
       G2: ['What will the gym charge after 2 more years?']
     }
   },
@@ -275,25 +275,25 @@ FC.cases('math', 'u4', [
     tier: 'clean',
     setting: 'home',
     topic: 'rent under a lease',
-    name: 'The flat’s rent',
+    name: 'The apartment’s rent',
     outcome: 'oneoff',
-    text: 'A flat’s rent was €800 a month. Under a new lease it has been €860 a month since January, and the lease says the rent will stay at €860. What will the rent be 18 months from now?',
+    text: 'An apartment’s rent was $800 a month. Under a new lease it has been $860 a month since January, and the lease says the rent will stay at $860. What will the rent be 18 months from now?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['the lease says the rent will stay at €860', '18 months from now'],
+      M1: ['the lease says the rent will stay at $860', '18 months from now'],
       G1: [
-        'Under a new lease it has been €860 a month since January',
-        'the lease says the rent will stay at €860'
+        'Under a new lease it has been $860 a month since January',
+        'the lease says the rent will stay at $860'
       ],
       G2: ['What will the rent be 18 months from now?']
     },
     segments: [
       {
-        text: 'A flat’s rent was €800 a month.',
+        text: 'An apartment’s rent was $800 a month.',
         note: 'That gives the amount before the change. You are asked for the words that say what happens to the amount after it.'
       },
       {
-        text: 'Under a new lease it has been €860 a month since January, and the lease says the rent will stay at €860.'
+        text: 'Under a new lease it has been $860 a month since January, and the lease says the rent will stay at $860.'
       },
       {
         text: 'What will the rent be 18 months from now?',
@@ -309,19 +309,19 @@ FC.cases('math', 'u4', [
     setting: 'travel',
     topic: 'a parking fee',
     outcome: 'oneoff',
-    text: 'A parking fee was €1.50 an hour. In June it rose to €2.00 an hour, and it has not changed since. What will it cost an hour in 3 years?',
+    text: 'A parking fee was $1.50 an hour. In June it rose to $2.00 an hour, and it has not changed since. What will it cost an hour in 3 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
       M1: ['it has not changed since', 'in 3 years'],
-      G1: ['In June it rose to €2.00 an hour', 'it has not changed since'],
+      G1: ['In June it rose to $2.00 an hour', 'it has not changed since'],
       G2: ['What will it cost an hour in 3 years?']
     },
     segments: [
       {
-        text: 'A parking fee was €1.50 an hour.',
+        text: 'A parking fee was $1.50 an hour.',
         note: 'That gives the amount before the change. You are asked for the words that say what happens to the amount after it.'
       },
-      { text: 'In June it rose to €2.00 an hour, and it has not changed since.' },
+      { text: 'In June it rose to $2.00 an hour, and it has not changed since.' },
       {
         text: 'What will it cost an hour in 3 years?',
         note: 'That is the question, and it gives a time. The words that say what happens to the amount come before it.'

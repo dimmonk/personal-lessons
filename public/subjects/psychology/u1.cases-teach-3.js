@@ -5,24 +5,24 @@
 FC.cases('psychology', 'u1', [
 
   /* ---------- The look-alike pair: same woman, same bad week, a mood or something said to one person ---------- */
-  { id: 'g-sale-curt', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bad week after a failed flat sale',
-    text: "The week the buyer withdrew his offer for her flat, Cora was curt with everyone in the office. She answered questions in one word and ate lunch at her desk with her headphones on.",
+  { id: 'g-sale-curt', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bad week after a failed condo sale',
+    text: "The week the buyer withdrew his offer for her condo, Cora was curt with everyone in the office. She answered questions in one word and ate lunch at her desk with her headphones on.",
     route: { D1: ['none'] },
-    cues: { D1: 'The week the buyer withdrew his offer for her flat, Cora was curt with everyone in the office' } },
+    cues: { D1: 'The week the buyer withdrew his offer for her condo, Cora was curt with everyone in the office' } },
 
   { id: 'g-sale-finn', use: 'teach', tier: 'clean', setting: 'work', topic: 'a mistake blamed on an assistant',
-    text: "The week the buyer withdrew his offer for her flat, Cora told her assistant, Finn, that the mistake in the brochure was his, although she had signed it off herself, and that she was starting to wonder whether he was up to the job. Finn stayed late every night that week.",
+    text: "The week the buyer withdrew his offer for her condo, Cora told her assistant, Finn, that the mistake in the brochure was his, although she had signed off on it herself, and that she was starting to wonder whether he was up to the job. Finn stayed late every night that week.",
     route: { D1: ['tactic'] },
-    cues: { D1: 'Cora told her assistant, Finn, that the mistake in the brochure was his, although she had signed it off herself, and that she was starting to wonder whether he was up to the job' } },
+    cues: { D1: 'Cora told her assistant, Finn, that the mistake in the brochure was his, although she had signed off on it herself, and that she was starting to wonder whether he was up to the job' } },
 
   /* ---------- The look-alike pair: same woman, same bad news, a hard week or a choice with a reason ---------- */
   { id: 'g-redundancy-week', use: 'teach', tier: 'clean', setting: 'health', topic: 'the week after losing a job',
-    text: "On Monday Ruth was told that her job is going. All week she has slept badly and barely eaten, and she has cancelled the weekend away she had planned.",
+    text: "On Monday Ruth was told that her job is going. All week she has slept badly and barely eaten, and she has canceled the weekend trip she had planned.",
     route: { D1: ['none'] },
     cues: { D1: 'On Monday Ruth was told that her job is going. All week she has slept badly and barely eaten' } },
 
   { id: 'g-redundancy-choice', use: 'teach', tier: 'clean', setting: 'work', topic: 'not applying after losing a job',
-    text: "On Monday Ruth was told that her job is going. By Friday she has decided not to apply for the two similar posts the firm has advertised. 'They would only get rid of me again in a year,' she tells a friend. 'There's no point.'",
+    text: "On Monday Ruth was told that her job is going. By Friday she has decided not to apply for the two similar positions the firm has posted. 'They would only get rid of me again in a year,' she tells a friend. 'There's no point.'",
     route: { D1: ['reasoning'] },
     cues: { D1: 'They would only get rid of me again in a year' } },
 
@@ -39,7 +39,7 @@ FC.cases('psychology', 'u1', [
 
   /* ---------- The check after the question card ---------- */
   { id: 'g-restaurant', use: 'check', tier: 'clean', setting: 'community', topic: 'silence after a restaurant closed',
-    text: "Kemal has not answered his friends' messages for ten days. His restaurant closed for good at the start of the month. Before that, his friends say, he was the one who organised everything.",
+    text: "Kemal has not answered his friends' messages for ten days. His restaurant closed for good at the start of the month. Before that, his friends say, he was the one who organized everything.",
     route: { D1: ['none'] },
     cues: { D1: ['for ten days', 'His restaurant closed for good at the start of the month'] },
     reason: { D1: 'The case shows one short stretch, and what set it off: {cue:D1}. Kemal gives no reasons for anything, nothing is said or done to any one friend about that friend, and the last sentence tells you this is not how he has been for years.' },

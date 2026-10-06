@@ -6,14 +6,14 @@
 FC.cases('ideology', 'u2', [
 
   /* ---------- Social democracy ---------- */
-  { id: 'c-ret-sd1', use: 'return', tier: 'varied', setting: 'town', topic: 'taxi drivers and a cap on a licence fee',
-    text: "From a flyer by the Marrick taxi drivers: 'The company that owns the taxi licences charges us a fortune to drive and keeps most of the fares, and we are with the drivers. The company can keep its licences. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver.'",
+  { id: 'c-ret-sd1', use: 'return', tier: 'varied', setting: 'town', topic: 'taxi drivers and a cap on a license fee',
+    text: "From a flyer by the Marrick taxi drivers: 'The company that owns the taxi licenses charges us a fortune to drive and keeps most of the fares, and we are with the drivers. The company can keep its licenses. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver.'",
     outcome: 'socdem', route: { D1: ['class'], C1: ['keep'], C2: ['none'] },
-    cues: { D1: 'The company that owns the taxi licences charges us a fortune to drive and keeps most of the fares, and we are with the drivers', C1: 'The company can keep its licences. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver', C2: 'We ask for a law that caps what it can charge a driver' },
-    reason: { D1: 'The text sets the drivers against the company that owns the licences, and stands with the drivers: {cue:D1}.',
-              C1: 'The company keeps its licences, and a law and a tax are asked for: {cue:C1}.',
+    cues: { D1: 'The company that owns the taxi licenses charges us a fortune to drive and keeps most of the fares, and we are with the drivers', C1: 'The company can keep its licenses. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver', C2: 'We ask for a law that caps what it can charge a driver' },
+    reason: { D1: 'The text sets the drivers against the company that owns the licenses, and stands with the drivers: {cue:D1}.',
+              C1: 'The company keeps its licenses, and a law and a tax are asked for: {cue:C1}.',
               C2: 'The text asks the government for a cap: {cue:C2}. It says nothing about how power is won or held, or about the government itself.' },
-    not: { outcome: 'demsoc', why: 'The company keeps its licences. A text that asked for them to pass to the government would be {o:demsoc}.' } },
+    not: { outcome: 'demsoc', why: 'The company keeps its licenses. A text that asked for them to pass to the government would be {o:demsoc}.' } },
 
   { id: 'c-ret-sd2', use: 'return', tier: 'varied', setting: 'health', topic: 'agency nurses and a cap on what an agency keeps',
     text: "From a statement by the Cobb Hill nursing-agency staff: 'The agency that supplies us to the hospitals takes half of what the hospitals pay for each shift, and we stand with the nurses. We do not ask for the agency to be taken over. We ask for a law on what an agency may keep from each shift, and a tax on its profits to pay nurses' pensions. We will argue it at the election and accept the result.'",
@@ -24,11 +24,11 @@ FC.cases('ideology', 'u2', [
               C2: 'The nurses will argue it at the election and accept the result: {cue:C2}.' },
     not: { outcome: 'classonly', why: 'The text goes past taking the nurses’ side to a plan: a law and a tax. A text that only took the side would be {o:classonly}.' } },
 
-  { id: 'c-ret-sd3', use: 'return', tier: 'varied', setting: 'housing', topic: 'labourers on building sites and a week’s pay',
-    text: "From a leaflet by the Westfold labourers: 'The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the labourers. It can keep its sites. We want a law that guarantees a labourer a week's pay, and a tax on its profits to pay for training places.'",
+  { id: 'c-ret-sd3', use: 'return', tier: 'varied', setting: 'housing', topic: 'laborers on building sites and a week’s pay',
+    text: "From a leaflet by the Westfold laborers: 'The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the laborers. It can keep its sites. We want a law that guarantees a laborer a week's pay, and a tax on its profits to pay for training places.'",
     outcome: 'socdem', route: { D1: ['class'], C1: ['keep'], C2: ['none'] },
-    cues: { D1: 'The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the labourers', C1: "It can keep its sites. We want a law that guarantees a labourer a week's pay, and a tax on its profits to pay for training places", C2: "We want a law that guarantees a labourer a week's pay" },
-    reason: { D1: 'The text sets the labourers against the firm that owns the sites, and stands with the labourers: {cue:D1}.',
+    cues: { D1: 'The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the laborers', C1: "It can keep its sites. We want a law that guarantees a laborer a week's pay, and a tax on its profits to pay for training places", C2: "We want a law that guarantees a laborer a week's pay" },
+    reason: { D1: 'The text sets the laborers against the firm that owns the sites, and stands with the laborers: {cue:D1}.',
               C1: 'The firm keeps its sites, and a law and a tax are asked for: {cue:C1}.',
               C2: 'The text asks for a law on pay: {cue:C2}. It says nothing about power or the government itself.' },
     not: { outcome: 'demsoc', why: 'The firm keeps its sites. A text that asked for the sites to pass to the government would be {o:demsoc}.' } },

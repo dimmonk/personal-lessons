@@ -41,7 +41,7 @@ FC.cards('civics', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'congress',
+      neighbor: 'congress',
       prompt: { kind: 'reason',
         lead: 'Congress passed the law, so the case can look like a vote by lawmakers.',
         choices: [
@@ -77,7 +77,7 @@ FC.cards('civics', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'congress',
+      neighbor: 'congress',
       prompt: { kind: 'reason',
         lead: 'The House and the Senate passed the law, so the case can look like a vote by lawmakers.',
         choices: [

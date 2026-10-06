@@ -28,7 +28,7 @@ FC.cards('math', 'u3', [
       {
         does: 'Solve for the letter that is left',
         working: '2 × 20 = 40, so 40 − 2 × y + 5 × y = 61; that is 40 + 3 × y = 61; 3 × y = 61 − 40 = 21; y = 21 ÷ 3 = 7',
-        why: 'The bracket is multiplied out first: 2 × (20 − y) is 2 × 20 = 40, take away 2 × y. The two parts with y, taking away 2 × y and adding 5 × y, make 3 × y, because 5 − 2 = 3. So 40 + 3 × y = 61, which is undone like any calculation: take away the 40, then divide by 3.'
+        why: 'The parentheses are multiplied out first: 2 × (20 − y) is 2 × 20 = 40, take away 2 × y. The two parts with y, taking away 2 × y and adding 5 × y, make 3 × y, because 5 − 2 = 3. So 40 + 3 × y = 61, which is undone like any calculation: take away the 40, then divide by 3.'
       },
       {
         does: 'Find the other number from the count fact',
@@ -150,7 +150,7 @@ FC.cards('math', 'u3', [
       {
         does: 'Write it as x² + b × x = c, with x² on its own',
         working: 'x × (x + 3) = 70. Multiply out: x × x is x², and x × 3 is 3 × x, so x² + 3 × x = 70',
-        why: 'The banner is x metres wide and x + 3 metres long, and its area is the width times the length. The missing width appears twice: once as x × x and once inside 3 × x, which is why the equation has x² in it as well as x. Writing it as x² plus some of x, equal to the result, is the shape that the rest of the working is built for. In that shape, b stands for the number in front of x, here 3, and c stands for the result, here 70.'
+        why: 'The banner is x meters wide and x + 3 meters long, and its area is the width times the length. The missing width appears twice: once as x × x and once inside 3 × x, which is why the equation has x² in it as well as x. Writing it as x² plus some of x, equal to the result, is the shape that the rest of the working is built for. In that shape, b stands for the number in front of x, here 3, and c stands for the result, here 70.'
       },
       {
         does: 'Add the square of half the number in front of x to both sides',
@@ -159,7 +159,7 @@ FC.cards('math', 'u3', [
       {
         does: 'Write the left side as one number {t:squared}',
         working: 'x² + 3 × x + 2.25 = (x + 1.5) × (x + 1.5), so (x + 1.5)² = 72.25',
-        why: 'x² + 3 × x + 2.25 is exactly (x + 1.5) multiplied by itself, as the multiplying out in the last step showed. Writing it that way leaves x in one place only, inside the bracket, which is what a {t:sqroot} can undo.'
+        why: 'x² + 3 × x + 2.25 is exactly (x + 1.5) multiplied by itself, as the multiplying out in the last step showed. Writing it that way leaves x in one place only, inside the parentheses, which is what a {t:sqroot} can undo.'
       },
       {
         does: 'Take the {t:sqroot} of both sides, keeping both answers',
@@ -169,7 +169,7 @@ FC.cards('math', 'u3', [
       {
         does: 'Take away half the number in front of x from each',
         working: 'x = 8.5 − 1.5 = 7, or x = −8.5 − 1.5 = −10',
-        why: 'The 1.5 was added to x inside the bracket, so it is taken away from each side to leave x on its own. There are two answers for x because there were two numbers that give 72.25 when they are {t:squared}.'
+        why: 'The 1.5 was added to x inside the parentheses, so it is taken away from each side to leave x on its own. There are two answers for x because there were two numbers that give 72.25 when they are {t:squared}.'
       },
       {
         does: 'Throw out any answer the story rules out, and check the one left',
@@ -218,7 +218,7 @@ FC.cards('math', 'u3', [
       {
         does: 'Write it as x² + b × x = c, with x² on its own',
         working: '2 × x × (x + 6) = 144. Multiply out: 2 × x² + 12 × x = 144. Divide every term by 2: x² + 6 × x = 72',
-        why: 'There are two lawns, each x metres wide and x + 6 metres long, so the total area is 2 × x × (x + 6) = 144. Multiplying out gives 2 × x² + 12 × x = 144. The number in front of x² is 2, which the steps after this one are not built for, so every term is divided by 2: x² + 6 × x = 72. Dividing both sides by the same number keeps the equation true.'
+        why: 'There are two lawns, each x meters wide and x + 6 meters long, so the total area is 2 × x × (x + 6) = 144. Multiplying out gives 2 × x² + 12 × x = 144. The number in front of x² is 2, which the steps after this one are not built for, so every term is divided by 2: x² + 6 × x = 72. Dividing both sides by the same number keeps the equation true.'
       },
       {
         does: 'Add the square of half the number in front of x to both sides',

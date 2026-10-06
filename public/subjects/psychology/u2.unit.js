@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -107,7 +107,8 @@ FC.unit('psychology', 'u2', {
     history: [
       { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'The first question now has four answers (Unit One rebuilt), and its second answer is worded “Something one person does to another”. Unit Two prints the gate from the key, so its orient map changed with it.' },
-      { rev: 3, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 3, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 4, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild.
     keyChanges: [
@@ -116,7 +117,7 @@ FC.unit('psychology', 'u2', {
         why: 'The first answer was worded five ways across the app (audit 1.4), and "a mind justifying itself" does not fit fair reasoning, which this branch contains. The gate belongs to Unit One; its rebuild settles the wording and the missing "nothing to name here" answer (audit 1.7).' },
       { step: 'R1', was: 'Two questions. First "Timing of the conclusion" (fixed before the reasoning began / belief or action came first; discomfort followed / honestly responding to new evidence), then "What gives, to relieve it" (five answers; the one for motivated reasoning repeated the first question)',
         now: 'one question, "What does the reasoning do?", with five answers, each something an observer can point to',
-        why: 'Timing could not place confirmation bias (audit 2.7, specimen 3). A first draft of this rebuild replaced it with "What is the reasoning about?"; review found that question separated no pair the second did not already separate, and was marked on a judgement no card showed (evidence in the case that the person never weighs). By K2.2 a question that does no work is removed, not reworded. What it sorted is kept as the grouping of parts one and two.' },
+        why: 'Timing could not place confirmation bias (audit 2.7, specimen 3). A first draft of this rebuild replaced it with "What is the reasoning about?"; review found that question separated no pair the second did not already separate, and was marked on a judgment no card showed (evidence in the case that the person never weighs). By K2.2 a question that does no work is removed, not reworded. What it sorted is kept as the grouping of parts one and two.' },
       { outcome: 'sunkcost', was: 'Sunk cost / escalation of commitment', now: 'one name; the other is taught once as "also called"', why: 'One name per concept (P5).' },
       { outcome: 'fair', was: 'Genuine belief revision (not a bias)', now: 'Fair reasoning, covering a view that changes and a view that is kept, when the facts got the same test either way',
         why: '"Genuine" was used in two senses (audit 2.3); "belief revision" is not something a learner will hear (P4); and the old outcome had no place for a view fairly tested and kept, which the cards said four times is not a fault. "Honest" was not used because the unit teaches that people doing the other four are usually sincere.' }

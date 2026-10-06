@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -37,13 +37,13 @@ FC.unit('wealth', 'u2', {
       rule: 'In {o:defer} the sale is only planned and nothing needs it, so holding off removes the tax. In {o:harvest} a sale has already made {t:gain} that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax.',
       test: 'Has something already been sold this year at {t:gain}? And is another investment, not yet sold, worth less than was paid for it?' },
     { id: 'location~nocut', pair: ['location', 'nocut'], step: 'E1',
-      shared: 'In both, the person holds a pension and an ordinary account, and one of the funds pays out a good deal of income every year.',
+      shared: 'In both, the person holds an IRA or a 401(k) and an ordinary brokerage account, and one of the funds pays out a good deal of income every year.',
       rule: 'In {o:location} the investment paying out the most is held in the taxed account, so tax is charged on it each year. In {o:nocut} it already sits in {t:sheltered}, and what is taxed is the investment that pays out little.',
       test: 'Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?' },
     { id: 'burnrate~nocut', pair: ['burnrate', 'nocut'], step: 'E1',
       shared: 'In both, a sum is taken out of {t:pot} every year to spend.',
-      rule: 'In {o:burnrate} the sum is a fixed number of pounds, set when {t:pot} was worth more, so it becomes a bigger share as {t:pot} shrinks. In {o:nocut} the sum is worked out again each year as a percentage of what {t:pot} is worth now, so it falls when {t:pot} falls.',
-      test: 'Is the sum the same number of pounds as in earlier years, or worked out again each year from what {t:pot} is worth now?' }
+      rule: 'In {o:burnrate} the sum is a fixed number of dollars, set when {t:pot} was worth more, so it becomes a bigger share as {t:pot} shrinks. In {o:nocut} the sum is worked out again each year as a percentage of what {t:pot} is worth now, so it falls when {t:pot} falls.',
+      test: 'Is the sum the same number of dollars as in earlier years, or worked out again each year from what {t:pot} is worth now?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The key asks one question here, so the
@@ -106,7 +106,8 @@ FC.unit('wealth', 'u2', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first branch unit of Wealth Preservation, for the gate answer "Something taken out of it every year". Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' }
     ],
     // What the K2 rewrite changed in this branch of the key, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [
@@ -125,7 +126,7 @@ FC.unit('wealth', 'u2', {
       { outcome: 'nocut', was: '"A cost worth paying" (charges only), with answers that contradicted its own card (audit 2.13)',
         now: '"Nothing to cut back", covering a charge for real work at a set price, income investments already in the sheltered account, and spending already reset each year as a percentage of the pot',
         why: 'K2.9: sound withdrawal and tax cases had no answer once the fix-already-applied specimens became situations. The old name survives once, as other words real life uses.' },
-      { outcome: 'burnrate, location, defer, harvest, feecore', was: '"realise", "basis", "wrapper", "core", "the draw", "burn rate"',
+      { outcome: 'burnrate, location, defer, harvest, feecore', was: '"realize" (spelled the British way in the old lessons), "basis", "wrapper", "core", "the draw", "burn rate"',
         now: 'replaced by "sold" and "not sold", "what was paid for it", "sheltered account", "index fund"',
         why: 'Section 11 and audit 2.3, 2.5. New terms taught on their own cards: an index fund, a sheltered account, a gain, compounding.' }
     ],

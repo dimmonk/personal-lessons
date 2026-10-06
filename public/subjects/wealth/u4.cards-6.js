@@ -30,12 +30,12 @@ FC.cards('wealth', 'u4', [
         reason: 'The bill has a set size and a set day, and the money for it sits in something whose price can fall: {cue:T1}. Nothing is paid every month, so these are not living costs, and the case says nothing about a plan for {t:mix}. The bill is the whole case.' }
     ],
     hold: {
-      neighbour: 'covered',
+      neighbor: 'covered',
       prompt: { kind: 'reason',
         lead: 'The case says the money for the bill has been set aside, so it can look like a case in which a fall would catch nothing.',
         choices: [
           { id: 'a', text: 'Imani has set the money aside for the bill since the summer.',
-            note: 'True, and it is why the case can look like {o:covered}. But setting money aside says nothing about what the money is held in. £38,000 set aside in shares can still fall before the day.' },
+            note: 'True, and it is why the case can look like {o:covered}. But setting money aside says nothing about what the money is held in. $38,000 set aside in shares can still fall before the day.' },
           { id: 'b', text: 'The money for the bill is in shares, and the bill is due on a day that will not move.' },
           { id: 'c', text: 'Her accountant worked the amount out from her accounts.',
             note: 'True, but that is how she knows the size of the bill. It does not show whether a fall could reach the money for it.' }
@@ -43,7 +43,7 @@ FC.cards('wealth', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:covered} you must be able to point to this: {needs:covered}. Imani’s money for the bill is not in cash and not in bonds that repay by the day. It is in shares, so there is a gap that a fall could open between what she has and what she must pay.',
-        'It is the question from Mira’s two care-home cases. {test:ladder~covered} Here the money for the bill is held in shares, so the answer is {a:T1.datedbill}.'
+        'It is the question from Mira’s two assisted-living cases. {test:ladder~covered} Here the money for the bill is held in shares, so the answer is {a:T1.datedbill}.'
       ]
     },
     impression: {
@@ -65,11 +65,11 @@ FC.cards('wealth', 'u4', [
         reason: 'Now look at where her bills are paid from: {cue:T1}. Three years of living costs are in a savings account and in bonds that repay before each year begins. Nothing has been sold since prices fell, and nothing has to be.' }
     ],
     hold: {
-      neighbour: 'cashbuffer',
+      neighbor: 'cashbuffer',
       prompt: { kind: 'reason',
         lead: 'Hilda lives on her money and prices have just fallen by more than a quarter. That is the story of Alan, and it can make the case look like the first name.',
         choices: [
-          { id: 'a', text: 'She lives on £2,500 a month from her money, and prices fell 28% last year.',
+          { id: 'a', text: 'She lives on $2,500 a month from her money, and prices fell 28% last year.',
             note: 'True, and it is why the case can look like {o:cashbuffer}. But a person living on money in a year of falling prices is the story, and not the answer. {o:cashbuffer} needs the bills to be paid by selling, and Hilda has sold nothing.' },
           { id: 'b', text: 'The papers say that prices may fall again.',
             note: 'True, but that is a forecast, and the question is not about forecasts. Whether or not prices fall again, the case shows where the bills come from.' },
@@ -97,7 +97,7 @@ FC.cards('wealth', 'u4', [
       'A fall is not the thing to look for, because falls come to everyone. Look for what a fall would catch: living costs paid by selling, a bill on a date with its money in shares, or a mix that has moved well away from its plan.',
       'Where the money is held decides it. Cash, and bonds that repay before the day, are out of a fall’s reach. Shares and funds are not. The same bill, the same person and the same fall can give {a:T1.datedbill} or {a:T1.ready}, and only where the money for the bill is held tells them apart.',
       'Money needed soon comes first. When a mix that has moved sits beside living costs paid by selling, or a bill on a date, the answer is the living costs or the bill.',
-      'Count the cost in pounds before you act. Cash and bonds give up some growth, and a written rule costs nothing to write but must be followed on its date. {a:T1.ready} is a real answer: when what is needed is already out of reach, do nothing, and say why.',
+      'Count the cost in dollars before you act. Cash and bonds give up some growth, and a written rule costs nothing to write but must be followed on its date. {a:T1.ready} is a real answer: when what is needed is already out of reach, do nothing, and say why.',
       'Two answers from the first question can look like these. A fixed sum taken from money that has shrunk is {a:D1.erosion}, and so is a sale that would bring a tax bill that new money could avoid. In both, the first question gives way to what comes out of the money every year.',
       'The order of good and bad years, {t:sequence}, matters only while money is being taken out.'
     ] },
@@ -112,8 +112,8 @@ FC.cards('wealth', 'u4', [
     prompts: [
       { outcome: 'cashbuffer', occasion: 'Any account you live on, and what happens to next month’s bills if the price of what is in it drops.' },
       { outcome: 'covered', occasion: 'A time someone told you to do something about a fall in prices, when the money you needed was already safe.' },
-      { outcome: 'ladder', occasion: 'A tax bill, a fee or a deposit with a date on it, and where the money for it is held until then.' },
-      { outcome: 'rebalance', occasion: 'The line on a pension statement that shows how your money is split, beside {t:mix} you chose.' }
+      { outcome: 'ladder', occasion: 'A tax bill, tuition or a down payment with a date on it, and where the money for it is held until then.' },
+      { outcome: 'rebalance', occasion: 'The line on a 401(k) statement that shows how your money is split, beside {t:mix} you chose.' }
     ],
     places: ['At home', 'At work', 'In the news', 'In my own head'] },
 

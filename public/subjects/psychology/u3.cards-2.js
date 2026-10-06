@@ -7,7 +7,7 @@ FC.cards('psychology', 'u3', [
     link: 'In the first name the denial comes back for months. The second is a different thing: it happens in one exchange, and the person is answering something that has just been raised with them.',
     case: 'd-till', mark: 'T1',
     strip: [
-      'Joy raises something with Marek: the till was short, and the camera shows him taking two notes. So the case shows he did it.',
+      'Joy raises something with Marek: the register was short, and the camera shows him taking two bills. So the case shows he did it.',
       'In answer he denies it: "That\'s not true."',
       'He attacks the person who raised it: "You were forty minutes late on Tuesday and nobody said a word to you."',
       'And he presents himself as the one wronged: "I\'m the one being picked on here."'
@@ -22,7 +22,7 @@ FC.cards('psychology', 'u3', [
     name: 'The name for this is {o:darvo}. The name says what happens to the blame: it starts with Marek and, by the end of the exchange, it has been turned around onto Joy. The name is for an exchange with all three parts, in which the case shows he did it. One or two of the three parts is not enough.' },
 
   { id: 'again-darvo', kind: 'again', outcome: 'darvo',
-    link: 'The missing till money gave you what to point to: {needs:darvo}. Here is a second case with a completely different story.',
+    link: 'The missing register money gave you what to point to: {needs:darvo}. Here is a second case with a completely different story.',
     first: 'd-till', second: 'd-phone', step: 'T1',
     instruction: 'Find what the two cases share. Ignore the story (a bar, a marriage). Look at one thing only: what the person says back when the other raises it.',
     prompt: { kind: 'phrase', answer: "'Those aren't what you think,' Paolo says, 'and I never said I'd stopped seeing her. Do you know how controlling it is to go through someone's phone? Everyone says so. I work all week for this family, and now I'm put on trial in my own kitchen.'" },
@@ -36,9 +36,9 @@ FC.cards('psychology', 'u3', [
     typical: [
       'It always comes in answer to something. Someone has raised a real problem, and the reply is where the case turns. Without the raising, there is nothing to deny.',
       'The attack is usually about something else. It goes for a different fault of the person who raised it ("you were late"), or for their motives ("you are always looking for someone to blame"), or for the way they raised it ("how dare you accuse me"). Sometimes what it says is even true. That does not matter. What matters is that it moves the attention away from what was raised.',
-      'Playing the one wronged is often said as hurt: "I am the one who gets treated like a criminal", "after everything I have done for you". The person who raised the problem ends up apologising, or explaining why they raised it.',
+      'Playing the one wronged is often said as hurt: "I am the one who gets treated like a criminal", "after everything I have done for you". The person who raised the problem ends up apologizing, or explaining why they raised it.',
       'It can be quiet, as well as loud. "Honestly, I am hurt that you would say that" is playing the one wronged in a calm, sad voice, and the denial and the attack can be in the same calm voice.',
-      'It needs all three parts, in one reply or one conversation. A reply that is only a denial, or only anger, has not got the other parts yet.'
+      'It needs all three parts, in one reply or one conversation. A reply that is only a denial, or only anger, does not have the other parts yet.'
     ],
     not: 'An angry or defensive reply is not {o:darvo}. People who are wrongly accused deny it, are angry, and say they are being picked on, and they may be right to. A person who did it and says "yes, that was me, I am sorry" has not done it either. The name applies only when the case shows the person did what was raised, and they answer with all three.',
     wild: ['"That never happened."', '"You are the one who always does this."', '"How dare you accuse me."', '"After everything I have done for you."', '"I am the one being attacked here."'],
@@ -56,7 +56,7 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Ravi, his wife Lena and a dent in the car. Compare one thing: is this one exchange, in which Lena is asked about it and answers with a denial, an attack and playing the one wronged? Or is it the same denial coming back over months, until Ravi starts to doubt his memory?',
     prompt: { kind: 'which', option: 'T1.reverse', answer: 'dent-once' },
     difference: [
-      'In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbour whether he is going mad. The answer is {a:T1.denymemory}, and the case is {o:gaslight}.',
+      'In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbor whether he is going mad. The answer is {a:T1.denymemory}, and the case is {o:gaslight}.',
       'In Case B it is one dinner. Ravi raises it, and in answer Lena denies it, goes for his lateness with the children, and says she is the one being accused after being up since five. That is all three parts in one exchange, and nothing is repeated for months. The answer is {a:T1.reverse}, and the case is {o:darvo}.',
       'The two cases share the same dent, the same two people and a denial. What differs is whether it is one exchange with three parts, or one denial that keeps coming back until the other person doubts themselves.'
     ] },

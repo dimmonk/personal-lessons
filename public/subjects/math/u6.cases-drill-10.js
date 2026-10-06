@@ -12,11 +12,11 @@ FC.cases('math', 'u6', [
     topic: 'paint for a garden shed',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 litres. How much paint do the walls of the garden shed need?',
+    text: 'A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 liters. How much paint do the walls of the garden shed need?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: {
       M1: 'How much paint do the walls of the garden shed need?',
-      S1: 'A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 litres',
+      S1: 'A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 liters',
       S2: 'How much paint do the walls of the garden shed need?'
     },
     reason: {
@@ -44,20 +44,20 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '2 litres × 9 = 18 litres'
+        working: '2 liters × 9 = 18 liters'
       }
     ],
     answer: {
       choices: [
-        { id: 'r', text: '18 litres' },
+        { id: 'r', text: '18 liters' },
         {
           id: 's1',
-          text: '6 litres',
+          text: '6 liters',
           slip: 'you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.'
         },
         {
           id: 's2',
-          text: '54 litres',
+          text: '54 liters',
           slip: 'you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.'
         }
       ],

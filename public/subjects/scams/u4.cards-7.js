@@ -9,13 +9,13 @@ FC.cards('scams', 'u4', [
     case: 'm-over-bike', mark: 'M1',
     strip: [
       'Rafa is selling something, so he is the one who expects to be paid.',
-      'A buyer takes the bike at once, without haggling, and £800 arrives in Rafa’s account: twice the price.',
-      'The buyer says that it was a typing slip, and asks Rafa to send the £400 difference to a courier’s account.',
+      'A buyer takes the bike at once, without haggling, and $800 arrives in Rafa’s account: twice the price.',
+      'The buyer says that it was a typo, and asks Rafa to send the $400 difference to a courier’s account.',
       'Rafa is being asked to send money out, and to someone other than the buyer.'
     ],
     explain: [
-      'This is what makes this name different from all the others in this part. The money has arrived. Rafa can see £800 in his account, and all that he is asked to do is to give back what he was never owed. It feels like honesty.',
-      'But the £800 is not what it seems. It may be a payment that is reversed a few days later, a card payment made with a stolen card, a transfer that the bank recalls, or a cheque that bounces. Rafa’s £400 goes out for real, and at once. When the buyer’s payment disappears, Rafa has lost the £400, and the bike too if he has handed it over.',
+      'This is what makes this name different from all the others in this part. The money has arrived. Rafa can see $800 in his account, and all that he is asked to do is to give back what he was never owed. It feels like honesty.',
+      'But the $800 is not what it seems. It may be a payment that is reversed a few days later, a card payment made with a stolen card, a transfer that the bank recalls, or a check that bounces. Rafa’s $400 goes out for real, and at once. When the buyer’s payment disappears, Rafa has lost the $400, and the bike too if he has handed it over.',
       'There is a fair way for a buyer who really overpaid to put it right. They ask their own bank to reverse the payment, or they ask for all of it back to the account it came from, and then pay again. They do not ask for a second payment to somebody else, and a courier’s account is somebody else.',
       'You can see the shape of this on the day. A deal is under way, a payment arrives that is more than the price, and you are asked to send some of it back or on. What you cannot see on the day is that the payment will be reversed. That only shows afterwards, so the questions leave it out.'
     ],
@@ -26,7 +26,7 @@ FC.cards('scams', 'u4', [
     link: 'The bike gave you what to point to: {needs:overpayment}. Here it is again with no bike and no goods at all: a piano teacher who is paid for lessons.',
     first: 'm-over-bike', second: 'm-over-tutor', step: 'M1',
     instruction: 'Find what the two cases share. Ignore the story (a bike, piano lessons). Look at one thing only: the deal that the money is part of.',
-    prompt: { kind: 'phrase', answer: 'A parent, Mrs Okafor, pays her £600 for ten lessons that cost £300' },
+    prompt: { kind: 'phrase', answer: 'A parent, Mrs. Okafor, pays her $600 for ten lessons that cost $300' },
     shared: [
       'In both cases the person has something to be paid for, a bike or ten lessons, and the other side pays twice the price. In both, the other side calls it a slip and asks for the extra to be sent on to someone else’s account: a courier’s, a husband’s. In both, the person is asked to send money out of an account while the other side’s payment is not yet certain.',
       'A bike and piano lessons share nothing else. A deal that you are in, a payment that is more than the price, and a request to send some of it back or on, is what {o:overpayment} names.'
@@ -39,7 +39,7 @@ FC.cards('scams', 'u4', [
       'The buyer is quick and easy. They do not haggle, do not ask about the item and want it at once.',
       'A payment arrives, and it is too much: double the price or more. A message says that it was a mistake: an extra zero, a slip by an assistant, a wrong box.',
       'You are asked to send the difference back, or on, to a different account: a courier, a relative, a “shipping agent”. Sometimes you are asked to be quick, because a courier is on the way.',
-      'Days later the buyer’s payment disappears: a stolen card, a transfer recalled, a cheque that bounces. Your payment does not. You have lost the money, and often the item as well.',
+      'Days later the buyer’s payment disappears: a stolen card, a transfer recalled, a check that bounces. Your payment does not. You have lost the money, and often the item as well.',
       'Which of this can you see on the day? The deal, the payment that is too large and the request to send some of it on are all there. The payment that later disappears can only be seen afterwards, and the questions do not use it.'
     ],
     not: [
@@ -64,10 +64,10 @@ FC.cards('scams', 'u4', [
   { id: 'look-overpayment-realpayment', kind: 'lookalike', ledger: 'overpayment~realpayment',
     link: 'You have met both names. This pair is about the same camera changing hands at the same price. This card puts them side by side.',
     cases: ['m-camera-sold', 'm-camera-bought'],
-    instruction: 'Both cases are about Isla and a camera that costs £600. Compare one thing: what she is asked to do with the money.',
+    instruction: 'Both cases are about Isla and a camera that costs $600. Compare one thing: what she is asked to do with the money.',
     prompt: { kind: 'which', option: 'M2.agreed', answer: 'm-camera-bought' },
     difference: [
-      'In Case A Isla is selling the camera. The buyer pays £1,000 and asks her to send the extra £400 on to a friend’s account. She is being asked to send money out of her account to someone other than the buyer. The case is {o:overpayment}.',
+      'In Case A Isla is selling the camera. The buyer sends a $1,000 check and asks her to send the extra $400 on to a friend’s account. She is being asked to send money out of her account to someone other than the buyer. The case is {o:overpayment}.',
       'In Case B Isla is buying a camera, at the price that she agreed with the seller in the app’s chat. She pays it through the marketplace’s own button, in an app that she has used for years, which holds the money until the camera arrives. She found the way to pay through a way she already had, and nothing is hurried or hidden. The answer is {a:M2.agreed}, and the case is {o:realpayment}.',
       'It is the same camera at the same price. What differs is whether she is asked to send money where a stranger says, or to pay in the way that she already used.'
     ] },
@@ -75,12 +75,12 @@ FC.cards('scams', 'u4', [
   { id: 'look-overpayment-refundscam', kind: 'lookalike', ledger: 'overpayment~refundscam',
     link: '{o:overpayment} has a look-alike elsewhere: {o:refundscam}, which you met in an earlier unit. In both, too much money is said to have reached you, and you are asked to send the difference back. This card puts them side by side.',
     cases: ['m-aziz-sale', 'm-aziz-refund'],
-    instruction: 'Both cases are about Aziz, and in both £200 too much is said to have reached him. Compare one thing: what he is asked to do before any money is sent.',
+    instruction: 'Both cases are about Aziz, and in both $200 too much is said to have reached him. Compare one thing: what he is asked to do before any money is sent.',
     prompt: { kind: 'which', option: 'D1.device', answer: 'm-aziz-refund' },
     difference: [
       'In Case A Aziz is selling something, a buyer says that they paid too much, and he is asked to send the difference to an account. Nothing is asked of his phone or his computer. The answer to the first question is {a:D1.money}, and the case is {o:overpayment}.',
       'In Case B a caller says that a refund was too large, and asks Aziz to install a support tool so that the caller can watch his phone while he sends the difference back. The first thing that he is asked to do is to put something on his device, and the answer to the first question is {a:D1.device}. The case is {o:refundscam}.',
-      'The story is the same: too much money, and a difference to send back. What differs is what comes first. When a request asks for something on your device and for money, the answer is the device, because once someone can watch your phone they can do far more than take the £200.'
+      'The story is the same: too much money, and a difference to send back. What differs is what comes first. When a request asks for something on your device and for money, the answer is the device, because once someone can watch your phone they can do far more than take the $200.'
     ] },
 
   /* ---------- The key's first question about money ---------- */
@@ -93,7 +93,7 @@ FC.cards('scams', 'u4', [
     ],
     how: [
       'Find the sentence in the request that gives the reason for paying. It is often near the start, before the amount. Then ask which of the six answers describes it, and put your finger on the words.',
-      'Three of the six answers leave one name straight away: someone you know only online (two names), money waiting for you, and money you lost. The other three, a bill, an official and a deal, each leave several names, because the real request and some of the copies give the same reasons. For those the second question does the work.',
+      'Three of the six answers leave one name right away: someone you know only online (two names), money waiting for you, and money you lost. The other three, a bill, an official and a deal, each leave several names, because the real request and some of the copies give the same reasons. For those the second question does the work.',
       'You can answer this at the moment the request arrives, from the request itself. You do not need to know whether it is a scam.'
     ],
     whenBoth: [

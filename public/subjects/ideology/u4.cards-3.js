@@ -28,10 +28,10 @@ FC.cards('ideology', 'u4', [
   /* ---------- Beside the names they are mistaken for ---------- */
   { id: 'look-conserv-nationalism', kind: 'lookalike', ledger: 'conserv~nationalism',
     h: 'Old ways and one people, at the same festival',
-    link: 'Both names in this unit love what was handed down, and so does a name taught in Unit Three. Here are the first name of this unit and that one, told about the same harbour festival.',
-    cases: ['i4-lk-conserv-harbour', 'i4-lk-nationalism-harbour'],
-    instruction: 'Both cases are about the harbour festival at Port Selby, and both are fond of it. Compare one thing: what does the text hold up first, ways handed down, or one people?',
-    prompt: { kind: 'which', option: 'D1.tradition', answer: 'i4-lk-conserv-harbour' },
+    link: 'Both names in this unit love what was handed down, and so does a name taught in Unit Three. Here are the first name of this unit and that one, told about the same harbor festival.',
+    cases: ['i4-lk-conserv-harbor', 'i4-lk-nationalism-harbor'],
+    instruction: 'Both cases are about the harbor festival at Port Selby, and both are fond of it. Compare one thing: what does the text hold up first, ways handed down, or one people?',
+    prompt: { kind: 'which', option: 'D1.tradition', answer: 'i4-lk-conserv-harbor' },
     difference: [
       'In Case A the text says that the blessing of the boats was handed down by the crews before them and should guide how the festival is planned, and asks for it to be kept, and for any work on the quay to be slow. It speaks of no people to be put first. The answer to Unit One’s question is {a:D1.tradition}, and its answer to this unit’s question is {a:T1.keep}. The case is {o:conserv}.',
       'In Case B the text says that the festival shows we are one people, and that what divides us counts for less than what holds us together. It names no old ways that should guide. It leaves voting and disagreement alone. The answers are {a:D1.nation}, {a:N1.whole} and {a:N2.keep}. The case is {o:nationalism}.',

@@ -11,7 +11,7 @@ FC.cases('psychology', 'u3', [
   /* ---------- Reverse items: the name is given, the learner says what to expect ---------- */
   { id: 'rev-gaslight', use: 'drill', kind: 'reverse', outcome: 'gaslight', expect: 'hear',
     options: [
-      { text: '"I never said that. You always get things muddled. You must have dreamt it."', voice: 'gaslight' },
+      { text: '"I never said that. You always get things muddled. You must have dreamed it."', voice: 'gaslight' },
       { text: '"I didn’t do it. And you’re the one who is always late. I can’t believe you would blame me."', voice: 'darvo' },
       { text: '"You never told me that. Let’s look at the message and see who is right."', voice: 'ordexchange' },
       { text: '"I’ve never felt like this about anyone. Come away with me this weekend."', voice: 'lovebomb' }

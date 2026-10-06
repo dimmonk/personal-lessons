@@ -9,7 +9,7 @@ FC.cards('math', 'u4', [
     id: 'solved-logsolve-1',
     kind: 'solved',
     outcome: 'logsolve',
-    h: 'Worked: how many years until €1,500 becomes €3,000',
+    h: 'Worked: how many years until $1,500 becomes $3,000',
     link: 'Here is the procedure for the third kind with real numbers: an account where the interest stays in, and the question is how long until it holds a target. Every step is written out.',
     problem: 'm4-s-logsolve-1',
     steps: [
@@ -20,8 +20,8 @@ FC.cards('math', 'u4', [
       },
       {
         does: 'Divide the target by the start, to see how many times the start it must become',
-        working: '€3,000 ÷ €1,500 = 2',
-        why: 'Only how many times bigger the target is matters, and not the sizes of the start and the target. Any start takes the same number of multiplications to become 2 times bigger. Here €3,000 ÷ €1,500 = 2, so the question becomes: how many times must 1.06 be multiplied to make 2?'
+        working: '$3,000 ÷ $1,500 = 2',
+        why: 'Only how many times bigger the target is matters, and not the sizes of the start and the target. Any start takes the same number of multiplications to become 2 times bigger. Here $3,000 ÷ $1,500 = 2, so the question becomes: how many times must 1.06 be multiplied to make 2?'
       },
       {
         does: 'Divide the log of that by the log of the number from the first step',
@@ -29,11 +29,11 @@ FC.cards('math', 'u4', [
       },
       {
         does: 'Round, check against whole numbers of times, and say what it shows',
-        working: 'Starting from €1,500, 11 multiplications by 1.06 give about €2,847, still under the target; 12 multiplications give about €3,018, over it. So the target is reached during the 12th year. Rounded, the answer is about 11.9 years',
-        why: 'The division gives a count with a decimal part, 11.9, and it is only right if it agrees with a count of whole years. Multiplying €1,500 by 1.06 eleven times gives about €2,847, which is under €3,000, and twelve times gives about €3,018, which is over it. So the account passes €3,000 during the 12th year, and 11.9 says where in that year.'
+        working: 'Starting from $1,500, 11 multiplications by 1.06 give about $2,847, still under the target; 12 multiplications give about $3,018, over it. So the target is reached during the 12th year. Rounded, the answer is about 11.9 years',
+        why: 'The division gives a count with a decimal part, 11.9, and it is only right if it agrees with a count of whole years. Multiplying $1,500 by 1.06 eleven times gives about $2,847, which is under $3,000, and twelve times gives about $3,018, which is over it. So the account passes $3,000 during the 12th year, and 11.9 says where in that year.'
       }
     ],
-    result: 'The account holds €3,000 after about 11.9 years, which means during the 12th year. Adding 6% of the start, €90, every year, as if the interest did not grow, would have taken 16.7 years, which is far too slow.',
+    result: 'The account holds $3,000 after about 11.9 years, which means during the 12th year. Adding 6% of the start, $90, every year, as if the interest did not grow, would have taken 16.7 years, which is far too slow.',
     hold: {
       step: 2,
       prompt: {
@@ -51,7 +51,7 @@ FC.cards('math', 'u4', [
           },
           {
             id: 'z',
-            text: '€3,000 is 2 times €1,500.',
+            text: '$3,000 is 2 times $1,500.',
             note: 'That is true, and it is the result of the step before, but it does not say why logs are used or why they are divided.'
           }
         ]
@@ -68,7 +68,7 @@ FC.cards('math', 'u4', [
     id: 'solved-logsolve-2',
     kind: 'solved',
     outcome: 'logsolve',
-    h: 'Worked again: how many days for mould to cover 500 cm²',
+    h: 'Worked again: how many days for mold to cover 500 cm²',
     link: 'The same procedure in a different story, with a doubling: there is no percentage to turn into a decimal, because the problem gives the number multiplied by each time directly.',
     problem: 'm4-s-logsolve-2',
     steps: [
@@ -92,7 +92,7 @@ FC.cards('math', 'u4', [
         why: 'After 6 days the patch covers 256 cm², which is under 500 cm². After 7 days it covers 512 cm², which is over it. So the patch passes 500 cm² just before the end of the 7th day, and 7.0 days agrees with that.'
       }
     ],
-    result: 'The mould covers 500 cm² after about 7 days: it covers 256 cm² after 6 days and 512 cm² after 7. Adding the first day’s 4 cm² every day, as if the patch grew by the same number each time, would take 124 days.',
+    result: 'The mold covers 500 cm² after about 7 days: it covers 256 cm² after 6 days and 512 cm² after 7. Adding the first day’s 4 cm² every day, as if the patch grew by the same number each time, would take 124 days.',
     hold: {
       step: 1,
       prompt: {
@@ -132,25 +132,25 @@ FC.cards('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €3.00. After: €3.45',
+        working: 'Before: $3.00. After: $3.45',
         why: 'The change is described by two figures, the toll before and the toll after. Both are written down first, because everything else about the change is worked out from them.'
       },
       {
         does: 'Say how big the change was',
-        working: '€3.45 − €3.00 = €0.45, and €0.45 ÷ €3.00 = 0.15, which is 15% of the old amount',
-        why: 'The size of the change, €0.45, is the after figure take away the before figure. As a share of the old toll it is €0.45 ÷ €3.00 = 0.15, which is 15%. This says how big the change was. It does not say whether the change comes again.'
+        working: '$3.45 − $3.00 = $0.45, and $0.45 ÷ $3.00 = 0.15, which is 15% of the old amount',
+        why: 'The size of the change, $0.45, is the after figure take away the before figure. As a share of the old toll it is $0.45 ÷ $3.00 = 0.15, which is 15%. This says how big the change was. It does not say whether the change comes again.'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €3.45 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $3.45 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 4 years: €3.45',
-        why: 'The toll is €3.45 now and no further change is mentioned, so in 4 years it is still €3.45. The 15% and the €0.45 are facts about the one change, and they are not carried forward.'
+        working: 'In 4 years: $3.45',
+        why: 'The toll is $3.45 now and no further change is mentioned, so in 4 years it is still $3.45. The 15% and the $0.45 are facts about the one change, and they are not carried forward.'
       }
     ],
-    result: 'In 4 years the toll is €3.45, the same as now. Carrying the €0.45 forward as if it came every year would give €5.25, and carrying the 15% forward as if it came every year would give €6.03: both are far out.',
+    result: 'In 4 years the toll is $3.45, the same as now. Carrying the $0.45 forward as if it came every year would give $5.25, and carrying the 15% forward as if it came every year would give $6.03: both are far out.',
     hold: {
       step: 2,
       prompt: {
@@ -168,14 +168,14 @@ FC.cards('math', 'u4', [
           },
           {
             id: 'z',
-            text: 'The toll was €3.00 before July.',
+            text: 'The toll was $3.00 before July.',
             note: 'That is true, but it is the toll before the change, and the question is about the toll after it.'
           }
         ]
       },
       reason: [
-        'Whether a change repeats is a fact about the problem and not about the change. A rise of 15% could be the first of many, or the only one. Here the problem says the toll “has stayed at €3.45 ever since”, which tells you that the change was made one time and is over. There is no pattern, so the toll in 4 years is the toll now.',
-        'If the problem had said “rises by 15% every year”, it would be a different problem, and the toll would be multiplied by 1.15 each year. If it had said “rises by €0.45 every year”, it would be a different problem again, and €0.45 would be added each year. The words of the problem decide which, and the numbers alone cannot.'
+        'Whether a change repeats is a fact about the problem and not about the change. A rise of 15% could be the first of many, or the only one. Here the problem says the toll “has stayed at $3.45 ever since”, which tells you that the change was made one time and is over. There is no pattern, so the toll in 4 years is the toll now.',
+        'If the problem had said “rises by 15% every year”, it would be a different problem, and the toll would be multiplied by 1.15 each year. If it had said “rises by $0.45 every year”, it would be a different problem again, and $0.45 would be added each year. The words of the problem decide which, and the numbers alone cannot.'
       ]
     }
   },
@@ -190,25 +190,25 @@ FC.cards('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €15. After: €18',
+        working: 'Before: $15. After: $18',
         why: 'The two figures, the pay before the promotion and the pay after it, are written down first, as in the problem before.'
       },
       {
         does: 'Say how big the change was',
-        working: '€18 − €15 = €3, and €3 ÷ €15 = 0.2, which is 20% of the old amount',
-        why: 'The size of the change is €18 − €15 = €3, and as a share of the old pay it is €3 ÷ €15 = 0.2, which is 20%. This says how big the one change was.'
+        working: '$18 − $15 = $3, and $3 ÷ $15 = 0.2, which is 20% of the old amount',
+        why: 'The size of the change is $18 − $15 = $3, and as a share of the old pay it is $3 ÷ $15 = 0.2, which is 20%. This says how big the one change was.'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'Her pay is fixed at €18 an hour from now on, so no further change is coming',
-        why: 'The problem says the pay is fixed at €18 an hour from now on. That one sentence is what makes this kind: the change is over, and nothing in the problem makes it come again.'
+        working: 'Her pay is fixed at $18 an hour from now on, so no further change is coming',
+        why: 'The problem says the pay is fixed at $18 an hour from now on. That one sentence is what makes this kind: the change is over, and nothing in the problem makes it come again.'
       },
       {
         does: 'See whether the amount ever reaches the target',
-        working: '€18 is not €24, and nothing changes it again, so it never reaches €24 unless a new change is made'
+        working: '$18 is not $24, and nothing changes it again, so it never reaches $24 unless a new change is made'
       }
     ],
-    result: 'She never reaches €24 an hour on this pay: it is fixed at €18. The answer “2 years”, from adding the €3 again every year, treats a change that happened one time as one that repeats.',
+    result: 'She never reaches $24 an hour on this pay: it is fixed at $18. The answer “2 years”, from adding the $3 again every year, treats a change that happened one time as one that repeats.',
     hold: {
       step: 3,
       prompt: {
@@ -221,7 +221,7 @@ FC.cards('math', 'u4', [
           },
           {
             id: 'y',
-            text: '€24 is €6 more than €18.',
+            text: '$24 is $6 more than $18.',
             note: 'That is true, but it measures the gap, and the gap does not close, because nothing is moving the pay.'
           },
           {
@@ -232,8 +232,8 @@ FC.cards('math', 'u4', [
         ]
       },
       reason: [
-        'To reach a target, an amount has to keep moving towards it. An amount that keeps changing, by the same number or by the same share, gets there sooner or later if the target is in the direction it moves. But an amount that changed one time and stopped is not moving. The gap between €18 and €24 is €6, and nothing in the problem makes that gap smaller.',
-        'So the honest answer is “never, unless a new change is made”, and it is not a number of years. Dividing the gap by the old rise, €6 ÷ €3 = 2 years, would treat the €3 as if it came every year, and the problem says it does not.'
+        'To reach a target, an amount has to keep moving towards it. An amount that keeps changing, by the same number or by the same share, gets there sooner or later if the target is in the direction it moves. But an amount that changed one time and stopped is not moving. The gap between $18 and $24 is $6, and nothing in the problem makes that gap smaller.',
+        'So the honest answer is “never, unless a new change is made”, and it is not a number of years. Dividing the gap by the old rise, $6 ÷ $3 = 2 years, would treat the $3 as if it came every year, and the problem says it does not.'
       ]
     }
   }

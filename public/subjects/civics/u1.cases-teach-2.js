@@ -2,7 +2,7 @@
 // the two worked cases). Field guide: see u1.cases-teach-1.js.
 // A look-alike pair is two cases with the same story and different last decisions. An exception is a case whose
 // story points to one family and whose last decision belongs to another. Neither depends on a tie-break, because the
-// first question has none: a case has one last decision, and these cases are where that is practised.
+// first question has none: a case has one last decision, and these cases are where that is practiced.
 
 FC.cases('civics', 'u1', [
 
@@ -30,20 +30,20 @@ FC.cases('civics', 'u1', [
 
   /* ---------- The President or a federal agency beside a judge: a refused application, then a judge asked ---------- */
   { id: 'l-form-refused', use: 'teach', tier: 'clean', setting: 'immigration', topic: 'a citizenship application is refused',
-    text: "Mr Okoro applied to become a citizen. On Tuesday the immigration service sent him a letter refusing his application, saying that a form was missing from his papers. He says he sent it.",
+    text: "Mr. Okoro applied to become a citizen. On Tuesday the immigration service sent him a letter refusing his application, saying that a form was missing from his papers. He says he sent it.",
     route: { D1: ['president'] },
     cues: { D1: 'the immigration service sent him a letter refusing his application, saying that a form was missing from his papers' } },
 
   { id: 'l-form-judge', use: 'teach', tier: 'clean', setting: 'immigration', topic: 'a refusal is put to a judge',
-    text: "Mr Okoro applied to become a citizen, and the immigration service refused, saying that a form was missing from his papers. He says he sent it. On Friday he asked a judge to decide whether the form was really missing.",
+    text: "Mr. Okoro applied to become a citizen, and the immigration service refused, saying that a form was missing from his papers. He says he sent it. On Friday he asked a judge to decide whether the form was really missing.",
     route: { D1: ['courts'] },
     cues: { D1: 'he asked a judge to decide whether the form was really missing' } },
 
   /* ---------- A judge beside a state, city or county: a parking ticket, then a parking fine ---------- */
-  { id: 'l-parking-judge', use: 'teach', tier: 'clean', setting: 'community', topic: 'a parking ticket is cancelled',
-    text: "Dana got a parking ticket on Elm Street. She says a tree hid the sign, so she asked a judge to cancel the ticket. The judge heard her on Monday and cancelled it.",
+  { id: 'l-parking-judge', use: 'teach', tier: 'clean', setting: 'community', topic: 'a parking ticket is canceled',
+    text: "Dana got a parking ticket on Elm Street. She says a tree hid the sign, so she asked a judge to cancel the ticket. The judge heard her on Monday and canceled it.",
     route: { D1: ['courts'] },
-    cues: { D1: 'she asked a judge to cancel the ticket. The judge heard her on Monday and cancelled it' } },
+    cues: { D1: 'she asked a judge to cancel the ticket. The judge heard her on Monday and canceled it' } },
 
   { id: 'l-parking-council', use: 'teach', tier: 'clean', setting: 'community', topic: 'parking fines are doubled',
     text: "Drivers keep stopping on Elm Street where the sign says no stopping. On Tuesday the city council voted to double the fine for stopping there, starting in June.",
@@ -114,12 +114,12 @@ FC.cases('civics', 'u1', [
     ] },
 
   { id: 'x-statejudge', use: 'teach', tier: 'misleading', setting: 'home', topic: 'a county dog rule is ruled on in a state court', name: 'The dog rule',
-    text: "The county of Hale has a rule that no household may keep more than three dogs. Mrs Lund keeps four, and the county told her to give one away. On Monday a judge in the state’s court heard both sides and ruled that she must give one dog away.",
+    text: "The county of Hale has a rule that no household may keep more than three dogs. Mrs. Lund keeps four, and the county told her to give one away. On Monday a judge in the state’s court heard both sides and ruled that she must give one dog away.",
     route: { D1: ['courts'] },
     cues: { D1: 'a judge in the state’s court heard both sides and ruled that she must give one dog away' },
     segments: [
       { text: 'The county of Hale has a rule that no household may keep more than three dogs', note: 'That is a rule made by a county. It is how the matter got here. It is not the last decision in the case.' },
-      { text: 'Mrs Lund keeps four, and the county told her to give one away', note: 'That is the county applying its rule. It comes before the last decision.' },
+      { text: 'Mrs. Lund keeps four, and the county told her to give one away', note: 'That is the county applying its rule. It comes before the last decision.' },
       { text: 'a judge in the state’s court heard both sides and ruled that she must give one dog away' }
     ] },
 

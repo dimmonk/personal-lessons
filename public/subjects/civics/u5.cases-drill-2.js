@@ -38,11 +38,11 @@ FC.cases('civics', 'u5', [
     not: { outcome: 'review', why: 'Nobody says the law against robbery is wrong. The question is about how Pavel’s trial is held.' } },
 
   { id: 'rt-review-2', use: 'drill', tier: 'clean', setting: 'health', topic: 'pamphlets outside a clinic',
-    text: 'A city law bans anyone from handing out pamphlets outside a clinic. Dr Sandhu was fined $120 for giving out pamphlets about healthy eating to people walking past. She asked a judge to cancel the fine, saying the law takes away her right to speak.',
+    text: 'A city law bans anyone from handing out pamphlets outside a clinic. Dr. Sandhu was fined $120 for giving out pamphlets about healthy eating to people walking past. She asked a judge to cancel the fine, saying the law takes away her right to speak.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
     cues: { D1: 'She asked a judge to cancel the fine', J1: 'saying the law takes away her right to speak' },
     reason: { D1: 'The city made its law and fined her, and those came first. The story ends with a request to a judge: {cue:D1}.',
-              J1: 'Dr Sandhu was fined, so she was harmed, and she says the law clashes with a right the Constitution protects: {cue:J1}.' },
+              J1: 'Dr. Sandhu was fined, so she was harmed, and she says the law clashes with a right the Constitution protects: {cue:J1}.' },
     not: { outcome: 'notlegal', why: 'She does not only say that a different rule would be better. She says the law takes away a right.' } },
 
   /* ---------- Varied ---------- */

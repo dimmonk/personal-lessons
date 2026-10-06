@@ -41,7 +41,7 @@ FC.cards('civics', 'u7', [
     link: 'The Vice President and the Speaker are both in the last group. This group puts them in order, because they have a second job in common: they stand behind the President.',
     case: 'c7-teacher',
     plain: [
-      'Mr Okafor’s question is about the line of succession, which means the order in which people take over a job. The President’s job never stands empty. If the President dies in office, resigns or is removed, somebody takes over at once, and the order in which they would is fixed in advance.',
+      'Mr. Okafor’s question is about the line of succession, which means the order in which people take over a job. The President’s job never stands empty. If the President dies in office, resigns or is removed, somebody takes over at once, and the order in which they would is fixed in advance.',
       'The first in line is the Vice President. The Vice President is elected along with the President and belongs to the President’s part of the government, not to Congress. So the Vice President has two jobs: to preside over the Senate, voting only to break a tie, and to be first in line to become President.',
       'After the Vice President, the next in line is the Speaker of the House, the leader of the House of Representatives.',
       'The order is the whole fact: the Vice President first, the Speaker of the House next. Each of the two has another job as well: the Vice President’s is the tie vote in the Senate, and the Speaker’s is leading the House. The two facts below are asked only about the order, and not about those other jobs.'

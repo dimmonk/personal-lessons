@@ -11,7 +11,7 @@ FC.cases('math', 'u3', [
     topic: 'a jacket and sales tax',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A shop takes €8 off the list price of a jacket and then multiplies what is left by 1.2 to add the sales tax. A customer pays €54. What was the list price?'
+    text: 'A shop takes $8 off the list price of a jacket and then multiplies what is left by 1.2 to add the sales tax. A customer pays $54. What was the list price?'
   },
 
   {
@@ -83,7 +83,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -94,11 +94,11 @@ FC.cases('math', 'u3', [
     topic: 'a shared meal and a tip',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'Four friends share a meal. They add a €12 tip to the bill and divide the total by 4, and each pays €15. What was the bill?',
+    text: 'Four friends share a meal. They add a $12 tip to the bill and divide the total by 4, and each pays $15. What was the bill?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['add a €12 tip to the bill and divide the total by 4', 'What was the bill?'],
-      A1: ['add a €12 tip to the bill and divide the total by 4', 'each pays €15']
+      M1: ['add a $12 tip to the bill and divide the total by 4', 'What was the bill?'],
+      A1: ['add a $12 tip to the bill and divide the total by 4', 'each pays $15']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -125,20 +125,20 @@ FC.cases('math', 'u3', [
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€48' },
+        { id: 'r', text: '$48' },
         {
           id: 's1',
-          text: '€12',
+          text: '$12',
           slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
         },
         {
           id: 's2',
-          text: '€72',
+          text: '$72',
           slip: 'you add 12 once more instead of undoing it by taking away 12.'
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -149,7 +149,7 @@ FC.cases('math', 'u3', [
     topic: 'apples at a market stall',
     kind: 'problem',
     outcome: 'prop',
-    text: 'A market stall sells 8 kg of apples for €6. How much do 12 kg cost?'
+    text: 'A market stall sells 8 kg of apples for $6. How much do 12 kg cost?'
   },
 
   {
@@ -223,11 +223,11 @@ FC.cases('math', 'u3', [
     topic: 'distance for a fare',
     kind: 'problem',
     outcome: 'prop',
-    text: 'A coach company charges €9 for every 6 km. How far can a passenger travel for €27?',
+    text: 'A coach company charges $9 for every 6 km. How far can a passenger travel for $27?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
-      M1: ['charges €9 for every 6 km', 'How far can a passenger travel for €27?'],
-      A1: ['charges €9 for every 6 km', 'for €27']
+      M1: ['charges $9 for every 6 km', 'How far can a passenger travel for $27?'],
+      A1: ['charges $9 for every 6 km', 'for $27']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -236,7 +236,7 @@ FC.cases('math', 'u3', [
     steps: [
       {
         does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 9 euros for 6 km. The new amount is 27 euros, so it is paired with the 9 euros in the rate'
+        working: 'The rate is 9 dollars for 6 km. The new amount is 27 dollars, so it is paired with the 9 dollars in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -245,7 +245,7 @@ FC.cases('math', 'u3', [
       { does: 'Make the other number that many times as big', working: '6 × 3 = 18' },
       {
         does: 'Check the direction',
-        working: '27 euros is more than 9 euros, so the answer should be more than 6 km, and 18 is more'
+        working: '27 dollars is more than 9 dollars, so the answer should be more than 6 km, and 18 is more'
       }
     ],
     answer: {
@@ -255,12 +255,12 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '2 km',
-          slip: 'you divide 6 by 3 instead of multiplying, so the answer moves the wrong way: more euros must mean more km.'
+          slip: 'you divide 6 by 3 instead of multiplying, so the answer moves the wrong way: more dollars must mean more km.'
         },
         {
           id: 's2',
           text: '40.5 km',
-          slip: 'you pair the new amount with 6 km, the other number in the rate, and not with 9 euros, the number of the same thing.'
+          slip: 'you pair the new amount with 6 km, the other number in the rate, and not with 9 dollars, the number of the same thing.'
         }
       ]
     },
@@ -275,7 +275,7 @@ FC.cases('math', 'u3', [
     topic: 'pens and notebooks for an office',
     kind: 'problem',
     outcome: 'simul',
-    text: 'An office bought 20 items, some pens at €2 each and some notebooks at €5 each, and paid €61 in all. How many pens and how many notebooks did it buy?'
+    text: 'An office bought 20 items, some pens at $2 each and some notebooks at $5 each, and paid $61 in all. How many pens and how many notebooks did it buy?'
   },
 
   {

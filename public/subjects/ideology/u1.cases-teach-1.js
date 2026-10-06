@@ -6,14 +6,14 @@
 // cues.D1 is the exact phrase in the text that decides the first question (or a list of phrases); the app marks it,
 // always in the same style. segments are the tappable pieces for "tap the words" prompts; note is shown if that
 // piece is tapped in error. reason.D1 is the reason for this case's answer. not names the nearest wrong answer
-// (a ledger neighbour) and says why it fails for this case. also lists an answer the case shows as well as its
+// (a ledger neighbor) and says why it fails for this case. also lists an answer the case shows as well as its
 // own, which loses to its own by a tie-break in the key.
 
 FC.cases('ideology', 'u1', [
 
   /* ---------- The word the unit leans on (shown by the term card; asked of nothing) ---------- */
-  { id: 'i-term-bus', use: 'teach', tier: 'clean', setting: 'town', topic: 'two neighbours at a bus stop',
-    text: "Two neighbours wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbour Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree, but each has given, in a few lines, an answer to who the country is for and a view of how it should be run." },
+  { id: 'i-term-bus', use: 'teach', tier: 'clean', setting: 'town', topic: 'two neighbors at a bus stop',
+    text: "Two neighbors wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbor Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree, but each has given, in a few lines, an answer to who the country is for and a view of how it should be run." },
 
   /* ---------- The first answer: working people, against those who own the businesses ---------- */
   { id: 'i-whouse', use: 'teach', tier: 'clean', setting: 'work', topic: 'a freezer depot and its profits', name: 'The depot leaflet',

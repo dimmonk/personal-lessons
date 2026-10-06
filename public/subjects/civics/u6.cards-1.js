@@ -34,7 +34,7 @@ FC.cards('civics', 'u6', [
     explain: [
       'What you are shown is a state making a rule about renting a home. Nothing else happens in the story: no city, no judge, nobody challenging the rule. The legislature passed it, and from then on it is the law in Brenmore.',
       'Why does the state get to decide this? Start with a list. The Constitution gives the federal government a list of powers: among them taxes, borrowing money, trade between the states and with other countries, the rules for becoming a citizen and who may live in the country, making money, running the mail, defending the country and running the federal courts. Renting a home is not on that list. Anything the list does not give is kept by the states, and the Tenth Amendment says so. An amendment is a change added to the Constitution after it was first written, and the Tenth is the one that says the powers not given to the federal government are kept by the states or the people.',
-      'That is why so much of daily life is decided state by state: how soon a landlord must return a deposit, how old you must be to hold a driver’s licence, who may marry and when, what public schools teach, which acts are crimes and how they are punished, and which jobs need a licence, such as a barber’s or a plumber’s. A state’s power to make rules for the health, safety and welfare of its people is wide, and it covers far more than the police. Because each state decides for itself, these rules differ from state to state, and they can change when a person moves.',
+      'That is why so much of daily life is decided state by state: how soon a landlord must return a deposit, how old you must be to hold a driver’s license, who may marry and when, what public schools teach, which acts are crimes and how they are punished, and which jobs need a license, such as a barber’s or a plumber’s. A state’s power to make rules for the health, safety and welfare of its people is wide, and it covers far more than the police. Because each state decides for itself, these rules differ from state to state, and they can change when a person moves.',
       'Two things made this case simple. The first is who made the rule: the state itself, through its legislature. A state’s rules can also come from its governor, who leads the state, or from one of its own offices, such as a state licensing board, and all of those count as the state itself. The second is that nothing else covers the matter: the story names no federal law about deposits, and the rule takes away no right, such as the right to speak or to worship. When both are true, the state decides.'
     ],
     feature: { step: 'S1', option: 'own' },
@@ -47,14 +47,14 @@ FC.cards('civics', 'u6', [
     prompt: { kind: 'phrase', answer: 'the Ostrow legislature passed a law' },
     shared: [
       'In both cases the lawmakers of one state made the rule: the Brenmore legislature passed a law on deposits, and the Ostrow legislature passed a law on gas pipes. Neither was made by a city, a town or a county. Neither story names a federal law or a right.',
-      'The two stories share nothing else. One is about a rented home and the other about a trade, and one rule is a deadline and the other a licence. So this is not about homes or about work. It holds wherever a state itself makes a rule on a matter that the list of federal powers does not give to Congress and that no right protects. That is what {o:police} names.'
+      'The two stories share nothing else. One is about a rented home and the other about a trade, and one rule is a deadline and the other a license. So this is not about homes or about work. It holds wherever a state itself makes a rule on a matter that the list of federal powers does not give to Congress and that no right protects. That is what {o:police} names.'
     ] },
 
   { id: 'lens', kind: 'lens',
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the story. That holds for the whole unit, so here it is once in full.',
     body: [
-      'Every case in this unit has two layers. The top layer is the story: what the case is about. A rental, a licence, a fence, a boat ramp, a newspaper. The layer underneath is the structure: who made the rule, and what else covers the same matter.',
+      'Every case in this unit has two layers. The top layer is the story: what the case is about. A rental, a license, a fence, a boat ramp, a newspaper. The layer underneath is the structure: who made the rule, and what else covers the same matter.',
       'The five names belong to the layer underneath. The same story can carry any of them, because the same matter can be handled in different ways: a noise rule can come from a state or from a town, a life-jacket rule can sit beside a federal law or give way to one. A case about boats is no more likely to be one name than another.',
       'From here on, the cases change their stories on purpose. Sometimes two cases will share almost every word and differ in a single thing underneath. When that happens, the shared story is there to show you that it tells you nothing.'
     ],
@@ -65,7 +65,7 @@ FC.cards('civics', 'u6', [
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:police} in real life, where nobody marks the words for you.',
     typical: [
       'The maker is named, and it belongs to one state: “the state legislature”, “the governor”, “the state licensing board”. It is not a city council or a county board.',
-      'The matter is one of daily life that the Constitution does not give to Congress: licences, marriage, public schools, most crimes, renting a home. The list of federal powers given when this name was first met is the quickest check. If the matter is on that list, look harder for a federal law.',
+      'The matter is one of daily life that the Constitution does not give to Congress: licenses, marriage, public schools, most crimes, renting a home. The list of federal powers given when this name was first met is the quickest check. If the matter is on that list, look harder for a federal law.',
       'The story may mention the federal government without covering the matter. A story can say that Congress taxes income, or that a federal office exists, and then go on to a state rule about something else. Ask whether a federal law covers the same matter as the rule.',
       'The same matter can have a different rule in the next state. A rule in one state says nothing about the rule in another.',
       'The rule takes away no right. A state rule can be strict, or unpopular, and still be of this kind: how harsh a rule is does not decide the name.'
@@ -74,12 +74,12 @@ FC.cards('civics', 'u6', [
       'Not every rule a state makes is of this kind. If a federal law covers the same matter, the state’s rule may give way to it or stand beside it, and if the rule takes away a right, the state may not make it.',
       'Nor is a rule made by a city, a town or a county the state itself making a rule, even when the matter is the same. Ask who made this rule.'
     ],
-    wild: ['“Each state sets its own rules for that.”', '“In this state you need a licence to…”', '“It varies by state.”', '“The legislature passed a law that…”', '“The governor signed…”'],
+    wild: ['“Each state sets its own rules for that.”', '“In this state you need a license to…”', '“It varies by state.”', '“The legislature passed a law that…”', '“The governor signed…”'],
     self: 'In your own life this is much of what you meet day to day: what you need to drive, to marry, to work as a barber or a plumber, to rent a home, and what your children’s public school must teach. It is also the part of the law that changes when you move to another state, so look up your own state’s rule and do not assume that it matches the last one you knew.',
     ask: '“Did the state itself make this rule? Is the matter one the Constitution gives to Congress? Does the rule take away a right?” If the state made it, and the answer to both of the other questions is no, the name is {o:police}.' },
 
   { id: 'check-police', kind: 'check', after: 'police',
-    case: 'u6-c-licence',
+    case: 'u6-c-license',
     ask: { type: 'phrase', step: 'S1', say: 'Which words show who made the rule? Tap them.',
            answer: 'The Tarn legislature passed a law' } }
 ]);

@@ -1,6 +1,6 @@
 // Civics, Unit Three: drill cases for stages one to three. None of these appears in a card. All bills, people and places are invented.
 // reason[STEP] is the reason tied to the marked words; it is shown after the answer, decisive sentence first.
-// not names the most tempting wrong name for this case (a ledger neighbour) and says why it fails.
+// not names the most tempting wrong name for this case (a ledger neighbor) and says why it fails.
 // A stage-three case ('finish') is shown with the first question's answer already given, so it carries marked words and a
 // reason for that question too.
 
@@ -50,8 +50,8 @@ FC.cases('civics', 'u3', [
     reason: { C1: 'Congress passed a law, and what it is about is the government borrowing money: {cue:C1}. Borrowing is on the Constitution’s list, and the law takes no right away.' },
     not: { outcome: 'purse', why: 'It is about money, which can sound like a decision on what the government may spend. But the bill is about borrowing, a matter on the list, and says nothing about what the money will be spent on.' } },
 
-  { id: 'pc-speech', use: 'drill', tier: 'clean', setting: 'community', topic: 'a ban on criticising the government',
-    text: "Some lawmakers are tired of being criticised. Both the House and the Senate passed a bill that bans anyone from saying in public that the government has made a mistake.",
+  { id: 'pc-speech', use: 'drill', tier: 'clean', setting: 'community', topic: 'a ban on criticizing the government',
+    text: "Some lawmakers are tired of being criticized. Both the House and the Senate passed a bill that bans anyone from saying in public that the government has made a mistake.",
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
     cues: { C1: 'a bill that bans anyone from saying in public that the government has made a mistake' },
     reason: { C1: 'The law takes away the right to speak: {cue:C1}. The Constitution protects that right, so Congress may not pass such a law, however the votes went.' },
@@ -80,12 +80,12 @@ FC.cases('civics', 'u3', [
 
   /* ---------- Stage three: the first answer is shown; the learner answers the question and gives the name ---------- */
   { id: 'f-rice', use: 'drill', tier: 'varied', setting: 'work', topic: 'rice sold to other countries',
-    text: "Rice farmers want to sell more abroad, but they must get a licence for each shipment. The House and the Senate passed a bill that ends the licence for rice shipments to other countries.",
+    text: "Rice farmers want to sell more abroad, but they must get a license for each shipment. The House and the Senate passed a bill that ends the license for rice shipments to other countries.",
     outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
-    cues: { D1: 'The House and the Senate passed a bill', C1: 'ends the licence for rice shipments to other countries' },
+    cues: { D1: 'The House and the Senate passed a bill', C1: 'ends the license for rice shipments to other countries' },
     reason: { D1: 'The case ends on a vote by both chambers: {cue:D1}. The farmers’ wish is only the reason for the bill.',
               C1: 'Congress passed a law, and the law {cue:C1}. That is trade with other countries, a matter on the Constitution’s list, and no right is taken away.' },
-    not: { outcome: 'beyondcong', why: 'A law that ends a licence can sound like a law that restricts something. But the matter is trade with other countries, which the Constitution lists for Congress, and no right is taken away.' } },
+    not: { outcome: 'beyondcong', why: 'A law that ends a license can sound like a law that restricts something. But the matter is trade with other countries, which the Constitution lists for Congress, and no right is taken away.' } },
 
   { id: 'f-lunch', use: 'drill', tier: 'varied', setting: 'learning', topic: 'school lunch funds cut',
     text: "School kitchens say that food costs more every year. The House voted to cut the federal money for school lunches by a tenth, and the Senate voted for the same cut.",

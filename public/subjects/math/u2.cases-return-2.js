@@ -147,7 +147,7 @@ FC.cases('math', 'u2', [
     topic: 'two donations',
     kind: 'problem',
     outcome: 'hcf',
-    text: 'A charity has two donations, €45 and €60. It splits each into prizes of the same value, with nothing left over. What is the largest value each prize can have?',
+    text: 'A charity has two donations, $45 and $60. It splits each into prizes of the same value, with nothing left over. What is the largest value each prize can have?',
     route: { M1: ['whole'], W1: ['piece'] },
     cues: {
       M1: ['splits each into prizes of the same value, with nothing left over'],
@@ -172,15 +172,15 @@ FC.cases('math', 'u2', [
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '15 €' },
+        { id: 'r', text: '$15' },
         {
           id: 's1',
-          text: '180 €',
+          text: '$180',
           slip: 'you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.'
         },
         {
           id: 's2',
-          text: '2700 €',
+          text: '$2700',
           slip: 'you multiply the two numbers together, which gives a piece far too big to fit into either.'
         }
       ]

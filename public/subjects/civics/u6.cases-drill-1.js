@@ -6,20 +6,20 @@
 FC.cases('civics', 'u6', [
 
   /* ---------- Stage one: clean cases, one for each name ---------- */
-  { id: 'u6-n-teachers', use: 'drill', tier: 'clean', setting: 'learning', topic: 'teaching licences',
-    text: "The Tarn legislature passed a law that every teacher in a public school must hold a state teaching licence.",
+  { id: 'u6-n-teachers', use: 'drill', tier: 'clean', setting: 'learning', topic: 'teaching licenses',
+    text: "The Tarn legislature passed a law that every teacher in a public school must hold a state teaching license.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { S1: 'The Tarn legislature passed a law', S2: 'every teacher in a public school must hold a state teaching licence' },
+    cues: { S1: 'The Tarn legislature passed a law', S2: 'every teacher in a public school must hold a state teaching license' },
     reason: { S1: 'The rule was made by the lawmakers of one state: {cue:S1}. No city, town or county made it.',
-              S2: 'The matter is {cue:S2}: public schools and a licence, both kept by the states. The case names no federal law, and the rule takes away no right.' },
+              S2: 'The matter is {cue:S2}: public schools and a license, both kept by the states. The case names no federal law, and the rule takes away no right.' },
     not: { outcome: 'localgov', why: 'Nobody below the state is named. The state’s own lawmakers made the rule, so it is not a city’s or a county’s.' } },
 
-  { id: 'u6-n-bins', use: 'drill', tier: 'clean', setting: 'home', topic: 'rubbish bins',
-    text: "In the city of Hale, bins left on the pavement all day were blocking people on foot. The Hale city council passed an ordinance that bins must be taken in by seven in the evening on collection days.",
+  { id: 'u6-n-bins', use: 'drill', tier: 'clean', setting: 'home', topic: 'trash cans',
+    text: "In the city of Hale, trash cans left on the sidewalk all day were blocking people on foot. The Hale city council passed an ordinance that trash cans must be taken in by seven in the evening on collection days.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
-    cues: { S1: 'The Hale city council passed an ordinance', S2: 'bins must be taken in by seven in the evening on collection days' },
+    cues: { S1: 'The Hale city council passed an ordinance', S2: 'trash cans must be taken in by seven in the evening on collection days' },
     reason: { S1: 'The rule was made by a city council: {cue:S1}. A city’s rule uses power its state handed down.',
-              S2: 'The matter is {cue:S2}: rubbish collection, a local matter. No federal law is named, and no right is taken away.' },
+              S2: 'The matter is {cue:S2}: trash collection, a local matter. No federal law is named, and no right is taken away.' },
     not: { outcome: 'police', why: 'The state’s legislature did not make this rule. A city council did, and the rule covers one city.' } },
 
   { id: 'u6-n-trucks', use: 'drill', tier: 'clean', setting: 'work', topic: 'inspecting trucks',
@@ -47,15 +47,15 @@ FC.cases('civics', 'u6', [
     not: { outcome: 'localgov', why: 'The matter, a county’s own bus station, sounds local, and a county does control its own property. But the rule is aimed at what the pamphlets say, and a county may not take a right away.' } },
 
   /* ---------- Stage three: the first answer is shown; the learner answers the unit's two questions and names the case ---------- */
-  { id: 'u6-f-parkfee', use: 'drill', tier: 'varied', setting: 'travel', topic: 'a car park fee',
-    text: "Shoppers in the town of Orsley asked for the town hall car park to be free on Sundays. After hearing from the shops nearby, the Orsley town council voted to keep the fee.",
+  { id: 'u6-f-parkfee', use: 'drill', tier: 'varied', setting: 'travel', topic: 'a parking lot fee',
+    text: "Shoppers in the town of Orsley asked for the town hall parking lot to be free on Sundays. After hearing from the shops nearby, the Orsley town council voted to keep the fee.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
     cues: { D1: 'the Orsley town council voted to keep the fee', S1: 'the Orsley town council voted', S2: 'to keep the fee' },
     reason: { D1: 'The case ends with a decision by a town council: {cue:D1}. The shoppers only asked.',
               S1: 'The rule is the town’s: {cue:S1}. A town is not a state, and its power is the state’s handed down.',
-              S2: 'The matter is {cue:S2} for a town car park, a local matter. No federal law is named and no right is touched.' },
+              S2: 'The matter is {cue:S2} for a town parking lot, a local matter. No federal law is named and no right is touched.' },
     not: { outcome: 'police', why: 'The state’s legislature is not named. A town council decided, so the rule is a town’s, not the state’s own.' },
-    wouldChange: 'If the state’s legislature had set the fee for every town car park in the state, the answer to the first question would be {a:S1.own} and the name would be {o:police}.' },
+    wouldChange: 'If the state’s legislature had set the fee for every town parking lot in the state, the answer to the first question would be {a:S1.own} and the name would be {o:police}.' },
 
   { id: 'u6-f-schoolbus', use: 'drill', tier: 'varied', setting: 'learning', topic: 'stopping for a school bus',
     text: "Congress taxes the gasoline sold in every state. After a child was hurt near a school bus, the Calder legislature passed a law that every car must stop when a school bus has its stop sign out.",

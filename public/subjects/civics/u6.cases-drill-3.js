@@ -6,15 +6,15 @@
 FC.cases('civics', 'u6', [
 
   /* ---------- Clean ---------- */
-  { id: 'u6-r-lessons', use: 'drill', tier: 'clean', setting: 'work', topic: 'a driving instructor licence',
-    text: "After complaints about unqualified driving instructors, the Calder legislature passed a law that a person must hold a state licence to give driving lessons for money.",
+  { id: 'u6-r-lessons', use: 'drill', tier: 'clean', setting: 'work', topic: 'a driving instructor license',
+    text: "After complaints about unqualified driving instructors, the Calder legislature passed a law that a person must hold a state license to give driving lessons for money.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { D1: 'the Calder legislature passed a law', S1: 'the Calder legislature passed a law', S2: 'a person must hold a state licence to give driving lessons for money' },
+    cues: { D1: 'the Calder legislature passed a law', S1: 'the Calder legislature passed a law', S2: 'a person must hold a state license to give driving lessons for money' },
     reason: { D1: 'The case ends with a decision by a state’s lawmakers: {cue:D1}.',
               S1: 'The rule was made by one state’s lawmakers: {cue:S1}. No city, town or county is named.',
-              S2: 'The matter is {cue:S2}: a trade licence, which the states grant. The case names no federal law and the rule takes away no right.' },
+              S2: 'The matter is {cue:S2}: a trade license, which the states grant. The case names no federal law and the rule takes away no right.' },
     not: { outcome: 'localgov', why: 'No city, town or county is named. The state’s legislature made the rule.' },
-    wouldChange: 'If a city council had set up the licence for instructors in its own city, the answer to the first question would be {a:S1.local} and the name would be {o:localgov}.' },
+    wouldChange: 'If a city council had set up the license for instructors in its own city, the answer to the first question would be {a:S1.local} and the name would be {o:localgov}.' },
 
   { id: 'u6-r-leash', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'dogs in a park',
     text: "Walkers in Mill Park complained about dogs running loose near the pond. The Kellmouth city council voted that dogs must be kept on a leash in Mill Park.",
@@ -27,9 +27,9 @@ FC.cases('civics', 'u6', [
     wouldChange: 'If the state’s legislature had required leashes in every public park in the state, the name would be {o:police}.' },
 
   { id: 'u6-r-library', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a newspaper in the library',
-    text: "The Harrow County library keeps a rack of local newspapers. One of them has criticised the county board. The Harrow County board voted that the library may not display any newspaper that criticises the board.",
+    text: "The Harrow County library keeps a rack of local newspapers. One of them has criticized the county board. The Harrow County board voted that the library may not display any newspaper that criticizes the board.",
     outcome: 'protected', route: { D1: ['states'], S1: ['local'], S2: ['right'] },
-    cues: { D1: 'The Harrow County board voted', S1: 'The Harrow County board voted', S2: 'the library may not display any newspaper that criticises the board' },
+    cues: { D1: 'The Harrow County board voted', S1: 'The Harrow County board voted', S2: 'the library may not display any newspaper that criticizes the board' },
     reason: { D1: 'The case ends with a decision by a county board: {cue:D1}.',
               S1: 'The rule was made by a county board: {cue:S1}.',
               S2: 'The rule takes away a right: {cue:S2}. A newspaper is published to be read, and the rule bans it because of what it says about the board.' },

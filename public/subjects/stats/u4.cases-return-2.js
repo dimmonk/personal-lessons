@@ -30,11 +30,11 @@ FC.cases('stats', 'u4', [
     not: { outcome: 'defshift', why: 'An unsafe lift is logged by the same checklist in both years. What changed is how often supervisors looked.' } },
 
   { id: 'm4-ret-eyes', use: 'return', tier: 'varied', setting: 'learning', topic: 'a school nurse who came on more days',
-    text: "A school nurse reports: 'Pupils found needing glasses tripled from 30 to 90. Eyesight is getting worse.' Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils. A pupil is called as needing glasses by the same chart. That is 10 found in every 100 tested, in both years.",
+    text: "A school nurse reports: 'Students found needing glasses tripled from 30 to 90. Eyesight is getting worse.' Last year the nurse visited one day a week and tested the 300 students who were in school on that day. This year she visits three days a week and has tested 900 students. A student is called as needing glasses by the same chart. That is 10 found in every 100 tested, in both years.",
     outcome: 'detection', route: { S1: ['measure'], M1: ['looked'] },
-    cues: { S1: "Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils",
-            M1: "Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils" },
-    reason: { S1: 'The count of pupils found can rise with no worse eyesight: {cue:S1}. 10 in every 100 of 300 is 30; 10 in every 100 of 900 is 90.',
+    cues: { S1: "Last year the nurse visited one day a week and tested the 300 students who were in school on that day. This year she visits three days a week and has tested 900 students",
+            M1: "Last year the nurse visited one day a week and tested the 300 students who were in school on that day. This year she visits three days a week and has tested 900 students" },
+    reason: { S1: 'The count of students found can rise with no worse eyesight: {cue:S1}. 10 in every 100 of 300 is 30; 10 in every 100 of 900 is 90.',
               M1: 'More tests were done with the same chart: {cue:M1}. The share found among those tested stayed at 10 in 100.' },
-    not: { outcome: 'defshift', why: 'The chart and the standard for needing glasses are the same. What changed is how many pupils were tested.' } }
+    not: { outcome: 'defshift', why: 'The chart and the standard for needing glasses are the same. What changed is how many students were tested.' } }
 ]);

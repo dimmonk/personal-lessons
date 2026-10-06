@@ -17,8 +17,8 @@ FC.cases('psychology', 'u2', [
     outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
     cues: { R1: 'It was only a splash of fish stock. It hardly counts.' } },
 
-  { id: 'driver', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a motorway drive', name: 'The careful driver',
-    text: "Tom thinks of himself as a careful driver. On the motorway yesterday he drove at 90 in a 70 zone for most of an hour. When his passenger mentioned it afterwards, he said, 'Everyone drives at that speed there, so it doesn't really count as speeding.'",
+  { id: 'driver', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a highway drive', name: 'The careful driver',
+    text: "Tom thinks of himself as a careful driver. On the highway yesterday he drove at 90 in a 70 zone for most of an hour. When his passenger mentioned it afterward, he said, 'Everyone drives at that speed there, so it doesn't really count as speeding.'",
     outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
     cues: { R1: "Everyone drives at that speed there, so it doesn't really count as speeding" },
     segments: [
@@ -28,21 +28,21 @@ FC.cases('psychology', 'u2', [
     ] },
 
   { id: 'shops', use: 'check', tier: 'clean', setting: 'money', topic: 'grocery shopping',
-    text: "Priya believes in buying from local shops and often says so. Last night she ordered a week of groceries from a giant online retailer. 'One order makes no difference to anyone,' she told her sister.",
+    text: "Priya believes in buying from local stores and often says so. Last night she ordered a week of groceries from a giant online retailer. 'One order makes no difference to anyone,' she told her sister.",
     outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
     cues: { R1: 'One order makes no difference to anyone' },
     segments: [
-      { text: 'Priya believes in buying from local shops and often says so', note: 'That is what she believes. It was there before the order.' },
+      { text: 'Priya believes in buying from local stores and often says so', note: 'That is what she believes. It was there before the order.' },
       { text: 'she ordered a week of groceries from a giant online retailer', note: 'That is what she did. The reason comes after it.' },
       { text: 'One order makes no difference to anyone' }
     ],
-    reason: { R1: 'These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local shops.' } },
+    reason: { R1: 'These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local stores.' } },
 
   /* ---------- Sunk cost fallacy ---------- */
   { id: 'renovation', use: 'teach', tier: 'clean', setting: 'home', topic: 'a house renovation', name: 'The renovation',
-    text: "Dan and Aisha have spent two years and £40,000 renovating an old house. A builder tells them that finishing it properly will cost another £30,000, and that the finished house will be worth only about £10,000 more than it is now. 'We've put in two years and forty thousand pounds,' Dan says. 'We can't stop now.'",
+    text: "Dan and Aisha have spent two years and $40,000 renovating an old house. A builder tells them that finishing it properly will cost another $30,000, and that the finished house will be worth only about $10,000 more than it is now. 'We've put in two years and forty thousand dollars,' Dan says. 'We can't stop now.'",
     outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
-    cues: { R1: "We've put in two years and forty thousand pounds" } },
+    cues: { R1: "We've put in two years and forty thousand dollars" } },
 
   { id: 'film', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a long film', name: 'The dull film',
     text: "An hour into a three-hour film, Lena is bored and so is her friend. 'We've already sat through an hour,' Lena whispers. 'We might as well see it out.'",
@@ -63,12 +63,12 @@ FC.cases('psychology', 'u2', [
 
   /* ---------- The look-alike pair: same person, same story, two names ---------- */
   { id: 'ticket-fever', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a concert ticket and a fever',
-    text: "Rosa paid £80 for a concert ticket. On the night she has a fever and it is snowing. 'I paid eighty pounds for this,' she says, pulling on her coat. 'I'm going.'",
+    text: "Rosa paid $80 for a concert ticket. On the night she has a fever and it is snowing. 'I paid eighty dollars for this,' she says, pulling on her coat. 'I'm going.'",
     outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
-    cues: { R1: 'I paid eighty pounds for this' } },
+    cues: { R1: 'I paid eighty dollars for this' } },
 
   { id: 'ticket-tout', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a concert ticket from a reseller',
-    text: "Rosa told her friends for weeks that she would never pay a reseller's price for a concert. Then she paid a reseller £200 for a ticket. 'It's a once-in-a-lifetime show,' she says. 'That makes it different.'",
+    text: "Rosa told her friends for weeks that she would never pay a reseller's price for a concert. Then she paid a reseller $200 for a ticket. 'It's a once-in-a-lifetime show,' she says. 'That makes it different.'",
     outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
     cues: { R1: ["It's a once-in-a-lifetime show", 'That makes it different'] } }
 ]);

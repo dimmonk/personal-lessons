@@ -43,7 +43,7 @@ FC.cards('stats', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'compare',
+      neighbor: 'compare',
       prompt: { kind: 'reason',
         lead: 'The case sets two averages side by side, so it can look like a claim about what the figure is set beside.',
         choices: [
@@ -79,7 +79,7 @@ FC.cards('stats', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'cause',
+      neighbor: 'cause',
       prompt: { kind: 'reason',
         lead: 'The claim says the course gets students talking and gives a reason for another explanation, so the case can look like {a:S1.cause}.',
         choices: [

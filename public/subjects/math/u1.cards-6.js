@@ -53,7 +53,7 @@ FC.cards('math', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'whole',
+      neighbor: 'whole',
       prompt: { kind: 'reason',
         lead: 'The problem is made of whole numbers, 9 and 3, so it can look like a problem about how whole numbers split.',
         choices: [
@@ -84,16 +84,16 @@ FC.cards('math', 'u1', [
     steps: [
       { step: 'M1',
         reason: [
-          'The problem is full of money: a price for each metre of edging. If that were all, it would be a rate, and a hidden number that has to fit it. But a price is not what the question asks about. Look for the question itself: {cue:M1}.',
-          'That is a {t:righttriangle}: a flower bed with two sides that meet at a square corner. The problem gives the lengths of two sides, 3.0 m and 4.0 m, and asks for the third side, which is a length. The price for each metre is only there in the story. Nothing in the question asks what the edging costs.'
+          'The problem is full of money: a price for each meter of edging. If that were all, it would be a rate, and a hidden number that has to fit it. But a price is not what the question asks about. Look for the question itself: {cue:M1}.',
+          'That is a {t:righttriangle}: a flower bed with two sides that meet at a square corner. The problem gives the lengths of two sides, 3.0 m and 4.0 m, and asks for the third side, which is a length. The price for each meter is only there in the story. Nothing in the question asks what the edging costs.'
         ] }
     ],
     hold: {
-      neighbour: 'unknown',
+      neighbor: 'unknown',
       prompt: { kind: 'reason',
-        lead: 'The problem gives a price for each metre of edging, and asks for a number it leaves out, so it can look like {a:M1.unknown}.',
+        lead: 'The problem gives a price for each meter of edging, and asks for a number it leaves out, so it can look like {a:M1.unknown}.',
         choices: [
-          { id: 'a', text: 'The edging costs €5 for each metre, and that is a rate.',
+          { id: 'a', text: 'The edging costs $5 for each meter, and that is a rate.',
             note: 'True, and it is why the problem can look like {a:M1.unknown}. But a rate in the story does not settle the kind. A problem can carry a rate and ask for something else.' },
           { id: 'b', text: 'Two sides of the bed meet at a square corner, and the question asks for the third side.' },
           { id: 'c', text: 'The problem leaves out a number: the length of the third side.',
@@ -108,8 +108,8 @@ FC.cards('math', 'u1', [
     impression: {
       resembles: 'gt-hike', first: 'gt-van',
       text: [
-        'Now the second look: does this problem look like one you know? A price for each metre and a question about how much may bring back the van hire first, and the van hire was {a:M1.unknown}. So here the likeness and the answer seem to disagree.',
-        'When that happens, go back to the question and find the words in the problem that answer it. They are {cue:M1}. The van hire had nothing like them: it had a fixed fee, a price for each kilometre and a bill, and no shape at all. The hike does: two legs that meet at a square corner, and a question about the third side. So the problem this one really looks like is the hike, and the answer stands.'
+        'Now the second look: does this problem look like one you know? A price for each meter and a question about how much may bring back the van hire first, and the van hire was {a:M1.unknown}. So here the likeness and the answer seem to disagree.',
+        'When that happens, go back to the question and find the words in the problem that answer it. They are {cue:M1}. The van hire had nothing like them: it had a fixed fee, a price for each kilometer and a bill, and no shape at all. The hike does: two legs that meet at a square corner, and a question about the third side. So the problem this one really looks like is the hike, and the answer stands.'
       ]
     } },
 
@@ -121,7 +121,7 @@ FC.cards('math', 'u1', [
       'Before any sum, ask what the problem asks you to work out, and point to the words that show it. If you cannot point, you do not have an answer yet.',
       'The kind is not the topic and not the numbers. Money, building and cooking turn up in all five, and the same two numbers can turn up in more than one.',
       '“How many”, “how long” and “how much” turn up in all five. They are not a signal.',
-      'A price for each hour is {a:M1.growth}, and a price for each kilometre or each person is {a:M1.unknown}.',
+      'A price for each hour is {a:M1.growth}, and a price for each kilometer or each person is {a:M1.unknown}.',
       'A model, a map or a shadow is {a:M1.shape}, even though it comes with a rate.',
       'A count of days or hours that has to end on a day of the week or a time on a clock is {a:M1.whole}, even though it runs over time.',
       'Nothing here solved anything. Each of the five kinds has finer names inside it, and a procedure for each, and they start from your answer to this first question.',

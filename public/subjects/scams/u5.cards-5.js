@@ -11,34 +11,34 @@ FC.cards('scams', 'u5', [
     case: 'u5-w-room',
     steps: [
       { step: 'D1',
-        reason: 'The advert and the viewing are the story. What is asked of Ben is in the last sentence: {cue:D1}. That is a request for facts about him. Nothing asks him to install, sign in or pay, so the answer is {a:D1.details}.' },
+        reason: 'The ad and the showing are the story. What is asked of Ben is in the last sentence: {cue:D1}. That is a request for facts about him. Nothing asks him to install, sign in or pay, so the answer is {a:D1.details}.' },
       { step: 'F1',
         reason: 'A passport, a photo of him holding it and a tax number are facts that identify him: {cue:F1}. He is not asked about his life. The answer is {a:F1.identify}.' },
       { step: 'F2',
-        reason: 'This is the step where the case misleads. Ben did begin it: he answered an advert on a site he has used for years. If that were all the question asked, the answer would be {a:F2.fits}. But the question has two halves, and the second is whether what is asked is what the job needs. The job is holding a room until a viewing: {cue:F2}. That needs a name and a way to reach him, and it does not need a photo of him holding his passport or a tax number. It asks for more than the job needs, so the answer is {a:F2.notfit}.' }
+        reason: 'This is the step where the case misleads. Ben did begin it: he answered an ad on a site he has used for years. If that were all the question asked, the answer would be {a:F2.fits}. But the question has two halves, and the second is whether what is asked is what the job needs. The job is holding a room until a showing: {cue:F2}. That needs a name and a way to reach him, and it does not need a photo of him holding his passport or a tax number. It asks for more than the job needs, so the answer is {a:F2.notfit}.' }
     ],
     hold: {
-      neighbour: 'realdetails',
+      neighbor: 'realdetails',
       prompt: { kind: 'reason',
         lead: 'Ben began this, on a site he has used for years, so the case can look like a request for facts about something he started.',
         choices: [
-          { id: 'a', text: 'Ben answered the advert himself, on a site he has used for years.',
+          { id: 'a', text: 'Ben answered the ad himself, on a site he has used for years.',
             note: 'True, and it is why the case can look like {o:realdetails}. But beginning it is only half of what the question asks. The other half is whether what is asked is what the job needs.' },
-          { id: 'b', text: 'To hold a room until a viewing, the writer asks for a photo of Ben’s passport, a photo of him holding it and his National Insurance number.' },
+          { id: 'b', text: 'To hold a room until a showing, the writer asks for a photo of Ben’s passport, a photo of him holding it and his Social Security number.' },
           { id: 'c', text: 'The writer is friendly and sounds sure of himself.',
             note: 'True, but a friendly manner does not separate the two names.' }
         ],
         answer: 'b' },
       reason: [
-        'For {o:realdetails} you must be able to point to this: {needs:realdetails}. Both halves are needed, and the second is missing. A room held until a viewing needs a name and a way to reach him, and it does not need a photo of him holding his passport.',
+        'For {o:realdetails} you must be able to point to this: {needs:realdetails}. Both halves are needed, and the second is missing. A room held until a showing needs a name and a way to reach him, and it does not need a photo of him holding his passport.',
         'It is the question from the gym adviser who asked for more than a bill needs. {test:identitytheft~realdetails} Here the second half is not met, so the answer is {a:F2.notfit}.'
       ]
     },
     impression: {
       resembles: 'u5-grant', first: 'u5-bank',
       text: [
-        'Now the second look: does this case look like one you know? A person who answers an advert and is asked for a passport may bring back Chen and the savings account first, and Chen’s case was {o:realdetails}. So here the likeness and the questions seem to disagree.',
-        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:F2}. Chen’s building society asked for a passport after he had decided to open an account, to meet a rule that applies to every customer, and it did not ask for a photo of him holding it. The case this one really looks like is the energy grant: a pleasant offer, and a request for more than any of it needs. So the answer stands.'
+        'Now the second look: does this case look like one you know? A person who answers an ad and is asked for a passport may bring back Chen and the savings account first, and Chen’s case was {o:realdetails}. So here the likeness and the questions seem to disagree.',
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:F2}. Chen’s credit union asked for a passport after he had decided to open an account, to meet a rule that applies to every customer, and it did not ask for a photo of him holding it. The case this one really looks like is the energy grant: a pleasant offer, and a request for more than any of it needs. So the answer stands.'
       ]
     } },
 
@@ -64,8 +64,8 @@ FC.cards('scams', 'u5', [
       'Pick one of the three and name an occasion of your own: somewhere you were asked, somewhere you almost answered, or a form you filled in without a thought. The lines under each name are there to jog your memory.'
     ],
     prompts: [
-      { outcome: 'realdetails', occasion: 'The last time you registered for something, opened an account, applied for a job, or rang a company about something you own, and were asked for facts about yourself.' },
-      { outcome: 'identitytheft', occasion: 'A job offer, a parcel text, a prize or a call from your bank that asked you to confirm your date of birth, your address or your card number.' },
+      { outcome: 'realdetails', occasion: 'The last time you registered for something, opened an account, applied for a job, or called a company about something you own, and were asked for facts about yourself.' },
+      { outcome: 'identitytheft', occasion: 'A job offer, a package text, a prize or a call from your bank that asked you to confirm your date of birth, your address or your card number.' },
       { outcome: 'friendlychat', occasion: 'A message from someone you had never met that was friendly and curious about your work, your home or your family.' }
     ],
     places: ['At home', 'At work', 'On my phone', 'On a call'] },
@@ -79,7 +79,7 @@ FC.cards('scams', 'u5', [
     ],
     cues: [
       { cue: 'a call, a message or a stranger that I did not start asks for my date of birth, my address or my card number',
-        then: 'say that I will ring back, end the call or leave the message, and contact them on a number I already had, such as the one on my card or my bill' },
+        then: 'say that I will call back, end the call or leave the message, and contact them at a number I already had, such as the one on my card or my bill' },
       { cue: 'an offer or a job asks for my passport, or a photo of me holding it, before anything is agreed',
         then: 'send nothing, and ask the company myself, through its own website, whether it sent the message' },
       { cue: 'a stranger who texted by mistake, or a new contact online, asks about my work, my home or my family',

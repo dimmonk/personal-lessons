@@ -7,7 +7,7 @@
 
 FC.unit('scams', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -33,12 +33,12 @@ FC.unit('scams', 'u2', {
       test: 'What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?' },
     { id: 'techsupport~realinstall', pair: ['techsupport', 'realinstall'], step: 'I1',
       shared: 'In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used.',
-      rule: 'In {o:realinstall} you started the call yourself, on a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In {o:techsupport} someone contacted you first, or what put you in touch was a {t:searchad}, a pop-up or a message, and none of those is {t:already}.',
+      rule: 'In {o:realinstall} you started the call yourself, at a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In {o:techsupport} someone contacted you first, or what put you in touch was a {t:searchad}, a pop-up or a message, and none of those is {t:already}.',
       test: 'Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?' },
     { id: 'techsupport~malware', pair: ['techsupport', 'malware'], step: 'I1', taughtIn: 'q-how',
       shared: 'Both can start with a warning that says something is wrong with your device, and both can end with a program on it.',
-      rule: 'In {o:techsupport} a person is involved: you ring a number, or someone rings you, and they ask you to install something or to let them watch. In {o:malware} a file or a link has come to you in a message, and nobody is on a call with you.',
-      test: 'Is there a person on a call, or a number to ring, who will talk you through it? Or is there only a file or a link for you to open yourself?' },
+      rule: 'In {o:techsupport} a person is involved: you call a number, or someone calls you, and they ask you to install something or to let them watch. In {o:malware} a file or a link has come to you in a message, and nobody is on a call with you.',
+      test: 'Is there a person on a call, or a number to call, who will talk you through it? Or is there only a file or a link for you to open yourself?' },
     { id: 'malware~refundscam', pair: ['malware', 'refundscam'], step: 'I1', taughtIn: 'q-how',
       shared: 'In both, you may be sent a file or a link to open, and in both the story can be about a payment or an account.',
       rule: 'In {o:refundscam} a person is on a call with you, and gives money as the reason: a refund owed to you, or a danger to your bank account. In {o:malware} nobody is on a call with you: the file or the link just arrived in a message.',
@@ -90,7 +90,7 @@ FC.unit('scams', 'u2', {
         items: [['dv-f-launcher', 'dv-f-shared-folder'],
                 ['dv-f-warranty-email', 'dv-f-crypto-refund']] },
       { ask: 'route',
-        items: [['dv-r-notes-app', 'dv-r-solicitor'],
+        items: [['dv-r-notes-app', 'dv-r-attorney'],
                 ['dv-r-lockpage', 'dv-r-streaming-refund'],
                 ['dv-r-helpdesk-contract', 'dv-r-bank-text'],
                 ['dv-r-wifi-call', 'dv-r-parcel-refund'],
@@ -112,8 +112,9 @@ FC.unit('scams', 'u2', {
   build: {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the device branch of the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Four names (the real installation taught first, then the three scams told as they unfold, each with what to do on the spot), one term (search advert), six look-alike pairs, two named exceptions, and a drill that mixes a real installation into every stage.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the device branch of the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Four names (the real installation taught first, then the three scams told as they unfold, each with what to do on the spot), one term (search ad), six look-alike pairs, two named exceptions, and a drill that mixes a real installation into every stage.' },
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
     ],
     // What the K2 rewrite changed in this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [
@@ -122,7 +123,7 @@ FC.unit('scams', 'u2', {
         why: 'Every answer of each old question kept one name, so the second added nothing (K2.2, audit Unit Three 4), and "What happens next?" could only be answered after the harm (audit Unit Four 4, 5). The branch says it has one question, in its why, and this unit says so on its orient card and again on its question card.' },
       { step: 'I1', was: '"A warning on your screen told you to call a number"; "Someone asked to see your screen to sort out a payment"; "A file or link arrived in a message"; "You went to the company’s own website yourself"',
         now: '"Someone offering to fix a problem with your device", with a tie-break to the refund answer; "Someone sorting out a refund or your bank account"; "A file or a link in a message, for you to open"; "Your own visit to the company’s website or app store"',
-        why: 'The support answer now covers a call, a message or a search advert as well as a pop-up, so a fake helpline found by searching has an answer (the old search-advert card). The refund answer covers the fake bank that wants to watch the device. The file answer says that nobody is on a call. The own-visit answer uses the taught phrase "a way you already had", so a search advert does not count. This unit teaches the tie-break (support yields to refund) on a named exception card.' },
+        why: 'The support answer now covers a call, a message or a search ad as well as a pop-up, so a fake helpline found by searching has an answer (the old search-ad card). The refund answer covers the fake bank that wants to watch the device. The file answer says that nobody is on a call. The own-visit answer uses the taught phrase "a way you already had", so a search ad does not count. This unit teaches the tie-break (support yields to refund) on a named exception card.' },
       { outcome: 'techsupport', was: 'Fake virus alert (tech-support scam)', now: 'Tech-support scam', why: 'The real-life name; "fake virus alert" goes to aka.' },
       { outcome: 'malware', was: 'Harmful file (malware)', now: 'Malware', why: 'The real-life word; "harmful file" goes to aka. Brackets are not allowed in a name (V1).' },
       { outcome: 'realinstall', was: 'Real software installation', now: 'Real installation', why: 'Shorter plain words; an id without an underscore (V4).' },
@@ -133,7 +134,7 @@ FC.unit('scams', 'u2', {
     wrongIdeas: [
       { card: 'refute-closing', about: 'techsupport',
         source: { kind: 'published', verified: false,
-          ref: 'Microsoft Support, "Protect yourself from tech support scams": pop-up warnings that cannot be closed and give a phone number are web pages made by the scammer, and a real warning from software does not tell you to ring a number. To be read and confirmed online before release, or replaced by what cold readers actually say about a warning that will not close.' } }
+          ref: 'Microsoft Support, "Protect yourself from tech support scams": pop-up warnings that cannot be closed and give a phone number are web pages made by the scammer, and a real warning from software does not tell you to call a number. To be read and confirmed online before release, or replaced by what cold readers actually say about a warning that will not close.' } }
     ],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-lessons.mjs passes on this unit in the app

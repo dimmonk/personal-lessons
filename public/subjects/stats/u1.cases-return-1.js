@@ -89,12 +89,12 @@ FC.cases('stats', 'u1', [
     wouldChange: 'If the site had said "2 in 100 in Springfield and 15 in 100 in Rivertown", the claim would be {a:S1.holds}.' },
 
   { id: 'gate-ret-fines', use: 'return', tier: 'varied', setting: 'community', topic: 'parking fines up by a percentage',
-    text: "A council says: 'Parking fines are up 50% in a year.' It does not say how many fines were written in either year.",
+    text: "A city council says: 'Parking fines are up 50% in a year.' It does not say how many fines were written in either year.",
     route: { S1: ['compare'] },
     cues: { S1: 'Parking fines are up 50% in a year' },
     reason: { S1: 'The figure is a percentage, and the claim leaves out what it is a percentage of: {cue:S1}. Up 50% could be 40 fines becoming 60, or 4,000 becoming 6,000.' },
     not: { outcome: 'measure', why: 'Nothing in the case says that how fines are counted changed. The trouble is that the figure is a percentage with no numbers behind it.' },
-    wouldChange: 'If the council said that 4,000 fines were written last year and 6,000 this year, counted the same way, the claim would be {a:S1.holds}.' },
+    wouldChange: 'If the city council said that 4,000 fines were written last year and 6,000 this year, counted the same way, the claim would be {a:S1.holds}.' },
 
   { id: 'gate-ret-kits', use: 'return', tier: 'varied', setting: 'health', topic: 'a home allergy test and a rare allergy',
     text: "A shop sells a home allergy test: 'Right 95% of the time.' Mira's test says she has a food allergy that only 1 person in 2,000 has, and the leaflet says: 'You almost certainly have it.'",

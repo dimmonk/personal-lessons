@@ -77,7 +77,7 @@ FC.cards('stats', 'u2', [
     prompt: { kind: 'which', option: 'H1.causes', answer: 'h-reading-cause' },
     difference: [
       'In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The answer is {a:H1.difference}, and the case is {o:comp_ok}.',
-      'In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the pupils in the program and the pupils out of it were alike before the program began. The answer is {a:H1.causes}, and the case is {o:cause_ok}.',
+      'In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the students in the program and the students out of it were alike before the program began. The answer is {a:H1.causes}, and the case is {o:cause_ok}.',
       'Everything is the same in both cases except the last sentence. A claim of the first kind never says what made the gap, however the groups were formed. A claim of the second kind may say it only because of the lottery. The lottery is in both cases. Which name applies depends on what the claim says.'
     ] },
 

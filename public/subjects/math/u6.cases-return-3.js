@@ -126,11 +126,11 @@ FC.cases('math', 'u6', [
     topic: 'a storage box',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A small storage box 20 cm tall holds 8 litres. A big box of exactly the same shape is 30 cm tall. How much does the big box hold?',
+    text: 'A small storage box 20 cm tall holds 8 liters. A big box of exactly the same shape is 30 cm tall. How much does the big box hold?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: {
       M1: 'How much does the big box hold?',
-      S1: 'A small storage box 20 cm tall holds 8 litres. A big box of exactly the same shape is 30 cm tall',
+      S1: 'A small storage box 20 cm tall holds 8 liters. A big box of exactly the same shape is 30 cm tall',
       S2: 'How much does the big box hold?'
     },
     reason: {
@@ -157,20 +157,20 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '8 litres × 3.375 = 27 litres'
+        working: '8 liters × 3.375 = 27 liters'
       }
     ],
     answer: {
       choices: [
-        { id: 'r', text: '27 litres' },
+        { id: 'r', text: '27 liters' },
         {
           id: 's1',
-          text: '12 litres',
+          text: '12 liters',
           slip: 'you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.'
         },
         {
           id: 's2',
-          text: '18 litres',
+          text: '18 liters',
           slip: 'you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.'
         }
       ],
@@ -188,11 +188,11 @@ FC.cases('math', 'u6', [
     topic: 'paint for two boats',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A small boat 2 m long needs 1.5 litres of paint for its hull. A bigger boat of exactly the same shape is 6 m long. How much paint does the hull of the bigger boat need?',
+    text: 'A small boat 2 m long needs 1.5 liters of paint for its hull. A bigger boat of exactly the same shape is 6 m long. How much paint does the hull of the bigger boat need?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: {
       M1: 'How much paint does the hull of the bigger boat need?',
-      S1: 'A small boat 2 m long needs 1.5 litres of paint for its hull. A bigger boat of exactly the same shape is 6 m long',
+      S1: 'A small boat 2 m long needs 1.5 liters of paint for its hull. A bigger boat of exactly the same shape is 6 m long',
       S2: 'How much paint does the hull of the bigger boat need?'
     },
     reason: {
@@ -219,20 +219,20 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '1.5 litres × 9 = 13.5 litres'
+        working: '1.5 liters × 9 = 13.5 liters'
       }
     ],
     answer: {
       choices: [
-        { id: 'r', text: '13.5 litres' },
+        { id: 'r', text: '13.5 liters' },
         {
           id: 's1',
-          text: '4.5 litres',
+          text: '4.5 liters',
           slip: 'you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.'
         },
         {
           id: 's2',
-          text: '40.5 litres',
+          text: '40.5 liters',
           slip: 'you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.'
         }
       ],

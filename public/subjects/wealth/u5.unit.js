@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Five',
@@ -28,7 +28,7 @@ FC.unit('wealth', 'u5', {
     { id: 'basicdocs~simple', pair: ['basicdocs', 'simple'], step: 'H1',
       shared: 'Both are about the papers that say who gets the money and who may act, and in both the owner may be well and the family may be close.',
       rule: 'In {o:basicdocs} at least one of the papers is missing, or names someone it should no longer name, or was written before a marriage, a divorce, a birth or a death. In {o:simple} every one of the papers is current.',
-      test: 'Look at each of the three papers in the case: the will, any form held by a pension company or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?' },
+      test: 'Look at each of the three papers in the case: the will, any beneficiary form held by a 401(k) or IRA provider, an insurer or a bank, and the power of attorney. Does the case show that one of them is missing, or no longer matches the person’s life? Or does it show all three current?' },
     { id: 'gifting~simple', pair: ['gifting', 'simple'], step: 'H1',
       shared: 'In both, the papers are in order and the owner is well off.',
       rule: 'In {o:gifting} what the owner will leave is above the tax-free limit, and they have more than they will need. In {o:simple} what they will leave is below the limit, or nothing in it is in question.',
@@ -90,7 +90,7 @@ FC.unit('wealth', 'u5', {
                 ['h-rev-papers', 'h-rev-simple', 'h-rev-gifting', 'h-rev-trust', 'h-rev-people'],
                 [{ earlier: 'u1' }]] },
       { ask: 'finish',
-        items: [['h-f-pilot', 'h-f-neighbours']] },
+        items: [['h-f-pilot', 'h-f-neighbors']] },
       { ask: 'route',
         items: [['h-r-lease', 'h-r-retired'],
                 ['h-r-pension', 'h-r-woodland'],
@@ -115,7 +115,8 @@ FC.unit('wealth', 'u5', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the handover branch of Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' }
     ],
     // What the K2 rewrite changed in this branch, and why (docs/rebuild/wealth-plan.md, section (a), Unit Five).
     keyChanges: [

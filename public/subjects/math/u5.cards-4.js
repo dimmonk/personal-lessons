@@ -24,12 +24,12 @@ FC.cards('math', 'u5', [
     name: 'A problem like this is {o:complement}. In the name, “the opposite” of at least one thing happening is that none of them happens, and the procedure counts that instead and takes it away from 1.' },
 
   { id: 'again-complement', kind: 'again', outcome: 'complement',
-    link: 'The coin game gave you what to point to: {needs:complement}. Here is a second problem with a different story, the two tyres of a bicycle.',
-    first: 'm5-wd-coin', second: 'm5-wd-tyres', step: 'C1',
-    instruction: 'Find what the two problems share. Ignore the story (coin flips, bike tyres) and ignore the numbers. Look at one thing only: which words show what has to be found about the separate things?',
-    prompt: { kind: 'phrase', answer: 'at least one tyre gets a puncture' },
+    link: 'The coin game gave you what to point to: {needs:complement}. Here is a second problem with a different story, the two tires of a bicycle.',
+    first: 'm5-wd-coin', second: 'm5-wd-tires', step: 'C1',
+    instruction: 'Find what the two problems share. Ignore the story (coin flips, bike tires) and ignore the numbers. Look at one thing only: which words show what has to be found about the separate things?',
+    prompt: { kind: 'phrase', answer: 'at least one tire gets a puncture' },
     shared: [
-      'Both problems give the chance of each of several separate things, three flips and two tyres, and say that one does not change the next. Both ask how likely it is that at least one of them happens: a head on at least one flip, a puncture in at least one tyre. Neither asks for a count of results.',
+      'Both problems give the chance of each of several separate things, three flips and two tires, and say that one does not change the next. Both ask how likely it is that at least one of them happens: a head on at least one flip, a puncture in at least one tire. Neither asks for a count of results.',
       'That is all you point to, and it is why one name covers a coin and a bicycle. The stories differ. What is asked about the separate things is the same.'
     ] },
 

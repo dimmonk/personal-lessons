@@ -60,12 +60,12 @@ FC.cases('stats', 'u3', [
     not: { outcome: 'smalln', why: 'There are only 64 replies, which looks like a handful. But the 64 are 64 of a list of 800, and most of the group is missing. A handful is everyone there is.' },
     wouldChange: 'If the district had phoned the teachers who had not replied until 700 of the 800 had answered, the first part would hold.' },
 
-  { id: 'rt-ok-b', use: 'drill', tier: 'varied', setting: 'learning', topic: 'absences of every pupil in a school',
-    text: "A school's attendance office counted the absences of every one of its 1,200 pupils for the autumn term and found that 96 had missed more than 10 days. The office's report says: 'About 8 pupils in every 100 missed more than ten days this term.'",
+  { id: 'rt-ok-b', use: 'drill', tier: 'varied', setting: 'learning', topic: 'absences of every student in a school',
+    text: "A school's attendance office counted the absences of every one of its 1,200 students for the autumn term and found that 96 had missed more than 10 days. The office's report says: 'About 8 students in every 100 missed more than ten days this term.'",
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
-    cues: { S1: 'counted the absences of every one of its 1,200 pupils for the autumn term', H1: 'About 8 pupils in every 100 missed more than ten days this term' },
-    reason: { S1: 'Every pupil is counted, from the school’s own records: {cue:S1}. 96 of 1,200 is 8 in every 100.',
+    cues: { S1: 'counted the absences of every one of its 1,200 students for the autumn term', H1: 'About 8 students in every 100 missed more than ten days this term' },
+    reason: { S1: 'Every student is counted, from the school’s own records: {cue:S1}. 96 of 1,200 is 8 in every 100.',
               H1: 'The claim gives one share for one group at one time and goes no further: {cue:H1}.' },
-    not: { outcome: 'nonresp', why: 'Nobody was asked and nobody could fail to reply. The office counted from its own records of every pupil.' },
-    wouldChange: 'If the office had counted only the pupils who were at school on the last day of term, the figure would leave out the ones who missed the most, and the answer would be {a:A1.lasted}.' }
+    not: { outcome: 'nonresp', why: 'Nobody was asked and nobody could fail to reply. The office counted from its own records of every student.' },
+    wouldChange: 'If the office had counted only the students who were at school on the last day of term, the figure would leave out the ones who missed the most, and the answer would be {a:A1.lasted}.' }
 ]);

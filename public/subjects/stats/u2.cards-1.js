@@ -26,11 +26,11 @@ FC.cards('stats', 'u2', [
     link: 'The first kind of claim that holds is built on a figure worked out from some of a group, and the word for those few people comes first.',
     case: 'h-t-council',
     plain: [
-      'Asking everyone is usually too slow, too costly or impossible. A council cannot stop 40,000 people in the street. So it asks 800 of them and works out the figure from those 800. The 800 are not the whole town. They are a few people who are meant to stand for it.',
+      'Asking everyone is usually too slow, too costly or impossible. A town council cannot stop 40,000 people in the street. So it asks 800 of them and works out the figure from those 800. The 800 are not the whole town. They are a few people who are meant to stand for it.',
       'There are two groups in this story, and they have to be kept apart. One is the group the claim is about: all 40,000 residents. The other is the people actually asked: the 800. The figure of 31 in 100 is worked out from the second group, and the claim speaks about the first. Whether the first can be read from the second is what the rest of this unit is about.'
     ],
     after: [
-      'Every figure from a {t:sample} comes with one question: how did these 800 come to be the 800? If the council had asked the first 800 people it met outside the stadium on match day, the figure would still be 31 in 100, and it would mean something else.'
+      'Every figure from a {t:sample} comes with one question: how did these 800 come to be the 800? If the town council had asked the first 800 people it met outside the stadium on game day, the figure would still be 31 in 100, and it would mean something else.'
     ] },
 
   { id: 'term-atrandom', kind: 'term', term: 'atrandom',
@@ -38,7 +38,7 @@ FC.cards('stats', 'u2', [
     link: 'A {t:sample} can only stand for the whole group if the way it was chosen does not lean. There is one way of choosing that is built not to, and it has a name.',
     case: 'h-t-lottery',
     plain: [
-      'Compare two ways the council could choose its 800. In the first, a clerk chooses them. She picks the streets she knows, or the houses near the town hall, or the people who are home when she calls. Even if she means no harm, her choice leans toward people like the ones she knows, or who are easy to reach. In the second, a computer draws 800 of the 40,000 addresses, like tickets from a drum, and nobody decides which.',
+      'Compare two ways the town council could choose its 800. In the first, a clerk chooses them. She picks the streets she knows, or the houses near the town hall, or the people who are home when she calls. Even if she means no harm, her choice leans toward people like the ones she knows, or who are easy to reach. In the second, a computer draws 800 of the 40,000 addresses, like tickets from a drum, and nobody decides which.',
       'In the second way, every address has the same chance. The sum: 800 ÷ 40,000 = 0.02, which is 1 in 50. A house on the richest street and a house on the poorest each have a 1 in 50 chance, so the draw cannot favor either. The people it picks tend to be a fair picture of the 40,000, with about as many young and old, walkers and drivers, as there are in town.',
       'Luck can still make the 800 a little different from the town. A fair draw is not a guarantee. What it removes is any push in one direction.'
     ],

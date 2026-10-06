@@ -9,7 +9,7 @@
 
 FC.unit('civics', 'u10', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Ten',
@@ -24,7 +24,7 @@ FC.unit('civics', 'u10', {
     { id: 'wv-statue~wv-ellis', pair: ['wv-statue', 'wv-ellis'],
       shared: 'Both stand in New York Harbor, both belong to the years when millions arrived, and their years are only six apart.',
       rule: 'One is the year of the gift from France: {f:wv-statue}. The other is the year of the federal station where arrivals were examined: {f:wv-ellis}. The statue came first.',
-      test: 'Is it the year of the gift that stands in the harbour, or the year of the station where the arrivals were examined?' },
+      test: 'Is it the year of the gift that stands in the harbor, or the year of the station where the arrivals were examined?' },
     { id: 'do-court~do-congress', pair: ['do-court', 'do-congress'],
       shared: 'Both belong to the government of the whole country, and both acted on who may come in.',
       rule: 'One is the body that struck down a state’s own conditions: {f:do-court}. The other is the body that passed a law for the whole country: {f:do-congress}.',
@@ -113,7 +113,8 @@ FC.unit('civics', 'u10', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for history since 1877, replacing the old Unit Five cards on its last two eras ("Factories and immigration (1877 to 1914)" and "World wars, civil rights and today (1914 onward)"), "The right to vote, widened by inches", "Places and symbols", the drill items of those eras (n5), and old claim 6 (always a democracy), which is held as rows. Fourteen groups of facts under the idea each serves, sixty-one facts, nine look-alike pairs. Every fact comes from the old data and none is added. The years 1877 to 1900 are skipped: the unit holds three dates from them (1882, 1886, 1892) and says so. The old "which era" question is gone: a facts card cannot hold five rows with one answer (V57), so each era became groups of facts, each asked one way. Not yet deployed.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // old claim 6 becomes the founding-voters row and the years and gap rows; a fact unit has no refute card (A12, gap 6 of the civics plan)

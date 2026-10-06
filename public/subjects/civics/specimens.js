@@ -2,7 +2,7 @@
 // Nine of the eleven old specimens whose route held keep their story, with the old dashes and the word "statute" gone and the decider named where the old
 // text left it open: the ingredient labels, the household fee, a state's bundle of rules, the city council, the fine and the ruling, the agreement
 // and the judge sent to the Senate, the Secretary of State's talks, the tax-rate dispute, and the courthouses left without money (the old "construction
-// programme" is now one on the Constitution's list, so the case really does show the second answer it carries in `also`). The other two (a federal
+// program" is now one on the Constitution's list, so the case really does show the second answer it carries in `also`). The other two (a federal
 // judge tried in the Senate, a bill passed and signed that is beyond Congress) have new stories, because Unit Three already uses those stories.
 // The eight old specimens that could not keep their route were rewritten: no one decided (the citizenship law), two matters in one case (the minimum
 // wage and the income tax), two answers in one case (the veto and the pardon, now two specimens), nothing asked of a judge (the trial rights), the wrong
@@ -27,12 +27,12 @@ FC.specimens('civics', [
     wouldChange: 'If the same requirements appeared only in an office’s manual, with no law behind them, the office would be making the last decision, and the name would be {o:beyondpres}.' },
 
   { id: 'sp-labels', tier: 'clean', setting: 'health', topic: 'ingredient labels and the rules that fill them in',
-    text: "Congress passes a law requiring that a product be labelled with its ingredients. A federal agency then issues detailed rules specifying type sizes, the wording of warnings and the testing method, and runs an inspection programme.",
+    text: "Congress passes a law requiring that a product be labeled with its ingredients. A federal agency then issues detailed rules specifying type sizes, the wording of warnings and the testing method, and runs an inspection program.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
     cues: { D1: 'A federal agency then issues detailed rules',
-            E1: ['Congress passes a law requiring that a product be labelled with its ingredients', 'detailed rules specifying type sizes, the wording of warnings and the testing method'] },
+            E1: ['Congress passes a law requiring that a product be labeled with its ingredients', 'detailed rules specifying type sizes, the wording of warnings and the testing method'] },
     reason: { D1: 'Congress wrote the law first, and that is how the matter got here. The last decision is made by an office: {cue:D1}.',
-              E1: 'The rules fill in the detail of a law Congress already passed: {cue:E1}. Type sizes, warnings and testing all serve the labelling law, and nothing in them goes past it.' },
+              E1: 'The rules fill in the detail of a law Congress already passed: {cue:E1}. Type sizes, warnings and testing all serve the labeling law, and nothing in them goes past it.' },
     not: { outcome: 'beyondpres', why: 'Rules from a federal office can look like something nobody voted for. But a law stands behind these, and they stay inside it.' },
     wouldChange: 'If the rules banned the product outright when the law only required labels, the office would have gone past what Congress allowed, and the name would be {o:beyondpres}.' },
 
@@ -46,12 +46,12 @@ FC.specimens('civics', [
     not: { outcome: 'execute', why: 'An order from the President can look like putting a law into practice. But {o:execute} needs a law Congress passed that the order stays inside, and the case says there is none.' },
     wouldChange: 'An order that only changed how an office sets its priorities in enforcing a fee Congress did create would be {o:execute}, however big its effects.' },
 
-  { id: 'sp-licences', tier: 'clean', setting: 'home', topic: 'a bundle of rules for one state',
-    text: "The legislature of one state passed a package of rules this year. It sets the age at which a person may hold a driver’s licence, who may marry, what its public schools teach, how its police forces operate, and which professions require a state licence.",
+  { id: 'sp-licenses', tier: 'clean', setting: 'home', topic: 'a bundle of rules for one state',
+    text: "The legislature of one state passed a package of rules this year. It sets the age at which a person may hold a driver’s license, who may marry, what its public schools teach, how its police forces operate, and which professions require a state license.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
     cues: { D1: 'The legislature of one state passed a package of rules',
             S1: 'The legislature of one state',
-            S2: ['the age at which a person may hold a driver’s licence', 'who may marry', 'what its public schools teach', 'which professions require a state licence'] },
+            S2: ['the age at which a person may hold a driver’s license', 'who may marry', 'what its public schools teach', 'which professions require a state license'] },
     reason: { D1: 'The case ends with a state making rules: {cue:D1}.',
               S1: 'The state’s own lawmakers made these rules, not a city or a county: {cue:S1}.',
               S2: 'Driving, marriage and schools are matters the Constitution leaves to the states: {cue:S2}. The case mentions no federal law and no right that the rules take away.' },
@@ -59,11 +59,11 @@ FC.specimens('civics', [
     wouldChange: 'If Congress had already passed a law meant to be the only rule on one of these matters, the state’s rule would give way, and the name would be {o:preempted}.' },
 
   { id: 'sp-council', tier: 'clean', setting: 'community', topic: 'what a city council may decide',
-    text: "A city council decides which streets permit overnight parking, what may be built in which neighbourhood, and the opening hours of its libraries. Its authority to do so comes from the state.",
+    text: "A city council decides which streets permit overnight parking, what may be built in which neighborhood, and the opening hours of its libraries. Its authority to do so comes from the state.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
     cues: { D1: 'A city council decides',
             S1: ['A city council decides', 'Its authority to do so comes from the state'],
-            S2: 'which streets permit overnight parking, what may be built in which neighbourhood, and the opening hours of its libraries' },
+            S2: 'which streets permit overnight parking, what may be built in which neighborhood, and the opening hours of its libraries' },
     reason: { D1: 'The case ends with a city council making decisions: {cue:D1}.',
               S1: 'The rules are the council’s, and the case says where its power comes from: {cue:S1}. A city holds only the power its state hands it.',
               S2: 'Parking, building and library hours are matters the Constitution leaves to the states, and so to the cities and counties they hand power to: {cue:S2}. The case mentions no federal law and no right.' },
@@ -130,8 +130,8 @@ FC.specimens('civics', [
     not: { outcome: 'impeach', why: 'Both are votes in the Senate about people who work for the federal government. But the judge is being put forward, and nobody is accused of anything.' },
     wouldChange: 'If the story had stopped at the President signing the agreement, nothing would have gone to the Senate, the President would have made the last decision, and the name would be {o:diplomacy}. If the Senate never votes, the agreement is not a {t:treaty}.' },
 
-  { id: 'sp-flat-search', tier: 'varied', setting: 'home', topic: 'a search of a flat without a warrant',
-    text: "Police officers searched Ruth Kane’s flat while she was out. They had no warrant, which is a judge’s written permission. Ruth is now charged with a crime, and at the start of her trial her lawyer asks the judge to rule on whether that search followed the rule the Constitution sets for searches.",
+  { id: 'sp-apartment-search', tier: 'varied', setting: 'home', topic: 'a search of an apartment without a warrant',
+    text: "Police officers searched Ruth Kane’s apartment while she was out. They had no warrant, which is a judge’s written permission. Ruth is now charged with a crime, and at the start of her trial her lawyer asks the judge to rule on whether that search followed the rule the Constitution sets for searches.",
     outcome: 'trialrights', route: { D1: ['courts'], J1: ['accused'] },
     cues: { D1: 'her lawyer asks the judge to rule',
             J1: ['Ruth is now charged with a crime', 'asks the judge to rule on whether that search followed the rule the Constitution sets for searches'] },
@@ -172,15 +172,15 @@ FC.specimens('civics', [
               S1: 'The rule is the state’s own, made by its legislature: {cue:S1}.',
               S2: 'A federal law covers the same matter, and the case says it is meant to be the only rule: {cue:S2}. Becoming a citizen is a matter the Constitution gives to Congress.' },
     not: { outcome: 'police', why: 'The state made the rule itself, which is where {o:police} starts. But {o:police} needs a matter no federal law covers, and here Congress has written the rules and meant them to be the only ones.' },
-    wouldChange: 'If the state’s law dealt only with a licence or a benefit that Congress has not covered, the state would keep the say, and the name would be {o:police}.' },
+    wouldChange: 'If the state’s law dealt only with a license or a benefit that Congress has not covered, the state would keep the say, and the name would be {o:police}.' },
 
   { id: 'sp-courthouses', tier: 'misleading', setting: 'community', topic: 'new federal courthouses left without money',
-    text: "The President announces a programme to build ten new federal courthouses and directs an agency to begin. Congress passes the year’s appropriations bill with no money for it, and the programme cannot proceed.",
+    text: "The President announces a program to build ten new federal courthouses and directs an agency to begin. Congress passes the year’s appropriations bill with no money for it, and the program cannot proceed.",
     outcome: 'purse', also: ['listed'], route: { D1: ['congress'], C1: ['money'] },
     cues: { D1: 'Congress passes the year’s appropriations bill with no money for it',
-            C1: ['Congress passes the year’s appropriations bill with no money for it', 'the programme cannot proceed'] },
-    reason: { D1: 'The President announced the programme, but the case turns on Congress: {cue:D1}.',
-              C1: 'Congress left the money out, so the government cannot spend on the programme: {cue:C1}. The federal courts are a matter on the Constitution’s list, so the case also shows a law on a listed matter. When a case shows both, the answer is {a:C1.money}.' },
+            C1: ['Congress passes the year’s appropriations bill with no money for it', 'the program cannot proceed'] },
+    reason: { D1: 'The President announced the program, but the case turns on Congress: {cue:D1}.',
+              C1: 'Congress left the money out, so the government cannot spend on the program: {cue:C1}. The federal courts are a matter on the Constitution’s list, so the case also shows a law on a listed matter. When a case shows both, the answer is {a:C1.money}.' },
     not: { outcome: 'enumerated', why: 'The year’s bill is a law, and the federal courts are on the Constitution’s list, so {o:enumerated} seems to fit. But what Congress decides is whether the government may spend, and when a case shows both, that is the answer.' },
     wouldChange: 'If an earlier law had already set aside the money, the office spending it would be putting that law into practice, and the name would be {o:execute}.' },
 

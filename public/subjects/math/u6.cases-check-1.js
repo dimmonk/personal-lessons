@@ -90,7 +90,7 @@ FC.cases('math', 'u6', [
     topic: 'glass for a window pane',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'The glass for a window pane 40 cm wide costs 6 euros. A pane of exactly the same shape, 120 cm wide, is cut from the same kind of glass. How much does the glass for the larger pane cost?'
+    text: 'The glass for a window pane 40 cm wide costs 6 dollars. A pane of exactly the same shape, 120 cm wide, is cut from the same kind of glass. How much does the glass for the larger pane cost?'
   },
 
   {
@@ -316,7 +316,7 @@ FC.cases('math', 'u6', [
     topic: 'a model aeroplane',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A model aeroplane is an exact copy of a real plane at a scale of 1 to 40: every 1 cm on the model stands for 40 cm on the plane. The model’s wings measure 30 cm from tip to tip. How wide are the real plane’s wings, in metres?',
+    text: 'A model aeroplane is an exact copy of a real plane at a scale of 1 to 40: every 1 cm on the model stands for 40 cm on the plane. The model’s wings measure 30 cm from tip to tip. How wide are the real plane’s wings, in meters?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     steps: [
       {

@@ -5,7 +5,7 @@
 // cues.S1 is the exact phrase in the text that decides the first question (or a list of phrases); the app marks it,
 // always in the same style. segments are the tappable pieces for "tap the words" prompts; note is shown if that
 // piece is tapped in error. reason.S1 is the reason for this case's answer. not names the nearest wrong answer (a ledger
-// neighbour) and says why it fails for this case. also lists an answer the case shows as well as its own, which loses to its
+// neighbor) and says why it fails for this case. also lists an answer the case shows as well as its own, which loses to its
 // own by a tie-break in the key. People, firms and studies are invented; no case asserts a contested fact about the real world.
 
 FC.cases('stats', 'u1', [
@@ -58,17 +58,17 @@ FC.cases('stats', 'u1', [
     route: { S1: ['measure'] },
     cues: { S1: 'Five years ago only full-time jobs counted as work. Now any paid work counts, including a few hours a week in a café' },
     reason: { S1: 'The people in the figure are fine: every graduate was contacted and nearly all replied. What is counted changed: {cue:S1}. "In work" can rise from 80% to 95% with no more graduates in full-time jobs than before.' },
-    not: { outcome: 'counted', why: 'Nobody is left out and nobody is favoured: every graduate of both years was contacted and nearly all replied. The trouble is not who is in the figure.' },
+    not: { outcome: 'counted', why: 'Nobody is left out and nobody is favored: every graduate of both years was contacted and nearly all replied. The trouble is not who is in the figure.' },
     miss: { counted: 'The first part comes first, and it holds. Every graduate of both years was contacted and nearly all replied, so the people in the figure are a fair picture, and there are plenty of them. The case goes on to what the figure counts, and that is where it goes wrong.' } },
 
   /* ---------- The look-alike pair: same school, same rise in scores ---------- */
   { id: 'gate-reading-volunteers', use: 'teach', tier: 'clean', setting: 'learning', topic: 'reading scores from volunteers',
-    text: "Willow School says its pupils' reading scores rose from 61 to 70 this year. The 70 is the average for the 11 pupils who volunteered to stay after class for an extra test. The school has 340 pupils, and last year's 61 was the average for all of them.",
+    text: "Willow School says its students' reading scores rose from 61 to 70 this year. The 70 is the average for the 11 students who volunteered to stay after class for an extra test. The school has 340 students, and last year's 61 was the average for all of them.",
     route: { S1: ['counted'] },
-    cues: { S1: 'the average for the 11 pupils who volunteered to stay after class for an extra test' } },
+    cues: { S1: 'the average for the 11 students who volunteered to stay after class for an extra test' } },
 
   { id: 'gate-reading-easier', use: 'teach', tier: 'clean', setting: 'learning', topic: 'reading scores on an easier test',
-    text: "Willow School says its pupils' reading scores rose from 61 to 70 this year. All 340 pupils took the test in both years. This year's test was the shorter version, with easier passages, which the test's maker brought out to replace the old one.",
+    text: "Willow School says its students' reading scores rose from 61 to 70 this year. All 340 students took the test in both years. This year's test was the shorter version, with easier passages, which the test's maker brought out to replace the old one.",
     route: { S1: ['measure'] },
     cues: { S1: "This year's test was the shorter version, with easier passages" } }
 ]);

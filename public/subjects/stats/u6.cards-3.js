@@ -51,7 +51,7 @@ FC.cards('stats', 'u6', [
       'And it does not mean that the thing has no effect. The shake may be worth 2 pounds. The name says that the figures cannot separate the thing from what goes with it.'
     ],
     wild: ['"People who do X are healthier, richer and happier."', '"Students who use it get better grades."', '"Users of our product spend 40% more."', '"Studies show people who do this live longer."'],
-    self: 'In your own life it is the gym where everybody looks fit, or the school whose pupils all do well. Those people were not picked by chance. Many of them were already fit, or already doing well, when they walked in.',
+    self: 'In your own life it is the gym where everybody looks fit, or the school whose students all do well. Those people were not picked by chance. Many of them were already fit, or already doing well, when they walked in.',
     ask: '"Who decided who was in each group, and what else is different about the people who chose it?"',
     act: [
       'Name one other way the two groups differ that could produce the same result. If you can name one and the claim does not rule it out, do not act on the claim.',

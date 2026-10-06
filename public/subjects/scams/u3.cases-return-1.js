@@ -48,10 +48,10 @@ FC.cases('scams', 'u3', [
     wouldChange: 'If Gina had opened her banking app herself after seeing the text, and looked at the payment there, she would have started the sign-in, and the case would be {o:realsignin}.' },
 
   /* ---------- Real sign-in ---------- */
-  { id: 'ret-rs-train', use: 'return', tier: 'clean', setting: 'leisure', topic: 'a train booking opened in the railway app',
-    text: "Nick wants to look at his train booking. He taps the railway's app, which is on his phone, and signs in with his email address and password.",
+  { id: 'ret-rs-train', use: 'return', tier: 'clean', setting: 'leisure', topic: 'a train booking opened in the train company app',
+    text: "Nick wants to look at his train booking. He taps the train company's app, which is on his phone, and signs in with his email address and password.",
     outcome: 'realsignin', route: { D1: ['access'], A1: ['password'], A2: ['fits'] },
-    cues: { D1: 'signs in with his email address and password', A1: 'his email address and password', A2: "He taps the railway's app, which is on his phone" },
+    cues: { D1: 'signs in with his email address and password', A1: 'his email address and password', A2: "He taps the train company's app, which is on his phone" },
     reason: { D1: 'Nick signs in: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
               A1: 'The sign-in asks for an email address and a password: {cue:A1}.',
               A2: 'Nick set out to look at his booking and used an app that was already on his phone: {cue:A2}. Nothing came to him, and the app asks only for a sign-in.' },
@@ -76,15 +76,15 @@ FC.cases('scams', 'u3', [
               A1: 'A code has come to her phone and she is asked to type it in: {cue:A1}. No password and no Allow are asked for in this case.',
               A2: 'Dinah started this, from a bookmark that she saved: {cue:A2}. The code goes into the same page, and it is asked for only to approve the payment she is making.' },
     not: { outcome: 'codescam', why: 'The code is real in both, and it arrives on the phone in both. What differs is who asks for it: here it goes into the page that she opened, and nobody has contacted her.' },
-    wouldChange: 'If a caller who had phoned her had asked her to read the code out, the code would be the same and the case would be {o:codescam}.' },
+    wouldChange: 'If a caller who had called her had asked her to read the code out, the code would be the same and the case would be {o:codescam}.' },
 
-  { id: 'ret-rs-badge', use: 'return', tier: 'misleading', setting: 'work', topic: 'a reset after ringing the number on the badge', echo: 'ac-locked',
-    text: "Bashir asks his employer's helpdesk, by ringing the number on his badge, to reset his password. A minute later an email arrives: 'Choose a new password.' Its link opens the company's sign-in page.",
+  { id: 'ret-rs-badge', use: 'return', tier: 'misleading', setting: 'work', topic: 'a reset after calling the number on the badge', echo: 'ac-locked',
+    text: "Bashir asks his employer's helpdesk, by calling the number on his badge, to reset his password. A minute later an email arrives: 'Choose a new password.' Its link opens the company's sign-in page.",
     outcome: 'realsignin', route: { D1: ['access'], A1: ['password'], A2: ['fits'] },
-    cues: { D1: 'Choose a new password', A1: "Its link opens the company's sign-in page", A2: "Bashir asks his employer's helpdesk, by ringing the number on his badge, to reset his password" },
+    cues: { D1: 'Choose a new password', A1: "Its link opens the company's sign-in page", A2: "Bashir asks his employer's helpdesk, by calling the number on his badge, to reset his password" },
     reason: { D1: 'The email asks Bashir to choose a new password: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
               A1: 'The link leads to a sign-in page, where a password is typed: {cue:A1}.',
-              A2: 'Bashir started this: he rang a number that was already printed on his badge: {cue:A2}. The email is the answer to his call, and it came a minute later.' },
+              A2: 'Bashir started this: he called a number that was already printed on his badge: {cue:A2}. The email is the answer to his call, and it came a minute later.' },
     not: { outcome: 'phishing', why: 'An email with a link to a page that wants a password is what the scam looks like. What makes this one real is that Bashir asked for it a minute earlier, through a number he already had.' },
     wouldChange: 'If the same email had arrived when Bashir had asked for nothing, it would be a copy, and the case would be {o:phishing}.' }
 ]);

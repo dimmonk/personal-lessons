@@ -64,7 +64,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -75,11 +75,11 @@ FC.cases('math', 'u3', [
     topic: 'a game and a coupon',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A shop works out the price after a coupon like this: take the full price, subtract €15, then halve what is left. A game costs €40 after the coupon. What was the full price?',
+    text: 'A shop works out the price after a coupon like this: take the full price, subtract $15, then halve what is left. A game costs $40 after the coupon. What was the full price?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['take the full price, subtract €15, then halve what is left', 'What was the full price?'],
-      A1: ['take the full price, subtract €15, then halve what is left', 'costs €40 after the coupon']
+      M1: ['take the full price, subtract $15, then halve what is left', 'What was the full price?'],
+      A1: ['take the full price, subtract $15, then halve what is left', 'costs $40 after the coupon']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -110,20 +110,20 @@ FC.cases('math', 'u3', [
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€95' },
+        { id: 'r', text: '$95' },
         {
           id: 's1',
-          text: '€110',
+          text: '$110',
           slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
         },
         {
           id: 's2',
-          text: '€35',
+          text: '$35',
           slip: 'you divide by 2 once more instead of undoing it by multiplying by 2.'
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -182,7 +182,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -193,7 +193,7 @@ FC.cases('math', 'u3', [
     topic: 'lockers at a pool',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A swimming pool works out its locker fee in euros like this: take the number of lockers booked, subtract the 2 that are free, then multiply by 5. The fee is €30. How many lockers were booked?',
+    text: 'A swimming pool works out its locker fee in dollars like this: take the number of lockers booked, subtract the 2 that are free, then multiply by 5. The fee is $30. How many lockers were booked?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
       M1: [
@@ -202,7 +202,7 @@ FC.cases('math', 'u3', [
       ],
       A1: [
         'take the number of lockers booked, subtract the 2 that are free, then multiply by 5',
-        'The fee is €30'
+        'The fee is $30'
       ]
     },
     reason: {
@@ -247,7 +247,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -258,11 +258,11 @@ FC.cases('math', 'u3', [
     topic: 'a printer’s quote',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A printer works out a quote in euros like this: divide the number of copies by 5, then add 12 for the set-up. The quote is €60. How many copies is it for?',
+    text: 'A printer works out a quote in dollars like this: divide the number of copies by 5, then add 12 for the set-up. The quote is $60. How many copies is it for?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
       M1: ['divide the number of copies by 5, then add 12 for the set-up', 'How many copies is it for?'],
-      A1: ['divide the number of copies by 5, then add 12 for the set-up', 'The quote is €60']
+      A1: ['divide the number of copies by 5, then add 12 for the set-up', 'The quote is $60']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -306,6 +306,6 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   }
 ]);

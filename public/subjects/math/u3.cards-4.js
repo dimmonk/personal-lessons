@@ -11,7 +11,7 @@ FC.cards('math', 'u3', [
     case: 'm3-sq-tiles',
     plain: [
       'A tiler who lays a bigger square from square tiles needs a number of tiles that is the length of a side multiplied by itself: 5 × 5 = 25, 6 × 6 = 36, 12 × 12 = 144. Multiplying a number by itself comes up so often, for the area of a square or of anything whose two sides depend on each other, that it has a word of its own and a small raised 2 to write it with.',
-      'The same is true for a number you do not know. If the side of a square is x, its area is x × x, and that is written x² with the small 2 raised. A whole bracket can be multiplied by itself too: (x + 3)² means (x + 3) × (x + 3), with everything inside the bracket multiplied by everything inside the bracket.',
+      'The same is true for a number you do not know. If the side of a square is x, its area is x × x, and that is written x² with the small 2 raised. A whole group in parentheses can be multiplied by itself too: (x + 3)² means (x + 3) × (x + 3), with everything inside the parentheses multiplied by everything inside the parentheses.',
       'A number with a minus sign, multiplied by itself, gives a number above zero, because a minus times a minus is a plus: −5 × −5 = 25, just as 5 × 5 = 25. So two different numbers, 5 and −5, give the same result when they are multiplied by themselves.'
     ],
     after: [
@@ -95,7 +95,7 @@ FC.cards('math', 'u3', [
       'So the problem shows both: a rule with a result, and a missing number multiplied by itself. When it shows both, the answer is {a:A1.itself}.'
     ],
     take: [
-      'This is a decision made for the questions, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. Recognising the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.',
+      'This is a decision made for the questions, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. recognizing the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.',
       'If the rule had been 12 × n − 20, with no n × n, the missing number would appear once, and the answer would be {a:A1.formula}.'
     ] }
 ]);

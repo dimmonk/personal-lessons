@@ -12,10 +12,10 @@ FC.cards('psychology', 'u2', [
       { step: 'D1',
         reason: 'What the case gives you is Noor’s own account of something she did, and her reason for it: {cue:D1}. That is one person defending a choice of her own. She is not doing anything to the people in the club, and one Sunday tells you nothing about how she is across years.' },
       { step: 'R1',
-        reason: 'She did something that does not fit what she has told the club: she missed a session. Afterwards she gives a reason why it is fine: {cue:R1}. The run stays missed, and what she tells the club about herself stays said. Nothing has changed except how the miss looks.' }
+        reason: 'She did something that does not fit what she has told the club: she missed a session. Afterward she gives a reason why it is fine: {cue:R1}. The run stays missed, and what she tells the club about herself stays said. Nothing has changed except how the miss looks.' }
     ],
     hold: {
-      neighbour: 'sunkcost',
+      neighbor: 'sunkcost',
       prompt: { kind: 'reason',
         lead: 'The case mentions eight months of long runs, so it can look like a case about what is already spent.',
         choices: [
@@ -34,7 +34,7 @@ FC.cards('psychology', 'u2', [
     impression: {
       resembles: 'sauce',
       text: [
-        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterwards for why it hardly counts.',
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterward for why it hardly counts.',
         'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
@@ -50,14 +50,14 @@ FC.cards('psychology', 'u2', [
         reason: 'Grace set out on a search that was supposed to settle the choice: a tasting. Now look at the dates: {cue:R1}. The answer came a month before the search. At the tasting she collected what supported it, every compliment, and left out the rest.' }
     ],
     hold: {
-      neighbour: 'confbias',
+      neighbor: 'confbias',
       prompt: { kind: 'reason',
         lead: 'Grace wrote down the compliments and none of the complaints. That is a harder test for one side, so the case can look like {o:confbias}.',
         choices: [
           { id: 'a', text: 'She wrote down every compliment and none of the complaints.',
             note: 'True, and it is why the case can look like {o:confbias}. But being harder on one side fits both names, so it cannot settle which of the two this is.' },
           { id: 'b', text: 'She told her accountant that the tasting settled it.',
-            note: 'True, but that is how Grace describes it afterwards. It does not show what came first.' },
+            note: 'True, but that is how Grace describes it afterward. It does not show what came first.' },
           { id: 'c', text: 'She decided in March, and the tasting was in April.' }
         ],
         answer: 'c' },
@@ -69,7 +69,7 @@ FC.cards('psychology', 'u2', [
     impression: {
       resembles: 'interviews', first: 'oneway',
       text: [
-        'Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way system first, and Greg’s case was {o:confbias}. So here the likeness and the answer seem to disagree.',
+        'Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way street plan first, and Greg’s case was {o:confbias}. So here the likeness and the answer seem to disagree.',
         'When that happens, go back to the question and find the words in the case that answer it. They are {cue:R1}. Greg’s case has nothing like them: he never set out to settle anything. Carol’s interviews do: she chose first, then ran a search and wrote down what fitted. So the case this one really looks like is Carol’s, and the answer stands.'
       ]
     } },
@@ -80,7 +80,7 @@ FC.cards('psychology', 'u2', [
     carry: [
       'Say what the reasoning does, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.',
       'The story never decides. Nor does the person, and nor does where they ended up: a view can change without {o:fair}, and a view can be kept with it.',
-      'When a case shows an answer chosen before a search began, that settles it, however the evidence was handled afterwards.',
+      'When a case shows an answer chosen before a search began, that settles it, however the evidence was handled afterward.',
       'One sentence is never enough. "You can’t trust that report" is {o:confbias} only if the evidence on the speaker’s own side was never asked the same question. "I looked into it properly and I was right" is {o:motivated} only if the answer was chosen before the search began. Otherwise it may well be {o:fair}.'
     ] },
 

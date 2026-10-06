@@ -25,7 +25,7 @@ FC.cards('scams', 'u3', [
     ] },
 
   { id: 'again-appscam', kind: 'again', outcome: 'appscam',
-    link: 'Rafa\'s {t:permission} gave you what to point to for {o:appscam}, from one case: {needs:appscam}. Here is a second case with a different story. This one is an advert, and the app is offering something.',
+    link: 'Rafa\'s {t:permission} gave you what to point to for {o:appscam}, from one case: {needs:appscam}. Here is a second case with a different story. This one is an ad, and the app is offering something.',
     first: 'ac-shareddoc', second: 'ac-photoprint', step: 'A1',
     instruction: 'Find what the two cases share. Ignore the story (a document, free photo prints) and ignore the name of the app. Look at one thing only: which words say what the app is to be allowed to do?',
     prompt: { kind: 'phrase', answer: "Her email provider's permission screen asks whether PrintPal may read, send and delete all her email" },

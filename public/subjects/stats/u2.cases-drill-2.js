@@ -41,9 +41,9 @@ FC.cases('stats', 'u2', [
 
   /* ---------- Varied ---------- */
   { id: 'r-samp2', use: 'drill', tier: 'varied', setting: 'health', topic: 'children and tooth brushing',
-    text: "A dental association wants to know how many of the 80,000 children in the state brush twice a day. It drew 1,200 children by lottery from the full list of enrolled pupils, sent a form home, and had a nurse follow up by phone until 1,090 had answered. Of the 1,090, 763 brush twice a day, which is 70 in 100. The association says: 'About 70% of the state's children brush twice a day, give or take 3 points.'",
+    text: "A dental association wants to know how many of the 80,000 children in the state brush twice a day. It drew 1,200 children by lottery from the full list of enrolled students, sent a form home, and had a nurse follow up by phone until 1,090 had answered. Of the 1,090, 763 brush twice a day, which is 70 in 100. The association says: 'About 70% of the state's children brush twice a day, give or take 3 points.'",
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
-    cues: { S1: ['drew 1,200 children by lottery from the full list of enrolled pupils', 'until 1,090 had answered'], H1: "About 70% of the state's children brush twice a day, give or take 3 points" },
+    cues: { S1: ['drew 1,200 children by lottery from the full list of enrolled students', 'until 1,090 had answered'], H1: "About 70% of the state's children brush twice a day, give or take 3 points" },
     reason: { S1: 'Each part holds. The {t:sample} is under 2 in 100 of the children, but a lottery chose it from a full list and nearly all were heard from: {cue:S1}.',
               H1: 'The claim is {cue:H1}. It gives one figure about one group at one time. A small share of a big group does not stop that: 1,200 ÷ 80,000 is 0.015, and the margin comes from the 1,090, not from the 80,000.' },
     not: { outcome: 'meas_ok', why: 'The figure is given once. Nothing is followed through time.' } },

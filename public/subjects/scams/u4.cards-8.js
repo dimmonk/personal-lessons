@@ -17,12 +17,12 @@ FC.cards('scams', 'u4', [
         reason: 'Now ask what the email asks her to do with the money: {cue:M2}. The account is not the one that she has always paid. That is {a:M2.newdetails}, and one name is left: {o:invoicefraud}. Nothing in it is hurried or threatening, and that is why it is easy to miss.' }
     ],
     hold: {
-      neighbour: 'realpayment',
+      neighbor: 'realpayment',
       prompt: { kind: 'reason',
         lead: 'The invoice is for the right work and the right amount, from the supplier’s usual address, so it can look like a real request.',
         choices: [
           { id: 'a', text: 'The invoice is for the amount that Noor expects, and it comes from the usual address.',
-            note: 'True, and it is why the case can look like {o:realpayment}. But a copy can send the right amount from a thread that it has got into, so these do not settle which of the two this is.' },
+            note: 'True, and it is why the case can look like {o:realpayment}. But a copy can send the right amount from a thread that it has gotten into, so these do not settle which of the two this is.' },
           { id: 'b', text: 'It tells her to pay into an account that is not the one she has paid into every month, and it arrived by message.' },
           { id: 'c', text: 'No deadline is given.',
             note: 'True, and a real request gives you time. But a copy that wants to look routine does the same, so it does not settle it.' }
@@ -30,7 +30,7 @@ FC.cards('scams', 'u4', [
         answer: 'b' },
       reason: [
         'For {o:realpayment} you must be able to point to this: {needs:realpayment}. The details are the part of that which the email does not satisfy: they are new, and they came in a message. Everything else about the case would fit a real request, and that is exactly why the copy works.',
-        'It is the question from Tessa’s two invoices. {test:invoicefraud~realpayment} Here the account has changed, so the answer is {a:M2.newdetails}. Whether the change is real is not something that the email can tell her. She finds that out by ringing the supplier on a number from the contract.'
+        'It is the question from Tessa’s two invoices. {test:invoicefraud~realpayment} Here the account has changed, so the answer is {a:M2.newdetails}. Whether the change is real is not something that the email can tell her. She finds that out by calling the supplier at a number from the contract.'
       ]
     },
     impression: {
@@ -51,12 +51,12 @@ FC.cards('scams', 'u4', [
       { step: 'M1',
         reason: 'The deposit is part of a booking that she made herself: {cue:M1}. That is a deal that she is in, so the answer is {a:M1.deal}.' },
       { step: 'M2',
-        reason: 'She has checked what she can without anyone’s help. The deposit is to go to the account named on her booking confirmation, which she already had, and the figures are the ones on the website that she found herself: {cue:M2}. The email also invites her to ring the owner. Nobody hurries her and nobody asks her to keep it quiet. So the answer is {a:M2.agreed}.' }
+        reason: 'She has checked what she can without anyone’s help. The deposit is to go to the account named on her booking confirmation, which she already had, and the figures are the ones on the website that she found herself: {cue:M2}. The email also invites her to call the owner. Nobody hurries her and nobody asks her to keep it quiet. So the answer is {a:M2.agreed}.' }
     ],
     hold: {
-      neighbour: 'invoicefraud',
+      neighbor: 'invoicefraud',
       prompt: { kind: 'reason',
-        lead: 'The email gives bank details to pay into, and bank details in an email are what the first whole case turned on.',
+        lead: 'The email gives bank account details to pay into, and bank account details in an email are what the first whole case turned on.',
         choices: [
           { id: 'a', text: 'It asks her to pay money into a bank account.',
             note: 'True, and it is why the case can look like {o:invoicefraud}. But a real request and a copy both ask for money to go into an account, so this does not separate them.' },
@@ -73,7 +73,7 @@ FC.cards('scams', 'u4', [
     impression: {
       resembles: 'm-real-rent',
       text: [
-        'Now take a second look: does this case look like one you know? It should bring back Hana’s rent reminder: a payment that is due, an account that she was given at the start, and a number to ring.',
+        'Now take a second look: does this case look like one you know? It should bring back Hana’s rent reminder: a payment that is due, an account that she was given at the start, and a number to call.',
         'Here the questions and the likeness agree, so the answer stands. Notice that the likeness points to the real thing as readily as to a copy. That is the reason the questions come first.'
       ]
     } },
@@ -91,7 +91,7 @@ FC.cards('scams', 'u4', [
         reason: 'This is the question that matters. The buyer has paid twice the price and asks her to send the extra to someone else’s account: {cue:M2}. That is the answer {a:M2.sendback}. The text also says today, by transfer, and do not tell your bank. Those words are a hurry, a payment that cannot be undone, and a secret, which is what the answer {a:M2.rush} sounds like. When a request shows both, the answer is the more specific one, and the more specific one is the payment to send back.' }
     ],
     hold: {
-      neighbour: 'fakeofficial',
+      neighbor: 'fakeofficial',
       prompt: { kind: 'reason',
         lead: 'The text is hurried and secret and about a payment that cannot be undone, which is how the tax caller sounded.',
         choices: [
@@ -111,7 +111,7 @@ FC.cards('scams', 'u4', [
       resembles: 'm-over-bike', first: 'm-off-tax',
       text: [
         'Now the second look: does this case look like one you know? A buyer who hurries you, tells you to keep a payment from your bank and wants a transfer today may bring back the tax caller first, and that case was {o:fakeofficial}. So here the likeness and the questions seem to disagree.',
-        'When that happens, go back to the questions and find the words in the case that answer them. They are {cue:M2}. The tax caller has nothing like them: there was no deal and no payment from the other side. The bike with a typing slip does: someone had paid twice the price, and asked for the difference to be sent on. So the case this one really looks like is Rafa’s bike, and the answer stands.'
+        'When that happens, go back to the questions and find the words in the case that answer them. They are {cue:M2}. The tax caller has nothing like them: there was no deal and no payment from the other side. The bike with a typo does: someone had paid twice the price, and asked for the difference to be sent on. So the case this one really looks like is Rafa’s bike, and the answer stands.'
       ]
     } },
 
@@ -136,13 +136,13 @@ FC.cards('scams', 'u4', [
       'Pick one of the nine and name an occasion of your own: something you received, something someone said to you, or something that you almost did. The lines under each name are there to jog your memory.'
     ],
     prompts: [
-      { outcome: 'romance', occasion: 'A friendly message from someone you have only met online, in which money, a favour or a problem of theirs came up.' },
+      { outcome: 'romance', occasion: 'A friendly message from someone you have only met online, in which money, a favor or a problem of theirs came up.' },
       { outcome: 'pigbutcher', occasion: 'A message from someone you do not know, or only know online, about investing, trading or crypto.' },
       { outcome: 'advancefee', occasion: 'An email, text or letter that said you had won, inherited or been approved for something, and then asked you to pay.' },
       { outcome: 'recovery', occasion: 'An offer to get back money that you, or someone you know, had lost.' },
-      { outcome: 'invoicefraud', occasion: 'An email about a bill that you pay, in which new bank details were mentioned.' },
-      { outcome: 'fakeofficial', occasion: 'A call or a message from a tax office, a bank or an official that was hurried or threatening.' },
-      { outcome: 'fakelink', occasion: 'A text about a parcel, a toll, a fine or a subscription that asked you to pay a small charge on a link.' },
+      { outcome: 'invoicefraud', occasion: 'An email about a bill that you pay, in which new bank account details were mentioned.' },
+      { outcome: 'fakeofficial', occasion: 'A call or a message from the IRS, a bank or an official that was hurried or threatening.' },
+      { outcome: 'fakelink', occasion: 'A text about a package, a toll, a fine or a subscription that asked you to pay a small charge on a link.' },
       { outcome: 'overpayment', occasion: 'A buyer who paid you more than the price, or who asked you to send some of your money on to someone else.' },
       { outcome: 'realpayment', occasion: 'The last request for money that you paid without worry, and what made it ordinary: a bill, rent, a booking.' }
     ],
@@ -159,13 +159,13 @@ FC.cards('scams', 'u4', [
       { cue: 'someone I know only online asks me for money, or to put money into a site or an app',
         then: 'not send anything that day, ask for a live video call, and tell a friend or relative who knows me in person' },
       { cue: 'a message says that money is waiting for me, or that my lost money can be recovered, and asks me to pay a fee first',
-        then: 'not pay, and contact the organisation myself, on a number or in an app that I already had' },
-      { cue: 'a message tells me that someone’s bank details have changed',
-        then: 'ring them on a number that I already had before I pay anything, and not use any number in the message' },
+        then: 'not pay, and contact the organization myself, at a number or in an app that I already had' },
+      { cue: 'a message tells me that someone’s bank account details have changed',
+        then: 'call them at a number that I already had before I pay anything, and not use any number in the message' },
       { cue: 'a text asks me to pay a small charge on a link',
         then: 'not tap it, and open the company’s own app, or type in its address, to see whether the charge is there' },
       { cue: 'someone who says that they are an official, or from my bank, tells me to pay at once and tell no one',
-        then: 'hang up, and ring them on the number on my card, my bill or my letter' },
+        then: 'hang up, and call them at the number on my card, my bill or my letter' },
       { cue: 'a buyer pays me more than the price and asks me to send some of it on',
         then: 'send nothing, and ask them to have their own bank reverse it' },
       { cue: 'a request for money that I agreed to, from someone I already deal with, to details that I was given at the start',

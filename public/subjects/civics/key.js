@@ -303,7 +303,7 @@ FC.key('civics', {
         why: 'A state or local rule is judged by what else covers its matter. A federal law meant to be the only rule wins; a federal minimum leaves room; a right the Constitution protects forbids the rule whoever made it; and where none of these reaches the matter, the state, or the city or county it handed power to, decides.',
         options: [
           { id: 'nothing', n: 'Neither: no federal law and no right covers it',
-            when: 'the matter is one the Constitution leaves to the states (licences, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects',
+            when: 'the matter is one the Constitution leaves to the states (licenses, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects',
             keeps: ['police', 'localgov'] },
           { id: 'onlyrule', n: 'A federal law that is meant to be the only rule',
             when: 'a federal law covers the same matter, on a subject the Constitution gives Congress, and either it says no state may set its own rule, or the state or local rule makes it impossible to obey both',

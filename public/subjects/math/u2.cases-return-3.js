@@ -61,7 +61,7 @@ FC.cases('math', 'u2', [
     topic: 'eggs in boxes',
     kind: 'problem',
     outcome: 'modrem',
-    text: 'A farm shop packs 100 eggs into boxes of 12. How many eggs are left over once every box is full?',
+    text: 'A farm stand packs 100 eggs into boxes of 12. How many eggs are left over once every box is full?',
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: {
       M1: ['How many eggs are left over once every box is full?'],
@@ -147,9 +147,9 @@ FC.cases('math', 'u2', [
     topic: 'a string of lights',
     kind: 'problem',
     outcome: 'modrem',
-    text: 'A string of lights repeats green, gold, red, blue and white, again and again. What colour is the 47th light?',
+    text: 'A string of lights repeats green, gold, red, blue and white, again and again. What color is the 47th light?',
     route: { M1: ['whole'], W1: ['cycle'] },
-    cues: { M1: ['What colour is the 47th light?'], W1: ['What colour is the 47th light?'] },
+    cues: { M1: ['What color is the 47th light?'], W1: ['What color is the 47th light?'] },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'

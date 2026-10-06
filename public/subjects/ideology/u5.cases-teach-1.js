@@ -16,8 +16,8 @@ FC.cases('ideology', 'u5', [
             R1: ['The council has its proper jobs: the police who keep the peace, the courts that settle disputes and the fire service that answers a call',
                  'Protect our rights, and then leave us alone'] } },
 
-  { id: 'i5-clib-again', use: 'teach', tier: 'clean', setting: 'work', topic: 'hiring a helper without leave from an official', name: 'The removals-firm letter',
-    text: "From a letter to a newspaper by Anwen Rhys, who runs a small removals firm: 'Nobody should need leave from an official to hire a helper, to set a price or to keep what they earn. Each of us is free to work, to bargain and to trade. The government should run the courts and the police, make sure that contracts are kept, and otherwise stay out of it.'",
+  { id: 'i5-clib-again', use: 'teach', tier: 'clean', setting: 'work', topic: 'hiring a helper without leave from an official', name: 'The moving-firm letter',
+    text: "From a letter to a newspaper by Anwen Rhys, who runs a small moving firm: 'Nobody should need leave from an official to hire a helper, to set a price or to keep what they earn. Each of us is free to work, to bargain and to trade. The government should run the courts and the police, make sure that contracts are kept, and otherwise stay out of it.'",
     outcome: 'clib', route: { D1: ['rights'], R1: ['leave'] },
     cues: { D1: 'Each of us is free to work, to bargain and to trade',
             R1: 'The government should run the courts and the police, make sure that contracts are kept, and otherwise stay out of it' },
@@ -49,7 +49,7 @@ FC.cases('ideology', 'u5', [
                  'We ask the government to give everyone a fair start: a school in every district, health care for anyone who is ill, help for anyone who loses work, and fair rules for the businesses that sell to us'] } },
 
   { id: 'i5-modlib-again', use: 'teach', tier: 'clean', setting: 'health', topic: 'a clinic a bus ride away', name: 'The clinic-opening speech',
-    text: "From a speech at the opening of a new clinic in Greywater: 'Everyone has the right to say what they think and to choose their own life. A right is worth more when it comes with a fair start. The government should give everyone a clinic a bus ride away, a place at a good school, and help to find another job when the mill shuts. And everyone should pay for it, in proportion to what they earn.'",
+    text: "From a speech at the opening of a new clinic in Graywater: 'Everyone has the right to say what they think and to choose their own life. A right is worth more when it comes with a fair start. The government should give everyone a clinic a bus ride away, a place at a good school, and help to find another job when the mill shuts. And everyone should pay for it, in proportion to what they earn.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Everyone has the right to say what they think and to choose their own life',
             R1: 'The government should give everyone a clinic a bus ride away, a place at a good school, and help to find another job when the mill shuts' },
@@ -61,7 +61,7 @@ FC.cases('ideology', 'u5', [
     ] },
 
   { id: 'i5-modlib-check', use: 'check', tier: 'clean', setting: 'housing', topic: 'homes anyone can afford to rent',
-    text: "Councillor Ines Varga told a public meeting: 'Each of us is free to rent from whom we choose, and the government must protect that. But freedom to rent means little to someone with no home to rent. We ask the government to build homes that anyone can afford and to pay the rent of anyone between jobs, so that everyone starts from somewhere, and we will all pay for it together.'",
+    text: "Council Member Ines Varga told a public meeting: 'Each of us is free to rent from whom we choose, and the government must protect that. But freedom to rent means little to someone with no home to rent. We ask the government to build homes that anyone can afford and to pay the rent of anyone between jobs, so that everyone starts from somewhere, and we will all pay for it together.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Each of us is free to rent from whom we choose',
             R1: 'We ask the government to build homes that anyone can afford and to pay the rent of anyone between jobs' },

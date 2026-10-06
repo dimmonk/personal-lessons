@@ -11,7 +11,7 @@
 
 FC.unit('math', 'u3', {
   kind: 'P',
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Three',
@@ -88,7 +88,8 @@ FC.unit('math', 'u3', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the missing-number branch of Basic Math, replacing the old Unit Three (first half) and its drill. Four kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two exceptions (an electricity bill that looks like a rate and is a formula, a break-even profit that looks like a formula and is a squared missing number); the drill has a last-step stage, a whole-problem stage and a route stage. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [
@@ -101,7 +102,7 @@ FC.unit('math', 'u3', {
         why: 'The break-even profit shows a formula and a result, and its missing number is multiplied by itself. It is taught as an exception card.' },
       { step: 'A1', was: 'the rate answer’s `when`', now: 'says the rate is for each thing, not for each hour, month or year',
         why: 'Restates the gate’s tie-break where the question is taught.' },
-      { outcome: 'prop', was: 'every old name was a plain phrase with the technical name in brackets', now: 'Rearranging a formula (kept), Proportion, Simultaneous equations, Quadratic equation', why: 'K4, V1: one name for one thing, the real-life word where people meet it.' },
+      { outcome: 'prop', was: 'every old name was a plain phrase with the technical name in parentheses', now: 'Rearranging a formula (kept), Proportion, Simultaneous equations, Quadratic equation', why: 'K4, V1: one name for one thing, the real-life word where people meet it.' },
       { was: 'no term declared; "squared" and the raised 2 used untaught', now: 'term squared, taught in this unit', why: 'K6: one term card, with a case first, before the first card that leans on it.' }
     ],
     wrongIdeas: [],

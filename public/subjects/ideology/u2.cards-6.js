@@ -41,7 +41,7 @@ FC.cards('ideology', 'u2', [
     ],
     not: 'Workers owning a business is not enough. If the text says nothing about competing, or says the businesses should be run together with no government, the answer is different. What you point to is the two things together: each business owned by its workers, and the businesses competing for customers and able to fail.',
     wild: ['"Own your workplace, and win your customers."', '"A firm owned by its staff, with a market, not a boss with a market."', '"Workers’ firms, free prices, and no rescue for a firm that fails."'],
-    self: 'In your own life it is the worker-owned shop or co-operative that sells to the public and has to make its sales, and the argument over whether a firm owned by its staff can survive against one owned by shareholders.',
+    self: 'In your own life it is the worker-owned shop or cooperative that sells to the public and has to make its sales, and the argument over whether a firm owned by its staff can survive against one owned by shareholders.',
     ask: '"Does the text give each business to the people who work in it, and keep the businesses competing and able to fail?" If it gives them to the workers and says nothing about competing, look again at the other answers.' },
 
   { id: 'check-mktsoc', kind: 'check', after: 'mktsoc',

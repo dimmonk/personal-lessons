@@ -14,7 +14,7 @@ FC.cards('psychology', 'u2', [
     ],
     explain: [
       'Set this beside the cases you have met. Ben had every reason to protect his view: it was his idea, and he had pushed for it. Greg, in the same position, asked who did the counting. Ben read the count and accepted what it showed.',
-      'Here the reasoning runs in the direction it is meant to. The figures were bad news for Ben, and they got the same test good news would have got. His view went where they pointed. Nothing is being protected.',
+      'Here the reasoning runs in the direction it is meant to. The figures were bad news for Ben, and they got the same test good news would have gotten. His view went where they pointed. Nothing is being protected.',
       'In Ben’s case the facts pointed away from his view, so it changed. That is the easiest form to see. But the name is not for the change. It is for the fair test, and a fair test can also leave a view where it was.'
     ],
     feature: { step: 'R1', option: 'follows' },
@@ -36,7 +36,7 @@ FC.cards('psychology', 'u2', [
       'The person can say what settled it, and it is something that can be checked: figures, a result, an event. "I just see it differently now" is not that.',
       'When the view changes, it often costs them something: a public position, pride, money already spent. That cost is a good sign that the facts are doing the work.',
       'When the view stays, the person can usually say what would have changed it. Pat could: "If it had come out the other way, I’d have switched."',
-      'Facts the person does not like get the same test that facts they like would have got. Sometimes that means checking them carefully. Checking is fine. A harder test for one side is not.',
+      'Facts the person does not like get the same test that facts they like would have gotten. Sometimes that means checking them carefully. Checking is fine. A harder test for one side is not.',
       'It can end on the answer the person was hoping for. What separates it from {o:motivated} is the order: the search came first, and it could have come out the other way.',
       'It also covers choices about things already spent. A person who asks what the next step would cost and what it would bring, and goes by the answer, is reasoning fairly whether they stop or carry on.'
     ],
@@ -46,7 +46,7 @@ FC.cards('psychology', 'u2', [
     ],
     wild: ['"I was wrong about that."', '"The numbers changed my mind."', '"I checked, and it holds up."', '"Show me, and I’ll change it."', '"I didn’t want this to be true, and it is."'],
     self: 'In your own life, think of the last time you said "I was wrong" and meant it, and of what it was that changed your mind. Then think of a view you have kept, and ask what would change it.',
-    ask: '"What fact settled this, and did it get the same test it would have got if it had pointed the other way?" When the answer is yes, there is nothing to correct, and treating it as a fault would be a mistake of its own.' },
+    ask: '"What fact settled this, and did it get the same test it would have gotten if it had pointed the other way?" When the answer is yes, there is nothing to correct, and treating it as a fault would be a mistake of its own.' },
 
   { id: 'check-fair', kind: 'check', after: 'fair',
     case: 'novel',
@@ -92,9 +92,9 @@ FC.cards('psychology', 'u2', [
     link: 'Since the fish-stock sauce you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.',
     decides: 'So two people can reach the same conclusion on the same matter and get different names. For one of them the answer is {a:R1.fixed}; for the other it is {a:R1.follows}. Nothing about the topic, the person or the conclusion tells them apart. Only what the reasoning did tells them apart.',
     how: [
-      'Find the sentence in which the person gives their reason, or the sentence that shows what they did with the evidence. Then ask which of the five answers describes that sentence. You should be able to put your finger on the words: the reason given afterwards, what is already spent, the question put to one side only, the answer chosen before the search, or the same test for both sides.',
+      'Find the sentence in which the person gives their reason, or the sentence that shows what they did with the evidence. Then ask which of the five answers describes that sentence. You should be able to put your finger on the words: the reason given afterward, what is already spent, the question put to one side only, the answer chosen before the search, or the same test for both sides.',
       'A quick first step is to see what the reasoning is about. If the person is explaining something they did or spent, the answer is usually one of the first two, or the last. If they are dealing with evidence about what is true or which to choose, it is usually the third, the fourth, or the last. This narrows the choice. It does not make it: the words in the case do.',
-      'Evidence can be in a case without the person’s reasoning ever touching it. In the renovation, the builder’s figures are evidence, and Dan does not question them, test them or answer them. His reason is the £40,000. A case like that is not about how evidence was tested. Go by the reason the person actually gives.'
+      'Evidence can be in a case without the person’s reasoning ever touching it. In the renovation, the builder’s figures are evidence, and Dan does not question them, test them or answer them. His reason is the $40,000. A case like that is not about how evidence was tested. Go by the reason the person actually gives.'
     ],
     whenBoth: 'Sometimes two answers both seem to fit. Each pair below has been set side by side earlier in this unit, and each has one question that separates it.' },
 

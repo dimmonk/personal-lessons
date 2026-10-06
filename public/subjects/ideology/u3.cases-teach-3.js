@@ -64,8 +64,8 @@ FC.cases('ideology', 'u3', [
             N2: 'The old parties are dissolved, and the papers that spoke for them are shut' } },
 
   /* ---------- An exception: what every dictatorship does ---------- */
-  { id: 'n-x-methods', use: 'teach', tier: 'misleading', setting: 'town', topic: 'a decree of the Grey Council', name: 'The decree of the Grey Council',
-    text: "From a decree of the Grey Council of Merrow: 'All parties but the Council's are banned. Newspapers will print only what the Council's office approves. The Council keeps a list of those who speak against it, and its officers will call on them at night. The people of the old Merrow blood are higher than the settlers and will rule them. No settler may hold office.'",
+  { id: 'n-x-methods', use: 'teach', tier: 'misleading', setting: 'town', topic: 'a decree of the Gray Council', name: 'The decree of the Gray Council',
+    text: "From a decree of the Gray Council of Merrow: 'All parties but the Council's are banned. Newspapers will print only what the Council's office approves. The Council keeps a list of those who speak against it, and its officers will call on them at night. The people of the old Merrow blood are higher than the settlers and will rule them. No settler may hold office.'",
     outcome: 'nazi', route: { D1: ['nation'], N1: ['blood'], N2: ['aside'] },
     cues: { D1: 'The people of the old Merrow blood are higher than the settlers and will rule them',
             N1: 'The people of the old Merrow blood are higher than the settlers and will rule them',

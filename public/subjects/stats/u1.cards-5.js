@@ -18,7 +18,7 @@ FC.cards('stats', 'u1', [
     ],
     explain: [
       'This answer needs no new idea. It is what you reach when the other four have each been put to the claim and none has found anything. The claim says how many adults in the county smoke, so go through its parts in the order.',
-      'The first part is who or what is in the figure. The office took a list of every phone number in the county and drew 1,100 of them by lottery, so nobody was favoured in being picked. It then tried each number up to six times and reached 1,000. Few were missed, and the ones missed were not missed for a reason that has anything to do with smoking. That is a fair picture of the adults of the county, and there are enough people that one or two more or fewer would not move the figure.',
+      'The first part is who or what is in the figure. The office took a list of every phone number in the county and drew 1,100 of them by lottery, so nobody was favored in being picked. It then tried each number up to six times and reached 1,000. Few were missed, and the ones missed were not missed for a reason that has anything to do with smoking. That is a fair picture of the adults of the county, and there are enough people that one or two more or fewer would not move the figure.',
       'The second part is what the figure counts: whether a person says they smoke, asked in the same way of everyone. It did not change partway through, and nobody was paid or judged on the answer. The third part is what the figure is set beside: nothing, because the claim does not compare. And the fourth part is what the claim says caused what: nothing, because it does not say why.',
       'No part goes wrong, so the answer is that nothing does. That does not mean the figure is exactly right, or that the claim could never turn out to be wrong. It means that, as far as the case shows, the claim holds up for what it says, and that it goes no further. It says how many adults smoke. It says nothing about change or cause.'
     ],
@@ -34,7 +34,7 @@ FC.cards('stats', 'u1', [
     instruction: 'Find what the two cases share. Ignore the story (a health survey, parcels). Look at one thing only: for each part of the claim, is there anything in the case that could make it go wrong?',
     prompt: { kind: 'phrase', answer: 'Both depots serve similar mixes of homes and offices, and both log every parcel the same way.' },
     shared: [
-      'In both cases the question is put to the parts in order, and it finds nothing. In the survey, nobody was favoured in who was asked, and almost everyone asked answered. In the depots, both are counted the same way and serve the same kind of customers, so the two figures can be set side by side.',
+      'In both cases the question is put to the parts in order, and it finds nothing. In the survey, nobody was favored in who was asked, and almost everyone asked answered. In the depots, both are counted the same way and serve the same kind of customers, so the two figures can be set side by side.',
       'The two claims are different sizes. The survey gives a figure about one group. The depot claim says which of two things is bigger, a difference between two groups. Each says only what its figures can carry, and neither says why.',
       'The two stories share nothing else, so this is not about health or about parcels. It holds wherever the question has been put to every part of a claim, in order, and each part has held up. That is what {a:S1.holds} names.'
     ] },

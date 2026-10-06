@@ -9,7 +9,7 @@ FC.cards('scams', 'u5', [
     h: 'The question about what they want to know',
     link: 'You have seen two questions at the foot of the cards for the new names. This card takes the one you met last, {q:F1}, and puts it in one place with both its answers. It also says why it is asked.',
     decides: [
-      'It also separates the real request from the chat. Take {o:realdetails} and {o:friendlychat}. The receptionist at the Marlow Surgery asks Reg for his date of birth and his address, because that is what setting up a record needs. A stranger asks Sam what he does for work and whether he lives alone, because that is what getting to know him needs, and nothing Sam began needs it. Both ask you about yourself. What they want to know about is not the same thing, and the question is about that.'
+      'It also separates the real request from the chat. Take {o:realdetails} and {o:friendlychat}. The receptionist at the Marlow Family Clinic asks Reg for his date of birth and his address, because that is what setting up a record needs. A stranger asks Sam what he does for work and whether he lives alone, because that is what getting to know him needs, and nothing Sam began needs it. Both ask you about yourself. What they want to know about is not the same thing, and the question is about that.'
     ],
     how: [
       'Read what you are asked about, and find the words that show it. Is it a document, a photo of one, an ID, tax or card number, your date of birth or your address? That is {a:F1.identify}. Is it the sort of thing a friend asks, such as what you do for a living, who you live with, what you earn or what you plan to do, asked by someone you know only through messages, who reached you out of nowhere, with nothing like a paper or a number asked for yet? That is {a:F1.life}.',
@@ -31,8 +31,8 @@ FC.cards('scams', 'u5', [
       'It is the same question, in the same words, that is asked of a sign-in page: {q:A2}. There it separates {plain:realsignin} from the scams that copy it. Here it separates a real request for facts from its copies.'
     ],
     how: [
-      'Ask two things, in this order. First: did I begin this? You began it if you rang the number on your card or your bill, typed an address in yourself, opened an app you had installed, applied or ordered or booked, or walked into their office. You did not begin it if a call, a text, an email, a pop-up or a stranger reached you first. A number, a link or an app that came with a message is never one you already had, even if you are the one who dials it or taps it.',
-      'Second, even if I began it: does what they ask for match what I came to do? Put the list next to the job. A new account needs proof of who you are. A question about a bill needs a date of birth. An offer of work needs your right to work. A room held until a viewing needs a name and a way to reach you. If the list goes further than the job, the answer is no.',
+      'Ask two things, in this order. First: did I begin this? You began it if you called the number on your card or your bill, typed an address in yourself, opened an app you had installed, applied or ordered or booked, or walked into their office. You did not begin it if a call, a text, an email, a pop-up or a stranger reached you first. A number, a link or an app that came with a message is never one you already had, even if you are the one who dials it or taps it.',
+      'Second, even if I began it: does what they ask for match what I came to do? Put the list next to the job. A new account needs proof of who you are. A question about a bill needs a date of birth. An offer of work needs proof that you may work. A room held until a showing needs a name and a way to reach you. If the list goes further than the job, the answer is no.',
       'Both can be answered at the moment you are asked, from the request itself, before you give anything. Two things cannot be answered at that moment: whether the other side is honest, and what they will do with the facts. Only {t:check} settles the first, and the second may show only weeks later.'
     ],
     whenBoth: 'Two things can seem to point opposite ways. You may have begun it, and it may still ask for far more than the job needs: the answer is no, because the question has two halves and both must be met. Or it may have reached you, and sound exactly right, like the call that used Gabriela’s name: the answer is no too. This question is answered by what you can see in the request, and not by how it sounds.' },
@@ -52,16 +52,16 @@ FC.cards('scams', 'u5', [
       { step: 'F1',
         reason: 'What does the receptionist want to know about Ruth? A date of birth and the first line of an address: {cue:F1}. Those are facts that identify her. She is not asked about her work, her family or her plans, so the answer is {a:F1.identify}.' },
       { step: 'F2',
-        reason: 'Did Ruth begin this, and does it fit? She rang the number on her own appointment letter, which is a way she already had, and the facts are only to find her record: {cue:F2}. Both halves are met, so the answer is {a:F2.fits}.' }
+        reason: 'Did Ruth begin this, and does it fit? She called the number on her own appointment letter, which is a way she already had, and the facts are only to find her record: {cue:F2}. Both halves are met, so the answer is {a:F2.fits}.' }
     ],
     hold: {
-      neighbour: 'identitytheft',
+      neighbor: 'identitytheft',
       prompt: { kind: 'reason',
         lead: 'The receptionist asks for a date of birth and an address, which are facts that identify Ruth, so the case can look like a request for facts that someone could use to take her place.',
         choices: [
           { id: 'a', text: 'The receptionist asks for her date of birth and the first line of her address.',
             note: 'True, and it is why the case can look like {o:identitytheft}. But the same facts are asked for in both names, so they cannot settle which of the two this is.' },
-          { id: 'b', text: 'Ruth rang the number on her own appointment letter, and the receptionist asks only for what is needed to find her record.' },
+          { id: 'b', text: 'Ruth called the number on her own appointment letter, and the receptionist asks only for what is needed to find her record.' },
           { id: 'c', text: 'The clinic is called Alder Hearing, and its name is on her letter.',
             note: 'True, but a name on a letter can be copied. It does not show who began the call.' }
         ],
@@ -92,7 +92,7 @@ FC.cards('scams', 'u5', [
         reason: 'Did Pip begin it? No: {cue:F2}. A message from someone he does not know reached him first. The answer is {a:F2.notfit}.' }
     ],
     hold: {
-      neighbour: 'realdetails',
+      neighbor: 'realdetails',
       prompt: { kind: 'reason',
         lead: 'The messages are polite and each question is small, like a receptionist’s, so the case can look like a small, real request for facts.',
         choices: [

@@ -35,7 +35,7 @@ FC.cards('scams', 'u3', [
       'She types them into the same app that she opened.'
     ],
     explain: [
-      'What you are shown is a sign-in that the person started. Marta wanted something, so she opened an app that was already on her phone, was asked to show that it was her, and did. Nothing in it is strange and nothing in it is hidden. If she had not signed in, she could not have got what she came for.',
+      'What you are shown is a sign-in that the person started. Marta wanted something, so she opened an app that was already on her phone, was asked to show that it was her, and did. Nothing in it is strange and nothing in it is hidden. If she had not signed in, she could not have gotten what she came for.',
       'Two things make it what it is, and both are things Marta did, not things she was shown. The first is that she started it: nothing was sent to her and nothing led her there. She used {t:already}, an app that was on her phone before anything arrived. The second is that the app asks only what a sign-in needs, an email address and a password, and nothing beyond that.',
       'Notice what is not on that list. How the page looks is not on it, and neither is whose name or logo is at the top. A copy of a sign-in page can look exactly the same, and so can a copy of a code or of a {t:permission} with an Allow button. The one thing a copy cannot have is that you started it.',
       'It is a kind of its own because anyone who treats every request to sign in as suspect either stops using the safe ones or stops paying attention to any of them. The real one has a name so that "nothing is wrong here" can be said as exactly as "this is a copy". It comes in the same three forms as the scams: a password typed into a site or an app you opened, a {t:code} you asked for and typed into the same site, and an Allow, on a {t:permission}, for an app you went looking for.'
@@ -49,9 +49,9 @@ FC.cards('scams', 'u3', [
     link: 'Marta\'s sign-in gave you what to point to, from one case: {needs:realsignin}. Here is a second case with a different story. This time what is typed is not a password.',
     first: 'ac-energy', second: 'ac-checkout', step: 'A2',
     instruction: 'Find what the two cases share. Ignore the story (an energy bill, a pair of boots) and ignore what is typed. Look at one thing only: which words show how the person came to the page?',
-    prompt: { kind: 'phrase', answer: "He goes to the shop's website by typing its address, fills his basket and pays by card" },
+    prompt: { kind: 'phrase', answer: "He goes to the store's website by typing its address, fills his basket and pays by card" },
     shared: [
-      'Marta typed a password into an app. Imran typed a code into a payment page. What is typed is different, and the shop even sent him a message, a text with a code in it. None of that makes it a copy, because in both cases the person started it: Marta opened an app she already had, and Imran typed the shop\'s address himself.',
+      'Marta typed a password into an app. Imran typed a code into a payment page. What is typed is different, and the store even sent him a message, a text with a code in it. None of that makes it a copy, because in both cases the person started it: Marta opened an app she already had, and Imran typed the store\'s address himself.',
       'The code that arrived on Imran\'s phone came because of what he did. A message that answers something you did is different from a message that arrives first. The question that separates them is {q:A2}, and in both cases the answer is {a:A2.fits}. That is what {o:realsignin} names.'
     ] },
 

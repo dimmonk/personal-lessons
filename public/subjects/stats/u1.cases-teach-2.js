@@ -34,7 +34,7 @@ FC.cases('stats', 'u1', [
 
   /* ---------- What the claim says caused what ---------- */
   { id: 'gate-music', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a music class and math scores', name: 'The music class',
-    text: "At Kent High School, the 120 pupils who take the music class average 71 on the math exam. The 380 who do not take it average 62. The principal says: 'Music lessons raise math scores.' The class costs $30 a term, and nearly all of the music pupils' families also pay for extra math coaching.",
+    text: "At Kent High School, the 120 students who take the music class average 71 on the math exam. The 380 who do not take it average 62. The principal says: 'Music lessons raise math scores.' The class costs $30 a term, and nearly all of the music students' families also pay for extra math coaching.",
     route: { S1: ['cause'] },
     cues: { S1: 'Music lessons raise math scores' } },
 
@@ -63,18 +63,18 @@ FC.cases('stats', 'u1', [
     cues: { S1: 'began to record a theft only if the owner brings the receipt for the bike to the station' } },
 
   { id: 'gate-thefts-percent', use: 'teach', tier: 'clean', setting: 'community', topic: 'bike thefts down by a percentage',
-    text: "The council of the town of Brandon says: 'Bike thefts are down 37% this year.' It does not say how many bikes were stolen in either year. The police have recorded every theft the same way in both years.",
+    text: "The town council of Brandon says: 'Bike thefts are down 37% this year.' It does not say how many bikes were stolen in either year. The police have recorded every theft the same way in both years.",
     route: { S1: ['compare'] },
     cues: { S1: 'Bike thefts are down 37% this year' } },
 
   /* ---------- The look-alike pair: same mentoring program, a percentage or a cause ---------- */
   { id: 'gate-mentor-percent', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a mentoring program and a percentage',
-    text: "A leaflet for the Bridge mentoring program says: 'Pupils in the program are 50% more likely to graduate.' It does not say how many pupils graduate with the program or without it.",
+    text: "A leaflet for the Bridge mentoring program says: 'Students in the program are 50% more likely to graduate.' It does not say how many students graduate with the program or without it.",
     route: { S1: ['compare'] },
-    cues: { S1: 'Pupils in the program are 50% more likely to graduate' } },
+    cues: { S1: 'Students in the program are 50% more likely to graduate' } },
 
   { id: 'gate-mentor-groups', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a mentoring program and who joined',
-    text: "The Bridge mentoring program reports that 90 of the 100 pupils who joined it graduated, and 60 of the 100 who did not join graduated. The leaflet says: 'Mentoring makes the difference.' Pupils joined by asking to, and the pupils who ask are mostly the ones already doing well.",
+    text: "The Bridge mentoring program reports that 90 of the 100 students who joined it graduated, and 60 of the 100 who did not join graduated. The leaflet says: 'Mentoring makes the difference.' Students joined by asking to, and the students who ask are mostly the ones already doing well.",
     route: { S1: ['cause'] },
     cues: { S1: 'Mentoring makes the difference' } },
 

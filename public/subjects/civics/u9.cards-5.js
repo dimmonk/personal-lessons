@@ -85,7 +85,7 @@ FC.cards('civics', 'u9', [
     link: 'The war ended, and the country had to settle what freedom meant. This group is the three amendments that answered that, in order.',
     case: 'c9-porch',
     plain: [
-      'Each neighbour on the porch is talking about a different amendment, and the three are steps in a row: freed, citizens, vote.',
+      'Each neighbor on the porch is talking about a different amendment, and the three are steps in a row: freed, citizens, vote.',
       'The years from 1865 to 1877, when the country tried to rebuild and to settle what freedom meant, are called Reconstruction. Three amendments were added in them. The Thirteenth, in 1865, abolished slavery. The Fourteenth, in 1868, made everyone born here a citizen, and promised due process and equal protection. The Fifteenth, in 1870, said that the vote could not be denied because of race.',
       'Due process means that the government must follow fair steps before it punishes you or takes something from you. Equal protection means that the law protects people equally.',
       'The Fourteenth is the one that matters most for the cases in this course. It put rights above every state. That is why a court can stop a state or a city from acting against a right, which is the name {o:protected}. Its first part is also where birthright citizenship comes from. Since 1868, everyone born here has been a citizen under the Constitution.',

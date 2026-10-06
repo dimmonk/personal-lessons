@@ -52,12 +52,12 @@ FC.cases('math', 'u2', [
     ] },
 
   { id: 'wd-cleaners', use: 'check', tier: 'clean', setting: 'work', topic: 'two cleaning jobs', outcome: 'lcm',
-    text: 'One cleaner empties the bins every 6 days and another cleans the windows every 15 days. Both jobs were done today. After how many days will both next be done on the same day?',
+    text: 'One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days. Both jobs were done today. After how many days will both next be done on the same day?',
     route: { M1: ['whole'], W1: ['together'] },
-    cues: { M1: ['empties the bins every 6 days and another cleans the windows every 15 days', 'both next be done on the same day'],
-            W1: ['empties the bins every 6 days and another cleans the windows every 15 days', 'both next be done on the same day'] },
+    cues: { M1: ['empties the trash cans every 6 days and another cleans the windows every 15 days', 'both next be done on the same day'],
+            W1: ['empties the trash cans every 6 days and another cleans the windows every 15 days', 'both next be done on the same day'] },
     segments: [
-      { text: 'One cleaner empties the bins every 6 days and another cleans the windows every 15 days.', note: 'That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.' },
+      { text: 'One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days.', note: 'That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.' },
       { text: 'Both jobs were done today.', note: 'That says where the count starts. It does not say what has to be found.' },
       { text: 'After how many days will both next be done on the same day?' }
     ],

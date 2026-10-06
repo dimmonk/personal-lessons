@@ -28,11 +28,11 @@ FC.cards('scams', 'u3', [
   { id: 'again-phishing', kind: 'again', outcome: 'phishing',
     link: 'Sunita\'s email gave you what to point to for {o:phishing}, from one case: {needs:phishing}. Here is a second case with a different story. This time it is a work email, and the name at the top is the employer\'s.',
     first: 'ac-locked', second: 'ac-payslip', step: 'A1',
-    instruction: 'Find what the two cases share. Ignore the story (a streaming service, a payslip) and ignore whose name is at the top. Look at one thing only: which words ask the person to type a password?',
+    instruction: 'Find what the two cases share. Ignore the story (a streaming service, a pay stub) and ignore whose name is at the top. Look at one thing only: which words ask the person to type a password?',
     prompt: { kind: 'phrase', answer: 'Sign in with your work email and password to view it' },
     shared: [
-      'Both emails ask for a password, to be typed into a page that is reached through a link in an email that came to the person. In the first the reason is a locked account and in the second a payslip, but the reason is only the bait.',
-      'The second password is a work password, which can open the company\'s mail and files as well as the payslip, and the scammer can use it to write to Paul\'s colleagues as Paul. A work password is worth more than a streaming one, and the request looks just the same.',
+      'Both emails ask for a password, to be typed into a page that is reached through a link in an email that came to the person. In the first the reason is a locked account and in the second a pay stub, but the reason is only the bait.',
+      'The second password is a work password, which can open the company\'s mail and files as well as the pay stub, and the scammer can use it to write to Paul\'s colleagues as Paul. A work password is worth more than a streaming one, and the request looks just the same.',
       'What you are asked to type is picked out by {q:A1}, and in both cases the answer is {a:A1.password}. Together with the fact that the email came to them, that is what {o:phishing} names.'
     ] },
 
@@ -49,8 +49,8 @@ FC.cards('scams', 'u3', [
       'A page that asks for a password is not by itself {o:phishing}. If you started the sign-in yourself, it is {o:realsignin}. And a message that tells you your account has a problem, and asks you for nothing, is only news.',
       'It is also not {o:phishing} when the message is real and you did ask for it. The test is the same each time: did it come to you, or did you go to it?'
     ],
-    wild: ['"Your account has been locked. Sign in to unlock it."', '"Unusual sign-in detected. Confirm that it is you."', '"Your mailbox is almost full. Sign in to upgrade."', '"Your payslip is ready. Sign in to view it."', '"You are owed a refund. Sign in to claim it."'],
-    self: 'You are most likely to meet it in your email and your texts, and at work: a message that looks like a payslip, a shared file or a notice from the IT team. Anyone who has ever had trouble signing in is already half ready to believe it.',
+    wild: ['"Your account has been locked. Sign in to unlock it."', '"Unusual sign-in detected. Confirm that it is you."', '"Your mailbox is almost full. Sign in to upgrade."', '"Your pay stub is ready. Sign in to view it."', '"You are owed a refund. Sign in to claim it."'],
+    self: 'You are most likely to meet it in your email and your texts, and at work: a message that looks like a pay stub, a shared file or a notice from the IT team. Anyone who has ever had trouble signing in is already half ready to believe it.',
     ask: '"Did I ask for this, and how did I get to the page?" If a message brought me there, it is not a page I can trust, whatever it looks like.',
     act: [
       'At the moment, do four things in this order. First, do not tap the link or the button again, and do not type anything into the page. Second, close it. Third, open the app yourself, or type the company\'s address yourself, and look there for the same problem: a real problem will be there too, and if there is nothing there, nothing is lost. If you want to be sure, use {t:check}.',
@@ -80,9 +80,9 @@ FC.cards('scams', 'u3', [
     link: 'Case B of the last card had a link in a message, and so have the scams so far. This case has a link in an email too, and a page that asks for a password. Here is one that is real.',
     case: 'ac-reset',
     setup: 'There is an email with a link in this case, and a page that wants a password, and that is what {o:phishing} usually looks like. Yet this case is {o:realsignin}.',
-    prompt: { kind: 'phrase', answer: "On the shop's own website, which he opened himself, he taps 'Forgot password'" },
+    prompt: { kind: 'phrase', answer: "On the store's own website, which he opened himself, he taps 'Forgot password'" },
     because: [
-      'Ask what led to the email. Kofi did: a minute earlier, on the shop\'s own website, he tapped "Forgot password". The email is the shop\'s answer to that. If he had not asked, the same email would be a copy, because nothing would explain why it arrived.',
+      'Ask what led to the email. Kofi did: a minute earlier, on the store\'s own website, he tapped "Forgot password". The email is the store\'s answer to that. If he had not asked, the same email would be a copy, because nothing would explain why it arrived.',
       'This is why a link in a message cannot be what you look at. The question is whether the message answers something you did. A link that arrives after you asked for it is real, and a link that arrives on its own is not.'
     ],
     take: 'One thing decides this: whether you started it. A link in a message is not an answer to the question either way. If you are ever unsure whether you started something, treat it as not started, and begin again from your own app.' },

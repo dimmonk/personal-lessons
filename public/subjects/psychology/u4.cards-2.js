@@ -8,13 +8,13 @@ FC.cards('psychology', 'u4', [
     link: 'Everything so far has been about ways of being that keep costing something. Most of the people you will ever describe are not like that, and there is a name for them. It is easy to forget, so it is taught as carefully as the others.',
     case: 'pa-rosa', mark: 'P1',
     strip: [
-      'There are years and more than one place: thirty years of the bakery, and before that a school team, a trade union and a church rota.',
+      'There are years and more than one place: thirty years of the bakery, and before that a school team, a trade union and a church guild.',
       'The same way of being runs through all of it: Rosa is the loudest and surest person in every room.',
-      'It is a strong way of being, and her family teases her about it. She does not turn scornful when someone else is thanked: she organises the party.',
+      'It is a strong way of being, and her family teases her about it. She does not turn scornful when someone else is thanked: she organizes the party.',
       'It does not keep costing. Her staff have stayed an average of fifteen years, and she has the same three friends she made at school.'
     ],
     explain: [
-      'Rosa is bossy and loud, and has been since she was a girl. If you listened only to how she acts, you might think of {o:narcgrand}: she tells everyone what to do. But look at what the case shows beside that. She laughs at her own mistakes, and when her sister’s husband won an award she organised the party. And nothing is being lost: her staff stay, and so do her friends.',
+      'Rosa is bossy and loud, and has been since she was a girl. If you listened only to how she acts, you might think of {o:narcgrand}: she tells everyone what to do. But look at what the case shows beside that. She laughs at her own mistakes, and when her sister’s husband won an award she organized the party. And nothing is being lost: her staff stay, and so do her friends.',
       'Everyone has a way of being: shy, loud, dramatic, blunt, touchy, easy-going. Most of these are ordinary. They do not stop being ordinary because they are strong. A way of being becomes something else, and something much rarer, when it keeps costing: when year after year, in place after place, someone loses a job, a friendship or their trust, and it is still going on.',
       'So for an ordinary way of being, you point to the same long view as for the other names (years, more than one place, more than one relationship), and then to the opposite of a cost: no repeated damage. This does not mean that the person never has a bad day, or never upsets anyone. It means that what they are like is not something that keeps leaving damage behind it.',
       'This is the answer you will need most often. For a very large share of the people anyone describes, it is the right one.'
@@ -26,9 +26,9 @@ FC.cards('psychology', 'u4', [
     link: 'Rosa gave you what to point to: {needs:ordpersonality}. Here is a person as unlike her as you could find.',
     first: 'pa-rosa', second: 'pa-imran', step: 'P1',
     instruction: 'The marked words in the first case are two different things: the way of being, and what it has not cost. Find the words in this case that match the second one: what the way of being has cost. Ignore how loud or how quiet each person is.',
-    prompt: { kind: 'phrase', answer: 'He has kept the same job for eleven years, his three closest friends are the three he made at university, and his daughters say he is the one they ring when they need to talk' },
+    prompt: { kind: 'phrase', answer: 'He has kept the same job for eleven years, his three closest friends are the three he made in college, and his daughters say he is the one they call when they need to talk' },
     shared: [
-      'Rosa is loud and Imran is shy, so what the two share is not the way of being. Each has kept the same way for years and in more than one place, and in each case what you are shown is people staying: staff of fifteen years, friends from school, daughters who ring.',
+      'Rosa is loud and Imran is shy, so what the two share is not the way of being. Each has kept the same way for years and in more than one place, and in each case what you are shown is people staying: staff of fifteen years, friends from school, daughters who call.',
       'So this name is not about being shy, or loud, or any one thing. It holds wherever a person has one way of being, for years and in many places, and it does not keep costing anyone. That is what {o:ordpersonality} names.'
     ] },
 
@@ -37,7 +37,7 @@ FC.cards('psychology', 'u4', [
     typical: [
       'It covers a very wide range. Loud and shy, dramatic and blunt, easy-going and touchy are all here. The person can be hard to live with and still be here.',
       'The way of being is steady across years and places: the same person at school, at work and at home.',
-      'What is missing is the repeated cost. People stay. Jobs last. Friendships last for decades. When the person upsets someone, it can often be put right: they laugh, apologise, change what they did.',
+      'What is missing is the repeated cost. People stay. Jobs last. Friendships last for decades. When the person upsets someone, it can often be put right: they laugh, apologize, change what they did.',
       'A bad week, or one big falling-out, is part of life and does not turn it into something else.',
       'It is not a lesser answer. For most of the people a case describes, it is the right one.'
     ],
@@ -57,7 +57,7 @@ FC.cards('psychology', 'u4', [
     prompt: { kind: 'which', option: 'P1.above', answer: 'pa-paolo' },
     difference: [
       'In Case A Paolo runs the young cook down: "a pretty face with a borrowed recipe". He stops giving her shifts. The best cooks leave within a year, and his daughters stopped bringing friends years ago. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still ring him. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
+      'In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still call him. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
       'The boast is the same in both. What differs is what comes with it. A boast, and even a loud, bossy way of being, is not enough for {o:narcgrand}. What makes it that name is the scorn when another person is praised, and a cost that keeps coming back.'
     ] },
 

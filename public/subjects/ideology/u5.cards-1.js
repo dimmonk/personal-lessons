@@ -9,7 +9,7 @@ FC.cards('ideology', 'u5', [
 
   { id: 'orient', kind: 'orient',
     h: 'Everyone is owed something. What should be done about it?',
-    canDo: 'After this unit you can read a short text that puts first what every person is owed, such as a petition, a speech, a leaflet or a letter, and say which of three things it wants done for people. You will be able to point to the words that tell you, and to say why it is not one of the other two. The text can be about a street permit, a clinic, a school test, a housing list or a border post.',
+    canDo: 'After this unit you can read a short text that puts first what every person is owed, such as a petition, a speech, a leaflet or a letter, and say which of three things it wants done for people. You will be able to point to the words that tell you, and to say why it is not one of the other two. The text can be about a street permit, a clinic, a school test, a housing waitlist or a border post.',
     everyday: [
       'You have probably heard all three of these in one week. One person says, "Just protect people’s rights and leave them alone." Another says, "Rights are no use to a child with no school, so the government should pay for one." A third says, "The rules are the same for everyone, and that is exactly the problem." Each of them can say, with perfect honesty, that every person has rights and should be treated fairly. They are not disagreeing about that. They are disagreeing about what to do.',
       'The first question has already sorted a text like this: it puts first what every person is owed. This unit teaches the question that comes after it, and it has one question and three answers. Each answer leads to one name. The three names are not insults and not compliments. They are descriptions of what a text asks for, and a text can ask for one of them whether or not you agree.',
@@ -43,7 +43,7 @@ FC.cards('ideology', 'u5', [
   { id: 'again-clib', kind: 'again', outcome: 'clib',
     link: 'The street-music petition gave you what to point to from one case: {needs:clib}. Here is a second case with a different story. This time nobody is singing: it is about a small firm and the people it hires.',
     first: 'i5-clib-meet', second: 'i5-clib-again', step: 'R1',
-    instruction: 'Find what the two cases share. Ignore the story (a street, a removals firm). Look at one thing only: which words say what the text wants the government to do?',
+    instruction: 'Find what the two cases share. Ignore the story (a street, a moving firm). Look at one thing only: which words say what the text wants the government to do?',
     prompt: { kind: 'phrase', answer: 'The government should run the courts and the police, make sure that contracts are kept, and otherwise stay out of it' },
     shared: [
       'Both texts name what each person is free to do (to play and sell on a street, to work, bargain and trade), and then turn to the government. Each gives the government a short list of jobs: the police, the courts and the fire service in the first; the courts, the police and keeping contracts in the second. And each ends by asking it to step back: "leave us alone" in one, "otherwise stay out of it" in the other.',
@@ -54,7 +54,7 @@ FC.cards('ideology', 'u5', [
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.',
     body: [
-      'Every text in this unit has two layers. The top layer is the story: what the text is about. A street, a school, a clinic, a border post, a housing list. The layer underneath is what the text wants done for people.',
+      'Every text in this unit has two layers. The top layer is the story: what the text is about. A street, a school, a clinic, a border post, a housing waitlist. The layer underneath is what the text wants done for people.',
       'The three names belong to the layer underneath. The same story can carry any of them. Two texts can both be about a clinic, and one asks the government to stay out of it while the other asks it to pay. A text that mentions schools is not, for that reason, asking the government to provide them.',
       'From here on, the texts change their stories on purpose. Sometimes two texts will share a story and differ only underneath. When that happens, the shared story is there to show you that it tells you nothing.'
     ],
@@ -65,7 +65,7 @@ FC.cards('ideology', 'u5', [
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:clib} in real life, where nobody marks the words for you.',
     typical: [
       'It speaks of freedom and rights in the same breath: to speak, to believe, to own, to trade, to make a contract.',
-      'It lists the government’s jobs, and the list is short: courts, police, defence, keeping contracts. Sometimes the list is left out, and the text only says that the government should leave people alone.',
+      'It lists the government’s jobs, and the list is short: courts, police, defense, keeping contracts. Sometimes the list is left out, and the text only says that the government should leave people alone.',
       'It is usually wary of what a government hands out. Where another text sees a service to be given, this one tends to see a bill that someone must pay, or a permit that would have to be refused.',
       'Its demands are usually "stop" or "keep out" ("stop licensing", "leave us alone"), and not "build" or "provide".',
       'It may be sympathetic to people who have less, and say so. What marks the name is what it asks the government to do about it: leave people free, not give.'
@@ -74,7 +74,7 @@ FC.cards('ideology', 'u5', [
       'A mention of low taxes does not make a text {o:clib}. Texts of very different kinds want low taxes, and some of them put old ways first, which are read differently here. A small government is not the same as no government: the text keeps the jobs it names. And a text that asks the government to protect rights and also to provide a school or a doctor is not this name, however firmly it speaks of freedom.'
     ],
     wild: ['"It’s a free country."', '"Mind your own business."', '"Let people live their own lives."', '"Keep the government out of it."', '"I don’t need a permit to do what I already have the right to do."'],
-    self: 'In your own life it is the voice that says a rule has gone too far: the form you had to fill in to do something ordinary, the licence for a stall, the fee for the right to work.',
+    self: 'In your own life it is the voice that says a rule has gone too far: the form you had to fill in to do something ordinary, the license for a stall, the fee for the right to work.',
     ask: '"What does this text say the government should do, and what does it say the government should leave alone?" If the answer is protect and leave, you have this name.' },
 
   { id: 'check-clib', kind: 'check', after: 'clib',
@@ -89,7 +89,7 @@ FC.cards('ideology', 'u5', [
     verdict: 'This is wrong.',
     right: [
       'A small government is a government that keeps to a short list of jobs. The musicians in the first case ask for the police, the courts and the fire service, and want them done well. A text that wanted no government would not ask for any of them.',
-      'The difference is in the words of the text. Look for the jobs it names. If it names courts, police, defence or keeping contracts, it wants a government with those jobs, and the answer to its question is {a:R1.leave}. If it names no jobs and says that people should run things together without a government, that is a different answer to a different question, and this unit does not ask it.',
+      'The difference is in the words of the text. Look for the jobs it names. If it names courts, police, defense or keeping contracts, it wants a government with those jobs, and the answer to its question is {a:R1.leave}. If it names no jobs and says that people should run things together without a government, that is a different answer to a different question, and this unit does not ask it.',
       'So before you say "no government", point to the words that say so. "Leave us alone" is not those words: it is said about everything beyond the jobs the text names.'
     ],
     testedBy: ['i5-claim-small'] }

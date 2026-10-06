@@ -65,8 +65,8 @@ FC.cards('stats', 'u1', [
     instruction: 'Both cases are about the same school and the same rise in reading scores. Compare one thing: is the trouble in who is in the figure, or in what the figure counts?',
     prompt: { kind: 'which', option: 'S1.measure', answer: 'gate-reading-easier' },
     difference: [
-      'In Case A the test is the same, but this year’s figure comes from 11 pupils who volunteered to stay after class, out of 340. Pupils who volunteer for an extra test are not a fair picture of the school, and last year’s figure was for everyone. The trouble is who is in the figure. The answer is {a:S1.counted}.',
-      'In Case B every pupil took the test in both years, so nobody is missing. What changed is the test: this year’s is shorter, with easier passages. Scores can rise from 61 to 70 with every pupil reading exactly as well as before. The trouble is what the figure counts. The answer is {a:S1.measure}.',
+      'In Case A the test is the same, but this year’s figure comes from 11 students who volunteered to stay after class, out of 340. Students who volunteer for an extra test are not a fair picture of the school, and last year’s figure was for everyone. The trouble is who is in the figure. The answer is {a:S1.counted}.',
+      'In Case B every student took the test in both years, so nobody is missing. What changed is the test: this year’s is shorter, with easier passages. Scores can rise from 61 to 70 with every student reading exactly as well as before. The trouble is what the figure counts. The answer is {a:S1.measure}.',
       'The school, the claim and the numbers are the same in both. You cannot tell these two apart from the figure. You can only tell them apart by asking where the trouble sits: in who is in the figure, or in what it counts.'
     ] }
 ]);

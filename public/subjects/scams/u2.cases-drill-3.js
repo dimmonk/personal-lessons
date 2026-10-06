@@ -7,18 +7,18 @@
 FC.cases('scams', 'u2', [
 
   { id: 'dv-claim-demo', use: 'claim',
-    context: 'A woman’s laptop will not connect. She types her broadband company’s name into a search page and rings the first number, which has “Ad” beside it. The man who answers asks her to let him see her laptop, and she does.',
-    text: '"I found the number myself, with a search. Nobody rang me and nobody sent me anything, so it was my own call, and it was safe."',
+    context: 'A woman’s laptop will not connect. She types her broadband company’s name into a search page and calls the first number, which has “Ad” beside it. The man who answers asks her to let him see her laptop, and she does.',
+    text: '"I found the number myself, with a search. Nobody called me and nobody sent me anything, so it was my own call, and it was safe."',
     ask: { type: 'option', step: 'I1', answer: 'support' },
     fault: 'The claim treats a number she found in a search as one that was hers. She chose the words to search for, but the number at the top of the page was bought by someone, and a number that came from a search was not hers before she searched. It also hides the real point: a person offered to fix a problem with her laptop, and asked to see it.',
-    corrected: 'I searched, and the number I rang was a paid result, so it was not {t:already}. Someone then offered to fix a problem with my laptop and asked to see it. That is {a:I1.support}. I should have put the phone down and phoned the number on my bill, which is {t:check}.' },
+    corrected: 'I searched, and the number I called was a paid result, so it was not {t:already}. Someone then offered to fix a problem with my laptop and asked to see it. That is {a:I1.support}. I should have put the phone down and called the number on my bill, which is {t:check}.' },
 
   { id: 'dv-claim-wontclose', use: 'claim',
-    context: 'A page fills a man’s laptop with a loud alarm and a number to ring. It will not close when he presses the X. He rings the number.',
-    text: '"The warning would not go away however many times I pressed the X, so it had to be coming from my own computer. That is why I rang the number."',
+    context: 'A page fills a man’s laptop with a loud alarm and a number to call. It will not close when he presses the X. He calls the number.',
+    text: '"The warning would not go away however many times I pressed the X, so it had to be coming from my own computer. That is why I called the number."',
     ask: { type: 'option', step: 'I1', answer: 'support' },
-    fault: 'The claim treats a warning that will not close as proof that it comes from the computer. A web page can fill the window, play a sound and ignore the X, because it was built to, and it knows nothing about the computer it is shown on. What it asked is also the point: it gave him a number to ring so that someone would fix the device.',
-    corrected: 'The warning would not close, and that tells me nothing. What it did was give me a number to ring so that someone would fix my device, and that is {a:I1.support}. I can say so before I ring. To get rid of the page I close the browser through the computer’s own menu, and if I want to be sure I use {t:check}.' },
+    fault: 'The claim treats a warning that will not close as proof that it comes from the computer. A web page can fill the window, play a sound and ignore the X, because it was built to, and it knows nothing about the computer it is shown on. What it asked is also the point: it gave him a number to call so that someone would fix the device.',
+    corrected: 'The warning would not close, and that tells me nothing. What it did was give me a number to call so that someone would fix my device, and that is {a:I1.support}. I can say so before I call. To get rid of the page I close the browser through the computer’s own menu, and if I want to be sure I use {t:check}.' },
 
   { id: 'dv-claim-box', use: 'claim',
     context: 'A woman receives an email from an address she does not know, with an installer attached and a reason to run it. When she runs it, her computer shows the usual box that asks whether to allow changes.',
@@ -35,7 +35,7 @@ FC.cases('scams', 'u2', [
     corrected: 'The update was in the app store on my phone, which I already had, and nobody had contacted me about it. That is {a:I1.own}, and there was nothing to stop. Not every request to install is a scam. What I look at is how it came to me.' },
 
   { id: 'dv-claim-refund', use: 'claim',
-    context: 'A caller says that a man’s bank owes him £120 after a mistake, and asks him to press Share in the meeting app so that she can put it right. He presses Share. His banking page then shows £1,200 more than he had.',
+    context: 'A caller says that a man’s bank owes him $120 after a mistake, and asks him to press Share in the meeting app so that she can put it right. He presses Share. His banking page then shows $1,200 more than he had.',
     text: '"My banking page showed the money, so it was a real refund, and the extra must have been a real mistake. I sent the difference back."',
     ask: { type: 'option', step: 'I1', answer: 'refund' },
     fault: 'The claim trusts a balance that appeared on a device that someone else was watching and controlling. While she was sharing it, the page could show any number. The money he sent back was his own. And the answer that mattered was clear before any of this: a caller said that he was owed a refund, and asked to see his device.',

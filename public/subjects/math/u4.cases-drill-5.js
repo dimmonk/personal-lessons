@@ -74,7 +74,7 @@ FC.cases('math', 'u4', [
     topic: 'recycling collected',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A town’s recycling centre collects 6,000 kg this month, and it collects 400 kg more every month. How many kg will it collect in a month, 10 months from now?',
+    text: 'A town’s recycling center collects 6,000 kg this month, and it collects 400 kg more every month. How many kg will it collect in a month, 10 months from now?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
       M1: ['it collects 400 kg more every month'],
@@ -125,7 +125,7 @@ FC.cases('math', 'u4', [
     topic: 'a rare coin',
     kind: 'problem',
     outcome: 'expg',
-    text: 'A rare coin is worth €500, and its value rises by 10% every year. What will it be worth after 4 years?',
+    text: 'A rare coin is worth $500, and its value rises by 10% every year. What will it be worth after 4 years?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     cues: {
       M1: ['its value rises by 10% every year'],
@@ -148,25 +148,25 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Multiply the start by it once for each time the amount changes',
-        working: 'Year 1: €500 × 1.1 = €550; Year 2: €550 × 1.1 = €605; Year 3: €605 × 1.1 = €665.50; Year 4: €665.50 × 1.1 = €732.05'
+        working: 'Year 1: $500 × 1.1 = $550; Year 2: $550 × 1.1 = $605; Year 3: $605 × 1.1 = $665.50; Year 4: $665.50 × 1.1 = $732.05'
       },
       {
         does: 'Round at the end, and say what it shows',
-        working: '€732.05 needs no rounding, so the answer after 4 years is €732.05'
+        working: '$732.05 needs no rounding, so the answer after 4 years is $732.05'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€732.05' },
+        { id: 'r', text: '$732.05' },
         {
           id: 's1',
-          text: '€700.00',
+          text: '$700.00',
           slip: 'you add the first rise again each time, so every rise is the same size instead of growing.'
         },
         {
           id: 's2',
-          text: '€665.50',
+          text: '$665.50',
           slip: 'you multiply one time too few, once for every time but the last.'
         }
       ]

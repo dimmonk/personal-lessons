@@ -12,9 +12,9 @@ FC.cases('math', 'u2', [
     topic: 'a tiled border',
     kind: 'problem',
     outcome: 'modrem',
-    text: 'A border repeats white, blue, blue and green tiles in that order, again and again. What colour is the 83rd tile?',
+    text: 'A border repeats white, blue, blue and green tiles in that order, again and again. What color is the 83rd tile?',
     route: { M1: ['whole'], W1: ['cycle'] },
-    cues: { M1: ['What colour is the 83rd tile?'], W1: ['What colour is the 83rd tile?'] },
+    cues: { M1: ['What color is the 83rd tile?'], W1: ['What color is the 83rd tile?'] },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'

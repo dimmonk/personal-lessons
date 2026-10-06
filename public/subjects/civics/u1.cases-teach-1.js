@@ -6,7 +6,7 @@
 // cues.D1 is the exact phrase in the text that decides the first question (or a list of phrases); the app marks it,
 // always in the same style. segments are the tappable pieces for "tap the words" prompts; note is shown if that
 // piece is tapped in error. reason.D1 is the reason for this case's answer. not names the nearest wrong family
-// (a ledger neighbour) and says why it fails for this case.
+// (a ledger neighbor) and says why it fails for this case.
 // All people, places and bills are invented. The first question has no tie-break (the key gives a case one last decision),
 // so no case here carries `also`.
 
@@ -55,13 +55,13 @@ FC.cases('civics', 'u1', [
     cues: { D1: 'they each told their story to a judge, and the judge decided that the landlord must pay' } },
 
   { id: 'c-fence', use: 'teach', tier: 'clean', setting: 'community', topic: 'a fence on the boundary', name: 'The boundary fence',
-    text: "Mr Idowu says his fence is on his own land. His neighbour says it is two feet over the boundary. They could not agree, so on Monday the neighbour asked a judge to settle it.",
+    text: "Mr. Idowu says his fence is on his own land. His neighbor says it is two feet over the boundary. They could not agree, so on Monday the neighbor asked a judge to settle it.",
     route: { D1: ['courts'] },
-    cues: { D1: 'on Monday the neighbour asked a judge to settle it' },
+    cues: { D1: 'on Monday the neighbor asked a judge to settle it' },
     segments: [
-      { text: 'Mr Idowu says his fence is on his own land', note: 'That is one side of the quarrel. It does not tell you who will decide it.' },
-      { text: 'His neighbour says it is two feet over the boundary', note: 'That is the other side of the quarrel. It does not tell you who will decide it.' },
-      { text: 'on Monday the neighbour asked a judge to settle it' }
+      { text: 'Mr. Idowu says his fence is on his own land', note: 'That is one side of the quarrel. It does not tell you who will decide it.' },
+      { text: 'His neighbor says it is two feet over the boundary', note: 'That is the other side of the quarrel. It does not tell you who will decide it.' },
+      { text: 'on Monday the neighbor asked a judge to settle it' }
     ] },
 
   /* ---------- A state, city or county government ---------- */
@@ -70,7 +70,7 @@ FC.cases('civics', 'u1', [
     route: { D1: ['states'] },
     cues: { D1: 'the city council of Marlow voted to ban cars from the square on Saturdays' } },
 
-  { id: 'c-licence', use: 'teach', tier: 'clean', setting: 'travel', topic: 'practice hours before a driving test', name: 'The practice hours',
+  { id: 'c-license', use: 'teach', tier: 'clean', setting: 'travel', topic: 'practice hours before a driving test', name: 'The practice hours',
     text: "In the state of Dunmore, many young drivers fail their first driving test. On Wednesday the Dunmore state legislature voted that every learner must log fifty hours of practice before taking it. Driving instructors welcomed the change.",
     route: { D1: ['states'] },
     cues: { D1: 'the Dunmore state legislature voted that every learner must log fifty hours of practice before taking it' },

@@ -64,7 +64,7 @@ FC.cases('math', 'u4', [
     topic: 'a loan with nothing repaid',
     kind: 'problem',
     outcome: 'expg',
-    text: 'A borrower owes €2,000, and nothing is repaid, so the debt grows by 5% every year. What will the debt be after 3 years?',
+    text: 'A borrower owes $2,000, and nothing is repaid, so the debt grows by 5% every year. What will the debt be after 3 years?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     cues: {
       M1: ['the debt grows by 5% every year'],
@@ -87,25 +87,25 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Multiply the start by it once for each time the amount changes',
-        working: 'Year 1: €2,000 × 1.05 = €2,100; Year 2: €2,100 × 1.05 = €2,205; Year 3: €2,205 × 1.05 = €2,315.25'
+        working: 'Year 1: $2,000 × 1.05 = $2,100; Year 2: $2,100 × 1.05 = $2,205; Year 3: $2,205 × 1.05 = $2,315.25'
       },
       {
         does: 'Round at the end, and say what it shows',
-        working: '€2,315.25 needs no rounding, so the answer after 3 years is €2,315.25'
+        working: '$2,315.25 needs no rounding, so the answer after 3 years is $2,315.25'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€2,315.25' },
+        { id: 'r', text: '$2,315.25' },
         {
           id: 's1',
-          text: '€2,300.00',
+          text: '$2,300.00',
           slip: 'you add the first rise again each time, so every rise is the same size instead of growing.'
         },
         {
           id: 's2',
-          text: '€2,205.00',
+          text: '$2,205.00',
           slip: 'you multiply one time too few, once for every time but the last.'
         }
       ]
@@ -121,11 +121,11 @@ FC.cases('math', 'u4', [
     topic: 'a friend’s shop sales',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A friend says his shop’s sales are growing exponentially. They were €12,000 in January, and they have gone up by €3,000 every month since. What will the sales be after 6 more months?',
+    text: 'A friend says his shop’s sales are growing exponentially. They were $12,000 in January, and they have gone up by $3,000 every month since. What will the sales be after 6 more months?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
-      M1: ['they have gone up by €3,000 every month since'],
-      G1: ['they have gone up by €3,000 every month since'],
+      M1: ['they have gone up by $3,000 every month since'],
+      G1: ['they have gone up by $3,000 every month since'],
       G2: ['What will the sales be after 6 more months?']
     },
     reason: {
@@ -141,23 +141,23 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find where it starts and how much it changes each time',
-        working: 'Start: €12,000. Each month it goes up by €3,000'
+        working: 'Start: $12,000. Each month it goes up by $3,000'
       },
-      { does: 'Find how much it changes in all', working: '€3,000 × 6 months = €18,000' },
-      { does: 'Add that to the start', working: '€12,000 + €18,000 = €30,000' }
+      { does: 'Find how much it changes in all', working: '$3,000 × 6 months = $18,000' },
+      { does: 'Add that to the start', working: '$12,000 + $18,000 = $30,000' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€30,000' },
+        { id: 'r', text: '$30,000' },
         {
           id: 's1',
-          text: '€15,000',
+          text: '$15,000',
           slip: 'you change the amount only once, instead of once for each month.'
         },
         {
           id: 's2',
-          text: '€90,000',
+          text: '$90,000',
           slip: 'you add the change to the start first and then multiply by the number of months, so the start is counted again every month.'
         }
       ]
@@ -173,11 +173,11 @@ FC.cases('math', 'u4', [
     topic: 'rent rising year after year',
     kind: 'problem',
     outcome: 'expg',
-    text: 'A landlord raises a flat’s rent by 10% every year, three years in a row. It was €800 a month before the first rise. What will it be after the third rise?',
+    text: 'A landlord raises an apartment’s rent by 10% every year, three years in a row. It was $800 a month before the first rise. What will it be after the third rise?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     cues: {
-      M1: ['raises a flat’s rent by 10% every year, three years in a row'],
-      G1: ['raises a flat’s rent by 10% every year, three years in a row'],
+      M1: ['raises an apartment’s rent by 10% every year, three years in a row'],
+      G1: ['raises an apartment’s rent by 10% every year, three years in a row'],
       G2: ['What will it be after the third rise?']
     },
     reason: {
@@ -189,7 +189,7 @@ FC.cases('math', 'u4', [
       outcome: 'lin',
       why: 'The change is a share of what the amount has reached, so it is not the same size each time. {o:lin} would be the name if the same number were added each time.'
     },
-    wouldChange: 'If the rent went up by €80 every year, it would be {o:lin}.',
+    wouldChange: 'If the rent went up by $80 every year, it would be {o:lin}.',
     steps: [
       {
         does: 'Turn the change into the number the amount is multiplied by each time',
@@ -197,25 +197,25 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Multiply the start by it once for each time the amount changes',
-        working: 'Year 1: €800 × 1.1 = €880; Year 2: €880 × 1.1 = €968; Year 3: €968 × 1.1 = €1,064.80'
+        working: 'Year 1: $800 × 1.1 = $880; Year 2: $880 × 1.1 = $968; Year 3: $968 × 1.1 = $1,064.80'
       },
       {
         does: 'Round at the end, and say what it shows',
-        working: '€1,064.80 needs no rounding, so the answer after 3 years is €1,064.80'
+        working: '$1,064.80 needs no rounding, so the answer after 3 years is $1,064.80'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€1,064.80' },
+        { id: 'r', text: '$1,064.80' },
         {
           id: 's1',
-          text: '€1,040.00',
-          slip: 'you add the three rises, 10% + 10% + 10% = 30%, and take 30% of the €800, instead of multiplying by 1.1 three times.'
+          text: '$1,040.00',
+          slip: 'you add the three rises, 10% + 10% + 10% = 30%, and take 30% of the $800, instead of multiplying by 1.1 three times.'
         },
         {
           id: 's2',
-          text: '€968.00',
+          text: '$968.00',
           slip: 'you multiply one time too few, once for every rise but the last.'
         }
       ]
@@ -231,12 +231,12 @@ FC.cases('math', 'u4', [
     topic: 'a friend’s doubling claim',
     kind: 'problem',
     outcome: 'logsolve',
-    text: 'A friend says that money earning 10% a year doubles in 10 years. Dana leaves €2,000 in an account that pays 10% a year, with all the interest left in. After how many years will she have €4,000?',
+    text: 'A friend says that money earning 10% a year doubles in 10 years. Dana leaves $2,000 in an account that pays 10% a year, with all the interest left in. After how many years will she have $4,000?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['howlong'] },
     cues: {
       M1: ['an account that pays 10% a year, with all the interest left in'],
       G1: ['an account that pays 10% a year, with all the interest left in'],
-      G2: ['After how many years will she have €4,000?']
+      G2: ['After how many years will she have $4,000?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -247,7 +247,7 @@ FC.cases('math', 'u4', [
       outcome: 'lin',
       why: 'The amount is multiplied each time, and the problem gives a target and asks how long. {o:lin} would be the name if the same number were added each time.'
     },
-    wouldChange: 'If the account added €200 every year, it would be {o:lin}, and €4,000 would be reached in 10 years.',
+    wouldChange: 'If the account added $200 every year, it would be {o:lin}, and $4,000 would be reached in 10 years.',
     steps: [
       {
         does: 'Turn the change into the number the amount is multiplied by each time',
@@ -255,7 +255,7 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Divide the target by the start, to see how many times the start it must become',
-        working: '€4,000 ÷ €2,000 = 2'
+        working: '$4,000 ÷ $2,000 = 2'
       },
       {
         does: 'Divide the log of that by the log of the number from the first step',
@@ -263,7 +263,7 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Round, check against whole numbers of times, and say what it shows',
-        working: 'Starting from €2,000, 7 multiplications by 1.1 give about €3,897, still under the target; 8 multiplications give about €4,287, over it. So the target is reached during the 8th year. Rounded, the answer is about 7.3 years'
+        working: 'Starting from $2,000, 7 multiplications by 1.1 give about $3,897, still under the target; 8 multiplications give about $4,287, over it. So the target is reached during the 8th year. Rounded, the answer is about 7.3 years'
       }
     ],
     answer: {

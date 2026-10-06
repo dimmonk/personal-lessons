@@ -21,7 +21,7 @@ FC.cards('stats', 'u5', [
         ] }
     ],
     hold: {
-      neighbour: 'comp_ok',
+      neighbor: 'comp_ok',
       prompt: { kind: 'reason',
         lead: 'The ad sets the new account beside the old one, so it can look like a comparison that holds.',
         choices: [
@@ -63,7 +63,7 @@ FC.cards('stats', 'u5', [
         ] }
     ],
     hold: {
-      neighbour: 'relrisk',
+      neighbor: 'relrisk',
       prompt: { kind: 'reason',
         lead: 'The report says "20% lower", so the opening can look like a percentage given without the numbers.',
         choices: [

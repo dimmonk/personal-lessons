@@ -12,7 +12,7 @@
 
 FC.unit('civics', 'u2', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Two',
@@ -107,7 +107,8 @@ FC.unit('civics', 'u2', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, replacing old Unit Two (the founding documents) and its quick drill n2. A fact unit: twelve groups of facts under the idea each serves (the first plan and why it failed, the five dates, who wrote each document, which is law, what the Declaration says, what the first three articles built, what Article I lists for Congress, the Bill of Rights, six of its amendments, how the Constitution is changed, the Fourteenth Amendment, the amendments that ended slavery and widened the vote), fifty-three facts, eight look-alike pairs. Factual correction: the Bill of Rights is the first ten amendments and part of the Constitution; no row offers the two as rival answers (audit U2-2), and the old claims that the Declaration is law and that the Bill of Rights is a separate document are held as the right fact. Every fact comes from old Unit Two and the Fourteenth Amendment lines of old Unit One; nothing is added. The unit says plainly that it skips four of the first ten amendments, eleven of the seventeen later ones and the last four articles. Not yet deployed.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, replacing old Unit Two (the founding documents) and its quick drill n2. A fact unit: twelve groups of facts under the idea each serves (the first plan and why it failed, the five dates, who wrote each document, which is law, what the Declaration says, what the first three articles built, what Article I lists for Congress, the Bill of Rights, six of its amendments, how the Constitution is changed, the Fourteenth Amendment, the amendments that ended slavery and widened the vote), fifty-three facts, eight look-alike pairs. Factual correction: the Bill of Rights is the first ten amendments and part of the Constitution; no row offers the two as rival answers (audit U2-2), and the old claims that the Declaration is law and that the Bill of Rights is a separate document are held as the right fact. Every fact comes from old Unit Two and the Fourteenth Amendment lines of old Unit One; nothing is added. The unit says plainly that it skips four of the first ten amendments, eleven of the seventeen later ones and the last four articles. Not yet deployed.' },
+      { rev: 2, date: '2026-10-05', change: 'American English: US spelling.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // a fact unit has no refute card and no claim stage (A12); the old claims 5 and 13 are rows (docs/rebuild/civics-plan.md, gap 6)

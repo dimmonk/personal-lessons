@@ -19,7 +19,7 @@ FC.cards('psychology', 'u1', [
     explain: [
       'Set this case against the three kinds you have met. There is no reasoning to judge: Amira is not defending a view or explaining a choice. There are other people in the case, but nothing is said or done to any of them about them. Being short with whoever asks a question is not about the person who asked. And there are no years: the case begins on Monday.',
       'What is left is a person having a hard week, for a reason you can see. Her reaction fits what happened, and a reaction like this usually eases as the weeks go on. That is a fourth kind of thing, and it is a very ordinary one: most people have a hard week, a bad night or a short-tempered afternoon now and then.',
-      'The colleague’s word, "moody", shows what goes wrong when this kind is missed. "Moody" sounds like a description of Amira. It is really a description of five days. There is an answer for a case like this so that you have somewhere to put it that is not a judgement of the person.'
+      'The colleague’s word, "moody", shows what goes wrong when this kind is missed. "Moody" sounds like a description of Amira. It is really a description of five days. There is an answer for a case like this so that you have somewhere to put it that is not a judgment of the person.'
     ],
     feature: { step: 'D1', option: 'none' },
     name: [
@@ -76,7 +76,7 @@ FC.cards('psychology', 'u1', [
 
   /* ---------- The third look-alike pair ---------- */
   { id: 'look-pattern-none', kind: 'lookalike', ledger: 'pattern~none',
-    link: '{a:D1.none} and {a:D1.pattern} are opposites in one way: one is the smallest claim you can make about a person, and the other is the largest. They are still easy to mix up, because the behaviour in them can be exactly the same.',
+    link: '{a:D1.none} and {a:D1.pattern} are opposites in one way: one is the smallest claim you can make about a person, and the other is the largest. They are still easy to mix up, because the behavior in them can be exactly the same.',
     cases: ['g-retirement', 'g-thirty'],
     instruction: 'Both cases are about Desmond talking about his deals. Compare one thing: how much of his life does each case show?',
     prompt: { kind: 'which', option: 'D1.none', answer: 'g-retirement' },
@@ -90,7 +90,7 @@ FC.cards('psychology', 'u1', [
     h: 'One evening that sounds like a lifetime',
     link: 'The last card made the difference easy to see, because Case B said "thirty years" out loud. The mistake people really make is harder to catch: the case shows one evening, and it sounds like a lifetime.',
     case: 'g-dinner-party',
-    setup: 'There is a lot of the same behaviour here, three things all pointing one way, and a guest who says "always". A run of the same behaviour, and the word "always", are what {a:D1.pattern} usually sounds like. Yet the answer for this case is {a:D1.none}.',
+    setup: 'There is a lot of the same behavior here, three things all pointing one way, and a guest who says "always". A run of the same behavior, and the word "always", are what {a:D1.pattern} usually sounds like. Yet the answer for this case is {a:D1.none}.',
     prompt: { kind: 'phrase', answer: 'who had met her that evening' },
     because: [
       'Count what the case shows. One evening. One place. One table of guests. The three things Yasmin did feel like a lot to go on, but they are three samples of the same two hours. And "always" comes from someone who has known her for those same two hours, so it adds no years at all.',

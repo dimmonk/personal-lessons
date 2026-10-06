@@ -11,15 +11,15 @@ FC.cases('math', 'u3', [
     topic: 'vehicles on a ferry',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A ferry carried 24 vehicles, some cars at €18 each and some vans at €30 each, and took €540 in fares. How many cars and how many vans were there?',
+    text: 'A ferry carried 24 vehicles, some cars at $18 each and some vans at $30 each, and took $540 in fares. How many cars and how many vans were there?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'carried 24 vehicles, some cars at €18 each and some vans at €30 each',
-        'took €540 in fares',
+        'carried 24 vehicles, some cars at $18 each and some vans at $30 each',
+        'took $540 in fares',
         'How many cars and how many vans were there?'
       ],
-      A1: ['carried 24 vehicles, some cars at €18 each and some vans at €30 each', 'took €540 in fares']
+      A1: ['carried 24 vehicles, some cars at $18 each and some vans at $30 each', 'took $540 in fares']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -75,15 +75,15 @@ FC.cases('math', 'u3', [
     topic: 'jars of jam and honey',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A farm shop sold 16 jars, some of jam at €3 each and some of honey at €7 each, and took €84. How many jars of jam and how many of honey were sold?',
+    text: 'A farm stand sold 16 jars, some of jam at $3 each and some of honey at $7 each, and took $84. How many jars of jam and how many of honey were sold?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'sold 16 jars, some of jam at €3 each and some of honey at €7 each',
-        'took €84',
+        'sold 16 jars, some of jam at $3 each and some of honey at $7 each',
+        'took $84',
         'How many jars of jam and how many of honey were sold?'
       ],
-      A1: ['sold 16 jars, some of jam at €3 each and some of honey at €7 each', 'took €84']
+      A1: ['sold 16 jars, some of jam at $3 each and some of honey at $7 each', 'took $84']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',

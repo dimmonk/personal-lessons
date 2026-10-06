@@ -7,17 +7,17 @@
 FC.cases('math', 'u5', [
 
   /* ---------- The first kind: several choices, each from its own list ---------- */
-  { id: 'm5-wd-cases', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'phone cases in colours and styles', name: 'The phone cases', outcome: 'multprin',
-    text: 'A phone shop sells cases in 4 colours (black, red, blue, green) and 3 styles (plain, ridged, clear). A customer picks one colour and one style. How many different cases can the shop sell?',
+  { id: 'm5-wd-cases', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'phone cases in colors and styles', name: 'The phone cases', outcome: 'multprin',
+    text: 'A phone shop sells cases in 4 colors (black, red, blue, green) and 3 styles (plain, ridged, clear). A customer picks one color and one style. How many different cases can the shop sell?',
     route: { M1: ['chance'], C1: ['lists'] },
-    cues: { M1: ['How many different cases can the shop sell?'], C1: ['A customer picks one colour and one style'] } },
+    cues: { M1: ['How many different cases can the shop sell?'], C1: ['A customer picks one color and one style'] } },
 
   { id: 'm5-wd-train', use: 'teach', tier: 'clean', setting: 'travel', topic: 'train tickets by time and class', name: 'The train tickets', outcome: 'multprin',
-    text: 'A traveller books a train ticket. She picks one of 6 departure times and one of 3 classes of seat. How many different tickets can she book?',
+    text: 'A traveler books a train ticket. She picks one of 6 departure times and one of 3 classes of seat. How many different tickets can she book?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: { M1: ['How many different tickets can she book?'], C1: ['picks one of 6 departure times and one of 3 classes of seat'] },
     segments: [
-      { text: 'A traveller books a train ticket.', note: 'That is the story, and it says what is being booked. It does not say what the choices are.' },
+      { text: 'A traveler books a train ticket.', note: 'That is the story, and it says what is being booked. It does not say what the choices are.' },
       { text: 'She picks one of 6 departure times and one of 3 classes of seat.' },
       { text: 'How many different tickets can she book?', note: 'That is the question, a count of results. The words that show how the choices are made come in the sentence before it.' }
     ] },

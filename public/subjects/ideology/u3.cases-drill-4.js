@@ -31,11 +31,11 @@ FC.cases('ideology', 'u3', [
     not: { outcome: 'nationalism', why: '{o:nationalism} would speak for everyone in the country with nobody named as the other side. This text names the editors.' } },
 
   { id: 'n-fn-fasc', use: 'drill', tier: 'varied', setting: 'health', topic: 'an order to every hospital',
-    text: "Order from the Leader's office: 'The nation is one body and the hospitals are its organs. Doctors who criticise the Leader's health plan are dismissed, and the medical journals that print them are closed. Every nurse and doctor will carry out the plan or answer for it.'",
+    text: "Order from the Leader's office: 'The nation is one body and the hospitals are its organs. Doctors who criticize the Leader's health plan are dismissed, and the medical journals that print them are closed. Every nurse and doctor will carry out the plan or answer for it.'",
     outcome: 'fasc', route: { D1: ['nation'], N1: ['whole'], N2: ['aside'] },
     cues: { D1: 'The nation is one body and the hospitals are its organs',
             N1: 'The nation is one body and the hospitals are its organs',
-            N2: "Doctors who criticise the Leader's health plan are dismissed, and the medical journals that print them are closed" },
+            N2: "Doctors who criticize the Leader's health plan are dismissed, and the medical journals that print them are closed" },
     reason: { D1: 'The order puts the nation first and speaks of it as one: {cue:D1}.',
               N1: 'It speaks for the whole nation as a single body: {cue:N1}. Nobody inside it is named as the enemy, and nobody is ranked by blood.',
               N2: 'Critics are dismissed and journals closed: {cue:N2}. That takes away the say of those who disagree.' },

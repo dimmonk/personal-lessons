@@ -6,12 +6,12 @@ FC.cards('ideology', 'u5', [
   { id: 'look-modlib-idegal', kind: 'lookalike', ledger: 'modlib~idegal',
     link: 'These two both want fairness for people who are being left behind. They differ in the cause they name. This card puts them side by side.',
     cases: ['i5-lk-mi-modlib', 'i5-lk-mi-idegal'],
-    instruction: 'Both cases are about the same housing list in Calderwick, and both speakers want people to be housed fairly. Compare one thing: whether the speaker names a rule that treats everyone alike as the cause of someone being left behind.',
+    instruction: 'Both cases are about the same housing waitlist in Calderwick, and both speakers want people to be housed fairly. Compare one thing: whether the speaker names a rule that treats everyone alike as the cause of someone being left behind.',
     prompt: { kind: 'which', option: 'R1.rules', answer: 'i5-lk-mi-idegal' },
     difference: [
-      'In Case A the councillor wants the government to build more homes and to pay for help for anyone between jobs, with everyone paying together. No rule is named as the cause of anyone being left behind: the need is for homes and help. The answer is {a:R1.start}, and the case is {o:modlib}.',
-      'In Case B the speaker names a rule: the housing list asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived this year at the back. The speaker asks for what the list asks for to be changed, until they are housed as often as everyone else. The answer is {a:R1.rules}, and the case is {o:idegal}.',
-      'Both speakers want the housing list to be fair. One wants more given. The other wants a rule changed. That is the question being asked.'
+      'In Case A the council member wants the government to build more homes and to pay for help for anyone between jobs, with everyone paying together. No rule is named as the cause of anyone being left behind: the need is for homes and help. The answer is {a:R1.start}, and the case is {o:modlib}.',
+      'In Case B the speaker names a rule: the housing waitlist asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived this year at the back. The speaker asks for what the list asks for to be changed, until they are housed as often as everyone else. The answer is {a:R1.rules}, and the case is {o:idegal}.',
+      'Both speakers want the housing waitlist to be fair. One wants more given. The other wants a rule changed. That is the question being asked.'
     ] },
 
   { id: 'look-clib-idegal', kind: 'lookalike', ledger: 'clib~idegal',

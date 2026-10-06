@@ -9,14 +9,14 @@ FC.cases('stats', 'u4', [
 
   /* ---------- Group four (misleading): the story points at another name ---------- */
   { id: 'm4-rt-scanner', use: 'drill', tier: 'misleading', setting: 'learning', topic: 'a school with card scanners at the doors', echo: 'meas-scale',
-    text: "A school replaced its roll call with a card scanner at each classroom door this year, and reports: 'Attendance rose from 90% to 97% after the new scanners went in.' Both the roll call and the scanner count a pupil as present if they are in the room at 9:00. Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door. The principal's own head count in 20 rooms found 90 of every 100 pupils present in both years.",
+    text: "A school replaced its roll call with a card scanner at each classroom door this year, and reports: 'Attendance rose from 90% to 97% after the new scanners went in.' Both the roll call and the scanner count a student as present if they are in the room at 9:00. Teachers are ranked each term by their class's attendance, and teachers hold the students' cards and scan them at the door. The principal's own head count in 20 rooms found 90 of every 100 students present in both years.",
     outcome: 'proxy', route: { S1: ['measure'], M1: ['pushed'] },
-    cues: { S1: "Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door",
-            M1: "Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door" },
-    reason: { S1: 'The attendance figure can rise with no more pupils in the room: {cue:S1}. The head count found 90 in every 100 in both years, and the figure went from 90 to 97.',
-              M1: 'The people ranked on the figure also make it: {cue:M1}. A teacher can scan the card of a pupil who is not there.' },
-    not: { outcome: 'defshift', why: 'The new scanner counts a pupil as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.' },
-    wouldChange: 'If the scanner counted a pupil present from the moment their card crossed the school entrance, and not from 9:00 in the room, the counting would have changed, and the case would be {o:defshift}.' },
+    cues: { S1: "Teachers are ranked each term by their class's attendance, and teachers hold the students' cards and scan them at the door",
+            M1: "Teachers are ranked each term by their class's attendance, and teachers hold the students' cards and scan them at the door" },
+    reason: { S1: 'The attendance figure can rise with no more students in the room: {cue:S1}. The head count found 90 in every 100 in both years, and the figure went from 90 to 97.',
+              M1: 'The people ranked on the figure also make it: {cue:M1}. A teacher can scan the card of a student who is not there.' },
+    not: { outcome: 'defshift', why: 'The new scanner counts a student as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.' },
+    wouldChange: 'If the scanner counted a student present from the moment their card crossed the school entrance, and not from 9:00 in the room, the counting would have changed, and the case would be {o:defshift}.' },
 
   { id: 'm4-rt-wardens', use: 'drill', tier: 'misleading', setting: 'community', topic: 'a parking chief who added a second round', echo: 'meas-store-guards',
     text: "A parking authority's chief says: 'Tickets rose from 20,000 to 30,000 after I told our wardens to add a second daily walk along half of our streets. Drivers are parking worse.' The wardens are paid a flat wage, and nothing is counted per warden. A ticket is written by the same standard as before. Cars checked went from 1,000,000 a year to 1,500,000, which is 2 tickets for every 100 cars checked, in both years.",

@@ -10,11 +10,11 @@ FC.cases('math', 'u3', [
     topic: 'cleaner for office rooms',
     kind: 'problem',
     outcome: 'prop',
-    text: 'A cleaning firm uses 18 litres of cleaner for every 30 rooms. How many litres are needed for 45 rooms?',
+    text: 'A cleaning firm uses 18 liters of cleaner for every 30 rooms. How many liters are needed for 45 rooms?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
-      M1: ['uses 18 litres of cleaner for every 30 rooms', 'How many litres are needed for 45 rooms?'],
-      A1: ['uses 18 litres of cleaner for every 30 rooms', 'for 45 rooms']
+      M1: ['uses 18 liters of cleaner for every 30 rooms', 'How many liters are needed for 45 rooms?'],
+      A1: ['uses 18 liters of cleaner for every 30 rooms', 'for 45 rooms']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -27,7 +27,7 @@ FC.cases('math', 'u3', [
     steps: [
       {
         does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 18 litres of cleaner for 30 rooms. The new amount is 45 rooms, so it is paired with the 30 rooms in the rate'
+        working: 'The rate is 18 liters of cleaner for 30 rooms. The new amount is 45 rooms, so it is paired with the 30 rooms in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -36,22 +36,22 @@ FC.cases('math', 'u3', [
       { does: 'Make the other number that many times as big', working: '18 × 1.5 = 27' },
       {
         does: 'Check the direction',
-        working: '45 rooms is more than 30 rooms, so the answer should be more than 18 litres of cleaner, and 27 is more'
+        working: '45 rooms is more than 30 rooms, so the answer should be more than 18 liters of cleaner, and 27 is more'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '27 litres of cleaner' },
+        { id: 'r', text: '27 liters of cleaner' },
         {
           id: 's1',
-          text: '12 litres of cleaner',
-          slip: 'you divide 18 by 1.5 instead of multiplying, so the answer moves the wrong way: more rooms must mean more litres of cleaner.'
+          text: '12 liters of cleaner',
+          slip: 'you divide 18 by 1.5 instead of multiplying, so the answer moves the wrong way: more rooms must mean more liters of cleaner.'
         },
         {
           id: 's2',
-          text: '75 litres of cleaner',
-          slip: 'you pair the new amount with 18 litres of cleaner, the other number in the rate, and not with 30 rooms, the number of the same thing.'
+          text: '75 liters of cleaner',
+          slip: 'you pair the new amount with 18 liters of cleaner, the other number in the rate, and not with 30 rooms, the number of the same thing.'
         }
       ]
     },
@@ -119,18 +119,18 @@ FC.cases('math', 'u3', [
     use: 'drill',
     tier: 'misleading',
     setting: 'work',
-    topic: 'eggs for a canteen',
+    topic: 'eggs for a cafeteria',
     kind: 'problem',
     outcome: 'prop',
-    text: 'A school canteen with 3 cooks uses 18 eggs for every 12 pupils. Today 30 pupils are in for lunch. How many eggs are needed?',
+    text: 'A school cafeteria with 3 cooks uses 18 eggs for every 12 students. Today 30 students are in for lunch. How many eggs are needed?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
-      M1: ['uses 18 eggs for every 12 pupils', 'How many eggs are needed?'],
-      A1: ['uses 18 eggs for every 12 pupils', 'Today 30 pupils are in for lunch']
+      M1: ['uses 18 eggs for every 12 students', 'How many eggs are needed?'],
+      A1: ['uses 18 eggs for every 12 students', 'Today 30 students are in for lunch']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give so much for so many, 18 eggs for every 12 pupils, and a new amount of pupils. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is {a:A1.rate}.'
+      A1: 'The words {cue:A1} give so much for so many, 18 eggs for every 12 students, and a new amount of students. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is {a:A1.rate}.'
     },
     not: {
       outcome: 'rearr',
@@ -139,7 +139,7 @@ FC.cases('math', 'u3', [
     steps: [
       {
         does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 18 eggs for 12 pupils. The new amount is 30 pupils, so it is paired with the 12 pupils in the rate'
+        working: 'The rate is 18 eggs for 12 students. The new amount is 30 students, so it is paired with the 12 students in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -148,7 +148,7 @@ FC.cases('math', 'u3', [
       { does: 'Make the other number that many times as big', working: '18 × 2.5 = 45' },
       {
         does: 'Check the direction',
-        working: '30 pupils is more than 12 pupils, so the answer should be more than 18 eggs, and 45 is more'
+        working: '30 students is more than 12 students, so the answer should be more than 18 eggs, and 45 is more'
       }
     ],
     answer: {
@@ -158,12 +158,12 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '7.2 eggs',
-          slip: 'you divide 18 by 2.5 instead of multiplying, so the answer moves the wrong way: more pupils must mean more eggs.'
+          slip: 'you divide 18 by 2.5 instead of multiplying, so the answer moves the wrong way: more students must mean more eggs.'
         },
         {
           id: 's2',
           text: '20 eggs',
-          slip: 'you pair the new amount with 18 eggs, the other number in the rate, and not with 12 pupils, the number of the same thing.'
+          slip: 'you pair the new amount with 18 eggs, the other number in the rate, and not with 12 students, the number of the same thing.'
         }
       ]
     },
@@ -178,15 +178,15 @@ FC.cases('math', 'u3', [
     topic: 'raffle books sold',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A club sold 18 raffle books, some small at €2 each and some large at €5 each, and took €60. How many small and how many large books were sold?',
+    text: 'A club sold 18 raffle books, some small at $2 each and some large at $5 each, and took $60. How many small and how many large books were sold?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'sold 18 raffle books, some small at €2 each and some large at €5 each',
-        'took €60',
+        'sold 18 raffle books, some small at $2 each and some large at $5 each',
+        'took $60',
         'How many small and how many large books were sold?'
       ],
-      A1: ['sold 18 raffle books, some small at €2 each and some large at €5 each', 'took €60']
+      A1: ['sold 18 raffle books, some small at $2 each and some large at $5 each', 'took $60']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',

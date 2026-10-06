@@ -24,12 +24,12 @@ FC.cards('ideology', 'u2', [
     name: 'The name for this is {o:classonly}. "Class" here means a group of people sorted by how they earn their living: those who work for pay, and those who own where they work. "Politics" means the effort to win a say in how things are run. "With nothing attached" says that no plan has been fastened to the side-taking. The name is not a verdict that the text is empty. It says that the text takes a side and says nothing more.' },
 
   { id: 'again-classonly', kind: 'again', outcome: 'classonly',
-    link: 'The laundry notice gave you what to point to from one case: {needs:classonly}. Here is a second case with a different story. This time the people who work are cooks in a school canteen, and the words are posted online.',
+    link: 'The laundry notice gave you what to point to from one case: {needs:classonly}. Here is a second case with a different story. This time the people who work are cooks in a school cafeteria, and the words are posted online.',
     first: 'c-co-laundry', second: 'c-co-canteen', step: 'C1',
-    instruction: 'Find what the two cases share. Ignore the story (a laundry, a school canteen). Look at one thing only: what the text asks of the reader, and whether anything in it is about who should own the business.',
+    instruction: 'Find what the two cases share. Ignore the story (a laundry, a school cafeteria). Look at one thing only: what the text asks of the reader, and whether anything in it is about who should own the business.',
     prompt: { kind: 'phrase', answer: 'Share this if you are too' },
     shared: [
-      'Both texts name owners and workers and take the workers’ side. Both then stop, and ask the reader for something small: come to a meeting, share a post. Neither says a word about who should own the laundry or the canteen contract, about taxes or services, or about how the owners gain.',
+      'Both texts name owners and workers and take the workers’ side. Both then stop, and ask the reader for something small: come to a meeting, share a post. Neither says a word about who should own the laundry or the cafeteria contract, about taxes or services, or about how the owners gain.',
       'The two stories share nothing else. So this holds wherever a text takes the workers’ side and goes no further. That is what {o:classonly} names.'
     ] },
 

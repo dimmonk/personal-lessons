@@ -19,13 +19,13 @@ FC.cases('math', 'u2', [
       { text: 'On which day of the week will it arrive?' }
     ] },
 
-  { id: 'wd-teams', use: 'check', tier: 'clean', setting: 'work', topic: 'pupils in teams of four', outcome: 'modrem',
-    text: 'A teacher has 45 pupils and puts them in teams of 4. How many pupils are left over once every team is full?',
+  { id: 'wd-teams', use: 'check', tier: 'clean', setting: 'work', topic: 'students in teams of four', outcome: 'modrem',
+    text: 'A teacher has 45 students and puts them in teams of 4. How many students are left over once every team is full?',
     route: { M1: ['whole'], W1: ['cycle'] },
-    cues: { M1: ['How many pupils are left over once every team is full?'], W1: ['puts them in teams of 4', 'How many pupils are left over once every team is full?'] },
+    cues: { M1: ['How many students are left over once every team is full?'], W1: ['puts them in teams of 4', 'How many students are left over once every team is full?'] },
     segments: [
-      { text: 'A teacher has 45 pupils and puts them in teams of 4.', note: 'That gives the count and the size of one group, and they matter. But the words that say what has to be found come in the last sentence.' },
-      { text: 'How many pupils are left over once every team is full?' }
+      { text: 'A teacher has 45 students and puts them in teams of 4.', note: 'That gives the count and the size of one group, and they matter. But the words that say what has to be found come in the last sentence.' },
+      { text: 'How many students are left over once every team is full?' }
     ],
     reason: { W1: 'The words {cue:W1} give a count, 45, and the size of a group, 4, and ask what is left over once every group is full. That is {a:W1.cycle}.' } },
 
@@ -35,12 +35,12 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['exact'] },
     cues: { M1: ['Can the side be written exactly, as a fraction or a decimal that ends?'], W1: ['Can the side be written exactly, as a fraction or a decimal that ends?'] } },
 
-  { id: 'wd-cake-tin', use: 'teach', tier: 'clean', setting: 'cooking', topic: 'a round cake tin', name: 'The cake tin', outcome: 'irrat',
-    text: 'A baker measures a round cake tin. The distance round it is a certain number of times the distance across it, and that number is called pi. Can pi be written exactly, as a fraction or a decimal that ends?',
+  { id: 'wd-cake-tin', use: 'teach', tier: 'clean', setting: 'cooking', topic: 'a round cake pan', name: 'The cake pan', outcome: 'irrat',
+    text: 'A baker measures a round cake pan. The distance round it is a certain number of times the distance across it, and that number is called pi. Can pi be written exactly, as a fraction or a decimal that ends?',
     route: { M1: ['whole'], W1: ['exact'] },
     cues: { M1: ['Can pi be written exactly, as a fraction or a decimal that ends?'], W1: ['Can pi be written exactly, as a fraction or a decimal that ends?'] },
     segments: [
-      { text: 'A baker measures a round cake tin.', note: 'That is the story. It does not say what has to be found.' },
+      { text: 'A baker measures a round cake pan.', note: 'That is the story. It does not say what has to be found.' },
       { text: 'The distance round it is a certain number of times the distance across it, and that number is called pi.', note: 'That names the number, pi, and it matters. But the words that say what has to be found about it come in the last sentence.' },
       { text: 'Can pi be written exactly, as a fraction or a decimal that ends?' }
     ] },

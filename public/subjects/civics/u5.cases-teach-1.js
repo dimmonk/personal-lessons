@@ -38,14 +38,14 @@ FC.cases('civics', 'u5', [
 
   /* ---------- The exceptions that carry the words of another name ---------- */
   { id: 'x-hall', use: 'teach', tier: 'misleading', setting: 'community', topic: 'a community hall and one religion', name: 'The community hall',
-    text: 'A town owns a community hall that residents rent for parties and meetings. The town’s rule says that only members of the town’s main church may rent it. The Mehta family belong to a different faith and were turned away. They have asked a judge to order the town to let every resident rent the hall, saying the rule is unfair and that the Constitution does not allow a town to favour one religion.',
+    text: 'A town owns a community hall that residents rent for parties and meetings. The town’s rule says that only members of the town’s main church may rent it. The Mehta family belong to a different faith and were turned away. They have asked a judge to order the town to let every resident rent the hall, saying the rule is unfair and that the Constitution does not allow a town to favor one religion.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
-    cues: { D1: 'They have asked a judge to order the town', J1: ['were turned away', 'the Constitution does not allow a town to favour one religion'] },
+    cues: { D1: 'They have asked a judge to order the town', J1: ['were turned away', 'the Constitution does not allow a town to favor one religion'] },
     segments: [
       { text: 'The town’s rule says that only members of the town’s main church may rent it', note: 'That is the rule. It does not show what the family asks the judge.' },
       { text: 'were turned away', note: 'That is the harm. It is why the family can bring a case. It does not show what they say about the rule.' },
       { text: 'saying the rule is unfair', note: 'On its own that is a view about which rule would be better. The words that come after it are what change the case.' },
-      { text: 'the Constitution does not allow a town to favour one religion' }
+      { text: 'the Constitution does not allow a town to favor one religion' }
     ] },
 
   { id: 'x-defendant', use: 'teach', tier: 'misleading', setting: 'leisure', topic: 'a night vigil and a camping ban', name: 'Nell’s trial',
@@ -71,7 +71,7 @@ FC.cases('civics', 'u5', [
     cues: { D1: 'She asked a judge to cancel the fine', J1: 'telling the judge that the rule takes away her right to speak' } },
 
   { id: 'ls-permit-fine', use: 'teach', tier: 'clean', setting: 'community', topic: 'a permit for a village green', name: 'The permit fine',
-    text: 'A town rule says that any gathering on Riverside Green needs a permit from the town. Rosa held a meeting of her neighbourhood group there without one and was fined $80. She asked a judge to cancel the fine, telling the judge that the permit rule takes away the right to gather peacefully.',
+    text: 'A town rule says that any gathering on Riverside Green needs a permit from the town. Rosa held a meeting of her neighborhood group there without one and was fined $80. She asked a judge to cancel the fine, telling the judge that the permit rule takes away the right to gather peacefully.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
     cues: { D1: 'She asked a judge to cancel the fine', J1: 'telling the judge that the permit rule takes away the right to gather peacefully' } },
 

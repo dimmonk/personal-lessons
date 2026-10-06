@@ -8,9 +8,9 @@ FC.cases('psychology', 'u3', [
 
   /* ---------- Gaslighting ---------- */
   { id: 'g-repair', use: 'teach', tier: 'clean', setting: 'money', topic: 'a shared car repair', name: 'The car repair',
-    text: "In February Tess paid £600 to fix the car she shares with her partner Jonas, because he had texted her: 'I'll pay my half on Friday.' He never did. Since then, whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamt that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.' Tess now rereads her old messages before she raises anything he has agreed to, and has asked her sister, 'Am I remembering this wrong?'",
+    text: "In February Tess paid $600 to fix the car she shares with her partner Jonas, because he had texted her: 'I'll pay my half on Friday.' He never did. Since then, whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamed that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.' Tess now rereads her old messages before she raises anything he has agreed to, and has asked her sister, 'Am I remembering this wrong?'",
     outcome: 'gaslight', route: { D1: ['tactic'], T1: ['denymemory'] },
-    cues: { T1: "whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamt that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'" } },
+    cues: { T1: "whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamed that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'" } },
 
   { id: 'g-reports', use: 'teach', tier: 'clean', setting: 'work', topic: 'weekly sales reports', name: 'The weekly report',
     text: "In January Ana's manager, Dev, emailed her: 'Please send me the sales numbers every Friday.' She did, for two months. Then Dev began saying, in front of the team and in private, that he had never asked for them. Every week since, when she brings it up, he says, 'You're getting confused about what I said,' or 'I don't know where you get these ideas.' This has gone on for four months. Ana now keeps a diary of every instruction she is given, and has asked two colleagues whether she is losing track of things.",
@@ -35,10 +35,10 @@ FC.cases('psychology', 'u3', [
     },
 
   /* ---------- Turning the blame around ---------- */
-  { id: 'd-till', use: 'teach', tier: 'clean', setting: 'work', topic: 'missing till money', name: 'The missing till money',
-    text: "Marek runs the bar. His manager, Joy, tells him the till was £120 short on his shift, and that the camera shows him taking two notes from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'",
+  { id: 'd-till', use: 'teach', tier: 'clean', setting: 'work', topic: 'missing register money', name: 'The missing register money',
+    text: "Marek runs the bar. His manager, Joy, tells him the register was $120 short on his shift, and that the camera shows him taking two bills from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'",
     outcome: 'darvo', route: { D1: ['tactic'], T1: ['reverse'] },
-    cues: { T1: "the camera shows him taking two notes from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'" } },
+    cues: { T1: "the camera shows him taking two bills from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'" } },
 
   { id: 'd-phone', use: 'teach', tier: 'clean', setting: 'home', topic: 'messages on a phone', name: 'The messages',
     text: "Ines sees messages on her husband Paolo's phone from a woman he told her he had stopped seeing. The most recent are from last week. 'Those aren't what you think,' Paolo says, 'and I never said I'd stopped seeing her. Do you know how controlling it is to go through someone's phone? Everyone says so. I work all week for this family, and now I'm put on trial in my own kitchen.'",
@@ -49,8 +49,8 @@ FC.cases('psychology', 'u3', [
       { text: "'Those aren't what you think,' Paolo says, 'and I never said I'd stopped seeing her. Do you know how controlling it is to go through someone's phone? Everyone says so. I work all week for this family, and now I'm put on trial in my own kitchen.'" }
     ] },
 
-  { id: 'd-check', use: 'check', tier: 'clean', setting: 'community', topic: 'an unlocked allotment shed',
-    text: "At the allotment committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The sign-out sheet shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'",
+  { id: 'd-check', use: 'check', tier: 'clean', setting: 'community', topic: 'an unlocked community garden shed',
+    text: "At the community garden committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The sign-out sheet shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'",
     outcome: 'darvo', route: { D1: ['tactic'], T1: ['reverse'] },
     cues: { T1: "'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'" },
     reason: { T1: 'The sign-out sheet shows Hugh did it, and Pam raises it. In answer he does all three in one go: he denies it ("I did lock it"), attacks the person who raised it ("rich coming from you, Pam"), and plays the one wronged ("the one being treated like a criminal"). {cue:T1}' },
@@ -58,7 +58,7 @@ FC.cases('psychology', 'u3', [
 
   /* ---------- The look-alike pair: the same dent, two names ---------- */
   { id: 'dent-months', use: 'teach', tier: 'varied', setting: 'home', topic: 'a dented car, over months',
-    text: "In March Ravi watched his wife Lena reverse the car into the gatepost, and he has a photo of the dent. Since then, whenever he mentions it, Lena says, 'That dent was there when we bought it,' and later, 'You've got the day wrong, it was never me,' and later, 'I don't know why you keep inventing things.' By July Ravi has stopped bringing it up, and last week he asked his neighbour whether he was going mad.",
+    text: "In March Ravi watched his wife Lena reverse the car into the gatepost, and he has a photo of the dent. Since then, whenever he mentions it, Lena says, 'That dent was there when we bought it,' and later, 'You've got the day wrong, it was never me,' and later, 'I don't know why you keep inventing things.' By July Ravi has stopped bringing it up, and last week he asked his neighbor whether he was going mad.",
     outcome: 'gaslight', route: { D1: ['tactic'], T1: ['denymemory'] },
     cues: { T1: "whenever he mentions it, Lena says, 'That dent was there when we bought it,' and later, 'You've got the day wrong, it was never me,' and later, 'I don't know why you keep inventing things.'" } },
 

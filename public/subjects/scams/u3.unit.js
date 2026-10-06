@@ -8,7 +8,7 @@
 
 FC.unit('scams', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -70,7 +70,7 @@ FC.unit('scams', 'u3', {
   // band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u3',            // the old quick-drill totals for this unit were stored under pl:scams:stats:u3 (frozen; see E8)
-    add: 'Some of these requests are real and some are copies, on purpose. The real thing comes up as often as the three scams, and the two questions you are practising give it its own answer. In every case, put your finger on what you are asked to type or press, and on whether the person started it.',
+    add: 'Some of these requests are real and some are copies, on purpose. The real thing comes up as often as the three scams, and the two questions you are practicing give it its own answer. In every case, put your finger on what you are asked to type or press, and on whether the person started it.',
     rungs: [
       { ask: 'name',
         items: [['dn-ph-bank', 'dn-real-lib'],
@@ -108,7 +108,8 @@ FC.unit('scams', 'u3', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the access branch of the rewritten key (docs/rebuild/scams-plan.md), taught as a branch unit with two questions. The real sign-in is met first and is in every case stage; three scams (a copied page that asks for a password, someone who asks for a code that has just come to your phone, an app that asks for far more than its job); six look-alike pairs; the tie-break (a password then a code) taught on a named case; every portrait says what to do on the spot. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild
     // (from docs/rebuild/scams-plan.md, section a).
@@ -134,7 +135,7 @@ FC.unit('scams', 'u3', {
           ref: 'Anti-Phishing Working Group (APWG), Phishing Activity Trends reports, 2020 onwards: a majority of reported phishing sites use HTTPS, so the padlock is common on copies. To be read and confirmed online before release, or replaced by what cold readers actually say about the padlock.' } },
       { card: 'refute-thread', about: 'codescam',
         source: { kind: 'published', verified: false,
-          ref: 'UK National Cyber Security Centre guidance on spoofed text-message sender names, which says that a message can be made to appear in the same conversation as genuine messages from the organisation it names. To be read and confirmed online before release.' } }
+          ref: 'U.S. guidance on spoofed text-message sender names (for example from the FTC or CISA), to be located, read and confirmed online before release. The point it is cited for: a message can be made to appear in the same conversation as genuine messages from the organization it names.' } }
     ],
     signoff: {
       coverage: null,     // { date, by } once tests/validate-data.mjs passes on this unit in the app

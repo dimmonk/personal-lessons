@@ -30,8 +30,8 @@ FC.cards('psychology', 'u4', [
     instruction: 'In both cases the younger brother has just made partner. Compare one thing: what each man does with the hurt of not being the one who was chosen. Does he attack, or does he pull away?',
     prompt: { kind: 'which', option: 'P1.overlooked', answer: 'pa-piers' },
     difference: [
-      'In Case A Anton turns on his brother at the family lunch: "only got there by licking boots". It is outward: anger and scorn. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
-      'In Case B Piers says "Lovely news", goes quiet and leaves before the pudding, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
+      'In Case A Anton turns on his brother at the family lunch: "only got there by sucking up". It is outward: anger and scorn. The answer is {a:P1.above}, and the case is {o:narcgrand}.',
+      'In Case B Piers says "Lovely news", goes quiet and leaves before the dessert, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The answer is {a:P1.overlooked}, and the case is {o:narcvuln}.',
       'So these two names are one family, and this is the difference inside it. Both brothers have the same sore place: their worth depends on being treated as special, and their brother’s promotion does not treat them so. Anton defends it outward and Piers defends it inward. Which way it goes is what the question picks out.'
     ] },
 
@@ -59,7 +59,7 @@ FC.cards('psychology', 'u4', [
     ],
     explain: [
       'Nadia has a way of being that is hard to see from outside, because from outside it looks like two different people. In one, she adores someone and cannot do without them. In the other, she attacks them. What joins the two is what sets off the change: a person who seems about to leave or pull away.',
-      'Look at when the swing happens. It is not when Nadia is criticised, and it is not when someone else is praised. It is when someone she is close to seems to be going. A friend says she will be abroad, or a reply comes a day late, and for Nadia that feels like being left. She does two things to stop it. She holds on hard: messages, gifts, begging. And when holding on does not seem to work, she attacks the person who is going, and then she holds on again.',
+      'Look at when the swing happens. It is not when Nadia is criticized, and it is not when someone else is praised. It is when someone she is close to seems to be going. A friend says she will be abroad, or a reply comes a day late, and for Nadia that feels like being left. She does two things to stop it. She holds on hard: messages, gifts, begging. And when holding on does not seem to work, she attacks the person who is going, and then she holds on again.',
       'This is not the same as ordinary neediness, or a bad row. A friend who says "please don’t go" once is not this. What is here is that it happens with every close friend since school and with every partner, and that it keeps costing: friends gone, a job lost.',
       'It is also not an act. People with this way of being are very often in real distress, and are as frightened by the swings as the people around them.'
     ],
@@ -79,7 +79,7 @@ FC.cards('psychology', 'u4', [
   { id: 'portrait-borderline', kind: 'portrait', outcome: 'borderline',
     link: 'You know what to point to. This card fills in the rest of the picture, and says what the name does not mean.',
     typical: [
-      'What sets it off is someone seeming to leave: a late reply, a cancelled plan, a new job, a holiday. The leaving does not have to be real.',
+      'What sets it off is someone seeming to leave: a late reply, a canceled plan, a new job, a vacation. The leaving does not have to be real.',
       'The first reaction is to hold on: many messages, gifts, promises to change, begging.',
       'If that does not seem to work, the reaction turns, and the person who was adored is attacked, often in words that are hard to forgive.',
       'Then, often within a day, it swings back: an apology, a plea, "you are the only one who understands me".',

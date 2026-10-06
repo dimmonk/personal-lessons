@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -98,7 +98,7 @@ FC.unit('psychology', 'u3', {
     returns: ['ret-tenancy', 'ret-promotion', 'ret-deadline',
               'ret-drive', 'ret-withdrawal', 'ret-quote',
               'ret-climb', 'ret-intern', 'ret-buddy',
-              'ret-calls', 'ret-parcels', 'ret-fete',
+              'ret-calls', 'ret-parcels', 'ret-fair',
               'ret-refund', 'ret-marks', 'ret-tea']
   },
 
@@ -107,7 +107,8 @@ FC.unit('psychology', 'u3', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     wrongIdeas: [
       { card: 'refute-doubt', about: 'gaslight',

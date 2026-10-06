@@ -1,5 +1,5 @@
 // Basic Math, Unit Two, part three: the third kind (the biggest equal piece for two numbers), the fourth kind (two repeating
-// things happening together again), and the look-alike cards that set each beside its nearest neighbour.
+// things happening together again), and the look-alike cards that set each beside its nearest neighbor.
 // The worked examples (kind solved) are in u2.cards-solved-*.js.
 
 FC.cards('math', 'u2', [
@@ -10,12 +10,12 @@ FC.cards('math', 'u2', [
     case: 'wd-peppers', mark: 'W1',
     strip: [
       'There are two whole numbers: 12 red peppers and 18 green peppers.',
-      'Every tray must hold the same number of peppers, with one colour only in a tray and nothing left over.',
+      'Every tray must hold the same number of peppers, with one color only in a tray and nothing left over.',
       'The question asks for the largest tray size that does this for both numbers at once.',
       'Nothing repeats, and nothing changes as time passes.'
     ],
     explain: [
-      'What you are shown is two whole numbers and a question about a piece that fits into both with nothing left over. Trays of 2 would work: 6 red trays and 9 green trays. Trays of 3 would work, and trays of 6. Trays of 4 would not, because 12 peppers fill 3 trays of 4 and 18 peppers fill 4 trays of 4 and leave 2 over. The question asks for the biggest tray that works for both colours, and that is 6: 2 red trays and 3 green trays. Using the word for a number that shares another out exactly, 6 is a {t:factor} of 12 and a {t:factor} of 18.',
+      'What you are shown is two whole numbers and a question about a piece that fits into both with nothing left over. Trays of 2 would work: 6 red trays and 9 green trays. Trays of 3 would work, and trays of 6. Trays of 4 would not, because 12 peppers fill 3 trays of 4 and 18 peppers fill 4 trays of 4 and leave 2 over. The question asks for the biggest tray that works for both colors, and that is 6: 2 red trays and 3 green trays. Using the word for a number that shares another out exactly, 6 is a {t:factor} of 12 and a {t:factor} of 18.',
       'There is a sign that you have the right number. The answer can never be more than the smaller of the two numbers, because a piece cannot be bigger than the whole it is cut from. Here 6 is not more than 12.',
       'For small numbers you can find the answer by listing what shares each number out exactly and picking the largest that is in both lists, as above. For big numbers the lists are long, so the procedure builds the answer from the primes of each number, which is what the second kind of problem finds.'
     ],
@@ -28,7 +28,7 @@ FC.cards('math', 'u2', [
     instruction: 'Find what the two problems share. Ignore the story (peppers, a youth club) and ignore the numbers. Look at one thing only: which words show what the pieces must be like?',
     prompt: { kind: 'phrase', answer: 'make teams of the same size, with only boys in some teams and only girls in the others and nobody left out' },
     shared: [
-      'Both problems give two whole numbers and ask for the largest group size that fits both with nothing left over. The pieces must all be the same size, one colour or one sex to a piece, with nothing left out, and the question asks for the biggest piece that does it.',
+      'Both problems give two whole numbers and ask for the largest group size that fits both with nothing left over. The pieces must all be the same size, one color or one sex to a piece, with nothing left out, and the question asks for the biggest piece that does it.',
       'The stories are different, and the kind is the same. That is what {o:hcf} names.'
     ] },
 
@@ -109,7 +109,7 @@ FC.cards('math', 'u2', [
       'The biggest equal piece is a different kind, though it starts from two numbers and uses the same primes. It asks for a piece that fits into both numbers and is never more than the smaller one. This kind asks when two repeats coincide, and it is never less than the bigger one.'
     ],
     wild: ['"When will they next line up?"', '"One every 8 seconds, the other every 12."', '"After how many days will both be due together?"', '"When do they both come round again?"'],
-    self: 'You meet it with timetables that repeat (two buses, two bin collections), with jobs that are done every few days (two medicines, two chores), and with anything that goes round at its own speed (laps, lights, gears).',
+    self: 'You meet it with schedules that repeat (two buses, two trash pickups), with jobs that are done every few days (two medicines, two chores), and with anything that goes round at its own speed (laps, lights, gears).',
     ask: '"Are there two repeating schedules, each with its own gap of seconds, days or turns, and is the question when they first coincide?" If you can say yes, you are probably looking at this kind.' },
 
   { id: 'check-lcm', kind: 'check', after: 'lcm',

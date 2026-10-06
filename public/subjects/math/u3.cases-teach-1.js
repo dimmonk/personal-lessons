@@ -26,18 +26,18 @@ FC.cases('math', 'u3', [
     topic: 'wool for a scarf',
     name: 'The scarf',
     outcome: 'rearr',
-    text: 'A knitter works out the wool for a scarf this way: multiply its length in metres by 3, then add 1 ball for the fringe. A scarf took 7 balls of wool. How long is it?',
+    text: 'A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe. A scarf took 7 balls of wool. How long is it?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['multiply its length in metres by 3, then add 1 ball for the fringe', 'How long is it?'],
+      M1: ['multiply its length in meters by 3, then add 1 ball for the fringe', 'How long is it?'],
       A1: [
-        'multiply its length in metres by 3, then add 1 ball for the fringe',
+        'multiply its length in meters by 3, then add 1 ball for the fringe',
         'A scarf took 7 balls of wool'
       ]
     },
     segments: [
       {
-        text: 'A knitter works out the wool for a scarf this way: multiply its length in metres by 3, then add 1 ball for the fringe.'
+        text: 'A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe.'
       },
       {
         text: 'A scarf took 7 balls of wool.',
@@ -88,11 +88,11 @@ FC.cases('math', 'u3', [
     setting: 'shopping',
     topic: 'three loaves and a pastry',
     outcome: 'rearr',
-    text: 'At the bakery, Jon buys three of the same loaf and a €2 pastry, and pays €11 in all. How much does one loaf cost?',
+    text: 'At the bakery, Jon buys three of the same loaf and a $2 pastry, and pays $11 in all. How much does one loaf cost?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['buys three of the same loaf and a €2 pastry', 'How much does one loaf cost?'],
-      A1: ['buys three of the same loaf and a €2 pastry', 'pays €11 in all']
+      M1: ['buys three of the same loaf and a $2 pastry', 'How much does one loaf cost?'],
+      A1: ['buys three of the same loaf and a $2 pastry', 'pays $11 in all']
     }
   },
 
@@ -103,11 +103,11 @@ FC.cases('math', 'u3', [
     setting: 'shopping',
     topic: 'five plants and some pots',
     outcome: 'rearr',
-    text: 'Mia buys 5 plants at €9 each and some pots at €4 each, and pays €73. How many pots?',
+    text: 'Mia buys 5 plants at $9 each and some pots at $4 each, and pays $73. How many pots?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['buys 5 plants at €9 each and some pots at €4 each', 'How many pots?'],
-      A1: ['buys 5 plants at €9 each and some pots at €4 each', 'pays €73']
+      M1: ['buys 5 plants at $9 each and some pots at $4 each', 'How many pots?'],
+      A1: ['buys 5 plants at $9 each and some pots at $4 each', 'pays $73']
     }
   },
 
@@ -134,22 +134,22 @@ FC.cases('math', 'u3', [
     topic: 'a bill with a standing charge',
     name: 'The electricity bill',
     outcome: 'rearr',
-    text: 'An electricity bill has a standing charge of €8, plus 25 cents for each unit of electricity used. This month’s bill is €38. How many units were used?',
+    text: 'An electricity bill has a standing charge of $8, plus 25 cents for each unit of electricity used. This month’s bill is $38. How many units were used?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
       M1: [
-        'a standing charge of €8, plus 25 cents for each unit of electricity used',
+        'a standing charge of $8, plus 25 cents for each unit of electricity used',
         'How many units were used?'
       ],
-      A1: ['a standing charge of €8, plus 25 cents for each unit of electricity used', 'bill is €38']
+      A1: ['a standing charge of $8, plus 25 cents for each unit of electricity used', 'bill is $38']
     },
     also: ['rate'],
     segments: [
       {
-        text: 'An electricity bill has a standing charge of €8, plus 25 cents for each unit of electricity used.'
+        text: 'An electricity bill has a standing charge of $8, plus 25 cents for each unit of electricity used.'
       },
       {
-        text: 'This month’s bill is €38.',
+        text: 'This month’s bill is $38.',
         note: 'That gives a number to work with, and it matters, but it is not the part you are asked to tap.'
       },
       {
@@ -233,17 +233,17 @@ FC.cases('math', 'u3', [
     setting: 'work',
     topic: 'dye for cloth',
     outcome: 'prop',
-    text: 'A dye works needs 2 litres of dye for every 5 metres of cloth. How much dye is needed for 30 metres of cloth?',
+    text: 'A dye works needs 2 liters of dye for every 5 meters of cloth. How much dye is needed for 30 meters of cloth?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
       M1: [
-        'needs 2 litres of dye for every 5 metres of cloth',
-        'How much dye is needed for 30 metres of cloth?'
+        'needs 2 liters of dye for every 5 meters of cloth',
+        'How much dye is needed for 30 meters of cloth?'
       ],
-      A1: ['needs 2 litres of dye for every 5 metres of cloth', 'for 30 metres of cloth']
+      A1: ['needs 2 liters of dye for every 5 meters of cloth', 'for 30 meters of cloth']
     },
     reason: {
-      A1: 'The words {cue:A1} give so much for so many, 2 litres of dye for every 5 metres of cloth, and a new amount of cloth, 30 metres. Nothing is added on top and no calculation has a result to undo, so the answer is {a:A1.rate}.'
+      A1: 'The words {cue:A1} give so much for so many, 2 liters of dye for every 5 meters of cloth, and a new amount of cloth, 30 meters. Nothing is added on top and no calculation has a result to undo, so the answer is {a:A1.rate}.'
     }
   },
 
@@ -254,11 +254,11 @@ FC.cases('math', 'u3', [
     setting: 'shopping',
     topic: 'loaves at a set price',
     outcome: 'prop',
-    text: 'At the bakery, four of the same loaf cost €12. How much do ten of them cost?',
+    text: 'At the bakery, four of the same loaf cost $12. How much do ten of them cost?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
-      M1: ['four of the same loaf cost €12', 'How much do ten of them cost?'],
-      A1: ['four of the same loaf cost €12', 'ten of them']
+      M1: ['four of the same loaf cost $12', 'How much do ten of them cost?'],
+      A1: ['four of the same loaf cost $12', 'ten of them']
     }
   },
 
@@ -270,15 +270,15 @@ FC.cases('math', 'u3', [
     topic: 'balls bought for a club',
     name: 'The club’s balls',
     outcome: 'simul',
-    text: 'A sports club bought 14 balls, some footballs at €6 each and some volleyballs at €9 each, and spent €96 in all. How many of each did it buy?',
+    text: 'A sports club bought 14 balls, some footballs at $6 each and some volleyballs at $9 each, and spent $96 in all. How many of each did it buy?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'bought 14 balls, some footballs at €6 each and some volleyballs at €9 each',
-        'spent €96 in all',
+        'bought 14 balls, some footballs at $6 each and some volleyballs at $9 each',
+        'spent $96 in all',
         'How many of each did it buy?'
       ],
-      A1: ['bought 14 balls, some footballs at €6 each and some volleyballs at €9 each', 'spent €96 in all']
+      A1: ['bought 14 balls, some footballs at $6 each and some volleyballs at $9 each', 'spent $96 in all']
     }
   },
 
@@ -290,19 +290,19 @@ FC.cases('math', 'u3', [
     topic: 'boxes of bandages',
     name: 'The bandage order',
     outcome: 'simul',
-    text: 'A clinic ordered 18 boxes of bandages, some small at €4 each and some large at €7 each, and paid €84 in all. How many boxes of each size did it order?',
+    text: 'A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all. How many boxes of each size did it order?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'ordered 18 boxes of bandages, some small at €4 each and some large at €7 each',
-        'paid €84 in all',
+        'ordered 18 boxes of bandages, some small at $4 each and some large at $7 each',
+        'paid $84 in all',
         'How many boxes of each size did it order?'
       ],
-      A1: ['ordered 18 boxes of bandages, some small at €4 each and some large at €7 each', 'paid €84 in all']
+      A1: ['ordered 18 boxes of bandages, some small at $4 each and some large at $7 each', 'paid $84 in all']
     },
     segments: [
       {
-        text: 'A clinic ordered 18 boxes of bandages, some small at €4 each and some large at €7 each, and paid €84 in all.'
+        text: 'A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all.'
       },
       {
         text: 'How many boxes of each size did it order?',
@@ -318,19 +318,19 @@ FC.cases('math', 'u3', [
     setting: 'shopping',
     topic: 'small and large plants',
     outcome: 'simul',
-    text: 'A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all. How many of each size did it sell?',
+    text: 'A stall sold 11 plants, some small at $3 each and some large at $8 each, and took $58 in all. How many of each size did it sell?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'sold 11 plants, some small at €3 each and some large at €8 each',
-        'took €58 in all',
+        'sold 11 plants, some small at $3 each and some large at $8 each',
+        'took $58 in all',
         'How many of each size did it sell?'
       ],
-      A1: ['sold 11 plants, some small at €3 each and some large at €8 each', 'took €58 in all']
+      A1: ['sold 11 plants, some small at $3 each and some large at $8 each', 'took $58 in all']
     },
     segments: [
       {
-        text: 'A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.'
+        text: 'A stall sold 11 plants, some small at $3 each and some large at $8 each, and took $58 in all.'
       },
       {
         text: 'How many of each size did it sell?',
@@ -338,7 +338,7 @@ FC.cases('math', 'u3', [
       }
     ],
     reason: {
-      A1: 'In {cue:A1}, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and €58 in all. That is {a:A1.totals}.'
+      A1: 'In {cue:A1}, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and $58 in all. That is {a:A1.totals}.'
     }
   },
 
@@ -349,15 +349,15 @@ FC.cases('math', 'u3', [
     setting: 'shopping',
     topic: 'plants and pots sold',
     outcome: 'simul',
-    text: 'A garden centre sold 12 items, some plants at €9 each and some pots at €4 each, and took €73 in all. How many plants and how many pots were sold?',
+    text: 'A garden center sold 12 items, some plants at $9 each and some pots at $4 each, and took $73 in all. How many plants and how many pots were sold?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'sold 12 items, some plants at €9 each and some pots at €4 each',
-        'took €73 in all',
+        'sold 12 items, some plants at $9 each and some pots at $4 each',
+        'took $73 in all',
         'How many plants and how many pots were sold?'
       ],
-      A1: ['sold 12 items, some plants at €9 each and some pots at €4 each', 'took €73 in all']
+      A1: ['sold 12 items, some plants at $9 each and some pots at $4 each', 'took $73 in all']
     }
   },
 

@@ -29,19 +29,19 @@ FC.cases('stats', 'u1', [
     wouldChange: 'If the claim were only that adults who sleep eight hours report being happier, saying nothing about what makes what, it would be {a:S1.holds}.' },
 
   { id: 'gate-ret-tutor', use: 'return', tier: 'varied', setting: 'learning', topic: 'a reading app and a term of progress',
-    text: "A reading app says: 'Our app raised reading levels by 1.2 grades in one term.' It followed 500 pupils who started the term in September, straight after the summer break, when their reading levels are at their lowest of the year.",
+    text: "A reading app says: 'Our app raised reading levels by 1.2 grades in one term.' It followed 500 students who started the term in September, straight after the summer break, when their reading levels are at their lowest of the year.",
     route: { S1: ['cause'] },
     cues: { S1: 'Our app raised reading levels by 1.2 grades in one term' },
-    reason: { S1: 'The figure is given for 500 pupils counted the same way at both ends. Then the app says this: {cue:S1}. That is a claim of cause, and the case shows another way to explain the result: pupils start the term at their lowest and would climb back with or without the app.' },
+    reason: { S1: 'The figure is given for 500 students counted the same way at both ends. Then the app says this: {cue:S1}. That is a claim of cause, and the case shows another way to explain the result: students start the term at their lowest and would climb back with or without the app.' },
     not: { outcome: 'measure', why: 'The same test is used at both ends of the term, so nothing about how the figure is made changed. The trouble is the step from the rise to its cause.' },
-    wouldChange: 'If another 500 pupils, picked by lottery, had spent the same term without the app, and the app group had still risen more, the claim would be {a:S1.holds}.' },
+    wouldChange: 'If another 500 students, picked by lottery, had spent the same term without the app, and the app group had still risen more, the claim would be {a:S1.holds}.' },
 
   /* ---------- Nothing goes wrong ---------- */
   { id: 'gate-ret-water', use: 'return', tier: 'clean', setting: 'community', topic: 'lead in water at drawn taps',
     text: "A water company tested water from 150 taps drawn by lottery from all 60,000 connections, with the same lab method, and every tap it drew was tested. It found lead levels above the limit at 14 of the 150. The company says: 'About one home in ten has lead levels above the limit, give or take two or three in a hundred.'",
     route: { S1: ['holds'] },
     cues: { S1: 'drawn by lottery from all 60,000 connections, with the same lab method, and every tap it drew was tested' },
-    reason: { S1: 'Each part holds. {cue:S1}. Nobody was favoured, every tap drawn was tested the same way, and 150 is enough that one or two more or fewer would not move the figure. The claim gives a figure about one group at one time.' },
+    reason: { S1: 'Each part holds. {cue:S1}. Nobody was favored, every tap drawn was tested the same way, and 150 is enough that one or two more or fewer would not move the figure. The claim gives a figure about one group at one time.' },
     not: { outcome: 'counted', why: 'Only 150 of 60,000 connections were tested, but they were drawn by lottery, every one drawn was tested, and 150 is plenty. They are a fair picture of the homes in the area.' },
     wouldChange: 'If the company had tested only the 150 taps that customers had complained about, it would be {a:S1.counted}.' },
 
@@ -65,7 +65,7 @@ FC.cases('stats', 'u1', [
     text: "A hotel chain emailed a survey to 1,500 guests drawn by lottery from everyone who stayed last year. It followed up twice by email and then by phone, and 1,350 answered. Eighty-eight percent rated their room good or very good. The chain says: 'About 9 in 10 of last year's guests rate their rooms good or very good.'",
     route: { S1: ['holds'] },
     cues: { S1: 'drawn by lottery from everyone who stayed last year. It followed up twice by email and then by phone, and 1,350 answered' },
-    reason: { S1: 'Each part holds. {cue:S1}. Nobody was favoured in who was asked, and nine in ten of those asked answered, so the people in the figure are a fair picture of last year’s guests. The claim says no more than that.' },
+    reason: { S1: 'Each part holds. {cue:S1}. Nobody was favored in who was asked, and nine in ten of those asked answered, so the people in the figure are a fair picture of last year’s guests. The claim says no more than that.' },
     not: { outcome: 'counted', why: 'A survey can mislead when few people reply, but here 1,350 of the 1,500 answered after repeated follow-up, and the guests were drawn by lottery.' },
     wouldChange: 'If only the 150 guests who replied to the first email were counted, and the other 1,350 were never followed up, it would be {a:S1.counted}.' }
 ]);

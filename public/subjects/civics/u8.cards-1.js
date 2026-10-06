@@ -43,9 +43,9 @@ FC.cards('civics', 'u8', [
     concept: 'con-speak',
     rows: [
       { id: 'sp-speech', q: 'Which right protects you from being punished by the government for what you say?', a: 'The right to free speech',
-        relates: 'It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticises the government is protected by this right and by the right to a free press together.' },
-      { id: 'sp-religion', q: 'Which right protects your choice to follow a religion, or none?', a: 'The right to practise a religion, or none',
-        relates: 'The government is held back from punishing you for the religion that you practise, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.' },
+        relates: 'It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticizes the government is protected by this right and by the right to a free press together.' },
+      { id: 'sp-religion', q: 'Which right protects your choice to follow a religion, or none?', a: 'The right to practice a religion, or none',
+        relates: 'The government is held back from punishing you for the religion that you practice, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.' },
       { id: 'sp-press', q: 'Which right stops a mayor from having a newsstand pull a magazine that he dislikes?', a: 'The right to a free press',
         relates: 'The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states.' },
       { id: 'sp-assembly', q: 'Which right lets people gather peacefully, for example for a rally in a public park?', a: 'The right to assemble peacefully',
@@ -62,14 +62,14 @@ FC.cards('civics', 'u8', [
 
   { id: 'look-speak', kind: 'lookalike', ledger: 'sp-speech~sp-press',
     h: 'Speaking and printing',
-    link: 'Two of the five rights both protect a person who criticises the government in public, so they get swapped. They go side by side.',
+    link: 'Two of the five rights both protect a person who criticizes the government in public, so they get swapped. They go side by side.',
     facts: ['sp-speech', 'sp-press'],
     instruction: 'Compare what each question protects: a person’s own words, or printed work that is on sale.',
     prompt: { kind: 'which', answer: 'sp-press' },
     difference: [
       'Fact A is about what a person says: {f:sp-speech}. The government is held back from punishing a person for their words.',
       'Fact B is about what is printed and sold: {f:sp-press}. The government is held back from taking a newspaper or a magazine out of people’s hands because it dislikes what it says.',
-      'An article that criticises the government is protected by both, so a story can bring both to mind. What tells them apart is what the question is about: a person speaking, or something printed.'
+      'An article that criticizes the government is protected by both, so a story can bring both to mind. What tells them apart is what the question is about: a person speaking, or something printed.'
     ] },
 
   /* ---------- group two: when you are accused of a crime ---------- */
@@ -78,7 +78,7 @@ FC.cards('civics', 'u8', [
     link: 'The First Amendment holds the government back from what you say and believe. Four more rights hold it back at the moment it accuses you of a crime.',
     case: 'c8-kofi',
     plain: [
-      'Follow Kofi’s case in order. Police could search his flat only after a judge gave a warrant, which is a judge’s written permission. At the police station Kofi could say that he wanted a lawyer and would say nothing, and he did. The court appointed a lawyer because he could not pay for one. And his case was heard in public, by a jury, within a set time. Each step is the government held back, or held to a promise, for a person that it accuses of a crime.',
+      'Follow Kofi’s case in order. Police could search his apartment only after a judge gave a warrant, which is a judge’s written permission. At the police station Kofi could say that he wanted a lawyer and would say nothing, and he did. The court appointed a lawyer because he could not pay for one. And his case was heard in public, by a jury, within a set time. Each step is the government held back, or held to a promise, for a person that it accuses of a crime.',
       'A criminal case is one in which a person is on trial for a crime. The steps come from the Fourth, Fifth and Sixth Amendments, and like the First they never say ‘citizen’. They are written for ‘the people’ and ‘the accused’. Kofi is here on a student visa, and he has the same right to a lawyer, and the same right to stay silent, as a citizen charged with the same crime would have.',
       'The Constitution asks for fair legal steps before the government takes a person’s liberty, and people call that due process. The four rights in this group are four of those steps. (The Eighth Amendment holds others, such as limits on bail and on cruel punishment. This unit does not hold them.)',
       'When a judge is asked whether an accused person got these steps, the name is {o:trialrights}. This group holds four of the steps themselves, one fact each.'

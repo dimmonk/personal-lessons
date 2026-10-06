@@ -5,12 +5,12 @@
 FC.cases('ideology', 'u2', [
 
   /* ---------- Asked the question about the businesses ---------- */
-  { id: 'c-p-keep', use: 'drill', tier: 'clean', setting: 'housing', topic: 'estate cleaners and a law on pay',
-    text: "A leaflet from the cleaners on the Elmfield estate: 'The company that owns the estate pays us the least it can, and we are on the side of the cleaners. We do not want the estate taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late.'",
+  { id: 'c-p-keep', use: 'drill', tier: 'clean', setting: 'housing', topic: 'apartment-complex cleaners and a law on pay',
+    text: "A leaflet from the cleaners on the Elmfield apartment complex: 'The company that owns the apartment complex pays us the least it can, and we are on the side of the cleaners. We do not want the apartment complex taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late.'",
     outcome: 'socdem', route: { D1: ['class'], C1: ['keep'], C2: ['none'] },
-    cues: { C1: "We do not want the estate taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late" },
-    reason: { C1: 'The company is to keep the estate, and a law and a tax are asked for to even out the result: {cue:C1}.' },
-    not: { outcome: 'demsoc', why: 'The estate is not to be taken from the company. A text that asked for it to be taken and run by the government would be {o:demsoc}.' } },
+    cues: { C1: "We do not want the apartment complex taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late" },
+    reason: { C1: 'The company is to keep the apartment complex, and a law and a tax are asked for to even out the result: {cue:C1}.' },
+    not: { outcome: 'demsoc', why: 'The apartment complex is not to be taken from the company. A text that asked for it to be taken and run by the government would be {o:demsoc}.' } },
 
   { id: 'c-p-none1', use: 'drill', tier: 'clean', setting: 'health', topic: 'ambulance crews and an open letter',
     text: "An open letter from the Tolland ambulance crews: 'The private company that runs our service takes its fee and cuts our rest breaks. We are on the side of the crews. We ask the public to stand with us at the county hall on Saturday.'",
@@ -20,7 +20,7 @@ FC.cases('ideology', 'u2', [
     not: { outcome: 'socdem', why: 'The text asks for no law and no tax. A text that asked for those, and left the company its service, would be {o:socdem}.' } },
 
   { id: 'c-p-public', use: 'drill', tier: 'clean', setting: 'town', topic: 'a water supply for all users',
-    text: "From a petition by the Greyfield water workers: 'The company that owns the water supply runs it for its shareholders, and we stand with the people who work its pipes. The water supply should belong to the public, run by the government for everyone.'",
+    text: "From a petition by the Grayfield water workers: 'The company that owns the water supply runs it for its shareholders, and we stand with the people who work its pipes. The water supply should belong to the public, run by the government for everyone.'",
     outcome: 'demsoc', route: { D1: ['class'], C1: ['public'], C2: ['none'] },
     cues: { C1: 'The water supply should belong to the public, run by the government for everyone' },
     reason: { C1: 'The water supply is to pass out of the company’s hands to the government: {cue:C1}. That is a handover, not a tax on a company that keeps its pipes.' },
@@ -41,19 +41,19 @@ FC.cases('ideology', 'u2', [
     not: { outcome: 'mktsoc', why: 'Both give the depot to its workers. This text says nothing about competing, and wants no government. A text that kept the depot competing for passengers would be {o:mktsoc}.' } },
 
   { id: 'c-p-explain', use: 'drill', tier: 'clean', setting: 'money', topic: 'a talk on what a bank keeps from its clerks',
-    text: "From a talk to the clerks at the Merrow bank: 'The bank pays a clerk £70 a day, and the clerk brings the bank £120 in fees once costs are paid. The £50 goes to the bank's owners. Every bank has to keep a gap like it; that is how the arrangement works, for every owner. The talk is for the clerks.'",
+    text: "From a talk to the clerks at the Merrow bank: 'The bank pays a clerk $70 a day, and the clerk brings the bank $120 in fees once costs are paid. The $50 goes to the bank's owners. Every bank has to keep a gap like it; that is how the arrangement works, for every owner. The talk is for the clerks.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'Every bank has to keep a gap like it; that is how the arrangement works, for every owner' },
     reason: { C1: 'The text explains how the owners gain, as the way the arrangement works for every owner: {cue:C1}. It asks for nothing to be done with the bank.' },
     not: { outcome: 'classonly', why: 'The text does more than side with the clerks: it says why every owner gains. A text that only took the clerks’ side would be {o:classonly}.' } },
 
   /* ---------- Asked the question about the government ---------- */
-  { id: 'c-p-seize', use: 'drill', tier: 'clean', setting: 'housing', topic: 'builders’ league taking the estates and ruling alone',
-    text: "From a statement by the Larkhill builders' party: 'The firms that own the estates and the builders who raise them are on opposite sides, and we are with the builders. The party will take the estates by force and keep the power it wins. It will tolerate no rival party. The estates will then be everyone's.'",
+  { id: 'c-p-seize', use: 'drill', tier: 'clean', setting: 'housing', topic: 'builders’ league taking the developments and ruling alone',
+    text: "From a statement by the Larkhill builders' party: 'The firms that own the developments and the builders who raise them are on opposite sides, and we are with the builders. The party will take the developments by force and keep the power it wins. It will tolerate no rival party. The developments will then be everyone's.'",
     outcome: 'ml', route: { D1: ['class'], C1: ['public'], C2: ['seize'] },
-    cues: { C1: "The estates will then be everyone's", C2: 'The party will take the estates by force and keep the power it wins. It will tolerate no rival party' },
+    cues: { C1: "The developments will then be everyone's", C2: 'The party will take the developments by force and keep the power it wins. It will tolerate no rival party' },
     reason: { C2: 'The party will take power by force and keep it, with no rival: {cue:C2}.' },
-    not: { outcome: 'demsoc', why: 'The estates are to be everyone’s, which {o:demsoc} asks for too. But the party will keep power with no rival, and a text that left the change to the voters would be {o:demsoc}.' } },
+    not: { outcome: 'demsoc', why: 'The developments are to be everyone’s, which {o:demsoc} asks for too. But the party will keep power with no rival, and a text that left the change to the voters would be {o:demsoc}.' } },
 
   { id: 'c-p-vote', use: 'drill', tier: 'clean', setting: 'schooling', topic: 'school caterers who will fight an election for it',
     text: "From a motion by the Penhallow school caterers' union: 'The company that owns the school catering contract pays us late, and we stand with the caterers. School catering should pass to the county, run for the children. We will fight for it at the county election in May and accept the result.'",

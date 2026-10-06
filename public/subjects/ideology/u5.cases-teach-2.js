@@ -19,15 +19,15 @@ FC.cases('ideology', 'u5', [
     cues: { D1: 'Every person is free to choose their own doctor',
             R1: 'the government should pay for one in every district, and we should all pay for it through our taxes' } },
 
-  /* ---------- Look-alike: a fair start for everyone, or rules said to hold a group back (one housing list) ---------- */
-  { id: 'i5-lk-mi-modlib', use: 'teach', tier: 'clean', setting: 'housing', topic: 'building homes for the housing list',
-    text: "At a council meeting in Calderwick about the housing list, a councillor said: 'Every person is owed a roof and a fair start in life. The government should build more homes that people can afford to rent, and pay for help for anyone between jobs, and we should all pay for it together.'",
+  /* ---------- Look-alike: a fair start for everyone, or rules said to hold a group back (one housing waitlist) ---------- */
+  { id: 'i5-lk-mi-modlib', use: 'teach', tier: 'clean', setting: 'housing', topic: 'building homes for the housing waitlist',
+    text: "At a council meeting in Calderwick about the housing waitlist, a council member said: 'Every person is owed a roof and a fair start in life. The government should build more homes that people can afford to rent, and pay for help for anyone between jobs, and we should all pay for it together.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Every person is owed a roof and a fair start in life',
             R1: 'The government should build more homes that people can afford to rent, and pay for help for anyone between jobs' } },
 
-  { id: 'i5-lk-mi-idegal', use: 'teach', tier: 'clean', setting: 'housing', topic: 'the paperwork the housing list asks for',
-    text: "At the same Calderwick council meeting about the housing list, another speaker said: 'The housing list asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived from overseas this year at the back, year after year. Fair treatment means changing what the list asks for until they are housed as often as everyone else.'",
+  { id: 'i5-lk-mi-idegal', use: 'teach', tier: 'clean', setting: 'housing', topic: 'the paperwork the housing waitlist asks for',
+    text: "At the same Calderwick council meeting about the housing waitlist, another speaker said: 'The housing waitlist asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived from overseas this year at the back, year after year. Fair treatment means changing what the list asks for until they are housed as often as everyone else.'",
     outcome: 'idegal', route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'until they are housed as often as everyone else',
             R1: ['It treats everyone alike, and it leaves people who arrived from overseas this year at the back, year after year',
@@ -81,7 +81,7 @@ FC.cases('ideology', 'u5', [
   // Looks like each person's freedom; is old ways (rights shows too, and gives way).
   { id: 'i5-x-parish', use: 'teach', tier: 'misleading', setting: 'faith', topic: 'a rector’s column on freedom and the church', name: 'The rector’s column',
     also: ['rights'],
-    text: "From the rector's column in the Ashby parish magazine: 'Each person should be free to worship, to speak and to keep what they earn, and the government should stay out of our lives. But freedom without the old ways is thin. The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us. Let us keep them, and let any change come slowly.'",
+    text: "From the rector's column in the Ashby parish newsletter: 'Each person should be free to worship, to speak and to keep what they earn, and the government should stay out of our lives. But freedom without the old ways is thin. The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us. Let us keep them, and let any change come slowly.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us',
             T1: 'Let us keep them, and let any change come slowly' },

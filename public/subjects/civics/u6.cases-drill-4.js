@@ -1,6 +1,6 @@
 // Civics, Unit Six: drill cases for stage four, the cases whose story points the wrong way, and the faulty claims of the last stage.
 // echo names a teaching case of a DIFFERENT name whose story this one is built to bring back: the feedback says so, which is how the
-// "does it look like a case you know?" second look is practised. This branch's questions have no tie-break, so no case carries `also`.
+// "does it look like a case you know?" second look is practiced. This branch's questions have no tie-break, so no case carries `also`.
 // A claim is something a person might say that uses a name wrongly, or reasons in one of the unit's ways. ask.type 'missing':
 // "what would you need to see before this name could be used?" (the choices are the key's "what you must be able to point to" lines).
 // ask.type 'option': the key's question is asked of the claim itself. The fault is shown after the learner commits, and the
@@ -9,25 +9,25 @@
 FC.cases('civics', 'u6', [
 
   /* ---------- Misleading ---------- */
-  { id: 'u6-r-alarms', use: 'drill', tier: 'misleading', setting: 'home', topic: 'smoke alarms in flats', echo: 'u6-cribs',
-    text: "Congress has written rules for the safety of the toys sold across the country. After a fire in a block of rented flats, the Brenmore legislature passed a law that every rented flat must have a working smoke alarm.",
+  { id: 'u6-r-alarms', use: 'drill', tier: 'misleading', setting: 'home', topic: 'smoke alarms in apartments', echo: 'u6-cribs',
+    text: "Congress has written rules for the safety of the toys sold across the country. After a fire in a rented apartment building, the Brenmore legislature passed a law that every rented apartment must have a working smoke alarm.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { D1: 'the Brenmore legislature passed a law', S1: 'the Brenmore legislature passed a law', S2: 'every rented flat must have a working smoke alarm' },
+    cues: { D1: 'the Brenmore legislature passed a law', S1: 'the Brenmore legislature passed a law', S2: 'every rented apartment must have a working smoke alarm' },
     reason: { D1: 'The case ends with a decision by a state’s lawmakers: {cue:D1}. Congress is in the first sentence only as background.',
               S1: 'The rule was made by one state’s lawmakers: {cue:S1}.',
               S2: 'The matter is {cue:S2}: renting a home. The federal rules in the story are about toys, a different matter, so no federal law covers this one, and no right is taken away.' },
-    not: { outcome: 'preempted', why: 'A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about flats. A federal law on a different matter changes nothing.' },
+    not: { outcome: 'preempted', why: 'A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about apartments. A federal law on a different matter changes nothing.' },
     wouldChange: 'If Congress had written one set of rules for smoke alarms in every home, and said that no state may set another, the state’s rule would give way and the name would be {o:preempted}.' },
 
-  { id: 'u6-r-bookstall', use: 'drill', tier: 'misleading', setting: 'money', topic: 'selling books on a sidewalk', echo: 'u6-stall-licence',
-    text: "The Halvard legislature passed a law that a book may be sold on a public sidewalk only with a licence from the state, and the state will refuse a licence to anyone who sells books that criticise the governor.",
+  { id: 'u6-r-bookstall', use: 'drill', tier: 'misleading', setting: 'money', topic: 'selling books on a sidewalk', echo: 'u6-stall-license',
+    text: "The Halvard legislature passed a law that a book may be sold on a public sidewalk only with a license from the state, and the state will refuse a license to anyone who sells books that criticize the governor.",
     outcome: 'protected', route: { D1: ['states'], S1: ['own'], S2: ['right'] },
-    cues: { D1: 'The Halvard legislature passed a law', S1: 'The Halvard legislature passed a law', S2: 'the state will refuse a licence to anyone who sells books that criticise the governor' },
+    cues: { D1: 'The Halvard legislature passed a law', S1: 'The Halvard legislature passed a law', S2: 'the state will refuse a license to anyone who sells books that criticize the governor' },
     reason: { D1: 'The case ends with a decision by a state’s lawmakers: {cue:D1}.',
               S1: 'The rule was made by one state’s lawmakers: {cue:S1}.',
-              S2: 'The rule takes away a right: {cue:S2}. A licence is something a state may ask for, but refusing it because of what books say takes away the right to publish.' },
-    not: { outcome: 'police', why: 'A licence to sell on a sidewalk sounds like a state’s ordinary business, as the food stall was. But this licence is refused because of what the books say, and a state may not take away a right.' },
-    wouldChange: 'If the state asked for the same licence from every seller on the sidewalk and refused none because of what they sell, the rule would take away no right and the name would be {o:police}.' },
+              S2: 'The rule takes away a right: {cue:S2}. A license is something a state may ask for, but refusing it because of what books say takes away the right to publish.' },
+    not: { outcome: 'police', why: 'A license to sell on a sidewalk sounds like a state’s ordinary business, as the food stall was. But this license is refused because of what the books say, and a state may not take away a right.' },
+    wouldChange: 'If the state asked for the same license from every seller on the sidewalk and refused none because of what they sell, the rule would take away no right and the name would be {o:police}.' },
 
   { id: 'u6-r-noise', use: 'drill', tier: 'misleading', setting: 'travel', topic: 'plane noise limits', echo: 'u6-airspace',
     text: "A federal law gives the federal air-travel agency the job of setting noise limits for planes, and says that the agency’s limits are a minimum and that a state may set stricter limits for flights over its own state parks. The Tolland legislature passed a law with stricter noise limits for flights over its state parks.",
@@ -40,9 +40,9 @@ FC.cases('civics', 'u6', [
     wouldChange: 'If the federal law had said that its noise limits are the only ones, the state’s stricter limits would give way and the name would be {o:preempted}.' },
 
   { id: 'u6-r-march', use: 'drill', tier: 'misleading', setting: 'community', topic: 'marching on a main road', echo: 'u6-rally-city',
-    text: "A group planned a march against a new road in the city of Hale. The Hale city council has a rule that any march in the city, whatever it is about, must keep to the pavement on one side of the road. The group asked to march down the middle of the main road, and the council voted no.",
+    text: "A group planned a march against a new road in the city of Hale. The Hale city council has a rule that any march in the city, whatever it is about, must keep to the sidewalk on one side of the road. The group asked to march down the middle of the main road, and the council voted no.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
-    cues: { D1: 'the council voted no', S1: 'The Hale city council has a rule', S2: 'any march in the city, whatever it is about, must keep to the pavement on one side of the road' },
+    cues: { D1: 'the council voted no', S1: 'The Hale city council has a rule', S2: 'any march in the city, whatever it is about, must keep to the sidewalk on one side of the road' },
     reason: { D1: 'The case ends with a decision by a city council: {cue:D1}. The group only asked.',
               S1: 'The rule is the city council’s own: {cue:S1}.',
               S2: 'The matter is where a march may go: {cue:S2}. The rule is the same for every march, whatever it is about, so it takes away no right. No federal law is named.' },

@@ -25,7 +25,7 @@ FC.cards('scams', 'u1', [
       'If the message shows none of those four, what is left is {a:D1.nothing}: {needs:nothing}.',
       'Whichever answer you give, put your finger on the words that show it. If you cannot point to a request, you do not have an answer yet.'
     ],
-    whenBoth: 'Some messages ask for two things at once. You have met two of them: the refund call asked Harold to let a stranger watch his device and then to send money back, and the council text asked Lorna to sign in and then to pay. Every message gets one answer, and the order of the list is how it is chosen: the earlier answer wins. Each pair below has a question that tells it apart.' },
+    whenBoth: 'Some messages ask for two things at once. You have met two of them: the refund call asked Harold to let a stranger watch his device and then to send money back, and the county text asked Lorna to sign in and then to pay. Every message gets one answer, and the order of the list is how it is chosen: the earlier answer wins. Each pair below has a question that tells it apart.' },
 
   { id: 'check-gate', kind: 'check', after: 'D1',
     case: 'g-council-bins',
@@ -40,18 +40,18 @@ FC.cards('scams', 'u1', [
       { step: 'D1',
         reason: [
           'The card that put the question in one place taught an order: look first for something to put on a device, then a way into an account, then money, then facts about the person, and if none of them is there, nothing. The email asks for no program, no file and no sign-in, so the first two do not apply.',
-          'Now look for money. It is here: {cue:D1}. That is a request to send money, with a date and an account. Neither of the two earlier answers is there, so the answer is the one for money.',
-          'The rest of the email, a collection for a leaving present, is the story. It makes the request sound friendly and ordinary, and it may well be. The question looks at what is asked, and what is asked is £20.'
+          'Now look for money. It is here: {cue:D1}. That is a request to send money, with a date and a place to send it. Neither of the two earlier answers is there, so the answer is the one for money.',
+          'The rest of the email, a collection for a going-away gift, is the story. It makes the request sound friendly and ordinary, and it may well be. The question looks at what is asked, and what is asked is $20.'
         ] }
     ],
     hold: {
-      neighbour: 'nothing',
+      neighbor: 'nothing',
       prompt: { kind: 'reason',
         lead: 'The first sentence of the email only tells the team that a collection is happening, so the case can look like a message that tells you something.',
         choices: [
           { id: 'a', text: 'The email tells the team that a collection for Jo’s present is happening.',
             note: 'True, and it is why the case can look like {a:D1.nothing}. But a message that tells you something and then asks you to send money has asked, and the asking is what the question looks at.' },
-          { id: 'b', text: 'It goes on to ask each person to send £20 to an account by Friday.' },
+          { id: 'b', text: 'It goes on to ask each person to send $20 to an account by Friday.' },
           { id: 'c', text: 'It comes from a colleague whom the team knows.',
             note: 'True, and it says who the email is from. It is not a request, so it does not separate the two answers you are choosing between.' }
         ],
@@ -71,7 +71,7 @@ FC.cards('scams', 'u1', [
 
   { id: 'worked-statement', kind: 'worked',
     h: 'A second whole case, where the opening points the wrong way',
-    link: 'The leaving present was a clean case: one thing was being asked. In this second case the first thing you notice is not the thing that decides it. Read to the end before you answer.',
+    link: 'The going-away gift was a clean case: one thing was being asked. In this second case the first thing you notice is not the thing that decides it. Read to the end before you answer.',
     case: 'g-statement',
     steps: [
       { step: 'D1',
@@ -82,13 +82,13 @@ FC.cards('scams', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'nothing',
+      neighbor: 'nothing',
       prompt: { kind: 'reason',
         lead: 'The text opens with a statement that is ready to view, so the case can look like a message that tells you something.',
         choices: [
           { id: 'a', text: 'It opens with news: the summer statement is ready to view.',
             note: 'True, and it is why the case can look like {a:D1.nothing}. If the text ended there, that would be the answer. It does not end there.' },
-          { id: 'b', text: 'It ends by telling Chidi to pay £79 at an address today, to keep his line open.' },
+          { id: 'b', text: 'It ends by telling Chidi to pay $79 at an address today, to keep his line open.' },
           { id: 'c', text: 'It comes from his broadband company, and the name of the company is correct.',
             note: 'True, and it says who the text claims to be from. It is not a request, so it does not separate the two answers you are choosing between.' }
         ],
@@ -130,7 +130,7 @@ FC.cards('scams', 'u1', [
     prompts: [
       { family: 'device', occasion: 'The last time a phone or a computer, a caller or a message asked you to install something, update something or open a file.' },
       { family: 'access', occasion: 'The last time a website sent you a code, asked you to sign in, or an app asked to connect to one of your accounts.' },
-      { family: 'money', occasion: 'A request for money that reached you in the last month: a bill, a collection, a fee, a favour for a friend.' },
+      { family: 'money', occasion: 'A request for money that reached you in the last month: a bill, a collection, a fee, a favor for a friend.' },
       { family: 'details', occasion: 'A form, a call or a chat in which you were asked about yourself.' },
       { family: 'nothing', occasion: 'A message that told you something and asked for nothing: a delivery, an appointment, a notice from your bank.' }
     ],
@@ -145,13 +145,13 @@ FC.cards('scams', 'u1', [
     ],
     cues: [
       { cue: 'a request to put something on my phone or computer, to open a file, or to let someone watch my device',
-        then: 'stop, and not do it until I have called the company on a number I already had' },
+        then: 'stop, and not do it until I have called the company at a number I already had' },
       { cue: 'a message that came to me asking me to sign in, give a code or press Allow',
         then: 'not use anything it gives me, and open the site or the app myself, from an address I already had' },
       { cue: 'a message asking me to pay or send money',
-        then: 'not pay on the spot, and call the person or the company first, on a number I already had' },
+        then: 'not pay on the spot, and call the person or the company first, at a number I already had' },
       { cue: 'a message, or a stranger, asking me about myself',
-        then: 'not answer until I know who is asking, and call them on a number I already had to find out' },
+        then: 'not answer until I know who is asking, and call them at a number I already had to find out' },
       { cue: 'a message that only tells me something',
         then: 'read it and leave it alone, and use my own app or my own number if I want to follow it up' }
     ] }

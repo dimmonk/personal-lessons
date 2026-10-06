@@ -10,15 +10,15 @@ FC.cases('math', 'u4', [
     use: 'return',
     tier: 'clean',
     setting: 'work',
-    topic: 'tins at a food bank',
+    topic: 'cans at a food bank',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A food bank holds 120 tins, and a delivery brings 45 more tins every week. How many tins will it hold after 8 weeks?',
+    text: 'A food bank holds 120 cans, and a delivery brings 45 more cans every week. How many cans will it hold after 8 weeks?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
-      M1: ['a delivery brings 45 more tins every week'],
-      G1: ['a delivery brings 45 more tins every week'],
-      G2: ['How many tins will it hold after 8 weeks?']
+      M1: ['a delivery brings 45 more cans every week'],
+      G1: ['a delivery brings 45 more cans every week'],
+      G2: ['How many cans will it hold after 8 weeks?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -32,23 +32,23 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find where it starts and how much it changes each time',
-        working: 'Start: 120 tins. Each week it goes up by 45 tins'
+        working: 'Start: 120 cans. Each week it goes up by 45 cans'
       },
-      { does: 'Find how much it changes in all', working: '45 tins × 8 weeks = 360 tins' },
-      { does: 'Add that to the start', working: '120 + 360 = 480 tins' }
+      { does: 'Find how much it changes in all', working: '45 cans × 8 weeks = 360 cans' },
+      { does: 'Add that to the start', working: '120 + 360 = 480 cans' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '480 tins' },
+        { id: 'r', text: '480 cans' },
         {
           id: 's1',
-          text: '165 tins',
+          text: '165 cans',
           slip: 'you change the amount only once, instead of once for each week.'
         },
         {
           id: 's2',
-          text: '1,320 tins',
+          text: '1,320 cans',
           slip: 'you add the change to the start first and then multiply by the number of weeks, so the start is counted again every week.'
         }
       ]
@@ -64,12 +64,12 @@ FC.cases('math', 'u4', [
     topic: 'oil in a heating tank',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A heating tank holds 90 litres of oil, and the heater burns 6 litres every day. After how many days will 30 litres be left?',
+    text: 'A heating tank holds 90 liters of oil, and the heater burns 6 liters every day. After how many days will 30 liters be left?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['howlong'] },
     cues: {
-      M1: ['the heater burns 6 litres every day'],
-      G1: ['the heater burns 6 litres every day'],
-      G2: ['After how many days will 30 litres be left?']
+      M1: ['the heater burns 6 liters every day'],
+      G1: ['the heater burns 6 liters every day'],
+      G2: ['After how many days will 30 liters be left?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -83,15 +83,15 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find where it starts and how much it changes each time',
-        working: 'Start: 90 litres. Each day it goes down by 6 litres'
+        working: 'Start: 90 liters. Each day it goes down by 6 liters'
       },
       {
         does: 'Find how much it must change in all to reach the target',
-        working: '90 − 30 = 60 litres to be taken away'
+        working: '90 − 30 = 60 liters to be taken away'
       },
       {
         does: 'Divide that by how much it changes each time',
-        working: '60 litres ÷ 6 litres = 10 days'
+        working: '60 liters ÷ 6 liters = 10 days'
       }
     ],
     answer: {
@@ -121,11 +121,11 @@ FC.cases('math', 'u4', [
     topic: 'a student loan paid off',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A student owes €2,400, and she pays off €75 of it every month, with no interest. How much will she owe after 12 months?',
+    text: 'A student owes $2,400, and she pays off $75 of it every month, with no interest. How much will she owe after 12 months?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
-      M1: ['she pays off €75 of it every month, with no interest'],
-      G1: ['she pays off €75 of it every month, with no interest'],
+      M1: ['she pays off $75 of it every month, with no interest'],
+      G1: ['she pays off $75 of it every month, with no interest'],
       G2: ['How much will she owe after 12 months?']
     },
     reason: {
@@ -140,23 +140,23 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find where it starts and how much it changes each time',
-        working: 'Start: €2,400. Each month it goes down by €75'
+        working: 'Start: $2,400. Each month it goes down by $75'
       },
-      { does: 'Find how much it changes in all', working: '€75 × 12 months = €900' },
-      { does: 'Take that away from the start', working: '€2,400 − €900 = €1,500' }
+      { does: 'Find how much it changes in all', working: '$75 × 12 months = $900' },
+      { does: 'Take that away from the start', working: '$2,400 − $900 = $1,500' }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€1,500' },
+        { id: 'r', text: '$1,500' },
         {
           id: 's1',
-          text: '€2,325',
+          text: '$2,325',
           slip: 'you change the amount only once, instead of once for each month.'
         },
         {
           id: 's2',
-          text: '€3,300',
+          text: '$3,300',
           slip: 'you add the fall to the start instead of taking it away.'
         }
       ]

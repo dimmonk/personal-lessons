@@ -122,12 +122,12 @@ FC.cases('math', 'u6', [
     topic: 'a map of a region',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map. How far apart are they on the ground, in kilometres?',
+    text: 'A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map. How far apart are they on the ground, in kilometers?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
-      M1: 'How far apart are they on the ground, in kilometres?',
+      M1: 'How far apart are they on the ground, in kilometers?',
       S1: 'A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map',
-      S2: 'How far apart are they on the ground, in kilometres?'
+      S2: 'How far apart are they on the ground, in kilometers?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
@@ -239,12 +239,12 @@ FC.cases('math', 'u6', [
     topic: 'a model of a house',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A builder shows clients a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide. How high is the real house, in metres?',
+    text: 'A builder shows clients a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide. How high is the real house, in meters?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
-      M1: 'How high is the real house, in metres?',
+      M1: 'How high is the real house, in meters?',
       S1: 'a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide',
-      S2: 'How high is the real house, in metres?'
+      S2: 'How high is the real house, in meters?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',

@@ -11,7 +11,7 @@ FC.cards('ideology', 'u1', [
     h: 'The question you have been answering all along',
     link: 'Since the depot leaflet you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, worded as it always is, and says why it is asked before anything else.',
     decides: [
-      'A text can only be read for what it is about. If you take a notice about a lift for a text on the side of the workers, you go looking for owners that are not there. If you take a text about what every person is owed for a text about one people, you change whom it speaks for. Getting the first answer wrong means asking the wrong questions next, however carefully you ask them.',
+      'A text can only be read for what it is about. If you take a notice about an elevator for a text on the side of the workers, you go looking for owners that are not there. If you take a text about what every person is owed for a text about one people, you change whom it speaks for. Getting the first answer wrong means asking the wrong questions next, however carefully you ask them.',
       'That is why this question comes first, before any finer name, and why every case in this subject starts with it. Each of the first four answers is where a different {t:ideology} starts.',
       'In this unit it is the only question, so its answer is the name. In the rest of the subject, each of the first four answers is followed by questions that lead to a finer name, and the fifth answer is followed by nothing. The answers you give on the way to a name are this first answer, and then the answers to the questions that follow it. Once there is more than one answer on the way to a name, two things are marked separately: the name you give a case, and your answers on the way to it. A right name reached by a wrong answer to this first question counts as a miss, which is why the first question gets a whole unit of practice.'
     ],
@@ -47,7 +47,7 @@ FC.cards('ideology', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'nation',
+      neighbor: 'nation',
       prompt: { kind: 'reason',
         lead: 'The letter speaks of this country, so the case can look like a text that puts a people first.',
         choices: [
@@ -83,7 +83,7 @@ FC.cards('ideology', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'nation',
+      neighbor: 'nation',
       prompt: { kind: 'reason',
         lead: 'The speech talks about "the nation" and "a country", so the case can look like a text that puts a people first.',
         choices: [
@@ -133,7 +133,7 @@ FC.cards('ideology', 'u1', [
       { family: 'nation', occasion: 'A speech, a column or a slogan that spoke of "us", the country or its ordinary people.' },
       { family: 'tradition', occasion: 'A holiday, a Sunday, a custom or a faith that someone said should come before convenience.' },
       { family: 'rights', occasion: 'An argument about whether a rule was fair to everyone, or about what a person can expect to be given.' },
-      { family: 'none', occasion: 'A notice, a timetable or a plain proposal that someone described with a big political name.' }
+      { family: 'none', occasion: 'A notice, a schedule or a plain proposal that someone described with a big political name.' }
     ],
     places: ['At home', 'At work', 'In the news', 'On my phone'] }
 ]);

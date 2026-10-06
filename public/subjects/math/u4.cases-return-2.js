@@ -13,7 +13,7 @@ FC.cases('math', 'u4', [
     topic: 'a deposit account',
     kind: 'problem',
     outcome: 'expg',
-    text: 'A saver puts €4,000 into an account that pays 5% a year, and she leaves all the interest in. What will the account hold after 3 years?',
+    text: 'A saver puts $4,000 into an account that pays 5% a year, and she leaves all the interest in. What will the account hold after 3 years?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     cues: {
       M1: ['pays 5% a year, and she leaves all the interest in'],
@@ -36,25 +36,25 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Multiply the start by it once for each time the amount changes',
-        working: 'Year 1: €4,000 × 1.05 = €4,200; Year 2: €4,200 × 1.05 = €4,410; Year 3: €4,410 × 1.05 = €4,630.50'
+        working: 'Year 1: $4,000 × 1.05 = $4,200; Year 2: $4,200 × 1.05 = $4,410; Year 3: $4,410 × 1.05 = $4,630.50'
       },
       {
         does: 'Round at the end, and say what it shows',
-        working: '€4,630.50 needs no rounding, so the answer after 3 years is €4,630.50'
+        working: '$4,630.50 needs no rounding, so the answer after 3 years is $4,630.50'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€4,630.50' },
+        { id: 'r', text: '$4,630.50' },
         {
           id: 's1',
-          text: '€4,600.00',
+          text: '$4,600.00',
           slip: 'you add the first rise again each time, so every rise is the same size instead of growing.'
         },
         {
           id: 's2',
-          text: '€4,410.00',
+          text: '$4,410.00',
           slip: 'you multiply one time too few, once for every time but the last.'
         }
       ]
@@ -192,12 +192,12 @@ FC.cases('math', 'u4', [
     topic: 'a machine losing value',
     kind: 'problem',
     outcome: 'logsolve',
-    text: 'A machine is worth €20,000, and its value falls by 20% every year. After how many years will it be worth €10,000?',
+    text: 'A machine is worth $20,000, and its value falls by 20% every year. After how many years will it be worth $10,000?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['howlong'] },
     cues: {
       M1: ['its value falls by 20% every year'],
       G1: ['its value falls by 20% every year'],
-      G2: ['After how many years will it be worth €10,000?']
+      G2: ['After how many years will it be worth $10,000?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -215,7 +215,7 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Divide the target by the start, to see how many times the start it must become',
-        working: '€10,000 ÷ €20,000 = 0.5'
+        working: '$10,000 ÷ $20,000 = 0.5'
       },
       {
         does: 'Divide the log of that by the log of the number from the first step',
@@ -223,7 +223,7 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Round, check against whole numbers of times, and say what it shows',
-        working: 'Starting from €20,000, 3 multiplications by 0.8 give €10,240, still above the target; 4 multiplications give €8,192, below it. So the target is reached during the 4th year. Rounded, the answer is about 3.1 years'
+        working: 'Starting from $20,000, 3 multiplications by 0.8 give $10,240, still above the target; 4 multiplications give $8,192, below it. So the target is reached during the 4th year. Rounded, the answer is about 3.1 years'
       }
     ],
     answer: {

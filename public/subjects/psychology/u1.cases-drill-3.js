@@ -30,7 +30,7 @@ FC.cases('psychology', 'u1', [
   { id: 'g-rev-pattern', use: 'drill', kind: 'reverse', outcome: 'pattern', expect: 'find',
     options: [
       { text: 'It started on the day the letter came, and stopped when the answer arrived.', voice: 'none' },
-      { text: 'He said it to her face, and she apologised.', voice: 'tactic' },
+      { text: 'He said it to her face, and she apologized.', voice: 'tactic' },
       { text: 'Her school friends, her first employer and her grown-up children all describe it.', voice: 'pattern' },
       { text: 'He listed what the old van had cost him and what a new one would.', voice: 'reasoning' }
     ],
@@ -43,7 +43,7 @@ FC.cases('psychology', 'u1', [
       { text: '"You made me do it. You know how you get."', voice: 'tactic' },
       { text: '"Every job she has ever had, it ends the same way."', voice: 'pattern' }
     ],
-    why: 'It ties the behaviour to one week and to something real that happened, and it claims nothing more.' },
+    why: 'It ties the behavior to one week and to something real that happened, and it claims nothing more.' },
 
   /* ---------- Faulty claims: the first is worked for the learner; then commit first, the fault, the claim put right ---------- */
   { id: 'g-claim-demo', use: 'claim',

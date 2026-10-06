@@ -23,11 +23,11 @@ FC.cases('civics', 'u1', [
     not: { outcome: 'congress', why: 'A state legislature votes on a bill just as the House and the Senate do. But these lawmakers belong to one state and decide for its schools alone.' } },
 
   { id: 'g-judgevote', use: 'drill', tier: 'clean', setting: 'work', topic: 'a federal judge is approved',
-    text: "The President chose Ms Aldous to be a federal judge. On Wednesday the Senate voted to approve her, and she will start work next month.",
+    text: "The President chose Ms. Aldous to be a federal judge. On Wednesday the Senate voted to approve her, and she will start work next month.",
     route: { D1: ['congress'] },
     cues: { D1: 'the Senate voted to approve her' },
     reason: { D1: 'The last decision is a vote in the Senate on a person the President chose: {cue:D1}. The President’s choice came first, and it is how the matter reached the Senate.' },
-    not: { outcome: 'president', why: 'Choosing Ms Aldous was the President’s act, and it can sound like the last decision. But the case reports the Senate’s vote, and that vote comes after the choice.' } },
+    not: { outcome: 'president', why: 'Choosing Ms. Aldous was the President’s act, and it can sound like the last decision. But the case reports the Senate’s vote, and that vote comes after the choice.' } },
 
   { id: 'g-parkdogs', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'dogs on national park trails',
     text: "On Monday the federal parks agency announced that dogs must be kept on a leash on every trail in the national parks from May 1. Rangers will check.",
@@ -37,10 +37,10 @@ FC.cases('civics', 'u1', [
     not: { outcome: 'states', why: 'A leash rule is the kind of rule a town makes for its parks. But this office belongs to the government of the whole country, and the parks it names are national.' } },
 
   { id: 'g-eviction', use: 'drill', tier: 'clean', setting: 'home', topic: 'unpaid rent',
-    text: "Mrs Fell’s landlord says she owes three months’ rent. She says she paid. On Monday a judge heard them both and ruled that she had paid.",
+    text: "Mrs. Fell’s landlord says she owes three months’ rent. She says she paid. On Monday a judge heard them both and ruled that she had paid.",
     route: { D1: ['courts'] },
     cues: { D1: 'a judge heard them both and ruled that she had paid' },
-    reason: { D1: 'The last decision is a judge’s: {cue:D1}. The landlord and Mrs Fell are the two sides of a quarrel, and neither of them decides it.' },
+    reason: { D1: 'The last decision is a judge’s: {cue:D1}. The landlord and Mrs. Fell are the two sides of a quarrel, and neither of them decides it.' },
     not: { outcome: 'states', why: 'Renting a home is a matter of state and local rules, and that can pull toward the state. But nobody in the case is making a rule. A judge is deciding a quarrel between two people.' } },
 
   { id: 'g-leash', use: 'drill', tier: 'clean', setting: 'community', topic: 'dogs in town parks',
@@ -98,18 +98,18 @@ FC.cases('civics', 'u1', [
     wouldChange: 'If the case said the House had voted to change the tax forms, the last decision would be a vote, and the answer would be {a:D1.congress}.' },
 
   { id: 'g-noise', use: 'drill', tier: 'clean', setting: 'home', topic: 'music after ten at night',
-    text: "A tenant says the noise from the flat above keeps her awake. She has asked a judge to order the upstairs tenant to stop playing music after ten at night.",
+    text: "A tenant says the noise from the apartment above keeps her awake. She has asked a judge to order the upstairs tenant to stop playing music after ten at night.",
     route: { D1: ['courts'] },
     cues: { D1: 'She has asked a judge to order the upstairs tenant to stop playing music after ten at night' },
     reason: { D1: 'The case ends with a request: {cue:D1}. The decision has been put to a judge, so it is the judge’s.' },
-    not: { outcome: 'states', why: 'A noise quarrel in a block of flats can sound like a matter for the town. But nobody in the case is making a rule. A tenant is asking a judge to decide.' },
+    not: { outcome: 'states', why: 'A noise quarrel in an apartment building can sound like a matter for the town. But nobody in the case is making a rule. A tenant is asking a judge to decide.' },
     wouldChange: 'If the case ended with the town council voting to ban loud music after ten, the answer would be {a:D1.states}.' },
 
-  { id: 'g-hairlicence', use: 'drill', tier: 'clean', setting: 'work', topic: 'the fee for a hairdresser’s licence',
-    text: "Hairdressers in the state of Calder must hold a state licence. On Tuesday the Calder state legislature voted to lower the licence fee from $120 to $80.",
+  { id: 'g-hairlicence', use: 'drill', tier: 'clean', setting: 'work', topic: 'the fee for a hairdresser’s license',
+    text: "Hairdressers in the state of Calder must hold a state license. On Tuesday the Calder state legislature voted to lower the license fee from $120 to $80.",
     route: { D1: ['states'] },
-    cues: { D1: 'the Calder state legislature voted to lower the licence fee from $120 to $80' },
-    reason: { D1: 'The last decision is a vote by the lawmakers of one state: {cue:D1}. The licence is a state’s own.' },
+    cues: { D1: 'the Calder state legislature voted to lower the license fee from $120 to $80' },
+    reason: { D1: 'The last decision is a vote by the lawmakers of one state: {cue:D1}. The license is a state’s own.' },
     not: { outcome: 'congress', why: 'Lowering a fee by a vote is just what the House and the Senate do. But these lawmakers belong to one state and set a fee that only that state’s hairdressers pay.' },
     wouldChange: 'If the case ended with a federal office announcing a national fee, the answer would be {a:D1.president}.' }
 ]);

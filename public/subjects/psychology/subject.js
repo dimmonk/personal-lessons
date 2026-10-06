@@ -1,7 +1,7 @@
 // Psychology: subject record. Revision is a real field (it used to be parsed out of an "eyebrow" label).
 FC.subject('psychology', {
   name: 'Psychology',
-  rev: 4,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
+  rev: 5,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
   standard: 1,            // lesson-standard version the subject's key was written to
   action: false,          // true for subjects the learner acts on (Scams, Wealth Preservation, Statistical Claims)
   blurb: 'Before you reach for a label like “narcissist” or “manipulative”, work out what kind of case you are looking at, and name it from the words in the case that decide it.',
@@ -25,6 +25,7 @@ FC.subject('psychology', {
     { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the reasoning branch of the key rewritten in plain words, five specimens re-keyed.' },
     { rev: 2, date: '2026-10-05', change: 'Blurb reworded so it no longer types key answers by hand.' },
     { rev: 3, date: '2026-10-05', change: 'Whole key rewritten in plain words: the first question has four answers, including a passing moment; the branches for something one person does to another and for a lasting way someone is each ask one question, and each has a name for cases where nothing is wrong. Unit One rebuilt as the gate unit.' },
-    { rev: 4, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+    { rev: 4, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+    { rev: 5, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
   ]
 });

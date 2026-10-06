@@ -13,15 +13,15 @@ FC.cards('wealth', 'u3', [
     everyday: [
       'You have probably heard some version of these stories.',
       'A woman who has worked for one company for thirty years has most of her savings in its shares. “I know the place,” she says. “It has never let me down.”',
-      'A man started a roofing firm twenty years ago. Everything he has is in it, and last year he borrowed against it to buy a lorry.',
-      'A landlord has six flats and a shop, and every one is in his own name. A tenant has just fallen on the stairs of one of them.',
+      'A man started a roofing firm twenty years ago. Everything he has is in it, and last year he borrowed against it to buy a truck.',
+      'A landlord has six rental houses and a store, and every one is in his own name. A tenant has just fallen on the stairs of one of them.',
       'A couple have a house with a pool. Their insurance would pay up to half a million. A lawyer tells them a serious injury to a child can bring a demand for four times that.',
-      'And two more, in which the same shape is there and nothing needs doing. A woman runs a brewery that is most of what she owns, and she has six years of spending in the bank, the rest of her money spread over funds, and nobody holding her shares as security for a loan. A man owes a small sum on a flat, at a rate fixed for fifteen years, and the bank cannot ask for the money back.',
+      'And two more, in which the same shape is there and nothing needs doing. A woman runs a brewery that is most of what she owns, and she has six years of spending in the bank, the rest of her money spread over funds, and nobody holding her shares as security for a loan. A man owes a small sum on a condo, at a rate fixed for fifteen years, and the bank cannot ask for the money back.',
       'In every one of these, the first question finds the same thing: {a:D1.shock}. That answer says where to look. What you do about it depends on what the one thing is and what the person can do about it, and in the last two cases the honest answer is to leave it alone. This unit teaches you to tell the seven apart.'
     ],
     add: [
       'Every case in this unit begins with that first answer. The unit teaches the next question, which asks what the one thing is and what can be done about it. It has seven answers, and each leads to one name. Six of the names say what to do. One says that nothing needs doing.',
-      'Each name is taught with cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away.'
+      'Each name is taught with cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away.'
     ],
     map: { branch: 'shock' } },
 
@@ -31,9 +31,9 @@ FC.cards('wealth', 'u3', [
     link: 'The next question is about one thing that could take most of what a person has. Before it, one word, so that every case means the same thing by it.',
     case: 'w3-h-t-holding',
     plain: [
-      'Joanna owns four things she could sell: shares in the water company (£30,000), a flat (£180,000), a quarter of her brother’s bakery (£40,000) and a pension fund (£60,000). Together that is £310,000.',
-      'Each of the four is one investment: one company’s shares, one property, one business. The pension fund is one investment too, but inside it are about five hundred companies, so no one of them is much of it.',
-      'What matters is how much of everything each one is. Divide its value by the total. The flat is £180,000 out of £310,000, which is 58%. The water shares are £30,000 out of £310,000, which is 10%. If the flat lost a third of its value, £60,000, Joanna would lose 19% of everything she has. If the water shares lost a third, £10,000, she would lose 3%. The same fall does about six times the harm to the one that is larger.',
+      'Joanna owns four things she could sell: shares in the water company ($30,000), a condo ($180,000), a quarter of her brother’s bakery ($40,000) and a 401(k) fund ($60,000). Together that is $310,000.',
+      'Each of the four is one investment: one company’s shares, one property, one business. The 401(k) fund is one investment too, but inside it are about five hundred companies, so no one of them is much of it.',
+      'What matters is how much of everything each one is. Divide its value by the total. The condo is $180,000 out of $310,000, which is 58%. The water shares are $30,000 out of $310,000, which is 10%. If the condo lost a third of its value, $60,000, Joanna would lose 19% of everything she has. If the water shares lost a third, $10,000, she would lose 3%. The same fall does about six times the harm to the one that is larger.',
       'The cases in this unit all have one investment that is a large part of everything, or something that could reach all of it.'
     ],
     after: 'One of these investments is {t:holding}. From here on, when a case says the holding, it means one company’s shares, one property or one business, and the question is how much of {t:pot} it is.' },
@@ -43,16 +43,16 @@ FC.cards('wealth', 'u3', [
     link: 'The question has seven answers. The first is the plainest: one holding that is most of what the person has, and nothing in the way of doing something about it.',
     case: 'w3-h-div-1', mark: 'S1',
     strip: [
-      'There is one person, Meena, and about £530,000: £420,000 in one company’s shares, and £110,000 in savings and a pension.',
+      'There is one person, Meena, and about $530,000: $420,000 in one company’s shares, and $110,000 in savings and a 401(k).',
       'The shares are most of it. The case says nothing about prices in general, a bill or a charge.',
       'Nothing stops her selling them: they can be sold on any day.',
       'She takes no part in running the company: she has never worked for it and has no say in how it is run.'
     ],
     explain: [
-      'What you are shown is a shape: £420,000 out of £530,000, which is 79%, rests on one company. If the company does badly, most of what Meena has does badly with it, whatever the rest of the market is doing. If its price halves, she loses £210,000, which is 40% of everything she has. In {t:fund} that holds five hundred companies, the same loss would need companies in general to fall by 40%, because no one of them is much of it.',
+      'What you are shown is a shape: $420,000 out of $530,000, which is 79%, rests on one company. If the company does badly, most of what Meena has does badly with it, whatever the rest of the market is doing. If its price halves, she loses $210,000, which is 40% of everything she has. In {t:fund} that holds five hundred companies, the same loss would need companies in general to fall by 40%, because no one of them is much of it.',
       'Two facts about Meena decide what can be done about it, and the case gives both. She is free to sell, because nothing stops her. And she takes no part in running the company, so selling costs her no job and no say. When both are true, the plain remedy is to sell some of the shares and put the money into funds that hold many companies. If either fact were different, the answer would be a different one.',
-      'The remedy has a shape, and it is a schedule: a fixed plan of sales on fixed dates, written down before the first sale. Meena could sell £105,000 of shares every three months for a year. That is four sales, and £105,000 × 4 is £420,000, so after a year nothing is left in the one company, and the money is in funds across hundreds of them.',
-      'Why not sell everything today? Nobody knows which day is a good day to sell. One sale puts all £420,000 on one day’s price. Four sales put a quarter on each of four prices, some higher and some lower, so she is not betting everything on a single day. The aim is not to be rid of the company for ever. It is that no one company should be most of what she has.'
+      'The remedy has a shape, and it is a schedule: a fixed plan of sales on fixed dates, written down before the first sale. Meena could sell $105,000 of shares every three months for a year. That is four sales, and $105,000 × 4 is $420,000, so after a year nothing is left in the one company, and the money is in funds across hundreds of them.',
+      'Why not sell everything today? Nobody knows which day is a good day to sell. One sale puts all $420,000 on one day’s price. Four sales put a quarter on each of four prices, some higher and some lower, so she is not betting everything on a single day. The aim is not to be rid of the company for ever. It is that no one company should be most of what she has.'
     ],
     feature: { step: 'S1', option: 'freeheld' },
     name: [
@@ -61,12 +61,12 @@ FC.cards('wealth', 'u3', [
     ] },
 
   { id: 'w3-again-diversify', kind: 'again', outcome: 'diversify',
-    link: 'The last card gave you what to point to: {needs:diversify}. Here is a second case, with a very different story, in which the one holding is a building and an agent does the running.',
+    link: 'The last card gave you what to point to: {needs:diversify}. Here is a second case, with a very different story, in which the one holding is a building and a property manager does the running.',
     first: 'w3-h-div-1', second: 'w3-h-div-2', step: 'S1',
     instruction: 'Find what the two cases share. Ignore the difference between shares and a building, and ignore who the people are. Look at one thing only: which words show both that nothing stops the person selling and that they take no part in running it?',
     prompt: { kind: 'phrase', answer: 'The building could be sold whenever he chose' },
     shared: [
-      'Meena’s shares and Karl’s building look nothing alike, and the two cases share the same facts. Each person has one holding that is most of what they have: £420,000 out of £530,000 for Meena (79%), and £600,000 out of £690,000 for Karl (87%). Each is free to sell it. And neither takes part in running it: Meena has never worked for the bus company, and Karl’s letting agency does the work.',
+      'Meena’s shares and Karl’s building look nothing alike, and the two cases share the same facts. Each person has one holding that is most of what they have: $420,000 out of $530,000 for Meena (79%), and $600,000 out of $690,000 for Karl (87%). Each is free to sell it. And neither takes part in running it: Meena has never worked for the bus company, and Karl’s property manager does the work.',
       'What the two share is therefore not the thing owned. It is what the person can do about it. That is what {a:S1.freeheld} names, and it holds for shares, a building, or any other single investment of this kind, one the person can sell and takes no part in running.'
     ] },
 
@@ -77,7 +77,7 @@ FC.cards('wealth', 'u3', [
       'Every case in this unit has two layers. The top layer is the story: shares, a building, a business, a lawsuit, a loan. The layer underneath is what the person can do about the one thing that could take most of what they have.',
       'The seven answers belong to the layer underneath. The same story can carry any of them. A building can be {t:holding} the owner is free to sell, a business the owner runs, or one of several properties that could each bring {t:claim}. A case about shares can be shares the person may sell, shares they may not sell yet, or shares in a company they run.',
       'From here on, the cases change their stories on purpose. Sometimes two cases will share a person and a story and differ only underneath. When that happens, the shared story is there to show you that it decides nothing.',
-      'Two more things change on purpose. One is size: £30,000 and £3,000,000 can be the same kind of case. The other is whether anything needs doing. In some cases the one thing is already looked after, and the answer is to leave it alone. Seeing that is part of the skill.'
+      'Two more things change on purpose. One is size: $30,000 and $3,000,000 can be the same kind of case. The other is whether anything needs doing. In some cases the one thing is already looked after, and the answer is to leave it alone. Seeing that is part of the skill.'
     ],
     fixed: ['what the person can do about the one thing, which is what the question is about: {q:S1}'],
     varies: ['the kind of money', 'the people', 'the size of the sums', 'how worried you would be', 'whether anything needs doing'] },
@@ -89,14 +89,14 @@ FC.cards('wealth', 'u3', [
       'It is often something the person did not choose. It was left to them, paid as wages in the past, kept from a sale, or bought long ago and never looked at again.',
       'The person is usually fond of it or sure of it, because it has done well, or because they know it.',
       'Nothing is wrong with it yet. The company may be doing well, and the person may be pleased. The case is about what would happen if it did not.',
-      'Nothing stands between the person and a sale except their own wish to hold on. They could name the broker or the agent they would use.',
-      'Someone else does the running. A letting agency runs the building; a board and managers run the company. The owner’s own work and pay do not depend on it.'
+      'Nothing stands between the person and a sale except their own wish to hold on. They could name the broker or the real estate agent they would use.',
+      'Someone else does the running. A property manager runs the building; a board and managers run the company. The owner’s own work and pay do not depend on it.'
     ],
     not: [
       'Having a lot in one company is not this answer on its own. The case must also show that nothing stops the sale and that the person does not run the company. If a rule stops the sale, or the person runs the company, the answer is another one.',
       'It is also not a verdict that the company is a bad one. The answer says only that no one company should be most of what a person has.'
     ],
-    wild: ['"It was my father’s company. I couldn’t sell it."', '"I’ve always held on to those shares."', '"It has done so well for me."', '"The agent runs it all. I just collect."', '"It’s most of what I have, but it’s a good company."'],
+    wild: ['"It was my father’s company. I couldn’t sell it."', '"I’ve always held on to those shares."', '"It has done so well for me."', '"The property manager runs it all. I just collect."', '"It’s most of what I have, but it’s a good company."'],
     self: 'In your own life it is the sentence “most of what I have is in...” finished with one company or one property that you did not run and could sell tomorrow: shares left to you, shares from an old employer, a building bought long ago.',
     ask: '“If I sold it all tomorrow, what would stop me?” If the answer is nothing but the wish to hold on, and you take no part in running it, you are probably looking at this answer.',
     act: [

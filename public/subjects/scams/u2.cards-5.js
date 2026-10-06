@@ -16,7 +16,7 @@ FC.cards('scams', 'u2', [
       'It is also the only question that this part asks, and the reason is worth saying. The things that would tell the four apart afterwards are all things you can see only when it is too late: a file that runs quietly and shows nothing, a technician’s ordinary-looking lists, a balance on a page that someone else is controlling. A question about those could be answered only after the harm. So the question is about the one thing that you can know at the start, and every request gets its name from that.'
     ],
     how: [
-      'Ask who started it. If you did, ask where you went: to the maker’s own website through an address that you typed or had saved, or to your device’s app store. That is the answer for {o:realinstall}, and for nothing else. If something came to you, ask what it was. A file or a link in a message, with nobody on the phone, is the file answer, and it leads to {o:malware}. A warning, a call, a message or an advert that offers to fix a problem with your device is the support answer, and it leads to {o:techsupport}. A caller whose reason is money, a refund owed to you or a danger to your bank account, is the refund answer, and it leads to {o:refundscam}.',
+      'Ask who started it. If you did, ask where you went: to the maker’s own website through an address that you typed or had saved, or to your device’s app store. That is the answer for {o:realinstall}, and for nothing else. If something came to you, ask what it was. A file or a link in a message, with nobody on the phone, is the file answer, and it leads to {o:malware}. A warning, a call, a message or an ad that offers to fix a problem with your device is the support answer, and it leads to {o:techsupport}. A caller whose reason is money, a refund owed to you or a danger to your bank account, is the refund answer, and it leads to {o:refundscam}.',
       'Put your finger on the words that show it: where you went, what arrived, what was offered. If you cannot point, you do not have an answer yet.',
       'You do not need to wait for what happens next. If the answer is not the one for software that you fetched yourself, the next step is the same whichever of the three it turns out to be: stop, and use {t:check}. The questions that could only be answered afterwards are not asked, because by then the harm is done.'
     ],
@@ -35,7 +35,7 @@ FC.cards('scams', 'u2', [
       { step: 'D1',
         reason: [
           'The email asks Ahmed to open a file: {cue:D1}. That is a request to open a file on his computer, so the answer is the one for something on a device. Nothing in it asks for a password, a code, money or facts about him, so the later answers do not apply.',
-          'The story, a wage slip, is what makes it feel ordinary. The question looks at what is asked, and what is asked is to open a file.'
+          'The story, a pay stub, is what makes it feel ordinary. The question looks at what is asked, and what is asked is to open a file.'
         ] },
       { step: 'I1',
         reason: [
@@ -44,7 +44,7 @@ FC.cards('scams', 'u2', [
         ] }
     ],
     hold: {
-      neighbour: 'realinstall',
+      neighbor: 'realinstall',
       prompt: { kind: 'reason',
         lead: 'When Ahmed opens the file, his computer will show the same box that every installation shows, so the case can look like software that a person chose.',
         choices: [
@@ -70,7 +70,7 @@ FC.cards('scams', 'u2', [
 
   { id: 'worked-form', kind: 'worked',
     h: 'A second whole case, where the story points the wrong way',
-    link: 'The wage slip was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
+    link: 'The pay stub was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
     case: 'dv-w-form',
     steps: [
       { step: 'D1',
@@ -85,7 +85,7 @@ FC.cards('scams', 'u2', [
         ] }
     ],
     hold: {
-      neighbour: 'malware',
+      neighbor: 'malware',
       prompt: { kind: 'reason',
         lead: 'An email with a file to open and run arrives as the man speaks, so the case can look like a file in a message.',
         choices: [
@@ -131,8 +131,8 @@ FC.cards('scams', 'u2', [
     ],
     prompts: [
       { outcome: 'realinstall', occasion: 'The last program or app that you chose to get yourself, and where you went to get it.' },
-      { outcome: 'malware', occasion: 'A file or a link in an email, a text or a chat that you were not expecting: an invoice, a parcel, a photo.' },
-      { outcome: 'techsupport', occasion: 'A warning, a call or a search result that said something was wrong with a phone or a computer, and gave you someone to ring.' },
+      { outcome: 'malware', occasion: 'A file or a link in an email, a text or a chat that you were not expecting: an invoice, a package, a photo.' },
+      { outcome: 'techsupport', occasion: 'A warning, a call or a search result that said something was wrong with a phone or a computer, and gave you someone to call.' },
       { outcome: 'refundscam', occasion: 'A call or a message about a refund, a double charge or your bank account, from a company that you really deal with.' }
     ],
     places: ['At home', 'At work', 'On my phone', 'On a call'] },
@@ -145,10 +145,10 @@ FC.cards('scams', 'u2', [
       'The lines below are examples to start from. You can use one, change it, or write your own two lines. Nothing is saved until you press the button.'
     ],
     cues: [
-      { cue: 'a warning on my device that gives me a number to ring',
-        then: 'not ring it, close the page or the browser, and ring the company on the number on my bill if I want to be sure' },
+      { cue: 'a warning on my device that gives me a number to call',
+        then: 'not call it, close the page or the browser, and call the company at the number on my bill if I want to be sure' },
       { cue: 'a caller or a message that says I am owed a refund, or that my bank account needs attention, and wants to see my device',
-        then: 'end the call, and ring the company or my bank myself, on the number on my bill or my card' },
+        then: 'end the call, and call the company or my bank myself, at the number on my bill or my card' },
       { cue: 'a file or a link in a message that I did not ask for, with a reason to open it',
         then: 'not open it, and ask the sender myself, through a way I already had' },
       { cue: 'a phone number or a link at the top of a search page, marked “Ad”',

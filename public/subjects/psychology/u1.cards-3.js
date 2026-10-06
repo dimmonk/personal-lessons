@@ -10,7 +10,7 @@ FC.cards('psychology', 'u1', [
     strip: [
       'There is one person: Moira.',
       'There is a long stretch of time: twenty years.',
-      'There is more than one place: three firms, family holidays, shared flats.',
+      'There is more than one place: three firms, family vacations, shared apartments.',
       'There is more than one relationship: colleagues, two brothers, old friends.',
       'The same thing runs through all of it: when something goes wrong, it was somebody else.'
     ],
@@ -28,12 +28,12 @@ FC.cards('psychology', 'u1', [
   { id: 'again-pattern', kind: 'again', family: 'pattern',
     link: 'Moira’s case gave you what to point to: {needs:pattern}. Here is a second case, about something quite different from blame.',
     first: 'g-moira', second: 'g-rings', step: 'D1',
-    instruction: 'Find what the two cases share. Ignore what each person does (blaming others, ringing until people answer). Look at one thing only: how much of the person’s life does the case show?',
+    instruction: 'Find what the two cases share. Ignore what each person does (blaming others, calling until people answer). Look at one thing only: how much of the person’s life does the case show?',
     prompt: { kind: 'phrase', answer: 'she does it now, at thirty-four, with her husband and with the people on her team at work' },
     shared: [
-      'Both cases are a long view of one person. Moira: twenty years, three firms, brothers and friends. Jess: from seventeen to thirty-four, at home and at work, with a boyfriend, flatmates, a husband and a team.',
+      'Both cases are a long view of one person. Moira: twenty years, three firms, brothers and friends. Jess: from seventeen to thirty-four, at home and at work, with a boyfriend, roommates, a husband and a team.',
       'What the two women do has nothing in common. One never admits a mistake. The other cannot bear an unanswered message. What the cases share is their shape, and it is the shape you were told to point to: {needs:pattern}.',
-      'So this kind is not about any particular behaviour. Whatever the behaviour is, the case has to show it lasting and spreading across a life. That is what {a:D1.pattern} names.'
+      'So this kind is not about any particular behavior. Whatever the behavior is, the case has to show it lasting and spreading across a life. That is what {a:D1.pattern} names.'
     ] },
 
   { id: 'portrait-pattern', kind: 'portrait', family: 'pattern',
@@ -41,7 +41,7 @@ FC.cards('psychology', 'u1', [
     typical: [
       'The case is a long view. It covers years, and it usually says so: "for ten years", "since her teens", "in every job he has had".',
       'It names more than one place or more than one relationship: work and home, partners and friends, this firm and the last one.',
-      'The same way of acting runs through all of it. The details change from year to year. What the person does stays recognisable.',
+      'The same way of acting runs through all of it. The details change from year to year. What the person does stays recognizable.',
       'Often nobody in the case is doing anything at this moment. It reads like a summary, because it is one.',
       'You rarely have this much from what you have seen yourself. It comes from knowing someone a long time, or from several people who each know a different part of their life.',
       'It is not always a bad thing. Someone who has been generous, shy or blunt for thirty years, everywhere and with everyone, is this kind too.'
@@ -66,7 +66,7 @@ FC.cards('psychology', 'u1', [
     prompt: { kind: 'which', option: 'D1.pattern', answer: 'g-credit-years' },
     difference: [
       'In Case A you are shown one episode between two people. Paul does something to Gina: he takes her idea. Then he says something to her about her: she must be confused. You see where it leaves her, wondering. Nothing in the case goes outside the two of them, and nothing goes back further than Friday. The answer is {a:D1.tactic}.',
-      'In Case B Gina does not appear, and nobody is having a conversation. The case follows Paul: every job, two firms in his thirties, a sister back in his school days, a football club. The answer is {a:D1.pattern}.',
+      'In Case B Gina does not appear, and nobody is having a conversation. The case follows Paul: every job, two firms in his thirties, a sister back in his school days, a soccer club. The answer is {a:D1.pattern}.',
       'Case A can be true without Case B. A person can do this once, to one colleague, in one bad week of a long working life. So Case A on its own never lets you say what Paul is like. It lets you say what Paul did to Gina, which is already a good deal, and is the thing Gina needs looked at.'
     ] },
 

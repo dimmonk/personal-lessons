@@ -50,13 +50,13 @@ FC.cases('civics', 'u4', [
     not: { outcome: 'veto', why: 'The President is not refusing a law Congress passed. A person was found guilty of a crime, and the President is forgiving it.' } },
 
   /* ---------- The look-alike pair: the same park, the same Monday, a law refused and a crime forgiven ---------- */
-  { id: 'e-dump-bill', use: 'teach', tier: 'clean', setting: 'community', topic: 'a bill cutting the fine for dumping rubbish', name: 'The rubbish bill',
-    text: "Congress passed a bill that cuts the fine for dumping rubbish in national parks. On Monday the President sent the bill back to Congress without signing it, saying the fine should stay high.",
+  { id: 'e-dump-bill', use: 'teach', tier: 'clean', setting: 'community', topic: 'a bill cutting the fine for dumping trash', name: 'The trash bill',
+    text: "Congress passed a bill that cuts the fine for dumping trash in national parks. On Monday the President sent the bill back to Congress without signing it, saying the fine should stay high.",
     outcome: 'veto', route: { D1: ['president'], E1: ['sendback'] },
     cues: { E1: 'the President sent the bill back to Congress without signing it' } },
 
-  { id: 'e-dump-man', use: 'teach', tier: 'clean', setting: 'community', topic: 'a man fined for dumping rubbish', name: 'The rubbish fine',
-    text: "A man was fined $5,000 in a federal court for dumping rubbish in a national park. On Monday the President signed a paper that forgives the crime, and the fine was cancelled.",
+  { id: 'e-dump-man', use: 'teach', tier: 'clean', setting: 'community', topic: 'a man fined for dumping trash', name: 'The trash fine',
+    text: "A man was fined $5,000 in a federal court for dumping trash in a national park. On Monday the President signed a paper that forgives the crime, and the fine was canceled.",
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
     cues: { E1: 'the President signed a paper that forgives the crime' } },
 
@@ -78,7 +78,7 @@ FC.cases('civics', 'u4', [
     cues: { E1: 'the Secretary of State, speaking for the President, met Calvera’s foreign minister' } },
 
   { id: 'e-visas-desk', use: 'teach', tier: 'clean', setting: 'travel', topic: 'a visitor’s papers checked at a desk', name: 'The visa desk',
-    text: "Under a law Congress passed, a visitor from Calvera may stay in the country for up to ninety days. On Monday a clerk of the federal immigration service checked Mr Tavares’s papers against the list in the law, and stamped his passport for a ninety-day stay.",
+    text: "Under a law Congress passed, a visitor from Calvera may stay in the country for up to ninety days. On Monday a clerk of the federal immigration service checked Mr. Tavares’s papers against the list in the law, and stamped his passport for a ninety-day stay.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
-    cues: { E1: 'a clerk of the federal immigration service checked Mr Tavares’s papers against the list in the law' } }
+    cues: { E1: 'a clerk of the federal immigration service checked Mr. Tavares’s papers against the list in the law' } }
 ]);

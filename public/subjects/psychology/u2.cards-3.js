@@ -7,26 +7,26 @@ FC.cards('psychology', 'u2', [
     link: 'The first two names were about a person explaining something they did or spent. The next two are about something different: a person dealing with evidence. The question in the person’s mind is no longer "was what I did all right?" but "what is true?" or "which should I choose?"',
     case: 'oneway', mark: 'R1',
     strip: [
-      'Greg already has a view: the one-way system has made traffic worse.',
-      'Two pieces of evidence arrive. One is for his view: the neighbour’s longer drive. One is against it: the council’s count.',
+      'Greg already has a view: the one-way street plan has made traffic worse.',
+      'Two pieces of evidence arrive. One is for his view: the neighbor’s longer drive. One is against it: the council’s count.',
       'He accepts the first without a single question.',
       'He meets the second with three questions: who counted, when, and how.'
     ],
     explain: [
-      'Greg’s questions are good ones. A count can be done badly, and it is fair to ask how it was done. But one neighbour’s drive is much weaker evidence than a count of many journeys, and it was asked nothing at all.',
+      'Greg’s questions are good ones. A count can be done badly, and it is fair to ask how it was done. But one neighbor’s drive is much weaker evidence than a count of many journeys, and it was asked nothing at all.',
       'That is the whole of it: a harder test for one side. Evidence for the view walks straight in. Evidence against it has to answer questions first. A person who keeps doing this can only become more sure, whatever is true, because nothing unwelcome ever gets through.',
-      'Notice what Greg is not doing. He has not set out to find anything. The neighbour’s remark and the council’s count came to him, and he judged each as it arrived.'
+      'Notice what Greg is not doing. He has not set out to find anything. The neighbor’s remark and the council’s count came to him, and he judged each as it arrived.'
     ],
     feature: { step: 'R1', option: 'scrutiny' },
-    name: 'The name for this is {o:confbias}: a lean towards whatever confirms what you already think.' },
+    name: 'The name for this is {o:confbias}: a lean toward whatever confirms what you already think.' },
 
   { id: 'again-confbias', kind: 'again', outcome: 'confbias',
-    link: 'The one-way system gave you what to point to: {needs:confbias}. Here is the same thing in a football crowd.',
+    link: 'The one-way street plan gave you what to point to: {needs:confbias}. Here is the same thing in a soccer crowd.',
     first: 'oneway', second: 'striker', step: 'R1',
     instruction: 'Find what the two cases share. Ignore what the view is about (traffic, a footballer). Look at one thing only: whether the evidence for the view and the evidence against it are given the same test.',
     prompt: { kind: 'phrase', answer: 'One game was enough when he scored' },
     shared: [
-      'Greg and Nadia each hold a view. Each meets evidence for it and evidence against it. Each lets the evidence for it in untested (a neighbour’s drive, one goal) and sets a test for the evidence against it (who did the counting? three games are too few).',
+      'Greg and Nadia each hold a view. Each meets evidence for it and evidence against it. Each lets the evidence for it in untested (a neighbor’s drive, one goal) and sets a test for the evidence against it (who did the counting? three games are too few).',
       'The test may even be a fair one. What is wrong is that only one side has to sit it. That is what {o:confbias} names.'
     ] },
 
@@ -39,10 +39,10 @@ FC.cards('psychology', 'u2', [
       'It also shapes what is noticed and remembered. The results that fit stand out; the ones that do not slide past. A person can be quite sincere in saying "every time I look, I see it".',
       'It needs no strong wish. People do it for views they hardly care about, simply because the view was there first.'
     ],
-    not: 'Testing evidence is not {o:confbias}. Asking where a number came from is good practice. The name applies only when the two sides are tested differently. If Greg had put the same three questions to his neighbour, he would have been testing both sides the same way, and that is the opposite of this name.',
+    not: 'Testing evidence is not {o:confbias}. Asking where a number came from is good practice. The name applies only when the two sides are tested differently. If Greg had put the same three questions to his neighbor, he would have been testing both sides the same way, and that is the opposite of this name.',
     wild: ['"That just proves my point."', '"You can prove anything with statistics."', '"That’s the exception."', '"Well, they would say that."'],
     self: 'In your own life it is easiest to catch in what you pass on to friends: the article that agrees with you goes on without a second look, and the one that disagrees gets read for its faults.',
-    ask: '"Have I put this same question to the evidence on my own side?" If Greg asks who counted the journeys, he should also ask how his neighbour timed her drive.' },
+    ask: '"Have I put this same question to the evidence on my own side?" If Greg asks who counted the journeys, he should also ask how his neighbor timed her drive.' },
 
   { id: 'check-confbias', kind: 'check', after: 'confbias',
     case: 'homeworkers',
@@ -57,11 +57,11 @@ FC.cards('psychology', 'u2', [
       'There is a search meant to settle it: four interviews.',
       'Carol chose before the search began.',
       'During the search she wrote down only what supported her choice.',
-      'Afterwards she presented her choice as the result of the search.'
+      'Afterward she presented her choice as the result of the search.'
     ],
     explain: [
       'Interviews are meant to work in one direction: you look first, and the answer comes out at the end. Carol ran hers backwards. She had the answer first, so the only thing the interviews could do was supply support for it.',
-      'Greg, in the one-way system, also had his view before the council’s count arrived. So "had a view first" cannot be the difference between the two. The difference is what the person is doing. Greg was not looking for anything; evidence came to him and he judged it. Carol set out to look. Her interviews were a search that was supposed to give the answer, and she had chosen the answer before the search began.',
+      'Greg, in the one-way street plan, also had his view before the council’s count arrived. So "had a view first" cannot be the difference between the two. The difference is what the person is doing. Greg was not looking for anything; evidence came to him and he judged it. Carol set out to look. Her interviews were a search that was supposed to give the answer, and she had chosen the answer before the search began.',
       'So put this to a case like Carol’s. {test:confbias~motivated} When the answer to both is yes, nothing in the search could have changed the outcome. A search that cannot change the answer only collects support.'
     ],
     feature: { step: 'R1', option: 'fixed' },
@@ -73,7 +73,7 @@ FC.cards('psychology', 'u2', [
     instruction: 'Find what the two cases share. Ignore what is being chosen (a team leader, a car). Look at one thing only: which came first, the answer or the search.',
     prompt: { kind: 'phrase', answer: 'decided she would buy the red convertible the moment she saw it' },
     shared: [
-      'Carol and Ines each chose first and searched second. Each then went where support was likely to be found (the favoured candidate’s good answers, the owners’ club) and stayed away from where it was not. Each ended by describing the search as if it had produced the answer.',
+      'Carol and Ines each chose first and searched second. Each then went where support was likely to be found (the favored candidate’s good answers, the owners’ club) and stayed away from where it was not. Each ended by describing the search as if it had produced the answer.',
       'Ines calls her search "research", and Carol’s was a round of interviews. Reading, asking, testing, interviewing, getting prices: whatever form it takes, it is the search. The answer first, then a search that collects support for it: that is what {o:motivated} names.'
     ] },
 

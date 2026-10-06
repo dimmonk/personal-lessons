@@ -12,7 +12,7 @@ FC.cards('psychology', 'u3', [
     canDo: 'After this unit you can read a short account of one person saying or doing something to another, and say which of five things it is: one of four things that work against the other person, or {plain:ordexchange}. The two people can be partners, colleagues, relatives, friends, or you and someone you know.',
     everyday: [
       "You have heard all of these. 'That never happened.' 'You're imagining things.' 'Why would you accuse me of that?' 'You're the one who's always late.' 'I've never felt like this about anyone.' Each of them can be the sound of something done to a person that works against them. Each of them can also be what an ordinary person says in an ordinary row.",
-      'This unit teaches four things of the first kind, and one name for the second. The second is the one you will use most. Most arguments, complaints, defences and compliments are not any of the four, and a person who has just been told something unwelcome, or wrongly accused, or hurt, can say every one of those sentences without doing anything to anyone. A sentence on its own cannot tell you which you are hearing, and neither can how upset anyone is. The words and events in the case can, and this unit teaches which ones to look for.'
+      'This unit teaches four things of the first kind, and one name for the second. The second is the one you will use most. Most arguments, complaints, defenses and compliments are not any of the four, and a person who has just been told something unwelcome, or wrongly accused, or hurt, can say every one of those sentences without doing anything to anyone. A sentence on its own cannot tell you which you are hearing, and neither can how upset anyone is. The words and events in the case can, and this unit teaches which ones to look for.'
     ],
     map: { branch: 'tactic' } },         // the preview map is drawn from the key, with plain words beside each label
 
@@ -22,7 +22,7 @@ FC.cards('psychology', 'u3', [
     case: 'g-repair', mark: 'T1',
     strip: [
       'Something really happened: Jonas texted that he would pay half, and Tess still has the text.',
-      'Afterwards he told her that it did not happen, and that she had dreamt it up or muddled it.',
+      'Afterward he told her that it did not happen, and that she had dreamed it up or muddled it.',
       'He did not say it once. He said it whenever she raised it, and he was still saying it in May.',
       'Tess has started to doubt her own memory: she rereads her old messages, and she has asked her sister, "Am I remembering this wrong?"'
     ],

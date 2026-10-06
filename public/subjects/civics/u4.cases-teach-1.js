@@ -63,10 +63,10 @@ FC.cases('civics', 'u4', [
     not: { outcome: 'execute', why: 'An office that carries out a law stays inside it. Here no law is behind the fee at all, so there is nothing for the office to be carrying out.' } },
 
   /* ---------- The look-alike pair: the same food rules, with a law behind one and none behind the other ---------- */
-  { id: 'e-salt-label', use: 'teach', tier: 'clean', setting: 'health', topic: 'salt printed on snack packets', name: 'The salt label',
-    text: "Congress passed a law that says every packaged snack must show how much salt it holds. On Thursday the federal food agency published how large the salt line on the packet must be, and the date from which every packet must carry it.",
+  { id: 'e-salt-label', use: 'teach', tier: 'clean', setting: 'health', topic: 'salt printed on snack packages', name: 'The salt label',
+    text: "Congress passed a law that says every packaged snack must show how much salt it holds. On Thursday the federal food agency published how large the salt line on the package must be, and the date from which every package must carry it.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
-    cues: { E1: 'the federal food agency published how large the salt line on the packet must be' } },
+    cues: { E1: 'the federal food agency published how large the salt line on the package must be' } },
 
   { id: 'e-salt-limit', use: 'teach', tier: 'clean', setting: 'health', topic: 'a salt limit for snacks', name: 'The salt limit',
     text: "Congress has passed no law about how much salt a snack may hold. On Thursday the federal food agency published a rule that no packaged snack may hold more than a set amount of salt, and that any firm selling one will be fined.",

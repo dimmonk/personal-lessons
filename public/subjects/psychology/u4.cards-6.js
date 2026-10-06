@@ -30,13 +30,13 @@ FC.cards('psychology', 'u4', [
         reason: 'The words that decide it are {cue:P1}. The first is rules broken and people used: placements invoiced that never happened, fees charged for jobs that did not exist. The second shows no regret when someone is in tears. The third shows people hurt: a regulator, and partners who will not speak to him.' }
     ],
     hold: {
-      neighbour: 'narcgrand',
+      neighbor: 'narcgrand',
       prompt: { kind: 'reason',
         lead: 'Rafe tells clients he is the best in the business, so the case can look like {o:narcgrand}.',
         choices: [
           { id: 'a', text: 'Rafe tells clients that he is the best in the business.',
             note: 'True, and it is why the case can look like {o:narcgrand}. But nothing in the case shows him turning angry or scornful when he is not treated as special. Saying you are the best is not enough.' },
-          { id: 'b', text: 'He tells candidates that a job exists so that they will pay a fee, and he shows no regret when one rings him in tears.' },
+          { id: 'b', text: 'He tells candidates that a job exists so that they will pay a fee, and he shows no regret when one calls him in tears.' },
           { id: 'c', text: 'He is warm and quick to make friends.',
             note: 'True, but a warm manner is how he gets his way. It tells you nothing about which name applies: a charming person can be any of the six.' }
         ],
@@ -49,14 +49,14 @@ FC.cards('psychology', 'u4', [
     impression: {
       resembles: 'pa-callum',
       text: [
-        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the garage owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.',
+        'You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the dealership owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.',
         'Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.'
       ]
     } },
 
   { id: 'worked-bruno', kind: 'worked',
     h: 'A second whole case, where the story points the wrong way',
-    link: 'The recruitment agent was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
+    link: 'The recruiting agent was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
     case: 'pa-bruno',
     steps: [
       { step: 'D1',
@@ -65,19 +65,19 @@ FC.cards('psychology', 'u4', [
         reason: 'Bruno is theatrical in everything, and that is not what decides it. The words that decide it are {cue:P1}. When attention goes to someone else his display does not get bigger: he applauds. And nothing has been lost: friends from school who still meet him, and a village that thanks him every year.' }
     ],
     hold: {
-      neighbour: 'histrionic',
+      neighbor: 'histrionic',
       prompt: { kind: 'reason',
-        lead: 'Bruno tells every story with his whole body, gives twenty-minute speeches and hugs everyone at a party. That is putting himself at the centre of attention, so the case can look like {o:histrionic}.',
+        lead: 'Bruno tells every story with his whole body, gives twenty-minute speeches and hugs everyone at a party. That is putting himself at the center of attention, so the case can look like {o:histrionic}.',
         choices: [
           { id: 'a', text: 'He tells every story with his whole body and gives long speeches.',
             note: 'True, and it is why the case can look like {o:histrionic}. But a theatrical way of being is common and ordinary. It cannot settle which of the two this is.' },
           { id: 'b', text: 'When another guest is applauded he applauds loudest, and the friends he has had since school still meet him every month.' },
-          { id: 'c', text: 'He has run the village pantomime for twenty years.',
-            note: 'True, but that is something he does, and it is not what it has cost. A person with {o:histrionic} could run a pantomime too.' }
+          { id: 'c', text: 'He has run the village Christmas show for twenty years.',
+            note: 'True, but that is something he does, and it is not what it has cost. A person with {o:histrionic} could run a Christmas show too.' }
         ],
         answer: 'b' },
       reason: [
-        'For {o:histrionic} you must be able to point to this: {needs:histrionic}. Bruno is at the centre of attention, but the other two things are missing. His displays do not get bigger when attention goes to someone else: he applauds. And nothing is being lost to it, so there is no cost to point to.',
+        'For {o:histrionic} you must be able to point to this: {needs:histrionic}. Bruno is at the center of attention, but the other two things are missing. His displays do not get bigger when attention goes to someone else: he applauds. And nothing is being lost to it, so there is no cost to point to.',
         'It is the question from Sofia and Tito. {test:histrionic~ordpersonality} Here it has cost very little, so the answer is {a:P1.steady}.'
       ]
     },
@@ -85,7 +85,7 @@ FC.cards('psychology', 'u4', [
       resembles: 'pa-tito', first: 'pa-marguerite',
       text: [
         'Now the second look: does this case look like one you know? A man who tells every story with his whole body and hugs everyone at a party may bring back Marguerite first, and Marguerite’s case was {o:histrionic}. So here the likeness and the answer seem to disagree.',
-        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:P1}. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fete host: dramatic in everything, and thanked for it every year. So the answer stands.'
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:P1}. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fair host: dramatic in everything, and thanked for it every year. So the answer stands.'
       ]
     } },
 

@@ -59,7 +59,7 @@ FC.cards('civics', 'u5', [
         reason: 'Wanda was fined, so the law has actually harmed her. And what she asks of the judge is whether the law is allowed at all: {cue:J1}. She does not ask what its words cover, and she does not ask for a better rule.' }
     ],
     hold: {
-      neighbour: 'interpret',
+      neighbor: 'interpret',
       prompt: { kind: 'reason',
         lead: 'The case is about a law and a person fined under it, and a judge is asked about it. That is also true of {o:interpret}, so the case can look like that name.',
         choices: [
@@ -94,7 +94,7 @@ FC.cards('civics', 'u5', [
         reason: 'The story is full of the right to speak, and Greta calls it the most important right in the country. But look at what she asks the judge: {cue:J1}. She does not say the rule clashes with the Constitution. She asks whether her megaphone is the thing the rule bans, which is a question about what a word covers.' }
     ],
     hold: {
-      neighbour: 'review',
+      neighbor: 'review',
       prompt: { kind: 'reason',
         lead: 'Greta is a protester, she was fined, and she talks about the right to speak. Each of those is something you would find in a case of {o:review}.',
         choices: [

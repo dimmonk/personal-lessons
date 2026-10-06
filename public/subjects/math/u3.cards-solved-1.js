@@ -14,7 +14,7 @@ FC.cards('math', 'u3', [
       {
         does: 'List what is done to the missing number, in the order it is done',
         working: 'Start from the list price. First 8 is taken away from it, then the total is multiplied by 1.2. The result is 54',
-        why: 'The missing number is the list price, so the working starts from it and follows what the shop does to it, in order: first €8 comes off, then what is left is multiplied by 1.2 to add the tax. The list stops at the result the problem gives, 54. Writing the list first means that nothing done to the list price is forgotten, and it fixes the order that the undoing will be read from.'
+        why: 'The missing number is the list price, so the working starts from it and follows what the shop does to it, in order: first $8 comes off, then what is left is multiplied by 1.2 to add the tax. The list stops at the result the problem gives, 54. Writing the list first means that nothing done to the list price is forgotten, and it fixes the order that the undoing will be read from.'
       },
       {
         does: 'Write the undoing of each one, last one first',
@@ -31,7 +31,7 @@ FC.cards('math', 'u3', [
         why: 'Running the calculation forward on 53 is the proof: 53 − 8 = 45 and 45 × 1.2 = 54, which is the result in the problem. If the forward run does not give the problem’s result, an undoing was wrong, or was done in the wrong order, and the check is where that shows.'
       }
     ],
-    result: 'The list price was €53. Taking €8 off gives €45, and multiplying by 1.2 to add the sales tax gives the €54 the customer paid.',
+    result: 'The list price was $53. Taking $8 off gives $45, and multiplying by 1.2 to add the sales tax gives the $54 the customer paid.',
     hold: {
       step: 1,
       prompt: {
@@ -129,8 +129,8 @@ FC.cards('math', 'u3', [
     steps: [
       {
         does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 8 kg of apples for 6 euros. The new amount is 12 kg of apples, so it is paired with the 8 kg of apples in the rate',
-        why: 'The new amount is a number of kilos, so it has to be compared with the kilos in the rate, 8, and not with the euros. Comparing kilos with kilos is what makes the next step mean something: how many times as big the new kilos are as the old kilos.'
+        working: 'The rate is 8 kg of apples for 6 dollars. The new amount is 12 kg of apples, so it is paired with the 8 kg of apples in the rate',
+        why: 'The new amount is a number of kilos, so it has to be compared with the kilos in the rate, 8, and not with the dollars. Comparing kilos with kilos is what makes the next step mean something: how many times as big the new kilos are as the old kilos.'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -140,11 +140,11 @@ FC.cards('math', 'u3', [
       { does: 'Make the other number that many times as big', working: '6 × 1.5 = 9' },
       {
         does: 'Check the direction',
-        working: '12 kg of apples is more than 8 kg of apples, so the answer should be more than 6 euros, and 9 is more',
-        why: 'More apples must cost more, so the answer has to be more than €6, and €9 is. The check catches a rate scaled the wrong way round: dividing 6 by 1.5 would give 4, which is less, though more apples are being bought.'
+        working: '12 kg of apples is more than 8 kg of apples, so the answer should be more than 6 dollars, and 9 is more',
+        why: 'More apples must cost more, so the answer has to be more than $6, and $9 is. The check catches a rate scaled the wrong way round: dividing 6 by 1.5 would give 4, which is less, though more apples are being bought.'
       }
     ],
-    result: '12 kg of apples cost €9.',
+    result: '12 kg of apples cost $9.',
     hold: {
       step: 2,
       prompt: {
@@ -168,8 +168,8 @@ FC.cards('math', 'u3', [
         answer: 'x'
       },
       reason: [
-        'The rate says that 8 kg of apples and €6 go together. Take twice the apples, 16 kg, and the price doubles, to €12. Take half the apples, 4 kg, and the price halves, to €3. Whatever happens to one number happens to the other, as long as the rate stays the same.',
-        'Here 12 kg is 1.5 times 8 kg, so the price is 1.5 times €6. That is why the number found in the last step is used to multiply the other number, 6, and not to add to it.'
+        'The rate says that 8 kg of apples and $6 go together. Take twice the apples, 16 kg, and the price doubles, to $12. Take half the apples, 4 kg, and the price halves, to $3. Whatever happens to one number happens to the other, as long as the rate stays the same.',
+        'Here 12 kg is 1.5 times 8 kg, so the price is 1.5 times $6. That is why the number found in the last step is used to multiply the other number, 6, and not to add to it.'
       ]
     }
   },
@@ -210,7 +210,7 @@ FC.cards('math', 'u3', [
         choices: [
           {
             id: 'x',
-            text: 'The new amount, 15, is a number of metres, so it has to be compared with the metres in the rate, 20, and not with the 24 posts.'
+            text: 'The new amount, 15, is a number of meters, so it has to be compared with the meters in the rate, 20, and not with the 24 posts.'
           },
           {
             id: 'y',
@@ -226,8 +226,8 @@ FC.cards('math', 'u3', [
         answer: 'x'
       },
       reason: [
-        'The rate has two numbers, and each belongs to a different thing: 24 belongs to posts and 20 belongs to metres. The new amount, 15 m, is metres, so only the 20 can be compared with it. Dividing 15 by 24 would compare metres with posts, and the answer would not mean anything: it would not say how many times as long the new fence is.',
-        'Pairing first is what makes “how many times as big” in the next step mean something. If the new amount had been posts instead, say 30 posts, it would have been paired with the 24, and the answer would have been in metres.'
+        'The rate has two numbers, and each belongs to a different thing: 24 belongs to posts and 20 belongs to meters. The new amount, 15 m, is meters, so only the 20 can be compared with it. Dividing 15 by 24 would compare meters with posts, and the answer would not mean anything: it would not say how many times as long the new fence is.',
+        'Pairing first is what makes “how many times as big” in the next step mean something. If the new amount had been posts instead, say 30 posts, it would have been paired with the 24, and the answer would have been in meters.'
       ]
     }
   }

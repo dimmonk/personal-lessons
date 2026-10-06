@@ -10,11 +10,11 @@ FC.cards('scams', 'u4', [
     h: 'Money: what is the request for, and what does it ask you to do with it?',
     canDo: [
       'After this unit you can take a request for money, however it reaches you, and say which of nine things it is: eight kinds of scam, and the real kind of request that they copy. You will be able to point to the words in the request that show it, to say why it is not one of the others, and to say what to do next, on the spot, before any money leaves your account.',
-      'The request can come as a text, an email, a letter, a phone call or a message from someone you have been talking to online. It can be for £2.99 or for your savings.'
+      'The request can come as a text, an email, a letter, a phone call or a message from someone you have been talking to online. It can be for $2.99 or for your savings.'
     ],
     everyday: [
-      'You already meet these. A text says that a parcel is waiting and a small fee must be paid. Your builder emails an invoice. Someone you have only ever met online is in trouble. A caller says that you owe tax and that someone will come to your door. A buyer for your old bike pays you too much. Every one of them asks for money, and every one of them can be real or can be a copy.',
-      'In the first unit you learned to ask what a message asks you to do. This unit starts from one of its answers: {a:D1.money}. It is the answer where most is at stake, because money sent by bank transfer, in cash, in gift cards or in crypto is usually very hard to get back. That is why there are two questions here and not one: what the request says the money is for, and what it asks you to do with the money.',
+      'You already meet these. A text says that a package is waiting and a small fee must be paid. Your builder emails an invoice. Someone you have only ever met online is in trouble. A caller says that you owe tax and that someone will come to your door. A buyer for your old bike pays you too much. Every one of them asks for money, and every one of them can be real or can be a copy.',
+      'In the first unit you learned to ask what a message asks you to do. This unit starts from one of its answers: {a:D1.money}. It is the answer where most is at stake, because money sent by wire transfer, in cash, in gift cards or in crypto is usually very hard to get back. That is why there are two questions here and not one: what the request says the money is for, and what it asks you to do with the money.',
       'There are nine names to learn here, and one of them is not a scam. The real request to pay has a name of its own because real requests come with the same reasons as the copies: a bill, a fine, a deal. If the questions had no place for them, you would have to treat every bill as a scam, and a person who suspects everything soon stops checking anything.'
     ],
     add: [
@@ -29,7 +29,7 @@ FC.cards('scams', 'u4', [
     case: 'm-romance-engineer', mark: 'M1',
     strip: [
       'Ana has never met Daniel. She knows him only through a dating site, where he has written to her every day for eight months.',
-      'He has trouble of his own, and it is far away: his daughter is in a hospital abroad and will not be treated until £4,200 is paid.',
+      'He has trouble of his own, and it is far away: his daughter is in a hospital abroad and will not be treated until $4,200 is paid.',
       'He asks Ana to send the money today, into an account, and promises to pay her back.',
       'Nothing else is asked of her: no password, nothing to install, no facts about herself.'
     ],
@@ -55,8 +55,8 @@ FC.cards('scams', 'u4', [
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the story. That holds for the whole unit, so here it is once in full.',
     body: [
-      'Every case in this unit has two layers. The top layer is the story: love, a bill, a parcel, a tax office, a sale. Underneath is what the request says the money is for, and what it asks you to do with the money.',
-      'The nine names belong to the layer underneath. Any story can carry any name, and a real request and its copy can use the same story: a builder’s invoice, a parcel fee, a letter from the tax office. A friendly message can be a scam and a frightening one can be real.',
+      'Every case in this unit has two layers. The top layer is the story: love, a bill, a package, the IRS, a sale. Underneath is what the request says the money is for, and what it asks you to do with the money.',
+      'The nine names belong to the layer underneath. Any story can carry any name, and a real request and its copy can use the same story: a builder’s invoice, a package fee, a letter from the IRS. A friendly message can be a scam and a frightening one can be real.',
       'From here on the cases change their stories on purpose, and some of them are real requests. Whether a request is real is not something you read off its story. You find it out by contacting the person or the company yourself, and this unit teaches you when and how. What the questions add is a name for each kind of request, so that you know what to look for and what to do.'
     ],
     fixed: ['what the request says the money is for, and what it asks you to do with the money, which are the questions: {q:M1} and {q:M2}'],
@@ -67,7 +67,7 @@ FC.cards('scams', 'u4', [
     typical: [
       'It is slow. A first message on a dating site, a hobby forum, a game or social media; weeks of ordinary, warm conversation every day; then months. Nothing is asked for in the early weeks, and that is part of how it works.',
       'The person is never there to be seen. The photographs are of someone else, the calls fail, and when a video does connect there is a reason it is short. Often the job is far away and hard to check: an engineer on a rig, a nurse on a contract, a soldier on a posting.',
-      'A small favour sometimes comes first: a phone top-up, a parcel to forward. Each yes makes the next request easier to say yes to.',
+      'A small favor sometimes comes first: a phone top-up, a package to forward. Each yes makes the next request easier to say yes to.',
       'Then comes the emergency: a hospital bill, a fine, a ticket home, a blocked card, a customs charge. It is always far away, always urgent, and always something only you can fix, because the person says they cannot reach anyone else.',
       'The money is to go by a way that is hard to undo, and often you are asked to keep it private, because your family would “not understand”.',
       'Which of this can you see when the request arrives? The months of messages, the person you have never met and the emergency are all in front of you on the day. The next emergency, which follows as soon as you have paid, only shows afterwards. The questions do not use it, because by then the money has gone.'
@@ -84,7 +84,7 @@ FC.cards('scams', 'u4', [
       'Ask for a live video call that they start now, not a recording. If it fails again, or there is a new reason why not, that is your answer.',
       'Tell someone who knows you in person: a friend, a relative, your bank. If you have been told to keep it secret, that is the answer too.',
       'Ask yourself why this person cannot get help from anyone near them, and why it has to be you.',
-      'If you have already sent money, ring your bank straight away, on the number on the back of your card. A payment can sometimes be stopped in the first hours.'
+      'If you have already sent money, call your bank right away, at the number on the back of your card. A payment can sometimes be stopped in the first hours.'
     ] },
 
   { id: 'check-romance', kind: 'check', after: 'romance',

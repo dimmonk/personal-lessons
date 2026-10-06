@@ -9,7 +9,7 @@ FC.cards('wealth', 'u1', [
   /* ---------- The key's first question, as a question ---------- */
   { id: 'q-gate', kind: 'question', step: 'D1',
     h: 'The question you have been answering all along',
-    link: 'Since the pension fund you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked before anything else.',
+    link: 'Since the 401(k) fund you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked before anything else.',
     decides: [
       'A case can only be answered on what it is made of. If you take a yearly charge for a fall in prices, you look for what to sell and when, and what you should have looked for is a sum that comes out whatever prices do. If you take a sound case for one of the four, you go looking for a problem the case does not have. Getting the answer wrong means asking the wrong questions next, however carefully you ask them.',
       'That is why this question comes first, before any finer name, and why every case in this subject starts with it. In this subject it also comes before any cure. A cure answers one particular way of losing money, and until you know which way you are looking at, you have nothing for the cure to answer.',
@@ -39,18 +39,18 @@ FC.cards('wealth', 'u1', [
       { step: 'D1',
         reason: [
           'The unit taught a way to answer this question: look in the words for each of the four things it asks about, and see how many you can point to. Nothing in this case comes out every year: no charge, no tax, no sum spent. No bill falls due on a date, and no living costs are paid from the money. Nothing is said about a death, a will or a form. Beth does not expect to need any of the money for twenty years.',
-          'What the case does show is this: {cue:D1}. £560,000 out of £700,000 is 80%, and it is all in one company, which Beth has worked for since she was twenty-four. That is what you point to for {a:D1.shock}.',
-          'The last sentence does something different. The company’s price has fallen 35%, which is £196,000 off £560,000, or 28% of everything she has. It tells you how much one thing can take. It does not tell you the answer, because that fall belongs to one company, and prices elsewhere have hardly moved.'
+          'What the case does show is this: {cue:D1}. $560,000 out of $700,000 is 80%, and it is all in one company, which Beth has worked for since she was twenty-four. That is what you point to for {a:D1.shock}.',
+          'The last sentence does something different. The company’s price has fallen 35%, which is $196,000 off $560,000, or 28% of everything she has. It tells you how much one thing can take. It does not tell you the answer, because that fall belongs to one company, and prices elsewhere have hardly moved.'
         ] }
     ],
     hold: {
-      neighbour: 'timing',
+      neighbor: 'timing',
       prompt: { kind: 'reason',
         lead: 'The company’s price has fallen, so the case can look like a case about prices falling.',
         choices: [
           { id: 'a', text: 'The company’s price has fallen by 35% this year.',
             note: 'True, and it is why the case can look like {a:D1.timing}. But a fall in a price turns up in both answers, so it cannot tell you which of the two this is.' },
-          { id: 'b', text: 'Most of what Beth has, £560,000 of £700,000, is in one company, and prices elsewhere have hardly moved.' },
+          { id: 'b', text: 'Most of what Beth has, $560,000 of $700,000, is in one company, and prices elsewhere have hardly moved.' },
           { id: 'c', text: 'Beth has worked for the company for twenty-eight years.',
             note: 'True, and it explains why so much is in one place. But how long she has worked there does not decide between the two answers.' }
         ],
@@ -75,33 +75,33 @@ FC.cards('wealth', 'u1', [
     steps: [
       { step: 'D1',
         reason: [
-          'The case opens with a loud fall: 30%, £102,000 off a £340,000 pension, and a man asking whether to sell everything. If the case ended there, you might think it was about a fall in prices.',
+          'The case opens with a loud fall: 30%, $102,000 off a $340,000 401(k), and a man asking whether to sell everything. If the case ended there, you might think it was about a fall in prices.',
           'It does not end there. Read on: {cue:D1}. A fall only does harm when something has to be sold or paid on the day. Ronan draws nothing, his pay covers the bills, and he has seven years before he stops work. Nothing is waiting for the money.',
-          'Put the other three to it as well. Nothing comes out of the pension every year in the case. No one thing is most of it. Nothing is said about a death, a will or a form. None of the four can be pointed to, and that leaves the fifth answer.'
+          'Put the other three to it as well. Nothing comes out of the 401(k) every year in the case. No one thing is most of it. Nothing is said about a death, a will or a form. None of the four can be pointed to, and that leaves the fifth answer.'
         ] }
     ],
     hold: {
-      neighbour: 'timing',
+      neighbor: 'timing',
       prompt: { kind: 'reason',
-        lead: 'Ronan’s pension has fallen by 30% and he wants to sell, so the case can look like {a:D1.timing}.',
+        lead: 'Ronan’s 401(k) has fallen by 30% and he wants to sell, so the case can look like {a:D1.timing}.',
         choices: [
-          { id: 'a', text: 'The pension has fallen by 30%, which is £102,000.',
+          { id: 'a', text: 'The 401(k) has fallen by 30%, which is $102,000.',
             note: 'True, and it is why the case can look like {a:D1.timing}. But a fall turns up in {a:D1.timing} and in {a:D1.none} alike, so it cannot tell you which of the two this is.' },
-          { id: 'b', text: 'Ronan draws nothing from the pension, his pay covers his bills, and he will not stop work for seven years.' },
+          { id: 'b', text: 'Ronan draws nothing from the 401(k), his pay covers his bills, and he will not stop work for seven years.' },
           { id: 'c', text: 'Ronan is worried, and wants to sell.',
             note: 'True, and worry is what makes it feel urgent. But how worried someone is does not show what the money must pay for, and that is what decides it.' }
         ],
         answer: 'b' },
       reason: [
         'For {a:D1.timing} you must be able to point to this: {needs:timing}. The fall is there, and so are the shares, but nothing is waiting for the money: no bills are paid from it, no bill falls due, and no plan has drifted. A fall that catches nothing raises nothing.',
-        'It is the question from Ines. {test:none~timing} Here nothing is needed from the pension for seven years, so the answer is {a:D1.none}. Whether Ronan should sell is a different question, and the case gives him no reason to say yes.'
+        'It is the question from Ines. {test:none~timing} Here nothing is needed from the 401(k) for seven years, so the answer is {a:D1.none}. Whether Ronan should sell is a different question, and the case gives him no reason to say yes.'
       ]
     },
     impression: {
       resembles: 'w-saver', first: 'w-couple-fall',
       text: [
         'Now the second look: does this case look like one you know? A fall of 30% and a man worried about his money may bring back Pete and Jean first, and Pete and Jean’s case was {a:D1.timing}. So here the likeness and the answer seem to disagree.',
-        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:D1}. Pete and Jean’s case had nothing like them: they sold shares every month to pay their bills, with nothing set aside. Ronan’s case has the opposite. The case this one really looks like is Aisha’s, who would not touch her pension for thirty years, and the answer stands.'
+        'When that happens, go back to the question and find the words in the case that answer it. They are {cue:D1}. Pete and Jean’s case had nothing like them: they sold shares every month to pay their bills, with nothing set aside. Ronan’s case has the opposite. The case this one really looks like is Aisha’s, who would not touch her 401(k) for thirty years, and the answer stands.'
       ]
     } },
 
@@ -131,7 +131,7 @@ FC.cards('wealth', 'u1', [
       { family: 'erosion', occasion: 'A statement, a charge or a tax bill you have never read, or a sum you take out of your money every month.' },
       { family: 'timing', occasion: 'Money you will need on a date, or every month, and what it is held in.' },
       { family: 'shock', occasion: 'The one thing that is most of what you, or someone you know, has: an employer’s shares, a property, a business, a loan.' },
-      { family: 'handover', occasion: 'Your will, and the forms held by your pension company or your bank, and the last time you checked whom they name.' },
+      { family: 'handover', occasion: 'Your will, and the beneficiary forms held by your 401(k) or IRA provider, your life insurer or your bank, and the last time you checked whom they name.' },
       { family: 'none', occasion: 'Money you are only keeping, about which someone has told you that you should do something.' }
     ],
     places: ['At home', 'At work', 'In the news', 'In my own head'] },

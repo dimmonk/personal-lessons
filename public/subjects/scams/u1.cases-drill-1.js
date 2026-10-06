@@ -33,39 +33,39 @@ FC.cases('scams', 'u1', [
     not: { outcome: 'device', why: 'An app is named, but nothing is put on her phone or computer. The box comes from her cloud account and asks to let an app into it.' } },
 
   { id: 'g-p-flight', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a delayed flight',
-    text: "Joss gets a text from the airline: 'Flight HB204 to Faro is delayed by 40 minutes. New departure time: 15.10. Gate details will show on the airport screens.'",
+    text: "Joss gets a text from the airline: 'Flight HB204 to Faro is delayed by 40 minutes. New departure time: 3:10 p.m. Gate details will show on the airport screens.'",
     route: { D1: ['nothing'] },
-    cues: { D1: 'Flight HB204 to Faro is delayed by 40 minutes. New departure time: 15.10' },
+    cues: { D1: 'Flight HB204 to Faro is delayed by 40 minutes. New departure time: 3:10 p.m.' },
     reason: { D1: 'The text only tells Joss what has changed: {cue:D1}. It asks him to do nothing and gives him no link, number or app.' },
     not: { outcome: 'details', why: 'It does not ask him to confirm his name, his booking or anything else about himself. It only gives him news.' } },
 
   /* ---------- money beside facts about you ---------- */
   { id: 'g-p-tickets', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'tickets for a club trip',
-    text: "The secretary of Hugo's cycling club emails the members: 'Tickets for the away trip are £18 each. Please pay the treasurer by bank transfer by the 12th.'",
+    text: "The secretary of Hugo's cycling club emails the members: 'Tickets for the club trip are $18 each. Please pay the treasurer by Zelle by the 12th.'",
     route: { D1: ['money'] },
-    cues: { D1: 'Please pay the treasurer by bank transfer by the 12th' },
+    cues: { D1: 'Please pay the treasurer by Zelle by the 12th' },
     reason: { D1: 'The email asks each member to pay: {cue:D1}. A transfer is one of the ways of paying.' },
     not: { outcome: 'nothing', why: 'The price of the tickets is news, but the email goes on to ask every member to pay by a date, so it is not a message that only tells you something.' } },
 
   { id: 'g-p-passport', use: 'drill', tier: 'clean', setting: 'government', topic: 'a passport renewal form',
-    text: "Mrs Khan is renewing her passport on the government website. The form asks for her date of birth and her place of birth.",
+    text: "Mrs. Khan is renewing her passport on the government website. The form asks for her date of birth and her place of birth.",
     route: { D1: ['details'] },
     cues: { D1: 'The form asks for her date of birth and her place of birth' },
-    reason: { D1: 'The form asks Mrs Khan to tell the website facts about herself: {cue:D1}. Nothing in this case asks her to pay, sign in or install anything.' },
+    reason: { D1: 'The form asks Mrs. Khan to tell the website facts about herself: {cue:D1}. Nothing in this case asks her to pay, sign in or install anything.' },
     not: { outcome: 'money', why: 'Renewing a passport usually costs money, but this form asks only for facts about her. No payment is asked for here.' } },
 
   /* ---------- money beside a message that asks nothing ---------- */
   { id: 'g-p-refund', use: 'drill', tier: 'clean', setting: 'shopping', topic: 'a refund that has been made',
-    text: "Zuri's online shop emails her: 'We have refunded £24.99 to the card you paid with. It will show in your account in 3 to 5 days.'",
+    text: "Zuri's online store emails her: 'We have refunded $24.99 to the card you paid with. It will show in your account in 3 to 5 days.'",
     route: { D1: ['nothing'] },
-    cues: { D1: 'We have refunded £24.99 to the card you paid with' },
+    cues: { D1: 'We have refunded $24.99 to the card you paid with' },
     reason: { D1: 'The email only tells Zuri that a refund has been made: {cue:D1}. It asks her for nothing, and it gives her no link, number or app.' },
     not: { outcome: 'money', why: 'The email is about money, but nobody is asked to pay or send any. The money is going to her.' } },
 
   { id: 'g-p-tunebox', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a music subscription that has ended',
-    text: "Tunebox texts Evan: 'Your subscription has ended. Pay £9.99 at tunebox-renew.com to keep listening.'",
+    text: "Tunebox texts Evan: 'Your subscription has ended. Pay $9.99 at tunebox-renew.com to keep listening.'",
     route: { D1: ['money'] },
-    cues: { D1: 'Pay £9.99 at tunebox-renew.com to keep listening' },
+    cues: { D1: 'Pay $9.99 at tunebox-renew.com to keep listening' },
     reason: { D1: 'The text tells Evan to pay a sum at an address: {cue:D1}. The ending of his subscription is the reason it gives.' },
     not: { outcome: 'nothing', why: 'A subscription ending is news, and a notice of it could stand on its own. But the text goes on to tell him to pay, so it asks.' } },
 
@@ -74,7 +74,7 @@ FC.cases('scams', 'u1', [
     options: [
       { text: 'The caller told her to press a button so that he could watch her computer.', voice: 'device' },
       { text: 'The page asked him to type the number that had just come to his phone.', voice: 'access' },
-      { text: 'The email asked her to send £340 into an account by Friday.', voice: 'money' },
+      { text: 'The email asked her to send $340 into an account by Friday.', voice: 'money' },
       { text: 'The form asked for his date of birth and his address.', voice: 'details' },
       { text: 'The text said that the appointment had moved to Tuesday.', voice: 'nothing' }
     ],
@@ -84,9 +84,9 @@ FC.cases('scams', 'u1', [
     options: [
       { text: '"Download this program and I will fix it from here."', voice: 'device' },
       { text: '"Please type the six-digit number we have just texted you."', voice: 'access' },
-      { text: '"Send £50 today and I will pay you back."', voice: 'money' },
+      { text: '"Send $50 today and I will pay you back."', voice: 'money' },
       { text: '"Where do you live, and what do you do for work?"', voice: 'details' },
-      { text: '"Your parcel will arrive tomorrow between 9 and 12."', voice: 'nothing' }
+      { text: '"Your package will arrive tomorrow between 9 and 12."', voice: 'nothing' }
     ],
     why: 'It asks for a way into an account: a number to type in. Nothing is put on the device, and nobody is asked to pay or to tell anything about themselves.' },
 
@@ -96,7 +96,7 @@ FC.cases('scams', 'u1', [
       { text: 'The site asked him to sign in with his password.', voice: 'access' },
       { text: 'He was told to pay the fee at an address in the message.', voice: 'money' },
       { text: 'The form asked for her passport number and her date of birth.', voice: 'details' },
-      { text: 'The notice said that the bill would be taken by direct debit on the 1st.', voice: 'nothing' }
+      { text: 'The notice said that the bill would be taken by automatic payment on the 1st.', voice: 'nothing' }
     ],
     why: 'That detail is a request to pay a fee. In the last option the payment is only mentioned as something that will happen, and nobody is asked to do anything.' },
 
@@ -104,7 +104,7 @@ FC.cases('scams', 'u1', [
     options: [
       { text: '"Install the update from this link."', voice: 'device' },
       { text: '"Press Allow so that the app can read your calendar."', voice: 'access' },
-      { text: '"Pay the £2.50 handling fee at this link."', voice: 'money' },
+      { text: '"Pay the $2.50 handling fee at this link."', voice: 'money' },
       { text: '"Please send a photo of your passport and tell me your date of birth."', voice: 'details' },
       { text: '"The office will be closed on Monday."', voice: 'nothing' }
     ],
@@ -114,7 +114,7 @@ FC.cases('scams', 'u1', [
     options: [
       { text: 'It asked him to open a file to see the delivery.', voice: 'device' },
       { text: 'It asked him to sign in to see the delivery.', voice: 'access' },
-      { text: 'It asked him to pay a £1.99 fee for the delivery.', voice: 'money' },
+      { text: 'It asked him to pay a $1.99 fee for the delivery.', voice: 'money' },
       { text: 'It asked him to confirm his name and address for the delivery.', voice: 'details' },
       { text: 'It said that the delivery would arrive between 1 and 4, and asked for nothing.', voice: 'nothing' }
     ],

@@ -40,14 +40,14 @@ FC.cases('ideology', 'u3', [
 
   /* ---------- Fascism ---------- */
   { id: 'n-ret-order', use: 'return', tier: 'varied', setting: 'health', topic: 'a medical society dissolved',
-    text: "From the Leader's health order: 'The nation is one people with one will, and the Leader is its doctor. The medical society that wrote to criticise the order is dissolved, and its members will not practise.'",
+    text: "From the Leader's health order: 'The nation is one people with one will, and the Leader is its doctor. The medical society that wrote to criticize the order is dissolved, and its members will not practice.'",
     outcome: 'fasc', route: { D1: ['nation'], N1: ['whole'], N2: ['aside'] },
     cues: { D1: 'The nation is one people with one will',
             N1: 'The nation is one people with one will, and the Leader is its doctor',
-            N2: 'The medical society that wrote to criticise the order is dissolved, and its members will not practise' },
+            N2: 'The medical society that wrote to criticize the order is dissolved, and its members will not practice' },
     reason: { D1: 'The order puts one nation first: {cue:D1}.',
               N1: 'It speaks for the nation as a single people: {cue:N1}. Nobody is ranked by blood.',
-              N2: 'The society that criticised the order is dissolved and its members barred: {cue:N2}. That takes away the say of those who disagree.' },
+              N2: 'The society that criticized the order is dissolved and its members barred: {cue:N2}. That takes away the say of those who disagree.' },
     not: { outcome: 'nationalism', why: '{o:nationalism} would leave the medical society and its letter alone. Here the society is dissolved for writing it.' } },
 
   { id: 'n-ret-station', use: 'return', tier: 'varied', setting: 'town', topic: 'a radio station seized',

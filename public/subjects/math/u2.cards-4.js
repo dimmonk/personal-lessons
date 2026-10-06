@@ -44,14 +44,14 @@ FC.cards('math', 'u2', [
       'Two things that each repeat are a different kind: there the question is when they meet. Here there is one loop, and a count that goes round it.',
       'A count of days is not an amount followed through time when the question is only which day of the week it ends on. That is a loop, and it is this kind, even though the days pass.'
     ],
-    wild: ['"How many are left over?"', '"What day will it be in 50 days?"', '"What colour is the 50th bead?"', '"What time will it be 50 hours from now?"'],
+    wild: ['"How many are left over?"', '"What day will it be in 50 days?"', '"What color is the 50th bead?"', '"What time will it be 50 hours from now?"'],
     self: 'You meet it when you share things out and some are left, when you work out a day or a time some way ahead, when something repeats in a pattern and you want to know which one comes at a given place, and when you read a clock.',
     ask: '"Is there a count with one group size or one loop, and does the problem want the part that is not in a whole group, or the place the count finishes?" If you can say yes, you are probably looking at this kind.' },
 
   { id: 'check-modrem', kind: 'check', after: 'modrem',
     case: 'wd-teams',
     ask: { type: 'phrase', step: 'W1', say: 'Which words show what has to be found? Tap them.',
-           answer: 'How many pupils are left over once every team is full?' } },
+           answer: 'How many students are left over once every team is full?' } },
 
   { id: 'check-modrem-last', kind: 'check', after: 'modrem', case: 'ck-mod-last', ask: { type: 'solve', solve: 'last' } },
   { id: 'check-modrem-whole', kind: 'check', after: 'modrem', case: 'ck-mod-whole', ask: { type: 'solve', solve: 'whole' } },
@@ -89,7 +89,7 @@ FC.cards('math', 'u2', [
   { id: 'again-irrat', kind: 'again', outcome: 'irrat',
     link: 'The metal sheet gave you what to point to: {needs:irrat}. Here is a second problem with a different story and a different number, pi.',
     first: 'wd-sheet', second: 'wd-cake-tin', step: 'W1',
-    instruction: 'Find what the two problems share. Ignore the story (metal, a cake tin) and ignore the numbers. Look at one thing only: which words show what has to be found about the number?',
+    instruction: 'Find what the two problems share. Ignore the story (metal, a cake pan) and ignore the numbers. Look at one thing only: which words show what has to be found about the number?',
     prompt: { kind: 'phrase', answer: 'be written exactly, as a fraction or a decimal that ends' },
     shared: [
       'Both ask whether one number can be written exactly: the side of the sheet, which multiplies by itself to give 5, and pi, the number of times the distance across a circle fits round it. Neither is split, repeated or left over.',

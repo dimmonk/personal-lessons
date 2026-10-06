@@ -5,7 +5,7 @@ FC.cases('civics', 'u5', [
 
   /* ---------- The case that carries the word precedent (no name is asked of it) ---------- */
   { id: 'foodtruck', use: 'teach', tier: 'clean', setting: 'community', topic: 'two rulings on a food truck', name: 'The food trucks',
-    text: 'Two years ago a judge in Marlow’s court ruled that a food truck is a shop under the town’s licensing law, so its owner needed a shop licence. This spring a different judge in the same town is asked the same question about another owner’s food truck. She reads the earlier ruling and decides it the same way.' },
+    text: 'Two years ago a judge in Marlow’s court ruled that a food truck is a shop under the town’s licensing law, so its owner needed a shop license. This spring a different judge in the same town is asked the same question about another owner’s food truck. She reads the earlier ruling and decides it the same way.' },
 
   /* ---------- Interpreting a law ---------- */
   { id: 'i-hives', use: 'teach', tier: 'clean', setting: 'money', topic: 'a tax break and rooftop beehives', name: 'The rooftop hives',
@@ -63,7 +63,7 @@ FC.cases('civics', 'u5', [
     ] },
 
   { id: 'n-check', use: 'check', tier: 'clean', setting: 'health', topic: 'a second walk-in clinic', name: 'The second clinic',
-    text: 'Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighbourhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.',
+    text: 'Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighborhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'ask a judge to order the city', J1: 'No law requires a second clinic, and nobody says the city takes away a right by not opening one' },
     reason: { J1: 'The residents ask the judge to choose, and their reason is that it would be better. Nothing settles it: {cue:J1}. There is no law or right for the judge to apply.' } },

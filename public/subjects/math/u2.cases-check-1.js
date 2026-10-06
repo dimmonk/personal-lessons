@@ -182,10 +182,10 @@ FC.cases('math', 'u2', [
     use: 'check',
     tier: 'clean',
     setting: 'cooking',
-    topic: 'biscuits on baking sheets',
+    topic: 'cookies on baking sheets',
     kind: 'problem',
     outcome: 'prime',
-    text: 'A baker has 83 biscuits and wants to lay them on baking sheets in equal rows, with more than one row and more than one biscuit in each row. Is that possible?',
+    text: 'A baker has 83 cookies and wants to lay them on baking sheets in equal rows, with more than one row and more than one cookie in each row. Is that possible?',
     route: { M1: ['whole'], W1: ['split'] },
     steps: [
       {

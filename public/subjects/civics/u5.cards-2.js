@@ -25,7 +25,7 @@ FC.cards('civics', 'u5', [
       'Nobody says the law breaks the Constitution, and the judge is not asked whether the tax break is a good idea.'
     ],
     explain: [
-      'Laws are written ahead of time, in words, by people who could not picture every situation. Whoever wrote "farm" was probably thinking of fields and barns. A roof with beehives on it is something they may never have pictured, and the word does not say yes or no. Somebody has to decide, and the tax office and Dora each have a reason to answer in their own favour.',
+      'Laws are written ahead of time, in words, by people who could not picture every situation. Whoever wrote "farm" was probably thinking of fields and barns. A roof with beehives on it is something they may never have pictured, and the word does not say yes or no. Somebody has to decide, and the tax office and Dora each have a reason to answer in their own favor.',
       'So a judge decides. The judge does not do it by choosing what would be best, and the judge’s own view of whether a lower tax bill for rooftop hives is a good idea does not decide it. The judge goes to the law. The judge reads its words, reads the rest of the law around them, asks what the law was for, and looks at earlier rulings on the same words. Those earlier rulings are what you met on the last card, and the word for them is {t:precedent}.',
       'This is most of what courts do. Nobody in the case says the law is not allowed. The law stands, and the only question is how far its words reach.'
     ],
@@ -53,7 +53,7 @@ FC.cards('civics', 'u5', [
     ],
     not: 'A judge who is reading a law is not always doing this. If somebody says the law itself clashes with the Constitution, the judge is being asked the question of {o:review}. This name is for the case where nobody says that and the question is only how far the words reach. And a judge who is asked whether the law ought to say something different is not reading it at all.',
     wild: ['"The court clarified what the law covers."', '"The judge said the word includes…"', '"The ruling means the rule applies to…"', '"The court interpreted the law."'],
-    self: 'In your own life you meet it whenever the words of a rule and your situation do not quite fit: a tax break, a licence rule, a parking limit written before the thing you are doing existed.',
+    self: 'In your own life you meet it whenever the words of a rule and your situation do not quite fit: a tax break, a license rule, a parking limit written before the thing you are doing existed.',
     ask: '"Does anyone say this law should not exist, or only that its words do or do not reach what happened?" If it is only the words, look to what the words, the rest of the law, its purpose and earlier rulings say.' },
 
   { id: 'check-interpret', kind: 'check', after: 'interpret',

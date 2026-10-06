@@ -38,7 +38,7 @@ FC.cards('psychology', 'u2', [
       'Maya did something: she ate the sauce, and finished it after she knew what was in it.',
       'It does not fit something she believes and has told people: that she is vegan.',
       'She did not stop, and she did not take back what she says about herself.',
-      'Afterwards she gave a reason why this plate does not count.'
+      'Afterward she gave a reason why this plate does not count.'
     ],
     explain: [
       'Maya took neither of the honest ways out. She did not put down her fork, and she did not say "I am not as strict as I tell people." She did the third thing: after the act, she gave a reason why the act is fine. "It hardly counts." In plain words, an excuse.',
@@ -50,11 +50,11 @@ FC.cards('psychology', 'u2', [
   { id: 'again-dissonance', kind: 'again', outcome: 'dissonance',
     link: 'The last card gave you what to point to, from one case: {needs:dissonance}. Here is a second case with a completely different story.',
     first: 'sauce', second: 'driver', step: 'R1',
-    instruction: 'Find what the two cases share. Ignore the story (a dinner, a motorway). Look at one thing only: what the person’s reason does.',
+    instruction: 'Find what the two cases share. Ignore the story (a dinner, a highway). Look at one thing only: what the person’s reason does.',
     prompt: { kind: 'phrase', answer: "Everyone drives at that speed there, so it doesn't really count as speeding" },
     shared: [
-      'Both people did something that does not fit what they believe about themselves. Both gave a reason afterwards for why it is fine: "It hardly counts", and "it doesn’t really count as speeding". Neither took anything back.',
-      'The two stories share nothing else. So this is not about food or about driving. It holds wherever something a person did does not fit what they believe, and they give a reason afterwards for why it is fine. That is what {o:dissonance} names.'
+      'Both people did something that does not fit what they believe about themselves. Both gave a reason afterward for why it is fine: "It hardly counts", and "it doesn’t really count as speeding". Neither took anything back.',
+      'The two stories share nothing else. So this is not about food or about driving. It holds wherever something a person did does not fit what they believe, and they give a reason afterward for why it is fine. That is what {o:dissonance} names.'
     ] },
 
   { id: 'lens', kind: 'lens',
@@ -75,7 +75,7 @@ FC.cards('psychology', 'u2', [
       'The act may be over, like Maya’s dinner, or it may be a habit that is still going on. Either way the reason arrives after the person is already doing it.',
       'The reason usually does one of four jobs. It shrinks the act ("it was only a small one"). It makes an exception ("this time is different"). It hands the act to circumstances ("I had no choice"). Or it points at other people ("everyone does it").',
       'The person is usually sincere. They are not lying to you; the reason has already worked on them. That is why it tends to sound calm, not guilty.',
-      'Nothing real changes. The act tends to come round again, with the same reason or a fresh one.'
+      'Nothing real changes. The act tends to come around again, with the same reason or a fresh one.'
     ],
     not: 'Doing something that does not fit a belief is not yet {o:dissonance}. Someone who says "I know, I shouldn’t have, and I did" has given no reason why it is fine. Someone who changes what they do, or who says "I am not as strict as I claimed", has taken one of the honest ways out. The name applies only when a reason is given that makes the act fine and leaves everything else as it was.',
     wild: ['"Just this once."', '"I deserve it after the week I’ve had."', '"It doesn’t really count."', '"Everyone does it."', '"I had no choice."'],
@@ -84,7 +84,7 @@ FC.cards('psychology', 'u2', [
 
   { id: 'check-dissonance', kind: 'check', after: 'dissonance',
     case: 'shops',
-    ask: { type: 'phrase', step: 'R1', say: 'Which part of this case is the reason given afterwards for why it is fine? Tap it.',
+    ask: { type: 'phrase', step: 'R1', say: 'Which part of this case is the reason given afterward for why it is fine? Tap it.',
            answer: 'One order makes no difference to anyone' } },
 
   { id: 'refute-mismatch', kind: 'refute', about: 'dissonance',

@@ -5,14 +5,14 @@
 FC.cases('civics', 'u6', [
 
   /* ---------- Checks: one for each name, one for each of the two questions ---------- */
-  { id: 'u6-c-licence', use: 'check', tier: 'clean', setting: 'travel', topic: 'a driving licence age', name: 'The driving age',
-    text: "In the state of Tarn, young people were asking at what age they could drive. The Tarn legislature passed a law that a person must be at least sixteen to get a driver’s licence.",
+  { id: 'u6-c-license', use: 'check', tier: 'clean', setting: 'travel', topic: 'a driving license age', name: 'The driving age',
+    text: "In the state of Tarn, young people were asking at what age they could drive. The Tarn legislature passed a law that a person must be at least sixteen to get a driver’s license.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { S1: 'The Tarn legislature passed a law', S2: 'a person must be at least sixteen to get a driver’s licence' },
+    cues: { S1: 'The Tarn legislature passed a law', S2: 'a person must be at least sixteen to get a driver’s license' },
     segments: [
       { text: 'In the state of Tarn, young people were asking at what age they could drive', note: 'That is why the rule exists. It is the story behind it, and it does not say who made it.' },
       { text: 'The Tarn legislature passed a law' },
-      { text: 'a person must be at least sixteen to get a driver’s licence', note: 'That is what the rule says: its matter. It does not say who made it.' }],
+      { text: 'a person must be at least sixteen to get a driver’s license', note: 'That is what the rule says: its matter. It does not say who made it.' }],
     reason: { S1: 'The words that show who made the rule are {cue:S1}: the lawmakers of one state, so the state itself made the rule. The case names no city, town or county.' } },
 
   { id: 'u6-c-parking', use: 'check', tier: 'clean', setting: 'travel', topic: 'parking on market days', name: 'Parking on market days',
@@ -56,11 +56,11 @@ FC.cases('civics', 'u6', [
     reason: { S2: 'The matter is {cue:S2}: public schools, which are kept by the states. The case mentions no federal law and the rule takes away no right, so nothing else covers it.' } },
 
   /* ---------- The two worked cases: a clean one, then one whose story points the wrong way ---------- */
-  { id: 'u6-dogs', use: 'teach', tier: 'clean', setting: 'community', topic: 'dog licences', name: 'The dog licence fee',
-    text: "Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that anyone who keeps more than four dogs must pay a yearly licence fee to the county.",
+  { id: 'u6-dogs', use: 'teach', tier: 'clean', setting: 'community', topic: 'dog licenses', name: 'The dog license fee',
+    text: "Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that anyone who keeps more than four dogs must pay a yearly license fee to the county.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
     cues: { D1: 'the Marsh County board voted', S1: 'Using the power the state gives to counties, the Marsh County board voted',
-            S2: 'anyone who keeps more than four dogs must pay a yearly licence fee to the county' } },
+            S2: 'anyone who keeps more than four dogs must pay a yearly license fee to the county' } },
 
   { id: 'u6-parkevent', use: 'teach', tier: 'misleading', setting: 'community', topic: 'event hours in a park', name: 'The park evening limit',
     text: "A group in the city of Kellmouth planned an evening march for better bus services in Mill Park. The Kellmouth city council has a rule that any event in a city park, whatever it is about, must end by nine at night. The group asked the council to let the march run until midnight, and the council voted no.",

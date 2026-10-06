@@ -15,7 +15,7 @@ FC.cards('civics', 'u3', [
         reason: 'What Congress does is pass a law, and what the law is about is the hours barbers may work: {cue:C1}. Run the two tests. Is the matter on the Constitution’s list? The working hours of barbers are not one of the matters the list holds, so the matter is for the states to decide. The second test is never reached: a matter outside the list is enough.' }
     ],
     hold: {
-      neighbour: 'enumerated',
+      neighbor: 'enumerated',
       prompt: { kind: 'reason',
         lead: 'A law that both chambers passed is what you point to for {o:enumerated} too, so the case can look like {o:enumerated}.',
         choices: [
@@ -50,7 +50,7 @@ FC.cards('civics', 'u3', [
         reason: 'Congress passed a bill, and what the bill does is give money: {cue:C1}. The government can spend only what Congress has voted, so Congress is deciding whether the government may spend. The bill is also about coins, and money and coins are on the Constitution’s list, so the case shows both a law on a listed matter and a decision about money. When a case shows both, the answer is {a:C1.money}.' }
     ],
     hold: {
-      neighbour: 'enumerated',
+      neighbor: 'enumerated',
       prompt: { kind: 'reason',
         lead: 'The bill is about coins, which are on the Constitution’s list, so the case can look like {o:enumerated}.',
         choices: [
@@ -95,7 +95,7 @@ FC.cards('civics', 'u3', [
     prompts: [
       { outcome: 'enumerated', occasion: 'The last time a tax, a coin or the post office changed, and someone said that Congress passed it.' },
       { outcome: 'beyondcong', occasion: 'A law you heard described as going too far: into what your state or town decides, or into what you may say, believe or do.' },
-      { outcome: 'purse', occasion: 'A programme, a park or a service that was cut, closed or funded, in the news or in your own town.' },
+      { outcome: 'purse', occasion: 'A program, a park or a service that was cut, closed or funded, in the news or in your own town.' },
       { outcome: 'confirm', occasion: 'A judge, an ambassador or the head of an office whose approval by the Senate you read about.' },
       { outcome: 'impeach', occasion: 'A time you heard that an official was “impeached” or that a trial was set, and what you took it to mean.' }
     ],

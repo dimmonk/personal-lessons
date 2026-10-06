@@ -69,15 +69,15 @@ FC.cases('math', 'u3', [
     topic: 'bottles and caps for a team',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A team bought 20 items, some water bottles at €5 each and some caps at €8 each, and paid €124. How many bottles and how many caps did it buy?',
+    text: 'A team bought 20 items, some water bottles at $5 each and some caps at $8 each, and paid $124. How many bottles and how many caps did it buy?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'bought 20 items, some water bottles at €5 each and some caps at €8 each',
-        'paid €124',
+        'bought 20 items, some water bottles at $5 each and some caps at $8 each',
+        'paid $124',
         'How many bottles and how many caps did it buy?'
       ],
-      A1: ['bought 20 items, some water bottles at €5 each and some caps at €8 each', 'paid €124']
+      A1: ['bought 20 items, some water bottles at $5 each and some caps at $8 each', 'paid $124']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -137,17 +137,17 @@ FC.cases('math', 'u3', [
     topic: 'loads of sand and gravel',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A lorry made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel, and carried 60 tonnes in all. How many deliveries of each were there?',
+    text: 'A truck made 26 deliveries, some of 2 tons of sand and some of 3 tons of gravel, and carried 60 tons in all. How many deliveries of each were there?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel',
-        'carried 60 tonnes in all',
+        'made 26 deliveries, some of 2 tons of sand and some of 3 tons of gravel',
+        'carried 60 tons in all',
         'How many deliveries of each were there?'
       ],
       A1: [
-        'made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel',
-        'carried 60 tonnes in all'
+        'made 26 deliveries, some of 2 tons of sand and some of 3 tons of gravel',
+        'carried 60 tons in all'
       ]
     },
     reason: {

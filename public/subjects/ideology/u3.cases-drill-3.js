@@ -1,7 +1,7 @@
 // Political Ideologies, Unit Three: the last route cases (the ones whose story points the wrong way) and the reverse items of
 // stage two (one for each name).
 // echo names a teaching case whose story this one resembles while its name differs: the feedback says so, which is how the
-// "does it look like a case you know?" second look is practised. also lists an answer the case shows as well as its own, which
+// "does it look like a case you know?" second look is practiced. also lists an answer the case shows as well as its own, which
 // loses to its own by the key's tie-break. A reverse item gives the name and asks what you would expect: every choice is what
 // one of the five names sounds like (voice), so no choice is a false statement.
 

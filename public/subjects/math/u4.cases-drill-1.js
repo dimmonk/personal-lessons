@@ -182,11 +182,11 @@ FC.cases('math', 'u4', [
     topic: 'a loaf of bread',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A bakery sold a loaf for €2.50. In April it raised the price to €2.80, and it has kept it at €2.80 ever since. What will a loaf cost after 3 years?',
+    text: 'A bakery sold a loaf for $2.50. In April it raised the price to $2.80, and it has kept it at $2.80 ever since. What will a loaf cost after 3 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['it has kept it at €2.80 ever since'],
-      G1: ['In April it raised the price to €2.80', 'it has kept it at €2.80 ever since'],
+      M1: ['it has kept it at $2.80 ever since'],
+      G1: ['In April it raised the price to $2.80', 'it has kept it at $2.80 ever since'],
       G2: ['What will a loaf cost after 3 years?']
     },
     reason: {
@@ -201,33 +201,33 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €2.50. After: €2.80'
+        working: 'Before: $2.50. After: $2.80'
       },
       {
         does: 'Say how big the change was',
-        working: '€2.80 − €2.50 = €0.30, and €0.30 ÷ €2.50 = 0.12, which is 12% of the old amount'
+        working: '$2.80 − $2.50 = $0.30, and $0.30 ÷ $2.50 = 0.12, which is 12% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €2.80 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $2.80 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 3 years: €2.80'
+        working: 'In 3 years: $2.80'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€2.80' },
+        { id: 'r', text: '$2.80' },
         {
           id: 's1',
-          text: '€3.70',
+          text: '$3.70',
           slip: 'you carry the change forward as if it came again every year.'
         },
         {
           id: 's2',
-          text: '€3.93',
+          text: '$3.93',
           slip: 'you carry the percentage forward as if it came again every year.'
         }
       ]

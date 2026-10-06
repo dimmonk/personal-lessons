@@ -15,7 +15,7 @@ FC.cards('ideology', 'u5', [
         reason: 'The text says what the council is to do, and what it is not to do: {cue:R1}. The council keeps the courts and the police, the text says that is enough, and nothing is asked of it for anyone beyond that.' }
     ],
     hold: {
-      neighbour: 'modlib',
+      neighbor: 'modlib',
       prompt: { kind: 'reason',
         lead: 'The letter names the courts and the police, and courts and police are things a government provides. So it can look as if the text asks the government to give something.',
         choices: [
@@ -50,7 +50,7 @@ FC.cards('ideology', 'u5', [
         reason: 'The text asks the government to give something: {cue:R1}. It also says that the test is the same for every child, and that "nobody says it is unfair". It does not say that a rule leaves a group behind. It says that some children start a long way back, and asks the government to pay for tutoring and a study room for any child who needs one.' }
     ],
     hold: {
-      neighbour: 'idegal',
+      neighbor: 'idegal',
       prompt: { kind: 'reason',
         lead: 'The speech is about an entry test that is the same for every child, and about children who start behind. That is what the hill-villages letter was about, so the case can look like {o:idegal}.',
         choices: [
@@ -63,7 +63,7 @@ FC.cards('ideology', 'u5', [
         answer: 'b' },
       reason: [
         'The story points to {o:idegal}. But for that name you must be able to point to this: {needs:idegal}. This speech names no group, says that no rule has left anyone behind, and asks for no rule to change. It asks the government to pay for help.',
-        'It is the question from the two cases about the housing list. {test:modlib~idegal} Here the text asks for the same help for any child who needs it, and blames no rule, so the answer is {a:R1.start}.'
+        'It is the question from the two cases about the housing waitlist. {test:modlib~idegal} Here the text asks for the same help for any child who needs it, and blames no rule, so the answer is {a:R1.start}.'
       ]
     },
     impression: {
@@ -92,7 +92,7 @@ FC.cards('ideology', 'u5', [
       'Pick one of the three and name an occasion of your own: somewhere you heard it, or somewhere you said it. The lines under each name are there to jog your memory.'
     ],
     prompts: [
-      { outcome: 'clib', occasion: 'A form, a licence or a fee that you thought a government had no business asking for.' },
+      { outcome: 'clib', occasion: 'A form, a license or a fee that you thought a government had no business asking for.' },
       { outcome: 'modlib', occasion: 'A service that you thought everyone should be able to use, and everyone should pay for together.' },
       { outcome: 'idegal', occasion: 'A rule that was the same for everyone, and that you or someone near you found worked out unevenly.' }
     ],

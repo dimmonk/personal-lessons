@@ -9,7 +9,7 @@ FC.cards('civics', 'u3', [
     link: 'So far Congress has passed laws, some it was allowed to pass and some it was not. The third thing Congress does is not about what people may do. It is about what the government may spend.',
     case: 'p-barrier', mark: 'C1',
     strip: [
-      'There is a programme on paper: the President announced a flood barrier, and the engineers have their plans.',
+      'There is a program on paper: the President announced a flood barrier, and the engineers have their plans.',
       'There is a decision in Congress about whether the government may spend money on it: the bill that settles this year’s spending.',
       'The bill leaves the money out.',
       'Nobody has forbidden the barrier. There is simply no money to build it.'
@@ -35,15 +35,15 @@ FC.cards('civics', 'u3', [
   { id: 'portrait-purse', kind: 'portrait', outcome: 'purse',
     link: 'You know what to point to. This card fills in the rest of the picture of {o:purse}.',
     typical: [
-      'There is a decision about money, and it is Congress’s. The talk is about funding and budgets: whether a programme is funded, what the year’s budget holds, what was cut.',
+      'There is a decision about money, and it is Congress’s. The talk is about funding and budgets: whether a program is funded, what the year’s budget holds, what was cut.',
       'Congress can say yes, no or less. It can vote the money, cut an amount it voted before, or leave the money out of the bill.',
       'The offices that carry out the laws wait for the money. An {t:agency} spends it once Congress has voted it, but does not decide how much there is.',
-      'Nothing has to be banned. A programme can be stopped by not paying for it, which is why budget fights matter so much: whether something is funded is Congress’s decision.',
-      'The sum can be small or huge, and the programme can be one the President wants or one nobody wants.'
+      'Nothing has to be banned. A program can be stopped by not paying for it, which is why budget fights matter so much: whether something is funded is Congress’s decision.',
+      'The sum can be small or huge, and the program can be one the President wants or one nobody wants.'
     ],
     not: 'Raising money is not this name. Congress raises money by passing a law on a matter on the Constitution’s list, a tax for example, and that is {o:enumerated}. This name is for the other side, deciding whether the government may spend the money.',
     wild: ['“The budget passed.”', '“Congress cut the funding.”', '“The spending bill has no money for it.”', '“Congress voted the money for it.”', '“A shutdown…”'],
-    self: 'In your own life you meet this when a programme you rely on is funded or cut, when a park or a service closes in a budget fight, and in the stories about a shutdown, which is what happens when the money has not been voted.',
+    self: 'In your own life you meet this when a program you rely on is funded or cut, when a park or a service closes in a budget fight, and in the stories about a shutdown, which is what happens when the money has not been voted.',
     ask: '“Who decides whether the money is there, and did they vote it, cut it or leave it out?” If the case turns on Congress deciding whether the government may spend money on something, the answer is {a:C1.money}.' },
 
   { id: 'check-purse', kind: 'check', after: 'purse',

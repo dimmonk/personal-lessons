@@ -10,7 +10,7 @@ FC.cases('math', 'u3', [
     topic: 'the area rule for a pool',
     kind: 'problem',
     outcome: 'quad',
-    text: 'The area of a rectangular pool, in square metres, is worked out by the rule: width × (width + 5). A pool’s area is 36 m². What is its width?',
+    text: 'The area of a rectangular pool, in square meters, is worked out by the rule: width × (width + 5). A pool’s area is 36 m². What is its width?',
     route: { M1: ['unknown'], A1: ['itself'] },
     cues: {
       M1: ['width × (width + 5)', 'What is its width?'],
@@ -18,7 +18,7 @@ FC.cases('math', 'u3', [
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give a rule and the result it came to, 36 m², which looks like {a:A1.formula}. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the answer is {a:A1.itself}.'
+      A1: 'The words {cue:A1} give a rule and the result it came to, 36 m², which looks like {a:A1.formula}. But in the rule the missing width appears twice, once on its own and once inside the parentheses, so it is multiplied by itself, and the answer is {a:A1.itself}.'
     },
     not: {
       outcome: 'rearr',

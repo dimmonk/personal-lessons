@@ -4,18 +4,18 @@
 FC.cases('math', 'u1', [
 
   { id: 'gt-ret-buspass', use: 'return', tier: 'varied', setting: 'money', topic: 'a bus pass price cut once',
-    text: 'A monthly bus pass cost €40 until January, when the price was cut to €34. It has stayed at €34 ever since. What will the pass cost a month next December?',
+    text: 'A monthly bus pass cost $40 until January, when the price was cut to $34. It has stayed at $34 ever since. What will the pass cost a month next December?',
     route: { M1: ['growth'] },
-    cues: { M1: ['It has stayed at €34 ever since', 'What will the pass cost a month next December?'] },
+    cues: { M1: ['It has stayed at $34 ever since', 'What will the pass cost a month next December?'] },
     reason: { M1: 'One amount, the price of the pass, is followed through time: {cue:M1}. It changed one time and has stayed put since, and the question asks what it will be at a later time.' },
     not: { outcome: 'unknown', why: 'The price in December is the number the problem leaves out, which can look like a hidden number. But nothing has to fit a calculation: the price changed once, and the question is what it is later.' },
     wouldChange: 'If the problem asked on which day of the week the price cut would take effect, 45 days after a Monday, the question would end on a loop of 7, and it would be {a:M1.whole}.' },
 
   /* ---------- counting ways, and chance ---------- */
-  { id: 'gt-ret-canteen', use: 'return', tier: 'clean', setting: 'cooking', topic: 'lunches built from separate lists',
-    text: 'A school canteen serves a lunch of one main out of 4, one side out of 3 and one drink out of 3. How many different lunches can a pupil choose?',
+  { id: 'gt-ret-cafeteria', use: 'return', tier: 'clean', setting: 'cooking', topic: 'lunches built from separate lists',
+    text: 'A school cafeteria serves a lunch of one main out of 4, one side out of 3 and one drink out of 3. How many different lunches can a student choose?',
     route: { M1: ['chance'] },
-    cues: { M1: ['one main out of 4, one side out of 3 and one drink out of 3', 'How many different lunches can a pupil choose?'] },
+    cues: { M1: ['one main out of 4, one side out of 3 and one drink out of 3', 'How many different lunches can a student choose?'] },
     reason: { M1: 'A main, a side and a drink are each picked from a list of their own, and the question asks how many different results that gives: {cue:M1}.' },
     not: { outcome: 'whole', why: 'The numbers 4, 3 and 3 are whole counts, but none of them is being split into equal groups. They are the sizes of the lists the choices are made from.' },
     wouldChange: 'If the problem asked whether the 36 lunches served in a day could be shared into equal trays with none left over, it would be {a:M1.whole}.' },
@@ -43,7 +43,7 @@ FC.cases('math', 'u1', [
     cues: { M1: ['sails 24 km west and then 7 km south', 'How far in a straight line is it from its starting point?'] },
     reason: { M1: 'West and south meet at a square corner, so the two legs and the straight line back make a {t:righttriangle}. The problem gives two of its sides and asks for the third: {cue:M1}.' },
     not: { outcome: 'unknown', why: 'One number is left out, a distance, which can look like a hidden number. But the facts are two sides of a triangle with a square corner, and not a calculation, a rate or totals.' },
-    wouldChange: 'If the problem said the ship burns 3 litres of fuel for every 10 km and asked how much it used, it would be {a:M1.unknown}.' },
+    wouldChange: 'If the problem said the ship burns 3 liters of fuel for every 10 km and asked how much it used, it would be {a:M1.unknown}.' },
 
   { id: 'gt-ret-zipwire', use: 'return', tier: 'varied', setting: 'leisure', topic: 'a zip wire from a tower',
     text: 'A zip wire runs from the top of a tower down to the ground. It is 40 m long and meets the ground at an angle of 30°. The tower stands at a square corner to the ground. How high is the top of the tower?',

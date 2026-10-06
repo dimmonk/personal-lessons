@@ -10,15 +10,15 @@ FC.cards('math', 'u4', [
     h: 'The first question: how the amount changes each time',
     link: 'At the foot of each kind’s first card you saw one of the two questions with one answer under it. This card puts the first question and its three answers in one place and says why it is asked before any working.',
     decides: [
-      'Here is how far apart the two come. Put €1,000 at 5% a year beside €1,000 plus €50 a year: after one year both are €1,050. After thirty years the first is about €4,322 and the second is €2,500. The wrong procedure gives a neat number all the same, and nothing in the number says that it is wrong, so only the words of the problem can settle which one it is. That is why this question is put first, before any working.',
+      'Here is how far apart the two come. Put $1,000 at 5% a year beside $1,000 plus $50 a year: after one year both are $1,050. After thirty years the first is about $4,322 and the second is $2,500. The wrong procedure gives a neat number all the same, and nothing in the number says that it is wrong, so only the words of the problem can settle which one it is. That is why this question is put first, before any working.',
       'The question has three answers, and they lead to different names. The same number each time leads to {o:lin}. Multiplying leads to {o:expg} or {o:logsolve}, so this question alone does not finish the job, and the second question has to separate those two. A single change leads to {o:oneoff}.'
     ],
     how: [
-      'Read the sentence that says what the amount does, and mark it. Ask whether the change is given as a plain figure with a unit of time (€3 a week, 40 boxes a day), as a percentage or a doubling (4% a year, doubles every day), or as something that happened one time (rose to €36 in March, has stayed since).',
+      'Read the sentence that says what the amount does, and mark it. Ask whether the change is given as a plain figure with a unit of time ($3 a week, 40 boxes a day), as a percentage or a doubling (4% a year, doubles every day), or as something that happened one time (rose to $36 in March, has stayed since).',
       'Then test it. Take the first two changes and ask whether the second is the same size as the first. A plain figure is. A percentage of a bigger or a smaller amount is not. If the change was made one time, there is no second change to compare.',
       'Put your finger on the words that show it. If you cannot point to them, you do not have an answer yet.'
     ],
-    whenBoth: 'A problem can show a percentage and still be an amount that adds: when the interest is paid out each year, the total paid grows by the same number every year. A problem can show a percentage and still be a single change: a price that went up 8% and stayed. And a problem can show a plain figure and still be a single change: a fee that went up by €6. In each case, ask whether the change comes again, and whether it is the same size each time.' },
+    whenBoth: 'A problem can show a percentage and still be an amount that adds: when the interest is paid out each year, the total paid grows by the same number every year. A problem can show a percentage and still be a single change: a price that went up 8% and stayed. And a problem can show a plain figure and still be a single change: a fee that went up by $6. In each case, ask whether the change comes again, and whether it is the same size each time.' },
 
   { id: 'check-g1', kind: 'check', after: 'G1',
     case: 'm4-ck-g1',
@@ -33,7 +33,7 @@ FC.cards('math', 'u4', [
       'For the other two kinds the question changes nothing about the procedure. {o:lin} is worked forwards or backwards by the same steps, and {o:oneoff} gives the amount after the change, or never, by the same steps. That is why both answers to this question lead to {o:lin} and to {o:oneoff}. Only for the multiplying kinds does this question decide the procedure.'
     ],
     how: [
-      'Read the last sentence of the problem and find what it asks. Does it give a length of time (6 hours, 3 years, 4 doublings) and ask what the amount will be by then? Or does it give a target for the amount (double, €2,400, the whole pond) and ask how long, or how many times it must change?',
+      'Read the last sentence of the problem and find what it asks. Does it give a length of time (6 hours, 3 years, 4 doublings) and ask what the amount will be by then? Or does it give a target for the amount (double, $2,400, the whole pond) and ask how long, or how many times it must change?',
       'Look for the number you are given. If it is a time, the amount is what is missing. If it is a target for the amount, the time is what is missing.',
       'Put your finger on the words that show it.'
     ],

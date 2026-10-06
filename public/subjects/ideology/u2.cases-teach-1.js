@@ -10,7 +10,7 @@ FC.cases('ideology', 'u2', [
 
   /* ---------- The word the unit leans on (shown by the term card; asked of nothing) ---------- */
   { id: 'c-term-bakery', use: 'teach', tier: 'clean', setting: 'work', topic: 'the sums of a bakery', name: 'The bakery’s sums',
-    text: "Millbrook Bakery pays each of its eight bakers £80 a day. In one day a baker makes bread that sells for £128, once the cost of the flour and of running the ovens has been taken off. After the bakers are paid, the owner, Dana, keeps the £48 that is left over." },
+    text: "Millbrook Bakery pays each of its eight bakers $80 a day. In one day a baker makes bread that sells for $128, once the cost of the flour and of running the ovens has been taken off. After the bakers are paid, the owner, Dana, keeps the $48 that is left over." },
 
   /* ---------- Social democracy ---------- */
   { id: 'c-sd-warehouse', use: 'teach', tier: 'clean', setting: 'work', topic: 'a pay floor in a warehouse', name: 'The warehouse leaflet',
@@ -45,12 +45,12 @@ FC.cases('ideology', 'u2', [
     outcome: 'classonly', route: { D1: ['class'], C1: ['none'], C2: ['none'] },
     cues: { C1: 'Come to the meeting on Thursday and stand with us' } },
 
-  { id: 'c-co-canteen', use: 'teach', tier: 'clean', setting: 'schooling', topic: 'a post by school canteen staff', name: 'The canteen post',
-    text: "A post by the Kingsway school canteen staff: 'The company that owns the canteen contract gets richer every year, and the people who cook for the children do not. Owners and workers do not want the same things, and we are with the workers. Share this if you are too.'",
+  { id: 'c-co-canteen', use: 'teach', tier: 'clean', setting: 'schooling', topic: 'a post by school cafeteria staff', name: 'The cafeteria post',
+    text: "A post by the Kingsway school cafeteria staff: 'The company that owns the cafeteria contract gets richer every year, and the people who cook for the children do not. Owners and workers do not want the same things, and we are with the workers. Share this if you are too.'",
     outcome: 'classonly', route: { D1: ['class'], C1: ['none'], C2: ['none'] },
     cues: { C1: 'Share this if you are too' },
     segments: [
-      { text: 'The company that owns the canteen contract gets richer every year, and the people who cook for the children do not', note: 'That names the owners and the workers and says what is wrong. It is not a plan for the business.' },
+      { text: 'The company that owns the cafeteria contract gets richer every year, and the people who cook for the children do not', note: 'That names the owners and the workers and says what is wrong. It is not a plan for the business.' },
       { text: 'Owners and workers do not want the same things, and we are with the workers', note: 'That is the side the text takes. It answers who the text is for. It says nothing about what should happen to the business.' },
       { text: 'Share this if you are too' }
     ] },

@@ -9,14 +9,14 @@ FC.cards('math', 'u1', [
     case: 'gt-outfits', mark: 'M1',
     strip: [
       'There is something that can turn out in different ways: an outfit.',
-      'It is made by several separate choices: a top, a pair of trousers and a pair of shoes, each chosen from its own list.',
+      'It is made by several separate choices: a top, a pair of pants and a pair of shoes, each chosen from its own list.',
       'The question is how many different results there are: how many different outfits.',
       'Nothing is measured, nothing changes as time passes, and no calculation has a number missing. The question counts possibilities.'
     ],
     explain: [
       'What you are shown is a set of choices and a question about how many different results they give. No number is hidden for a calculation to fit, and no amount is followed through time. The problem is about the choices themselves: how many different outfits there are, not what any one of them costs or weighs.',
       'The wording for this kind has two halves. The first is counting ways: how many different results there are when you choose, pick or order things. The second is chance: how likely it is that something happens, or that a test result can be trusted. They sit together because a chance is a share of the ways something can turn out. Zara’s problem is the counting half.',
-      'Notice that the problem asks “how many”, and so do problems of every kind in this unit: how many chairs, how many kilometres, how many days. What marks this kind is not those words. It is that what you are counting is the different results of a choice.'
+      'Notice that the problem asks “how many”, and so do problems of every kind in this unit: how many chairs, how many kilometers, how many days. What marks this kind is not those words. It is that what you are counting is the different results of a choice.'
     ],
     feature: { step: 'M1', option: 'chance' },
     name: 'The answer, and so the name of this kind of problem, is {a:M1.chance}. “Turn out” means end up, as a result of choices or of luck. Counting the ways is one half of the kind, and how likely something is, is the other.' },
@@ -36,7 +36,7 @@ FC.cards('math', 'u1', [
     typical: [
       'Something can turn out in more than one way: an outfit, a team, a lock code, a test result, the weather on a given day.',
       'The question is either how many different results there are, or how likely a particular result is.',
-      'The numbers are counts of choices (5 tops, 4 pairs of trousers), or chances written as percentages or as “1 in 500”, or both.',
+      'The numbers are counts of choices (5 tops, 4 pairs of pants), or chances written as percentages or as “1 in 500”, or both.',
       'The words you hear are “how many different”, “in how many ways”, “what are the chances”, “how likely”, “at least one”, “if the test says yes”.',
       'Nothing needs a ruler, and nothing needs to be watched over time.'
     ],
@@ -70,7 +70,7 @@ FC.cards('math', 'u1', [
     instruction: 'Both problems are about muffins and cookies at Dana’s bake sale. Compare one thing: do the facts fix exactly one answer that has to fit, or does the question count the results of a choice?',
     prompt: { kind: 'which', option: 'M1.chance', answer: 'gt-bake-plates' },
     difference: [
-      'In Case A the question is “how many of each”, and it has exactly one answer, because two facts fix it: 20 items in all and €50 in all. Nothing is a choice. There is one number of muffins and one number of cookies that fits, and the problem asks for them. The answer is {a:M1.unknown}.',
+      'In Case A the question is “how many of each”, and it has exactly one answer, because two facts fix it: 20 items in all and $50 in all. Nothing is a choice. There is one number of muffins and one number of cookies that fits, and the problem asks for them. The answer is {a:M1.unknown}.',
       'In Case B the question is “how many different plates”, and the answer is a count of choices: each plate is one muffin out of 4 sorts and one cookie out of 3. Nothing has to fit a result. The answer is {a:M1.chance}.',
       'Both ask “how many”, and both are about muffins and cookies. In Case A, “how many” asks for the numbers of two things the problem does not tell you. In Case B it asks how many different results a choice has.'
     ] },
@@ -82,7 +82,7 @@ FC.cards('math', 'u1', [
     idea: '"It says how many, so it is a counting problem."',
     verdict: 'This is wrong.',
     right: [
-      'The words “how many” turn up in all five kinds. “How many ways can the chairs be set out in equal rows?” is about how a number splits. “How many pens and how many notebooks?” asks for two numbers that two totals fix. “How many days until the barrel holds 100 litres?” follows an amount through time. “How many times more water does the larger tank hold?” asks for a volume. Only “how many different outfits” counts the results of a choice.',
+      'The words “how many” turn up in all five kinds. “How many ways can the chairs be set out in equal rows?” is about how a number splits. “How many pens and how many notebooks?” asks for two numbers that two totals fix. “How many days until the barrel holds 100 liters?” follows an amount through time. “How many times more water does the larger tank hold?” asks for a volume. Only “how many different outfits” counts the results of a choice.',
       'So when you see “how many”, do not stop at the words. Ask what is being counted. If it is the different results of a choice, or how likely one of them is, the answer is {a:M1.chance}. If it is anything else, the first question decides, and it asks about the whole problem and not about two words: {q:M1}'
     ],
     testedBy: ['gt-claim-howmany'] }

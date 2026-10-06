@@ -11,7 +11,7 @@ FC.cards('psychology', 'u4', [
     h: 'Telling the lasting ways of being apart, and knowing when none of them applies',
     canDo: 'After this unit you can read an account of how one person has been over many years, with different people in different places, and say which of six things it shows: one of five lasting ways of being that keep costing someone, or an ordinary way of being that does not. Nothing in this unit is a diagnosis of a person. The names describe what an account shows. Only a professional, after a long assessment, can say what a particular person has.',
     everyday: [
-      'You have heard the labels. A boss is called by the medical name for a swollen ego, an ex by the medical name for clinging, a flatmate by the medical name for being dramatic, a stranger by a word for being cold and cruel. Almost always, the person saying it has seen one bad week, one hard relationship, or one loud person at one party.',
+      'You have heard the labels. A boss is called by the medical name for a swollen ego, an ex by the medical name for clinging, a roommate by the medical name for being dramatic, a stranger by a word for being cold and cruel. Almost always, the person saying it has seen one bad week, one hard relationship, or one loud person at one party.',
       'This unit teaches what each label would need before it could be used for an account of a person. All of them need years, more than one place, more than one relationship, and what the person does again and again. Five of the six names also need something people rarely count: a cost, something that keeps being lost or harmed because of how the person is. The sixth name is for the person who is loud, shy, dramatic, blunt or touchy in the same way for years and does no lasting harm. It is the most common right answer.',
       'The people in this unit are invented. Even for them, a name says what a case shows, and the cards say what that would and would not tell you about a real person.'
     ],
@@ -28,7 +28,7 @@ FC.cards('psychology', 'u4', [
       'A "cost", in this unit, is anything lost or harmed because of how the person is: a job, a friendship, money, someone’s trust, someone’s health.'
     ],
     after: [
-      'Two things about the word. The first is that it is used for all three at once. A way of being that lasts and turns up everywhere, like being shy, is not this unless it also keeps costing. The second is that it is a medical word. Only a professional can say that a particular person has one. That judgement is called a diagnosis, and it comes after a long assessment: many meetings and a full history. A short account of a person is not that.',
+      'Two things about the word. The first is that it is used for all three at once. A way of being that lasts and turns up everywhere, like being shy, is not this unless it also keeps costing. The second is that it is a medical word. Only a professional can say that a particular person has one. That judgment is called a diagnosis, and it comes after a long assessment: many meetings and a full history. A short account of a person is not that.',
       'In the word, "personality" means how a person usually is, and "disorder" says that it keeps doing harm. Dale’s way has a name here. This card is not about that name. It is about the three things that every name in this unit has to show.'
     ] },
 
@@ -54,20 +54,20 @@ FC.cards('psychology', 'u4', [
     name: 'The name for this is {o:narcgrand}. "Narcissism" is the word for a sense of worth that depends on being treated as special. "Grandiose" means having a grand picture of yourself, as better than others and owed more. So the name says: that sense of worth, defended by acting grand. It is one of two narcissisms in this subject.' },
 
   { id: 'again-narcgrand', kind: 'again', outcome: 'narcgrand',
-    link: 'Dennis gave you what to point to: {needs:narcgrand}. Here is a second case, in a village hall and not a law firm.',
+    link: 'Dennis gave you what to point to: {needs:narcgrand}. Here is a second case, in a community hall and not a law firm.',
     first: 'pa-dennis', second: 'pa-oriel', step: 'P1',
-    instruction: 'The marked words in the first case are three different things: how he acts above others, how he treats someone who is praised, and what it has cost. Find the words in this case that match the middle one: what the person does when someone else is chosen or praised. Ignore the setting (a law firm, a village hall).',
-    prompt: { kind: 'phrase', answer: "When a young member's idea for the summer fete was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the rota" },
+    instruction: 'The marked words in the first case are three different things: how he acts above others, how he treats someone who is praised, and what it has cost. Find the words in this case that match the middle one: what the person does when someone else is chosen or praised. Ignore the setting (a law firm, a community hall).',
+    prompt: { kind: 'phrase', answer: "When a young member's idea for the summer fair was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the schedule" },
     shared: [
       'Dennis and Oriel each act as if they are above the people around them: the corner room and the head of the table, "the only one who understands how things are done". Each turns scornful when someone else is praised or chosen: "a nobody who got lucky", "a jumped-up nobody". And in each case it keeps costing: two juniors resign, eight volunteers leave, a son and a daughter keep away.',
-      'A law partner and a village hall chair have nothing else in common. So this is not about law, or halls, or being in charge. It holds wherever a person acts as if they are better than others and owed special treatment, takes little interest in what others feel, and turns angry or scornful on whoever does not give it. That is what {o:narcgrand} names.'
+      'A law partner and a community hall chair have nothing else in common. So this is not about law, or halls, or being in charge. It holds wherever a person acts as if they are better than others and owed special treatment, takes little interest in what others feel, and turns angry or scornful on whoever does not give it. That is what {o:narcgrand} names.'
     ] },
 
   { id: 'lens-pat', kind: 'lens',
     h: 'The story never decides the answer',
     link: 'The last card asked you to ignore the setting. That holds for the whole unit, so here it is once in full.',
     body: [
-      'Every case in this unit has two layers. The top layer is the story: a law firm, a village hall, a football club, a family lunch. The layer underneath is the person: how they act, over and over, across the years, whatever the story is.',
+      'Every case in this unit has two layers. The top layer is the story: a law firm, a community hall, a soccer club, a family lunch. The layer underneath is the person: how they act, over and over, across the years, whatever the story is.',
       'The names belong to the layer underneath. The same story can carry any of them: a person who is scornful at work could be one of several names, depending on what else the case shows. And each name turns up in every kind of story. Nor does how loud the person is decide it. Some of the names here are loud and some are quiet, and some of the loudest people in these cases are ones whose way of being does no lasting harm.',
       'From here on the cases change their stories on purpose. Sometimes two cases will share a story and differ only underneath. Where they do, the shared story is there to show you that it tells you nothing.'
     ],
@@ -80,7 +80,7 @@ FC.cards('psychology', 'u4', [
       'The case is a long view. It covers years, more than one place and more than one relationship. A single row is not enough.',
       'The person acts above other people in small things as well as large ones: the best seat, the last word, the credit for what a team did. Other people are there to confirm it.',
       'There is little room for what others feel. The person may not ask, may not remember, or may treat someone else’s feelings as an attack on themselves.',
-      'What sets it off is not being treated as special: criticism, someone else’s praise, being passed over, being disagreed with. The answer is anger or scorn, and it is aimed at someone.',
+      'What sets it off is not being treated as special: being found fault with, someone else’s praise, being passed over, being disagreed with. The answer is anger or scorn, and it is aimed at someone.',
       'It can be charming at first. The cost often turns up later and slowly, in resignations, a family that keeps its distance, a run of short jobs.',
       'The person is often sure that other people are the problem. A sincere "I have no idea why they all left" is common.'
     ],
@@ -105,7 +105,7 @@ FC.cards('psychology', 'u4', [
     right: [
       'First, one boss and one report is not years, more than one place and more than one relationship. It may be a hard week, or a hard boss, or someone who is under pressure.',
       'Second, shouting and taking credit are things people do for many reasons. The name needs all of this: {needs:narcgrand}. A cost to you, for one report, does not show it.',
-      'Third, the name is for what a case shows, not for what a person is. Even an account that did show all of it would be an account of years of behaviour, not a diagnosis. Only a professional can diagnose, after a long assessment. What you can say about your boss is what she did: "She shouted at me and took the credit for my report." That is accurate, and she can answer it. A label cannot be answered.'
+      'Third, the name is for what a case shows, not for what a person is. Even an account that did show all of it would be an account of years of behavior, not a diagnosis. Only a professional can diagnose, after a long assessment. What you can say about your boss is what she did: "She shouted at me and took the credit for my report." That is accurate, and she can answer it. A label cannot be answered.'
     ],
     testedBy: ['pa-claim-boss'] }
 ]);

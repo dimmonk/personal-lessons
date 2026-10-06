@@ -6,7 +6,7 @@
 
 FC.unit('ideology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
@@ -31,7 +31,7 @@ FC.unit('ideology', 'u1', {
       rule: 'In {a:D1.class} the people the text speaks for are the workers, and the owners are named as the other side. In {a:D1.rights} the text speaks for every person alike, and names no side to be on the far end of it.',
       test: 'Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?' },
     { id: 'class~none', pair: ['class', 'none'], step: 'D1',
-      shared: 'Both can be about a workplace, and both can mention wages, bosses and rotas.',
+      shared: 'Both can be about a workplace, and both can mention wages, bosses and schedules.',
       rule: '{a:D1.class} takes the side of the workers against the owners. {a:D1.none} takes no side. It says only what will happen, or who is in charge.',
       test: 'Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?' },
     { id: 'nation~tradition', pair: ['nation', 'tradition'], step: 'D1',
@@ -86,7 +86,7 @@ FC.unit('ideology', 'u1', {
   // units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',            // the old quick-drill totals for this unit were stored under pl:ideology:stats:unit (frozen; see E8)
-    add: 'Some of these texts are only a notice or a timetable, and some name workers and owners without taking a side. That is on purpose. Saying that no side is named is one of the five answers, and you will need it as often as the other four.',
+    add: 'Some of these texts are only a notice or a schedule, and some name workers and owners without taking a side. That is on purpose. Saying that no side is named is one of the five answers, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'i-p-class', step: 'D1' }, { case: 'i-p-none', step: 'D1' }],
@@ -120,7 +120,8 @@ FC.unit('ideology', 'u1', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Political Ideologies. Five answers taught as five families, the fifth ("no side named") with its own cases and an exception for a ruler’s orders. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     // What the K2 rewrite changed in the key's first question and the structure around it, and why. This unit carries the lines
     // of the whole key and of the gate; the units that teach the other questions carry theirs. (docs/rebuild/ideology-plan.md, part a)
@@ -130,7 +131,7 @@ FC.unit('ideology', 'u1', {
         why: 'K2.2: the old key left 2 to 6 names standing on 8 of 12 audited specimens, so the name was decided by knowledge the key never asked (audit C3). The questions the old feedback cited are now key questions, so they are taught, asked and scored.' },
       { step: 'D1', was: 'Q2, shown as "Q2" and asked first',
         now: 'same question, asked first and only first, with no code shown',
-        why: 'K2.3: it is already a question a person asks out loud. K3: the code collision (step 1 labelled Q2) is gone.' },
+        why: 'K2.3: it is already a question a person asks out loud. K3: the code collision (step 1 labeled Q2) is gone.' },
       { step: 'D1', was: '"Workers against owners" / "people who work for wages vs people who own the businesses"',
         now: '"Working people, against those who own the businesses"; its when requires the text to take the workers’ side',
         why: 'K2.4: it names both sides an observer can point to. A text that names classes only to deny them (old drill item 6, specimen 8) is the nation answer, and this unit teaches it as an exception.' },

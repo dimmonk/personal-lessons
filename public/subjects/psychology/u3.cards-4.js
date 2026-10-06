@@ -26,9 +26,9 @@ FC.cards('psychology', 'u3', [
     link: 'The first month gave you what to point to: {needs:lovebomb}. Here is a second case with a completely different story.',
     first: 'l-wedding', second: 'l-mentor', step: 'T1',
     instruction: 'Find what the two cases share. Ignore the story (dating, a workplace). Look at one thing only: what happens to the attention once the other person turns something down.',
-    prompt: { kind: 'phrase', answer: "In her third month she turned down an invitation to cover his weekend shift. For the next fortnight Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'" },
+    prompt: { kind: 'phrase', answer: "In her third month she turned down an invitation to cover his weekend shift. For the next two weeks Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'" },
     shared: [
-      'In both cases there is, early on, far more attention than the time would explain: forty texts a day and a coat, or a whole department told she is the best hire in years and a client list handed over within a month. And in both, once the person turns something down, the attention is pulled back: four days of silence, or a fortnight of no lunches and small errors reported. In both it turns into a remark that the person has let someone down: "I thought you were different", "I thought you were someone I could count on".',
+      'In both cases there is, early on, far more attention than the time would explain: forty texts a day and a coat, or a whole department told she is the best hire in years and a client list handed over within a month. And in both, once the person turns something down, the attention is pulled back: four days of silence, or two weeks of no lunches and small errors reported. In both it turns into a remark that the person has let someone down: "I thought you were different", "I thought you were someone I could count on".',
       'One story is a date and the other is an office. The stories share nothing, so this is not about romance or about work. It holds wherever far more attention than the relationship would explain comes first, and is later pulled back. That is what {o:lovebomb} names.'
     ] },
 
@@ -37,7 +37,7 @@ FC.cards('psychology', 'u3', [
     typical: [
       'The first half comes fast. The person is told they are special, rare, or the only one who understands, and plans for the future arrive early.',
       'The attention is often gifts, time and constant messages: things that are hard to refuse and that make the person feel they owe something back.',
-      'The pulling back often follows a limit: a no, a weekend away, a night in. It does not always, but it often does.',
+      'The pulling back often follows a limit: a no, a weekend trip, a night in. It does not always, but it often does.',
       'The criticism that comes with it compares the person with how they were: "you have changed", "I thought you were different". The person is made to feel they have lost something, and often tries hard to earn it back.',
       'It can happen in a friendship, between a mentor and a junior, in a group, as well as in a romance.'
     ],
@@ -55,14 +55,14 @@ FC.cards('psychology', 'u3', [
     link: 'The four names so far each need things in the case. The fifth name is for the many cases where none of them is there. It is the one you will use most.',
     case: 'o-bins', mark: 'T1',
     strip: [
-      'There are two people, and something one says to the other: Priya complains about the bins.',
+      'There are two people, and something one says to the other: Priya complains about the trash.',
       'The other answers it plainly: Sam says "You\'re right, I forgot" and offers to fix it.',
       'Nothing is denied that really happened, and nothing comes back over months.',
       'Nobody attacks back and nobody plays the one wronged.',
       'No attention is poured on and withdrawn, and no accusation is made that fits the person making it.'
     ],
     explain: [
-      'Most of what people say to each other is not one of the four. People complain, disagree, defend themselves, forget things, get annoyed, say sharp words, apologise, and say kind ones. Priya is cross, and she says so. Sam answers. That is all there is.',
+      'Most of what people say to each other is not one of the four. People complain, disagree, defend themselves, forget things, get annoyed, say sharp words, apologize, and say kind ones. Priya is cross, and she says so. Sam answers. That is all there is.',
       'It is tempting, once you have learned four names for things people do to each other, to look for one of them in everything. That is a mistake the questions are built to stop. The fifth answer is there so that you can say, as exactly as you can say what is going on elsewhere, that none of the four is.',
       'Notice what "ordinary" does not mean. It does not mean polite, fair or kind. A person can be rude, unfair and wrong, and it is still {o:ordexchange} in this sense, because none of the four is in the case. And it does not mean nobody was hurt. How upset anyone was is not what is asked. The question is what was done to the other person, and here the answer is: what it looks like, and nothing more.'
     ],
@@ -70,20 +70,20 @@ FC.cards('psychology', 'u3', [
     name: 'The name for this is {o:ordexchange}. An "exchange" is something said or done between two people, and "ordinary" says that none of the four is in it. It is the name for a case where none of the four things is happening, and it is used as exactly as the other four.' },
 
   { id: 'again-ordexchange', kind: 'again', outcome: 'ordexchange',
-    link: 'The bins gave you what to point to: {needs:ordexchange}. Here is a second case with a completely different story.',
+    link: 'The trash case gave you what to point to: {needs:ordexchange}. Here is a second case with a completely different story.',
     first: 'o-bins', second: 'o-review', step: 'T1',
-    instruction: 'Find what the two cases share. Ignore the story (bins, a draft). Look at one thing only: how the second person answers the first.',
+    instruction: 'Find what the two cases share. Ignore the story (trash, a draft). Look at one thing only: how the second person answers the first.',
     prompt: { kind: 'phrase', answer: "Isla says, 'I disagree. I think it needs the detail, but show me which parts you would cut.'" },
     shared: [
-      'In both cases one person tells the other something unwelcome: a complaint, a criticism. In both, the other person answers it straight. Sam agrees, and Isla disagrees and offers to look at the detail. One agrees and one disagrees, and that makes no difference. In both, nothing is denied that really happened, nothing repeats, nobody attacks back or plays the one wronged, no attention is poured on and withdrawn, and no accusation fits the accuser.',
+      'In both cases one person tells the other something unwelcome: a complaint, some blunt feedback. In both, the other person answers it straight. Sam agrees, and Isla disagrees and offers to look at the detail. One agrees and one disagrees, and that makes no difference. In both, nothing is denied that really happened, nothing repeats, nobody attacks back or plays the one wronged, no attention is poured on and withdrawn, and no accusation fits the accuser.',
       'A disagreement is not a sign that something is wrong. Two people who say what they think to each other, and answer what was said, are doing what people ordinarily do. That is what {o:ordexchange} names.'
     ] },
 
   { id: 'portrait-ordexchange', kind: 'portrait', outcome: 'ordexchange',
-    link: 'You now know what to point to. This card fills in the rest of the picture, so that you can recognise {o:ordexchange} in real life, where nobody marks the words for you.',
+    link: 'You now know what to point to. This card fills in the rest of the picture, so that you can recognize {o:ordexchange} in real life, where nobody marks the words for you.',
     typical: [
-      'It covers a wide range: a complaint, a disagreement, a defence, an apology, a refusal, praise, an angry word, a joke that lands badly.',
-      'The reply fits what was said. If the first person says "you forgot the bins", the reply is about the bins: it agrees, disagrees, explains or says sorry.',
+      'It covers a wide range: a complaint, a disagreement, a defense, an apology, a refusal, praise, an angry word, a joke that lands badly.',
+      'The reply fits what was said. If the first person says "you forgot the trash", the reply is about the trash: it agrees, disagrees, explains or says sorry.',
       'Feelings can run high. Someone can shout and still be in this answer, if none of the four is in the case.',
       'A person who is wrongly accused can look as if they are doing something when they deny it, get angry and say they are being picked on. The case shows they did not do it, so the denial is true.',
       'A fair accusation from someone who does it too is still fair. If the case shows the person accused doing it, it does not matter that the accuser does it as well.',

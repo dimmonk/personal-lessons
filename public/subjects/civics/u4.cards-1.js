@@ -44,7 +44,7 @@ FC.cards('civics', 'u4', [
     prompt: { kind: 'phrase', answer: 'the federal road-freight agency published how drivers must record their rest in a logbook' },
     shared: [
       'In both cases a law that Congress passed comes first: a tax credit, ten hours of rest. In both, a federal office then works out how the law is to be followed: a form and receipts, a logbook. And in both the office leaves the law’s main rule alone. The credit still goes to people who do real work with a licensed builder, and the rest period is still ten hours.',
-      'The two stories share nothing else. One is about taxes and the other about lorries. So this is not about tax or about driving. It holds wherever an office turns a law Congress has passed into daily practice and stays inside it. That is what {o:execute} names.'
+      'The two stories share nothing else. One is about taxes and the other about trucks. So this is not about tax or about driving. It holds wherever an office turns a law Congress has passed into daily practice and stays inside it. That is what {o:execute} names.'
     ] },
 
   { id: 'lens-pres', kind: 'lens',

@@ -90,11 +90,11 @@ FC.cases('stats', 'u3', [
               A1: 'Every table he served is counted, but there are only four: {cue:A1}. One table that tipped less would turn "every table" into 3 of 4.' },
     not: { outcome: 'nonresp', why: 'Nobody was asked and nobody failed to reply: every table he served is in the figure. The trouble is that there are only four.' } },
 
-  { id: 'cd-p-ok', use: 'drill', tier: 'clean', setting: 'health', topic: 'every pupil in a school measured',
-    text: "A school nurse measured the height of every one of the 150 pupils in the school on one day. The average was 140 centimeters. The nurse's note says: 'The average height of the pupils in our school is 140 centimeters.'",
+  { id: 'cd-p-ok', use: 'drill', tier: 'clean', setting: 'health', topic: 'every student in a school measured',
+    text: "A school nurse measured the height of every one of the 150 students in the school on one day. The average was 140 centimeters. The nurse's note says: 'The average height of the students in our school is 140 centimeters.'",
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
-    cues: { S1: 'measured the height of every one of the 150 pupils in the school on one day', H1: 'The average height of the pupils in our school is 140 centimeters' },
-    reason: { S1: 'Everyone the claim speaks for is counted: {cue:S1}. The claim stays with the pupils of this school.',
+    cues: { S1: 'measured the height of every one of the 150 students in the school on one day', H1: 'The average height of the students in our school is 140 centimeters' },
+    reason: { S1: 'Everyone the claim speaks for is counted: {cue:S1}. The claim stays with the students of this school.',
               H1: 'The claim gives an average for one group at one time and says nothing more: {cue:H1}.' },
-    not: { outcome: 'smalln', why: 'There are 150 pupils, and one more or fewer would barely move an average. There are enough for the figure to hold.' } }
+    not: { outcome: 'smalln', why: 'There are 150 students, and one more or fewer would barely move an average. There are enough for the figure to hold.' } }
 ]);

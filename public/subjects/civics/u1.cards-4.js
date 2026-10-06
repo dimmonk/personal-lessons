@@ -25,7 +25,7 @@ FC.cards('civics', 'u1', [
 
   { id: 'again-states', kind: 'again', family: 'states',
     link: 'The market square gave you what to point to: {needs:states}. Here is a second case, and this time the government is a whole state, not a city.',
-    first: 'c-market', second: 'c-licence', step: 'D1',
+    first: 'c-market', second: 'c-license', step: 'D1',
     instruction: 'Find what the two cases share. Ignore the story (a market square, a driving test) and ignore how big the place is (a city, a state). Look at one thing only: whose government made the last decision?',
     prompt: { kind: 'phrase', answer: 'the Dunmore state legislature voted' },
     shared: [
@@ -37,7 +37,7 @@ FC.cards('civics', 'u1', [
     link: 'You know what to point to for {a:D1.states}. This card fills in the rest of the picture, and says what these governments decide.',
     typical: [
       'There is a government that covers one place, and it is named: “the city council of Marlow”, “the Dunmore state legislature”, “the county board”, “the governor of the state”, “the mayor”.',
-      'What these governments decide is much of daily life: public schools, driving rules, marriage licences, most crimes, renting a home, local streets, parking and buildings. These are mostly state and local matters, and they differ from state to state.',
+      'What these governments decide is much of daily life: public schools, driving rules, marriage licenses, most crimes, renting a home, local streets, parking and buildings. These are mostly state and local matters, and they differ from state to state.',
       'The decision can be a vote, a rule from a mayor or a governor, or an order from one of the state’s or city’s own offices, such as a state health department.',
       'The case can also end with a request: “asked the council”, “asked the governor”. A request to a state, a city or a county has the same answer as a decision by it.',
       'A federal law or a court can be in the story. If so, it is how the matter got there, or what comes after. The case still ends with the decision of the state, the city or the county.'
@@ -75,7 +75,7 @@ FC.cards('civics', 'u1', [
     setup: 'The case is full of a county and a state: a county’s rule, a county’s order, and a judge in the state’s own court. A decision by the government of a state or a county is what you point to for {a:D1.states}. Yet the answer for this case is {a:D1.courts}.',
     prompt: { kind: 'phrase', answer: 'a judge in the state’s court heard both sides and ruled' },
     because: [
-      'Read who makes the last decision. The county made a rule and told Mrs Lund to give a dog away, and those came first. The last decision is the judge’s: the judge heard both sides and ruled that she must do it.',
+      'Read who makes the last decision. The county made a rule and told Mrs. Lund to give a dog away, and those came first. The last decision is the judge’s: the judge heard both sides and ruled that she must do it.',
       'A judge in a state’s court is still a judge. The state’s own government is its lawmakers, its governor and its offices, and the judge is not one of them. The state did not decide this case. A judge did.',
       'So the question is about what the decision-maker is, not which court the judge sits in. Any judge, whether the court belongs to the whole country or to a state, is in the third kind.'
     ],

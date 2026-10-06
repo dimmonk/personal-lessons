@@ -43,7 +43,7 @@ FC.cards('stats', 'u1', [
     feature: { step: 'S1', option: 'counted' },
     name: [
       'In this unit the answer is also the name of the kind: {a:S1.counted}. In every claim in this subject, this is the part you look at first. "Counted" means that a person, a thing or a place is included in the figure, whether anyone literally counted heads or the figure is an average or a share.',
-      'The people or things in the figure do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What matters is whether anyone was favoured, or left out, in a way that could move the figure.'
+      'The people or things in the figure do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What matters is whether anyone was favored, or left out, in a way that could move the figure.'
     ] },
 
   { id: 'again-counted', kind: 'again', family: 'counted',
@@ -80,7 +80,7 @@ FC.cards('stats', 'u1', [
     ],
     not: [
       'It is not the same as the figure being wrong. The figure can be exactly right for the people in it. The trouble is what it is used to say.',
-      'And the people or things do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What the answer turns on is whether anyone was favoured or left out in a way that could move the figure.'
+      'And the people or things do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What the answer turns on is whether anyone was favored or left out in a way that could move the figure.'
     ],
     wild: ['"We asked our customers, and 95% said..."', '"Every one of our graduates says..."', '"Everyone I know is voting for..."', '"In the first week, three out of four..."', '"All the winners had one thing in common."'],
     self: 'In your own life it is the figure you build from the people around you: "everyone I know thinks so", "all my friends loved it". The people you know are a group that you did not pick, and they tend to be like you.',

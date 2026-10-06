@@ -23,12 +23,12 @@ FC.cards('ideology', 'u2', [
     name: 'The name for this is {o:anarch}. The word comes from a Greek word meaning "without a ruler". It does not mean "without order". The name stands for one thing: the government to be got rid of now, with people running their work and their towns together without it.' },
 
   { id: 'again-anarch', kind: 'again', outcome: 'anarch',
-    link: 'The print-works zine gave you what to point to from one case: {needs:anarch}. Here is a second case with a different story. This time the people are building workers, and the words are in a leaflet about an estate.',
+    link: 'The print-works zine gave you what to point to from one case: {needs:anarch}. Here is a second case with a different story. This time the people are building workers, and the words are in a leaflet about a development.',
     first: 'c-an-print', second: 'c-an-estate', step: 'C2',
     instruction: 'Find what the two cases share. Ignore the story (a print works, a building firm). Look at one thing only: what the text wants done with the government, and when.',
-    prompt: { kind: 'phrase', answer: 'We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings' },
+    prompt: { kind: 'phrase', answer: 'We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings' },
     shared: [
-      'Both texts want the government gone. The zine wants the town run by open meetings with no government at all. The building workers say they want no government and will run the work and the whole estate themselves, in meetings. Neither wants a party in power, and neither wants to use the government first.',
+      'Both texts want the government gone. The zine wants the town run by open meetings with no government at all. The building workers say they want no government and will run the work and the whole development themselves, in meetings. Neither wants a party in power, and neither wants to use the government first.',
       'Both also say the firm should belong to the people who work in it. That is true of other names too, which is why the words about the government are what you point to.',
       'The two stories share nothing else. So this holds wherever a text wants the government got rid of now, with people running things together without it. That is what {o:anarch} names.'
     ] },
@@ -37,13 +37,13 @@ FC.cards('ideology', 'u2', [
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:anarch} in real life.',
     typical: [
       'The text names the government as a ruler beside the owner, and wants neither.',
-      'It says what comes in their place: meetings, councils of the people who work or live in a place, agreements between neighbours.',
+      'It says what comes in their place: meetings, councils of the people who work or live in a place, agreements between neighbors.',
       'It says now. The people are to start running things themselves, and not wait for a government to hand power over first.',
       'It is often written in a small circle, such as a zine, a flyer or a notice for a meeting, and it often speaks of doing things yourself.'
     ],
     not: 'Distrusting the government is not enough. Many texts on the owners’ side distrust it too, and many on the workers’ side want it to do more. A text that wants the government to hand the businesses to the workers, and to stay and answer to the voters, is {o:demsoc}. What you point to is the government itself to be got rid of, now, with people running things together without it.',
     wild: ['"No bosses, no government."', '"We do not need rulers, we need each other."', '"Run it ourselves, in meetings."'],
-    self: 'In your own life it is the co-operative or the open meeting that runs itself with no manager. It is also the way the word "anarchy" is used for a riot, which is not what a text of this kind says.',
+    self: 'In your own life it is the cooperative or the open meeting that runs itself with no manager. It is also the way the word "anarchy" is used for a riot, which is not what a text of this kind says.',
     ask: '"Does the text want the government got rid of, now, or used first?" If it wants it used first, it is not this name.' },
 
   { id: 'check-anarch', kind: 'check', after: 'anarch',

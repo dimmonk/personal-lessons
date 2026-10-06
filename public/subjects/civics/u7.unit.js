@@ -12,7 +12,7 @@
 
 FC.unit('civics', 'u7', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Seven',
@@ -43,7 +43,7 @@ FC.unit('civics', 'u7', {
     { id: 'ln-first~ln-next', pair: ['ln-first', 'ln-next'],
       shared: 'Both are a place in the line to become President if the President cannot serve.',
       rule: 'First in line is {f:ln-first}. Next, after that office, is {f:ln-next}.',
-      test: 'Does the office take over straight away, or only after the first one cannot?' },
+      test: 'Does the office take over right away, or only after the first one cannot?' },
     { id: 'pr-age~pr-years', pair: ['pr-age', 'pr-years'],
       shared: 'Both are a number of years in the conditions for being President.',
       rule: 'The age is “{f:pr-age}”, and the residence is “{f:pr-years}”. The age is the larger number.',
@@ -86,7 +86,8 @@ FC.unit('civics', 'u7', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for the offices in numbers, replacing the old Unit Three chamber cards (the House, the Senate, both chambers, the Vice President) and the old chambers drill. Seven groups of facts under the idea each serves (what fixes the number of seats, how many seats, how long each job lasts, how much is up at one election, who leads and who settles a tie, the line to the presidency, what it takes to be President), twenty-two facts, six look-alike pairs. Every fact comes from the old material of standard0.js and nothing is added to it. Skipped, because the old material does not state them: the age a member of the House or a senator must have reached, the number of states, and who holds any office now. Not retyped, because the key holds them once: the vote thresholds. Not yet deployed.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for the offices in numbers, replacing the old Unit Three chamber cards (the House, the Senate, both chambers, the Vice President) and the old chambers drill. Seven groups of facts under the idea each serves (what fixes the number of seats, how many seats, how long each job lasts, how much is up at one election, who leads and who settles a tie, the line to the presidency, what it takes to be President), twenty-two facts, six look-alike pairs. Every fact comes from the old material of standard0.js and nothing is added to it. Skipped, because the old material does not state them: the age a member of the House or a senator must have reached, the number of states, and who holds any office now. Not retyped, because the key holds them once: the vote thresholds. Not yet deployed.' },
+      { rev: 2, date: '2026-10-05', change: 'American English: US spelling.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // no wrong idea is held here: a fact unit has no refute card (lesson standard A12, gap 6 of the civics plan)

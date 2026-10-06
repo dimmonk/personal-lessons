@@ -6,7 +6,7 @@
 
 FC.unit('stats', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
@@ -117,7 +117,8 @@ FC.unit('stats', 'u1', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit One (cards "A claim has four parts" to "Worked example: running the parts in order", drill V1).' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/stats-plan.md, section (a), "The gate").
     keyChanges: [

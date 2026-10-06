@@ -50,9 +50,9 @@ FC.cases('civics', 'u1', [
 
   { id: 'g-ret-forms', use: 'return', tier: 'misleading', setting: 'work', topic: 'a form for workers’ hours',
     echo: 'c-bicycle',
-    text: "A law passed last year says that every employer must keep a record of the hours its workers work. On Monday the federal labour agency published the form employers must use and the date by which they must start.",
+    text: "A law passed last year says that every employer must keep a record of the hours its workers work. On Monday the federal labor agency published the form employers must use and the date by which they must start.",
     route: { D1: ['president'] },
-    cues: { D1: 'the federal labour agency published the form employers must use and the date by which they must start' },
+    cues: { D1: 'the federal labor agency published the form employers must use and the date by which they must start' },
     reason: { D1: 'The last decision is an office’s: {cue:D1}. The law came first, and is how the matter reached the office. The case ends with what the office decided.' },
     not: { outcome: 'congress', why: 'A law is in the story, and laws come from the House and the Senate. But the votes are a year old, and the case ends with the office’s form.' },
     wouldChange: 'If the case ended with the House voting to change what the law requires, the answer would be {a:D1.congress}.' },
@@ -100,12 +100,12 @@ FC.cases('civics', 'u1', [
     not: { outcome: 'president', why: 'Sending warning letters is the kind of thing an office does. But the case shows a town’s council voting that it should be done, and the council belongs to the town.' },
     wouldChange: 'If the case ended with a federal office sending warning letters about recycling to every household in the country, the answer would be {a:D1.president}.' },
 
-  { id: 'g-ret-daycare', use: 'return', tier: 'misleading', setting: 'health', topic: 'a day-care centre is closed',
+  { id: 'g-ret-daycare', use: 'return', tier: 'misleading', setting: 'health', topic: 'a day-care center is closed',
     echo: 'c-seatbelt',
-    text: "An inspector from the Calder state health department visited a day-care centre on Monday and found two fire doors that would not open. The inspector ordered the centre closed until the doors are fixed.",
+    text: "An inspector from the Calder state health department visited a day-care center on Monday and found two fire doors that would not open. The inspector ordered the center closed until the doors are fixed.",
     route: { D1: ['states'] },
-    cues: { D1: ['An inspector from the Calder state health department', 'The inspector ordered the centre closed until the doors are fixed'] },
-    reason: { D1: 'The last decision is an inspector’s, and the inspector works for a state: {cue:D1}. It is a state’s own office deciding about a centre in that state.' },
+    cues: { D1: ['An inspector from the Calder state health department', 'The inspector ordered the center closed until the doors are fixed'] },
+    reason: { D1: 'The last decision is an inspector’s, and the inspector works for a state: {cue:D1}. It is a state’s own office deciding about a center in that state.' },
     not: { outcome: 'president', why: 'An inspector visits a building and orders it closed, and that is just what an inspector from an office of the whole country does. But this inspector works for a state, and it is the state’s own office.' },
     wouldChange: 'If the inspector had come from a federal office, the answer would be {a:D1.president}.' }
 ]);

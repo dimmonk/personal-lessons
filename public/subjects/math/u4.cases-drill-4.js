@@ -70,12 +70,12 @@ FC.cases('math', 'u4', [
     topic: 'a concert ticket',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A concert ticket cost €40. Since the new venue opened it has cost €50, and the promoter has fixed it at €50. After how many years will a ticket cost €60?',
+    text: 'A concert ticket cost $40. Since the new venue opened it has cost $50, and the promoter has fixed it at $50. After how many years will a ticket cost $60?',
     route: { M1: ['growth'], G1: ['once'], G2: ['howlong'] },
     cues: {
-      M1: ['the promoter has fixed it at €50'],
-      G1: ['Since the new venue opened it has cost €50', 'the promoter has fixed it at €50'],
-      G2: ['After how many years will a ticket cost €60?']
+      M1: ['the promoter has fixed it at $50'],
+      G1: ['Since the new venue opened it has cost $50', 'the promoter has fixed it at $50'],
+      G2: ['After how many years will a ticket cost $60?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -89,25 +89,25 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €40. After: €50'
+        working: 'Before: $40. After: $50'
       },
       {
         does: 'Say how big the change was',
-        working: '€50 − €40 = €10, and €10 ÷ €40 = 0.25, which is 25% of the old amount'
+        working: '$50 − $40 = $10, and $10 ÷ $40 = 0.25, which is 25% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €50 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $50 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'See whether the amount ever reaches the target',
-        working: '€50 is not €60, and nothing changes it again, so it never reaches €60 unless a new change is made'
+        working: '$50 is not $60, and nothing changes it again, so it never reaches $60 unless a new change is made'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: 'Never: it stays at €50' },
+        { id: 'r', text: 'Never: it stays at $50' },
         {
           id: 's1',
           text: 'About 1.0 year',
@@ -131,12 +131,12 @@ FC.cases('math', 'u4', [
     topic: 'a bath filling',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A bath holds 20 litres of water, and the tap adds 10 litres every minute. After how many minutes will the bath hold 120 litres?',
+    text: 'A bath holds 20 liters of water, and the tap adds 10 liters every minute. After how many minutes will the bath hold 120 liters?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['howlong'] },
     cues: {
-      M1: ['the tap adds 10 litres every minute'],
-      G1: ['the tap adds 10 litres every minute'],
-      G2: ['After how many minutes will the bath hold 120 litres?']
+      M1: ['the tap adds 10 liters every minute'],
+      G1: ['the tap adds 10 liters every minute'],
+      G2: ['After how many minutes will the bath hold 120 liters?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -150,15 +150,15 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find where it starts and how much it changes each time',
-        working: 'Start: 20 litres. Each minute it goes up by 10 litres'
+        working: 'Start: 20 liters. Each minute it goes up by 10 liters'
       },
       {
         does: 'Find how much it must change in all to reach the target',
-        working: '120 − 20 = 100 litres to be added'
+        working: '120 − 20 = 100 liters to be added'
       },
       {
         does: 'Divide that by how much it changes each time',
-        working: '100 litres ÷ 10 litres = 10 minutes'
+        working: '100 liters ÷ 10 liters = 10 minutes'
       }
     ],
     answer: {
@@ -188,12 +188,12 @@ FC.cases('math', 'u4', [
     topic: 'a newspaper price',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A newspaper cost €1.20 for years. In January it rose to €1.50, and the publisher has fixed it at €1.50 ever since. After how many years will it cost €2.00?',
+    text: 'A newspaper cost $1.20 for years. In January it rose to $1.50, and the publisher has fixed it at $1.50 ever since. After how many years will it cost $2.00?',
     route: { M1: ['growth'], G1: ['once'], G2: ['howlong'] },
     cues: {
-      M1: ['the publisher has fixed it at €1.50 ever since'],
-      G1: ['In January it rose to €1.50', 'the publisher has fixed it at €1.50 ever since'],
-      G2: ['After how many years will it cost €2.00?']
+      M1: ['the publisher has fixed it at $1.50 ever since'],
+      G1: ['In January it rose to $1.50', 'the publisher has fixed it at $1.50 ever since'],
+      G2: ['After how many years will it cost $2.00?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -207,25 +207,25 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €1.20. After: €1.50'
+        working: 'Before: $1.20. After: $1.50'
       },
       {
         does: 'Say how big the change was',
-        working: '€1.50 − €1.20 = €0.30, and €0.30 ÷ €1.20 = 0.25, which is 25% of the old amount'
+        working: '$1.50 − $1.20 = $0.30, and $0.30 ÷ $1.20 = 0.25, which is 25% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €1.50 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $1.50 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'See whether the amount ever reaches the target',
-        working: '€1.50 is not €2.00, and nothing changes it again, so it never reaches €2.00 unless a new change is made'
+        working: '$1.50 is not $2.00, and nothing changes it again, so it never reaches $2.00 unless a new change is made'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: 'Never: it stays at €1.50' },
+        { id: 'r', text: 'Never: it stays at $1.50' },
         {
           id: 's1',
           text: 'About 1.7 years',

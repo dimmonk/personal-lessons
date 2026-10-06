@@ -62,12 +62,12 @@ FC.cases('stats', 'u4', [
     not: { outcome: 'proxy', why: 'The inspectors are not paid by the number they find. They simply covered four times as many roads.' } },
 
   { id: 'm4-pm-math', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a school district and a newer edition of a yearly exam',
-    text: "A school district reports: 'The average math score rose from 58 to 66 this year.' The district replaced its yearly math exam with a newer edition. On a day when 300 pupils sat both editions, the old one averaged 58 and the new one averaged 66. The pupils' ages and the subjects covered are the same.",
+    text: "A school district reports: 'The average math score rose from 58 to 66 this year.' The district replaced its yearly math exam with a newer edition. On a day when 300 students sat both editions, the old one averaged 58 and the new one averaged 66. The students' ages and the subjects covered are the same.",
     outcome: 'defshift', route: { S1: ['measure'], M1: ['newrule'] },
-    cues: { S1: "The district replaced its yearly math exam with a newer edition. On a day when 300 pupils sat both editions, the old one averaged 58 and the new one averaged 66",
-            M1: "The district replaced its yearly math exam with a newer edition. On a day when 300 pupils sat both editions, the old one averaged 58 and the new one averaged 66" },
-    reason: { S1: 'The average can rise with pupils learning nothing more: {cue:S1}. The same 300 pupils scored 8 points higher on the new edition (66 against 58), which is the whole rise.',
-              M1: 'The exam used to measure the pupils is a different one: {cue:M1}. A new tool can read higher or lower than the old one.' },
+    cues: { S1: "The district replaced its yearly math exam with a newer edition. On a day when 300 students sat both editions, the old one averaged 58 and the new one averaged 66",
+            M1: "The district replaced its yearly math exam with a newer edition. On a day when 300 students sat both editions, the old one averaged 58 and the new one averaged 66" },
+    reason: { S1: 'The average can rise with students learning nothing more: {cue:S1}. The same 300 students scored 8 points higher on the new edition (66 against 58), which is the whole rise.',
+              M1: 'The exam used to measure the students is a different one: {cue:M1}. A new tool can read higher or lower than the old one.' },
     not: { outcome: 'proxy', why: 'Nobody is paid or ranked on the score here. What changed is the exam that makes the score.' } },
 
   { id: 'm4-pm-flu', use: 'drill', tier: 'clean', setting: 'health', topic: 'a clinic and weekend nurses for flu swabs',

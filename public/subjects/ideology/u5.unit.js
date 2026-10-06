@@ -6,7 +6,7 @@
 
 FC.unit('ideology', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
@@ -43,7 +43,7 @@ FC.unit('ideology', 'u5', {
       test: 'Does the text hold up old ways, such as faith, home life and custom, as what should guide the country? Or does it hold up each person’s freedom as the thing that comes first?' },
     { id: 'modlib~nationalism', pair: ['modlib', 'nationalism'], step: 'D1',
       shared: 'Both can ask the government to pay for schools and doctors, and both can speak warmly of the country.',
-      rule: 'In {o:modlib} the text speaks for every person alike, and what it asks is owed to a newcomer as to a neighbour. In {o:nationalism} the text speaks for one people as one, and puts that people first, so what it asks is for them before others.',
+      rule: 'In {o:modlib} the text speaks for every person alike, and what it asks is owed to a newcomer as to a neighbor. In {o:nationalism} the text speaks for one people as one, and puts that people first, so what it asks is for them before others.',
       test: 'Is what the text asks for owed to every person, whoever they are? Or is it for one people, which the text puts first?' }
   ],
 
@@ -70,7 +70,7 @@ FC.unit('ideology', 'u5', {
   // The {earlier: 'u1'} items draw, at run time, from Unit One's bank, including its texts that set rights beside the first answer.
   drill: {
     key: 'u5',            // the old quick-drill totals for this unit were stored under pl:ideology:stats:u5 (frozen; see E8)
-    add: 'Some of these texts want a fair start and some want rules changed, and a few want both. That is on purpose: when a text shows two answers, one of them wins, and you will practise telling which.',
+    add: 'Some of these texts want a fair start and some want rules changed, and a few want both. That is on purpose: when a text shows two answers, one of them wins, and you will practice telling which.',
     rungs: [
       { ask: 'name',
         items: [['i5-n-clib1', 'i5-n-modlib1', 'i5-n-idegal1'],
@@ -108,7 +108,8 @@ FC.unit('ideology', 'u5', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for “Rights and fair treatment for everyone”. One question, three names, the word equity taught on its own card, and the gate’s three decisions for this answer (working people against owners, old ways, one people put first) taught as exceptions. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     // What changed in the key for this branch, and why (K2). This unit carries the lines of the question and the outcomes it teaches;
     // the gate's lines are carried by Unit One. (docs/rebuild/ideology-plan.md, part a)
@@ -118,7 +119,7 @@ FC.unit('ideology', 'u5', {
         why: 'K2.2: one question, three answers, each one name. The three names differ on one thing, what the text wants done for people.' },
       { outcome: 'modlib', was: 'none: "liberal", as Americans use the word, appeared only in a caveat and in a faulty claim',
         now: '“Modern liberalism” (also called social liberalism), reached by the answer “Protect their rights, and give everyone a fair start”',
-        why: 'K2.9, K4: the commonest centre-left text (rights first, plus schooling, health care and fair rules for business) had nowhere to go but Social democracy, which needs working people set against owners. This unit teaches the tie-break with Social democracy as an exception.' },
+        why: 'K2.9, K4: the commonest center-left text (rights first, plus schooling, health care and fair rules for business) had nowhere to go but Social democracy, which needs working people set against owners. This unit teaches the tie-break with Social democracy as an exception.' },
       { outcome: 'idegal', was: '“Group equality” (identity-egalitarianism), reached by the first answer “Groups held back by unfair systems”',
         now: 'same name, reached by the answer “Change the rules that hold some groups back”; the key’s decision when a text also asks for a fair start is this answer',
         why: 'K4: the old plain name is kept. K2.8: a text that asks for services and also says rules leave a group behind shows two answers, and the key chooses the second.' },

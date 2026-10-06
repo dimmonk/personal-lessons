@@ -14,10 +14,10 @@ FC.cards('civics', 'u6', [
       { step: 'S1',
         reason: 'The rule was made by a county board, using power its state gave to counties: {cue:S1}. That is a county’s rule and not the state’s own, so the answer is {a:S1.local}.' },
       { step: 'S2',
-        reason: 'The matter is {cue:S2}: a licence fee for keeping dogs, which is a local matter. The case names no federal law, and the rule takes away no right, so nothing else covers it: {a:S2.nothing}.' }
+        reason: 'The matter is {cue:S2}: a license fee for keeping dogs, which is a local matter. The case names no federal law, and the rule takes away no right, so nothing else covers it: {a:S2.nothing}.' }
     ],
     hold: {
-      neighbour: 'police',
+      neighbor: 'police',
       prompt: { kind: 'reason',
         lead: 'The case mentions the state’s power, so it can look as if the state itself made the rule.',
         choices: [
@@ -43,7 +43,7 @@ FC.cards('civics', 'u6', [
 
   { id: 'worked-parkevent', kind: 'worked',
     h: 'A second whole case, where the story points the wrong way',
-    link: 'The dog licence was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case a march and a time limit make the story sound like a right, and the right is not what decides it. Watch which words each question picks out.',
+    link: 'The dog license was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case a march and a time limit make the story sound like a right, and the right is not what decides it. Watch which words each question picks out.',
     case: 'u6-parkevent',
     steps: [
       { step: 'D1',
@@ -54,7 +54,7 @@ FC.cards('civics', 'u6', [
         reason: 'The matter is when an event in a city park must end: {cue:S2}. That rule applies to every event in every city park, whatever the event is about. It does not pick out marches, or any message, so it takes away no right. The case names no federal law, so nothing else covers the matter: {a:S2.nothing}.' }
     ],
     hold: {
-      neighbour: 'protected',
+      neighbor: 'protected',
       prompt: { kind: 'reason',
         lead: 'The case is about a march, which is people gathering to speak, and the council said no. That can look like a right being taken away.',
         choices: [

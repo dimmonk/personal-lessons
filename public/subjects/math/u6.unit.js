@@ -11,7 +11,7 @@
 
 FC.unit('math', 'u6', {
   kind: 'P',
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Six',
@@ -92,7 +92,8 @@ FC.unit('math', 'u6', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fifth procedure unit of Basic Math, replacing the old Unit Three’s second half (the four shape cards), specimens 13 and 14 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about shapes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the key’s two crossing questions each get a card; the shadow is taught as an exception; the drill has a last-step stage, a whole-problem stage and a route stage.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [
@@ -106,7 +107,7 @@ FC.unit('math', 'u6', {
         now: 'S2 "Does the problem ask how long something is, or how much area or volume it has?" with answers length and room, crossed with S1',
         why: 'V55: three of the four old answers restated S1, each keeping one name. Crossed, S2 has one job: separating Similar shapes from the Square-cube law.' },
       { outcome: 'pyth', was: 'name "Third side of a right-angled triangle (Pythagoras)"', now: 'name "Pythagoras’ theorem", also called Pythagoras and a² + b² = c²', why: 'V1 and K4: the real-life name is the target, the other half moved to the other names, shown once on the card that introduces it.' },
-      { outcome: 'sqcube', was: 'name "Area and volume grow faster than length (square–cube law)"', now: 'name "Square-cube law"', why: 'V1: the en dash and the brackets break the rule that a name holds one name.' }
+      { outcome: 'sqcube', was: 'name "Area and volume grow faster than length (square–cube law)"', now: 'name "Square-cube law"', why: 'V1: the en dash and the parentheses break the rule that a name holds one name.' }
     ],
     wrongIdeas: [],
     signoff: {

@@ -11,7 +11,7 @@ FC.cards('scams', 'u6', [
     case: 'late-second',
     plain: [
       'Abe has already lost money once, and has told nobody but his bank. Now a stranger has found him and offers to get it back, for a fee. It reads like help. It is also how people who have lost money are so often contacted again: the people who took the money often come back.',
-      'The facts below are what to do with that message, and where real help comes from instead. Real help with a loss comes from your bank and your country’s fraud-reporting service. They are places that you go to, they do not charge you, and they do not contact you first in order to sell you help. A bank may ring you about fraud on your account, and if one does, {t:check} settles it: hang up, and ring the number on your card, which is {t:already}.',
+      'The facts below are what to do with that message, and where real help comes from instead. Real help with a loss comes from your bank and from the FTC, which takes fraud reports at ReportFraud.ftc.gov. They are places that you go to, they do not charge you, and they do not contact you first in order to sell you help. A bank may call you about fraud on your account, and if one does, {t:check} settles it: hang up, and call the number on your card, which is {t:already}.',
       'Abe’s thought, ‘If I pay one more fee, I’ll get it back’, is one that costs people time and money. If you have already paid someone like that, tell your bank, because the same people often return.'
     ] },
 
@@ -24,7 +24,7 @@ FC.cards('scams', 'u6', [
         relates: 'Paying is a second loss, and replying keeps you in touch with the people who are trying to make it. An offer that reaches you before you have asked anyone is a warning in itself.' },
       { id: 'sc-who', q: 'Who is often behind that offer?', a: 'The same people, returning',
         relates: 'The people who took the money often come back. That is why those who have lost money are so often contacted again.' },
-      { id: 'sc-real', q: 'Where does real help with a loss come from?', a: 'Your bank and your country’s fraud-reporting service',
+      { id: 'sc-real', q: 'Where does real help with a loss come from?', a: 'Your bank and the FTC at ReportFraud.ftc.gov',
         relates: 'They are the real places to get help. You go to them, through {t:already}, and nobody real contacts you first to sell you the help.' },
       { id: 'sc-never', q: 'What do those real places not do?', a: 'Charge you, or contact you first to sell you help',
         relates: 'An offer that asks for a fee, and that came to you, is the opposite of both. That is the quickest way to tell it from the real places.' },
@@ -59,8 +59,8 @@ FC.cards('scams', 'u6', [
       'For money, the first hours are the chance. A call that was not needed costs ten minutes, and a call put off can cost the money.',
       'Changing a password and removing an app are two different jobs. A new password does not take away an app that you allowed.',
       'Use only {t:already} for every call and every sign-in after a scam. A number, a link or an app that came with the scam is never one, even if you are the one who dials it or taps it.',
-      'Anyone who contacts you offering to get your money back is a warning in itself. Real help comes from your bank and your country’s fraud-reporting service, and you go to them.',
-      'Where a step depends on your country or your bank, such as the name of the fraud-reporting service, whether a payment can be recalled, and which companies keep credit records, look it up for your own.'
+      'Anyone who contacts you offering to get your money back is a warning in itself. Real help comes from your bank and from the FTC (ReportFraud.ftc.gov), and you go to them.',
+      'Where a step depends on your bank, such as whether a payment can be recalled, ask your bank.'
     ] },
 
   { id: 'plan-late', kind: 'plan', optional: true,
@@ -72,7 +72,7 @@ FC.cards('scams', 'u6', [
     ],
     cues: [
       { cue: 'I find out that money I sent was a scam payment',
-        then: 'ring my bank straight away on the number on my card, and say that it was a scam payment and ask them to try to recall it, before I do anything else' },
+        then: 'call my bank right away at the number on my card, and say that it was a scam payment and ask them to try to recall it, before I do anything else' },
       { cue: 'I typed my password into a page that came in a message',
         then: 'change it on the real site, from a different device if I can, and change it anywhere else I used the same one' },
       { cue: 'I pressed Allow for an app that I do not trust, or read out a code',

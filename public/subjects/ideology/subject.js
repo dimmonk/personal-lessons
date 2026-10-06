@@ -1,7 +1,7 @@
 // Political Ideologies: subject record. Revision is a real field (it used to be parsed out of an "eyebrow" label).
 FC.subject('ideology', {
   name: 'Political Ideologies',
-  rev: 2,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
+  rev: 3,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
   standard: 1,            // lesson-standard version the subject's key was written to
   action: false,          // the learner reads and names texts; nothing here is acted on (lesson standard section 11, P26)
   blurb: 'Read a short political text, work out who it speaks for and what it wants done, and name it from the words in the text that decide it, not from a label someone has thrown at it.',
@@ -24,11 +24,12 @@ FC.subject('ideology', {
     { h: 'Some systems are only lightly covered',
       text: 'Rule by religious authorities, rule by experts, and political traditions outside Europe and North America are covered lightly or not at all. The first question still applies to them, but its answers may not fit.' },
     { h: '“Liberal” means different things',
-      text: 'In the United States a liberal is usually someone on the centre-left; in much of Europe it is someone who wants a small government and free markets. There is a name for each, and the answer goes by what the text asks for, never by the word.' }
+      text: 'In the United States a liberal is usually someone on the center-left; in much of Europe it is someone who wants a small government and free markets. There is a name for each, and the answer goes by what the text asks for, never by the word.' }
   ],
   // What changed at each revision (lesson standard R1). One entry for every revision from 1 to rev.
   history: [
     { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the key rewritten in plain words. The two flat questions became a first question with five answers, one of them for a text that speaks for no side, and four branches whose questions end every route in one name. Four names were added where a text says nothing more or nothing extreme, so that such texts have somewhere to go.' },
-    { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+    { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+    { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
   ]
 });

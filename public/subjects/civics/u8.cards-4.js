@@ -69,7 +69,7 @@ FC.cards('civics', 'u8', [
       'A right is the government held back from you, and a duty is the law asking something of you. Most of the rights in the Bill of Rights are written for ‘the people’, ‘no person’ and ‘the accused’, and they protect everyone here.',
       'Only a few things are kept for citizens: voting in federal elections, running for federal office, and serving on a federal jury.',
       'The duties to obey the law, to pay tax on income earned here, and, for a man aged 18 to 25, to register for Selective Service fall on everyone here. Tax follows the income, not the passport.',
-      'The Constitution mostly lists what government may not do to you. It does not promise a job, a home or medical care. Programmes that provide help exist because of laws, and what one law gives, a later law can change.',
+      'The Constitution mostly lists what government may not do to you. It does not promise a job, a home or medical care. Programs that provide help exist because of laws, and what one law gives, a later law can change.',
       'Whether a lawyer is appointed depends on the kind of case: a person accused of a crime has the promise, and an immigration hearing is a civil case, where it does not apply in the same way. This course does not say which other rights still apply there.',
       'The oath is made once, at the ceremony that makes a person a citizen. The pledge to the flag is not part of it.',
       'A law requires the test, and the immigration service decides how it works. Take the official question list from uscis.gov, for the version that applies to you.'

@@ -64,7 +64,7 @@ FC.cases('ideology', 'u5', [
 
   /* ---------- Stage two: the question alone, on a new case (first half) ---------- */
   { id: 'i5-p-clib', use: 'drill', tier: 'clean', setting: 'borders', topic: 'selling across a river as well as at home',
-    text: "At a trade meeting in Tarn Harbour, a trader said: 'Every one of us is free to sell across the river as well as at home. The government's work is to keep the bridge safe and the courts open. It should not decide what may be sold, or to whom.'",
+    text: "At a trade meeting in Tarn Harbor, a trader said: 'Every one of us is free to sell across the river as well as at home. The government's work is to keep the bridge safe and the courts open. It should not decide what may be sold, or to whom.'",
     outcome: 'clib', route: { D1: ['rights'], R1: ['leave'] },
     cues: { D1: 'Every one of us is free to sell across the river as well as at home',
             R1: "The government's work is to keep the bridge safe and the courts open. It should not decide what may be sold, or to whom" },
@@ -73,7 +73,7 @@ FC.cases('ideology', 'u5', [
     not: { outcome: 'modlib', why: 'The text asks the government to give nothing, only to keep a bridge and the courts. A text that asked it to give everyone a fair start would be {o:modlib}.' } },
 
   { id: 'i5-p-modlib', use: 'drill', tier: 'clean', setting: 'money', topic: 'a pension to live on',
-    text: "From the Larkfield Pensioners' Fair Start Group: 'Each of us has the right to keep what we have saved, and the government must protect it. But a right to keep nothing is empty. We ask the government to pay a pension that everyone can live on, and everyone should pay in while they work.'",
+    text: "From the Larkfield Retirees' Fair Start Group: 'Each of us has the right to keep what we have saved, and the government must protect it. But a right to keep nothing is empty. We ask the government to pay a pension that everyone can live on, and everyone should pay in while they work.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Each of us has the right to keep what we have saved',
             R1: 'We ask the government to pay a pension that everyone can live on, and everyone should pay in while they work' },

@@ -28,9 +28,9 @@ FC.cards('civics', 'u6', [
     ask: { type: 'option', step: 'S2', among: ['onlyrule', 'floor', 'right'] } },
 
   { id: 'look-police-protected', kind: 'lookalike', ledger: 'police~protected',
-    h: 'A licence to sell food, an approval to hand out a newspaper',
+    h: 'A license to sell food, an approval to hand out a newspaper',
     link: 'A state may make rules on a great many matters, and a right stops it on some. This card puts a rule of each side by side.',
-    cases: ['u6-stall-licence', 'u6-stall-paper'],
+    cases: ['u6-stall-license', 'u6-stall-paper'],
     instruction: 'Both cases are about a state saying who may use a public sidewalk: to sell food, to hand out a newspaper. Compare one thing: whether the rule takes away a right.',
     prompt: { kind: 'which', option: 'S2.right', answer: 'u6-stall-paper' },
     difference: [
@@ -66,9 +66,9 @@ FC.cards('civics', 'u6', [
   { id: 'look-protected-trialrights', kind: 'lookalike', ledger: 'protected~trialrights',
     h: 'A right against the police, and a right against a council',
     link: 'Both of these names say that a right in the Constitution protects a person against a government. They are told apart in the same way: by the first question.',
-    cases: ['u6-silence-lawyer', 'u6-council-criticism'],
+    cases: ['u6-silence-lawyer', 'u6-council-speech-fine'],
     instruction: 'In both cases a person has a right that a government has to respect. Compare one thing: what the story ends on. Does it end with a judge being asked, or with a rule made by a state, a city or a county?',
-    prompt: { kind: 'which', option: 'D1.states', answer: 'u6-council-criticism' },
+    prompt: { kind: 'which', option: 'D1.states', answer: 'u6-council-speech-fine' },
     difference: [
       'In Case A the story ends with a lawyer asking a judge to keep out what a man said in questioning. A judge is being asked, so the first answer is {a:D1.courts}. The right is one of the steps the Constitution promises an accused person, and the name is the one for {plain:trialrights}.',
       'In Case B the story ends with a council’s rule. Nobody has asked a judge anything. The first answer is {a:D1.states}, the right at stake is the right to speak, and the case is {o:protected}.',

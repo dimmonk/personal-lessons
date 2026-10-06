@@ -5,7 +5,7 @@ FC.cases('ideology', 'u5', [
 
   /* ---------- The check after the question card ---------- */
   { id: 'i5-check-does', use: 'check', tier: 'clean', setting: 'work', topic: 'a training place for every school-leaver',
-    text: "At a youth forum in Dunmore, Councillor Abel Reyes said: 'Each young person is free to choose their own path, and nobody should stand in the way. But a path needs a first step. We ask the government to pay for a training place for every school-leaver who wants one, and we will all pay for it together.'",
+    text: "At a youth forum in Dunmore, Council Member Abel Reyes said: 'Each young person is free to choose their own path, and nobody should stand in the way. But a path needs a first step. We ask the government to pay for a training place for every school-leaver who wants one, and we will all pay for it together.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Each young person is free to choose their own path',
             R1: 'We ask the government to pay for a training place for every school-leaver who wants one' },

@@ -59,7 +59,7 @@ FC.key('math', {
       n: 'Prime factors',
       plain: 'breaking one number into the prime numbers that make it',
       needs: 'one whole number, and the question what it is made of: the prime numbers that multiply to give it, or every way it splits into equal groups',
-      aka: ['prime factorisation', 'prime decomposition'] },
+      aka: ['prime factorization', 'prime decomposition'] },
     { id: 'hcf', group: 'whole', unit: 'u2',
       n: 'Highest common factor',
       plain: 'the biggest equal pieces for two numbers',
@@ -301,7 +301,7 @@ FC.key('math', {
             keeps: ['rearr'],
             yieldsTo: [{ option: 'itself', say: 'the missing number multiplied by itself' }] },
           { id: 'rate', n: 'A rate, and a new amount to scale it to',
-            when: 'the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top',
+            when: 'the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square meters for each liter, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top',
             keeps: ['prop'],
             yieldsTo: [{ option: 'formula', say: 'a fixed amount added on top of the rate, such as a call-out fee or a standing charge' }] },
           { id: 'totals', n: 'Two facts that two missing numbers must both fit',
@@ -324,7 +324,7 @@ FC.key('math', {
         why: 'Adding and multiplying give nearly the same numbers at first and very different numbers after a while, so a procedure for the wrong one gives an answer that is far out. An amount that changed once has no pattern to carry forward at all.',
         options: [
           { id: 'adds', n: 'It goes up or down by the same number each time',
-            when: 'the amount goes up, or down, by the same number each hour, day, month or year (€200 a month, 2 cm an hour), whatever it has reached so far',
+            when: 'the amount goes up, or down, by the same number each hour, day, month or year ($200 a month, 2 cm an hour), whatever it has reached so far',
             keeps: ['lin'] },
           { id: 'multiplies', n: 'It is multiplied by the same number each time',
             when: 'the amount is multiplied by the same number each hour, day, month or year: it doubles, or it grows or shrinks by the same percentage of what it has reached (5% a year)',
@@ -342,7 +342,7 @@ FC.key('math', {
             when: 'the problem says how long (6 hours, 3 years, 4 doublings) and asks what the amount will be by then',
             keeps: ['lin', 'expg', 'oneoff'] },
           { id: 'howlong', n: 'How long until the amount reaches a target',
-            when: 'the problem gives a target for the amount (double, €2,400, the whole pond) and asks how long, or how many times it must change, until it gets there',
+            when: 'the problem gives a target for the amount (double, $2,400, the whole pond) and asks how long, or how many times it must change, until it gets there',
             keeps: ['lin', 'logsolve', 'oneoff'] }
         ] }
     ],
@@ -402,7 +402,7 @@ FC.key('math', {
             when: 'the problem asks how long, how high, how far or how wide something is',
             keeps: ['pyth', 'trig', 'similar'] },
           { id: 'room', n: 'How much area or volume it has',
-            when: 'the problem asks how much surface (glass, pizza, floor) or how much room inside (paint in a tin, water in a pot) something has, or how many times more of either',
+            when: 'the problem asks how much surface (glass, pizza, floor) or how much room inside (paint in a can, water in a pot) something has, or how many times more of either',
             keeps: ['sqcube'] }
         ] }
     ]

@@ -28,8 +28,8 @@ FC.cards('scams', 'u1', [
     link: 'You now have both words. The next kind of message asks you for a way into one of your accounts.',
     case: 'g-pension', mark: 'D1',
     strip: [
-      'There is one person, Tariq, and one account of his: his pension.',
-      'He went to the page himself, by typing the pension company’s address into his browser.',
+      'There is one person, Tariq, and one account of his: his retirement plan.',
+      'He went to the page himself, by typing the retirement plan company’s address into his browser.',
       'The page asks him to sign in with his username and password, and he does.',
       'Nobody else is in the case: no caller, and no message with a link in it.',
       'What he is asked for is a way into the account. It is not money, it is not a program on his computer, and it is not facts about himself.'
@@ -48,10 +48,10 @@ FC.cards('scams', 'u1', [
   { id: 'again-access', kind: 'again', family: 'access',
     link: 'The last card gave you what to point to for {a:D1.access}, from one case: {needs:access}. Here is a second case with a different story. This one arrives as a text.',
     first: 'g-pension', second: 'g-streaming', step: 'D1',
-    instruction: 'Find what the two cases share. Ignore the story (a pension, a streaming service) and ignore whether you would trust the message. Look at one thing only: which words ask the person to sign in?',
+    instruction: 'Find what the two cases share. Ignore the story (a retirement plan, a streaming service) and ignore whether you would trust the message. Look at one thing only: which words ask the person to sign in?',
     prompt: { kind: 'phrase', answer: 'Sign in with your password to unlock it' },
     shared: [
-      'Both messages ask for the same thing: a way into an account, by typing a password into a sign-in page. Tariq typed the pension company’s address himself and was asked to sign in. Nell is sent a link by text and is asked to sign in.',
+      'Both messages ask for the same thing: a way into an account, by typing a password into a sign-in page. Tariq typed the retirement plan company’s address himself and was asked to sign in. Nell is sent a link by text and is asked to sign in.',
       'There is a difference between them that you may have noticed: Tariq went to the page, and the page came to Nell. That difference matters a great deal, and there is a question for it. It is not the question this unit teaches. This question asks only what is being requested, and in both cases the answer is the same.',
       'So the answer does not say real or fake. It says what you are being asked for, and that is what {a:D1.access} names.'
     ] },

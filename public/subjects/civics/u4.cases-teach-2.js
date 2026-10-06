@@ -10,12 +10,12 @@ FC.cases('civics', 'u4', [
     cues: { E1: 'the President ordered the army to send twelve helicopters and two thousand soldiers to the towns' } },
 
   { id: 'e-carrier', use: 'teach', tier: 'clean', setting: 'travel', topic: 'an aircraft carrier turned north', name: 'The carrier turned north',
-    text: "An aircraft carrier was due to visit a port in the south on Friday. On Thursday night the President ordered the navy to send it north instead, to a harbour where a fuel ship had run aground, to help with the clean-up. The carrier changed course before dawn.",
+    text: "An aircraft carrier was due to visit a port in the south on Friday. On Thursday night the President ordered the navy to send it north instead, to a harbor where a fuel ship had run aground, to help with the clean-up. The carrier changed course before dawn.",
     outcome: 'commander', route: { D1: ['president'], E1: ['military'] },
     cues: { E1: 'the President ordered the navy to send it north instead' },
     segments: [
       { text: 'An aircraft carrier was due to visit a port in the south on Friday', note: 'That was the plan before the order. It is not the decision in the case.' },
-      { text: 'On Thursday night the President ordered the navy to send it north instead, to a harbour where a fuel ship had run aground, to help with the clean-up' },
+      { text: 'On Thursday night the President ordered the navy to send it north instead, to a harbor where a fuel ship had run aground, to help with the clean-up' },
       { text: 'The carrier changed course before dawn', note: 'That is the order being obeyed. The words asked for are the order itself.' }
     ] },
 
@@ -28,7 +28,7 @@ FC.cases('civics', 'u4', [
 
   /* ---------- Dealing with another country ---------- */
   { id: 'e-coasttalks', use: 'teach', tier: 'clean', setting: 'world', topic: 'fishing rules on a shared coast', name: 'The coast talks',
-    text: "The President flew to the capital of a neighbouring country on Monday and spent two days talking with its leader about fishing rules along the shared coast. By Wednesday the two leaders had agreed on a set of rules and had signed a paper saying so.",
+    text: "The President flew to the capital of a neighboring country on Monday and spent two days talking with its leader about fishing rules along the shared coast. By Wednesday the two leaders had agreed on a set of rules and had signed a paper saying so.",
     outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
     cues: { E1: 'spent two days talking with its leader about fishing rules along the shared coast' } },
 
@@ -56,9 +56,9 @@ FC.cases('civics', 'u4', [
     cues: { E1: 'The President ordered the navy to send three ships to the port of Istrene' } },
 
   { id: 'e-ships-agree', use: 'teach', tier: 'clean', setting: 'world', topic: 'ports shared by two navies', name: 'The ships agreed',
-    text: "The President travelled to Istrene and spent two days with its leader. On Thursday the two of them signed an agreement that navy ships of each country may use the other’s ports.",
+    text: "The President traveled to Istrene and spent two days with its leader. On Thursday the two of them signed an agreement that navy ships of each country may use the other’s ports.",
     outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
-    cues: { E1: 'The President travelled to Istrene and spent two days with its leader' } },
+    cues: { E1: 'The President traveled to Istrene and spent two days with its leader' } },
 
   /* ---------- Exception: another country's leader is in the story, and the case is an order ---------- */
   { id: 'e-exercise', use: 'teach', tier: 'misleading', setting: 'world', topic: 'a training exercise, an allied navy', name: 'The joint exercise',

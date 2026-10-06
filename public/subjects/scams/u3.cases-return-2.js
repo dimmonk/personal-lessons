@@ -5,13 +5,13 @@ FC.cases('scams', 'u3', [
 
   /* ---------- One-time code scam ---------- */
   { id: 'ret-cs-broadband', use: 'return', tier: 'clean', setting: 'home', topic: 'a broadband call about a fault on the line',
-    text: "A woman rings Dee and says she is from the broadband company: 'We are fixing a fault on your line. A code has been sent to your phone to confirm that it is you. Please say the number.' A text with a code arrives.",
+    text: "A woman calls Dee and says she is from the broadband company: 'We are fixing a fault on your line. A code has been sent to your phone to confirm that it is you. Please say the number.' A text with a code arrives.",
     outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
-    cues: { D1: 'Please say the number', A1: ['A text with a code arrives', 'Please say the number'], A2: 'A woman rings Dee and says she is from the broadband company' },
+    cues: { D1: 'Please say the number', A1: ['A text with a code arrives', 'Please say the number'], A2: 'A woman calls Dee and says she is from the broadband company' },
     reason: { D1: 'The caller asks Dee to say a number aloud: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
               A1: 'A code has just come to Dee\'s phone, and she is asked to say it: {cue:A1}.',
               A2: 'Dee did not start this: a call came to her: {cue:A2}. A code is for typing into a sign-in that you started, and nobody else needs to hear it.' },
-    not: { outcome: 'realsignin', why: 'The code is real, and it may come from the broadband company\'s own system. But a real code is typed in by the person it was sent to, and here a caller who rang her wants it said aloud.' },
+    not: { outcome: 'realsignin', why: 'The code is real, and it may come from the broadband company\'s own system. But a real code is typed in by the person it was sent to, and here a caller who phoned her wants it said aloud.' },
     wouldChange: 'If Dee had signed in to her broadband account herself and typed the code that came into that same page, nobody else would have heard it, and the case would be {o:realsignin}.' },
 
   { id: 'ret-cs-club', use: 'return', tier: 'varied', setting: 'leisure', topic: 'a club treasurer who wants a number',
@@ -25,13 +25,13 @@ FC.cases('scams', 'u3', [
     wouldChange: 'If Ola had been opening the club bank\'s own app herself and had typed the code that it sent her into that app, the case would be {o:realsignin}.' },
 
   { id: 'ret-cs-insurer', use: 'return', tier: 'varied', setting: 'health', topic: 'an insurer call about a claim to pay out',
-    text: "A man rings Jun and says he is from her health insurer: 'To pay out your claim we need to confirm that it is you. A code is on its way. Please read it out.' A text with a code arrives.",
+    text: "A man calls Jun and says he is from her health insurer: 'To pay out your claim we need to confirm that it is you. A code is on its way. Please read it out.' A text with a code arrives.",
     outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
-    cues: { D1: 'Please read it out', A1: ['A text with a code arrives', 'Please read it out'], A2: 'A man rings Jun and says he is from her health insurer' },
+    cues: { D1: 'Please read it out', A1: ['A text with a code arrives', 'Please read it out'], A2: 'A man calls Jun and says he is from her health insurer' },
     reason: { D1: 'The caller asks Jun to read out a code: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.',
               A1: 'A code has just come to Jun\'s phone, and she is asked to read it out: {cue:A1}.',
               A2: 'Jun did not start this: a call came to her: {cue:A2}. Being paid money is a good bait, but a code is for typing into a sign-in that she started.' },
-    not: { outcome: 'realsignin', why: 'The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who rang her has no need to hear it.' },
+    not: { outcome: 'realsignin', why: 'The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who called her has no need to hear it.' },
     wouldChange: 'If Jun had been making a claim in the insurer\'s own app and had typed the code it sent her into that app, the case would be {o:realsignin}.' },
 
   { id: 'ret-cs-friend', use: 'return', tier: 'misleading', setting: 'relationships', topic: 'a friend who asks for the number on his phone', echo: 'ac-checkout',
@@ -56,12 +56,12 @@ FC.cases('scams', 'u3', [
     wouldChange: 'If Imogen had gone to the poll site herself and the {t:permission} had asked only for her name, it would fit what she set out to do, and the case would be {o:realsignin}.' },
 
   { id: 'ret-ap-budget', use: 'return', tier: 'varied', setting: 'money', topic: 'a budgeting app advertised in a newsletter',
-    text: "A newsletter advertises a budgeting app that will 'find your receipts in your email'. Sid taps the advert. His provider's permission screen says that the app would like to read, send and delete all his email. It has two buttons, Allow and Cancel.",
+    text: "A newsletter advertises a budgeting app that will 'find your receipts in your email'. Sid taps the ad. His provider's permission screen says that the app would like to read, send and delete all his email. It has two buttons, Allow and Cancel.",
     outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
     cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'the app would like to read, send and delete all his email', A2: "A newsletter advertises a budgeting app" },
     reason: { D1: 'The {t:permission} asks Sid to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',
               A1: 'The {t:permission} asks him to press Allow for an app and lists what it may do: {cue:A1}. No password is typed and no code is read out.',
-              A2: 'The app came to Sid in an advert: {cue:A2}. He did not go looking for it. Finding receipts may need to read mail, but sending and deleting it is far more than that.' },
+              A2: 'The app came to Sid in an ad: {cue:A2}. He did not go looking for it. Finding receipts may need to read mail, but sending and deleting it is far more than that.' },
     not: { outcome: 'realsignin', why: 'The {t:permission} is real and it is his own provider\'s. But he did not start it, and the list goes well beyond finding receipts: it includes sending and deleting his email.' },
     wouldChange: 'If Sid had gone looking for a budgeting app himself, and the {t:permission} had asked only to read receipts, it would fit what he set out to do, and the case would be {o:realsignin}.' },
 
@@ -76,7 +76,7 @@ FC.cases('scams', 'u3', [
     wouldChange: 'If the {t:permission} had asked only for his name, to show a score table, it would ask only what the game needs, and the case would be {o:realsignin}.' },
 
   { id: 'ret-ap-album', use: 'return', tier: 'misleading', setting: 'relationships', topic: 'an album shared by a friend', echo: 'ac-planner-own',
-    text: "Hal's friend Wren messages him: 'I put our holiday photos in an album. Open it here.' The link opens his email provider's permission screen: 'Album View would like to read, send and delete all your email.' It has two buttons, Allow and Cancel. Wren's messages are usually real.",
+    text: "Hal's friend Wren messages him: 'I put our vacation photos in an album. Open it here.' The link opens his email provider's permission screen: 'Album View would like to read, send and delete all your email.' It has two buttons, Allow and Cancel. Wren's messages are usually real.",
     outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
     cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'Album View would like to read, send and delete all your email', A2: "Hal's friend Wren messages him" },
     reason: { D1: 'The {t:permission} asks Hal to press Allow: {cue:D1}. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.',

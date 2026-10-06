@@ -257,10 +257,10 @@ FC.cases('math', 'u2', [
     use: 'drill',
     tier: 'clean',
     setting: 'home',
-    topic: 'sweets shared out',
+    topic: 'candies shared out',
     kind: 'problem',
     outcome: 'modrem',
-    text: 'Fifty sweets are shared out equally among 7 children, and what cannot be shared goes to the teacher. How many sweets does the teacher get?',
+    text: 'Fifty candies are shared out equally among 7 children, and what cannot be shared goes to the teacher. How many candies does the teacher get?',
     route: { M1: ['whole'], W1: ['cycle'] },
     cues: { M1: ['what cannot be shared goes to the teacher'], W1: ['what cannot be shared goes to the teacher'] },
     reason: {
@@ -277,7 +277,7 @@ FC.cases('math', 'u2', [
         working: '7 × 7 = 49, the most whole rounds that do not pass 50'
       },
       { does: 'Take them away to find what is left over', working: '50 − 49 = 1' },
-      { does: 'Say what the left over means', working: '1 sweet is left over for the teacher' }
+      { does: 'Say what the left over means', working: '1 candy is left over for the teacher' }
     ],
     answer: {
       right: 'r',

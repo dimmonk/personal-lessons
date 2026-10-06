@@ -5,11 +5,11 @@
 FC.cases('civics', 'u6', [
 
   /* ---------- Stage two: the first question alone ---------- */
-  { id: 'u6-p-fishing', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a fishing licence fee',
-    text: "Anglers in the state of Pelham grumbled that the yearly fishing licence cost too much. The Pelham legislature voted to raise the fee for a state fishing licence.",
+  { id: 'u6-p-fishing', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a fishing license fee',
+    text: "Anglers in the state of Pelham grumbled that the yearly fishing license cost too much. The Pelham legislature voted to raise the fee for a state fishing license.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
     cues: { S1: 'The Pelham legislature voted' },
-    reason: { S1: 'The rule was made by one state’s lawmakers: {cue:S1}. The licence is the state’s own, and no city, town or county is named.' },
+    reason: { S1: 'The rule was made by one state’s lawmakers: {cue:S1}. The license is the state’s own, and no city, town or county is named.' },
     not: { outcome: 'localgov', why: 'No city, town or county is named. The state’s legislature made the rule.' } },
 
   { id: 'u6-p-market', use: 'drill', tier: 'clean', setting: 'community', topic: 'a farmers’ market day',
@@ -80,15 +80,15 @@ FC.cases('civics', 'u6', [
     options: [
       { text: 'A federal law says that no state may require anything different.', voice: 'preempted' },
       { text: 'The state rule asks for more than a federal minimum, and a person who follows it also follows the federal law.', voice: 'concurrent' },
-      { text: 'The legislature made a rule on licences, and the case names no federal law at all.', voice: 'police' },
-      { text: 'The rule punishes people for criticising the mayor.', voice: 'protected' }
+      { text: 'The legislature made a rule on licenses, and the case names no federal law at all.', voice: 'police' },
+      { text: 'The rule punishes people for criticizing the mayor.', voice: 'protected' }
     ],
     why: 'That detail is a federal law that sets a floor and invites the states to add, with a state rule that meets both.' },
 
   { id: 'u6-rev-protected', use: 'drill', kind: 'reverse', outcome: 'protected', expect: 'hear',
     options: [
       { text: '“You can’t be punished for saying that. The state can’t make it illegal.”', voice: 'protected' },
-      { text: '“The council voted on where the bins go.”', voice: 'localgov' },
+      { text: '“The council voted on where the trash cans go.”', voice: 'localgov' },
       { text: '“Congress has written one set of rules for the whole country.”', voice: 'preempted' },
       { text: '“The state licenses plumbers, as every state does.”', voice: 'police' }
     ],

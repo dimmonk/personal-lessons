@@ -12,7 +12,7 @@ FC.cases('math', 'u2', [
     topic: 'two ferries',
     kind: 'problem',
     outcome: 'lcm',
-    text: 'A ferry leaves a harbour every 10 minutes and a second ferry every 15 minutes. They have just left together. After how many minutes will they next leave together?',
+    text: 'A ferry leaves a harbor every 10 minutes and a second ferry every 15 minutes. They have just left together. After how many minutes will they next leave together?',
     route: { M1: ['whole'], W1: ['together'] },
     steps: [
       { does: 'Break each number into primes', working: '10 = 2 × 5; 15 = 3 × 5' },

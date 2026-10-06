@@ -9,13 +9,13 @@ FC.cards('wealth', 'u3', [
     h: 'The question you have been answering all along',
     link: 'Since the first case you have seen the question at the foot of each new answer, with one answer under it. This card puts the question and its seven answers in one place, and says why it is asked.',
     decides: [
-      'There are seven answers because the first answer, {a:D1.shock}, is true of very different cases, and what to do about them is different. Selling suits the person who is free to sell and does not run the company, and it does nothing for the person who cannot sell. More insurance suits a gap between {t:claim} and the cover, and does nothing for a loan. Companies suit properties in one name, and do nothing for a loan against shares. Getting the answer wrong means buying a cure for a problem the case does not have.',
+      'There are seven answers because the first answer, {a:D1.shock}, is true of very different cases, and what to do about them is different. Selling suits the person who is free to sell and does not run the company, and it does nothing for the person who cannot sell. More insurance suits a gap between {t:claim} and the coverage, and does nothing for a loan. Companies suit properties in one name, and do nothing for a loan against shares. Getting the answer wrong means buying a cure for a problem the case does not have.',
       'The question looks at what the case shows about the one thing, in three parts: what it is (shares, a property, a business, {t:claim}, a loan), what the person can do about it (sell it, run it, insure it), and what stands round it already. The seventh answer is the part that says it is already safe, and it is as much an answer as the others.',
       'You have met each answer with a case and with a name. The names say what to do, and one of them says to do nothing.'
     ],
     how: [
       'Read the case to the end, then ask what the one thing is. Put your finger on the words that say what it is, and on the words that say what the person can do about it or what stands round it. Then find the answer whose words you can point to.',
-      'Two steps help. First, ask whether the person runs it. If they run a business, the answers are the two about a business: one with a support missing, or the one that says it is safe. If they do not, ask whether they are free to sell. Second, for {t:claim} or a loan, ask whether the case shows a gap ({t:claim} bigger than the cover, a loan the lender could use) or shows the gap already closed.',
+      'Two steps help. First, ask whether the person runs it. If they run a business, the answers are the two about a business: one with a support missing, or the one that says it is safe. If they do not, ask whether they are free to sell. Second, for {t:claim} or a loan, ask whether the case shows a gap ({t:claim} bigger than the coverage, a loan the lender could use) or shows the gap already closed.',
       'If you cannot point to the words, you do not have an answer yet.'
     ],
     whenBoth: 'Two pairs of answers can both seem to fit one case, and there is a rule for each. A demand bigger than the insurance wins over properties in one name. A business the person runs with a support missing wins over a loan the lender could use, because a loan against a business’s shares is one of {t:threesupports}. Each pair has been put side by side earlier in this unit.' },
@@ -32,7 +32,7 @@ FC.cards('wealth', 'u3', [
     steps: [
       { step: 'D1',
         reason: [
-          'Nothing in this case comes out of the money every year, nothing is due on a date, and nothing is said about a death or a will. What the case shows is this: {cue:D1}. £360,000 out of £420,000 is 86%, all in one company. That is what you point to for {a:D1.shock}.',
+          'Nothing in this case comes out of the money every year, nothing is due on a date, and nothing is said about a death or a will. What the case shows is this: {cue:D1}. $360,000 out of $420,000 is 86%, all in one company. That is what you point to for {a:D1.shock}.',
           'The six years of wages paid in shares may make you think of a rule on selling. It does not belong to this question. The first question asks only what the one thing is.'
         ] },
       { step: 'S1',
@@ -42,14 +42,14 @@ FC.cards('wealth', 'u3', [
         ] }
     ],
     hold: {
-      neighbour: 'hedge',
+      neighbor: 'hedge',
       prompt: { kind: 'reason',
         lead: 'The shares were paid as part of Elena’s wages over six years, so the case can look like one about shares she is not allowed to sell.',
         choices: [
           { id: 'a', text: 'The shares were paid to her as part of her wages.',
             note: 'True, and it is why the case can look like {a:S1.blocked}. But where the shares came from does not show whether a rule stops her selling them.' },
           { id: 'b', text: 'Nothing in the company’s rules stops her selling the shares, and she has left the company.' },
-          { id: 'c', text: 'The shares are worth £360,000, most of what she has.',
+          { id: 'c', text: 'The shares are worth $360,000, most of what she has.',
             note: 'True, and it is the reason the first question gave its answer. It is true of both answers, so it cannot say which of the two this is.' }
         ],
         answer: 'b' },
@@ -73,21 +73,21 @@ FC.cards('wealth', 'u3', [
     steps: [
       { step: 'D1',
         reason: [
-          'What the case gives you is this: {cue:D1}. £1,400,000 out of £2,000,000 is 70%, in one business that Greta runs. That is the first answer, {a:D1.shock}, as in the cases of Hugo and Femi.',
+          'What the case gives you is this: {cue:D1}. $1,400,000 out of $2,000,000 is 70%, in one business that Greta runs. That is the first answer, {a:D1.shock}, as in the cases of Hugo and Femi.',
           'A friend’s warning opens the case, in loud words: “a fire or a bad year, and you are finished”. A warning is not a fact about the money. The first question looks only at what the case shows.'
         ] },
       { step: 'S1',
         reason: [
-          'Now ask what stands round the business. Greta has {cue:S1}. The funds are £420,000 spread across thousands of companies, the savings are £180,000 against £30,000 a year, which is six years, and no bank holds her shares as security. All of {t:threesupports} are in place.',
+          'Now ask what stands round the business. Greta has {cue:S1}. The funds are $420,000 spread across thousands of companies, the savings are $180,000 against $30,000 a year, which is six years, and no bank holds her shares as security. All of {t:threesupports} are in place.',
           'Nothing is missing, so nothing needs doing. The answer is {a:S1.madesafe}.'
         ] }
     ],
     hold: {
-      neighbour: 'supports',
+      neighbor: 'supports',
       prompt: { kind: 'reason',
         lead: 'Greta runs the brewery, and it is most of what she owns, so the case can look like a business with a support missing.',
         choices: [
-          { id: 'a', text: 'Greta runs the brewery, and it is worth £1,400,000 of the £2,000,000 she owns.',
+          { id: 'a', text: 'Greta runs the brewery, and it is worth $1,400,000 of the $2,000,000 she owns.',
             note: 'True, and it is why the case can look like {a:S1.ownrun}. But that is true of the safe version and of the unsafe one alike, so it cannot say which this is.' },
           { id: 'b', text: 'A friend told her to sell half and buy funds.',
             note: 'True, but it is a friend’s opinion. It is not something the case shows about her money.' },
@@ -132,9 +132,9 @@ FC.cards('wealth', 'u3', [
     ],
     prompts: [
       { outcome: 'diversify', occasion: 'Shares or a building that you hold and do not run, and that are a large part of what you have.' },
-      { outcome: 'hedge', occasion: 'Shares from a job or a scheme that you are not yet allowed to sell, and the date they are released.' },
+      { outcome: 'hedge', occasion: 'Shares from a job or a stock plan that you are not yet allowed to sell, and the date they are released.' },
       { outcome: 'supports', occasion: 'A business that you, or someone you know, runs, and what stands round it: savings, other investments, and any loan against it.' },
-      { outcome: 'insure', occasion: 'The policies on your home, your car or a property you let, and the largest claim anyone could make.' },
+      { outcome: 'insure', occasion: 'The policies on your home, your car or a property you rent out, and the largest claim anyone could make.' },
       { outcome: 'entity', occasion: 'Two or more properties or businesses held in the same name, and whose name that is.' },
       { outcome: 'deleverage', occasion: 'A loan, and what the lender is allowed to do if prices or rates move.' },
       { outcome: 'safe', occasion: 'A time when someone told you to fix something, and you could point to why it was already looked after.' }
@@ -148,7 +148,7 @@ FC.cards('wealth', 'u3', [
     cues: [
       { cue: 'someone says that most of what I have is in one thing and I should do something about it', then: 'I ask first whether I can sell it, whether I run it, and what already stands round it, and I write the numbers down before I agree to anything.' },
       { cue: 'someone offers me insurance, a company or a loan', then: 'I ask what gap it closes, in numbers, and what it costs each year.' },
-      { cue: 'a loan agreement or a share scheme arrives', then: 'I find the words that say what the lender may do, or when I may sell, and I write down the date and the sum before I sign.' },
+      { cue: 'a loan agreement or a stock-plan letter arrives', then: 'I find the words that say what the lender may do, or when I may sell, and I write down the date and the sum before I sign.' },
       { cue: 'I am told that my money is safe', then: 'I ask what makes it so, in numbers: the years of spending set aside, the limit of the insurance, whose name holds each property, what the loan lets the bank do.' },
       { cue: 'someone tells me to fix something that is already safe', then: 'I leave it alone, write down the numbers that show it is safe, and set a date to check them again.' }
     ] }

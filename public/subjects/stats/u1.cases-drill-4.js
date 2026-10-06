@@ -13,7 +13,7 @@ FC.cases('stats', 'u1', [
       { text: 'The figure comes from the 30 people who answered a phone-in, and the claim is about the whole town.', voice: 'counted' },
       { text: 'The agency changed which visits count in March, and the figure jumped in April.', voice: 'measure' },
       { text: 'It says deaths are "down by half" and does not say how many there were.', voice: 'compare' },
-      { text: 'Pupils who take the class do better, and the principal says the class is the reason.', voice: 'cause' },
+      { text: 'Students who take the class do better, and the principal says the class is the reason.', voice: 'cause' },
       { text: 'Names were drawn by lottery from the full list, and nearly everyone drawn replied.', voice: 'holds' }
     ],
     why: 'That detail shows who the figure was worked out from, and that they are not a fair picture of the group the claim speaks for.' },

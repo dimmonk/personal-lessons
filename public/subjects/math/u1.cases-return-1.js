@@ -22,22 +22,22 @@ FC.cases('math', 'u1', [
     not: { outcome: 'chance', why: 'The problem has a count of pencils and 9 classes, and one number is asked for, which can look like counting different results. But nothing is chosen. The question is what is left when 250 is shared out equally.' },
     wouldChange: 'If the problem asked in how many different ways the 9 classes could line up for assembly, it would be {a:M1.chance}.' },
 
-  { id: 'gt-ret-nurses', use: 'return', tier: 'varied', setting: 'work', topic: 'two nurses on a night rota',
+  { id: 'gt-ret-nurses', use: 'return', tier: 'varied', setting: 'work', topic: 'two nurses on a night schedule',
     text: 'Nurse Aisha works every 5th night and Nurse Ben every 8th night. Both are on duty tonight. After how many nights will they next both be on duty?',
     route: { M1: ['whole'] },
     cues: { M1: ['works every 5th night and Nurse Ben every 8th night', 'After how many nights will they next both be on duty?'] },
-    reason: { M1: 'The two nurses each come back on a rota of their own, and the question is when both are on duty on the same night again: {cue:M1}.' },
+    reason: { M1: 'The two nurses each come back on a schedule of their own, and the question is when both are on duty on the same night again: {cue:M1}.' },
     not: { outcome: 'growth', why: 'The problem runs over nights, which can look like an amount followed through time. But no amount is changing: the two nurses are two repeats, and the question is when they meet.' },
-    wouldChange: 'If the problem said Aisha’s pay rose by €20 for every night shift she worked and asked what she would earn after 15 nights, it would be {a:M1.growth}.' },
+    wouldChange: 'If the problem said Aisha’s pay rose by $20 for every night shift she worked and asked what she would earn after 15 nights, it would be {a:M1.growth}.' },
 
   /* ---------- a number you are not told ---------- */
   { id: 'gt-ret-data', use: 'return', tier: 'clean', setting: 'money', topic: 'a mobile plan charged by the gigabyte',
-    text: 'A mobile data plan costs a fixed €5 plus €2 for every gigabyte used. Ruth’s bill was €19. How many gigabytes did she use?',
+    text: 'A mobile data plan costs a fixed $5 plus $2 for every gigabyte used. Ruth’s bill was $19. How many gigabytes did she use?',
     route: { M1: ['unknown'] },
-    cues: { M1: ['a fixed €5 plus €2 for every gigabyte used', 'How many gigabytes did she use?'] },
-    reason: { M1: 'The problem gives a calculation, a fixed €5 plus €2 for every gigabyte, and the result it came to, and leaves out one number: {cue:M1}.' },
+    cues: { M1: ['a fixed $5 plus $2 for every gigabyte used', 'How many gigabytes did she use?'] },
+    reason: { M1: 'The problem gives a calculation, a fixed $5 plus $2 for every gigabyte, and the result it came to, and leaves out one number: {cue:M1}.' },
     not: { outcome: 'growth', why: 'The calculation has a fixed fee and a price that is repeated, which can look like an amount that goes up. But the price goes with each gigabyte, a thing you count, and nothing is followed as time passes.' },
-    wouldChange: 'If the plan’s price went up by €2 every month, it would follow one amount through time, and it would be {a:M1.growth}.' },
+    wouldChange: 'If the plan’s price went up by $2 every month, it would follow one amount through time, and it would be {a:M1.growth}.' },
 
   { id: 'gt-ret-printer', use: 'return', tier: 'varied', setting: 'work', topic: 'ink cartridges for an office printer',
     text: 'An office printer uses 8 ink cartridges for every 1,000 pages. The office plans to print 3,500 pages this term. How many cartridges will it need?',
@@ -65,10 +65,10 @@ FC.cases('math', 'u1', [
     wouldChange: 'If the problem asked on which day of the week the well would reach 45 cm, given that it started to fall on a Monday, the question would end on a loop of 7, and it would be {a:M1.whole}.' },
 
   { id: 'gt-ret-algae', use: 'return', tier: 'varied', setting: 'leisure', topic: 'algae spreading across a lake',
-    text: 'Algae covers 2 square metres of a lake, and its area grows by 10% every day. How much of the lake will it cover after 5 days?',
+    text: 'Algae covers 2 square meters of a lake, and its area grows by 10% every day. How much of the lake will it cover after 5 days?',
     route: { M1: ['growth'] },
     cues: { M1: ['its area grows by 10% every day', 'How much of the lake will it cover after 5 days?'] },
     reason: { M1: 'One amount, the area the algae covers, is followed through time: {cue:M1}. It is multiplied by the same number every day, and the question asks what it will be at a given time.' },
     not: { outcome: 'unknown', why: 'There is a percentage and a number the problem leaves out, which can look like a hidden number that must fit a rate. But the percentage goes with each day, so it describes an amount changing as time passes.' },
-    wouldChange: 'If the problem asked how many of 12 equal buckets could be filled from 50 litres of lake water, with how much left over, it would be {a:M1.whole}.' }
+    wouldChange: 'If the problem asked how many of 12 equal buckets could be filled from 50 liters of lake water, with how much left over, it would be {a:M1.whole}.' }
 ]);

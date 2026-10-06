@@ -39,7 +39,7 @@ FC.cards('stats', 'u3', [
         reason: 'Now the question after it. Nobody was asked by name. The poll was posted for anyone in the group to see, and {cue:A1}. The ones who voted chose to, and the parents who feel most strongly about early mornings are the likeliest to. The answer is {a:A1.chose}.' }
     ],
     hold: {
-      neighbour: 'nonresp',
+      neighbor: 'nonresp',
       prompt: { kind: 'reason',
         lead: 'The group has 2,000 members and only 410 voted, so the case can look like a list of people who were asked and mostly did not answer.',
         choices: [
@@ -74,7 +74,7 @@ FC.cards('stats', 'u3', [
         reason: 'Now the question after it. Nearly everyone who was asked answered: 88 of 90, which is 98 in every 100. So the replies are not the trouble. The trouble is who was on the list: {cue:A1}. The figure was worked out after the fact from the ones who were still there, and the ones who left are missing. The answer is {a:A1.lasted}.' }
     ],
     hold: {
-      neighbour: 'nonresp',
+      neighbor: 'nonresp',
       prompt: { kind: 'reason',
         lead: 'The studio mailed a survey to a list and asked everyone on it by name, so the case can look like a list that was asked and did not reply.',
         choices: [

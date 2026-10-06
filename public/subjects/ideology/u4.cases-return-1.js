@@ -7,11 +7,11 @@ FC.cases('ideology', 'u4', [
 
   /* ---------- Keeping what is still there ---------- */
   { id: 'i4-ret-founders', use: 'return', tier: 'varied', setting: 'schooling', topic: 'a founders’ day walk to the old well',
-    text: "From the Lowmoor school newsletter: 'Each year on Founders' Day the whole school walks to the old well and the head reads out the names of those who built it, as has been done since the school began. That custom should guide how the school keeps its year. Keep Founders' Day. If the timetable has to change, change it a term at a time, and ask the older pupils' parents first.'",
+    text: "From the Lowmoor school newsletter: 'Each year on Founders' Day the whole school walks to the old well and the head reads out the names of those who built it, as has been done since the school began. That custom should guide how the school keeps its year. Keep Founders' Day. If the schedule has to change, change it a term at a time, and ask the older students' parents first.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
-    cues: { D1: 'That custom should guide how the school keeps its year', T1: ["Keep Founders' Day", "change it a term at a time, and ask the older pupils' parents first"] },
+    cues: { D1: 'That custom should guide how the school keeps its year', T1: ["Keep Founders' Day", "change it a term at a time, and ask the older students' parents first"] },
     reason: { D1: 'The text holds up a custom handed down, the walk to the well, as what should guide: {cue:D1}.',
-              T1: 'The walk is still made, and the text asks for it to stay and for the timetable to change a term at a time: {cue:T1}.' },
+              T1: 'The walk is still made, and the text asks for it to stay and for the schedule to change a term at a time: {cue:T1}.' },
     not: { outcome: 'react', why: 'Nothing has been taken away, so nothing is asked back. The walk to the well is still made each year.' } },
 
   { id: 'i4-ret-stalls', use: 'return', tier: 'varied', setting: 'work', topic: 'market stalls passed on by a handshake',
@@ -23,7 +23,7 @@ FC.cases('ideology', 'u4', [
     not: { outcome: 'react', why: 'The old terms are still in use, so nothing has gone and nothing is asked back.' } },
 
   { id: 'i4-ret-funeral', use: 'return', tier: 'varied', setting: 'faith', topic: 'a bell rung for each year of a life',
-    text: "From the Orrel Dale burial board: 'When someone dies in the dale the bell is rung once for each year of their life, and the neighbours carry the coffin to the church on foot. That custom should guide how the burial board is run. Keep it. If the lane must be closed for repairs, let the board change the route in small steps and ask the bearers first.'",
+    text: "From the Orrel Dale burial board: 'When someone dies in the dale the bell is rung once for each year of their life, and the neighbors carry the coffin to the church on foot. That custom should guide how the burial board is run. Keep it. If the lane must be closed for repairs, let the board change the route in small steps and ask the bearers first.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'That custom should guide how the burial board is run', T1: ['Keep it', 'let the board change the route in small steps and ask the bearers first'] },
     reason: { D1: 'The text holds up a custom handed down, the bell and the walk to the church, as what should guide: {cue:D1}.',

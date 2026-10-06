@@ -30,7 +30,7 @@ FC.cards('math', 'u1', [
     explain: [
       'What you are shown is a shape, and a question about one length on it. The shape here is a triangle with a square corner, and the length asked for is the side opposite the corner. In a triangle like this, two sides settle the third, which is why the problem needs to give only two of them.',
       'The wording for this kind has a second half. The shape can instead be two things that are exactly the same shape at different sizes: a model and the real thing, a small floor plan and the room, two round pizzas. Then the question is about a length on one of them, or about how much more area or volume the bigger one has. Both halves are about shape. A shape is given, or two shapes are compared, and what is asked is a length, an area or a volume.',
-      'A shape in the story is not enough by itself. A garden 8 m long with an area of 40 square metres has measurements and a shape, but it has no triangle with a square corner and no copy, and asking for its width is a different kind of problem. You will meet a pair like that, side by side, in this unit.'
+      'A shape in the story is not enough by itself. A garden 8 m long with an area of 40 square meters has measurements and a shape, but it has no triangle with a square corner and no copy, and asking for its width is a different kind of problem. You will meet a pair like that, side by side, in this unit.'
     ],
     feature: { step: 'M1', option: 'shape' },
     name: 'The answer, and so the name of this kind of problem, is {a:M1.shape}. “The same shape at different sizes” means exactly the same shape, with every length made a number of times longer or shorter: a photo and its enlargement, a model and the real thing, a plan and the room.' },
@@ -50,11 +50,11 @@ FC.cards('math', 'u1', [
     typical: [
       'Either a {t:righttriangle} is in the story (a wall and the ground, a path that goes north and then east, the edges of a phone), or two things have exactly the same shape and different sizes (a model and the real thing, a plan and the room, two round pizzas).',
       'The question is about a length, an area or a volume: how long, how high, how far, how much surface, how much room inside, or how many times more.',
-      'The numbers are measurements: metres, centimetres, kilometres, and sometimes an angle in degrees.',
+      'The numbers are measurements: meters, centimeters, kilometers, and sometimes an angle in degrees.',
       'When two things are the same shape, every length on one is the same number of times longer than the matching length on the other.'
     ],
     not: [
-      'A measurement in the problem does not make it this kind. A garden 8 m long with an area of 40 square metres is not a {t:righttriangle}, and the garden is not a copy of anything: asking for its width is the second kind, a hidden number that must fit a calculation.',
+      'A measurement in the problem does not make it this kind. A garden 8 m long with an area of 40 square meters is not a {t:righttriangle}, and the garden is not a copy of anything: asking for its width is the second kind, a hidden number that must fit a calculation.',
       'And “the same shape” means exactly the same shape. Two rectangles, one long and thin and one nearly square, are not the same shape at different sizes.'
     ],
     wild: ['"How far is it in a straight line?"', '"How high does it reach?"', '"The model is 1 to 40."', '"How much more paint will the bigger one need?"', '"It is drawn to scale."'],
@@ -74,7 +74,7 @@ FC.cards('math', 'u1', [
     prompt: { kind: 'which', option: 'M1.shape', answer: 'gt-brace-length' },
     difference: [
       'In Case A the wall, the shelf and the brace make a triangle with a square corner, and the problem gives two of its sides: 40 cm and 30 cm. The length asked for is the third side. The answer is {a:M1.shape}.',
-      'In Case B there is no triangle and no copy of anything. The problem gives a price for each metre of wood and what the brace cost, and asks how long the piece is. The hidden number must fit a rate. The answer is {a:M1.unknown}.',
+      'In Case B there is no triangle and no copy of anything. The problem gives a price for each meter of wood and what the brace cost, and asks how long the piece is. The hidden number must fit a rate. The answer is {a:M1.unknown}.',
       'Both ask “how long”, and both are about the same brace. A length can be asked for in either kind. What differs is what the problem gives you to find it with: a shape, or a rate.'
     ] },
 

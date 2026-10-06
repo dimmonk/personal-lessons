@@ -42,7 +42,7 @@ FC.cases('stats', 'u2', [
     not: { outcome: 'comp_ok', why: 'A percentage and two numbers can look like a comparison, but both numbers are the same shop in two years. One thing is followed through time.' } },
 
   { id: 'n-schools', use: 'drill', tier: 'varied', setting: 'learning', topic: 'two school districts and a reading test',
-    text: "A state compares two school districts on the same state test, which every third grader in both took in the same week. The two districts serve a similar mix of family incomes. In District A, 1,200 of 1,500 pupils passed reading, and in District B, 1,050 of 1,400 did. The state report says: 'More third graders in District A passed reading than in District B: 80 in 100 against 75 in 100.'",
+    text: "A state compares two school districts on the same state test, which every third grader in both took in the same week. The two districts serve a similar mix of family incomes. In District A, 1,200 of 1,500 students passed reading, and in District B, 1,050 of 1,400 did. The state report says: 'More third graders in District A passed reading than in District B: 80 in 100 against 75 in 100.'",
     outcome: 'comp_ok', route: { S1: ['holds'], H1: ['difference'] },
     cues: { S1: ['every third grader in both took in the same week', 'serve a similar mix of family incomes'], H1: 'More third graders in District A passed reading than in District B: 80 in 100 against 75 in 100' },
     reason: { H1: 'The claim is {cue:H1}. It sets two districts side by side, with the numbers behind each: 1,200 ÷ 1,500 = 0.80 and 1,050 ÷ 1,400 = 0.75. It says which has more passing and stops.' },

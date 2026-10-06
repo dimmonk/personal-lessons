@@ -10,7 +10,7 @@
 
 FC.unit('math', 'u5', {
   kind: 'P',
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Five',
@@ -95,7 +95,8 @@ FC.unit('math', 'u5', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the counting and chance unit of Basic Math, replacing the old Unit Five (four cards and the counting drill), specimens 10 to 12 and three faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Five kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the drill has a last-step stage, a whole-problem stage and a route stage. Three wrong ideas are refuted: the name of a lock, the run that is due, and the accurate test.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

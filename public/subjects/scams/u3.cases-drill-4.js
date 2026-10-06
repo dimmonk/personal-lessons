@@ -12,7 +12,7 @@ FC.cases('scams', 'u3', [
   { id: 'rev-realsignin', use: 'drill', kind: 'reverse', outcome: 'realsignin', expect: 'find',
     options: [
       { text: 'He had typed the company\'s address himself, and the page asked for a password and nothing more.', voice: 'realsignin' },
-      { text: 'A caller who had phoned her asked her to read out the six digits that had just come to her phone.', voice: 'codescam' },
+      { text: 'A caller who had called her asked her to read out the six digits that had just come to her phone.', voice: 'codescam' },
       { text: 'A text with a link opened a page that asked for her password.', voice: 'phishing' },
       { text: 'A permission screen from an app she had never heard of asked to read, send and delete all her email.', voice: 'appscam' }
     ],
@@ -39,7 +39,7 @@ FC.cases('scams', 'u3', [
   { id: 'rev-appscam', use: 'drill', kind: 'reverse', outcome: 'appscam', expect: 'find',
     options: [
       { text: 'A copied page with her bank\'s logo asked for her password.', voice: 'phishing' },
-      { text: 'A man rang and asked her to read out the digits of a code.', voice: 'codescam' },
+      { text: 'A man called and asked her to read out the digits of a code.', voice: 'codescam' },
       { text: 'The permission screen listed what the app may do: read, send and delete all her email, for a job that needed a photo.', voice: 'appscam' },
       { text: 'The page asked for a username and password, and she had typed its address from her bill.', voice: 'realsignin' }
     ],
@@ -60,10 +60,10 @@ FC.cases('scams', 'u3', [
 
   { id: 'cl-thread', use: 'claim',
     text: '"The text asking for my code came in the same conversation as my bank\'s real texts, so it was real."',
-    context: 'Someone said this after reading a code out to a caller who had phoned her.',
+    context: 'Someone said this after reading a code out to a caller who had called her.',
     ask: { type: 'option', step: 'A2', answer: 'notfit' },
-    fault: 'Where a message sits shows only what the sender chose to show. A text can be sent so that it appears under the bank\'s name and goes into the same conversation as the real ones. What the question looks at is whether she started it, and she did not: a caller rang her, and the code was asked for by him.',
-    corrected: 'The text asking for my code sat in the same conversation as my bank\'s real texts. That tells me nothing, because a text can be sent to appear there. A caller rang me and I started nothing, so the answer is {a:A2.notfit}, and I should not read the code out.' },
+    fault: 'Where a message sits shows only what the sender chose to show. A text can be sent so that it appears under the bank\'s name and goes into the same conversation as the real ones. What the question looks at is whether she started it, and she did not: a caller called her, and the code was asked for by him.',
+    corrected: 'The text asking for my code sat in the same conversation as my bank\'s real texts. That tells me nothing, because a text can be sent to appear there. A caller called me and I started nothing, so the answer is {a:A2.notfit}, and I should not read the code out.' },
 
   { id: 'cl-allow', use: 'claim',
     text: '"It was a real permission screen from my email provider, so it can\'t be an app permission scam."',
@@ -73,7 +73,7 @@ FC.cases('scams', 'u3', [
 
   { id: 'cl-reset', use: 'claim',
     text: '"Any email with a link that asks me to choose a new password is phishing. I never touch them."',
-    context: 'Joss said this an hour after he had tapped Forgot password on a shop\'s own website, which he had opened himself.',
+    context: 'Joss said this an hour after he had tapped Forgot password on a store\'s own website, which he had opened himself.',
     ask: { type: 'option', step: 'A2', answer: 'fits' },
     fault: 'The claim looks at the link in the email and stops there. A link in an email cannot be what decides it: a real reset arrives after you ask for it, and a copy arrives on its own. Joss had tapped "Forgot password" himself an hour earlier, so the email answered something he did, and the answer is {a:A2.fits}.',
     corrected: 'An email with a link that asks me to choose a new password is one to be careful with. If I tapped Forgot password on the real site a minute ago, the email is the answer to that and it is real. If I did not, I should not use the link.' }

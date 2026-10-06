@@ -10,10 +10,10 @@ FC.cases('math', 'u6', [
     use: 'check',
     tier: 'clean',
     setting: 'home',
-    topic: 'a tin of paint',
+    topic: 'a can of paint',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A tin of paint 15 cm tall holds 1 litre. A second tin of exactly the same shape is 30 cm tall. How much paint does the second tin hold?',
+    text: 'A can of paint 15 cm tall holds 1 liter. A second can of exactly the same shape is 30 cm tall. How much paint does the second can hold?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     steps: [
       {
@@ -22,7 +22,7 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Decide whether the problem asks about area or about volume',
-        working: 'Paint in a tin fills a solid, so the problem asks about volume'
+        working: 'Paint in a can fills a solid, so the problem asks about volume'
       },
       {
         does: 'Multiply that number of times by itself, with three of them in the product for a volume',
@@ -30,20 +30,20 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '1 litres × 8 = 8 litres'
+        working: '1 liters × 8 = 8 liters'
       }
     ],
     answer: {
       choices: [
-        { id: 'r', text: '8 litres' },
+        { id: 'r', text: '8 liters' },
         {
           id: 's1',
-          text: '2 litres',
+          text: '2 liters',
           slip: 'you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.'
         },
         {
           id: 's2',
-          text: '4 litres',
+          text: '4 liters',
           slip: 'you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.'
         }
       ],
@@ -138,7 +138,7 @@ FC.cases('math', 'u6', [
     setting: 'travel',
     topic: 'a lighthouse lamp',
     outcome: 'trig',
-    text: 'A harbour pilot stands on level ground 80 m from the foot of a lighthouse and sees its lamp at an angle of 25° above level ground. How high is the lamp?',
+    text: 'A harbor pilot stands on level ground 80 m from the foot of a lighthouse and sees its lamp at an angle of 25° above level ground. How high is the lamp?',
     route: { M1: ['shape'], S1: ['sideangle'], S2: ['length'] },
     cues: {
       M1: 'stands on level ground 80 m from the foot of a lighthouse and sees its lamp at an angle of 25° above level ground',
@@ -154,7 +154,7 @@ FC.cases('math', 'u6', [
     setting: 'travel',
     topic: 'a postcard of a lighthouse',
     outcome: 'similar',
-    text: 'A harbour pilot has a postcard of a lighthouse, an exact copy of it. On the postcard the lighthouse is 12 cm tall and its door is 0.5 cm tall. The real door is 2 m tall. How tall is the real lighthouse?',
+    text: 'A harbor pilot has a postcard of a lighthouse, an exact copy of it. On the postcard the lighthouse is 12 cm tall and its door is 0.5 cm tall. The real door is 2 m tall. How tall is the real lighthouse?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
       M1: ['has a postcard of a lighthouse, an exact copy of it', 'The real door is 2 m tall'],

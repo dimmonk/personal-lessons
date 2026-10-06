@@ -1,6 +1,6 @@
 // Civics, Unit Four: drill cases for stage four, the ones whose story points the wrong way. Each is built to bring back
 // a named teaching case of a different name (echo): the feedback says so, which is how the "does it look like a case
-// you know?" second look is practised. wouldChange says what would make the case a different name.
+// you know?" second look is practiced. wouldChange says what would make the case a different name.
 
 FC.cases('civics', 'u4', [
 
@@ -24,7 +24,7 @@ FC.cases('civics', 'u4', [
     wouldChange: 'If the order had told every private company in the country to train its workers, and no law required that, the case would be a demand with no law behind it.' },
 
   { id: 'e-r-homecoming', use: 'drill', tier: 'misleading', setting: 'world', topic: 'soldiers brought home after an ally’s visit', echo: 'e-coasttalks',
-    text: "The President and the leader of an allied country walked together past a guard of honour on Monday, and the leader thanked the President for the help. That afternoon the President ordered the three hundred soldiers who had been training in the ally’s country to come home on Friday.",
+    text: "The President and the leader of an allied country walked together past a guard of honor on Monday, and the leader thanked the President for the help. That afternoon the President ordered the three hundred soldiers who had been training in the ally’s country to come home on Friday.",
     outcome: 'commander', route: { D1: ['president'], E1: ['military'] },
     cues: { D1: 'the President ordered the three hundred soldiers who had been training in the ally’s country to come home on Friday', E1: 'the President ordered the three hundred soldiers who had been training in the ally’s country to come home' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. The ceremony with the ally’s leader came earlier in the day.',

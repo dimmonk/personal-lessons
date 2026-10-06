@@ -5,7 +5,7 @@
 
 FC.unit('ideology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -161,7 +161,8 @@ FC.unit('ideology', 'u2', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the first answer of the gate. Two questions and seven names, one bakery as the lens, seventeen look-alike pairs. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild
     // (public/subjects/ideology/standard0.js); the full table is docs/rebuild/ideology-plan.md, part a.
@@ -180,7 +181,7 @@ FC.unit('ideology', 'u2', {
         why: 'V1: no en dash. K2.4: a party ruling alone is something a text says.' },
       { outcome: 'mktsoc', was: 'could not be told from three other names', now: 'one answer of its own: workers own, and the businesses compete',
         why: 'K2.2: it is defined by firms that compete.' },
-      { outcome: 'marx', was: 'kept by "The text does not say" and recognised by a check', now: 'an answer of its own: the text explains how owners gain; it yields to any plan',
+      { outcome: 'marx', was: 'kept by "The text does not say" and recognized by a check', now: 'an answer of its own: the text explains how owners gain; it yields to any plan',
         why: 'K2.2: what decides it is now an answer the learner gives.' },
       { outcome: 'socdem', was: '"Private owners, with the state evening things out"', now: '"Their owners keep them, and taxes and public services even out what people get"',
         why: 'Audit U1 item 5: the old wording made "Business will continue to be privately owned" answer literally to an option that left no name.' },

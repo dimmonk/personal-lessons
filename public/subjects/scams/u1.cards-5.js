@@ -7,7 +7,7 @@ FC.cards('scams', 'u1', [
     link: 'Four kinds so far. The last kind asks for none of those things. It asks you to tell them something about yourself.',
     case: 'g-flat-form', mark: 'D1',
     strip: [
-      'There is one person, Tomas, and one form, on the letting agent’s own website.',
+      'There is one person, Tomas, and one form, on the rental agent’s own website.',
       'The form asks for facts about him: his full name, his date of birth and his current address.',
       'It asks him for nothing else: no payment, no password, no program to install.',
       'What is asked is for him to tell them about himself.'
@@ -27,7 +27,7 @@ FC.cards('scams', 'u1', [
     link: 'The last card gave you what to point to for {a:D1.details}, from one case: {needs:details}. Here is a second case with a different story. This one is a friendly text, and nothing about it seems to ask for anything.',
     first: 'g-flat-form', second: 'g-wrong-number', step: 'D1',
     instruction: 'Find what the two cases share. Ignore the story (a rental form, a text to the wrong number) and ignore how friendly the second one is. Look at one thing only: which words ask the person to tell something about themselves?',
-    prompt: { kind: 'phrase', answer: 'What do you do for work? Do you live near London?' },
+    prompt: { kind: 'phrase', answer: 'What do you do for work? Do you live near Chicago?' },
     shared: [
       'Both messages ask the person to tell something about themselves. The form asks for a name, a date of birth and an address. The text asks about work and where Sam lives. One is formal and one is friendly, and the facts it asks for are of a different sort.',
       'The friendly text may look as if it asks for nothing, because it asks no money and no password. But questions about your work and your home are requests for facts about you, and they count. That is what {a:D1.details} names.'
@@ -53,15 +53,15 @@ FC.cards('scams', 'u1', [
   { id: 'check-details', kind: 'check', after: 'details',
     case: 'g-recruiter',
     ask: { type: 'phrase', step: 'D1', say: 'Which words ask Fern to tell the sender about herself? Tap them.',
-           answer: 'Please send a photo of your passport and your National Insurance number' } },
+           answer: 'Please send a photo of your passport and your Social Security number' } },
 
   { id: 'look-money-details', kind: 'lookalike', ledger: 'money~details',
     link: 'You have met all five kinds. The last pair to compare is money and facts about you. A request for your card number can feel like a request to pay, and the two are easy to mix up.',
     cases: ['g-sim-fee', 'g-sim-details'],
-    instruction: 'Both cases are about Joel’s mobile phone SIM, which will be switched off tomorrow. Compare one thing: is he asked to pay, or to confirm facts about himself?',
+    instruction: 'Both cases are about Joel’s cell phone SIM, which will be switched off tomorrow. Compare one thing: is he asked to pay, or to confirm facts about himself?',
     prompt: { kind: 'which', option: 'D1.money', answer: 'g-sim-fee' },
     difference: [
-      'In Case A the text tells Joel to pay a fee of £1.99 at an address to keep his number. He is asked to send money. The answer is {a:D1.money}.',
+      'In Case A the text tells Joel to pay a fee of $1.99 at an address to keep his number. He is asked to send money. The answer is {a:D1.money}.',
       'In Case B the text tells him to confirm his full name, his date of birth and his card number at the same address, and says that nothing will be charged. He is asked to tell them about himself: facts that identify him, including a card number. He is not asked to pay. The answer is {a:D1.details}.',
       'A card number can be used to take money, so Case B may end up costing him money all the same. But the first question asks what he is asked to do right now. In Case B that is to tell them about himself, and it is that request which the question is about.'
     ] },
@@ -74,7 +74,7 @@ FC.cards('scams', 'u1', [
     right: [
       'A scam is not a test of how carefully you read. It is built to arrive when it fits your week: a bill you are expecting, a delivery you are waiting for, a boss who really is in a meeting. Careful people are caught as often as anyone, and often because they were sure that they would not be, so they stopped looking at what they were being asked to do.',
       'What protects you is not how clever you feel. It is a habit that does not depend on feeling clever: find what the message asks, using {q:D1}, and when it asks for something, use {t:check} instead of deciding on the spot whether it is real.',
-      'It is also a habit that works for the real messages. A real bank does not mind being called on the number on your card.'
+      'It is also a habit that works for the real messages. A real bank does not mind being called at the number on your card.'
     ],
     testedBy: ['g-claim-careful'] }
 ]);

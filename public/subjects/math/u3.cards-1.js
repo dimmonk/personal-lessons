@@ -18,7 +18,7 @@ FC.cards('math', 'u3', [
       'Unit One’s first question gave the same answer to all four: {a:M1.unknown}. But they are four different ways of being given something that the missing number must fit, and each has its own procedure. A procedure for the wrong one still gives a number, and nothing in the number says that it is wrong. So the order is the same as in the last unit: first look at what the problem hands you for the missing number to match, and only then solve it.'
     ],
     add: [
-      'The words from the last unit hold here. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, named by what it is for. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why.',
+      'The words from the last unit hold here. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, named by what it is for. The arithmetic can be done on a calculator: what this unit practices is which steps to take, and why.',
       'The four kinds are taught in the order of what they give: a calculation and the result it came to, a rate, two facts, and a calculation that has the missing number in it twice. Each is taught as in the last unit: first a problem of the kind and the idea behind its procedure, then two worked problems in different parts of life with every step computed, and then problems that you finish yourself. Two of the kinds can pass for another, and a card for each shows how. When all four have been taught, the question gets its own card, and then the drill mixes all four, with problems from the earlier units among them.'
     ],
     map: { branch: 'unknown' } },
@@ -45,7 +45,7 @@ FC.cards('math', 'u3', [
     link: 'The fence gave you what to point to: {needs:rearr}. Here is a second problem with a different story, wool for a scarf instead of a fence.',
     first: 'm3-meet-rearr', second: 'm3-again-rearr', step: 'A1',
     instruction: 'Find what the two problems share. Ignore the story (a fence, a scarf) and ignore the numbers. Look at one thing only: which words give the calculation that was done?',
-    prompt: { kind: 'phrase', answer: 'multiply its length in metres by 3, then add 1 ball for the fringe' },
+    prompt: { kind: 'phrase', answer: 'multiply its length in meters by 3, then add 1 ball for the fringe' },
     shared: [
       'Both problems describe a calculation in words, “add the length and width, then double” and “multiply by 3, then add 1”, and give the result it came to, 38 m of fence and 7 balls of wool. In both, one number that the calculation used is left out, and it is used once, so each thing done to it can be undone.',
       'That is all you point to, and it is why one name covers a fencing firm and a knitter. The story differs. What is given is the same.'
@@ -74,7 +74,7 @@ FC.cards('math', 'u3', [
       'So much for so many, with a new amount to scale it to, is a different kind: there is no calculation whose result has to be undone. You will meet that pair side by side in this unit. A fixed charge added on top of a price for each thing is a calculation, though, and does belong here.',
       'Two missing numbers are not this kind. When a problem leaves out two numbers and gives two facts about them, no single calculation can simply be undone. And a missing number that is multiplied by itself, as well as used on its own, cannot be undone one thing at a time.'
     ],
-    wild: ['"I paid €54 after the discount. What was the price before?"', '"The recipe says multiply by 3 and add 1. I got 7. What did I start with?"', '"The average has to be 13, so what must my last score be?"', '"They charged me €38 in all, including the standing charge. How many units was that?"'],
+    wild: ['"I paid $54 after the discount. What was the price before?"', '"The recipe says multiply by 3 and add 1. I got 7. What did I start with?"', '"The average has to be 13, so what must my last score be?"', '"They charged me $38 in all, including the standing charge. How many units was that?"'],
     self: 'In your own life you meet this when you know a final price and want the price before a discount or tax, when you know the average you need and want the score still to come, and whenever someone tells you what a calculation came to and you want to know what went into it.',
     ask: '"Is something worked out by a rule, is the result given, and is one of the numbers the rule used left out?" If you can say yes, you are probably looking at this kind.' },
 

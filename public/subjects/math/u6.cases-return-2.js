@@ -187,15 +187,15 @@ FC.cases('math', 'u6', [
     use: 'return',
     tier: 'clean',
     setting: 'travel',
-    topic: 'a model lorry',
+    topic: 'a model truck',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A model of a lorry is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the lorry. The model is 28 cm long. How long is the real lorry, in metres?',
+    text: 'A model of a truck is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the truck. The model is 28 cm long. How long is the real truck, in meters?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
-      M1: 'How long is the real lorry, in metres?',
-      S1: 'A model of a lorry is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the lorry. The model is 28 cm long',
-      S2: 'How long is the real lorry, in metres?'
+      M1: 'How long is the real truck, in meters?',
+      S1: 'A model of a truck is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the truck. The model is 28 cm long',
+      S2: 'How long is the real truck, in meters?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
@@ -209,7 +209,7 @@ FC.cases('math', 'u6', [
     steps: [
       {
         does: 'Find a part that is measured on both things',
-        working: 'The scale is 1 to 25, so 1 cm on the model stands for 25 cm on the lorry. So the length the scale compares is 1 cm on the model and 25 cm on the real lorry. The part you want, the length of the lorry, is measured on the model only: 28 cm'
+        working: 'The scale is 1 to 25, so 1 cm on the model stands for 25 cm on the truck. So the length the scale compares is 1 cm on the model and 25 cm on the real truck. The part you want, the length of the truck, is measured on the model only: 28 cm'
       },
       {
         does: 'Find how many times longer the bigger thing is than the smaller one',

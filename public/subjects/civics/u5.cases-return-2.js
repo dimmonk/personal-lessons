@@ -12,7 +12,7 @@ FC.cases('civics', 'u5', [
     not: { outcome: 'review', why: 'Nobody says a rule takes away a right, so there is nothing in the Constitution to check the start time against.' } },
 
   { id: 'ret-notlegal-2', use: 'return', tier: 'varied', setting: 'immigration', topic: 'a council agenda in three languages',
-    text: 'A group of residents in Eastvale ask a judge to order the council to publish its agenda in three languages, saying that it would help new neighbours follow what the council does. No law requires the council to do so, and nobody says that publishing in one language takes away a right.',
+    text: 'A group of residents in Eastvale ask a judge to order the council to publish its agenda in three languages, saying that it would help new neighbors follow what the council does. No law requires the council to do so, and nobody says that publishing in one language takes away a right.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'ask a judge to order the council', J1: 'No law requires the council to do so, and nobody says that publishing in one language takes away a right' },
     reason: { D1: 'The residents have gone to a judge: {cue:D1}.',
@@ -20,10 +20,10 @@ FC.cases('civics', 'u5', [
     not: { outcome: 'interpret', why: 'There is no law whose words the judge could read to answer. The residents want the judge to choose.' } },
 
   { id: 'ret-notlegal-3', use: 'return', tier: 'varied', setting: 'community', topic: 'a speed bump on a road',
-    text: 'Neighbours ask a judge to order the city to put a speed bump on Linden Road, saying that it would be safer. No law requires a speed bump there, and nobody says that not having one takes away a right.',
+    text: 'Neighbors ask a judge to order the city to put a speed bump on Linden Road, saying that it would be safer. No law requires a speed bump there, and nobody says that not having one takes away a right.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'ask a judge to order the city', J1: 'No law requires a speed bump there, and nobody says that not having one takes away a right' },
-    reason: { D1: 'The neighbours have gone to a judge: {cue:D1}.',
+    reason: { D1: 'The neighbors have gone to a judge: {cue:D1}.',
               J1: 'They ask the judge to choose what would be safer, and nothing settles it: {cue:J1}.' },
     not: { outcome: 'review', why: 'Nobody has been harmed by a rule and nobody points to a right that is taken away.' } },
 

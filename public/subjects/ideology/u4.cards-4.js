@@ -19,7 +19,7 @@ FC.cards('ideology', 'u4', [
         reason: 'The club is still paying out, so nothing the text names has gone, and it asks for nothing to be brought back. What it asks for is {cue:T1}: the club kept as it is, and any change slow and with the members asked.' }
     ],
     hold: {
-      neighbour: 'react',
+      neighbor: 'react',
       prompt: { kind: 'reason',
         lead: 'The notice says that the club once paid for a headstone too, and now it does not. So the case can look like a text about something that has gone.',
         choices: [
@@ -60,7 +60,7 @@ FC.cards('ideology', 'u4', [
         ] }
     ],
     hold: {
-      neighbour: 'conserv',
+      neighbor: 'conserv',
       prompt: { kind: 'reason',
         lead: 'The petition is gentle and patient, and it says it will wait however many years it takes. So the case can look like a text that only asks for slow change.',
         choices: [

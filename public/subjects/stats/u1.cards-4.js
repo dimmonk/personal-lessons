@@ -7,15 +7,15 @@ FC.cards('stats', 'u1', [
     link: 'Three parts are checked so far: who or what the figure was worked out from, what it counts, and what it is set beside. Many claims stop there. Some take one more step, from "these go together" to "this made that happen".',
     case: 'gate-music', mark: 'S1',
     strip: [
-      'There are two groups and a figure for each: the 120 pupils who take the music class average 71 on the math exam, and the 380 who do not average 62.',
-      'The first three parts hold. All of the pupils took the same exam, the numbers are given for both groups, and nothing is left out.',
+      'There are two groups and a figure for each: the 120 students who take the music class average 71 on the math exam, and the 380 who do not average 62.',
+      'The first three parts hold. All of the students took the same exam, the numbers are given for both groups, and nothing is left out.',
       'Then the claim takes a step further: it says the music lessons raised the scores. That is a claim of cause.',
-      'And the case shows another way to explain the same result: nearly all of the music pupils’ families also pay for extra math coaching.'
+      'And the case shows another way to explain the same result: nearly all of the music students’ families also pay for extra math coaching.'
     ],
     explain: [
-      'Take the parts in order. The pupils in the figures are all the pupils who sat the exam, so nobody is left out and nobody is missing. What is counted is a score on one exam, the same for everyone. The two averages are given with their numbers and set side by side. So the first three parts hold, and you go on to the fourth.',
-      'The fourth part is a step that claims often make without saying so. Two things go together in the figures: the pupils who take music have higher scores. The claim then says that one made the other happen: the lessons raised the scores. That is a bigger claim than the figures, and the figures alone cannot carry it. Two things can go together without one making the other happen.',
-      'To see whether the claim is safe, look for another explanation of the same figures. Here the case itself tells you: nearly all of the music pupils’ families also pay for extra math coaching. That alone could lift their scores, whether or not anyone ever took a music class. The figures would look exactly the same.',
+      'Take the parts in order. The students in the figures are all the students who took the exam, so nobody is left out and nobody is missing. What is counted is a score on one exam, the same for everyone. The two averages are given with their numbers and set side by side. So the first three parts hold, and you go on to the fourth.',
+      'The fourth part is a step that claims often make without saying so. Two things go together in the figures: the students who take music have higher scores. The claim then says that one made the other happen: the lessons raised the scores. That is a bigger claim than the figures, and the figures alone cannot carry it. Two things can go together without one making the other happen.',
+      'To see whether the claim is safe, look for another explanation of the same figures. Here the case itself tells you: nearly all of the music students’ families also pay for extra math coaching. That alone could lift their scores, whether or not anyone ever took a music class. The figures would look exactly the same.',
       'This part is last for a reason. A claim of cause is built on the figures, so it can only be as sound as they are. When every earlier part holds and the claim still goes on to say that one thing caused another, put one question to it: is there another way to explain the same result? If there is, and the case shows it, this is the answer.'
     ],
     feature: { step: 'S1', option: 'cause' },
@@ -38,7 +38,7 @@ FC.cards('stats', 'u1', [
   { id: 'portrait-cause', kind: 'portrait', family: 'cause',
     link: 'You know what to point to. This card fills in the rest of the picture of {a:S1.cause}, so that you can spot it where nobody marks the words for you.',
     typical: [
-      'Two things go together in the figures: pupils who take music score higher, people who take vitamins catch fewer colds, towns with more police have more crime.',
+      'Two things go together in the figures: students who take music score higher, people who take vitamins catch fewer colds, towns with more police have more crime.',
       'The claim then goes a step past the figures and says that one of them made the other happen. Words like "raise", "protect", "works", "because", "led to" and "so" carry the step.',
       'The earlier parts hold. The people counted are a fair picture, the figure counts what it says it counts, and it is set beside something fair. If they were not, you would have stopped at an earlier part.',
       'There is another way to explain the same result, either in the account or one you can name: something else that the two groups differ in, the result leading to the thing and not the thing to the result, a group picked when it was at its worst, or no group to compare with at all.',
@@ -64,7 +64,7 @@ FC.cards('stats', 'u1', [
     prompt: { kind: 'which', option: 'S1.cause', answer: 'gate-mentor-groups' },
     difference: [
       'In Case A the figure is "50% more likely to graduate", with no word on how many graduate with the program or without it. Nothing has yet been said about a cause. The trouble is what the figure is set beside. The answer is {a:S1.compare}.',
-      'In Case B the numbers are all there: 90 of 100 and 60 of 100. Nothing is hidden. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that pupils who ask to join are the ones already doing well. The answer is {a:S1.cause}.',
+      'In Case B the numbers are all there: 90 of 100 and 60 of 100. Nothing is hidden. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that students who ask to join are the ones already doing well. The answer is {a:S1.cause}.',
       'The program and the claim are the same in both. In Case A the figure needs its numbers. In Case B the figure has its numbers and the claim goes past them.'
     ] },
 

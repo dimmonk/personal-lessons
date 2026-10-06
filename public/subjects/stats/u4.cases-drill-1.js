@@ -39,13 +39,13 @@ FC.cases('stats', 'u4', [
 
   /* ---------- Group two: a shorter list of who is absent, more auditors, a step challenge ---------- */
   { id: 'm4-nm-absence', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a school that marks only whole-morning absences',
-    text: "A school reports: 'Absences fell from 8% of pupil-mornings to 5% this year.' Until last year a pupil who arrived more than 10 minutes after the bell was marked absent for that morning. This year a pupil is marked absent only if they miss the whole morning. In both years, out of every 1,000 pupil-mornings, pupils missed the whole morning in 50 and arrived more than 10 minutes late in 30.",
+    text: "A school reports: 'Absences fell from 8% of student-mornings to 5% this year.' Until last year a student who arrived more than 10 minutes after the bell was marked absent for that morning. This year a student is marked absent only if they miss the whole morning. In both years, out of every 1,000 student-mornings, students missed the whole morning in 50 and arrived more than 10 minutes late in 30.",
     outcome: 'defshift', route: { S1: ['measure'], M1: ['newrule'] },
-    cues: { S1: "Until last year a pupil who arrived more than 10 minutes after the bell was marked absent for that morning. This year a pupil is marked absent only if they miss the whole morning",
-            M1: "Until last year a pupil who arrived more than 10 minutes after the bell was marked absent for that morning. This year a pupil is marked absent only if they miss the whole morning" },
+    cues: { S1: "Until last year a student who arrived more than 10 minutes after the bell was marked absent for that morning. This year a student is marked absent only if they miss the whole morning",
+            M1: "Until last year a student who arrived more than 10 minutes after the bell was marked absent for that morning. This year a student is marked absent only if they miss the whole morning" },
     reason: { S1: 'The figure fell with nobody coming to school more: {cue:S1}. Counted last year’s way, this year is 50 + 30 = 80 in every 1,000, which is 8%; counted this year’s way, last year was 50 in every 1,000, which is 5%.',
-              M1: 'What counts as absent changed: {cue:M1}. The pupils did the same in both years, and only the definition moved the figure from 8% to 5%.' },
-    not: { outcome: 'detection', why: 'No more effort went into finding absent pupils. The pupils who arrive late were found both years; they stopped being counted as absent.' } },
+              M1: 'What counts as absent changed: {cue:M1}. The students did the same in both years, and only the definition moved the figure from 8% to 5%.' },
+    not: { outcome: 'detection', why: 'No more effort went into finding absent students. The students who arrive late were found both years; they stopped being counted as absent.' } },
 
   { id: 'm4-nm-audit', use: 'drill', tier: 'clean', setting: 'money', topic: 'a tax office and a larger staff of auditors',
     text: "A tax office announces: 'Tax returns found to hide income rose from 560 to 700 this year. Small-business owners are cheating more.' The office hired 100 more auditors, and audited 5,000 returns this year, up from 4,000. The returns are chosen the same way and the standard for hiding income did not change. That is 14 found in every 100 audited in both years.",

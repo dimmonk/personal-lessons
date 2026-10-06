@@ -35,7 +35,7 @@ FC.cases('math', 'u3', [
     topic: 'profit and break-even',
     name: 'The break-even point',
     outcome: 'quad',
-    text: 'A stall owner works out her profit, in tens of euros, from selling n crates of plums as 12 × n − n × n − 20. How many crates must she sell to just break even, with a profit of zero?',
+    text: 'A stall owner works out her profit, in tens of dollars, from selling n crates of plums as 12 × n − n × n − 20. How many crates must she sell to just break even, with a profit of zero?',
     route: { M1: ['unknown'], A1: ['itself'] },
     cues: {
       M1: ['12 × n − n × n − 20', 'How many crates must she sell to just break even'],
@@ -44,7 +44,7 @@ FC.cases('math', 'u3', [
     also: ['formula'],
     segments: [
       {
-        text: 'A stall owner works out her profit, in tens of euros, from selling n crates of plums as 12 × n − n × n − 20.'
+        text: 'A stall owner works out her profit, in tens of dollars, from selling n crates of plums as 12 × n − n × n − 20.'
       },
       {
         text: 'How many crates must she sell to just break even, with a profit of zero?',

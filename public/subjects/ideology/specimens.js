@@ -178,7 +178,7 @@ FC.specimens('ideology', [
     wouldChange: 'If the text asked only that the church and the customs that remain be kept, with change made slowly, it would be {o:conserv}.' },
 
   { id: 'sp-market-charter', tier: 'clean', setting: 'town', topic: 'a market charter read on the green',
-    text: "From the parish magazine of Hollin: “Each spring we read the market charter aloud on the green, as people here have done for centuries. The custom is worth keeping, and so are the church and the school beside the green. Some changes will come, and they should come slowly, one at a time, so that nobody is cut off from what was handed down.”",
+    text: "From the parish newsletter of Hollin: “Each spring we read the market charter aloud on the green, as people here have done for centuries. The custom is worth keeping, and so are the church and the school beside the green. Some changes will come, and they should come slowly, one at a time, so that nobody is cut off from what was handed down.”",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'as people here have done for centuries. The custom is worth keeping',
             T1: 'Some changes will come, and they should come slowly, one at a time' },
@@ -194,7 +194,7 @@ FC.specimens('ideology', [
             R1: 'enforce contracts, defend the borders, and otherwise leave people alone' },
     reason: { D1: 'The text puts first each person’s freedom to trade: {cue:D1}. “Defend the borders” is one of the government’s few jobs here, not a people put first.',
               R1: 'The government is kept to a few jobs and told to leave people alone: {cue:R1}. Nothing is asked of it beyond that.' },
-    not: { outcome: 'modlib', why: '{o:modlib} also puts each person’s rights first. But it asks the government to give everyone a fair start as well, and this text asks for nothing more than courts and defence.' },
+    not: { outcome: 'modlib', why: '{o:modlib} also puts each person’s rights first. But it asks the government to give everyone a fair start as well, and this text asks for nothing more than courts and defense.' },
     wouldChange: 'If the text added that the government should pay for schooling and health care for everyone, it would be {o:modlib}.' },
 
   { id: 'sp-care-at-home', tier: 'clean', setting: 'health', topic: 'care at home for a long illness',
@@ -208,23 +208,23 @@ FC.specimens('ideology', [
     wouldChange: 'If the text asked only for rights to be protected and the government to do no more, it would be {o:clib}. If it named employers who pay too little and stood with the workers, it would be {o:socdem}.' },
 
   { id: 'sp-barriers', tier: 'clean', setting: 'work', topic: 'barriers rooted in identity',
-    text: "Structural barriers rooted in race, gender and other identity categories continue to produce unequal outcomes even when formal legal equality exists. True justice requires that institutions actively identify and dismantle those barriers, and that resources and opportunities be shared out until outcomes are equitable. Colour-blindness and formal equality are not enough; they preserve the status quo.",
+    text: "Structural barriers rooted in race, gender and other identity categories continue to produce unequal outcomes even when formal legal equality exists. True justice requires that institutions actively identify and dismantle those barriers, and that resources and opportunities be shared out until outcomes are equitable. Color-blindness and formal equality are not enough; they preserve the status quo.",
     outcome: 'idegal', also: ['start'], route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'True justice requires that institutions actively identify and dismantle those barriers',
-            R1: ['Colour-blindness and formal equality are not enough', 'resources and opportunities be shared out until outcomes are equitable'] },
+            R1: ['Color-blindness and formal equality are not enough', 'resources and opportunities be shared out until outcomes are equitable'] },
     reason: { D1: 'The text says what every group is owed, and none is placed above another: {cue:D1}.',
               R1: 'Rules that treat everyone alike are said to leave groups behind, and the text wants them changed until results are fair across groups: {cue:R1}. The text also asks for resources to be shared out. A fair start for everyone is one answer, and rules changed for groups left behind is another. When a text shows both, the answer is {a:R1.rules}.' },
     not: { outcome: 'modlib', why: '{o:modlib} also asks the government to give everyone a fair start. But it blames no rule. This text names rules that treat everyone alike as the cause of groups being left behind.' },
     wouldChange: 'If the text said the root of the problem is owners against workers, the first answer would be {a:D1.class}. If it said formal equality is enough, it would be {o:clib}.' },
 
   /* ---------- Varied: the same names in other clothes ---------- */
-  { id: 'sp-minimum-wage', tier: 'varied', setting: 'money', topic: 'a programme with a wage floor and free university',
+  { id: 'sp-minimum-wage', tier: 'varied', setting: 'money', topic: 'a program with a wage floor and free university',
     text: "We propose, for people who work for a wage, a national minimum wage, union bargaining with employers sector by sector, twelve months’ parental leave and free university. Business will continue to be privately owned, and we will keep the budget balanced.",
     outcome: 'socdem', also: ['rights'], route: { D1: ['class'], C1: ['keep'], C2: ['none'] },
     cues: { D1: ['for people who work for a wage', 'union bargaining with employers sector by sector'],
             C1: ['a national minimum wage', 'Business will continue to be privately owned'],
             C2: 'we will keep the budget balanced' },
-    reason: { D1: 'The programme is for wage earners, and it is set against the employers they bargain with: {cue:D1}. “National” only means countrywide. Free university is also something owed to everyone, which shows the answer {a:D1.rights}. When a case shows both, the answer is {a:D1.class}.',
+    reason: { D1: 'The program is for wage earners, and it is set against the employers they bargain with: {cue:D1}. “National” only means countrywide. Free university is also something owed to everyone, which shows the answer {a:D1.rights}. When a case shows both, the answer is {a:D1.class}.',
               C1: 'The businesses stay with their owners, and a pay floor is asked for to even out the result: {cue:C1}.',
               C2: 'The text says it will keep the budget balanced, and is silent on power and on the government itself: {cue:C2}.' },
     not: { outcome: 'modlib', why: '{o:modlib} also asks for free university and leave. But it speaks for every person alike and names no employers. This text names wage earners and the employers they bargain with.' },
@@ -302,11 +302,11 @@ FC.specimens('ideology', [
 
   /* ---------- Misleading: a feature that points one way, an answer that points another ---------- */
   { id: 'sp-yard-committee', tier: 'misleading', setting: 'work', topic: 'a yard committee that loves its country',
-    text: "From a speech by the Garrow rail-yard workers’ committee: “We love this country, and every one of us would defend it. But the yard’s owners take the profit and we take the injuries, and we stand with the workers. Sign the pledge sheet by the gate and bring your neighbours.”",
+    text: "From a speech by the Garrow rail-yard workers’ committee: “We love this country, and every one of us would defend it. But the yard’s owners take the profit and we take the injuries, and we stand with the workers. Sign the pledge sheet by the gate and bring your neighbors.”",
     outcome: 'classonly', also: ['nation'], route: { D1: ['class'], C1: ['none'], C2: ['none'] },
     cues: { D1: ['the yard’s owners take the profit and we take the injuries, and we stand with the workers', 'We love this country, and every one of us would defend it'],
-            C1: 'Sign the pledge sheet by the gate and bring your neighbours',
-            C2: 'Sign the pledge sheet by the gate and bring your neighbours' },
+            C1: 'Sign the pledge sheet by the gate and bring your neighbors',
+            C2: 'Sign the pledge sheet by the gate and bring your neighbors' },
     reason: { D1: 'The text sets the yard’s workers against its owners and stands with the workers: {cue:D1}. Its love of the country is also there, which shows the answer {a:D1.nation}. When a case shows both, the answer is {a:D1.class}.',
               C1: 'The text has only an invitation where a plan would be: {cue:C1}. It says nothing about who should own the yard, about taxes or services, or about how owners gain.',
               C2: 'The invitation is all it offers: {cue:C2}. It says nothing about how power is won or held, or about the government.' },
@@ -338,7 +338,7 @@ FC.specimens('ideology', [
     wouldChange: 'If the notice said the salt works would pass to the public by an act that voters could later undo, it would be {o:demsoc}.' },
 
   { id: 'sp-country-ways', tier: 'misleading', setting: 'faith', topic: 'a gazette letter about church, table and harvest',
-    text: "From a letter in the Harrow Gazette: “This country has always honoured the church on Sundays, the family at table and the customs of the harvest. Those ways made us what we are, and they are worth keeping. When change must come it should come slowly, field by field, so that nobody loses what their grandparents handed down. We love our country, and its old ways are the best of it.”",
+    text: "From a letter in the Harrow Gazette: “This country has always honored the church on Sundays, the family at table and the customs of the harvest. Those ways made us what we are, and they are worth keeping. When change must come it should come slowly, field by field, so that nobody loses what their grandparents handed down. We love our country, and its old ways are the best of it.”",
     outcome: 'conserv', also: ['nation'], route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: ['the church on Sundays, the family at table and the customs of the harvest', 'its old ways are the best of it'],
             T1: 'When change must come it should come slowly, field by field' },
@@ -348,7 +348,7 @@ FC.specimens('ideology', [
     wouldChange: 'If the letter spoke of the country as one people and said nothing about old ways handed down, it would be {o:nationalism}.' },
 
   { id: 'sp-old-ranks', tier: 'misleading', setting: 'town', topic: 'a society for the old ranks of birth',
-    text: "From a speech to the Alder Society: “Our people were one in their ranks, from the lords to the labourers, each knowing their place under the church of our fathers, until the reformers tore the ranks and the church down and called it progress. We call for the old ranks to be put back, and the church with them.”",
+    text: "From a speech to the Alder Society: “Our people were one in their ranks, from the lords to the laborers, each knowing their place under the church of our fathers, until the reformers tore the ranks and the church down and called it progress. We call for the old ranks to be put back, and the church with them.”",
     outcome: 'react', also: ['nation'], route: { D1: ['tradition'], T1: ['restore'] },
     cues: { D1: ['each knowing their place under the church of our fathers', 'Our people were one in their ranks'],
             T1: ['until the reformers tore the ranks and the church down', 'We call for the old ranks to be put back, and the church with them'] },

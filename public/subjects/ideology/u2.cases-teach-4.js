@@ -26,11 +26,11 @@ FC.cases('ideology', 'u2', [
     ] },
 
   { id: 'c-ex-dyeworks', use: 'teach', tier: 'misleading', setting: 'work', topic: 'an account of the gap ending in a plan', name: 'The dye-works pamphlet',
-    text: "From a pamphlet at the Weir dye works: 'A dyer is paid £55 for a day and dyes cloth that sells for £95 once the running costs are taken off. The £40 goes to the owner, and the owner and the dyers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. This is why the dye works should be taken into public ownership and run for everyone, and why we will vote for those who say so.'",
+    text: "From a pamphlet at the Weir dye works: 'A dyer is paid $55 for a day and dyes cloth that sells for $95 once the running costs are taken off. The $40 goes to the owner, and the owner and the dyers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. This is why the dye works should be taken into public ownership and run for everyone, and why we will vote for those who say so.'",
     outcome: 'demsoc', route: { D1: ['class'], C1: ['public'], C2: ['vote'] }, also: ['explain'],
     cues: { C1: 'the dye works should be taken into public ownership and run for everyone', C2: 'we will vote for those who say so' },
     segments: [
-      { text: 'A dyer is paid £55 for a day and dyes cloth that sells for £95 once the running costs are taken off. The £40 goes to the owner, and the owner and the dyers want opposite things from it', note: 'That is a sum showing a gap, and the two sides. It is where the text begins, and it is not what settles the answer.' },
+      { text: 'A dyer is paid $55 for a day and dyes cloth that sells for $95 once the running costs are taken off. The $40 goes to the owner, and the owner and the dyers want opposite things from it', note: 'That is a sum showing a gap, and the two sides. It is where the text begins, and it is not what settles the answer.' },
       { text: 'Every owner has to keep a gap like it, because that is how the arrangement works', note: 'That is the explanation. It is true of the text, and it is why the text looks like an explanation and nothing more. The text goes on to ask for something.' },
       { text: 'the dye works should be taken into public ownership and run for everyone' }
     ] },
@@ -74,7 +74,7 @@ FC.cases('ideology', 'u2', [
     cues: { D1: "The company that owns the power station sells the power, and the staff keep it running, and we stand with the staff", C1: "The power station should be owned by the government, run for everyone, not for the company's shareholders", C2: "run for everyone, not for the company's shareholders" } },
 
   { id: 'c-w-docks', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a sum on the gap, and a league taking the docks', name: 'The dock party pamphlet',
-    text: "From a pamphlet of the Orrin Docks workers' party: 'A docker is paid £70 for a day's work and unloads goods that earn the dock company £110 once the running costs are taken off. The £40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. The docks will then belong to the government, run for everyone.'",
+    text: "From a pamphlet of the Orrin Docks workers' party: 'A docker is paid $70 for a day's work and unloads goods that earn the dock company $110 once the running costs are taken off. The $40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. The docks will then belong to the government, run for everyone.'",
     outcome: 'ml', route: { D1: ['class'], C1: ['public'], C2: ['seize'] }, also: ['explain'],
     cues: { D1: "the owners and the dockers want opposite things from it", C1: 'The docks will then belong to the government, run for everyone', C2: 'The party will take the government by force, hold it, and allow no rival party' } }
 ]);

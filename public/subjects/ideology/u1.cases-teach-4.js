@@ -54,11 +54,11 @@ FC.cases('ideology', 'u1', [
 
   // Looks like the nation; is no side named. A ruler's methods are not a side.
   { id: 'i-x-ruler', use: 'teach', tier: 'misleading', setting: 'town', topic: 'an order from a ruler', name: 'The Governor’s order',
-    text: "Order of the Governor of the Eastern District: 'Two newspapers are closed from today. The Harbour party is dissolved and its offices sealed. A watcher will be named in every street to report who meets whom. The Governor thanks those who obey, and these orders will stand for as long as he chooses.'",
+    text: "Order of the Governor of the Eastern District: 'Two newspapers are closed from today. The Harbor party is dissolved and its offices sealed. A watcher will be named in every street to report who meets whom. The Governor thanks those who obey, and these orders will stand for as long as he chooses.'",
     route: { D1: ['none'] },
     cues: { D1: ['Two newspapers are closed from today', 'A watcher will be named in every street to report who meets whom', 'these orders will stand for as long as he chooses'] },
     segments: [
-      { text: 'Two newspapers are closed from today. The Harbour party is dissolved and its offices sealed.', note: 'That is how this ruler keeps power. Texts that put one people first can do the same, which is why this looks like the second answer. But closing papers and banning parties is a way of keeping power. It does not say whom the text speaks for.' },
+      { text: 'Two newspapers are closed from today. The Harbor party is dissolved and its offices sealed.', note: 'That is how this ruler keeps power. Texts that put one people first can do the same, which is why this looks like the second answer. But closing papers and banning parties is a way of keeping power. It does not say whom the text speaks for.' },
       { text: 'A watcher will be named in every street to report who meets whom.', note: 'That is another way of keeping power. It is what makes the text look like the second answer, and it still names no people and no side.' },
       { text: 'The Governor thanks those who obey, and these orders will stand for as long as he chooses.' }
     ] },
@@ -66,12 +66,12 @@ FC.cases('ideology', 'u1', [
   // Looks like what every person is owed; is working people against owners (rights shows too, and gives way).
   { id: 'i-x-fairstart', use: 'teach', tier: 'misleading', setting: 'schooling', topic: 'a teachers’ leaflet about a school roof', name: 'The teachers’ leaflet',
     also: ['rights'],
-    text: "From a teachers' union leaflet: 'Every child in this city is owed a school with a roof that does not leak. But the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year. Teachers and owners want different things, and we are with the teachers.'",
+    text: "From a teachers' union leaflet: 'Every child in this city is owed a school with a roof that does not leak. But the charter-school chain that owns our school takes a fee for every student while the staff who teach them are paid less each year. Teachers and owners want different things, and we are with the teachers.'",
     route: { D1: ['class'] },
-    cues: { D1: ['the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year', 'Teachers and owners want different things, and we are with the teachers'] },
+    cues: { D1: ['the charter-school chain that owns our school takes a fee for every student while the staff who teach them are paid less each year', 'Teachers and owners want different things, and we are with the teachers'] },
     segments: [
       { text: 'Every child in this city is owed a school with a roof that does not leak.', note: 'That says what every child is owed, which is what you point to for the fourth answer, and the text does say it. But the text does not stop there.' },
-      { text: 'But the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year.', note: 'That names the owners and the staff. It is half of what settles it. The words that finish it say which side the text is on.' },
+      { text: 'But the charter-school chain that owns our school takes a fee for every student while the staff who teach them are paid less each year.', note: 'That names the owners and the staff. It is half of what settles it. The words that finish it say which side the text is on.' },
       { text: 'Teachers and owners want different things, and we are with the teachers.' }
     ] },
 

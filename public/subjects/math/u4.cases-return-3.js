@@ -13,11 +13,11 @@ FC.cases('math', 'u4', [
     topic: 'entry to a swimming pool',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'The entry to a swimming pool was €5. After a refit it was set at €6.50, and it has stayed at €6.50. What will the entry cost after 3 years?',
+    text: 'The entry to a swimming pool was $5. After a refit it was set at $6.50, and it has stayed at $6.50. What will the entry cost after 3 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['it has stayed at €6.50'],
-      G1: ['After a refit it was set at €6.50', 'it has stayed at €6.50'],
+      M1: ['it has stayed at $6.50'],
+      G1: ['After a refit it was set at $6.50', 'it has stayed at $6.50'],
       G2: ['What will the entry cost after 3 years?']
     },
     reason: {
@@ -32,33 +32,33 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €5.00. After: €6.50'
+        working: 'Before: $5.00. After: $6.50'
       },
       {
         does: 'Say how big the change was',
-        working: '€6.50 − €5.00 = €1.50, and €1.50 ÷ €5.00 = 0.3, which is 30% of the old amount'
+        working: '$6.50 − $5.00 = $1.50, and $1.50 ÷ $5.00 = 0.3, which is 30% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €6.50 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $6.50 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 3 years: €6.50'
+        working: 'In 3 years: $6.50'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€6.50' },
+        { id: 'r', text: '$6.50' },
         {
           id: 's1',
-          text: '€11.00',
+          text: '$11.00',
           slip: 'you carry the change forward as if it came again every year.'
         },
         {
           id: 's2',
-          text: '€14.28',
+          text: '$14.28',
           slip: 'you carry the percentage forward as if it came again every year.'
         }
       ]
@@ -74,12 +74,12 @@ FC.cases('math', 'u4', [
     topic: 'pay for every delivery',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A courier was paid €8 for every delivery. Under a new contract she is paid €10 for every delivery, and the contract fixes it there. After how many years will she be paid €12 for a delivery?',
+    text: 'A courier was paid $8 for every delivery. Under a new contract she is paid $10 for every delivery, and the contract fixes it there. After how many years will she be paid $12 for a delivery?',
     route: { M1: ['growth'], G1: ['once'], G2: ['howlong'] },
     cues: {
       M1: ['the contract fixes it there'],
-      G1: ['Under a new contract she is paid €10 for every delivery', 'the contract fixes it there'],
-      G2: ['After how many years will she be paid €12 for a delivery?']
+      G1: ['Under a new contract she is paid $10 for every delivery', 'the contract fixes it there'],
+      G2: ['After how many years will she be paid $12 for a delivery?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -93,25 +93,25 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €8. After: €10'
+        working: 'Before: $8. After: $10'
       },
       {
         does: 'Say how big the change was',
-        working: '€10 − €8 = €2, and €2 ÷ €8 = 0.25, which is 25% of the old amount'
+        working: '$10 − $8 = $2, and $2 ÷ $8 = 0.25, which is 25% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €10 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $10 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'See whether the amount ever reaches the target',
-        working: '€10 is not €12, and nothing changes it again, so it never reaches €12 unless a new change is made'
+        working: '$10 is not $12, and nothing changes it again, so it never reaches $12 unless a new change is made'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: 'Never: it stays at €10' },
+        { id: 'r', text: 'Never: it stays at $10' },
         {
           id: 's1',
           text: 'About 1.0 year',
@@ -135,11 +135,11 @@ FC.cases('math', 'u4', [
     topic: 'a broadband bill',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A household’s broadband bill was €30 a month. After switching plans it has been €24 a month, and the new plan fixes it there. What will the bill be after 2 years?',
+    text: 'A household’s broadband bill was $30 a month. After switching plans it has been $24 a month, and the new plan fixes it there. What will the bill be after 2 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
       M1: ['the new plan fixes it there'],
-      G1: ['After switching plans it has been €24 a month', 'the new plan fixes it there'],
+      G1: ['After switching plans it has been $24 a month', 'the new plan fixes it there'],
       G2: ['What will the bill be after 2 years?']
     },
     reason: {
@@ -154,33 +154,33 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €30.00. After: €24.00'
+        working: 'Before: $30.00. After: $24.00'
       },
       {
         does: 'Say how big the change was',
-        working: '€30.00 − €24.00 = €6.00, and €6.00 ÷ €30.00 = 0.2, which is 20% of the old amount'
+        working: '$30.00 − $24.00 = $6.00, and $6.00 ÷ $30.00 = 0.2, which is 20% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €24.00 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $24.00 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 2 years: €24.00'
+        working: 'In 2 years: $24.00'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€24.00' },
+        { id: 'r', text: '$24.00' },
         {
           id: 's1',
-          text: '€12.00',
+          text: '$12.00',
           slip: 'you carry the change forward as if it came again every year.'
         },
         {
           id: 's2',
-          text: '€15.36',
+          text: '$15.36',
           slip: 'you carry the percentage forward as if it came again every year.'
         }
       ]

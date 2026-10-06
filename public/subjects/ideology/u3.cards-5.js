@@ -50,7 +50,7 @@ FC.cards('ideology', 'u3', [
       'What a text says about who should own the businesses does not give this name either. That is asked only of texts that have the first answer {a:D1.class}.'
     ],
     wild: ['"Blood decides what a people can do."', '"They are not our kind."', '"The first people has the first right."', '"Some peoples are born to lead."', '"Our people comes first, by birth."'],
-    self: 'You are unlikely to meet it as a whole programme. In your own life it is more often a single line in a comment or a joke, or a claim that one group is, by birth, better or worse. A line like that has the answer {a:N1.blood}, if it ranks a people by blood.',
+    self: 'You are unlikely to meet it as a whole program. In your own life it is more often a single line in a comment or a joke, or a claim that one group is, by birth, better or worse. A line like that has the answer {a:N1.blood}, if it ranks a people by blood.',
     ask: '"Does the text sort people by blood or birth, and place its own above the rest?" If it does, this is the name to look at, whatever it says about the vote.' },
 
   { id: 'check-nazi', kind: 'check', after: 'nazi',

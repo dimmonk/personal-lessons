@@ -7,7 +7,7 @@
 
 FC.unit('scams', 'u6', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 1,
+  rev: 2,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Six',
@@ -36,9 +36,9 @@ FC.unit('scams', 'u6', {
       rule: 'One changes something: {f:dv-pass}. The other only looks, to find out what is true: {f:dv-balance}.',
       test: 'Am I changing something on the other device, or only looking at what is really there?' },
     { id: 'pp-bank~pp-agency', pair: ['pp-bank', 'pp-agency'],
-      shared: 'Both are organisations that you tell about papers and numbers that went to a scammer.',
-      rule: 'One tells the organisation you already deal with: {f:pp-bank}. The other asks the company that keeps the record lenders check to put a fraud warning on it: {f:pp-agency}.',
-      test: 'Is it the organisation I already deal with, or the company that keeps the record lenders check?' },
+      shared: 'Both are organizations that you tell about papers and numbers that went to a scammer.',
+      rule: 'One tells the organization you already deal with: {f:pp-bank}. The other asks the company that keeps the record lenders check to put a fraud warning on it: {f:pp-agency}.',
+      test: 'Is it the organization I already deal with, or the company that keeps the record lenders check?' },
     { id: 'sc-real~sc-tell', pair: ['sc-real', 'sc-tell'],
       shared: 'Both answers name your bank.',
       rule: 'One says where real help with a loss comes from: {f:sc-real}. The other says whom to tell about a payment you have already made to an offer: {f:sc-tell}.',
@@ -81,7 +81,8 @@ FC.unit('scams', 'u6', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first real fact unit in the app, replacing the old Unit Six card "If it has already happened" and the caveat of the same name. Seven groups of facts under the idea each serves (money sent, reporting it, a password, a code or an app, a device, papers and numbers, the offer that follows a loss), thirty-one facts, six look-alike pairs. Every step to take comes from the old material of standard0.js and nothing is added to it; the reasons given beside the steps are plain-words explanations of why each step helps, and the cards say where a step depends on the country or the bank. Not yet deployed.' }
+      { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first real fact unit in the app, replacing the old Unit Six card "If it has already happened" and the caveat of the same name. Seven groups of facts under the idea each serves (money sent, reporting it, a password, a code or an app, a device, papers and numbers, the offer that follows a loss), thirty-one facts, six look-alike pairs. Every step to take comes from the old material of standard0.js and nothing is added to it; the reasons given beside the steps are plain-words explanations of why each step helps, and the cards say where a step depends on the country or the bank. Not yet deployed.' },
+      { rev: 2, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // the old Unit Six beliefs become refute cards and claims in the units that ask the question each one skips (docs/rebuild/scams-plan.md)

@@ -26,7 +26,7 @@ FC.cards('ideology', 'u1', [
   { id: 'again-tradition', kind: 'again', family: 'tradition',
     link: 'The harvest sermon gave you what to point to from one case: {needs:tradition}. Here is a second case in a different setting: a school and a Sunday morning.',
     first: 'i-trad-meet', second: 'i-trad-again', step: 'D1',
-    instruction: 'Find what the two cases share. Ignore the story (a village service, a school timetable). Look at one thing only: which words hold up what was handed down as what should count or guide?',
+    instruction: 'Find what the two cases share. Ignore the story (a village service, a school schedule). Look at one thing only: which words hold up what was handed down as what should count or guide?',
     prompt: { kind: 'phrase', answer: 'They should count for more than the league table' },
     shared: [
       'Both texts hold up ways that came from the past. The sermon names the faith, the home and the old customs, handed down by grandparents. The parent names Sunday church and a long lunch with the grandparents, as it was for them and for their parents before them. In both, the old ways are asked to come first: to guide how the country is run, or to count for more than the league table.',

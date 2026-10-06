@@ -9,7 +9,7 @@ FC.cards('civics', 'u3', [
     case: 'b-reading', mark: 'C1',
     strip: [
       'Congress passes a law: the House and the Senate have both voted for the bill.',
-      'The law is about what pupils read in school: ten named books, in every state.',
+      'The law is about what students read in school: ten named books, in every state.',
       'What schools teach is not on the Constitution’s list for Congress, so it is for the states to decide.',
       'No right is involved here: the only problem is the matter.',
       'Parents’ worry about reading is only the reason the bill exists.'
@@ -28,7 +28,7 @@ FC.cards('civics', 'u3', [
     instruction: 'Find what the two cases share. Ignore the story (school books, places of worship). Look at one thing only: whether the Constitution lets Congress pass this law.',
     prompt: { kind: 'phrase', answer: 'the House passed a bill that lets people hold a religious service only in a building a federal office has approved' },
     shared: [
-      'In both cases Congress passed a law, with both chambers voting for it, and in both the Constitution does not let Congress pass it. But the reasons differ. In the first, the matter, what pupils read, is not on the list. In the second, the matter is a religious service, and the Constitution protects the right to worship. A law that takes that right away is not one Congress may pass, whatever the matter.',
+      'In both cases Congress passed a law, with both chambers voting for it, and in both the Constitution does not let Congress pass it. But the reasons differ. In the first, the matter, what students read, is not on the list. In the second, the matter is a religious service, and the Constitution protects the right to worship. A law that takes that right away is not one Congress may pass, whatever the matter.',
       'So there are two ways to be outside Congress’s power: a matter that is not on the list, and a right that the law takes away. Either one is enough, and that is what {o:beyondcong} names. The stories share nothing else.'
     ] },
 
@@ -39,7 +39,7 @@ FC.cards('civics', 'u3', [
       'What is wrong is one of two things, and either is enough. Either the matter is not on the Constitution’s list for Congress: what schools teach, who may marry, the hours barbers work, the speed limit on a town’s own streets. Or the law takes away a right the Constitution protects: to speak, to worship, to publish or to gather peacefully.',
       'A law can be on a matter that is on the list and still take a right away. The list is one limit and the rights are another, and a law has to get past both.',
       'The words you hear are “Congress overstepped”, “the Constitution gives Congress no power to do that”, “that is for the states”. Sometimes the story only shows the law and its subject, and you have to hold the subject against the list yourself.',
-      'The law is not a rumour: the House and the Senate really passed it. What it lacks is the power, and a court can strike it down in a real case.'
+      'The law is not a rumor: the House and the Senate really passed it. What it lacks is the power, and a court can strike it down in a real case.'
     ],
     not: 'A law that is unpopular, unwise or unfair is not {o:beyondcong} for that reason. What makes a law {o:beyondcong} is the Constitution’s list and its rights: the matter is not on the list, or a right is taken away.',
     wild: ['“Congress overstepped.”', '“It’s unconstitutional.”', '“The Constitution gives Congress no power to do that.”', '“That’s for the states, not for Washington.”'],

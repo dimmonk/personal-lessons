@@ -20,20 +20,20 @@ FC.cases('ideology', 'u1', [
     ] },
 
   { id: 'i-trad-check', use: 'check', tier: 'clean', setting: 'town', topic: 'opening the market on Sundays',
-    text: "Councillor Ashby opposes opening the town market on Sundays. 'Our town has always set Sunday aside for church and home. These customs were handed down to us, and they ought to decide how we run the town, whatever the stalls would earn.'",
+    text: "Council Member Ashby opposes opening the town market on Sundays. 'Our town has always set Sunday aside for church and home. These customs were handed down to us, and they ought to decide how we run the town, whatever the stalls would earn.'",
     route: { D1: ['tradition'] },
     cues: { D1: 'These customs were handed down to us, and they ought to decide how we run the town' },
     reason: { D1: 'The text holds up customs from the past as what should guide the town: {cue:D1}. It sorts nobody by wages or by owning a business, and it does not speak for one people against others.' },
     not: { outcome: 'nation', why: 'Nothing here puts one people first. The text speaks of the town’s customs and of what was handed down, and that is the thing it puts first.' } },
 
   /* ---------- The fourth answer: rights and fair treatment for everyone ---------- */
-  { id: 'i-rights-meet', use: 'teach', tier: 'clean', setting: 'money', topic: 'a licence to open a stall', name: 'The open-counter pamphlet',
-    text: "From a pamphlet of the Open Counter Society: 'Nobody should need a licence to open a stall or a barber's chair. Each person is owed the freedom to speak, to believe, to own and to trade as they choose, and that freedom comes before any plan anyone has for the country.'",
+  { id: 'i-rights-meet', use: 'teach', tier: 'clean', setting: 'money', topic: 'a license to open a stall', name: 'The open-counter pamphlet',
+    text: "From a pamphlet of the Open Counter Society: 'Nobody should need a license to open a stall or a barber's chair. Each person is owed the freedom to speak, to believe, to own and to trade as they choose, and that freedom comes before any plan anyone has for the country.'",
     route: { D1: ['rights'] },
     cues: { D1: ['Each person is owed the freedom to speak, to believe, to own and to trade as they choose', 'that freedom comes before any plan anyone has for the country'] } },
 
   { id: 'i-rights-again', use: 'teach', tier: 'clean', setting: 'health', topic: 'a doctor and a school for every child', name: 'The speech about every child',
-    text: "From a speech: 'Whatever your name or your bank balance, every child in this country is owed a doctor when they are ill and a school that will teach them. That is not a favour. It is what each person is owed, and a decent society puts it first.'",
+    text: "From a speech: 'Whatever your name or your bank balance, every child in this country is owed a doctor when they are ill and a school that will teach them. That is not a favor. It is what each person is owed, and a decent society puts it first.'",
     route: { D1: ['rights'] },
     cues: { D1: ['every child in this country is owed a doctor when they are ill and a school that will teach them', 'It is what each person is owed, and a decent society puts it first'] },
     segments: [
@@ -50,18 +50,18 @@ FC.cases('ideology', 'u1', [
     not: { outcome: 'class', why: 'The groups in this text are groups of students, and nobody is sorted by wages or by owning a business.' } },
 
   /* ---------- The fifth answer: no side named ---------- */
-  { id: 'i-none-meet', use: 'teach', tier: 'clean', setting: 'housing', topic: 'a lift out of service', name: 'The lift notice',
-    text: "A notice on the doors of Birch House: 'The lift will be out of service from Monday 3 March until Friday 14 March while the motor is replaced. Residents who need help with the stairs should ring the caretaker on the number below. Rubbish is collected on Thursdays as usual.'",
+  { id: 'i-none-meet', use: 'teach', tier: 'clean', setting: 'housing', topic: 'an elevator out of service', name: 'The elevator notice',
+    text: "A notice on the doors of Birch House: 'The elevator will be out of service from Monday, March 3 until Friday, March 14 while the motor is replaced. Residents who need help with the stairs should call the superintendent at the number below. Trash is collected on Thursdays as usual.'",
     route: { D1: ['none'] },
-    cues: { D1: ['The lift will be out of service from Monday 3 March until Friday 14 March while the motor is replaced', 'Residents who need help with the stairs should ring the caretaker'] } },
+    cues: { D1: ['The elevator will be out of service from Monday, March 3 until Friday, March 14 while the motor is replaced', 'Residents who need help with the stairs should call the superintendent'] } },
 
   { id: 'i-none-again', use: 'teach', tier: 'clean', setting: 'town', topic: 'who chairs the council', name: 'The town charter',
-    text: "From the town charter of Brennick: 'The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above £50,000.' Copies of the charter are available at the library.",
+    text: "From the town charter of Brennick: 'The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above $50,000.' Copies of the charter are available at the library.",
     route: { D1: ['none'] },
-    cues: { D1: ['The chair of the council is chosen by the full council each May', 'The chair may serve two terms and signs any contract above £50,000'] },
+    cues: { D1: ['The chair of the council is chosen by the full council each May', 'The chair may serve two terms and signs any contract above $50,000'] },
     segments: [
       { text: 'From the town charter of Brennick', note: 'That says where the words come from. It is not what the words say.' },
-      { text: 'The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above £50,000.' },
+      { text: 'The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above $50,000.' },
       { text: 'Copies of the charter are available at the library', note: 'That says where to get the charter. It is practical too, but it is not the part that says who is in charge.' }
     ] },
 

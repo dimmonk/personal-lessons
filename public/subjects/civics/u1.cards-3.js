@@ -15,7 +15,7 @@ FC.cards('civics', 'u1', [
       'Nobody votes, no office issues a rule, and no state or city decides anything.'
     ],
     explain: [
-      'What you are shown is a judge settling a quarrel. Hana and her landlord disagree, and neither of them can decide it for the other, so they hand the decision to someone else. A judge does not write laws and does not run programmes. A judge decides a case that somebody has brought.',
+      'What you are shown is a judge settling a quarrel. Hana and her landlord disagree, and neither of them can decide it for the other, so they hand the decision to someone else. A judge does not write laws and does not run programs. A judge decides a case that somebody has brought.',
       'That is all a case of this kind is made of: a judge deciding, as the last thing, or someone asking a judge to decide. The judge can sit in a court of the whole country or in a court of a state. The kind does not depend on which court it is.',
       'Notice what else it does not depend on. It does not depend on how important the quarrel is: a broken heater and a famous trial are the same kind. And it does not depend on whether you think the judge decided rightly. The decision is the judge’s either way.'
     ],
@@ -46,7 +46,7 @@ FC.cards('civics', 'u1', [
       'And a trial is not always a judge’s. A trial of an official held in the Senate is held by the Senate, and the senators vote at the end. A word from the courtroom is not enough: you need a judge.'
     ],
     wild: ['"The judge ruled."', '"The court struck it down."', '"They are appealing."', '"The case was dismissed."', '"He asked a judge to decide."'],
-    self: 'In your own life you meet this kind in a dispute with a landlord, a neighbour or a firm, and in any news about a trial or a ruling.',
+    self: 'In your own life you meet this kind in a dispute with a landlord, a neighbor or a firm, and in any news about a trial or a ruling.',
     ask: '"Has a judge decided this, or has someone asked a judge to?" If so, in any court, the answer is {a:D1.courts}.' },
 
   { id: 'check-courts', kind: 'check', after: 'courts',
@@ -84,11 +84,11 @@ FC.cards('civics', 'u1', [
     h: 'An office’s decision, and a judge asked about it',
     link: 'An office can make a decision that someone then takes to a judge. This card puts the two stages of one story side by side.',
     cases: ['l-form-refused', 'l-form-judge'],
-    instruction: 'Both cases are about Mr Okoro’s application. Compare one thing: whose decision does each story end on?',
+    instruction: 'Both cases are about Mr. Okoro’s application. Compare one thing: whose decision does each story end on?',
     prompt: { kind: 'which', option: 'D1.courts', answer: 'l-form-judge' },
     difference: [
-      'In Case A the story ends with a letter from the immigration service: it refuses Mr Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The answer is {a:D1.president}.',
-      'In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr Okoro asking a judge whether the form was really missing. The answer is {a:D1.courts}.',
+      'In Case A the story ends with a letter from the immigration service: it refuses Mr. Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The answer is {a:D1.president}.',
+      'In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr. Okoro asking a judge whether the form was really missing. The answer is {a:D1.courts}.',
       'The refusal is in both cases. In Case A it is the last decision, and in Case B it is how the case got there. What separates the two is what the story ends on.'
     ] },
 

@@ -8,7 +8,7 @@ FC.cards('psychology', 'u3', [
     link: 'The first two names are about a denial: of what happened, or of what the person did. The third is an accusation, and what matters about an accusation is who the case shows doing the thing the accuser is talking about.',
     case: 'p-expenses', mark: 'T1',
     strip: [
-      'Dana accuses Omar of something: of fiddling claims. "People like him always fiddle their claims."',
+      'Dana accuses Omar of something: of fiddling claims. "People like him always inflate their claims."',
       'The case shows that Dana is the one doing exactly that: she has padded her own claims for months.',
       'Nothing in the case shows Omar doing it: his claim is for exactly the amounts on his receipts.',
       'Nobody raised anything with Dana first. The accusation is where the case starts.'
@@ -23,9 +23,9 @@ FC.cards('psychology', 'u3', [
 
   { id: 'again-projection', kind: 'again', outcome: 'projection',
     link: 'The expense claims gave you what to point to: {needs:projection}. Here is a second case with a completely different story.',
-    first: 'p-expenses', second: 'p-rumour', step: 'T1',
+    first: 'p-expenses', second: 'p-rumor', step: 'T1',
     instruction: 'Find what the two cases share. Ignore the story (expense claims, service charges). Look at one thing only: whether the case shows the person who makes the accusation doing what they accuse the other of.',
-    prompt: { kind: 'phrase', answer: "When Sue mentions that she is moving away, Femi, who has been telling neighbours who is behind with their service charges, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.'" },
+    prompt: { kind: 'phrase', answer: "When Sue mentions that she is moving away, Femi, who has been telling neighbors who is behind on their maintenance fees, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.'" },
     shared: [
       'In both cases one person accuses another, and the case shows the accuser doing the very thing: Dana pads claims and accuses Omar of fiddling them; Femi passes on who owes money and accuses Sue of gossiping about people’s money. In both, nothing in the case shows the person accused doing it. Omar’s claim matches his receipts, and nobody else has heard Sue say anything.',
       'One story is about expenses, the other about gossip. The stories share nothing, so this is not about money or about gossip. It holds wherever one person accuses another and the case points back at the accuser. That is what {o:projection} names.'
@@ -35,7 +35,7 @@ FC.cards('psychology', 'u3', [
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {o:projection} in real life, where nobody marks the words for you.',
     typical: [
       'The accusation is about something the person does or feels: lying, being late, hiding things, being jealous, being disloyal, gossiping. The thing accused of is whatever the accuser is doing or feeling.',
-      'It often comes with little or no evidence, or with evidence that is not about the person accused. "People like him always fiddle their claims" is about a type of person. It is not about anything Omar’s claim shows.',
+      'It often comes with little or no evidence, or with evidence that is not about the person accused. "People like him always inflate their claims" is about a type of person. It is not about anything Omar’s claim shows.',
       'It tends to come first. Nobody has raised anything with the accuser: the accusation is where the case starts. That is the difference from {o:darvo}, where the attack comes in answer.',
       'The accuser is often quite sure, and may be sincere. They honestly see the thing in the other person, which is part of why it can sound convincing. Sincerity is not what is asked about.',
       'It can come back in new forms, and the person accused often ends up defending themselves against something they never did.'
@@ -56,8 +56,8 @@ FC.cards('psychology', 'u3', [
     instruction: 'Both cases are about Ed, Nell and the club’s petty cash. Compare one thing: did someone raise something with Ed first, so that he is answering it, or did the accusation come from Ed, with nobody having asked him anything?',
     prompt: { kind: 'which', option: 'T1.reverse', answer: 'books-raised' },
     difference: [
-      'In Case A, Nell has asked Ed about the missing £60, and the receipt book shows he took it. The attack ("you are the one who never hands in receipts") comes in answer, with a denial and with Ed as the one wronged ("after all I have done for this club"). The answer is {a:T1.reverse}, and the case is {o:darvo}.',
-      'In Case B, nobody has asked Ed anything. He says, unprompted, that Nell has been dipping into the tin. The book shows Ed took the £60, and shows every one of Nell’s receipts handed in on time. The answer is {a:T1.ownfault}, and the case is {o:projection}.',
+      'In Case A, Nell has asked Ed about the missing $60, and the receipt book shows he took it. The attack ("you are the one who never hands in receipts") comes in answer, with a denial and with Ed as the one wronged ("after all I have done for this club"). The answer is {a:T1.reverse}, and the case is {o:darvo}.',
+      'In Case B, nobody has asked Ed anything. He says, unprompted, that Nell has been dipping into the box. The book shows Ed took the $60, and shows every one of Nell’s receipts handed in on time. The answer is {a:T1.ownfault}, and the case is {o:projection}.',
       'In both cases Ed goes for Nell about something Ed did. What differs is where the case starts: with Nell raising it, or with Ed.'
     ] },
 

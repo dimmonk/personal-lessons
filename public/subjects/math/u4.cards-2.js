@@ -22,13 +22,13 @@ FC.cards('math', 'u4', [
     link: 'The first kind changed the amount by the same number each time. The second kind changes it by the same share of itself each time, and the difference only shows up after a while.',
     case: 'm4-wd-savings', mark: 'G1',
     strip: [
-      'There is one amount to follow: the money in the account. It starts at €2,000.',
+      'There is one amount to follow: the money in the account. It starts at $2,000.',
       'Every year it changes by 4%, and 4% of what? Of what the account holds at that moment. The interest is left in, so next year’s 4% is taken on a bigger amount.',
       'The question gives a time, 3 years, and asks for the amount at the end of it.',
       'The change is a percentage, and not a plain figure.'
     ],
     explain: [
-      'What you are shown is one amount that changes by a percentage of itself, every year. In year 1 the interest is 4% of €2,000, which is €80, so the account holds €2,080. In year 2 the interest is 4% of €2,080, which is €83.20, so the account holds €2,163.20. The interest in year 2 is bigger than in year 1, because it is taken on more money. That is the difference from the first kind, in which every change was the same size.',
+      'What you are shown is one amount that changes by a percentage of itself, every year. In year 1 the interest is 4% of $2,000, which is $80, so the account holds $2,080. In year 2 the interest is 4% of $2,080, which is $83.20, so the account holds $2,163.20. The interest in year 2 is bigger than in year 1, because it is taken on more money. That is the difference from the first kind, in which every change was the same size.',
       'A change that is a percentage of what the amount is now is the same as multiplying the amount by the same number each time. Going up 4% is multiplying by 1.04, because 2,000 × 1.04 = 2,080. So the account is multiplied by 1.04 in year 1, the result is multiplied by 1.04 again in year 2, and again in year 3. That is why the kind is told by “the same number is multiplied each time”, and not by the percentage: the percentage is only how the problem gives the number.',
       'Notice what decides the kind. It is not that the problem says “percent”, or “interest”, or that it is about money. It is that each change is a share of what the amount has reached, so each change comes out bigger than the one before when the amount is growing, and smaller when it is shrinking. A doubling is the same kind: each doubling multiplies by 2. So is an amount that halves, which is multiplied by 0.5 each time.'
     ],

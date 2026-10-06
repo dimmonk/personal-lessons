@@ -34,7 +34,7 @@ FC.cases('stats', 'u3', [
     text: "A city hall drew 800 addresses by lottery from its list of every home in the city and sent staff to each one. 770 people answered the door and the questions, and 31 in every 100 said they feel unsafe walking at night. The report says: 'About 31 in every 100 city residents feel unsafe walking at night.'",
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
     cues: { S1: 'drew 800 addresses by lottery from its list of every home in the city', H1: 'About 31 in every 100 city residents feel unsafe walking at night', A1: 'sent staff to each one' },
-    reason: { S1: 'The people were picked by lottery from a list of every home: {cue:S1}. Nobody could be favoured, and nearly all of them answered: 770 of 800 is 96 in every 100.',
+    reason: { S1: 'The people were picked by lottery from a list of every home: {cue:S1}. Nobody could be favored, and nearly all of them answered: 770 of 800 is 96 in every 100.',
               H1: 'The claim gives one share for one group at one time and says nothing more: {cue:H1}.',
               A1: 'None of the four ways in fits: staff went to every home that was drawn, and almost everyone answered: {cue:A1}.' },
     not: { outcome: 'nonresp', why: 'Most of those asked did answer: 770 of the 800 came to the door and replied, so what is missing is too little to lean the figure.' } }

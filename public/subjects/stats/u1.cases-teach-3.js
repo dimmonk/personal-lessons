@@ -6,9 +6,9 @@ FC.cases('stats', 'u1', [
 
   /* ---------- Nothing goes wrong ---------- */
   { id: 'gate-poll', use: 'teach', tier: 'clean', setting: 'health', topic: 'a county survey of smoking', name: 'The county survey',
-    text: "A county health office phoned 1,100 adults whose numbers were drawn by lottery from the full list of landline and mobile numbers in the county. It tried each number up to six times and reached 1,000 of them. Thirty-one percent of the 1,000 said they smoke. The office reports: 'About three in ten adults in the county smoke, give or take three points.'",
+    text: "A county health office phoned 1,100 adults whose numbers were drawn by lottery from the full list of landline and cell phone numbers in the county. It tried each number up to six times and reached 1,000 of them. Thirty-one percent of the 1,000 said they smoke. The office reports: 'About three in ten adults in the county smoke, give or take three points.'",
     route: { S1: ['holds'] },
-    cues: { S1: 'drawn by lottery from the full list of landline and mobile numbers in the county. It tried each number up to six times and reached 1,000 of them' } },
+    cues: { S1: 'drawn by lottery from the full list of landline and cell phone numbers in the county. It tried each number up to six times and reached 1,000 of them' } },
 
   { id: 'gate-depots', use: 'teach', tier: 'clean', setting: 'work', topic: 'two depots and late parcels', name: 'The two depots',
     text: "A courier firm has two depots, North and South. Both depots serve similar mixes of homes and offices, and both log every parcel the same way. Last quarter North delivered 9,000 parcels and 270 arrived late. South delivered 8,000 and 400 arrived late. The firm says: 'South was late more often: 5 parcels in 100 against 3.'",

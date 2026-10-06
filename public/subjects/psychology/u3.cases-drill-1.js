@@ -5,8 +5,8 @@
 FC.cases('psychology', 'u3', [
 
   /* ---------- Stage one: the key's answers are shown, the learner gives the name ---------- */
-  { id: 'n-gas', use: 'drill', tier: 'clean', setting: 'community', topic: 'a village pantomime part',
-    text: "In September the pantomime director, Lucia, emailed Ben that he had the part of the dame, and the email is still in his inbox. Since then, whenever Ben asks about rehearsal dates, Lucia says, 'I never gave you that part,' and later, 'You're remembering what you wanted to hear,' and later, 'We've been over this and you keep making it up.' It has gone on since October. Ben now writes down everything she says at rehearsals, and has asked another cast member whether he is losing his grip.",
+  { id: 'n-gas', use: 'drill', tier: 'clean', setting: 'community', topic: 'a village Christmas show part',
+    text: "In September the Christmas show director, Lucia, emailed Ben that he had the lead role, and the email is still in his inbox. Since then, whenever Ben asks about rehearsal dates, Lucia says, 'I never gave you that part,' and later, 'You're remembering what you wanted to hear,' and later, 'We've been over this and you keep making it up.' It has gone on since October. Ben now writes down everything she says at rehearsals, and has asked another cast member whether he is losing his grip.",
     outcome: 'gaslight', route: { D1: ['tactic'], T1: ['denymemory'] },
     cues: { T1: "whenever Ben asks about rehearsal dates, Lucia says, 'I never gave you that part,' and later, 'You're remembering what you wanted to hear,' and later, 'We've been over this and you keep making it up.' It has gone on since October." },
     reason: { T1: 'The email shows the part really was given. Lucia then tells Ben it was not: {cue:T1} The denial comes back for months, and Ben now writes everything down and asks someone else whether he is losing his grip, which shows him doubting his own memory.' },
@@ -34,39 +34,39 @@ FC.cases('psychology', 'u3', [
     not: { outcome: 'ordexchange', why: 'Friendly, generous attention that stayed would be {o:ordexchange}. Here it stops and turns critical when Kemal does not go along.' } },
 
   { id: 'n-proj', use: 'drill', tier: 'clean', setting: 'money', topic: 'a hidden credit card',
-    text: "Jess tells her husband Nick, out of the blue, 'You've been lying to me about money.' The joint account statements show every payment Nick has made, with nothing hidden. In the bedroom drawer is a credit card Jess has kept from Nick for a year, with a balance of £3,000.",
+    text: "Jess tells her husband Nick, out of the blue, 'You've been lying to me about money.' The joint account statements show every payment Nick has made, with nothing hidden. In the bedroom drawer is a credit card Jess has kept from Nick for a year, with a balance of $3,000.",
     outcome: 'projection', route: { D1: ['tactic'], T1: ['ownfault'] },
     cues: { T1: ["Jess tells her husband Nick, out of the blue, 'You've been lying to me about money.'", 'a credit card Jess has kept from Nick for a year'] },
     reason: { T1: 'Jess accuses Nick: {cue:T1}. The case shows Jess doing exactly that, and the statements show nothing hidden by Nick.' },
     not: { outcome: 'darvo', why: 'Nobody has raised anything with Jess, so she is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.' } },
 
   { id: 'n-ord2', use: 'drill', tier: 'clean', setting: 'community', topic: 'a summer fair idea',
-    text: "At the school gate, Rhea tells another parent, Chen, that his plan for the summer fair is the best idea so far. Chen says thank you, and adds that Hamid, who thought of the stall rota, deserves the credit.",
+    text: "At the school gate, Rhea tells another parent, Chen, that his plan for the summer fair is the best idea so far. Chen says thank you, and adds that Hamid, who thought of the stall schedule, deserves the credit.",
     outcome: 'ordexchange', route: { D1: ['tactic'], T1: ['plain'] },
     cues: { T1: 'Rhea tells another parent, Chen, that his plan for the summer fair is the best idea so far' },
     reason: { T1: 'Rhea tells Chen {cue:T1}. It is praise that fits what he proposed, and nothing in the case shows a flood of attention, or anything pulled back.' },
     not: { outcome: 'lovebomb', why: 'One piece of praise on one occasion is not far more attention than the relationship would explain, and nothing is pulled back later.' } },
 
   /* ---------- Stage two: the key's question alone, on a new case ---------- */
-  { id: 'p-gas', use: 'drill', tier: 'varied', setting: 'health', topic: 'old tablets',
-    text: "When Noor started a new blood-pressure tablet, her husband Dev took her old prescription to the chemist, and the receipt shows he did. Since January, whenever she asks where the old tablets went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.",
+  { id: 'p-gas', use: 'drill', tier: 'varied', setting: 'health', topic: 'old pills',
+    text: "When Noor started a new blood-pressure pill, her husband Dev took her old prescription to the pharmacy, and the receipt shows he did. Since January, whenever she asks where the old pills went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.",
     outcome: 'gaslight', route: { D1: ['tactic'], T1: ['denymemory'] },
-    cues: { T1: "whenever she asks where the old tablets went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right." },
+    cues: { T1: "whenever she asks where the old pills went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right." },
     reason: { T1: 'The receipt shows he really did take the prescription. He then tells her it did not happen: {cue:T1} It comes back for months, and Noor has begun to doubt her own memory.' },
     not: { outcome: 'darvo', why: 'There is no single exchange of a denial, an attack and playing the one wronged. The same denial returns for months, until Noor doubts her memory.' } },
 
   { id: 'p-dar', use: 'drill', tier: 'varied', setting: 'leisure', topic: 'a dropped catch',
-    text: "Ollie drops the winning catch in the cricket club's final. The match video shows he had both hands on it. When his captain, Ray, asks about it afterwards, Ollie says, 'It came off the sun. You were the one who picked this ground, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets hauled over.'",
+    text: "Ollie drops the winning catch in the softball club's final. The game video shows he had both hands on it. When his captain, Ray, asks about it afterward, Ollie says, 'It came out of the sun. You were the one who picked this field, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets called out.'",
     outcome: 'darvo', route: { D1: ['tactic'], T1: ['reverse'] },
-    cues: { T1: "When his captain, Ray, asks about it afterwards, Ollie says, 'It came off the sun. You were the one who picked this ground, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets hauled over.'" },
-    reason: { T1: 'The video shows Ollie dropped it, and Ray raises it. Ollie then denies it ("It came off the sun"), attacks Ray ("you always blame the wrong person"), and plays the one wronged ("I\'m the one who gets hauled over"). {cue:T1}' },
+    cues: { T1: "When his captain, Ray, asks about it afterward, Ollie says, 'It came out of the sun. You were the one who picked this field, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets called out.'" },
+    reason: { T1: 'The video shows Ollie dropped it, and Ray raises it. Ollie then denies it ("It came out of the sun"), attacks Ray ("you always blame the wrong person"), and plays the one wronged ("I\'m the one who gets called out"). {cue:T1}' },
     not: { outcome: 'projection', why: 'Ollie is answering something Ray raised with him. In {o:projection} nobody has raised anything, and the accusation is where the case starts.' } },
 
   { id: 'p-love', use: 'drill', tier: 'varied', setting: 'community', topic: 'a choir friend',
-    text: "A new choir member, Tomas, wrote to Elle every day for a fortnight about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart. When Elle said she could not go to the concert, he stopped speaking to her at rehearsals and told a friend she had been 'using him'.",
+    text: "A new choir member, Tomas, wrote to Elle every day for two weeks about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart. When Elle said she could not go to the concert, he stopped speaking to her at rehearsals and told a friend she had been 'using him'.",
     outcome: 'lovebomb', route: { D1: ['tactic'], T1: ['floodpull'] },
-    cues: { T1: ["wrote to Elle every day for a fortnight about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart", "he stopped speaking to her at rehearsals and told a friend she had been 'using him'"] },
-    reason: { T1: 'The attention was far more than a fortnight would explain: {cue:T1}. It was pulled back, and turned into criticism, once Elle did not go along.' },
+    cues: { T1: ["wrote to Elle every day for two weeks about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart", "he stopped speaking to her at rehearsals and told a friend she had been 'using him'"] },
+    reason: { T1: 'The attention was far more than two weeks would explain: {cue:T1}. It was pulled back, and turned into criticism, once Elle did not go along.' },
     not: { outcome: 'ordexchange', why: 'Warmth from a new friend would be {o:ordexchange} if it stayed warm. Here it is pulled back and turns critical when Elle says no.' } },
 
   { id: 'p-proj', use: 'drill', tier: 'varied', setting: 'leisure', topic: 'a book club and interrupting',
@@ -77,9 +77,9 @@ FC.cases('psychology', 'u3', [
     not: { outcome: 'ordexchange', why: 'A fair complaint would have the case showing Dina doing it. Here the recording shows Edith doing it, and shows little from Dina.' } },
 
   { id: 'p-ord', use: 'drill', tier: 'varied', setting: 'money', topic: 'a high energy bill',
-    text: "Carla phones her energy company and says her bill is double what she expected. The adviser, Ian, says he will check and call back. That afternoon he rings, tells her a meter was misread in the spring, and corrects the bill.",
+    text: "Carla calls her energy company and says her bill is double what she expected. The advisor, Ian, says he will check and call back. That afternoon he calls, tells her a meter was misread in the spring, and corrects the bill.",
     outcome: 'ordexchange', route: { D1: ['tactic'], T1: ['plain'] },
-    cues: { T1: 'Carla phones her energy company and says her bill is double what she expected.' },
+    cues: { T1: 'Carla calls her energy company and says her bill is double what she expected.' },
     reason: { T1: 'Carla makes a complaint: {cue:T1} Ian checks and corrects it. Nothing is denied or turned on her, nothing repeats, and no attention is poured on and withdrawn.' },
     not: { outcome: 'darvo', why: 'Ian does not deny, attack or play the one wronged. He checks, finds the fault and fixes it.' } }
 ]);

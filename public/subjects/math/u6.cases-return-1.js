@@ -124,14 +124,14 @@ FC.cases('math', 'u6', [
     use: 'return',
     tier: 'varied',
     setting: 'health',
-    topic: 'crossing a car park',
+    topic: 'crossing a parking lot',
     kind: 'problem',
     outcome: 'pyth',
-    text: 'A paramedic runs diagonally across a rectangular car park 25 m wide and 60 m long, from one corner to the opposite corner. How far does she run?',
+    text: 'A paramedic runs diagonally across a rectangular parking lot 25 m wide and 60 m long, from one corner to the opposite corner. How far does she run?',
     route: { M1: ['shape'], S1: ['twosides'], S2: ['length'] },
     cues: {
       M1: 'How far does she run?',
-      S1: 'a rectangular car park 25 m wide and 60 m long',
+      S1: 'a rectangular parking lot 25 m wide and 60 m long',
       S2: 'How far does she run?'
     },
     reason: {

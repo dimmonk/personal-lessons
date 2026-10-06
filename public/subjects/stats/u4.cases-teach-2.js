@@ -4,9 +4,9 @@
 FC.cases('stats', 'u4', [
 
   { id: 'meas-essays', use: 'check', tier: 'clean', setting: 'learning', topic: 'a university and the essays it checks for copying', name: 'The essay checks',
-    text: "A university's integrity office reports: 'Copied essays found this year: 90, up from 30 last year. Cheating is on the rise.' Last year staff checked only the 600 essays that markers had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method. An essay counts as copied by the same standard in both years. That is 5 found in every 100 checked last year, and 3 in every 100 this year.",
+    text: "A university's integrity office reports: 'Copied essays found this year: 90, up from 30 last year. Cheating is on the rise.' Last year staff checked only the 600 essays that graders had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method. An essay counts as copied by the same standard in both years. That is 5 found in every 100 checked last year, and 3 in every 100 this year.",
     outcome: 'detection', route: { S1: ['measure'], M1: ['looked'] },
-    cues: { M1: "Last year staff checked only the 600 essays that markers had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method" },
+    cues: { M1: "Last year staff checked only the 600 essays that graders had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method" },
     reason: { M1: 'The office checked five times as many essays this year: {cue:M1}. The standard for a copied essay and the method are the same, so the count of essays found rose from 30 to 90 because 3,000 were checked instead of 600. Among those checked, the share found fell from 5 in 100 to 3 in 100.' } },
 
   /* ---------- Detection bias beside its sound look-alike: the same lake ---------- */

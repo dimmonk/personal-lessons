@@ -4,7 +4,7 @@
 
 FC.unit('psychology', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -34,7 +34,7 @@ FC.unit('psychology', 'u4', {
     { id: 'narcvuln~borderline', pair: ['narcvuln', 'borderline'], step: 'P1',
       shared: 'Both are hurt when someone close lets them down, and in both it has cost friendships over years.',
       rule: 'In {o:narcvuln} the person pulls away and resents, and does not reach for the other person. In {o:borderline} the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again.',
-      test: 'When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?' },
+      test: 'When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?' },
     { id: 'narcgrand~borderline', pair: ['narcgrand', 'borderline'], step: 'P1',
       shared: 'Both can be furious when someone close seems about to leave, and both have lost partners and colleagues over the years.',
       rule: 'In {o:narcgrand} the anger is scorn from above: the person does not try to keep the other, and the other is not what matters. In {o:borderline} the anger comes with desperate efforts to keep them, and swings back to pleading within hours.',
@@ -49,7 +49,7 @@ FC.unit('psychology', 'u4', {
       test: 'When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?' },
     { id: 'histrionic~ordpersonality', pair: ['histrionic', 'ordpersonality'], step: 'P1',
       shared: 'Both can be dramatic in everything, in every place, for years.',
-      rule: 'In {o:histrionic} the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In {o:ordpersonality} the drama is only how the person is, and friends and neighbours stay.',
+      rule: 'In {o:histrionic} the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In {o:ordpersonality} the drama is only how the person is, and friends and neighbors stay.',
       test: 'When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?' },
     { id: 'narcgrand~antisocial', pair: ['narcgrand', 'antisocial'], step: 'P1',
       shared: 'Both can be charming, sure of themselves and scornful of others, and both leave people hurt.',
@@ -71,7 +71,7 @@ FC.unit('psychology', 'u4', {
       cards: ['meet-narcvuln', 'again-narcvuln', 'portrait-narcvuln', 'check-narcvuln', 'look-narcgrand-narcvuln', 'look-narcvuln-ordpersonality'] },
     { id: 'p3', title: 'Clinging to people, and turning on them',
       cards: ['meet-borderline', 'again-borderline', 'portrait-borderline', 'check-borderline', 'look-narcvuln-borderline', 'look-narcgrand-borderline'] },
-    { id: 'p4', title: 'At the centre of attention',
+    { id: 'p4', title: 'At the center of attention',
       cards: ['meet-histrionic', 'again-histrionic', 'portrait-histrionic', 'check-histrionic',
               'look-borderline-histrionic', 'look-narcgrand-histrionic', 'look-histrionic-ordpersonality'] },
     { id: 'p5', title: 'Breaking rules and using people, and the question',
@@ -124,7 +124,8 @@ FC.unit('psychology', 'u4', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the lasting-way branch of the key, taught as six names with a repeated cost as the one thing that separates the five names from the sixth. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     wrongIdeas: [
       { card: 'refute-label', about: 'narcgrand',

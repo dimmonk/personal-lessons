@@ -11,7 +11,7 @@ FC.cards('civics', 'u10', [
     plain: [
       'Priya’s cousin has asked about two things that people take for granted, and the answers are two amendments. Both were made in 1913, in the same year, so for these two it is what each did, and not the year, that tells them apart.',
       'The Sixteenth Amendment allowed a federal income tax: a tax on what people earn. Congress already had the power to tax, and the amendment added to it. The Seventeenth Amendment made senators elected by voters. Before it, state legislatures chose them. Both came in the years of big industry and big cities.',
-      'Two more changes belong to the same years. In 1882 Congress passed the Chinese Exclusion Act, which was a bar on a group of people coming in because of where they came from. And reformers and labour unions pushed for shorter hours and an end to child labour. The four facts below are what each of these four did or asked for.'
+      'Two more changes belong to the same years. In 1882 Congress passed the Chinese Exclusion Act, which was a bar on a group of people coming in because of where they came from. And reformers and labor unions pushed for shorter hours and an end to child labor. The four facts below are what each of these four did or asked for.'
     ] },
 
   { id: 'facts-laws', kind: 'facts',
@@ -25,7 +25,7 @@ FC.cards('civics', 'u10', [
         relates: 'Before it, state legislatures chose the senators, and after it the voters did. So when Priya votes for a senator, she is using the change that this amendment made.' },
       { id: 'lw-exclusion', q: 'What was the Chinese Exclusion Act of 1882?', a: 'A bar on a group of people coming in, because of where they came from',
         relates: 'It was the first major law of its kind, and Congress passed it. It is the one of the four that is about arrival and not about the Constitution.' },
-      { id: 'lw-reform', q: 'What did reformers and labour unions of these years push for?', a: 'Shorter hours and an end to child labour',
+      { id: 'lw-reform', q: 'What did reformers and labor unions of these years push for?', a: 'Shorter hours and an end to child labor',
         relates: 'This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.' }
     ] },
 

@@ -17,7 +17,7 @@ FC.cards('ideology', 'u2', [
         reason: 'The text asks for a change of ownership and goes no further: {cue:C2}. It says nothing about how power is to be won or held, about elections, or about getting rid of the government. The answer is {a:C2.none}, and it leaves one name.' }
     ],
     hold: {
-      neighbour: 'ml',
+      neighbor: 'ml',
       prompt: { kind: 'reason',
         lead: 'The text wants the power station to pass to the government, which is also what the party in the mill pamphlet wanted.',
         choices: [
@@ -54,7 +54,7 @@ FC.cards('ideology', 'u2', [
         reason: 'Now look at what the text says about power: {cue:C2}. The party will take the government by force and hold it, and allow no rival. That is the answer {a:C2.seize}, and it leaves one name.' }
     ],
     hold: {
-      neighbour: 'marx',
+      neighbor: 'marx',
       prompt: { kind: 'reason',
         lead: 'The pamphlet opens with a sum that shows how the owners gain, so the first thing it brings to mind is the name for an explanation.',
         choices: [
@@ -102,7 +102,7 @@ FC.cards('ideology', 'u2', [
       { outcome: 'classonly', occasion: 'A notice, post or leaflet that took the workers’ side and stopped there.' },
       { outcome: 'demsoc', occasion: 'An argument about whether a railway, a bank or a power company should be owned by the public.' },
       { outcome: 'ml', occasion: 'A time the word "communist" was used about a plan, and you can check whether the text said a party would take power and keep it.' },
-      { outcome: 'anarch', occasion: 'A co-operative, a squat or a meeting that runs itself with nobody giving orders.' },
+      { outcome: 'anarch', occasion: 'A cooperative, a squat or a meeting that runs itself with nobody giving orders.' },
       { outcome: 'mktsoc', occasion: 'A shop or firm owned by the people who work in it, selling to the public.' },
       { outcome: 'marx', occasion: 'A lecture, a book or a pamphlet that explains why wages and profit are what they are.' }
     ],

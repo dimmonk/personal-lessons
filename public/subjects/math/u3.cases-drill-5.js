@@ -10,15 +10,15 @@ FC.cases('math', 'u3', [
     topic: 'mugs on a market stall',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A market stall sold 24 mugs, some at €4 each and some at €6 each, and took €112. How many of each price were sold?',
+    text: 'A market stall sold 24 mugs, some at $4 each and some at $6 each, and took $112. How many of each price were sold?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'sold 24 mugs, some at €4 each and some at €6 each',
-        'took €112',
+        'sold 24 mugs, some at $4 each and some at $6 each',
+        'took $112',
         'How many of each price were sold?'
       ],
-      A1: ['sold 24 mugs, some at €4 each and some at €6 each', 'took €112']
+      A1: ['sold 24 mugs, some at $4 each and some at $6 each', 'took $112']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -31,7 +31,7 @@ FC.cases('math', 'u3', [
     steps: [
       {
         does: 'Name the two missing numbers with letters, and write the two facts',
-        working: 'x is the number of mugs at €4 and y is the number of mugs at €6. The count fact: x + y = 24. The totals fact: 4 × x + 6 × y = 112'
+        working: 'x is the number of mugs at $4 and y is the number of mugs at $6. The count fact: x + y = 24. The totals fact: 4 × x + 6 × y = 112'
       },
       {
         does: 'Use the count fact to write one letter in terms of the other',
@@ -54,15 +54,15 @@ FC.cases('math', 'u3', [
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '16 mugs at €4 and 8 mugs at €6' },
+        { id: 'r', text: '16 mugs at $4 and 8 mugs at $6' },
         {
           id: 's1',
-          text: '8 mugs at €4 and 16 mugs at €6',
-          slip: 'you attach the two numbers to the wrong things: 8 belongs to the mugs at €6, the thing that was named y, and not to the mugs at €4.'
+          text: '8 mugs at $4 and 16 mugs at $6',
+          slip: 'you attach the two numbers to the wrong things: 8 belongs to the mugs at $6, the thing that was named y, and not to the mugs at $4.'
         },
         {
           id: 's2',
-          text: '12 mugs at €4 and 12 mugs at €6',
+          text: '12 mugs at $4 and 12 mugs at $6',
           slip: 'you use only the count fact and share the 24 out equally, which ignores the totals fact.'
         }
       ]
@@ -75,10 +75,10 @@ FC.cases('math', 'u3', [
     use: 'drill',
     tier: 'varied',
     setting: 'work',
-    topic: 'apple bags in a farm shop',
+    topic: 'apple bags in a farm stand',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A farm shop packed 30 bags of apples, some of 3 kg and some of 5 kg, and the bags weighed 114 kg in all. How many bags of each size were there?',
+    text: 'A farm stand packed 30 bags of apples, some of 3 kg and some of 5 kg, and the bags weighed 114 kg in all. How many bags of each size were there?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
@@ -214,15 +214,15 @@ FC.cases('math', 'u3', [
     topic: 'herbs and shrubs for a garden',
     kind: 'problem',
     outcome: 'simul',
-    text: 'A family bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each, and spent €84. How many herbs and how many shrubs did they buy?',
+    text: 'A family bought 12 plants for the garden, some herbs at $3 each and some shrubs at $9 each, and spent $84. How many herbs and how many shrubs did they buy?',
     route: { M1: ['unknown'], A1: ['totals'] },
     cues: {
       M1: [
-        'bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each',
-        'spent €84',
+        'bought 12 plants for the garden, some herbs at $3 each and some shrubs at $9 each',
+        'spent $84',
         'How many herbs and how many shrubs did they buy?'
       ],
-      A1: ['bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each', 'spent €84']
+      A1: ['bought 12 plants for the garden, some herbs at $3 each and some shrubs at $9 each', 'spent $84']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',

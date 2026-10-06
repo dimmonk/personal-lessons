@@ -36,7 +36,7 @@ FC.cards('math', 'u5', [
   { id: 'portrait-comb', kind: 'portrait', outcome: 'comb',
     link: 'You know what to point to for {o:comb}. This card fills in the rest of the picture, so that you can spot it where nobody marks the words for you.',
     typical: [
-      'One group of different things or people: volunteers, flavours, books, shares, cards.',
+      'One group of different things or people: volunteers, flavors, books, shares, cards.',
       'A smaller group of a stated size is picked, and everyone in it has the same part: a team, a committee, a box, a hand of cards.',
       'Each pick uses up what it takes, so the picks come from 9, then 8, then 7, then 6, as in the second kind.',
       'The question asks how many different groups there are, and the same members in any order are one group.',
@@ -71,14 +71,14 @@ FC.cards('math', 'u5', [
     ] },
 
   { id: 'look-multprin-comb', kind: 'lookalike', ledger: 'multprin~comb',
-    link: 'The first and third kinds can both be about a stall with 6 flavours. This card puts them side by side, with the same stall and the same 6 flavours.',
+    link: 'The first and third kinds can both be about a stall with 6 flavors. This card puts them side by side, with the same stall and the same 6 flavors.',
     cases: ['m5-la-cones-mp', 'm5-la-cones-co'],
-    instruction: 'Both problems are about the same stall and the same 6 flavours. Compare one thing: does the customer pick one thing from each of two separate lists, or several things from one list?',
+    instruction: 'Both problems are about the same stall and the same 6 flavors. Compare one thing: does the customer pick one thing from each of two separate lists, or several things from one list?',
     prompt: { kind: 'which', option: 'C1.group', answer: 'm5-la-cones-co' },
     difference: [
-      'In Case A the customer picks one flavour and one cone. There are two separate lists, 6 flavours and 3 cones, and picking a flavour uses up no cone. Each choice has a list of its own: the answer is {a:C1.lists}, and the count is 6 × 3 = 18.',
-      'In Case B the customer picks 2 different flavours, both from the one list of 6, in either order. The second flavour comes from the 5 that are left, and the same two flavours in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the answer is {a:C1.group}. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.',
-      'Both are about 6 flavours, and both multiply. What differs is whether the picks come from separate lists or from one group. Separate lists keep their full length however many picks are made, and one group gets shorter with each pick.'
+      'In Case A the customer picks one flavor and one cone. There are two separate lists, 6 flavors and 3 cones, and picking a flavor uses up no cone. Each choice has a list of its own: the answer is {a:C1.lists}, and the count is 6 × 3 = 18.',
+      'In Case B the customer picks 2 different flavors, both from the one list of 6, in either order. The second flavor comes from the 5 that are left, and the same two flavors in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the answer is {a:C1.group}. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.',
+      'Both are about 6 flavors, and both multiply. What differs is whether the picks come from separate lists or from one group. Separate lists keep their full length however many picks are made, and one group gets shorter with each pick.'
     ] },
 
   /* ---------- A wrong idea: the name on the lock ---------- */

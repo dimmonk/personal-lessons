@@ -6,7 +6,7 @@
 
 FC.unit('civics', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
@@ -72,7 +72,7 @@ FC.unit('civics', 'u4', {
               'meet-pardon', 'again-pardon', 'portrait-pardon', 'check-pardon', 'refute-pardon',
               'look-veto-pardon', 'look-veto-execute', 'q-pres', 'check-pres'] },
     { id: 'p4', title: 'Two whole cases, then the drill',
-      cards: ['worked-hospital', 'worked-harbour'], drill: true, close: ['recap-pres', 'transfer-pres'] }
+      cards: ['worked-hospital', 'worked-harbor'], drill: true, close: ['recap-pres', 'transfer-pres'] }
   ],
 
   // The drill is a ramp of five stages (lesson standard A10). The app owns the wording of every stage instruction.
@@ -123,7 +123,8 @@ FC.unit('civics', 'u4', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the President or a federal agency. It replaces old Unit Three’s President part, the airline-rule worked case, old Unit Four’s card on the citizenship test, and old Unit Seven’s passport-fee worked case. Not yet deployed, so later edits stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

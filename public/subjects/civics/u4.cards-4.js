@@ -8,7 +8,7 @@ FC.cards('civics', 'u4', [
     link: 'The second of the President’s own powers is not about the armed forces at all. It is about speaking for the country to another country.',
     case: 'e-coasttalks', mark: 'E1',
     strip: [
-      'The President travelled to another country and met its leader.',
+      'The President traveled to another country and met its leader.',
       'They talked for two days about a matter both countries care about: fishing along a shared coast.',
       'They reached an agreement and signed a paper that says so.',
       'No law is named, nobody at home is ordered anywhere, and nobody outside the two governments is asked to do anything.'

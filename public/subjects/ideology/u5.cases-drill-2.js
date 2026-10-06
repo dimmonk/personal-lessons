@@ -15,7 +15,7 @@ FC.cases('ideology', 'u5', [
     not: { outcome: 'modlib', why: 'The text talks of schooling, but it asks the government to give nothing. A text that asked it to pay for a school for every child would be {o:modlib}.' } },
 
   { id: 'i5-f-modlib', use: 'drill', tier: 'clean', setting: 'town', topic: 'a bus to every village',
-    text: "From a letter by Councillor Rhona Pike: 'Every person is free to go where they like, and the government must protect that. But a person with no bus can go nowhere. We ask the government to pay for a bus to every village, so that everyone has somewhere to start from, and we will all pay for it together.'",
+    text: "From a letter by Council Member Rhona Pike: 'Every person is free to go where they like, and the government must protect that. But a person with no bus can go nowhere. We ask the government to pay for a bus to every village, so that everyone has somewhere to start from, and we will all pay for it together.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Every person is free to go where they like, and the government must protect that',
             R1: 'We ask the government to pay for a bus to every village, so that everyone has somewhere to start from' },
@@ -23,11 +23,11 @@ FC.cases('ideology', 'u5', [
               R1: 'The government is to pay for something that reaches everyone: {cue:R1}.' },
     not: { outcome: 'clib', why: 'The text begins by asking the government to protect a freedom, as {o:clib} does. It then asks the government to pay for a bus, which {o:clib} would not.' } },
 
-  { id: 'i5-f-idegal', use: 'drill', tier: 'clean', setting: 'housing', topic: 'flats let to whoever queues first',
-    text: "From a report by the Linden Disability Forum: 'The housing association lets every flat to whoever queues at its office at nine on Monday. The rule is the same for everyone, and it leaves behind people who cannot stand in a line. A rule that treats everyone alike has left them behind. We ask the association to change how flats are let until disabled applicants are housed as often as anyone. Nobody is asking to be placed above anyone.'",
+  { id: 'i5-f-idegal', use: 'drill', tier: 'clean', setting: 'housing', topic: 'apartments rented to whoever lines up first',
+    text: "From a report by the Linden Disability Forum: 'The housing authority rents every apartment to whoever lines up at its office at nine on Monday. The rule is the same for everyone, and it leaves behind people who cannot stand in a line. A rule that treats everyone alike has left them behind. We ask the housing authority to change how apartments are rented until disabled applicants are housed as often as anyone. Nobody is asking to be placed above anyone.'",
     outcome: 'idegal', route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'Nobody is asking to be placed above anyone',
-            R1: ['A rule that treats everyone alike has left them behind', 'We ask the association to change how flats are let'] },
+            R1: ['A rule that treats everyone alike has left them behind', 'We ask the housing authority to change how apartments are rented'] },
     reason: { D1: 'The text wants fair treatment for one group and wants no one placed above another: {cue:D1}.',
               R1: 'A rule that treats everyone alike is said to leave a group behind, and the text asks for it to change: {cue:R1}. That is a request for {t:equity}.' },
     not: { outcome: 'clib', why: 'The text names a rule that is the same for everyone, as {o:clib} would. But {o:clib} says that is enough. This text says it has left a group behind.' } },

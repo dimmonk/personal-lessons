@@ -63,13 +63,13 @@ FC.cases('ideology', 'u3', [
     ] },
 
   { id: 'n-gazette', use: 'check', tier: 'clean', setting: 'money', topic: 'a notice in the official gazette',
-    text: "From the official gazette of Brevia: 'The people of Brevia are one body, and the Committee is its single voice. Taxes will be paid to the Committee's office from the first of May. The election due in March is cancelled, and speeches against the Committee are an offence.'",
+    text: "From the official gazette of Brevia: 'The people of Brevia are one body, and the Committee is its single voice. Taxes will be paid to the Committee's office from the first of May. The election due in March is canceled, and speeches against the Committee are an offense.'",
     outcome: 'fasc', route: { D1: ['nation'], N1: ['whole'], N2: ['aside'] },
-    cues: { N2: 'The election due in March is cancelled, and speeches against the Committee are an offence' },
+    cues: { N2: 'The election due in March is canceled, and speeches against the Committee are an offense' },
     segments: [
       { text: 'The people of Brevia are one body, and the Committee is its single voice', note: 'That says whom the text speaks for. The words that take away anyone\'s say are in the last sentence.' },
       { text: "Taxes will be paid to the Committee's office from the first of May", note: 'That says where the taxes go. It does not take away anyone\'s say.' },
-      { text: 'The election due in March is cancelled, and speeches against the Committee are an offence' }
+      { text: 'The election due in March is canceled, and speeches against the Committee are an offense' }
     ],
-    reason: { N2: 'The text wants an election cancelled and speeches against the Committee made an offence: {cue:N2}. That takes away the vote and the right to object, so that the Committee is the single voice.' } }
+    reason: { N2: 'The text wants an election canceled and speeches against the Committee made an offense: {cue:N2}. That takes away the vote and the right to object, so that the Committee is the single voice.' } }
 ]);

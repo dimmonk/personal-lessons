@@ -61,13 +61,13 @@ FC.cards('scams', 'u3', [
         reason: 'Now ask whether it fits something Callum started. It does not. He was cooking when the phone rang, and the call came to him: {cue:A2}. A code is for typing into a sign-in that you started, and he started nothing. So the answer is no.' }
     ],
     hold: {
-      neighbour: 'realsignin',
+      neighbor: 'realsignin',
       prompt: { kind: 'reason',
         lead: 'The code is real, and it comes from Callum\'s own streaming service, so the case can look like the real thing.',
         choices: [
           { id: 'a', text: 'The code is real, and it comes from Callum\'s own streaming service.',
             note: 'True, and it is why the case can look like {o:realsignin}. But a real code is typed in by the person it was sent to. Here it is asked for by someone else.' },
-          { id: 'b', text: 'Callum did not ask for the code. A man who rang him wants it read out.' },
+          { id: 'b', text: 'Callum did not ask for the code. A man who called him wants it read out.' },
           { id: 'c', text: 'The man says someone is signing in from another country.',
             note: 'True, and it is the story the man tells. It is the reason he gives for the call, and a reason does not show who started anything.' }
         ],
@@ -80,7 +80,7 @@ FC.cards('scams', 'u3', [
     impression: {
       resembles: 'ac-phoneorder',
       text: [
-        'You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the phone-order call: someone rings, says there is a problem on the account, and a real code arrives while they are talking.',
+        'You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the phone-order call: someone calls, says there is a problem on the account, and a real code arrives while they are talking.',
         'Here the questions and the likeness agree, so the answer stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The second whole case shows how.'
       ]
     } },
@@ -96,24 +96,24 @@ FC.cards('scams', 'u3', [
         reason: 'Now ask what she is asked to type or press. The site says to sign in with her email account, but what her provider\'s {t:permission} then asks her to do is press Allow, for an app: {cue:A1}. No password is typed into the site. What is asked is an Allow.' },
       { step: 'A2',
         reason: [
-          'Now ask whether it fits something she started. This is where the story points the wrong way. Fern did set out to do this: she wanted her CV checked and she opened the site herself. She found it by searching, and the first result of a search can be an advert that anyone can buy, so even the first half is doubtful.',
-          'But you do not need to settle that, because the second half fails on its own. Look at what the {t:permission} asks: {cue:A2}. Checking a CV needs a CV. It does not need every email Fern has, or the right to send and delete them. So the answer is no.'
+          'Now ask whether it fits something she started. This is where the story points the wrong way. Fern did set out to do this: she wanted her résumé checked and she opened the site herself. She found it by searching, and the first result of a search can be an ad that anyone can buy, so even the first half is doubtful.',
+          'But you do not need to settle that, because the second half fails on its own. Look at what the {t:permission} asks: {cue:A2}. Checking a résumé needs a résumé. It does not need every email Fern has, or the right to send and delete them. So the answer is no.'
         ] }
     ],
     hold: {
-      neighbour: 'realsignin',
+      neighbor: 'realsignin',
       prompt: { kind: 'reason',
         lead: 'Fern went looking for the site herself, and the {t:permission} is her own provider\'s, so the case can look like a real Allow.',
         choices: [
-          { id: 'a', text: 'Fern started it herself, by searching for a CV checker.',
+          { id: 'a', text: 'Fern started it herself, by searching for a résumé checker.',
             note: 'True, and it is why the case can look like {o:realsignin}. But starting it yourself is only half of what a real one needs. The other half is that it asks only what the task needs.' },
           { id: 'b', text: 'The {t:permission} comes from her own email provider.',
             note: 'True. The {t:permission} is real in all three scams too, so it settles nothing.' },
-          { id: 'c', text: 'The {t:permission} asks to read, send and delete all her email, for a job that needs only a CV.' }
+          { id: 'c', text: 'The {t:permission} asks to read, send and delete all her email, for a job that needs only a résumé.' }
         ],
         answer: 'c' },
       reason: [
-        'For {o:realsignin} you must be able to point to this: {needs:realsignin}. The last part of it, nothing asked beyond what you set out to do, fails here. Fern set out to check a CV, and the {t:permission} asks for her whole mailbox.',
+        'For {o:realsignin} you must be able to point to this: {needs:realsignin}. The last part of it, nothing asked beyond what you set out to do, fails here. Fern set out to check a résumé, and the {t:permission} asks for her whole mailbox.',
         'It is the question from Omar\'s two cases. {test:appscam~realsignin} Here the {t:permission} asks for far more than the job, so the answer is {a:A2.notfit}.'
       ]
     },

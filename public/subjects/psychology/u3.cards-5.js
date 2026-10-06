@@ -18,7 +18,7 @@ FC.cards('psychology', 'u3', [
   { id: 'look-darvo-ord', kind: 'lookalike', ledger: 'darvo~ordexchange',
     link: 'Next, {o:darvo} beside the ordinary exchange. In both a person is told about something and answers with a denial, so a denial on its own settles nothing.',
     cases: ['fence-guilty', 'fence-innocent'],
-    instruction: 'Both cases are about Mira, her neighbour Joel and a smashed fence panel. Compare one thing: does the case show that Joel did it?',
+    instruction: 'Both cases are about Mira, her neighbor Joel and a smashed fence panel. Compare one thing: does the case show that Joel did it?',
     prompt: { kind: 'which', option: 'T1.reverse', answer: 'fence-guilty' },
     difference: [
       'In Case A, the doorbell camera shows Joel backing his van into the fence. When Mira raises it, he denies it ("I never touched your fence"), attacks her ("you are the one who parks across everyone’s drive") and plays the one wronged ("I am sick of being the one who gets blamed"). The answer is {a:T1.reverse}, and the case is {o:darvo}.',
@@ -30,11 +30,11 @@ FC.cards('psychology', 'u3', [
     h: 'A reply that sounds like {o:darvo}, and is not',
     link: 'The last card put two tidy cases side by side. This one is messier: a person who denies it, attacks, and says they are the one picked on, and who is not turning anything around.',
     case: 'cupboard',
-    setup: 'Tara’s answer has all three parts: she denies it ("I locked it"), she attacks Mr Boyd ("You always blame me first"), and she says she is the one picked on. Yet this case is {o:ordexchange}.',
-    prompt: { kind: 'phrase', answer: 'The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
+    setup: 'Tara’s answer has all three parts: she denies it ("I locked it"), she attacks Mr. Boyd ("You always blame me first"), and she says she is the one picked on. Yet this case is {o:ordexchange}.',
+    prompt: { kind: 'phrase', answer: 'The closet log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.' },
     because: [
-      'The first thing the name {o:darvo} needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the cupboard, and the cupboard log shows who opened it. Her denial is true.',
-      'A person who is wrongly accused can be hurt, say sharp things, and say they are picked on, and all of that is an ordinary reply to a mistake. What makes the name is that the denial is of something the case shows they did. Take that away and the same words are only a defence.'
+      'The first thing the name {o:darvo} needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the closet, and the closet log shows who opened it. Her denial is true.',
+      'A person who is wrongly accused can be hurt, say sharp things, and say they are picked on, and all of that is an ordinary reply to a mistake. What makes the name is that the denial is of something the case shows they did. Take that away and the same words are only a defense.'
     ] },
 
   { id: 'look-lovebomb-ord', kind: 'lookalike', ledger: 'lovebomb~ordexchange',
@@ -64,10 +64,10 @@ FC.cards('psychology', 'u3', [
     link: 'The last card put two tidy cases side by side. This one is harder: someone accuses another of what they do themselves, and the case is still {o:ordexchange}.',
     case: 'dishes',
     setup: 'Zoe tells Adam he never washes up, and the case shows Zoe leaving plates in the sink for days. That is an accusation made by someone who does the same. Yet this case is {o:ordexchange}.',
-    prompt: { kind: 'phrase', answer: 'The rota on the fridge shows that Adam has not washed up for three weeks.' },
+    prompt: { kind: 'phrase', answer: 'The chore chart on the fridge shows that Adam has not done the dishes for three weeks.' },
     because: [
-      'The name {o:projection} needs two halves: the accuser doing it, and nothing in the case showing the other person doing it. Here the second half is missing. The rota shows that Adam has not washed up for three weeks, so what Zoe says is true.',
-      'A true accusation does not stop being true because the person who makes it is not perfect. Adam agrees, says that Zoe does it too, and they fix the rota. That is two people sorting out a household problem.'
+      'The name {o:projection} needs two halves: the accuser doing it, and nothing in the case showing the other person doing it. Here the second half is missing. The chore chart shows that Adam has not done the dishes for three weeks, so what Zoe says is true.',
+      'A true accusation does not stop being true because the person who makes it is not perfect. Adam agrees, says that Zoe does it too, and they fix the chart. That is two people sorting out a household problem.'
     ] },
 
   /* ---------- A wrong idea about people, then the key's question ---------- */
@@ -88,10 +88,10 @@ FC.cards('psychology', 'u3', [
     link: 'Since the car repair you have seen the question at the foot of each new name, with one answer under it. This card puts the question and its five answers in one place, and says why it is asked.',
     decides: [
       'Look at what the question leaves out. It does not ask how upset anyone is, whether it was meant, or whether the person is a good one. It asks what the words and events in the case do to the other person, because that is what a case can show.',
-      'So two cases can have the same two people, the same upset, even the same words, and get different names. A denial can be {o:gaslight} in one case and the plain truth in another. The same angry reply can be {o:darvo}, or an ordinary defence. Only what the case shows tells them apart.'
+      'So two cases can have the same two people, the same upset, even the same words, and get different names. A denial can be {o:gaslight} in one case and the plain truth in another. The same angry reply can be {o:darvo}, or an ordinary defense. Only what the case shows tells them apart.'
     ],
     how: [
-      'Find the words in which one person speaks or acts towards the other, and ask which of the five answers they show. You should be able to put your finger on the words: the same denial coming back over months, a denial and an attack and playing the one wronged in one reply, a flood of attention and then pulling back, an accusation that fits the accuser, or none of those.',
+      'Find the words in which one person speaks or acts toward the other, and ask which of the five answers they show. You should be able to put your finger on the words: the same denial coming back over months, a denial and an attack and playing the one wronged in one reply, a flood of attention and then pulling back, an accusation that fits the accuser, or none of those.',
       'Then ask what the case must show besides the words. For the denial that comes back, that the thing really happened and that the other person began to doubt their memory. For {o:darvo}, that the person did what was raised. For {o:lovebomb}, both halves. For the accusation, that the accuser does it and that nothing shows the other person doing it. If any of these is missing, the answer is probably the ordinary one.',
       'When you are unsure, start from the ordinary exchange, because most cases are one. Give one of the other four answers only when you can point to everything it needs.'
     ],

@@ -34,7 +34,7 @@ FC.cases('ideology', 'u4', [
 
   /* ---------- Worked case one: clean ---------- */
   { id: 'i4-w-conserv', use: 'teach', tier: 'clean', setting: 'money', topic: 'a burial club', name: 'The burial club',
-    text: "From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few pence each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'",
+    text: "From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few cents each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'This old way of looking after one another should guide how Keld Row manages its money',
             T1: ['Keep the club as it is', 'The rules can be reviewed, one at a time, once every few years, and only with the members asked'] } },

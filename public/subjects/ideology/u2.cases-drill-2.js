@@ -4,7 +4,7 @@
 FC.cases('ideology', 'u2', [
 
   { id: 'c-n-sd2', use: 'drill', tier: 'varied', setting: 'schooling', topic: 'a teachers’ union and school meals',
-    text: "From a letter by the Hollin teachers' union: 'The company that runs the academy chain pays its profits out and pays its teachers late, and we stand with the teachers. The chain can stay as it is. We ask for a law on the pay of teachers and a tax on the chain's profits to fund school meals. We will take this to the voters at the next election.'",
+    text: "From a letter by the Hollin teachers' union: 'The company that runs the charter-school chain pays its profits out and pays its teachers late, and we stand with the teachers. The chain can stay as it is. We ask for a law on the pay of teachers and a tax on the chain's profits to fund school meals. We will take this to the voters at the next election.'",
     outcome: 'socdem', route: { D1: ['class'], C1: ['keep'], C2: ['vote'] },
     cues: { C1: "The chain can stay as it is. We ask for a law on the pay of teachers and a tax on the chain's profits to fund school meals", C2: 'We will take this to the voters at the next election' },
     reason: { C1: 'The chain stays, and a law and a tax are asked for: {cue:C1}.',
@@ -20,7 +20,7 @@ FC.cases('ideology', 'u2', [
     not: { outcome: 'socdem', why: 'The pharmacies leave the chain. A text that left the chain its pharmacies and taxed it would be {o:socdem}.' } },
 
   { id: 'c-n-an2', use: 'drill', tier: 'varied', setting: 'work', topic: 'quarrymen who want no rulers',
-    text: "From a notice at the Blackwood quarry: 'The company that owns the quarry pays us by the tonne, and the government pays the police who guard its gate, and we stand with the quarrymen. We want the quarry to belong to those who work it. We want no government at all, and we will not use one. We will run the quarry and the village by agreement among ourselves, in open meetings.'",
+    text: "From a notice at the Blackwood quarry: 'The company that owns the quarry pays us by the ton, and the government pays the police who guard its gate, and we stand with the quarrymen. We want the quarry to belong to those who work it. We want no government at all, and we will not use one. We will run the quarry and the village by agreement among ourselves, in open meetings.'",
     outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] },
     cues: { C1: 'We want the quarry to belong to those who work it', C2: 'We want no government at all, and we will not use one. We will run the quarry and the village by agreement among ourselves, in open meetings' },
     reason: { C1: 'The quarry is to belong to the people who work it: {cue:C1}. Nothing is said about competing.',
@@ -36,7 +36,7 @@ FC.cases('ideology', 'u2', [
     not: { outcome: 'classonly', why: 'The text says nothing about the businesses, but it says the committee will rule alone, and the question about the government names that. A text that said nothing about power as well would be {o:classonly}.' } },
 
   { id: 'c-n-mx2', use: 'drill', tier: 'varied', setting: 'schooling', topic: 'a college café and what any firm keeps',
-    text: "From a student pamphlet at Holm College: 'The college café is run by a firm that pays its staff £9 an hour and sells what they make for the equivalent of £14, once its costs are covered. The £5 goes to the firm's owners. This is not one greedy firm. It is how any firm that pays wages has to work, and the pamphlet is for the staff who work in it.'",
+    text: "From a student pamphlet at Holm College: 'The college café is run by a firm that pays its staff $9 an hour and sells what they make for the equivalent of $14, once its costs are covered. The $5 goes to the firm's owners. This is not one greedy firm. It is how any firm that pays wages has to work, and the pamphlet is for the staff who work in it.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'This is not one greedy firm. It is how any firm that pays wages has to work', C2: 'the pamphlet is for the staff who work in it' },
     reason: { C1: 'The text explains how the owners gain as the way any firm works: {cue:C1}. It asks for nothing to be done with the café.',

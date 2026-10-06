@@ -171,11 +171,11 @@ FC.key('wealth', {
       means: 'a demand, backed by the courts, that someone pay for harm they are said to have caused, such as an injury on their property or in a crash they caused' },
     // Unit Two.
     { id: 'indexfund', unit: 'u2', n: 'an index fund',
-      means: 'a fund that simply holds every company on a published list, such as the largest companies in one country, with nobody choosing what to buy, so it charges very little' },
+      means: 'a fund that simply holds every company on a published list, such as the largest companies in the US, with nobody choosing what to buy, so it charges very little' },
     { id: 'sheltered', unit: 'u2', n: 'a sheltered account',
-      means: 'an account the law taxes less, or later, such as a pension. An ordinary investment account, taxed in full, is a taxable account' },
+      means: 'an account the law taxes less, or later, such as a 401(k), an IRA or a Roth IRA, with a yearly limit on what can be paid in. An ordinary brokerage account, taxed in full, is a taxable account' },
     { id: 'gain', unit: 'u2', n: 'a gain',
-      means: 'how far something has risen above what was paid for it. Tax on a gain is usually due only when it is sold; until then it is a gain on paper' },
+      means: 'how far something has risen above what was paid for it. Tax on a gain is usually due only when it is sold; until then it is a gain on paper. Sold after more than a year it is a long-term gain, taxed at a lower rate than a short-term gain on something held a year or less' },
     { id: 'compounding', unit: 'u2', n: 'compounding',
       means: 'growth on growth: each year’s growth is worked out on the money plus all the growth already added, so a cost taken every year also takes the growth that money would have earned' },
     // Unit Three.
@@ -183,16 +183,16 @@ FC.key('wealth', {
       means: 'one investment someone owns: one company’s shares, one property or one business' },
     { id: 'threesupports', unit: 'u3', n: 'the three supports',
       means: 'what makes it safe to keep most of the pot in a business you run: everything else spread across many investments, several years of spending held outside the business, and no loan against its shares' },
-    { id: 'company', unit: 'u3', n: 'a limited company',
-      means: 'a business the law treats as a person of its own: it owns things and owes its debts in its own name, so its owners do not normally pay those debts from their own money' },
+    { id: 'company', unit: 'u3', n: 'an LLC',
+      means: 'a kind of company, common for small businesses and rental property, that the law treats as a person of its own: it owns things and owes its debts in its own name, so its owners do not normally pay those debts from their own money' },
     // Unit Four.
     { id: 'sequence', unit: 'u4', n: 'sequence risk',
       means: 'the harm done when a fall comes early, while money is being taken out, rather than later: more has to be sold at low prices, and what is sold is not there when prices come back' },
     // Unit Five.
     { id: 'estate', unit: 'u5', n: 'an estate',
-      means: 'everything a person owns when they die. Many countries tax the part of it above a tax-free limit before the people who inherit receive it' },
+      means: 'everything a person owns when they die. The federal estate tax takes a share of the part above a tax-free limit before the people who inherit receive it, so only large estates pay it; some states tax smaller estates too' },
     { id: 'benform', unit: 'u5', n: 'a beneficiary form',
-      means: 'a form held by a pension company, an insurer or a bank that names who should receive that account when its owner dies. It is separate from the will, so changing the will does not change it' },
+      means: 'a form held by the firm that runs a 401(k) or an IRA, by a life insurer or by a bank, that names who should receive that account when its owner dies (a beneficiary designation). It is separate from the will, so changing the will does not change it' },
     { id: 'poa', unit: 'u5', n: 'a power of attorney',
       means: 'a signed document naming someone who may handle your money and affairs if you cannot, for example after a stroke' },
     { id: 'trustword', unit: 'u5', n: 'a trust',
@@ -202,9 +202,9 @@ FC.key('wealth', {
   // Words the old lessons used that a newcomer could not follow (docs/comprehension-audit/wealth.md), words that meant two
   // things there, and the old key's own wordings that this key replaces.
   avoid: [
-    { word: 'realise', sayInstead: 'sell' },
-    { word: 'realised', sayInstead: 'sold' },
-    { word: 'unrealised', sayInstead: 'not sold, on paper' },
+    { word: 'realize', sayInstead: 'sell' },
+    { word: 'realized', sayInstead: 'sold' },
+    { word: 'unrealized', sayInstead: 'not sold, on paper' },
     { word: 'basis', sayInstead: 'what was paid for it' },
     { word: 'callable', sayInstead: 'can be demanded back' },
     { word: 'wrapper', sayInstead: 'the account or fund it sits in' },
@@ -381,7 +381,7 @@ FC.key('wealth', {
             when: 'the will, a beneficiary form or a power of attorney is missing, or names someone it should no longer name, or was written before a change such as a marriage, a divorce, a birth or a death',
             keeps: ['basicdocs'] },
           { id: 'bigestate', n: 'Tax on an estate above the tax-free limit, with more than the owner needs',
-            when: 'the estate is above the limit on which the country charges tax at death, the owner has more than they will need to live on, and nothing in it is expected to rise sharply in value',
+            when: 'the estate is above the tax-free limit for the estate tax charged at death, the owner has more than they will need to live on, and nothing in it is expected to rise sharply in value',
             keeps: ['gifting'],
             yieldsTo: [{ option: 'papers', say: 'papers that are out of date or missing' },
                        { option: 'growth', say: 'something expected to rise sharply in value' }] },

@@ -19,7 +19,7 @@ FC.cards('stats', 'u3', [
       'It is not how many answered that matters, but who decided that they would be counted. In the first name the people were all there at the start, and the ones missing from the figure had left. Here nobody has left. The ones who are missing were never asked, and the ones who are in the figure are in because they took the trouble.'
     ],
     feature: { step: 'A1', option: 'chose' },
-    name: 'The name for this is {o:selfselect}. "Self-selection" means choosing yourself: the people in the figure picked themselves into it, and "bias" is the lean that results, towards the people who feel most like answering.' },
+    name: 'The name for this is {o:selfselect}. "Self-selection" means choosing yourself: the people in the figure picked themselves into it, and "bias" is the lean that results, toward the people who feel most like answering.' },
 
   { id: 'again-selfselect', kind: 'again', outcome: 'selfselect',
     link: 'The magazine poll gave you what to point to: {needs:selfselect}. Here is a second case, in a hospital.',
@@ -36,7 +36,7 @@ FC.cards('stats', 'u3', [
     typical: [
       'Nobody is picked. A call-in line, a website vote, a comment card, a box, a link in a message: whoever sees it and wants to answers.',
       'The figure often comes with a big count, and the count is meant to impress: "thousands of votes", "over 50,000 responses".',
-      'The people who answer are the ones with a reason to: strong feelings, a grievance, great enthusiasm, spare time or something at stake. People who feel little do not bother. The answers lean towards strong feelings, and the figure does not say how many feel nothing.',
+      'The people who answer are the ones with a reason to: strong feelings, a grievance, great enthusiasm, spare time or something at stake. People who feel little do not bother. The answers lean toward strong feelings, and the figure does not say how many feel nothing.',
       'The group that answered is often unlike the group the claim speaks for: the listeners of one radio show, the readers of one magazine, the customers who write reviews.',
       'The claim usually does not say "the people who answered". It says "the town", "workers", "customers", "voters". The words that give it away are the ones that speak for more than answered.'
     ],
@@ -73,7 +73,7 @@ FC.cards('stats', 'u3', [
   /* ---------- An exception: volunteers who are not this name ---------- */
   { id: 'exc-volunteers', kind: 'exception', ledger: 'selfselect~cause_ok', looksLike: 'selfselect', is: 'cause_ok',
     h: 'Volunteers, split by lottery',
-    link: 'You now know that a figure from people who chose to answer leans towards them. People can also volunteer for a study, and the claim from it can still hold. This card shows the case where it does.',
+    link: 'You now know that a figure from people who chose to answer leans toward them. People can also volunteer for a study, and the claim from it can still hold. This card shows the case where it does.',
     case: 'cn-pillow',
     setup: 'The sleep lab asked for volunteers through a newspaper ad, so the people in the study chose themselves, and people who chose to take part are what you point to for {a:A1.chose}. Yet the answer to the first question for this case is {a:S1.holds}, and to the question after it, {q:H1}, the answer is {a:H1.causes}.',
     prompt: { kind: 'phrase', answer: 'The lab drew names by lottery' },

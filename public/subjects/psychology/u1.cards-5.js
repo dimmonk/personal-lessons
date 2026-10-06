@@ -10,7 +10,7 @@ FC.cards('psychology', 'u1', [
   { id: 'look-tactic-none', kind: 'lookalike', ledger: 'tactic~none',
     link: 'You have compared three pairs of kinds. Three pairs are left. The first is {a:D1.tactic} and {a:D1.none}: a person having a hard week can be hard on the people around them, so where does one kind stop and the other start?',
     cases: ['g-sale-curt', 'g-sale-finn'],
-    instruction: 'Both cases are about Cora in the week the buyer withdrew his offer for her flat. Compare one thing: is anything said or done to one particular person, about that person?',
+    instruction: 'Both cases are about Cora in the week the buyer withdrew his offer for her condo. Compare one thing: is anything said or done to one particular person, about that person?',
     prompt: { kind: 'which', option: 'D1.tactic', answer: 'g-sale-finn' },
     difference: [
       'In Case A Cora is hard to be around, and the whole office feels it. But nothing is said or done to any one of them about them. One-word answers and headphones are how she is with everyone this week. The answer is {a:D1.none}.',
@@ -24,7 +24,7 @@ FC.cards('psychology', 'u1', [
     instruction: 'Both cases are about Ruth in the week she lost her job. Compare one thing: does she give reasons for a view or a choice, or does the case only show how she felt and acted?',
     prompt: { kind: 'which', option: 'D1.reasoning', answer: 'g-redundancy-choice' },
     difference: [
-      'In Case A you are shown how the news has hit Ruth: no sleep, no appetite, a cancelled weekend. She has not made a choice that she then defends, and she gives no reasons for anything. Cancelling the weekend is part of how the week went. The answer is {a:D1.none}.',
+      'In Case A you are shown how the news has hit Ruth: no sleep, no appetite, a canceled weekend. She has not made a choice that she then defends, and she gives no reasons for anything. Canceling the weekend is part of how the week went. The answer is {a:D1.none}.',
       'In Case B the same news is followed by a choice, and by a reason for it. Ruth has decided not to apply for the two posts, and she says why: they would only get rid of her again. Now there is a piece of reasoning to look at, and you could go on to ask whether it is sound. The answer is {a:D1.reasoning}.',
       'Feeling bad is not reasoning, even when it leads a person to do things. It becomes reasoning at the point where the person says why: where a view or a choice is put forward, and something is offered in support of it.'
     ] },
@@ -77,7 +77,7 @@ FC.cards('psychology', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'reasoning',
+      neighbor: 'reasoning',
       prompt: { kind: 'reason',
         lead: 'Reece is defending himself, so the case can look like a person giving his reasons.',
         choices: [
@@ -113,7 +113,7 @@ FC.cards('psychology', 'u1', [
         ] }
     ],
     hold: {
-      neighbour: 'reasoning',
+      neighbor: 'reasoning',
       prompt: { kind: 'reason',
         lead: 'Petra gives reasons for missing the rehearsal, so the case can look like {a:D1.reasoning}.',
         choices: [
@@ -161,7 +161,7 @@ FC.cards('psychology', 'u1', [
     ],
     prompts: [
       { family: 'reasoning', occasion: 'The last time you explained a choice of yours to someone, or to yourself.' },
-      { family: 'tactic', occasion: 'A conversation you replayed afterwards, because of what was said to you or what you said.' },
+      { family: 'tactic', occasion: 'A conversation you replayed afterward, because of what was said to you or what you said.' },
       { family: 'pattern', occasion: 'Someone you have known for many years, in more than one part of their life. What is the same in all of it?' },
       { family: 'none', occasion: 'A bad day or a hard week, yours or someone else’s, that got described with a word that was too big for it.' }
     ],

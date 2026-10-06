@@ -7,7 +7,7 @@
 
 FC.unit('scams', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'One',
@@ -74,7 +74,7 @@ FC.unit('scams', 'u1', {
   // drill and return cases of this unit are the bank that later units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',
-    add: 'Some of these messages are real, and some are copies made to take something. That is on purpose, and the question you are practising does not say which is which: it gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.',
+    add: 'Some of these messages are real, and some are copies made to take something. That is on purpose, and the question you are practicing does not say which is which: it gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'g-p-driver', step: 'D1' }, { case: 'g-p-bank-code', step: 'D1' }],
@@ -108,25 +108,26 @@ FC.unit('scams', 'u1', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Five families, with the real notice that asks nothing taught first; five term cards; eight look-alike pairs; a baseline check of six cases.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [
       { step: 'D1', was: '"What is it asking you to do right now? If nothing, what is it about?"; four answers (money, access, install, info) in any order',
         now: '"What is it asking you to do right now?"; five answers (device, access, money, details, nothing), in the order that wins when a request asks for two',
-        why: 'The second half of the old question sent a notice that asks nothing to the family of what it is about, against the unit’s own rule to answer by the ask (audit Unit Seven 4). A message that asks nothing now has its own answer (K2.9). A request that asks for two things now has a tie-break in data (K2.8), and the order of the list is the order of the tie-break. The refund call (a view of the screen, then money back) gets the device answer; a fee page that also takes a card number gets the money answer. Each tie-break is taught on a named case (the refund call and the parking fine).' },
+        why: 'The second half of the old question sent a notice that asks nothing to the family of what it is about, against the unit’s own rule to answer by the ask (audit Unit Seven 4). A message that asks nothing now has its own answer (K2.9). A request that asks for two things now has a tie-break in data (K2.8), and the order of the list is the order of the tie-break. The refund call (a view of the screen, then money back) gets the device answer; a fee page that also takes a card number gets the money answer. Each tie-break is taught on a named case (the refund call and the parking ticket).' },
       { step: 'D1', was: '"Put something on your device"; "Give a way into your account"',
         now: '"Install something, open a file, or share your screen"; "Sign in, give a code, or allow an app"',
-        why: 'K2.4: an answer is what an observer can point to. These are the three things you would actually be asked to do in each case, and not the abstract "a way into", which the audit found undefined in Unit One. The device answer also covers a warning that gives you someone to ring to fix your device, so that the tech-support pop-up has an answer at the moment it appears.' },
+        why: 'K2.4: an answer is what an observer can point to. These are the three things you would actually be asked to do in each case, and not the abstract "a way into", which the audit found undefined in Unit One. The device answer also covers a warning that gives you someone to call to fix your device, so that the tech-support pop-up has an answer at the moment it appears.' },
       { step: 'D1', was: '"Send money"; "Give details, or only chat so far"',
         now: '"Pay or send money"; "Tell them about yourself"',
         why: '"Pay" covers a bill or a fee as well as sending. "Or only chat so far" was not something asked: a friendly chat does ask, about your work, home and family. The new answer yields to the three above it.' },
       { step: 'D1', was: 'no answer for a notice that asks nothing (the old "Real security notice" specimen could not be placed)',
         now: '"Nothing: it only tells you something", marked legit, no branch',
         why: 'Real notices (a new sign-in shown in your own app, a delivery update) need somewhere to go (K2.9, P25 requires 5). Its `when` requires that it give no number, link or app of its own, which is exactly what separates it from a copied notice with a button. It is taught first in this unit, so the learner meets the real thing before any scam.' },
-      { step: 'D1', was: 'terms: the audit found ten phrasings of the defence and four meanings of "route"; "credential", "one-time code", "app permission" and "screen-share" undefined in Unit One',
+      { step: 'D1', was: 'terms: the audit found ten phrasings of the defense and four meanings of "route"; "credential", "one-time code", "app permission" and "screen-share" undefined in Unit One',
         now: 'five term cards: a way you already had, the check, one-time code, permission screen, screen-sharing',
-        why: 'One taught phrase for the defence (a number, a link or an app that came with the message never counts, even if you are the one who dials or taps it), and each of the other four words taught before the first card that needs it (K6).' }
+        why: 'One taught phrase for the defense (a number, a link or an app that came with the message never counts, even if you are the one who dials or taps it), and each of the other four words taught before the first card that needs it (K6).' }
     ],
     // The wrong ideas the refute cards name, and where each comes from (V22). Neither source has been read and confirmed
     // online yet, so both are marked unverified and are listed on the deploy report until they are (E15).

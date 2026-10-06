@@ -49,7 +49,7 @@ FC.cases('stats', 'u1', [
     text: "A university drew 300 first-year students by lottery from the full class list and tested all of them the same way at the start and the end of the year, with 290 completing both tests. Their average math score rose from 62 to 68. The university says: 'The average first-year math score rose six points over the year.'",
     route: { S1: ['holds'] },
     cues: { S1: 'drew 300 first-year students by lottery from the full class list and tested all of them the same way at the start and the end of the year, with 290 completing both tests' },
-    reason: { S1: 'Each part holds. {cue:S1}. Nobody was favoured, nearly everyone drawn took both tests, and the test is the same at both ends. The claim says only that the score rose. It does not say why.' },
+    reason: { S1: 'Each part holds. {cue:S1}. Nobody was favored, nearly everyone drawn took both tests, and the test is the same at both ends. The claim says only that the score rose. It does not say why.' },
     not: { outcome: 'counted', why: 'Only 300 students were tested, but they were drawn by lottery from the whole class, nearly all of them took both tests, and 300 is plenty. They are a fair picture of the first-year class.' },
     wouldChange: 'If only the 40 students who volunteered for the second test had been counted at the end, it would be {a:S1.counted}.' },
 

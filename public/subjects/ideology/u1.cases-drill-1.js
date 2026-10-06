@@ -7,17 +7,17 @@
 FC.cases('ideology', 'u1', [
 
   /* ---------- working people against owners, beside no side named ---------- */
-  { id: 'i-p-class', use: 'drill', tier: 'clean', setting: 'housing', topic: 'builders who cannot rent the flats they build',
-    text: "Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.",
+  { id: 'i-p-class', use: 'drill', tier: 'clean', setting: 'housing', topic: 'builders who cannot rent the apartments they build',
+    text: "Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.",
     route: { D1: ['class'] },
     cues: { D1: ['The developer who owns the site will sell them for twice what they cost to build', 'which of the two sides it is on: the people who build, not the people who sell'] },
     reason: { D1: 'The text sorts people into those who build and those who own and sell, and takes the first side: {cue:D1}.' },
     not: { outcome: 'rights', why: 'The text does complain of unfairness, but it does not say what every person is owed. It names two sides and stands with one of them.' } },
 
-  { id: 'i-p-none', use: 'drill', tier: 'clean', setting: 'work', topic: 'a rota notice for warehouse staff',
-    text: "Notice to all warehouse staff: from the first of the month, shift swaps must be requested through the rota desk at least two days ahead. Requests made on the day cannot be accepted. Questions to the shift supervisor.",
+  { id: 'i-p-none', use: 'drill', tier: 'clean', setting: 'work', topic: 'a scheduling notice for warehouse staff',
+    text: "Notice to all warehouse staff: from the first of the month, shift swaps must be requested through the scheduling desk at least two days ahead. Requests made on the day cannot be accepted. Questions to the shift supervisor.",
     route: { D1: ['none'] },
-    cues: { D1: 'from the first of the month, shift swaps must be requested through the rota desk at least two days ahead' },
+    cues: { D1: 'from the first of the month, shift swaps must be requested through the scheduling desk at least two days ahead' },
     reason: { D1: 'The text says how one practical matter will be handled: {cue:D1}. It is addressed to staff and takes no side between staff and owners.' },
     not: { outcome: 'class', why: 'The notice is about a workplace, and workers are the people it is written to, but nothing in it sets them against anyone. It tells them how to ask for a swap.' } },
 
@@ -77,7 +77,7 @@ FC.cases('ideology', 'u1', [
       { text: '"The bosses own the yard and we do the work. We know which side we are on."', voice: 'class' },
       { text: '"Our country, our people, first."', voice: 'nation' },
       { text: '"The faith and the customs we were given are what a country should be guided by."', voice: 'tradition' },
-      { text: '"Nobody should need a licence to say what they think."', voice: 'rights' },
+      { text: '"Nobody should need a license to say what they think."', voice: 'rights' },
       { text: '"The bus now stops at the corner of Mill Road."', voice: 'none' }
     ],
     why: 'It holds up what was handed down, a faith and its customs, as what should guide. The other four sort workers from owners, put one people first, say what a person is owed, or only inform.' },
@@ -86,7 +86,7 @@ FC.cases('ideology', 'u1', [
     options: [
       { text: 'A union statement that the drivers and the company owners want different things.', voice: 'class' },
       { text: 'A rally speech that this land is for its own people.', voice: 'nation' },
-      { text: 'A parish letter that the old festivals should come before the timetable.', voice: 'tradition' },
+      { text: 'A parish letter that the old festivals should come before the schedule.', voice: 'tradition' },
       { text: 'A speech that every child is owed a school and a doctor, whatever the family earns.', voice: 'rights' },
       { text: 'A notice that the clinic opens at eight.', voice: 'none' }
     ],
@@ -98,7 +98,7 @@ FC.cases('ideology', 'u1', [
       { text: '"This is our land and our people, and we come first."', voice: 'nation' },
       { text: '"The old ways are what should guide us."', voice: 'tradition' },
       { text: '"Each person is owed the freedom to say what they think."', voice: 'rights' },
-      { text: '"The bridge is closed until 14 March. Use the Mill Lane crossing."', voice: 'none' }
+      { text: '"The bridge is closed until March 14. Use the Mill Lane crossing."', voice: 'none' }
     ],
     why: 'It says only what will happen and where to go, and it speaks for no side. In the other four, a side is named or a thing is held up as first.' }
 ]);

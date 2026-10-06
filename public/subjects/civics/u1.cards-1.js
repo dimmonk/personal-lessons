@@ -80,7 +80,7 @@ FC.cards('civics', 'u1', [
       'And lawmakers of one state, or of a city, are not Congress. A state’s legislature votes on bills much as Congress does, but it belongs to one state and decides for that state alone. That is a different kind, the one for {plain:states}.'
     ],
     wild: ['"The Senate voted to..."', '"The House passed it."', '"The bill now goes to the Senate."', '"Congress has approved the money."', '"Lawmakers are voting on it this week."'],
-    self: 'In your own life you meet this kind in the news, whenever a vote has just happened or is about to: a bill about taxes, about a programme, about a person who is up for a job. Whenever someone says a vote is coming, ask whose vote it is.',
+    self: 'In your own life you meet this kind in the news, whenever a vote has just happened or is about to: a bill about taxes, about a program, about a person who is up for a job. Whenever someone says a vote is coming, ask whose vote it is.',
     ask: '"Is the last thing in the story a vote by lawmakers, or a request that they vote?" If it is, and the lawmakers sit in the House or the Senate, the answer is {a:D1.congress}.' },
 
   { id: 'check-congress', kind: 'check', after: 'congress',

@@ -54,15 +54,15 @@ FC.cases('civics', 'u4', [
 
   /* ---------- Forgiving a federal crime ---------- */
   { id: 'e-ret-sailor', use: 'return', tier: 'varied', setting: 'travel', topic: 'protected birds brought in by a sailor',
-    text: "A sailor was convicted in a federal court of bringing protected birds into the country, and was fined $2,000. On Friday the President signed a pardon for him, and the fine was cancelled.",
+    text: "A sailor was convicted in a federal court of bringing protected birds into the country, and was fined $2,000. On Friday the President signed a pardon for him, and the fine was canceled.",
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
-    cues: { D1: 'the President signed a pardon for him, and the fine was cancelled', E1: 'the President signed a pardon for him' },
+    cues: { D1: 'the President signed a pardon for him, and the fine was canceled', E1: 'the President signed a pardon for him' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. The federal court decided earlier.',
               E1: 'A federal crime was judged, and the President lifts the punishment: {cue:E1}.' },
     not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a person.' } },
 
-  { id: 'e-ret-pharmacist', use: 'return', tier: 'varied', setting: 'health', topic: 'selling medicine without a licence',
-    text: "A pharmacist was charged in a federal court with selling medicine without a licence that a federal law requires. Before the case came to trial, the President forgave the crime. The pharmacist will not be punished.",
+  { id: 'e-ret-pharmacist', use: 'return', tier: 'varied', setting: 'health', topic: 'selling medicine without a license',
+    text: "A pharmacist was charged in a federal court with selling medicine without a license that a federal law requires. Before the case came to trial, the President forgave the crime. The pharmacist will not be punished.",
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
     cues: { D1: 'Before the case came to trial, the President forgave the crime', E1: 'the President forgave the crime' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. No judge is asked anything after it.',

@@ -8,7 +8,7 @@
 
 FC.unit('psychology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
@@ -28,11 +28,11 @@ FC.unit('psychology', 'u1', {
       rule: 'In {a:D1.reasoning} the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In {a:D1.tactic} what is said or done is about the other person, or about what has happened between the two, and it is said or done to them.',
       test: 'Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?' },
     { id: 'tactic~pattern', pair: ['tactic', 'pattern'], step: 'D1',
-      shared: 'In both, one person may be treating another badly, and the very same behaviour can appear in each.',
+      shared: 'In both, one person may be treating another badly, and the very same behavior can appear in each.',
       rule: '{a:D1.tactic} stays between two people: it shows what one of them says or does to the other. {a:D1.pattern} follows one person across years, places and relationships.',
       test: 'Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: {needs:pattern}?' },
     { id: 'pattern~none', pair: ['pattern', 'none'], step: 'D1',
-      shared: 'The behaviour itself can be exactly the same in both. What differs is how much of the person’s life the case shows.',
+      shared: 'The behavior itself can be exactly the same in both. What differs is how much of the person’s life the case shows.',
       rule: '{a:D1.none} shows one occasion or one short stretch. {a:D1.pattern} shows the same thing across years, places and relationships.',
       test: 'How much of the person’s life does the case show? One occasion or one short stretch? Or this: {needs:pattern}?' },
     { id: 'tactic~none', pair: ['tactic', 'none'], step: 'D1',
@@ -45,7 +45,7 @@ FC.unit('psychology', 'u1', {
       test: 'Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?' },
     { id: 'reasoning~pattern', pair: ['reasoning', 'pattern'], step: 'D1',
       shared: 'Both can show a person defending themselves, and the reasons can sound the same.',
-      rule: '{a:D1.reasoning} shows one piece of thinking: this view, this choice, this occasion. {a:D1.pattern} shows the same behaviour across years, places and relationships.',
+      rule: '{a:D1.reasoning} shows one piece of thinking: this view, this choice, this occasion. {a:D1.pattern} shows the same behavior across years, places and relationships.',
       test: 'Is the case one piece of thinking, about one view or one choice? Or does it show this: {needs:pattern}?' }
   ],
 
@@ -81,7 +81,7 @@ FC.unit('psychology', 'u1', {
         items: [[{ case: 'g-degree', step: 'D1' }, { case: 'g-memory', step: 'D1' }],
                 [{ case: 'g-genius', step: 'D1' }, { case: 'g-exam', step: 'D1' }],
                 [{ case: 'g-feedback', step: 'D1' }, { case: 'g-newborn', step: 'D1' }],
-                [{ case: 'g-broadband', step: 'D1' }, { case: 'g-neighbour', step: 'D1' }],
+                [{ case: 'g-broadband', step: 'D1' }, { case: 'g-neighbor', step: 'D1' }],
                 [{ tell: 'reasoning~tactic' }, { tell: 'pattern~none' }, { tell: 'tactic~pattern' }, { tell: 'tactic~none' }],
                 ['g-rev-reasoning', 'g-rev-tactic', 'g-rev-pattern', 'g-rev-none']] },
       { ask: 'route',
@@ -105,7 +105,8 @@ FC.unit('psychology', 'u1', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the gate unit. Not yet deployed, so later edits before the first deploy stay revision 1. Reviewed on 2026-10-05 as a beginner would read it and against the finished key: plainer wording, the diagnosis line added, no everyday label that is also a branch name, and the first worked case now follows the order the question card teaches.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     // What the K2 rewrite changed in the gate, and why. "was" is the wording Unit Two's exemplar carried
     // (itself a partial rewrite of the old app's wording, which is quoted where it matters).
@@ -120,7 +121,7 @@ FC.unit('psychology', 'u1', {
         now: 'purpose names four; why says what each is judged on, and that a passing moment has no further questions',
         why: 'K2.7: purpose says what the question sorts, in terms of its answers. Unit Two prints both lines in its worked cases, so its learner sees the new wording there.' },
       { step: 'D1', was: 'no tie-break between gate answers',
-        now: 'yieldsTo as data: the first answer gives way to the second when the case also shows something said or done to another person about them; the first and the second give way to the third when the case also shows the same behaviour across years, places and relationships',
+        now: 'yieldsTo as data: the first answer gives way to the second when the case also shows something said or done to another person about them; the first and the second give way to the third when the case also shows the same behavior across years, places and relationships',
         why: 'K2.8: real cases show two of these at once (a reason for your own act that blames the listener; one evening of something the case then shows across years). Each tie-break is taught on a named case (exc-blame, exc-years, worked-rehearsal) and each such case is marked "also". The fourth answer needs none: its "when" requires that the case show none of the other three.' },
       { step: 'D1', was: 'gate options had n, when and keeps',
         now: 'each also has plain and needs',

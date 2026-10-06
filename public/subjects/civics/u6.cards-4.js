@@ -23,7 +23,7 @@ FC.cards('civics', 'u6', [
     verdict: 'This is wrong.',
     right: [
       'A federal law takes over only where the federal government has power over the matter and has already used it, and the law is meant to be the only rule, or the two rules cannot both be obeyed. That is the whole case for {o:preempted}.',
-      'Where a federal law sets only a minimum, the state’s rule stands beside it, which is {o:concurrent}. Where no federal law covers the matter, as with deposits or driver’s licences, there is nothing for a state’s rule to give way to, which is {o:police}. So before you say that a federal law settles a case, point to the federal law, to the matter it covers, and to the words that make it the only rule.'
+      'Where a federal law sets only a minimum, the state’s rule stands beside it, which is {o:concurrent}. Where no federal law covers the matter, as with deposits or driver’s licenses, there is nothing for a state’s rule to give way to, which is {o:police}. So before you say that a federal law settles a case, point to the federal law, to the matter it covers, and to the words that make it the only rule.'
     ],
     testedBy: ['u6-claim-always'] },
 
@@ -68,13 +68,13 @@ FC.cards('civics', 'u6', [
     case: 'u6-leaflets', mark: 'S2',
     strip: [
       'There is a city, Redwick, and its city council, which passed an ordinance.',
-      'The ordinance makes it a crime to hand out leaflets that criticise the mayor.',
+      'The ordinance makes it a crime to hand out leaflets that criticize the mayor.',
       'The leaflets are speech, and the ordinance punishes it because of what it says.',
       'No federal law is needed for this to be a problem. The problem is a right.'
     ],
     explain: [
-      'A city normally controls its own streets and what happens on them, and a council may make many rules about leaflets: where to put the bins, how to keep the streets clean. This ordinance is different. It does not tidy anything. It makes handing out some leaflets a crime because of what they say about the mayor.',
-      'The Constitution protects some rights so strongly that no government may take them away: to speak, to worship, to publish and to gather peacefully. These are in the First Amendment. Criticising the mayor is speech, and speech is the thing the First Amendment protects most.',
+      'A city normally controls its own streets and what happens on them, and a council may make many rules about leaflets: where to put the trash cans, how to keep the streets clean. This ordinance is different. It does not tidy anything. It makes handing out some leaflets a crime because of what they say about the mayor.',
+      'The Constitution protects some rights so strongly that no government may take them away: to speak, to worship, to publish and to gather peacefully. These are in the First Amendment. Criticizing the mayor is speech, and speech is the thing the First Amendment protects most.',
       'You may wonder why this applies to a city at all. The first ten amendments, called the Bill of Rights, were first written to limit only the federal government. After the Civil War the Fourteenth Amendment, added in 1868, was read to bring those limits to the states, and so today they protect you against your state, and against your city or county too.',
       'Rights have edges. A city may still set neutral rules about when and where an event happens, such as a noise limit, as long as the rule does not aim at what is said. This ordinance does aim at what is said, and that is why it is stopped.',
       'So the question that matters here is not who made the rule. A state, a city and a county are all bound. The question is what else covers the matter, and for this case the answer is a right.'

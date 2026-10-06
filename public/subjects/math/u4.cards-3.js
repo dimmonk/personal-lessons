@@ -60,27 +60,27 @@ FC.cards('math', 'u4', [
     link: 'The first three kinds have a change that keeps coming. The fourth kind is a change that came one time, and stopped.',
     case: 'm4-wd-gym', mark: 'G1',
     strip: [
-      'There is one amount to follow: the monthly fee. It was €30 and is now €36.',
-      'It changed one time, in March, by €6, and it has been €36 every month since.',
+      'There is one amount to follow: the monthly fee. It was $30 and is now $36.',
+      'It changed one time, in March, by $6, and it has been $36 every month since.',
       'The question gives a time, 2 more years, and asks for the amount at the end of it.',
       'Nothing in the problem says that the fee changes again. No pattern repeats.'
     ],
     explain: [
-      'What you are shown is an amount with a before and an after, and nothing in between that keeps going. For years the fee was €30. Then it became €36, and it has stayed €36. If you laid the fees out month by month, they would read 30, 30, 30, 36, 36, 36: a single jump, and then a flat line.',
-      'It is tempting to treat the jump as the start of a pattern, and to say that the fee goes up by €6 each time, or by 20% each time. Nothing in the problem says that. The fee changed one time, and the only safe thing to say about the fee two years from now is what the problem tells you: it stays at €36, unless a new change is announced.',
+      'What you are shown is an amount with a before and an after, and nothing in between that keeps going. For years the fee was $30. Then it became $36, and it has stayed $36. If you laid the fees out month by month, they would read 30, 30, 30, 36, 36, 36: a single jump, and then a flat line.',
+      'It is tempting to treat the jump as the start of a pattern, and to say that the fee goes up by $6 each time, or by 20% each time. Nothing in the problem says that. The fee changed one time, and the only safe thing to say about the fee two years from now is what the problem tells you: it stays at $36, unless a new change is announced.',
       'Notice what decides the kind. It is not that the amount changed, because in all four kinds the amount changes. It is that the change was made one time and has not come again, so there is nothing to carry forward except the new amount. A procedure for this kind is short for that reason, and its answer is often the amount that is already there. It is also the kind most easily mistaken for another, because a change made one time can be given as a plain figure or as a percentage, and both can look like the start of a pattern.'
     ],
     feature: { step: 'G1', option: 'once' },
     name: 'A problem like this is {o:oneoff}. The name says what it is: a change that was made one time, and is not made again.' },
 
   { id: 'again-oneoff', kind: 'again', outcome: 'oneoff',
-    link: 'The gym gave you what to point to: {needs:oneoff}. Here is a second problem, in a different story, a flat’s rent under a lease.',
+    link: 'The gym gave you what to point to: {needs:oneoff}. Here is a second problem, in a different story, an apartment’s rent under a lease.',
     first: 'm4-wd-gym', second: 'm4-wd-rent', step: 'G1',
-    instruction: 'Find what the two problems share. Ignore the story (a gym, a flat) and ignore the numbers. Look at one thing only: which words say what happens to the amount after the change?',
-    prompt: { kind: 'phrase', answer: 'the lease says the rent will stay at €860' },
+    instruction: 'Find what the two problems share. Ignore the story (a gym, an apartment) and ignore the numbers. Look at one thing only: which words say what happens to the amount after the change?',
+    prompt: { kind: 'phrase', answer: 'the lease says the rent will stay at $860' },
     shared: [
-      'Both problems follow one amount, a gym fee and a rent, that was one figure and became another, and in both the amount has stayed at the new figure since: €36 a month, €860 a month. Neither says that the change comes again. In the gym the words are “ever since”, and in the flat they are “will stay”.',
-      'That is all you point to, and it is why one name covers a gym and a lease. The story differs, and so does the size of the change, €6 against €60. What happens to the amount after the change is the same: nothing.'
+      'Both problems follow one amount, a gym fee and a rent, that was one figure and became another, and in both the amount has stayed at the new figure since: $36 a month, $860 a month. Neither says that the change comes again. In the gym the words are “ever since”, and in the flat they are “will stay”.',
+      'That is all you point to, and it is why one name covers a gym and a lease. The story differs, and so does the size of the change, $6 against $60. What happens to the amount after the change is the same: nothing.'
     ] },
 
   { id: 'portrait-oneoff', kind: 'portrait', outcome: 'oneoff',
@@ -92,10 +92,10 @@ FC.cards('math', 'u4', [
       'The question gives a time and asks for the amount at the end of it, and the answer is the new amount. Or it gives a target and asks how long, and then the answer is either that the amount is already there, or that it never gets there unless another change is made.'
     ],
     not: [
-      'It is not a pattern. One jump does not make a trend, and a procedure that carries the change forward as if it came again each time gives an answer that is far out. If the fee goes from €30 to €36 and you add €6 every year, you will say €48 after two years, and the fee is still €36.',
+      'It is not a pattern. One jump does not make a trend, and a procedure that carries the change forward as if it came again each time gives an answer that is far out. If the fee goes from $30 to $36 and you add $6 every year, you will say $48 after two years, and the fee is still $36.',
       'It is {o:lin} only if the problem says that the change comes again, each hour, day, week, month or year, and it is {o:expg} only if a share is applied again and again.'
     ],
-    wild: ['“Since the change it has stayed at €36.”', '“It went up and stayed there.”', '“A new price from January.”', '“After the new law it has been the same.”', '“Fixed from now on.”', '“A step change.”'],
+    wild: ['“Since the change it has stayed at $36.”', '“It went up and stayed there.”', '“A new price from January.”', '“After the new law it has been the same.”', '“Fixed from now on.”', '“A step change.”'],
     self: 'In your own life you meet this in a price that was put up one time, a new tariff, a new wage after a promotion, a speed limit after a new sign, a dose after a change of tablets, and a rent set by a lease with a fixed figure.',
     ask: '“Did the amount change one time and has it stayed the same since, with nothing in the problem saying that the change comes again?” If you can say yes, you are probably looking at this kind.' },
 

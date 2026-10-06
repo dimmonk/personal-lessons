@@ -1,7 +1,7 @@
 // Civics, Unit One: drill cases, second part: the second stage on varied cases (the case ends with a request, or the
 // part of government is named in an unusual way), then cases whose story misleads. Field guide: see u1.cases-drill-1.js.
 // echo names a teaching case of a DIFFERENT family whose story this one is built to bring back, so that the
-// second look ("does it look like a case you know?") is practised where the likeness points the wrong way.
+// second look ("does it look like a case you know?") is practiced where the likeness points the wrong way.
 // The first question has no tie-break, so none of these cases carries `also`: each has one last decision.
 
 FC.cases('civics', 'u1', [
@@ -16,7 +16,7 @@ FC.cases('civics', 'u1', [
     wouldChange: 'If the group had written to the Fenmere town council, asking it to vote on a rule for the town’s own market, the answer would be {a:D1.states}.' },
 
   { id: 'g-pardon', use: 'drill', tier: 'varied', setting: 'community', topic: 'a prisoner is forgiven',
-    text: "Ms Reyes was convicted of a federal crime and was serving a two-year sentence. On Friday the President pardoned her, forgiving the crime, and she left prison.",
+    text: "Ms. Reyes was convicted of a federal crime and was serving a two-year sentence. On Friday the President pardoned her, forgiving the crime, and she left prison.",
     route: { D1: ['president'] },
     cues: { D1: 'the President pardoned her, forgiving the crime, and she left prison' },
     reason: { D1: 'The last decision is the President’s: {cue:D1}. The conviction came before it, and is how the matter reached the President.' },
@@ -32,7 +32,7 @@ FC.cases('civics', 'u1', [
     wouldChange: 'If the residents had asked the town council to pass a rule against polluting the river, the answer would be {a:D1.states}.' },
 
   { id: 'g-curfew', use: 'drill', tier: 'varied', setting: 'community', topic: 'a curfew for teenagers',
-    text: "Parents in Dalby say teenagers cause trouble in the town centre at night. They have asked the Dalby town council to set a curfew for anyone under sixteen.",
+    text: "Parents in Dalby say teenagers cause trouble in the town center at night. They have asked the Dalby town council to set a curfew for anyone under sixteen.",
     route: { D1: ['states'] },
     cues: { D1: 'asked the Dalby town council to set a curfew for anyone under sixteen' },
     reason: { D1: 'The case ends with a request, and it is made to a town’s council: {cue:D1}. The council has not voted, but a decision by it is what the case asks for.' },
@@ -51,16 +51,16 @@ FC.cases('civics', 'u1', [
 
   { id: 'g-ambassador', use: 'drill', tier: 'misleading', setting: 'world', topic: 'an ambassador is chosen',
     echo: 'c-army',
-    text: "The President has chosen Ms Duran to be the country’s ambassador to Brennia. She spent the week meeting Brennian leaders to prepare. On Thursday the Senate was asked to vote on whether to approve her.",
+    text: "The President has chosen Ms. Duran to be the country’s ambassador to Brennia. She spent the week meeting Brennian leaders to prepare. On Thursday the Senate was asked to vote on whether to approve her.",
     route: { D1: ['congress'] },
     cues: { D1: 'the Senate was asked to vote on whether to approve her' },
-    reason: { D1: 'The case ends by asking the Senate for a vote: {cue:D1}. The President’s choice and Ms Duran’s meetings came first, and are how the matter reached the Senate.' },
+    reason: { D1: 'The case ends by asking the Senate for a vote: {cue:D1}. The President’s choice and Ms. Duran’s meetings came first, and are how the matter reached the Senate.' },
     not: { outcome: 'president', why: 'The President chose her, and she spent the week dealing with another country. Both pull toward the President. But the case ends with the Senate being asked to decide.' },
     wouldChange: 'If the case ended with the President meeting Brennia’s leaders in person, and said nothing about a vote, the last decision would be the President’s, and the answer would be {a:D1.president}.' },
 
   { id: 'g-veto', use: 'drill', tier: 'misleading', setting: 'learning', topic: 'a school breakfast bill is sent back',
     echo: 'c-bicycle',
-    text: "The House and the Senate passed a bill that gives every public school a free breakfast programme. On Monday the President refused to sign it, and sent it back to Congress with a note listing her objections.",
+    text: "The House and the Senate passed a bill that gives every public school a free breakfast program. On Monday the President refused to sign it, and sent it back to Congress with a note listing her objections.",
     route: { D1: ['president'] },
     cues: { D1: 'the President refused to sign it, and sent it back to Congress with a note listing her objections' },
     reason: { D1: 'The last decision is the President’s: {cue:D1}. The votes in the House and the Senate came first, and are how the matter reached her. The case stops at her refusal.' },

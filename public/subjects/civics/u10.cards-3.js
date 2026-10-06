@@ -10,7 +10,7 @@ FC.cards('civics', 'u10', [
     case: 'c10-hard',
     plain: [
       'Ines’s card is one small piece of a very large change, and the change began with a crash. In 1929 the Great Depression began: banks failed, and about a quarter of workers lost their jobs. That is one worker in four.',
-      'The President’s answer was a set of new programmes called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the programme named on Ines’s card, is the example that this course holds. New programmes such as Social Security were run by new federal offices, and an office of that kind is called an {t:agency}.',
+      'The President’s answer was a set of new programs called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the program named on Ines’s card, is the example that this course holds. New programs such as Social Security were run by new federal offices, and an office of that kind is called an {t:agency}.',
       'The result was that the federal government took a far larger role in daily life. The name for what these new offices did is {o:execute}: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.'
     ] },
 
@@ -21,12 +21,12 @@ FC.cards('civics', 'u10', [
     rows: [
       { id: 'hd-depression', q: 'What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?', a: 'The Great Depression',
         relates: 'It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind.' },
-      { id: 'hd-newdeal', q: 'What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?', a: 'The New Deal',
-        relates: 'It is the answer to the trouble, and not the trouble itself. Its programmes were run by new federal offices, and the federal government took a far larger role in daily life.' },
-      { id: 'hd-roosevelt', q: 'Which President began the programmes that answered the hard times of the 1930s?', a: 'Franklin D. Roosevelt',
+      { id: 'hd-newdeal', q: 'What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?', a: 'The New Deal',
+        relates: 'It is the answer to the trouble, and not the trouble itself. Its programs were run by new federal offices, and the federal government took a far larger role in daily life.' },
+      { id: 'hd-roosevelt', q: 'Which President began the programs that answered the hard times of the 1930s?', a: 'Franklin D. Roosevelt',
         relates: 'The New Deal is his: it was President Franklin D. Roosevelt’s answer to the Depression.' },
-      { id: 'hd-security', q: 'Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?', a: 'Social Security',
-        relates: 'It is the programme named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.' }
+      { id: 'hd-security', q: 'Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?', a: 'Social Security',
+        relates: 'It is the program named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.' }
     ] },
 
   { id: 'chk-hd-depression', kind: 'check', after: 'facts-hard', ask: { type: 'fact', row: 'hd-depression' } },
@@ -42,8 +42,8 @@ FC.cards('civics', 'u10', [
     prompt: { kind: 'which', answer: 'hd-newdeal' },
     difference: [
       'Fact A is {f:hd-depression}. It is the trouble: banks failing, and about a quarter of workers losing their jobs.',
-      'Fact B is {f:hd-newdeal}. It is the answer: new programmes, begun by the President, run by new federal offices.',
-      'If the story is about banks that failed and people who lost work, it is the trouble. If it is about programmes such as Social Security that were started in answer to it, it is the answer.'
+      'Fact B is {f:hd-newdeal}. It is the answer: new programs, begun by the President, run by new federal offices.',
+      'If the story is about banks that failed and people who lost work, it is the trouble. If it is about programs such as Social Security that were started in answer to it, it is the answer.'
     ] },
 
   /* ---------- group six: the Cold War ---------- */

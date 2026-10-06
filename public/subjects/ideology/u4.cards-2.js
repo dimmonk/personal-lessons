@@ -60,8 +60,8 @@ FC.cards('ideology', 'u4', [
     instruction: 'Both cases are about the same school, the church school at Marrow Lane, and both hold up its old ways. Compare one thing: does the text ask for what is there to stay, or for what has gone to come back?',
     prompt: { kind: 'which', option: 'T1.restore', answer: 'i4-lk-react-school' },
     difference: [
-      'In Case A the school is still a church school. The text says its Sunday hymns and the vicar’s choosing of the head teacher were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The answer is {a:T1.keep}, and the case is {o:conserv}.',
-      'In Case B the school was taken from the church by an act, and the church no longer chooses the head teacher. The text says that was a wrong, and asks for the act to be undone and the school given back. The answer is {a:T1.restore}, and the case is {o:react}.',
+      'In Case A the school is still a church school. The text says its Sunday hymns and the pastor’s choosing of the principal were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The answer is {a:T1.keep}, and the case is {o:conserv}.',
+      'In Case B the school was taken from the church by an act, and the church no longer chooses the principal. The text says that was a wrong, and asks for the act to be undone and the school given back. The answer is {a:T1.restore}, and the case is {o:react}.',
       'Both texts love the same school and hold up the same old ways. They differ in what stands today and in what the text asks for. Case A asks for what is there to stay. Case B asks for what has gone to return.'
     ] },
 

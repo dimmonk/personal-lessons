@@ -14,7 +14,7 @@ FC.cards('civics', 'u9', [
       'Hold the baker’s complaint, because it is the colonists’ complaint. It is not that the fee is large. It is that the people who set it are people the town never chose and cannot remove.',
       'The colonies were governed from Britain. Parliament, Britain’s body of lawmakers, taxed the colonists, and the colonists had elected nobody to it. They said that this was wrong, and their reason has a name: consent. Consent is the agreement of the people who are taxed. The colonists’ short form of the idea was “no taxation without representation”. Representation here means having someone you elected in the body that taxes you.',
       'So the quarrel with Britain was about consent, and the slogan says what was missing: representation. A tax laid by a body that had no one of theirs in it was a tax that they had not agreed to.',
-      'In 1773, in Boston, colonists protested the tax on tea by throwing a ship’s whole cargo of tea into the harbour. This is the Boston Tea Party. The point of it was not the price of tea. It was that the tax had been laid by a body that would not listen to them.',
+      'In 1773, in Boston, colonists protested the tax on tea by throwing a ship’s whole cargo of tea into the harbor. This is the Boston Tea Party. The point of it was not the price of tea. It was that the tax had been laid by a body that would not listen to them.',
       'The same idea, that money is taken and spent only by people whom the public can vote out, is the history behind the name {o:purse}.',
       'The four facts below are the parts of the quarrel: who taxed, what the colonists said was missing, the short form of their complaint, and the protest.'
     ] },
@@ -30,7 +30,7 @@ FC.cards('civics', 'u9', [
         relates: 'Consent is the agreement of the people who are taxed. The quarrel with Britain was about consent, and not about the size of any tax.' },
       { id: 'q-repr', q: 'The colonists’ short form of their complaint was “no taxation without …” what?', a: 'Representation',
         relates: 'Representation is having someone you elected in the body that taxes you. The short form says that this was what the colonists did not have.' },
-      { id: 'q-tea', q: 'In 1773 colonists in Boston threw a ship’s cargo of tea into the harbour. What is that protest called?', a: 'The Boston Tea Party',
+      { id: 'q-tea', q: 'In 1773 colonists in Boston threw a ship’s cargo of tea into the harbor. What is that protest called?', a: 'The Boston Tea Party',
         relates: 'It was a protest against the tax on tea, and it was about the body that had laid the tax, not about the price of tea.' }
     ] },
 

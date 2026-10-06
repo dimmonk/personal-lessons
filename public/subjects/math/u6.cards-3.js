@@ -77,7 +77,7 @@ FC.cards('math', 'u6', [
   { id: 'look-trig-similar', kind: 'lookalike', ledger: 'trig~similar',
     link: 'The second and third kinds are easy to mix up when the length wanted is a height that nobody can measure directly, because both can find it. This card puts them side by side.',
     cases: ['m6-la-lighthouse-trig', 'm6-la-lighthouse-similar'],
-    instruction: 'Both problems are about the same harbour pilot and the same lighthouse, and both ask how tall something is. Compare one thing: what is given that lets the height be found?',
+    instruction: 'Both problems are about the same harbor pilot and the same lighthouse, and both ask how tall something is. Compare one thing: what is given that lets the height be found?',
     prompt: { kind: 'which', option: 'S1.matching', answer: 'm6-la-lighthouse-similar' },
     difference: [
       'In Case A the pilot stands 80 m from the foot of the lighthouse and sees the lamp at 25° above level ground. That is one length and one angle in degrees, besides the square corner. The answer is {a:S1.sideangle}, and the procedure uses the tan button: 80 × tan 25° = 80 × 0.4663 = 37.3 m, the height of the lamp.',

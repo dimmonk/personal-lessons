@@ -47,9 +47,9 @@ FC.cases('civics', 'u6', [
 
   /* ---------- A right that binds the states ---------- */
   { id: 'u6-ret-banner', use: 'return', tier: 'varied', setting: 'community', topic: 'a parade banner',
-    text: "A club in Pike County planned a parade through the county square, with a banner that said the sheriff had mishandled a case. The Pike County board voted that no parade may go through the county square if its banners criticise the sheriff.",
+    text: "A club in Pike County planned a parade through the county square, with a banner that said the sheriff had mishandled a case. The Pike County board voted that no parade may go through the county square if its banners criticize the sheriff.",
     outcome: 'protected', route: { D1: ['states'], S1: ['local'], S2: ['right'] },
-    cues: { D1: 'The Pike County board voted', S1: 'The Pike County board voted', S2: 'no parade may go through the county square if its banners criticise the sheriff' },
+    cues: { D1: 'The Pike County board voted', S1: 'The Pike County board voted', S2: 'no parade may go through the county square if its banners criticize the sheriff' },
     reason: { D1: 'The case ends with a decision by a county board: {cue:D1}.',
               S1: 'The rule was made by a county board: {cue:S1}.',
               S2: 'The rule takes away a right: {cue:S2}. It stops a parade because of what its banners say.' },

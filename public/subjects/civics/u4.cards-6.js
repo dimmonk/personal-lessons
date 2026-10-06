@@ -10,12 +10,12 @@ FC.cards('civics', 'u4', [
   { id: 'look-veto-pardon', kind: 'lookalike', ledger: 'veto~pardon',
     link: 'You have now met all six. Two of them are the President acting on something that others have already done: a bill that Congress passed, and a crime that someone committed. They are easy to mix up. This card puts them side by side.',
     cases: ['e-dump-bill', 'e-dump-man'],
-    instruction: 'Both cases are about rubbish dumped in national parks, and in both the President acts on Monday. Compare one thing: what the President acts on, a bill or a person?',
+    instruction: 'Both cases are about trash dumped in national parks, and in both the President acts on Monday. Compare one thing: what the President acts on, a bill or a person?',
     prompt: { kind: 'which', option: 'E1.forgive', answer: 'e-dump-man' },
     difference: [
       'In Case A the President acts on a bill that Congress has passed: a bill that cuts a fine. The President will not sign it, and sends it back. Nobody has been charged with anything. The answer is {a:E1.sendback}, and the case is {o:veto}.',
-      'In Case B the President acts on a man who was fined for dumping rubbish by a federal court, and forgives the crime, so that the fine is cancelled. No bill is in the story. The answer is {a:E1.forgive}, and the case is {o:pardon}.',
-      'The park, the rubbish and the Monday are the same. What differs is what the President acts on.'
+      'In Case B the President acts on a man who was fined for dumping trash by a federal court, and forgives the crime, so that the fine is canceled. No bill is in the story. The answer is {a:E1.forgive}, and the case is {o:pardon}.',
+      'The park, the trash and the Monday are the same. What differs is what the President acts on.'
     ] },
 
   { id: 'look-veto-execute', kind: 'lookalike', ledger: 'veto~execute',
@@ -61,7 +61,7 @@ FC.cards('civics', 'u4', [
         reason: 'Now ask what the office did. A law stands behind it, and the office fills in the rest: {cue:E1}. It decided the details the law leaves open: the list, the form and the date. It added no demand of its own: it did not tell hospitals to do anything the law does not already require. That is an office putting a law into daily practice and staying inside it, and the answer is {a:E1.carryout}.' }
     ],
     hold: {
-      neighbour: 'beyondpres',
+      neighbor: 'beyondpres',
       prompt: { kind: 'reason',
         lead: 'The list, the form and the date are all new things that hospitals must do, so the case can look like a rule that demands something no law allows.',
         choices: [
@@ -85,18 +85,18 @@ FC.cards('civics', 'u4', [
       ]
     } },
 
-  { id: 'worked-harbour', kind: 'worked',
+  { id: 'worked-harbor', kind: 'worked',
     h: 'A second whole case, where the story points the wrong way',
     link: 'The hospital prices were a clean case: the office’s act was the last thing in it, and one law stood behind it. In this second case the most noticeable thing in the story is not what decides it. Watch which words each question picks out.',
-    case: 'e-w-harbour',
+    case: 'e-w-harbor',
     steps: [
       { step: 'D1',
-        reason: 'The case opens with the President on a visit to another country, talking trade with its leader. If it ended there, you would be looking at the President meeting another country’s leader. It does not end there. Read on: {cue:D1}. The last decision is the President’s, and it is made in a harbour. It is not a vote by lawmakers, not a judge, and not a state or a city. The answer is {a:D1.president}.' },
+        reason: 'The case opens with the President on a visit to another country, talking trade with its leader. If it ended there, you would be looking at the President meeting another country’s leader. It does not end there. Read on: {cue:D1}. The last decision is the President’s, and it is made in a harbor. It is not a vote by lawmakers, not a judge, and not a state or a city. The answer is {a:D1.president}.' },
       { step: 'E1',
         reason: 'The trade talks were the opening. What the President does after them is give an order to part of the armed forces: {cue:E1}. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The answer is {a:E1.military}.' }
     ],
     hold: {
-      neighbour: 'diplomacy',
+      neighbor: 'diplomacy',
       prompt: { kind: 'reason',
         lead: 'The President is in another country, talking to its leader, so the case can look like dealing with another country.',
         choices: [

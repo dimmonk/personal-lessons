@@ -9,26 +9,26 @@ FC.cases('math', 'u5', [
     use: 'drill',
     tier: 'clean',
     setting: 'home',
-    topic: 'a pupil’s school outfit',
+    topic: 'a student’s school outfit',
     kind: 'problem',
     outcome: 'multprin',
-    text: 'A pupil has 6 shirts, 4 pairs of trousers and 3 jumpers, and wears one of each every school day. How many different outfits can the pupil put on?',
+    text: 'A student has 6 shirts, 4 pairs of pants and 3 sweaters, and wears one of each every school day. How many different outfits can the student put on?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: {
-      M1: ['How many different outfits can the pupil put on?'],
+      M1: ['How many different outfits can the student put on?'],
       C1: ['wears one of each every school day']
     },
     reason: {
       M1: 'The words {cue:M1} ask how many different outfits there are, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a shirt, trousers and a jumper, each from a list of its own, and ask how many different outfits there are, so the answer is {a:C1.lists}.'
+      C1: 'The words {cue:C1} give three separate choices, a shirt, pants and a sweater, each from a list of its own, and ask how many different outfits there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
       why: 'Picking from one group, so that each pick takes something off the list for the next, would be {o:perm}. Here every choice has a full list of its own, and nothing picked on one list changes another.'
     },
     steps: [
-      { does: 'Name each choice that has to be made', working: 'shirt; trousers; jumper' },
-      { does: 'Count the full list for each choice', working: 'shirt: 6; trousers: 4; jumper: 3' },
+      { does: 'Name each choice that has to be made', working: 'shirt; pants; sweater' },
+      { does: 'Count the full list for each choice', working: 'shirt: 6; pants: 4; sweater: 3' },
       {
         does: 'Multiply the counts',
         working: '6 × 4 × 3 = 72 (6 × 4 = 24, then 24 × 3 = 72). That is 72 outfits'
@@ -58,26 +58,26 @@ FC.cases('math', 'u5', [
     use: 'drill',
     tier: 'clean',
     setting: 'building',
-    topic: 'a tiler’s colours and patterns',
+    topic: 'a tiler’s colors and patterns',
     kind: 'problem',
     outcome: 'multprin',
-    text: 'A tiler sells floor tiles in 7 colours and 5 patterns, and a customer picks one colour and one pattern for a whole kitchen. How many different tile designs can the customer pick?',
+    text: 'A tiler sells floor tiles in 7 colors and 5 patterns, and a customer picks one color and one pattern for a whole kitchen. How many different tile designs can the customer pick?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: {
       M1: ['How many different tile designs can the customer pick?'],
-      C1: ['picks one colour and one pattern']
+      C1: ['picks one color and one pattern']
     },
     reason: {
       M1: 'The words {cue:M1} ask how many different tile designs there are, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give two separate choices, a colour and a pattern, each from a list of its own, and ask how many different designs there are, so the answer is {a:C1.lists}.'
+      C1: 'The words {cue:C1} give two separate choices, a color and a pattern, each from a list of its own, and ask how many different designs there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
       why: 'Picking from one group, so that each pick takes something off the list for the next, would be {o:perm}. Here every choice has a full list of its own, and nothing picked on one list changes another.'
     },
     steps: [
-      { does: 'Name each choice that has to be made', working: 'colour; pattern' },
-      { does: 'Count the full list for each choice', working: 'colour: 7; pattern: 5' },
+      { does: 'Name each choice that has to be made', working: 'color; pattern' },
+      { does: 'Count the full list for each choice', working: 'color: 7; pattern: 5' },
       { does: 'Multiply the counts', working: '7 × 5 = 35. That is 35 designs' }
     ],
     answer: {

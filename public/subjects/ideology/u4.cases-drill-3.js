@@ -1,14 +1,14 @@
 // Political Ideologies, Unit Four: the misleading cases of stage four (the whole route, no help) and the faulty claims of the last stage.
 // A misleading case is built so that its story brings back a named teaching case of another name (echo), or shows a second answer to
 // the key's first question that gives way by the key's tie-break (also). The feedback says so, which is how the "does it look like a
-// case you know?" second look is practised. A claim is something a person might say that uses a name wrongly, or reasons in one
+// case you know?" second look is practiced. A claim is something a person might say that uses a name wrongly, or reasons in one
 // of the unit's ways; the fault is shown after the learner commits, and the claim put right is always the last thing shown.
 // Every text is invented. The places, laws and groups in them do not exist.
 
 FC.cases('ideology', 'u4', [
 
   /* ---------- Stage four, misleading: the whole route ---------- */
-  { id: 'i4-r-flag', use: 'drill', tier: 'misleading', setting: 'borders', topic: 'a countryside club, its country and its customs', also: ['nation'], echo: 'i4-lk-nationalism-harbour',
+  { id: 'i4-r-flag', use: 'drill', tier: 'misleading', setting: 'borders', topic: 'a countryside club, its country and its customs', also: ['nation'], echo: 'i4-lk-nationalism-harbor',
     text: "From a speech to the Ferndale Countryside Club: 'We love this country and we are proud of it. But what makes it ours is the Sunday service, the village green and the old courtesies handed down to us, and those should guide how the country is run. Keep them. If laws must change, let them change slowly, a little at a time.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'what makes it ours is the Sunday service, the village green and the old courtesies handed down to us, and those should guide how the country is run', T1: ['Keep them', 'let them change slowly, a little at a time'] },
@@ -27,16 +27,16 @@ FC.cases('ideology', 'u4', [
     wouldChange: 'If the text said nothing of a crown or any old order and asked for every party to be shut down so that one leader spoke for the whole people, the answer to {q:D1} would be {a:D1.nation}.' },
 
   { id: 'i4-r-orchard', use: 'drill', tier: 'misleading', setting: 'town', topic: 'a lost orchard and a surviving cider pressing', echo: 'i4-lk-react-school',
-    text: "From the Marsh End Gardeners' Circle: 'Forty years ago we lost the old orchard to the bypass, and not a year goes by without someone saying so. We will not ask for it back; it is gone. But the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the autumn. We ask the parish to keep them, and to change nothing about them in a hurry.'",
+    text: "From the Marsh End Gardeners' Circle: 'Forty years ago we lost the old orchard to the bypass, and not a year goes by without someone saying so. We will not ask for it back; it is gone. But the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the fall. We ask the village to keep them, and to change nothing about them in a hurry.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
-    cues: { D1: 'the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the autumn', T1: ['We will not ask for it back; it is gone', 'We ask the parish to keep them, and to change nothing about them in a hurry'] },
+    cues: { D1: 'the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the fall', T1: ['We will not ask for it back; it is gone', 'We ask the village to keep them, and to change nothing about them in a hurry'] },
     reason: { D1: 'The text holds up two customs handed down, the pressing and the blessing, as what should guide the village: {cue:D1}.',
               T1: 'The text mourns the orchard and then says so plainly: {cue:T1}. It asks for what survives to be kept and for change to be slow, and it asks for nothing to be brought back.' },
     not: { outcome: 'react', why: 'The text is sad about something that has gone, which can look like the other name. But it says it will not ask for the orchard back, and what it asks for is that what survives be kept.' },
     wouldChange: 'If the text called the loss of the orchard a wrong and asked for the bypass to be pulled up and the orchard planted again, the answer would be {a:T1.restore}.' },
 
   { id: 'i4-r-calm', use: 'drill', tier: 'misleading', setting: 'schooling', topic: 'a calm request to reopen a village school', echo: 'i4-lk-conserv-school',
-    text: "From a letter in the Penhallow Gazette, written calmly: 'There is no anger in this letter, and no hurry. The old village school of Penhallow, taught by the vicar's wife in the old way, was closed by the Schools Consolidation Act, and we hold that was a wrong done to the village. That old way of teaching should guide what Penhallow's children are taught. We ask only that, when the time is right, the Act be repealed, the school-house be reopened and the old way of teaching restored.'",
+    text: "From a letter in the Penhallow Gazette, written calmly: 'There is no anger in this letter, and no hurry. The old village school of Penhallow, taught by the pastor's wife in the old way, was closed by the Schools Consolidation Act, and we hold that was a wrong done to the village. That old way of teaching should guide what Penhallow's children are taught. We ask only that, when the time is right, the Act be repealed, the school-house be reopened and the old way of teaching restored.'",
     outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },
     cues: { D1: ["That old way of teaching should guide what Penhallow's children are taught"], T1: ['we hold that was a wrong done to the village', 'the Act be repealed, the school-house be reopened and the old way of teaching restored'] },
     reason: { D1: 'The text holds up an old way of teaching as what should guide: {cue:D1}.',

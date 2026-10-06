@@ -7,7 +7,7 @@
 
 FC.unit('stats', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
@@ -88,7 +88,8 @@ FC.unit('stats', 'u2', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the fifth answer of the first question, with the four names for a claim that holds. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces the old cards "When nothing is wrong", "A fair count", "A trustworthy measure", "A fair comparison" and "A cause that holds up", and the sound items of the old drills.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What changed in the key for this branch, and why (docs/rebuild/stats-plan.md, section (a)).
     keyChanges: [

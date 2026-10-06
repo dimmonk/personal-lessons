@@ -13,12 +13,12 @@ FC.cases('math', 'u4', [
     topic: 'a pot of savings',
     kind: 'problem',
     outcome: 'logsolve',
-    text: 'A savings pot holds €800 and earns 5% interest a year, which stays in the pot. After how many years will it hold €2,400?',
+    text: 'A savings pot holds $800 and earns 5% interest a year, which stays in the pot. After how many years will it hold $2,400?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['howlong'] },
     cues: {
       M1: ['earns 5% interest a year, which stays in the pot'],
       G1: ['earns 5% interest a year, which stays in the pot'],
-      G2: ['After how many years will it hold €2,400?']
+      G2: ['After how many years will it hold $2,400?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -36,7 +36,7 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Divide the target by the start, to see how many times the start it must become',
-        working: '€2,400 ÷ €800 = 3'
+        working: '$2,400 ÷ $800 = 3'
       },
       {
         does: 'Divide the log of that by the log of the number from the first step',
@@ -44,7 +44,7 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Round, check against whole numbers of times, and say what it shows',
-        working: 'Starting from €800, 22 multiplications by 1.05 give about €2,340, still under the target; 23 multiplications give about €2,457, over it. So the target is reached during the 23rd year. Rounded, the answer is about 22.5 years'
+        working: 'Starting from $800, 22 multiplications by 1.05 give about $2,340, still under the target; 23 multiplications give about $2,457, over it. So the target is reached during the 23rd year. Rounded, the answer is about 22.5 years'
       }
     ],
     answer: {
@@ -71,14 +71,14 @@ FC.cases('math', 'u4', [
     use: 'drill',
     tier: 'varied',
     setting: 'shopping',
-    topic: 'school canteen lunches',
+    topic: 'school cafeteria lunches',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A school canteen charged €3.20 for a lunch until September, when the price was set at €3.60. It has stayed at €3.60 ever since. What will a lunch cost after 2 more years?',
+    text: 'A school cafeteria charged $3.20 for a lunch until September, when the price was set at $3.60. It has stayed at $3.60 ever since. What will a lunch cost after 2 more years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['It has stayed at €3.60 ever since'],
-      G1: ['when the price was set at €3.60', 'It has stayed at €3.60 ever since'],
+      M1: ['It has stayed at $3.60 ever since'],
+      G1: ['when the price was set at $3.60', 'It has stayed at $3.60 ever since'],
       G2: ['What will a lunch cost after 2 more years?']
     },
     reason: {
@@ -93,33 +93,33 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €3.20. After: €3.60'
+        working: 'Before: $3.20. After: $3.60'
       },
       {
         does: 'Say how big the change was',
-        working: '€3.60 − €3.20 = €0.40, and €0.40 ÷ €3.20 = 0.125, which is 12.5% of the old amount'
+        working: '$3.60 − $3.20 = $0.40, and $0.40 ÷ $3.20 = 0.125, which is 12.5% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €3.60 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $3.60 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 2 years: €3.60'
+        working: 'In 2 years: $3.60'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€3.60' },
+        { id: 'r', text: '$3.60' },
         {
           id: 's1',
-          text: '€4.40',
+          text: '$4.40',
           slip: 'you carry the change forward as if it came again every year.'
         },
         {
           id: 's2',
-          text: '€4.56',
+          text: '$4.56',
           slip: 'you carry the percentage forward as if it came again every year.'
         }
       ]

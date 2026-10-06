@@ -54,9 +54,9 @@ FC.cases('civics', 'u4', [
     cues: { D1: 'the federal health agency published the list of treatments whose prices must be posted',
             E1: ['Congress passed a law last year that requires every hospital that takes federal money to post its prices for common treatments', 'the form the list must take, and the date from which it applies'] } },
 
-  { id: 'e-w-harbour', use: 'teach', tier: 'misleading', setting: 'world', topic: 'a supply ship drifting during a trade visit', name: 'The drifting supply ship',
-    text: "The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. The President ends the talks for the day and orders the three navy ships in the harbour to sail at once and tow the supply ship clear.",
+  { id: 'e-w-harbor', use: 'teach', tier: 'misleading', setting: 'world', topic: 'a supply ship drifting during a trade visit', name: 'The drifting supply ship',
+    text: "The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. The President ends the talks for the day and orders the three navy ships in the harbor to sail at once and tow the supply ship clear.",
     outcome: 'commander', route: { D1: ['president'], E1: ['military'] },
-    cues: { D1: 'The President ends the talks for the day and orders the three navy ships in the harbour to sail at once',
-            E1: 'orders the three navy ships in the harbour to sail at once and tow the supply ship clear' } }
+    cues: { D1: 'The President ends the talks for the day and orders the three navy ships in the harbor to sail at once',
+            E1: 'orders the three navy ships in the harbor to sail at once and tow the supply ship clear' } }
 ]);

@@ -14,7 +14,7 @@ FC.cases('math', 'u4', [
     topic: 'interest paid out yearly',
     name: 'The bond that pays out',
     outcome: 'lin',
-    text: 'A man buys a bond for €5,000 that pays 3% interest a year. The interest is paid out to him each year, and the €5,000 itself never changes. How much interest will he have been paid in total after 8 years?',
+    text: 'A man buys a bond for $5,000 that pays 3% interest a year. The interest is paid out to him each year, and the $5,000 itself never changes. How much interest will he have been paid in total after 8 years?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
       M1: ['The interest is paid out to him each year', 'after 8 years'],
@@ -23,11 +23,11 @@ FC.cases('math', 'u4', [
     },
     segments: [
       {
-        text: 'A man buys a bond for €5,000 that pays 3% interest a year.',
+        text: 'A man buys a bond for $5,000 that pays 3% interest a year.',
         note: 'This is the part that has a percentage in it, and it is why the problem looks like the second kind. The words that settle it are about what happens to the interest.'
       },
       {
-        text: 'The interest is paid out to him each year, and the €5,000 itself never changes.'
+        text: 'The interest is paid out to him each year, and the $5,000 itself never changes.'
       },
       {
         text: 'How much interest will he have been paid in total after 8 years?',
@@ -105,7 +105,7 @@ FC.cases('math', 'u4', [
     use: 'teach',
     tier: 'clean',
     setting: 'leisure',
-    topic: 'weed growing by square metres',
+    topic: 'weed growing by square meters',
     outcome: 'lin',
     text: 'A pond has 40 m² of weed. Every week another 10 m² of weed appears. After how many weeks will the weed cover 400 m²?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['howlong'] },
@@ -139,11 +139,11 @@ FC.cases('math', 'u4', [
     setting: 'money',
     topic: 'a phone plan rising',
     outcome: 'lin',
-    text: 'A phone plan costs €20 a month, and its price goes up by €2 every month. What will it cost after 6 months?',
+    text: 'A phone plan costs $20 a month, and its price goes up by $2 every month. What will it cost after 6 months?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['willbe'] },
     cues: {
-      M1: ['its price goes up by €2 every month', 'after 6 months'],
-      G1: ['its price goes up by €2 every month'],
+      M1: ['its price goes up by $2 every month', 'after 6 months'],
+      G1: ['its price goes up by $2 every month'],
       G2: ['What will it cost after 6 months?']
     }
   },
@@ -155,11 +155,11 @@ FC.cases('math', 'u4', [
     setting: 'money',
     topic: 'a phone plan with a new price',
     outcome: 'oneoff',
-    text: 'A phone plan cost €20 a month. In January it went up to €22 a month, and it has stayed at €22 a month since. What will it cost after 6 months?',
+    text: 'A phone plan cost $20 a month. In January it went up to $22 a month, and it has stayed at $22 a month since. What will it cost after 6 months?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['it has stayed at €22 a month since', 'after 6 months'],
-      G1: ['In January it went up to €22 a month', 'it has stayed at €22 a month since'],
+      M1: ['it has stayed at $22 a month since', 'after 6 months'],
+      G1: ['In January it went up to $22 a month', 'it has stayed at $22 a month since'],
       G2: ['What will it cost after 6 months?']
     }
   },
@@ -171,7 +171,7 @@ FC.cases('math', 'u4', [
     setting: 'shopping',
     topic: 'a coffee price rising yearly',
     outcome: 'expg',
-    text: 'A café sells a coffee for €3.00, and its price goes up by 8% every year. What will a coffee cost after 2 years?',
+    text: 'A café sells a coffee for $3.00, and its price goes up by 8% every year. What will a coffee cost after 2 years?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     cues: {
       M1: ['its price goes up by 8% every year', 'after 2 years'],
@@ -187,11 +187,11 @@ FC.cases('math', 'u4', [
     setting: 'shopping',
     topic: 'a coffee price with a new rise',
     outcome: 'oneoff',
-    text: 'A café sold a coffee for €3.00. In March the price went up by 8%, to €3.24, and it has stayed at €3.24 since. What will a coffee cost after 2 years?',
+    text: 'A café sold a coffee for $3.00. In March the price went up by 8%, to $3.24, and it has stayed at $3.24 since. What will a coffee cost after 2 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['it has stayed at €3.24 since', 'after 2 years'],
-      G1: ['In March the price went up by 8%, to €3.24', 'it has stayed at €3.24 since'],
+      M1: ['it has stayed at $3.24 since', 'after 2 years'],
+      G1: ['In March the price went up by 8%, to $3.24', 'it has stayed at $3.24 since'],
       G2: ['What will a coffee cost after 2 years?']
     }
   },

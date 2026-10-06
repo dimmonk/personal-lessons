@@ -13,12 +13,12 @@ FC.cases('math', 'u4', [
     topic: 'a monthly bus pass',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A monthly bus pass cost €40. After a service change in May it costs €48, and the council has fixed it at €48. After how many months will it cost €60?',
+    text: 'A monthly bus pass cost $40. After a service change in May it costs $48, and the transit authority has fixed it at $48. After how many months will it cost $60?',
     route: { M1: ['growth'], G1: ['once'], G2: ['howlong'] },
     cues: {
-      M1: ['the council has fixed it at €48'],
-      G1: ['After a service change in May it costs €48', 'the council has fixed it at €48'],
-      G2: ['After how many months will it cost €60?']
+      M1: ['the transit authority has fixed it at $48'],
+      G1: ['After a service change in May it costs $48', 'the transit authority has fixed it at $48'],
+      G2: ['After how many months will it cost $60?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -32,25 +32,25 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €40. After: €48'
+        working: 'Before: $40. After: $48'
       },
       {
         does: 'Say how big the change was',
-        working: '€48 − €40 = €8, and €8 ÷ €40 = 0.2, which is 20% of the old amount'
+        working: '$48 − $40 = $8, and $8 ÷ $40 = 0.2, which is 20% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €48 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $48 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'See whether the amount ever reaches the target',
-        working: '€48 is not €60, and nothing changes it again, so it never reaches €60 unless a new change is made'
+        working: '$48 is not $60, and nothing changes it again, so it never reaches $60 unless a new change is made'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: 'Never: it stays at €48' },
+        { id: 'r', text: 'Never: it stays at $48' },
         {
           id: 's1',
           text: 'About 1.5 months',
@@ -74,12 +74,12 @@ FC.cases('math', 'u4', [
     topic: 'a plumber’s bill',
     kind: 'problem',
     outcome: 'lin',
-    text: 'A plumber charges a €45 call-out fee, and then €30 for every hour of work. After how many hours of work will the bill reach €195?',
+    text: 'A plumber charges a $45 call-out fee, and then $30 for every hour of work. After how many hours of work will the bill reach $195?',
     route: { M1: ['growth'], G1: ['adds'], G2: ['howlong'] },
     cues: {
-      M1: ['then €30 for every hour of work'],
-      G1: ['then €30 for every hour of work'],
-      G2: ['After how many hours of work will the bill reach €195?']
+      M1: ['then $30 for every hour of work'],
+      G1: ['then $30 for every hour of work'],
+      G2: ['After how many hours of work will the bill reach $195?']
     },
     reason: {
       M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
@@ -93,13 +93,13 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find where it starts and how much it changes each time',
-        working: 'Start: €45. Each hour it goes up by €30'
+        working: 'Start: $45. Each hour it goes up by $30'
       },
       {
         does: 'Find how much it must change in all to reach the target',
-        working: '€195 − €45 = €150 to be added'
+        working: '$195 − $45 = $150 to be added'
       },
-      { does: 'Divide that by how much it changes each time', working: '€150 ÷ €30 = 5 hours' }
+      { does: 'Divide that by how much it changes each time', working: '$150 ÷ $30 = 5 hours' }
     ],
     answer: {
       right: 'r',
@@ -246,11 +246,11 @@ FC.cases('math', 'u4', [
     topic: 'a helpline charge',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A helpline charged €0.10 a minute. In June it moved to €0.12 a minute, a rise of 20%, and it has charged €0.12 a minute ever since. What will a minute cost after 3 years?',
+    text: 'A helpline charged $0.10 a minute. In June it moved to $0.12 a minute, a rise of 20%, and it has charged $0.12 a minute ever since. What will a minute cost after 3 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     cues: {
-      M1: ['it has charged €0.12 a minute ever since'],
-      G1: ['In June it moved to €0.12 a minute', 'it has charged €0.12 a minute ever since'],
+      M1: ['it has charged $0.12 a minute ever since'],
+      G1: ['In June it moved to $0.12 a minute', 'it has charged $0.12 a minute ever since'],
       G2: ['What will a minute cost after 3 years?']
     },
     reason: {
@@ -265,33 +265,33 @@ FC.cases('math', 'u4', [
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €0.10. After: €0.12'
+        working: 'Before: $0.10. After: $0.12'
       },
       {
         does: 'Say how big the change was',
-        working: '€0.12 − €0.10 = €0.02, and €0.02 ÷ €0.10 = 0.2, which is 20% of the old amount'
+        working: '$0.12 − $0.10 = $0.02, and $0.02 ÷ $0.10 = 0.2, which is 20% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €0.12 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $0.12 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 3 years: €0.12'
+        working: 'In 3 years: $0.12'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€0.12' },
+        { id: 'r', text: '$0.12' },
         {
           id: 's1',
-          text: '€0.18',
+          text: '$0.18',
           slip: 'you carry the change forward as if it came again every year.'
         },
         {
           id: 's2',
-          text: '€0.21',
+          text: '$0.21',
           slip: 'you carry the percentage forward as if it came again every year.'
         }
       ]

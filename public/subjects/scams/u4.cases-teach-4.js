@@ -7,12 +7,12 @@ FC.cases('scams', 'u4', [
 
   /* ---------- Overpayment scam against Refund scam: too much has reached you, and you are asked to send the difference back ---------- */
   { id: 'm-aziz-sale', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a coffee machine and a buyer who pays too much',
-    text: "Aziz sells a coffee machine for £120. The buyer pays £320 and writes: 'I sent too much by mistake. Please send the £200 difference back to the account that I will text you.'",
+    text: "Aziz sells a coffee machine for $120. The buyer pays $320 and writes: 'I sent too much by mistake. Please send the $200 difference back to the account that I will text you.'",
     outcome: 'overpayment', route: { D1: ['money'], M1: ['deal'], M2: ['sendback'] },
-    cues: { D1: 'Please send the £200 difference back to the account that I will text you', M1: 'Aziz sells a coffee machine for £120', M2: 'I sent too much by mistake. Please send the £200 difference back to the account that I will text you' } },
+    cues: { D1: 'Please send the $200 difference back to the account that I will text you', M1: 'Aziz sells a coffee machine for $120', M2: 'I sent too much by mistake. Please send the $200 difference back to the account that I will text you' } },
 
   { id: 'm-aziz-refund', use: 'teach', tier: 'clean', setting: 'home', topic: 'a broadband refund too big',
-    text: "Aziz gets a call from a man who says that he is from his broadband company: 'We refunded you £320 instead of £120 by mistake. To send the £200 difference back, I will walk you through your banking app. Please install this support tool first, so that I can see your phone.'",
+    text: "Aziz gets a call from a man who says that he is from his broadband company: 'We refunded you $320 instead of $120 by mistake. To send the $200 difference back, I will walk you through your banking app. Please install this support tool first, so that I can see your phone.'",
     outcome: 'refundscam', route: { D1: ['device'], I1: ['refund'] } },
 
   /* ---------- Fake official scam against One-time code scam: a call from your bank's fraud team ---------- */

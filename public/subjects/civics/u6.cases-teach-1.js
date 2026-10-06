@@ -14,19 +14,19 @@ FC.cases('civics', 'u6', [
     cues: { D1: 'the Brenmore legislature passed a law', S1: 'the Brenmore legislature passed a law',
             S2: 'a landlord must return a tenant’s deposit within thirty days of the tenant moving out' } },
 
-  { id: 'u6-plumber', use: 'teach', tier: 'clean', setting: 'work', topic: 'pipe fitters', name: 'The plumbers’ licence',
-    text: "After a run of badly fitted gas pipes in people’s homes, the Ostrow legislature passed a law that anyone who fits pipes for money must pass a test and hold a state licence.",
+  { id: 'u6-plumber', use: 'teach', tier: 'clean', setting: 'work', topic: 'pipe fitters', name: 'The plumbers’ license',
+    text: "After a run of badly fitted gas pipes in people’s homes, the Ostrow legislature passed a law that anyone who fits pipes for money must pass a test and hold a state license.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
     cues: { D1: 'the Ostrow legislature passed a law', S1: 'the Ostrow legislature passed a law',
-            S2: 'anyone who fits pipes for money must pass a test and hold a state licence' },
+            S2: 'anyone who fits pipes for money must pass a test and hold a state license' },
     segments: [
       { text: 'After a run of badly fitted gas pipes in people’s homes', note: 'That is why the law was passed. It is the story behind the rule, and it does not say who made the rule.' },
       { text: 'the Ostrow legislature passed a law' },
-      { text: 'that anyone who fits pipes for money must pass a test and hold a state licence', note: 'That is what the rule says: its matter. The words asked for show who made it.' }] },
+      { text: 'that anyone who fits pipes for money must pass a test and hold a state license', note: 'That is what the rule says: its matter. The words asked for show who made it.' }] },
 
   /* ---------- Power handed down to a city or county ---------- */
   { id: 'u6-fence', use: 'teach', tier: 'clean', setting: 'community', topic: 'front-yard fences', name: 'The fence rule',
-    text: "In the town of Ashby, neighbours kept arguing about tall fences that blocked their front windows. The state’s law on towns lets each town set rules for its own streets and buildings. Using that power, the Ashby town council voted that a front-yard fence may be no taller than four feet.",
+    text: "In the town of Ashby, neighbors kept arguing about tall fences that blocked their front windows. The state’s law on towns lets each town set rules for its own streets and buildings. Using that power, the Ashby town council voted that a front-yard fence may be no taller than four feet.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
     cues: { D1: 'the Ashby town council voted', S1: ['The state’s law on towns lets each town set rules for its own streets and buildings', 'the Ashby town council voted'],
             S2: 'a front-yard fence may be no taller than four feet' } },
@@ -77,10 +77,10 @@ FC.cases('civics', 'u6', [
 
   /* ---------- A right that binds the states ---------- */
   { id: 'u6-leaflets', use: 'teach', tier: 'clean', setting: 'community', topic: 'leaflets about the mayor', name: 'The mayor leaflets',
-    text: "In the city of Redwick, a group handed out leaflets that said the mayor had wasted money on a new car park. The Redwick city council then passed an ordinance making it a crime to hand out leaflets that criticise the mayor.",
+    text: "In the city of Redwick, a group handed out leaflets that said the mayor had wasted money on a new parking lot. The Redwick city council then passed an ordinance making it a crime to hand out leaflets that criticize the mayor.",
     outcome: 'protected', route: { D1: ['states'], S1: ['local'], S2: ['right'] },
     cues: { D1: 'The Redwick city council then passed an ordinance', S1: 'The Redwick city council then passed an ordinance',
-            S2: 'making it a crime to hand out leaflets that criticise the mayor' } },
+            S2: 'making it a crime to hand out leaflets that criticize the mayor' } },
 
   { id: 'u6-worship', use: 'teach', tier: 'clean', setting: 'home', topic: 'a permit for a service', name: 'The worship permit',
     text: "A small religious group in the state of Halvard rents a hall each Sunday for its service. The Halvard legislature passed a law that a religious group may hold a service in a rented hall only with a permit from the state, and the permit office may refuse any group whose beliefs it does not like.",

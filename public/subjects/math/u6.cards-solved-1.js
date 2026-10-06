@@ -20,13 +20,13 @@ FC.cards('math', 'u6', [
       {
         does: 'Multiply each given side by itself',
         working: '30 × 30 = 900; 40 × 40 = 1,600',
-        why: 'A square can be drawn on each side of the triangle, with that side as one of its edges. The square on the 30 m side has 30 × 30 = 900 square metres in it, and the square on the 40 m side has 40 × 40 = 1,600. These are the numbers the next step uses: it is the squares, and not the sides, that fit together.'
+        why: 'A square can be drawn on each side of the triangle, with that side as one of its edges. The square on the 30 m side has 30 × 30 = 900 square meters in it, and the square on the 40 m side has 40 × 40 = 1,600. These are the numbers the next step uses: it is the squares, and not the sides, that fit together.'
       },
       { does: 'Add the two results', working: '900 + 1,600 = 2,500' },
       {
         does: 'Find the number that multiplies by itself to give the result',
         working: '50 × 50 = 2,500, so the longest side is 50 m',
-        why: 'The total, 2,500, is the number of square metres in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the {t:sqroot} of 2,500, and the √ button on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.'
+        why: 'The total, 2,500, is the number of square meters in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the {t:sqroot} of 2,500, and the √ button on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.'
       }
     ],
     result: 'The path is 50 m long. Going round two edges of the yard would be 70 m, so the path across saves 20 m.',
@@ -37,7 +37,7 @@ FC.cards('math', 'u6', [
         choices: [
           {
             id: 'x',
-            text: 'In a triangle with a square corner, the square on the longest side holds exactly as many square metres as the squares on the two shorter sides together, so adding the two results gives the square on the longest side.'
+            text: 'In a triangle with a square corner, the square on the longest side holds exactly as many square meters as the squares on the two shorter sides together, so adding the two results gives the square on the longest side.'
           },
           {
             id: 'y',
@@ -84,7 +84,7 @@ FC.cards('math', 'u6', [
       {
         does: 'Find the number that multiplies by itself to give the result',
         working: '8 × 8 = 64, so the shorter side is 8 m',
-        why: 'The 64 is the number of square metres in the square on the pole, so the height of the pole is the number that multiplies by itself to give 64. That is 8, because 8 × 8 = 64, so the pole is 8 m tall. As a check, a shorter side is always shorter than the longest side, and 8 m is shorter than the 10 m cable.'
+        why: 'The 64 is the number of square meters in the square on the pole, so the height of the pole is the number that multiplies by itself to give 64. That is 8, because 8 × 8 = 64, so the pole is 8 m tall. As a check, a shorter side is always shorter than the longest side, and 8 m is shorter than the 10 m cable.'
       }
     ],
     result: 'The pole is 8 m tall.',
@@ -95,7 +95,7 @@ FC.cards('math', 'u6', [
         choices: [
           {
             id: 'x',
-            text: 'The square on the longest side holds as many square metres as the squares on the two shorter sides together, so the square on the missing shorter side is what is left when the square on the known shorter side is taken away.'
+            text: 'The square on the longest side holds as many square meters as the squares on the two shorter sides together, so the square on the missing shorter side is what is left when the square on the known shorter side is taken away.'
           },
           {
             id: 'y',
@@ -111,7 +111,7 @@ FC.cards('math', 'u6', [
         answer: 'x'
       },
       reason: [
-        'The fact is the same as before: the square on the longest side, 100, holds as many square metres as the squares on the two shorter sides together. One of those two squares, the one on the 6 m along the ground, is 36. So the other holds what is left: 100 − 36 = 64. Adding and taking away are one fact read two ways: 100 = 36 + 64, so 64 = 100 − 36.',
+        'The fact is the same as before: the square on the longest side, 100, holds as many square meters as the squares on the two shorter sides together. One of those two squares, the one on the 6 m along the ground, is 36. So the other holds what is left: 100 − 36 = 64. Adding and taking away are one fact read two ways: 100 = 36 + 64, so 64 = 100 − 36.',
         'That is why the first step matters. If the side you want is the longest, you add the two results. If one of the sides you are given is the longest, you take away. Adding when you should take away would give a pole taller than its own cable, which cannot be a side of a triangle whose longest side is the cable.'
       ]
     }

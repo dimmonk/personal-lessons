@@ -184,11 +184,11 @@ FC.cases('math', 'u6', [
     topic: 'a water tank',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A water tank 1.5 m tall holds 2,000 litres. A second tank of exactly the same shape is 3 m tall. How much water does the second tank hold?',
+    text: 'A water tank 1.5 m tall holds 2,000 liters. A second tank of exactly the same shape is 3 m tall. How much water does the second tank hold?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: {
       M1: 'How much water does the second tank hold?',
-      S1: 'A water tank 1.5 m tall holds 2,000 litres. A second tank of exactly the same shape is 3 m tall',
+      S1: 'A water tank 1.5 m tall holds 2,000 liters. A second tank of exactly the same shape is 3 m tall',
       S2: 'How much water does the second tank hold?'
     },
     reason: {
@@ -215,20 +215,20 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '2,000 litres × 8 = 16,000 litres'
+        working: '2,000 liters × 8 = 16,000 liters'
       }
     ],
     answer: {
       choices: [
-        { id: 'r', text: '16,000 litres' },
+        { id: 'r', text: '16,000 liters' },
         {
           id: 's1',
-          text: '4,000 litres',
+          text: '4,000 liters',
           slip: 'you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.'
         },
         {
           id: 's2',
-          text: '8,000 litres',
+          text: '8,000 liters',
           slip: 'you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.'
         }
       ],

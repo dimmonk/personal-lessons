@@ -227,10 +227,10 @@ FC.cases('math', 'u5', [
     use: 'teach',
     tier: 'clean',
     setting: 'shopping',
-    topic: 'free flavours at a tasting stand',
+    topic: 'free flavors at a tasting stand',
     kind: 'problem',
     outcome: 'comb',
-    text: 'A jam stand sells 7 flavours and lets a customer taste any 3 of them, in no particular order. How many different sets of 3 flavours can a customer taste?'
+    text: 'A jam stand sells 7 flavors and lets a customer taste any 3 of them, in no particular order. How many different sets of 3 flavors can a customer taste?'
   },
 
   {

@@ -26,7 +26,7 @@ FC.cards('ideology', 'u1', [
   { id: 'again-rights', kind: 'again', family: 'rights',
     link: 'The open-counter pamphlet gave you what to point to from one case: {needs:rights}. Here is a second case in a different story: a speech about a doctor and a school.',
     first: 'i-rights-meet', second: 'i-rights-again', step: 'D1',
-    instruction: 'Find what the two cases share. Ignore the story (a stall licence, a doctor and a school). Look at one thing only: which words say what every person is owed?',
+    instruction: 'Find what the two cases share. Ignore the story (a stall license, a doctor and a school). Look at one thing only: which words say what every person is owed?',
     prompt: { kind: 'phrase', answer: 'every child in this country is owed a doctor when they are ill and a school that will teach them' },
     shared: [
       'Both texts name something that every person is owed, and say it comes first. The pamphlet says each person is owed the freedom to speak, believe, own and trade. The speech says every child is owed a doctor and a school. What they name differs a great deal: one asks the government to leave people alone, and the other asks it to provide. That difference is a question of its own, and this unit does not ask it.',
@@ -46,7 +46,7 @@ FC.cards('ideology', 'u1', [
       'Mentioning a freedom, a school or a fair deal does not make a text this answer. A notice that the school opens at nine mentions a school and says nothing is owed to anyone. What you point to is the claim: every person is owed it, and it comes first.',
       'Naming groups does not either. A text that sorts people into workers and owners and stands with the workers names groups and sets them against each other. A text that speaks for every person alike does not.'
     ],
-    wild: ['"Everyone is entitled to a fair hearing."', '"Nobody should be turned away for who they are."', '"These are rights, not favours."', '"Equal treatment for every person."', '"Freedom to speak, believe, own and trade."'],
+    wild: ['"Everyone is entitled to a fair hearing."', '"Nobody should be turned away for who they are."', '"These are rights, not favors."', '"Equal treatment for every person."', '"Freedom to speak, believe, own and trade."'],
     self: 'In your own life it is the argument over whether a rule is fair to everyone, a petition for a service every household should have, the words "that is not fair" said of a rule that treats everyone alike, or an opinion piece about what a person can expect from a government.',
     ask: '"What is said to be owed, who is it said to be owed to, and does the text put it first?" If it is owed to every person, and it comes first, this is the answer to look at.' },
 
@@ -96,7 +96,7 @@ FC.cards('ideology', 'u1', [
     setup: 'The leaflet begins by saying that every child is owed a school with a roof that does not leak. Saying what every person is owed is what you point to for {a:D1.rights}. Yet the answer for this case is {a:D1.class}.',
     prompt: { kind: 'phrase', answer: 'Teachers and owners want different things, and we are with the teachers' },
     because: [
-      'The leaflet does say what every child is owed. If that were all it said, it would be {a:D1.rights}. But it goes on to name the academy chain that owns the school and the staff who teach in it, and says "teachers and owners want different things, and we are with the teachers". That is working people set against owners, with the text on the workers’ side.',
+      'The leaflet does say what every child is owed. If that were all it said, it would be {a:D1.rights}. But it goes on to name the charter-school chain that owns the school and the staff who teach in it, and says "teachers and owners want different things, and we are with the teachers". That is working people set against owners, with the text on the workers’ side.',
       'So the case shows both answers at once. When it does, the first answer wins. The promise to every child is in the text, but what the text does with it is argue for the teachers against the owners.',
       'The answer goes this way round for a reason. If the leaflet were given {a:D1.rights}, the owners and the staff would drop out of the reading, and they are what the leaflet is about.'
     ],

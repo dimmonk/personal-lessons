@@ -8,7 +8,7 @@ FC.cards('stats', 'u1', [
   /* ---------- The tie-break, as three exceptions ---------- */
   { id: 'exc-finishers', kind: 'exception', ledger: 'counted~cause', looksLike: 'cause', is: 'counted',
     h: 'A claim of cause, built on the ones who stayed',
-    link: 'You now know five answers and how to tell the neighbours apart. Real claims are less tidy than the pairs you have seen. A claim can say that one thing caused another, and be built on a figure that has gone wrong in the very first part.',
+    link: 'You now know five answers and how to tell the neighbors apart. Real claims are less tidy than the pairs you have seen. A claim can say that one thing caused another, and be built on a figure that has gone wrong in the very first part.',
     case: 'gate-finishers',
     setup: 'The gym says its program makes people lose weight, and the case shows another way to explain the result: the members who dropped out are the ones who were not losing weight. A claim of cause, with another way for the same result, is what you point to for {a:S1.cause}. Yet the answer for this case is {a:S1.counted}.',
     prompt: { kind: 'phrase', answer: 'the 140 members who finished all 12 weeks' },

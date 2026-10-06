@@ -52,10 +52,10 @@ FC.specimens('stats', [
     wouldChange: 'If the follow-up were dropped and only one household in five answered, this would be {o:nonresp}.' },
 
   { id: 'sp-er', tier: 'clean', setting: 'health', topic: 'a four-hour emergency target',
-    text: "Two years ago the hospital made the four-hour emergency target the main measure of its emergency department, and the department managers' bonuses depend on it. Now 95% of patients are seen within four hours, against 68% before. The hospital says: 'Emergency care here has been transformed.' Patients are now often moved to a hallway bed at three hours and fifty-five minutes, and ambulances queue outside, where the clock has not started.",
+    text: "Two years ago the hospital made the four-hour emergency target the main measure of its emergency department, and the department managers' bonuses depend on it. Now 95% of patients are seen within four hours, against 68% before. The hospital says: 'Emergency care here has been transformed.' Patients are now often moved to a hallway bed at three hours and fifty-five minutes, and ambulances wait outside, where the clock has not started.",
     outcome: 'proxy', route: { S1: ['measure'], M1: ['pushed'] },
     cues: { S1: 'made the four-hour emergency target the main measure of its emergency department',
-            M1: ["the department managers' bonuses depend on it", 'ambulances queue outside, where the clock has not started'] },
+            M1: ["the department managers' bonuses depend on it", 'ambulances wait outside, where the clock has not started'] },
     reason: { S1: 'The claim reads the figure as showing that care has been transformed, but the figure is only the share of patients seen within four hours: {cue:S1}.',
               M1: 'The people the figure measures are paid on it: {cue:M1}. They can raise it by moving where patients wait, with no better care.' },
     not: { outcome: 'defshift', why: 'Nothing about how the four hours are counted changed. What changed is what the managers are paid on, and that pushes the figure.' },

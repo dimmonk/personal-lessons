@@ -11,7 +11,7 @@ FC.cases('math', 'u1', [
   { id: 'gt-rev-whole', use: 'drill', kind: 'reverse', outcome: 'whole', expect: 'hear',
     options: [
       { text: '"Can the 56 chairs be set out in equal rows with none left over?"', voice: 'whole' },
-      { text: '"The bill came to €48 and every unit costs €2: how many units was it?"', voice: 'unknown' },
+      { text: '"The bill came to $48 and every unit costs $2: how many units was it?"', voice: 'unknown' },
       { text: '"The pond rises by 3 cm every day: when will it reach 40 cm?"', voice: 'growth' },
       { text: '"How many different teams of three can we pick?"', voice: 'chance' },
       { text: '"How long is the wire from the top of the pole to the peg?"', voice: 'shape' }
@@ -30,9 +30,9 @@ FC.cases('math', 'u1', [
 
   { id: 'gt-rev-growth', use: 'drill', kind: 'reverse', outcome: 'growth', expect: 'hear',
     options: [
-      { text: '"If I share 31 sweets among 4 children, how many are left?"', voice: 'whole' },
+      { text: '"If I share 31 candies among 4 children, how many are left?"', voice: 'whole' },
       { text: '"Two numbers add up to 9 and differ by 3: what are they?"', voice: 'unknown' },
-      { text: '"It was €200 in January and goes up by €20 every month."', voice: 'growth' },
+      { text: '"It was $200 in January and goes up by $20 every month."', voice: 'growth' },
       { text: '"How likely is it that at least one of the three fuses fails?"', voice: 'chance' },
       { text: '"The model is 1 to 25: how long is the real thing?"', voice: 'shape' }
     ],
@@ -50,8 +50,8 @@ FC.cases('math', 'u1', [
 
   { id: 'gt-rev-shape', use: 'drill', kind: 'reverse', outcome: 'shape', expect: 'hear',
     options: [
-      { text: '"Is there any way to share 29 sweets into equal bags?"', voice: 'whole' },
-      { text: '"Paint covers 12 square metres for each litre: how much for this wall?"', voice: 'unknown' },
+      { text: '"Is there any way to share 29 candies into equal bags?"', voice: 'whole' },
+      { text: '"Paint covers 12 square meters for each liter: how much for this wall?"', voice: 'unknown' },
       { text: '"It loses 5% of its value every year: what is it worth in 4 years?"', voice: 'growth' },
       { text: '"What are the chances that the test is right?"', voice: 'chance' },
       { text: '"Their pizza is the same shape as ours but twice as wide: how much more does it hold?"', voice: 'shape' }
@@ -60,16 +60,16 @@ FC.cases('math', 'u1', [
 
   /* ---------- Faulty claims: the first is worked for the learner; then commit first, the fault, the claim put right ---------- */
   { id: 'gt-claim-demo', use: 'claim',
-    text: '"A bank lends Mia €5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. It is about a bank, so it is a money problem, and I put it with the budget problems."',
+    text: '"A bank lends Mia $5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. It is about a bank, so it is a money problem, and I put it with the budget problems."',
     ask: { type: 'option', step: 'M1', answer: 'growth' },
     fault: 'The claim sorts the problem by its topic. A bank is the story, and the story does not decide the kind. What the problem asks is what one amount, what Mia owes, will be after 3 years, and the amount changes each year.',
-    corrected: 'A bank lends Mia €5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. The topic is money, and money problems turn up in all five kinds. What decides this one is that it follows one amount as years pass: {a:M1.growth}.' },
+    corrected: 'A bank lends Mia $5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. The topic is money, and money problems turn up in all five kinds. What decides this one is that it follows one amount as years pass: {a:M1.growth}.' },
 
   { id: 'gt-claim-howmany', use: 'claim',
-    text: '"The school play sold 30 tickets for €210 in all: adult tickets at €8 and child tickets at €5. The problem asks how many of each. It says how many, so this is a counting problem."',
+    text: '"The school play sold 30 tickets for $210 in all: adult tickets at $8 and child tickets at $5. The problem asks how many of each. It says how many, so this is a counting problem."',
     ask: { type: 'option', step: 'M1', answer: 'unknown' },
-    fault: 'The claim takes “how many” as a signal that something is being counted. But every kind asks it. This problem does not give the adult tickets or the child tickets. It gives a count and a total for the two together, 30 tickets and €210, and both have to come out right. Nothing is a choice.',
-    corrected: 'The school play sold 30 tickets for €210 in all, adult tickets at €8 and child tickets at €5, and the problem asks how many of each. Here “how many” asks for two numbers the problem does not tell you, and two facts fix them. The answer is {a:M1.unknown}. It would be {a:M1.chance} only if the question counted the different results of a choice.' },
+    fault: 'The claim takes “how many” as a signal that something is being counted. But every kind asks it. This problem does not give the adult tickets or the child tickets. It gives a count and a total for the two together, 30 tickets and $210, and both have to come out right. Nothing is a choice.',
+    corrected: 'The school play sold 30 tickets for $210 in all, adult tickets at $8 and child tickets at $5, and the problem asks how many of each. Here “how many” asks for two numbers the problem does not tell you, and two facts fix them. The answer is {a:M1.unknown}. It would be {a:M1.chance} only if the question counted the different results of a choice.' },
 
   { id: 'gt-claim-numbers', use: 'claim',
     text: '"One bus leaves the station every 25 minutes and another every 40 minutes. They have just left together, and the problem asks when they next leave together. It has two numbers, so I divide 40 by 25."',
@@ -78,10 +78,10 @@ FC.cases('math', 'u1', [
     corrected: 'One bus leaves every 25 minutes and another every 40, and the problem asks when they next leave together. There are two things that repeat, and the question is when they meet. The answer is {a:M1.whole}, and the numbers alone could not have said so.' },
 
   { id: 'gt-claim-hourly', use: 'claim',
-    text: '"A locksmith charges a €30 call-out fee plus €25 for every hour. The bill came to €105, and the problem asks how many hours. There is a fee, a price and a bill, just like the van hire, so it is a missing number problem."',
+    text: '"A locksmith charges a $30 call-out fee plus $25 for every hour. The bill came to $105, and the problem asks how many hours. There is a fee, a price and a bill, just like the van hire, so it is a missing number problem."',
     ask: { type: 'option', step: 'M1', answer: 'growth' },
-    fault: 'The claim matches this problem to the van hire because the two have the same parts: a fee, a price and a bill. But the van hire’s price went with every kilometre, and this price goes with every hour. A price for each hour makes the bill an amount that grows as time passes, and that case goes to the third kind.',
-    corrected: 'A locksmith charges a €30 call-out fee plus €25 for every hour, the bill came to €105, and the problem asks how many hours. The price goes with each hour, so the bill is an amount growing as time passes, and the question is how long until it reaches a target. The answer is {a:M1.growth}.' },
+    fault: 'The claim matches this problem to the van hire because the two have the same parts: a fee, a price and a bill. But the van hire’s price went with every kilometer, and this price goes with every hour. A price for each hour makes the bill an amount that grows as time passes, and that case goes to the third kind.',
+    corrected: 'A locksmith charges a $30 call-out fee plus $25 for every hour, the bill came to $105, and the problem asks how many hours. The price goes with each hour, so the bill is an amount growing as time passes, and the question is how long until it reaches a target. The answer is {a:M1.growth}.' },
 
   { id: 'gt-claim-model', use: 'claim',
     text: '"A model of a sailing ship is built at a scale of 1 to 20, and its mast is 45 cm tall. The problem asks how tall the real mast is. A scale is a rate, so this is a missing number problem."',

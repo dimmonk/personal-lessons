@@ -47,7 +47,7 @@ FC.cards('math', 'u6', [
       'An angle on its own is not enough: there has to be one length too. Two lengths and no angle is the first kind of problem in this unit, where the lengths give the third side by squares.',
       'And a height found by comparing a thing with a copy of it, such as a model or a shadow, is not this kind, though it also finds a height that nobody can measure directly. There is no angle in degrees in it. It has two things of the same shape, with a length measured on both.'
     ],
-    wild: ['"It slopes up at 30 degrees."', '"I stood 40 metres back and looked up at 35 degrees."', '"The ramp rises at 6 degrees."', '"The string makes a 40 degree angle with the ground."'],
+    wild: ['"It slopes up at 30 degrees."', '"I stood 40 meters back and looked up at 35 degrees."', '"The ramp rises at 6 degrees."', '"The string makes a 40 degree angle with the ground."'],
     self: 'In your own life you meet this when someone describes how steep something is in degrees, when you wonder how tall a building is from how far back you stand, when a ladder, a ramp or a roof has to be set at a safe angle, and when a sign or a map gives a slope as an angle.',
     ask: '"Is there a triangle with a square corner, with one side given and one angle in degrees, and another side wanted?" If you can say yes, you are probably looking at this kind.' },
 

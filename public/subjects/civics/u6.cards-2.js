@@ -5,7 +5,7 @@ FC.cards('civics', 'u6', [
 
   /* ---------- The second name: power handed down to a city, a town or a county ---------- */
   { id: 'meet-localgov', kind: 'meet', outcome: 'localgov',
-    link: 'The last name was a state making a rule of its own. A state is not the only government that makes rules. Cities, towns and counties make them too, and these are the rules you meet most often: parking, fences, rubbish, parks.',
+    link: 'The last name was a state making a rule of its own. A state is not the only government that makes rules. Cities, towns and counties make them too, and these are the rules you meet most often: parking, fences, trash, parks.',
     case: 'u6-fence', mark: 'S1',
     strip: [
       'There is a town, Ashby, and its town council: the group of people who make decisions for the town.',
@@ -17,7 +17,7 @@ FC.cards('civics', 'u6', [
     explain: [
       'What you are shown is a town deciding something about itself. The council of Ashby voted, and the vote covers the fences of one town. Cities, towns and counties each have a government of their own: a council or a board, and often a mayor.',
       'Where does a town’s power come from? Not from the Constitution. The Constitution sets out the powers of the federal government and leaves the rest to the states. A town is not a state. Its power comes from its state, which hands some of its own power down to it, usually in a state law or in a charter, which is the founding document of a city. The case says so: the state’s law on towns lets each town set rules for its own streets and buildings. Because the state hands the power down, the state can usually widen it, narrow it or take it back.',
-      'A rule made by a city, a town or a county is called an ordinance. The ordinances people meet most are about everyday local matters: streets, parking, zoning, which means which kinds of building may go where, building permits, rubbish collection, parks and libraries. A fence rule belongs with these.',
+      'A rule made by a city, a town or a county is called an ordinance. The ordinances people meet most are about everyday local matters: streets, parking, zoning, which means which kinds of building may go where, building permits, trash collection, parks and libraries. A fence rule belongs with these.',
       'So the matter, and everything else in the case, looks just like the last name: nothing from the federal side covers the fences, and no right is taken away. The only difference is who made the rule. A state made the last one itself. A town made this one, using what its state gave it. That difference is what gives this case its own name.'
     ],
     feature: { step: 'S1', option: 'local' },
@@ -37,7 +37,7 @@ FC.cards('civics', 'u6', [
     link: 'You know what to point to for {o:localgov}. This card fills in the rest of the picture, and says what these governments decide.',
     typical: [
       'The maker is named, and it is a city, a town or a county, in words such as “the city council”, “the county board”, “the mayor”, “the town”. The story sometimes names the state law that gave the power. It does not have to.',
-      'The matter is local: streets, parking, zoning, building permits, rubbish, parks, libraries, how late a place may be noisy, what a pet owner must pay. It touches one place, and the rule covers that place only.',
+      'The matter is local: streets, parking, zoning, building permits, trash, parks, libraries, how late a place may be noisy, what a pet owner must pay. It touches one place, and the rule covers that place only.',
       'It does not matter how big the place is, or whether the rule is a vote of a council or an order from a mayor.',
       'The state stays above the town. The state can usually widen, narrow or take back the power it handed down, and where the state has passed a law on the same matter, the state’s law usually wins.'
     ],
@@ -46,7 +46,7 @@ FC.cards('civics', 'u6', [
       'And a story that only mentions a town is not enough. If a town is only where something happened, and the rule was made by the state, the answer to the question about who made the rule is the other one.'
     ],
     wild: ['“The city council voted…”', '“A county ordinance…”', '“You need a permit from the town.”', '“Zoning…”', '“The county board…”'],
-    self: 'In your own life this is the rule behind where you may park, how tall a fence may be, when the library is open, when the rubbish is collected, and what you need a permit for before you build. It is also the rule most likely to be different from one town to the next.',
+    self: 'In your own life this is the rule behind where you may park, how tall a fence may be, when the library is open, when the trash is collected, and what you need a permit for before you build. It is also the rule most likely to be different from one town to the next.',
     ask: '“Which government made this rule: the state, or a city, a town or a county? And where did its power come from?” If a city, a town or a county made it, and nothing else covers the matter, the name is {o:localgov}.' },
 
   { id: 'check-localgov', kind: 'check', after: 'localgov',

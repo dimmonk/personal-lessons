@@ -11,10 +11,10 @@ FC.cards('scams', 'u1', [
     h: 'Before anything else: what is this message asking you to do?',
     canDo: [
       'After this unit you can take a message, a call, a text or an offer, and say which of five things it asks of you right now: {a:D1.device}; {a:D1.access}; {a:D1.money}; {a:D1.details}; or {a:D1.nothing}. You will be able to point to the words in it that show which one, and to say why it is not one of the other four.',
-      'The message can come from a bank, a shop, an employer, a friend or a stranger, and it can be real or a copy made to take something from you. This unit does not decide that. It teaches the question that comes first, and everything after it in this subject starts from the answer.'
+      'The message can come from a bank, a store, an employer, a friend or a stranger, and it can be real or a copy made to take something from you. This unit does not decide that. It teaches the question that comes first, and everything after it in this subject starts from the answer.'
     ],
     everyday: [
-      'You already do a rough version of this every day. Your phone buzzes with a text that says it is from your bank. Before you have read to the end, part of you has asked what it wants from you: for you to tap something, to ring someone, to pay something, or only to know something.',
+      'You already do a rough version of this every day. Your phone buzzes with a text that says it is from your bank. Before you have read to the end, part of you has asked what it wants from you: for you to tap something, to call someone, to pay something, or only to know something.',
       'That is the right question to start with, and it is easy to skip. A scam is built to make you ask other questions first: who is this from, how bad is the problem, how fast do I have to act? A message from a real bank and a copy of it can use the same name, the same logo and the same words. What each one asks you to do is written in it for you to read, and it tells you what you could lose if you did it: control of your phone or computer, a way into one of your accounts, money, or facts about yourself. Each of those is guarded in a different way, which is why this is the first question.'
     ],
     add: [
@@ -30,7 +30,7 @@ FC.cards('scams', 'u1', [
     link: 'The last card said that this unit teaches one question about messages. Before the first message, one idea has to be clear, because the question and its answers use it again and again.',
     case: 'g-t-already',
     plain: [
-      'Look at what Mina did. A text gave her a number to ring, and she did not ring it. She rang a different number, the one printed on the back of her bank card. She might have reached the real bank by ringing the first one as well. What she could not know, from her phone, was whether the number in the text was the bank’s at all, because anyone can send a text with any number in it. She could know that the number on her card was the bank’s, because it was in her wallet before the text arrived.',
+      'Look at what Mina did. A text gave her a number to call, and she did not call it. She called a different number, the one printed on the back of her bank card. She might have reached the real bank by calling the first one as well. What she could not know, from her phone, was whether the number in the text was the bank’s at all, because anyone can send a text with any number in it. She could know that the number on her card was the bank’s, because it was in her wallet before the text arrived.',
       'So there are two kinds of number: the kind that came with the message, and the kind that was yours before it. The same goes for a link and an app. A link in a message came with the message. A web address that you typed in yourself or saved long ago, and an app that you installed months ago, were yours first.',
       'The ones that were yours first are the ones that you can rely on to lead to the real company, and the meaning below lists them. One part of it matters more than the rest: a number, a link or an app that came with the message never counts, even if you are the one who dials it or taps it.'
     ] },
@@ -42,7 +42,7 @@ FC.cards('scams', 'u1', [
     plain: [
       'Tom did three things. He did not do what the email asked. He did not reply to it. And he asked the person it claimed to come from, using {t:already}: the number in the staff directory. That is all there is to it. It works because the one person who knows whether she sent the email is the one who is meant to have sent it.',
       'It does not depend on being able to tell a real email from a copy. Tom could not have told. It depends only on the number, the link or the app he used being one that was his before the email came.',
-      'A real company or a real person does not mind being asked this way. A real bank would rather you rang the number on your card than acted on a text. If someone gets angry, or hurries you, when you want to do it, that tells you something too.'
+      'A real company or a real person does not mind being asked this way. A real bank would rather you called the number on your card than acted on a text. If someone gets angry, or hurries you, when you want to do it, that tells you something too.'
     ] },
 
   /* ---------- the first kind: a message that asks nothing ---------- */
@@ -50,7 +50,7 @@ FC.cards('scams', 'u1', [
     link: 'You have the two ideas you need. The first kind of message to look at is the one that is easiest to forget, because it asks you for nothing at all and only gives you news.',
     case: 'g-delivery', mark: 'D1',
     strip: [
-      'There is one message, and it comes from the shop where Ruth placed an order.',
+      'There is one message, and it comes from the store where Ruth placed an order.',
       'It tells her something that will happen: the order is out for delivery, and when to expect it.',
       'It asks her for nothing: no payment, no password, no code, no facts about herself, nothing to install or open.',
       'It gives her no link, no number and no app to use. There is nothing in it for her to tap.',
@@ -72,11 +72,11 @@ FC.cards('scams', 'u1', [
     link: 'The last card gave you what to point to for {a:D1.nothing}, from one case: {needs:nothing}. Here is a second case with a different story, and this time the message also suggests something the reader could do.',
     first: 'g-delivery', second: 'g-appointment', step: 'D1',
     instruction: 'Find what the two cases share. Ignore the story (a delivery, a dentist). Look at one thing only: do the words tell the reader what is going to happen, and ask nothing of them?',
-    prompt: { kind: 'phrase', answer: 'your appointment is on Tuesday 14 October at 10.20' },
+    prompt: { kind: 'phrase', answer: 'your appointment is on Tuesday, October 14 at 10:20 a.m.' },
     shared: [
       'Both messages are made of the same thing: news about something that is going to happen, and no request. In the first an order is on its way, and in the second an appointment is fixed. Neither asks the reader to pay, to sign in, to give a code, to tell the sender anything or to install anything.',
-      'The second message does say what to do if the date does not suit: ring the number on the appointment card. That does not make it a request. It is a suggestion, it asks nothing now, and it points to a number that was already in the reader’s hands before the text arrived: {t:already}.',
-      'The two stories, a delivery and a dentist, share nothing else. So this is not about shops or about health. It holds wherever a message only tells you something. That is what {a:D1.nothing} names.'
+      'The second message does say what to do if the date does not suit: call the number on the appointment card. That does not make it a request. It is a suggestion, it asks nothing now, and it points to a number that was already in the reader’s hands before the text arrived: {t:already}.',
+      'The two stories, a delivery and a dentist, share nothing else. So this is not about stores or about health. It holds wherever a message only tells you something. That is what {a:D1.nothing} names.'
     ] },
 
   { id: 'lens-gate', kind: 'lens',
@@ -101,14 +101,14 @@ FC.cards('scams', 'u1', [
     ],
     not: [
       'A message that asks nothing is not the same as a message that is safe. A copy of a real notice can use the same words and add a button, a link or a number, and then it is no longer news: it is asking. The words around the news can be identical. The thing that has been added is the thing to look for.',
-      'A message that gives you a number to ring or a link to tap, and nothing else, is not this answer either, because the number or the link came with the message and you are being sent to use it. There is no finer name for it, and you do not need one: leave the number and the link alone, and use {t:check}.'
+      'A message that gives you a number to call or a link to tap, and nothing else, is not this answer either, because the number or the link came with the message and you are being sent to use it. There is no finer name for it, and you do not need one: leave the number and the link alone, and use {t:check}.'
     ],
     wild: ['"Your order is out for delivery."', '"Reminder: your appointment is on Tuesday."', '"A new device signed in to your account. If this was you, no action is needed."', '"Your refund has been sent."', '"Our office is closed on Monday."'],
-    self: 'You meet it every week: delivery updates, appointment reminders, notices from your bank, your employer or your council. Because most of them are harmless, you stop reading them closely, and that is the moment a copy with a link added slips through.',
+    self: 'You meet it every week: delivery updates, appointment reminders, notices from your bank, your employer or your county. Because most of them are harmless, you stop reading them closely, and that is the moment a copy with a link added slips through.',
     ask: '"Does anything in this message ask me to do something, or does it only tell me?" If it only tells you, and anything it suggests uses what you already had, the answer is the one for news that asks nothing.' },
 
   { id: 'check-nothing', kind: 'check', after: 'nothing',
     case: 'g-closure',
-    ask: { type: 'phrase', step: 'D1', say: 'Which words tell Mr Dunne something that will happen, without asking him to do anything? Tap them.',
-           answer: 'Our office will be closed on 27 and 28 October for a staff training day' } }
+    ask: { type: 'phrase', step: 'D1', say: 'Which words tell Mr. Dunne something that will happen, without asking him to do anything? Tap them.',
+           answer: 'Our office will be closed on October 27 and 28 for a staff training day' } }
 ]);

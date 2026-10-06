@@ -17,7 +17,7 @@ FC.cards('math', 'u1', [
     ],
     explain: [
       'What you are shown is one amount and a story of how it changes as time passes. You are told where it starts, how it changes each time, and how long to follow it. The question is where it ends up. In other problems of this kind the question is the other way round: you are given a target, and asked how long it takes to get there.',
-      'The change can come in three forms, and all three count as this kind. The amount can change by adding or taking away a fixed sum every time: the shrub gains 15 cm a year, a bank balance falls by €50 a month. It can be multiplied by the same number each time: a sum of money that earns 4% a year, a rumour that doubles every day. Or it can change once and stay changed: a fee that went up in March and has not moved since. These three are worked with different procedures, which are taught later. In this unit all you need is to see that an amount is being followed through time.',
+      'The change can come in three forms, and all three count as this kind. The amount can change by adding or taking away a fixed sum every time: the shrub gains 15 cm a year, a bank balance falls by $50 a month. It can be multiplied by the same number each time: a sum of money that earns 4% a year, a rumor that doubles every day. Or it can change once and stay changed: a fee that went up in March and has not moved since. These three are worked with different procedures, which are taught later. In this unit all you need is to see that an amount is being followed through time.',
       'The time is almost always in the words: each hour, each day, every month, every year, after 8 years. If you cannot find the time in the problem, it is probably not this kind.'
     ],
     feature: { step: 'M1', option: 'growth' },
@@ -46,7 +46,7 @@ FC.cards('math', 'u1', [
       'Time in the story is not enough. “The meeting took 3 hours” mentions time, and no amount is being followed.',
       'A problem can follow something through time without being this kind. A cyclist rolling down a hill covers more ground every second, but the extra distance is not a fixed sum, and it is not a fixed multiple either. A problem that gives a calculation for how far she has gone and asks when she reaches the bottom is a different kind, and this unit has a card for exactly that case.'
     ],
-    wild: ['"It goes up by €25 a month."', '"It doubles every day."', '"Interest at 4% a year."', '"How long until it reaches 100?"', '"It has stayed the same since March."'],
+    wild: ['"It goes up by $25 a month."', '"It doubles every day."', '"Interest at 4% a year."', '"How long until it reaches 100?"', '"It has stayed the same since March."'],
     self: 'In your own life it is a savings pot, a loan, a price that rises each year, a tank that fills or leaks: any time you ask “where will this be in a year?” or “when will I get there?”',
     ask: '"Which amount is changing, how does it change each time, and am I asked where it ends up or how long it takes?" If you can say all three, you are probably looking at this kind.' },
 
@@ -61,8 +61,8 @@ FC.cards('math', 'u1', [
     instruction: 'Both problems are about Leo’s phone plan. Compare one thing: does the problem follow one amount as time passes, or does it hide a number that must fit a calculation?',
     prompt: { kind: 'which', option: 'M1.growth', answer: 'gt-plan-rise' },
     difference: [
-      'In Case A nothing changes as time passes. The bill is a fixed €10 plus €0.20 for each text, the bill came to €16, and the number of texts is the number the problem leaves out. The answer is {a:M1.unknown}.',
-      'In Case B the same plan is followed through time. One amount, the monthly price, goes up by €2 every year, and the question is where it will be after 5 years. No number is hidden for a calculation to fit. The answer is {a:M1.growth}.',
+      'In Case A nothing changes as time passes. The bill is a fixed $10 plus $0.20 for each text, the bill came to $16, and the number of texts is the number the problem leaves out. The answer is {a:M1.unknown}.',
+      'In Case B the same plan is followed through time. One amount, the monthly price, goes up by $2 every year, and the question is where it will be after 5 years. No number is hidden for a calculation to fit. The answer is {a:M1.growth}.',
       'Both have a price, a number that is repeated and a question that ends in a number. What differs is what the repeat goes with. In Case A it goes with each text, and texts are things you count. In Case B it goes with each year, and years are time passing.'
     ] },
 
@@ -70,11 +70,11 @@ FC.cards('math', 'u1', [
     h: 'A fixed fee, plus a price for each hour',
     link: 'The last card kept the two kinds tidy: in Case A the price went with each text and in Case B with each year. Real problems are less tidy. Here is one with exactly the shape of the van hire, and one word changed.',
     case: 'gt-cleaner',
-    setup: 'The van hire had a fixed fee, a price for every kilometre, a result and a hidden number, and its answer was {a:M1.unknown}. This problem has the same four parts: a fixed fee, a price repeated, a result, a hidden number. Yet the answer for this case is {a:M1.growth}.',
+    setup: 'The van hire had a fixed fee, a price for every kilometer, a result and a hidden number, and its answer was {a:M1.unknown}. This problem has the same four parts: a fixed fee, a price repeated, a result, a hidden number. Yet the answer for this case is {a:M1.growth}.',
     prompt: { kind: 'phrase', answer: 'for every hour he works' },
     because: [
-      'Look at what the price is repeated for. In the van hire it was repeated for every kilometre, and a kilometre is a thing you count. Here it is repeated for every hour, and an hour is time passing. With every hour that goes by, the bill goes up by €15. So the bill is an amount that grows as time goes on.',
-      'Now look at what the problem asks. It gives a target, a bill of €95, and asks how long, in hours, until the bill gets there. That is the second half of what the third kind asks: not where an amount ends up, but how long it takes to reach a target.',
+      'Look at what the price is repeated for. In the van hire it was repeated for every kilometer, and a kilometer is a thing you count. Here it is repeated for every hour, and an hour is time passing. With every hour that goes by, the bill goes up by $15. So the bill is an amount that grows as time goes on.',
+      'Now look at what the problem asks. It gives a target, a bill of $95, and asks how long, in hours, until the bill gets there. That is the second half of what the third kind asks: not where an amount ends up, but how long it takes to reach a target.',
       'So this problem shows two things at once: a hidden number that must fit a calculation, and an amount that goes up each hour. When it shows both, the answer is the second of the two.'
     ],
     take: [
@@ -87,7 +87,7 @@ FC.cards('math', 'u1', [
     link: 'The last card moved a problem out of the second kind and into the third because of one word, “hour”. Here is a problem that goes the other way: it follows something through time, and the answer is not the third kind.',
     case: 'gt-cyclist',
     setup: 'An amount followed through time, and a question about how long it takes to reach a target, is what the third kind usually looks like: here the distance, and the 200 m of the hill. Yet the answer for this case is {a:M1.unknown}.',
-    prompt: { kind: 'phrase', answer: '2 × t × t metres' },
+    prompt: { kind: 'phrase', answer: '2 × t × t meters' },
     because: [
       'Check how the distance changes against the three forms of change the third kind allows. After 1 second the cyclist has gone 2 × 1 × 1 = 2 m. After 2 seconds she has gone 2 × 2 × 2 = 8 m, and after 3 seconds 2 × 3 × 3 = 18 m. From one second to the next she gains 6 m, and then 10 m: not the same number each time. And 8 is 4 times 2, but 18 is only 2.25 times 8: not multiplied by the same number each time either. Nor did the distance change once and then stay put.',
       'So the distance is followed through time, but in none of the three ways that count here. What the problem gives is a calculation, written in words, and a result: 200 m. The number it leaves out is the time. That is a hidden number that must fit a calculation, and the answer is {a:M1.unknown}.'
@@ -104,7 +104,7 @@ FC.cards('math', 'u1', [
     instruction: 'Both problems are about Rosa’s garden, and both have a 4 in them. Compare one thing: does one amount change as time passes, or are there two things that each repeat on their own?',
     prompt: { kind: 'which', option: 'M1.whole', answer: 'gt-rota' },
     difference: [
-      'In Case A one amount, the water in the barrel, goes up by the same 4 litres each day, and the question is how long until it reaches 100 litres. The answer is {a:M1.growth}.',
+      'In Case A one amount, the water in the barrel, goes up by the same 4 liters each day, and the question is how long until it reaches 100 liters. The answer is {a:M1.growth}.',
       'In Case B nothing grows. There are two chores, each repeating on its own: one every 4 days, one every 6 days. The question is when the two repeats next land on the same day. The answer is {a:M1.whole}.',
       'The 4 and the word “every” turn up in both. In Case A the 4 is an amount added each day. In Case B it is a gap between one chore and the next. An amount that changes is one thing, and counts that repeat are another.'
     ] },

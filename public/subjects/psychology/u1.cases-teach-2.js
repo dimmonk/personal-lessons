@@ -5,37 +5,37 @@ FC.cases('psychology', 'u1', [
 
   /* ---------- A lasting way someone is ---------- */
   { id: 'g-moira', use: 'teach', tier: 'clean', setting: 'work', topic: 'never wrong, for twenty years', name: 'Twenty years of Moira',
-    text: "In twenty years Moira has never once said 'I was wrong'. At three different firms, every project of hers that failed was somebody else's fault. Her two brothers and her oldest friends tell the same story about family holidays and shared flats.",
+    text: "In twenty years Moira has never once said 'I was wrong'. At three different firms, every project of hers that failed was somebody else's fault. Her two brothers and her oldest friends tell the same story about family vacations and shared apartments.",
     route: { D1: ['pattern'] },
     cues: { D1: ['In twenty years', 'At three different firms', 'Her two brothers and her oldest friends tell the same story'] } },
 
-  { id: 'g-rings', use: 'teach', tier: 'clean', setting: 'home', topic: 'ringing until people answer', name: 'Since she was seventeen',
-    text: "Whenever someone close to her is slow to answer a message, Jess rings until they pick up. She did it with her first boyfriend at seventeen and with her flatmates at university, and she does it now, at thirty-four, with her husband and with the people on her team at work.",
+  { id: 'g-rings', use: 'teach', tier: 'clean', setting: 'home', topic: 'calling until people answer', name: 'Since she was seventeen',
+    text: "Whenever someone close to her is slow to answer a message, Jess calls until they pick up. She did it with her first boyfriend at seventeen and with her roommates in college, and she does it now, at thirty-four, with her husband and with the people on her team at work.",
     route: { D1: ['pattern'] },
-    cues: { D1: 'She did it with her first boyfriend at seventeen and with her flatmates at university, and she does it now, at thirty-four, with her husband and with the people on her team at work' },
+    cues: { D1: 'She did it with her first boyfriend at seventeen and with her roommates in college, and she does it now, at thirty-four, with her husband and with the people on her team at work' },
     segments: [
       { text: 'Whenever someone close to her is slow to answer a message', note: 'That is what sets it off each time. It does not tell you how long this has gone on, or with how many people.' },
-      { text: 'Jess rings until they pick up', note: 'That is what she does. On its own it could be one anxious evening. The words that show years, places and relationships come next.' },
-      { text: 'She did it with her first boyfriend at seventeen and with her flatmates at university, and she does it now, at thirty-four, with her husband and with the people on her team at work' }
+      { text: 'Jess calls until they pick up', note: 'That is what she does. On its own it could be one anxious evening. The words that show years, places and relationships come next.' },
+      { text: 'She did it with her first boyfriend at seventeen and with her roommates in college, and she does it now, at thirty-four, with her husband and with the people on her team at work' }
     ] },
 
   { id: 'g-borrower', use: 'check', tier: 'clean', setting: 'money', topic: 'borrowed money, never paid back',
-    text: "Colleagues at Gareth's last three jobs all describe the same man: charming for the first month, then borrowing money that he does not pay back. His ex-wife and two former flatmates say the same. It goes back at least to his early twenties.",
+    text: "Colleagues at Gareth's last three jobs all describe the same man: charming for the first month, then borrowing money that he does not pay back. His ex-wife and two former roommates say the same. It goes back at least to his early twenties.",
     route: { D1: ['pattern'] },
-    cues: { D1: ["Colleagues at Gareth's last three jobs all describe the same man", 'His ex-wife and two former flatmates say the same', 'It goes back at least to his early twenties'] },
+    cues: { D1: ["Colleagues at Gareth's last three jobs all describe the same man", 'His ex-wife and two former roommates say the same', 'It goes back at least to his early twenties'] },
     reason: { D1: 'The case is a long view of one man: {cue:D1}. That is years, three workplaces and two homes, and the same thing in each. Nobody in the case is having a conversation.' },
     not: { outcome: 'tactic', why: 'Borrowing and not paying back is done to other people, but the case does not stay between two of them. It follows one man through years and through everyone he has dealt with.' } },
 
-  /* ---------- The look-alike pair: same man, same behaviour, one week or a working life ---------- */
+  /* ---------- The look-alike pair: same man, same behavior, one week or a working life ---------- */
   { id: 'g-credit-friday', use: 'teach', tier: 'clean', setting: 'work', topic: 'an idea taken on a Friday',
     text: "On Friday Gina's manager, Paul, presented her idea to the directors as his own. When she raised it with him, he told her she must be confused, and that he had mentioned the idea to her first. Gina went home wondering whether he had.",
     route: { D1: ['tactic'] },
     cues: { D1: 'he told her she must be confused, and that he had mentioned the idea to her first' } },
 
   { id: 'g-credit-years', use: 'teach', tier: 'clean', setting: 'work', topic: 'credit taken, in every job', name: 'Paul, in every job',
-    text: "Paul has taken the credit for other people's work in every job he has held. Two firms let him go over it in his thirties. His sister says he did the same with her school projects, and friends from his football club tell the same story about a tournament he says he organised.",
+    text: "Paul has taken the credit for other people's work in every job he has held. Two firms let him go over it in his thirties. His sister says he did the same with her school projects, and friends from his soccer club tell the same story about a tournament he says he organized.",
     route: { D1: ['pattern'] },
-    cues: { D1: ['in every job he has held', 'His sister says he did the same with her school projects', 'friends from his football club tell the same story'] } },
+    cues: { D1: ['in every job he has held', 'His sister says he did the same with her school projects', 'friends from his soccer club tell the same story'] } },
 
   /* ---------- The exception: one evening, then the years behind it ---------- */
   { id: 'g-phone', use: 'teach', tier: 'misleading', setting: 'home', topic: 'checking a partner’s phone', name: 'Mia and the phone',
@@ -56,12 +56,12 @@ FC.cases('psychology', 'u1', [
     cues: { D1: 'On Monday Amira learned that her father is seriously ill. All week she has been quiet at work and short with anyone who asks her a question' } },
 
   { id: 'g-storm', use: 'teach', tier: 'clean', setting: 'home', topic: 'a daughter flying in a storm', name: 'The night of the storm',
-    text: "The night her daughter was flying home through a storm, Renée could not sit still. She checked the airline's page every few minutes and rang the airport twice. When the plane landed she went to bed.",
+    text: "The night her daughter was flying home through a storm, Renée could not sit still. She checked the airline's page every few minutes and called the airport twice. When the plane landed she went to bed.",
     route: { D1: ['none'] },
     cues: { D1: 'The night her daughter was flying home through a storm' },
     segments: [
       { text: 'The night her daughter was flying home through a storm' },
-      { text: "She checked the airline's page every few minutes and rang the airport twice", note: 'That is what she did, and it may look like a lot. It does not tell you how long it went on, or what set it off. Those are in the first words of the case.' },
+      { text: "She checked the airline's page every few minutes and called the airport twice", note: 'That is what she did, and it may look like a lot. It does not tell you how long it went on, or what set it off. Those are in the first words of the case.' },
       { text: 'When the plane landed she went to bed', note: 'That shows it passing, which fits. But the words that place it on one night, with something real behind it, come first.' }
     ] },
 
@@ -78,7 +78,7 @@ FC.cases('psychology', 'u1', [
 
   /* ---------- The look-alike pair: same man, same talk, one evening or thirty years ---------- */
   { id: 'g-retirement', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a speech at a retirement party',
-    text: "At his own retirement party, Desmond talked for twenty minutes about the deals he had closed and the rivals he had beaten. A guest who had never met him before said afterwards, 'What an ego.'",
+    text: "At his own retirement party, Desmond talked for twenty minutes about the deals he had closed and the rivals he had beaten. A guest who had never met him before said afterward, 'What an ego.'",
     route: { D1: ['none'] },
     cues: { D1: 'At his own retirement party' } },
 

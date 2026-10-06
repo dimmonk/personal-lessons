@@ -84,7 +84,7 @@ FC.cards('math', 'u6', [
       {
         does: 'Multiply the length you have by that number of times',
         working: '15 × 2.5 = 37.5 cm',
-        why: 'The photo’s height is 15 cm, and the enlargement is 2.5 times longer in every direction, so its height is 15 × 2.5 = 37.5 cm. Adding would be a slip. The width grew by 15 cm, from 10 cm to 25 cm, and adding 15 cm to the height, 15 + 15 = 30, would give a copy that is too narrow for its height. A copy grows by multiplying every length by the same number, and not by adding the same number of centimetres.'
+        why: 'The photo’s height is 15 cm, and the enlargement is 2.5 times longer in every direction, so its height is 15 × 2.5 = 37.5 cm. Adding would be a slip. The width grew by 15 cm, from 10 cm to 25 cm, and adding 15 cm to the height, 15 + 15 = 30, would give a copy that is too narrow for its height. A copy grows by multiplying every length by the same number, and not by adding the same number of centimeters.'
       }
     ],
     result: 'The enlargement is 37.5 cm high.',

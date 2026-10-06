@@ -111,10 +111,10 @@ FC.cases('math', 'u5', [
     use: 'return',
     tier: 'clean',
     setting: 'leisure',
-    topic: 'pupils picked for a school trip',
+    topic: 'students picked for a school trip',
     kind: 'problem',
     outcome: 'comb',
-    text: 'A teacher takes 4 of her 10 pupils on a trip to a museum. It makes no difference in which order the four are picked. How many different groups of 4 can she take?',
+    text: 'A teacher takes 4 of her 10 students on a trip to a museum. It makes no difference in which order the four are picked. How many different groups of 4 can she take?',
     route: { M1: ['chance'], C1: ['group'] },
     cues: {
       M1: ['How many different groups of 4 can she take?'],
@@ -122,18 +122,18 @@ FC.cases('math', 'u5', [
     },
     reason: {
       M1: 'The words {cue:M1} ask how many different groups can be taken, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 4 pupils taken from 10 with no difference made by the order, so that the same 4 pupils in any order are one group, so the answer is {a:C1.group}.'
+      C1: 'The words {cue:C1} show 4 students taken from 10 with no difference made by the order, so that the same 4 students in any order are one group, so the answer is {a:C1.group}.'
     },
     not: {
       outcome: 'perm',
       why: 'If a different order counted as a different result, it would be {o:perm}. Here the same things in any order are one result, so the count in order has to be divided down.'
     },
     steps: [
-      { does: 'Count the group and the picks', working: 'Group: 10 pupils. Picked: 4' },
+      { does: 'Count the group and the picks', working: 'Group: 10 students. Picked: 4' },
       { does: 'Count the picks as if the order mattered', working: '10 × 9 × 8 × 7 = 5,040' },
       {
         does: 'Count the orders one chosen group can be put in',
-        working: '4 pupils can be put in order in 4 × 3 × 2 × 1 = 24 ways'
+        working: '4 students can be put in order in 4 × 3 × 2 × 1 = 24 ways'
       },
       {
         does: 'Divide the first count by the second',
@@ -156,7 +156,7 @@ FC.cases('math', 'u5', [
         }
       ]
     },
-    why: 'Counting the picks in order counts every group once for every order its 4 pupils can be put in, and that is 4 × 3 × 2 × 1 = 24 orders. So the count in order is 24 times the number of different groups, and dividing by 24 leaves each group counted once.'
+    why: 'Counting the picks in order counts every group once for every order its 4 students can be put in, and that is 4 × 3 × 2 × 1 = 24 orders. So the count in order is 24 times the number of different groups, and dividing by 24 leaves each group counted once.'
   },
 
   {
@@ -214,20 +214,20 @@ FC.cases('math', 'u5', [
     use: 'return',
     tier: 'clean',
     setting: 'travel',
-    topic: 'a ferry that is sometimes cancelled',
+    topic: 'a ferry that is sometimes canceled',
     kind: 'problem',
     outcome: 'complement',
-    text: 'A ferry is cancelled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is cancelled at least once in 4 days?',
+    text: 'A ferry is canceled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is canceled at least once in 4 days?',
     route: { M1: ['chance'], C1: ['atleast'] },
     cues: {
-      M1: ['How likely is it that the ferry is cancelled at least once in 4 days?'],
+      M1: ['How likely is it that the ferry is canceled at least once in 4 days?'],
       C1: [
-        'cancelled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is cancelled at least once in 4 days?'
+        'canceled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is canceled at least once in 4 days?'
       ]
     },
     reason: {
       M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
-      C1: 'The words {cue:C1} give the chance for each of 4 separate days and ask how likely it is that the ferry is cancelled at least once, so the answer is {a:C1.atleast}.'
+      C1: 'The words {cue:C1} give the chance for each of 4 separate days and ask how likely it is that the ferry is canceled at least once, so the answer is {a:C1.atleast}.'
     },
     not: {
       outcome: 'multprin',

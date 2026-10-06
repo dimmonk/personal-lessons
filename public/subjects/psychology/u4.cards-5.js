@@ -9,7 +9,7 @@ FC.cards('psychology', 'u4', [
     case: 'pa-callum', mark: 'P1',
     strip: [
       'There are years and more than one place: school, two garages, a family.',
-      'Rules are broken and people are lied to or used: mileage wound back, a forged signature, a loan never repaid.',
+      'Rules are broken and people are lied to or used: odometer rolled back, a forged signature, a loan never repaid.',
       'Callum shows no regret for the harm: "He should have read the paperwork."',
       'People are hurt by it: customers, a friend’s savings, a brother-in-law who no longer speaks to him.'
     ],
@@ -23,13 +23,13 @@ FC.cards('psychology', 'u4', [
     name: 'The name for this is {o:antisocial}. "Antisocial" here does not mean shy or unsociable, which is how the word is used in everyday talk. It means against other people: against the rules that people live by together, and against their rights. "Personality" means how a person usually is.' },
 
   { id: 'again-antisocial', kind: 'again', outcome: 'antisocial',
-    link: 'Callum gave you what to point to: {needs:antisocial}. Here is a second case, about raffle money and flats, not cars.',
+    link: 'Callum gave you what to point to: {needs:antisocial}. Here is a second case, about raffle money and apartments, not cars.',
     first: 'pa-callum', second: 'pa-bridget', step: 'P1',
     instruction: 'The marked words in the first case are three different things: the rules he broke and the people he used, what he shows about the harm, and what it has cost. Find the words in this case that match the middle one: what the person shows about the harm to the one who lost out. Ignore what was taken (cars, raffle money).',
     prompt: { kind: 'phrase', answer: "When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch" },
     shared: [
-      'Callum and Bridget each break rules, lie to people and use them: a wound-back mileage and a forged signature, raffle money kept and deposits taken for flats that were not hers to let. Each shows no regret when someone is hurt: "He should have read the paperwork", "Nobody made her pay, did they?" And each has done it for years, in several places, and people have been hurt.',
-      'A garage and an arts society. So this is not about cars or about money. Whatever the story, the same things are there: rules broken and people used, no regret, and people hurt. That is what {o:antisocial} names.'
+      'Callum and Bridget each break rules, lie to people and use them: a wound-back mileage and a forged signature, raffle money kept and deposits taken for apartments that were not hers to rent out. Each shows no regret when someone is hurt: "He should have read the paperwork", "Nobody made her pay, did they?" And each has done it for years, in several places, and people have been hurt.',
+      'A car dealership and an arts society. So this is not about cars or about money. Whatever the story, the same things are there: rules broken and people used, no regret, and people hurt. That is what {o:antisocial} names.'
     ] },
 
   { id: 'portrait-antisocial', kind: 'portrait', outcome: 'antisocial',
@@ -52,10 +52,10 @@ FC.cards('psychology', 'u4', [
 
   { id: 'check-antisocial', kind: 'check', after: 'antisocial',
     case: 'pa-sven',
-    ask: { type: 'option', step: 'P1', among: ['above', 'steady', 'overlooked', 'clings', 'centre', 'uses'] } },
+    ask: { type: 'option', step: 'P1', among: ['above', 'steady', 'overlooked', 'clings', 'center', 'uses'] } },
 
   { id: 'look-narcgrand-antisocial', kind: 'lookalike', ledger: 'narcgrand~antisocial',
-    link: 'Both of these can be charming and sure of themselves, and both leave people hurt. Here are two men who have each let flats for thirty years.',
+    link: 'Both of these can be charming and sure of themselves, and both leave people hurt. Here are two men who have each rented out apartments for thirty years.',
     cases: ['pa-kurt', 'pa-vince'],
     instruction: 'Compare one thing: what drives each man. Is it getting something for himself by lying to people, whatever the harm? Or is it being treated as special, with scorn when he is not?',
     prompt: { kind: 'which', option: 'P1.uses', answer: 'pa-vince' },
@@ -84,7 +84,7 @@ FC.cards('psychology', 'u4', [
     prompt: { kind: 'which', option: 'P1.uses', answer: 'pa-joss' },
     difference: [
       'In Case A Joss has talked three friends into lending him money for a business that does not exist, and when one asks for her money back he says she was lucky to have been asked and blocks her. He has never repaid anyone. The answer is {a:P1.uses}, and the case is {o:antisocial}.',
-      'In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbour is upset she apologises and stops. Her friends still lend her things and she lends them back. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
+      'In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbor is upset she apologizes and stops. Her friends still lend her things and she lends them back. The answer is {a:P1.steady}, and the case is {o:ordpersonality}.',
       'Both bend rules, and both have done so for years. What differs is whether anyone is badly hurt, and what the person does when someone is: Lena puts it right, and Joss blames them.'
     ] },
 

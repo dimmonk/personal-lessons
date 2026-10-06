@@ -12,23 +12,23 @@ FC.cases('math', 'u5', [
     topic: 'a bike built from parts',
     kind: 'problem',
     outcome: 'multprin',
-    text: 'A bike shop builds a bike from one of 5 frames, one of 3 saddles and one of 6 colours. How many different bikes can a customer order?',
+    text: 'A bike shop builds a bike from one of 5 frames, one of 3 saddles and one of 6 colors. How many different bikes can a customer order?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: {
       M1: ['How many different bikes can a customer order?'],
-      C1: ['one of 5 frames, one of 3 saddles and one of 6 colours']
+      C1: ['one of 5 frames, one of 3 saddles and one of 6 colors']
     },
     reason: {
       M1: 'The words {cue:M1} ask how many different bikes can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a frame, a saddle and a colour, each from a list of its own, and ask how many different bikes there are, so the answer is {a:C1.lists}.'
+      C1: 'The words {cue:C1} give three separate choices, a frame, a saddle and a color, each from a list of its own, and ask how many different bikes there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
       why: 'Picking from one group, so that each pick takes something off the list for the next, would be {o:perm}. Here every choice has a full list of its own, and nothing picked on one list changes another.'
     },
     steps: [
-      { does: 'Name each choice that has to be made', working: 'frame; saddle; colour' },
-      { does: 'Count the full list for each choice', working: 'frame: 5; saddle: 3; colour: 6' },
+      { does: 'Name each choice that has to be made', working: 'frame; saddle; color' },
+      { does: 'Count the full list for each choice', working: 'frame: 5; saddle: 3; color: 6' },
       {
         does: 'Multiply the counts',
         working: '5 × 3 × 6 = 90 (5 × 3 = 15, then 15 × 6 = 90). That is 90 bikes'
@@ -58,26 +58,26 @@ FC.cases('math', 'u5', [
     use: 'return',
     tier: 'clean',
     setting: 'leisure',
-    topic: 'a username from a colour, an animal and a number',
+    topic: 'a username from a color, an animal and a number',
     kind: 'problem',
     outcome: 'multprin',
-    text: 'A game site makes a username from one of 4 colours, one of 6 animals and a number from 00 to 99. How many different usernames can it make?',
+    text: 'A game site makes a username from one of 4 colors, one of 6 animals and a number from 00 to 99. How many different usernames can it make?',
     route: { M1: ['chance'], C1: ['lists'] },
     cues: {
       M1: ['How many different usernames can it make?'],
-      C1: ['one of 4 colours, one of 6 animals and a number from 00 to 99']
+      C1: ['one of 4 colors, one of 6 animals and a number from 00 to 99']
     },
     reason: {
       M1: 'The words {cue:M1} ask how many different usernames can be made, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a colour, an animal and a number from a list of 100, and ask how many different usernames there are, so the answer is {a:C1.lists}.'
+      C1: 'The words {cue:C1} give three separate choices, a color, an animal and a number from a list of 100, and ask how many different usernames there are, so the answer is {a:C1.lists}.'
     },
     not: {
       outcome: 'perm',
       why: 'Picking from one group, so that each pick takes something off the list for the next, would be {o:perm}. Here every choice has a full list of its own, and nothing picked on one list changes another.'
     },
     steps: [
-      { does: 'Name each choice that has to be made', working: 'colour; animal; number' },
-      { does: 'Count the full list for each choice', working: 'colour: 4; animal: 6; number: 100' },
+      { does: 'Name each choice that has to be made', working: 'color; animal; number' },
+      { does: 'Count the full list for each choice', working: 'color: 4; animal: 6; number: 100' },
       {
         does: 'Multiply the counts',
         working: '4 × 6 × 100 = 2,400 (4 × 6 = 24, then 24 × 100 = 2,400). That is 2,400 usernames'

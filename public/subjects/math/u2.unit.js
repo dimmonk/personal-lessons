@@ -10,7 +10,7 @@
 
 FC.unit('math', 'u2', {
   kind: 'P',
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Two',
@@ -98,7 +98,8 @@ FC.unit('math', 'u2', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first procedure unit of Basic Math, replacing the old Unit Two (four cards and the whole-numbers drill), specimens 1 to 3 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Six kinds of problem about whole numbers, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the drill has a last-step stage, a whole-problem stage and a route stage.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [
@@ -107,10 +108,10 @@ FC.unit('math', 'u2', {
         why: 'W2’s answers were the procedures, so a learner could only answer it once they knew the name. The old first answer for two numbers joined the biggest equal piece and the first time two repeats meet, which the unit now separates.' },
       { step: 'W1', was: 'answers "Whether one number can be split evenly by anything smaller", "What a number is made of, or what two numbers have in common", "Where a count lands after going round one loop", "Whether an exact value exists at all"',
         now: 'six answers that each say what an observer can point to in a problem, in the same form: split, parts, piece, together, cycle, exact',
-        why: 'K2.4 and K2.5. The old answer for "what two numbers have in common" fitted the gears, which repeat, and "built out of" never described them (audit U7-4). The old answer for a count that goes round a loop could not take the sweets shared among 7 children, which is the same procedure.' },
+        why: 'K2.4 and K2.5. The old answer for "what two numbers have in common" fitted the gears, which repeat, and "built out of" never described them (audit U7-4). The old answer for a count that goes round a loop could not take the candies shared among 7 children, which is the same procedure.' },
       { outcome: 'hcf', was: 'one name, "Biggest shared piece or first line-up (GCD / LCM)", for two procedures',
         now: 'two names: Highest common factor and Lowest common multiple',
-        why: 'The two have opposite rules (keep the shared primes; keep every prime the most times either has it) and opposite answers (6 and 36 for 12 and 18). The old card itself warned "do not mix up the two halves". One name for two things breaks P5, and the slash and brackets break V1.' },
+        why: 'The two have opposite rules (keep the shared primes; keep every prime the most times either has it) and opposite answers (6 and 36 for 12 and 18). The old card itself warned "do not mix up the two halves". One name for two things breaks P5, and the slash and parentheses break V1.' },
       { outcome: 'modrem', was: 'name "Remainder (mod)"', now: 'name "Remainder", also called clock arithmetic and modular arithmetic',
         why: 'V1. "mod" is not an other name because V8 matches by substring and would flag "model".' },
       { outcome: 'irrat', was: 'name "A number with no exact fraction (irrational)", answer "Show that no fraction can ever equal it (a proof)"',

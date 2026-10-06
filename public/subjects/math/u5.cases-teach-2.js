@@ -10,13 +10,13 @@ FC.cases('math', 'u5', [
     route: { M1: ['chance'], C1: ['atleast'] },
     cues: { M1: ['How likely is it that the game is won?'], C1: ['at least once in 3 flips'] } },
 
-  { id: 'm5-wd-tyres', use: 'teach', tier: 'clean', setting: 'travel', topic: 'two bike tyres on a long ride', name: 'The two tyres', outcome: 'complement',
-    text: 'A cyclist’s two tyres each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other. How likely is it that at least one tyre gets a puncture?',
+  { id: 'm5-wd-tires', use: 'teach', tier: 'clean', setting: 'travel', topic: 'two bike tires on a long ride', name: 'The two tires', outcome: 'complement',
+    text: 'A cyclist’s two tires each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other. How likely is it that at least one tire gets a puncture?',
     route: { M1: ['chance'], C1: ['atleast'] },
-    cues: { M1: ['How likely is it that at least one tyre gets a puncture?'], C1: ['at least one tyre gets a puncture'] },
+    cues: { M1: ['How likely is it that at least one tire gets a puncture?'], C1: ['at least one tire gets a puncture'] },
     segments: [
-      { text: 'A cyclist’s two tyres each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other.', note: 'That gives the chance for each tyre, and it matters. But you are asked for the words that say what has to be found about the two, and those come in the question.' },
-      { text: 'How likely is it that at least one tyre gets a puncture?' }
+      { text: 'A cyclist’s two tires each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other.', note: 'That gives the chance for each tire, and it matters. But you are asked for the words that say what has to be found about the two, and those come in the question.' },
+      { text: 'How likely is it that at least one tire gets a puncture?' }
     ] },
 
   { id: 'm5-wd-ambulance', use: 'check', tier: 'clean', setting: 'health', topic: 'two ambulances in a town', outcome: 'complement',
@@ -85,14 +85,14 @@ FC.cases('math', 'u5', [
     route: { M1: ['chance'], C1: ['group'] },
     cues: { M1: ['How many different boxes can she make?'], C1: ['The box is the same whichever pastry goes in first'] } },
 
-  { id: 'm5-la-cones-mp', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'ice cream flavour and cone', outcome: 'multprin',
-    text: 'An ice-cream stall has 6 flavours and 3 kinds of cone. A customer picks one flavour and one cone. How many different ice creams can the stall sell?',
+  { id: 'm5-la-cones-mp', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'ice cream flavor and cone', outcome: 'multprin',
+    text: 'An ice-cream stall has 6 flavors and 3 kinds of cone. A customer picks one flavor and one cone. How many different ice creams can the stall sell?',
     route: { M1: ['chance'], C1: ['lists'] },
-    cues: { M1: ['How many different ice creams can the stall sell?'], C1: ['picks one flavour and one cone'] } },
-  { id: 'm5-la-cones-co', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'ice cream flavours in a tub', outcome: 'comb',
-    text: 'An ice-cream stall has 6 flavours, and a customer picks 2 different flavours for a tub, in either order. How many different tubs can the stall sell?',
+    cues: { M1: ['How many different ice creams can the stall sell?'], C1: ['picks one flavor and one cone'] } },
+  { id: 'm5-la-cones-co', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'ice cream flavors in a tub', outcome: 'comb',
+    text: 'An ice-cream stall has 6 flavors, and a customer picks 2 different flavors for a tub, in either order. How many different tubs can the stall sell?',
     route: { M1: ['chance'], C1: ['group'] },
-    cues: { M1: ['How many different tubs can the stall sell?'], C1: ['picks 2 different flavours for a tub, in either order'] } },
+    cues: { M1: ['How many different tubs can the stall sell?'], C1: ['picks 2 different flavors for a tub, in either order'] } },
 
   { id: 'm5-la-spinners-cm', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a game of spinners and a six', outcome: 'complement',
     text: 'A game uses 3 spinners, each with 6 equal sections numbered 1 to 6, and the spinners are separate. How likely is it that at least one spinner lands on a 6?',

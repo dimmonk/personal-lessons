@@ -13,7 +13,7 @@ FC.cards('math', 'u1', [
     h: 'Before any sum: what kind of problem are you looking at?',
     canDo: 'After this unit you can read a problem with numbers in it, taken from everyday life, and say which of five kinds it is. You will be able to point to the words in the problem that tell you, and to say why it is not one of the other four. You will not solve anything in this unit. Solving comes after sorting, and it only works when you start from the right kind.',
     everyday: [
-      'You already do a rough version of this. Picture a family planning a birthday meal, and five questions coming up in one afternoon, every one of them with numbers in it. “We have 36 balloons for 5 tables: will they go round evenly, and how many are left over?” “The caterer charges a set fee plus a price for each guest, and the bill came to €310: how many guests were we charged for?” “The cake shop puts its prices up by the same amount every year: what will the cake cost in five years?” “There are 4 starters and 3 main courses: how many different menus can we offer?” “How long must the ribbon be to run from the top of a 3 m pole to a peg 4 m from its foot?”',
+      'You already do a rough version of this. Picture a family planning a birthday meal, and five questions coming up in one afternoon, every one of them with numbers in it. “We have 36 balloons for 5 tables: will they go round evenly, and how many are left over?” “The caterer charges a set fee plus a price for each guest, and the bill came to $310: how many guests were we charged for?” “The cake shop puts its prices up by the same amount every year: what will the cake cost in five years?” “There are 4 starters and 3 main courses: how many different menus can we offer?” “How long must the ribbon be to run from the top of a 3 m pole to a peg 4 m from its foot?”',
       'All five have numbers, and all five ask you to work out a number. But they ask for different things, and each one is worked out with different steps. If you use the steps for the wrong kind of problem, you still get a number, and nothing in that number tells you that it is wrong. So before any sum there is an earlier question: what does this problem ask me to work out? This unit teaches that question.'
     ],
     add: [
@@ -66,7 +66,7 @@ FC.cards('math', 'u1', [
   { id: 'portrait-whole', kind: 'portrait', family: 'whole',
     link: 'You now know what to point to. This card fills in the rest of the picture, so that you can spot {a:M1.whole} in real life, where nobody marks the words for you.',
     typical: [
-      'The numbers are whole counts: chairs, rolls, days, seconds, or lengths counted in whole centimetres. There are no prices to the cent and no percentages.',
+      'The numbers are whole counts: chairs, rolls, days, seconds, or lengths counted in whole centimeters. There are no prices to the cent and no percentages.',
       'The question is about how those numbers fit into each other: whether one divides another evenly, what is left over, when two repeats meet, what a number is made of.',
       'The answer is itself a whole number, or a yes or no. It is not an amount of money and it is not a time that has been measured.',
       'There is little else in the problem: one or two numbers, and no calculation to run backwards. Nothing grows or shrinks as time passes.'
@@ -76,7 +76,7 @@ FC.cards('math', 'u1', [
       'A problem that asks in how many ways three of nine volunteers can be picked is also made of whole counts, and it is a different kind: it asks about the results of a choice, and the numbers only say how many things there are to choose from. You will meet a pair like that, side by side, in this unit.'
     ],
     wild: ['"Can we share them out equally?"', '"How many are left over?"', '"One every 15 minutes, the other every 20."', '"Is it exact, or only close?"', '"In how many ways can we lay them out?"'],
-    self: 'In your own life you meet this when you divide a group into teams, when you pack things into boxes, when two schedules you follow meet again (the days the rubbish and the recycling are collected), and in every “will it come out even?” about food, money or time.',
+    self: 'In your own life you meet this when you divide a group into teams, when you pack things into boxes, when two schedules you follow meet again (the days the trash and the recycling are collected), and in every “will it come out even?” about food, money or time.',
     ask: '"Is the question about how these whole numbers split into equal groups, what is left over, or when repeats meet?" If you can say which of those it is in a few words, you are probably looking at this kind.' },
 
   { id: 'check-whole', kind: 'check', after: 'whole',

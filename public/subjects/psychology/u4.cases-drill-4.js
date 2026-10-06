@@ -37,9 +37,9 @@ FC.cases('psychology', 'u4', [
 
   { id: 'pa-rev-histrionic', use: 'drill', kind: 'reverse', outcome: 'histrionic', expect: 'find',
     options: [
-      { text: 'She pleaded with her flatmate not to leave, and then called her a fake.', voice: 'borderline' },
+      { text: 'She pleaded with her roommate not to leave, and then called her a fake.', voice: 'borderline' },
       { text: 'When a colleague was applauded, she told a longer and more tearful story until the room turned back to her.', voice: 'histrionic' },
-      { text: 'The same friends and neighbours have come to his parties for forty years.', voice: 'ordpersonality' },
+      { text: 'The same friends and neighbors have come to his parties for forty years.', voice: 'ordpersonality' },
       { text: 'He took deposits for work he never did, and shrugged when a customer cried.', voice: 'antisocial' }
     ],
     why: 'That detail is the display getting bigger at the moment the attention goes to someone else.' },

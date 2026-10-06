@@ -23,7 +23,7 @@ FC.cards('math', 'u4', [
     setup: 'This problem has what usually means {o:expg}: a percentage, 3% interest a year, in a problem about money over years. But it is {o:lin}.',
     prompt: { kind: 'phrase', answer: 'The interest is paid out to him each year' },
     because: [
-      'The words that settle it are “The interest is paid out to him each year, and the €5,000 itself never changes.” The amount being followed is the interest he has been paid in all, and every year the bond pays 3% of €5,000, which is €150. It is 3% of the same €5,000 every year, because the €5,000 is never added to. So the interest paid each year is the same number, €150, and the total goes up by €150 each year: 150, 300, 450, and after 8 years 8 × 150 = €1,200.',
+      'The words that settle it are “The interest is paid out to him each year, and the $5,000 itself never changes.” The amount being followed is the interest he has been paid in all, and every year the bond pays 3% of $5,000, which is $150. It is 3% of the same $5,000 every year, because the $5,000 is never added to. So the interest paid each year is the same number, $150, and the total goes up by $150 each year: 150, 300, 450, and after 8 years 8 × 150 = $1,200.',
       'In the savings account the interest was left in, so each year’s share was taken on a bigger amount, and the change grew. Here the interest is taken out, so each year’s share is taken on the same amount, and the change is the same size every time. A percentage tells you how big a change is. It is the words about whether the interest stays in that tell you whether that size changes.'
     ],
     take: 'When a problem has a percentage, ask what the percentage is taken of. If it is taken of an amount that grows, it is {o:expg}. If it is taken of an amount that stays the same, the change is the same size every time, and it is {o:lin}.' },
@@ -44,7 +44,7 @@ FC.cards('math', 'u4', [
   { id: 'look-lin-logsolve', kind: 'lookalike', ledger: 'lin~logsolve',
     link: 'The first and third kinds can both be asked how long until an amount reaches a target. This card puts them side by side, asked about the same pond.',
     cases: ['m4-la-weed-lin', 'm4-la-weed-logsolve'],
-    instruction: 'Both problems are about the same pond, 40 m² of weed, and both ask how many weeks until the weed covers 400 m². Compare one thing: does the weed gain the same number of square metres each week, or a share of what it has?',
+    instruction: 'Both problems are about the same pond, 40 m² of weed, and both ask how many weeks until the weed covers 400 m². Compare one thing: does the weed gain the same number of square meters each week, or a share of what it has?',
     prompt: { kind: 'which', option: 'G1.multiplies', answer: 'm4-la-weed-logsolve' },
     difference: [
       'Case A says another 10 m² of weed appears every week: the same number each time, so the answer is {a:G1.adds}. It needs 400 − 40 = 360 m² more, and 10 m² a week brings that in 360 ÷ 10 = 36 weeks.',
@@ -54,25 +54,25 @@ FC.cards('math', 'u4', [
 
   /* ---------- the first and fourth kinds: the change comes again, or it does not ---------- */
   { id: 'look-lin-oneoff', kind: 'lookalike', ledger: 'lin~oneoff',
-    link: 'The first and fourth kinds can both be given with the same plain figure, a price that goes up by €2. This card puts them side by side.',
+    link: 'The first and fourth kinds can both be given with the same plain figure, a price that goes up by $2. This card puts them side by side.',
     cases: ['m4-la-phone-lin', 'm4-la-phone-oneoff'],
-    instruction: 'Both phone plans start at €20 a month, and both are at €22 after one rise. Compare one thing: after the rise, does the price rise again, or stay where it reached?',
+    instruction: 'Both phone plans start at $20 a month, and both are at $22 after one rise. Compare one thing: after the rise, does the price rise again, or stay where it reached?',
     prompt: { kind: 'which', option: 'G1.once', answer: 'm4-la-phone-oneoff' },
     difference: [
-      'Case A says the price goes up by €2 every month: the change comes again each time, so the answer is {a:G1.adds}. After 6 months it is €20 + 6 × €2 = €32.',
-      'Case B says the price went up to €22 in January and has stayed at €22 since: the change was made one time, so the answer is {a:G1.once}. After 6 months it is still €22.',
-      'Both start at €20 and both have risen by €2. What differs is whether the rise comes again. In Case A the words “every month” say that it does, and in Case B the words “has stayed” say that it does not.'
+      'Case A says the price goes up by $2 every month: the change comes again each time, so the answer is {a:G1.adds}. After 6 months it is $20 + 6 × $2 = $32.',
+      'Case B says the price went up to $22 in January and has stayed at $22 since: the change was made one time, so the answer is {a:G1.once}. After 6 months it is still $22.',
+      'Both start at $20 and both have risen by $2. What differs is whether the rise comes again. In Case A the words “every month” say that it does, and in Case B the words “has stayed” say that it does not.'
     ] },
 
   /* ---------- the second and fourth kinds: a percentage again and again, or one time ---------- */
   { id: 'look-expg-oneoff', kind: 'lookalike', ledger: 'expg~oneoff',
     link: 'The second and fourth kinds can both be given with a percentage, and both can ask for the amount some years from now. This card puts them side by side.',
     cases: ['m4-la-coffee-expg', 'm4-la-coffee-oneoff'],
-    instruction: 'Both coffee prices start at €3.00 and both rise by 8%. Compare one thing: is the 8% applied again every year, or one time?',
+    instruction: 'Both coffee prices start at $3.00 and both rise by 8%. Compare one thing: is the 8% applied again every year, or one time?',
     prompt: { kind: 'which', option: 'G1.once', answer: 'm4-la-coffee-oneoff' },
     difference: [
-      'Case A says the price goes up by 8% every year: the percentage comes again each time, so the amount is multiplied by 1.08 each year, and the answer is {a:G1.multiplies}. After 2 years the price is €3.00 × 1.08 × 1.08 = €3.50.',
-      'Case B says the price went up by 8% in March, to €3.24, and has stayed at €3.24 since: the percentage was applied one time, so the answer is {a:G1.once}. After 2 years it is still €3.24.',
+      'Case A says the price goes up by 8% every year: the percentage comes again each time, so the amount is multiplied by 1.08 each year, and the answer is {a:G1.multiplies}. After 2 years the price is $3.00 × 1.08 × 1.08 = $3.50.',
+      'Case B says the price went up by 8% in March, to $3.24, and has stayed at $3.24 since: the percentage was applied one time, so the answer is {a:G1.once}. After 2 years it is still $3.24.',
       'The 8% in both is the same number. What differs is whether it comes again: “every year” in Case A, “has stayed” in Case B. A percentage in a problem says how big a change is, and never says by itself how often it happens.'
     ] },
 

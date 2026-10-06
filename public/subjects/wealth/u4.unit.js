@@ -8,7 +8,7 @@
 
 FC.unit('wealth', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Four',
@@ -117,7 +117,8 @@ FC.unit('wealth', 'u4', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for a fall in prices it is not ready for, in Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' }
     ],
     // What the K2 rewrite changed in this branch, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [

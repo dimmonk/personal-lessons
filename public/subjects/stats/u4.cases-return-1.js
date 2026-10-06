@@ -15,11 +15,11 @@ FC.cases('stats', 'u4', [
     not: { outcome: 'detection', why: 'Nobody is looking harder for calls. The reps gain from the figure and can make it higher themselves.' } },
 
   { id: 'm4-ret-dealer', use: 'return', tier: 'varied', setting: 'money', topic: 'a car dealer and orders signed in the last week',
-    text: "A car dealer pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order. Cars 'sold' in that week rose from 60 to 95. Of the 95 signed orders, 35 were cancelled the following month, where almost none used to be. Cars delivered in that week stayed at 60.",
+    text: "A car dealer pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order. Cars 'sold' in that week rose from 60 to 95. Of the 95 signed orders, 35 were canceled the following month, where almost none used to be. Cars delivered in that week stayed at 60.",
     outcome: 'proxy', route: { S1: ['measure'], M1: ['pushed'] },
     cues: { S1: "pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order",
             M1: "pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order" },
-    reason: { S1: 'The count of cars sold can rise with no more cars leaving: {cue:S1}. It rose by 35 (from 60 to 95), and 35 of the orders were cancelled, so deliveries stayed at 60.',
+    reason: { S1: 'The count of cars sold can rise with no more cars leaving: {cue:S1}. It rose by 35 (from 60 to 95), and 35 of the orders were canceled, so deliveries stayed at 60.',
               M1: 'The salespeople are paid when the order is signed: {cue:M1}. Getting a signature on an order that will not last raises the figure with no more cars sold.' },
     not: { outcome: 'defshift', why: 'A sale is counted at the same point in both years, when the customer signs. What changed is what the salespeople do to get signatures.' } },
 

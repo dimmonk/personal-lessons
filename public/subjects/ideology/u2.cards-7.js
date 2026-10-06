@@ -9,11 +9,11 @@ FC.cards('ideology', 'u2', [
     link: 'The next name is for a text that explains something instead of asking for something, and the explanation leans on a word. The word is easier to see in a sum first.',
     case: 'c-term-bakery',
     plain: [
-      'Millbrook Bakery pays each baker £80 a day. In one day a baker makes bread that sells for £128, once the flour and the cost of running the ovens have been taken off. So each day a baker makes £48 more than the baker is paid. Dana, the owner, keeps that £48.',
+      'Millbrook Bakery pays each baker $80 a day. In one day a baker makes bread that sells for $128, once the flour and the cost of running the ovens have been taken off. So each day a baker makes $48 more than the baker is paid. Dana, the owner, keeps that $48.',
       'The sum has the same shape wherever wages are paid, whether the numbers are large or small. Part of what the workers make comes back to them as wages. The part that is left goes to the owner.'
     ],
     after: [
-      'Two cautions about the word. First, it names the £48 and says nothing about whether keeping it is fair. Dana can say that the £48 pays for the ovens, the risk she takes and her idea, and people argue over that. Second, the numbers here are an invented sum. Economists disagree about where profit comes from, and no side is taken here. The word is needed only because some texts use it.',
+      'Two cautions about the word. First, it names the $48 and says nothing about whether keeping it is fair. Dana can say that the $48 pays for the ovens, the risk she takes and her idea, and people argue over that. Second, the numbers here are an invented sum. Economists disagree about where profit comes from, and no side is taken here. The word is needed only because some texts use it.',
       'A text that explains how an owner comes to keep {t:surplus} is making an argument. The only question is whether the text makes it, and what else the text says.'
     ] },
 
@@ -23,13 +23,13 @@ FC.cards('ideology', 'u2', [
     case: 'c-mx-mill', mark: 'C1',
     strip: [
       'The text is written for weavers, and it takes their side.',
-      'It gives a sum: a weaver is paid £60, and makes cloth worth £100 once costs are taken off. The £40 left over goes to the owner.',
+      'It gives a sum: a weaver is paid $60, and makes cloth worth $100 once costs are taken off. The $40 left over goes to the owner.',
       'It says this is not because the owner is cruel. Every owner has to keep a gap like it, because that is how the arrangement works.',
       'It says owners live from what workers make and are not paid for.',
       'It asks for nothing: no tax, no handover and no party.'
     ],
     explain: [
-      'The text does one thing. It explains how an owner comes to gain from other people’s work, and it says that the explanation holds for every owner, however kind. The word for the £40 is {t:surplus}: the part of what the weaver makes that she is not paid for.',
+      'The text does one thing. It explains how an owner comes to gain from other people’s work, and it says that the explanation holds for every owner, however kind. The word for the $40 is {t:surplus}: the part of what the weaver makes that she is not paid for.',
       'The explanation is the whole text. It does not say that anything should be done about the mill. It says what is going on, and leaves it there. Some people who hold the explanation draw a plan from it, and then their text has a plan in it. A text with the explanation and nothing else has only the explanation.',
       'The same explanation can be told as a story of history. Some texts say that in every age the owners and the workers fight over who gets what, and that this fight is what moves history forward. That is an explanation too, and it counts for this answer.',
       'People who hold this explanation say it shows why owners and workers can never quite want the same thing. People who disagree say that profit comes from the owner’s risk, ideas and savings and not only from the workers’ work, so the explanation leaves things out. These are old arguments, and no side is taken in them here. The only question is whether the text makes the explanation.'
@@ -84,7 +84,7 @@ FC.cards('ideology', 'u2', [
     instruction: 'Both cases are about the Dunmore carpet mill and its owner’s gain. Compare one thing: is the text about this owner’s choice, or does it explain why any owner would keep a gap?',
     prompt: { kind: 'which', option: 'C1.explain', answer: 'c-lk-comx-mx' },
     difference: [
-      'In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a canteen meeting. Nothing is explained and nothing is asked. The answer is {a:C1.none}, and the case is {o:classonly}.',
+      'In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a cafeteria meeting. Nothing is explained and nothing is asked. The answer is {a:C1.none}, and the case is {o:classonly}.',
       'In Case B the text says the gap is not this owner’s greed: every owner has to keep a gap like it, because that is how the arrangement works. That is an explanation of how owners gain. The answer is {a:C1.explain}, and the case is {o:marx}.',
       'Both are on the weavers’ side, both mention the owner’s money, and neither asks for a tax or a handover. The difference is that one complains and the other explains.'
     ] }

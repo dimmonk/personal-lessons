@@ -61,11 +61,11 @@ FC.cases('math', 'u2', [
     topic: 'a rent and a charge',
     kind: 'problem',
     outcome: 'lcm',
-    text: 'A tenant pays rent every 4 weeks and a council charge every 6 weeks. Both are due this week. After how many weeks are both next due in the same week?',
+    text: 'A tenant pays rent every 4 weeks and a utility bill every 6 weeks. Both are due this week. After how many weeks are both next due in the same week?',
     route: { M1: ['whole'], W1: ['together'] },
     cues: {
-      M1: ['pays rent every 4 weeks and a council charge every 6 weeks'],
-      W1: ['pays rent every 4 weeks and a council charge every 6 weeks']
+      M1: ['pays rent every 4 weeks and a utility bill every 6 weeks'],
+      W1: ['pays rent every 4 weeks and a utility bill every 6 weeks']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',

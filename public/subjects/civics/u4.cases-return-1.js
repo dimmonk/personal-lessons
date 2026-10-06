@@ -14,11 +14,11 @@ FC.cases('civics', 'u4', [
               E1: 'The ban is the law’s own, and the office says which products it covers: {cue:E1}. The office adds no demand of its own.' },
     not: { outcome: 'beyondpres', why: 'The ban comes from a law Congress passed. The office only works out which products fall under it.' } },
 
-  { id: 'e-ret-alarms', use: 'return', tier: 'varied', setting: 'home', topic: 'smoke alarms in new flats',
-    text: "Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each flat. The federal housing office sent every builder a checklist on Monday, and said its inspectors would test the alarms before anyone moves in.",
+  { id: 'e-ret-alarms', use: 'return', tier: 'varied', setting: 'home', topic: 'smoke alarms in new apartments',
+    text: "Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each apartment. The federal housing office sent every builder a checklist on Monday, and said its inspectors would test the alarms before anyone moves in.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
     cues: { D1: 'The federal housing office sent every builder a checklist on Monday',
-            E1: ['Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each flat', 'sent every builder a checklist'] },
+            E1: ['Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each apartment', 'sent every builder a checklist'] },
     reason: { D1: 'The last decision is an office’s: {cue:D1}. Nobody votes, and no judge is asked anything.',
               E1: 'The law asks for the alarms, and the office supplies the checklist and the tests: {cue:E1}. It asks for nothing the law does not.' },
     not: { outcome: 'veto', why: 'The law has already been passed and is in force. Nobody is deciding whether it goes ahead: an office is making it work.' } },
@@ -34,9 +34,9 @@ FC.cases('civics', 'u4', [
 
   /* ---------- A demand that no law allows ---------- */
   { id: 'e-ret-lunch', use: 'return', tier: 'varied', setting: 'learning', topic: 'hot lunches in every school',
-    text: "The federal education office announced that every school in the country must serve a hot lunch to every pupil each day, starting in September. No law Congress passed requires hot lunches, and the office points to none.",
+    text: "The federal education office announced that every school in the country must serve a hot lunch to every student each day, starting in September. No law Congress passed requires hot lunches, and the office points to none.",
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
-    cues: { D1: 'The federal education office announced that every school in the country must serve a hot lunch to every pupil each day', E1: 'No law Congress passed requires hot lunches' },
+    cues: { D1: 'The federal education office announced that every school in the country must serve a hot lunch to every student each day', E1: 'No law Congress passed requires hot lunches' },
     reason: { D1: 'The last decision in the case is an office’s: {cue:D1}. Nobody votes, and no judge is asked anything.',
               E1: 'The office demands something of every school, and the case says nothing stands behind it: {cue:E1}.' },
     not: { outcome: 'execute', why: 'There is no law about hot lunches for the office to be putting into practice, and the office points to none.' } },
@@ -74,11 +74,11 @@ FC.cases('civics', 'u4', [
               E1: 'The President is choosing who leads part of the armed forces: {cue:E1}. Nothing is negotiated with anyone.' },
     not: { outcome: 'diplomacy', why: 'Nobody from another country is met or negotiated with. The choice is of a person to lead part of the armed forces.' } },
 
-  { id: 'e-ret-supplyship', use: 'return', tier: 'varied', setting: 'travel', topic: 'a supply ship sent to a damaged harbour',
-    text: "The navy’s supply ship was on its way to a port in the east when a storm struck the coast. On Wednesday the President told the navy to send the ship to the damaged harbour in the west instead, with its cargo of blankets.",
+  { id: 'e-ret-supplyship', use: 'return', tier: 'varied', setting: 'travel', topic: 'a supply ship sent to a damaged harbor',
+    text: "The navy’s supply ship was on its way to a port in the east when a storm struck the coast. On Wednesday the President told the navy to send the ship to the damaged harbor in the west instead, with its cargo of blankets.",
     outcome: 'commander', route: { D1: ['president'], E1: ['military'] },
-    cues: { D1: 'the President told the navy to send the ship to the damaged harbour in the west instead', E1: 'the President told the navy to send the ship to the damaged harbour in the west' },
+    cues: { D1: 'the President told the navy to send the ship to the damaged harbor in the west instead', E1: 'the President told the navy to send the ship to the damaged harbor in the west' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}.',
               E1: 'The President tells the navy where a ship is to go: {cue:E1}. The ship obeys, and no law is named.' },
-    not: { outcome: 'diplomacy', why: 'Both harbours are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.' } }
+    not: { outcome: 'diplomacy', why: 'Both harbors are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.' } }
 ]);

@@ -20,10 +20,10 @@ FC.cases('ideology', 'u4', [
     reason: { T1: 'The bench is gone, the text says its closing was a wrong, and it asks for it to be opened again: {cue:T1}.' },
     not: { outcome: 'conserv', why: 'The text does love an old custom, but the custom is not being kept. It has been closed down, and the text asks for it to be put back.' } },
 
-  { id: 'i4-n-lunch', use: 'drill', tier: 'clean', setting: 'housing', topic: 'the Sunday lunch on an estate',
-    text: "From the residents' paper of the Alder Fields estate: 'The old people's Sunday lunch, where three generations sit at one table, has gone on for as long as the estate has stood. That custom should guide how the estate's new community room is used. Keep the Sunday lunch. If the room's hours must change, change them gradually and ask the old people first.'",
+  { id: 'i4-n-lunch', use: 'drill', tier: 'clean', setting: 'housing', topic: 'the Sunday lunch in a development',
+    text: "From the residents' paper of the Alder Fields development: 'The old people's Sunday lunch, where three generations sit at one table, has gone on for as long as the development has stood. That custom should guide how the development's new community room is used. Keep the Sunday lunch. If the room's hours must change, change them gradually and ask the old people first.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
-    cues: { D1: 'That custom should guide how the estate\'s new community room is used', T1: ['Keep the Sunday lunch', 'change them gradually and ask the old people first'] },
+    cues: { D1: 'That custom should guide how the development\'s new community room is used', T1: ['Keep the Sunday lunch', 'change them gradually and ask the old people first'] },
     reason: { T1: 'The lunch is still held, and the text asks for it to stay and for any change in the room’s hours to be gradual: {cue:T1}.' },
     not: { outcome: 'react', why: 'The lunch has not been taken away, so nothing is asked back. The text asks for what is there to be kept.' } },
 
@@ -49,8 +49,8 @@ FC.cases('ideology', 'u4', [
     reason: { T1: 'The old seats are gone, the text calls their loss a wrong, and it asks for them to be returned: {cue:T1}.' },
     not: { outcome: 'conserv', why: 'The old order is not still in place to be kept. The text says it was taken, and asks for it to be put back.' } },
 
-  { id: 'i4-p-allot', use: 'drill', tier: 'clean', setting: 'housing', topic: 'allotment plots passed down',
-    text: "From the Pell End allotment society: 'Our plots have passed from neighbour to neighbour for ninety years, and the old custom of sharing the first beans of the year should guide how the society is run. Keep the plots with those who have worked them. If the waiting list must change, change it slowly and with the plot-holders asked.'",
+  { id: 'i4-p-allot', use: 'drill', tier: 'clean', setting: 'housing', topic: 'community garden plots passed down',
+    text: "From the Pell End community garden society: 'Our plots have passed from neighbor to neighbor for ninety years, and the old custom of sharing the first beans of the year should guide how the society is run. Keep the plots with those who have worked them. If the waiting list must change, change it slowly and with the plot-holders asked.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'the old custom of sharing the first beans of the year should guide how the society is run', T1: ['Keep the plots with those who have worked them', 'change it slowly and with the plot-holders asked'] },
     reason: { T1: 'The plots are still held and the custom is still kept, and the text asks for them to stay and for change to be slow: {cue:T1}.' },

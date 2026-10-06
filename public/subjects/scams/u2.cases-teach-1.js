@@ -8,15 +8,15 @@
 
 FC.cases('scams', 'u2', [
 
-  /* ---------- the case that carries the term "search advert" (no name is asked of it) ---------- */
-  { id: 'dv-t-searchad', use: 'teach', tier: 'clean', setting: 'home', topic: 'a repair number found in an advert', name: 'The first result',
-    text: "Rosa's tumble dryer stops working. She types 'Hartley appliance repair phone number' into a search page. The first result has a small label, 'Ad', beside it, and a phone number in bold. Underneath it, with no label, is the Hartley company's own website, which lists a different number. She rings the number in the advert, and a man answers: 'Hartley support, how can I help you?'" },
+  /* ---------- the case that carries the term "search ad" (no name is asked of it) ---------- */
+  { id: 'dv-t-searchad', use: 'teach', tier: 'clean', setting: 'home', topic: 'a repair number found in an ad', name: 'The first result',
+    text: "Rosa's dryer stops working. She types 'Hartley appliance repair phone number' into a search page. The first result has a small label, 'Ad', beside it, and a phone number in bold. Underneath it, with no label, is the Hartley company's own website, which lists a different number. She calls the number in the ad, and a man answers: 'Hartley support, how can I help you?'" },
 
   /* ---------- Real installation ---------- */
   { id: 'dv-video-app', use: 'teach', tier: 'clean', setting: 'work', topic: 'a video-calling program from its maker', name: 'The video-calling program',
-    text: "Priya's team is switching to a video-calling program called Huddle. At her desk she types the maker's web address, huddle.com, into her browser herself. She presses the Download button on the page and runs the file. Her computer shows a box: 'Do you want to allow this app to make changes to your device?' She presses Yes. Nobody has phoned or messaged her about any of this.",
+    text: "Priya's team is switching to a video-calling program called Huddle. At her desk she types the maker's web address, huddle.com, into her browser herself. She presses the Download button on the page and runs the file. Her computer shows a box: 'Do you want to allow this app to make changes to your device?' She presses Yes. Nobody has called or messaged her about any of this.",
     outcome: 'realinstall', route: { D1: ['device'], I1: ['own'] },
-    cues: { I1: ["types the maker's web address, huddle.com, into her browser herself", 'Nobody has phoned or messaged her about any of this'] } },
+    cues: { I1: ["types the maker's web address, huddle.com, into her browser herself", 'Nobody has called or messaged her about any of this'] } },
 
   { id: 'dv-phone-store', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a running app from the phone’s app store', name: 'The running app',
     text: "Marcus wants a running app. On his phone he opens the app store that came with it and searches for 'Stride running'. He presses Get on the app from the company he has read about, and the store asks for his fingerprint. The app installs. Nobody has contacted him about it.",
@@ -47,24 +47,24 @@ FC.cases('scams', 'u2', [
     outcome: 'realinstall', route: { D1: ['device'], I1: ['own'] },
     cues: { I1: ["types the maker's web address, pixelbench.com, into her browser herself"] } },
 
-  { id: 'dv-lk-photo-mail', use: 'teach', tier: 'clean', setting: 'home', topic: 'a photo editor, installer sent by email', name: 'The expired licence',
-    text: "Lena has used a photo editor called Pixelbench for a year. An email arrives from an address she does not know: 'Your Pixelbench licence needs updating. Run the attached installer to keep using it.' She runs the installer, and her computer shows a box: 'Do you want to allow this app to make changes to your device?' She presses Yes.",
+  { id: 'dv-lk-photo-mail', use: 'teach', tier: 'clean', setting: 'home', topic: 'a photo editor, installer sent by email', name: 'The expired license',
+    text: "Lena has used a photo editor called Pixelbench for a year. An email arrives from an address she does not know: 'Your Pixelbench license needs updating. Run the attached installer to keep using it.' She runs the installer, and her computer shows a box: 'Do you want to allow this app to make changes to your device?' She presses Yes.",
     outcome: 'malware', route: { D1: ['device'], I1: ['file'] },
     cues: { I1: ['An email arrives from an address she does not know', 'Run the attached installer to keep using it'] } },
 
   /* ---------- Malware ---------- */
   { id: 'dv-invoice-file', use: 'teach', tier: 'clean', setting: 'work', topic: 'an unpaid invoice sent as a file', name: 'The invoice file',
-    text: "An email reaches Sam at work from an address he does not know: 'Hello, the invoice below is unpaid. Open the attached file to see the amount due and to avoid a late fee.' The attachment is called Invoice-4471.exe. Sam has not ordered anything from this firm, and nobody has phoned him.",
+    text: "An email reaches Sam at work from an address he does not know: 'Hello, the invoice below is unpaid. Open the attached file to see the amount due and to avoid a late fee.' The attachment is called Invoice-4471.exe. Sam has not ordered anything from this firm, and nobody has called him.",
     outcome: 'malware', route: { D1: ['device'], I1: ['file'] },
-    cues: { I1: ['An email reaches Sam at work from an address he does not know', 'Open the attached file to see the amount due', 'nobody has phoned him'] } },
+    cues: { I1: ['An email reaches Sam at work from an address he does not know', 'Open the attached file to see the amount due', 'nobody has called him'] } },
 
-  { id: 'dv-tracking-link', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a parcel app offered in a text', name: 'The parcel text',
-    text: "Nadia is not expecting a parcel. A text arrives from a number she does not know: 'Your parcel could not be delivered. Install the Parcelpoint app from this link to book a new time: parcelpoint-rebook.com/app'. Nobody is on a call with her.",
+  { id: 'dv-tracking-link', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a package app offered in a text', name: 'The package text',
+    text: "Nadia is not expecting a package. A text arrives from a number she does not know: 'Your package could not be delivered. Install the Parcelpoint app from this link to book a new time: parcelpoint-rebook.com/app'. Nobody is on a call with her.",
     outcome: 'malware', route: { D1: ['device'], I1: ['file'] },
     cues: { I1: ['A text arrives from a number she does not know', 'Install the Parcelpoint app from this link'] },
     segments: [
-      { text: 'Nadia is not expecting a parcel', note: 'That tells you she did not ask for this. The words that show how the request reached her come next.' },
-      { text: "A text arrives from a number she does not know: 'Your parcel could not be delivered. Install the Parcelpoint app from this link to book a new time: parcelpoint-rebook.com/app'" },
+      { text: 'Nadia is not expecting a package', note: 'That tells you she did not ask for this. The words that show how the request reached her come next.' },
+      { text: "A text arrives from a number she does not know: 'Your package could not be delivered. Install the Parcelpoint app from this link to book a new time: parcelpoint-rebook.com/app'" },
       { text: 'Nobody is on a call with her', note: 'That is true, and it is part of what makes this a link in a message. But the request itself is in the text, before it.' }
     ] },
 

@@ -53,7 +53,7 @@ FC.cases('ideology', 'u5', [
     not: { outcome: 'idegal', why: 'The text names parents and a week back at work, not a group left behind by a rule that treats everyone alike. It asks the government to pay for leave for either parent.' } },
 
   { id: 'i5-ret-modlib-3', use: 'return', tier: 'misleading', setting: 'borders', topic: 'a bed, a class and an adviser for people who arrive with nothing', echo: 'i5-idegal-again',
-    text: "From a speech at the Eastmere welcome centre: 'People who arrive here are free to worship and to speak as they choose, and the government must protect that. Many of them have nothing: no home, no work and no word of our language. We ask the government to pay for a bed, a language class and a job adviser for anyone who arrives with nothing, and we will all pay for it.'",
+    text: "From a speech at the Eastmere welcome center: 'People who arrive here are free to worship and to speak as they choose, and the government must protect that. Many of them have nothing: no home, no work and no word of our language. We ask the government to pay for a bed, a language class and a job adviser for anyone who arrives with nothing, and we will all pay for it.'",
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'People who arrive here are free to worship and to speak as they choose, and the government must protect that',
             R1: 'We ask the government to pay for a bed, a language class and a job adviser for anyone who arrives with nothing, and we will all pay for it' },
@@ -63,13 +63,13 @@ FC.cases('ideology', 'u5', [
 
   /* ---------- Group equality ---------- */
   { id: 'i5-ret-idegal-1', use: 'return', tier: 'clean', setting: 'town', topic: 'swimming sessions and women left out',
-    text: "From a letter by the Lakeside Women's Swimming Circle: 'The town pool opens its lanes in the same sessions for everyone: early morning and late evening. Not a word of the timetable mentions sex. But those hours leave out the women who care for children at those times, and almost no woman swims there. Treating everyone alike has left women out. Change the sessions until women swim as often as men. We are not asking for any group to come before another.'",
+    text: "From a letter by the Lakeside Women's Swimming Circle: 'The town pool opens its lanes in the same sessions for everyone: early morning and late evening. Not a word of the schedule mentions sex. But those hours leave out the women who care for children at those times, and almost no woman swims there. Treating everyone alike has left women out. Change the sessions until women swim as often as men. We are not asking for any group to come before another.'",
     outcome: 'idegal', route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'We are not asking for any group to come before another',
             R1: ['Treating everyone alike has left women out', 'Change the sessions until women swim as often as men'] },
     reason: { D1: 'The text wants fair treatment for women and wants no group to come before another: {cue:D1}.',
-              R1: 'A timetable that is the same for everyone is said to leave women out, and the text asks for it to change: {cue:R1}.' },
-    not: { outcome: 'clib', why: 'The text names a timetable that is the same for everyone, as {o:clib} would accept. But {o:clib} says that is enough. This text says it has left women out.' } },
+              R1: 'A schedule that is the same for everyone is said to leave women out, and the text asks for it to change: {cue:R1}.' },
+    not: { outcome: 'clib', why: 'The text names a schedule that is the same for everyone, as {o:clib} would accept. But {o:clib} says that is enough. This text says it has left women out.' } },
 
   { id: 'i5-ret-idegal-2', use: 'return', tier: 'varied', setting: 'schooling', topic: 'a scholarship form and two years of local grades',
     text: "From a statement by the Dornwick Newcomers' Association: 'The scholarship form asks every applicant for two years of grades from a local school. The rule is the same for all, and it leaves out every child who arrived from overseas this year. A rule that treats every applicant alike has put them at the back. We ask the fund to accept grades from the child's old school until newcomers win scholarships as often as anyone.'",

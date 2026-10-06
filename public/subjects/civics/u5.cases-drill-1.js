@@ -57,11 +57,11 @@ FC.cases('civics', 'u5', [
     not: { outcome: 'interpret', why: 'She does not ask whether a flyer is the kind of paper the law covers. She says the law should not exist.' } },
 
   { id: 'pc-notlegal-1', use: 'drill', tier: 'clean', setting: 'travel', topic: 'a midnight train',
-    text: 'Travellers at Barrow Station ask a judge to order the city transit board to run a train at midnight, saying that a late train would be better for night workers. No law requires a late train, and nobody says that having none takes away a right.',
+    text: 'Travelers at Barrow Station ask a judge to order the city transit board to run a train at midnight, saying that a late train would be better for night workers. No law requires a late train, and nobody says that having none takes away a right.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'ask a judge to order the city transit board', J1: 'No law requires a late train, and nobody says that having none takes away a right' },
-    reason: { J1: 'The travellers want the judge to choose what is better, and nothing settles it: {cue:J1}.' },
-    not: { outcome: 'interpret', why: 'There is no law whose words the judge could read to answer. The travellers want the judge to choose.' } },
+    reason: { J1: 'The travelers want the judge to choose what is better, and nothing settles it: {cue:J1}.' },
+    not: { outcome: 'interpret', why: 'There is no law whose words the judge could read to answer. The travelers want the judge to choose.' } },
 
   { id: 'pc-interpret-1', use: 'drill', tier: 'clean', setting: 'home', topic: 'a pet limit and a fish tank',
     text: 'A town law says that a household may keep no more than two pets. Owen keeps two cats and a tank with twelve fish, and he was fined. He does not say the law is wrong. He asked a judge to decide whether a tank of fish counts as one pet or twelve under the law.',
@@ -95,10 +95,10 @@ FC.cases('civics', 'u5', [
     not: { outcome: 'review', why: 'Nobody says the law against fraud is wrong. The question is about how Rae is being treated.' } },
 
   { id: 'fin-notlegal-1', use: 'drill', tier: 'varied', setting: 'community', topic: 'trees along a road',
-    text: 'Neighbours on Elm Road ask a judge to order the city to plant trees along the road, saying that trees would make the road nicer. No law requires the city to plant them, and nobody says any right is taken away by leaving the road bare.',
+    text: 'Neighbors on Elm Road ask a judge to order the city to plant trees along the road, saying that trees would make the road nicer. No law requires the city to plant them, and nobody says any right is taken away by leaving the road bare.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'ask a judge to order the city', J1: 'No law requires the city to plant them, and nobody says any right is taken away by leaving the road bare' },
-    reason: { D1: 'The neighbours have gone to a judge: {cue:D1}. The city has not been asked for anything else.',
+    reason: { D1: 'The neighbors have gone to a judge: {cue:D1}. The city has not been asked for anything else.',
               J1: 'They want the judge to choose what would be nicer, and nothing settles it: {cue:J1}.' },
     not: { outcome: 'review', why: 'Nobody has been harmed by a rule, and nobody points to a right that is taken away.' } },
 

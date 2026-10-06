@@ -14,12 +14,12 @@ FC.cases('civics', 'u4', [
               E1: 'A law stands behind it, and the office fills in the rest: {cue:E1}. The prescription is the law’s own idea, and the office adds no new demand.' },
     not: { outcome: 'beyondpres', why: 'The office demands nothing that the law does not already require. It says only what a prescription must show.' } },
 
-  { id: 'e-r-water', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'free water at the cinema',
-    text: "The President signed an executive order that every cinema in the country must give each customer a free glass of water. Congress has passed no law about cinemas, and the order names none.",
+  { id: 'e-r-water', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'free water at the movie theater',
+    text: "The President signed an executive order that every movie theater in the country must give each customer a free glass of water. Congress has passed no law about cinemas, and the order names none.",
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
-    cues: { D1: 'The President signed an executive order that every cinema in the country must give each customer a free glass of water', E1: 'Congress has passed no law about cinemas' },
+    cues: { D1: 'The President signed an executive order that every movie theater in the country must give each customer a free glass of water', E1: 'Congress has passed no law about cinemas' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. Nobody votes, and no judge has been asked anything.',
-              E1: 'The order demands something of every cinema, and the case says what stands behind it: {cue:E1}. Nothing does.' },
+              E1: 'The order demands something of every movie theater, and the case says what stands behind it: {cue:E1}. Nothing does.' },
     not: { outcome: 'execute', why: 'There is no law about cinemas for the order to be carrying out, and the order names none.' } },
 
   { id: 'e-r-flight', use: 'drill', tier: 'clean', setting: 'health', topic: 'medicine flown to an island',
@@ -46,8 +46,8 @@ FC.cases('civics', 'u4', [
               E1: 'The bill has been passed, and what the President decides is the refusal: {cue:E1}.' },
     not: { outcome: 'pardon', why: 'No one has been charged with a crime. The President is acting on a bill, and not on a person.' } },
 
-  { id: 'e-r-embezzle', use: 'drill', tier: 'clean', setting: 'money', topic: 'money taken from a national programme',
-    text: "A man was convicted in a federal court of taking money from a federal programme he was running. He had served two of five years when the President signed a paper that forgives the crime and ends the rest of the sentence.",
+  { id: 'e-r-embezzle', use: 'drill', tier: 'clean', setting: 'money', topic: 'money taken from a national program',
+    text: "A man was convicted in a federal court of taking money from a federal program he was running. He had served two of five years when the President signed a paper that forgives the crime and ends the rest of the sentence.",
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
     cues: { D1: 'the President signed a paper that forgives the crime and ends the rest of the sentence', E1: 'the President signed a paper that forgives the crime' },
     reason: { D1: 'The last decision in the case is the President’s: {cue:D1}. A federal court decided earlier, and it is not being asked anything now.',
@@ -55,11 +55,11 @@ FC.cases('civics', 'u4', [
     not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a man who was found guilty of a crime.' } },
 
   /* ---------- Varied ---------- */
-  { id: 'e-r-absence', use: 'drill', tier: 'varied', setting: 'learning', topic: 'reporting pupils’ absence',
-    text: "A law Congress passed says every school that gets federal money must report how many of its pupils are absent each week. The federal education office put out the reporting form in August and told schools to send it in each Friday from September.",
+  { id: 'e-r-absence', use: 'drill', tier: 'varied', setting: 'learning', topic: 'reporting students’ absence',
+    text: "A law Congress passed says every school that gets federal money must report how many of its students are absent each week. The federal education office put out the reporting form in August and told schools to send it in each Friday from September.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
     cues: { D1: 'The federal education office put out the reporting form in August',
-            E1: ['A law Congress passed says every school that gets federal money must report how many of its pupils are absent each week', 'told schools to send it in each Friday from September'] },
+            E1: ['A law Congress passed says every school that gets federal money must report how many of its students are absent each week', 'told schools to send it in each Friday from September'] },
     reason: { D1: 'The last decision is an office’s: {cue:D1}. It is a federal office, and no vote or judge comes after it.',
               E1: 'The law asks for the report, and the office says how and when to send it: {cue:E1}. It adds nothing the law does not ask for.' },
     not: { outcome: 'veto', why: 'The law is already passed and in force, so nobody is deciding whether to sign it. An office is making it work.' } },
@@ -73,12 +73,12 @@ FC.cases('civics', 'u4', [
     not: { outcome: 'execute', why: 'The bridge has not been built under any law. The bill has not become one, and the President is refusing it.' } },
 
   { id: 'e-r-citizenship', use: 'drill', tier: 'varied', setting: 'immigration', topic: 'a citizenship application checked',
-    text: "Under a law Congress passed, a person who has lived in the country for the years the law sets may apply to become a citizen. On Wednesday an officer of the federal immigration service checked Ms Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview.",
+    text: "Under a law Congress passed, a person who has lived in the country for the years the law sets may apply to become a citizen. On Wednesday an officer of the federal immigration service checked Ms. Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
-    cues: { D1: 'an officer of the federal immigration service checked Ms Okoye’s papers against the list in the law', E1: 'checked Ms Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview' },
+    cues: { D1: 'an officer of the federal immigration service checked Ms. Okoye’s papers against the list in the law', E1: 'checked Ms. Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview' },
     reason: { D1: 'The last decision is an officer’s: {cue:D1}. The officer works for an office of the government of the whole country.',
               E1: 'The officer is processing an application under a law that is already there: {cue:E1}. No new rule is made, and nothing is asked that the law does not list.' },
-    not: { outcome: 'diplomacy', why: 'Ms Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.' } },
+    not: { outcome: 'diplomacy', why: 'Ms. Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.' } },
 
   { id: 'e-r-envoy', use: 'drill', tier: 'varied', setting: 'travel', topic: 'help for citizens in trouble abroad',
     text: "The Secretary of State, speaking for the President, met the ministers of Lorandia on Tuesday to agree how the two countries will help each other’s citizens who are in trouble abroad. They signed the agreement on Wednesday.",

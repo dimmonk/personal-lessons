@@ -42,9 +42,9 @@ FC.cases('ideology', 'u2', [
     not: { outcome: 'classonly', why: 'The text says nothing about the presses, but it says the council will hold the city and allow no other party, and the question about the government names that. A text that said nothing about power as well would be {o:classonly}.' } },
 
   { id: 'c-ret-ml3', use: 'return', tier: 'varied', setting: 'work', topic: 'foundry sums and a league holding charge',
-    text: "From a pamphlet of the Dray Works party: 'A founder is paid £65 for a day and casts parts worth £110 once the metal is paid for. The £45 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works. The party will take power and hold it, and no rival will be allowed to take it back.'",
+    text: "From a pamphlet of the Dray Works party: 'A founder is paid $65 for a day and casts parts worth $110 once the metal is paid for. The $45 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works. The party will take power and hold it, and no rival will be allowed to take it back.'",
     outcome: 'ml', route: { D1: ['class'], C1: ['explain'], C2: ['seize'] },
-    cues: { D1: 'The £45 goes to the owners', C1: 'Every owner has to keep a gap like it, because that is how the arrangement works', C2: 'The party will take power and hold it, and no rival will be allowed to take it back' },
+    cues: { D1: 'The $45 goes to the owners', C1: 'Every owner has to keep a gap like it, because that is how the arrangement works', C2: 'The party will take power and hold it, and no rival will be allowed to take it back' },
     reason: { D1: 'The text sets the founders’ pay against the gap that goes to the owners, and is written by a workers’ party: {cue:D1}.',
               C1: 'The text explains how owners gain, as the way the arrangement works: {cue:C1}. It asks for nothing to be done with the works, so the explanation is the answer here.',
               C2: 'The party will take power and hold it, with no rival allowed: {cue:C2}. The explanation is the same as in a text that stops there, and what the text goes on to say about power is what decides it.' },
@@ -61,11 +61,11 @@ FC.cases('ideology', 'u2', [
     not: { outcome: 'demsoc', why: 'Giving the clinic to its staff is something {o:demsoc} asks for too. This text wants no government, and {o:demsoc} keeps it.' } },
 
   { id: 'c-ret-an2', use: 'return', tier: 'varied', setting: 'town', topic: 'fishers who want the quota and no authority',
-    text: "From a flyer by the Port Alma fishers: 'The company that owns the fish quota takes what we catch, and the harbour authority backs it, and we stand with the fishers. We want the quota to belong to the people who fish. We want no authority and no government over the harbour: we will agree the catch together, on the quay.'",
+    text: "From a flyer by the Port Alma fishers: 'The company that owns the fish quota takes what we catch, and the harbor authority backs it, and we stand with the fishers. We want the quota to belong to the people who fish. We want no authority and no government over the harbor: we will agree the catch together, on the quay.'",
     outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] },
-    cues: { D1: 'The company that owns the fish quota takes what we catch, and the harbour authority backs it, and we stand with the fishers', C1: 'We want the quota to belong to the people who fish', C2: 'We want no authority and no government over the harbour: we will agree the catch together, on the quay' },
+    cues: { D1: 'The company that owns the fish quota takes what we catch, and the harbor authority backs it, and we stand with the fishers', C1: 'We want the quota to belong to the people who fish', C2: 'We want no authority and no government over the harbor: we will agree the catch together, on the quay' },
     reason: { D1: 'The text sets the company that owns the quota against the fishers, and stands with the fishers: {cue:D1}.',
               C1: 'The quota is to belong to the people who fish: {cue:C1}. Nothing is said about competing.',
-              C2: 'The text wants no government over the harbour: {cue:C2}.' },
+              C2: 'The text wants no government over the harbor: {cue:C2}.' },
     not: { outcome: 'mktsoc', why: 'Both give the quota to the people who fish. This text says nothing about competing, and wants no government. A text that kept the fishers competing for customers would be {o:mktsoc}.' } }
 ]);

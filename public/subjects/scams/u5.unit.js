@@ -8,7 +8,7 @@
 
 FC.unit('scams', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
@@ -63,7 +63,7 @@ FC.unit('scams', 'u5', {
   // stage holds a real request, and the later stages mix in cases that look like another name.
   drill: {
     key: 'u5',
-    add: 'Some of these requests are real, and some are copies made to take something. That is on purpose, and the two questions you are practising do not say which is which by how a request sounds: they say whether you began it and whether what is asked is what the job needs. A real request that asks for the same papers as a copy gets a different answer, and that is the whole point.',
+    add: 'Some of these requests are real, and some are copies made to take something. That is on purpose, and the two questions you are practicing do not say which is which by how a request sounds: they say whether you began it and whether what is asked is what the job needs. A real request that asks for the same papers as a copy gets a different answer, and that is the whole point.',
     rungs: [
       { ask: 'name',
         items: [['u5-n-school', 'u5-n-refund', 'u5-n-language'],
@@ -81,7 +81,7 @@ FC.unit('scams', 'u5', {
                 ['u5-f-lease', 'u5-f-passportoffice', 'u5-f-grief']] },
       { ask: 'route',
         items: [['u5-r-pharmacy', 'u5-r-frozen', 'u5-r-wine'],
-                ['u5-r-licence', 'u5-r-bursary', 'u5-r-chess'],
+                ['u5-r-license', 'u5-r-bursary', 'u5-r-chess'],
                 ['u5-r-library', 'u5-r-tvlicence', 'u5-r-lisbon'],
                 ['u5-r-callback', 'u5-r-ticket'],
                 ['u5-r-gym', 'u5-r-adviser'],
@@ -100,7 +100,8 @@ FC.unit('scams', 'u5', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Three names, the real one first; two questions; four look-alike pairs, one of them with a name from the unit on money; three whole cases; seventy-six or so cases in all.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [
@@ -119,7 +120,7 @@ FC.unit('scams', 'u5', {
     wrongIdeas: [
       { card: 'refute-knewname', about: 'identitytheft',
         source: { kind: 'app-data', verified: true,
-          ref: 'public/subjects/scams/standard0.js, SCAM_ERR, claim 4: "She read out my full name and my old address, so she had to be from the council." The old claim is the idea as people said it to the app.' } },
+          ref: 'public/subjects/scams/standard0.js, SCAM_ERR, claim 4: "She read out my full name and my old address, so she had to be from the county." The old claim is the idea as people said it to the app.' } },
       { card: 'refute-nomoney', about: 'friendlychat',
         source: { kind: 'app-data', verified: true,
           ref: 'public/subjects/scams/standard0.js, SCAM_ERR, claim 7: "We have chatted every day for six weeks and she has never mentioned money, so she cannot be a scammer." The old claim is the idea as people said it to the app.' } }

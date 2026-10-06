@@ -59,7 +59,7 @@ FC.cases('stats', 'u3', [
       { text: 'Anyone who saw the link could answer.', voice: 'selfselect' },
       { text: 'Everyone on the list was asked, and 9 in 10 of them replied.', voice: 'samp_ok' },
       { text: 'Only 12 of the 800 people asked sent the form back.', voice: 'nonresp' },
-      { text: 'The figure comes from a class of 9 pupils.', voice: 'smalln' }
+      { text: 'The figure comes from a class of 9 students.', voice: 'smalln' }
     ],
     why: 'That detail shows a figure worked out after the fact from the ones that lasted, with the ones that closed or left missing from it.' },
 
@@ -89,7 +89,7 @@ FC.cases('stats', 'u3', [
       { text: '"Every bank still open in town has been here for forty years."', voice: 'survivor' },
       { text: '"Thousands of listeners have called in, and they agree."', voice: 'selfselect' },
       { text: '"Of the members who returned the form, nine in ten approve."', voice: 'nonresp' },
-      { text: '"We counted all 1,200 pupils, and 8 in 100 missed more than ten days."', voice: 'samp_ok' }
+      { text: '"We counted all 1,200 students, and 8 in 100 missed more than ten days."', voice: 'samp_ok' }
     ],
     why: 'A perfect record from a handful is the kind of figure luck produces: one more or fewer would change it a long way.' },
 

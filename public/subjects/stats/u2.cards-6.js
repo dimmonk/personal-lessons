@@ -39,7 +39,7 @@ FC.cards('stats', 'u2', [
         reason: 'Now the question for a claim that holds: what does it say the figures show? The claim is {cue:H1}. It sets two libraries side by side and says which is later more often, and nothing else. For each library the late loans are divided by the total: 1,104 ÷ 9,200 = 0.12, which is 12 in 100, and 1,365 ÷ 9,100 = 0.15, which is 15 in 100. The two are alike and counted alike, and the numbers are given.' }
     ],
     hold: {
-      neighbour: 'cause_ok',
+      neighbor: 'cause_ok',
       prompt: { kind: 'reason',
         lead: 'The case sets two groups side by side with a gap between them, so it can look like a claim that one thing made the other happen.',
         choices: [
@@ -77,7 +77,7 @@ FC.cards('stats', 'u2', [
         reason: 'Now the question for a claim that holds. The case sets two groups side by side with their averages, 3.1 and 4.4, and a gap of 4.4 − 3.1 = 1.3 points. But look at the claim: {cue:H1}. It does not stop at which group is ahead. It says that stretching reduced the pain.' }
     ],
     hold: {
-      neighbour: 'comp_ok',
+      neighbor: 'comp_ok',
       prompt: { kind: 'reason',
         lead: 'The case sets two groups side by side with their averages, so it can look like a claim that only says which group is ahead.',
         choices: [

@@ -74,7 +74,7 @@ FC.cases('ideology', 'u1', [
 
   { id: 'i-ret-trad-free', use: 'return', tier: 'misleading', setting: 'money', topic: 'freedom that grows in old soil', echo: 'i-rights-meet',
     also: ['rights'],
-    text: "Everyone should be free to run a shop or a farm without a licence, and I say so loudly. But freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them, or lose both.",
+    text: "Everyone should be free to run a shop or a farm without a license, and I say so loudly. But freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them, or lose both.",
     route: { D1: ['tradition'] },
     cues: { D1: ['freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them'] },
     reason: { D1: 'The text asks that the country be guided by what the parents taught: {cue:D1}.' },

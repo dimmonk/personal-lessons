@@ -5,7 +5,7 @@
 
 FC.unit('ideology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
@@ -97,7 +97,7 @@ FC.unit('ideology', 'u3', {
         items: [['n-fn-nat', 'n-fn-natpop'], ['n-fn-fasc', 'n-fn-nazi']] },
       { ask: 'route',
         items: [['n-rt-coin', 'n-rt-shipyard'],
-                ['n-rt-theatre', 'n-rt-pension'],
+                ['n-rt-theater', 'n-rt-pension'],
                 ['n-rt-frontier', 'n-rt-drought'],
                 ['n-rt-decree', 'n-rt-language', 'n-rt-fares'],
                 ['n-rt-parade', 'n-rt-letter'],
@@ -120,14 +120,15 @@ FC.unit('ideology', 'u3', {
     // What changed at each revision (R1). One entry for every revision from 1 to rev.
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the key’s second answer. Two questions, five names, one term. Not yet deployed, so later edits before the first deploy stay revision 1.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' }
     ],
     // What changed in the key for this branch, and why (K2). From docs/rebuild/ideology-plan.md, part a.
     keyChanges: [
       { step: 'N1', was: 'none: the old key asked a first-answer choice among "The nation", "Ordinary people against an elite" and "One race ranked above the others"',
         now: '"Who does the text speak for, and against whom?": the whole nation / ordinary people against an elite with the nation put first / ordinary people against an elite and nothing more / one people by blood, ranked above the others',
         why: 'K2.2: who the people is set against separates four of the five names. The old three answers overlapped (one name under two answers on 4 of 13 names), and "is anything attached?" was an extra check the old key never asked or scored.' },
-      { step: 'N1', was: '"One race ranked above the others" as a first answer; Nazism when the ranking is the centre, Fascism when race comes in only in passing',
+      { step: 'N1', was: '"One race ranked above the others" as a first answer; Nazism when the ranking is the center, Fascism when race comes in only in passing',
         now: 'an answer of N1; a text that ranks peoples by blood gets it, and N1 alone decides Nazism',
         why: 'K2.8: the old line could not be read off a short text. The key\'s decision, said plainly on the Nazism card: the field draws the line in other places, and the key draws it at the ranking.' },
       { step: 'N2', was: 'an extra check: "What does the text want done with elections, courts and a free press?" (four free-prose options)',

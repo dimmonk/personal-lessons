@@ -10,7 +10,7 @@ FC.cases('math', 'u3', [
     topic: 'a feed for a baby',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A nurse works out a baby’s feed in millilitres this way: take the baby’s weight in kilos, add 3, then multiply by 30. A baby’s feed is 240 mL. What does the baby weigh?',
+    text: 'A nurse works out a baby’s feed in milliliters this way: take the baby’s weight in kilos, add 3, then multiply by 30. A baby’s feed is 240 mL. What does the baby weigh?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
       M1: ['take the baby’s weight in kilos, add 3, then multiply by 30', 'What does the baby weigh?'],
@@ -58,7 +58,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -117,7 +117,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -128,11 +128,11 @@ FC.cases('math', 'u3', [
     topic: 'plants with a delivery fee',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A shop charges a €6 delivery fee plus €3 for each plant. An order costs €42. How many plants were in it?',
+    text: 'A shop charges a $6 delivery fee plus $3 for each plant. An order costs $42. How many plants were in it?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['a €6 delivery fee plus €3 for each plant', 'How many plants were in it?'],
-      A1: ['a €6 delivery fee plus €3 for each plant', 'An order costs €42']
+      M1: ['a $6 delivery fee plus $3 for each plant', 'How many plants were in it?'],
+      A1: ['a $6 delivery fee plus $3 for each plant', 'An order costs $42']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -177,7 +177,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {

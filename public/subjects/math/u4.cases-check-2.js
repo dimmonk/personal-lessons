@@ -13,38 +13,38 @@ FC.cases('math', 'u4', [
     topic: 'a season ticket',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A season ticket cost €300 for years. This year it was set at €360, and the club has promised to keep it at €360. What will it cost after 3 years?',
+    text: 'A season ticket cost $300 for years. This year it was set at $360, and the club has promised to keep it at $360. What will it cost after 3 years?',
     route: { M1: ['growth'], G1: ['once'], G2: ['willbe'] },
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €300. After: €360'
+        working: 'Before: $300. After: $360'
       },
       {
         does: 'Say how big the change was',
-        working: '€360 − €300 = €60, and €60 ÷ €300 = 0.2, which is 20% of the old amount'
+        working: '$360 − $300 = $60, and $60 ÷ $300 = 0.2, which is 20% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €360 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $360 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'Carry the amount after the change forward as it is',
-        working: 'In 3 years: €360'
+        working: 'In 3 years: $360'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€360' },
+        { id: 'r', text: '$360' },
         {
           id: 's1',
-          text: '€540',
+          text: '$540',
           slip: 'you carry the change forward as if it came again every year.'
         },
         {
           id: 's2',
-          text: '€622.08',
+          text: '$622.08',
           slip: 'you carry the percentage forward as if it came again every year.'
         }
       ]
@@ -57,33 +57,33 @@ FC.cases('math', 'u4', [
     use: 'check',
     tier: 'clean',
     setting: 'health',
-    topic: 'a hospital car park',
+    topic: 'a hospital parking lot',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A hospital car park charged €2 an hour. Since last month it has charged €3 an hour, and the hospital has fixed it there. After how many years will it charge €5 an hour?',
+    text: 'A hospital parking lot charged $2 an hour. Since last month it has charged $3 an hour, and the hospital has fixed it there. After how many years will it charge $5 an hour?',
     route: { M1: ['growth'], G1: ['once'], G2: ['howlong'] },
     steps: [
       {
         does: 'Find the amount before the change and after it',
-        working: 'Before: €2. After: €3'
+        working: 'Before: $2. After: $3'
       },
       {
         does: 'Say how big the change was',
-        working: '€3 − €2 = €1, and €1 ÷ €2 = 0.5, which is 50% of the old amount'
+        working: '$3 − $2 = $1, and $1 ÷ $2 = 0.5, which is 50% of the old amount'
       },
       {
         does: 'Look at what the problem says happens next',
-        working: 'The problem says it has stayed at €3 since, and mentions no other change, so nothing repeats'
+        working: 'The problem says it has stayed at $3 since, and mentions no other change, so nothing repeats'
       },
       {
         does: 'See whether the amount ever reaches the target',
-        working: '€3 is not €5, and nothing changes it again, so it never reaches €5 unless a new change is made'
+        working: '$3 is not $5, and nothing changes it again, so it never reaches $5 unless a new change is made'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: 'Never: it stays at €3' },
+        { id: 'r', text: 'Never: it stays at $3' },
         {
           id: 's1',
           text: 'About 2.0 years',

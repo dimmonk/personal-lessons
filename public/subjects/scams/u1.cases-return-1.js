@@ -8,10 +8,10 @@ FC.cases('scams', 'u1', [
 
   /* ---------- something on your device ---------- */
   { id: 'g-ret-popup', use: 'return', tier: 'clean', setting: 'home', topic: 'a pop-up with a siren and a repair line',
-    text: "A pop-up fills Iris's computer with a siren sound: 'Your computer has a serious fault. Call our repair line on 0800 555 0142 now.'",
+    text: "A pop-up fills Iris's computer with a siren sound: 'Your computer has a serious fault. Call our repair line at (800) 555-0142 now.'",
     route: { D1: ['device'] },
-    cues: { D1: 'Call our repair line on 0800 555 0142 now' },
-    reason: { D1: 'A warning that says a device has a fault, and gives someone to ring to fix it, is a request about the device: {cue:D1}. The person who answers will want to put something on it or to watch it.' },
+    cues: { D1: 'Call our repair line at (800) 555-0142 now' },
+    reason: { D1: 'A warning that says a device has a fault, and gives someone to call to fix it, is a request about the device: {cue:D1}. The person who answers will want to put something on it or to watch it.' },
     not: { outcome: 'access', why: 'Nothing is asked of any account. The pop-up sends her to someone who will deal with her computer.' },
     wouldChange: 'If the pop-up had only said that an update would be installed tonight, and given no number, it would ask for nothing, and it would be {a:D1.nothing}.' },
 
@@ -49,7 +49,7 @@ FC.cases('scams', 'u1', [
     wouldChange: 'If the page had asked him to install a program called Stream Overlay on his computer, it would be {a:D1.device}.' },
 
   { id: 'g-ret-rebate', use: 'return', tier: 'varied', setting: 'government', topic: 'a rebate that needs a login',
-    text: "A text reads: 'Northway Council: your council tax rebate is ready. Log in with your username and password at northway-rebate.com to claim it.'",
+    text: "A text reads: 'Northway County: your property tax rebate is ready. Log in with your username and password at northway-rebate.com to claim it.'",
     route: { D1: ['access'] },
     cues: { D1: 'Log in with your username and password at northway-rebate.com to claim it' },
     reason: { D1: 'The text asks the reader to log in: {cue:D1}. The rebate is the reason it gives.' },
@@ -62,7 +62,7 @@ FC.cases('scams', 'u1', [
     cues: { D1: 'Can you forward it to me?' },
     reason: { D1: 'The message asks Cal to send on a {t:code} that has arrived on his phone: {cue:D1}. That is a request for a way into an account.' },
     not: { outcome: 'money', why: 'It is a request to pass something on, but what is passed on is a code and not money.' },
-    wouldChange: 'If the message had asked Cal to lend her £50, it would be {a:D1.money}.' },
+    wouldChange: 'If the message had asked Cal to lend her $50, it would be {a:D1.money}.' },
 
   { id: 'g-ret-bankpage', use: 'return', tier: 'clean', setting: 'money', topic: 'signing in to see statements',
     text: "Sofia opens Halbrook Bank's own site, which she has bookmarked. The page says: 'Type your password to see your statements.'",

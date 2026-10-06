@@ -53,7 +53,7 @@ FC.cards('stats', 'u4', [
         ] }
     ],
     hold: {
-      neighbour: 'defshift',
+      neighbor: 'defshift',
       prompt: { kind: 'reason',
         lead: 'The case says six new inspectors were hired. That is a change in who does the counting, so it can look like a change in how the figure is counted.',
         choices: [
@@ -94,7 +94,7 @@ FC.cards('stats', 'u4', [
         ] }
     ],
     hold: {
-      neighbour: 'defshift',
+      neighbor: 'defshift',
       prompt: { kind: 'reason',
         lead: 'The call time fell right after a new phone system went in, so the case can look like a change in how the figure is counted.',
         choices: [

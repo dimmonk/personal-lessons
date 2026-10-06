@@ -188,12 +188,12 @@ FC.cases('math', 'u6', [
     topic: 'a model of a bridge',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A museum has a model of a bridge at a scale of 1 to 50. The model is 36 cm long. How long is the real bridge, in metres?',
+    text: 'A museum has a model of a bridge at a scale of 1 to 50. The model is 36 cm long. How long is the real bridge, in meters?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
-      M1: 'How long is the real bridge, in metres?',
+      M1: 'How long is the real bridge, in meters?',
       S1: 'a model of a bridge at a scale of 1 to 50',
-      S2: 'How long is the real bridge, in metres?'
+      S2: 'How long is the real bridge, in meters?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',

@@ -21,11 +21,11 @@ FC.cases('ideology', 'u2', [
     ] },
 
   { id: 'c-ml-sites', use: 'check', tier: 'clean', setting: 'housing', topic: 'building staff and a committee in charge of the city', name: 'Building staff and a committee in charge of the city',
-    text: "From a statement by the Oakfield building workers' committee: 'The firms that own the building sites live off our labour, and we stand with the people who build. The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose. The sites will belong to the government it forms.'",
+    text: "From a statement by the Oakfield building workers' committee: 'The firms that own the building sites live off our labor, and we stand with the people who build. The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose. The sites will belong to the government it forms.'",
     outcome: 'ml', route: { D1: ['class'], C1: ['public'], C2: ['seize'] },
     cues: { C1: 'The sites will belong to the government it forms', C2: 'The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose' },
     segments: [
-      { text: 'The firms that own the building sites live off our labour, and we stand with the people who build', note: 'That names the two groups and the side the text takes. It says nothing yet about who holds power.' },
+      { text: 'The firms that own the building sites live off our labor, and we stand with the people who build', note: 'That names the two groups and the side the text takes. It says nothing yet about who holds power.' },
       { text: 'The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose' },
       { text: 'The sites will belong to the government it forms', note: 'That is about the sites. It says who will own them, and nothing about how the committee will win or hold power.' }
     ],
@@ -37,23 +37,23 @@ FC.cases('ideology', 'u2', [
     outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] },
     cues: { C1: 'The print works should belong to the people who work in it', C2: 'The town should be run by open meetings of everyone in it, with no government at all' } },
 
-  { id: 'c-an-estate', use: 'teach', tier: 'clean', setting: 'housing', topic: 'building staff who want no rulers', name: 'The estate builders',
-    text: "A leaflet by the Dockside building workers: 'The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him. The firm should belong to the people who build for it. We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings.'",
+  { id: 'c-an-estate', use: 'teach', tier: 'clean', setting: 'housing', topic: 'building staff who want no rulers', name: 'The development builders',
+    text: "A leaflet by the Dockside building workers: 'The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him. The firm should belong to the people who build for it. We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings.'",
     outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] },
-    cues: { C1: 'The firm should belong to the people who build for it', C2: 'We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings' },
+    cues: { C1: 'The firm should belong to the people who build for it', C2: 'We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings' },
     segments: [
       { text: "The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him", note: 'That names the owner and the government and says what is wrong. It does not yet say what should be done about the government.' },
       { text: 'The firm should belong to the people who build for it', note: 'That is about who should own the firm. The question here is about the government.' },
-      { text: 'We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings' }
+      { text: 'We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings' }
     ] },
 
   { id: 'c-an-school', use: 'check', tier: 'clean', setting: 'schooling', topic: 'school staff who want no rulers', name: 'School staff who want no rulers',
-    text: "From notes for a meeting of school staff in the Kell valley: 'The group that owns the schools runs them for profit, and the government backs it. The teachers, cooks and caretakers should run each school together. We want the government done away with, now, and not used first: we will run the valley's schools in open meetings.'",
+    text: "From notes for a meeting of school staff in the Kell valley: 'The group that owns the schools runs them for profit, and the government backs it. The teachers, cooks and custodians should run each school together. We want the government done away with, now, and not used first: we will run the valley's schools in open meetings.'",
     outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] },
-    cues: { C1: 'The teachers, cooks and caretakers should run each school together', C2: "We want the government done away with, now, and not used first: we will run the valley's schools in open meetings" },
+    cues: { C1: 'The teachers, cooks and custodians should run each school together', C2: "We want the government done away with, now, and not used first: we will run the valley's schools in open meetings" },
     segments: [
       { text: 'The group that owns the schools runs them for profit, and the government backs it', note: 'That names the owners and the government and says what is wrong. It does not yet say what should be done about the government.' },
-      { text: 'The teachers, cooks and caretakers should run each school together', note: 'That is about who should run the schools. The question here is about the government.' },
+      { text: 'The teachers, cooks and custodians should run each school together', note: 'That is about who should run the schools. The question here is about the government.' },
       { text: "We want the government done away with, now, and not used first: we will run the valley's schools in open meetings" }
     ],
     reason: { C2: 'The text wants the government got rid of, and says when and how: {cue:C2}. It does not want it used first and does not want a party to hold it.' } },

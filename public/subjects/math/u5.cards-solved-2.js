@@ -8,31 +8,31 @@ FC.cards('math', 'u5', [
     id: 'solved-comb-2',
     kind: 'solved',
     outcome: 'comb',
-    h: 'Worked again: three flavours to taste',
+    h: 'Worked again: three flavors to taste',
     link: 'The same procedure in a different story, with a smaller group, so that you can see all 6 orders of 3 things written out.',
     problem: 'm5-s-co-2',
     steps: [
       {
         does: 'Count the group and the picks',
-        working: 'Group: 7 flavours. Picked: 3',
-        why: 'Seven flavours, and the customer tastes any 3, in no particular order. Raspberry, plum and apricot is the same tasting as apricot, raspberry and plum.'
+        working: 'Group: 7 flavors. Picked: 3',
+        why: 'Seven flavors, and the customer tastes any 3, in no particular order. Raspberry, plum and apricot is the same tasting as apricot, raspberry and plum.'
       },
       {
         does: 'Count the picks as if the order mattered',
         working: '7 × 6 × 5 = 210',
-        why: 'The same first count as before: 7 for the first flavour, 6 for the second and 5 for the third, multiplied. It lists every tasting once for each order its three flavours could be named in.'
+        why: 'The same first count as before: 7 for the first flavor, 6 for the second and 5 for the third, multiplied. It lists every tasting once for each order its three flavors could be named in.'
       },
       {
         does: 'Count the orders one chosen group can be put in',
-        working: '3 flavours can be put in order in 3 × 2 × 1 = 6 ways'
+        working: '3 flavors can be put in order in 3 × 2 × 1 = 6 ways'
       },
       {
         does: 'Divide the first count by the second',
-        working: '210 ÷ 6 = 35. That is 35 sets of flavours',
+        working: '210 ÷ 6 = 35. That is 35 sets of flavors',
         why: 'Each tasting is in the count 6 times, so the number of tastings is 210 ÷ 6 = 35. A check: 35 × 6 = 210.'
       }
     ],
-    result: 'A customer can taste 35 different sets of 3 flavours.',
+    result: 'A customer can taste 35 different sets of 3 flavors.',
     hold: {
       step: 2,
       prompt: {
@@ -40,7 +40,7 @@ FC.cards('math', 'u5', [
         choices: [
           {
             id: 'x',
-            text: 'Any one set of 3 flavours can be named in 3 × 2 × 1 = 6 different orders, so each tasting appears 6 times in the count of 210.'
+            text: 'Any one set of 3 flavors can be named in 3 × 2 × 1 = 6 different orders, so each tasting appears 6 times in the count of 210.'
           },
           {
             id: 'y',
@@ -49,15 +49,15 @@ FC.cards('math', 'u5', [
           },
           {
             id: 'z',
-            text: 'There are 7 flavours on sale.',
-            note: 'That is true, but it is the size of the group, and it does not say how many orders three flavours can be put in.'
+            text: 'There are 7 flavors on sale.',
+            note: 'That is true, but it is the size of the group, and it does not say how many orders three flavors can be put in.'
           }
         ],
         answer: 'x'
       },
       reason: [
-        'Write out the 6 orders of raspberry (R), plum (P) and apricot (A): RPA, RAP, PRA, PAR, ARP, APR. That is 6 lists, and they are all the same tasting. The first flavour can be any of the 3, the second either of the 2 left, and the last is the 1 left: 3 × 2 × 1 = 6.',
-        'The same is true of every other set of 3 flavours, so the count of 210 holds each tasting exactly 6 times. That is the number to divide by next.'
+        'Write out the 6 orders of raspberry (R), plum (P) and apricot (A): RPA, RAP, PRA, PAR, ARP, APR. That is 6 lists, and they are all the same tasting. The first flavor can be any of the 3, the second either of the 2 left, and the last is the 1 left: 3 × 2 × 1 = 6.',
+        'The same is true of every other set of 3 flavors, so the count of 210 holds each tasting exactly 6 times. That is the number to divide by next.'
       ]
     }
   },

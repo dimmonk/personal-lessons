@@ -45,12 +45,12 @@ FC.cases('stats', 'u1', [
     not: { outcome: 'measure', why: 'A new definition of an account could raise the count with no more customers, but the case says the same definition was used in all five years.' },
     wouldChange: 'If the bank had started counting a checking account and a debit card as two accounts in the fourth year, it would be {a:S1.measure}.' },
 
-  { id: 'gate-p-three', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a spelling test taken by three pupils',
-    text: "A teacher gave the three pupils who stayed after class on Friday a spelling test. They scored 90%, 100% and 95%. She writes in her report: 'Our pupils are excellent spellers: they average 95%.'",
+  { id: 'gate-p-three', use: 'drill', tier: 'clean', setting: 'learning', topic: 'a spelling test taken by three students',
+    text: "A teacher gave the three students who stayed after class on Friday a spelling test. They scored 90%, 100% and 95%. She writes in her report: 'Our students are excellent spellers: they average 95%.'",
     route: { S1: ['counted'] },
-    cues: { S1: 'gave the three pupils who stayed after class on Friday a spelling test' },
-    reason: { S1: 'The claim speaks for "our pupils", but the figure comes from three pupils who happened to stay after class: {cue:S1}. Three is too few for luck not to move the figure, and pupils who stay after class are not a fair picture of the school.' },
-    not: { outcome: 'holds', why: 'The scores are real, but three pupils who stayed behind are not a fair picture of a school. One part fails, so the claim does not hold.' } },
+    cues: { S1: 'gave the three students who stayed after class on Friday a spelling test' },
+    reason: { S1: 'The claim speaks for "our students", but the figure comes from three students who happened to stay after class: {cue:S1}. Three is too few for luck not to move the figure, and students who stay after class are not a fair picture of the school.' },
+    not: { outcome: 'holds', why: 'The scores are real, but three students who stayed behind are not a fair picture of a school. One part fails, so the claim does not hold.' } },
 
   /* ---------- a claim that holds beside a claim that is built on figures the agents could push ---------- */
   { id: 'gate-p-census', use: 'drill', tier: 'clean', setting: 'community', topic: 'library visits counted by door counters',

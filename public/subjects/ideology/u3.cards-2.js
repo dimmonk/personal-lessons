@@ -37,7 +37,7 @@ FC.cards('ideology', 'u3', [
   { id: 'portrait-fasc', kind: 'portrait', outcome: 'fasc',
     link: 'You now know what decides the name. This card fills in the rest of the picture, so that you can spot {o:fasc} in real life, where nobody marks the words for you.',
     typical: [
-      'Elections or rival parties go, or are made meaningless: parties are banned, votes are cancelled, parliament is shut or filled with one movement.',
+      'Elections or rival parties go, or are made meaningless: parties are banned, votes are canceled, parliament is shut or filled with one movement.',
       'Those who disagree are silenced or broken: papers closed, critics dismissed, arrested or frightened. Nearly every dictatorship does these things, whatever it believes, so on their own they never settle a name. They answer only the second question.',
       'One leader or one movement says that it speaks for everyone, and disagreement is treated as treason against the people.',
       'It usually comes with a story of a nation that has fallen and must be reborn, marches, uniforms, flags, young people drilled together, and a government that tells owners what to make.',
@@ -54,7 +54,7 @@ FC.cards('ideology', 'u3', [
   { id: 'check-fasc', kind: 'check', after: 'fasc',
     case: 'n-gazette',
     ask: { type: 'phrase', step: 'N2', say: 'Tap the words that take away the say of anyone who might disagree.',
-           answer: 'The election due in March is cancelled' } },
+           answer: 'The election due in March is canceled' } },
 
   { id: 'look-nationalism-fasc', kind: 'lookalike', ledger: 'nationalism~fasc',
     link: 'You have now met two names whose first answer is the same. They are easy to mix up, because both speak for everyone and both can sound proud and sure of themselves. This card puts them side by side.',

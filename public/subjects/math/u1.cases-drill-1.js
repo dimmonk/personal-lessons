@@ -25,21 +25,21 @@ FC.cases('math', 'u1', [
     wouldChange: 'If the problem asked whether the 120 breakfasts the café sells in a day could be shared into equal boxes with none left over, it would be {a:M1.whole}.' },
 
   /* ---------- a missing number beside an amount over time ---------- */
-  { id: 'gt-chain', use: 'drill', tier: 'clean', setting: 'shopping', topic: 'chain sold by the metre',
-    text: 'A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?',
+  { id: 'gt-chain', use: 'drill', tier: 'clean', setting: 'shopping', topic: 'chain sold by the meter',
+    text: 'A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?',
     route: { M1: ['unknown'] },
-    cues: { M1: ['sells 6 metres of chain for €15', 'How much will it cost her?'] },
-    reason: { M1: 'The problem gives a rate, so much for so many metres, and a new amount to scale it to: {cue:M1}. The price is the number it leaves out.' },
-    not: { outcome: 'growth', why: 'The price goes with each metre, which is a thing you count, and not with each hour, day, month or year. Nothing is followed as time passes.' },
-    wouldChange: 'If the problem said the chain’s price rose by €2 every month and asked what it would cost in a year, one amount would be followed through time, and it would be {a:M1.growth}.' },
+    cues: { M1: ['sells 6 meters of chain for $15', 'How much will it cost her?'] },
+    reason: { M1: 'The problem gives a rate, so much for so many meters, and a new amount to scale it to: {cue:M1}. The price is the number it leaves out.' },
+    not: { outcome: 'growth', why: 'The price goes with each meter, which is a thing you count, and not with each hour, day, month or year. Nothing is followed as time passes.' },
+    wouldChange: 'If the problem said the chain’s price rose by $2 every month and asked what it would cost in a year, one amount would be followed through time, and it would be {a:M1.growth}.' },
 
   { id: 'gt-jar', use: 'drill', tier: 'clean', setting: 'money', topic: 'a savings jar filled each month',
-    text: 'A savings jar holds €120. Tomas adds €15 to it every month. How many months until the jar holds €300?',
+    text: 'A savings jar holds $120. Tomas adds $15 to it every month. How many months until the jar holds $300?',
     route: { M1: ['growth'] },
-    cues: { M1: ['Tomas adds €15 to it every month', 'How many months until the jar holds €300?'] },
+    cues: { M1: ['Tomas adds $15 to it every month', 'How many months until the jar holds $300?'] },
     reason: { M1: 'One amount, the money in the jar, is followed through time: {cue:M1}. It goes up by the same number every month, and the question asks how long it takes to reach a target.' },
     not: { outcome: 'unknown', why: 'The number of months is the number the problem leaves out, and the facts fix it, which can make it look like a hidden number. But the facts are an amount that changes each month, and the problem asks how long it takes to reach a target.' },
-    wouldChange: 'If the problem said the €300 had to be split into equal shares for 7 cousins and asked what was left over, it would be {a:M1.whole}.' },
+    wouldChange: 'If the problem said the $300 had to be split into equal shares for 7 cousins and asked what was left over, it would be {a:M1.whole}.' },
 
   /* ---------- a shape beside a missing number ---------- */
   { id: 'gt-gatebrace', use: 'drill', tier: 'clean', setting: 'building', topic: 'a diagonal brace on a gate',
@@ -51,9 +51,9 @@ FC.cases('math', 'u1', [
     wouldChange: 'If the problem gave the rectangle’s area and its width and asked for its height, there would be no triangle, and it would be {a:M1.unknown}.' },
 
   { id: 'gt-coins', use: 'drill', tier: 'clean', setting: 'home', topic: 'two sorts of coin in a jar',
-    text: 'Rafa’s jar holds only 20-cent coins and 50-cent coins. There are 18 coins and they are worth €6.30 in all. How many coins of each kind are in the jar?',
+    text: 'Rafa’s jar holds only 20-cent coins and 50-cent coins. There are 18 coins and they are worth $6.30 in all. How many coins of each kind are in the jar?',
     route: { M1: ['unknown'] },
-    cues: { M1: ['There are 18 coins and they are worth €6.30 in all', 'How many coins of each kind are in the jar?'] },
+    cues: { M1: ['There are 18 coins and they are worth $6.30 in all', 'How many coins of each kind are in the jar?'] },
     reason: { M1: 'The jar’s two sorts of coin are not counted for you. What you are given is a count of coins and their total value, and both have to come out right: {cue:M1}.' },
     not: { outcome: 'chance', why: 'The question says “how many”, and there are two sorts of coin, as there were two sorts of cake at the bake sale. But nothing is a choice. Two facts fix exactly one answer.' },
     wouldChange: 'If the problem asked in how many different orders Rafa could line up his 4 oldest coins, it would be {a:M1.chance}.' },

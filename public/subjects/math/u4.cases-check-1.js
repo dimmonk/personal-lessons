@@ -46,7 +46,7 @@ FC.cases('math', 'u4', [
     topic: 'a delivery van losing value',
     kind: 'problem',
     outcome: 'expg',
-    text: 'A delivery van is worth €30,000 when it is new. Every year its value falls by 15% of what it was worth the year before. What will it be worth after 3 years?'
+    text: 'A delivery van is worth $30,000 when it is new. Every year its value falls by 15% of what it was worth the year before. What will it be worth after 3 years?'
   },
 
   {
@@ -57,7 +57,7 @@ FC.cases('math', 'u4', [
     topic: 'a savings goal',
     kind: 'problem',
     outcome: 'logsolve',
-    text: 'A saver has €1,500 in an account that pays 6% interest a year, and she leaves all the interest in the account. After how many years will the account hold €3,000?'
+    text: 'A saver has $1,500 in an account that pays 6% interest a year, and she leaves all the interest in the account. After how many years will the account hold $3,000?'
   },
 
   {
@@ -65,10 +65,10 @@ FC.cases('math', 'u4', [
     use: 'teach',
     tier: 'clean',
     setting: 'home',
-    topic: 'mould on a loaf',
+    topic: 'mold on a loaf',
     kind: 'problem',
     outcome: 'logsolve',
-    text: 'A patch of mould on a loaf covers 4 cm², and its area doubles every day. After how many days will the patch cover 500 cm²?'
+    text: 'A patch of mold on a loaf covers 4 cm², and its area doubles every day. After how many days will the patch cover 500 cm²?'
   },
 
   {
@@ -79,7 +79,7 @@ FC.cases('math', 'u4', [
     topic: 'a bridge toll',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A bridge toll was €3.00 for years. In July it rose to €3.45, and it has stayed at €3.45 ever since. What toll will drivers pay in 4 years?'
+    text: 'A bridge toll was $3.00 for years. In July it rose to $3.45, and it has stayed at $3.45 ever since. What toll will drivers pay in 4 years?'
   },
 
   {
@@ -90,7 +90,7 @@ FC.cases('math', 'u4', [
     topic: 'pay after a promotion',
     kind: 'problem',
     outcome: 'oneoff',
-    text: 'A worker earned €15 an hour. After a promotion she has earned €18 an hour, and her pay is fixed at €18 an hour from now on. After how many years will she earn €24 an hour?'
+    text: 'A worker earned $15 an hour. After a promotion she has earned $18 an hour, and her pay is fixed at $18 an hour from now on. After how many years will she earn $24 an hour?'
   },
 
   {
@@ -224,7 +224,7 @@ FC.cases('math', 'u4', [
     topic: 'a fund of savings',
     kind: 'problem',
     outcome: 'expg',
-    text: 'A saver puts €6,000 into a fund that grows by 5% a year, and she leaves all the growth in the fund. What will the fund hold after 3 years?',
+    text: 'A saver puts $6,000 into a fund that grows by 5% a year, and she leaves all the growth in the fund. What will the fund hold after 3 years?',
     route: { M1: ['growth'], G1: ['multiplies'], G2: ['willbe'] },
     steps: [
       {
@@ -233,25 +233,25 @@ FC.cases('math', 'u4', [
       },
       {
         does: 'Multiply the start by it once for each time the amount changes',
-        working: 'Year 1: €6,000 × 1.05 = €6,300; Year 2: €6,300 × 1.05 = €6,615; Year 3: €6,615 × 1.05 = €6,945.75'
+        working: 'Year 1: $6,000 × 1.05 = $6,300; Year 2: $6,300 × 1.05 = $6,615; Year 3: $6,615 × 1.05 = $6,945.75'
       },
       {
         does: 'Round at the end, and say what it shows',
-        working: '€6,945.75 needs no rounding, so the answer after 3 years is €6,945.75'
+        working: '$6,945.75 needs no rounding, so the answer after 3 years is $6,945.75'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€6,945.75' },
+        { id: 'r', text: '$6,945.75' },
         {
           id: 's1',
-          text: '€6,900.00',
+          text: '$6,900.00',
           slip: 'you add the first rise again each time, so every rise is the same size instead of growing.'
         },
         {
           id: 's2',
-          text: '€6,615.00',
+          text: '$6,615.00',
           slip: 'you multiply one time too few, once for every time but the last.'
         }
       ]

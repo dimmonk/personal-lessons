@@ -1,7 +1,7 @@
 // Statistical Claims: subject record. Revision is a real field (it used to be parsed out of an "eyebrow" label).
 FC.subject('stats', {
   name: 'Statistical Claims',
-  rev: 2,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
+  rev: 3,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
   standard: 1,            // lesson-standard version the subject's key was written to
   action: true,           // the learner acts on these claims (P26): legitimate cases in every drill stage, the plan card,
                           // the late return, and the baseline check before Unit One
@@ -35,6 +35,7 @@ FC.subject('stats', {
   // What changed at each revision (lesson standard R1). One entry for every revision from 1 to rev.
   history: [
     { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the whole key rewritten in plain words. The first question gains a fifth answer for a claim where nothing goes wrong, which has its own branch for the four sound kinds of claim; every branch asks one question; a claim of cause with nothing to compare it with moves to the cause branch. All six units are rebuilt to it, and 23 specimens run the whole key, clean first, with a sound claim for each of the four kinds that hold.' },
-    { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+    { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+    { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
   ]
 });

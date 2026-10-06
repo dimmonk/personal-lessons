@@ -58,7 +58,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -69,16 +69,16 @@ FC.cases('math', 'u3', [
     topic: 'take-home pay',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A firm works out take-home pay this way: take the gross pay, subtract the €150 allowance, and multiply what is left by 0.8. Sam takes home €720. What was his gross pay?',
+    text: 'A firm works out take-home pay this way: take the gross pay, subtract the $150 allowance, and multiply what is left by 0.8. Sam takes home $720. What was his gross pay?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
       M1: [
-        'take the gross pay, subtract the €150 allowance, and multiply what is left by 0.8',
+        'take the gross pay, subtract the $150 allowance, and multiply what is left by 0.8',
         'What was his gross pay?'
       ],
       A1: [
-        'take the gross pay, subtract the €150 allowance, and multiply what is left by 0.8',
-        'Sam takes home €720'
+        'take the gross pay, subtract the $150 allowance, and multiply what is left by 0.8',
+        'Sam takes home $720'
       ]
     },
     reason: {
@@ -110,20 +110,20 @@ FC.cases('math', 'u3', [
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€1050' },
+        { id: 'r', text: '$1050' },
         {
           id: 's1',
-          text: '€1087.5',
+          text: '$1087.5',
           slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
         },
         {
           id: 's2',
-          text: '€726',
+          text: '$726',
           slip: 'you multiply by 0.8 once more instead of undoing it by dividing by 0.8.'
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -134,16 +134,16 @@ FC.cases('math', 'u3', [
     topic: 'extra baggage',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'An airline works out the charge for a heavy bag this way: take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a €10 handling fee. The charge was €70. How heavy was the bag?',
+    text: 'An airline works out the charge for a heavy bag this way: take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a $10 handling fee. The charge was $70. How heavy was the bag?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
       M1: [
-        'take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a €10 handling fee',
+        'take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a $10 handling fee',
         'How heavy was the bag?'
       ],
       A1: [
-        'take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a €10 handling fee',
-        'The charge was €70'
+        'take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a $10 handling fee',
+        'The charge was $70'
       ]
     },
     reason: {
@@ -188,7 +188,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -199,11 +199,11 @@ FC.cases('math', 'u3', [
     topic: 'planks for a wall',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A joiner works out how many planks to order this way: the length of the wall in metres, divided by 2, plus 4 spare planks. A job needs 19 planks. How long is the wall?',
+    text: 'A joiner works out how many planks to order this way: the length of the wall in meters, divided by 2, plus 4 spare planks. A job needs 19 planks. How long is the wall?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['the length of the wall in metres, divided by 2, plus 4 spare planks', 'How long is the wall?'],
-      A1: ['the length of the wall in metres, divided by 2, plus 4 spare planks', 'A job needs 19 planks']
+      M1: ['the length of the wall in meters, divided by 2, plus 4 spare planks', 'How long is the wall?'],
+      A1: ['the length of the wall in meters, divided by 2, plus 4 spare planks', 'A job needs 19 planks']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -247,7 +247,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -258,11 +258,11 @@ FC.cases('math', 'u3', [
     topic: 'a savings club bonus',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A savings club works out a member’s total in euros this way: multiply the amount paid in by 1.5, then add a €30 welcome gift. Lena’s total is €630. How much did she pay in?',
+    text: 'A savings club works out a member’s total in dollars this way: multiply the amount paid in by 1.5, then add a $30 welcome gift. Lena’s total is $630. How much did she pay in?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['multiply the amount paid in by 1.5, then add a €30 welcome gift', 'How much did she pay in?'],
-      A1: ['multiply the amount paid in by 1.5, then add a €30 welcome gift', 'Lena’s total is €630']
+      M1: ['multiply the amount paid in by 1.5, then add a $30 welcome gift', 'How much did she pay in?'],
+      A1: ['multiply the amount paid in by 1.5, then add a $30 welcome gift', 'Lena’s total is $630']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -293,19 +293,19 @@ FC.cases('math', 'u3', [
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '€400' },
+        { id: 'r', text: '$400' },
         {
           id: 's1',
-          text: '€390',
+          text: '$390',
           slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
         },
         {
           id: 's2',
-          text: '€440',
+          text: '$440',
           slip: 'you add 30 once more instead of undoing it by taking away 30.'
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   }
 ]);

@@ -12,7 +12,7 @@ FC.cards('scams', 'u6', [
       'Sam let a stranger watch his phone while he typed his banking password. The stranger could see everything that Sam could. That is what {t:screenshare} is, and it also covers a support app that lets someone control the device.',
       'A device that has had something installed on it, or that someone has watched, cannot be trusted until you have dealt with it, and everything that you type on it may be seen. So the facts in this group are about cutting the device off, removing what was put on it, and doing the important things from somewhere else.',
       'End the session that lets them watch. Switch off the internet connection on the device, so that it cannot be reached from far away. Uninstall what you were told to install. If what you opened was a file and not a program, also run a full scan with your security software.',
-      'Then change your passwords from another device, and check your real balance in your own banking app on that other device. What the first device showed Sam was controlled by someone else, and means nothing. Last, ring your bank on the number on your card, through {t:already}, and tell them.'
+      'Then change your passwords from another device, and check your real balance in your own banking app on that other device. What the first device showed Sam was controlled by someone else, and means nothing. Last, call your bank at the number on your card, through {t:already}, and tell them.'
     ] },
 
   { id: 'facts-device', kind: 'facts',
@@ -30,7 +30,7 @@ FC.cards('scams', 'u6', [
         relates: 'The device in the story may still be watched or controlled, and anything that you type on it, a new password included, may be seen too.' },
       { id: 'dv-balance', q: 'How do you check your real balance?', a: 'Check it in your own banking app, on a different device',
         relates: 'What the first device showed you was controlled by someone else, and means nothing. Your own app, on a device that they have not touched, shows what is true.' },
-      { id: 'dv-bank', q: 'Whom do you tell, and on what number?', a: 'Tell your bank, on the number on your card',
+      { id: 'dv-bank', q: 'Whom do you tell, and at what number?', a: 'Tell your bank, at the number on your card',
         relates: 'The number on your card is {t:already}. A number that the caller gave you came with the scam, so it is theirs, even if you are the one who dials it.' }
     ] },
 
@@ -60,7 +60,7 @@ FC.cards('scams', 'u6', [
     case: 'late-papers',
     plain: [
       'Rosa sent a photo of her passport, a photo of herself holding it, and a number that identifies her, to a page that belonged to nobody real. They cannot be taken back. What she can do is make them harder to use, and watch for the day somebody does.',
-      'She tells her bank. She asks a credit reference agency to put a fraud warning on her file. A credit reference agency is a company that keeps the record that lenders check before they give you credit, and a fraud warning on that record says that somebody else may be using your details. Which companies do this, and how you ask them, depends on the country you live in, so find the ones for yours.',
+      'She tells her bank. She asks the credit bureaus to put a fraud alert or a freeze on her file. A credit bureau is a company that keeps the record that lenders check before they give you credit. There are three in the United States: Equifax, Experian and TransUnion. A fraud alert says that somebody else may be using your details, and a credit freeze, which costs nothing, stops new credit from being opened in your name until you lift it. She also reports it at IdentityTheft.gov, the FTC’s site for this kind of crime, which gives her a plan for what to do next.',
       'She watches her accounts afterwards, because what she sent can be used later and not only on the day she sent it. And she changes any password that matches what she sent, because the scammer now holds it.'
     ] },
 
@@ -70,9 +70,9 @@ FC.cards('scams', 'u6', [
     concept: 'con-papers',
     rows: [
       { id: 'pp-bank', q: 'Whom do you tell about papers or numbers that you sent to a scammer?', a: 'Tell your bank',
-        relates: 'Your bank is the organisation you already deal with, and the one that holds your accounts, so it needs to know that somebody else has these details.' },
-      { id: 'pp-agency', q: 'Whom do you ask to put a fraud warning on your file?', a: 'Ask a credit reference agency',
-        relates: 'It keeps the record that lenders check before they give you credit. The fraud warning says that somebody else may be using your details. Which companies do this depends on the country you live in.' },
+        relates: 'Your bank is the organization you already deal with, and the one that holds your accounts, so it needs to know that somebody else has these details.' },
+      { id: 'pp-agency', q: 'Whom do you ask to put a fraud warning on your file?', a: 'Ask the credit bureaus',
+        relates: 'The three credit bureaus (Equifax, Experian and TransUnion) keep the record that lenders check before they give you credit. A fraud alert says that somebody else may be using your details, and a freeze, which costs nothing, stops new credit from being opened in your name.' },
       { id: 'pp-watch', q: 'What do you do afterwards, to see anything that you did not do?', a: 'Watch your accounts',
         relates: 'The papers and numbers are still out there. Watching your accounts is how you would see anything that you did not do.' },
       { id: 'pp-pwd', q: 'Which of your passwords do you change?', a: 'Change any that match what you sent',
@@ -85,13 +85,13 @@ FC.cards('scams', 'u6', [
   { id: 'chk-pp-pwd', kind: 'check', after: 'facts-papers', ask: { type: 'fact', row: 'pp-pwd' } },
 
   { id: 'look-papers', kind: 'lookalike', ledger: 'pp-bank~pp-agency',
-    h: 'Your bank, and a credit reference agency',
-    link: 'Two of the four facts are both about telling an organisation. One is the bank you already deal with, and the other is a company that you may never have heard of, so they get swapped.',
+    h: 'Your bank, and the credit bureaus',
+    link: 'Two of the four facts are both about telling an organization. One is the bank you already deal with, and the other is a company that you may never have heard of, so they get swapped.',
     facts: ['pp-bank', 'pp-agency'],
     instruction: 'Compare who you already deal with, and who keeps the record that lenders check.',
     prompt: { kind: 'which', answer: 'pp-agency' },
     difference: [
-      'Fact A is {f:pp-bank}. That is the organisation that you already deal with, and you reach it on the number on your card.',
+      'Fact A is {f:pp-bank}. That is the organization that you already deal with, and you reach it at the number on your card.',
       'Fact B is {f:pp-agency}. That is a company that keeps the record lenders check before they give you credit, and it is the one that you ask to put a warning on your file.',
       'You do both, and neither does the other’s job.'
     ] }

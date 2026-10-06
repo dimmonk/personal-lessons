@@ -23,7 +23,7 @@ FC.cases('ideology', 'u4', [
     not: { outcome: 'conserv', why: 'The text loves the old college, but the old college is not being kept. The text says it was handed to a board, and asks for it to be put back.' } },
 
   { id: 'i4-f-pilgrim', use: 'drill', tier: 'varied', setting: 'borders', topic: 'a pilgrim path over a mountain pass',
-    text: "From a hill-walkers' fellowship: 'Each autumn the pilgrims climb the Brae Pass to the border chapel, as pilgrims have for six hundred years, and that walk should guide how the pass is looked after. Keep the old path. If the new tunnel brings more visitors, let the walk adjust slowly, and let the pilgrims decide the pace.'",
+    text: "From a hikers' fellowship: 'Each fall the pilgrims climb the Brae Pass to the border chapel, as pilgrims have for six hundred years, and that walk should guide how the pass is looked after. Keep the old path. If the new tunnel brings more visitors, let the walk adjust slowly, and let the pilgrims decide the pace.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'that walk should guide how the pass is looked after', T1: ['Keep the old path', 'let the walk adjust slowly, and let the pilgrims decide the pace'] },
     reason: { D1: 'The text holds up a walk handed down, the pilgrimage, as what should guide: {cue:D1}.',
@@ -40,7 +40,7 @@ FC.cases('ideology', 'u4', [
 
   /* ---------- Stage four, clean: the whole route ---------- */
   { id: 'i4-r-bake', use: 'drill', tier: 'clean', setting: 'town', topic: 'a village bake day in a common oven',
-    text: "From the Lower Marle parish magazine: 'Every Saturday the village bakes its bread in the common oven, as it has since the parish was founded, and the neighbours share the loaves. That shared baking should guide how we plan the new village hall. Keep the oven in use. If the hall's kitchen must be modernised, let it be done in stages, and let the bakers say how fast.'",
+    text: "From the Lower Marle parish newsletter: 'Every Saturday the village bakes its bread in the common oven, as it has since the parish was founded, and the neighbors share the loaves. That shared baking should guide how we plan the new village hall. Keep the oven in use. If the hall's kitchen must be modernized, let it be done in stages, and let the bakers say how fast.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'That shared baking should guide how we plan the new village hall', T1: ['Keep the oven in use', 'let it be done in stages, and let the bakers say how fast'] },
     reason: { D1: 'The text holds up a custom handed down, the shared baking, as what should guide the village: {cue:D1}.',

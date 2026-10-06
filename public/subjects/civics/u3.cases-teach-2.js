@@ -56,11 +56,11 @@ FC.cases('civics', 'u3', [
     cues: { C1: 'The Senate held two days of hearings, and on Thursday it voted 61 to 38 to approve her' } },
 
   { id: 'c-lake', use: 'teach', tier: 'clean', setting: 'world', topic: 'a treaty on a shared lake', name: 'The lake treaty',
-    text: "After two years of talks, the President signed a treaty with a neighbouring country on how both countries use a shared lake. The treaty binds nobody yet. On Tuesday the Senate voted 71 to 27 to approve it.",
+    text: "After two years of talks, the President signed a treaty with a neighboring country on how both countries use a shared lake. The treaty binds nobody yet. On Tuesday the Senate voted 71 to 27 to approve it.",
     outcome: 'confirm', route: { D1: ['congress'], C1: ['approve'] },
     cues: { C1: 'the Senate voted 71 to 27 to approve it' },
     segments: [
-      { text: 'After two years of talks, the President signed a treaty with a neighbouring country on how both countries use a shared lake', note: 'That is the President’s part, and it came first. It is how the matter reached the Senate, not the vote.' },
+      { text: 'After two years of talks, the President signed a treaty with a neighboring country on how both countries use a shared lake', note: 'That is the President’s part, and it came first. It is how the matter reached the Senate, not the vote.' },
       { text: 'The treaty binds nobody yet', note: 'That says why a vote is still needed. It is not the vote itself.' },
       { text: 'On Tuesday the Senate voted 71 to 27 to approve it' }
     ] },

@@ -11,7 +11,7 @@
 
 FC.unit('math', 'u4', {
   kind: 'P',
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Four',
@@ -26,15 +26,15 @@ FC.unit('math', 'u4', {
   // test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'lin~expg', pair: ['lin', 'expg'], step: 'G1',
-      shared: 'Both follow one amount that changes again and again, and for a while their numbers are close. A rise of 5% on €1,000 is €50, which is also what “€50 a month” says, so the first change can be the same size in both.',
+      shared: 'Both follow one amount that changes again and again, and for a while their numbers are close. A rise of 5% on $1,000 is $50, which is also what “$50 a month” says, so the first change can be the same size in both.',
       rule: '{o:lin} changes the amount by the same number each time, so every change is the same size, whatever the amount has reached. {o:expg} changes it by the same share of what it has reached, so each change is bigger than the one before when the amount grows, and smaller when it shrinks.',
-      test: 'Is the amount changed by the same number each time, such as €50 a month, or by the same share of itself each time, such as 5% a month or a doubling?' },
+      test: 'Is the amount changed by the same number each time, such as $50 a month, or by the same share of itself each time, such as 5% a month or a doubling?' },
     { id: 'expg~logsolve', pair: ['expg', 'logsolve'], step: 'G2',
       shared: 'Both have an amount that is multiplied by the same number each time, and the very same start, percentage and story can appear in both. The same town at 3% a year can be asked about either way.',
       rule: '{o:expg} is given a time and asks for the amount at the end of it, so the amount is found by multiplying that many times. {o:logsolve} is given a target and asks for the time, so the number of times is what is missing, and it is found by counting how many multiplications reach the target.',
       test: 'Does the problem give a length of time and ask for the amount, or give a target for the amount and ask how long?' },
     { id: 'lin~oneoff', pair: ['lin', 'oneoff'], step: 'G1',
-      shared: 'Both are about an amount that changes by a fixed number, and both can be written with the same figure: a price that went up by €2.',
+      shared: 'Both are about an amount that changes by a fixed number, and both can be written with the same figure: a price that went up by $2.',
       rule: '{o:lin} changes the amount by the same number each time, so the change comes again and again. {o:oneoff} changes it by a number one time, after which it stays where it reached, so the change does not come again.',
       test: 'After the change is made, does the problem say that it is made again each hour, day, week, month or year, or does the amount stay where it reached?' },
     { id: 'lin~logsolve', pair: ['lin', 'logsolve'], step: 'G1',
@@ -98,7 +98,8 @@ FC.unit('math', 'u4', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the third procedure unit of Basic Math, replacing the old Unit Four (cards and the growth drill), specimens 7 to 9 and three faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about an amount that changes as time passes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two crossing questions; the drill has a last-step stage, a whole-problem stage and a route stage.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in this unit’s part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

@@ -43,7 +43,7 @@ FC.cards('stats', 'u6', [
         ] }
     ],
     hold: {
-      neighbour: 'confound',
+      neighbor: 'confound',
       prompt: { kind: 'reason',
         lead: 'The riders chose to bike, and the two groups differ in how they feel, so the case can look like one where something else differs between the groups.',
         choices: [
@@ -84,7 +84,7 @@ FC.cards('stats', 'u6', [
         ] }
     ],
     hold: {
-      neighbour: 'nocontrol',
+      neighbor: 'nocontrol',
       prompt: { kind: 'reason',
         lead: 'The club has no figures for swimmers who did not take the program, so the case can look like a result with nothing to set beside it.',
         choices: [

@@ -4,17 +4,17 @@
 FC.cases('scams', 'u5', [
 
   { id: 'u5-x-community', use: 'return', tier: 'clean', setting: 'home', topic: 'a stranger on a community app who asks when he is out',
-    text: "A woman sends Karl a private message on a local community app: 'Hi! I saw your post about the bins. What do you do? Do you have a dog?' He has never met her and has never seen her name. Over three weeks she asks when he is usually out and who looks after his flat. She has not asked for anything.",
+    text: "A woman sends Karl a private message on a local community app: 'Hi! I saw your post about the trash pickup. What do you do? Do you have a dog?' He has never met her and has never seen her name. Over three weeks she asks when he is usually out and who looks after his apartment. She has not asked for anything.",
     outcome: 'friendlychat', route: { D1: ['details'], F1: ['life'], F2: ['notfit'] },
-    cues: { D1: 'she asks when he is usually out and who looks after his flat', F1: ['He has never met her and has never seen her name', 'she asks when he is usually out and who looks after his flat'], F2: 'He has never met her and has never seen her name' },
+    cues: { D1: 'she asks when he is usually out and who looks after his apartment', F1: ['He has never met her and has never seen her name', 'she asks when he is usually out and who looks after his apartment'], F2: 'He has never met her and has never seen her name' },
     reason: { D1: 'The woman asks Karl to tell her about himself: {cue:D1}. Nothing is asked to be installed, signed in to or paid.',
               F1: 'Someone Karl knows only through messages asks about his home and when it is empty: {cue:F1}. No paper or number is asked for.',
               F2: 'Karl began nothing with her. A stranger wrote to him first: {cue:F2}. That the app is local does not make her someone he knows.' },
-    not: { outcome: 'realdetails', why: 'Her questions sound like small talk between neighbours. But he has never met her, and nothing he began needs the answers.' },
-    wouldChange: 'If Karl had met her at a street meeting and had her number from a neighbour, he would know her in another way, and these questions would not apply.' },
+    not: { outcome: 'realdetails', why: 'Her questions sound like small talk between neighbors. But he has never met her, and nothing he began needs the answers.' },
+    wouldChange: 'If Karl had met her at a street meeting and had her number from a neighbor, he would know her in another way, and these questions would not apply.' },
 
   { id: 'u5-x-backpain', use: 'return', tier: 'varied', setting: 'health', topic: 'a stranger in an online group for back pain',
-    text: "Roz has joined an online group for people with back pain. A member she has never met sends her a private message: 'I have the same problem. Do you work? Do you live alone?' Over the next fortnight he asks about her job, her home and how much help she has. He has not asked her for anything.",
+    text: "Roz has joined an online group for people with back pain. A member she has never met sends her a private message: 'I have the same problem. Do you work? Do you live alone?' Over the next two weeks he asks about her job, her home and how much help she has. He has not asked her for anything.",
     outcome: 'friendlychat', route: { D1: ['details'], F1: ['life'], F2: ['notfit'] },
     cues: { D1: 'he asks about her job, her home and how much help she has', F1: ['A member she has never met sends her a private message', 'he asks about her job, her home and how much help she has'], F2: 'A member she has never met sends her a private message' },
     reason: { D1: 'The member asks Roz to tell him about herself: {cue:D1}.',

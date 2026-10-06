@@ -30,7 +30,7 @@ FC.cards('civics', 'u10', [
     case: 'c10-wave',
     plain: [
       'Noor’s three questions are all about dates, and the dates are the facts of this group. The years from 1877 to 1914 were the years of factories and big cities. Railways crossed the continent, steel mills and factories grew, and cities swelled. Millions of immigrants, mostly from Europe, came to work in them.',
-      'Three landmarks of those years can each be hung on a year. The Chinese Exclusion Act, passed by Congress in 1882, was the first major law to bar a group of people from coming in because of where they came from. The Statue of Liberty, a large copper statue and a gift from France, was dedicated in New York Harbor in 1886 and became a symbol of welcome. Ellis Island, in the same harbour, opened in 1892 as the federal immigration station, and about twelve million people passed through it before it closed in 1954.',
+      'Three landmarks of those years can each be hung on a year. The Chinese Exclusion Act, passed by Congress in 1882, was the first major law to bar a group of people from coming in because of where they came from. The Statue of Liberty, a large copper statue and a gift from France, was dedicated in New York Harbor in 1886 and became a symbol of welcome. Ellis Island, in the same harbor, opened in 1892 as the federal immigration station, and about twelve million people passed through it before it closed in 1954.',
       'So Noor’s great-grandfather, examined at Ellis Island in 1905, came when it had been open for thirteen years and had many years still to run. Notice also that the first three dates are 1882, 1886 and 1892. They are almost all that this course holds from the years 1877 to 1900. The unit skips those years and does not fill them.',
       'The four facts below are four years: when the Act was passed, when the statue was dedicated, when Ellis Island opened and when it closed.'
     ] },
@@ -45,7 +45,7 @@ FC.cards('civics', 'u10', [
       { id: 'wv-statue', q: 'In what year was the Statue of Liberty dedicated in New York Harbor?', a: '1886',
         relates: 'The statue was a gift from France, and it became a symbol of welcome in the years when millions arrived. Its year is four years after the Act and six years before Ellis Island opened.' },
       { id: 'wv-ellis', q: 'In what year did Ellis Island open as the federal immigration station?', a: '1892',
-        relates: 'It is in the same harbour as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.' },
+        relates: 'It is in the same harbor as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.' },
       { id: 'wv-closed', q: 'In what year did Ellis Island close?', a: '1954',
         relates: 'It was open from 1892 to 1954, and about twelve million people passed through it. A person examined there in 1905, like Noor’s great-grandfather, came in its first years and not near its end.' }
     ] },
@@ -56,15 +56,15 @@ FC.cards('civics', 'u10', [
   { id: 'chk-wv-closed', kind: 'check', after: 'facts-wave', ask: { type: 'fact', row: 'wv-closed' } },
 
   { id: 'look-wave', kind: 'lookalike', ledger: 'wv-statue~wv-ellis',
-    h: 'Two landmarks in one harbour',
-    link: 'Two of the four dates are for landmarks that stand in the same harbour and that are only six years apart. They get swapped, so they go side by side.',
+    h: 'Two landmarks in one harbor',
+    link: 'Two of the four dates are for landmarks that stand in the same harbor and that are only six years apart. They get swapped, so they go side by side.',
     facts: ['wv-statue', 'wv-ellis'],
     instruction: 'Compare what each date is for: a gift, or a station where arrivals were examined.',
     prompt: { kind: 'which', answer: 'wv-ellis' },
     difference: [
-      'Fact A is the year of the Statue of Liberty: {f:wv-statue}. It was a gift from France, and it stands in the harbour as a symbol of welcome.',
+      'Fact A is the year of the Statue of Liberty: {f:wv-statue}. It was a gift from France, and it stands in the harbor as a symbol of welcome.',
       'Fact B is the year of Ellis Island: {f:wv-ellis}. It was the federal station where arrivals were examined, and it was in use for 62 years.',
-      'The statue came first, and the station six years later. If a person was examined by a doctor and an inspector in the harbour, the place is Ellis Island and the opening year is {f:wv-ellis}. If the story is of a copper statue that was given, the year is {f:wv-statue}.'
+      'The statue came first, and the station six years later. If a person was examined by a doctor and an inspector in the harbor, the place is Ellis Island and the opening year is {f:wv-ellis}. If the story is of a copper statue that was given, the year is {f:wv-statue}.'
     ] },
 
   /* ---------- group two: who decides who may come in ---------- */

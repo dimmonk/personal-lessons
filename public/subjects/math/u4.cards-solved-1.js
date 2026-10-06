@@ -175,16 +175,16 @@ FC.cards('math', 'u4', [
       },
       {
         does: 'Multiply the start by it once for each time the amount changes',
-        working: 'Year 1: €30,000 × 0.85 = €25,500; Year 2: €25,500 × 0.85 = €21,675; Year 3: €21,675 × 0.85 = €18,423.75',
+        working: 'Year 1: $30,000 × 0.85 = $25,500; Year 2: $25,500 × 0.85 = $21,675; Year 3: $21,675 × 0.85 = $18,423.75',
         why: 'This step is the same as for an amount that goes up, for the same reason: each year’s result is multiplied again, and the start is not. The only difference is that the {t:multiplier} is below 1, so each result is smaller than the one before.'
       },
       {
         does: 'Round at the end, and say what it shows',
-        working: '€18,423.75 rounds to €18,424, which is the answer after 3 years',
-        why: 'A price is rounded only now, at the end, to a sensible size. The exact working gave €18,423.75, which rounds to €18,424.'
+        working: '$18,423.75 rounds to $18,424, which is the answer after 3 years',
+        why: 'A price is rounded only now, at the end, to a sensible size. The exact working gave $18,423.75, which rounds to $18,424.'
       }
     ],
-    result: 'After 3 years the van is worth about €18,424. It lost €4,500 in the first year but only about €3,251 in the third, because each year’s loss is 15% of a smaller value. Taking €4,500 off three times, as if the loss stayed the same size, would have left €16,500, which is €1,924 too low.',
+    result: 'After 3 years the van is worth about $18,424. It lost $4,500 in the first year but only about $3,251 in the third, because each year’s loss is 15% of a smaller value. Taking $4,500 off three times, as if the loss stayed the same size, would have left $16,500, which is $1,924 too low.',
     hold: {
       step: 0,
       prompt: {
@@ -197,7 +197,7 @@ FC.cards('math', 'u4', [
           },
           {
             id: 'y',
-            text: '15% of €30,000 is €4,500.',
+            text: '15% of $30,000 is $4,500.',
             note: 'That is true, and it is what the van loses in the first year, but it does not say what the value is multiplied by.'
           },
           {
@@ -208,8 +208,8 @@ FC.cards('math', 'u4', [
         ]
       },
       reason: [
-        'The value after a year is what is left after the fall: the whole of the value, 100%, less the 15% that fell, is 85%. 85% of a value is 0.85 times the value. In the first year, €30,000 × 0.85 = €25,500, which is €4,500 less, and €4,500 is 15% of €30,000.',
-        'The next year the fall is 15% of €25,500, which is €3,825, so it is less than €4,500. The falls get smaller because each is a share of a smaller value. Multiplying by a number below 1 is how a share of the amount is taken away, and it works in the same way for every year.'
+        'The value after a year is what is left after the fall: the whole of the value, 100%, less the 15% that fell, is 85%. 85% of a value is 0.85 times the value. In the first year, $30,000 × 0.85 = $25,500, which is $4,500 less, and $4,500 is 15% of $30,000.',
+        'The next year the fall is 15% of $25,500, which is $3,825, so it is less than $4,500. The falls get smaller because each is a share of a smaller value. Multiplying by a number below 1 is how a share of the amount is taken away, and it works in the same way for every year.'
       ]
     }
   }

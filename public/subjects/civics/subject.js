@@ -4,7 +4,7 @@
 // (Ids are the course order, u1 to u10.)
 FC.subject('civics', {
   name: 'US Civics & History',
-  rev: 2,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
+  rev: 3,                 // subject revision; goes up whenever this record, the key or the specimens change (lesson standard R2)
   standard: 1,            // lesson-standard version the subject's key was written to
   action: false,          // the learner sorts and holds; nothing here is acted on against a fraud or a fault (P26 lists the action subjects)
   blurb: 'For any piece of news about the government, work out who made the decision it ends on, what they did, and whether they had the power to do it. Alongside that, hold the facts a newcomer is asked at the citizenship interview: the founding documents, the offices, rights and duties, and the history.',
@@ -28,7 +28,7 @@ FC.subject('civics', {
     { h: 'The questions sort government decisions only',
       text: 'A rule made by an employer, a landlord, a shop or a website is not a decision of any government, and the questions have no answer for it.' },
     { h: 'State law varies a great deal',
-      text: 'This course covers the federal structure and the questions that sort federal, state and local power. Marriage, licences, schooling, criminal law, renting a home and professional qualifications all differ from state to state, and moving changes them.' },
+      text: 'This course covers the federal structure and the questions that sort federal, state and local power. Marriage, licenses, schooling, criminal law, renting a home and professional qualifications all differ from state to state, and moving changes them.' },
     { h: 'The history is not complete',
       text: 'The history here is the people, dates and events the citizenship test asks about, not the whole story. The test asks little about the years between the end of Reconstruction in 1877 and 1900, and the course holds only a few facts from them.' },
     { h: 'The official answers are short on purpose',
@@ -39,6 +39,7 @@ FC.subject('civics', {
   // What changed at each revision (lesson standard R1). One entry for every revision from 1 to rev.
   history: [
     { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the whole key rewritten in plain words. The first question now asks who makes the last decision in a case, with four answers; Congress, the President and the courts each have one question, and a state, city or county has two; veto and pardon are separate names. All ten units are rebuilt and the old course is deleted. Specimens added: twenty whole-key cases, one or more for every name in the key.' },
-    { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+    { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+    { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' }
   ]
 });

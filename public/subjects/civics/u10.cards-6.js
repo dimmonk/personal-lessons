@@ -11,8 +11,8 @@ FC.cards('civics', 'u10', [
     case: 'c10-names',
     plain: [
       'Sofia’s four questions are four names, and a name is a fact that you either hold or do not. The capital of the United States is Washington, D.C. It became the capital in 1800. The national anthem is The Star-Spangled Banner, which was written during the War of 1812. The two major political parties are the Democratic Party and the Republican Party. And the Statue of Liberty, which stands in New York Harbor, was a gift from France.',
-      'There is nothing to work out in these: each one is a name. What helps is attaching each to the place where you meet it. The capital is in the news, the anthem is sung before a game or on a holiday, the parties are at every election, and the statue is in the harbour where the arrivals landed. The word “major” matters in the parties: it says that these are the two big ones, and it does not say that there are no others.',
-      'The five facts below are the five names: the capital, the anthem, the two parties, the country that gave the statue, and the harbour that it stands in.'
+      'There is nothing to work out in these: each one is a name. What helps is attaching each to the place where you meet it. The capital is in the news, the anthem is sung before a game or on a holiday, the parties are at every election, and the statue is in the harbor where the arrivals landed. The word “major” matters in the parties: it says that these are the two big ones, and it does not say that there are no others.',
+      'The five facts below are the five names: the capital, the anthem, the two parties, the country that gave the statue, and the harbor that it stands in.'
     ] },
 
   { id: 'facts-names', kind: 'facts',
@@ -28,8 +28,8 @@ FC.cards('civics', 'u10', [
         relates: 'You meet them at every election. The word “major” says that they are the two big ones, and not that there are no others.' },
       { id: 'nm-france', q: 'Which country gave the Statue of Liberty to the United States?', a: 'France',
         relates: 'It was a gift from France, and it was dedicated in 1886. It is a large copper statue, and it became a symbol of welcome.' },
-      { id: 'nm-harbor', q: 'In which harbour does the Statue of Liberty stand?', a: 'New York Harbor',
-        relates: 'It stands in the same harbour as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.' }
+      { id: 'nm-harbor', q: 'In which harbor does the Statue of Liberty stand?', a: 'New York Harbor',
+        relates: 'It stands in the same harbor as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.' }
     ] },
 
   { id: 'chk-nm-capital', kind: 'check', after: 'facts-names', ask: { type: 'fact', row: 'nm-capital' } },

@@ -9,7 +9,7 @@
 
 FC.unit('math', 'u1', {
   kind: 'C',
-  rev: 2,
+  rev: 3,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'One',
@@ -96,7 +96,7 @@ FC.unit('math', 'u1', {
     returns: ['gt-ret-albums', 'gt-ret-pencils', 'gt-ret-nurses',
               'gt-ret-data', 'gt-ret-printer', 'gt-ret-wheels',
               'gt-ret-well', 'gt-ret-algae', 'gt-ret-buspass',
-              'gt-ret-canteen', 'gt-ret-medals', 'gt-ret-alarms',
+              'gt-ret-cafeteria', 'gt-ret-medals', 'gt-ret-alarms',
               'gt-ret-ship', 'gt-ret-zipwire', 'gt-ret-statue']
   },
 
@@ -104,7 +104,8 @@ FC.unit('math', 'u1', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Basic Math, replacing the old Unit One (nine cards and the sorting drill). Not yet deployed, so later edits before the first deploy stay revision 1. The five kinds are taught one at a time; the three tie-breaks of the first question are taught as exceptions; nothing is solved.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

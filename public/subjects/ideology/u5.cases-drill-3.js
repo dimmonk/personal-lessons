@@ -1,7 +1,7 @@
 // Political Ideologies, Unit Five: drill cases for the fourth stage (the whole route, no help), varied and misleading.
 // Every question is asked here, starting with the first question of the key, so every case carries marked words and a reason
 // for that question too (D1). echo names a teaching case whose story this one resembles while its name differs: the feedback
-// says so, which is how the "does it look like a case you know?" second look is practised. also lists an answer the case shows
+// says so, which is how the "does it look like a case you know?" second look is practiced. also lists an answer the case shows
 // as well as its own, which loses to its own by the key's tie-break. All texts are invented.
 
 FC.cases('ideology', 'u5', [
@@ -26,7 +26,7 @@ FC.cases('ideology', 'u5', [
     not: { outcome: 'clib', why: 'The text begins with the freedom to start a business and the government protecting it, as {o:clib} does. It then asks the government to pay for retraining and a payment, which {o:clib} would not.' } },
 
   { id: 'i5-r-idegal2', use: 'drill', tier: 'varied', setting: 'borders', topic: 'a border post with one form and one office',
-    text: "From a statement by the Marrowmouth river villages: 'The border post asks every traveller for the same stamped form, from one office, open on weekdays. The rule treats everyone alike, and it leaves the people of the river villages, who have no office within a day's walk, unable to cross for work or for a funeral. We ask the post to change its form and its hours until river villagers cross as often as anyone. We do not ask for anyone to be placed above anyone.'",
+    text: "From a statement by the Marrowmouth river villages: 'The border post asks every traveler for the same stamped form, from one office, open on weekdays. The rule treats everyone alike, and it leaves the people of the river villages, who have no office within a day's walk, unable to cross for work or for a funeral. We ask the post to change its form and its hours until river villagers cross as often as anyone. We do not ask for anyone to be placed above anyone.'",
     outcome: 'idegal', route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'We do not ask for anyone to be placed above anyone',
             R1: ['The rule treats everyone alike, and it leaves the people of the river villages', 'We ask the post to change its form and its hours until river villagers cross as often as anyone'] },
@@ -56,13 +56,13 @@ FC.cases('ideology', 'u5', [
     not: { outcome: 'idegal', why: 'The hill-villages letter also told of a test that is the same for everyone. That letter said the test leaves a group behind and asked for it to change. This text says the test is not what is wrong, names no group, and asks the government to pay for help.' } },
 
   // Begins with a fair start for everyone, as the clinic speech does, and then says a rule leaves a group behind: the second answer wins.
-  { id: 'i5-r-idegal3', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a training scheme with a driving-licence entry rule', echo: 'i5-modlib-again',
+  { id: 'i5-r-idegal3', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a training program with a driver’s-license entry rule', echo: 'i5-modlib-again',
     also: ['start'],
-    text: "From a statement by the Calloway Women's Network: 'Everyone is owed a fair start, and the training scheme is a good one: free places, paid for by all of us, for anyone out of work. But the scheme asks for a driving licence at the first interview, and in this district most licences are held by men. A rule that treats every applicant alike has left women out of the scheme. Change the entry rule until women join as often as men. Nobody is to be placed above anybody.'",
+    text: "From a statement by the Calloway Women's Network: 'Everyone is owed a fair start, and the training program is a good one: free places, paid for by all of us, for anyone out of work. But the program asks for a driving license at the first interview, and in this district most licenses are held by men. A rule that treats every applicant alike has left women out of the program. Change the entry rule until women join as often as men. Nobody is to be placed above anybody.'",
     outcome: 'idegal', route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'Nobody is to be placed above anybody',
-            R1: ['A rule that treats every applicant alike has left women out of the scheme', 'Change the entry rule until women join as often as men'] },
+            R1: ['A rule that treats every applicant alike has left women out of the program', 'Change the entry rule until women join as often as men'] },
     reason: { D1: 'The text wants fair treatment for women and wants no one placed above another: {cue:D1}.',
-              R1: 'The text praises a paid scheme, and then says a rule that treats every applicant alike has left women out of it: {cue:R1}. When a text shows both a fair start for everyone and a rule that leaves a group behind, the answer is {a:R1.rules}.' },
-    not: { outcome: 'modlib', why: 'The text does praise a scheme that is paid for by all, which is what {o:modlib} asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the answer is {o:idegal}.' } }
+              R1: 'The text praises a paid program, and then says a rule that treats every applicant alike has left women out of it: {cue:R1}. When a text shows both a fair start for everyone and a rule that leaves a group behind, the answer is {a:R1.rules}.' },
+    not: { outcome: 'modlib', why: 'The text does praise a program that is paid for by all, which is what {o:modlib} asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the answer is {o:idegal}.' } }
 ]);

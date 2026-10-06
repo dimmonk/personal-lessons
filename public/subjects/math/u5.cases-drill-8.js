@@ -12,7 +12,7 @@ FC.cases('math', 'u5', [
     topic: 'a sniffer dog at a border',
     kind: 'problem',
     outcome: 'baserate',
-    text: '1 bag in 250 at a border post holds banned food. A sniffer dog sits beside 85% of the bags that hold it, and also beside 5% of the bags that do not. The dog sits beside a bag. How likely is it that the bag holds banned food?',
+    text: '1 bag in 250 at a border checkpoint holds banned food. A sniffer dog sits beside 85% of the bags that hold it, and also beside 5% of the bags that do not. The dog sits beside a bag. How likely is it that the bag holds banned food?',
     route: { M1: ['chance'], C1: ['test'] },
     cues: {
       M1: ['How likely is it that the bag holds banned food?'],

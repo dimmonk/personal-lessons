@@ -115,7 +115,7 @@ FC.key('ideology', {
     { id: 'clib', group: 'rights', unit: 'u5',
       n: 'Classical liberalism',
       plain: 'each person’s freedom, and a small government',
-      needs: 'each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more',
+      needs: 'each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more',
       aka: ['libertarianism', 'market liberalism'] },
     { id: 'modlib', group: 'rights', unit: 'u5',
       n: 'Modern liberalism',
@@ -331,7 +331,7 @@ FC.key('ideology', {
         why: 'All three put first what people are owed, and disagree about what that is: freedom from a government that does too much, a fair start that the government pays for, or fair results for groups that rules leave behind. That disagreement is what each name means.',
         options: [
           { id: 'leave', n: 'Protect their rights, and otherwise leave them alone',
-            when: 'the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defence, or asks nothing more of it',
+            when: 'the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defense, or asks nothing more of it',
             keeps: ['clib'] },
           { id: 'start', n: 'Protect their rights, and give everyone a fair start',
             when: 'the text wants each person’s rights protected and also wants the government to give everyone a fair start, such as schooling, health care, help when out of work, or fair rules for business',

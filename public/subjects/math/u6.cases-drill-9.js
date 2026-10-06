@@ -74,11 +74,11 @@ FC.cases('math', 'u6', [
     topic: 'a fish tank',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A fish tank 50 cm wide holds 30 litres. A second fish tank of exactly the same shape is 100 cm wide. How much water does the second tank hold?',
+    text: 'A fish tank 50 cm wide holds 30 liters. A second fish tank of exactly the same shape is 100 cm wide. How much water does the second tank hold?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: {
       M1: 'How much water does the second tank hold?',
-      S1: 'A fish tank 50 cm wide holds 30 litres. A second fish tank of exactly the same shape is 100 cm wide',
+      S1: 'A fish tank 50 cm wide holds 30 liters. A second fish tank of exactly the same shape is 100 cm wide',
       S2: 'How much water does the second tank hold?'
     },
     reason: {
@@ -105,20 +105,20 @@ FC.cases('math', 'u6', [
       },
       {
         does: 'Multiply the smaller one’s amount by that number of times',
-        working: '30 litres × 8 = 240 litres'
+        working: '30 liters × 8 = 240 liters'
       }
     ],
     answer: {
       choices: [
-        { id: 'r', text: '240 litres' },
+        { id: 'r', text: '240 liters' },
         {
           id: 's1',
-          text: '60 litres',
+          text: '60 liters',
           slip: 'you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.'
         },
         {
           id: 's2',
-          text: '120 litres',
+          text: '120 liters',
           slip: 'you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.'
         }
       ],
@@ -192,15 +192,15 @@ FC.cases('math', 'u6', [
     use: 'drill',
     tier: 'varied',
     setting: 'health',
-    topic: 'a sticking plaster',
+    topic: 'an adhesive bandage',
     kind: 'problem',
     outcome: 'sqcube',
-    text: 'A small sticking plaster 3 cm wide uses 2 g of glue. A large plaster of exactly the same shape is 9 cm wide. How much glue does the large plaster use?',
+    text: 'A small adhesive bandage 3 cm wide uses 2 g of glue. A large bandage of exactly the same shape is 9 cm wide. How much glue does the large bandage use?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['room'] },
     cues: {
-      M1: 'How much glue does the large plaster use?',
-      S1: 'A small sticking plaster 3 cm wide uses 2 g of glue. A large plaster of exactly the same shape is 9 cm wide',
-      S2: 'How much glue does the large plaster use?'
+      M1: 'How much glue does the large bandage use?',
+      S1: 'A small adhesive bandage 3 cm wide uses 2 g of glue. A large bandage of exactly the same shape is 9 cm wide',
+      S2: 'How much glue does the large bandage use?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',

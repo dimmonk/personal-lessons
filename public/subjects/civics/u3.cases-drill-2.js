@@ -1,7 +1,7 @@
 // Civics, Unit Three: drill cases for stage four (the whole route, no help). Two or more for each name.
 // Every question is asked here, starting with the key's first question, so every case carries marked words and a
 // reason for that question too (D1). echo names a teaching case whose story this one resembles while its name differs:
-// the feedback says so, which is how the "does it look like a case you know?" second look is practised.
+// the feedback says so, which is how the "does it look like a case you know?" second look is practiced.
 // also lists answers the case shows as well as its own, which lose to its own by the key's tie-break (yieldsTo).
 // All bills, people and places are invented.
 
@@ -17,13 +17,13 @@ FC.cases('civics', 'u3', [
     not: { outcome: 'beyondcong', why: 'A law about who may become a citizen can sound like a matter for the states. But the rules for becoming a citizen are on the Constitution’s list for Congress.' },
     wouldChange: 'If the case ended with the immigration service writing the forms that carry out this law, the answer to the first question would be {a:D1.president}.' },
 
-  { id: 'r-paint', use: 'drill', tier: 'clean', setting: 'home', topic: 'the colour of every house',
-    text: "Neighbours complain about houses painted in loud colours. The House and the Senate passed a bill that says every house in the country must be painted white, grey or beige on the outside.",
+  { id: 'r-paint', use: 'drill', tier: 'clean', setting: 'home', topic: 'the color of every house',
+    text: "Neighbors complain about houses painted in loud colors. The House and the Senate passed a bill that says every house in the country must be painted white, gray or beige on the outside.",
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
-    cues: { D1: 'The House and the Senate passed a bill', C1: 'says every house in the country must be painted white, grey or beige on the outside' },
+    cues: { D1: 'The House and the Senate passed a bill', C1: 'says every house in the country must be painted white, gray or beige on the outside' },
     reason: { D1: 'The case ends on a vote by both chambers: {cue:D1}.',
-              C1: 'The law is about the colour of homes: it {cue:C1}. That is not one of the matters the Constitution lists for Congress, so it is for the states, and the towns they give power to, to decide.' },
-    not: { outcome: 'enumerated', why: 'Both chambers voting is true of every law. The colour of a home is not on the Constitution’s list.' },
+              C1: 'The law is about the color of homes: it {cue:C1}. That is not one of the matters the Constitution lists for Congress, so it is for the states, and the towns they give power to, to decide.' },
+    not: { outcome: 'enumerated', why: 'Both chambers voting is true of every law. The color of a home is not on the Constitution’s list.' },
     wouldChange: 'If a town council had passed the same rule for its own streets, the answer to the first question would be {a:D1.states}.' },
 
   { id: 'r-ferries', use: 'drill', tier: 'clean', setting: 'travel', topic: 'funds for island ferries',
@@ -121,8 +121,8 @@ FC.cases('civics', 'u3', [
     not: { outcome: 'impeach', why: 'A Senate vote about a person can look like a charge. Nobody is accused of anything, and he does not yet hold the job.' },
     wouldChange: 'If the case stopped after the President’s order to book the flight, with nothing about the Senate, the answer to the first question would be {a:D1.president}.' },
 
-  { id: 'r-acquit', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a harbour head who was not removed', echo: 'c-parks',
-    text: "A federal official who runs a harbour office is accused of taking gifts. The House voted by more than half to charge her. At the end of the Senate trial, 52 of the 100 senators voted to convict, so she was not removed. Her lawyer says she has been cleared.",
+  { id: 'r-acquit', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a harbor head who was not removed', echo: 'c-parks',
+    text: "A federal official who runs a harbor office is accused of taking gifts. The House voted by more than half to charge her. At the end of the Senate trial, 52 of the 100 senators voted to convict, so she was not removed. Her lawyer says she has been cleared.",
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { D1: 'At the end of the Senate trial, 52 of the 100 senators voted to convict', C1: 'The House voted by more than half to charge her' },
     reason: { D1: 'The last decision is a vote by senators: {cue:D1}.',

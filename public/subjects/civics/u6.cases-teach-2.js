@@ -19,9 +19,9 @@ FC.cases('civics', 'u6', [
 
   /* ---------- Reserved powers beside Preemption: a three-day wait before a wedding, a three-year wait before citizenship ---------- */
   { id: 'u6-wait-marry', use: 'teach', tier: 'clean', setting: 'home', topic: 'a wait before a wedding', name: 'A wait before a wedding',
-    text: "Couples in the state of Halvard had been marrying on the day they got their licence. The Halvard legislature passed a law that a couple must wait three days after getting a marriage licence before they may marry.",
+    text: "Couples in the state of Halvard had been marrying on the day they got their license. The Halvard legislature passed a law that a couple must wait three days after getting a marriage license before they may marry.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { S1: 'The Halvard legislature passed a law', S2: 'a couple must wait three days after getting a marriage licence before they may marry' } },
+    cues: { S1: 'The Halvard legislature passed a law', S2: 'a couple must wait three days after getting a marriage license before they may marry' } },
 
   { id: 'u6-wait-citizen', use: 'teach', tier: 'clean', setting: 'immigration', topic: 'a wait before citizenship', name: 'A wait before citizenship',
     text: "Congress has already written the rules for becoming a citizen, and they are meant to be the only rules in every state. The Halvard legislature passed a law that a person must also have lived in Halvard for three years before they may become a citizen.",
@@ -40,10 +40,10 @@ FC.cases('civics', 'u6', [
     cues: { S1: 'The Tarn legislature passed a law', S2: 'A federal law says that every boat must carry at least one life jacket for each person on board, and that a state may require more' } },
 
   /* ---------- Reserved powers beside A right that binds the states: a sidewalk stall, a sidewalk newspaper ---------- */
-  { id: 'u6-stall-licence', use: 'teach', tier: 'clean', setting: 'money', topic: 'selling food on a sidewalk', name: 'The food stall licence',
-    text: "Food stalls kept appearing on busy sidewalks in the state of Pelham. The Pelham legislature passed a law that anyone who sells food from a stall on a public sidewalk must have a licence from the state.",
+  { id: 'u6-stall-license', use: 'teach', tier: 'clean', setting: 'money', topic: 'selling food on a sidewalk', name: 'The food stall license',
+    text: "Food stalls kept appearing on busy sidewalks in the state of Pelham. The Pelham legislature passed a law that anyone who sells food from a stall on a public sidewalk must have a license from the state.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { S1: 'The Pelham legislature passed a law', S2: 'anyone who sells food from a stall on a public sidewalk must have a licence from the state' } },
+    cues: { S1: 'The Pelham legislature passed a law', S2: 'anyone who sells food from a stall on a public sidewalk must have a license from the state' } },
 
   { id: 'u6-stall-paper', use: 'teach', tier: 'clean', setting: 'community', topic: 'handing out a newspaper', name: 'The newspaper approval',
     text: "A weekly newspaper in the state of Pelham is handed out free on public sidewalks. The Pelham legislature passed a law that nobody may hand out a newspaper on a public sidewalk unless the governor’s office has first approved what the newspaper says.",
@@ -86,10 +86,10 @@ FC.cases('civics', 'u6', [
     outcome: 'trialrights', route: { D1: ['courts'], J1: ['accused'] },
     cues: { D1: 'his lawyer asks the judge to keep out of the trial what he said during that questioning', J1: 'his lawyer asks the judge to keep out of the trial what he said during that questioning' } },
 
-  { id: 'u6-council-criticism', use: 'teach', tier: 'clean', setting: 'community', topic: 'a fine for criticising the police', name: 'The fine for criticising the police',
-    text: "A man in the city of Hale spoke at a public meeting and criticised the police. The Hale city council then passed a rule fining anyone who criticises the police at a public meeting.",
+  { id: 'u6-council-speech-fine', use: 'teach', tier: 'clean', setting: 'community', topic: 'a fine for criticizing the police', name: 'The fine for criticizing the police',
+    text: "A man in the city of Hale spoke at a public meeting and criticized the police. The Hale city council then passed a rule fining anyone who criticizes the police at a public meeting.",
     outcome: 'protected', route: { D1: ['states'], S1: ['local'], S2: ['right'] },
-    cues: { S1: 'The Hale city council then passed a rule', S2: 'fining anyone who criticises the police at a public meeting' } },
+    cues: { S1: 'The Hale city council then passed a rule', S2: 'fining anyone who criticizes the police at a public meeting' } },
 
   /* ---------- Reserved powers beside Beyond Congress's power: the same barbers' hours, set by a state and by Congress ---------- */
   { id: 'u6-barber-state', use: 'teach', tier: 'clean', setting: 'work', topic: 'barbers’ hours in Lorne', name: 'The barbers’ hours in a state',

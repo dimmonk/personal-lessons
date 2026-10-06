@@ -9,11 +9,11 @@
 FC.cases('stats', 'u2', [
 
   /* ---------- Cases that carry a term (no name is asked of them) ---------- */
-  { id: 'h-t-council', use: 'teach', tier: 'clean', setting: 'community', topic: 'a council asks some of a town', name: 'The council and its 800',
-    text: "A town council wants to know how many of the town's 40,000 residents walk to work. It cannot ask all 40,000, so it asks 800 of them. Of the 800, 248 say they walk to work, which is 31 in 100. The council announces: 'About 31% of residents walk to work.'" },
+  { id: 'h-t-council', use: 'teach', tier: 'clean', setting: 'community', topic: 'a town council asks some of a town', name: 'The town council and its 800',
+    text: "A town council wants to know how many of the town's 40,000 residents walk to work. It cannot ask all 40,000, so it asks 800 of them. Of the 800, 248 say they walk to work, which is 31 in 100. The town council announces: 'About 31% of residents walk to work.'" },
 
-  { id: 'h-t-lottery', use: 'teach', tier: 'clean', setting: 'community', topic: 'a computer draws addresses', name: 'The council’s lottery',
-    text: "The council has a list of all 40,000 addresses in town. To choose the 800, a clerk asks a computer to draw 800 of the 40,000 numbers, like pulling tickets from a drum. Every address has the same chance of being drawn: 800 out of 40,000, which is 1 in 50. Nobody on the staff chooses which houses." },
+  { id: 'h-t-lottery', use: 'teach', tier: 'clean', setting: 'community', topic: 'a computer draws addresses', name: 'The town council’s lottery',
+    text: "The town council has a list of all 40,000 addresses in town. To choose the 800, a clerk asks a computer to draw 800 of the 40,000 numbers, like pulling tickets from a drum. Every address has the same chance of being drawn: 800 out of 40,000, which is 1 in 50. Nobody on the staff chooses which houses." },
 
   { id: 'h-t-poll', use: 'teach', tier: 'clean', setting: 'community', topic: 'two polls of the same city', name: 'The two polling firms',
     text: "A newspaper hires two polling firms. Each draws 1,000 adults by lottery from a list of every adult in the city, which has about 3 million, and each hears from nearly all 1,000. The first firm finds that 520 of its 1,000 approve of the mayor, which is 52 in 100. The second firm finds that 490 of its 1,000 do, which is 49 in 100." },
@@ -70,7 +70,7 @@ FC.cases('stats', 'u2', [
     ] },
 
   { id: 'h-pupils', use: 'check', tier: 'clean', setting: 'learning', topic: 'daily attendance at school',
-    text: "A school records attendance every morning on the same register form for every class, and has done so since 2018. Nobody's pay, ranking or grant depends on the figure. In September, 94 in every 100 pupils were present on an average day. In November it was 91 in every 100. The school says: 'Average daily attendance fell from 94% in September to 91% in November.'",
+    text: "A school records attendance every morning on the same register form for every class, and has done so since 2018. Nobody's pay, ranking or grant depends on the figure. In September, 94 in every 100 students were present on an average day. In November it was 91 in every 100. The school says: 'Average daily attendance fell from 94% in September to 91% in November.'",
     outcome: 'meas_ok', route: { S1: ['holds'], H1: ['change'] },
     cues: { S1: ['records attendance every morning on the same register form for every class', 'Nobody\'s pay, ranking or grant depends on the figure'], H1: 'Average daily attendance fell from 94% in September to 91% in November' },
     reason: { H1: 'The claim is {cue:H1}. It follows one figure, attendance, through two times and says that it fell. It sets it beside nothing else. The answer for one figure at one time would be wrong, because the claim gives two times.' } },

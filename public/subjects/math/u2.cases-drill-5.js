@@ -61,9 +61,9 @@ FC.cases('math', 'u2', [
     topic: 'a necklace of beads',
     kind: 'problem',
     outcome: 'modrem',
-    text: 'A necklace repeats red, green and blue beads in that order, again and again. What colour is the 50th bead?',
+    text: 'A necklace repeats red, green and blue beads in that order, again and again. What color is the 50th bead?',
     route: { M1: ['whole'], W1: ['cycle'] },
-    cues: { M1: ['What colour is the 50th bead?'], W1: ['What colour is the 50th bead?'] },
+    cues: { M1: ['What color is the 50th bead?'], W1: ['What color is the 50th bead?'] },
     reason: {
       M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
       W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
@@ -152,7 +152,7 @@ FC.cases('math', 'u2', [
     topic: 'tickets in blocks',
     kind: 'problem',
     outcome: 'prime',
-    text: 'A theatre has 221 tickets and wants to sell them in blocks of the same size, with more than one block and more than one ticket in each block. Is that possible?',
+    text: 'A theater has 221 tickets and wants to sell them in blocks of the same size, with more than one block and more than one ticket in each block. Is that possible?',
     route: { M1: ['whole'], W1: ['split'] },
     cues: {
       M1: ['sell them in blocks of the same size, with more than one block and more than one ticket in each block'],

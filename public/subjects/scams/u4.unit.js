@@ -6,7 +6,7 @@
 
 FC.unit('scams', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 2,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 3,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Four',
@@ -30,7 +30,7 @@ FC.unit('scams', 'u4', {
     { id: 'invoicefraud~realpayment', pair: ['invoicefraud', 'realpayment'], step: 'M2',
       shared: 'Both are a bill that you really pay, with the same logo, the same email thread and the same amount.',
       rule: 'In {o:realpayment} the account to pay into is the one that you have always paid, or were given when you started. In {o:invoicefraud} a message tells you that the details have changed, and gives new ones.',
-      test: 'Are the bank details the ones I was given at the start, or has a message just told me that they have changed?' },
+      test: 'Are the bank account details the ones I was given at the start, or has a message just told me that they have changed?' },
     { id: 'fakelink~realpayment', pair: ['fakelink', 'realpayment'], step: 'M2',
       shared: 'Both are a small charge on something that you are waiting for or already pay for, from a company that you deal with, and both can lead to a payment page.',
       rule: 'In {o:realpayment} you find the charge yourself, in the company’s own app or on a page that you already use, and pay it there. In {o:fakelink} the charge arrives in a message, and the page to pay on is behind a link in that message.',
@@ -40,12 +40,12 @@ FC.unit('scams', 'u4', {
       rule: 'In {o:realpayment} you are given time and a way to appeal, you can look the amount up yourself, and you are asked to pay in an ordinary way. In {o:fakeofficial} you are told to pay at once, in a way that cannot be undone, and to say nothing.',
       test: 'Am I being hurried and kept quiet, or given time and something that I can look up for myself?' },
     { id: 'overpayment~realpayment', pair: ['overpayment', 'realpayment'], step: 'M2',
-      shared: 'Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an advert or an app.',
+      shared: 'Both are part of a deal that you are in, at a price that was agreed, between two people who found each other through an ad or an app.',
       rule: 'In {o:realpayment} the amount is the one that was agreed, and the money moves in the way the deal began. In {o:overpayment} a payment arrives that is more than the price, and you are asked to send some of it back or on.',
       test: 'Is the amount the one that was agreed, or am I being asked to send some of a payment back or on to someone else?' },
     { id: 'invoicefraud~fakelink', pair: ['invoicefraud', 'fakelink'], step: 'M2', taughtIn: 'q-m2',
       shared: 'Both are about a bill or a charge, can arrive as a message, and both end with you paying to a place that the message gives.',
-      rule: '{o:invoicefraud} is a bill that you really pay, with new bank details to pay into. {o:fakelink} is a charge, usually a small one, with a payment page behind a link.',
+      rule: '{o:invoicefraud} is a bill that you really pay, with new bank account details to pay into. {o:fakelink} is a charge, usually a small one, with a payment page behind a link.',
       test: 'Am I asked to pay into a new account that the message names, or to pay on a page that I reach through a link in the message?' },
     { id: 'fakeofficial~fakelink', pair: ['fakeofficial', 'fakelink'], step: 'M2',
       shared: 'Both can come from someone who says that they are an official, with a fine or a debt, a deadline and a threat.',
@@ -60,7 +60,7 @@ FC.unit('scams', 'u4', {
       rule: 'In {o:pigbutcher} the money is in a trading site or app that someone you know only online showed you, and the fee is to take it out. In {o:advancefee} the money is said to be waiting for you from someone who contacted you, and you never put any in.',
       test: 'Did someone I know only online show me a site or an app where my money is, or is the money said to be waiting for me from someone who contacted me?' },
     { id: 'advancefee~fakeofficial', pair: ['advancefee', 'fakeofficial'], step: 'M1',
-      shared: 'Both can arrive in the name of an official body, such as a tax office, and both ask you to pay.',
+      shared: 'Both can arrive in the name of an official body, such as the IRS, and both ask you to pay.',
       rule: 'In {o:advancefee} the official owes you something, such as a refund, and you must pay a fee first. In {o:fakeofficial} the official says that you owe, and threatens you unless you pay at once.',
       test: 'Does the message say that money is owed to me and that I must pay first, or that I owe money and will be punished unless I pay?' },
     { id: 'advancefee~fakelink', pair: ['advancefee', 'fakelink'], step: 'M1',
@@ -151,7 +151,8 @@ FC.unit('scams', 'u4', {
   build: {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the money branch, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Nine names taught in one unit, in five parts, with the real request met first; thirteen look-alike pairs; the tie-breaks taught as named exceptions; two question cards and three whole cases.' },
-      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' }
+      { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
+      { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' }
     ],
     // What the K2 rewrite changed in this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [
@@ -164,12 +165,12 @@ FC.unit('scams', 'u4', {
       { step: 'M2', was: '"Your profits show only on their own app or site, and you cannot take them out"', now: '"Put it into a trading site or app that they showed you"',
         why: 'The old answer could only be given after money had gone in and a withdrawal had failed (audit R8 8). The new one is true from the first deposit; a fee to withdraw is answered by it.' },
       { step: 'M2', was: 'no answer for a payment on a link', now: '"Pay on a page reached from a link in the message", with its name, Fake payment link',
-        why: 'The most common scam text of all (a parcel fee, a toll, a fine, a lapsed subscription) had no name. Its real twin is the same charge found in the courier’s own app.' },
+        why: 'The most common scam text of all (a package fee, a toll, a fine, a lapsed subscription) had no name. Its real twin is the same charge found in the courier’s own app.' },
       { step: 'M2', was: '"You must pay right now, in a way that cannot be undone"', now: '"Pay at once, in a way that cannot be undone, and tell no one", yielding to five more specific answers',
         why: 'Hurry and secrecy appear in many money scams (audit Unit Two 6), so this answer applies only where nothing more specific shows. The unit teaches the tie-break on named exception cards.' },
       { step: 'M2', was: '"Nothing odd: you started it, nothing changed, and you can check it"', now: '"Pay what you agreed or owe, to details that pass the check"',
         why: 'The real request is described by what it is, in the taught term, and not only by what it is not (audit finding 7).' },
-      { outcome: 'invoicefraud', was: 'Changed bank details (invoice fraud)', now: 'Invoice fraud', why: 'The real-life name; the rest are in the list of other names.' },
+      { outcome: 'invoicefraud', was: 'Changed bank account details (invoice fraud)', now: 'Invoice fraud', why: 'The real-life name; the rest are in the list of other names.' },
       { outcome: 'fakeofficial', was: 'Fake official demanding payment', now: 'Fake official scam', why: 'One noun for the scam names that are not real-life words.' },
       { outcome: 'pigbutcher', was: 'Fake investment friend (pig butchering)', now: 'Pig-butchering scam', why: 'The real-life name that a learner meets in news reports, explained in the sentence that gives the name.' },
       { outcome: 'realpayment', was: 'legit_money', now: 'Real payment request, new id and new needs line', why: 'An id without an underscore, and a line that says what the real request is.' }

@@ -63,11 +63,11 @@ FC.cases('civics', 'u4', [
     not: { outcome: 'veto', why: 'The law has already been passed and is in force, so nobody is deciding whether to sign it. An office is putting it into practice.' } },
 
   /* ---------- Stage two: the question alone, on a new case ---------- */
-  { id: 'e-p-lab', use: 'drill', tier: 'clean', setting: 'work', topic: 'licences for laboratories',
-    text: "A law Congress passed says every laboratory that handles dangerous germs must be licensed. The federal health office published its licence form on Monday and said its inspectors would visit each laboratory within a year.",
+  { id: 'e-p-lab', use: 'drill', tier: 'clean', setting: 'work', topic: 'licenses for laboratories',
+    text: "A law Congress passed says every laboratory that handles dangerous germs must be licensed. The federal health office published its license form on Monday and said its inspectors would visit each laboratory within a year.",
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
-    cues: { E1: 'The federal health office published its licence form on Monday' },
-    reason: { E1: 'The licence is the law’s own idea, and the office is making it work: {cue:E1}. The visits by inspectors are the next step of the same thing.' },
+    cues: { E1: 'The federal health office published its license form on Monday' },
+    reason: { E1: 'The license is the law’s own idea, and the office is making it work: {cue:E1}. The visits by inspectors are the next step of the same thing.' },
     not: { outcome: 'beyondpres', why: 'The office demands nothing that the law does not already require. It only supplies the form.' } },
 
   { id: 'e-p-parking', use: 'drill', tier: 'clean', setting: 'leisure', topic: 'a fee for parking in national parks',
@@ -84,8 +84,8 @@ FC.cases('civics', 'u4', [
     reason: { E1: 'The President tells part of the armed forces where to go and what to do: {cue:E1}. Choosing the admiral who leads them is part of the same thing.' },
     not: { outcome: 'diplomacy', why: 'Nobody from another country is met or negotiated with. The order goes to the navy, and the coast is the country’s own.' } },
 
-  { id: 'e-p-diplomas', use: 'drill', tier: 'clean', setting: 'learning', topic: 'recognising school diplomas',
-    text: "The Secretary of State, speaking for the President, met the education minister of Brasland to agree how each country will recognise the other’s school diplomas.",
+  { id: 'e-p-diplomas', use: 'drill', tier: 'clean', setting: 'learning', topic: 'recognizing school diplomas',
+    text: "The Secretary of State, speaking for the President, met the education minister of Brasland to agree how each country will recognize the other’s school diplomas.",
     outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
     cues: { E1: 'The Secretary of State, speaking for the President, met the education minister of Brasland' },
     reason: { E1: 'An official speaking for the President is dealing with another country’s government: {cue:E1}. The two are agreeing how something will work between their countries.' },

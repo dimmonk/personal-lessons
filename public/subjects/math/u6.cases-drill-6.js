@@ -67,12 +67,12 @@ FC.cases('math', 'u6', [
     topic: 'a plan of a hall',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A plan of a hall is an exact copy of the real hall. On the plan the stage is 3 cm wide and the hall is 8 cm wide. The real hall is 24 m wide. How wide is the real stage, in metres?',
+    text: 'A plan of a hall is an exact copy of the real hall. On the plan the stage is 3 cm wide and the hall is 8 cm wide. The real hall is 24 m wide. How wide is the real stage, in meters?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
-      M1: 'How wide is the real stage, in metres?',
+      M1: 'How wide is the real stage, in meters?',
       S1: 'A plan of a hall is an exact copy of the real hall. On the plan the stage is 3 cm wide and the hall is 8 cm wide. The real hall is 24 m wide',
-      S2: 'How wide is the real stage, in metres?'
+      S2: 'How wide is the real stage, in meters?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
@@ -175,12 +175,12 @@ FC.cases('math', 'u6', [
     topic: 'a toy house',
     kind: 'problem',
     outcome: 'similar',
-    text: 'A child builds a toy house as an exact copy of her real house. The toy house’s door is 8 cm high, and the real door is 2 m high. The toy house’s roof ridge is 15 cm above the ground. How high is the real house’s ridge, in metres?',
+    text: 'A child builds a toy house as an exact copy of her real house. The toy house’s door is 8 cm high, and the real door is 2 m high. The toy house’s roof ridge is 15 cm above the ground. How high is the real house’s ridge, in meters?',
     route: { M1: ['shape'], S1: ['matching'], S2: ['length'] },
     cues: {
-      M1: 'How high is the real house’s ridge, in metres?',
+      M1: 'How high is the real house’s ridge, in meters?',
       S1: 'a toy house as an exact copy of her real house. The toy house’s door is 8 cm high, and the real door is 2 m high. The toy house’s roof ridge is 15 cm above the ground',
-      S2: 'How high is the real house’s ridge, in metres?'
+      S2: 'How high is the real house’s ridge, in meters?'
     },
     reason: {
       M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',

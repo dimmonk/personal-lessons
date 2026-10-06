@@ -12,23 +12,23 @@ FC.cards('psychology', 'u3', [
       { step: 'D1',
         reason: 'What the case gives you is what one person does to another, and it is about the other person: {cue:D1}. Raf is not reasoning about a choice of his own, and the case does not stretch across years or places.' },
       { step: 'T1',
-        reason: 'Look first at how early it starts, and then at what happens to it. Both halves are in the case: {cue:T1} The first is the flood, in her first week: far more praise, lifts and fares than a week of knowing someone would explain. The second is the pulling back, once Hollie says she cannot lend him the £200: ten days of silence, and then a remark in front of the group.' }
+        reason: 'Look first at how early it starts, and then at what happens to it. Both halves are in the case: {cue:T1} The first is the flood, in her first week: far more praise, rides and fares than a week of knowing someone would explain. The second is the pulling back, once Hollie says she cannot lend him the $200: ten days of silence, and then a remark in front of the group.' }
     ],
     hold: {
-      neighbour: 'ordexchange',
+      neighbor: 'ordexchange',
       prompt: { kind: 'reason',
         lead: 'Raf was friendly and generous, and he asked a friend for a loan. A generous friend asking for a loan can look like {o:ordexchange}.',
         choices: [
           { id: 'a', text: 'Raf was friendly and generous, as people often are with a new friend.',
             note: 'True, and it is why the case can look like {o:ordexchange}. But friendliness on its own is not enough: the name needs the pulling back too.' },
-          { id: 'b', text: 'Raf asked to borrow £200 and Hollie said no.',
+          { id: 'b', text: 'Raf asked to borrow $200 and Hollie said no.',
             note: 'True, and it comes just before the pulling back. But a refused loan on its own is something people take well or badly. It does not show attention being poured on and then withdrawn.' },
           { id: 'c', text: 'The attention was far more than a week would explain, and it was pulled back and turned critical once Hollie said no.' }
         ],
         answer: 'c' },
       reason: [
         'For {o:ordexchange} the case must show none of the four. Here it shows one: {needs:lovebomb}. Raf’s friendliness does not settle it, because it is only the first half.',
-        'It is the question from the two neighbours, Dan and Eli. {test:lovebomb~ordexchange} Here the attention is pulled back, so the answer is {a:T1.floodpull}.'
+        'It is the question from the two neighbors, Dan and Eli. {test:lovebomb~ordexchange} Here the attention is pulled back, so the answer is {a:T1.floodpull}.'
       ]
     },
     impression: {
@@ -41,7 +41,7 @@ FC.cards('psychology', 'u3', [
 
   { id: 'worked-booking', kind: 'worked',
     h: 'A second whole case, where the story points the wrong way',
-    link: 'The walking group was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
+    link: 'The hiking group was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.',
     case: 'w-booking',
     steps: [
       { step: 'D1',
@@ -50,7 +50,7 @@ FC.cards('psychology', 'u3', [
         reason: 'The clerk has the booking emails, so the case shows that Kai did it, and she raises it. In answer he does all three in one reply, and the case says this is the first time it has come up. The marked words are: {cue:T1} He denies it ("I never booked it twice"), attacks her ("you are always muddled", "you lose things"), and plays the one wronged ("I am sick of being picked on").' }
     ],
     hold: {
-      neighbour: 'gaslight',
+      neighbor: 'gaslight',
       prompt: { kind: 'reason',
         lead: 'Kai tells Pia that she has it wrong and that she is always muddled. That sounds like telling someone their memory cannot be trusted, so the case can look like it belongs to the first name.',
         choices: [
@@ -94,7 +94,7 @@ FC.cards('psychology', 'u3', [
     ],
     prompts: [
       { outcome: 'gaslight', occasion: 'A time someone told you, more than once, that something you clearly remember did not happen.' },
-      { outcome: 'darvo', occasion: 'A time you raised something with someone and ended up apologising for raising it.' },
+      { outcome: 'darvo', occasion: 'A time you raised something with someone and ended up apologizing for raising it.' },
       { outcome: 'lovebomb', occasion: 'A new friend, job or group where everything was wonderful at first and then changed.' },
       { outcome: 'projection', occasion: 'Something you were accused of that fitted the person accusing you better than it fitted you.' },
       { outcome: 'ordexchange', occasion: 'The last row you had that was only a row.' }

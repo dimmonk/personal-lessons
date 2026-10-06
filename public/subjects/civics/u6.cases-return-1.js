@@ -5,13 +5,13 @@
 FC.cases('civics', 'u6', [
 
   /* ---------- Reserved powers ---------- */
-  { id: 'u6-ret-pawn', use: 'return', tier: 'varied', setting: 'money', topic: 'pawnbroker licences',
-    text: "Stolen goods kept turning up in pawn shops in the state of Tarn. The Tarn legislature passed a law that a pawnbroker must hold a state licence and must keep each item for at least sixty days.",
+  { id: 'u6-ret-pawn', use: 'return', tier: 'varied', setting: 'money', topic: 'pawnbroker licenses',
+    text: "Stolen goods kept turning up in pawn shops in the state of Tarn. The Tarn legislature passed a law that a pawnbroker must hold a state license and must keep each item for at least sixty days.",
     outcome: 'police', route: { D1: ['states'], S1: ['own'], S2: ['nothing'] },
-    cues: { D1: 'The Tarn legislature passed a law', S1: 'The Tarn legislature passed a law', S2: 'a pawnbroker must hold a state licence and must keep each item for at least sixty days' },
+    cues: { D1: 'The Tarn legislature passed a law', S1: 'The Tarn legislature passed a law', S2: 'a pawnbroker must hold a state license and must keep each item for at least sixty days' },
     reason: { D1: 'The case ends with a decision by a state’s lawmakers: {cue:D1}.',
               S1: 'The rule was made by one state’s lawmakers: {cue:S1}.',
-              S2: 'The matter is {cue:S2}: a trade licence and how a shop does business, which the states decide. No federal law is named and no right is taken away.' },
+              S2: 'The matter is {cue:S2}: a trade license and how a shop does business, which the states decide. No federal law is named and no right is taken away.' },
     not: { outcome: 'localgov', why: 'No city, town or county is named. The state’s legislature made the rule.' },
     wouldChange: 'If a city council had made the same rule for the pawn shops of its own city, the name would be {o:localgov}.' },
 
@@ -37,9 +37,9 @@ FC.cases('civics', 'u6', [
 
   /* ---------- Power handed down to a city or county ---------- */
   { id: 'u6-ret-height', use: 'return', tier: 'varied', setting: 'community', topic: 'building height',
-    text: "Residents of Ashby were upset that a tall block of flats had been built beside the harbour. The Ashby town council voted that no new building on Harbour Road may be taller than three floors.",
+    text: "Residents of Ashby were upset that a tall apartment building had been built beside the harbor. The Ashby town council voted that no new building on Harbor Road may be taller than three floors.",
     outcome: 'localgov', route: { D1: ['states'], S1: ['local'], S2: ['nothing'] },
-    cues: { D1: 'The Ashby town council voted', S1: 'The Ashby town council voted', S2: 'no new building on Harbour Road may be taller than three floors' },
+    cues: { D1: 'The Ashby town council voted', S1: 'The Ashby town council voted', S2: 'no new building on Harbor Road may be taller than three floors' },
     reason: { D1: 'The case ends with a decision by a town council: {cue:D1}.',
               S1: 'The rule was made by a town council: {cue:S1}.',
               S2: 'The matter is {cue:S2}: zoning, which is which kinds of building may go where, a local matter. No federal law is named, and no right is taken away.' },

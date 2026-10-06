@@ -34,8 +34,8 @@ FC.cards('math', 'u6', [
   { id: 'portrait-sqcube', kind: 'portrait', outcome: 'sqcube',
     link: 'You know what to point to for {o:sqcube}. This card fills in the rest of the picture, so that you can spot it where nobody marks the words for you.',
     typical: [
-      'Two things of exactly the same shape, one bigger: tins, pots, boxes, tanks, panes, tiles, posters, sheds, cakes, balloons.',
-      'How many times longer the bigger one is, either given directly (3 times as tall) or found from a part measured on both (a tin 15 cm tall and a tin 30 cm tall).',
+      'Two things of exactly the same shape, one bigger: cans, pots, boxes, tanks, panes, tiles, posters, sheds, cakes, balloons.',
+      'How many times longer the bigger one is, either given directly (3 times as tall) or found from a part measured on both (a can 15 cm tall and a can 30 cm tall).',
       'A question about how much: how much surface is covered (paint, glass, icing, floor), or how much room there is inside (water, soup, clay, air), or how many times more. The answer is a number of times, or an amount found by multiplying a known amount by that number of times.',
       'An answer much bigger than the number of times longer: twice as long gives 4 times the area and 8 times the volume, and 10 times as long gives 100 times the area and 1,000 times the volume.'
     ],
@@ -44,7 +44,7 @@ FC.cards('math', 'u6', [
       'And two things that are not exactly the same shape are not this kind. A shed that is twice as long but only the same height is not a copy, so its area and volume do not follow this rule.'
     ],
     wild: ['"How many times more does it hold?"', '"How much more paint would it take?"', '"Is it worth twice the price for twice the size?"', '"Twice as wide, so twice as much, right?"'],
-    self: 'In your own life you meet this when you compare sizes of things that are priced by their surface or by what they hold, such as pizzas, pots, paint tins, glass or fabric, when you ask whether a bigger version is good value, and when someone says that a thing is twice as big and you wonder in which way.',
+    self: 'In your own life you meet this when you compare sizes of things that are priced by their surface or by what they hold, such as pizzas, pots, paint cans, glass or fabric, when you ask whether a bigger version is good value, and when someone says that a thing is twice as big and you wonder in which way.',
     ask: '"Are there two things of exactly the same shape, and does the problem ask how much surface or how much room inside the bigger one has, or how many times more?" If you can say yes, you are probably looking at this kind.' },
 
   { id: 'check-sqcube', kind: 'check', after: 'sqcube',

@@ -19,7 +19,7 @@ FC.cards('stats', 'u4', [
       'There are three ordinary ways for that to happen, and each sends you to a different check. People who are judged on the figure can work on the figure instead of the real thing. The way of counting can change, so that the same situation gets a different number. Or more effort can go into finding the thing, so that more of what was always there turns up. This unit teaches you to tell the three apart, and to see a figure for what it is: a count made by someone, in some way, with some amount of effort.'
     ],
     add: [
-      'Two phrases are used all the way through. The real thing is what the figure is read as showing: parcels reaching customers on time, people who have an illness, pupils who can read. The figure is the number that was written down about it. The question this unit teaches is about everything else that goes into making the number.',
+      'Two phrases are used all the way through. The real thing is what the figure is read as showing: parcels reaching customers on time, people who have an illness, students who can read. The figure is the number that was written down about it. The question this unit teaches is about everything else that goes into making the number.',
       'When people are counted as having an illness, they are "found". The word "case" is kept for what the app calls one example: a claim as someone might say it to you, with whatever the speaker tells you about how the figure was made.'
     ],
     map: { branch: 'measure' } },

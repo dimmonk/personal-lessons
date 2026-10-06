@@ -42,9 +42,9 @@ FC.cases('civics', 'u3', [
 
   /* ---------- Beyond Congress's power ---------- */
   { id: 'b-reading', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a list of books for every school', name: 'The book list',
-    text: "Many parents say that pupils across the country read too little. The House and the Senate passed a bill that tells every school in every state which ten books its pupils must read in ninth grade.",
+    text: "Many parents say that students across the country read too little. The House and the Senate passed a bill that tells every school in every state which ten books its students must read in ninth grade.",
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
-    cues: { C1: 'a bill that tells every school in every state which ten books its pupils must read in ninth grade' } },
+    cues: { C1: 'a bill that tells every school in every state which ten books its students must read in ninth grade' } },
 
   { id: 'b-worship', use: 'teach', tier: 'clean', setting: 'community', topic: 'where people may worship', name: 'The approved buildings',
     text: "Some lawmakers say that too many small religious groups meet in homes and halls. On Tuesday the House passed a bill that lets people hold a religious service only in a building a federal office has approved. On Thursday the Senate passed it too.",

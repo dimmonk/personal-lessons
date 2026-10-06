@@ -38,7 +38,7 @@ FC.cases('ideology', 'u1', [
     cues: { D1: ['a nation that leaves its own people behind has stopped being one people', 'Keep the island joined to the nation'] } },
 
   { id: 'i-fer-tradition', use: 'teach', tier: 'clean', setting: 'faith', topic: 'the Calder ferry is cut, told for old ways',
-    text: "One sailing a day means no Sunday boat, and the island has crossed to the mainland church on the Sunday boat for two hundred years. The Sunday crossing, the church and the old island customs are what should guide how this ferry is run, not a timetable drawn up by strangers.",
+    text: "One sailing a day means no Sunday boat, and the island has crossed to the mainland church on the Sunday boat for two hundred years. The Sunday crossing, the church and the old island customs are what should guide how this ferry is run, not a schedule drawn up by strangers.",
     route: { D1: ['tradition'] },
     cues: { D1: ['The Sunday crossing, the church and the old island customs are what should guide how this ferry is run'] } },
 
@@ -47,10 +47,10 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['rights'] },
     cues: { D1: ['Every islander is owed a way to a hospital and a school on the mainland, whatever their age, income or health'] } },
 
-  { id: 'i-fer-none', use: 'teach', tier: 'clean', setting: 'town', topic: 'the Calder ferry is cut, as a timetable',
-    text: "Calder ferry timetable from 1 April: one sailing a day, leaving the island at 8.15 and returning from the mainland at 5.40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.",
+  { id: 'i-fer-none', use: 'teach', tier: 'clean', setting: 'town', topic: 'the Calder ferry is cut, as a schedule',
+    text: "Calder ferry schedule from April 1: one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.",
     route: { D1: ['none'] },
-    cues: { D1: ['one sailing a day, leaving the island at 8.15 and returning from the mainland at 5.40', 'Vehicles must book 48 hours ahead on the number below'] } },
+    cues: { D1: ['one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40', 'Vehicles must book 48 hours ahead on the number below'] } },
 
   /* ---------- The same noun pointing opposite ways ---------- */
   { id: 'i-race-above', use: 'teach', tier: 'clean', setting: 'borders', topic: 'a pamphlet that ranks races',
@@ -59,7 +59,7 @@ FC.cases('ideology', 'u1', [
     cues: { D1: ['Our race is the oldest and the best, and the others were born to serve it'] } },
 
   { id: 'i-race-held', use: 'teach', tier: 'clean', setting: 'housing', topic: 'a housing hearing on lending',
-    text: "At a housing hearing: 'Nothing in the lending rules mentions race. But applicants of one race are sent to the back of the queue year after year, and a rule that treats everyone alike while leaving them there is a rule that has to change. Nobody is above anybody here. Fair treatment is owed to every applicant.'",
+    text: "At a housing hearing: 'Nothing in the lending rules mentions race. But applicants of one race are sent to the back of the line year after year, and a rule that treats everyone alike while leaving them there is a rule that has to change. Nobody is above anybody here. Fair treatment is owed to every applicant.'",
     route: { D1: ['rights'] },
     cues: { D1: ['a rule that treats everyone alike while leaving them there is a rule that has to change', 'Fair treatment is owed to every applicant'] } }
 ]);

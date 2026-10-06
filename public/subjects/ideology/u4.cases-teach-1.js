@@ -9,7 +9,7 @@ FC.cases('ideology', 'u4', [
 
   /* ---------- Keeping what is still there ---------- */
   { id: 'i4-meet-conserv', use: 'teach', tier: 'clean', setting: 'faith', topic: 'a village boundary walk', name: 'The boundary walk',
-    text: "From the Eastby village newsletter: 'On the first Sunday of May we walk the boundary of the parish and bless the fields, as our grandparents did, and the children carry the banner. This custom, and the faith behind it, should guide how Eastby plans for the years ahead. Keep the walk. If the route must change now that the new road cuts across it, let it change slowly, a step at a time, and ask the old walkers first.'",
+    text: "From the Eastby village newsletter: 'On the first Sunday of May we walk the boundary of the village and bless the fields, as our grandparents did, and the children carry the banner. This custom, and the faith behind it, should guide how Eastby plans for the years ahead. Keep the walk. If the route must change now that the new road cuts across it, let it change slowly, a step at a time, and ask the old walkers first.'",
     outcome: 'conserv', route: { D1: ['tradition'], T1: ['keep'] },
     cues: { D1: 'This custom, and the faith behind it, should guide how Eastby plans for the years ahead',
             T1: ['Keep the walk', 'let it change slowly, a step at a time, and ask the old walkers first'] } },
@@ -57,7 +57,7 @@ FC.cases('ideology', 'u4', [
     ] },
 
   { id: 'i4-check-react', use: 'check', tier: 'clean', setting: 'town', topic: 'a lord’s market taken by an act',
-    text: "From a speech at the market cross in Carrow: 'For a thousand years the market of Carrow was held under the lord of the manor, who set the weights, judged the quarrels and opened each market day with a blessing. The new Borough Act took the market from him. That Act was a theft, and not a reform, and Carrow has known no peace since. Give the lord his market and his place on the bench back, and let the blessing be said again from his steps.'",
+    text: "From a speech at the market cross in Carrow: 'For a thousand years the market of Carrow was held under the lord of the manor, who set the weights, judged the quarrels and opened each market day with a blessing. The new Municipal Act took the market from him. That Act was a theft, and not a reform, and Carrow has known no peace since. Give the lord his market and his place on the bench back, and let the blessing be said again from his steps.'",
     outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },
     cues: { D1: ['Give the lord his market and his place on the bench back, and let the blessing be said again from his steps'],
             T1: ['That Act was a theft, and not a reform', 'Give the lord his market and his place on the bench back'] },

@@ -12,7 +12,7 @@ FC.cards('civics', 'u8', [
     plain: [
       'Ravi’s story has no right in it. His tax is taken out of his pay, he keeps to the speed limit, and he registers because the law says that he must. That is the difference between a right and a duty. A right is the government held back from you. A duty is the law asking something of you.',
       'The first thing to learn about a duty is whom it falls on. The three in this group fall on everyone here, citizen or not, and none of them asks for citizenship. The law asks them of Ravi because of what he does here: he lives here, he earns his wages here, and he is a man in the age range that the law names.',
-      'The three are these. Everyone here must obey the law. Everyone here must pay tax on income earned here. And a man aged 18 to 25 who lives here, citizen or not, must register for Selective Service. Selective Service is the list that lets the country organise a draft if one were ever called, and a draft means calling people up to serve in the armed forces.',
+      'The three are these. Everyone here must obey the law. Everyone here must pay tax on income earned here. And a man aged 18 to 25 who lives here, citizen or not, must register for Selective Service. Selective Service is the list that lets the country organize a draft if one were ever called, and a draft means calling people up to serve in the armed forces.',
       'Not knowing a requirement does not excuse missing it. So the useful habit is to find out what the law asks of you: file taxes on time, follow the rules, and ask the {t:agency} that runs the rule when you are unsure.'
     ] },
 
@@ -26,7 +26,7 @@ FC.cards('civics', 'u8', [
       { id: 'du-tax', q: 'A person on a work visa earns wages here. Which duty does that bring, as it does for a citizen?', a: 'The duty to pay tax on income earned here',
         relates: 'Tax follows the income, not the passport. A person on a work visa who earns wages here pays tax on them and files a tax return each year, just as a citizen does.' },
       { id: 'du-draft', q: 'Which duty falls on men aged 18 to 25 who live here, citizens or not?', a: 'The duty to register for Selective Service',
-        relates: 'It falls on men who live here whether or not they are citizens. Registering is what lets the country organise a draft if one were ever called.' }
+        relates: 'It falls on men who live here whether or not they are citizens. Registering is what lets the country organize a draft if one were ever called.' }
     ] },
 
   { id: 'chk-du-obey', kind: 'check', after: 'facts-duty', ask: { type: 'fact', row: 'du-obey' } },
@@ -39,7 +39,7 @@ FC.cards('civics', 'u8', [
     link: 'Every right and every duty so far applies to everyone here. A few things do not: the law keeps them for citizens.',
     case: 'c8-amara',
     plain: [
-      'Amara’s story is the other side. For twenty years she lived here as a permanent resident, paying her taxes and obeying the law, and until she became a citizen she could not register to vote. After she took the oath she could, and she was also summoned to serve on a jury, which her neighbour Joao, still a permanent resident, was not.',
+      'Amara’s story is the other side. For twenty years she lived here as a permanent resident, paying her taxes and obeying the law, and until she became a citizen she could not register to vote. After she took the oath she could, and she was also summoned to serve on a jury, which her neighbor Joao, still a permanent resident, was not.',
       'Three things are kept for citizens. Two are rights, which means that a person may choose to use them: voting in federal elections, and running for federal office. One is a duty, which means that the law requires it: serving on a federal jury when summoned. Each office has conditions of its own on top of being a citizen, and this group holds only the citizenship part.',
       'A few cities let people who are not citizens vote in local elections. Federal elections are for citizens only. On the citizenship test, voting may be given as a responsibility that only citizens have. This unit calls it a right, because no law makes anyone vote.',
       'Jury service is a duty and a privilege together, because a person cannot be kept off a jury on grounds of race.'
@@ -82,7 +82,7 @@ FC.cards('civics', 'u8', [
     plain: [
       'Ines went looking for a promise and found a list of limits. That is how the Constitution is mostly written: it lists what government may not do to you. It makes few promises about what government must give you.',
       'There is no promise in the Constitution of a job, a home or medical care. A newcomer from a country whose constitution does promise one of them may expect the same here, so it is worth knowing before you look for it.',
-      'Where government does provide one of them, it is because a law, or a state or local programme, created it. Medicare is one: it exists because Congress passed a law. What one law gives, a later law can change, which is why such programmes are argued over and altered at every election. A right in the Constitution is a limit on government, and that is a different thing from a programme.',
+      'Where government does provide one of them, it is because a law, or a state or local program, created it. Medicare is one: it exists because Congress passed a law. What one law gives, a later law can change, which is why such programs are argued over and altered at every election. A right in the Constitution is a limit on government, and that is a different thing from a program.',
       'State constitutions are separate from this one, and they do promise public schooling.'
     ] },
 
@@ -94,11 +94,11 @@ FC.cards('civics', 'u8', [
       { id: 'np-kind', q: 'What does the Constitution mostly list?', a: 'What government may not do to you',
         relates: 'A right is a limit on government, and the Constitution mostly lists limits. That is why the rights in this unit all say what government may not do, and why a promise to give you something is a different thing.' },
       { id: 'np-none', q: 'Which of a job, a home and medical care does the Constitution promise to give you?', a: 'None of them',
-        relates: 'Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a programme.' },
-      { id: 'np-source', q: 'Where does a programme that gives people help, such as Medicare or a housing programme, come from?', a: 'A law, or a decision by a state or a city',
-        relates: 'Medicare exists because Congress passed a law, and a housing programme exists because of a law or a state or local decision. What one law gives, a later law can change.' },
-      { id: 'np-change', q: 'How can people change what such a programme gives?', a: 'By votes, petitions and the people who write the laws',
-        relates: 'Because a programme comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or programme that provides it and read its conditions.' }
+        relates: 'Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a program.' },
+      { id: 'np-source', q: 'Where does a program that gives people help, such as Medicare or a housing program, come from?', a: 'A law, or a decision by a state or a city',
+        relates: 'Medicare exists because Congress passed a law, and a housing program exists because of a law or a state or local decision. What one law gives, a later law can change.' },
+      { id: 'np-change', q: 'How can people change what such a program gives?', a: 'By votes, petitions and the people who write the laws',
+        relates: 'Because a program comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or program that provides it and read its conditions.' }
     ] },
 
   { id: 'chk-np-kind', kind: 'check', after: 'facts-promise', ask: { type: 'fact', row: 'np-kind' } },

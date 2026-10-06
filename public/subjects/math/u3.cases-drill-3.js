@@ -10,15 +10,15 @@ FC.cases('math', 'u3', [
     topic: 'a taxi with a starting charge',
     kind: 'problem',
     outcome: 'rearr',
-    text: 'A taxi fare is a starting charge of €6, plus €1.50 for each kilometre. One fare comes to €21. How many kilometres was the ride?',
+    text: 'A taxi fare is a starting charge of $6, plus $1.50 for each kilometer. One fare comes to $21. How many kilometers was the ride?',
     route: { M1: ['unknown'], A1: ['formula'] },
     cues: {
-      M1: ['a starting charge of €6, plus €1.50 for each kilometre', 'How many kilometres was the ride?'],
-      A1: ['a starting charge of €6, plus €1.50 for each kilometre', 'One fare comes to €21']
+      M1: ['a starting charge of $6, plus $1.50 for each kilometer', 'How many kilometers was the ride?'],
+      A1: ['a starting charge of $6, plus $1.50 for each kilometer', 'One fare comes to $21']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} show a price for each kilometre, which looks like a rate, but a starting charge is added on top of it, and the problem gives the result of that whole calculation and asks for the kilometres in it. A rate with a fixed amount added on top is {a:A1.formula}.'
+      A1: 'The words {cue:A1} show a price for each kilometer, which looks like a rate, but a starting charge is added on top of it, and the problem gives the result of that whole calculation and asks for the kilometers in it. A rate with a fixed amount added on top is {a:A1.formula}.'
     },
     not: {
       outcome: 'prop',
@@ -28,7 +28,7 @@ FC.cases('math', 'u3', [
     steps: [
       {
         does: 'List what is done to the missing number, in the order it is done',
-        working: 'Start from the kilometres. First it is multiplied by 1.5, then 6 is added. The result is 21'
+        working: 'Start from the kilometers. First it is multiplied by 1.5, then 6 is added. The result is 21'
       },
       {
         does: 'Write the undoing of each one, last one first',
@@ -59,7 +59,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -122,7 +122,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
   },
 
   {
@@ -242,14 +242,14 @@ FC.cases('math', 'u3', [
     use: 'drill',
     tier: 'clean',
     setting: 'shopping',
-    topic: 'brackets in a hardware shop',
+    topic: 'brackets in a hardware store',
     kind: 'problem',
     outcome: 'prop',
-    text: 'A hardware shop sells 12 brackets for €15. How much do 36 brackets cost?',
+    text: 'A hardware store sells 12 brackets for $15. How much do 36 brackets cost?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
-      M1: ['sells 12 brackets for €15', 'How much do 36 brackets cost?'],
-      A1: ['sells 12 brackets for €15', 'do 36 brackets cost']
+      M1: ['sells 12 brackets for $15', 'How much do 36 brackets cost?'],
+      A1: ['sells 12 brackets for $15', 'do 36 brackets cost']
     },
     reason: {
       M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
@@ -262,7 +262,7 @@ FC.cases('math', 'u3', [
     steps: [
       {
         does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 12 brackets for 15 euros. The new amount is 36 brackets, so it is paired with the 12 brackets in the rate'
+        working: 'The rate is 12 brackets for 15 dollars. The new amount is 36 brackets, so it is paired with the 12 brackets in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -271,22 +271,22 @@ FC.cases('math', 'u3', [
       { does: 'Make the other number that many times as big', working: '15 × 3 = 45' },
       {
         does: 'Check the direction',
-        working: '36 brackets is more than 12 brackets, so the answer should be more than 15 euros, and 45 is more'
+        working: '36 brackets is more than 12 brackets, so the answer should be more than 15 dollars, and 45 is more'
       }
     ],
     answer: {
       right: 'r',
       choices: [
-        { id: 'r', text: '45 euros' },
+        { id: 'r', text: '45 dollars' },
         {
           id: 's1',
-          text: '5 euros',
-          slip: 'you divide 15 by 3 instead of multiplying, so the answer moves the wrong way: more brackets must mean more euros.'
+          text: '5 dollars',
+          slip: 'you divide 15 by 3 instead of multiplying, so the answer moves the wrong way: more brackets must mean more dollars.'
         },
         {
           id: 's2',
-          text: '28.8 euros',
-          slip: 'you pair the new amount with 15 euros, the other number in the rate, and not with 12 brackets, the number of the same thing.'
+          text: '28.8 dollars',
+          slip: 'you pair the new amount with 15 dollars, the other number in the rate, and not with 12 brackets, the number of the same thing.'
         }
       ]
     },

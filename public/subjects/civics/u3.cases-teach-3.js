@@ -7,7 +7,7 @@ FC.cases('civics', 'u3', [
 
   /* ---------- Impeachment ---------- */
   { id: 'i-judge', use: 'teach', tier: 'clean', setting: 'community', topic: 'a federal judge who took bribes', name: 'The judge who took money',
-    text: "A federal judge is accused of taking money to decide cases in favour of one company. The House voted, by more than half, to charge the judge with taking the money. The Senate then held a trial, and 70 of the 100 senators voted to convict. The judge was removed from the job.",
+    text: "A federal judge is accused of taking money to decide cases in favor of one company. The House voted, by more than half, to charge the judge with taking the money. The Senate then held a trial, and 70 of the 100 senators voted to convict. The judge was removed from the job.",
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { C1: ['The House voted, by more than half, to charge the judge with taking the money', 'The Senate then held a trial, and 70 of the 100 senators voted to convict'] } },
 
@@ -22,11 +22,11 @@ FC.cases('civics', 'u3', [
     ] },
 
   { id: 'k-housing', use: 'check', tier: 'clean', setting: 'home', topic: 'a housing head is charged', name: 'The housing head',
-    text: "Many families wait years for a flat from the housing programme. The House has voted to charge the head of the federal housing department with misusing public money. The Senate will hold the trial next month.",
+    text: "Many families wait years for an apartment from the housing program. The House has voted to charge the head of the federal housing department with misusing public money. The Senate will hold the trial next month.",
     outcome: 'impeach', route: { D1: ['congress'], C1: ['remove'] },
     cues: { C1: 'The House has voted to charge the head of the federal housing department with misusing public money' },
     segments: [
-      { text: 'Many families wait years for a flat from the housing programme', note: 'That is the background to the case. It says nothing about what Congress has done.' },
+      { text: 'Many families wait years for an apartment from the housing program', note: 'That is the background to the case. It says nothing about what Congress has done.' },
       { text: 'The House has voted to charge the head of the federal housing department with misusing public money' },
       { text: 'The Senate will hold the trial next month', note: 'That is the second step, and it is still to come. The words asked for are the step already taken.' }
     ],

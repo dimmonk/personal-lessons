@@ -6,11 +6,11 @@
 
 FC.cases('stats', 'u1', [
 
-  { id: 'gate-b-survey', use: 'baseline', tier: 'clean', setting: 'community', topic: 'a council survey of bus-line use',
-    text: "A city council surveyed 1,200 residents whose addresses were drawn by lottery from the full list of homes in the city. It sent a reminder, and then a visitor, to everyone who had not replied, and 1,100 answered. Sixty-two percent said they would use a new bus line. The council says: 'About six in ten residents would use the new bus line.'",
+  { id: 'gate-b-survey', use: 'baseline', tier: 'clean', setting: 'community', topic: 'a city council survey of bus-line use',
+    text: "A city council surveyed 1,200 residents whose addresses were drawn by lottery from the full list of homes in the city. It sent a reminder, and then a visitor, to everyone who had not replied, and 1,100 answered. Sixty-two percent said they would use a new bus line. The city council says: 'About six in ten residents would use the new bus line.'",
     route: { S1: ['holds'] },
     cues: { S1: 'drawn by lottery from the full list of homes in the city. It sent a reminder, and then a visitor, to everyone who had not replied, and 1,100 answered' },
-    reason: { S1: 'Each part holds. Nobody was favoured in who was asked, and almost everyone asked answered: {cue:S1}. The claim gives a figure about one group at one time and says no more than the figure can carry.' } },
+    reason: { S1: 'Each part holds. Nobody was favored in who was asked, and almost everyone asked answered: {cue:S1}. The claim gives a figure about one group at one time and says no more than the figure can carry.' } },
 
   { id: 'gate-b-clinics', use: 'baseline', tier: 'clean', setting: 'health', topic: 'two clinics and waits of more than an hour',
     text: "A health department compared two clinics. Both clinics start the clock when a patient checks in and stop it when the patient sees a doctor, they serve the same neighborhoods, and the department counted every visit last year. Clinic A had 2,000 visits, and 600 waited more than an hour. Clinic B had 2,100 visits, and 840 waited more than an hour. The department says: 'Patients at Clinic B wait more than an hour more often: 40 in 100 against 30.'",
@@ -18,10 +18,10 @@ FC.cases('stats', 'u1', [
     cues: { S1: 'Both clinics start the clock when a patient checks in and stop it when the patient sees a doctor, they serve the same neighborhoods, and the department counted every visit last year' },
     reason: { S1: 'Each part holds. {cue:S1}. The numbers are given, the two clinics are alike and counted the same way, and the claim says only which has the longer waits. It does not say why.' } },
 
-  { id: 'gate-b-scheme', use: 'baseline', tier: 'clean', setting: 'learning', topic: 'a reading scheme and pupils chosen by lots',
-    text: "A school drew lots to choose 60 of its 120 pupils for a new reading scheme, and the other 60 kept their usual lessons. All 120 sat the same test at the end of the term, and the scheme group averaged 12 points higher. The school says: 'The reading scheme raised scores.'",
+  { id: 'gate-b-scheme', use: 'baseline', tier: 'clean', setting: 'learning', topic: 'a reading scheme and students chosen by lots',
+    text: "A school drew lots to choose 60 of its 120 students for a new reading scheme, and the other 60 kept their usual lessons. All 120 took the same test at the end of the term, and the scheme group averaged 12 points higher. The school says: 'The reading scheme raised scores.'",
     route: { S1: ['holds'] },
-    cues: { S1: 'drew lots to choose 60 of its 120 pupils for a new reading scheme' },
+    cues: { S1: 'drew lots to choose 60 of its 120 students for a new reading scheme' },
     reason: { S1: 'Each part holds, and the claim says one thing caused another, so the last part matters most. Nobody chose their group: {cue:S1}. That leaves no other likely way for the two groups to differ, so the case offers no other explanation for the result.' } },
 
   { id: 'gate-b-poll', use: 'baseline', tier: 'clean', setting: 'community', topic: 'a website poll about cars on Main Street',
