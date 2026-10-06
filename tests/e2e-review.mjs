@@ -30,13 +30,15 @@ const texts = (page, selector) => page.evaluate(sel => [...document.querySelecto
 /* ---------- E2: the worked case says in words what is still possible and what is ruled out ---------- */
 async function workedReadout(env) {
   const { page, context } = await openUnitTwo(env);
-  await gotoCard(page, 'worked-longrun');
+  await gotoCard(page, 'worked-tasting');
   const first = norm(await page.locator('#cardbody').textContent());
   env.check(first.includes('Still possible: all five names this unit teaches.'), `worked, question 1: no "Still possible" sentence (${first.slice(-120)})`);
   await page.click('#fwd');
+  // the expected sentence is read from the data: the case's own name, and the other four ruled out
+  const expected = await page.evaluate(() => { const v = unitView('psychology', 'u2'), own = caseTarget(v, v.caseById('tasting'));
+    return `Still possible: ${v.nameOf(own)}. Ruled out: ${joinWords(v.taught.filter(id => id !== own).map(v.nameOf), 'and')}.`; });
   const second = norm(await page.locator('#cardbody').textContent());
-  env.check(second.includes('Still possible: Cognitive dissonance reduction. Ruled out: Sunk cost fallacy, Confirmation bias, Motivated reasoning and Fair reasoning.'),
-    `worked, question 2: no "Still possible ... Ruled out" sentence (${second.slice(-160)})`);
+  env.check(second.includes(expected), `worked, question 2: no "${expected}" sentence (${second.slice(-160)})`);
   await context.close();
 }
 
@@ -121,8 +123,8 @@ async function focusMoves(env) {
   const { page, context } = await openUnitTwo(env);
   await page.click('#fwd');
   env.check(await page.evaluate(() => document.activeElement.matches('.eyebrow-row h1')), 'after Next, focus is not on the new card\'s heading');
-  await gotoCard(page, 'again-dissonance');
-  await page.click('[data-pick="0"]');
+  await gotoCard(page, 'look-dissonance-sunkcost');
+  await page.locator('#cardbody [data-pick]').first().click();
   env.check(await page.evaluate(() => !!document.activeElement.closest('.answerline, .feedback')), 'after answering a prompt, focus is not on its feedback');
   await context.close();
 }
@@ -136,7 +138,7 @@ async function spacing(env) {
     return next.getBoundingClientRect().top - last.getBoundingClientRect().bottom;
   });
   env.check(gap >= 8, `the key's answer and the paragraph after it are ${Math.round(gap)}px apart`);
-  await gotoCard(page, 'worked-longrun');
+  await gotoCard(page, 'worked-tasting');
   const readGap = await page.evaluate(() => {
     const read = document.querySelector('#cardbody .readout'), before = read.previousElementSibling;
     return read.getBoundingClientRect().top - before.getBoundingClientRect().bottom;
@@ -229,21 +231,27 @@ async function missedItemReturns(env) {
 async function placeSurvivesReload(env) {
   const { page, context } = await openUnitTwo(env);
   await gotoCard(page, 'meet-sunkcost');
+  // the card after it, and the unit's close cards, are read from the data
+  const { next, closes } = await page.evaluate(() => {
+    const v = unitView('psychology', 'u2'), parts = v.unit.parts;
+    return { next: v.cardOrder[v.cardOrder.indexOf('meet-sunkcost') + 1], closes: parts[parts.length - 1].close };
+  });
   await page.click('#fwd');
   const at = await page.evaluate(() => JSON.parse(localStorage.getItem('pl:psychology:seen')).u2.at);
-  env.check(at === 'again-sunkcost', `the stored place is "${at}", not the card id again-sunkcost`);
+  env.check(at === next, `the stored place is "${at}", not the card id ${next}`);
   await page.reload();
   await env.openSubject(page, SUBJECT);
   await page.click('#resume');
   const card = await page.evaluate(() => UNIT_RUN.flow[UNIT_RUN.i].id);
-  env.check(card === 'again-sunkcost', `after a reload, resume opened "${card}"`);
-  // done only after the close cards
-  await gotoCard(page, 'recap');
-  env.check(await page.evaluate(() => JSON.parse(localStorage.getItem('pl:psychology:seen')).u2.done !== true), 'the unit is marked done before the close cards');
-  await page.click('#fwd');
-  env.check(await page.evaluate(() => JSON.parse(localStorage.getItem('pl:psychology:seen')).u2.done !== true), 'the unit is marked done on its last close card');
-  await page.click('#fwd');
-  env.check(await page.evaluate(() => JSON.parse(localStorage.getItem('pl:psychology:seen')).u2.done === true), 'the unit is not marked done after its close cards');
+  env.check(card === next, `after a reload, resume opened "${card}"`);
+  // done only after the last close card
+  const done = () => page.evaluate(() => JSON.parse(localStorage.getItem('pl:psychology:seen')).u2.done === true);
+  await gotoCard(page, closes[0]);
+  for (const id of closes) {
+    env.check(!(await done()), `the unit is marked done on its close card ${id}`);
+    await page.click('#fwd');
+  }
+  env.check(await done(), 'the unit is not marked done after its close cards');
   await context.close();
 }
 
@@ -263,7 +271,7 @@ async function leftFeedbackLogged(env) {
   await answer(true);
   env.check(await page.locator('[data-show-rest]').count() === 1, 'a case answered right again shows no "Show the reasoning" control');
   await page.click('[data-show-rest]');
-  env.check(await page.locator('.vblock .m', { hasText: 'Why not' }).count() === 1, '"Show the reasoning" did not open the later lines');
+  env.check(await page.locator('.feedback .taughton').count() === 1, '"Show the reasoning" did not open the later lines');
   const logged = () => page.evaluate(() => (JSON.parse(localStorage.getItem('pl:log')) || []).filter(e => e.type === 'left-feedback').length);
   await page.click('#next');
   env.check(await logged() === 0, 'a learner who opened the reasoning was logged as leaving it');
@@ -341,7 +349,7 @@ async function drillWithoutCards(env) {
   await gotoCard(page, 'orient');
   await page.click('[data-to-drill]');
   env.check(await page.evaluate(() => UNIT_RUN.flow[UNIT_RUN.i].type) === 'drill', 'the control did not open the drill');
-  env.check(/The cards are out of view from here/.test(await page.locator('#host').textContent()), 'the drill did not open on its introduction');
+  env.check(/The cards are out of view/.test(await page.locator('#host').textContent()), 'the drill did not open on its introduction');
   const at = await page.evaluate(() => JSON.parse(localStorage.getItem('pl:psychology:seen')).u2);
   env.check(at.at === 'drill' && at.done !== true, `opening the drill stored ${JSON.stringify(at)}`);
   await page.click('[data-v="subject"]');

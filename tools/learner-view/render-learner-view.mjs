@@ -14,7 +14,7 @@ if (!SUBJECT || !UNIT) { console.error('usage: node tools/learner-view/render-le
 const subject = await loadSubject(SUBJECT);
 const v = unitView(subject, UNIT);
 const T = makeText(v);
-const { R, tieLine } = makeCardRenderers(v, T);
+const { R } = makeCardRenderers(v, T);
 const unit = v.unit;
 const GATE = v.gate ? v.gate.code : null;   // a subject of fact units only has no gate
 const out = [];
@@ -54,48 +54,40 @@ function cardHeading(card) {
 //    no reason of its own for it, the reason is the answer's own "when" line from the key.
 const stepReason = (c, code) => c.reason && c.reason[code] ? T.P(c.reason[code], c).join(' ') : `${cap(v.option(code, c.route[code][0]).when)}.`;
 const stepLine = (c, code) => `${v.step(code).q} **${c.route[code].map(id => v.option(code, id).n).join('** or **')}.** ${stepReason(c, code)}`;
-// 3. why the nearest wrong name fails (shown after a right answer too)
-const notLine = c => c.not ? `- Why not ${T.name(notOf(c))}: ${T.t(c.not.why, c)}` : null;
-// 4. the line about the learner's own choice, generated from the key
+// 3. after a miss, ONE line on the answer the learner chose (the app's answerMiss): the case's own line, the tie-break form,
+//    the nearest wrong name's reason, or a line from the key's own wording
+const genericMiss = (code, chosenId, rightId) =>
+  `You chose **${v.option(code, chosenId).n}**. Give that answer when ${v.option(code, chosenId).when}. This case shows something else: ${v.option(code, rightId).when.replace(/^the case shows /, '')}.`;
 function answerMiss(c, code, chosenId, rightId) {
   const chosen = v.option(code, chosenId), right = v.option(code, rightId);
+  if (c.miss && c.miss[chosenId]) return T.t(c.miss[chosenId], c);
   // the tie-break form is used only where the case really shows both answers (case.also), so it is never false
   const tie = (c.also || []).includes(chosenId) && v.tieBreak(code, chosenId, rightId);
   if (tie && tie.loser === chosenId) return `You chose **${chosen.n}**. This case does show that. It also shows ${tie.say}, and when a case shows both, the answer is **${right.n}**.`;
-  // the gate's "when" lines open with "the case shows"; the sentence already says it, so it is not printed twice
-  return `You chose **${chosen.n}**. Give that answer when ${chosen.when}. This case shows something else: ${right.when.replace(/^the case shows /, '')}.`;
+  if (c.not && (chosenId === c.not.outcome || (chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome))) return T.t(c.not.why, c);
+  return genericMiss(code, chosenId, rightId);
 }
-const BUILT = '“You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”';
-const NAME_MISS = '“«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”';
-// the option of a step that is this case's nearest wrong answer (its "not"), if the step has one
-const nearOption = (c, code) => !c.not ? null : v.isGate
-  ? (code === GATE ? v.step(code).options.find(o => o.id === notOf(c)) : null)
-  : v.step(code).options.find(o => o.keeps.length === 1 && o.keeps[0] === notOf(c));
-function ownChoiceLines(c, code) {
-  const lines = [], rightId = c.route[code][0];
-  const near = nearOption(c, code), nearOk = near && near.id !== rightId ? near : null;
-  if (nearOk) lines.push(`- If you chose **${nearOk.n}**: ` + ((c.also || []).includes(nearOk.id) ? answerMiss(c, code, nearOk.id, rightId) : T.t(c.not.why, c)));
-  lines.push(`- If you chose ${nearOk ? 'any other' : 'another'} answer, the line is built from the answers’ own wording: ${BUILT}`);
-  return lines;
+// the lines written for this case are printed; the ones built from the key's wording are summed up in one line
+function ownChoiceLines(c, code, among, rightId) {
+  const others = among.filter(id => id !== rightId);
+  const written = others.filter(id => answerMiss(c, code, id, rightId) !== genericMiss(code, id, rightId));
+  return [...written.map(id => `- If you chose **${v.option(code, id).n}**: ${answerMiss(c, code, id, rightId)}`),
+    ...(written.length < others.length ? [`- ${written.length ? 'Any other answer' : 'Any wrong answer'}: one line on what that answer needs, and what this case shows instead.`] : [])];
 }
+// the app's nameMiss: the case's own line, else the nearest wrong name's reason, else a line from the two names' needs
 function nameMissLines(c) {
-  const lines = [];
-  const entry = c.not && v.ledgerFor(c.outcome, c.not.outcome);
-  if (entry && ledgerRead.has(entry.id)) lines.push(`- If you chose ${T.o(c.not.outcome)}, the look-alike card’s lines follow: ${T.t(entry.shared)} ${T.t(entry.rule)} ${T.t(entry.test)}`);
-  lines.push(`- If you chose another name, the line is built from the answers’ own wording: ${NAME_MISS}`);
-  return lines;
+  const own = Object.entries(c.miss || {}).filter(([id]) => v.isThing(id) && id !== notOf(c));
+  return [...(c.not ? [`- If you chose ${T.o(notOf(c))}: ${T.t(c.not.why, c)}`] : []),
+    ...own.map(([id, line]) => `- If you chose ${T.o(id)}: ${T.t(line, c)}`),
+    `- ${c.not || own.length ? 'Any other name' : 'Any wrong name'}: one line on what that name needs, and what this case shows instead.`];
 }
-const echoLine = c => c.echo ? `- This case may have brought back *${v.cases[c.echo].name}*, which was ${T.name(v.thingOf(v.cases[c.echo]))}. When a likeness and the answers disagree, go by the words that answer the question.` : null;
 
 // a fact asked from memory (A12; the app's factHtml): the other rows of its own card are the choices
 function renderFact(rowId) {
   const row = v.fact(rowId), rows = v.cards[row.card].rows;
   say(`**You are asked, from memory:** ${row.q}`, '', ...rows.map(r => `- ${r.a}`), '', '**Shown as soon as you answer**', '',
     `- The answer: **${row.a}**. Why: ${T.P(row.relates).join(' ')}`);
-  rows.filter(r => r.id !== row.id).forEach(r => {
-    const entry = v.ledgerFor(row.id, r.id);
-    say(`  - If you chose ${r.a}: ${APP.factSwapped(`**${r.a}**`, r.q)}` + (entry && ledgerRead.has(entry.id) ? ` ${T.t(entry.shared)} ${T.t(entry.rule)} ${T.t(entry.test)}` : ''));
-  });
+  rows.filter(r => r.id !== row.id).forEach(r => say(`  - If you chose ${r.a}: ${APP.factSwapped(`**${r.a}**`, r.q)}`));
   say(taughtOn(v.cards[row.card]));
 }
 
@@ -111,8 +103,9 @@ function renderProblem(c, solve) {
     `- ${APP.workingLabel}:`, ...c.steps.map(st => `  - ${T.t(st.does)}: ${T.t(st.working)}`), ...T.P(c.why, c).map(p => `  ${p}`));
   c.answer.choices.filter(x => x.id !== right.id).forEach(x => say(`- If you chose ${x.text}: ${APP.slipLine(`**${x.text}**`, T.t(x.slip, c))}`));
   if (solve === 'route') {
-    steps.forEach(code => say(`- ${stepLine(c, code)}`));
-    say(notLine(c), echoLine(c));
+    say('- If an answer on the way or the kind is missed, the reason for every question follows, then one line on each wrong choice:');
+    steps.forEach(code => say(`  - ${stepLine(c, code)}`));
+    nameMissLines(c).forEach(l => say('  ' + l));
     if (c.wouldChange) say(`- What would make it a different kind: ${T.t(c.wouldChange, c)}`);
   }
   say(taughtOn(cardsInOrder.find(k => k.kind === 'solved' && v.cases[k.problem] && v.cases[k.problem].outcome === c.outcome) || meetCardOf(c.outcome)));
@@ -147,14 +140,8 @@ function renderCheck(card) {
     : `${APP.keyAsks}** ${T.q(ask.step)} Which of the answers you have met so far fits this case?`;
   say(`**${prompt}`, '', ...optionLines(ask.step, among), '', '**Shown as soon as you answer**', '');
   say(`- If you are right: “Right: **${answer.n}.**” ${stepReason(c, ask.step)}${joined}`);
-  if (v.isGate && notLine(c)) say('  ' + notLine(c));
-  say(`- If you miss: “The answer is **${answer.n}.**” The same reason follows, and then a line about the answer you chose:`);
-  const near = nearOption(c, ask.step);
-  among.filter(id => id !== answer.id).forEach(id => {
-    const o = v.option(ask.step, id);
-    const neighbor = near && near.id === id && !(c.also || []).includes(id);
-    say(`  - If you chose **${o.n}**: ` + (c.miss && c.miss[id] ? T.t(c.miss[id], c) : neighbor ? T.t(c.not.why, c) : answerMiss(c, ask.step, id, answer.id).replace(/^You chose \*\*.*?\*\*\. /, '')));
-  });
+  say(`- If you miss: “The answer is **${answer.n}.**” The same reason follows, then one line on the answer you chose:`);
+  ownChoiceLines(c, ask.step, among, answer.id).forEach(l => say('  ' + l));
   say(teach);
 }
 
@@ -167,38 +154,25 @@ function renderCaseItem(c, ask) {
   if (shown.length) { say('Shown to you, with the words that decide each answer marked:'); shown.forEach(code => say(`- ${v.step(code).q} **${v.option(code, c.route[code][0]).n}**`)); say(''); }
   say(asked.length ? `**You are asked, in order:** ${asked.map(code => v.step(code).q).join(' → ')} → Name it.` : '**You are asked:** Which name goes with these answers?', '');
   say('**Shown as soon as you answer**', '', `- If you are right: “Right: ${T.o(c.outcome)}.” ${stepLine(c, last)}`);
-  if (notLine(c)) say('  ' + notLine(c));
-  say(asked.length ? '- If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:'
-                   : '- If you miss, you see the right name, the reason and the “why not” line above, and then:');
+  say(asked.length ? '- If you miss the name or any question, you see the right name and the reason for every question you answered (the first wrong one first), then one line on each wrong choice:'
+                   : '- If you miss, you see the right name and the reason, then one line on the name you chose:');
   asked.filter(code => code !== last).forEach(code => say(`  - ${stepLine(c, code)}`));
-  if (asked.includes(last)) ownChoiceLines(c, last).forEach(l => say('  ' + l));
+  if (asked.includes(last)) ownChoiceLines(c, last, allIds(last), c.route[last][0]).forEach(l => say('  ' + l));
   nameMissLines(c).forEach(l => say('  ' + l));
   if (asked.length) say('  - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.');
-  say(echoLine(c));
   if (c.wouldChange) say(`- What would make it a different name: ${T.t(c.wouldChange, c)}`);
   say(taughtOn(meetCardOf(c.outcome)));
 }
 
-// a case of a gate unit: one question, whose answer is the name. `whole` is true in the route stage and for
-// return cases, where the nearest wrong kind, the likeness and "what would make it a different name" are shown too.
+// a case of a gate unit: one question, whose answer is the name. `whole` is true in the route stage and for return cases,
+// whose link goes to the kind's own card rather than to the question's.
 function renderGateCase(c, whole) {
   const code = GATE, rightId = c.route[code][0], right = v.option(code, rightId);
   say(T.show(c), '', `**You are asked:** ${v.step(code).q}`, '', ...optionLines(code, allIds(code)), '', '**Shown as soon as you answer**', '');
   say(`- If you are right: “Right: **${right.n}.**” ${stepReason(c, code)}`);
-  if (notLine(c)) say('  ' + notLine(c));
-  say(`- If you miss: “The answer is **${right.n}.**” The same reason and the “why not” line follow, and then a line about the answer you chose:`);
-  const near = nearOption(c, code);
-  allIds(code).filter(id => id !== rightId).forEach(id => {
-    const o = v.option(code, id), entry = v.ledgerFor(id, rightId);
-    const tieForm = (c.also || []).includes(id);
-    const own = c.miss && c.miss[id] ? T.t(c.miss[id], c) : tieForm ? answerMiss(c, code, id, rightId).replace(/^You chose \*\*.*?\*\*\. /, '')
-      : near && near.id === id ? 'the “why not” line above.' : `built from the answers’ own wording: ${BUILT}`;
-    // E5.4: if the answer chosen and the right one are a pair whose card has been read, the pair's lines follow
-    const pair = entry && ledgerRead.has(entry.id) ? ` Then the lines from the card that compared the two: ${T.t(entry.shared)} ${T.t(entry.rule)} ${T.t(entry.test)}` : '';
-    say(`  - If you chose **${o.n}**: ${own}${whole ? pair : ''}`);
-  });
-  if (whole) say(echoLine(c));
-  if (whole && c.wouldChange) say(`- What would make it a different name: ${T.t(c.wouldChange, c)}`);
+  say(`- If you miss: “The answer is **${right.n}.**” The same reason follows, then one line on the answer you chose:`);
+  ownChoiceLines(c, code, allIds(code), rightId).forEach(l => say('  ' + l));
+  if (c.wouldChange) say(`- What would make it a different name: ${T.t(c.wouldChange, c)}`);
   say(taughtOn(whole ? meetCardOf(rightId) : questionCardOf(code)));
 }
 
@@ -212,7 +186,7 @@ function renderItem(item, rung) {
     const options = unit.ledger.filter(l => l.pair.includes(x) || l.pair.includes(y));
     say(`**You are asked:** You cannot decide whether a case is ${T.name(x)} or ${T.name(y)}. Which question do you put to the case?`, '',
       ...options.map(l => `- ${T.t(l.test)}`), '', '**Shown as soon as you answer**', '',
-      `- The answer is: “${T.t(entry.test)}” ${T.t(entry.shared)} ${T.t(entry.rule)}` + (tieLine(entry) ? ` ${tieLine(entry)}` : ''),
+      `- The answer is: “${T.t(entry.test)}” ${T.t(entry.rule)}`,
       ...options.filter(l => l !== entry).map(l => `- If you chose “${T.t(l.test)}”: that question separates ${T.names(l.pair)}.`),
       taughtOn(cardsInOrder.find(k => k.ledger === entry.id) || v.cards[entry.taughtIn]));
     return;
@@ -227,8 +201,8 @@ function renderItem(item, rung) {
     say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*`, '', T.show(c), '', `**You are asked:** ${v.key.gate.q}`, '',
       ...optionLines(GATE, allIds(GATE)), '', '**Shown as soon as you answer**', '',
       `- If you are right: “Right: **${v.option(GATE, c.route[GATE][0]).n}.**” ${stepReason(c, GATE)}`,
-      `- If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.`,
-      '- Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”');
+      `- If you miss: “The answer is …”, the same reason, then one line on the answer you chose.`,
+      `- Then, right or wrong: “${APP.stopsHere}”`);
     return;
   }
   if (typeof item === 'object' && item.fact) return renderFact(item.fact);
@@ -239,7 +213,7 @@ function renderItem(item, rung) {
     const right = codes.find(code => !answers(code, x).some(a => answers(code, y).includes(a)));
     say(`**You are asked:** You cannot tell whether a case is ${T.o(x)} or ${T.o(y)}. Which question tells these two apart?`, '',
       ...codes.map(code => `- ${v.step(code).q}`), '', '**Shown as soon as you answer**', '',
-      `- The answer is: **${v.step(right).q}** ${T.t(entry.shared)} ${T.t(entry.rule)} ${T.o(x)}: ${answers(right, x).join(' or ')}. ${T.o(y)}: ${answers(right, y).join(' or ')}.`,
+      `- The answer is: **${v.step(right).q}** ${T.t(entry.rule)} ${T.o(x)}: ${answers(right, x).join(' or ')}. ${T.o(y)}: ${answers(right, y).join(' or ')}.`,
       ...codes.filter(code => code !== right).map(code => `- If you chose “${v.step(code).q}”: “You chose that question. Both of these give the answer ${answers(code, x).filter(a => answers(code, y).includes(a)).join(' and ')}, so that question does not separate them.”`),
       taughtOnStep(right));
     return;
@@ -260,8 +234,8 @@ function renderItem(item, rung) {
     const code = item.step, right = c.route[code][0];
     say(T.show(c), '', `**You are asked:** ${v.step(code).q}`, '', ...optionLines(code, allIds(code)), '', '**Shown as soon as you answer**', '',
       `- If you are right: “Right: **${v.option(code, right).n}.**” ${stepReason(c, code)} This answer leads to ${T.names(v.option(code, right).keeps)}.`,
-      '- If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:',
-      ...ownChoiceLines(c, code).map(l => '  ' + l), taughtOnStep(code));
+      '- If you miss: “The answer is …”, the same reason, then one line on the answer you chose:',
+      ...ownChoiceLines(c, code, allIds(code), right).map(l => '  ' + l), taughtOnStep(code));
     return;
   }
   renderCaseItem(c, rung.ask);
@@ -280,7 +254,7 @@ function renderClaim(c, demo) {
     : '- If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”';
   if (demo) say('*Worked for you. Nothing is asked.*', '', `**The question:** ${question}`, '', ...choices, '', `**The answer:** ${answer}.`);
   else say(`**You are asked:** ${question}`, '', ...choices, '', '**Shown as soon as you answer**', '', `- The answer is: **${answer}.**`,
-    c.ask.type === 'missing' ? otherLine : `- If you chose another answer, the line is built from the answers’ own wording, as for any other question.`);
+    c.ask.type === 'missing' ? otherLine : `- If you chose another answer: one line on what that answer needs, and what the claim shows instead.`);
   say(`- The fault: ${T.t(c.fault)}`, `- The claim, put right (always the last thing shown): ${T.t(c.corrected)}`);
 }
 
@@ -288,26 +262,24 @@ function renderClaim(c, demo) {
 const earlierCount = unit.drill.rungs.reduce((n, r) => n + flat(r).filter(i => typeof i === 'object' && i.earlier).length, 0);
 const stageCount = unit.drill.rungs.length;
 const firstShown = v.priorSteps.length === 1 ? 'The first answer is shown.' : 'The first answers are shown.';
+// the app's SAY.stage, view.js
 const STAGE = {
-  name: 'The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.',
+  name: 'The answers are shown. Give the name.',
   piece: 'One question at a time.',
-  finish: `${firstShown} Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.`,
-  route: 'No help. Answer every question in order, then give the name.',
-  claim: 'Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.',
-  last: 'Each problem is worked up to its last step. The last step is yours: choose what it gives. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
-  whole: 'The whole problem is yours. Work it out, then choose the answer. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
-  fact: 'Each fact is asked from memory. The other facts from its card are the choices. Facts that are easy to swap are placed next to each other on purpose.'
+  finish: `${firstShown} Answer the rest, then give the name.`,
+  route: 'No help. Answer every question, then give the name.',
+  claim: 'Each is something a person might say. Find its fault before it is shown.',
+  last: 'Each problem is worked up to its last step. Do the last step.',
+  whole: 'Work each problem out, then choose the answer.',
+  fact: 'Answer each fact from memory.'
 };
-// A gate unit has three stages (A15). Its route is one question long, so two instructions are worded for that.
-const GATE_STAGE = {
-  piece: STAGE.piece,
-  route: 'No help. Whole cases, mixed together, and the later ones have a story that points the wrong way. In this unit there is one question, and its answer is the name.',
-  claim: STAGE.claim   // the app words the claim stage the same way in every kind of unit (view.js SAY.stage.claim)
-};
-const stageText = ask => ask === 'route' && unit.kind === 'P' ? 'No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.' : (v.isGate ? GATE_STAGE : STAGE)[ask];
-const drillIntro = v.isFacts ? `The cards are out of view from here. The drill has ${num(stageCount)} stage${stageCount === 1 ? '' : 's'}. ${APP.stakes} What you miss is asked again at least three items later, and every fact comes back on later days.` : `The cards are out of view from here, and every case is new. The drill has ${num(stageCount)} stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. `
-  + (earlierCount ? `${cap(num(earlierCount))} of the cases come from an earlier unit, without being labeled. ` : '')
-  + `${APP.stakes} What you miss is asked again before the drill ends, and every name comes back on later days with a new case.`;
+const stageText = ask => ask === 'route' && unit.kind === 'P' ? 'No help. Answer the questions, say what kind of problem it is, then solve it.'
+  : ask === 'route' && v.isGate ? 'No help. Name each case.' : STAGE[ask];
+// the app's SAY.drillIntro
+const drillIntro = (v.isFacts ? 'The cards are out of view. Facts that are easy to swap sit next to each other on purpose. '
+    : 'The cards are out of view, and every case is new. Cases that are easy to mix up sit next to each other on purpose. ')
+  + (earlierCount ? `${cap(num(earlierCount))} of the cases come${earlierCount === 1 ? 's' : ''} from an earlier unit. ` : '')
+  + 'Nothing is graded. What you miss comes back before the drill ends and on later days.';
 
 /* ---------- the document ---------- */
 const title = unit.title.fromKey ? v.option(...unit.title.fromKey.split('.')).n : unit.title.text;
@@ -321,7 +293,7 @@ say(`# Learner view: ${subject.meta.name}, Unit ${unit.tag}: ${title}`, '',
   '- The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.',
   '- Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.',
   '- "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.',
-  '- After every answer the app shows, in this order: the right answer; the reason, quoting the marked words; for a name, why the nearest wrong name fails; after a miss, a line about the answer the learner chose; and last a link to the card that taught it. Where a line about the learner’s own choice is not written for the case, the app builds it from the answers’ own wording, and this file says so in place of repeating it.', '');
+  '- After every answer the app shows: right or wrong; the reason, quoting the marked words; after a miss, one line on the answer the learner chose; and a link to the card that taught it.', '');
 
 let n = 0;
 unit.parts.forEach((part, pi) => {

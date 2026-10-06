@@ -15,15 +15,13 @@ const blocks = arr => arr.flatMap(p => [p, '']);
 export const APP = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
   route: 'Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.',
-  preview: n => `**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are ${num(n)} of them, and each gets its name when it is taught.`,
+  preview: n => `**The question this unit teaches.** With its answers. Beside each answer is what it leads to. Each card that follows explains one.`,
   // a gate unit: the answers are the names, so the preview has no second list
-  previewGate: n => `**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are ${num(n)} answers, and in this unit each answer is itself the name of a kind.`,
-  howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away.',
+  previewGate: n => `**The question this unit teaches.** With its answers. Beside each answer is what a case of that kind is made of. Each card that follows explains one.`,
+  howTaught: 'Each starts from a real case. After each one you answer a quick question, and the reason is shown right away.',
   pointTo: 'What you must be able to point to',
   inPlain: 'In plain words',
-  oneCase: 'This comes from one case so far. The next card tests it on a second case.',
   keyAsks: 'The question:',
-  keyAnswer: 'Its answer for a case like this one:',
   aka: (akas, name) => `You may also hear this called ${akas.map(x => `“${x}”`).join(' or ')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${name}.`,
   againHeading: name => `${name}: the same thing in a different story`,
   portraitHeading: name => `${name}: what it is like`,
@@ -38,7 +36,7 @@ export const APP = {
   ask: 'The question to ask when you spot it',
   act: 'What to do when you meet it',
   notOnRoute: 'Not asked for this one',
-  keyAlsoAsks: 'There is also this question, and its answer for a case like this one:',
+  stopsHere: 'The rest of this case comes in a later unit.',
   // procedure units (A12): the app's wording, view.js SAY
   solvedProblem: 'The problem', solvedResult: 'The result', workingLabel: 'The working, step by step',
   solvedStem: 'This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.',
@@ -47,9 +45,6 @@ export const APP = {
   solveRoute: 'Now work the problem with that procedure and choose the answer.',
   slipLine: (text, slip) => `You chose ${text}. That is the answer you get when ${slip}`,
   transferNote: 'One line is enough. It is kept on this device only and is never marked.',
-  // a gate unit's question card and worked cases: one question, and its answer is the name
-  gateAnswers: n => `In this unit each answer is itself the name of a kind, and so rules out the other ${num(n - 1)}.`,
-  gateWorked: others => `In this unit the answer is the name. Ruled out: ${others}.`,
   // fact units (A12): the app's wording, view.js SAY
   factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${num(facts)} fact${facts === 1 ? '' : 's'}, in ${num(groups)} group${groups === 1 ? '' : 's'}:`,
@@ -222,15 +217,10 @@ export function makeCardRenderers(v, T) {
 
   R.meet = card => {
     const c = C(card.case), oc = v.thing(v.subjectOf(card));
-    const out = [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c, [card.mark]), '', 'Stripped of its story, the case is this:', '',
+    const out = [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c, [card.mark]), '',
       ...list(T.P(card.strip, c)), '', ...blocks(T.P(card.explain, c)),
-      `**${APP.pointTo}.** ${cap(oc.needs)}. ${APP.oneCase}`, '',
-      `**${APP.keyAsks}** ${T.q(card.feature.step)}`, '',
-      `**${APP.keyAnswer}** ${T.a(card.feature.step, card.feature.option)}`, '',
-      // the name's answers to the unit's other questions (the app's meetOtherSteps)
-      ...(v.isGate ? [] : v.unitSteps().filter(st => st.code !== card.feature.step && v.answersFor(st.code, v.subjectOf(card)).length)
-        .flatMap(st => [`**${APP.keyAlsoAsks}** ${T.q(st.code)} ${v.answersFor(st.code, v.subjectOf(card)).map(o => T.a(st.code, o.id)).join(' or ')}`, ''])),
-      ...blocks(T.P(card.name, c))];
+      `**${APP.pointTo}.** ${cap(oc.needs)}.`, '',
+      ...blocks(T.P(card.name, c)), ...(card.act ? [`**${APP.act}**`, '', ...blocks(T.P(card.act, c))] : [])];
     while (out[out.length - 1] === '') out.pop();
     if (oc.aka.length) out.push('', APP.aka(oc.aka, T.name(oc.id)));
     return out;
@@ -286,7 +276,6 @@ export function makeCardRenderers(v, T) {
     const single = !gateStep && s.options.every(opt => opt.keeps.filter(id => taught.includes(id)).length === 1);
     const out = [T.t(card.link), '', `**${APP.keyAsks}** ${T.q(s.code)}`, '', `**What it is for.** ${s.purpose}.`, '',
       '**Its answers**', ''];
-    if (gateStep) out.push(APP.gateAnswers(s.options.length), '');
     if (single) out.push(`Each answer leads to one name, and so rules out the other ${num(taught.length - 1)}.`, '');
     s.options.forEach(opt => {
       out.push(`- ${T.a(s.code, opt.id)}`, `  - Give this answer when ${opt.when}.`);
@@ -302,9 +291,6 @@ export function makeCardRenderers(v, T) {
       entries.forEach(l => out.push(`- ${plainName(l.pair[0])} or ${plainName(l.pair[1])}: ${T.t(l.test)}` + (tieLine(l) ? ` ${tieLine(l)}` : '')));
       out.push('');
     }
-    // a pair with no look-alike or exception card of its own gets its side-by-side table here
-    v.unit.ledger.filter(l => l.step === s.code && l.taughtIn).forEach(l =>
-      out.push(`**${plainName(l.pair[0])} beside ${plainName(l.pair[1])}**`, '', ...pairTable(l), ''));
     return out;
   };
 
@@ -318,7 +304,7 @@ export function makeCardRenderers(v, T) {
       const s = v.step(st.step), opt = v.option(st.step, c.route[st.step][0]);
       out.push(`**Question ${i + 1} of ${card.steps.length}: ${s.q}**`, '', `What it is for: ${s.purpose.charAt(0).toLowerCase() + s.purpose.slice(1)}.` + (first ? ` ${s.why}` : ''), '', T.show(c, [st.step]), '',
         `Answer: ${T.a(st.step, opt.id)}`, '', ...blocks(T.P(st.reason, c)));
-      if (v.isGate) { out.push(APP.gateWorked(T.names(taught.filter(id => id !== own))), ''); return; }
+      if (v.isGate) return;
       live = live.filter(id => opt.keeps.includes(id));
       const gone = taught.filter(id => !live.includes(id));
       out.push((live.length === taught.length ? `Still possible: all ${num(taught.length)} names this unit teaches.` : `Still possible: ${T.names(live)}.`) + (gone.length ? ` Ruled out: ${T.names(gone)}.` : ''), '');
@@ -346,7 +332,7 @@ export function makeCardRenderers(v, T) {
       out.push('');
     });
     out.push(`**For each name: ${APP.pointTo.charAt(0).toLowerCase() + APP.pointTo.slice(1)}, and ${APP.ask.charAt(0).toLowerCase() + APP.ask.slice(1)}**`, '');
-    taught.forEach(id => out.push(`- ${T.name(id)}: ${v.thing(id).needs}.`, `  - Ask: ${T.P(portraitOf(id).ask).join(' ')}`, ...(portraitOf(id).act ? [`  - Do: ${T.P(portraitOf(id).act).join(' ')}`] : [])));
+    taught.forEach(id => out.push(`- ${T.name(id)}: ${v.thing(id).needs}.`, ...(portraitOf(id) ? [`  - Ask: ${T.P(portraitOf(id).ask).join(' ')}`] : []), ...(portraitOf(id) && portraitOf(id).act ? [`  - Do: ${T.P(portraitOf(id).act).join(' ')}`] : [])));
     out.push('', '**To carry away**', '', ...list(T.P(card.carry)));
     return out;
   };

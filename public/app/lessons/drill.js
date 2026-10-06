@@ -77,11 +77,8 @@ function stageQueue(v, rung){
 }
 function stageInstruction(v, rung){
   if(rung.ask === 'route' && v.unit.kind === 'P') return SAY.stage.routeSolve();
+  if(rung.ask === 'route' && v.isGate) return SAY.stage.routeGate();
   const say = SAY.stage[rung.ask] || lessonFail(`drill stage "${rung.ask}" has no instruction`);
-  if(rung.ask === 'name'){
-    const last = v.unitSteps[v.unitSteps.length - 1];
-    return say(last.options.every(o => o.keeps.filter(id => v.taught.includes(id)).length === 1));
-  }
   if(rung.ask === 'finish') return say(v.priorSteps.length);
   return say();
 }
@@ -105,7 +102,7 @@ function unitDrillRun(subj, v, context, fromAsk){
   const start = fromAsk ? Math.max(0, rungs.findIndex(r => r.ask === fromAsk)) : 0;
   const stages = rungs.slice(start).map(rung => ({ ask: rung.ask, instruction: stageInstruction(v, rung), demo: rung.demo || null, queue: stageQueue(v, rung), shownIntro: false }));
   const earlier = rungs.flatMap(r => r.items.flat()).filter(raw => typeof raw === 'object' && raw.earlier).length;
-  return { subj, v, context, title: context === 'again' ? 'Practice again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(rungs.length, earlier) : null,
+  return { subj, v, context, title: context === 'again' ? 'Practice again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(earlier, v.isFacts) : null,
            add: context === 'unit' ? v.unit.drill.add : null, stages, si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
 }
 // A run over items from several units (a returned set, the faulty-claims tile): one stage, whose items name their own unit.
@@ -167,7 +164,7 @@ function paintDrillIntro(host, run, onEnd){
   on('#start', () => { run.started = true; showNext(host, run, onEnd, '#host .readhead, #host .lesson'); }, host);
 }
 function paintStageIntro(host, run, stage, onEnd){
-  const ask = { v: run.v, T: lessonText(run.v), ledgerRead: new Set(run.v.unit.ledger.map(l => l.id)) };
+  const ask = { v: run.v, T: lessonText(run.v) };
   host.innerHTML = `<div class="readhead" style="padding:16px 0"><span class="m">${run.stages.length > 1 ? `Stage ${run.si + 1} of ${run.stages.length}` : 'One stage'}</span></div>
     <div class="lesson"><p>${esc(stage.instruction)}</p></div>
     ${stage.demo ? lessonSection('A claim worked for you. Nothing is asked.', claimDemoHtml(ask, run.v.caseById(stage.demo))) : ''}
@@ -203,7 +200,7 @@ function recordAnswer(run, stage, cur, outcome){
 }
 function paintItem(host, run, stage, onEnd){
   const cur = run.current, v = cur.v, T = lessonText(v);
-  const ask = { v, T, item: cur.item, state: cur.state, ledgerRead: new Set(v.unit.ledger.map(l => l.id)), taughtOn: what => taughtOnCard(v, T, what) };
+  const ask = { v, T, item: cur.item, state: cur.state, taughtOn: what => taughtOnCard(v, T, what) };
   const counts = runCounts(run);
   const paint = () => {
     host.innerHTML = `<div class="readhead" style="padding:16px 0">

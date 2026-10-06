@@ -104,7 +104,7 @@ function cardState(run, card){
 function checkAsk(run, card, ctx, cs){
   const { v, T } = run, afterStep = v.steps.some(s => s.code === card.after);
   const what = card.ask.type === 'fact' ? { fact: card.ask.row } : afterStep ? { step: card.after } : { name: card.after };
-  return { v, T, item: checkItem(ctx, card), state: cs.state, ledgerRead: ctx.ledgerRead, taughtOn: () => taughtOnCard(v, T, what) };
+  return { v, T, item: checkItem(ctx, card), state: cs.state, taughtOn: () => taughtOnCard(v, T, what) };
 }
 const cardAwaitsAnswer = (card, cs) => card.kind === 'check' ? !cs.state.done : cardAwaits(card, cs.ui);
 

@@ -24,12 +24,10 @@ const unitLabel = (data, unitId) => 'Unit ' + (data.units[unitId] || lessonFail(
 const SAY = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
   route: 'Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.',
-  preview: n => `This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are ${numWord(n)} of them, and each gets its name when it is taught.`,
-  howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away.',
+  preview: n => `The question this unit teaches, with its answers. Beside each answer is what it leads to. Each card that follows explains one.`,
+  howTaught: 'Each starts from a real case. After each one you answer a quick question, and the reason is shown right away.',
   pointTo: 'What you must be able to point to',
-  oneCase: 'This comes from one case so far. The next card tests it on a second case.',
   keyAsks: 'The question',
-  keyAnswer: 'Its answer for a case like this one',
   aka: (akas, nameHtml) => `You may also hear this called ${joinWords(akas.map(x => '“' + esc(x) + '”'), 'or')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${nameHtml}.`,
   againHeading: name => `${name}: the same thing in a different story`,
   portraitHeading: name => `${name}: what it is like`,
@@ -47,7 +45,6 @@ const SAY = {
   ask: 'The question to ask when you spot it',
   act: 'What to do when you meet it',
   notOnRoute: 'Not asked for this one',
-  keyAlsoAsks: 'There is also this question, and its answer for a case like this one:',
   transferNote: 'One line is enough. It is kept on this device only and is never marked.',
   draft: 'Draft: not yet read by a newcomer',
   endOfPart: (n, next) => `End of part ${n}. You can stop here; your place is kept. Next: part ${n + 1}, ${next}.`,
@@ -63,13 +60,13 @@ const SAY = {
   cardsNotReached: 'Not reached yet',
   theDrill: 'The drill',
   cardCount: n => `${n} cards`,
-  stopsHere: 'The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.',
+  stopsHere: 'The rest of this case comes in a later unit.',
   rightNameWrongRoute: 'Right name, wrong answer on the way',
   wouldChange: 'What would make it a different name',
-  likeness: 'When a likeness and the answers disagree, go by the words that answer the question.',
-  drillIntro: (stages, earlier) => `The cards are out of view from here, and every case is new. The drill has ${numWord(stages)} stage${stages === 1 ? '' : 's'}. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. `
-    + (earlier ? `${cap(numWord(earlier))} of the cases come${earlier === 1 ? 's' : ''} from an earlier unit, without being labeled. ` : '')
-    + 'Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.',
+  drillIntro: (earlier, isFacts) => (isFacts ? 'The cards are out of view. Facts that are easy to swap sit next to each other on purpose. '
+      : 'The cards are out of view, and every case is new. Cases that are easy to mix up sit next to each other on purpose. ')
+    + (earlier ? `${cap(numWord(earlier))} of the cases come${earlier === 1 ? 's' : ''} from an earlier unit. ` : '')
+    + 'Nothing is graded. What you miss comes back before the drill ends and on later days.',
   // fact units (A12)
   factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${numWord(facts)} fact${facts === 1 ? '' : 's'}, in ${numWord(groups)} group${groups === 1 ? '' : 's'}:`,
@@ -120,16 +117,17 @@ const SAY = {
   soundHead: 'Cases where nothing was wrong',
   unsoundHead: 'Cases where something was wrong',
   stage: {
-    last: () => 'Each problem is worked up to its last step. The last step is yours: choose what it gives. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
-    whole: () => 'The whole problem is yours. Work it out, then choose the answer. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
-    routeSolve: () => 'No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.',
-    fact: () => 'Each fact is asked from memory. The other facts from its card are the choices. Facts that are easy to swap are placed next to each other on purpose.',
-    name: single => 'The answers are shown for each case. Give the name that goes with them.' + (single ? ' This stage practices one thing: which name goes with which answer.' : ''),
+    last: () => 'Each problem is worked up to its last step. Do the last step.',
+    whole: () => 'Work each problem out, then choose the answer.',
+    routeSolve: () => 'No help. Answer the questions, say what kind of problem it is, then solve it.',
+    fact: () => 'Answer each fact from memory.',
+    name: () => 'The answers are shown. Give the name.',
     piece: () => 'One question at a time.',
-    finish: shownCount => `${shownCount === 1 ? 'The first answer is shown.' : 'The first answers are shown.'} Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.`,
-    route: () => 'No help. Answer every question in order, then give the name.',
-    claimsAlone: () => 'Each of these is something a person might say that uses one of the names you have been taught, or reasons in one of the ways you have been taught. Each has a fault. Answer before the fault is shown.',
-    claim: () => 'Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.'
+    finish: shownCount => `${shownCount === 1 ? 'The first answer is shown.' : 'The first answers are shown.'} Answer the rest, then give the name.`,
+    route: () => 'No help. Answer every question, then give the name.',
+    routeGate: () => 'No help. Name each case.',
+    claimsAlone: () => 'Each is something a person might say. Find its fault before it is shown.',
+    claim: () => 'Each is something a person might say. Find its fault before it is shown.'
   }
 };
 

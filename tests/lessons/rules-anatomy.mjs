@@ -22,19 +22,21 @@ export const V10 = unitRule('V10', (u, check) => {
 export const V51 = branchRule('V51', (u, check) => {
   const lens = u.cards.filter(c => c.kind === 'lens');
   const meets = u.cards.filter(c => c.kind === 'meet' && !c.continues);
-  check(lens.length === 1, `exactly one lens card is required, found ${lens.length}`);
+  // optional in a quick lesson (section 19); one at most, after the first name has been met
+  check(lens.length <= 1, `at most one lens card, found ${lens.length}`);
   if (lens.length !== 1) return;
-  check(u.pos(lens[0].id) > u.at('again', () => true) && u.at('again', () => true) >= 0, 'the lens must come after the first again card');
-  check(meets.length < 2 || u.pos(lens[0].id) < u.pos(meets[1].id), 'the lens must come before the second meet card');
+  check(meets.length > 0 && u.pos(lens[0].id) > u.pos(meets[0].id), 'the lens must come after the first meet card');
 });
 
 /* ---------- V11: each outcome's sequence ---------- */
 export const V11 = branchRule('V11', (u, check) => {
   for (const o of u.taught) {
+    // a quick lesson (section 19): a meet and a check for every name; again and portrait cards are optional, in that order
     const [meet, again, portrait] = ['meet', 'again', 'portrait'].map(kind => u.at(kind, c => c.outcome === o));
     const chk = u.at('check', c => c.after === o);
-    check([meet, again, portrait, chk].every(i => i >= 0), `${o}: needs a meet, an again, a portrait and a check`);
-    check(meet < again && again < portrait && portrait < chk, `${o}: meet, again, portrait, check must come in that order`);
+    check(meet >= 0 && chk >= 0, `${o}: needs a meet card and a check`);
+    const order = [meet, again, portrait, chk].filter(i => i >= 0);
+    check(order.every((p, i) => i === 0 || p > order[i - 1]), `${o}: meet, again, portrait, check must come in that order`);
     const chains = u.cards.filter(c => c.kind === 'meet' && c.outcome === o && !c.continues).length;
     check(chains === 1, `${o}: exactly one meet chain is required, found ${chains}`);
   }
@@ -63,7 +65,7 @@ export const V13 = branchRule('V13', (u, check) => {
 
 /* ---------- V14: look-alike cards ---------- */
 export const V14 = branchRule('V14', (u, check) => {
-  for (const o of u.taught) check(u.cards.some(c => c.kind === 'lookalike' && u.ledger(c.ledger).pair.includes(o)), `${o}: no lookalike card`);
+  // a look-alike card is for a pair people really confuse; every ledger pair is taught somewhere (V15), not every name needs a card
   const involving = u.cards.filter(c => ['lookalike', 'exception'].includes(c.kind));
   for (const c of involving) {
     for (const o of u.ledger(c.ledger).pair) check(u.pos(c.id) > u.at('check', k => k.after === o), `card ${c.id} comes before ${o} has had its check`);
@@ -190,7 +192,7 @@ function procedureWorked(u, check) {
   check(solved.every(c => !closing.includes(c.id)), 'every solved card must come before the drill, not in the close');
   for (const o of u.taught) {
     const own = solved.filter(c => c.outcome === o);
-    check(own.length >= 2, `${o}: at least two solved cards are required, found ${own.length}`);
+    check(own.length >= 1, `${o}: a solved card is required`);
     const settings = own.map(c => u.cases[c.problem] && u.cases[c.problem].setting);
     check(new Set(settings).size === settings.length, `${o}: its solved problems must be in different areas of life`);
   }
@@ -201,13 +203,16 @@ export const V18 = branchRule('V18', (u, check) => {
   if (u.kindName === 'procedure') return procedureWorked(u, check);
   const worked = u.cards.filter(c => c.kind === 'worked');
   const lastQuestion = Math.max(...u.cards.filter(c => c.kind === 'question').map(c => u.pos(c.id)));
-  check(worked.length >= 2, `at least two worked cards are required, found ${worked.length}`);
+  check(worked.length >= 1, 'a worked card is required');
   check(worked.every(c => u.pos(c.id) > lastQuestion), 'every worked card must come after every question card');
   const closing = u.unit.parts.flatMap(p => p.close || []);
   check(worked.every(c => !closing.includes(c.id)), 'every worked card must come before the drill, not in the close');
   if (worked.length === 0) return;
-  check(u.cases[worked[0].case].tier === 'clean', 'the first worked case must be clean');
-  check(u.cases[worked[worked.length - 1].case].tier === 'misleading', 'the last worked case must be misleading');
+  // with two or more, clean first and misleading last; a single worked case (section 19) may be either
+  if (worked.length > 1) {
+    check(u.cases[worked[0].case].tier === 'clean', 'the first worked case must be clean');
+    check(u.cases[worked[worked.length - 1].case].tier === 'misleading', 'the last worked case must be misleading');
+  }
   worked.forEach((w, i) => checkEach(check, `card ${w.id}`, workedProblems(u, w, i === worked.length - 1)));
 });
 
@@ -271,7 +276,8 @@ export const V25 = unitRule('V25', (u, check) => {
   check(Boolean(last.drill) && parts.filter(p => p.drill).length === 1, 'the last part, and only the last, holds the drill');
   const closing = (last.close || []).map(id => u.card(id).kind);
   // a fact unit closes with a recap that prints every fact, and has no transfer (A12)
-  const expected = ['recap', ...(u.kindName === 'fact' ? [] : ['transfer']), ...(u.meta.action ? ['plan'] : [])];
+  // recap, then transfer if the unit has one (optional in a quick lesson, section 19), then plan in an action subject
+  const expected = ['recap', ...(closing.includes('transfer') ? ['transfer'] : []), ...(u.meta.action ? ['plan'] : [])];
   check(closing.join() === expected.join(), `the unit must close with ${expected.join(', ')}; it closes with ${closing.join(', ') || 'nothing'}`);
   const transfer = u.cards.find(c => c.kind === 'transfer');
   const names = u.isGate ? u.unit.teaches.families : u.taught;
@@ -325,7 +331,8 @@ export const V57 = unitRule('V57', (u, check) => {
 // subject says what to do when you meet it (`act`), so the unit ends in an action and not only in a diagnosis.
 export const V59 = unitRule('V59', (u, check) => {
   if (!u.meta.action) return;
-  for (const c of u.cards.filter(k => k.kind === 'portrait')) check(isFilled(c.act), `card ${c.id}: an action subject's portrait needs "act", what to do when you meet it`);
+  // every name says what to do when you meet it, on its meet card or its portrait (portraits are optional, section 19)
+  for (const o of u.taught) check(u.cards.some(c => ['meet', 'portrait'].includes(c.kind) && c.outcome === o && isFilled(c.act)), `${o}: an action subject says what to do when you meet it ("act" on its meet card or portrait)`);
 }, { kinds: BRANCH_LIKE });
 
 export const RULES_ANATOMY = [V59, V10, V11, V12, V13, V14, V15, V16, V17, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55, V57];

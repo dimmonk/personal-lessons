@@ -217,7 +217,7 @@ async function probeProc(env) {
     const plan = await drillPlan(page, true);   // the route and the kind of problem right, the number wrong
     for (const sel of plan.clicks) await page.click(sel);
     const routed = await unitText(page);
-    return /Right: Percent of an amount/.test(routed) && /Answers right/.test(routed) && /The answer is: £33/.test(routed) && /Why not Percent change/.test(routed) && /This case may have brought back The rent/.test(routed);
+    return /Right: Percent of an amount/.test(routed) && /Answers right/.test(routed) && /The answer is: £33/.test(routed) && /The working, step by step/.test(routed) && !/Why not|brought back/.test(routed);
   });
   const t = await storedTries(page, S, 'u1/dr-of3');
   out.procRecords = t.length >= 1 && t[t.length - 1].mode === 'route' && t[t.length - 1].ok === false && t[t.length - 1].name === 'of' && JSON.stringify([...new Set(drilled.map(d => d.mode))]) === '["last","whole","route"]';

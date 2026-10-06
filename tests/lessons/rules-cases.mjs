@@ -91,7 +91,7 @@ function V33(ctx, check) {
   if (!isUnit(ctx)) return;
   for (const o of ctx.taught) {
     const spanned = unique(ctx.caseList.filter(c => c.outcome === o).map(c => c.setting));
-    check(spanned.length >= 3, `${o}: its cases span only ${spanned.length} settings`);
+    check(spanned.length >= 2, `${o}: its cases span only ${spanned.length} settings`);
   }
 }
 

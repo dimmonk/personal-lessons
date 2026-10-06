@@ -11,7 +11,7 @@
 //   { type:'separator', entry, codes:[code], right:code, mode }                  which of the unit's questions tells a pair apart
 //   { type:'fact', row, target, mode, joined? }                                  a fact asked from memory (fact units)
 //   { type:'problem', c, solve:'last'|'whole'|'route', shown, asked, askName, names, mode }   a problem solved (procedure units)
-// ask = { v, T, item, state, ledgerRead:Set, taughtOn(what) -> { cardId, heading } | { text } | null }
+// ask = { v, T, item, state, taughtOn(what) -> { cardId, heading } | { text } | null }
 // state = { answers:{}, name:null, picked:null, order:[], done:false, open:false }
 
 const freshAsk = () => ({ answers: {}, name: null, picked: null, order: null, done: false, open: false });
@@ -40,25 +40,21 @@ function answerMiss(ask, c, code, chosenId){
   const { v, T } = ask;
   if(c.miss && c.miss[chosenId]) return T.t(paras(c.miss[chosenId]).join(' '), c);
   const chosen = v.option(code, chosenId), right = v.option(code, rightAnswers(c, code)[0]);
-  const target = caseTarget(v, c);
   // the tie-break form is used only where the case really shows both answers, so two lines never contradict
   const tie = (c.also || []).includes(chosenId) && v.tieBreak(code, chosenId, right.id);
   if(tie && tie.loser === chosenId)
     return `You chose ${T.kw(chosen.n)}. This case does show that. It also shows ${esc(tie.say)}, and when a case shows both, the answer is ${T.kw(right.n)}.`;
-  // the nearest wrong name's reason is the line for the near answer, unless a name is asked: then "Why not" already prints it
-  if(c.not && !ask.item.askName && v.isOutcome(target) && chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome)
+  // the nearest wrong name's reason is the line for its answer: in a gate unit the answer is that name, elsewhere the answer that leads only to it
+  if(c.not && (chosen.id === c.not.outcome || (chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome)))
     return T.t(paras(c.not.why).join(' '), c);
-  return `You chose ${T.kw(chosen.n)}. Give that answer when ${esc(chosen.when)}. This case shows something else: ${esc(right.when)}.`;
+  return `You chose ${T.kw(chosen.n)}. Give that answer when ${esc(chosen.when)}. This case shows something else: ${esc(right.when.replace(/^the case shows /, ''))}.`;   // a gate's lines open with "the case shows"
 }
-// the line about a wrong name
+// the one line about a wrong name: the case's own, else the nearest wrong name's reason, else built from the two names' needs
 function nameMiss(ask, c, chosenId){
   const { v, T } = ask, target = caseTarget(v, c);
   if(c.miss && c.miss[chosenId]) return T.t(paras(c.miss[chosenId]).join(' '), c);
-  const entry = v.ledgerFor ? v.ledgerFor(target, chosenId) : null;
-  const own = `${T.o(chosenId)} needs ${esc(v.thing(chosenId).needs)}. This case shows something else: ${esc(v.thing(target).needs)}.`;
-  return entry && ask.ledgerRead.has(entry.id)
-    ? `${own}</p><p>${T.t(paras(entry.shared).join(' '))} ${T.t(paras(entry.rule).join(' '))} ${T.t(paras(entry.test).join(' '))}`
-    : own;
+  if(c.not && c.not.outcome === chosenId) return T.t(paras(c.not.why).join(' '), c);
+  return `${T.o(chosenId)} needs ${esc(v.thing(chosenId).needs)}. This case shows something else: ${esc(v.thing(target).needs)}.`;
 }
 function taughtOnLine(ask, what){
   const hit = ask.taughtOn ? ask.taughtOn(what) : null;
@@ -98,16 +94,11 @@ function caseFeedback(ask){
     ? ` This answer leads to ${T.names(v.option(last, rightAnswers(c, last)[0]).keeps.filter(v.isOutcome))}.` : '');
   out.push(`<div class="vblock"><span class="m">Why</span>${reasonSteps.map(code => stepLine(ask, c, code)).join('')}${joined ? `<p>${joined}</p>` : ''}</div>`);
   const rest = [];
-  if(item.askName && c.not) rest.push(`<div class="vblock soft"><span class="m">Why not ${esc(v.nameOf(c.not.outcome))}</span><p>${T.t(paras(c.not.why).join(' '), c)}</p></div>`);
   const own = [
     ...res.wrongSteps.map(code => answerMiss(ask, c, code, state.answers[code])),
     ...(item.askName && !res.nameOk ? [nameMiss(ask, c, state.name)] : [])
   ];
   if(own.length) rest.push(`<div class="vblock"><span class="m">Your answer</span>${own.map(l => `<p>${l}</p>`).join('')}</div>`);
-  if(!res.ok && c.echo){
-    const echo = v.caseById(c.echo);
-    rest.push(`<div class="vblock soft"><span class="m">A likeness</span><p>This case may have brought back <i>${esc(echo.name)}</i>, which was ${T.o(caseTarget(v, echo))}. ${SAY.likeness}</p></div>`);
-  }
   if(c.wouldChange && item.asked.length) rest.push(`<div class="vblock soft"><span class="m">${SAY.wouldChange}</span><p>${T.t(paras(c.wouldChange).join(' '), c)}</p></div>`);
   if(item.stops) rest.push(`<p class="stopline">${SAY.stopsHere}</p>`);
   rest.push(taughtOnLine(ask, item.askName ? { name: target } : { step: last }));
@@ -189,9 +180,8 @@ function tellHtml(ask){
   const stem = `You cannot decide whether a case is ${T.o(x)} or ${T.o(y)}. Which question do you put to the case?`;
   if(state.picked === null) return promptStem(stem) + `<div class="opts">${order.map(l => `<button class="opt" data-pick="${esc(l.id)}">${T.t(paras(l.test).join(' '))}</button>`).join('')}</div></div>`;
   const ok = state.picked === entry.id, chosen = v.ledger(state.picked);
-  const tie = tieLine(ask, entry);
   return `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${answerHead(ok, T.t(paras(entry.test).join(' ')))}
-    <div class="vblock"><span class="m">Why</span><p>${T.t(paras(entry.shared).join(' '))} ${T.t(paras(entry.rule).join(' '))}${tie ? ' ' + tie : ''}</p></div>
+    <div class="vblock"><span class="m">Why</span><p>${T.t(paras(entry.rule).join(' '))}</p></div>
     ${ok ? '' : `<div class="vblock"><span class="m">Your answer</span><p>That question separates ${T.names(chosen.pair)}.</p></div>`}
     ${taughtOnLine(ask, { ledger: entry.id })}</div>`;
 }
@@ -268,7 +258,7 @@ function separatorHtml(ask){
   const shared = pairAnswers(v, state.picked, x).filter(a => pairAnswers(v, state.picked, y).some(b => b.id === a.id));
   const own = ok ? '' : SAY.separatorSame(T.kw('“' + esc(v.step(state.picked).q) + '”'), joinWords(shared.map(o => T.kw(o.n))));
   return `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${answerHead(ok, esc(q))}
-    <div class="vblock"><span class="m">Why</span><p>${T.t(paras(item.entry.shared).join(' '))} ${T.t(paras(item.entry.rule).join(' '))}</p>
+    <div class="vblock"><span class="m">Why</span><p>${T.t(paras(item.entry.rule).join(' '))}</p>
       <p>${T.o(x)}: ${esc(answersText(v, item.right, x))}. ${T.o(y)}: ${esc(answersText(v, item.right, y))}.</p></div>
     ${own ? `<div class="vblock"><span class="m">Your answer</span><p>${own}</p></div>` : ''}
     ${taughtOnLine(ask, { step: item.right })}</div>`;
@@ -290,9 +280,7 @@ function factHtml(ask){
   if(state.picked === null) return promptStem(stem)
     + `<div class="opts">${state.order.map(i => `<button class="opt" data-pick="${esc(rows[i].id)}">${esc(rows[i].a)}</button>`).join('')}</div></div>`;
   const chosen = rows.find(r => r.id === state.picked), ok = chosen.id === row.id;
-  const entry = !ok && v.ledgerFor ? v.ledgerFor(row.id, chosen.id) : null;
-  const own = ok ? '' : `<p>${SAY.factSwapped(T.kw(chosen.a), esc(chosen.q))}</p>`
-    + (entry && ask.ledgerRead.has(entry.id) ? `<p>${T.t(paras(entry.shared).join(' '))} ${T.t(paras(entry.rule).join(' '))} ${T.t(paras(entry.test).join(' '))}</p>` : '');
+  const own = ok ? '' : `<p>${SAY.factSwapped(T.kw(chosen.a), esc(chosen.q))}</p>`;
   return `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${answerHead(ok, esc(row.a))}
     <div class="vblock"><span class="m">Why</span>${T.P(row.relates, null).map(p => `<p>${p}</p>`).join('')}${item.joined ? `<p>${item.joined}</p>` : ''}</div>
     ${own ? `<div class="vblock"><span class="m">Your answer</span>${own}</div>` : ''}
@@ -328,9 +316,7 @@ function problemFeedback(ask){
     + (routed && res.nameOk && !res.routeOk ? `<div class="warn"><span class="verdictline">${SAY.rightNameWrongRoute}.</span> A right name reached by a wrong answer on the way counts as a miss.</div>` : '')
     + `<div class="vblock"><span class="m">${esc(SAY.workingLabel)}</span><div class="steps">${working}</div>${T.PP(c.why, c)}${item.joined ? `<p>${item.joined}</p>` : ''}</div>`
     + routeLines
-    + (routed && c.not ? `<div class="vblock soft"><span class="m">Why not ${esc(v.nameOf(c.not.outcome))}</span><p>${T.t(paras(c.not.why).join(' '), c)}</p></div>` : '')
     + (own.length ? `<div class="vblock"><span class="m">Your answer</span>${own.map(l => `<p>${l}</p>`).join('')}</div>` : '')
-    + (!(numOk && res.ok) && c.echo ? `<div class="vblock soft"><span class="m">A likeness</span><p>This case may have brought back <i>${esc(v.caseById(c.echo).name)}</i>, which was ${T.o(caseTarget(v, v.caseById(c.echo)))}. ${SAY.likeness}</p></div>` : '')
     + (routed && c.wouldChange ? `<div class="vblock soft"><span class="m">${SAY.wouldChange}</span><p>${T.t(paras(c.wouldChange).join(' '), c)}</p></div>` : '')
     + taughtOnLine(ask, routed ? { name: target } : { solved: target });
 }

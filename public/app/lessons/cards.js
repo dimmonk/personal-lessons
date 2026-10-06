@@ -123,22 +123,13 @@ CARD.term = (ctx, card) => {
     + T.PP(card.after, c);
 };
 
-// In a branch of two or more questions, the meet card also prints this name's answer to the unit's other questions, from the key,
-// so the whole route through the branch is on the card that introduces the name (A3; a question's words may be printed before its card, A2)
-function meetOtherSteps(v, T, card, id){
-  if(!v.isOutcome(id)) return '';
-  const others = v.unitSteps.filter(s => s.code !== card.feature.step && v.answersFor(s.code, id).length);
-  return others.map(s => lessonSection(SAY.keyAlsoAsks, `<p>${T.q(s.code)}</p><p>${v.answersFor(s.code, id).map(o => T.a(s.code, o.id)).join(' or ')}</p>`)).join('');
-}
 CARD.meet = (ctx, card) => {
   const { v, T } = ctx, c = v.caseById(card.case), id = card.outcome || card.family, thing = v.thing(id);
   return `<p>${T.t(card.link)}</p>${T.caseName(c)}${T.show(c, [card.mark])}`
-    + `<p>Stripped of its story, the case is this:</p>${lessonList(T.P(card.strip, c))}${T.PP(card.explain, c)}`
-    + lessonSection(SAY.pointTo, `<p>${esc(cap(thing.needs))}. ${SAY.oneCase}</p>`)
-    + lessonSection(SAY.keyAsks, `<p>${T.q(card.feature.step)}</p>`)
-    + lessonSection(SAY.keyAnswer, `<p>${T.a(card.feature.step, card.feature.option)}</p>`)
-    + meetOtherSteps(v, T, card, id)
+    + lessonList(T.P(card.strip, c)) + T.PP(card.explain, c)
+    + lessonSection(SAY.pointTo, `<p>${esc(cap(thing.needs))}.</p>`)
     + T.PP(card.name, c)
+    + (card.act ? lessonSection(SAY.act, T.PP(card.act, c)) : '')
     + (thing.aka && thing.aka.length ? `<p>${SAY.aka(thing.aka, T.o(id))}</p>` : '');
 };
 
@@ -214,7 +205,6 @@ CARD.question = (ctx, card) => {
     return `<li>${T.a(s.code, opt.id)}<ul><li>Give this answer when ${esc(opt.when)}.</li>${leads}</ul></li>`;
   }).join('');
   const entries = v.unit.ledger.filter(l => l.step === s.code && ctx.ledgerRead.has(l.id));
-  const tableHere = v.unit.ledger.filter(l => l.step === s.code && l.taughtIn && !v.cardOrder.some(id => v.card(id).ledger === l.id));
   return `<p>${T.t(card.link)}</p>`
     + lessonSection(SAY.keyAsks, `<p>${T.q(s.code)}</p>`)
     + lessonSection('What it is for', `<p>${esc(s.purpose)}.</p>`)
@@ -223,8 +213,7 @@ CARD.question = (ctx, card) => {
     + lessonSection('Why it decides', `<p>${esc(s.why)}</p>${T.PP(card.decides)}`)
     + lessonSection('How to answer it from a case', T.PP(card.how))
     + (entries.length ? lessonSection('When two answers both seem to fit', T.PP(card.whenBoth)
-        + lessonList(entries.map(l => `${esc(v.nameOf(l.pair[0]))} or ${esc(v.nameOf(l.pair[1]))}: ${T.t(l.test)}${tieLine(ctx, l) ? ' ' + tieLine(ctx, l) : ''}`))) : '')
-    + tableHere.map(l => lessonSection(`${v.nameOf(l.pair[0])} beside ${v.nameOf(l.pair[1])}`, pairTable(ctx, l))).join('');
+        + lessonList(entries.map(l => `${esc(v.nameOf(l.pair[0]))} or ${esc(v.nameOf(l.pair[1]))}: ${T.t(l.test)}${tieLine(ctx, l) ? ' ' + tieLine(ctx, l) : ''}`))) : '');
 };
 
 // A worked case is several screens: one per key question, then the name, the hold-back prompt and the second look.
@@ -254,13 +243,13 @@ CARD.worked = (ctx, card) => {
       + `<p class="stem">${esc(s.q)}</p>`
       + `<p class="forline">What it is for: ${esc(lowerFirst(s.purpose))}.${fullWhy ? ' ' + esc(s.why) : ''}</p>`
       + `<p class="forline">Answer: ${T.a(st.step, opt.id)}</p></div></div>`
-      + `<div class="lesson">${T.PP(st.reason, c)}</div>` + readout(live);
+      + `<div class="lesson">${T.PP(st.reason, c)}</div>` + (v.isGate ? '' : readout(live));   // a gate's one answer is the name
   }
   const p = card.hold.prompt, right = p.choices.find(x => x.id === p.answer);
   const picked = ui.picked === null ? null : p.choices.find(x => x.id === ui.picked);
   return head + T.show(c, card.steps.map(st => st.step))
     + `<div class="steps">${card.steps.map(doneRow).join('')}</div>`
-    + lessonSection('Name it', `<p>${T.o(target)}</p>`)
+    + (v.isGate ? '' : lessonSection('Name it', `<p>${T.o(target)}</p>`))
     + (picked === null
         ? promptStem((p.lead ? T.t(paras(p.lead).join(' '), c) + ' ' : '') + SAY.holdStem(T.o(target), T.o(card.hold.neighbor)))
           + `<div class="opts">${p.choices.map(x => `<button class="opt" data-pick="${esc(x.id)}">${T.t(x.text, c)}</button>`).join('')}</div></div>`

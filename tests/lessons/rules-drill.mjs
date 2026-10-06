@@ -7,14 +7,16 @@ import { duplicatesOf } from './text.mjs';
 
 const kindRule = (kinds, id, run) => unitRule(id, run, { kinds });
 const branchRule = (id, run) => kindRule(BRANCH_LIKE, id, run);
-const REQUIRED_STAGES = { branch: ['name', 'piece', 'finish', 'route'], gate: ['piece', 'route'], fact: ['fact'], procedure: ['last', 'whole', 'route'] };
-const STAGE_ORDER = { branch: [...REQUIRED_STAGES.branch, 'claim'], gate: [...REQUIRED_STAGES.gate, 'claim'], fact: REQUIRED_STAGES.fact, procedure: REQUIRED_STAGES.procedure };
+// a quick lesson (section 19): the stages that carry the skill are required; naming, finishing, last-step and whole-problem stages are optional
+const REQUIRED_STAGES = { branch: ['piece', 'route'], gate: ['piece', 'route'], fact: ['fact'], procedure: ['route'] };
+const STAGE_ORDER = { branch: ['name', 'piece', 'finish', 'route', 'claim'], gate: ['piece', 'route', 'claim'], fact: ['fact'], procedure: ['last', 'whole', 'route'] };
 const TIER_ORDER = ['clean', 'varied', 'misleading'];
 const GROUPED_STAGES = { branch: ['name', 'finish', 'route'], procedure: ['last', 'whole', 'route'] };
-const MIN_ROUTE_ITEMS = 2;
+const MIN_ROUTE_ITEMS = 1;
+const hasStage = (u, ask) => u.unit.drill.rungs.some(r => r.ask === ask);
 const MIN_GROUP_CASES = 2;
-const RETURNS_PER_OUTCOME = 3;
-const RETURNS_PER_OUTCOME_ACTION = 4;
+const RETURNS_PER_OUTCOME = 1;
+const RETURNS_PER_OUTCOME_ACTION = 2;
 
 /* ---------- V38: stage order ---------- */
 export const V38 = unitRule('V38', (u, check) => {
@@ -30,16 +32,15 @@ function branchPractice(u, check) {
   const name = u.flat(u.rung('name')).map(u.caseOf);
   const piece = u.flat(u.rung('piece'));
   for (const o of u.taught) {
-    check(name.some(c => c && c.outcome === o), `${o}: never the answer of a name item`);
+    if (hasStage(u, 'name')) check(name.some(c => c && c.outcome === o), `${o}: never the answer of a name item`);
     check(u.routeCases.filter(c => c.outcome === o).length >= MIN_ROUTE_ITEMS, `${o}: fewer than ${MIN_ROUTE_ITEMS} route items`);
-    check(piece.some(i => { const c = u.caseOf(i); return c && c.kind === 'reverse' && c.outcome === o; }), `${o}: no reverse item in the piece stage`);
   }
   u.unit.teaches.steps.forEach(code => check(piece.some(i => i.step === code), `${code}: never asked alone in the piece stage`));
 }
 // a procedure type is practiced on a problem with the working shown to the last step, on a whole problem, and on mixed routes (A12)
 function procedurePractice(u, check) {
   for (const o of u.taught) {
-    ['last', 'whole'].forEach(stage => check(u.flat(u.rung(stage)).map(u.caseOf).some(c => c && c.outcome === o), `${o}: never the problem of a ${stage} item`));
+    ['last', 'whole'].filter(stage => hasStage(u, stage)).forEach(stage => check(u.flat(u.rung(stage)).map(u.caseOf).some(c => c && c.outcome === o), `${o}: never the problem of a ${stage} item`));
     check(u.routeCases.filter(c => c.outcome === o).length >= MIN_ROUTE_ITEMS, `${o}: fewer than ${MIN_ROUTE_ITEMS} route items`);
   }
   u.unit.drill.rungs.forEach(r => u.flat(r).map(u.caseOf).filter(Boolean).forEach(c => check(c.kind === 'problem', `${c.id}: a ${r.ask} item must be a problem`)));

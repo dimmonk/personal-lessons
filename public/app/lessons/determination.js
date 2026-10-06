@@ -43,10 +43,9 @@ function specimenStats(sv){
 // ask.js wants a unit view. A determination runs across the whole subject, so its view holds every unit's look-alike entries.
 function detView(sv){
   const entries = sv.unitIds().flatMap(unitId => unitView(sv.subjectId, unitId).unit.ledger);
-  const find = (a, b) => entries.find(l => l.pair.includes(a) && l.pair.includes(b) && a !== b) || null;
   return { ...sv, unitId: null, unit: { rev: sv.meta.rev, assumes: [], ledger: entries, drill: { returns: [] } }, isGate: false,
            taught: sv.key.outcomes.map(o => o.id), cardOrder: [], card: id => lessonFail(`a determination has no cards: ${id}`),
-           ledger: id => entries.find(l => l.id === id) || lessonFail(`unknown look-alike entry ${id}`), ledgerFor: find, nameOf: id => sv.thing(id).n };
+           ledger: id => entries.find(l => l.id === id) || lessonFail(`unknown look-alike entry ${id}`), nameOf: id => sv.thing(id).n };
 }
 function detTaughtOn(sv, what){
   const entry = what.ledger ? sv.unitIds().find(unitId => unitView(sv.subjectId, unitId).unit.ledger.some(l => l.id === what.ledger)) : null;
@@ -122,8 +121,7 @@ function paintDetAsk(subj, sv){
   if(!sp){ DET = { ...DET, phase: 'done' }; logEvent('set', { subject: subj.id }); return paintDetDone(subj, sv); }
   if(!DET.cur || DET.cur.id !== sp.id) DET.cur = { id: sp.id, state: freshAsk(), item: specimenItem(sv, sp, DET.mode) };
   const { item, state } = DET.cur, view = detView(sv), T = lessonText(view);
-  const readUnits = sv.unitIds().filter(id => rebuiltUnitDone(sv.subjectId, id)).flatMap(id => unitView(sv.subjectId, id).unit.ledger.map(l => l.id));
-  const ask = { v: view, T, item, state, ledgerRead: new Set(readUnits), taughtOn: what => detTaughtOn(sv, what) };
+  const ask = { v: view, T, item, state, taughtOn: what => detTaughtOn(sv, what) };
   const paint = () => {
     detFrame(subj, `Case ${DET.i + 1} of ${DET.queue.length}`, `${DET.mode === 'anyway' ? `<p class="forline">${esc(DET_SAY.anywayNote)}</p>` : ''}
       <div id="detcase">${askHtml(ask)}</div>${keyDetails(sv)}`,

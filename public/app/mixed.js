@@ -60,7 +60,7 @@ function buildMixed(n){
 
 function renderMixedAsk(M, entry){
   const { s: subj, built } = entry, v = built.v, T = lessonText(v), state = entry.state;
-  const ask = { v, T, item: built.item, state, ledgerRead: new Set(v.unit.ledger.map(l => l.id)), taughtOn: what => taughtOnCard(v, T, what) };
+  const ask = { v, T, item: built.item, state, taughtOn: what => taughtOnCard(v, T, what) };
   const last = M.i === M.items.length - 1;
   const paint = () => {
     screenEl().innerHTML = `<div class="pane" style="--accent:${subj.accent}">

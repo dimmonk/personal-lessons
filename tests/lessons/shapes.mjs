@@ -65,7 +65,7 @@ export const CARDS = {
   orient: card('orient', { h: str, canDo: text, everyday: text }, { map: obj({ branch: str }), add: text }),
   term: card('term', { term: str, h: str, link: text, case: str, plain: text }, { after: text }),
   // meet, again and portrait are about an outcome, or in a gate unit about a family (A15)
-  meet: byThing('meet', { link: text, case: str, mark: str, strip: arr(text), explain: text, feature: obj({ step: str, option: str }), name: text }),
+  meet: byThing('meet', { link: text, case: str, mark: str, strip: arr(text), explain: text, feature: obj({ step: str, option: str }), name: text }, { act: text }),
   again: byThing('again', { link: text, first: str, second: str, step: str, instruction: text, prompt: commit.phrase, shared: text }, { h: str }),
   lens: card('lens', { h: str, link: text, body: text, fixed: text, varies: strings }),
   // act: what to do when you meet it; required in an action subject's branch units (P26, V59)
