@@ -65,7 +65,7 @@ function saveSeen(subjectId, next){
 function saveSeenUnit(subjectId, unitId, entry){
   saveSeen(subjectId, { ...seenOf(subjectId), [unitId]: entry });
 }
-// A rebuilt unit counts as done only when it was finished at standard 1 (a finish under the old lessons has rev 0).
+// A unit counts as done only when it was finished at standard 1 (a finish under the old lessons has rev 0).
 const rebuiltUnitDone = (subjectId, unitId) => {
   const s = seenOf(subjectId)[unitId];
   return !!(s && s.done && s.rev >= 1);
@@ -115,15 +115,12 @@ function logEvent(type, detail){
 }
 
 /* ---------- one-time migration of old progress (lesson standard E8) ---------- */
-// Old progress was { u, card, phase, done[] } by unit index under pl:<subject>:course. It is read once,
-// re-keyed by unit id into pl:<subject>:seen, and never written again. Safe to run again: it only runs
-// while no `seen` record exists. unitIds is the subject's committed map from old unit index to unit id.
-function legacyPlace(course){
-  if(course.phase === 'drill') return 'drill';
-  if(course.phase === 'unitdone') return null;
-  return 'card:' + (course.card || 0);
-}
-function migrateProgress(subjectId, unitIds, rebuilt){
+// The lessons before standard 1 kept the learner's place as { u, card, phase, done[] } by unit index, under pl:<subject>:course.
+// That is read once, re-keyed by unit id into pl:<subject>:seen, and never written again. Safe to run again: it only runs while
+// no `seen` record exists. unitIds is the subject's map from old unit index to unit id (its subject record's units, in order).
+// A unit finished under the old lessons has since been rebuilt, so it starts again: its key wording was never shown to the learner.
+// Any other old place (a unit that was only open) has no place worth keeping.
+function migrateProgress(subjectId, unitIds){
   const seenKey = `pl:${subjectId}:seen`;
   if(storageRead(seenKey)) return;
   const old = storageRead(`pl:${subjectId}:course`);
@@ -131,15 +128,7 @@ function migrateProgress(subjectId, unitIds, rebuilt){
   const done = Array.isArray(old.done) ? old.done : [];
   const seen = {};
   unitIds.forEach((unitId, i) => {
-    const wasDone = !!done[i], here = old.u === i;
-    if(!wasDone && !here) return;
-    // a unit finished under the old lessons and since rebuilt starts again: its key wording was never shown.
-    // A rebuilt unit that was only open has no old place worth keeping.
-    if(rebuilt(unitId)){
-      if(wasDone) seen[unitId] = { rev: 0, done: false, at: null };
-      return;
-    }
-    seen[unitId] = { rev: 0, done: wasDone, at: here && !wasDone ? legacyPlace(old) : null };
+    if(done[i]) seen[unitId] = { rev: 0, done: false, at: null };
   });
   saveSeen(subjectId, seen);
 }
@@ -177,9 +166,8 @@ function returnState(v, unitId, target){
   const from = level === 0 ? anchor : goodDays[level - 1];
   return { level, due: addDays(from, gaps[level]) };
 }
-// The names due today across a subject's finished rebuilt units: [{ unitId, target, due }]
+// The names due today across a subject's finished units: [{ unitId, target, due }]
 function dueReturns(subjectId){
-  if(!FC.get(subjectId).key) return [];
   const sv = subjectView(subjectId), now = today(), out = [];
   sv.unitIds().filter(unitId => rebuiltUnitDone(subjectId, unitId)).forEach(unitId => {
     const v = unitView(subjectId, unitId);
@@ -190,7 +178,7 @@ function dueReturns(subjectId){
   });
   return out.sort((a, b) => a.due < b.due ? -1 : a.due > b.due ? 1 : 0);
 }
-// The neighbour the learner has most often taken this name for, else its first look-alike.
+// The neighbor the learner has most often taken this name for, else its first look-alike.
 function usualConfusion(v, unitId, target){
   const counts = {};
   triesForTarget(v, unitId, target).forEach(t => { if(t.name && t.name !== target) counts[t.name] = (counts[t.name] || 0) + 1; });
@@ -216,15 +204,15 @@ function returnItemsFor(v, due, items){
   if(v.isFacts){
     const taken = items.filter(i => i.unitId === unitId && i.fact).map(i => i.fact);
     if(taken.includes(due.target)) return [];
-    const neighbour = usualConfusion(v, unitId, due.target);
-    return [due.target, ...(neighbour && !taken.includes(neighbour) ? [neighbour] : [])].map(fact => ({ unitId, fact, repeat: false }));
+    const neighbor = usualConfusion(v, unitId, due.target);
+    return [due.target, ...(neighbor && !taken.includes(neighbor) ? [neighbor] : [])].map(fact => ({ unitId, fact, repeat: false }));
   }
   const used = items.filter(i => i.unitId === unitId && i.caseId).map(i => i.caseId);
   if(used.some(id => caseTarget(v, v.caseById(id)) === due.target)) return [];
   const own = pickReturnCase(v, unitId, due.target, used);
   if(!own) return [];
-  const neighbour = usualConfusion(v, unitId, due.target);
-  const beside = neighbour && pickReturnCase(v, unitId, neighbour, [...used, own.c.id]);
+  const neighbor = usualConfusion(v, unitId, due.target);
+  const beside = neighbor && pickReturnCase(v, unitId, neighbor, [...used, own.c.id]);
   return [own, ...(beside ? [beside] : [])].map(p => ({ unitId, caseId: p.c.id, repeat: p.repeat }));
 }
 // The returned set: each due name on a case, next to a case of the name it is most often taken for.
@@ -248,7 +236,7 @@ function firstTryAccuracy(tries){
   return { n: tries.length, ok: tries.filter(t => t.ok).length };
 }
 
-// where the learner is in a rebuilt unit: 'new', 'again' (finished under the old lessons, since rebuilt),
+// where the learner is in a unit: 'new', 'again' (finished under the old lessons, since rebuilt),
 // 'progress' or 'done'
 function rebuiltStatus(subjectId, unitId){
   const s = seenOf(subjectId)[unitId];

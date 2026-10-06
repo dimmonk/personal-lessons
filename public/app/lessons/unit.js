@@ -268,7 +268,7 @@ function paintComplete(run, screen){
   const { subj, v } = run, at = subj.course.findIndex(u => u.id === v.unitId), next = subj.course[at + 1];
   saveSeenUnit(subj.id, v.unitId, { rev: v.unit.rev, done: true, at: 'close' });
   const c = st(subj).course;
-  c.u = at; c.card = 0; c.phase = 'unitdone';
+  c.u = at; c.phase = 'unitdone';
   unitFrame(run, screen, `<div class="done-screen">
       <span style="color:var(--accent);display:flex">${icon('check', 34)}</span>
       <h2>Unit ${esc(v.unit.tag)} complete</h2>

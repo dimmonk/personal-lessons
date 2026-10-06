@@ -1,12 +1,12 @@
 /* ===================== SCREENS: RUNS OUTSIDE A UNIT ===================== */
-// A returned set ("Due today") and "Practise again" are drill runs that live on their own screens, not inside a unit.
+// A returned set ("Due today") and "Practice again" are drill runs that live on their own screens, not inside a unit.
 // Both are built by the engine (returnSetRun, unitDrillRun in drill.js) and asked by its runner (mountDrillRun); this
 // file hosts them (paintDrillScreen gives each its Back control), and ends each on the results screen (lesson standard E10, E11, E14).
 // PRACTICE is this visit's working state; what is learned is stored by the engine, in the practice record.
 
 let PRACTICE = null;   // { kind: 'due' | 'again' | 'claims', subj, run, ... }
 
-/* ---------- Practise again: the drill from the piece stage on, the least recently seen cases first ---------- */
+/* ---------- Practice again: the drill from the piece stage on, the least recently seen cases first ---------- */
 const lastSeenDay = (subjectId, unitId, id) => { const t = triesOf(subjectId, unitId, id); return t.length ? t[t.length - 1].d : ''; };
 function rawItemId(raw){
   if(typeof raw === 'string') return raw;
@@ -34,9 +34,9 @@ function startAgain(subjectId, unitId){
 function renderAgain(subj){
   if(!PRACTICE || PRACTICE.kind !== 'again' || PRACTICE.subj.id !== subj.id) return go('subject');
   const { unitId } = PRACTICE, v = unitView(subj.id, unitId);
-  paintDrillScreen(subj, PRACTICE.run, `Unit ${esc(v.unit.tag)} &middot; Practise again`, run => {
+  paintDrillScreen(subj, PRACTICE.run, `Unit ${esc(v.unit.tag)} &middot; Practice again`, run => {
     logEvent('set', { subject: subj.id, unit: unitId, rev: v.unit.rev });
-    paintPracticeResults(subj, run, `<button class="btn" id="redo">Practise again</button>
+    paintPracticeResults(subj, run, `<button class="btn" id="redo">Practice again</button>
       <button class="btn ghost" data-v="subject">Back to ${esc(subj.name)}</button>`, () => on('#redo', () => startAgain(subj.id, unitId)));
   });
 }
@@ -75,10 +75,10 @@ function paintPracticeResults(subj, run, actionsHtml, wire){
   focusScreenHead();
 }
 
-// "Practise again" tiles for the finished rebuilt units of a subject, and one for their faulty claims
-const againUnits = subj => subj.course.filter((u, i) => isRebuilt(u) && unitDone(subj, i));
+// "Practice again" tiles for the finished units of a subject, and one for their faulty claims
+const againUnits = subj => subj.course.filter((u, i) => unitDone(subj, i));
 const againTilesHtml = subj => againUnits(subj).map(u => `<button class="tile" data-again="${esc(u.id)}">
-    <span class="tt">Practise again &middot; Unit ${esc(u.tag)}</span>
+    <span class="tt">Practice again &middot; Unit ${esc(u.tag)}</span>
     <span class="tf"><span class="m s">${esc(u.title)}</span><b>${icon('arrow', 14)}</b></span></button>`).join('');
 function claimsTileHtml(subj){
   const n = claimItems(subj).length;

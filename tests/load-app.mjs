@@ -6,7 +6,7 @@ import vm from 'node:vm';
 
 const PUBLIC = new URL('../public/', import.meta.url);
 const BOOT_SCRIPT = 'app/init.js';
-const EXPORTS = ['SUBJECTS', 'detActiveSteps', 'detCandidates', 'detReady', 'nameOptions', 'correctSteps', 'answerOf'];
+const EXPORTS = ['SUBJECTS'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {

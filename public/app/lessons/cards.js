@@ -262,10 +262,10 @@ CARD.worked = (ctx, card) => {
     + `<div class="steps">${card.steps.map(doneRow).join('')}</div>`
     + lessonSection('Name it', `<p>${T.o(target)}</p>`)
     + (picked === null
-        ? promptStem((p.lead ? T.t(paras(p.lead).join(' '), c) + ' ' : '') + SAY.holdStem(T.o(target), T.o(card.hold.neighbour)))
+        ? promptStem((p.lead ? T.t(paras(p.lead).join(' '), c) + ' ' : '') + SAY.holdStem(T.o(target), T.o(card.hold.neighbor)))
           + `<div class="opts">${p.choices.map(x => `<button class="opt" data-pick="${esc(x.id)}">${T.t(x.text, c)}</button>`).join('')}</div></div>`
         : `<div class="answerline"><p>The one that settles it: ${T.t(right.text, c)}</p>${picked !== right && picked.note ? `<p>${T.t(paras(picked.note).join(' '), c)}</p>` : ''}</div>`
-          + lessonSection(`Why this is ${v.nameOf(target)} and not ${v.nameOf(card.hold.neighbour)}`, T.PP(card.hold.reason, c))
+          + lessonSection(`Why this is ${v.nameOf(target)} and not ${v.nameOf(card.hold.neighbor)}`, T.PP(card.hold.reason, c))
           + lessonSection(SAY.secondLook, T.PP(card.impression.text, c)));
 };
 

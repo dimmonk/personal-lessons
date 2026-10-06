@@ -9,8 +9,8 @@ const norm = s => s.replace(/\s+/g, ' ').trim();
 // The unit these checks run on is found by its id in the subject's own course, never by its place in it.
 async function openUnitTwo(env, width = 390) {
   const { context, page } = await env.freshPage(width);
-  const index = await page.evaluate(([S, U]) => SUBJECTS.find(s => s.id === S).course.findIndex(u => u.id === U && u.standard === 1), [SUBJECT, UNIT]);
-  env.check(index >= 0, `${SUBJECT}/${UNIT} is not a rebuilt unit of the course`);
+  const index = await page.evaluate(([S, U]) => SUBJECTS.find(s => s.id === S).course.findIndex(u => u.id === U), [SUBJECT, UNIT]);
+  env.check(index >= 0, `${SUBJECT}/${UNIT} is not a unit of the course`);
   await env.openSubject(page, SUBJECT);
   await env.clickVisible(page, `#screen [data-u="${index}"]`);
   return { context, page };
@@ -172,13 +172,12 @@ async function wordingAndData(env) {
   const { page, context } = await env.freshPage(390);
   const aka = await page.evaluate(() => SAY.aka(['rock and roll', 'folk music', 'jazz'], 'N'));
   env.check(aka.startsWith('You may also hear this called “rock and roll”, “folk music” or “jazz”.'), `the "also called" sentence reads: ${aka.slice(0, 100)}`);
-  // every subject with a subject record: its name, revision and blurb are typed there only (a fully rebuilt subject has no old record at all)
-  const records = await page.evaluate(() => SUBJECTS.filter(s => FC.get(s.id).meta).map(s => {
-    const data = FC.get(s.id), m = data.meta;
-    return { id: s.id, typedTwice: data.legacy ? ['name', 'rev', 'blurb'].filter(k => k in data.legacy) : [], reads: s.rev === m.rev && s.name === m.name && s.blurb === m.blurb };
+  // every subject: its name, revision and blurb are typed in the subject record only
+  const records = await page.evaluate(() => SUBJECTS.map(s => {
+    const m = FC.get(s.id).meta;
+    return { id: s.id, reads: s.rev === m.rev && s.name === m.name && s.blurb === m.blurb };
   }));
   env.check(records.length > 0, 'no subject has a subject record');
-  records.forEach(r => env.check(r.typedTwice.length === 0, `${r.id}: the subject ${r.typedTwice.join(', ')} is typed in both the subject record and the old record`));
   records.forEach(r => env.check(r.reads, `${r.id}: the subject screen does not read the subject record`));
   // the recap's key section and the orient map name only what the unit teaches
   const keyed = await page.evaluate(() => {

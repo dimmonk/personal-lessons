@@ -1,12 +1,10 @@
-// Browser checks for a rebuilt unit: every card, every check, the whole drill, the close cards and the unit-complete screen; plus the
+// Browser checks for a unit: every card, every check, the whole drill, the close cards and the unit-complete screen; plus the
 // layout, draft-line and migration checks (lesson standard X1 to X4, X6). Every check reads what it expects from the app's own data
-// (tests/fixtures/app-data.mjs): no revision, unit count, card count or unit id is typed here, and the old-format checks run only
-// for the units that are old-format. A subject whose every unit is rebuilt has no old record, so it is never asked for old-screen things.
+// (tests/fixtures/app-data.mjs): no revision, unit count, card count or unit id is typed here.
 // Each function takes `env` from e2e.mjs: { freshPage, check, inspect, clickVisible, openSubject, screenText }.
 import { mkdir } from 'node:fs/promises';
 import { norm, unitText, cardPlan, drillPlan, workedStepsLeft, moveOn } from './fixtures/walk.mjs';
-import { subjectMeta, rebuiltUnits } from './fixtures/app-data.mjs';
-import { addHalfSubject } from './fixtures/half-subject.mjs';
+import { subjectMeta, unitRecords } from './fixtures/app-data.mjs';
 
 const SHOT_DIR = process.env.FC_SHOTS || null;
 const DRAFT = 'Draft: not yet read by a newcomer';   // lesson standard E15: the wording is the standard's
@@ -33,8 +31,6 @@ const screenInfo = page => page.evaluate(() => {
 });
 const readyToGoOn = page => page.locator('#fwd').isEnabled();
 const stored = (page, key) => page.evaluate(k => JSON.parse(localStorage.getItem(k)), key);
-// A unit of the mixed-standards fixture lives only in the page, so it is registered again after every load.
-const boot = async (page, u) => { if (u.fixture) await addHalfSubject(page); };
 const openUnitRow = async (env, page, u) => { await env.openSubject(page, u.subject); await env.clickVisible(page, `#screen [data-u="${u.index}"]`); };
 // Every unit is walked in a page of its own, so a few run at a time: the walks are what make the suite long once many units are rebuilt.
 const PARALLEL = 4;
@@ -48,13 +44,11 @@ async function inParallel(env, list, fn) {
   };
   await Promise.all(Array.from({ length: Math.min(PARALLEL, queue.length) }, worker));
 }
-// every rebuilt unit there is: those of the real subjects, and those of the mixed-standards fixture (a subject some of whose units are old)
-async function everyRebuiltUnit(env) {
-  const probe = await env.freshPage(390), real = await rebuiltUnits(probe.page);
-  await addHalfSubject(probe.page);
-  const all = await rebuiltUnits(probe.page);
+// every unit there is
+async function everyUnit(env) {
+  const probe = await env.freshPage(390), units = await unitRecords(probe.page);
   await probe.context.close();
-  return [...real, ...all.filter(u => u.subject === 'half').map(u => ({ ...u, fixture: true }))];
+  return units;
 }
 
 // An action subject's baseline check comes before the unit's first card (E21); this answers it and goes on.
@@ -218,19 +212,14 @@ async function walkCards(env, page, u, opts) {
   return { seenCards, answered, answeredKinds, first };
 }
 
-/* ---------- X1 to X3 on one rebuilt unit, and what is stored after it ---------- */
-// Seeds the old counters so a session through the unit can show they are read and never written (X5, lesson standard E8).
-const frozenFor = u => ({ [`pl:${u.subject}:stats:${u.unit}`]: '{"n":3,"ok":2}', [`pl:${u.subject}:stats:det`]: '{"n":1,"label":1,"frame":0}', 'pl:mixed': '{"n":4,"ok":3}' });
-const E8_KEYS = /^pl:(app|recent|mixed|log)$|^pl:[a-z]+:(items|seen|notes|stats:[a-z0-9]+)$/;
+/* ---------- X1 to X3 on one unit, and what is stored after it ---------- */
+const E8_KEYS = /^pl:(app|recent|log)$|^pl:[a-z]+:(items|seen|notes)$/;
 
 async function sessionThroughUnit(env, u) {
-  const { check, freshPage } = env, label = `390px ${u.subject}/${u.unit}`, frozen = frozenFor(u);
+  const { check, freshPage } = env, label = `390px ${u.subject}/${u.unit}`;
   const { context, page } = await freshPage(390);
   await page.addInitScript(() => { window.__timers = []; for (const n of ['setTimeout', 'setInterval']) { const o = window[n]; window[n] = (...a) => { window.__timers.push(n); return o(...a); }; } });
   await page.reload();
-  await page.evaluate(seed => Object.entries(seed).forEach(([k, v]) => localStorage.setItem(k, v)), frozen);
-  await page.reload();
-  await boot(page, u);
   await env.openSubject(page, u.subject);
   await shot(page, `${u.subject}-${u.unit}-subject-before`);
   await env.clickVisible(page, `#screen [data-u="${u.index}"]`);
@@ -284,28 +273,26 @@ async function sessionThroughUnit(env, u) {
   check(await page.evaluate(([S, U]) => rebuiltUnitDone(S, U), [u.subject, u.unit]), `${label}: the unit is not done at standard 1`);
   await env.clickVisible(page, '#screen [data-v="subject"]');
   await shot(page, `${u.subject}-${u.unit}-subject-after`);
-  // X5, as far as a session through a unit goes: only the keys of lesson standard E8, and the frozen counters untouched
+  // X5, as far as a session through a unit goes: only the keys of lesson standard E8
   const all = await page.evaluate(() => Object.fromEntries(Object.keys(localStorage).map(k => [k, localStorage.getItem(k)])));
   check(Object.keys(all).every(k => E8_KEYS.test(k)), `${label}: storage holds keys outside the list of lesson standard E8: ${Object.keys(all).filter(k => !E8_KEYS.test(k)).join(', ')}`);
-  check(Object.entries(frozen).every(([k, v]) => all[k] === v), `${label}: a frozen counter (pl:<subject>:stats:*, pl:mixed) was written during a unit session`);
   check(!(`pl:${u.subject}:course` in all), `${label}: the old pl:${u.subject}:course key was written`);
   const after = await unitText(page);
   check(new RegExp(`\\b1 of ${u.courseLength} units`).test(after), `${label}: after one unit the subject says "${after.match(/\d+ of \d+ units/)}", not 1 of ${u.courseLength}`);
   await context.close();
 }
 
-export async function testRebuiltUnit(env) {
-  const units = await everyRebuiltUnit(env);
-  env.check(units.some(u => !u.fixture), 'no subject has a rebuilt unit, so nothing was walked');
+export async function testUnits(env) {
+  const units = await everyUnit(env);
+  env.check(units.length > 0, 'no subject has a unit, so nothing was walked');
   await inParallel(env, units, u => sessionThroughUnit(env, u));
 }
 
-/* ---------- X3: every card of every rebuilt unit at 360px, answered ---------- */
+/* ---------- X3: every card of every unit at 360px, answered ---------- */
 export async function testUnitAt360(env) {
-  const units = await everyRebuiltUnit(env);
+  const units = await everyUnit(env);
   await inParallel(env, units, async u => {
     const { context, page } = await env.freshPage(360);
-    await boot(page, u);
     await openUnitRow(env, page, u);
     await passBaseline(page);
     await walkCards(env, page, u, { label: `360px ${u.subject}/${u.unit}`, layout: true, shots: false, wrongRoute: false });
@@ -313,31 +300,23 @@ export async function testUnitAt360(env) {
   });
 }
 
-/* ---------- X6: the draft line and the revision on a rebuilt unit, and none on an old one ---------- */
-export async function testDraftAndOldUnits(env) {
+/* ---------- X6: the draft line and the revision on every unit's row and top bar ---------- */
+export async function testDraftUnits(env) {
   const { check, freshPage } = env;
   const { context, page } = await freshPage(390);
-  await addHalfSubject(page);   // a subject that mixes a rebuilt draft unit with old ones, so both kinds of row are met whatever the real subjects hold
   const metas = await subjectMeta(page);
-  check(metas.some(s => s.unitList.some(u => !u.rebuilt)) && metas.some(s => s.unitList.some(u => u.rebuilt && u.status === 'draft')), 'the checks met no old unit or no draft unit');
+  check(metas.some(s => s.unitList.some(u => u.status === 'draft')), 'the checks met no draft unit');
   for (const s of metas) {
     await env.openSubject(page, s.id);
     const rows = await page.evaluate(() => [...document.querySelectorAll('#screen [data-u]')].map(r => r.textContent.replace(/\s+/g, ' ').trim()));
     check(rows.length === s.unitList.length, `${s.id}: ${rows.length} unit rows for ${s.unitList.length} units`);
     for (const u of s.unitList) {
       const row = rows[u.index], where = `${s.id}/${u.id}`;
-      if (u.rebuilt) {
-        check(row.includes(`Rev ${u.rev}`), `${where}: a rebuilt unit's row does not show its revision ("${row}")`);
-        check(row.includes(DRAFT) === (u.status === 'draft'), `${where}: the draft line is ${row.includes(DRAFT) ? 'shown' : 'missing'} on a unit whose status is ${u.status} ("${row}")`);
-        await env.clickVisible(page, `#screen [data-u="${u.index}"]`);
-        const bar = await page.locator('.unitbar').textContent();
-        check(bar.includes(`rev ${u.rev}`) && bar.includes(DRAFT) === (u.status === 'draft'), `${where}: the top bar reads "${norm(bar)}"`);
-      } else {
-        check(!/\brev \d/i.test(row) && !row.includes(DRAFT), `${where}: an old unit's row shows a revision or a draft line: "${row}"`);
-        await env.clickVisible(page, `#screen [data-u="${u.index}"]`);
-        const old = norm(await page.locator('#screen .topbar').first().textContent());
-        check(!/\brev \d/i.test(old) && !old.includes(DRAFT), `${where}: an old unit's top bar shows "${old}"`);
-      }
+      check(row.includes(`Rev ${u.rev}`), `${where}: a unit's row does not show its revision ("${row}")`);
+      check(row.includes(DRAFT) === (u.status === 'draft'), `${where}: the draft line is ${row.includes(DRAFT) ? 'shown' : 'missing'} on a unit whose status is ${u.status} ("${row}")`);
+      await env.clickVisible(page, `#screen [data-u="${u.index}"]`);
+      const bar = await page.locator('.unitbar').textContent();
+      check(bar.includes(`rev ${u.rev}`) && bar.includes(DRAFT) === (u.status === 'draft'), `${where}: the top bar reads "${norm(bar)}"`);
       await env.clickVisible(page, '#screen [data-v="subject"]');
     }
   }
@@ -345,20 +324,15 @@ export async function testDraftAndOldUnits(env) {
 }
 
 /* ---------- X4: old progress carries over once, and never changes twice ---------- */
-// What `pl:<subject>:seen` must hold after the old place and done marks are carried over: a unit finished under the old lessons and
-// since rebuilt starts again (rev 0, not done); a unit that is still old keeps its done mark and, if it was the open one, its place.
-// An old unit number with no unit now (a subject that has fewer units than it had) is dropped.
+// The lessons before standard 1 kept the place as { u, card, phase, done } by unit index. What `pl:<subject>:seen` must hold after
+// that is carried over: a unit finished under the old lessons and since rebuilt starts again (rev 0, not done); every other old mark
+// is dropped. An old unit number with no unit now (a subject that has fewer units than it had) is dropped too.
 function expectedMigration(unitList, course) {
   const seen = {};
-  unitList.forEach((u, i) => {
-    const wasDone = !!course.done[i], here = course.u === i;
-    if (!wasDone && !here) return;
-    if (u.rebuilt) { if (wasDone) seen[u.id] = { rev: 0, done: false, at: null }; return; }
-    seen[u.id] = { rev: 0, done: wasDone, at: here && !wasDone ? `card:${course.card || 0}` : null };
-  });
+  unitList.forEach((u, i) => { if (course.done[i]) seen[u.id] = { rev: 0, done: false, at: null }; });
   return seen;
 }
-// Old progress for a subject: every other old unit finished, and two old units beyond the course now (the subject once had more
+// Old progress for a subject: every other unit finished, and two old units beyond the course now (the subject once had more
 // units than it has: Psychology had six and has four). The open unit is the second.
 const progressFor = s => ({ u: 1, card: 1, phase: 'read', done: Array.from({ length: s.unitList.length + 2 }, (_, i) => i % 2 === 0) });
 // Psychology's own captured progress, from before its units were rebuilt: six old units, the first three finished, the third open.
@@ -369,7 +343,6 @@ async function checkMigration(env, label, metas, courses) {
   const { context, page } = await freshPage(390);
   await page.evaluate(c => Object.entries(c).forEach(([id, course]) => localStorage.setItem(`pl:${id}:course`, JSON.stringify(course))), courses);
   await page.reload();
-  if (courses.half) await addHalfSubject(page);
   for (const s of metas) {
     const course = courses[s.id], want = expectedMigration(s.unitList, course);
     await env.openSubject(page, s.id);
@@ -377,20 +350,16 @@ async function checkMigration(env, label, metas, courses) {
     const seen = await stored(page, `pl:${s.id}:seen`) || {};
     check(JSON.stringify(seen) === JSON.stringify(want), `${label}/${s.id}: migrated progress is ${JSON.stringify(seen)}, not ${JSON.stringify(want)}`);
     const text = await unitText(page);
-    const doneNow = s.unitList.filter(u => !u.rebuilt && course.done[u.index]).length;
-    check(new RegExp(`\\b${doneNow} of ${s.units} units`).test(text), `${label}/${s.id}: the subject counts "${text.match(/\d+ of \d+ units/)}", not ${doneNow} of ${s.units}`);
-    for (const u of s.unitList.filter(x => x.rebuilt && course.done[x.index]))
+    check(new RegExp(`\\b0 of ${s.units} units`).test(text), `${label}/${s.id}: the subject counts "${text.match(/\d+ of \d+ units/)}", not 0 of ${s.units}`);
+    for (const u of s.unitList.filter(x => course.done[x.index]))
       check(/Rebuilt: start again/.test(rows[u.index]) && !(await page.evaluate(([S, i]) => unitDone(SUBJECTS.find(s => s.id === S), i), [s.id, u.index])), `${label}/${s.id}/${u.id}: finished under the old lessons and since rebuilt, its row reads "${rows[u.index]}" and it must read "Rebuilt: start again" and not count as done`);
-    for (const u of s.unitList.filter(x => !x.rebuilt && course.done[x.index]))
-      check(await page.evaluate(([S, i]) => unitDone(SUBJECTS.find(s => s.id === S), i), [s.id, u.index]), `${label}/${s.id}/${u.id}: an old unit that was finished no longer counts as done`);
   }
   // safe to run again: in the page, and after a reload
   const snapshot = () => page.evaluate(() => JSON.stringify(Object.fromEntries(Object.keys(localStorage).sort().map(k => [k, localStorage.getItem(k)]))));
   const first = await snapshot();
-  await page.evaluate(() => SUBJECTS.forEach(s => migrateProgress(s.id, s.course.map(u => u.id), id => !!FC.get(s.id).units[id])));
+  await page.evaluate(() => SUBJECTS.forEach(s => migrateProgress(s.id, s.course.map(u => u.id))));
   check(await snapshot() === first, `${label}: running the migration a second time changed storage`);
   await page.reload();
-  if (courses.half) await addHalfSubject(page);
   const last = metas[metas.length - 1];
   await env.openSubject(page, last.id);
   await env.clickVisible(page, `#screen [data-u="${last.units - 1}"]`);
@@ -402,12 +371,11 @@ async function checkMigration(env, label, metas, courses) {
 
 export async function testMigration(env) {
   const probe = await env.freshPage(390);
-  await addHalfSubject(probe.page);   // a subject that mixes a rebuilt unit with old ones, so the three outcomes are met whatever the real subjects hold
   const metas = await subjectMeta(probe.page);
   await probe.context.close();
-  // Every subject, whatever it still holds: the old-format units keep their done marks and the rebuilt ones start again.
+  // Every subject: a unit that was finished starts again, and nothing else carries over.
   await checkMigration(env, 'old progress, every subject', metas, Object.fromEntries(metas.map(s => [s.id, progressFor(s)])));
-  // Psychology's real progress shape, while the subject exists with its six old units gone: they all start again.
+  // Psychology's real progress shape, from when the subject had six units: they all start again, and the ones beyond the course are dropped.
   const captured = metas.filter(s => CAPTURED[s.id]);
   if (captured.length) await checkMigration(env, 'captured old progress', captured, Object.fromEntries(captured.map(s => [s.id, CAPTURED[s.id]])));
 }

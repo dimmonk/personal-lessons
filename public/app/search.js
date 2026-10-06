@@ -1,27 +1,17 @@
-/* ===================== SEARCH ===================== */
+/* ===================== SCREENS: SEARCH ===================== */
+// Lesson standard E14: search indexes headings, names, key questions and case text from the new fields. Only text a
+// learner has a right to see is indexed: the stories on cards, never a drill or return case (the learner has not met
+// those, and a return needs one they have not seen).
 
 let INDEX = null;
 function searchIndex(){
   if(INDEX) return INDEX;
-  INDEX = [];
-  SUBJECTS.forEach(s => {
-    INDEX.push({g:'Subjects', s, t:s.name, sub:`${s.course.length} units · ${s.quickDrills.length} drills`,
-      go:() => openSubject(s.id)});
-    s.course.forEach((u,i) => INDEX.push({g:'Units', s, t:u.title,
-      sub:`${s.name} · Unit ${u.tag}${isRebuilt(u) ? ' · rev ' + u.rev : ''} · ${u.cards.length} cards`, go:() => openUnit(s, i)}));
-    s.outcomes.filter(o => oldToolKept(s, o)).forEach(o => INDEX.push({g:'Tools', s, t:o.n,
-      sub:`${s.name} · one of ${s.outcomes.length} outcomes`, go:() => openSubject(s.id)}));
-    s.quickDrills.forEach(q => INDEX.push({g:'Drills', s, t:q.title,
-      sub:`${s.name} · ${q.items.length} items`,
-      go:() => { APP.subjectId = s.id; touch(s.id); go('drill', {drillKey:q.key}); }}));
-    s.specimens.forEach((sp,i) => INDEX.push({g:'Whole cases', s, t:sp.q, quote:true,
-      sub:`${s.name} · case ${pad2(i+1)}`,
-      go:() => { APP.subjectId = s.id; touch(s.id); st(s).detState = Object.assign(freshDet(), {i}); go('det'); }}));
-    s.errDrill.forEach((e,i) => INDEX.push({g:'Faulty claims', s, t:e.q, quote:true,
-      sub:`${s.name} · claim ${pad2(i+1)}`,
-      go:() => { APP.subjectId = s.id; touch(s.id); st(s).errState = {i, picked:null}; go('err'); }}));
-    INDEX.push(...newSearchEntries(s));
-  });
+  INDEX = SUBJECTS.flatMap(s => [
+    {g:'Subjects', s, t:s.name, sub:`${s.course.length} units`, go:() => openSubject(s.id)},
+    ...s.course.map((u,i) => ({g:'Units', s, t:u.title,
+      sub:`${s.name} · Unit ${u.tag} · rev ${u.rev} · ${u.cards.length} cards`, go:() => openUnit(s, i)})),
+    ...subjectSearchEntries(s)
+  ]);
   return INDEX;
 }
 
@@ -37,7 +27,7 @@ function renderSearch(){
   screenEl().innerHTML = `<div class="pane">
     <div style="display:flex;align-items:center;gap:10px;padding:14px 0 12px">
       <label class="searchfield live" style="flex-grow:1;min-width:0">${icon('search',16)}
-        <input id="q" type="search" placeholder="Search subjects, units, drills" autocomplete="off" spellcheck="false">
+        <input id="q" type="search" placeholder="Search subjects, units, cards" autocomplete="off" spellcheck="false">
       </label>
       <button class="linkbtn" data-v="library" style="font-family:var(--sans);font-size:15px;letter-spacing:0;text-transform:none">Cancel</button>
     </div>
@@ -57,13 +47,13 @@ function paintResults(){
   const q = APP.query.trim();
   if(!q){
     box.innerHTML = `<p class="empty">Everything is searchable &mdash; subject names, unit titles,
-      the names and questions in each subject, the cases on the cards, drill items and the whole cases for naming.</p>`;
+      the names and questions in each subject, the cases on the cards and the whole cases for naming.</p>`;
     return;
   }
   const hits = searchIndex().filter(e => e.t.toLowerCase().includes(q.toLowerCase()));
   if(!hits.length){ box.innerHTML = `<p class="empty">Nothing matches &ldquo;${esc(q)}&rdquo;.</p>`; return; }
 
-  const order = ['Subjects','Units','Cards','Names','Questions','Cases','Tools','Drills','Whole cases','Faulty claims'];
+  const order = ['Subjects','Units','Cards','Names','Questions','Cases','Whole cases'];
   const groups = order.map(g => [g, hits.filter(h => h.g === g)]).filter(([,list]) => list.length);
   let n = 0;
 
@@ -87,4 +77,33 @@ function paintResults(){
 
   const flat = groups.flatMap(([,list]) => list.slice(0,6));
   on('[data-i]', el => flat[+el.dataset.i].go(), box);
+}
+
+const plainOf = html => { const el = document.createElement('div'); el.innerHTML = html; return el.textContent.replace(/\s+/g, ' ').trim(); };
+
+function openCardAt(subj, unitIndex, cardId){
+  openUnit(subj, unitIndex);
+  if(APP.view === 'unit') moveTo(UNIT_RUN.flow.findIndex(s => s.type === 'card' && s.id === cardId));
+}
+function openReference(subj){
+  APP.subjectId = subj.id; touch(subj.id);
+  go('reference', { refMode: 'units' });
+}
+function unitSearchEntries(subj, unitId){
+  const v = unitView(subj.id, unitId), T = lessonText(v), at = subj.course.findIndex(u => u.id === unitId);
+  const where = `${subj.name} · Unit ${v.unit.tag}`;
+  const cards = v.cardOrder.map(v.card).filter(card => !card.continues).map(card => ({ g: 'Cards', s: subj, t: plainOf(cardHeading(v, T, card)),
+    sub: `${where} · card ${v.cardOrder.indexOf(card.id) + 1}`, go: () => openCardAt(subj, at, card.id) }));
+  const cases = v.casesOf(unitId).filter(c => !c.kind && (c.use === 'teach' || c.use === 'check') && c.text)
+    .map(c => ({ g: 'Cases', s: subj, t: c.text, quote: true, sub: `${where} · ${c.name || 'a case on a card'}`, go: () => openUnit(subj, at) }));
+  return [...cards, ...cases];
+}
+function subjectSearchEntries(subj){
+  const sv = subjectView(subj.id);
+  const steps = [sv.key.gate, ...sv.key.gate.options.flatMap(o => sv.key.branches[o.id] || [])];
+  const names = mapNames(sv).map(t => ({ g: 'Names', s: subj, t: t.n, sub: `${subj.name} · ${t.plain}`, go: () => openReference(subj) }));
+  const questions = steps.map(step => ({ g: 'Questions', s: subj, t: step.q, sub: `${subj.name} · a question`, go: () => openReference(subj) }));
+  const specimens = sv.data.specimens.map((sp, i) => ({ g: 'Whole cases', s: subj, t: sp.text, quote: true,
+    sub: `${subj.name} · case ${pad2(i + 1)}`, go: () => openSpecimen(subj.id, sp.id) }));
+  return [...sv.unitIds().flatMap(unitId => unitSearchEntries(subj, unitId)), ...names, ...questions, ...specimens];
 }

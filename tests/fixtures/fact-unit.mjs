@@ -5,7 +5,6 @@ export function registerFactUnit() {
   const S = 'facttest';
   FC.subject(S, { name: 'Fact test', rev: 1, standard: 1, action: false, blurb: 'x', units: ['u1'], settings: ['work', 'home', 'community'], limits: [],
     history: [{ rev: 1, date: '2026-10-05', change: 'fixture' }] });
-  FC.legacy(S, { course: [], quickDrills: [], determination: { gateCode: null, steps: [], stepsByGate: null }, specimens: [] });
   FC.key(S, { outcomes: [], terms: [], avoid: [], branches: {} });
   FC.cases(S, 'u1', [
     { id: 'k-terms', use: 'teach', tier: 'clean', setting: 'community', topic: 'voting again', name: 'The next vote',

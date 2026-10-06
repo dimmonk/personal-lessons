@@ -1,11 +1,12 @@
 // Drives the real app in Chromium. Run: npm run test:e2e
 import { chromium } from 'playwright';
 import { startServer } from './static-server.mjs';
-import { testRebuiltUnit, testUnitAt360, testDraftAndOldUnits, testMigration } from './e2e-unit.mjs';
+import { testUnits, testUnitAt360, testDraftUnits, testMigration } from './e2e-unit.mjs';
 import { testLessonEngineReview } from './e2e-review.mjs';
 import { testNewScreens } from './e2e-screens.mjs';
 import { testKinds } from './e2e-kinds.mjs';
 import { APP_JARGON } from './plain-words.mjs';
+import { britishIn } from './american.mjs';
 import { subjectMeta } from './fixtures/app-data.mjs';
 
 const WIDTHS = [360, 390, 768, 1200, 1600];
@@ -65,6 +66,9 @@ async function inspect(page, label) {
   const text = await screenText(page);
   check(text.length > 40, `${label}: screen is empty`);
   const jargon = await jargonShown(page);
+  // American English everywhere on screen, case stories included (tests/american.mjs)
+  const british = britishIn(await page.evaluate(() => document.querySelector('#screen').textContent));
+  check(british.length === 0, `${label}: shows the British form${british.length > 1 ? 's' : ''} ${british.map(w => `"${w}"`).join(', ')}`);
   check(jargon.length === 0, `${label}: shows the maintainers' word${jargon.length > 1 ? 's' : ''} ${jargon.map(w => `"${w}"`).join(', ')}`);
   const over = await horizontalOverflow(page);
   check(over <= 0, `${label}: ${over}px horizontal overflow`);
@@ -72,9 +76,7 @@ async function inspect(page, label) {
   check(clipped.length === 0, `${label}: clipped text in ${clipped.join(', ')}`);
 }
 
-// 1 + 4. Every screen of every subject renders, with no overflow or clipping at each width. The old screens (quick drills, the faulty
-// claims tile) are visited only for a subject that still has old units: a subject whose every unit is rebuilt has none of them, and
-// the check is that they are not there.
+// 1 + 4. Every screen of every subject renders, with no overflow or clipping at each width.
 async function testScreens() {
   for (const width of WIDTHS) {
     const { context, page } = await freshPage(width);
@@ -95,18 +97,9 @@ async function testScreens() {
         await inspect(page, `${tag}/unit ${u + 1}`);
         await toSubject(page);
       }
-      for (const key of s.drills) {
-        await clickVisible(page, `#screen [data-d="${key}"]`);
-        await inspect(page, `${tag}/drill ${key}`);
-        await toSubject(page);
-      }
-      check(await page.locator('#screen [data-d]').count() === s.drills.length, `${tag}: ${await page.locator('#screen [data-d]').count()} quick-drill tiles for ${s.drills.length} old drills`);
-      check(await page.locator('#screen [data-v="err"]').count() === (s.fullyRebuilt ? 0 : 1), `${tag}: the old faulty-claims tile is ${s.fullyRebuilt ? 'shown on a subject with no old units' : 'missing on a subject with old units'}`);
-      for (const v of s.fullyRebuilt ? ['det'] : ['det', 'err']) {
-        await clickVisible(page, `#screen [data-v="${v}"]`);
-        await inspect(page, `${tag}/${v}`);
-        await toSubject(page);
-      }
+      await clickVisible(page, '#screen [data-v="det"]');
+      await inspect(page, `${tag}/det`);
+      await toSubject(page);
       for (const ref of ['units', 'caveats']) {
         await clickVisible(page, `#screen [data-ref="${ref}"]`);
         await inspect(page, `${tag}/reference ${ref}`);
@@ -115,82 +108,6 @@ async function testScreens() {
     }
     await context.close();
   }
-}
-
-// The specimen's route from the key itself; `wrong` swaps the last step for a non-accepted option.
-async function routeFor(page, subjectId, specimenIndex, wrong) {
-  return page.evaluate(([id, i, wrong]) => {
-    const s = SUBJECTS.find(x => x.id === id), sp = s.specimens[i];
-    const steps = correctSteps(s, sp);
-    const answers = steps.map((st, n) => {
-      const accepted = sp.sub[st.code];
-      const pick = (wrong && n === steps.length - 1) ? st.options.find(o => !accepted.includes(o.id)).id : accepted[0];
-      return [st.code, pick];
-    });
-    return { answers, outcome: sp.outcome, total: s.outcomes.length };
-  }, [subjectId, specimenIndex, wrong]);
-}
-
-async function answerSteps(page, answers) {
-  for (const [code, id] of answers) await page.click(`[data-step="${code}"] .opt[data-o="${id}"]`);
-}
-
-// 2 + 3. The OLD determination, for a subject that still has old units: a correct one narrows and scores right; a wrong route with the
-// right name is a miss. A fully rebuilt subject runs the new determination over its specimens, which e2e-screens.mjs plays.
-async function testDeterminations() {
-  const { context, page } = await freshPage();
-  for (const s of (await subjectMeta(page)).filter(x => !x.fullyRebuilt)) {
-    await openSubject(page, s.id);
-    await clickVisible(page, '#screen [data-v="det"]');
-
-    const right = await routeFor(page, s.id, 0, false);
-    await answerSteps(page, right.answers);
-    const head = await page.locator('#host .readhead').first().textContent();
-    if (s.gated) check(head.includes(`1 of ${right.total} left`), `${s.id}: correct route left "${head.trim()}"`);
-    else check(!head.includes(`${right.total} of ${right.total} left`), `${s.id}: correct route did not narrow`);
-    await page.click(`#nameOpts .opt[data-n="${right.outcome}"]`);
-    await page.click('#record');
-    const okMarks = await page.locator('.marks').textContent();
-    check(/Name correct/.test(okMarks) && /Answers right/.test(okMarks), `${s.id}: correct determination scored "${okMarks.trim()}"`);
-    await page.click('#next');
-
-    const wrong = await routeFor(page, s.id, 1, true);
-    await answerSteps(page, wrong.answers);
-    await page.click(`#nameOpts .opt[data-n="${wrong.outcome}"]`);
-    await page.click('#record');
-    const missMarks = await page.locator('.marks').textContent();
-    check(/Name correct/.test(missMarks) && /Answers missed/.test(missMarks), `${s.id}: wrong route scored "${missMarks.trim()}"`);
-    const warn = await page.locator('.warn').textContent();
-    check(/Right name, wrong answer on the way/.test(warn), `${s.id}: no "right name, wrong route" warning`);
-    const score = (await page.locator('.score').textContent()).replace(/\s+/g, ' ');
-    check(/2 ?Determined/.test(score) && /2 ?Name/.test(score) && /1 ?Route/.test(score), `${s.id}: running score is "${score}"`);
-    await toSubject(page);
-  }
-  await context.close();
-}
-
-// 5. Every OLD course unit walks from its first card to its drill. A rebuilt unit is walked, card by card and answer by answer, by
-// e2e-unit.mjs, so a fully rebuilt subject has none here.
-async function testCourseWalk() {
-  const { context, page } = await freshPage();
-  for (const s of await subjectMeta(page)) {
-    await openSubject(page, s.id);
-    for (let u = 0; u < s.units; u++) {
-      if (s.rebuilt[u]) continue;
-      await clickVisible(page, `#screen [data-u="${u}"]`);
-      for (let guard = 0; guard < 40; guard++) {
-        const label = (await page.locator('#fwd').textContent()).trim();
-        await page.click('#fwd');
-        if (label === 'Start the drill') break;
-      }
-      const bar = await page.locator('#screen .topbar').first().textContent();
-      check(/Drill/.test(bar), `${s.id} unit ${u + 1}: did not reach the drill ("${bar.trim()}")`);
-      const drill = (await page.locator('#host').textContent()).trim();
-      check(drill.length > 40, `${s.id} unit ${u + 1}: drill is empty`);
-      await toSubject(page);
-    }
-  }
-  await context.close();
 }
 
 // 6. Name, manifest, service worker, installability and offline load.
@@ -239,11 +156,9 @@ const unitEnv = { freshPage, check, inspect, clickVisible, openSubject, screenTe
 
 try {
   await testScreens();
-  await testDeterminations();
-  await testCourseWalk();
-  await testRebuiltUnit(unitEnv);
+  await testUnits(unitEnv);
   await testUnitAt360(unitEnv);
-  await testDraftAndOldUnits(unitEnv);
+  await testDraftUnits(unitEnv);
   await testMigration(unitEnv);
   await testLessonEngineReview(unitEnv);
   await testNewScreens(unitEnv);

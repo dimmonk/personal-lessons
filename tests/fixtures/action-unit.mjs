@@ -5,7 +5,6 @@ export function registerActionUnit() {
   const S = 'acttest';
   FC.subject(S, { name: 'Action test', rev: 1, standard: 1, action: true, blurb: 'x', units: ['u1', 'u2'], settings: ['work', 'home', 'money'], limits: [],
     baseline: ['bl-1', 'bl-2', 'bl-3', 'bl-4'], history: [{ rev: 1, date: '2026-10-05', change: 'fixture' }] });
-  FC.legacy(S, { course: [], quickDrills: [], determination: { gateCode: null, steps: [], stepsByGate: null }, specimens: [] });
   FC.key(S, {
     terms: [], avoid: [],
     outcomes: [

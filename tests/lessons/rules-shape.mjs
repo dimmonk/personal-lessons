@@ -48,9 +48,10 @@ function keyReferences(s) {
 function subjectReferences(s) {
   const unitIds = s.meta.units || [];
   const units = s.unitIds.flatMap(id => missing(unitIds.includes(id), `registered unit "${id}" is not in subject.units; it`));
+  const listed = unitIds.flatMap(id => missing(s.unitIds.includes(id), `unit "${id}", listed in subject.units,`));
   const banks = s.allCaseLists.map(([id]) => id).flatMap(id => missing(unitIds.includes(id), `cases are registered for unit "${id}", which is not in subject.units; it`));
   const baseline = (s.meta.baseline || []).flatMap(id => missing(s.allCases.some(c => c.id === id), `baseline case "${id}"`));
-  return [...units, ...banks, ...baseline];
+  return [...units, ...listed, ...banks, ...baseline];
 }
 
 export const V0_subject = subjectRule('V0', (s, check) => {
@@ -129,7 +130,7 @@ function cardReferences(u, c) {
   if (c.kind === 'exception') refs.push(outcome(c.looksLike), outcome(c.is));
   if (c.kind === 'check') refs.push(...checkReferences(u, c, outcome, step));
   if (c.kind === 'refute') refs.push(u.things[c.about] || u.steps.some(st => st.code === c.about) ? ['about', true] : [`about "${c.about}"`, false]);
-  if (c.kind === 'worked') refs.push(...c.steps.map(s => step(s.step)), outcome(c.hold.neighbour), kase(c.impression.resembles), ...(c.impression.first ? [kase(c.impression.first)] : []));
+  if (c.kind === 'worked') refs.push(...c.steps.map(s => step(s.step)), outcome(c.hold.neighbor), kase(c.impression.resembles), ...(c.impression.first ? [kase(c.impression.first)] : []));
   if (c.kind === 'transfer') refs.push(...c.prompts.map(p => outcome(p.outcome || p.family)));
   if (c.prompt && c.prompt.kind === 'which' && c.prompt.option) {
     const [code, id] = c.prompt.option.split('.');

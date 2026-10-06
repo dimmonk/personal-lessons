@@ -33,9 +33,9 @@ function renderLibrary(){
     <div class="topbar"><span class="m">Fieldcraft &middot; Pragmatic knowledge</span></div>
     <div class="mast">
       <h1>${cap(numWord(SUBJECTS.length))} ${SUBJECTS.length === 1 ? 'subject' : 'subjects'}.</h1>
-      <p>Learn the questions that decide a call, then drill them on cases that arrive unlabelled.</p>
+      <p>Learn the questions that decide a call, then drill them on cases that arrive unlabeled.</p>
     </div>
-    <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects, units, drills</span></button>
+    <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects, units, cards</span></button>
     ${dueTileForLibrary()}
     ${cont ? continueCard(cont) : ''}
     <div class="chips">${chips.map(([k,label]) =>
@@ -49,7 +49,7 @@ function renderLibrary(){
         <span class="sigil">${s.keyNo}</span>
         <span class="grow">
           <span class="t">${esc(s.name)}</span>
-          <span class="s">${s.course.length} units &middot; ${s.quickDrills.length ? s.quickDrills.length + ' drills &middot; ' : ''}${s.outcomes.length} names</span>
+          <span class="s">${s.course.length} units &middot; ${s.nameCount} names</span>
         </span>
         <span class="end">${progressMark(s)}</span>
         ${icon('chevron')}
@@ -69,28 +69,18 @@ function renderLibrary(){
 function resumePoint(subj){
   const c = st(subj).course;
   if(c.phase === 'unitdone' && c.u < subj.course.length - 1)
-    return {ui: c.u + 1, phase: 'read', fresh: true};
-  return {ui: c.u, phase: c.phase, fresh: false};
+    return {ui: c.u + 1, fresh: true};
+  return {ui: c.u, fresh: false};
 }
 function resumeLabel(subj){
-  const r = resumePoint(subj), u = subj.course[r.ui], c = st(subj).course;
+  const r = resumePoint(subj), u = subj.course[r.ui];
   if(r.fresh) return 'Start Unit ' + u.tag;
-  if(isRebuilt(u)){
-    const status = rebuiltStatus(subj.id, u.id);
-    return status === 'progress' ? 'Resume the lesson' : (unitDone(subj, r.ui) ? 'Review Unit ' + u.tag : 'Start Unit ' + u.tag);
-  }
-  if(r.phase === 'drill') return 'Resume the drill';
-  if(r.phase === 'unitdone') return 'Review Unit ' + u.tag;
-  if(c.card === 0 && unitsDone(subj) === 0) return 'Start Unit ' + u.tag;
-  return 'Resume the lesson';
+  return rebuiltStatus(subj.id, u.id) === 'progress' ? 'Resume the lesson' : (unitDone(subj, r.ui) ? 'Review Unit ' + u.tag : 'Start Unit ' + u.tag);
 }
 function resumeSubject(id){
   const s = SUBJECTS.find(x => x.id === id);
   APP.subjectId = id; touch(id);
-  const r = resumePoint(s), c = st(s).course;
-  if(isRebuilt(s.course[r.ui])){ openUnit(s, r.ui); return; }
-  if(r.fresh){ c.u = r.ui; c.card = 0; c.phase = 'read'; saveCourse(s); }
-  go(r.phase === 'drill' ? 'unitdrill' : (r.phase === 'unitdone' ? 'unitdone' : 'lesson'));
+  openUnit(s, resumePoint(s).ui);
 }
 
 function continueCard(s){

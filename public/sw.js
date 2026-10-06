@@ -2,7 +2,7 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v8';
+const CACHE = 'fieldcraft-v9';
 const SHELL = [
   './',
   'manifest.json',
@@ -187,9 +187,9 @@ const SHELL = [
   'subjects/civics/specimens.js',
   'app/lessons/view.js',
   'app/lessons/records.js', 'app/state.js', 'app/shell.js', 'app/library.js', 'app/subject.js',
-  'app/lesson.js', 'app/drills.js', 'app/reference.js', 'app/mixed.js', 'app/progress.js', 'app/search.js',
+  'app/reference.js', 'app/mixed.js', 'app/progress.js', 'app/search.js',
   'app/lessons/cards.js', 'app/lessons/ask.js', 'app/lessons/drill.js', 'app/lessons/taught.js', 'app/lessons/unit-flow.js', 'app/lessons/unit.js',
-  'app/lessons/key-map.js', 'app/lessons/key-reference.js', 'app/lessons/practice.js', 'app/lessons/returns.js', 'app/lessons/review-first.js', 'app/lessons/determination.js', 'app/lessons/mixed-new.js', 'app/lessons/progress-new.js', 'app/lessons/search-new.js',
+  'app/lessons/key-map.js', 'app/lessons/key-reference.js', 'app/lessons/practice.js', 'app/lessons/returns.js', 'app/lessons/review-first.js', 'app/lessons/determination.js',
   'app/init.js',
   'fonts/fonts.css',
   'fonts/bricolage-grotesque-latin.woff2', 'fonts/literata-latin.woff2', 'fonts/jetbrains-mono-latin.woff2',

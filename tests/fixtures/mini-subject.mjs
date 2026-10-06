@@ -1,5 +1,5 @@
-// A tiny made-up subject whose every unit is rebuilt (lesson standard F5), registered in the page so the screens that
-// only a fully rebuilt subject uses can be exercised: the full determination (E13), the generated reference and key map
+// A tiny made-up subject, registered in the page so the screens that need one can be exercised on known data: the full
+// determination (E13), the generated reference and key map
 // (E14), the plan reminder (E18, the subject is an action subject, so ob and od are the names where nothing was wrong). One gate question, one branch of two questions, two
 // units, four names, a few specimens. Self-contained: it is sent to the page as source, so it may use only browser globals.
 //
@@ -50,7 +50,7 @@ export function registerMiniSubject() {
   FC.cards(S, 'u1', [orient('orient-1')]);
   FC.cards(S, 'u2', [orient('orient-2'), { id: 'worked-c', kind: 'worked', h: 'A whole case, start to end', link: 'Here is one whole case.', case: 'wc',
     steps: ['G1', 'B1', 'B2'].map(code => ({ step: code, reason: `Reason for ${code}: {cue:${code}}.` })),
-    hold: { neighbour: 'od', prompt: { kind: 'reason', choices: [{ id: 'p', text: 'It is loud.' }, { id: 'q', text: 'It is small.', note: 'That is true of both.' }], answer: 'p' }, reason: 'The noise settles it.' },
+    hold: { neighbor: 'od', prompt: { kind: 'reason', choices: [{ id: 'p', text: 'It is loud.' }, { id: 'q', text: 'It is small.', note: 'That is true of both.' }], answer: 'p' }, reason: 'The noise settles it.' },
     impression: { resembles: 'toc', text: 'It looks like a case you know.' } }]);
   const unit = (id, tag, title, steps, outcomes, assumes, ledgerEntries, cards, rungs, returns) => FC.unit(S, id, {
     kind: 'C', rev: 1, standard: 1, status: 'draft', tag, title: { text: title }, subtitle: 'A fixture unit', teaches: { steps, outcomes, terms: [] }, assumes,

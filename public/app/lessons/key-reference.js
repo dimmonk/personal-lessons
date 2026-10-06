@@ -1,5 +1,5 @@
 /* ===================== SCREENS: REFERENCE, GENERATED FROM THE KEY ===================== */
-// The reference screen for rebuilt units (lesson standard E14): the key as a map in fixed wording, then for each name
+// The reference screen (lesson standard E14): the key as a map in fixed wording, then for each name
 // what it is called, its plain words, what you must be able to point to, the other words real life uses, its named
 // cases and its look-alike lines, then where the key stops. Everything is printed from key.js, the cases and the
 // ledger. It is a lookup: nothing here records a try, logs an event or schedules anything, so it never counts as
@@ -12,11 +12,10 @@ const REF_SAY = {
   alsoCalled: 'Also called',
   namedCases: 'Named cases',
   lookalikes: 'Look-alikes',
-  plainWords: 'In plain words',
-  oldUnits: 'Units not yet rewritten'
+  plainWords: 'In plain words'
 };
 
-// the ledger lines (from every rebuilt unit) that involve one name
+// the ledger lines (from every unit) that involve one name
 function ledgerLinesFor(sv, id){
   return sv.unitIds().flatMap(unitId => {
     const v = unitView(sv.subjectId, unitId);
@@ -53,14 +52,10 @@ const limitsHtml = subjectId => {
   return `<div class="lesson">${(meta.limits || []).map(l => `<h3>${T.t(l.h)}</h3>${paras(l.text).map(p => `<p>${T.t(p)}</p>`).join('')}`).join('')}</div>`;
 };
 
-// the generated part of the reference screen for a subject with any rebuilt unit; '' where it has none
+// the generated part of the reference screen
 function keyReferenceHtml(subj){
-  const data = FC.get(subj.id);
-  if(!data.key) return '';
   const sv = subjectView(subj.id);
-  const map = keyMapSection(sv, 'fixed');
-  if(!map) return '';
-  return `<p class="forline">${esc(REF_SAY.lookup)}</p>${map}`
+  return `<p class="forline">${esc(REF_SAY.lookup)}</p>${keyMapSection(sv, 'fixed')}`
     + `<div class="sect top"><span class="m">${esc(REF_SAY.namesHeading)}</span><span class="m s">${mapNames(sv).length}</span></div>`
     + `<div>${mapNames(sv).map(t => nameEntryHtml(sv, t)).join('')}</div>`;
 }

@@ -18,7 +18,7 @@ const EXEMPLAR = new URL('../../public/', import.meta.url);
 const EXEMPLAR_SUBJECT = 'psychology';
 const onlyExemplarSubject = data => ({ ...data, subjects: { [EXEMPLAR_SUBJECT]: data.subjects[EXEMPLAR_SUBJECT] } });
 
-const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null, standard0: { units: [] }, committedStandard0: { units: [] },
+const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null,
   site: { files: [], indexScripts: null, swShell: null }, validatorSources: {} });
 
 // The exemplar, and a unit of each other kind (fact, procedure, gate). The exemplar runs every rule; a unit of another kind runs only the
@@ -26,7 +26,7 @@ const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null
 async function baselines() {
   const data = onlyExemplarSubject(plain(await loadFromPublic(EXEMPLAR)));
   const exemplar = {
-    data, lock: lockEntries(data), committedLock: null, standard0: { units: [] }, committedStandard0: { units: [] },
+    data, lock: lockEntries(data), committedLock: null,
     site: await collectSite(EXEMPLAR), validatorSources: await collectValidatorSources()
   };
   const kinds = Object.fromEntries(await Promise.all(Object.keys(KIND_FIXTURES).map(async kind => [kind, emptyInput(plain(await loadKindFixture(kind)))])));

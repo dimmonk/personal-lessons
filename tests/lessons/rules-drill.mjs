@@ -25,7 +25,7 @@ export const V38 = unitRule('V38', (u, check) => {
   u.unit.drill.rungs.forEach(r => check(u.flat(r).length > 0, `the ${r.ask} stage has no item`));
 });
 
-/* ---------- V39: every taught outcome and question is practised ---------- */
+/* ---------- V39: every taught outcome and question is practiced ---------- */
 function branchPractice(u, check) {
   const name = u.flat(u.rung('name')).map(u.caseOf);
   const piece = u.flat(u.rung('piece'));
@@ -36,7 +36,7 @@ function branchPractice(u, check) {
   }
   u.unit.teaches.steps.forEach(code => check(piece.some(i => i.step === code), `${code}: never asked alone in the piece stage`));
 }
-// a procedure type is practised on a problem with the working shown to the last step, on a whole problem, and on mixed routes (A12)
+// a procedure type is practiced on a problem with the working shown to the last step, on a whole problem, and on mixed routes (A12)
 function procedurePractice(u, check) {
   for (const o of u.taught) {
     ['last', 'whole'].forEach(stage => check(u.flat(u.rung(stage)).map(u.caseOf).some(c => c && c.outcome === o), `${o}: never the problem of a ${stage} item`));

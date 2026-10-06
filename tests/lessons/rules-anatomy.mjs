@@ -158,7 +158,7 @@ function workedProblems(u, w, isLast) {
   const problems = [];
   if (w.steps.map(s => s.step).join() !== u.routeSteps(c).join()) problems.push("its steps must be every question on the case's route, in the key's order");
   if (!w.steps.every(s => isFilled(s.reason) && cuesOf(c, s.step).length > 0)) problems.push('every step needs a reason and marked words');
-  if (!u.ledgerFor(c.outcome, w.hold.neighbour)) problems.push(`${w.hold.neighbour} is not a ledger neighbour of ${c.outcome}`);
+  if (!u.ledgerFor(c.outcome, w.hold.neighbor)) problems.push(`${w.hold.neighbor} is not a ledger neighbor of ${c.outcome}`);
   const p = w.hold.prompt;
   if (p.choices.filter(x => x.id === p.answer).length !== 1) problems.push('hold.prompt needs exactly one right choice');
   if (!p.choices.every(x => x.id === p.answer || isFilled(x.note))) problems.push('hold.prompt needs a note on every other choice');

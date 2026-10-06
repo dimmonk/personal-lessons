@@ -2,7 +2,7 @@
 // Practice as a ramp (lesson standard E6): stages in order; inside a stage the authored groups are shuffled
 // within their tier band (clean, then varied, then misleading) and never split, so look-alikes stay next to
 // each other; a missed item comes back at least three items later until it has been answered right once.
-// The same runner asks a returned set (E9) and "Practise again" (E14).
+// The same runner asks a returned set (E9) and "Practice again" (E14).
 
 const TIER_BANDS = ['clean', 'varied', 'misleading'];
 const REQUEUE_GAP = 3;
@@ -24,19 +24,10 @@ function namesOffered(v, c){
   const taughtSoFar = o => o.unit === v.unitId || (v.unit.assumes || []).includes(o.unit) || rebuiltUnitDone(v.subjectId, o.unit);
   return v.key.outcomes.filter(o => o.group === group && (taughtSoFar(o) || o.id === target)).map(o => o.id);
 }
-// A case from an earlier unit's bank: a due name first, else the least recently seen; never labelled.
-// The view of an earlier unit. One that is not rebuilt yet is registered only by stand-in cases (its bank for
-// later units): its cases are asked the gate question and no more, and it teaches no names of its own.
-function earlierView(subjectId, unitId){
-  const sv = subjectView(subjectId);
-  if(sv.data.units[unitId]) return unitView(subjectId, unitId);
-  return { ...sv, unitId, unit: { rev: 0, assumes: [], ledger: [], drill: { returns: [] } }, isGate: true, taught: [], cardOrder: [],
-           card: id => lessonFail(`unit ${unitId} has no cards: ${id}`), ledger: id => lessonFail(`unit ${unitId} has no look-alike entry ${id}`),
-           ledgerFor: () => null, nameOf: id => sv.thing(id).n, isFact: () => false, isFacts: false };
-}
+// A case from an earlier unit's bank: a due name first, else the least recently seen; never labeled.
 function earlierCase(subjectId, unitId, exclude){
-  const v = earlierView(subjectId, unitId);
-  // the bank: an earlier unit's drill and return stories, and a procedure unit's problems (lesson standard A12: earlier types return unlabelled)
+  const v = unitView(subjectId, unitId);
+  // the bank: an earlier unit's drill and return stories, and a procedure unit's problems (lesson standard A12: earlier types return unlabeled)
   const pool = v.casesOf(unitId).filter(c => (!c.kind || c.kind === 'problem') && (c.use === 'drill' || c.use === 'return') && !exclude.includes(c.id));
   if(!pool.length) return null;
   const now = today();
@@ -95,7 +86,7 @@ function stageInstruction(v, rung){
   return say();
 }
 
-/* ---------- a run: a unit's drill, a returned set, or "Practise again" ---------- */
+/* ---------- a run: a unit's drill, a returned set, or "Practice again" ---------- */
 // run = { subj, v, context, title, stages:[{ ask, instruction, demo, queue:[raw], intro }], si, qi, current, tries:[], onEnd }
 // Action subjects (lesson standard A10, V37): every stage that asks about cases holds one where nothing was wrong,
 // so the learner is never taught that every case has a fault.
@@ -114,7 +105,7 @@ function unitDrillRun(subj, v, context, fromAsk){
   const start = fromAsk ? Math.max(0, rungs.findIndex(r => r.ask === fromAsk)) : 0;
   const stages = rungs.slice(start).map(rung => ({ ask: rung.ask, instruction: stageInstruction(v, rung), demo: rung.demo || null, queue: stageQueue(v, rung), shownIntro: false }));
   const earlier = rungs.flatMap(r => r.items.flat()).filter(raw => typeof raw === 'object' && raw.earlier).length;
-  return { subj, v, context, title: context === 'again' ? 'Practise again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(rungs.length, earlier) : null,
+  return { subj, v, context, title: context === 'again' ? 'Practice again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(rungs.length, earlier) : null,
            add: context === 'unit' ? v.unit.drill.add : null, stages, si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
 }
 // A run over items from several units (a returned set, the faulty-claims tile): one stage, whose items name their own unit.
@@ -150,11 +141,11 @@ const runCounts = run => ({
 
 /* ---------- Back, inside a drill (lesson standard E11) ---------- */
 // A drill inside a unit goes back to the cards: the run keeps its place, so Next comes back to it. A returned set or
-// "Practise again" has run.leave and goes back to where it was started. The control belongs to the drill's frame, above the
+// "Practice again" has run.leave and goes back to where it was started. The control belongs to the drill's frame, above the
 // part that every answer repaints, so it is never lost.
 const drillBackHtml = run => `<div class="drillnav"><button class="linkish" data-drill-back>${icon('back', 14)}${esc(run.leave ? SAY.backFrom(run.subj.name) : SAY.backToCards)}</button></div>`;
 const wireDrillBack = run => on('[data-drill-back]', () => run.leave ? run.leave() : goBack(UNIT_RUN));
-// A drill that is not part of a unit (a returned set, "Practise again"): its own screen, with its Back control.
+// A drill that is not part of a unit (a returned set, "Practice again"): its own screen, with its Back control.
 function paintDrillScreen(subj, run, label, onEnd){
   screenEl().innerHTML = `<div class="pane" style="--accent:${subj.accent}">
     <div class="topbar"><button class="iconbtn" data-v="subject" aria-label="Back to ${esc(subj.name)}">${icon('back', 20)}</button><span class="m">${label}</span><span class="spacer"></span></div>
@@ -201,7 +192,7 @@ function recordAnswer(run, stage, cur, outcome){
   recordTry(v.subjectId, v.unitId, cur.id, v.unit.rev, { mode: cur.item.mode, context: run.context, steps: outcome.steps, name: outcome.name, ok: outcome.ok });
   const target = cur.item.target || (cur.item.c ? caseTarget(v, cur.item.c) : null);
   // in a gate unit the name chosen is the answer given to the gate question
-  const chosen = outcome.name || (cur.item.c && v.isGate && v.data.units[v.unitId] && v.key.gate ? outcome.steps[v.key.gate.code] || null : null);
+  const chosen = outcome.name || (cur.item.c && v.isGate && v.key.gate ? outcome.steps[v.key.gate.code] || null : null);
   run.tries = [...run.tries, { stage: stage.ask, mode: cur.item.mode, ok: outcome.ok, first: cur.first, returned: !!stage.queue[run.qi].returned,
                                target, chosen, unitId: v.unitId, legit: !!(cur.item.c && cur.item.c.kind !== 'reverse' && target && v.isLegit(target)) }];
   // a missed item is asked again, at least three items later, until it has been answered right once

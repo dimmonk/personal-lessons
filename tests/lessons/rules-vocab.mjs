@@ -1,10 +1,10 @@
 // Section 8, vocabulary: V2 (no key wording typed by hand), V3 (tokens resolve), V4 (no codes or ids shown),
 // V8 (other names only on the meet card), V28 (no forward pointers), V36 (no praise), V50 (words to avoid).
-// Each rule scans the authored prose of one unit (its cards, cases and records) or of one subject (specimens, the subject record,
-// the bank of a unit not yet rebuilt). Fields that quote what people say are never scanned for key wording (S5).
+// Each rule scans the authored prose of one unit (its cards, cases and records) or of one subject (specimens and the subject record). Fields that quote what people say are never scanned for key wording (S5).
 import { unitRule, subjectRule } from './rule.mjs';
 import { APP_JARGON } from '../plain-words.mjs';
-import { tokensOf, stripTokens, hasUnknownToken, prose, norm, wordSet, containsPhrase, cuesOf, strings } from './text.mjs';
+import { britishIn } from '../american.mjs';
+import { tokensOf, stripTokens, hasUnknownToken, prose, norm, wordSet, containsPhrase, cuesOf, strings, STRUCTURAL, STRUCTURAL_IN } from './text.mjs';
 
 const cache = new WeakMap();
 // [{ where, text, owner }] for every prose string of a view; computed once per view.
@@ -155,7 +155,25 @@ function V50(ctx, check) {
   }
 }
 
-export const RULES_VOCAB = [
+/* ---------- V60: American English ---------- */
+// The reader is moving to the United States: every string a learner can read, case stories included, is American English
+// with dollars (tests/american.mjs). Ids and codes are skipped, and so are the maintainers' notes (a unit's build record,
+// the key's avoid list), which no learner sees.
+const MAINTAINERS_ONLY = /^\.(units\.[^.]+\.build|key\.avoid)(\.|$)/;
+// a unit's lists of ids and codes (its drill items, parts, what it teaches and assumes, its ledger pairs)
+const UNIT_IDS = /^\.units\.[^.]+\.(drill\.(rungs\.\d+\.(items|demo|ask)|returns|key)|parts\.\d+\.(cards|close|id|drill)|teaches|assumes|ledger\.\d+\.(pair|id|step|taughtIn)|title\.fromKey|kind|status|tag|id)(\.|$)/;
+export const V60 = subjectRule('V60', (s, check) => {
+  for (const [path, text] of strings(s.subject)) {
+    if (MAINTAINERS_ONLY.test(path) || UNIT_IDS.test(path)) continue;
+    // a card's, a case's or a specimen's own fields, read the way the rest of the validator reads them
+    const field = path.replace(/^\.(cases|cards)\.[^.]+\.\d+|^\.specimens\.\d+/, '');
+    if (field !== path && (STRUCTURAL.test(field) || STRUCTURAL_IN.test(field))) continue;
+    const found = britishIn(text);
+    check(found.length === 0, `${path}: British form${found.length > 1 ? 's' : ''} ${found.map(f => `"${f}"`).join(', ')} in "${text.slice(0, 60)}"`);
+  }
+});
+
+export const RULES_VOCAB = [V60, 
   ...unitAndSubject('V2', V2), ...unitAndSubject('V3', V3), ...unitAndSubject('V4', V4), ...unitAndSubject('V8', V8),
   ...unitAndSubject('V28', V28), ...unitAndSubject('V36', V36), ...unitAndSubject('V50', V50)
 ];

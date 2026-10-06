@@ -1,6 +1,5 @@
 // Fieldcraft subject registry. Loaded before any file under public/subjects/.
-// Subject files call FC.subject / FC.key / FC.unit / FC.cards / FC.cases / FC.specimens, and a subject
-// whose units are not all rebuilt yet also calls FC.legacy with its old-shape record (lesson standard F5).
+// Subject files call FC.subject / FC.key / FC.unit / FC.cards / FC.cases / FC.specimens.
 // Nothing here renders. Every registered object is deep-frozen, and each call replaces the subject's
 // slot with a new object, so no data file can change another's content.
 (function (root) {
@@ -18,7 +17,7 @@
     return value;
   }
 
-  const EMPTY = { meta: null, key: null, units: {}, cards: {}, cases: {}, specimens: [], legacy: null };
+  const EMPTY = { meta: null, key: null, units: {}, cards: {}, cases: {}, specimens: [] };
 
   function update(subjectId, change) {
     const before = subjects[subjectId] || EMPTY;
@@ -53,14 +52,6 @@
     specimens(id, list) {
       update(id, s => ({ specimens: [...s.specimens, ...list] }));
     },
-    // The subject in its old shape (standard 0). Only the old renderer reads it.
-    legacy(id, record) {
-      update(id, s => {
-        if (s.legacy) fail(`${id} legacy record registered twice`);
-        return { legacy: { ...record, id } };
-      });
-    },
-
     get(id) { return subjects[id] || fail(`unknown subject "${id}"`); },
     has(id) { return !!subjects[id]; },
     ids() { return Object.keys(subjects); }

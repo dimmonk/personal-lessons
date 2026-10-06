@@ -3,12 +3,10 @@
 //   data                 { standard, subjects }              from load.mjs
 //   lock                 the working lock, or null
 //   committedLock        the lock of the last commit, or null
-//   standard0            { units: [...] } the working list of standard-0 units, or null
-//   committedStandard0   the same, from the last commit, or null
 //   site                 { files: [{ path, lines }], indexScripts, swShell, hasIndex } for V47
 //   held, committedHeld  { held: [message, ...] } the working list of held findings (V58), and the list of the last commit
 //   validatorSources     { name: source text } for V29
-// Rules apply only to units and subjects of standard 1 or more (F5). V0 runs first: when a subject or unit fails its shape,
+// Every registered subject and unit is held to every rule. V0 runs first: when a subject or unit fails its shape,
 // its other rules are skipped and the run says so, because rules read the shape they were promised.
 import { subjectView, unitView } from './model.mjs';
 import { RULES } from './rules-index.mjs';
@@ -59,20 +57,17 @@ function applyHeld(report, input) {
   check(true, '');
 }
 
-const atStandard = n => typeof n === 'number' && n >= 1;
-// A subject with only an old-format record has no subject record (meta is null) and so no standard to check (F5).
-const subjectStandard = subject => subject.meta ? subject.meta.standard : null;
-
 export function runRules(input, rules = RULES) {
   const report = createReport();
   const { data } = input;
-  const subjectIds = Object.keys(data.subjects).filter(id => atStandard(subjectStandard(data.subjects[id])));
+  const subjectIds = Object.keys(data.subjects);
   let units = 0;
   for (const id of subjectIds) {
+    if (!data.subjects[id].meta) { report.checker('V0', id)(false, 'the subject has no subject record (FC.subject)'); continue; }
     const sv = subjectView(data, id);
     const ok = runScope(byScope(rules, 'subject'), sv, id, report);
     if (!ok) continue;
-    for (const unitId of Object.keys(data.subjects[id].units).filter(u => atStandard(data.subjects[id].units[u].standard))) {
+    for (const unitId of Object.keys(data.subjects[id].units)) {
       const uv = unitView(data, id, unitId);
       const unitRules = byScope(rules, 'unit').filter(r => !r.kinds || r.kinds.includes(uv.kindName));
       runScope(unitRules, uv, uv.label, report);
@@ -81,6 +76,5 @@ export function runRules(input, rules = RULES) {
   }
   byScope(rules, 'site').forEach(r => runOne(r, input, '', report));
   if (byScope(rules, 'held').length > 0) applyHeld(report, input);
-  const standard1 = subjectIds.length > 0 || units > 0;
-  return { ...report.state, units, subjects: subjectIds.length, standard1 };
+  return { ...report.state, units, subjects: subjectIds.length };
 }

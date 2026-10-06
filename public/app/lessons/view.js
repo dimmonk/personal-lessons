@@ -17,19 +17,15 @@ function focusOn(selector){
   el.setAttribute('tabindex', '-1');
   el.focus({ preventScroll: true });
 }
-// "Unit One": the registered unit's tag, else its place in the subject's course (an earlier unit not yet rebuilt)
-function unitLabel(data, unitId){
-  if(data.units[unitId]) return 'Unit ' + data.units[unitId].tag;
-  const at = data.meta.units.indexOf(unitId);
-  return at < 0 ? 'an earlier unit' : 'Unit ' + cap(numWord(at + 1));
-}
+// "Unit One": the registered unit's tag
+const unitLabel = (data, unitId) => 'Unit ' + (data.units[unitId] || lessonFail(`unknown unit ${unitId}`)).tag;
 
 // The wording the app owns: the same sentence in every unit, so no unit types it (lesson standard K9, E2, E3, E6).
 const SAY = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
   route: 'Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.',
   preview: n => `This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are ${numWord(n)} of them, and each gets its name when it is taught.`,
-  howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away.',
+  howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away.',
   pointTo: 'What you must be able to point to',
   oneCase: 'This comes from one case so far. The next card tests it on a second case.',
   keyAsks: 'The question',
@@ -60,7 +56,7 @@ const SAY = {
   confused: 'This card confused me',
   confusedNoted: 'Noted, with this unit’s revision. It stays on this device.',
   answerToGoOn: 'Answer above to go on',
-  // Back inside a drill (E11): a unit's drill goes back to the cards; a returned set or Practise again goes back to the subject
+  // Back inside a drill (E11): a unit's drill goes back to the cards; a returned set or Practice again goes back to the subject
   backToCards: 'Back to the cards',
   backFrom: name => `Back to ${name}`,
   // the card list beside a unit, 1280px and up (E2): a heading can carry a name that is not taught yet, so cards not reached are numbered only
@@ -72,12 +68,12 @@ const SAY = {
   wouldChange: 'What would make it a different name',
   likeness: 'When a likeness and the answers disagree, go by the words that answer the question.',
   drillIntro: (stages, earlier) => `The cards are out of view from here, and every case is new. The drill has ${numWord(stages)} stage${stages === 1 ? '' : 's'}. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. `
-    + (earlier ? `${cap(numWord(earlier))} of the cases come${earlier === 1 ? 's' : ''} from an earlier unit, without being labelled. ` : '')
+    + (earlier ? `${cap(numWord(earlier))} of the cases come${earlier === 1 ? 's' : ''} from an earlier unit, without being labeled. ` : '')
     + 'Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.',
   // fact units (A12)
   factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${numWord(facts)} fact${facts === 1 ? '' : 's'}, in ${numWord(groups)} group${groups === 1 ? '' : 's'}:`,
-  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away.',
+  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away.',
   factCheckHeading: 'A question from memory',
   factStem: q => esc(q),
   whichFactStem: answer => `Which of these two facts has the answer ${answer}?`,
@@ -128,7 +124,7 @@ const SAY = {
     whole: () => 'The whole problem is yours. Work it out, then choose the answer. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.',
     routeSolve: () => 'No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.',
     fact: () => 'Each fact is asked from memory. The other facts from its card are the choices. Facts that are easy to swap are placed next to each other on purpose.',
-    name: single => 'The answers are shown for each case. Give the name that goes with them.' + (single ? ' This stage practises one thing: which name goes with which answer.' : ''),
+    name: single => 'The answers are shown for each case. Give the name that goes with them.' + (single ? ' This stage practices one thing: which name goes with which answer.' : ''),
     piece: () => 'One question at a time.',
     finish: shownCount => `${shownCount === 1 ? 'The first answer is shown.' : 'The first answers are shown.'} Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.`,
     route: () => 'No help. Answer every question in order, then give the name.',
@@ -137,7 +133,7 @@ const SAY = {
   }
 };
 
-// One view of a subject's standard-1 data, with the lookups everything else needs.
+// One view of a subject's data, with the lookups everything else needs.
 function subjectView(subjectId){
   const data = FC.get(subjectId);
   const key = data.key || lessonFail(`${subjectId} has no key`);
@@ -160,7 +156,7 @@ function subjectView(subjectId){
     term: id => (key.terms || []).find(t => t.id === id) || lessonFail(`unknown term ${id}`),
     caseById: id => caseIndex[id] || lessonFail(`unknown case ${id}`),
     casesOf: unitId => data.cases[unitId] || [],
-    unitIds: () => data.meta.units.filter(id => data.units[id]),
+    unitIds: () => data.meta.units,
     unit: id => data.units[id] || lessonFail(`unknown unit ${id}`),
     // the questions on a case's route, in the key's order
     routeSteps: c => steps.filter(s => c.route && c.route[s.code]).map(s => s.code),

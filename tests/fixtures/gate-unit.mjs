@@ -6,7 +6,6 @@ export function registerGateUnit() {
   const S = 'gatetest';
   FC.subject(S, { name: 'Gate test', rev: 1, standard: 1, action: false, blurb: 'x', units: ['u1'], settings: ['work', 'home', 'money', 'health'], limits: [],
     history: [{ rev: 1, date: '2026-10-05', change: 'fixture' }] });
-  FC.legacy(S, { course: [], quickDrills: [], determination: { gateCode: null, steps: [], stepsByGate: null }, specimens: [] });
   FC.key(S, {
     outcomes: [], terms: [{ id: 'mark', unit: 'u1', n: 'a mark', means: 'the words in a case that settle the question' }], avoid: [], branches: {},
     gate: { code: 'D1', unit: 'u1', q: 'What kind of thing is this?', purpose: 'Sorts the alpha sort from the beta sort', why: 'The next questions depend on it.',
@@ -76,10 +75,10 @@ export function registerGateUnit() {
     { id: 'q-d1', kind: 'question', step: 'D1', h: 'The question', link: 'Link.', decides: 'It decides.', how: 'Look.' },
     { id: 'check-d1', kind: 'check', after: 'D1', case: 'c-b2', ask: { type: 'step', step: 'D1' } },
     { id: 'worked-a', kind: 'worked', h: 'Worked', link: 'Link.', case: 'c-w1', steps: [{ step: 'D1', reason: 'Reason {cue:D1}.' }],
-      hold: { neighbour: 'b', prompt: { kind: 'reason', choices: [{ id: 'x', text: 'True one.' }, { id: 'y', text: 'True two.', note: 'Not that one.' }], answer: 'x' }, reason: 'Because the alpha part runs through the whole of the case.' },
+      hold: { neighbor: 'b', prompt: { kind: 'reason', choices: [{ id: 'x', text: 'True one.' }, { id: 'y', text: 'True two.', note: 'Not that one.' }], answer: 'x' }, reason: 'Because the alpha part runs through the whole of the case.' },
       impression: { resembles: 'c-a1', text: 'It looks like one you know.' } },
     { id: 'worked-b', kind: 'worked', h: 'Worked, a case that misleads', link: 'Link.', case: 'c-w2', steps: [{ step: 'D1', reason: 'Reason again {cue:D1}.' }],
-      hold: { neighbour: 'a', prompt: { kind: 'reason', choices: [{ id: 'x', text: 'True one.', note: 'Not that one.' }, { id: 'y', text: 'True two.' }], answer: 'y' }, reason: 'Because the beta part is what the case is really about.' },
+      hold: { neighbor: 'a', prompt: { kind: 'reason', choices: [{ id: 'x', text: 'True one.', note: 'Not that one.' }, { id: 'y', text: 'True two.' }], answer: 'y' }, reason: 'Because the beta part is what the case is really about.' },
       impression: { resembles: 'c-b1', first: 'c-a1', text: 'It brings back alpha first, and the key goes with the beta part.' } },
     { id: 'recap', kind: 'recap', h: 'Recap', link: 'Link.', carry: ['carry this'] },
     { id: 'transfer', kind: 'transfer', h: 'In your own life', link: 'Link.', ask: 'Name one.', prompts: [{ family: 'a', occasion: 'an alpha occasion' }, { family: 'b', occasion: 'a beta occasion' }, { family: 'c', occasion: 'a gamma occasion' }], places: ['work', 'home'] }

@@ -19,11 +19,6 @@ const swap = (list, a, b) => list.map(x => x === a ? b : x === b ? a : x);
 const without = (list, x) => list.filter(y => y !== x);
 const find = (list, id) => list.find(x => x.id === id);
 
-// a unit of an older standard, registered but not rebuilt (F5)
-const withOldUnit = (id, extra) => (data, h) => h.setIn(data, ['subjects', P, 'units', id], { id, standard: 0, rev: 0, ...extra });
-// an old unit added after the subject's real units, and listed in the course (every unit of the exemplar is rebuilt)
-const withListedOldUnit = (id, extra) => (data, h) => withOldUnit(id, extra)(h.updateIn(data, meta('units'), units => [...units, id]), h);
-const listedOld = id => input => ({ ...input, standard0: { units: [`${P}/${id}`] }, committedStandard0: { units: [`${P}/${id}`] } });
 
 // The units of the fixtures that stand for the other kinds (kind-fixtures.mjs)
 const FACT = ['subjects', 'facttest'], PROC = ['subjects', 'proctest'], GATE = ['subjects', 'gatetest'];
@@ -38,6 +33,8 @@ const ppart = (id, field) => punit('parts', { id }, field);
 export const CONTROLS = [
   { rule: 'V0', name: 'a card holds a field the shape does not have',
     data: (d, h) => h.setIn(d, [...card('orient'), 'bogus'], 'x') },
+  { rule: 'V0', name: 'the subject lists a unit that has no unit record',
+    data: (d, h) => h.updateIn(d, meta('units'), units => [...units, 'u9']) },
   { rule: 'V1', name: 'a question does not end in a question mark',
     data: (d, h) => h.setIn(d, key('branches', 'reasoning', { code: 'R1' }, 'q'), 'What does the reasoning do') },
   { rule: 'V2', name: 'a card types an outcome name by hand',
@@ -136,18 +133,18 @@ export const CONTROLS = [
     } },
   { rule: 'V45', name: 'the unit revision goes up with no history line',
     data: (d, h) => h.setIn(d, unit('rev'), 2) },
+  { rule: 'V45', name: 'a unit is of standard 0, which no longer exists',
+    data: (d, h) => h.setIn(d, unit('standard'), 0) },
   { rule: 'V46', name: 'content changed and the lock was not regenerated', keepLock: true,
     data: (d, h) => h.updateIn(d, meta('blurb'), appended('Changed after the lock was written.')) },
   { rule: 'V46', name: 'deployed content changed without a higher revision', keepLock: true,
     input: input => ({ ...input, committedLock: { standard: 1, subjects: {}, units: { [`${P}/${U}`]: { rev: input.data.subjects[P].units[U].rev, standard: 1, fp: 'sha256:' + '0'.repeat(64), deployed: '2026-10-20' } } } }) },   // the unit's own revision, deployed with other content
   { rule: 'V47', name: 'a script file is over the line limit', keepLock: true,
     input: input => ({ ...input, site: { ...input.site, files: [...input.site.files, { path: 'subjects/psychology/u9.cards-1.js', lines: 801 }] } }) },
-  { rule: 'V48', name: 'the standard-0 list gained a unit',
-    input: input => ({ ...input, standard0: { units: ['psychology/u9'] }, committedStandard0: { units: [] } }) },
-  { rule: 'V48', name: 'a unit assumes a unit that is still at standard 0',
-    data: withOldUnit('u1', {}), input: listedOld('u1') },
   { rule: 'V49', name: 'two units share a drill key',
-    data: withListedOldUnit('u9', { drill: { key: 'u2' } }), input: listedOld('u9') },
+    data: (d, h) => h.setIn(d, ['subjects', P, 'units', 'u3', 'drill', 'key'], d.subjects[P].units[U].drill.key) },
+  { rule: 'V60', name: 'a case story is spelled the British way',
+    data: (d, h) => h.updateIn(d, kase('sauce'), c => ({ ...c, text: `${c.text} The walls were a pale colour.` })) },
   { rule: 'V50', name: 'a card uses a word the app avoids',
     data: (d, h) => h.updateIn(d, [...card('lens'), 'body'], appended('This lesson is about reasoning.')) },
   { rule: 'V51', name: 'a second lens card',
@@ -166,9 +163,9 @@ export const CONTROLS = [
     // the ledger step is also what V15 checks against the key's answers, so the same fault turns both red
     data: (d, h) => h.updateIn(d, unit('ledger'), l => l.map(e => ({ ...e, step: 'D1' }))) },
   { rule: 'V56', name: 'two units share a title',
-    data: withListedOldUnit('u9', { title: { text: 'One person’s reasoning' } }), input: listedOld('u9') },
+    data: (d, h) => h.setIn(d, ['subjects', P, 'units', 'u3', 'title'], d.subjects[P].units[U].title) },
 
-  /* ----- section 15: the legit marker, the legacy files, and the rules of the other kinds of unit ----- */
+  /* ----- section 15: the legit marker, and the rules of the other kinds of unit ----- */
   { rule: 'V0', name: 'an outcome is marked legit with something that is not true',
     data: (d, h) => h.setIn(d, key('outcomes', { id: 'fair' }, 'legit'), 'yes') },
   { rule: 'V0', name: 'a ledger entry of a classification unit names no step',
@@ -183,9 +180,6 @@ export const CONTROLS = [
     data: (d, h) => h.updateIn(d, ['subjects', P, 'cases', U], cs => [...cs, { id: 'base-x', use: 'baseline', tier: 'clean', setting: 'work', topic: 'x', text: 'A made-up case.' }]) },
   { rule: 'V58', name: 'a held finding no longer fires', input: input => ({ ...input, held: { held: ['V2 psychology: a line that is no longer typed'] }, committedHeld: { held: ['V2 psychology: a line that is no longer typed'] } }) },
   { rule: 'V58', name: 'a finding was added to the held list', input: input => ({ ...input, held: { held: ['V2 psychology: a new finding'] }, committedHeld: { held: [] } }) },
-  { rule: 'V47', name: 'the old data of a subject is over the line limit and stays exempt', green: true, keepLock: true,
-    input: input => ({ ...input, site: { ...input.site, files: [...input.site.files, { path: 'subjects/civics/standard0.js', lines: 1308 }],
-      indexScripts: [...(input.site.indexScripts || []), 'subjects/civics/standard0.js'], swShell: [...(input.site.swShell || []), 'subjects/civics/standard0.js'] } }) },   // listed, as a real old file is
 
   { base: 'fact', rule: 'V0', name: 'a fact check names a row that is on another facts card',
     data: (d, h) => h.setIn(d, [...fcard('chk-t-house'), 'ask', 'row'], 'n-house') },

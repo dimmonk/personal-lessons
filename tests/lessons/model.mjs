@@ -27,9 +27,6 @@ export function keyLookups(key) {
   };
 }
 
-// The cases registered under a unit id that has no unit record (the bank of a unit not yet rebuilt).
-const orphanBanks = subject => Object.entries(subject.cases).filter(([unitId]) => !subject.units[unitId]);
-
 // Every line of the key that no authored text may type by hand (V2).
 function keyLinesOf(key, steps) {
   return [
@@ -57,7 +54,6 @@ export function subjectView(data, subjectId) {
     keyLines: keyLinesOf(key, lookups.steps),
     scanTargets: () => [
       ...subject.specimens.map(c => target(c.id, c, c)),
-      ...orphanBanks(subject).flatMap(([, list]) => list).map(c => target(c.id, c, c)),
       target('subject', { blurb: subject.meta.blurb, limits: subject.meta.limits })
     ],
     // every line of the key the learner reads (questions, answers, plain words, what a name needs, tie-break lines, term
@@ -67,7 +63,6 @@ export function subjectView(data, subjectId) {
     limitsTarget: () => target('limits', (subject.meta.limits || []).map(l => ({ h: l.h, body: l.text }))),
     allCaseLists: caseLists,
     allCases: [...caseLists.flatMap(([, list]) => list), ...subject.specimens],
-    orphanCases: orphanBanks(subject).flatMap(([, list]) => list),
     unitIds: Object.keys(subject.units)
   };
 }

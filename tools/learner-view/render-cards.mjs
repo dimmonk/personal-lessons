@@ -18,7 +18,7 @@ export const APP = {
   preview: n => `**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is the thing it leads to. There are ${num(n)} of them, and each gets its name when it is taught.`,
   // a gate unit: the answers are the names, so the preview has no second list
   previewGate: n => `**The questions this unit teaches.** This is a preview. You are not expected to follow it yet: every line is explained on the cards that come next. The question and its answers are worded exactly as you will meet them. Beside each answer, in plain words, is what a case of that kind is made of. There are ${num(n)} answers, and in this unit each answer is itself the name of a kind.`,
-  howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away.',
+  howTaught: 'Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away.',
   pointTo: 'What you must be able to point to',
   inPlain: 'In plain words',
   oneCase: 'This comes from one case so far. The next card tests it on a second case.',
@@ -53,7 +53,7 @@ export const APP = {
   // fact units (A12): the app's wording, view.js SAY
   factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${num(facts)} fact${facts === 1 ? '' : 's'}, in ${num(groups)} group${groups === 1 ? '' : 's'}:`,
-  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away.',
+  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away.',
   factCheckHeading: 'A question from memory',
   whichFactStem: answer => `Which of these two facts has the answer ${answer}?`,
   factColumns: ['The fact', 'The answer'],
@@ -325,11 +325,11 @@ export function makeCardRenderers(v, T) {
     });
     const p = card.hold.prompt, right = p.choices.find(x => x.id === p.answer);
     if (!v.isGate) out.push(`**Name it:** ${T.name(own)}`, '');
-    out.push(`**You are asked:** ${p.lead ? T.t(p.lead, c) + ' ' : ''}${APP.holdStem(T.name(own), T.name(card.hold.neighbour))}`, '');
+    out.push(`**You are asked:** ${p.lead ? T.t(p.lead, c) + ' ' : ''}${APP.holdStem(T.name(own), T.name(card.hold.neighbor))}`, '');
     p.choices.forEach(x => out.push(`- (${x.id}) ${T.t(x.text, c)}`));
     out.push('', `**Shown as soon as you choose.** The one that settles it is (${right.id}): ${T.t(right.text, c)}`);
     p.choices.filter(x => x !== right).forEach(x => out.push(`- If you chose (${x.id}): ${T.t(x.note, c)}`));
-    out.push('', `**Why this is ${plainName(own)} and not ${plainName(card.hold.neighbour)}**`, '', ...blocks(T.P(card.hold.reason, c)),
+    out.push('', `**Why this is ${plainName(own)} and not ${plainName(card.hold.neighbor)}**`, '', ...blocks(T.P(card.hold.reason, c)),
       `**${APP.secondLook}**`, '', ...blocks(T.P(card.impression.text, c)));
     while (out[out.length - 1] === '') out.pop();
     return out;

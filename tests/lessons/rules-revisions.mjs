@@ -1,19 +1,10 @@
-// Section 8, revisions and files: V29, V45, V46, V47, V48, V58.
-//
-// V48 reads a committed list of the units still at standard 0, tests/lessons/standard0-units.json:
-//     { "units": ["psychology/u1", "psychology/u3"] }
-// "units" holds "<subject>/<unit>" ids in any order. The list may only shrink: every entry must be in the list at the last
-// commit, every unit registered at standard 0 must be listed, and a unit rebuilt to standard 1 must be removed from it.
-// A project with nothing at standard 0 keeps { "units": [] }.
+// Section 8, revisions and files: V29, V45, V46, V47, V58.
 import { unitRule, subjectRule, siteRule, heldRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { anchorProblems } from './lockfile.mjs';
 import { unique } from './text.mjs';
 
 const FILE_LINE_LIMIT = 800;
-// The old data of a subject whose units are not all rebuilt is registered whole by FC.legacy, in the file the split of F6 step 2 made
-// from it. It is deleted with the last unit that needs it (F5), is not split, and so is not held to the limit.
-const isLegacyData = path => /^subjects\/[^/]+\/standard0\.js$/.test(path);
 
 /* ---------- V45: revisions are real fields with a history ---------- */
 function historyProblems(history, rev, what) {
@@ -27,7 +18,7 @@ function revisionProblems(record, history, what, maxStandard) {
   return [
     ...(Number.isInteger(record.rev) && record.rev >= 1 ? [] : [`${what} rev must be an integer of at least 1`]),
     ...(Number.isInteger(record.rev) ? historyProblems(history, record.rev, `${what} history`) : []),
-    ...(Number.isInteger(record.standard) && record.standard <= maxStandard ? [] : [`${what} standard must not be above the standard version ${maxStandard}`])];
+    ...(Number.isInteger(record.standard) && record.standard >= 1 && record.standard <= maxStandard ? [] : [`${what} standard must be from 1 to the standard version ${maxStandard}`])];
 }
 
 function liveProblems(unit) {
@@ -49,8 +40,6 @@ export const V45_unit = unitRule('V45', (u, check) => {
 
 export const V45_subject = subjectRule('V45', (s, check) => {
   checkEach(check, 'subject', revisionProblems(s.meta, s.meta.history, 'subject', s.data.standard));
-  const stale = Object.values(s.subject.units).filter(u => u.standard === 0 && u.rev !== 0);
-  checkEach(check, 'units not yet rebuilt', stale.map(u => `${u.id}: a unit of standard 0 has rev 0`));
 });
 
 /* ---------- V46: the lock ---------- */
@@ -80,7 +69,7 @@ const missingFrom = (names, list) => names.filter(n => !list.includes(n));
 export const V47 = siteRule('V47', (input, check) => {
   const { files, indexScripts, swShell } = input.site;
   const names = files.map(f => f.path);
-  files.filter(f => !isLegacyData(f.path)).forEach(f => check(f.lines <= FILE_LINE_LIMIT, `${f.path} has ${f.lines} lines, over the limit of ${FILE_LINE_LIMIT}; add another file`));
+  files.forEach(f => check(f.lines <= FILE_LINE_LIMIT, `${f.path} has ${f.lines} lines, over the limit of ${FILE_LINE_LIMIT}; add another file`));
   for (const [what, list] of [['index.html script tags', indexScripts], ['sw.js SHELL', swShell]]) {
     if (list === null) continue;
     checkEach(check, what, [
@@ -88,32 +77,6 @@ export const V47 = siteRule('V47', (input, check) => {
       ...missingFrom(list, names).map(n => `${n} is in the ${what} and not on disk`)]);
   }
   if (indexScripts !== null && swShell !== null) check(sameSet(unique(indexScripts), unique(swShell)), 'index.html and sw.js list different scripts');
-});
-
-/* ---------- V48: the standard-0 list only shrinks, and units assume only standard-1 units ---------- */
-const standardOf = (subject, unitId) => subject.units[unitId] ? subject.units[unitId].standard : null;
-
-export const V48_unit = unitRule('V48', (u, check) => {
-  for (const id of u.unit.assumes) {
-    const standard = standardOf(u.subject, id);
-    // a unit with no record at all is only a bank of cases (the exemplar's Unit One sample); the rule judges registered units
-    check(standard === null || standard >= 1, `assumes ${id}, which is registered at standard ${standard}`);
-  }
-});
-
-function standard0Problems(data, list, committed) {
-  const registered = Object.entries(data.subjects).flatMap(([sid, s]) => Object.entries(s.units).map(([uid, unit]) => [`${sid}/${uid}`, unit.standard]));
-  const listed = new Set(list.units);
-  return [
-    ...registered.filter(([id, standard]) => standard === 0 && !listed.has(id)).map(([id]) => `${id} is at standard 0 and is not in the committed list`),
-    ...registered.filter(([id, standard]) => standard >= 1 && listed.has(id)).map(([id]) => `${id} is at standard 1 but is still in the list; remove it`),
-    ...(committed ? list.units.filter(id => !committed.units.includes(id)).map(id => `${id} was added to the list; the list may only shrink`) : [])
-  ];
-}
-
-export const V48_site = siteRule('V48', (input, check) => {
-  if (!input.standard0) return;
-  checkEach(check, 'standard-0 list', standard0Problems(input.data, input.standard0, input.committedStandard0));
 });
 
 /* ---------- V29: the validator holds no limit on how long anything may be ---------- */
@@ -131,4 +94,4 @@ export const V29 = siteRule('V29', (input, check) => {
 
 export const V58 = heldRule('V58');
 
-export const RULES_REVISIONS = [V29, V45_unit, V45_subject, V46, V47, V48_unit, V48_site, V58];
+export const RULES_REVISIONS = [V29, V45_unit, V45_subject, V46, V47, V58];

@@ -29,8 +29,7 @@ export function unitFingerprint(data, subjectId, unitId) {
   const subject = data.subjects[subjectId];
   const unit = subject.units[unitId];
   const printed = { unit: omit(unit, 'rev', 'status', 'build'), cards: byId(subject.cards[unitId] || []), cases: byId(subject.cases[unitId] || []) };
-  // A unit not yet rebuilt has no teaches record; it is fingerprinted whole, so the old text cannot change unseen (R1).
-  return fingerprint(unit.teaches ? { ...printed, key: keySlice(subject, unitId) } : printed);
+  return fingerprint({ ...printed, key: keySlice(subject, unitId) });
 }
 
 export function subjectFingerprint(data, subjectId) {
@@ -42,8 +41,7 @@ export function subjectFingerprint(data, subjectId) {
 export function lockEntries(data) {
   const subjects = {};
   const units = {};
-  // a subject with only an old-format record has no subject record, and so nothing to lock (F5)
-  for (const id of Object.keys(data.subjects).sort().filter(name => data.subjects[name].meta)) {
+  for (const id of Object.keys(data.subjects).sort()) {
     const subject = data.subjects[id];
     subjects[id] = { rev: subject.meta.rev, fp: subjectFingerprint(data, id) };
     for (const unitId of Object.keys(subject.units).sort()) {

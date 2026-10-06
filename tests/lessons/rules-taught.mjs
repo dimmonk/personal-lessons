@@ -86,15 +86,15 @@ export const V5 = unitRule('V5', (u, check) => checkEach(check, 'a card', walk(u
 export const V7 = unitRule('V7', (u, check) => checkEach(check, 'a card', walk(u).v7));
 
 /* ---------- V6 ---------- */
-function practisedCases(u) {
+function practicedCases(u) {
   return [...u.cards.filter(c => c.kind === 'check').map(c => u.cases[c.case]),
     ...u.unit.drill.rungs.flatMap(r => u.flat(r).map(u.caseOf)).filter(u.isStory)];
 }
 
 export const V6 = unitRule('V6', (u, check) => {
-  const practised = practisedCases(u);
-  u.taught.forEach(o => check(practised.some(c => c.outcome === o), `${o} is never the answer of a check or drill item`));
-  u.unitSteps().forEach(s => s.options.forEach(opt => check(practised.some(c => c.route && c.route[s.code] && c.route[s.code].includes(opt.id)), `${s.code}.${opt.id} is never the right answer of a check or drill item`)));   // a problem to finish has no route
+  const practiced = practicedCases(u);
+  u.taught.forEach(o => check(practiced.some(c => c.outcome === o), `${o} is never the answer of a check or drill item`));
+  u.unitSteps().forEach(s => s.options.forEach(opt => check(practiced.some(c => c.route && c.route[s.code] && c.route[s.code].includes(opt.id)), `${s.code}.${opt.id} is never the right answer of a check or drill item`)));   // a problem to finish has no route
   const drillText = u.unit.drill.rungs.flatMap(r => [...u.flat(r).map(u.caseOf), u.cases[r.demo]]).filter(Boolean).flatMap(c => prose(c).map(([, s]) => s)).join(' ');
   for (const t of u.unit.teaches.terms) {
     const termCards = u.cards.filter(c => c.kind === 'term' && c.term === t).length;

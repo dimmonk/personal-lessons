@@ -120,7 +120,7 @@ function notProblems(ctx, c) {
   if (c.use === 'check' || ctx.stepsAsked(c).length === 0) return [];
   if (!c.not) return ['needs a "not" naming a look-alike of its outcome'];
   const name = nameOfCase(ctx, c);
-  return c.not.outcome !== name && ctx.ledgerFor(name, c.not.outcome) ? [] : [`"not" names ${c.not.outcome}, which is not a ledger neighbour of ${name}`];
+  return c.not.outcome !== name && ctx.ledgerFor(name, c.not.outcome) ? [] : [`"not" names ${c.not.outcome}, which is not a ledger neighbor of ${name}`];
 }
 
 function reasonPrompts(u) {
@@ -191,7 +191,7 @@ function V53(ctx, check) {
 
 /* ---------- V54: echo ---------- */
 export const V54 = unitRule('V54', (u, check) => {
-  check(u.routeCases.some(c => c.echo), 'no route-stage case echoes a named teaching case, so the second look is never practised');
+  check(u.routeCases.some(c => c.echo), 'no route-stage case echoes a named teaching case, so the second look is never practiced');
   for (const c of u.caseList.filter(k => k.echo)) {
     const target = u.cases[c.echo];
     check(Boolean(target.name) && target.use === 'teach' && nameOfCase(u, target) !== nameOfCase(u, c), `${caseName(c)}: echo must be a named teaching case of a different outcome`);

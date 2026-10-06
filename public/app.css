@@ -150,13 +150,9 @@ mark{background:var(--accent);color:var(--bg)}
 .tile{display:flex;flex-direction:column;justify-content:space-between;gap:14px;width:100%;
   min-height:84px;padding:12px;border:1px solid var(--rule)}
 .tile:hover{border-color:var(--border)}
-.tile.un{border-style:dashed}
 .tile .tt{font-size:14px;font-weight:600;line-height:1.25;letter-spacing:-.01em}
-.tile.un .tt{color:var(--dim)}
 .tile .tf{display:flex;align-items:baseline;justify-content:space-between;gap:6px}
 .tile .tf b{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--label)}
-.tile .tf b.ok{color:var(--green)}
-.tile .tf b.part{color:var(--accent)}
 
 /* ---------- reading ---------- */
 .lesson{font-family:var(--serif);font-size:17.5px;line-height:1.62;color:var(--body)}
@@ -186,7 +182,6 @@ table.k td b{color:var(--text)}
 
 .passage{margin:0 0 20px;padding:16px;background:var(--raised);font-family:var(--serif);
   font-size:17px;line-height:1.58;color:var(--body)}
-.passage.plain{font-family:var(--mono);font-size:26px;letter-spacing:.06em;text-align:center;padding:26px 16px}
 
 .hint{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--disabled);text-align:center;margin:0}

@@ -85,7 +85,7 @@ export const CARDS = {
   refute: card('refute', { about: str, h: str, link: text, idea: str, verdict: text, right: text, testedBy: strings }),
   question: card('question', { step: str, h: str, link: text, decides: text, how: text }, { whenBoth: text }),
   worked: card('worked', { h: str, link: text, case: str, steps: arr(obj({ step: str, reason: text })),
-    hold: obj({ neighbour: str, prompt: commit.reason, reason: text }),
+    hold: obj({ neighbor: str, prompt: commit.reason, reason: text }),
     impression: obj({ resembles: str, text }, { first: str }) }),
   recap: card('recap', { h: str, link: text, carry: arr(text) }),
   // a gate unit's prompts are families (A15)

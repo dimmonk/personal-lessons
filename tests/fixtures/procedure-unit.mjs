@@ -5,7 +5,6 @@ export function registerProcedureUnit() {
   const S = 'proctest';
   FC.subject(S, { name: 'Procedure test', rev: 1, standard: 1, action: false, blurb: 'x', units: ['u1'], settings: ['work', 'home', 'money'], limits: [],
     history: [{ rev: 1, date: '2026-10-05', change: 'fixture' }] });
-  FC.legacy(S, { course: [], quickDrills: [], determination: { gateCode: null, steps: [], stepsByGate: null }, specimens: [] });
   FC.key(S, {
     terms: [], avoid: [],
     outcomes: [

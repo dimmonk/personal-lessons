@@ -1,9 +1,8 @@
-/* ===================== SCREENS: THE FULL DETERMINATION, FOR A SUBJECT WHOSE UNITS ARE ALL REBUILT ===================== */
+/* ===================== SCREENS: THE FULL DETERMINATION ===================== */
 // Lesson standard E13. Specimens come from FC (S6). A specimen is offered by default only when the unit that teaches its
 // name is done; the rest are behind "try anyway", with a count of how many open with later units. They run clean, then
 // varied, then misleading. One complete worked determination is shown before the first scored specimen. Each specimen is
 // asked and marked by the engine's own asking code (ask.js: askHtml, wireAsk), so the verdict is the one of E5 and E7.
-// A subject that still has an old unit keeps the old determination screen (drills.js); shell.js chooses.
 
 const DET_SAY = {
   title: 'Name a case',
@@ -52,7 +51,7 @@ function detView(sv){
 function detTaughtOn(sv, what){
   const entry = what.ledger ? sv.unitIds().find(unitId => unitView(sv.subjectId, unitId).unit.ledger.some(l => l.id === what.ledger)) : null;
   const unitId = what.name ? sv.outcome(what.name).unit : what.step ? sv.step(what.step).unit : entry;
-  if(!unitId || !sv.data.units[unitId]) return null;
+  if(!unitId) return null;
   const v = unitView(sv.subjectId, unitId);
   return taughtOnCard(v, lessonText(v), what);
 }
@@ -150,14 +149,14 @@ function paintDetDone(subj, sv){
       <button class="btn ghost" data-v="subject">Back to ${esc(subj.name)}</button></div>`);
   on('#again', () => { DET = null; render(); });
 }
-function renderDetNew(subj){
+function renderDet(subj){
   const sv = subjectView(subj.id);
   if(!DET || DET.subjId !== subj.id || DET.phase === 'done') DET = freshDetRun(subj.id);
   ({ overview: paintDetOverview, worked: paintDetWorked, ask: paintDetAsk, done: paintDetDone })[DET.phase](subj, sv);
 }
 
 /* ---------- the subject screen's card ---------- */
-function detCardNew(subj){
+function detCard(subj){
   const sv = subjectView(subj.id), { open, later } = specimenSplit(sv), stats = specimenStats(sv);
   return `<div class="block"><div class="card" data-det-card>
     <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px">

@@ -152,8 +152,8 @@ function renderCheck(card) {
   const near = nearOption(c, ask.step);
   among.filter(id => id !== answer.id).forEach(id => {
     const o = v.option(ask.step, id);
-    const neighbour = near && near.id === id && !(c.also || []).includes(id);
-    say(`  - If you chose **${o.n}**: ` + (c.miss && c.miss[id] ? T.t(c.miss[id], c) : neighbour ? T.t(c.not.why, c) : answerMiss(c, ask.step, id, answer.id).replace(/^You chose \*\*.*?\*\*\. /, '')));
+    const neighbor = near && near.id === id && !(c.also || []).includes(id);
+    say(`  - If you chose **${o.n}**: ` + (c.miss && c.miss[id] ? T.t(c.miss[id], c) : neighbor ? T.t(c.not.why, c) : answerMiss(c, ask.step, id, answer.id).replace(/^You chose \*\*.*?\*\*\. /, '')));
   });
   say(teach);
 }
@@ -223,7 +223,7 @@ function renderItem(item, rung) {
     const bank = Object.values(v.earlier[item.earlier]).filter(c => c.route[GATE][0] !== ownBranch && v.key.branches[c.route[GATE][0]]);
     const picked = [...new Set(bank.map(c => c.route[GATE][0]))].map(f => bank.find(c => c.route[GATE][0] === f));
     const c = (picked.length ? picked : bank)[earlierSeen++ % (picked.length || bank.length)];
-    if (c.kind === 'problem') { say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}, unlabelled. This is a sample.)*`, ''); return renderProblem(c, 'route'); }
+    if (c.kind === 'problem') { say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}, unlabeled. This is a sample.)*`, ''); return renderProblem(c, 'route'); }
     say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*`, '', T.show(c), '', `**You are asked:** ${v.key.gate.q}`, '',
       ...optionLines(GATE, allIds(GATE)), '', '**Shown as soon as you answer**', '',
       `- If you are right: “Right: **${v.option(GATE, c.route[GATE][0]).n}.**” ${stepReason(c, GATE)}`,
@@ -289,7 +289,7 @@ const earlierCount = unit.drill.rungs.reduce((n, r) => n + flat(r).filter(i => t
 const stageCount = unit.drill.rungs.length;
 const firstShown = v.priorSteps.length === 1 ? 'The first answer is shown.' : 'The first answers are shown.';
 const STAGE = {
-  name: 'The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.',
+  name: 'The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.',
   piece: 'One question at a time.',
   finish: `${firstShown} Answer the rest, then give the name. From here on your answers on the way are marked as well as the name: a right name reached by a wrong answer counts as a miss.`,
   route: 'No help. Answer every question in order, then give the name.',
@@ -306,7 +306,7 @@ const GATE_STAGE = {
 };
 const stageText = ask => ask === 'route' && unit.kind === 'P' ? 'No help. First answer the questions in order and say what kind of problem it is. Then work the problem with that procedure and choose the answer.' : (v.isGate ? GATE_STAGE : STAGE)[ask];
 const drillIntro = v.isFacts ? `The cards are out of view from here. The drill has ${num(stageCount)} stage${stageCount === 1 ? '' : 's'}. ${APP.stakes} What you miss is asked again at least three items later, and every fact comes back on later days.` : `The cards are out of view from here, and every case is new. The drill has ${num(stageCount)} stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. `
-  + (earlierCount ? `${cap(num(earlierCount))} of the cases come from an earlier unit, without being labelled. ` : '')
+  + (earlierCount ? `${cap(num(earlierCount))} of the cases come from an earlier unit, without being labeled. ` : '')
   + `${APP.stakes} What you miss is asked again before the drill ends, and every name comes back on later days with a new case.`;
 
 /* ---------- the document ---------- */

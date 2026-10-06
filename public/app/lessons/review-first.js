@@ -9,7 +9,7 @@ const REVIEW_SAY = {
   lead: (unit, ok, n, now) => `In ${unit} you got ${ok} of ${n} right on the first try in the naming and single-question stages. That is half or fewer, and ${now} leans on it. Nothing is locked: you can go straight on.`,
   names: 'Names from that unit that are due, or that you missed',
   noNames: 'None of its names is due yet.',
-  practise: unit => `Practise ${unit} again`,
+  practice: unit => `Practice ${unit} again`,
   goOn: unit => `Go on to ${unit}`
 };
 // the items of the name and piece stages; fewer than this many first tries is too few to say anything (E12)
@@ -34,7 +34,7 @@ function namesToReview(subjectId, unitId){
 // null when there is nothing to say, else [{ unitId, n, ok }] for the assumed units that were hard
 function reviewFirstFor(subj, entry){
   if(!['new', 'again'].includes(rebuiltStatus(subj.id, entry.id))) return null;
-  const data = FC.get(subj.id), assumed = data.units[entry.id].assumes.filter(id => data.units[id]);
+  const data = FC.get(subj.id), assumed = data.units[entry.id].assumes;
   const hard = assumed.map(unitId => ({ unitId, ...assumedAccuracy(subj.id, unitId) })).filter(a => a.n >= REVIEW_MIN_TRIES && a.ok * 2 <= a.n);
   return hard.length ? hard : null;
 }
@@ -47,7 +47,7 @@ function renderReviewFirst(subj){
     const v = unitView(subj.id, unitId), unit = `Unit ${v.unit.tag}`, names = namesToReview(subj.id, unitId);
     return `<div class="lsec"><p>${esc(REVIEW_SAY.lead(unit, ok, n, now))}</p>${lessonLabel(REVIEW_SAY.names)}
       ${names.length ? lessonList(names.map(id => `${esc(cap(v.thing(id).plain))}: <span class="kw">${esc(v.nameOf(id))}</span>`)) : `<p>${esc(REVIEW_SAY.noNames)}</p>`}
-      <button class="btn ghost" data-practise="${esc(unitId)}">${esc(REVIEW_SAY.practise(unit))}</button></div>`;
+      <button class="btn ghost" data-practice="${esc(unitId)}">${esc(REVIEW_SAY.practice(unit))}</button></div>`;
   }).join('');
   screenEl().innerHTML = `<div class="pane read" style="--accent:${subj.accent}">
     <div class="topbar"><button class="back" data-v="subject">${icon('back', 18)}${esc(subj.name)}</button></div>
@@ -55,6 +55,6 @@ function renderReviewFirst(subj){
     <div class="lesson reviewfirst">${blocks}</div>
     <div class="actbar"><button class="btn" id="goOn">${esc(REVIEW_SAY.goOn(now))}${icon('arrow')}</button></div></div>`;
   on('[data-v]', el => go(el.dataset.v));
-  on('[data-practise]', el => startAgain(subj.id, el.dataset.practise));
+  on('[data-practice]', el => startAgain(subj.id, el.dataset.practice));
   on('#goOn', () => beginRebuiltUnit(subj, entry));
 }
