@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Two: The Constitution and its amendments
 
-*The founding documents, what the Constitution lets Congress do, the Bill of Rights, and the amendments that came after.* Unit revision 1, built to lesson standard 1, status: draft.
+*The founding documents, what the Constitution lets Congress do, the Bill of Rights, and the amendments that came after.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold, about the Constitution and the changes made to it
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 87*
 
 [reviewers only: card kind `orient`, id `orient-const`]
 
@@ -64,11 +64,11 @@ This unit skips more than it holds. It covers six of the first ten amendments an
 
 Where a right ends, and how far a power reaches, is argued in court for years by people who know the material well. This unit holds the facts, not the arguments.
 
-Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The first plan of government did not work
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 87*
 
 [reviewers only: card kind `concept`, id `con-fail`]
 
@@ -89,7 +89,7 @@ The five facts below are the five failures. After each one, the explanation says
 
 ### 3. The five failures of the Articles
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 87*
 
 [reviewers only: card kind `facts`, id `facts-fail`]
 
@@ -113,7 +113,7 @@ These are the five failures, each with how the new plan answered it.
 
 ### 4. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 87*
 
 [reviewers only: card kind `check`, id `chk-fail-money`]
 
@@ -136,7 +136,7 @@ These are the five failures, each with how the new plan answered it.
 
 ### 5. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 87*
 
 [reviewers only: card kind `check`, id `chk-fail-trade`]
 
@@ -159,7 +159,7 @@ These are the five failures, each with how the new plan answered it.
 
 ### 6. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 87*
 
 [reviewers only: card kind `check`, id `chk-fail-head`]
 
@@ -182,7 +182,7 @@ These are the five failures, each with how the new plan answered it.
 
 ### 7. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 87*
 
 [reviewers only: card kind `check`, id `chk-fail-courts`]
 
@@ -205,7 +205,7 @@ These are the five failures, each with how the new plan answered it.
 
 ### 8. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 87*
 
 [reviewers only: card kind `check`, id `chk-fail-change`]
 
@@ -228,7 +228,7 @@ These are the five failures, each with how the new plan answered it.
 
 ### 9. Five dates, and what happened in each
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 87*
 
 [reviewers only: card kind `concept`, id `con-date`]
 
@@ -247,7 +247,7 @@ Notice that 1787 and 1789 are both years of the Constitution. One is when it was
 
 ### 10. The five dates
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 87*
 
 [reviewers only: card kind `facts`, id `facts-date`]
 
@@ -271,7 +271,7 @@ These are the five dates, each with how it fits the story of the first plan and 
 
 ### 11. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 87*
 
 [reviewers only: card kind `check`, id `chk-date-decl`]
 
@@ -294,7 +294,7 @@ These are the five dates, each with how it fits the story of the first plan and 
 
 ### 12. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 87*
 
 [reviewers only: card kind `check`, id `chk-date-articles`]
 
@@ -317,7 +317,7 @@ These are the five dates, each with how it fits the story of the first plan and 
 
 ### 13. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 87*
 
 [reviewers only: card kind `check`, id `chk-date-convention`]
 
@@ -340,7 +340,7 @@ These are the five dates, each with how it fits the story of the first plan and 
 
 ### 14. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 14 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 14 of 87*
 
 [reviewers only: card kind `check`, id `chk-date-start`]
 
@@ -363,7 +363,7 @@ These are the five dates, each with how it fits the story of the first plan and 
 
 ### 15. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 15 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 15 of 87*
 
 [reviewers only: card kind `check`, id `chk-date-bor`]
 
@@ -386,7 +386,7 @@ These are the five dates, each with how it fits the story of the first plan and 
 
 ### 16. The year it was written, and the year it began
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 16 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 16 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-date`]
 
@@ -435,7 +435,7 @@ Is it the year the document was written, or the year the government under it beg
 
 ### 17. Three documents, three kinds of writer
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 87*
 
 [reviewers only: card kind `concept`, id `con-wrote`]
 
@@ -454,7 +454,7 @@ So the three can be held apart by the size of the group. The Declaration is one 
 
 ### 18. Who wrote what
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 87*
 
 [reviewers only: card kind `facts`, id `facts-wrote`]
 
@@ -476,7 +476,7 @@ These are the four facts about who wrote the three documents, each with how it f
 
 ### 19. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 87*
 
 [reviewers only: card kind `check`, id `chk-wrote-decl`]
 
@@ -497,7 +497,7 @@ These are the four facts about who wrote the three documents, each with how it f
 
 ### 20. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 87*
 
 [reviewers only: card kind `check`, id `chk-wrote-const`]
 
@@ -518,7 +518,7 @@ These are the four facts about who wrote the three documents, each with how it f
 
 ### 21. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 87*
 
 [reviewers only: card kind `check`, id `chk-wrote-fed`]
 
@@ -539,7 +539,7 @@ These are the four facts about who wrote the three documents, each with how it f
 
 ### 22. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 87*
 
 [reviewers only: card kind `check`, id `chk-wrote-pen`]
 
@@ -560,15 +560,15 @@ These are the four facts about who wrote the three documents, each with how it f
 
 ### 23. Which of the three is law
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 87*
 
 [reviewers only: card kind `concept`, id `con-law`]
 
 The last group told you who wrote each document. This group asks the question that matters more: can a court make anyone obey it?
 
-*The neighbourhood meeting*
+*The neighborhood meeting*
 
-> At a neighbourhood meeting a man says: ‘The Declaration of Independence promises us the pursuit of happiness, so a court has to order the city to give me a better apartment.’ A woman answers: ‘A court cannot order that on the strength of the Declaration. It is not law.’ A third person asks: ‘Then what is law? Is the Constitution? And the Federalist Papers, the essays everybody quotes, are they law too?’ Nobody at the meeting is sure.
+> At a neighborhood meeting a man says: ‘The Declaration of Independence promises us the pursuit of happiness, so a court has to order the city to give me a better apartment.’ A woman answers: ‘A court cannot order that on the strength of the Declaration. It is not law.’ A third person asks: ‘Then what is law? Is the Constitution? And the Federalist Papers, the essays everybody quotes, are they law too?’ Nobody at the meeting is sure.
 
 Some documents are law, which means that a court can order people to obey them. Others explain, or argue, and a court cannot order anything on their strength. The woman at the meeting is right about the Declaration, and the third person asks the right question about the other two.
 
@@ -581,7 +581,7 @@ The Federalist Papers are not law either. They are the writers’ own argument f
 
 ### 24. Law, or not law
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 87*
 
 [reviewers only: card kind `facts`, id `facts-law`]
 
@@ -601,7 +601,7 @@ These are the three facts, each with how it fits the idea that only a document a
 
 ### 25. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 25 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 25 of 87*
 
 [reviewers only: card kind `check`, id `chk-law-decl`]
 
@@ -620,7 +620,7 @@ These are the three facts, each with how it fits the idea that only a document a
 
 ### 26. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 26 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 26 of 87*
 
 [reviewers only: card kind `check`, id `chk-law-const`]
 
@@ -639,7 +639,7 @@ These are the three facts, each with how it fits the idea that only a document a
 
 ### 27. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 27 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 27 of 87*
 
 [reviewers only: card kind `check`, id `chk-law-fed`]
 
@@ -658,7 +658,7 @@ These are the three facts, each with how it fits the idea that only a document a
 
 ### 28. Two documents that are not law
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 28 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 28 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-law`]
 
@@ -701,7 +701,7 @@ Was it written to explain why the colonies were leaving Britain, or to persuade 
 
 ### 29. What the Declaration of Independence says
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 29 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 29 of 87*
 
 [reviewers only: card kind `concept`, id `con-decl`]
 
@@ -722,7 +722,7 @@ The Declaration is still not law. Use it for the “why”, such as why power co
 
 ### 30. The reasons and the two ideas
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 30 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 30 of 87*
 
 [reviewers only: card kind `facts`, id `facts-decl`]
 
@@ -742,7 +742,7 @@ These are the three facts about what the Declaration says, each with how it fits
 
 ### 31. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 31 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 31 of 87*
 
 [reviewers only: card kind `check`, id `chk-decl-reasons`]
 
@@ -761,7 +761,7 @@ These are the three facts about what the Declaration says, each with how it fits
 
 ### 32. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 32 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 32 of 87*
 
 [reviewers only: card kind `check`, id `chk-decl-rights`]
 
@@ -780,7 +780,7 @@ These are the three facts about what the Declaration says, each with how it fits
 
 ### 33. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 33 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 33 of 87*
 
 [reviewers only: card kind `check`, id `chk-decl-consent`]
 
@@ -805,7 +805,7 @@ These are the three facts about what the Declaration says, each with how it fits
 
 ### 34. What the first three articles built
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 87*
 
 [reviewers only: card kind `concept`, id `con-art`]
 
@@ -824,7 +824,7 @@ The three facts below are the three numbers and the three parts that go with the
 
 ### 35. Three articles, three parts
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 87*
 
 [reviewers only: card kind `facts`, id `facts-art`]
 
@@ -844,7 +844,7 @@ These are the three facts, each with how it fits the idea that the first three a
 
 ### 36. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 36 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 36 of 87*
 
 [reviewers only: card kind `check`, id `chk-art-one`]
 
@@ -863,7 +863,7 @@ These are the three facts, each with how it fits the idea that the first three a
 
 ### 37. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 37 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 37 of 87*
 
 [reviewers only: card kind `check`, id `chk-art-two`]
 
@@ -882,7 +882,7 @@ These are the three facts, each with how it fits the idea that the first three a
 
 ### 38. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 38 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 38 of 87*
 
 [reviewers only: card kind `check`, id `chk-art-three`]
 
@@ -901,7 +901,7 @@ These are the three facts, each with how it fits the idea that the first three a
 
 ### 39. The list of what Congress may do
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 39 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 39 of 87*
 
 [reviewers only: card kind `concept`, id `con-pow`]
 
@@ -922,7 +922,7 @@ How far each power reaches is argued in court all the time. Trade between the st
 
 ### 40. Seven powers of Congress
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 40 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 40 of 87*
 
 [reviewers only: card kind `facts`, id `facts-pow`]
 
@@ -950,7 +950,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 41. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 41 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 41 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-money`]
 
@@ -977,7 +977,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 42. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 42 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 42 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-trade`]
 
@@ -1004,7 +1004,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 43. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 43 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 43 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-citizen`]
 
@@ -1031,7 +1031,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 44. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 44 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 44 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-coin`]
 
@@ -1058,7 +1058,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 45. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 45 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 45 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-war`]
 
@@ -1085,7 +1085,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 46. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 46 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 46 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-courts`]
 
@@ -1112,7 +1112,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 47. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 47 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 47 of 87*
 
 [reviewers only: card kind `check`, id `chk-pow-proper`]
 
@@ -1139,7 +1139,7 @@ These are the seven facts, each with how it fits the idea that Congress may do o
 
 ### 48. Two powers about money
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 48 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 48 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-pow`]
 
@@ -1188,7 +1188,7 @@ Is it about how the government gets the money it spends, or about the coins peop
 
 ### 49. The Bill of Rights is part of the Constitution
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 49 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 49 of 87*
 
 [reviewers only: card kind `concept`, id `con-bor`]
 
@@ -1207,7 +1207,7 @@ Most of the Bill of Rights is written as limits on what government may do to a p
 
 ### 50. Three facts about the Bill of Rights
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 50 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 50 of 87*
 
 [reviewers only: card kind `facts`, id `facts-bor`]
 
@@ -1227,7 +1227,7 @@ These are the three facts, each with how it fits the idea that the Bill of Right
 
 ### 51. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 51 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 51 of 87*
 
 [reviewers only: card kind `check`, id `chk-bor-what`]
 
@@ -1246,7 +1246,7 @@ These are the three facts, each with how it fits the idea that the Bill of Right
 
 ### 52. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 52 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 52 of 87*
 
 [reviewers only: card kind `check`, id `chk-bor-why`]
 
@@ -1265,7 +1265,7 @@ These are the three facts, each with how it fits the idea that the Bill of Right
 
 ### 53. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 53 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 53 of 87*
 
 [reviewers only: card kind `check`, id `chk-bor-limit`]
 
@@ -1284,7 +1284,7 @@ These are the three facts, each with how it fits the idea that the Bill of Right
 
 ### 54. Six amendments, and what each protects
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 54 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 54 of 87*
 
 [reviewers only: card kind `concept`, id `con-six`]
 
@@ -1303,7 +1303,7 @@ Four of the six protect a person who is in trouble with the law: the Fourth, the
 
 ### 55. Six amendments and what each protects
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 55 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 55 of 87*
 
 [reviewers only: card kind `facts`, id `facts-six`]
 
@@ -1329,7 +1329,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 56. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 56 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 56 of 87*
 
 [reviewers only: card kind `check`, id `chk-six-first`]
 
@@ -1354,7 +1354,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 57. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 57 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 57 of 87*
 
 [reviewers only: card kind `check`, id `chk-six-fourth`]
 
@@ -1379,7 +1379,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 58. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 58 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 58 of 87*
 
 [reviewers only: card kind `check`, id `chk-six-fifth`]
 
@@ -1404,7 +1404,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 59. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 59 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 59 of 87*
 
 [reviewers only: card kind `check`, id `chk-six-sixth`]
 
@@ -1429,7 +1429,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 60. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 60 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 60 of 87*
 
 [reviewers only: card kind `check`, id `chk-six-eighth`]
 
@@ -1454,7 +1454,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 61. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 61 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 61 of 87*
 
 [reviewers only: card kind `check`, id `chk-six-tenth`]
 
@@ -1479,7 +1479,7 @@ These are the six facts, each with how it fits the idea that each number protect
 
 ### 62. Silence, and a lawyer
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 62 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 62 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-six-fifth-sixth`]
 
@@ -1522,7 +1522,7 @@ Is it about what a person cannot be made to do or say, or about what a person on
 
 ### 63. A search, and what you can be made to say
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 63 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 63 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-six-fourth-fifth`]
 
@@ -1571,7 +1571,7 @@ Is it about someone searching you or taking your things, or about what you can b
 
 ### 64. How the Constitution is changed
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 64 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 64 of 87*
 
 [reviewers only: card kind `concept`, id `con-chg`]
 
@@ -1590,7 +1590,7 @@ Notice what the two fractions have in common. Both are well beyond half, and tha
 
 ### 65. Two fractions and three numbers
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 65 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 65 of 87*
 
 [reviewers only: card kind `facts`, id `facts-chg`]
 
@@ -1614,7 +1614,7 @@ These are the five facts, each with how it fits the idea that changing the Const
 
 ### 66. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 66 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 66 of 87*
 
 [reviewers only: card kind `check`, id `chk-chg-propose`]
 
@@ -1637,7 +1637,7 @@ These are the five facts, each with how it fits the idea that changing the Const
 
 ### 67. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 67 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 67 of 87*
 
 [reviewers only: card kind `check`, id `chk-chg-approve`]
 
@@ -1660,7 +1660,7 @@ These are the five facts, each with how it fits the idea that changing the Const
 
 ### 68. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 68 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 68 of 87*
 
 [reviewers only: card kind `check`, id `chk-chg-total`]
 
@@ -1683,7 +1683,7 @@ These are the five facts, each with how it fits the idea that changing the Const
 
 ### 69. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 69 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 69 of 87*
 
 [reviewers only: card kind `check`, id `chk-chg-ten`]
 
@@ -1706,7 +1706,7 @@ These are the five facts, each with how it fits the idea that changing the Const
 
 ### 70. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 70 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 70 of 87*
 
 [reviewers only: card kind `check`, id `chk-chg-later`]
 
@@ -1729,7 +1729,7 @@ These are the five facts, each with how it fits the idea that changing the Const
 
 ### 71. Two-thirds, and three-quarters
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 71 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 71 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-chg`]
 
@@ -1772,7 +1772,7 @@ Is it asking about the vote in Congress, or about the approval of the states tha
 
 ### 72. The Fourteenth Amendment
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 72 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 72 of 87*
 
 [reviewers only: card kind `concept`, id `con-fth`]
 
@@ -1791,7 +1791,7 @@ The third thing is the answer to the lawyer’s question. Because of the Fourtee
 
 ### 73. The three parts of the Fourteenth Amendment
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 73 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 73 of 87*
 
 [reviewers only: card kind `facts`, id `facts-fth`]
 
@@ -1813,7 +1813,7 @@ These are the four facts, each with how it fits the idea that the Fourteenth Ame
 
 ### 74. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 74 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 74 of 87*
 
 [reviewers only: card kind `check`, id `chk-fth-citizen`]
 
@@ -1834,7 +1834,7 @@ These are the four facts, each with how it fits the idea that the Fourteenth Ame
 
 ### 75. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 75 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 75 of 87*
 
 [reviewers only: card kind `check`, id `chk-fth-process`]
 
@@ -1855,7 +1855,7 @@ These are the four facts, each with how it fits the idea that the Fourteenth Ame
 
 ### 76. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 76 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 76 of 87*
 
 [reviewers only: card kind `check`, id `chk-fth-equal`]
 
@@ -1876,7 +1876,7 @@ These are the four facts, each with how it fits the idea that the Fourteenth Ame
 
 ### 77. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 77 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 77 of 87*
 
 [reviewers only: card kind `check`, id `chk-fth-states`]
 
@@ -1897,7 +1897,7 @@ These are the four facts, each with how it fits the idea that the Fourteenth Ame
 
 ### 78. Fair steps, and equal treatment
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 78 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 78 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-fth`]
 
@@ -1940,7 +1940,7 @@ Is it about the steps a state must follow before it takes something from a perso
 
 ### 79. Ending slavery, and widening the vote
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 79 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 79 of 87*
 
 [reviewers only: card kind `concept`, id `con-vote`]
 
@@ -1959,7 +1959,7 @@ Four of the five are about the right to vote. Each one takes away a reason for w
 
 ### 80. Five amendments, and what each did
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 80 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 80 of 87*
 
 [reviewers only: card kind `facts`, id `facts-vote`]
 
@@ -1983,7 +1983,7 @@ These are the five facts, each with how it fits the idea that these amendments e
 
 ### 81. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 81 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 81 of 87*
 
 [reviewers only: card kind `check`, id `chk-vote-slavery`]
 
@@ -2006,7 +2006,7 @@ These are the five facts, each with how it fits the idea that these amendments e
 
 ### 82. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 82 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 82 of 87*
 
 [reviewers only: card kind `check`, id `chk-vote-race`]
 
@@ -2029,7 +2029,7 @@ These are the five facts, each with how it fits the idea that these amendments e
 
 ### 83. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 83 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 83 of 87*
 
 [reviewers only: card kind `check`, id `chk-vote-sex`]
 
@@ -2052,7 +2052,7 @@ These are the five facts, each with how it fits the idea that these amendments e
 
 ### 84. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 84 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 84 of 87*
 
 [reviewers only: card kind `check`, id `chk-vote-poll`]
 
@@ -2075,7 +2075,7 @@ These are the five facts, each with how it fits the idea that these amendments e
 
 ### 85. A question from memory
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 85 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 85 of 87*
 
 [reviewers only: card kind `check`, id `chk-vote-age`]
 
@@ -2098,7 +2098,7 @@ These are the five facts, each with how it fits the idea that these amendments e
 
 ### 86. Race, and sex
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 86 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 86 of 87*
 
 [reviewers only: card kind `lookalike`, id `look-vote`]
 
@@ -3133,7 +3133,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 ### 87. What to carry away
 
-*Unit Two · rev 1 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 87 of 87*
+*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 87 of 87*
 
 [reviewers only: card kind `recap`, id `recap-const`]
 

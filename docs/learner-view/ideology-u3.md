@@ -1,6 +1,6 @@
 # Learner view: Political Ideologies, Unit Three: The nation, or its ordinary people
 
-*Five names for a text that puts one people first, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
+*Five names for a text that puts one people first, and the two questions that tell them apart.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. One people, put first: five different things a text can be doing
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -67,11 +67,11 @@ The unit has five parts, and you can stop after any of them.
 4. The two questions
 5. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A few at the top, with far more say than everyone else
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
 
 [reviewers only: card kind `term`, id `term-elite`]
 
@@ -92,7 +92,7 @@ When a text sets ordinary people against a group like this, this is the word the
 
 ### 3. The nation first, with elections left alone
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
 
 [reviewers only: card kind `meet`, id `meet-nationalism`]
 
@@ -129,7 +129,7 @@ You may also hear this called “patriotism”. That means the same thing here, 
 
 ### 4. Nationalism: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
 
 [reviewers only: card kind `again`, id `again-nationalism`]
 
@@ -164,7 +164,7 @@ The two stories share nothing else, so this holds wherever a text speaks for eve
 
 ### 5. The story never decides the answer
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -184,7 +184,7 @@ The tone does not decide either. A text can be loud, proud, angry or polite and 
 
 ### 6. Nationalism: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-nationalism`]
 
@@ -214,7 +214,7 @@ In your own life it is the national day speech, the anthem before a match, the s
 
 ### 7. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
 
 [reviewers only: card kind `check`, id `check-nationalism`]
 
@@ -237,7 +237,7 @@ The pieces you can tap:
 
 ### 8. The nation as one, with elections pushed aside for one leader
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
 
 [reviewers only: card kind `meet`, id `meet-fasc`]
 
@@ -278,7 +278,7 @@ You may also hear this called “ultranationalism”. That means the same thing 
 
 ### 9. Fascism: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
 
 [reviewers only: card kind `again`, id `again-fasc`]
 
@@ -311,7 +311,7 @@ The two stories share nothing else, so this holds wherever a text speaks for the
 
 ### 10. Fascism: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-fasc`]
 
@@ -319,7 +319,7 @@ You now know what decides the name. This card fills in the rest of the picture, 
 
 **What it is usually like**
 
-- Elections or rival parties go, or are made meaningless: parties are banned, votes are cancelled, parliament is shut or filled with one movement.
+- Elections or rival parties go, or are made meaningless: parties are banned, votes are canceled, parliament is shut or filled with one movement.
 - Those who disagree are silenced or broken: papers closed, critics dismissed, arrested or frightened. Nearly every dictatorship does these things, whatever it believes, so on their own they never settle a name. They answer only the second question.
 - One leader or one movement says that it speaks for everyone, and disagreement is treated as treason against the people.
 - It usually comes with a story of a nation that has fallen and must be reborn, marches, uniforms, flags, young people drilled together, and a government that tells owners what to make.
@@ -343,30 +343,30 @@ In your own life it is less likely to be a rally than a way of arguing: "we are 
 
 ### 11. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
 
 [reviewers only: card kind `check`, id `check-fasc`]
 
-> From the official gazette of Brevia: 'The people of Brevia are one body, and the Committee is its single voice. Taxes will be paid to the Committee's office from the first of May. The election due in March is cancelled, and speeches against the Committee are an offence.'
+> From the official gazette of Brevia: 'The people of Brevia are one body, and the Committee is its single voice. Taxes will be paid to the Committee's office from the first of May. The election due in March is canceled, and speeches against the Committee are an offense.'
 
 **You are asked:** Tap the words that take away the say of anyone who might disagree.
 
 The pieces you can tap:
 1. “The people of Brevia are one body, and the Committee is its single voice”
 2. “Taxes will be paid to the Committee's office from the first of May”
-3. “The election due in March is cancelled, and speeches against the Committee are an offence”
+3. “The election due in March is canceled, and speeches against the Committee are an offense”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘The election due in March is cancelled, and speeches against the Committee are an offence’.” The text wants an election cancelled and speeches against the Committee made an offence: “The election due in March is cancelled, and speeches against the Committee are an offence”. That takes away the vote and the right to object, so that the Committee is the single voice. The answer for this case is **“Push them aside, so one leader or movement speaks for everyone”**, and the name is **Fascism**.
-- If you miss: “The words are ‘The election due in March is cancelled, and speeches against the Committee are an offence’.” The same reason follows, and then a line about the piece you tapped:
+- If you are right: “Right: ‘The election due in March is canceled, and speeches against the Committee are an offense’.” The text wants an election canceled and speeches against the Committee made an offense: “The election due in March is canceled, and speeches against the Committee are an offense”. That takes away the vote and the right to object, so that the Committee is the single voice. The answer for this case is **“Push them aside, so one leader or movement speaks for everyone”**, and the name is **Fascism**.
+- If you miss: “The words are ‘The election due in March is canceled, and speeches against the Committee are an offense’.” The same reason follows, and then a line about the piece you tapped:
   - “The people of Brevia are one body, and the Committee is its single voice”: That says whom the text speaks for. The words that take away anyone's say are in the last sentence.
   - “Taxes will be paid to the Committee's office from the first of May”: That says where the taxes go. It does not take away anyone's say.
 - Taught on: “The nation as one, with elections pushed aside for one leader” (one tap opens the card).
 
 ### 12. Nationalism or Fascism: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-nationalism-fasc`]
 
@@ -410,7 +410,7 @@ Look at what the text wants done with elections, other parties and people who di
 
 ### 13. A wrong idea: wanting strong borders makes a text fascist
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
 
 [reviewers only: card kind `refute`, id `refute-borders`]
 
@@ -437,7 +437,7 @@ So the idea fails at the point where it jumps. Strong borders are about what a t
 
 ### 14. Ordinary people against an elite, with the nation put first
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
 
 [reviewers only: card kind `meet`, id `meet-natpop`]
 
@@ -474,7 +474,7 @@ You may also hear this called “right-wing populism”. That means the same thi
 
 ### 15. National populism: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
 
 [reviewers only: card kind `again`, id `again-natpop`]
 
@@ -509,7 +509,7 @@ The two stories share nothing else, so this holds wherever a text sets a country
 
 ### 16. National populism: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-natpop`]
 
@@ -539,7 +539,7 @@ In your own life it is the leaflet that blames the ministry for a closing and as
 
 ### 17. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
 
 [reviewers only: card kind `check`, id `check-natpop`]
 
@@ -559,7 +559,7 @@ In your own life it is the leaflet that blames the ministry for a closing and as
 
 ### 18. Ordinary people against an elite, and nothing more
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
 
 [reviewers only: card kind `meet`, id `meet-pop`]
 
@@ -594,7 +594,7 @@ You may also hear this called “thin populism”. That means the same thing her
 
 ### 19. Populism with nothing attached: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
 
 [reviewers only: card kind `again`, id `again-pop`]
 
@@ -627,7 +627,7 @@ Neither says what the country should have. There is nothing about borders, cultu
 
 ### 20. Populism with nothing attached: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-pop`]
 
@@ -659,7 +659,7 @@ In your own life it is a comment under a news story, a banner at a protest, or t
 
 ### 21. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
 
 [reviewers only: card kind `check`, id `check-pop`]
 
@@ -681,7 +681,7 @@ In your own life it is a comment under a news story, a banner at a protest, or t
 
 ### 22. Nationalism or National populism: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-nationalism-natpop`]
 
@@ -725,7 +725,7 @@ Is anyone inside the country named as the other side, a few at the top set again
 
 ### 23. National populism or Populism with nothing attached: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-natpop-pop`]
 
@@ -769,7 +769,7 @@ After the text has set ordinary people against those at the top, does it say any
 
 ### 24. A text that blames a few at the top and still ends the vote
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
 
 [reviewers only: card kind `exception`, id `exc-elitefasc`]
 
@@ -818,7 +818,7 @@ The text also speaks of one people with one will, which is the answer **“The w
 
 ### 25. A wrong idea: anger at a few at the top makes a text socialist
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 25 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 25 of 42*
 
 [reviewers only: card kind `refute`, id `refute-socialist`]
 
@@ -845,7 +845,7 @@ Anger at a few at the top can come from almost any side. What counts is what the
 
 ### 26. One people by blood, ranked above the others
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
 
 [reviewers only: card kind `meet`, id `meet-nazi`]
 
@@ -886,7 +886,7 @@ You may also hear this called “National Socialism” or “neo-Nazism” or �
 
 ### 27. Nazism: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
 
 [reviewers only: card kind `again`, id `again-nazi`]
 
@@ -921,7 +921,7 @@ The two stories share nothing else, so this holds wherever a text ranks peoples 
 
 ### 28. Nazism: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-nazi`]
 
@@ -947,7 +947,7 @@ What a text says about who should own the businesses does not give this name eit
 
 "Blood decides what a people can do." "They are not our kind." "The first people has the first right." "Some peoples are born to lead." "Our people comes first, by birth."
 
-You are unlikely to meet it as a whole programme. In your own life it is more often a single line in a comment or a joke, or a claim that one group is, by birth, better or worse. A line like that has the answer **“One people by blood, ranked above the others”**, if it ranks a people by blood.
+You are unlikely to meet it as a whole program. In your own life it is more often a single line in a comment or a joke, or a claim that one group is, by birth, better or worse. A line like that has the answer **“One people by blood, ranked above the others”**, if it ranks a people by blood.
 
 **The question to ask when you spot it**
 
@@ -955,7 +955,7 @@ You are unlikely to meet it as a whole programme. In your own life it is more of
 
 ### 29. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
 
 [reviewers only: card kind `check`, id `check-nazi`]
 
@@ -978,7 +978,7 @@ The pieces you can tap:
 
 ### 30. Fascism or Nazism: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-fasc-nazi`]
 
@@ -1022,15 +1022,15 @@ Does the text rank peoples by blood or birth, with its own above the others? Or 
 
 ### 31. What every dictatorship does, and why it does not name a text
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
 
 [reviewers only: card kind `exception`, id `exc-methods`]
 
 The last card showed two names that both push the vote aside. Here is a text that is full of the things dictatorships do, and the card asks what those things can and cannot tell you.
 
-*The decree of the Grey Council*
+*The decree of the Gray Council*
 
-> From a decree of the Grey Council of Merrow: 'All parties but the Council's are banned. Newspapers will print only what the Council's office approves. The Council keeps a list of those who speak against it, and its officers will call on them at night. The people of the old Merrow blood are higher than the settlers and will rule them. No settler may hold office.'
+> From a decree of the Gray Council of Merrow: 'All parties but the Council's are banned. Newspapers will print only what the Council's office approves. The Council keeps a list of those who speak against it, and its officers will call on them at night. The people of the old Merrow blood are higher than the settlers and will rule them. No settler may hold office.'
 
 The decree bans every party but the Council's, controls what is printed, and sends officers to call on critics at night. That is how a text looks when it pushes the vote and critics aside, which is half of what **Fascism** needs. Yet the answer for this case is **Nazism**.
 
@@ -1066,7 +1066,7 @@ A text that says only who holds power and how they keep it, and speaks for no pe
 
 ### 32. A wrong idea: a socialist name or an order to businesses makes a text socialist
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
 
 [reviewers only: card kind `refute`, id `refute-nazisocialist`]
 
@@ -1093,7 +1093,7 @@ So the word "socialist" in a name, or an order to businesses, changes nothing ab
 
 ### 33. The first of the two questions: whom the text speaks for, and against whom
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
 
 [reviewers only: card kind `question`, id `q-who`]
 
@@ -1187,7 +1187,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 34. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
 
 [reviewers only: card kind `check`, id `check-who`]
 
@@ -1211,7 +1211,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 35. The second of the two questions: elections and those who disagree
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
 
 [reviewers only: card kind `question`, id `q-elections`]
 
@@ -1240,7 +1240,7 @@ Putting a people first is shared by all five names, so it cannot tell you which 
 
 **How to answer it from a case**
 
-Look for what the text wants done, and not for what it is like. A text that says "vote for us", "let the voters decide" or "any party may stand against us" leaves things in place. A text that says other parties will be closed, the vote cancelled, the papers shut or critics "dealt with" pushes them aside.
+Look for what the text wants done, and not for what it is like. A text that says "vote for us", "let the voters decide" or "any party may stand against us" leaves things in place. A text that says other parties will be closed, the vote canceled, the papers shut or critics "dealt with" pushes them aside.
 
 Strong, angry or insulting words about opponents are not an answer. A text can call its opponents traitors and still ask the voters to remove them. What matters is whether it wants the vote, other parties and the right to object taken away.
 
@@ -1258,7 +1258,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 36. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
 
 [reviewers only: card kind `check`, id `check-elections`]
 
@@ -1278,7 +1278,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 37. A wrong idea about what the second question asks
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
 
 [reviewers only: card kind `refute`, id `refute-lots`]
 
@@ -1299,7 +1299,7 @@ What decides **Fascism** is what the text would do about the vote and about its 
 
 ### 38. A wrong idea: two kinds of text that ban parties are the same
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
 
 [reviewers only: card kind `refute`, id `refute-horseshoe`]
 
@@ -1326,7 +1326,7 @@ These are different answers to the first question. The two texts speak for diffe
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-natpop`]
 
@@ -1400,7 +1400,7 @@ Here the answer and the likeness agree, so it stands. The question comes first, 
 
 ### 40. A second whole case, where the story points the wrong way
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
 
 [reviewers only: card kind `worked`, id `worked-torchlit`]
 
@@ -1474,11 +1474,11 @@ When that happens, go back to the question and find the words in the text that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these texts are loud and some are calm, and neither tells you the name. A few are built to look like a text you met on the cards and to be another. Go by the words that answer the questions.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Nationalism / Fascism / National populism / Populism with nothing attached / Nazism.
 
@@ -1624,7 +1624,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 49**
 
-> From a pamphlet: 'The ministers in the capital and the bankers who lend to them have taxed our fishing boats off the sea and let foreign trawlers in. Our fish should be landed by our own boats. Take back the harbours at the ballot box.'
+> From a pamphlet: 'The ministers in the capital and the bankers who lend to them have taxed our fishing boats off the sea and let foreign trawlers in. Our fish should be landed by our own boats. Take back the harbors at the ballot box.'
 
 **You are asked:** Who does the text speak for, and against whom?
 
@@ -1643,7 +1643,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 9 of 49**
 
-> From a protest sign: 'The mayor and the councillors are laughing at us. They built themselves a stadium and cut the buses. Enough. Ordinary people of this country: vote them out.'
+> From a protest sign: 'The mayor and the council members are laughing at us. They built themselves a stadium and cut the buses. Enough. Ordinary people of this country: vote them out.'
 
 **You are asked:** Who does the text speak for, and against whom?
 
@@ -1654,14 +1654,14 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Ordinary people against an elite, and nothing more.**” The sign names the mayor and the councillors as the other side, and asks for no more than that: “The mayor and the councillors are laughing at us” and “They built themselves a stadium and cut the buses”. It names no borders, culture or industry to put first, and ranks nobody. This answer leads to **Populism with nothing attached**.
+- If you are right: “Right: **Ordinary people against an elite, and nothing more.**” The sign names the mayor and the council members as the other side, and asks for no more than that: “The mayor and the council members are laughing at us” and “They built themselves a stadium and cut the buses”. It names no borders, culture or industry to put first, and ranks nobody. This answer leads to **Populism with nothing attached**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first of the two questions: whom the text speaks for, and against whom” (one tap opens the card).
 
 **Drill item 10 of 49**
 
-> From a notice of the Sons of the Oak: 'Only those born of the Oak line may hold land or office, because their blood is nobler than the blood of those who came after. The Sons ask the parish to say so in the vote on the ninth.'
+> From a notice of the Sons of the Oak: 'Only those born of the Oak line may hold land or office, because their blood is nobler than the blood of those who came after. The Sons ask the town to say so in the vote on the ninth.'
 
 **You are asked:** Who does the text speak for, and against whom?
 
@@ -1946,7 +1946,7 @@ Shown to you, with the words that decide each answer marked:
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
+> Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2010,7 +2010,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 29 of 49**
 
-> Order from the Leader's office: '⟦The nation is one body and the hospitals are its organs⟧. Doctors who criticise the Leader's health plan are dismissed, and the medical journals that print them are closed. Every nurse and doctor will carry out the plan or answer for it.'
+> Order from the Leader's office: '⟦The nation is one body and the hospitals are its organs⟧. Doctors who criticize the Leader's health plan are dismissed, and the medical journals that print them are closed. Every nurse and doctor will carry out the plan or answer for it.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **The nation, or its ordinary people**
@@ -2020,7 +2020,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** Critics are dismissed and journals closed: “Doctors who criticise the Leader's health plan are dismissed, and the medical journals that print them are closed”. That takes away the say of those who disagree.
+- If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** Critics are dismissed and journals closed: “Doctors who criticize the Leader's health plan are dismissed, and the medical journals that print them are closed”. That takes away the say of those who disagree.
   - Why not **Nationalism**: **Nationalism** would speak for the whole nation in the same way and leave critics and journals alone. Here they are removed.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -2056,13 +2056,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 31 of 49**
 
-> The treasurer of Aldmere, at the unveiling of a new national coin: 'Farmers, clerks and sailors, from every region: this coin will pass through all your hands, and each of you has made it worth something. We are one country, and it is our first loyalty. The government will answer for the coin at the election in autumn, and the opposition is free to say what it likes.'
+> The treasurer of Aldmere, at the unveiling of a new national coin: 'Farmers, clerks and sailors, from every region: this coin will pass through all your hands, and each of you has made it worth something. We are one country, and it is our first loyalty. The government will answer for the coin at the election in the fall, and the opposition is free to say what it likes.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nationalism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The government will answer at the election and the opposition is free to speak: “The government will answer for the coin at the election in autumn, and the opposition is free to say what it likes”. The vote and the right to disagree stay.
+- If you are right: “Right: **Nationalism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The government will answer at the election and the opposition is free to speak: “The government will answer for the coin at the election in the fall, and the opposition is free to say what it likes”. The vote and the right to disagree stay.
   - Why not **Fascism**: **Fascism** would speak for everyone in the same way but would end the election and silence the opposition. Here both are left in place.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The text puts one country first: “We are one country, and it is our first loyalty”.
@@ -2096,7 +2096,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 33 of 49**
 
-> From a poster of the Marren Stage list: 'The ministers and the arts officials have sold the old Marren theatre to a foreign chain. Marren's stage should tell Marren's stories, in Marren's own voice. Vote Stage list on the fifth and the doors will open to our own again.'
+> From a poster of the Marren Stage list: 'The ministers and the arts officials have sold the old Marren theater to a foreign chain. Marren's stage should tell Marren's stories, in Marren's own voice. Vote Stage list on the fifth and the doors will open to our own again.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
@@ -2106,7 +2106,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - Why not **Populism with nothing attached**: **Populism with nothing attached** would stop at the anger at the ministers and officials. This poster goes on to say that the stage should tell the people's own stories, which puts culture first.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The text puts one people first, marked out by its own stories and voice: “Marren's stage should tell Marren's stories, in Marren's own voice”.
-  - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the town's people against a few at the top, the ministers and the officials, and wants the country's own culture put first: “The ministers and the arts officials have sold the old Marren theatre to a foreign chain” and “Marren's stage should tell Marren's stories, in Marren's own voice”.
+  - Who does the text speak for, and against whom? **Ordinary people against an elite, with the nation’s borders, culture or industry put first.** It sets the town's people against a few at the top, the ministers and the officials, and wants the country's own culture put first: “The ministers and the arts officials have sold the old Marren theater to a foreign chain” and “Marren's stage should tell Marren's stories, in Marren's own voice”.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Populism with nothing attached**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2136,33 +2136,33 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 35 of 49**
 
-> From the programme of the Frontier Guard of Dorn: 'The land along the frontier belongs to the old blood of Dorn, who held it for a thousand years, and not to the lower peoples who farm it for them. The Guard will take it back for the old blood. Anyone who says the peoples are equal will not be heard. There is one party, and it is ours.'
+> From the program of the Frontier Guard of Dorn: 'The land along the frontier belongs to the old blood of Dorn, who held it for a thousand years, and not to the lower peoples who farm it for them. The Guard will take it back for the old blood. Anyone who says the peoples are equal will not be heard. There is one party, and it is ours.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Nazism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** Critics will not be heard and there is one party: “Anyone who says the peoples are equal will not be heard. There is one party, and it is ours”. That is the answer **“Push them aside, so one leader or movement speaks for everyone”**, and it does not change the name, because the ranking decides it.
-  - Why not **Fascism**: **Fascism** also pushes the vote aside, but it does not rank peoples by blood. This programme does, and the first question settles it.
+  - Why not **Fascism**: **Fascism** also pushes the vote aside, but it does not rank peoples by blood. This program does, and the first question settles it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **The nation, or its ordinary people.** The programme puts one people first, marked out by its blood: “The land along the frontier belongs to the old blood of Dorn”.
+  - Who or what does the text put first? **The nation, or its ordinary people.** The program puts one people first, marked out by its blood: “The land along the frontier belongs to the old blood of Dorn”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It sorts peoples into the old blood and "the lower peoples", and places its own above: “The land along the frontier belongs to the old blood of Dorn, who held it for a thousand years, and not to the lower peoples who farm it for them”.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If the programme asked the voters for power and left other parties alone, it would still be **Nazism**: the ranking decides it. If it dropped the ranking and spoke for everyone as one, it would be **Fascism**.
+- What would make it a different name: If the program asked the voters for power and left other parties alone, it would still be **Nazism**: the ranking decides it. If it dropped the ranking and spoke for everyone as one, it would be **Fascism**.
 - Taught on: “One people by blood, ranked above the others” (one tap opens the card).
 
 **Drill item 36 of 49**
 
-> A radio appeal from the prime minister of Aldmere: 'The drought has hit the farms of the east, but this is everyone's drought. Every town, every trade, rich or poor, will pay into the relief fund, because we are one people and we do not leave our own to fall. I will answer for every pound of it to parliament, and I expect the opposition to ask hard questions.'
+> A radio appeal from the prime minister of Aldmere: 'The drought has hit the farms of the east, but this is everyone's drought. Every town, every trade, rich or poor, will pay into the relief fund, because we are one people and we do not leave our own to fall. I will answer for every dollar of it to parliament, and I expect the opposition to ask hard questions.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nationalism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The prime minister will answer to parliament and expects hard questions from the opposition: “I will answer for every pound of it to parliament, and I expect the opposition to ask hard questions”. The text leaves them in place.
+- If you are right: “Right: **Nationalism**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The prime minister will answer to parliament and expects hard questions from the opposition: “I will answer for every dollar of it to parliament, and I expect the opposition to ask hard questions”. The text leaves them in place.
   - Why not **Nazism**: **Nazism** would also put one people first, but it would rank peoples by blood. This appeal ranks nobody: "rich or poor" are all asked to pay and all are protected.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The prime minister puts one people first: “we are one people and we do not leave our own to fall”.
@@ -2449,7 +2449,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 41. What to carry away
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2492,7 +2492,7 @@ What does the text want done with elections and with those who disagree?
 
 ### 42. Where would you meet this?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2581,13 +2581,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 15**
 
-> From the Leader's health order: 'The nation is one people with one will, and the Leader is its doctor. The medical society that wrote to criticise the order is dissolved, and its members will not practise.'
+> From the Leader's health order: 'The nation is one people with one will, and the Leader is its doctor. The medical society that wrote to criticize the order is dissolved, and its members will not practice.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** The society that criticised the order is dissolved and its members barred: “The medical society that wrote to criticise the order is dissolved, and its members will not practise”. That takes away the say of those who disagree.
+- If you are right: “Right: **Fascism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** The society that criticized the order is dissolved and its members barred: “The medical society that wrote to criticize the order is dissolved, and its members will not practice”. That takes away the say of those who disagree.
   - Why not **Nationalism**: **Nationalism** would leave the medical society and its letter alone. Here the society is dissolved for writing it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The order puts one nation first: “The nation is one people with one will”.
@@ -2695,17 +2695,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 10 of 15**
 
-> From a flyer: 'The councillors voted themselves free parking and put the charge up for everyone else. They are laughing at the ordinary people of this country. Show them what you think at the polls.'
+> From a flyer: 'The council members voted themselves free parking and put the charge up for everyone else. They are laughing at the ordinary people of this country. Show them what you think at the polls.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Populism with nothing attached**.” What does the text want done with elections and with those who disagree? **Leave them in place.** The remedy is the polls: “Show them what you think at the polls”.
-  - Why not **National populism**: **National populism** would say what the country's borders, culture or industry should be. The flyer says only that the councillors have laughed at ordinary people.
+  - Why not **National populism**: **National populism** would say what the country's borders, culture or industry should be. The flyer says only that the council members have laughed at ordinary people.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The flyer speaks for the ordinary people of one country: “the ordinary people of this country”.
-  - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the councillors, and stops there: “The councillors voted themselves free parking and put the charge up for everyone else” and “They are laughing at the ordinary people of this country”. No borders, culture or industry are put first.
+  - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the council members, and stops there: “The council members voted themselves free parking and put the charge up for everyone else” and “They are laughing at the ordinary people of this country”. No borders, culture or industry are put first.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **National populism**, the look-alike card’s lines follow: Both set ordinary people against a few at the top, and both leave the vote in place. The difference is what else the text asks for. **National populism** also wants the country’s borders, culture or industry put first, so its answer is **“Ordinary people against an elite, with the nation’s borders, culture or industry put first”**. **Populism with nothing attached** asks for nothing more than getting those at the top out of the way, so its answer is **“Ordinary people against an elite, and nothing more”**. After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2714,7 +2714,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 15**
 
-> From a column: 'The ministers have just given themselves a pay rise while ordinary people of this country wait years for a repair on their homes. They do not live like us and they do not answer to us. Vote them out on the sixth.'
+> From a column: 'The ministers have just given themselves a pay raise while ordinary people of this country wait years for a repair on their homes. They do not live like us and they do not answer to us. Vote them out on the sixth.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
@@ -2724,7 +2724,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Why not **Nationalism**: **Nationalism** would speak for everyone with nobody named as the other side. This column names the ministers as the other side.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **The nation, or its ordinary people.** The column speaks for ordinary people of one country: “ordinary people of this country”.
-  - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the ministers: “The ministers have just given themselves a pay rise while ordinary people of this country wait years for a repair on their homes” and “They do not live like us and they do not answer to us”. It adds nothing about the country's borders, culture or industry.
+  - Who does the text speak for, and against whom? **Ordinary people against an elite, and nothing more.** It sets ordinary people against a few at the top, the ministers: “The ministers have just given themselves a pay raise while ordinary people of this country wait years for a repair on their homes” and “They do not live like us and they do not answer to us”. It adds nothing about the country's borders, culture or industry.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both leave the vote in place and rank nobody, and both can say that they speak for the people. In **Nationalism** the whole nation is spoken for as one, and nobody inside it is named as the other side. In **Populism with nothing attached** the text is angry at an *elite* on behalf of ordinary people, and says no more. Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2771,16 +2771,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 14 of 15**
 
-> From the programme of the Order of the Spear: 'There will be one clinic door for the high blood and another for the lower peoples, because the lower peoples are not worth the same care. Elections will be abolished once the Order governs.'
+> From the program of the Order of the Spear: 'There will be one clinic door for the high blood and another for the lower peoples, because the lower peoples are not worth the same care. Elections will be abolished once the Order governs.'
 
 **You are asked, in order:** Who or what does the text put first? → Who does the text speak for, and against whom? → What does the text want done with elections and with those who disagree? → Name it.
 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Nazism**.” What does the text want done with elections and with those who disagree? **Push them aside, so one leader or movement speaks for everyone.** Elections will be abolished: “Elections will be abolished once the Order governs”. That is **“Push them aside, so one leader or movement speaks for everyone”**, and it does not change the name, because the ranking decides it.
-  - Why not **Fascism**: **Fascism** also pushes elections aside, but it ranks nobody by blood. This programme does.
+  - Why not **Fascism**: **Fascism** also pushes elections aside, but it ranks nobody by blood. This program does.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **The nation, or its ordinary people.** The programme puts one people first, marked out by its blood: “one clinic door for the high blood”.
+  - Who or what does the text put first? **The nation, or its ordinary people.** The program puts one people first, marked out by its blood: “one clinic door for the high blood”.
   - Who does the text speak for, and against whom? **One people by blood, ranked above the others.** It says the lower peoples are not worth the same care as the high blood: “the lower peoples are not worth the same care”. That ranks peoples by blood.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fascism**, the look-alike card’s lines follow: Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation. In **Fascism** the people is the whole nation, or the country’s ordinary people against an *elite*, and nobody is ranked by blood. In **Nazism** peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets **“One people by blood, ranked above the others”**, whatever it says about the vote. Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?

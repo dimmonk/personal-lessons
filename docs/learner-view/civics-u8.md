@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Eight: Rights and duties
 
-*What everyone here has, what only citizens have, what is asked of you, what is not promised, the oath and the test.* Unit revision 2, built to lesson standard 1, status: draft.
+*What everyone here has, what only citizens have, what is asked of you, what is not promised, the oath and the test.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold: what you have, what is asked of you, and what is not promised
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 61*
 
 [reviewers only: card kind `orient`, id `orient-rights`]
 
@@ -55,11 +55,11 @@ Each group in this unit starts from a short story, then explains the idea in pla
 
 Two things are left out on purpose, because the course does not hold them. It does not say which rights still apply in an immigration hearing, and it does not hold the details of the citizenship test, which change and can depend on the date a person filed. Where a card says so, take those from the immigration service’s own website.
 
-Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A right is the government held back from you
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 61*
 
 [reviewers only: card kind `concept`, id `con-speak`]
 
@@ -67,7 +67,7 @@ The unit starts with what the Constitution holds the government back from, becau
 
 *Hye-won’s month*
 
-> Hye-won came here two years ago on a student visa and is not a citizen. In one month she goes to her place of worship every Friday, writes a letter to the town newspaper that criticises the mayor’s plan to close the library, joins a peaceful rally outside the town hall against the plan, and signs a petition asking the council to keep the library open. The mayor reads her letter and is angry, and he wishes that he could make her stop. He cannot. Nobody asks whether she is a citizen.
+> Hye-won came here two years ago on a student visa and is not a citizen. In one month she goes to her place of worship every Friday, writes a letter to the town newspaper that criticizes the mayor’s plan to close the library, joins a peaceful rally outside the town hall against the plan, and signs a petition asking the council to keep the library open. The mayor reads her letter and is angry, and he wishes that he could make her stop. He cannot. Nobody asks whether she is a citizen.
 
 Look at what the mayor could not do. He disliked her letter, her rally and her petition, and he could do nothing to her for any of them. Nobody asked whether she was a citizen, because the protection she had does not depend on being one.
 
@@ -82,7 +82,7 @@ You already have names for this. When a case shows Congress passing a law that t
 
 ### 3. The five freedoms of the First Amendment
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 61*
 
 [reviewers only: card kind `facts`, id `facts-speak`]
 
@@ -91,37 +91,37 @@ These are the five rights of the First Amendment, each with how it fits the idea
 | The fact | The answer |
 |---|---|
 | Which right protects you from being punished by the government for what you say? | The right to free speech |
-| Which right protects your choice to follow a religion, or none? | The right to practise a religion, or none |
+| Which right protects your choice to follow a religion, or none? | The right to practice a religion, or none |
 | Which right stops a mayor from having a newsstand pull a magazine that he dislikes? | The right to a free press |
 | Which right lets people gather peacefully, for example for a rally in a public park? | The right to assemble peacefully |
 | Which right lets you ask the government to put right a wrong? | The right to petition the government |
 
 **How each fact fits the idea**
 
-- **The right to free speech**: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticises the government is protected by this right and by the right to a free press together.
-- **The right to practise a religion, or none**: The government is held back from punishing you for the religion that you practise, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
+- **The right to free speech**: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticizes the government is protected by this right and by the right to a free press together.
+- **The right to practice a religion, or none**: The government is held back from punishing you for the religion that you practice, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
 - **The right to a free press**: The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states.
 - **The right to assemble peacefully**: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called **Beyond Congress’s power**.
 - **The right to petition the government**: To petition is to ask the government to put right a wrong. Signing a petition asking the council to keep a library open is using it, and it is open to everyone here, as the other four rights are.
 
 ### 4. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-speech`]
 
 **You are asked, from memory:** Which right protects you from being punished by the government for what you say?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
 
 **Shown as soon as you answer**
 
-- The answer: **The right to free speech**. Why: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticises the government is protected by this right and by the right to a free press together.
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+- The answer: **The right to free speech**. Why: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticizes the government is protected by this right and by the right to a free press together.
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
   - If you chose The right to petition the government: You chose **The right to petition the government**. That is the answer to a different fact: Which right lets you ask the government to put right a wrong?
@@ -129,21 +129,21 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 5. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-religion`]
 
 **You are asked, from memory:** Which right protects your choice to follow a religion, or none?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
 
 **Shown as soon as you answer**
 
-- The answer: **The right to practise a religion, or none**. Why: The government is held back from punishing you for the religion that you practise, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
+- The answer: **The right to practice a religion, or none**. Why: The government is held back from punishing you for the religion that you practice, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
@@ -152,14 +152,14 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 ### 6. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-press`]
 
 **You are asked, from memory:** Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
@@ -168,21 +168,21 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 - The answer: **The right to a free press**. Why: The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
   - If you chose The right to petition the government: You chose **The right to petition the government**. That is the answer to a different fact: Which right lets you ask the government to put right a wrong?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
 
 ### 7. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-assembly`]
 
 **You are asked, from memory:** Which right lets people gather peacefully, for example for a rally in a public park?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
@@ -191,21 +191,21 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 - The answer: **The right to assemble peacefully**. Why: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called **Beyond Congress’s power**.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to petition the government: You chose **The right to petition the government**. That is the answer to a different fact: Which right lets you ask the government to put right a wrong?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
 
 ### 8. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 61*
 
 [reviewers only: card kind `check`, id `chk-sp-petition`]
 
 **You are asked, from memory:** Which right lets you ask the government to put right a wrong?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
@@ -214,18 +214,18 @@ These are the five rights of the First Amendment, each with how it fits the idea
 
 - The answer: **The right to petition the government**. Why: To petition is to ask the government to put right a wrong. Signing a petition asking the council to keep a library open is using it, and it is open to everyone here, as the other four rights are.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
 
 ### 9. Speaking and printing
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-speak`]
 
-Two of the five rights both protect a person who criticises the government in public, so they get swapped. They go side by side.
+Two of the five rights both protect a person who criticizes the government in public, so they get swapped. They go side by side.
 
 **Fact A**
 
@@ -247,7 +247,7 @@ Fact A is about what a person says: **The right to free speech**. The government
 
 Fact B is about what is printed and sold: **The right to a free press**. The government is held back from taking a newspaper or a magazine out of people’s hands because it dislikes what it says.
 
-An article that criticises the government is protected by both, so a story can bring both to mind. What tells them apart is what the question is about: a person speaking, or something printed.
+An article that criticizes the government is protected by both, so a story can bring both to mind. What tells them apart is what the question is about: a person speaking, or something printed.
 
 **How to tell them apart**
 
@@ -259,12 +259,12 @@ Is the government acting against a person for their own words, or against someth
 |---|---|---|
 | Asked | Which right protects you from being punished by the government for what you say? | Which right stops a mayor from having a newsstand pull a magazine that he dislikes? |
 | The answer | The right to free speech | The right to a free press |
-| How it fits | It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticises the government is protected by this right and by the right to a free press together. | The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states. |
+| How it fits | It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticizes the government is protected by this right and by the right to a free press together. | The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states. |
 
 
 ### 10. When the government accuses you of a crime
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 61*
 
 [reviewers only: card kind `concept`, id `con-accused`]
 
@@ -272,9 +272,9 @@ The First Amendment holds the government back from what you say and believe. Fou
 
 *Kofi’s case*
 
-> Kofi is here on a student visa. Police ask a judge for a warrant, which is the judge’s written permission, and search his flat with it. They find a stolen bicycle and charge him with theft. At the police station he tells them that he wants a lawyer and that he will say nothing until he has one. He cannot pay for a lawyer, so the court appoints one for him. Some months later his case is heard in public, before a jury of ordinary people, within the time that the court set.
+> Kofi is here on a student visa. Police ask a judge for a warrant, which is the judge’s written permission, and search his apartment with it. They find a stolen bicycle and charge him with theft. At the police station he tells them that he wants a lawyer and that he will say nothing until he has one. He cannot pay for a lawyer, so the court appoints one for him. Some months later his case is heard in public, before a jury of ordinary people, within the time that the court set.
 
-Follow Kofi’s case in order. Police could search his flat only after a judge gave a warrant, which is a judge’s written permission. At the police station Kofi could say that he wanted a lawyer and would say nothing, and he did. The court appointed a lawyer because he could not pay for one. And his case was heard in public, by a jury, within a set time. Each step is the government held back, or held to a promise, for a person that it accuses of a crime.
+Follow Kofi’s case in order. Police could search his apartment only after a judge gave a warrant, which is a judge’s written permission. At the police station Kofi could say that he wanted a lawyer and would say nothing, and he did. The court appointed a lawyer because he could not pay for one. And his case was heard in public, by a jury, within a set time. Each step is the government held back, or held to a promise, for a person that it accuses of a crime.
 
 A criminal case is one in which a person is on trial for a crime. The steps come from the Fourth, Fifth and Sixth Amendments, and like the First they never say ‘citizen’. They are written for ‘the people’ and ‘the accused’. Kofi is here on a student visa, and he has the same right to a lawyer, and the same right to stay silent, as a citizen charged with the same crime would have.
 
@@ -285,7 +285,7 @@ When a judge is asked whether an accused person got these steps, the name is **T
 
 ### 11. Four steps for a person who is accused
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 61*
 
 [reviewers only: card kind `facts`, id `facts-accused`]
 
@@ -307,7 +307,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 12. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-search`]
 
@@ -328,7 +328,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 13. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-silence`]
 
@@ -349,7 +349,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 14. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-lawyer`]
 
@@ -370,7 +370,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 15. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 61*
 
 [reviewers only: card kind `check`, id `chk-ac-jury`]
 
@@ -391,7 +391,7 @@ These are the four steps of Kofi’s case, each with how it fits the idea that t
 
 ### 16. Saying nothing, and having a lawyer
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-accused`]
 
@@ -440,7 +440,7 @@ Is it about whether I have to answer, or about someone who stands with me in the
 
 ### 17. A duty is the law asking something of you
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 61*
 
 [reviewers only: card kind `concept`, id `con-duty`]
 
@@ -454,14 +454,14 @@ Ravi’s story has no right in it. His tax is taken out of his pay, he keeps to 
 
 The first thing to learn about a duty is whom it falls on. The three in this group fall on everyone here, citizen or not, and none of them asks for citizenship. The law asks them of Ravi because of what he does here: he lives here, he earns his wages here, and he is a man in the age range that the law names.
 
-The three are these. Everyone here must obey the law. Everyone here must pay tax on income earned here. And a man aged 18 to 25 who lives here, citizen or not, must register for Selective Service. Selective Service is the list that lets the country organise a draft if one were ever called, and a draft means calling people up to serve in the armed forces.
+The three are these. Everyone here must obey the law. Everyone here must pay tax on income earned here. And a man aged 18 to 25 who lives here, citizen or not, must register for Selective Service. Selective Service is the list that lets the country organize a draft if one were ever called, and a draft means calling people up to serve in the armed forces.
 
 Not knowing a requirement does not excuse missing it. So the useful habit is to find out what the law asks of you: file taxes on time, follow the rules, and ask the *agency* that runs the rule when you are unsure.
 
 
 ### 18. Three duties that fall on everyone here
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 61*
 
 [reviewers only: card kind `facts`, id `facts-duty`]
 
@@ -477,11 +477,11 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 - **The duty to obey the law**: The law asks it of every person here, so it is a duty that does not depend on citizenship. Not knowing a requirement does not excuse missing it.
 - **The duty to pay tax on income earned here**: Tax follows the income, not the passport. A person on a work visa who earns wages here pays tax on them and files a tax return each year, just as a citizen does.
-- **The duty to register for Selective Service**: It falls on men who live here whether or not they are citizens. Registering is what lets the country organise a draft if one were ever called.
+- **The duty to register for Selective Service**: It falls on men who live here whether or not they are citizens. Registering is what lets the country organize a draft if one were ever called.
 
 ### 19. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 61*
 
 [reviewers only: card kind `check`, id `chk-du-obey`]
 
@@ -500,7 +500,7 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 ### 20. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 61*
 
 [reviewers only: card kind `check`, id `chk-du-tax`]
 
@@ -519,7 +519,7 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 ### 21. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 61*
 
 [reviewers only: card kind `check`, id `chk-du-draft`]
 
@@ -531,14 +531,14 @@ These are the three duties of Ravi’s year, each with how it fits the idea that
 
 **Shown as soon as you answer**
 
-- The answer: **The duty to register for Selective Service**. Why: It falls on men who live here whether or not they are citizens. Registering is what lets the country organise a draft if one were ever called.
+- The answer: **The duty to register for Selective Service**. Why: It falls on men who live here whether or not they are citizens. Registering is what lets the country organize a draft if one were ever called.
   - If you chose The duty to obey the law: You chose **The duty to obey the law**. That is the answer to a different fact: What does the law ask of everyone here, whatever their immigration status, in how they behave?
   - If you chose The duty to pay tax on income earned here: You chose **The duty to pay tax on income earned here**. That is the answer to a different fact: A person on a work visa earns wages here. Which duty does that bring, as it does for a citizen?
 - Taught on: “Three duties that fall on everyone here” (one tap opens the card).
 
 ### 22. A few things are kept for citizens
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 61*
 
 [reviewers only: card kind `concept`, id `con-citizen`]
 
@@ -546,9 +546,9 @@ Every right and every duty so far applies to everyone here. A few things do not:
 
 *Amara’s summons*
 
-> Amara has lived here for twenty years as a permanent resident. Before the election for President she goes to register to vote, and the clerk tells her that she cannot register until she is a citizen. She applies, passes the test, takes the oath, and registers. A few months later a letter summons her to serve on a federal jury, and she goes. Her neighbour Joao has also lived here for twenty years as a permanent resident, and he has never had a letter like it.
+> Amara has lived here for twenty years as a permanent resident. Before the election for President she goes to register to vote, and the clerk tells her that she cannot register until she is a citizen. She applies, passes the test, takes the oath, and registers. A few months later a letter summons her to serve on a federal jury, and she goes. Her neighbor Joao has also lived here for twenty years as a permanent resident, and he has never had a letter like it.
 
-Amara’s story is the other side. For twenty years she lived here as a permanent resident, paying her taxes and obeying the law, and until she became a citizen she could not register to vote. After she took the oath she could, and she was also summoned to serve on a jury, which her neighbour Joao, still a permanent resident, was not.
+Amara’s story is the other side. For twenty years she lived here as a permanent resident, paying her taxes and obeying the law, and until she became a citizen she could not register to vote. After she took the oath she could, and she was also summoned to serve on a jury, which her neighbor Joao, still a permanent resident, was not.
 
 Three things are kept for citizens. Two are rights, which means that a person may choose to use them: voting in federal elections, and running for federal office. One is a duty, which means that the law requires it: serving on a federal jury when summoned. Each office has conditions of its own on top of being a citizen, and this group holds only the citizenship part.
 
@@ -559,7 +559,7 @@ Jury service is a duty and a privilege together, because a person cannot be kept
 
 ### 23. Three things kept for citizens
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 61*
 
 [reviewers only: card kind `facts`, id `facts-citizen`]
 
@@ -579,7 +579,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 24. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 61*
 
 [reviewers only: card kind `check`, id `chk-cz-vote`]
 
@@ -598,7 +598,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 25. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 61*
 
 [reviewers only: card kind `check`, id `chk-cz-run`]
 
@@ -617,7 +617,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 26. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 61*
 
 [reviewers only: card kind `check`, id `chk-cz-jury`]
 
@@ -636,7 +636,7 @@ These are the three things in Amara’s story that need citizenship, each with h
 
 ### 27. A jury trial, and jury service
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-jury`]
 
@@ -679,7 +679,7 @@ Is it about the person who is on trial, or about a person who is summoned to dec
 
 ### 28. A right is not a promise to give you something
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 61*
 
 [reviewers only: card kind `concept`, id `con-promise`]
 
@@ -687,20 +687,20 @@ Rights hold the government back, and duties ask something of you. People also ex
 
 *Ines looks for the promise*
 
-> Ines moved here from a country whose constitution promises every person free medical care and a job. After she loses her job, she reads the United States Constitution from start to finish, looking for the page that promises her either one, or a home. She finds long lists of what government may not do, and no promise of work, a home or medical care. At a community centre a neighbour tells her that the programme called Medicare exists because Congress passed a law, and that people argue about what it should cover at every election.
+> Ines moved here from a country whose constitution promises every person free medical care and a job. After she loses her job, she reads the United States Constitution from start to finish, looking for the page that promises her either one, or a home. She finds long lists of what government may not do, and no promise of work, a home or medical care. At a community center a neighbor tells her that the program called Medicare exists because Congress passed a law, and that people argue about what it should cover at every election.
 
 Ines went looking for a promise and found a list of limits. That is how the Constitution is mostly written: it lists what government may not do to you. It makes few promises about what government must give you.
 
 There is no promise in the Constitution of a job, a home or medical care. A newcomer from a country whose constitution does promise one of them may expect the same here, so it is worth knowing before you look for it.
 
-Where government does provide one of them, it is because a law, or a state or local programme, created it. Medicare is one: it exists because Congress passed a law. What one law gives, a later law can change, which is why such programmes are argued over and altered at every election. A right in the Constitution is a limit on government, and that is a different thing from a programme.
+Where government does provide one of them, it is because a law, or a state or local program, created it. Medicare is one: it exists because Congress passed a law. What one law gives, a later law can change, which is why such programs are argued over and altered at every election. A right in the Constitution is a limit on government, and that is a different thing from a program.
 
 State constitutions are separate from this one, and they do promise public schooling.
 
 
 ### 29. What the Constitution does not promise
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 61*
 
 [reviewers only: card kind `facts`, id `facts-promise`]
 
@@ -710,19 +710,19 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 |---|---|
 | What does the Constitution mostly list? | What government may not do to you |
 | Which of a job, a home and medical care does the Constitution promise to give you? | None of them |
-| Where does a programme that gives people help, such as Medicare or a housing programme, come from? | A law, or a decision by a state or a city |
-| How can people change what such a programme gives? | By votes, petitions and the people who write the laws |
+| Where does a program that gives people help, such as Medicare or a housing program, come from? | A law, or a decision by a state or a city |
+| How can people change what such a program gives? | By votes, petitions and the people who write the laws |
 
 **How each fact fits the idea**
 
 - **What government may not do to you**: A right is a limit on government, and the Constitution mostly lists limits. That is why the rights in this unit all say what government may not do, and why a promise to give you something is a different thing.
-- **None of them**: Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a programme.
-- **A law, or a decision by a state or a city**: Medicare exists because Congress passed a law, and a housing programme exists because of a law or a state or local decision. What one law gives, a later law can change.
-- **By votes, petitions and the people who write the laws**: Because a programme comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or programme that provides it and read its conditions.
+- **None of them**: Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a program.
+- **A law, or a decision by a state or a city**: Medicare exists because Congress passed a law, and a housing program exists because of a law or a state or local decision. What one law gives, a later law can change.
+- **By votes, petitions and the people who write the laws**: Because a program comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or program that provides it and read its conditions.
 
 ### 30. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-kind`]
 
@@ -737,13 +737,13 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 - The answer: **What government may not do to you**. Why: A right is a limit on government, and the Constitution mostly lists limits. That is why the rights in this unit all say what government may not do, and why a promise to give you something is a different thing.
   - If you chose None of them: You chose **None of them**. That is the answer to a different fact: Which of a job, a home and medical care does the Constitution promise to give you?
-  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a programme that gives people help, such as Medicare or a housing programme, come from?
-  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a programme gives?
+  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a program that gives people help, such as Medicare or a housing program, come from?
+  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a program gives?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 ### 31. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 31 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 31 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-none`]
 
@@ -756,19 +756,19 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 **Shown as soon as you answer**
 
-- The answer: **None of them**. Why: Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a programme.
+- The answer: **None of them**. Why: Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a program.
   - If you chose What government may not do to you: You chose **What government may not do to you**. That is the answer to a different fact: What does the Constitution mostly list?
-  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a programme that gives people help, such as Medicare or a housing programme, come from?
-  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a programme gives?
+  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a program that gives people help, such as Medicare or a housing program, come from?
+  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a program gives?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 ### 32. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 32 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 32 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-source`]
 
-**You are asked, from memory:** Where does a programme that gives people help, such as Medicare or a housing programme, come from?
+**You are asked, from memory:** Where does a program that gives people help, such as Medicare or a housing program, come from?
 
 - What government may not do to you
 - None of them
@@ -777,19 +777,19 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 **Shown as soon as you answer**
 
-- The answer: **A law, or a decision by a state or a city**. Why: Medicare exists because Congress passed a law, and a housing programme exists because of a law or a state or local decision. What one law gives, a later law can change.
+- The answer: **A law, or a decision by a state or a city**. Why: Medicare exists because Congress passed a law, and a housing program exists because of a law or a state or local decision. What one law gives, a later law can change.
   - If you chose What government may not do to you: You chose **What government may not do to you**. That is the answer to a different fact: What does the Constitution mostly list?
   - If you chose None of them: You chose **None of them**. That is the answer to a different fact: Which of a job, a home and medical care does the Constitution promise to give you?
-  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a programme gives?
+  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a program gives?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 ### 33. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 33 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 33 of 61*
 
 [reviewers only: card kind `check`, id `chk-np-change`]
 
-**You are asked, from memory:** How can people change what such a programme gives?
+**You are asked, from memory:** How can people change what such a program gives?
 
 - What government may not do to you
 - None of them
@@ -798,10 +798,10 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 **Shown as soon as you answer**
 
-- The answer: **By votes, petitions and the people who write the laws**. Why: Because a programme comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or programme that provides it and read its conditions.
+- The answer: **By votes, petitions and the people who write the laws**. Why: Because a program comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or program that provides it and read its conditions.
   - If you chose What government may not do to you: You chose **What government may not do to you**. That is the answer to a different fact: What does the Constitution mostly list?
   - If you chose None of them: You chose **None of them**. That is the answer to a different fact: Which of a job, a home and medical care does the Constitution promise to give you?
-  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a programme that gives people help, such as Medicare or a housing programme, come from?
+  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a program that gives people help, such as Medicare or a housing program, come from?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, Two kinds of case, and the oath.*
@@ -812,7 +812,7 @@ These are the four facts of Ines’s search, each with how it fits the idea that
 
 ### 34. Two kinds of case: criminal and civil
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 61*
 
 [reviewers only: card kind `concept`, id `con-hearing`]
 
@@ -833,7 +833,7 @@ That is all the course holds. It does not say which of the other rights still ap
 
 ### 35. A criminal case and an immigration hearing
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 61*
 
 [reviewers only: card kind `facts`, id `facts-hearing`]
 
@@ -855,7 +855,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 36. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-crim`]
 
@@ -876,7 +876,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 37. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-civil`]
 
@@ -897,7 +897,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 38. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-accused`]
 
@@ -918,7 +918,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 39. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 61*
 
 [reviewers only: card kind `check`, id `chk-ic-immig`]
 
@@ -939,7 +939,7 @@ These are the four facts of Luis and Pavel’s Monday, each with how it fits the
 
 ### 40. Criminal and civil
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-kind`]
 
@@ -982,7 +982,7 @@ Is the person on trial for a crime, or is nobody?
 
 ### 41. Who the promise is written for, and what becomes of it
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-lawyer`]
 
@@ -1025,7 +1025,7 @@ Am I being asked whom the promise is written for, or what becomes of it in an im
 
 ### 42. The oath that ends the process of becoming a citizen
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 61*
 
 [reviewers only: card kind `concept`, id `con-oath`]
 
@@ -1048,7 +1048,7 @@ Giving up loyalty to other countries is part of the oath. Whether your country o
 
 ### 43. The oath and the pledge
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 61*
 
 [reviewers only: card kind `facts`, id `facts-oath`]
 
@@ -1072,7 +1072,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 44. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 44 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 44 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-what`]
 
@@ -1095,7 +1095,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 45. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 45 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 45 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-pledge`]
 
@@ -1118,7 +1118,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 46. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 46 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 46 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-giveup`]
 
@@ -1141,7 +1141,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 47. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 47 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 47 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-support`]
 
@@ -1164,7 +1164,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 48. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 48 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 48 of 61*
 
 [reviewers only: card kind `check`, id `chk-oa-serve`]
 
@@ -1187,7 +1187,7 @@ These are the five facts of Fatima’s ceremony, each with how it fits the idea 
 
 ### 49. The oath and the pledge
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 49 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 49 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-oath`]
 
@@ -1236,7 +1236,7 @@ Is it made once, at the ceremony that makes someone a citizen, or said to the fl
 
 ### 50. The citizenship test, and who sets its details
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 50 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 50 of 61*
 
 [reviewers only: card kind `concept`, id `con-test`]
 
@@ -1257,7 +1257,7 @@ This unit skips the details, because they change and can depend on when you file
 
 ### 51. What is stable about the test
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 51 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 51 of 61*
 
 [reviewers only: card kind `facts`, id `facts-test`]
 
@@ -1287,7 +1287,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 52. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 52 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 52 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-form`]
 
@@ -1316,7 +1316,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 53. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 53 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 53 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-list`]
 
@@ -1345,7 +1345,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 54. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 54 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 54 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-english`]
 
@@ -1374,7 +1374,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 55. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 55 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 55 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-exempt`]
 
@@ -1403,7 +1403,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 56. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 56 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 56 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-law`]
 
@@ -1432,7 +1432,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 57. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 57 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 57 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-who`]
 
@@ -1461,7 +1461,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 58. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 58 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 58 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-source`]
 
@@ -1490,7 +1490,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 59. A question from memory
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 59 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 59 of 61*
 
 [reviewers only: card kind `check`, id `chk-te-version`]
 
@@ -1519,7 +1519,7 @@ These are the eight facts of Chidi’s interview, each with how it fits the idea
 
 ### 60. Where the test comes from, and who sets its details
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 60 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 60 of 61*
 
 [reviewers only: card kind `lookalike`, id `look-test`]
 
@@ -1572,16 +1572,16 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **You are asked, from memory:** Which right protects you from being punished by the government for what you say?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
 
 **Shown as soon as you answer**
 
-- The answer: **The right to free speech**. Why: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticises the government is protected by this right and by the right to a free press together.
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
-  - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes? Both protect a person who criticises the government in public, and both are in the First Amendment, so an article that criticises the mayor could be called either. One is about what a person says: **The right to free speech**. The other is about what newspapers and magazines print and sell: **The right to a free press**. Is the government acting against a person for their own words, or against something that is printed and sold?
+- The answer: **The right to free speech**. Why: It holds the government back from punishing what you say, and it names no citizenship, so a visitor and a citizen are covered alike. A person who writes an article that criticizes the government is protected by this right and by the right to a free press together.
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes? Both protect a person who criticizes the government in public, and both are in the First Amendment, so an article that criticizes the mayor could be called either. One is about what a person says: **The right to free speech**. The other is about what newspapers and magazines print and sell: **The right to a free press**. Is the government acting against a person for their own words, or against something that is printed and sold?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
   - If you chose The right to petition the government: You chose **The right to petition the government**. That is the answer to a different fact: Which right lets you ask the government to put right a wrong?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
@@ -1591,7 +1591,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **You are asked, from memory:** Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
@@ -1599,8 +1599,8 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **Shown as soon as you answer**
 
 - The answer: **The right to a free press**. Why: The ‘press’ here means newspapers and magazines. A city may not order a newsstand to stop selling a magazine because the mayor dislikes it: the right to a free press holds every government back, a city’s included, because the Fourteenth Amendment brought the limit to the states.
-  - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say? Both protect a person who criticises the government in public, and both are in the First Amendment, so an article that criticises the mayor could be called either. One is about what a person says: **The right to free speech**. The other is about what newspapers and magazines print and sell: **The right to a free press**. Is the government acting against a person for their own words, or against something that is printed and sold?
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say? Both protect a person who criticizes the government in public, and both are in the First Amendment, so an article that criticizes the mayor could be called either. One is about what a person says: **The right to free speech**. The other is about what newspapers and magazines print and sell: **The right to a free press**. Is the government acting against a person for their own words, or against something that is printed and sold?
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
   - If you chose The right to petition the government: You chose **The right to petition the government**. That is the answer to a different fact: Which right lets you ask the government to put right a wrong?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
@@ -1610,14 +1610,14 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **You are asked, from memory:** Which right protects your choice to follow a religion, or none?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
 
 **Shown as soon as you answer**
 
-- The answer: **The right to practise a religion, or none**. Why: The government is held back from punishing you for the religion that you practise, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
+- The answer: **The right to practice a religion, or none**. Why: The government is held back from punishing you for the religion that you practice, or for having none. The First Amendment protects the choice, and it applies to everyone here whatever their immigration status.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
@@ -1629,7 +1629,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **You are asked, from memory:** Which right lets people gather peacefully, for example for a rally in a public park?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
@@ -1638,7 +1638,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 - The answer: **The right to assemble peacefully**. Why: It protects people who gather peacefully. A law from Congress that banned every group from holding a political rally in a public park would take it away, which is the kind of case called **Beyond Congress’s power**.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to petition the government: You chose **The right to petition the government**. That is the answer to a different fact: Which right lets you ask the government to put right a wrong?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
@@ -1648,7 +1648,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **You are asked, from memory:** Which right lets you ask the government to put right a wrong?
 
 - The right to free speech
-- The right to practise a religion, or none
+- The right to practice a religion, or none
 - The right to a free press
 - The right to assemble peacefully
 - The right to petition the government
@@ -1657,7 +1657,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 - The answer: **The right to petition the government**. Why: To petition is to ask the government to put right a wrong. Signing a petition asking the council to keep a library open is using it, and it is open to everyone here, as the other four rights are.
   - If you chose The right to free speech: You chose **The right to free speech**. That is the answer to a different fact: Which right protects you from being punished by the government for what you say?
-  - If you chose The right to practise a religion, or none: You chose **The right to practise a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
+  - If you chose The right to practice a religion, or none: You chose **The right to practice a religion, or none**. That is the answer to a different fact: Which right protects your choice to follow a religion, or none?
   - If you chose The right to a free press: You chose **The right to a free press**. That is the answer to a different fact: Which right stops a mayor from having a newsstand pull a magazine that he dislikes?
   - If you chose The right to assemble peacefully: You chose **The right to assemble peacefully**. That is the answer to a different fact: Which right lets people gather peacefully, for example for a rally in a public park?
 - Taught on: “The five freedoms of the First Amendment” (one tap opens the card).
@@ -1785,7 +1785,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **The duty to register for Selective Service**. Why: It falls on men who live here whether or not they are citizens. Registering is what lets the country organise a draft if one were ever called.
+- The answer: **The duty to register for Selective Service**. Why: It falls on men who live here whether or not they are citizens. Registering is what lets the country organize a draft if one were ever called.
   - If you chose The duty to obey the law: You chose **The duty to obey the law**. That is the answer to a different fact: What does the law ask of everyone here, whatever their immigration status, in how they behave?
   - If you chose The duty to pay tax on income earned here: You chose **The duty to pay tax on income earned here**. That is the answer to a different fact: A person on a work visa earns wages here. Which duty does that bring, as it does for a citizen?
 - Taught on: “Three duties that fall on everyone here” (one tap opens the card).
@@ -1833,8 +1833,8 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 - The answer: **What government may not do to you**. Why: A right is a limit on government, and the Constitution mostly lists limits. That is why the rights in this unit all say what government may not do, and why a promise to give you something is a different thing.
   - If you chose None of them: You chose **None of them**. That is the answer to a different fact: Which of a job, a home and medical care does the Constitution promise to give you?
-  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a programme that gives people help, such as Medicare or a housing programme, come from?
-  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a programme gives?
+  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a program that gives people help, such as Medicare or a housing program, come from?
+  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a program gives?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 **Drill item 17 of 36**
@@ -1848,15 +1848,15 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **None of them**. Why: Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a programme.
+- The answer: **None of them**. Why: Each of them is something that government would have to give you, and the Constitution makes no such promise. There is no right to a job or a home in it. Where such help exists, it exists because of a law or a program.
   - If you chose What government may not do to you: You chose **What government may not do to you**. That is the answer to a different fact: What does the Constitution mostly list?
-  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a programme that gives people help, such as Medicare or a housing programme, come from?
-  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a programme gives?
+  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a program that gives people help, such as Medicare or a housing program, come from?
+  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a program gives?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 **Drill item 18 of 36**
 
-**You are asked, from memory:** Where does a programme that gives people help, such as Medicare or a housing programme, come from?
+**You are asked, from memory:** Where does a program that gives people help, such as Medicare or a housing program, come from?
 
 - What government may not do to you
 - None of them
@@ -1865,15 +1865,15 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **A law, or a decision by a state or a city**. Why: Medicare exists because Congress passed a law, and a housing programme exists because of a law or a state or local decision. What one law gives, a later law can change.
+- The answer: **A law, or a decision by a state or a city**. Why: Medicare exists because Congress passed a law, and a housing program exists because of a law or a state or local decision. What one law gives, a later law can change.
   - If you chose What government may not do to you: You chose **What government may not do to you**. That is the answer to a different fact: What does the Constitution mostly list?
   - If you chose None of them: You chose **None of them**. That is the answer to a different fact: Which of a job, a home and medical care does the Constitution promise to give you?
-  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a programme gives?
+  - If you chose By votes, petitions and the people who write the laws: You chose **By votes, petitions and the people who write the laws**. That is the answer to a different fact: How can people change what such a program gives?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 **Drill item 19 of 36**
 
-**You are asked, from memory:** How can people change what such a programme gives?
+**You are asked, from memory:** How can people change what such a program gives?
 
 - What government may not do to you
 - None of them
@@ -1882,10 +1882,10 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **By votes, petitions and the people who write the laws**. Why: Because a programme comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or programme that provides it and read its conditions.
+- The answer: **By votes, petitions and the people who write the laws**. Why: Because a program comes from a law, the way to change it is the political process. To find out who qualifies for one, find the law or program that provides it and read its conditions.
   - If you chose What government may not do to you: You chose **What government may not do to you**. That is the answer to a different fact: What does the Constitution mostly list?
   - If you chose None of them: You chose **None of them**. That is the answer to a different fact: Which of a job, a home and medical care does the Constitution promise to give you?
-  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a programme that gives people help, such as Medicare or a housing programme, come from?
+  - If you chose A law, or a decision by a state or a city: You chose **A law, or a decision by a state or a city**. That is the answer to a different fact: Where does a program that gives people help, such as Medicare or a housing program, come from?
 - Taught on: “What the Constitution does not promise” (one tap opens the card).
 
 **Drill item 20 of 36**
@@ -2255,7 +2255,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 ### 61. What to carry away
 
-*Unit Eight · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 61 of 61*
+*Unit Eight · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 61 of 61*
 
 [reviewers only: card kind `recap`, id `recap-rights`]
 
@@ -2264,7 +2264,7 @@ You have now met every fact in the unit, in its group. This card puts them toget
 **The five freedoms of the First Amendment**
 
 - **Which right protects you from being punished by the government for what you say?** The right to free speech
-- **Which right protects your choice to follow a religion, or none?** The right to practise a religion, or none
+- **Which right protects your choice to follow a religion, or none?** The right to practice a religion, or none
 - **Which right stops a mayor from having a newsstand pull a magazine that he dislikes?** The right to a free press
 - **Which right lets people gather peacefully, for example for a rally in a public park?** The right to assemble peacefully
 - **Which right lets you ask the government to put right a wrong?** The right to petition the government
@@ -2292,8 +2292,8 @@ You have now met every fact in the unit, in its group. This card puts them toget
 
 - **What does the Constitution mostly list?** What government may not do to you
 - **Which of a job, a home and medical care does the Constitution promise to give you?** None of them
-- **Where does a programme that gives people help, such as Medicare or a housing programme, come from?** A law, or a decision by a state or a city
-- **How can people change what such a programme gives?** By votes, petitions and the people who write the laws
+- **Where does a program that gives people help, such as Medicare or a housing program, come from?** A law, or a decision by a state or a city
+- **How can people change what such a program gives?** By votes, petitions and the people who write the laws
 
 **A criminal case and an immigration hearing**
 
@@ -2326,7 +2326,7 @@ You have now met every fact in the unit, in its group. This card puts them toget
 - A right is the government held back from you, and a duty is the law asking something of you. Most of the rights in the Bill of Rights are written for ‘the people’, ‘no person’ and ‘the accused’, and they protect everyone here.
 - Only a few things are kept for citizens: voting in federal elections, running for federal office, and serving on a federal jury.
 - The duties to obey the law, to pay tax on income earned here, and, for a man aged 18 to 25, to register for Selective Service fall on everyone here. Tax follows the income, not the passport.
-- The Constitution mostly lists what government may not do to you. It does not promise a job, a home or medical care. Programmes that provide help exist because of laws, and what one law gives, a later law can change.
+- The Constitution mostly lists what government may not do to you. It does not promise a job, a home or medical care. Programs that provide help exist because of laws, and what one law gives, a later law can change.
 - Whether a lawyer is appointed depends on the kind of case: a person accused of a crime has the promise, and an immigration hearing is a civil case, where it does not apply in the same way. This course does not say which other rights still apply there.
 - The oath is made once, at the ceremony that makes a person a citizen. The pledge to the flag is not part of it.
 - A law requires the test, and the immigration service decides how it works. Take the official question list from uscis.gov, for the version that applies to you.

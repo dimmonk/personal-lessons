@@ -6,7 +6,7 @@ Written 2026-10-05, after every subject was rebuilt in the interactive format. T
 Fieldcraft ("Pragmatic knowledge") is a static learning web app for the owner's own use: https://fieldcraft.web.app. Firebase project `fieldcraft-a795f`, site `fieldcraft`; deploy with `firebase deploy --only hosting --project fieldcraft-a795f`. GitHub `dimmonk/personal-lessons`, branch `main`. Plain HTML/CSS/JS in `public/`, no build step, installable PWA. Progress lives in localStorage under `pl:`; never change those key names. The reader is a beginner: every unit is written so someone with no background can follow it.
 
 ## 2. State
-Every subject is in the interactive format of `docs/lesson-standard.md` (version 1, with the decisions of 2026-10-05 in section 17). No subject has old card-format data any more.
+Every subject is in the interactive format of `docs/lesson-standard.md` (version 1, with the decisions of 2026-10-05 in sections 17 and 18). The old card format is gone: no data, no screens, one engine (`public/app/lessons/*.js`).
 
 | Subject | Units | Kinds | Specimens |
 |---|---|---|---|
@@ -22,7 +22,7 @@ All 42 units are `status: 'draft'`: none has had the cold read the standard requ
 
 **Plain words.** The standard's names for the lesson machinery ("key", "route", "gate", "branch", "specimen", "determination", "ledger") are never shown to the learner: one list, `tests/plain-words.mjs`, is checked by the validator (V50) on every unit, key line and subject note, and by the browser tests on every screen as shown. What to say instead is in the standard, K9. This came from the owner's first cold read.
 
-`npm test` runs the data checks, about 1.6 million lesson checks, 86 negative controls and about 55,000 browser checks.
+`npm test` runs the data checks, about 1.6 million lesson checks, 85 negative controls and about 55,000 browser checks.
 
 ## 3. How the rebuild was done (and how to change a subject now)
 - **The key first.** Each subject's `key.js` is the one vocabulary; every card prints its wording by token. Keys were rewritten on Opus to section 6 (K2) of the standard; the plan for each subject, with every key change and why, is `docs/rebuild/<subject>-plan.md`.
@@ -31,13 +31,12 @@ All 42 units are `status: 'draft'`: none has had the cold read the standard requ
 
 ## 4. Open
 - **Cold read.** Read units as a beginner and report anything unclear; a report that a card is confusing is a defect (A14). Start with Psychology Unit One.
-- **Currency.** Scams and Wealth Preservation are written in pounds (as the old lessons were), Statistical Claims in dollars, and Civics is US. Decide one, and the money in those units is rewritten.
-- **The old card-format screens** (`public/app/*.js` outside `lessons/`, and `docs/lesson-pattern.md`) are no longer used by any subject. Deleting them removes a lesson format, so it waits for the owner.
+- **Done: American English.** The owner is Canadian and moving to the United States: every subject is in dollars, with US rules, accounts and institutions (IRS, 401(k), FTC) and US spelling. `tests/american.mjs` lists British forms; V60 and the browser tests keep them out, case stories included.
 - **Not built** (unchanged from before): E3 typed reasons, E10, E12, E15 (the deploy-time list of drafts and unverified sources). Several `refute` cards cite sources marked unverified in `build.wrongIdeas`.
 - **Known content limits**, said in the units themselves: Math teaches completing the square with a positive middle term only; Civics skips 1877 to 1899 and every fact the old material did not support.
 
 ## 5. Where the old material is
-The old card-format data (`public/subjects/<id>/standard0.js`) was deleted with the rebuild. Build notes in the units cite it by that name; it can be read in git at commit `afad69c` (for example `git show afad69c:public/subjects/math/standard0.js`). The comprehension audits of the old lessons are in `docs/comprehension-audit/`.
+The old card-format data (`public/subjects/<id>/standard0.js`) was deleted with the rebuild, and on 2026-10-05 so were the old card-format screens, their tests and their written pattern (standard section 18). Only the migration of old progress remains (E8), because progress saved under the old lessons can still be in a browser. Build notes in the units cite it by that name; it can be read in git at commit `afad69c` (for example `git show afad69c:public/subjects/math/standard0.js`). The comprehension audits of the old lessons are in `docs/comprehension-audit/`.
 
 ## 6. The owner's working rules
 - Lesson design (units, keys, names, structure) is Claude's to decide; ask only at real forks: deleting or replacing work, big spends, things only the owner knows.

@@ -1,6 +1,6 @@
 # Learner view: Basic Math, Unit Two: How whole numbers split, repeat or are made up
 
-*Six kinds of problem about whole numbers, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
+*Six kinds of problem about whole numbers, and a procedure worked out step by step for each.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,17 +17,17 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Six kinds of problem about whole numbers, and a procedure for each
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 62*
 
 [reviewers only: card kind `orient`, id `orient-whole`]
 
 After this unit you can take a problem about whole numbers, such as whether 67 singers can stand in equal rows, when two buses arrive together again, or what day of the week it will be in 50 days, say which of six kinds it is, and then solve it with the procedure for that kind. You will see every number worked out, you will be told why each step is done, and you will work problems yourself.
 
-Picture the planning of a school fair, with five questions coming up in one afternoon, every one of them about whole numbers. “We have 67 volunteers: can they stand in equal rows?” “These two ribbons, 60 cm and 84 cm long, are to be cut into pieces that are all the same length, with none left over: how long can each piece be at most?” “One stall restocks every 20 minutes and the other every 30 minutes: when do they restock together?” “There are 50 sweets for 7 children: how many are left over?” And one child with a calculator asks: “Can the number that multiplies by itself to give 2 ever be written down exactly?”
+Picture the planning of a school fair, with five questions coming up in one afternoon, every one of them about whole numbers. “We have 67 volunteers: can they stand in equal rows?” “These two ribbons, 60 cm and 84 cm long, are to be cut into pieces that are all the same length, with none left over: how long can each piece be at most?” “One stall restocks every 20 minutes and the other every 30 minutes: when do they restock together?” “There are 50 candies for 7 children: how many are left over?” And one child with a calculator asks: “Can the number that multiplies by itself to give 2 ever be written down exactly?”
 
 The first question, which Unit One taught, gives the same answer to all five: **“How whole numbers split, repeat or are made up”**. But they are five different questions about whole numbers, and a sixth, what a number is made of, belongs with them. Each has its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So in this unit the order is always the same: first work out what the problem wants to know about its numbers, and only then solve it.
 
-Unit One only sorted problems. This is the first unit in which you solve them, so three words need to be exact. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The arithmetic, the dividing and the multiplying, can be done on a calculator: what this unit practises is which steps to take, and why. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, and each step is named by what it is for.
+Unit One only sorted problems. This is the first unit in which you solve them, so three words need to be exact. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The arithmetic, the dividing and the multiplying, can be done on a calculator: what this unit practices is which steps to take, and why. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, and each step is named by what it is for.
 
 Each kind is taught the same way. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. When all six kinds have been taught, the question that tells them apart gets its own card, and then the drill mixes all six.
 
@@ -72,11 +72,11 @@ The unit has seven parts, and you can stop after any of them.
 6. Exact, or only rounded
 7. The question that tells them apart, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A number that will not split
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 62*
 
 [reviewers only: card kind `term`, id `term-prime`]
 
@@ -97,7 +97,7 @@ Two things are worth holding on to. The number 2 is the only even one: every oth
 
 ### 3. Testing whether one number splits evenly
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 62*
 
 [reviewers only: card kind `meet`, id `meet-prime`]
 
@@ -132,7 +132,7 @@ You may also hear this called “primality test”. That means the same thing he
 
 ### 4. Prime check: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 62*
 
 [reviewers only: card kind `again`, id `again-prime`]
 
@@ -165,7 +165,7 @@ That is all you point to, and it is why one name covers a market stall and a dra
 
 ### 5. Story and structure, now that there is something to solve
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 62*
 
 [reviewers only: card kind `lens`, id `lens-procedure`]
 
@@ -183,7 +183,7 @@ Two things change on purpose from card to card: the words of the question (“is
 
 ### 6. Prime check: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-prime`]
 
@@ -214,7 +214,7 @@ In your own life you meet this when you try to arrange a group in even rows or t
 
 ### 7. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 62*
 
 [reviewers only: card kind `check`, id `check-prime`]
 
@@ -237,7 +237,7 @@ The pieces you can tap:
 
 ### 8. The number that multiplies by itself
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 8 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 8 of 62*
 
 [reviewers only: card kind `term`, id `term-sqroot`]
 
@@ -258,7 +258,7 @@ Finding the two whole numbers whose products with themselves sit either side of 
 
 ### 9. Worked: is 67 a prime number?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 9 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 9 of 62*
 
 [reviewers only: card kind `solved`, id `solved-prime-1`]
 
@@ -307,7 +307,7 @@ If 67 could be split into equal rows, with more than one row and more than one s
 
 ### 10. Worked again: is 119 a prime number?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 10 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 10 of 62*
 
 [reviewers only: card kind `solved`, id `solved-prime-2`]
 
@@ -356,7 +356,7 @@ The working ended the moment a prime fitted, because one exact fit is all that i
 
 ### 11. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 11 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 11 of 62*
 
 [reviewers only: card kind `check`, id `check-prime-last`]
 
@@ -389,11 +389,11 @@ The working ended the moment a prime fitted, because one exact fit is all that i
 
 ### 12. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 12 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 12 of 62*
 
 [reviewers only: card kind `check`, id `check-prime-whole`]
 
-> A baker has 83 biscuits and wants to lay them on baking sheets in equal rows, with more than one row and more than one biscuit in each row. Is that possible?
+> A baker has 83 cookies and wants to lay them on baking sheets in equal rows, with more than one row and more than one cookie in each row. Is that possible?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -422,7 +422,7 @@ The working ended the moment a prime fitted, because one exact fit is all that i
 
 ### 13. A number that shares another out exactly
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 62*
 
 [reviewers only: card kind `term`, id `term-factor`]
 
@@ -441,7 +441,7 @@ So 3 and 4 are a pair of *factor*s of 12, and so are 2 and 6. Every number has a
 
 ### 14. Breaking one number into the prime numbers that make it
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 62*
 
 [reviewers only: card kind `meet`, id `meet-factor`]
 
@@ -472,11 +472,11 @@ What separates this kind from the first is the size of the answer. The first kin
 
 A problem like this is **Prime factors**: the *factor*s of the number that are *prime number*s, written as a product. A whole number above 1 that is not a *prime number* is built from them in only one way.
 
-You may also hear this called “prime factorisation” or “prime decomposition”. Those words mean the same thing here, and from now on this unit uses one name: **Prime factors**.
+You may also hear this called “prime factorization” or “prime decomposition”. Those words mean the same thing here, and from now on this unit uses one name: **Prime factors**.
 
 ### 15. Prime factors: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 15 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 15 of 62*
 
 [reviewers only: card kind `again`, id `again-factor`]
 
@@ -509,7 +509,7 @@ So they are one kind, and both are answered from the primes of the number. That 
 
 ### 16. Prime factors: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 16 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 16 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-factor`]
 
@@ -540,7 +540,7 @@ In your own life you meet this when you want every way to arrange or pack a numb
 
 ### 17. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 17 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 17 of 62*
 
 [reviewers only: card kind `check`, id `check-factor`]
 
@@ -561,7 +561,7 @@ The pieces you can tap:
 
 ### 18. Worked: the primes that make 84
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 18 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 18 of 62*
 
 [reviewers only: card kind `solved`, id `solved-factor-1`]
 
@@ -606,7 +606,7 @@ The primes split off, 2, 2, 3 and 7, multiply back to the number: 2 × 2 = 4, 4 
 
 ### 19. Worked again: every size of bunch for 30 roses
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 19 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 19 of 62*
 
 [reviewers only: card kind `solved`, id `solved-factor-2`]
 
@@ -655,7 +655,7 @@ The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.
 
 ### 20. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 20 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 20 of 62*
 
 [reviewers only: card kind `check`, id `check-factor-last`]
 
@@ -686,7 +686,7 @@ The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.
 
 ### 21. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 21 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 21 of 62*
 
 [reviewers only: card kind `check`, id `check-factor-whole`]
 
@@ -713,7 +713,7 @@ The florist can make bunches of 2, 3, 5, 6, 10 or 15 roses: six different sizes.
 
 ### 22. Prime check or Prime factors: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 22 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 22 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-prime-factor`]
 
@@ -762,7 +762,7 @@ Is a yes or a no wanted about one number, or a list of what it is made of, or of
 
 ### 23. The biggest equal pieces for two numbers
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 23 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 23 of 62*
 
 [reviewers only: card kind `meet`, id `meet-hcf`]
 
@@ -775,11 +775,11 @@ The first two kinds took one number apart. The third starts from two numbers and
 Stripped of its story, the case is this:
 
 - There are two whole numbers: 12 red peppers and 18 green peppers.
-- Every tray must hold the same number of peppers, with one colour only in a tray and nothing left over.
+- Every tray must hold the same number of peppers, with one color only in a tray and nothing left over.
 - The question asks for the largest tray size that does this for both numbers at once.
 - Nothing repeats, and nothing changes as time passes.
 
-What you are shown is two whole numbers and a question about a piece that fits into both with nothing left over. Trays of 2 would work: 6 red trays and 9 green trays. Trays of 3 would work, and trays of 6. Trays of 4 would not, because 12 peppers fill 3 trays of 4 and 18 peppers fill 4 trays of 4 and leave 2 over. The question asks for the biggest tray that works for both colours, and that is 6: 2 red trays and 3 green trays. Using the word for a number that shares another out exactly, 6 is a *factor* of 12 and a *factor* of 18.
+What you are shown is two whole numbers and a question about a piece that fits into both with nothing left over. Trays of 2 would work: 6 red trays and 9 green trays. Trays of 3 would work, and trays of 6. Trays of 4 would not, because 12 peppers fill 3 trays of 4 and 18 peppers fill 4 trays of 4 and leave 2 over. The question asks for the biggest tray that works for both colors, and that is 6: 2 red trays and 3 green trays. Using the word for a number that shares another out exactly, 6 is a *factor* of 12 and a *factor* of 18.
 
 There is a sign that you have the right number. The answer can never be more than the smaller of the two numbers, because a piece cannot be bigger than the whole it is cut from. Here 6 is not more than 12.
 
@@ -797,7 +797,7 @@ You may also hear this called “greatest common divisor” or “HCF” or “G
 
 ### 24. Highest common factor: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 24 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 24 of 62*
 
 [reviewers only: card kind `again`, id `again-hcf`]
 
@@ -823,14 +823,14 @@ The pieces you can tap:
 
 **What the two share**
 
-Both problems give two whole numbers and ask for the largest group size that fits both with nothing left over. The pieces must all be the same size, one colour or one sex to a piece, with nothing left out, and the question asks for the biggest piece that does it.
+Both problems give two whole numbers and ask for the largest group size that fits both with nothing left over. The pieces must all be the same size, one color or one sex to a piece, with nothing left out, and the question asks for the biggest piece that does it.
 
 The stories are different, and the kind is the same. That is what **Highest common factor** names.
 
 
 ### 25. Highest common factor: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 25 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 25 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-hcf`]
 
@@ -861,7 +861,7 @@ You meet it when you cut something into equal pieces with no waste, when you lay
 
 ### 26. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 26 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 26 of 62*
 
 [reviewers only: card kind `check`, id `check-hcf`]
 
@@ -884,7 +884,7 @@ The pieces you can tap:
 
 ### 27. Worked: the biggest equal piece for 60 and 84
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 27 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 27 of 62*
 
 [reviewers only: card kind `solved`, id `solved-hcf-1`]
 
@@ -929,7 +929,7 @@ The largest square tile has a side of 12 cm, and the panel is cut into 5 tiles a
 
 ### 28. Worked again: the biggest equal piece for 126 and 90
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 28 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 28 of 62*
 
 [reviewers only: card kind `solved`, id `solved-hcf-2`]
 
@@ -974,7 +974,7 @@ The greatest gap is 18 m: the posts make 7 gaps along the 126 m fence and 5 gaps
 
 ### 29. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 29 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 29 of 62*
 
 [reviewers only: card kind `check`, id `check-hcf-last`]
 
@@ -1005,7 +1005,7 @@ The greatest gap is 18 m: the posts make 7 gaps along the 126 m fence and 5 gaps
 
 ### 30. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 30 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 30 of 62*
 
 [reviewers only: card kind `check`, id `check-hcf-whole`]
 
@@ -1031,7 +1031,7 @@ The greatest gap is 18 m: the posts make 7 gaps along the 126 m fence and 5 gaps
 
 ### 31. Prime factors or Highest common factor: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 31 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 31 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-factor-hcf`]
 
@@ -1080,7 +1080,7 @@ Is there one number to be taken apart, or are there two numbers that must both b
 
 ### 32. Two repeating things happening together again
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 62*
 
 [reviewers only: card kind `meet`, id `meet-lcm`]
 
@@ -1115,7 +1115,7 @@ You may also hear this called “least common multiple” or “LCM”. Those wo
 
 ### 33. Lowest common multiple: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 62*
 
 [reviewers only: card kind `again`, id `again-lcm`]
 
@@ -1148,7 +1148,7 @@ The stories are different, and the kind is the same. That is what **Lowest commo
 
 ### 34. Lowest common multiple: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 34 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 34 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-lcm`]
 
@@ -1171,7 +1171,7 @@ The biggest equal piece is a different kind, though it starts from two numbers a
 
 "When will they next line up?" "One every 8 seconds, the other every 12." "After how many days will both be due together?" "When do they both come round again?"
 
-You meet it with timetables that repeat (two buses, two bin collections), with jobs that are done every few days (two medicines, two chores), and with anything that goes round at its own speed (laps, lights, gears).
+You meet it with schedules that repeat (two buses, two trash pickups), with jobs that are done every few days (two medicines, two chores), and with anything that goes round at its own speed (laps, lights, gears).
 
 **The question to ask when you spot it**
 
@@ -1179,30 +1179,30 @@ You meet it with timetables that repeat (two buses, two bin collections), with j
 
 ### 35. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 35 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 35 of 62*
 
 [reviewers only: card kind `check`, id `check-lcm`]
 
-> One cleaner empties the bins every 6 days and another cleans the windows every 15 days. Both jobs were done today. After how many days will both next be done on the same day?
+> One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days. Both jobs were done today. After how many days will both next be done on the same day?
 
 **You are asked:** Which words show what has to be found about the two repeats? Tap them.
 
 The pieces you can tap:
-1. “One cleaner empties the bins every 6 days and another cleans the windows every 15 days.”
+1. “One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days.”
 2. “Both jobs were done today.”
 3. “After how many days will both next be done on the same day?”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘After how many days will both next be done on the same day?’.” The words “empties the bins every 6 days and another cleans the windows every 15 days” and “both next be done on the same day” give two jobs on separate schedules, every 6 days and every 15 days, and ask for the first day on which both fall. That is **“When two things that repeat next happen together”**. The answer for this case is **“When two things that repeat next happen together”**, and the name is **Lowest common multiple**.
+- If you are right: “Right: ‘After how many days will both next be done on the same day?’.” The words “empties the trash cans every 6 days and another cleans the windows every 15 days” and “both next be done on the same day” give two jobs on separate schedules, every 6 days and every 15 days, and ask for the first day on which both fall. That is **“When two things that repeat next happen together”**. The answer for this case is **“When two things that repeat next happen together”**, and the name is **Lowest common multiple**.
 - If you miss: “The words are ‘After how many days will both next be done on the same day?’.” The same reason follows, and then a line about the piece you tapped:
-  - “One cleaner empties the bins every 6 days and another cleans the windows every 15 days.”: That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.
+  - “One cleaner empties the trash cans every 6 days and another cleans the windows every 15 days.”: That gives the two repeats, and they matter. But the words that say what has to be found about them come in the last sentence.
   - “Both jobs were done today.”: That says where the count starts. It does not say what has to be found.
 - Taught on: “Two repeating things happening together again” (one tap opens the card).
 
 ### 36. Worked: when two buses next arrive together
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 36 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 36 of 62*
 
 [reviewers only: card kind `solved`, id `solved-lcm-1`]
 
@@ -1247,7 +1247,7 @@ The buses next arrive together after 60 minutes.
 
 ### 37. Worked again: when two tablets are next taken together
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 37 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 37 of 62*
 
 [reviewers only: card kind `solved`, id `solved-lcm-2`]
 
@@ -1292,11 +1292,11 @@ Ravi next takes both tablets together after 24 hours.
 
 ### 38. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 38 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 38 of 62*
 
 [reviewers only: card kind `check`, id `check-lcm-last`]
 
-> A ferry leaves a harbour every 10 minutes and a second ferry every 15 minutes. They have just left together. After how many minutes will they next leave together?
+> A ferry leaves a harbor every 10 minutes and a second ferry every 15 minutes. They have just left together. After how many minutes will they next leave together?
 
 **The working, step by step** (all but the last step)
 
@@ -1323,7 +1323,7 @@ Ravi next takes both tablets together after 24 hours.
 
 ### 39. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 39 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 39 of 62*
 
 [reviewers only: card kind `check`, id `check-lcm-whole`]
 
@@ -1349,7 +1349,7 @@ Ravi next takes both tablets together after 24 hours.
 
 ### 40. Highest common factor or Lowest common multiple: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 40 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 40 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-hcf-lcm`]
 
@@ -1398,7 +1398,7 @@ Are the two numbers lengths or amounts to be cut into equal pieces, or are they 
 
 ### 41. Leftovers, and counting round a loop
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 41 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 41 of 62*
 
 [reviewers only: card kind `meet`, id `meet-modrem`]
 
@@ -1433,7 +1433,7 @@ You may also hear this called “clock arithmetic” or “modular arithmetic”
 
 ### 42. Remainder: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 42 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 42 of 62*
 
 [reviewers only: card kind `again`, id `again-modrem`]
 
@@ -1466,7 +1466,7 @@ One is a share and the other is a loop, and one kind covers both. That is what *
 
 ### 43. Remainder: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 43 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 43 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-modrem`]
 
@@ -1487,7 +1487,7 @@ A count of days is not an amount followed through time when the question is only
 
 **Where you will hear it**
 
-"How many are left over?" "What day will it be in 50 days?" "What colour is the 50th bead?" "What time will it be 50 hours from now?"
+"How many are left over?" "What day will it be in 50 days?" "What color is the 50th bead?" "What time will it be 50 hours from now?"
 
 You meet it when you share things out and some are left, when you work out a day or a time some way ahead, when something repeats in a pattern and you want to know which one comes at a given place, and when you read a clock.
 
@@ -1497,28 +1497,28 @@ You meet it when you share things out and some are left, when you work out a day
 
 ### 44. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 44 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 44 of 62*
 
 [reviewers only: card kind `check`, id `check-modrem`]
 
-> A teacher has 45 pupils and puts them in teams of 4. How many pupils are left over once every team is full?
+> A teacher has 45 students and puts them in teams of 4. How many students are left over once every team is full?
 
 **You are asked:** Which words show what has to be found? Tap them.
 
 The pieces you can tap:
-1. “A teacher has 45 pupils and puts them in teams of 4.”
-2. “How many pupils are left over once every team is full?”
+1. “A teacher has 45 students and puts them in teams of 4.”
+2. “How many students are left over once every team is full?”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘How many pupils are left over once every team is full?’.” The words “puts them in teams of 4” and “How many pupils are left over once every team is full?” give a count, 45, and the size of a group, 4, and ask what is left over once every group is full. That is **“What is left over, or where a count ends on a loop”**. The answer for this case is **“What is left over, or where a count ends on a loop”**, and the name is **Remainder**.
-- If you miss: “The words are ‘How many pupils are left over once every team is full?’.” The same reason follows, and then a line about the piece you tapped:
-  - “A teacher has 45 pupils and puts them in teams of 4.”: That gives the count and the size of one group, and they matter. But the words that say what has to be found come in the last sentence.
+- If you are right: “Right: ‘How many students are left over once every team is full?’.” The words “puts them in teams of 4” and “How many students are left over once every team is full?” give a count, 45, and the size of a group, 4, and ask what is left over once every group is full. That is **“What is left over, or where a count ends on a loop”**. The answer for this case is **“What is left over, or where a count ends on a loop”**, and the name is **Remainder**.
+- If you miss: “The words are ‘How many students are left over once every team is full?’.” The same reason follows, and then a line about the piece you tapped:
+  - “A teacher has 45 students and puts them in teams of 4.”: That gives the count and the size of one group, and they matter. But the words that say what has to be found come in the last sentence.
 - Taught on: “Leftovers, and counting round a loop” (one tap opens the card).
 
 ### 45. Worked: the time 50 hours after 9 o’clock
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 45 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 45 of 62*
 
 [reviewers only: card kind `solved`, id `solved-modrem-1`]
 
@@ -1563,7 +1563,7 @@ Fifty hours after 9 o’clock, the clock shows 11 o’clock.
 
 ### 46. Worked again: the pencils left over
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 46 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 46 of 62*
 
 [reviewers only: card kind `solved`, id `solved-modrem-2`]
 
@@ -1608,7 +1608,7 @@ There are 4 pencils left over after 12 full boxes.
 
 ### 47. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 47 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 47 of 62*
 
 [reviewers only: card kind `check`, id `check-modrem-last`]
 
@@ -1639,7 +1639,7 @@ There are 4 pencils left over after 12 full boxes.
 
 ### 48. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 48 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 48 of 62*
 
 [reviewers only: card kind `check`, id `check-modrem-whole`]
 
@@ -1665,7 +1665,7 @@ There are 4 pencils left over after 12 full boxes.
 
 ### 49. Lowest common multiple or Remainder: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 49 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 49 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-lcm-modrem`]
 
@@ -1714,7 +1714,7 @@ Are there two things that each repeat, or one loop and a count that goes round i
 
 ### 50. Whether a number has an exact value
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 50 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 50 of 62*
 
 [reviewers only: card kind `meet`, id `meet-irrat`]
 
@@ -1749,7 +1749,7 @@ You may also hear this called “a number with no exact fraction”. That means 
 
 ### 51. Irrational number: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 51 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 51 of 62*
 
 [reviewers only: card kind `again`, id `again-irrat`]
 
@@ -1759,18 +1759,18 @@ The first case again, in one line. *The metal sheet*: “Can the side be written
 
 The second case.
 
-*The cake tin*
+*The cake pan*
 
-> A baker measures a round cake tin. The distance round it is a certain number of times the distance across it, and that number is called pi. Can pi be written exactly, as a fraction or a decimal that ends?
+> A baker measures a round cake pan. The distance round it is a certain number of times the distance across it, and that number is called pi. Can pi be written exactly, as a fraction or a decimal that ends?
 **You are asked:** In *The metal sheet*, these words show it: “Can the side be written exactly, as a fraction or a decimal that ends?” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “A baker measures a round cake tin.”
+1. “A baker measures a round cake pan.”
 2. “The distance round it is a certain number of times the distance across it, and that number is called pi.”
 3. “Can pi be written exactly, as a fraction or a decimal that ends?”
 
 **Shown as soon as you tap.** The words are “Can pi be written exactly, as a fraction or a decimal that ends?”.
-- If you tapped “A baker measures a round cake tin.”: That is the story. It does not say what has to be found.
+- If you tapped “A baker measures a round cake pan.”: That is the story. It does not say what has to be found.
 - If you tapped “The distance round it is a certain number of times the distance across it, and that number is called pi.”: That names the number, pi, and it matters. But the words that say what has to be found about it come in the last sentence.
 
 **What the two share**
@@ -1782,7 +1782,7 @@ The two numbers are different sorts, a root and pi, and the question about them 
 
 ### 52. Irrational number: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 52 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 52 of 62*
 
 [reviewers only: card kind `portrait`, id `portrait-irrat`]
 
@@ -1813,7 +1813,7 @@ You meet it on a calculator that shows a long decimal, in a measurement such as 
 
 ### 53. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 53 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 53 of 62*
 
 [reviewers only: card kind `check`, id `check-irrat`]
 
@@ -1836,7 +1836,7 @@ The pieces you can tap:
 
 ### 54. Worked: the diagonal of a square tile
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 54 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 54 of 62*
 
 [reviewers only: card kind `solved`, id `solved-irrat-1`]
 
@@ -1885,7 +1885,7 @@ The diagonal cannot be written exactly. Rounded, it is about 1.41 m, and no deci
 
 ### 55. Worked again: the side of a square patio
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 55 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 55 of 62*
 
 [reviewers only: card kind `solved`, id `solved-irrat-2`]
 
@@ -1934,7 +1934,7 @@ The side of the patio is 9 m, and it can be written exactly.
 
 ### 56. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 56 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 56 of 62*
 
 [reviewers only: card kind `check`, id `check-irrat-last`]
 
@@ -1967,7 +1967,7 @@ The side of the patio is 9 m, and it can be written exactly.
 
 ### 57. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 57 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 57 of 62*
 
 [reviewers only: card kind `check`, id `check-irrat-whole`]
 
@@ -1994,7 +1994,7 @@ The side of the patio is 9 m, and it can be written exactly.
 
 ### 58. Prime check or Irrational number: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 58 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 58 of 62*
 
 [reviewers only: card kind `lookalike`, id `look-prime-irrat`]
 
@@ -2043,7 +2043,7 @@ Is a count of things to be shared out in equal groups, or is a number to be writ
 
 ### 59. The one question that tells the six kinds apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 59 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 59 of 62*
 
 [reviewers only: card kind `question`, id `q-w1`]
 
@@ -2105,7 +2105,7 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 ### 60. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 60 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 60 of 62*
 
 [reviewers only: card kind `check`, id `check-w1`]
 
@@ -2133,7 +2133,7 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: what the problem asks about its numbers decides the kind, and nothing else in the story does.
 
@@ -2278,7 +2278,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 6 of 54**
 
-> Fifty sweets are shared out equally among 7 children, and what cannot be shared goes to the teacher. How many sweets does the teacher get?
+> Fifty candies are shared out equally among 7 children, and what cannot be shared goes to the teacher. How many candies does the teacher get?
 
 **The working, step by step** (all but the last step)
 
@@ -2297,7 +2297,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 - The working, step by step:
   - Find how many whole rounds fit in the count: 7 × 7 = 49, the most whole rounds that do not pass 50
   - Take them away to find what is left over: 50 − 49 = 1
-  - Say what the left over means: 1 sweet is left over for the teacher
+  - Say what the left over means: 1 candy is left over for the teacher
   Whole groups of one size use up the count in steps of that size, so the most they can use is the biggest multiple of the size that does not pass the count. What is not used up is what is left over, and it is always less than the size of one group.
 - If you chose 7: You chose **7**. That is the answer you get when you give the number of whole rounds and not what is left over.
 - If you chose 6: You chose **6**. That is the answer you get when you give how many more it would take to fill one more round, and not what is left over.
@@ -2622,7 +2622,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 19 of 54**
 
-> A tenant pays rent every 4 weeks and a council charge every 6 weeks. Both are due this week. After how many weeks are both next due in the same week?
+> A tenant pays rent every 4 weeks and a utility bill every 6 weeks. Both are due this week. After how many weeks are both next due in the same week?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -2757,7 +2757,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 25 of 54**
 
-> A necklace repeats red, green and blue beads in that order, again and again. What colour is the 50th bead?
+> A necklace repeats red, green and blue beads in that order, again and again. What color is the 50th bead?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -2801,7 +2801,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 27 of 54**
 
-> A theatre has 221 tickets and wants to sell them in blocks of the same size, with more than one block and more than one ticket in each block. Is that possible?
+> A theater has 221 tickets and wants to sell them in blocks of the same size, with more than one block and more than one ticket in each block. Is that possible?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -2873,7 +2873,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?
+> A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2885,7 +2885,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many meters, and a new amount to scale it to: “sells 6 meters of chain for $15” and “How much will it cost her?”. The price is the number it leaves out.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2893,7 +2893,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A savings jar holds €120. Tomas adds €15 to it every month. How many months until the jar holds €300?
+> A savings jar holds $120. Tomas adds $15 to it every month. How many months until the jar holds $300?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2905,7 +2905,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds $15 to it every month” and “How many months until the jar holds $300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2953,7 +2953,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?
+> A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2965,7 +2965,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many meters, and a new amount to scale it to: “sells 6 meters of chain for $15” and “How much will it cost her?”. The price is the number it leaves out.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -3301,7 +3301,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 47 of 54**
 
-> A border repeats white, blue, blue and green tiles in that order, again and again. What colour is the 83rd tile?
+> A border repeats white, blue, blue and green tiles in that order, again and again. What color is the 83rd tile?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem want to know about the number or numbers? → What kind of problem is it?
 
@@ -3321,8 +3321,8 @@ Each question is shown with all of its answers, in order, and the names offered 
   Each whole pattern ends exactly where it began, so whole patterns change nothing. What is left over says how far into the next pattern the count has gone, and a left over of nothing means the count has just finished a pattern.
 - If you chose green: You chose **green**. That is the answer you get when you count the left over from 0, so 3 lands on the 4th tile and not the 3rd.
 - If you chose white: You chose **white**. That is the answer you get when you use the number of whole patterns, 20, as the place and not what is left over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What colour is the 83rd tile?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
-- What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “What colour is the 83rd tile?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What color is the 83rd tile?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
+- What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “What color is the 83rd tile?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
 
@@ -3527,7 +3527,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 61. What to carry away
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 61 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 61 of 62*
 
 [reviewers only: card kind `recap`, id `recap-whole`]
 
@@ -3572,7 +3572,7 @@ What does the problem want to know about the number or numbers?
 
 ### 62. Where would you meet this?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 62 of 62*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 62 of 62*
 
 [reviewers only: card kind `transfer`, id `transfer-whole`]
 
@@ -3825,26 +3825,26 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 18**
 
-> A charity has two donations, €45 and €60. It splits each into prizes of the same value, with nothing left over. What is the largest value each prize can have?
+> A charity has two donations, $45 and $60. It splits each into prizes of the same value, with nothing left over. What is the largest value each prize can have?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem want to know about the number or numbers? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- 15 €
-- 180 €
-- 2700 €
+- $15
+- $180
+- $2700
 
 **Shown as soon as you answer**
 
-- The answer: **15 €**, and the kind of problem is **Highest common factor**.
+- The answer: **$15**, and the kind of problem is **Highest common factor**.
 - The working, step by step:
   - Break each number into primes: 45 = 3 × 3 × 5; 60 = 2 × 2 × 3 × 5
   - Pick out the primes both numbers have, each as many times as the number that has it fewer times: Both have 3 × 5
   - Multiply the shared primes: 3 × 5 = 15
   A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest *factor* the two numbers have in common.
-- If you chose 180 €: You chose **180 €**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
-- If you chose 2700 €: You chose **2700 €**. That is the answer you get when you multiply the two numbers together, which gives a piece far too big to fit into either.
+- If you chose $180: You chose **$180**. That is the answer you get when you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.
+- If you chose $2700: You chose **$2700**. That is the answer you get when you multiply the two numbers together, which gives a piece far too big to fit into either.
 - What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “splits each into prizes of the same value, with nothing left over”, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
 - What does the problem want to know about the number or numbers? **The biggest equal piece two numbers both split into.** The words “splits each into prizes of the same value, with nothing left over” give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is **“The biggest equal piece two numbers both split into”**.
 - Why not **Lowest common multiple**: The problem asks for the biggest piece that fits into both numbers, and nothing repeats. **Lowest common multiple** would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.
@@ -3933,7 +3933,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 13 of 18**
 
-> A farm shop packs 100 eggs into boxes of 12. How many eggs are left over once every box is full?
+> A farm stand packs 100 eggs into boxes of 12. How many eggs are left over once every box is full?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem want to know about the number or numbers? → What kind of problem is it?
 
@@ -3987,7 +3987,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 15 of 18**
 
-> A string of lights repeats green, gold, red, blue and white, again and again. What colour is the 47th light?
+> A string of lights repeats green, gold, red, blue and white, again and again. What color is the 47th light?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem want to know about the number or numbers? → What kind of problem is it?
 
@@ -4007,8 +4007,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Each whole pattern ends exactly where it began, so whole patterns change nothing. What is left over says how far into the next pattern the count has gone, and a left over of nothing means the count has just finished a pattern.
 - If you chose red: You chose **red**. That is the answer you get when you count the left over from 0, so 2 lands on the 3rd light and not the 2nd.
 - If you chose white: You chose **white**. That is the answer you get when you use the number of whole patterns, 9, as the place and not what is left over.
-- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What colour is the 47th light?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
-- What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “What colour is the 47th light?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
+- What does the problem ask you to work out? **How whole numbers split, repeat or are made up.** The problem asks “What color is the 47th light?”, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is **“How whole numbers split, repeat or are made up”**.
+- What does the problem want to know about the number or numbers? **What is left over, or where a count ends on a loop.** The words “What color is the 47th light?” give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is **“What is left over, or where a count ends on a loop”**.
 - Why not **Lowest common multiple**: There is one group size, or one loop, and a count that goes round it. **Lowest common multiple** needs two separate schedules, and asks when they first coincide.
 - Taught on: “Worked: the time 50 hours after 9 o’clock” (one tap opens the card).
 

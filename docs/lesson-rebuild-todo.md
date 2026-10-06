@@ -11,6 +11,7 @@ Started and finished 2026-10-05, in one session. Keys on Opus, units on Sonnet (
 - [x] Political Ideologies: 5 units, 30 specimens
 - [x] Basic Math: 6 units (five procedure units), 35 specimens
 - [x] Old card-format data deleted from every subject
+- [x] Old card-format screens, tests and written pattern deleted (2026-10-05, standard section 18)
 
 ## Engine, validator, tools, tests
 - [x] Gate, fact and procedure units on real data; chains (`continues`); cross-branch look-alike pairs; `act` and V59; names and terms of assumed units; earlier problem types in later drills and Mixed; unmet names shown by plain words; an empty Mixed drill explains itself
@@ -20,9 +21,9 @@ Started and finished 2026-10-05, in one session. Keys on Opus, units on Sonnet (
 
 ## Finish
 - [x] Lock written for 42 units; HANDOFF.md rewritten
-- [ ] Commit, deploy, push
+- [x] Commit, deploy, push
+
+- [x] American English everywhere: dollars, US rules and institutions, US spelling (V60)
 
 ## Needs your decision
-- Currency: Scams and Wealth Preservation use pounds (as the old lessons did), Statistical Claims uses dollars, and Civics is US. My pick: dollars everywhere if you are in the US.
-- The old card-format screens are no longer used by any subject. Delete them (and `docs/lesson-pattern.md`)? My pick: yes, now that nothing uses them.
 - Cold read: read any unit as a beginner and say what is unclear (start with Psychology Unit One).

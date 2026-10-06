@@ -63,7 +63,7 @@ The unit has four parts, and you can stop after any of them.
 3. Totals that hide a mix
 4. The question, two whole claims, and the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A percentage that hides how many it is
 
@@ -1089,11 +1089,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these claims have nothing wrong with them, and that is on purpose. A claim that gives the counts, the mix and the same kind of thing on both sides holds, and saying so is as much a part of the skill as finding what is missing. A claim with a large percentage is not harder to judge for that, and one with a small percentage is not easier.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the three this unit teaches: A percentage without the numbers / Base rate fallacy / Simpson’s paradox.
 

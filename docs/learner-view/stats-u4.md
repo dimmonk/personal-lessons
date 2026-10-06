@@ -1,6 +1,6 @@
 # Learner view: Statistical Claims, Unit Four: What the number counts
 
-*Three ways a figure can move while the real thing stands still, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
+*Three ways a figure can move while the real thing stands still, and how to tell which one you are looking at.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A number went up. Did the thing it counts go up?
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 30*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -29,7 +29,7 @@ A figure is not the thing it stands for. It is what was written down, counted or
 
 There are three ordinary ways for that to happen, and each sends you to a different check. People who are judged on the figure can work on the figure instead of the real thing. The way of counting can change, so that the same situation gets a different number. Or more effort can go into finding the thing, so that more of what was always there turns up. This unit teaches you to tell the three apart, and to see a figure for what it is: a count made by someone, in some way, with some amount of effort.
 
-Two phrases are used all the way through. The real thing is what the figure is read as showing: parcels reaching customers on time, people who have an illness, pupils who can read. The figure is the number that was written down about it. The question this unit teaches is about everything else that goes into making the number.
+Two phrases are used all the way through. The real thing is what the figure is read as showing: parcels reaching customers on time, people who have an illness, students who can read. The figure is the number that was written down about it. The question this unit teaches is about everything else that goes into making the number.
 
 When people are counted as having an illness, they are "found". The word "case" is kept for what the app calls one example: a claim as someone might say it to you, with whatever the speaker tells you about how the figure was made.
 
@@ -64,11 +64,11 @@ The unit has three parts, and you can stop after any of them.
 2. When the counting changes, and when the looking grows
 3. The question, and two whole claims
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Pushing up the figure instead of the thing it stands for
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 30*
 
 [reviewers only: card kind `meet`, id `meet-proxy`]
 
@@ -104,7 +104,7 @@ You may also hear this called “Goodhart’s law” or “teaching to the test�
 
 ### 3. Gaming the target: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 30*
 
 [reviewers only: card kind `again`, id `again-proxy`]
 
@@ -141,7 +141,7 @@ The two stories share nothing else. So this is not about parcels or about langua
 
 ### 4. The story never decides which of the three it is
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 30*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -161,7 +161,7 @@ Two more things change on purpose: how large the rise is, and whether anyone did
 
 ### 5. Gaming the target: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 30*
 
 [reviewers only: card kind `portrait`, id `portrait-proxy`]
 
@@ -201,7 +201,7 @@ Until you have found one, repeat only what the figure says ("marked on time") an
 
 ### 6. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 30*
 
 [reviewers only: card kind `check`, id `check-proxy`]
 
@@ -226,7 +226,7 @@ The pieces you can tap:
 
 ### 7. Gaming the target or A real change: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-proxy-real`]
 
@@ -270,7 +270,7 @@ Who makes the figure, and who gains if it is high? Could anyone raise it without
 
 ### 8. A bonus on the figure, and nothing to push
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 30*
 
 [reviewers only: card kind `exception`, id `exc-chairs`]
 
@@ -316,7 +316,7 @@ So a target and a rise are never enough to name a claim **Gaming the target**. L
 
 ### 9. A new way of counting, with the same name on the figure
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 9 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 9 of 30*
 
 [reviewers only: card kind `meet`, id `meet-defshift`]
 
@@ -352,7 +352,7 @@ You may also hear this called “a change of definition” or “a new measuring
 
 ### 10. A change in how it is counted: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 10 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 10 of 30*
 
 [reviewers only: card kind `again`, id `again-defshift`]
 
@@ -389,7 +389,7 @@ The two stories share nothing else. So this is not about jobs or about gyms. It 
 
 ### 11. A change in how it is counted: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 11 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 11 of 30*
 
 [reviewers only: card kind `portrait`, id `portrait-defshift`]
 
@@ -429,7 +429,7 @@ Do not pass the claim on as a change in the real thing until you can say how muc
 
 ### 12. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 30*
 
 [reviewers only: card kind `check`, id `check-defshift`]
 
@@ -449,7 +449,7 @@ Do not pass the claim on as a change in the real thing until you can say how muc
 
 ### 13. A change in how it is counted or A real change: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-defshift-real`]
 
@@ -493,7 +493,7 @@ Was the figure counted by the same definition and the same tool all the way thro
 
 ### 14. Gaming the target or A change in how it is counted: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-proxy-defshift`]
 
@@ -536,7 +536,7 @@ Did anything about what counts or what measures change at a date? Or did the peo
 
 ### 15. More found, because more was looked for
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 30*
 
 [reviewers only: card kind `meet`, id `meet-detection`]
 
@@ -572,7 +572,7 @@ You may also hear this called “more looking, not more happening” or “surve
 
 ### 16. Detection bias: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 30*
 
 [reviewers only: card kind `again`, id `again-detection`]
 
@@ -607,7 +607,7 @@ The two stories share nothing else. So this is not about illness or about drivin
 
 ### 17. Detection bias: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 30*
 
 [reviewers only: card kind `portrait`, id `portrait-detection`]
 
@@ -647,11 +647,11 @@ Until you have, read the claim as "more were found" and not as "more is happenin
 
 ### 18. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 30*
 
 [reviewers only: card kind `check`, id `check-detection`]
 
-> A university's integrity office reports: 'Copied essays found this year: 90, up from 30 last year. Cheating is on the rise.' Last year staff checked only the 600 essays that markers had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method. An essay counts as copied by the same standard in both years. That is 5 found in every 100 checked last year, and 3 in every 100 this year.
+> A university's integrity office reports: 'Copied essays found this year: 90, up from 30 last year. Cheating is on the rise.' Last year staff checked only the 600 essays that graders had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method. An essay counts as copied by the same standard in both years. That is 5 found in every 100 checked last year, and 3 in every 100 this year.
 
 **The question:** **“What besides the real thing could move this figure?”** Which of the answers you have met so far fits this case?
 
@@ -661,7 +661,7 @@ Until you have, read the claim as "more were found" and not as "more is happenin
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **More looking for it.**” The office checked five times as many essays this year: “Last year staff checked only the 600 essays that markers had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method”. The standard for a copied essay and the method are the same, so the count of essays found rose from 30 to 90 because 3,000 were checked instead of 600. Among those checked, the share found fell from 5 in 100 to 3 in 100. The name that goes with this answer is **Detection bias**.
+- If you are right: “Right: **More looking for it.**” The office checked five times as many essays this year: “Last year staff checked only the 600 essays that graders had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method”. The standard for a copied essay and the method are the same, so the count of essays found rose from 30 to 90 because 3,000 were checked instead of 600. Among those checked, the share found fell from 5 in 100 to 3 in 100. The name that goes with this answer is **Detection bias**.
 - If you miss: “The answer is **More looking for it.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **People working on the figure itself**: Give that answer when the people the figure measures are paid, ranked or judged on it (a target, a bonus, a quota), and they could raise it without more of the thing it is meant to show. This case shows something else: more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening.
   - If you chose **A new rule or tool for counting it**: Give that answer when the definition of what counts, or the tool that measures, changed during the time the figure covers (a new definition, a new form, a new meter), and that change alone could move the figure. This case shows something else: more effort went into finding the thing during the time the figure covers (more tests, more cameras, an easier way to report it), and finding more could raise the figure with no more of the thing happening.
@@ -669,7 +669,7 @@ Until you have, read the claim as "more were found" and not as "more is happenin
 
 ### 19. Detection bias or A real change: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-detection-real`]
 
@@ -713,7 +713,7 @@ How much looking went into the count at each end? Was it the same?
 
 ### 20. Gaming the target or Detection bias: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-proxy-detection`]
 
@@ -756,7 +756,7 @@ What did the extra effort go into: raising the number, or finding the thing the 
 
 ### 21. A change in how it is counted or Detection bias: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 30*
 
 [reviewers only: card kind `lookalike`, id `look-defshift-detection`]
 
@@ -799,7 +799,7 @@ Is what counts as a find decided by a different definition or tool than before, 
 
 ### 22. More counted, and no more looking
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 30*
 
 [reviewers only: card kind `exception`, id `exc-counter`]
 
@@ -841,7 +841,7 @@ In real life a new tool and more looking often arrive together: a new test is br
 
 ### 23. A wrong idea: "if the figure went up, more of it is happening"
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 30*
 
 [reviewers only: card kind `refute`, id `refute-moved`]
 
@@ -868,7 +868,7 @@ So when a figure rises, ask the question before you decide what it means: **“W
 
 ### 24. The question you have been answering all along
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 24 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 24 of 30*
 
 [reviewers only: card kind `question`, id `q-measure`]
 
@@ -921,7 +921,7 @@ Sometimes two answers seem to fit. Each pair below has been set side by side ear
 
 ### 25. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 25 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 25 of 30*
 
 [reviewers only: card kind `check`, id `check-measure`]
 
@@ -943,7 +943,7 @@ Sometimes two answers seem to fit. Each pair below has been set side by side ear
 
 ### 26. A whole claim, from the first question to the name
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 26 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 26 of 30*
 
 [reviewers only: card kind `worked`, id `worked-inspections`]
 
@@ -1007,7 +1007,7 @@ Here the likeness agrees with the answer, so the answer stands. The question com
 
 ### 27. A second whole claim, where the story points the wrong way
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 30*
 
 [reviewers only: card kind `worked`, id `worked-calls`]
 
@@ -1071,11 +1071,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these claims have nothing wrong with them, and that is on purpose. A claim in which none of the three ways applies is an answer as much as they are, and you will need it as often. A claim that sounds alarming is not harder to judge for that, and a dull one is not easier.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the three this unit teaches: Gaming the target / A change in how it is counted / Detection bias.
 
@@ -1137,7 +1137,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 4 of 48**
 
-> A school reports: 'Absences fell from 8% of pupil-mornings to 5% this year.' ⟦Until last year a pupil who arrived more than 10 minutes after the bell was marked absent for that morning. This year a pupil is marked absent only if they miss the whole morning⟧. In both years, out of every 1,000 pupil-mornings, pupils missed the whole morning in 50 and arrived more than 10 minutes late in 30.
+> A school reports: 'Absences fell from 8% of student-mornings to 5% this year.' ⟦Until last year a student who arrived more than 10 minutes after the bell was marked absent for that morning. This year a student is marked absent only if they miss the whole morning⟧. In both years, out of every 1,000 student-mornings, students missed the whole morning in 50 and arrived more than 10 minutes late in 30.
 
 Shown to you, with the words that decide each answer marked:
 - Which part of the claim goes wrong first? **What the number counts**
@@ -1147,8 +1147,8 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A change in how it is counted**.” What besides the real thing could move this figure? **A new rule or tool for counting it.** What counts as absent changed: “Until last year a pupil who arrived more than 10 minutes after the bell was marked absent for that morning. This year a pupil is marked absent only if they miss the whole morning”. The pupils did the same in both years, and only the definition moved the figure from 8% to 5%.
-  - Why not **Detection bias**: No more effort went into finding absent pupils. The pupils who arrive late were found both years; they stopped being counted as absent.
+- If you are right: “Right: **A change in how it is counted**.” What besides the real thing could move this figure? **A new rule or tool for counting it.** What counts as absent changed: “Until last year a student who arrived more than 10 minutes after the bell was marked absent for that morning. This year a student is marked absent only if they miss the whole morning”. The students did the same in both years, and only the definition moved the figure from 8% to 5%.
+  - Why not **Detection bias**: No more effort went into finding absent students. The students who arrive late were found both years; they stopped being counted as absent.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Detection bias**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1346,7 +1346,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 15 of 48**
 
-> A school district reports: 'The average math score rose from 58 to 66 this year.' The district replaced its yearly math exam with a newer edition. On a day when 300 pupils sat both editions, the old one averaged 58 and the new one averaged 66. The pupils' ages and the subjects covered are the same.
+> A school district reports: 'The average math score rose from 58 to 66 this year.' The district replaced its yearly math exam with a newer edition. On a day when 300 students sat both editions, the old one averaged 58 and the new one averaged 66. The students' ages and the subjects covered are the same.
 
 **You are asked:** What besides the real thing could move this figure?
 
@@ -1356,7 +1356,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A new rule or tool for counting it.**” The exam used to measure the pupils is a different one: “The district replaced its yearly math exam with a newer edition. On a day when 300 pupils sat both editions, the old one averaged 58 and the new one averaged 66”. A new tool can read higher or lower than the old one. This answer leads to **A change in how it is counted**.
+- If you are right: “Right: **A new rule or tool for counting it.**” The exam used to measure the students is a different one: “The district replaced its yearly math exam with a newer edition. On a day when 300 students sat both editions, the old one averaged 58 and the new one averaged 66”. A new tool can read higher or lower than the old one. This answer leads to **A change in how it is counted**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **People working on the figure itself**: Nobody is paid or ranked on the score here. What changed is the exam that makes the score.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1756,22 +1756,22 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 36 of 48**
 
-> A teacher grades her own class's final exam, and her bonus rises with the share of her pupils who score 50 or more. The share rose from 60 in every 100 to 90 in every 100. This year she began adding 10 points to any sheet that is filled in completely. An outside marker who graded 20 of the same exams, without the bonus points, found 12 of the 20 scoring 50 or more, as in the year before.
+> A teacher grades her own class's final exam, and her bonus rises with the share of her students who score 50 or more. The share rose from 60 in every 100 to 90 in every 100. This year she began adding 10 points to any sheet that is filled in completely. An outside grader who graded 20 of the same exams, without the bonus points, found 12 of the 20 scoring 50 or more, as in the year before.
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What besides the real thing could move this figure? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Gaming the target**.” What besides the real thing could move this figure? **People working on the figure itself.** The person paid on the figure also makes the figure: “her bonus rises with the share of her pupils who score 50 or more” and “This year she began adding 10 points to any sheet that is filled in completely”. Ten bonus points for a filled-in sheet lift a score without lifting what the pupil knows.
+- If you are right: “Right: **Gaming the target**.” What besides the real thing could move this figure? **People working on the figure itself.** The person paid on the figure also makes the figure: “her bonus rises with the share of her students who score 50 or more” and “This year she began adding 10 points to any sheet that is filled in completely”. Ten bonus points for a filled-in sheet lift a score without lifting what the student knows.
   - Why not **A change in how it is counted**: The exam and the pass mark are the same in both years. What changed is that the person who grades is paid on the result and added points.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **What the number counts.** The share passing can rise with no pupil knowing more: “her bonus rises with the share of her pupils who score 50 or more”. It rose from 60 to 90 in every 100, and the outside marker’s 12 of 20 is 60 in every 100 again.
+  - Which part of the claim goes wrong first? **What the number counts.** The share passing can rise with no student knowing more: “her bonus rises with the share of her students who score 50 or more”. It rose from 60 to 90 in every 100, and the outside grader’s 12 of 20 is 60 in every 100 again.
   - If you chose **A new rule or tool for counting it**: The exam and the pass mark are the same in both years. What changed is that the person who grades is paid on the result and added points.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If an outside marker graded every exam without knowing the class, and the teacher had no say over it, the teacher could no longer push the figure, and the claim could be **A real change**.
+- What would make it a different name: If an outside grader graded every exam without knowing the class, and the teacher had no say over it, the teacher could no longer push the figure, and the claim could be **A real change**.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Drill item 37 of 48**
@@ -1833,23 +1833,23 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 40 of 48**
 
-> A school replaced its roll call with a card scanner at each classroom door this year, and reports: 'Attendance rose from 90% to 97% after the new scanners went in.' Both the roll call and the scanner count a pupil as present if they are in the room at 9:00. Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door. The principal's own head count in 20 rooms found 90 of every 100 pupils present in both years.
+> A school replaced its roll call with a card scanner at each classroom door this year, and reports: 'Attendance rose from 90% to 97% after the new scanners went in.' Both the roll call and the scanner count a student as present if they are in the room at 9:00. Teachers are ranked each term by their class's attendance, and teachers hold the students' cards and scan them at the door. The principal's own head count in 20 rooms found 90 of every 100 students present in both years.
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What besides the real thing could move this figure? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Gaming the target**.” What besides the real thing could move this figure? **People working on the figure itself.** The people ranked on the figure also make it: “Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door”. A teacher can scan the card of a pupil who is not there.
-  - Why not **A change in how it is counted**: The new scanner counts a pupil as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.
+- If you are right: “Right: **Gaming the target**.” What besides the real thing could move this figure? **People working on the figure itself.** The people ranked on the figure also make it: “Teachers are ranked each term by their class's attendance, and teachers hold the students' cards and scan them at the door”. A teacher can scan the card of a student who is not there.
+  - Why not **A change in how it is counted**: The new scanner counts a student as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **What the number counts.** The attendance figure can rise with no more pupils in the room: “Teachers are ranked each term by their class's attendance, and teachers hold the pupils' cards and scan them at the door”. The head count found 90 in every 100 in both years, and the figure went from 90 to 97.
-  - If you chose **A new rule or tool for counting it**: The new scanner counts a pupil as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.
+  - Which part of the claim goes wrong first? **What the number counts.** The attendance figure can rise with no more students in the room: “Teachers are ranked each term by their class's attendance, and teachers hold the students' cards and scan them at the door”. The head count found 90 in every 100 in both years, and the figure went from 90 to 97.
+  - If you chose **A new rule or tool for counting it**: The new scanner counts a student as present by the same test as the roll call, so how it is counted did not change. The story of a new machine is not what moves the figure; the teachers’ hold on it is.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - This case may have brought back *The gym scale*, which was **A change in how it is counted**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the scanner counted a pupil present from the moment their card crossed the school entrance, and not from 9:00 in the room, the counting would have changed, and the case would be **A change in how it is counted**.
+- What would make it a different name: If the scanner counted a student present from the moment their card crossed the school entrance, and not from 9:00 in the room, the counting would have changed, and the case would be **A change in how it is counted**.
 - Taught on: “Pushing up the figure instead of the thing it stands for” (one tap opens the card).
 
 **Drill item 41 of 48**
@@ -2023,7 +2023,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 28. What to carry away
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 30*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2059,7 +2059,7 @@ What besides the real thing could move this figure?
 
 ### 29. Where would you meet this?
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 30*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2081,7 +2081,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 30. A plan, if you want one
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 30*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 30*
 
 [reviewers only: card kind `plan`, id `plan`]
 
@@ -2126,7 +2126,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 2 of 12**
 
-> A car dealer pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order. Cars 'sold' in that week rose from 60 to 95. Of the 95 signed orders, 35 were cancelled the following month, where almost none used to be. Cars delivered in that week stayed at 60.
+> A car dealer pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order. Cars 'sold' in that week rose from 60 to 95. Of the 95 signed orders, 35 were canceled the following month, where almost none used to be. Cars delivered in that week stayed at 60.
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What besides the real thing could move this figure? → Name it.
 
@@ -2135,7 +2135,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Gaming the target**.” What besides the real thing could move this figure? **People working on the figure itself.** The salespeople are paid when the order is signed: “pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order”. Getting a signature on an order that will not last raises the figure with no more cars sold.
   - Why not **A change in how it is counted**: A sale is counted at the same point in both years, when the customer signs. What changed is what the salespeople do to get signatures.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **What the number counts.** The count of cars sold can rise with no more cars leaving: “pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order”. It rose by 35 (from 60 to 95), and 35 of the orders were cancelled, so deliveries stayed at 60.
+  - Which part of the claim goes wrong first? **What the number counts.** The count of cars sold can rise with no more cars leaving: “pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order”. It rose by 35 (from 60 to 95), and 35 of the orders were canceled, so deliveries stayed at 60.
   - If you chose **A new rule or tool for counting it**: A sale is counted at the same point in both years, when the customer signs. What changed is what the salespeople do to get signatures.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a figure moved with the real thing standing still, and a new system may be part of the story. In **Gaming the target** the people who make the figure are judged on it and could raise it by what they do. In **A change in how it is counted** the definition or the tool is what changed, and nobody has to gain from the figure. Did anything about what counts or what measures change at a date? Or did the people who make the figure gain from a higher one, with a way to raise it?
@@ -2315,17 +2315,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 12 of 12**
 
-> A school nurse reports: 'Pupils found needing glasses tripled from 30 to 90. Eyesight is getting worse.' Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils. A pupil is called as needing glasses by the same chart. That is 10 found in every 100 tested, in both years.
+> A school nurse reports: 'Students found needing glasses tripled from 30 to 90. Eyesight is getting worse.' Last year the nurse visited one day a week and tested the 300 students who were in school on that day. This year she visits three days a week and has tested 900 students. A student is called as needing glasses by the same chart. That is 10 found in every 100 tested, in both years.
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What besides the real thing could move this figure? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Detection bias**.” What besides the real thing could move this figure? **More looking for it.** More tests were done with the same chart: “Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils”. The share found among those tested stayed at 10 in 100.
-  - Why not **A change in how it is counted**: The chart and the standard for needing glasses are the same. What changed is how many pupils were tested.
+- If you are right: “Right: **Detection bias**.” What besides the real thing could move this figure? **More looking for it.** More tests were done with the same chart: “Last year the nurse visited one day a week and tested the 300 students who were in school on that day. This year she visits three days a week and has tested 900 students”. The share found among those tested stayed at 10 in 100.
+  - Why not **A change in how it is counted**: The chart and the standard for needing glasses are the same. What changed is how many students were tested.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **What the number counts.** The count of pupils found can rise with no worse eyesight: “Last year the nurse visited one day a week and tested the 300 pupils who were in school on that day. This year she visits three days a week and has tested 900 pupils”. 10 in every 100 of 300 is 30; 10 in every 100 of 900 is 90.
-  - If you chose **A new rule or tool for counting it**: The chart and the standard for needing glasses are the same. What changed is how many pupils were tested.
+  - Which part of the claim goes wrong first? **What the number counts.** The count of students found can rise with no worse eyesight: “Last year the nurse visited one day a week and tested the 300 students who were in school on that day. This year she visits three days a week and has tested 900 students”. 10 in every 100 of 300 is 30; 10 in every 100 of 900 is 90.
+  - If you chose **A new rule or tool for counting it**: The chart and the standard for needing glasses are the same. What changed is how many students were tested.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A change in how it is counted**, the look-alike card’s lines follow: In both, a count of what was found rose, and the people or things looked at may be the same ones. In **A change in how it is counted** what counts as a find was decided by a different definition or tool than before. In **Detection bias** the definition and the tool are what they were, and more was looked at, or it was looked at more often. Is what counts as a find decided by a different definition or tool than before, or by the same one used on more people or more often?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”

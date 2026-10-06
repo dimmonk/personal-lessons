@@ -1,6 +1,6 @@
 # Learner view: Basic Math, Unit Five: How many ways something can turn out, or how likely it is
 
-*Five kinds of problem about counting and chance, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
+*Five kinds of problem about counting and chance, and a procedure worked out step by step for each.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,13 +17,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Five kinds of problem about counting and chance, and a procedure for each
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 54*
 
 [reviewers only: card kind `orient`, id `orient-chance`]
 
 After this unit you can take a problem that asks how many different ways something can turn out, or how likely it is, such as how many different phone cases a shop can offer, in how many ways medals can be given to runners, how many teams can be picked from a list of volunteers, how likely it is that it rains on at least one of five days, or whether a positive test result can be trusted; say which of five kinds it is; and then solve it with the procedure for that kind. You will see every number worked out, you will be told why each step is done, and you will work problems yourself.
 
-Picture the committee of a village fete, with five questions to settle in one afternoon, all of them about counting or about chance. “The phone stall sells cases in 4 colours and 3 styles: how many different cases is that?” “Eight children run the final race, and medals go to the first three: in how many different ways can the medals be given out?” “The quiz team has 4 places and 9 people have asked to be on it: how many different teams could we pick?” “Each of the three outdoor stalls has a 20% chance of being rained off: how likely is it that at least one of them is?” And the first-aid tent asks: “A quick health test has come back positive: how likely is it that the person really has the illness?”
+Picture the committee of a town fair, with five questions to settle in one afternoon, all of them about counting or about chance. “The phone stall sells cases in 4 colors and 3 styles: how many different cases is that?” “Eight children run the final race, and medals go to the first three: in how many different ways can the medals be given out?” “The quiz team has 4 places and 9 people have asked to be on it: how many different teams could we pick?” “Each of the three outdoor stalls has a 20% chance of being rained off: how likely is it that at least one of them is?” And the first-aid tent asks: “A quick health test has come back positive: how likely is it that the person really has the illness?”
 
 The first question, which Unit One taught, gives the same answer to all five: **“How many ways something can turn out, or how likely it is”**. But they are five different questions, each with its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. Take 9 things and 4 picks. Depending on how the picks are made, the count of different results can be 6,561, or 3,024, or 126. So in this unit the order is always the same: first work out what is being counted, or what chance is wanted, and only then solve it.
 
@@ -71,11 +71,11 @@ The unit has six parts, and you can stop after any of them.
 5. Trusting a test result
 6. The question that tells them apart, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Separate choices, each from its own list
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 54*
 
 [reviewers only: card kind `meet`, id `meet-multprin`]
 
@@ -83,20 +83,20 @@ The first kind of problem is the simplest counting there is: several choices hav
 
 *The phone cases*
 
-> A phone shop sells cases in 4 colours (black, red, blue, green) and 3 styles (plain, ridged, clear). ⟦A customer picks one colour and one style⟧. How many different cases can the shop sell?
+> A phone shop sells cases in 4 colors (black, red, blue, green) and 3 styles (plain, ridged, clear). ⟦A customer picks one color and one style⟧. How many different cases can the shop sell?
 
 Stripped of its story, the case is this:
 
-- There are two separate choices to make: a colour, and a style.
-- Each choice has a list of its own: 4 colours and 3 styles. Picking a colour uses up none of the styles, and picking a style uses up none of the colours.
+- There are two separate choices to make: a color, and a style.
+- Each choice has a list of its own: 4 colors and 3 styles. Picking a color uses up none of the styles, and picking a style uses up none of the colors.
 - The question asks how many different cases there can be, a count of complete results.
 - Nothing is asked about how likely any case is, and nothing changes as time passes.
 
-What you are shown is a count of results that are built by making more than one choice. A result here is one whole case, such as “red, ridged”. To see how many there are, write them out. For black there are 3 cases: black plain, black ridged and black clear. Red goes with the same 3 styles, which gives 3 more cases, and blue and green give 3 each. Four colours with 3 cases each is 4 × 3 = 12 different cases.
+What you are shown is a count of results that are built by making more than one choice. A result here is one whole case, such as “red, ridged”. To see how many there are, write them out. For black there are 3 cases: black plain, black ridged and black clear. Red goes with the same 3 styles, which gives 3 more cases, and blue and green give 3 each. Four colors with 3 cases each is 4 × 3 = 12 different cases.
 
-That is the whole idea, and it is why this kind is multiplication and not addition. Every colour can be put with every style, so each of the 4 colours is repeated 3 times, once for each style. The count of results is the count of the first list multiplied by the count of the second. A third choice, such as a strap or no strap, would double the 12, because each of the 12 cases would be offered both ways: 12 × 2 = 24.
+That is the whole idea, and it is why this kind is multiplication and not addition. Every color can be put with every style, so each of the 4 colors is repeated 3 times, once for each style. The count of results is the count of the first list multiplied by the count of the second. A third choice, such as a strap or no strap, would double the 12, because each of the 12 cases would be offered both ways: 12 × 2 = 24.
 
-Notice what makes this kind. The lists do not change. Whatever colour was chosen, the list of styles is still plain, ridged and clear. Each choice is made from its own full list, and nothing picked for one choice changes another list.
+Notice what makes this kind. The lists do not change. Whatever color was chosen, the list of styles is still plain, ridged and clear. Each choice is made from its own full list, and nothing picked for one choice changes another list.
 
 And notice what decides the kind. It is not that the problem has two numbers, 4 and 3, which could be multiplied. Two numbers could turn up in many kinds of problem. It is that every choice has a full list of its own, and that the question asks for a count of the complete results.
 
@@ -112,40 +112,40 @@ You may also hear this called “the multiplication principle” or “the count
 
 ### 3. Multiplying the choices: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 54*
 
 [reviewers only: card kind `again`, id `again-multprin`]
 
-The phone cases gave you what to point to: several separate choices, each made from its own full list, and the question how many different results there are. Here is a second problem with a different story, a traveller booking a train ticket.
+The phone cases gave you what to point to: several separate choices, each made from its own full list, and the question how many different results there are. Here is a second problem with a different story, a traveler booking a train ticket.
 
-The first case again, in one line. *The phone cases*: “A customer picks one colour and one style”
+The first case again, in one line. *The phone cases*: “A customer picks one color and one style”
 
 The second case.
 
 *The train tickets*
 
-> A traveller books a train ticket. She picks one of 6 departure times and one of 3 classes of seat. How many different tickets can she book?
-**You are asked:** In *The phone cases*, these words show it: “A customer picks one colour and one style”. Which words show the same thing in this case? Tap them.
+> A traveler books a train ticket. She picks one of 6 departure times and one of 3 classes of seat. How many different tickets can she book?
+**You are asked:** In *The phone cases*, these words show it: “A customer picks one color and one style”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “A traveller books a train ticket.”
+1. “A traveler books a train ticket.”
 2. “She picks one of 6 departure times and one of 3 classes of seat.”
 3. “How many different tickets can she book?”
 
 **Shown as soon as you tap.** The words are “She picks one of 6 departure times and one of 3 classes of seat.”.
-- If you tapped “A traveller books a train ticket.”: That is the story, and it says what is being booked. It does not say what the choices are.
+- If you tapped “A traveler books a train ticket.”: That is the story, and it says what is being booked. It does not say what the choices are.
 - If you tapped “How many different tickets can she book?”: That is the question, a count of results. The words that show how the choices are made come in the sentence before it.
 
 **What the two share**
 
-Both problems have two separate choices, a colour and a style, and a departure time and a class of seat. Each choice is made from a list of its own, and picking from one list uses up nothing on the other. Both ask how many different results there are: how many different cases, how many different tickets.
+Both problems have two separate choices, a color and a style, and a departure time and a class of seat. Each choice is made from a list of its own, and picking from one list uses up nothing on the other. Both ask how many different results there are: how many different cases, how many different tickets.
 
 That is all you point to, and it is why one name covers a phone shop and a railway. The stories differ. What the choices are like, and what is asked, is the same.
 
 
 ### 4. Story and structure, in problems about counting and chance
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 54*
 
 [reviewers only: card kind `lens`, id `lens-chance`]
 
@@ -163,7 +163,7 @@ Three things change on purpose from card to card: the words of the question (“
 
 ### 5. Multiplying the choices: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-multprin`]
 
@@ -171,10 +171,10 @@ You know what to point to for **Multiplying the choices**. This card fills in th
 
 **What it is usually like**
 
-- Two or more separate choices, each made from its own list: a size and a colour, a starter and a main course, each wheel of a lock.
+- Two or more separate choices, each made from its own list: a size and a color, a starter and a main course, each wheel of a lock.
 - Picking one thing takes nothing off another list, and the same thing can be on more than one list, as the digits 0 to 9 are on every wheel of a lock.
 - The question asks how many different results there are, and a result is one complete set of choices.
-- The working is the sizes of the lists multiplied together: 4 × 3 for colours and styles, and 10 × 10 × 10 × 10 for the four digits of a card code.
+- The working is the sizes of the lists multiplied together: 4 × 3 for colors and styles, and 10 × 10 × 10 × 10 for the four digits of a card code.
 
 **What it is not**
 
@@ -186,7 +186,7 @@ And one group is not enough. If the problem takes several things out of one grou
 
 "How many different outfits can I make?" "Pick one of each." "How many possible codes are there?" "How many different meals is that, with a choice of each course?"
 
-In your own life you meet this when you choose a meal with a starter and a main course, when you order a phone or a car by size and colour, when you work out how many codes a short code allows, and whenever a form asks you to pick one thing from each of several lists.
+In your own life you meet this when you choose a meal with a starter and a main course, when you order a phone or a car by size and color, when you work out how many codes a short code allows, and whenever a form asks you to pick one thing from each of several lists.
 
 **The question to ask when you spot it**
 
@@ -194,7 +194,7 @@ In your own life you meet this when you choose a meal with a starter and a main 
 
 ### 6. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 54*
 
 [reviewers only: card kind `check`, id `check-multprin`]
 
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 ### 7. Worked: how many different sandwiches?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 54*
 
 [reviewers only: card kind `solved`, id `solved-multprin-1`]
 
@@ -262,7 +262,7 @@ The shop can make 30 different sandwiches, each made of one bread, one filling a
 
 ### 8. Worked again: how many different card codes?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 54*
 
 [reviewers only: card kind `solved`, id `solved-multprin-2`]
 
@@ -307,7 +307,7 @@ There are 10,000 different codes, from 0000 to 9999.
 
 ### 9. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 54*
 
 [reviewers only: card kind `check`, id `check-multprin-last`]
 
@@ -338,7 +338,7 @@ There are 10,000 different codes, from 0000 to 9999.
 
 ### 10. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 54*
 
 [reviewers only: card kind `check`, id `check-multprin-whole`]
 
@@ -370,7 +370,7 @@ There are 10,000 different codes, from 0000 to 9999.
 
 ### 11. Picking in order from one group
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 54*
 
 [reviewers only: card kind `meet`, id `meet-perm`]
 
@@ -393,7 +393,7 @@ So the count is a product again, because each pick has some number of choices wh
 
 The order counts. Ana with gold and Ben with silver is a different result from Ben with gold and Ana with silver, because the medals are different. Both are among the 12. That is the second thing that decides this kind: a different order is a different result.
 
-Compare the first kind. There, picking a colour used up none of the styles, so the second list was as long as the first. Here, picking a gold winner uses up a runner, so the second list is one shorter. A list that gets shorter with each pick, and an order that counts, are what mark this kind.
+Compare the first kind. There, picking a color used up none of the styles, so the second list was as long as the first. Here, picking a gold winner uses up a runner, so the second list is one shorter. A list that gets shorter with each pick, and an order that counts, are what mark this kind.
 
 **What you must be able to point to.** One group to pick from, picks that each leave one fewer to choose from, a different order counting as a different result, and the question how many different results there are. This comes from one case so far. The next card tests it on a second case.
 
@@ -407,7 +407,7 @@ You may also hear this called “arrangements”. That means the same thing here
 
 ### 12. Permutations: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 54*
 
 [reviewers only: card kind `again`, id `again-perm`]
 
@@ -440,7 +440,7 @@ That is all you point to: one group, picks that each use someone up, and an orde
 
 ### 13. Permutations: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-perm`]
 
@@ -472,7 +472,7 @@ In your own life you meet this when you give out places or prizes, when you fix 
 
 ### 14. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 54*
 
 [reviewers only: card kind `check`, id `check-perm`]
 
@@ -495,7 +495,7 @@ The pieces you can tap:
 
 ### 15. Worked: who can fill three jobs in a club?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 54*
 
 [reviewers only: card kind `solved`, id `solved-perm-1`]
 
@@ -540,7 +540,7 @@ The club can fill the three jobs in 1,320 different ways.
 
 ### 16. Worked again: six books in a row
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 54*
 
 [reviewers only: card kind `solved`, id `solved-perm-2`]
 
@@ -585,7 +585,7 @@ The six books can stand in a row in 720 different orders.
 
 ### 17. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 54*
 
 [reviewers only: card kind `check`, id `check-perm-last`]
 
@@ -616,7 +616,7 @@ The six books can stand in a row in 720 different orders.
 
 ### 18. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 54*
 
 [reviewers only: card kind `check`, id `check-perm-whole`]
 
@@ -642,7 +642,7 @@ The six books can stand in a row in 720 different orders.
 
 ### 19. Multiplying the choices or Permutations: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-multprin-perm`]
 
@@ -691,7 +691,7 @@ After one choice has been made, is the next one made from a list of the same len
 
 ### 20. Picking a group, in any order
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 54*
 
 [reviewers only: card kind `meet`, id `meet-comb`]
 
@@ -728,7 +728,7 @@ You may also hear this called “selections” or “n choose r”. Those words 
 
 ### 21. Combinations: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 54*
 
 [reviewers only: card kind `again`, id `again-comb`]
 
@@ -761,7 +761,7 @@ That is all you point to: one group, picks that each use someone up, and an orde
 
 ### 22. Combinations: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-comb`]
 
@@ -769,7 +769,7 @@ You know what to point to for **Combinations**. This card fills in the rest of t
 
 **What it is usually like**
 
-- One group of different things or people: volunteers, flavours, books, shares, cards.
+- One group of different things or people: volunteers, flavors, books, shares, cards.
 - A smaller group of a stated size is picked, and everyone in it has the same part: a team, a committee, a box, a hand of cards.
 - Each pick uses up what it takes, so the picks come from 9, then 8, then 7, then 6, as in the second kind.
 - The question asks how many different groups there are, and the same members in any order are one group.
@@ -793,7 +793,7 @@ In your own life you meet this when you pick a team, a committee or a jury from 
 
 ### 23. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 54*
 
 [reviewers only: card kind `check`, id `check-comb`]
 
@@ -816,7 +816,7 @@ The pieces you can tap:
 
 ### 24. Worked: how many different quiz teams?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 54*
 
 [reviewers only: card kind `solved`, id `solved-comb-1`]
 
@@ -863,9 +863,9 @@ So the table has 24 rows for every team, and 3,024 rows in all. The number of te
 The quiz night can pick 126 different teams of 4 from the 9 people.
 
 
-### 25. Worked again: three flavours to taste
+### 25. Worked again: three flavors to taste
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 54*
 
 [reviewers only: card kind `solved`, id `solved-comb-2`]
 
@@ -873,48 +873,48 @@ The same procedure in a different story, with a smaller group, so that you can s
 
 **The problem**
 
-> A jam stand sells 7 flavours and lets a customer taste any 3 of them, in no particular order. How many different sets of 3 flavours can a customer taste?
+> A jam stand sells 7 flavors and lets a customer taste any 3 of them, in no particular order. How many different sets of 3 flavors can a customer taste?
 
 **The working, step by step**
 
-- Count the group and the picks: Group: 7 flavours. Picked: 3
+- Count the group and the picks: Group: 7 flavors. Picked: 3
 
-Seven flavours, and the customer tastes any 3, in no particular order. Raspberry, plum and apricot is the same tasting as apricot, raspberry and plum.
+Seven flavors, and the customer tastes any 3, in no particular order. Raspberry, plum and apricot is the same tasting as apricot, raspberry and plum.
 
 - Count the picks as if the order mattered: 7 × 6 × 5 = 210
 
-The same first count as before: 7 for the first flavour, 6 for the second and 5 for the third, multiplied. It lists every tasting once for each order its three flavours could be named in.
+The same first count as before: 7 for the first flavor, 6 for the second and 5 for the third, multiplied. It lists every tasting once for each order its three flavors could be named in.
 
-- Count the orders one chosen group can be put in: 3 flavours can be put in order in 3 × 2 × 1 = 6 ways
+- Count the orders one chosen group can be put in: 3 flavors can be put in order in 3 × 2 × 1 = 6 ways
 
 **You are asked:** This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.
 
-- Any one set of 3 flavours can be named in 3 × 2 × 1 = 6 different orders, so each tasting appears 6 times in the count of 210.
+- Any one set of 3 flavors can be named in 3 × 2 × 1 = 6 different orders, so each tasting appears 6 times in the count of 210.
 - Raspberry, plum and apricot is one of the tastings.
-- There are 7 flavours on sale.
+- There are 7 flavors on sale.
 
 **Shown as soon as you answer**
 
-- The one that explains it: Any one set of 3 flavours can be named in 3 × 2 × 1 = 6 different orders, so each tasting appears 6 times in the count of 210.
+- The one that explains it: Any one set of 3 flavors can be named in 3 × 2 × 1 = 6 different orders, so each tasting appears 6 times in the count of 210.
   - If you chose “Raspberry, plum and apricot is one of the tastings.”: That is true, and it is a good example of one tasting, but it does not say how many times a tasting appears in the count.
-  - If you chose “There are 7 flavours on sale.”: That is true, but it is the size of the group, and it does not say how many orders three flavours can be put in.
+  - If you chose “There are 7 flavors on sale.”: That is true, but it is the size of the group, and it does not say how many orders three flavors can be put in.
 
-Write out the 6 orders of raspberry (R), plum (P) and apricot (A): RPA, RAP, PRA, PAR, ARP, APR. That is 6 lists, and they are all the same tasting. The first flavour can be any of the 3, the second either of the 2 left, and the last is the 1 left: 3 × 2 × 1 = 6.
+Write out the 6 orders of raspberry (R), plum (P) and apricot (A): RPA, RAP, PRA, PAR, ARP, APR. That is 6 lists, and they are all the same tasting. The first flavor can be any of the 3, the second either of the 2 left, and the last is the 1 left: 3 × 2 × 1 = 6.
 
-The same is true of every other set of 3 flavours, so the count of 210 holds each tasting exactly 6 times. That is the number to divide by next.
+The same is true of every other set of 3 flavors, so the count of 210 holds each tasting exactly 6 times. That is the number to divide by next.
 
-- Divide the first count by the second: 210 ÷ 6 = 35. That is 35 sets of flavours
+- Divide the first count by the second: 210 ÷ 6 = 35. That is 35 sets of flavors
 
 Each tasting is in the count 6 times, so the number of tastings is 210 ÷ 6 = 35. A check: 35 × 6 = 210.
 
 **The result**
 
-A customer can taste 35 different sets of 3 flavours.
+A customer can taste 35 different sets of 3 flavors.
 
 
 ### 26. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 54*
 
 [reviewers only: card kind `check`, id `check-comb-last`]
 
@@ -947,7 +947,7 @@ A customer can taste 35 different sets of 3 flavours.
 
 ### 27. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 54*
 
 [reviewers only: card kind `check`, id `check-comb-whole`]
 
@@ -974,7 +974,7 @@ A customer can taste 35 different sets of 3 flavours.
 
 ### 28. Permutations or Combinations: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-perm-comb`]
 
@@ -1017,21 +1017,21 @@ Does the same group of things, picked in a different order, count as a different
 
 ### 29. Multiplying the choices or Combinations: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-multprin-comb`]
 
-The first and third kinds can both be about a stall with 6 flavours. This card puts them side by side, with the same stall and the same 6 flavours.
+The first and third kinds can both be about a stall with 6 flavors. This card puts them side by side, with the same stall and the same 6 flavors.
 
 **Case A**
 
-> An ice-cream stall has 6 flavours and 3 kinds of cone. A customer picks one flavour and one cone. How many different ice creams can the stall sell?
+> An ice-cream stall has 6 flavors and 3 kinds of cone. A customer picks one flavor and one cone. How many different ice creams can the stall sell?
 
 **Case B**
 
-> An ice-cream stall has 6 flavours, and a customer picks 2 different flavours for a tub, in either order. How many different tubs can the stall sell?
+> An ice-cream stall has 6 flavors, and a customer picks 2 different flavors for a tub, in either order. How many different tubs can the stall sell?
 
-**What to compare.** Both problems are about the same stall and the same 6 flavours. Compare one thing: does the customer pick one thing from each of two separate lists, or several things from one list?
+**What to compare.** Both problems are about the same stall and the same 6 flavors. Compare one thing: does the customer pick one thing from each of two separate lists, or several things from one list?
 
 **You are asked:** Which case gives the answer **“The ways to pick a group, when the order does not count”**? (Case A / Case B)
 
@@ -1039,11 +1039,11 @@ The first and third kinds can both be about a stall with 6 flavours. This card p
 
 **Why this one and not the other**
 
-In Case A the customer picks one flavour and one cone. There are two separate lists, 6 flavours and 3 cones, and picking a flavour uses up no cone. Each choice has a list of its own: the answer is **“The ways to make several choices, each from its own list”**, and the count is 6 × 3 = 18.
+In Case A the customer picks one flavor and one cone. There are two separate lists, 6 flavors and 3 cones, and picking a flavor uses up no cone. Each choice has a list of its own: the answer is **“The ways to make several choices, each from its own list”**, and the count is 6 × 3 = 18.
 
-In Case B the customer picks 2 different flavours, both from the one list of 6, in either order. The second flavour comes from the 5 that are left, and the same two flavours in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the answer is **“The ways to pick a group, when the order does not count”**. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.
+In Case B the customer picks 2 different flavors, both from the one list of 6, in either order. The second flavor comes from the 5 that are left, and the same two flavors in the other order are the same tub. That is one group with each pick using something up, and with an order that does not count: the answer is **“The ways to pick a group, when the order does not count”**. The count in order is 6 × 5 = 30, and each tub is counted twice, 2 × 1 = 2, so the answer is 30 ÷ 2 = 15.
 
-Both are about 6 flavours, and both multiply. What differs is whether the picks come from separate lists or from one group. Separate lists keep their full length however many picks are made, and one group gets shorter with each pick.
+Both are about 6 flavors, and both multiply. What differs is whether the picks come from separate lists or from one group. Separate lists keep their full length however many picks are made, and one group gets shorter with each pick.
 
 **How to tell them apart**
 
@@ -1060,7 +1060,7 @@ Are there several separate lists with one pick from each, or one list with sever
 
 ### 30. A wrong idea: the name on the lock tells you the kind
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 54*
 
 [reviewers only: card kind `refute`, id `refute-lock`]
 
@@ -1087,7 +1087,7 @@ So the name tells you what people call the lock. It does not tell you what the p
 
 ### 31. At least one of several things happening
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 54*
 
 [reviewers only: card kind `meet`, id `meet-complement`]
 
@@ -1124,38 +1124,38 @@ You may also hear this called “the complement rule”. That means the same thi
 
 ### 32. Counting the opposite: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 54*
 
 [reviewers only: card kind `again`, id `again-complement`]
 
-The coin game gave you what to point to: several separate things, the chance of each, and the question how likely it is that at least one of them happens. Here is a second problem with a different story, the two tyres of a bicycle.
+The coin game gave you what to point to: several separate things, the chance of each, and the question how likely it is that at least one of them happens. Here is a second problem with a different story, the two tires of a bicycle.
 
 The first case again, in one line. *The coin game*: “at least once in 3 flips”
 
 The second case.
 
-*The two tyres*
+*The two tires*
 
-> A cyclist’s two tyres each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other. How likely is it that at least one tyre gets a puncture?
+> A cyclist’s two tires each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other. How likely is it that at least one tire gets a puncture?
 **You are asked:** In *The coin game*, these words show it: “at least once in 3 flips”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “A cyclist’s two tyres each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other.”
-2. “How likely is it that at least one tyre gets a puncture?”
+1. “A cyclist’s two tires each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other.”
+2. “How likely is it that at least one tire gets a puncture?”
 
-**Shown as soon as you tap.** The words are “How likely is it that at least one tyre gets a puncture?”.
-- If you tapped “A cyclist’s two tyres each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other.”: That gives the chance for each tyre, and it matters. But you are asked for the words that say what has to be found about the two, and those come in the question.
+**Shown as soon as you tap.** The words are “How likely is it that at least one tire gets a puncture?”.
+- If you tapped “A cyclist’s two tires each have a 10% chance of getting a puncture on a long ride, and a puncture in one does not change the chance for the other.”: That gives the chance for each tire, and it matters. But you are asked for the words that say what has to be found about the two, and those come in the question.
 
 **What the two share**
 
-Both problems give the chance of each of several separate things, three flips and two tyres, and say that one does not change the next. Both ask how likely it is that at least one of them happens: a head on at least one flip, a puncture in at least one tyre. Neither asks for a count of results.
+Both problems give the chance of each of several separate things, three flips and two tires, and say that one does not change the next. Both ask how likely it is that at least one of them happens: a head on at least one flip, a puncture in at least one tire. Neither asks for a count of results.
 
 That is all you point to, and it is why one name covers a coin and a bicycle. The stories differ. What is asked about the separate things is the same.
 
 
 ### 33. Counting the opposite: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 33 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 33 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-complement`]
 
@@ -1187,7 +1187,7 @@ In your own life you meet this when you ask whether something will go wrong at l
 
 ### 34. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 34 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 34 of 54*
 
 [reviewers only: card kind `check`, id `check-complement`]
 
@@ -1210,7 +1210,7 @@ The pieces you can tap:
 
 ### 35. Worked: a bus that is late at least once in a week
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 35 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 35 of 54*
 
 [reviewers only: card kind `solved`, id `solved-complement-1`]
 
@@ -1255,7 +1255,7 @@ The bus is late at least once in a working week about 67 times in 100, a chance 
 
 ### 36. Worked again: frost on at least one field
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 36 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 36 of 54*
 
 [reviewers only: card kind `solved`, id `solved-complement-2`]
 
@@ -1300,7 +1300,7 @@ There is a 46% chance that at least one of the three fields is damaged.
 
 ### 37. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 54*
 
 [reviewers only: card kind `check`, id `check-complement-last`]
 
@@ -1331,7 +1331,7 @@ There is a 46% chance that at least one of the three fields is damaged.
 
 ### 38. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 54*
 
 [reviewers only: card kind `check`, id `check-complement-whole`]
 
@@ -1357,7 +1357,7 @@ There is a 46% chance that at least one of the three fields is damaged.
 
 ### 39. Counting the opposite or Multiplying the choices: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-complement-multprin`]
 
@@ -1400,7 +1400,7 @@ Is the answer wanted a count of results, or the chance that something happens?
 
 ### 40. A wrong idea: after a run, the other result is due
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 54*
 
 [reviewers only: card kind `refute`, id `refute-due`]
 
@@ -1427,7 +1427,7 @@ It can feel as if a long run without red must end soon. It does end sometimes, b
 
 ### 41. How far to trust a test result
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 54*
 
 [reviewers only: card kind `meet`, id `meet-baserate`]
 
@@ -1464,7 +1464,7 @@ You may also hear this called “the base rate fallacy”. That means the same t
 
 ### 42. Base rate: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 54*
 
 [reviewers only: card kind `again`, id `again-baserate`]
 
@@ -1499,7 +1499,7 @@ That is all you point to, and it is why one name covers a clinic and a stadium. 
 
 ### 43. Base rate: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 43 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 43 of 54*
 
 [reviewers only: card kind `portrait`, id `portrait-baserate`]
 
@@ -1531,7 +1531,7 @@ In your own life you meet this with medical tests and screening, with a bank or 
 
 ### 44. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 44 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 44 of 54*
 
 [reviewers only: card kind `check`, id `check-baserate`]
 
@@ -1556,7 +1556,7 @@ The pieces you can tap:
 
 ### 45. Worked: how far to trust a positive test
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 45 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 45 of 54*
 
 [reviewers only: card kind `solved`, id `solved-baserate-1`]
 
@@ -1609,7 +1609,7 @@ A positive test means that the person has the infection about 15 times in 100, a
 
 ### 46. Worked again: how far to trust a bank alert
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 46 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 46 of 54*
 
 [reviewers only: card kind `solved`, id `solved-baserate-2`]
 
@@ -1662,7 +1662,7 @@ About 6 alerts in 100 are for a real fraud, so a flagged payment is a fraud with
 
 ### 47. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 47 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 47 of 54*
 
 [reviewers only: card kind `check`, id `check-baserate-last`]
 
@@ -1697,7 +1697,7 @@ About 6 alerts in 100 are for a real fraud, so a flagged payment is a fraud with
 
 ### 48. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 54*
 
 [reviewers only: card kind `check`, id `check-baserate-whole`]
 
@@ -1725,7 +1725,7 @@ About 6 alerts in 100 are for a real fraud, so a flagged payment is a fraud with
 
 ### 49. Counting the opposite or Base rate: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 54*
 
 [reviewers only: card kind `lookalike`, id `look-complement-baserate`]
 
@@ -1768,7 +1768,7 @@ Are there several separate things, with a chance for each, that have yet to happ
 
 ### 50. A wrong idea: a 95% accurate test means a 95% chance that I have it
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 54*
 
 [reviewers only: card kind `refute`, id `refute-test`]
 
@@ -1795,7 +1795,7 @@ So when a result comes in, three things decide how far to trust it: how often th
 
 ### 51. The one question that tells the five kinds apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 51 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 51 of 54*
 
 [reviewers only: card kind `question`, id `q-c1`]
 
@@ -1854,7 +1854,7 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 ### 52. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 54*
 
 [reviewers only: card kind `check`, id `check-c1`]
 
@@ -1880,7 +1880,7 @@ No problem in this unit shows two of the answers at once, because each answer as
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: how the picks are made, and what is asked, decide the kind, and nothing else in the story does.
 
@@ -1888,12 +1888,12 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 1 of 46**
 
-> A pupil has 6 shirts, 4 pairs of trousers and 3 jumpers, and wears one of each every school day. How many different outfits can the pupil put on?
+> A student has 6 shirts, 4 pairs of pants and 3 sweaters, and wears one of each every school day. How many different outfits can the student put on?
 
 **The working, step by step** (all but the last step)
 
-- Name each choice that has to be made: shirt; trousers; jumper
-- Count the full list for each choice: shirt: 6; trousers: 4; jumper: 3
+- Name each choice that has to be made: shirt; pants; sweater
+- Count the full list for each choice: shirt: 6; pants: 4; sweater: 3
 
 **You are asked:** The working is shown up to the last step. The last step is yours: Multiply the counts. Choose what the problem comes to.
 
@@ -1905,8 +1905,8 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 - The answer: **72 outfits**.
 - The working, step by step:
-  - Name each choice that has to be made: shirt; trousers; jumper
-  - Count the full list for each choice: shirt: 6; trousers: 4; jumper: 3
+  - Name each choice that has to be made: shirt; pants; sweater
+  - Count the full list for each choice: shirt: 6; pants: 4; sweater: 3
   - Multiply the counts: 6 × 4 × 3 = 72 (6 × 4 = 24, then 24 × 3 = 72). That is 72 outfits
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 13 outfits: You chose **13 outfits**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
@@ -1998,7 +1998,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 5 of 46**
 
-> A holiday company offers 6 day trips, and a guest books any 4 of them to go on during the week, in whatever order the guest likes. How many different sets of 4 trips can a guest book?
+> A tour company offers 6 day trips, and a guest books any 4 of them to go on during the week, in whatever order the guest likes. How many different sets of 4 trips can a guest book?
 
 **The working, step by step** (all but the last step)
 
@@ -2027,12 +2027,12 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 6 of 46**
 
-> A tiler sells floor tiles in 7 colours and 5 patterns, and a customer picks one colour and one pattern for a whole kitchen. How many different tile designs can the customer pick?
+> A tiler sells floor tiles in 7 colors and 5 patterns, and a customer picks one color and one pattern for a whole kitchen. How many different tile designs can the customer pick?
 
 **The working, step by step** (all but the last step)
 
-- Name each choice that has to be made: colour; pattern
-- Count the full list for each choice: colour: 7; pattern: 5
+- Name each choice that has to be made: color; pattern
+- Count the full list for each choice: color: 7; pattern: 5
 
 **You are asked:** The working is shown up to the last step. The last step is yours: Multiply the counts. Choose what the problem comes to.
 
@@ -2044,8 +2044,8 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 - The answer: **35 designs**.
 - The working, step by step:
-  - Name each choice that has to be made: colour; pattern
-  - Count the full list for each choice: colour: 7; pattern: 5
+  - Name each choice that has to be made: color; pattern
+  - Count the full list for each choice: color: 7; pattern: 5
   - Multiply the counts: 7 × 5 = 35. That is 35 designs
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 12 designs: You chose **12 designs**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
@@ -2328,7 +2328,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 18 of 46**
 
-> 1 bag in 250 at a border post holds banned food. A sniffer dog sits beside 85% of the bags that hold it, and also beside 5% of the bags that do not. The dog sits beside a bag. How likely is it that the bag holds banned food?
+> 1 bag in 250 at a border checkpoint holds banned food. A sniffer dog sits beside 85% of the bags that hold it, and also beside 5% of the bags that do not. The dog sits beside a bag. How likely is it that the bag holds banned food?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -2424,7 +2424,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?
+> A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2436,7 +2436,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many meters, and a new amount to scale it to: “sells 6 meters of chain for $15” and “How much will it cost her?”. The price is the number it leaves out.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2444,7 +2444,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A savings jar holds €120. Tomas adds €15 to it every month. How many months until the jar holds €300?
+> A savings jar holds $120. Tomas adds $15 to it every month. How many months until the jar holds $300?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2456,7 +2456,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds $15 to it every month” and “How many months until the jar holds $300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2504,7 +2504,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?
+> A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2516,7 +2516,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many meters, and a new amount to scale it to: “sells 6 meters of chain for $15” and “How much will it cost her?”. The price is the number it leaves out.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -3076,7 +3076,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 53. What to carry away
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 54*
 
 [reviewers only: card kind `recap`, id `recap-chance`]
 
@@ -3117,7 +3117,7 @@ What does the problem ask you to count, or find the chance of?
 
 ### 54. Where would you meet this?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 54*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 54*
 
 [reviewers only: card kind `transfer`, id `transfer-chance`]
 
@@ -3149,7 +3149,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 15**
 
-> A bike shop builds a bike from one of 5 frames, one of 3 saddles and one of 6 colours. How many different bikes can a customer order?
+> A bike shop builds a bike from one of 5 frames, one of 3 saddles and one of 6 colors. How many different bikes can a customer order?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem ask you to count, or find the chance of? → What kind of problem is it?
 
@@ -3163,20 +3163,20 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 - The answer: **90 bikes**, and the kind of problem is **Multiplying the choices**.
 - The working, step by step:
-  - Name each choice that has to be made: frame; saddle; colour
-  - Count the full list for each choice: frame: 5; saddle: 3; colour: 6
+  - Name each choice that has to be made: frame; saddle; color
+  - Count the full list for each choice: frame: 5; saddle: 3; color: 6
   - Multiply the counts: 5 × 3 × 6 = 90 (5 × 3 = 15, then 15 × 6 = 90). That is 90 bikes
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 14 bikes: You chose **14 bikes**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
 - If you chose 15 bikes: You chose **15 bikes**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
 - What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different bikes can a customer order?” ask how many different bikes can be ordered, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 5 frames, one of 3 saddles and one of 6 colours” give three separate choices, a frame, a saddle and a colour, each from a list of its own, and ask how many different bikes there are, so the answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 5 frames, one of 3 saddles and one of 6 colors” give three separate choices, a frame, a saddle and a color, each from a list of its own, and ask how many different bikes there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
 **Return case 2 of 15**
 
-> A game site makes a username from one of 4 colours, one of 6 animals and a number from 00 to 99. How many different usernames can it make?
+> A game site makes a username from one of 4 colors, one of 6 animals and a number from 00 to 99. How many different usernames can it make?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem ask you to count, or find the chance of? → What kind of problem is it?
 
@@ -3190,14 +3190,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 - The answer: **2,400 usernames**, and the kind of problem is **Multiplying the choices**.
 - The working, step by step:
-  - Name each choice that has to be made: colour; animal; number
-  - Count the full list for each choice: colour: 4; animal: 6; number: 100
+  - Name each choice that has to be made: color; animal; number
+  - Count the full list for each choice: color: 4; animal: 6; number: 100
   - Multiply the counts: 4 × 6 × 100 = 2,400 (4 × 6 = 24, then 24 × 100 = 2,400). That is 2,400 usernames
   Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.
 - If you chose 110 usernames: You chose **110 usernames**. That is the answer you get when you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.
 - If you chose 24 usernames: You chose **24 usernames**. That is the answer you get when you leave the last choice out of the product, so every result is missing one part.
 - What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different usernames can it make?” ask how many different usernames can be made, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 4 colours, one of 6 animals and a number from 00 to 99” give three separate choices, a colour, an animal and a number from a list of 100, and ask how many different usernames there are, so the answer is **“The ways to make several choices, each from its own list”**.
+- What does the problem ask you to count, or find the chance of? **The ways to make several choices, each from its own list.** The words “one of 4 colors, one of 6 animals and a number from 00 to 99” give three separate choices, a color, an animal and a number from a list of 100, and ask how many different usernames there are, so the answer is **“The ways to make several choices, each from its own list”**.
 - Why not **Permutations**: Picking from one group, so that each pick takes something off the list for the next, would be **Permutations**. Here every choice has a full list of its own, and nothing picked on one list changes another.
 - Taught on: “Worked: how many different sandwiches?” (one tap opens the card).
 
@@ -3339,7 +3339,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 8 of 15**
 
-> A teacher takes 4 of her 10 pupils on a trip to a museum. It makes no difference in which order the four are picked. How many different groups of 4 can she take?
+> A teacher takes 4 of her 10 students on a trip to a museum. It makes no difference in which order the four are picked. How many different groups of 4 can she take?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem ask you to count, or find the chance of? → What kind of problem is it?
 
@@ -3353,15 +3353,15 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 - The answer: **210 groups**, and the kind of problem is **Combinations**.
 - The working, step by step:
-  - Count the group and the picks: Group: 10 pupils. Picked: 4
+  - Count the group and the picks: Group: 10 students. Picked: 4
   - Count the picks as if the order mattered: 10 × 9 × 8 × 7 = 5,040
-  - Count the orders one chosen group can be put in: 4 pupils can be put in order in 4 × 3 × 2 × 1 = 24 ways
+  - Count the orders one chosen group can be put in: 4 students can be put in order in 4 × 3 × 2 × 1 = 24 ways
   - Divide the first count by the second: 5,040 ÷ 24 = 210. That is 210 groups
-  Counting the picks in order counts every group once for every order its 4 pupils can be put in, and that is 4 × 3 × 2 × 1 = 24 orders. So the count in order is 24 times the number of different groups, and dividing by 24 leaves each group counted once.
+  Counting the picks in order counts every group once for every order its 4 students can be put in, and that is 4 × 3 × 2 × 1 = 24 orders. So the count in order is 24 times the number of different groups, and dividing by 24 leaves each group counted once.
 - If you chose 5,040 groups: You chose **5,040 groups**. That is the answer you get when you stop after counting the picks in order, so each group is counted once for every order it can be put in.
 - If you chose 1,260 groups: You chose **1,260 groups**. That is the answer you get when you divide by the number of picks, 4, instead of by the number of orders one group can be put in, 24.
 - What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How many different groups of 4 can she take?” ask how many different groups can be taken, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “It makes no difference in which order the four are picked” show 4 pupils taken from 10 with no difference made by the order, so that the same 4 pupils in any order are one group, so the answer is **“The ways to pick a group, when the order does not count”**.
+- What does the problem ask you to count, or find the chance of? **The ways to pick a group, when the order does not count.** The words “It makes no difference in which order the four are picked” show 4 students taken from 10 with no difference made by the order, so that the same 4 students in any order are one group, so the answer is **“The ways to pick a group, when the order does not count”**.
 - Why not **Permutations**: If a different order counted as a different result, it would be **Permutations**. Here the same things in any order are one result, so the count in order has to be divided down.
 - Taught on: “Worked: how many different quiz teams?” (one tap opens the card).
 
@@ -3395,7 +3395,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 10 of 15**
 
-> A ferry is cancelled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is cancelled at least once in 4 days?
+> A ferry is canceled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is canceled at least once in 4 days?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem ask you to count, or find the chance of? → What kind of problem is it?
 
@@ -3415,8 +3415,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.
 - If you chose 40%: You chose **40%**. That is the answer you get when you add the chances of the separate things, which counts a run where two or more happen more than once, so the sum overstates the chance and, with enough things, passes 100%.
 - If you chose 65.6%: You chose **65.6%**. That is the answer you get when you stop at the chance that none of them happens and never take it away from 1.
-- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the ferry is cancelled at least once in 4 days?” ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
-- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “cancelled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is cancelled at least once in 4 days?” give the chance for each of 4 separate days and ask how likely it is that the ferry is cancelled at least once, so the answer is **“The chance that at least one of several things happens”**.
+- What does the problem ask you to work out? **How many ways something can turn out, or how likely it is.** The words “How likely is it that the ferry is canceled at least once in 4 days?” ask how likely it is that something happens, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question **“How many ways something can turn out, or how likely it is”**.
+- What does the problem ask you to count, or find the chance of? **The chance that at least one of several things happens.** The words “canceled on 10% of days, and one day’s cancellation does not change the chance on another. How likely is it that the ferry is canceled at least once in 4 days?” give the chance for each of 4 separate days and ask how likely it is that the ferry is canceled at least once, so the answer is **“The chance that at least one of several things happens”**.
 - Why not **Multiplying the choices**: The problem asks for a chance, not a count of results. **Multiplying the choices** would be the name if it asked how many different results there are, and it also multiplies separate things, which is why the two look alike.
 - Taught on: “Worked: a bus that is late at least once in a week” (one tap opens the card).
 

@@ -1,6 +1,6 @@
 # Learner view: Statistical Claims, Unit Two: Nothing goes wrong
 
-*Four kinds of claim that hold up, and what each one has earned the right to say.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four kinds of claim that hold up, and what each one has earned the right to say.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Claims that hold up: four kinds, and what each one has earned
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 36*
 
 [reviewers only: card kind `orient`, id `orient-holds`]
 
@@ -62,42 +62,42 @@ The unit has three parts, and you can stop after any of them.
 2. Setting two things side by side, and saying what made the difference
 3. The question, two whole claims, and the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Asking some of them, and the word for it
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 36*
 
 [reviewers only: card kind `term`, id `term-sample`]
 
 The first kind of claim that holds is built on a figure worked out from some of a group, and the word for those few people comes first.
 
-*The council and its 800*
+*The town council and its 800*
 
-> A town council wants to know how many of the town's 40,000 residents walk to work. It cannot ask all 40,000, so it asks 800 of them. Of the 800, 248 say they walk to work, which is 31 in 100. The council announces: 'About 31% of residents walk to work.'
+> A town council wants to know how many of the town's 40,000 residents walk to work. It cannot ask all 40,000, so it asks 800 of them. Of the 800, 248 say they walk to work, which is 31 in 100. The town council announces: 'About 31% of residents walk to work.'
 
-Asking everyone is usually too slow, too costly or impossible. A council cannot stop 40,000 people in the street. So it asks 800 of them and works out the figure from those 800. The 800 are not the whole town. They are a few people who are meant to stand for it.
+Asking everyone is usually too slow, too costly or impossible. A town council cannot stop 40,000 people in the street. So it asks 800 of them and works out the figure from those 800. The 800 are not the whole town. They are a few people who are meant to stand for it.
 
 There are two groups in this story, and they have to be kept apart. One is the group the claim is about: all 40,000 residents. The other is the people actually asked: the 800. The figure of 31 in 100 is worked out from the second group, and the claim speaks about the first. Whether the first can be read from the second is what the rest of this unit is about.
 
 **The word for this.** *Sample*: the people or things actually counted, when they are meant to stand for a bigger group.
 
-Every figure from a *sample* comes with one question: how did these 800 come to be the 800? If the council had asked the first 800 people it met outside the stadium on match day, the figure would still be 31 in 100, and it would mean something else.
+Every figure from a *sample* comes with one question: how did these 800 come to be the 800? If the town council had asked the first 800 people it met outside the stadium on game day, the figure would still be 31 in 100, and it would mean something else.
 
 
 ### 3. Letting a lottery choose
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 36*
 
 [reviewers only: card kind `term`, id `term-atrandom`]
 
 A *sample* can only stand for the whole group if the way it was chosen does not lean. There is one way of choosing that is built not to, and it has a name.
 
-*The council’s lottery*
+*The town council’s lottery*
 
-> The council has a list of all 40,000 addresses in town. To choose the 800, a clerk asks a computer to draw 800 of the 40,000 numbers, like pulling tickets from a drum. Every address has the same chance of being drawn: 800 out of 40,000, which is 1 in 50. Nobody on the staff chooses which houses.
+> The town council has a list of all 40,000 addresses in town. To choose the 800, a clerk asks a computer to draw 800 of the 40,000 numbers, like pulling tickets from a drum. Every address has the same chance of being drawn: 800 out of 40,000, which is 1 in 50. Nobody on the staff chooses which houses.
 
-Compare two ways the council could choose its 800. In the first, a clerk chooses them. She picks the streets she knows, or the houses near the town hall, or the people who are home when she calls. Even if she means no harm, her choice leans toward people like the ones she knows, or who are easy to reach. In the second, a computer draws 800 of the 40,000 addresses, like tickets from a drum, and nobody decides which.
+Compare two ways the town council could choose its 800. In the first, a clerk chooses them. She picks the streets she knows, or the houses near the town hall, or the people who are home when she calls. Even if she means no harm, her choice leans toward people like the ones she knows, or who are easy to reach. In the second, a computer draws 800 of the 40,000 addresses, like tickets from a drum, and nobody decides which.
 
 In the second way, every address has the same chance. The sum: 800 ÷ 40,000 = 0.02, which is 1 in 50. A house on the richest street and a house on the poorest each have a 1 in 50 chance, so the draw cannot favor either. The people it picks tend to be a fair picture of the 40,000, with about as many young and old, walkers and drivers, as there are in town.
 
@@ -110,7 +110,7 @@ Two things to notice. First, *at random* says how the people were picked and not
 
 ### 4. A figure for a group, from a fair picture of it
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 36*
 
 [reviewers only: card kind `meet`, id `meet-sampok`]
 
@@ -147,7 +147,7 @@ You may also hear this called “a representative sample” or “a random sampl
 
 ### 5. A fair count: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 36*
 
 [reviewers only: card kind `again`, id `again-sampok`]
 
@@ -180,7 +180,7 @@ The two stories share nothing else. So this is not about books or about flu shot
 
 ### 6. The story never decides the kind of claim
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 36*
 
 [reviewers only: card kind `lens`, id `lens-holds`]
 
@@ -200,7 +200,7 @@ Two more things change on purpose: how large or surprising the figure is, and wh
 
 ### 7. How far luck can move a figure
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 36*
 
 [reviewers only: card kind `term`, id `term-margin`]
 
@@ -225,7 +225,7 @@ Two things to carry from this. First, the margin covers only the luck of a fair 
 
 ### 8. A fair count: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-sampok`]
 
@@ -263,7 +263,7 @@ In your own life it is a poll, a survey or a company’s figure about its own cu
 
 ### 9. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 36*
 
 [reviewers only: card kind `check`, id `check-sampok`]
 
@@ -286,7 +286,7 @@ The pieces you can tap:
 
 ### 10. A wrong idea: "A thousand people cannot speak for millions"
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 36*
 
 [reviewers only: card kind `refute`, id `refute-thousand`]
 
@@ -307,7 +307,7 @@ So the question to ask of "only a thousand" is not how many people are in the co
 
 ### 11. A figure that moved because the thing itself moved
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 36*
 
 [reviewers only: card kind `meet`, id `meet-measok`]
 
@@ -340,7 +340,7 @@ The name for this is **A real change**. "Change" means a rise or a fall. "Real" 
 
 ### 12. A real change: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 36*
 
 [reviewers only: card kind `again`, id `again-measok`]
 
@@ -373,7 +373,7 @@ The two stories share nothing else. So this is not about babies or about power. 
 
 ### 13. A real change: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-measok`]
 
@@ -411,11 +411,11 @@ In your own life it is anything you keep your own record of with the same tool: 
 
 ### 14. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 36*
 
 [reviewers only: card kind `check`, id `check-measok`]
 
-> A school records attendance every morning on the same register form for every class, and has done so since 2018. Nobody's pay, ranking or grant depends on the figure. In September, 94 in every 100 pupils were present on an average day. In November it was 91 in every 100. The school says: 'Average daily attendance fell from 94% in September to 91% in November.'
+> A school records attendance every morning on the same register form for every class, and has done so since 2018. Nobody's pay, ranking or grant depends on the figure. In September, 94 in every 100 students were present on an average day. In November it was 91 in every 100. The school says: 'Average daily attendance fell from 94% in September to 91% in November.'
 
 **The question:** **“What does the claim say the figures show?”** Which of the answers you have met so far fits this case?
 
@@ -431,7 +431,7 @@ In your own life it is anything you keep your own record of with the same tool: 
 
 ### 15. A fair count or A real change: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 15 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 15 of 36*
 
 [reviewers only: card kind `lookalike`, id `look-samp-meas`]
 
@@ -480,7 +480,7 @@ Does the claim give the figure once, for one time, or does it give the figure at
 
 ### 16. Two things of the same kind, set side by side the same way
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 36*
 
 [reviewers only: card kind `meet`, id `meet-compok`]
 
@@ -518,7 +518,7 @@ You may also hear this called “like for like”. That means the same thing her
 
 ### 17. A fair comparison: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 36*
 
 [reviewers only: card kind `again`, id `again-compok`]
 
@@ -551,7 +551,7 @@ The two stories share nothing else. So this is not about buses or about brake pa
 
 ### 18. A fair comparison: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-compok`]
 
@@ -589,7 +589,7 @@ In your own life you do this when you compare two phone plans, two schools or tw
 
 ### 19. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 36*
 
 [reviewers only: card kind `check`, id `check-compok`]
 
@@ -611,7 +611,7 @@ In your own life you do this when you compare two phone plans, two schools or tw
 
 ### 20. A real change or A fair comparison: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 36*
 
 [reviewers only: card kind `lookalike`, id `look-meas-comp`]
 
@@ -654,7 +654,7 @@ Is the claim following one thing as time passes, or is it setting one thing besi
 
 ### 21. Two numbers side by side that are not a comparison
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 36*
 
 [reviewers only: card kind `exception`, id `exc-years`]
 
@@ -692,7 +692,7 @@ This is a choice made to keep the answers clear, and it is worth knowing that it
 
 ### 22. A dummy that makes both groups go through the same thing
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 36*
 
 [reviewers only: card kind `term`, id `term-placebo`]
 
@@ -713,7 +713,7 @@ From here on, *placebo* always means a dummy of this kind, made to look like the
 
 ### 23. Groups formed by chance, one given the thing and one not
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 36*
 
 [reviewers only: card kind `meet`, id `meet-causeok`]
 
@@ -751,7 +751,7 @@ You may also hear this called “a randomised controlled trial” or “a random
 
 ### 24. A fair test: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 36*
 
 [reviewers only: card kind `again`, id `again-causeok`]
 
@@ -784,7 +784,7 @@ The two stories share nothing else. So this is not about migraines or about loan
 
 ### 25. A fair test: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 36*
 
 [reviewers only: card kind `portrait`, id `portrait-causeok`]
 
@@ -822,7 +822,7 @@ In your own life you meet it in news reports about medicines, in reports of a sc
 
 ### 26. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 36*
 
 [reviewers only: card kind `check`, id `check-causeok`]
 
@@ -844,7 +844,7 @@ In your own life you meet it in news reports about medicines, in reports of a sc
 
 ### 27. A fair comparison or A fair test: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 36*
 
 [reviewers only: card kind `lookalike`, id `look-comp-cause`]
 
@@ -852,11 +852,11 @@ The last pair of this unit: both show two groups with a gap, and the numbers can
 
 **Case A**
 
-> A school drew names from a hat to choose 60 of its 120 pupils for a new reading program, and the other 60 kept their usual lessons. All 120 sat the same test at the end of the term. The program group averaged 74 points and the other group averaged 62. The school says: 'Pupils in the reading program scored 12 points higher on the test than pupils outside it: 74 against 62.'
+> A school drew names from a hat to choose 60 of its 120 students for a new reading program, and the other 60 kept their usual lessons. All 120 took the same test at the end of the term. The program group averaged 74 points and the other group averaged 62. The school says: 'Students in the reading program scored 12 points higher on the test than students outside it: 74 against 62.'
 
 **Case B**
 
-> A school drew names from a hat to choose 60 of its 120 pupils for a new reading program, and the other 60 kept their usual lessons. All 120 sat the same test at the end of the term. The program group averaged 74 points and the other group averaged 62. The school says: 'The reading program raised test scores by 12 points: 74 against 62.'
+> A school drew names from a hat to choose 60 of its 120 students for a new reading program, and the other 60 kept their usual lessons. All 120 took the same test at the end of the term. The program group averaged 74 points and the other group averaged 62. The school says: 'The reading program raised test scores by 12 points: 74 against 62.'
 
 **What to compare.** Both cases are about the same school, the same lottery and the same test results. Compare one thing: does the claim stop at which group is ahead, or does it say what made the gap?
 
@@ -868,7 +868,7 @@ The last pair of this unit: both show two groups with a gap, and the numbers can
 
 In Case A the school’s claim gives the two averages, 74 and 62, and says which group is ahead: 74 − 62 = 12 points. It stops there. It says nothing about why. The answer is **“A difference between two things”**, and the case is **A fair comparison**.
 
-In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the pupils in the program and the pupils out of it were alike before the program began. The answer is **“One thing causing another”**, and the case is **A fair test**.
+In Case B the school ran the same lottery, set the same test and found the same 12 points, and its claim says the reading program raised the scores. It may say that, and the case shows why: names were drawn from a hat, so the students in the program and the students out of it were alike before the program began. The answer is **“One thing causing another”**, and the case is **A fair test**.
 
 Everything is the same in both cases except the last sentence. A claim of the first kind never says what made the gap, however the groups were formed. A claim of the second kind may say it only because of the lottery. The lottery is in both cases. Which name applies depends on what the claim says.
 
@@ -887,7 +887,7 @@ Does the claim stop at which group is ahead, or does it say what made the gap? I
 
 ### 28. A story that hints at a cause the claim does not make
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 28 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 28 of 36*
 
 [reviewers only: card kind `exception`, id `exc-stops`]
 
@@ -925,7 +925,7 @@ The story is where the cause comes from, and your own mind supplies it. That is 
 
 ### 29. A wrong idea: "A fair comparison shows why"
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 29 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 29 of 36*
 
 [reviewers only: card kind `refute`, id `refute-comparison`]
 
@@ -952,7 +952,7 @@ So the question is never whether a comparison is fair, and then why. Ask what th
 
 ### 30. The question you have been answering all along
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 36*
 
 [reviewers only: card kind `question`, id `q-holds`]
 
@@ -1006,7 +1006,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 31. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 36*
 
 [reviewers only: card kind `check`, id `check-q`]
 
@@ -1030,7 +1030,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 32. A whole claim, from the first question to the name
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 36*
 
 [reviewers only: card kind `worked`, id `worked-libraries`]
 
@@ -1092,7 +1092,7 @@ Here the likeness agrees with the answer, so the answer stands. The question com
 
 ### 33. A second whole claim, where the story points the wrong way
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 36*
 
 [reviewers only: card kind `worked`, id `worked-backs`]
 
@@ -1154,11 +1154,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Every claim in this unit holds, and that is on purpose: this is the unit about what such claims look like. A few claims from Unit One are mixed in without a label, and some of those do go wrong. When one appears, the first question comes before this unit’s question, and its answer will be one of the other four.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: A fair count / A real change / A fair comparison / A fair test.
 
@@ -1259,7 +1259,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 6 of 40**
 
-> A state compares two school districts on the same state test, which ⟦every third grader in both took in the same week⟧. The two districts ⟦serve a similar mix of family incomes⟧. In District A, 1,200 of 1,500 pupils passed reading, and in District B, 1,050 of 1,400 did. The state report says: '⟦More third graders in District A passed reading than in District B: 80 in 100 against 75 in 100⟧.'
+> A state compares two school districts on the same state test, which ⟦every third grader in both took in the same week⟧. The two districts ⟦serve a similar mix of family incomes⟧. In District A, 1,200 of 1,500 students passed reading, and in District B, 1,050 of 1,400 did. The state report says: '⟦More third graders in District A passed reading than in District B: 80 in 100 against 75 in 100⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Which part of the claim goes wrong first? **Nothing goes wrong**
@@ -1653,7 +1653,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 27 of 40**
 
-> A dental association wants to know how many of the 80,000 children in the state brush twice a day. It drew 1,200 children by lottery from the full list of enrolled pupils, sent a form home, and had a nurse follow up by phone until 1,090 had answered. Of the 1,090, 763 brush twice a day, which is 70 in 100. The association says: 'About 70% of the state's children brush twice a day, give or take 3 points.'
+> A dental association wants to know how many of the 80,000 children in the state brush twice a day. It drew 1,200 children by lottery from the full list of enrolled students, sent a form home, and had a nurse follow up by phone until 1,090 had answered. Of the 1,090, 763 brush twice a day, which is 70 in 100. The association says: 'About 70% of the state's children brush twice a day, give or take 3 points.'
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What does the claim say the figures show? → Name it.
 
@@ -1662,7 +1662,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **A fair count**.” What does the claim say the figures show? **A figure for one group.** The claim is “About 70% of the state's children brush twice a day, give or take 3 points”. It gives one figure about one group at one time. A small share of a big group does not stop that: 1,200 ÷ 80,000 is 0.015, and the margin comes from the 1,090, not from the 80,000.
   - Why not **A real change**: The figure is given once. Nothing is followed through time.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The *sample* is under 2 in 100 of the children, but a lottery chose it from a full list and nearly all were heard from: “drew 1,200 children by lottery from the full list of enrolled pupils” and “until 1,090 had answered”.
+  - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. The *sample* is under 2 in 100 of the children, but a lottery chose it from a full list and nearly all were heard from: “drew 1,200 children by lottery from the full list of enrolled students” and “until 1,090 had answered”.
   - If you chose **A rise or fall in one figure**: The figure is given once. Nothing is followed through time.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A real change**, the look-alike card’s lines follow: Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt. In **A fair count** the claim gives the figure once, for one group at one time. In **A real change** the claim follows one figure through two or more times and says it rose or fell. Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?
@@ -1792,7 +1792,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 34 of 40**
 
-> A state has 400 schools. A computer drew 200 of them by lottery to start an after-school tutoring program in September, and the other 200 carried on as usual. Every pupil in all 400 schools sat the same test in September and again in May. Scores rose in every school over the year: by 5 points on average in the schools without tutoring and by 9 in the schools with it. The state says: 'Tutoring raised scores by 4 points more than ordinary teaching did: a rise of 9 against 5.'
+> A state has 400 schools. A computer drew 200 of them by lottery to start an after-school tutoring program in September, and the other 200 carried on as usual. Every student in all 400 schools took the same test in September and again in May. Scores rose in every school over the year: by 5 points on average in the schools without tutoring and by 9 in the schools with it. The state says: 'Tutoring raised scores by 4 points more than ordinary teaching did: a rise of 9 against 5.'
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What does the claim say the figures show? → Name it.
 
@@ -1801,7 +1801,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **A fair test**.” What does the claim say the figures show? **One thing causing another.** The claim is “Tutoring raised scores by 4 points more than ordinary teaching did: a rise of 9 against 5”. Both groups rose, which can sound like a figure followed through time. But the claim is about the gap between the groups, 9 − 5 = 4 points, and says that tutoring made it, which the lottery allows.
   - Why not **A fair comparison**: The claim does not stop at which group rose more. It says tutoring made the extra rise.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery decided which schools got tutoring, and every pupil sat the same test twice: “drew 200 of them by lottery to start an after-school tutoring program” and “sat the same test in September and again in May”.
+  - Which part of the claim goes wrong first? **Nothing goes wrong.** Each part holds. A lottery decided which schools got tutoring, and every student took the same test twice: “drew 200 of them by lottery to start an after-school tutoring program” and “took the same test in September and again in May”.
   - If you chose **A difference between two things**: The claim does not stop at which group rose more. It says tutoring made the extra rise.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A fair comparison**, the look-alike card’s lines follow: Both show two groups with a gap between them, and both can come with exactly the same numbers. In **A fair comparison** the claim stops at which group has more or less. In **A fair test** the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups. Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?
@@ -1946,7 +1946,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 34. What to carry away
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 36*
 
 [reviewers only: card kind `recap`, id `recap-holds`]
 
@@ -1986,7 +1986,7 @@ What does the claim say the figures show?
 
 ### 35. Where would you meet this?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 35 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 35 of 36*
 
 [reviewers only: card kind `transfer`, id `transfer-holds`]
 
@@ -2009,7 +2009,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 36. A plan, if you want one
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 36 of 36*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 36 of 36*
 
 [reviewers only: card kind `plan`, id `plan-holds`]
 

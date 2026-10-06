@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Five: A judge, in any court
 
-*Four things a judge can be asked to do, and how to tell which one a case is about.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four things a judge can be asked to do, and how to tell which one a case is about.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A judge has been asked something. What?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 35*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -61,11 +61,11 @@ The unit has five parts, and you can stop after any of them.
 4. The question
 5. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A judge checking a law against the Constitution
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 35*
 
 [reviewers only: card kind `meet`, id `meet-review`]
 
@@ -101,7 +101,7 @@ You may also hear this called “striking down a law” or “ruling a law uncon
 
 ### 3. Judicial review: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 35*
 
 [reviewers only: card kind `again`, id `again-review`]
 
@@ -134,7 +134,7 @@ The two stories share nothing else. One is about leaflets and the other about a 
 
 ### 4. The story never decides the answer
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 35*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -154,7 +154,7 @@ Whether you agree with what the judge is asked to do, or with what the judge dec
 
 ### 5. Judicial review: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-review`]
 
@@ -184,7 +184,7 @@ In your own life you meet it as a news item about a rule that a court has set as
 
 ### 6. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 35*
 
 [reviewers only: card kind `check`, id `check-review`]
 
@@ -209,7 +209,7 @@ The pieces you can tap:
 
 ### 7. A wrong idea about what a judge can do to a law
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 35*
 
 [reviewers only: card kind `refute`, id `refute-strike`]
 
@@ -230,7 +230,7 @@ So before you use the name **Judicial review**, point to the person who was harm
 
 ### 8. What a judge does with an earlier ruling
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 35*
 
 [reviewers only: card kind `term`, id `term-precedent`]
 
@@ -238,7 +238,7 @@ The next of the four names is about a judge reading a law, and the judge in it u
 
 *The food trucks*
 
-> Two years ago a judge in Marlow’s court ruled that a food truck is a shop under the town’s licensing law, so its owner needed a shop licence. This spring a different judge in the same town is asked the same question about another owner’s food truck. She reads the earlier ruling and decides it the same way.
+> Two years ago a judge in Marlow’s court ruled that a food truck is a shop under the town’s licensing law, so its owner needed a shop license. This spring a different judge in the same town is asked the same question about another owner’s food truck. She reads the earlier ruling and decides it the same way.
 
 The first judge had to decide whether the word "shop" covers a food truck. The town’s licensing law did not say, so the judge decided. That ruling is now an earlier ruling on the word.
 
@@ -251,7 +251,7 @@ Whenever a judge works out what the words of a law cover, earlier rulings on the
 
 ### 9. A judge saying what the words of a law cover
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 35*
 
 [reviewers only: card kind `meet`, id `meet-interpret`]
 
@@ -269,7 +269,7 @@ Stripped of its story, the case is this:
 - The last thing in the case is a request to a judge to decide whether it is.
 - Nobody says the law breaks the Constitution, and the judge is not asked whether the tax break is a good idea.
 
-Laws are written ahead of time, in words, by people who could not picture every situation. Whoever wrote "farm" was probably thinking of fields and barns. A roof with beehives on it is something they may never have pictured, and the word does not say yes or no. Somebody has to decide, and the tax office and Dora each have a reason to answer in their own favour.
+Laws are written ahead of time, in words, by people who could not picture every situation. Whoever wrote "farm" was probably thinking of fields and barns. A roof with beehives on it is something they may never have pictured, and the word does not say yes or no. Somebody has to decide, and the tax office and Dora each have a reason to answer in their own favor.
 
 So a judge decides. The judge does not do it by choosing what would be best, and the judge’s own view of whether a lower tax bill for rooftop hives is a good idea does not decide it. The judge goes to the law. The judge reads its words, reads the rest of the law around them, asks what the law was for, and looks at earlier rulings on the same words. Those earlier rulings are what you met on the last card, and the word for them is *precedent*.
 
@@ -287,7 +287,7 @@ You may also hear this called “statutory interpretation”. That means the sam
 
 ### 10. Interpreting a law: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 35*
 
 [reviewers only: card kind `again`, id `again-interpret`]
 
@@ -320,7 +320,7 @@ The two stories share nothing else. So this is not about taxes or about water. I
 
 ### 11. Interpreting a law: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-interpret`]
 
@@ -342,7 +342,7 @@ A judge who is reading a law is not always doing this. If somebody says the law 
 
 "The court clarified what the law covers." "The judge said the word includes…" "The ruling means the rule applies to…" "The court interpreted the law."
 
-In your own life you meet it whenever the words of a rule and your situation do not quite fit: a tax break, a licence rule, a parking limit written before the thing you are doing existed.
+In your own life you meet it whenever the words of a rule and your situation do not quite fit: a tax break, a license rule, a parking limit written before the thing you are doing existed.
 
 **The question to ask when you spot it**
 
@@ -350,7 +350,7 @@ In your own life you meet it whenever the words of a rule and your situation do 
 
 ### 12. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 35*
 
 [reviewers only: card kind `check`, id `check-interpret`]
 
@@ -370,7 +370,7 @@ In your own life you meet it whenever the words of a rule and your situation do 
 
 ### 13. Judicial review or Interpreting a law: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-interpret`]
 
@@ -419,7 +419,7 @@ Does anyone say the law should not exist at all, or only ask whether it covers w
 
 ### 14. A choice a judge leaves to the voters
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 35*
 
 [reviewers only: card kind `meet`, id `meet-notlegal`]
 
@@ -440,7 +440,7 @@ Look at what the riders are asking. They are not saying the fare breaks the Cons
 
 A judge works by applying rules: a law, or the Constitution. Here no rule decides between $2 and $1, so there is nothing for the judge to apply, and a judge who chose would be putting the judge’s own view in the place of the town’s. The Constitution leaves choices like this to voters and the leaders they elect, and a court will decline.
 
-That does not leave the riders stuck. They can vote, sign petitions, write to the council and organise a campaign. A lawsuit will not change the fare.
+That does not leave the riders stuck. They can vote, sign petitions, write to the council and organize a campaign. A lawsuit will not change the fare.
 
 **What you must be able to point to.** A request for a judge to choose which policy is better, with no law and no right in the Constitution that settles it. This comes from one case so far. The next card tests it on a second case.
 
@@ -454,7 +454,7 @@ You may also hear this called “a matter for the voters”. That means the same
 
 ### 15. A political question: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 35*
 
 [reviewers only: card kind `again`, id `again-notlegal`]
 
@@ -487,7 +487,7 @@ One is about fares and the other about the school day. So this is not about mone
 
 ### 16. A political question: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-notlegal`]
 
@@ -499,7 +499,7 @@ You know what to point to. This card fills in the rest of the picture, so that y
 - No law and no right in the Constitution settles it. The people asking cannot point to one, and that is the whole of the case.
 - The judge declines. The words you hear are "the court declined to decide" and "that is not for the courts".
 - It is not that the question is unimportant. These are often the questions people care about most. The point is who decides: the voters and the leaders they elect, through an election, and not a judge, through a lawsuit.
-- The people asking can still act. They can vote, petition, write to their representatives and organise a campaign.
+- The people asking can still act. They can vote, petition, write to their representatives and organize a campaign.
 
 **What it is not**
 
@@ -509,7 +509,7 @@ Asking a judge for something is not enough, and neither is a request that sounds
 
 "That is a matter for the legislature." "The court declined to decide." "Not for the courts." "Take it to the voters."
 
-In your own life you meet it whenever you wish a price, a school rule or a local service were different and think of "taking it to court". The way to change it is to vote, petition and organise.
+In your own life you meet it whenever you wish a price, a school rule or a local service were different and think of "taking it to court". The way to change it is to vote, petition and organize.
 
 **The question to ask when you spot it**
 
@@ -517,11 +517,11 @@ In your own life you meet it whenever you wish a price, a school rule or a local
 
 ### 17. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 35*
 
 [reviewers only: card kind `check`, id `check-notlegal`]
 
-> Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighbourhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.
+> Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighborhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.
 
 **The question:** **“What is the judge asked to do?”** Which of the answers you have met so far fits this case?
 
@@ -539,7 +539,7 @@ In your own life you meet it whenever you wish a price, a school rule or a local
 
 ### 18. Judicial review or A political question: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-notlegal`]
 
@@ -547,7 +547,7 @@ In both of these names someone is unhappy with a rule and asks a judge to deal w
 
 **Case A**
 
-> A town rule says that any gathering on Riverside Green needs a permit from the town. Rosa held a meeting of her neighbourhood group there without one and was fined $80. She asked a judge to cancel the fine, telling the judge that the permit rule takes away the right to gather peacefully.
+> A town rule says that any gathering on Riverside Green needs a permit from the town. Rosa held a meeting of her neighborhood group there without one and was fined $80. She asked a judge to cancel the fine, telling the judge that the permit rule takes away the right to gather peacefully.
 
 **Case B**
 
@@ -582,7 +582,7 @@ Can the person asking point to a place in the Constitution that the rule is said
 
 ### 19. Interpreting a law or A political question: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-interpret-notlegal`]
 
@@ -625,7 +625,7 @@ Is there a law whose words, or the rulings on them, can answer the question, or 
 
 ### 20. A request that sounds like a plea for a better policy, and is not
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 35*
 
 [reviewers only: card kind `exception`, id `exc-hall`]
 
@@ -633,7 +633,7 @@ The last cards kept the pair tidy. A real request can sound like a plea for a be
 
 *The community hall*
 
-> A town owns a community hall that residents rent for parties and meetings. The town’s rule says that only members of the town’s main church may rent it. The Mehta family belong to a different faith and were turned away. They have asked a judge to order the town to let every resident rent the hall, saying the rule is unfair and that the Constitution does not allow a town to favour one religion.
+> A town owns a community hall that residents rent for parties and meetings. The town’s rule says that only members of the town’s main church may rent it. The Mehta family belong to a different faith and were turned away. They have asked a judge to order the town to let every resident rent the hall, saying the rule is unfair and that the Constitution does not allow a town to favor one religion.
 
 The Mehta family ask the judge to change a town rule, and they say the rule is unfair. That is how people ask for a better policy, and it is what you point to for **“Choose which policy is better”**. Yet the answer for this case is **“Check a law against the Constitution”**.
 
@@ -643,9 +643,9 @@ The pieces you can tap:
 1. “The town’s rule says that only members of the town’s main church may rent it”
 2. “were turned away”
 3. “saying the rule is unfair”
-4. “the Constitution does not allow a town to favour one religion”
+4. “the Constitution does not allow a town to favor one religion”
 
-**Shown as soon as you tap.** The words are “the Constitution does not allow a town to favour one religion”.
+**Shown as soon as you tap.** The words are “the Constitution does not allow a town to favor one religion”.
 - If you tapped “The town’s rule says that only members of the town’s main church may rent it”: That is the rule. It does not show what the family asks the judge.
 - If you tapped “were turned away”: That is the harm. It is why the family can bring a case. It does not show what they say about the rule.
 - If you tapped “saying the rule is unfair”: On its own that is a view about which rule would be better. The words that come after it are what change the case.
@@ -671,7 +671,7 @@ So read the reason as well as the request. "Unfair" alone is a view about which 
 
 ### 21. A judge making sure an accused person is treated fairly
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 35*
 
 [reviewers only: card kind `meet`, id `meet-trialrights`]
 
@@ -706,7 +706,7 @@ You may also hear this called “trial rights” or “a fair trial”. Those wo
 
 ### 22. The rights of the accused: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 35*
 
 [reviewers only: card kind `again`, id `again-trialrights`]
 
@@ -741,7 +741,7 @@ Luis is not a citizen and Joy is, and it makes no difference: the steps protect 
 
 ### 23. The rights of the accused: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-trialrights`]
 
@@ -773,7 +773,7 @@ You will meet it in any news about an arrest or a trial, and in what you may say
 
 ### 24. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 35*
 
 [reviewers only: card kind `check`, id `check-trialrights`]
 
@@ -797,7 +797,7 @@ You will meet it in any news about an arrest or a trial, and in what you may say
 
 ### 25. A wrong idea about who the steps protect
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 35*
 
 [reviewers only: card kind `refute`, id `refute-citizen`]
 
@@ -818,7 +818,7 @@ So before you decide that the steps do not apply, ask whether the person is accu
 
 ### 26. Judicial review or The rights of the accused: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-trialrights`]
 
@@ -861,7 +861,7 @@ Is the person saying the law itself is not allowed, or saying that a step promis
 
 ### 27. On trial, and still about the law
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 35*
 
 [reviewers only: card kind `exception`, id `exc-defendant`]
 
@@ -899,7 +899,7 @@ Read what the judge is asked, not where the case is held. In a criminal case the
 
 ### 28. Judicial review or Beyond Congress’s power: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-review-beyondcong`]
 
@@ -943,7 +943,7 @@ Does the story end with lawmakers voting on a law, or with someone harmed by a l
 
 ### 29. The rights of the accused or Beyond Congress’s power: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-trialrights-beyondcong`]
 
@@ -951,7 +951,7 @@ In both of these a right in the Constitution is what stops the government, and i
 
 **Case A**
 
-> The House and the Senate vote for a law that makes it a crime to print any pamphlet that criticises the government. The House passes it by 240 votes to 190.
+> The House and the Senate vote for a law that makes it a crime to print any pamphlet that criticizes the government. The House passes it by 240 votes to 190.
 
 **Case B**
 
@@ -993,7 +993,7 @@ Is the last decision a vote by lawmakers on a law, or a judge dealing with a per
 
 ### 30. The question you have been answering all along
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 35*
 
 [reviewers only: card kind `question`, id `q-judge`]
 
@@ -1057,7 +1057,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 31. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 35*
 
 [reviewers only: card kind `check`, id `check-judge`]
 
@@ -1087,7 +1087,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 32. A whole case, from the first question to the name
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 32 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 32 of 35*
 
 [reviewers only: card kind `worked`, id `worked-yardsign`]
 
@@ -1147,7 +1147,7 @@ Here the questions and the likeness agree, so the answer stands. The question co
 
 ### 33. A second whole case, where the story points the wrong way
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 33 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 33 of 35*
 
 [reviewers only: card kind `worked`, id `worked-megaphone`]
 
@@ -1207,11 +1207,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Many of these cases mention the Constitution, a trial, a vote or a fine, and what the story mentions first is often not what the judge is asked. That is on purpose. Read each story to its end and look for what the judge is asked to do.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: Judicial review / Interpreting a law / A political question / The rights of the accused.
 
@@ -1352,7 +1352,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 43**
 
-> Travellers at Barrow Station ask a judge to order the city transit board to run a train at midnight, saying that a late train would be better for night workers. No law requires a late train, and nobody says that having none takes away a right.
+> Travelers at Barrow Station ask a judge to order the city transit board to run a train at midnight, saying that a late train would be better for night workers. No law requires a late train, and nobody says that having none takes away a right.
 
 **You are asked:** What is the judge asked to do?
 
@@ -1363,9 +1363,9 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Choose which policy is better.**” The travellers want the judge to choose what is better, and nothing settles it: “No law requires a late train, and nobody says that having none takes away a right”. This answer leads to **A political question**.
+- If you are right: “Right: **Choose which policy is better.**” The travelers want the judge to choose what is better, and nothing settles it: “No law requires a late train, and nobody says that having none takes away a right”. This answer leads to **A political question**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose **Say what the words of a law cover**: There is no law whose words the judge could read to answer. The travellers want the judge to choose.
+  - If you chose **Say what the words of a law cover**: There is no law whose words the judge could read to answer. The travelers want the judge to choose.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1656,7 +1656,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 24 of 43**
 
-> Neighbours on Elm Road ⟦ask a judge to order the city⟧ to plant trees along the road, saying that trees would make the road nicer. No law requires the city to plant them, and nobody says any right is taken away by leaving the road bare.
+> Neighbors on Elm Road ⟦ask a judge to order the city⟧ to plant trees along the road, saying that trees would make the road nicer. No law requires the city to plant them, and nobody says any right is taken away by leaving the road bare.
 
 Shown to you, with the words that decide each answer marked:
 - Who makes the last decision in the case, or is asked to make it? **A judge, in any court**
@@ -1778,13 +1778,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 30 of 43**
 
-> A city law bans anyone from handing out pamphlets outside a clinic. Dr Sandhu was fined $120 for giving out pamphlets about healthy eating to people walking past. She asked a judge to cancel the fine, saying the law takes away her right to speak.
+> A city law bans anyone from handing out pamphlets outside a clinic. Dr. Sandhu was fined $120 for giving out pamphlets about healthy eating to people walking past. She asked a judge to cancel the fine, saying the law takes away her right to speak.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Judicial review**.” What is the judge asked to do? **Check a law against the Constitution.** Dr Sandhu was fined, so she was harmed, and she says the law clashes with a right the Constitution protects: “saying the law takes away her right to speak”.
+- If you are right: “Right: **Judicial review**.” What is the judge asked to do? **Check a law against the Constitution.** Dr. Sandhu was fined, so she was harmed, and she says the law clashes with a right the Constitution protects: “saying the law takes away her right to speak”.
   - Why not **A political question**: She does not only say that a different rule would be better. She says the law takes away a right.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined her, and those came first. The story ends with a request to a judge: “She asked a judge to cancel the fine”.
@@ -1894,7 +1894,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 36 of 43**
 
-> Quinn is on trial for keeping a dangerous animal without a licence. She had a lawyer from the start, and nobody says the police skipped a step. The only dispute is whether her pet python counts as a dangerous animal under the county’s law, and her lawyer has asked the judge to decide it.
+> Quinn is on trial for keeping a dangerous animal without a license. She had a lawyer from the start, and nobody says the police skipped a step. The only dispute is whether her pet python counts as a dangerous animal under the county’s law, and her lawyer has asked the judge to decide it.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
@@ -1914,7 +1914,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 37 of 43**
 
-> Walt is charged under a state law that bans fishing without a licence. He does not say the law is wrong. At his trial the police admit they questioned him for hours after he said he wanted a lawyer, and his lawyer asks the judge to decide whether that followed the steps the Constitution promises to a person who is accused.
+> Walt is charged under a state law that bans fishing without a license. He does not say the law is wrong. At his trial the police admit they questioned him for hours after he said he wanted a lawyer, and his lawyer asks the judge to decide whether that followed the steps the Constitution promises to a person who is accused.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
@@ -2058,13 +2058,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 - The answer is: **Choose which policy is better.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
 - The fault: The claim asks the judge to choose, and gives "the best use of the money" as the reason. No law and no right is named that requires the library. A judge applies rules, and choosing the best use of money is left to voters and the leaders they elect.
-- The claim, put right (always the last thing shown): If you want the library built, the way is to vote, petition and organise, because choosing how to spend money is for voters and the leaders they elect. A judge could be asked about the library only if a law or a right in the Constitution required it.
+- The claim, put right (always the last thing shown): If you want the library built, the way is to vote, petition and organize, because choosing how to spend money is for voters and the leaders they elect. A judge could be asked about the library only if a law or a right in the Constitution required it.
 
 **When the drill ends.** The learner sees their own results: first-try accuracy for each stage, whole cases beside single questions, the pair of names they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. Nothing here is graded. A miss only decides what comes back.
 
 ### 34. What to carry away
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 34 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 34 of 35*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2098,7 +2098,7 @@ What is the judge asked to do?
 
 ### 35. Where would you meet this?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 35 of 35*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 35 of 35*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2148,7 +2148,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 2 of 12**
 
-> A county law bans any group of more than five people from meeting in a park after dark. A group of neighbours who held a welcome evening for newly arrived families was fined $100. Their organiser, Zeynep, asked a judge to cancel the fine, saying the law takes away the right to gather peacefully.
+> A county law bans any group of more than five people from meeting in a park after dark. A group of neighbors who held a welcome evening for newly arrived families was fined $100. Their organizer, Zeynep, asked a judge to cancel the fine, saying the law takes away the right to gather peacefully.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
@@ -2167,16 +2167,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 12**
 
-> A state law says that no school newspaper may print an opinion piece about a decision of the school board. The paper’s adviser, Mr Alt, was fined $300 for letting one run. He asked a judge to cancel the fine, saying the law takes away the freedom to publish.
+> A state law says that no school newspaper may print an opinion piece about a decision of the school board. The paper’s adviser, Mr. Alt, was fined $300 for letting one run. He asked a judge to cancel the fine, saying the law takes away the freedom to publish.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Judicial review**.” What is the judge asked to do? **Check a law against the Constitution.** Mr Alt was fined, so he was harmed, and he says the law clashes with a right the Constitution protects: “saying the law takes away the freedom to publish”.
+- If you are right: “Right: **Judicial review**.” What is the judge asked to do? **Check a law against the Constitution.** Mr. Alt was fined, so he was harmed, and he says the law clashes with a right the Constitution protects: “saying the law takes away the freedom to publish”.
   - Why not **Interpreting a law**: He does not ask whether an opinion piece is the kind of article the law covers. He says the law is not allowed.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state made its law and fined Mr Alt. The story ends with a request to a judge: “He asked a judge to cancel the fine”.
+  - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The state made its law and fined Mr. Alt. The story ends with a request to a judge: “He asked a judge to cancel the fine”.
   - If you chose **Say what the words of a law cover**: He does not ask whether an opinion piece is the kind of article the law covers. He says the law is not allowed.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Interpreting a law**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
@@ -2186,16 +2186,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 12**
 
-> A city law says that every market must have a licence from the city. Neighbours on Ash Lane sell home-grown vegetables from a table at the end of their drive every Saturday, and the city fined them. They do not say the law is wrong. They asked a judge to decide whether a table at the end of a drive is a market under the law.
+> A city law says that every market must have a license from the city. Neighbors on Ash Lane sell home-grown vegetables from a table at the end of their drive every Saturday, and the city fined them. They do not say the law is wrong. They asked a judge to decide whether a table at the end of a drive is a market under the law.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Interpreting a law**.” What is the judge asked to do? **Say what the words of a law cover.** The neighbours accept the law, and the question is how far a word reaches: “whether a table at the end of a drive is a market under the law”.
+- If you are right: “Right: **Interpreting a law**.” What is the judge asked to do? **Say what the words of a law cover.** The neighbors accept the law, and the question is how far a word reaches: “whether a table at the end of a drive is a market under the law”.
   - Why not **Judicial review**: They do not say the law takes away a right. They ask whether the word "market" covers their table.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined the neighbours. The story ends with a request to a judge: “They asked a judge to decide”.
+  - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The city made its law and fined the neighbors. The story ends with a request to a judge: “They asked a judge to decide”.
   - If you chose **Check a law against the Constitution**: They do not say the law takes away a right. They ask whether the word "market" covers their table.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, a law already exists, a person has been touched by it, and a judge is asked about it. In **Judicial review** the person says the law itself is not allowed, because it clashes with the Constitution. In **Interpreting a law** nobody says that. The law is accepted, and the only question is whether its words reach what happened. Does anyone say the law should not exist at all, or only ask whether it covers what happened?
@@ -2205,7 +2205,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 5 of 12**
 
-> A state law says that every nursery must be inspected each year. Rowan looks after four neighbours’ toddlers in her home for pay, and the state fined her for having no inspection. She does not say the law is wrong. She has asked a judge to decide whether a home with four toddlers in it is a nursery under the law.
+> A state law says that every nursery must be inspected each year. Rowan looks after four neighbors’ toddlers in her home for pay, and the state fined her for having no inspection. She does not say the law is wrong. She has asked a judge to decide whether a home with four toddlers in it is a nursery under the law.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
@@ -2262,7 +2262,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 8 of 12**
 
-> A group of residents in Eastvale ask a judge to order the council to publish its agenda in three languages, saying that it would help new neighbours follow what the council does. No law requires the council to do so, and nobody says that publishing in one language takes away a right.
+> A group of residents in Eastvale ask a judge to order the council to publish its agenda in three languages, saying that it would help new neighbors follow what the council does. No law requires the council to do so, and nobody says that publishing in one language takes away a right.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
@@ -2281,7 +2281,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 12**
 
-> Neighbours ask a judge to order the city to put a speed bump on Linden Road, saying that it would be safer. No law requires a speed bump there, and nobody says that not having one takes away a right.
+> Neighbors ask a judge to order the city to put a speed bump on Linden Road, saying that it would be safer. No law requires a speed bump there, and nobody says that not having one takes away a right.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What is the judge asked to do? → Name it.
 
@@ -2290,7 +2290,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **A political question**.” What is the judge asked to do? **Choose which policy is better.** They ask the judge to choose what would be safer, and nothing settles it: “No law requires a speed bump there, and nobody says that not having one takes away a right”.
   - Why not **Judicial review**: Nobody has been harmed by a rule and nobody points to a right that is taken away.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The neighbours have gone to a judge: “ask a judge to order the city”.
+  - Who makes the last decision in the case, or is asked to make it? **A judge, in any court.** The neighbors have gone to a judge: “ask a judge to order the city”.
   - If you chose **Check a law against the Constitution**: Nobody has been harmed by a rule and nobody points to a right that is taken away.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Judicial review**, the look-alike card’s lines follow: In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it. In **Judicial review** the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In **A political question** nobody can point to a law or a right that settles it: the judge is asked to choose what would be better. Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?

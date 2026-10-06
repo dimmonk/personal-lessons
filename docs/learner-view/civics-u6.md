@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Six: A state, city or county government
 
-*Five things a rule from a state, a city or a county can come to, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
+*Five things a rule from a state, a city or a county can come to, and the two questions that tell them apart.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A rule from a state, a city or a county: whose is it, and what else covers it?
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -70,11 +70,11 @@ The unit has five parts, and you can stop after any of them.
 4. A right that stops the rule, and the second question
 5. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A state ruling on a matter the Constitution leaves to the states
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
 
 [reviewers only: card kind `meet`, id `meet-police`]
 
@@ -95,7 +95,7 @@ What you are shown is a state making a rule about renting a home. Nothing else h
 
 Why does the state get to decide this? Start with a list. The Constitution gives the federal government a list of powers: among them taxes, borrowing money, trade between the states and with other countries, the rules for becoming a citizen and who may live in the country, making money, running the mail, defending the country and running the federal courts. Renting a home is not on that list. Anything the list does not give is kept by the states, and the Tenth Amendment says so. An amendment is a change added to the Constitution after it was first written, and the Tenth is the one that says the powers not given to the federal government are kept by the states or the people.
 
-That is why so much of daily life is decided state by state: how soon a landlord must return a deposit, how old you must be to hold a driver’s licence, who may marry and when, what public schools teach, which acts are crimes and how they are punished, and which jobs need a licence, such as a barber’s or a plumber’s. A state’s power to make rules for the health, safety and welfare of its people is wide, and it covers far more than the police. Because each state decides for itself, these rules differ from state to state, and they can change when a person moves.
+That is why so much of daily life is decided state by state: how soon a landlord must return a deposit, how old you must be to hold a driver’s license, who may marry and when, what public schools teach, which acts are crimes and how they are punished, and which jobs need a license, such as a barber’s or a plumber’s. A state’s power to make rules for the health, safety and welfare of its people is wide, and it covers far more than the police. Because each state decides for itself, these rules differ from state to state, and they can change when a person moves.
 
 Two things made this case simple. The first is who made the rule: the state itself, through its legislature. A state’s rules can also come from its governor, who leads the state, or from one of its own offices, such as a state licensing board, and all of those count as the state itself. The second is that nothing else covers the matter: the story names no federal law about deposits, and the rule takes away no right, such as the right to speak or to worship. When both are true, the state decides.
 
@@ -113,7 +113,7 @@ You may also hear this called “the police power” or “left to the states”
 
 ### 3. Reserved powers: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
 
 [reviewers only: card kind `again`, id `again-police`]
 
@@ -123,36 +123,36 @@ The first case again, in one line. *The deposit law*: “the Brenmore legislatur
 
 The second case.
 
-*The plumbers’ licence*
+*The plumbers’ license*
 
-> After a run of badly fitted gas pipes in people’s homes, the Ostrow legislature passed a law that anyone who fits pipes for money must pass a test and hold a state licence.
+> After a run of badly fitted gas pipes in people’s homes, the Ostrow legislature passed a law that anyone who fits pipes for money must pass a test and hold a state license.
 **You are asked:** In *The deposit law*, these words show it: “the Brenmore legislature passed a law”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “After a run of badly fitted gas pipes in people’s homes”
 2. “the Ostrow legislature passed a law”
-3. “that anyone who fits pipes for money must pass a test and hold a state licence”
+3. “that anyone who fits pipes for money must pass a test and hold a state license”
 
 **Shown as soon as you tap.** The words are “the Ostrow legislature passed a law”.
 - If you tapped “After a run of badly fitted gas pipes in people’s homes”: That is why the law was passed. It is the story behind the rule, and it does not say who made the rule.
-- If you tapped “that anyone who fits pipes for money must pass a test and hold a state licence”: That is what the rule says: its matter. The words asked for show who made it.
+- If you tapped “that anyone who fits pipes for money must pass a test and hold a state license”: That is what the rule says: its matter. The words asked for show who made it.
 
 **What the two share**
 
 In both cases the lawmakers of one state made the rule: the Brenmore legislature passed a law on deposits, and the Ostrow legislature passed a law on gas pipes. Neither was made by a city, a town or a county. Neither story names a federal law or a right.
 
-The two stories share nothing else. One is about a rented home and the other about a trade, and one rule is a deadline and the other a licence. So this is not about homes or about work. It holds wherever a state itself makes a rule on a matter that the list of federal powers does not give to Congress and that no right protects. That is what **Reserved powers** names.
+The two stories share nothing else. One is about a rented home and the other about a trade, and one rule is a deadline and the other a license. So this is not about homes or about work. It holds wherever a state itself makes a rule on a matter that the list of federal powers does not give to Congress and that no right protects. That is what **Reserved powers** names.
 
 
 ### 4. The story never decides the answer
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
 
 [reviewers only: card kind `lens`, id `lens`]
 
 The last card asked you to ignore the story. That holds for the whole unit, so here it is once in full.
 
-Every case in this unit has two layers. The top layer is the story: what the case is about. A rental, a licence, a fence, a boat ramp, a newspaper. The layer underneath is the structure: who made the rule, and what else covers the same matter.
+Every case in this unit has two layers. The top layer is the story: what the case is about. A rental, a license, a fence, a boat ramp, a newspaper. The layer underneath is the structure: who made the rule, and what else covers the same matter.
 
 The five names belong to the layer underneath. The same story can carry any of them, because the same matter can be handled in different ways: a noise rule can come from a state or from a town, a life-jacket rule can sit beside a federal law or give way to one. A case about boats is no more likely to be one name than another.
 
@@ -164,7 +164,7 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 ### 5. Reserved powers: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-police`]
 
@@ -173,7 +173,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 **What it is usually like**
 
 - The maker is named, and it belongs to one state: “the state legislature”, “the governor”, “the state licensing board”. It is not a city council or a county board.
-- The matter is one of daily life that the Constitution does not give to Congress: licences, marriage, public schools, most crimes, renting a home. The list of federal powers given when this name was first met is the quickest check. If the matter is on that list, look harder for a federal law.
+- The matter is one of daily life that the Constitution does not give to Congress: licenses, marriage, public schools, most crimes, renting a home. The list of federal powers given when this name was first met is the quickest check. If the matter is on that list, look harder for a federal law.
 - The story may mention the federal government without covering the matter. A story can say that Congress taxes income, or that a federal office exists, and then go on to a state rule about something else. Ask whether a federal law covers the same matter as the rule.
 - The same matter can have a different rule in the next state. A rule in one state says nothing about the rule in another.
 - The rule takes away no right. A state rule can be strict, or unpopular, and still be of this kind: how harsh a rule is does not decide the name.
@@ -186,7 +186,7 @@ Nor is a rule made by a city, a town or a county the state itself making a rule,
 
 **Where you will hear it**
 
-“Each state sets its own rules for that.” “In this state you need a licence to…” “It varies by state.” “The legislature passed a law that…” “The governor signed…”
+“Each state sets its own rules for that.” “In this state you need a license to…” “It varies by state.” “The legislature passed a law that…” “The governor signed…”
 
 In your own life this is much of what you meet day to day: what you need to drive, to marry, to work as a barber or a plumber, to rent a home, and what your children’s public school must teach. It is also the part of the law that changes when you move to another state, so look up your own state’s rule and do not assume that it matches the last one you knew.
 
@@ -196,25 +196,25 @@ In your own life this is much of what you meet day to day: what you need to driv
 
 ### 6. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
 
 [reviewers only: card kind `check`, id `check-police`]
 
-> In the state of Tarn, young people were asking at what age they could drive. The Tarn legislature passed a law that a person must be at least sixteen to get a driver’s licence.
+> In the state of Tarn, young people were asking at what age they could drive. The Tarn legislature passed a law that a person must be at least sixteen to get a driver’s license.
 
 **You are asked:** Which words show who made the rule? Tap them.
 
 The pieces you can tap:
 1. “In the state of Tarn, young people were asking at what age they could drive”
 2. “The Tarn legislature passed a law”
-3. “a person must be at least sixteen to get a driver’s licence”
+3. “a person must be at least sixteen to get a driver’s license”
 
 **Shown as soon as you tap**
 
 - If you are right: “Right: ‘The Tarn legislature passed a law’.” The words that show who made the rule are “The Tarn legislature passed a law”: the lawmakers of one state, so the state itself made the rule. The case names no city, town or county. The answer for this case is **“The state’s own rule”**, and the name is **Reserved powers**.
 - If you miss: “The words are ‘The Tarn legislature passed a law’.” The same reason follows, and then a line about the piece you tapped:
   - “In the state of Tarn, young people were asking at what age they could drive”: That is why the rule exists. It is the story behind it, and it does not say who made it.
-  - “a person must be at least sixteen to get a driver’s licence”: That is what the rule says: its matter. It does not say who made it.
+  - “a person must be at least sixteen to get a driver’s license”: That is what the rule says: its matter. It does not say who made it.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
 *End of part 1. You can stop here; your place is kept. Next: part 2, A rule a city, a town or a county makes, and the first question.*
@@ -225,15 +225,15 @@ The pieces you can tap:
 
 ### 7. A city or county ruling with power its state gave it
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 7 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 7 of 42*
 
 [reviewers only: card kind `meet`, id `meet-localgov`]
 
-The last name was a state making a rule of its own. A state is not the only government that makes rules. Cities, towns and counties make them too, and these are the rules you meet most often: parking, fences, rubbish, parks.
+The last name was a state making a rule of its own. A state is not the only government that makes rules. Cities, towns and counties make them too, and these are the rules you meet most often: parking, fences, trash, parks.
 
 *The fence rule*
 
-> In the town of Ashby, neighbours kept arguing about tall fences that blocked their front windows. ⟦The state’s law on towns lets each town set rules for its own streets and buildings⟧. Using that power, ⟦the Ashby town council voted⟧ that a front-yard fence may be no taller than four feet.
+> In the town of Ashby, neighbors kept arguing about tall fences that blocked their front windows. ⟦The state’s law on towns lets each town set rules for its own streets and buildings⟧. Using that power, ⟦the Ashby town council voted⟧ that a front-yard fence may be no taller than four feet.
 
 Stripped of its story, the case is this:
 
@@ -247,7 +247,7 @@ What you are shown is a town deciding something about itself. The council of Ash
 
 Where does a town’s power come from? Not from the Constitution. The Constitution sets out the powers of the federal government and leaves the rest to the states. A town is not a state. Its power comes from its state, which hands some of its own power down to it, usually in a state law or in a charter, which is the founding document of a city. The case says so: the state’s law on towns lets each town set rules for its own streets and buildings. Because the state hands the power down, the state can usually widen it, narrow it or take it back.
 
-A rule made by a city, a town or a county is called an ordinance. The ordinances people meet most are about everyday local matters: streets, parking, zoning, which means which kinds of building may go where, building permits, rubbish collection, parks and libraries. A fence rule belongs with these.
+A rule made by a city, a town or a county is called an ordinance. The ordinances people meet most are about everyday local matters: streets, parking, zoning, which means which kinds of building may go where, building permits, trash collection, parks and libraries. A fence rule belongs with these.
 
 So the matter, and everything else in the case, looks just like the last name: nothing from the federal side covers the fences, and no right is taken away. The only difference is who made the rule. A state made the last one itself. A town made this one, using what its state gave it. That difference is what gives this case its own name.
 
@@ -265,7 +265,7 @@ You may also hear this called “a city ordinance” or “local control”. Tho
 
 ### 8. Power handed down to a city or county: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 8 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 8 of 42*
 
 [reviewers only: card kind `again`, id `again-localgov`]
 
@@ -298,7 +298,7 @@ A town is smaller than a county, and a fence rule is not a fee. The two stories 
 
 ### 9. Power handed down to a city or county: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 9 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 9 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-localgov`]
 
@@ -307,7 +307,7 @@ You know what to point to for **Power handed down to a city or county**. This ca
 **What it is usually like**
 
 - The maker is named, and it is a city, a town or a county, in words such as “the city council”, “the county board”, “the mayor”, “the town”. The story sometimes names the state law that gave the power. It does not have to.
-- The matter is local: streets, parking, zoning, building permits, rubbish, parks, libraries, how late a place may be noisy, what a pet owner must pay. It touches one place, and the rule covers that place only.
+- The matter is local: streets, parking, zoning, building permits, trash, parks, libraries, how late a place may be noisy, what a pet owner must pay. It touches one place, and the rule covers that place only.
 - It does not matter how big the place is, or whether the rule is a vote of a council or an order from a mayor.
 - The state stays above the town. The state can usually widen, narrow or take back the power it handed down, and where the state has passed a law on the same matter, the state’s law usually wins.
 
@@ -321,7 +321,7 @@ And a story that only mentions a town is not enough. If a town is only where som
 
 “The city council voted…” “A county ordinance…” “You need a permit from the town.” “Zoning…” “The county board…”
 
-In your own life this is the rule behind where you may park, how tall a fence may be, when the library is open, when the rubbish is collected, and what you need a permit for before you build. It is also the rule most likely to be different from one town to the next.
+In your own life this is the rule behind where you may park, how tall a fence may be, when the library is open, when the trash is collected, and what you need a permit for before you build. It is also the rule most likely to be different from one town to the next.
 
 **The question to ask when you spot it**
 
@@ -329,7 +329,7 @@ In your own life this is the rule behind where you may park, how tall a fence ma
 
 ### 10. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 10 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 10 of 42*
 
 [reviewers only: card kind `check`, id `check-localgov`]
 
@@ -349,7 +349,7 @@ In your own life this is the rule behind where you may park, how tall a fence ma
 
 ### 11. The same noise rule, from a state and from a town
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-localgov`]
 
@@ -393,7 +393,7 @@ Who made the rule: the state itself, or a city, a town or a county?
 
 ### 12. A wrong idea about what a city can do
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 42*
 
 [reviewers only: card kind `refute`, id `refute-citypower`]
 
@@ -412,7 +412,7 @@ So a city has no powers of its own that stand against its state. Before you use 
 
 ### 13. The first question, and what it does and does not decide
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 42*
 
 [reviewers only: card kind `question`, id `q-who`]
 
@@ -454,7 +454,7 @@ Sometimes a story names both a state and a town. Ask which of them made the rule
 
 ### 14. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
 
 [reviewers only: card kind `check`, id `check-who`]
 
@@ -480,7 +480,7 @@ Sometimes a story names both a state and a town. Ask which of them made the rule
 
 ### 15. A state or city rule giving way to a federal law
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 15 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 15 of 42*
 
 [reviewers only: card kind `meet`, id `meet-preempted`]
 
@@ -519,7 +519,7 @@ You may also hear this called “federal law wins” or “the Supremacy Clause�
 
 ### 16. Preemption: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 16 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 16 of 42*
 
 [reviewers only: card kind `again`, id `again-preempted`]
 
@@ -552,7 +552,7 @@ The second case has a state park in it, which can make the rule sound like the s
 
 ### 17. Preemption: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 17 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 17 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-preempted`]
 
@@ -584,7 +584,7 @@ In your own life this is why the rules about immigration and about becoming a ci
 
 ### 18. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 18 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 18 of 42*
 
 [reviewers only: card kind `check`, id `check-preempted`]
 
@@ -607,7 +607,7 @@ The pieces you can tap:
 
 ### 19. A state or city rule standing beside a federal law
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 42*
 
 [reviewers only: card kind `meet`, id `meet-concurrent`]
 
@@ -646,7 +646,7 @@ You may also hear this called “both may act” or “a federal floor”. Those
 
 ### 20. Concurrent powers: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 42*
 
 [reviewers only: card kind `again`, id `again-concurrent`]
 
@@ -679,7 +679,7 @@ Wages and leave have nothing else in common. So this is not about work or about 
 
 ### 21. Concurrent powers: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-concurrent`]
 
@@ -711,7 +711,7 @@ In your own life this is why the wage you must be paid, or the leave you can tak
 
 ### 22. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 42*
 
 [reviewers only: card kind `check`, id `check-concurrent`]
 
@@ -731,7 +731,7 @@ In your own life this is why the wage you must be paid, or the leave you can tak
 
 ### 23. The same life-jacket rule, beside two different federal laws
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-preempted-concurrent`]
 
@@ -775,7 +775,7 @@ Does the federal law say that it is the only rule, or does it say that it is a m
 
 ### 24. A wrong idea about federal law
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 42*
 
 [reviewers only: card kind `refute`, id `refute-always`]
 
@@ -789,12 +789,12 @@ The last cards set a federal law that covers a matter beside a federal law that 
 
 A federal law takes over only where the federal government has power over the matter and has already used it, and the law is meant to be the only rule, or the two rules cannot both be obeyed. That is the whole case for **Preemption**.
 
-Where a federal law sets only a minimum, the state’s rule stands beside it, which is **Concurrent powers**. Where no federal law covers the matter, as with deposits or driver’s licences, there is nothing for a state’s rule to give way to, which is **Reserved powers**. So before you say that a federal law settles a case, point to the federal law, to the matter it covers, and to the words that make it the only rule.
+Where a federal law sets only a minimum, the state’s rule stands beside it, which is **Concurrent powers**. Where no federal law covers the matter, as with deposits or driver’s licenses, there is nothing for a state’s rule to give way to, which is **Reserved powers**. So before you say that a federal law settles a case, point to the federal law, to the matter it covers, and to the words that make it the only rule.
 
 
 ### 25. A wait before a wedding, a wait before citizenship
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-preempted`]
 
@@ -802,7 +802,7 @@ The name for a state deciding alone and the name for a state giving way to a fed
 
 **Case A**
 
-> Couples in the state of Halvard had been marrying on the day they got their licence. The Halvard legislature passed a law that a couple must wait three days after getting a marriage licence before they may marry.
+> Couples in the state of Halvard had been marrying on the day they got their license. The Halvard legislature passed a law that a couple must wait three days after getting a marriage license before they may marry.
 
 **Case B**
 
@@ -838,7 +838,7 @@ Has Congress already written a law on this same matter, and is it meant to be th
 
 ### 26. A state’s safety rule that gives way
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
 
 [reviewers only: card kind `exception`, id `exc-crib`]
 
@@ -876,7 +876,7 @@ A rule can sound as though it belongs to the state and still give way. Always as
 
 ### 27. A wrong idea about who sets the rules for citizenship
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
 
 [reviewers only: card kind `refute`, id `refute-citizens`]
 
@@ -901,7 +901,7 @@ So before you use the name **Reserved powers**, point to a matter that is not on
 
 ### 28. A state or city rule that a right forbids
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 28 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 28 of 42*
 
 [reviewers only: card kind `meet`, id `meet-protected`]
 
@@ -909,18 +909,18 @@ Until now a rule has either stood, or given way to a federal law. There is one m
 
 *The mayor leaflets*
 
-> In the city of Redwick, a group handed out leaflets that said the mayor had wasted money on a new car park. The Redwick city council then passed an ordinance ⟦making it a crime to hand out leaflets that criticise the mayor⟧.
+> In the city of Redwick, a group handed out leaflets that said the mayor had wasted money on a new parking lot. The Redwick city council then passed an ordinance ⟦making it a crime to hand out leaflets that criticize the mayor⟧.
 
 Stripped of its story, the case is this:
 
 - There is a city, Redwick, and its city council, which passed an ordinance.
-- The ordinance makes it a crime to hand out leaflets that criticise the mayor.
+- The ordinance makes it a crime to hand out leaflets that criticize the mayor.
 - The leaflets are speech, and the ordinance punishes it because of what it says.
 - No federal law is needed for this to be a problem. The problem is a right.
 
-A city normally controls its own streets and what happens on them, and a council may make many rules about leaflets: where to put the bins, how to keep the streets clean. This ordinance is different. It does not tidy anything. It makes handing out some leaflets a crime because of what they say about the mayor.
+A city normally controls its own streets and what happens on them, and a council may make many rules about leaflets: where to put the trash cans, how to keep the streets clean. This ordinance is different. It does not tidy anything. It makes handing out some leaflets a crime because of what they say about the mayor.
 
-The Constitution protects some rights so strongly that no government may take them away: to speak, to worship, to publish and to gather peacefully. These are in the First Amendment. Criticising the mayor is speech, and speech is the thing the First Amendment protects most.
+The Constitution protects some rights so strongly that no government may take them away: to speak, to worship, to publish and to gather peacefully. These are in the First Amendment. Criticizing the mayor is speech, and speech is the thing the First Amendment protects most.
 
 You may wonder why this applies to a city at all. The first ten amendments, called the Bill of Rights, were first written to limit only the federal government. After the Civil War the Fourteenth Amendment, added in 1868, was read to bring those limits to the states, and so today they protect you against your state, and against your city or county too.
 
@@ -942,20 +942,20 @@ You may also hear this called “incorporation” or “civil liberties”. Thos
 
 ### 29. A right that binds the states: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 29 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 29 of 42*
 
 [reviewers only: card kind `again`, id `again-protected`]
 
 The leaflets gave you what to point to: a state or local rule, and a right the Constitution protects that the rule takes away. Here is a second case, with a different right and a different maker.
 
-The first case again, in one line. *The mayor leaflets*: “making it a crime to hand out leaflets that criticise the mayor”
+The first case again, in one line. *The mayor leaflets*: “making it a crime to hand out leaflets that criticize the mayor”
 
 The second case.
 
 *The worship permit*
 
 > A small religious group in the state of Halvard rents a hall each Sunday for its service. The Halvard legislature passed a law that a religious group may hold a service in a rented hall only with a permit from the state, and the permit office may refuse any group whose beliefs it does not like.
-**You are asked:** In *The mayor leaflets*, these words show it: “making it a crime to hand out leaflets that criticise the mayor”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The mayor leaflets*, these words show it: “making it a crime to hand out leaflets that criticize the mayor”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A small religious group in the state of Halvard rents a hall each Sunday for its service”
@@ -975,7 +975,7 @@ The two cases share nothing else, so this is not about leaflets, and not about r
 
 ### 30. A right that binds the states: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-protected`]
 
@@ -1008,7 +1008,7 @@ In your own life it is what lets you say what you think about your mayor, join a
 
 ### 31. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 42*
 
 [reviewers only: card kind `check`, id `check-protected`]
 
@@ -1028,9 +1028,9 @@ In your own life it is what lets you say what you think about your mayor, join a
   - If you chose **A federal law that leaves room for the state’s rule**: Give that answer when a federal law covers the same matter but sets only a minimum, or lets the states act too, so that obeying the state or local rule also obeys the federal one. This case shows something else: the rule takes away a right the Constitution protects (to speak, to worship, to publish, to gather peacefully), which binds every state, city and county as well as the federal government.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
-### 32. A licence to sell food, an approval to hand out a newspaper
+### 32. A license to sell food, an approval to hand out a newspaper
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-protected`]
 
@@ -1038,7 +1038,7 @@ A state may make rules on a great many matters, and a right stops it on some. Th
 
 **Case A**
 
-> Food stalls kept appearing on busy sidewalks in the state of Pelham. The Pelham legislature passed a law that anyone who sells food from a stall on a public sidewalk must have a licence from the state.
+> Food stalls kept appearing on busy sidewalks in the state of Pelham. The Pelham legislature passed a law that anyone who sells food from a stall on a public sidewalk must have a license from the state.
 
 **Case B**
 
@@ -1074,7 +1074,7 @@ Does the rule take away a right to speak, to worship, to publish or to gather pe
 
 ### 33. A city’s own sidewalk, and a right that stops it
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 42*
 
 [reviewers only: card kind `exception`, id `exc-councilmag`]
 
@@ -1121,7 +1121,7 @@ Your first look at a story gives you its matter, and the matter can sound local.
 
 ### 34. The same rally ban, made by Congress and by a city
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-protected-beyondcong`]
 
@@ -1166,7 +1166,7 @@ Who made the rule: Congress, or a state, a city or a county?
 
 ### 35. A right against the police, and a right against a council
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-protected-trialrights`]
 
@@ -1178,7 +1178,7 @@ Both of these names say that a right in the Constitution protects a person again
 
 **Case B**
 
-> A man in the city of Hale spoke at a public meeting and criticised the police. The Hale city council then passed a rule fining anyone who criticises the police at a public meeting.
+> A man in the city of Hale spoke at a public meeting and criticized the police. The Hale city council then passed a rule fining anyone who criticizes the police at a public meeting.
 
 **What to compare.** In both cases a person has a right that a government has to respect. Compare one thing: what the story ends on. Does it end with a judge being asked, or with a rule made by a state, a city or a county?
 
@@ -1211,7 +1211,7 @@ Does the story end with a judge being asked about how an accused person was trea
 
 ### 36. The same barbers’ hours, set by a state and by Congress
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-police-beyondcong`]
 
@@ -1256,7 +1256,7 @@ Who made the rule: a state, or Congress?
 
 ### 37. The second question, and what else covers the matter
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
 
 [reviewers only: card kind `question`, id `q-else`]
 
@@ -1269,7 +1269,7 @@ At the end of each of the last cards you saw this question with one answer. This
 **Its answers**
 
 - **“Neither: no federal law and no right covers it”**
-  - Give this answer when the matter is one the Constitution leaves to the states (licences, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
+  - Give this answer when the matter is one the Constitution leaves to the states (licenses, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
   - Keeps **Reserved powers** and **Power handed down to a city or county**. Rules out **Preemption**, **Concurrent powers** and **A right that binds the states**.
 - **“A federal law that is meant to be the only rule”**
   - Give this answer when a federal law covers the same matter, on a subject the Constitution gives Congress, and either it says no state may set its own rule, or the state or local rule makes it impossible to obey both.
@@ -1357,7 +1357,7 @@ Sometimes the story names a federal law and it is not clear whether it covers th
 
 ### 38. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
 
 [reviewers only: card kind `check`, id `check-else`]
 
@@ -1374,9 +1374,9 @@ Sometimes the story names a federal law and it is not clear whether it covers th
 
 - If you are right: “Right: **Neither: no federal law and no right covers it.**” The matter is “public schools in Ostrow may not start before the last week of August”: public schools, which are kept by the states. The case mentions no federal law and the rule takes away no right, so nothing else covers it. This answer leads to **Reserved powers** and **Power handed down to a city or county**.
 - If you miss: “The answer is **Neither: no federal law and no right covers it.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **A federal law that is meant to be the only rule**: Give that answer when a federal law covers the same matter, on a subject the Constitution gives Congress, and either it says no state may set its own rule, or the state or local rule makes it impossible to obey both. This case shows something else: the matter is one the Constitution leaves to the states (licences, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
-  - If you chose **A federal law that leaves room for the state’s rule**: Give that answer when a federal law covers the same matter but sets only a minimum, or lets the states act too, so that obeying the state or local rule also obeys the federal one. This case shows something else: the matter is one the Constitution leaves to the states (licences, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
-  - If you chose **A right the rule takes away**: Give that answer when the rule takes away a right the Constitution protects (to speak, to worship, to publish, to gather peacefully), which binds every state, city and county as well as the federal government. This case shows something else: the matter is one the Constitution leaves to the states (licences, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
+  - If you chose **A federal law that is meant to be the only rule**: Give that answer when a federal law covers the same matter, on a subject the Constitution gives Congress, and either it says no state may set its own rule, or the state or local rule makes it impossible to obey both. This case shows something else: the matter is one the Constitution leaves to the states (licenses, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
+  - If you chose **A federal law that leaves room for the state’s rule**: Give that answer when a federal law covers the same matter but sets only a minimum, or lets the states act too, so that obeying the state or local rule also obeys the federal one. This case shows something else: the matter is one the Constitution leaves to the states (licenses, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
+  - If you chose **A right the rule takes away**: Give that answer when the rule takes away a right the Constitution protects (to speak, to worship, to publish, to gather peacefully), which binds every state, city and county as well as the federal government. This case shows something else: the matter is one the Constitution leaves to the states (licenses, marriage, schools, most crime, renting a home, local streets and buildings), no federal law covers it, and the rule takes away no right the Constitution protects.
 - Taught on: “The second question, and what else covers the matter” (one tap opens the card).
 
 *End of part 4. You can stop here; your place is kept. Next: part 5, Two whole cases, then the drill.*
@@ -1387,21 +1387,21 @@ Sometimes the story names a federal law and it is not clear whether it covers th
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-dogs`]
 
 You have the five names and the two questions about them. Before you run a case yourself, watch two being run from the top, in the order they are asked. You are not asked anything until the end of each.
 
-*The dog licence fee*
+*The dog license fee*
 
-> Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that anyone who keeps more than four dogs must pay a yearly licence fee to the county.
+> Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that anyone who keeps more than four dogs must pay a yearly license fee to the county.
 
 **Question 1 of 3: Who makes the last decision in the case, or is asked to make it?**
 
 What it is for: sorts a case by who makes the decision it ends on: the lawmakers of the whole country, the President and the federal agencies, a judge, or the government of a state, city or county. Each of the four may do different things and is held back by different limits, so the question that comes next depends on whose decision it is. Many cases mention more than one of them. What comes before the last decision is how the matter reached it; the last decision, or the one someone asks for, is what the case is about.
 
-> Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, ⟦the Marsh County board voted⟧ that anyone who keeps more than four dogs must pay a yearly licence fee to the county.
+> Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, ⟦the Marsh County board voted⟧ that anyone who keeps more than four dogs must pay a yearly license fee to the county.
 
 Answer: **“A state, city or county government”**
 
@@ -1413,7 +1413,7 @@ Still possible: all five names this unit teaches.
 
 What it is for: tells apart a rule a state makes for itself from one a city, town or county makes with power the state handed down. A city, town or county has no power of its own in the Constitution: it has only what its state hands it, and the state can take it back. So who made the rule decides the name when nothing else covers the matter.
 
-> Too many stray dogs were being found in Marsh County. ⟦Using the power the state gives to counties, the Marsh County board voted⟧ that anyone who keeps more than four dogs must pay a yearly licence fee to the county.
+> Too many stray dogs were being found in Marsh County. ⟦Using the power the state gives to counties, the Marsh County board voted⟧ that anyone who keeps more than four dogs must pay a yearly license fee to the county.
 
 Answer: **“A city’s, a town’s or a county’s rule”**
 
@@ -1425,11 +1425,11 @@ Still possible: **Power handed down to a city or county**, **Preemption**, **Con
 
 What it is for: tells apart a state or local rule that stands alone, one that gives way to a federal law, one that stands beside a federal law, and one that a right forbids. A state or local rule is judged by what else covers its matter. A federal law meant to be the only rule wins; a federal minimum leaves room; a right the Constitution protects forbids the rule whoever made it; and where none of these reaches the matter, the state, or the city or county it handed power to, decides.
 
-> Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that ⟦anyone who keeps more than four dogs must pay a yearly licence fee to the county⟧.
+> Too many stray dogs were being found in Marsh County. Using the power the state gives to counties, the Marsh County board voted that ⟦anyone who keeps more than four dogs must pay a yearly license fee to the county⟧.
 
 Answer: **“Neither: no federal law and no right covers it”**
 
-The matter is “anyone who keeps more than four dogs must pay a yearly licence fee to the county”: a licence fee for keeping dogs, which is a local matter. The case names no federal law, and the rule takes away no right, so nothing else covers it: **“Neither: no federal law and no right covers it”**.
+The matter is “anyone who keeps more than four dogs must pay a yearly license fee to the county”: a license fee for keeping dogs, which is a local matter. The case names no federal law, and the rule takes away no right, so nothing else covers it: **“Neither: no federal law and no right covers it”**.
 
 Still possible: **Power handed down to a city or county**. Ruled out: **Reserved powers**, **Preemption**, **Concurrent powers** and **A right that binds the states**.
 
@@ -1459,11 +1459,11 @@ Here the questions and the likeness agree, so the answer stands. The questions c
 
 ### 40. A second whole case, where the story points the wrong way
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
 
 [reviewers only: card kind `worked`, id `worked-parkevent`]
 
-The dog licence was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case a march and a time limit make the story sound like a right, and the right is not what decides it. Watch which words each question picks out.
+The dog license was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case a march and a time limit make the story sound like a right, and the right is not what decides it. Watch which words each question picks out.
 
 *The park evening limit*
 
@@ -1531,17 +1531,17 @@ When that happens, go back to the questions and find the words in the case that 
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Many of these cases name a federal law, a state and a city all at once, and the one named first is often not the one that decides. That is on purpose. Read each story to its end, find who made the rule, and then ask what else covers the same matter.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Reserved powers / Power handed down to a city or county / Preemption / Concurrent powers / A right that binds the states.
 
 **Drill item 1 of 45**
 
-> ⟦The Tarn legislature passed a law⟧ that ⟦every teacher in a public school must hold a state teaching licence⟧.
+> ⟦The Tarn legislature passed a law⟧ that ⟦every teacher in a public school must hold a state teaching license⟧.
 
 Shown to you, with the words that decide each answer marked:
 - Who makes the last decision in the case, or is asked to make it? **A state, city or county government**
@@ -1552,7 +1552,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “every teacher in a public school must hold a state teaching licence”: public schools and a licence, both kept by the states. The case names no federal law, and the rule takes away no right.
+- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “every teacher in a public school must hold a state teaching license”: public schools and a license, both kept by the states. The case names no federal law, and the rule takes away no right.
   - Why not **Power handed down to a city or county**: Nobody below the state is named. The state’s own lawmakers made the rule, so it is not a city’s or a county’s.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
@@ -1561,7 +1561,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 2 of 45**
 
-> In the city of Hale, bins left on the pavement all day were blocking people on foot. ⟦The Hale city council passed an ordinance⟧ that ⟦bins must be taken in by seven in the evening on collection days⟧.
+> In the city of Hale, trash cans left on the sidewalk all day were blocking people on foot. ⟦The Hale city council passed an ordinance⟧ that ⟦trash cans must be taken in by seven in the evening on collection days⟧.
 
 Shown to you, with the words that decide each answer marked:
 - Who makes the last decision in the case, or is asked to make it? **A state, city or county government**
@@ -1572,7 +1572,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “bins must be taken in by seven in the evening on collection days”: rubbish collection, a local matter. No federal law is named, and no right is taken away.
+- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “trash cans must be taken in by seven in the evening on collection days”: trash collection, a local matter. No federal law is named, and no right is taken away.
   - Why not **Reserved powers**: The state’s legislature did not make this rule. A city council did, and the rule covers one city.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
@@ -1643,7 +1643,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 6 of 45**
 
-> Anglers in the state of Pelham grumbled that the yearly fishing licence cost too much. The Pelham legislature voted to raise the fee for a state fishing licence.
+> Anglers in the state of Pelham grumbled that the yearly fishing license cost too much. The Pelham legislature voted to raise the fee for a state fishing license.
 
 **You are asked:** Is the rule the state’s own, or a city’s or a county’s?
 
@@ -1652,7 +1652,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **The state’s own rule.**” The rule was made by one state’s lawmakers: “The Pelham legislature voted”. The licence is the state’s own, and no city, town or county is named. This answer leads to **Reserved powers**, **Preemption**, **Concurrent powers** and **A right that binds the states**.
+- If you are right: “Right: **The state’s own rule.**” The rule was made by one state’s lawmakers: “The Pelham legislature voted”. The license is the state’s own, and no city, town or county is named. This answer leads to **Reserved powers**, **Preemption**, **Concurrent powers** and **A right that binds the states**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question, and what it does and does not decide” (one tap opens the card).
@@ -1823,7 +1823,7 @@ Shown to you, with the words that decide each answer marked:
 - If you chose “Who made the rule: Congress, or a state, a city or a county?”: that question separates **A right that binds the states** and **Beyond Congress’s power**.
 - If you chose “Does the story end with a judge being asked about how an accused person was treated, or with a rule made by a state, a city or a county?”: that question separates **A right that binds the states** and **The rights of the accused**.
 - If you chose “Who made the rule: a state, or Congress?”: that question separates **Reserved powers** and **Beyond Congress’s power**.
-- Taught on: “A licence to sell food, an approval to hand out a newspaper” (one tap opens the card).
+- Taught on: “A license to sell food, an approval to hand out a newspaper” (one tap opens the card).
 
 **Drill item 15 of 45**
 
@@ -1961,15 +1961,15 @@ Shown to you, with the words that decide each answer marked:
 
 - A federal law says that no state may require anything different.
 - The state rule asks for more than a federal minimum, and a person who follows it also follows the federal law.
-- The legislature made a rule on licences, and the case names no federal law at all.
-- The rule punishes people for criticising the mayor.
+- The legislature made a rule on licenses, and the case names no federal law at all.
+- The rule punishes people for criticizing the mayor.
 
 **Shown as soon as you answer**
 
 - The answer is: The state rule asks for more than a federal minimum, and a person who follows it also follows the federal law. That detail is a federal law that sets a floor and invites the states to add, with a state rule that meets both.
 - If you chose “A federal law says that no state may require anything different.”: that belongs to **Preemption**.
-- If you chose “The legislature made a rule on licences, and the case names no federal law at all.”: that belongs to **Reserved powers**.
-- If you chose “The rule punishes people for criticising the mayor.”: that belongs to **A right that binds the states**.
+- If you chose “The legislature made a rule on licenses, and the case names no federal law at all.”: that belongs to **Reserved powers**.
+- If you chose “The rule punishes people for criticizing the mayor.”: that belongs to **A right that binds the states**.
 - Taught on: “Concurrent powers: what it is like” (one tap opens the card).
 
 **Drill item 24 of 45**
@@ -1977,14 +1977,14 @@ Shown to you, with the words that decide each answer marked:
 **You are asked:** This is **A right that binds the states**. Which of these would you expect to hear?
 
 - “You can’t be punished for saying that. The state can’t make it illegal.”
-- “The council voted on where the bins go.”
+- “The council voted on where the trash cans go.”
 - “Congress has written one set of rules for the whole country.”
 - “The state licenses plumbers, as every state does.”
 
 **Shown as soon as you answer**
 
 - The answer is: “You can’t be punished for saying that. The state can’t make it illegal.” The speaker is saying that a right stops the rule, whoever made it.
-- If you chose ““The council voted on where the bins go.””: that belongs to **Power handed down to a city or county**.
+- If you chose ““The council voted on where the trash cans go.””: that belongs to **Power handed down to a city or county**.
 - If you chose ““Congress has written one set of rules for the whole country.””: that belongs to **Preemption**.
 - If you chose ““The state licenses plumbers, as every state does.””: that belongs to **Reserved powers**.
 - Taught on: “A right that binds the states: what it is like” (one tap opens the card).
@@ -2014,7 +2014,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 26 of 45**
 
-> Shoppers in the town of Orsley asked for the town hall car park to be free on Sundays. After hearing from the shops nearby, ⟦the Orsley town council voted to keep the fee⟧.
+> Shoppers in the town of Orsley asked for the town hall parking lot to be free on Sundays. After hearing from the shops nearby, ⟦the Orsley town council voted to keep the fee⟧.
 
 Shown to you, with the words that decide each answer marked:
 - Who makes the last decision in the case, or is asked to make it? **A state, city or county government**
@@ -2024,14 +2024,14 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “to keep the fee” for a town car park, a local matter. No federal law is named and no right is touched.
+- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “to keep the fee” for a town parking lot, a local matter. No federal law is named and no right is touched.
   - Why not **Reserved powers**: The state’s legislature is not named. A town council decided, so the rule is a town’s, not the state’s own.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If the state’s legislature had set the fee for every town car park in the state, the answer to the first question would be **“The state’s own rule”** and the name would be **Reserved powers**.
+- What would make it a different name: If the state’s legislature had set the fee for every town parking lot in the state, the answer to the first question would be **“The state’s own rule”** and the name would be **Reserved powers**.
 - Taught on: “A city or county ruling with power its state gave it” (one tap opens the card).
 
 **Drill item 27 of 45**
@@ -2063,13 +2063,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 28 of 45**
 
-> After complaints about unqualified driving instructors, the Calder legislature passed a law that a person must hold a state licence to give driving lessons for money.
+> After complaints about unqualified driving instructors, the Calder legislature passed a law that a person must hold a state license to give driving lessons for money.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “a person must hold a state licence to give driving lessons for money”: a trade licence, which the states grant. The case names no federal law and the rule takes away no right.
+- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “a person must hold a state license to give driving lessons for money”: a trade license, which the states grant. The case names no federal law and the rule takes away no right.
   - Why not **Power handed down to a city or county**: No city, town or county is named. The state’s legislature made the rule.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Calder legislature passed a law”.
@@ -2078,7 +2078,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Power handed down to a city or county**, the look-alike card’s lines follow: Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours. In **Reserved powers** the state itself made the rule: its legislature, its governor or one of its own offices. In **Power handed down to a city or county** a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away. Who made the rule: the state itself, or a city, a town or a county?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If a city council had set up the licence for instructors in its own city, the answer to the first question would be **“A city’s, a town’s or a county’s rule”** and the name would be **Power handed down to a city or county**.
+- What would make it a different name: If a city council had set up the license for instructors in its own city, the answer to the first question would be **“A city’s, a town’s or a county’s rule”** and the name would be **Power handed down to a city or county**.
 - Taught on: “A state ruling on a matter the Constitution leaves to the states” (one tap opens the card).
 
 **Drill item 29 of 45**
@@ -2103,13 +2103,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 30 of 45**
 
-> The Harrow County library keeps a rack of local newspapers. One of them has criticised the county board. The Harrow County board voted that the library may not display any newspaper that criticises the board.
+> The Harrow County library keeps a rack of local newspapers. One of them has criticized the county board. The Harrow County board voted that the library may not display any newspaper that criticizes the board.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A right that binds the states**.” Does a federal law or a right in the Constitution cover the same matter? **A right the rule takes away.** The rule takes away a right: “the library may not display any newspaper that criticises the board”. A newspaper is published to be read, and the rule bans it because of what it says about the board.
+- If you are right: “Right: **A right that binds the states**.” Does a federal law or a right in the Constitution cover the same matter? **A right the rule takes away.** The rule takes away a right: “the library may not display any newspaper that criticizes the board”. A newspaper is published to be read, and the rule bans it because of what it says about the board.
   - Why not **Power handed down to a city or county**: A county does control its own library. But this rule is aimed at what a newspaper says, and a county may not take away a right.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a county board: “The Harrow County board voted”.
@@ -2245,18 +2245,18 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 37 of 45**
 
-> Congress has written rules for the safety of the toys sold across the country. After a fire in a block of rented flats, the Brenmore legislature passed a law that every rented flat must have a working smoke alarm.
+> Congress has written rules for the safety of the toys sold across the country. After a fire in a rented apartment building, the Brenmore legislature passed a law that every rented apartment must have a working smoke alarm.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “every rented flat must have a working smoke alarm”: renting a home. The federal rules in the story are about toys, a different matter, so no federal law covers this one, and no right is taken away.
-  - Why not **Preemption**: A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about flats. A federal law on a different matter changes nothing.
+- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “every rented apartment must have a working smoke alarm”: renting a home. The federal rules in the story are about toys, a different matter, so no federal law covers this one, and no right is taken away.
+  - Why not **Preemption**: A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about apartments. A federal law on a different matter changes nothing.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “the Brenmore legislature passed a law”. Congress is in the first sentence only as background.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “the Brenmore legislature passed a law”.
-  - If you chose **A federal law that is meant to be the only rule**: A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about flats. A federal law on a different matter changes nothing.
+  - If you chose **A federal law that is meant to be the only rule**: A federal law is named, as it was for the stricter crib standard. But that law is about toys, and the state’s rule is about apartments. A federal law on a different matter changes nothing.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Preemption**, the look-alike card’s lines follow: In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself. In **Reserved powers** nothing federal covers the matter, so the state decides. In **Preemption** a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way. Has Congress already written a law on this same matter, and is it meant to be the only rule?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2267,14 +2267,14 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 38 of 45**
 
-> The Halvard legislature passed a law that a book may be sold on a public sidewalk only with a licence from the state, and the state will refuse a licence to anyone who sells books that criticise the governor.
+> The Halvard legislature passed a law that a book may be sold on a public sidewalk only with a license from the state, and the state will refuse a license to anyone who sells books that criticize the governor.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A right that binds the states**.” Does a federal law or a right in the Constitution cover the same matter? **A right the rule takes away.** The rule takes away a right: “the state will refuse a licence to anyone who sells books that criticise the governor”. A licence is something a state may ask for, but refusing it because of what books say takes away the right to publish.
-  - Why not **Reserved powers**: A licence to sell on a sidewalk sounds like a state’s ordinary business, as the food stall was. But this licence is refused because of what the books say, and a state may not take away a right.
+- If you are right: “Right: **A right that binds the states**.” Does a federal law or a right in the Constitution cover the same matter? **A right the rule takes away.** The rule takes away a right: “the state will refuse a license to anyone who sells books that criticize the governor”. A license is something a state may ask for, but refusing it because of what books say takes away the right to publish.
+  - Why not **Reserved powers**: A license to sell on a sidewalk sounds like a state’s ordinary business, as the food stall was. But this license is refused because of what the books say, and a state may not take away a right.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Halvard legislature passed a law”.
   - Is the rule the state’s own, or a city’s or a county’s? **The state’s own rule.** The rule was made by one state’s lawmakers: “The Halvard legislature passed a law”.
@@ -2282,8 +2282,8 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Reserved powers**, the look-alike card’s lines follow: Both are rules a state makes about what people may do in a public place. In **Reserved powers** the rule takes away no right, so the state may make it. In **A right that binds the states** a right stops the rule: one of the freedoms the Constitution guards is taken from people, so the state may not make it. Does the rule take away a right to speak, to worship, to publish or to gather peacefully?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- This case may have brought back *The food stall licence*, which was **Reserved powers**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the state asked for the same licence from every seller on the sidewalk and refused none because of what they sell, the rule would take away no right and the name would be **Reserved powers**.
+- This case may have brought back *The food stall license*, which was **Reserved powers**. When a likeness and the answers disagree, go by the words that answer the question.
+- What would make it a different name: If the state asked for the same license from every seller on the sidewalk and refused none because of what they sell, the rule would take away no right and the name would be **Reserved powers**.
 - Taught on: “A state or city rule that a right forbids” (one tap opens the card).
 
 **Drill item 39 of 45**
@@ -2310,13 +2310,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 40 of 45**
 
-> A group planned a march against a new road in the city of Hale. The Hale city council has a rule that any march in the city, whatever it is about, must keep to the pavement on one side of the road. The group asked to march down the middle of the main road, and the council voted no.
+> A group planned a march against a new road in the city of Hale. The Hale city council has a rule that any march in the city, whatever it is about, must keep to the sidewalk on one side of the road. The group asked to march down the middle of the main road, and the council voted no.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is where a march may go: “any march in the city, whatever it is about, must keep to the pavement on one side of the road”. The rule is the same for every march, whatever it is about, so it takes away no right. No federal law is named.
+- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is where a march may go: “any march in the city, whatever it is about, must keep to the sidewalk on one side of the road”. The rule is the same for every march, whatever it is about, so it takes away no right. No federal law is named.
   - Why not **A right that binds the states**: A march is people gathering to speak, so the case sounds like a right being taken away, as the rally ban did. But the rule is about where any march may go and does not aim at what is said.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a city council: “the council voted no”. The group only asked.
@@ -2448,7 +2448,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 41. What to carry away
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2490,7 +2490,7 @@ Does a federal law or a right in the Constitution cover the same matter?
 
 ### 42. Where would you meet this?
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2522,13 +2522,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 15**
 
-> Stolen goods kept turning up in pawn shops in the state of Tarn. The Tarn legislature passed a law that a pawnbroker must hold a state licence and must keep each item for at least sixty days.
+> Stolen goods kept turning up in pawn shops in the state of Tarn. The Tarn legislature passed a law that a pawnbroker must hold a state license and must keep each item for at least sixty days.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “a pawnbroker must hold a state licence and must keep each item for at least sixty days”: a trade licence and how a shop does business, which the states decide. No federal law is named and no right is taken away.
+- If you are right: “Right: **Reserved powers**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “a pawnbroker must hold a state license and must keep each item for at least sixty days”: a trade license and how a shop does business, which the states decide. No federal law is named and no right is taken away.
   - Why not **Power handed down to a city or county**: No city, town or county is named. The state’s legislature made the rule.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a state’s lawmakers: “The Tarn legislature passed a law”.
@@ -2584,13 +2584,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 15**
 
-> Residents of Ashby were upset that a tall block of flats had been built beside the harbour. The Ashby town council voted that no new building on Harbour Road may be taller than three floors.
+> Residents of Ashby were upset that a tall apartment building had been built beside the harbor. The Ashby town council voted that no new building on Harbor Road may be taller than three floors.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “no new building on Harbour Road may be taller than three floors”: zoning, which is which kinds of building may go where, a local matter. No federal law is named, and no right is taken away.
+- If you are right: “Right: **Power handed down to a city or county**.” Does a federal law or a right in the Constitution cover the same matter? **Neither: no federal law and no right covers it.** The matter is “no new building on Harbor Road may be taller than three floors”: zoning, which is which kinds of building may go where, a local matter. No federal law is named, and no right is taken away.
   - Why not **Reserved powers**: The state’s legislature did not make the rule. A town council did, and the rule covers one road.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a town council: “The Ashby town council voted”.
@@ -2766,13 +2766,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 13 of 15**
 
-> A club in Pike County planned a parade through the county square, with a banner that said the sheriff had mishandled a case. The Pike County board voted that no parade may go through the county square if its banners criticise the sheriff.
+> A club in Pike County planned a parade through the county square, with a banner that said the sheriff had mishandled a case. The Pike County board voted that no parade may go through the county square if its banners criticize the sheriff.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → Is the rule the state’s own, or a city’s or a county’s? → Does a federal law or a right in the Constitution cover the same matter? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A right that binds the states**.” Does a federal law or a right in the Constitution cover the same matter? **A right the rule takes away.** The rule takes away a right: “no parade may go through the county square if its banners criticise the sheriff”. It stops a parade because of what its banners say.
+- If you are right: “Right: **A right that binds the states**.” Does a federal law or a right in the Constitution cover the same matter? **A right the rule takes away.** The rule takes away a right: “no parade may go through the county square if its banners criticize the sheriff”. It stops a parade because of what its banners say.
   - Why not **Power handed down to a city or county**: A county does control its own square. But this rule is aimed at what a banner says, and a county may not take away a right.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **A state, city or county government.** The case ends with a decision by a county board: “The Pike County board voted”.

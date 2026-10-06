@@ -1,6 +1,6 @@
 # Learner view: Statistical Claims, Unit Three: Who was counted
 
-*Four ways the people or things in a figure can fail to stand for the group the claim is about, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four ways the people or things in a figure can fail to stand for the group the claim is about, and how to tell which one you are looking at.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before you trust a figure: who is in it, and how did they get there?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 33*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -25,7 +25,7 @@ After this unit you can read a claim made with numbers, such as a headline, an a
 
 You have met figures like these. A magazine says, "Four in five workers want a four-day week." An ad says, "Nine in ten people who try our studio say it helps them." A neighbor says, "Nothing made today will last like my grandfather’s tools." A newspaper says, "The best school in the county for reading." Each is a figure, and each was worked out from some particular people or things.
 
-Before a figure can say anything about a group, someone has to be counted, and the first question to put to every figure is who is in it and how they got there. Some are in because they were picked fairly. Others are in because of what happened to them: they stayed, they spoke up, they replied, or there were only a few to begin with. In each of those cases the figure can be an exact picture of the wrong group, and the claim then speaks for a bigger group than the figure can. This unit teaches four ways that happens, the one question that tells them apart, and how each looks beside the claim that holds which it is most often mistaken for. A figure from only some of a group is not for that reason a figure that goes wrong, and you will practise telling the difference.
+Before a figure can say anything about a group, someone has to be counted, and the first question to put to every figure is who is in it and how they got there. Some are in because they were picked fairly. Others are in because of what happened to them: they stayed, they spoke up, they replied, or there were only a few to begin with. In each of those cases the figure can be an exact picture of the wrong group, and the claim then speaks for a bigger group than the figure can. This unit teaches four ways that happens, the one question that tells them apart, and how each looks beside the claim that holds which it is most often mistaken for. A figure from only some of a group is not for that reason a figure that goes wrong, and you will practice telling the difference.
 
 **What Unit One taught, in one place.** The first question is **“Which part of the claim goes wrong first?”** Its answers:
 
@@ -60,11 +60,11 @@ The unit has three parts, and you can stop after any of them.
 2. Figures from the few who replied, and from only a handful
 3. The question, two whole claims, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Counting only the ones that lasted
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 33*
 
 [reviewers only: card kind `meet`, id `meet-survivor`]
 
@@ -99,7 +99,7 @@ You may also hear this called “looking only at the winners”. That means the 
 
 ### 3. Survivorship bias: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 33*
 
 [reviewers only: card kind `again`, id `again-survivor`]
 
@@ -134,7 +134,7 @@ Both also read the figure as more than it is. The newsletter reads what the surv
 
 ### 4. The story does not decide which way the figure leans
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 33*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -154,7 +154,7 @@ Two more things change on purpose: how large the figure sounds, and how big the 
 
 ### 5. Survivorship bias: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-survivor`]
 
@@ -194,7 +194,7 @@ Do not copy what the survivors did until you have seen whether the ones that did
 
 ### 6. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 33*
 
 [reviewers only: card kind `check`, id `check-survivor`]
 
@@ -215,7 +215,7 @@ The pieces you can tap:
 
 ### 7. Survivorship bias or A fair count: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-survivor-samp`]
 
@@ -259,7 +259,7 @@ How many started, and are all of them in the figure? If some are missing, are th
 
 ### 8. A figure from the people who chose to answer
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 33*
 
 [reviewers only: card kind `meet`, id `meet-selfselect`]
 
@@ -288,13 +288,13 @@ It is not how many answered that matters, but who decided that they would be cou
 
 **Its answer for a case like this one:** **“They chose to answer, when anyone could”**
 
-The name for this is **Self-selection bias**. "Self-selection" means choosing yourself: the people in the figure picked themselves into it, and "bias" is the lean that results, towards the people who feel most like answering.
+The name for this is **Self-selection bias**. "Self-selection" means choosing yourself: the people in the figure picked themselves into it, and "bias" is the lean that results, toward the people who feel most like answering.
 
 You may also hear this called “a self-selected sample” or “a voluntary poll”. Those words mean the same thing here, and from now on this unit uses one name: **Self-selection bias**.
 
 ### 9. Self-selection bias: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 33*
 
 [reviewers only: card kind `again`, id `again-selfselect`]
 
@@ -329,7 +329,7 @@ In both, the claim speaks for a wider group than the one that answered: workers 
 
 ### 10. Self-selection bias: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-selfselect`]
 
@@ -339,7 +339,7 @@ What you point to is that the people chose themselves. Here is the rest of the p
 
 - Nobody is picked. A call-in line, a website vote, a comment card, a box, a link in a message: whoever sees it and wants to answers.
 - The figure often comes with a big count, and the count is meant to impress: "thousands of votes", "over 50,000 responses".
-- The people who answer are the ones with a reason to: strong feelings, a grievance, great enthusiasm, spare time or something at stake. People who feel little do not bother. The answers lean towards strong feelings, and the figure does not say how many feel nothing.
+- The people who answer are the ones with a reason to: strong feelings, a grievance, great enthusiasm, spare time or something at stake. People who feel little do not bother. The answers lean toward strong feelings, and the figure does not say how many feel nothing.
 - The group that answered is often unlike the group the claim speaks for: the listeners of one radio show, the readers of one magazine, the customers who write reviews.
 - The claim usually does not say "the people who answered". It says "the town", "workers", "customers", "voters". The words that give it away are the ones that speak for more than answered.
 
@@ -368,7 +368,7 @@ Treat the size of the count as no evidence: 3,200 who chose themselves is as one
 
 ### 11. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 33*
 
 [reviewers only: card kind `check`, id `check-selfselect`]
 
@@ -388,7 +388,7 @@ Treat the size of the count as no evidence: 3,200 who chose themselves is as one
 
 ### 12. Survivorship bias or Self-selection bias: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-survivor-selfselect`]
 
@@ -431,11 +431,11 @@ Did the people or things in the figure get in by lasting to the end, or by choos
 
 ### 13. Volunteers, split by lottery
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 33*
 
 [reviewers only: card kind `exception`, id `exc-volunteers`]
 
-You now know that a figure from people who chose to answer leans towards them. People can also volunteer for a study, and the claim from it can still hold. This card shows the case where it does.
+You now know that a figure from people who chose to answer leans toward them. People can also volunteer for a study, and the claim from it can still hold. This card shows the case where it does.
 
 *The sleep lab’s pillow*
 
@@ -490,7 +490,7 @@ So volunteers are not a sign of this name by themselves. Look for the thing that
 
 ### 14. A figure from the few who replied
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 33*
 
 [reviewers only: card kind `meet`, id `meet-nonresp`]
 
@@ -528,7 +528,7 @@ You may also hear this called “a low response rate”. That means the same thi
 
 ### 15. Non-response bias: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 33*
 
 [reviewers only: card kind `again`, id `again-nonresp`]
 
@@ -563,7 +563,7 @@ In the union case the silent ones are 510 of 600. If they would all have been ag
 
 ### 16. Non-response bias: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-nonresp`]
 
@@ -603,7 +603,7 @@ Say the figure for the ones who answered, and say what you would need to see: a 
 
 ### 17. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 33*
 
 [reviewers only: card kind `check`, id `check-nonresp`]
 
@@ -625,7 +625,7 @@ Say the figure for the ones who answered, and say what you would need to see: a 
 
 ### 18. Self-selection bias or Non-response bias: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-selfselect-nonresp`]
 
@@ -668,7 +668,7 @@ Was everyone on a known list asked by name, or could anyone who saw the call ans
 
 ### 19. Non-response bias or A fair count: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-nonresp-samp`]
 
@@ -712,7 +712,7 @@ How many of the list answered, and what was done about the ones who did not?
 
 ### 20. A wrong idea: "A hundred thousand people voted, so it can’t be wrong"
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 33*
 
 [reviewers only: card kind `refute`, id `refute-bigger`]
 
@@ -733,7 +733,7 @@ Now take 400 households picked by lottery from the town’s full list, with 360 
 
 ### 21. A group so small that luck moves the figure
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 33*
 
 [reviewers only: card kind `meet`, id `meet-smalln`]
 
@@ -770,7 +770,7 @@ You may also hear this called “a small sample” or “small numbers” or “
 
 ### 22. Too few to trust: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 33*
 
 [reviewers only: card kind `again`, id `again-smalln`]
 
@@ -803,7 +803,7 @@ In both, the figure is read as meaning something: the best school, the highest f
 
 ### 23. Too few to trust: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 33*
 
 [reviewers only: card kind `portrait`, id `portrait-smalln`]
 
@@ -843,7 +843,7 @@ Say what the figure shows for the group it came from, and no more: "9 of the 10 
 
 ### 24. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 33*
 
 [reviewers only: card kind `check`, id `check-smalln`]
 
@@ -867,7 +867,7 @@ Say what the figure shows for the group it came from, and no more: "9 of the 10 
 
 ### 25. Non-response bias or Too few to trust: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-nonresp-smalln`]
 
@@ -910,7 +910,7 @@ Out of how many were the few counted: a much bigger list of people who did not r
 
 ### 26. Too few to trust or A fair count: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 33*
 
 [reviewers only: card kind `lookalike`, id `look-smalln-samp`]
 
@@ -960,7 +960,7 @@ What would the figure be with one or two more or fewer, and does the claim say m
 
 ### 27. The question you have been answering all along
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 27 of 33*
 
 [reviewers only: card kind `question`, id `q-how`]
 
@@ -1028,7 +1028,7 @@ Sometimes two of the answers seem to fit. A figure from 12 replies could be a fe
 
 ### 28. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 33*
 
 [reviewers only: card kind `check`, id `check-how`]
 
@@ -1052,7 +1052,7 @@ Sometimes two of the answers seem to fit. A figure from 12 replies could be a fe
 
 ### 29. A whole claim, from the first question to the name
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 33*
 
 [reviewers only: card kind `worked`, id `worked-poll`]
 
@@ -1112,7 +1112,7 @@ Here the likeness agrees with the answer, so the answer stands. The question com
 
 ### 30. A second whole claim, where the story points the wrong way
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 33*
 
 [reviewers only: card kind `worked`, id `worked-yoga`]
 
@@ -1172,11 +1172,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these claims have nothing wrong with them: the figure comes from everyone, from people picked by lottery from a full list and nearly all heard from, or from a big enough group. A claim that sounds sure of itself is not for that reason a sound one, and a claim with few people in it is not for that reason a faulty one. Read how the people or things got into the figure, and go by that.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: Survivorship bias / Self-selection bias / Non-response bias / Too few to trust.
 
@@ -1372,7 +1372,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 11 of 40**
 
-> A school nurse measured the height of every one of the 150 pupils in the school on one day. The average was 140 centimeters. The nurse's note says: 'The average height of the pupils in our school is 140 centimeters.'
+> A school nurse measured the height of every one of the 150 students in the school on one day. The average was 140 centimeters. The nurse's note says: 'The average height of the students in our school is 140 centimeters.'
 
 **You are asked:** Which part of the claim goes wrong first?
 
@@ -1384,7 +1384,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing goes wrong.**” Everyone the claim speaks for is counted: “measured the height of every one of the 150 pupils in the school on one day”. The claim stays with the pupils of this school. This answer leads to **A fair count**, **A real change**, **A fair comparison** and **A fair test**.
+- If you are right: “Right: **Nothing goes wrong.**” Everyone the claim speaks for is counted: “measured the height of every one of the 150 students in the school on one day”. The claim stays with the students of this school. This answer leads to **A fair count**, **A real change**, **A fair comparison** and **A fair test**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught in Unit One (one tap opens the card).
@@ -1475,7 +1475,7 @@ Shown to you, with the words that decide each answer marked:
 - Anyone who saw the link could answer.
 - Everyone on the list was asked, and 9 in 10 of them replied.
 - Only 12 of the 800 people asked sent the form back.
-- The figure comes from a class of 9 pupils.
+- The figure comes from a class of 9 students.
 
 **Shown as soon as you answer**
 
@@ -1483,7 +1483,7 @@ Shown to you, with the words that decide each answer marked:
 - If you chose “Anyone who saw the link could answer.”: that belongs to **Self-selection bias**.
 - If you chose “Everyone on the list was asked, and 9 in 10 of them replied.”: that belongs to **A fair count**.
 - If you chose “Only 12 of the 800 people asked sent the form back.”: that belongs to **Non-response bias**.
-- If you chose “The figure comes from a class of 9 pupils.”: that belongs to **Too few to trust**.
+- If you chose “The figure comes from a class of 9 students.”: that belongs to **Too few to trust**.
 - Taught on: “Survivorship bias: what it is like” (one tap opens the card).
 
 **Drill item 17 of 40**
@@ -1532,7 +1532,7 @@ Shown to you, with the words that decide each answer marked:
 - "Every bank still open in town has been here for forty years."
 - "Thousands of listeners have called in, and they agree."
 - "Of the members who returned the form, nine in ten approve."
-- "We counted all 1,200 pupils, and 8 in 100 missed more than ten days."
+- "We counted all 1,200 students, and 8 in 100 missed more than ten days."
 
 **Shown as soon as you answer**
 
@@ -1540,7 +1540,7 @@ Shown to you, with the words that decide each answer marked:
 - If you chose "Every bank still open in town has been here for forty years.": that belongs to **Survivorship bias**.
 - If you chose "Thousands of listeners have called in, and they agree.": that belongs to **Self-selection bias**.
 - If you chose "Of the members who returned the form, nine in ten approve.": that belongs to **Non-response bias**.
-- If you chose "We counted all 1,200 pupils, and 8 in 100 missed more than ten days.": that belongs to **A fair count**.
+- If you chose "We counted all 1,200 students, and 8 in 100 missed more than ten days.": that belongs to **A fair count**.
 - Taught on: “Too few to trust: what it is like” (one tap opens the card).
 
 **Drill item 20 of 40**
@@ -1772,21 +1772,21 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 31 of 40**
 
-> A school's attendance office counted the absences of every one of its 1,200 pupils for the autumn term and found that 96 had missed more than 10 days. The office's report says: 'About 8 pupils in every 100 missed more than ten days this term.'
+> A school's attendance office counted the absences of every one of its 1,200 students for the autumn term and found that 96 had missed more than 10 days. The office's report says: 'About 8 students in every 100 missed more than ten days this term.'
 
 **You are asked, in order:** Which part of the claim goes wrong first? → What does the claim say the figures show? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A fair count**.” What does the claim say the figures show? **A figure for one group.** The claim gives one share for one group at one time and goes no further: “About 8 pupils in every 100 missed more than ten days this term”.
-  - Why not **Non-response bias**: Nobody was asked and nobody could fail to reply. The office counted from its own records of every pupil.
+- If you are right: “Right: **A fair count**.” What does the claim say the figures show? **A figure for one group.** The claim gives one share for one group at one time and goes no further: “About 8 students in every 100 missed more than ten days this term”.
+  - Why not **Non-response bias**: Nobody was asked and nobody could fail to reply. The office counted from its own records of every student.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Which part of the claim goes wrong first? **Nothing goes wrong.** Every pupil is counted, from the school’s own records: “counted the absences of every one of its 1,200 pupils for the autumn term”. 96 of 1,200 is 8 in every 100.
+  - Which part of the claim goes wrong first? **Nothing goes wrong.** Every student is counted, from the school’s own records: “counted the absences of every one of its 1,200 students for the autumn term”. 96 of 1,200 is 8 in every 100.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Non-response bias**, the look-alike card’s lines follow: Both ask the same list and can report the same figure. In **Non-response bias** many on the list did not reply and nothing was done to hear from them, so the replies are read as the whole list. In **A fair count** most of the list answered, or the ones who did not were followed up until most had, so the figure is a fair picture of the list. How many of the list answered, and what was done about the ones who did not?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If the office had counted only the pupils who were at school on the last day of term, the figure would leave out the ones who missed the most, and the answer would be **“Only the ones that lasted were counted”**.
+- What would make it a different name: If the office had counted only the students who were at school on the last day of term, the figure would leave out the ones who missed the most, and the answer would be **“Only the ones that lasted were counted”**.
 
 **Drill item 32 of 40**
 
@@ -1983,7 +1983,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 31. What to carry away
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 33*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2024,7 +2024,7 @@ How did the people or things in the figure get into it?
 
 ### 32. Where would you meet this?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 33*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2047,7 +2047,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 33. A plan, if you want one
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 33*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 33*
 
 [reviewers only: card kind `plan`, id `plan`]
 

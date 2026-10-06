@@ -1,6 +1,6 @@
 # Learner view: Psychology, Unit Three: Something one person does to another
 
-*Four things one person can do to another that work against them, and how to tell them from the many cases where none of them is happening.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four things one person can do to another that work against them, and how to tell them from the many cases where none of them is happening.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four things one person can do to another, and the ordinary exchange that is none of them
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -25,7 +25,7 @@ After this unit you can read a short account of one person saying or doing somet
 
 You have heard all of these. 'That never happened.' 'You're imagining things.' 'Why would you accuse me of that?' 'You're the one who's always late.' 'I've never felt like this about anyone.' Each of them can be the sound of something done to a person that works against them. Each of them can also be what an ordinary person says in an ordinary row.
 
-This unit teaches four things of the first kind, and one name for the second. The second is the one you will use most. Most arguments, complaints, defences and compliments are not any of the four, and a person who has just been told something unwelcome, or wrongly accused, or hurt, can say every one of those sentences without doing anything to anyone. A sentence on its own cannot tell you which you are hearing, and neither can how upset anyone is. The words and events in the case can, and this unit teaches which ones to look for.
+This unit teaches four things of the first kind, and one name for the second. The second is the one you will use most. Most arguments, complaints, defenses and compliments are not any of the four, and a person who has just been told something unwelcome, or wrongly accused, or hurt, can say every one of those sentences without doing anything to anyone. A sentence on its own cannot tell you which you are hearing, and neither can how upset anyone is. The words and events in the case can, and this unit teaches which ones to look for.
 
 **What Unit One taught, in one place.** The first question is **“What kind of thing is this?”** Its answers:
 
@@ -63,11 +63,11 @@ The unit has five parts, and you can stop after any of them.
 4. The question
 5. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Telling someone, again and again, that what happened did not happen
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 42*
 
 [reviewers only: card kind `meet`, id `meet-gaslight`]
 
@@ -75,12 +75,12 @@ This unit is about what one person says or does to another. The first of the fiv
 
 *The car repair*
 
-> In February Tess paid £600 to fix the car she shares with her partner Jonas, because he had texted her: 'I'll pay my half on Friday.' He never did. Since then, ⟦whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamt that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'⟧ Tess now rereads her old messages before she raises anything he has agreed to, and has asked her sister, 'Am I remembering this wrong?'
+> In February Tess paid $600 to fix the car she shares with her partner Jonas, because he had texted her: 'I'll pay my half on Friday.' He never did. Since then, ⟦whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamed that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'⟧ Tess now rereads her old messages before she raises anything he has agreed to, and has asked her sister, 'Am I remembering this wrong?'
 
 Stripped of its story, the case is this:
 
 - Something really happened: Jonas texted that he would pay half, and Tess still has the text.
-- Afterwards he told her that it did not happen, and that she had dreamt it up or muddled it.
+- Afterward he told her that it did not happen, and that she had dreamed it up or muddled it.
 - He did not say it once. He said it whenever she raised it, and he was still saying it in May.
 - Tess has started to doubt her own memory: she rereads her old messages, and she has asked her sister, "Am I remembering this wrong?"
 
@@ -104,20 +104,20 @@ You may also hear this called “making someone doubt their own mind”. That me
 
 ### 3. Gaslighting: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 42*
 
 [reviewers only: card kind `again`, id `again-gaslight`]
 
 The car repair gave you what to point to: something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory. Here is a second case with a completely different story.
 
-The first case again, in one line. *The car repair*: “whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamt that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'”
+The first case again, in one line. *The car repair*: “whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamed that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'”
 
 The second case.
 
 *The weekly report*
 
 > In January Ana's manager, Dev, emailed her: 'Please send me the sales numbers every Friday.' She did, for two months. Then Dev began saying, in front of the team and in private, that he had never asked for them. Every week since, when she brings it up, he says, 'You're getting confused about what I said,' or 'I don't know where you get these ideas.' This has gone on for four months. Ana now keeps a diary of every instruction she is given, and has asked two colleagues whether she is losing track of things.
-**You are asked:** In *The car repair*, these words show it: “whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamt that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The car repair*, these words show it: “whenever she mentions it, he says, 'I never said I'd pay half. You must have dreamed that up.' In March it was, 'You always get things muddled.' In May it was, 'We've been over this. Nothing like that was ever said.'”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “In January Ana's manager, Dev, emailed her: 'Please send me the sales numbers every Friday.' She did, for two months.”
@@ -137,7 +137,7 @@ One story is a couple and a car, the other is a manager and a weekly report. The
 
 ### 4. The story never decides the answer
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 42*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -157,7 +157,7 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 ### 5. Gaslighting: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-gaslight`]
 
@@ -187,7 +187,7 @@ You may meet it from the receiving end first: a relative who always says you mis
 
 ### 6. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 42*
 
 [reviewers only: card kind `check`, id `check-gaslight`]
 
@@ -210,7 +210,7 @@ The pieces you can tap:
 
 ### 7. A wrong idea about a disagreement over what happened
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 42*
 
 [reviewers only: card kind `refute`, id `refute-doubt`]
 
@@ -231,19 +231,19 @@ So the right way to put it is that "we remember last Saturday differently" is wh
 
 ### 8. Caught out, they deny it, attack, and play the one wronged
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 42*
 
 [reviewers only: card kind `meet`, id `meet-darvo`]
 
 In the first name the denial comes back for months. The second is a different thing: it happens in one exchange, and the person is answering something that has just been raised with them.
 
-*The missing till money*
+*The missing register money*
 
-> Marek runs the bar. His manager, Joy, tells him the till was £120 short on his shift, and that ⟦the camera shows him taking two notes from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'⟧
+> Marek runs the bar. His manager, Joy, tells him the register was $120 short on his shift, and that ⟦the camera shows him taking two bills from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'⟧
 
 Stripped of its story, the case is this:
 
-- Joy raises something with Marek: the till was short, and the camera shows him taking two notes. So the case shows he did it.
+- Joy raises something with Marek: the register was short, and the camera shows him taking two bills. So the case shows he did it.
 - In answer he denies it: "That's not true."
 - He attacks the person who raised it: "You were forty minutes late on Tuesday and nobody said a word to you."
 - And he presents himself as the one wronged: "I'm the one being picked on here."
@@ -268,20 +268,20 @@ You may also hear this called “DARVO, short for deny, attack, reverse victim a
 
 ### 9. Turning the blame around: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 42*
 
 [reviewers only: card kind `again`, id `again-darvo`]
 
-The missing till money gave you what to point to: something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged. Here is a second case with a completely different story.
+The missing register money gave you what to point to: something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged. Here is a second case with a completely different story.
 
-The first case again, in one line. *The missing till money*: “the camera shows him taking two notes from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'”
+The first case again, in one line. *The missing register money*: “the camera shows him taking two bills from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'”
 
 The second case.
 
 *The messages*
 
 > Ines sees messages on her husband Paolo's phone from a woman he told her he had stopped seeing. The most recent are from last week. 'Those aren't what you think,' Paolo says, 'and I never said I'd stopped seeing her. Do you know how controlling it is to go through someone's phone? Everyone says so. I work all week for this family, and now I'm put on trial in my own kitchen.'
-**You are asked:** In *The missing till money*, these words show it: “the camera shows him taking two notes from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The missing register money*, these words show it: “the camera shows him taking two bills from it. 'That's not true,' Marek says. 'You were forty minutes late on Tuesday and nobody said a word to you. I come in on my day off, and this is how I'm treated? I'm the one being picked on here.'”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Ines sees messages on her husband Paolo's phone from a woman he told her he had stopped seeing. The most recent are from last week.”
@@ -299,7 +299,7 @@ One story is a bar and the other a marriage; one person took money and the other
 
 ### 10. Turning the blame around: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-darvo`]
 
@@ -309,9 +309,9 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 - It always comes in answer to something. Someone has raised a real problem, and the reply is where the case turns. Without the raising, there is nothing to deny.
 - The attack is usually about something else. It goes for a different fault of the person who raised it ("you were late"), or for their motives ("you are always looking for someone to blame"), or for the way they raised it ("how dare you accuse me"). Sometimes what it says is even true. That does not matter. What matters is that it moves the attention away from what was raised.
-- Playing the one wronged is often said as hurt: "I am the one who gets treated like a criminal", "after everything I have done for you". The person who raised the problem ends up apologising, or explaining why they raised it.
+- Playing the one wronged is often said as hurt: "I am the one who gets treated like a criminal", "after everything I have done for you". The person who raised the problem ends up apologizing, or explaining why they raised it.
 - It can be quiet, as well as loud. "Honestly, I am hurt that you would say that" is playing the one wronged in a calm, sad voice, and the denial and the attack can be in the same calm voice.
-- It needs all three parts, in one reply or one conversation. A reply that is only a denial, or only anger, has not got the other parts yet.
+- It needs all three parts, in one reply or one conversation. A reply that is only a denial, or only anger, does not have the other parts yet.
 
 **What it is not**
 
@@ -329,11 +329,11 @@ You may catch it in yourself, in the middle of a row: someone has raised somethi
 
 ### 11. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 42*
 
 [reviewers only: card kind `check`, id `check-darvo`]
 
-> At the allotment committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The sign-out sheet shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'
+> At the community garden committee, Hugh is told that the tool shed was left unlocked on Saturday and two spades went missing. The sign-out sheet shows he signed the key out at four and never signed it back in. 'I did lock it,' Hugh says. 'And it's rich coming from you, Pam, when you've never paid your plot fee on time. After all the hours I've given this site, I'm the one being treated like a criminal.'
 
 **The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
@@ -349,7 +349,7 @@ You may catch it in yourself, in the middle of a row: someone has raised somethi
 
 ### 12. Gaslighting or Turning the blame around: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-gaslight-darvo`]
 
@@ -357,7 +357,7 @@ You have met both names on their own. Both have a person denying that something 
 
 **Case A**
 
-> In March Ravi watched his wife Lena reverse the car into the gatepost, and he has a photo of the dent. Since then, whenever he mentions it, Lena says, 'That dent was there when we bought it,' and later, 'You've got the day wrong, it was never me,' and later, 'I don't know why you keep inventing things.' By July Ravi has stopped bringing it up, and last week he asked his neighbour whether he was going mad.
+> In March Ravi watched his wife Lena reverse the car into the gatepost, and he has a photo of the dent. Since then, whenever he mentions it, Lena says, 'That dent was there when we bought it,' and later, 'You've got the day wrong, it was never me,' and later, 'I don't know why you keep inventing things.' By July Ravi has stopped bringing it up, and last week he asked his neighbor whether he was going mad.
 
 **Case B**
 
@@ -371,7 +371,7 @@ You have met both names on their own. Both have a person denying that something 
 
 **Why this one and not the other**
 
-In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbour whether he is going mad. The answer is **“Tells them, again and again, that what happened did not happen”**, and the case is **Gaslighting**.
+In Case A the denial is not given once. In the weeks after March, and for months, Lena says the dent was there already, that it was never her, and that Ravi invents things. By July Ravi has stopped raising it and has asked a neighbor whether he is going mad. The answer is **“Tells them, again and again, that what happened did not happen”**, and the case is **Gaslighting**.
 
 In Case B it is one dinner. Ravi raises it, and in answer Lena denies it, goes for his lateness with the children, and says she is the one being accused after being up since five. That is all three parts in one exchange, and nothing is repeated for months. The answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
 
@@ -392,7 +392,7 @@ Is this one exchange, with an attack and the speaker playing the one wronged? Or
 
 ### 13. When a case shows both
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 13 of 42*
 
 [reviewers only: card kind `exception`, id `exc-memory`]
 
@@ -440,7 +440,7 @@ The answer is chosen this way on purpose, and it is worth knowing that the choic
 
 ### 14. Accusing someone of what you are doing yourself
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 42*
 
 [reviewers only: card kind `meet`, id `meet-projection`]
 
@@ -448,11 +448,11 @@ The first two names are about a denial: of what happened, or of what the person 
 
 *The expense claims*
 
-> Omar's first expense claim is for exactly the amounts on his receipts. ⟦Dana, who the finance records show has padded her own claims for months, tells the finance manager: 'I wouldn't trust that man. People like him always fiddle their claims.'⟧
+> Omar's first expense claim is for exactly the amounts on his receipts. ⟦Dana, who the finance records show has padded her own claims for months, tells the finance manager: 'I wouldn't trust that man. People like him always inflate their claims.'⟧
 
 Stripped of its story, the case is this:
 
-- Dana accuses Omar of something: of fiddling claims. "People like him always fiddle their claims."
+- Dana accuses Omar of something: of fiddling claims. "People like him always inflate their claims."
 - The case shows that Dana is the one doing exactly that: she has padded her own claims for months.
 - Nothing in the case shows Omar doing it: his claim is for exactly the amounts on his receipts.
 - Nobody raised anything with Dana first. The accusation is where the case starts.
@@ -475,27 +475,27 @@ You may also hear this called “accusing others of what you do yourself”. Tha
 
 ### 15. Projection: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 42*
 
 [reviewers only: card kind `again`, id `again-projection`]
 
 The expense claims gave you what to point to: an accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it. Here is a second case with a completely different story.
 
-The first case again, in one line. *The expense claims*: “Dana, who the finance records show has padded her own claims for months, tells the finance manager: 'I wouldn't trust that man. People like him always fiddle their claims.'”
+The first case again, in one line. *The expense claims*: “Dana, who the finance records show has padded her own claims for months, tells the finance manager: 'I wouldn't trust that man. People like him always inflate their claims.'”
 
 The second case.
 
 *The residents' treasurer*
 
-> Femi is the treasurer of the residents' association. When Sue mentions that she is moving away, Femi, who has been telling neighbours who is behind with their service charges, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.' Nobody else has heard Sue say anything about anyone's money.
-**You are asked:** In *The expense claims*, these words show it: “Dana, who the finance records show has padded her own claims for months, tells the finance manager: 'I wouldn't trust that man. People like him always fiddle their claims.'”. Which words show the same thing in this case? Tap them.
+> Femi is the treasurer of the residents' association. When Sue mentions that she is moving away, Femi, who has been telling neighbors who is behind on their maintenance fees, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.' Nobody else has heard Sue say anything about anyone's money.
+**You are asked:** In *The expense claims*, these words show it: “Dana, who the finance records show has padded her own claims for months, tells the finance manager: 'I wouldn't trust that man. People like him always inflate their claims.'”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Femi is the treasurer of the residents' association.”
-2. “When Sue mentions that she is moving away, Femi, who has been telling neighbours who is behind with their service charges, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.'”
+2. “When Sue mentions that she is moving away, Femi, who has been telling neighbors who is behind on their maintenance fees, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.'”
 3. “Nobody else has heard Sue say anything about anyone's money.”
 
-**Shown as soon as you tap.** The words are “When Sue mentions that she is moving away, Femi, who has been telling neighbours who is behind with their service charges, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.'”.
+**Shown as soon as you tap.** The words are “When Sue mentions that she is moving away, Femi, who has been telling neighbors who is behind on their maintenance fees, tells the chairman: 'Sue's been gossiping about people's money. I wouldn't tell her a thing.'”.
 - If you tapped “Femi is the treasurer of the residents' association.”: That says who Femi is. It shows nothing about what is said or done.
 - If you tapped “Nobody else has heard Sue say anything about anyone's money.”: That shows the other person is not doing it, and the name needs that to be in the case. But the words asked for are the ones that match the accusation to what Femi herself does.
 
@@ -508,7 +508,7 @@ One story is about expenses, the other about gossip. The stories share nothing, 
 
 ### 16. Projection: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-projection`]
 
@@ -517,7 +517,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 **What it is usually like**
 
 - The accusation is about something the person does or feels: lying, being late, hiding things, being jealous, being disloyal, gossiping. The thing accused of is whatever the accuser is doing or feeling.
-- It often comes with little or no evidence, or with evidence that is not about the person accused. "People like him always fiddle their claims" is about a type of person. It is not about anything Omar’s claim shows.
+- It often comes with little or no evidence, or with evidence that is not about the person accused. "People like him always inflate their claims" is about a type of person. It is not about anything Omar’s claim shows.
 - It tends to come first. Nobody has raised anything with the accuser: the accusation is where the case starts. That is the difference from **Turning the blame around**, where the attack comes in answer.
 - The accuser is often quite sure, and may be sincere. They honestly see the thing in the other person, which is part of why it can sound convincing. Sincerity is not what is asked about.
 - It can come back in new forms, and the person accused often ends up defending themselves against something they never did.
@@ -538,7 +538,7 @@ You may catch it in yourself when you feel sure about someone else’s bad motiv
 
 ### 17. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 42*
 
 [reviewers only: card kind `check`, id `check-projection`]
 
@@ -560,7 +560,7 @@ You may catch it in yourself when you feel sure about someone else’s bad motiv
 
 ### 18. Turning the blame around or Projection: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-darvo-projection`]
 
@@ -568,11 +568,11 @@ Both names have an attack in them, and in both the person who attacks is guilty 
 
 **Case A**
 
-> Nell asks the club treasurer, Ed, about £60 missing from the petty cash tin. The receipt book shows that Ed took it on the third. Ed says, 'I took nothing. You're the one who never hands in receipts. I can't believe you would accuse me, after all I've done for this club.'
+> Nell asks the club treasurer, Ed, about $60 missing from the petty cash box. The receipt book shows that Ed took it on the third. Ed says, 'I took nothing. You're the one who never hands in receipts. I can't believe you would accuse me, after all I've done for this club.'
 
 **Case B**
 
-> Nobody has asked the club treasurer, Ed, about the petty cash tin. At the committee meeting he says, unprompted, 'Nell has been dipping into the tin.' The receipt book shows that Ed took £60 on the third, and shows every one of Nell's receipts handed in on time.
+> Nobody has asked the club treasurer, Ed, about the petty cash box. At the committee meeting he says, unprompted, 'Nell has been dipping into the box.' The receipt book shows that Ed took $60 on the third, and shows every one of Nell's receipts handed in on time.
 
 **What to compare.** Both cases are about Ed, Nell and the club’s petty cash. Compare one thing: did someone raise something with Ed first, so that he is answering it, or did the accusation come from Ed, with nobody having asked him anything?
 
@@ -582,9 +582,9 @@ Both names have an attack in them, and in both the person who attacks is guilty 
 
 **Why this one and not the other**
 
-In Case A, Nell has asked Ed about the missing £60, and the receipt book shows he took it. The attack ("you are the one who never hands in receipts") comes in answer, with a denial and with Ed as the one wronged ("after all I have done for this club"). The answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
+In Case A, Nell has asked Ed about the missing $60, and the receipt book shows he took it. The attack ("you are the one who never hands in receipts") comes in answer, with a denial and with Ed as the one wronged ("after all I have done for this club"). The answer is **“Denies it, attacks them for raising it, and plays the one wronged”**, and the case is **Turning the blame around**.
 
-In Case B, nobody has asked Ed anything. He says, unprompted, that Nell has been dipping into the tin. The book shows Ed took the £60, and shows every one of Nell’s receipts handed in on time. The answer is **“Accuses them of what the accuser is doing”**, and the case is **Projection**.
+In Case B, nobody has asked Ed anything. He says, unprompted, that Nell has been dipping into the box. The book shows Ed took the $60, and shows every one of Nell’s receipts handed in on time. The answer is **“Accuses them of what the accuser is doing”**, and the case is **Projection**.
 
 In both cases Ed goes for Nell about something Ed did. What differs is where the case starts: with Nell raising it, or with Ed.
 
@@ -603,7 +603,7 @@ Did someone first raise something with the speaker, so that the speaker is answe
 
 ### 19. When a case shows both
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 42*
 
 [reviewers only: card kind `exception`, id `exc-own`]
 
@@ -645,7 +645,7 @@ The answer is chosen this way on purpose, and it is worth knowing that the choic
 
 ### 20. A wrong idea: "He does not even know, so she is not doing anything to him"
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 42*
 
 [reviewers only: card kind `refute`, id `refute-meant`]
 
@@ -666,7 +666,7 @@ So "she honestly believes it" and "she is doing this to him" can both be true. L
 
 ### 21. A flood of attention early on, pulled back later
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 21 of 42*
 
 [reviewers only: card kind `meet`, id `meet-lovebomb`]
 
@@ -703,7 +703,7 @@ You may also hear this called “running hot and cold”. That means the same th
 
 ### 22. Love-bombing: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 22 of 42*
 
 [reviewers only: card kind `again`, id `again-lovebomb`]
 
@@ -715,26 +715,26 @@ The second case.
 
 *The new mentor*
 
-> When Imani joined the firm, her mentor Greg spent every lunch with her, told the whole department she was the best hire in years, and gave her his own client list within a month. In her third month she turned down an invitation to cover his weekend shift. For the next fortnight Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'
+> When Imani joined the firm, her mentor Greg spent every lunch with her, told the whole department she was the best hire in years, and gave her his own client list within a month. In her third month she turned down an invitation to cover his weekend shift. For the next two weeks Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'
 **You are asked:** In *The first month*, these words show it: “By the second date he had called her 'the one'. By the fourth he had bought her a coat, and he was texting her forty times a day.” and “Callum went silent for four days, then wrote: 'I thought you were different from the others who put themselves first.'”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “When Imani joined the firm, her mentor Greg spent every lunch with her, told the whole department she was the best hire in years, and gave her his own client list within a month.”
-2. “In her third month she turned down an invitation to cover his weekend shift. For the next fortnight Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'”
+2. “In her third month she turned down an invitation to cover his weekend shift. For the next two weeks Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'”
 
-**Shown as soon as you tap.** The words are “In her third month she turned down an invitation to cover his weekend shift. For the next fortnight Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'”.
+**Shown as soon as you tap.** The words are “In her third month she turned down an invitation to cover his weekend shift. For the next two weeks Greg stopped speaking to her at lunch, copied her manager into small errors in her work, and said, 'I thought you were someone I could count on.'”.
 - If you tapped “When Imani joined the firm, her mentor Greg spent every lunch with her, told the whole department she was the best hire in years, and gave her his own client list within a month.”: That is the flood of attention at the start. The words asked for are the ones that show what happens to it later.
 
 **What the two share**
 
-In both cases there is, early on, far more attention than the time would explain: forty texts a day and a coat, or a whole department told she is the best hire in years and a client list handed over within a month. And in both, once the person turns something down, the attention is pulled back: four days of silence, or a fortnight of no lunches and small errors reported. In both it turns into a remark that the person has let someone down: "I thought you were different", "I thought you were someone I could count on".
+In both cases there is, early on, far more attention than the time would explain: forty texts a day and a coat, or a whole department told she is the best hire in years and a client list handed over within a month. And in both, once the person turns something down, the attention is pulled back: four days of silence, or two weeks of no lunches and small errors reported. In both it turns into a remark that the person has let someone down: "I thought you were different", "I thought you were someone I could count on".
 
 One story is a date and the other is an office. The stories share nothing, so this is not about romance or about work. It holds wherever far more attention than the relationship would explain comes first, and is later pulled back. That is what **Love-bombing** names.
 
 
 ### 23. Love-bombing: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 23 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-lovebomb`]
 
@@ -744,7 +744,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 - The first half comes fast. The person is told they are special, rare, or the only one who understands, and plans for the future arrive early.
 - The attention is often gifts, time and constant messages: things that are hard to refuse and that make the person feel they owe something back.
-- The pulling back often follows a limit: a no, a weekend away, a night in. It does not always, but it often does.
+- The pulling back often follows a limit: a no, a weekend trip, a night in. It does not always, but it often does.
 - The criticism that comes with it compares the person with how they were: "you have changed", "I thought you were different". The person is made to feel they have lost something, and often tries hard to earn it back.
 - It can happen in a friendship, between a mentor and a junior, in a group, as well as in a romance.
 
@@ -764,11 +764,11 @@ You may meet it in a new friendship, job or group where everything is wonderful 
 
 ### 24. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 24 of 42*
 
 [reviewers only: card kind `check`, id `check-lovebomb`]
 
-> Sam started piano lessons with a new teacher, Mr Vale. In the first two weeks he told her she was the most gifted pupil he had taught, gave her free extra sessions, and sent her a book of scores. When Sam said she would cut back to one lesson a week because of exams, Mr Vale's praise stopped, and he told her, 'I don't know why I bothered. You're not serious.'
+> Sam started piano lessons with a new teacher, Mr. Vale. In the first two weeks he told her she was the most gifted student he had taught, gave her free extra sessions, and sent her a book of scores. When Sam said she would cut back to one lesson a week because of exams, Mr. Vale's praise stopped, and he told her, 'I don't know why I bothered. You're not serious.'
 
 **The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
@@ -779,7 +779,7 @@ You may meet it in a new friendship, job or group where everything is wonderful 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Floods them with attention early on, then pulls it back.**” Both halves are in the case: “In the first two weeks he told her she was the most gifted pupil he had taught, gave her free extra sessions, and sent her a book of scores.” and “When Sam said she would cut back to one lesson a week because of exams, Mr Vale's praise stopped, and he told her, 'I don't know why I bothered. You're not serious.'” The attention was far more than two weeks of lessons would explain, and it stopped, with criticism, once Sam set a limit. The name that goes with this answer is **Love-bombing**.
+- If you are right: “Right: **Floods them with attention early on, then pulls it back.**” Both halves are in the case: “In the first two weeks he told her she was the most gifted student he had taught, gave her free extra sessions, and sent her a book of scores.” and “When Sam said she would cut back to one lesson a week because of exams, Mr. Vale's praise stopped, and he told her, 'I don't know why I bothered. You're not serious.'” The attention was far more than two weeks of lessons would explain, and it stopped, with criticism, once Sam set a limit. The name that goes with this answer is **Love-bombing**.
 - If you miss: “The answer is **Floods them with attention early on, then pulls it back.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Tells them, again and again, that what happened did not happen**: Give that answer when the case shows something really happened, and over weeks or months the person keeps telling the other that it did not happen or did not happen that way, until the other person starts to doubt their own memory. This case shows something else: early in a relationship the person gives far more praise, attention, gifts or plans than the relationship so far would explain, and later pulls it back or turns critical, often once the other person sets a limit or does not go along.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Give that answer when the case shows the person did something, the other person raises it, and in answer the person does all three: denies it, attacks the one who raised it, and presents themselves as the one wronged. One exchange is enough. This case shows something else: early in a relationship the person gives far more praise, attention, gifts or plans than the relationship so far would explain, and later pulls it back or turns critical, often once the other person sets a limit or does not go along.
@@ -794,31 +794,31 @@ You may meet it in a new friendship, job or group where everything is wonderful 
 
 ### 25. Something said between two people, with nothing more to it
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 42*
 
 [reviewers only: card kind `meet`, id `meet-ordexchange`]
 
 The four names so far each need things in the case. The fifth name is for the many cases where none of them is there. It is the one you will use most.
 
-*The bins*
+*The trash*
 
-> Sam has left the bins for the third week running. ⟦Priya says, 'I'm fed up with doing them. You said you would. Can we sort out a rota?' Sam says, 'You're right, I forgot. I'll do them tonight, and let's write a rota.'⟧
+> Sam has skipped taking out the trash for the third week in a row. ⟦Priya says, 'I'm fed up with doing it. You said you would. Can we work out a schedule?' Sam says, 'You're right, I forgot. I'll do it tonight, and let's write a schedule.'⟧
 
 Stripped of its story, the case is this:
 
-- There are two people, and something one says to the other: Priya complains about the bins.
+- There are two people, and something one says to the other: Priya complains about the trash.
 - The other answers it plainly: Sam says "You're right, I forgot" and offers to fix it.
 - Nothing is denied that really happened, and nothing comes back over months.
 - Nobody attacks back and nobody plays the one wronged.
 - No attention is poured on and withdrawn, and no accusation is made that fits the person making it.
 
-Most of what people say to each other is not one of the four. People complain, disagree, defend themselves, forget things, get annoyed, say sharp words, apologise, and say kind ones. Priya is cross, and she says so. Sam answers. That is all there is.
+Most of what people say to each other is not one of the four. People complain, disagree, defend themselves, forget things, get annoyed, say sharp words, apologize, and say kind ones. Priya is cross, and she says so. Sam answers. That is all there is.
 
 It is tempting, once you have learned four names for things people do to each other, to look for one of them in everything. That is a mistake the questions are built to stop. The fifth answer is there so that you can say, as exactly as you can say what is going on elsewhere, that none of the four is.
 
 Notice what "ordinary" does not mean. It does not mean polite, fair or kind. A person can be rude, unfair and wrong, and it is still **An ordinary exchange** in this sense, because none of the four is in the case. And it does not mean nobody was hurt. How upset anyone was is not what is asked. The question is what was done to the other person, and here the answer is: what it looks like, and nothing more.
 
-**What you must be able to point to.** Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser. This comes from one case so far. The next card tests it on a second case.
 
 **The question:** **“What does it do to the other person?”**
 
@@ -828,20 +828,20 @@ The name for this is **An ordinary exchange**. An "exchange" is something said o
 
 ### 26. An ordinary exchange: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 42*
 
 [reviewers only: card kind `again`, id `again-ordexchange`]
 
-The bins gave you what to point to: two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser. Here is a second case with a completely different story.
+The trash case gave you what to point to: two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser. Here is a second case with a completely different story.
 
-The first case again, in one line. *The bins*: “Priya says, 'I'm fed up with doing them. You said you would. Can we sort out a rota?' Sam says, 'You're right, I forgot. I'll do them tonight, and let's write a rota.'”
+The first case again, in one line. *The trash*: “Priya says, 'I'm fed up with doing it. You said you would. Can we work out a schedule?' Sam says, 'You're right, I forgot. I'll do it tonight, and let's write a schedule.'”
 
 The second case.
 
 *The long draft*
 
 > Mo tells Isla that her draft is too long. Isla says, 'I disagree. I think it needs the detail, but show me which parts you would cut.' They go through it together. She cuts one page and keeps the rest, and they agree to ask the client which they prefer.
-**You are asked:** In *The bins*, these words show it: “Priya says, 'I'm fed up with doing them. You said you would. Can we sort out a rota?' Sam says, 'You're right, I forgot. I'll do them tonight, and let's write a rota.'”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The trash*, these words show it: “Priya says, 'I'm fed up with doing it. You said you would. Can we work out a schedule?' Sam says, 'You're right, I forgot. I'll do it tonight, and let's write a schedule.'”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Mo tells Isla that her draft is too long.”
@@ -854,23 +854,23 @@ The pieces you can tap:
 
 **What the two share**
 
-In both cases one person tells the other something unwelcome: a complaint, a criticism. In both, the other person answers it straight. Sam agrees, and Isla disagrees and offers to look at the detail. One agrees and one disagrees, and that makes no difference. In both, nothing is denied that really happened, nothing repeats, nobody attacks back or plays the one wronged, no attention is poured on and withdrawn, and no accusation fits the accuser.
+In both cases one person tells the other something unwelcome: a complaint, some blunt feedback. In both, the other person answers it straight. Sam agrees, and Isla disagrees and offers to look at the detail. One agrees and one disagrees, and that makes no difference. In both, nothing is denied that really happened, nothing repeats, nobody attacks back or plays the one wronged, no attention is poured on and withdrawn, and no accusation fits the accuser.
 
 A disagreement is not a sign that something is wrong. Two people who say what they think to each other, and answer what was said, are doing what people ordinarily do. That is what **An ordinary exchange** names.
 
 
 ### 27. An ordinary exchange: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-ordexchange`]
 
-You now know what to point to. This card fills in the rest of the picture, so that you can recognise **An ordinary exchange** in real life, where nobody marks the words for you.
+You now know what to point to. This card fills in the rest of the picture, so that you can recognize **An ordinary exchange** in real life, where nobody marks the words for you.
 
 **What it is usually like**
 
-- It covers a wide range: a complaint, a disagreement, a defence, an apology, a refusal, praise, an angry word, a joke that lands badly.
-- The reply fits what was said. If the first person says "you forgot the bins", the reply is about the bins: it agrees, disagrees, explains or says sorry.
+- It covers a wide range: a complaint, a disagreement, a defense, an apology, a refusal, praise, an angry word, a joke that lands badly.
+- The reply fits what was said. If the first person says "you forgot the trash", the reply is about the trash: it agrees, disagrees, explains or says sorry.
 - Feelings can run high. Someone can shout and still be in this answer, if none of the four is in the case.
 - A person who is wrongly accused can look as if they are doing something when they deny it, get angry and say they are being picked on. The case shows they did not do it, so the denial is true.
 - A fair accusation from someone who does it too is still fair. If the case shows the person accused doing it, it does not matter that the accuser does it as well.
@@ -892,11 +892,11 @@ Most of what you meet this week will be this. The test is whether you can point 
 
 ### 28. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 42*
 
 [reviewers only: card kind `check`, id `check-ordexchange`]
 
-> After a session, Femi's physiotherapist tells him he has done his exercises well and that his knee is stronger. Femi says thank you and asks if he can start jogging. She says he should wait two more weeks, and why.
+> After a session, Femi's physical therapist tells him he has done his exercises well and that his knee is stronger. Femi says thank you and asks if he can start jogging. She says he should wait two more weeks, and why.
 
 **The question:** **“What does it do to the other person?”** Which of the answers you have met so far fits this case?
 
@@ -908,7 +908,7 @@ Most of what you meet this week will be this. The test is whether you can point 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Says or does what it looks like, and nothing more.**” The case gives praise, and then an answer to a question: “After a session, Femi's physiotherapist tells him he has done his exercises well and that his knee is stronger.” The praise fits what has happened in the sessions, and nothing is pulled back when he asks for more: she gives him an answer and her reason. The name that goes with this answer is **An ordinary exchange**.
+- If you are right: “Right: **Says or does what it looks like, and nothing more.**” The case gives praise, and then an answer to a question: “After a session, Femi's physical therapist tells him he has done his exercises well and that his knee is stronger.” The praise fits what has happened in the sessions, and nothing is pulled back when he asks for more: she gives him an answer and her reason. The name that goes with this answer is **An ordinary exchange**.
 - If you miss: “The answer is **Says or does what it looks like, and nothing more.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Tells them, again and again, that what happened did not happen**: Give that answer when the case shows something really happened, and over weeks or months the person keeps telling the other that it did not happen or did not happen that way, until the other person starts to doubt their own memory. This case shows something else: one person disagrees with, complains to, defends themselves to or praises the other, and the case shows none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Give that answer when the case shows the person did something, the other person raises it, and in answer the person does all three: denies it, attacks the one who raised it, and presents themselves as the one wronged. One exchange is enough. This case shows something else: one person disagrees with, complains to, defends themselves to or praises the other, and the case shows none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser.
@@ -918,7 +918,7 @@ Most of what you meet this week will be this. The test is whether you can point 
 
 ### 29. A wrong idea: "Once you know the four, you see them everywhere"
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 42*
 
 [reviewers only: card kind `refute`, id `refute-everywhere`]
 
@@ -939,7 +939,7 @@ Before you use any of the four names, point to what that name needs. If you cann
 
 ### 30. Gaslighting or An ordinary exchange: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-gaslight-ord`]
 
@@ -977,12 +977,12 @@ Does the case show that the thing really happened? Does the same denial come bac
 |---|---|---|
 | What kind of thing is this? | Something one person does to another | Something one person does to another |
 | What does it do to the other person? | Tells them, again and again, that what happened did not happen | Says or does what it looks like, and nothing more |
-| What you must be able to point to | Something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory | Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
+| What you must be able to point to | Something the case shows really happened, one person telling the other again and again, over weeks or months, that it did not happen or did not happen that way, and the other person starting to doubt their own memory | Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
 
 
 ### 31. Turning the blame around or An ordinary exchange: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-darvo-ord`]
 
@@ -990,13 +990,13 @@ Next, **Turning the blame around** beside the ordinary exchange. In both a perso
 
 **Case A**
 
-> A fence panel between two houses has been smashed. Mira's doorbell camera shows her neighbour Joel backing his van into it on Tuesday. When she raises it, Joel says, 'I never touched your fence. You're the one who parks across everyone's drive. I'm sick of being the one who gets blamed round here.'
+> A fence panel between two houses has been smashed. Mira's doorbell camera shows her neighbor Joel backing his van into it on Tuesday. When she raises it, Joel says, 'I never touched your fence. You're the one who parks across everyone's drive. I'm sick of being the one who gets blamed around here.'
 
 **Case B**
 
-> A fence panel between two houses has been smashed. Mira says to her neighbour Joel, 'I think you backed your van into my fence on Tuesday.' Her doorbell camera shows Joel's van parked outside his own house all that day. 'That's not true, and I don't like being blamed,' Joel says. 'Have a look at your camera.' Mira looks, and says, 'You're right. Sorry.'
+> A fence panel between two houses has been smashed. Mira says to her neighbor Joel, 'I think you backed your van into my fence on Tuesday.' Her doorbell camera shows Joel's van parked outside his own house all that day. 'That's not true, and I don't like being blamed,' Joel says. 'Have a look at your camera.' Mira looks, and says, 'You're right. Sorry.'
 
-**What to compare.** Both cases are about Mira, her neighbour Joel and a smashed fence panel. Compare one thing: does the case show that Joel did it?
+**What to compare.** Both cases are about Mira, her neighbor Joel and a smashed fence panel. Compare one thing: does the case show that Joel did it?
 
 **You are asked:** Which case gives the answer **“Denies it, attacks them for raising it, and plays the one wronged”**? (Case A / Case B)
 
@@ -1020,41 +1020,41 @@ Does the case show that the person did what was raised with them? And is the ans
 |---|---|---|
 | What kind of thing is this? | Something one person does to another | Something one person does to another |
 | What does it do to the other person? | Denies it, attacks them for raising it, and plays the one wronged | Says or does what it looks like, and nothing more |
-| What you must be able to point to | Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged | Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
+| What you must be able to point to | Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged | Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
 
 
 ### 32. A reply that sounds like Turning the blame around, and is not
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 32 of 42*
 
 [reviewers only: card kind `exception`, id `exc-wrongly`]
 
 The last card put two tidy cases side by side. This one is messier: a person who denies it, attacks, and says they are the one picked on, and who is not turning anything around.
 
-*The art cupboard*
+*The art closet*
 
-> Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing. The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key. 'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.' Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.
+> Tara's principal, Mr. Boyd, tells her the art closet was left unlocked on Friday and paints went missing. The closet log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key. 'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on around here.' Mr. Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.
 
-Tara’s answer has all three parts: she denies it ("I locked it"), she attacks Mr Boyd ("You always blame me first"), and she says she is the one picked on. Yet this case is **An ordinary exchange**.
+Tara’s answer has all three parts: she denies it ("I locked it"), she attacks Mr. Boyd ("You always blame me first"), and she says she is the one picked on. Yet this case is **An ordinary exchange**.
 
 **You are asked:** This looks like **Turning the blame around**. Before you read why it is **An ordinary exchange**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing.”
-2. “The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”
-3. “'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.'”
-4. “Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.”
+1. “Tara's principal, Mr. Boyd, tells her the art closet was left unlocked on Friday and paints went missing.”
+2. “The closet log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”
+3. “'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on around here.'”
+4. “Mr. Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.”
 
-**Shown as soon as you tap.** The words are “The cupboard log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”.
-- If you tapped “Tara's head teacher, Mr Boyd, tells her the art cupboard was left unlocked on Friday and paints went missing.”: That is what Mr Boyd raises. It does not show whether Tara did it.
-- If you tapped “'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on round here.'”: That sounds like a denial, an attack and playing the one wronged, and it is why the case looks like **Turning the blame around**. But **Turning the blame around** is only given when the case shows the person did what they are asked about, and that is the part you are asked for.
-- If you tapped “Mr Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.”: That is how it ends. It confirms the log, but it is not the words that show Tara did not do it.
+**Shown as soon as you tap.** The words are “The closet log shows Tara locked it at noon, and that it was opened again at three by Neil, who has the other key.”.
+- If you tapped “Tara's principal, Mr. Boyd, tells her the art closet was left unlocked on Friday and paints went missing.”: That is what Mr. Boyd raises. It does not show whether Tara did it.
+- If you tapped “'That isn't true, I locked it,' Tara says. 'You always blame me first. I'm the one who gets picked on around here.'”: That sounds like a denial, an attack and playing the one wronged, and it is why the case looks like **Turning the blame around**. But **Turning the blame around** is only given when the case shows the person did what they are asked about, and that is the part you are asked for.
+- If you tapped “Mr. Boyd reads the log, says, 'Sorry, I should have checked first,' and goes to ask Neil.”: That is how it ends. It confirms the log, but it is not the words that show Tara did not do it.
 
 **Why this is An ordinary exchange and not Turning the blame around**
 
-The first thing the name **Turning the blame around** needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the cupboard, and the cupboard log shows who opened it. Her denial is true.
+The first thing the name **Turning the blame around** needs is that the case shows the person did what was raised. Here the case shows the opposite. Tara locked the closet, and the closet log shows who opened it. Her denial is true.
 
-A person who is wrongly accused can be hurt, say sharp things, and say they are picked on, and all of that is an ordinary reply to a mistake. What makes the name is that the denial is of something the case shows they did. Take that away and the same words are only a defence.
+A person who is wrongly accused can be hurt, say sharp things, and say they are picked on, and all of that is an ordinary reply to a mistake. What makes the name is that the denial is of something the case shows they did. Take that away and the same words are only a defense.
 
 **How to tell them apart**
 
@@ -1063,7 +1063,7 @@ Does the case show that the person did what was raised with them? And is the ans
 
 ### 33. Love-bombing or An ordinary exchange: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 33 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 33 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-lovebomb-ord`]
 
@@ -1101,12 +1101,12 @@ Set the attention against how long the two have known each other. Is it far more
 |---|---|---|
 | What kind of thing is this? | Something one person does to another | Something one person does to another |
 | What does it do to the other person? | Floods them with attention early on, then pulls it back | Says or does what it looks like, and nothing more |
-| What you must be able to point to | Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along | Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
+| What you must be able to point to | Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along | Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
 
 
 ### 34. Projection or An ordinary exchange: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 34 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-projection-ord`]
 
@@ -1114,7 +1114,7 @@ Last, accusing someone of what you do yourself, beside the ordinary exchange. Bo
 
 **Case A**
 
-> Colm tells the shop manager, unprompted, that Shay 'is always swapping shifts without telling anyone'. The shift book shows that Colm has swapped four shifts without telling anyone this month, and shows no swap by Shay.
+> Colm tells the store manager, unprompted, that Shay 'is always swapping shifts without telling anyone'. The shift book shows that Colm has swapped four shifts without telling anyone this month, and shows no swap by Shay.
 
 **Case B**
 
@@ -1144,41 +1144,41 @@ Who does the case show doing or feeling what is being said: the person accused, 
 |---|---|---|
 | What kind of thing is this? | Something one person does to another | Something one person does to another |
 | What does it do to the other person? | Accuses them of what the accuser is doing | Says or does what it looks like, and nothing more |
-| What you must be able to point to | An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it | Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
+| What you must be able to point to | An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it | Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser |
 
 
 ### 35. A fair accusation from someone who does it too
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 35 of 42*
 
 [reviewers only: card kind `exception`, id `exc-both-late`]
 
 The last card put two tidy cases side by side. This one is harder: someone accuses another of what they do themselves, and the case is still **An ordinary exchange**.
 
-*The washing up*
+*The dishes*
 
-> Zoe tells her housemate Adam, 'You never wash up.' Zoe herself leaves plates in the sink for days. The rota on the fridge shows that Adam has not washed up for three weeks. Adam says, 'You're right, I haven't. But neither do you, so let's fix the rota.'
+> Zoe tells her roommate Adam, 'You never do the dishes.' Zoe herself leaves plates in the sink for days. The chore chart on the fridge shows that Adam has not done the dishes for three weeks. Adam says, 'You're right, I haven't. But neither do you, so let's fix the chart.'
 
 Zoe tells Adam he never washes up, and the case shows Zoe leaving plates in the sink for days. That is an accusation made by someone who does the same. Yet this case is **An ordinary exchange**.
 
 **You are asked:** This looks like **Projection**. Before you read why it is **An ordinary exchange**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “Zoe tells her housemate Adam, 'You never wash up.'”
+1. “Zoe tells her roommate Adam, 'You never do the dishes.'”
 2. “Zoe herself leaves plates in the sink for days.”
-3. “The rota on the fridge shows that Adam has not washed up for three weeks.”
-4. “Adam says, 'You're right, I haven't. But neither do you, so let's fix the rota.'”
+3. “The chore chart on the fridge shows that Adam has not done the dishes for three weeks.”
+4. “Adam says, 'You're right, I haven't. But neither do you, so let's fix the chart.'”
 
-**Shown as soon as you tap.** The words are “The rota on the fridge shows that Adam has not washed up for three weeks.”.
-- If you tapped “Zoe tells her housemate Adam, 'You never wash up.'”: That is the accusation. Both names can have one, so the words alone do not settle it.
+**Shown as soon as you tap.** The words are “The chore chart on the fridge shows that Adam has not done the dishes for three weeks.”.
+- If you tapped “Zoe tells her roommate Adam, 'You never do the dishes.'”: That is the accusation. Both names can have one, so the words alone do not settle it.
 - If you tapped “Zoe herself leaves plates in the sink for days.”: That shows Zoe doing what she accuses Adam of. It is why the case looks like **Projection**. But it is only half of what that name needs.
-- If you tapped “Adam says, 'You're right, I haven't. But neither do you, so let's fix the rota.'”: That is how Adam answers. It confirms the rota, but it is not the words that show he does the thing too.
+- If you tapped “Adam says, 'You're right, I haven't. But neither do you, so let's fix the chart.'”: That is how Adam answers. It confirms the chart, but it is not the words that show he does the thing too.
 
 **Why this is An ordinary exchange and not Projection**
 
-The name **Projection** needs two halves: the accuser doing it, and nothing in the case showing the other person doing it. Here the second half is missing. The rota shows that Adam has not washed up for three weeks, so what Zoe says is true.
+The name **Projection** needs two halves: the accuser doing it, and nothing in the case showing the other person doing it. Here the second half is missing. The chore chart shows that Adam has not done the dishes for three weeks, so what Zoe says is true.
 
-A true accusation does not stop being true because the person who makes it is not perfect. Adam agrees, says that Zoe does it too, and they fix the rota. That is two people sorting out a household problem.
+A true accusation does not stop being true because the person who makes it is not perfect. Adam agrees, says that Zoe does it too, and they fix the chart. That is two people sorting out a household problem.
 
 **How to tell them apart**
 
@@ -1193,7 +1193,7 @@ Who does the case show doing or feeling what is being said: the person accused, 
 
 ### 36. A wrong idea: "He is a gaslighter. She is a love-bomber."
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 42*
 
 [reviewers only: card kind `refute`, id `refute-person`]
 
@@ -1214,7 +1214,7 @@ So the question is about the words and the events, and not about the person: **�
 
 ### 37. The question you have been answering all along
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 42*
 
 [reviewers only: card kind `question`, id `q-does`]
 
@@ -1250,11 +1250,11 @@ The five names are defined by what is done to the other person, as the case show
 
 Look at what the question leaves out. It does not ask how upset anyone is, whether it was meant, or whether the person is a good one. It asks what the words and events in the case do to the other person, because that is what a case can show.
 
-So two cases can have the same two people, the same upset, even the same words, and get different names. A denial can be **Gaslighting** in one case and the plain truth in another. The same angry reply can be **Turning the blame around**, or an ordinary defence. Only what the case shows tells them apart.
+So two cases can have the same two people, the same upset, even the same words, and get different names. A denial can be **Gaslighting** in one case and the plain truth in another. The same angry reply can be **Turning the blame around**, or an ordinary defense. Only what the case shows tells them apart.
 
 **How to answer it from a case**
 
-Find the words in which one person speaks or acts towards the other, and ask which of the five answers they show. You should be able to put your finger on the words: the same denial coming back over months, a denial and an attack and playing the one wronged in one reply, a flood of attention and then pulling back, an accusation that fits the accuser, or none of those.
+Find the words in which one person speaks or acts toward the other, and ask which of the five answers they show. You should be able to put your finger on the words: the same denial coming back over months, a denial and an attack and playing the one wronged in one reply, a flood of attention and then pulling back, an accusation that fits the accuser, or none of those.
 
 Then ask what the case must show besides the words. For the denial that comes back, that the thing really happened and that the other person began to doubt their memory. For **Turning the blame around**, that the person did what was raised. For **Love-bombing**, both halves. For the accusation, that the accuser does it and that nothing shows the other person doing it. If any of these is missing, the answer is probably the ordinary one.
 
@@ -1274,11 +1274,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 38. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 42*
 
 [reviewers only: card kind `check`, id `check-does`]
 
-> In a seminar, Gus tells the tutor that Hira 'copies her essays from the internet'. The plagiarism checker flagged Gus's own last essay, and it has not flagged any of Hira's. Nobody has asked Gus about his essay.
+> In a seminar, Gus tells the professor that Hira 'copies her essays from the internet'. The plagiarism checker flagged Gus's own last essay, and it has not flagged any of Hira's. Nobody has asked Gus about his essay.
 
 **The question:** **“What does it do to the other person?”**
 
@@ -1290,7 +1290,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Accuses them of what the accuser is doing.**” Gus accuses Hira: “Gus tells the tutor that Hira 'copies her essays from the internet'” and “The plagiarism checker flagged Gus's own last essay, and it has not flagged any of Hira's.” The accuser is the one the checker flagged, and nothing shows Hira doing it. Nobody has raised his own essay with him, so he is not answering anything. This answer leads to **Projection**.
+- If you are right: “Right: **Accuses them of what the accuser is doing.**” Gus accuses Hira: “Gus tells the professor that Hira 'copies her essays from the internet'” and “The plagiarism checker flagged Gus's own last essay, and it has not flagged any of Hira's.” The accuser is the one the checker flagged, and nothing shows Hira doing it. Nobody has raised his own essay with him, so he is not answering anything. This answer leads to **Projection**.
 - If you miss: “The answer is **Accuses them of what the accuser is doing.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Tells them, again and again, that what happened did not happen**: Give that answer when the case shows something really happened, and over weeks or months the person keeps telling the other that it did not happen or did not happen that way, until the other person starts to doubt their own memory. This case shows something else: the person accuses the other of doing or feeling something, the case shows the accuser doing or feeling exactly that, and nothing in the case shows the other person doing it.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Nobody has asked Gus about his essay, so he is not answering anything by denying, attacking and playing the one wronged. The accusation is where the case starts.
@@ -1306,21 +1306,21 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 39. A whole case, from the first question to the name
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-hike`]
 
 You have the five names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
-*The walking group*
+*The hiking group*
 
-> Hollie joined a walking group where Raf told her, in her first week, that she was the kindest person he had ever met. He drove her home after every walk and paid for her train fare. Then Hollie said she could not lend him £200. Raf stopped answering her messages for ten days, and then wrote in the group chat, 'Some people only take.'
+> Hollie joined a hiking group where Raf told her, in her first week, that she was the kindest person he had ever met. He drove her home after every hike and paid for her train fare. Then Hollie said she could not lend him $200. Raf stopped answering her messages for ten days, and then wrote in the group chat, 'Some people only take.'
 
 **Question 1 of 2: What kind of thing is this?**
 
 What it is for: sorts one person’s reasoning from something one person does to another, from the way a person is over years, and from a moment that will pass. Each of the four is made of something different and is judged on different things: a piece of reasoning on the reasons, something one person does to another on what was said or done and what it did to the other person, and a person across years on those years. So the questions that come next depend on this answer, and after a passing moment there are none.
 
-> Hollie joined a walking group where Raf told her, in her first week, that she was the kindest person he had ever met. He drove her home after every walk and paid for her train fare. Then Hollie said she could not lend him £200. ⟦Raf stopped answering her messages for ten days⟧, and then wrote in the group chat, 'Some people only take.'
+> Hollie joined a hiking group where Raf told her, in her first week, that she was the kindest person he had ever met. He drove her home after every hike and paid for her train fare. Then Hollie said she could not lend him $200. ⟦Raf stopped answering her messages for ten days⟧, and then wrote in the group chat, 'Some people only take.'
 
 Answer: **“Something one person does to another”**
 
@@ -1332,11 +1332,11 @@ Still possible: all five names this unit teaches.
 
 What it is for: tells apart four things one person can do to another that work against them, and the ordinary exchange that does none of them. The five names are defined by what is done to the other person, as the case shows it. They are not defined by how upset anyone is, by whether it was meant, or by what kind of person either of them is.
 
-> Hollie joined a walking group where Raf ⟦told her, in her first week, that she was the kindest person he had ever met. He drove her home after every walk and paid for her train fare⟧. Then Hollie said she could not lend him £200. ⟦Raf stopped answering her messages for ten days, and then wrote in the group chat, 'Some people only take.'⟧
+> Hollie joined a hiking group where Raf ⟦told her, in her first week, that she was the kindest person he had ever met. He drove her home after every hike and paid for her train fare⟧. Then Hollie said she could not lend him $200. ⟦Raf stopped answering her messages for ten days, and then wrote in the group chat, 'Some people only take.'⟧
 
 Answer: **“Floods them with attention early on, then pulls it back”**
 
-Look first at how early it starts, and then at what happens to it. Both halves are in the case: “told her, in her first week, that she was the kindest person he had ever met. He drove her home after every walk and paid for her train fare” and “Raf stopped answering her messages for ten days, and then wrote in the group chat, 'Some people only take.'” The first is the flood, in her first week: far more praise, lifts and fares than a week of knowing someone would explain. The second is the pulling back, once Hollie says she cannot lend him the £200: ten days of silence, and then a remark in front of the group.
+Look first at how early it starts, and then at what happens to it. Both halves are in the case: “told her, in her first week, that she was the kindest person he had ever met. He drove her home after every hike and paid for her train fare” and “Raf stopped answering her messages for ten days, and then wrote in the group chat, 'Some people only take.'” The first is the flood, in her first week: far more praise, rides and fares than a week of knowing someone would explain. The second is the pulling back, once Hollie says she cannot lend him the $200: ten days of silence, and then a remark in front of the group.
 
 Still possible: **Love-bombing**. Ruled out: **Gaslighting**, **Turning the blame around**, **Projection** and **An ordinary exchange**.
 
@@ -1345,7 +1345,7 @@ Still possible: **Love-bombing**. Ruled out: **Gaslighting**, **Turning the blam
 **You are asked:** Raf was friendly and generous, and he asked a friend for a loan. A generous friend asking for a loan can look like **An ordinary exchange**. Why is this **Love-bombing** and not **An ordinary exchange**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
 - (a) Raf was friendly and generous, as people often are with a new friend.
-- (b) Raf asked to borrow £200 and Hollie said no.
+- (b) Raf asked to borrow $200 and Hollie said no.
 - (c) The attention was far more than a week would explain, and it was pulled back and turned critical once Hollie said no.
 
 **Shown as soon as you choose.** The one that settles it is (c): The attention was far more than a week would explain, and it was pulled back and turned critical once Hollie said no.
@@ -1356,7 +1356,7 @@ Still possible: **Love-bombing**. Ruled out: **Gaslighting**, **Turning the blam
 
 For **An ordinary exchange** the case must show none of the four. Here it shows one: early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along. Raf’s friendliness does not settle it, because it is only the first half.
 
-It is the question from the two neighbours, Dan and Eli. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way. Here the attention is pulled back, so the answer is **“Floods them with attention early on, then pulls it back”**.
+It is the question from the two neighbors, Dan and Eli. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way. Here the attention is pulled back, so the answer is **“Floods them with attention early on, then pulls it back”**.
 
 **Does it look like a case you know?**
 
@@ -1366,11 +1366,11 @@ Here the answer and the likeness agree, so the answer stands. The question comes
 
 ### 40. A second whole case, where the story points the wrong way
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 40 of 42*
 
 [reviewers only: card kind `worked`, id `worked-booking`]
 
-The walking group was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.
+The hiking group was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.
 
 *The double booking*
 
@@ -1426,16 +1426,16 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Three of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Gaslighting / Turning the blame around / Love-bombing / Projection / An ordinary exchange.
 
 **Drill item 1 of 46**
 
-> In September the pantomime director, Lucia, emailed Ben that he had the part of the dame, and the email is still in his inbox. Since then, ⟦whenever Ben asks about rehearsal dates, Lucia says, 'I never gave you that part,' and later, 'You're remembering what you wanted to hear,' and later, 'We've been over this and you keep making it up.' It has gone on since October.⟧ Ben now writes down everything she says at rehearsals, and has asked another cast member whether he is losing his grip.
+> In September the Christmas show director, Lucia, emailed Ben that he had the lead role, and the email is still in his inbox. Since then, ⟦whenever Ben asks about rehearsal dates, Lucia says, 'I never gave you that part,' and later, 'You're remembering what you wanted to hear,' and later, 'We've been over this and you keep making it up.' It has gone on since October.⟧ Ben now writes down everything she says at rehearsals, and has asked another cast member whether he is losing his grip.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **Something one person does to another**
@@ -1511,7 +1511,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 5 of 46**
 
-> ⟦Jess tells her husband Nick, out of the blue, 'You've been lying to me about money.'⟧ The joint account statements show every payment Nick has made, with nothing hidden. In the bedroom drawer is ⟦a credit card Jess has kept from Nick for a year⟧, with a balance of £3,000.
+> ⟦Jess tells her husband Nick, out of the blue, 'You've been lying to me about money.'⟧ The joint account statements show every payment Nick has made, with nothing hidden. In the bedroom drawer is ⟦a credit card Jess has kept from Nick for a year⟧, with a balance of $3,000.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **Something one person does to another**
@@ -1530,7 +1530,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 6 of 46**
 
-> At the school gate, ⟦Rhea tells another parent, Chen, that his plan for the summer fair is the best idea so far⟧. Chen says thank you, and adds that Hamid, who thought of the stall rota, deserves the credit.
+> At the school gate, ⟦Rhea tells another parent, Chen, that his plan for the summer fair is the best idea so far⟧. Chen says thank you, and adds that Hamid, who thought of the stall schedule, deserves the credit.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **Something one person does to another**
@@ -1551,7 +1551,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 46**
 
-> When Noor started a new blood-pressure tablet, her husband Dev took her old prescription to the chemist, and the receipt shows he did. Since January, whenever she asks where the old tablets went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.
+> When Noor started a new blood-pressure pill, her husband Dev took her old prescription to the pharmacy, and the receipt shows he did. Since January, whenever she asks where the old pills went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.
 
 **You are asked:** What does it do to the other person?
 
@@ -1563,7 +1563,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Tells them, again and again, that what happened did not happen.**” The receipt shows he really did take the prescription. He then tells her it did not happen: “whenever she asks where the old tablets went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.” It comes back for months, and Noor has begun to doubt her own memory. This answer leads to **Gaslighting**.
+- If you are right: “Right: **Tells them, again and again, that what happened did not happen.**” The receipt shows he really did take the prescription. He then tells her it did not happen: “whenever she asks where the old pills went, he says, 'I never touched them,' and later, 'You moved them yourself and forgot,' and later, 'Your memory isn't what it was.' By April Noor has started to ask her daughter whether he is right.” It comes back for months, and Noor has begun to doubt her own memory. This answer leads to **Gaslighting**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: There is no single exchange of a denial, an attack and playing the one wronged. The same denial returns for months, until Noor doubts her memory.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1571,7 +1571,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 46**
 
-> Ollie drops the winning catch in the cricket club's final. The match video shows he had both hands on it. When his captain, Ray, asks about it afterwards, Ollie says, 'It came off the sun. You were the one who picked this ground, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets hauled over.'
+> Ollie drops the winning catch in the softball club's final. The game video shows he had both hands on it. When his captain, Ray, asks about it afterward, Ollie says, 'It came out of the sun. You were the one who picked this field, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets called out.'
 
 **You are asked:** What does it do to the other person?
 
@@ -1583,7 +1583,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Denies it, attacks them for raising it, and plays the one wronged.**” The video shows Ollie dropped it, and Ray raises it. Ollie then denies it ("It came off the sun"), attacks Ray ("you always blame the wrong person"), and plays the one wronged ("I'm the one who gets hauled over"). “When his captain, Ray, asks about it afterwards, Ollie says, 'It came off the sun. You were the one who picked this ground, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets hauled over.'” This answer leads to **Turning the blame around**.
+- If you are right: “Right: **Denies it, attacks them for raising it, and plays the one wronged.**” The video shows Ollie dropped it, and Ray raises it. Ollie then denies it ("It came out of the sun"), attacks Ray ("you always blame the wrong person"), and plays the one wronged ("I'm the one who gets called out"). “When his captain, Ray, asks about it afterward, Ollie says, 'It came out of the sun. You were the one who picked this field, and you always blame the wrong person. I give my Saturdays to this club and I'm the one who gets called out.'” This answer leads to **Turning the blame around**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Accuses them of what the accuser is doing**: Ollie is answering something Ray raised with him. In **Projection** nobody has raised anything, and the accusation is where the case starts.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1591,7 +1591,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 9 of 46**
 
-> A new choir member, Tomas, wrote to Elle every day for a fortnight about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart. When Elle said she could not go to the concert, he stopped speaking to her at rehearsals and told a friend she had been 'using him'.
+> A new choir member, Tomas, wrote to Elle every day for two weeks about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart. When Elle said she could not go to the concert, he stopped speaking to her at rehearsals and told a friend she had been 'using him'.
 
 **You are asked:** What does it do to the other person?
 
@@ -1603,7 +1603,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Floods them with attention early on, then pulls it back.**” The attention was far more than a fortnight would explain: “wrote to Elle every day for a fortnight about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart” and “he stopped speaking to her at rehearsals and told a friend she had been 'using him'”. It was pulled back, and turned into criticism, once Elle did not go along. This answer leads to **Love-bombing**.
+- If you are right: “Right: **Floods them with attention early on, then pulls it back.**” The attention was far more than two weeks would explain: “wrote to Elle every day for two weeks about how special her voice was, gave her a ticket to his sister's concert, and told the choir she was its heart” and “he stopped speaking to her at rehearsals and told a friend she had been 'using him'”. It was pulled back, and turned into criticism, once Elle did not go along. This answer leads to **Love-bombing**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Says or does what it looks like, and nothing more**: Warmth from a new friend would be **An ordinary exchange** if it stayed warm. Here it is pulled back and turns critical when Elle says no.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1631,7 +1631,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 11 of 46**
 
-> Carla phones her energy company and says her bill is double what she expected. The adviser, Ian, says he will check and call back. That afternoon he rings, tells her a meter was misread in the spring, and corrects the bill.
+> Carla calls her energy company and says her bill is double what she expected. The advisor, Ian, says he will check and call back. That afternoon he calls, tells her a meter was misread in the spring, and corrects the bill.
 
 **You are asked:** What does it do to the other person?
 
@@ -1643,7 +1643,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Says or does what it looks like, and nothing more.**” Carla makes a complaint: “Carla phones her energy company and says her bill is double what she expected.” Ian checks and corrects it. Nothing is denied or turned on her, nothing repeats, and no attention is poured on and withdrawn. This answer leads to **An ordinary exchange**.
+- If you are right: “Right: **Says or does what it looks like, and nothing more.**” Carla makes a complaint: “Carla calls her energy company and says her bill is double what she expected.” Ian checks and corrects it. Nothing is denied or turned on her, nothing repeats, and no attention is poured on and withdrawn. This answer leads to **An ordinary exchange**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Ian does not deny, attack or play the one wronged. He checks, finds the fault and fixes it.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1727,14 +1727,14 @@ Shown to you, with the words that decide each answer marked:
 
 **You are asked:** This is **Gaslighting**. Which of these would you expect to hear?
 
-- "I never said that. You always get things muddled. You must have dreamt it."
+- "I never said that. You always get things muddled. You must have dreamed it."
 - "I didn’t do it. And you’re the one who is always late. I can’t believe you would blame me."
 - "You never told me that. Let’s look at the message and see who is right."
 - "I’ve never felt like this about anyone. Come away with me this weekend."
 
 **Shown as soon as you answer**
 
-- The answer is: "I never said that. You always get things muddled. You must have dreamt it." It is the same denial of what happened, said over and over, and aimed at the other person’s memory ("you always get things muddled").
+- The answer is: "I never said that. You always get things muddled. You must have dreamed it." It is the same denial of what happened, said over and over, and aimed at the other person’s memory ("you always get things muddled").
 - If you chose "I didn’t do it. And you’re the one who is always late. I can’t believe you would blame me.": that belongs to **Turning the blame around**.
 - If you chose "You never told me that. Let’s look at the message and see who is right.": that belongs to **An ordinary exchange**.
 - If you chose "I’ve never felt like this about anyone. Come away with me this weekend.": that belongs to **Love-bombing**.
@@ -1812,7 +1812,7 @@ Shown to you, with the words that decide each answer marked:
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Four years into a law degree she dislikes, Anneke has decided to finish it. 'I've put four years into this,' she tells her tutor. 'I can't switch now.'
+> Four years into a law degree she dislikes, Anneke has decided to finish it. 'I've put four years into this,' she tells her advisor. 'I can't switch now.'
 
 **You are asked:** What kind of thing is this?
 
@@ -1823,7 +1823,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The tutor only listens, and nothing is said about the tutor.
+- If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The advisor only listens, and nothing is said about the advisor.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -1854,7 +1854,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 23 of 46**
 
-> ⟦Jo says to Fin, 'I thought we agreed the call was at three.'⟧ Fin says, 'I wrote down two. Let me check.' He looks at the calendar invite, which says three. 'You're right, sorry. I'll ring them now.'
+> ⟦Jo says to Fin, 'I thought we agreed the call was at three.'⟧ Fin says, 'I wrote down two. Let me check.' He looks at the calendar invite, which says three. 'You're right, sorry. I'll call them now.'
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **Something one person does to another**
@@ -1863,7 +1863,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Fin remembers it differently, checks, and says “He looks at the calendar invite, which says three. 'You're right, sorry. I'll ring them now.'” The disagreement is one exchange, it is settled by looking, and nobody is left doubting their own memory.
+- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Fin remembers it differently, checks, and says “He looks at the calendar invite, which says three. 'You're right, sorry. I'll call them now.'” The disagreement is one exchange, it is settled by looking, and nobody is left doubting their own memory.
   - Why not **Gaslighting**: Fin does not tell Jo again and again that something did not happen. He remembers it differently once, checks, and agrees.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tells them, again and again, that what happened did not happen**: Fin does not tell Jo again and again that something did not happen. He remembers it differently once, checks, and agrees.
@@ -1875,7 +1875,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 24 of 46**
 
-> The library system shows that Kofi never returned a book he borrowed, and ⟦a classmate, Alma, asks him about the fine⟧. Kofi says, 'I returned it ages ago. You love making a scene about other people's mistakes. I covered for you last term, and this is how I'm treated. I'm the one who always gets blamed.'
+> The library system shows that Kofi never returned a book he borrowed, and ⟦a classmate, Alma, asks him about the fine⟧. Kofi says, 'I returned it a long time ago. You love making a scene about other people's mistakes. I covered for you last semester, and this is how I'm treated. I'm the one who always gets blamed.'
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **Something one person does to another**
@@ -1884,7 +1884,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The system shows Kofi did it, and Alma raises it. He denies it ("I returned it ages ago"), attacks her ("You love making a scene"), and plays the one wronged ("I'm the one who always gets blamed"). “Kofi says, 'I returned it ages ago. You love making a scene about other people's mistakes. I covered for you last term, and this is how I'm treated. I'm the one who always gets blamed.'”
+- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The system shows Kofi did it, and Alma raises it. He denies it ("I returned it a long time ago"), attacks her ("You love making a scene"), and plays the one wronged ("I'm the one who always gets blamed"). “Kofi says, 'I returned it a long time ago. You love making a scene about other people's mistakes. I covered for you last semester, and this is how I'm treated. I'm the one who always gets blamed.'”
   - Why not **An ordinary exchange**: Someone who simply said "Sorry, I forgot to return it" would be **An ordinary exchange**. Kofi denies, attacks and plays the one wronged, all in one reply.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Says or does what it looks like, and nothing more**: Someone who simply said "Sorry, I forgot to return it" would be **An ordinary exchange**. Kofi denies, attacks and plays the one wronged, all in one reply.
@@ -1921,13 +1921,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 26 of 46**
 
-> In June Lee's brother Carl borrowed £500 and wrote in a message, 'I owe you £500.' Lee still has the message. Since then, whenever Lee brings it up, Carl says, 'I never borrowed anything from you,' and later, 'You've mixed me up with someone else,' and later, 'You're making it up to get at me.' Four months on, Lee has stopped mentioning it and has told a friend he sometimes wonders whether he imagined the whole thing.
+> In June Lee's brother Carl borrowed $500 and wrote in a message, 'I owe you $500.' Lee still has the message. Since then, whenever Lee brings it up, Carl says, 'I never borrowed anything from you,' and later, 'You've mixed me up with someone else,' and later, 'You're making it up to go after me.' Four months on, Lee has stopped mentioning it and has told a friend he sometimes wonders whether he imagined the whole thing.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Gaslighting**.” What does it do to the other person? **Tells them, again and again, that what happened did not happen.** The message shows the loan really happened. Carl then says it did not: “whenever Lee brings it up, Carl says, 'I never borrowed anything from you,' and later, 'You've mixed me up with someone else,' and later, 'You're making it up to get at me.'” It goes on for four months, and Lee ends up wondering whether he imagined it.
+- If you are right: “Right: **Gaslighting**.” What does it do to the other person? **Tells them, again and again, that what happened did not happen.** The message shows the loan really happened. Carl then says it did not: “whenever Lee brings it up, Carl says, 'I never borrowed anything from you,' and later, 'You've mixed me up with someone else,' and later, 'You're making it up to go after me.'” It goes on for four months, and Lee ends up wondering whether he imagined it.
   - Why not **Turning the blame around**: There is no single exchange of a denial, an attack and playing the one wronged. The same denial comes back for months, until Lee doubts his memory.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever Lee brings it up, Carl says”.
@@ -1940,17 +1940,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 27 of 46**
 
-> Dr Shah tells Mrs Okafor that her blood pressure is higher than last time. Mrs Okafor says, 'I disagree. I have been taking it at home and it is normal.' Dr Shah says, 'Bring your home readings and we will compare them with the clinic's.' She does, and they agree to repeat the test in a month.
+> Dr. Shah tells Mrs. Okafor that her blood pressure is higher than last time. Mrs. Okafor says, 'I disagree. I have been taking it at home and it is normal.' Dr. Shah says, 'Bring your home readings and we will compare them with the clinic's.' She does, and they agree to repeat the test in a month.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Mrs Okafor disagrees, and Dr Shah answers: “Mrs Okafor says, 'I disagree. I have been taking it at home and it is normal.' Dr Shah says, 'Bring your home readings and we will compare them with the clinic's.'” A disagreement is settled by comparing readings. Nothing is denied to the point of doubt, nothing is turned on anyone, and nothing else is going on.
-  - Why not **Turning the blame around**: Mrs Okafor disagrees, but she does not attack Dr Shah or play the one wronged, and the case does not show her doing anything wrong.
+- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Mrs. Okafor disagrees, and Dr. Shah answers: “Mrs. Okafor says, 'I disagree. I have been taking it at home and it is normal.' Dr. Shah says, 'Bring your home readings and we will compare them with the clinic's.'” A disagreement is settled by comparing readings. Nothing is denied to the point of doubt, nothing is turned on anyone, and nothing else is going on.
+  - Why not **Turning the blame around**: Mrs. Okafor disagrees, but she does not attack Dr. Shah or play the one wronged, and the case does not show her doing anything wrong.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **Something one person does to another.** One person is telling another something about them, and the other answers: “Dr Shah tells Mrs Okafor that her blood pressure is higher than last time”.
-  - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Mrs Okafor disagrees, but she does not attack Dr Shah or play the one wronged, and the case does not show her doing anything wrong.
+  - What kind of thing is this? **Something one person does to another.** One person is telling another something about them, and the other answers: “Dr. Shah tells Mrs. Okafor that her blood pressure is higher than last time”.
+  - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Mrs. Okafor disagrees, but she does not attack Dr. Shah or play the one wronged, and the case does not show her doing anything wrong.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1959,17 +1959,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 28 of 46**
 
-> Within days of Mia moving into the flat share, her flatmate Cass cooked for her every night, lent her money without being asked, and told everyone Mia was the best flatmate she had ever had. In the second month Mia said she was going to her parents' for the weekend instead of to Cass's party. Cass slammed the kitchen door, stopped cooking for her, and said, 'I did all that and you throw it in my face.'
+> Within days of Mia moving into the shared apartment, her roommate Cass cooked for her every night, lent her money without being asked, and told everyone Mia was the best roommate she had ever had. In the second month Mia said she was going to her parents' for the weekend instead of to Cass's party. Cass slammed the kitchen door, stopped cooking for her, and said, 'I did all that and you throw it in my face.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** Days after Mia moved in came far more attention than the days would explain: “cooked for her every night, lent her money without being asked, and told everyone Mia was the best flatmate she had ever had” and “Cass slammed the kitchen door, stopped cooking for her, and said, 'I did all that and you throw it in my face.'” It was pulled back, with criticism, when Mia chose her parents over the party.
-  - Why not **An ordinary exchange**: A friendly flatmate who stayed friendly when Mia said no would be **An ordinary exchange**. Here the attention stops and turns critical.
+- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** Days after Mia moved in came far more attention than the days would explain: “cooked for her every night, lent her money without being asked, and told everyone Mia was the best roommate she had ever had” and “Cass slammed the kitchen door, stopped cooking for her, and said, 'I did all that and you throw it in my face.'” It was pulled back, with criticism, when Mia chose her parents over the party.
+  - Why not **An ordinary exchange**: A friendly roommate who stayed friendly when Mia said no would be **An ordinary exchange**. Here the attention stops and turns critical.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Cass slammed the kitchen door, stopped cooking for her, and said, 'I did all that and you throw it in my face.'”.
-  - If you chose **Says or does what it looks like, and nothing more**: A friendly flatmate who stayed friendly when Mia said no would be **An ordinary exchange**. Here the attention stops and turns critical.
+  - If you chose **Says or does what it looks like, and nothing more**: A friendly roommate who stayed friendly when Mia said no would be **An ordinary exchange**. Here the attention stops and turns critical.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1978,7 +1978,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 29 of 46**
 
-> The bank statement shows that Karl wrote a £400 cheque to the tennis club that bounced. The club secretary, Una, asks him about it. Karl says, 'It didn't bounce. And you're the last person to ask, with the club's books in the state they're in. I've given this club ten years and I'm the one who gets treated like a thief.'
+> The bank statement shows that Karl wrote a $400 check to the tennis club that bounced. The club secretary, Una, asks him about it. Karl says, 'It didn't bounce. And you're the last person to ask, with the club's books in the state they're in. I've given this club ten years and I'm the one who gets treated like a thief.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2016,7 +2016,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 31 of 46**
 
-> In April Marcia wrote in the five-a-side league's chat: 'Thursdays at seven are yours for the season.' Since then, whenever the team captain, Ned, asks about the slot, Marcia says, 'I never said Thursdays,' and later, 'That's not how it was,' and later, 'You're getting your messages mixed up.' By September Ned screenshots every chat and has asked the league secretary whether he has got the wrong end of the stick.
+> In April Marcia wrote in the indoor soccer league's chat: 'Thursdays at seven are yours for the season.' Since then, whenever the team captain, Ned, asks about the slot, Marcia says, 'I never said Thursdays,' and later, 'That's not how it was,' and later, 'You're getting your messages mixed up.' By September Ned screenshots every chat and has asked the league secretary whether he has got the wrong idea.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2035,17 +2035,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 32 of 46**
 
-> The hospital lab's log shows that Priti left the sample fridge open overnight and the samples were ruined. Her supervisor, Dr Cole, asks her about it. Priti says, 'I never left it open. You're the one who runs this lab like a mess. I can't believe I'm being singled out, after all the hours I've put in.'
+> The hospital lab's log shows that Priti left the sample fridge open overnight and the samples were ruined. Her supervisor, Dr. Cole, asks her about it. Priti says, 'I never left it open. You're the one who runs this lab like a mess. I can't believe I'm being singled out, after all the hours I've put in.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The log shows Priti did it, and Dr Cole raises it. She denies it ("I never left it open"), attacks him ("You're the one who runs this lab like a mess"), and plays the one wronged ("singled out"). “Priti says, 'I never left it open. You're the one who runs this lab like a mess. I can't believe I'm being singled out, after all the hours I've put in.'”
-  - Why not **Gaslighting**: Nothing shows the denial coming back over weeks or months, or Dr Cole doubting his own memory. It is one exchange.
+- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The log shows Priti did it, and Dr. Cole raises it. She denies it ("I never left it open"), attacks him ("You're the one who runs this lab like a mess"), and plays the one wronged ("singled out"). “Priti says, 'I never left it open. You're the one who runs this lab like a mess. I can't believe I'm being singled out, after all the hours I've put in.'”
+  - Why not **Gaslighting**: Nothing shows the denial coming back over weeks or months, or Dr. Cole doubting his own memory. It is one exchange.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “Her supervisor, Dr Cole, asks her about it”.
-  - If you chose **Tells them, again and again, that what happened did not happen**: Nothing shows the denial coming back over weeks or months, or Dr Cole doubting his own memory. It is one exchange.
+  - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “Her supervisor, Dr. Cole, asks her about it”.
+  - If you chose **Tells them, again and again, that what happened did not happen**: Nothing shows the denial coming back over weeks or months, or Dr. Cole doubting his own memory. It is one exchange.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, a person denies that something happened. **Turning the blame around** is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. **Gaslighting** is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory. Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2092,16 +2092,16 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 35 of 46**
 
-> Isaac knocks on his neighbour Hettie's door and says her television has been too loud after eleven for a week. Hettie says, 'I didn't realise it carried. I'm sorry, I'll turn it down.' Then, a little sharply: 'You could have knocked earlier, though.' Isaac says, 'Fair.'
+> Isaac knocks on his neighbor Hettie's door and says her television has been too loud after eleven for a week. Hettie says, 'I didn't realize it carried. I'm sorry, I'll turn it down.' Then, a little sharply: 'You could have knocked earlier, though.' Isaac says, 'Fair.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Isaac complains, and Hettie answers: “Hettie says, 'I didn't realise it carried. I'm sorry, I'll turn it down.' Then, a little sharply: 'You could have knocked earlier, though.'” A sharp word is not an attack that turns the blame around: she does not deny it, and she does not play the one wronged.
+- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Isaac complains, and Hettie answers: “Hettie says, 'I didn't realize it carried. I'm sorry, I'll turn it down.' Then, a little sharply: 'You could have knocked earlier, though.'” A sharp word is not an attack that turns the blame around: she does not deny it, and she does not play the one wronged.
   - Why not **Turning the blame around**: Hettie does not deny it, and she does not put herself forward as the one wronged. Her sharp remark is one remark, and she agrees to turn the television down.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **Something one person does to another.** One person is telling another about something between them: “Isaac knocks on his neighbour Hettie's door and says her television has been too loud after eleven for a week”.
+  - What kind of thing is this? **Something one person does to another.** One person is telling another about something between them: “Isaac knocks on his neighbor Hettie's door and says her television has been too loud after eleven for a week”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Hettie does not deny it, and she does not put herself forward as the one wronged. Her sharp remark is one remark, and she agrees to turn the television down.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
@@ -2111,7 +2111,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 36 of 46**
 
-> In May Kaya's father-in-law, Walt, wrote to her and her husband: 'We'll pay the deposit on your new flat.' The message is still on her phone. Since then, whenever Kaya brings it up, Walt says kindly, 'Oh sweetheart, I never said that. You've been so tired lately,' and later, 'Honestly, dear, you're thinking of someone else's family,' and later, 'We worry about you, you know. You do imagine things.' This has gone on for five months. Kaya now keeps screenshots of everything, and has asked her husband, 'Is it me?'
+> In May Kaya's father-in-law, Walt, wrote to her and her husband: 'We'll pay the deposit on your new apartment.' The message is still on her phone. Since then, whenever Kaya brings it up, Walt says kindly, 'Oh sweetheart, I never said that. You've been so tired lately,' and later, 'Honestly, dear, you're thinking of someone else's family,' and later, 'We worry about you, you know. You do imagine things.' This has gone on for five months. Kaya now keeps screenshots of everything, and has asked her husband, 'Is it me?'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2131,13 +2131,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 37 of 46**
 
-> Sandy, the treasurer of a village hall committee, is asked by the secretary, Lev, why the hall's insurance lapsed in March. The committee's emails show that Sandy was told to renew it and never did, and show Lev renewing the gas safety certificate on time. 'I renewed it,' Sandy says. 'You're the one who never reads the post. You let the gas safety certificate lapse last year and nobody said a word. I do everything round here and I'm the one who gets cross-examined.'
+> Sandy, the treasurer of a community hall committee, is asked by the secretary, Lev, why the hall's insurance lapsed in March. The committee's emails show that Sandy was told to renew it and never did, and show Lev renewing the fire inspection permit on time. 'I renewed it,' Sandy says. 'You're the one who never reads the mail. You let the fire inspection permit lapse last year and nobody said a word. I do everything around here and I'm the one who gets cross-examined.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The emails show Sandy did it, and Lev raises it. Sandy denies it, attacks Lev, and plays the one wronged: “The committee's emails show that Sandy was told to renew it and never did” and “'I renewed it,' Sandy says. 'You're the one who never reads the post. You let the gas safety certificate lapse last year and nobody said a word. I do everything round here and I'm the one who gets cross-examined.'” The attack also fits the accuser, since Sandy is the one who let things lapse. When a case shows both, the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
+- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The emails show Sandy did it, and Lev raises it. Sandy denies it, attacks Lev, and plays the one wronged: “The committee's emails show that Sandy was told to renew it and never did” and “'I renewed it,' Sandy says. 'You're the one who never reads the mail. You let the fire inspection permit lapse last year and nobody said a word. I do everything around here and I'm the one who gets cross-examined.'” The attack also fits the accuser, since Sandy is the one who let things lapse. When a case shows both, the answer is **“Denies it, attacks them for raising it, and plays the one wronged”**.
   - Why not **Projection**: Sandy does accuse Lev of what Sandy did. But Lev raised the lapse with Sandy first, so Sandy is answering something, with a denial and by playing the one wronged. That is what puts the case with the other name.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “is asked by the secretary, Lev, why the hall's insurance lapsed in March”.
@@ -2166,7 +2166,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, one person accuses the other of something. In **Projection** the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In **An ordinary exchange** the case shows the other person doing it, so the accusation is fair, even if the accuser does it too. Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- This case may have brought back *The washing up*, which was **An ordinary exchange**. When a likeness and the answers disagree, go by the words that answer the question.
+- This case may have brought back *The dishes*, which was **An ordinary exchange**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Accusing someone of what you are doing yourself” (one tap opens the card).
 
 **Drill item 39 of 46**
@@ -2190,7 +2190,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 40 of 46**
 
-> The warehouse log shows that Idris loaded the wrong pallet onto a lorry. His supervisor, Mel, asks him about it. 'Yes, that was me,' Idris says. 'I'm sorry, and I'm furious with myself. I was given two different bay numbers and I should have asked.' He goes out and reloads it.
+> The warehouse log shows that Idris loaded the wrong pallet onto a truck. His supervisor, Mel, asks him about it. 'Yes, that was me,' Idris says. 'I'm sorry, and I'm furious with myself. I was given two different bay numbers and I should have asked.' He goes out and reloads it.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2205,7 +2205,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- This case may have brought back *The missing till money*, which was **Turning the blame around**. When a likeness and the answers disagree, go by the words that answer the question.
+- This case may have brought back *The missing register money*, which was **Turning the blame around**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Something said between two people, with nothing more to it” (one tap opens the card).
 
 **Drill item 41 of 46**
@@ -2231,7 +2231,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit Two: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Ivan tells his children that honesty matters more than anything. Filling in an insurance claim for a stolen bike, he adds £150 to what it was worth. 'Insurers allow for this,' he says. 'Everybody rounds up.'
+> Ivan tells his children that honesty matters more than anything. Filling in an insurance claim for a stolen bike, he adds $150 to what it was worth. 'Insurers allow for this,' he says. 'Everybody rounds up.'
 
 **You are asked:** What kind of thing is this?
 
@@ -2260,7 +2260,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged
 - Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along
 - An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it
-- Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
+- Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
 
 **The answer:** Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged.
 - The fault: The claim shows a denial and stops there. A denial on its own is not **Turning the blame around**. The case must show that he did it, and that in answer to being asked he also attacks the person who asked and plays the one wronged. The claim shows none of those.
@@ -2276,7 +2276,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged
 - Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along
 - An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it
-- Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
+- Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
 
 **Shown as soon as you answer**
 
@@ -2295,7 +2295,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged
 - Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along
 - An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it
-- Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
+- Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
 
 **Shown as soon as you answer**
 
@@ -2333,7 +2333,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Something the case shows the person did, someone raising it with them, and in answer all three: they deny it, they attack the person who raised it, and they present themselves as the one who has been wronged
 - Early in a relationship, far more praise, attention, gifts or plans than the relationship so far would explain, and later that attention pulled back or turned into criticism, often once the other person sets a limit or does not go along
 - An accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it
-- Two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
+- Two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser
 
 **Shown as soon as you answer**
 
@@ -2346,7 +2346,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 41. What to carry away
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 42*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2371,7 +2371,7 @@ What does it do to the other person?
   - Ask: "How much attention is this, compared with how long we have known each other, and what happens to it when I say no?"
 - **Projection**: an accusation one person makes against the other, and the case showing that the accuser is the one doing or feeling what they accuse the other of, with nothing in the case showing the other person doing it.
   - Ask: "What does the case show about the person making the accusation, and what does it show about the person accused?" If the accuser is doing it and nothing shows the other person doing it, that is the name.
-- **An ordinary exchange**: two people and something one says or does to the other (a disagreement, a complaint, a defence, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser.
+- **An ordinary exchange**: two people and something one says or does to the other (a disagreement, a complaint, a defense, praise), and none of the other four: no repeated denial of what happened, no deny, attack and play the one wronged when caught out, no flood of attention later pulled back, no accusation that fits the accuser.
   - Ask: "Can I point to any of the four things in the words of this case?" If not, the answer is this one, however upset anyone is.
 
 **To carry away**
@@ -2384,7 +2384,7 @@ What does it do to the other person?
 
 ### 42. Where would you meet this?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2395,7 +2395,7 @@ Knowing the five names is one step. Noticing the moment to use one is a separate
 Pick one of the five and name an occasion of your own: somewhere you heard it, or somewhere you said it. The lines under each name are there to jog your memory.
 
 - **Gaslighting**: A time someone told you, more than once, that something you clearly remember did not happen.
-- **Turning the blame around**: A time you raised something with someone and ended up apologising for raising it.
+- **Turning the blame around**: A time you raised something with someone and ended up apologizing for raising it.
 - **Love-bombing**: A new friend, job or group where everything was wonderful at first and then changed.
 - **Projection**: Something you were accused of that fitted the person accusing you better than it fitted you.
 - **An ordinary exchange**: The last row you had that was only a row.
@@ -2416,13 +2416,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 15**
 
-> In January the landlord, Mr Hale, wrote to his tenant Beth that her rent would stay the same all year, and the letter is in her drawer. Since February, whenever she mentions it, he says, 'I never wrote that,' and later, 'You've misread it,' and later, 'Tenants always remember things in their own favour.' It has gone on for five months, and Beth has started asking her friends whether she reads things wrong.
+> In January the landlord, Mr. Hale, wrote to his tenant Beth that her rent would stay the same all year, and the letter is in her drawer. Since February, whenever she mentions it, he says, 'I never wrote that,' and later, 'You've misread it,' and later, 'Tenants always remember things in their own favor.' It has gone on for five months, and Beth has started asking her friends whether she reads things wrong.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Gaslighting**.” What does it do to the other person? **Tells them, again and again, that what happened did not happen.** The letter shows it really happened. Mr Hale tells Beth it did not: “whenever she mentions it, he says, 'I never wrote that,' and later, 'You've misread it,' and later, 'Tenants always remember things in their own favour.' It has gone on for five months”. Beth now asks her friends whether she reads things wrong, which shows her doubting her own judgement of what she saw.
+- If you are right: “Right: **Gaslighting**.” What does it do to the other person? **Tells them, again and again, that what happened did not happen.** The letter shows it really happened. Mr. Hale tells Beth it did not: “whenever she mentions it, he says, 'I never wrote that,' and later, 'You've misread it,' and later, 'Tenants always remember things in their own favor.' It has gone on for five months”. Beth now asks her friends whether she reads things wrong, which shows her doubting her own judgment of what she saw.
   - Why not **An ordinary exchange**: A single disagreement about what a letter said would be **An ordinary exchange**. Here the denial comes back for five months and Beth has begun to doubt herself.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever she mentions it, he says”.
@@ -2435,13 +2435,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 2 of 15**
 
-> In February Rob's manager, Gail, emailed him that he would be put forward for promotion in the autumn. Since then, whenever Rob asks about it, Gail says, 'I never said autumn,' and later, 'I think you wanted it so much you heard it,' and later, 'We've talked about this and you keep rewriting it.' By October Rob keeps a diary of every meeting and has asked his wife whether he is rewriting things.
+> In February Rob's manager, Gail, emailed him that he would be put forward for promotion in the fall. Since then, whenever Rob asks about it, Gail says, 'I never said fall,' and later, 'I think you wanted it so much you heard it,' and later, 'We've talked about this and you keep rewriting it.' By October Rob keeps a diary of every meeting and has asked his wife whether he is rewriting things.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Gaslighting**.” What does it do to the other person? **Tells them, again and again, that what happened did not happen.** The email shows she said it. Gail then says she did not: “whenever Rob asks about it, Gail says, 'I never said autumn,' and later, 'I think you wanted it so much you heard it,' and later, 'We've talked about this and you keep rewriting it.'” It runs from February to October, and Rob has started asking his wife whether he is rewriting things.
+- If you are right: “Right: **Gaslighting**.” What does it do to the other person? **Tells them, again and again, that what happened did not happen.** The email shows she said it. Gail then says she did not: “whenever Rob asks about it, Gail says, 'I never said fall,' and later, 'I think you wanted it so much you heard it,' and later, 'We've talked about this and you keep rewriting it.'” It runs from February to October, and Rob has started asking his wife whether he is rewriting things.
   - Why not **Turning the blame around**: There is no single exchange of a denial, an attack and playing the one wronged. The same denial returns for months, until Rob doubts his memory.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “whenever Rob asks about it, Gail says”.
@@ -2454,7 +2454,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 15**
 
-> Mr Dunn sent Priya home with a note saying her coursework deadline had moved to the fourteenth, and the note is in her bag. Since then, whenever she mentions it, he says, 'I never moved the deadline,' and later, 'You've got the date wrong again,' and later, 'Pupils always say that.' After two months Priya no longer trusts her own notes, and asks classmates to check what he said.
+> Mr. Dunn sent Priya home with a note saying her coursework deadline had moved to the fourteenth, and the note is in her bag. Since then, whenever she mentions it, he says, 'I never moved the deadline,' and later, 'You've got the date wrong again,' and later, 'Pupils always say that.' After two months Priya no longer trusts her own notes, and asks classmates to check what he said.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2473,13 +2473,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 15**
 
-> A photo from the neighbourhood app shows Ahmed's van across Gina's drive. Gina asks him to move it. Ahmed says, 'It wasn't there. You're the one who is always on at people. I've lived on this street twenty years and I'm the one being hounded.'
+> A photo from the neighborhood app shows Ahmed's van across Gina's drive. Gina asks him to move it. Ahmed says, 'It wasn't there. You're the one who is always on people’s case. I've lived on this street twenty years and I'm the one being hounded.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The photo shows Ahmed did it, and Gina raises it. He denies it ("It wasn't there"), attacks her ("always on at people"), and plays the one wronged ("the one being hounded"). “Ahmed says, 'It wasn't there. You're the one who is always on at people. I've lived on this street twenty years and I'm the one being hounded.'”
+- If you are right: “Right: **Turning the blame around**.” What does it do to the other person? **Denies it, attacks them for raising it, and plays the one wronged.** The photo shows Ahmed did it, and Gina raises it. He denies it ("It wasn't there"), attacks her ("always on at people"), and plays the one wronged ("the one being hounded"). “Ahmed says, 'It wasn't there. You're the one who is always on people’s case. I've lived on this street twenty years and I'm the one being hounded.'”
   - Why not **Gaslighting**: Nothing shows the denial coming back over weeks or months, or Gina doubting her memory. It is one exchange.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is raising something with another that has happened between them: “Gina asks him to move it”.
@@ -2492,7 +2492,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 5 of 15**
 
-> The bank record shows that Ines withdrew £500 from the joint account. Her husband, Lars, asks her about it. Ines says, 'I didn't take anything. You check up on me constantly, it's pathetic. I can't believe I'm being treated like a criminal in my own marriage.'
+> The bank record shows that Ines withdrew $500 from the joint account. Her husband, Lars, asks her about it. Ines says, 'I didn't take anything. You check up on me constantly, it's pathetic. I can't believe I'm being treated like a criminal in my own marriage.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2530,13 +2530,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 7 of 15**
 
-> In the first fortnight, Tara's new climbing partner Joel messaged her daily, bought her a harness, and told the whole club she was the best partner he had ever had. When Tara said she would climb with other people on Wednesdays, Joel stopped answering her and told people she was 'flaky'.
+> In the first two weeks, Tara's new climbing partner Joel messaged her daily, bought her a harness, and told the whole club she was the best partner he had ever had. When Tara said she would climb with other people on Wednesdays, Joel stopped answering her and told people she was 'flaky'.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** A fortnight would not explain the attention: “messaged her daily, bought her a harness, and told the whole club she was the best partner he had ever had” and “Joel stopped answering her and told people she was 'flaky'”. It was pulled back, and turned critical, when Tara said she would climb with others.
+- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** Two weeks would not explain the attention: “messaged her daily, bought her a harness, and told the whole club she was the best partner he had ever had” and “Joel stopped answering her and told people she was 'flaky'”. It was pulled back, and turned critical, when Tara said she would climb with others.
   - Why not **An ordinary exchange**: A keen new partner who stayed keen when Tara said Wednesdays were for others would be **An ordinary exchange**. Here the attention stops and turns critical.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Joel stopped answering her and told people she was 'flaky'”.
@@ -2568,17 +2568,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 15**
 
-> Within a week of meeting at university, Hana's new study buddy, Lukas, had sent her his notes for the whole year, texted her good morning every day, and told his friends she was the cleverest person he knew. When Hana said she would revise alone before her exam, Lukas stopped replying for ten days and then wrote, 'I gave you everything and you shut me out.'
+> Within a week of meeting in college, Hana's new study buddy, Lukas, had sent her his notes for the whole year, texted her good morning every day, and told his friends she was the cleverest person he knew. When Hana said she would study alone before her exam, Lukas stopped replying for ten days and then wrote, 'I gave you everything and you shut me out.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** A week would not explain the attention: “had sent her his notes for the whole year, texted her good morning every day, and told his friends she was the cleverest person he knew” and “Lukas stopped replying for ten days and then wrote, 'I gave you everything and you shut me out.'” It was pulled back, with a reproach, when Hana wanted to revise alone.
-  - Why not **An ordinary exchange**: A friendly study partner who accepted "I will revise alone" would be **An ordinary exchange**. Here the attention stops and the reply is a reproach.
+- If you are right: “Right: **Love-bombing**.” What does it do to the other person? **Floods them with attention early on, then pulls it back.** A week would not explain the attention: “had sent her his notes for the whole year, texted her good morning every day, and told his friends she was the cleverest person he knew” and “Lukas stopped replying for ten days and then wrote, 'I gave you everything and you shut me out.'” It was pulled back, with a reproach, when Hana wanted to study alone.
+  - Why not **An ordinary exchange**: A friendly study partner who accepted "I will study alone" would be **An ordinary exchange**. Here the attention stops and the reply is a reproach.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **Something one person does to another.** One person is doing something to another that is about the other person: “Lukas stopped replying for ten days and then wrote, 'I gave you everything and you shut me out.'”.
-  - If you chose **Says or does what it looks like, and nothing more**: A friendly study partner who accepted "I will revise alone" would be **An ordinary exchange**. Here the attention stops and the reply is a reproach.
+  - If you chose **Says or does what it looks like, and nothing more**: A friendly study partner who accepted "I will study alone" would be **An ordinary exchange**. Here the attention stops and the reply is a reproach.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary exchange**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2606,7 +2606,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 15**
 
-> Pia tells her sister Una that she 'hides what she buys so nobody sees'. The cupboard in Pia's room holds a dozen unopened parcels she has kept from the rest of the family, and Una's receipts are all in a folder on the kitchen table. Nobody had asked Pia about her parcels.
+> Pia tells her sister Una that she 'hides what she buys so nobody sees'. The closet in Pia's room holds a dozen unopened parcels she has kept from the rest of the family, and Una's receipts are all in a folder on the kitchen table. Nobody had asked Pia about her parcels.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2625,7 +2625,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 12 of 15**
 
-> At the village fete committee, Raj tells the others that Lea 'always takes the credit for other people's work'. The thank-you list in the newsletter credits Raj with the stall design that Lea drew, and credits Lea for nothing she did not do herself. Nobody had asked Raj about the list.
+> At the village fair committee, Raj tells the others that Lea 'always takes the credit for other people's work'. The thank-you list in the newsletter credits Raj with the stall design that Lea drew, and credits Lea for nothing she did not do herself. Nobody had asked Raj about the list.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2644,7 +2644,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 13 of 15**
 
-> Imran asks a shop for a refund on a toaster that stopped working after a week. The assistant, Zoe, says the policy needs a receipt, and Imran shows the receipt on his phone. She gives him the refund.
+> Imran asks a store for a refund on a toaster that stopped working after a week. The assistant, Zoe, says the policy needs a receipt, and Imran shows the receipt on his phone. She gives him the refund.
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
@@ -2653,7 +2653,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Imran makes a request and Zoe answers: “says the policy needs a receipt, and Imran shows the receipt on his phone. She gives him the refund.” Nothing is denied, turned back on anyone, accused, or poured on and withdrawn.
   - Why not **Turning the blame around**: Zoe does not deny anything, attack Imran, or play the one wronged. She asks for the receipt and gives the refund.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **Something one person does to another.** One person is asking something of another about a matter between them: “Imran asks a shop for a refund on a toaster that stopped working after a week”.
+  - What kind of thing is this? **Something one person does to another.** One person is asking something of another about a matter between them: “Imran asks a store for a refund on a toaster that stopped working after a week”.
   - If you chose **Denies it, attacks them for raising it, and plays the one wronged**: Zoe does not deny anything, attack Imran, or play the one wronged. She asks for the receipt and gives the refund.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Turning the blame around**, the look-alike card’s lines follow: In both, someone is told about something and answers with a denial or with anger. In **Turning the blame around** the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In **An ordinary exchange** the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three. Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?
@@ -2663,17 +2663,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 14 of 15**
 
-> Wei tells his lecturer that he thinks his second argument deserved more marks. She says she disagrees, explains which part she found unconvincing, and offers a second marker. Wei says, 'That's fair, please do.'
+> Wei tells his professor that he thinks his second argument deserved a higher grade. She says she disagrees, explains which part she found unconvincing, and offers a second reader. Wei says, 'That's fair, please do.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Wei disagrees, and the lecturer answers: “She says she disagrees, explains which part she found unconvincing, and offers a second marker. Wei says, 'That's fair, please do.'” It is a disagreement said as it is. She does not deny what happened, and nobody turns the blame on anyone.
-  - Why not **Gaslighting**: The lecturer does not tell Wei again and again that something did not happen. She disagrees once, gives her reason, and offers a second marker.
+- If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Wei disagrees, and the professor answers: “She says she disagrees, explains which part she found unconvincing, and offers a second reader. Wei says, 'That's fair, please do.'” It is a disagreement said as it is. She does not deny what happened, and nobody turns the blame on anyone.
+  - Why not **Gaslighting**: The professor does not tell Wei again and again that something did not happen. She disagrees once, gives her reason, and offers a second reader.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **Something one person does to another.** One person is saying something to another about a matter between them: “Wei tells his lecturer that he thinks his second argument deserved more marks”.
-  - If you chose **Tells them, again and again, that what happened did not happen**: The lecturer does not tell Wei again and again that something did not happen. She disagrees once, gives her reason, and offers a second marker.
+  - What kind of thing is this? **Something one person does to another.** One person is saying something to another about a matter between them: “Wei tells his professor that he thinks his second argument deserved a higher grade”.
+  - If you chose **Tells them, again and again, that what happened did not happen**: The professor does not tell Wei again and again that something did not happen. She disagrees once, gives her reason, and offers a second reader.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Gaslighting**, the look-alike card’s lines follow: In both, two people disagree about something that happened, and one of them says it did not happen the way the other says. The difference is how often it comes back, and what it does to the other person. In **Gaslighting** the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In **An ordinary exchange** it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory. Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2682,17 +2682,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 15 of 15**
 
-> Kim helped Olive carry her shopping upstairs. Olive thanks her, says she is the nicest neighbour she has had, and invites her round for tea at the weekend. Kim says she cannot this weekend, and Olive says, 'Another time, then.'
+> Kim helped Olive carry her shopping upstairs. Olive thanks her, says she is the nicest neighbor she has had, and invites her over for coffee on the weekend. Kim says she cannot this weekend, and Olive says, 'Another time, then.'
 
 **You are asked, in order:** What kind of thing is this? → What does it do to the other person? → Name it.
 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **An ordinary exchange**.” What does it do to the other person? **Says or does what it looks like, and nothing more.** Olive is warm, and Kim says no: “Kim says she cannot this weekend, and Olive says, 'Another time, then.'” The warmth fits what Kim did, and it stays warm when Kim declines, so nothing is pulled back.
-  - Why not **Love-bombing**: Thanks and an invitation after a favour are not far more attention than the relationship would explain, and Olive does not pull back when Kim says no.
+  - Why not **Love-bombing**: Thanks and an invitation after a favor are not far more attention than the relationship would explain, and Olive does not pull back when Kim says no.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “Olive thanks her, says she is the nicest neighbour she has had, and invites her round for tea at the weekend”.
-  - If you chose **Floods them with attention early on, then pulls it back**: Thanks and an invitation after a favour are not far more attention than the relationship would explain, and Olive does not pull back when Kim says no.
+  - What kind of thing is this? **Something one person does to another.** One person is saying something to another about what has happened between them: “Olive thanks her, says she is the nicest neighbor she has had, and invites her over for coffee on the weekend”.
+  - If you chose **Floods them with attention early on, then pulls it back**: Thanks and an invitation after a favor are not far more attention than the relationship would explain, and Olive does not pull back when Kim says no.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Love-bombing**, the look-alike card’s lines follow: In both, someone is warm and generous early in a relationship. In **Love-bombing** the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In **An ordinary exchange** the warmth fits how well the two know each other, or it stays when the other person sets a limit. Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”

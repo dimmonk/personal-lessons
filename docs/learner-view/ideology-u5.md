@@ -1,6 +1,6 @@
 # Learner view: Political Ideologies, Unit Five: Rights and fair treatment for everyone
 
-*Three things a text can want done for people, and how to tell which one you are reading.* Unit revision 2, built to lesson standard 1, status: draft.
+*Three things a text can want done for people, and how to tell which one you are reading.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,11 +17,11 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Everyone is owed something. What should be done about it?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 31*
 
 [reviewers only: card kind `orient`, id `orient`]
 
-After this unit you can read a short text that puts first what every person is owed, such as a petition, a speech, a leaflet or a letter, and say which of three things it wants done for people. You will be able to point to the words that tell you, and to say why it is not one of the other two. The text can be about a street permit, a clinic, a school test, a housing list or a border post.
+After this unit you can read a short text that puts first what every person is owed, such as a petition, a speech, a leaflet or a letter, and say which of three things it wants done for people. You will be able to point to the words that tell you, and to say why it is not one of the other two. The text can be about a street permit, a clinic, a school test, a housing waitlist or a border post.
 
 You have probably heard all three of these in one week. One person says, "Just protect people’s rights and leave them alone." Another says, "Rights are no use to a child with no school, so the government should pay for one." A third says, "The rules are the same for everyone, and that is exactly the problem." Each of them can say, with perfect honesty, that every person has rights and should be treated fairly. They are not disagreeing about that. They are disagreeing about what to do.
 
@@ -66,11 +66,11 @@ The unit has five parts, and you can stop after any of them.
 4. The question, and where the first question wins
 5. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Each person’s freedom, and a small government
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 31*
 
 [reviewers only: card kind `meet`, id `meet-clib`]
 
@@ -95,7 +95,7 @@ Notice what "a few jobs" means. It does not mean none. The musicians want the po
 
 Notice also what the text does not ask. Suppose the same musicians had added, "and the council should pay for a stage in every square". They would then be asking for something to be given, and the text would be asking something else. This text asks for nothing to be given.
 
-**What you must be able to point to.** Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more. This comes from one case so far. The next card tests it on a second case.
 
 **The question:** **“What does the text want done for people?”**
 
@@ -107,19 +107,19 @@ You may also hear this called “libertarianism” or “market liberalism”. T
 
 ### 3. Classical liberalism: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 31*
 
 [reviewers only: card kind `again`, id `again-clib`]
 
-The street-music petition gave you what to point to from one case: each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more. Here is a second case with a different story. This time nobody is singing: it is about a small firm and the people it hires.
+The street-music petition gave you what to point to from one case: each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more. Here is a second case with a different story. This time nobody is singing: it is about a small firm and the people it hires.
 
 The first case again, in one line. *The street-music petition*: “The council has its proper jobs: the police who keep the peace, the courts that settle disputes and the fire service that answers a call” and “Protect our rights, and then leave us alone”
 
 The second case.
 
-*The removals-firm letter*
+*The moving-firm letter*
 
-> From a letter to a newspaper by Anwen Rhys, who runs a small removals firm: 'Nobody should need leave from an official to hire a helper, to set a price or to keep what they earn. Each of us is free to work, to bargain and to trade. The government should run the courts and the police, make sure that contracts are kept, and otherwise stay out of it.'
+> From a letter to a newspaper by Anwen Rhys, who runs a small moving firm: 'Nobody should need leave from an official to hire a helper, to set a price or to keep what they earn. Each of us is free to work, to bargain and to trade. The government should run the courts and the police, make sure that contracts are kept, and otherwise stay out of it.'
 **You are asked:** In *The street-music petition*, these words show it: “The council has its proper jobs: the police who keep the peace, the courts that settle disputes and the fire service that answers a call” and “Protect our rights, and then leave us alone”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
@@ -140,13 +140,13 @@ The two stories share nothing else. One is about singing and the other about hir
 
 ### 4. The story never decides the answer
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 31*
 
 [reviewers only: card kind `lens`, id `lens`]
 
 The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.
 
-Every text in this unit has two layers. The top layer is the story: what the text is about. A street, a school, a clinic, a border post, a housing list. The layer underneath is what the text wants done for people.
+Every text in this unit has two layers. The top layer is the story: what the text is about. A street, a school, a clinic, a border post, a housing waitlist. The layer underneath is what the text wants done for people.
 
 The three names belong to the layer underneath. The same story can carry any of them. Two texts can both be about a clinic, and one asks the government to stay out of it while the other asks it to pay. A text that mentions schools is not, for that reason, asking the government to provide them.
 
@@ -158,7 +158,7 @@ From here on, the texts change their stories on purpose. Sometimes two texts wil
 
 ### 5. Classical liberalism: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 31*
 
 [reviewers only: card kind `portrait`, id `portrait-clib`]
 
@@ -167,7 +167,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 **What it is usually like**
 
 - It speaks of freedom and rights in the same breath: to speak, to believe, to own, to trade, to make a contract.
-- It lists the government’s jobs, and the list is short: courts, police, defence, keeping contracts. Sometimes the list is left out, and the text only says that the government should leave people alone.
+- It lists the government’s jobs, and the list is short: courts, police, defense, keeping contracts. Sometimes the list is left out, and the text only says that the government should leave people alone.
 - It is usually wary of what a government hands out. Where another text sees a service to be given, this one tends to see a bill that someone must pay, or a permit that would have to be refused.
 - Its demands are usually "stop" or "keep out" ("stop licensing", "leave us alone"), and not "build" or "provide".
 - It may be sympathetic to people who have less, and say so. What marks the name is what it asks the government to do about it: leave people free, not give.
@@ -180,7 +180,7 @@ A mention of low taxes does not make a text **Classical liberalism**. Texts of v
 
 "It’s a free country." "Mind your own business." "Let people live their own lives." "Keep the government out of it." "I don’t need a permit to do what I already have the right to do."
 
-In your own life it is the voice that says a rule has gone too far: the form you had to fill in to do something ordinary, the licence for a stall, the fee for the right to work.
+In your own life it is the voice that says a rule has gone too far: the form you had to fill in to do something ordinary, the license for a stall, the fee for the right to work.
 
 **The question to ask when you spot it**
 
@@ -188,7 +188,7 @@ In your own life it is the voice that says a rule has gone too far: the form you
 
 ### 6. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 31*
 
 [reviewers only: card kind `check`, id `check-clib`]
 
@@ -211,7 +211,7 @@ The pieces you can tap:
 
 ### 7. A wrong idea: "small government means no government"
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 31*
 
 [reviewers only: card kind `refute`, id `refute-small`]
 
@@ -225,7 +225,7 @@ The picture of **Classical liberalism** said that a few jobs is not the same as 
 
 A small government is a government that keeps to a short list of jobs. The musicians in the first case ask for the police, the courts and the fire service, and want them done well. A text that wanted no government would not ask for any of them.
 
-The difference is in the words of the text. Look for the jobs it names. If it names courts, police, defence or keeping contracts, it wants a government with those jobs, and the answer to its question is **“Protect their rights, and otherwise leave them alone”**. If it names no jobs and says that people should run things together without a government, that is a different answer to a different question, and this unit does not ask it.
+The difference is in the words of the text. Look for the jobs it names. If it names courts, police, defense or keeping contracts, it wants a government with those jobs, and the answer to its question is **“Protect their rights, and otherwise leave them alone”**. If it names no jobs and says that people should run things together without a government, that is a different answer to a different question, and this unit does not ask it.
 
 So before you say "no government", point to the words that say so. "Leave us alone" is not those words: it is said about everything beyond the jobs the text names.
 
@@ -238,7 +238,7 @@ So before you say "no government", point to the words that say so. "Leave us alo
 
 ### 8. Each person’s freedom, with a fair start paid for by all
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 8 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 8 of 31*
 
 [reviewers only: card kind `meet`, id `meet-modlib`]
 
@@ -276,7 +276,7 @@ You may also hear this called “social liberalism” or “liberal, as American
 
 ### 9. Modern liberalism: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 9 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 9 of 31*
 
 [reviewers only: card kind `again`, id `again-modlib`]
 
@@ -288,7 +288,7 @@ The second case.
 
 *The clinic-opening speech*
 
-> From a speech at the opening of a new clinic in Greywater: 'Everyone has the right to say what they think and to choose their own life. A right is worth more when it comes with a fair start. The government should give everyone a clinic a bus ride away, a place at a good school, and help to find another job when the mill shuts. And everyone should pay for it, in proportion to what they earn.'
+> From a speech at the opening of a new clinic in Graywater: 'Everyone has the right to say what they think and to choose their own life. A right is worth more when it comes with a fair start. The government should give everyone a clinic a bus ride away, a place at a good school, and help to find another job when the mill shuts. And everyone should pay for it, in proportion to what they earn.'
 **You are asked:** In *The fair-start leaflet*, these words show it: “the government must protect those rights” and “We ask the government to give everyone a fair start: a school in every district, health care for anyone who is ill, help for anyone who loses work, and fair rules for the businesses that sell to us”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
@@ -311,7 +311,7 @@ The two stories share nothing else. One is a leaflet about schools and the other
 
 ### 10. Modern liberalism: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 10 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 10 of 31*
 
 [reviewers only: card kind `portrait`, id `portrait-modlib`]
 
@@ -342,11 +342,11 @@ In your own life it is the argument over what a government should pay for: a bus
 
 ### 11. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 31*
 
 [reviewers only: card kind `check`, id `check-modlib`]
 
-> Councillor Ines Varga told a public meeting: 'Each of us is free to rent from whom we choose, and the government must protect that. But freedom to rent means little to someone with no home to rent. We ask the government to build homes that anyone can afford and to pay the rent of anyone between jobs, so that everyone starts from somewhere, and we will all pay for it together.'
+> Council Member Ines Varga told a public meeting: 'Each of us is free to rent from whom we choose, and the government must protect that. But freedom to rent means little to someone with no home to rent. We ask the government to build homes that anyone can afford and to pay the rent of anyone between jobs, so that everyone starts from somewhere, and we will all pay for it together.'
 
 **The question:** **“What does the text want done for people?”** Which of the answers you have met so far fits this case?
 
@@ -362,7 +362,7 @@ In your own life it is the argument over what a government should pay for: a bus
 
 ### 12. A wrong idea about the word "liberal"
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 31*
 
 [reviewers only: card kind `refute`, id `refute-liberal`]
 
@@ -383,7 +383,7 @@ So go by what the text asks for. The question is **“What does the text want do
 
 ### 13. Classical liberalism or Modern liberalism: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 31*
 
 [reviewers only: card kind `lookalike`, id `look-clib-modlib`]
 
@@ -421,7 +421,7 @@ Does the text ask the government only to protect rights and then stay out? Or do
 |---|---|---|
 | Who or what does the text put first? | Rights and fair treatment for everyone | Rights and fair treatment for everyone |
 | What does the text want done for people? | Protect their rights, and otherwise leave them alone | Protect their rights, and give everyone a fair start |
-| What you must be able to point to | Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more | Each person’s rights put first, and the government also giving everyone a fair start (schooling, health care, help when out of work, fair rules for business), with no group named as held back by the rules |
+| What you must be able to point to | Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more | Each person’s rights put first, and the government also giving everyone a fair start (schooling, health care, help when out of work, fair rules for business), with no group named as held back by the rules |
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, Rules said to hold some groups back.*
@@ -432,7 +432,7 @@ Does the text ask the government only to protect rights and then stay out? Or do
 
 ### 14. The same rules for everyone, and a result that is not the same
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 14 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 14 of 31*
 
 [reviewers only: card kind `term`, id `term-equity`]
 
@@ -455,7 +455,7 @@ People argue, often sharply, about when that is the right thing to do and when i
 
 ### 15. Rules that look fair, said to hold some groups back
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 15 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 15 of 31*
 
 [reviewers only: card kind `meet`, id `meet-idegal`]
 
@@ -495,7 +495,7 @@ You may also hear this called “identity politics” or “social justice” or
 
 ### 16. Group equality: the same thing in a different story
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 16 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 16 of 31*
 
 [reviewers only: card kind `again`, id `again-idegal`]
 
@@ -530,7 +530,7 @@ The two stories share nothing else. One is a school and the other a dock; one gr
 
 ### 17. Group equality: what it is like
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 17 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 17 of 31*
 
 [reviewers only: card kind `portrait`, id `portrait-idegal`]
 
@@ -563,7 +563,7 @@ In your own life it is the argument over a rule that looks fair and is said to w
 
 ### 18. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 18 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 18 of 31*
 
 [reviewers only: card kind `check`, id `check-idegal`]
 
@@ -579,13 +579,13 @@ In your own life it is the argument over a rule that looks fair and is said to w
 
 - If you are right: “Right: **Change the rules that hold some groups back.**” The form treats every applicant alike, and the text says that this is what shuts one group out: “It is fair on its face, and it shuts blind applicants out” and “We ask the company to change the form”. It asks for the form to change, not for anyone to be given a school or a doctor. The name that goes with this answer is **Group equality**.
 - If you miss: “The answer is **Change the rules that hold some groups back.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Protect their rights, and otherwise leave them alone**: Give that answer when the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defence, or asks nothing more of it. This case shows something else: the text says rules or habits that treat everyone alike still leave some groups (by race, sex, disability or origin) behind, and wants them changed until results are fair across groups.
+  - If you chose **Protect their rights, and otherwise leave them alone**: Give that answer when the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defense, or asks nothing more of it. This case shows something else: the text says rules or habits that treat everyone alike still leave some groups (by race, sex, disability or origin) behind, and wants them changed until results are fair across groups.
   - If you chose **Protect their rights, and give everyone a fair start**: The text asks for something to change, as **Modern liberalism** does. But it asks for no school, no doctor and no help for everyone. It names one form that treats everyone alike and leaves one group out, and asks for that form to change.
 - Taught on: “Rules that look fair, said to hold some groups back” (one tap opens the card).
 
 ### 19. Modern liberalism or Group equality: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 31*
 
 [reviewers only: card kind `lookalike`, id `look-modlib-idegal`]
 
@@ -593,13 +593,13 @@ These two both want fairness for people who are being left behind. They differ i
 
 **Case A**
 
-> At a council meeting in Calderwick about the housing list, a councillor said: 'Every person is owed a roof and a fair start in life. The government should build more homes that people can afford to rent, and pay for help for anyone between jobs, and we should all pay for it together.'
+> At a council meeting in Calderwick about the housing waitlist, a council member said: 'Every person is owed a roof and a fair start in life. The government should build more homes that people can afford to rent, and pay for help for anyone between jobs, and we should all pay for it together.'
 
 **Case B**
 
-> At the same Calderwick council meeting about the housing list, another speaker said: 'The housing list asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived from overseas this year at the back, year after year. Fair treatment means changing what the list asks for until they are housed as often as everyone else.'
+> At the same Calderwick council meeting about the housing waitlist, another speaker said: 'The housing waitlist asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived from overseas this year at the back, year after year. Fair treatment means changing what the list asks for until they are housed as often as everyone else.'
 
-**What to compare.** Both cases are about the same housing list in Calderwick, and both speakers want people to be housed fairly. Compare one thing: whether the speaker names a rule that treats everyone alike as the cause of someone being left behind.
+**What to compare.** Both cases are about the same housing waitlist in Calderwick, and both speakers want people to be housed fairly. Compare one thing: whether the speaker names a rule that treats everyone alike as the cause of someone being left behind.
 
 **You are asked:** Which case gives the answer **“Change the rules that hold some groups back”**? (Case A / Case B)
 
@@ -607,11 +607,11 @@ These two both want fairness for people who are being left behind. They differ i
 
 **Why this one and not the other**
 
-In Case A the councillor wants the government to build more homes and to pay for help for anyone between jobs, with everyone paying together. No rule is named as the cause of anyone being left behind: the need is for homes and help. The answer is **“Protect their rights, and give everyone a fair start”**, and the case is **Modern liberalism**.
+In Case A the council member wants the government to build more homes and to pay for help for anyone between jobs, with everyone paying together. No rule is named as the cause of anyone being left behind: the need is for homes and help. The answer is **“Protect their rights, and give everyone a fair start”**, and the case is **Modern liberalism**.
 
-In Case B the speaker names a rule: the housing list asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived this year at the back. The speaker asks for what the list asks for to be changed, until they are housed as often as everyone else. The answer is **“Change the rules that hold some groups back”**, and the case is **Group equality**.
+In Case B the speaker names a rule: the housing waitlist asks every applicant for the same three years of paperwork from one address. It treats everyone alike, and it leaves people who arrived this year at the back. The speaker asks for what the list asks for to be changed, until they are housed as often as everyone else. The answer is **“Change the rules that hold some groups back”**, and the case is **Group equality**.
 
-Both speakers want the housing list to be fair. One wants more given. The other wants a rule changed. That is the question being asked.
+Both speakers want the housing waitlist to be fair. One wants more given. The other wants a rule changed. That is the question being asked.
 
 **How to tell them apart**
 
@@ -628,7 +628,7 @@ Does the text name a group that is left behind and say that a rule which treats 
 
 ### 20. Classical liberalism or Group equality: telling them apart
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 31*
 
 [reviewers only: card kind `lookalike`, id `look-clib-idegal`]
 
@@ -666,12 +666,12 @@ Does the text say that the same rules for everyone are enough? Or does it say th
 |---|---|---|
 | Who or what does the text put first? | Rights and fair treatment for everyone | Rights and fair treatment for everyone |
 | What does the text want done for people? | Protect their rights, and otherwise leave them alone | Change the rules that hold some groups back |
-| What you must be able to point to | Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more | Groups of people (by race, sex, disability or origin), rules or habits that treat everyone alike and still leave some of those groups behind, and the text wanting them changed until results are fair across groups, with no group placed above another |
+| What you must be able to point to | Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more | Groups of people (by race, sex, disability or origin), rules or habits that treat everyone alike and still leave some of those groups behind, and the text wanting them changed until results are fair across groups, with no group placed above another |
 
 
 ### 21. A wrong idea: "rules changed for a group means that group is placed above the rest"
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 31*
 
 [reviewers only: card kind `refute`, id `refute-ranking`]
 
@@ -692,7 +692,7 @@ A text that did place a group above others would say so in its own words: it wou
 
 ### 22. A fair start for everyone, and a rule that leaves women behind
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 31*
 
 [reviewers only: card kind `exception`, id `exc-startrules`]
 
@@ -742,7 +742,7 @@ It is worth knowing that this is a decision. In life, a text can ask for a fair 
 
 ### 23. The question you have been answering all along
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 23 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 23 of 31*
 
 [reviewers only: card kind `question`, id `q-does`]
 
@@ -757,7 +757,7 @@ Since the street-music petition you have seen the question at the foot of each n
 Each answer leads to one name, and so rules out the other two.
 
 - **“Protect their rights, and otherwise leave them alone”**
-  - Give this answer when the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defence, or asks nothing more of it.
+  - Give this answer when the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defense, or asks nothing more of it.
   - It leads to **Classical liberalism**.
 - **“Protect their rights, and give everyone a fair start”**
   - Give this answer when the text wants each person’s rights protected and also wants the government to give everyone a fair start, such as schooling, health care, help when out of work, or fair rules for business.
@@ -791,11 +791,11 @@ Sometimes two answers both seem to fit. When a text asks for a fair start for ev
 
 ### 24. A question about a new case
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 24 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 24 of 31*
 
 [reviewers only: card kind `check`, id `check-does`]
 
-> At a youth forum in Dunmore, Councillor Abel Reyes said: 'Each young person is free to choose their own path, and nobody should stand in the way. But a path needs a first step. We ask the government to pay for a training place for every school-leaver who wants one, and we will all pay for it together.'
+> At a youth forum in Dunmore, Council Member Abel Reyes said: 'Each young person is free to choose their own path, and nobody should stand in the way. But a path needs a first step. We ask the government to pay for a training place for every school-leaver who wants one, and we will all pay for it together.'
 
 **The question:** **“What does the text want done for people?”**
 
@@ -807,13 +807,13 @@ Sometimes two answers both seem to fit. When a text asks for a fair start for ev
 
 - If you are right: “Right: **Protect their rights, and give everyone a fair start.**” He asks the government to give something, and not only to keep out of the way: “We ask the government to pay for a training place for every school-leaver who wants one”. Nothing in the text says that a rule leaves a group behind. This answer leads to **Modern liberalism**.
 - If you miss: “The answer is **Protect their rights, and give everyone a fair start.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Protect their rights, and otherwise leave them alone**: Give that answer when the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defence, or asks nothing more of it. This case shows something else: the text wants each person’s rights protected and also wants the government to give everyone a fair start, such as schooling, health care, help when out of work, or fair rules for business.
+  - If you chose **Protect their rights, and otherwise leave them alone**: Give that answer when the text wants each person free to speak, believe, own and trade, and wants the government kept to a few jobs such as courts, police and defense, or asks nothing more of it. This case shows something else: the text wants each person’s rights protected and also wants the government to give everyone a fair start, such as schooling, health care, help when out of work, or fair rules for business.
   - If you chose **Change the rules that hold some groups back**: The text asks for the same help for every school-leaver, and names no rule as the cause of anyone being left behind. A text that said a rule treats everyone alike and shuts one group out would be **Group equality**.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 ### 25. A fair start for everyone, and mill hands against owners
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 25 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 25 of 31*
 
 [reviewers only: card kind `exception`, id `exc-class`]
 
@@ -867,7 +867,7 @@ It is worth knowing that this is a decision. In life, a text can speak for every
 
 ### 26. Each person’s freedom, and old ways to keep it safe
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 26 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 26 of 31*
 
 [reviewers only: card kind `exception`, id `exc-tradition`]
 
@@ -875,7 +875,7 @@ The first question can also overrule a text that puts each person’s freedom fi
 
 *The rector’s column*
 
-> From the rector's column in the Ashby parish magazine: 'Each person should be free to worship, to speak and to keep what they earn, and the government should stay out of our lives. But freedom without the old ways is thin. The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us. Let us keep them, and let any change come slowly.'
+> From the rector's column in the Ashby parish newsletter: 'Each person should be free to worship, to speak and to keep what they earn, and the government should stay out of our lives. But freedom without the old ways is thin. The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us. Let us keep them, and let any change come slowly.'
 
 The rector’s column begins by asking for each person to be free to worship, to speak and to keep what they earn, and for the government to stay out of our lives. That is what you point to for **“Protect their rights, and otherwise leave them alone”**, and for **Classical liberalism**. Yet the first answer for this case is **“Old ways of faith, family and custom”**, and the name is **Conservatism**.
 
@@ -913,14 +913,14 @@ When a case shows both **“Rights and fair treatment for everyone”** and old 
 | Who or what does the text put first? | Rights and fair treatment for everyone | Old ways of faith, family and custom |
 | What does the text want done with the old ways? | *Not asked for this one* | Keep what remains, and change slowly |
 | What does the text want done for people? | Protect their rights, and otherwise leave them alone | *Not asked for this one* |
-| What you must be able to point to | Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more | Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back |
+| What you must be able to point to | Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more | Ways of faith, home life or custom handed down from the past, the text wanting them kept, with any change made slowly, and no order that has gone asked to be brought back |
 
 It is worth knowing that this is a decision. In life, people who want a small government and people who want the old ways to guide are often the same people, and say both in one breath. Each text gets one answer, so that two people using the same questions reach the same one and can each say why.
 
 
 ### 27. A school and a doctor for everyone, and for one people first
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 27 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 27 of 31*
 
 [reviewers only: card kind `exception`, id `exc-nation`]
 
@@ -980,7 +980,7 @@ It is worth knowing that this is a decision. In life, a person can mean both a s
 
 ### 28. A whole case, from the first question to the name
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 28 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 28 of 31*
 
 [reviewers only: card kind `worked`, id `worked-clean`]
 
@@ -1040,7 +1040,7 @@ Here the answer and the likeness agree, so it stands. The question comes first, 
 
 ### 29. A second whole case, where the story points the wrong way
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 29 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 29 of 31*
 
 [reviewers only: card kind `worked`, id `worked-misleading`]
 
@@ -1090,7 +1090,7 @@ Still possible: **Modern liberalism**. Ruled out: **Classical liberalism** and *
 
 The story points to **Group equality**. But for that name you must be able to point to this: groups of people (by race, sex, disability or origin), rules or habits that treat everyone alike and still leave some of those groups behind, and the text wanting them changed until results are fair across groups, with no group placed above another. This speech names no group, says that no rule has left anyone behind, and asks for no rule to change. It asks the government to pay for help.
 
-It is the question from the two cases about the housing list. Does the text name a group that is left behind and say that a rule which treats everyone alike is the cause? Or does it ask for the same help for everyone and blame no rule? Here the text asks for the same help for any child who needs it, and blames no rule, so the answer is **“Protect their rights, and give everyone a fair start”**.
+It is the question from the two cases about the housing waitlist. Does the text name a group that is left behind and say that a rule which treats everyone alike is the cause? Or does it ask for the same help for everyone and blame no rule? Here the text asks for the same help for any child who needs it, and blames no rule, so the answer is **“Protect their rights, and give everyone a fair start”**.
 
 **Does it look like a case you know?**
 
@@ -1100,11 +1100,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Some of these texts want a fair start and some want rules changed, and a few want both. That is on purpose: when a text shows two answers, one of them wins, and you will practise telling which.
+Some of these texts want a fair start and some want rules changed, and a few want both. That is on purpose: when a text shows two answers, one of them wins, and you will practice telling which.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the three this unit teaches: Classical liberalism / Modern liberalism / Group equality.
 
@@ -1226,7 +1226,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 41**
 
-> At a trade meeting in Tarn Harbour, a trader said: 'Every one of us is free to sell across the river as well as at home. The government's work is to keep the bridge safe and the courts open. It should not decide what may be sold, or to whom.'
+> At a trade meeting in Tarn Harbor, a trader said: 'Every one of us is free to sell across the river as well as at home. The government's work is to keep the bridge safe and the courts open. It should not decide what may be sold, or to whom.'
 
 **You are asked:** What does the text want done for people?
 
@@ -1244,7 +1244,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 41**
 
-> From the Larkfield Pensioners' Fair Start Group: 'Each of us has the right to keep what we have saved, and the government must protect it. But a right to keep nothing is empty. We ask the government to pay a pension that everyone can live on, and everyone should pay in while they work.'
+> From the Larkfield Retirees' Fair Start Group: 'Each of us has the right to keep what we have saved, and the government must protect it. But a right to keep nothing is empty. We ask the government to pay a pension that everyone can live on, and everyone should pay in while they work.'
 
 **You are asked:** What does the text want done for people?
 
@@ -1396,7 +1396,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “Is what the text asks for owed to every person, whoever they are? Or is it for one people, which the text puts first?” Both can ask the government to pay for schools and doctors, and both can speak warmly of the country. In **Modern liberalism** the text speaks for every person alike, and what it asks is owed to a newcomer as to a neighbour. In **Nationalism** the text speaks for one people as one, and puts that people first, so what it asks is for them before others. When a case shows both **“Rights and fair treatment for everyone”** and one people put first, the answer is **“The nation, or its ordinary people”**.
+- The answer is: “Is what the text asks for owed to every person, whoever they are? Or is it for one people, which the text puts first?” Both can ask the government to pay for schools and doctors, and both can speak warmly of the country. In **Modern liberalism** the text speaks for every person alike, and what it asks is owed to a newcomer as to a neighbor. In **Nationalism** the text speaks for one people as one, and puts that people first, so what it asks is for them before others. When a case shows both **“Rights and fair treatment for everyone”** and one people put first, the answer is **“The nation, or its ordinary people”**.
 - If you chose “Does the text ask the government only to protect rights and then stay out? Or does it also ask the government to give people something, such as a school, a doctor or help while out of work?”: that question separates **Classical liberalism** and **Modern liberalism**.
 - If you chose “Does the text name a group that is left behind and say that a rule which treats everyone alike is the cause? Or does it ask for the same help for everyone and blame no rule?”: that question separates **Modern liberalism** and **Group equality**.
 - If you chose “Does the text name two sides, the people who work for pay and the people who own where they work, and stand with the first? Or does it speak for every person alike, with nobody on the far side?”: that question separates **Modern liberalism** and **Social democracy**.
@@ -1451,7 +1451,7 @@ Shown to you, with the words that decide each answer marked:
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
+> Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
 
 **You are asked:** Who or what does the text put first?
 
@@ -1514,7 +1514,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 23 of 41**
 
-> From a letter by Councillor Rhona Pike: '⟦Every person is free to go where they like, and the government must protect that⟧. But a person with no bus can go nowhere. We ask the government to pay for a bus to every village, so that everyone has somewhere to start from, and we will all pay for it together.'
+> From a letter by Council Member Rhona Pike: '⟦Every person is free to go where they like, and the government must protect that⟧. But a person with no bus can go nowhere. We ask the government to pay for a bus to every village, so that everyone has somewhere to start from, and we will all pay for it together.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Rights and fair treatment for everyone**
@@ -1535,7 +1535,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 24 of 41**
 
-> From a report by the Linden Disability Forum: 'The housing association lets every flat to whoever queues at its office at nine on Monday. The rule is the same for everyone, and it leaves behind people who cannot stand in a line. A rule that treats everyone alike has left them behind. We ask the association to change how flats are let until disabled applicants are housed as often as anyone. ⟦Nobody is asking to be placed above anyone⟧.'
+> From a report by the Linden Disability Forum: 'The housing authority rents every apartment to whoever lines up at its office at nine on Monday. The rule is the same for everyone, and it leaves behind people who cannot stand in a line. A rule that treats everyone alike has left them behind. We ask the housing authority to change how apartments are rented until disabled applicants are housed as often as anyone. ⟦Nobody is asking to be placed above anyone⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Rights and fair treatment for everyone**
@@ -1544,7 +1544,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Group equality**.” What does the text want done for people? **Change the rules that hold some groups back.** A rule that treats everyone alike is said to leave a group behind, and the text asks for it to change: “A rule that treats everyone alike has left them behind” and “We ask the association to change how flats are let”. That is a request for *equity*.
+- If you are right: “Right: **Group equality**.” What does the text want done for people? **Change the rules that hold some groups back.** A rule that treats everyone alike is said to leave a group behind, and the text asks for it to change: “A rule that treats everyone alike has left them behind” and “We ask the housing authority to change how apartments are rented”. That is a request for *equity*.
   - Why not **Classical liberalism**: The text names a rule that is the same for everyone, as **Classical liberalism** would. But **Classical liberalism** says that is enough. This text says it has left a group behind.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Protect their rights, and otherwise leave them alone**: The text names a rule that is the same for everyone, as **Classical liberalism** would. But **Classical liberalism** says that is enough. This text says it has left a group behind.
@@ -1697,7 +1697,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 32 of 41**
 
-> From a statement by the Marrowmouth river villages: 'The border post asks every traveller for the same stamped form, from one office, open on weekdays. The rule treats everyone alike, and it leaves the people of the river villages, who have no office within a day's walk, unable to cross for work or for a funeral. We ask the post to change its form and its hours until river villagers cross as often as anyone. We do not ask for anyone to be placed above anyone.'
+> From a statement by the Marrowmouth river villages: 'The border post asks every traveler for the same stamped form, from one office, open on weekdays. The rule treats everyone alike, and it leaves the people of the river villages, who have no office within a day's walk, unable to cross for work or for a funeral. We ask the post to change its form and its hours until river villagers cross as often as anyone. We do not ask for anyone to be placed above anyone.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done for people? → Name it.
 
@@ -1756,14 +1756,14 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 35 of 41**
 
-> From a statement by the Calloway Women's Network: 'Everyone is owed a fair start, and the training scheme is a good one: free places, paid for by all of us, for anyone out of work. But the scheme asks for a driving licence at the first interview, and in this district most licences are held by men. A rule that treats every applicant alike has left women out of the scheme. Change the entry rule until women join as often as men. Nobody is to be placed above anybody.'
+> From a statement by the Calloway Women's Network: 'Everyone is owed a fair start, and the training program is a good one: free places, paid for by all of us, for anyone out of work. But the program asks for a driving license at the first interview, and in this district most licenses are held by men. A rule that treats every applicant alike has left women out of the program. Change the entry rule until women join as often as men. Nobody is to be placed above anybody.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done for people? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Group equality**.” What does the text want done for people? **Change the rules that hold some groups back.** The text praises a paid scheme, and then says a rule that treats every applicant alike has left women out of it: “A rule that treats every applicant alike has left women out of the scheme” and “Change the entry rule until women join as often as men”. When a text shows both a fair start for everyone and a rule that leaves a group behind, the answer is **“Change the rules that hold some groups back”**.
-  - Why not **Modern liberalism**: The text does praise a scheme that is paid for by all, which is what **Modern liberalism** asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the answer is **Group equality**.
+- If you are right: “Right: **Group equality**.” What does the text want done for people? **Change the rules that hold some groups back.** The text praises a paid program, and then says a rule that treats every applicant alike has left women out of it: “A rule that treats every applicant alike has left women out of the program” and “Change the entry rule until women join as often as men”. When a text shows both a fair start for everyone and a rule that leaves a group behind, the answer is **“Change the rules that hold some groups back”**.
+  - Why not **Modern liberalism**: The text does praise a program that is paid for by all, which is what **Modern liberalism** asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the answer is **Group equality**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Rights and fair treatment for everyone.** The text wants fair treatment for women and wants no one placed above another: “Nobody is to be placed above anybody”.
   - If you chose **Protect their rights, and give everyone a fair start**: You chose **Protect their rights, and give everyone a fair start**. This case does show that. It also shows rules that treat everyone alike said to leave some groups behind, and when a case shows both, the answer is **Change the rules that hold some groups back**.
@@ -1798,7 +1798,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
+> Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
 
 **You are asked:** Who or what does the text put first?
 
@@ -1855,13 +1855,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **You are asked:** The claim uses the name **Classical liberalism**. What would you need to see in the case before that name could be used?
 
-- Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more
+- Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more
 - Each person’s rights put first, and the government also giving everyone a fair start (schooling, health care, help when out of work, fair rules for business), with no group named as held back by the rules
 - Groups of people (by race, sex, disability or origin), rules or habits that treat everyone alike and still leave some of those groups behind, and the text wanting them changed until results are fair across groups, with no group placed above another
 
 **Shown as soon as you answer**
 
-- The answer is: **Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more.**
+- The answer is: **Each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
 - The fault: The claim goes by the word and not by the text. “Liberal” is used for different things in different places, and each has its own name here. Neither use settles what a text wants done for people.
 - The claim, put right (always the last thing shown): The text says each person is free to speak, to own and to trade, and wants the government kept to its courts and its police. That is the name **Classical liberalism**, and the word “liberal” in the name is there because freedom comes first, whatever people in one country use the plain word for.
@@ -1904,7 +1904,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 30. What to carry away
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 30 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 30 of 31*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -1919,7 +1919,7 @@ What does the text want done for people?
 
 **For each name: what you must be able to point to, and the question to ask when you spot it**
 
-- **Classical liberalism**: each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defence, holding people to their contracts) or asked for nothing more.
+- **Classical liberalism**: each person’s freedom to speak, believe, own and trade put first, and the government kept to a few jobs (courts, police, defense, holding people to their contracts) or asked for nothing more.
   - Ask: "What does this text say the government should do, and what does it say the government should leave alone?" If the answer is protect and leave, you have this name.
 - **Modern liberalism**: each person’s rights put first, and the government also giving everyone a fair start (schooling, health care, help when out of work, fair rules for business), with no group named as held back by the rules.
   - Ask: "What does this text say a person needs before their rights are worth using, who is to give it, and who pays?" If the answer is a fair start given by the government and paid for by all, you have this name.
@@ -1935,7 +1935,7 @@ What does the text want done for people?
 
 ### 31. Where would you meet this?
 
-*Unit Five · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 31 of 31*
+*Unit Five · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 31 of 31*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -1945,7 +1945,7 @@ Knowing the three names is one step. Noticing the moment to use one is a separat
 
 Pick one of the three and name an occasion of your own: somewhere you heard it, or somewhere you said it. The lines under each name are there to jog your memory.
 
-- **Classical liberalism**: A form, a licence or a fee that you thought a government had no business asking for.
+- **Classical liberalism**: A form, a license or a fee that you thought a government had no business asking for.
 - **Modern liberalism**: A service that you thought everyone should be able to use, and everyone should pay for together.
 - **Group equality**: A rule that was the same for everyone, and that you or someone near you found worked out unevenly.
 
@@ -2061,7 +2061,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 6 of 9**
 
-> From a speech at the Eastmere welcome centre: 'People who arrive here are free to worship and to speak as they choose, and the government must protect that. Many of them have nothing: no home, no work and no word of our language. We ask the government to pay for a bed, a language class and a job adviser for anyone who arrives with nothing, and we will all pay for it.'
+> From a speech at the Eastmere welcome center: 'People who arrive here are free to worship and to speak as they choose, and the government must protect that. Many of them have nothing: no home, no work and no word of our language. We ask the government to pay for a bed, a language class and a job adviser for anyone who arrives with nothing, and we will all pay for it.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done for people? → Name it.
 
@@ -2081,17 +2081,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 7 of 9**
 
-> From a letter by the Lakeside Women's Swimming Circle: 'The town pool opens its lanes in the same sessions for everyone: early morning and late evening. Not a word of the timetable mentions sex. But those hours leave out the women who care for children at those times, and almost no woman swims there. Treating everyone alike has left women out. Change the sessions until women swim as often as men. We are not asking for any group to come before another.'
+> From a letter by the Lakeside Women's Swimming Circle: 'The town pool opens its lanes in the same sessions for everyone: early morning and late evening. Not a word of the schedule mentions sex. But those hours leave out the women who care for children at those times, and almost no woman swims there. Treating everyone alike has left women out. Change the sessions until women swim as often as men. We are not asking for any group to come before another.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done for people? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Group equality**.” What does the text want done for people? **Change the rules that hold some groups back.** A timetable that is the same for everyone is said to leave women out, and the text asks for it to change: “Treating everyone alike has left women out” and “Change the sessions until women swim as often as men”.
-  - Why not **Classical liberalism**: The text names a timetable that is the same for everyone, as **Classical liberalism** would accept. But **Classical liberalism** says that is enough. This text says it has left women out.
+- If you are right: “Right: **Group equality**.” What does the text want done for people? **Change the rules that hold some groups back.** A schedule that is the same for everyone is said to leave women out, and the text asks for it to change: “Treating everyone alike has left women out” and “Change the sessions until women swim as often as men”.
+  - Why not **Classical liberalism**: The text names a schedule that is the same for everyone, as **Classical liberalism** would accept. But **Classical liberalism** says that is enough. This text says it has left women out.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Rights and fair treatment for everyone.** The text wants fair treatment for women and wants no group to come before another: “We are not asking for any group to come before another”.
-  - If you chose **Protect their rights, and otherwise leave them alone**: The text names a timetable that is the same for everyone, as **Classical liberalism** would accept. But **Classical liberalism** says that is enough. This text says it has left women out.
+  - If you chose **Protect their rights, and otherwise leave them alone**: The text names a schedule that is the same for everyone, as **Classical liberalism** would accept. But **Classical liberalism** says that is enough. This text says it has left women out.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Classical liberalism**, the look-alike card’s lines follow: Both are about rules that treat everyone alike, and neither wants anyone placed above anyone else. In **Classical liberalism** the same rules for everyone are enough, and the government should do little beyond keeping them. In **Group equality** the same rules for everyone are not enough: they leave some groups behind, and the text asks for them to be changed. Does the text say that the same rules for everyone are enough? Or does it say that they leave some group behind and must be changed?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”

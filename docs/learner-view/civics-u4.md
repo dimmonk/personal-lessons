@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Four: The President or a federal agency
 
-*Six things the President or a federal office can do, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
+*Six things the President or a federal office can do, and how to tell which one you are looking at.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Six things the President or a federal office can do
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 47*
 
 [reviewers only: card kind `orient`, id `orient-pres`]
 
@@ -68,11 +68,11 @@ The unit has four parts, and you can stop after any of them.
 3. The President and a bill, the President and a crime, and the question
 4. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. An agency putting a law into practice
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 47*
 
 [reviewers only: card kind `meet`, id `meet-execute`]
 
@@ -107,7 +107,7 @@ You may also hear this called “enforcing the law” or “implementing a law�
 
 ### 3. Carrying out the law: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 47*
 
 [reviewers only: card kind `again`, id `again-execute`]
 
@@ -135,12 +135,12 @@ The pieces you can tap:
 
 In both cases a law that Congress passed comes first: a tax credit, ten hours of rest. In both, a federal office then works out how the law is to be followed: a form and receipts, a logbook. And in both the office leaves the law’s main rule alone. The credit still goes to people who do real work with a licensed builder, and the rest period is still ten hours.
 
-The two stories share nothing else. One is about taxes and the other about lorries. So this is not about tax or about driving. It holds wherever an office turns a law Congress has passed into daily practice and stays inside it. That is what **Carrying out the law** names.
+The two stories share nothing else. One is about taxes and the other about trucks. So this is not about tax or about driving. It holds wherever an office turns a law Congress has passed into daily practice and stays inside it. That is what **Carrying out the law** names.
 
 
 ### 4. The story never decides the answer
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 47*
 
 [reviewers only: card kind `lens`, id `lens-pres`]
 
@@ -160,7 +160,7 @@ One more thing changes on purpose. The loudest part of a case is often not the p
 
 ### 5. Carrying out the law: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-execute`]
 
@@ -189,7 +189,7 @@ You meet it in your own life every time a form, a fee or an inspection comes fro
 
 ### 6. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 47*
 
 [reviewers only: card kind `check`, id `check-execute`]
 
@@ -212,7 +212,7 @@ The pieces you can tap:
 
 ### 7. A written instruction from the President to the offices
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 47*
 
 [reviewers only: card kind `term`, id `term-order`]
 
@@ -235,7 +235,7 @@ An *executive order* can tell the offices how to carry out the laws that already
 
 ### 8. An order that demands what no law allows
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 47*
 
 [reviewers only: card kind `meet`, id `meet-beyondpres`]
 
@@ -272,7 +272,7 @@ You may also hear this called “exceeding the President’s powers”. That mea
 
 ### 9. Beyond the President’s power: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 47*
 
 [reviewers only: card kind `again`, id `again-beyondpres`]
 
@@ -305,7 +305,7 @@ The two stories share nothing else. So this is not about plastic or about holida
 
 ### 10. Beyond the President’s power: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-beyondpres`]
 
@@ -335,7 +335,7 @@ You hear it in the news whenever someone says an order "goes too far", or asks "
 
 ### 11. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 47*
 
 [reviewers only: card kind `check`, id `check-beyondpres`]
 
@@ -355,7 +355,7 @@ You hear it in the news whenever someone says an order "goes too far", or asks "
 
 ### 12. A wrong idea about a written order
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 47*
 
 [reviewers only: card kind `refute`, id `refute-order`]
 
@@ -376,7 +376,7 @@ Third, it does not last as long. The next President can undo an *executive order
 
 ### 13. Carrying out the law or Beyond the President’s power: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-execute-beyondpres`]
 
@@ -384,7 +384,7 @@ You have met both names on their own. They are easy to mix up, because both can 
 
 **Case A**
 
-> Congress passed a law that says every packaged snack must show how much salt it holds. On Thursday the federal food agency published how large the salt line on the packet must be, and the date from which every packet must carry it.
+> Congress passed a law that says every packaged snack must show how much salt it holds. On Thursday the federal food agency published how large the salt line on the package must be, and the date from which every package must carry it.
 
 **Case B**
 
@@ -419,7 +419,7 @@ Can you name a law Congress passed that allows what the rule or the order demand
 
 ### 14. An order that only carries out a law
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 47*
 
 [reviewers only: card kind `exception`, id `exc-order`]
 
@@ -459,7 +459,7 @@ In the news both kinds will be called an *executive order*. The word does not se
 
 ### 15. A rule that only looks like carrying out a law
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 15 of 47*
 
 [reviewers only: card kind `exception`, id `exc-fee`]
 
@@ -497,7 +497,7 @@ Can you name a law Congress passed that allows what the rule or the order demand
 
 ### 16. Enumerated power or Carrying out the law: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 16 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-enumerated-execute`]
 
@@ -541,7 +541,7 @@ Does the case end on the vote that passed the law, or on what an office does wit
 
 ### 17. Beyond Congress’s power or Beyond the President’s power: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 17 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 17 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-beyondcong-beyondpres`]
 
@@ -591,7 +591,7 @@ Who made the rule: lawmakers who voted on a law, or the President or an office a
 
 ### 18. The President giving the armed forces orders
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 47*
 
 [reviewers only: card kind `meet`, id `meet-commander`]
 
@@ -626,7 +626,7 @@ You may also hear this called “command of the armed forces”. That means the 
 
 ### 19. Commander in chief: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 47*
 
 [reviewers only: card kind `again`, id `again-commander`]
 
@@ -638,15 +638,15 @@ The second case.
 
 *The carrier turned north*
 
-> An aircraft carrier was due to visit a port in the south on Friday. On Thursday night the President ordered the navy to send it north instead, to a harbour where a fuel ship had run aground, to help with the clean-up. The carrier changed course before dawn.
+> An aircraft carrier was due to visit a port in the south on Friday. On Thursday night the President ordered the navy to send it north instead, to a harbor where a fuel ship had run aground, to help with the clean-up. The carrier changed course before dawn.
 **You are asked:** In *The flood relief*, these words show it: “the President ordered the army to send twelve helicopters and two thousand soldiers to the towns”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “An aircraft carrier was due to visit a port in the south on Friday”
-2. “On Thursday night the President ordered the navy to send it north instead, to a harbour where a fuel ship had run aground, to help with the clean-up”
+2. “On Thursday night the President ordered the navy to send it north instead, to a harbor where a fuel ship had run aground, to help with the clean-up”
 3. “The carrier changed course before dawn”
 
-**Shown as soon as you tap.** The words are “On Thursday night the President ordered the navy to send it north instead, to a harbour where a fuel ship had run aground, to help with the clean-up”.
+**Shown as soon as you tap.** The words are “On Thursday night the President ordered the navy to send it north instead, to a harbor where a fuel ship had run aground, to help with the clean-up”.
 - If you tapped “An aircraft carrier was due to visit a port in the south on Friday”: That was the plan before the order. It is not the decision in the case.
 - If you tapped “The carrier changed course before dawn”: That is the order being obeyed. The words asked for are the order itself.
 
@@ -659,7 +659,7 @@ The two stories share nothing else. One is about a flood and the other about a f
 
 ### 20. Commander in chief: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-commander`]
 
@@ -689,7 +689,7 @@ You meet it when the news shows soldiers and helicopters arriving after a disast
 
 ### 21. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 47*
 
 [reviewers only: card kind `check`, id `check-commander`]
 
@@ -711,7 +711,7 @@ You meet it when the news shows soldiers and helicopters arriving after a disast
 
 ### 22. A wrong idea: "the President can declare war"
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 47*
 
 [reviewers only: card kind `refute`, id `refute-war`]
 
@@ -730,7 +730,7 @@ So a story in which the President sends the army or the navy somewhere is about 
 
 ### 23. The President dealing with another country
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 47*
 
 [reviewers only: card kind `meet`, id `meet-diplomacy`]
 
@@ -738,11 +738,11 @@ The second of the President’s own powers is not about the armed forces at all.
 
 *The coast talks*
 
-> The President flew to the capital of a neighbouring country on Monday and ⟦spent two days talking with its leader about fishing rules along the shared coast⟧. By Wednesday the two leaders had agreed on a set of rules and had signed a paper saying so.
+> The President flew to the capital of a neighboring country on Monday and ⟦spent two days talking with its leader about fishing rules along the shared coast⟧. By Wednesday the two leaders had agreed on a set of rules and had signed a paper saying so.
 
 Stripped of its story, the case is this:
 
-- The President travelled to another country and met its leader.
+- The President traveled to another country and met its leader.
 - They talked for two days about a matter both countries care about: fishing along a shared coast.
 - They reached an agreement and signed a paper that says so.
 - No law is named, nobody at home is ordered anywhere, and nobody outside the two governments is asked to do anything.
@@ -765,7 +765,7 @@ You may also hear this called “diplomacy” or “negotiating a treaty”. Tho
 
 ### 24. Foreign affairs: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 47*
 
 [reviewers only: card kind `again`, id `again-diplomacy`]
 
@@ -798,7 +798,7 @@ The two stories share nothing else. So this is not about fishing or about studen
 
 ### 25. Foreign affairs: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-diplomacy`]
 
@@ -827,7 +827,7 @@ You meet it in the news whenever the President travels, hosts another country’
 
 ### 26. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 47*
 
 [reviewers only: card kind `check`, id `check-diplomacy`]
 
@@ -851,7 +851,7 @@ You meet it in the news whenever the President travels, hosts another country’
 
 ### 27. Commander in chief or Foreign affairs: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 27 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-commander-diplomacy`]
 
@@ -863,7 +863,7 @@ These two are easy to mix up, because both can be about ships, soldiers and anot
 
 **Case B**
 
-> The President travelled to Istrene and spent two days with its leader. On Thursday the two of them signed an agreement that navy ships of each country may use the other’s ports.
+> The President traveled to Istrene and spent two days with its leader. On Thursday the two of them signed an agreement that navy ships of each country may use the other’s ports.
 
 **What to compare.** Both cases are about navy ships and the port of Istrene. Compare one thing: does the President tell the navy what to do, or settle something with Istrene’s leader?
 
@@ -894,7 +894,7 @@ Who is on the other side of what the President does: the armed forces, who are t
 
 ### 28. Another country in the story, and an order in the case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 28 of 47*
 
 [reviewers only: card kind `exception`, id `exc-exercise`]
 
@@ -932,7 +932,7 @@ Who is on the other side of what the President does: the armed forces, who are t
 
 ### 29. Foreign affairs or Carrying out the law: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 29 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-diplomacy-execute`]
 
@@ -944,7 +944,7 @@ Federal officials deal with people from other countries in two quite different w
 
 **Case B**
 
-> Under a law Congress passed, a visitor from Calvera may stay in the country for up to ninety days. On Monday a clerk of the federal immigration service checked Mr Tavares’s papers against the list in the law, and stamped his passport for a ninety-day stay.
+> Under a law Congress passed, a visitor from Calvera may stay in the country for up to ninety days. On Monday a clerk of the federal immigration service checked Mr. Tavares’s papers against the list in the law, and stamped his passport for a ninety-day stay.
 
 **What to compare.** Both cases are about visitors from Calvera who may stay ninety days. Compare one thing: is a federal official dealing with Calvera as a country, or dealing with one visitor under a law?
 
@@ -975,7 +975,7 @@ Is the official dealing with another country’s government, or dealing with peo
 
 ### 30. Advice and consent or Foreign affairs: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 30 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-confirm-diplomacy`]
 
@@ -1025,7 +1025,7 @@ Does the case end on the President’s side, meeting, negotiating and signing, o
 
 ### 31. The President sending a law back unsigned
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 47*
 
 [reviewers only: card kind `meet`, id `meet-veto`]
 
@@ -1061,7 +1061,7 @@ You may also hear this called “vetoing a bill”. That means the same thing he
 
 ### 32. Veto: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 47*
 
 [reviewers only: card kind `again`, id `again-veto`]
 
@@ -1094,7 +1094,7 @@ The two stories share nothing else. One is about pay and the other about researc
 
 ### 33. Veto: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-veto`]
 
@@ -1123,7 +1123,7 @@ You meet it whenever the news says that a bill is "on the President’s desk" an
 
 ### 34. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 47*
 
 [reviewers only: card kind `check`, id `check-veto`]
 
@@ -1149,7 +1149,7 @@ You meet it whenever the news says that a bill is "on the President’s desk" an
 
 ### 35. The President forgiving a federal crime
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 47*
 
 [reviewers only: card kind `meet`, id `meet-pardon`]
 
@@ -1186,7 +1186,7 @@ You may also hear this called “a presidential pardon”. That means the same t
 
 ### 36. Pardon: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 47*
 
 [reviewers only: card kind `again`, id `again-pardon`]
 
@@ -1219,7 +1219,7 @@ The two stories share nothing else. So this is not about tax, parks or prison. I
 
 ### 37. Pardon: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 37 of 47*
 
 [reviewers only: card kind `portrait`, id `portrait-pardon`]
 
@@ -1249,7 +1249,7 @@ You hear about it whenever the news says that someone has been "pardoned" and as
 
 ### 38. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 38 of 47*
 
 [reviewers only: card kind `check`, id `check-pardon`]
 
@@ -1277,7 +1277,7 @@ You hear about it whenever the news says that someone has been "pardoned" and as
 
 ### 39. A wrong idea about whom the President can forgive
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 39 of 47*
 
 [reviewers only: card kind `refute`, id `refute-pardon`]
 
@@ -1296,7 +1296,7 @@ So when a case says that someone was pardoned, ask first which law the person br
 
 ### 40. Veto or Pardon: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 40 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-veto-pardon`]
 
@@ -1304,13 +1304,13 @@ You have now met all six. Two of them are the President acting on something that
 
 **Case A**
 
-> Congress passed a bill that cuts the fine for dumping rubbish in national parks. On Monday the President sent the bill back to Congress without signing it, saying the fine should stay high.
+> Congress passed a bill that cuts the fine for dumping trash in national parks. On Monday the President sent the bill back to Congress without signing it, saying the fine should stay high.
 
 **Case B**
 
-> A man was fined $5,000 in a federal court for dumping rubbish in a national park. On Monday the President signed a paper that forgives the crime, and the fine was cancelled.
+> A man was fined $5,000 in a federal court for dumping trash in a national park. On Monday the President signed a paper that forgives the crime, and the fine was canceled.
 
-**What to compare.** Both cases are about rubbish dumped in national parks, and in both the President acts on Monday. Compare one thing: what the President acts on, a bill or a person?
+**What to compare.** Both cases are about trash dumped in national parks, and in both the President acts on Monday. Compare one thing: what the President acts on, a bill or a person?
 
 **You are asked:** Which case gives the answer **“Forgives a federal crime”**? (Case A / Case B)
 
@@ -1320,9 +1320,9 @@ You have now met all six. Two of them are the President acting on something that
 
 In Case A the President acts on a bill that Congress has passed: a bill that cuts a fine. The President will not sign it, and sends it back. Nobody has been charged with anything. The answer is **“Refuses to sign a law Congress passed”**, and the case is **Veto**.
 
-In Case B the President acts on a man who was fined for dumping rubbish by a federal court, and forgives the crime, so that the fine is cancelled. No bill is in the story. The answer is **“Forgives a federal crime”**, and the case is **Pardon**.
+In Case B the President acts on a man who was fined for dumping trash by a federal court, and forgives the crime, so that the fine is canceled. No bill is in the story. The answer is **“Forgives a federal crime”**, and the case is **Pardon**.
 
-The park, the rubbish and the Monday are the same. What differs is what the President acts on.
+The park, the trash and the Monday are the same. What differs is what the President acts on.
 
 **How to tell them apart**
 
@@ -1339,7 +1339,7 @@ What is the President acting on: a bill that Congress passed, or a person who br
 
 ### 41. Veto or Carrying out the law: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 41 of 47*
 
 [reviewers only: card kind `lookalike`, id `look-veto-execute`]
 
@@ -1382,7 +1382,7 @@ Is the President deciding whether the bill will take effect, or is an office alr
 
 ### 42. The question you have been answering all along
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 42 of 47*
 
 [reviewers only: card kind `question`, id `q-pres`]
 
@@ -1446,7 +1446,7 @@ Sometimes two answers both seem to fit. You have met the common shapes: a rule w
 
 ### 43. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 43 of 47*
 
 [reviewers only: card kind `check`, id `check-pres`]
 
@@ -1480,7 +1480,7 @@ Sometimes two answers both seem to fit. You have met the common shapes: a rule w
 
 ### 44. A whole case, from the first question to the name
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 47*
 
 [reviewers only: card kind `worked`, id `worked-hospital`]
 
@@ -1540,25 +1540,25 @@ Here the questions and the likeness agree, so the answer stands. The question co
 
 ### 45. A second whole case, where the story points the wrong way
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 45 of 47*
 
-[reviewers only: card kind `worked`, id `worked-harbour`]
+[reviewers only: card kind `worked`, id `worked-harbor`]
 
 The hospital prices were a clean case: the office’s act was the last thing in it, and one law stood behind it. In this second case the most noticeable thing in the story is not what decides it. Watch which words each question picks out.
 
 *The drifting supply ship*
 
-> The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. The President ends the talks for the day and orders the three navy ships in the harbour to sail at once and tow the supply ship clear.
+> The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. The President ends the talks for the day and orders the three navy ships in the harbor to sail at once and tow the supply ship clear.
 
 **Question 1 of 2: Who makes the last decision in the case, or is asked to make it?**
 
 What it is for: sorts a case by who makes the decision it ends on: the lawmakers of the whole country, the President and the federal agencies, a judge, or the government of a state, city or county.
 
-> The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. ⟦The President ends the talks for the day and orders the three navy ships in the harbour to sail at once⟧ and tow the supply ship clear.
+> The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. ⟦The President ends the talks for the day and orders the three navy ships in the harbor to sail at once⟧ and tow the supply ship clear.
 
 Answer: **“The President or a federal agency”**
 
-The case opens with the President on a visit to another country, talking trade with its leader. If it ended there, you would be looking at the President meeting another country’s leader. It does not end there. Read on: “The President ends the talks for the day and orders the three navy ships in the harbour to sail at once”. The last decision is the President’s, and it is made in a harbour. It is not a vote by lawmakers, not a judge, and not a state or a city. The answer is **“The President or a federal agency”**.
+The case opens with the President on a visit to another country, talking trade with its leader. If it ended there, you would be looking at the President meeting another country’s leader. It does not end there. Read on: “The President ends the talks for the day and orders the three navy ships in the harbor to sail at once”. The last decision is the President’s, and it is made in a harbor. It is not a vote by lawmakers, not a judge, and not a state or a city. The answer is **“The President or a federal agency”**.
 
 Still possible: all six names this unit teaches.
 
@@ -1566,11 +1566,11 @@ Still possible: all six names this unit teaches.
 
 What it is for: tells apart six things the President and the federal agencies do: carry out a law, demand what no law allows, command the armed forces, deal with other countries, send a law back unsigned, and forgive a federal crime.
 
-> The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. The President ends the talks for the day and ⟦orders the three navy ships in the harbour to sail at once and tow the supply ship clear⟧.
+> The President is visiting the port of Valmora to talk about trade with its leader. During lunch the President is told that a navy supply ship in the next bay has lost power and is drifting toward the rocks. The President ends the talks for the day and ⟦orders the three navy ships in the harbor to sail at once and tow the supply ship clear⟧.
 
 Answer: **“Gives orders to the armed forces”**
 
-The trade talks were the opening. What the President does after them is give an order to part of the armed forces: “orders the three navy ships in the harbour to sail at once and tow the supply ship clear”. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The answer is **“Gives orders to the armed forces”**.
+The trade talks were the opening. What the President does after them is give an order to part of the armed forces: “orders the three navy ships in the harbor to sail at once and tow the supply ship clear”. The ships obey the President, and no law is named. Nothing is being negotiated or signed at that point: the talks were put off for the day. The answer is **“Gives orders to the armed forces”**.
 
 Still possible: **Commander in chief**. Ruled out: **Carrying out the law**, **Beyond the President’s power**, **Foreign affairs**, **Veto** and **Pardon**.
 
@@ -1596,15 +1596,15 @@ It is the question from the ships and the port of Istrene. Who is on the other s
 
 Now the second look: does this case look like one you know? A President visiting another country to talk about trade may bring back the coast talks first, and that case was **“Deals with another country”**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the question and find the words in the case that answer it. They are “orders the three navy ships in the harbour to sail at once and tow the supply ship clear”. The coast talks have nothing like them: nobody was ordered anywhere. The flood relief does: the President gave an order to the army. So the case this one really looks like is the flood relief, and the answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “orders the three navy ships in the harbor to sail at once and tow the supply ship clear”. The coast talks have nothing like them: nobody was ordered anywhere. The flood relief does: the President gave an order to the army. So the case this one really looks like is the flood relief, and the answer stands.
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Many of these cases name a law, an office and the President together, and the one named first is often not the one that decides. Read each case to its end, and look for what the President or the office does last.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the six this unit teaches: Carrying out the law / Beyond the President’s power / Commander in chief / Foreign affairs / Veto / Pardon.
 
@@ -1764,7 +1764,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 9 of 55**
 
-> A law Congress passed says every laboratory that handles dangerous germs must be licensed. The federal health office published its licence form on Monday and said its inspectors would visit each laboratory within a year.
+> A law Congress passed says every laboratory that handles dangerous germs must be licensed. The federal health office published its license form on Monday and said its inspectors would visit each laboratory within a year.
 
 **You are asked:** What does the President or the agency do?
 
@@ -1777,7 +1777,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Puts a law Congress passed into practice.**” The licence is the law’s own idea, and the office is making it work: “The federal health office published its licence form on Monday”. The visits by inspectors are the next step of the same thing. This answer leads to **Carrying out the law**.
+- If you are right: “Right: **Puts a law Congress passed into practice.**” The license is the law’s own idea, and the office is making it work: “The federal health office published its license form on Monday”. The visits by inspectors are the next step of the same thing. This answer leads to **Carrying out the law**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Demands something of people that no law allows**: The office demands nothing that the law does not already require. It only supplies the form.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1827,7 +1827,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 12 of 55**
 
-> The Secretary of State, speaking for the President, met the education minister of Brasland to agree how each country will recognise the other’s school diplomas.
+> The Secretary of State, speaking for the President, met the education minister of Brasland to agree how each country will recognize the other’s school diplomas.
 
 **You are asked:** What does the President or the agency do?
 
@@ -2254,16 +2254,16 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 35 of 55**
 
-> The President signed an executive order that every cinema in the country must give each customer a free glass of water. Congress has passed no law about cinemas, and the order names none.
+> The President signed an executive order that every movie theater in the country must give each customer a free glass of water. Congress has passed no law about cinemas, and the order names none.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Beyond the President’s power**.” What does the President or the agency do? **Demands something of people that no law allows.** The order demands something of every cinema, and the case says what stands behind it: “Congress has passed no law about cinemas”. Nothing does.
+- If you are right: “Right: **Beyond the President’s power**.” What does the President or the agency do? **Demands something of people that no law allows.** The order demands something of every movie theater, and the case says what stands behind it: “Congress has passed no law about cinemas”. Nothing does.
   - Why not **Carrying out the law**: There is no law about cinemas for the order to be carrying out, and the order names none.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “The President signed an executive order that every cinema in the country must give each customer a free glass of water”. Nobody votes, and no judge has been asked anything.
+  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “The President signed an executive order that every movie theater in the country must give each customer a free glass of water”. Nobody votes, and no judge has been asked anything.
   - If you chose **Puts a law Congress passed into practice**: There is no law about cinemas for the order to be carrying out, and the order names none.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
@@ -2330,7 +2330,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 39 of 55**
 
-> A man was convicted in a federal court of taking money from a federal programme he was running. He had served two of five years when the President signed a paper that forgives the crime and ends the rest of the sentence.
+> A man was convicted in a federal court of taking money from a federal program he was running. He had served two of five years when the President signed a paper that forgives the crime and ends the rest of the sentence.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
@@ -2349,13 +2349,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 40 of 55**
 
-> A law Congress passed says every school that gets federal money must report how many of its pupils are absent each week. The federal education office put out the reporting form in August and told schools to send it in each Friday from September.
+> A law Congress passed says every school that gets federal money must report how many of its students are absent each week. The federal education office put out the reporting form in August and told schools to send it in each Friday from September.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Carrying out the law**.” What does the President or the agency do? **Puts a law Congress passed into practice.** The law asks for the report, and the office says how and when to send it: “A law Congress passed says every school that gets federal money must report how many of its pupils are absent each week” and “told schools to send it in each Friday from September”. It adds nothing the law does not ask for.
+- If you are right: “Right: **Carrying out the law**.” What does the President or the agency do? **Puts a law Congress passed into practice.** The law asks for the report, and the office says how and when to send it: “A law Congress passed says every school that gets federal money must report how many of its students are absent each week” and “told schools to send it in each Friday from September”. It adds nothing the law does not ask for.
   - Why not **Veto**: The law is already passed and in force, so nobody is deciding whether to sign it. An office is making it work.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an office’s: “The federal education office put out the reporting form in August”. It is a federal office, and no vote or judge comes after it.
@@ -2387,17 +2387,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 42 of 55**
 
-> Under a law Congress passed, a person who has lived in the country for the years the law sets may apply to become a citizen. On Wednesday an officer of the federal immigration service checked Ms Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview.
+> Under a law Congress passed, a person who has lived in the country for the years the law sets may apply to become a citizen. On Wednesday an officer of the federal immigration service checked Ms. Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Carrying out the law**.” What does the President or the agency do? **Puts a law Congress passed into practice.** The officer is processing an application under a law that is already there: “checked Ms Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview”. No new rule is made, and nothing is asked that the law does not list.
-  - Why not **Foreign affairs**: Ms Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.
+- If you are right: “Right: **Carrying out the law**.” What does the President or the agency do? **Puts a law Congress passed into practice.** The officer is processing an application under a law that is already there: “checked Ms. Okoye’s papers against the list in the law, found that she had lived here for long enough, and booked her interview”. No new rule is made, and nothing is asked that the law does not list.
+  - Why not **Foreign affairs**: Ms. Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an officer’s: “an officer of the federal immigration service checked Ms Okoye’s papers against the list in the law”. The officer works for an office of the government of the whole country.
-  - If you chose **Deals with another country**: Ms Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.
+  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an officer’s: “an officer of the federal immigration service checked Ms. Okoye’s papers against the list in the law”. The officer works for an office of the government of the whole country.
+  - If you chose **Deals with another country**: Ms. Okoye may have come from another country, but the officer is not dealing with that country. The officer is checking one person’s papers against a law.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are done by federal officials, and both can involve people who come from another country. In **Foreign affairs** the official sits across the table from another country’s government, as one country with another. In **Carrying out the law** the official makes a law Congress passed work for people, even when the people come from another country. Is the official dealing with another country’s government, or dealing with people under a law Congress passed?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2505,7 +2505,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 48 of 55**
 
-> The President and the leader of an allied country walked together past a guard of honour on Monday, and the leader thanked the President for the help. That afternoon the President ordered the three hundred soldiers who had been training in the ally’s country to come home on Friday.
+> The President and the leader of an allied country walked together past a guard of honor on Monday, and the leader thanked the President for the help. That afternoon the President ordered the three hundred soldiers who had been training in the ally’s country to come home on Friday.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
@@ -2687,7 +2687,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 46. What to carry away
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 46 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 46 of 47*
 
 [reviewers only: card kind `recap`, id `recap-pres`]
 
@@ -2730,7 +2730,7 @@ What does the President or the agency do?
 
 ### 47. Where would you meet this?
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 47 of 47*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 47 of 47*
 
 [reviewers only: card kind `transfer`, id `transfer-pres`]
 
@@ -2782,13 +2782,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 2 of 18**
 
-> Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each flat. The federal housing office sent every builder a checklist on Monday, and said its inspectors would test the alarms before anyone moves in.
+> Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each apartment. The federal housing office sent every builder a checklist on Monday, and said its inspectors would test the alarms before anyone moves in.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Carrying out the law**.” What does the President or the agency do? **Puts a law Congress passed into practice.** The law asks for the alarms, and the office supplies the checklist and the tests: “Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each flat” and “sent every builder a checklist”. It asks for nothing the law does not.
+- If you are right: “Right: **Carrying out the law**.” What does the President or the agency do? **Puts a law Congress passed into practice.** The law asks for the alarms, and the office supplies the checklist and the tests: “Under a law Congress passed, every new apartment building paid for with federal money must have smoke alarms in each apartment” and “sent every builder a checklist”. It asks for nothing the law does not.
   - Why not **Veto**: The law has already been passed and is in force. Nobody is deciding whether it goes ahead: an office is making it work.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision is an office’s: “The federal housing office sent every builder a checklist on Monday”. Nobody votes, and no judge is asked anything.
@@ -2820,7 +2820,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 18**
 
-> The federal education office announced that every school in the country must serve a hot lunch to every pupil each day, starting in September. No law Congress passed requires hot lunches, and the office points to none.
+> The federal education office announced that every school in the country must serve a hot lunch to every student each day, starting in September. No law Congress passed requires hot lunches, and the office points to none.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
@@ -2829,7 +2829,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Beyond the President’s power**.” What does the President or the agency do? **Demands something of people that no law allows.** The office demands something of every school, and the case says nothing stands behind it: “No law Congress passed requires hot lunches”.
   - Why not **Carrying out the law**: There is no law about hot lunches for the office to be putting into practice, and the office points to none.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is an office’s: “The federal education office announced that every school in the country must serve a hot lunch to every pupil each day”. Nobody votes, and no judge is asked anything.
+  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is an office’s: “The federal education office announced that every school in the country must serve a hot lunch to every student each day”. Nobody votes, and no judge is asked anything.
   - If you chose **Puts a law Congress passed into practice**: There is no law about hot lunches for the office to be putting into practice, and the office points to none.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Carrying out the law**, the look-alike card’s lines follow: Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story. In **Carrying out the law** a law Congress passed stands behind what is done, and the office stays inside it. In **Beyond the President’s power** no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone. Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?
@@ -2915,17 +2915,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 18**
 
-> The navy’s supply ship was on its way to a port in the east when a storm struck the coast. On Wednesday the President told the navy to send the ship to the damaged harbour in the west instead, with its cargo of blankets.
+> The navy’s supply ship was on its way to a port in the east when a storm struck the coast. On Wednesday the President told the navy to send the ship to the damaged harbor in the west instead, with its cargo of blankets.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Commander in chief**.” What does the President or the agency do? **Gives orders to the armed forces.** The President tells the navy where a ship is to go: “the President told the navy to send the ship to the damaged harbour in the west”. The ship obeys, and no law is named.
-  - Why not **Foreign affairs**: Both harbours are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.
+- If you are right: “Right: **Commander in chief**.” What does the President or the agency do? **Gives orders to the armed forces.** The President tells the navy where a ship is to go: “the President told the navy to send the ship to the damaged harbor in the west”. The ship obeys, and no law is named.
+  - Why not **Foreign affairs**: Both harbors are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President told the navy to send the ship to the damaged harbour in the west instead”.
-  - If you chose **Deals with another country**: Both harbours are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.
+  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President told the navy to send the ship to the damaged harbor in the west instead”.
+  - If you chose **Deals with another country**: Both harbors are in the country’s own territory, and nobody from another country is involved. The order goes to the navy.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Foreign affairs**, the look-alike card’s lines follow: Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader. In **Commander in chief** the President gives the forces their orders, and they obey. In **Foreign affairs** the President, or someone speaking for the President, meets, negotiates or signs with another country’s government. Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -3048,7 +3048,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 16 of 18**
 
-> A sailor was convicted in a federal court of bringing protected birds into the country, and was fined $2,000. On Friday the President signed a pardon for him, and the fine was cancelled.
+> A sailor was convicted in a federal court of bringing protected birds into the country, and was fined $2,000. On Friday the President signed a pardon for him, and the fine was canceled.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 
@@ -3057,7 +3057,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Pardon**.” What does the President or the agency do? **Forgives a federal crime.** A federal crime was judged, and the President lifts the punishment: “the President signed a pardon for him”.
   - Why not **Veto**: No bill is in the case. The President is acting on a person.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President signed a pardon for him, and the fine was cancelled”. The federal court decided earlier.
+  - Who makes the last decision in the case, or is asked to make it? **The President or a federal agency.** The last decision in the case is the President’s: “the President signed a pardon for him, and the fine was canceled”. The federal court decided earlier.
   - If you chose **Refuses to sign a law Congress passed**: No bill is in the case. The President is acting on a person.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Veto**, the look-alike card’s lines follow: Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment. In **Veto** the President acts on a bill that Congress has passed, and refuses to sign it. In **Pardon** the President acts on a person who broke a federal law, and forgives the crime. What is the President acting on: a bill that Congress passed, or a person who broke a federal law?
@@ -3067,7 +3067,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 17 of 18**
 
-> A pharmacist was charged in a federal court with selling medicine without a licence that a federal law requires. Before the case came to trial, the President forgave the crime. The pharmacist will not be punished.
+> A pharmacist was charged in a federal court with selling medicine without a license that a federal law requires. Before the case came to trial, the President forgave the crime. The pharmacist will not be punished.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does the President or the agency do? → Name it.
 

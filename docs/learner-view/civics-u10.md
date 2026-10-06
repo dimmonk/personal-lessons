@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Ten: History since 1877
 
-*From the factories and the great arrivals to September 11, the widening of the right to vote, and the symbols of the country.* Unit revision 2, built to lesson standard 1, status: draft.
+*From the factories and the great arrivals to September 11, the widening of the right to vote, and the symbols of the country.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold: the history since 1877, and the symbols of the country
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 100*
 
 [reviewers only: card kind `orient`, id `orient-since`]
 
@@ -65,11 +65,11 @@ Each group starts from one question that a period of history answered, or from o
 
 Where the unit gives a name you have already met, it prints that name as it was taught. In this course, “the vote” and “the right to vote” are the words for one thing, throughout.
 
-Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The great arrivals, in four years
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 100*
 
 [reviewers only: card kind `concept`, id `con-wave`]
 
@@ -81,7 +81,7 @@ The first group is about the years when the country filled with factories and wi
 
 Noor’s three questions are all about dates, and the dates are the facts of this group. The years from 1877 to 1914 were the years of factories and big cities. Railways crossed the continent, steel mills and factories grew, and cities swelled. Millions of immigrants, mostly from Europe, came to work in them.
 
-Three landmarks of those years can each be hung on a year. The Chinese Exclusion Act, passed by Congress in 1882, was the first major law to bar a group of people from coming in because of where they came from. The Statue of Liberty, a large copper statue and a gift from France, was dedicated in New York Harbor in 1886 and became a symbol of welcome. Ellis Island, in the same harbour, opened in 1892 as the federal immigration station, and about twelve million people passed through it before it closed in 1954.
+Three landmarks of those years can each be hung on a year. The Chinese Exclusion Act, passed by Congress in 1882, was the first major law to bar a group of people from coming in because of where they came from. The Statue of Liberty, a large copper statue and a gift from France, was dedicated in New York Harbor in 1886 and became a symbol of welcome. Ellis Island, in the same harbor, opened in 1892 as the federal immigration station, and about twelve million people passed through it before it closed in 1954.
 
 So Noor’s great-grandfather, examined at Ellis Island in 1905, came when it had been open for thirteen years and had many years still to run. Notice also that the first three dates are 1882, 1886 and 1892. They are almost all that this course holds from the years 1877 to 1900. The unit skips those years and does not fill them.
 
@@ -90,7 +90,7 @@ The four facts below are four years: when the Act was passed, when the statue wa
 
 ### 3. Four dates of the great arrivals
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 100*
 
 [reviewers only: card kind `facts`, id `facts-wave`]
 
@@ -107,12 +107,12 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 - **1882**: It is the earliest of the four. It was the first major law to bar a group of people from coming in because of where they came from, and it was passed by Congress, which is why it belongs to the story, told in the next group, of who decides who may come in.
 - **1886**: The statue was a gift from France, and it became a symbol of welcome in the years when millions arrived. Its year is four years after the Act and six years before Ellis Island opened.
-- **1892**: It is in the same harbour as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.
+- **1892**: It is in the same harbor as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.
 - **1954**: It was open from 1892 to 1954, and about twelve million people passed through it. A person examined there in 1905, like Noor’s great-grandfather, came in its first years and not near its end.
 
 ### 4. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-exclusion`]
 
@@ -133,7 +133,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 5. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-statue`]
 
@@ -154,7 +154,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 6. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-ellis`]
 
@@ -167,7 +167,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 **Shown as soon as you answer**
 
-- The answer: **1892**. Why: It is in the same harbour as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.
+- The answer: **1892**. Why: It is in the same harbor as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.
   - If you chose 1882: You chose **1882**. That is the answer to a different fact: In what year did Congress pass the Chinese Exclusion Act?
   - If you chose 1886: You chose **1886**. That is the answer to a different fact: In what year was the Statue of Liberty dedicated in New York Harbor?
   - If you chose 1954: You chose **1954**. That is the answer to a different fact: In what year did Ellis Island close?
@@ -175,7 +175,7 @@ These are the four years from Noor’s questions, each with how it fits the year
 
 ### 7. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 100*
 
 [reviewers only: card kind `check`, id `chk-wv-closed`]
 
@@ -194,13 +194,13 @@ These are the four years from Noor’s questions, each with how it fits the year
   - If you chose 1892: You chose **1892**. That is the answer to a different fact: In what year did Ellis Island open as the federal immigration station?
 - Taught on: “Four dates of the great arrivals” (one tap opens the card).
 
-### 8. Two landmarks in one harbour
+### 8. Two landmarks in one harbor
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-wave`]
 
-Two of the four dates are for landmarks that stand in the same harbour and that are only six years apart. They get swapped, so they go side by side.
+Two of the four dates are for landmarks that stand in the same harbor and that are only six years apart. They get swapped, so they go side by side.
 
 **Fact A**
 
@@ -218,15 +218,15 @@ Two of the four dates are for landmarks that stand in the same harbour and that 
 
 **Why this one and not the other**
 
-Fact A is the year of the Statue of Liberty: **1886**. It was a gift from France, and it stands in the harbour as a symbol of welcome.
+Fact A is the year of the Statue of Liberty: **1886**. It was a gift from France, and it stands in the harbor as a symbol of welcome.
 
 Fact B is the year of Ellis Island: **1892**. It was the federal station where arrivals were examined, and it was in use for 62 years.
 
-The statue came first, and the station six years later. If a person was examined by a doctor and an inspector in the harbour, the place is Ellis Island and the opening year is **1892**. If the story is of a copper statue that was given, the year is **1886**.
+The statue came first, and the station six years later. If a person was examined by a doctor and an inspector in the harbor, the place is Ellis Island and the opening year is **1892**. If the story is of a copper statue that was given, the year is **1886**.
 
 **How to tell them apart**
 
-Is it the year of the gift that stands in the harbour, or the year of the station where the arrivals were examined?
+Is it the year of the gift that stands in the harbor, or the year of the station where the arrivals were examined?
 
 **Side by side**
 
@@ -234,12 +234,12 @@ Is it the year of the gift that stands in the harbour, or the year of the statio
 |---|---|---|
 | Asked | In what year was the Statue of Liberty dedicated in New York Harbor? | In what year did Ellis Island open as the federal immigration station? |
 | The answer | 1886 | 1892 |
-| How it fits | The statue was a gift from France, and it became a symbol of welcome in the years when millions arrived. Its year is four years after the Act and six years before Ellis Island opened. | It is in the same harbour as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened. |
+| How it fits | The statue was a gift from France, and it became a symbol of welcome in the years when millions arrived. Its year is four years after the Act and six years before Ellis Island opened. | It is in the same harbor as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened. |
 
 
 ### 9. Who decides who may come in
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 100*
 
 [reviewers only: card kind `concept`, id `con-door`]
 
@@ -258,7 +258,7 @@ That is why, today, the rules on who may come in come from Congress and are run 
 
 ### 10. Who acted on who may come in
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 100*
 
 [reviewers only: card kind `facts`, id `facts-door`]
 
@@ -280,7 +280,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 11. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-state`]
 
@@ -301,7 +301,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 12. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-court`]
 
@@ -322,7 +322,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 13. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-congress`]
 
@@ -343,7 +343,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 14. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 14 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 14 of 100*
 
 [reviewers only: card kind `check`, id `chk-do-station`]
 
@@ -364,7 +364,7 @@ These are the four facts about who acted, each with how it fits the idea that de
 
 ### 15. Two federal bodies that acted on arrivals
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 15 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 15 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-door`]
 
@@ -413,7 +413,7 @@ Did this body decide whether a state’s law was allowed, or did it write a law 
 
 ### 16. Four changes of the factory years, and what each did
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 100*
 
 [reviewers only: card kind `concept`, id `con-laws`]
 
@@ -427,12 +427,12 @@ Priya’s cousin has asked about two things that people take for granted, and th
 
 The Sixteenth Amendment allowed a federal income tax: a tax on what people earn. Congress already had the power to tax, and the amendment added to it. The Seventeenth Amendment made senators elected by voters. Before it, state legislatures chose them. Both came in the years of big industry and big cities.
 
-Two more changes belong to the same years. In 1882 Congress passed the Chinese Exclusion Act, which was a bar on a group of people coming in because of where they came from. And reformers and labour unions pushed for shorter hours and an end to child labour. The four facts below are what each of these four did or asked for.
+Two more changes belong to the same years. In 1882 Congress passed the Chinese Exclusion Act, which was a bar on a group of people coming in because of where they came from. And reformers and labor unions pushed for shorter hours and an end to child labor. The four facts below are what each of these four did or asked for.
 
 
 ### 17. What four changes did
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 100*
 
 [reviewers only: card kind `facts`, id `facts-laws`]
 
@@ -443,18 +443,18 @@ These are the four facts, each with how it fits the idea of a country changing i
 | What did the Sixteenth Amendment, from 1913, allow? | A federal income tax |
 | What did the Seventeenth Amendment, from 1913, change about senators? | Senators elected by voters |
 | What was the Chinese Exclusion Act of 1882? | A bar on a group of people coming in, because of where they came from |
-| What did reformers and labour unions of these years push for? | Shorter hours and an end to child labour |
+| What did reformers and labor unions of these years push for? | Shorter hours and an end to child labor |
 
 **How each fact fits the idea**
 
 - **A federal income tax**: It lets the federal government tax what people earn. Congress already had the power to tax, and the amendment added to it. An amendment changes the Constitution itself, which is why this was a change to the rules of the whole country.
 - **Senators elected by voters**: Before it, state legislatures chose the senators, and after it the voters did. So when Priya votes for a senator, she is using the change that this amendment made.
 - **A bar on a group of people coming in, because of where they came from**: It was the first major law of its kind, and Congress passed it. It is the one of the four that is about arrival and not about the Constitution.
-- **Shorter hours and an end to child labour**: This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.
+- **Shorter hours and an end to child labor**: This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.
 
 ### 18. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-sixteenth`]
 
@@ -463,19 +463,19 @@ These are the four facts, each with how it fits the idea of a country changing i
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
 - The answer: **A federal income tax**. Why: It lets the federal government tax what people earn. Congress already had the power to tax, and the amendment added to it. An amendment changes the Constitution itself, which is why this was a change to the rules of the whole country.
   - If you chose Senators elected by voters: You chose **Senators elected by voters**. That is the answer to a different fact: What did the Seventeenth Amendment, from 1913, change about senators?
   - If you chose A bar on a group of people coming in, because of where they came from: You chose **A bar on a group of people coming in, because of where they came from**. That is the answer to a different fact: What was the Chinese Exclusion Act of 1882?
-  - If you chose Shorter hours and an end to child labour: You chose **Shorter hours and an end to child labour**. That is the answer to a different fact: What did reformers and labour unions of these years push for?
+  - If you chose Shorter hours and an end to child labor: You chose **Shorter hours and an end to child labor**. That is the answer to a different fact: What did reformers and labor unions of these years push for?
 - Taught on: “What four changes did” (one tap opens the card).
 
 ### 19. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-seventeenth`]
 
@@ -484,19 +484,19 @@ These are the four facts, each with how it fits the idea of a country changing i
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
 - The answer: **Senators elected by voters**. Why: Before it, state legislatures chose the senators, and after it the voters did. So when Priya votes for a senator, she is using the change that this amendment made.
   - If you chose A federal income tax: You chose **A federal income tax**. That is the answer to a different fact: What did the Sixteenth Amendment, from 1913, allow?
   - If you chose A bar on a group of people coming in, because of where they came from: You chose **A bar on a group of people coming in, because of where they came from**. That is the answer to a different fact: What was the Chinese Exclusion Act of 1882?
-  - If you chose Shorter hours and an end to child labour: You chose **Shorter hours and an end to child labour**. That is the answer to a different fact: What did reformers and labour unions of these years push for?
+  - If you chose Shorter hours and an end to child labor: You chose **Shorter hours and an end to child labor**. That is the answer to a different fact: What did reformers and labor unions of these years push for?
 - Taught on: “What four changes did” (one tap opens the card).
 
 ### 20. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-exclusion`]
 
@@ -505,32 +505,32 @@ These are the four facts, each with how it fits the idea of a country changing i
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
 - The answer: **A bar on a group of people coming in, because of where they came from**. Why: It was the first major law of its kind, and Congress passed it. It is the one of the four that is about arrival and not about the Constitution.
   - If you chose A federal income tax: You chose **A federal income tax**. That is the answer to a different fact: What did the Sixteenth Amendment, from 1913, allow?
   - If you chose Senators elected by voters: You chose **Senators elected by voters**. That is the answer to a different fact: What did the Seventeenth Amendment, from 1913, change about senators?
-  - If you chose Shorter hours and an end to child labour: You chose **Shorter hours and an end to child labour**. That is the answer to a different fact: What did reformers and labour unions of these years push for?
+  - If you chose Shorter hours and an end to child labor: You chose **Shorter hours and an end to child labor**. That is the answer to a different fact: What did reformers and labor unions of these years push for?
 - Taught on: “What four changes did” (one tap opens the card).
 
 ### 21. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 100*
 
 [reviewers only: card kind `check`, id `chk-lw-reform`]
 
-**You are asked, from memory:** What did reformers and labour unions of these years push for?
+**You are asked, from memory:** What did reformers and labor unions of these years push for?
 
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
-- The answer: **Shorter hours and an end to child labour**. Why: This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.
+- The answer: **Shorter hours and an end to child labor**. Why: This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.
   - If you chose A federal income tax: You chose **A federal income tax**. That is the answer to a different fact: What did the Sixteenth Amendment, from 1913, allow?
   - If you chose Senators elected by voters: You chose **Senators elected by voters**. That is the answer to a different fact: What did the Seventeenth Amendment, from 1913, change about senators?
   - If you chose A bar on a group of people coming in, because of where they came from: You chose **A bar on a group of people coming in, because of where they came from**. That is the answer to a different fact: What was the Chinese Exclusion Act of 1882?
@@ -538,7 +538,7 @@ These are the four facts, each with how it fits the idea of a country changing i
 
 ### 22. Two amendments of the same year
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-laws`]
 
@@ -581,7 +581,7 @@ Is it about a tax, or about how senators are chosen?
 
 ### 23. A line of seven landmarks, from 1917 to 2001
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 100*
 
 [reviewers only: card kind `concept`, id `con-line`]
 
@@ -600,7 +600,7 @@ Three of the landmarks get a group of their own after this one, with what and wh
 
 ### 24. Seven years on one line
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 24 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 24 of 100*
 
 [reviewers only: card kind `facts`, id `facts-line`]
 
@@ -628,7 +628,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 25. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 25 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 25 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-ww1`]
 
@@ -655,7 +655,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 26. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 26 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 26 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-depression`]
 
@@ -682,7 +682,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 27. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 27 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 27 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-pearl`]
 
@@ -709,7 +709,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 28. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 28 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 28 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-ww2end`]
 
@@ -736,7 +736,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 29. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 29 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 29 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-coldstart`]
 
@@ -763,7 +763,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 30. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 30 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 30 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-coldend`]
 
@@ -790,7 +790,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 31. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 31 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 31 of 100*
 
 [reviewers only: card kind `check`, id `chk-tl-attack`]
 
@@ -817,7 +817,7 @@ These are the seven years on Kofi’s strip, in order, each with where it sits a
 
 ### 32. Two years in which the country entered a war
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 32 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 32 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-line`]
 
@@ -866,7 +866,7 @@ Is it the first of the two world wars, or the attack that brought the country in
 
 ### 33. Hard times, and what was done about them
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 100*
 
 [reviewers only: card kind `concept`, id `con-hard`]
 
@@ -878,14 +878,14 @@ The line gave the year the Depression began. This group says what it was, what t
 
 Ines’s card is one small piece of a very large change, and the change began with a crash. In 1929 the Great Depression began: banks failed, and about a quarter of workers lost their jobs. That is one worker in four.
 
-The President’s answer was a set of new programmes called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the programme named on Ines’s card, is the example that this course holds. New programmes such as Social Security were run by new federal offices, and an office of that kind is called an *agency*.
+The President’s answer was a set of new programs called the New Deal, and the President was Franklin D. Roosevelt. Social Security, the program named on Ines’s card, is the example that this course holds. New programs such as Social Security were run by new federal offices, and an office of that kind is called an *agency*.
 
 The result was that the federal government took a far larger role in daily life. The name for what these new offices did is **Carrying out the law**: putting laws into practice, at a scale that the founders never saw. The four facts below are the trouble, the answer, the President and the example.
 
 
 ### 34. The Depression and the New Deal
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 100*
 
 [reviewers only: card kind `facts`, id `facts-hard`]
 
@@ -894,20 +894,20 @@ These are the four names of the group, each with how it fits the idea of hard ti
 | The fact | The answer |
 |---|---|
 | What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called? | The Great Depression |
-| What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called? | The New Deal |
-| Which President began the programmes that answered the hard times of the 1930s? | Franklin D. Roosevelt |
-| Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember? | Social Security |
+| What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called? | The New Deal |
+| Which President began the programs that answered the hard times of the 1930s? | Franklin D. Roosevelt |
+| Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember? | Social Security |
 
 **How each fact fits the idea**
 
 - **The Great Depression**: It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind.
-- **The New Deal**: It is the answer to the trouble, and not the trouble itself. Its programmes were run by new federal offices, and the federal government took a far larger role in daily life.
+- **The New Deal**: It is the answer to the trouble, and not the trouble itself. Its programs were run by new federal offices, and the federal government took a far larger role in daily life.
 - **Franklin D. Roosevelt**: The New Deal is his: it was President Franklin D. Roosevelt’s answer to the Depression.
-- **Social Security**: It is the programme named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.
+- **Social Security**: It is the program named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.
 
 ### 35. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-depression`]
 
@@ -921,18 +921,18 @@ These are the four names of the group, each with how it fits the idea of hard ti
 **Shown as soon as you answer**
 
 - The answer: **The Great Depression**. Why: It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind.
-  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
-  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programmes that answered the hard times of the 1930s?
-  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
+  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programs that answered the hard times of the 1930s?
+  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 ### 36. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-newdeal`]
 
-**You are asked, from memory:** What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
+**You are asked, from memory:** What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
 
 - The Great Depression
 - The New Deal
@@ -941,19 +941,19 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 **Shown as soon as you answer**
 
-- The answer: **The New Deal**. Why: It is the answer to the trouble, and not the trouble itself. Its programmes were run by new federal offices, and the federal government took a far larger role in daily life.
+- The answer: **The New Deal**. Why: It is the answer to the trouble, and not the trouble itself. Its programs were run by new federal offices, and the federal government took a far larger role in daily life.
   - If you chose The Great Depression: You chose **The Great Depression**. That is the answer to a different fact: What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?
-  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programmes that answered the hard times of the 1930s?
-  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programs that answered the hard times of the 1930s?
+  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 ### 37. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 37 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 37 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-roosevelt`]
 
-**You are asked, from memory:** Which President began the programmes that answered the hard times of the 1930s?
+**You are asked, from memory:** Which President began the programs that answered the hard times of the 1930s?
 
 - The Great Depression
 - The New Deal
@@ -964,17 +964,17 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 - The answer: **Franklin D. Roosevelt**. Why: The New Deal is his: it was President Franklin D. Roosevelt’s answer to the Depression.
   - If you chose The Great Depression: You chose **The Great Depression**. That is the answer to a different fact: What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?
-  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
-  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
+  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 ### 38. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 38 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 38 of 100*
 
 [reviewers only: card kind `check`, id `chk-hd-security`]
 
-**You are asked, from memory:** Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+**You are asked, from memory:** Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 
 - The Great Depression
 - The New Deal
@@ -983,15 +983,15 @@ These are the four names of the group, each with how it fits the idea of hard ti
 
 **Shown as soon as you answer**
 
-- The answer: **Social Security**. Why: It is the programme named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.
+- The answer: **Social Security**. Why: It is the program named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.
   - If you chose The Great Depression: You chose **The Great Depression**. That is the answer to a different fact: What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?
-  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
-  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programmes that answered the hard times of the 1930s?
+  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
+  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programs that answered the hard times of the 1930s?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 ### 39. The trouble and the answer to it
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 39 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 39 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-hard`]
 
@@ -1003,7 +1003,7 @@ Two of the four names are for the same years: one for the trouble, and one for t
 
 **Fact B**
 
-> What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
+> What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
 
 **What to compare.** Compare what each name is for: the trouble itself, or what was done about it.
 
@@ -1015,9 +1015,9 @@ Two of the four names are for the same years: one for the trouble, and one for t
 
 Fact A is **The Great Depression**. It is the trouble: banks failing, and about a quarter of workers losing their jobs.
 
-Fact B is **The New Deal**. It is the answer: new programmes, begun by the President, run by new federal offices.
+Fact B is **The New Deal**. It is the answer: new programs, begun by the President, run by new federal offices.
 
-If the story is about banks that failed and people who lost work, it is the trouble. If it is about programmes such as Social Security that were started in answer to it, it is the answer.
+If the story is about banks that failed and people who lost work, it is the trouble. If it is about programs such as Social Security that were started in answer to it, it is the answer.
 
 **How to tell them apart**
 
@@ -1027,14 +1027,14 @@ Is it the trouble itself, or what was done about it?
 
 | | Fact A | Fact B |
 |---|---|---|
-| Asked | What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called? | What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called? |
+| Asked | What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called? | What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called? |
 | The answer | The Great Depression | The New Deal |
-| How it fits | It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind. | It is the answer to the trouble, and not the trouble itself. Its programmes were run by new federal offices, and the federal government took a far larger role in daily life. |
+| How it fits | It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind. | It is the answer to the trouble, and not the trouble itself. Its programs were run by new federal offices, and the federal government took a far larger role in daily life. |
 
 
 ### 40. A long standoff, and the wars in it
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 40 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 40 of 100*
 
 [reviewers only: card kind `concept`, id `con-cold`]
 
@@ -1053,7 +1053,7 @@ Notice what the facts below do not hold: how the standoff began, why each war wa
 
 ### 41. The Cold War in four names
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 41 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 41 of 100*
 
 [reviewers only: card kind `facts`, id `facts-cold`]
 
@@ -1075,7 +1075,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 42. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 42 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 42 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-name`]
 
@@ -1096,7 +1096,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 43. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 43 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 43 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-rival`]
 
@@ -1117,7 +1117,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 44. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 44 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 44 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-wars`]
 
@@ -1138,7 +1138,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 45. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 45 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 45 of 100*
 
 [reviewers only: card kind `check`, id `chk-cw-policy`]
 
@@ -1159,7 +1159,7 @@ These are the four names of the group, each with how it fits the idea of a long 
 
 ### 46. The civil rights movement: a court, a law and many people
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 46 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 46 of 100*
 
 [reviewers only: card kind `concept`, id `con-civil`]
 
@@ -1180,7 +1180,7 @@ The five facts below are the ruling, the leader, the law, the town and what the 
 
 ### 47. Five names of the civil rights movement
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 47 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 47 of 100*
 
 [reviewers only: card kind `facts`, id `facts-civil`]
 
@@ -1204,7 +1204,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 48. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 48 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 48 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-brown`]
 
@@ -1227,7 +1227,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 49. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 49 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 49 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-king`]
 
@@ -1250,7 +1250,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 50. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 50 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 50 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-act`]
 
@@ -1273,7 +1273,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 51. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 51 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 51 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-selma`]
 
@@ -1296,7 +1296,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 52. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 52 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 52 of 100*
 
 [reviewers only: card kind `check`, id `chk-cr-end`]
 
@@ -1319,7 +1319,7 @@ These are the five names of the group, each with how it fits the movement to end
 
 ### 53. A court’s ruling and a law of Congress
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 53 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 53 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-civil`]
 
@@ -1368,7 +1368,7 @@ Was it a ruling by a court, or a law passed by lawmakers?
 
 ### 54. September 11, 2001: what happened that day
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 54 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 54 of 100*
 
 [reviewers only: card kind `concept`, id `con-attack`]
 
@@ -1376,7 +1376,7 @@ The line gave 2001 as the last landmark. This group says what happened that day,
 
 *Adaeze at the airport*
 
-> Adaeze is waiting in a long line at airport security with a younger colleague, Tomás, who has just moved to the country. Tomás asks why the checks are so strict. Adaeze says that the rules changed after one day in 2001. Tomás does not know what happened that day, and Adaeze realises that she cannot say much more than that it was an attack.
+> Adaeze is waiting in a long line at airport security with a younger colleague, Tomás, who has just moved to the country. Tomás asks why the checks are so strict. Adaeze says that the rules changed after one day in 2001. Tomás does not know what happened that day, and Adaeze realizes that she cannot say much more than that it was an attack.
 
 Tomás asked a fair question, and Adaeze’s answer was too short. September 11, 2001, is the most recent event that this course holds, and a short answer is not enough for it.
 
@@ -1387,7 +1387,7 @@ Afterward the country made new security rules, created a new federal department 
 
 ### 55. Five facts about September 11
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 55 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 55 of 100*
 
 [reviewers only: card kind `facts`, id `facts-attack`]
 
@@ -1411,7 +1411,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 56. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 56 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 56 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-planes`]
 
@@ -1434,7 +1434,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 57. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 57 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 57 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-targets`]
 
@@ -1457,7 +1457,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 58. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 58 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 58 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-dead`]
 
@@ -1480,7 +1480,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 59. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 59 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 59 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-dept`]
 
@@ -1503,7 +1503,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 60. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 60 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 60 of 100*
 
 [reviewers only: card kind `check`, id `chk-nn-immig`]
 
@@ -1526,7 +1526,7 @@ These are the five facts of the group, each with how it fits what happened that 
 
 ### 61. The right to vote was widened five times: in what years
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 61 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 61 of 100*
 
 [reviewers only: card kind `concept`, id `con-vote`]
 
@@ -1545,7 +1545,7 @@ Two of the five years are one year apart, 1964 and 1965, and one pair of them is
 
 ### 62. Five years in which the vote was widened
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 62 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 62 of 100*
 
 [reviewers only: card kind `facts`, id `facts-vote`]
 
@@ -1569,7 +1569,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 63. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 63 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 63 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-race`]
 
@@ -1592,7 +1592,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 64. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 64 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 64 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-sex`]
 
@@ -1615,7 +1615,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 65. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 65 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 65 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-poll`]
 
@@ -1638,7 +1638,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 66. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 66 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 66 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-vra`]
 
@@ -1661,7 +1661,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 67. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 67 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 67 of 100*
 
 [reviewers only: card kind `check`, id `chk-vy-age`]
 
@@ -1684,7 +1684,7 @@ These are the five years of the group, each with how it fits the story of the vo
 
 ### 68. The promise written down, and the promise made real
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 68 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 68 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-vote`]
 
@@ -1733,7 +1733,7 @@ Is it when the promise was written down, or when it was made real?
 
 ### 69. Who was behind the widenings of the vote
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 69 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 69 of 100*
 
 [reviewers only: card kind `concept`, id `con-who`]
 
@@ -1741,7 +1741,7 @@ The last group gave the five years. This one gives the people and the bodies beh
 
 *Ilse’s notes*
 
-> Ilse copies a sentence into her notes: ‘The campaign for women’s right to vote began in 1848, and most of the people who led it did not live to see it succeed in 1920.’ She underlines it. Then she realises that she can say who could vote at the start, and in which year things changed, but that she cannot name one person or one body that made any of the changes happen.
+> Ilse copies a sentence into her notes: ‘The campaign for women’s right to vote began in 1848, and most of the people who led it did not live to see it succeed in 1920.’ She underlines it. Then she realizes that she can say who could vote at the start, and in which year things changed, but that she cannot name one person or one body that made any of the changes happen.
 
 Ilse’s trouble is that she knows the dates but not the people. A widening of the vote did not happen by itself, and each one had people behind it.
 
@@ -1752,7 +1752,7 @@ The last two are worth setting side by side. The lawmakers wrote the law, and th
 
 ### 70. Four facts about who was behind the vote
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 70 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 70 of 100*
 
 [reviewers only: card kind `facts`, id `facts-who`]
 
@@ -1774,7 +1774,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 71. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 71 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 71 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-founding`]
 
@@ -1795,7 +1795,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 72. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 72 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 72 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-campaign`]
 
@@ -1816,7 +1816,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 73. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 73 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 73 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-congress`]
 
@@ -1837,7 +1837,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 74. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 74 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 74 of 100*
 
 [reviewers only: card kind `check`, id `chk-vw-examiners`]
 
@@ -1858,7 +1858,7 @@ These are the four facts about who was behind the vote, each with how it fits th
 
 ### 75. The lawmakers and the examiners
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 75 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 75 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-who`]
 
@@ -1901,7 +1901,7 @@ Did they write the law, or did they put it into practice by registering voters?
 
 ### 76. A promise, and ninety-five years
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 76 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 76 of 100*
 
 [reviewers only: card kind `concept`, id `con-gap`]
 
@@ -1920,7 +1920,7 @@ Two more numbers belong with it: 1848, the year that the campaign for women’s 
 
 ### 77. Three numbers of the long struggle for the vote
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 77 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 77 of 100*
 
 [reviewers only: card kind `facts`, id `facts-gap`]
 
@@ -1940,7 +1940,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 78. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 78 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 78 of 100*
 
 [reviewers only: card kind `check`, id `chk-vg-gap`]
 
@@ -1959,7 +1959,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 79. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 79 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 79 of 100*
 
 [reviewers only: card kind `check`, id `chk-vg-start`]
 
@@ -1978,7 +1978,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 80. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 80 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 80 of 100*
 
 [reviewers only: card kind `check`, id `chk-vg-age`]
 
@@ -2003,7 +2003,7 @@ These are the three numbers of the group, each with how it fits the idea of a ri
 
 ### 81. What the flag, July 4 and the statue stand for
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 81 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 81 of 100*
 
 [reviewers only: card kind `concept`, id `con-flag`]
 
@@ -2022,7 +2022,7 @@ The Statue of Liberty is a symbol too. It became a symbol of welcome in the year
 
 ### 82. What four symbols stand for
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 82 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 82 of 100*
 
 [reviewers only: card kind `facts`, id `facts-flag`]
 
@@ -2044,7 +2044,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 83. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 83 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 83 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-stripes`]
 
@@ -2065,7 +2065,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 84. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 84 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 84 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-stars`]
 
@@ -2086,7 +2086,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 85. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 85 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 85 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-july`]
 
@@ -2107,7 +2107,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 86. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 86 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 86 of 100*
 
 [reviewers only: card kind `check`, id `chk-sy-statue`]
 
@@ -2128,7 +2128,7 @@ These are the four facts of the group, each with how it fits the idea that a sym
 
 ### 87. Thirteen stripes and fifty stars
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 87 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 87 of 100*
 
 [reviewers only: card kind `lookalike`, id `look-flag`]
 
@@ -2171,7 +2171,7 @@ Does it count how the country began, or what it is made of now?
 
 ### 88. Five names a newcomer is expected to know
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 88 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 88 of 100*
 
 [reviewers only: card kind `concept`, id `con-names`]
 
@@ -2179,18 +2179,18 @@ The last group was about what symbols stand for. This one is about their names: 
 
 *Sofia in front of the television*
 
-> Sofia is preparing for her interview and watches a television programme about a national holiday. A choir sings the national anthem. A reporter standing in the capital describes the speeches of two political parties. Behind her, a harbour is shown, with a large statue that was a gift from another country. Sofia pauses the screen and writes four questions: what the capital is called, what the anthem is called, which two parties they meant, and which country gave the statue.
+> Sofia is preparing for her interview and watches a television program about a national holiday. A choir sings the national anthem. A reporter standing in the capital describes the speeches of two political parties. Behind her, a harbor is shown, with a large statue that was a gift from another country. Sofia pauses the screen and writes four questions: what the capital is called, what the anthem is called, which two parties they meant, and which country gave the statue.
 
 Sofia’s four questions are four names, and a name is a fact that you either hold or do not. The capital of the United States is Washington, D.C. It became the capital in 1800. The national anthem is The Star-Spangled Banner, which was written during the War of 1812. The two major political parties are the Democratic Party and the Republican Party. And the Statue of Liberty, which stands in New York Harbor, was a gift from France.
 
-There is nothing to work out in these: each one is a name. What helps is attaching each to the place where you meet it. The capital is in the news, the anthem is sung before a game or on a holiday, the parties are at every election, and the statue is in the harbour where the arrivals landed. The word “major” matters in the parties: it says that these are the two big ones, and it does not say that there are no others.
+There is nothing to work out in these: each one is a name. What helps is attaching each to the place where you meet it. The capital is in the news, the anthem is sung before a game or on a holiday, the parties are at every election, and the statue is in the harbor where the arrivals landed. The word “major” matters in the parties: it says that these are the two big ones, and it does not say that there are no others.
 
-The five facts below are the five names: the capital, the anthem, the two parties, the country that gave the statue, and the harbour that it stands in.
+The five facts below are the five names: the capital, the anthem, the two parties, the country that gave the statue, and the harbor that it stands in.
 
 
 ### 89. Five names
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 89 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 89 of 100*
 
 [reviewers only: card kind `facts`, id `facts-names`]
 
@@ -2202,7 +2202,7 @@ These are the five names of the group, each with where you meet it.
 | What is the national anthem called? | The Star-Spangled Banner |
 | Which are the two major political parties? | The Democratic Party and the Republican Party |
 | Which country gave the Statue of Liberty to the United States? | France |
-| In which harbour does the Statue of Liberty stand? | New York Harbor |
+| In which harbor does the Statue of Liberty stand? | New York Harbor |
 
 **How each fact fits the idea**
 
@@ -2210,11 +2210,11 @@ These are the five names of the group, each with where you meet it.
 - **The Star-Spangled Banner**: It was written during the War of 1812. You meet it when a choir or a crowd sings before a game or on a holiday.
 - **The Democratic Party and the Republican Party**: You meet them at every election. The word “major” says that they are the two big ones, and not that there are no others.
 - **France**: It was a gift from France, and it was dedicated in 1886. It is a large copper statue, and it became a symbol of welcome.
-- **New York Harbor**: It stands in the same harbour as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.
+- **New York Harbor**: It stands in the same harbor as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.
 
 ### 90. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 90 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 90 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-capital`]
 
@@ -2232,12 +2232,12 @@ These are the five names of the group, each with where you meet it.
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
   - If you chose France: You chose **France**. That is the answer to a different fact: Which country gave the Statue of Liberty to the United States?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 ### 91. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 91 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 91 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-anthem`]
 
@@ -2255,12 +2255,12 @@ These are the five names of the group, each with where you meet it.
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
   - If you chose France: You chose **France**. That is the answer to a different fact: Which country gave the Statue of Liberty to the United States?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 ### 92. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 92 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 92 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-parties`]
 
@@ -2278,12 +2278,12 @@ These are the five names of the group, each with where you meet it.
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose France: You chose **France**. That is the answer to a different fact: Which country gave the Statue of Liberty to the United States?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 ### 93. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 93 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 93 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-france`]
 
@@ -2301,16 +2301,16 @@ These are the five names of the group, each with where you meet it.
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 ### 94. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 94 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 94 of 100*
 
 [reviewers only: card kind `check`, id `chk-nm-harbor`]
 
-**You are asked, from memory:** In which harbour does the Statue of Liberty stand?
+**You are asked, from memory:** In which harbor does the Statue of Liberty stand?
 
 - Washington, D.C.
 - The Star-Spangled Banner
@@ -2320,7 +2320,7 @@ These are the five names of the group, each with where you meet it.
 
 **Shown as soon as you answer**
 
-- The answer: **New York Harbor**. Why: It stands in the same harbour as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.
+- The answer: **New York Harbor**. Why: It stands in the same harbor as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
@@ -2329,7 +2329,7 @@ These are the five names of the group, each with where you meet it.
 
 ### 95. Fifty states, and places that are not states
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 95 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 95 of 100*
 
 [reviewers only: card kind `concept`, id `con-states`]
 
@@ -2348,7 +2348,7 @@ This unit does not say how they differ, because this course holds nothing about 
 
 ### 96. The states and the territories
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 96 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 96 of 100*
 
 [reviewers only: card kind `facts`, id `facts-states`]
 
@@ -2368,7 +2368,7 @@ These are the three facts of the group, each with how it fits the map of the cou
 
 ### 97. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 97 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 97 of 100*
 
 [reviewers only: card kind `check`, id `chk-st-count`]
 
@@ -2387,7 +2387,7 @@ These are the three facts of the group, each with how it fits the map of the cou
 
 ### 98. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 98 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 98 of 100*
 
 [reviewers only: card kind `check`, id `chk-st-def`]
 
@@ -2406,7 +2406,7 @@ These are the three facts of the group, each with how it fits the map of the cou
 
 ### 99. A question from memory
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 99 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 99 of 100*
 
 [reviewers only: card kind `check`, id `chk-st-rights`]
 
@@ -2443,7 +2443,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 - The answer: **1886**. Why: The statue was a gift from France, and it became a symbol of welcome in the years when millions arrived. Its year is four years after the Act and six years before Ellis Island opened.
   - If you chose 1882: You chose **1882**. That is the answer to a different fact: In what year did Congress pass the Chinese Exclusion Act?
-  - If you chose 1892: You chose **1892**. That is the answer to a different fact: In what year did Ellis Island open as the federal immigration station? Both stand in New York Harbor, both belong to the years when millions arrived, and their years are only six apart. One is the year of the gift from France: **1886**. The other is the year of the federal station where arrivals were examined: **1892**. The statue came first. Is it the year of the gift that stands in the harbour, or the year of the station where the arrivals were examined?
+  - If you chose 1892: You chose **1892**. That is the answer to a different fact: In what year did Ellis Island open as the federal immigration station? Both stand in New York Harbor, both belong to the years when millions arrived, and their years are only six apart. One is the year of the gift from France: **1886**. The other is the year of the federal station where arrivals were examined: **1892**. The statue came first. Is it the year of the gift that stands in the harbor, or the year of the station where the arrivals were examined?
   - If you chose 1954: You chose **1954**. That is the answer to a different fact: In what year did Ellis Island close?
 - Taught on: “Four dates of the great arrivals” (one tap opens the card).
 
@@ -2458,9 +2458,9 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **1892**. Why: It is in the same harbour as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.
+- The answer: **1892**. Why: It is in the same harbor as the statue and opened six years after it. “Federal” means that it belonged to the government of the whole country and not to a state. Noor’s great-grandfather was examined there thirteen years after it opened.
   - If you chose 1882: You chose **1882**. That is the answer to a different fact: In what year did Congress pass the Chinese Exclusion Act?
-  - If you chose 1886: You chose **1886**. That is the answer to a different fact: In what year was the Statue of Liberty dedicated in New York Harbor? Both stand in New York Harbor, both belong to the years when millions arrived, and their years are only six apart. One is the year of the gift from France: **1886**. The other is the year of the federal station where arrivals were examined: **1892**. The statue came first. Is it the year of the gift that stands in the harbour, or the year of the station where the arrivals were examined?
+  - If you chose 1886: You chose **1886**. That is the answer to a different fact: In what year was the Statue of Liberty dedicated in New York Harbor? Both stand in New York Harbor, both belong to the years when millions arrived, and their years are only six apart. One is the year of the gift from France: **1886**. The other is the year of the federal station where arrivals were examined: **1892**. The statue came first. Is it the year of the gift that stands in the harbor, or the year of the station where the arrivals were examined?
   - If you chose 1954: You chose **1954**. That is the answer to a different fact: In what year did Ellis Island close?
 - Taught on: “Four dates of the great arrivals” (one tap opens the card).
 
@@ -2573,14 +2573,14 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
 - The answer: **A federal income tax**. Why: It lets the federal government tax what people earn. Congress already had the power to tax, and the amendment added to it. An amendment changes the Constitution itself, which is why this was a change to the rules of the whole country.
   - If you chose Senators elected by voters: You chose **Senators elected by voters**. That is the answer to a different fact: What did the Seventeenth Amendment, from 1913, change about senators? Both are amendments from 1913, so the year cannot tell them apart. One is about money: **A federal income tax**. The other is about the people who sit in the Senate: **Senators elected by voters**. Is it about a tax, or about how senators are chosen?
   - If you chose A bar on a group of people coming in, because of where they came from: You chose **A bar on a group of people coming in, because of where they came from**. That is the answer to a different fact: What was the Chinese Exclusion Act of 1882?
-  - If you chose Shorter hours and an end to child labour: You chose **Shorter hours and an end to child labour**. That is the answer to a different fact: What did reformers and labour unions of these years push for?
+  - If you chose Shorter hours and an end to child labor: You chose **Shorter hours and an end to child labor**. That is the answer to a different fact: What did reformers and labor unions of these years push for?
 - Taught on: “What four changes did” (one tap opens the card).
 
 **Drill item 10 of 61**
@@ -2590,14 +2590,14 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
 - The answer: **Senators elected by voters**. Why: Before it, state legislatures chose the senators, and after it the voters did. So when Priya votes for a senator, she is using the change that this amendment made.
   - If you chose A federal income tax: You chose **A federal income tax**. That is the answer to a different fact: What did the Sixteenth Amendment, from 1913, allow? Both are amendments from 1913, so the year cannot tell them apart. One is about money: **A federal income tax**. The other is about the people who sit in the Senate: **Senators elected by voters**. Is it about a tax, or about how senators are chosen?
   - If you chose A bar on a group of people coming in, because of where they came from: You chose **A bar on a group of people coming in, because of where they came from**. That is the answer to a different fact: What was the Chinese Exclusion Act of 1882?
-  - If you chose Shorter hours and an end to child labour: You chose **Shorter hours and an end to child labour**. That is the answer to a different fact: What did reformers and labour unions of these years push for?
+  - If you chose Shorter hours and an end to child labor: You chose **Shorter hours and an end to child labor**. That is the answer to a different fact: What did reformers and labor unions of these years push for?
 - Taught on: “What four changes did” (one tap opens the card).
 
 **Drill item 11 of 61**
@@ -2607,28 +2607,28 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
 - The answer: **A bar on a group of people coming in, because of where they came from**. Why: It was the first major law of its kind, and Congress passed it. It is the one of the four that is about arrival and not about the Constitution.
   - If you chose A federal income tax: You chose **A federal income tax**. That is the answer to a different fact: What did the Sixteenth Amendment, from 1913, allow?
   - If you chose Senators elected by voters: You chose **Senators elected by voters**. That is the answer to a different fact: What did the Seventeenth Amendment, from 1913, change about senators?
-  - If you chose Shorter hours and an end to child labour: You chose **Shorter hours and an end to child labour**. That is the answer to a different fact: What did reformers and labour unions of these years push for?
+  - If you chose Shorter hours and an end to child labor: You chose **Shorter hours and an end to child labor**. That is the answer to a different fact: What did reformers and labor unions of these years push for?
 - Taught on: “What four changes did” (one tap opens the card).
 
 **Drill item 12 of 61**
 
-**You are asked, from memory:** What did reformers and labour unions of these years push for?
+**You are asked, from memory:** What did reformers and labor unions of these years push for?
 
 - A federal income tax
 - Senators elected by voters
 - A bar on a group of people coming in, because of where they came from
-- Shorter hours and an end to child labour
+- Shorter hours and an end to child labor
 
 **Shown as soon as you answer**
 
-- The answer: **Shorter hours and an end to child labour**. Why: This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.
+- The answer: **Shorter hours and an end to child labor**. Why: This fact is about people pushing for a change, and not about a law. The unit holds what they asked for, and says nothing about what came of it, because this course holds nothing about it.
   - If you chose A federal income tax: You chose **A federal income tax**. That is the answer to a different fact: What did the Sixteenth Amendment, from 1913, allow?
   - If you chose Senators elected by voters: You chose **Senators elected by voters**. That is the answer to a different fact: What did the Seventeenth Amendment, from 1913, change about senators?
   - If you chose A bar on a group of people coming in, because of where they came from: You chose **A bar on a group of people coming in, because of where they came from**. That is the answer to a different fact: What was the Chinese Exclusion Act of 1882?
@@ -2807,14 +2807,14 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **Shown as soon as you answer**
 
 - The answer: **The Great Depression**. Why: It is the trouble. Everything else in this group is what was done about it, who did it, and an example of what it left behind.
-  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called? Both are names for the same years, and each comes to mind when the other is asked. One is the long trouble of failed banks and lost jobs: **The Great Depression**. The other is the President’s answer to it: **The New Deal**. Is it the trouble itself, or what was done about it?
-  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programmes that answered the hard times of the 1930s?
-  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called? Both are names for the same years, and each comes to mind when the other is asked. One is the long trouble of failed banks and lost jobs: **The Great Depression**. The other is the President’s answer to it: **The New Deal**. Is it the trouble itself, or what was done about it?
+  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programs that answered the hard times of the 1930s?
+  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 **Drill item 21 of 61**
 
-**You are asked, from memory:** What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
+**You are asked, from memory:** What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
 
 - The Great Depression
 - The New Deal
@@ -2823,15 +2823,15 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **The New Deal**. Why: It is the answer to the trouble, and not the trouble itself. Its programmes were run by new federal offices, and the federal government took a far larger role in daily life.
+- The answer: **The New Deal**. Why: It is the answer to the trouble, and not the trouble itself. Its programs were run by new federal offices, and the federal government took a far larger role in daily life.
   - If you chose The Great Depression: You chose **The Great Depression**. That is the answer to a different fact: What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called? Both are names for the same years, and each comes to mind when the other is asked. One is the long trouble of failed banks and lost jobs: **The Great Depression**. The other is the President’s answer to it: **The New Deal**. Is it the trouble itself, or what was done about it?
-  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programmes that answered the hard times of the 1930s?
-  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programs that answered the hard times of the 1930s?
+  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 **Drill item 22 of 61**
 
-**You are asked, from memory:** Which President began the programmes that answered the hard times of the 1930s?
+**You are asked, from memory:** Which President began the programs that answered the hard times of the 1930s?
 
 - The Great Depression
 - The New Deal
@@ -2842,13 +2842,13 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 - The answer: **Franklin D. Roosevelt**. Why: The New Deal is his: it was President Franklin D. Roosevelt’s answer to the Depression.
   - If you chose The Great Depression: You chose **The Great Depression**. That is the answer to a different fact: What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?
-  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
-  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
+  - If you chose Social Security: You chose **Social Security**. That is the answer to a different fact: Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 **Drill item 23 of 61**
 
-**You are asked, from memory:** Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
+**You are asked, from memory:** Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?
 
 - The Great Depression
 - The New Deal
@@ -2857,10 +2857,10 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **Social Security**. Why: It is the programme named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.
+- The answer: **Social Security**. Why: It is the program named on the card that Ines found. It was run by a new federal office, one of the new offices that the New Deal added to the federal government.
   - If you chose The Great Depression: You chose **The Great Depression**. That is the answer to a different fact: What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?
-  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?
-  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programmes that answered the hard times of the 1930s?
+  - If you chose The New Deal: You chose **The New Deal**. That is the answer to a different fact: What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?
+  - If you chose Franklin D. Roosevelt: You chose **Franklin D. Roosevelt**. That is the answer to a different fact: Which President began the programs that answered the hard times of the 1930s?
 - Taught on: “The Depression and the New Deal” (one tap opens the card).
 
 **Drill item 24 of 61**
@@ -3413,7 +3413,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
   - If you chose France: You chose **France**. That is the answer to a different fact: Which country gave the Statue of Liberty to the United States?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 **Drill item 55 of 61**
@@ -3432,7 +3432,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
   - If you chose France: You chose **France**. That is the answer to a different fact: Which country gave the Statue of Liberty to the United States?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 **Drill item 56 of 61**
@@ -3451,7 +3451,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose France: You chose **France**. That is the answer to a different fact: Which country gave the Statue of Liberty to the United States?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 **Drill item 57 of 61**
@@ -3470,12 +3470,12 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
-  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbour does the Statue of Liberty stand?
+  - If you chose New York Harbor: You chose **New York Harbor**. That is the answer to a different fact: In which harbor does the Statue of Liberty stand?
 - Taught on: “Five names” (one tap opens the card).
 
 **Drill item 58 of 61**
 
-**You are asked, from memory:** In which harbour does the Statue of Liberty stand?
+**You are asked, from memory:** In which harbor does the Statue of Liberty stand?
 
 - Washington, D.C.
 - The Star-Spangled Banner
@@ -3485,7 +3485,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **New York Harbor**. Why: It stands in the same harbour as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.
+- The answer: **New York Harbor**. Why: It stands in the same harbor as Ellis Island, where about twelve million immigrants passed through before it closed in 1954.
   - If you chose Washington, D.C.: You chose **Washington, D.C.**. That is the answer to a different fact: What is the capital of the United States?
   - If you chose The Star-Spangled Banner: You chose **The Star-Spangled Banner**. That is the answer to a different fact: What is the national anthem called?
   - If you chose The Democratic Party and the Republican Party: You chose **The Democratic Party and the Republican Party**. That is the answer to a different fact: Which are the two major political parties?
@@ -3541,7 +3541,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 ### 100. What to carry away
 
-*Unit Ten · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 100 of 100*
+*Unit Ten · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 100 of 100*
 
 [reviewers only: card kind `recap`, id `recap-since`]
 
@@ -3566,7 +3566,7 @@ You have now met every fact in the unit, in its group. This card puts them toget
 - **What did the Sixteenth Amendment, from 1913, allow?** A federal income tax
 - **What did the Seventeenth Amendment, from 1913, change about senators?** Senators elected by voters
 - **What was the Chinese Exclusion Act of 1882?** A bar on a group of people coming in, because of where they came from
-- **What did reformers and labour unions of these years push for?** Shorter hours and an end to child labour
+- **What did reformers and labor unions of these years push for?** Shorter hours and an end to child labor
 
 **Seven years on one line**
 
@@ -3581,9 +3581,9 @@ You have now met every fact in the unit, in its group. This card puts them toget
 **The Depression and the New Deal**
 
 - **What is the long stretch that began in 1929, when banks failed and about a quarter of workers lost their jobs, called?** The Great Depression
-- **What is the President’s set of new programmes, begun in answer to the hard times of the 1930s, called?** The New Deal
-- **Which President began the programmes that answered the hard times of the 1930s?** Franklin D. Roosevelt
-- **Which programme, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?** Social Security
+- **What is the President’s set of new programs, begun in answer to the hard times of the 1930s, called?** The New Deal
+- **Which President began the programs that answered the hard times of the 1930s?** Franklin D. Roosevelt
+- **Which program, one of the new ones begun in answer to the hard times of the 1930s, is the example to remember?** Social Security
 
 **The Cold War in four names**
 
@@ -3642,7 +3642,7 @@ You have now met every fact in the unit, in its group. This card puts them toget
 - **What is the national anthem called?** The Star-Spangled Banner
 - **Which are the two major political parties?** The Democratic Party and the Republican Party
 - **Which country gave the Statue of Liberty to the United States?** France
-- **In which harbour does the Statue of Liberty stand?** New York Harbor
+- **In which harbor does the Statue of Liberty stand?** New York Harbor
 
 **The states and the territories**
 

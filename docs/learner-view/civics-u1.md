@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit One: Who makes the last decision
 
-*The first question, and the four kinds of decision-maker it sorts every case into.* Unit revision 2, built to lesson standard 1, status: draft.
+*The first question, and the four kinds of decision-maker it sorts every case into.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -18,7 +18,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any rule or ruling: whose decision is it?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 38*
 
 [reviewers only: card kind `orient`, id `orient-kind`]
 
@@ -51,11 +51,11 @@ The unit has six parts, and you can stop after any of them.
 5. The first question
 6. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The lawmakers of the whole country
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 38*
 
 [reviewers only: card kind `meet`, id `meet-congress`]
 
@@ -89,7 +89,7 @@ The answer, and so the name of the kind, is **“Congress, in the House or the S
 
 ### 3. Congress, in the House or the Senate: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 38*
 
 [reviewers only: card kind `again`, id `again-congress`]
 
@@ -122,7 +122,7 @@ The two stories share nothing else. One is about a tax and the other about loans
 
 ### 4. The story does not decide the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 38*
 
 [reviewers only: card kind `lens`, id `lens-kind`]
 
@@ -142,7 +142,7 @@ One more thing changes on purpose: how many parts of government a case names. Ma
 
 ### 5. Congress, in the House or the Senate: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-congress`]
 
@@ -166,7 +166,7 @@ And lawmakers of one state, or of a city, are not Congress. A state’s legislat
 
 "The Senate voted to..." "The House passed it." "The bill now goes to the Senate." "Congress has approved the money." "Lawmakers are voting on it this week."
 
-In your own life you meet this kind in the news, whenever a vote has just happened or is about to: a bill about taxes, about a programme, about a person who is up for a job. Whenever someone says a vote is coming, ask whose vote it is.
+In your own life you meet this kind in the news, whenever a vote has just happened or is about to: a bill about taxes, about a program, about a person who is up for a job. Whenever someone says a vote is coming, ask whose vote it is.
 
 **The question to ask when you spot it**
 
@@ -174,7 +174,7 @@ In your own life you meet this kind in the news, whenever a vote has just happen
 
 ### 6. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 38*
 
 [reviewers only: card kind `check`, id `check-congress`]
 
@@ -203,7 +203,7 @@ The pieces you can tap:
 
 ### 7. The offices that carry out the laws
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 38*
 
 [reviewers only: card kind `term`, id `term-agency`]
 
@@ -224,7 +224,7 @@ Some of these offices belong to the government of the whole country, which this 
 
 ### 8. The President, and the offices that carry out the laws of the whole country
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 38*
 
 [reviewers only: card kind `meet`, id `meet-president`]
 
@@ -258,7 +258,7 @@ The answer, and so the name of the kind, is **“The President or a federal agen
 
 ### 9. The President or a federal agency: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 38*
 
 [reviewers only: card kind `again`, id `again-president`]
 
@@ -291,7 +291,7 @@ One is an office doing a daily job and the other is the President giving an orde
 
 ### 10. The President or a federal agency: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-president`]
 
@@ -323,7 +323,7 @@ In your own life you meet this kind whenever a form, a notice or an inspection c
 
 ### 11. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 38*
 
 [reviewers only: card kind `check`, id `check-president`]
 
@@ -344,7 +344,7 @@ In your own life you meet this kind whenever a form, a notice or an inspection c
 
 ### 12. One law: the vote, then the office that applies it
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-congress-president`]
 
@@ -386,7 +386,7 @@ Does the story end on a vote by lawmakers, or on something the President or an o
 
 ### 13. A law that the President signs
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 38*
 
 [reviewers only: card kind `exception`, id `exc-signed`]
 
@@ -428,7 +428,7 @@ It chooses the lawmakers because the signature never changes the bill. If the an
 
 ### 14. A wrong idea: “the President signed it, so it is the President’s”
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 38*
 
 [reviewers only: card kind `refute`, id `refute-signed`]
 
@@ -447,7 +447,7 @@ So when you catch yourself crediting the President because of a signature, go ba
 
 ### 15. An agreement with another country, then the Senate
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 38*
 
 [reviewers only: card kind `exception`, id `exc-treaty`]
 
@@ -493,7 +493,7 @@ A signed law and a signed agreement give the same result for two different reaso
 
 ### 16. A judge, deciding a case someone brings
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 38*
 
 [reviewers only: card kind `meet`, id `meet-courts`]
 
@@ -511,7 +511,7 @@ Stripped of its story, the case is this:
 - The last thing in the case is the judge’s decision: the landlord must pay.
 - Nobody votes, no office issues a rule, and no state or city decides anything.
 
-What you are shown is a judge settling a quarrel. Hana and her landlord disagree, and neither of them can decide it for the other, so they hand the decision to someone else. A judge does not write laws and does not run programmes. A judge decides a case that somebody has brought.
+What you are shown is a judge settling a quarrel. Hana and her landlord disagree, and neither of them can decide it for the other, so they hand the decision to someone else. A judge does not write laws and does not run programs. A judge decides a case that somebody has brought.
 
 That is all a case of this kind is made of: a judge deciding, as the last thing, or someone asking a judge to decide. The judge can sit in a court of the whole country or in a court of a state. The kind does not depend on which court it is.
 
@@ -527,7 +527,7 @@ The answer, and so the name of the kind, is **“A judge, in any court”**. “
 
 ### 17. A judge, in any court: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 38*
 
 [reviewers only: card kind `again`, id `again-courts`]
 
@@ -539,17 +539,17 @@ The second case.
 
 *The boundary fence*
 
-> Mr Idowu says his fence is on his own land. His neighbour says it is two feet over the boundary. They could not agree, so on Monday the neighbour asked a judge to settle it.
+> Mr. Idowu says his fence is on his own land. His neighbor says it is two feet over the boundary. They could not agree, so on Monday the neighbor asked a judge to settle it.
 **You are asked:** In *The broken heater*, these words show it: “they each told their story to a judge, and the judge decided that the landlord must pay”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “Mr Idowu says his fence is on his own land”
-2. “His neighbour says it is two feet over the boundary”
-3. “on Monday the neighbour asked a judge to settle it”
+1. “Mr. Idowu says his fence is on his own land”
+2. “His neighbor says it is two feet over the boundary”
+3. “on Monday the neighbor asked a judge to settle it”
 
-**Shown as soon as you tap.** The words are “on Monday the neighbour asked a judge to settle it”.
-- If you tapped “Mr Idowu says his fence is on his own land”: That is one side of the quarrel. It does not tell you who will decide it.
-- If you tapped “His neighbour says it is two feet over the boundary”: That is the other side of the quarrel. It does not tell you who will decide it.
+**Shown as soon as you tap.** The words are “on Monday the neighbor asked a judge to settle it”.
+- If you tapped “Mr. Idowu says his fence is on his own land”: That is one side of the quarrel. It does not tell you who will decide it.
+- If you tapped “His neighbor says it is two feet over the boundary”: That is the other side of the quarrel. It does not tell you who will decide it.
 
 **What the two share**
 
@@ -560,7 +560,7 @@ The two quarrels share nothing else. One is about repairs and the other about la
 
 ### 18. A judge, in any court: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-courts`]
 
@@ -584,7 +584,7 @@ And a trial is not always a judge’s. A trial of an official held in the Senate
 
 "The judge ruled." "The court struck it down." "They are appealing." "The case was dismissed." "He asked a judge to decide."
 
-In your own life you meet this kind in a dispute with a landlord, a neighbour or a firm, and in any news about a trial or a ruling.
+In your own life you meet this kind in a dispute with a landlord, a neighbor or a firm, and in any news about a trial or a ruling.
 
 **The question to ask when you spot it**
 
@@ -592,7 +592,7 @@ In your own life you meet this kind in a dispute with a landlord, a neighbour or
 
 ### 19. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 19 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 19 of 38*
 
 [reviewers only: card kind `check`, id `check-courts`]
 
@@ -615,7 +615,7 @@ In your own life you meet this kind in a dispute with a landlord, a neighbour or
 
 ### 20. One law: the vote, then a judge asked about it
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-congress-courts`]
 
@@ -657,7 +657,7 @@ Who casts the deciding votes, or gives the ruling: lawmakers in the House or the
 
 ### 21. A trial that is held in the Senate
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 38*
 
 [reviewers only: card kind `exception`, id `exc-trial`]
 
@@ -697,7 +697,7 @@ This is easy to get wrong, because we are used to “trial” meaning a judge. W
 
 ### 22. An office’s decision, and a judge asked about it
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-president-courts`]
 
@@ -705,13 +705,13 @@ An office can make a decision that someone then takes to a judge. This card puts
 
 **Case A**
 
-> Mr Okoro applied to become a citizen. On Tuesday the immigration service sent him a letter refusing his application, saying that a form was missing from his papers. He says he sent it.
+> Mr. Okoro applied to become a citizen. On Tuesday the immigration service sent him a letter refusing his application, saying that a form was missing from his papers. He says he sent it.
 
 **Case B**
 
-> Mr Okoro applied to become a citizen, and the immigration service refused, saying that a form was missing from his papers. He says he sent it. On Friday he asked a judge to decide whether the form was really missing.
+> Mr. Okoro applied to become a citizen, and the immigration service refused, saying that a form was missing from his papers. He says he sent it. On Friday he asked a judge to decide whether the form was really missing.
 
-**What to compare.** Both cases are about Mr Okoro’s application. Compare one thing: whose decision does each story end on?
+**What to compare.** Both cases are about Mr. Okoro’s application. Compare one thing: whose decision does each story end on?
 
 **You are asked:** Which case gives the answer **“A judge, in any court”**? (Case A / Case B)
 
@@ -719,9 +719,9 @@ An office can make a decision that someone then takes to a judge. This card puts
 
 **Why this one and not the other**
 
-In Case A the story ends with a letter from the immigration service: it refuses Mr Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The answer is **“The President or a federal agency”**.
+In Case A the story ends with a letter from the immigration service: it refuses Mr. Okoro’s application and says why. An office has decided. Nobody has gone to a judge yet. The answer is **“The President or a federal agency”**.
 
-In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr Okoro asking a judge whether the form was really missing. The answer is **“A judge, in any court”**.
+In Case B the office’s refusal is in the story too, but as how the matter reached the judge. The story ends with Mr. Okoro asking a judge whether the form was really missing. The answer is **“A judge, in any court”**.
 
 The refusal is in both cases. In Case A it is the last decision, and in Case B it is how the case got there. What separates the two is what the story ends on.
 
@@ -739,7 +739,7 @@ Where does the story stop: on a decision by the President or an office, or on a 
 
 ### 23. An office’s rule, taken to a judge
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 38*
 
 [reviewers only: card kind `exception`, id `exc-rule`]
 
@@ -785,7 +785,7 @@ This shape is common: someone takes a rule to a judge. The rule comes first in t
 
 ### 24. The government of one state, or of a city, town or county in it
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 38*
 
 [reviewers only: card kind `meet`, id `meet-states`]
 
@@ -821,7 +821,7 @@ The answer, and so the name of the kind, is **“A state, city or county governm
 
 ### 25. A state, city or county government: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 38*
 
 [reviewers only: card kind `again`, id `again-states`]
 
@@ -854,7 +854,7 @@ One place is a city and the other is a state, and one rule is about a square and
 
 ### 26. A state, city or county government: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-states`]
 
@@ -863,7 +863,7 @@ You know what to point to for **“A state, city or county government”**. This
 **What it is usually like**
 
 - There is a government that covers one place, and it is named: “the city council of Marlow”, “the Dunmore state legislature”, “the county board”, “the governor of the state”, “the mayor”.
-- What these governments decide is much of daily life: public schools, driving rules, marriage licences, most crimes, renting a home, local streets, parking and buildings. These are mostly state and local matters, and they differ from state to state.
+- What these governments decide is much of daily life: public schools, driving rules, marriage licenses, most crimes, renting a home, local streets, parking and buildings. These are mostly state and local matters, and they differ from state to state.
 - The decision can be a vote, a rule from a mayor or a governor, or an order from one of the state’s or city’s own offices, such as a state health department.
 - The case can also end with a request: “asked the council”, “asked the governor”. A request to a state, a city or a county has the same answer as a decision by it.
 - A federal law or a court can be in the story. If so, it is how the matter got there, or what comes after. The case still ends with the decision of the state, the city or the county.
@@ -886,7 +886,7 @@ In your own life this is the kind that makes most of the rules you meet day to d
 
 ### 27. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 38*
 
 [reviewers only: card kind `check`, id `check-states`]
 
@@ -909,7 +909,7 @@ The pieces you can tap:
 
 ### 28. A judge and a city council, on one street
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-courts-states`]
 
@@ -917,7 +917,7 @@ A judge and a city can be in one story about one street. This card puts the two 
 
 **Case A**
 
-> Dana got a parking ticket on Elm Street. She says a tree hid the sign, so she asked a judge to cancel the ticket. The judge heard her on Monday and cancelled it.
+> Dana got a parking ticket on Elm Street. She says a tree hid the sign, so she asked a judge to cancel the ticket. The judge heard her on Monday and canceled it.
 
 **Case B**
 
@@ -951,7 +951,7 @@ Is the last decision made by a judge, whatever the court? Or is it made by a sta
 
 ### 29. A judge in a state’s own court
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 38*
 
 [reviewers only: card kind `exception`, id `exc-statejudge`]
 
@@ -959,7 +959,7 @@ The last card kept the two kinds tidy: a council on one side and a judge on the 
 
 *The dog rule*
 
-> The county of Hale has a rule that no household may keep more than three dogs. Mrs Lund keeps four, and the county told her to give one away. On Monday a judge in the state’s court heard both sides and ruled that she must give one dog away.
+> The county of Hale has a rule that no household may keep more than three dogs. Mrs. Lund keeps four, and the county told her to give one away. On Monday a judge in the state’s court heard both sides and ruled that she must give one dog away.
 
 The case is full of a county and a state: a county’s rule, a county’s order, and a judge in the state’s own court. A decision by the government of a state or a county is what you point to for **“A state, city or county government”**. Yet the answer for this case is **“A judge, in any court”**.
 
@@ -967,16 +967,16 @@ The case is full of a county and a state: a county’s rule, a county’s order,
 
 The pieces you can tap:
 1. “The county of Hale has a rule that no household may keep more than three dogs”
-2. “Mrs Lund keeps four, and the county told her to give one away”
+2. “Mrs. Lund keeps four, and the county told her to give one away”
 3. “a judge in the state’s court heard both sides and ruled that she must give one dog away”
 
 **Shown as soon as you tap.** The words are “a judge in the state’s court heard both sides and ruled that she must give one dog away”.
 - If you tapped “The county of Hale has a rule that no household may keep more than three dogs”: That is a rule made by a county. It is how the matter got here. It is not the last decision in the case.
-- If you tapped “Mrs Lund keeps four, and the county told her to give one away”: That is the county applying its rule. It comes before the last decision.
+- If you tapped “Mrs. Lund keeps four, and the county told her to give one away”: That is the county applying its rule. It comes before the last decision.
 
 **Why this is A judge, in any court and not A state, city or county government**
 
-Read who makes the last decision. The county made a rule and told Mrs Lund to give a dog away, and those came first. The last decision is the judge’s: the judge heard both sides and ruled that she must do it.
+Read who makes the last decision. The county made a rule and told Mrs. Lund to give a dog away, and those came first. The last decision is the judge’s: the judge heard both sides and ruled that she must do it.
 
 A judge in a state’s court is still a judge. The state’s own government is its lawmakers, its governor and its offices, and the judge is not one of them. The state did not decide this case. A judge did.
 
@@ -991,7 +991,7 @@ This holds the other way round too: a judge of the whole country’s courts and 
 
 ### 30. The same inspector, for the whole country or for one state
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-president-states`]
 
@@ -1033,7 +1033,7 @@ Whose government does the office or the official belong to: the whole country’
 
 ### 31. The same tax, voted by Congress or by a state
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-congress-states`]
 
@@ -1075,7 +1075,7 @@ Do the lawmakers in the case make rules for the whole country, or for one state,
 
 ### 32. A wrong idea: “the first part named is the one that decided”
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 38*
 
 [reviewers only: card kind `refute`, id `refute-first`]
 
@@ -1100,7 +1100,7 @@ The question asks for the last decision in the case, or the one it asks for. So 
 
 ### 33. The question you have been answering all along
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 38*
 
 [reviewers only: card kind `question`, id `q-kind`]
 
@@ -1157,7 +1157,7 @@ Some cases name two or three of the four. You have met the common shapes: a law 
 
 ### 34. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 38*
 
 [reviewers only: card kind `check`, id `check-kind`]
 
@@ -1188,7 +1188,7 @@ Some cases name two or three of the four. You have met the common shapes: a law 
 
 ### 35. A whole case, from the question to the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 38*
 
 [reviewers only: card kind `worked`, id `worked-doll`]
 
@@ -1238,7 +1238,7 @@ Here the questions and the likeness agree, so the answer stands. The question co
 
 ### 36. A second whole case, where the opening points the wrong way
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 38*
 
 [reviewers only: card kind `worked`, id `worked-bags`]
 
@@ -1338,7 +1338,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 3 of 39**
 
-> The President chose Ms Aldous to be a federal judge. On Wednesday the Senate voted to approve her, and she will start work next month.
+> The President chose Ms. Aldous to be a federal judge. On Wednesday the Senate voted to approve her, and she will start work next month.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1350,7 +1350,7 @@ The question is shown with all four of its answers, in order.
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Congress, in the House or the Senate.**” The last decision is a vote in the Senate on a person the President chose: “the Senate voted to approve her”. The President’s choice came first, and it is how the matter reached the Senate.
-  - Why not **“The President or a federal agency”**: Choosing Ms Aldous was the President’s act, and it can sound like the last decision. But the case reports the Senate’s vote, and that vote comes after the choice.
+  - Why not **“The President or a federal agency”**: Choosing Ms. Aldous was the President’s act, and it can sound like the last decision. But the case reports the Senate’s vote, and that vote comes after the choice.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above.
   - If you chose **A judge, in any court**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1380,7 +1380,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 5 of 39**
 
-> Mrs Fell’s landlord says she owes three months’ rent. She says she paid. On Monday a judge heard them both and ruled that she had paid.
+> Mrs. Fell’s landlord says she owes three months’ rent. She says she paid. On Monday a judge heard them both and ruled that she had paid.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1391,7 +1391,7 @@ The question is shown with all four of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A judge, in any court.**” The last decision is a judge’s: “a judge heard them both and ruled that she had paid”. The landlord and Mrs Fell are the two sides of a quarrel, and neither of them decides it.
+- If you are right: “Right: **A judge, in any court.**” The last decision is a judge’s: “a judge heard them both and ruled that she had paid”. The landlord and Mrs. Fell are the two sides of a quarrel, and neither of them decides it.
   - Why not **“A state, city or county government”**: Renting a home is a matter of state and local rules, and that can pull toward the state. But nobody in the case is making a rule. A judge is deciding a quarrel between two people.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1738,7 +1738,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 23 of 39**
 
-> A tenant says the noise from the flat above keeps her awake. She has asked a judge to order the upstairs tenant to stop playing music after ten at night.
+> A tenant says the noise from the apartment above keeps her awake. She has asked a judge to order the upstairs tenant to stop playing music after ten at night.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1750,7 +1750,7 @@ The question is shown with all four of its answers, in order.
 **Shown as soon as you answer**
 
 - If you are right: “Right: **A judge, in any court.**” The case ends with a request: “She has asked a judge to order the upstairs tenant to stop playing music after ten at night”. The decision has been put to a judge, so it is the judge’s.
-  - Why not **“A state, city or county government”**: A noise quarrel in a block of flats can sound like a matter for the town. But nobody in the case is making a rule. A tenant is asking a judge to decide.
+  - Why not **“A state, city or county government”**: A noise quarrel in an apartment building can sound like a matter for the town. But nobody in the case is making a rule. A tenant is asking a judge to decide.
 - If you miss: “The answer is **A judge, in any court.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty. In **“Congress, in the House or the Senate”** the deciders are lawmakers, who vote. In **“A judge, in any court”** the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with **“Congress, in the House or the Senate”**. Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?
   - If you chose **The President or a federal agency**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about one rule: an office or the President makes it, and someone then takes it to a judge. In **“The President or a federal agency”** the story ends with the President or an office deciding. In **“A judge, in any court”** it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge. Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?
@@ -1760,7 +1760,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 24 of 39**
 
-> Hairdressers in the state of Calder must hold a state licence. On Tuesday the Calder state legislature voted to lower the licence fee from $120 to $80.
+> Hairdressers in the state of Calder must hold a state license. On Tuesday the Calder state legislature voted to lower the license fee from $120 to $80.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1771,7 +1771,7 @@ The question is shown with all four of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A state, city or county government.**” The last decision is a vote by the lawmakers of one state: “the Calder state legislature voted to lower the licence fee from $120 to $80”. The licence is a state’s own.
+- If you are right: “Right: **A state, city or county government.**” The last decision is a vote by the lawmakers of one state: “the Calder state legislature voted to lower the license fee from $120 to $80”. The license is a state’s own.
   - Why not **“Congress, in the House or the Senate”**: Lowering a fee by a vote is just what the House and the Senate do. But these lawmakers belong to one state and set a fee that only that state’s hairdressers pay.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?
@@ -1804,7 +1804,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 26 of 39**
 
-> Ms Reyes was convicted of a federal crime and was serving a two-year sentence. On Friday the President pardoned her, forgiving the crime, and she left prison.
+> Ms. Reyes was convicted of a federal crime and was serving a two-year sentence. On Friday the President pardoned her, forgiving the crime, and she left prison.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1848,7 +1848,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 28 of 39**
 
-> Parents in Dalby say teenagers cause trouble in the town centre at night. They have asked the Dalby town council to set a curfew for anyone under sixteen.
+> Parents in Dalby say teenagers cause trouble in the town center at night. They have asked the Dalby town council to set a curfew for anyone under sixteen.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1916,7 +1916,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 31 of 39**
 
-> The President has chosen Ms Duran to be the country’s ambassador to Brennia. She spent the week meeting Brennian leaders to prepare. On Thursday the Senate was asked to vote on whether to approve her.
+> The President has chosen Ms. Duran to be the country’s ambassador to Brennia. She spent the week meeting Brennian leaders to prepare. On Thursday the Senate was asked to vote on whether to approve her.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -1927,7 +1927,7 @@ The question is shown with all four of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Congress, in the House or the Senate.**” The case ends by asking the Senate for a vote: “the Senate was asked to vote on whether to approve her”. The President’s choice and Ms Duran’s meetings came first, and are how the matter reached the Senate.
+- If you are right: “Right: **Congress, in the House or the Senate.**” The case ends by asking the Senate for a vote: “the Senate was asked to vote on whether to approve her”. The President’s choice and Ms. Duran’s meetings came first, and are how the matter reached the Senate.
   - Why not **“The President or a federal agency”**: The President chose her, and she spent the week dealing with another country. Both pull toward the President. But the case ends with the Senate being asked to decide.
 - If you miss: “The answer is **Congress, in the House or the Senate.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The President or a federal agency**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
@@ -1939,7 +1939,7 @@ The question is shown with all four of its answers, in order.
 
 **Drill item 32 of 39**
 
-> The House and the Senate passed a bill that gives every public school a free breakfast programme. On Monday the President refused to sign it, and sent it back to Congress with a note listing her objections.
+> The House and the Senate passed a bill that gives every public school a free breakfast program. On Monday the President refused to sign it, and sent it back to Congress with a note listing her objections.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -2119,7 +2119,7 @@ The question is shown with all four of its answers, in order.
 
 ### 37. What to carry away
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 38*
 
 [reviewers only: card kind `recap`, id `recap-kind`]
 
@@ -2156,7 +2156,7 @@ Who makes the last decision in the case, or is asked to make it?
 
 ### 38. Where would you meet this?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 38*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 38*
 
 [reviewers only: card kind `transfer`, id `transfer-kind`]
 
@@ -2298,7 +2298,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 6 of 12**
 
-> A law passed last year says that every employer must keep a record of the hours its workers work. On Monday the federal labour agency published the form employers must use and the date by which they must start.
+> A law passed last year says that every employer must keep a record of the hours its workers work. On Monday the federal labor agency published the form employers must use and the date by which they must start.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -2309,7 +2309,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **The President or a federal agency.**” The last decision is an office’s: “the federal labour agency published the form employers must use and the date by which they must start”. The law came first, and is how the matter reached the office. The case ends with what the office decided.
+- If you are right: “Right: **The President or a federal agency.**” The last decision is an office’s: “the federal labor agency published the form employers must use and the date by which they must start”. The law came first, and is how the matter reached the office. The case ends with what the office decided.
   - Why not **“Congress, in the House or the Senate”**: A law is in the story, and laws come from the House and the Senate. But the votes are a year old, and the case ends with the office’s form.
 - If you miss: “The answer is **The President or a federal agency.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: the “why not” line above. Then the lines from the card that compared the two: Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice. In **“Congress, in the House or the Senate”** the last decision is a vote by lawmakers. In **“The President or a federal agency”** it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with **“Congress, in the House or the Senate”**. Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?
@@ -2432,7 +2432,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 12 of 12**
 
-> An inspector from the Calder state health department visited a day-care centre on Monday and found two fire doors that would not open. The inspector ordered the centre closed until the doors are fixed.
+> An inspector from the Calder state health department visited a day-care center on Monday and found two fire doors that would not open. The inspector ordered the center closed until the doors are fixed.
 
 **You are asked:** Who makes the last decision in the case, or is asked to make it?
 
@@ -2443,7 +2443,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A state, city or county government.**” The last decision is an inspector’s, and the inspector works for a state: “An inspector from the Calder state health department” and “The inspector ordered the centre closed until the doors are fixed”. It is a state’s own office deciding about a centre in that state.
+- If you are right: “Right: **A state, city or county government.**” The last decision is an inspector’s, and the inspector works for a state: “An inspector from the Calder state health department” and “The inspector ordered the center closed until the doors are fixed”. It is a state’s own office deciding about a center in that state.
   - Why not **“The President or a federal agency”**: An inspector visits a building and orders it closed, and that is just what an inspector from an office of the whole country does. But this inspector works for a state, and it is the state’s own office.
 - If you miss: “The answer is **A state, city or county government.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Congress, in the House or the Senate**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax. In **“Congress, in the House or the Senate”** the lawmakers are the House and the Senate, and what they decide is for the whole country. In **“A state, city or county government”** the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone. Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?

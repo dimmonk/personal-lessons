@@ -1,6 +1,6 @@
 # Learner view: Psychology, Unit Two: One person’s reasoning
 
-*Five things a person’s reasoning can be doing, and how to tell which one you are looking at.* Unit revision 3, built to lesson standard 1, status: draft.
+*Five things a person’s reasoning can be doing, and how to tell which one you are looking at.* Unit revision 4, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Reasoning that protects, and reasoning that goes where the facts point
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 38*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -44,7 +44,7 @@ What does the reasoning do?
 - Adds a reason why what they did is fine after all → an excuse added after the act
 - Gives what is already spent as the reason to keep going → carrying on because of what is already spent
 - Tests evidence against their view harder than evidence for it → a harder test for unwelcome evidence
-- Chooses the answer first, then searches for support → the answer first, the search afterwards
+- Chooses the answer first, then searches for support → the answer first, the search afterward
 - Gives every fact the same test, and goes where the facts point → the same test for every fact, and the view goes where the facts point
 
 **The five things, and the name each will get**
@@ -52,7 +52,7 @@ What does the reasoning do?
 - An excuse added after the act: Cognitive dissonance reduction
 - Carrying on because of what is already spent: Sunk cost fallacy
 - A harder test for unwelcome evidence: Confirmation bias
-- The answer first, the search afterwards: Motivated reasoning
+- The answer first, the search afterward: Motivated reasoning
 - The same test for every fact, and the view goes where the facts point: Fair reasoning
 
 The unit has four parts, and you can stop after any of them.
@@ -62,11 +62,11 @@ The unit has four parts, and you can stop after any of them.
 3. Reasoning that goes where the facts point, and the question
 4. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The jolt when what you do does not fit what you believe
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 38*
 
 [reviewers only: card kind `term`, id `term-cd`]
 
@@ -89,7 +89,7 @@ There is also a third way, and it changes nothing real: giving a reason why the 
 
 ### 3. An excuse added after the act
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 38*
 
 [reviewers only: card kind `meet`, id `meet-dissonance`]
 
@@ -104,13 +104,13 @@ Stripped of its story, the case is this:
 - Maya did something: she ate the sauce, and finished it after she knew what was in it.
 - It does not fit something she believes and has told people: that she is vegan.
 - She did not stop, and she did not take back what she says about herself.
-- Afterwards she gave a reason why this plate does not count.
+- Afterward she gave a reason why this plate does not count.
 
 Maya took neither of the honest ways out. She did not put down her fork, and she did not say "I am not as strict as I tell people." She did the third thing: after the act, she gave a reason why the act is fine. "It hardly counts." In plain words, an excuse.
 
 The excuse works. The discomfort goes, and nothing real has changed: she ate the fish stock, and she still calls herself vegan. That is why people reach for it. It costs nothing.
 
-**What you must be able to point to.** Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count. This comes from one case so far. The next card tests it on a second case.
 
 **The question:** **“What does the reasoning do?”**
 
@@ -118,15 +118,15 @@ The excuse works. The discomfort goes, and nothing real has changed: she ate the
 
 The name for this is **Cognitive dissonance reduction**. You have met *cognitive dissonance*, the discomfort. "Reduction" means making something smaller. The name is for making the discomfort smaller by adding a reason, without changing what caused it.
 
-You may also hear this called “rationalising” or “making excuses”. Those words mean the same thing here, and from now on this unit uses one name: **Cognitive dissonance reduction**.
+You may also hear this called “rationalizing” or “making excuses”. Those words mean the same thing here, and from now on this unit uses one name: **Cognitive dissonance reduction**.
 
 ### 4. Cognitive dissonance reduction: the same thing in a different story
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 38*
 
 [reviewers only: card kind `again`, id `again-dissonance`]
 
-The last card gave you what to point to, from one case: something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count. Here is a second case with a completely different story.
+The last card gave you what to point to, from one case: something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count. Here is a second case with a completely different story.
 
 The first case again, in one line. *The fish-stock sauce*: “It was only a splash of fish stock. It hardly counts.”
 
@@ -134,7 +134,7 @@ The second case.
 
 *The careful driver*
 
-> Tom thinks of himself as a careful driver. On the motorway yesterday he drove at 90 in a 70 zone for most of an hour. When his passenger mentioned it afterwards, he said, 'Everyone drives at that speed there, so it doesn't really count as speeding.'
+> Tom thinks of himself as a careful driver. On the highway yesterday he drove at 90 in a 70 zone for most of an hour. When his passenger mentioned it afterward, he said, 'Everyone drives at that speed there, so it doesn't really count as speeding.'
 **You are asked:** In *The fish-stock sauce*, these words show it: “It was only a splash of fish stock. It hardly counts.” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
@@ -148,14 +148,14 @@ The pieces you can tap:
 
 **What the two share**
 
-Both people did something that does not fit what they believe about themselves. Both gave a reason afterwards for why it is fine: "It hardly counts", and "it doesn’t really count as speeding". Neither took anything back.
+Both people did something that does not fit what they believe about themselves. Both gave a reason afterward for why it is fine: "It hardly counts", and "it doesn’t really count as speeding". Neither took anything back.
 
-The two stories share nothing else. So this is not about food or about driving. It holds wherever something a person did does not fit what they believe, and they give a reason afterwards for why it is fine. That is what **Cognitive dissonance reduction** names.
+The two stories share nothing else. So this is not about food or about driving. It holds wherever something a person did does not fit what they believe, and they give a reason afterward for why it is fine. That is what **Cognitive dissonance reduction** names.
 
 
 ### 5. The story never decides the answer
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 38*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -173,7 +173,7 @@ From here on, the cases change their stories on purpose. Sometimes two cases wil
 
 ### 6. Cognitive dissonance reduction: what it is like
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-dissonance`]
 
@@ -185,7 +185,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 - The act may be over, like Maya’s dinner, or it may be a habit that is still going on. Either way the reason arrives after the person is already doing it.
 - The reason usually does one of four jobs. It shrinks the act ("it was only a small one"). It makes an exception ("this time is different"). It hands the act to circumstances ("I had no choice"). Or it points at other people ("everyone does it").
 - The person is usually sincere. They are not lying to you; the reason has already worked on them. That is why it tends to sound calm, not guilty.
-- Nothing real changes. The act tends to come round again, with the same reason or a fresh one.
+- Nothing real changes. The act tends to come around again, with the same reason or a fresh one.
 
 **What it is not**
 
@@ -203,30 +203,30 @@ You will also hear it in your own head, usually the morning after: the gym sessi
 
 ### 7. A question about a new case
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 38*
 
 [reviewers only: card kind `check`, id `check-dissonance`]
 
-> Priya believes in buying from local shops and often says so. Last night she ordered a week of groceries from a giant online retailer. 'One order makes no difference to anyone,' she told her sister.
+> Priya believes in buying from local stores and often says so. Last night she ordered a week of groceries from a giant online retailer. 'One order makes no difference to anyone,' she told her sister.
 
-**You are asked:** Which part of this case is the reason given afterwards for why it is fine? Tap it.
+**You are asked:** Which part of this case is the reason given afterward for why it is fine? Tap it.
 
 The pieces you can tap:
-1. “Priya believes in buying from local shops and often says so”
+1. “Priya believes in buying from local stores and often says so”
 2. “she ordered a week of groceries from a giant online retailer”
 3. “One order makes no difference to anyone”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘One order makes no difference to anyone’.” These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local shops. The answer for this case is **“Adds a reason why what they did is fine after all”**, and the name is **Cognitive dissonance reduction**.
+- If you are right: “Right: ‘One order makes no difference to anyone’.” These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local stores. The answer for this case is **“Adds a reason why what they did is fine after all”**, and the name is **Cognitive dissonance reduction**.
 - If you miss: “The words are ‘One order makes no difference to anyone’.” The same reason follows, and then a line about the piece you tapped:
-  - “Priya believes in buying from local shops and often says so”: That is what she believes. It was there before the order.
+  - “Priya believes in buying from local stores and often says so”: That is what she believes. It was there before the order.
   - “she ordered a week of groceries from a giant online retailer”: That is what she did. The reason comes after it.
 - Taught on: “An excuse added after the act” (one tap opens the card).
 
 ### 8. A wrong idea about the phrase cognitive dissonance
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 38*
 
 [reviewers only: card kind `refute`, id `refute-mismatch`]
 
@@ -247,7 +247,7 @@ So when someone’s words and actions do not fit, you have seen the conditions a
 
 ### 9. Carrying on because of what is already spent
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 38*
 
 [reviewers only: card kind `meet`, id `meet-sunkcost`]
 
@@ -255,45 +255,45 @@ So when someone’s words and actions do not fit, you have seen the conditions a
 
 *The renovation*
 
-> Dan and Aisha have spent two years and £40,000 renovating an old house. A builder tells them that finishing it properly will cost another £30,000, and that the finished house will be worth only about £10,000 more than it is now. '⟦We've put in two years and forty thousand pounds⟧,' Dan says. 'We can't stop now.'
+> Dan and Aisha have spent two years and $40,000 renovating an old house. A builder tells them that finishing it properly will cost another $30,000, and that the finished house will be worth only about $10,000 more than it is now. '⟦We've put in two years and forty thousand dollars⟧,' Dan says. 'We can't stop now.'
 
 Stripped of its story, the case is this:
 
-- Something has been spent that cannot be got back: two years and £40,000.
-- There is a next step to decide: stop, or spend another £30,000.
-- The next £30,000 would add only about £10,000 to what the house is worth.
-- The reason Dan gives for going on says nothing about the next £30,000. It is the two years and the £40,000.
+- Something has been spent that cannot be gotten back: two years and $40,000.
+- There is a next step to decide: stop, or spend another $30,000.
+- The next $30,000 would add only about $10,000 to what the house is worth.
+- The reason Dan gives for going on says nothing about the next $30,000. It is the two years and the $40,000.
 
-The £40,000 and the two years are gone whichever choice Dan and Aisha make now. Stopping does not lose them a second time, and going on does not bring them back.
+The $40,000 and the two years are gone whichever choice Dan and Aisha make now. Stopping does not lose them a second time, and going on does not bring them back.
 
-So the only thing their choice can change is what happens next: whether another £30,000 is worth what it buys. Dan’s reasoning never looks at that. It points backward, at what is already spent, and gives that as the reason to spend more.
+So the only thing their choice can change is what happens next: whether another $30,000 is worth what it buys. Dan’s reasoning never looks at that. It points backward, at what is already spent, and gives that as the reason to spend more.
 
-**What you must be able to point to.** Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it. This comes from one case so far. The next card tests it on a second case.
 
 **The question:** **“What does the reasoning do?”**
 
 **Its answer for a case like this one:** **“Gives what is already spent as the reason to keep going”**
 
-The name for this is **Sunk cost fallacy**. The name is built from two phrases. A "sunk cost" is money, time or effort that is already spent and cannot be got back. A "fallacy" is a mistake in reasoning that feels like a sound argument. This one feels very sound, because nobody likes waste.
+The name for this is **Sunk cost fallacy**. The name is built from two phrases. A "sunk cost" is money, time or effort that is already spent and cannot be gotten back. A "fallacy" is a mistake in reasoning that feels like a sound argument. This one feels very sound, because nobody likes waste.
 
 You may also hear this called “throwing good money after bad” or “escalation of commitment”. Those words mean the same thing here, and from now on this unit uses one name: **Sunk cost fallacy**.
 
 ### 10. Sunk cost fallacy: the same thing in a different story
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 38*
 
 [reviewers only: card kind `again`, id `again-sunkcost`]
 
-The renovation gave you what to point to: something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it. Here it is again with no money in it at all.
+The renovation gave you what to point to: something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it. Here it is again with no money in it at all.
 
-The first case again, in one line. *The renovation*: “We've put in two years and forty thousand pounds”
+The first case again, in one line. *The renovation*: “We've put in two years and forty thousand dollars”
 
 The second case.
 
 *The dull film*
 
 > An hour into a three-hour film, Lena is bored and so is her friend. 'We've already sat through an hour,' Lena whispers. 'We might as well see it out.'
-**You are asked:** In *The renovation*, these words show it: “We've put in two years and forty thousand pounds”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The renovation*, these words show it: “We've put in two years and forty thousand dollars”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Lena is bored and so is her friend”
@@ -306,14 +306,14 @@ The pieces you can tap:
 
 **What the two share**
 
-In both cases something is already spent and cannot be got back: two years and £40,000, or one hour. In both there is a next step still to be decided: £30,000 more, or two more hours. And in both the reason for going on is the part already spent, not the part still to come.
+In both cases something is already spent and cannot be gotten back: two years and $40,000, or one hour. In both there is a next step still to be decided: $30,000 more, or two more hours. And in both the reason for going on is the part already spent, not the part still to come.
 
 What is spent can be money, time or effort. It makes no difference which. That is what **Sunk cost fallacy** names.
 
 
 ### 11. Sunk cost fallacy: what it is like
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-sunkcost`]
 
@@ -324,7 +324,7 @@ As with **Cognitive dissonance reduction**, what you point to is not the whole p
 - It always sits at a choice about what comes next: go on or stop, buy more or sell, stay or leave. Without a next step to decide, what is spent has nothing to be the reason for.
 - The reason given points backward. Listen to the tense: "I’ve already…", "after all we’ve put in…", "we’ve come this far…". A reason that looks forward sounds different: "one more year and I am qualified".
 - Facts about the next step are often right there in the case: a builder’s figures, a forecast, a price. The person does not argue with them. Their reasoning never touches them, because the reason they give is about the past.
-- The more that has been spent, the stronger the pull. That is why it shows up around long projects, long relationships and long queues.
+- The more that has been spent, the stronger the pull. That is why it shows up around long projects, long relationships and long lines.
 - Underneath there is usually a wish not to have made a mistake. Stopping would mean saying that what was spent was wasted, and going on puts that moment off.
 
 **What it is not**
@@ -339,11 +339,11 @@ In your own life it tends to gather around things you no longer enjoy but have p
 
 **The question to ask when you spot it**
 
-"From where I stand today, is what I still have to put in worth what I will get for it?" For Dan and Aisha: is another £30,000 worth £10,000 of extra value? No. The £40,000 is not in that sum at all.
+"From where I stand today, is what I still have to put in worth what I will get for it?" For Dan and Aisha: is another $30,000 worth $10,000 of extra value? No. The $40,000 is not in that sum at all.
 
 ### 12. A question about a new case
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 38*
 
 [reviewers only: card kind `check`, id `check-sunkcost`]
 
@@ -363,7 +363,7 @@ In your own life it tends to gather around things you no longer enjoy but have p
 
 ### 13. A wrong idea: "if I stop now, everything I put in is wasted"
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 38*
 
 [reviewers only: card kind `refute`, id `refute-waste`]
 
@@ -382,7 +382,7 @@ The only thing still in your hands is what you spend next. So the useful questio
 
 ### 14. Cognitive dissonance reduction or Sunk cost fallacy: telling them apart
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 14 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-dissonance-sunkcost`]
 
@@ -390,11 +390,11 @@ You have met both names on their own. They are easy to mix up, because both look
 
 **Case A**
 
-> Rosa paid £80 for a concert ticket. On the night she has a fever and it is snowing. 'I paid eighty pounds for this,' she says, pulling on her coat. 'I'm going.'
+> Rosa paid $80 for a concert ticket. On the night she has a fever and it is snowing. 'I paid eighty dollars for this,' she says, pulling on her coat. 'I'm going.'
 
 **Case B**
 
-> Rosa told her friends for weeks that she would never pay a reseller's price for a concert. Then she paid a reseller £200 for a ticket. 'It's a once-in-a-lifetime show,' she says. 'That makes it different.'
+> Rosa told her friends for weeks that she would never pay a reseller's price for a concert. Then she paid a reseller $200 for a ticket. 'It's a once-in-a-lifetime show,' she says. 'That makes it different.'
 
 **What to compare.** Both cases are about Rosa and the price of a concert ticket. Compare one thing: the reason she gives. In one case it says that something she did is fine. In the other it gives money already spent as the reason for her next step.
 
@@ -404,7 +404,7 @@ You have met both names on their own. They are easy to mix up, because both look
 
 **Why this one and not the other**
 
-In Case A the £80 is spent, and there is a next step to decide: go out with a fever, or stay in. The reason Rosa gives for going is the £80. The answer is **“Gives what is already spent as the reason to keep going”**, and the case is **Sunk cost fallacy**.
+In Case A the $80 is spent, and there is a next step to decide: go out with a fever, or stay in. The reason Rosa gives for going is the $80. The answer is **“Gives what is already spent as the reason to keep going”**, and the case is **Sunk cost fallacy**.
 
 In Case B Rosa has done something she said she would never do: she paid a reseller. The reason she gives ("a once-in-a-lifetime show") is not a reason for any next step. It says the purchase is fine. The answer is **“Adds a reason why what they did is fine after all”**, and the case is **Cognitive dissonance reduction**.
 
@@ -418,7 +418,7 @@ Read the reason the person gives. Does it say that something they did is fine or
 |---|---|---|
 | What kind of thing is this? | One person’s reasoning | One person’s reasoning |
 | What does the reasoning do? | Adds a reason why what they did is fine after all | Gives what is already spent as the reason to keep going |
-| What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count | Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it |
+| What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count | Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it |
 
 
 *End of part 1. You can stop here; your place is kept. Next: part 2, Reasoning about evidence.*
@@ -429,28 +429,28 @@ Read the reason the person gives. Does it say that something they did is fine or
 
 ### 15. A harder test for unwelcome evidence
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 38*
 
 [reviewers only: card kind `meet`, id `meet-confbias`]
 
 The first two names were about a person explaining something they did or spent. The next two are about something different: a person dealing with evidence. The question in the person’s mind is no longer "was what I did all right?" but "what is true?" or "which should I choose?"
 
-*The one-way system*
+*The one-way street plan*
 
-> Greg is sure that his town's new one-way system has made traffic worse. When a neighbour says her drive to work now takes longer, Greg says, 'Exactly. That proves it.' When the council publishes a count showing that journeys are four minutes shorter on average, Greg says, 'Who did the counting? When? I'd want to know how they measured that.' ⟦He asked his neighbour none of those questions⟧.
+> Greg is sure that his town's new one-way street plan has made traffic worse. When a neighbor says her drive to work now takes longer, Greg says, 'Exactly. That proves it.' When the council publishes a count showing that trips are four minutes shorter on average, Greg says, 'Who did the counting? When? I'd want to know how they measured that.' ⟦He asked his neighbor none of those questions⟧.
 
 Stripped of its story, the case is this:
 
-- Greg already has a view: the one-way system has made traffic worse.
-- Two pieces of evidence arrive. One is for his view: the neighbour’s longer drive. One is against it: the council’s count.
+- Greg already has a view: the one-way street plan has made traffic worse.
+- Two pieces of evidence arrive. One is for his view: the neighbor’s longer drive. One is against it: the council’s count.
 - He accepts the first without a single question.
 - He meets the second with three questions: who counted, when, and how.
 
-Greg’s questions are good ones. A count can be done badly, and it is fair to ask how it was done. But one neighbour’s drive is much weaker evidence than a count of many journeys, and it was asked nothing at all.
+Greg’s questions are good ones. A count can be done badly, and it is fair to ask how it was done. But one neighbor’s drive is much weaker evidence than a count of many journeys, and it was asked nothing at all.
 
 That is the whole of it: a harder test for one side. Evidence for the view walks straight in. Evidence against it has to answer questions first. A person who keeps doing this can only become more sure, whatever is true, because nothing unwelcome ever gets through.
 
-Notice what Greg is not doing. He has not set out to find anything. The neighbour’s remark and the council’s count came to him, and he judged each as it arrived.
+Notice what Greg is not doing. He has not set out to find anything. The neighbor’s remark and the council’s count came to him, and he judged each as it arrived.
 
 **What you must be able to point to.** A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got. This comes from one case so far. The next card tests it on a second case.
 
@@ -458,46 +458,46 @@ Notice what Greg is not doing. He has not set out to find anything. The neighbou
 
 **Its answer for a case like this one:** **“Tests evidence against their view harder than evidence for it”**
 
-The name for this is **Confirmation bias**: a lean towards whatever confirms what you already think.
+The name for this is **Confirmation bias**: a lean toward whatever confirms what you already think.
 
 ### 16. Confirmation bias: the same thing in a different story
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 38*
 
 [reviewers only: card kind `again`, id `again-confbias`]
 
-The one-way system gave you what to point to: a view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got. Here is the same thing in a football crowd.
+The one-way street plan gave you what to point to: a view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got. Here is the same thing in a soccer crowd.
 
-The first case again, in one line. *The one-way system*: “He asked his neighbour none of those questions”
+The first case again, in one line. *The one-way street plan*: “He asked his neighbor none of those questions”
 
 The second case.
 
-*The striker*
+*The forward*
 
-> Nadia thinks the new striker is the best signing her club has made in years. After a match in which he scores, she posts: 'Told you. Class.' After three matches in which he does not score, she says the pitch was poor, the passes to him were terrible, and three games are too few to judge anyone. One game was enough when he scored.
-**You are asked:** In *The one-way system*, these words show it: “He asked his neighbour none of those questions”. Which words show the same thing in this case? Tap them.
+> Nadia thinks the new forward is the best signing her club has made in years. After a game in which he scores, she posts: 'Told you. Pure class.' After three games in which he does not score, she says the field was poor, the passes to him were terrible, and three games are too few to judge anyone. One game was enough when he scored.
+**You are asked:** In *The one-way street plan*, these words show it: “He asked his neighbor none of those questions”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “Nadia thinks the new striker is the best signing her club has made in years”
-2. “she posts: 'Told you. Class.'”
+1. “Nadia thinks the new forward is the best signing her club has made in years”
+2. “she posts: 'Told you. Pure class.'”
 3. “three games are too few to judge anyone”
 4. “One game was enough when he scored”
 
 **Shown as soon as you tap.** The words are “One game was enough when he scored”.
-- If you tapped “Nadia thinks the new striker is the best signing her club has made in years”: That is the view she starts with. Holding a view is not **Confirmation bias**.
-- If you tapped “she posts: 'Told you. Class.'”: That is the evidence for her view going straight in. You need the other side as well to see that one side gets a harder test.
+- If you tapped “Nadia thinks the new forward is the best signing her club has made in years”: That is the view she starts with. Holding a view is not **Confirmation bias**.
+- If you tapped “she posts: 'Told you. Pure class.'”: That is the evidence for her view going straight in. You need the other side as well to see that one side gets a harder test.
 - If you tapped “three games are too few to judge anyone”: That is the test she sets for the bad games. On its own it could be a fair one. The next sentence is what shows it was never applied to the good game.
 
 **What the two share**
 
-Greg and Nadia each hold a view. Each meets evidence for it and evidence against it. Each lets the evidence for it in untested (a neighbour’s drive, one goal) and sets a test for the evidence against it (who did the counting? three games are too few).
+Greg and Nadia each hold a view. Each meets evidence for it and evidence against it. Each lets the evidence for it in untested (a neighbor’s drive, one goal) and sets a test for the evidence against it (who did the counting? three games are too few).
 
 The test may even be a fair one. What is wrong is that only one side has to sit it. That is what **Confirmation bias** names.
 
 
 ### 17. Confirmation bias: what it is like
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-confbias`]
 
@@ -513,7 +513,7 @@ What you point to is the harder test for one side. Here is the rest of the pictu
 
 **What it is not**
 
-Testing evidence is not **Confirmation bias**. Asking where a number came from is good practice. The name applies only when the two sides are tested differently. If Greg had put the same three questions to his neighbour, he would have been testing both sides the same way, and that is the opposite of this name.
+Testing evidence is not **Confirmation bias**. Asking where a number came from is good practice. The name applies only when the two sides are tested differently. If Greg had put the same three questions to his neighbor, he would have been testing both sides the same way, and that is the opposite of this name.
 
 **Where you will hear it**
 
@@ -523,11 +523,11 @@ In your own life it is easiest to catch in what you pass on to friends: the arti
 
 **The question to ask when you spot it**
 
-"Have I put this same question to the evidence on my own side?" If Greg asks who counted the journeys, he should also ask how his neighbour timed her drive.
+"Have I put this same question to the evidence on my own side?" If Greg asks who counted the journeys, he should also ask how his neighbor timed her drive.
 
 ### 18. A question about a new case
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 38*
 
 [reviewers only: card kind `check`, id `check-confbias`]
 
@@ -547,9 +547,9 @@ In your own life it is easiest to catch in what you pass on to friends: the arti
   - If you chose **Gives what is already spent as the reason to keep going**: Give that answer when a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring. This case shows something else: evidence for the person’s view and evidence against it are both in the case, and the evidence against it is asked questions, or held to a standard, that the evidence for it never was.
 - Taught on: “A harder test for unwelcome evidence” (one tap opens the card).
 
-### 19. The answer first, the search afterwards
+### 19. The answer first, the search afterward
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 38*
 
 [reviewers only: card kind `meet`, id `meet-motivated`]
 
@@ -565,11 +565,11 @@ Stripped of its story, the case is this:
 - There is a search meant to settle it: four interviews.
 - Carol chose before the search began.
 - During the search she wrote down only what supported her choice.
-- Afterwards she presented her choice as the result of the search.
+- Afterward she presented her choice as the result of the search.
 
 Interviews are meant to work in one direction: you look first, and the answer comes out at the end. Carol ran hers backwards. She had the answer first, so the only thing the interviews could do was supply support for it.
 
-Greg, in the one-way system, also had his view before the council’s count arrived. So "had a view first" cannot be the difference between the two. The difference is what the person is doing. Greg was not looking for anything; evidence came to him and he judged it. Carol set out to look. Her interviews were a search that was supposed to give the answer, and she had chosen the answer before the search began.
+Greg, in the one-way street plan, also had his view before the council’s count arrived. So "had a view first" cannot be the difference between the two. The difference is what the person is doing. Greg was not looking for anything; evidence came to him and he judged it. Carol set out to look. Her interviews were a search that was supposed to give the answer, and she had chosen the answer before the search began.
 
 So put this to a case like Carol’s. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began? When the answer to both is yes, nothing in the search could have changed the outcome. A search that cannot change the answer only collects support.
 
@@ -583,7 +583,7 @@ The name for this is **Motivated reasoning**. "Motivated" because what steers th
 
 ### 20. Motivated reasoning: the same thing in a different story
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 38*
 
 [reviewers only: card kind `again`, id `again-motivated`]
 
@@ -607,18 +607,18 @@ The pieces you can tap:
 **Shown as soon as you tap.** The words are “decided she would buy the red convertible the moment she saw it”.
 - If you tapped “she read the owners' club forum for that model”: That is the search. What you are looking for is what came before it.
 - If you tapped “She did not open the reliability survey her brother sent her”: That shows the search keeping away from trouble. It follows from the answer having been chosen; it is not the choosing.
-- If you tapped “I've looked into it properly”: That is how she describes the search afterwards. What you are looking for is what came before it.
+- If you tapped “I've looked into it properly”: That is how she describes the search afterward. What you are looking for is what came before it.
 
 **What the two share**
 
-Carol and Ines each chose first and searched second. Each then went where support was likely to be found (the favoured candidate’s good answers, the owners’ club) and stayed away from where it was not. Each ended by describing the search as if it had produced the answer.
+Carol and Ines each chose first and searched second. Each then went where support was likely to be found (the favored candidate’s good answers, the owners’ club) and stayed away from where it was not. Each ended by describing the search as if it had produced the answer.
 
 Ines calls her search "research", and Carol’s was a round of interviews. Reading, asking, testing, interviewing, getting prices: whatever form it takes, it is the search. The answer first, then a search that collects support for it: that is what **Motivated reasoning** names.
 
 
 ### 21. Motivated reasoning: what it is like
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-motivated`]
 
@@ -647,11 +647,11 @@ In your own life, look at the evening before a purchase you have already set you
 
 ### 22. A question about a new case
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 38*
 
 [reviewers only: card kind `check`, id `check-motivated`]
 
-> Before the family meeting about where to go on holiday, Raj has made up his mind: Portugal. At the meeting he reads out the weather forecast for Portugal and the best review of the villa he likes. He leaves in his bag the price comparison the family asked him to bring.
+> Before the family meeting about where to go on vacation, Raj has made up his mind: Portugal. At the meeting he reads out the weather forecast for Portugal and the best review of the villa he likes. He leaves in his bag the price comparison the family asked him to bring.
 
 **The question:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
 
@@ -662,16 +662,16 @@ In your own life, look at the evening before a purchase you have already set you
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Chooses the answer first, then searches for support.**” The family meeting is the search that was supposed to settle where to go, and the answer came before it: “Before the family meeting about where to go on holiday, Raj has made up his mind”. What he brings to the meeting is support for it, and the one thing that might go against it stays in his bag. The name that goes with this answer is **Motivated reasoning**.
+- If you are right: “Right: **Chooses the answer first, then searches for support.**” The family meeting is the search that was supposed to settle where to go, and the answer came before it: “Before the family meeting about where to go on vacation, Raj has made up his mind”. What he brings to the meeting is support for it, and the one thing that might go against it stays in his bag. The name that goes with this answer is **Motivated reasoning**.
 - If you miss: “The answer is **Chooses the answer first, then searches for support.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Adds a reason why what they did is fine after all**: Give that answer when the person has done something that does not fit what they believe or have said, and afterwards they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong. This case shows something else: the person sets out on a search to settle a choice or a question (asking, reading, testing, interviewing), the case shows the answer was chosen before that search began, and the search collects only what supports it.
+  - If you chose **Adds a reason why what they did is fine after all**: Give that answer when the person has done something that does not fit what they believe or have said, and afterward they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong. This case shows something else: the person sets out on a search to settle a choice or a question (asking, reading, testing, interviewing), the case shows the answer was chosen before that search began, and the search collects only what supports it.
   - If you chose **Gives what is already spent as the reason to keep going**: Give that answer when a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring. This case shows something else: the person sets out on a search to settle a choice or a question (asking, reading, testing, interviewing), the case shows the answer was chosen before that search began, and the search collects only what supports it.
   - If you chose **Tests evidence against their view harder than evidence for it**: **Confirmation bias** would show Raj giving evidence against his view a harder test as it turned up. He does not test the price comparison at all; he keeps it out. And the case shows you the earlier thing: the answer was chosen before the meeting began.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 ### 23. Confirmation bias or Motivated reasoning: telling them apart
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-confbias-motivated`]
 
@@ -679,7 +679,7 @@ These two are the hardest pair in the unit. In both, a person is harder on evide
 
 **Case A**
 
-> On Friday, Sam decided to hire his cousin's firm to build the extension. On Saturday he 'got quotes': he phoned two other builders, asked each of them one question, and noted that one sounded rushed and the other was vague about dates. 'I've compared three firms,' he told his wife. 'My cousin's is the best.'
+> On Friday, Sam decided to hire his cousin's firm to build the extension. On Saturday he 'got quotes': he called two other builders, asked each of them one question, and noted that one sounded rushed and the other was vague about dates. 'I've compared three firms,' he told his wife. 'My cousin's is the best.'
 
 **Case B**
 
@@ -712,7 +712,7 @@ Did the person set out on a search to settle something? If they did, can you poi
 
 ### 24. When a case shows both
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 38*
 
 [reviewers only: card kind `exception`, id `exc-both`]
 
@@ -750,7 +750,7 @@ The answer is chosen this way on purpose, and it is worth knowing that the choic
 
 ### 25. One man, one habit, two names
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-dissonance-confbias`]
 
@@ -788,7 +788,7 @@ Is the person explaining something they did, or testing evidence about what is t
 |---|---|---|
 | What kind of thing is this? | One person’s reasoning | One person’s reasoning |
 | What does the reasoning do? | Adds a reason why what they did is fine after all | Tests evidence against their view harder than evidence for it |
-| What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count | A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got |
+| What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count | A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got |
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, Reasoning that goes where the facts point, and the question.*
@@ -799,15 +799,15 @@ Is the person explaining something they did, or testing evidence about what is t
 
 ### 26. The same test for every fact, and the view goes where the facts point
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 38*
 
 [reviewers only: card kind `meet`, id `meet-fair`]
 
 Four names so far, and in every one, nothing the facts said made any difference. The fifth name is for the case where the facts do make the difference. You need it as much as the others: without it, every change of mind looks suspicious and every firm view looks like a fault.
 
-*The evening matches*
+*The night games*
 
-> For years Ben told his football club's committee that evening matches under floodlights would bring bigger crowds. The club tried it for a season. Then the attendance figures came in: crowds were smaller at every evening match. 'I wanted this to work,' Ben told the committee. '⟦It didn't. I was wrong.⟧'
+> For years Ben told his soccer club's committee that night games under the lights would bring bigger crowds. The club tried it for a season. Then the attendance figures came in: crowds were smaller at every night game. 'I wanted this to work,' Ben told the committee. '⟦It didn't. I was wrong.⟧'
 
 Stripped of its story, the case is this:
 
@@ -818,7 +818,7 @@ Stripped of its story, the case is this:
 
 Set this beside the cases you have met. Ben had every reason to protect his view: it was his idea, and he had pushed for it. Greg, in the same position, asked who did the counting. Ben read the count and accepted what it showed.
 
-Here the reasoning runs in the direction it is meant to. The figures were bad news for Ben, and they got the same test good news would have got. His view went where they pointed. Nothing is being protected.
+Here the reasoning runs in the direction it is meant to. The figures were bad news for Ben, and they got the same test good news would have gotten. His view went where they pointed. Nothing is being protected.
 
 In Ben’s case the facts pointed away from his view, so it changed. That is the easiest form to see. But the name is not for the change. It is for the fair test, and a fair test can also leave a view where it was.
 
@@ -834,30 +834,30 @@ You may also hear this called “keeping an open mind”. That means the same th
 
 ### 27. Fair reasoning: the same thing in a different story
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 38*
 
 [reviewers only: card kind `again`, id `again-fair`]
 
 Ben’s case gave you what to point to: facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it. Ben’s view changed. Here is a second case where the view stays, and the reasoning is the same.
 
-The first case again, in one line. *The evening matches*: “It didn't. I was wrong.”
+The first case again, in one line. *The night games*: “It didn't. I was wrong.”
 
 The second case.
 
 *The twelve prices*
 
-> Pat has always said the corner shop is cheaper than the supermarket. Her son says that cannot be true. So Pat writes down what the same twelve things cost in both shops on the same day. The corner shop comes out £3 cheaper. 'Then I'll keep going there,' she says. 'If it had come out the other way, I'd have switched.'
-**You are asked:** In *The evening matches*, these words show it: “It didn't. I was wrong.” Which words show the same thing in this case? Tap them.
+> Pat has always said the corner store is cheaper than the supermarket. Her son says that cannot be true. So Pat writes down what the same twelve things cost in both stores on the same day. The corner store comes out $3 cheaper. 'Then I'll keep going there,' she says. 'If it had come out the other way, I'd have switched.'
+**You are asked:** In *The night games*, these words show it: “It didn't. I was wrong.” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “Pat has always said the corner shop is cheaper than the supermarket”
-2. “writes down what the same twelve things cost in both shops on the same day”
+1. “Pat has always said the corner store is cheaper than the supermarket”
+2. “writes down what the same twelve things cost in both stores on the same day”
 3. “Then I'll keep going there”
 4. “If it had come out the other way, I'd have switched”
 
 **Shown as soon as you tap.** The words are “If it had come out the other way, I'd have switched”.
-- If you tapped “Pat has always said the corner shop is cheaper than the supermarket”: That is the view she starts with. Having a view first is not a fault.
-- If you tapped “writes down what the same twelve things cost in both shops on the same day”: That is the test, and it is a fair one: the same things, the same day, both shops. The words asked for are the ones that show her view going wherever the result points.
+- If you tapped “Pat has always said the corner store is cheaper than the supermarket”: That is the view she starts with. Having a view first is not a fault.
+- If you tapped “writes down what the same twelve things cost in both stores on the same day”: That is the test, and it is a fair one: the same things, the same day, both stores. The words asked for are the ones that show her view going wherever the result points.
 - If you tapped “Then I'll keep going there”: That is where she ends up, and where a person ends up never decides the name. The next sentence shows why she ends up there.
 
 **What the two share**
@@ -869,7 +869,7 @@ So **Fair reasoning** is not the same thing as changing your mind. A view that i
 
 ### 28. Fair reasoning: what it is like
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 38*
 
 [reviewers only: card kind `portrait`, id `portrait-fair`]
 
@@ -880,7 +880,7 @@ What you point to, in short: the same test for every fact, and the view goes whe
 - The person can say what settled it, and it is something that can be checked: figures, a result, an event. "I just see it differently now" is not that.
 - When the view changes, it often costs them something: a public position, pride, money already spent. That cost is a good sign that the facts are doing the work.
 - When the view stays, the person can usually say what would have changed it. Pat could: "If it had come out the other way, I’d have switched."
-- Facts the person does not like get the same test that facts they like would have got. Sometimes that means checking them carefully. Checking is fine. A harder test for one side is not.
+- Facts the person does not like get the same test that facts they like would have gotten. Sometimes that means checking them carefully. Checking is fine. A harder test for one side is not.
 - It can end on the answer the person was hoping for. What separates it from **Motivated reasoning** is the order: the search came first, and it could have come out the other way.
 - It also covers choices about things already spent. A person who asks what the next step would cost and what it would bring, and goes by the answer, is reasoning fairly whether they stop or carry on.
 
@@ -898,15 +898,15 @@ In your own life, think of the last time you said "I was wrong" and meant it, an
 
 **The question to ask when you spot it**
 
-"What fact settled this, and did it get the same test it would have got if it had pointed the other way?" When the answer is yes, there is nothing to correct, and treating it as a fault would be a mistake of its own.
+"What fact settled this, and did it get the same test it would have gotten if it had pointed the other way?" When the answer is yes, there is nothing to correct, and treating it as a fault would be a mistake of its own.
 
 ### 29. A question about a new case
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 38*
 
 [reviewers only: card kind `check`, id `check-fair`]
 
-> Farah told her book club for a month that her favourite author's new novel would be a masterpiece. She read it over the weekend. 'It's a mess,' she told them on Monday. 'I was wrong about this one.'
+> Farah told her book club for a month that her favorite author's new novel would be a masterpiece. She read it over the weekend. 'It's a mess,' she told them on Monday. 'I was wrong about this one.'
 
 **The question:** **“What does the reasoning do?”** Which of the answers you have met so far fits this case?
 
@@ -920,15 +920,15 @@ In your own life, think of the last time you said "I was wrong" and meant it, an
 
 - If you are right: “Right: **Gives every fact the same test, and goes where the facts point.**” Farah had a view and had said it out loud. The book itself was the evidence, and it went against her view. She gave it no harder test for that, and her view went where it pointed: “I was wrong about this one”. The name that goes with this answer is **Fair reasoning**.
 - If you miss: “The answer is **Gives every fact the same test, and goes where the facts point.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Adds a reason why what they did is fine after all**: Give that answer when the person has done something that does not fit what they believe or have said, and afterwards they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong. This case shows something else: facts about the matter are in the case, the person gives them the same test whichever way they point, and the view or plan ends up where they point. It may change, or it may stay because the facts support it.
+  - If you chose **Adds a reason why what they did is fine after all**: Give that answer when the person has done something that does not fit what they believe or have said, and afterward they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong. This case shows something else: facts about the matter are in the case, the person gives them the same test whichever way they point, and the view or plan ends up where they point. It may change, or it may stay because the facts support it.
   - If you chose **Gives what is already spent as the reason to keep going**: Give that answer when a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring. This case shows something else: facts about the matter are in the case, the person gives them the same test whichever way they point, and the view or plan ends up where they point. It may change, or it may stay because the facts support it.
-  - If you chose **Tests evidence against their view harder than evidence for it**: **Confirmation bias** would have Farah finding reasons why this evidence does not count: a rushed edition, the wrong mood. She gave it no harder test than a book she liked would have got.
+  - If you chose **Tests evidence against their view harder than evidence for it**: **Confirmation bias** would have Farah finding reasons why this evidence does not count: a rushed edition, the wrong mood. She gave it no harder test than a book she liked would have gotten.
   - If you chose **Chooses the answer first, then searches for support**: Give that answer when the person sets out on a search to settle a choice or a question (asking, reading, testing, interviewing), the case shows the answer was chosen before that search began, and the search collects only what supports it. This case shows something else: facts about the matter are in the case, the person gives them the same test whichever way they point, and the view or plan ends up where they point. It may change, or it may stay because the facts support it.
 - Taught on: “The same test for every fact, and the view goes where the facts point” (one tap opens the card).
 
 ### 30. Confirmation bias or Fair reasoning: telling them apart
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-confbias-fair`]
 
@@ -971,7 +971,7 @@ Were the questions put to the evidence against the view also put to the evidence
 
 ### 31. Sunk cost fallacy or Fair reasoning: telling them apart
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 38*
 
 [reviewers only: card kind `lookalike`, id `look-sunkcost-fair`]
 
@@ -979,11 +979,11 @@ The picture of **Sunk cost fallacy** said that carrying on is not the fallacy. H
 
 **Case A**
 
-> Mei opened a market stall selling her own ceramics a year ago. It has lost money every month, and the pitch fee for next year is due. 'I've put a year and most of my savings into this,' she says. 'I'm not walking away from that.' She pays the fee.
+> Mei opened a market stall selling her own ceramics a year ago. It has lost money every month, and the booth fee for next year is due. 'I've put a year and most of my savings into this,' she says. 'I'm not walking away from that.' She pays the fee.
 
 **Case B**
 
-> Mei opened a market stall selling her own ceramics a year ago. It lost money for months, and the pitch fee for next year is due. She goes through her takings: for the last ten weeks the stall has covered its costs with a little to spare, and two shops have started ordering from her. 'Next year should pay for itself,' she says. She pays the fee.
+> Mei opened a market stall selling her own ceramics a year ago. It lost money for months, and the booth fee for next year is due. She goes through her sales: for the last ten weeks the stall has covered its costs with a little to spare, and two stores have started ordering from her. 'Next year should pay for itself,' she says. She pays the fee.
 
 **What to compare.** Both cases are about Mei and her market stall, and in both she pays for another year. Compare one thing: the reason she gives for carrying on.
 
@@ -1009,12 +1009,12 @@ Is the reason for the next step about what is already spent, or about what the n
 |---|---|---|
 | What kind of thing is this? | One person’s reasoning | One person’s reasoning |
 | What does the reasoning do? | Gives what is already spent as the reason to keep going | Gives every fact the same test, and goes where the facts point |
-| What you must be able to point to | Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it | Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it |
+| What you must be able to point to | Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it | Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it |
 
 
 ### 32. A change of view that is not Fair reasoning
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 38*
 
 [reviewers only: card kind `exception`, id `exc-convert`]
 
@@ -1022,7 +1022,7 @@ A view that changes can look like **Fair reasoning**: the person used to think o
 
 *The convert*
 
-> Until last month Jo said electric cars were overpriced toys. Then, on impulse at a motor show, she bought one. Now she tells friends that electric cars are 'obviously the future'. She has read nothing about them that she had not read before.
+> Until last month Jo said electric cars were overpriced toys. Then, on impulse at a car show, she bought one. Now she tells friends that electric cars are 'obviously the future'. She has read nothing about them that she had not read before.
 
 Jo’s view has changed completely, and a view that ends up somewhere new is what **Fair reasoning** often looks like. Yet this case is **Cognitive dissonance reduction**.
 
@@ -1030,13 +1030,13 @@ Jo’s view has changed completely, and a view that ends up somewhere new is wha
 
 The pieces you can tap:
 1. “Until last month Jo said electric cars were overpriced toys”
-2. “on impulse at a motor show, she bought one”
+2. “on impulse at a car show, she bought one”
 3. “electric cars are 'obviously the future'”
 4. “She has read nothing about them that she had not read before”
 
 **Shown as soon as you tap.** The words are “She has read nothing about them that she had not read before”.
 - If you tapped “Until last month Jo said electric cars were overpriced toys”: That is the old view. It does not tell you what changed it.
-- If you tapped “on impulse at a motor show, she bought one”: That is what came between the two views. It matters, but on its own it does not rule out new facts arriving as well.
+- If you tapped “on impulse at a car show, she bought one”: That is what came between the two views. It matters, but on its own it does not rule out new facts arriving as well.
 - If you tapped “electric cars are 'obviously the future'”: That is the new view. It does not tell you what changed it.
 
 **Why this is Cognitive dissonance reduction and not Fair reasoning**
@@ -1045,7 +1045,7 @@ Ask what changed Jo’s view. No new fact arrived. What arrived was a purchase. 
 
 You met the honest ways out at the start of this unit. Maya could have said something true about herself: "I am not as strict as I tell people." Jo’s honest way out would have been just as plain: "I bought something I think is an overpriced toy." She did not say that. With no new fact, she changed her opinion of electric cars, so that the purchase needs no excuse. The new opinion is the excuse.
 
-So this is the first name in the unit again: something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count. Jo’s reason is bigger than "it hardly counts". It is a whole new opinion. It does the same job.
+So this is the first name in the unit again: something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count. Jo’s reason is bigger than "it hardly counts". It is a whole new opinion. It does the same job.
 
 **How to tell them apart**
 
@@ -1057,12 +1057,12 @@ What came between the old view and the new one: a new fact about the matter, or 
 |---|---|---|
 | What kind of thing is this? | One person’s reasoning | One person’s reasoning |
 | What does the reasoning do? | Adds a reason why what they did is fine after all | Gives every fact the same test, and goes where the facts point |
-| What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count | Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it |
+| What you must be able to point to | Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count | Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it |
 
 
 ### 33. The question you have been answering all along
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 38*
 
 [reviewers only: card kind `question`, id `q-does`]
 
@@ -1077,7 +1077,7 @@ Since the fish-stock sauce you have seen the question at the foot of each new na
 Each answer leads to one name, and so rules out the other four.
 
 - **“Adds a reason why what they did is fine after all”**
-  - Give this answer when the person has done something that does not fit what they believe or have said, and afterwards they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong.
+  - Give this answer when the person has done something that does not fit what they believe or have said, and afterward they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong.
   - It leads to **Cognitive dissonance reduction**.
 - **“Gives what is already spent as the reason to keep going”**
   - Give this answer when a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring.
@@ -1100,11 +1100,11 @@ So two people can reach the same conclusion on the same matter and get different
 
 **How to answer it from a case**
 
-Find the sentence in which the person gives their reason, or the sentence that shows what they did with the evidence. Then ask which of the five answers describes that sentence. You should be able to put your finger on the words: the reason given afterwards, what is already spent, the question put to one side only, the answer chosen before the search, or the same test for both sides.
+Find the sentence in which the person gives their reason, or the sentence that shows what they did with the evidence. Then ask which of the five answers describes that sentence. You should be able to put your finger on the words: the reason given afterward, what is already spent, the question put to one side only, the answer chosen before the search, or the same test for both sides.
 
 A quick first step is to see what the reasoning is about. If the person is explaining something they did or spent, the answer is usually one of the first two, or the last. If they are dealing with evidence about what is true or which to choose, it is usually the third, the fourth, or the last. This narrows the choice. It does not make it: the words in the case do.
 
-Evidence can be in a case without the person’s reasoning ever touching it. In the renovation, the builder’s figures are evidence, and Dan does not question them, test them or answer them. His reason is the £40,000. A case like that is not about how evidence was tested. Go by the reason the person actually gives.
+Evidence can be in a case without the person’s reasoning ever touching it. In the renovation, the builder’s figures are evidence, and Dan does not question them, test them or answer them. His reason is the $40,000. A case like that is not about how evidence was tested. Go by the reason the person actually gives.
 
 **When two answers both seem to fit**
 
@@ -1129,11 +1129,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 34. A question about a new case
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 38*
 
 [reviewers only: card kind `check`, id `check-does`]
 
-> A city council has spent £2 million on plans for a tram line. A new estimate shows the line would cost four times the original figure and carry half the passengers. 'We cannot walk away from two million pounds of work,' the council leader says, and she approves the next stage.
+> A city council has spent $2 million on plans for a light-rail line. A new estimate shows the line would cost four times the original figure and carry half the passengers. 'We cannot walk away from two million dollars of work,' the council president says, and she approves the next stage.
 
 **The question:** **“What does the reasoning do?”**
 
@@ -1145,9 +1145,9 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Gives what is already spent as the reason to keep going.**” The reason given for the next stage is “We cannot walk away from two million pounds of work”: the money already spent. The new estimate, which is about what the next stage would cost and bring, plays no part in it. This answer leads to **Sunk cost fallacy**.
+- If you are right: “Right: **Gives what is already spent as the reason to keep going.**” The reason given for the next stage is “We cannot walk away from two million dollars of work”: the money already spent. The new estimate, which is about what the next stage would cost and bring, plays no part in it. This answer leads to **Sunk cost fallacy**.
 - If you miss: “The answer is **Gives what is already spent as the reason to keep going.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Adds a reason why what they did is fine after all**: Give that answer when the person has done something that does not fit what they believe or have said, and afterwards they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong. This case shows something else: a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring.
+  - If you chose **Adds a reason why what they did is fine after all**: Give that answer when the person has done something that does not fit what they believe or have said, and afterward they give a reason why it is fine or does not count. No new fact about the matter has arrived, and they do not undo what they did or say it was wrong. This case shows something else: a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring.
   - If you chose **Tests evidence against their view harder than evidence for it**: The new estimate is evidence against going on, but the leader does not give it a harder test than other evidence. She does not test it at all. Her reason is not about evidence; it is the two million.
   - If you chose **Chooses the answer first, then searches for support**: Give that answer when the person sets out on a search to settle a choice or a question (asking, reading, testing, interviewing), the case shows the answer was chosen before that search began, and the search collects only what supports it. This case shows something else: a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring.
   - If you chose **Gives every fact the same test, and goes where the facts point**: Give that answer when facts about the matter are in the case, the person gives them the same test whichever way they point, and the view or plan ends up where they point. It may change, or it may stay because the facts support it. This case shows something else: a next step is still to be decided, and the reason the person gives for taking it is the money, time or effort already spent, not what the step itself would cost or bring.
@@ -1161,7 +1161,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 35. A whole case, from the first question to the name
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 35 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 35 of 38*
 
 [reviewers only: card kind `worked`, id `worked-longrun`]
 
@@ -1191,7 +1191,7 @@ What it is for: tells apart four ways reasoning protects what suits the person, 
 
 Answer: **“Adds a reason why what they did is fine after all”**
 
-She did something that does not fit what she has told the club: she missed a session. Afterwards she gives a reason why it is fine: “Skipping one long run after eight months of them is basically recovery”. The run stays missed, and what she tells the club about herself stays said. Nothing has changed except how the miss looks.
+She did something that does not fit what she has told the club: she missed a session. Afterward she gives a reason why it is fine: “Skipping one long run after eight months of them is basically recovery”. The run stays missed, and what she tells the club about herself stays said. Nothing has changed except how the miss looks.
 
 Still possible: **Cognitive dissonance reduction**. Ruled out: **Sunk cost fallacy**, **Confirmation bias**, **Motivated reasoning** and **Fair reasoning**.
 
@@ -1209,19 +1209,19 @@ Still possible: **Cognitive dissonance reduction**. Ruled out: **Sunk cost falla
 
 **Why this is Cognitive dissonance reduction and not Sunk cost fallacy**
 
-For **Sunk cost fallacy** you must be able to point to this: something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it. Noor is not deciding any next step. The run is already missed. Her eight months appear inside the excuse, to make one Sunday look small. They are not something she refuses to waste.
+For **Sunk cost fallacy** you must be able to point to this: something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it. Noor is not deciding any next step. The run is already missed. Her eight months appear inside the excuse, to make one Sunday look small. They are not something she refuses to waste.
 
 It is the question from Rosa’s two concert tickets. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step? Here the reason says that something she did is fine, so the answer is **“Adds a reason why what they did is fine after all”**.
 
 **Does it look like a case you know?**
 
-You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterwards for why it hardly counts.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the fish-stock sauce: something done that does not fit what the person says about herself, and a reason afterward for why it hardly counts.
 
 Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 36. A second whole case, where the story points the wrong way
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 36 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 36 of 38*
 
 [reviewers only: card kind `worked`, id `worked-tasting`]
 
@@ -1265,7 +1265,7 @@ Still possible: **Motivated reasoning**. Ruled out: **Cognitive dissonance reduc
 
 **Shown as soon as you choose.** The one that settles it is (c): She decided in March, and the tasting was in April.
 - If you chose (a): True, and it is why the case can look like **Confirmation bias**. But being harder on one side fits both names, so it cannot settle which of the two this is.
-- If you chose (b): True, but that is how Grace describes it afterwards. It does not show what came first.
+- If you chose (b): True, but that is how Grace describes it afterward. It does not show what came first.
 
 **Why this is Motivated reasoning and not Confirmation bias**
 
@@ -1275,22 +1275,22 @@ Writing down the compliments and not the complaints is a harder test for one sid
 
 **Does it look like a case you know?**
 
-Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way system first, and Greg’s case was **Confirmation bias**. So here the likeness and the answer seem to disagree.
+Now the second look: does this case look like one you know? Notes that leave out every complaint may bring back Greg and the one-way street plan first, and Greg’s case was **Confirmation bias**. So here the likeness and the answer seem to disagree.
 
 When that happens, go back to the question and find the words in the case that answer it. They are “In March she decided to switch” and “In April she held a tasting”. Greg’s case has nothing like them: he never set out to settle anything. Carol’s interviews do: she chose first, then ran a search and wrote down what fitted. So the case this one really looks like is Carol’s, and the answer stands.
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Cognitive dissonance reduction / Sunk cost fallacy / Confirmation bias / Motivated reasoning / Fair reasoning.
 
 **Drill item 1 of 34**
 
-> Ivan tells his children that honesty matters more than anything. Filling in an insurance claim for a stolen bike, he adds £150 to what it was worth. 'Insurers allow for this,' he says. '⟦Everybody rounds up⟧.'
+> Ivan tells his children that honesty matters more than anything. Filling in an insurance claim for a stolen bike, he adds $150 to what it was worth. 'Insurers allow for this,' he says. '⟦Everybody rounds up⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **One person’s reasoning**
@@ -1309,7 +1309,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 2 of 34**
 
-> Bea has knitted two thirds of a sweater in a wool she can now see is the wrong colour for her. '⟦I'm forty hours in⟧,' she says, and she buys the last four balls of the same wool.
+> Bea has knitted two thirds of a sweater in a wool she can now see is the wrong color for her. '⟦I'm forty hours in⟧,' she says, and she buys the last four balls of the same wool.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **One person’s reasoning**
@@ -1343,7 +1343,7 @@ Shown to you, with the words that decide each answer marked:
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 **Drill item 4 of 34**
 
@@ -1366,7 +1366,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 5 of 34**
 
-> Kemi was against the school's trial of setting no homework, and said so at the parents' meeting. At the end of the year the school shared the test results, which had not changed, and a survey in which most children said they now read more at home. 'I argued against this,' Kemi wrote to the head teacher, 'and the results do not support me. ⟦I withdraw my objection⟧.'
+> Kemi was against the school's trial of setting no homework, and said so at the parents' meeting. At the end of the year the school shared the test results, which had not changed, and a survey in which most children said they now read more at home. 'I argued against this,' Kemi wrote to the principal, 'and the results do not support me. ⟦I withdraw my objection⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **One person’s reasoning**
@@ -1377,7 +1377,7 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Fair reasoning**.” What does the reasoning do? **Gives every fact the same test, and goes where the facts point.** The results went against the position she had taken in public. She gave them no harder test for that, and her view went where they pointed: “I withdraw my objection”.
-  - Why not **Confirmation bias**: **Confirmation bias** would have Kemi finding fault with the results because they went against her. She gave them no harder test than results she liked would have got.
+  - Why not **Confirmation bias**: **Confirmation bias** would have Kemi finding fault with the results because they went against her. She gave them no harder test than results she liked would have gotten.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: Both start with a view and evidence against it. In **Fair reasoning** the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In **Confirmation bias** the evidence against the view gets a harder test than the evidence for it ever got, and the view stays. Were the questions put to the evidence against the view also put to the evidence for it?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1387,7 +1387,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 6 of 34**
 
-> Hana has queued for forty minutes for a table at a restaurant. From the plates going past, the food looks poor, and a place across the road has free tables. 'We've waited this long,' she says. 'We're not leaving now.'
+> Hana has waited in line for forty minutes for a table at a restaurant. From the plates going past, the food looks poor, and a place across the road has free tables. 'We've waited this long,' she says. 'We're not leaving now.'
 
 **You are asked:** What does the reasoning do?
 
@@ -1407,7 +1407,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 34**
 
-> Marco lectures his housemates about wasting water. This morning he took a twenty-five-minute shower. 'I had a brutal week,' he says. 'I earned that one.'
+> Marco lectures his roommates about wasting water. This morning he took a twenty-five-minute shower. 'I had a brutal week,' he says. 'I earned that one.'
 
 **You are asked:** What does the reasoning do?
 
@@ -1419,7 +1419,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Adds a reason why what they did is fine after all.**” “I earned that one” is a reason given after the shower. It says the shower is fine, and nothing else changes: he will go on lecturing his housemates about water. This answer leads to **Cognitive dissonance reduction**.
+- If you are right: “Right: **Adds a reason why what they did is fine after all.**” “I earned that one” is a reason given after the shower. It says the shower is fine, and nothing else changes: he will go on lecturing his roommates about water. This answer leads to **Cognitive dissonance reduction**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Gives what is already spent as the reason to keep going**: The shower is over. Nothing already spent is being given as the reason for a next step.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1427,7 +1427,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 34**
 
-> Sunita is sure the number 14 bus is always late. Last week, when a colleague said the 14 had kept her waiting, Sunita said, 'See?' Now her partner shows her the transport app's record for the month: on time on nineteen days out of twenty. 'Those records are worthless,' she says.
+> Sunita is sure the number 14 bus is always late. Last week, when a colleague said the 14 had kept her waiting, Sunita said, 'See?' Now her partner shows her the transit app's record for the month: on time on nineteen days out of twenty. 'Those records are worthless,' she says.
 
 **You are asked:** What does the reasoning do?
 
@@ -1459,7 +1459,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Adds a reason why what they did is fine after all.**” Dev did something that does not fit what he said for a year: he signed up. “It's different when it's for charity” is a reason given afterwards for why that is fine. This answer leads to **Cognitive dissonance reduction**.
+- If you are right: “Right: **Adds a reason why what they did is fine after all.**” Dev did something that does not fit what he said for a year: he signed up. “It's different when it's for charity” is a reason given afterward for why that is fine. This answer leads to **Cognitive dissonance reduction**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Gives every fact the same test, and goes where the facts point**: His view of the challenge has changed, but no new fact about it arrived. The only thing that came between the old view and the new one is that he signed up.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1634,7 +1634,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 19 of 34**
 
-> Before the board had seen any figures, the managing director had picked the Leeds site for the new warehouse. Afterwards ⟦she hired a consultant 'to assess the options'⟧. The instructions she gave him listed the advantages of Leeds and asked him to confirm them.
+> Before the board had seen any figures, the managing director had picked the Dayton site for the new warehouse. Afterward ⟦she hired a consultant 'to assess the options'⟧. The instructions she gave him listed the advantages of Dayton and asked him to confirm them.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **One person’s reasoning**
@@ -1643,7 +1643,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Motivated reasoning**.” What does the reasoning do? **Chooses the answer first, then searches for support.** She set out on a search, the consultant’s report, and the answer came before it: “Before the board had seen any figures, the managing director had picked the Leeds site”. A report written to confirm a choice could only supply support.
+- If you are right: “Right: **Motivated reasoning**.” What does the reasoning do? **Chooses the answer first, then searches for support.** She set out on a search, the consultant’s report, and the answer came before it: “Before the board had seen any figures, the managing director had picked the Dayton site”. A report written to confirm a choice could only supply support.
   - Why not **Confirmation bias**: No evidence against her view turns up and gets a harder test. She chose first, and then set up a search that could not go against her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Tests evidence against their view harder than evidence for it**: No evidence against her view turns up and gets a harder test. She chose first, and then set up a search that could not go against her.
@@ -1651,7 +1651,7 @@ Shown to you, with the words that decide each answer marked:
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 #### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
@@ -1678,7 +1678,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 21 of 34**
 
-> Two years into restoring a vintage motorbike, Stefan priced the parts he still needed. They came to more than a working bike of the same model would cost. 'Then it isn't worth finishing,' he said, and he sold it as a project to someone with a workshop.
+> Two years into restoring a vintage motorcycle, Stefan priced the parts he still needed. They came to more than a working bike of the same model would cost. 'Then it isn't worth finishing,' he said, and he sold it as a project to someone with a workshop.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -1697,16 +1697,16 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 22 of 34**
 
-> Gus writes angry posts about drivers who park in disabled bays. On Saturday he left his car in one outside the chemist. 'I was two minutes,' he told his wife in the car afterwards. 'Nobody needed it in two minutes.'
+> Gus writes angry posts about drivers who park in disabled bays. On Saturday he left his car in one outside the pharmacy. 'I was two minutes,' he told his wife in the car afterward. 'Nobody needed it in two minutes.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** Gus did something that does not fit what he posts about. Afterwards he gives a reason why it is fine: “Nobody needed it in two minutes”. He takes nothing back.
+- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** Gus did something that does not fit what he posts about. Afterward he gives a reason why it is fine: “Nobody needed it in two minutes”. He takes nothing back.
   - Why not **Sunk cost fallacy**: There is no next step to decide and nothing already spent. He is giving a reason why something he did is fine.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **One person’s reasoning.** One person is defending something he did himself: “he told his wife in the car afterwards”. It is his own account of his own act.
+  - What kind of thing is this? **One person’s reasoning.** One person is defending something he did himself: “he told his wife in the car afterward”. It is his own account of his own act.
   - If you chose **Gives what is already spent as the reason to keep going**: There is no next step to decide and nothing already spent. He is giving a reason why something he did is fine.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
@@ -1716,13 +1716,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 23 of 34**
 
-> Dawn is sure her daughter's school is the best in town. Two years ago, when it came third in the league table, she put the table on the fridge. This year it came near the bottom. 'Those tables only show which children a school happens to get,' she says.
+> Dawn is sure her daughter's school is the best in town. Two years ago, when it ranked third in the school rankings, she put the list on the fridge. This year it came near the bottom. 'Those rankings only show which children a school happens to get,' she says.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Confirmation bias**.” What does the reasoning do? **Tests evidence against their view harder than evidence for it.** The table that put the school third was evidence for her view, and it went on the fridge. The table that puts it near the bottom is evidence against her view, and only that one is questioned: “Those tables only show which children a school happens to get”. One side gets a harder test.
+- If you are right: “Right: **Confirmation bias**.” What does the reasoning do? **Tests evidence against their view harder than evidence for it.** The ranking that put the school third was evidence for her view, and it went on the fridge. The ranking that puts it near the bottom is evidence against her view, and only that one is questioned: “Those rankings only show which children a school happens to get”. One side gets a harder test.
   - Why not **Motivated reasoning**: Dawn has not set out on a search to settle a choice. League tables turn up each year, and she treats the two differently.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is defending a view of her own: “Dawn is sure her daughter's school is the best in town”.
@@ -1735,14 +1735,14 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 24 of 34**
 
-> Hal paid the holding deposit on the flat by the park an hour after seeing the advert. Then he 'compared what was out there': he went to see two other flats, spent five minutes in each, and wrote down that one was dark and the other was noisy. 'I looked at three,' he told his sister, 'and the one by the park is the best.'
+> Hal paid the deposit on the apartment by the park an hour after seeing the ad. Then he 'compared what was out there': he went to see two other apartments, spent five minutes in each, and wrote down that one was dark and the other was noisy. 'I looked at three,' he told his sister, 'and the one by the park is the best.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Motivated reasoning**.” What does the reasoning do? **Chooses the answer first, then searches for support.** Hal set out on a search, the viewings, that was supposed to settle which flat to take. The answer came before it: he “paid the holding deposit on the flat by the park an hour after seeing the advert”. Five minutes in each of the other flats could only supply support.
-  - Why not **Confirmation bias**: He is harder on the other two flats, which would fit **Confirmation bias**. But he set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.
+- If you are right: “Right: **Motivated reasoning**.” What does the reasoning do? **Chooses the answer first, then searches for support.** Hal set out on a search, the showings, that was supposed to settle which apartment to take. The answer came before it: he “paid the deposit on the apartment by the park an hour after seeing the ad”. Five minutes in each of the other apartments could only supply support.
+  - Why not **Confirmation bias**: He is harder on the other two apartments, which would fit **Confirmation bias**. But he set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is telling how he reached a choice of his own: “the one by the park is the best”.
   - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the answer is **Chooses the answer first, then searches for support**.
@@ -1750,11 +1750,11 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 **Drill item 25 of 34**
 
-> Everyone tells Wanda that her fifteen-year-old boiler must be costing her a fortune. She has always thought it was fine. She asks an engineer to measure what it burns, and gets a price for a new one. The saving would be £60 a year on a £2,400 boiler. 'Then it stays,' she says. 'If the saving had been a few hundred a year, I'd have replaced it.'
+> Everyone tells Wanda that her fifteen-year-old boiler must be costing her a fortune. She has always thought it was fine. She asks an engineer to measure what it burns, and gets a price for a new one. The saving would be $60 a year on a $2,400 boiler. 'Then it stays,' she says. 'If the saving had been a few hundred a year, I'd have replaced it.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -1773,13 +1773,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 26 of 34**
 
-> Nora used to say that people who hire cleaners are lazy. Last month, worn out, she hired one. 'Paying someone local is really a way of supporting the neighbourhood,' she says now. 'I see it differently these days.'
+> Nora used to say that people who hire cleaners are lazy. Last month, worn out, she hired one. 'Paying someone local is really a way of supporting the neighborhood,' she says now. 'I see it differently these days.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** Nora did something that does not fit what she used to say: she hired a cleaner. Her new view is a reason given afterwards for why that is fine: “Paying someone local is really a way of supporting the neighbourhood”.
+- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** Nora did something that does not fit what she used to say: she hired a cleaner. Her new view is a reason given afterward for why that is fine: “Paying someone local is really a way of supporting the neighborhood”.
   - Why not **Fair reasoning**: Her view did change, which is what **Fair reasoning** can look like. But nothing came between the old view and the new one except that she hired a cleaner. No new fact about cleaners arrived.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is explaining a choice of her own and her view of it: “I see it differently these days”.
@@ -1792,7 +1792,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 27 of 34**
 
-> Arun has been on a low-carbohydrate diet for a year. He reads three studies that favour it closely and with pleasure. He dismisses a fourth, which goes against it, as 'paid for by the food industry', without checking who paid for the other three.
+> Arun has been on a low-carbohydrate diet for a year. He reads three studies that favor it closely and with pleasure. He dismisses a fourth, which goes against it, as 'paid for by the food industry', without checking who paid for the other three.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -1827,7 +1827,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 **Drill item 29 of 34**
 
@@ -1851,13 +1851,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 30 of 34**
 
-> Kit has told his running club all year that he listens to his body. Six months into training for a marathon, a physiotherapist tells him that running on his injured knee next week could put him out for a year. 'Six months of 5 a.m. starts,' he writes in the club chat. 'I'm not letting that go for nothing. I'm running.'
+> Kit has told his running club all year that he listens to his body. Six months into training for a marathon, a physical therapist tells him that running on his injured knee next week could put him out for a year. 'Six months of 5 a.m. starts,' he writes in the club chat. 'I'm not letting that go for nothing. I'm running.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Sunk cost fallacy**.” What does the reasoning do? **Gives what is already spent as the reason to keep going.** A next step is still to be decided, run or rest, and the reason Kit gives for running is “Six months of 5 a.m. starts”: the training already done. What the physiotherapist says about the next step plays no part.
+- If you are right: “Right: **Sunk cost fallacy**.” What does the reasoning do? **Gives what is already spent as the reason to keep going.** A next step is still to be decided, run or rest, and the reason Kit gives for running is “Six months of 5 a.m. starts”: the training already done. What the physical therapist says about the next step plays no part.
   - Why not **Cognitive dissonance reduction**: Kit says one thing to his club and is about to do another, so it can look like an excuse. But his reason does not say that something he did is fine. It gives what is already spent as the reason for what he does next.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is giving his reason for a choice of his own: “he writes in the club chat”.
@@ -1892,21 +1892,21 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **A claim worked for you**
 
-> "She sold the flat at a loss after ten years. That’s the sunk cost fallacy."
+> "She sold the condo at a loss after ten years. That’s the sunk cost fallacy."
 
 *Worked for you. Nothing is asked.*
 
 **The question:** The claim uses the name **Sunk cost fallacy**. What would you need to see in the case before that name could be used?
 
-- Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count
-- Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it
+- Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count
+- Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it
 - A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got
 - A search the person set out on to settle a choice or a question, an answer chosen before that search began, and a search that collects only support for it
 - Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it
 
-**The answer:** Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it.
+**The answer:** Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it.
 - The fault: The claim points at money lost and stops there. Losing money is not **Sunk cost fallacy**, and neither is stopping. The name goes with the answer **“Gives what is already spent as the reason to keep going”**, and she did not keep going. Nothing in the claim shows her reasoning at all.
-- The claim, put right (always the last thing shown): She sold the flat at a loss after ten years. That tells you what she decided, not how she reasoned. It would be **Sunk cost fallacy** only if she had refused to sell, and had given the ten years or the money already paid as her reason.
+- The claim, put right (always the last thing shown): She sold the condo at a loss after ten years. That tells you what she decided, not how she reasoned. It would be **Sunk cost fallacy** only if she had refused to sell, and had given the ten years or the money already paid as her reason.
 
 **Drill item 32 of 34**
 
@@ -1914,15 +1914,15 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **You are asked:** The claim uses the name **Cognitive dissonance reduction**. What would you need to see in the case before that name could be used?
 
-- Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count
-- Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it
+- Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count
+- Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it
 - A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got
 - A search the person set out on to settle a choice or a question, an answer chosen before that search began, and a search that collects only support for it
 - Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it
 
 **Shown as soon as you answer**
 
-- The answer is: **Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count.**
+- The answer is: **Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
 - The fault: The claim points at two things that do not fit, what he says and what he does, and stops there. It never shows him giving a reason why the flying is fine. Two things that do not fit are not yet **Cognitive dissonance reduction**. They are not even *cognitive dissonance*, which is a discomfort he may or may not feel.
 - The claim, put right (always the last thing shown): He says he cares about the climate, and he flies every month. Those two do not fit. It becomes **Cognitive dissonance reduction** only if he gives a reason why the flying is fine after all.
@@ -1952,8 +1952,8 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **You are asked:** The claim uses the name **Motivated reasoning**. What would you need to see in the case before that name could be used?
 
-- Something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count
-- Something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it
+- Something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count
+- Something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it
 - A view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got
 - A search the person set out on to settle a choice or a question, an answer chosen before that search began, and a search that collects only support for it
 - Facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it
@@ -1969,7 +1969,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 37. What to carry away
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 38*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -1986,27 +1986,27 @@ What does the reasoning do?
 
 **For each name: what you must be able to point to, and the question to ask when you spot it**
 
-- **Cognitive dissonance reduction**: something the person did that does not fit what they believe or have said, and a reason they give afterwards for why it is fine or does not count.
+- **Cognitive dissonance reduction**: something the person did that does not fit what they believe or have said, and a reason they give afterward for why it is fine or does not count.
   - Ask: "What would I do, or say about myself, if that reason were not available?" The honest ways out are still there: change what you do, or change what you claim.
-- **Sunk cost fallacy**: something already spent that cannot be got back, a next step still to be decided, and what is already spent given as the reason to take it.
-  - Ask: "From where I stand today, is what I still have to put in worth what I will get for it?" For Dan and Aisha: is another £30,000 worth £10,000 of extra value? No. The £40,000 is not in that sum at all.
+- **Sunk cost fallacy**: something already spent that cannot be gotten back, a next step still to be decided, and what is already spent given as the reason to take it.
+  - Ask: "From where I stand today, is what I still have to put in worth what I will get for it?" For Dan and Aisha: is another $30,000 worth $10,000 of extra value? No. The $40,000 is not in that sum at all.
 - **Confirmation bias**: a view the person already holds, evidence for it and evidence against it, and a harder test for the evidence against it than the evidence for it ever got.
-  - Ask: "Have I put this same question to the evidence on my own side?" If Greg asks who counted the journeys, he should also ask how his neighbour timed her drive.
+  - Ask: "Have I put this same question to the evidence on my own side?" If Greg asks who counted the journeys, he should also ask how his neighbor timed her drive.
 - **Motivated reasoning**: a search the person set out on to settle a choice or a question, an answer chosen before that search began, and a search that collects only support for it.
   - Ask: "What would I have needed to find to choose differently, and did I look there?" If nothing could have changed the answer, the search was not what decided it.
 - **Fair reasoning**: facts about the matter, the same test for them whichever way they point, and a view or plan that ends up where they point, whether that means changing it or keeping it.
-  - Ask: "What fact settled this, and did it get the same test it would have got if it had pointed the other way?" When the answer is yes, there is nothing to correct, and treating it as a fault would be a mistake of its own.
+  - Ask: "What fact settled this, and did it get the same test it would have gotten if it had pointed the other way?" When the answer is yes, there is nothing to correct, and treating it as a fault would be a mistake of its own.
 
 **To carry away**
 
 - Say what the reasoning does, and point to the words in the case that show it. If you cannot point, you do not have an answer yet.
 - The story never decides. Nor does the person, and nor does where they ended up: a view can change without **Fair reasoning**, and a view can be kept with it.
-- When a case shows an answer chosen before a search began, that settles it, however the evidence was handled afterwards.
+- When a case shows an answer chosen before a search began, that settles it, however the evidence was handled afterward.
 - One sentence is never enough. "You can’t trust that report" is **Confirmation bias** only if the evidence on the speaker’s own side was never asked the same question. "I looked into it properly and I was right" is **Motivated reasoning** only if the answer was chosen before the search began. Otherwise it may well be **Fair reasoning**.
 
 ### 38. Where would you meet this?
 
-*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 38*
+*Unit Two · rev 4 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 38*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2057,16 +2057,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 2 of 15**
 
-> Olu tells his friends that men who avoid the doctor are fools. He has cancelled his own check-up three times this year. 'It's different for me,' he says. 'I know my body.'
+> Olu tells his friends that men who avoid the doctor are fools. He has canceled his own check-up three times this year. 'It's different for me,' he says. 'I know my body.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** Olu did something that does not fit what he tells his friends. “It's different for me” is a reason given afterwards for why it is fine. He takes nothing back.
+- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** Olu did something that does not fit what he tells his friends. “It's different for me” is a reason given afterward for why it is fine. He takes nothing back.
   - Why not **Sunk cost fallacy**: Nothing already spent is being given as the reason for a next step. He is giving a reason why something he did is fine.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **One person’s reasoning.** One person is defending something he did himself: “He has cancelled his own check-up three times this year”, followed by his reason for it.
+  - What kind of thing is this? **One person’s reasoning.** One person is defending something he did himself: “He has canceled his own check-up three times this year”, followed by his reason for it.
   - If you chose **Gives what is already spent as the reason to keep going**: Nothing already spent is being given as the reason for a next step. He is giving a reason why something he did is fine.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
@@ -2076,16 +2076,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 15**
 
-> June sorts every scrap of recycling and tells the neighbours they should too. On holiday she put a week of bottles and cans in the general bin. 'Holidays don't count,' she said, laughing. 'You have to switch off sometime.'
+> June sorts every scrap of recycling and tells the neighbors they should too. On vacation she put a week of bottles and cans in the regular trash. 'Holidays don't count,' she said, laughing. 'You have to switch off sometime.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** June did something that does not fit what she tells the neighbours. “Holidays don't count” is a reason given afterwards for why that week is fine.
+- If you are right: “Right: **Cognitive dissonance reduction**.” What does the reasoning do? **Adds a reason why what they did is fine after all.** June did something that does not fit what she tells the neighbors. “Holidays don't count” is a reason given afterward for why that week is fine.
   - Why not **Fair reasoning**: Nothing she believes about recycling has changed, and no new fact arrived. She is giving a reason why one week does not count.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **One person’s reasoning.** One person is defending something she did herself: “she put a week of bottles and cans in the general bin”, followed by her reason for it.
+  - What kind of thing is this? **One person’s reasoning.** One person is defending something she did herself: “she put a week of bottles and cans in the regular trash”, followed by her reason for it.
   - If you chose **Gives every fact the same test, and goes where the facts point**: Nothing she believes about recycling has changed, and no new fact arrived. She is giving a reason why one week does not count.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: In both, the person’s view can change. In **Fair reasoning** a fact about the matter came between the old view and the new one. In **Cognitive dissonance reduction** the only thing that came between them is something the person did, and the new view is the reason why it is fine. What came between the old view and the new one: a new fact about the matter, or only something the person did?
@@ -2095,7 +2095,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 15**
 
-> Halfway up a mountain, with cloud closing in and the forecast getting worse, the leader of the walking group says: 'We drove six hours to get here. We're going to the top.'
+> Halfway up a mountain, with cloud closing in and the forecast getting worse, the leader of the hiking group says: 'We drove six hours to get here. We're going to the top.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -2104,7 +2104,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Sunk cost fallacy**.” What does the reasoning do? **Gives what is already spent as the reason to keep going.** The reason for going on is “We drove six hours to get here”: the drive already made. The cloud and the forecast, which are about the next step, are not in the reasoning.
   - Why not **Cognitive dissonance reduction**: The leader is not giving a reason why something already done is fine. The drive already made is given as the reason for the next step.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **One person’s reasoning.** One person is giving a reason for a choice of their own: “the leader of the walking group says”.
+  - What kind of thing is this? **One person’s reasoning.** One person is giving a reason for a choice of their own: “the leader of the hiking group says”.
   - If you chose **Adds a reason why what they did is fine after all**: The leader is not giving a reason why something already done is fine. The drive already made is given as the reason for the next step.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: Both look back at something the person has already done or spent. **Cognitive dissonance reduction** gives a reason why something the person did is fine. **Sunk cost fallacy** gives what is already spent as the reason to take the next step. Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?
@@ -2114,13 +2114,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 5 of 15**
 
-> Faye has paid £15 a month for a language app for three years and last opened it in spring. Her bank sends a reminder that the yearly renewal is due. 'I've put more than five hundred pounds into this,' she says. 'I can't cancel now.' She renews.
+> Faye has paid $15 a month for a language app for three years and last opened it in spring. Her bank sends a reminder that the yearly renewal is due. 'I've put more than five hundred dollars into this,' she says. 'I can't cancel now.' She renews.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Sunk cost fallacy**.” What does the reasoning do? **Gives what is already spent as the reason to keep going.** A next step is to be decided, renew or cancel, and the reason Faye gives for renewing is “I've put more than five hundred pounds into this”: what she has already paid. Whether she would use another year of it is not in her reasoning.
+- If you are right: “Right: **Sunk cost fallacy**.” What does the reasoning do? **Gives what is already spent as the reason to keep going.** A next step is to be decided, renew or cancel, and the reason Faye gives for renewing is “I've put more than five hundred dollars into this”: what she has already paid. Whether she would use another year of it is not in her reasoning.
   - Why not **Cognitive dissonance reduction**: She is not giving a reason why something she did is fine. She is giving money already spent as the reason to spend more.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is making a choice of her own and giving her reason for it: “She renews”.
@@ -2171,7 +2171,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 8 of 15**
 
-> Bo has said since January that the clinic's new booking system makes patients wait longer. When a patient complains about a wait, Bo writes it in the incident book. When the monthly figures show the average wait has fallen by ten minutes, he says the figures 'don't capture what it's really like'.
+> Bo has said since January that the clinic's new booking system makes patients wait longer. When a patient complains about a wait, Bo writes it in the incident log. When the monthly figures show the average wait has fallen by ten minutes, he says the figures 'don't capture what it's really like'.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -2190,7 +2190,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 15**
 
-> Cal has bought the same brand of trainers for twenty years and says nothing else lasts. He reads two reviews of the new model. Of the one-star review he says, 'Some people will complain about anything.' Of the five-star review he says, 'Exactly what I've always said.'
+> Cal has bought the same brand of sneakers for twenty years and says nothing else lasts. He reads two reviews of the new model. Of the one-star review he says, 'Some people will complain about anything.' Of the five-star review he says, 'Exactly what I've always said.'
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -2209,7 +2209,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 10 of 15**
 
-> Before she had read any of the three applications, the committee chair told a colleague that the grant would go to the theatre group. She then marked the applications, giving the theatre group full marks under 'community impact', a heading the other two were not marked on.
+> Before she had read any of the three applications, the committee chair told a colleague that the grant would go to the theater group. She then scored the applications, giving the theater group full points under 'community impact', a heading the other two were not scored on.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -2218,17 +2218,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Motivated reasoning**.” What does the reasoning do? **Chooses the answer first, then searches for support.** The marking was the search that was supposed to settle it, and the answer came first: “Before she had read any of the three applications”. The marking could only supply support.
   - Why not **Confirmation bias**: The marking is harder on two of the three, which would fit **Confirmation bias**. But she set out on a search, and the answer was chosen before it began. When a case shows both, that decides it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of her own and backing it up: “She then marked the applications”.
+  - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of her own and backing it up: “She then scored the applications”.
   - If you chose **Tests evidence against their view harder than evidence for it**: You chose **Tests evidence against their view harder than evidence for it**. This case does show that. It also shows an answer chosen before a search began, and when a case shows both, the answer is **Chooses the answer first, then searches for support**.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 **Return case 11 of 15**
 
-> Mina had her heart set on Oakfield for her son from the day she walked past its playing fields. In the autumn she 'did the rounds': she visited Oakfield twice and the other two schools for twenty minutes each, and came home with a list of what was wrong with them. 'We looked at all three properly,' she told her mother.
+> Mina had her heart set on Oakfield for her son from the day she walked past its playing fields. In the fall she 'did the rounds': she visited Oakfield twice and the other two schools for twenty minutes each, and came home with a list of what was wrong with them. 'We looked at all three properly,' she told her mother.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
@@ -2243,7 +2243,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Fair reasoning**, the look-alike card’s lines follow: Both can end on the answer the person hoped for. In **Motivated reasoning** the answer was chosen before the search began, so the search could not have changed it. In **Fair reasoning** the search came first and could have gone either way. Could the search have come out the other way, and would the person have gone with it?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 **Return case 12 of 15**
 
@@ -2262,21 +2262,21 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Confirmation bias**, the look-alike card’s lines follow: In both, the person is harder on evidence they do not like, and ends where they began. In **Motivated reasoning** the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In **Confirmation bias** nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it. Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “The answer first, the search afterwards” (one tap opens the card).
+- Taught on: “The answer first, the search afterward” (one tap opens the card).
 
 **Return case 13 of 15**
 
-> Tess had told everyone that the new ring road would be a disaster for the shops in the town centre. A year after it opened she walked the main street and counted: two shops had closed and five had opened. 'I got that wrong,' she said at the next residents' meeting.
+> Tess had told everyone that the new bypass would be a disaster for the stores in the town center. A year after it opened she walked the main street and counted: two stores had closed and five had opened. 'I got that wrong,' she said at the next residents' meeting.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Fair reasoning**.” What does the reasoning do? **Gives every fact the same test, and goes where the facts point.** Tess went and got the facts herself, and her view went where they pointed: “she walked the main street and counted” and “I got that wrong”. The count went against what she had told everyone, and she gave it no harder test for that.
-  - Why not **Cognitive dissonance reduction**: What came between her old view and her new one was a count of shops, not something she had done.
+  - Why not **Cognitive dissonance reduction**: What came between her old view and her new one was a count of stores, not something she had done.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **One person’s reasoning.** One person is changing a view of her own: “Tess had told everyone that the new ring road would be a disaster”, and the case shows what she did about it.
-  - If you chose **Adds a reason why what they did is fine after all**: What came between her old view and her new one was a count of shops, not something she had done.
+  - What kind of thing is this? **One person’s reasoning.** One person is changing a view of her own: “Tess had told everyone that the new bypass would be a disaster”, and the case shows what she did about it.
+  - If you chose **Adds a reason why what they did is fine after all**: What came between her old view and her new one was a count of stores, not something she had done.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Cognitive dissonance reduction**, the look-alike card’s lines follow: In both, the person’s view can change. In **Fair reasoning** a fact about the matter came between the old view and the new one. In **Cognitive dissonance reduction** the only thing that came between them is something the person did, and the new view is the reason why it is fine. What came between the old view and the new one: a new fact about the matter, or only something the person did?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2304,17 +2304,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 15 of 15**
 
-> Jen has spent £900 this year keeping her old car on the road. The garage says it now needs a £1,200 gearbox. She looks up what the car would sell for with the repair done: about £1,500. 'So I'd be paying twelve hundred to own a fifteen-hundred-pound car that keeps breaking,' she says. 'No.' She sells it for parts.
+> Jen has spent $900 this year keeping her old car on the road. The repair shop says it now needs a $1,200 transmission. She looks up what the car would sell for with the repair done: about $1,500. 'So I'd be paying twelve hundred to own a fifteen-hundred-dollar car that keeps breaking,' she says. 'No.' She sells it for parts.
 
 **You are asked, in order:** What kind of thing is this? → What does the reasoning do? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Fair reasoning**.” What does the reasoning do? **Gives every fact the same test, and goes where the facts point.** Jen looks at what the next step would cost and what it would bring, and her plan goes where that points: “So I'd be paying twelve hundred to own a fifteen-hundred-pound car that keeps breaking”. The £900 already spent is not given as a reason for anything.
-  - Why not **Sunk cost fallacy**: **Sunk cost fallacy** would have Jen saying she cannot give up after £900. Her reason is about the repair still to pay for, not the money already spent.
+- If you are right: “Right: **Fair reasoning**.” What does the reasoning do? **Gives every fact the same test, and goes where the facts point.** Jen looks at what the next step would cost and what it would bring, and her plan goes where that points: “So I'd be paying twelve hundred to own a fifteen-hundred-dollar car that keeps breaking”. The $900 already spent is not given as a reason for anything.
+  - Why not **Sunk cost fallacy**: **Sunk cost fallacy** would have Jen saying she cannot give up after $900. Her reason is about the repair still to pay for, not the money already spent.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **One person’s reasoning.** One person is reaching a choice of her own: “She sells it for parts”, and the case shows how she got there.
-  - If you chose **Gives what is already spent as the reason to keep going**: **Sunk cost fallacy** would have Jen saying she cannot give up after £900. Her reason is about the repair still to pay for, not the money already spent.
+  - If you chose **Gives what is already spent as the reason to keep going**: **Sunk cost fallacy** would have Jen saying she cannot give up after $900. Her reason is about the repair still to pay for, not the money already spent.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sunk cost fallacy**, the look-alike card’s lines follow: Both face a choice about something that has already cost a lot, and both can end with the person carrying on. In **Sunk cost fallacy** the reason given for the next step is what is already spent. In **Fair reasoning** the reason given is what the next step would cost and what it would bring. Is the reason for the next step about what is already spent, or about what the next step would cost and bring?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”

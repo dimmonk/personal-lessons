@@ -1,6 +1,6 @@
 # Learner view: Scams & Social Engineering, Unit Three: Sign in, give a code, or allow an app
 
-*Three scams that ask you for a way into an account, the real thing they copy, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
+*Three scams that ask you for a way into an account, the real thing they copy, and the two questions that tell them apart.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. A way into your account: yours, or a copy of it
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 34*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -35,7 +35,7 @@ The unit starts with the real thing, because the three scams are copies of it an
 
 **What Unit One taught, in one place.** The first question is **“What is it asking you to do right now?”** Its answers:
 
-- **“Install something, open a file, or share your screen”**: give this answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it.
+- **“Install something, open a file, or share your screen”**: give this answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to call to fix it.
 - **“Sign in, give a code, or allow an app”**: give this answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts. **This unit is about these cases.**
 - **“Pay or send money”**: give this answer when it asks you to pay or send money, by any means, now or by a date.
 - **“Tell them about yourself”**: give this answer when it asks for facts about you: a document, an ID or card number, your date of birth or address, or your work, home and family.
@@ -70,11 +70,11 @@ The unit has four parts, and you can stop after any of them.
 3. An Allow, for an app
 4. The two questions, two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A sign-in, a code or an Allow that you started yourself
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 34*
 
 [reviewers only: card kind `meet`, id `meet-realsignin`]
 
@@ -91,7 +91,7 @@ Stripped of its story, the case is this:
 - It asks for what a sign-in needs, her email address and her password, and nothing more.
 - She types them into the same app that she opened.
 
-What you are shown is a sign-in that the person started. Marta wanted something, so she opened an app that was already on her phone, was asked to show that it was her, and did. Nothing in it is strange and nothing in it is hidden. If she had not signed in, she could not have got what she came for.
+What you are shown is a sign-in that the person started. Marta wanted something, so she opened an app that was already on her phone, was asked to show that it was her, and did. Nothing in it is strange and nothing in it is hidden. If she had not signed in, she could not have gotten what she came for.
 
 Two things make it what it is, and both are things Marta did, not things she was shown. The first is that she started it: nothing was sent to her and nothing led her there. She used *a way you already had*, an app that was on her phone before anything arrived. The second is that the app asks only what a sign-in needs, an email address and a password, and nothing beyond that.
 
@@ -111,7 +111,7 @@ The name for this is **Real sign-in**. "Real" here means that nothing is wrong: 
 
 ### 3. Real sign-in: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 34*
 
 [reviewers only: card kind `again`, id `again-realsignin`]
 
@@ -123,30 +123,30 @@ The second case.
 
 *The boots and the code*
 
-> Imran is buying a pair of boots. He goes to the shop's website by typing its address, fills his basket and pays by card. His bank then texts him a code, and the shop's payment page asks for it. He types the code into that same page.
+> Imran is buying a pair of boots. He goes to the store's website by typing its address, fills his basket and pays by card. His bank then texts him a code, and the store's payment page asks for it. He types the code into that same page.
 **You are asked:** In *The energy app*, these words show it: “She opens the energy company's app, which has been on her phone since last winter”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Imran is buying a pair of boots”
-2. “He goes to the shop's website by typing its address, fills his basket and pays by card”
-3. “His bank then texts him a code, and the shop's payment page asks for it”
+2. “He goes to the store's website by typing its address, fills his basket and pays by card”
+3. “His bank then texts him a code, and the store's payment page asks for it”
 4. “He types the code into that same page”
 
-**Shown as soon as you tap.** The words are “He goes to the shop's website by typing its address, fills his basket and pays by card”.
-- If you tapped “Imran is buying a pair of boots”: This is what he wants to do. It gives him a reason to be at a shop, and it does not say how he came to the page.
-- If you tapped “His bank then texts him a code, and the shop's payment page asks for it”: This is the code arriving, and the page that asks for it. Both come because of what he did. The words that show he started it are the ones before.
+**Shown as soon as you tap.** The words are “He goes to the store's website by typing its address, fills his basket and pays by card”.
+- If you tapped “Imran is buying a pair of boots”: This is what he wants to do. It gives him a reason to be at a store, and it does not say how he came to the page.
+- If you tapped “His bank then texts him a code, and the store's payment page asks for it”: This is the code arriving, and the page that asks for it. Both come because of what he did. The words that show he started it are the ones before.
 - If you tapped “He types the code into that same page”: This shows where the code goes: into the page he opened himself. It is true, and it comes after the words that show he started it.
 
 **What the two share**
 
-Marta typed a password into an app. Imran typed a code into a payment page. What is typed is different, and the shop even sent him a message, a text with a code in it. None of that makes it a copy, because in both cases the person started it: Marta opened an app she already had, and Imran typed the shop's address himself.
+Marta typed a password into an app. Imran typed a code into a payment page. What is typed is different, and the store even sent him a message, a text with a code in it. None of that makes it a copy, because in both cases the person started it: Marta opened an app she already had, and Imran typed the store's address himself.
 
 The code that arrived on Imran's phone came because of what he did. A message that answers something you did is different from a message that arrives first. The question that separates them is **“Does it fit something you started?”**, and in both cases the answer is **“Yes: you started it through a way you already had, and it asks only what that needs”**. That is what **Real sign-in** names.
 
 
 ### 4. The story never decides the answer
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 34*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -164,7 +164,7 @@ From here on, the cases change their stories on purpose. Two more things change 
 
 ### 5. Real sign-in: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-realsignin`]
 
@@ -201,7 +201,7 @@ If you cannot say it, because you found yourself on the page by tapping a link i
 
 ### 6. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 34*
 
 [reviewers only: card kind `check`, id `check-realsignin`]
 
@@ -226,7 +226,7 @@ The pieces you can tap:
 
 ### 7. A copied sign-in page reached from a message
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 34*
 
 [reviewers only: card kind `meet`, id `meet-phishing`]
 
@@ -266,7 +266,7 @@ You may also hear this called “fake login page” or “credential phishing”
 
 ### 8. Phishing: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 34*
 
 [reviewers only: card kind `again`, id `again-phishing`]
 
@@ -276,34 +276,34 @@ The first case again, in one line. *The locked streaming account*: “It asks he
 
 The second case.
 
-*The payslip email*
+*The pay stub email*
 
-> Paul gets an email that looks like it is from his company's payroll team: 'Your payslip for October is ready. Sign in with your work email and password to view it.' The link goes to a page with the company's name at the top.
+> Paul gets an email that looks like it is from his company's payroll team: 'Your pay stub for October is ready. Sign in with your work email and password to view it.' The link goes to a page with the company's name at the top.
 **You are asked:** In *The locked streaming account*, these words show it: “It asks her to type her email address and password”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Paul gets an email that looks like it is from his company's payroll team”
-2. “Your payslip for October is ready”
+2. “Your pay stub for October is ready”
 3. “Sign in with your work email and password to view it”
 4. “The link goes to a page with the company's name at the top”
 
 **Shown as soon as you tap.** The words are “Sign in with your work email and password to view it”.
 - If you tapped “Paul gets an email that looks like it is from his company's payroll team”: This says who the email claims to be from. A copy can claim to be from anyone, so it does not show what is being asked.
-- If you tapped “Your payslip for October is ready”: This is the reason given for the email. It is not what the email asks Paul to do.
+- If you tapped “Your pay stub for October is ready”: This is the reason given for the email. It is not what the email asks Paul to do.
 - If you tapped “The link goes to a page with the company's name at the top”: This is how the page looks. A look can be copied, and it does not say what is asked.
 
 **What the two share**
 
-Both emails ask for a password, to be typed into a page that is reached through a link in an email that came to the person. In the first the reason is a locked account and in the second a payslip, but the reason is only the bait.
+Both emails ask for a password, to be typed into a page that is reached through a link in an email that came to the person. In the first the reason is a locked account and in the second a pay stub, but the reason is only the bait.
 
-The second password is a work password, which can open the company's mail and files as well as the payslip, and the scammer can use it to write to Paul's colleagues as Paul. A work password is worth more than a streaming one, and the request looks just the same.
+The second password is a work password, which can open the company's mail and files as well as the pay stub, and the scammer can use it to write to Paul's colleagues as Paul. A work password is worth more than a streaming one, and the request looks just the same.
 
 What you are asked to type is picked out by **“What does it want you to type in or press?”**, and in both cases the answer is **“Your password”**. Together with the fact that the email came to them, that is what **Phishing** names.
 
 
 ### 9. Phishing: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-phishing`]
 
@@ -325,9 +325,9 @@ It is also not **Phishing** when the message is real and you did ask for it. The
 
 **Where you will hear it**
 
-"Your account has been locked. Sign in to unlock it." "Unusual sign-in detected. Confirm that it is you." "Your mailbox is almost full. Sign in to upgrade." "Your payslip is ready. Sign in to view it." "You are owed a refund. Sign in to claim it."
+"Your account has been locked. Sign in to unlock it." "Unusual sign-in detected. Confirm that it is you." "Your mailbox is almost full. Sign in to upgrade." "Your pay stub is ready. Sign in to view it." "You are owed a refund. Sign in to claim it."
 
-You are most likely to meet it in your email and your texts, and at work: a message that looks like a payslip, a shared file or a notice from the IT team. Anyone who has ever had trouble signing in is already half ready to believe it.
+You are most likely to meet it in your email and your texts, and at work: a message that looks like a pay stub, a shared file or a notice from the IT team. Anyone who has ever had trouble signing in is already half ready to believe it.
 
 **The question to ask when you spot it**
 
@@ -341,32 +341,32 @@ If you use a password manager, an app that fills in passwords for you, notice wh
 
 ### 10. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 34*
 
 [reviewers only: card kind `check`, id `check-phishing`]
 
-> A text says it is from the tax office: 'You are owed a refund of £312. Sign in to your online tax account to claim it.' The link opens a page with the tax office's crest. It asks for the user ID and password of Mia's online tax account.
+> A text says it is from the IRS: 'You are owed a refund of $312. Sign in to your online tax account to claim it.' The link opens a page with the IRS seal. It asks for the user ID and password of Mia's online tax account.
 
 **You are asked:** Which words ask Mia to type a password? Tap them.
 
 The pieces you can tap:
-1. “A text says it is from the tax office”
-2. “You are owed a refund of £312”
-3. “The link opens a page with the tax office's crest”
+1. “A text says it is from the IRS”
+2. “You are owed a refund of $312”
+3. “The link opens a page with the IRS seal”
 4. “It asks for the user ID and password of Mia's online tax account”
 
 **Shown as soon as you tap**
 
 - If you are right: “Right: ‘It asks for the user ID and password of Mia's online tax account’.” The page asks Mia to type a user ID and a password: “It asks for the user ID and password of Mia's online tax account”. That is a password, whatever the page looks like and whatever the refund story says. The answer for this case is **“Your password”**, and the name is **Phishing**.
 - If you miss: “The words are ‘It asks for the user ID and password of Mia's online tax account’.” The same reason follows, and then a line about the piece you tapped:
-  - “A text says it is from the tax office”: This says who the text claims to be from. A copy can claim that too, and it is not what the page asks for.
-  - “You are owed a refund of £312”: This is the lure, the reason to act. It is not what Mia is asked to type.
-  - “The link opens a page with the tax office's crest”: This is how the page looks. A look can be copied.
+  - “A text says it is from the IRS”: This says who the text claims to be from. A copy can claim that too, and it is not what the page asks for.
+  - “You are owed a refund of $312”: This is the lure, the reason to act. It is not what Mia is asked to type.
+  - “The link opens a page with the IRS seal”: This is how the page looks. A look can be copied.
 - Taught on: “A copied sign-in page reached from a message” (one tap opens the card).
 
 ### 11. Phishing or Real sign-in: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-phishing-realsignin`]
 
@@ -410,7 +410,7 @@ Did I start this myself, from an app, an address or a number I already had? Or d
 
 ### 12. A link in an email that is not Phishing
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 34*
 
 [reviewers only: card kind `exception`, id `exc-reset`]
 
@@ -418,26 +418,26 @@ Case B of the last card had a link in a message, and so have the scams so far. T
 
 *The password reset*
 
-> Kofi is locked out of an online shop after three wrong guesses at his password. On the shop's own website, which he opened himself, he taps 'Forgot password'. A minute later an email arrives with a link: 'Choose a new password'. He taps the link and types a new password.
+> Kofi is locked out of an online store after three wrong guesses at his password. On the store's own website, which he opened himself, he taps 'Forgot password'. A minute later an email arrives with a link: 'Choose a new password'. He taps the link and types a new password.
 
 There is an email with a link in this case, and a page that wants a password, and that is what **Phishing** usually looks like. Yet this case is **Real sign-in**.
 
 **You are asked:** This looks like **Phishing**. Before you read why it is **Real sign-in**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “Kofi is locked out of an online shop after three wrong guesses at his password”
-2. “On the shop's own website, which he opened himself, he taps 'Forgot password'”
+1. “Kofi is locked out of an online store after three wrong guesses at his password”
+2. “On the store's own website, which he opened himself, he taps 'Forgot password'”
 3. “A minute later an email arrives with a link: 'Choose a new password'”
 4. “He taps the link and types a new password”
 
-**Shown as soon as you tap.** The words are “On the shop's own website, which he opened himself, he taps 'Forgot password'”.
-- If you tapped “Kofi is locked out of an online shop after three wrong guesses at his password”: This tells you why he needs to get in. It does not show who started the reset.
+**Shown as soon as you tap.** The words are “On the store's own website, which he opened himself, he taps 'Forgot password'”.
+- If you tapped “Kofi is locked out of an online store after three wrong guesses at his password”: This tells you why he needs to get in. It does not show who started the reset.
 - If you tapped “A minute later an email arrives with a link: 'Choose a new password'”: This is the part that looks like a copy: an email with a link to a page that wants a password. It is the answer to what he did a minute earlier, so by itself it settles nothing.
 - If you tapped “He taps the link and types a new password”: This is what he does with the email. What matters is what led to the email, and that is in the second sentence.
 
 **Why this is Real sign-in and not Phishing**
 
-Ask what led to the email. Kofi did: a minute earlier, on the shop's own website, he tapped "Forgot password". The email is the shop's answer to that. If he had not asked, the same email would be a copy, because nothing would explain why it arrived.
+Ask what led to the email. Kofi did: a minute earlier, on the store's own website, he tapped "Forgot password". The email is the store's answer to that. If he had not asked, the same email would be a copy, because nothing would explain why it arrived.
 
 This is why a link in a message cannot be what you look at. The question is whether the message answers something you did. A link that arrives after you asked for it is real, and a link that arrives on its own is not.
 
@@ -450,7 +450,7 @@ One thing decides this: whether you started it. A link in a message is not an an
 
 ### 13. A wrong idea: "the padlock means the site is safe"
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 34*
 
 [reviewers only: card kind `refute`, id `refute-padlock`]
 
@@ -477,7 +477,7 @@ So the padlock tells you nothing either way. Use **“Does it fit something you 
 
 ### 14. Someone asking for the code that just came to your phone
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 34*
 
 [reviewers only: card kind `meet`, id `meet-codescam`]
 
@@ -485,11 +485,11 @@ The first copy needed a copied page. The second needs no page at all, because wh
 
 *The phone-order call*
 
-> Ewan's phone rings. A woman says she is from his mobile phone company and that a new phone has been ordered on his account. 'To cancel the order I am sending you a code,' she says. ⟦A text arrives with six digits in it⟧. '⟦Read them out to me⟧,' she says.
+> Ewan's phone rings. A woman says she is from his cell phone company and that a new phone has been ordered on his account. 'To cancel the order I am sending you a code,' she says. ⟦A text arrives with six digits in it⟧. '⟦Read them out to me⟧,' she says.
 
 Stripped of its story, the case is this:
 
-- There is one person, Ewan, and a caller who rang him.
+- There is one person, Ewan, and a caller who phoned him.
 - The caller says a phone has been ordered on his account, and that a code will cancel the order.
 - A text arrives on his phone with six digits in it: a code that has just come to him.
 - The caller asks him to read the digits out to her.
@@ -497,7 +497,7 @@ Stripped of its story, the case is this:
 
 What you are shown is a caller who wants a code. Here is how it goes, in order, and the first part happens before the phone rings.
 
-First, the caller is already trying to get into Ewan's account, or to pay from it, right now. She has his phone number, and perhaps his password from an old leak. Second, the phone company's own system does what it is built to do when someone signs in and it is not sure who: it texts a *one-time code* to the account holder, to be typed into the sign-in. That text is real. Third, the caller rings Ewan with a story that fits, here an order to cancel. Fourth, she asks him to read the code out. Fifth, she types it into her own sign-in, and the system lets her in as Ewan.
+First, the caller is already trying to get into Ewan's account, or to pay from it, right now. She has his phone number, and perhaps his password from an old leak. Second, the phone company's own system does what it is built to do when someone signs in and it is not sure who: it texts a *one-time code* to the account holder, to be typed into the sign-in. That text is real. Third, the caller calls Ewan with a story that fits, here an order to cancel. Fourth, she asks him to read the code out. Fifth, she types it into her own sign-in, and the system lets her in as Ewan.
 
 This is why the scam works on people who would never type a password into a strange page. The code is real. It comes from the real company, on cue, from the real number, in the same list of texts as the real ones. Nothing about it looks wrong, because nothing about it is wrong. What is wrong is who asks for it. A code is for you to type in, into a page or an app that you opened, and nobody else ever needs to hear it.
 
@@ -517,7 +517,7 @@ You may also hear this called “OTP scam” or “verification code scam”. Th
 
 ### 15. One-time code scam: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 34*
 
 [reviewers only: card kind `again`, id `again-codescam`]
 
@@ -554,7 +554,7 @@ The question is **“What does it want you to type in or press?”**, and in bot
 
 ### 16. One-time code scam: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-codescam`]
 
@@ -587,12 +587,12 @@ It reaches you as a phone call that seems to know your bank, as a message from a
 
 **What to do when you meet it**
 
-At the moment, three things. First, do not read the code out or send it on, whoever asks and whatever the reason. A real bank, shop or helper never needs it. Second, end the call or stop the chat. Do not stay to argue: the longer you stay, the more reasons they have. Third, read the text that carries the code. It often says what the code is for, such as a payment you did not make, and often says never to share it.
-Then use *the check*: ring the company on a number you already had, such as the one on your card, and tell them that someone is trying to get into your account. If you have already read a code out, ring the company straight away on that number, ask them to stop any payment and to lock the account, change the password, and look at the list of recent sign-ins.
+At the moment, three things. First, do not read the code out or send it on, whoever asks and whatever the reason. A real bank, store or helper never needs it. Second, end the call or stop the chat. Do not stay to argue: the longer you stay, the more reasons they have. Third, read the text that carries the code. It often says what the code is for, such as a payment you did not make, and often says never to share it.
+Then use *the check*: call the company at a number you already had, such as the one on your card, and tell them that someone is trying to get into your account. If you have already read a code out, call the company right away at that number, ask them to stop any payment and to lock the account, change the password, and look at the list of recent sign-ins.
 
 ### 17. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 34*
 
 [reviewers only: card kind `check`, id `check-codescam`]
 
@@ -612,7 +612,7 @@ Then use *the check*: ring the company on a number you already had, such as the 
 
 ### 18. One-time code scam or Real sign-in: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-codescam-realsignin`]
 
@@ -620,13 +620,13 @@ You have met **Real sign-in** and **One-time code scam**. Both can involve the s
 
 **Case A**
 
-> Hana wants to pay a bill, so she opens her banking app. To approve the payment of £60, the app says it has sent a code to her phone. The code arrives and she types it into the app.
+> Hana wants to pay a bill, so she opens her banking app. To approve the payment of $60, the app says it has sent a code to her phone. The code arrives and she types it into the app.
 
 **Case B**
 
-> Hana's phone rings. A man says he is from her bank's fraud team and that someone is trying to pay £60 from her account. 'I have just sent a code to your phone,' he says. 'Read it out to me and I will stop the payment.'
+> Hana's phone rings. A man says he is from her bank's fraud team and that someone is trying to pay $60 from her account. 'I have just sent a code to your phone,' he says. 'Read it out to me and I will stop the payment.'
 
-**What to compare.** Both cases are about Hana, her bank, a payment of £60 and a code that arrives on her phone. Compare one thing: who asks for the code, and where it goes.
+**What to compare.** Both cases are about Hana, her bank, a payment of $60 and a code that arrives on her phone. Compare one thing: who asks for the code, and where it goes.
 
 **You are asked:** Which case gives the answer **“Yes: you started it through a way you already had, and it asks only what that needs”**? (Case A / Case B)
 
@@ -636,7 +636,7 @@ You have met **Real sign-in** and **One-time code scam**. Both can involve the s
 
 In Case A Hana opened her own banking app to pay a bill. The code arrives because of what she did, and she types it into the same app. Nobody else sees it. The answer is **“Yes: you started it through a way you already had, and it asks only what that needs”**, and the case is **Real sign-in**.
 
-In Case B a man rings her, and he is the one who asks for the code: "read it out to me". She did not start anything. The code is just as real as in Case A. The answer is the other one for the same question, and the case is **One-time code scam**.
+In Case B a man calls her, and he is the one who asks for the code: "read it out to me". She did not start anything. The code is just as real as in Case A. The answer is the other one for the same question, and the case is **One-time code scam**.
 
 So the code does not tell you which case you are in. The same bank sends the same code in both. What differs is whose hands it is going into: your own app, or a caller's ear.
 
@@ -656,7 +656,7 @@ Who is going to see this code: only the page or the app I opened myself, or a pe
 
 ### 19. A code that comes after a password
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 34*
 
 [reviewers only: card kind `exception`, id `exc-both`]
 
@@ -664,20 +664,20 @@ So far a password and a code have been two different things, asked for in two di
 
 *The held order*
 
-> Gil gets an email that says it is from an online shop: 'Your order is on hold. Sign in to release it.' The link opens a page that asks for his password. When he types it, a second window says: 'We have sent a six-digit code to your phone. Type it here to finish signing in.'
+> Gil gets an email that says it is from an online store: 'Your order is on hold. Sign in to release it.' The link opens a page that asks for his password. When he types it, a second window says: 'We have sent a six-digit code to your phone. Type it here to finish signing in.'
 
 There is a code in this case, and a code that comes to your phone is what **One-time code scam** is about. Yet this case is **Phishing**.
 
 **You are asked:** This looks like **One-time code scam**. Before you read why it is **Phishing**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “Gil gets an email that says it is from an online shop”
+1. “Gil gets an email that says it is from an online store”
 2. “Your order is on hold. Sign in to release it”
 3. “The link opens a page that asks for his password”
 4. “When he types it, a second window says: 'We have sent a six-digit code to your phone. Type it here to finish signing in.'”
 
 **Shown as soon as you tap.** The words are “The link opens a page that asks for his password”.
-- If you tapped “Gil gets an email that says it is from an online shop”: This says who the email claims to be from, and it came to him. It does not say what he is asked to type first.
+- If you tapped “Gil gets an email that says it is from an online store”: This says who the email claims to be from, and it came to him. It does not say what he is asked to type first.
 - If you tapped “Your order is on hold. Sign in to release it”: This is the reason given. What the page then asks for is in the next sentence.
 - If you tapped “When he types it, a second window says: 'We have sent a six-digit code to your phone. Type it here to finish signing in.'”: This is the code, and it is the part that makes the case look like the code scam. But it comes second, after the page has begun by asking for the password.
 
@@ -685,7 +685,7 @@ The pieces you can tap:
 
 Count what is asked, and in what order. First, Gil is sent to a page that asks for his password. Only after he has typed it does a second window ask for the code. That is two requests, and the second only comes if the first is done.
 
-Every case gets one answer, and where a case asks for two things the answer is the first one, so here the answer is **“Your password”**. The code here is not the one from the call: nobody is asking Gil to read it out to them. It is a step on the same copied page. The scammer is signing in to the real shop at that moment with the password that Gil has just typed, the real shop has sent the code, and the copied page asks for it so that it can be passed on.
+Every case gets one answer, and where a case asks for two things the answer is the first one, so here the answer is **“Your password”**. The code here is not the one from the call: nobody is asking Gil to read it out to them. It is a step on the same copied page. The scammer is signing in to the real store at that moment with the password that Gil has just typed, the real store has sent the code, and the copied page asks for it so that it can be passed on.
 
 So the code does not make the case **One-time code scam**. It makes it a more complete **Phishing**. The code scam is the one that has no page: a person who contacted you asks you to read a code out or send it on.
 
@@ -709,7 +709,7 @@ When a case asks for a password and then for a code, put your finger on the pass
 
 ### 20. A wrong idea: "it came in the same thread as my bank's real texts"
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 34*
 
 [reviewers only: card kind `refute`, id `refute-thread`]
 
@@ -725,7 +725,7 @@ A text message can be sent so that it shows any name, including the name of your
 
 The idea is wrong in the other direction too. A real text from your bank can come from a number you do not know, so a message that is not in the conversation is not thereby a scam.
 
-So where a message sits tells you nothing. Use **“Does it fit something you started?”**: did you start it? A caller who rings you, and a text that comes to you, were not started by you, whichever list they sit in.
+So where a message sits tells you nothing. Use **“Does it fit something you started?”**: did you start it? A caller who calls you, and a text that comes to you, were not started by you, whichever list they sit in.
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, An Allow, for an app.*
@@ -736,7 +736,7 @@ So where a message sits tells you nothing. Use **“Does it fit something you st
 
 ### 21. An app that asks for far more of your account than it needs
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 21 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 21 of 34*
 
 [reviewers only: card kind `meet`, id `meet-appscam`]
 
@@ -775,11 +775,11 @@ You may also hear this called “consent phishing” or “OAuth phishing”. Th
 
 ### 22. App permission scam: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 22 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 22 of 34*
 
 [reviewers only: card kind `again`, id `again-appscam`]
 
-Rafa's *permission screen* gave you what to point to for **App permission scam**, from one case: a permission screen asking you to press Allow for an app, and an app that came to you in a message or asks for far more of your account than your task needs. Here is a second case with a different story. This one is an advert, and the app is offering something.
+Rafa's *permission screen* gave you what to point to for **App permission scam**, from one case: a permission screen asking you to press Allow for an app, and an app that came to you in a message or asks for far more of your account than your task needs. Here is a second case with a different story. This one is an ad, and the app is offering something.
 
 The first case again, in one line. *The shared document*: “Docs Sync Pro would like to read, send and delete all your email, and see all your contacts”
 
@@ -787,16 +787,16 @@ The second case.
 
 *The free photo prints*
 
-> An advert on a social media site offers Bea twenty free photo prints if she 'connects her email account'. Her email provider's permission screen asks whether PrintPal may read, send and delete all her email. It has two buttons, Allow and Cancel.
+> An ad on a social media site offers Bea twenty free photo prints if she 'connects her email account'. Her email provider's permission screen asks whether PrintPal may read, send and delete all her email. It has two buttons, Allow and Cancel.
 **You are asked:** In *The shared document*, these words show it: “Docs Sync Pro would like to read, send and delete all your email, and see all your contacts”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “An advert on a social media site offers Bea twenty free photo prints if she 'connects her email account'”
+1. “An ad on a social media site offers Bea twenty free photo prints if she 'connects her email account'”
 2. “Her email provider's permission screen asks whether PrintPal may read, send and delete all her email”
 3. “It has two buttons, Allow and Cancel”
 
 **Shown as soon as you tap.** The words are “Her email provider's permission screen asks whether PrintPal may read, send and delete all her email”.
-- If you tapped “An advert on a social media site offers Bea twenty free photo prints if she 'connects her email account'”: This is the offer, and it came to her. It does not show what the *permission screen* asks the app to be allowed to do.
+- If you tapped “An ad on a social media site offers Bea twenty free photo prints if she 'connects her email account'”: This is the offer, and it came to her. It does not show what the *permission screen* asks the app to be allowed to do.
 - If you tapped “It has two buttons, Allow and Cancel”: These are the buttons. They show that she is being asked to press Allow, but not what for.
 
 **What the two share**
@@ -810,7 +810,7 @@ The question is **“What does it want you to type in or press?”**, and in bot
 
 ### 23. App permission scam: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 23 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 23 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-appscam`]
 
@@ -848,7 +848,7 @@ If you have already pressed Allow, the way to end it is to remove the app. Open 
 
 ### 24. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 24 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 24 of 34*
 
 [reviewers only: card kind `check`, id `check-appscam`]
 
@@ -870,7 +870,7 @@ If you have already pressed Allow, the way to end it is to remove the app. Open 
 
 ### 25. App permission scam or Real sign-in: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 25 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 25 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-appscam-realsignin`]
 
@@ -920,7 +920,7 @@ Did I go looking for this app myself, and does the list in the *permission scree
 
 ### 26. The first question: “What does it want you to type in or press?”
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 26 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 26 of 34*
 
 [reviewers only: card kind `question`, id `q-A1`]
 
@@ -991,11 +991,11 @@ Sometimes two answers both seem to fit. Each pair below is set side by side in t
 
 ### 27. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 27 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 27 of 34*
 
 [reviewers only: card kind `check`, id `check-A1`]
 
-> A man rings Zoe and says he is from the pharmacy that sends her prescription, and that a payment for it has failed. A text with a six-digit number arrives on her phone. 'Read it to me,' he says, 'so that I can confirm it is you.'
+> A man calls Zoe and says he is from the pharmacy that sends her prescription, and that a payment for it has failed. A text with a six-digit number arrives on her phone. 'Read it to me,' he says, 'so that I can confirm it is you.'
 
 **The question:** **“What does it want you to type in or press?”**
 
@@ -1013,7 +1013,7 @@ Sometimes two answers both seem to fit. Each pair below is set side by side in t
 
 ### 28. The second question: “Does it fit something you started?”
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 28 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 28 of 34*
 
 [reviewers only: card kind `question`, id `q-A2`]
 
@@ -1063,11 +1063,11 @@ Sometimes it is hard to say which of two names a case is. Each pair below has be
 
 ### 29. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 29 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 29 of 34*
 
 [reviewers only: card kind `check`, id `check-A2`]
 
-> Greta wants to look at her pension. She types the address printed on her yearly statement into her computer. The page asks for her username and password, and she types them in.
+> Greta wants to look at her retirement plan. She types the address printed on her yearly statement into her computer. The page asks for her username and password, and she types them in.
 
 **The question:** **“Does it fit something you started?”**
 
@@ -1076,14 +1076,14 @@ Sometimes it is hard to say which of two names a case is. Each pair below has be
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Yes: you started it through a way you already had, and it asks only what that needs.**” Greta decided to look at her pension and used an address she already had: “She types the address printed on her yearly statement into her computer”. Nothing was sent to her, and the page asks only for what signing in needs. This answer leads to **Real sign-in**.
+- If you are right: “Right: **Yes: you started it through a way you already had, and it asks only what that needs.**” Greta decided to look at her retirement plan and used an address she already had: “She types the address printed on her yearly statement into her computer”. Nothing was sent to her, and the page asks only for what signing in needs. This answer leads to **Real sign-in**.
 - If you miss: “The answer is **Yes: you started it through a way you already had, and it asks only what that needs.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **No: it came to you, or it asks for more than you set out to do**: Give that answer when the sign-in page, the request for the code or the app came to you in a message, a call, a link or a pop-up you did not ask for, or the app asks for far more of your account than the task you set out to do needs. This case shows something else: you set out to sign in or to connect an app yourself, on a site or app you reached through a way you already had, and you type the password or the code into that same site, or the app asks only for what your task needs.
 - Taught on: “The second question: “Does it fit something you started?”” (one tap opens the card).
 
 ### 30. A whole case, from the first question to the name
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 30 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 30 of 34*
 
 [reviewers only: card kind `worked`, id `worked-code`]
 
@@ -1134,10 +1134,10 @@ Still possible: **One-time code scam**. Ruled out: **Real sign-in**, **Phishing*
 **You are asked:** The code is real, and it comes from Callum's own streaming service, so the case can look like the real thing. Why is this **One-time code scam** and not **Real sign-in**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
 - (a) The code is real, and it comes from Callum's own streaming service.
-- (b) Callum did not ask for the code. A man who rang him wants it read out.
+- (b) Callum did not ask for the code. A man who called him wants it read out.
 - (c) The man says someone is signing in from another country.
 
-**Shown as soon as you choose.** The one that settles it is (b): Callum did not ask for the code. A man who rang him wants it read out.
+**Shown as soon as you choose.** The one that settles it is (b): Callum did not ask for the code. A man who called him wants it read out.
 - If you chose (a): True, and it is why the case can look like **Real sign-in**. But a real code is typed in by the person it was sent to. Here it is asked for by someone else.
 - If you chose (c): True, and it is the story the man tells. It is the reason he gives for the call, and a reason does not show who started anything.
 
@@ -1149,31 +1149,31 @@ It is the question from Hana's two cases. Who is going to see this code: only th
 
 **Does it look like a case you know?**
 
-You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the phone-order call: someone rings, says there is a problem on the account, and a real code arrives while they are talking.
+You have your answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the phone-order call: someone calls, says there is a problem on the account, and a real code arrives while they are talking.
 
 Here the questions and the likeness agree, so the answer stands. The questions come first, because they make you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the questions and find the words in the case that answer them. The second whole case shows how.
 
 ### 31. A second whole case, where the story points the wrong way
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 31 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 31 of 34*
 
 [reviewers only: card kind `worked`, id `worked-cv`]
 
 The streaming call was a clean case: one thing was going on, and nothing pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.
 
-*The CV checker*
+*The résumé checker*
 
-> Fern is looking for work. She searches the web for 'free CV checker' and opens the first site she finds. It says: 'Sign in with your email account to check your CV.' Her email provider's own permission screen appears: 'CV Pal would like to read, send and delete all your email.' It has two buttons, Allow and Cancel.
+> Fern is looking for work. She searches the web for 'free résumé checker' and opens the first site she finds. It says: 'Sign in with your email account to check your résumé.' Her email provider's own permission screen appears: 'Résumé Pal would like to read, send and delete all your email.' It has two buttons, Allow and Cancel.
 
 **Question 1 of 3: What is it asking you to do right now?**
 
 What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all.
 
-> Fern is looking for work. She searches the web for 'free CV checker' and opens the first site she finds. It says: '⟦Sign in with your email account to check your CV⟧.' Her email provider's own permission screen appears: 'CV Pal would like to read, send and delete all your email.' It has two buttons, Allow and Cancel.
+> Fern is looking for work. She searches the web for 'free résumé checker' and opens the first site she finds. It says: '⟦Sign in with your email account to check your résumé⟧.' Her email provider's own permission screen appears: 'Résumé Pal would like to read, send and delete all your email.' It has two buttons, Allow and Cancel.
 
 Answer: **“Sign in, give a code, or allow an app”**
 
-Nothing here is to be installed or opened, and no money or facts about Fern are asked for. She is asked to sign in with her email account: “Sign in with your email account to check your CV”. That is a request about a way into an account.
+Nothing here is to be installed or opened, and no money or facts about Fern are asked for. She is asked to sign in with her email account: “Sign in with your email account to check your résumé”. That is a request about a way into an account.
 
 Still possible: all four names this unit teaches.
 
@@ -1181,11 +1181,11 @@ Still possible: all four names this unit teaches.
 
 What it is for: sorts requests for a way into an account by what you would give: a password, a one-time code or an Allow.
 
-> Fern is looking for work. She searches the web for 'free CV checker' and opens the first site she finds. It says: 'Sign in with your email account to check your CV.' Her email provider's own permission screen appears: '⟦CV Pal would like to read, send and delete all your email⟧.' It has two buttons, Allow and Cancel.
+> Fern is looking for work. She searches the web for 'free résumé checker' and opens the first site she finds. It says: 'Sign in with your email account to check your résumé.' Her email provider's own permission screen appears: '⟦Résumé Pal would like to read, send and delete all your email⟧.' It has two buttons, Allow and Cancel.
 
 Answer: **“Allow, on a permission screen for an app”**
 
-Now ask what she is asked to type or press. The site says to sign in with her email account, but what her provider's *permission screen* then asks her to do is press Allow, for an app: “CV Pal would like to read, send and delete all your email”. No password is typed into the site. What is asked is an Allow.
+Now ask what she is asked to type or press. The site says to sign in with her email account, but what her provider's *permission screen* then asks her to do is press Allow, for an app: “Résumé Pal would like to read, send and delete all your email”. No password is typed into the site. What is asked is an Allow.
 
 Still possible: **Real sign-in** and **App permission scam**. Ruled out: **Phishing** and **One-time code scam**.
 
@@ -1193,13 +1193,13 @@ Still possible: **Real sign-in** and **App permission scam**. Ruled out: **Phish
 
 What it is for: tells a real sign-in, code or Allow apart from the scams that copy it.
 
-> Fern is looking for work. She searches the web for 'free CV checker' and opens the first site she finds. It says: 'Sign in with your email account to check your CV.' Her email provider's own permission screen appears: '⟦CV Pal would like to read, send and delete all your email⟧.' It has two buttons, Allow and Cancel.
+> Fern is looking for work. She searches the web for 'free résumé checker' and opens the first site she finds. It says: 'Sign in with your email account to check your résumé.' Her email provider's own permission screen appears: '⟦Résumé Pal would like to read, send and delete all your email⟧.' It has two buttons, Allow and Cancel.
 
 Answer: **“No: it came to you, or it asks for more than you set out to do”**
 
-Now ask whether it fits something she started. This is where the story points the wrong way. Fern did set out to do this: she wanted her CV checked and she opened the site herself. She found it by searching, and the first result of a search can be an advert that anyone can buy, so even the first half is doubtful.
+Now ask whether it fits something she started. This is where the story points the wrong way. Fern did set out to do this: she wanted her résumé checked and she opened the site herself. She found it by searching, and the first result of a search can be an ad that anyone can buy, so even the first half is doubtful.
 
-But you do not need to settle that, because the second half fails on its own. Look at what the *permission screen* asks: “CV Pal would like to read, send and delete all your email”. Checking a CV needs a CV. It does not need every email Fern has, or the right to send and delete them. So the answer is no.
+But you do not need to settle that, because the second half fails on its own. Look at what the *permission screen* asks: “Résumé Pal would like to read, send and delete all your email”. Checking a résumé needs a résumé. It does not need every email Fern has, or the right to send and delete them. So the answer is no.
 
 Still possible: **App permission scam**. Ruled out: **Real sign-in**, **Phishing** and **One-time code scam**.
 
@@ -1207,17 +1207,17 @@ Still possible: **App permission scam**. Ruled out: **Real sign-in**, **Phishing
 
 **You are asked:** Fern went looking for the site herself, and the *permission screen* is her own provider's, so the case can look like a real Allow. Why is this **App permission scam** and not **Real sign-in**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
-- (a) Fern started it herself, by searching for a CV checker.
+- (a) Fern started it herself, by searching for a résumé checker.
 - (b) The *permission screen* comes from her own email provider.
-- (c) The *permission screen* asks to read, send and delete all her email, for a job that needs only a CV.
+- (c) The *permission screen* asks to read, send and delete all her email, for a job that needs only a résumé.
 
-**Shown as soon as you choose.** The one that settles it is (c): The *permission screen* asks to read, send and delete all her email, for a job that needs only a CV.
+**Shown as soon as you choose.** The one that settles it is (c): The *permission screen* asks to read, send and delete all her email, for a job that needs only a résumé.
 - If you chose (a): True, and it is why the case can look like **Real sign-in**. But starting it yourself is only half of what a real one needs. The other half is that it asks only what the task needs.
 - If you chose (b): True. The *permission screen* is real in all three scams too, so it settles nothing.
 
 **Why this is App permission scam and not Real sign-in**
 
-For **Real sign-in** you must be able to point to this: a sign-in, a code or an Allow that you started yourself, on a site or app you reached through a way you already had, and nothing asked beyond what you set out to do. The last part of it, nothing asked beyond what you set out to do, fails here. Fern set out to check a CV, and the *permission screen* asks for her whole mailbox.
+For **Real sign-in** you must be able to point to this: a sign-in, a code or an Allow that you started yourself, on a site or app you reached through a way you already had, and nothing asked beyond what you set out to do. The last part of it, nothing asked beyond what you set out to do, fails here. Fern set out to check a résumé, and the *permission screen* asks for her whole mailbox.
 
 It is the question from Omar's two cases. Did I go looking for this app myself, and does the list in the *permission screen* ask only for what I want the app to do? Here the *permission screen* asks for far more than the job, so the answer is **“No: it came to you, or it asks for more than you set out to do”**.
 
@@ -1225,15 +1225,15 @@ It is the question from Omar's two cases. Did I go looking for this app myself, 
 
 Now the second look: does this case look like one you know? A person who went looking for an app herself, to do a job of her own, may bring back Omar and his meeting planner first, and that case was **Real sign-in**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the questions and find the words in the case that answer them. They are “CV Pal would like to read, send and delete all your email”. Omar's *permission screen* asked to see his calendar and nothing else. Fern's asks for all her email. So the case this one really looks like is Rafa's shared document, where the *permission screen* asked for far more than a document needs, and the answer stands.
+When that happens, go back to the questions and find the words in the case that answer them. They are “Résumé Pal would like to read, send and delete all your email”. Omar's *permission screen* asked to see his calendar and nothing else. Fern's asks for all her email. So the case this one really looks like is Rafa's shared document, where the *permission screen* asked for far more than a document needs, and the answer stands.
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Some of these requests are real and some are copies, on purpose. The real thing comes up as often as the three scams, and the two questions you are practising give it its own answer. In every case, put your finger on what you are asked to type or press, and on whether the person started it.
+Some of these requests are real and some are copies, on purpose. The real thing comes up as often as the three scams, and the two questions you are practicing give it its own answer. In every case, put your finger on what you are asked to type or press, and on whether the person started it.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: Real sign-in / Phishing / One-time code scam / App permission scam.
 
@@ -1279,7 +1279,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 3 of 51**
 
-> Mehdi posts his CV on a jobs site. ⟦A 'recruiter' messages him⟧: 'To show that you are a real person I have sent a code to your phone. ⟦Please send me the number⟧.' ⟦A text with a six-digit code arrives⟧.
+> Mehdi posts his résumé on a jobs site. ⟦A 'recruiter' messages him⟧: 'To show that you are a real person I have sent a code to your phone. ⟦Please send me the number⟧.' ⟦A text with a six-digit code arrives⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1319,7 +1319,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 5 of 51**
 
-> ⟦A friend shares a quiz on a social media site⟧: 'Which film star are you?' It tells Lena to log in with her email account. Her email provider's permission screen ⟦asks whether the quiz may read, send and delete all her email, and see her contacts⟧. ⟦It has two buttons, Allow and Cancel⟧.
+> ⟦A friend shares a quiz on a social media site⟧: 'Which movie star are you?' It tells Lena to log in with her email account. Her email provider's permission screen ⟦asks whether the quiz may read, send and delete all her email, and see her contacts⟧. ⟦It has two buttons, Allow and Cancel⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1339,7 +1339,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 6 of 51**
 
-> Nia wants a photo book of her holiday photos, which are stored with her cloud photo service. ⟦She finds the photo-book company's app herself, in her cloud service's own app list⟧. The service's permission screen says that ⟦the app would like to see her photos, and nothing else⟧. ⟦She presses Allow⟧.
+> Nia wants a photo book of her vacation photos, which are stored with her cloud photo service. ⟦She finds the photo-book company's app herself, in her cloud service's own app list⟧. The service's permission screen says that ⟦the app would like to see her photos, and nothing else⟧. ⟦She presses Allow⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1359,7 +1359,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 51**
 
-> ⟦A leaflet comes through Dan's door⟧: 'Your council tax account needs updating. ⟦Scan the code to log in⟧.' He scans it with his phone, and it opens a page with the council's crest that ⟦asks for his account number and password⟧.
+> ⟦A flyer is left at Dan's door⟧: 'Your property tax account needs updating. ⟦Scan the code to log in⟧.' He scans it with his phone, and it opens a page with the county's seal that ⟦asks for his account number and password⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1370,8 +1370,8 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The leaflet came to Dan through his door: “A leaflet comes through Dan's door”. He did not start anything, and a code printed on a leaflet is not an address he already had.
-  - Why not **Real sign-in**: A real council sign-in would be one that Dan started, from the council's own address or a bill. This began with a leaflet, and the page asks for the same password a real one would.
+- If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The leaflet came to Dan through his door: “A flyer is left at Dan's door”. He did not start anything, and a code printed on a leaflet is not an address he already had.
+  - Why not **Real sign-in**: A real county sign-in would be one that Dan started, from the county's own address or a bill. This began with a leaflet, and the page asks for the same password a real one would.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both can arrive as the same sign-in page, with the same logo, for the same account, asking for a password. In **Real sign-in** you began it yourself, using an app, an address or a number that you had before, and it asks no more than the task needs. In **Phishing** it came to you in a message you did not ask for, and the page it leads to asks for a password. Did I start this myself, from an app, an address or a number I already had? Or did a message, a call or a pop-up bring me to the page?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1379,7 +1379,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 51**
 
-> ⟦A message from a number Pat does not know says⟧: 'Your team has been invited to Shiftly, a free rota tool. Sign in with your email to join.' Pat taps the link. His email provider's permission screen says that ⟦Shiftly would like to read, send and delete all his email⟧. ⟦It has two buttons, Allow and Cancel⟧.
+> ⟦A message from a number Pat does not know says⟧: 'Your team has been invited to Shiftly, a free scheduling tool. Sign in with your email to join.' Pat taps the link. His email provider's permission screen says that ⟦Shiftly would like to read, send and delete all his email⟧. ⟦It has two buttons, Allow and Cancel⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1390,8 +1390,8 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** It came to Pat in a message from a number he does not know: “A message from a number Pat does not know says”. He did not go looking for it, and a rota tool has no need to delete his email.
-  - Why not **Real sign-in**: The *permission screen* comes from his own email provider, as it would in a real Allow. But he did not start it, and the app asks for far more than a rota needs.
+- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** It came to Pat in a message from a number he does not know: “A message from a number Pat does not know says”. He did not go looking for it, and a scheduling tool has no need to delete his email.
+  - Why not **Real sign-in**: The *permission screen* comes from his own email provider, as it would in a real Allow. But he did not start it, and the app asks for far more than a schedule needs.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both are the same *permission screen* from the same provider, with the same Allow button, for an app with an ordinary name. In **Real sign-in** you went looking for the app yourself, and the list in the *permission screen* asks only for what the app's job needs. In **App permission scam** the app came to you in a message, or its list asks for far more than its job. Did I go looking for this app myself, and does the list in the *permission screen* ask only for what I want the app to do?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1401,7 +1401,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 9 of 51**
 
-> Rin gets an email: 'Your parcel could not be delivered. Log in to arrange a new date.' The link opens a page that asks for her shop account email and password.
+> Rin gets an email: 'Your package could not be delivered. Log in to arrange a new date.' The link opens a page that asks for her store account email and password.
 
 **You are asked:** What does it want you to type in or press?
 
@@ -1411,14 +1411,14 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Your password.**” The page asks for an email and a password: “asks for her shop account email and password”. Typing a password into a page is what this answer is for. This answer leads to **Phishing** and **Real sign-in**.
+- If you are right: “Right: **Your password.**” The page asks for an email and a password: “asks for her store account email and password”. Typing a password into a page is what this answer is for. This answer leads to **Phishing** and **Real sign-in**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The first question: “What does it want you to type in or press?”” (one tap opens the card).
 
 **Drill item 10 of 51**
 
-> A caller says he is from the council and that Raj's parking permit needs a code 'to confirm it is you'. A text with a six-digit code arrives on Raj's phone, and the caller asks him to read it out.
+> A caller says he is from the county and that Raj's parking permit needs a code 'to confirm it is you'. A text with a six-digit code arrives on Raj's phone, and the caller asks him to read it out.
 
 **You are asked:** What does it want you to type in or press?
 
@@ -1452,7 +1452,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 12 of 51**
 
-> Kay wants to book a blood test. She opens her surgery's app, which she has used since her doctor told her about it last year, and signs in with her username and password.
+> Kay wants to book a blood test. She opens her clinic's app, which she has used since her doctor told her about it last year, and signs in with her username and password.
 
 **You are asked:** Does it fit something you started?
 
@@ -1461,7 +1461,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Yes: you started it through a way you already had, and it asks only what that needs.**” Kay started this herself, in an app that she already had: “She opens her surgery's app, which she has used since her doctor told her about it last year”. The sign-in asks only for a username and a password, which is what a sign-in needs. This answer leads to **Real sign-in**.
+- If you are right: “Right: **Yes: you started it through a way you already had, and it asks only what that needs.**” Kay started this herself, in an app that she already had: “She opens her clinic's app, which she has used since her doctor told her about it last year”. The sign-in asks only for a username and a password, which is what a sign-in needs. This answer leads to **Real sign-in**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The second question: “Does it fit something you started?”” (one tap opens the card).
@@ -1485,7 +1485,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 14 of 51**
 
-> Hugo wants to turn his holiday photos into a video. He finds a free video app himself in his phone's app store and opens it. The app asks him to sign in with his email account, and his provider's permission screen asks whether it may read, send and delete all his email. It has two buttons, Allow and Cancel.
+> Hugo wants to turn his vacation photos into a video. He finds a free video app himself in his phone's app store and opens it. The app asks him to sign in with his email account, and his provider's permission screen asks whether it may read, send and delete all his email. It has two buttons, Allow and Cancel.
 
 **You are asked:** Does it fit something you started?
 
@@ -1633,14 +1633,14 @@ Shown to you, with the words that decide each answer marked:
 **You are asked:** This is **Real sign-in**. Which detail would you expect to find in the case?
 
 - He had typed the company's address himself, and the page asked for a password and nothing more.
-- A caller who had phoned her asked her to read out the six digits that had just come to her phone.
+- A caller who had called her asked her to read out the six digits that had just come to her phone.
 - A text with a link opened a page that asked for her password.
 - A permission screen from an app she had never heard of asked to read, send and delete all her email.
 
 **Shown as soon as you answer**
 
 - The answer is: He had typed the company's address himself, and the page asked for a password and nothing more. A real one began with the person: they opened the app or typed the address, and what it asked was no more than the task needed. In each of the other three, the request came to the person, or asked for far more than the task needed.
-- If you chose “A caller who had phoned her asked her to read out the six digits that had just come to her phone.”: that belongs to **One-time code scam**.
+- If you chose “A caller who had called her asked her to read out the six digits that had just come to her phone.”: that belongs to **One-time code scam**.
 - If you chose “A text with a link opened a page that asked for her password.”: that belongs to **Phishing**.
 - If you chose “A permission screen from an app she had never heard of asked to read, send and delete all her email.”: that belongs to **App permission scam**.
 - Taught on: “Real sign-in: what it is like” (one tap opens the card).
@@ -1684,7 +1684,7 @@ Shown to you, with the words that decide each answer marked:
 **You are asked:** This is **App permission scam**. Which detail would you expect to find in the case?
 
 - A copied page with her bank's logo asked for her password.
-- A man rang and asked her to read out the digits of a code.
+- A man called and asked her to read out the digits of a code.
 - The permission screen listed what the app may do: read, send and delete all her email, for a job that needed a photo.
 - The page asked for a username and password, and she had typed its address from her bill.
 
@@ -1692,7 +1692,7 @@ Shown to you, with the words that decide each answer marked:
 
 - The answer is: The permission screen listed what the app may do: read, send and delete all her email, for a job that needed a photo. That detail is the list in the *permission screen*: an app asked to be allowed to do far more than its job needs. The other three are a copied page, a caller and a sign-in that she started.
 - If you chose “A copied page with her bank's logo asked for her password.”: that belongs to **Phishing**.
-- If you chose “A man rang and asked her to read out the digits of a code.”: that belongs to **One-time code scam**.
+- If you chose “A man called and asked her to read out the digits of a code.”: that belongs to **One-time code scam**.
 - If you chose “The page asked for a username and password, and she had typed its address from her bill.”: that belongs to **Real sign-in**.
 - Taught on: “App permission scam: what it is like” (one tap opens the card).
 
@@ -1720,7 +1720,7 @@ Shown to you, with the words that decide each answer marked:
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> The secretary of Hugo's cycling club emails the members: 'Tickets for the away trip are £18 each. Please pay the treasurer by bank transfer by the 12th.'
+> The secretary of Hugo's cycling club emails the members: 'Tickets for the club trip are $18 each. Please pay the treasurer by Zelle by the 12th.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1732,7 +1732,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay the treasurer by bank transfer by the 12th”. A transfer is one of the ways of paying.
+- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay the treasurer by Zelle by the 12th”. A transfer is one of the ways of paying.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -1742,7 +1742,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 29 of 51**
 
-> An email that says it is from her university tells Nell: 'Your student account will close on Friday. ⟦Sign in to keep it⟧.' The link opens a page with the university's crest that ⟦asks for her student number and password⟧.
+> An email that says it is from her university tells Nell: 'Your student account will close on Friday. ⟦Sign in to keep it⟧.' The link opens a page with the university's seal that ⟦asks for her student number and password⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1753,9 +1753,9 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The email came to Nell and she did not start it: “An email that says it is from her university”. The threat of closing the account is the bait, and it does not make the sign-in something she started.
-  - Why not **Real sign-in**: **Real sign-in** is one that she began herself, in an app or at an address she had before. This one began with an email, and the crest on the page only shows how the page looks.
+  - Why not **Real sign-in**: **Real sign-in** is one that she began herself, in an app or at an address she had before. This one began with an email, and the seal on the page only shows how the page looks.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: **Real sign-in** is one that she began herself, in an app or at an address she had before. This one began with an email, and the crest on the page only shows how the page looks.
+  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: **Real sign-in** is one that she began herself, in an app or at an address she had before. This one began with an email, and the seal on the page only shows how the page looks.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both can arrive as the same sign-in page, with the same logo, for the same account, asking for a password. In **Real sign-in** you began it yourself, using an app, an address or a number that you had before, and it asks no more than the task needs. In **Phishing** it came to you in a message you did not ask for, and the page it leads to asks for a password. Did I start this myself, from an app, an address or a number I already had? Or did a message, a call or a pop-up bring me to the page?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1796,9 +1796,9 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Ian did not start this: a call came to him: “Ian's phone rings”. A code is for typing into a sign-in that you started, and he started nothing.
-  - Why not **Real sign-in**: The code is real, and it may well come from his company's own system. But a real code is typed in by the person it was sent to, and here a caller who rang him wants it read out.
+  - Why not **Real sign-in**: The code is real, and it may well come from his company's own system. But a real code is typed in by the person it was sent to, and here a caller who phoned him wants it read out.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The code is real, and it may well come from his company's own system. But a real code is typed in by the person it was sent to, and here a caller who rang him wants it read out.
+  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The code is real, and it may well come from his company's own system. But a real code is typed in by the person it was sent to, and here a caller who phoned him wants it read out.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account. In **Real sign-in** the code arrives because of something you started, and you type it into the page or the app that you opened. In **One-time code scam** someone who contacted you asks you to read the code out or send it on. Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1829,7 +1829,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 33 of 51**
 
-> Hilda wants to send in her tax return. She types the tax office's web address from the letter it sent her last month. ⟦The page asks for her user ID and password⟧, and she types them in.
+> Hilda wants to send in her tax return. She types the IRS's web address from the letter it sent her last month. ⟦The page asks for her user ID and password⟧, and she types them in.
 
 Shown to you, with the words that decide each answer marked:
 - What is it asking you to do right now? **Sign in, give a code, or allow an app**
@@ -1839,8 +1839,8 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Hilda set out to send her return and used an address that was printed on a letter she already had: “She types the tax office's web address from the letter it sent her last month”. Nothing sent her there, and the page asks only for a sign-in.
-  - Why not **Phishing**: The tax office is also the name on many copies, and a copy would ask for the same user ID and password. What makes this one real is where Hilda started: an address on a letter she already had.
+- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Hilda set out to send her return and used an address that was printed on a letter she already had: “She types the IRS's web address from the letter it sent her last month”. Nothing sent her there, and the page asks only for a sign-in.
+  - Why not **Phishing**: The IRS is also the name on many copies, and a copy would ask for the same user ID and password. What makes this one real is where Hilda started: an address on a letter she already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Phishing**, the look-alike card’s lines follow: Both can arrive as the same sign-in page, with the same logo, for the same account, asking for a password. In **Real sign-in** you began it yourself, using an app, an address or a number that you had before, and it asks no more than the task needs. In **Phishing** it came to you in a message you did not ask for, and the page it leads to asks for a password. Did I start this myself, from an app, an address or a number I already had? Or did a message, a call or a pop-up bring me to the page?
@@ -1854,13 +1854,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 34 of 51**
 
-> Joan gets a text that says it is from her doctor's surgery: 'Your test results are ready. Log in to see them.' The link opens a page with the surgery's name that asks for her patient number and password.
+> Joan gets a text that says it is from her doctor's office: 'Your test results are ready. Log in to see them.' The link opens a page with the clinic's name that asks for her patient number and password.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The text came to Joan and she did not start it: “Joan gets a text that says it is from her doctor's surgery”. Test results are a good bait because she is waiting for them, but waiting for something does not mean she asked for this message.
+- If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The text came to Joan and she did not start it: “Joan gets a text that says it is from her doctor's office”. Test results are a good bait because she is waiting for them, but waiting for something does not mean she asked for this message.
   - Why not **Real sign-in**: **Real sign-in** is one that she began herself, in an app or at an address she had before. This one began with a text, and it leads to a page that asks for a password.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The text asks Joan to log in: “Log in to see them”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
@@ -1870,7 +1870,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both can arrive as the same sign-in page, with the same logo, for the same account, asking for a password. In **Real sign-in** you began it yourself, using an app, an address or a number that you had before, and it asks no more than the task needs. In **Phishing** it came to you in a message you did not ask for, and the page it leads to asks for a password. Did I start this myself, from an app, an address or a number I already had? Or did a message, a call or a pop-up bring me to the page?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If Joan had opened her surgery's own app and found a message about her results there, and had signed in to read it, she would have started it herself, and the case would be **Real sign-in**.
+- What would make it a different name: If Joan had opened her clinic's own app and found a message about her results there, and had signed in to read it, she would have started it herself, and the case would be **Real sign-in**.
 - Taught on: “A copied sign-in page reached from a message” (one tap opens the card).
 
 **Drill item 35 of 51**
@@ -1895,13 +1895,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 36 of 51**
 
-> A man rings Bea and says he is from the courier with her parcel. 'There is a problem with your address. A code is on its way to you. Please read it out so that I can fix it.' A text with a code arrives.
+> A man calls Bea and says he is from the courier with her package. 'There is a problem with your address. A code is on its way to you. Please read it out so that I can fix it.' A text with a code arrives.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Bea did not start this: a call came to her: “A man rings Bea and says he is from the courier”. A code is for typing into a sign-in that you started, and nobody else needs to hear it.
+- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Bea did not start this: a call came to her: “A man calls Bea and says he is from the courier”. A code is for typing into a sign-in that you started, and nobody else needs to hear it.
   - Why not **Phishing**: There is no copied page and no password. What is asked for is a code that has just come to her phone, by a caller who contacted her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The caller asks Bea to read out a code: “Please read it out so that I can fix it”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
@@ -1910,28 +1910,28 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Phishing**, the look-alike card’s lines follow: Both begin with a message or a call that you did not ask for, with a reason to hurry, and a case can ask for both a password and a code. In **Phishing** what you are asked for is a password, typed into a page that a link took you to. In **One-time code scam** it is a code that has just come to your phone, and a person who contacted you asks you to read it out or send it on. Am I being asked to type a password into a page, or to pass on a code that has just come to my phone?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If Bea had ordered a parcel and typed a code that her own courier app sent her into that same app, nobody else would have heard it, and the case would be **Real sign-in**.
+- What would make it a different name: If Bea had ordered a package and typed a code that her own courier app sent her into that same app, nobody else would have heard it, and the case would be **Real sign-in**.
 - Taught on: “Someone asking for the code that just came to your phone” (one tap opens the card).
 
 **Drill item 37 of 51**
 
-> A text says: 'You have been picked for a prize draw. Connect your email account to claim your prize.' Wen taps the link. Her email provider's permission screen asks whether PrizeDraw may read, send and delete all her email. It has two buttons, Allow and Cancel.
+> A text says: 'You have been picked for a prize drawing. Connect your email account to claim your prize.' Wen taps the link. Her email provider's permission screen asks whether PrizeDraw may read, send and delete all her email. It has two buttons, Allow and Cancel.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The text came to Wen: “You have been picked for a prize draw”. She did not go looking for a prize draw, and a prize draw has no need to read or delete her email.
-  - Why not **Real sign-in**: The *permission screen* is real and comes from her own provider, as it would for a real Allow. But she did not start it, and what it asks for is far more than a prize draw needs.
+- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The text came to Wen: “You have been picked for a prize drawing”. She did not go looking for a prize drawing, and a prize drawing has no need to read or delete her email.
+  - Why not **Real sign-in**: The *permission screen* is real and comes from her own provider, as it would for a real Allow. But she did not start it, and what it asks for is far more than a prize drawing needs.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The *permission screen* asks Wen to press Allow: “It has two buttons, Allow and Cancel”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
   - What does it want you to type in or press? **Allow, on a permission screen for an app.** The *permission screen* asks her to press Allow for an app and lists what it may do: “asks whether PrizeDraw may read, send and delete all her email”. No password is typed and no code is read out.
-  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The *permission screen* is real and comes from her own provider, as it would for a real Allow. But she did not start it, and what it asks for is far more than a prize draw needs.
+  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The *permission screen* is real and comes from her own provider, as it would for a real Allow. But she did not start it, and what it asks for is far more than a prize drawing needs.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both are the same *permission screen* from the same provider, with the same Allow button, for an app with an ordinary name. In **Real sign-in** you went looking for the app yourself, and the list in the *permission screen* asks only for what the app's job needs. In **App permission scam** the app came to you in a message, or its list asks for far more than its job. Did I go looking for this app myself, and does the list in the *permission screen* ask only for what I want the app to do?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If Wen had gone looking for a prize-draw app herself, and the *permission screen* had asked only to see her name, it would fit what she set out to do, and the case would be **Real sign-in**.
+- What would make it a different name: If Wen had gone looking for a prize-drawing app herself, and the *permission screen* had asked only to see her name, it would fit what she set out to do, and the case would be **Real sign-in**.
 - Taught on: “An app that asks for far more of your account than it needs” (one tap opens the card).
 
 **Drill item 38 of 51**
@@ -1942,7 +1942,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Elin found the app through a page that she had saved herself: “Elin's course page, which she bookmarked on her first day, lists a note-taking app”. Nothing came to her, and the *permission screen* asks only to see her calendar, which a note-taking app with a diary needs.
+- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Elin found the app through a page that she had saved herself: “Elin's course page, which she bookmarked on her first day, lists a note-taking app”. Nothing came to her, and the *permission screen* asks only to see her calendar, which a note-taking app with a calendar needs.
   - Why not **App permission scam**: The *permission screen* is the same kind that the scam uses. What the scam adds is an app that came to the person, or one that asks for far more than its job. Here Elin went to the app, and it asks for her calendar and nothing else.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The *permission screen* asks Elin to press Allow for an app: “She presses Allow”. No money is asked for and no facts about her, and what she is asked to press opens a way into an account.
@@ -1956,34 +1956,34 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 39 of 51**
 
-> Sol gets an email that says it is from his landlord: 'Your deposit certificate is ready. Sign in to the deposit portal to download it.' The link opens a page that asks for his email address and password.
+> Sol gets an email that says it is from his landlord: 'Your lease renewal is ready. Sign in to the tenant portal to download it.' The link opens a page that asks for his email address and password.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The email came to Sol, and he did not start it: “Sol gets an email that says it is from his landlord”. A landlord is a name he knows and a certificate is something he might expect, but expecting a certificate is not the same as asking for this email.
+- If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The email came to Sol, and he did not start it: “Sol gets an email that says it is from his landlord”. A landlord is a name he knows and a lease renewal is something he might expect, but expecting a lease renewal is not the same as asking for this email.
   - Why not **Real sign-in**: **Real sign-in** is one that he began himself. This one began with an email that he did not ask for, and the page it leads to asks for a password.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The email asks Sol to sign in: “Sign in to the deposit portal to download it”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
+  - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The email asks Sol to sign in: “Sign in to the tenant portal to download it”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
   - What does it want you to type in or press? **Your password.** The page asks for an email address and a password: “asks for his email address and password”.
   - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: **Real sign-in** is one that he began himself. This one began with an email that he did not ask for, and the page it leads to asks for a password.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both can arrive as the same sign-in page, with the same logo, for the same account, asking for a password. In **Real sign-in** you began it yourself, using an app, an address or a number that you had before, and it asks no more than the task needs. In **Phishing** it came to you in a message you did not ask for, and the page it leads to asks for a password. Did I start this myself, from an app, an address or a number I already had? Or did a message, a call or a pop-up bring me to the page?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If Sol had signed in to the deposit scheme's own site, at the address printed on his tenancy papers, to look at his certificate, he would have started it himself, and the case would be **Real sign-in**.
+- What would make it a different name: If Sol had signed in to the tenant portal's own site, at the address printed on his lease papers, to look at his renewal, he would have started it himself, and the case would be **Real sign-in**.
 - Taught on: “A copied sign-in page reached from a message” (one tap opens the card).
 
 **Drill item 40 of 51**
 
-> A man rings Fay and says he is from the tax office: 'Your online account has been used from abroad. I am sending a code to confirm that you are the owner. Tell me the number when it arrives.' A text with a code arrives.
+> A man calls Fay and says he is from the IRS: 'Your online account has been used from abroad. I am sending a code to confirm that you are the owner. Tell me the number when it arrives.' A text with a code arrives.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Fay did not start this: a call came to her: “A man rings Fay and says he is from the tax office”. A code is for typing into a sign-in that you started, and she started nothing.
+- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Fay did not start this: a call came to her: “A man calls Fay and says he is from the IRS”. A code is for typing into a sign-in that you started, and she started nothing.
   - Why not **Phishing**: No copied page asks for a password here. What is asked for is a code that has just come to her phone, by a caller who contacted her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The caller asks Fay to tell him a number: “Tell me the number when it arrives”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
@@ -1997,13 +1997,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 41 of 51**
 
-> A card tucked into Joaquin's parcel says: 'Scan to join our rewards club and get £10 off.' The scan opens his email provider's permission screen, which says that Rewards Club would like to read, send and delete all his email. It has two buttons, Allow and Cancel.
+> A card tucked into Joaquin's package says: 'Scan to join our rewards club and get $10 off.' The scan opens his email provider's permission screen, which says that Rewards Club would like to read, send and delete all his email. It has two buttons, Allow and Cancel.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The card came with the parcel: “A card tucked into Joaquin's parcel says”. He did not go looking for a rewards club, and £10 off needs nothing from his mailbox.
+- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The card came with the package: “A card tucked into Joaquin's package says”. He did not go looking for a rewards club, and $10 off needs nothing from his mailbox.
   - Why not **Real sign-in**: The *permission screen* is real and comes from his own provider, as a real Allow does. But he did not start it, and it asks for far more than a discount club needs.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The *permission screen* asks Joaquin to press Allow: “It has two buttons, Allow and Cancel”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
@@ -2013,7 +2013,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both are the same *permission screen* from the same provider, with the same Allow button, for an app with an ordinary name. In **Real sign-in** you went looking for the app yourself, and the list in the *permission screen* asks only for what the app's job needs. In **App permission scam** the app came to you in a message, or its list asks for far more than its job. Did I go looking for this app myself, and does the list in the *permission screen* ask only for what I want the app to do?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If Joaquin had gone to the shop's own site himself and joined its club there, and the *permission screen* had asked only for his email address, it would fit what he set out to do, and the case would be **Real sign-in**.
+- What would make it a different name: If Joaquin had gone to the store's own site himself and joined its club there, and the *permission screen* had asked only for his email address, it would fit what he set out to do, and the case would be **Real sign-in**.
 - Taught on: “An app that asks for far more of your account than it needs” (one tap opens the card).
 
 **Drill item 42 of 51**
@@ -2033,12 +2033,12 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **One-time code scam**, the look-alike card’s lines follow: Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account. In **Real sign-in** the code arrives because of something you started, and you type it into the page or the app that you opened. In **One-time code scam** someone who contacted you asks you to read the code out or send it on. Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If a caller had phoned her at that moment and asked her to read the code out, the code would be the same and the case would be **One-time code scam**.
+- What would make it a different name: If a caller had called her at that moment and asked her to read the code out, the code would be the same and the case would be **One-time code scam**.
 - Taught on: “A sign-in, a code or an Allow that you started yourself” (one tap opens the card).
 
 **Drill item 43 of 51**
 
-> Joy's manager, Amit, messages her in the work chat: 'Can you sign in here and fill in the rota? Quick.' The link opens a page with the company's logo that asks for her work email and password. Amit's messages are usually real.
+> Joy's manager, Amit, messages her in the work chat: 'Can you sign in here and fill in the schedule? Quick.' The link opens a page with the company's logo that asks for her work email and password. Amit's messages are usually real.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
@@ -2047,7 +2047,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **Phishing**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The link came to Joy in a message: “Joy's manager, Amit, messages her in the work chat”. She did not set out to sign in, and a message from a name she knows does not change that, because an account can be taken over and used to send exactly this.
   - Why not **Real sign-in**: The message is from a person she knows, and the page has her company's logo, so it feels like an ordinary sign-in. But she did not start it, and nothing she was doing led to it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The message asks Joy to sign in: “Can you sign in here and fill in the rota”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
+  - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The message asks Joy to sign in: “Can you sign in here and fill in the schedule”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
   - What does it want you to type in or press? **Your password.** The page asks for a work email and a password: “asks for her work email and password”.
   - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The message is from a person she knows, and the page has her company's logo, so it feels like an ordinary sign-in. But she did not start it, and nothing she was doing led to it.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -2055,7 +2055,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - This case may have brought back *The password reset*, which was **Real sign-in**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If Joy had been filling in the rota herself, in the company's own app, and had been asked to sign in there, she would have started it, and the case would be **Real sign-in**.
+- What would make it a different name: If Joy had been filling in the schedule herself, in the company's own app, and had been asked to sign in there, she would have started it, and the case would be **Real sign-in**.
 - Taught on: “A copied sign-in page reached from a message” (one tap opens the card).
 
 **Drill item 44 of 51**
@@ -2067,17 +2067,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Mo did start the reset, but the call did not come from him: “his phone rings: a man says he is from the bank”. A code from a reset is for typing into the app that he opened. Asked for by a caller, it is not something he started.
-  - Why not **Real sign-in**: The reset really is something Mo started, and the code really did come from his bank's app. But what the case asks for is that he read the code to someone who rang him, and a real code goes only into the app that he opened.
+  - Why not **Real sign-in**: The reset really is something Mo started, and the code really did come from his bank's app. But what the case asks for is that he read the code to someone who called him, and a real code goes only into the app that he opened.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The caller asks Mo to read out a code: “Read me the code and I will finish the reset for you”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
   - What does it want you to type in or press? **A one-time code sent to your phone or email.** A code has come to Mo's phone, and the caller asks him to read it out: “The bank texts a code to his phone” and “Read me the code”.
-  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The reset really is something Mo started, and the code really did come from his bank's app. But what the case asks for is that he read the code to someone who rang him, and a real code goes only into the app that he opened.
+  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The reset really is something Mo started, and the code really did come from his bank's app. But what the case asks for is that he read the code to someone who called him, and a real code goes only into the app that he opened.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account. In **Real sign-in** the code arrives because of something you started, and you type it into the page or the app that you opened. In **One-time code scam** someone who contacted you asks you to read the code out or send it on. Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - This case may have brought back *The bill and the code*, which was **Real sign-in**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If Mo had simply typed the code into his bank's app and nobody had phoned him, the case would be **Real sign-in**.
+- What would make it a different name: If Mo had simply typed the code into his bank's app and nobody had called him, the case would be **Real sign-in**.
 - Taught on: “Someone asking for the code that just came to your phone” (one tap opens the card).
 
 **Drill item 45 of 51**
@@ -2106,7 +2106,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Mrs Khan is renewing her passport on the government website. The form asks for her date of birth and her place of birth.
+> Mrs. Khan is renewing her passport on the government website. The form asks for her date of birth and her place of birth.
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2118,7 +2118,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Tell them about yourself.**” The form asks Mrs Khan to tell the website facts about herself: “The form asks for her date of birth and her place of birth”. Nothing in this case asks her to pay, sign in or install anything.
+- If you are right: “Right: **Tell them about yourself.**” The form asks Mrs. Khan to tell the website facts about herself: “The form asks for her date of birth and her place of birth”. Nothing in this case asks her to pay, sign in or install anything.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2192,8 +2192,8 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 - The answer is: **No: it came to you, or it asks for more than you set out to do.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
-- The fault: Where a message sits shows only what the sender chose to show. A text can be sent so that it appears under the bank's name and goes into the same conversation as the real ones. What the question looks at is whether she started it, and she did not: a caller rang her, and the code was asked for by him.
-- The claim, put right (always the last thing shown): The text asking for my code sat in the same conversation as my bank's real texts. That tells me nothing, because a text can be sent to appear there. A caller rang me and I started nothing, so the answer is **“No: it came to you, or it asks for more than you set out to do”**, and I should not read the code out.
+- The fault: Where a message sits shows only what the sender chose to show. A text can be sent so that it appears under the bank's name and goes into the same conversation as the real ones. What the question looks at is whether she started it, and she did not: a caller called her, and the code was asked for by him.
+- The claim, put right (always the last thing shown): The text asking for my code sat in the same conversation as my bank's real texts. That tells me nothing, because a text can be sent to appear there. A caller called me and I started nothing, so the answer is **“No: it came to you, or it asks for more than you set out to do”**, and I should not read the code out.
 
 **Drill item 50 of 51**
 
@@ -2233,7 +2233,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 32. What to carry away
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 32 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 32 of 34*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2260,7 +2260,7 @@ Does it fit something you started?
   - Do: At the moment, do four things in this order. First, do not tap the link or the button again, and do not type anything into the page. Second, close it. Third, open the app yourself, or type the company's address yourself, and look there for the same problem: a real problem will be there too, and if there is nothing there, nothing is lost. If you want to be sure, use *the check*. Fourth, if you have already typed the password into the page, do not wait. Change it now, on the real site and from a different device if you can. Change it anywhere else you used the same one, and look at the list of recent sign-ins for any you do not know. If you use a password manager, an app that fills in passwords for you, notice whether it offers the password on that page. It will not, on a copy, because the address is wrong. That is a free warning.
 - **One-time code scam**: a one-time code that has just come to your phone or email, and someone who contacted you asking you to read it out or send it on.
   - Ask: "Why does this person need to hear a code that was sent to me?" There is never a good answer: a code is for me to type in, and no one else needs it.
-  - Do: At the moment, three things. First, do not read the code out or send it on, whoever asks and whatever the reason. A real bank, shop or helper never needs it. Second, end the call or stop the chat. Do not stay to argue: the longer you stay, the more reasons they have. Third, read the text that carries the code. It often says what the code is for, such as a payment you did not make, and often says never to share it. Then use *the check*: ring the company on a number you already had, such as the one on your card, and tell them that someone is trying to get into your account. If you have already read a code out, ring the company straight away on that number, ask them to stop any payment and to lock the account, change the password, and look at the list of recent sign-ins.
+  - Do: At the moment, three things. First, do not read the code out or send it on, whoever asks and whatever the reason. A real bank, store or helper never needs it. Second, end the call or stop the chat. Do not stay to argue: the longer you stay, the more reasons they have. Third, read the text that carries the code. It often says what the code is for, such as a payment you did not make, and often says never to share it. Then use *the check*: call the company at a number you already had, such as the one on your card, and tell them that someone is trying to get into your account. If you have already read a code out, call the company right away at that number, ask them to stop any payment and to lock the account, change the password, and look at the list of recent sign-ins.
 - **App permission scam**: a permission screen asking you to press Allow for an app, and an app that came to you in a message or asks for far more of your account than your task needs.
   - Ask: "Did I go looking for this app, and does what it asks for match what I want it to do?" A document needs to be opened. It does not need all of my mail.
   - Do: At the moment, press Cancel, or close the page, without pressing Allow. You lose nothing: if it was real, you can start again from your own app. Read the list in the *permission screen* before you decide anything else. If it says read, send and delete all your email, or see all your contacts, for a job that needs far less, that alone is enough to say no. If you have already pressed Allow, the way to end it is to remove the app. Open your account's security or privacy settings, look for a list called connected apps, apps with access or third-party apps, and remove anything you do not know. Changing the password does not remove it, because the app never used the password. Then look through your sent mail for anything you did not send, and warn your contacts that mail from you may not be from you.
@@ -2272,11 +2272,11 @@ Does it fit something you started?
 - The page, the code and the *permission screen* can all be real, and they are real in the scams too. How a request looks, whose name is on it, and where it sits among your messages tell you nothing. Whether you started it tells you what you need, and you can answer that at the moment.
 - When you cannot say that you started it, stop, and start again from an app, an address or a number that you already had. That is *the check*, and a real company never minds it.
 - When a page asks for a password and then for a code, the answer is the one for the password.
-- If you have already given something away: change a password at once; ring the company at once about a code; and remove the app for an Allow, because changing the password does not take it away.
+- If you have already given something away: change a password at once; call the company at once about a code; and remove the app for an Allow, because changing the password does not take it away.
 
 ### 33. Where would you meet this?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 33 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 33 of 34*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2299,7 +2299,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 34. A plan, if you want one
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 34 of 34*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 34 of 34*
 
 [reviewers only: card kind `plan`, id `plan-access`]
 
@@ -2310,7 +2310,7 @@ A plan is one line: if I see this, then I will do that. It is worth writing down
 The lines below are examples to start from. You can use one, change it, or write your own two lines. Nothing is saved until you press the button.
 
 - a message, a call or a pop-up that I did not ask for sends me to a page that wants a password, close it, and sign in only by opening the app myself or typing the address myself
-- someone who contacted me asks me to read out or send on a code that has just come to my phone, say no and end the call or the chat, and then ring the company on a number I already had
+- someone who contacted me asks me to read out or send on a code that has just come to my phone, say no and end the call or the chat, and then call the company at a number I already had
 - a permission screen asks me to press Allow for an app that came to me, or for much more than its job needs, press Cancel, and if I ever pressed Allow, remove the app in my account's list of connected apps
 - a sign-in, a code or an Allow that I started myself, from an app or an address I already had, go ahead, because this is the real thing
 
@@ -2410,13 +2410,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 5 of 16**
 
-> Nick wants to look at his train booking. He taps the railway's app, which is on his phone, and signs in with his email address and password.
+> Nick wants to look at his train booking. He taps the train company's app, which is on his phone, and signs in with his email address and password.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Nick set out to look at his booking and used an app that was already on his phone: “He taps the railway's app, which is on his phone”. Nothing came to him, and the app asks only for a sign-in.
+- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Nick set out to look at his booking and used an app that was already on his phone: “He taps the train company's app, which is on his phone”. Nothing came to him, and the app asks only for a sign-in.
   - Why not **Phishing**: A copy would ask for the same email address and password. What makes this one real is that Nick opened an app he already had, for a reason of his own, and no message sent him to it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** Nick signs in: “signs in with his email address and password”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
@@ -2465,18 +2465,18 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **One-time code scam**, the look-alike card’s lines follow: Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account. In **Real sign-in** the code arrives because of something you started, and you type it into the page or the app that you opened. In **One-time code scam** someone who contacted you asks you to read the code out or send it on. Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- What would make it a different name: If a caller who had phoned her had asked her to read the code out, the code would be the same and the case would be **One-time code scam**.
+- What would make it a different name: If a caller who had called her had asked her to read the code out, the code would be the same and the case would be **One-time code scam**.
 - Taught on: “A sign-in, a code or an Allow that you started yourself” (one tap opens the card).
 
 **Return case 8 of 16**
 
-> Bashir asks his employer's helpdesk, by ringing the number on his badge, to reset his password. A minute later an email arrives: 'Choose a new password.' Its link opens the company's sign-in page.
+> Bashir asks his employer's helpdesk, by calling the number on his badge, to reset his password. A minute later an email arrives: 'Choose a new password.' Its link opens the company's sign-in page.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Bashir started this: he rang a number that was already printed on his badge: “Bashir asks his employer's helpdesk, by ringing the number on his badge, to reset his password”. The email is the answer to his call, and it came a minute later.
+- If you are right: “Right: **Real sign-in**.” Does it fit something you started? **Yes: you started it through a way you already had, and it asks only what that needs.** Bashir started this: he called a number that was already printed on his badge: “Bashir asks his employer's helpdesk, by calling the number on his badge, to reset his password”. The email is the answer to his call, and it came a minute later.
   - Why not **Phishing**: An email with a link to a page that wants a password is what the scam looks like. What makes this one real is that Bashir asked for it a minute earlier, through a number he already had.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The email asks Bashir to choose a new password: “Choose a new password”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
@@ -2491,18 +2491,18 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 16**
 
-> A woman rings Dee and says she is from the broadband company: 'We are fixing a fault on your line. A code has been sent to your phone to confirm that it is you. Please say the number.' A text with a code arrives.
+> A woman calls Dee and says she is from the broadband company: 'We are fixing a fault on your line. A code has been sent to your phone to confirm that it is you. Please say the number.' A text with a code arrives.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Dee did not start this: a call came to her: “A woman rings Dee and says she is from the broadband company”. A code is for typing into a sign-in that you started, and nobody else needs to hear it.
-  - Why not **Real sign-in**: The code is real, and it may come from the broadband company's own system. But a real code is typed in by the person it was sent to, and here a caller who rang her wants it said aloud.
+- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Dee did not start this: a call came to her: “A woman calls Dee and says she is from the broadband company”. A code is for typing into a sign-in that you started, and nobody else needs to hear it.
+  - Why not **Real sign-in**: The code is real, and it may come from the broadband company's own system. But a real code is typed in by the person it was sent to, and here a caller who phoned her wants it said aloud.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The caller asks Dee to say a number aloud: “Please say the number”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
   - What does it want you to type in or press? **A one-time code sent to your phone or email.** A code has just come to Dee's phone, and she is asked to say it: “A text with a code arrives” and “Please say the number”.
-  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The code is real, and it may come from the broadband company's own system. But a real code is typed in by the person it was sent to, and here a caller who rang her wants it said aloud.
+  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The code is real, and it may come from the broadband company's own system. But a real code is typed in by the person it was sent to, and here a caller who phoned her wants it said aloud.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account. In **Real sign-in** the code arrives because of something you started, and you type it into the page or the app that you opened. In **One-time code scam** someone who contacted you asks you to read the code out or send it on. Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2533,18 +2533,18 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 16**
 
-> A man rings Jun and says he is from her health insurer: 'To pay out your claim we need to confirm that it is you. A code is on its way. Please read it out.' A text with a code arrives.
+> A man calls Jun and says he is from her health insurer: 'To pay out your claim we need to confirm that it is you. A code is on its way. Please read it out.' A text with a code arrives.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Jun did not start this: a call came to her: “A man rings Jun and says he is from her health insurer”. Being paid money is a good bait, but a code is for typing into a sign-in that she started.
-  - Why not **Real sign-in**: The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who rang her has no need to hear it.
+- If you are right: “Right: **One-time code scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** Jun did not start this: a call came to her: “A man calls Jun and says he is from her health insurer”. Being paid money is a good bait, but a code is for typing into a sign-in that she started.
+  - Why not **Real sign-in**: The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who called her has no need to hear it.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The caller asks Jun to read out a code: “Please read it out”. Nothing is to be installed, no money is asked for and no facts about her, so it is a request about a way into an account.
   - What does it want you to type in or press? **A one-time code sent to your phone or email.** A code has just come to Jun's phone, and she is asked to read it out: “A text with a code arrives” and “Please read it out”.
-  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who rang her has no need to hear it.
+  - If you chose **Yes: you started it through a way you already had, and it asks only what that needs**: The code is real, and it may come from a real service. But a real code is typed in by the person it was sent to. A caller who called her has no need to hear it.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Real sign-in**, the look-alike card’s lines follow: Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account. In **Real sign-in** the code arrives because of something you started, and you type it into the page or the app that you opened. In **One-time code scam** someone who contacted you asks you to read the code out or send it on. Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2597,13 +2597,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 14 of 16**
 
-> A newsletter advertises a budgeting app that will 'find your receipts in your email'. Sid taps the advert. His provider's permission screen says that the app would like to read, send and delete all his email. It has two buttons, Allow and Cancel.
+> A newsletter advertises a budgeting app that will 'find your receipts in your email'. Sid taps the ad. His provider's permission screen says that the app would like to read, send and delete all his email. It has two buttons, Allow and Cancel.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The app came to Sid in an advert: “A newsletter advertises a budgeting app”. He did not go looking for it. Finding receipts may need to read mail, but sending and deleting it is far more than that.
+- If you are right: “Right: **App permission scam**.” Does it fit something you started? **No: it came to you, or it asks for more than you set out to do.** The app came to Sid in an ad: “A newsletter advertises a budgeting app”. He did not go looking for it. Finding receipts may need to read mail, but sending and deleting it is far more than that.
   - Why not **Real sign-in**: The *permission screen* is real and it is his own provider's. But he did not start it, and the list goes well beyond finding receipts: it includes sending and deleting his email.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What is it asking you to do right now? **Sign in, give a code, or allow an app.** The *permission screen* asks Sid to press Allow: “It has two buttons, Allow and Cancel”. Nothing is to be installed, no money is asked for and no facts about him, so it is a request about a way into an account.
@@ -2639,7 +2639,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 16 of 16**
 
-> Hal's friend Wren messages him: 'I put our holiday photos in an album. Open it here.' The link opens his email provider's permission screen: 'Album View would like to read, send and delete all your email.' It has two buttons, Allow and Cancel. Wren's messages are usually real.
+> Hal's friend Wren messages him: 'I put our vacation photos in an album. Open it here.' The link opens his email provider's permission screen: 'Album View would like to read, send and delete all your email.' It has two buttons, Allow and Cancel. Wren's messages are usually real.
 
 **You are asked, in order:** What is it asking you to do right now? → What does it want you to type in or press? → Does it fit something you started? → Name it.
 

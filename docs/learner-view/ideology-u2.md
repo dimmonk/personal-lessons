@@ -1,6 +1,6 @@
 # Learner view: Political Ideologies, Unit Two: Working people, against those who own the businesses
 
-*Seven names for a text on the side of working people, and the two questions that tell them apart.* Unit revision 2, built to lesson standard 1, status: draft.
+*Seven names for a text on the side of working people, and the two questions that tell them apart.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. On the side of working people: what does the text ask for?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 55*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -76,11 +76,11 @@ The unit has six parts, and you can stop after any of them.
 5. The two questions, each in one place
 6. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Owners keep the businesses, and taxes even things out
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 55*
 
 [reviewers only: card kind `meet`, id `meet-socdem`]
 
@@ -117,7 +117,7 @@ You may also hear this called “the welfare state” or “the Nordic model”.
 
 ### 3. Social democracy: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 55*
 
 [reviewers only: card kind `again`, id `again-socdem`]
 
@@ -150,7 +150,7 @@ The two stories share nothing else. So this holds wherever a text on the side of
 
 ### 4. One bakery, and the story never decides the answer
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 55*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -170,7 +170,7 @@ From here on the cases change their stories on purpose. Sometimes two cases will
 
 ### 5. Social democracy: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-socdem`]
 
@@ -199,7 +199,7 @@ In your own life it is the talk at election time about minimum wages, sick pay, 
 
 ### 6. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 55*
 
 [reviewers only: card kind `check`, id `check-socdem`]
 
@@ -222,7 +222,7 @@ The pieces you can tap:
 
 ### 7. Working people against owners, and nothing more said
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 55*
 
 [reviewers only: card kind `meet`, id `meet-classonly`]
 
@@ -261,40 +261,40 @@ The name for this is **Class politics with nothing attached**. "Class" here mean
 
 ### 8. Class politics with nothing attached: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 55*
 
 [reviewers only: card kind `again`, id `again-classonly`]
 
-The laundry notice gave you what to point to from one case: working people set against owners, and nothing said about the businesses (no plan for who should own them, no taxes or services to even things out, no explanation of how owners gain), and no party seizing power and no getting rid of the government. Here is a second case with a different story. This time the people who work are cooks in a school canteen, and the words are posted online.
+The laundry notice gave you what to point to from one case: working people set against owners, and nothing said about the businesses (no plan for who should own them, no taxes or services to even things out, no explanation of how owners gain), and no party seizing power and no getting rid of the government. Here is a second case with a different story. This time the people who work are cooks in a school cafeteria, and the words are posted online.
 
 The first case again, in one line. *The laundry notice*: “Come to the meeting on Thursday and stand with us”
 
 The second case.
 
-*The canteen post*
+*The cafeteria post*
 
-> A post by the Kingsway school canteen staff: 'The company that owns the canteen contract gets richer every year, and the people who cook for the children do not. Owners and workers do not want the same things, and we are with the workers. Share this if you are too.'
+> A post by the Kingsway school cafeteria staff: 'The company that owns the cafeteria contract gets richer every year, and the people who cook for the children do not. Owners and workers do not want the same things, and we are with the workers. Share this if you are too.'
 **You are asked:** In *The laundry notice*, these words show it: “Come to the meeting on Thursday and stand with us”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “The company that owns the canteen contract gets richer every year, and the people who cook for the children do not”
+1. “The company that owns the cafeteria contract gets richer every year, and the people who cook for the children do not”
 2. “Owners and workers do not want the same things, and we are with the workers”
 3. “Share this if you are too”
 
 **Shown as soon as you tap.** The words are “Share this if you are too”.
-- If you tapped “The company that owns the canteen contract gets richer every year, and the people who cook for the children do not”: That names the owners and the workers and says what is wrong. It is not a plan for the business.
+- If you tapped “The company that owns the cafeteria contract gets richer every year, and the people who cook for the children do not”: That names the owners and the workers and says what is wrong. It is not a plan for the business.
 - If you tapped “Owners and workers do not want the same things, and we are with the workers”: That is the side the text takes. It answers who the text is for. It says nothing about what should happen to the business.
 
 **What the two share**
 
-Both texts name owners and workers and take the workers’ side. Both then stop, and ask the reader for something small: come to a meeting, share a post. Neither says a word about who should own the laundry or the canteen contract, about taxes or services, or about how the owners gain.
+Both texts name owners and workers and take the workers’ side. Both then stop, and ask the reader for something small: come to a meeting, share a post. Neither says a word about who should own the laundry or the cafeteria contract, about taxes or services, or about how the owners gain.
 
 The two stories share nothing else. So this holds wherever a text takes the workers’ side and goes no further. That is what **Class politics with nothing attached** names.
 
 
 ### 9. Class politics with nothing attached: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-classonly`]
 
@@ -324,7 +324,7 @@ In your own life it is the notice on a staff-room wall, the group chat of a trad
 
 ### 10. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 55*
 
 [reviewers only: card kind `check`, id `check-classonly`]
 
@@ -344,7 +344,7 @@ In your own life it is the notice on a staff-room wall, the group chat of a trad
 
 ### 11. Social democracy or Class politics with nothing attached: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-socdem-classonly`]
 
@@ -394,7 +394,7 @@ Look for a plan. Does the text say anything about what the government should do 
 
 ### 12. The businesses handed over, by votes
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 12 of 55*
 
 [reviewers only: card kind `meet`, id `meet-demsoc`]
 
@@ -433,7 +433,7 @@ The name for this is **Democratic socialism**. "Socialism" is a word with a long
 
 ### 13. Democratic socialism: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 13 of 55*
 
 [reviewers only: card kind `again`, id `again-demsoc`]
 
@@ -468,7 +468,7 @@ The two stories share nothing else. So this holds wherever a text asks for the b
 
 ### 14. Democratic socialism: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-demsoc`]
 
@@ -497,7 +497,7 @@ In your own life it is the argument over whether the buses, the trains or the po
 
 ### 15. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 55*
 
 [reviewers only: card kind `check`, id `check-demsoc`]
 
@@ -519,7 +519,7 @@ In your own life it is the argument over whether the buses, the trains or the po
 
 ### 16. Social democracy or Democratic socialism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-socdem-demsoc`]
 
@@ -563,7 +563,7 @@ Once the government has acted, who owns the business? Is it still the owners, or
 
 ### 17. Taxes and services, and a handover too
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 55*
 
 [reviewers only: card kind `exception`, id `exc-railbus`]
 
@@ -603,7 +603,7 @@ It is decided this way on purpose. In life, texts mix the two, and people who st
 
 ### 18. One party takes power and rules for the workers
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 55*
 
 [reviewers only: card kind `meet`, id `meet-ml`]
 
@@ -625,7 +625,7 @@ The earlier texts asked the government for things, or promised to win the next e
 
 Notice the two halves. One is how power is won: taken, and not voted for. The other is how it is kept: held by one party, with no rivals and no election it could lose. Either half is enough to point to, and a text may give one or both. What matters is that the text does not offer to give power up at an election.
 
-People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organised party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. This course does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.
+People who argue for this say that owners and their allies will use every means to stop a change, so the workers need one organized party that cannot be voted out until the change is safe. People who disagree say that a party that cannot be voted out has no way to be told it is wrong. Both claims are argued over. This course does not decide between them. It goes by whether the text says that a party, or the workers, will take power and keep it.
 
 On this card the marked words answer the question about the government, and not the one about the businesses. That is because here the words about power are what decide, and the words about the mills could be changed without changing the name.
 
@@ -643,7 +643,7 @@ You may also hear this called “communism” or “Leninism” or “Soviet-sty
 
 ### 19. Marxism-Leninism: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 55*
 
 [reviewers only: card kind `again`, id `again-ml`]
 
@@ -678,7 +678,7 @@ The stories share nothing else. So this holds wherever a text says that a party,
 
 ### 20. Marxism-Leninism: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 20 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-ml`]
 
@@ -689,7 +689,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 - A party, a committee or the workers themselves are to take power, and the text says so.
 - It usually says why votes will not do: the owners and their allies are too strong, or elections only leave things as they are.
 - Power is to be held, not lent: no rival parties, and no election the party could lose, at least until the change is done.
-- The language is often of struggle, discipline and organisation.
+- The language is often of struggle, discipline and organization.
 - The text may name the businesses, and say they pass to the government the party forms. It may also name nothing but the taking of power.
 
 **What it is not**
@@ -700,7 +700,7 @@ Wanting big changes is not enough, and neither is anger. A text that wants the b
 
 "The party will take power, and the party will keep it." "No rival parties while the change is in danger." "Elections are a game the owners always win." "A disciplined party must lead the workers."
 
-In your own life it is mostly the way a word like "communist" is thrown about: at a union, at a plan for a public health service, at a neighbour. Check the words before you use the name. Does the text say that a party will take power and keep it?
+In your own life it is mostly the way a word like "communist" is thrown about: at a union, at a plan for a public health service, at a neighbor. Check the words before you use the name. Does the text say that a party will take power and keep it?
 
 **The question to ask when you spot it**
 
@@ -708,16 +708,16 @@ In your own life it is mostly the way a word like "communist" is thrown about: a
 
 ### 21. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 21 of 55*
 
 [reviewers only: card kind `check`, id `check-ml`]
 
-> From a statement by the Oakfield building workers' committee: 'The firms that own the building sites live off our labour, and we stand with the people who build. The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose. The sites will belong to the government it forms.'
+> From a statement by the Oakfield building workers' committee: 'The firms that own the building sites live off our labor, and we stand with the people who build. The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose. The sites will belong to the government it forms.'
 
 **You are asked:** Which words say that those writing will take power and keep it, with no election they could lose? Tap them.
 
 The pieces you can tap:
-1. “The firms that own the building sites live off our labour, and we stand with the people who build”
+1. “The firms that own the building sites live off our labor, and we stand with the people who build”
 2. “The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose”
 3. “The sites will belong to the government it forms”
 
@@ -725,13 +725,13 @@ The pieces you can tap:
 
 - If you are right: “Right: ‘The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose’.” The committee takes power and keeps it: “The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose”. No rival is allowed to challenge it at an election. The answer for this case is **“Seize power and hold it for the workers, with no rivals allowed”**, and the name is **Marxism-Leninism**.
 - If you miss: “The words are ‘The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose’.” The same reason follows, and then a line about the piece you tapped:
-  - “The firms that own the building sites live off our labour, and we stand with the people who build”: That names the two groups and the side the text takes. It says nothing yet about who holds power.
+  - “The firms that own the building sites live off our labor, and we stand with the people who build”: That names the two groups and the side the text takes. It says nothing yet about who holds power.
   - “The sites will belong to the government it forms”: That is about the sites. It says who will own them, and nothing about how the committee will win or hold power.
 - Taught on: “One party takes power and rules for the workers” (one tap opens the card).
 
 ### 22. Democratic socialism or Marxism-Leninism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 22 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-demsoc-ml`]
 
@@ -775,7 +775,7 @@ Does the text say that a party, or the workers, will take power by force or rule
 
 ### 23. Nothing about the businesses, and a party that rules alone
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 23 of 55*
 
 [reviewers only: card kind `exception`, id `exc-bulletin`]
 
@@ -828,7 +828,7 @@ This is why there are two questions and not one. A text can be silent on the bus
 
 ### 24. No bosses and no government
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 55*
 
 [reviewers only: card kind `meet`, id `meet-anarch`]
 
@@ -867,33 +867,33 @@ You may also hear this called “libertarian socialism” or “anarcho-syndical
 
 ### 25. Anarchism: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 55*
 
 [reviewers only: card kind `again`, id `again-anarch`]
 
-The print-works zine gave you what to point to from one case: working people set against owners, and the government to be got rid of now, not used first, with people running their work and their towns together without it. Here is a second case with a different story. This time the people are building workers, and the words are in a leaflet about an estate.
+The print-works zine gave you what to point to from one case: working people set against owners, and the government to be got rid of now, not used first, with people running their work and their towns together without it. Here is a second case with a different story. This time the people are building workers, and the words are in a leaflet about a development.
 
 The first case again, in one line. *The print-works zine*: “The town should be run by open meetings of everyone in it, with no government at all”
 
 The second case.
 
-*The estate builders*
+*The development builders*
 
-> A leaflet by the Dockside building workers: 'The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him. The firm should belong to the people who build for it. We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings.'
+> A leaflet by the Dockside building workers: 'The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him. The firm should belong to the people who build for it. We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings.'
 **You are asked:** In *The print-works zine*, these words show it: “The town should be run by open meetings of everyone in it, with no government at all”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him”
 2. “The firm should belong to the people who build for it”
-3. “We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings”
+3. “We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings”
 
-**Shown as soon as you tap.** The words are “We will not wait for any government to give it to us, and we want none: we will run the work and the whole estate ourselves, in meetings”.
+**Shown as soon as you tap.** The words are “We will not wait for any government to give it to us, and we want none: we will run the work and the whole development ourselves, in meetings”.
 - If you tapped “The building firm's owner pays us wages and keeps the rest. The government does not guard us from him; it guards him”: That names the owner and the government and says what is wrong. It does not yet say what should be done about the government.
 - If you tapped “The firm should belong to the people who build for it”: That is about who should own the firm. The question here is about the government.
 
 **What the two share**
 
-Both texts want the government gone. The zine wants the town run by open meetings with no government at all. The building workers say they want no government and will run the work and the whole estate themselves, in meetings. Neither wants a party in power, and neither wants to use the government first.
+Both texts want the government gone. The zine wants the town run by open meetings with no government at all. The building workers say they want no government and will run the work and the whole development themselves, in meetings. Neither wants a party in power, and neither wants to use the government first.
 
 Both also say the firm should belong to the people who work in it. That is true of other names too, which is why the words about the government are what you point to.
 
@@ -902,7 +902,7 @@ The two stories share nothing else. So this holds wherever a text wants the gove
 
 ### 26. Anarchism: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 26 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-anarch`]
 
@@ -911,7 +911,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 **What it is usually like**
 
 - The text names the government as a ruler beside the owner, and wants neither.
-- It says what comes in their place: meetings, councils of the people who work or live in a place, agreements between neighbours.
+- It says what comes in their place: meetings, councils of the people who work or live in a place, agreements between neighbors.
 - It says now. The people are to start running things themselves, and not wait for a government to hand power over first.
 - It is often written in a small circle, such as a zine, a flyer or a notice for a meeting, and it often speaks of doing things yourself.
 
@@ -923,7 +923,7 @@ Distrusting the government is not enough. Many texts on the owners’ side distr
 
 "No bosses, no government." "We do not need rulers, we need each other." "Run it ourselves, in meetings."
 
-In your own life it is the co-operative or the open meeting that runs itself with no manager. It is also the way the word "anarchy" is used for a riot, which is not what a text of this kind says.
+In your own life it is the cooperative or the open meeting that runs itself with no manager. It is also the way the word "anarchy" is used for a riot, which is not what a text of this kind says.
 
 **The question to ask when you spot it**
 
@@ -931,17 +931,17 @@ In your own life it is the co-operative or the open meeting that runs itself wit
 
 ### 27. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 27 of 55*
 
 [reviewers only: card kind `check`, id `check-anarch`]
 
-> From notes for a meeting of school staff in the Kell valley: 'The group that owns the schools runs them for profit, and the government backs it. The teachers, cooks and caretakers should run each school together. We want the government done away with, now, and not used first: we will run the valley's schools in open meetings.'
+> From notes for a meeting of school staff in the Kell valley: 'The group that owns the schools runs them for profit, and the government backs it. The teachers, cooks and custodians should run each school together. We want the government done away with, now, and not used first: we will run the valley's schools in open meetings.'
 
 **You are asked:** Which words say that the government is to be got rid of, now, and not used first? Tap them.
 
 The pieces you can tap:
 1. “The group that owns the schools runs them for profit, and the government backs it”
-2. “The teachers, cooks and caretakers should run each school together”
+2. “The teachers, cooks and custodians should run each school together”
 3. “We want the government done away with, now, and not used first: we will run the valley's schools in open meetings”
 
 **Shown as soon as you tap**
@@ -949,12 +949,12 @@ The pieces you can tap:
 - If you are right: “Right: ‘We want the government done away with, now, and not used first: we will run the valley's schools in open meetings’.” The text wants the government got rid of, and says when and how: “We want the government done away with, now, and not used first: we will run the valley's schools in open meetings”. It does not want it used first and does not want a party to hold it. The answer for this case is **“Get rid of it, and run things together without it”**, and the name is **Anarchism**.
 - If you miss: “The words are ‘We want the government done away with, now, and not used first: we will run the valley's schools in open meetings’.” The same reason follows, and then a line about the piece you tapped:
   - “The group that owns the schools runs them for profit, and the government backs it”: That names the owners and the government and says what is wrong. It does not yet say what should be done about the government.
-  - “The teachers, cooks and caretakers should run each school together”: That is about who should run the schools. The question here is about the government.
+  - “The teachers, cooks and custodians should run each school together”: That is about who should run the schools. The question here is about the government.
 - Taught on: “No bosses and no government” (one tap opens the card).
 
 ### 28. Marxism-Leninism or Anarchism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 28 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-ml-anarch`]
 
@@ -998,7 +998,7 @@ After the change, does a party or committee hold power and rule alone? Or is the
 
 ### 29. Democratic socialism or Anarchism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 29 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-demsoc-anarch`]
 
@@ -1042,7 +1042,7 @@ Should the government stay, or be done away with now, according to the text?
 
 ### 30. Nothing about the businesses, and no government
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 30 of 55*
 
 [reviewers only: card kind `exception`, id `exc-flyer`]
 
@@ -1087,7 +1087,7 @@ Put the last two exceptions side by side. A text on the workers’ side can be s
 
 ### 31. Firms owned by their workers, competing for customers
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 31 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 31 of 55*
 
 [reviewers only: card kind `meet`, id `meet-mktsoc`]
 
@@ -1122,7 +1122,7 @@ The name for this is **Market socialism**. "Market" is the word for firms sellin
 
 ### 32. Market socialism: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 32 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 32 of 55*
 
 [reviewers only: card kind `again`, id `again-mktsoc`]
 
@@ -1155,7 +1155,7 @@ The two stories share nothing else. So this holds wherever a text gives each bus
 
 ### 33. Market socialism: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 33 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-mktsoc`]
 
@@ -1176,7 +1176,7 @@ Workers owning a business is not enough. If the text says nothing about competin
 
 "Own your workplace, and win your customers." "A firm owned by its staff, with a market, not a boss with a market." "Workers’ firms, free prices, and no rescue for a firm that fails."
 
-In your own life it is the worker-owned shop or co-operative that sells to the public and has to make its sales, and the argument over whether a firm owned by its staff can survive against one owned by shareholders.
+In your own life it is the worker-owned shop or cooperative that sells to the public and has to make its sales, and the argument over whether a firm owned by its staff can survive against one owned by shareholders.
 
 **The question to ask when you spot it**
 
@@ -1184,7 +1184,7 @@ In your own life it is the worker-owned shop or co-operative that sells to the p
 
 ### 34. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 34 of 55*
 
 [reviewers only: card kind `check`, id `check-mktsoc`]
 
@@ -1208,7 +1208,7 @@ In your own life it is the worker-owned shop or co-operative that sells to the p
 
 ### 35. Anarchism or Market socialism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 35 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-anarch-mktsoc`]
 
@@ -1252,7 +1252,7 @@ Once the workers own it, does the business compete with others for customers and
 
 ### 36. Handed to its workers by a vote, and still competing
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 36 of 55*
 
 [reviewers only: card kind `exception`, id `exc-glassworks`]
 
@@ -1305,7 +1305,7 @@ This is a decision, and it has a reason you can state: the more exact thing a te
 
 ### 37. A bakery’s sums, and a word for the gap
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 37 of 55*
 
 [reviewers only: card kind `term`, id `term-surplus`]
 
@@ -1313,22 +1313,22 @@ The next name is for a text that explains something instead of asking for someth
 
 *The bakery’s sums*
 
-> Millbrook Bakery pays each of its eight bakers £80 a day. In one day a baker makes bread that sells for £128, once the cost of the flour and of running the ovens has been taken off. After the bakers are paid, the owner, Dana, keeps the £48 that is left over.
+> Millbrook Bakery pays each of its eight bakers $80 a day. In one day a baker makes bread that sells for $128, once the cost of the flour and of running the ovens has been taken off. After the bakers are paid, the owner, Dana, keeps the $48 that is left over.
 
-Millbrook Bakery pays each baker £80 a day. In one day a baker makes bread that sells for £128, once the flour and the cost of running the ovens have been taken off. So each day a baker makes £48 more than the baker is paid. Dana, the owner, keeps that £48.
+Millbrook Bakery pays each baker $80 a day. In one day a baker makes bread that sells for $128, once the flour and the cost of running the ovens have been taken off. So each day a baker makes $48 more than the baker is paid. Dana, the owner, keeps that $48.
 
 The sum has the same shape wherever wages are paid, whether the numbers are large or small. Part of what the workers make comes back to them as wages. The part that is left goes to the owner.
 
 **The word for this.** *Surplus value*: the part of what workers make that they are not paid for, which the owner keeps as profit.
 
-Two cautions about the word. First, it names the £48 and says nothing about whether keeping it is fair. Dana can say that the £48 pays for the ovens, the risk she takes and her idea, and people argue over that. Second, the numbers here are an invented sum. Economists disagree about where profit comes from, and no side is taken here. The word is needed only because some texts use it.
+Two cautions about the word. First, it names the $48 and says nothing about whether keeping it is fair. Dana can say that the $48 pays for the ovens, the risk she takes and her idea, and people argue over that. Second, the numbers here are an invented sum. Economists disagree about where profit comes from, and no side is taken here. The word is needed only because some texts use it.
 
 A text that explains how an owner comes to keep *surplus value* is making an argument. The only question is whether the text makes it, and what else the text says.
 
 
 ### 38. An explanation of how owners gain from workers
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 38 of 55*
 
 [reviewers only: card kind `meet`, id `meet-marx`]
 
@@ -1336,17 +1336,17 @@ Every name so far has said what should be done about the businesses, or about po
 
 *The weaver’s sums*
 
-> From a pamphlet written for the weavers of Hallam Mill: 'A weaver is paid £60 for a day's work. In that day she makes cloth that sells for £100, once the thread and the running of the loom are taken off. The £40 left over goes to the mill's owner, and the owner and the weavers want opposite things from it. This is not because the owner is cruel. ⟦Every owner has to keep a gap like it, because that is how the arrangement works: owners live from what workers make and are not paid for⟧. We write this for the weavers, and for everyone who works for wages.'
+> From a pamphlet written for the weavers of Hallam Mill: 'A weaver is paid $60 for a day's work. In that day she makes cloth that sells for $100, once the thread and the running of the loom are taken off. The $40 left over goes to the mill's owner, and the owner and the weavers want opposite things from it. This is not because the owner is cruel. ⟦Every owner has to keep a gap like it, because that is how the arrangement works: owners live from what workers make and are not paid for⟧. We write this for the weavers, and for everyone who works for wages.'
 
 Stripped of its story, the case is this:
 
 - The text is written for weavers, and it takes their side.
-- It gives a sum: a weaver is paid £60, and makes cloth worth £100 once costs are taken off. The £40 left over goes to the owner.
+- It gives a sum: a weaver is paid $60, and makes cloth worth $100 once costs are taken off. The $40 left over goes to the owner.
 - It says this is not because the owner is cruel. Every owner has to keep a gap like it, because that is how the arrangement works.
 - It says owners live from what workers make and are not paid for.
 - It asks for nothing: no tax, no handover and no party.
 
-The text does one thing. It explains how an owner comes to gain from other people’s work, and it says that the explanation holds for every owner, however kind. The word for the £40 is *surplus value*: the part of what the weaver makes that she is not paid for.
+The text does one thing. It explains how an owner comes to gain from other people’s work, and it says that the explanation holds for every owner, however kind. The word for the $40 is *surplus value*: the part of what the weaver makes that she is not paid for.
 
 The explanation is the whole text. It does not say that anything should be done about the mill. It says what is going on, and leaves it there. Some people who hold the explanation draw a plan from it, and then their text has a plan in it. A text with the explanation and nothing else has only the explanation.
 
@@ -1368,7 +1368,7 @@ You may also hear this called “Marxist theory”. That means the same thing he
 
 ### 39. Marxism: the same thing in a different story
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 39 of 55*
 
 [reviewers only: card kind `again`, id `again-marx`]
 
@@ -1380,17 +1380,17 @@ The second case.
 
 *The evening class*
 
-> From notes for an evening class at the Greyfriars workers' school: 'Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history. The owners of today's farms, shops and banks gain from what workers make and are not paid for. We teach this to working people, so that they can see how the arrangement works, and whose side it favours.'
+> From notes for an evening class at the Grayfriars workers' school: 'Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history. The owners of today's farms, shops and banks gain from what workers make and are not paid for. We teach this to working people, so that they can see how the arrangement works, and whose side it favors.'
 **You are asked:** In *The weaver’s sums*, these words show it: “Every owner has to keep a gap like it, because that is how the arrangement works: owners live from what workers make and are not paid for”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history”
 2. “The owners of today's farms, shops and banks gain from what workers make and are not paid for”
-3. “We teach this to working people, so that they can see how the arrangement works, and whose side it favours”
+3. “We teach this to working people, so that they can see how the arrangement works, and whose side it favors”
 
 **Shown as soon as you tap.** The words are “The owners of today's farms, shops and banks gain from what workers make and are not paid for”.
 - If you tapped “Each time the way of making things changes, the owners and the workers fight over who gets what, and that fight is what moves history”: That is half of what the text explains. The other half is how the owners gain.
-- If you tapped “We teach this to working people, so that they can see how the arrangement works, and whose side it favours”: That says who the text is for and what it is for. The explanation itself is in the sentences before it.
+- If you tapped “We teach this to working people, so that they can see how the arrangement works, and whose side it favors”: That says who the text is for and what it is for. The explanation itself is in the sentences before it.
 
 **What the two share**
 
@@ -1401,7 +1401,7 @@ The two stories share nothing else. One has numbers and the other has none. So t
 
 ### 40. Marxism: what it is like
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 40 of 55*
 
 [reviewers only: card kind `portrait`, id `portrait-marx`]
 
@@ -1431,11 +1431,11 @@ In your own life it is the lecture or the pamphlet that tries to show how a wage
 
 ### 41. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 41 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 41 of 55*
 
 [reviewers only: card kind `check`, id `check-marx`]
 
-> From a column in a care workers' newsletter: 'Why can a care chain make a profit at all? Because the home pays its carers less than the care is worth to the people who pay the fees. The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work. We write for the carers.'
+> From a column in a care workers' newsletter: 'Why can a care chain make a profit at all? Because the home pays its caregivers less than the care is worth to the people who pay the fees. The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work. We write for the caregivers.'
 
 **The question:** **“What does the text say about the farms, factories, shops and banks?”** Which of the answers you have met so far fits this case?
 
@@ -1457,7 +1457,7 @@ In your own life it is the lecture or the pamphlet that tries to show how a wage
 
 ### 42. A wrong idea about taxing the rich
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 42 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 42 of 55*
 
 [reviewers only: card kind `refute`, id `refute-tax`]
 
@@ -1478,7 +1478,7 @@ So when someone says that a text that taxes the rich must be **Marxism**, ask wh
 
 ### 43. Class politics with nothing attached or Marxism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 43 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 43 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-classonly-marx`]
 
@@ -1486,11 +1486,11 @@ These two are the pair most often taken for each other, because both talk about 
 
 **Case A**
 
-> From a notice at the Dunmore carpet mill: 'The owner of the carpet mill paid himself a bonus this year and told us there was no money for a raise. We are on the side of the weavers. Come to the canteen on Wednesday.'
+> From a notice at the Dunmore carpet mill: 'The owner of the carpet mill paid himself a bonus this year and told us there was no money for a raise. We are on the side of the weavers. Come to the cafeteria on Wednesday.'
 
 **Case B**
 
-> From a pamphlet at the Dunmore carpet mill: 'The owner of the carpet mill pays a weaver £60 for a day, and the weaver makes carpet worth £100 once the running costs are taken off. The gap is not this owner's greed. Every owner has to keep a gap like it, because that is how the arrangement works. We write this for the weavers.'
+> From a pamphlet at the Dunmore carpet mill: 'The owner of the carpet mill pays a weaver $60 for a day, and the weaver makes carpet worth $100 once the running costs are taken off. The gap is not this owner's greed. Every owner has to keep a gap like it, because that is how the arrangement works. We write this for the weavers.'
 
 **What to compare.** Both cases are about the Dunmore carpet mill and its owner’s gain. Compare one thing: is the text about this owner’s choice, or does it explain why any owner would keep a gap?
 
@@ -1500,7 +1500,7 @@ These two are the pair most often taken for each other, because both talk about 
 
 **Why this one and not the other**
 
-In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a canteen meeting. Nothing is explained and nothing is asked. The answer is **“The text does not say”**, and the case is **Class politics with nothing attached**.
+In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a cafeteria meeting. Nothing is explained and nothing is asked. The answer is **“The text does not say”**, and the case is **Class politics with nothing attached**.
 
 In Case B the text says the gap is not this owner’s greed: every owner has to keep a gap like it, because that is how the arrangement works. That is an explanation of how owners gain. The answer is **“It explains how their owners gain from what workers make”**, and the case is **Marxism**.
 
@@ -1522,7 +1522,7 @@ Is the text about this owner’s choices? Or does it explain why any owner would
 
 ### 44. Social democracy or Marxism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 44 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 44 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-socdem-marx`]
 
@@ -1566,7 +1566,7 @@ Does the text ask the government to do something about pay, taxes or services? O
 
 ### 45. Marxism or Marxism-Leninism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 45 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 45 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-marx-ml`]
 
@@ -1574,11 +1574,11 @@ Both of these can explain how owners gain. They part on whether the text goes on
 
 **Case A**
 
-> From a pamphlet at the Reed Mill: 'A spinner is paid £50 for a day's work. She makes yarn that sells for £90, once the running costs are taken off. The £40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners.'
+> From a pamphlet at the Reed Mill: 'A spinner is paid $50 for a day's work. She makes yarn that sells for $90, once the running costs are taken off. The $40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners.'
 
 **Case B**
 
-> From a pamphlet at the Reed Mill: 'A spinner is paid £50 for a day's work. She makes yarn that sells for £90, once the running costs are taken off. The £40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners. The spinners' party must take power and keep it, and allow no rival party.'
+> From a pamphlet at the Reed Mill: 'A spinner is paid $50 for a day's work. She makes yarn that sells for $90, once the running costs are taken off. The $40 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. The owners and the spinners want opposite things from that gap, and we write for the spinners. The spinners' party must take power and keep it, and allow no rival party.'
 
 **What to compare.** Both cases are about the Reed Mill and have the same sums and the same explanation. Compare one thing: whether the text goes on to say that a party, or the workers, will take power and keep it.
 
@@ -1610,7 +1610,7 @@ Does the text say that a party, or the workers, will take power and keep it? Or 
 
 ### 46. Anarchism or Marxism: telling them apart
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 46 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 46 of 55*
 
 [reviewers only: card kind `lookalike`, id `look-marx-anarch`]
 
@@ -1618,11 +1618,11 @@ Both of these explain how owners gain, and a text that does only that is **Marxi
 
 **Case A**
 
-> From a pamphlet at the Pike Mill: 'A spinner is paid £48 for a day's work. She makes yarn that sells for £85, once the running costs are taken off. The £37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we will make this case to the voters at every election.'
+> From a pamphlet at the Pike Mill: 'A spinner is paid $48 for a day's work. She makes yarn that sells for $85, once the running costs are taken off. The $37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we will make this case to the voters at every election.'
 
 **Case B**
 
-> From a pamphlet at the Pike Mill: 'A spinner is paid £48 for a day's work. She makes yarn that sells for £85, once the running costs are taken off. The £37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we want no government at all: we will run the mill and the town together, in meetings.'
+> From a pamphlet at the Pike Mill: 'A spinner is paid $48 for a day's work. She makes yarn that sells for $85, once the running costs are taken off. The $37 goes to the owner. Every owner has to keep a gap like it, because that is how the arrangement works. We write for the spinners, and we want no government at all: we will run the mill and the town together, in meetings.'
 
 **What to compare.** Both cases are about the Pike Mill and have the same sums and the same explanation. Compare one thing: whether the text goes on to say that the government is to be got rid of.
 
@@ -1654,7 +1654,7 @@ Besides the explanation, does the text say that the government should be done aw
 
 ### 47. An explanation that ends in a plan
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 47 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 47 of 55*
 
 [reviewers only: card kind `exception`, id `exc-dyeworks`]
 
@@ -1662,19 +1662,19 @@ The last cards were about texts that explain. Here is a text that explains, and 
 
 *The dye-works pamphlet*
 
-> From a pamphlet at the Weir dye works: 'A dyer is paid £55 for a day and dyes cloth that sells for £95 once the running costs are taken off. The £40 goes to the owner, and the owner and the dyers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. This is why the dye works should be taken into public ownership and run for everyone, and why we will vote for those who say so.'
+> From a pamphlet at the Weir dye works: 'A dyer is paid $55 for a day and dyes cloth that sells for $95 once the running costs are taken off. The $40 goes to the owner, and the owner and the dyers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. This is why the dye works should be taken into public ownership and run for everyone, and why we will vote for those who say so.'
 
 This text gives a sum, says that every owner has to keep a gap like it, and says that this is how the arrangement works. That is what you point to for **Marxism**. Yet this case is **Democratic socialism**.
 
 **You are asked:** This looks like **Marxism**. Before you read why it is **Democratic socialism**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “A dyer is paid £55 for a day and dyes cloth that sells for £95 once the running costs are taken off. The £40 goes to the owner, and the owner and the dyers want opposite things from it”
+1. “A dyer is paid $55 for a day and dyes cloth that sells for $95 once the running costs are taken off. The $40 goes to the owner, and the owner and the dyers want opposite things from it”
 2. “Every owner has to keep a gap like it, because that is how the arrangement works”
 3. “the dye works should be taken into public ownership and run for everyone”
 
 **Shown as soon as you tap.** The words are “the dye works should be taken into public ownership and run for everyone”.
-- If you tapped “A dyer is paid £55 for a day and dyes cloth that sells for £95 once the running costs are taken off. The £40 goes to the owner, and the owner and the dyers want opposite things from it”: That is a sum showing a gap, and the two sides. It is where the text begins, and it is not what settles the answer.
+- If you tapped “A dyer is paid $55 for a day and dyes cloth that sells for $95 once the running costs are taken off. The $40 goes to the owner, and the owner and the dyers want opposite things from it”: That is a sum showing a gap, and the two sides. It is where the text begins, and it is not what settles the answer.
 - If you tapped “Every owner has to keep a gap like it, because that is how the arrangement works”: That is the explanation. It is true of the text, and it is why the text looks like an explanation and nothing more. The text goes on to ask for something.
 
 **Why this is Democratic socialism and not Marxism**
@@ -1709,7 +1709,7 @@ This is a decision, and it is stated once so that two people using the same ques
 
 ### 48. The question about the businesses
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 48 of 55*
 
 [reviewers only: card kind `question`, id `q-business`]
 
@@ -1813,7 +1813,7 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 49. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 49 of 55*
 
 [reviewers only: card kind `check`, id `check-business`]
 
@@ -1841,7 +1841,7 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 50. The question about the government
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 50 of 55*
 
 [reviewers only: card kind `question`, id `q-government`]
 
@@ -1899,7 +1899,7 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 51. A question about a new case
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 51 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 51 of 55*
 
 [reviewers only: card kind `check`, id `check-government`]
 
@@ -1929,7 +1929,7 @@ Sometimes two answers both seem to fit. Each pair below has been put side by sid
 
 ### 52. A whole case, from the first question to the name
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 52 of 55*
 
 [reviewers only: card kind `worked`, id `worked-power`]
 
@@ -2001,7 +2001,7 @@ Here the answer and the likeness agree, so it stands. The questions come first, 
 
 ### 53. A second whole case, where the story points the wrong way
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 53 of 55*
 
 [reviewers only: card kind `worked`, id `worked-docks`]
 
@@ -2009,13 +2009,13 @@ The power-station leaflet was a clean case: one thing was going on, and nothing 
 
 *The dock party pamphlet*
 
-> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid £70 for a day's work and unloads goods that earn the dock company £110 once the running costs are taken off. The £40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. The docks will then belong to the government, run for everyone.'
+> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid $70 for a day's work and unloads goods that earn the dock company $110 once the running costs are taken off. The $40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. The docks will then belong to the government, run for everyone.'
 
 **Question 1 of 3: Who or what does the text put first?**
 
 What it is for: sorts texts that speak for working people against owners, for a nation or its ordinary people, for old ways handed down, or for what every person is owed, from texts that speak for no side at all.
 
-> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid £70 for a day's work and unloads goods that earn the dock company £110 once the running costs are taken off. The £40 goes to the owners, and ⟦the owners and the dockers want opposite things from it⟧. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. The docks will then belong to the government, run for everyone.'
+> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid $70 for a day's work and unloads goods that earn the dock company $110 once the running costs are taken off. The $40 goes to the owners, and ⟦the owners and the dockers want opposite things from it⟧. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. The docks will then belong to the government, run for everyone.'
 
 Answer: **“Working people, against those who own the businesses”**
 
@@ -2027,7 +2027,7 @@ Still possible: all seven names this unit teaches.
 
 What it is for: tells apart texts that keep the owners and tax them, texts that hand the businesses to the public or to the people who work in them, texts that only explain how owners gain, and texts that say nothing about the businesses.
 
-> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid £70 for a day's work and unloads goods that earn the dock company £110 once the running costs are taken off. The £40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. ⟦The docks will then belong to the government, run for everyone⟧.'
+> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid $70 for a day's work and unloads goods that earn the dock company $110 once the running costs are taken off. The $40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. The party will take the government by force, hold it, and allow no rival party. ⟦The docks will then belong to the government, run for everyone⟧.'
 
 Answer: **“They should pass to the government, to be run for everyone”**
 
@@ -2039,7 +2039,7 @@ Still possible: **Democratic socialism** and **Marxism-Leninism**. Ruled out: **
 
 What it is for: tells apart texts in which a party or the workers seize power and keep it, texts in which the government stays and whoever wins elections runs it, and texts that would get rid of government altogether.
 
-> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid £70 for a day's work and unloads goods that earn the dock company £110 once the running costs are taken off. The £40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. ⟦The party will take the government by force, hold it, and allow no rival party⟧. The docks will then belong to the government, run for everyone.'
+> From a pamphlet of the Orrin Docks workers' party: 'A docker is paid $70 for a day's work and unloads goods that earn the dock company $110 once the running costs are taken off. The $40 goes to the owners, and the owners and the dockers want opposite things from it. Every owner has to keep a gap like it, because that is how the arrangement works. Waiting for elections will not end it. ⟦The party will take the government by force, hold it, and allow no rival party⟧. The docks will then belong to the government, run for everyone.'
 
 Answer: **“Seize power and hold it for the workers, with no rivals allowed”**
 
@@ -2073,17 +2073,17 @@ When that happens, go back to the questions and find the words in the case that 
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these texts say nothing about the businesses, and some say nothing about the government. That is on purpose. Saying that a text does not say is one of the answers to each question, and you will need it as often as the others. A text that says nothing about either is a real case with a name of its own.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the seven this unit teaches: Social democracy / Class politics with nothing attached / Democratic socialism / Marxism-Leninism / Anarchism / Market socialism / Marxism.
 
 **Drill item 1 of 76**
 
-> From a staff newsletter at the Parkway call centre: 'The company that owns the call centre pays us the minimum and keeps the rest, and we stand with the staff. ⟦It can keep its call centre. What we want is a law that sets a wage on which a person can live, and a tax on the company's profits to fund childcare for every household⟧.'
+> From a staff newsletter at the Parkway call center: 'The company that owns the call center pays us the minimum and keeps the rest, and we stand with the staff. ⟦It can keep its call center. What we want is a law that sets a wage on which a person can live, and a tax on the company's profits to fund childcare for every household⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2103,7 +2103,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 2 of 76**
 
-> A note left in the staff room of the Marlowe hotel kitchen: 'The hotel's owners cut our hours again to save money. The cooks and the cleaners do the work and the owners count the takings, and we are with the cooks and the cleaners. ⟦Talk to your shift leader, and sign the sheet by the door⟧.'
+> A note left in the staff room of the Marlowe hotel kitchen: 'The hotel's owners cut our hours again to save money. The cooks and the cleaners do the work and the owners count the receipts, and we are with the cooks and the cleaners. ⟦Talk to your shift leader, and sign the sheet by the door⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2123,7 +2123,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 3 of 76**
 
-> From the Calderbank bus drivers' union: 'The three companies that own the town's buses run them for the owners' profit, and the drivers carry the cost, and we stand with the drivers. ⟦The buses should belong to the town, run by the council for everyone who rides⟧. ⟦We will put that to the voters in the autumn⟧.'
+> From the Calderbank bus drivers' union: 'The three companies that own the town's buses run them for the owners' profit, and the drivers carry the cost, and we stand with the drivers. ⟦The buses should belong to the town, run by the council for everyone who rides⟧. ⟦We will put that to the voters in the fall⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2134,7 +2134,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **Keep it, run by whoever wins elections.** The change is to go to the voters: “We will put that to the voters in the autumn”. The text leaves its power in the voters’ hands and says nothing about taking it by force or ruling alone.
+- If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **Keep it, run by whoever wins elections.** The change is to go to the voters: “We will put that to the voters in the fall”. The text leaves its power in the voters’ hands and says nothing about taking it by force or ruling alone.
   - Why not **Marxism-Leninism**: Handing the buses to the town is something both names ask for. This text puts it to the voters. A text that said a party would take power and keep it would be **Marxism-Leninism**.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Marxism-Leninism**, the look-alike card’s lines follow: Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers. In **Democratic socialism** the change comes through elections that the people asking for it can lose, or the text says nothing about how. In **Marxism-Leninism** the party or the workers take power by force or rule as the only party, with no offer to give it up at an election. Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.
@@ -2163,7 +2163,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 5 of 76**
 
-> From a flyer posted in the old market hall: 'The people who hold the leases on the stalls charge us for the right to sell, and the council backs them, and we stand with the stallholders. ⟦The stalls should belong to the people who work them⟧. ⟦We want no council and no government: we will run the hall and the street together, in meetings⟧.'
+> From a flyer posted in the old market hall: 'The people who hold the leases on the stalls charge us for the right to sell, and the council backs them, and we stand with the vendors. ⟦The stalls should belong to the people who work them⟧. ⟦We want no council and no government: we will run the hall and the street together, in meetings⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2203,7 +2203,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 76**
 
-> From a talk given to the Newbridge dockers' reading group: 'A docker hauls crates worth £90 in a day and is paid £55. The £35 goes to the shipping company's owners. This is not a bad owner's trick. ⟦Any owner has to keep a gap like it, because that is what an owner is for. That is how the arrangement works⟧, and ⟦we are giving this talk for the dockers⟧.'
+> From a talk given to the Newbridge dockers' reading group: 'A docker hauls crates worth $90 in a day and is paid $55. The $35 goes to the shipping company's owners. This is not a bad owner's trick. ⟦Any owner has to keep a gap like it, because that is what an owner is for. That is how the arrangement works⟧, and ⟦we are giving this talk for the dockers⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2223,7 +2223,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 76**
 
-> From a letter by the Hollin teachers' union: 'The company that runs the academy chain pays its profits out and pays its teachers late, and we stand with the teachers. ⟦The chain can stay as it is. We ask for a law on the pay of teachers and a tax on the chain's profits to fund school meals⟧. ⟦We will take this to the voters at the next election⟧.'
+> From a letter by the Hollin teachers' union: 'The company that runs the charter-school chain pays its profits out and pays its teachers late, and we stand with the teachers. ⟦The chain can stay as it is. We ask for a law on the pay of teachers and a tax on the chain's profits to fund school meals⟧. ⟦We will take this to the voters at the next election⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2263,7 +2263,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 10 of 76**
 
-> From a notice at the Blackwood quarry: 'The company that owns the quarry pays us by the tonne, and the government pays the police who guard its gate, and we stand with the quarrymen. ⟦We want the quarry to belong to those who work it⟧. ⟦We want no government at all, and we will not use one. We will run the quarry and the village by agreement among ourselves, in open meetings⟧.'
+> From a notice at the Blackwood quarry: 'The company that owns the quarry pays us by the ton, and the government pays the police who guard its gate, and we stand with the quarrymen. ⟦We want the quarry to belong to those who work it⟧. ⟦We want no government at all, and we will not use one. We will run the quarry and the village by agreement among ourselves, in open meetings⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2303,7 +2303,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 12 of 76**
 
-> From a student pamphlet at Holm College: 'The college café is run by a firm that pays its staff £9 an hour and sells what they make for the equivalent of £14, once its costs are covered. The £5 goes to the firm's owners. ⟦This is not one greedy firm. It is how any firm that pays wages has to work⟧, and ⟦the pamphlet is for the staff who work in it⟧.'
+> From a student pamphlet at Holm College: 'The college café is run by a firm that pays its staff $9 an hour and sells what they make for the equivalent of $14, once its costs are covered. The $5 goes to the firm's owners. ⟦This is not one greedy firm. It is how any firm that pays wages has to work⟧, and ⟦the pamphlet is for the staff who work in it⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -2365,7 +2365,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 15 of 76**
 
-> A leaflet from the cleaners on the Elmfield estate: 'The company that owns the estate pays us the least it can, and we are on the side of the cleaners. We do not want the estate taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late.'
+> A leaflet from the cleaners on the Elmfield apartment complex: 'The company that owns the apartment complex pays us the least it can, and we are on the side of the cleaners. We do not want the apartment complex taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late.'
 
 **You are asked:** What does the text say about the farms, factories, shops and banks?
 
@@ -2378,7 +2378,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Their owners keep them, and taxes and public services even out what people get.**” The company is to keep the estate, and a law and a tax are asked for to even out the result: “We do not want the estate taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late”. This answer leads to **Social democracy**.
+- If you are right: “Right: **Their owners keep them, and taxes and public services even out what people get.**” The company is to keep the apartment complex, and a law and a tax are asked for to even out the result: “We do not want the apartment complex taken from the company. We want a law on cleaners' pay, and a tax on the company's rents to pay for night buses for every worker who finishes late”. This answer leads to **Social democracy**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the businesses” (one tap opens the card).
@@ -2406,7 +2406,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 17 of 76**
 
-> From a petition by the Greyfield water workers: 'The company that owns the water supply runs it for its shareholders, and we stand with the people who work its pipes. The water supply should belong to the public, run by the government for everyone.'
+> From a petition by the Grayfield water workers: 'The company that owns the water supply runs it for its shareholders, and we stand with the people who work its pipes. The water supply should belong to the public, run by the government for everyone.'
 
 **You are asked:** What does the text say about the farms, factories, shops and banks?
 
@@ -2468,7 +2468,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 20 of 76**
 
-> From a talk to the clerks at the Merrow bank: 'The bank pays a clerk £70 a day, and the clerk brings the bank £120 in fees once costs are paid. The £50 goes to the bank's owners. Every bank has to keep a gap like it; that is how the arrangement works, for every owner. The talk is for the clerks.'
+> From a talk to the clerks at the Merrow bank: 'The bank pays a clerk $70 a day, and the clerk brings the bank $120 in fees once costs are paid. The $50 goes to the bank's owners. Every bank has to keep a gap like it; that is how the arrangement works, for every owner. The talk is for the clerks.'
 
 **You are asked:** What does the text say about the farms, factories, shops and banks?
 
@@ -2488,7 +2488,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 21 of 76**
 
-> From a statement by the Larkhill builders' party: 'The firms that own the estates and the builders who raise them are on opposite sides, and we are with the builders. The party will take the estates by force and keep the power it wins. It will tolerate no rival party. The estates will then be everyone's.'
+> From a statement by the Larkhill builders' party: 'The firms that own the developments and the builders who raise them are on opposite sides, and we are with the builders. The party will take the developments by force and keep the power it wins. It will tolerate no rival party. The developments will then be everyone's.'
 
 **You are asked:** What does the text want done with the government?
 
@@ -2499,7 +2499,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Seize power and hold it for the workers, with no rivals allowed.**” The party will take power by force and keep it, with no rival: “The party will take the estates by force and keep the power it wins. It will tolerate no rival party”. This answer leads to **Marxism-Leninism**.
+- If you are right: “Right: **Seize power and hold it for the workers, with no rivals allowed.**” The party will take power by force and keep it, with no rival: “The party will take the developments by force and keep the power it wins. It will tolerate no rival party”. This answer leads to **Marxism-Leninism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question about the government” (one tap opens the card).
@@ -3181,7 +3181,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 51 of 76**
 
-> From a pamphlet for the fish-packers at the Harbour Row cannery: 'A packer is paid £40 for a day and packs fish worth £65 once the ice and the tins are paid for. The £25 goes to the cannery's owner. ⟦This is how any cannery works, for any owner: owners live from what the packers make and are not paid for⟧. This pamphlet is for the packers.'
+> From a pamphlet for the fish-packers at the Harbor Row cannery: 'A packer is paid $40 for a day and packs fish worth $65 once the ice and the cans are paid for. The $25 goes to the cannery's owner. ⟦This is how any cannery works, for any owner: owners live from what the packers make and are not paid for⟧. This pamphlet is for the packers.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -3203,7 +3203,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 52 of 76**
 
-> From a flyer from the Kitt boatyard crew: 'The boatyard's owner takes what the boats earn, and the government keeps the rules that let him, and we are with the crew. ⟦The yard should belong to the crew⟧. We want no government and no party: we will run the yard and the harbour together, in open meetings.'
+> From a flyer from the Kitt boatyard crew: 'The boatyard's owner takes what the boats earn, and the government keeps the rules that let him, and we are with the crew. ⟦The yard should belong to the crew⟧. We want no government and no party: we will run the yard and the harbor together, in open meetings.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -3213,7 +3213,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government and no party: “We want no government and no party: we will run the yard and the harbour together, in open meetings”.
+- If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government and no party: “We want no government and no party: we will run the yard and the harbor together, in open meetings”.
   - Why not **Market socialism**: Both give the yard to its crew. This text says nothing about competing, and wants no government. A text that kept the yard competing for customers would be **Market socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -3224,7 +3224,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 53 of 76**
 
-> From a meeting of the Alder Row bookshop staff: 'The shop's owner keeps the takings, and we sell the books. ⟦The shop should belong to its staff, and it should still compete with the other bookshops for customers, set its own prices and shut if it cannot pay its way⟧. We will ask the voters for a law to let staff buy their shops.'
+> From a meeting of the Alder Row bookstore staff: 'The shop's owner keeps the receipts, and we sell the books. ⟦The shop should belong to its staff, and it should still compete with the other bookstores for customers, set its own prices and shut if it cannot pay its way⟧. We will ask the voters for a law to let staff buy their shops.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Working people, against those who own the businesses**
@@ -3269,7 +3269,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 55 of 76**
 
-> A post by the Quayside cleaners: 'The firm that owns the Quayside flats pays us by the flat and sells the flats for a fortune. The people who clean and the people who own are not on the same side, and we are on ours. Join us outside the sales office on Friday.'
+> A post by the Quayside cleaners: 'The firm that owns the Quayside apartments pays us by the apartment and sells the apartments for a fortune. The people who clean and the people who own are not on the same side, and we are on ours. Join us outside the sales office on Friday.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -3279,7 +3279,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - Why not **Marxism**: The text says what the firm does, but it does not explain how any owner gains from the work. A text that did would be **Marxism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the people who clean against the people who own, and takes the cleaners’ side: “The people who clean and the people who own are not on the same side, and we are on ours”.
-  - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the flats would be, the text has an invitation: “Join us outside the sales office on Friday”. It says nothing about who should own the flats, about taxes, or about how the owners gain.
+  - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the apartments would be, the text has an invitation: “Join us outside the sales office on Friday”. It says nothing about who should own the apartments, about taxes, or about how the owners gain.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -3288,7 +3288,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 56 of 76**
 
-> From notes for a reading circle of railway fitters: 'A fitter is paid £80 a day, and mends a locomotive whose use brings the railway £140 once its costs are covered. The £60 goes to the owners. This is not the fault of any one owner. Any owner has to keep a gap like it, and that is how the arrangement works. The circle meets for the fitters.'
+> From notes for a reading circle of railway fitters: 'A fitter is paid $80 a day, and mends a locomotive whose use brings the railway $140 once its costs are covered. The $60 goes to the owners. This is not the fault of any one owner. Any owner has to keep a gap like it, and that is how the arrangement works. The circle meets for the fitters.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -3297,8 +3297,8 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **Marxism**.” What does the text want done with the government? **The text does not say.** The text says nothing about power or the government. It says who the circle is for: “The circle meets for the fitters”.
   - Why not **Class politics with nothing attached**: The text does more than side with the fitters: it says why any owner gains. A text that only complained would be **Class politics with nothing attached**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the fitters against the owners who take the gap, and is written for the fitters: “The £60 goes to the owners” and “The circle meets for the fitters”.
-  - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for any owner: “Any owner has to keep a gap like it, and that is how the arrangement works”. The £60 it says goes to the owners is the *surplus value* of the fitter’s day. The text asks for nothing to be done with the railway.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the fitters against the owners who take the gap, and is written for the fitters: “The $60 goes to the owners” and “The circle meets for the fitters”.
+  - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for any owner: “Any owner has to keep a gap like it, and that is how the arrangement works”. The $60 it says goes to the owners is the *surplus value* of the fitter’s day. The text asks for nothing to be done with the railway.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -3326,13 +3326,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 58 of 76**
 
-> From a decree-in-waiting of the Sorrel Port strike committee: 'The shipowners and the dockers cannot share a port, and the committee stands with the dockers. The committee will seize the port and the customs house, and it will hold them. Other parties will be banned from the harbour and the town. The port will belong to those who work it.'
+> From a decree-in-waiting of the Sorrel Port strike committee: 'The shipowners and the dockers cannot share a port, and the committee stands with the dockers. The committee will seize the port and the customs house, and it will hold them. Other parties will be banned from the harbor and the town. The port will belong to those who work it.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Marxism-Leninism**.” What does the text want done with the government? **Seize power and hold it for the workers, with no rivals allowed.** The committee will seize power and hold it, and ban other parties: “The committee will seize the port and the customs house, and it will hold them. Other parties will be banned from the harbour and the town”.
+- If you are right: “Right: **Marxism-Leninism**.” What does the text want done with the government? **Seize power and hold it for the workers, with no rivals allowed.** The committee will seize power and hold it, and ban other parties: “The committee will seize the port and the customs house, and it will hold them. Other parties will be banned from the harbor and the town”.
   - Why not **Anarchism**: Both want the dockers to take over without waiting for a vote. This text has a committee hold the port and ban other parties, and **Anarchism** wants no one to hold power.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the shipowners against the dockers, and stands with the dockers: “The shipowners and the dockers cannot share a port, and the committee stands with the dockers”.
@@ -3346,16 +3346,16 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 59 of 76**
 
-> From a statement by the Oak Hill school helpers: 'The company that owns the school canteen and cleaning contracts pays us little, and the government guards its contracts, and we stand with the helpers. The services should belong to the people who do them. We want no government. We will run the school's services, and the neighbourhood's, together, in meetings.'
+> From a statement by the Oak Hill school helpers: 'The company that owns the school cafeteria and cleaning contracts pays us little, and the government guards its contracts, and we stand with the helpers. The services should belong to the people who do them. We want no government. We will run the school's services, and the neighborhood's, together, in meetings.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government, and says how things will be run instead: “We want no government. We will run the school's services, and the neighbourhood's, together, in meetings”.
+- If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government, and says how things will be run instead: “We want no government. We will run the school's services, and the neighborhood's, together, in meetings”.
   - Why not **Democratic socialism**: Giving the services to the people who do them is something **Democratic socialism** asks for as well. This text wants no government, and **Democratic socialism** keeps the government.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the helpers against the company that owns the contracts, and stands with the helpers: “The company that owns the school canteen and cleaning contracts pays us little, and the government guards its contracts, and we stand with the helpers”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the helpers against the company that owns the contracts, and stands with the helpers: “The company that owns the school cafeteria and cleaning contracts pays us little, and the government guards its contracts, and we stand with the helpers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The services are to belong to the people who do them: “The services should belong to the people who do them”. Nothing is said about competing.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can want each business to belong to the people who work in it. In **Democratic socialism** the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In **Anarchism** the government is to be got rid of now, with people running their work and their towns together without it. Should the government stay, or be done away with now, according to the text?
@@ -3406,7 +3406,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 62 of 76**
 
-> From a pamphlet by the Hartwell postal clerks: 'The company that owns the post offices keeps the profit from the stamps, and the clerks keep the queues, and we stand with the clerks. A fairer tax on the company would help, and so would a pension for every clerk. But what we ask is bigger: the post offices should be taken from the company and run by the government for everyone. We will ask the voters for it.'
+> From a pamphlet by the Hartwell postal clerks: 'The company that owns the post offices keeps the profit from the stamps, and the clerks keep the lines, and we stand with the clerks. A fairer tax on the company would help, and so would a pension for every clerk. But what we ask is bigger: the post offices should be taken from the company and run by the government for everyone. We will ask the voters for it.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -3415,7 +3415,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **Democratic socialism**.” What does the text want done with the government? **Keep it, run by whoever wins elections.** The clerks will ask the voters: “We will ask the voters for it”.
   - Why not **Social democracy**: The tax and the pension are what you would point to for **Social democracy**. But the text goes on to ask for the post offices to be taken from the company, and when a text shows both, the handover decides.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the clerks against the company that owns the post offices, and stands with the clerks: “The company that owns the post offices keeps the profit from the stamps, and the clerks keep the queues, and we stand with the clerks”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the clerks against the company that owns the post offices, and stands with the clerks: “The company that owns the post offices keeps the profit from the stamps, and the clerks keep the lines, and we stand with the clerks”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the government, to be run for everyone.** The post offices are to be taken from the company and run by the government: “the post offices should be taken from the company and run by the government for everyone”. The text also asks for a tax and a pension, and when a text shows both, the handover decides.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
@@ -3470,7 +3470,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 65 of 76**
 
-> From a flyer of the Elder Street print co-op: 'The print firm's old owner took the profit, and the government sent the bailiffs when we asked for our pay, and we are with the printers. The firm should belong to the people who print in it. We will sell our work to anyone who wants it, but we want no government over us, ever, and we will run the firm and the street together, in meetings.'
+> From a flyer of the Elder Street print co-op: 'The print firm's old owner took the profit, and the government sent the sheriff’s deputies when we asked for our pay, and we are with the printers. The firm should belong to the people who print in it. We will sell our work to anyone who wants it, but we want no government over us, ever, and we will run the firm and the street together, in meetings.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -3479,7 +3479,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government: “we want no government over us, ever, and we will run the firm and the street together, in meetings”.
   - Why not **Market socialism**: The firm will sell its work, which can sound like a market. But the text says nothing about competing, setting prices or failing, and it wants no government.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the printers against the firm’s old owner, and stands with the printers: “The print firm's old owner took the profit, and the government sent the bailiffs when we asked for our pay, and we are with the printers”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the printers against the firm’s old owner, and stands with the printers: “The print firm's old owner took the profit, and the government sent the sheriff’s deputies when we asked for our pay, and we are with the printers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The firm is to belong to the people who print in it: “The firm should belong to the people who print in it”. Selling its work is not the same as competing for customers, setting prices and risking failure, and the text says none of those.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Market socialism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
@@ -3491,7 +3491,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 66 of 76**
 
-> From a pamphlet at the Tenby Mill: 'People say a minimum wage and a tax would fix the mill. We say look first at how it works. A spinner is paid £48 for a day and makes yarn worth £82 once costs are covered, and the £34 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that. We write for the spinners.'
+> From a pamphlet at the Tenby Mill: 'People say a minimum wage and a tax would fix the mill. We say look first at how it works. A spinner is paid $48 for a day and makes yarn worth $82 once costs are covered, and the $34 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that. We write for the spinners.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -3500,7 +3500,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **Marxism**.” What does the text want done with the government? **The text does not say.** The text says nothing about power or the government. It says who it is written for: “We write for the spinners”.
   - Why not **Social democracy**: The words minimum wage and tax are in the text, but as what other people say. The text itself asks for neither, and explains instead.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the spinners against the owners who keep the gap, and is written for the spinners: “the £34 goes to the owners” and “We write for the spinners”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the spinners against the owners who keep the gap, and is written for the spinners: “the $34 goes to the owners” and “We write for the spinners”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works: “Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that”. The minimum wage and the tax are mentioned only as what other people say, and the text does not ask for them.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?
@@ -3512,17 +3512,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 67 of 76**
 
-> From a charter of the Glenmore bus co-operative: 'The company that owned the buses ran them for its shareholders, and the drivers and fitters stand together against it. The buses should belong to everyone who works on them, and the co-operative should run for the town's good. It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs.'
+> From a charter of the Glenmore bus cooperative: 'The company that owned the buses ran them for its shareholders, and the drivers and fitters stand together against it. The buses should belong to everyone who works on them, and the cooperative should run for the town's good. It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Market socialism**.” What does the text want done with the government? **The text does not say.** The text says nothing about power or the government. Its last words are about the co-operative folding: “fold if it cannot cover its costs”.
-  - Why not **Democratic socialism**: The words about running for the town’s good sound like public ownership, and the buses are handed to the workers, as **Democratic socialism** might ask. But the co-operative will still compete, set its fares and risk folding, and the more exact answer decides.
+- If you are right: “Right: **Market socialism**.” What does the text want done with the government? **The text does not say.** The text says nothing about power or the government. Its last words are about the cooperative folding: “fold if it cannot cover its costs”.
+  - Why not **Democratic socialism**: The words about running for the town’s good sound like public ownership, and the buses are handed to the workers, as **Democratic socialism** might ask. But the cooperative will still compete, set its fares and risk folding, and the more exact answer decides.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the shareholders against the drivers and fitters, and stands with the workers: “The company that owned the buses ran them for its shareholders, and the drivers and fitters stand together against it”.
-  - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** The buses are to belong to the people who work on them, and the co-operative will still compete and risk folding: “The buses should belong to everyone who works on them” and “It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs”. Both halves are in the text, and the competing is what makes it the more exact answer.
+  - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one, and compete for customers.** The buses are to belong to the people who work on them, and the cooperative will still compete and risk folding: “The buses should belong to everyone who works on them” and “It will still compete with the other bus firms for routes, set its own fares and fold if it cannot cover its costs”. Both halves are in the text, and the competing is what makes it the more exact answer.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the businesses taken from their owners, and both can ask for it through elections. In **Democratic socialism** the businesses pass to the government, or to the people who work in them, and nothing is said about competing. In **Market socialism** each business belongs to the people who work in it and competes with the others for customers. A text that says both is **Market socialism**. After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -3738,7 +3738,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 54. What to carry away
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 54 of 55*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -3788,7 +3788,7 @@ What does the text want done with the government?
 
 ### 55. Where would you meet this?
 
-*Unit Two · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 55 of 55*
+*Unit Two · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 55 of 55*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -3802,7 +3802,7 @@ Pick one of the seven and name an occasion of your own: somewhere you read it, h
 - **Class politics with nothing attached**: A notice, post or leaflet that took the workers’ side and stopped there.
 - **Democratic socialism**: An argument about whether a railway, a bank or a power company should be owned by the public.
 - **Marxism-Leninism**: A time the word "communist" was used about a plan, and you can check whether the text said a party would take power and keep it.
-- **Anarchism**: A co-operative, a squat or a meeting that runs itself with nobody giving orders.
+- **Anarchism**: A cooperative, a squat or a meeting that runs itself with nobody giving orders.
 - **Market socialism**: A shop or firm owned by the people who work in it, selling to the public.
 - **Marxism**: A lecture, a book or a pamphlet that explains why wages and profit are what they are.
 
@@ -3822,17 +3822,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 23**
 
-> From a flyer by the Marrick taxi drivers: 'The company that owns the taxi licences charges us a fortune to drive and keeps most of the fares, and we are with the drivers. The company can keep its licences. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver.'
+> From a flyer by the Marrick taxi drivers: 'The company that owns the taxi licenses charges us a fortune to drive and keeps most of the fares, and we are with the drivers. The company can keep its licenses. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Social democracy**.” What does the text want done with the government? **The text does not say.** The text asks the government for a cap: “We ask for a law that caps what it can charge a driver”. It says nothing about how power is won or held, or about the government itself.
-  - Why not **Democratic socialism**: The company keeps its licences. A text that asked for them to pass to the government would be **Democratic socialism**.
+  - Why not **Democratic socialism**: The company keeps its licenses. A text that asked for them to pass to the government would be **Democratic socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the drivers against the company that owns the licences, and stands with the drivers: “The company that owns the taxi licences charges us a fortune to drive and keeps most of the fares, and we are with the drivers”.
-  - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The company keeps its licences, and a law and a tax are asked for: “The company can keep its licences. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the drivers against the company that owns the licenses, and stands with the drivers: “The company that owns the taxi licenses charges us a fortune to drive and keeps most of the fares, and we are with the drivers”.
+  - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The company keeps its licenses, and a law and a tax are asked for: “The company can keep its licenses. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver”.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -3860,17 +3860,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 23**
 
-> From a leaflet by the Westfold labourers: 'The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the labourers. It can keep its sites. We want a law that guarantees a labourer a week's pay, and a tax on its profits to pay for training places.'
+> From a leaflet by the Westfold laborers: 'The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the laborers. It can keep its sites. We want a law that guarantees a laborer a week's pay, and a tax on its profits to pay for training places.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Social democracy**.” What does the text want done with the government? **The text does not say.** The text asks for a law on pay: “We want a law that guarantees a labourer a week's pay”. It says nothing about power or the government itself.
+- If you are right: “Right: **Social democracy**.” What does the text want done with the government? **The text does not say.** The text asks for a law on pay: “We want a law that guarantees a laborer a week's pay”. It says nothing about power or the government itself.
   - Why not **Democratic socialism**: The firm keeps its sites. A text that asked for the sites to pass to the government would be **Democratic socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the labourers against the firm that owns the sites, and stands with the labourers: “The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the labourers”.
-  - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The firm keeps its sites, and a law and a tax are asked for: “It can keep its sites. We want a law that guarantees a labourer a week's pay, and a tax on its profits to pay for training places”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the laborers against the firm that owns the sites, and stands with the laborers: “The firm that owns the building sites hires us by the day and keeps the rest of what the houses sell for, and we are with the laborers”.
+  - What does the text say about the farms, factories, shops and banks? **Their owners keep them, and taxes and public services even out what people get.** The firm keeps its sites, and a law and a tax are asked for: “It can keep its sites. We want a law that guarantees a laborer a week's pay, and a tax on its profits to pay for training places”.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay. In **Social democracy** the owners keep their businesses, and the government taxes them and pays for services. In **Democratic socialism** the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is **Democratic socialism**. Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -4033,7 +4033,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 12 of 23**
 
-> From a pamphlet of the Dray Works party: 'A founder is paid £65 for a day and casts parts worth £110 once the metal is paid for. The £45 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works. The party will take power and hold it, and no rival will be allowed to take it back.'
+> From a pamphlet of the Dray Works party: 'A founder is paid $65 for a day and casts parts worth $110 once the metal is paid for. The $45 goes to the owners. Every owner has to keep a gap like it, because that is how the arrangement works. The party will take power and hold it, and no rival will be allowed to take it back.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -4042,7 +4042,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Marxism-Leninism**.” What does the text want done with the government? **Seize power and hold it for the workers, with no rivals allowed.** The party will take power and hold it, with no rival allowed: “The party will take power and hold it, and no rival will be allowed to take it back”. The explanation is the same as in a text that stops there, and what the text goes on to say about power is what decides it.
   - Why not **Marxism**: The text explains how owners gain, as **Marxism** does. But it goes on to say that a party will take power and hold it, and **Marxism** says nothing about who takes power.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the founders’ pay against the gap that goes to the owners, and is written by a workers’ party: “The £45 goes to the owners”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the founders’ pay against the gap that goes to the owners, and is written by a workers’ party: “The $45 goes to the owners”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the works, so the explanation is the answer here.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both can set out how owners come by their profit. In **Marxism** the text explains and says nothing about who takes power. In **Marxism-Leninism** the text says that a party, or the workers, will take power and keep it, with no rivals allowed. Does the text say that a party, or the workers, will take power and keep it? Or does it only explain how owners gain?
@@ -4071,16 +4071,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 14 of 23**
 
-> From a flyer by the Port Alma fishers: 'The company that owns the fish quota takes what we catch, and the harbour authority backs it, and we stand with the fishers. We want the quota to belong to the people who fish. We want no authority and no government over the harbour: we will agree the catch together, on the quay.'
+> From a flyer by the Port Alma fishers: 'The company that owns the fish quota takes what we catch, and the harbor authority backs it, and we stand with the fishers. We want the quota to belong to the people who fish. We want no authority and no government over the harbor: we will agree the catch together, on the quay.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government over the harbour: “We want no authority and no government over the harbour: we will agree the catch together, on the quay”.
+- If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government over the harbor: “We want no authority and no government over the harbor: we will agree the catch together, on the quay”.
   - Why not **Market socialism**: Both give the quota to the people who fish. This text says nothing about competing, and wants no government. A text that kept the fishers competing for customers would be **Market socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the company that owns the quota against the fishers, and stands with the fishers: “The company that owns the fish quota takes what we catch, and the harbour authority backs it, and we stand with the fishers”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the company that owns the quota against the fishers, and stands with the fishers: “The company that owns the fish quota takes what we catch, and the harbor authority backs it, and we stand with the fishers”.
   - What does the text say about the farms, factories, shops and banks? **They should pass to the people who work in each one.** The quota is to belong to the people who fish: “We want the quota to belong to the people who fish”. Nothing is said about competing.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Market socialism**, the look-alike card’s lines follow: Both want each business to belong to the people who work in it. In **Market socialism** the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In **Anarchism** the text says nothing about competing, and wants the government got rid of. Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?
@@ -4090,7 +4090,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 15 of 23**
 
-> From a zine left on the steps of the Corbel bank: 'The bank's owners and the people who work its tills are on opposite sides, and we are with the tills. We want no government at all, and we will run things ourselves, in meetings. Bring a chair to the steps on Sunday.'
+> From a zine left on the steps of the Corbel bank: 'The bank's owners and the people who work its teller windows are on opposite sides, and we are with the teller windows. We want no government at all, and we will run things ourselves, in meetings. Bring a chair to the steps on Sunday.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -4099,7 +4099,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government at all: “We want no government at all, and we will run things ourselves, in meetings”. The question about the government names that even where the question about the businesses has nothing to name.
   - Why not **Class politics with nothing attached**: The text says nothing about the bank’s ownership, but it wants no government at all, and the question about the government names that. A text that said nothing about the government as well would be **Class politics with nothing attached**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the bank’s owners against the people at the tills, and stands with the tills: “The bank's owners and the people who work its tills are on opposite sides, and we are with the tills”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the bank’s owners against the people at the teller windows, and stands with the teller windows: “The bank's owners and the people who work its teller windows are on opposite sides, and we are with the teller windows”.
   - What does the text say about the farms, factories, shops and banks? **The text does not say.** Where a plan for the bank would be, the text has only an invitation: “Bring a chair to the steps on Sunday”. It says nothing about who should own the bank.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both can say nothing about what should happen to the businesses, and both stand with the workers. **Class politics with nothing attached** says nothing about the government. **Anarchism** wants the government got rid of, even when it says nothing about the businesses. Does the text say anything about the government itself: that it should be kept, or done away with?
@@ -4167,7 +4167,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 19 of 23**
 
-> From a talk to the Garrow bricklayers' lodge: 'A bricklayer is paid £75 for a day and lays walls that add £125 to the price of a house, once the bricks are paid for. The £50 goes to the builder's owners. This is not the greed of one builder. Every owner has to keep a gap like it, because that is how the arrangement works. The talk is for the bricklayers.'
+> From a talk to the Garrow bricklayers' lodge: 'A bricklayer is paid $75 for a day and lays walls that add $125 to the price of a house, once the bricks are paid for. The $50 goes to the builder's owners. This is not the greed of one builder. Every owner has to keep a gap like it, because that is how the arrangement works. The talk is for the bricklayers.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -4176,7 +4176,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Marxism**.” What does the text want done with the government? **The text does not say.** The text says nothing about power or the government. It says who the talk is for: “The talk is for the bricklayers”.
   - Why not **Class politics with nothing attached**: The text does more than complain about one builder: it says why every owner gains. A text that only complained would be **Class politics with nothing attached**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the bricklayers against the owners who take the gap, and is written for the bricklayers: “The £50 goes to the builder's owners” and “The talk is for the bricklayers”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the bricklayers against the owners who take the gap, and is written for the bricklayers: “The $50 goes to the builder's owners” and “The talk is for the bricklayers”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for every owner: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the building firm.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Class politics with nothing attached**, the look-alike card’s lines follow: Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses. In **Class politics with nothing attached** the text complains about this owner or this profit and says nothing about how owners gain. In **Marxism** the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is. Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?
@@ -4205,7 +4205,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 21 of 23**
 
-> From a pamphlet for the Ardmore school cleaners: 'The contractor pays a cleaner £8 an hour and bills the school for the equivalent of £13. The £5 goes to the contractor's owners. It is not the owners' wickedness. It is how any contractor has to work, and the pamphlet is for the cleaners.'
+> From a pamphlet for the Ardmore school cleaners: 'The contractor pays a cleaner $8 an hour and bills the school for the equivalent of $13. The $5 goes to the contractor's owners. It is not the owners' wickedness. It is how any contractor has to work, and the pamphlet is for the cleaners.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -4214,7 +4214,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Marxism**.” What does the text want done with the government? **The text does not say.** The text says nothing about power or the government. It says who it is for: “the pamphlet is for the cleaners”.
   - Why not **Social democracy**: The text asks for no law, no tax and no service. It only explains. A text that asked for those, and left the contractor with its contract, would be **Social democracy**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the cleaners against the owners who take the gap, and is written for the cleaners: “The £5 goes to the contractor's owners” and “the pamphlet is for the cleaners”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the cleaners against the owners who take the gap, and is written for the cleaners: “The $5 goes to the contractor's owners” and “the pamphlet is for the cleaners”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain as the way any contractor has to work: “It is not the owners' wickedness. It is how any contractor has to work”. It asks for nothing to be done with the contract.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Social democracy**, the look-alike card’s lines follow: Both say that owners gain from what working people do, and both can be written for the workers. In **Social democracy** the text asks for something to be done: a tax, a floor for pay, public services. In **Marxism** the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses. Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?
@@ -4224,7 +4224,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 22 of 23**
 
-> From a talk to the Tarn ward porters: 'A porter is paid £60 for a day and carries work worth £95 to the hospital company once costs are paid. The £35 goes to the company's owners. Every owner has to keep a gap like it, because that is how the arrangement works. We give this talk for the porters, and we mean to argue it at every election and abide by the vote.'
+> From a talk to the Tarn ward porters: 'A porter is paid $60 for a day and carries work worth $95 to the hospital company once costs are paid. The $35 goes to the company's owners. Every owner has to keep a gap like it, because that is how the arrangement works. We give this talk for the porters, and we mean to argue it at every election and abide by the vote.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -4233,7 +4233,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Marxism**.” What does the text want done with the government? **Keep it, run by whoever wins elections.** The porters will argue it at elections and abide by the vote: “we mean to argue it at every election and abide by the vote”. The change is to come through an election they can lose, and the government stays.
   - Why not **Democratic socialism**: The talk will be argued at elections, but it asks for no handover. A text that asked for the wards to pass to the government would be **Democratic socialism**.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the porters against the owners who take the gap, and is written for the porters: “The £35 goes to the company's owners” and “We give this talk for the porters”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the porters against the owners who take the gap, and is written for the porters: “The $35 goes to the company's owners” and “We give this talk for the porters”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works for every owner: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the hospital.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Democratic socialism**, the look-alike card’s lines follow: Both can describe how owners gain from the workers’ work, and both stand with the workers. In **Marxism** the text explains how owners gain and says nothing about what to do with the businesses. In **Democratic socialism** the text says the businesses should pass out of the owners’ hands. A text that explains and also asks for the handover is **Democratic socialism**. Does the text say what should happen to the businesses, or does it only explain how owners gain?
@@ -4243,7 +4243,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 23 of 23**
 
-> From a pamphlet for the Rook Lane tailors: 'A tailor is paid £45 for a day and sews coats worth £75 once the cloth is paid for. The £30 goes to the shop's owners. Every owner has to keep a gap like it, because that is how the arrangement works. We want no government to fix it, and we will run the trade and the street ourselves, in meetings. This pamphlet is for the tailors.'
+> From a pamphlet for the Rook Lane tailors: 'A tailor is paid $45 for a day and sews coats worth $75 once the cloth is paid for. The $30 goes to the shop's owners. Every owner has to keep a gap like it, because that is how the arrangement works. We want no government to fix it, and we will run the trade and the street ourselves, in meetings. This pamphlet is for the tailors.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text say about the farms, factories, shops and banks? → What does the text want done with the government? → Name it.
 
@@ -4252,7 +4252,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Anarchism**.” What does the text want done with the government? **Get rid of it, and run things together without it.** The text wants no government: “We want no government to fix it, and we will run the trade and the street ourselves, in meetings”. The explanation is the same as in a text that stops there, and what the text goes on to say about the government decides it.
   - Why not **Marxism**: The text explains how owners gain, as **Marxism** does. But it goes on to say that it wants no government, and **Marxism** leaves the government as it is.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the tailors against the owners who take the gap, and is written for the tailors: “The £30 goes to the shop's owners” and “This pamphlet is for the tailors”.
+  - Who or what does the text put first? **Working people, against those who own the businesses.** The text sets the tailors against the owners who take the gap, and is written for the tailors: “The $30 goes to the shop's owners” and “This pamphlet is for the tailors”.
   - What does the text say about the farms, factories, shops and banks? **It explains how their owners gain from what workers make.** The text explains how owners gain, as the way the arrangement works: “Every owner has to keep a gap like it, because that is how the arrangement works”. It asks for nothing to be done with the shops.
   - If you chose another answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Marxism**, the look-alike card’s lines follow: Both can set out how owners come by their profit, and both are written for the workers. In **Marxism** the text explains and leaves the government as it is, or says nothing about it. In **Anarchism** the text, whether or not it explains, wants the government got rid of now, with people running things together without it. Besides the explanation, does the text say that the government should be done away with, now?

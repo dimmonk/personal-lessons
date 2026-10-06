@@ -1,6 +1,6 @@
 # Learner view: Basic Math, Unit One: What kind of problem is it?
 
-*The first question, and the five kinds of problem it sorts every problem into.* Unit revision 2, built to lesson standard 1, status: draft.
+*The first question, and the five kinds of problem it sorts every problem into.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -18,13 +18,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any sum: what kind of problem are you looking at?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 41*
 
 [reviewers only: card kind `orient`, id `orient-kind`]
 
 After this unit you can read a problem with numbers in it, taken from everyday life, and say which of five kinds it is. You will be able to point to the words in the problem that tell you, and to say why it is not one of the other four. You will not solve anything in this unit. Solving comes after sorting, and it only works when you start from the right kind.
 
-You already do a rough version of this. Picture a family planning a birthday meal, and five questions coming up in one afternoon, every one of them with numbers in it. “We have 36 balloons for 5 tables: will they go round evenly, and how many are left over?” “The caterer charges a set fee plus a price for each guest, and the bill came to €310: how many guests were we charged for?” “The cake shop puts its prices up by the same amount every year: what will the cake cost in five years?” “There are 4 starters and 3 main courses: how many different menus can we offer?” “How long must the ribbon be to run from the top of a 3 m pole to a peg 4 m from its foot?”
+You already do a rough version of this. Picture a family planning a birthday meal, and five questions coming up in one afternoon, every one of them with numbers in it. “We have 36 balloons for 5 tables: will they go round evenly, and how many are left over?” “The caterer charges a set fee plus a price for each guest, and the bill came to $310: how many guests were we charged for?” “The cake shop puts its prices up by the same amount every year: what will the cake cost in five years?” “There are 4 starters and 3 main courses: how many different menus can we offer?” “How long must the ribbon be to run from the top of a 3 m pole to a peg 4 m from its foot?”
 
 All five have numbers, and all five ask you to work out a number. But they ask for different things, and each one is worked out with different steps. If you use the steps for the wrong kind of problem, you still get a number, and nothing in that number tells you that it is wrong. So before any sum there is an earlier question: what does this problem ask me to work out? This unit teaches that question.
 
@@ -50,11 +50,11 @@ The unit has six parts, and you can stop after any of them.
 5. The fifth kind: shapes
 6. The first question, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Whole numbers: equal groups, leftovers, and repeating things that happen together
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 41*
 
 [reviewers only: card kind `meet`, id `meet-whole`]
 
@@ -88,7 +88,7 @@ The answer, and so the name of this kind of problem, is **“How whole numbers s
 
 ### 3. How whole numbers split, repeat or are made up: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 41*
 
 [reviewers only: card kind `again`, id `again-whole`]
 
@@ -121,7 +121,7 @@ The two stories share nothing else. One is about splitting and the other about r
 
 ### 4. The story and the numbers do not decide the kind
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 41*
 
 [reviewers only: card kind `lens`, id `lens-kind`]
 
@@ -141,7 +141,7 @@ Two more things change on purpose: the words of the question, and how many numbe
 
 ### 5. How whole numbers split, repeat or are made up: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-whole`]
 
@@ -149,7 +149,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 **What it is usually like**
 
-- The numbers are whole counts: chairs, rolls, days, seconds, or lengths counted in whole centimetres. There are no prices to the cent and no percentages.
+- The numbers are whole counts: chairs, rolls, days, seconds, or lengths counted in whole centimeters. There are no prices to the cent and no percentages.
 - The question is about how those numbers fit into each other: whether one divides another evenly, what is left over, when two repeats meet, what a number is made of.
 - The answer is itself a whole number, or a yes or no. It is not an amount of money and it is not a time that has been measured.
 - There is little else in the problem: one or two numbers, and no calculation to run backwards. Nothing grows or shrinks as time passes.
@@ -164,7 +164,7 @@ A problem that asks in how many ways three of nine volunteers can be picked is a
 
 "Can we share them out equally?" "How many are left over?" "One every 15 minutes, the other every 20." "Is it exact, or only close?" "In how many ways can we lay them out?"
 
-In your own life you meet this when you divide a group into teams, when you pack things into boxes, when two schedules you follow meet again (the days the rubbish and the recycling are collected), and in every “will it come out even?” about food, money or time.
+In your own life you meet this when you divide a group into teams, when you pack things into boxes, when two schedules you follow meet again (the days the trash and the recycling are collected), and in every “will it come out even?” about food, money or time.
 
 **The question to ask when you spot it**
 
@@ -172,7 +172,7 @@ In your own life you meet this when you divide a group into teams, when you pack
 
 ### 6. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 41*
 
 [reviewers only: card kind `check`, id `check-whole`]
 
@@ -201,7 +201,7 @@ The pieces you can tap:
 
 ### 7. A calculation with a gap in it
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 41*
 
 [reviewers only: card kind `term`, id `term-formula`]
 
@@ -222,7 +222,7 @@ A word or a letter standing where a number goes is how a calculation is left ope
 
 ### 8. A number you are not told, worked out from the numbers you are told
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 41*
 
 [reviewers only: card kind `meet`, id `meet-unknown`]
 
@@ -230,19 +230,19 @@ The first kind used numbers that were all in front of you, and asked how they fi
 
 *The van hire*
 
-> Maya hires a van. The hire shop charges ⟦a fixed €30 plus €0.40 for every kilometre driven⟧. ⟦Her bill is €54⟧. ⟦How many kilometres did she drive?⟧
+> Maya hires a van. The hire shop charges ⟦a fixed $30 plus $0.40 for every kilometer driven⟧. ⟦Her bill is $54⟧. ⟦How many kilometers did she drive?⟧
 
 Stripped of its story, the case is this:
 
-- There is one number the problem does not give: how many kilometres Maya drove.
-- There is a calculation, written in words, that connects the hidden number to numbers you are given: a fixed €30, plus €0.40 for every kilometre.
-- There is a result that the hidden number must fit: the bill came to €54. Put the right distance into the calculation and the bill comes out at €54.
+- There is one number the problem does not give: how many kilometers Maya drove.
+- There is a calculation, written in words, that connects the hidden number to numbers you are given: a fixed $30, plus $0.40 for every kilometer.
+- There is a result that the hidden number must fit: the bill came to $54. Put the right distance into the calculation and the bill comes out at $54.
 - The question asks for the hidden number: how far Maya drove.
 - Nothing is split into equal groups, nothing is followed as time passes, and there is no triangle and no copy of a shape.
 
 What you are shown is a puzzle with a gap in it. Everyone who reads the problem knows what the hire shop charges and what Maya paid. The one thing missing is the distance, and the facts are arranged so that only one distance fits.
 
-In this problem the facts are a *formula*: a fixed €30 plus €0.40 times the kilometres, written as a sentence. The same kind of problem can give its facts in two other shapes. It can give a rate, meaning so much for each thing, such as so many grams of rice for each person, and ask what a different number of things comes to. Or it can give two totals about two numbers it does not tell you, such as how many things were bought in all and what they cost in all. In all three, the problem hides a number or two and gives facts that those numbers have to fit.
+In this problem the facts are a *formula*: a fixed $30 plus $0.40 times the kilometers, written as a sentence. The same kind of problem can give its facts in two other shapes. It can give a rate, meaning so much for each thing, such as so many grams of rice for each person, and ask what a different number of things comes to. Or it can give two totals about two numbers it does not tell you, such as how many things were bought in all and what they cost in all. In all three, the problem hides a number or two and gives facts that those numbers have to fit.
 
 Every problem asks you for a number, so “there is a number to find” cannot be what marks this kind. What marks it is what the problem gives you to find the number with: a calculation and its result, a rate, or totals. The facts do not change as you read, and the hidden number is whatever makes them all true together.
 
@@ -256,20 +256,20 @@ The answer, and so the name of this kind of problem, is **“A missing number, f
 
 ### 9. A missing number, from a formula, a rate or totals: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 41*
 
 [reviewers only: card kind `again`, id `again-unknown`]
 
 The van hire gave you what to point to: a number the problem does not give, and a formula, a rate or totals, made from numbers the problem does give, that the missing number must fit. Here is the same thing in a different story, with the facts in a different shape.
 
-The first case again, in one line. *The van hire*: “a fixed €30 plus €0.40 for every kilometre driven” and “Her bill is €54” and “How many kilometres did she drive?”
+The first case again, in one line. *The van hire*: “a fixed $30 plus $0.40 for every kilometer driven” and “Her bill is $54” and “How many kilometers did she drive?”
 
 The second case.
 
 *The hospital kitchen*
 
 > A hospital kitchen uses 3 kg of rice to feed 20 patients. Tomorrow 50 patients are expected. How much rice will the kitchen need?
-**You are asked:** In *The van hire*, these words show it: “a fixed €30 plus €0.40 for every kilometre driven” and “Her bill is €54” and “How many kilometres did she drive?” Which words show the same thing in this case? Tap them.
+**You are asked:** In *The van hire*, these words show it: “a fixed $30 plus $0.40 for every kilometer driven” and “Her bill is $54” and “How many kilometers did she drive?” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A hospital kitchen uses 3 kg of rice to feed 20 patients”
@@ -289,7 +289,7 @@ In neither is the question about splitting into equal groups, or about time pass
 
 ### 10. A missing number, from a formula, a rate or totals: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-unknown`]
 
@@ -305,15 +305,15 @@ You know what to point to for **“A missing number, from a formula, a rate or t
 
 **What it is not**
 
-Having an answer to find does not make a problem this kind, because every problem has one. A problem that says seven pens cost €2 each and asks what they cost together is a plain sum. There is no calculation to run backwards, no rate to scale and no totals to untangle. No question sorts it, because there is nothing to choose: you do the sum.
+Having an answer to find does not make a problem this kind, because every problem has one. A problem that says seven pens cost $2 each and asks what they cost together is a plain sum. There is no calculation to run backwards, no rate to scale and no totals to untangle. No question sorts it, because there is nothing to choose: you do the sum.
 
-And a rate does not make a problem this kind every time. A rate for each thing, such as each kilometre or each person, is. A price that goes up for each hour, day, month or year is an amount changing as time passes, and this unit has a card for exactly that case.
+And a rate does not make a problem this kind every time. A rate for each thing, such as each kilometer or each person, is. A price that goes up for each hour, day, month or year is an amount changing as time passes, and this unit has a card for exactly that case.
 
 **Where you will hear it**
 
-"How many do I need to get to €60?" "What would the price have to be?" "Same again, but for seven people." "How far did she drive?" "Two numbers add up to 9."
+"How many do I need to get to $60?" "What would the price have to be?" "Same again, but for seven people." "How far did she drive?" "Two numbers add up to 9."
 
-In your own life it is a bill that came to more than you expected and you want to know how many units you used, a recipe for four stretched to seven, or a till total and an item count from which you want to know how many of two sorts were sold.
+In your own life it is a bill that came to more than you expected and you want to know how many units you used, a recipe for four stretched to seven, or a checkout total and an item count from which you want to know how many of two sorts were sold.
 
 **The question to ask when you spot it**
 
@@ -321,11 +321,11 @@ In your own life it is a bill that came to more than you expected and you want t
 
 ### 11. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 41*
 
 [reviewers only: card kind `check`, id `check-unknown`]
 
-> Sam bought pens at €2 each and notebooks at €5 each. He bought 9 items in all and paid €30 in all. How many pens and how many notebooks did he buy?
+> Sam bought pens at $2 each and notebooks at $5 each. He bought 9 items in all and paid $30 in all. How many pens and how many notebooks did he buy?
 
 **The question:** **“What does the problem ask you to work out?”** Which of the answers you have met so far fits this case?
 
@@ -334,7 +334,7 @@ In your own life it is a bill that came to more than you expected and you want t
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem does not give the pens or the notebooks. It gives a count and a total for the two together, and both have to come out right: “He bought 9 items in all and paid €30 in all” and “How many pens and how many notebooks did he buy?”. Nothing is shared out evenly and nothing is followed as time passes, so it is not the first kind or the third.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem does not give the pens or the notebooks. It gives a count and a total for the two together, and both have to come out right: “He bought 9 items in all and paid $30 in all” and “How many pens and how many notebooks did he buy?”. Nothing is shared out evenly and nothing is followed as time passes, so it is not the first kind or the third.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: Give that answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly. This case shows something else: the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit.
 - Taught on: “A number you are not told, worked out from the numbers you are told” (one tap opens the card).
@@ -347,7 +347,7 @@ In your own life it is a bill that came to more than you expected and you want t
 
 ### 12. One amount, followed as it changes over time
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 12 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 12 of 41*
 
 [reviewers only: card kind `meet`, id `meet-growth`]
 
@@ -367,7 +367,7 @@ Stripped of its story, the case is this:
 
 What you are shown is one amount and a story of how it changes as time passes. You are told where it starts, how it changes each time, and how long to follow it. The question is where it ends up. In other problems of this kind the question is the other way round: you are given a target, and asked how long it takes to get there.
 
-The change can come in three forms, and all three count as this kind. The amount can change by adding or taking away a fixed sum every time: the shrub gains 15 cm a year, a bank balance falls by €50 a month. It can be multiplied by the same number each time: a sum of money that earns 4% a year, a rumour that doubles every day. Or it can change once and stay changed: a fee that went up in March and has not moved since. These three are worked with different procedures, which are taught later. In this unit all you need is to see that an amount is being followed through time.
+The change can come in three forms, and all three count as this kind. The amount can change by adding or taking away a fixed sum every time: the shrub gains 15 cm a year, a bank balance falls by $50 a month. It can be multiplied by the same number each time: a sum of money that earns 4% a year, a rumor that doubles every day. Or it can change once and stay changed: a fee that went up in March and has not moved since. These three are worked with different procedures, which are taught later. In this unit all you need is to see that an amount is being followed through time.
 
 The time is almost always in the words: each hour, each day, every month, every year, after 8 years. If you cannot find the time in the problem, it is probably not this kind.
 
@@ -381,7 +381,7 @@ The answer, and so the name of this kind of problem, is **“What an amount beco
 
 ### 13. What an amount becomes over time, or how long it takes: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 13 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 13 of 41*
 
 [reviewers only: card kind `again`, id `again-growth`]
 
@@ -393,15 +393,15 @@ The second case.
 
 *The savings account*
 
-> Priya puts €3,000 into an account that pays 4% interest each year. The interest is added to the account, so next year’s interest is worked out on the new, bigger total. How much will she have after 6 years?
+> Priya puts $3,000 into an account that pays 4% interest each year. The interest is added to the account, so next year’s interest is worked out on the new, bigger total. How much will she have after 6 years?
 **You are asked:** In *The shrub*, these words show it: “It grows 15 cm every year” and “How tall will it be after 8 years?” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “Priya puts €3,000 into an account that pays 4% interest each year”
+1. “Priya puts $3,000 into an account that pays 4% interest each year”
 2. “The interest is added to the account, so next year’s interest is worked out on the new, bigger total”
 3. “How much will she have after 6 years?”
 
-**Shown as soon as you tap.** The words are “Priya puts €3,000 into an account that pays 4% interest each year”.
+**Shown as soon as you tap.** The words are “Priya puts $3,000 into an account that pays 4% interest each year”.
 - If you tapped “The interest is added to the account, so next year’s interest is worked out on the new, bigger total”: That explains how the amount changes, and it matters. But it is not the words that say the amount changes as time passes: those are in the first sentence.
 - If you tapped “How much will she have after 6 years?”: That is the question, and it names the time, 6 years. But it does not say how the amount changes each year.
 
@@ -414,7 +414,7 @@ The two changes are not the same. The shrub gains the same 15 cm every year, whi
 
 ### 14. What an amount becomes over time, or how long it takes: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 14 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 14 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-growth`]
 
@@ -436,7 +436,7 @@ A problem can follow something through time without being this kind. A cyclist r
 
 **Where you will hear it**
 
-"It goes up by €25 a month." "It doubles every day." "Interest at 4% a year." "How long until it reaches 100?" "It has stayed the same since March."
+"It goes up by $25 a month." "It doubles every day." "Interest at 4% a year." "How long until it reaches 100?" "It has stayed the same since March."
 
 In your own life it is a savings pot, a loan, a price that rises each year, a tank that fills or leaks: any time you ask “where will this be in a year?” or “when will I get there?”
 
@@ -446,11 +446,11 @@ In your own life it is a savings pot, a loan, a price that rises each year, a ta
 
 ### 15. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 15 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 15 of 41*
 
 [reviewers only: card kind `check`, id `check-growth`]
 
-> Until March a swimming pass at the town pool cost €30 a month. In March the price went up to €36, and it has stayed at €36 ever since. What will the pass cost a month in December?
+> Until March a swimming pass at the town pool cost $30 a month. In March the price went up to $36, and it has stayed at $36 ever since. What will the pass cost a month in December?
 
 **The question:** **“What does the problem ask you to work out?”** Which of the answers you have met so far fits this case?
 
@@ -460,7 +460,7 @@ In your own life it is a savings pot, a loan, a price that rises each year, a ta
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the price of the pass, is followed through time: “In March the price went up to €36, and it has stayed at €36 ever since” and “What will the pass cost a month in December?”. It did not rise by the same number each month, and it was not multiplied each month. It changed one time and has stayed put since. The question asks what it will be at a later time, and no number is hidden for a calculation to fit.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the price of the pass, is followed through time: “In March the price went up to $36, and it has stayed at $36 ever since” and “What will the pass cost a month in December?”. It did not rise by the same number each month, and it was not multiplied each month. It changed one time and has stayed put since. The question asks what it will be at a later time, and no number is hidden for a calculation to fit.
 - If you miss: “The answer is **What an amount becomes over time, or how long it takes.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: Give that answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly. This case shows something else: the problem follows one amount over time, the amount goes up or down by the same number or is multiplied by the same number each hour, day, month or year, or it changed once and has stayed the same since, and the problem asks what it will be or how long until it reaches a target.
   - If you chose **A missing number, from a formula, a rate or totals**: Give that answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit. This case shows something else: the problem follows one amount over time, the amount goes up or down by the same number or is multiplied by the same number each hour, day, month or year, or it changed once and has stayed the same since, and the problem asks what it will be or how long until it reaches a target.
@@ -468,7 +468,7 @@ In your own life it is a savings pot, a loan, a price that rises each year, a ta
 
 ### 16. A missing number, from a formula, a rate or totals or What an amount becomes over time, or how long it takes: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-unknown-growth`]
 
@@ -476,11 +476,11 @@ You have now met three kinds on their own. Two of them are easy to mix up, becau
 
 **Case A**
 
-> Leo’s phone plan charges a fixed €10 plus €0.20 for every text he sends. His bill this month was €16. How many texts did he send?
+> Leo’s phone plan charges a fixed $10 plus $0.20 for every text he sends. His bill this month was $16. How many texts did he send?
 
 **Case B**
 
-> Leo’s phone plan cost €10 a month when he joined. The company puts the price up by €2 every year. What will the plan cost him a month after 5 years?
+> Leo’s phone plan cost $10 a month when he joined. The company puts the price up by $2 every year. What will the plan cost him a month after 5 years?
 
 **What to compare.** Both problems are about Leo’s phone plan. Compare one thing: does the problem follow one amount as time passes, or does it hide a number that must fit a calculation?
 
@@ -490,9 +490,9 @@ You have now met three kinds on their own. Two of them are easy to mix up, becau
 
 **Why this one and not the other**
 
-In Case A nothing changes as time passes. The bill is a fixed €10 plus €0.20 for each text, the bill came to €16, and the number of texts is the number the problem leaves out. The answer is **“A missing number, from a formula, a rate or totals”**.
+In Case A nothing changes as time passes. The bill is a fixed $10 plus $0.20 for each text, the bill came to $16, and the number of texts is the number the problem leaves out. The answer is **“A missing number, from a formula, a rate or totals”**.
 
-In Case B the same plan is followed through time. One amount, the monthly price, goes up by €2 every year, and the question is where it will be after 5 years. No number is hidden for a calculation to fit. The answer is **“What an amount becomes over time, or how long it takes”**.
+In Case B the same plan is followed through time. One amount, the monthly price, goes up by $2 every year, and the question is where it will be after 5 years. No number is hidden for a calculation to fit. The answer is **“What an amount becomes over time, or how long it takes”**.
 
 Both have a price, a number that is repeated and a question that ends in a number. What differs is what the repeat goes with. In Case A it goes with each text, and texts are things you count. In Case B it goes with each year, and years are time passing.
 
@@ -510,7 +510,7 @@ Does the problem follow one amount as hours, days, months or years pass? Or does
 
 ### 17. A fixed fee, plus a price for each hour
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 17 of 41*
 
 [reviewers only: card kind `exception`, id `exc-hourly`]
 
@@ -518,26 +518,26 @@ The last card kept the two kinds tidy: in Case A the price went with each text a
 
 *The carpet cleaner*
 
-> A carpet cleaner charges a fixed €20 call-out fee plus €15 for every hour he works. Bianca’s bill is €95. How many hours did he work?
+> A carpet cleaner charges a fixed $20 call-out fee plus $15 for every hour he works. Bianca’s bill is $95. How many hours did he work?
 
-The van hire had a fixed fee, a price for every kilometre, a result and a hidden number, and its answer was **“A missing number, from a formula, a rate or totals”**. This problem has the same four parts: a fixed fee, a price repeated, a result, a hidden number. Yet the answer for this case is **“What an amount becomes over time, or how long it takes”**.
+The van hire had a fixed fee, a price for every kilometer, a result and a hidden number, and its answer was **“A missing number, from a formula, a rate or totals”**. This problem has the same four parts: a fixed fee, a price repeated, a result, a hidden number. Yet the answer for this case is **“What an amount becomes over time, or how long it takes”**.
 
 **You are asked:** This looks like **“A missing number, from a formula, a rate or totals”**. Before you read why it is **“What an amount becomes over time, or how long it takes”**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “A carpet cleaner charges a fixed €20 call-out fee plus €15 for every hour he works”
-2. “Bianca’s bill is €95”
+1. “A carpet cleaner charges a fixed $20 call-out fee plus $15 for every hour he works”
+2. “Bianca’s bill is $95”
 3. “How many hours did he work?”
 
-**Shown as soon as you tap.** The words are “A carpet cleaner charges a fixed €20 call-out fee plus €15 for every hour he works”.
-- If you tapped “Bianca’s bill is €95”: That is the result, and it matters. But the van hire had a result too, so it cannot be what makes the difference.
+**Shown as soon as you tap.** The words are “A carpet cleaner charges a fixed $20 call-out fee plus $15 for every hour he works”.
+- If you tapped “Bianca’s bill is $95”: That is the result, and it matters. But the van hire had a result too, so it cannot be what makes the difference.
 - If you tapped “How many hours did he work?”: That is the number the problem leaves out. The van hire left a number out too, so it cannot be what makes the difference. Look at what the price is repeated for.
 
 **Why this is What an amount becomes over time, or how long it takes and not A missing number, from a formula, a rate or totals**
 
-Look at what the price is repeated for. In the van hire it was repeated for every kilometre, and a kilometre is a thing you count. Here it is repeated for every hour, and an hour is time passing. With every hour that goes by, the bill goes up by €15. So the bill is an amount that grows as time goes on.
+Look at what the price is repeated for. In the van hire it was repeated for every kilometer, and a kilometer is a thing you count. Here it is repeated for every hour, and an hour is time passing. With every hour that goes by, the bill goes up by $15. So the bill is an amount that grows as time goes on.
 
-Now look at what the problem asks. It gives a target, a bill of €95, and asks how long, in hours, until the bill gets there. That is the second half of what the third kind asks: not where an amount ends up, but how long it takes to reach a target.
+Now look at what the problem asks. It gives a target, a bill of $95, and asks how long, in hours, until the bill gets there. That is the second half of what the third kind asks: not where an amount ends up, but how long it takes to reach a target.
 
 So this problem shows two things at once: a hidden number that must fit a calculation, and an amount that goes up each hour. When it shows both, the answer is the second of the two.
 
@@ -554,7 +554,7 @@ Look at what the price is repeated for, and you have the rule: a price for each 
 
 ### 18. A distance that changes with time, but not in any of the three ways
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 18 of 41*
 
 [reviewers only: card kind `exception`, id `exc-cyclist`]
 
@@ -562,7 +562,7 @@ The last card moved a problem out of the second kind and into the third because 
 
 *The cyclist on the hill*
 
-> A cyclist freewheels down a hill. After t seconds she has travelled 2 × t × t metres, because she keeps getting faster. The hill is 200 m long. How many seconds does the ride take?
+> A cyclist freewheels down a hill. After t seconds she has traveled 2 × t × t meters, because she keeps getting faster. The hill is 200 m long. How many seconds does the ride take?
 
 An amount followed through time, and a question about how long it takes to reach a target, is what the third kind usually looks like: here the distance, and the 200 m of the hill. Yet the answer for this case is **“A missing number, from a formula, a rate or totals”**.
 
@@ -570,11 +570,11 @@ An amount followed through time, and a question about how long it takes to reach
 
 The pieces you can tap:
 1. “A cyclist freewheels down a hill”
-2. “After t seconds she has travelled 2 × t × t metres, because she keeps getting faster”
+2. “After t seconds she has traveled 2 × t × t meters, because she keeps getting faster”
 3. “The hill is 200 m long”
 4. “How many seconds does the ride take?”
 
-**Shown as soon as you tap.** The words are “After t seconds she has travelled 2 × t × t metres, because she keeps getting faster”.
+**Shown as soon as you tap.** The words are “After t seconds she has traveled 2 × t × t meters, because she keeps getting faster”.
 - If you tapped “A cyclist freewheels down a hill”: That is the setting. It does not say how the distance changes.
 - If you tapped “The hill is 200 m long”: That is the target. It is why the question can look like how long it takes to reach a target, and it is not the words that show how the distance changes.
 - If you tapped “How many seconds does the ride take?”: That is the question. The words that show how the distance changes are in the second sentence.
@@ -598,7 +598,7 @@ When a problem follows time but its change is none of the three, you fall back o
 
 ### 19. What an amount becomes over time, or how long it takes or How whole numbers split, repeat or are made up: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 19 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 19 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-growth-whole`]
 
@@ -606,7 +606,7 @@ The third kind has one more look-alike, and it is in the first kind. Both can ru
 
 **Case A**
 
-> Rosa’s rain barrel holds 20 litres now, and the rain adds 4 litres every day. How many days will it take to hold 100 litres?
+> Rosa’s rain barrel holds 20 liters now, and the rain adds 4 liters every day. How many days will it take to hold 100 liters?
 
 **Case B**
 
@@ -620,7 +620,7 @@ The third kind has one more look-alike, and it is in the first kind. Both can ru
 
 **Why this one and not the other**
 
-In Case A one amount, the water in the barrel, goes up by the same 4 litres each day, and the question is how long until it reaches 100 litres. The answer is **“What an amount becomes over time, or how long it takes”**.
+In Case A one amount, the water in the barrel, goes up by the same 4 liters each day, and the question is how long until it reaches 100 liters. The answer is **“What an amount becomes over time, or how long it takes”**.
 
 In Case B nothing grows. There are two chores, each repeating on its own: one every 4 days, one every 6 days. The question is when the two repeats next land on the same day. The answer is **“How whole numbers split, repeat or are made up”**.
 
@@ -640,7 +640,7 @@ Is the question about how an amount changes as time passes? Or is it about how c
 
 ### 20. An amount that changes each day, and a question about a day of the week
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 41*
 
 [reviewers only: card kind `exception`, id `exc-tablets`]
 
@@ -690,7 +690,7 @@ If the problem had asked how many tablets are left after 20 days, there would be
 
 ### 21. Counting the ways, or the chance of something
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 21 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 21 of 41*
 
 [reviewers only: card kind `meet`, id `meet-chance`]
 
@@ -698,12 +698,12 @@ The first three kinds use numbers to split, to fit or to follow. The fourth kind
 
 *The packing*
 
-> Zara is packing for a trip. She will wear ⟦one top, one pair of trousers and one pair of shoes⟧. She has 5 tops, 4 pairs of trousers and 3 pairs of shoes. ⟦How many different outfits can she make?⟧
+> Zara is packing for a trip. She will wear ⟦one top, one pair of pants and one pair of shoes⟧. She has 5 tops, 4 pairs of pants and 3 pairs of shoes. ⟦How many different outfits can she make?⟧
 
 Stripped of its story, the case is this:
 
 - There is something that can turn out in different ways: an outfit.
-- It is made by several separate choices: a top, a pair of trousers and a pair of shoes, each chosen from its own list.
+- It is made by several separate choices: a top, a pair of pants and a pair of shoes, each chosen from its own list.
 - The question is how many different results there are: how many different outfits.
 - Nothing is measured, nothing changes as time passes, and no calculation has a number missing. The question counts possibilities.
 
@@ -711,7 +711,7 @@ What you are shown is a set of choices and a question about how many different r
 
 The wording for this kind has two halves. The first is counting ways: how many different results there are when you choose, pick or order things. The second is chance: how likely it is that something happens, or that a test result can be trusted. They sit together because a chance is a share of the ways something can turn out. Zara’s problem is the counting half.
 
-Notice that the problem asks “how many”, and so do problems of every kind in this unit: how many chairs, how many kilometres, how many days. What marks this kind is not those words. It is that what you are counting is the different results of a choice.
+Notice that the problem asks “how many”, and so do problems of every kind in this unit: how many chairs, how many kilometers, how many days. What marks this kind is not those words. It is that what you are counting is the different results of a choice.
 
 **What you must be able to point to.** Something that can turn out in different ways, and a question about how many different ways there are, or about the chance that at least one of several things happens or that a test result is right. This comes from one case so far. The next card tests it on a second case.
 
@@ -723,20 +723,20 @@ The answer, and so the name of this kind of problem, is **“How many ways somet
 
 ### 22. How many ways something can turn out, or how likely it is: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 22 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 22 of 41*
 
 [reviewers only: card kind `again`, id `again-chance`]
 
 The packing gave you what to point to: something that can turn out in different ways, and a question about how many different ways there are, or about the chance that at least one of several things happens or that a test result is right. Here is the other half of the kind, in a factory, where nothing is counted and a chance is asked for.
 
-The first case again, in one line. *The packing*: “one top, one pair of trousers and one pair of shoes” and “How many different outfits can she make?”
+The first case again, in one line. *The packing*: “one top, one pair of pants and one pair of shoes” and “How many different outfits can she make?”
 
 The second case.
 
 *The flagged part*
 
 > A factory machine flags faulty parts. One part in 500 is faulty. The machine flags 95 of every 100 faulty parts, and also flags 3 of every 100 good parts. A part has just been flagged. How likely is it that the part is really faulty?
-**You are asked:** In *The packing*, these words show it: “one top, one pair of trousers and one pair of shoes” and “How many different outfits can she make?” Which words show the same thing in this case? Tap them.
+**You are asked:** In *The packing*, these words show it: “one top, one pair of pants and one pair of shoes” and “How many different outfits can she make?” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A factory machine flags faulty parts”
@@ -760,7 +760,7 @@ Counting and chance are the two halves of this kind, and they belong together be
 
 ### 23. How many ways something can turn out, or how likely it is: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 23 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 23 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-chance`]
 
@@ -770,7 +770,7 @@ You know what to point to for **“How many ways something can turn out, or how 
 
 - Something can turn out in more than one way: an outfit, a team, a lock code, a test result, the weather on a given day.
 - The question is either how many different results there are, or how likely a particular result is.
-- The numbers are counts of choices (5 tops, 4 pairs of trousers), or chances written as percentages or as “1 in 500”, or both.
+- The numbers are counts of choices (5 tops, 4 pairs of pants), or chances written as percentages or as “1 in 500”, or both.
 - The words you hear are “how many different”, “in how many ways”, “what are the chances”, “how likely”, “at least one”, “if the test says yes”.
 - Nothing needs a ruler, and nothing needs to be watched over time.
 
@@ -792,11 +792,11 @@ In your own life it is picking a team, building a meal from a menu, setting a co
 
 ### 24. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 24 of 41*
 
 [reviewers only: card kind `check`, id `check-chance`]
 
-> Three trains connect Eli’s village to the city. Each one is cancelled one day in ten, whatever the others do. On any day, how likely is it that at least one of the three is cancelled?
+> Three trains connect Eli’s village to the city. Each one is canceled one day in ten, whatever the others do. On any day, how likely is it that at least one of the three is canceled?
 
 **The question:** **“What does the problem ask you to work out?”** Which of the answers you have met so far fits this case?
 
@@ -807,7 +807,7 @@ In your own life it is picking a team, building a meal from a menu, setting a co
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **How many ways something can turn out, or how likely it is.**” The problem gives a risk for every train and asks how likely it is that one or more is cancelled: “Each one is cancelled one day in ten” and “how likely is it that at least one of the three is cancelled”. That is a question about how likely something is. Nothing is hidden for a calculation to fit, and nothing is followed as time passes, even though the trains run every day.
+- If you are right: “Right: **How many ways something can turn out, or how likely it is.**” The problem gives a risk for every train and asks how likely it is that one or more is canceled: “Each one is canceled one day in ten” and “how likely is it that at least one of the three is canceled”. That is a question about how likely something is. Nothing is hidden for a calculation to fit, and nothing is followed as time passes, even though the trains run every day.
 - If you miss: “The answer is **How many ways something can turn out, or how likely it is.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: Give that answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly. This case shows something else: the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right.
   - If you chose **A missing number, from a formula, a rate or totals**: Give that answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit. This case shows something else: the problem asks how many different ways something can be chosen or ordered, or how likely it is that at least one of several things happens, or that a test result is right.
@@ -816,7 +816,7 @@ In your own life it is picking a team, building a meal from a menu, setting a co
 
 ### 25. How whole numbers split, repeat or are made up or How many ways something can turn out, or how likely it is: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 25 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-whole-chance`]
 
@@ -824,7 +824,7 @@ The first kind and the fourth are both made of whole counts, and both can ask �
 
 **Case A**
 
-> Hana is organising a group photo of 24 friends. She wants every row to hold the same number of people, with more than one row and more than one person in each row. In how many different ways can she split the friends into rows?
+> Hana is organizing a group photo of 24 friends. She wants every row to hold the same number of people, with more than one row and more than one person in each row. In how many different ways can she split the friends into rows?
 
 **Case B**
 
@@ -858,7 +858,7 @@ Is the question about sharing a count out evenly, what is left over, or when rep
 
 ### 26. A missing number, from a formula, a rate or totals or How many ways something can turn out, or how likely it is: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-unknown-chance`]
 
@@ -866,7 +866,7 @@ One more pair: the second kind and the fourth both can ask “how many”, and b
 
 **Case A**
 
-> At a bake sale Dana sold muffins at €3 each and cookies at €2 each. She sold 20 items and took €50 in all. How many muffins and how many cookies did she sell?
+> At a bake sale Dana sold muffins at $3 each and cookies at $2 each. She sold 20 items and took $50 in all. How many muffins and how many cookies did she sell?
 
 **Case B**
 
@@ -880,7 +880,7 @@ One more pair: the second kind and the fourth both can ask “how many”, and b
 
 **Why this one and not the other**
 
-In Case A the question is “how many of each”, and it has exactly one answer, because two facts fix it: 20 items in all and €50 in all. Nothing is a choice. There is one number of muffins and one number of cookies that fits, and the problem asks for them. The answer is **“A missing number, from a formula, a rate or totals”**.
+In Case A the question is “how many of each”, and it has exactly one answer, because two facts fix it: 20 items in all and $50 in all. Nothing is a choice. There is one number of muffins and one number of cookies that fits, and the problem asks for them. The answer is **“A missing number, from a formula, a rate or totals”**.
 
 In Case B the question is “how many different plates”, and the answer is a count of choices: each plate is one muffin out of 4 sorts and one cookie out of 3. Nothing has to fit a result. The answer is **“How many ways something can turn out, or how likely it is”**.
 
@@ -906,7 +906,7 @@ Does the problem hide numbers that its facts fix, so that exactly one answer fit
 
 ### 27. A triangle with a square corner
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 27 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 27 of 41*
 
 [reviewers only: card kind `term`, id `term-righttriangle`]
 
@@ -927,7 +927,7 @@ What matters about such a triangle is the square corner. It is what makes the th
 
 ### 28. Right-angled triangles, and one shape at two sizes
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 28 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 28 of 41*
 
 [reviewers only: card kind `meet`, id `meet-shape`]
 
@@ -949,7 +949,7 @@ What you are shown is a shape, and a question about one length on it. The shape 
 
 The wording for this kind has a second half. The shape can instead be two things that are exactly the same shape at different sizes: a model and the real thing, a small floor plan and the room, two round pizzas. Then the question is about a length on one of them, or about how much more area or volume the bigger one has. Both halves are about shape. A shape is given, or two shapes are compared, and what is asked is a length, an area or a volume.
 
-A shape in the story is not enough by itself. A garden 8 m long with an area of 40 square metres has measurements and a shape, but it has no triangle with a square corner and no copy, and asking for its width is a different kind of problem. You will meet a pair like that, side by side, in this unit.
+A shape in the story is not enough by itself. A garden 8 m long with an area of 40 square meters has measurements and a shape, but it has no triangle with a square corner and no copy, and asking for its width is a different kind of problem. You will meet a pair like that, side by side, in this unit.
 
 **What you must be able to point to.** A right-angled triangle, or two things of exactly the same shape at different sizes, and a question about a length, an area or a volume. This comes from one case so far. The next card tests it on a second case.
 
@@ -961,7 +961,7 @@ The answer, and so the name of this kind of problem, is **“A length, an area o
 
 ### 29. A length, an area or a volume, from a right-angled triangle or the same shape at different sizes: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 29 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 29 of 41*
 
 [reviewers only: card kind `again`, id `again-shape`]
 
@@ -973,16 +973,16 @@ The second case.
 
 *The two floors*
 
-> Ana’s bathroom floor measures 2 m across and has an area of 5 square metres. The hall floor is exactly the same shape, but 6 m across. What is the area of the hall floor?
+> Ana’s bathroom floor measures 2 m across and has an area of 5 square meters. The hall floor is exactly the same shape, but 6 m across. What is the area of the hall floor?
 **You are asked:** In *The hike*, these words show it: “9 km due north and then 12 km due east” and “How far in a straight line is she from where she started?” Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “Ana’s bathroom floor measures 2 m across and has an area of 5 square metres”
+1. “Ana’s bathroom floor measures 2 m across and has an area of 5 square meters”
 2. “The hall floor is exactly the same shape, but 6 m across”
 3. “What is the area of the hall floor?”
 
 **Shown as soon as you tap.** The words are “The hall floor is exactly the same shape, but 6 m across”.
-- If you tapped “Ana’s bathroom floor measures 2 m across and has an area of 5 square metres”: That gives the first floor. It is one of the two things the problem compares, and the words that say the two are copies of each other come next.
+- If you tapped “Ana’s bathroom floor measures 2 m across and has an area of 5 square meters”: That gives the first floor. It is one of the two things the problem compares, and the words that say the two are copies of each other come next.
 - If you tapped “What is the area of the hall floor?”: That is the question. It says what is to be worked out, an area. But the words that show which shape the problem is about are in the sentence before.
 
 **What the two share**
@@ -994,7 +994,7 @@ Those are the two halves of this kind. In neither problem is a number hidden for
 
 ### 30. A length, an area or a volume, from a right-angled triangle or the same shape at different sizes: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 30 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 30 of 41*
 
 [reviewers only: card kind `portrait`, id `portrait-shape`]
 
@@ -1004,12 +1004,12 @@ You know what to point to for **“A length, an area or a volume, from a right-a
 
 - Either a *right-angled triangle* is in the story (a wall and the ground, a path that goes north and then east, the edges of a phone), or two things have exactly the same shape and different sizes (a model and the real thing, a plan and the room, two round pizzas).
 - The question is about a length, an area or a volume: how long, how high, how far, how much surface, how much room inside, or how many times more.
-- The numbers are measurements: metres, centimetres, kilometres, and sometimes an angle in degrees.
+- The numbers are measurements: meters, centimeters, kilometers, and sometimes an angle in degrees.
 - When two things are the same shape, every length on one is the same number of times longer than the matching length on the other.
 
 **What it is not**
 
-A measurement in the problem does not make it this kind. A garden 8 m long with an area of 40 square metres is not a *right-angled triangle*, and the garden is not a copy of anything: asking for its width is the second kind, a hidden number that must fit a calculation.
+A measurement in the problem does not make it this kind. A garden 8 m long with an area of 40 square meters is not a *right-angled triangle*, and the garden is not a copy of anything: asking for its width is the second kind, a hidden number that must fit a calculation.
 
 And “the same shape” means exactly the same shape. Two rectangles, one long and thin and one nearly square, are not the same shape at different sizes.
 
@@ -1025,7 +1025,7 @@ In your own life it is anything built, drawn or copied: a ramp, a roof, a ladder
 
 ### 31. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 31 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 31 of 41*
 
 [reviewers only: card kind `check`, id `check-shape`]
 
@@ -1048,7 +1048,7 @@ The pieces you can tap:
 
 ### 32. A missing number, from a formula, a rate or totals or A length, an area or a volume, from a right-angled triangle or the same shape at different sizes: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 32 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 32 of 41*
 
 [reviewers only: card kind `lookalike`, id `look-unknown-shape`]
 
@@ -1060,7 +1060,7 @@ The second kind and the fifth are easy to mix up when a problem asks how long so
 
 **Case B**
 
-> Lena buys wood for the brace at €9 for each metre. The brace cost her €4.50. How long is the piece of wood she bought?
+> Lena buys wood for the brace at $9 for each meter. The brace cost her $4.50. How long is the piece of wood she bought?
 
 **What to compare.** Both problems are about Lena’s shelf, and both ask how long a brace is. Compare one thing: is there a *right-angled triangle* in the problem, or only facts that a hidden number must fit?
 
@@ -1072,7 +1072,7 @@ The second kind and the fifth are easy to mix up when a problem asks how long so
 
 In Case A the wall, the shelf and the brace make a triangle with a square corner, and the problem gives two of its sides: 40 cm and 30 cm. The length asked for is the third side. The answer is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 
-In Case B there is no triangle and no copy of anything. The problem gives a price for each metre of wood and what the brace cost, and asks how long the piece is. The hidden number must fit a rate. The answer is **“A missing number, from a formula, a rate or totals”**.
+In Case B there is no triangle and no copy of anything. The problem gives a price for each meter of wood and what the brace cost, and asks how long the piece is. The hidden number must fit a rate. The answer is **“A missing number, from a formula, a rate or totals”**.
 
 Both ask “how long”, and both are about the same brace. A length can be asked for in either kind. What differs is what the problem gives you to find it with: a shape, or a rate.
 
@@ -1090,7 +1090,7 @@ Is there a *right-angled triangle*, or are there two things of exactly the same 
 
 ### 33. A scale model, which comes with a rate
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 41*
 
 [reviewers only: card kind `exception`, id `exc-model`]
 
@@ -1142,7 +1142,7 @@ If the problem had said only that a recipe for 4 people stretches to 7, it would
 
 ### 34. The question you have been answering all along
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 34 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 34 of 41*
 
 [reviewers only: card kind `question`, id `q-kind`]
 
@@ -1200,11 +1200,11 @@ Some problems show two of the five at once. You have met three. A price for each
 
 ### 35. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 41*
 
 [reviewers only: card kind `check`, id `check-kind`]
 
-> Ines owes €900 on a loan and pays back €60 every month. How many months will it take her to pay off the whole loan?
+> Ines owes $900 on a loan and pays back $60 every month. How many months will it take her to pay off the whole loan?
 
 **The question:** **“What does the problem ask you to work out?”**
 
@@ -1216,7 +1216,7 @@ Some problems show two of the five at once. You have met three. A price for each
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, what she owes, is followed through time: “pays back €60 every month” and “How many months will it take her to pay off the whole loan?”. It goes down by the same number every month, and the question asks how long it takes to reach a target, nothing owed. No number is hidden for a calculation to fit, and no loop of days or hours is asked for.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, what she owes, is followed through time: “pays back $60 every month” and “How many months will it take her to pay off the whole loan?”. It goes down by the same number every month, and the question asks how long it takes to reach a target, nothing owed. No number is hidden for a calculation to fit, and no loop of days or hours is asked for.
 - If you miss: “The answer is **What an amount becomes over time, or how long it takes.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: Give that answer when the problem is about whole numbers and asks whether they split into equal groups with nothing left over, what is left over, what a number is made of, when two things that repeat happen together, where a count ends on a loop such as the days of a week, or whether a number can be written exactly. This case shows something else: the problem follows one amount over time, the amount goes up or down by the same number or is multiplied by the same number each hour, day, month or year, or it changed once and has stayed the same since, and the problem asks what it will be or how long until it reaches a target.
   - If you chose **A missing number, from a formula, a rate or totals**: Give that answer when the problem leaves out one number, or two, and gives a formula, a rate such as so much for each thing, or totals that the missing number must fit. This case shows something else: the problem follows one amount over time, the amount goes up or down by the same number or is multiplied by the same number each hour, day, month or year, or it changed once and has stayed the same since, and the problem asks what it will be or how long until it reaches a target.
@@ -1226,7 +1226,7 @@ Some problems show two of the five at once. You have met three. A price for each
 
 ### 36. A wrong idea: “how many” means you are counting
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 41*
 
 [reviewers only: card kind `refute`, id `refute-howmany`]
 
@@ -1238,14 +1238,14 @@ The bake sale had “how many” in both cases, and the lens said that all five 
 
 **What is right instead**
 
-The words “how many” turn up in all five kinds. “How many ways can the chairs be set out in equal rows?” is about how a number splits. “How many pens and how many notebooks?” asks for two numbers that two totals fix. “How many days until the barrel holds 100 litres?” follows an amount through time. “How many times more water does the larger tank hold?” asks for a volume. Only “how many different outfits” counts the results of a choice.
+The words “how many” turn up in all five kinds. “How many ways can the chairs be set out in equal rows?” is about how a number splits. “How many pens and how many notebooks?” asks for two numbers that two totals fix. “How many days until the barrel holds 100 liters?” follows an amount through time. “How many times more water does the larger tank hold?” asks for a volume. Only “how many different outfits” counts the results of a choice.
 
 So when you see “how many”, do not stop at the words. Ask what is being counted. If it is the different results of a choice, or how likely one of them is, the answer is **“How many ways something can turn out, or how likely it is”**. If it is anything else, the first question decides, and it asks about the whole problem and not about two words: **“What does the problem ask you to work out?”**
 
 
 ### 37. A wrong idea: the numbers tell you what to do
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 41*
 
 [reviewers only: card kind `refute`, id `refute-numbers`]
 
@@ -1266,7 +1266,7 @@ The only thing that does is what the problem asks you to work out, and the first
 
 ### 38. A whole problem, from the question to the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 41*
 
 [reviewers only: card kind `worked`, id `worked-trio`]
 
@@ -1314,7 +1314,7 @@ Here the question and the likeness agree, so the answer stands. The question com
 
 ### 39. A second whole problem, where the story points the wrong way
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 39 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 39 of 41*
 
 [reviewers only: card kind `worked`, id `worked-bed`]
 
@@ -1322,25 +1322,25 @@ The trio was a clean problem: one thing was going on in it. In this second probl
 
 *The flower bed*
 
-> A gardener is edging a triangular flower bed. Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner. Edging costs €5 for each metre. How long is the third side?
+> A gardener is edging a triangular flower bed. Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner. Edging costs $5 for each meter. How long is the third side?
 
 **Question 1 of 1: What does the problem ask you to work out?**
 
 What it is for: sorts problems about how whole numbers split and repeat, about a missing number that must fit the numbers given, about an amount followed over time, about counting ways and chances, and about lengths, areas and volumes of shapes.
 
-> A gardener is edging a triangular flower bed. ⟦Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner⟧. Edging costs €5 for each metre. ⟦How long is the third side?⟧
+> A gardener is edging a triangular flower bed. ⟦Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner⟧. Edging costs $5 for each meter. ⟦How long is the third side?⟧
 
 Answer: **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**
 
-The problem is full of money: a price for each metre of edging. If that were all, it would be a rate, and a hidden number that has to fit it. But a price is not what the question asks about. Look for the question itself: “Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner” and “How long is the third side?”.
+The problem is full of money: a price for each meter of edging. If that were all, it would be a rate, and a hidden number that has to fit it. But a price is not what the question asks about. Look for the question itself: “Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner” and “How long is the third side?”.
 
-That is a *right-angled triangle*: a flower bed with two sides that meet at a square corner. The problem gives the lengths of two sides, 3.0 m and 4.0 m, and asks for the third side, which is a length. The price for each metre is only there in the story. Nothing in the question asks what the edging costs.
+That is a *right-angled triangle*: a flower bed with two sides that meet at a square corner. The problem gives the lengths of two sides, 3.0 m and 4.0 m, and asks for the third side, which is a length. The price for each meter is only there in the story. Nothing in the question asks what the edging costs.
 
 In this unit the answer is the name. Ruled out: **“How whole numbers split, repeat or are made up”**, **“A missing number, from a formula, a rate or totals”**, **“What an amount becomes over time, or how long it takes”** and **“How many ways something can turn out, or how likely it is”**.
 
-**You are asked:** The problem gives a price for each metre of edging, and asks for a number it leaves out, so it can look like **“A missing number, from a formula, a rate or totals”**. Why is this **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** and not **“A missing number, from a formula, a rate or totals”**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
+**You are asked:** The problem gives a price for each meter of edging, and asks for a number it leaves out, so it can look like **“A missing number, from a formula, a rate or totals”**. Why is this **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** and not **“A missing number, from a formula, a rate or totals”**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
-- (a) The edging costs €5 for each metre, and that is a rate.
+- (a) The edging costs $5 for each meter, and that is a rate.
 - (b) Two sides of the bed meet at a square corner, and the question asks for the third side.
 - (c) The problem leaves out a number: the length of the third side.
 
@@ -1356,9 +1356,9 @@ It is the same decision as the model locomotive. There a rate came with two thin
 
 **Does it look like a case you know?**
 
-Now the second look: does this problem look like one you know? A price for each metre and a question about how much may bring back the van hire first, and the van hire was **“A missing number, from a formula, a rate or totals”**. So here the likeness and the answer seem to disagree.
+Now the second look: does this problem look like one you know? A price for each meter and a question about how much may bring back the van hire first, and the van hire was **“A missing number, from a formula, a rate or totals”**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the question and find the words in the problem that answer it. They are “Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner” and “How long is the third side?”. The van hire had nothing like them: it had a fixed fee, a price for each kilometre and a bill, and no shape at all. The hike does: two legs that meet at a square corner, and a question about the third side. So the problem this one really looks like is the hike, and the answer stands.
+When that happens, go back to the question and find the words in the problem that answer it. They are “Two of its sides are 3.0 m and 4.0 m long, and they meet at a square corner” and “How long is the third side?”. The van hire had nothing like them: it had a fixed fee, a price for each kilometer and a bill, and no shape at all. The hike does: two legs that meet at a square corner, and a question about the third side. So the problem this one really looks like is the hike, and the answer stands.
 
 ### The drill
 
@@ -1418,7 +1418,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 3 of 40**
 
-> A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?
+> A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -1430,8 +1430,8 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
-  - Why not **“What an amount becomes over time, or how long it takes”**: The price goes with each metre, which is a thing you count, and not with each hour, day, month or year. Nothing is followed as time passes.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many meters, and a new amount to scale it to: “sells 6 meters of chain for $15” and “How much will it cost her?”. The price is the number it leaves out.
+  - Why not **“What an amount becomes over time, or how long it takes”**: The price goes with each meter, which is a thing you count, and not with each hour, day, month or year. Nothing is followed as time passes.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What an amount becomes over time, or how long it takes**: the “why not” line above.
@@ -1441,7 +1441,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 4 of 40**
 
-> A savings jar holds €120. Tomas adds €15 to it every month. How many months until the jar holds €300?
+> A savings jar holds $120. Tomas adds $15 to it every month. How many months until the jar holds $300?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -1453,7 +1453,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds $15 to it every month” and “How many months until the jar holds $300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
   - Why not **“A missing number, from a formula, a rate or totals”**: The number of months is the number the problem leaves out, and the facts fix it, which can make it look like a hidden number. But the facts are an amount that changes each month, and the problem asks how long it takes to reach a target.
 - If you miss: “The answer is **What an amount becomes over time, or how long it takes.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1487,7 +1487,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 6 of 40**
 
-> Rafa’s jar holds only 20-cent coins and 50-cent coins. There are 18 coins and they are worth €6.30 in all. How many coins of each kind are in the jar?
+> Rafa’s jar holds only 20-cent coins and 50-cent coins. There are 18 coins and they are worth $6.30 in all. How many coins of each kind are in the jar?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -1499,7 +1499,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The jar’s two sorts of coin are not counted for you. What you are given is a count of coins and their total value, and both have to come out right: “There are 18 coins and they are worth €6.30 in all” and “How many coins of each kind are in the jar?”.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The jar’s two sorts of coin are not counted for you. What you are given is a count of coins and their total value, and both have to come out right: “There are 18 coins and they are worth $6.30 in all” and “How many coins of each kind are in the jar?”.
   - Why not **“How many ways something can turn out, or how likely it is”**: The question says “how many”, and there are two sorts of coin, as there were two sorts of cake at the bake sale. But nothing is a choice. Two facts fix exactly one answer.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1684,7 +1684,7 @@ The question is shown with all five of its answers, in order.
 **You are asked:** This is **“How whole numbers split, repeat or are made up”**. Which of these would you expect to hear?
 
 - "Can the 56 chairs be set out in equal rows with none left over?"
-- "The bill came to €48 and every unit costs €2: how many units was it?"
+- "The bill came to $48 and every unit costs $2: how many units was it?"
 - "The pond rises by 3 cm every day: when will it reach 40 cm?"
 - "How many different teams of three can we pick?"
 - "How long is the wire from the top of the pole to the peg?"
@@ -1692,7 +1692,7 @@ The question is shown with all five of its answers, in order.
 **Shown as soon as you answer**
 
 - The answer is: "Can the 56 chairs be set out in equal rows with none left over?" It asks whether 56 chairs can be set out in even rows with none left over. Nothing is hidden for a calculation to fit, nothing changes as time passes, and there is no choice and no shape.
-- If you chose "The bill came to €48 and every unit costs €2: how many units was it?": that belongs to **“A missing number, from a formula, a rate or totals”**.
+- If you chose "The bill came to $48 and every unit costs $2: how many units was it?": that belongs to **“A missing number, from a formula, a rate or totals”**.
 - If you chose "The pond rises by 3 cm every day: when will it reach 40 cm?": that belongs to **“What an amount becomes over time, or how long it takes”**.
 - If you chose "How many different teams of three can we pick?": that belongs to **“How many ways something can turn out, or how likely it is”**.
 - If you chose "How long is the wire from the top of the pole to the peg?": that belongs to **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
@@ -1721,16 +1721,16 @@ The question is shown with all five of its answers, in order.
 
 **You are asked:** This is **“What an amount becomes over time, or how long it takes”**. Which of these would you expect to hear?
 
-- "If I share 31 sweets among 4 children, how many are left?"
+- "If I share 31 candies among 4 children, how many are left?"
 - "Two numbers add up to 9 and differ by 3: what are they?"
-- "It was €200 in January and goes up by €20 every month."
+- "It was $200 in January and goes up by $20 every month."
 - "How likely is it that at least one of the three fuses fails?"
 - "The model is 1 to 25: how long is the real thing?"
 
 **Shown as soon as you answer**
 
-- The answer is: "It was €200 in January and goes up by €20 every month." It follows one amount, a price, and says how it changes each month. The question that would come with it is where the price will be, or how long until it reaches a target.
-- If you chose "If I share 31 sweets among 4 children, how many are left?": that belongs to **“How whole numbers split, repeat or are made up”**.
+- The answer is: "It was $200 in January and goes up by $20 every month." It follows one amount, a price, and says how it changes each month. The question that would come with it is where the price will be, or how long until it reaches a target.
+- If you chose "If I share 31 candies among 4 children, how many are left?": that belongs to **“How whole numbers split, repeat or are made up”**.
 - If you chose "Two numbers add up to 9 and differ by 3: what are they?": that belongs to **“A missing number, from a formula, a rate or totals”**.
 - If you chose "How likely is it that at least one of the three fuses fails?": that belongs to **“How many ways something can turn out, or how likely it is”**.
 - If you chose "The model is 1 to 25: how long is the real thing?": that belongs to **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
@@ -1759,8 +1759,8 @@ The question is shown with all five of its answers, in order.
 
 **You are asked:** This is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**. Which of these would you expect to hear?
 
-- "Is there any way to share 29 sweets into equal bags?"
-- "Paint covers 12 square metres for each litre: how much for this wall?"
+- "Is there any way to share 29 candies into equal bags?"
+- "Paint covers 12 square meters for each liter: how much for this wall?"
 - "It loses 5% of its value every year: what is it worth in 4 years?"
 - "What are the chances that the test is right?"
 - "Their pizza is the same shape as ours but twice as wide: how much more does it hold?"
@@ -1768,8 +1768,8 @@ The question is shown with all five of its answers, in order.
 **Shown as soon as you answer**
 
 - The answer is: "Their pizza is the same shape as ours but twice as wide: how much more does it hold?" It compares two things of exactly the same shape at different sizes, and asks how much more one holds than the other. That is a question about an area or a volume.
-- If you chose "Is there any way to share 29 sweets into equal bags?": that belongs to **“How whole numbers split, repeat or are made up”**.
-- If you chose "Paint covers 12 square metres for each litre: how much for this wall?": that belongs to **“A missing number, from a formula, a rate or totals”**.
+- If you chose "Is there any way to share 29 candies into equal bags?": that belongs to **“How whole numbers split, repeat or are made up”**.
+- If you chose "Paint covers 12 square meters for each liter: how much for this wall?": that belongs to **“A missing number, from a formula, a rate or totals”**.
 - If you chose "It loses 5% of its value every year: what is it worth in 4 years?": that belongs to **“What an amount becomes over time, or how long it takes”**.
 - If you chose "What are the chances that the test is right?": that belongs to **“How many ways something can turn out, or how likely it is”**.
 - Taught on: “A length, an area or a volume, from a right-angled triangle or the same shape at different sizes: what it is like” (one tap opens the card).
@@ -1828,7 +1828,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 23 of 40**
 
-> The juice bar prices every smoothie by a rule: price = €2 plus €0.50 for each extra fruit. Cora’s smoothie cost €4.50. How many extra fruits did she add?
+> The juice bar prices every smoothie by a rule: price = $2 plus $0.50 for each extra fruit. Cora’s smoothie cost $4.50. How many extra fruits did she add?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -1840,19 +1840,19 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a *formula*, a fixed €2 plus €0.50 for each extra fruit, and the result it came to, and it leaves out one number: “price = €2 plus €0.50 for each extra fruit” and “How many extra fruits did she add?”. The price goes with each fruit, a thing you count, and not with each hour or year.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a *formula*, a fixed $2 plus $0.50 for each extra fruit, and the result it came to, and it leaves out one number: “price = $2 plus $0.50 for each extra fruit” and “How many extra fruits did she add?”. The price goes with each fruit, a thing you count, and not with each hour or year.
   - Why not **“What an amount becomes over time, or how long it takes”**: The calculation has a fixed fee and a price that is repeated, which can look like an amount that goes up. But what the price goes with is each fruit, and nothing is followed as time passes.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What an amount becomes over time, or how long it takes**: the “why not” line above. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask “how many”, and both can give numbers about two sorts of the same thing. In **“A missing number, from a formula, a rate or totals”** the problem hides numbers that its facts fix: there is exactly one answer, and it has to fit. In **“How many ways something can turn out, or how likely it is”** the problem asks about the results of a choice, how many different results there are or how likely one is, and nothing has to fit a result. Does the problem hide numbers that its facts fix, so that exactly one answer fits? Or does it ask how many different results a choice has, or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can give a rate or a pair of lengths, and both can end in a question about how long something is. In **“A missing number, from a formula, a rate or totals”** the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** the problem has a *right-angled triangle*, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume. Is there a *right-angled triangle*, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?
-- What would make it a different name: If the price went up by €0.50 every month, one amount would be followed through time, and it would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the price went up by $0.50 every month, one amount would be followed through time, and it would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “A number you are not told, worked out from the numbers you are told” (one tap opens the card).
 
 **Drill item 24 of 40**
 
-> A new laptop costs €900. It loses 20% of its value every year. What will it be worth after 3 years?
+> A new laptop costs $900. It loses 20% of its value every year. What will it be worth after 3 years?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -1871,7 +1871,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **A missing number, from a formula, a rate or totals**: the “why not” line above. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-- What would make it a different name: If the problem asked what 20% of €900 is and nothing else, it would be a plain sum, and there would be nothing to sort.
+- What would make it a different name: If the problem asked what 20% of $900 is and nothing else, it would be a plain sum, and there would be nothing to sort.
 - Taught on: “One amount, followed as it changes over time” (one tap opens the card).
 
 **Drill item 25 of 40**
@@ -1919,7 +1919,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **What an amount becomes over time, or how long it takes**: the “why not” line above. Then the lines from the card that compared the two: Both can run over days or hours, and both can repeat the same step again and again. In **“What an amount becomes over time, or how long it takes”** one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In **“How whole numbers split, repeat or are made up”** the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours. Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are made of whole counts of things, and both can ask “in how many different ways”. A group of friends, a row, a set of chairs can turn up in either. In **“How whole numbers split, repeat or are made up”** a count is shared out evenly or set beside another count, and what is asked is how the count itself divides, repeats or is built up. In **“How many ways something can turn out, or how likely it is”** what is asked is about the results of a choice, how many different results there are or how likely one is, and the numbers only say how many things there are to choose from. Is the question about sharing a count out evenly, what is left over, or when repeats meet? Or is it about the different results of a choice, how many of them there are or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-- What would make it a different name: If the passport fee grew by €2 for every day it is late, and the problem asked what it would cost after 45 days late, one price would be followed through the days, and the answer would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the passport fee grew by $2 for every day it is late, and the problem asked what it would cost after 45 days late, one price would be followed through the days, and the answer would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “Whole numbers: equal groups, leftovers, and repeating things that happen together” (one tap opens the card).
 
 **Drill item 27 of 40**
@@ -1972,7 +1972,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 29 of 40**
 
-> A deli sells ham at €18 for each kilogram. Carl wants to spend exactly €7.20. How many grams of ham can he buy?
+> A deli sells ham at $18 for each kilogram. Carl wants to spend exactly $7.20. How many grams of ham can he buy?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -1984,14 +1984,14 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, €18 for each kilogram, and an amount of money to scale it to, and the weight is the number it leaves out: “sells ham at €18 for each kilogram” and “How many grams of ham can he buy?”. The rate goes with each kilogram, a thing you weigh, and not with each hour or year.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, $18 for each kilogram, and an amount of money to scale it to, and the weight is the number it leaves out: “sells ham at $18 for each kilogram” and “How many grams of ham can he buy?”. The rate goes with each kilogram, a thing you weigh, and not with each hour or year.
   - Why not **“What an amount becomes over time, or how long it takes”**: There is a price that is repeated for each kilogram, which can look like an amount that goes up. But nothing is followed as time passes.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What an amount becomes over time, or how long it takes**: the “why not” line above. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask “how many”, and both can give numbers about two sorts of the same thing. In **“A missing number, from a formula, a rate or totals”** the problem hides numbers that its facts fix: there is exactly one answer, and it has to fit. In **“How many ways something can turn out, or how likely it is”** the problem asks about the results of a choice, how many different results there are or how likely one is, and nothing has to fit a result. Does the problem hide numbers that its facts fix, so that exactly one answer fits? Or does it ask how many different results a choice has, or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can give a rate or a pair of lengths, and both can end in a question about how long something is. In **“A missing number, from a formula, a rate or totals”** the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** the problem has a *right-angled triangle*, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume. Is there a *right-angled triangle*, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?
-- What would make it a different name: If the ham cost €18 a kilogram now and went up by €1 every month, and the problem asked what it would cost in a year, it would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the ham cost $18 a kilogram now and went up by $1 every month, and the problem asked what it would cost in a year, it would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “A number you are not told, worked out from the numbers you are told” (one tap opens the card).
 
 **Drill item 30 of 40**
@@ -2020,7 +2020,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 31 of 40**
 
-> A dog groomer charges a €10 booking fee plus €18 for every hour of work. Joss paid €64 for his dog. How many hours did the groomer work?
+> A dog groomer charges a $10 booking fee plus $18 for every hour of work. Joss paid $64 for his dog. How many hours did the groomer work?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2032,20 +2032,20 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” The problem has a fixed fee, a price that is repeated and a result, like the van hire. But the price goes with every hour, so the bill is an amount that grows as time passes, and the question asks how long it takes to reach a target: “€18 for every hour of work” and “How many hours did the groomer work?”.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” The problem has a fixed fee, a price that is repeated and a result, like the van hire. But the price goes with every hour, so the bill is an amount that grows as time passes, and the question asks how long it takes to reach a target: “$18 for every hour of work” and “How many hours did the groomer work?”.
   - Why not **“A missing number, from a formula, a rate or totals”**: The fee, the price and the bill all point to a hidden number, and the problem does show that. But when a price goes with each hour, the answer is **“What an amount becomes over time, or how long it takes”**.
 - If you miss: “The answer is **What an amount becomes over time, or how long it takes.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can run over days or hours, and both can repeat the same step again and again. In **“What an amount becomes over time, or how long it takes”** one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In **“How whole numbers split, repeat or are made up”** the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours. Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?
-  - If you chose **A missing number, from a formula, a rate or totals**: The problem does show a fixed fee, a price and a result, as the van hire did. The difference is what the price goes with: every kilometre there, every hour here. A price for each hour is an amount changing as time passes. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
+  - If you chose **A missing number, from a formula, a rate or totals**: The problem does show a fixed fee, a price and a result, as the van hire did. The difference is what the price goes with: every kilometer there, every hour here. A price for each hour is an amount changing as time passes. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - This case may have brought back *The van hire*, which was **“A missing number, from a formula, a rate or totals”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the groomer charged €18 for each dog groomed, the price would go with each thing, and the answer would be **“A missing number, from a formula, a rate or totals”**.
+- What would make it a different name: If the groomer charged $18 for each dog groomed, the price would go with each thing, and the answer would be **“A missing number, from a formula, a rate or totals”**.
 - Taught on: “One amount, followed as it changes over time” (one tap opens the card).
 
 **Drill item 32 of 40**
 
-> A drop falls into a still pond. The ripple spreads so that after t seconds it covers 3 × t × t square metres. How many seconds will it take for the ripple to cover 48 square metres?
+> A drop falls into a still pond. The ripple spreads so that after t seconds it covers 3 × t × t square meters. How many seconds will it take for the ripple to cover 48 square meters?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2057,7 +2057,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The area of the ripple is followed through time, but not in any of the three ways the third kind counts: “after t seconds it covers 3 × t × t square metres” and “How many seconds will it take for the ripple to cover 48 square metres?”. It is given by a calculation, and the problem leaves out the time. That is a hidden number that must fit a calculation and a result.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The area of the ripple is followed through time, but not in any of the three ways the third kind counts: “after t seconds it covers 3 × t × t square meters” and “How many seconds will it take for the ripple to cover 48 square meters?”. It is given by a calculation, and the problem leaves out the time. That is a hidden number that must fit a calculation and a result.
   - Why not **“What an amount becomes over time, or how long it takes”**: An amount changing as time passes, and a question about how long it takes to reach a target, are what the third kind looks like. But the area does not go up by the same number each second, and it is not multiplied by the same number: it is 3, then 12, then 27.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -2065,7 +2065,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask “how many”, and both can give numbers about two sorts of the same thing. In **“A missing number, from a formula, a rate or totals”** the problem hides numbers that its facts fix: there is exactly one answer, and it has to fit. In **“How many ways something can turn out, or how likely it is”** the problem asks about the results of a choice, how many different results there are or how likely one is, and nothing has to fit a result. Does the problem hide numbers that its facts fix, so that exactly one answer fits? Or does it ask how many different results a choice has, or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can give a rate or a pair of lengths, and both can end in a question about how long something is. In **“A missing number, from a formula, a rate or totals”** the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** the problem has a *right-angled triangle*, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume. Is there a *right-angled triangle*, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?
 - This case may have brought back *The shrub*, which was **“What an amount becomes over time, or how long it takes”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the problem said the ripple’s area went up by 3 square metres every second, it would follow one amount through time in the first of the three ways, and it would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the problem said the ripple’s area went up by 3 square meters every second, it would follow one amount through time in the first of the three ways, and it would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “A number you are not told, worked out from the numbers you are told” (one tap opens the card).
 
 **Drill item 33 of 40**
@@ -2095,7 +2095,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 34 of 40**
 
-> A ferry crosses a river 80 m wide, and the current carries it 60 m downstream while it crosses. The ferry company charges €2 for each metre of distance travelled. How far does the ferry travel?
+> A ferry crosses a river 80 m wide, and the current carries it 60 m downstream while it crosses. The ferry company charges $2 for each meter of distance traveled. How far does the ferry travel?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2107,20 +2107,20 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The crossing and the drift downstream meet at a square corner, and the path of the ferry is the third side of the *right-angled triangle* they make: “crosses a river 80 m wide, and the current carries it 60 m downstream” and “How far does the ferry travel?”. The price for each metre is not what the question asks about.
-  - Why not **“A missing number, from a formula, a rate or totals”**: The price for each metre is a rate, and a number is left out, which is what the second kind looks like. But the question asks for a length on a triangle with a square corner, and not for a cost.
+- If you are right: “Right: **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The crossing and the drift downstream meet at a square corner, and the path of the ferry is the third side of the *right-angled triangle* they make: “crosses a river 80 m wide, and the current carries it 60 m downstream” and “How far does the ferry travel?”. The price for each meter is not what the question asks about.
+  - Why not **“A missing number, from a formula, a rate or totals”**: The price for each meter is a rate, and a number is left out, which is what the second kind looks like. But the question asks for a length on a triangle with a square corner, and not for a cost.
 - If you miss: “The answer is **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A missing number, from a formula, a rate or totals**: This case does show that. It also shows a right-angled triangle, or two things of the same shape at different sizes, and when a case shows both, the answer is **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**. Then the lines from the card that compared the two: Both can give a rate or a pair of lengths, and both can end in a question about how long something is. In **“A missing number, from a formula, a rate or totals”** the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** the problem has a *right-angled triangle*, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume. Is there a *right-angled triangle*, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?
   - If you chose **What an amount becomes over time, or how long it takes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - This case may have brought back *The van hire*, which was **“A missing number, from a formula, a rate or totals”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the problem asked what the company charges for the crossing, given the distance travelled, it would be a plain sum, and there would be nothing to sort.
+- What would make it a different name: If the problem asked what the company charges for the crossing, given the distance traveled, it would be a plain sum, and there would be nothing to sort.
 - Taught on: “Right-angled triangles, and one shape at two sizes” (one tap opens the card).
 
 **Drill item 35 of 40**
 
-> A dripping tap fills a bucket by 1 litre every hour. It starts at 9 o’clock in the morning, and the bucket holds 50 litres. What time will the clock show when the bucket is full?
+> A dripping tap fills a bucket by 1 liter every hour. It starts at 9 o’clock in the morning, and the bucket holds 50 liters. What time will the clock show when the bucket is full?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2132,15 +2132,15 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **How whole numbers split, repeat or are made up.**” The bucket does fill by the same number every hour, but the question asks what time the clock shows: “fills a bucket by 1 litre every hour” and “What time will the clock show when the bucket is full?”. A clock goes round a loop of 12 hours, so the problem asks where a count of 50 hours ends on that loop.
-  - Why not **“What an amount becomes over time, or how long it takes”**: The litres in the bucket go up by the same number each hour, and that is what the third kind follows. But the question is not how many litres or how long: it is a time on a clock, and a loop of hours goes to the first kind.
+- If you are right: “Right: **How whole numbers split, repeat or are made up.**” The bucket does fill by the same number every hour, but the question asks what time the clock shows: “fills a bucket by 1 liter every hour” and “What time will the clock show when the bucket is full?”. A clock goes round a loop of 12 hours, so the problem asks where a count of 50 hours ends on that loop.
+  - Why not **“What an amount becomes over time, or how long it takes”**: The liters in the bucket go up by the same number each hour, and that is what the third kind follows. But the question is not how many liters or how long: it is a time on a clock, and a loop of hours goes to the first kind.
 - If you miss: “The answer is **How whole numbers split, repeat or are made up.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **A missing number, from a formula, a rate or totals**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What an amount becomes over time, or how long it takes**: This case does show that. It also shows a count that goes round a loop and starts again, such as the days of a week or the hours on a clock, and when a case shows both, the answer is **How whole numbers split, repeat or are made up**. Then the lines from the card that compared the two: Both can run over days or hours, and both can repeat the same step again and again. In **“What an amount becomes over time, or how long it takes”** one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In **“How whole numbers split, repeat or are made up”** the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours. Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are made of whole counts of things, and both can ask “in how many different ways”. A group of friends, a row, a set of chairs can turn up in either. In **“How whole numbers split, repeat or are made up”** a count is shared out evenly or set beside another count, and what is asked is how the count itself divides, repeats or is built up. In **“How many ways something can turn out, or how likely it is”** what is asked is about the results of a choice, how many different results there are or how likely one is, and the numbers only say how many things there are to choose from. Is the question about sharing a count out evenly, what is left over, or when repeats meet? Or is it about the different results of a choice, how many of them there are or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - This case may have brought back *The shrub*, which was **“What an amount becomes over time, or how long it takes”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the problem asked how many litres the bucket held at 3 o’clock in the afternoon of the same day, there would be no loop in the question, and it would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the problem asked how many liters the bucket held at 3 o’clock in the afternoon of the same day, there would be no loop in the question, and it would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “Whole numbers: equal groups, leftovers, and repeating things that happen together” (one tap opens the card).
 
 **Drill item 36 of 40**
@@ -2172,7 +2172,7 @@ The question is shown with all five of its answers, in order.
 
 **A claim worked for you**
 
-> "A bank lends Mia €5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. It is about a bank, so it is a money problem, and I put it with the budget problems."
+> "A bank lends Mia $5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. It is about a bank, so it is a money problem, and I put it with the budget problems."
 
 *Worked for you. Nothing is asked.*
 
@@ -2186,11 +2186,11 @@ The question is shown with all five of its answers, in order.
 
 **The answer:** What an amount becomes over time, or how long it takes.
 - The fault: The claim sorts the problem by its topic. A bank is the story, and the story does not decide the kind. What the problem asks is what one amount, what Mia owes, will be after 3 years, and the amount changes each year.
-- The claim, put right (always the last thing shown): A bank lends Mia €5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. The topic is money, and money problems turn up in all five kinds. What decides this one is that it follows one amount as years pass: **“What an amount becomes over time, or how long it takes”**.
+- The claim, put right (always the last thing shown): A bank lends Mia $5,000 and charges 6% interest each year, and the problem asks what she will owe after 3 years. The topic is money, and money problems turn up in all five kinds. What decides this one is that it follows one amount as years pass: **“What an amount becomes over time, or how long it takes”**.
 
 **Drill item 37 of 40**
 
-> "The school play sold 30 tickets for €210 in all: adult tickets at €8 and child tickets at €5. The problem asks how many of each. It says how many, so this is a counting problem."
+> "The school play sold 30 tickets for $210 in all: adult tickets at $8 and child tickets at $5. The problem asks how many of each. It says how many, so this is a counting problem."
 
 **You are asked:** What does the problem ask you to work out? (asked of what the claim describes)
 
@@ -2204,8 +2204,8 @@ The question is shown with all five of its answers, in order.
 
 - The answer is: **A missing number, from a formula, a rate or totals.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
-- The fault: The claim takes “how many” as a signal that something is being counted. But every kind asks it. This problem does not give the adult tickets or the child tickets. It gives a count and a total for the two together, 30 tickets and €210, and both have to come out right. Nothing is a choice.
-- The claim, put right (always the last thing shown): The school play sold 30 tickets for €210 in all, adult tickets at €8 and child tickets at €5, and the problem asks how many of each. Here “how many” asks for two numbers the problem does not tell you, and two facts fix them. The answer is **“A missing number, from a formula, a rate or totals”**. It would be **“How many ways something can turn out, or how likely it is”** only if the question counted the different results of a choice.
+- The fault: The claim takes “how many” as a signal that something is being counted. But every kind asks it. This problem does not give the adult tickets or the child tickets. It gives a count and a total for the two together, 30 tickets and $210, and both have to come out right. Nothing is a choice.
+- The claim, put right (always the last thing shown): The school play sold 30 tickets for $210 in all, adult tickets at $8 and child tickets at $5, and the problem asks how many of each. Here “how many” asks for two numbers the problem does not tell you, and two facts fix them. The answer is **“A missing number, from a formula, a rate or totals”**. It would be **“How many ways something can turn out, or how likely it is”** only if the question counted the different results of a choice.
 
 **Drill item 38 of 40**
 
@@ -2228,7 +2228,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 39 of 40**
 
-> "A locksmith charges a €30 call-out fee plus €25 for every hour. The bill came to €105, and the problem asks how many hours. There is a fee, a price and a bill, just like the van hire, so it is a missing number problem."
+> "A locksmith charges a $30 call-out fee plus $25 for every hour. The bill came to $105, and the problem asks how many hours. There is a fee, a price and a bill, just like the van hire, so it is a missing number problem."
 
 **You are asked:** What does the problem ask you to work out? (asked of what the claim describes)
 
@@ -2242,8 +2242,8 @@ The question is shown with all five of its answers, in order.
 
 - The answer is: **What an amount becomes over time, or how long it takes.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
-- The fault: The claim matches this problem to the van hire because the two have the same parts: a fee, a price and a bill. But the van hire’s price went with every kilometre, and this price goes with every hour. A price for each hour makes the bill an amount that grows as time passes, and that case goes to the third kind.
-- The claim, put right (always the last thing shown): A locksmith charges a €30 call-out fee plus €25 for every hour, the bill came to €105, and the problem asks how many hours. The price goes with each hour, so the bill is an amount growing as time passes, and the question is how long until it reaches a target. The answer is **“What an amount becomes over time, or how long it takes”**.
+- The fault: The claim matches this problem to the van hire because the two have the same parts: a fee, a price and a bill. But the van hire’s price went with every kilometer, and this price goes with every hour. A price for each hour makes the bill an amount that grows as time passes, and that case goes to the third kind.
+- The claim, put right (always the last thing shown): A locksmith charges a $30 call-out fee plus $25 for every hour, the bill came to $105, and the problem asks how many hours. The price goes with each hour, so the bill is an amount growing as time passes, and the question is how long until it reaches a target. The answer is **“What an amount becomes over time, or how long it takes”**.
 
 **Drill item 40 of 40**
 
@@ -2268,7 +2268,7 @@ The question is shown with all five of its answers, in order.
 
 ### 40. What to carry away
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 40 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 40 of 41*
 
 [reviewers only: card kind `recap`, id `recap-kind`]
 
@@ -2301,7 +2301,7 @@ What does the problem ask you to work out?
 - Before any sum, ask what the problem asks you to work out, and point to the words that show it. If you cannot point, you do not have an answer yet.
 - The kind is not the topic and not the numbers. Money, building and cooking turn up in all five, and the same two numbers can turn up in more than one.
 - “How many”, “how long” and “how much” turn up in all five. They are not a signal.
-- A price for each hour is **“What an amount becomes over time, or how long it takes”**, and a price for each kilometre or each person is **“A missing number, from a formula, a rate or totals”**.
+- A price for each hour is **“What an amount becomes over time, or how long it takes”**, and a price for each kilometer or each person is **“A missing number, from a formula, a rate or totals”**.
 - A model, a map or a shadow is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**, even though it comes with a rate.
 - A count of days or hours that has to end on a day of the week or a time on a clock is **“How whole numbers split, repeat or are made up”**, even though it runs over time.
 - Nothing here solved anything. Each of the five kinds has finer names inside it, and a procedure for each, and they start from your answer to this first question.
@@ -2309,7 +2309,7 @@ What does the problem ask you to work out?
 
 ### 41. Where would you meet this?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 41 of 41*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 41 of 41*
 
 [reviewers only: card kind `transfer`, id `transfer-kind`]
 
@@ -2401,19 +2401,19 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **How whole numbers split, repeat or are made up.**” The two nurses each come back on a rota of their own, and the question is when both are on duty on the same night again: “works every 5th night and Nurse Ben every 8th night” and “After how many nights will they next both be on duty?”.
+- If you are right: “Right: **How whole numbers split, repeat or are made up.**” The two nurses each come back on a schedule of their own, and the question is when both are on duty on the same night again: “works every 5th night and Nurse Ben every 8th night” and “After how many nights will they next both be on duty?”.
   - Why not **“What an amount becomes over time, or how long it takes”**: The problem runs over nights, which can look like an amount followed through time. But no amount is changing: the two nurses are two repeats, and the question is when they meet.
 - If you miss: “The answer is **How whole numbers split, repeat or are made up.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **A missing number, from a formula, a rate or totals**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What an amount becomes over time, or how long it takes**: the “why not” line above. Then the lines from the card that compared the two: Both can run over days or hours, and both can repeat the same step again and again. In **“What an amount becomes over time, or how long it takes”** one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In **“How whole numbers split, repeat or are made up”** the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours. Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both are made of whole counts of things, and both can ask “in how many different ways”. A group of friends, a row, a set of chairs can turn up in either. In **“How whole numbers split, repeat or are made up”** a count is shared out evenly or set beside another count, and what is asked is how the count itself divides, repeats or is built up. In **“How many ways something can turn out, or how likely it is”** what is asked is about the results of a choice, how many different results there are or how likely one is, and the numbers only say how many things there are to choose from. Is the question about sharing a count out evenly, what is left over, or when repeats meet? Or is it about the different results of a choice, how many of them there are or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-- What would make it a different name: If the problem said Aisha’s pay rose by €20 for every night shift she worked and asked what she would earn after 15 nights, it would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the problem said Aisha’s pay rose by $20 for every night shift she worked and asked what she would earn after 15 nights, it would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “Whole numbers: equal groups, leftovers, and repeating things that happen together” (one tap opens the card).
 
 **Return case 4 of 15**
 
-> A mobile data plan costs a fixed €5 plus €2 for every gigabyte used. Ruth’s bill was €19. How many gigabytes did she use?
+> A mobile data plan costs a fixed $5 plus $2 for every gigabyte used. Ruth’s bill was $19. How many gigabytes did she use?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2425,14 +2425,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a calculation, a fixed €5 plus €2 for every gigabyte, and the result it came to, and leaves out one number: “a fixed €5 plus €2 for every gigabyte used” and “How many gigabytes did she use?”.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a calculation, a fixed $5 plus $2 for every gigabyte, and the result it came to, and leaves out one number: “a fixed $5 plus $2 for every gigabyte used” and “How many gigabytes did she use?”.
   - Why not **“What an amount becomes over time, or how long it takes”**: The calculation has a fixed fee and a price that is repeated, which can look like an amount that goes up. But the price goes with each gigabyte, a thing you count, and nothing is followed as time passes.
 - If you miss: “The answer is **A missing number, from a formula, a rate or totals.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What an amount becomes over time, or how long it takes**: the “why not” line above. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask “how many”, and both can give numbers about two sorts of the same thing. In **“A missing number, from a formula, a rate or totals”** the problem hides numbers that its facts fix: there is exactly one answer, and it has to fit. In **“How many ways something can turn out, or how likely it is”** the problem asks about the results of a choice, how many different results there are or how likely one is, and nothing has to fit a result. Does the problem hide numbers that its facts fix, so that exactly one answer fits? Or does it ask how many different results a choice has, or how likely one is?
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can give a rate or a pair of lengths, and both can end in a question about how long something is. In **“A missing number, from a formula, a rate or totals”** the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** the problem has a *right-angled triangle*, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume. Is there a *right-angled triangle*, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?
-- What would make it a different name: If the plan’s price went up by €2 every month, it would follow one amount through time, and it would be **“What an amount becomes over time, or how long it takes”**.
+- What would make it a different name: If the plan’s price went up by $2 every month, it would follow one amount through time, and it would be **“What an amount becomes over time, or how long it takes”**.
 - Taught on: “A number you are not told, worked out from the numbers you are told” (one tap opens the card).
 
 **Return case 5 of 15**
@@ -2509,7 +2509,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 8 of 15**
 
-> Algae covers 2 square metres of a lake, and its area grows by 10% every day. How much of the lake will it cover after 5 days?
+> Algae covers 2 square meters of a lake, and its area grows by 10% every day. How much of the lake will it cover after 5 days?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2528,12 +2528,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **A missing number, from a formula, a rate or totals**: the “why not” line above. Then the lines from the card that compared the two: Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told. In **“A missing number, from a formula, a rate or totals”** nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In **“What an amount becomes over time, or how long it takes”** one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target. Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-- What would make it a different name: If the problem asked how many of 12 equal buckets could be filled from 50 litres of lake water, with how much left over, it would be **“How whole numbers split, repeat or are made up”**.
+- What would make it a different name: If the problem asked how many of 12 equal buckets could be filled from 50 liters of lake water, with how much left over, it would be **“How whole numbers split, repeat or are made up”**.
 - Taught on: “One amount, followed as it changes over time” (one tap opens the card).
 
 **Return case 9 of 15**
 
-> A monthly bus pass cost €40 until January, when the price was cut to €34. It has stayed at €34 ever since. What will the pass cost a month next December?
+> A monthly bus pass cost $40 until January, when the price was cut to $34. It has stayed at $34 ever since. What will the pass cost a month next December?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2545,7 +2545,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the price of the pass, is followed through time: “It has stayed at €34 ever since” and “What will the pass cost a month next December?”. It changed one time and has stayed put since, and the question asks what it will be at a later time.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the price of the pass, is followed through time: “It has stayed at $34 ever since” and “What will the pass cost a month next December?”. It changed one time and has stayed put since, and the question asks what it will be at a later time.
   - Why not **“A missing number, from a formula, a rate or totals”**: The price in December is the number the problem leaves out, which can look like a hidden number. But nothing has to fit a calculation: the price changed once, and the question is what it is later.
 - If you miss: “The answer is **What an amount becomes over time, or how long it takes.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can run over days or hours, and both can repeat the same step again and again. In **“What an amount becomes over time, or how long it takes”** one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In **“How whole numbers split, repeat or are made up”** the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours. Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?
@@ -2557,7 +2557,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 10 of 15**
 
-> A school canteen serves a lunch of one main out of 4, one side out of 3 and one drink out of 3. How many different lunches can a pupil choose?
+> A school cafeteria serves a lunch of one main out of 4, one side out of 3 and one drink out of 3. How many different lunches can a student choose?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2569,7 +2569,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A main, a side and a drink are each picked from a list of their own, and the question asks how many different results that gives: “one main out of 4, one side out of 3 and one drink out of 3” and “How many different lunches can a pupil choose?”.
+- If you are right: “Right: **How many ways something can turn out, or how likely it is.**” A main, a side and a drink are each picked from a list of their own, and the question asks how many different results that gives: “one main out of 4, one side out of 3 and one drink out of 3” and “How many different lunches can a student choose?”.
   - Why not **“How whole numbers split, repeat or are made up”**: The numbers 4, 3 and 3 are whole counts, but none of them is being split into equal groups. They are the sizes of the lists the choices are made from.
 - If you miss: “The answer is **How many ways something can turn out, or how likely it is.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **How whole numbers split, repeat or are made up**: the “why not” line above. Then the lines from the card that compared the two: Both are made of whole counts of things, and both can ask “in how many different ways”. A group of friends, a row, a set of chairs can turn up in either. In **“How whole numbers split, repeat or are made up”** a count is shared out evenly or set beside another count, and what is asked is how the count itself divides, repeats or is built up. In **“How many ways something can turn out, or how likely it is”** what is asked is about the results of a choice, how many different results there are or how likely one is, and the numbers only say how many things there are to choose from. Is the question about sharing a count out evenly, what is left over, or when repeats meet? Or is it about the different results of a choice, how many of them there are or how likely one is?
@@ -2648,7 +2648,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **A missing number, from a formula, a rate or totals**: the “why not” line above. Then the lines from the card that compared the two: Both can give a rate or a pair of lengths, and both can end in a question about how long something is. In **“A missing number, from a formula, a rate or totals”** the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”** the problem has a *right-angled triangle*, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume. Is there a *right-angled triangle*, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?
   - If you chose **What an amount becomes over time, or how long it takes**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **How many ways something can turn out, or how likely it is**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-- What would make it a different name: If the problem said the ship burns 3 litres of fuel for every 10 km and asked how much it used, it would be **“A missing number, from a formula, a rate or totals”**.
+- What would make it a different name: If the problem said the ship burns 3 liters of fuel for every 10 km and asked how much it used, it would be **“A missing number, from a formula, a rate or totals”**.
 - Taught on: “Right-angled triangles, and one shape at two sizes” (one tap opens the card).
 
 **Return case 14 of 15**

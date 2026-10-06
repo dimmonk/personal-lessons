@@ -1,6 +1,6 @@
 # Learner view: Statistical Claims, Unit Six: What it says caused what
 
-*Four other ways to explain the same result, and the one claim of cause where none of them is open.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four other ways to explain the same result, and the one claim of cause where none of them is open.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. When a claim gives one thing as the reason for another
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 34*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -60,11 +60,11 @@ The unit has three parts, and you can stop after any of them.
 2. Two groups that put themselves where they are, and a cause that runs the other way
 3. The question, and two whole claims, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Nothing to show what happens without it
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 34*
 
 [reviewers only: card kind `meet`, id `meet-nocontrol`]
 
@@ -105,7 +105,7 @@ You may also hear this called “no control group”. That means the same thing 
 
 ### 3. No comparison group: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 34*
 
 [reviewers only: card kind `again`, id `again-nocontrol`]
 
@@ -138,7 +138,7 @@ The two stories share nothing else. So this is not about sleep or about cafés. 
 
 ### 4. The story never decides the answer
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 34*
 
 [reviewers only: card kind `lens`, id `lens`]
 
@@ -156,7 +156,7 @@ One thing stays the same in every case here. The first three parts of the claim 
 
 ### 5. No comparison group: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-nocontrol`]
 
@@ -194,7 +194,7 @@ If there is none, ask yourself what you would expect to see if nothing had been 
 
 ### 6. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 34*
 
 [reviewers only: card kind `check`, id `check-nocontrol`]
 
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 ### 7. Picked at an extreme, then back toward usual
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 34*
 
 [reviewers only: card kind `meet`, id `meet-regression`]
 
@@ -260,7 +260,7 @@ You may also hear this called “drifting back to normal”. That means the same
 
 ### 8. Regression to the mean: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 34*
 
 [reviewers only: card kind `again`, id `again-regression`]
 
@@ -297,7 +297,7 @@ The two stories share nothing else, so this is not about students or about roads
 
 ### 9. Regression to the mean: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-regression`]
 
@@ -336,7 +336,7 @@ Do not widen the program, pay a bonus or blame someone on this result alone.
 
 ### 10. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 34*
 
 [reviewers only: card kind `check`, id `check-regression`]
 
@@ -356,7 +356,7 @@ Do not widen the program, pay a bonus or blame someone on this result alone.
 
 ### 11. A wrong idea about what comes after
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 11 of 34*
 
 [reviewers only: card kind `refute`, id `refute-after`]
 
@@ -375,7 +375,7 @@ What would show that it worked is a second group in the same position that was l
 
 ### 12. No comparison group or Regression to the mean: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 12 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-nocontrol-regression`]
 
@@ -418,7 +418,7 @@ How was the group picked? Was it everyone who got the thing, or was it picked be
 
 ### 13. A group picked at its worst, with nothing to set beside it
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 13 of 34*
 
 [reviewers only: card kind `exception`, id `exc-extreme`]
 
@@ -460,7 +460,7 @@ This is decided this way on purpose, and it is worth knowing that it is a choice
 
 ### 14. No comparison group or A fair test: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 14 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-nocontrol-fair`]
 
@@ -510,7 +510,7 @@ Is there a second group that went without, formed by chance and counted in the s
 
 ### 15. Something else behind both
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 34*
 
 [reviewers only: card kind `meet`, id `meet-confound`]
 
@@ -551,7 +551,7 @@ You may also hear this called “a third factor” or “a confounding factor”
 
 ### 16. Confounding: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 34*
 
 [reviewers only: card kind `again`, id `again-confound`]
 
@@ -586,7 +586,7 @@ The two stories share nothing else, so this is not about lifting or about school
 
 ### 17. Confounding: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-confound`]
 
@@ -610,7 +610,7 @@ And it does not mean that the thing has no effect. The shake may be worth 2 poun
 
 "People who do X are healthier, richer and happier." "Students who use it get better grades." "Users of our product spend 40% more." "Studies show people who do this live longer."
 
-In your own life it is the gym where everybody looks fit, or the school whose pupils all do well. Those people were not picked by chance. Many of them were already fit, or already doing well, when they walked in.
+In your own life it is the gym where everybody looks fit, or the school whose students all do well. Those people were not picked by chance. Many of them were already fit, or already doing well, when they walked in.
 
 **The question to ask when you spot it**
 
@@ -624,7 +624,7 @@ When you see "people who do X are healthier", ask who does X and why, before you
 
 ### 18. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 18 of 34*
 
 [reviewers only: card kind `check`, id `check-confound`]
 
@@ -646,7 +646,7 @@ When you see "people who do X are healthier", ask who does X and why, before you
 
 ### 19. No comparison group or Confounding: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 19 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-nocontrol-confound`]
 
@@ -689,7 +689,7 @@ Is anyone who went without counted beside the people who got the thing? If so, d
 
 ### 20. A wrong idea about what the figures prove
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 20 of 34*
 
 [reviewers only: card kind `refute`, id `refute-nothing`]
 
@@ -710,7 +710,7 @@ So the right answer to a claim of cause is neither "proved" nor "proves nothing"
 
 ### 21. The result leading to the thing, not the thing to the result
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 21 of 34*
 
 [reviewers only: card kind `meet`, id `meet-reverse`]
 
@@ -749,7 +749,7 @@ You may also hear this called “the cause running the other way”. That means 
 
 ### 22. Reverse causation: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 22 of 34*
 
 [reviewers only: card kind `again`, id `again-reverse`]
 
@@ -784,7 +784,7 @@ The two stories share nothing else, so this is not about homes or about work. It
 
 ### 23. Reverse causation: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 23 of 34*
 
 [reviewers only: card kind `portrait`, id `portrait-reverse`]
 
@@ -823,7 +823,7 @@ If the order matters to you, as with a diet or a product, look for a result in w
 
 ### 24. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 24 of 34*
 
 [reviewers only: card kind `check`, id `check-reverse`]
 
@@ -847,7 +847,7 @@ If the order matters to you, as with a diet or a product, look for a result in w
 
 ### 25. Confounding or Reverse causation: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 25 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-confound-reverse`]
 
@@ -890,7 +890,7 @@ Is there something else that differs between the groups and could bring about th
 
 ### 26. Confounding or A fair test: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 26 of 34*
 
 [reviewers only: card kind `lookalike`, id `look-confound-fair`]
 
@@ -934,7 +934,7 @@ Who decided which group each person was in: they did, their circumstances did, o
 
 ### 27. A hidden mix of mild and severe, and still Confounding
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 27 of 34*
 
 [reviewers only: card kind `exception`, id `exc-simpson`]
 
@@ -991,7 +991,7 @@ This is a choice made to keep the answers clear, and it is worth knowing that it
 
 ### 28. The question you have been answering all along
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 28 of 34*
 
 [reviewers only: card kind `question`, id `q-cause`]
 
@@ -1049,7 +1049,7 @@ Some cases show two answers at once. You have met one: a group picked at its wor
 
 ### 29. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 29 of 34*
 
 [reviewers only: card kind `check`, id `check-cause`]
 
@@ -1073,7 +1073,7 @@ Some cases show two answers at once. You have met one: a group picked at its wor
 
 ### 30. A whole claim, from the first question to the name
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 30 of 34*
 
 [reviewers only: card kind `worked`, id `worked-bikers`]
 
@@ -1137,7 +1137,7 @@ Here the likeness agrees with the answer, so the answer stands. The question com
 
 ### 31. A second whole claim, where the most noticeable thing points the wrong way
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 31 of 34*
 
 [reviewers only: card kind `worked`, id `worked-swim`]
 
@@ -1201,11 +1201,11 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these claims have nothing wrong with them, and that is on purpose. A claim of cause that was tested fairly deserves to be believed, and you need to tell it from the others as surely as you tell the others from each other. A claim that sounds sure is not, for that reason, one that holds.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the four this unit teaches: No comparison group / Regression to the mean / Confounding / Reverse causation.
 
@@ -2089,7 +2089,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 32. What to carry away
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 32 of 34*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -2131,7 +2131,7 @@ What else could produce the same result?
 
 ### 33. Where would you meet this?
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 33 of 34*
 
 [reviewers only: card kind `transfer`, id `transfer`]
 
@@ -2154,7 +2154,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 34. A plan, if you want one
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 34*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 34 of 34*
 
 [reviewers only: card kind `plan`, id `plan`]
 

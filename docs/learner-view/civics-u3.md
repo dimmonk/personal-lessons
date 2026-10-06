@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Three: Congress, in the House or the Senate
 
-*Five things Congress does, and how to tell which one you are looking at.* Unit revision 2, built to lesson standard 1, status: draft.
+*Five things Congress does, and how to tell which one you are looking at.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,13 +17,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Congress is in the news: what did it do?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 35*
 
 [reviewers only: card kind `orient`, id `orient`]
 
 After this unit you can read a short news item or an everyday story in which Congress does something, and say which of five things it is: a law on a matter the Constitution gives Congress; a law the Constitution does not let Congress pass; Congress deciding what the government may spend; the Senate approving a person the President chose, or a deal with another country; or charging an official, and trying the charge. You will be able to point to the words that tell you, and to say why it is not one of the other four.
 
-You already read this sort of story every week. “Congress passed a new law on airline tickets.” “Congress cut the money for the programme.” “The Senate approved the President’s choice.” “The House voted to charge a judge.” “A court says Congress went too far.” Each of them says that Congress did something, and each is a different thing.
+You already read this sort of story every week. “Congress passed a new law on airline tickets.” “Congress cut the money for the program.” “The Senate approved the President’s choice.” “The House voted to charge a judge.” “A court says Congress went too far.” Each of them says that Congress did something, and each is a different thing.
 
 The first unit taught you the first question: whose decision does the case end on? When the answer is Congress, one question is left, and this unit teaches it. It is the question about what Congress does. Congress does more than pass laws. It also decides how much money the government may spend. The Senate votes on people the President has chosen and on agreements the President has signed. And the two chambers can charge an official with serious misconduct, and try the charge.
 
@@ -67,11 +67,11 @@ The unit has five parts, and you can stop after any of them.
 4. A charge against an official, and the question
 5. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A law on a matter the Constitution gives Congress
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 35*
 
 [reviewers only: card kind `meet`, id `meet-enumerated`]
 
@@ -107,7 +107,7 @@ You may also hear this called “a listed power” or “an expressed power”. 
 
 ### 3. Enumerated power: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 35*
 
 [reviewers only: card kind `again`, id `again-enumerated`]
 
@@ -140,13 +140,13 @@ The two stories share nothing else. So this is not about taxes or about coins. I
 
 ### 4. The story never decides the answer
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 35*
 
 [reviewers only: card kind `lens`, id `lens`]
 
 The last card asked you to ignore the story. That holds for the whole unit, so here it is once in full.
 
-Every case in this unit has two layers. The top layer is the story: a tax, a school, a flood barrier, a judge. The layer underneath is what Congress does. The five names belong to the layer underneath. The same story can carry any of them: a tax can be passed by Congress as a law, and the money it raises can be voted out to a programme; a judge can be approved by the Senate and, years later, be charged by the House.
+Every case in this unit has two layers. The top layer is the story: a tax, a school, a flood barrier, a judge. The layer underneath is what Congress does. The five names belong to the layer underneath. The same story can carry any of them: a tax can be passed by Congress as a law, and the money it raises can be voted out to a program; a judge can be approved by the Senate and, years later, be charged by the House.
 
 From here on, the cases change their stories on purpose. Sometimes two cases share a story and differ only in what Congress does. When that happens, the shared story is there to show you that it decides nothing.
 
@@ -158,7 +158,7 @@ One more thing changes on purpose: who else is in the case. The President, an of
 
 ### 5. Enumerated power: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-enumerated`]
 
@@ -188,7 +188,7 @@ In your own life you meet this whenever a federal tax, a coin, the post office o
 
 ### 6. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 35*
 
 [reviewers only: card kind `check`, id `check-enumerated`]
 
@@ -211,7 +211,7 @@ The pieces you can tap:
 
 ### 7. A law the Constitution does not let Congress pass
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 35*
 
 [reviewers only: card kind `meet`, id `meet-beyondcong`]
 
@@ -219,12 +219,12 @@ The first name, **Enumerated power**, is for a law Congress was allowed to pass.
 
 *The book list*
 
-> Many parents say that pupils across the country read too little. The House and the Senate passed ⟦a bill that tells every school in every state which ten books its pupils must read in ninth grade⟧.
+> Many parents say that students across the country read too little. The House and the Senate passed ⟦a bill that tells every school in every state which ten books its students must read in ninth grade⟧.
 
 Stripped of its story, the case is this:
 
 - Congress passes a law: the House and the Senate have both voted for the bill.
-- The law is about what pupils read in school: ten named books, in every state.
+- The law is about what students read in school: ten named books, in every state.
 - What schools teach is not on the Constitution’s list for Congress, so it is for the states to decide.
 - No right is involved here: the only problem is the matter.
 - Parents’ worry about reading is only the reason the bill exists.
@@ -247,20 +247,20 @@ You may also hear this called “exceeding Congress’s powers”. That means th
 
 ### 8. Beyond Congress’s power: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 35*
 
 [reviewers only: card kind `again`, id `again-beyondcong`]
 
 The book-list case showed one way for a law to be outside Congress’s power: the matter is not on the list. There is a second way, and here it is. The first case gave you what to point to: a law Congress passes, and either a matter the Constitution does not list among Congress’s powers, or a right the Constitution protects that the law takes away.
 
-The first case again, in one line. *The book list*: “a bill that tells every school in every state which ten books its pupils must read in ninth grade”
+The first case again, in one line. *The book list*: “a bill that tells every school in every state which ten books its students must read in ninth grade”
 
 The second case.
 
 *The approved buildings*
 
 > Some lawmakers say that too many small religious groups meet in homes and halls. On Tuesday the House passed a bill that lets people hold a religious service only in a building a federal office has approved. On Thursday the Senate passed it too.
-**You are asked:** In *The book list*, these words show it: “a bill that tells every school in every state which ten books its pupils must read in ninth grade”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The book list*, these words show it: “a bill that tells every school in every state which ten books its students must read in ninth grade”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Some lawmakers say that too many small religious groups meet in homes and halls”
@@ -273,14 +273,14 @@ The pieces you can tap:
 
 **What the two share**
 
-In both cases Congress passed a law, with both chambers voting for it, and in both the Constitution does not let Congress pass it. But the reasons differ. In the first, the matter, what pupils read, is not on the list. In the second, the matter is a religious service, and the Constitution protects the right to worship. A law that takes that right away is not one Congress may pass, whatever the matter.
+In both cases Congress passed a law, with both chambers voting for it, and in both the Constitution does not let Congress pass it. But the reasons differ. In the first, the matter, what students read, is not on the list. In the second, the matter is a religious service, and the Constitution protects the right to worship. A law that takes that right away is not one Congress may pass, whatever the matter.
 
 So there are two ways to be outside Congress’s power: a matter that is not on the list, and a right that the law takes away. Either one is enough, and that is what **Beyond Congress’s power** names. The stories share nothing else.
 
 
 ### 9. Beyond Congress’s power: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-beyondcong`]
 
@@ -292,7 +292,7 @@ You know what to point to, and that there are two ways to be outside the power. 
 - What is wrong is one of two things, and either is enough. Either the matter is not on the Constitution’s list for Congress: what schools teach, who may marry, the hours barbers work, the speed limit on a town’s own streets. Or the law takes away a right the Constitution protects: to speak, to worship, to publish or to gather peacefully.
 - A law can be on a matter that is on the list and still take a right away. The list is one limit and the rights are another, and a law has to get past both.
 - The words you hear are “Congress overstepped”, “the Constitution gives Congress no power to do that”, “that is for the states”. Sometimes the story only shows the law and its subject, and you have to hold the subject against the list yourself.
-- The law is not a rumour: the House and the Senate really passed it. What it lacks is the power, and a court can strike it down in a real case.
+- The law is not a rumor: the House and the Senate really passed it. What it lacks is the power, and a court can strike it down in a real case.
 
 **What it is not**
 
@@ -310,7 +310,7 @@ In your own life you meet it when someone says that a new federal law reaches in
 
 ### 10. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 35*
 
 [reviewers only: card kind `check`, id `check-beyondcong`]
 
@@ -330,7 +330,7 @@ In your own life you meet it when someone says that a new federal law reaches in
 
 ### 11. A wrong idea: “it passed, and the President signed it, so it is valid”
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 11 of 35*
 
 [reviewers only: card kind `refute`, id `refute-valid`]
 
@@ -349,7 +349,7 @@ So when you hear that a law is valid because it passed, go back to the question 
 
 ### 12. One matter, the mail: with a right taken away and without
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 12 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-enumerated-beyondcong`]
 
@@ -398,7 +398,7 @@ Is the matter the law is about on the Constitution’s list for Congress? And do
 
 ### 13. Congress deciding what the government may spend
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 35*
 
 [reviewers only: card kind `meet`, id `meet-purse`]
 
@@ -410,7 +410,7 @@ So far Congress has passed laws, some it was allowed to pass and some it was not
 
 Stripped of its story, the case is this:
 
-- There is a programme on paper: the President announced a flood barrier, and the engineers have their plans.
+- There is a program on paper: the President announced a flood barrier, and the engineers have their plans.
 - There is a decision in Congress about whether the government may spend money on it: the bill that settles this year’s spending.
 - The bill leaves the money out.
 - Nobody has forbidden the barrier. There is simply no money to build it.
@@ -433,7 +433,7 @@ You may also hear this called “appropriations” or “the spending bill”. T
 
 ### 14. The power of the purse: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 35*
 
 [reviewers only: card kind `again`, id `again-purse`]
 
@@ -464,7 +464,7 @@ So this is not about barriers or about schools, and it does not matter whether t
 
 ### 15. The power of the purse: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-purse`]
 
@@ -472,11 +472,11 @@ You know what to point to. This card fills in the rest of the picture of **The p
 
 **What it is usually like**
 
-- There is a decision about money, and it is Congress’s. The talk is about funding and budgets: whether a programme is funded, what the year’s budget holds, what was cut.
+- There is a decision about money, and it is Congress’s. The talk is about funding and budgets: whether a program is funded, what the year’s budget holds, what was cut.
 - Congress can say yes, no or less. It can vote the money, cut an amount it voted before, or leave the money out of the bill.
 - The offices that carry out the laws wait for the money. An *agency* spends it once Congress has voted it, but does not decide how much there is.
-- Nothing has to be banned. A programme can be stopped by not paying for it, which is why budget fights matter so much: whether something is funded is Congress’s decision.
-- The sum can be small or huge, and the programme can be one the President wants or one nobody wants.
+- Nothing has to be banned. A program can be stopped by not paying for it, which is why budget fights matter so much: whether something is funded is Congress’s decision.
+- The sum can be small or huge, and the program can be one the President wants or one nobody wants.
 
 **What it is not**
 
@@ -486,7 +486,7 @@ Raising money is not this name. Congress raises money by passing a law on a matt
 
 “The budget passed.” “Congress cut the funding.” “The spending bill has no money for it.” “Congress voted the money for it.” “A shutdown…”
 
-In your own life you meet this when a programme you rely on is funded or cut, when a park or a service closes in a budget fight, and in the stories about a shutdown, which is what happens when the money has not been voted.
+In your own life you meet this when a program you rely on is funded or cut, when a park or a service closes in a budget fight, and in the stories about a shutdown, which is what happens when the money has not been voted.
 
 **The question to ask when you spot it**
 
@@ -494,7 +494,7 @@ In your own life you meet this when a programme you rely on is funded or cut, wh
 
 ### 16. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 35*
 
 [reviewers only: card kind `check`, id `check-purse`]
 
@@ -516,7 +516,7 @@ In your own life you meet this when a programme you rely on is funded or cut, wh
 
 ### 17. One clinic scheme: raising the money, and deciding to spend it
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-enumerated-purse`]
 
@@ -559,7 +559,7 @@ Is Congress raising money, or setting some other rule? Or is it deciding whether
 
 ### 18. A spending bill that is also a law on a listed matter
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 35*
 
 [reviewers only: card kind `exception`, id `exc-spendbill`]
 
@@ -603,7 +603,7 @@ When a case shows both, the answer is the money, and this is on purpose. In real
 
 ### 19. A formal agreement between two countries
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 19 of 35*
 
 [reviewers only: card kind `term`, id `term-treaty`]
 
@@ -622,7 +622,7 @@ What sets this apart from a deal between two companies is that the two sides are
 
 ### 20. The Senate approving a person the President chose, or a deal with another country
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 35*
 
 [reviewers only: card kind `meet`, id `meet-confirm`]
 
@@ -657,7 +657,7 @@ You may also hear this called “Senate confirmation” or “ratifying a treaty
 
 ### 21. Advice and consent: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 35*
 
 [reviewers only: card kind `again`, id `again-confirm`]
 
@@ -669,16 +669,16 @@ The second case.
 
 *The lake treaty*
 
-> After two years of talks, the President signed a treaty with a neighbouring country on how both countries use a shared lake. The treaty binds nobody yet. On Tuesday the Senate voted 71 to 27 to approve it.
+> After two years of talks, the President signed a treaty with a neighboring country on how both countries use a shared lake. The treaty binds nobody yet. On Tuesday the Senate voted 71 to 27 to approve it.
 **You are asked:** In *The head of the parks*, these words show it: “The Senate held two days of hearings, and on Thursday it voted 61 to 38 to approve her”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “After two years of talks, the President signed a treaty with a neighbouring country on how both countries use a shared lake”
+1. “After two years of talks, the President signed a treaty with a neighboring country on how both countries use a shared lake”
 2. “The treaty binds nobody yet”
 3. “On Tuesday the Senate voted 71 to 27 to approve it”
 
 **Shown as soon as you tap.** The words are “On Tuesday the Senate voted 71 to 27 to approve it”.
-- If you tapped “After two years of talks, the President signed a treaty with a neighbouring country on how both countries use a shared lake”: That is the President’s part, and it came first. It is how the matter reached the Senate, not the vote.
+- If you tapped “After two years of talks, the President signed a treaty with a neighboring country on how both countries use a shared lake”: That is the President’s part, and it came first. It is how the matter reached the Senate, not the vote.
 - If you tapped “The treaty binds nobody yet”: That says why a vote is still needed. It is not the vote itself.
 
 **What the two share**
@@ -690,7 +690,7 @@ The yes votes needed are not the same for the two, and the line printed on the c
 
 ### 22. Advice and consent: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-confirm`]
 
@@ -720,7 +720,7 @@ In your own life you meet it when the news says that a judge, an ambassador or t
 
 ### 23. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 35*
 
 [reviewers only: card kind `check`, id `check-confirm`]
 
@@ -750,7 +750,7 @@ In your own life you meet it when the news says that a judge, an ambassador or t
 
 ### 24. Charging an official, and trying the charge
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 24 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 24 of 35*
 
 [reviewers only: card kind `meet`, id `meet-impeach`]
 
@@ -758,7 +758,7 @@ The last name was a Senate vote on someone who does not yet have the job. The fi
 
 *The judge who took money*
 
-> A federal judge is accused of taking money to decide cases in favour of one company. ⟦The House voted, by more than half, to charge the judge with taking the money⟧. ⟦The Senate then held a trial, and 70 of the 100 senators voted to convict⟧. The judge was removed from the job.
+> A federal judge is accused of taking money to decide cases in favor of one company. ⟦The House voted, by more than half, to charge the judge with taking the money⟧. ⟦The Senate then held a trial, and 70 of the 100 senators voted to convict⟧. The judge was removed from the job.
 
 Stripped of its story, the case is this:
 
@@ -785,7 +785,7 @@ You may also hear this called “removal from office”. That means the same thi
 
 ### 25. Impeachment: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 25 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 25 of 35*
 
 [reviewers only: card kind `again`, id `again-impeach`]
 
@@ -818,7 +818,7 @@ So the name does not depend on how the trial ended. Both cases are one thing: a 
 
 ### 26. Impeachment: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 26 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 26 of 35*
 
 [reviewers only: card kind `portrait`, id `portrait-impeach`]
 
@@ -848,16 +848,16 @@ In your own life you meet it in the news when an official is “impeached” or 
 
 ### 27. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 27 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 27 of 35*
 
 [reviewers only: card kind `check`, id `check-impeach`]
 
-> Many families wait years for a flat from the housing programme. The House has voted to charge the head of the federal housing department with misusing public money. The Senate will hold the trial next month.
+> Many families wait years for an apartment from the housing program. The House has voted to charge the head of the federal housing department with misusing public money. The Senate will hold the trial next month.
 
 **You are asked:** Which part of this case is the step Congress has already taken? Tap it.
 
 The pieces you can tap:
-1. “Many families wait years for a flat from the housing programme”
+1. “Many families wait years for an apartment from the housing program”
 2. “The House has voted to charge the head of the federal housing department with misusing public money”
 3. “The Senate will hold the trial next month”
 
@@ -865,13 +865,13 @@ The pieces you can tap:
 
 - If you are right: “Right: ‘The House has voted to charge the head of the federal housing department with misusing public money’.” The House has taken the first step: it has voted to charge a federal official with serious misconduct. The Senate’s trial of the charge is still to come, and the answer covers both steps. The answer for this case is **“Charges an official with serious misconduct, or tries the charge”**, and the name is **Impeachment**.
 - If you miss: “The words are ‘The House has voted to charge the head of the federal housing department with misusing public money’.” The same reason follows, and then a line about the piece you tapped:
-  - “Many families wait years for a flat from the housing programme”: That is the background to the case. It says nothing about what Congress has done.
+  - “Many families wait years for an apartment from the housing program”: That is the background to the case. It says nothing about what Congress has done.
   - “The Senate will hold the trial next month”: That is the second step, and it is still to come. The words asked for are the step already taken.
 - Taught on: “Charging an official, and trying the charge” (one tap opens the card).
 
 ### 28. One woman, one Senate, two votes
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 28 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 28 of 35*
 
 [reviewers only: card kind `lookalike`, id `look-confirm-impeach`]
 
@@ -914,7 +914,7 @@ Has the person already got the job, and is the vote about something they are acc
 
 ### 29. A wrong idea: “the House impeached him, so he has been removed”
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 29 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 29 of 35*
 
 [reviewers only: card kind `refute`, id `refute-charged`]
 
@@ -933,7 +933,7 @@ So when a story says that an official was “impeached”, ask what the story ha
 
 ### 30. The question you have been answering all along
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 35*
 
 [reviewers only: card kind `question`, id `q-congress`]
 
@@ -988,7 +988,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 31. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 35*
 
 [reviewers only: card kind `check`, id `check-congress`]
 
@@ -1020,7 +1020,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 32. A whole case, from the first question to the name
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 32 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 32 of 35*
 
 [reviewers only: card kind `worked`, id `worked-barbers`]
 
@@ -1080,7 +1080,7 @@ Here the questions and the likeness agree, so the answer stands. The question co
 
 ### 33. A second whole case, where the story points the wrong way
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 33 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 33 of 35*
 
 [reviewers only: card kind `worked`, id `worked-mint`]
 
@@ -1140,10 +1140,10 @@ When that happens, go back to the question and find the words in the case that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the five this unit teaches: Enumerated power / Beyond Congress’s power / The power of the purse / Advice and consent / Impeachment.
 
@@ -1266,7 +1266,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 43**
 
-> Some lawmakers are tired of being criticised. Both the House and the Senate passed a bill that bans anyone from saying in public that the government has made a mistake.
+> Some lawmakers are tired of being criticized. Both the House and the Senate passed a bill that bans anyone from saying in public that the government has made a mistake.
 
 **You are asked:** What does Congress do in the case?
 
@@ -1387,14 +1387,14 @@ Shown to you, with the words that decide each answer marked:
 
 - "The bill puts a tax on every ticket, and taxing is something Congress may do."
 - "Congress cannot tell every school what to read. That is for the states."
-- "The programme is dead: nobody voted the money."
+- "The program is dead: nobody voted the money."
 - "She cannot start until the Senate votes to approve her."
 
 **Shown as soon as you answer**
 
 - The answer is: "The bill puts a tax on every ticket, and taxing is something Congress may do." It is a law passed by both chambers on a matter the Constitution lists, here a tax, with no right taken away.
 - If you chose "Congress cannot tell every school what to read. That is for the states.": that belongs to **Beyond Congress’s power**.
-- If you chose "The programme is dead: nobody voted the money.": that belongs to **The power of the purse**.
+- If you chose "The program is dead: nobody voted the money.": that belongs to **The power of the purse**.
 - If you chose "She cannot start until the Senate votes to approve her.": that belongs to **Advice and consent**.
 - Taught on: “Enumerated power: what it is like” (one tap opens the card).
 
@@ -1491,7 +1491,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 20 of 43**
 
-> Rice farmers want to sell more abroad, but they must get a licence for each shipment. ⟦The House and the Senate passed a bill⟧ that ends the licence for rice shipments to other countries.
+> Rice farmers want to sell more abroad, but they must get a license for each shipment. ⟦The House and the Senate passed a bill⟧ that ends the license for rice shipments to other countries.
 
 Shown to you, with the words that decide each answer marked:
 - Who makes the last decision in the case, or is asked to make it? **Congress, in the House or the Senate**
@@ -1500,10 +1500,10 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Enumerated power**.” What does Congress do in the case? **Passes a law on a matter the Constitution lists for it.** Congress passed a law, and the law “ends the licence for rice shipments to other countries”. That is trade with other countries, a matter on the Constitution’s list, and no right is taken away.
-  - Why not **Beyond Congress’s power**: A law that ends a licence can sound like a law that restricts something. But the matter is trade with other countries, which the Constitution lists for Congress, and no right is taken away.
+- If you are right: “Right: **Enumerated power**.” What does Congress do in the case? **Passes a law on a matter the Constitution lists for it.** Congress passed a law, and the law “ends the license for rice shipments to other countries”. That is trade with other countries, a matter on the Constitution’s list, and no right is taken away.
+  - Why not **Beyond Congress’s power**: A law that ends a license can sound like a law that restricts something. But the matter is trade with other countries, which the Constitution lists for Congress, and no right is taken away.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - If you chose **Passes a law the Constitution does not let it pass**: A law that ends a licence can sound like a law that restricts something. But the matter is trade with other countries, which the Constitution lists for Congress, and no right is taken away.
+  - If you chose **Passes a law the Constitution does not let it pass**: A law that ends a license can sound like a law that restricts something. But the matter is trade with other countries, which the Constitution lists for Congress, and no right is taken away.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Beyond Congress’s power**, the look-alike card’s lines follow: In both, Congress passes a law with every vote in order: both chambers say yes. The vote cannot tell them apart, and neither can the story, because laws of both kinds can be about anything from mail to schools. In **Enumerated power** the matter is one the Constitution lists for Congress, and the law takes away no right the Constitution protects. In **Beyond Congress’s power** either the matter is not on the list, or the law takes away a right. One of those two is enough. Is the matter the law is about on the Constitution’s list for Congress? And does the law take away anyone’s right to speak, to worship, to publish or to gather peacefully?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1599,17 +1599,17 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 25 of 43**
 
-> Neighbours complain about houses painted in loud colours. The House and the Senate passed a bill that says every house in the country must be painted white, grey or beige on the outside.
+> Neighbors complain about houses painted in loud colors. The House and the Senate passed a bill that says every house in the country must be painted white, gray or beige on the outside.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does Congress do in the case? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Beyond Congress’s power**.” What does Congress do in the case? **Passes a law the Constitution does not let it pass.** The law is about the colour of homes: it “says every house in the country must be painted white, grey or beige on the outside”. That is not one of the matters the Constitution lists for Congress, so it is for the states, and the towns they give power to, to decide.
-  - Why not **Enumerated power**: Both chambers voting is true of every law. The colour of a home is not on the Constitution’s list.
+- If you are right: “Right: **Beyond Congress’s power**.” What does Congress do in the case? **Passes a law the Constitution does not let it pass.** The law is about the color of homes: it “says every house in the country must be painted white, gray or beige on the outside”. That is not one of the matters the Constitution lists for Congress, so it is for the states, and the towns they give power to, to decide.
+  - Why not **Enumerated power**: Both chambers voting is true of every law. The color of a home is not on the Constitution’s list.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **Congress, in the House or the Senate.** The case ends on a vote by both chambers: “The House and the Senate passed a bill”.
-  - If you chose **Passes a law on a matter the Constitution lists for it**: Both chambers voting is true of every law. The colour of a home is not on the Constitution’s list.
+  - If you chose **Passes a law on a matter the Constitution lists for it**: Both chambers voting is true of every law. The color of a home is not on the Constitution’s list.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Enumerated power**, the look-alike card’s lines follow: In both, Congress passes a law with every vote in order: both chambers say yes. The vote cannot tell them apart, and neither can the story, because laws of both kinds can be about anything from mail to schools. In **Enumerated power** the matter is one the Constitution lists for Congress, and the law takes away no right the Constitution protects. In **Beyond Congress’s power** either the matter is not on the list, or the law takes away a right. One of those two is enough. Is the matter the law is about on the Constitution’s list for Congress? And does the law take away anyone’s right to speak, to worship, to publish or to gather peacefully?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1835,7 +1835,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 37 of 43**
 
-> A federal official who runs a harbour office is accused of taking gifts. The House voted by more than half to charge her. At the end of the Senate trial, 52 of the 100 senators voted to convict, so she was not removed. Her lawyer says she has been cleared.
+> A federal official who runs a harbor office is accused of taking gifts. The House voted by more than half to charge her. At the end of the Senate trial, 52 of the 100 senators voted to convict, so she was not removed. Her lawyer says she has been cleared.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does Congress do in the case? → Name it.
 
@@ -1932,7 +1932,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 41 of 43**
 
-> "The money for the library programme ran out, so the programme closed. That is the power of the purse."
+> "The money for the library program ran out, so the program closed. That is the power of the purse."
 
 **You are asked:** The claim uses the name **The power of the purse**. What would you need to see in the case before that name could be used?
 
@@ -1946,8 +1946,8 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 - The answer is: **A decision by Congress to vote, cut or leave out the money for something, and the government able to spend on it only as Congress decided.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
-- The fault: The claim points at a programme closing for lack of money and stops there. It never shows Congress deciding about the money. The money may have run out because it was spent, or because an office used it up, and neither is Congress deciding. Without a vote, a cut or a gap left by Congress in the case, nothing here is **The power of the purse**.
-- The claim, put right (always the last thing shown): The money for the library programme ran out and the programme closed. That is **The power of the purse** only if the case shows Congress deciding about the money: voting it, cutting it or leaving it out.
+- The fault: The claim points at a program closing for lack of money and stops there. It never shows Congress deciding about the money. The money may have run out because it was spent, or because an office used it up, and neither is Congress deciding. Without a vote, a cut or a gap left by Congress in the case, nothing here is **The power of the purse**.
+- The claim, put right (always the last thing shown): The money for the library program ran out and the program closed. That is **The power of the purse** only if the case shows Congress deciding about the money: voting it, cutting it or leaving it out.
 
 **Drill item 42 of 43**
 
@@ -1991,7 +1991,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 34. What to carry away
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 34 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 34 of 35*
 
 [reviewers only: card kind `recap`, id `recap-congress`]
 
@@ -2029,7 +2029,7 @@ What does Congress do in the case?
 
 ### 35. Where would you meet this?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 35 of 35*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 35 of 35*
 
 [reviewers only: card kind `transfer`, id `transfer-congress`]
 
@@ -2041,7 +2041,7 @@ Pick one of the five and name an occasion of your own: somewhere you heard it, o
 
 - **Enumerated power**: The last time a tax, a coin or the post office changed, and someone said that Congress passed it.
 - **Beyond Congress’s power**: A law you heard described as going too far: into what your state or town decides, or into what you may say, believe or do.
-- **The power of the purse**: A programme, a park or a service that was cut, closed or funded, in the news or in your own town.
+- **The power of the purse**: A program, a park or a service that was cut, closed or funded, in the news or in your own town.
 - **Advice and consent**: A judge, an ambassador or the head of an office whose approval by the Senate you read about.
 - **Impeachment**: A time you heard that an official was “impeached” or that a trial was set, and what you took it to mean.
 
@@ -2119,7 +2119,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 4 of 15**
 
-> Teachers say that pupils across the country learn history from very different books. The House and the Senate passed a bill that says every school in every state must use the same history textbook.
+> Teachers say that students across the country learn history from very different books. The House and the Senate passed a bill that says every school in every state must use the same history textbook.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does Congress do in the case? → Name it.
 
@@ -2138,17 +2138,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 5 of 15**
 
-> Parents say that teenagers in some states can drive much earlier than in others. The House and the Senate passed a bill that sets seventeen as the age for a driver’s licence in every state.
+> Parents say that teenagers in some states can drive much earlier than in others. The House and the Senate passed a bill that sets seventeen as the age for a driver’s license in every state.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does Congress do in the case? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Beyond Congress’s power**.” What does Congress do in the case? **Passes a law the Constitution does not let it pass.** The law “sets seventeen as the age for a driver’s licence in every state”. Who may hold a driver’s licence is not one of the matters the Constitution lists for Congress, so each state decides.
-  - Why not **Enumerated power**: A rule about driving can sound like a rule about travel between states. But the age for a licence is not on the Constitution’s list.
+- If you are right: “Right: **Beyond Congress’s power**.” What does Congress do in the case? **Passes a law the Constitution does not let it pass.** The law “sets seventeen as the age for a driver’s license in every state”. Who may hold a driver’s license is not one of the matters the Constitution lists for Congress, so each state decides.
+  - Why not **Enumerated power**: A rule about driving can sound like a rule about travel between states. But the age for a license is not on the Constitution’s list.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who makes the last decision in the case, or is asked to make it? **Congress, in the House or the Senate.** The case ends on a vote by both chambers: “The House and the Senate passed a bill”.
-  - If you chose **Passes a law on a matter the Constitution lists for it**: A rule about driving can sound like a rule about travel between states. But the age for a licence is not on the Constitution’s list.
+  - If you chose **Passes a law on a matter the Constitution lists for it**: A rule about driving can sound like a rule about travel between states. But the age for a license is not on the Constitution’s list.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Enumerated power**, the look-alike card’s lines follow: In both, Congress passes a law with every vote in order: both chambers say yes. The vote cannot tell them apart, and neither can the story, because laws of both kinds can be about anything from mail to schools. In **Enumerated power** the matter is one the Constitution lists for Congress, and the law takes away no right the Constitution protects. In **Beyond Congress’s power** either the matter is not on the list, or the law takes away a right. One of those two is enough. Is the matter the law is about on the Constitution’s list for Congress? And does the law take away anyone’s right to speak, to worship, to publish or to gather peacefully?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2157,7 +2157,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 6 of 15**
 
-> An organiser says her group has marched peacefully every spring for ten years, with a permit from the city each time. The Senate voted on Thursday for a bill, already passed by the House, that bans any group from holding a peaceful rally in a public square without the approval of a federal office.
+> An organizer says her group has marched peacefully every spring for ten years, with a permit from the city each time. The Senate voted on Thursday for a bill, already passed by the House, that bans any group from holding a peaceful rally in a public square without the approval of a federal office.
 
 **You are asked, in order:** Who makes the last decision in the case, or is asked to make it? → What does Congress do in the case? → Name it.
 

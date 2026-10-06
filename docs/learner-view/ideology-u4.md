@@ -1,6 +1,6 @@
 # Learner view: Political Ideologies, Unit Four: Old ways of faith, family and custom
 
-*Two names for a text that holds up old ways, the one question that tells them apart, and the names they are mistaken for.* Unit revision 2, built to lesson standard 1, status: draft.
+*Two names for a text that holds up old ways, the one question that tells them apart, and the names they are mistaken for.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,13 +17,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Old ways: keep them, or bring them back?
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 22*
 
 [reviewers only: card kind `orient`, id `orient-ways`]
 
 After this unit you can read a short text that holds up the old ways of faith, home life and custom, and give it one of two names, by pointing to the words in it that tell you. You will also be able to say why it is not the name it looks most like, whether that is a name that goes with putting a nation first, or one that goes with the side of working people. The text can be a parish newsletter, a speech about a school, a few lines from a pamphlet about an old law, a post, or a letter to a town council.
 
-You already hear this talked about. A neighbour says the village should "keep its traditions". Someone else says a new law "destroyed our way of life". A columnist calls one politician "reactionary" and another "just conservative", and neither says what they mean. The two words are often used as if they were the same, or as if one were praise and the other an insult.
+You already hear this talked about. A neighbor says the village should "keep its traditions". Someone else says a new law "destroyed our way of life". A columnist calls one politician "reactionary" and another "just conservative", and neither says what they mean. The two words are often used as if they were the same, or as if one were praise and the other an insult.
 
 They are not the same thing, and they can be told apart. Unit One taught the first question, and every text in this unit gets one answer to it: **“Old ways of faith, family and custom”**. That answer is a place to start, and it leaves two names open. One kind of text wants what is still there kept, and wants any change to come slowly. Another says that something has been lost, that its loss was a wrong, and asks for it to be given back. They are given different names, and one more question tells them apart.
 
@@ -61,11 +61,11 @@ The unit has four parts, and you can stop after any of them.
 3. The names these two are mistaken for
 4. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Keep the old ways, and change slowly
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 22*
 
 [reviewers only: card kind `meet`, id `meet-conserv`]
 
@@ -73,11 +73,11 @@ Unit One gave every text that holds up old ways the same answer, and left two na
 
 *The boundary walk*
 
-> From the Eastby village newsletter: 'On the first Sunday of May we walk the boundary of the parish and bless the fields, as our grandparents did, and the children carry the banner. This custom, and the faith behind it, should guide how Eastby plans for the years ahead. ⟦Keep the walk⟧. If the route must change now that the new road cuts across it, ⟦let it change slowly, a step at a time, and ask the old walkers first⟧.'
+> From the Eastby village newsletter: 'On the first Sunday of May we walk the boundary of the village and bless the fields, as our grandparents did, and the children carry the banner. This custom, and the faith behind it, should guide how Eastby plans for the years ahead. ⟦Keep the walk⟧. If the route must change now that the new road cuts across it, ⟦let it change slowly, a step at a time, and ask the old walkers first⟧.'
 
 Stripped of its story, the case is this:
 
-- Something from the past is named, and it is still there: a walk round the parish, with a blessing, which the grandparents walked and the children still walk.
+- Something from the past is named, and it is still there: a walk round the village, with a blessing, which the grandparents walked and the children still walk.
 - The text says it should carry on. "Keep the walk."
 - It allows that something may have to change, because a new road cuts across the walk’s path. It asks for the change to be slow, a step at a time, with the old walkers asked first.
 - Nothing is said to have been torn down, and nothing is asked to come back. The walk is still being walked.
@@ -102,7 +102,7 @@ You may also hear this called “small-c conservatism”. That means the same th
 
 ### 3. Conservatism: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 22*
 
 [reviewers only: card kind `again`, id `again-conserv`]
 
@@ -130,20 +130,20 @@ The pieces you can tap:
 
 **What the two share**
 
-Both texts name ways handed down: a blessing walked round the parish, and the care of the old at home and in the almshouses. Both say these ways should guide. Both ask for them to be kept, and both allow that something may have to change, and ask that it be slow, a step at a time, with the people it touches asked first. Neither says that anything has been lost for good, and neither asks for anything to be given back.
+Both texts name ways handed down: a blessing walked round the village, and the care of the old at home and in the almshouses. Both say these ways should guide. Both ask for them to be kept, and both allow that something may have to change, and ask that it be slow, a step at a time, with the people it touches asked first. Neither says that anything has been lost for good, and neither asks for anything to be given back.
 
 The two stories share nothing else. So this holds wherever a text holds up old ways, wants what is there kept, and wants any change slow. That is what **Conservatism** names.
 
 
 ### 4. The story never decides the answer
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 22*
 
 [reviewers only: card kind `lens`, id `lens-ways`]
 
 The last card asked you to ignore the story. That instruction holds for the whole unit, so here it is once in full.
 
-Every text in this unit has two layers. The top layer is the story: a walk round a parish, a school, a guild, a hospital ward, a market. The layer underneath is what the text wants done with the old ways it holds up.
+Every text in this unit has two layers. The top layer is the story: a walk round a village, a school, a guild, a hospital ward, a market. The layer underneath is what the text wants done with the old ways it holds up.
 
 The two names belong to the layer underneath. The same story can carry either of them. A text about a school can ask for the school to stay as it is, or for it to be given back to the church; a text about a market can do the same. Nothing in the story tells you which.
 
@@ -157,7 +157,7 @@ From here on, some cases will share a story and differ only underneath. When tha
 
 ### 5. Conservatism: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 22*
 
 [reviewers only: card kind `portrait`, id `portrait-conserv`]
 
@@ -189,7 +189,7 @@ In your own life it is the household custom that everyone agrees to keep, the cl
 
 ### 6. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 22*
 
 [reviewers only: card kind `check`, id `check-conserv`]
 
@@ -218,7 +218,7 @@ The pieces you can tap:
 
 ### 7. Bring back an old order that has gone
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 7 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 7 of 22*
 
 [reviewers only: card kind `meet`, id `meet-react`]
 
@@ -255,7 +255,7 @@ You may also hear this called “throne and altar” or “traditionalism”. Th
 
 ### 8. Reactionary conservatism: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 8 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 8 of 22*
 
 [reviewers only: card kind `again`, id `again-react`]
 
@@ -288,7 +288,7 @@ The two stories share nothing else. So this holds wherever a text holds up an ol
 
 ### 9. Reactionary conservatism: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 9 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 9 of 22*
 
 [reviewers only: card kind `portrait`, id `portrait-react`]
 
@@ -320,11 +320,11 @@ In your own life it is the argument that a school, a church service, a shop’s 
 
 ### 10. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 10 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 10 of 22*
 
 [reviewers only: card kind `check`, id `check-react`]
 
-> From a speech at the market cross in Carrow: 'For a thousand years the market of Carrow was held under the lord of the manor, who set the weights, judged the quarrels and opened each market day with a blessing. The new Borough Act took the market from him. That Act was a theft, and not a reform, and Carrow has known no peace since. Give the lord his market and his place on the bench back, and let the blessing be said again from his steps.'
+> From a speech at the market cross in Carrow: 'For a thousand years the market of Carrow was held under the lord of the manor, who set the weights, judged the quarrels and opened each market day with a blessing. The new Municipal Act took the market from him. That Act was a theft, and not a reform, and Carrow has known no peace since. Give the lord his market and his place on the bench back, and let the blessing be said again from his steps.'
 
 **The question:** **“What does the text want done with the old ways?”** Which of the answers you have met so far fits this case?
 
@@ -340,7 +340,7 @@ In your own life it is the argument that a school, a church service, a shop’s 
 
 ### 11. Conservatism or Reactionary conservatism: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 11 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 11 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-conserv-react`]
 
@@ -348,11 +348,11 @@ You have now met both names. They begin from the same place, a text that holds u
 
 **Case A**
 
-> From a parents' letter about Marrow Lane church school: 'Our children are taught the old hymns each Sunday term, as we were, and the vicar still chooses the head teacher, as he has since our grandparents' time. These ways should guide how the school is run. Keep them. If the school must change, let it be slowly, with the parents asked at every step.'
+> From a parents' letter about Marrow Lane church school: 'Our children are taught the old hymns each Sunday term, as we were, and the pastor still chooses the principal, as he has since our grandparents' time. These ways should guide how the school is run. Keep them. If the school must change, let it be slowly, with the parents asked at every step.'
 
 **Case B**
 
-> From a parents' letter about Marrow Lane church school: 'For two hundred years the school belonged to the church, and the vicar chose the head teacher. The School Transfer Act took the school from the church. That was a wrong, and it should never have been done. These old ways should guide how the school is run, so undo the Act, give the school back to the church, and let the vicar choose the head teacher again.'
+> From a parents' letter about Marrow Lane church school: 'For two hundred years the school belonged to the church, and the pastor chose the principal. The School Transfer Act took the school from the church. That was a wrong, and it should never have been done. These old ways should guide how the school is run, so undo the Act, give the school back to the church, and let the pastor choose the principal again.'
 
 **What to compare.** Both cases are about the same school, the church school at Marrow Lane, and both hold up its old ways. Compare one thing: does the text ask for what is there to stay, or for what has gone to come back?
 
@@ -362,9 +362,9 @@ You have now met both names. They begin from the same place, a text that holds u
 
 **Why this one and not the other**
 
-In Case A the school is still a church school. The text says its Sunday hymns and the vicar’s choosing of the head teacher were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The answer is **“Keep what remains, and change slowly”**, and the case is **Conservatism**.
+In Case A the school is still a church school. The text says its Sunday hymns and the pastor’s choosing of the principal were handed down and should guide how the school is run, and it asks for them to be kept, and for any change to come slowly. Nothing has gone and nothing is asked back. The answer is **“Keep what remains, and change slowly”**, and the case is **Conservatism**.
 
-In Case B the school was taken from the church by an act, and the church no longer chooses the head teacher. The text says that was a wrong, and asks for the act to be undone and the school given back. The answer is **“Bring back an order that has gone”**, and the case is **Reactionary conservatism**.
+In Case B the school was taken from the church by an act, and the church no longer chooses the principal. The text says that was a wrong, and asks for the act to be undone and the school given back. The answer is **“Bring back an order that has gone”**, and the case is **Reactionary conservatism**.
 
 Both texts love the same school and hold up the same old ways. They differ in what stands today and in what the text asks for. Case A asks for what is there to stay. Case B asks for what has gone to return.
 
@@ -383,7 +383,7 @@ Does the text ask for something that has gone to be put back, after calling its 
 
 ### 12. A wrong idea about a text that holds up old ways
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 12 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 12 of 22*
 
 [reviewers only: card kind `refute`, id `refute-values`]
 
@@ -404,7 +404,7 @@ So when a text holds up old ways, point to what it asks. Is anything asked back?
 
 ### 13. The question you have been answering all along
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 13 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 13 of 22*
 
 [reviewers only: card kind `question`, id `q-ways`]
 
@@ -452,11 +452,11 @@ Sometimes both answers seem to fit: a text mourns an old order and also asks for
 
 ### 14. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 22*
 
 [reviewers only: card kind `check`, id `check-ways`]
 
-> From a nurses' association letter: 'Until the Health Reform, every ward was led by a matron, whose word was final, and every nurse knew her rank by the colour of her belt. The Reform swept the matrons away and called it progress. That was a wrong done to the sick. This old order of the wards should guide how the hospital is run, so put the matrons back on every ward, with their belts and their authority, as it was.'
+> From a nurses' association letter: 'Until the Health Reform, every ward was led by a matron, whose word was final, and every nurse knew her rank by the color of her belt. The Reform swept the matrons away and called it progress. That was a wrong done to the sick. This old order of the wards should guide how the hospital is run, so put the matrons back on every ward, with their belts and their authority, as it was.'
 
 **The question:** **“What does the text want done with the old ways?”**
 
@@ -478,21 +478,21 @@ Sometimes both answers seem to fit: a text mourns an old order and also asks for
 
 ### 15. Old ways and one people, at the same festival
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 15 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 15 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-conserv-nationalism`]
 
-Both names in this unit love what was handed down, and so does a name taught in Unit Three. Here are the first name of this unit and that one, told about the same harbour festival.
+Both names in this unit love what was handed down, and so does a name taught in Unit Three. Here are the first name of this unit and that one, told about the same harbor festival.
 
 **Case A**
 
-> From the Port Selby harbour newsletter: 'Each midsummer the crews carry their boats' names to the quay for the old blessing, as their fathers and mothers did before them. That blessing should guide how the harbour festival is planned. Keep it. If the quay must be rebuilt, let the work be slow and done in pieces, so that the blessing is never lost.'
+> From the Port Selby harbor newsletter: 'Each midsummer the crews carry their boats' names to the quay for the old blessing, as their fathers and mothers did before them. That blessing should guide how the harbor festival is planned. Keep it. If the quay must be rebuilt, let the work be slow and done in pieces, so that the blessing is never lost.'
 
 **Case B**
 
-> From a speech at the Port Selby harbour festival: 'Look around you. Fishers and clerks, young and old, left and right, we are one people, and a day like this shows that what divides us counts for less than what holds us together. A country that has such a day has every reason to be proud. Let us go on voting, arguing and disagreeing as we always have, and let us go on being one people when the argument is over.'
+> From a speech at the Port Selby harbor festival: 'Look around you. Fishers and clerks, young and old, left and right, we are one people, and a day like this shows that what divides us counts for less than what holds us together. A country that has such a day has every reason to be proud. Let us go on voting, arguing and disagreeing as we always have, and let us go on being one people when the argument is over.'
 
-**What to compare.** Both cases are about the harbour festival at Port Selby, and both are fond of it. Compare one thing: what does the text hold up first, ways handed down, or one people?
+**What to compare.** Both cases are about the harbor festival at Port Selby, and both are fond of it. Compare one thing: what does the text hold up first, ways handed down, or one people?
 
 **You are asked:** Which case gives the answer **“Old ways of faith, family and custom”**? (Case A / Case B)
 
@@ -523,7 +523,7 @@ What does the text hold up first: one people, marked out by its country, its cul
 
 ### 16. An old crown, and one people with one leader
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 16 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 16 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-react-fasc`]
 
@@ -568,7 +568,7 @@ Does the text hold up an order that once stood, and ask for it back? Or does it 
 
 ### 17. One people under one crown
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 17 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 17 of 22*
 
 [reviewers only: card kind `exception`, id `exc-fasc-react`]
 
@@ -612,7 +612,7 @@ It is worth knowing that this is a decision. In life, love of one people and lov
 
 ### 18. Old customs kept, and the owners made to pay
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 18 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 18 of 22*
 
 [reviewers only: card kind `exception`, id `exc-class-conserv`]
 
@@ -672,7 +672,7 @@ It is worth knowing that this is a decision. In life, a text can hold up what wa
 
 ### 19. A whole case, from the first question to the name
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 19 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 19 of 22*
 
 [reviewers only: card kind `worked`, id `worked-burial`]
 
@@ -680,13 +680,13 @@ You have the two names and the question that chooses between them. Before the dr
 
 *The burial club*
 
-> From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few pence each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'
+> From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few cents each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'
 
 **Question 1 of 2: Who or what does the text put first?**
 
 What it is for: sorts texts that speak for working people against owners, for a nation or its ordinary people, for old ways handed down, or for what every person is owed, from texts that speak for no side at all. Each of the four sides is a different answer to who a country is for, and each comes with its own names. The questions that come next ask what that side wants, so which questions come next depends on this answer. A text that speaks for no side has nothing more to name.
 
-> From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few pence each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. ⟦This old way of looking after one another should guide how Keld Row manages its money⟧. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'
+> From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few cents each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. ⟦This old way of looking after one another should guide how Keld Row manages its money⟧. Keep the club as it is. The rules can be reviewed, one at a time, once every few years, and only with the members asked.'
 
 Answer: **“Old ways of faith, family and custom”**
 
@@ -700,7 +700,7 @@ Still possible: all two names this unit teaches.
 
 What it is for: tells apart texts that want an order that has gone brought back from texts that want what remains kept, with change made slowly. Both names value what has been handed down. One treats the present as a wrong to be undone and asks for an order that has gone; the other accepts the present and asks only that change be slow. Which of the two a text asks for is what each name means.
 
-> From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few pence each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. ⟦Keep the club as it is⟧. ⟦The rules can be reviewed, one at a time, once every few years, and only with the members asked⟧.'
+> From a burial club's yearly notice: 'Since our grandparents' time, the households of Keld Row have paid a few cents each week into the burial club, so that no one on the row is buried by charity. The club once paid for a headstone too, and now it pays only for the burial. This old way of looking after one another should guide how Keld Row manages its money. ⟦Keep the club as it is⟧. ⟦The rules can be reviewed, one at a time, once every few years, and only with the members asked⟧.'
 
 Answer: **“Keep what remains, and change slowly”**
 
@@ -734,7 +734,7 @@ Here the answer and the likeness agree, so it stands. The question comes first, 
 
 ### 20. A second whole case, where the tone points the wrong way
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 20 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 20 of 22*
 
 [reviewers only: card kind `worked`, id `worked-hospice`]
 
@@ -798,11 +798,11 @@ When that happens, go back to the question and find the words in the text that a
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Four of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these texts are sad about something that has gone, and some are calm and patient while asking for an order to be put back. That is on purpose. What a text asks for decides the name, and how it sounds does not.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the two this unit teaches: Conservatism / Reactionary conservatism.
 
@@ -846,7 +846,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 3 of 34**
 
-> From the residents' paper of the Alder Fields estate: 'The old people's Sunday lunch, where three generations sit at one table, has gone on for as long as the estate has stood. ⟦That custom should guide how the estate's new community room is used⟧. ⟦Keep the Sunday lunch⟧. If the room's hours must change, ⟦change them gradually and ask the old people first⟧.'
+> From the residents' paper of the Alder Fields development: 'The old people's Sunday lunch, where three generations sit at one table, has gone on for as long as the development has stood. ⟦That custom should guide how the development's new community room is used⟧. ⟦Keep the Sunday lunch⟧. If the room's hours must change, ⟦change them gradually and ask the old people first⟧.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Old ways of faith, family and custom**
@@ -920,7 +920,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 34**
 
-> From the Pell End allotment society: 'Our plots have passed from neighbour to neighbour for ninety years, and the old custom of sharing the first beans of the year should guide how the society is run. Keep the plots with those who have worked them. If the waiting list must change, change it slowly and with the plot-holders asked.'
+> From the Pell End community garden society: 'Our plots have passed from neighbor to neighbor for ninety years, and the old custom of sharing the first beans of the year should guide how the society is run. Keep the plots with those who have worked them. If the waiting list must change, change it slowly and with the plot-holders asked.'
 
 **You are asked:** What does the text want done with the old ways?
 
@@ -1050,7 +1050,7 @@ Shown to you, with the words that decide each answer marked:
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
+> Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
 
 **You are asked:** Who or what does the text put first?
 
@@ -1134,7 +1134,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 19 of 34**
 
-> From a hill-walkers' fellowship: 'Each autumn the pilgrims climb the Brae Pass to the border chapel, as pilgrims have for six hundred years, and ⟦that walk should guide how the pass is looked after⟧. Keep the old path. If the new tunnel brings more visitors, let the walk adjust slowly, and let the pilgrims decide the pace.'
+> From a hikers' fellowship: 'Each fall the pilgrims climb the Brae Pass to the border chapel, as pilgrims have for six hundred years, and ⟦that walk should guide how the pass is looked after⟧. Keep the old path. If the new tunnel brings more visitors, let the walk adjust slowly, and let the pilgrims decide the pace.'
 
 Shown to you, with the words that decide each answer marked:
 - Who or what does the text put first? **Old ways of faith, family and custom**
@@ -1180,7 +1180,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 21 of 34**
 
-> From the Lower Marle parish magazine: 'Every Saturday the village bakes its bread in the common oven, as it has since the parish was founded, and the neighbours share the loaves. That shared baking should guide how we plan the new village hall. Keep the oven in use. If the hall's kitchen must be modernised, let it be done in stages, and let the bakers say how fast.'
+> From the Lower Marle parish newsletter: 'Every Saturday the village bakes its bread in the common oven, as it has since the parish was founded, and the neighbors share the loaves. That shared baking should guide how we plan the new village hall. Keep the oven in use. If the hall's kitchen must be modernized, let it be done in stages, and let the bakers say how fast.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done with the old ways? → Name it.
 
@@ -1274,7 +1274,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Nationalism**, the look-alike card’s lines follow: Both love the country and its past, both can say "our" ways and "our" people, and both leave elections alone. **Nationalism** puts one people first, and speaks for it as a whole: **“The nation, or its ordinary people”**. **Conservatism** puts first the ways handed down from the past, and asks for them to be kept: **“Old ways of faith, family and custom”**. The first is about who belongs. The second is about what should guide. What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- This case may have brought back *The harbour festival, one people*, which was **Nationalism**. When a likeness and the answers disagree, go by the words that answer the question.
+- This case may have brought back *The harbor festival, one people*, which was **Nationalism**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text left out the Sunday service, the green and the courtesies and spoke only of one proud people, the answer to **“Who or what does the text put first?”** would be **“The nation, or its ordinary people”**.
 - Taught on: “Keep the old ways, and change slowly” (one tap opens the card).
 
@@ -1300,16 +1300,16 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 27 of 34**
 
-> From the Marsh End Gardeners' Circle: 'Forty years ago we lost the old orchard to the bypass, and not a year goes by without someone saying so. We will not ask for it back; it is gone. But the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the autumn. We ask the parish to keep them, and to change nothing about them in a hurry.'
+> From the Marsh End Gardeners' Circle: 'Forty years ago we lost the old orchard to the bypass, and not a year goes by without someone saying so. We will not ask for it back; it is gone. But the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the fall. We ask the village to keep them, and to change nothing about them in a hurry.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done with the old ways? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The text mourns the orchard and then says so plainly: “We will not ask for it back; it is gone” and “We ask the parish to keep them, and to change nothing about them in a hurry”. It asks for what survives to be kept and for change to be slow, and it asks for nothing to be brought back.
+- If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The text mourns the orchard and then says so plainly: “We will not ask for it back; it is gone” and “We ask the village to keep them, and to change nothing about them in a hurry”. It asks for what survives to be kept and for change to be slow, and it asks for nothing to be brought back.
   - Why not **Reactionary conservatism**: The text is sad about something that has gone, which can look like the other name. But it says it will not ask for the orchard back, and what it asks for is that what survives be kept.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up two customs handed down, the pressing and the blessing, as what should guide the village: “the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the autumn”.
+  - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up two customs handed down, the pressing and the blessing, as what should guide the village: “the cider-pressing that survives, and the blessing of the last trees, should guide how the village marks the fall”.
   - If you chose **Bring back an order that has gone**: The text is sad about something that has gone, which can look like the other name. But it says it will not ask for the orchard back, and what it asks for is that what survives be kept.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Reactionary conservatism**, the look-alike card’s lines follow: Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed. **Conservatism** asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. **Reactionary conservatism** says that an old order has gone, that its going was a wrong, and asks for it to be put back. Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?
@@ -1321,7 +1321,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 28 of 34**
 
-> From a letter in the Penhallow Gazette, written calmly: 'There is no anger in this letter, and no hurry. The old village school of Penhallow, taught by the vicar's wife in the old way, was closed by the Schools Consolidation Act, and we hold that was a wrong done to the village. That old way of teaching should guide what Penhallow's children are taught. We ask only that, when the time is right, the Act be repealed, the school-house be reopened and the old way of teaching restored.'
+> From a letter in the Penhallow Gazette, written calmly: 'There is no anger in this letter, and no hurry. The old village school of Penhallow, taught by the pastor's wife in the old way, was closed by the Schools Consolidation Act, and we hold that was a wrong done to the village. That old way of teaching should guide what Penhallow's children are taught. We ask only that, when the time is right, the Act be repealed, the school-house be reopened and the old way of teaching restored.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done with the old ways? → Name it.
 
@@ -1364,7 +1364,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
+> Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
 
 **You are asked:** Who or what does the text put first?
 
@@ -1468,7 +1468,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 21. What to carry away
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 21 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 21 of 22*
 
 [reviewers only: card kind `recap`, id `recap-ways`]
 
@@ -1499,7 +1499,7 @@ What does the text want done with the old ways?
 
 ### 22. Where would you meet this?
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 22 of 22*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 22 of 22*
 
 [reviewers only: card kind `transfer`, id `transfer-ways`]
 
@@ -1528,13 +1528,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 6**
 
-> From the Lowmoor school newsletter: 'Each year on Founders' Day the whole school walks to the old well and the head reads out the names of those who built it, as has been done since the school began. That custom should guide how the school keeps its year. Keep Founders' Day. If the timetable has to change, change it a term at a time, and ask the older pupils' parents first.'
+> From the Lowmoor school newsletter: 'Each year on Founders' Day the whole school walks to the old well and the head reads out the names of those who built it, as has been done since the school began. That custom should guide how the school keeps its year. Keep Founders' Day. If the schedule has to change, change it a term at a time, and ask the older students' parents first.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done with the old ways? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The walk is still made, and the text asks for it to stay and for the timetable to change a term at a time: “Keep Founders' Day” and “change it a term at a time, and ask the older pupils' parents first”.
+- If you are right: “Right: **Conservatism**.” What does the text want done with the old ways? **Keep what remains, and change slowly.** The walk is still made, and the text asks for it to stay and for the schedule to change a term at a time: “Keep Founders' Day” and “change it a term at a time, and ask the older students' parents first”.
   - Why not **Reactionary conservatism**: Nothing has been taken away, so nothing is asked back. The walk to the well is still made each year.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - Who or what does the text put first? **Old ways of faith, family and custom.** The text holds up a custom handed down, the walk to the well, as what should guide: “That custom should guide how the school keeps its year”.
@@ -1566,7 +1566,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 6**
 
-> From the Orrel Dale burial board: 'When someone dies in the dale the bell is rung once for each year of their life, and the neighbours carry the coffin to the church on foot. That custom should guide how the burial board is run. Keep it. If the lane must be closed for repairs, let the board change the route in small steps and ask the bearers first.'
+> From the Orrel Dale burial board: 'When someone dies in the dale the bell is rung once for each year of their life, and the neighbors carry the coffin to the church on foot. That custom should guide how the burial board is run. Keep it. If the lane must be closed for repairs, let the board change the route in small steps and ask the bearers first.'
 
 **You are asked, in order:** Who or what does the text put first? → What does the text want done with the old ways? → Name it.
 

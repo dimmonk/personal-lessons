@@ -1,6 +1,6 @@
 # Learner view: Scams & Social Engineering, Unit One: What it is asking you to do
 
-*The first question, and the five things a message, a call or an offer can ask of you.* Unit revision 2, built to lesson standard 1, status: draft.
+*The first question, and the five things a message, a call or an offer can ask of you.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -18,15 +18,15 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before anything else: what is this message asking you to do?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient-gate`]
 
 After this unit you can take a message, a call, a text or an offer, and say which of five things it asks of you right now: **“Install something, open a file, or share your screen”**; **“Sign in, give a code, or allow an app”**; **“Pay or send money”**; **“Tell them about yourself”**; or **“Nothing: it only tells you something”**. You will be able to point to the words in it that show which one, and to say why it is not one of the other four.
 
-The message can come from a bank, a shop, an employer, a friend or a stranger, and it can be real or a copy made to take something from you. This unit does not decide that. It teaches the question that comes first, and everything after it in this subject starts from the answer.
+The message can come from a bank, a store, an employer, a friend or a stranger, and it can be real or a copy made to take something from you. This unit does not decide that. It teaches the question that comes first, and everything after it in this subject starts from the answer.
 
-You already do a rough version of this every day. Your phone buzzes with a text that says it is from your bank. Before you have read to the end, part of you has asked what it wants from you: for you to tap something, to ring someone, to pay something, or only to know something.
+You already do a rough version of this every day. Your phone buzzes with a text that says it is from your bank. Before you have read to the end, part of you has asked what it wants from you: for you to tap something, to call someone, to pay something, or only to know something.
 
 That is the right question to start with, and it is easy to skip. A scam is built to make you ask other questions first: who is this from, how bad is the problem, how fast do I have to act? A message from a real bank and a copy of it can use the same name, the same logo and the same words. What each one asks you to do is written in it for you to read, and it tells you what you could lose if you did it: control of your phone or computer, a way into one of your accounts, money, or facts about yourself. Each of those is guarded in a different way, which is why this is the first question.
 
@@ -52,11 +52,11 @@ The unit has four parts, and you can stop after any of them.
 3. Money, and facts about you
 4. The first question, two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Where a number, a link or an app comes from
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 42*
 
 [reviewers only: card kind `term`, id `term-already`]
 
@@ -64,9 +64,9 @@ The last card said that this unit teaches one question about messages. Before th
 
 *The number on the card*
 
-> Mina gets a text: 'This is Halbrook Bank. We have stopped a payment on your account. Call 0333 000 1234 now.' She takes her bank card out of her wallet. The number printed on the back of the card is 0345 600 5678. She rings that number instead, and the bank tells her there is nothing wrong with her account.
+> Mina gets a text: 'This is Halbrook Bank. We have stopped a payment on your account. Call (800) 555-0134 now.' She takes her bank card out of her wallet. The number printed on the back of the card is (800) 555-0178. She calls that number instead, and the bank tells her there is nothing wrong with her account.
 
-Look at what Mina did. A text gave her a number to ring, and she did not ring it. She rang a different number, the one printed on the back of her bank card. She might have reached the real bank by ringing the first one as well. What she could not know, from her phone, was whether the number in the text was the bank’s at all, because anyone can send a text with any number in it. She could know that the number on her card was the bank’s, because it was in her wallet before the text arrived.
+Look at what Mina did. A text gave her a number to call, and she did not call it. She called a different number, the one printed on the back of her bank card. She might have reached the real bank by calling the first one as well. What she could not know, from her phone, was whether the number in the text was the bank’s at all, because anyone can send a text with any number in it. She could know that the number on her card was the bank’s, because it was in her wallet before the text arrived.
 
 So there are two kinds of number: the kind that came with the message, and the kind that was yours before it. The same goes for a link and an app. A link in a message came with the message. A web address that you typed in yourself or saved long ago, and an app that you installed months ago, were yours first.
 
@@ -77,7 +77,7 @@ The ones that were yours first are the ones that you can rely on to lead to the 
 
 ### 3. What to do when you are not sure
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 42*
 
 [reviewers only: card kind `term`, id `term-check`]
 
@@ -85,20 +85,20 @@ The idea of *a way you already had* gives you the one reliable way to settle a d
 
 *The manager’s email*
 
-> An email arrives that looks as if it is from Tom's manager: 'I am in a meeting and cannot reach the bank. Please transfer £2,000 to this account for a supplier today.' Tom does not reply to it and does not transfer anything. He rings his manager on the number in the staff directory and asks whether she sent it. She did not.
+> An email arrives that looks as if it is from Tom's manager: 'I am in a meeting and cannot reach the bank. Please wire $2,000 to this account for a supplier today.' Tom does not reply to it and does not wire anything. He calls his manager at the number in the staff directory and asks whether she sent it. She did not.
 
 Tom did three things. He did not do what the email asked. He did not reply to it. And he asked the person it claimed to come from, using *a way you already had*: the number in the staff directory. That is all there is to it. It works because the one person who knows whether she sent the email is the one who is meant to have sent it.
 
 It does not depend on being able to tell a real email from a copy. Tom could not have told. It depends only on the number, the link or the app he used being one that was his before the email came.
 
-A real company or a real person does not mind being asked this way. A real bank would rather you rang the number on your card than acted on a text. If someone gets angry, or hurries you, when you want to do it, that tells you something too.
+A real company or a real person does not mind being asked this way. A real bank would rather you called the number on your card than acted on a text. If someone gets angry, or hurries you, when you want to do it, that tells you something too.
 
 **The word for this.** *The check*: stopping before you do what a message asks, and contacting the company or person yourself through a way you already had, to ask whether the request is real.
 
 
 ### 4. News that asks nothing of you
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 42*
 
 [reviewers only: card kind `meet`, id `meet-nothing`]
 
@@ -106,11 +106,11 @@ You have the two ideas you need. The first kind of message to look at is the one
 
 *The delivery update*
 
-> A text arrives on Ruth's phone from the bookshop where she ordered a birthday present: 'Hartley Books: ⟦your order is out for delivery today. Expected between 1pm and 4pm⟧.' The text says nothing else.
+> A text arrives on Ruth's phone from the bookstore where she ordered a birthday present: 'Hartley Books: ⟦your order is out for delivery today. Expected between 1pm and 4pm⟧.' The text says nothing else.
 
 Stripped of its story, the case is this:
 
-- There is one message, and it comes from the shop where Ruth placed an order.
+- There is one message, and it comes from the store where Ruth placed an order.
 - It tells her something that will happen: the order is out for delivery, and when to expect it.
 - It asks her for nothing: no payment, no password, no code, no facts about herself, nothing to install or open.
 - It gives her no link, no number and no app to use. There is nothing in it for her to tap.
@@ -136,7 +136,7 @@ After this answer there is nothing more to ask. It has no finer name to give, an
 
 ### 5. Nothing: it only tells you something: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 42*
 
 [reviewers only: card kind `again`, id `again-nothing`]
 
@@ -148,30 +148,30 @@ The second case.
 
 *The appointment reminder*
 
-> Mr Okafor's phone buzzes with a text from his dentist: 'Elm Road Dental: reminder that your appointment is on Tuesday 14 October at 10.20. If you need to change it, ring the number on your appointment card.'
+> Mr. Okafor's phone buzzes with a text from his dentist: 'Elm Road Dental: reminder that your appointment is on Tuesday, October 14 at 10:20 a.m. If you need to change it, call the number on your appointment card.'
 **You are asked:** In *The delivery update*, these words show it: “your order is out for delivery today. Expected between 1pm and 4pm”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “Mr Okafor's phone buzzes with a text from his dentist”
-2. “Elm Road Dental: reminder that your appointment is on Tuesday 14 October at 10.20”
-3. “If you need to change it, ring the number on your appointment card”
+1. “Mr. Okafor's phone buzzes with a text from his dentist”
+2. “Elm Road Dental: reminder that your appointment is on Tuesday, October 14 at 10:20 a.m.”
+3. “If you need to change it, call the number on your appointment card”
 
-**Shown as soon as you tap.** The words are “Elm Road Dental: reminder that your appointment is on Tuesday 14 October at 10.20”.
-- If you tapped “Mr Okafor's phone buzzes with a text from his dentist”: That tells you who the text is from. It does not tell you whether the text asks for anything.
-- If you tapped “If you need to change it, ring the number on your appointment card”: This only says what he could do if the date does not suit him, and it points to a number he already has, on his card. It asks him for nothing now. The news itself is in the sentence before.
+**Shown as soon as you tap.** The words are “Elm Road Dental: reminder that your appointment is on Tuesday, October 14 at 10:20 a.m.”.
+- If you tapped “Mr. Okafor's phone buzzes with a text from his dentist”: That tells you who the text is from. It does not tell you whether the text asks for anything.
+- If you tapped “If you need to change it, call the number on your appointment card”: This only says what he could do if the date does not suit him, and it points to a number he already has, on his card. It asks him for nothing now. The news itself is in the sentence before.
 
 **What the two share**
 
 Both messages are made of the same thing: news about something that is going to happen, and no request. In the first an order is on its way, and in the second an appointment is fixed. Neither asks the reader to pay, to sign in, to give a code, to tell the sender anything or to install anything.
 
-The second message does say what to do if the date does not suit: ring the number on the appointment card. That does not make it a request. It is a suggestion, it asks nothing now, and it points to a number that was already in the reader’s hands before the text arrived: *a way you already had*.
+The second message does say what to do if the date does not suit: call the number on the appointment card. That does not make it a request. It is a suggestion, it asks nothing now, and it points to a number that was already in the reader’s hands before the text arrived: *a way you already had*.
 
-The two stories, a delivery and a dentist, share nothing else. So this is not about shops or about health. It holds wherever a message only tells you something. That is what **“Nothing: it only tells you something”** names.
+The two stories, a delivery and a dentist, share nothing else. So this is not about stores or about health. It holds wherever a message only tells you something. That is what **“Nothing: it only tells you something”** names.
 
 
 ### 6. The story does not decide the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 42*
 
 [reviewers only: card kind `lens`, id `lens-gate`]
 
@@ -189,7 +189,7 @@ Two more things change on purpose from here on. The first is how alarming a mess
 
 ### 7. Nothing: it only tells you something: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-nothing`]
 
@@ -207,13 +207,13 @@ You know what to point to for **“Nothing: it only tells you something”**. Th
 
 A message that asks nothing is not the same as a message that is safe. A copy of a real notice can use the same words and add a button, a link or a number, and then it is no longer news: it is asking. The words around the news can be identical. The thing that has been added is the thing to look for.
 
-A message that gives you a number to ring or a link to tap, and nothing else, is not this answer either, because the number or the link came with the message and you are being sent to use it. There is no finer name for it, and you do not need one: leave the number and the link alone, and use *the check*.
+A message that gives you a number to call or a link to tap, and nothing else, is not this answer either, because the number or the link came with the message and you are being sent to use it. There is no finer name for it, and you do not need one: leave the number and the link alone, and use *the check*.
 
 **Where you will hear it**
 
 "Your order is out for delivery." "Reminder: your appointment is on Tuesday." "A new device signed in to your account. If this was you, no action is needed." "Your refund has been sent." "Our office is closed on Monday."
 
-You meet it every week: delivery updates, appointment reminders, notices from your bank, your employer or your council. Because most of them are harmless, you stop reading them closely, and that is the moment a copy with a link added slips through.
+You meet it every week: delivery updates, appointment reminders, notices from your bank, your employer or your county. Because most of them are harmless, you stop reading them closely, and that is the moment a copy with a link added slips through.
 
 **The question to ask when you spot it**
 
@@ -221,25 +221,25 @@ You meet it every week: delivery updates, appointment reminders, notices from yo
 
 ### 8. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 42*
 
 [reviewers only: card kind `check`, id `check-nothing`]
 
-> Mr Dunne has lived in his flat for six years. This week the housing association sends him a letter: 'Our office will be closed on 27 and 28 October for a staff training day. It will open as usual on the 29th.'
+> Mr. Dunne has lived in his apartment for six years. This week the property management company sends him a letter: 'Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th.'
 
-**You are asked:** Which words tell Mr Dunne something that will happen, without asking him to do anything? Tap them.
+**You are asked:** Which words tell Mr. Dunne something that will happen, without asking him to do anything? Tap them.
 
 The pieces you can tap:
-1. “Mr Dunne has lived in his flat for six years”
-2. “the housing association sends him a letter”
-3. “Our office will be closed on 27 and 28 October for a staff training day. It will open as usual on the 29th”
+1. “Mr. Dunne has lived in his apartment for six years”
+2. “the property management company sends him a letter”
+3. “Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Our office will be closed on 27 and 28 October for a staff training day. It will open as usual on the 29th’.” The letter only tells Mr Dunne when the office will be shut and when it will open again: “Our office will be closed on 27 and 28 October for a staff training day. It will open as usual on the 29th”. It asks him to do nothing, and it gives him no number, link or app of its own. The answer for this case is **“Nothing: it only tells you something”**.
-- If you miss: “The words are ‘Our office will be closed on 27 and 28 October for a staff training day. It will open as usual on the 29th’.” The same reason follows, and then a line about the piece you tapped:
-  - “Mr Dunne has lived in his flat for six years”: That is background about Mr Dunne. It is not what the letter tells him.
-  - “the housing association sends him a letter”: That says who the letter is from. The words that show what it does are in what the letter says.
+- If you are right: “Right: ‘Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th’.” The letter only tells Mr. Dunne when the office will be shut and when it will open again: “Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th”. It asks him to do nothing, and it gives him no number, link or app of its own. The answer for this case is **“Nothing: it only tells you something”**.
+- If you miss: “The words are ‘Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th’.” The same reason follows, and then a line about the piece you tapped:
+  - “Mr. Dunne has lived in his apartment for six years”: That is background about Mr. Dunne. It is not what the letter tells him.
+  - “the property management company sends him a letter”: That says who the letter is from. The words that show what it does are in what the letter says.
 - Taught on: “News that asks nothing of you” (one tap opens the card).
 
 *End of part 1. You can stop here; your place is kept. Next: part 2, A way into your accounts, and something on your device.*
@@ -250,7 +250,7 @@ The pieces you can tap:
 
 ### 9. The six-digit number your phone shows you
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 9 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 9 of 42*
 
 [reviewers only: card kind `term`, id `term-code`]
 
@@ -269,7 +269,7 @@ It works once, and only for a few minutes, so it is no use to anyone a day later
 
 ### 10. The box that asks you to press Allow
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 10 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 10 of 42*
 
 [reviewers only: card kind `term`, id `term-permission`]
 
@@ -288,20 +288,20 @@ This is how most apps connect to accounts, and it is useful. But it means that p
 
 ### 11. A way into one of your accounts
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 11 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 11 of 42*
 
 [reviewers only: card kind `meet`, id `meet-access`]
 
 You now have both words. The next kind of message asks you for a way into one of your accounts.
 
-*The pension sign-in*
+*The retirement plan sign-in*
 
-> Tariq wants to look at his pension. He types the pension company's web address into his browser himself, and the page says: '⟦Sign in with your username and password⟧.' He types them in.
+> Tariq wants to look at his retirement plan. He types the retirement plan company's web address into his browser himself, and the page says: '⟦Sign in with your username and password⟧.' He types them in.
 
 Stripped of its story, the case is this:
 
-- There is one person, Tariq, and one account of his: his pension.
-- He went to the page himself, by typing the pension company’s address into his browser.
+- There is one person, Tariq, and one account of his: his retirement plan.
+- He went to the page himself, by typing the retirement plan company’s address into his browser.
 - The page asks him to sign in with his username and password, and he does.
 - Nobody else is in the case: no caller, and no message with a link in it.
 - What he is asked for is a way into the account. It is not money, it is not a program on his computer, and it is not facts about himself.
@@ -324,20 +324,20 @@ The answer, and the name of this kind, is **“Sign in, give a code, or allow an
 
 ### 12. Sign in, give a code, or allow an app: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 12 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 12 of 42*
 
 [reviewers only: card kind `again`, id `again-access`]
 
 The last card gave you what to point to for **“Sign in, give a code, or allow an app”**, from one case: a request to type your password into a sign-in page, to type, read out or send on a one-time code, or to press Allow on a permission screen. Here is a second case with a different story. This one arrives as a text.
 
-The first case again, in one line. *The pension sign-in*: “Sign in with your username and password”
+The first case again, in one line. *The retirement plan sign-in*: “Sign in with your username and password”
 
 The second case.
 
 *The locked streaming account*
 
 > A text reaches Nell: 'Streamly: your account has been locked. Sign in with your password to unlock it: streamly-help.com/unlock'
-**You are asked:** In *The pension sign-in*, these words show it: “Sign in with your username and password”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The retirement plan sign-in*, these words show it: “Sign in with your username and password”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A text reaches Nell”
@@ -352,7 +352,7 @@ The pieces you can tap:
 
 **What the two share**
 
-Both messages ask for the same thing: a way into an account, by typing a password into a sign-in page. Tariq typed the pension company’s address himself and was asked to sign in. Nell is sent a link by text and is asked to sign in.
+Both messages ask for the same thing: a way into an account, by typing a password into a sign-in page. Tariq typed the retirement plan company’s address himself and was asked to sign in. Nell is sent a link by text and is asked to sign in.
 
 There is a difference between them that you may have noticed: Tariq went to the page, and the page came to Nell. That difference matters a great deal, and there is a question for it. It is not the question this unit teaches. This question asks only what is being requested, and in both cases the answer is the same.
 
@@ -361,7 +361,7 @@ So the answer does not say real or fake. It says what you are being asked for, a
 
 ### 13. Sign in, give a code, or allow an app: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 13 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 13 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-access`]
 
@@ -393,11 +393,11 @@ Every time you sign in to something, a code arrives, or an app asks to connect, 
 
 ### 14. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 42*
 
 [reviewers only: card kind `check`, id `check-access`]
 
-> Kira is setting up a diary app that her team uses. Her email account shows a box: 'Teamdiary would like to see your calendar. Allow / Cancel.'
+> Kira is setting up a calendar app that her team uses. Her email account shows a box: 'Teamcal would like to see your calendar. Allow / Cancel.'
 
 **The question:** **“What is it asking you to do right now?”** Which of the answers you have met so far fits this case?
 
@@ -406,14 +406,14 @@ Every time you sign in to something, a code arrives, or an app asks to connect, 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Sign in, give a code, or allow an app.**” The box asks Kira to press Allow so that an app can use one of her accounts: “Teamdiary would like to see your calendar. Allow / Cancel”. That is a request for a way into an account, and it is a request, so the case is not one that only tells her something.
+- If you are right: “Right: **Sign in, give a code, or allow an app.**” The box asks Kira to press Allow so that an app can use one of her accounts: “Teamcal would like to see your calendar. Allow / Cancel”. That is a request for a way into an account, and it is a request, so the case is not one that only tells her something.
 - If you miss: “The answer is **Sign in, give a code, or allow an app.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Nothing: it only tells you something**: Give that answer when it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card. This case shows something else: it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts.
 - Taught on: “A way into one of your accounts” (one tap opens the card).
 
 ### 15. Sign in, give a code, or allow an app or Nothing: it only tells you something: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-access-nothing`]
 
@@ -421,11 +421,11 @@ You have met two kinds, and they are easy to mix up in one particular way: a rea
 
 **Case A**
 
-> Priya opens her Hartley Mail app and finds this notice in its own message list: 'A new device signed in to your account at 14.02 today. If this was you, you do not need to do anything. If it was not, open this app and choose Security.'
+> Priya opens her Hartley Mail app and finds this notice in its own message list: 'A new device signed in to your account at 2:02 p.m. today. If this was you, you do not need to do anything. If it was not, open this app and choose Security.'
 
 **Case B**
 
-> Priya gets an email that looks the same: 'A new device signed in to your Hartley Mail account at 14.02 today. If this was not you, sign in here to secure your account: hartleymail-secure.com/signin'
+> Priya gets an email that looks the same: 'A new device signed in to your Hartley Mail account at 2:02 p.m. today. If this was not you, sign in here to secure your account: hartleymail-secure.com/signin'
 
 **What to compare.** Both cases are about Priya’s email account and a sign-in from a new device. Compare one thing: does the message ask her to do something, or does it only tell her?
 
@@ -455,7 +455,7 @@ Does anything in it ask you to sign in, give a code or press Allow, with a link,
 
 ### 16. A wrong idea: "a scam is always badly written"
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 42*
 
 [reviewers only: card kind `refute`, id `refute-polish`]
 
@@ -476,7 +476,7 @@ So how a message looks tells you nothing either way. Look at what it asks, using
 
 ### 17. Letting someone watch what you are doing
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 42*
 
 [reviewers only: card kind `term`, id `term-screenshare`]
 
@@ -484,9 +484,9 @@ The next kind of message is about your phone or computer itself, and one of the 
 
 *The help desk*
 
-> Jo's laptop will not connect to the office printer. She rings the company help desk on the number printed on her work badge. The helper says: 'Open the meeting app and press Share my screen, so that I can see what you see.' For the next ten minutes he watches her laptop and tells her what to click.
+> Jo's laptop will not connect to the office printer. She calls the company help desk at the number printed on her work badge. The helper says: 'Open the meeting app and press Share my screen, so that I can see what you see.' For the next ten minutes he watches her laptop and tells her what to click.
 
-Jo’s laptop would not connect to the office printer, so she rang the company help desk on the number printed on her work badge. The helper asked her to open a meeting app and press a button that shares what is on her laptop with him. From then on he could see everything Jo could see, at the same moment, and he could move things on it if she let him.
+Jo’s laptop would not connect to the office printer, so she called the company help desk at the number printed on her work badge. The helper asked her to open a meeting app and press a button that shares what is on her laptop with him. From then on he could see everything Jo could see, at the same moment, and he could move things on it if she let him.
 
 That is useful: it is how many real help desks work. It is also a very large thing to hand over. Anyone who can watch your computer can read your email and your bank pages as you open them, and may be able to take over the mouse. You are trusting the person completely, for as long as it lasts.
 
@@ -497,7 +497,7 @@ It happens through an app, or through a code that you type in, and it lasts unti
 
 ### 18. A way onto your phone or computer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 42*
 
 [reviewers only: card kind `meet`, id `meet-device`]
 
@@ -505,7 +505,7 @@ You now have the word you need. So far you have met a message that asks nothing,
 
 *The support call*
 
-> A man rings Diane and says he is from her internet company. 'Your router has been sending out errors,' he says. 'Please open your browser and ⟦download the repair program from the address I am about to read out⟧. Then I can fix it from my end.'
+> A man calls Diane and says he is from her internet company. 'Your router has been sending out errors,' he says. 'Please open your browser and ⟦download the repair program from the address I am about to read out⟧. Then I can fix it from my end.'
 
 Stripped of its story, the case is this:
 
@@ -517,13 +517,13 @@ Stripped of its story, the case is this:
 
 What you are shown is a request to put something on a device: here, a program, downloaded on the strength of a phone call. That is all a message of this kind is made of: one phone or computer, and a request to install, open or share something that reaches into it.
 
-The request can take three forms, and all three count as one kind. You can be asked to install a program or an app. You can be asked to open or run a file, such as an attachment. Or you can be asked to let someone watch or control your device from far away, which is *screen-sharing*. A warning that says your device has a problem and gives you someone to ring to fix it counts as this kind too, because the person you reach will ask for one of the three.
+The request can take three forms, and all three count as one kind. You can be asked to install a program or an app. You can be asked to open or run a file, such as an attachment. Or you can be asked to let someone watch or control your device from far away, which is *screen-sharing*. A warning that says your device has a problem and gives you someone to call to fix it counts as this kind too, because the person you reach will ask for one of the three.
 
 It is a kind of its own because of how far it reaches. Once a program is installed, or someone can watch your device, the risk is no longer one account but everything the device holds. They can read your accounts, copy your passwords as you type them, and stay on the device after the call has ended.
 
 Here again the story does not decide it. Diane’s caller might be a real engineer, and the case would be the same. What decides it is the request: a program to download.
 
-**What you must be able to point to.** A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device. This comes from one case so far. The next card tests it on a second case.
 
 **The question:** **“What is it asking you to do right now?”**
 
@@ -533,11 +533,11 @@ The answer, and the name of this kind, is **“Install something, open a file, o
 
 ### 19. Install something, open a file, or share your screen: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 42*
 
 [reviewers only: card kind `again`, id `again-device`]
 
-The last card gave you what to point to for **“Install something, open a file, or share your screen”**, from one case: a request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device. Here is a second case with a different story. This one is an email, and nobody is on the phone.
+The last card gave you what to point to for **“Install something, open a file, or share your screen”**, from one case: a request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device. Here is a second case with a different story. This one is an email, and nobody is on the phone.
 
 The first case again, in one line. *The support call*: “download the repair program from the address I am about to read out”
 
@@ -568,7 +568,7 @@ One came as a call and the other as an email, and one is a program and the other
 
 ### 20. Install something, open a file, or share your screen: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-device`]
 
@@ -579,7 +579,7 @@ You know what to point to for **“Install something, open a file, or share your
 - There is a phone or computer of yours, and something is to be put on it, opened on it or shown from it.
 - The request is for one of three things: install a program or an app; open or run a file; or let someone watch or control your device from far away.
 - It is often wrapped in a problem: an error, an infection, an update that must be done, a refund to be sorted out, a document you must open to see an invoice.
-- It can come as a call, a text, an email with a file, or a pop-up that gives you a number to ring. It can also come from nobody in particular: your own phone offers to install an update.
+- It can come as a call, a text, an email with a file, or a pop-up that gives you a number to call. It can also come from nobody in particular: your own phone offers to install an update.
 - What gets installed or opened can keep working long after the message is gone.
 
 **What it is not**
@@ -592,7 +592,7 @@ It is not always a scam. Updates, work software and a helper at the other end of
 
 "Please download this program so I can fix it from here." "Open the attached file and click Enable Editing." "Press Share so that I can see your screen." "Your computer is infected. Call this number now." "An update is ready. Install now?"
 
-Updates on your phone and your games console, work software that your employer pushes out, a helper on the end of a phone line: these are everyday requests of this kind, and most of them are fine.
+Updates on your phone and your game console, work software that your employer pushes out, a helper on the end of a phone line: these are everyday requests of this kind, and most of them are fine.
 
 **The question to ask when you spot it**
 
@@ -600,11 +600,11 @@ Updates on your phone and your games console, work software that your employer p
 
 ### 21. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 42*
 
 [reviewers only: card kind `check`, id `check-device`]
 
-> Kofi switches on his games console. A box appears: 'A system update is ready. Install now?' He has always updated the console this way.
+> Kofi switches on his game console. A box appears: 'A system update is ready. Install now?' He has always updated the console this way.
 
 **The question:** **“What is it asking you to do right now?”** Which of the answers you have met so far fits this case?
 
@@ -616,13 +616,13 @@ Updates on your phone and your games console, work software that your employer p
 
 - If you are right: “Right: **Install something, open a file, or share your screen.**” The box asks Kofi to install something on his console: “A system update is ready. Install now?”. A request to install something is a request about the device itself, whoever it comes from, so that is the answer to the first question. Whether it is the real console maker is a different question.
 - If you miss: “The answer is **Install something, open a file, or share your screen.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Nothing: it only tells you something**: Give that answer when it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card. This case shows something else: it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it.
-  - If you chose **Sign in, give a code, or allow an app**: Give that answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts. This case shows something else: it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it.
+  - If you chose **Nothing: it only tells you something**: Give that answer when it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card. This case shows something else: it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to call to fix it.
+  - If you chose **Sign in, give a code, or allow an app**: Give that answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts. This case shows something else: it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to call to fix it.
 - Taught on: “A way onto your phone or computer” (one tap opens the card).
 
 ### 22. Install something, open a file, or share your screen or Sign in, give a code, or allow an app: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-device-access`]
 
@@ -659,7 +659,7 @@ Would pressing it put something onto my phone or computer, open something on it,
 | | Install something, open a file, or share your screen | Sign in, give a code, or allow an app |
 |---|---|---|
 | In plain words | A way onto your phone or computer | A way into one of your accounts |
-| What you must be able to point to | A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device | A request to type your password into a sign-in page, to type, read out or send on a one-time code, or to press Allow on a permission screen |
+| What you must be able to point to | A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device | A request to type your password into a sign-in page, to type, read out or send on a one-time code, or to press Allow on a permission screen |
 
 
 *End of part 2. You can stop here; your place is kept. Next: part 3, Money, and facts about you.*
@@ -670,7 +670,7 @@ Would pressing it put something onto my phone or computer, open something on it,
 
 ### 23. Money out of your account
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 23 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 23 of 42*
 
 [reviewers only: card kind `meet`, id `meet-money`]
 
@@ -678,19 +678,19 @@ Three kinds so far ask for something to do with your accounts or your device. Th
 
 *The rent email*
 
-> Dan's landlord emails him on the 25th: 'Hi Dan, ⟦October's rent of £850 is due on the 1st. Please pay it into the same account as usual⟧.'
+> Dan's landlord emails him on the 25th: 'Hi Dan, ⟦October's rent of $850 is due on the 1st. Please pay it into the same account as usual⟧.'
 
 Stripped of its story, the case is this:
 
 - There is one message, from Dan’s landlord.
-- It names an amount, £850, and a date, the 1st.
+- It names an amount, $850, and a date, the 1st.
 - It asks him to pay it into an account.
 - Nothing is asked of his accounts or his devices, and nothing about himself.
 - What is asked is for money to leave his account.
 
 What you are shown is a request to pay: an amount, a date, a way to do it. That is all a message of this kind is made of: money, and a request for you to send it.
 
-Every way of paying counts as the same kind: a bank transfer, a card payment, cash, crypto, gift cards, or a payment made on a page you reach through a link. The request is the same in all of them: money leaves your hands.
+Every way of paying counts as the same kind: a wire transfer, a card payment, cash, crypto, gift cards, or a payment made on a page you reach through a link. The request is the same in all of them: money leaves your hands.
 
 It is a kind of its own because money is the one thing in this list that is hard to get back. A way into an account can be shut, and a program can be removed, but money sent by transfer, in cash or on gift cards is usually gone. This kind comes after the first two: where a message asks for money and also for something earlier in its list, it takes the earlier one.
 
@@ -706,42 +706,42 @@ The answer, and the name of this kind, is **“Pay or send money”**. After thi
 
 ### 24. Pay or send money: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 24 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 24 of 42*
 
 [reviewers only: card kind `again`, id `again-money`]
 
 The last card gave you what to point to for **“Pay or send money”**, from one case: a request to pay or send money, by any means: a transfer, a card payment, cash, crypto or gift cards. Here is a second case with a different story. This one comes from a manager, and it is in a hurry.
 
-The first case again, in one line. *The rent email*: “October's rent of £850 is due on the 1st. Please pay it into the same account as usual”
+The first case again, in one line. *The rent email*: “October's rent of $850 is due on the 1st. Please pay it into the same account as usual”
 
 The second case.
 
 *The manager in a meeting*
 
-> Sunita's manager emails her: 'I am stuck in a meeting and cannot reach the bank. Please transfer £2,000 to this account today for a supplier, and I will pay you back tonight.'
-**You are asked:** In *The rent email*, these words show it: “October's rent of £850 is due on the 1st. Please pay it into the same account as usual”. Which words show the same thing in this case? Tap them.
+> Sunita's manager emails her: 'I am stuck in a meeting and cannot reach the bank. Please wire $2,000 to this account today for a supplier, and I will pay you back tonight.'
+**You are asked:** In *The rent email*, these words show it: “October's rent of $850 is due on the 1st. Please pay it into the same account as usual”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Sunita's manager emails her”
 2. “I am stuck in a meeting and cannot reach the bank”
-3. “Please transfer £2,000 to this account today for a supplier”
+3. “Please wire $2,000 to this account today for a supplier”
 4. “I will pay you back tonight”
 
-**Shown as soon as you tap.** The words are “Please transfer £2,000 to this account today for a supplier”.
+**Shown as soon as you tap.** The words are “Please wire $2,000 to this account today for a supplier”.
 - If you tapped “Sunita's manager emails her”: That says who the email claims to be from. It does not say what it asks.
 - If you tapped “I am stuck in a meeting and cannot reach the bank”: That is the reason the email gives. What it asks Sunita to do comes next.
 - If you tapped “I will pay you back tonight”: That is a promise. It tells you what she would get afterwards. The request is the words before it.
 
 **What the two share**
 
-Both messages ask for the same thing: money, sent to an account. Dan is asked for £850 by the 1st, and Sunita is asked for £2,000 today.
+Both messages ask for the same thing: money, sent to an account. Dan is asked for $850 by the 1st, and Sunita is asked for $2,000 today.
 
 One of them is a hurried request from someone claiming to be a manager, and the other is a landlord’s usual email. One of them might be real, and one might not. The question does not ask that. It asks what is being requested, and both requests are for money. That is what **“Pay or send money”** names.
 
 
 ### 25. Pay or send money: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 25 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 25 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-money`]
 
@@ -763,7 +763,7 @@ A request to give your card number so that "nothing will be charged" is not a re
 
 **Where you will hear it**
 
-"Your invoice is attached. Please pay within 14 days." "Please transfer the money today." "Pay the £1.99 fee to release your parcel." "Buy gift cards and tell nobody." "Please send back the difference."
+"Your invoice is attached. Please pay within 14 days." "Please transfer the money today." "Pay the $1.99 fee to release your package." "Buy gift cards and tell nobody." "Please send back the difference."
 
 Bills, rent, subscriptions, collections at work, a friend who asks for a loan: money requests reach you all the time, and most of them are what they say. The same words reach you from people who are not.
 
@@ -773,32 +773,32 @@ Bills, rent, subscriptions, collections at work, a friend who asks for a loan: m
 
 ### 26. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 26 of 42*
 
 [reviewers only: card kind `check`, id `check-money`]
 
-> Gabi's friend Leon texts from a number she does not know: 'Hi Gabi, I dropped my phone in the sea and this is my new one. Can you send £300 to my sister's account today? I will explain later.'
+> Gabi's friend Leon texts from a number she does not know: 'Hi Gabi, I dropped my phone in the lake and this is my new one. Can you send $300 to my sister's account today? I will explain later.'
 
 **You are asked:** Which words ask Gabi to send money? Tap them.
 
 The pieces you can tap:
 1. “Gabi's friend Leon texts from a number she does not know”
-2. “Hi Gabi, I dropped my phone in the sea and this is my new one”
-3. “Can you send £300 to my sister's account today”
+2. “Hi Gabi, I dropped my phone in the lake and this is my new one”
+3. “Can you send $300 to my sister's account today”
 4. “I will explain later”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Can you send £300 to my sister's account today’.” The text asks Gabi to send money: “Can you send £300 to my sister's account today”. The story about the phone is the reason it gives, and the promise to explain comes after the request. The words that answer the question are the ones that say what she is to send and where. The answer for this case is **“Pay or send money”**.
-- If you miss: “The words are ‘Can you send £300 to my sister's account today’.” The same reason follows, and then a line about the piece you tapped:
+- If you are right: “Right: ‘Can you send $300 to my sister's account today’.” The text asks Gabi to send money: “Can you send $300 to my sister's account today”. The story about the phone is the reason it gives, and the promise to explain comes after the request. The words that answer the question are the ones that say what she is to send and where. The answer for this case is **“Pay or send money”**.
+- If you miss: “The words are ‘Can you send $300 to my sister's account today’.” The same reason follows, and then a line about the piece you tapped:
   - “Gabi's friend Leon texts from a number she does not know”: That says where the text comes from. It does not say what it asks.
-  - “Hi Gabi, I dropped my phone in the sea and this is my new one”: That is the story. The thing the text asks her to do comes after it.
+  - “Hi Gabi, I dropped my phone in the lake and this is my new one”: That is the story. The thing the text asks her to do comes after it.
   - “I will explain later”: That is a promise to explain. It is not what the text asks her to do.
 - Taught on: “Money out of your account” (one tap opens the card).
 
 ### 27. Pay or send money or Nothing: it only tells you something: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-money-nothing`]
 
@@ -806,13 +806,13 @@ You have met four kinds. Money is in the subject of many real notices that ask f
 
 **Case A**
 
-> Brightgas sends Amara a text: 'Your direct debit of £64 will leave your account on 1 November, as usual. You do not need to do anything.'
+> Brightgas sends Amara a text: 'Your automatic payment of $64 will be taken from your account on November 1, as usual. You do not need to do anything.'
 
 **Case B**
 
-> Brightgas sends Amara a text: 'Your bill of £64 is overdue. Pay it today at brightgas-pay.com or your gas will be cut off.'
+> Brightgas sends Amara a text: 'Your bill of $64 is overdue. Pay it today at brightgas-pay.com or your gas will be cut off.'
 
-**What to compare.** Both cases are about Amara’s gas bill of £64. Compare one thing: does the message ask her to pay, or does it only tell her what will happen?
+**What to compare.** Both cases are about Amara’s gas bill of $64. Compare one thing: does the message ask her to pay, or does it only tell her what will happen?
 
 **You are asked:** Which case gives the answer **“Pay or send money”**? (Case A / Case B)
 
@@ -820,7 +820,7 @@ You have met four kinds. Money is in the subject of many real notices that ask f
 
 **Why this one and not the other**
 
-In Case A the text says that a direct debit will leave her account on 1 November, as usual, and that she does not need to do anything. Her bank takes the money by an arrangement she made earlier. She is not asked to pay anything. The answer is **“Nothing: it only tells you something”**.
+In Case A the text says that an automatic payment will leave her account on November 1, as usual, and that she does not need to do anything. Her bank takes the money by an arrangement she made earlier. She is not asked to pay anything. The answer is **“Nothing: it only tells you something”**.
 
 In Case B the text says that the bill is overdue and tells her to pay it today at an address, or her gas will be cut off. Now she is asked to pay, and the way to do it comes with the message. The answer is **“Pay or send money”**.
 
@@ -840,7 +840,7 @@ Is anyone asking me to hand over money? Or is the money only mentioned as someth
 
 ### 28. A refund that starts with someone watching your device
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 42*
 
 [reviewers only: card kind `exception`, id `exc-refund`]
 
@@ -848,21 +848,21 @@ The cases so far have asked for one thing each. Real messages sometimes ask for 
 
 *The refund call*
 
-> A woman rings Harold and says she is from his broadband company. 'We owe you a refund of £48 for the outage,' she says. 'Press the Share button in this meeting app so that I can see your screen and put it through. Then you will need to send back the extra I put in by mistake.'
+> A woman calls Harold and says she is from his broadband company. 'We owe you a refund of $48 for the outage,' she says. 'Press the Share button in this meeting app so that I can see your screen and put it through. Then you will need to send back the extra I put in by mistake.'
 
 There is a refund in this case, and an instruction to send money back, and a request to send money is what **“Pay or send money”** usually sounds like. Yet the answer for this case is **“Install something, open a file, or share your screen”**.
 
 **You are asked:** This looks like **“Pay or send money”**. Before you read why it is **“Install something, open a file, or share your screen”**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “A woman rings Harold and says she is from his broadband company”
-2. “We owe you a refund of £48 for the outage”
+1. “A woman calls Harold and says she is from his broadband company”
+2. “We owe you a refund of $48 for the outage”
 3. “Press the Share button in this meeting app so that I can see your screen”
 4. “Then you will need to send back the extra I put in by mistake”
 
 **Shown as soon as you tap.** The words are “Press the Share button in this meeting app so that I can see your screen”.
-- If you tapped “A woman rings Harold and says she is from his broadband company”: That says who the caller claims to be. It does not say what she asks.
-- If you tapped “We owe you a refund of £48 for the outage”: That is the reason she gives, and a refund sounds like money. But it is something she says she will give him, not something she asks him to do.
+- If you tapped “A woman calls Harold and says she is from his broadband company”: That says who the caller claims to be. It does not say what she asks.
+- If you tapped “We owe you a refund of $48 for the outage”: That is the reason she gives, and a refund sounds like money. But it is something she says she will give him, not something she asks him to do.
 - If you tapped “Then you will need to send back the extra I put in by mistake”: This does ask for money, and it is why the case looks like a request to pay. But it comes second, and when a message asks for two things, the answer is the earlier one in the list.
 
 **Why this is Install something, open a file, or share your screen and not Pay or send money**
@@ -884,34 +884,34 @@ When a case shows both **“Pay or send money”** and a request to install some
 | | Install something, open a file, or share your screen | Pay or send money |
 |---|---|---|
 | In plain words | A way onto your phone or computer | Money out of your account |
-| What you must be able to point to | A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device | A request to pay or send money, by any means: a transfer, a card payment, cash, crypto or gift cards |
+| What you must be able to point to | A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device | A request to pay or send money, by any means: a transfer, a card payment, cash, crypto or gift cards |
 
 When a message asks for something about your device and for money, put your finger on the request about the device. It is the first of the two things in the list.
 
 
 ### 29. A fine that has to be paid after you sign in
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 42*
 
 [reviewers only: card kind `exception`, id `exc-fine`]
 
 The last case asked for money and for something about a device. This one asks for money and for something about an account.
 
-*The parking fine*
+*The parking ticket*
 
-> Lorna gets a text: 'Northway Council: your parking fine of £35 is overdue and will double on Friday. Sign in to your council account with your username and password at northway-fines.com to pay it.'
+> Lorna gets a text: 'Northway County: your parking ticket of $35 is overdue and will double on Friday. Sign in to your county account with your username and password at northway-fines.com to pay it.'
 
 The whole text is about a fine, a date and a payment, and a request to pay is what **“Pay or send money”** usually sounds like. Yet the answer for this case is **“Sign in, give a code, or allow an app”**.
 
 **You are asked:** This looks like **“Pay or send money”**. Before you read why it is **“Sign in, give a code, or allow an app”**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “Northway Council: your parking fine of £35 is overdue and will double on Friday”
-2. “Sign in to your council account with your username and password at northway-fines.com”
+1. “Northway County: your parking ticket of $35 is overdue and will double on Friday”
+2. “Sign in to your county account with your username and password at northway-fines.com”
 3. “to pay it”
 
-**Shown as soon as you tap.** The words are “Sign in to your council account with your username and password at northway-fines.com”.
-- If you tapped “Northway Council: your parking fine of £35 is overdue and will double on Friday”: That is the reason the text gives, and it is about money. But it is the story. What the text asks Lorna to do comes next.
+**Shown as soon as you tap.** The words are “Sign in to your county account with your username and password at northway-fines.com”.
+- If you tapped “Northway County: your parking ticket of $35 is overdue and will double on Friday”: That is the reason the text gives, and it is about money. But it is the story. What the text asks Lorna to do comes next.
 - If you tapped “to pay it”: This says what the sign-in is for, and it is why the case looks like a request to pay. But the thing she is told to do first is to sign in, and when a message asks for two things, the answer is the earlier one.
 
 **Why this is Sign in, give a code, or allow an app and not Pay or send money**
@@ -940,19 +940,19 @@ When a message asks you to sign in so that you can pay, put your finger on the s
 
 ### 30. Facts about you
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 42*
 
 [reviewers only: card kind `meet`, id `meet-details`]
 
 Four kinds so far. The last kind asks for none of those things. It asks you to tell them something about yourself.
 
-*The flat application*
+*The apartment application*
 
-> Tomas wants to rent a flat. On the letting agent's own website he fills in the application form, which ⟦asks for his full name, his date of birth and his current address⟧.
+> Tomas wants to rent an apartment. On the rental agent's own website he fills in the application form, which ⟦asks for his full name, his date of birth and his current address⟧.
 
 Stripped of its story, the case is this:
 
-- There is one person, Tomas, and one form, on the letting agent’s own website.
+- There is one person, Tomas, and one form, on the rental agent’s own website.
 - The form asks for facts about him: his full name, his date of birth and his current address.
 - It asks him for nothing else: no payment, no password, no program to install.
 - What is asked is for him to tell them about himself.
@@ -975,29 +975,29 @@ The answer, and the name of this kind, is **“Tell them about yourself”**. Af
 
 ### 31. Tell them about yourself: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 42*
 
 [reviewers only: card kind `again`, id `again-details`]
 
 The last card gave you what to point to for **“Tell them about yourself”**, from one case: a request for facts about you: papers or numbers that prove who you are, your date of birth or address, or your work, home and family in friendly chat. Here is a second case with a different story. This one is a friendly text, and nothing about it seems to ask for anything.
 
-The first case again, in one line. *The flat application*: “asks for his full name, his date of birth and his current address”
+The first case again, in one line. *The apartment application*: “asks for his full name, his date of birth and his current address”
 
 The second case.
 
 *The wrong number*
 
-> A text reaches Sam from a number he does not know: 'Hi Jess, sorry, wrong number! You sound lovely though. What do you do for work? Do you live near London?'
-**You are asked:** In *The flat application*, these words show it: “asks for his full name, his date of birth and his current address”. Which words show the same thing in this case? Tap them.
+> A text reaches Sam from a number he does not know: 'Hi Jess, sorry, wrong number! You sound nice though. What do you do for work? Do you live near Chicago?'
+**You are asked:** In *The apartment application*, these words show it: “asks for his full name, his date of birth and his current address”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A text reaches Sam from a number he does not know”
-2. “Hi Jess, sorry, wrong number! You sound lovely though”
-3. “What do you do for work? Do you live near London?”
+2. “Hi Jess, sorry, wrong number! You sound nice though”
+3. “What do you do for work? Do you live near Chicago?”
 
-**Shown as soon as you tap.** The words are “What do you do for work? Do you live near London?”.
+**Shown as soon as you tap.** The words are “What do you do for work? Do you live near Chicago?”.
 - If you tapped “A text reaches Sam from a number he does not know”: That says where it came from. It does not say what it asks.
-- If you tapped “Hi Jess, sorry, wrong number! You sound lovely though”: That is the friendly start. The text asks nothing in it. What the text asks Sam to tell comes next.
+- If you tapped “Hi Jess, sorry, wrong number! You sound nice though”: That is the friendly start. The text asks nothing in it. What the text asks Sam to tell comes next.
 
 **What the two share**
 
@@ -1008,7 +1008,7 @@ The friendly text may look as if it asks for nothing, because it asks no money a
 
 ### 32. Tell them about yourself: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-details`]
 
@@ -1040,30 +1040,30 @@ Forms, job applications, a call from your bank, and a stranger who texts you by 
 
 ### 33. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 42*
 
 [reviewers only: card kind `check`, id `check-details`]
 
-> A recruiter emails Fern about a job she has not applied for: 'We would love to take your application further. Please send a photo of your passport and your National Insurance number.'
+> A recruiter emails Fern about a job she has not applied for: 'We would love to take your application further. Please send a photo of your passport and your Social Security number.'
 
 **You are asked:** Which words ask Fern to tell the sender about herself? Tap them.
 
 The pieces you can tap:
 1. “A recruiter emails Fern about a job she has not applied for”
 2. “We would love to take your application further”
-3. “Please send a photo of your passport and your National Insurance number”
+3. “Please send a photo of your passport and your Social Security number”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘Please send a photo of your passport and your National Insurance number’.” The email asks Fern to tell the sender facts about herself, in the form of papers and a number: “Please send a photo of your passport and your National Insurance number”. It does not ask her to pay, sign in or install anything. The answer for this case is **“Tell them about yourself”**.
-- If you miss: “The words are ‘Please send a photo of your passport and your National Insurance number’.” The same reason follows, and then a line about the piece you tapped:
+- If you are right: “Right: ‘Please send a photo of your passport and your Social Security number’.” The email asks Fern to tell the sender facts about herself, in the form of papers and a number: “Please send a photo of your passport and your Social Security number”. It does not ask her to pay, sign in or install anything. The answer for this case is **“Tell them about yourself”**.
+- If you miss: “The words are ‘Please send a photo of your passport and your Social Security number’.” The same reason follows, and then a line about the piece you tapped:
   - “A recruiter emails Fern about a job she has not applied for”: That says who the email is from and what it is about. It does not say what it asks her to do.
   - “We would love to take your application further”: That is the reason it gives. What it asks Fern to send comes next.
 - Taught on: “Facts about you” (one tap opens the card).
 
 ### 34. Pay or send money or Tell them about yourself: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-money-details`]
 
@@ -1071,13 +1071,13 @@ You have met all five kinds. The last pair to compare is money and facts about y
 
 **Case A**
 
-> Pinecrest Mobile texts Joel: 'Your SIM will be switched off tomorrow. Pay a £1.99 reactivation fee at pinecrest-reconnect.com to keep your number.'
+> Pinecrest Mobile texts Joel: 'Your SIM will be switched off tomorrow. Pay a $1.99 reactivation fee at pinecrest-reconnect.com to keep your number.'
 
 **Case B**
 
 > Pinecrest Mobile texts Joel: 'Your SIM will be switched off tomorrow. Confirm your full name, date of birth and card number at pinecrest-reconnect.com to keep your number. Nothing will be charged.'
 
-**What to compare.** Both cases are about Joel’s mobile phone SIM, which will be switched off tomorrow. Compare one thing: is he asked to pay, or to confirm facts about himself?
+**What to compare.** Both cases are about Joel’s cell phone SIM, which will be switched off tomorrow. Compare one thing: is he asked to pay, or to confirm facts about himself?
 
 **You are asked:** Which case gives the answer **“Pay or send money”**? (Case A / Case B)
 
@@ -1085,7 +1085,7 @@ You have met all five kinds. The last pair to compare is money and facts about y
 
 **Why this one and not the other**
 
-In Case A the text tells Joel to pay a fee of £1.99 at an address to keep his number. He is asked to send money. The answer is **“Pay or send money”**.
+In Case A the text tells Joel to pay a fee of $1.99 at an address to keep his number. He is asked to send money. The answer is **“Pay or send money”**.
 
 In Case B the text tells him to confirm his full name, his date of birth and his card number at the same address, and says that nothing will be charged. He is asked to tell them about himself: facts that identify him, including a card number. He is not asked to pay. The answer is **“Tell them about yourself”**.
 
@@ -1105,7 +1105,7 @@ Is an amount named for me to pay? Or am I only asked to tell them facts about my
 
 ### 35. A wrong idea: "only careless people are caught"
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 42*
 
 [reviewers only: card kind `refute`, id `refute-careful`]
 
@@ -1121,7 +1121,7 @@ A scam is not a test of how carefully you read. It is built to arrive when it fi
 
 What protects you is not how clever you feel. It is a habit that does not depend on feeling clever: find what the message asks, using **“What is it asking you to do right now?”**, and when it asks for something, use *the check* instead of deciding on the spot whether it is real.
 
-It is also a habit that works for the real messages. A real bank does not mind being called on the number on your card.
+It is also a habit that works for the real messages. A real bank does not mind being called at the number on your card.
 
 
 *End of part 3. You can stop here; your place is kept. Next: part 4, The first question, two whole cases, then the drill.*
@@ -1132,7 +1132,7 @@ It is also a habit that works for the real messages. A real bank does not mind b
 
 ### 36. The question you have been answering all along
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 36 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 36 of 42*
 
 [reviewers only: card kind `question`, id `q-gate`]
 
@@ -1147,7 +1147,7 @@ Since the delivery update you have seen the question at the foot of each new kin
 In this unit each answer is itself the name of a kind, and so rules out the other four.
 
 - **“Install something, open a file, or share your screen”**
-  - Give this answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it.
+  - Give this answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to call to fix it.
 - **“Sign in, give a code, or allow an app”**
   - Give this answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts.
 - **“Pay or send money”**
@@ -1173,7 +1173,7 @@ Read the whole message before you answer, the last sentence included. The reques
 
 Then go down the list in order, and stop at the first answer that the message shows.
 
-First, look for **“Install something, open a file, or share your screen”**: a request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device. If the message shows that, this is the answer, whatever else it asks.
+First, look for **“Install something, open a file, or share your screen”**: a request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device. If the message shows that, this is the answer, whatever else it asks.
 
 Second, look for **“Sign in, give a code, or allow an app”**: a request to type your password into a sign-in page, to type, read out or send on a one-time code, or to press Allow on a permission screen.
 
@@ -1187,7 +1187,7 @@ Whichever answer you give, put your finger on the words that show it. If you can
 
 **When two answers both seem to fit**
 
-Some messages ask for two things at once. You have met two of them: the refund call asked Harold to let a stranger watch his device and then to send money back, and the council text asked Lorna to sign in and then to pay. Every message gets one answer, and the order of the list is how it is chosen: the earlier answer wins. Each pair below has a question that tells it apart.
+Some messages ask for two things at once. You have met two of them: the refund call asked Harold to let a stranger watch his device and then to send money back, and the county text asked Lorna to sign in and then to pay. Every message gets one answer, and the order of the list is how it is chosen: the earlier answer wins. Each pair below has a question that tells it apart.
 
 - Sign in, give a code, or allow an app or Nothing: it only tells you something: Does anything in it ask you to sign in, give a code or press Allow, with a link, a button or a caller to do it through? Or does it only tell you what has happened, and leave you to use your own app or number?
 - Install something, open a file, or share your screen or Sign in, give a code, or allow an app: Would pressing it put something onto my phone or computer, open something on it, or let someone watch it? Or would it open one of my accounts to a page, an app or a caller? When a case shows both **“Sign in, give a code, or allow an app”** and a request to install something, open a file or share your screen, the answer is **“Install something, open a file, or share your screen”**.
@@ -1210,16 +1210,16 @@ Some messages ask for two things at once. You have met two of them: the refund c
 | | Install something, open a file, or share your screen | Nothing: it only tells you something |
 |---|---|---|
 | In plain words | A way onto your phone or computer | News that asks nothing of you |
-| What you must be able to point to | A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device | News about something that has happened or will happen, and no request: nothing to install, sign in to, pay or tell, and no number, link or app of its own for you to use |
+| What you must be able to point to | A request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device | News about something that has happened or will happen, and no request: nothing to install, sign in to, pay or tell, and no number, link or app of its own for you to use |
 
 
 ### 37. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 42*
 
 [reviewers only: card kind `check`, id `check-gate`]
 
-> Mrs Adeyemi gets a text from the council: 'Northway Council: your rubbish collection moves to Thursday this week only, because of the bank holiday.'
+> Mrs. Adeyemi gets a text from the county: 'Northway County: your trash pickup moves to Thursday this week only, because of the holiday.'
 
 **The question:** **“What is it asking you to do right now?”**
 
@@ -1231,9 +1231,9 @@ Some messages ask for two things at once. You have met two of them: the refund c
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The text only tells Mrs Adeyemi that something will change: “your rubbish collection moves to Thursday this week only, because of the bank holiday”. Nothing in it asks her to install, sign in, pay or tell anyone anything, and it gives no number, link or app of its own.
+- If you are right: “Right: **Nothing: it only tells you something.**” The text only tells Mrs. Adeyemi that something will change: “your trash pickup moves to Thursday this week only, because of the holiday”. Nothing in it asks her to install, sign in, pay or tell anyone anything, and it gives no number, link or app of its own.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **Install something, open a file, or share your screen**: Give that answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to ring to fix it. This case shows something else: it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
+  - If you chose **Install something, open a file, or share your screen**: Give that answer when it asks you to install a program or an app, to open or run a file, or to let someone see or control your screen, or it warns that your device has a problem and gives you someone to call to fix it. This case shows something else: it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
   - If you chose **Sign in, give a code, or allow an app**: Give that answer when it asks you to sign in, to give a one-time code by typing it, reading it out or sending it on, or to press Allow so that an app can use one of your accounts. This case shows something else: it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
   - If you chose **Pay or send money**: Give that answer when it asks you to pay or send money, by any means, now or by a date. This case shows something else: it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
   - If you chose **Tell them about yourself**: Give that answer when it asks for facts about you: a document, an ID or card number, your date of birth or address, or your work, home and family. This case shows something else: it tells you that something has happened or will happen and asks you to do nothing, and anything it suggests uses only what you already had, such as the app on your phone or the number on your card.
@@ -1241,39 +1241,39 @@ Some messages ask for two things at once. You have met two of them: the refund c
 
 ### 38. A whole case, from the question to the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 42*
 
 [reviewers only: card kind `worked`, id `worked-leaving`]
 
 You have the five kinds and the question about them. Before the drill, watch two cases being run from the top. You are not asked anything until the end of each.
 
-*The leaving present*
+*The going-away gift*
 
-> Ben, a colleague, emails the whole team: 'We are collecting £20 each for Jo's leaving present. Please send yours to my account by Friday: sort code 40-11-22, account 5566 7788.'
+> Ben, a colleague, emails the whole team: 'We are collecting $20 each for Jo's going-away gift. Please send yours by Venmo to @ben-collects by Friday.'
 
 **Question 1 of 1: What is it asking you to do right now?**
 
 What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all. Each kind of request puts something different at risk, is guarded by a different habit, and leads to a different set of names. The story that comes with it, who it says it is from, and what the sender is after in the end do not change the answer: what it asks you to do does. You can answer it from the message or the call itself, at the moment the request is made. Where a request asks for two of these things, the answer is the one higher in the list, because it reaches further: a program or a view of your screen reaches everything on the device, a way into an account reaches what the account holds, and money is gone once it is sent.
 
-> Ben, a colleague, emails the whole team: 'We are collecting £20 each for Jo's leaving present. ⟦Please send yours to my account by Friday⟧: sort code 40-11-22, account 5566 7788.'
+> Ben, a colleague, emails the whole team: 'We are collecting $20 each for Jo's going-away gift. ⟦Please send yours by Venmo to @ben-collects by Friday⟧.'
 
 Answer: **“Pay or send money”**
 
 The card that put the question in one place taught an order: look first for something to put on a device, then a way into an account, then money, then facts about the person, and if none of them is there, nothing. The email asks for no program, no file and no sign-in, so the first two do not apply.
 
-Now look for money. It is here: “Please send yours to my account by Friday”. That is a request to send money, with a date and an account. Neither of the two earlier answers is there, so the answer is the one for money.
+Now look for money. It is here: “Please send yours by Venmo to @ben-collects by Friday”. That is a request to send money, with a date and a place to send it. Neither of the two earlier answers is there, so the answer is the one for money.
 
-The rest of the email, a collection for a leaving present, is the story. It makes the request sound friendly and ordinary, and it may well be. The question looks at what is asked, and what is asked is £20.
+The rest of the email, a collection for a going-away gift, is the story. It makes the request sound friendly and ordinary, and it may well be. The question looks at what is asked, and what is asked is $20.
 
 In this unit the answer is the name. Ruled out: **“Install something, open a file, or share your screen”**, **“Sign in, give a code, or allow an app”**, **“Tell them about yourself”** and **“Nothing: it only tells you something”**.
 
 **You are asked:** The first sentence of the email only tells the team that a collection is happening, so the case can look like a message that tells you something. Why is this **“Pay or send money”** and not **“Nothing: it only tells you something”**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
 - (a) The email tells the team that a collection for Jo’s present is happening.
-- (b) It goes on to ask each person to send £20 to an account by Friday.
+- (b) It goes on to ask each person to send $20 to an account by Friday.
 - (c) It comes from a colleague whom the team knows.
 
-**Shown as soon as you choose.** The one that settles it is (b): It goes on to ask each person to send £20 to an account by Friday.
+**Shown as soon as you choose.** The one that settles it is (b): It goes on to ask each person to send $20 to an account by Friday.
 - If you chose (a): True, and it is why the case can look like **“Nothing: it only tells you something”**. But a message that tells you something and then asks you to send money has asked, and the asking is what the question looks at.
 - If you chose (c): True, and it says who the email is from. It is not a request, so it does not separate the two answers you are choosing between.
 
@@ -1291,27 +1291,27 @@ Here the questions and the likeness agree, so the answer stands. The question co
 
 ### 39. A second whole case, where the opening points the wrong way
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-statement`]
 
-The leaving present was a clean case: one thing was being asked. In this second case the first thing you notice is not the thing that decides it. Read to the end before you answer.
+The going-away gift was a clean case: one thing was being asked. In this second case the first thing you notice is not the thing that decides it. Read to the end before you answer.
 
 *The statement that wanted money*
 
-> Chidi gets a text from Lumen Broadband: 'Your summer statement is ready to view. Your account is now 41 days overdue. To keep your line open, pay £79 at lumen-pay.com today.'
+> Chidi gets a text from Lumen Broadband: 'Your summer statement is ready to view. Your account is now 41 days overdue. To keep your line open, pay $79 at lumen-pay.com today.'
 
 **Question 1 of 1: What is it asking you to do right now?**
 
 What it is for: sorts a message, a call or an offer by the next thing it asks of you: something on your device, a way into an account, money, facts about you, or nothing at all.
 
-> Chidi gets a text from Lumen Broadband: 'Your summer statement is ready to view. Your account is now 41 days overdue. To keep your line open, ⟦pay £79 at lumen-pay.com today⟧.'
+> Chidi gets a text from Lumen Broadband: 'Your summer statement is ready to view. Your account is now 41 days overdue. To keep your line open, ⟦pay $79 at lumen-pay.com today⟧.'
 
 Answer: **“Pay or send money”**
 
 The text opens like a notice: the statement is ready to view. If it ended there, it would only be telling Chidi something.
 
-It does not end there. Read on: “pay £79 at lumen-pay.com today”. That is a request to pay a sum at an address today, with a reason to hurry. The message has stopped being news and has become a demand.
+It does not end there. Read on: “pay $79 at lumen-pay.com today”. That is a request to pay a sum at an address today, with a reason to hurry. The message has stopped being news and has become a demand.
 
 Nothing in it asks for a program, a file, a sign-in or facts about Chidi, so the earlier answers do not apply. The answer is the one for money.
 
@@ -1320,10 +1320,10 @@ In this unit the answer is the name. Ruled out: **“Install something, open a f
 **You are asked:** The text opens with a statement that is ready to view, so the case can look like a message that tells you something. Why is this **“Pay or send money”** and not **“Nothing: it only tells you something”**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
 - (a) It opens with news: the summer statement is ready to view.
-- (b) It ends by telling Chidi to pay £79 at an address today, to keep his line open.
+- (b) It ends by telling Chidi to pay $79 at an address today, to keep his line open.
 - (c) It comes from his broadband company, and the name of the company is correct.
 
-**Shown as soon as you choose.** The one that settles it is (b): It ends by telling Chidi to pay £79 at an address today, to keep his line open.
+**Shown as soon as you choose.** The one that settles it is (b): It ends by telling Chidi to pay $79 at an address today, to keep his line open.
 - If you chose (a): True, and it is why the case can look like **“Nothing: it only tells you something”**. If the text ended there, that would be the answer. It does not end there.
 - If you chose (c): True, and it says who the text claims to be from. It is not a request, so it does not separate the two answers you are choosing between.
 
@@ -1337,13 +1337,13 @@ This is the choice made with the gas bill. Both the notice and the demand were a
 
 Now the second look: does this case look like one you know? A company writing to say that something is ready may bring back the delivery update first, and that case was **“Nothing: it only tells you something”**. So here the likeness and the questions seem to disagree.
 
-When that happens, go back to the question and find the words in the case that answer it. They are “pay £79 at lumen-pay.com today”. The delivery update has nothing like them: it ended after the news. The manager in a meeting has: an amount, an address and a day to pay by. So the case this one really looks like is the manager’s, and the answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “pay $79 at lumen-pay.com today”. The delivery update has nothing like them: it ended after the news. The manager in a meeting has: an amount, an address and a day to pay by. So the case this one really looks like is the manager’s, and the answer stands.
 
 ### The drill
 
 The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Some of these messages are real, and some are copies made to take something. That is on purpose, and the question you are practising does not say which is which: it gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.
+Some of these messages are real, and some are copies made to take something. That is on purpose, and the question you are practicing does not say which is which: it gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.
 
 #### Stage 1 of 3. One question at a time.
 
@@ -1420,7 +1420,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 4 of 43**
 
-> Joss gets a text from the airline: 'Flight HB204 to Faro is delayed by 40 minutes. New departure time: 15.10. Gate details will show on the airport screens.'
+> Joss gets a text from the airline: 'Flight HB204 to Faro is delayed by 40 minutes. New departure time: 3:10 p.m. Gate details will show on the airport screens.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1432,7 +1432,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The text only tells Joss what has changed: “Flight HB204 to Faro is delayed by 40 minutes. New departure time: 15.10”. It asks him to do nothing and gives him no link, number or app.
+- If you are right: “Right: **Nothing: it only tells you something.**” The text only tells Joss what has changed: “Flight HB204 to Faro is delayed by 40 minutes. New departure time: 3:10 p.m.”. It asks him to do nothing and gives him no link, number or app.
   - Why not **“Tell them about yourself”**: It does not ask him to confirm his name, his booking or anything else about himself. It only gives him news.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1443,7 +1443,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 5 of 43**
 
-> The secretary of Hugo's cycling club emails the members: 'Tickets for the away trip are £18 each. Please pay the treasurer by bank transfer by the 12th.'
+> The secretary of Hugo's cycling club emails the members: 'Tickets for the club trip are $18 each. Please pay the treasurer by Zelle by the 12th.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1455,7 +1455,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay the treasurer by bank transfer by the 12th”. A transfer is one of the ways of paying.
+- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay the treasurer by Zelle by the 12th”. A transfer is one of the ways of paying.
   - Why not **“Nothing: it only tells you something”**: The price of the tickets is news, but the email goes on to ask every member to pay by a date, so it is not a message that only tells you something.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1466,7 +1466,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 6 of 43**
 
-> Mrs Khan is renewing her passport on the government website. The form asks for her date of birth and her place of birth.
+> Mrs. Khan is renewing her passport on the government website. The form asks for her date of birth and her place of birth.
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1478,7 +1478,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Tell them about yourself.**” The form asks Mrs Khan to tell the website facts about herself: “The form asks for her date of birth and her place of birth”. Nothing in this case asks her to pay, sign in or install anything.
+- If you are right: “Right: **Tell them about yourself.**” The form asks Mrs. Khan to tell the website facts about herself: “The form asks for her date of birth and her place of birth”. Nothing in this case asks her to pay, sign in or install anything.
   - Why not **“Pay or send money”**: Renewing a passport usually costs money, but this form asks only for facts about her. No payment is asked for here.
 - If you miss: “The answer is **Tell them about yourself.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1489,7 +1489,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 7 of 43**
 
-> Zuri's online shop emails her: 'We have refunded £24.99 to the card you paid with. It will show in your account in 3 to 5 days.'
+> Zuri's online store emails her: 'We have refunded $24.99 to the card you paid with. It will show in your account in 3 to 5 days.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1501,7 +1501,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The email only tells Zuri that a refund has been made: “We have refunded £24.99 to the card you paid with”. It asks her for nothing, and it gives her no link, number or app.
+- If you are right: “Right: **Nothing: it only tells you something.**” The email only tells Zuri that a refund has been made: “We have refunded $24.99 to the card you paid with”. It asks her for nothing, and it gives her no link, number or app.
   - Why not **“Pay or send money”**: The email is about money, but nobody is asked to pay or send any. The money is going to her.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1512,7 +1512,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 8 of 43**
 
-> Tunebox texts Evan: 'Your subscription has ended. Pay £9.99 at tunebox-renew.com to keep listening.'
+> Tunebox texts Evan: 'Your subscription has ended. Pay $9.99 at tunebox-renew.com to keep listening.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1524,7 +1524,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The text tells Evan to pay a sum at an address: “Pay £9.99 at tunebox-renew.com to keep listening”. The ending of his subscription is the reason it gives.
+- If you are right: “Right: **Pay or send money.**” The text tells Evan to pay a sum at an address: “Pay $9.99 at tunebox-renew.com to keep listening”. The ending of his subscription is the reason it gives.
   - Why not **“Nothing: it only tells you something”**: A subscription ending is news, and a notice of it could stand on its own. But the text goes on to tell him to pay, so it asks.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1663,7 +1663,7 @@ The question is shown with all five of its answers, in order.
 
 - The caller told her to press a button so that he could watch her computer.
 - The page asked him to type the number that had just come to his phone.
-- The email asked her to send £340 into an account by Friday.
+- The email asked her to send $340 into an account by Friday.
 - The form asked for his date of birth and his address.
 - The text said that the appointment had moved to Tuesday.
 
@@ -1671,7 +1671,7 @@ The question is shown with all five of its answers, in order.
 
 - The answer is: The caller told her to press a button so that he could watch her computer. That detail is a request to let someone watch the computer. It is about the device itself, and nothing in it is asked of an account, of money or of facts about her.
 - If you chose “The page asked him to type the number that had just come to his phone.”: that belongs to **“Sign in, give a code, or allow an app”**.
-- If you chose “The email asked her to send £340 into an account by Friday.”: that belongs to **“Pay or send money”**.
+- If you chose “The email asked her to send $340 into an account by Friday.”: that belongs to **“Pay or send money”**.
 - If you chose “The form asked for his date of birth and his address.”: that belongs to **“Tell them about yourself”**.
 - If you chose “The text said that the appointment had moved to Tuesday.”: that belongs to **“Nothing: it only tells you something”**.
 - Taught on: “Install something, open a file, or share your screen: what it is like” (one tap opens the card).
@@ -1682,17 +1682,17 @@ The question is shown with all five of its answers, in order.
 
 - "Download this program and I will fix it from here."
 - "Please type the six-digit number we have just texted you."
-- "Send £50 today and I will pay you back."
+- "Send $50 today and I will pay you back."
 - "Where do you live, and what do you do for work?"
-- "Your parcel will arrive tomorrow between 9 and 12."
+- "Your package will arrive tomorrow between 9 and 12."
 
 **Shown as soon as you answer**
 
 - The answer is: "Please type the six-digit number we have just texted you." It asks for a way into an account: a number to type in. Nothing is put on the device, and nobody is asked to pay or to tell anything about themselves.
 - If you chose "Download this program and I will fix it from here.": that belongs to **“Install something, open a file, or share your screen”**.
-- If you chose "Send £50 today and I will pay you back.": that belongs to **“Pay or send money”**.
+- If you chose "Send $50 today and I will pay you back.": that belongs to **“Pay or send money”**.
 - If you chose "Where do you live, and what do you do for work?": that belongs to **“Tell them about yourself”**.
-- If you chose "Your parcel will arrive tomorrow between 9 and 12.": that belongs to **“Nothing: it only tells you something”**.
+- If you chose "Your package will arrive tomorrow between 9 and 12.": that belongs to **“Nothing: it only tells you something”**.
 - Taught on: “Sign in, give a code, or allow an app: what it is like” (one tap opens the card).
 
 **Drill item 17 of 43**
@@ -1703,7 +1703,7 @@ The question is shown with all five of its answers, in order.
 - The site asked him to sign in with his password.
 - He was told to pay the fee at an address in the message.
 - The form asked for her passport number and her date of birth.
-- The notice said that the bill would be taken by direct debit on the 1st.
+- The notice said that the bill would be taken by automatic payment on the 1st.
 
 **Shown as soon as you answer**
 
@@ -1711,7 +1711,7 @@ The question is shown with all five of its answers, in order.
 - If you chose “The caller asked her to open the file that she had been sent.”: that belongs to **“Install something, open a file, or share your screen”**.
 - If you chose “The site asked him to sign in with his password.”: that belongs to **“Sign in, give a code, or allow an app”**.
 - If you chose “The form asked for her passport number and her date of birth.”: that belongs to **“Tell them about yourself”**.
-- If you chose “The notice said that the bill would be taken by direct debit on the 1st.”: that belongs to **“Nothing: it only tells you something”**.
+- If you chose “The notice said that the bill would be taken by automatic payment on the 1st.”: that belongs to **“Nothing: it only tells you something”**.
 - Taught on: “Pay or send money: what it is like” (one tap opens the card).
 
 **Drill item 18 of 43**
@@ -1720,7 +1720,7 @@ The question is shown with all five of its answers, in order.
 
 - "Install the update from this link."
 - "Press Allow so that the app can read your calendar."
-- "Pay the £2.50 handling fee at this link."
+- "Pay the $2.50 handling fee at this link."
 - "Please send a photo of your passport and tell me your date of birth."
 - "The office will be closed on Monday."
 
@@ -1729,7 +1729,7 @@ The question is shown with all five of its answers, in order.
 - The answer is: "Please send a photo of your passport and tell me your date of birth." It asks the reader to tell them about themselves: a photo of a passport and a date of birth. Nothing is paid, nothing is installed and no account is opened.
 - If you chose "Install the update from this link.": that belongs to **“Install something, open a file, or share your screen”**.
 - If you chose "Press Allow so that the app can read your calendar.": that belongs to **“Sign in, give a code, or allow an app”**.
-- If you chose "Pay the £2.50 handling fee at this link.": that belongs to **“Pay or send money”**.
+- If you chose "Pay the $2.50 handling fee at this link.": that belongs to **“Pay or send money”**.
 - If you chose "The office will be closed on Monday.": that belongs to **“Nothing: it only tells you something”**.
 - Taught on: “Tell them about yourself: what it is like” (one tap opens the card).
 
@@ -1739,7 +1739,7 @@ The question is shown with all five of its answers, in order.
 
 - It asked him to open a file to see the delivery.
 - It asked him to sign in to see the delivery.
-- It asked him to pay a £1.99 fee for the delivery.
+- It asked him to pay a $1.99 fee for the delivery.
 - It asked him to confirm his name and address for the delivery.
 - It said that the delivery would arrive between 1 and 4, and asked for nothing.
 
@@ -1748,7 +1748,7 @@ The question is shown with all five of its answers, in order.
 - The answer is: It said that the delivery would arrive between 1 and 4, and asked for nothing. The detail to look for is the absence of a request: it tells him when the delivery will come and asks him to do nothing. Each of the other four asks for something about the same delivery.
 - If you chose “It asked him to open a file to see the delivery.”: that belongs to **“Install something, open a file, or share your screen”**.
 - If you chose “It asked him to sign in to see the delivery.”: that belongs to **“Sign in, give a code, or allow an app”**.
-- If you chose “It asked him to pay a £1.99 fee for the delivery.”: that belongs to **“Pay or send money”**.
+- If you chose “It asked him to pay a $1.99 fee for the delivery.”: that belongs to **“Pay or send money”**.
 - If you chose “It asked him to confirm his name and address for the delivery.”: that belongs to **“Tell them about yourself”**.
 - Taught on: “Nothing: it only tells you something: what it is like” (one tap opens the card).
 
@@ -1806,7 +1806,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 22 of 43**
 
-> Northway Library texts Ingrid: 'The book you reserved is ready to collect from Monday. We will hold it for 7 days.'
+> Northway Library texts Ingrid: 'The book you reserved is ready for pickup starting Monday. We will hold it for 7 days.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1818,7 +1818,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The text only tells Ingrid that her book is ready and how long it will be held: “The book you reserved is ready to collect from Monday. We will hold it for 7 days”. It asks for nothing and gives her no link, number or app.
+- If you are right: “Right: **Nothing: it only tells you something.**” The text only tells Ingrid that her book is ready and how long it will be held: “The book you reserved is ready for pickup starting Monday. We will hold it for 7 days”. It asks for nothing and gives her no link, number or app.
   - Why not **“Sign in, give a code, or allow an app”**: It does not ask her to sign in to a library account or to give a code. If she does nothing, the book is simply held.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be a plain notice from a company you deal with, and both can come with a file or an update. In **“Nothing: it only tells you something”** the message only tells you something, and anything it suggests uses *a way you already had*. In **“Install something, open a file, or share your screen”** it asks you to install something, to open a file, or to let someone watch your device. Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?
@@ -1830,7 +1830,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 23 of 43**
 
-> Joy's daughter's school sends a message through its app: 'The museum trip is £14. Please pay through the school payment app by Friday.'
+> Joy's daughter's school sends a message through its app: 'The museum trip is $14. Please pay through the school payment app by Friday.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1873,7 +1873,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pay or send money**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: the “why not” line above. Then the lines from the card that compared the two: Both can be friendly, and neither asks for money, a password or a program. In **“Nothing: it only tells you something”** the message only tells you something. In **“Tell them about yourself”** it asks you about yourself: on a form, on a call or in a friendly chat. Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?
-- What would make it a different name: If the email had asked him to pay a £30 fee to prepare the contract, it would be **“Pay or send money”**.
+- What would make it a different name: If the email had asked him to pay a $30 fee to prepare the contract, it would be **“Pay or send money”**.
 - Taught on: “Facts about you” (one tap opens the card).
 
 **Drill item 25 of 43**
@@ -1950,7 +1950,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 28 of 43**
 
-> A caller tells Walter that he is from the tax office. 'You owe £1,800 and the police will come today,' he says. 'Pay it now with gift cards from a shop, and do not tell the staff why.'
+> A caller tells Walter that he is from the IRS. 'You owe $1,800 and the police will come today,' he says. 'Pay it now with gift cards from a store, and do not tell the staff why.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -1962,7 +1962,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The caller orders Walter to pay: “Pay it now with gift cards from a shop, and do not tell the staff why”. Gift cards are one of the ways of paying.
+- If you are right: “Right: **Pay or send money.**” The caller orders Walter to pay: “Pay it now with gift cards from a store, and do not tell the staff why”. Gift cards are one of the ways of paying.
   - Why not **“Tell them about yourself”**: The caller gives a reason and a threat, but he does not ask Walter to tell him anything about himself.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
@@ -1993,7 +1993,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pay or send money**: the “why not” line above. Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be friendly, and neither asks for money, a password or a program. In **“Nothing: it only tells you something”** the message only tells you something. In **“Tell them about yourself”** it asks you about yourself: on a form, on a call or in a friendly chat. Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?
-- What would make it a different name: If it had asked for a £2.99 postage fee to claim the gift, it would be **“Pay or send money”**.
+- What would make it a different name: If it had asked for a $2.99 postage fee to claim the gift, it would be **“Pay or send money”**.
 - Taught on: “Facts about you” (one tap opens the card).
 
 **Drill item 30 of 43**
@@ -2017,12 +2017,12 @@ The question is shown with all five of its answers, in order.
   - If you chose **Pay or send money**: the “why not” line above. Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
   - If you chose **Tell them about yourself**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing: it only tells you something**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be a plain notice from a company you deal with, and both can come with a file or an update. In **“Nothing: it only tells you something”** the message only tells you something, and anything it suggests uses *a way you already had*. In **“Install something, open a file, or share your screen”** it asks you to install something, to open a file, or to let someone watch your device. Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?
-- What would make it a different name: If the stranger had said that he paid £450 for a £350 bike and asked Kit to send back £100, it would be **“Pay or send money”**.
+- What would make it a different name: If the stranger had said that he paid $450 for a $350 bike and asked Kit to send back $100, it would be **“Pay or send money”**.
 - Taught on: “A way onto your phone or computer” (one tap opens the card).
 
 **Drill item 31 of 43**
 
-> A buyer for Fern's sofa messages her: 'I paid £450 by mistake. The price was £350. Please send the £100 back to me today.'
+> A buyer for Fern's sofa messages her: 'I paid $450 by mistake. The price was $350. Please send the $100 back to me today.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2034,14 +2034,14 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The buyer asks Fern to send money: “Please send the £100 back to me today”. That a payment has been made is news, and the request that follows it is what the question looks at.
+- If you are right: “Right: **Pay or send money.**” The buyer asks Fern to send money: “Please send the $100 back to me today”. That a payment has been made is news, and the request that follows it is what the question looks at.
   - Why not **“Nothing: it only tells you something”**: It starts with news, that a payment has arrived, but it goes on to ask Fern to send money, so it is more than a notice.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the story is about a payment: a fine, a bill, an amount that has to be paid. In **“Sign in, give a code, or allow an app”** the request is to sign in, give a code or press Allow. In **“Pay or send money”** the request is to hand over money. Am I asked to sign in, give a code or press Allow first, whatever the payment is for? Or is paying the only thing asked?
   - If you chose **Tell them about yourself**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: the “why not” line above. Then the lines from the card that compared the two: Both can be about the same bill, from the same company, with the same amount in them. In **“Nothing: it only tells you something”** the message tells you about money and asks you to do nothing about it: it will be taken as usual, or it has been paid to you. In **“Pay or send money”** the message asks you to hand over money, and the way to do it comes with the message. Is anyone asking me to hand over money? Or is the money only mentioned as something that will happen or has happened?
-- What would make it a different name: If he had only said that he had paid the £350 and would collect the sofa on Saturday, it would ask for nothing, and it would be **“Nothing: it only tells you something”**.
+- What would make it a different name: If he had only said that he had paid the $350 and would collect the sofa on Saturday, it would ask for nothing, and it would be **“Nothing: it only tells you something”**.
 - Taught on: “Money out of your account” (one tap opens the card).
 
 **Drill item 32 of 43**
@@ -2070,7 +2070,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 33 of 43**
 
-> The payroll team emails Lars: 'Your payslip for October is in the staff portal.'
+> The payroll team emails Lars: 'Your pay stub for October is in the staff portal.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2082,14 +2082,14 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The email tells Lars that his payslip is ready and where it is: “Your payslip for October is in the staff portal”. The staff portal is somewhere he already goes, so nothing new is offered, and nothing is asked.
-  - Why not **“Sign in, give a code, or allow an app”**: Reading the payslip would mean signing in to the portal, but the email does not ask him to. It only says where the payslip is.
+- If you are right: “Right: **Nothing: it only tells you something.**” The email tells Lars that his pay stub is ready and where it is: “Your pay stub for October is in the staff portal”. The staff portal is somewhere he already goes, so nothing new is offered, and nothing is asked.
+  - Why not **“Sign in, give a code, or allow an app”**: Reading the pay stub would mean signing in to the portal, but the email does not ask him to. It only says where the pay stub is.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be a plain notice from a company you deal with, and both can come with a file or an update. In **“Nothing: it only tells you something”** the message only tells you something, and anything it suggests uses *a way you already had*. In **“Install something, open a file, or share your screen”** it asks you to install something, to open a file, or to let someone watch your device. Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?
   - If you chose **Sign in, give a code, or allow an app**: the “why not” line above. Then the lines from the card that compared the two: Both can arrive as the same message from the same company about the same event, and both can say that something has happened to your account. In **“Nothing: it only tells you something”** the message only tells you what has happened, and anything it suggests uses *a way you already had*, such as the app that is already on your phone. In **“Sign in, give a code, or allow an app”** the message asks you to sign in, give a code or press Allow, and the way to do it comes with the message: a link, a button or a caller. Does anything in it ask you to sign in, give a code or press Allow, with a link, a button or a caller to do it through? Or does it only tell you what has happened, and leave you to use your own app or number?
   - If you chose **Pay or send money**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about the same bill, from the same company, with the same amount in them. In **“Nothing: it only tells you something”** the message tells you about money and asks you to do nothing about it: it will be taken as usual, or it has been paid to you. In **“Pay or send money”** the message asks you to hand over money, and the way to do it comes with the message. Is anyone asking me to hand over money? Or is the money only mentioned as something that will happen or has happened?
   - If you chose **Tell them about yourself**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be friendly, and neither asks for money, a password or a program. In **“Nothing: it only tells you something”** the message only tells you something. In **“Tell them about yourself”** it asks you about yourself: on a form, on a call or in a friendly chat. Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?
-- What would make it a different name: If it had said "sign in at this link to see your payslip", it would ask for a sign-in, and it would be **“Sign in, give a code, or allow an app”**.
+- What would make it a different name: If it had said "sign in at this link to see your pay stub", it would ask for a sign-in, and it would be **“Sign in, give a code, or allow an app”**.
 - Taught on: “News that asks nothing of you” (one tap opens the card).
 
 **Drill item 34 of 43**
@@ -2118,7 +2118,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 35 of 43**
 
-> Northway Council emails Mr Boateng: 'Your bin collection day is changing. Open the attached file to see your new day.'
+> Northway County emails Mr. Boateng: 'Your trash pickup day is changing. Open the attached file to see your new day.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2130,8 +2130,8 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Install something, open a file, or share your screen.**” The email starts like a notice, but it asks Mr Boateng to open a file: “Open the attached file to see your new day”. A request to open a file is a request about his device.
-  - Why not **“Nothing: it only tells you something”**: A change of bin day is news, and without its last sentence the email would only tell him something. But it goes on to ask him to open a file.
+- If you are right: “Right: **Install something, open a file, or share your screen.**” The email starts like a notice, but it asks Mr. Boateng to open a file: “Open the attached file to see your new day”. A request to open a file is a request about his device.
+  - Why not **“Nothing: it only tells you something”**: A change of trash day is news, and without its last sentence the email would only tell him something. But it goes on to ask him to open a file.
 - If you miss: “The answer is **Install something, open a file, or share your screen.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, a box with an app’s name on it asks you to allow something, and the buttons look alike. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer itself: to install it, to open it, or to let someone watch it. In **“Sign in, give a code, or allow an app”** the request is to open one of your accounts: with a password, a code, or an Allow so that an app can use the account. Would pressing it put something onto my phone or computer, open something on it, or let someone watch it? Or would it open one of my accounts to a page, an app or a caller?
   - If you chose **Pay or send money**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
@@ -2168,7 +2168,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 37 of 43**
 
-> Halbrook Bank texts Folake: 'We have blocked a payment of £420 to an unknown account. If this was you, no action is needed. If it was not, ring the number on the back of your card.'
+> Halbrook Bank texts Folake: 'We have blocked a payment of $420 to an unknown account. If this was you, no action is needed. If it was not, call the number on the back of your card.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2180,7 +2180,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The text tells Folake what the bank has done, and the only thing it suggests is to ring the number already on her card: “If this was you, no action is needed. If it was not, ring the number on the back of your card”. That is *a way you already had*, so nothing new is offered, and nothing is asked.
+- If you are right: “Right: **Nothing: it only tells you something.**” The text tells Folake what the bank has done, and the only thing it suggests is to call the number already on her card: “If this was you, no action is needed. If it was not, call the number on the back of your card”. That is *a way you already had*, so nothing new is offered, and nothing is asked.
   - Why not **“Sign in, give a code, or allow an app”**: It sounds as alarming as a message that says an account is locked, but it does not ask her to sign in, to give a code or to press anything.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be a plain notice from a company you deal with, and both can come with a file or an update. In **“Nothing: it only tells you something”** the message only tells you something, and anything it suggests uses *a way you already had*. In **“Install something, open a file, or share your screen”** it asks you to install something, to open a file, or to let someone watch your device. Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?
@@ -2193,7 +2193,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 38 of 43**
 
-> Since April, Dan has chatted every day to Elise, a woman he met on a language app. Today she writes: 'My uncle's trading app has doubled my money twice. Put in £500 and I will show you how.'
+> Since April, Dan has chatted every day to Elise, a woman he met on a language app. Today she writes: 'My uncle's trading app has doubled my money twice. Put in $500 and I will show you how.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2205,7 +2205,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” Today Elise asks Dan to put money in: “Put in £500 and I will show you how”. It is a request to send £500, and the months of friendly chat before it are the story.
+- If you are right: “Right: **Pay or send money.**” Today Elise asks Dan to put money in: “Put in $500 and I will show you how”. It is a request to send $500, and the months of friendly chat before it are the story.
   - Why not **“Tell them about yourself”**: For months she has asked him about his life, which is the kind that asks for facts about you. Today she asks for money, and the answer is for what is asked right now.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
@@ -2218,7 +2218,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 39 of 43**
 
-> A message reaches Arun from a number he does not know: 'Hello Arun, I am Mei, we met at the conference. Lovely to meet you! Where do you live now? Still in Leeds? And are you still at the same firm?'
+> A message reaches Arun from a number he does not know: 'Hello Arun, I am Mei, we met at the conference. Great to meet you! Where do you live now? Still in Tulsa? And are you still at the same firm?'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2230,7 +2230,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Tell them about yourself.**” Most of the message is friendly and asks for nothing, but it ends with questions about Arun: “Where do you live now? Still in Leeds? And are you still at the same firm?”. They ask him to tell the sender where he lives and where he works.
+- If you are right: “Right: **Tell them about yourself.**” Most of the message is friendly and asks for nothing, but it ends with questions about Arun: “Where do you live now? Still in Tulsa? And are you still at the same firm?”. They ask him to tell the sender where he lives and where he works.
   - Why not **“Nothing: it only tells you something”**: Most of the message is friendly and could pass for news, but a message that asks questions about you is asking.
 - If you miss: “The answer is **Tell them about yourself.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -2238,7 +2238,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **Pay or send money**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: the “why not” line above. Then the lines from the card that compared the two: Both can be friendly, and neither asks for money, a password or a program. In **“Nothing: it only tells you something”** the message only tells you something. In **“Tell them about yourself”** it asks you about yourself: on a form, on a call or in a friendly chat. Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?
 - This case may have brought back *The delivery update*, which was **“Nothing: it only tells you something”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If it had only said that it was lovely to meet him, with no questions, it would ask for nothing, and it would be **“Nothing: it only tells you something”**.
+- What would make it a different name: If it had only said that it was great to meet him, with no questions, it would ask for nothing, and it would be **“Nothing: it only tells you something”**.
 - Taught on: “Facts about you” (one tap opens the card).
 
 #### Last stage. Each of these is something a person might say that uses one of this unit’s names, or reasons in one of its ways. Each has a fault. The first is worked for you. For the rest, answer before the fault is shown.
@@ -2282,7 +2282,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 41 of 43**
 
-> "He was so polite and so patient with me, even when I asked questions. A scammer would have been rude. So I took out £3,000 in cash for his courier."
+> "He was so polite and so patient with me, even when I asked questions. A scammer would have been rude. So I took out $3,000 in cash for his courier."
 
 **You are asked:** What is it asking you to do right now? (asked of what the claim describes)
 
@@ -2296,8 +2296,8 @@ The question is shown with all five of its answers, in order.
 
 - The answer is: **Pay or send money.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
-- The fault: The claim treats good manners as proof that the man was who he said he was. Calm and kindness are tools: they keep a person on the line. His manner says nothing about what he asked, and what he asked was for £3,000 in cash.
-- The claim, put right (always the last thing shown): He was polite, and that tells me nothing. He asked me to take out £3,000 in cash and hand it over. That is **“Pay or send money”**. I would put the phone down and use *the check*: ring the police on a number I already had.
+- The fault: The claim treats good manners as proof that the man was who he said he was. Calm and kindness are tools: they keep a person on the line. His manner says nothing about what he asked, and what he asked was for $3,000 in cash.
+- The claim, put right (always the last thing shown): He was polite, and that tells me nothing. He asked me to take out $3,000 in cash and hand it over. That is **“Pay or send money”**. I would put the phone down and use *the check*: call the police at a number I already had.
 
 **Drill item 42 of 43**
 
@@ -2341,7 +2341,7 @@ The question is shown with all five of its answers, in order.
 
 ### 40. What to carry away
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 42*
 
 [reviewers only: card kind `recap`, id `recap-gate`]
 
@@ -2358,7 +2358,7 @@ What is it asking you to do right now?
 
 **For each name: what you must be able to point to, and the question to ask when you spot it**
 
-- **“Install something, open a file, or share your screen”**: a request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to ring someone who will fix your device.
+- **“Install something, open a file, or share your screen”**: a request to install a program or an app, to open or run a file, or to let someone see or control your screen, or a warning that tells you to call someone who will fix your device.
   - Ask: "Is anything being put on my phone or computer, opened on it, or shown from it?" If it is, the answer is the one for a request about your device.
 - **“Sign in, give a code, or allow an app”**: a request to type your password into a sign-in page, to type, read out or send on a one-time code, or to press Allow on a permission screen.
   - Ask: "What would I be typing or pressing here, and would it open one of my accounts?" If it would, the answer is the one for a way into an account.
@@ -2381,7 +2381,7 @@ What is it asking you to do right now?
 
 ### 41. Where would you meet this?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer-gate`]
 
@@ -2393,7 +2393,7 @@ Pick one of the five and name an occasion of your own: something you received, s
 
 - **“Install something, open a file, or share your screen”**: The last time a phone or a computer, a caller or a message asked you to install something, update something or open a file.
 - **“Sign in, give a code, or allow an app”**: The last time a website sent you a code, asked you to sign in, or an app asked to connect to one of your accounts.
-- **“Pay or send money”**: A request for money that reached you in the last month: a bill, a collection, a fee, a favour for a friend.
+- **“Pay or send money”**: A request for money that reached you in the last month: a bill, a collection, a fee, a favor for a friend.
 - **“Tell them about yourself”**: A form, a call or a chat in which you were asked about yourself.
 - **“Nothing: it only tells you something”**: A message that told you something and asked for nothing: a delivery, an appointment, a notice from your bank.
 
@@ -2405,7 +2405,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 42. A plan, if you want one
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 42*
 
 [reviewers only: card kind `plan`, id `plan-gate`]
 
@@ -2415,10 +2415,10 @@ A plan is one line: if I see this, then I will do that. It is worth writing down
 
 The lines below are examples to start from. You can use one, change it, or write your own two lines. Nothing is saved until you press the button.
 
-- a request to put something on my phone or computer, to open a file, or to let someone watch my device, stop, and not do it until I have called the company on a number I already had
+- a request to put something on my phone or computer, to open a file, or to let someone watch my device, stop, and not do it until I have called the company at a number I already had
 - a message that came to me asking me to sign in, give a code or press Allow, not use anything it gives me, and open the site or the app myself, from an address I already had
-- a message asking me to pay or send money, not pay on the spot, and call the person or the company first, on a number I already had
-- a message, or a stranger, asking me about myself, not answer until I know who is asking, and call them on a number I already had to find out
+- a message asking me to pay or send money, not pay on the spot, and call the person or the company first, at a number I already had
+- a message, or a stranger, asking me about myself, not answer until I know who is asking, and call them at a number I already had to find out
 - a message that only tells me something, read it and leave it alone, and use my own app or my own number if I want to follow it up
 
 Or write your own: If …, then I will …
@@ -2433,7 +2433,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 20**
 
-> A pop-up fills Iris's computer with a siren sound: 'Your computer has a serious fault. Call our repair line on 0800 555 0142 now.'
+> A pop-up fills Iris's computer with a siren sound: 'Your computer has a serious fault. Call our repair line at (800) 555-0142 now.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2445,7 +2445,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Install something, open a file, or share your screen.**” A warning that says a device has a fault, and gives someone to ring to fix it, is a request about the device: “Call our repair line on 0800 555 0142 now”. The person who answers will want to put something on it or to watch it.
+- If you are right: “Right: **Install something, open a file, or share your screen.**” A warning that says a device has a fault, and gives someone to call to fix it, is a request about the device: “Call our repair line at (800) 555-0142 now”. The person who answers will want to put something on it or to watch it.
   - Why not **“Sign in, give a code, or allow an app”**: Nothing is asked of any account. The pop-up sends her to someone who will deal with her computer.
 - If you miss: “The answer is **Install something, open a file, or share your screen.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Sign in, give a code, or allow an app**: the “why not” line above. Then the lines from the card that compared the two: In both, a box with an app’s name on it asks you to allow something, and the buttons look alike. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer itself: to install it, to open it, or to let someone watch it. In **“Sign in, give a code, or allow an app”** the request is to open one of your accounts: with a password, a code, or an Allow so that an app can use the account. Would pressing it put something onto my phone or computer, open something on it, or let someone watch it? Or would it open one of my accounts to a page, an app or a caller?
@@ -2553,7 +2553,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 6 of 20**
 
-> A text reads: 'Northway Council: your council tax rebate is ready. Log in with your username and password at northway-rebate.com to claim it.'
+> A text reads: 'Northway County: your property tax rebate is ready. Log in with your username and password at northway-rebate.com to claim it.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2596,7 +2596,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Pay or send money**: the “why not” line above. Then the lines from the card that compared the two: In both, the story is about a payment: a fine, a bill, an amount that has to be paid. In **“Sign in, give a code, or allow an app”** the request is to sign in, give a code or press Allow. In **“Pay or send money”** the request is to hand over money. Am I asked to sign in, give a code or press Allow first, whatever the payment is for? Or is paying the only thing asked?
   - If you chose **Tell them about yourself**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Nothing: it only tells you something**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can arrive as the same message from the same company about the same event, and both can say that something has happened to your account. In **“Nothing: it only tells you something”** the message only tells you what has happened, and anything it suggests uses *a way you already had*, such as the app that is already on your phone. In **“Sign in, give a code, or allow an app”** the message asks you to sign in, give a code or press Allow, and the way to do it comes with the message: a link, a button or a caller. Does anything in it ask you to sign in, give a code or press Allow, with a link, a button or a caller to do it through? Or does it only tell you what has happened, and leave you to use your own app or number?
-- What would make it a different name: If the message had asked Cal to lend her £50, it would be **“Pay or send money”**.
+- What would make it a different name: If the message had asked Cal to lend her $50, it would be **“Pay or send money”**.
 - Taught on: “A way into one of your accounts” (one tap opens the card).
 
 **Return case 8 of 20**
@@ -2625,7 +2625,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 20**
 
-> The treasurer of Ines's choir emails the members: 'Subscriptions for the spring term are £30. Please pay by bank transfer to the choir account by 15 January.'
+> The treasurer of Ines's choir emails the members: 'Dues for the spring season are $30. Please pay by Zelle to the choir account by January 15.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2637,7 +2637,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay by bank transfer to the choir account by 15 January”. A bank transfer is one of the ways of paying.
+- If you are right: “Right: **Pay or send money.**” The email asks each member to pay: “Please pay by Zelle to the choir account by January 15”. A wire transfer is one of the ways of paying.
   - Why not **“Nothing: it only tells you something”**: The size of the subscription is news, but the email goes on to ask each member to pay by a date, so it is more than a notice.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
@@ -2649,7 +2649,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 10 of 20**
 
-> A supplier's email says: 'Our bank details have changed. Please pay this month's invoice of £2,340 into the new account below.'
+> A supplier's email says: 'Our bank account details have changed. Please pay this month's invoice of $2,340 into the new account below.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2661,8 +2661,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The email asks the reader to pay an invoice into an account: “Please pay this month's invoice of £2,340 into the new account below”. The change of bank details is the reason it gives.
-  - Why not **“Nothing: it only tells you something”**: The first sentence is news, that the bank details have changed, but the email goes on to ask for a payment into the new account.
+- If you are right: “Right: **Pay or send money.**” The email asks the reader to pay an invoice into an account: “Please pay this month's invoice of $2,340 into the new account below”. The change of bank account details is the reason it gives.
+  - Why not **“Nothing: it only tells you something”**: The first sentence is news, that the bank account details have changed, but the email goes on to ask for a payment into the new account.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the story is about a payment: a fine, a bill, an amount that has to be paid. In **“Sign in, give a code, or allow an app”** the request is to sign in, give a code or press Allow. In **“Pay or send money”** the request is to hand over money. Am I asked to sign in, give a code or press Allow first, whatever the payment is for? Or is paying the only thing asked?
@@ -2673,7 +2673,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 20**
 
-> The vet's receptionist tells Gary on the phone: 'The operation came to £420. Please pay by card at the desk when you collect her.'
+> The vet's receptionist tells Gary on the phone: 'The operation came to $420. Please pay by card at the desk when you collect her.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2685,7 +2685,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Pay or send money.**” The receptionist tells Gary how to pay the £420: “Please pay by card at the desk when you collect her”. A card payment is one of the ways of paying.
+- If you are right: “Right: **Pay or send money.**” The receptionist tells Gary how to pay the $420: “Please pay by card at the desk when you collect her”. A card payment is one of the ways of paying.
   - Why not **“Nothing: it only tells you something”**: Most of the call is a report of what happened, but it ends by telling him to pay, so it is more than news.
 - If you miss: “The answer is **Pay or send money.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, money is part of the story: a refund, a payment, an amount to send. In **“Install something, open a file, or share your screen”** the request is to put something on the phone or computer, to open it there, or to let someone watch it. In **“Pay or send money”** the request is to hand over money. Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?
@@ -2697,7 +2697,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 12 of 20**
 
-> A woman Zane has chatted to online for eight months writes: 'My daughter is in hospital abroad and the bill is £800. Please send it to this account today. I will repay you.'
+> A woman Zane has chatted to online for eight months writes: 'My daughter is in the hospital abroad and the bill is $800. Please send it to this account today. I will repay you.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2716,12 +2716,12 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: In both, the story is about a payment: a fine, a bill, an amount that has to be paid. In **“Sign in, give a code, or allow an app”** the request is to sign in, give a code or press Allow. In **“Pay or send money”** the request is to hand over money. Am I asked to sign in, give a code or press Allow first, whatever the payment is for? Or is paying the only thing asked?
   - If you chose **Tell them about yourself**: the “why not” line above. Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about the same bill, from the same company, with the same amount in them. In **“Nothing: it only tells you something”** the message tells you about money and asks you to do nothing about it: it will be taken as usual, or it has been paid to you. In **“Pay or send money”** the message asks you to hand over money, and the way to do it comes with the message. Is anyone asking me to hand over money? Or is the money only mentioned as something that will happen or has happened?
-- What would make it a different name: If she had only asked what he did at the weekends, it would be **“Tell them about yourself”**.
+- What would make it a different name: If she had only asked what he did on the weekends, it would be **“Tell them about yourself”**.
 - Taught on: “Money out of your account” (one tap opens the card).
 
 **Return case 13 of 20**
 
-> Maeve books a blood test on the clinic's own website. The booking form asks her for her date of birth and her NHS number.
+> Maeve books a blood test on the clinic's own website. The booking form asks her for her date of birth and her health insurance member ID.
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2733,7 +2733,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Tell them about yourself.**” The form asks Maeve to tell the clinic facts about herself: “asks her for her date of birth and her NHS number”. Nobody asks her to pay, sign in or install anything.
+- If you are right: “Right: **Tell them about yourself.**” The form asks Maeve to tell the clinic facts about herself: “asks her for her date of birth and her health insurance member ID”. Nobody asks her to pay, sign in or install anything.
   - Why not **“Nothing: it only tells you something”**: The form is about something that will happen, a blood test, but it asks her for facts about herself, so it is more than news.
 - If you miss: “The answer is **Tell them about yourself.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -2764,7 +2764,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pay or send money**: the “why not” line above. Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be friendly, and neither asks for money, a password or a program. In **“Nothing: it only tells you something”** the message only tells you something. In **“Tell them about yourself”** it asks you about yourself: on a form, on a call or in a friendly chat. Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?
-- What would make it a different name: If the email had asked the reader to pay a £25 payroll set-up fee, it would be **“Pay or send money”**.
+- What would make it a different name: If the email had asked the reader to pay a $25 payroll set-up fee, it would be **“Pay or send money”**.
 - Taught on: “Facts about you” (one tap opens the card).
 
 **Return case 15 of 20**
@@ -2793,7 +2793,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 16 of 20**
 
-> Mr Singh applies for a bus pass on Northway Council's own website. The online form asks him for his name, address and date of birth.
+> Mr. Singh applies for a transit pass on Northway County's own website. The online form asks him for his name, address and date of birth.
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2805,14 +2805,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Tell them about yourself.**” The form asks Mr Singh to tell the council facts about himself: “asks him for his name, address and date of birth”. Nobody asks him to pay or sign in.
-  - Why not **“Pay or send money”**: A bus pass may cost money, but this form asks only for facts about him. No payment is asked for here.
+- If you are right: “Right: **Tell them about yourself.**” The form asks Mr. Singh to tell the county facts about himself: “asks him for his name, address and date of birth”. Nobody asks him to pay or sign in.
+  - Why not **“Pay or send money”**: A transit pass may cost money, but this form asks only for facts about him. No payment is asked for here.
 - If you miss: “The answer is **Tell them about yourself.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Pay or send money**: the “why not” line above. Then the lines from the card that compared the two: Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page. In **“Pay or send money”** you are asked to pay: an amount is named, and you are told to send it. In **“Tell them about yourself”** you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay. Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?
   - If you chose **Nothing: it only tells you something**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be friendly, and neither asks for money, a password or a program. In **“Nothing: it only tells you something”** the message only tells you something. In **“Tell them about yourself”** it asks you about yourself: on a form, on a call or in a friendly chat. Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?
-- What would make it a different name: If the form had asked him to pay £12 for the pass, it would be **“Pay or send money”**.
+- What would make it a different name: If the form had asked him to pay $12 for the pass, it would be **“Pay or send money”**.
 - Taught on: “Facts about you” (one tap opens the card).
 
 **Return case 17 of 20**
@@ -2841,7 +2841,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 18 of 20**
 
-> The leisure centre emails its members: 'The pool is closed on Monday for cleaning. It reopens at 7am on Tuesday.'
+> The recreation center emails its members: 'The pool is closed on Monday for cleaning. It reopens at 7am on Tuesday.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2854,7 +2854,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 **Shown as soon as you answer**
 
 - If you are right: “Right: **Nothing: it only tells you something.**” The email only tells the members when the pool is shut and when it opens again: “The pool is closed on Monday for cleaning. It reopens at 7am on Tuesday”. It asks for nothing and gives them no link, number or app.
-  - Why not **“Tell them about yourself”**: It does not ask any member to confirm a booking or to tell the centre anything about themselves. It only gives news.
+  - Why not **“Tell them about yourself”**: It does not ask any member to confirm a booking or to tell the center anything about themselves. It only gives news.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be a plain notice from a company you deal with, and both can come with a file or an update. In **“Nothing: it only tells you something”** the message only tells you something, and anything it suggests uses *a way you already had*. In **“Install something, open a file, or share your screen”** it asks you to install something, to open a file, or to let someone watch your device. Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?
   - If you chose **Sign in, give a code, or allow an app**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can arrive as the same message from the same company about the same event, and both can say that something has happened to your account. In **“Nothing: it only tells you something”** the message only tells you what has happened, and anything it suggests uses *a way you already had*, such as the app that is already on your phone. In **“Sign in, give a code, or allow an app”** the message asks you to sign in, give a code or press Allow, and the way to do it comes with the message: a link, a button or a caller. Does anything in it ask you to sign in, give a code or press Allow, with a link, a button or a caller to do it through? Or does it only tell you what has happened, and leave you to use your own app or number?
@@ -2865,7 +2865,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 19 of 20**
 
-> A pension provider texts Rachel: 'Your annual statement is available in your online account.'
+> A retirement plan provider texts Rachel: 'Your annual statement is available in your online account.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2889,7 +2889,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 20 of 20**
 
-> Dr Okoye's surgery texts Ife: 'Your test results are back. Dr Okoye will go through them with you at your appointment on Thursday at 9.'
+> Dr. Okoye's office texts Ife: 'Your test results are back. Dr. Okoye will go through them with you at your appointment on Thursday at 9.'
 
 **You are asked:** What is it asking you to do right now?
 
@@ -2901,7 +2901,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing: it only tells you something.**” The text tells Ife that her results are back and when they will be discussed: “Your test results are back. Dr Okoye will go through them with you at your appointment on Thursday at 9”. It asks her for nothing and gives her no link, number or app.
+- If you are right: “Right: **Nothing: it only tells you something.**” The text tells Ife that her results are back and when they will be discussed: “Your test results are back. Dr. Okoye will go through them with you at your appointment on Thursday at 9”. It asks her for nothing and gives her no link, number or app.
   - Why not **“Tell them about yourself”**: It does not ask her to confirm her date of birth or anything else about herself before the appointment. It only gives news.
 - If you miss: “The answer is **Nothing: it only tells you something.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Install something, open a file, or share your screen**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be a plain notice from a company you deal with, and both can come with a file or an update. In **“Nothing: it only tells you something”** the message only tells you something, and anything it suggests uses *a way you already had*. In **“Install something, open a file, or share your screen”** it asks you to install something, to open a file, or to let someone watch your device. Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?

@@ -1,6 +1,6 @@
 # Learner view: Basic Math, Unit Three: A missing number, from a formula, a rate or totals
 
-*Four kinds of problem with a number missing, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four kinds of problem with a number missing, and a procedure worked out step by step for each.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four kinds of problem with a number missing, and a procedure for each
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
 
 [reviewers only: card kind `orient`, id `orient-unknown`]
 
@@ -27,7 +27,7 @@ Picture a morning of small jobs, each with a number missing. A fencing firm tell
 
 Unit One’s first question gave the same answer to all four: **“A missing number, from a formula, a rate or totals”**. But they are four different ways of being given something that the missing number must fit, and each has its own procedure. A procedure for the wrong one still gives a number, and nothing in the number says that it is wrong. So the order is the same as in the last unit: first look at what the problem hands you for the missing number to match, and only then solve it.
 
-The words from the last unit hold here. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, named by what it is for. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why.
+The words from the last unit hold here. A procedure is the fixed set of steps that solves one kind of problem, and it gives the right answer whatever the numbers are. The working is the procedure carried out on one problem, with every number written down. A step is one stage of the working, named by what it is for. The arithmetic can be done on a calculator: what this unit practices is which steps to take, and why.
 
 The four kinds are taught in the order of what they give: a calculation and the result it came to, a rate, two facts, and a calculation that has the missing number in it twice. Each is taught as in the last unit: first a problem of the kind and the idea behind its procedure, then two worked problems in different parts of life with every step computed, and then problems that you finish yourself. Two of the kinds can pass for another, and a card for each shows how. When all four have been taught, the question gets its own card, and then the drill mixes all four, with problems from the earlier units among them.
 
@@ -66,11 +66,11 @@ The unit has five parts, and you can stop after any of them.
 4. A missing number multiplied by itself
 5. The question that tells them apart, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A formula worked backwards
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
 
 [reviewers only: card kind `meet`, id `meet-rearr`]
 
@@ -105,7 +105,7 @@ You may also hear this called “changing the subject of a formula” or “solv
 
 ### 3. Rearranging a formula: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
 
 [reviewers only: card kind `again`, id `again-rearr`]
 
@@ -117,15 +117,15 @@ The second case.
 
 *The scarf*
 
-> A knitter works out the wool for a scarf this way: multiply its length in metres by 3, then add 1 ball for the fringe. A scarf took 7 balls of wool. How long is it?
+> A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe. A scarf took 7 balls of wool. How long is it?
 **You are asked:** In *The field fence*, these words show it: “add the field’s length and width, then double the total” and “needs 38 m of fence”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “A knitter works out the wool for a scarf this way: multiply its length in metres by 3, then add 1 ball for the fringe.”
+1. “A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe.”
 2. “A scarf took 7 balls of wool.”
 3. “How long is it?”
 
-**Shown as soon as you tap.** The words are “A knitter works out the wool for a scarf this way: multiply its length in metres by 3, then add 1 ball for the fringe.”.
+**Shown as soon as you tap.** The words are “A knitter works out the wool for a scarf this way: multiply its length in meters by 3, then add 1 ball for the fringe.”.
 - If you tapped “A scarf took 7 balls of wool.”: That gives a number to work with, and it matters, but it is not the part you are asked to tap.
 - If you tapped “How long is it?”: That is the question. The words you are asked to tap are in another sentence.
 
@@ -138,7 +138,7 @@ That is all you point to, and it is why one name covers a fencing firm and a kni
 
 ### 4. Story and structure, now that there is something to solve
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
 
 [reviewers only: card kind `lens`, id `lens-procedure`]
 
@@ -156,7 +156,7 @@ Two things change on purpose from card to card: the words of the question (“ho
 
 ### 5. Rearranging a formula: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-rearr`]
 
@@ -177,7 +177,7 @@ Two missing numbers are not this kind. When a problem leaves out two numbers and
 
 **Where you will hear it**
 
-"I paid €54 after the discount. What was the price before?" "The recipe says multiply by 3 and add 1. I got 7. What did I start with?" "The average has to be 13, so what must my last score be?" "They charged me €38 in all, including the standing charge. How many units was that?"
+"I paid $54 after the discount. What was the price before?" "The recipe says multiply by 3 and add 1. I got 7. What did I start with?" "The average has to be 13, so what must my last score be?" "They charged me $38 in all, including the standing charge. How many units was that?"
 
 In your own life you meet this when you know a final price and want the price before a discount or tax, when you know the average you need and want the score still to come, and whenever someone tells you what a calculation came to and you want to know what went into it.
 
@@ -187,7 +187,7 @@ In your own life you meet this when you know a final price and want the price be
 
 ### 6. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
 
 [reviewers only: card kind `check`, id `check-rearr`]
 
@@ -210,7 +210,7 @@ The pieces you can tap:
 
 ### 7. Worked: the list price of a jacket
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
 
 [reviewers only: card kind `solved`, id `solved-rearr-1`]
 
@@ -218,13 +218,13 @@ Here is the procedure for the first kind with real numbers: a jacket, a discount
 
 **The problem**
 
-> A shop takes €8 off the list price of a jacket and then multiplies what is left by 1.2 to add the sales tax. A customer pays €54. What was the list price?
+> A shop takes $8 off the list price of a jacket and then multiplies what is left by 1.2 to add the sales tax. A customer pays $54. What was the list price?
 
 **The working, step by step**
 
 - List what is done to the missing number, in the order it is done: Start from the list price. First 8 is taken away from it, then the total is multiplied by 1.2. The result is 54
 
-The missing number is the list price, so the working starts from it and follows what the shop does to it, in order: first €8 comes off, then what is left is multiplied by 1.2 to add the tax. The list stops at the result the problem gives, 54. Writing the list first means that nothing done to the list price is forgotten, and it fixes the order that the undoing will be read from.
+The missing number is the list price, so the working starts from it and follows what the shop does to it, in order: first $8 comes off, then what is left is multiplied by 1.2 to add the tax. The list stops at the result the problem gives, 54. Writing the list first means that nothing done to the list price is forgotten, and it fixes the order that the undoing will be read from.
 
 - Write the undoing of each one, last one first: Taking away 8 is undone by adding 8; multiplying by 1.2 is undone by dividing by 1.2. Last one first: dividing by 1.2, then adding 8
 
@@ -254,12 +254,12 @@ Running the calculation forward on 53 is the proof: 53 − 8 = 45 and 45 × 1.2 
 
 **The result**
 
-The list price was €53. Taking €8 off gives €45, and multiplying by 1.2 to add the sales tax gives the €54 the customer paid.
+The list price was $53. Taking $8 off gives $45, and multiplying by 1.2 to add the sales tax gives the $54 the customer paid.
 
 
 ### 8. Worked again: the fourth long jump
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
 
 [reviewers only: card kind `solved`, id `solved-rearr-2`]
 
@@ -308,7 +308,7 @@ Dev’s fourth jump must be 16 m. The four jumps then total 52 m, and 52 ÷ 4 = 
 
 ### 9. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
 
 [reviewers only: card kind `check`, id `check-rearr-last`]
 
@@ -334,36 +334,36 @@ Dev’s fourth jump must be 16 m. The four jumps then total 52 m, and 52 ÷ 4 = 
   - Write the undoing of each one, last one first: Multiplying by 40 is undone by dividing by 40; taking away 20 is undone by adding 20. Last one first: adding 20, then dividing by 40
   - Apply the undoing to the result, one at a time: 100 + 20 = 120; 120 ÷ 40 = 3
   - Check by running the calculation forward: 3 × 40 = 120; 120 − 20 = 100, which is the 100 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 22.5 kg: You chose **22.5 kg**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 2 kg: You chose **2 kg**. That is the answer you get when you take away 20 once more instead of undoing it by adding 20.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 ### 10. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
 
 [reviewers only: card kind `check`, id `check-rearr-whole`]
 
-> Four friends share a meal. They add a €12 tip to the bill and divide the total by 4, and each pays €15. What was the bill?
+> Four friends share a meal. They add a $12 tip to the bill and divide the total by 4, and each pays $15. What was the bill?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
-- €48
-- €12
-- €72
+- $48
+- $12
+- $72
 
 **Shown as soon as you answer**
 
-- The answer: **€48**.
+- The answer: **$48**.
 - The working, step by step:
   - List what is done to the missing number, in the order it is done: Start from the bill. First 12 is added to it, then the total is divided by 4. The result is 15
   - Write the undoing of each one, last one first: Adding 12 is undone by taking away 12; dividing by 4 is undone by multiplying by 4. Last one first: multiplying by 4, then taking away 12
   - Apply the undoing to the result, one at a time: 15 × 4 = 60; 60 − 12 = 48
   - Check by running the calculation forward: 48 + 12 = 60; 60 ÷ 4 = 15, which is the 15 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
-- If you chose €12: You chose **€12**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
-- If you chose €72: You chose **€72**. That is the answer you get when you add 12 once more instead of undoing it by taking away 12.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+- If you chose $12: You chose **$12**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
+- If you chose $72: You chose **$72**. That is the answer you get when you add 12 once more instead of undoing it by taking away 12.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 *End of part 1. You can stop here; your place is kept. Next: part 2, Scaling a rate to a new amount.*
@@ -374,7 +374,7 @@ Dev’s fourth jump must be 16 m. The four jumps then total 52 m, and 52 ÷ 4 = 
 
 ### 11. A rate scaled to a new amount
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
 
 [reviewers only: card kind `meet`, id `meet-prop`]
 
@@ -409,7 +409,7 @@ You may also hear this called “scaling by a rate” or “the unitary method�
 
 ### 12. Proportion: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
 
 [reviewers only: card kind `again`, id `again-prop`]
 
@@ -440,7 +440,7 @@ That is all you point to, and it is why one name covers a recipe and a school tr
 
 ### 13. Proportion: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-prop`]
 
@@ -448,7 +448,7 @@ You know what to point to for **Proportion**. This card fills in the rest of the
 
 **What it is usually like**
 
-- A rate: so much for so many of something, such as 9 rolls for €4, 12 eggs for 3 cakes or 250 g of flour for 10 pancakes.
+- A rate: so much for so many of something, such as 9 rolls for $4, 12 eggs for 3 cakes or 250 g of flour for 10 pancakes.
 - A new amount of one of the two things in the rate, bigger or smaller than the amount in the rate.
 - The missing number is the other thing, at the new amount. It can be the one that comes second in the sentence or the one that comes first.
 - Words such as “for every”, “for each”, “per” and “at that rate” are common, but often the problem just says “so much for so many”.
@@ -461,7 +461,7 @@ A rate for each hour, day, month or year is not this kind either. It follows an 
 
 **Where you will hear it**
 
-"It says 250 g for 10 pancakes. I am making 24." "Twelve eggs make 3 cakes, and I want 7 cakes." "Nine rolls cost €4, so what do 27 cost?" "The recipe serves 4 and I have 10 guests."
+"It says 250 g for 10 pancakes. I am making 24." "Twelve eggs make 3 cakes, and I want 7 cakes." "Nine rolls cost $4, so what do 27 cost?" "The recipe serves 4 and I have 10 guests."
 
 In your own life you meet this when you stretch or shrink a recipe, when you work out what a bigger or smaller amount of something should cost at the shop’s price, and when you convert between units at a fixed rate.
 
@@ -471,7 +471,7 @@ In your own life you meet this when you stretch or shrink a recipe, when you wor
 
 ### 14. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
 
 [reviewers only: card kind `check`, id `check-prop`]
 
@@ -492,7 +492,7 @@ The pieces you can tap:
 
 ### 15. Worked: the price of 12 kg of apples
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
 
 [reviewers only: card kind `solved`, id `solved-prop-1`]
 
@@ -500,13 +500,13 @@ Here is the procedure for the second kind with real numbers: apples at a market 
 
 **The problem**
 
-> A market stall sells 8 kg of apples for €6. How much do 12 kg cost?
+> A market stall sells 8 kg of apples for $6. How much do 12 kg cost?
 
 **The working, step by step**
 
-- Pair the new amount with the matching number in the rate: The rate is 8 kg of apples for 6 euros. The new amount is 12 kg of apples, so it is paired with the 8 kg of apples in the rate
+- Pair the new amount with the matching number in the rate: The rate is 8 kg of apples for 6 dollars. The new amount is 12 kg of apples, so it is paired with the 8 kg of apples in the rate
 
-The new amount is a number of kilos, so it has to be compared with the kilos in the rate, 8, and not with the euros. Comparing kilos with kilos is what makes the next step mean something: how many times as big the new kilos are as the old kilos.
+The new amount is a number of kilos, so it has to be compared with the kilos in the rate, 8, and not with the dollars. Comparing kilos with kilos is what makes the next step mean something: how many times as big the new kilos are as the old kilos.
 
 - Find how many times as big the new amount is: 12 ÷ 8 = 1.5, so the new amount is 1.5 times as big as 8
 
@@ -526,22 +526,22 @@ Dividing the new amount by the matching number says how many times the matching 
   - If you chose “6 × 1.5 = 9.”: That is true, and it is the working of this step, but it does not say why the price is multiplied by that number.
   - If you chose “12 is more than 8.”: That is true, but it does not say what is done to the price.
 
-The rate says that 8 kg of apples and €6 go together. Take twice the apples, 16 kg, and the price doubles, to €12. Take half the apples, 4 kg, and the price halves, to €3. Whatever happens to one number happens to the other, as long as the rate stays the same.
+The rate says that 8 kg of apples and $6 go together. Take twice the apples, 16 kg, and the price doubles, to $12. Take half the apples, 4 kg, and the price halves, to $3. Whatever happens to one number happens to the other, as long as the rate stays the same.
 
-Here 12 kg is 1.5 times 8 kg, so the price is 1.5 times €6. That is why the number found in the last step is used to multiply the other number, 6, and not to add to it.
+Here 12 kg is 1.5 times 8 kg, so the price is 1.5 times $6. That is why the number found in the last step is used to multiply the other number, 6, and not to add to it.
 
-- Check the direction: 12 kg of apples is more than 8 kg of apples, so the answer should be more than 6 euros, and 9 is more
+- Check the direction: 12 kg of apples is more than 8 kg of apples, so the answer should be more than 6 dollars, and 9 is more
 
-More apples must cost more, so the answer has to be more than €6, and €9 is. The check catches a rate scaled the wrong way round: dividing 6 by 1.5 would give 4, which is less, though more apples are being bought.
+More apples must cost more, so the answer has to be more than $6, and $9 is. The check catches a rate scaled the wrong way round: dividing 6 by 1.5 would give 4, which is less, though more apples are being bought.
 
 **The result**
 
-12 kg of apples cost €9.
+12 kg of apples cost $9.
 
 
 ### 16. Worked again: the posts for a shorter fence
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
 
 [reviewers only: card kind `solved`, id `solved-prop-2`]
 
@@ -557,19 +557,19 @@ The same procedure in a different story, with a new amount that is smaller than 
 
 **You are asked:** This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.
 
-- The new amount, 15, is a number of metres, so it has to be compared with the metres in the rate, 20, and not with the 24 posts.
+- The new amount, 15, is a number of meters, so it has to be compared with the meters in the rate, 20, and not with the 24 posts.
 - The rate is 24 posts for every 20 m.
 - 15 is less than 20.
 
 **Shown as soon as you answer**
 
-- The one that explains it: The new amount, 15, is a number of metres, so it has to be compared with the metres in the rate, 20, and not with the 24 posts.
+- The one that explains it: The new amount, 15, is a number of meters, so it has to be compared with the meters in the rate, 20, and not with the 24 posts.
   - If you chose “The rate is 24 posts for every 20 m.”: That is true, and it is the information the step uses, but it does not say which number the new amount goes with.
   - If you chose “15 is less than 20.”: That is true, and it matters for the last step, but it does not say which number the new amount goes with.
 
-The rate has two numbers, and each belongs to a different thing: 24 belongs to posts and 20 belongs to metres. The new amount, 15 m, is metres, so only the 20 can be compared with it. Dividing 15 by 24 would compare metres with posts, and the answer would not mean anything: it would not say how many times as long the new fence is.
+The rate has two numbers, and each belongs to a different thing: 24 belongs to posts and 20 belongs to meters. The new amount, 15 m, is meters, so only the 20 can be compared with it. Dividing 15 by 24 would compare meters with posts, and the answer would not mean anything: it would not say how many times as long the new fence is.
 
-Pairing first is what makes “how many times as big” in the next step mean something. If the new amount had been posts instead, say 30 posts, it would have been paired with the 24, and the answer would have been in metres.
+Pairing first is what makes “how many times as big” in the next step mean something. If the new amount had been posts instead, say 30 posts, it would have been paired with the 24, and the answer would have been in meters.
 
 - Find how many times as big the new amount is: 15 ÷ 20 = 0.75, so the new amount is 0.75 times as big as 20
 
@@ -590,7 +590,7 @@ A 15 m fence needs 18 posts.
 
 ### 17. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
 
 [reviewers only: card kind `check`, id `check-prop-last`]
 
@@ -623,11 +623,11 @@ A 15 m fence needs 18 posts.
 
 ### 18. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
 
 [reviewers only: card kind `check`, id `check-prop-whole`]
 
-> A coach company charges €9 for every 6 km. How far can a passenger travel for €27?
+> A coach company charges $9 for every 6 km. How far can a passenger travel for $27?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -639,18 +639,18 @@ A 15 m fence needs 18 posts.
 
 - The answer: **18 km**.
 - The working, step by step:
-  - Pair the new amount with the matching number in the rate: The rate is 9 euros for 6 km. The new amount is 27 euros, so it is paired with the 9 euros in the rate
+  - Pair the new amount with the matching number in the rate: The rate is 9 dollars for 6 km. The new amount is 27 dollars, so it is paired with the 9 dollars in the rate
   - Find how many times as big the new amount is: 27 ÷ 9 = 3, so the new amount is 3 times as big as 9
   - Make the other number that many times as big: 6 × 3 = 18
-  - Check the direction: 27 euros is more than 9 euros, so the answer should be more than 6 km, and 18 is more
+  - Check the direction: 27 dollars is more than 9 dollars, so the answer should be more than 6 km, and 18 is more
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
-- If you chose 2 km: You chose **2 km**. That is the answer you get when you divide 6 by 3 instead of multiplying, so the answer moves the wrong way: more euros must mean more km.
-- If you chose 40.5 km: You chose **40.5 km**. That is the answer you get when you pair the new amount with 6 km, the other number in the rate, and not with 9 euros, the number of the same thing.
+- If you chose 2 km: You chose **2 km**. That is the answer you get when you divide 6 by 3 instead of multiplying, so the answer moves the wrong way: more dollars must mean more km.
+- If you chose 40.5 km: You chose **40.5 km**. That is the answer you get when you pair the new amount with 6 km, the other number in the rate, and not with 9 dollars, the number of the same thing.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
 
 ### 19. Rearranging a formula or Proportion: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rearr-prop`]
 
@@ -658,11 +658,11 @@ The first two kinds are easy to mix up, because both have a few numbers and a pr
 
 **Case A**
 
-> At the bakery, Jon buys three of the same loaf and a €2 pastry, and pays €11 in all. How much does one loaf cost?
+> At the bakery, Jon buys three of the same loaf and a $2 pastry, and pays $11 in all. How much does one loaf cost?
 
 **Case B**
 
-> At the bakery, four of the same loaf cost €12. How much do ten of them cost?
+> At the bakery, four of the same loaf cost $12. How much do ten of them cost?
 
 **What to compare.** Both problems are at the same bakery and have a loaf and a price in them. Compare one thing: is there a calculation with a result it came to, or only a rate and a new amount?
 
@@ -672,9 +672,9 @@ The first two kinds are easy to mix up, because both have a few numbers and a pr
 
 **Why this one and not the other**
 
-In Case A Jon buys three loaves and a pastry, and pays €11 in all. The loaves and the pastry are put together in one calculation, and the question is what one loaf cost. There is a result to undo, and the answer is **“A formula, and the result it came to”**.
+In Case A Jon buys three loaves and a pastry, and pays $11 in all. The loaves and the pastry are put together in one calculation, and the question is what one loaf cost. There is a result to undo, and the answer is **“A formula, and the result it came to”**.
 
-In Case B the bakery sells four loaves for €12, and the question is what ten loaves cost. There is a rate and a new amount, and nothing else, and the answer is **“A rate, and a new amount to scale it to”**.
+In Case B the bakery sells four loaves for $12, and the question is what ten loaves cost. There is a rate and a new amount, and nothing else, and the answer is **“A rate, and a new amount to scale it to”**.
 
 Both have a loaf, a price and a few small numbers, and the working for one can look like the working for the other. What differs is what is given: a calculation and its result, or a rate and a new amount.
 
@@ -693,7 +693,7 @@ Is there a calculation with a result it came to, or anything fixed added on top 
 
 ### 20. A price for each unit, with a charge on top
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 20 of 44*
 
 [reviewers only: card kind `exception`, id `exc-bill`]
 
@@ -701,26 +701,26 @@ The last card kept the two kinds apart with a loaf in each. Real problems are le
 
 *The electricity bill*
 
-> An electricity bill has a standing charge of €8, plus 25 cents for each unit of electricity used. This month’s bill is €38. How many units were used?
+> An electricity bill has a standing charge of $8, plus 25 cents for each unit of electricity used. This month’s bill is $38. How many units were used?
 
 The bill gives 25 cents for each unit of electricity, which is so much for so many, and it asks for a number of units. That is what you point to for **“A rate, and a new amount to scale it to”**. Yet the answer for this case is **“A formula, and the result it came to”**.
 
 **You are asked:** This looks like **Proportion**. Before you read why it is **Rearranging a formula**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “An electricity bill has a standing charge of €8, plus 25 cents for each unit of electricity used.”
-2. “This month’s bill is €38.”
+1. “An electricity bill has a standing charge of $8, plus 25 cents for each unit of electricity used.”
+2. “This month’s bill is $38.”
 3. “How many units were used?”
 
-**Shown as soon as you tap.** The words are “An electricity bill has a standing charge of €8, plus 25 cents for each unit of electricity used.”.
-- If you tapped “This month’s bill is €38.”: That gives a number to work with, and it matters, but it is not the part you are asked to tap.
+**Shown as soon as you tap.** The words are “An electricity bill has a standing charge of $8, plus 25 cents for each unit of electricity used.”.
+- If you tapped “This month’s bill is $38.”: That gives a number to work with, and it matters, but it is not the part you are asked to tap.
 - If you tapped “How many units were used?”: That is the question. The words you are asked to tap are in another sentence.
 
 **Why this is Rearranging a formula and not Proportion**
 
-Look at what else the bill contains. There is a standing charge of €8 that does not depend on the number of units: it is paid whether 1 unit or 1,000 units are used. So the bill is not 25 cents multiplied by the units. It is 8 plus 0.25 times the units, a calculation with two parts.
+Look at what else the bill contains. There is a standing charge of $8 that does not depend on the number of units: it is paid whether 1 unit or 1,000 units are used. So the bill is not 25 cents multiplied by the units. It is 8 plus 0.25 times the units, a calculation with two parts.
 
-And look at what the problem gives. There is no new amount to scale a rate to. There is a result, the bill of €38, and the question is what number of units went into the calculation to produce it. That is working backwards from a result.
+And look at what the problem gives. There is no new amount to scale a rate to. There is a result, the bill of $38, and the question is what number of units went into the calculation to produce it. That is working backwards from a result.
 
 So the problem shows both: a price for each thing, which looks like a rate, and a fixed amount added on top, which makes it a calculation. When it shows both, the answer is **“A formula, and the result it came to”**.
 
@@ -730,7 +730,7 @@ Is there a calculation with a result it came to, or anything fixed added on top 
 
 When a case shows both **“A rate, and a new amount to scale it to”** and a fixed amount added on top of the rate, such as a call-out fee or a standing charge, the answer is **“A formula, and the result it came to”**.
 
-This is a decision made for the questions, and the line it draws is a fine one. A fixed amount on top of a rate, such as a call-out fee or a standing charge, makes a calculation. Without the €8, the same bill would be a rate, 25 cents for each unit, and the question would need a number of units to scale it to.
+This is a decision made for the questions, and the line it draws is a fine one. A fixed amount on top of a rate, such as a call-out fee or a standing charge, makes a calculation. Without the $8, the same bill would be a rate, 25 cents for each unit, and the question would need a number of units to scale it to.
 
 If the problem had said only that 25 cents is charged for each unit, and asked for the cost of 120 units, there would be a rate and a new amount, and nothing else, and the answer would be **“A rate, and a new amount to scale it to”**.
 
@@ -743,7 +743,7 @@ If the problem had said only that 25 cents is charged for each unit, and asked f
 
 ### 21. Two missing numbers, two facts
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
 
 [reviewers only: card kind `meet`, id `meet-simul`]
 
@@ -751,18 +751,18 @@ The third kind of problem leaves out two numbers at once, and it gives two facts
 
 *The club’s balls*
 
-> A sports club ⟦bought 14 balls, some footballs at €6 each and some volleyballs at €9 each⟧, and ⟦spent €96 in all⟧. How many of each did it buy?
+> A sports club ⟦bought 14 balls, some footballs at $6 each and some volleyballs at $9 each⟧, and ⟦spent $96 in all⟧. How many of each did it buy?
 
 Stripped of its story, the case is this:
 
 - The problem gives a count: 14 balls in all.
-- It gives a total: €96 spent in all, with a price for each kind of ball, €6 and €9.
+- It gives a total: $96 spent in all, with a price for each kind of ball, $6 and $9.
 - It leaves out two numbers: how many footballs and how many volleyballs were bought.
 - There are two separate facts, and each is about both missing numbers.
 
-What you are shown is two numbers that are not given, and two facts about them that the pair has to satisfy. The first fact is a count: the footballs and the volleyballs together are 14. The second is a total: the footballs cost €6 each and the volleyballs €9 each, and together they came to €96.
+What you are shown is two numbers that are not given, and two facts about them that the pair has to satisfy. The first fact is a count: the footballs and the volleyballs together are 14. The second is a total: the footballs cost $6 each and the volleyballs $9 each, and together they came to $96.
 
-Either fact alone is not enough. There are many ways to buy 14 balls, and many ways to spend €96. Only one pair of numbers fits both facts, and the procedure finds it. It uses one fact to leave a single missing number in the other, so that the second fact can be worked like a calculation that you already know how to undo.
+Either fact alone is not enough. There are many ways to buy 14 balls, and many ways to spend $96. Only one pair of numbers fits both facts, and the procedure finds it. It uses one fact to leave a single missing number in the other, so that the second fact can be worked like a calculation that you already know how to undo.
 
 Notice what decides the kind. It is that two numbers are left out and two separate facts are given about them, usually how many there are in all and what they come to in all. If only one number were left out of one calculation, the problem would be the first kind.
 
@@ -778,38 +778,38 @@ You may also hear this called “two equations with two unknowns” or “a syst
 
 ### 22. Simultaneous equations: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
 
 [reviewers only: card kind `again`, id `again-simul`]
 
 The balls gave you what to point to: two numbers the problem does not give, and two separate facts about them, such as how many there are in all and what they come to in all. Here is a second problem with a different story, boxes of bandages instead of balls.
 
-The first case again, in one line. *The club’s balls*: “bought 14 balls, some footballs at €6 each and some volleyballs at €9 each” and “spent €96 in all”
+The first case again, in one line. *The club’s balls*: “bought 14 balls, some footballs at $6 each and some volleyballs at $9 each” and “spent $96 in all”
 
 The second case.
 
 *The bandage order*
 
-> A clinic ordered 18 boxes of bandages, some small at €4 each and some large at €7 each, and paid €84 in all. How many boxes of each size did it order?
-**You are asked:** In *The club’s balls*, these words show it: “bought 14 balls, some footballs at €6 each and some volleyballs at €9 each” and “spent €96 in all”. Which words show the same thing in this case? Tap them.
+> A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all. How many boxes of each size did it order?
+**You are asked:** In *The club’s balls*, these words show it: “bought 14 balls, some footballs at $6 each and some volleyballs at $9 each” and “spent $96 in all”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “A clinic ordered 18 boxes of bandages, some small at €4 each and some large at €7 each, and paid €84 in all.”
+1. “A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all.”
 2. “How many boxes of each size did it order?”
 
-**Shown as soon as you tap.** The words are “A clinic ordered 18 boxes of bandages, some small at €4 each and some large at €7 each, and paid €84 in all.”.
+**Shown as soon as you tap.** The words are “A clinic ordered 18 boxes of bandages, some small at $4 each and some large at $7 each, and paid $84 in all.”.
 - If you tapped “How many boxes of each size did it order?”: That is the question. The words you are asked to tap are in another sentence.
 
 **What the two share**
 
-Both problems leave out how many of each of two kinds there were, and give two separate facts about them: how many items there were in all, 14 balls and 18 boxes, and what they came to in all, €96 and €84, with a price for each kind.
+Both problems leave out how many of each of two kinds there were, and give two separate facts about them: how many items there were in all, 14 balls and 18 boxes, and what they came to in all, $96 and $84, with a price for each kind.
 
 That is all you point to, and it is why one name covers a sports club and a clinic. The story differs. What is given is the same.
 
 
 ### 23. Simultaneous equations: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-simul`]
 
@@ -830,9 +830,9 @@ And a total with no count, or a count with no total, is not enough to fix two nu
 
 **Where you will hear it**
 
-"The van carried 40 crates of two sizes, 330 kg in all." "There are 9 animals in the field, and 26 legs between them." "We hired 12 boats, small and large, for 40 people in all." "I paid €6.20 for 20 sweets, some at 25 cents and some at 40 cents, and I forget how many of each."
+"The van carried 40 crates of two sizes, 330 kg in all." "There are 9 animals in the field, and 26 legs between them." "We hired 12 boats, small and large, for 40 people in all." "I paid $6.20 for 20 candies, some at 25 cents and some at 40 cents, and I forget how many of each."
 
-In your own life you meet this when a till total and an item count have to be split between two prices, when a delivery is made of two sizes and you know the number of loads and the total weight, and in puzzles about heads and legs or two kinds of coin.
+In your own life you meet this when a checkout total and an item count have to be split between two prices, when a delivery is made of two sizes and you know the number of loads and the total weight, and in puzzles about heads and legs or two kinds of coin.
 
 **The question to ask when you spot it**
 
@@ -840,28 +840,28 @@ In your own life you meet this when a till total and an item count have to be sp
 
 ### 24. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
 
 [reviewers only: card kind `check`, id `check-simul`]
 
-> A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all. How many of each size did it sell?
+> A stall sold 11 plants, some small at $3 each and some large at $8 each, and took $58 in all. How many of each size did it sell?
 
 **You are asked:** Which words give the two facts, the count and the prices? Tap them.
 
 The pieces you can tap:
-1. “A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.”
+1. “A stall sold 11 plants, some small at $3 each and some large at $8 each, and took $58 in all.”
 2. “How many of each size did it sell?”
 
 **Shown as soon as you tap**
 
-- If you are right: “Right: ‘A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.’.” In “sold 11 plants, some small at €3 each and some large at €8 each” and “took €58 in all”, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and €58 in all. That is **“Two facts that two missing numbers must both fit”**. The answer for this case is **“Two facts that two missing numbers must both fit”**, and the name is **Simultaneous equations**.
-- If you miss: “The words are ‘A stall sold 11 plants, some small at €3 each and some large at €8 each, and took €58 in all.’.” The same reason follows, and then a line about the piece you tapped:
+- If you are right: “Right: ‘A stall sold 11 plants, some small at $3 each and some large at $8 each, and took $58 in all.’.” In “sold 11 plants, some small at $3 each and some large at $8 each” and “took $58 in all”, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and $58 in all. That is **“Two facts that two missing numbers must both fit”**. The answer for this case is **“Two facts that two missing numbers must both fit”**, and the name is **Simultaneous equations**.
+- If you miss: “The words are ‘A stall sold 11 plants, some small at $3 each and some large at $8 each, and took $58 in all.’.” The same reason follows, and then a line about the piece you tapped:
   - “How many of each size did it sell?”: That is the question. The words you are asked to tap are in another sentence.
 - Taught on: “Two missing numbers, two facts” (one tap opens the card).
 
 ### 25. Worked: pens and notebooks for an office
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
 
 [reviewers only: card kind `solved`, id `solved-simul-1`]
 
@@ -869,7 +869,7 @@ Here is the procedure for the third kind with real numbers: pens and notebooks, 
 
 **The problem**
 
-> An office bought 20 items, some pens at €2 each and some notebooks at €5 each, and paid €61 in all. How many pens and how many notebooks did it buy?
+> An office bought 20 items, some pens at $2 each and some notebooks at $5 each, and paid $61 in all. How many pens and how many notebooks did it buy?
 
 **The working, step by step**
 
@@ -901,7 +901,7 @@ But the count fact says that there are 20 items, and of the pairs that fit the t
 
 - Solve for the letter that is left: 2 × 20 = 40, so 40 − 2 × y + 5 × y = 61; that is 40 + 3 × y = 61; 3 × y = 61 − 40 = 21; y = 21 ÷ 3 = 7
 
-The bracket is multiplied out first: 2 × (20 − y) is 2 × 20 = 40, take away 2 × y. The two parts with y, taking away 2 × y and adding 5 × y, make 3 × y, because 5 − 2 = 3. So 40 + 3 × y = 61, which is undone like any calculation: take away the 40, then divide by 3.
+The parentheses are multiplied out first: 2 × (20 − y) is 2 × 20 = 40, take away 2 × y. The two parts with y, taking away 2 × y and adding 5 × y, make 3 × y, because 5 − 2 = 3. So 40 + 3 × y = 61, which is undone like any calculation: take away the 40, then divide by 3.
 
 - Find the other number from the count fact: x = 20 − 7 = 13
 
@@ -918,7 +918,7 @@ The office bought 13 pens and 7 notebooks.
 
 ### 26. Worked again: bags of cement on a site
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
 
 [reviewers only: card kind `solved`, id `solved-simul-2`]
 
@@ -975,11 +975,11 @@ There were 10 bags of 25 kg and 4 bags of 40 kg.
 
 ### 27. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
 
 [reviewers only: card kind `check`, id `check-simul-last`]
 
-> A ferry carried 24 vehicles, some cars at €18 each and some vans at €30 each, and took €540 in fares. How many cars and how many vans were there?
+> A ferry carried 24 vehicles, some cars at $18 each and some vans at $30 each, and took $540 in fares. How many cars and how many vans were there?
 
 **The working, step by step** (all but the last step)
 
@@ -1012,11 +1012,11 @@ There were 10 bags of 25 kg and 4 bags of 40 kg.
 
 ### 28. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
 
 [reviewers only: card kind `check`, id `check-simul-whole`]
 
-> A farm shop sold 16 jars, some of jam at €3 each and some of honey at €7 each, and took €84. How many jars of jam and how many of honey were sold?
+> A farm stand sold 16 jars, some of jam at $3 each and some of honey at $7 each, and took $84. How many jars of jam and how many of honey were sold?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -1041,7 +1041,7 @@ There were 10 bags of 25 kg and 4 bags of 40 kg.
 
 ### 29. Rearranging a formula or Simultaneous equations: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rearr-simul`]
 
@@ -1049,13 +1049,13 @@ The first and third kinds look alike when the numbers are small and the story is
 
 **Case A**
 
-> Mia buys 5 plants at €9 each and some pots at €4 each, and pays €73. How many pots?
+> Mia buys 5 plants at $9 each and some pots at $4 each, and pays $73. How many pots?
 
 **Case B**
 
-> A garden centre sold 12 items, some plants at €9 each and some pots at €4 each, and took €73 in all. How many plants and how many pots were sold?
+> A garden center sold 12 items, some plants at $9 each and some pots at $4 each, and took $73 in all. How many plants and how many pots were sold?
 
-**What to compare.** Both problems are at the same garden centre, with the same plants at €9 and pots at €4, and the same €73. Compare one thing: how many numbers are left out?
+**What to compare.** Both problems are at the same garden center, with the same plants at $9 and pots at $4, and the same $73. Compare one thing: how many numbers are left out?
 
 **You are asked:** Which case gives the answer **“Two facts that two missing numbers must both fit”**? (Case A / Case B)
 
@@ -1063,9 +1063,9 @@ The first and third kinds look alike when the numbers are small and the story is
 
 **Why this one and not the other**
 
-In Case A Mia buys 5 plants and some pots, and pays €73. Only one number is left out, how many pots, and one calculation has a result to undo: 5 plants at €9 and some pots at €4 make €73. The answer is **“A formula, and the result it came to”**.
+In Case A Mia buys 5 plants and some pots, and pays $73. Only one number is left out, how many pots, and one calculation has a result to undo: 5 plants at $9 and some pots at $4 make $73. The answer is **“A formula, and the result it came to”**.
 
-In Case B the garden centre sold 12 items in all, plants and pots, for €73, and nobody says how many of either. Two numbers are left out, and there are two facts, the count and the total. The answer is **“Two facts that two missing numbers must both fit”**.
+In Case B the garden center sold 12 items in all, plants and pots, for $73, and nobody says how many of either. Two numbers are left out, and there are two facts, the count and the total. The answer is **“Two facts that two missing numbers must both fit”**.
 
 The prices and the total are the same in both, and the answers are the same too: 5 plants and 7 pots. What differs is how many numbers the problem leaves out, one or two, and so how many facts are needed to find them.
 
@@ -1090,7 +1090,7 @@ How many numbers are left out, and how many separate facts are given about them?
 
 ### 30. A number multiplied by itself
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 30 of 44*
 
 [reviewers only: card kind `term`, id `term-squared`]
 
@@ -1102,7 +1102,7 @@ The last kind of problem in this unit leans on one word, which you may only half
 
 A tiler who lays a bigger square from square tiles needs a number of tiles that is the length of a side multiplied by itself: 5 × 5 = 25, 6 × 6 = 36, 12 × 12 = 144. Multiplying a number by itself comes up so often, for the area of a square or of anything whose two sides depend on each other, that it has a word of its own and a small raised 2 to write it with.
 
-The same is true for a number you do not know. If the side of a square is x, its area is x × x, and that is written x² with the small 2 raised. A whole bracket can be multiplied by itself too: (x + 3)² means (x + 3) × (x + 3), with everything inside the bracket multiplied by everything inside the bracket.
+The same is true for a number you do not know. If the side of a square is x, its area is x × x, and that is written x² with the small 2 raised. A whole group in parentheses can be multiplied by itself too: (x + 3)² means (x + 3) × (x + 3), with everything inside the parentheses multiplied by everything inside the parentheses.
 
 A number with a minus sign, multiplied by itself, gives a number above zero, because a minus times a minus is a plus: −5 × −5 = 25, just as 5 × 5 = 25. So two different numbers, 5 and −5, give the same result when they are multiplied by themselves.
 
@@ -1113,7 +1113,7 @@ Two things are worth holding on to. Multiplying a number by itself is not doubli
 
 ### 31. A missing number that is squared
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 31 of 44*
 
 [reviewers only: card kind `meet`, id `meet-quad`]
 
@@ -1148,7 +1148,7 @@ You may also hear this called “a squared unknown”. That means the same thing
 
 ### 32. Quadratic equation: the same thing in a different story
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
 
 [reviewers only: card kind `again`, id `again-quad`]
 
@@ -1179,7 +1179,7 @@ That is all you point to, and it is why one name covers a rug and a patio. The s
 
 ### 33. Quadratic equation: what it is like
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-quad`]
 
@@ -1210,7 +1210,7 @@ In your own life you meet this when a space has to fit an area and one side is l
 
 ### 34. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
 
 [reviewers only: card kind `check`, id `check-quad`]
 
@@ -1231,7 +1231,7 @@ The pieces you can tap:
 
 ### 35. Worked: the width of a banner
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
 
 [reviewers only: card kind `solved`, id `solved-quad-1`]
 
@@ -1245,7 +1245,7 @@ Here is the procedure for the fourth kind with real numbers: a banner whose leng
 
 - Write it as x² + b × x = c, with x² on its own: x × (x + 3) = 70. Multiply out: x × x is x², and x × 3 is 3 × x, so x² + 3 × x = 70
 
-The banner is x metres wide and x + 3 metres long, and its area is the width times the length. The missing width appears twice: once as x × x and once inside 3 × x, which is why the equation has x² in it as well as x. Writing it as x² plus some of x, equal to the result, is the shape that the rest of the working is built for. In that shape, b stands for the number in front of x, here 3, and c stands for the result, here 70.
+The banner is x meters wide and x + 3 meters long, and its area is the width times the length. The missing width appears twice: once as x × x and once inside 3 × x, which is why the equation has x² in it as well as x. Writing it as x² plus some of x, equal to the result, is the shape that the rest of the working is built for. In that shape, b stands for the number in front of x, here 3, and c stands for the result, here 70.
 
 - Add the square of half the number in front of x to both sides: Half of 3 is 1.5, and 1.5 × 1.5 = 2.25. x² + 3 × x + 2.25 = 70 + 2.25 = 72.25
 
@@ -1267,7 +1267,7 @@ Half the number in front of x, *squared*, is always the missing piece: half of 3
 
 - Write the left side as one number *squared*: x² + 3 × x + 2.25 = (x + 1.5) × (x + 1.5), so (x + 1.5)² = 72.25
 
-x² + 3 × x + 2.25 is exactly (x + 1.5) multiplied by itself, as the multiplying out in the last step showed. Writing it that way leaves x in one place only, inside the bracket, which is what a *square root* can undo.
+x² + 3 × x + 2.25 is exactly (x + 1.5) multiplied by itself, as the multiplying out in the last step showed. Writing it that way leaves x in one place only, inside the parentheses, which is what a *square root* can undo.
 
 - Take the *square root* of both sides, keeping both answers: The *square root* of 72.25 is 8.5, and −8.5 × −8.5 is also 72.25, so x + 1.5 = 8.5 or x + 1.5 = −8.5
 
@@ -1275,7 +1275,7 @@ Two numbers multiply by themselves to give 72.25: 8.5 and −8.5, because a minu
 
 - Take away half the number in front of x from each: x = 8.5 − 1.5 = 7, or x = −8.5 − 1.5 = −10
 
-The 1.5 was added to x inside the bracket, so it is taken away from each side to leave x on its own. There are two answers for x because there were two numbers that give 72.25 when they are *squared*.
+The 1.5 was added to x inside the parentheses, so it is taken away from each side to leave x on its own. There are two answers for x because there were two numbers that give 72.25 when they are *squared*.
 
 - Throw out any answer the story rules out, and check the one left: −10 cannot be right, because a banner cannot have a width below zero, so x = 7. Check: 7 × (7 + 3) = 7 × 10 = 70
 
@@ -1288,7 +1288,7 @@ The banner is 7 m wide and 10 m long: 7 × 10 = 70 m².
 
 ### 36. Worked again: two matching lawns
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
 
 [reviewers only: card kind `solved`, id `solved-quad-2`]
 
@@ -1302,7 +1302,7 @@ The same procedure in a different story, with a number in front of x², so that 
 
 - Write it as x² + b × x = c, with x² on its own: 2 × x × (x + 6) = 144. Multiply out: 2 × x² + 12 × x = 144. Divide every term by 2: x² + 6 × x = 72
 
-There are two lawns, each x metres wide and x + 6 metres long, so the total area is 2 × x × (x + 6) = 144. Multiplying out gives 2 × x² + 12 × x = 144. The number in front of x² is 2, which the steps after this one are not built for, so every term is divided by 2: x² + 6 × x = 72. Dividing both sides by the same number keeps the equation true.
+There are two lawns, each x meters wide and x + 6 meters long, so the total area is 2 × x × (x + 6) = 144. Multiplying out gives 2 × x² + 12 × x = 144. The number in front of x² is 2, which the steps after this one are not built for, so every term is divided by 2: x² + 6 × x = 72. Dividing both sides by the same number keeps the equation true.
 
 - Add the square of half the number in front of x to both sides: Half of 6 is 3, and 3 × 3 = 9. x² + 6 × x + 9 = 72 + 9 = 81
 
@@ -1345,7 +1345,7 @@ Each lawn is 6 m wide and 12 m long. Together they cover 2 × 72 = 144 m².
 
 ### 37. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
 
 [reviewers only: card kind `check`, id `check-quad-last`]
 
@@ -1382,7 +1382,7 @@ Each lawn is 6 m wide and 12 m long. Together they cover 2 × 72 = 144 m².
 
 ### 38. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
 
 [reviewers only: card kind `check`, id `check-quad-whole`]
 
@@ -1411,7 +1411,7 @@ Each lawn is 6 m wide and 12 m long. Together they cover 2 × 72 = 144 m².
 
 ### 39. Rearranging a formula or Quadratic equation: telling them apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rearr-quad`]
 
@@ -1454,7 +1454,7 @@ Does the missing number appear once in the calculation, or is it multiplied by i
 
 ### 40. A profit rule that gives a result of zero
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
 
 [reviewers only: card kind `exception`, id `exc-breakeven`]
 
@@ -1462,17 +1462,17 @@ The last card showed the two kinds apart with a rug in each. Real problems are l
 
 *The break-even point*
 
-> A stall owner works out her profit, in tens of euros, from selling n crates of plums as 12 × n − n × n − 20. How many crates must she sell to just break even, with a profit of zero?
+> A stall owner works out her profit, in tens of dollars, from selling n crates of plums as 12 × n − n × n − 20. How many crates must she sell to just break even, with a profit of zero?
 
 The problem gives a *formula*, the stall owner’s profit rule, and the result it must come to, a profit of zero, and it leaves out a number that the rule used, the number of crates. That is what you point to for **“A formula, and the result it came to”**. Yet the answer for this case is **“A formula in which the missing number is multiplied by itself”**.
 
 **You are asked:** This looks like **Rearranging a formula**. Before you read why it is **Quadratic equation**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “A stall owner works out her profit, in tens of euros, from selling n crates of plums as 12 × n − n × n − 20.”
+1. “A stall owner works out her profit, in tens of dollars, from selling n crates of plums as 12 × n − n × n − 20.”
 2. “How many crates must she sell to just break even, with a profit of zero?”
 
-**Shown as soon as you tap.** The words are “A stall owner works out her profit, in tens of euros, from selling n crates of plums as 12 × n − n × n − 20.”.
+**Shown as soon as you tap.** The words are “A stall owner works out her profit, in tens of dollars, from selling n crates of plums as 12 × n − n × n − 20.”.
 - If you tapped “How many crates must she sell to just break even, with a profit of zero?”: That is the question. The words you are asked to tap are in another sentence.
 
 **Why this is Quadratic equation and not Rearranging a formula**
@@ -1489,7 +1489,7 @@ Does the missing number appear once in the calculation, or is it multiplied by i
 
 When a case shows both **“A formula, and the result it came to”** and the missing number multiplied by itself, the answer is **“A formula in which the missing number is multiplied by itself”**.
 
-This is a decision made for the questions, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. Recognising the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.
+This is a decision made for the questions, written as a tie-break: a missing number multiplied by itself needs its own procedure, so it wins over the rule whose result it is part of. Both answers, 2 and 10 crates, are real break-even points here, and no story rules either out. recognizing the kind is the point of this card; the working that finds 2 and 10 follows the steps of the procedure, with the minus sign in front of the number in front of n.
 
 If the rule had been 12 × n − 20, with no n × n, the missing number would appear once, and the answer would be **“A formula, and the result it came to”**.
 
@@ -1502,7 +1502,7 @@ If the rule had been 12 × n − 20, with no n × n, the missing number would ap
 
 ### 41. The one question that tells the four kinds apart
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
 
 [reviewers only: card kind `question`, id `q-a1`]
 
@@ -1520,7 +1520,7 @@ Each answer leads to one name, and so rules out the other three.
   - Give this answer when the problem gives a formula, or a calculation in words such as a fee plus so much for each unit, the result it came to, and every number in it but one.
   - It leads to **Rearranging a formula**.
 - **“A rate, and a new amount to scale it to”**
-  - Give this answer when the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
+  - Give this answer when the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square meters for each liter, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
   - It leads to **Proportion**.
 - **“Two facts that two missing numbers must both fit”**
   - Give this answer when the problem leaves out two numbers and gives two separate facts about them, such as how many there are in all and what they come to in all.
@@ -1556,11 +1556,11 @@ Some problems show two of the answers at once, and then there is a rule. A price
 
 ### 42. A question about a new case
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
 
 [reviewers only: card kind `check`, id `check-a1`]
 
-> A dye works needs 2 litres of dye for every 5 metres of cloth. How much dye is needed for 30 metres of cloth?
+> A dye works needs 2 liters of dye for every 5 meters of cloth. How much dye is needed for 30 meters of cloth?
 
 **The question:** **“What does the problem give that the missing number must fit?”**
 
@@ -1571,16 +1571,16 @@ Some problems show two of the answers at once, and then there is a rule. A price
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A rate, and a new amount to scale it to.**” The words “needs 2 litres of dye for every 5 metres of cloth” and “for 30 metres of cloth” give so much for so many, 2 litres of dye for every 5 metres of cloth, and a new amount of cloth, 30 metres. Nothing is added on top and no calculation has a result to undo, so the answer is **“A rate, and a new amount to scale it to”**. This answer leads to **Proportion**.
+- If you are right: “Right: **A rate, and a new amount to scale it to.**” The words “needs 2 liters of dye for every 5 meters of cloth” and “for 30 meters of cloth” give so much for so many, 2 liters of dye for every 5 meters of cloth, and a new amount of cloth, 30 meters. Nothing is added on top and no calculation has a result to undo, so the answer is **“A rate, and a new amount to scale it to”**. This answer leads to **Proportion**.
 - If you miss: “The answer is **A rate, and a new amount to scale it to.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **A formula, and the result it came to**: Give that answer when the problem gives a formula, or a calculation in words such as a fee plus so much for each unit, the result it came to, and every number in it but one. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
-  - If you chose **Two facts that two missing numbers must both fit**: Give that answer when the problem leaves out two numbers and gives two separate facts about them, such as how many there are in all and what they come to in all. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
-  - If you chose **A formula in which the missing number is multiplied by itself**: Give that answer when the problem gives a formula, or a fact, in which the missing number is multiplied by itself (written t², and read “t squared”), and a result it must come to. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square metres for each litre, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
+  - If you chose **A formula, and the result it came to**: Give that answer when the problem gives a formula, or a calculation in words such as a fee plus so much for each unit, the result it came to, and every number in it but one. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square meters for each liter, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
+  - If you chose **Two facts that two missing numbers must both fit**: Give that answer when the problem leaves out two numbers and gives two separate facts about them, such as how many there are in all and what they come to in all. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square meters for each liter, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
+  - If you chose **A formula in which the missing number is multiplied by itself**: Give that answer when the problem gives a formula, or a fact, in which the missing number is multiplied by itself (written t², and read “t squared”), and a result it must come to. This case shows something else: the problem gives so much for so many of something, such as 300 g of rice for 4 people or 12 square meters for each liter, and a new amount of that thing; the rate is for each thing, not for each hour, month or year, and nothing is added on top.
 - Taught on: “The one question that tells the four kinds apart” (one tap opens the card).
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: what the problem gives for the missing number to fit decides the kind, and nothing else in the story does.
 
@@ -1639,14 +1639,14 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
   - Write the undoing of each one, last one first: Multiplying by 5 is undone by dividing by 5; taking away 10 is undone by adding 10. Last one first: adding 10, then dividing by 5
   - Apply the undoing to the result, one at a time: 65 + 10 = 75; 75 ÷ 5 = 15
   - Check by running the calculation forward: 15 × 5 = 75; 75 − 10 = 65, which is the 65 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 23 kg: You chose **23 kg**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 11 kg: You chose **11 kg**. That is the answer you get when you take away 10 once more instead of undoing it by adding 10.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 3 of 36**
 
-> A club sold 18 raffle books, some small at €2 each and some large at €5 each, and took €60. How many small and how many large books were sold?
+> A club sold 18 raffle books, some small at $2 each and some large at $5 each, and took $60. How many small and how many large books were sold?
 
 **The working, step by step** (all but the last step)
 
@@ -1712,7 +1712,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 5 of 36**
 
-> A firm works out take-home pay this way: take the gross pay, subtract the €150 allowance, and multiply what is left by 0.8. Sam takes home €720. What was his gross pay?
+> A firm works out take-home pay this way: take the gross pay, subtract the $150 allowance, and multiply what is left by 0.8. Sam takes home $720. What was his gross pay?
 
 **The working, step by step** (all but the last step)
 
@@ -1722,21 +1722,21 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **You are asked:** The working is shown up to the last step. The last step is yours: Check by running the calculation forward. Choose what the problem comes to.
 
-- €1050
-- €1087.5
-- €726
+- $1050
+- $1087.5
+- $726
 
 **Shown as soon as you answer**
 
-- The answer: **€1050**.
+- The answer: **$1050**.
 - The working, step by step:
   - List what is done to the missing number, in the order it is done: Start from the gross pay. First 150 is taken away from it, then the total is multiplied by 0.8. The result is 720
   - Write the undoing of each one, last one first: Taking away 150 is undone by adding 150; multiplying by 0.8 is undone by dividing by 0.8. Last one first: dividing by 0.8, then adding 150
   - Apply the undoing to the result, one at a time: 720 ÷ 0.8 = 900; 900 + 150 = 1050
   - Check by running the calculation forward: 1050 − 150 = 900; 900 × 0.8 = 720, which is the 720 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
-- If you chose €1087.5: You chose **€1087.5**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
-- If you chose €726: You chose **€726**. That is the answer you get when you multiply by 0.8 once more instead of undoing it by dividing by 0.8.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+- If you chose $1087.5: You chose **$1087.5**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
+- If you chose $726: You chose **$726**. That is the answer you get when you multiply by 0.8 once more instead of undoing it by dividing by 0.8.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 6 of 36**
@@ -1770,7 +1770,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 7 of 36**
 
-> An airline works out the charge for a heavy bag this way: take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a €10 handling fee. The charge was €70. How heavy was the bag?
+> An airline works out the charge for a heavy bag this way: take the weight in kilos, subtract the 20 kg allowance, multiply by 6, and add a $10 handling fee. The charge was $70. How heavy was the bag?
 
 **The working, step by step** (all but the last step)
 
@@ -1792,7 +1792,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
   - Write the undoing of each one, last one first: Taking away 20 is undone by adding 20; multiplying by 6 is undone by dividing by 6; adding 10 is undone by taking away 10. Last one first: taking away 10, then dividing by 6, then adding 20
   - Apply the undoing to the result, one at a time: 70 − 10 = 60; 60 ÷ 6 = 10; 10 + 20 = 30
   - Check by running the calculation forward: 30 − 20 = 10; 10 × 6 = 60; 60 + 10 = 70, which is the 70 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 5 kg: You chose **5 kg**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 380 kg: You chose **380 kg**. That is the answer you get when you multiply by 6 once more instead of undoing it by dividing by 6.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
@@ -1834,7 +1834,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 9 of 36**
 
-> A joiner works out how many planks to order this way: the length of the wall in metres, divided by 2, plus 4 spare planks. A job needs 19 planks. How long is the wall?
+> A joiner works out how many planks to order this way: the length of the wall in meters, divided by 2, plus 4 spare planks. A job needs 19 planks. How long is the wall?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -1850,32 +1850,32 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
   - Write the undoing of each one, last one first: Dividing by 2 is undone by multiplying by 2; adding 4 is undone by taking away 4. Last one first: taking away 4, then multiplying by 2
   - Apply the undoing to the result, one at a time: 19 − 4 = 15; 15 × 2 = 30
   - Check by running the calculation forward: 30 ÷ 2 = 15; 15 + 4 = 19, which is the 19 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 34 m: You chose **34 m**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 46 m: You chose **46 m**. That is the answer you get when you add 4 once more instead of undoing it by taking away 4.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 10 of 36**
 
-> A hardware shop sells 12 brackets for €15. How much do 36 brackets cost?
+> A hardware store sells 12 brackets for $15. How much do 36 brackets cost?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
-- 45 euros
-- 5 euros
-- 28.8 euros
+- 45 dollars
+- 5 dollars
+- 28.8 dollars
 
 **Shown as soon as you answer**
 
-- The answer: **45 euros**.
+- The answer: **45 dollars**.
 - The working, step by step:
-  - Pair the new amount with the matching number in the rate: The rate is 12 brackets for 15 euros. The new amount is 36 brackets, so it is paired with the 12 brackets in the rate
+  - Pair the new amount with the matching number in the rate: The rate is 12 brackets for 15 dollars. The new amount is 36 brackets, so it is paired with the 12 brackets in the rate
   - Find how many times as big the new amount is: 36 ÷ 12 = 3, so the new amount is 3 times as big as 12
   - Make the other number that many times as big: 15 × 3 = 45
-  - Check the direction: 36 brackets is more than 12 brackets, so the answer should be more than 15 euros, and 45 is more
+  - Check the direction: 36 brackets is more than 12 brackets, so the answer should be more than 15 dollars, and 45 is more
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
-- If you chose 5 euros: You chose **5 euros**. That is the answer you get when you divide 15 by 3 instead of multiplying, so the answer moves the wrong way: more brackets must mean more euros.
-- If you chose 28.8 euros: You chose **28.8 euros**. That is the answer you get when you pair the new amount with 15 euros, the other number in the rate, and not with 12 brackets, the number of the same thing.
+- If you chose 5 dollars: You chose **5 dollars**. That is the answer you get when you divide 15 by 3 instead of multiplying, so the answer moves the wrong way: more brackets must mean more dollars.
+- If you chose 28.8 dollars: You chose **28.8 dollars**. That is the answer you get when you pair the new amount with 15 dollars, the other number in the rate, and not with 12 brackets, the number of the same thing.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
 
 **Drill item 11 of 36**
@@ -1905,50 +1905,50 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 12 of 36**
 
-> A market stall sold 24 mugs, some at €4 each and some at €6 each, and took €112. How many of each price were sold?
+> A market stall sold 24 mugs, some at $4 each and some at $6 each, and took $112. How many of each price were sold?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
-- 16 mugs at €4 and 8 mugs at €6
-- 8 mugs at €4 and 16 mugs at €6
-- 12 mugs at €4 and 12 mugs at €6
+- 16 mugs at $4 and 8 mugs at $6
+- 8 mugs at $4 and 16 mugs at $6
+- 12 mugs at $4 and 12 mugs at $6
 
 **Shown as soon as you answer**
 
-- The answer: **16 mugs at €4 and 8 mugs at €6**.
+- The answer: **16 mugs at $4 and 8 mugs at $6**.
 - The working, step by step:
-  - Name the two missing numbers with letters, and write the two facts: x is the number of mugs at €4 and y is the number of mugs at €6. The count fact: x + y = 24. The totals fact: 4 × x + 6 × y = 112
+  - Name the two missing numbers with letters, and write the two facts: x is the number of mugs at $4 and y is the number of mugs at $6. The count fact: x + y = 24. The totals fact: 4 × x + 6 × y = 112
   - Use the count fact to write one letter in terms of the other: From x + y = 24, x = 24 − y
   - Put that into the totals fact, so that only one letter is left: 4 × (24 − y) + 6 × y = 112
   - Solve for the letter that is left: 4 × 24 = 96, so 96 − 4 × y + 6 × y = 112; that is 96 + 2 × y = 112; 2 × y = 112 − 96 = 16; y = 16 ÷ 2 = 8
   - Find the other number from the count fact: x = 24 − 8 = 16
   - Check both facts: 16 + 8 = 24; 4 × 16 + 6 × 8 = 64 + 48 = 112. Both hold
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
-- If you chose 8 mugs at €4 and 16 mugs at €6: You chose **8 mugs at €4 and 16 mugs at €6**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the mugs at €6, the thing that was named y, and not to the mugs at €4.
-- If you chose 12 mugs at €4 and 12 mugs at €6: You chose **12 mugs at €4 and 12 mugs at €6**. That is the answer you get when you use only the count fact and share the 24 out equally, which ignores the totals fact.
+- If you chose 8 mugs at $4 and 16 mugs at $6: You chose **8 mugs at $4 and 16 mugs at $6**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the mugs at $6, the thing that was named y, and not to the mugs at $4.
+- If you chose 12 mugs at $4 and 12 mugs at $6: You chose **12 mugs at $4 and 12 mugs at $6**. That is the answer you get when you use only the count fact and share the 24 out equally, which ignores the totals fact.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
 
 **Drill item 13 of 36**
 
-> A savings club works out a member’s total in euros this way: multiply the amount paid in by 1.5, then add a €30 welcome gift. Lena’s total is €630. How much did she pay in?
+> A savings club works out a member’s total in dollars this way: multiply the amount paid in by 1.5, then add a $30 welcome gift. Lena’s total is $630. How much did she pay in?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
-- €400
-- €390
-- €440
+- $400
+- $390
+- $440
 
 **Shown as soon as you answer**
 
-- The answer: **€400**.
+- The answer: **$400**.
 - The working, step by step:
   - List what is done to the missing number, in the order it is done: Start from the amount paid in. First it is multiplied by 1.5, then 30 is added. The result is 630
   - Write the undoing of each one, last one first: Multiplying by 1.5 is undone by dividing by 1.5; adding 30 is undone by taking away 30. Last one first: taking away 30, then dividing by 1.5
   - Apply the undoing to the result, one at a time: 630 − 30 = 600; 600 ÷ 1.5 = 400
   - Check by running the calculation forward: 400 × 1.5 = 600; 600 + 30 = 630, which is the 630 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
-- If you chose €390: You chose **€390**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
-- If you chose €440: You chose **€440**. That is the answer you get when you add 30 once more instead of undoing it by taking away 30.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+- If you chose $390: You chose **$390**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
+- If you chose $440: You chose **$440**. That is the answer you get when you add 30 once more instead of undoing it by taking away 30.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 14 of 36**
@@ -1994,14 +1994,14 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
   - Write the undoing of each one, last one first: Adding 6 is undone by taking away 6; multiplying by 3 is undone by dividing by 3; taking away 3 is undone by adding 3. Last one first: adding 3, then dividing by 3, then taking away 6
   - Apply the undoing to the result, one at a time: 78 + 3 = 81; 81 ÷ 3 = 27; 27 − 6 = 21
   - Check by running the calculation forward: 21 + 6 = 27; 27 × 3 = 81; 81 − 3 = 78, which is the 78 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 27 cm: You chose **27 cm**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 19 cm: You chose **19 cm**. That is the answer you get when you take away 3 once more instead of undoing it by adding 3.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 16 of 36**
 
-> A farm shop packed 30 bags of apples, some of 3 kg and some of 5 kg, and the bags weighed 114 kg in all. How many bags of each size were there?
+> A farm stand packed 30 bags of apples, some of 3 kg and some of 5 kg, and the bags weighed 114 kg in all. How many bags of each size were there?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -2070,7 +2070,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 19 of 36**
 
-*(Drawn by the app from the bank of Unit Two, unlabelled. This is a sample.)*
+*(Drawn by the app from the bank of Unit Two, unlabeled. This is a sample.)*
 
 > A baker has 161 cupcakes and wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row. Is that possible?
 
@@ -2099,7 +2099,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 20 of 36**
 
-*(Drawn by the app from the bank of Unit Two, unlabelled. This is a sample.)*
+*(Drawn by the app from the bank of Unit Two, unlabeled. This is a sample.)*
 
 > A baker has 161 cupcakes and wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row. Is that possible?
 
@@ -2148,7 +2148,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 22 of 36**
 
-*(Drawn by the app from the bank of Unit Two, unlabelled. This is a sample.)*
+*(Drawn by the app from the bank of Unit Two, unlabeled. This is a sample.)*
 
 > A baker has 161 cupcakes and wants to set them out on trays in equal rows, with more than one row and more than one cupcake in each row. Is that possible?
 
@@ -2177,57 +2177,57 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 23 of 36**
 
-> A shop works out the price after a coupon like this: take the full price, subtract €15, then halve what is left. A game costs €40 after the coupon. What was the full price?
+> A shop works out the price after a coupon like this: take the full price, subtract $15, then halve what is left. A game costs $40 after the coupon. What was the full price?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- €95
-- €110
-- €35
+- $95
+- $110
+- $35
 
 **Shown as soon as you answer**
 
-- The answer: **€95**, and the kind of problem is **Rearranging a formula**.
+- The answer: **$95**, and the kind of problem is **Rearranging a formula**.
 - The working, step by step:
   - List what is done to the missing number, in the order it is done: Start from the full price. First 15 is taken away from it, then the total is divided by 2. The result is 40
   - Write the undoing of each one, last one first: Taking away 15 is undone by adding 15; dividing by 2 is undone by multiplying by 2. Last one first: multiplying by 2, then adding 15
   - Apply the undoing to the result, one at a time: 40 × 2 = 80; 80 + 15 = 95
   - Check by running the calculation forward: 95 − 15 = 80; 80 ÷ 2 = 40, which is the 40 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
-- If you chose €110: You chose **€110**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
-- If you chose €35: You chose **€35**. That is the answer you get when you divide by 2 once more instead of undoing it by multiplying by 2.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the full price, subtract €15, then halve what is left” and “What was the full price?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the full price, subtract €15, then halve what is left” and “costs €40 after the coupon” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+- If you chose $110: You chose **$110**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
+- If you chose $35: You chose **$35**. That is the answer you get when you divide by 2 once more instead of undoing it by multiplying by 2.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the full price, subtract $15, then halve what is left” and “What was the full price?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the full price, subtract $15, then halve what is left” and “costs $40 after the coupon” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 24 of 36**
 
-> A cleaning firm uses 18 litres of cleaner for every 30 rooms. How many litres are needed for 45 rooms?
+> A cleaning firm uses 18 liters of cleaner for every 30 rooms. How many liters are needed for 45 rooms?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- 27 litres of cleaner
-- 12 litres of cleaner
-- 75 litres of cleaner
+- 27 liters of cleaner
+- 12 liters of cleaner
+- 75 liters of cleaner
 
 **Shown as soon as you answer**
 
-- The answer: **27 litres of cleaner**, and the kind of problem is **Proportion**.
+- The answer: **27 liters of cleaner**, and the kind of problem is **Proportion**.
 - The working, step by step:
-  - Pair the new amount with the matching number in the rate: The rate is 18 litres of cleaner for 30 rooms. The new amount is 45 rooms, so it is paired with the 30 rooms in the rate
+  - Pair the new amount with the matching number in the rate: The rate is 18 liters of cleaner for 30 rooms. The new amount is 45 rooms, so it is paired with the 30 rooms in the rate
   - Find how many times as big the new amount is: 45 ÷ 30 = 1.5, so the new amount is 1.5 times as big as 30
   - Make the other number that many times as big: 18 × 1.5 = 27
-  - Check the direction: 45 rooms is more than 30 rooms, so the answer should be more than 18 litres of cleaner, and 27 is more
+  - Check the direction: 45 rooms is more than 30 rooms, so the answer should be more than 18 liters of cleaner, and 27 is more
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
-- If you chose 12 litres of cleaner: You chose **12 litres of cleaner**. That is the answer you get when you divide 18 by 1.5 instead of multiplying, so the answer moves the wrong way: more rooms must mean more litres of cleaner.
-- If you chose 75 litres of cleaner: You chose **75 litres of cleaner**. That is the answer you get when you pair the new amount with 18 litres of cleaner, the other number in the rate, and not with 30 rooms, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 litres of cleaner for every 30 rooms” and “How many litres are needed for 45 rooms?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 litres of cleaner for every 30 rooms” and “for 45 rooms” give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is **“A rate, and a new amount to scale it to”**.
+- If you chose 12 liters of cleaner: You chose **12 liters of cleaner**. That is the answer you get when you divide 18 by 1.5 instead of multiplying, so the answer moves the wrong way: more rooms must mean more liters of cleaner.
+- If you chose 75 liters of cleaner: You chose **75 liters of cleaner**. That is the answer you get when you pair the new amount with 18 liters of cleaner, the other number in the rate, and not with 30 rooms, the number of the same thing.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 liters of cleaner for every 30 rooms” and “How many liters are needed for 45 rooms?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 liters of cleaner for every 30 rooms” and “for 45 rooms” give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
 
@@ -2281,7 +2281,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - Write the undoing of each one, last one first: Multiplying by 3 is undone by dividing by 3; adding 6 is undone by taking away 6. Last one first: taking away 6, then dividing by 3
   - Apply the undoing to the result, one at a time: 39 − 6 = 33; 33 ÷ 3 = 11
   - Check by running the calculation forward: 11 × 3 = 33; 33 + 6 = 39, which is the 39 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 7: You chose **7**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 15: You chose **15**. That is the answer you get when you add 6 once more instead of undoing it by taking away 6.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “multiply the number of cakes by 3, then add 6” and “How many cakes is it for?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
@@ -2321,7 +2321,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 28 of 36**
 
-> A swimming pool works out its locker fee in euros like this: take the number of lockers booked, subtract the 2 that are free, then multiply by 5. The fee is €30. How many lockers were booked?
+> A swimming pool works out its locker fee in dollars like this: take the number of lockers booked, subtract the 2 that are free, then multiply by 5. The fee is $30. How many lockers were booked?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2339,11 +2339,11 @@ Each question is shown with all of its answers, in order, and the names offered 
   - Write the undoing of each one, last one first: Taking away 2 is undone by adding 2; multiplying by 5 is undone by dividing by 5. Last one first: dividing by 5, then adding 2
   - Apply the undoing to the result, one at a time: 30 ÷ 5 = 6; 6 + 2 = 8
   - Check by running the calculation forward: 8 − 2 = 6; 6 × 5 = 30, which is the 30 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 6.4: You chose **6.4**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 152: You chose **152**. That is the answer you get when you multiply by 5 once more instead of undoing it by dividing by 5.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the number of lockers booked, subtract the 2 that are free, then multiply by 5” and “How many lockers were booked?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the number of lockers booked, subtract the 2 that are free, then multiply by 5” and “The fee is €30” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
+- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “take the number of lockers booked, subtract the 2 that are free, then multiply by 5” and “The fee is $30” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Quadratic equation**: The missing number is used once in the calculation, so each thing done to it can be undone in turn. **Quadratic equation** would be the name if it were multiplied by itself as well.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
@@ -2377,7 +2377,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 30 of 36**
 
-> A family bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each, and spent €84. How many herbs and how many shrubs did they buy?
+> A family bought 12 plants for the garden, some herbs at $3 each and some shrubs at $9 each, and spent $84. How many herbs and how many shrubs did they buy?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2400,14 +2400,14 @@ Each question is shown with all of its answers, in order, and the names offered 
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 8 herbs and 4 shrubs: You chose **8 herbs and 4 shrubs**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the shrubs, the thing that was named y, and not to the herbs.
 - If you chose 6 herbs and 6 shrubs: You chose **6 herbs and 6 shrubs**. That is the answer you get when you use only the count fact and share the 12 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each” and “spent €84” and “How many herbs and how many shrubs did they buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “bought 12 plants for the garden, some herbs at €3 each and some shrubs at €9 each” and “spent €84”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 12 plants for the garden, some herbs at $3 each and some shrubs at $9 each” and “spent $84” and “How many herbs and how many shrubs did they buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “bought 12 plants for the garden, some herbs at $3 each and some shrubs at $9 each” and “spent $84”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
 
 **Drill item 31 of 36**
 
-> A printer works out a quote in euros like this: divide the number of copies by 5, then add 12 for the set-up. The quote is €60. How many copies is it for?
+> A printer works out a quote in dollars like this: divide the number of copies by 5, then add 12 for the set-up. The quote is $60. How many copies is it for?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2425,17 +2425,17 @@ Each question is shown with all of its answers, in order, and the names offered 
   - Write the undoing of each one, last one first: Dividing by 5 is undone by multiplying by 5; adding 12 is undone by taking away 12. Last one first: taking away 12, then multiplying by 5
   - Apply the undoing to the result, one at a time: 60 − 12 = 48; 48 × 5 = 240
   - Check by running the calculation forward: 240 ÷ 5 = 48; 48 + 12 = 60, which is the 60 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 288: You chose **288**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 360: You chose **360**. That is the answer you get when you add 12 once more instead of undoing it by taking away 12.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “divide the number of copies by 5, then add 12 for the set-up” and “How many copies is it for?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “divide the number of copies by 5, then add 12 for the set-up” and “The quote is €60” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
+- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “divide the number of copies by 5, then add 12 for the set-up” and “The quote is $60” give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is **“A formula, and the result it came to”**.
 - Why not **Simultaneous equations**: Only one number is left out, and one calculation has a result to undo. **Simultaneous equations** would be the name if two numbers were left out and two separate facts were given about them.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 32 of 36**
 
-> A taxi fare is a starting charge of €6, plus €1.50 for each kilometre. One fare comes to €21. How many kilometres was the ride?
+> A taxi fare is a starting charge of $6, plus $1.50 for each kilometer. One fare comes to $21. How many kilometers was the ride?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2449,21 +2449,21 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 - The answer: **10 km**, and the kind of problem is **Rearranging a formula**.
 - The working, step by step:
-  - List what is done to the missing number, in the order it is done: Start from the kilometres. First it is multiplied by 1.5, then 6 is added. The result is 21
+  - List what is done to the missing number, in the order it is done: Start from the kilometers. First it is multiplied by 1.5, then 6 is added. The result is 21
   - Write the undoing of each one, last one first: Multiplying by 1.5 is undone by dividing by 1.5; adding 6 is undone by taking away 6. Last one first: taking away 6, then dividing by 1.5
   - Apply the undoing to the result, one at a time: 21 − 6 = 15; 15 ÷ 1.5 = 10
   - Check by running the calculation forward: 10 × 1.5 = 15; 15 + 6 = 21, which is the 21 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 8 km: You chose **8 km**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 18 km: You chose **18 km**. That is the answer you get when you add 6 once more instead of undoing it by taking away 6.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a starting charge of €6, plus €1.50 for each kilometre” and “How many kilometres was the ride?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “a starting charge of €6, plus €1.50 for each kilometre” and “One fare comes to €21” show a price for each kilometre, which looks like a rate, but a starting charge is added on top of it, and the problem gives the result of that whole calculation and asks for the kilometres in it. A rate with a fixed amount added on top is **“A formula, and the result it came to”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a starting charge of $6, plus $1.50 for each kilometer” and “How many kilometers was the ride?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “a starting charge of $6, plus $1.50 for each kilometer” and “One fare comes to $21” show a price for each kilometer, which looks like a rate, but a starting charge is added on top of it, and the problem gives the result of that whole calculation and asks for the kilometers in it. A rate with a fixed amount added on top is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
 **Drill item 33 of 36**
 
-> A school canteen with 3 cooks uses 18 eggs for every 12 pupils. Today 30 pupils are in for lunch. How many eggs are needed?
+> A school cafeteria with 3 cooks uses 18 eggs for every 12 students. Today 30 students are in for lunch. How many eggs are needed?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2477,21 +2477,21 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 - The answer: **45 eggs**, and the kind of problem is **Proportion**.
 - The working, step by step:
-  - Pair the new amount with the matching number in the rate: The rate is 18 eggs for 12 pupils. The new amount is 30 pupils, so it is paired with the 12 pupils in the rate
+  - Pair the new amount with the matching number in the rate: The rate is 18 eggs for 12 students. The new amount is 30 students, so it is paired with the 12 students in the rate
   - Find how many times as big the new amount is: 30 ÷ 12 = 2.5, so the new amount is 2.5 times as big as 12
   - Make the other number that many times as big: 18 × 2.5 = 45
-  - Check the direction: 30 pupils is more than 12 pupils, so the answer should be more than 18 eggs, and 45 is more
+  - Check the direction: 30 students is more than 12 students, so the answer should be more than 18 eggs, and 45 is more
   A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.
-- If you chose 7.2 eggs: You chose **7.2 eggs**. That is the answer you get when you divide 18 by 2.5 instead of multiplying, so the answer moves the wrong way: more pupils must mean more eggs.
-- If you chose 20 eggs: You chose **20 eggs**. That is the answer you get when you pair the new amount with 18 eggs, the other number in the rate, and not with 12 pupils, the number of the same thing.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 eggs for every 12 pupils” and “How many eggs are needed?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 eggs for every 12 pupils” and “Today 30 pupils are in for lunch” give so much for so many, 18 eggs for every 12 pupils, and a new amount of pupils. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is **“A rate, and a new amount to scale it to”**.
+- If you chose 7.2 eggs: You chose **7.2 eggs**. That is the answer you get when you divide 18 by 2.5 instead of multiplying, so the answer moves the wrong way: more students must mean more eggs.
+- If you chose 20 eggs: You chose **20 eggs**. That is the answer you get when you pair the new amount with 18 eggs, the other number in the rate, and not with 12 students, the number of the same thing.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “uses 18 eggs for every 12 students” and “How many eggs are needed?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A rate, and a new amount to scale it to.** The words “uses 18 eggs for every 12 students” and “Today 30 students are in for lunch” give so much for so many, 18 eggs for every 12 students, and a new amount of students. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is **“A rate, and a new amount to scale it to”**.
 - Why not **Rearranging a formula**: The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. **Rearranging a formula** would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.
 - Taught on: “Worked: the price of 12 kg of apples” (one tap opens the card).
 
 **Drill item 34 of 36**
 
-> The area of a rectangular pool, in square metres, is worked out by the rule: width × (width + 5). A pool’s area is 36 m². What is its width?
+> The area of a rectangular pool, in square meters, is worked out by the rule: width × (width + 5). A pool’s area is 36 m². What is its width?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2515,7 +2515,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you chose 6.5 m: You chose **6.5 m**. That is the answer you get when you stop after the *square root* and give 6.5, though it is x + 2.5 that is 6.5, so 2.5 still has to come off.
 - If you chose −9 m: You chose **−9 m**. That is the answer you get when you keep the answer below zero, −9, though the story rules it out.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “width × (width + 5)” and “What is its width?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “width × (width + 5)” and “A pool’s area is 36 m²” give a rule and the result it came to, 36 m², which looks like **“A formula, and the result it came to”**. But in the rule the missing width appears twice, once on its own and once inside the bracket, so it is multiplied by itself, and the answer is **“A formula in which the missing number is multiplied by itself”**.
+- What does the problem give that the missing number must fit? **A formula in which the missing number is multiplied by itself.** The words “width × (width + 5)” and “A pool’s area is 36 m²” give a rule and the result it came to, 36 m², which looks like **“A formula, and the result it came to”**. But in the rule the missing width appears twice, once on its own and once inside the parentheses, so it is multiplied by itself, and the answer is **“A formula in which the missing number is multiplied by itself”**.
 - Why not **Rearranging a formula**: The missing number is multiplied by itself, so it cannot be undone one thing at a time. **Rearranging a formula** would be the name if it appeared only once in the calculation.
 - Taught on: “Worked: the width of a banner” (one tap opens the card).
 
@@ -2539,7 +2539,7 @@ Each question is shown with all of its answers, in order, and the names offered 
   - Write the undoing of each one, last one first: Adding 1 is undone by taking away 1; multiplying by 5 is undone by dividing by 5. Last one first: dividing by 5, then taking away 1
   - Apply the undoing to the result, one at a time: 40 ÷ 5 = 8; 8 − 1 = 7
   - Check by running the calculation forward: 7 + 1 = 8; 8 × 5 = 40, which is the 40 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 7.8 m: You chose **7.8 m**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 199 m: You chose **199 m**. That is the answer you get when you multiply by 5 once more instead of undoing it by dividing by 5.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “A rectangular banner is 5 m long” and “a strip of 1 m is added to its width” and “How wide was the banner before?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
@@ -2579,7 +2579,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 43. What to carry away
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
 
 [reviewers only: card kind `recap`, id `recap-unknown`]
 
@@ -2617,7 +2617,7 @@ What does the problem give that the missing number must fit?
 
 ### 44. Where would you meet this?
 
-*Unit Three · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
+*Unit Three · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
 
 [reviewers only: card kind `transfer`, id `transfer-unknown`]
 
@@ -2648,7 +2648,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 12**
 
-> A nurse works out a baby’s feed in millilitres this way: take the baby’s weight in kilos, add 3, then multiply by 30. A baby’s feed is 240 mL. What does the baby weigh?
+> A nurse works out a baby’s feed in milliliters this way: take the baby’s weight in kilos, add 3, then multiply by 30. A baby’s feed is 240 mL. What does the baby weigh?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2666,7 +2666,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Write the undoing of each one, last one first: Adding 3 is undone by taking away 3; multiplying by 30 is undone by dividing by 30. Last one first: dividing by 30, then taking away 3
   - Apply the undoing to the result, one at a time: 240 ÷ 30 = 8; 8 − 3 = 5
   - Check by running the calculation forward: 5 + 3 = 8; 8 × 30 = 240, which is the 240 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 7.9 kg: You chose **7.9 kg**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 7197 kg: You chose **7197 kg**. That is the answer you get when you multiply by 30 once more instead of undoing it by dividing by 30.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the baby’s weight in kilos, add 3, then multiply by 30” and “What does the baby weigh?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
@@ -2694,7 +2694,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Write the undoing of each one, last one first: Taking away 4 is undone by adding 4; dividing by 3 is undone by multiplying by 3. Last one first: multiplying by 3, then adding 4
   - Apply the undoing to the result, one at a time: 32 × 3 = 96; 96 + 4 = 100
   - Check by running the calculation forward: 100 − 4 = 96; 96 ÷ 3 = 32, which is the 32 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 108 cm: You chose **108 cm**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 92 cm: You chose **92 cm**. That is the answer you get when you take away 4 once more instead of undoing it by adding 4.
 - What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “take the curtain’s width in cm, subtract 4, then divide by 3” and “How wide is it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
@@ -2704,7 +2704,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 12**
 
-> A shop charges a €6 delivery fee plus €3 for each plant. An order costs €42. How many plants were in it?
+> A shop charges a $6 delivery fee plus $3 for each plant. An order costs $42. How many plants were in it?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2722,11 +2722,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - Write the undoing of each one, last one first: Multiplying by 3 is undone by dividing by 3; adding 6 is undone by taking away 6. Last one first: taking away 6, then dividing by 3
   - Apply the undoing to the result, one at a time: 42 − 6 = 36; 36 ÷ 3 = 12
   - Check by running the calculation forward: 12 × 3 = 36; 36 + 6 = 42, which is the 42 the problem gives
-  Each thing done to the missing number can be cancelled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
+  Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the *formula* forward on the answer proves it.
 - If you chose 8: You chose **8**. That is the answer you get when you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.
 - If you chose 16: You chose **16**. That is the answer you get when you add 6 once more instead of undoing it by taking away 6.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a €6 delivery fee plus €3 for each plant” and “How many plants were in it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “a €6 delivery fee plus €3 for each plant” and “An order costs €42” show a price for each plant, which looks like a rate, but a delivery fee is added on top of it, and the problem gives the result of that whole calculation. A rate with a fixed amount added on top is **“A formula, and the result it came to”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “a $6 delivery fee plus $3 for each plant” and “How many plants were in it?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **A formula, and the result it came to.** The words “a $6 delivery fee plus $3 for each plant” and “An order costs $42” show a price for each plant, which looks like a rate, but a delivery fee is added on top of it, and the problem gives the result of that whole calculation. A rate with a fixed amount added on top is **“A formula, and the result it came to”**.
 - Why not **Proportion**: There is a calculation to undo, with a result it came to, and not only a rate to scale. **Proportion** would be the name if the problem gave only so much for so many and a new amount of the same thing.
 - Taught on: “Worked: the list price of a jacket” (one tap opens the card).
 
@@ -2816,7 +2816,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 7 of 12**
 
-> A team bought 20 items, some water bottles at €5 each and some caps at €8 each, and paid €124. How many bottles and how many caps did it buy?
+> A team bought 20 items, some water bottles at $5 each and some caps at $8 each, and paid $124. How many bottles and how many caps did it buy?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2839,14 +2839,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 8 bottles and 12 caps: You chose **8 bottles and 12 caps**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the caps, the thing that was named y, and not to the bottles.
 - If you chose 10 bottles and 10 caps: You chose **10 bottles and 10 caps**. That is the answer you get when you use only the count fact and share the 20 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 20 items, some water bottles at €5 each and some caps at €8 each” and “paid €124” and “How many bottles and how many caps did it buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “bought 20 items, some water bottles at €5 each and some caps at €8 each” and “paid €124”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “bought 20 items, some water bottles at $5 each and some caps at $8 each” and “paid $124” and “How many bottles and how many caps did it buy?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “bought 20 items, some water bottles at $5 each and some caps at $8 each” and “paid $124”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
 
 **Return case 8 of 12**
 
-> A lorry made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel, and carried 60 tonnes in all. How many deliveries of each were there?
+> A truck made 26 deliveries, some of 2 tons of sand and some of 3 tons of gravel, and carried 60 tons in all. How many deliveries of each were there?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give that the missing number must fit? → What kind of problem is it?
 
@@ -2869,8 +2869,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
   One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.
 - If you chose 8 deliveries of sand and 18 deliveries of gravel: You chose **8 deliveries of sand and 18 deliveries of gravel**. That is the answer you get when you attach the two numbers to the wrong things: 8 belongs to the deliveries of gravel, the thing that was named y, and not to the deliveries of sand.
 - If you chose 13 deliveries of sand and 13 deliveries of gravel: You chose **13 deliveries of sand and 13 deliveries of gravel**. That is the answer you get when you use only the count fact and share the 26 out equally, which ignores the totals fact.
-- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel” and “carried 60 tonnes in all” and “How many deliveries of each were there?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
-- What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “made 26 deliveries, some of 2 tonnes of sand and some of 3 tonnes of gravel” and “carried 60 tonnes in all”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
+- What does the problem ask you to work out? **A missing number, from a formula, a rate or totals.** The problem asks “made 26 deliveries, some of 2 tons of sand and some of 3 tons of gravel” and “carried 60 tons in all” and “How many deliveries of each were there?”, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no *right-angled triangle* or copy at another size, so the answer to the first question is **“A missing number, from a formula, a rate or totals”**.
+- What does the problem give that the missing number must fit? **Two facts that two missing numbers must both fit.** In “made 26 deliveries, some of 2 tons of sand and some of 3 tons of gravel” and “carried 60 tons in all”, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is **“Two facts that two missing numbers must both fit”**.
 - Why not **Rearranging a formula**: Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. **Rearranging a formula** would be the name if only one number were left out of one calculation.
 - Taught on: “Worked: pens and notebooks for an office” (one tap opens the card).
 

@@ -1,6 +1,6 @@
 # Learner view: US Civics & History, Unit Seven: Congress, the President and the courts in numbers
 
-*How big, how long and who is next: the offices of the government of the whole country, as facts to hold.* Unit revision 1, built to lesson standard 1, status: draft.
+*How big, how long and who is next: the offices of the government of the whole country, as facts to hold.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Facts to hold: how many, how long, and who comes next
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 1 of 44*
 
 [reviewers only: card kind `orient`, id `orient-nums`]
 
@@ -58,11 +58,11 @@ Within a table, every answer has the same form, so that you cannot pick an answe
 
 This unit does not try to hold everything about these bodies. It holds the facts that the course’s own material states, and no others.
 
-Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Three places, three rules for the number of seats
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 2 of 44*
 
 [reviewers only: card kind `concept`, id `con-rule`]
 
@@ -85,7 +85,7 @@ Three places, three rules. The three facts below say which rule goes with which 
 
 ### 3. What fixes the number of seats
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 3 of 44*
 
 [reviewers only: card kind `facts`, id `facts-rule`]
 
@@ -105,7 +105,7 @@ These are the three rules, each with how it fits the idea that Congress’s cham
 
 ### 4. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 4 of 44*
 
 [reviewers only: card kind `check`, id `chk-rl-house`]
 
@@ -124,7 +124,7 @@ These are the three rules, each with how it fits the idea that Congress’s cham
 
 ### 5. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 5 of 44*
 
 [reviewers only: card kind `check`, id `chk-rl-senate`]
 
@@ -143,7 +143,7 @@ These are the three rules, each with how it fits the idea that Congress’s cham
 
 ### 6. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 6 of 44*
 
 [reviewers only: card kind `check`, id `chk-rl-court`]
 
@@ -162,7 +162,7 @@ These are the three rules, each with how it fits the idea that Congress’s cham
 
 ### 7. Two chambers, two ways of sharing out seats
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 7 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-rule`]
 
@@ -205,7 +205,7 @@ Does a state with more people get more seats, or does every state get the same n
 
 ### 8. Three places, three numbers
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 8 of 44*
 
 [reviewers only: card kind `concept`, id `con-size`]
 
@@ -213,7 +213,7 @@ The first group was about how the seats are shared out. This group is about how 
 
 *Luis’s flash cards*
 
-> Luis is getting ready for his citizenship interview. His neighbour Dara, who became a citizen last year, writes three questions on cards for him to learn: how many voting members the House of Representatives has, how many senators there are, and how many justices sit on the Supreme Court. Luis reads the three questions and says that none of the numbers is new to him. The trouble, he says, is keeping them apart.
+> Luis is getting ready for his citizenship interview. His neighbor Dara, who became a citizen last year, writes three questions on cards for him to learn: how many voting members the House of Representatives has, how many senators there are, and how many justices sit on the Supreme Court. Luis reads the three questions and says that none of the numbers is new to him. The trouble, he says, is keeping them apart.
 
 Luis has the right worry. Each of the three places has a fixed number of seats, and the three numbers are different, so each one has to be learned against the other two. Dara’s three questions are the three facts below.
 
@@ -224,7 +224,7 @@ The quickest way to keep them apart is the size of each number. The House is by 
 
 ### 9. How many people sit in each place
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 9 of 44*
 
 [reviewers only: card kind `facts`, id `facts-size`]
 
@@ -244,7 +244,7 @@ These are the three numbers, each with how it fits the idea that the biggest pla
 
 ### 10. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 10 of 44*
 
 [reviewers only: card kind `check`, id `chk-sz-house`]
 
@@ -263,7 +263,7 @@ These are the three numbers, each with how it fits the idea that the biggest pla
 
 ### 11. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 11 of 44*
 
 [reviewers only: card kind `check`, id `chk-sz-senate`]
 
@@ -282,7 +282,7 @@ These are the three numbers, each with how it fits the idea that the biggest pla
 
 ### 12. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 12 of 44*
 
 [reviewers only: card kind `check`, id `chk-sz-court`]
 
@@ -301,7 +301,7 @@ These are the three numbers, each with how it fits the idea that the biggest pla
 
 ### 13. The big chamber and the smaller one
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 1 of 4 · Card 13 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-size`]
 
@@ -350,7 +350,7 @@ Is it the large chamber that counts people, or the smaller one that counts state
 
 ### 14. Every job has its own clock
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 14 of 44*
 
 [reviewers only: card kind `concept`, id `con-term`]
 
@@ -360,7 +360,7 @@ The first two groups were about how many people sit in each place. This group is
 
 > Zofia is nine, and she has noticed something. Whenever there is an election, her father Marek hears about the House of Representatives on the news. Only sometimes does he hear about the Senate, and only every fourth year does the news talk about the President. “Is every job on a different clock?” she asks. Marek says that it is, and adds that the judges in the court stories he reads are on a clock too, only a much longer one.
 
-Zofia is right. Each of these jobs has its own clock. A term is the length of time someone holds a job before it is up again. Four terms are worth holding, and from the shortest to the longest they are these. A member of the House of Representatives serves two years. The President serves four years, and so does the Vice President, who is elected along with the President. A senator serves six years. And a federal judge serves “during good behaviour”, which in practice means for life.
+Zofia is right. Each of these jobs has its own clock. A term is the length of time someone holds a job before it is up again. Four terms are worth holding, and from the shortest to the longest they are these. A member of the House of Representatives serves two years. The President serves four years, and so does the Vice President, who is elected along with the President. A senator serves six years. And a federal judge serves “during good behavior”, which in practice means for life.
 
 The House’s clock is the short one. Every House seat comes up again after two years, and that keeps the House close to what voters are thinking. The Senate’s is three times as long. The President’s four sits between them, longer than the House’s and shorter than the Senate’s.
 
@@ -371,7 +371,7 @@ The two numbers that are easiest to swap are the House’s two years and the Sen
 
 ### 15. How long each job lasts
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 15 of 44*
 
 [reviewers only: card kind `facts`, id `facts-term`]
 
@@ -389,11 +389,11 @@ These are the four lengths, each with how it fits the idea that every job has it
 - **For two years**: Every House seat is up again after two years. That short clock keeps the House close to what voters are thinking, and it is the shortest of the four.
 - **For six years**: A senator’s term is three times as long as a House member’s, and it is the longest term of any elected job here. It is easy to swap with the House’s two years, so hold it with its chamber: the Senate is the long one.
 - **For four years**: Four sits between the House’s two and the Senate’s six. The President and the Vice President are elected together, so they share the same four years.
-- **For life, in practice**: Federal judges serve “during good behaviour”, which in practice means for life. It is the longest clock of all, and it is the only one that is not a number of years.
+- **For life, in practice**: Federal judges serve “during good behavior”, which in practice means for life. It is the longest clock of all, and it is the only one that is not a number of years.
 
 ### 16. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 16 of 44*
 
 [reviewers only: card kind `check`, id `chk-tm-house`]
 
@@ -414,7 +414,7 @@ These are the four lengths, each with how it fits the idea that every job has it
 
 ### 17. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 17 of 44*
 
 [reviewers only: card kind `check`, id `chk-tm-senate`]
 
@@ -435,7 +435,7 @@ These are the four lengths, each with how it fits the idea that every job has it
 
 ### 18. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 18 of 44*
 
 [reviewers only: card kind `check`, id `chk-tm-pres`]
 
@@ -456,7 +456,7 @@ These are the four lengths, each with how it fits the idea that every job has it
 
 ### 19. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 19 of 44*
 
 [reviewers only: card kind `check`, id `chk-tm-judge`]
 
@@ -469,7 +469,7 @@ These are the four lengths, each with how it fits the idea that every job has it
 
 **Shown as soon as you answer**
 
-- The answer: **For life, in practice**. Why: Federal judges serve “during good behaviour”, which in practice means for life. It is the longest clock of all, and it is the only one that is not a number of years.
+- The answer: **For life, in practice**. Why: Federal judges serve “during good behavior”, which in practice means for life. It is the longest clock of all, and it is the only one that is not a number of years.
   - If you chose For two years: You chose **For two years**. That is the answer to a different fact: How long is a term in the House of Representatives?
   - If you chose For six years: You chose **For six years**. That is the answer to a different fact: How long is a term in the Senate?
   - If you chose For four years: You chose **For four years**. That is the answer to a different fact: How long is the term of the President, and of the Vice President who is elected along with the President?
@@ -477,7 +477,7 @@ These are the four lengths, each with how it fits the idea that every job has it
 
 ### 20. The short term and the long term
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 20 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-term`]
 
@@ -520,7 +520,7 @@ Is it the chamber whose seats come up again soon, or the chamber whose seats com
 
 ### 21. When there is an election, how much is up?
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 21 of 44*
 
 [reviewers only: card kind `concept`, id `con-up`]
 
@@ -528,20 +528,20 @@ A term says how long a job lasts. This group asks a different question: when an 
 
 *Two campaign offices*
 
-> On the night before an election, two friends meet at a café. Sofia volunteers for a woman who is running for a seat in the House of Representatives. Jon volunteers for a man who is running for a seat in the Senate. Sofia says that tomorrow every seat in the House is up, so the whole chamber could look different by morning. Jon says that his own race is one of only some of the Senate’s seats, so most of the senators will keep their jobs whatever happens tomorrow. Sofia asks about their neighbour, who is a federal judge, and Jon says that she is not on any list at all.
+> On the night before an election, two friends meet at a café. Sofia volunteers for a woman who is running for a seat in the House of Representatives. Jon volunteers for a man who is running for a seat in the Senate. Sofia says that tomorrow every seat in the House is up, so the whole chamber could look different by morning. Jon says that his own race is one of only some of the Senate’s seats, so most of the senators will keep their jobs whatever happens tomorrow. Sofia asks about their neighbor, who is a federal judge, and Jon says that she is not on any list at all.
 
 Sofia and Jon each say something true about their own chamber. In the House, the answer is all of it. Every seat is up every two years, so after one election the whole House can look different.
 
 In the Senate, the answer is about a third. A senator serves six years, and the seats are spread out so that about a third of them come up every two years. A Senate election therefore decides only about a third of the seats, and most senators keep their jobs through it. That is what Jon means.
 
-For federal judges the answer is none of them. A federal judge is not chosen at an election. The President nominates a judge, which means that the President puts a name forward, and the Senate confirms it, and the judge then serves during good behaviour. That is why Jon says that their neighbour is not on any list.
+For federal judges the answer is none of them. A federal judge is not chosen at an election. The President nominates a judge, which means that the President puts a name forward, and the Senate confirms it, and the judge then serves during good behavior. That is why Jon says that their neighbor is not on any list.
 
 So “how much is up?” is a question worth asking of any report about an election. If it is about the House, everything can change. If it is about the Senate, only about a third can. And a federal judge is never on the list.
 
 
 ### 22. How much is up at one election
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 22 of 44*
 
 [reviewers only: card kind `facts`, id `facts-up`]
 
@@ -557,11 +557,11 @@ These are the three answers, each with how it fits the idea that an election can
 
 - **All of them**: Every House seat is up every two years. That is why the House can change completely in a single election, and why it stays close to what voters are thinking.
 - **About a third of them**: A senator serves six years, and about a third of the seats come up every two years. So a Senate election can never change the whole chamber, and most senators keep their jobs through any one election.
-- **None of them**: A federal judge does not run for election. The President nominates a judge and the Senate confirms the choice, and the judge then serves during good behaviour, which in practice means for life.
+- **None of them**: A federal judge does not run for election. The President nominates a judge and the Senate confirms the choice, and the judge then serves during good behavior, which in practice means for life.
 
 ### 23. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 23 of 44*
 
 [reviewers only: card kind `check`, id `chk-up-house`]
 
@@ -580,7 +580,7 @@ These are the three answers, each with how it fits the idea that an election can
 
 ### 24. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 24 of 44*
 
 [reviewers only: card kind `check`, id `chk-up-senate`]
 
@@ -599,7 +599,7 @@ These are the three answers, each with how it fits the idea that an election can
 
 ### 25. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 25 of 44*
 
 [reviewers only: card kind `check`, id `chk-up-judge`]
 
@@ -611,14 +611,14 @@ These are the three answers, each with how it fits the idea that an election can
 
 **Shown as soon as you answer**
 
-- The answer: **None of them**. Why: A federal judge does not run for election. The President nominates a judge and the Senate confirms the choice, and the judge then serves during good behaviour, which in practice means for life.
+- The answer: **None of them**. Why: A federal judge does not run for election. The President nominates a judge and the Senate confirms the choice, and the judge then serves during good behavior, which in practice means for life.
   - If you chose All of them: You chose **All of them**. That is the answer to a different fact: When there is an election, how many of the House of Representatives’ seats are up?
   - If you chose About a third of them: You chose **About a third of them**. That is the answer to a different fact: When there is an election, how many of the Senate’s seats are up?
 - Taught on: “How much is up at one election” (one tap opens the card).
 
 ### 26. The whole chamber, and a part of it
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 2 of 4 · Card 26 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-up`]
 
@@ -667,7 +667,7 @@ Can one election change the whole chamber, or only a part of it?
 
 ### 27. Three jobs that each belong to one place or one person
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 27 of 44*
 
 [reviewers only: card kind `concept`, id `con-lead`]
 
@@ -690,7 +690,7 @@ The three facts below say which of the three jobs belongs to whom. Who holds the
 
 ### 28. Where tax bills begin, who leads the House, and who settles a tie
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 28 of 44*
 
 [reviewers only: card kind `facts`, id `facts-lead`]
 
@@ -710,7 +710,7 @@ These are the three answers, each with how it fits the idea that each job belong
 
 ### 29. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 29 of 44*
 
 [reviewers only: card kind `check`, id `chk-ld-tax`]
 
@@ -729,7 +729,7 @@ These are the three answers, each with how it fits the idea that each job belong
 
 ### 30. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 30 of 44*
 
 [reviewers only: card kind `check`, id `chk-ld-speaker`]
 
@@ -748,7 +748,7 @@ These are the three answers, each with how it fits the idea that each job belong
 
 ### 31. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 31 of 44*
 
 [reviewers only: card kind `check`, id `chk-ld-tie`]
 
@@ -767,7 +767,7 @@ These are the three answers, each with how it fits the idea that each job belong
 
 ### 32. If the President cannot serve
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 32 of 44*
 
 [reviewers only: card kind `concept`, id `con-line`]
 
@@ -775,9 +775,9 @@ The Vice President and the Speaker are both in the last group. This group puts t
 
 *A teacher’s question*
 
-> Mr Okafor teaches a citizenship class. At the end of the evening he asks the class a question. “Suppose the President resigned tonight. By tomorrow morning, somebody would be sworn in as the new President. Who would it be? And if that person could not do it either, who would be next?” Nobody in the class can answer yet.
+> Mr. Okafor teaches a citizenship class. At the end of the evening he asks the class a question. “Suppose the President resigned tonight. By tomorrow morning, somebody would be sworn in as the new President. Who would it be? And if that person could not do it either, who would be next?” Nobody in the class can answer yet.
 
-Mr Okafor’s question is about the line of succession, which means the order in which people take over a job. The President’s job never stands empty. If the President dies in office, resigns or is removed, somebody takes over at once, and the order in which they would is fixed in advance.
+Mr. Okafor’s question is about the line of succession, which means the order in which people take over a job. The President’s job never stands empty. If the President dies in office, resigns or is removed, somebody takes over at once, and the order in which they would is fixed in advance.
 
 The first in line is the Vice President. The Vice President is elected along with the President and belongs to the President’s part of the government, not to Congress. So the Vice President has two jobs: to preside over the Senate, voting only to break a tie, and to be first in line to become President.
 
@@ -788,7 +788,7 @@ The order is the whole fact: the Vice President first, the Speaker of the House 
 
 ### 33. First in line, and next
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 33 of 44*
 
 [reviewers only: card kind `facts`, id `facts-line`]
 
@@ -806,7 +806,7 @@ These are the two places in the line, each with how it fits the idea that the Pr
 
 ### 34. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 34 of 44*
 
 [reviewers only: card kind `check`, id `chk-ln-first`]
 
@@ -823,7 +823,7 @@ These are the two places in the line, each with how it fits the idea that the Pr
 
 ### 35. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 35 of 44*
 
 [reviewers only: card kind `check`, id `chk-ln-next`]
 
@@ -840,7 +840,7 @@ These are the two places in the line, each with how it fits the idea that the Pr
 
 ### 36. First in line, and next in line
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 3 of 4 · Card 36 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-line`]
 
@@ -870,7 +870,7 @@ Both offices have a second job that is easy to confuse with this one: the Vice P
 
 **How to tell them apart**
 
-Does the office take over straight away, or only after the first one cannot?
+Does the office take over right away, or only after the first one cannot?
 
 **Side by side**
 
@@ -889,7 +889,7 @@ Does the office take over straight away, or only after the first one cannot?
 
 ### 37. What a person must be to be President
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 37 of 44*
 
 [reviewers only: card kind `concept`, id `con-pres`]
 
@@ -910,7 +910,7 @@ Two of the four numbers are easy to swap: thirty-five, which is an age, and four
 
 ### 38. What it takes to be President
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 38 of 44*
 
 [reviewers only: card kind `facts`, id `facts-pres`]
 
@@ -932,7 +932,7 @@ These are the four conditions, each with how it fits the idea that Rui and Vera 
 
 ### 39. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 39 of 44*
 
 [reviewers only: card kind `check`, id `chk-pr-age`]
 
@@ -953,7 +953,7 @@ These are the four conditions, each with how it fits the idea that Rui and Vera 
 
 ### 40. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 40 of 44*
 
 [reviewers only: card kind `check`, id `chk-pr-born`]
 
@@ -974,7 +974,7 @@ These are the four conditions, each with how it fits the idea that Rui and Vera 
 
 ### 41. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 41 of 44*
 
 [reviewers only: card kind `check`, id `chk-pr-years`]
 
@@ -995,7 +995,7 @@ These are the four conditions, each with how it fits the idea that Rui and Vera 
 
 ### 42. A question from memory
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 42 of 44*
 
 [reviewers only: card kind `check`, id `chk-pr-twice`]
 
@@ -1016,7 +1016,7 @@ These are the four conditions, each with how it fits the idea that Rui and Vera 
 
 ### 43. The age, and the years of living here
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 43 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-pres`]
 
@@ -1216,7 +1216,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **For life, in practice**. Why: Federal judges serve “during good behaviour”, which in practice means for life. It is the longest clock of all, and it is the only one that is not a number of years.
+- The answer: **For life, in practice**. Why: Federal judges serve “during good behavior”, which in practice means for life. It is the longest clock of all, and it is the only one that is not a number of years.
   - If you chose For two years: You chose **For two years**. That is the answer to a different fact: How long is a term in the House of Representatives?
   - If you chose For six years: You chose **For six years**. That is the answer to a different fact: How long is a term in the Senate?
   - If you chose For four years: You chose **For four years**. That is the answer to a different fact: How long is the term of the President, and of the Vice President who is elected along with the President?
@@ -1262,7 +1262,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 **Shown as soon as you answer**
 
-- The answer: **None of them**. Why: A federal judge does not run for election. The President nominates a judge and the Senate confirms the choice, and the judge then serves during good behaviour, which in practice means for life.
+- The answer: **None of them**. Why: A federal judge does not run for election. The President nominates a judge and the Senate confirms the choice, and the judge then serves during good behavior, which in practice means for life.
   - If you chose All of them: You chose **All of them**. That is the answer to a different fact: When there is an election, how many of the House of Representatives’ seats are up?
   - If you chose About a third of them: You chose **About a third of them**. That is the answer to a different fact: When there is an election, how many of the Senate’s seats are up?
 - Taught on: “How much is up at one election” (one tap opens the card).
@@ -1322,7 +1322,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **Shown as soon as you answer**
 
 - The answer: **The Vice President**. Why: The Vice President is elected along with the President and belongs to the President’s part of the government, not to Congress. Being first in line is the Vice President’s second job, beside presiding over the Senate.
-  - If you chose The Speaker of the House: You chose **The Speaker of the House**. That is the answer to a different fact: Who is next in line after the Vice President? Both are a place in the line to become President if the President cannot serve. First in line is **The Vice President**. Next, after that office, is **The Speaker of the House**. Does the office take over straight away, or only after the first one cannot?
+  - If you chose The Speaker of the House: You chose **The Speaker of the House**. That is the answer to a different fact: Who is next in line after the Vice President? Both are a place in the line to become President if the President cannot serve. First in line is **The Vice President**. Next, after that office, is **The Speaker of the House**. Does the office take over right away, or only after the first one cannot?
 - Taught on: “First in line, and next” (one tap opens the card).
 
 **Drill item 18 of 22**
@@ -1335,7 +1335,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 **Shown as soon as you answer**
 
 - The answer: **The Speaker of the House**. Why: If the Vice President cannot take over either, the next in line is the Speaker of the House, who leads the House of Representatives.
-  - If you chose The Vice President: You chose **The Vice President**. That is the answer to a different fact: If the President dies, resigns or is removed, who is first in line to take over? Both are a place in the line to become President if the President cannot serve. First in line is **The Vice President**. Next, after that office, is **The Speaker of the House**. Does the office take over straight away, or only after the first one cannot?
+  - If you chose The Vice President: You chose **The Vice President**. That is the answer to a different fact: If the President dies, resigns or is removed, who is first in line to take over? Both are a place in the line to become President if the President cannot serve. First in line is **The Vice President**. Next, after that office, is **The Speaker of the House**. Does the office take over right away, or only after the first one cannot?
 - Taught on: “First in line, and next” (one tap opens the card).
 
 **Drill item 19 of 22**
@@ -1410,7 +1410,7 @@ The cards are out of view from here. The drill has one stage. Nothing here is gr
 
 ### 44. What to carry away
 
-*Unit Seven · rev 1 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 44*
+*Unit Seven · rev 2 · Draft: not yet read by a newcomer · Part 4 of 4 · Card 44 of 44*
 
 [reviewers only: card kind `recap`, id `recap-nums`]
 

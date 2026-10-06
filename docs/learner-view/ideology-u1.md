@@ -1,6 +1,6 @@
 # Learner view: Political Ideologies, Unit One: Whose side a text is on
 
-*The first question, and the five answers it sorts every text into.* Unit revision 2, built to lesson standard 1, status: draft.
+*The first question, and the five answers it sorts every text into.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -18,15 +18,15 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before any name: whose side is the text on?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 1 of 49*
 
 [reviewers only: card kind `orient`, id `orient-sides`]
 
 After this unit you can read a short text, such as a few lines of a speech, a leaflet, a post, a notice or the start of an opinion piece, and say which of five answers it gets to the first question. You will be able to point to the words that tell you, and to say why it is not one of the other four. The text can be about wages, a border, a church, an exam desk or a bus lane. It can be something a friend sends you or something you come across yourself.
 
-You already do a rough version of this. Someone shares a post and a friend says, "That’s just socialist." A speech comes on the radio and an uncle says, "That’s fascist." A neighbour defends the church bells and someone mutters, "Typical reactionary." Each of those is a name reached in one jump, and a name thrown across a room is often not a description of anything.
+You already do a rough version of this. Someone shares a post and a friend says, "That’s just socialist." A speech comes on the radio and an uncle says, "That’s fascist." A neighbor defends the church bells and someone mutters, "Typical reactionary." Each of those is a name reached in one jump, and a name thrown across a room is often not a description of anything.
 
-A name has to be earned from what a text says. Before it, there is an earlier question that a person can answer by pointing at words: who or what is this text for? Is it for working people against the people who own the businesses? For a nation, or its ordinary people? For the old ways of faith, home and custom? For what every person is owed? Or is it for nobody in particular, because it is a notice, a timetable or an order about who is in charge?
+A name has to be earned from what a text says. Before it, there is an earlier question that a person can answer by pointing at words: who or what is this text for? Is it for working people against the people who own the businesses? For a nation, or its ordinary people? For the old ways of faith, home and custom? For what every person is owed? Or is it for nobody in particular, because it is a notice, a schedule or an order about who is in charge?
 
 If you skip that question you are wrong before you have chosen a word. You have read a notice about a bus lane as a political movement, or a text about a country as a text about wages. So before any label there is this one question. This unit teaches it.
 
@@ -55,17 +55,17 @@ The unit has seven parts, and you can stop after any of them.
 6. The fifth answer beside the other four
 7. The question, two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. Answers about who a country is for
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 2 of 49*
 
 [reviewers only: card kind `term`, id `term-ideology`]
 
 Before the first of the five answers, there is one word that this whole subject leans on. It is easier to see in a case first.
 
-> Two neighbours wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbour Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree, but each has given, in a few lines, an answer to who the country is for and a view of how it should be run.
+> Two neighbors wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbor Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree, but each has given, in a few lines, an answer to who the country is for and a view of how it should be run.
 
 Dolores and Emeka disagree, but look at what each of them has done. Each has said who the country is for: the people who keep it running, in her words, and what was handed down by the people before us, in his. And each has said what follows for how it should be run: the government should answer to those who do the work, or change should be slow. Two things have gone together: an answer to who it is for, and a view of how it should be run.
 
@@ -80,7 +80,7 @@ This is why the first question is the one it is. Each of the first four answers 
 
 ### 3. Working people and owners, on opposite sides
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 3 of 49*
 
 [reviewers only: card kind `meet`, id `meet-class`]
 
@@ -115,7 +115,7 @@ In this unit the answer is also the name of the kind of text: **“Working peopl
 
 ### 4. Working people, against those who own the businesses: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 4 of 49*
 
 [reviewers only: card kind `again`, id `again-class`]
 
@@ -148,7 +148,7 @@ The two stories share nothing else. One is a depot and a raise, and the other is
 
 ### 5. The story does not decide the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 5 of 49*
 
 [reviewers only: card kind `lens`, id `lens-sides`]
 
@@ -168,7 +168,7 @@ Two other things change on purpose: how angry a text sounds, and whether you are
 
 ### 6. Working people, against those who own the businesses: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 6 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-class`]
 
@@ -200,7 +200,7 @@ In your own life it is the talk at a workplace when pay or hours change, a union
 
 ### 7. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 7 · Card 7 of 49*
 
 [reviewers only: card kind `check`, id `check-class`]
 
@@ -229,7 +229,7 @@ The pieces you can tap:
 
 ### 8. One people and its country
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 8 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 8 of 49*
 
 [reviewers only: card kind `meet`, id `meet-nation`]
 
@@ -264,7 +264,7 @@ In this unit the answer is also the name of the kind of text: **“The nation, o
 
 ### 9. The nation, or its ordinary people: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 9 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 9 of 49*
 
 [reviewers only: card kind `again`, id `again-nation`]
 
@@ -299,7 +299,7 @@ The two stories share nothing else, so this holds wherever a text speaks for one
 
 ### 10. The nation, or its ordinary people: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 10 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 10 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-nation`]
 
@@ -331,7 +331,7 @@ In your own life it is the "us" and "them" of a speech, the way a news story tal
 
 ### 11. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 11 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 11 of 49*
 
 [reviewers only: card kind `check`, id `check-nation`]
 
@@ -352,7 +352,7 @@ In your own life it is the "us" and "them" of a speech, the way a news story tal
 
 ### 12. Working people, against those who own the businesses or The nation, or its ordinary people: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 12 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 12 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-nation`]
 
@@ -394,7 +394,7 @@ Who is "us", and who is "them"? Are they the people who work for pay and the peo
 
 ### 13. A text that speaks of the country and still takes the workers’ side
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 13 of 49*
 
 [reviewers only: card kind `exception`, id `exc-ourcountry`]
 
@@ -436,7 +436,7 @@ It is worth knowing that this is a decision. In life, a speaker can mean both, a
 
 ### 14. Workers and owners named only to be denied
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 7 · Card 14 of 49*
 
 [reviewers only: card kind `exception`, id `exc-deny`]
 
@@ -486,7 +486,7 @@ This does not make every text that mentions a boss and a worker the second answe
 
 ### 15. The ways handed down from the past
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 15 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 15 of 49*
 
 [reviewers only: card kind `meet`, id `meet-tradition`]
 
@@ -521,7 +521,7 @@ In this unit the answer is also the name of the kind of text: **“Old ways of f
 
 ### 16. Old ways of faith, family and custom: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 16 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 16 of 49*
 
 [reviewers only: card kind `again`, id `again-tradition`]
 
@@ -554,7 +554,7 @@ One text is about a whole country and the other is about one school. That makes 
 
 ### 17. Old ways of faith, family and custom: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 17 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 17 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-tradition`]
 
@@ -586,11 +586,11 @@ In your own life it is the holiday that has to be kept just so, the grandparent 
 
 ### 18. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 18 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 18 of 49*
 
 [reviewers only: card kind `check`, id `check-tradition`]
 
-> Councillor Ashby opposes opening the town market on Sundays. 'Our town has always set Sunday aside for church and home. These customs were handed down to us, and they ought to decide how we run the town, whatever the stalls would earn.'
+> Council Member Ashby opposes opening the town market on Sundays. 'Our town has always set Sunday aside for church and home. These customs were handed down to us, and they ought to decide how we run the town, whatever the stalls would earn.'
 
 **The question:** **“Who or what does the text put first?”** Which of the answers you have met so far fits this case?
 
@@ -609,7 +609,7 @@ In your own life it is the holiday that has to be kept just so, the grandparent 
 
 ### 19. Working people, against those who own the businesses or Old ways of faith, family and custom: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 19 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 19 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-tradition`]
 
@@ -651,7 +651,7 @@ Is the text about the jobs and money of working people against owners? Or is it 
 
 ### 20. The nation, or its ordinary people or Old ways of faith, family and custom: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 20 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 20 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-nation-tradition`]
 
@@ -693,7 +693,7 @@ What does the text hold up as first: the people itself, marked out by country, c
 
 ### 21. One people, and the faith of the fathers
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 21 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 21 of 49*
 
 [reviewers only: card kind `exception`, id `exc-faith`]
 
@@ -737,7 +737,7 @@ The answer goes this way round for a reason. The later questions for the third a
 
 ### 22. Old customs mourned, and the owners blamed
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 22 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 7 · Card 22 of 49*
 
 [reviewers only: card kind `exception`, id `exc-loomhands`]
 
@@ -785,7 +785,7 @@ It is worth knowing that this is a decision. In life, a text can mourn what was 
 
 ### 23. What every person is owed
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 23 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 23 of 49*
 
 [reviewers only: card kind `meet`, id `meet-rights`]
 
@@ -793,7 +793,7 @@ Three answers so far. The fourth asks a different thing of a text. It is not abo
 
 *The open-counter pamphlet*
 
-> From a pamphlet of the Open Counter Society: 'Nobody should need a licence to open a stall or a barber's chair. ⟦Each person is owed the freedom to speak, to believe, to own and to trade as they choose⟧, and ⟦that freedom comes before any plan anyone has for the country⟧.'
+> From a pamphlet of the Open Counter Society: 'Nobody should need a license to open a stall or a barber's chair. ⟦Each person is owed the freedom to speak, to believe, to own and to trade as they choose⟧, and ⟦that freedom comes before any plan anyone has for the country⟧.'
 
 Stripped of its story, the case is this:
 
@@ -820,7 +820,7 @@ In this unit the answer is also the name of the kind of text: **“Rights and fa
 
 ### 24. Rights and fair treatment for everyone: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 24 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 24 of 49*
 
 [reviewers only: card kind `again`, id `again-rights`]
 
@@ -832,7 +832,7 @@ The second case.
 
 *The speech about every child*
 
-> From a speech: 'Whatever your name or your bank balance, every child in this country is owed a doctor when they are ill and a school that will teach them. That is not a favour. It is what each person is owed, and a decent society puts it first.'
+> From a speech: 'Whatever your name or your bank balance, every child in this country is owed a doctor when they are ill and a school that will teach them. That is not a favor. It is what each person is owed, and a decent society puts it first.'
 **You are asked:** In *The open-counter pamphlet*, these words show it: “Each person is owed the freedom to speak, to believe, to own and to trade as they choose” and “that freedom comes before any plan anyone has for the country”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
@@ -853,7 +853,7 @@ What they share is the shape: every person, something owed, and put first. Neith
 
 ### 25. Rights and fair treatment for everyone: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 25 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 25 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-rights`]
 
@@ -875,7 +875,7 @@ Naming groups does not either. A text that sorts people into workers and owners 
 
 **Where you will hear it**
 
-"Everyone is entitled to a fair hearing." "Nobody should be turned away for who they are." "These are rights, not favours." "Equal treatment for every person." "Freedom to speak, believe, own and trade."
+"Everyone is entitled to a fair hearing." "Nobody should be turned away for who they are." "These are rights, not favors." "Equal treatment for every person." "Freedom to speak, believe, own and trade."
 
 In your own life it is the argument over whether a rule is fair to everyone, a petition for a service every household should have, the words "that is not fair" said of a rule that treats everyone alike, or an opinion piece about what a person can expect from a government.
 
@@ -885,7 +885,7 @@ In your own life it is the argument over whether a rule is fair to everyone, a p
 
 ### 26. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 26 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 26 of 49*
 
 [reviewers only: card kind `check`, id `check-rights`]
 
@@ -910,7 +910,7 @@ In your own life it is the argument over whether a rule is fair to everyone, a p
 
 ### 27. Working people, against those who own the businesses or Rights and fair treatment for everyone: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 27 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 27 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-rights`]
 
@@ -952,7 +952,7 @@ Is there a side the text is against, the people who own where others work? Or do
 
 ### 28. The nation, or its ordinary people or Rights and fair treatment for everyone: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 28 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 28 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-nation-rights`]
 
@@ -964,7 +964,7 @@ The second and fourth answers are easy to mix up when a text speaks of race or o
 
 **Case B**
 
-> At a housing hearing: 'Nothing in the lending rules mentions race. But applicants of one race are sent to the back of the queue year after year, and a rule that treats everyone alike while leaving them there is a rule that has to change. Nobody is above anybody here. Fair treatment is owed to every applicant.'
+> At a housing hearing: 'Nothing in the lending rules mentions race. But applicants of one race are sent to the back of the line year after year, and a rule that treats everyone alike while leaving them there is a rule that has to change. Nobody is above anybody here. Fair treatment is owed to every applicant.'
 
 **What to compare.** Both cases are about race. Compare one thing: is one people placed above the others, or is nobody placed above anybody?
 
@@ -994,7 +994,7 @@ Is one people being put first, perhaps above the others? Or is something said to
 
 ### 29. Old ways of faith, family and custom or Rights and fair treatment for everyone: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 29 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 29 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-tradition-rights`]
 
@@ -1036,7 +1036,7 @@ Is the text’s reason that the thing was handed down from the past? Or is its r
 
 ### 30. What every child is owed, and teachers against owners
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 30 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 30 of 49*
 
 [reviewers only: card kind `exception`, id `exc-fairstart`]
 
@@ -1044,7 +1044,7 @@ The last three cards compared the fourth answer with the first, second and third
 
 *The teachers’ leaflet*
 
-> From a teachers' union leaflet: 'Every child in this city is owed a school with a roof that does not leak. But the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year. Teachers and owners want different things, and we are with the teachers.'
+> From a teachers' union leaflet: 'Every child in this city is owed a school with a roof that does not leak. But the charter-school chain that owns our school takes a fee for every student while the staff who teach them are paid less each year. Teachers and owners want different things, and we are with the teachers.'
 
 The leaflet begins by saying that every child is owed a school with a roof that does not leak. Saying what every person is owed is what you point to for **“Rights and fair treatment for everyone”**. Yet the answer for this case is **“Working people, against those who own the businesses”**.
 
@@ -1052,16 +1052,16 @@ The leaflet begins by saying that every child is owed a school with a roof that 
 
 The pieces you can tap:
 1. “Every child in this city is owed a school with a roof that does not leak.”
-2. “But the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year.”
+2. “But the charter-school chain that owns our school takes a fee for every student while the staff who teach them are paid less each year.”
 3. “Teachers and owners want different things, and we are with the teachers.”
 
 **Shown as soon as you tap.** The words are “Teachers and owners want different things, and we are with the teachers.”.
 - If you tapped “Every child in this city is owed a school with a roof that does not leak.”: That says what every child is owed, which is what you point to for the fourth answer, and the text does say it. But the text does not stop there.
-- If you tapped “But the academy chain that owns our school takes a fee for every pupil while the staff who teach them are paid less each year.”: That names the owners and the staff. It is half of what settles it. The words that finish it say which side the text is on.
+- If you tapped “But the charter-school chain that owns our school takes a fee for every student while the staff who teach them are paid less each year.”: That names the owners and the staff. It is half of what settles it. The words that finish it say which side the text is on.
 
 **Why this is Working people, against those who own the businesses and not Rights and fair treatment for everyone**
 
-The leaflet does say what every child is owed. If that were all it said, it would be **“Rights and fair treatment for everyone”**. But it goes on to name the academy chain that owns the school and the staff who teach in it, and says "teachers and owners want different things, and we are with the teachers". That is working people set against owners, with the text on the workers’ side.
+The leaflet does say what every child is owed. If that were all it said, it would be **“Rights and fair treatment for everyone”**. But it goes on to name the charter-school chain that owns the school and the staff who teach in it, and says "teachers and owners want different things, and we are with the teachers". That is working people set against owners, with the text on the workers’ side.
 
 So the case shows both answers at once. When it does, the first answer wins. The promise to every child is in the text, but what the text does with it is argue for the teachers against the owners.
 
@@ -1078,7 +1078,7 @@ It is worth knowing that this is a decision. In life, a text can speak for every
 
 ### 31. Freedom, and old values to guide it
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 31 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 31 of 49*
 
 [reviewers only: card kind `exception`, id `exc-lowtax`]
 
@@ -1120,7 +1120,7 @@ It is worth knowing that this is a decision. In life, people who want a small go
 
 ### 32. A fair hearing for all, and the people first
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 32 of 49*
 
 [reviewers only: card kind `exception`, id `exc-twoduties`]
 
@@ -1162,7 +1162,7 @@ It is worth knowing that this is a decision. In life, people can mean both a fai
 
 ### 33. A wrong idea: "they both talk about race, so they are the same"
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 7 · Card 33 of 49*
 
 [reviewers only: card kind `refute`, id `refute-race`]
 
@@ -1189,30 +1189,30 @@ This is true whichever way you feel about either text. Telling them apart is not
 
 ### 34. Who rules, or one practical matter, and no side
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 34 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 34 of 49*
 
 [reviewers only: card kind `meet`, id `meet-none`]
 
 Four answers so far, and in each one the text had a side, or a thing it put first. Many texts have neither, and there is an answer for them.
 
-*The lift notice*
+*The elevator notice*
 
-> A notice on the doors of Birch House: '⟦The lift will be out of service from Monday 3 March until Friday 14 March while the motor is replaced⟧. ⟦Residents who need help with the stairs should ring the caretaker⟧ on the number below. Rubbish is collected on Thursdays as usual.'
+> A notice on the doors of Birch House: '⟦The elevator will be out of service from Monday, March 3 until Friday, March 14 while the motor is replaced⟧. ⟦Residents who need help with the stairs should call the superintendent⟧ at the number below. Trash is collected on Thursdays as usual.'
 
 Stripped of its story, the case is this:
 
-- The text is a notice on the doors of a building. It says the lift will be out of service between two dates, and why.
-- It says what residents should do: ring the caretaker if they need help with the stairs.
+- The text is a notice on the doors of a building. It says the elevator will be out of service between two dates, and why.
+- It says what residents should do: call the superintendent if they need help with the stairs.
 - It sorts nobody into groups. There are no workers set against owners, no people or country, no old ways held up, and nothing said to be owed to every person.
 - Nothing in it takes a side. It only says what will happen and what to do about it.
 
-Set this text against the four answers you have met. Nobody is on one side of a split with someone on the other. No people is put first. No old ways are held up. Nothing is said to be owed to every person. The text tells residents what is happening to the lift.
+Set this text against the four answers you have met. Nobody is on one side of a split with someone on the other. No people is put first. No old ways are held up. Nothing is said to be owed to every person. The text tells residents what is happening to the elevator.
 
-What is left is a text about one practical matter. It says what will happen, when, and what to do. A text like this is very common: a timetable, a sign, a letter from the council about bins. It is not a failure to find an answer. It is an answer.
+What is left is a text about one practical matter. It says what will happen, when, and what to do. A text like this is very common: a schedule, a sign, a letter from the city about trash pickup. It is not a failure to find an answer. It is an answer.
 
 A text of this answer comes in two shapes. This notice is the first: it says what will happen, when, and what to do. In the second shape the text says who holds power and how they keep it: who chairs a council and for how long, or who may give orders and who must obey. A text like that can be dry or frightening, but it still names no side, because saying who decides is not the same as saying whom the text speaks for.
 
-Why is there this answer at all? Because a list with only four answers would push a notice about a lift into one of them. A reader who had to choose would find a side in the text that is not there. A fifth answer lets you look, find nothing to name, and say so.
+Why is there this answer at all? Because a list with only four answers would push a notice about an elevator into one of them. A reader who had to choose would find a side in the text that is not there. A fifth answer lets you look, find nothing to name, and say so.
 
 **What you must be able to point to.** A text about who holds power and how they keep it, or about one practical matter, and no side it speaks for: no working people against owners, no nation or people, no old ways, and nothing every person is owed. This comes from one case so far. The next card tests it on a second case.
 
@@ -1226,40 +1226,40 @@ After this answer nothing more is asked. There is no finer name to give, and tha
 
 ### 35. No side named: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 35 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 35 of 49*
 
 [reviewers only: card kind `again`, id `again-none`]
 
-The lift notice gave you what to point to from one case: a text about who holds power and how they keep it, or about one practical matter, and no side it speaks for: no working people against owners, no nation or people, no old ways, and nothing every person is owed. Here is a second case, in another setting and a second shape: a text that says who is in charge.
+The elevator notice gave you what to point to from one case: a text about who holds power and how they keep it, or about one practical matter, and no side it speaks for: no working people against owners, no nation or people, no old ways, and nothing every person is owed. Here is a second case, in another setting and a second shape: a text that says who is in charge.
 
-The first case again, in one line. *The lift notice*: “The lift will be out of service from Monday 3 March until Friday 14 March while the motor is replaced” and “Residents who need help with the stairs should ring the caretaker”
+The first case again, in one line. *The elevator notice*: “The elevator will be out of service from Monday, March 3 until Friday, March 14 while the motor is replaced” and “Residents who need help with the stairs should call the superintendent”
 
 The second case.
 
 *The town charter*
 
-> From the town charter of Brennick: 'The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above £50,000.' Copies of the charter are available at the library.
-**You are asked:** In *The lift notice*, these words show it: “The lift will be out of service from Monday 3 March until Friday 14 March while the motor is replaced” and “Residents who need help with the stairs should ring the caretaker”. Which words show the same thing in this case? Tap them.
+> From the town charter of Brennick: 'The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above $50,000.' Copies of the charter are available at the library.
+**You are asked:** In *The elevator notice*, these words show it: “The elevator will be out of service from Monday, March 3 until Friday, March 14 while the motor is replaced” and “Residents who need help with the stairs should call the superintendent”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “From the town charter of Brennick”
-2. “The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above £50,000.”
+2. “The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above $50,000.”
 3. “Copies of the charter are available at the library”
 
-**Shown as soon as you tap.** The words are “The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above £50,000.”.
+**Shown as soon as you tap.** The words are “The chair of the council is chosen by the full council each May. The chair may serve two terms and signs any contract above $50,000.”.
 - If you tapped “From the town charter of Brennick”: That says where the words come from. It is not what the words say.
 - If you tapped “Copies of the charter are available at the library”: That says where to get the charter. It is practical too, but it is not the part that says who is in charge.
 
 **What the two share**
 
-Both texts say what happens, or who is in charge, and stop there. The notice says when the lift is out and who to ring. The charter says how the council chair is chosen, for how long, and what the chair signs. Neither sorts people into groups. Neither says whom it speaks for, or what anyone is owed.
+Both texts say what happens, or who is in charge, and stop there. The notice says when the elevator is out and who to call. The charter says how the council chair is chosen, for how long, and what the chair signs. Neither sorts people into groups. Neither says whom it speaks for, or what anyone is owed.
 
-One text is about a lift and the other about a council, and one is a practical matter while the other is about who holds power. Neither difference matters. What the two share is that they name no side. That is what **“No side named”** names.
+One text is about an elevator and the other about a council, and one is a practical matter while the other is about who holds power. Neither difference matters. What the two share is that they name no side. That is what **“No side named”** names.
 
 
 ### 36. No side named: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 36 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 36 of 49*
 
 [reviewers only: card kind `portrait`, id `portrait-none`]
 
@@ -1268,7 +1268,7 @@ You now know what to point to for **“No side named”**. Because this answer i
 **What it is usually like**
 
 - It is full of specifics: dates, places, amounts, names of offices, forms and deadlines. These say what is to be done, or who is in charge.
-- It tells the reader what to do: ring this number, book ahead, put the bins out by seven, declare cash at the red desk.
+- It tells the reader what to do: call this number, book ahead, put the trash cans out by seven, declare cash at the red desk.
 - It can be about who holds power and how they keep it: how a chair is chosen, who signs, how long they stay, who may not speak. Some of these texts are dry and some are frightening. A text can describe a ruler’s orders and still name no side.
 - Nobody is on the far side of a split, no people is put first, no old way is held up, and nobody is said to be owed anything.
 
@@ -1276,13 +1276,13 @@ You now know what to point to for **“No side named”**. Because this answer i
 
 This answer does not say that the text is harmless, or that nothing is wrong. A ruler’s orders can be cruel and still get this answer, because the question is whom or what the text puts first, and orders that only say who decides put no one first.
 
-It does not say that the writer has no opinion either. A councillor can call a bus lane “communism on wheels”, and the plan is still a plan: those words say what the councillor thinks, and the plan says what it says. What you point to is what the text itself says: one practical matter, or who is in charge.
+It does not say that the writer has no opinion either. A council member can call a bus lane “communism on wheels”, and the plan is still a plan: those words say what the council member thinks, and the plan says what it says. What you point to is what the text itself says: one practical matter, or who is in charge.
 
 **Where you will hear it**
 
 "The office will be closed on Monday." "Doors open at nine; bring a form of identification." "The chair serves two terms." "By order of the Governor." "The council votes on Tuesday."
 
-In your own life it is most of what you read in a day: a bus timetable, a letter from the council, a sign on a door, a message about when a meeting is. It is also the way a plain proposal can be given a political name by someone who dislikes it.
+In your own life it is most of what you read in a day: a bus schedule, a letter from the council, a sign on a door, a message about when a meeting is. It is also the way a plain proposal can be given a political name by someone who dislikes it.
 
 **The question to ask when you spot it**
 
@@ -1290,7 +1290,7 @@ In your own life it is most of what you read in a day: a bus timetable, a letter
 
 ### 37. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 37 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 37 of 49*
 
 [reviewers only: card kind `check`, id `check-none`]
 
@@ -1313,13 +1313,13 @@ In your own life it is most of what you read in a day: a bus timetable, a letter
 
 ### 38. A wrong idea: "he called it communism, so that is what it is"
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 38 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 7 · Card 38 of 49*
 
 [reviewers only: card kind `refute`, id `refute-insult`]
 
-The lift notice and the charter are plain. People often meet this answer in another form: a plain proposal that someone has given a big political name.
+The elevator notice and the charter are plain. People often meet this answer in another form: a plain proposal that someone has given a big political name.
 
-**The idea, as people say it:** "The councillor called the new bus lane communism on wheels. A plan that gets a name like that must be a communist plan."
+**The idea, as people say it:** "The council member called the new bus lane communism on wheels. A plan that gets a name like that must be a communist plan."
 
 **This is wrong.**
 
@@ -1340,7 +1340,7 @@ Describing what a text says and attacking it are different jobs, and this course
 
 ### 39. Working people, against those who own the businesses or No side named: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 39 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 39 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-class-none`]
 
@@ -1348,7 +1348,7 @@ Now the pairs that involve the fifth answer. The first and the fifth are easy to
 
 **Case A**
 
-> Calder ferry timetable from 1 April: one sailing a day, leaving the island at 8.15 and returning from the mainland at 5.40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
+> Calder ferry schedule from April 1: one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
 
 **Case B**
 
@@ -1362,7 +1362,7 @@ Now the pairs that involve the fifth answer. The first and the fifth are easy to
 
 **Why this one and not the other**
 
-In Case A the ferry is cut to one sailing a day and the text gives the timetable: when the boat leaves, when it returns, who needs to book. It takes no side. The answer is **“No side named”**.
+In Case A the ferry is cut to one sailing a day and the text gives the schedule: when the boat leaves, when it returns, who needs to book. It takes no side. The answer is **“No side named”**.
 
 In Case B the same cut is told as a quarrel between the ferry company’s owners and the crews who work the boats, and the text stands with the crews. The answer is **“Working people, against those who own the businesses”**.
 
@@ -1382,7 +1382,7 @@ Does the text take the workers’ side against the owners? Or does it only say w
 
 ### 40. The nation, or its ordinary people or No side named: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 40 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 40 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-nation-none`]
 
@@ -1394,7 +1394,7 @@ The second and fifth answers are easy to mix up when a text is about a country, 
 
 **Case B**
 
-> Calder ferry timetable from 1 April: one sailing a day, leaving the island at 8.15 and returning from the mainland at 5.40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
+> Calder ferry schedule from April 1: one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
 
 **What to compare.** Both cases are about the cut to the Calder ferry. Compare one thing: does the text speak for one people and put it first, or only say what will happen?
 
@@ -1406,7 +1406,7 @@ The second and fifth answers are easy to mix up when a text is about a country, 
 
 In Case A the cut is told as an island cut off from the rest of its own country. The text says the islanders are as much a part of our nation as anyone, and that a nation that leaves its own people behind has stopped being one people. It puts the people first. The answer is **“The nation, or its ordinary people”**.
 
-In Case B the text gives the timetable and says who needs to book. It names no people and no country. The answer is **“No side named”**.
+In Case B the text gives the schedule and says who needs to book. It names no people and no country. The answer is **“No side named”**.
 
 Both texts are about the same ferry. One speaks for a people, and the other says only what will happen.
 
@@ -1424,7 +1424,7 @@ Does the text speak for one people and put it first? Or does it only say who is 
 
 ### 41. Old ways of faith, family and custom or No side named: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 41 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 41 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-tradition-none`]
 
@@ -1432,11 +1432,11 @@ The third and fifth answers are easy to mix up when a text is about a church, a 
 
 **Case A**
 
-> Calder ferry timetable from 1 April: one sailing a day, leaving the island at 8.15 and returning from the mainland at 5.40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
+> Calder ferry schedule from April 1: one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
 
 **Case B**
 
-> One sailing a day means no Sunday boat, and the island has crossed to the mainland church on the Sunday boat for two hundred years. The Sunday crossing, the church and the old island customs are what should guide how this ferry is run, not a timetable drawn up by strangers.
+> One sailing a day means no Sunday boat, and the island has crossed to the mainland church on the Sunday boat for two hundred years. The Sunday crossing, the church and the old island customs are what should guide how this ferry is run, not a schedule drawn up by strangers.
 
 **What to compare.** Both cases are about the cut to the Calder ferry. Compare one thing: does the text hold up old ways as what should guide, or only say what will happen?
 
@@ -1446,7 +1446,7 @@ The third and fifth answers are easy to mix up when a text is about a church, a 
 
 **Why this one and not the other**
 
-In Case A the text gives the timetable. It names no custom, no church and nothing handed down. The answer is **“No side named”**.
+In Case A the text gives the schedule. It names no custom, no church and nothing handed down. The answer is **“No side named”**.
 
 In Case B the same cut is told as the loss of the Sunday boat that the island has used to reach the mainland church for two hundred years. The text says the Sunday crossing, the church and the old island customs should guide how the ferry is run. The answer is **“Old ways of faith, family and custom”**.
 
@@ -1466,7 +1466,7 @@ Does the text hold up old ways as what should guide? Or does it only handle one 
 
 ### 42. Rights and fair treatment for everyone or No side named: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 42 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 42 of 49*
 
 [reviewers only: card kind `lookalike`, id `look-rights-none`]
 
@@ -1478,7 +1478,7 @@ The fourth and fifth answers are the last pair. Both can be about forms, appeals
 
 **Case B**
 
-> Calder ferry timetable from 1 April: one sailing a day, leaving the island at 8.15 and returning from the mainland at 5.40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
+> Calder ferry schedule from April 1: one sailing a day, leaving the island at 8:15 and returning from the mainland at 5:40. Foot passengers do not need to book. Vehicles must book 48 hours ahead on the number below.
 
 **What to compare.** Both cases are about the cut to the Calder ferry. Compare one thing: does the text say that every person is owed something, or only say what will happen?
 
@@ -1490,7 +1490,7 @@ The fourth and fifth answers are the last pair. Both can be about forms, appeals
 
 In Case A the text says that every islander is owed a way to a hospital and a school, whatever their age, income or health, and that fair treatment for every person means a crossing they can rely on. It puts what is owed first. The answer is **“Rights and fair treatment for everyone”**.
 
-In Case B the text gives the timetable. It says who needs to book and by when. Nothing is said to be owed to anyone. The answer is **“No side named”**.
+In Case B the text gives the schedule. It says who needs to book and by when. Nothing is said to be owed to anyone. The answer is **“No side named”**.
 
 A ferry is a service, and a service is not a right. A text about a service is the fourth answer only when it says that every person is owed it.
 
@@ -1508,27 +1508,27 @@ Does the text say that every person is owed something? Or does it only say how o
 
 ### 43. A ruler’s orders
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 43 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 7 · Card 43 of 49*
 
 [reviewers only: card kind `exception`, id `exc-ruler`]
 
-The last pairs kept the fifth answer to notices and timetables. It also covers a kind of text that sounds far more serious: orders about who holds power and how they keep it.
+The last pairs kept the fifth answer to notices and schedules. It also covers a kind of text that sounds far more serious: orders about who holds power and how they keep it.
 
 *The Governor’s order*
 
-> Order of the Governor of the Eastern District: 'Two newspapers are closed from today. The Harbour party is dissolved and its offices sealed. A watcher will be named in every street to report who meets whom. The Governor thanks those who obey, and these orders will stand for as long as he chooses.'
+> Order of the Governor of the Eastern District: 'Two newspapers are closed from today. The Harbor party is dissolved and its offices sealed. A watcher will be named in every street to report who meets whom. The Governor thanks those who obey, and these orders will stand for as long as he chooses.'
 
 The Governor closes newspapers, bans a party and sets a watcher in every street. Texts that put one people first and silence everyone else can do all of these things, so a reader may take this one for **“The nation, or its ordinary people”**. Yet the answer for this case is **“No side named”**.
 
 **You are asked:** This looks like **“The nation, or its ordinary people”**. Before you read why it is **“No side named”**, tap the words in the case that settle it.
 
 The pieces you can tap:
-1. “Two newspapers are closed from today. The Harbour party is dissolved and its offices sealed.”
+1. “Two newspapers are closed from today. The Harbor party is dissolved and its offices sealed.”
 2. “A watcher will be named in every street to report who meets whom.”
 3. “The Governor thanks those who obey, and these orders will stand for as long as he chooses.”
 
 **Shown as soon as you tap.** The words are “The Governor thanks those who obey, and these orders will stand for as long as he chooses.”.
-- If you tapped “Two newspapers are closed from today. The Harbour party is dissolved and its offices sealed.”: That is how this ruler keeps power. Texts that put one people first can do the same, which is why this looks like the second answer. But closing papers and banning parties is a way of keeping power. It does not say whom the text speaks for.
+- If you tapped “Two newspapers are closed from today. The Harbor party is dissolved and its offices sealed.”: That is how this ruler keeps power. Texts that put one people first can do the same, which is why this looks like the second answer. But closing papers and banning parties is a way of keeping power. It does not say whom the text speaks for.
 - If you tapped “A watcher will be named in every street to report who meets whom.”: That is another way of keeping power. It is what makes the text look like the second answer, and it still names no people and no side.
 
 **Why this is No side named and not The nation, or its ordinary people**
@@ -1556,7 +1556,7 @@ The same goes for a text that praises a ruler without saying whom the ruler serv
 
 ### 44. The question you have been answering all along
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 44 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 44 of 49*
 
 [reviewers only: card kind `question`, id `q-sides`]
 
@@ -1585,7 +1585,7 @@ In this unit each answer is itself the name of a kind, and so rules out the othe
 
 Each of the four sides is a different answer to who a country is for, and each comes with its own names. The questions that come next ask what that side wants, so which questions come next depends on this answer. A text that speaks for no side has nothing more to name.
 
-A text can only be read for what it is about. If you take a notice about a lift for a text on the side of the workers, you go looking for owners that are not there. If you take a text about what every person is owed for a text about one people, you change whom it speaks for. Getting the first answer wrong means asking the wrong questions next, however carefully you ask them.
+A text can only be read for what it is about. If you take a notice about an elevator for a text on the side of the workers, you go looking for owners that are not there. If you take a text about what every person is owed for a text about one people, you change whom it speaks for. Getting the first answer wrong means asking the wrong questions next, however carefully you ask them.
 
 That is why this question comes first, before any finer name, and why every case in this subject starts with it. Each of the first four answers is where a different *ideology* starts.
 
@@ -1627,7 +1627,7 @@ The decisions run in one order. **“Working people, against those who own the b
 
 ### 45. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 45 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 45 of 49*
 
 [reviewers only: card kind `check`, id `check-sides`]
 
@@ -1654,7 +1654,7 @@ The decisions run in one order. **“Working people, against those who own the b
 
 ### 46. A whole case, from the question to the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 46 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 46 of 49*
 
 [reviewers only: card kind `worked`, id `worked-homes`]
 
@@ -1704,7 +1704,7 @@ Here the answer and the likeness agree, so it stands. The question comes first, 
 
 ### 47. A second whole case, where the words point the wrong way
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 47 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 47 of 49*
 
 [reviewers only: card kind `worked`, id `worked-wage`]
 
@@ -1754,7 +1754,7 @@ When that happens, go back to the question and find the words in the text that a
 
 The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
-Some of these texts are only a notice or a timetable, and some name workers and owners without taking a side. That is on purpose. Saying that no side is named is one of the five answers, and you will need it as often as the other four.
+Some of these texts are only a notice or a schedule, and some name workers and owners without taking a side. That is on purpose. Saying that no side is named is one of the five answers, and you will need it as often as the other four.
 
 #### Stage 1 of 3. One question at a time.
 
@@ -1762,7 +1762,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 1 of 39**
 
-> Our members lay every brick of the Larkfield flats and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
+> Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.
 
 **You are asked:** Who or what does the text put first?
 
@@ -1785,7 +1785,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 2 of 39**
 
-> Notice to all warehouse staff: from the first of the month, shift swaps must be requested through the rota desk at least two days ahead. Requests made on the day cannot be accepted. Questions to the shift supervisor.
+> Notice to all warehouse staff: from the first of the month, shift swaps must be requested through the scheduling desk at least two days ahead. Requests made on the day cannot be accepted. Questions to the shift supervisor.
 
 **You are asked:** Who or what does the text put first?
 
@@ -1797,7 +1797,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “from the first of the month, shift swaps must be requested through the rota desk at least two days ahead”. It is addressed to staff and takes no side between staff and owners.
+- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “from the first of the month, shift swaps must be requested through the scheduling desk at least two days ahead”. It is addressed to staff and takes no side between staff and owners.
   - Why not **“Working people, against those who own the businesses”**: The notice is about a workplace, and workers are the people it is written to, but nothing in it sets them against anyone. It tells them how to ask for a swap.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above.
@@ -2081,7 +2081,7 @@ The question is shown with all five of its answers, in order.
 - "The bosses own the yard and we do the work. We know which side we are on."
 - "Our country, our people, first."
 - "The faith and the customs we were given are what a country should be guided by."
-- "Nobody should need a licence to say what they think."
+- "Nobody should need a license to say what they think."
 - "The bus now stops at the corner of Mill Road."
 
 **Shown as soon as you answer**
@@ -2089,7 +2089,7 @@ The question is shown with all five of its answers, in order.
 - The answer is: "The faith and the customs we were given are what a country should be guided by." It holds up what was handed down, a faith and its customs, as what should guide. The other four sort workers from owners, put one people first, say what a person is owed, or only inform.
 - If you chose "The bosses own the yard and we do the work. We know which side we are on.": that belongs to **“Working people, against those who own the businesses”**.
 - If you chose "Our country, our people, first.": that belongs to **“The nation, or its ordinary people”**.
-- If you chose "Nobody should need a licence to say what they think.": that belongs to **“Rights and fair treatment for everyone”**.
+- If you chose "Nobody should need a license to say what they think.": that belongs to **“Rights and fair treatment for everyone”**.
 - If you chose "The bus now stops at the corner of Mill Road.": that belongs to **“No side named”**.
 - Taught on: “Old ways of faith, family and custom: what it is like” (one tap opens the card).
 
@@ -2099,7 +2099,7 @@ The question is shown with all five of its answers, in order.
 
 - A union statement that the drivers and the company owners want different things.
 - A rally speech that this land is for its own people.
-- A parish letter that the old festivals should come before the timetable.
+- A parish letter that the old festivals should come before the schedule.
 - A speech that every child is owed a school and a doctor, whatever the family earns.
 - A notice that the clinic opens at eight.
 
@@ -2108,7 +2108,7 @@ The question is shown with all five of its answers, in order.
 - The answer is: A speech that every child is owed a school and a doctor, whatever the family earns. It says what every person is owed, and puts that first. It takes no side between groups, and holds up neither one people nor the past.
 - If you chose “A union statement that the drivers and the company owners want different things.”: that belongs to **“Working people, against those who own the businesses”**.
 - If you chose “A rally speech that this land is for its own people.”: that belongs to **“The nation, or its ordinary people”**.
-- If you chose “A parish letter that the old festivals should come before the timetable.”: that belongs to **“Old ways of faith, family and custom”**.
+- If you chose “A parish letter that the old festivals should come before the schedule.”: that belongs to **“Old ways of faith, family and custom”**.
 - If you chose “A notice that the clinic opens at eight.”: that belongs to **“No side named”**.
 - Taught on: “Rights and fair treatment for everyone: what it is like” (one tap opens the card).
 
@@ -2120,11 +2120,11 @@ The question is shown with all five of its answers, in order.
 - "This is our land and our people, and we come first."
 - "The old ways are what should guide us."
 - "Each person is owed the freedom to say what they think."
-- "The bridge is closed until 14 March. Use the Mill Lane crossing."
+- "The bridge is closed until March 14. Use the Mill Lane crossing."
 
 **Shown as soon as you answer**
 
-- The answer is: "The bridge is closed until 14 March. Use the Mill Lane crossing." It says only what will happen and where to go, and it speaks for no side. In the other four, a side is named or a thing is held up as first.
+- The answer is: "The bridge is closed until March 14. Use the Mill Lane crossing." It says only what will happen and where to go, and it speaks for no side. In the other four, a side is named or a thing is held up as first.
 - If you chose "The mill owners got richer and the weavers got poorer, and I am with the weavers.": that belongs to **“Working people, against those who own the businesses”**.
 - If you chose "This is our land and our people, and we come first.": that belongs to **“The nation, or its ordinary people”**.
 - If you chose "The old ways are what should guide us.": that belongs to **“Old ways of faith, family and custom”**.
@@ -2155,7 +2155,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the text had only said that dinner staff would be paid on the 28th, with no firm, no owners and no side taken, it would be **“No side named”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2233,7 +2233,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 22 of 39**
 
-> From the first of June, recycling collection on Hollin Road moves from Mondays to Tuesdays. Put bins out by seven in the morning. Missed collections can be reported to the council by phone.
+> From the first of June, recycling collection on Hollin Road moves from Mondays to Tuesdays. Put trash cans out by seven in the morning. Missed collections can be reported to the council by phone.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2245,10 +2245,10 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “recycling collection on Hollin Road moves from Mondays to Tuesdays” and “Put bins out by seven in the morning”. It speaks for no side.
+- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “recycling collection on Hollin Road moves from Mondays to Tuesdays” and “Put trash cans out by seven in the morning”. It speaks for no side.
   - Why not **“Rights and fair treatment for everyone”**: A collection is a service the council provides, but the notice does not say that every household is owed one. It says which day.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
@@ -2275,7 +2275,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the speaker had said that everyone who lives in the city is one people with one future, and that the city comes first, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2305,7 +2305,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 25 of 39**
 
-> A notice at the customs post: 'Travellers carrying more than 10,000 in cash must declare it at the red desk. Declarations take about ten minutes. Failure to declare may lead to a fine.'
+> A notice at the customs post: 'Travelers carrying more than 10,000 in cash must declare it at the red desk. Declarations take about ten minutes. Failure to declare may lead to a fine.'
 
 **You are asked:** Who or what does the text put first?
 
@@ -2317,10 +2317,10 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No side named.**” The text says how one practical matter is handled: “Travellers carrying more than 10,000 in cash must declare it at the red desk”. It speaks for no people.
-  - Why not **“The nation, or its ordinary people”**: A border is where texts for the nation are often written, but this one only says what a traveller must do.
+- If you are right: “Right: **No side named.**” The text says how one practical matter is handled: “Travelers carrying more than 10,000 in cash must declare it at the red desk”. It speaks for no people.
+  - Why not **“The nation, or its ordinary people”**: A border is where texts for the nation are often written, but this one only says what a traveler must do.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
@@ -2329,7 +2329,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 26 of 39**
 
-> The school's new timetable drops morning prayers and the harvest assembly. 'These were passed down by every teacher before us,' the head of governors wrote. 'The old ways are not a decoration. They are what a school, and a country, should be built on.'
+> The school's new schedule drops morning prayers and the harvest assembly. 'These were passed down by every teacher before us,' the chair of the school board wrote. 'The old ways are not a decoration. They are what a school, and a country, should be built on.'
 
 **You are asked:** Who or what does the text put first?
 
@@ -2348,7 +2348,7 @@ The question is shown with all five of its answers, in order.
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can love the country and its past, and both can say "our country" and "our ways". **“The nation, or its ordinary people”** puts one people first: its country, its culture or its birth. **“Old ways of faith, family and custom”** puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide. What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life. **“Old ways of faith, family and custom”** holds up what was handed down from the past as what should guide. **“Rights and fair treatment for everyone”** holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed. Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?
   - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
-- What would make it a different name: If the head had written that the timetable broke what every pupil is owed, whatever their beliefs, it would be **“Rights and fair treatment for everyone”**.
+- What would make it a different name: If the chair had written that the schedule broke what every student is owed, whatever their beliefs, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “The ways handed down from the past” (one tap opens the card).
 
 **Drill item 27 of 39**
@@ -2377,7 +2377,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 28 of 39**
 
-> The county show is the pride of this country, and the stallholders who set it up at four each morning are paid by the hour to make the show's owners rich. The owners and the stallholders are on opposite sides of the fence, and this letter is written from the stallholders' side.
+> The county fair is the pride of this country, and the vendors who set it up at four each morning are paid by the hour to make the show's owners rich. The owners and the vendors are on opposite sides of the fence, and this letter is written from the vendors' side.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2389,20 +2389,20 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Working people, against those who own the businesses.**” The text opens with the country and then splits the people at the show into stallholders and owners, and stands with the first: “The owners and the stallholders are on opposite sides of the fence, and this letter is written from the stallholders' side”.
-  - Why not **“The nation, or its ordinary people”**: “The pride of this country” is only where the story is set. The text speaks for no one people. It speaks for the stallholders against the owners.
+- If you are right: “Right: **Working people, against those who own the businesses.**” The text opens with the country and then splits the people at the show into vendors and owners, and stands with the first: “The owners and the vendors are on opposite sides of the fence, and this letter is written from the vendors' side”.
+  - Why not **“The nation, or its ordinary people”**: “The pride of this country” is only where the story is set. The text speaks for no one people. It speaks for the vendors against the owners.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the letter had said that owners and stallholders alike are one people and that the show belongs to the country, it would be **“The nation, or its ordinary people”**.
+- What would make it a different name: If the letter had said that owners and vendors alike are one people and that the show belongs to the country, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
 **Drill item 29 of 39**
 
-> In a healthy country the foreman and the boss and the labourer share one flag, and whoever tells them they are enemies is the enemy of the whole people. We are one body, and we will keep it whole.
+> In a healthy country the foreman and the boss and the laborer share one flag, and whoever tells them they are enemies is the enemy of the whole people. We are one body, and we will keep it whole.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2414,7 +2414,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **The nation, or its ordinary people.**” The text names the foreman, the boss and the labourer only to put them on one side, and it speaks for the whole people: “In a healthy country the foreman and the boss and the labourer share one flag” and “We are one body, and we will keep it whole”.
+- If you are right: “Right: **The nation, or its ordinary people.**” The text names the foreman, the boss and the laborer only to put them on one side, and it speaks for the whole people: “In a healthy country the foreman and the boss and the laborer share one flag” and “We are one body, and we will keep it whole”.
   - Why not **“Working people, against those who own the businesses”**: Workers and a boss are named, which is what the first answer looks for. But the text stands with none of them against the others. It says they are one.
 - If you miss: “The answer is **The nation, or its ordinary people.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
@@ -2422,12 +2422,12 @@ The question is shown with all five of its answers, in order.
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
   - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
 - This case may have brought back *The depot leaflet*, which was **“Working people, against those who own the businesses”**. When a likeness and the answers disagree, go by the words that answer the question.
-- What would make it a different name: If the text had said that the labourer and the boss are on opposite sides and had stood with the labourer, it would be **“Working people, against those who own the businesses”**.
+- What would make it a different name: If the text had said that the laborer and the boss are on opposite sides and had stood with the laborer, it would be **“Working people, against those who own the businesses”**.
 - Taught on: “One people and its country” (one tap opens the card).
 
 **Drill item 30 of 39**
 
-> At the council meeting Councillor Drake called the new bus-lane plan 'communism on wheels'. The plan paints a bus lane on Mill Road for £40,000 and starts in March. The council votes on Tuesday.
+> At the council meeting Council Member Drake called the new bus-lane plan 'communism on wheels'. The plan paints a bus lane on Mill Road for $40,000 and starts in March. The council votes on Tuesday.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2439,10 +2439,10 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “The plan paints a bus lane on Mill Road for £40,000 and starts in March” and “The council votes on Tuesday”. The councillor throws a name at the plan, and a name thrown at a plan does not make the plan speak for a side.
-  - Why not **“Working people, against those who own the businesses”**: “Communism on wheels” is a name people use for working people against owners, but nothing in the plan, or in anything the councillor says about it, sets workers against owners.
+- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “The plan paints a bus lane on Mill Road for $40,000 and starts in March” and “The council votes on Tuesday”. The council member throws a name at the plan, and a name thrown at a plan does not make the plan speak for a side.
+  - Why not **“Working people, against those who own the businesses”**: “Communism on wheels” is a name people use for working people against owners, but nothing in the plan, or in anything the council member says about it, sets workers against owners.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
@@ -2452,7 +2452,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 31 of 39**
 
-> Our grandmothers kept the Sabbath and the chapel supper, and those ways should guide this town. The mill's owners now rota us on Sundays and keep the extra profit. The people who work the shifts and the people who own the mill are on opposite sides, and this notice is on the side of the shifts.
+> Our grandmothers kept the Sabbath and the chapel supper, and those ways should guide this town. The mill's owners now schedule us on Sundays and keep the extra profit. The people who work the shifts and the people who own the mill are on opposite sides, and this notice is on the side of the shifts.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2464,13 +2464,13 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Working people, against those who own the businesses.**” The text names the mill’s owners and the people who work the shifts, and takes the side of the shifts: “The mill's owners now rota us on Sundays and keep the extra profit” and “The people who work the shifts and the people who own the mill are on opposite sides, and this notice is on the side of the shifts”.
+- If you are right: “Right: **Working people, against those who own the businesses.**” The text names the mill’s owners and the people who work the shifts, and takes the side of the shifts: “The mill's owners now schedule us on Sundays and keep the extra profit” and “The people who work the shifts and the people who own the mill are on opposite sides, and this notice is on the side of the shifts”.
   - Why not **“Old ways of faith, family and custom”**: Old ways are in the text: the Sabbath and the chapel supper, held up as the guide. On its own that would be the third answer. But the text also sets the people who work against the owners, and when a case shows both, the answer is **“Working people, against those who own the businesses”**.
 - If you miss: “The answer is **Working people, against those who own the businesses.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: This case does show that. It also shows working people set against those who own the businesses, and when a case shows both, the answer is **Working people, against those who own the businesses**. Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - This case may have brought back *The harvest sermon*, which was **“Old ways of faith, family and custom”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the notice had stopped after its first sentence, it would be **“Old ways of faith, family and custom”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
@@ -2552,7 +2552,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 35 of 39**
 
-> The Chairman has spoken on the radio: 'I alone decide who may stand for the council, and I alone decide who may speak at its meetings. Those who obey will find me generous. The Chairman's word stands.' Seven councillors were replaced last week.
+> The Chairman has spoken on the radio: 'I alone decide who may stand for the council, and I alone decide who may speak at its meetings. Those who obey will find me generous. The Chairman's word stands.' Seven council members were replaced last week.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2567,7 +2567,7 @@ The question is shown with all five of its answers, in order.
 - If you are right: “Right: **No side named.**” The text says who holds power and how they keep it: “I alone decide who may stand for the council, and I alone decide who may speak at its meetings” and “The Chairman's word stands”. It speaks for no people and no side.
   - Why not **“The nation, or its ordinary people”**: A ruler who silences others is what texts for the nation can sound like. But this text never says whom it speaks for. It only says who decides.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
@@ -2597,7 +2597,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 36 of 39**
 
-> "The councillor called the new bus lane communism on wheels, so the plan must be a communist plan."
+> "The council member called the new bus lane communism on wheels, so the plan must be a communist plan."
 
 **You are asked:** Who or what does the text put first? (asked of what the claim describes)
 
@@ -2611,8 +2611,8 @@ The question is shown with all five of its answers, in order.
 
 - The answer is: **No side named.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
-- The fault: The claim takes a name that was thrown as an insult and treats it as a description. The words the councillor threw tell you what he thinks of the plan. They do not tell you what the plan says. An *ideology* begins from someone or something put first, and the plan puts no one first.
-- The claim, put right (always the last thing shown): The councillor called the plan “communism on wheels”. The plan only says where a lane will be painted, what it will cost and when it starts. The answer is **“No side named”**. A name thrown at a plan is an insult until the plan itself says something that fits the name.
+- The fault: The claim takes a name that was thrown as an insult and treats it as a description. The words the council member threw tell you what he thinks of the plan. They do not tell you what the plan says. An *ideology* begins from someone or something put first, and the plan puts no one first.
+- The claim, put right (always the last thing shown): The council member called the plan “communism on wheels”. The plan only says where a lane will be painted, what it will cost and when it starts. The answer is **“No side named”**. A name thrown at a plan is an insult until the plan itself says something that fits the name.
 
 **Drill item 37 of 39**
 
@@ -2635,7 +2635,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 38 of 39**
 
-> "The newsletter calls the village one people and then asks the parish to be run by the Sunday bells, the harvest feast and the old prayers. It says one people, so it must be putting the nation first."
+> "The newsletter calls the village one people and then asks the village to be run by the Sunday bells, the harvest feast and the old prayers. It says one people, so it must be putting the nation first."
 
 **You are asked:** Who or what does the text put first? (asked of what the claim describes)
 
@@ -2649,8 +2649,8 @@ The question is shown with all five of its answers, in order.
 
 - The answer is: **Old ways of faith, family and custom.**
 - If you chose another answer, the line is built from the answers’ own wording, as for any other question.
-- The fault: The claim stops at the first words that sound like the second answer. The newsletter does call the village one people. But what it asks the parish to be run by is the bells, the feast and the old prayers, and when a text shows both, the answer is **“Old ways of faith, family and custom”**.
-- The claim, put right (always the last thing shown): The newsletter calls the village one people, and asks for the parish to be run by the Sunday bells, the harvest feast and the old prayers. Those are ways handed down, held up as the guide, so the answer is **“Old ways of faith, family and custom”**.
+- The fault: The claim stops at the first words that sound like the second answer. The newsletter does call the village one people. But what it asks the village to be run by is the bells, the feast and the old prayers, and when a text shows both, the answer is **“Old ways of faith, family and custom”**.
+- The claim, put right (always the last thing shown): The newsletter calls the village one people, and asks for the village to be run by the Sunday bells, the harvest feast and the old prayers. Those are ways handed down, held up as the guide, so the answer is **“Old ways of faith, family and custom”**.
 
 **Drill item 39 of 39**
 
@@ -2675,7 +2675,7 @@ The question is shown with all five of its answers, in order.
 
 ### 48. What to carry away
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 48 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 48 of 49*
 
 [reviewers only: card kind `recap`, id `recap-sides`]
 
@@ -2715,7 +2715,7 @@ Who or what does the text put first?
 
 ### 49. Where would you meet this?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 49 of 49*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 7 of 7 · Card 49 of 49*
 
 [reviewers only: card kind `transfer`, id `transfer-sides`]
 
@@ -2729,7 +2729,7 @@ Pick one of the five and name an occasion of your own: something you read, somet
 - **“The nation, or its ordinary people”**: A speech, a column or a slogan that spoke of "us", the country or its ordinary people.
 - **“Old ways of faith, family and custom”**: A holiday, a Sunday, a custom or a faith that someone said should come before convenience.
 - **“Rights and fair treatment for everyone”**: An argument about whether a rule was fair to everyone, or about what a person can expect to be given.
-- **“No side named”**: A notice, a timetable or a plain proposal that someone described with a big political name.
+- **“No side named”**: A notice, a schedule or a plain proposal that someone described with a big political name.
 
 Where was it? (tap one) At home / At work / In the news / On my phone
 
@@ -2765,7 +2765,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the cleaners had said that everyone who works is owed a fair hour’s pay, whoever employs them, and had named no side, it would be **“Rights and fair treatment for everyone”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2789,7 +2789,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - What would make it a different name: If the statement had only said that fares would change on the first of the month and where to see the new table, it would be **“No side named”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
 
@@ -2813,7 +2813,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can be angry about the same closing or the same cut, and both can say "us" against someone else. In **“Working people, against those who own the businesses”** "us" is the people who work for pay, and "them" is the people who own where they work. In **“The nation, or its ordinary people”** "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole. Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town. **“Working people, against those who own the businesses”** is about who works for pay and who owns, and which of them the text stands with. **“Old ways of faith, family and custom”** is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on. Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
-  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **No side named**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
 - This case may have brought back *The bridge speech*, which was **“The nation, or its ordinary people”**. When a likeness and the answers disagree, go by the words that answer the question.
 - What would make it a different name: If the text had said that pickers and owners alike are one people, and that the farms belong to the nation, it would be **“The nation, or its ordinary people”**.
 - Taught on: “Working people and owners, on opposite sides” (one tap opens the card).
@@ -2941,7 +2941,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 15**
 
-> Everyone should be free to run a shop or a farm without a licence, and I say so loudly. But freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them, or lose both.
+> Everyone should be free to run a shop or a farm without a license, and I say so loudly. But freedom is a plant that grows in old soil: church, home and the customs of our parents. Guide the country by them, or lose both.
 
 **You are asked:** Who or what does the text put first?
 
@@ -2990,7 +2990,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 15**
 
-> Disabled and non-disabled patients wait in the same queue for the same clinic, which sounds fair and leaves the disabled behind. Fair treatment for every patient means changing how the queue works.
+> Disabled and non-disabled patients wait in the same line for the same clinic, which sounds fair and leaves the disabled behind. Fair treatment for every patient means changing how the line works.
 
 **You are asked:** Who or what does the text put first?
 
@@ -3002,8 +3002,8 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every patient is owed, and says rules that treat all alike can still leave a group behind: “which sounds fair and leaves the disabled behind” and “Fair treatment for every patient means changing how the queue works”.
-  - Why not **“No side named”**: The text is about how a queue works, but it says that fair treatment is owed to every patient, and that is what it puts first.
+- If you are right: “Right: **Rights and fair treatment for everyone.**” The text puts first what every patient is owed, and says rules that treat all alike can still leave a group behind: “which sounds fair and leaves the disabled behind” and “Fair treatment for every patient means changing how the line works”.
+  - Why not **“No side named”**: The text is about how a line works, but it says that fair treatment is owed to every patient, and that is what it puts first.
 - If you miss: “The answer is **Rights and fair treatment for everyone.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can ask for fair pay and fair rules, and both can stand with people who have less. In **“Working people, against those who own the businesses”** the people the text speaks for are the workers, and the owners are named as the other side. In **“Rights and fair treatment for everyone”** the text speaks for every person alike, and names no side to be on the far end of it. Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into. In **“The nation, or its ordinary people”** the people the text belongs to is put first, and may be placed above others. In **“Rights and fair treatment for everyone”** no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind. Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?
@@ -3039,7 +3039,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 13 of 15**
 
-> The school office will be closed on 12 March for staff training. Letters for the head teacher can be left in the box by the gate. Normal hours resume on the 13th.
+> The school office will be closed on March 12 for staff training. Letters for the principal can be left in the box by the gate. Normal hours resume on the 13th.
 
 **You are asked:** Who or what does the text put first?
 
@@ -3051,10 +3051,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “The school office will be closed on 12 March for staff training” and “Letters for the head teacher can be left in the box by the gate”. It speaks for no side.
+- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “The school office will be closed on March 12 for staff training” and “Letters for the principal can be left in the box by the gate”. It speaks for no side.
   - Why not **“Rights and fair treatment for everyone”**: The notice is about a school, but it does not say that anyone is owed anything. It says when the office is closed and where to leave a letter.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: the “why not” line above. Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
@@ -3063,7 +3063,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 14 of 15**
 
-> Savings accounts opened after 1 July will pay 3 percent interest on balances above £500. Existing accounts are not changed. Details are available at any branch.
+> Savings accounts opened after July 1 will pay 3 percent interest on balances above $500. Existing accounts are not changed. Details are available at any branch.
 
 **You are asked:** Who or what does the text put first?
 
@@ -3075,10 +3075,10 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “Savings accounts opened after 1 July will pay 3 percent interest on balances above £500” and “Existing accounts are not changed”. No people are set against owners and nothing is said to be owed to anyone.
+- If you are right: “Right: **No side named.**” The text says how one practical matter will be handled: “Savings accounts opened after July 1 will pay 3 percent interest on balances above $500” and “Existing accounts are not changed”. No people are set against owners and nothing is said to be owed to anyone.
   - Why not **“Working people, against those who own the businesses”**: A bank and its customers are in the background, and a text could take the customers’ side against the bank. This one only gives the terms.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: the “why not” line above. Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?
@@ -3087,7 +3087,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 15 of 15**
 
-> By order of the Commissioner: border crossings are closed after dark. Soldiers will check every traveller. The Commissioner will decide when they reopen, and no appeal will be heard.
+> By order of the Commissioner: border crossings are closed after dark. Soldiers will check every traveler. The Commissioner will decide when they reopen, and no appeal will be heard.
 
 **You are asked:** Who or what does the text put first?
 
@@ -3102,7 +3102,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **No side named.**” The text says who decides and how: “border crossings are closed after dark” and “The Commissioner will decide when they reopen, and no appeal will be heard”. It names no people it speaks for and no side.
   - Why not **“The nation, or its ordinary people”**: Borders, soldiers and a ruler who allows no appeal are what texts for the nation can sound like. But this text never says whom it speaks for.
 - If you miss: “The answer is **No side named.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
-  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and rotas. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
+  - If you chose **Working people, against those who own the businesses**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a workplace, and both can mention wages, bosses and schedules. **“Working people, against those who own the businesses”** takes the side of the workers against the owners. **“No side named”** takes no side. It says only what will happen, or who is in charge. Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?
   - If you chose **The nation, or its ordinary people**: the “why not” line above. Then the lines from the card that compared the two: Both can come from a ruler’s mouth, and both can speak of power and of who is in charge. **“The nation, or its ordinary people”** speaks for a people and puts it first. **“No side named”** says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side. Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?
   - If you chose **Old ways of faith, family and custom**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about a church, a parish, a village custom or a home matter. **“Old ways of faith, family and custom”** holds up a faith, a custom or an old order as what should guide. **“No side named”** deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone. Does the text hold up old ways as what should guide? Or does it only handle one practical matter?
   - If you chose **Rights and fair treatment for everyone**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can be about forms, appeals, services and fair process. **“Rights and fair treatment for everyone”** says that something is owed to every person, and puts that first. **“No side named”** says only how one practical matter will be handled: who to write to, by when, at what cost. Does the text say that every person is owed something? Or does it only say how one thing is to be done?

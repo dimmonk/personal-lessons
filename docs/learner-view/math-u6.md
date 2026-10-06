@@ -1,6 +1,6 @@
 # Learner view: Basic Math, Unit Six: A length, an area or a volume, from a right-angled triangle or the same shape at different sizes
 
-*Four kinds of problem about lengths, areas and volumes, and a procedure worked out step by step for each.* Unit revision 2, built to lesson standard 1, status: draft.
+*Four kinds of problem about lengths, areas and volumes, and a procedure worked out step by step for each.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,17 +17,17 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Four kinds of problem about shapes, and a procedure for each
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 1 of 44*
 
 [reviewers only: card kind `orient`, id `orient-shape`]
 
-After this unit you can take a problem about a length, an area or a volume, such as how long a strip must be to run across the corner of a door, how high a kite is flying, how tall a real bridge is when you have its model, or how much more a bigger tin of paint holds, say which of four kinds it is, and then solve it with the procedure for that kind. You will see every number worked out, you will be told why each step is done, and you will work problems yourself.
+After this unit you can take a problem about a length, an area or a volume, such as how long a strip must be to run across the corner of a door, how high a kite is flying, how tall a real bridge is when you have its model, or how much more a bigger can of paint holds, say which of four kinds it is, and then solve it with the procedure for that kind. You will see every number worked out, you will be told why each step is done, and you will work problems yourself.
 
 Picture a weekend of jobs at a house, with four questions coming up, every one of them about a shape. “A strip has to run across the corner of the new door, and the frame is 80 cm wide and 150 cm high: how long is the strip?” “A ski lift cable climbs at an angle of 30° and is 200 m long: how high does it go?” “The town has a model of a new bridge, with a tower 12 cm tall, and the real bridge will be 50 times longer than the model: how tall will the real tower be?” “A big stock pot is exactly the same shape as a small one, but 3 times as tall and 3 times as wide: how many times more soup does it hold?”
 
 The first question, which Unit One taught, gives the same answer to all four: **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**. But they are four different questions, with four different procedures, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So in this unit the order is always the same: first work out what the problem gives you and what it asks about, and only then solve it.
 
-Three words from earlier units are used here and are not taught again. A *right-angled triangle* is a triangle with a square corner. The *square root* of a number is the number that multiplies by itself to give it. And *squared* is the word for a number that has been multiplied by itself. Nothing else is assumed. The arithmetic can be done on a calculator: what this unit practises is which steps to take, and why. One thing is new, because **Trigonometry** cannot be explained without it: three buttons on the calculator, which are taught on the card for that kind.
+Three words from earlier units are used here and are not taught again. A *right-angled triangle* is a triangle with a square corner. The *square root* of a number is the number that multiplies by itself to give it. And *squared* is the word for a number that has been multiplied by itself. Nothing else is assumed. The arithmetic can be done on a calculator: what this unit practices is which steps to take, and why. One thing is new, because **Trigonometry** cannot be explained without it: three buttons on the calculator, which are taught on the card for that kind.
 
 Each kind is taught the same way as in Unit Two. First a problem of the kind, and the idea behind its procedure. Then two worked problems, in different parts of life, with every step computed and the reason for every step given; on one step in each, the reason is held back until you have chosen it. Then problems that you finish yourself. This unit differs from Unit Two in one way: two questions are asked here, and each gets its own card once the kinds it separates have been taught. Then the drill mixes all four kinds.
 
@@ -69,11 +69,11 @@ The unit has five parts, and you can stop after any of them.
 4. Two things of the same shape: an area or a volume
 5. The question that tells the last two apart, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The third side of a right-angled triangle
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 2 of 44*
 
 [reviewers only: card kind `meet`, id `meet-pyth`]
 
@@ -112,7 +112,7 @@ You may also hear this called “Pythagoras” or “a² + b² = c²”. Those w
 
 ### 3. Pythagoras’ theorem: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 3 of 44*
 
 [reviewers only: card kind `again`, id `again-pyth`]
 
@@ -145,13 +145,13 @@ That is all you point to, and it is why one name covers a hike and a door frame.
 
 ### 4. Story and structure, now that there is something to solve
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 4 of 44*
 
 [reviewers only: card kind `lens`, id `lens-procedure`]
 
 The last card asked you to ignore the story and look at what the problem gives. That holds for every card from here on, and this card says it once, now that there is a procedure to carry out.
 
-Every problem in this unit has two layers, as in Unit One. The top layer is the story: a hike, a door frame, a tower, a toy car, a tin of paint. Under it is what the problem gives you to work with and what it asks about, and that is what decides the kind and so the procedure.
+Every problem in this unit has two layers, as in Unit One. The top layer is the story: a hike, a door frame, a tower, a toy car, a can of paint. Under it is what the problem gives you to work with and what it asks about, and that is what decides the kind and so the procedure.
 
 There is one new thing. Once the kind is chosen, you carry out its procedure on the numbers, and the numbers do change the working: a side can need a *square root* that is not a whole number, and every angle gives its own number on a calculator. So in this unit you will see the same kind of problem with different numbers, and the steps will always be the same steps, with different working in them.
 
@@ -163,7 +163,7 @@ Two things change on purpose from card to card: the words of the question (“ho
 
 ### 5. Pythagoras’ theorem: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 5 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-pyth`]
 
@@ -194,7 +194,7 @@ In your own life you meet this when you fit something through a gap on the slant
 
 ### 6. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 6 of 44*
 
 [reviewers only: card kind `check`, id `check-pyth`]
 
@@ -217,7 +217,7 @@ The pieces you can tap:
 
 ### 7. Worked: the path across a 30 m by 40 m yard
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 7 of 44*
 
 [reviewers only: card kind `solved`, id `solved-pyth-1`]
 
@@ -235,19 +235,19 @@ This step comes first because the rest of the working depends on it. The longest
 
 - Multiply each given side by itself: 30 × 30 = 900; 40 × 40 = 1,600
 
-A square can be drawn on each side of the triangle, with that side as one of its edges. The square on the 30 m side has 30 × 30 = 900 square metres in it, and the square on the 40 m side has 40 × 40 = 1,600. These are the numbers the next step uses: it is the squares, and not the sides, that fit together.
+A square can be drawn on each side of the triangle, with that side as one of its edges. The square on the 30 m side has 30 × 30 = 900 square meters in it, and the square on the 40 m side has 40 × 40 = 1,600. These are the numbers the next step uses: it is the squares, and not the sides, that fit together.
 
 - Add the two results: 900 + 1,600 = 2,500
 
 **You are asked:** This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.
 
-- In a triangle with a square corner, the square on the longest side holds exactly as many square metres as the squares on the two shorter sides together, so adding the two results gives the square on the longest side.
+- In a triangle with a square corner, the square on the longest side holds exactly as many square meters as the squares on the two shorter sides together, so adding the two results gives the square on the longest side.
 - 900 + 1,600 = 2,500.
 - The path is longer than the yard’s width and than its length.
 
 **Shown as soon as you answer**
 
-- The one that explains it: In a triangle with a square corner, the square on the longest side holds exactly as many square metres as the squares on the two shorter sides together, so adding the two results gives the square on the longest side.
+- The one that explains it: In a triangle with a square corner, the square on the longest side holds exactly as many square meters as the squares on the two shorter sides together, so adding the two results gives the square on the longest side.
   - If you chose “900 + 1,600 = 2,500.”: That is true, and it is the working of this step, but it does not say why the two results are added, and not multiplied or taken away.
   - If you chose “The path is longer than the yard’s width and than its length.”: That is true, and it is a useful check on the answer, but it does not say why the two results are added.
 
@@ -257,7 +257,7 @@ The same holds for every triangle with a square corner, whatever its size: 30, 4
 
 - Find the number that multiplies by itself to give the result: 50 × 50 = 2,500, so the longest side is 50 m
 
-The total, 2,500, is the number of square metres in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the *square root* of 2,500, and the √ button on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.
+The total, 2,500, is the number of square meters in the square on the path, so the path is the side of that square: the number that multiplies by itself to give 2,500. That number is the *square root* of 2,500, and the √ button on a calculator finds it. Here 50 × 50 = 2,500 exactly, so the path is 50 m long. As a check, walking along two edges of the yard would be 30 + 40 = 70 m, and a straight line across is shorter than that, so 50 m is a sensible answer.
 
 **The result**
 
@@ -266,7 +266,7 @@ The path is 50 m long. Going round two edges of the yard would be 70 m, so the p
 
 ### 8. Worked again: the height of a pole held by a cable
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 8 of 44*
 
 [reviewers only: card kind `solved`, id `solved-pyth-2`]
 
@@ -290,23 +290,23 @@ The same step as in the first problem, for the same reason: 10 × 10 = 100 is th
 
 **You are asked:** This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.
 
-- The square on the longest side holds as many square metres as the squares on the two shorter sides together, so the square on the missing shorter side is what is left when the square on the known shorter side is taken away.
+- The square on the longest side holds as many square meters as the squares on the two shorter sides together, so the square on the missing shorter side is what is left when the square on the known shorter side is taken away.
 - 100 − 36 = 64.
 - The cable is longer than the pole.
 
 **Shown as soon as you answer**
 
-- The one that explains it: The square on the longest side holds as many square metres as the squares on the two shorter sides together, so the square on the missing shorter side is what is left when the square on the known shorter side is taken away.
+- The one that explains it: The square on the longest side holds as many square meters as the squares on the two shorter sides together, so the square on the missing shorter side is what is left when the square on the known shorter side is taken away.
   - If you chose “100 − 36 = 64.”: That is true, and it is the working of this step, but it does not say why the results are taken away this time when they were added for the yard.
   - If you chose “The cable is longer than the pole.”: That is true, but it does not say why this step takes away.
 
-The fact is the same as before: the square on the longest side, 100, holds as many square metres as the squares on the two shorter sides together. One of those two squares, the one on the 6 m along the ground, is 36. So the other holds what is left: 100 − 36 = 64. Adding and taking away are one fact read two ways: 100 = 36 + 64, so 64 = 100 − 36.
+The fact is the same as before: the square on the longest side, 100, holds as many square meters as the squares on the two shorter sides together. One of those two squares, the one on the 6 m along the ground, is 36. So the other holds what is left: 100 − 36 = 64. Adding and taking away are one fact read two ways: 100 = 36 + 64, so 64 = 100 − 36.
 
 That is why the first step matters. If the side you want is the longest, you add the two results. If one of the sides you are given is the longest, you take away. Adding when you should take away would give a pole taller than its own cable, which cannot be a side of a triangle whose longest side is the cable.
 
 - Find the number that multiplies by itself to give the result: 8 × 8 = 64, so the shorter side is 8 m
 
-The 64 is the number of square metres in the square on the pole, so the height of the pole is the number that multiplies by itself to give 64. That is 8, because 8 × 8 = 64, so the pole is 8 m tall. As a check, a shorter side is always shorter than the longest side, and 8 m is shorter than the 10 m cable.
+The 64 is the number of square meters in the square on the pole, so the height of the pole is the number that multiplies by itself to give 64. That is 8, because 8 × 8 = 64, so the pole is 8 m tall. As a check, a shorter side is always shorter than the longest side, and 8 m is shorter than the 10 m cable.
 
 **The result**
 
@@ -315,7 +315,7 @@ The pole is 8 m tall.
 
 ### 9. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 9 of 44*
 
 [reviewers only: card kind `check`, id `check-pyth-last`]
 
@@ -348,7 +348,7 @@ The pole is 8 m tall.
 
 ### 10. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 1 of 5 · Card 10 of 44*
 
 [reviewers only: card kind `check`, id `check-pyth-whole`]
 
@@ -381,7 +381,7 @@ The pole is 8 m tall.
 
 ### 11. A side from an angle
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 11 of 44*
 
 [reviewers only: card kind `meet`, id `meet-trig`]
 
@@ -424,7 +424,7 @@ You may also hear this called “sin, cos and tan” or “SOH CAH TOA”. Those
 
 ### 12. Trigonometry: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 12 of 44*
 
 [reviewers only: card kind `again`, id `again-trig`]
 
@@ -457,7 +457,7 @@ The sides are not the same in the two stories, so the button is not the same eit
 
 ### 13. Trigonometry: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 13 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-trig`]
 
@@ -478,7 +478,7 @@ And a height found by comparing a thing with a copy of it, such as a model or a 
 
 **Where you will hear it**
 
-"It slopes up at 30 degrees." "I stood 40 metres back and looked up at 35 degrees." "The ramp rises at 6 degrees." "The string makes a 40 degree angle with the ground."
+"It slopes up at 30 degrees." "I stood 40 meters back and looked up at 35 degrees." "The ramp rises at 6 degrees." "The string makes a 40 degree angle with the ground."
 
 In your own life you meet this when someone describes how steep something is in degrees, when you wonder how tall a building is from how far back you stand, when a ladder, a ramp or a roof has to be set at a safe angle, and when a sign or a map gives a slope as an angle.
 
@@ -488,7 +488,7 @@ In your own life you meet this when someone describes how steep something is in 
 
 ### 14. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 14 of 44*
 
 [reviewers only: card kind `check`, id `check-trig`]
 
@@ -511,7 +511,7 @@ The pieces you can tap:
 
 ### 15. Worked: the height of a tower measured at 35°
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 15 of 44*
 
 [reviewers only: card kind `solved`, id `solved-trig-1`]
 
@@ -564,7 +564,7 @@ The tower is about 21.0 m tall.
 
 ### 16. Worked again: how long a ramp is, from its rise and its slope
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 16 of 44*
 
 [reviewers only: card kind `solved`, id `solved-trig-2`]
 
@@ -617,7 +617,7 @@ The ramp is about 8.6 m long along its slope.
 
 ### 17. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 17 of 44*
 
 [reviewers only: card kind `check`, id `check-trig-last`]
 
@@ -652,7 +652,7 @@ The ramp is about 8.6 m long along its slope.
 
 ### 18. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 18 of 44*
 
 [reviewers only: card kind `check`, id `check-trig-whole`]
 
@@ -680,7 +680,7 @@ The ramp is about 8.6 m long along its slope.
 
 ### 19. Pythagoras’ theorem or Trigonometry: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 2 of 5 · Card 19 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-pyth-trig`]
 
@@ -730,7 +730,7 @@ Besides the one length that everyone can see, is a second length given, or an an
 
 ### 20. A length on the same shape at another size
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 20 of 44*
 
 [reviewers only: card kind `meet`, id `meet-similar`]
 
@@ -767,7 +767,7 @@ You may also hear this called “similar triangles” or “scale drawings”. T
 
 ### 21. Similar shapes: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 21 of 44*
 
 [reviewers only: card kind `again`, id `again-similar`]
 
@@ -800,7 +800,7 @@ In neither problem is there an angle in degrees, and in neither are two sides of
 
 ### 22. Similar shapes: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 22 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-similar`]
 
@@ -831,7 +831,7 @@ In your own life you meet this when you read a map or a plan, when you enlarge o
 
 ### 23. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 23 of 44*
 
 [reviewers only: card kind `check`, id `check-similar`]
 
@@ -854,7 +854,7 @@ The pieces you can tap:
 
 ### 24. Worked: how high an enlarged photo is
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 24 of 44*
 
 [reviewers only: card kind `solved`, id `solved-similar-1`]
 
@@ -890,7 +890,7 @@ That number is the one idea of this kind of problem. Once it is found from the p
 
 - Multiply the length you have by that number of times: 15 × 2.5 = 37.5 cm
 
-The photo’s height is 15 cm, and the enlargement is 2.5 times longer in every direction, so its height is 15 × 2.5 = 37.5 cm. Adding would be a slip. The width grew by 15 cm, from 10 cm to 25 cm, and adding 15 cm to the height, 15 + 15 = 30, would give a copy that is too narrow for its height. A copy grows by multiplying every length by the same number, and not by adding the same number of centimetres.
+The photo’s height is 15 cm, and the enlargement is 2.5 times longer in every direction, so its height is 15 × 2.5 = 37.5 cm. Adding would be a slip. The width grew by 15 cm, from 10 cm to 25 cm, and adding 15 cm to the height, 15 + 15 = 30, would give a copy that is too narrow for its height. A copy grows by multiplying every length by the same number, and not by adding the same number of centimeters.
 
 **The result**
 
@@ -899,7 +899,7 @@ The enlargement is 37.5 cm high.
 
 ### 25. Worked again: how long a toy car is
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 25 of 44*
 
 [reviewers only: card kind `solved`, id `solved-similar-2`]
 
@@ -944,7 +944,7 @@ The toy car is 60 cm long.
 
 ### 26. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 26 of 44*
 
 [reviewers only: card kind `check`, id `check-similar-last`]
 
@@ -975,11 +975,11 @@ The toy car is 60 cm long.
 
 ### 27. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 27 of 44*
 
 [reviewers only: card kind `check`, id `check-similar-whole`]
 
-> A model aeroplane is an exact copy of a real plane at a scale of 1 to 40: every 1 cm on the model stands for 40 cm on the plane. The model’s wings measure 30 cm from tip to tip. How wide are the real plane’s wings, in metres?
+> A model aeroplane is an exact copy of a real plane at a scale of 1 to 40: every 1 cm on the model stands for 40 cm on the plane. The model’s wings measure 30 cm from tip to tip. How wide are the real plane’s wings, in meters?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -1002,7 +1002,7 @@ The toy car is 60 cm long.
 
 ### 28. A shadow, which shows a triangle and is also a copy
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 28 of 44*
 
 [reviewers only: card kind `exception`, id `exc-shadow`]
 
@@ -1055,7 +1055,7 @@ A model or a shadow always has this second thing. If a problem gave only the wom
 
 ### 29. Trigonometry or Similar shapes: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 29 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-trig-similar`]
 
@@ -1063,13 +1063,13 @@ The second and third kinds are easy to mix up when the length wanted is a height
 
 **Case A**
 
-> A harbour pilot stands on level ground 80 m from the foot of a lighthouse and sees its lamp at an angle of 25° above level ground. How high is the lamp?
+> A harbor pilot stands on level ground 80 m from the foot of a lighthouse and sees its lamp at an angle of 25° above level ground. How high is the lamp?
 
 **Case B**
 
-> A harbour pilot has a postcard of a lighthouse, an exact copy of it. On the postcard the lighthouse is 12 cm tall and its door is 0.5 cm tall. The real door is 2 m tall. How tall is the real lighthouse?
+> A harbor pilot has a postcard of a lighthouse, an exact copy of it. On the postcard the lighthouse is 12 cm tall and its door is 0.5 cm tall. The real door is 2 m tall. How tall is the real lighthouse?
 
-**What to compare.** Both problems are about the same harbour pilot and the same lighthouse, and both ask how tall something is. Compare one thing: what is given that lets the height be found?
+**What to compare.** Both problems are about the same harbor pilot and the same lighthouse, and both ask how tall something is. Compare one thing: what is given that lets the height be found?
 
 **You are asked:** Which case gives the answer **“Two things of the same shape at different sizes”**? (Case A / Case B)
 
@@ -1099,7 +1099,7 @@ Is an angle in degrees given, or a length measured on both of two things of the 
 
 ### 30. What the problem gives you: the first of this unit’s two questions
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 30 of 44*
 
 [reviewers only: card kind `question`, id `q-s1`]
 
@@ -1148,7 +1148,7 @@ Some problems show two of the answers at once, and some pairs of kinds share a s
 
 ### 31. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 3 of 5 · Card 31 of 44*
 
 [reviewers only: card kind `check`, id `check-s1`]
 
@@ -1176,7 +1176,7 @@ Some problems show two of the answers at once, and some pairs of kinds share a s
 
 ### 32. Area or volume of the same shape at another size
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 32 of 44*
 
 [reviewers only: card kind `meet`, id `meet-sqcube`]
 
@@ -1213,7 +1213,7 @@ You may also hear this called “area and volume grow faster than length”. Tha
 
 ### 33. Square-cube law: the same thing in a different story
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 33 of 44*
 
 [reviewers only: card kind `again`, id `again-sqcube`]
 
@@ -1246,7 +1246,7 @@ That is what you point to: two copies, and a question about how much surface or 
 
 ### 34. Square-cube law: what it is like
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 34 of 44*
 
 [reviewers only: card kind `portrait`, id `portrait-sqcube`]
 
@@ -1254,8 +1254,8 @@ You know what to point to for **Square-cube law**. This card fills in the rest o
 
 **What it is usually like**
 
-- Two things of exactly the same shape, one bigger: tins, pots, boxes, tanks, panes, tiles, posters, sheds, cakes, balloons.
-- How many times longer the bigger one is, either given directly (3 times as tall) or found from a part measured on both (a tin 15 cm tall and a tin 30 cm tall).
+- Two things of exactly the same shape, one bigger: cans, pots, boxes, tanks, panes, tiles, posters, sheds, cakes, balloons.
+- How many times longer the bigger one is, either given directly (3 times as tall) or found from a part measured on both (a can 15 cm tall and a can 30 cm tall).
 - A question about how much: how much surface is covered (paint, glass, icing, floor), or how much room there is inside (water, soup, clay, air), or how many times more. The answer is a number of times, or an amount found by multiplying a known amount by that number of times.
 - An answer much bigger than the number of times longer: twice as long gives 4 times the area and 8 times the volume, and 10 times as long gives 100 times the area and 1,000 times the volume.
 
@@ -1269,7 +1269,7 @@ And two things that are not exactly the same shape are not this kind. A shed tha
 
 "How many times more does it hold?" "How much more paint would it take?" "Is it worth twice the price for twice the size?" "Twice as wide, so twice as much, right?"
 
-In your own life you meet this when you compare sizes of things that are priced by their surface or by what they hold, such as pizzas, pots, paint tins, glass or fabric, when you ask whether a bigger version is good value, and when someone says that a thing is twice as big and you wonder in which way.
+In your own life you meet this when you compare sizes of things that are priced by their surface or by what they hold, such as pizzas, pots, paint cans, glass or fabric, when you ask whether a bigger version is good value, and when someone says that a thing is twice as big and you wonder in which way.
 
 **The question to ask when you spot it**
 
@@ -1277,7 +1277,7 @@ In your own life you meet this when you compare sizes of things that are priced 
 
 ### 35. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 35 of 44*
 
 [reviewers only: card kind `check`, id `check-sqcube`]
 
@@ -1300,7 +1300,7 @@ The pieces you can tap:
 
 ### 36. Worked: how much more clay a bigger cube holds
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 36 of 44*
 
 [reviewers only: card kind `solved`, id `solved-sqcube-1`]
 
@@ -1349,7 +1349,7 @@ The bigger cube holds 8 times as much clay as the smaller one.
 
 ### 37. Worked again: what the glass for a larger window pane costs
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 37 of 44*
 
 [reviewers only: card kind `solved`, id `solved-sqcube-2`]
 
@@ -1357,7 +1357,7 @@ The same procedure for **Square-cube law** in a different story, with an area an
 
 **The problem**
 
-> The glass for a window pane 40 cm wide costs 6 euros. A pane of exactly the same shape, 120 cm wide, is cut from the same kind of glass. How much does the glass for the larger pane cost?
+> The glass for a window pane 40 cm wide costs 6 dollars. A pane of exactly the same shape, 120 cm wide, is cut from the same kind of glass. How much does the glass for the larger pane cost?
 
 **The working, step by step**
 
@@ -1387,51 +1387,51 @@ Cover the large pane with panes the size of the small one. Along its width it ta
 
 The same reasoning gave 2 × 2 × 2 for the cubes, with a third direction. Here there are only two directions in a surface, so there are two 3s in the product.
 
-- Multiply the smaller one’s amount by that number of times: 6 euros × 9 = 54 euros
+- Multiply the smaller one’s amount by that number of times: 6 dollars × 9 = 54 dollars
 
-The small pane’s glass costs 6 euros, and the larger pane has 9 times as much glass, so, if the cost goes with the amount of glass, it costs 9 times as much: 6 × 9 = 54 euros. Multiplying by 3 instead, as for a length, would give 18 euros, which would pay for only a third of the glass in the larger pane.
+The small pane’s glass costs 6 dollars, and the larger pane has 9 times as much glass, so, if the cost goes with the amount of glass, it costs 9 times as much: 6 × 9 = 54 dollars. Multiplying by 3 instead, as for a length, would give 18 dollars, which would pay for only a third of the glass in the larger pane.
 
 **The result**
 
-The glass for the larger pane costs 54 euros.
+The glass for the larger pane costs 54 dollars.
 
 
 ### 38. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 38 of 44*
 
 [reviewers only: card kind `check`, id `check-sqcube-last`]
 
-> A tin of paint 15 cm tall holds 1 litre. A second tin of exactly the same shape is 30 cm tall. How much paint does the second tin hold?
+> A can of paint 15 cm tall holds 1 liter. A second can of exactly the same shape is 30 cm tall. How much paint does the second can hold?
 
 **The working, step by step** (all but the last step)
 
 - Find how many times longer the bigger one is than the smaller one: 30 ÷ 15 = 2
-- Decide whether the problem asks about area or about volume: Paint in a tin fills a solid, so the problem asks about volume
+- Decide whether the problem asks about area or about volume: Paint in a can fills a solid, so the problem asks about volume
 - Multiply that number of times by itself, with three of them in the product for a volume: 2 × 2 × 2 = 8
 
 **You are asked:** The working is shown up to the last step. The last step is yours: Multiply the smaller one’s amount by that number of times. Choose what the problem comes to.
 
-- 8 litres
-- 2 litres
-- 4 litres
+- 8 liters
+- 2 liters
+- 4 liters
 
 **Shown as soon as you answer**
 
-- The answer: **8 litres**.
+- The answer: **8 liters**.
 - The working, step by step:
   - Find how many times longer the bigger one is than the smaller one: 30 ÷ 15 = 2
-  - Decide whether the problem asks about area or about volume: Paint in a tin fills a solid, so the problem asks about volume
+  - Decide whether the problem asks about area or about volume: Paint in a can fills a solid, so the problem asks about volume
   - Multiply that number of times by itself, with three of them in the product for a volume: 2 × 2 × 2 = 8
-  - Multiply the smaller one’s amount by that number of times: 1 litres × 8 = 8 litres
+  - Multiply the smaller one’s amount by that number of times: 1 liters × 8 = 8 liters
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
-- If you chose 2 litres: You chose **2 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
-- If you chose 4 litres: You chose **4 litres**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
+- If you chose 2 liters: You chose **2 liters**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
+- If you chose 4 liters: You chose **4 liters**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
 ### 39. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 39 of 44*
 
 [reviewers only: card kind `check`, id `check-sqcube-whole`]
 
@@ -1458,7 +1458,7 @@ The glass for the larger pane costs 54 euros.
 
 ### 40. Similar shapes or Square-cube law: telling them apart
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 4 of 5 · Card 40 of 44*
 
 [reviewers only: card kind `lookalike`, id `look-similar-sqcube`]
 
@@ -1508,7 +1508,7 @@ Does the problem ask how long a part is, or how much surface or how much room in
 
 ### 41. How long, or how much area or volume: the second of this unit’s two questions
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 41 of 44*
 
 [reviewers only: card kind `question`, id `q-s2`]
 
@@ -1524,7 +1524,7 @@ The first question left two kinds together, because both start from a thing and 
   - Give this answer when the problem asks how long, how high, how far or how wide something is.
   - Keeps **Pythagoras’ theorem**, **Trigonometry** and **Similar shapes**. Rules out **Square-cube law**.
 - **“How much area or volume it has”**
-  - Give this answer when the problem asks how much surface (glass, pizza, floor) or how much room inside (paint in a tin, water in a pot) something has, or how many times more of either.
+  - Give this answer when the problem asks how much surface (glass, pizza, floor) or how much room inside (paint in a can, water in a pot) something has, or how many times more of either.
   - Keeps **Square-cube law**. Rules out **Pythagoras’ theorem**, **Trigonometry** and **Similar shapes**.
 
 **Why it decides**
@@ -1552,7 +1552,7 @@ A problem can mention both, as when it gives the area of the small thing and ask
 
 ### 42. A question about a new case
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 42 of 44*
 
 [reviewers only: card kind `check`, id `check-s2`]
 
@@ -1567,12 +1567,12 @@ A problem can mention both, as when it gives the area of the small thing and ask
 
 - If you are right: “Right: **How much area or volume it has.**” The words “How many times more cake does the big box hold?” ask how much cake the bigger box holds, which is the room inside it. That is **“How much area or volume it has”**. This answer leads to **Square-cube law**.
 - If you miss: “The answer is **How much area or volume it has.**” The same reason follows, and then a line about the answer you chose:
-  - If you chose **How long one of its sides or parts is**: Give that answer when the problem asks how long, how high, how far or how wide something is. This case shows something else: the problem asks how much surface (glass, pizza, floor) or how much room inside (paint in a tin, water in a pot) something has, or how many times more of either.
+  - If you chose **How long one of its sides or parts is**: Give that answer when the problem asks how long, how high, how far or how wide something is. This case shows something else: the problem asks how much surface (glass, pizza, floor) or how much room inside (paint in a can, water in a pot) something has, or how many times more of either.
 - Taught on: “How long, or how much area or volume: the second of this unit’s two questions” (one tap opens the card).
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has three stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Six of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: what the problem gives you and what it asks about decides the kind, and nothing else in the story does.
 
@@ -1756,7 +1756,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 7 of 48**
 
-> A museum has a model of a bridge at a scale of 1 to 50. The model is 36 cm long. How long is the real bridge, in metres?
+> A museum has a model of a bridge at a scale of 1 to 50. The model is 36 cm long. How long is the real bridge, in meters?
 
 **The working, step by step** (all but the last step)
 
@@ -1872,7 +1872,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 11 of 48**
 
-> A plan of a hall is an exact copy of the real hall. On the plan the stage is 3 cm wide and the hall is 8 cm wide. The real hall is 24 m wide. How wide is the real stage, in metres?
+> A plan of a hall is an exact copy of the real hall. On the plan the stage is 3 cm wide and the hall is 8 cm wide. The real hall is 24 m wide. How wide is the real stage, in meters?
 
 **The working, step by step** (all but the last step)
 
@@ -1903,7 +1903,7 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 12 of 48**
 
-> A water tank 1.5 m tall holds 2,000 litres. A second tank of exactly the same shape is 3 m tall. How much water does the second tank hold?
+> A water tank 1.5 m tall holds 2,000 liters. A second tank of exactly the same shape is 3 m tall. How much water does the second tank hold?
 
 **The working, step by step** (all but the last step)
 
@@ -1913,21 +1913,21 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **You are asked:** The working is shown up to the last step. The last step is yours: Multiply the smaller one’s amount by that number of times. Choose what the problem comes to.
 
-- 16,000 litres
-- 4,000 litres
-- 8,000 litres
+- 16,000 liters
+- 4,000 liters
+- 8,000 liters
 
 **Shown as soon as you answer**
 
-- The answer: **16,000 litres**.
+- The answer: **16,000 liters**.
 - The working, step by step:
   - Find how many times longer the bigger one is than the smaller one: 3 ÷ 1.5 = 2
   - Decide whether the problem asks about area or about volume: Water fills a solid, so the problem asks about volume
   - Multiply that number of times by itself, with three of them in the product for a volume: 2 × 2 × 2 = 8
-  - Multiply the smaller one’s amount by that number of times: 2,000 litres × 8 = 16,000 litres
+  - Multiply the smaller one’s amount by that number of times: 2,000 liters × 8 = 16,000 liters
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
-- If you chose 4,000 litres: You chose **4,000 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
-- If you chose 8,000 litres: You chose **8,000 litres**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
+- If you chose 4,000 liters: You chose **4,000 liters**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
+- If you chose 8,000 liters: You chose **8,000 liters**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
 #### Stage 2 of 3. The whole problem is yours. Work it out, then choose the answer. Every wrong choice is the answer one particular slip produces, and after you answer the slip is named.
@@ -2050,30 +2050,30 @@ After each answer, look at the slip named behind a wrong choice. Every wrong cho
 
 **Drill item 18 of 48**
 
-> A fish tank 50 cm wide holds 30 litres. A second fish tank of exactly the same shape is 100 cm wide. How much water does the second tank hold?
+> A fish tank 50 cm wide holds 30 liters. A second fish tank of exactly the same shape is 100 cm wide. How much water does the second tank hold?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
-- 240 litres
-- 60 litres
-- 120 litres
+- 240 liters
+- 60 liters
+- 120 liters
 
 **Shown as soon as you answer**
 
-- The answer: **240 litres**.
+- The answer: **240 liters**.
 - The working, step by step:
   - Find how many times longer the bigger one is than the smaller one: 100 ÷ 50 = 2
   - Decide whether the problem asks about area or about volume: Water fills a solid, so the problem asks about volume
   - Multiply that number of times by itself, with three of them in the product for a volume: 2 × 2 × 2 = 8
-  - Multiply the smaller one’s amount by that number of times: 30 litres × 8 = 240 litres
+  - Multiply the smaller one’s amount by that number of times: 30 liters × 8 = 240 liters
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
-- If you chose 60 litres: You chose **60 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
-- If you chose 120 litres: You chose **120 litres**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
+- If you chose 60 liters: You chose **60 liters**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
+- If you chose 120 liters: You chose **120 liters**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
 **Drill item 19 of 48**
 
-> A child builds a toy house as an exact copy of her real house. The toy house’s door is 8 cm high, and the real door is 2 m high. The toy house’s roof ridge is 15 cm above the ground. How high is the real house’s ridge, in metres?
+> A child builds a toy house as an exact copy of her real house. The toy house’s door is 8 cm high, and the real door is 2 m high. The toy house’s roof ridge is 15 cm above the ground. How high is the real house’s ridge, in meters?
 
 **You are asked:** The whole problem is yours. Work it out, then choose the answer.
 
@@ -2257,7 +2257,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A hardware shop sells 6 metres of chain for €15. Leila wants 20 metres. How much will it cost her?
+> A hardware store sells 6 meters of chain for $15. Leila wants 20 meters. How much will it cost her?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2269,7 +2269,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many metres, and a new amount to scale it to: “sells 6 metres of chain for €15” and “How much will it cost her?”. The price is the number it leaves out.
+- If you are right: “Right: **A missing number, from a formula, a rate or totals.**” The problem gives a rate, so much for so many meters, and a new amount to scale it to: “sells 6 meters of chain for $15” and “How much will it cost her?”. The price is the number it leaves out.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2277,7 +2277,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> A savings jar holds €120. Tomas adds €15 to it every month. How many months until the jar holds €300?
+> A savings jar holds $120. Tomas adds $15 to it every month. How many months until the jar holds $300?
 
 **You are asked:** What does the problem ask you to work out?
 
@@ -2289,7 +2289,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds €15 to it every month” and “How many months until the jar holds €300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
+- If you are right: “Right: **What an amount becomes over time, or how long it takes.**” One amount, the money in the jar, is followed through time: “Tomas adds $15 to it every month” and “How many months until the jar holds $300?”. It goes up by the same number every month, and the question asks how long it takes to reach a target.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2456,7 +2456,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 35 of 48**
 
-> A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map. How far apart are they on the ground, in kilometres?
+> A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map. How far apart are they on the ground, in kilometers?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
@@ -2477,9 +2477,9 @@ Each question is shown with all of its answers, in order, and the names offered 
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 200,000 km: You chose **200,000 km**. That is the answer you get when you forget to change the answer from cm into km at the end, so the number is the one in cm and the unit is wrong.
 - If you chose 20 km: You chose **20 km**. That is the answer you get when you divide by 10,000 and not by 100,000 when changing cm into km.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far apart are they on the ground, in kilometres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far apart are they on the ground, in kilometers?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A map is an exact copy of a region at a scale of 1 to 25,000: every 1 cm on the map stands for 25,000 cm on the ground. Two villages are 8 cm apart on the map” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
-- Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far apart are they on the ground, in kilometres?” ask how long a part is, which is **“How long one of its sides or parts is”**.
+- Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far apart are they on the ground, in kilometers?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
 - What would make it a different kind: If the problem asked how much surface or how much room inside the bigger thing has, and not how long a part is, it would be **Square-cube law**.
 - Taught on: “Worked: how high an enlarged photo is” (one tap opens the card).
@@ -2636,7 +2636,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 41 of 48**
 
-> A small sticking plaster 3 cm wide uses 2 g of glue. A large plaster of exactly the same shape is 9 cm wide. How much glue does the large plaster use?
+> A small adhesive bandage 3 cm wide uses 2 g of glue. A large bandage of exactly the same shape is 9 cm wide. How much glue does the large bandage use?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
@@ -2657,16 +2657,16 @@ Each question is shown with all of its answers, in order, and the names offered 
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
 - If you chose 6 g: You chose **6 g**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
 - If you chose 54 g: You chose **54 g**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much glue does the large plaster use?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
-- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small sticking plaster 3 cm wide uses 2 g of glue. A large plaster of exactly the same shape is 9 cm wide” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
-- Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much glue does the large plaster use?” ask how much area or volume something has, which is **“How much area or volume it has”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much glue does the large bandage use?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small adhesive bandage 3 cm wide uses 2 g of glue. A large bandage of exactly the same shape is 9 cm wide” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
+- Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much glue does the large bandage use?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
 - What would make it a different kind: If the problem asked how long a part of the bigger thing is, and not for an area or a volume, it would be **Similar shapes**.
 - Taught on: “Worked: how much more clay a bigger cube holds” (one tap opens the card).
 
 **Drill item 42 of 48**
 
-> A builder shows clients a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide. How high is the real house, in metres?
+> A builder shows clients a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide. How high is the real house, in meters?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
@@ -2688,9 +2688,9 @@ Each question is shown with all of its answers, in order, and the names offered 
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 750 m: You chose **750 m**. That is the answer you get when you forget to change the answer from cm into m at the end, so the number is the one in cm and the unit is wrong.
 - If you chose 225 m: You chose **225 m**. That is the answer you get when you multiply by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the real house, in metres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How high is the real house, in meters?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
 - What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “a model of a house, an exact copy of it. The model is 40 cm wide and 25 cm high, and the real house is 12 m wide” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
-- Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the real house, in metres?” ask how long a part is, which is **“How long one of its sides or parts is”**.
+- Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How high is the real house, in meters?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
 - What would make it a different kind: If the problem asked how much surface or how much room inside the bigger thing has, and not how long a part is, it would be **Square-cube law**.
 - Taught on: “Worked: how high an enlarged photo is” (one tap opens the card).
@@ -2790,29 +2790,29 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 46 of 48**
 
-> A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 litres. How much paint do the walls of the garden shed need?
+> A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 liters. How much paint do the walls of the garden shed need?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- 18 litres
-- 6 litres
-- 54 litres
+- 18 liters
+- 6 liters
+- 54 liters
 
 **Shown as soon as you answer**
 
-- The answer: **18 litres**, and the kind of problem is **Square-cube law**.
+- The answer: **18 liters**, and the kind of problem is **Square-cube law**.
 - The working, step by step:
   - Find how many times longer the bigger one is than the smaller one: 3 ÷ 1 = 3
   - Decide whether the problem asks about area or about volume: Paint on walls covers a surface, so the problem asks about area
   - Multiply that number of times by itself, with two of them in the product for an area: 3 × 3 = 9
-  - Multiply the smaller one’s amount by that number of times: 2 litres × 9 = 18 litres
+  - Multiply the smaller one’s amount by that number of times: 2 liters × 9 = 18 liters
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
-- If you chose 6 litres: You chose **6 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
-- If you chose 54 litres: You chose **54 litres**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
+- If you chose 6 liters: You chose **6 liters**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
+- If you chose 54 liters: You chose **54 liters**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
 - What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much paint do the walls of the garden shed need?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
-- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 litres” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
+- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A garden shed is an exact copy of a model shed. The model shed is 1 m high and the garden shed is 3 m high. The paint for the walls of the model shed is 2 liters” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much paint do the walls of the garden shed need?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
 - This case may have brought back *The footbridge model*, which was **Similar shapes**. When a likeness and the answers disagree, go by the words that answer the question.
@@ -2884,7 +2884,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 43. What to carry away
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 43 of 44*
 
 [reviewers only: card kind `recap`, id `recap-shape`]
 
@@ -2925,7 +2925,7 @@ Does the problem ask how long something is, or how much area or volume it has?
 
 ### 44. Where would you meet this?
 
-*Unit Six · rev 2 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
+*Unit Six · rev 3 · Draft: not yet read by a newcomer · Part 5 of 5 · Card 44 of 44*
 
 [reviewers only: card kind `transfer`, id `transfer-shape`]
 
@@ -3016,7 +3016,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 12**
 
-> A paramedic runs diagonally across a rectangular car park 25 m wide and 60 m long, from one corner to the opposite corner. How far does she run?
+> A paramedic runs diagonally across a rectangular parking lot 25 m wide and 60 m long, from one corner to the opposite corner. How far does she run?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
@@ -3038,7 +3038,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you chose 85 m: You chose **85 m**. That is the answer you get when you add the two sides, 25 + 60, and never multiply them by themselves, though a straight line across is shorter than the two sides one after the other.
 - If you chose about 54.5 m: You chose **about 54.5 m**. That is the answer you get when you take the two results away from each other, though the side you want is the longest, so the two results must be added.
 - What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How far does she run?”, a length in a *right-angled triangle*. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
-- What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “a rectangular car park 25 m wide and 60 m long” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
+- What does the problem give you to work with? **Two sides of a right-angled triangle.** The words “a rectangular parking lot 25 m wide and 60 m long” give the lengths of two sides of a *right-angled triangle*, and no angle in degrees besides the square corner. That is **“Two sides of a right-angled triangle”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How far does she run?” ask how long a side is, which is **“How long one of its sides or parts is”**.
 - Why not **Trigonometry**: No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. **Trigonometry** would be the name if the problem gave one side and an angle in degrees.
 - What would make it a different kind: If the problem gave one side and an angle in degrees besides the square corner, and not two sides, it would be **Trigonometry**.
@@ -3168,7 +3168,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 8 of 12**
 
-> A model of a lorry is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the lorry. The model is 28 cm long. How long is the real lorry, in metres?
+> A model of a truck is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the truck. The model is 28 cm long. How long is the real truck, in meters?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
@@ -3182,16 +3182,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 - The answer: **7 m**, and the kind of problem is **Similar shapes**.
 - The working, step by step:
-  - Find a part that is measured on both things: The scale is 1 to 25, so 1 cm on the model stands for 25 cm on the lorry. So the length the scale compares is 1 cm on the model and 25 cm on the real lorry. The part you want, the length of the lorry, is measured on the model only: 28 cm
+  - Find a part that is measured on both things: The scale is 1 to 25, so 1 cm on the model stands for 25 cm on the truck. So the length the scale compares is 1 cm on the model and 25 cm on the real truck. The part you want, the length of the truck, is measured on the model only: 28 cm
   - Find how many times longer the bigger thing is than the smaller one: 25 ÷ 1 = 25
   - Multiply the length you have by that number of times: 28 × 25 = 700 cm
   - Write the answer in the unit the problem asks for: 700 cm ÷ 100 = 7 m
   Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.
 - If you chose 700 m: You chose **700 m**. That is the answer you get when you forget to change the answer from cm into m at the end, so the number is the one in cm and the unit is wrong.
 - If you chose 70 m: You chose **70 m**. That is the answer you get when you divide by 10 and not by 100 when changing cm into m.
-- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the real lorry, in metres?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
-- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A model of a lorry is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the lorry. The model is 28 cm long” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
-- Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the real lorry, in metres?” ask how long a part is, which is **“How long one of its sides or parts is”**.
+- What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How long is the real truck, in meters?”, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a *formula* must fit, or counts ways, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
+- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A model of a truck is an exact copy at a scale of 1 to 25: every 1 cm on the model stands for 25 cm on the truck. The model is 28 cm long” give two things of exactly the same shape at different sizes, with a length measured on both. That is **“Two things of the same shape at different sizes”**.
+- Does the problem ask how long something is, or how much area or volume it has? **How long one of its sides or parts is.** The words “How long is the real truck, in meters?” ask how long a part is, which is **“How long one of its sides or parts is”**.
 - Why not **Square-cube law**: A length is asked, not an area or a volume. **Square-cube law** would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.
 - What would make it a different kind: If the problem asked how much surface or how much room inside the bigger thing has, and not how long a part is, it would be **Square-cube law**.
 - Taught on: “Worked: how high an enlarged photo is” (one tap opens the card).
@@ -3257,29 +3257,29 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 12**
 
-> A small storage box 20 cm tall holds 8 litres. A big box of exactly the same shape is 30 cm tall. How much does the big box hold?
+> A small storage box 20 cm tall holds 8 liters. A big box of exactly the same shape is 30 cm tall. How much does the big box hold?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- 27 litres
-- 12 litres
-- 18 litres
+- 27 liters
+- 12 liters
+- 18 liters
 
 **Shown as soon as you answer**
 
-- The answer: **27 litres**, and the kind of problem is **Square-cube law**.
+- The answer: **27 liters**, and the kind of problem is **Square-cube law**.
 - The working, step by step:
   - Find how many times longer the bigger one is than the smaller one: 30 ÷ 20 = 1.5
   - Decide whether the problem asks about area or about volume: A box holds things inside it, so the problem asks about volume
   - Multiply that number of times by itself, with three of them in the product for a volume: 1.5 × 1.5 × 1.5 = 3.375
-  - Multiply the smaller one’s amount by that number of times: 8 litres × 3.375 = 27 litres
+  - Multiply the smaller one’s amount by that number of times: 8 liters × 3.375 = 27 liters
   If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.
-- If you chose 12 litres: You chose **12 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
-- If you chose 18 litres: You chose **18 litres**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
+- If you chose 12 liters: You chose **12 liters**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.
+- If you chose 18 liters: You chose **18 liters**. That is the answer you get when you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.
 - What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much does the big box hold?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
-- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small storage box 20 cm tall holds 8 litres. A big box of exactly the same shape is 30 cm tall” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
+- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small storage box 20 cm tall holds 8 liters. A big box of exactly the same shape is 30 cm tall” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much does the big box hold?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
 - What would make it a different kind: If the problem asked how long a part of the bigger thing is, and not for an area or a volume, it would be **Similar shapes**.
@@ -3287,29 +3287,29 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 12 of 12**
 
-> A small boat 2 m long needs 1.5 litres of paint for its hull. A bigger boat of exactly the same shape is 6 m long. How much paint does the hull of the bigger boat need?
+> A small boat 2 m long needs 1.5 liters of paint for its hull. A bigger boat of exactly the same shape is 6 m long. How much paint does the hull of the bigger boat need?
 
 **You are asked first, in order:** What does the problem ask you to work out? → What does the problem give you to work with? → Does the problem ask how long something is, or how much area or volume it has? → What kind of problem is it?
 
 **You are asked:** Now work the problem with that procedure and choose the answer.
 
-- 13.5 litres
-- 4.5 litres
-- 40.5 litres
+- 13.5 liters
+- 4.5 liters
+- 40.5 liters
 
 **Shown as soon as you answer**
 
-- The answer: **13.5 litres**, and the kind of problem is **Square-cube law**.
+- The answer: **13.5 liters**, and the kind of problem is **Square-cube law**.
 - The working, step by step:
   - Find how many times longer the bigger one is than the smaller one: 6 ÷ 2 = 3
   - Decide whether the problem asks about area or about volume: Paint on a hull covers a surface, so the problem asks about area
   - Multiply that number of times by itself, with two of them in the product for an area: 3 × 3 = 9
-  - Multiply the smaller one’s amount by that number of times: 1.5 litres × 9 = 13.5 litres
+  - Multiply the smaller one’s amount by that number of times: 1.5 liters × 9 = 13.5 liters
   If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.
-- If you chose 4.5 litres: You chose **4.5 litres**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
-- If you chose 40.5 litres: You chose **40.5 litres**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
+- If you chose 4.5 liters: You chose **4.5 liters**. That is the answer you get when you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.
+- If you chose 40.5 liters: You chose **40.5 liters**. That is the answer you get when you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.
 - What does the problem ask you to work out? **A length, an area or a volume, from a right-angled triangle or the same shape at different sizes.** The problem asks “How much paint does the hull of the bigger boat need?”, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a *formula* must fit, so the answer to the first question is **“A length, an area or a volume, from a right-angled triangle or the same shape at different sizes”**.
-- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small boat 2 m long needs 1.5 litres of paint for its hull. A bigger boat of exactly the same shape is 6 m long” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
+- What does the problem give you to work with? **Two things of the same shape at different sizes.** The words “A small boat 2 m long needs 1.5 liters of paint for its hull. A bigger boat of exactly the same shape is 6 m long” give two things of exactly the same shape at different sizes, which is **“Two things of the same shape at different sizes”**.
 - Does the problem ask how long something is, or how much area or volume it has? **How much area or volume it has.** The words “How much paint does the hull of the bigger boat need?” ask how much area or volume something has, which is **“How much area or volume it has”**.
 - Why not **Similar shapes**: The problem asks how much area or volume the bigger thing has, not how long one of its parts is. **Similar shapes** would be the name if it asked for a length on the bigger thing.
 - What would make it a different kind: If the problem asked how long a part of the bigger thing is, and not for an area or a volume, it would be **Similar shapes**.

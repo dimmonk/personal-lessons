@@ -1,6 +1,6 @@
 # Learner view: Statistical Claims, Unit One: Four parts of a claim, and a claim that holds
 
-*The first question, and the five answers it sorts every claim into.* Unit revision 2, built to lesson standard 1, status: draft.
+*The first question, and the five answers it sorts every claim into.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -18,7 +18,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before you believe a number: which part of the claim could mislead you?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 42*
 
 [reviewers only: card kind `orient`, id `orient-claim`]
 
@@ -52,11 +52,11 @@ The unit has six parts, and you can stop after any of them.
 5. The fifth answer: a claim in which every part holds
 6. When two parts go wrong, the question, and two whole claims
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. The people or things the figure was worked out from
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 42*
 
 [reviewers only: card kind `meet`, id `meet-counted`]
 
@@ -90,11 +90,11 @@ There are two ways the people or things can fail, and the line below holds both.
 
 In this unit the answer is also the name of the kind: **“Who was counted”**. In every claim in this subject, this is the part you look at first. "Counted" means that a person, a thing or a place is included in the figure, whether anyone literally counted heads or the figure is an average or a share.
 
-The people or things in the figure do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What matters is whether anyone was favoured, or left out, in a way that could move the figure.
+The people or things in the figure do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What matters is whether anyone was favored, or left out, in a way that could move the figure.
 
 ### 3. Who was counted: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 42*
 
 [reviewers only: card kind `again`, id `again-counted`]
 
@@ -129,7 +129,7 @@ The two stories share nothing else. So this is not about golf or about windows. 
 
 ### 4. The story does not decide which part goes wrong
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 42*
 
 [reviewers only: card kind `lens`, id `lens-claim`]
 
@@ -149,7 +149,7 @@ Two more things change on purpose: how large or surprising the number is, and wh
 
 ### 5. Who was counted: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-counted`]
 
@@ -167,7 +167,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 
 It is not the same as the figure being wrong. The figure can be exactly right for the people in it. The trouble is what it is used to say.
 
-And the people or things do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What the answer turns on is whether anyone was favoured or left out in a way that could move the figure.
+And the people or things do not have to be everyone. A group can be a fair picture of a bigger group without being all of it. What the answer turns on is whether anyone was favored or left out in a way that could move the figure.
 
 **Where you will hear it**
 
@@ -181,7 +181,7 @@ In your own life it is the figure you build from the people around you: "everyon
 
 ### 6. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 42*
 
 [reviewers only: card kind `check`, id `check-counted`]
 
@@ -208,7 +208,7 @@ The pieces you can tap:
 
 ### 7. What the figure stands for
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 7 of 42*
 
 [reviewers only: card kind `meet`, id `meet-measure`]
 
@@ -246,7 +246,7 @@ Give this answer when the figure could rise, fall or differ without the real thi
 
 ### 8. What the number counts: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 8 of 42*
 
 [reviewers only: card kind `again`, id `again-measure`]
 
@@ -281,7 +281,7 @@ The two stories share nothing else, so this is not about hospitals or exercise. 
 
 ### 9. What the number counts: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 9 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-measure`]
 
@@ -313,7 +313,7 @@ In your own life it is any score you are handed: your step count after a new pho
 
 ### 10. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 10 of 42*
 
 [reviewers only: card kind `check`, id `check-measure`]
 
@@ -327,14 +327,14 @@ In your own life it is any score you are handed: your step count after a new pho
 **Shown as soon as you answer**
 
 - If you are right: “Right: **What the number counts.**” The people in the figure are fine: every graduate was contacted and nearly all replied. What is counted changed: “Five years ago only full-time jobs counted as work. Now any paid work counts, including a few hours a week in a café”. "In work" can rise from 80% to 95% with no more graduates in full-time jobs than before.
-  - Why not **“Who was counted”**: Nobody is left out and nobody is favoured: every graduate of both years was contacted and nearly all replied. The trouble is not who is in the figure.
+  - Why not **“Who was counted”**: Nobody is left out and nobody is favored: every graduate of both years was contacted and nearly all replied. The trouble is not who is in the figure.
 - If you miss: “The answer is **What the number counts.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Who was counted**: The first part comes first, and it holds. Every graduate of both years was contacted and nearly all replied, so the people in the figure are a fair picture, and there are plenty of them. The case goes on to what the figure counts, and that is where it goes wrong.
 - Taught on: “What the figure stands for” (one tap opens the card).
 
 ### 11. Who was counted or What the number counts: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 11 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-counted-measure`]
 
@@ -342,11 +342,11 @@ You have now met two answers on their own. They are easy to mix up, because in b
 
 **Case A**
 
-> Willow School says its pupils' reading scores rose from 61 to 70 this year. The 70 is the average for the 11 pupils who volunteered to stay after class for an extra test. The school has 340 pupils, and last year's 61 was the average for all of them.
+> Willow School says its students' reading scores rose from 61 to 70 this year. The 70 is the average for the 11 students who volunteered to stay after class for an extra test. The school has 340 students, and last year's 61 was the average for all of them.
 
 **Case B**
 
-> Willow School says its pupils' reading scores rose from 61 to 70 this year. All 340 pupils took the test in both years. This year's test was the shorter version, with easier passages, which the test's maker brought out to replace the old one.
+> Willow School says its students' reading scores rose from 61 to 70 this year. All 340 students took the test in both years. This year's test was the shorter version, with easier passages, which the test's maker brought out to replace the old one.
 
 **What to compare.** Both cases are about the same school and the same rise in reading scores. Compare one thing: is the trouble in who is in the figure, or in what the figure counts?
 
@@ -356,9 +356,9 @@ You have now met two answers on their own. They are easy to mix up, because in b
 
 **Why this one and not the other**
 
-In Case A the test is the same, but this year’s figure comes from 11 pupils who volunteered to stay after class, out of 340. Pupils who volunteer for an extra test are not a fair picture of the school, and last year’s figure was for everyone. The trouble is who is in the figure. The answer is **“Who was counted”**.
+In Case A the test is the same, but this year’s figure comes from 11 students who volunteered to stay after class, out of 340. Students who volunteer for an extra test are not a fair picture of the school, and last year’s figure was for everyone. The trouble is who is in the figure. The answer is **“Who was counted”**.
 
-In Case B every pupil took the test in both years, so nobody is missing. What changed is the test: this year’s is shorter, with easier passages. Scores can rise from 61 to 70 with every pupil reading exactly as well as before. The trouble is what the figure counts. The answer is **“What the number counts”**.
+In Case B every student took the test in both years, so nobody is missing. What changed is the test: this year’s is shorter, with easier passages. Scores can rise from 61 to 70 with every student reading exactly as well as before. The trouble is what the figure counts. The answer is **“What the number counts”**.
 
 The school, the claim and the numbers are the same in both. You cannot tell these two apart from the figure. You can only tell them apart by asking where the trouble sits: in who is in the figure, or in what it counts.
 
@@ -382,7 +382,7 @@ Is the trouble in who or what the figure was worked out from, or in what the fig
 
 ### 12. What the figure is set beside to give it meaning
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 12 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 12 of 42*
 
 [reviewers only: card kind `meet`, id `meet-compare`]
 
@@ -420,7 +420,7 @@ Give this answer when the figure is given as a percentage of what it was, as a t
 
 ### 13. What it is compared with: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 13 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 13 of 42*
 
 [reviewers only: card kind `again`, id `again-compare`]
 
@@ -457,7 +457,7 @@ The two stories share nothing else, so this is not about crime or about health. 
 
 ### 14. What it is compared with: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 14 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 14 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-compare`]
 
@@ -489,7 +489,7 @@ In your own life it is the sale marked "50% off" with no old price, the test res
 
 ### 15. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 15 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 15 of 42*
 
 [reviewers only: card kind `check`, id `check-compare`]
 
@@ -512,7 +512,7 @@ The pieces you can tap:
 
 ### 16. What the number counts or What it is compared with: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 16 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-measure-compare`]
 
@@ -524,7 +524,7 @@ These two are easy to mix up when a figure has fallen or risen, because in both 
 
 **Case B**
 
-> The council of the town of Brandon says: 'Bike thefts are down 37% this year.' It does not say how many bikes were stolen in either year. The police have recorded every theft the same way in both years.
+> The town council of Brandon says: 'Bike thefts are down 37% this year.' It does not say how many bikes were stolen in either year. The police have recorded every theft the same way in both years.
 
 **What to compare.** Both cases say that bike thefts in the town of Brandon fell. Compare one thing: has something about what is counted changed, or is a percentage given with no numbers behind it?
 
@@ -560,7 +560,7 @@ Is there anything about how the figure is counted that could have changed or bee
 
 ### 17. The step from “these go together” to “this made that happen”
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 17 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 17 of 42*
 
 [reviewers only: card kind `meet`, id `meet-cause`]
 
@@ -568,20 +568,20 @@ Three parts are checked so far: who or what the figure was worked out from, what
 
 *The music class*
 
-> At Kent High School, the 120 pupils who take the music class average 71 on the math exam. The 380 who do not take it average 62. The principal says: '⟦Music lessons raise math scores⟧.' The class costs $30 a term, and nearly all of the music pupils' families also pay for extra math coaching.
+> At Kent High School, the 120 students who take the music class average 71 on the math exam. The 380 who do not take it average 62. The principal says: '⟦Music lessons raise math scores⟧.' The class costs $30 a term, and nearly all of the music students' families also pay for extra math coaching.
 
 Stripped of its story, the case is this:
 
-- There are two groups and a figure for each: the 120 pupils who take the music class average 71 on the math exam, and the 380 who do not average 62.
-- The first three parts hold. All of the pupils took the same exam, the numbers are given for both groups, and nothing is left out.
+- There are two groups and a figure for each: the 120 students who take the music class average 71 on the math exam, and the 380 who do not average 62.
+- The first three parts hold. All of the students took the same exam, the numbers are given for both groups, and nothing is left out.
 - Then the claim takes a step further: it says the music lessons raised the scores. That is a claim of cause.
-- And the case shows another way to explain the same result: nearly all of the music pupils’ families also pay for extra math coaching.
+- And the case shows another way to explain the same result: nearly all of the music students’ families also pay for extra math coaching.
 
-Take the parts in order. The pupils in the figures are all the pupils who sat the exam, so nobody is left out and nobody is missing. What is counted is a score on one exam, the same for everyone. The two averages are given with their numbers and set side by side. So the first three parts hold, and you go on to the fourth.
+Take the parts in order. The students in the figures are all the students who took the exam, so nobody is left out and nobody is missing. What is counted is a score on one exam, the same for everyone. The two averages are given with their numbers and set side by side. So the first three parts hold, and you go on to the fourth.
 
-The fourth part is a step that claims often make without saying so. Two things go together in the figures: the pupils who take music have higher scores. The claim then says that one made the other happen: the lessons raised the scores. That is a bigger claim than the figures, and the figures alone cannot carry it. Two things can go together without one making the other happen.
+The fourth part is a step that claims often make without saying so. Two things go together in the figures: the students who take music have higher scores. The claim then says that one made the other happen: the lessons raised the scores. That is a bigger claim than the figures, and the figures alone cannot carry it. Two things can go together without one making the other happen.
 
-To see whether the claim is safe, look for another explanation of the same figures. Here the case itself tells you: nearly all of the music pupils’ families also pay for extra math coaching. That alone could lift their scores, whether or not anyone ever took a music class. The figures would look exactly the same.
+To see whether the claim is safe, look for another explanation of the same figures. Here the case itself tells you: nearly all of the music students’ families also pay for extra math coaching. That alone could lift their scores, whether or not anyone ever took a music class. The figures would look exactly the same.
 
 This part is last for a reason. A claim of cause is built on the figures, so it can only be as sound as they are. When every earlier part holds and the claim still goes on to say that one thing caused another, put one question to it: is there another way to explain the same result? If there is, and the case shows it, this is the answer.
 
@@ -597,7 +597,7 @@ Give this answer when the claim says one thing made another happen, and the case
 
 ### 18. What it says caused what: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 18 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 18 of 42*
 
 [reviewers only: card kind `again`, id `again-cause`]
 
@@ -632,7 +632,7 @@ The two stories share nothing else, so this is not about schools or about health
 
 ### 19. What it says caused what: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 19 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 19 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-cause`]
 
@@ -640,7 +640,7 @@ You know what to point to. This card fills in the rest of the picture of **“Wh
 
 **What it is usually like**
 
-- Two things go together in the figures: pupils who take music score higher, people who take vitamins catch fewer colds, towns with more police have more crime.
+- Two things go together in the figures: students who take music score higher, people who take vitamins catch fewer colds, towns with more police have more crime.
 - The claim then goes a step past the figures and says that one of them made the other happen. Words like "raise", "protect", "works", "because", "led to" and "so" carry the step.
 - The earlier parts hold. The people counted are a fair picture, the figure counts what it says it counts, and it is set beside something fair. If they were not, you would have stopped at an earlier part.
 - There is another way to explain the same result, either in the account or one you can name: something else that the two groups differ in, the result leading to the thing and not the thing to the result, a group picked when it was at its worst, or no group to compare with at all.
@@ -664,7 +664,7 @@ In your own life it is the explanation you give for a result: "I lost weight bec
 
 ### 20. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 20 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 20 of 42*
 
 [reviewers only: card kind `check`, id `check-cause`]
 
@@ -689,7 +689,7 @@ In your own life it is the explanation you give for a result: "I lost weight bec
 
 ### 21. What it is compared with or What it says caused what: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 21 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 21 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-compare-cause`]
 
@@ -697,11 +697,11 @@ A claim about a program that "makes the difference" can go wrong in the third pa
 
 **Case A**
 
-> A leaflet for the Bridge mentoring program says: 'Pupils in the program are 50% more likely to graduate.' It does not say how many pupils graduate with the program or without it.
+> A leaflet for the Bridge mentoring program says: 'Students in the program are 50% more likely to graduate.' It does not say how many students graduate with the program or without it.
 
 **Case B**
 
-> The Bridge mentoring program reports that 90 of the 100 pupils who joined it graduated, and 60 of the 100 who did not join graduated. The leaflet says: 'Mentoring makes the difference.' Pupils joined by asking to, and the pupils who ask are mostly the ones already doing well.
+> The Bridge mentoring program reports that 90 of the 100 students who joined it graduated, and 60 of the 100 who did not join graduated. The leaflet says: 'Mentoring makes the difference.' Students joined by asking to, and the students who ask are mostly the ones already doing well.
 
 **What to compare.** Both cases are about the same mentoring program. Compare one thing: are the numbers behind the figure missing, or are they all given and the claim goes on to say what caused the difference?
 
@@ -713,7 +713,7 @@ A claim about a program that "makes the difference" can go wrong in the third pa
 
 In Case A the figure is "50% more likely to graduate", with no word on how many graduate with the program or without it. Nothing has yet been said about a cause. The trouble is what the figure is set beside. The answer is **“What it is compared with”**.
 
-In Case B the numbers are all there: 90 of 100 and 60 of 100. Nothing is hidden. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that pupils who ask to join are the ones already doing well. The answer is **“What it says caused what”**.
+In Case B the numbers are all there: 90 of 100 and 60 of 100. Nothing is hidden. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that students who ask to join are the ones already doing well. The answer is **“What it says caused what”**.
 
 The program and the claim are the same in both. In Case A the figure needs its numbers. In Case B the figure has its numbers and the claim goes past them.
 
@@ -731,7 +731,7 @@ Is something you need beside the figure missing, such as the numbers behind a pe
 
 ### 22. Who was counted or What it says caused what: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 22 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 22 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-counted-cause`]
 
@@ -779,7 +779,7 @@ Look at the people or things in the figure before you look at the claim. Are the
 
 ### 23. Every part the claim makes holds
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 23 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 23 of 42*
 
 [reviewers only: card kind `meet`, id `meet-holds`]
 
@@ -787,7 +787,7 @@ Four answers say that a part of a claim goes wrong. The fifth is what is left wh
 
 *The county survey*
 
-> A county health office phoned 1,100 adults whose numbers were ⟦drawn by lottery from the full list of landline and mobile numbers in the county. It tried each number up to six times and reached 1,000 of them⟧. Thirty-one percent of the 1,000 said they smoke. The office reports: 'About three in ten adults in the county smoke, give or take three points.'
+> A county health office phoned 1,100 adults whose numbers were ⟦drawn by lottery from the full list of landline and cell phone numbers in the county. It tried each number up to six times and reached 1,000 of them⟧. Thirty-one percent of the 1,000 said they smoke. The office reports: 'About three in ten adults in the county smoke, give or take three points.'
 
 Stripped of its story, the case is this:
 
@@ -799,7 +799,7 @@ Stripped of its story, the case is this:
 
 This answer needs no new idea. It is what you reach when the other four have each been put to the claim and none has found anything. The claim says how many adults in the county smoke, so go through its parts in the order.
 
-The first part is who or what is in the figure. The office took a list of every phone number in the county and drew 1,100 of them by lottery, so nobody was favoured in being picked. It then tried each number up to six times and reached 1,000. Few were missed, and the ones missed were not missed for a reason that has anything to do with smoking. That is a fair picture of the adults of the county, and there are enough people that one or two more or fewer would not move the figure.
+The first part is who or what is in the figure. The office took a list of every phone number in the county and drew 1,100 of them by lottery, so nobody was favored in being picked. It then tried each number up to six times and reached 1,000. Few were missed, and the ones missed were not missed for a reason that has anything to do with smoking. That is a fair picture of the adults of the county, and there are enough people that one or two more or fewer would not move the figure.
 
 The second part is what the figure counts: whether a person says they smoke, asked in the same way of everyone. It did not change partway through, and nobody was paid or judged on the answer. The third part is what the figure is set beside: nothing, because the claim does not compare. And the fourth part is what the claim says caused what: nothing, because it does not say why.
 
@@ -817,20 +817,20 @@ Give this answer when every part the claim makes holds up when it is checked in 
 
 ### 24. Nothing goes wrong: the same thing in a different story
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 24 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 24 of 42*
 
 [reviewers only: card kind `again`, id `again-holds`]
 
 The county survey gave you what to point to: every part the claim makes, checked in order, with nothing wrong in any: a fair picture of the group, a figure that moves only when the real thing moves, a fair thing to set it beside, and, if it says one thing caused another, groups formed by chance. Here it is again with a different story, and this time the claim compares two things, which says more than a single figure about one group does.
 
-The first case again, in one line. *The county survey*: “drawn by lottery from the full list of landline and mobile numbers in the county. It tried each number up to six times and reached 1,000 of them”
+The first case again, in one line. *The county survey*: “drawn by lottery from the full list of landline and cell phone numbers in the county. It tried each number up to six times and reached 1,000 of them”
 
 The second case.
 
 *The two depots*
 
 > A courier firm has two depots, North and South. Both depots serve similar mixes of homes and offices, and both log every parcel the same way. Last quarter North delivered 9,000 parcels and 270 arrived late. South delivered 8,000 and 400 arrived late. The firm says: 'South was late more often: 5 parcels in 100 against 3.'
-**You are asked:** In *The county survey*, these words show it: “drawn by lottery from the full list of landline and mobile numbers in the county. It tried each number up to six times and reached 1,000 of them”. Which words show the same thing in this case? Tap them.
+**You are asked:** In *The county survey*, these words show it: “drawn by lottery from the full list of landline and cell phone numbers in the county. It tried each number up to six times and reached 1,000 of them”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “A courier firm has two depots, North and South.”
@@ -845,7 +845,7 @@ The pieces you can tap:
 
 **What the two share**
 
-In both cases the question is put to the parts in order, and it finds nothing. In the survey, nobody was favoured in who was asked, and almost everyone asked answered. In the depots, both are counted the same way and serve the same kind of customers, so the two figures can be set side by side.
+In both cases the question is put to the parts in order, and it finds nothing. In the survey, nobody was favored in who was asked, and almost everyone asked answered. In the depots, both are counted the same way and serve the same kind of customers, so the two figures can be set side by side.
 
 The two claims are different sizes. The survey gives a figure about one group. The depot claim says which of two things is bigger, a difference between two groups. Each says only what its figures can carry, and neither says why.
 
@@ -854,7 +854,7 @@ The two stories share nothing else, so this is not about health or about parcels
 
 ### 25. Nothing goes wrong: what it is like
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 25 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 25 of 42*
 
 [reviewers only: card kind `portrait`, id `portrait-holds`]
 
@@ -884,7 +884,7 @@ In your own life it is the claim you are about to repeat after checking where it
 
 ### 26. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 26 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 26 of 42*
 
 [reviewers only: card kind `check`, id `check-holds`]
 
@@ -909,7 +909,7 @@ The pieces you can tap:
 
 ### 27. A wrong idea: "It was in a respected journal, so it is settled"
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 27 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 27 of 42*
 
 [reviewers only: card kind `refute`, id `refute-source`]
 
@@ -930,7 +930,7 @@ What settles it is what you can point to in the claim itself: who or what the fi
 
 ### 28. Who was counted or Nothing goes wrong: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 28 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 28 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-counted-holds`]
 
@@ -972,7 +972,7 @@ How many of the people or things asked are in the figure, how did they come to b
 
 ### 29. What the number counts or Nothing goes wrong: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 29 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 29 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-measure-holds`]
 
@@ -1014,7 +1014,7 @@ Was the figure counted the same way, with the same tool and the same effort to f
 
 ### 30. What it is compared with or Nothing goes wrong: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 30 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 30 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-compare-holds`]
 
@@ -1056,7 +1056,7 @@ Are the numbers behind the comparison given, are the two things alike, and were 
 
 ### 31. What it says caused what or Nothing goes wrong: telling them apart
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 31 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 31 of 42*
 
 [reviewers only: card kind `lookalike`, id `look-cause-holds`]
 
@@ -1104,11 +1104,11 @@ Who decided which group each person or thing was in: they did, their circumstanc
 
 ### 32. A claim of cause, built on the ones who stayed
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 32 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 32 of 42*
 
 [reviewers only: card kind `exception`, id `exc-finishers`]
 
-You now know five answers and how to tell the neighbours apart. Real claims are less tidy than the pairs you have seen. A claim can say that one thing caused another, and be built on a figure that has gone wrong in the very first part.
+You now know five answers and how to tell the neighbors apart. Real claims are less tidy than the pairs you have seen. A claim can say that one thing caused another, and be built on a figure that has gone wrong in the very first part.
 
 *The finishers*
 
@@ -1148,7 +1148,7 @@ The answer is the earlier part for a reason. Everything after the first part res
 
 ### 33. A claim of cause, on a figure the agents could push
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 33 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 33 of 42*
 
 [reviewers only: card kind `exception`, id `exc-bonus`]
 
@@ -1195,7 +1195,7 @@ Here the two are tied closely. The bonus is the cause the manager names, and it 
 
 ### 34. A claim of cause, on a percentage with no numbers
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 34 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 34 of 42*
 
 [reviewers only: card kind `exception`, id `exc-advert`]
 
@@ -1237,7 +1237,7 @@ If the shop had said what it sold before and after (say $2,000 a week, and now $
 
 ### 35. A wrong idea: "If something is wrong with the claim, the claim is false"
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 35 of 42*
 
 [reviewers only: card kind `refute`, id `refute-false`]
 
@@ -1258,7 +1258,7 @@ So when you find a problem, say what the figure cannot show, and say what you wo
 
 ### 36. The question you have been answering all along
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 36 of 42*
 
 [reviewers only: card kind `question`, id `q-gate`]
 
@@ -1334,7 +1334,7 @@ Some cases show two of the five at once. You have met three: a gym’s claim of 
 
 ### 37. A question about a new case
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 37 of 42*
 
 [reviewers only: card kind `check`, id `check-gate`]
 
@@ -1361,7 +1361,7 @@ Some cases show two of the five at once. You have met three: a gym’s claim of 
 
 ### 38. A whole claim, from the question to the answer
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 38 of 42*
 
 [reviewers only: card kind `worked`, id `worked-walkers`]
 
@@ -1411,7 +1411,7 @@ Here the likeness agrees with the answer, so the answer stands. The question com
 
 ### 39. A second whole claim, where the opening points the wrong way
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 39 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 39 of 42*
 
 [reviewers only: card kind `worked`, id `worked-spanish`]
 
@@ -1584,7 +1584,7 @@ The question is shown with all five of its answers, in order.
 
 **Drill item 6 of 41**
 
-> A teacher gave the three pupils who stayed after class on Friday a spelling test. They scored 90%, 100% and 95%. She writes in her report: 'Our pupils are excellent spellers: they average 95%.'
+> A teacher gave the three students who stayed after class on Friday a spelling test. They scored 90%, 100% and 95%. She writes in her report: 'Our students are excellent spellers: they average 95%.'
 
 **You are asked:** Which part of the claim goes wrong first?
 
@@ -1596,8 +1596,8 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Who was counted.**” The claim speaks for "our pupils", but the figure comes from three pupils who happened to stay after class: “gave the three pupils who stayed after class on Friday a spelling test”. Three is too few for luck not to move the figure, and pupils who stay after class are not a fair picture of the school.
-  - Why not **“Nothing goes wrong”**: The scores are real, but three pupils who stayed behind are not a fair picture of a school. One part fails, so the claim does not hold.
+- If you are right: “Right: **Who was counted.**” The claim speaks for "our students", but the figure comes from three students who happened to stay after class: “gave the three students who stayed after class on Friday a spelling test”. Three is too few for luck not to move the figure, and students who stay after class are not a fair picture of the school.
+  - Why not **“Nothing goes wrong”**: The scores are real, but three students who stayed behind are not a fair picture of a school. One part fails, so the claim does not hold.
 - If you miss: “The answer is **Who was counted.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **What the number counts**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **What it is compared with**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1842,7 +1842,7 @@ The question is shown with all five of its answers, in order.
 - The figure comes from the 30 people who answered a phone-in, and the claim is about the whole town.
 - The agency changed which visits count in March, and the figure jumped in April.
 - It says deaths are "down by half" and does not say how many there were.
-- Pupils who take the class do better, and the principal says the class is the reason.
+- Students who take the class do better, and the principal says the class is the reason.
 - Names were drawn by lottery from the full list, and nearly everyone drawn replied.
 
 **Shown as soon as you answer**
@@ -1850,7 +1850,7 @@ The question is shown with all five of its answers, in order.
 - The answer is: The figure comes from the 30 people who answered a phone-in, and the claim is about the whole town. That detail shows who the figure was worked out from, and that they are not a fair picture of the group the claim speaks for.
 - If you chose “The agency changed which visits count in March, and the figure jumped in April.”: that belongs to **“What the number counts”**.
 - If you chose “It says deaths are "down by half" and does not say how many there were.”: that belongs to **“What it is compared with”**.
-- If you chose “Pupils who take the class do better, and the principal says the class is the reason.”: that belongs to **“What it says caused what”**.
+- If you chose “Students who take the class do better, and the principal says the class is the reason.”: that belongs to **“What it says caused what”**.
 - If you chose “Names were drawn by lottery from the full list, and nearly everyone drawn replied.”: that belongs to **“Nothing goes wrong”**.
 - Taught on: “Who was counted: what it is like” (one tap opens the card).
 
@@ -2068,7 +2068,7 @@ The question is shown with all five of its answers, in order.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing goes wrong.**” Each part holds. “drew 300 first-year students by lottery from the full class list and tested all of them the same way at the start and the end of the year, with 290 completing both tests”. Nobody was favoured, nearly everyone drawn took both tests, and the test is the same at both ends. The claim says only that the score rose. It does not say why.
+- If you are right: “Right: **Nothing goes wrong.**” Each part holds. “drew 300 first-year students by lottery from the full class list and tested all of them the same way at the start and the end of the year, with 290 completing both tests”. Nobody was favored, nearly everyone drawn took both tests, and the test is the same at both ends. The claim says only that the score rose. It does not say why.
   - Why not **“Who was counted”**: Only 300 students were tested, but they were drawn by lottery from the whole class, nearly all of them took both tests, and 300 is plenty. They are a fair picture of the first-year class.
 - If you miss: “The answer is **Nothing goes wrong.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Who was counted**: the “why not” line above. Then the lines from the card that compared the two: Both can give the same figure from the same list of people, and both can sound equally sure. In **“Who was counted”** the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. In **“Nothing goes wrong”** they are a fair picture and there are enough of them, and the claim speaks only for the group they stand for. How many of the people or things asked are in the figure, how did they come to be in it, and does the claim speak for more than they stand for?
@@ -2423,7 +2423,7 @@ The question is shown with all five of its answers, in order.
 
 ### 40. What to carry away
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 40 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 40 of 42*
 
 [reviewers only: card kind `recap`, id `recap-gate`]
 
@@ -2464,7 +2464,7 @@ Which part of the claim goes wrong first?
 
 ### 41. Where would you meet this?
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 41 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 41 of 42*
 
 [reviewers only: card kind `transfer`, id `transfer-gate`]
 
@@ -2488,7 +2488,7 @@ One line is enough. It is kept on this device only and is never marked.
 
 ### 42. A plan, if you want one
 
-*Unit One · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 42 of 42*
+*Unit One · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 42 of 42*
 
 [reviewers only: card kind `plan`, id `plan-gate`]
 
@@ -2754,7 +2754,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 11 of 20**
 
-> A council says: 'Parking fines are up 50% in a year.' It does not say how many fines were written in either year.
+> A city council says: 'Parking fines are up 50% in a year.' It does not say how many fines were written in either year.
 
 **You are asked:** Which part of the claim goes wrong first?
 
@@ -2773,7 +2773,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **What the number counts**: the “why not” line above. Then the lines from the card that compared the two: Both are about a figure that has risen or fallen, or that sounds bigger or smaller than it is, and in both the people or things in it are fine. In **“What the number counts”** what is counted could change, or be pushed, so that the figure moves while the real thing does not. In **“What it is compared with”** what is counted is the same throughout, and the trouble is that the figure is given in a form (a percentage, a test’s accuracy, totals side by side) that leaves out what you need beside it. Is there anything about how the figure is counted that could have changed or been pushed? Or is it counted the same way throughout, and given as a percentage, a test result or two totals with something you need beside it left out?
   - If you chose **What it says caused what**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come with a figure for two groups, and both can make a program, a product or a habit sound as if it matters. In **“What it is compared with”** the trouble is a figure given in a form that hides what you need beside it, and the claim need not say anything about a cause. In **“What it says caused what”** the figures are all given, and the trouble is that the claim goes on to say one thing caused another when the case shows another way to explain the result. Is something you need beside the figure missing, such as the numbers behind a percentage? Or are the figures all given, and does the claim say that one thing made the other happen?
   - If you chose **Nothing goes wrong**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can say that one thing is bigger, likelier or riskier than another, with the same claim about the same two things. In **“What it is compared with”** the claim leaves out something you need beside the figure to read it, such as the numbers behind a percentage, how common the thing is, or what each total is made of. In **“Nothing goes wrong”** the numbers are given, the two things are alike and counted the same way, and the claim says only which is bigger. Are the numbers behind the comparison given, are the two things alike, and were they counted the same way? Is anything you would need beside the figure missing?
-- What would make it a different name: If the council said that 4,000 fines were written last year and 6,000 this year, counted the same way, the claim would be **“Nothing goes wrong”**.
+- What would make it a different name: If the city council said that 4,000 fines were written last year and 6,000 this year, counted the same way, the claim would be **“Nothing goes wrong”**.
 - Taught on: “What the figure is set beside to give it meaning” (one tap opens the card).
 
 **Return case 12 of 20**
@@ -2874,7 +2874,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 16 of 20**
 
-> A reading app says: 'Our app raised reading levels by 1.2 grades in one term.' It followed 500 pupils who started the term in September, straight after the summer break, when their reading levels are at their lowest of the year.
+> A reading app says: 'Our app raised reading levels by 1.2 grades in one term.' It followed 500 students who started the term in September, straight after the summer break, when their reading levels are at their lowest of the year.
 
 **You are asked:** Which part of the claim goes wrong first?
 
@@ -2886,14 +2886,14 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **What it says caused what.**” The figure is given for 500 pupils counted the same way at both ends. Then the app says this: “Our app raised reading levels by 1.2 grades in one term”. That is a claim of cause, and the case shows another way to explain the result: pupils start the term at their lowest and would climb back with or without the app.
+- If you are right: “Right: **What it says caused what.**” The figure is given for 500 students counted the same way at both ends. Then the app says this: “Our app raised reading levels by 1.2 grades in one term”. That is a claim of cause, and the case shows another way to explain the result: students start the term at their lowest and would climb back with or without the app.
   - Why not **“What the number counts”**: The same test is used at both ends of the term, so nothing about how the figure is made changed. The trouble is the step from the rise to its cause.
 - If you miss: “The answer is **What it says caused what.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Who was counted**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come with a claim that a program, a product or a habit pays off, and in both the figure can sound convincing. In **“Who was counted”** the trouble is who or what the figure was worked out from. In **“What it says caused what”** the figure comes from a fair picture, and the trouble is that the claim says one thing caused another when the case shows another way to explain the result. Look at the people or things in the figure before you look at the claim. Are they a fair picture, and enough of them? If so, does the claim say that one thing caused another, with another way in the case for the same result?
   - If you chose **What the number counts**: the “why not” line above. Then the lines from the card that compared the two: Both can come with a claim that something worked, and with a figure that rose after it was introduced. In **“What the number counts”** the figure could rise without the real thing moving, because of what is counted or because of what people do to the figure. In **“What it says caused what”** the figure counts what it is read as showing, and the trouble is that the claim says one thing caused another when the case shows another way to explain the result. Could the figure have risen without the real thing it is read as showing moving? If not, does the claim say that one thing caused another, with another way in the case for the same result?
   - If you chose **What it is compared with**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can come with a figure for two groups, and both can make a program, a product or a habit sound as if it matters. In **“What it is compared with”** the trouble is a figure given in a form that hides what you need beside it, and the claim need not say anything about a cause. In **“What it says caused what”** the figures are all given, and the trouble is that the claim goes on to say one thing caused another when the case shows another way to explain the result. Is something you need beside the figure missing, such as the numbers behind a percentage? Or are the figures all given, and does the claim say that one thing made the other happen?
   - If you chose **Nothing goes wrong**: built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».” Then the lines from the card that compared the two: Both can show two groups with the same difference between them, and both can say that one thing made the difference. In **“What it says caused what”** the case shows another way to explain the same result, usually because people ended up in their groups by their own choice or circumstance. In **“Nothing goes wrong”** the groups were formed by chance, so nothing else is likelier to be in one group than in the other. Who decided which group each person or thing was in: they did, their circumstances did, or a lottery did? Does the case show another way to explain the result?
-- What would make it a different name: If another 500 pupils, picked by lottery, had spent the same term without the app, and the app group had still risen more, the claim would be **“Nothing goes wrong”**.
+- What would make it a different name: If another 500 students, picked by lottery, had spent the same term without the app, and the app group had still risen more, the claim would be **“Nothing goes wrong”**.
 - Taught on: “The step from “these go together” to “this made that happen”” (one tap opens the card).
 
 **Return case 17 of 20**
@@ -2910,7 +2910,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing goes wrong.**” Each part holds. “drawn by lottery from all 60,000 connections, with the same lab method, and every tap it drew was tested”. Nobody was favoured, every tap drawn was tested the same way, and 150 is enough that one or two more or fewer would not move the figure. The claim gives a figure about one group at one time.
+- If you are right: “Right: **Nothing goes wrong.**” Each part holds. “drawn by lottery from all 60,000 connections, with the same lab method, and every tap it drew was tested”. Nobody was favored, every tap drawn was tested the same way, and 150 is enough that one or two more or fewer would not move the figure. The claim gives a figure about one group at one time.
   - Why not **“Who was counted”**: Only 150 of 60,000 connections were tested, but they were drawn by lottery, every one drawn was tested, and 150 is plenty. They are a fair picture of the homes in the area.
 - If you miss: “The answer is **Nothing goes wrong.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Who was counted**: the “why not” line above. Then the lines from the card that compared the two: Both can give the same figure from the same list of people, and both can sound equally sure. In **“Who was counted”** the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. In **“Nothing goes wrong”** they are a fair picture and there are enough of them, and the claim speaks only for the group they stand for. How many of the people or things asked are in the figure, how did they come to be in it, and does the claim speak for more than they stand for?
@@ -2982,7 +2982,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Nothing goes wrong.**” Each part holds. “drawn by lottery from everyone who stayed last year. It followed up twice by email and then by phone, and 1,350 answered”. Nobody was favoured in who was asked, and nine in ten of those asked answered, so the people in the figure are a fair picture of last year’s guests. The claim says no more than that.
+- If you are right: “Right: **Nothing goes wrong.**” Each part holds. “drawn by lottery from everyone who stayed last year. It followed up twice by email and then by phone, and 1,350 answered”. Nobody was favored in who was asked, and nine in ten of those asked answered, so the people in the figure are a fair picture of last year’s guests. The claim says no more than that.
   - Why not **“Who was counted”**: A survey can mislead when few people reply, but here 1,350 of the 1,500 answered after repeated follow-up, and the guests were drawn by lottery.
 - If you miss: “The answer is **Nothing goes wrong.**” The same reason and the “why not” line follow, and then a line about the answer you chose:
   - If you chose **Who was counted**: the “why not” line above. Then the lines from the card that compared the two: Both can give the same figure from the same list of people, and both can sound equally sure. In **“Who was counted”** the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. In **“Nothing goes wrong”** they are a fair picture and there are enough of them, and the claim speaks only for the group they stand for. How many of the people or things asked are in the figure, how did they come to be in it, and does the claim speak for more than they stand for?

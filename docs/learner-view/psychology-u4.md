@@ -1,6 +1,6 @@
 # Learner view: Psychology, Unit Four: A lasting way someone is
 
-*Five lasting ways of being that keep costing someone, one ordinary way that does not, and how to tell which a case shows.* Unit revision 2, built to lesson standard 1, status: draft.
+*Five lasting ways of being that keep costing someone, one ordinary way that does not, and how to tell which a case shows.* Unit revision 3, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,13 +17,13 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Telling the lasting ways of being apart, and knowing when none of them applies
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 1 of 46*
 
 [reviewers only: card kind `orient`, id `orient-pat`]
 
 After this unit you can read an account of how one person has been over many years, with different people in different places, and say which of six things it shows: one of five lasting ways of being that keep costing someone, or an ordinary way of being that does not. Nothing in this unit is a diagnosis of a person. The names describe what an account shows. Only a professional, after a long assessment, can say what a particular person has.
 
-You have heard the labels. A boss is called by the medical name for a swollen ego, an ex by the medical name for clinging, a flatmate by the medical name for being dramatic, a stranger by a word for being cold and cruel. Almost always, the person saying it has seen one bad week, one hard relationship, or one loud person at one party.
+You have heard the labels. A boss is called by the medical name for a swollen ego, an ex by the medical name for clinging, a roommate by the medical name for being dramatic, a stranger by a word for being cold and cruel. Almost always, the person saying it has seen one bad week, one hard relationship, or one loud person at one party.
 
 This unit teaches what each label would need before it could be used for an account of a person. All of them need years, more than one place, more than one relationship, and what the person does again and again. Five of the six names also need something people rarely count: a cost, something that keeps being lost or harmed because of how the person is. The sixth name is for the person who is loud, shy, dramatic, blunt or touchy in the same way for years and does no lasting harm. It is the most common right answer.
 
@@ -46,7 +46,7 @@ What does the person do, again and again, across those years?
 - Acts above others, and turns angry or scornful when not treated as special → acting above others for years, and angry when not treated so
 - Feels overlooked and owed more, and turns hurt and resentful when not treated as special → feeling overlooked and owed more for years, and hurt when not treated so
 - Clings to people, and turns on them when they seem to be leaving → clinging to people, and turning on them when they seem to be leaving
-- Keeps the attention on themselves, with bigger displays when it moves away → always at the centre of attention, with bigger displays when it moves away
+- Keeps the attention on themselves, with bigger displays when it moves away → always at the center of attention, with bigger displays when it moves away
 - Breaks rules and uses people, and shows no regret for the harm → breaking rules and using people, with no regret
 - Stays the same way for years, and it does not keep doing harm → a way of being that stays the same, and does not keep doing harm
 
@@ -55,7 +55,7 @@ What does the person do, again and again, across those years?
 - Acting above others for years, and angry when not treated so: Grandiose narcissism
 - Feeling overlooked and owed more for years, and hurt when not treated so: Vulnerable narcissism
 - Clinging to people, and turning on them when they seem to be leaving: Borderline personality
-- Always at the centre of attention, with bigger displays when it moves away: Histrionic personality
+- Always at the center of attention, with bigger displays when it moves away: Histrionic personality
 - Breaking rules and using people, with no regret: Antisocial personality
 - A way of being that stays the same, and does not keep doing harm: An ordinary personality
 
@@ -64,15 +64,15 @@ The unit has six parts, and you can stop after any of them.
 1. Years, places, relationships and a cost: the first name, and the ordinary way of being
 2. The same family, defended inward
 3. Clinging to people, and turning on them
-4. At the centre of attention
+4. At the center of attention
 5. Breaking rules and using people, and the question
 6. Two whole cases, then the drill
 
-Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown straight away. Nothing here is graded. A miss only decides what comes back.
+Each name is taught through cases first. After every step you answer one question about a new case, and the answer and the reason are shown right away. Nothing here is graded. A miss only decides what comes back.
 
 ### 2. A lasting way of being that keeps costing
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 2 of 46*
 
 [reviewers only: card kind `term`, id `term-pd`]
 
@@ -90,14 +90,14 @@ A "cost", in this unit, is anything lost or harmed because of how the person is:
 
 **The word for this.** *Personality disorder*: a lasting way of being, across years, places and relationships, that keeps costing the person or the people around them. Only a professional diagnoses one, after long assessment; the questions name what a case shows, not a person.
 
-Two things about the word. The first is that it is used for all three at once. A way of being that lasts and turns up everywhere, like being shy, is not this unless it also keeps costing. The second is that it is a medical word. Only a professional can say that a particular person has one. That judgement is called a diagnosis, and it comes after a long assessment: many meetings and a full history. A short account of a person is not that.
+Two things about the word. The first is that it is used for all three at once. A way of being that lasts and turns up everywhere, like being shy, is not this unless it also keeps costing. The second is that it is a medical word. Only a professional can say that a particular person has one. That judgment is called a diagnosis, and it comes after a long assessment: many meetings and a full history. A short account of a person is not that.
 
 In the word, "personality" means how a person usually is, and "disorder" says that it keeps doing harm. Dale’s way has a name here. This card is not about that name. It is about the three things that every name in this unit has to show.
 
 
 ### 3. Acting above others for years, and angry when not treated so
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 3 of 46*
 
 [reviewers only: card kind `meet`, id `meet-narcgrand`]
 
@@ -137,11 +137,11 @@ You may also hear this called “a narcissist” or “overt narcissism” or �
 
 ### 4. Grandiose narcissism: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 4 of 46*
 
 [reviewers only: card kind `again`, id `again-narcgrand`]
 
-Dennis gave you what to point to: years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them. Here is a second case, in a village hall and not a law firm.
+Dennis gave you what to point to: years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them. Here is a second case, in a community hall and not a law firm.
 
 The first case again, in one line. *The law partner*: “he still opens every meeting by describing how the firm managed before he arrived” and “a nobody who got lucky” and “Two juniors have resigned this year with the same complaint”
 
@@ -149,15 +149,15 @@ The second case.
 
 *The committee chair*
 
-> Oriel is sixty-one and has chaired the village hall committee for twenty-two years. She tells every new member that she is the only one who understands how things are done, and she has never let the treasurer see the accounts: 'I don't answer to you.' When a young member's idea for the summer fete was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the rota. At her daughter's wedding she corrected the best man's speech into the microphone. Eight volunteers have left in five years, and her daughter now sees her only at Christmas.
+> Oriel is sixty-one and has chaired the community hall committee for twenty-two years. She tells every new member that she is the only one who understands how things are done, and she has never let the treasurer see the accounts: 'I don't answer to you.' When a young member's idea for the summer fair was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the schedule. At her daughter's wedding she corrected the best man's speech into the microphone. Eight volunteers have left in five years, and her daughter now sees her only at Christmas.
 **You are asked:** In *The law partner*, these words show it: “he still opens every meeting by describing how the firm managed before he arrived” and “a nobody who got lucky” and “Two juniors have resigned this year with the same complaint”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “She tells every new member that she is the only one who understands how things are done”
-2. “When a young member's idea for the summer fete was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the rota”
+2. “When a young member's idea for the summer fair was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the schedule”
 3. “Eight volunteers have left in five years, and her daughter now sees her only at Christmas”
 
-**Shown as soon as you tap.** The words are “When a young member's idea for the summer fete was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the rota”.
+**Shown as soon as you tap.** The words are “When a young member's idea for the summer fair was chosen over hers, she called him 'a jumped-up nobody' at the next meeting and had him taken off the schedule”.
 - If you tapped “She tells every new member that she is the only one who understands how things are done”: That is Oriel acting as if she is above the others. It is there before anything goes against her. The words asked for are what she does when something does.
 - If you tapped “Eight volunteers have left in five years, and her daughter now sees her only at Christmas”: That is what it has cost. It follows from what Oriel does, but it is not what she does.
 
@@ -165,18 +165,18 @@ The pieces you can tap:
 
 Dennis and Oriel each act as if they are above the people around them: the corner room and the head of the table, "the only one who understands how things are done". Each turns scornful when someone else is praised or chosen: "a nobody who got lucky", "a jumped-up nobody". And in each case it keeps costing: two juniors resign, eight volunteers leave, a son and a daughter keep away.
 
-A law partner and a village hall chair have nothing else in common. So this is not about law, or halls, or being in charge. It holds wherever a person acts as if they are better than others and owed special treatment, takes little interest in what others feel, and turns angry or scornful on whoever does not give it. That is what **Grandiose narcissism** names.
+A law partner and a community hall chair have nothing else in common. So this is not about law, or halls, or being in charge. It holds wherever a person acts as if they are better than others and owed special treatment, takes little interest in what others feel, and turns angry or scornful on whoever does not give it. That is what **Grandiose narcissism** names.
 
 
 ### 5. The story never decides the answer
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 5 of 46*
 
 [reviewers only: card kind `lens`, id `lens-pat`]
 
 The last card asked you to ignore the setting. That holds for the whole unit, so here it is once in full.
 
-Every case in this unit has two layers. The top layer is the story: a law firm, a village hall, a football club, a family lunch. The layer underneath is the person: how they act, over and over, across the years, whatever the story is.
+Every case in this unit has two layers. The top layer is the story: a law firm, a community hall, a soccer club, a family lunch. The layer underneath is the person: how they act, over and over, across the years, whatever the story is.
 
 The names belong to the layer underneath. The same story can carry any of them: a person who is scornful at work could be one of several names, depending on what else the case shows. And each name turns up in every kind of story. Nor does how loud the person is decide it. Some of the names here are loud and some are quiet, and some of the loudest people in these cases are ones whose way of being does no lasting harm.
 
@@ -188,7 +188,7 @@ From here on the cases change their stories on purpose. Sometimes two cases will
 
 ### 6. Grandiose narcissism: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 6 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-narcgrand`]
 
@@ -199,7 +199,7 @@ You now know what to point to. This card fills in the rest of the picture, so th
 - The case is a long view. It covers years, more than one place and more than one relationship. A single row is not enough.
 - The person acts above other people in small things as well as large ones: the best seat, the last word, the credit for what a team did. Other people are there to confirm it.
 - There is little room for what others feel. The person may not ask, may not remember, or may treat someone else’s feelings as an attack on themselves.
-- What sets it off is not being treated as special: criticism, someone else’s praise, being passed over, being disagreed with. The answer is anger or scorn, and it is aimed at someone.
+- What sets it off is not being treated as special: being found fault with, someone else’s praise, being passed over, being disagreed with. The answer is anger or scorn, and it is aimed at someone.
 - It can be charming at first. The cost often turns up later and slowly, in resignations, a family that keeps its distance, a run of short jobs.
 - The person is often sure that other people are the problem. A sincere "I have no idea why they all left" is common.
 
@@ -221,11 +221,11 @@ You will rarely have enough to go on. You may have this much about a boss you wo
 
 ### 7. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 7 of 46*
 
 [reviewers only: card kind `check`, id `check-narcgrand`]
 
-> Wes has played for the same amateur football club for twenty-five years. He tells each new signing that he is the best player they have had, and expects to wear the number ten shirt whatever his form. When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'. He has fallen out with three managers and two clubs over where he is picked, and the secretary says half the squad now stay away from the bar when Wes is in it.
+> Wes has played for the same amateur soccer club for twenty-five years. He tells each new signing that he is the best player they have had, and expects to wear the number ten shirt whatever his form. When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'. He has fallen out with three managers and two clubs over where he is picked, and the secretary says half the squad now stay away from the bar when Wes is in it.
 
 **You are asked:** Which part of this case shows what Wes does when he is not treated as special? Tap it.
 
@@ -244,7 +244,7 @@ The pieces you can tap:
 
 ### 8. A wrong idea about the label
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 8 of 46*
 
 [reviewers only: card kind `refute`, id `refute-label`]
 
@@ -260,12 +260,12 @@ First, one boss and one report is not years, more than one place and more than o
 
 Second, shouting and taking credit are things people do for many reasons. The name needs all of this: years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them. A cost to you, for one report, does not show it.
 
-Third, the name is for what a case shows, not for what a person is. Even an account that did show all of it would be an account of years of behaviour, not a diagnosis. Only a professional can diagnose, after a long assessment. What you can say about your boss is what she did: "She shouted at me and took the credit for my report." That is accurate, and she can answer it. A label cannot be answered.
+Third, the name is for what a case shows, not for what a person is. Even an account that did show all of it would be an account of years of behavior, not a diagnosis. Only a professional can diagnose, after a long assessment. What you can say about your boss is what she did: "She shouted at me and took the credit for my report." That is accurate, and she can answer it. A label cannot be answered.
 
 
 ### 9. A way of being that stays the same, and does not keep doing harm
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 9 of 46*
 
 [reviewers only: card kind `meet`, id `meet-ordpersonality`]
 
@@ -273,16 +273,16 @@ Everything so far has been about ways of being that keep costing something. Most
 
 *The loud baker*
 
-> Rosa is fifty-eight and has run her bakery for thirty years. She ⟦has been the loudest and surest person in every room since she was a girl⟧: she ran her school's netball team, her union branch and the church flower rota the same way, by telling everyone what to do and being right about half the time. Her family teases her about it. When she gets a recipe wrong she laughs and says 'wrong again'. When her sister's husband won the town's business award, she organised the party. ⟦Her staff have stayed an average of fifteen years, and she has the same three friends she made at school⟧.
+> Rosa is fifty-eight and has run her bakery for thirty years. She ⟦has been the loudest and surest person in every room since she was a girl⟧: she ran her school's basketball team, her union branch and the church flower guild the same way, by telling everyone what to do and being right about half the time. Her family teases her about it. When she gets a recipe wrong she laughs and says 'wrong again'. When her sister's husband won the town's business award, she organized the party. ⟦Her staff have stayed an average of fifteen years, and she has the same three friends she made at school⟧.
 
 Stripped of its story, the case is this:
 
-- There are years and more than one place: thirty years of the bakery, and before that a school team, a trade union and a church rota.
+- There are years and more than one place: thirty years of the bakery, and before that a school team, a trade union and a church guild.
 - The same way of being runs through all of it: Rosa is the loudest and surest person in every room.
-- It is a strong way of being, and her family teases her about it. She does not turn scornful when someone else is thanked: she organises the party.
+- It is a strong way of being, and her family teases her about it. She does not turn scornful when someone else is thanked: she organizes the party.
 - It does not keep costing. Her staff have stayed an average of fifteen years, and she has the same three friends she made at school.
 
-Rosa is bossy and loud, and has been since she was a girl. If you listened only to how she acts, you might think of **Grandiose narcissism**: she tells everyone what to do. But look at what the case shows beside that. She laughs at her own mistakes, and when her sister’s husband won an award she organised the party. And nothing is being lost: her staff stay, and so do her friends.
+Rosa is bossy and loud, and has been since she was a girl. If you listened only to how she acts, you might think of **Grandiose narcissism**: she tells everyone what to do. But look at what the case shows beside that. She laughs at her own mistakes, and when her sister’s husband won an award she organized the party. And nothing is being lost: her staff stay, and so do her friends.
 
 Everyone has a way of being: shy, loud, dramatic, blunt, touchy, easy-going. Most of these are ordinary. They do not stop being ordinary because they are strong. A way of being becomes something else, and something much rarer, when it keeps costing: when year after year, in place after place, someone loses a job, a friendship or their trust, and it is still going on.
 
@@ -302,7 +302,7 @@ You may also hear this called “just how they are”. That means the same thing
 
 ### 10. An ordinary personality: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 10 of 46*
 
 [reviewers only: card kind `again`, id `again-ordpersonality`]
 
@@ -314,28 +314,28 @@ The second case.
 
 *The shy father*
 
-> Imran is forty-four and has been shy for as long as anyone can remember. At school he ate his lunch in the library, at university he left parties after twenty minutes, and at each of his three offices he has been known as the quiet one who sends everyone a card on their birthday. His wife says he is not one for crowds and never has been. He has kept the same job for eleven years, his three closest friends are the three he made at university, and his daughters say he is the one they ring when they need to talk.
+> Imran is forty-four and has been shy for as long as anyone can remember. At school he ate his lunch in the library, in college he left parties after twenty minutes, and at each of his three offices he has been known as the quiet one who sends everyone a card on their birthday. His wife says he is not one for crowds and never has been. He has kept the same job for eleven years, his three closest friends are the three he made in college, and his daughters say he is the one they call when they need to talk.
 **You are asked:** In *The loud baker*, these words show it: “has been the loudest and surest person in every room since she was a girl” and “Her staff have stayed an average of fifteen years, and she has the same three friends she made at school”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Imran is forty-four and has been shy for as long as anyone can remember”
-2. “He has kept the same job for eleven years, his three closest friends are the three he made at university, and his daughters say he is the one they ring when they need to talk”
+2. “He has kept the same job for eleven years, his three closest friends are the three he made in college, and his daughters say he is the one they call when they need to talk”
 3. “His wife says he is not one for crowds and never has been”
 
-**Shown as soon as you tap.** The words are “He has kept the same job for eleven years, his three closest friends are the three he made at university, and his daughters say he is the one they ring when they need to talk”.
+**Shown as soon as you tap.** The words are “He has kept the same job for eleven years, his three closest friends are the three he made in college, and his daughters say he is the one they call when they need to talk”.
 - If you tapped “Imran is forty-four and has been shy for as long as anyone can remember”: That is his way of being. Rosa had a very different one, so it cannot be what the two cases share.
 - If you tapped “His wife says he is not one for crowds and never has been”: That repeats his way of being. It says nothing about what it has cost him, or anyone else.
 
 **What the two share**
 
-Rosa is loud and Imran is shy, so what the two share is not the way of being. Each has kept the same way for years and in more than one place, and in each case what you are shown is people staying: staff of fifteen years, friends from school, daughters who ring.
+Rosa is loud and Imran is shy, so what the two share is not the way of being. Each has kept the same way for years and in more than one place, and in each case what you are shown is people staying: staff of fifteen years, friends from school, daughters who call.
 
 So this name is not about being shy, or loud, or any one thing. It holds wherever a person has one way of being, for years and in many places, and it does not keep costing anyone. That is what **An ordinary personality** names.
 
 
 ### 11. An ordinary personality: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 11 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-ordpersonality`]
 
@@ -345,7 +345,7 @@ You know what to point to. This card fills in the rest of the picture, because t
 
 - It covers a very wide range. Loud and shy, dramatic and blunt, easy-going and touchy are all here. The person can be hard to live with and still be here.
 - The way of being is steady across years and places: the same person at school, at work and at home.
-- What is missing is the repeated cost. People stay. Jobs last. Friendships last for decades. When the person upsets someone, it can often be put right: they laugh, apologise, change what they did.
+- What is missing is the repeated cost. People stay. Jobs last. Friendships last for decades. When the person upsets someone, it can often be put right: they laugh, apologize, change what they did.
 - A bad week, or one big falling-out, is part of life and does not turn it into something else.
 - It is not a lesser answer. For most of the people a case describes, it is the right one.
 
@@ -365,11 +365,11 @@ You will meet it in most of the people you know well: the friend who is always l
 
 ### 12. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 12 of 46*
 
 [reviewers only: card kind `check`, id `check-ordpersonality`]
 
-> Marcus has taught maths for thirty years in two schools and has always said exactly what he thinks. He tells students their working is 'a mess' when it is, and he tells the head she is wrong when he thinks so. He was the same as a student teacher. Pupils tease him about it, he laughs, and former pupils still write to him. He has been asked to stay on three times, and the head says she trusts him because he never says one thing and means another.
+> Marcus has taught math for thirty years in two schools and has always said exactly what he thinks. He tells students their working is 'a mess' when it is, and he tells the principal she is wrong when he thinks so. He was the same as a student teacher. Pupils tease him about it, he laughs, and former students still write to him. He has been asked to stay on three times, and the principal says she trusts him because he never says one thing and means another.
 
 **The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
@@ -378,14 +378,14 @@ You will meet it in most of the people you know well: the friend who is always l
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Marcus has been blunt for thirty years and in two schools, and the case shows what that has not done: “has always said exactly what he thinks” and “former pupils still write to him”, and he has been asked to stay on three times. A way of being that is blunt and that keeps no cost behind it is not what the other names point to. The name that goes with this answer is **An ordinary personality**.
+- If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Marcus has been blunt for thirty years and in two schools, and the case shows what that has not done: “has always said exactly what he thinks” and “former students still write to him”, and he has been asked to stay on three times. A way of being that is blunt and that keeps no cost behind it is not what the other names point to. The name that goes with this answer is **An ordinary personality**.
 - If you miss: “The answer is **Stays the same way for years, and it does not keep doing harm.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: He says hard things, and so does **Grandiose narcissism**. But nobody is scorned or driven away. He laughs when he is teased, and the people around him stay.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 ### 13. Grandiose narcissism or An ordinary personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 1 of 6 · Card 13 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-ordpersonality`]
 
@@ -397,7 +397,7 @@ You have met both names, and both can be loud and sure of themselves. This is th
 
 **Case B**
 
-> Sunil is fifty-five and has been head chef in four restaurants. He tells every new cook that he is the best chef in the city and that they will have to work hard to keep up. When a young cook was written up in the paper, Sunil framed the article and put it by the kitchen door. In each kitchen the cooks have stayed for years, several have opened places of their own and still ring him, and his two daughters work in the restaurant on Saturdays.
+> Sunil is fifty-five and has been head chef in four restaurants. He tells every new cook that he is the best chef in the city and that they will have to work hard to keep up. When a young cook was written up in the paper, Sunil framed the article and put it by the kitchen door. In each kitchen the cooks have stayed for years, several have opened places of their own and still call him, and his two daughters work in the restaurant on Saturdays.
 
 **What to compare.** Both chefs tell every new cook that he is the best in the city. Compare two things: what each does when a young cook is written up in the paper, and what the years have cost.
 
@@ -409,7 +409,7 @@ You have met both names, and both can be loud and sure of themselves. This is th
 
 In Case A Paolo runs the young cook down: "a pretty face with a borrowed recipe". He stops giving her shifts. The best cooks leave within a year, and his daughters stopped bringing friends years ago. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still ring him. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Sunil says the same thing about himself, and frames the article. His cooks stay for years, and some of them still call him. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 The boast is the same in both. What differs is what comes with it. A boast, and even a loud, bossy way of being, is not enough for **Grandiose narcissism**. What makes it that name is the scorn when another person is praised, and a cost that keeps coming back.
 
@@ -434,7 +434,7 @@ When someone else is praised or chosen, does this person turn on them, and have 
 
 ### 14. Feeling overlooked and owed more for years, and hurt when not treated so
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 14 of 46*
 
 [reviewers only: card kind `meet`, id `meet-narcvuln`]
 
@@ -442,7 +442,7 @@ So far the sense of worth that depends on being treated as special has been loud
 
 *The clerk*
 
-> Ellis is forty-seven and works in a council office. Since school he has said that the teachers liked the other boys better. In three offices ⟦he has stopped speaking to anyone who was promoted over him⟧, and he says, quietly, '⟦Some people just get handed things⟧.' When his younger sister got engaged he said 'lovely' and left before the cake, and ⟦he has not phoned her in two years⟧. His wife says he keeps a count of who has been thanked and who has not, and that she is always on the list of those who never thank him. He has turned down two promotions because 'they would only have given it to me when it no longer mattered'.
+> Ellis is forty-seven and works in a city government office. Since school he has said that the teachers liked the other boys better. In three offices ⟦he has stopped speaking to anyone who was promoted over him⟧, and he says, quietly, '⟦Some people just get handed things⟧.' When his younger sister got engaged he said 'lovely' and left before the cake, and ⟦he has not called her in two years⟧. His wife says he keeps a count of who has been thanked and who has not, and that she is always on the list of those who never thank him. He has turned down two promotions because 'they would only have given it to me when it no longer mattered'.
 
 Stripped of its story, the case is this:
 
@@ -474,20 +474,20 @@ You may also hear this called “covert narcissism”. That means the same thing
 
 ### 15. Vulnerable narcissism: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 15 of 46*
 
 [reviewers only: card kind `again`, id `again-narcvuln`]
 
 Ellis gave you what to point to: years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them. Here is a second case, in a university and not an office.
 
-The first case again, in one line. *The clerk*: “Some people just get handed things” and “he has stopped speaking to anyone who was promoted over him” and “he has not phoned her in two years”
+The first case again, in one line. *The clerk*: “Some people just get handed things” and “he has stopped speaking to anyone who was promoted over him” and “he has not called her in two years”
 
 The second case.
 
 *The research student*
 
-> Gwen is twenty-nine and finishing a doctorate. Since her teens she has said that her ideas are taken without credit. In each of her three research groups she has gone silent whenever someone else was thanked, and she writes, 'No need to mention me, I'm used to it.' Her flatmate won a fellowship last spring and Gwen has not spoken to her since. Two collaborators have stopped working with her, and her supervisor says that nobody can tell when she has been hurt until she has already cut them off.
-**You are asked:** In *The clerk*, these words show it: “Some people just get handed things” and “he has stopped speaking to anyone who was promoted over him” and “he has not phoned her in two years”. Which words show the same thing in this case? Tap them.
+> Gwen is twenty-nine and finishing a doctorate. Since her teens she has said that her ideas are taken without credit. In each of her three research groups she has gone silent whenever someone else was thanked, and she writes, 'No need to mention me, I'm used to it.' Her roommate won a fellowship last spring and Gwen has not spoken to her since. Two collaborators have stopped working with her, and her advisor says that nobody can tell when she has been hurt until she has already cut them off.
+**You are asked:** In *The clerk*, these words show it: “Some people just get handed things” and “he has stopped speaking to anyone who was promoted over him” and “he has not called her in two years”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
 1. “Since her teens she has said that her ideas are taken without credit”
@@ -507,7 +507,7 @@ A clerk and a research student, a man and a woman. So this is not about offices,
 
 ### 16. Vulnerable narcissism: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 16 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-narcvuln`]
 
@@ -540,11 +540,11 @@ Everyone has felt the small cold hurt when a friend is thanked and they were not
 
 ### 17. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 17 of 46*
 
 [reviewers only: card kind `check`, id `check-narcvuln`]
 
-> Lars has volunteered at the food bank for twelve years. He says that nobody ever thanks him for what he does, and that others get praised for much less. When a new volunteer was given a long-service award, Lars said nothing, went home and stayed away for a month. He did the same when the manager he had trained was promoted over him, and again when his own brother was thanked in the church newsletter. The manager says she has stopped asking him to events, because he goes quiet and cold for weeks afterwards.
+> Lars has volunteered at the food bank for twelve years. He says that nobody ever thanks him for what he does, and that others get praised for much less. When a new volunteer was given a long-service award, Lars said nothing, went home and stayed away for a month. He did the same when the manager he had trained was promoted over him, and again when his own brother was thanked in the church newsletter. The manager says she has stopped asking him to events, because he goes quiet and cold for weeks afterward.
 
 **The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
@@ -562,7 +562,7 @@ Everyone has felt the small cold hurt when a friend is thanked and they were not
 
 ### 18. Grandiose narcissism or Vulnerable narcissism: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 18 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-narcvuln`]
 
@@ -570,11 +570,11 @@ You have met both narcissisms. Here are two brothers, each answering the same pi
 
 **Case A**
 
-> Anton is forty-eight. When his younger brother made partner at the firm they both once worked for, Anton told the whole family at Sunday lunch that his brother had 'only got there by licking boots', and said that the firm would regret not choosing him. This is how Anton has answered every success in the family since they were boys: his sister's degree, his cousin's wedding speech, his niece's school prize. His mother now arranges for the family to come at different times, and his brother no longer comes to Sunday lunch.
+> Anton is forty-eight. When his younger brother made partner at the firm they both once worked for, Anton told the whole family at Sunday lunch that his brother had 'only got there by sucking up', and said that the firm would regret not choosing him. This is how Anton has answered every success in the family since they were boys: his sister's degree, his cousin's wedding speech, his niece's school prize. His mother now arranges for the family to come at different times, and his brother no longer comes to Sunday lunch.
 
 **Case B**
 
-> Piers is forty-six. When his younger brother made partner at the firm they both once worked for, Piers said 'Lovely news' at Sunday lunch, went quiet and left before the pudding. He says that his brother has always been the favourite and that nobody in the family has ever noticed what he himself has done. This is how Piers has answered every success in the family since they were boys: his sister's degree, his cousin's wedding, his niece's school prize. His mother says she has to choose her words around him, and his brother no longer rings him.
+> Piers is forty-six. When his younger brother made partner at the firm they both once worked for, Piers said 'Lovely news' at Sunday lunch, went quiet and left before the dessert. He says that his brother has always been the favorite and that nobody in the family has ever noticed what he himself has done. This is how Piers has answered every success in the family since they were boys: his sister's degree, his cousin's wedding, his niece's school prize. His mother says she has to choose her words around him, and his brother no longer calls him.
 
 **What to compare.** In both cases the younger brother has just made partner. Compare one thing: what each man does with the hurt of not being the one who was chosen. Does he attack, or does he pull away?
 
@@ -584,9 +584,9 @@ You have met both narcissisms. Here are two brothers, each answering the same pi
 
 **Why this one and not the other**
 
-In Case A Anton turns on his brother at the family lunch: "only got there by licking boots". It is outward: anger and scorn. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
+In Case A Anton turns on his brother at the family lunch: "only got there by sucking up". It is outward: anger and scorn. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Piers says "Lovely news", goes quiet and leaves before the pudding, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
+In Case B Piers says "Lovely news", goes quiet and leaves before the dessert, and says nobody has ever noticed what he has done. It is inward: hurt and resentment. The answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
 
 So these two names are one family, and this is the difference inside it. Both brothers have the same sore place: their worth depends on being treated as special, and their brother’s promotion does not treat them so. Anton defends it outward and Piers defends it inward. Which way it goes is what the question picks out.
 
@@ -605,7 +605,7 @@ When this person is not treated as special, which way does it go? Outward, at so
 
 ### 19. Vulnerable narcissism or An ordinary personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 2 of 6 · Card 19 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcvuln-ordpersonality`]
 
@@ -617,7 +617,7 @@ A quiet person is far more likely to be an ordinary shy person than to show **Vu
 
 **Case B**
 
-> Amara is forty-one and keeps to herself at work, as she has done in four offices. She eats lunch at her desk, does not go to the pub and says she is happiest with a quiet week. When a colleague was thanked at a team meeting, Amara sent her a note saying well done. Over the years her managers have written that she can be relied on, and the two friends she has made in each office are still her friends.
+> Amara is forty-one and keeps to herself at work, as she has done in four offices. She eats lunch at her desk, does not go to the bar and says she is happiest with a quiet week. When a colleague was thanked at a team meeting, Amara sent her a note saying well done. Over the years her managers have written that she can be relied on, and the two friends she has made in each office are still her friends.
 
 **What to compare.** Both keep to themselves at work, in four offices. Compare two things: what each does when a colleague is thanked, and what it has cost.
 
@@ -654,7 +654,7 @@ Is the silence a count of what is owed, going cold on someone who was thanked, w
 
 ### 20. Clinging to people, and turning on them when they seem to be leaving
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 20 of 46*
 
 [reviewers only: card kind `meet`, id `meet-borderline`]
 
@@ -662,7 +662,7 @@ The first two names were about a sense of worth that depends on being treated as
 
 *The friend who was going abroad*
 
-> Nadia is thirty-one. Since she was fifteen she has not been able to bear a friend or partner pulling away. When a friend said she would be abroad for a month, Nadia ⟦sent forty messages in two days, offered to pay for her flights home early and begged her to stay⟧. When the friend replied a day late, Nadia wrote, '⟦You are a fake and I never want to see you again⟧,' and blocked her. The next morning she sent twelve apologies: 'You are the only person who has ever understood me.' It has gone the same way with every close friend since school and with all four of her partners; she called one of them 'the love of my life' in March and 'a monster' in April. ⟦She has lost three friends and a job⟧, after she rang her manager at midnight to ask whether he was going to let her go.
+> Nadia is thirty-one. Since she was fifteen she has not been able to bear a friend or partner pulling away. When a friend said she would be abroad for a month, Nadia ⟦sent forty messages in two days, offered to pay for her flights home early and begged her to stay⟧. When the friend replied a day late, Nadia wrote, '⟦You are a fake and I never want to see you again⟧,' and blocked her. The next morning she sent twelve apologies: 'You are the only person who has ever understood me.' It has gone the same way with every close friend since school and with all four of her partners; she called one of them 'the love of my life' in March and 'a monster' in April. ⟦She has lost three friends and a job⟧, after she called her manager at midnight to ask whether he was going to let her go.
 
 Stripped of its story, the case is this:
 
@@ -674,7 +674,7 @@ Stripped of its story, the case is this:
 
 Nadia has a way of being that is hard to see from outside, because from outside it looks like two different people. In one, she adores someone and cannot do without them. In the other, she attacks them. What joins the two is what sets off the change: a person who seems about to leave or pull away.
 
-Look at when the swing happens. It is not when Nadia is criticised, and it is not when someone else is praised. It is when someone she is close to seems to be going. A friend says she will be abroad, or a reply comes a day late, and for Nadia that feels like being left. She does two things to stop it. She holds on hard: messages, gifts, begging. And when holding on does not seem to work, she attacks the person who is going, and then she holds on again.
+Look at when the swing happens. It is not when Nadia is criticized, and it is not when someone else is praised. It is when someone she is close to seems to be going. A friend says she will be abroad, or a reply comes a day late, and for Nadia that feels like being left. She does two things to stop it. She holds on hard: messages, gifts, begging. And when holding on does not seem to work, she attacks the person who is going, and then she holds on again.
 
 This is not the same as ordinary neediness, or a bad row. A friend who says "please don’t go" once is not this. What is here is that it happens with every close friend since school and with every partner, and that it keeps costing: friends gone, a job lost.
 
@@ -692,7 +692,7 @@ You may also hear this called “borderline” or “BPD” or “borderline per
 
 ### 21. Borderline personality: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 21 of 46*
 
 [reviewers only: card kind `again`, id `again-borderline`]
 
@@ -704,7 +704,7 @@ The second case.
 
 *The youth club leader*
 
-> Tomas is thirty-six and runs a youth club. When his deputy said she was thinking of moving to another club, he gave her the keys to his car, offered a pay rise the club could not afford and told her he could not cope without her. When she said she needed time to think, he told the committee she was 'poisonous' and that she had used him. A week later he wrote to her that she was the best person he knew. It has happened with each of his last six deputies, and with every girlfriend since he was twenty. The club has lost four of those deputies, and two girlfriends have changed their phone numbers.
+> Tomas is thirty-six and runs a youth club. When his deputy said she was thinking of moving to another club, he gave her the keys to his car, offered a pay rise the club could not afford and told her he could not cope without her. When she said she needed time to think, he told the committee she was 'poisonous' and that she had used him. A week later he wrote to her that she was the best person he knew. It has happened with each of his last six assistant principals, and with every girlfriend since he was twenty. The club has lost four of those deputies, and two girlfriends have changed their phone numbers.
 **You are asked:** In *The friend who was going abroad*, these words show it: “sent forty messages in two days, offered to pay for her flights home early and begged her to stay” and “You are a fake and I never want to see you again” and “She has lost three friends and a job”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
@@ -725,7 +725,7 @@ A woman and a man, a friend and a deputy. So this is not about gender, friendshi
 
 ### 22. Borderline personality: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 22 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-borderline`]
 
@@ -733,7 +733,7 @@ You know what to point to. This card fills in the rest of the picture, and says 
 
 **What it is usually like**
 
-- What sets it off is someone seeming to leave: a late reply, a cancelled plan, a new job, a holiday. The leaving does not have to be real.
+- What sets it off is someone seeming to leave: a late reply, a canceled plan, a new job, a vacation. The leaving does not have to be real.
 - The first reaction is to hold on: many messages, gifts, promises to change, begging.
 - If that does not seem to work, the reaction turns, and the person who was adored is attacked, often in words that are hard to forgive.
 - Then, often within a day, it swings back: an apology, a plea, "you are the only one who understands me".
@@ -758,11 +758,11 @@ Almost everyone has felt a little of it: the dread when a message is not answere
 
 ### 23. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 23 of 46*
 
 [reviewers only: card kind `check`, id `check-borderline`]
 
-> Pru is forty and belongs to a book group. When her closest friend there mentioned that she might not come every month, Pru rang her eleven times, brought gifts to the next meeting and said she would be lost without her. When the friend then missed a meeting, Pru told the others that she had never really cared, and the next day sent her a long apology. Pru's sister says it has been the same with every close friend and boyfriend since school. Six people have stopped answering her calls.
+> Pru is forty and belongs to a book group. When her closest friend there mentioned that she might not come every month, Pru called her eleven times, brought gifts to the next meeting and said she would be lost without her. When the friend then missed a meeting, Pru told the others that she had never really cared, and the next day sent her a long apology. Pru's sister says it has been the same with every close friend and boyfriend since school. Six people have stopped answering her calls.
 
 **The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
@@ -773,7 +773,7 @@ Almost everyone has felt a little of it: the dread when a message is not answere
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Clings to people, and turns on them when they seem to be leaving.**” When her friend seems about to drift away, Pru reaches for her hard, and then turns on her: “rang her eleven times, brought gifts to the next meeting and said she would be lost without her” and “told the others that she had never really cared” and “Six people have stopped answering her calls”. It has been the same with every close friend and boyfriend since school, and it has cost her six people. The name that goes with this answer is **Borderline personality**.
+- If you are right: “Right: **Clings to people, and turns on them when they seem to be leaving.**” When her friend seems about to drift away, Pru reaches for her hard, and then turns on her: “called her eleven times, brought gifts to the next meeting and said she would be lost without her” and “told the others that she had never really cared” and “Six people have stopped answering her calls”. It has been the same with every close friend and boyfriend since school, and it has cost her six people. The name that goes with this answer is **Borderline personality**.
 - If you miss: “The answer is **Clings to people, and turns on them when they seem to be leaving.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Give that answer when across years, places and relationships the person acts as if they are better than others and owed special treatment, shows little interest in what others feel, meets any slight with anger or scorn, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: Give that answer when across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them. This case shows something else: across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them.
@@ -782,7 +782,7 @@ Almost everyone has felt a little of it: the dread when a message is not answere
 
 ### 24. Vulnerable narcissism or Borderline personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 24 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcvuln-borderline`]
 
@@ -794,7 +794,7 @@ Both of these can look like a person who feels let down by a friend. This card p
 
 **Case B**
 
-> Kai is thirty-five. When a close friend said she could not come to his birthday dinner, Kai sent her thirty messages that night, asked whether she had stopped caring and offered to cancel the dinner so that she would not feel left out. When she did not reply, he told their other friends she was 'the cruellest person he knew', and the next morning he wrote her a long apology. It has gone this way with five friends since his twenties. Four of them now answer him only once a week.
+> Kai is thirty-five. When a close friend said she could not come to his birthday dinner, Kai sent her thirty messages that night, asked whether she had stopped caring and offered to cancel the dinner so that she would not feel left out. When she did not reply, he told their other friends she was 'the cruelest person he knew', and the next morning he wrote her a long apology. It has gone this way with five friends since his twenties. Four of them now answer him only once a week.
 
 **What to compare.** In both cases a close friend cannot come to the birthday dinner. Compare one thing: what each person does about it. Does the person pull away, or reach for the friend and then attack her?
 
@@ -806,13 +806,13 @@ Both of these can look like a person who feels let down by a friend. This card p
 
 In Case A Isla replies "No problem", goes silent for three months and keeps count of what she is owed. She does not reach for the friend at all. The answer is **“Feels overlooked and owed more, and turns hurt and resentful when not treated as special”**, and the case is **Vulnerable narcissism**.
 
-In Case B Kai sends thirty messages that night, offers to cancel the dinner so that she will not feel left out, then tells their friends that she is "the cruellest person he knew", and apologises the next morning. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
+In Case B Kai sends thirty messages that night, offers to cancel the dinner so that she will not feel left out, then tells their friends that she is "the cruelest person he knew", and apologizes the next morning. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
 
-Both people are hurt, and in both it has cost friendships. What separates them is the direction. Isla pulls back and resents. Kai goes towards the friend, and when that fails attacks her, and then goes towards her again.
+Both people are hurt, and in both it has cost friendships. What separates them is the direction. Isla pulls back and resents. Kai goes toward the friend, and when that fails attacks her, and then goes toward her again.
 
 **How to tell them apart**
 
-When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
 
 **Side by side**
 
@@ -825,7 +825,7 @@ When someone close lets this person down, do they pull away and keep count? Or d
 
 ### 25. Grandiose narcissism or Borderline personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 3 of 6 · Card 25 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-borderline`]
 
@@ -833,11 +833,11 @@ Anger when someone seems about to leave is in both of these names. Here are two 
 
 **Case A**
 
-> Ruth is fifty and a consultant surgeon. When her husband said he was thinking of leaving, she told him that he would never find anyone as good as her and that his friends laughed at him behind his back, and then did not speak to him for a week. She has spoken to every partner and colleague who disagreed with her in the same way for thirty years. Her husband says she has never once asked him to stay. Her last two junior doctors asked to be moved to another team.
+> Ruth is fifty and an attending surgeon. When her husband said he was thinking of leaving, she told him that he would never find anyone as good as her and that his friends laughed at him behind his back, and then did not speak to him for a week. She has spoken to every partner and colleague who disagreed with her in the same way for thirty years. Her husband says she has never once asked him to stay. Her last two residents asked to be moved to another team.
 
 **Case B**
 
-> Dani is thirty-two. When her husband said he was thinking of leaving, she begged him to stay, promised to change everything about herself and hid his car keys. When he said he needed a night at his brother's, she called him 'a liar who never loved her' and threw his clothes into the street, then rang him seven times that night to say she was sorry. It has been the same in each of her last four relationships and with her closest friends. Her husband says he cannot tell which of the two Danis he will come home to.
+> Dani is thirty-two. When her husband said he was thinking of leaving, she begged him to stay, promised to change everything about herself and hid his car keys. When he said he needed a night at his brother's, she called him 'a liar who never loved her' and threw his clothes into the street, then called him seven times that night to say she was sorry. It has been the same in each of her last four relationships and with her closest friends. Her husband says he cannot tell which of the two Danis he will come home to.
 
 **What to compare.** In both cases a husband says he is thinking of leaving. Compare one thing: does she try to keep him, or does she run him down and let him go?
 
@@ -849,9 +849,9 @@ Anger when someone seems about to leave is in both of these names. Here are two 
 
 In Case A Ruth tells her husband that he would never find anyone as good as her and that his friends laugh at him behind his back, and then does not speak to him for a week. She has never once asked him to stay. The answer is **“Acts above others, and turns angry or scornful when not treated as special”**, and the case is **Grandiose narcissism**.
 
-In Case B Dani begs her husband to stay, promises to change everything about herself and hides what he would need to drive away. When he asks for a night at his brother’s she calls him "a liar who never loved her", throws his clothes into the street, and then rings him seven times that night to say she is sorry. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
+In Case B Dani begs her husband to stay, promises to change everything about herself and hides what he would need to drive away. When he asks for a night at his brother’s she calls him "a liar who never loved her", throws his clothes into the street, and then calls him seven times that night to say she is sorry. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
 
-Both women are angry. The difference is which way the anger goes. Ruth’s anger pushes him away: she needs to be above him, and she does not try to keep him. Dani’s anger comes from the fear of his going, and within hours she is going towards him again.
+Both women are angry. The difference is which way the anger goes. Ruth’s anger pushes him away: she needs to be above him, and she does not try to keep him. Dani’s anger comes from the fear of his going, and within hours she is going toward him again.
 
 **How to tell them apart**
 
@@ -866,28 +866,28 @@ When someone close seems about to leave, does this person run them down and let 
 | What you must be able to point to | Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them | Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them |
 
 
-*End of part 3. You can stop here; your place is kept. Next: part 4, At the centre of attention.*
+*End of part 3. You can stop here; your place is kept. Next: part 4, At the center of attention.*
 
 ---
 
-## Part 4 of 6: At the centre of attention
+## Part 4 of 6: At the center of attention
 
-### 26. Always at the centre of attention, with bigger displays when it moves away
+### 26. Always at the center of attention, with bigger displays when it moves away
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 26 of 46*
 
 [reviewers only: card kind `meet`, id `meet-histrionic`]
 
 The names so far were about people who need others to treat them as special, or to stay. This one is about attention itself.
 
-*The guest who is always at the centre*
+*The guest who is always at the center*
 
 > Marguerite is forty-four and is the first to arrive at any gathering and the last to leave. ⟦She tells every story as if on a stage⟧, hugs people she met ten minutes ago, and has told three different friends that each of them is her very best friend. When a colleague was applauded after a presentation, she ⟦began a long story about her own terrible week, her voice shaking and her eyes filling, until the room turned back to her⟧. She has done this in every job she has had, at her sister's wedding and at her father's funeral. Her sister says ⟦she has stopped inviting her to small gatherings⟧.
 
 Stripped of its story, the case is this:
 
 - There are years and more than one place: every job she has had, her sister’s wedding, her father’s funeral.
-- She puts herself at the centre of attention: every story told as if on a stage, the first to arrive and the last to leave.
+- She puts herself at the center of attention: every story told as if on a stage, the first to arrive and the last to leave.
 - When attention goes to someone else, her display gets bigger: a colleague is applauded, and she tells the story of her terrible week until the room turns back.
 - It keeps costing: her sister has stopped inviting her to small gatherings.
 
@@ -899,7 +899,7 @@ The feelings are usually real. The person is not necessarily pretending. The fee
 
 And it keeps costing. Her sister has stopped inviting her to small gatherings. Take away the years and the cost, and what you have is a lively, dramatic person, which is an ordinary thing to be. The name is for the case where it is how someone has been for years, and it keeps costing.
 
-**What you must be able to point to.** Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. This comes from one case so far. The next card tests it on a second case.
+**What you must be able to point to.** Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. This comes from one case so far. The next card tests it on a second case.
 
 **The question:** **“What does the person do, again and again, across those years?”**
 
@@ -911,40 +911,40 @@ You may also hear this called “histrionic personality disorder” or “attent
 
 ### 27. Histrionic personality: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 27 of 46*
 
 [reviewers only: card kind `again`, id `again-histrionic`]
 
-Marguerite gave you what to point to: years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. Here is a second case, a man in a school staff room and not a woman at a party.
+Marguerite gave you what to point to: years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. Here is a second case, a man in a school faculty room and not a woman at a party.
 
-The first case again, in one line. *The guest who is always at the centre*: “She tells every story as if on a stage” and “began a long story about her own terrible week, her voice shaking and her eyes filling, until the room turned back to her” and “she has stopped inviting her to small gatherings”
+The first case again, in one line. *The guest who is always at the center*: “She tells every story as if on a stage” and “began a long story about her own terrible week, her voice shaking and her eyes filling, until the room turned back to her” and “she has stopped inviting her to small gatherings”
 
 The second case.
 
 *The teacher with the headache*
 
-> Jasper is forty-nine and teaches at a primary school. In every staff room he has worked in, he has been the one with the biggest stories and the loudest ties. When a new teacher was praised by the head at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him. He was the same at university and in his two earlier schools. Three heads have told him that he takes over meetings, and the new teacher has asked to be moved to another year group.
-**You are asked:** In *The guest who is always at the centre*, these words show it: “She tells every story as if on a stage” and “began a long story about her own terrible week, her voice shaking and her eyes filling, until the room turned back to her” and “she has stopped inviting her to small gatherings”. Which words show the same thing in this case? Tap them.
+> Jasper is forty-nine and teaches at an elementary school. In every faculty room he has worked in, he has been the one with the biggest stories and the loudest ties. When a new teacher was praised by the principal at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him. He was the same in college and in his two earlier schools. Three principals have told him that he takes over meetings, and the new teacher has asked to be moved to another grade.
+**You are asked:** In *The guest who is always at the center*, these words show it: “She tells every story as if on a stage” and “began a long story about her own terrible week, her voice shaking and her eyes filling, until the room turned back to her” and “she has stopped inviting her to small gatherings”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “In every staff room he has worked in, he has been the one with the biggest stories and the loudest ties”
-2. “When a new teacher was praised by the head at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him”
-3. “the new teacher has asked to be moved to another year group”
+1. “In every faculty room he has worked in, he has been the one with the biggest stories and the loudest ties”
+2. “When a new teacher was praised by the principal at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him”
+3. “the new teacher has asked to be moved to another grade”
 
-**Shown as soon as you tap.** The words are “When a new teacher was praised by the head at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him”.
-- If you tapped “In every staff room he has worked in, he has been the one with the biggest stories and the loudest ties”: That is Jasper putting himself at the centre. It happens whether or not anyone else is getting attention. The words asked for are what he does when attention goes to someone else.
-- If you tapped “the new teacher has asked to be moved to another year group”: That is what it has cost. It is not what Jasper does when attention goes to someone else.
+**Shown as soon as you tap.** The words are “When a new teacher was praised by the principal at a staff meeting, Jasper announced that he had a headache so bad he might have to go home, and then spent ten minutes describing it until the meeting was about him”.
+- If you tapped “In every faculty room he has worked in, he has been the one with the biggest stories and the loudest ties”: That is Jasper putting himself at the center. It happens whether or not anyone else is getting attention. The words asked for are what he does when attention goes to someone else.
+- If you tapped “the new teacher has asked to be moved to another grade”: That is what it has cost. It is not what Jasper does when attention goes to someone else.
 
 **What the two share**
 
-Marguerite and Jasper each put themselves at the centre in every group: stories told as if on a stage, the biggest stories and the loudest ties. Each answers attention going to someone else with a bigger display: a long, tearful story, a headache described for ten minutes until the meeting was about him. And in each case it has lasted and it has cost: a sister who stops inviting her, a colleague who asks to be elsewhere.
+Marguerite and Jasper each put themselves at the center in every group: stories told as if on a stage, the biggest stories and the loudest ties. Each answers attention going to someone else with a bigger display: a long, tearful story, a headache described for ten minutes until the meeting was about him. And in each case it has lasted and it has cost: a sister who stops inviting her, a colleague who asks to be elsewhere.
 
-A guest and a teacher, a woman and a man. So this is not about parties, staff rooms or gender. It holds wherever a person puts themselves at the centre of attention and makes the displays bigger when attention goes elsewhere. That is what **Histrionic personality** names.
+A guest and a teacher, a woman and a man. So this is not about parties, faculty rooms or gender. It holds wherever a person puts themselves at the center of attention and makes the displays bigger when attention goes elsewhere. That is what **Histrionic personality** names.
 
 
 ### 28. Histrionic personality: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 28 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-histrionic`]
 
@@ -977,7 +977,7 @@ You have probably been in a room where someone could not bear to see the attenti
 
 ### 29. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 29 of 46*
 
 [reviewers only: card kind `check`, id `check-histrionic`]
 
@@ -993,17 +993,17 @@ You have probably been in a room where someone could not bear to see the attenti
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Keeps the attention on themselves, with bigger displays when it moves away.**” Tilly puts herself at the centre, and when the applause goes to the soloist her display gets bigger: “tells everyone about her week at a volume that stops the rehearsal” and “clutched her chest and said she felt faint with emotion” and “The choir has lost two altos”. It has been the same in every group since her teens, and it has cost the choir two singers. The name that goes with this answer is **Histrionic personality**.
+- If you are right: “Right: **Keeps the attention on themselves, with bigger displays when it moves away.**” Tilly puts herself at the center, and when the applause goes to the soloist her display gets bigger: “tells everyone about her week at a volume that stops the rehearsal” and “clutched her chest and said she felt faint with emotion” and “The choir has lost two altos”. It has been the same in every group since her teens, and it has cost the choir two singers. The name that goes with this answer is **Histrionic personality**.
 - If you miss: “The answer is **Keeps the attention on themselves, with bigger displays when it moves away.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Tilly does not run the soloist down or treat her with scorn. She turns the attention back to herself with a bigger display.
-  - If you chose **Stays the same way for years, and it does not keep doing harm**: Give that answer when across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them. This case shows something else: across years, places and relationships the person puts themselves at the centre of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
-  - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Give that answer when across years, places and relationships the person says they are overlooked and owed more than they get, shows little interest in what others feel, meets any slight with hurt withdrawal or quiet resentment, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person puts themselves at the centre of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
-  - If you chose **Clings to people, and turns on them when they seem to be leaving**: Give that answer when across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person puts themselves at the centre of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+  - If you chose **Stays the same way for years, and it does not keep doing harm**: Give that answer when across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them. This case shows something else: across years, places and relationships the person puts themselves at the center of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
+  - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Give that answer when across years, places and relationships the person says they are overlooked and owed more than they get, shows little interest in what others feel, meets any slight with hurt withdrawal or quiet resentment, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person puts themselves at the center of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
+  - If you chose **Clings to people, and turns on them when they seem to be leaving**: Give that answer when across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person puts themselves at the center of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 ### 30. Borderline personality or Histrionic personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 30 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-borderline-histrionic`]
 
@@ -1011,13 +1011,13 @@ Both of these have big feelings, and big feelings are what people usually notice
 
 **Case A**
 
-> Mira is twenty-nine. At her flatmate's leaving party she cried and clung to her, saying she would be nothing without her and that she must not go. When the flatmate said she would visit at weekends, Mira said she knew she would forget her, and the next week told the other flatmates that she had always been selfish. Mira has been through the same thing with every close friend who has gone away since she was sixteen, and has lost three of them for good.
+> Mira is twenty-nine. At her roommate's leaving party she cried and clung to her, saying she would be nothing without her and that she must not go. When the roommate said she would visit on weekends, Mira said she knew she would forget her, and the next week told the other roommates that she had always been selfish. Mira has been through the same thing with every close friend who has gone away since she was sixteen, and has lost three of them for good.
 
 **Case B**
 
-> Orla is twenty-nine. At her flatmate's leaving party she stood on a chair and gave a speech about how much she would miss her, and cried so that the whole room turned to watch. When another guest was given a round of applause for a song, Orla sang louder over the end of it. Orla has made herself the centre of every leaving party, wedding and birthday since she was sixteen, and two friends have stopped inviting her to parties.
+> Orla is twenty-nine. At her roommate's leaving party she stood on a chair and gave a speech about how much she would miss her, and cried so that the whole room turned to watch. When another guest was given a round of applause for a song, Orla sang louder over the end of it. Orla has made herself the center of every leaving party, wedding and birthday since she was sixteen, and two friends have stopped inviting her to parties.
 
-**What to compare.** In both cases a flatmate is leaving. Compare one thing: who each person’s display is for. Is it for the one who is leaving, or for the whole room?
+**What to compare.** In both cases a roommate is leaving. Compare one thing: who each person’s display is for. Is it for the one who is leaving, or for the whole room?
 
 **You are asked:** Which case gives the answer **“Clings to people, and turns on them when they seem to be leaving”**? (Case A / Case B)
 
@@ -1025,7 +1025,7 @@ Both of these have big feelings, and big feelings are what people usually notice
 
 **Why this one and not the other**
 
-In Case A Mira clings to the flatmate, says that she would be nothing without her, and the next week tells the others that she was selfish. One person, who seems to be leaving, is the point, and the feeling swings from adoring her to attacking her. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
+In Case A Mira clings to the roommate, says that she would be nothing without her, and the next week tells the others that she was selfish. One person, who seems to be leaving, is the point, and the feeling swings from adoring her to attacking her. The answer is **“Clings to people, and turns on them when they seem to be leaving”**, and the case is **Borderline personality**.
 
 In Case B Orla stands on a chair and speaks to the whole room, and when another guest is applauded for a song she sings louder over the end of it. The room is the point, and no one person has to stay. She does not attack anyone. The answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
 
@@ -1041,12 +1041,12 @@ Who is the display for: one particular person who seems to be leaving, or whoeve
 |---|---|---|
 | What kind of thing is this? | A lasting way someone is | A lasting way someone is |
 | What does the person do, again and again, across those years? | Clings to people, and turns on them when they seem to be leaving | Keeps the attention on themselves, with bigger displays when it moves away |
-| What you must be able to point to | Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them | Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them |
+| What you must be able to point to | Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them | Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them |
 
 
 ### 31. Grandiose narcissism or Histrionic personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 31 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-histrionic`]
 
@@ -1054,11 +1054,11 @@ Both of these want the room’s attention and take it over wherever they go. Thi
 
 **Case A**
 
-> Felix is fifty-one, and in every firm he has worked at he has told the juniors that he is the only one who knows how to present. When a colleague was applauded at the end of a talk, Felix told the manager afterwards that she was 'all slides and no substance', and that she would never have been asked if he had not trained her. He has done this to every colleague who has been praised, in three firms, and four of them have changed teams to get away from him.
+> Felix is fifty-one, and in every firm he has worked at he has told the juniors that he is the only one who knows how to present. When a colleague was applauded at the end of a talk, Felix told the manager afterward that she was 'all slides and no substance', and that she would never have been asked if he had not trained her. He has done this to every colleague who has been praised, in three firms, and four of them have changed teams to get away from him.
 
 **Case B**
 
-> Bea is fifty-one, and in every firm she has worked at she has been the one with the biggest stories and the brightest clothes. When a colleague was applauded at the end of a talk, Bea told the whole table about a dreadful week in which she had lost her keys, been stood up and cried in a lift, until they were all listening to her. She has done this in three firms, and four of her colleagues have stopped sitting near her.
+> Bea is fifty-one, and in every firm she has worked at she has been the one with the biggest stories and the brightest clothes. When a colleague was applauded at the end of a talk, Bea told the whole table about a dreadful week in which she had lost her keys, been stood up and cried in an elevator, until they were all listening to her. She has done this in three firms, and four of her colleagues have stopped sitting near her.
 
 **What to compare.** In both cases a colleague has just been applauded after a talk. Compare one thing: what each person does to that colleague, and what each does for himself or herself.
 
@@ -1084,12 +1084,12 @@ When attention goes to someone else, does this person run that person down? Or p
 |---|---|---|
 | What kind of thing is this? | A lasting way someone is | A lasting way someone is |
 | What does the person do, again and again, across those years? | Acts above others, and turns angry or scornful when not treated as special | Keeps the attention on themselves, with bigger displays when it moves away |
-| What you must be able to point to | Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them | Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them |
+| What you must be able to point to | Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them | Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them |
 
 
 ### 32. Histrionic personality or An ordinary personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 4 of 6 · Card 32 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-histrionic-ordpersonality`]
 
@@ -1097,11 +1097,11 @@ Drama alone is the thing most often mistaken for this name. Here are two people 
 
 **Case A**
 
-> Sofia is forty-two and dramatic in everything she does. At the village fete she told the story of her fall off a bicycle to anyone who would listen, and when the raffle winner was announced she said that her heart was racing and she needed to sit down, until the stall-holders gathered round her. She has done this at every event in every village she has lived in. The fete committee has stopped asking her to help, and two neighbours cross the road.
+> Sofia is forty-two and dramatic in everything she does. At the village fair she told the story of her fall off a bicycle to anyone who would listen, and when the raffle winner was announced she said that her heart was racing and she needed to sit down, until the vendors gathered around her. She has done this at every event in every village she has lived in. The fair committee has stopped asking her to help, and two neighbors cross the road.
 
 **Case B**
 
-> Tito is forty-two and dramatic in everything he does. At the village fete he told the story of his fall off a bicycle to anyone who would listen, and when the raffle winner was announced he led the cheering and bought her a drink. He has told his stories this way at every event in every village he has lived in. The fete committee asks him to introduce the raffle every year, and the neighbours he made twenty years ago still come to his parties.
+> Tito is forty-two and dramatic in everything he does. At the village fair he told the story of his fall off a bicycle to anyone who would listen, and when the raffle winner was announced he led the cheering and bought her a drink. He has told his stories this way at every event in every village he has lived in. The fair committee asks him to introduce the raffle every year, and the neighbors he made twenty years ago still come to his parties.
 
 **What to compare.** Both are dramatic in everything, at every event, in every village. Compare one thing: what the drama has cost.
 
@@ -1111,9 +1111,9 @@ Drama alone is the thing most often mistaken for this name. Here are two people 
 
 **Why this one and not the other**
 
-In Case A Sofia says that her heart is racing and she needs to sit down when the raffle winner is announced, until the stall-holders gather round her. The committee has stopped asking her to help, and two neighbours cross the road. The answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
+In Case A Sofia says that her heart is racing and she needs to sit down when the raffle winner is announced, until the vendors gather around her. The committee has stopped asking her to help, and two neighbors cross the road. The answer is **“Keeps the attention on themselves, with bigger displays when it moves away”**, and the case is **Histrionic personality**.
 
-In Case B Tito leads the cheering and buys the winner a drink. The committee asks him to introduce the raffle every year, and the neighbours he made twenty years ago still come to his parties. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Tito leads the cheering and buys the winner a drink. The committee asks him to introduce the raffle every year, and the neighbors he made twenty years ago still come to his parties. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 Both are as theatrical as each other. A theatrical way of being is common and ordinary, and a person can be as dramatic as Tito and have no repeated cost at all. What turns it into **Histrionic personality** is the bigger display when the attention goes elsewhere, and what it has cost.
 
@@ -1127,7 +1127,7 @@ When attention goes to someone else, does the display get bigger? And has it cos
 |---|---|---|
 | What kind of thing is this? | A lasting way someone is | A lasting way someone is |
 | What does the person do, again and again, across those years? | Keeps the attention on themselves, with bigger displays when it moves away | Stays the same way for years, and it does not keep doing harm |
-| What you must be able to point to | Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them | Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them |
+| What you must be able to point to | Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them | Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them |
 
 
 *End of part 4. You can stop here; your place is kept. Next: part 5, Breaking rules and using people, and the question.*
@@ -1138,20 +1138,20 @@ When attention goes to someone else, does the display get bigger? And has it cos
 
 ### 33. Breaking rules and using people, with no regret
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 33 of 46*
 
 [reviewers only: card kind `meet`, id `meet-antisocial`]
 
 The last name is the one people reach for fastest in everyday talk, and this name needs more of it than the everyday word does.
 
-*The garage owner*
+*The dealership owner*
 
-> Callum is thirty-nine and owns a garage. He has ⟦sold three customers cars with the mileage wound back⟧, and told each of them it was 'the best car on the lot'. He borrowed four thousand pounds from his brother-in-law and has never repaid it, saying 'he can afford it'. At his last garage he forged his boss's signature on a lease, and at school he was expelled for forging notes from his mother. When a friend lost his savings in a scheme Callum had pushed him into, Callum shrugged: '⟦He should have read the paperwork⟧.' He has been sacked twice, and ⟦his brother-in-law no longer speaks to him⟧.
+> Callum is thirty-nine and owns a car dealership. He has ⟦sold three customers cars with the odometer rolled back⟧, and told each of them it was 'the best car on the lot'. He borrowed four thousand dollars from his brother-in-law and has never repaid it, saying 'he can afford it'. At his last dealership he forged his boss's signature on a lease, and at school he was expelled for forging notes from his mother. When a friend lost his savings in a scheme Callum had pushed him into, Callum shrugged: '⟦He should have read the paperwork⟧.' He has been fired twice, and ⟦his brother-in-law no longer speaks to him⟧.
 
 Stripped of its story, the case is this:
 
 - There are years and more than one place: school, two garages, a family.
-- Rules are broken and people are lied to or used: mileage wound back, a forged signature, a loan never repaid.
+- Rules are broken and people are lied to or used: odometer rolled back, a forged signature, a loan never repaid.
 - Callum shows no regret for the harm: "He should have read the paperwork."
 - People are hurt by it: customers, a friend’s savings, a brother-in-law who no longer speaks to him.
 
@@ -1175,40 +1175,40 @@ You may also hear this called “psychopath” or “sociopath” or “psychopa
 
 ### 34. Antisocial personality: the same thing in a different story
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 34 of 46*
 
 [reviewers only: card kind `again`, id `again-antisocial`]
 
-Callum gave you what to point to: years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it. Here is a second case, about raffle money and flats, not cars.
+Callum gave you what to point to: years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it. Here is a second case, about raffle money and apartments, not cars.
 
-The first case again, in one line. *The garage owner*: “sold three customers cars with the mileage wound back” and “He should have read the paperwork” and “his brother-in-law no longer speaks to him”
+The first case again, in one line. *The dealership owner*: “sold three customers cars with the odometer rolled back” and “He should have read the paperwork” and “his brother-in-law no longer speaks to him”
 
 The second case.
 
 *The society treasurer*
 
-> Bridget is forty-five and treasurer of the local arts society. She kept the proceeds of two raffles, told the committee that the tins had been stolen, and when the police asked, told them the committee had never given her a receipt book. In her last job at an estate agency she took deposits for flats that were not hers to let. When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch. She has done much the same since her twenties, in four towns, and the arts society has closed.
-**You are asked:** In *The garage owner*, these words show it: “sold three customers cars with the mileage wound back” and “He should have read the paperwork” and “his brother-in-law no longer speaks to him”. Which words show the same thing in this case? Tap them.
+> Bridget is forty-five and treasurer of the local arts society. She kept the proceeds of two raffles, told the committee that the cash boxes had been stolen, and when the police asked, told them the committee had never given her a receipt book. In her last job at a real estate agency she took deposits for apartments that were not hers to rent out. When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch. She has done much the same since her twenties, in four towns, and the arts society has closed.
+**You are asked:** In *The dealership owner*, these words show it: “sold three customers cars with the odometer rolled back” and “He should have read the paperwork” and “his brother-in-law no longer speaks to him”. Which words show the same thing in this case? Tap them.
 
 The pieces you can tap:
-1. “She kept the proceeds of two raffles, told the committee that the tins had been stolen, and when the police asked, told them the committee had never given her a receipt book”
+1. “She kept the proceeds of two raffles, told the committee that the cash boxes had been stolen, and when the police asked, told them the committee had never given her a receipt book”
 2. “When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch”
 3. “She has done much the same since her twenties, in four towns, and the arts society has closed”
 
 **Shown as soon as you tap.** The words are “When an elderly member said she had lost her savings in one of them, Bridget said, 'Nobody made her pay, did they?' and went to lunch”.
-- If you tapped “She kept the proceeds of two raffles, told the committee that the tins had been stolen, and when the police asked, told them the committee had never given her a receipt book”: That is rules broken and people lied to. It is part of what you point to, but the words asked for are what she shows about the harm.
+- If you tapped “She kept the proceeds of two raffles, told the committee that the cash boxes had been stolen, and when the police asked, told them the committee had never given her a receipt book”: That is rules broken and people lied to. It is part of what you point to, but the words asked for are what she shows about the harm.
 - If you tapped “She has done much the same since her twenties, in four towns, and the arts society has closed”: That is the years, the places and what it has cost. It is not what she shows about the harm.
 
 **What the two share**
 
-Callum and Bridget each break rules, lie to people and use them: a wound-back mileage and a forged signature, raffle money kept and deposits taken for flats that were not hers to let. Each shows no regret when someone is hurt: "He should have read the paperwork", "Nobody made her pay, did they?" And each has done it for years, in several places, and people have been hurt.
+Callum and Bridget each break rules, lie to people and use them: a wound-back mileage and a forged signature, raffle money kept and deposits taken for apartments that were not hers to rent out. Each shows no regret when someone is hurt: "He should have read the paperwork", "Nobody made her pay, did they?" And each has done it for years, in several places, and people have been hurt.
 
-A garage and an arts society. So this is not about cars or about money. Whatever the story, the same things are there: rules broken and people used, no regret, and people hurt. That is what **Antisocial personality** names.
+A car dealership and an arts society. So this is not about cars or about money. Whatever the story, the same things are there: rules broken and people used, no regret, and people hurt. That is what **Antisocial personality** names.
 
 
 ### 35. Antisocial personality: what it is like
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 35 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 35 of 46*
 
 [reviewers only: card kind `portrait`, id `portrait-antisocial`]
 
@@ -1241,11 +1241,11 @@ You will meet this more often in the news and in stories than in the people you 
 
 ### 36. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 36 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 36 of 46*
 
 [reviewers only: card kind `check`, id `check-antisocial`]
 
-> Sven is thirty-four. At nineteen he sold his classmates the answers to an exam he had stolen, and told the school it was another student. At twenty-five he took a deposit from a couple for a kitchen he never built, and at thirty he did the same to a family two towns away. When one of them rang him in tears, he said, 'That's business. You should have asked for references.' He has been to court twice, and says each time that the judge 'had it in for him'.
+> Sven is thirty-four. At nineteen he sold his classmates the answers to an exam he had stolen, and told the school it was another student. At twenty-five he took a deposit from a couple for a kitchen he never built, and at thirty he did the same to a family two towns away. When one of them called him in tears, he said, 'That's business. You should have asked for references.' He has been to court twice, and says each time that the judge 'had it in for him'.
 
 **The question:** **“What does the person do, again and again, across those years?”** Which of the answers you have met so far fits this case?
 
@@ -1258,30 +1258,30 @@ You will meet this more often in the news and in stories than in the people you 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Breaks rules and uses people, and shows no regret for the harm.**” Sven has broken rules and used people at nineteen, twenty-five and thirty, in different towns: “sold his classmates the answers to an exam he had stolen” and “took a deposit from a couple for a kitchen he never built” and “That's business. You should have asked for references”. When one of the people he harmed rang in tears he showed no regret at all. The name that goes with this answer is **Antisocial personality**.
+- If you are right: “Right: **Breaks rules and uses people, and shows no regret for the harm.**” Sven has broken rules and used people at nineteen, twenty-five and thirty, in different towns: “sold his classmates the answers to an exam he had stolen” and “took a deposit from a couple for a kitchen he never built” and “That's business. You should have asked for references”. When one of the people he harmed called in tears he showed no regret at all. The name that goes with this answer is **Antisocial personality**.
 - If you miss: “The answer is **Breaks rules and uses people, and shows no regret for the harm.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Sven does not need anyone to see him as special, and he does not turn scornful when he is not. What he wants is the money, and he gets it by lying.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: Give that answer when across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them. This case shows something else: across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Give that answer when across years, places and relationships the person says they are overlooked and owed more than they get, shows little interest in what others feel, meets any slight with hurt withdrawal or quiet resentment, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Give that answer when across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does.
-  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Give that answer when across years, places and relationships the person puts themselves at the centre of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does.
+  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Give that answer when across years, places and relationships the person puts themselves at the center of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does.
 - Taught on: “Breaking rules and using people, with no regret” (one tap opens the card).
 
 ### 37. Grandiose narcissism or Antisocial personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 37 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 37 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-narcgrand-antisocial`]
 
-Both of these can be charming and sure of themselves, and both leave people hurt. Here are two men who have each let flats for thirty years.
+Both of these can be charming and sure of themselves, and both leave people hurt. Here are two men who have each rented out apartments for thirty years.
 
 **Case A**
 
-> Kurt is fifty-eight and has let flats for thirty years. He tells his tenants that he is the best landlord in the county and that they are lucky to live under his roof. When a tenant asked him to mend a boiler, he called her 'an ungrateful nobody' and let it wait two weeks, though he did repair it in the end. He has spoken to tenants this way in three towns, and he has been shouted at by two of his own sons for the way he treats his staff. Tenants leave as soon as their lease ends.
+> Kurt is fifty-eight and has rented out apartments for thirty years. He tells his tenants that he is the best landlord in the county and that they are lucky to live under his roof. When a tenant asked him to mend a boiler, he called her 'an ungrateful nobody' and let it wait two weeks, though he did repair it in the end. He has spoken to tenants this way in three towns, and he has been shouted at by two of his own sons for the way he treats his staff. Tenants leave as soon as their lease ends.
 
 **Case B**
 
-> Vince is fifty-eight and has let flats for thirty years. He tells tenants that their deposits are 'safe in the bank', and has spent four tenants' deposits in three towns. When a tenant asked him to mend a boiler he promised it for Friday, never sent anyone, and kept her rent. When she wrote that the flat was damp and her baby was ill, he said, 'Go somewhere else, then. Nobody forced you.' Three tenants have lost their deposits and one has lost her home.
+> Vince is fifty-eight and has rented out apartments for thirty years. He tells tenants that their deposits are 'safe in the bank', and has spent four tenants' deposits in three towns. When a tenant asked him to mend a boiler he promised it for Friday, never sent anyone, and kept her rent. When she wrote that the apartment was damp and her baby was ill, he said, 'Go somewhere else, then. Nobody forced you.' Three tenants have lost their deposits and one has lost her home.
 
 **What to compare.** Compare one thing: what drives each man. Is it getting something for himself by lying to people, whatever the harm? Or is it being treated as special, with scorn when he is not?
 
@@ -1312,7 +1312,7 @@ Does the case show rules broken and people lied to and used, with no regret for 
 
 ### 38. When a case shows both
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 38 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 38 of 46*
 
 [reviewers only: card kind `exception`, id `exc-both`]
 
@@ -1352,7 +1352,7 @@ The answer is chosen this way on purpose, and it is worth knowing that the choic
 
 ### 39. Antisocial personality or An ordinary personality: telling them apart
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 39 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 39 of 46*
 
 [reviewers only: card kind `lookalike`, id `look-antisocial-ordpersonality`]
 
@@ -1364,7 +1364,7 @@ Plenty of ordinary people bend a rule now and then, and that does not earn this 
 
 **Case B**
 
-> Lena is thirty-seven and has always bent small rules: she parks in loading bays, argues for a discount in every shop and once talked her way into a first-class seat. When a friend lent her two hundred pounds, she paid it back with a card the next week. When a neighbour was upset about her parking, she apologised and stopped. She has been like this since she was a student, in three cities, and her friends still lend her things and she lends them back.
+> Lena is thirty-seven and has always bent small rules: she parks in loading bays, argues for a discount in every store and once talked her way into a first-class seat. When a friend lent her two hundred dollars, she paid it back with a card the next week. When a neighbor was upset about her parking, she apologized and stopped. She has been like this since she was a student, in three cities, and her friends still lend her things and she lends them back.
 
 **What to compare.** Both have bent rules for years, in three cities. Compare one thing: what happens when someone is hurt or upset by it.
 
@@ -1376,7 +1376,7 @@ Plenty of ordinary people bend a rule now and then, and that does not earn this 
 
 In Case A Joss has talked three friends into lending him money for a business that does not exist, and when one asks for her money back he says she was lucky to have been asked and blocks her. He has never repaid anyone. The answer is **“Breaks rules and uses people, and shows no regret for the harm”**, and the case is **Antisocial personality**.
 
-In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbour is upset she apologises and stops. Her friends still lend her things and she lends them back. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
+In Case B Lena parks in loading bays and argues for discounts, and when a friend lends her money she pays it back the next week, and when a neighbor is upset she apologizes and stops. Her friends still lend her things and she lends them back. The answer is **“Stays the same way for years, and it does not keep doing harm”**, and the case is **An ordinary personality**.
 
 Both bend rules, and both have done so for years. What differs is whether anyone is badly hurt, and what the person does when someone is: Lena puts it right, and Joss blames them.
 
@@ -1395,7 +1395,7 @@ When someone is hurt or upset by what this person did, do they show regret and p
 
 ### 40. A wrong idea: "if someone is that hard to deal with, it must be a disorder"
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 40 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 40 of 46*
 
 [reviewers only: card kind `refute`, id `refute-difficult`]
 
@@ -1416,7 +1416,7 @@ The last point is for you and not for him. "There is something wrong with him" f
 
 ### 41. The question you have been answering all along
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 41 of 46*
 
 [reviewers only: card kind `question`, id `q-pat`]
 
@@ -1440,7 +1440,7 @@ Each answer leads to one name, and so rules out the other five.
   - Give this answer when across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them.
   - It leads to **Borderline personality**.
 - **“Keeps the attention on themselves, with bigger displays when it moves away”**
-  - Give this answer when across years, places and relationships the person puts themselves at the centre of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
+  - Give this answer when across years, places and relationships the person puts themselves at the center of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them.
   - It leads to **Histrionic personality**.
 - **“Breaks rules and uses people, and shows no regret for the harm”**
   - Give this answer when across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does.
@@ -1470,7 +1470,7 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 - Grandiose narcissism or Vulnerable narcissism: When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
 - Grandiose narcissism or An ordinary personality: When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
 - Vulnerable narcissism or An ordinary personality: Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-- Vulnerable narcissism or Borderline personality: When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+- Vulnerable narcissism or Borderline personality: When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
 - Grandiose narcissism or Borderline personality: When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?
 - Borderline personality or Histrionic personality: Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
 - Grandiose narcissism or Histrionic personality: When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
@@ -1481,11 +1481,11 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 42. A question about a new case
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 5 of 6 · Card 42 of 46*
 
 [reviewers only: card kind `check`, id `check-pat`]
 
-> Ward is sixty-three and has always been touchy about being corrected. In his twenties he sulked for an evening whenever a foreman put him right, and he still does, and then comes round and says sorry. He has done it at three workplaces, and at home, where his wife says she just waits for the evening to pass. He has kept the same friends for forty years, the whole street asks him to fetch the ladders, and his last employer gave him a long-service watch.
+> Ward is sixty-three and has always been touchy about being corrected. In his twenties he sulked for an evening whenever a foreman put him right, and he still does, and then comes around and says sorry. He has done it at three workplaces, and at home, where his wife says she just waits for the evening to pass. He has kept the same friends for forty years, the whole street asks him to fetch the ladders, and his last employer gave him a long-service watch.
 
 **The question:** **“What does the person do, again and again, across those years?”**
 
@@ -1498,12 +1498,12 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Ward has been touchy for forty years and in every place, and the words that decide it are “has always been touchy about being corrected” and “then comes round and says sorry” and “the whole street asks him to fetch the ladders”. The sulk passes by the evening, he says sorry, and nothing has been lost: the same friends, the same street, a long-service watch. This answer leads to **An ordinary personality**.
+- If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Ward has been touchy for forty years and in every place, and the words that decide it are “has always been touchy about being corrected” and “then comes around and says sorry” and “the whole street asks him to fetch the ladders”. The sulk passes by the evening, he says sorry, and nothing has been lost: the same friends, the same street, a long-service watch. This answer leads to **An ordinary personality**.
 - If you miss: “The answer is **Stays the same way for years, and it does not keep doing harm.**” The same reason follows, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Give that answer when across years, places and relationships the person acts as if they are better than others and owed special treatment, shows little interest in what others feel, meets any slight with anger or scorn, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: The sulk can look like hurt withdrawal. But Ward keeps no count of what he is owed, it passes within the evening, and he has lost nobody.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Give that answer when across years, places and relationships the person makes desperate efforts to keep people close, swings from adoring someone to attacking them when that person seems about to leave or pull away, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them.
-  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Give that answer when across years, places and relationships the person puts themselves at the centre of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them.
+  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Give that answer when across years, places and relationships the person puts themselves at the center of attention, makes bigger and bigger displays when attention moves to someone else, and it keeps costing them or the people around them. This case shows something else: across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them.
   - If you chose **Breaks rules and uses people, and shows no regret for the harm**: Give that answer when across years, places and relationships the person breaks rules, lies to people or uses them for their own ends, and shows no regret for the harm it does. This case shows something else: across years, places and relationships the person shows the same way of being (confident, shy, dramatic, blunt, touchy), and the case shows no repeated cost to them or to the people around them.
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
@@ -1515,21 +1515,21 @@ Sometimes two answers both seem to fit. Each pair below has been set side by sid
 
 ### 43. A whole case, from the first question to the name
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 43 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 43 of 46*
 
 [reviewers only: card kind `worked`, id `worked-rafe`]
 
 You have the six names and the question about them. Before you run a case yourself, watch two being run from the top, in the order the questions are asked. You are not asked anything until the end of each.
 
-*The recruitment agent*
+*The recruiting agent*
 
-> Rafe is forty-one and runs a recruitment agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. For fifteen years, at three agencies and in two cities, he has invoiced clients for placements that never happened, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate rang in tears because she had borrowed the fee from her mother, Rafe said, 'Everyone knows how recruitment works.' The regulator has fined him twice, and two former partners will not speak to him.
+> Rafe is forty-one and runs a recruiting agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. For fifteen years, at three agencies and in two cities, he has invoiced clients for placements that never happened, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate called in tears because she had borrowed the fee from her mother, Rafe said, 'Everyone knows how recruiting works.' The regulator has fined him twice, and two former partners will not speak to him.
 
 **Question 1 of 2: What kind of thing is this?**
 
 What it is for: sorts one person’s reasoning from something one person does to another, from the way a person is over years, and from a moment that will pass. Each of the four is made of something different and is judged on different things: a piece of reasoning on the reasons, something one person does to another on what was said or done and what it did to the other person, and a person across years on those years. So the questions that come next depend on this answer, and after a passing moment there are none.
 
-> Rafe is forty-one and runs a recruitment agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. ⟦For fifteen years, at three agencies and in two cities⟧, he has invoiced clients for placements that never happened, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate rang in tears because she had borrowed the fee from her mother, Rafe said, 'Everyone knows how recruitment works.' The regulator has fined him twice, and two former partners will not speak to him.
+> Rafe is forty-one and runs a recruiting agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. ⟦For fifteen years, at three agencies and in two cities⟧, he has invoiced clients for placements that never happened, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate called in tears because she had borrowed the fee from her mother, Rafe said, 'Everyone knows how recruiting works.' The regulator has fined him twice, and two former partners will not speak to him.
 
 Answer: **“A lasting way someone is”**
 
@@ -1541,11 +1541,11 @@ Still possible: all six names this unit teaches.
 
 What it is for: tells apart five lasting ways of being that keep costing the person or the people around them, and the ordinary personality that does not. The six names are defined by what the person does again and again, wherever they are and whoever they are with, and by whether it keeps doing harm. One bad week, one relationship or one label someone gives them decides nothing.
 
-> Rafe is forty-one and runs a recruitment agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. For fifteen years, at three agencies and in two cities, he has ⟦invoiced clients for placements that never happened⟧, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate rang in tears because she had borrowed the fee from her mother, Rafe said, '⟦Everyone knows how recruitment works⟧.' The regulator has fined him twice, and ⟦two former partners will not speak to him⟧.
+> Rafe is forty-one and runs a recruiting agency. He tells clients that he is the best in the business, and he is warm and quick to make friends. For fifteen years, at three agencies and in two cities, he has ⟦invoiced clients for placements that never happened⟧, and told candidates that a job existed so that they would pay a 'registration fee'. When a candidate called in tears because she had borrowed the fee from her mother, Rafe said, '⟦Everyone knows how recruiting works⟧.' The regulator has fined him twice, and ⟦two former partners will not speak to him⟧.
 
 Answer: **“Breaks rules and uses people, and shows no regret for the harm”**
 
-The words that decide it are “invoiced clients for placements that never happened” and “Everyone knows how recruitment works” and “two former partners will not speak to him”. The first is rules broken and people used: placements invoiced that never happened, fees charged for jobs that did not exist. The second shows no regret when someone is in tears. The third shows people hurt: a regulator, and partners who will not speak to him.
+The words that decide it are “invoiced clients for placements that never happened” and “Everyone knows how recruiting works” and “two former partners will not speak to him”. The first is rules broken and people used: placements invoiced that never happened, fees charged for jobs that did not exist. The second shows no regret when someone is in tears. The third shows people hurt: a regulator, and partners who will not speak to him.
 
 Still possible: **Antisocial personality**. Ruled out: **Grandiose narcissism**, **Vulnerable narcissism**, **Borderline personality**, **Histrionic personality** and **An ordinary personality**.
 
@@ -1554,10 +1554,10 @@ Still possible: **Antisocial personality**. Ruled out: **Grandiose narcissism**,
 **You are asked:** Rafe tells clients he is the best in the business, so the case can look like **Grandiose narcissism**. Why is this **Antisocial personality** and not **Grandiose narcissism**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
 - (a) Rafe tells clients that he is the best in the business.
-- (b) He tells candidates that a job exists so that they will pay a fee, and he shows no regret when one rings him in tears.
+- (b) He tells candidates that a job exists so that they will pay a fee, and he shows no regret when one calls him in tears.
 - (c) He is warm and quick to make friends.
 
-**Shown as soon as you choose.** The one that settles it is (b): He tells candidates that a job exists so that they will pay a fee, and he shows no regret when one rings him in tears.
+**Shown as soon as you choose.** The one that settles it is (b): He tells candidates that a job exists so that they will pay a fee, and he shows no regret when one calls him in tears.
 - If you chose (a): True, and it is why the case can look like **Grandiose narcissism**. But nothing in the case shows him turning angry or scornful when he is not treated as special. Saying you are the best is not enough.
 - If you chose (c): True, but a warm manner is how he gets his way. It tells you nothing about which name applies: a charming person can be any of the six.
 
@@ -1569,31 +1569,31 @@ It is the question from the two landlords. Does the case show rules broken and p
 
 **Does it look like a case you know?**
 
-You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the garage owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.
+You have the answer. Now take a second look of a different kind: does this case look like one you know? It should bring back the dealership owner: cars and customers there, placements and candidates here, and the same shrug when someone is hurt.
 
 Here the answer and the likeness agree, so the answer stands. The question comes first, because it makes you point at words in the case. The likeness is only a second look. When the two disagree, do not pick the one you prefer. Go back to the question and find the words in the case that answer it. The second whole case shows how.
 
 ### 44. A second whole case, where the story points the wrong way
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 44 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 44 of 46*
 
 [reviewers only: card kind `worked`, id `worked-bruno`]
 
-The recruitment agent was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.
+The recruiting agent was a clean case: one thing was going on, and nothing in the story pulled the other way. In this second case the most noticeable thing in the story is not the thing that decides it. Watch which words each question picks out.
 
 *The theatrical uncle*
 
-> Bruno is fifty-seven and has been theatrical all his life. At school he played every lead, at his first job he ran the staff pantomime, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, Bruno applauds loudest. His friends from school still meet him every month, he has run the village pantomime for twenty years and been thanked at the end of every one, and his daughters ask him to tell the same stories to their children.
+> Bruno is fifty-seven and has been theatrical all his life. At school he played every lead, at his first job he ran the staff Christmas show, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, Bruno applauds loudest. His friends from school still meet him every month, he has run the village Christmas show for twenty years and been thanked at the end of every one, and his daughters ask him to tell the same stories to their children.
 
 **Question 1 of 2: What kind of thing is this?**
 
 What it is for: sorts one person’s reasoning from something one person does to another, from the way a person is over years, and from a moment that will pass.
 
-> Bruno is fifty-seven and ⟦has been theatrical all his life⟧. At school he played every lead, at his first job he ran the staff pantomime, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, Bruno applauds loudest. His friends from school still meet him every month, ⟦he has run the village pantomime for twenty years⟧ and been thanked at the end of every one, and his daughters ask him to tell the same stories to their children.
+> Bruno is fifty-seven and ⟦has been theatrical all his life⟧. At school he played every lead, at his first job he ran the staff Christmas show, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, Bruno applauds loudest. His friends from school still meet him every month, ⟦he has run the village Christmas show for twenty years⟧ and been thanked at the end of every one, and his daughters ask him to tell the same stories to their children.
 
 Answer: **“A lasting way someone is”**
 
-What the case gives you is a long view of one person: “has been theatrical all his life” and “he has run the village pantomime for twenty years”. It covers a lifetime and many places, and no single occasion is in it.
+What the case gives you is a long view of one person: “has been theatrical all his life” and “he has run the village Christmas show for twenty years”. It covers a lifetime and many places, and no single occasion is in it.
 
 Still possible: all six names this unit teaches.
 
@@ -1601,7 +1601,7 @@ Still possible: all six names this unit teaches.
 
 What it is for: tells apart five lasting ways of being that keep costing the person or the people around them, and the ordinary personality that does not.
 
-> Bruno is fifty-seven and has been theatrical all his life. At school he played every lead, at his first job he ran the staff pantomime, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, ⟦Bruno applauds loudest⟧. ⟦His friends from school still meet him every month⟧, he has run the village pantomime for twenty years and ⟦been thanked at the end of every one⟧, and his daughters ask him to tell the same stories to their children.
+> Bruno is fifty-seven and has been theatrical all his life. At school he played every lead, at his first job he ran the staff Christmas show, and at his sister's wedding he gave a speech that went on for twenty minutes. He tells every story with his whole body, cries easily at films and hugs everyone at a party. When another guest is applauded, ⟦Bruno applauds loudest⟧. ⟦His friends from school still meet him every month⟧, he has run the village Christmas show for twenty years and ⟦been thanked at the end of every one⟧, and his daughters ask him to tell the same stories to their children.
 
 Answer: **“Stays the same way for years, and it does not keep doing harm”**
 
@@ -1611,19 +1611,19 @@ Still possible: **An ordinary personality**. Ruled out: **Grandiose narcissism**
 
 **Name it:** **An ordinary personality**
 
-**You are asked:** Bruno tells every story with his whole body, gives twenty-minute speeches and hugs everyone at a party. That is putting himself at the centre of attention, so the case can look like **Histrionic personality**. Why is this **An ordinary personality** and not **Histrionic personality**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
+**You are asked:** Bruno tells every story with his whole body, gives twenty-minute speeches and hugs everyone at a party. That is putting himself at the center of attention, so the case can look like **Histrionic personality**. Why is this **An ordinary personality** and not **Histrionic personality**? Every statement below is true of the case. Before you read the reason, choose the one that settles it.
 
 - (a) He tells every story with his whole body and gives long speeches.
 - (b) When another guest is applauded he applauds loudest, and the friends he has had since school still meet him every month.
-- (c) He has run the village pantomime for twenty years.
+- (c) He has run the village Christmas show for twenty years.
 
 **Shown as soon as you choose.** The one that settles it is (b): When another guest is applauded he applauds loudest, and the friends he has had since school still meet him every month.
 - If you chose (a): True, and it is why the case can look like **Histrionic personality**. But a theatrical way of being is common and ordinary. It cannot settle which of the two this is.
-- If you chose (c): True, but that is something he does, and it is not what it has cost. A person with **Histrionic personality** could run a pantomime too.
+- If you chose (c): True, but that is something he does, and it is not what it has cost. A person with **Histrionic personality** could run a Christmas show too.
 
 **Why this is An ordinary personality and not Histrionic personality**
 
-For **Histrionic personality** you must be able to point to this: years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. Bruno is at the centre of attention, but the other two things are missing. His displays do not get bigger when attention goes to someone else: he applauds. And nothing is being lost to it, so there is no cost to point to.
+For **Histrionic personality** you must be able to point to this: years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them. Bruno is at the center of attention, but the other two things are missing. His displays do not get bigger when attention goes to someone else: he applauds. And nothing is being lost to it, so there is no cost to point to.
 
 It is the question from Sofia and Tito. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years? Here it has cost very little, so the answer is **“Stays the same way for years, and it does not keep doing harm”**.
 
@@ -1631,15 +1631,15 @@ It is the question from Sofia and Tito. When attention goes to someone else, doe
 
 Now the second look: does this case look like one you know? A man who tells every story with his whole body and hugs everyone at a party may bring back Marguerite first, and Marguerite’s case was **Histrionic personality**. So here the likeness and the answer seem to disagree.
 
-When that happens, go back to the question and find the words in the case that answer it. They are “Bruno applauds loudest” and “His friends from school still meet him every month” and “been thanked at the end of every one”. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fete host: dramatic in everything, and thanked for it every year. So the answer stands.
+When that happens, go back to the question and find the words in the case that answer it. They are “Bruno applauds loudest” and “His friends from school still meet him every month” and “been thanked at the end of every one”. Marguerite’s case has nothing like them: when the room applauded someone else she told the story of her terrible week until the room turned back to her, and her sister stopped inviting her to small gatherings. The case this one really looks like is the fair host: dramatic in everything, and thanked for it every year. So the answer stands.
 
 ### The drill
 
-The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labelled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
+The cards are out of view from here, and every case is new. The drill has five stages. Cases that are easy to mix up are placed next to each other on purpose. This is meant to feel harder than the questions between the cards: telling look-alikes apart side by side is what makes the difference stick. Two of the cases come from an earlier unit, without being labeled. Nothing here is graded. A miss only decides what comes back. What you miss is asked again before the drill ends, and every name comes back on later days with a new case.
 
 Some of these cases show a loud, sure or dramatic way of being that does no lasting harm. That is on purpose. Seeing that a way of being does no lasting harm is one of the six answers, and you will need it as often as the other five.
 
-#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practises one thing: which name goes with which answer.
+#### Stage 1 of 5. The answers are shown for each case. Give the name that goes with them. This stage practices one thing: which name goes with which answer.
 
 The names offered are the six this unit teaches: Grandiose narcissism / Vulnerable narcissism / Borderline personality / Histrionic personality / Antisocial personality / An ordinary personality.
 
@@ -1664,7 +1664,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 2 of 51**
 
-> Carmen is thirty-eight and has worked in four hospitals. At each one she has said that ⟦the doctors never see how much she does, and that others are praised for less⟧. When a nurse she had trained was given the team award, Carmen ⟦did not speak to her for three months⟧ and stopped coming to the ward lunches. She has done the same with every colleague who was promoted, and ⟦two ward managers have written that they cannot give her a team to lead⟧.
+> Carmen is thirty-eight and has worked in four hospitals. At each one she has said that ⟦the doctors never see how much she does, and that others are praised for less⟧. When a nurse she had trained was given the team award, Carmen ⟦did not speak to her for three months⟧ and stopped coming to the unit lunches. She has done the same with every colleague who was promoted, and ⟦two nurse managers have written that they cannot give her a team to lead⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -1674,7 +1674,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Carmen says she is overlooked and owed more, and when a colleague is honoured she does not argue. She goes cold: “the doctors never see how much she does, and that others are praised for less” and “did not speak to her for three months” and “two ward managers have written that they cannot give her a team to lead”. It has followed her through four hospitals, and it has cost her any chance of leading a team.
+- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Carmen says she is overlooked and owed more, and when a colleague is honored she does not argue. She goes cold: “the doctors never see how much she does, and that others are praised for less” and “did not speak to her for three months” and “two nurse managers have written that they cannot give her a team to lead”. It has followed her through four hospitals, and it has cost her any chance of leading a team.
   - Why not **Grandiose narcissism**: Carmen does not run the nurse down or turn scornful. She goes silent and stays away.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
@@ -1683,7 +1683,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 3 of 51**
 
-> Lorne is forty-three and has sold timeshares in three countries. He tells every buyer that the apartment is 'guaranteed to double'. He has been fined in two of the countries, and a former colleague says that he ⟦took commission on sales he knew would be cancelled⟧. When an elderly couple wrote that they had lost their retirement money, he replied that they '⟦had signed, hadn't they⟧?' At twenty he was given a police warning for selling stolen tickets, and ⟦eleven buyers are now suing him⟧.
+> Lorne is forty-three and has sold timeshares in three countries. He tells every buyer that the apartment is 'guaranteed to double'. He has been fined in two of the countries, and a former colleague says that he ⟦took commission on sales he knew would be canceled⟧. When an elderly couple wrote that they had lost their retirement money, he replied that they '⟦had signed, hadn't they⟧?' At twenty he was given a police warning for selling stolen tickets, and ⟦eleven buyers are now suing him⟧.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -1693,7 +1693,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Lorne breaks rules and uses people for his own ends, and when a couple lost their retirement money he showed no regret: “took commission on sales he knew would be cancelled” and “had signed, hadn't they” and “eleven buyers are now suing him”. He has done it in three countries and since he was twenty, and eleven buyers are suing him.
+- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Lorne breaks rules and uses people for his own ends, and when a couple lost their retirement money he showed no regret: “took commission on sales he knew would be canceled” and “had signed, hadn't they” and “eleven buyers are now suing him”. He has done it in three countries and since he was twenty, and eleven buyers are suing him.
   - Why not **Grandiose narcissism**: Lorne does not need anyone to treat him as special, and nothing in the case shows him turning scornful when they do not. What drives it is money, got by lying.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be charming, sure of themselves and scornful of others, and both leave people hurt. In **Grandiose narcissism** what drives the case is being treated as special: the person turns angry or scornful when it is not given. In **Antisocial personality** what drives it is gain: the person lies to people and uses them, and shows no regret for the harm. Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
@@ -1702,7 +1702,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 4 of 51**
 
-> Joelle is twenty-eight. In every friendship since school she has panicked when a friend was busy. When her flatmate took a weekend trip she ⟦sent twenty-six messages⟧, and then wrote, 'Go on then, leave, ⟦you were never my friend anyway⟧.' An hour later she was sobbing down the phone and begging her to come back. ⟦Three flatmates in a row have left within a year⟧, and her mother says that it was the same with all her boyfriends.
+> Joelle is twenty-eight. In every friendship since school she has panicked when a friend was busy. When her roommate took a weekend trip she ⟦sent twenty-six messages⟧, and then wrote, 'Go on then, leave, ⟦you were never my friend anyway⟧.' An hour later she was sobbing on the phone and begging her to come back. ⟦Three roommates in a row have left within a year⟧, and her mother says that it was the same with all her boyfriends.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -1712,10 +1712,10 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When her flatmate seemed to be going, Joelle held on hard and then turned on her: “sent twenty-six messages” and “you were never my friend anyway” and “Three flatmates in a row have left within a year”. It has been the same in every friendship since school, and it has cost her three flatmates in a row.
-  - Why not **Vulnerable narcissism**: Joelle does not pull away and keep a count. She reaches for her flatmate, attacks her, and begs her back.
+- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When her roommate seemed to be going, Joelle held on hard and then turned on her: “sent twenty-six messages” and “you were never my friend anyway” and “Three roommates in a row have left within a year”. It has been the same in every friendship since school, and it has cost her three roommates in a row.
+  - Why not **Vulnerable narcissism**: Joelle does not pull away and keep a count. She reaches for her roommate, attacks her, and begs her back.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
-  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
@@ -1731,16 +1731,16 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Gideon puts himself at the centre, and when attention went to another representative his display got bigger: “told his news in a loud, theatrical voice” and “put his head in his hands and said he could not go on until the others asked what was wrong” and “he has lost two elections”. It has been the same since school, and it has cost him two elections.
+- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Gideon puts himself at the center, and when attention went to another representative his display got bigger: “told his news in a loud, theatrical voice” and “put his head in his hands and said he could not go on until the others asked what was wrong” and “he has lost two elections”. It has been the same since school, and it has cost him two elections.
   - Why not **Grandiose narcissism**: Gideon does not run the other representative down. He turns the attention back to himself.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both want the room’s attention, and both take it over in every group. In **Grandiose narcissism** the person wants to be treated as better than others, and runs down whoever else is praised. In **Histrionic personality** the person wants any attention at all, and answers attention going elsewhere with a bigger display, not with scorn. When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Drill item 6 of 51**
 
-> Dr Anand is sixty and has been ⟦famously gruff for thirty-five years⟧, in two hospitals. She says what she thinks to patients, juniors and the board, and has never been known to flatter anyone. ⟦Her juniors ask to work with her⟧, patients write her letters, and ⟦she has the same three friends she has had since medical school⟧. When a junior corrects her she says, 'You're right,' and changes the note.
+> Dr. Anand is sixty and has been ⟦famously gruff for thirty-five years⟧, in two hospitals. She says what she thinks to patients, residents and the board, and has never been known to flatter anyone. ⟦Her residents ask to work with her⟧, patients write her letters, and ⟦she has the same three friends she has had since medical school⟧. When a resident corrects her she says, 'You're right,' and changes the note.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -1750,8 +1750,8 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Dr Anand has been gruff for thirty-five years and in both hospitals, and the case shows what that has not cost: “famously gruff for thirty-five years” and “Her juniors ask to work with her” and “she has the same three friends she has had since medical school”. A way of being that is harsh to hear and leaves no repeated cost behind it is not what the other names point to.
-  - Why not **Grandiose narcissism**: She is gruff, which **Grandiose narcissism** can be too. But she does not turn scornful when she is corrected: she says "You're right" and changes the note, and her juniors ask to stay.
+- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Dr. Anand has been gruff for thirty-five years and in both hospitals, and the case shows what that has not cost: “famously gruff for thirty-five years” and “Her residents ask to work with her” and “she has the same three friends she has had since medical school”. A way of being that is harsh to hear and leaves no repeated cost behind it is not what the other names point to.
+  - Why not **Grandiose narcissism**: She is gruff, which **Grandiose narcissism** can be too. But she does not turn scornful when she is corrected: she says "You're right" and changes the note, and her residents ask to stay.
 - If you miss, you see the right name, the reason and the “why not” line above, and then:
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -1761,7 +1761,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 7 of 51**
 
-> Ines is forty-seven and has captained her sailing club for fifteen years. She tells every new member that they are lucky to learn from her. When a member's design for the new race course was voted in over hers, she called him 'a hobbyist with a pencil' in the bar and cancelled his entry to the next regatta. She has driven out four committee members, and her sister stopped sailing with her years ago.
+> Ines is forty-seven and has captained her sailing club for fifteen years. She tells every new member that they are lucky to learn from her. When a member's design for the new race course was voted in over hers, she called him 'a hobbyist with a pencil' in the bar and canceled his entry to the next regatta. She has driven out four committee members, and her sister stopped sailing with her years ago.
 
 **You are asked:** What does the person do, again and again, across those years?
 
@@ -1782,7 +1782,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 8 of 51**
 
-> Nigel is fifty-one and manages a care home. For fifteen years, at three homes, he has taken residents' pocket money 'for safekeeping' and spent it, altered the visitor logs when relatives asked questions, and told families that the money was 'in a trust'. When one daughter found out and wept, he said that her mother 'should have kept better track'. Two homes have closed on him, and one family has lost four thousand pounds.
+> Nigel is fifty-one and manages a nursing home. For fifteen years, at three homes, he has taken residents' spending money 'for safekeeping' and spent it, altered the visitor logs when relatives asked questions, and told families that the money was 'in a trust'. When one daughter found out and wept, he said that her mother 'should have kept better track'. Two homes have closed on him, and one family has lost four thousand dollars.
 
 **You are asked:** What does the person do, again and again, across those years?
 
@@ -1795,7 +1795,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Breaks rules and uses people, and shows no regret for the harm.**” Nigel has taken money from people who could not check, lied to their families, and shown no regret to a daughter in tears: “taken residents' pocket money 'for safekeeping' and spent it” and “should have kept better track” and “one family has lost four thousand pounds”. It has gone on for fifteen years in three homes. This answer leads to **Antisocial personality**.
+- If you are right: “Right: **Breaks rules and uses people, and shows no regret for the harm.**” Nigel has taken money from people who could not check, lied to their families, and shown no regret to a daughter in tears: “taken residents' spending money 'for safekeeping' and spent it” and “should have kept better track” and “one family has lost four thousand dollars”. It has gone on for fifteen years in three homes. This answer leads to **Antisocial personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Nothing in the case shows Nigel needing to be treated as special, or turning scornful when he is not. What drives it is the money, got by lying.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1803,7 +1803,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 9 of 51**
 
-> Mina is thirty-three and has been the class joker at school, at university and in the staff room of the school where she teaches. She mocks herself first and everyone else second, and says sorry when it lands badly. Pupils from three years ago still email her, and the head says that the staff room is a better place with her in it.
+> Mina is thirty-three and has been the class joker at school, in college and in the faculty room of the school where she teaches. She mocks herself first and everyone else second, and says sorry when it lands badly. Pupils from three years ago still email her, and the principal says that the faculty room is a better place with her in it.
 
 **You are asked:** What does the person do, again and again, across those years?
 
@@ -1816,15 +1816,15 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Mina has been the centre of the room for her whole life, and the case shows what that has not cost: “has been the class joker at school, at university and in the staff room” and “says sorry when it lands badly” and “Pupils from three years ago still email her”. She puts it right when it goes wrong, and people stay. This answer leads to **An ordinary personality**.
+- If you are right: “Right: **Stays the same way for years, and it does not keep doing harm.**” Mina has been the center of the room for her whole life, and the case shows what that has not cost: “has been the class joker at school, in college and in the faculty room” and “says sorry when it lands badly” and “Pupils from three years ago still email her”. She puts it right when it goes wrong, and people stay. This answer leads to **An ordinary personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
-  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: She is the centre of the room, which **Histrionic personality** can be too. But nothing in the case shows her displays getting bigger when attention goes elsewhere, and nothing has been lost.
+  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: She is the center of the room, which **Histrionic personality** can be too. But nothing in the case shows her displays getting bigger when attention goes elsewhere, and nothing has been lost.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
 - Taught on: “The question you have been answering all along” (one tap opens the card).
 
 **Drill item 10 of 51**
 
-> Anders is fifty-two and the most talkative man at his golf club, and the one who is always first to the bar with a story. When another member scored a hole in one, Anders stood on a bench and told the clubhouse about the day his father died, until the whole room had turned round and the other member's drink had gone warm. It has been the same at the three clubs he has belonged to. Two have asked him to leave, and no one will sit with him at the dinner.
+> Anders is fifty-two and the most talkative man at his golf club, and the one who is always first to the bar with a story. When another member scored a hole in one, Anders stood on a bench and told the clubhouse about the day his father died, until the whole room had turned around and the other member's drink had gone warm. It has been the same at the three clubs he has belonged to. Two have asked him to leave, and no one will sit with him at the dinner.
 
 **You are asked:** What does the person do, again and again, across those years?
 
@@ -1837,7 +1837,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Keeps the attention on themselves, with bigger displays when it moves away.**” Anders is at the centre of the club, and when another member got the attention his display got bigger: “the most talkative man at his golf club” and “stood on a bench and told the clubhouse about the day his father died” and “Two have asked him to leave”. It has been the same at three clubs, and two have asked him to leave. This answer leads to **Histrionic personality**.
+- If you are right: “Right: **Keeps the attention on themselves, with bigger displays when it moves away.**” Anders is at the center of the club, and when another member got the attention his display got bigger: “the most talkative man at his golf club” and “stood on a bench and told the clubhouse about the day his father died” and “Two have asked him to leave”. It has been the same at three clubs, and two have asked him to leave. This answer leads to **Histrionic personality**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Anders attacks no one and holds on to no one person. The whole room is his audience.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1845,7 +1845,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 11 of 51**
 
-> Sabine is fifty-five. Since her twenties she has said that her husband's family has never valued her, and that everything she gives is taken for granted. When her sister-in-law was thanked at Christmas for the dinner Sabine had cooked, Sabine said, 'I'm glad someone enjoyed it,' and did not speak to her for a year. She has done the same with two neighbours and a cousin, and her husband says he no longer knows whom to invite.
+> Sabine is fifty-five. Since her twenties she has said that her husband's family has never valued her, and that everything she gives is taken for granted. When her sister-in-law was thanked at Christmas for the dinner Sabine had cooked, Sabine said, 'I'm glad someone enjoyed it,' and did not speak to her for a year. She has done the same with two neighbors and a cousin, and her husband says he no longer knows whom to invite.
 
 **You are asked:** What does the person do, again and again, across those years?
 
@@ -1858,7 +1858,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.**” Sabine says she is overlooked and owed more, and when someone else was thanked she went cold: “everything she gives is taken for granted” and “did not speak to her for a year” and “her husband says he no longer knows whom to invite”. She has done it with relatives and neighbours for thirty years, and it has cost her a good deal of company. This answer leads to **Vulnerable narcissism**.
+- If you are right: “Right: **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.**” Sabine says she is overlooked and owed more, and when someone else was thanked she went cold: “everything she gives is taken for granted” and “did not speak to her for a year” and “her husband says he no longer knows whom to invite”. She has done it with relatives and neighbors for thirty years, and it has cost her a good deal of company. This answer leads to **Vulnerable narcissism**.
 - If you miss: “The answer is …”, the same reason, and then a line about the answer you chose:
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Sabine does not reach for anyone, and she does not swing between adoring them and attacking them. She withdraws, and she stays cold.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
@@ -1923,7 +1923,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- The answer is: “When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?” Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay.
+- The answer is: “When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?” Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbors stay.
 - If you chose “When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?”: that question separates **Grandiose narcissism** and **An ordinary personality**.
 - If you chose “Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?”: that question separates **Vulnerable narcissism** and **An ordinary personality**.
 - If you chose “Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?”: that question separates **Borderline personality** and **Histrionic personality**.
@@ -1937,13 +1937,13 @@ Shown to you, with the words that decide each answer marked:
 
 - When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
 - Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-- When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+- When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
 - When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?
 - Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
 
 **Shown as soon as you answer**
 
-- The answer is: “When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?” Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again.
+- The answer is: “When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?” Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again.
 - If you chose “When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?”: that question separates **Grandiose narcissism** and **Vulnerable narcissism**.
 - If you chose “Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?”: that question separates **Vulnerable narcissism** and **An ordinary personality**.
 - If you chose “When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?”: that question separates **Grandiose narcissism** and **Borderline personality**.
@@ -1954,7 +1954,7 @@ Shown to you, with the words that decide each answer marked:
 
 **You are asked:** You cannot decide whether a case is **Borderline personality** or **Histrionic personality**. Which question do you put to the case?
 
-- When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+- When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
 - When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?
 - Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
 - When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
@@ -1963,7 +1963,7 @@ Shown to you, with the words that decide each answer marked:
 **Shown as soon as you answer**
 
 - The answer is: “Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?” Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else.
-- If you chose “When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?”: that question separates **Vulnerable narcissism** and **Borderline personality**.
+- If you chose “When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?”: that question separates **Vulnerable narcissism** and **Borderline personality**.
 - If you chose “When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?”: that question separates **Grandiose narcissism** and **Borderline personality**.
 - If you chose “When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?”: that question separates **Grandiose narcissism** and **Histrionic personality**.
 - If you chose “When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?”: that question separates **Histrionic personality** and **An ordinary personality**.
@@ -1997,7 +1997,7 @@ Shown to you, with the words that decide each answer marked:
 - When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
 - When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
 - Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
-- When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+- When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
 - When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?
 - When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
 - Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?
@@ -2007,7 +2007,7 @@ Shown to you, with the words that decide each answer marked:
 - The answer is: “When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?” Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment.
 - If you chose “When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?”: that question separates **Grandiose narcissism** and **An ordinary personality**.
 - If you chose “Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?”: that question separates **Vulnerable narcissism** and **An ordinary personality**.
-- If you chose “When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?”: that question separates **Vulnerable narcissism** and **Borderline personality**.
+- If you chose “When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?”: that question separates **Vulnerable narcissism** and **Borderline personality**.
 - If you chose “When someone close seems about to leave, does this person run them down and let them go? Or hold on, attack, and hold on again?”: that question separates **Grandiose narcissism** and **Borderline personality**.
 - If you chose “When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?”: that question separates **Grandiose narcissism** and **Histrionic personality**.
 - If you chose “Does the case show rules broken and people lied to and used, with no regret for the harm? Or does it show only acting above others, with anger or scorn when they are not treated as special?”: that question separates **Grandiose narcissism** and **Antisocial personality**.
@@ -2068,16 +2068,16 @@ Shown to you, with the words that decide each answer marked:
 
 **You are asked:** This is **Histrionic personality**. Which detail would you expect to find in the case?
 
-- She pleaded with her flatmate not to leave, and then called her a fake.
+- She pleaded with her roommate not to leave, and then called her a fake.
 - When a colleague was applauded, she told a longer and more tearful story until the room turned back to her.
-- The same friends and neighbours have come to his parties for forty years.
+- The same friends and neighbors have come to his parties for forty years.
 - He took deposits for work he never did, and shrugged when a customer cried.
 
 **Shown as soon as you answer**
 
 - The answer is: When a colleague was applauded, she told a longer and more tearful story until the room turned back to her. That detail is the display getting bigger at the moment the attention goes to someone else.
-- If you chose “She pleaded with her flatmate not to leave, and then called her a fake.”: that belongs to **Borderline personality**.
-- If you chose “The same friends and neighbours have come to his parties for forty years.”: that belongs to **An ordinary personality**.
+- If you chose “She pleaded with her roommate not to leave, and then called her a fake.”: that belongs to **Borderline personality**.
+- If you chose “The same friends and neighbors have come to his parties for forty years.”: that belongs to **An ordinary personality**.
 - If you chose “He took deposits for work he never did, and shrugged when a customer cried.”: that belongs to **Antisocial personality**.
 - Taught on: “Histrionic personality: what it is like” (one tap opens the card).
 
@@ -2119,7 +2119,7 @@ Shown to you, with the words that decide each answer marked:
 
 *(Drawn by the app from the bank of Unit One: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*
 
-> Four years into a law degree she dislikes, Anneke has decided to finish it. 'I've put four years into this,' she tells her tutor. 'I can't switch now.'
+> Four years into a law degree she dislikes, Anneke has decided to finish it. 'I've put four years into this,' she tells her advisor. 'I can't switch now.'
 
 **You are asked:** What kind of thing is this?
 
@@ -2130,7 +2130,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The tutor only listens, and nothing is said about the tutor.
+- If you are right: “Right: **One person’s reasoning.**” One person is giving her reason for a choice of her own: “I've put four years into this” and “I can't switch now”. The advisor only listens, and nothing is said about the advisor.
 - If you miss: “The answer is …”, the same reason, and then the line built from the answers’ own wording for the answer you chose.
 - Then, right or wrong: “The questions that follow this answer come in a part of the course you have not reached yet, so this case stops here.”
 
@@ -2140,7 +2140,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 26 of 51**
 
-> Clive is fifty. ⟦Since school⟧ he has said that people in authority always favoured someone else. ⟦In his four jobs⟧ he has stopped speaking to every colleague who was promoted over him, and when his own manager praised a newcomer he took three weeks of sick leave. His wife says that he keeps a ledger in his head of what each person owes him, and his brothers say that he has not come to a family birthday in nine years.
+> Clive is fifty. ⟦Since school⟧ he has said that people in authority always favored someone else. ⟦In his four jobs⟧ he has stopped speaking to every colleague who was promoted over him, and when his own manager praised a newcomer he took three weeks of sick leave. His wife says that he keeps a ledger in his head of what each person owes him, and his brothers say that he has not come to a family birthday in nine years.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -2149,7 +2149,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Clive says he is overlooked and owed more, and when others are promoted or praised he goes silent and keeps count: “people in authority always favoured someone else” and “stopped speaking to every colleague who was promoted over him” and “has not come to a family birthday in nine years”. It has cost him contact with his own brothers.
+- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Clive says he is overlooked and owed more, and when others are promoted or praised he goes silent and keeps count: “people in authority always favored someone else” and “stopped speaking to every colleague who was promoted over him” and “has not come to a family birthday in nine years”. It has cost him contact with his own brothers.
   - Why not **Grandiose narcissism**: Clive does not run anyone down or turn scornful. He stops speaking, and he keeps count.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: Clive does not run anyone down or turn scornful. He stops speaking, and he keeps count.
@@ -2161,7 +2161,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 27 of 51**
 
-> Pilar is forty-eight and has been exactly as anxious as she is now ⟦since she was a child⟧: she checks the oven three times, rings to make sure everyone arrived, and cannot go to bed until the door is locked. Her family, ⟦her colleagues at the library and her friends of twenty years⟧ all know it, laugh about it and say it is just Pilar. She is trusted with the keys at work, and she has never lost a job or a friend over it.
+> Pilar is forty-eight and has been exactly as anxious as she is now ⟦since she was a child⟧: she checks the oven three times, calls to make sure everyone arrived, and cannot go to bed until the door is locked. Her family, ⟦her colleagues at the library and her friends of twenty years⟧ all know it, laugh about it and say it is just Pilar. She is trusted with the keys at work, and she has never lost a job or a friend over it.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -2170,7 +2170,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Pilar has been a worrier for her whole life, and what the case shows is what that has not cost: “she checks the oven three times, rings to make sure everyone arrived” and “say it is just Pilar” and “she has never lost a job or a friend over it”. People smile and stay, and nothing is lost.
+- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Pilar has been a worrier for her whole life, and what the case shows is what that has not cost: “she checks the oven three times, calls to make sure everyone arrived” and “say it is just Pilar” and “she has never lost a job or a friend over it”. People smile and stay, and nothing is lost.
   - Why not **Vulnerable narcissism**: Pilar’s worry can look like a person who is hurt and withdraws. But she keeps no count of what she is owed, nobody is cut off, and nothing has been lost.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Pilar’s worry can look like a person who is hurt and withdraws. But she keeps no count of what she is owed, nobody is cut off, and nothing has been lost.
@@ -2182,7 +2182,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 28 of 51**
 
-> Kevin is thirty-one. ⟦In every friendship and relationship since his teens⟧ he has become frantic when someone close was about to go away. When his girlfriend booked a trip with her sister he turned up at her work four times in one day and begged her to stay, then told her she had 'always been a liar' and deleted her number. By evening he was at her door with flowers. He has lost two flats, a girlfriend and three friends this way.
+> Kevin is thirty-one. ⟦In every friendship and relationship since his teens⟧ he has become frantic when someone close was about to go away. When his girlfriend booked a trip with her sister he turned up at her work four times in one day and begged her to stay, then told her she had 'always been a liar' and deleted her number. By evening he was at her door with flowers. He has lost two apartments, a girlfriend and three friends this way.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -2191,7 +2191,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When someone close seemed about to go, Kevin held on hard, then turned on her, then held on again: “turned up at her work four times in one day and begged her to stay” and “always been a liar” and “He has lost two flats, a girlfriend and three friends this way”. It has cost him friends, a girlfriend and two flats.
+- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When someone close seemed about to go, Kevin held on hard, then turned on her, then held on again: “turned up at her work four times in one day and begged her to stay” and “always been a liar” and “He has lost two apartments, a girlfriend and three friends this way”. It has cost him friends, a girlfriend and two apartments.
   - Why not **Histrionic personality**: Kevin’s display is aimed at one person who is going, and it turns into an attack on her. It is not put on for an audience.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Kevin’s display is aimed at one person who is going, and it turns into an attack on her. It is not put on for an audience.
@@ -2203,7 +2203,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Drill item 29 of 51**
 
-> Doreen is sixty-one and has led the church flower rota ⟦for twenty-five years⟧. At every service she arrives last in a new hat and waits in the doorway. When the vicar thanked the choir, Doreen swayed, said she felt faint and had to be helped to a pew, where she stayed until the whole congregation had been to ask after her. The vicar's wife says she has done it ⟦with every vicar⟧, and two flower arrangers have left the rota.
+> Doreen is sixty-one and has led the church flower guild ⟦for twenty-five years⟧. At every service she arrives last in a new hat and waits in the doorway. When the pastor thanked the choir, Doreen swayed, said she felt faint and had to be helped to a pew, where she stayed until the whole congregation had been to ask after her. The pastor's wife says she has done it ⟦with every pastor⟧, and two flower arrangers have left the guild.
 
 Shown to you, with the words that decide each answer marked:
 - What kind of thing is this? **A lasting way someone is**
@@ -2212,7 +2212,7 @@ Shown to you, with the words that decide each answer marked:
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Doreen puts herself at the centre, and when the vicar thanked the choir her display got bigger: “arrives last in a new hat and waits in the doorway” and “said she felt faint and had to be helped to a pew” and “two flower arrangers have left the rota”. It has cost the rota two arrangers.
+- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Doreen puts herself at the center, and when the pastor thanked the choir her display got bigger: “arrives last in a new hat and waits in the doorway” and “said she felt faint and had to be helped to a pew” and “two flower arrangers have left the guild”. It has cost the guild two arrangers.
   - Why not **Borderline personality**: Doreen’s display is for the whole congregation. There is no one person she holds on to, and she attacks nobody.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Doreen’s display is for the whole congregation. There is no one person she holds on to, and she attacks nobody.
@@ -2220,7 +2220,7 @@ Shown to you, with the words that decide each answer marked:
   - If you chose **Borderline personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 #### Stage 4 of 5. No help. Answer every question in order, then give the name.
 
@@ -2228,16 +2228,16 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 30 of 51**
 
-> Maurice is fifty-five and has run three departments in a council. He tells every new recruit that he is the cleverest person in the building, and every secretary he has had has been told, in front of others, that she is 'not paid to think'. When an auditor found an error in his figures, he called her 'a clerk who wants to be noticed' and wrote to her employer. Staff turnover in his departments is three times the council average, and his two grown sons never ring him.
+> Maurice is fifty-five and has run three departments in a city government. He tells every new recruit that he is the cleverest person in the building, and every secretary he has had has been told, in front of others, that she is 'not paid to think'. When an auditor found an error in his figures, he called her 'a clerk who wants to be noticed' and wrote to her employer. Staff turnover in his departments is three times the citywide average, and his two grown sons never call him.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Maurice acts as if he is the cleverest person present, and when his figures were questioned he turned on the person who found the error: “he is the cleverest person in the building” and “a clerk who wants to be noticed” and “Staff turnover in his departments is three times the council average”. It has cost him his staff.
+- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Maurice acts as if he is the cleverest person present, and when his figures were questioned he turned on the person who found the error: “he is the cleverest person in the building” and “a clerk who wants to be noticed” and “Staff turnover in his departments is three times the citywide average”. It has cost him his staff.
   - Why not **An ordinary personality**: A confident, certain manager can be **An ordinary personality**. But Maurice turns scornful when he is corrected, and people keep leaving.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case follows one person through years, several workplaces and a family: “has run three departments in a council” and “his two grown sons never ring him”.
+  - What kind of thing is this? **A lasting way someone is.** The case follows one person through years, several workplaces and a family: “has run three departments in a city government” and “his two grown sons never call him”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A confident, certain manager can be **An ordinary personality**. But Maurice turns scornful when he is corrected, and people keep leaving.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
@@ -2247,7 +2247,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 31 of 51**
 
-> Beatrix is forty-four and has sung in a church choir for twenty years. She says that the soloists are chosen by favour and that no one has ever noticed her voice. When a younger singer was given the solo for the carol service, Beatrix stopped speaking to her and then to the sopranos' section, and has not come to the choir party for four years. She has left two choirs in the same way, and her sister says she is hard to ring because she keeps a list of who forgot her birthday.
+> Beatrix is forty-four and has sung in a church choir for twenty years. She says that the soloists are chosen by favor and that no one has ever noticed her voice. When a younger singer was given the solo for the carol service, Beatrix stopped speaking to her and then to the sopranos' section, and has not come to the choir party for four years. She has left two choirs in the same way, and her sister says she is hard to call because she keeps a list of who forgot her birthday.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2266,19 +2266,19 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 32 of 51**
 
-> Lucia is thirty. Since her teens each close relationship has followed the same course. She is devoted from the first week, rings her partner ten times a day, and when he mentions a night out with friends she says she will not survive it. If he goes she throws his things out of the window, and in the morning she begs him to forgive her. Her last four partners have all left, and her sister has asked her not to ring at night.
+> Lucia is thirty. Since her teens each close relationship has followed the same course. She is devoted from the first week, calls her partner ten times a day, and when he mentions a night out with friends she says she will not survive it. If he goes she throws his things out of the window, and in the morning she begs him to forgive her. Her last four partners have all left, and her sister has asked her not to call at night.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** Lucia holds on to her partner hard, and when he seems to be going she attacks and then pleads: “rings her partner ten times a day” and “throws his things out of the window” and “Her last four partners have all left”. It has cost her four partners.
+- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** Lucia holds on to her partner hard, and when he seems to be going she attacks and then pleads: “calls her partner ten times a day” and “throws his things out of the window” and “Her last four partners have all left”. It has cost her four partners.
   - Why not **Vulnerable narcissism**: Lucia does not pull away and keep count. She holds on, attacks, and begs.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers many years and every close relationship: “Since her teens each close relationship has followed the same course”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Lucia does not pull away and keep count. She holds on, attacks, and begs.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
@@ -2291,7 +2291,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Raymond puts himself at the centre, and when a colleague was honoured his display got bigger: “tells the story of his life to anyone who stays still” and “staged a fainting fit by the coffee machine” and “his colleagues eat lunch in their cars”. It has cost him three warnings and his colleagues’ company.
+- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Raymond puts himself at the center, and when a colleague was honored his display got bigger: “tells the story of his life to anyone who stays still” and “staged a fainting fit by the coffee machine” and “his colleagues eat lunch in their cars”. It has cost him three warnings and his colleagues’ company.
   - Why not **Grandiose narcissism**: Raymond does not run the colleague down. He takes the attention back with a bigger display.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four workplaces and many colleagues: “has been the entertainer of every showroom he has worked in” and “He has done it in four showrooms”.
@@ -2300,11 +2300,11 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both want the room’s attention, and both take it over in every group. In **Grandiose narcissism** the person wants to be treated as better than others, and runs down whoever else is praised. In **Histrionic personality** the person wants any attention at all, and answers attention going elsewhere with a bigger display, not with scorn. When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Drill item 34 of 51**
 
-> Tessa is forty and a financial adviser. At twenty-three she put clients' savings into funds that paid her the highest commission, and she has done the same in three firms. When a widow rang to say her savings had halved, Tessa said, 'Markets go down. I told you there was risk.' She has left two firms before the complaints were heard, and eleven clients have lost money.
+> Tessa is forty and a financial advisor. At twenty-three she put clients' savings into funds that paid her the highest commission, and she has done the same in three firms. When a widow called to say her savings had halved, Tessa said, 'Markets go down. I told you there was risk.' She has left two firms before the complaints were heard, and eleven clients have lost money.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2323,32 +2323,32 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 35 of 51**
 
-> Gabe is sixty-six and has been the loudest laugher in every pub, club and street he has lived on. He is forever teasing, tells the same three jokes and will argue with anyone about football. Forty years of neighbours still come to his barbecue, he has been secretary of the bowls club for twenty, and when he upsets someone he rings that evening to put it right.
+> Gabe is sixty-six and has been the loudest laugher in every bar, club and street he has lived on. He is forever teasing, tells the same three jokes and will argue with anyone about soccer. Forty years of neighbors still come to his barbecue, he has been secretary of the bocce club for twenty, and when he upsets someone he calls that evening to put it right.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Gabe has been loud, teasing and argumentative for forty years, and what the case shows is what it has not cost: “the loudest laugher” and “will argue with anyone about football” and “rings that evening to put it right”. He puts it right, and the neighbours stay.
-  - Why not **Histrionic personality**: He is the centre of every group, which **Histrionic personality** can be too. But nothing gets bigger when attention goes elsewhere, and nothing has been lost.
+- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Gabe has been loud, teasing and argumentative for forty years, and what the case shows is what it has not cost: “the loudest laugher” and “will argue with anyone about soccer” and “calls that evening to put it right”. He puts it right, and the neighbors stay.
+  - Why not **Histrionic personality**: He is the center of every group, which **Histrionic personality** can be too. But nothing gets bigger when attention goes elsewhere, and nothing has been lost.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers forty years and several places and groups of people: “in every pub, club and street he has lived on” and “Forty years of neighbours”.
-  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: He is the centre of every group, which **Histrionic personality** can be too. But nothing gets bigger when attention goes elsewhere, and nothing has been lost.
+  - What kind of thing is this? **A lasting way someone is.** The case covers forty years and several places and groups of people: “in every bar, club and street he has lived on” and “Forty years of neighbors”.
+  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: He is the center of every group, which **Histrionic personality** can be too. But nothing gets bigger when attention goes elsewhere, and nothing has been lost.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Histrionic personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
+  - If you chose **Histrionic personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbors stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “A way of being that stays the same, and does not keep doing harm” (one tap opens the card).
 
 **Drill item 36 of 51**
 
-> Wendy is fifty-two and owns three shops. She tells her managers that without her they would all be shop assistants, and has not once thanked any of them. When one manager asked for a day to see his son in the school play, Wendy said he was 'a man who would rather play at being a father', and took him off the rota for a month. She has done this in each of her three businesses. Her longest-serving manager has stayed seven months.
+> Wendy is fifty-two and owns three stores. She tells her managers that without her they would all be store clerks, and has not once thanked any of them. When one manager asked for a day to see his son in the school play, Wendy said he was 'a man who would rather play at being a father', and took him off the schedule for a month. She has done this in each of her three businesses. Her longest-serving manager has stayed seven months.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Wendy treats her managers as people who owe everything to her, and when one asked for a day off she answered with scorn: “without her they would all be shop assistants” and “a man who would rather play at being a father” and “Her longest-serving manager has stayed seven months”. It has cost her every manager.
+- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Wendy treats her managers as people who owe everything to her, and when one asked for a day off she answered with scorn: “without her they would all be store clerks” and “a man who would rather play at being a father” and “Her longest-serving manager has stayed seven months”. It has cost her every manager.
   - Why not **Antisocial personality**: Wendy breaks no rule and uses no one for money she is not owed. What drives the case is her need to be above the people who work for her.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers three businesses and years of managers: “She has done this in each of her three businesses”.
@@ -2361,13 +2361,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 37 of 51**
 
-> Floyd is thirty-six and runs a driving school. For years he has taken lesson fees in cash from learners he never teaches. At nineteen he took his sister's savings 'to invest' and spent them. When a learner demanded her refund he said, 'Take it up with the weather,' and shut the office. He has opened the same school under four names in three towns, and thirty learners have lost their money.
+> Floyd is thirty-six and runs a driving school. For years he has taken lesson fees in cash from students he never teaches. At nineteen he took his sister's savings 'to invest' and spent them. When a student demanded her refund he said, 'Take it up with the weather,' and shut the office. He has opened the same school under four names in three towns, and thirty students have lost their money.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Floyd takes money for lessons he does not give, and when a learner asked for her refund he showed no regret: “taken lesson fees in cash from learners he never teaches” and “Take it up with the weather” and “thirty learners have lost their money”. Thirty learners have lost money.
+- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Floyd takes money for lessons he does not give, and when a student asked for her refund he showed no regret: “taken lesson fees in cash from students he never teaches” and “Take it up with the weather” and “thirty students have lost their money”. Thirty students have lost money.
   - Why not **Grandiose narcissism**: Floyd does not need to be treated as special and does not turn scornful when he is not. What drives it is taking the money.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers seventeen years, several towns and a family: “At nineteen” and “under four names in three towns”.
@@ -2380,13 +2380,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 38 of 51**
 
-> Hattie is seventy and has been blunt all her life: she told her husband at their wedding that the cake was dry, tells her grandchildren exactly what she thinks of their haircuts, and told her vicar that his sermon was too long. Her family laughs and says that's Hattie. They still have Sunday lunch at her house every week, her oldest friend of fifty-eight years rings her daily, and the vicar asked her to read at his own farewell.
+> Hattie is seventy and has been blunt all her life: she told her husband at their wedding that the cake was dry, tells her grandchildren exactly what she thinks of their haircuts, and told her pastor that his sermon was too long. Her family laughs and says that's Hattie. They still have Sunday lunch at her house every week, her oldest friend of fifty-eight years calls her daily, and the pastor asked her to read at his own farewell.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Hattie has been blunt for seventy years, and what the case shows is what that has not cost: “told her husband at their wedding that the cake was dry” and “Her family laughs and says that's Hattie” and “the vicar asked her to read at his own farewell”. The people she is blunt with keep coming back.
+- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Hattie has been blunt for seventy years, and what the case shows is what that has not cost: “told her husband at their wedding that the cake was dry” and “Her family laughs and says that's Hattie” and “the pastor asked her to read at his own farewell”. The people she is blunt with keep coming back.
   - Why not **Grandiose narcissism**: Hattie says hard things, and so does **Grandiose narcissism**. But she does not turn scornful when someone else is praised, and nobody has been driven away.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers a whole life and many relationships: “has been blunt all her life” and “her oldest friend of fifty-eight years”.
@@ -2399,7 +2399,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 39 of 51**
 
-> Colette is thirty-nine and takes the stage at every party. At her husband's fortieth she read him a poem that had not been asked for, and when his mother was toasted she burst into tears about her own mother, until the toast was over. She was the same at her hen night and at three of her friends' weddings. Four friends now invite her only to things with no speeches.
+> Colette is thirty-nine and takes the stage at every party. At her husband's fortieth she read him a poem that had not been asked for, and when his mother was toasted she burst into tears about her own mother, until the toast was over. She was the same at her bachelorette party and at three of her friends' weddings. Four friends now invite her only to things with no speeches.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2408,29 +2408,29 @@ Each question is shown with all of its answers, in order, and the names offered 
 - If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Colette takes the stage, and when someone else was toasted her display got bigger: “read him a poem that had not been asked for” and “burst into tears about her own mother, until the toast was over” and “Four friends now invite her only to things with no speeches”. It has cost her the invitations of four friends.
   - Why not **An ordinary personality**: A dramatic person can be **An ordinary personality**. But Colette’s display grows when attention goes elsewhere, and four friends have drawn back.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers years and many occasions with many people: “She was the same at her hen night and at three of her friends' weddings”.
+  - What kind of thing is this? **A lasting way someone is.** The case covers years and many occasions with many people: “She was the same at her bachelorette party and at three of her friends' weddings”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A dramatic person can be **An ordinary personality**. But Colette’s display grows when attention goes elsewhere, and four friends have drawn back.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
+  - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbors stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Drill item 40 of 51**
 
-> Rhys is fifty-seven. For thirty years he has told his wife that his talents were wasted at the garage and that his brother-in-law got everything handed to him. When his brother-in-law bought the unit next door, Rhys stayed away from the family Christmas for six years and told his wife she should have married someone who noticed her. His wife says that she cannot mention anyone else's good news at home, and both his sons have gone to other cities.
+> Rhys is fifty-seven. For thirty years he has told his wife that his talents were wasted at the auto shop and that his brother-in-law got everything handed to him. When his brother-in-law bought the unit next door, Rhys stayed away from the family Christmas for six years and told his wife she should have married someone who noticed her. His wife says that she cannot mention anyone else's good news at home, and both his sons have gone to other cities.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Rhys says he has been overlooked and owed more, and when his brother-in-law did well he withdrew for years: “his talents were wasted at the garage and that his brother-in-law got everything handed to him” and “stayed away from the family Christmas for six years” and “she cannot mention anyone else's good news at home”. His wife cannot share good news at home.
+- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Rhys says he has been overlooked and owed more, and when his brother-in-law did well he withdrew for years: “his talents were wasted at the auto shop and that his brother-in-law got everything handed to him” and “stayed away from the family Christmas for six years” and “she cannot mention anyone else's good news at home”. His wife cannot share good news at home.
   - Why not **Borderline personality**: Rhys does not reach for anyone or swing between adoring and attacking. He pulls away and resents.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers thirty years and a whole family: “For thirty years” and “both his sons have gone to other cities”.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Rhys does not reach for anyone or swing between adoring and attacking. He pulls away and resents.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Borderline personality**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Borderline personality**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
@@ -2449,14 +2449,14 @@ Each question is shown with all of its answers, in order, and the names offered 
   - What kind of thing is this? **A lasting way someone is.** The case covers many years, colleagues and partners: “She has done this with five colleagues and four partners”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Maeve does not pull away and keep count. She reaches for her colleague, attacks her, and reaches for her again.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Drill item 42 of 51**
 
-> Ioan is fifty-four and a senior partner at an accountancy firm. He has the corner room, sits at the head of every table and opens meetings with the story of how he built the firm; his juniors have counted that he tells it eleven times a year. When a trainee won a major client, Ioan bought the team lunch and put her name on the door. His juniors stay for ten years or more, his son works in the firm, and his wife says that in thirty years he has never missed asking about her day.
+> Ioan is fifty-four and a senior partner at an accounting firm. He has the corner room, sits at the head of every table and opens meetings with the story of how he built the firm; his juniors have counted that he tells it eleven times a year. When a trainee won a major client, Ioan bought the team lunch and put her name on the door. His juniors stay for ten years or more, his son works in the firm, and his wife says that in thirty years he has never missed asking about her day.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2476,13 +2476,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 **Drill item 43 of 51**
 
-> Priya is forty-eight and a head teacher, loved by parents and charming in staff meetings. She tells every governor that the school would collapse without her, and has never praised a teacher in public. When a deputy was shortlisted for a headship, Priya told the governors in private that she was 'a competent clerk with ideas above her place', and gave her the worst timetable. In four schools, six deputies have left within two years, and two of them have left teaching.
+> Priya is forty-eight and a principal, loved by parents and charming in staff meetings. She tells every school board member that the school would collapse without her, and has never praised a teacher in public. When an assistant principal was shortlisted for the principal job, Priya told the school board in private that she was 'a competent clerk with ideas above her place', and gave her the worst schedule. In four schools, six assistant principals have left within two years, and two of them have left teaching.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Priya is charming in public, but the words that decide it are “the school would collapse without her” and “a competent clerk with ideas above her place” and “six deputies have left within two years”. When a deputy rose she turned scornful in private, and it has cost her six deputies.
+- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Priya is charming in public, but the words that decide it are “the school would collapse without her” and “a competent clerk with ideas above her place” and “six assistant principals have left within two years”. When a deputy rose she turned scornful in private, and it has cost her six assistant principals.
   - Why not **An ordinary personality**: Priya is charming and well liked, which **An ordinary personality** can be. But she runs down anyone who is praised, and people keep leaving.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four schools and years of deputies: “In four schools”.
@@ -2510,24 +2510,24 @@ Each question is shown with all of its answers, in order, and the names offered 
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- This case may have brought back *The guest who is always at the centre*, which was **Histrionic personality**. When a likeness and the answers disagree, go by the words that answer the question.
+- This case may have brought back *The guest who is always at the center*, which was **Histrionic personality**. When a likeness and the answers disagree, go by the words that answer the question.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
 
 **Drill item 45 of 51**
 
-> Odile is forty-two and appears calm and steady: a quiet accountant who never raises her voice. But whenever a close friend mentions going away she writes long messages, and when the friend does not answer within the hour she posts that the friend has 'abandoned' her, deletes the post, and phones until she picks up. It has happened with every friend since university. Six friends no longer answer her.
+> Odile is forty-two and appears calm and steady: a quiet accountant who never raises her voice. But whenever a close friend mentions going away she writes long messages, and when the friend does not answer within the hour she posts that the friend has 'abandoned' her, deletes the post, and calls until she picks up. It has happened with every friend since college. Six friends no longer answer her.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** Odile is quiet, which can look like **Vulnerable narcissism**. But the words that decide it are “writes long messages” and “phones until she picks up” and “Six friends no longer answer her”: she reaches for the friend who seems to be going, attacks her, and reaches for her again.
+- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** Odile is quiet, which can look like **Vulnerable narcissism**. But the words that decide it are “writes long messages” and “calls until she picks up” and “Six friends no longer answer her”: she reaches for the friend who seems to be going, attacks her, and reaches for her again.
   - Why not **Vulnerable narcissism**: Odile is quiet, like Ellis. But she does not pull away and keep count: she holds on, and she goes after the friend.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers years and every close friend: “with every friend since university”.
+  - What kind of thing is this? **A lasting way someone is.** The case covers years and every close friend: “with every friend since college”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Odile is quiet, like Ellis. But she does not pull away and keep count: she holds on, and she goes after the friend.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - This case may have brought back *The clerk*, which was **Vulnerable narcissism**. When a likeness and the answers disagree, go by the words that answer the question.
@@ -2565,7 +2565,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them
-- Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
+- Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
 - Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it
 - Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them
 
@@ -2582,7 +2582,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them
-- Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
+- Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
 - Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it
 - Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them
 
@@ -2622,7 +2622,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them
-- Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
+- Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
 - Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it
 - Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them
 
@@ -2642,13 +2642,13 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them
-- Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
+- Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
 - Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it
 - Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them
 
 **Shown as soon as you answer**
 
-- The answer is: **Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them.**
+- The answer is: **Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them.**
 - If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”
 - The fault: The claim shows a way of being: loud and dramatic, and the same everywhere. It does not show a bigger display when attention goes to someone else, and it shows no cost: her friends love her for it. Being dramatic is not enough.
 - The claim, put right (always the last thing shown): She is the loudest and most dramatic person at every party, and her friends love her for it. That is a way of being, and by itself it is **An ordinary personality**. It would be **Histrionic personality** only if her displays grew when attention went elsewhere, and it kept costing her friends and places.
@@ -2662,7 +2662,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 - Years, more than one place and relationship, the person acting as if they are better than others and owed special treatment, little interest in what others feel, anger or scorn when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, the person saying they are overlooked and owed more than they get, little interest in what others feel, hurt withdrawal or quiet resentment when they are not treated as special, and a cost to them or to people around them
 - Years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them
-- Years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
+- Years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them
 - Years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it
 - Years, more than one place and relationship, the same way of being in all of them (confident, shy, dramatic, blunt, touchy), and no repeated cost to the person or to the people around them
 
@@ -2677,7 +2677,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 45. What to carry away
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 45 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 45 of 46*
 
 [reviewers only: card kind `recap`, id `recap-pat`]
 
@@ -2701,7 +2701,7 @@ What does the person do, again and again, across those years?
   - Ask: "What is this person counting, and who has stopped hearing from them because of it?"
 - **Borderline personality**: years, more than one place and relationship, desperate efforts to keep people close, a swing from adoring someone to attacking them when they seem about to leave or pull away, and a cost to them or to people around them.
   - Ask: "What happens, again and again, when someone close seems about to leave, and what has it cost?"
-- **Histrionic personality**: years, more than one place and relationship, the person putting themselves at the centre of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them.
+- **Histrionic personality**: years, more than one place and relationship, the person putting themselves at the center of attention, bigger and bigger displays when attention moves to someone else, and a cost to them or to people around them.
   - Ask: "What does this person do when the attention goes to someone else, and what has it cost them over the years?"
 - **Antisocial personality**: years, more than one place and relationship, rules broken and people lied to or used for the person’s own ends, no regret shown for the harm, and people hurt by it.
   - Ask: "Have I seen this person break rules and lie to people again and again, and show no regret for the harm to the ones who lost out?"
@@ -2718,7 +2718,7 @@ What does the person do, again and again, across those years?
 
 ### 46. Where would you meet this?
 
-*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 46 of 46*
+*Unit Four · rev 3 · Draft: not yet read by a newcomer · Part 6 of 6 · Card 46 of 46*
 
 [reviewers only: card kind `transfer`, id `transfer-pat`]
 
@@ -2751,7 +2751,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 1 of 18**
 
-> Professor Vale is sixty and has headed his department for twenty years. He tells every doctoral student that he has forgotten more than they will ever know. When a student's paper was accepted by a better journal than his own, he told the faculty it was 'a lucky draw from an easy pile' and took her out of his seminar. Eleven students have left his group, and two former colleagues will not share a conference platform with him.
+> Professor Vale is sixty and has headed his department for twenty years. He tells every graduate student that he has forgotten more than they will ever know. When a student's paper was accepted by a better journal than his own, he told the faculty it was 'a lucky draw from an easy pile' and took her out of his seminar. Eleven students have left his group, and two former colleagues will not share a conference stage with him.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2760,7 +2760,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** The professor acts as if his students owe their minds to him, and when one did better than he did he answered with scorn: “he has forgotten more than they will ever know” and “a lucky draw from an easy pile” and “Eleven students have left his group”. It has cost him eleven students.
   - Why not **An ordinary personality**: A learned, confident professor can be **An ordinary personality**. But this one turns scornful when a student does well, and eleven students have gone.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case follows one person through twenty years, a department and former colleagues: “has headed his department for twenty years” and “two former colleagues will not share a conference platform with him”.
+  - What kind of thing is this? **A lasting way someone is.** The case follows one person through twenty years, a department and former colleagues: “has headed his department for twenty years” and “two former colleagues will not share a conference stage with him”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A learned, confident professor can be **An ordinary personality**. But this one turns scornful when a student does well, and eleven students have gone.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
@@ -2770,17 +2770,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 2 of 18**
 
-> Councillor Maud has chaired the parish council for eighteen years, and has been heard to say that the village would be a ditch without her. When a residents' petition won the vote, she called its organiser 'a busybody with a clipboard' in the local paper and struck him off the hall booking list. She has done the same to three earlier residents' groups, and the parish clerk has resigned twice.
+> Councilwoman Maud has chaired the town council for eighteen years, and has been heard to say that the village would be a ditch without her. When a residents' petition won the vote, she called its organizer 'a busybody with a clipboard' in the local paper and struck him off the hall booking list. She has done the same to three earlier residents' groups, and the town clerk has resigned twice.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Councillor Maud acts as if the village depends on her alone, and when a vote went against her she turned scornful: “the village would be a ditch without her” and “a busybody with a clipboard” and “the parish clerk has resigned twice”. It has cost her two clerks.
-  - Why not **Vulnerable narcissism**: She does not go quiet and hurt. She attacks the organiser, in public, in print.
+- If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Councilwoman Maud acts as if the village depends on her alone, and when a vote went against her she turned scornful: “the village would be a ditch without her” and “a busybody with a clipboard” and “the town clerk has resigned twice”. It has cost her two clerks.
+  - Why not **Vulnerable narcissism**: She does not go quiet and hurt. She attacks the organizer, in public, in print.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers eighteen years and four groups of residents: “has chaired the parish council for eighteen years” and “three earlier residents' groups”.
-  - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: She does not go quiet and hurt. She attacks the organiser, in public, in print.
+  - What kind of thing is this? **A lasting way someone is.** The case covers eighteen years and four groups of residents: “has chaired the town council for eighteen years” and “three earlier residents' groups”.
+  - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: She does not go quiet and hurt. She attacks the organizer, in public, in print.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both rest on a sense of worth that depends on being treated as special, and in both there is little room for what other people feel. **Grandiose narcissism** defends that sense of worth outward, with anger and scorn at whoever fails to treat the person as special. **Vulnerable narcissism** defends it inward, with hurt withdrawal and quiet resentment. When this person is not treated as special, which way does it go? Outward, at someone, with anger or scorn? Or inward, in hurt silence and a count of what they are owed?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2789,7 +2789,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 3 of 18**
 
-> Gordon is sixty-two and has run the family building firm for thirty years. He tells his foremen that the firm is him and nobody else. When his nephew won a contract the firm had been chasing for a decade, Gordon told the yard that 'a trained monkey could have signed that', and cut his nephew out of the bonus. Four foremen have left in five years, and his two sons have set up a rival firm.
+> Gordon is sixty-two and has run the family construction firm for thirty years. He tells his foremen that the firm is him and nobody else. When his nephew won a contract the firm had been chasing for a decade, Gordon told the crew that 'a trained monkey could have signed that', and cut his nephew out of the bonus. Four foremen have left in five years, and his two sons have set up a rival firm.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2798,7 +2798,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **Grandiose narcissism**.” What does the person do, again and again, across those years? **Acts above others, and turns angry or scornful when not treated as special.** Gordon treats the firm as his alone, and when his nephew succeeded he answered with scorn: “the firm is him and nobody else” and “a trained monkey could have signed that” and “Four foremen have left in five years”. It has cost him four foremen and his sons.
   - Why not **An ordinary personality**: A strong-minded owner can be **An ordinary personality**. But Gordon turns scornful when someone else succeeds, and the people around him keep leaving.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers thirty years, a firm and a family: “has run the family building firm for thirty years” and “his two sons have set up a rival firm”.
+  - What kind of thing is this? **A lasting way someone is.** The case covers thirty years, a firm and a family: “has run the family construction firm for thirty years” and “his two sons have set up a rival firm”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A strong-minded owner can be **An ordinary personality**. But Gordon turns scornful when someone else succeeds, and the people around him keep leaving.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
@@ -2839,7 +2839,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - What kind of thing is this? **A lasting way someone is.** The case covers three laboratories and many colleagues: “In three laboratories” and “with four junior researchers and two heads of department”.
   - If you chose **Clings to people, and turns on them when they seem to be leaving**: Priscilla does not reach for anyone, attack them and reach for them again. She withdraws and stays withdrawn.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Borderline personality**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Borderline personality**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Feeling overlooked and owed more for years, and hurt when not treated so” (one tap opens the card).
@@ -2852,11 +2852,11 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Desmond says he is overlooked, and when a clubmate was honoured he went silent and stayed away: “the coach has never once noticed his times” and “stopped replying to the club chat and stayed away for six months” and “three friends from it say that he disappeared on them”. It has cost him friends in both clubs.
-  - Why not **An ordinary personality**: Being quiet is ordinary. But Desmond says he is owed more, he withdraws when someone else is honoured, and it has cost him friends twice over.
+- If you are right: “Right: **Vulnerable narcissism**.” What does the person do, again and again, across those years? **Feels overlooked and owed more, and turns hurt and resentful when not treated as special.** Desmond says he is overlooked, and when a clubmate was honored he went silent and stayed away: “the coach has never once noticed his times” and “stopped replying to the club chat and stayed away for six months” and “three friends from it say that he disappeared on them”. It has cost him friends in both clubs.
+  - Why not **An ordinary personality**: Being quiet is ordinary. But Desmond says he is owed more, he withdraws when someone else is honored, and it has cost him friends twice over.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers fifteen years and two clubs: “for fifteen years” and “He left his previous club in the same way”.
-  - If you chose **Stays the same way for years, and it does not keep doing harm**: Being quiet is ordinary. But Desmond says he is owed more, he withdraws when someone else is honoured, and it has cost him friends twice over.
+  - If you chose **Stays the same way for years, and it does not keep doing harm**: Being quiet is ordinary. But Desmond says he is owed more, he withdraws when someone else is honored, and it has cost him friends twice over.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be quiet, keep to themselves and go silent at times, in the same way in every place. In **Vulnerable narcissism** the silence comes with a count of what the person is owed, it follows someone else’s praise or promotion, and it keeps costing. In **An ordinary personality** the quietness is only how the person is, and people stay. Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2865,26 +2865,26 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 7 of 18**
 
-> Ravi is twenty-six and a postgraduate student. With each supervisor, since his first degree, he has told her that she is the only person who understands him, and when a supervisor mentions going away for a term he panics and writes to her at night. When one said she would be away for a term, he wrote that she was 'a fraud who had used him', and at six the next morning he begged her to forgive him. Three supervisors in a row have asked the department to reassign him.
+> Ravi is twenty-six and a graduate student. With each advisor, since his first degree, he has told her that she is the only person who understands him, and when an advisor mentions going away for a semester he panics and writes to her at night. When one said she would be away for a semester, he wrote that she was 'a fraud who had used him', and at six the next morning he begged her to forgive him. Three advisors in a row have asked the department to reassign him.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When a supervisor seemed about to go, Ravi held on hard, attacked her, and begged her back: “she is the only person who understands him” and “a fraud who had used him” and “Three supervisors in a row have asked the department to reassign him”. It has cost him three supervisors.
-  - Why not **Vulnerable narcissism**: Ravi does not pull away and keep count. He goes after the supervisor who seems to be leaving.
+- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When an advisor seemed about to go, Ravi held on hard, attacked her, and begged her back: “she is the only person who understands him” and “a fraud who had used him” and “Three advisors in a row have asked the department to reassign him”. It has cost him three advisors.
+  - Why not **Vulnerable narcissism**: Ravi does not pull away and keep count. He goes after the advisor who seems to be leaving.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers years and every supervisor he has had: “With each supervisor, since his first degree”.
-  - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Ravi does not pull away and keep count. He goes after the supervisor who seems to be leaving.
+  - What kind of thing is this? **A lasting way someone is.** The case covers years and every advisor he has had: “With each advisor, since his first degree”.
+  - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Ravi does not pull away and keep count. He goes after the advisor who seems to be leaving.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologise?
+  - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both are hurt when someone close lets them down, and in both it has cost friendships over years. In **Vulnerable narcissism** the person pulls away and resents, and does not reach for the other person. In **Borderline personality** the person reaches for them hard when they seem to be leaving, attacks them, and reaches for them again. When someone close lets this person down, do they pull away and keep count? Or do they cling, attack and then apologize?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
 - Taught on: “Clinging to people, and turning on them when they seem to be leaving” (one tap opens the card).
 
 **Return case 8 of 18**
 
-> Naomi is thirty-five. When her sister said she was going to Canada, Naomi called every night for a month, offered to give up her flat so that her sister could stay, and sobbed that she would have no one. At the airport she told her sister that she had never been a real sister, and from Canada the next day she sent a letter that began 'You are all I have.' It has been the same with each of her friends and with her last five partners, who have all gone.
+> Naomi is thirty-five. When her sister said she was going to Canada, Naomi called every night for a month, offered to give up her apartment so that her sister could stay, and sobbed that she would have no one. At the airport she told her sister that she had never been a real sister, and from Canada the next day she sent a letter that began 'You are all I have.' It has been the same with each of her friends and with her last five partners, who have all gone.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -2903,17 +2903,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 9 of 18**
 
-> Colm is fifty and chairs a neighbourhood watch. When a neighbour he is close to said she might sell her house, Colm brought round meals every evening for a week, told her that the street would die without her, and when she did not decide he told the others she was 'using people'. The next day he sent her a note: 'Forgive me, you are the only one who matters here.' It has happened with six neighbours over twenty years, and two have stopped speaking to him.
+> Colm is fifty and chairs a neighborhood watch. When a neighbor he is close to said she might sell her house, Colm brought over meals every evening for a week, told her that the street would die without her, and when she did not decide he told the others she was 'using people'. The next day he sent her a note: 'Forgive me, you are the only one who matters here.' It has happened with six neighbors over twenty years, and two have stopped speaking to him.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When a neighbour seemed about to leave, Colm held on hard, turned on her, and held on again: “brought round meals every evening for a week” and “using people” and “two have stopped speaking to him”. Two neighbours no longer speak to him.
-  - Why not **Histrionic personality**: Colm’s display is aimed at one neighbour who seems to be going, and it turns into an attack on her. He is not performing for the street.
+- If you are right: “Right: **Borderline personality**.” What does the person do, again and again, across those years? **Clings to people, and turns on them when they seem to be leaving.** When a neighbor seemed about to leave, Colm held on hard, turned on her, and held on again: “brought over meals every evening for a week” and “using people” and “two have stopped speaking to him”. Two neighbors no longer speak to him.
+  - Why not **Histrionic personality**: Colm’s display is aimed at one neighbor who seems to be going, and it turns into an attack on her. He is not performing for the street.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers twenty years and six neighbours: “It has happened with six neighbours over twenty years”.
-  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Colm’s display is aimed at one neighbour who seems to be going, and it turns into an attack on her. He is not performing for the street.
+  - What kind of thing is this? **A lasting way someone is.** The case covers twenty years and six neighbors: “It has happened with six neighbors over twenty years”.
+  - If you chose **Keeps the attention on themselves, with bigger displays when it moves away**: Colm’s display is aimed at one neighbor who seems to be going, and it turns into an attack on her. He is not performing for the street.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Histrionic personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
@@ -2922,13 +2922,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 10 of 18**
 
-> Giulia is thirty-four and a yoga teacher. In every class she has taught, in three studios, she opens by telling the room about her week in a trembling voice. When a student shared a piece of good news, Giulia gave a long account of her own worst day until the class turned towards her and the student sat down. Two studios have had complaints, and students say they stopped coming because the class is about her.
+> Giulia is thirty-four and a yoga teacher. In every class she has taught, in three studios, she opens by telling the room about her week in a trembling voice. When a student shared a piece of good news, Giulia gave a long account of her own worst day until the class turned toward her and the student sat down. Two studios have had complaints, and students say they stopped coming because the class is about her.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Giulia puts herself at the centre, and when a student had good news her display got bigger: “opens by telling the room about her week in a trembling voice” and “gave a long account of her own worst day until the class turned towards her” and “students say they stopped coming because the class is about her”. It has cost her students and two complaints.
+- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Giulia puts herself at the center, and when a student had good news her display got bigger: “opens by telling the room about her week in a trembling voice” and “gave a long account of her own worst day until the class turned toward her” and “students say they stopped coming because the class is about her”. It has cost her students and two complaints.
   - Why not **Grandiose narcissism**: Giulia does not run the student down. She turns the attention back to herself.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers every class in three studios: “In every class she has taught, in three studios”.
@@ -2937,7 +2937,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both want the room’s attention, and both take it over in every group. In **Grandiose narcissism** the person wants to be treated as better than others, and runs down whoever else is praised. In **Histrionic personality** the person wants any attention at all, and answers attention going elsewhere with a bigger display, not with scorn. When attention goes to someone else, does this person run that person down? Or put on a bigger display themselves?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Return case 11 of 18**
 
@@ -2947,16 +2947,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Ferdinand puts himself at the centre, and when the treasurer was praised his display got bigger: “the longest speech and the most moving story” and “up all night with a pain in his chest, and kept the board listening for twenty minutes” and “two committees have voted him off”. Two committees have voted him off.
+- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Ferdinand puts himself at the center, and when the treasurer was praised his display got bigger: “the longest speech and the most moving story” and “up all night with a pain in his chest, and kept the board listening for twenty minutes” and “two committees have voted him off”. Two committees have voted him off.
   - Why not **An ordinary personality**: A talkative man with a gift for stories can be **An ordinary personality**. But Ferdinand’s displays grow when someone else is praised, and committees have voted him off.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers four committees over years: “He has done this on four committees”.
   - If you chose **Stays the same way for years, and it does not keep doing harm**: A talkative man with a gift for stories can be **An ordinary personality**. But Ferdinand’s displays grow when someone else is praised, and committees have voted him off.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
-  - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbours stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
+  - If you chose **An ordinary personality**, the look-alike card’s lines follow: Both can be dramatic in everything, in every place, for years. In **Histrionic personality** the displays get bigger when attention goes elsewhere, and people have been worn out and have drifted away. In **An ordinary personality** the drama is only how the person is, and friends and neighbors stay. When attention goes to someone else, does the display get bigger? And has it cost the person friends, jobs or places over the years?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Return case 12 of 18**
 
@@ -2966,7 +2966,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Louisa puts herself at the centre, and when the attention went to her grandson her display got bigger: “tells the stories as if on a stage” and “had to be comforted in the corridor by half the audience” and “tells her the wrong time for family events”. Her daughter now gives her the wrong time.
+- If you are right: “Right: **Histrionic personality**.” What does the person do, again and again, across those years? **Keeps the attention on themselves, with bigger displays when it moves away.** Louisa puts herself at the center, and when the attention went to her grandson her display got bigger: “tells the stories as if on a stage” and “had to be comforted in the corridor by half the audience” and “tells her the wrong time for family events”. Her daughter now gives her the wrong time.
   - Why not **Borderline personality**: Louisa’s display is for the whole hall. She holds on to no one person and attacks nobody.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers forty years of family occasions: “has been the star of every family occasion for forty years”.
@@ -2975,17 +2975,17 @@ A name that is due returns as a case the learner has not seen, next to a case of
   - If you chose **Borderline personality**, the look-alike card’s lines follow: Both have big, quick feelings that other people notice first, and both have lost friends to them. In **Borderline personality** the big feelings are about one person who seems to be leaving: the person holds on to them and turns on them. In **Histrionic personality** the big displays are for whoever is watching, and they get bigger when attention goes to someone else. Who is the display for: one particular person who seems to be leaving, or whoever is in the room? And does it turn into an attack on that one person?
   - If you chose another name, the line is built from the answers’ own wording: “«The name you chose» needs «what you must be able to point to for it». This case shows something else: «the same line for the right name».”
   - A right name with a wrong answer on the way is shown as “Right name, wrong answer on the way” and counts as a miss.
-- Taught on: “Always at the centre of attention, with bigger displays when it moves away” (one tap opens the card).
+- Taught on: “Always at the center of attention, with bigger displays when it moves away” (one tap opens the card).
 
 **Return case 13 of 18**
 
-> Barry is forty-four and a builder who has taken deposits from nine households in two towns and finished three jobs. He tells each that materials have 'gone up' and asks for more. When a family wrote that they were living without a roof, he said, 'You wanted the cheapest quote.' He had a suspended sentence at twenty-two for the same thing in another county, and fifty-four thousand pounds of customers' money has gone.
+> Barry is forty-four and a builder who has taken deposits from nine households in two towns and finished three jobs. He tells each that materials have 'gone up' and asks for more. When a family wrote that they were living without a roof, he said, 'You wanted the cheapest quote.' He had a suspended sentence at twenty-two for the same thing in another county, and fifty-four thousand dollars of customers' money has gone.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Barry has taken deposits and not done the work, and showed no regret to a family without a roof: “taken deposits from nine households” and “You wanted the cheapest quote” and “fifty-four thousand pounds of customers' money has gone”. Fifty-four thousand pounds has gone.
+- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Barry has taken deposits and not done the work, and showed no regret to a family without a roof: “taken deposits from nine households” and “You wanted the cheapest quote” and “fifty-four thousand dollars of customers' money has gone”. Fifty-four thousand dollars has gone.
   - Why not **Grandiose narcissism**: Nothing in the case shows Barry needing to be treated as special, or turning scornful when he is not. What drives it is the money.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers two decades and several places: “in two towns” and “at twenty-two for the same thing in another county”.
@@ -3017,13 +3017,13 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 15 of 18**
 
-> Dominic is forty-nine and has run three gyms. At each he has sold lifetime memberships and closed the gym within a year, and left town. When members asked for refunds he told them the contract was 'clear', and when a member who had paid a thousand pounds wept, he said, 'You'll live.' He has changed company names four times and been banned from being a director once.
+> Dominic is forty-nine and has run three gyms. At each he has sold lifetime memberships and closed the gym within a year, and left town. When members asked for refunds he told them the contract was 'clear', and when a member who had paid a thousand dollars wept, he said, 'You'll live.' He has changed company names four times and been banned from being a director once.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Dominic sells what he will not provide, and showed no regret to a member who lost a thousand pounds: “sold lifetime memberships and closed the gym within a year” and “You'll live” and “banned from being a director once”. A court has already banned him once.
+- If you are right: “Right: **Antisocial personality**.” What does the person do, again and again, across those years? **Breaks rules and uses people, and shows no regret for the harm.** Dominic sells what he will not provide, and showed no regret to a member who lost a thousand dollars: “sold lifetime memberships and closed the gym within a year” and “You'll live” and “banned from being a director once”. A court has already banned him once.
   - Why not **Grandiose narcissism**: Dominic does not need to be treated as special and does not turn scornful when he is not. What drives it is the money.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
   - What kind of thing is this? **A lasting way someone is.** The case covers three gyms and four company names: “has run three gyms” and “changed company names four times”.
@@ -3036,7 +3036,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 16 of 18**
 
-> Ahmed is fifty-two and has driven the number 9 bus for twenty-five years. At the depot, at home and at the pub he is the same: gruff, never smiling at anyone he does not know, and complaining about the timetable to anyone who will listen. His regulars wait for his bus, the depot asks him to train the new drivers every year, and the old woman who rides it every Tuesday brings him a cake.
+> Ahmed is fifty-two and has driven the number 9 bus for twenty-five years. At the depot, at home and at the bar he is the same: gruff, never smiling at anyone he does not know, and complaining about the schedule to anyone who will listen. His regulars wait for his bus, the depot asks him to train the new drivers every year, and the old woman who rides it every Tuesday brings him a cake.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
@@ -3045,7 +3045,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 - If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Ahmed has been gruff for a quarter of a century, and what the case shows is what that has not cost: “gruff, never smiling at anyone he does not know” and “His regulars wait for his bus” and “brings him a cake”. People wait for his bus.
   - Why not **Grandiose narcissism**: He is gruff, which **Grandiose narcissism** can be too. But nobody is scorned, and nobody has left: his regulars wait for him.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers twenty-five years and three places where he is the same: “At the depot, at home and at the pub he is the same”.
+  - What kind of thing is this? **A lasting way someone is.** The case covers twenty-five years and three places where he is the same: “At the depot, at home and at the bar he is the same”.
   - If you chose **Acts above others, and turns angry or scornful when not treated as special**: He is gruff, which **Grandiose narcissism** can be too. But nobody is scorned, and nobody has left: his regulars wait for him.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Grandiose narcissism**, the look-alike card’s lines follow: Both can be loud, sure of themselves and bossy, in the same way for years and in every place. In **Grandiose narcissism** the way of being turns scornful when someone else is praised or chosen, and it keeps costing: people resign, leave and keep away. In **An ordinary personality** the same loudness and certainty sits beside people who stay. When someone else is praised or chosen, does this person turn on them, and have people been lost over the years because of it? Or do people stay?
@@ -3055,16 +3055,16 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 17 of 18**
 
-> Zofia is twenty-two and has been shy since primary school. She avoids seminars, eats alone and sends her essays in early so that she does not have to present. She has never lost a friend or a place over it: the same two friends from school still ring her, and her tutors write that she is reliable and thoughtful.
+> Zofia is twenty-two and has been shy since elementary school. She avoids seminars, eats alone and sends her essays in early so that she does not have to present. She has never lost a friend or a place over it: the same two friends from school still call her, and her professors write that she is reliable and thoughtful.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
 **Shown as soon as you answer**
 
-- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Zofia has been shy all her life, and what the case shows is what that has not cost: “avoids seminars, eats alone” and “She has never lost a friend or a place over it” and “her tutors write that she is reliable and thoughtful”. Nothing is being lost.
+- If you are right: “Right: **An ordinary personality**.” What does the person do, again and again, across those years? **Stays the same way for years, and it does not keep doing harm.** Zofia has been shy all her life, and what the case shows is what that has not cost: “avoids seminars, eats alone” and “She has never lost a friend or a place over it” and “her professors write that she is reliable and thoughtful”. Nothing is being lost.
   - Why not **Vulnerable narcissism**: Avoiding people and eating alone can look like withdrawal. But Zofia makes no claim to be owed anything, keeps no count, and has lost nobody.
 - If you miss the name or any question, you see the right name, the reason for every question you answered (the first wrong one first), the “why not” line above, and then:
-  - What kind of thing is this? **A lasting way someone is.** The case covers a whole childhood and adulthood, and several places and people: “has been shy since primary school” and “the same two friends from school”.
+  - What kind of thing is this? **A lasting way someone is.** The case covers a whole childhood and adulthood, and several places and people: “has been shy since elementary school” and “the same two friends from school”.
   - If you chose **Feels overlooked and owed more, and turns hurt and resentful when not treated as special**: Avoiding people and eating alone can look like withdrawal. But Zofia makes no claim to be owed anything, keeps no count, and has lost nobody.
   - If you chose any other answer, the line is built from the answers’ own wording: “You chose «that answer». Give that answer when «what a case must show for it». This case shows something else: «what a case must show for the right answer».”
   - If you chose **Vulnerable narcissism**, the look-alike card’s lines follow: Both can be quiet, keep to themselves and go silent at times, in the same way in every place. In **Vulnerable narcissism** the silence comes with a count of what the person is owed, it follows someone else’s praise or promotion, and it keeps costing. In **An ordinary personality** the quietness is only how the person is, and people stay. Is the silence a count of what is owed, going cold on someone who was thanked, with people lost to it? Or is the person simply quiet, and still on good terms with the people around them?
@@ -3074,7 +3074,7 @@ A name that is due returns as a case the learner has not seen, next to a case of
 
 **Return case 18 of 18**
 
-> Sidney is sixty-eight and has always taken the rules of the club very seriously: he has quoted the by-laws at three captains in forty years, and sulks when he is overruled. By the next morning he rings to say 'no hard feelings'. The same four friends play with him every Saturday, he has been the club's treasurer for twenty years, and when he was ill the whole club sent cards.
+> Sidney is sixty-eight and has always taken the rules of the club very seriously: he has quoted the by-laws at three captains in forty years, and sulks when he is overruled. By the next morning he calls to say 'no hard feelings'. The same four friends play with him every Saturday, he has been the club's treasurer for twenty years, and when he was ill the whole club sent cards.
 
 **You are asked, in order:** What kind of thing is this? → What does the person do, again and again, across those years? → Name it.
 
