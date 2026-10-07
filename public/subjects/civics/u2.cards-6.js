@@ -10,8 +10,8 @@ FC.cards('civics', 'u2', [
     link: 'Three more amendments, two of them about who may vote.',
     case: 'cn-vote',
     plain: [
-      'The clerk’s question has a precise answer: the Nineteenth Amendment, from 1920, which says that the right to vote cannot be denied because of sex.',
-      'The Thirteenth Amendment, from 1865, ended slavery. The Fifteenth, from 1870, says that the right to vote cannot be denied because of race. The Nineteenth, from 1920, says that it cannot be denied because of sex. Each of the two voting amendments takes away one reason for which a person could be kept from voting.'
+      'The clerk’s question has an exact answer: the Nineteenth Amendment, from 1920, which says the right to vote cannot be denied because of sex.',
+      'The Thirteenth Amendment, from 1865, ended slavery. The Fifteenth, from 1870, says the right to vote cannot be denied because of race. The Nineteenth, from 1920, says it cannot be denied because of sex. Each voting amendment takes away one reason for keeping a person from voting.'
     ] },
 
   { id: 'facts-vote', kind: 'facts',
@@ -35,7 +35,7 @@ FC.cards('civics', 'u2', [
     h: 'Race, and sex',
     link: 'Both say that the right to vote cannot be denied because of who you are.',
     facts: ['vote-race', 'vote-sex'],
-    instruction: 'Compare the reason that each one forbids: race, or sex.',
+    instruction: 'Ask which reason each one forbids: race, or sex.',
     prompt: { kind: 'which', answer: 'vote-sex' },
     difference: [
       'Fact A is about race: {f:vote-race}. It was adopted in 1870, soon after the Civil War.',
@@ -45,12 +45,12 @@ FC.cards('civics', 'u2', [
   /* ---------- the close ---------- */
   { id: 'recap-const', kind: 'recap',
     h: 'What to carry away',
-    link: 'Every fact in the unit, in its group, and what to carry.',
+    link: 'Every fact in the unit, by group, and what to carry.',
     carry: [
-      'The Constitution is law, and it is the highest law the country has: the original text of 1787 together with every amendment added since, twenty-seven so far. The Bill of Rights is the first ten of those amendments, so it is part of the Constitution. The Declaration of Independence and the Federalist Papers are not law: one says why the colonies were leaving Britain, and the other argues for approving the Constitution.',
+      'The Constitution is law, the highest law in the country: the original text of 1787 plus every amendment added since, twenty-seven so far. The Bill of Rights is the first ten of those amendments, so it is part of the Constitution. The Declaration of Independence and the Federalist Papers are not law: one explains why the colonies left Britain, and the other argues for approving the Constitution.',
       'Hold each date with what happened in it: {f:date-decl} for the Declaration, {f:date-convention} for the Constitution being written, {f:date-start} for the government under it beginning, and {f:date-bor} for the Bill of Rights.',
-      'Congress has only the powers that the Constitution lists, in Article I, and the power to pass the laws that are necessary and proper to carry them out. A power that is not on the list belongs to the states, or is something that no government may do.',
-      'To change the Constitution takes two steps: {f:chg-propose} of both chambers of Congress must vote to propose the change, and {f:chg-approve} of the states must approve it.',
-      'The Bill of Rights was first written to limit only the federal government. After the Civil War the courts read the Fourteenth Amendment to bring its limits to the states, so that they stop a state or a city as well.'
+      'Congress has only the powers listed in Article I, plus the power to pass the laws needed to carry them out. A power that is not on the list belongs to the states, or is something no government may do.',
+      'Changing the Constitution takes two steps: {f:chg-propose} of both chambers of Congress must vote to propose the change, and {f:chg-approve} of the states must approve it.',
+      'The Bill of Rights first limited only the federal government. After the Civil War the courts read the Fourteenth Amendment to bring its limits to the states, so they stop a state or a city too.'
     ] }
 ]);

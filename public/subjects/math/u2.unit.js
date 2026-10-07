@@ -10,12 +10,12 @@
 
 FC.unit('math', 'u2', {
   kind: 'P',
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Two',
   title: { fromKey: 'M1.whole' },
-  subtitle: 'Six kinds of problem about whole numbers, and a procedure worked out step by step for each',
+  subtitle: 'Six kinds of whole-number problem, and the steps for each',
   teaches: { steps: ['W1'], outcomes: ['prime', 'factor', 'hcf', 'lcm', 'modrem', 'irrat'], terms: ['prime', 'factor', 'sqroot'] },
   assumes: ['u1'],
 
@@ -24,24 +24,24 @@ FC.unit('math', 'u2', {
   // grouping of drill items, and what returns together later. test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'prime~factor', pair: ['prime', 'factor'], step: 'W1',
-      shared: 'Both give a single whole number and are about breaking it into equal shares. The working for one finds things the other needs, and one number, such as 57, can be asked about in both.',
-      rule: '{o:prime} wants a verdict on one number: whether it can be shared out equally, which is a yes or a no. {o:factor} wants what the number is made of, or every way it splits, and its answer is a list or a count.',
-      test: 'Is a yes or a no wanted about one number, or a list of what it is made of, or of every way it splits?' },
+      shared: 'Both are about one whole number and breaking it into equal shares. The working for one finds what the other needs, and you can ask both about the same number, such as 57.',
+      rule: '{o:prime} wants a yes or a no: can the number be shared out equally at all? {o:factor} wants a list: which primes multiply to give the number, and so every group size that fits.',
+      test: 'Is the answer a yes or a no about one number, or a list of its primes or of every way it splits?' },
     { id: 'factor~hcf', taughtIn: 'q-w1', pair: ['factor', 'hcf'], step: 'W1',
-      shared: 'Both talk about equal packs, rows or groups, and both are worked from the primes of the numbers.',
-      rule: '{o:factor} takes one number apart, and asks what it is made of or every way it splits. {o:hcf} gives two numbers, and asks for the biggest piece that fits into both with nothing left over.',
-      test: 'Is there one number to be taken apart, or are there two numbers that must both be cut into pieces of one size?' },
+      shared: 'Both are about equal packs, rows or groups, and both are worked out from primes.',
+      rule: '{o:factor} takes one number apart: its primes, or every way it splits. {o:hcf} starts from two numbers and asks for the biggest piece that fits into both with nothing left over.',
+      test: 'Is there one number to take apart, or two numbers to cut into pieces of the same size?' },
     { id: 'hcf~lcm', pair: ['hcf', 'lcm'], step: 'W1',
-      shared: 'Both give two whole numbers, and both are worked from the primes of both numbers. The same two numbers, such as 16 and 24, can be asked about in either.',
-      rule: '{o:hcf} asks for the biggest piece that fits into both numbers, so its answer is never more than the smaller number, and it keeps the primes that both numbers have. {o:lcm} asks when two repeats next meet, so its answer is never less than the bigger number, and it keeps every prime that either number has.',
-      test: 'Are the two numbers lengths or amounts to be cut into equal pieces, or are they how often two things repeat, with the question when they meet? A piece is never more than the smaller number, and a meeting is never before the bigger one.' },
+      shared: 'Both start from two whole numbers, and both are worked out from the primes of both. You can ask both about the same two numbers, such as 16 and 24.',
+      rule: '{o:hcf} asks for the biggest piece that fits into both numbers, so the answer is never more than the smaller number, and it keeps the primes both numbers have. {o:lcm} asks when two repeating things next meet, so the answer is never less than the bigger number, and it keeps every prime either number has.',
+      test: 'Are the two numbers lengths or amounts to cut into equal pieces, or how often two things repeat? A piece is never bigger than the smaller number, and a meeting is never earlier than the bigger one.' },
     { id: 'lcm~modrem', taughtIn: 'q-w1', pair: ['lcm', 'modrem'], step: 'W1',
-      shared: 'Both are about things that go round and round, and a number such as 7 can be a repeat in one and the size of a loop in the other.',
-      rule: '{o:lcm} has two separate schedules, and asks for the first moment they coincide. {o:modrem} has one loop, or one group size, with a count that keeps going round it, and asks for the part that is left or the place the count reaches.',
-      test: 'Are there two things that each repeat, or one loop and a count that goes round it?' },
+      shared: 'Both are about things that go round and round. A number such as 7 can be how often something repeats in one, and the size of the loop in the other.',
+      rule: '{o:lcm} has two separate schedules and asks when they first meet. {o:modrem} has a single loop or group size, with a count going round it, and asks for the leftover or the place the count stops.',
+      test: 'Are there two things that each repeat, or one loop with a count going round it?' },
     { id: 'prime~irrat', taughtIn: 'q-w1', pair: ['prime', 'irrat'], step: 'W1',
       shared: 'Both can be about the very same number, and both can be answered with no.',
-      rule: '{o:prime} asks whether a count of things can be shared out in equal groups. {o:irrat} asks whether a number, a root or pi, can be written exactly.',
+      rule: '{o:prime} asks whether a count of things can be shared out in equal groups. {o:irrat} asks whether a number, such as a {t:sqroot} or pi, can be written exactly.',
       test: 'Is a count of things to be shared out in equal groups, or is a number to be written down exactly?' }
   ],
 
@@ -54,7 +54,7 @@ FC.unit('math', 'u2', {
       cards: ['orient-whole', 'term-prime', 'meet-prime', 'check-prime', 'term-sqroot', 'solved-prime-1',
               'term-factor', 'meet-factor', 'check-factor', 'solved-factor-1', 'look-prime-factor',
               'meet-hcf', 'check-hcf', 'solved-hcf-1'] },
-    { id: 'p2', title: 'Repeats, what is left over, and exact or only rounded; then the drill',
+    { id: 'p2', title: 'Repeats, leftovers, and exact or only rounded; then the drill',
       cards: ['meet-lcm', 'check-lcm', 'solved-lcm-1', 'look-hcf-lcm',
               'meet-modrem', 'check-modrem', 'solved-modrem-1',
               'meet-irrat', 'check-irrat', 'solved-irrat-1', 'q-w1', 'check-w1'], drill: true, close: ['recap-whole'] }
@@ -64,7 +64,7 @@ FC.unit('math', 'u2', {
   // groups of look-alikes that share a ledger pair and one tier. The stage also carries a problem from Unit One, unlabelled.
   drill: {
     key: 'u2',
-    add: 'Some of the problems tell a story that points the wrong way, on purpose: what the problem asks about its numbers decides the kind, and nothing else in the story does.',
+    add: 'Some problems have a story that points the wrong way, on purpose. What the problem asks about its numbers decides it, and nothing else does.',
     rungs: [
       { ask: 'route',
         items: [[{ earlier: 'u1' }],
@@ -82,7 +82,8 @@ FC.unit('math', 'u2', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first procedure unit of Basic Math, replacing the old Unit Two (four cards and the whole-numbers drill), specimens 1 to 3 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Six kinds of problem about whole numbers, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the drill has a last-step stage, a whole-problem stage and a route stage.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

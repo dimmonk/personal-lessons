@@ -18,26 +18,26 @@ FC.cases('math', 'u6', [
       S2: 'How tall is the lamp post?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length on one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, with a length measured on both.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'pyth',
-      why: 'Two lengths are given, but they are not two sides of the triangle whose third side is wanted: the length wanted is on a second thing of the same shape. {o:pyth} would be the name if the length wanted were the third side of that very triangle.'
+      why: 'The boy’s height and shadow are two lengths, but the length you want is on a second thing, the lamp post.'
     },
     echo: 'm6-wd-hike',
     also: ['twosides'],
     steps: [
       {
-        does: 'Find a part that is measured on both things',
-        working: 'The length of the shadow is 1.6 m on the boy and 8 m on the lamp post. The part you want, the height, is measured on the boy only: 1.2 m'
+        does: 'Find a length that is measured on both things',
+        working: 'The shadow is 1.6 m for the boy and 8 m for the lamp post. The height, which you want, is known for the boy only: 1.2 m'
       },
       {
-        does: 'Find how many times longer the bigger thing is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '8 ÷ 1.6 = 5'
       },
-      { does: 'Multiply the length you have by that number of times', working: '1.2 × 5 = 6 m' }
+      { does: 'Multiply the length you know by that number', working: '1.2 × 5 = 6 m' }
     ],
     answer: {
       choices: [
@@ -45,18 +45,18 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '0.24 m',
-          slip: 'you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.'
+          slip: 'you divide where you should multiply, so the bigger one comes out shorter.'
         },
         {
           id: 's2',
           text: '7.6 m',
-          slip: 'you add the same 6.4 m that the part measured on both differs by, instead of multiplying by the same number of times, though a copy keeps its shape only if every length is multiplied by the same number.'
+          slip: 'you add the 6.4 m that the two shadows differ by, instead of multiplying. A copy keeps its shape only if every length is multiplied by the same number.'
         }
       ],
       right: 'r'
     },
-    why: 'Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.',
-    wouldChange: 'If the problem asked how far it is from the top of the boy’s head to the tip of his shadow, it would be {o:pyth}, because that length is the third side of the boy’s own triangle.'
+    why: 'An exact copy changes only in size: every length is the same number of times longer. So a length measured on both gives that number, and you can use it on any other length.',
+    wouldChange: 'If it asked how far it is from the top of the boy’s head to the tip of his shadow, it would be {o:pyth}: that is the third side of his own triangle.'
   },
 
 ]);

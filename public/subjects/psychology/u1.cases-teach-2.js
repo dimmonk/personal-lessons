@@ -12,8 +12,8 @@ FC.cases('psychology', 'u1', [
     text: "Colleagues at Gareth's last three jobs all describe the same man: charming for the first month, then borrowing money that he does not pay back. His ex-wife and two former roommates say the same. It goes back at least to his early twenties.",
     route: { D1: ['pattern'] },
     cues: { D1: ["Colleagues at Gareth's last three jobs all describe the same man", 'His ex-wife and two former roommates say the same', 'It goes back at least to his early twenties'] },
-    reason: { D1: 'The case is a long view of one man: {cue:D1}. That is years, three workplaces and two homes, and the same thing in each. Nobody in the case is having a conversation.' },
-    not: { outcome: 'tactic', why: 'Borrowing and not paying back is done to other people, but the case does not stay between two of them. It follows one man through years and through everyone he has dealt with.' } },
+    reason: { D1: 'This follows one man for years: {cue:D1}. Three jobs, two homes, and the same thing in each.' },
+    not: { outcome: 'tactic', why: 'Borrowing and not paying back is done to other people, but the story does not stay between two of them. It follows one man through years and through everyone he has dealt with.' } },
 
   { id: 'g-credit-friday', use: 'teach', tier: 'clean', setting: 'work', topic: 'an idea taken on a Friday',
     text: "On Friday Gina's manager, Paul, presented her idea to the directors as his own. When she raised it with him, he told her she must be confused, and that he had mentioned the idea to her first. Gina went home wondering whether he had.",
@@ -39,7 +39,7 @@ FC.cases('psychology', 'u1', [
       { text: 'Callum burst into tears in a team meeting when someone asked him a routine question', note: 'That is what happened in the room, and it is what people will remember. It does not tell you how long this has been going on, or what is behind it.' },
       { text: 'He left the room for ten minutes, came back, and finished the meeting', note: 'That shows it passing, which fits. But the words that tie it to one occasion and to something real come at the start.' }
     ],
-    reason: { D1: 'These words place the case on one occasion and give it a cause: a funeral two days before. Nothing else is shown. Callum gives no reasons for anything, he says nothing to anyone about them, and nothing in the case goes back further than this week.' } },
+    reason: { D1: 'These words put it on one occasion, with a cause: a funeral two days before.' } },
 
   { id: 'g-retirement', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a speech at a retirement party',
     text: "At his own retirement party, Desmond talked for twenty minutes about the deals he had closed and the rivals he had beaten. A guest who had never met him before said afterward, 'What an ego.'",

@@ -7,12 +7,12 @@
 
 FC.unit('stats', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
-  title: { fromKey: 'S1.holds' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Four kinds of claim that hold up, and what each one has earned the right to say',
+  title: { text: 'When a claim with numbers holds up' },
+  subtitle: 'Four things a sound claim can show, and how far each one goes',
   teaches: { steps: ['H1'], outcomes: ['samp_ok', 'meas_ok', 'comp_ok', 'cause_ok'], terms: ['sample', 'atrandom', 'margin', 'placebo'] },
   assumes: ['u1'],        // everything Unit One teaches may be used; the first card restates the part this unit leans on
 
@@ -21,27 +21,27 @@ FC.unit('stats', 'u2', {
   // is this branch's own. Each entry is written once and used everywhere it is needed. test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'samp_ok~meas_ok', pair: ['samp_ok', 'meas_ok'], step: 'H1',
-      shared: 'Both are sound claims about the same kind of figure, such as an average wait or a share, and in both the people or things counted are not in doubt.',
+      shared: 'Both are sound claims about the same sort of figure, like an average wait or a share.',
       rule: 'In {o:samp_ok} the claim gives the figure once, for one group at one time. In {o:meas_ok} the claim follows one figure through two or more times and says it rose or fell.',
-      test: 'Does the claim give the figure once, for one time, or does it give the figure at two or more times and say that it rose or fell?' },
+      test: 'Does the claim give the figure once, or give it at two or more times and say it rose or fell?' },
     { id: 'meas_ok~comp_ok', pair: ['meas_ok', 'comp_ok'], step: 'H1',
-      shared: 'Both put two figures into the claim, and both can sound like "this is lower than that".',
-      rule: 'In {o:meas_ok} the two figures are one thing at two times, read the same way each time, and the claim says it rose or fell. In {o:comp_ok} the two figures are two groups, places or things, or one thing and its usual level, set side by side, and the claim says which is bigger.',
-      test: 'Is the claim following one thing as time passes, or is it setting one thing beside another thing (or beside its own usual figure) and saying which is bigger?' },
+      shared: 'Both put two figures in front of you, and both can sound like "this is lower than that".',
+      rule: 'In {o:meas_ok} the two figures are one thing at two times, counted the same way, and the claim says it rose or fell. In {o:comp_ok} the two figures are two groups or things, or one thing and its usual level, side by side, and the claim says which is bigger.',
+      test: 'Does the claim follow one thing as time passes, or set one thing beside another (or beside its own usual figure) and say which is bigger?' },
     { id: 'comp_ok~cause_ok', pair: ['comp_ok', 'cause_ok'], step: 'H1',
-      shared: 'Both show two groups with a gap between them, and both can come with exactly the same numbers.',
-      rule: 'In {o:comp_ok} the claim stops at which group has more or less. In {o:cause_ok} the claim goes on to say that what one group was given made the gap, and it may only do that because a lottery formed the groups.',
-      test: 'Does the claim stop at which group is ahead, or does it say what made the gap? If it says what made the gap, who decided which group each person or thing was in?' }
+      shared: 'Both show two groups with a gap between them, and the numbers can be exactly the same.',
+      rule: 'In {o:comp_ok} the claim stops at which group is ahead. In {o:cause_ok} the claim goes on to say that what one group was given made the gap, and it may say so only because a lottery formed the groups.',
+      test: 'Does the claim stop at which group is ahead, or say what made the gap? If it says what made the gap, who decided which group each person or thing went into?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. The part with drill: true is the last;
   // its close cards come after the drill. The parts follow the key's own order of claims: the smaller ones, then the ones that set things side by side.
   parts: [
-    { id: 'p1', title: 'Counting one group, following one figure through time, and setting two things side by side',
+    { id: 'p1', title: 'One group, a rise or fall, and two things side by side',
       cards: ['orient-holds', 'term-sample', 'term-atrandom', 'meet-sampok', 'check-sampok', 'term-margin',
               'meet-measok', 'check-measok', 'look-samp-meas',
               'meet-compok', 'check-compok', 'look-meas-comp'] },
-    { id: 'p2', title: 'Saying what made the difference, the question, one whole claim, and the drill',
+    { id: 'p2', title: 'What made the difference, then one whole claim and the drill',
       cards: ['term-placebo', 'meet-causeok', 'check-causeok', 'look-comp-cause',
               'q-holds', 'check-q', 'worked-backs'], drill: true,
       close: ['recap-holds', 'plan-holds'] }
@@ -53,7 +53,7 @@ FC.unit('stats', 'u2', {
   // mixes in claims with something wrong, so a learner does not take it that every claim in this unit's stage holds.
   drill: {
     key: 'u2',            // the old quick-drill totals for this unit were stored under pl:stats:stats:u2 (frozen; see E8)
-    add: 'Every claim in this unit holds. A few claims from Unit One are mixed in without a label, and some of those do go wrong: for them the first question comes before this unit’s question.',
+    add: 'Every claim in this unit holds up. A few claims from Unit One are mixed in with no label, and some of those do go wrong. For those, answer the first question before this one.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'p-pets', step: 'H1' }, { case: 'p-ferry', step: 'H1' }],
@@ -77,7 +77,8 @@ FC.unit('stats', 'u2', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the fifth answer of the first question, with the four names for a claim that holds. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces the old cards "When nothing is wrong", "A fair count", "A trustworthy measure", "A fair comparison" and "A cause that holds up", and the sound items of the old drills.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What changed in the key for this branch, and why (docs/rebuild/stats-plan.md, section (a)).
     keyChanges: [

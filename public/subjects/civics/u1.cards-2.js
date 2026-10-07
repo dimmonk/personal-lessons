@@ -1,40 +1,39 @@
 // Civics, Unit One, part two: the word the second family leans on, the second family (the President or a federal
 // agency), the first look-alike pair, and the exception between lawmakers and the President.
-// A quick lesson (lesson standard section 19). The app prints "how to tell them apart" and the side-by-side table;
-// neither is typed here. The key has no tie-break on its first question, so an exception card has no tie-break line:
-// it teaches where the last decision is.
+// A quick lesson (lesson standard section 19), rewritten plain (section 20). The app prints "how to tell them apart";
+// it is not typed here. The key has no tie-break on its first question, so an exception card has no tie-break line:
+// it teaches where the final call is.
 
 FC.cards('civics', 'u1', [
 
   /* ---------- A word the second family is built on ---------- */
   { id: 'term-agency', kind: 'term', term: 'agency',
-    h: 'The offices that carry out the laws',
-    link: 'The next kind leans on a word that is easy to pass over. The case shows what it means before it is named.',
+    h: 'Offices that run the laws day to day',
+    link: 'The next one needs a word, and a story shows what it means before it gets a name.',
     case: 'c-application',
     plain: [
-      'Rosa’s papers did not go to lawmakers, and nobody voted about her. They went to an office whose daily work is applying a law that already exists: checking papers, booking interviews, sending letters. Most of what the government does for people from day to day is done this way, by offices that have their own staff and a job to do.',
-      'Others collect taxes, inspect factories and meat plants, and write the rules for how strong a seat belt must be. Each works under a law that lawmakers passed, and each has a part of that law to carry out.'
+      'Rosa’s papers did not go to lawmakers, and nobody voted on them. They went to an office whose daily job is applying a law that already exists: checking papers, booking interviews, sending letters.',
+      'Offices like this do most of what the government does for you day to day. Others collect taxes, inspect meat plants and write the rules for how strong a seat belt must be. Each one works under a law that lawmakers already passed.'
     ],
     after: [
-      'Some of these offices belong to the government of the whole country, which this course calls federal, and some belong to a state, a city or a county. The word just printed is the one this unit uses for such an office. It is not the lawmakers and it is not a judge: it is the part of government that does the daily work of a law.'
+      'Some of these offices belong to the government of the whole country, and some belong to a state, a city or a county. Either way, an office is not the lawmakers and not a judge. It is the part of government that does the daily work of a law.'
     ] },
 
   /* ---------- The second family: the President or a federal agency ---------- */
   { id: 'meet-president', kind: 'meet', family: 'president',
-    link: 'The first kind was lawmakers voting. The second has no vote in it. A decision is made by a person or an office that acts: the President, or an {t:agency}.',
+    link: 'Second: no vote this time. The President, or an {t:agency}, decides something and announces it.',
     case: 'c-seatbelt', mark: 'D1',
-    strip: [
-      'There is one decision-maker, an office: the federal road-safety {t:agency}. It is federal: it belongs to the government of the whole country, not to a state or a city.',
-      'What it decides is a rule: how strong a seat belt must be in every new car, and the crash test each new car must pass.',
-      'Nobody votes in the case, nobody is a judge, and no state or city appears. The last thing in the case is what the {t:agency} will do next: its inspectors will start testing new cars.'
-    ],
     explain: [
-      'What you are shown is an office deciding something and announcing it. There was no vote on this rule and no judge. An office that belongs to the government of the whole country decided how strong a seat belt must be, and that is the last decision in the case.',
-      'The government of the whole country has more than lawmakers. It also has a President, who leads it, and the offices that carry out the laws. This kind covers both. The President’s decisions can be of several sorts: giving orders to the armed forces, dealing with another country, refusing to sign a law Congress passed, forgiving a federal crime, giving written orders to the offices. An {t:agency}’s are the day-to-day sort: writing detailed rules, inspecting, processing applications, collecting.',
-      'The word federal does a job here. A state has offices too, such as a state’s health department, and a decision by one of them belongs to a different kind. A federal office and a state office can do exactly the same kind of work, so the test is whose office it is.'
+      'An office decided something and announced it. Nobody voted on the rule and no judge was involved. “Federal” means the office belongs to the government of the whole country, not to a state or a city, so the rule applies everywhere in the country.',
+      'That government is not only lawmakers. It also has a President, who leads it, and the offices that run its laws. The President decides things too: orders to the armed forces, deals with other countries, refusing to sign a law Congress passed, forgiving a federal crime. An {t:agency} does the daily work: writing detailed rules, inspecting, processing applications, collecting.'
+    ],
+    spot: [
+      { do: 'Find who decided: the federal road-safety {t:agency} announced the rule.', why: 'The President or an office acts on its own, with no vote.' },
+      { do: 'Check there was no vote and no judge: there was neither.', why: 'A vote would make it the lawmakers’ call, and a ruling would make it a judge’s.' },
+      { do: 'Check whose office it is: “federal” means the whole country’s.', why: 'A state has offices too, and they can do the same work, but their calls belong to the state.' }
     ],
     feature: { step: 'D1', option: 'president' },
-    name: 'The kind is {a:D1.president}. The word “or” matters: either the President or an office of the government of the whole country gives the answer. “Federal” belongs to the office: a state’s own office is not in this kind.' },
+    name: 'This is {a:D1.president}. Either one counts: the President, or an office of the whole country.' },
 
   { id: 'check-president', kind: 'check', after: 'president',
     case: 'k-ferry',
@@ -43,24 +42,24 @@ FC.cards('civics', 'u1', [
   /* ---------- The first look-alike pair ---------- */
   { id: 'look-congress-president', kind: 'lookalike', ledger: 'congress~president',
     h: 'One law: the vote, then the office that applies it',
-    link: 'One law can appear in both of these kinds: the lawmakers vote on it, and then an office carries it out. This card puts the two side by side.',
+    link: 'One law can show up in both: first lawmakers vote on it, then an office puts it to work. Here are the two side by side.',
     cases: ['l-label-law', 'l-label-rules'],
-    instruction: 'Both cases are about the same food-label law. Compare one thing: whose decision does each story end on?',
+    instruction: 'Both stories are about the same food-label law. Compare one thing: whose is the final call in each?',
     prompt: { kind: 'which', option: 'D1.president', answer: 'l-label-rules' },
     difference: [
-      'In Case A the story is about the bill itself: the Senate votes to pass it, as the House had done. Nobody else is deciding anything. The answer is {a:D1.congress}.',
-      'In Case B the law has been passed, and the story is about what comes after: an office publishes the rules that tell food makers how to follow it. The law is still in the story, but as how the matter got there. The last decision is the office’s. The answer is {a:D1.president}.'
+      'In Story A the Senate votes to pass the bill, as the House already did. Nobody else decides anything, so this is {a:D1.congress}.',
+      'In Story B the law has already passed, and an office is now writing the rules that tell food makers how to follow it. The law is only how the matter got there, and the office has the final call, so this is {a:D1.president}.'
     ] },
 
   { id: 'exc-signed', kind: 'exception', ledger: 'congress~president', looksLike: 'president', is: 'congress',
-    h: 'A law that the President signs',
-    link: 'A law can also move from lawmakers to the President’s desk, and the case can then end with a signature. That looks like the President deciding.',
+    h: 'A law the President signs',
+    link: 'A passed law can end on the President’s desk with a signature. That sounds like the President deciding.',
     case: 'x-signing',
-    setup: 'The last thing in this case is the President’s own act: signing the bill. A decision by the President is what you point to for {a:D1.president}. Yet the answer for this case is {a:D1.congress}.',
+    setup: 'The story ends with the President’s own act: signing the bill. A decision by the President usually means {a:D1.president}, yet the answer here is {a:D1.congress}.',
     prompt: { kind: 'phrase', answer: 'the House and the Senate both passed a bill' },
     because: [
-      'A bill becomes a law when the House and the Senate have passed it and the President has signed it. But the signature does not choose what the law says. By the time the President signs, every word was settled by the votes. The decision the case is about, that the Calder River valley becomes a protected park, was made when the House and the Senate voted.',
-      'Compare a refusal. If the President refused to sign, that would be a decision of the President’s own: it would send the bill back, and the bill would not become a law unless the lawmakers voted for it again. So a refusal is in the second kind, and a signature is not.'
+      'By the time the President signs, every word of the bill was settled by the votes. The signature does not change what the law says, so the decision that the valley becomes a park was made when the House and the Senate voted.',
+      'Compare a refusal. If the President refused to sign, that would be the President’s own call: the bill goes back, and does not become a law unless the lawmakers vote for it again.'
     ],
-    take: 'In real life you will hear it said both ways: “Congress passed the park law” and “the President made the valley a park”. Each case gets one answer, so that two people using the questions reach the same one and can each say why. It is the lawmakers, because the signature never changes the bill.' }
+    take: 'You will hear it both ways: “Congress passed the park law” and “the President made the valley a park”. For this course a signed law stays with the lawmakers, because the signature never changes the bill.' }
 ]);

@@ -6,7 +6,7 @@ FC.cases('stats', 'u4', [
     text: "A university's integrity office reports: 'Copied essays found this year: 90, up from 30 last year. Cheating is on the rise.' Last year staff checked only the 600 essays that graders had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method. An essay counts as copied by the same standard in both years. That is 5 found in every 100 checked last year, and 3 in every 100 this year.",
     outcome: 'detection', route: { S1: ['measure'], M1: ['looked'] },
     cues: { M1: "Last year staff checked only the 600 essays that graders had flagged as looking odd. This year, with extra staff hours, they checked all 3,000 essays handed in, by the same method" },
-    reason: { M1: 'The office checked five times as many essays this year: {cue:M1}. The standard for a copied essay and the method are the same, so the count of essays found rose from 30 to 90 because 3,000 were checked instead of 600. Among those checked, the share found fell from 5 in 100 to 3 in 100.' } },
+    reason: { M1: 'The office checked five times as many essays this year: {cue:M1}. The copied essays found rose from 30 to 90, but the share found among those checked fell from 5 in 100 to 3 in 100.' } },
 
   { id: 'meas-birds-more', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a lake bird survey with many more volunteers', name: 'The lake bird survey with more searchers',
     text: "A nature club reports: 'The number of bird species recorded at Lake Ellis rose from 12 to 31 in two years. More kinds of bird are living there.' In the first year four volunteers searched the shore for 10 hours a month in all. In the second year fifteen volunteers searched it for 60 hours a month in all.",

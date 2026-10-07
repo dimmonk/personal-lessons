@@ -20,11 +20,11 @@ FC.cases('ideology', 'u3', [
     outcome: 'nationalism', route: { D1: ['nation'], N1: ['whole'], N2: ['keep'] },
     cues: { N1: 'When the whole country saves together, the whole country stands taller', N2: 'vote for the one that answers best' },
     segments: [
-      { text: 'A poster for the Vessan Savings Bond', note: 'That says what the poster is for. It does not say whom the poster speaks for.' },
+      { text: 'A poster for the Vessan Savings Bond', note: 'That only says what the poster is for, not whom it speaks for.' },
       { text: 'When the whole country saves together, the whole country stands taller' },
-      { text: 'Ask each party what it thinks of this bond, and vote for the one that answers best', note: 'That is about parties and voting, and it leaves the vote in place. It does not speak for everyone as one.' }
+      { text: 'Ask each party what it thinks of this bond, and vote for the one that answers best', note: 'That is about voting. It does not speak for everyone as one.' }
     ],
-    reason: { N1: 'The poster speaks for everyone in the country together: {cue:N1}. It names nobody in the country as the other side, and it says nothing about ranking anyone.' } },
+    reason: { N1: 'The poster speaks for everyone in the country together, with nobody named as the other side: {cue:N1}.' } },
 
   /* ---------- Fascism ---------- */
 
@@ -40,9 +40,9 @@ FC.cases('ideology', 'u3', [
     outcome: 'fasc', route: { D1: ['nation'], N1: ['whole'], N2: ['aside'] },
     cues: { N2: 'The election due in March is canceled, and speeches against the Committee are an offense' },
     segments: [
-      { text: 'The people of Brevia are one body, and the Committee is its single voice', note: 'That says whom the text speaks for. The words that take away anyone\'s say are in the last sentence.' },
-      { text: "Taxes will be paid to the Committee's office from the first of May", note: 'That says where the taxes go. It does not take away anyone\'s say.' },
+      { text: 'The people of Brevia are one body, and the Committee is its single voice', note: 'That says whom the text speaks for. The words that take away anyone\'s say come last.' },
+      { text: "Taxes will be paid to the Committee's office from the first of May", note: 'That says where the taxes go. Nobody\'s say is taken away.' },
       { text: 'The election due in March is canceled, and speeches against the Committee are an offense' }
     ],
-    reason: { N2: 'The text wants an election canceled and speeches against the Committee made an offense: {cue:N2}. That takes away the vote and the right to object, so that the Committee is the single voice.' } }
+    reason: { N2: 'The text cancels the election and makes speeches against the Committee an offense, so only the Committee can speak: {cue:N2}.' } }
 ]);

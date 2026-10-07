@@ -24,8 +24,8 @@ FC.cases('civics', 'u4', [
     text: "The federal housing agency has told every landlord in the country that rent may not rise by more than 3 percent a year, and that landlords who break the rule will be fined. Congress has not passed a law about rents.",
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
     cues: { E1: 'Congress has not passed a law about rents' },
-    reason: { E1: 'The rule demands something of every landlord, and the case tells you the law is missing: {cue:E1}. Fines for breaking it are one more demand with no law behind it.' },
-    not: { outcome: 'execute', why: 'An office that carries out a law is working from a law Congress passed and stays inside it. The case says there is none on rents.' } },
+    reason: { E1: 'The office caps rent rises at 3 percent for every landlord, and the law is missing: {cue:E1}. The fines for breaking it are one more demand with nothing behind it.' },
+    not: { outcome: 'execute', why: 'An office that carries out a law works from a law Congress passed and stays inside it. The story says there is none on rents.' } },
 
   /* ---------- The whole case ---------- */
 

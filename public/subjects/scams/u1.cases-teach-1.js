@@ -33,11 +33,11 @@ FC.cases('scams', 'u1', [
     route: { D1: ['nothing'] },
     cues: { D1: 'Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th' },
     segments: [
-      { text: 'Mr. Dunne has lived in his apartment for six years', note: 'That is background about Mr. Dunne. It is not what the letter tells him.' },
-      { text: 'the property management company sends him a letter', note: 'That says who the letter is from. The words that show what it does are in what the letter says.' },
+      { text: 'Mr. Dunne has lived in his apartment for six years', note: 'That is background about Mr. Dunne, not what the letter tells him.' },
+      { text: 'the property management company sends him a letter', note: 'That says who sent the letter, not what it says.' },
       { text: 'Our office will be closed on October 27 and 28 for a staff training day. It will open as usual on the 29th' }
     ],
-    reason: { D1: 'The letter only tells Mr. Dunne when the office will be shut and when it will open again: {cue:D1}. It asks him to do nothing, and it gives him no number, link or app of its own.' } },
+    reason: { D1: 'The letter only says when the office is shut and when it opens again, and asks him to do nothing.' } },
 
   { id: 'g-sec-app', use: 'teach', tier: 'clean', setting: 'home', topic: 'a new sign-in notice inside the mail app',
     text: "Priya opens her Hartley Mail app and finds this notice in its own message list: 'A new device signed in to your account at 2:02 p.m. today. If this was you, you do not need to do anything. If it was not, open this app and choose Security.'",
@@ -58,5 +58,5 @@ FC.cases('scams', 'u1', [
     text: "Kira is setting up a calendar app that her team uses. Her email account shows a box: 'Teamcal would like to see your calendar. Allow / Cancel.'",
     route: { D1: ['access'] },
     cues: { D1: 'Teamcal would like to see your calendar. Allow / Cancel' },
-    reason: { D1: 'The box asks Kira to press Allow so that an app can use one of her accounts: {cue:D1}. That is a request for a way into an account, and it is a request, so the case is not one that only tells her something.' } }
+    reason: { D1: 'The box asks Kira to press Allow so that an app can use her account: {cue:D1}. That is a request, so it is not just news.' } }
 ]);

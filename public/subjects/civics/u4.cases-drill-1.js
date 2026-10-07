@@ -17,8 +17,8 @@ FC.cases('civics', 'u4', [
     text: "The federal parks office announced that every visitor to a national park must now pay $12 to park a car. Congress has passed no law that lets the office charge for parking, and the law about the parks says nothing about it.",
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
     cues: { E1: 'Congress has passed no law that lets the office charge for parking' },
-    reason: { E1: 'A new fee falls on every visitor, and the case says that nothing stands behind it: {cue:E1}.' },
-    not: { outcome: 'execute', why: 'There is no law about parking for the office to be putting into practice, so a fee set by the office alone is a demand with no law behind it.' } },
+    reason: { E1: 'A new fee falls on every visitor, and the story says that nothing stands behind it: {cue:E1}.' },
+    not: { outcome: 'execute', why: 'There is no law about parking for the office to carry out. A fee set by the office alone is a demand with no law behind it.' } },
 
   { id: 'e-p-patrol', use: 'drill', tier: 'clean', setting: 'community', topic: 'a winter patrol on the northern coast',
     text: "The President told the navy to send two ships to patrol the northern coast through the winter, and named the admiral who would lead them.",
@@ -46,5 +46,5 @@ FC.cases('civics', 'u4', [
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
     cues: { E1: 'the President forgave the crime, and she was released that day' },
     reason: { E1: 'The President’s act comes after a federal court has found her guilty: {cue:E1}. It lifts what is left of her sentence.' },
-    not: { outcome: 'veto', why: 'No bill is in the case. The President is acting on a person, and on a crime that has already been judged.' } }
+    not: { outcome: 'veto', why: 'No bill is in the story. The President is acting on a person, and on a crime a court has already judged.' } }
 ]);

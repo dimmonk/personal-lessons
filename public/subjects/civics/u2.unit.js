@@ -12,12 +12,12 @@
 
 FC.unit('civics', 'u2', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Two',
   title: { text: 'The Constitution and its amendments' },
-  subtitle: 'The founding documents, what the Constitution lets Congress do, the Bill of Rights, and the amendments that came after',
+  subtitle: 'Which founding documents are law, what Congress may do, what the Bill of Rights protects, and how the Constitution changes',
   teaches: { steps: [], outcomes: [], terms: [] },   // a fact unit teaches no step, no name and no term (A12)
   assumes: ['u1'],
 
@@ -25,23 +25,23 @@ FC.unit('civics', 'u2', {
   // of one names the other. rule names both answers by {f:}; test is a question to put to yourself, with no name in it.
   ledger: [
     { id: 'date-convention~date-start', pair: ['date-convention', 'date-start'],
-      shared: 'Both are years in the life of the Constitution, and they are only two years apart, so they are easy to swap.',
+      shared: 'Both are years in the life of the Constitution, only two years apart, so they are easy to swap.',
       rule: 'One is the year the delegates wrote it: {f:date-convention}. The other is the year the government under it began: {f:date-start}.',
       test: 'Is it the year the document was written, or the year the government under it began?' },
     { id: 'law-decl~law-fed', pair: ['law-decl', 'law-fed'],
-      shared: 'Both come from the years of the founding, both are quoted as if the founders had settled a question, and neither is law.',
+      shared: 'Both come from the founding years, both get quoted as if the founders had settled a question, and neither is law.',
       rule: 'The answer for the Declaration is {f:law-decl}. The answer for the Federalist Papers is {f:law-fed}. What separates them is the job each was written to do: one explains a break with Britain, the other argues for a plan of government.',
       test: 'Was it written to explain why the colonies were leaving Britain, or to persuade people to approve the Constitution?' },
     { id: 'six-fifth~six-sixth', pair: ['six-fifth', 'six-sixth'],
-      shared: 'Both protect a person who is questioned or put on trial for a crime, and both come up when a story has an arrest or a court in it.',
-      rule: 'One is about what you cannot be forced to say, and about fair steps and one trial only: {f:six-fifth}. The other is about what you are entitled to have at your trial: {f:six-sixth}.',
-      test: 'Is it about what a person cannot be made to do or say, or about what a person on trial is entitled to have?' },
+      shared: 'Both protect a person who is questioned or put on trial for a crime, and both come up when a story has an arrest or a trial in it.',
+      rule: 'The Fifth limits what can be done to you: {f:six-fifth}. The Sixth is what you are given at your trial: {f:six-sixth}.',
+      test: 'Is it something you cannot be forced to do or say, or something you are given at your trial?' },
     { id: 'chg-propose~chg-approve', pair: ['chg-propose', 'chg-approve'],
-      shared: 'Both are shares of a group that must say yes before the Constitution can be changed, and both are fractions, so they are easy to swap.',
+      shared: 'Both are fractions of a group that must say yes before the Constitution can be changed, so they are easy to swap.',
       rule: 'One is the share of both chambers of Congress that must propose the change: {f:chg-propose}. The other is the share of the states that must approve it: {f:chg-approve}.',
       test: 'Is it asking about the vote in Congress, or about the approval of the states that follows?' },
     { id: 'vote-race~vote-sex', pair: ['vote-race', 'vote-sex'],
-      shared: 'Both are amendments that say the right to vote cannot be denied because of who you are, and both widened who could vote.',
+      shared: 'Both say the right to vote cannot be denied because of who you are, and both widened who could vote.',
       rule: 'One is about race: {f:vote-race}. The other is about sex: {f:vote-sex}.',
       test: 'Is it about race, or about sex?' }
   ],
@@ -56,7 +56,7 @@ FC.unit('civics', 'u2', {
               'con-decl', 'facts-decl', 'chk-decl-rights', 'chk-decl-consent',
               'con-art', 'facts-art', 'chk-art-one', 'chk-art-two', 'chk-art-three',
               'con-pow', 'facts-pow', 'chk-pow-money', 'chk-pow-trade', 'chk-pow-coin', 'chk-pow-war', 'chk-pow-proper'] },
-    { id: 'p2', title: 'The Bill of Rights, and the changes made later, then the drill',
+    { id: 'p2', title: 'The Bill of Rights and the later amendments, then the drill',
       cards: ['con-bor', 'facts-bor', 'chk-bor-what', 'chk-bor-why',
               'con-six', 'facts-six', 'chk-six-first', 'chk-six-fourth', 'chk-six-fifth', 'chk-six-sixth', 'chk-six-tenth', 'look-six-fifth-sixth',
               'con-chg', 'facts-chg', 'chk-chg-propose', 'chk-chg-approve', 'chk-chg-total', 'look-chg',
@@ -89,7 +89,8 @@ FC.unit('civics', 'u2', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, replacing old Unit Two (the founding documents) and its quick drill n2. A fact unit: twelve groups of facts under the idea each serves (the first plan and why it failed, the five dates, who wrote each document, which is law, what the Declaration says, what the first three articles built, what Article I lists for Congress, the Bill of Rights, six of its amendments, how the Constitution is changed, the Fourteenth Amendment, the amendments that ended slavery and widened the vote), fifty-three facts, eight look-alike pairs. Factual correction: the Bill of Rights is the first ten amendments and part of the Constitution; no row offers the two as rival answers (audit U2-2), and the old claims that the Declaration is law and that the Bill of Rights is a separate document are held as the right fact. Every fact comes from old Unit Two and the Fourteenth Amendment lines of old Unit One; nothing is added. The unit says plainly that it skips four of the first ten amendments, eleven of the seventeen later ones and the last four articles. Not yet deployed.' },
       { rev: 2, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 3, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 3, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 4, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, plainer facts and feedback.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // a fact unit has no refute card and no claim stage (A12); the old claims 5 and 13 are rows (docs/rebuild/civics-plan.md, gap 6)

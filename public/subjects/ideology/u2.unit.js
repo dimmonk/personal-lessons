@@ -5,12 +5,12 @@
 
 FC.unit('ideology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
   title: { fromKey: 'D1.class' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Seven names for a text on the side of working people, and the two questions that tell them apart',
+  subtitle: 'Seven names for a text on the workers’ side, and the two questions that tell them apart',
   teaches: { steps: ['C1', 'C2'], outcomes: ['socdem', 'classonly', 'demsoc', 'ml', 'anarch', 'mktsoc', 'marx'], terms: [] },
   assumes: ['u1'],        // everything Unit One teaches may be used; the first card restates the part this unit leans on
 
@@ -19,72 +19,72 @@ FC.unit('ideology', 'u2', {
   // question on which the two share no answer. taughtIn names the card that teaches a pair that has no card of its own.
   ledger: [
     { id: 'socdem~classonly', pair: ['socdem', 'classonly'], step: 'C1',
-      shared: 'Both put working people against owners, and both can be angry about the same profit and the same pay.',
-      rule: 'In {o:socdem} the text says what should be done about the businesses: the owners keep them, and a tax, a floor for pay or public services even out the result. In {o:classonly} the text takes the workers’ side and says nothing about the businesses.',
-      test: 'Look for a plan. Does the text say anything about what the government should do about pay, taxes or services, or about who should own the businesses? Or does it only say whose side it is on?' },
+      shared: 'Both are on the workers’ side, and both can be angry about the same profit and the same low pay.',
+      rule: 'In {o:socdem} the text asks for something: a tax, a floor for pay or public services, with the businesses staying where they are. In {o:classonly} the text takes the workers’ side and asks for nothing about the businesses.',
+      test: 'Does the text ask the government to do anything about pay, taxes or services, or about who owns the businesses? Or does it only say whose side it is on?' },
     { id: 'socdem~demsoc', pair: ['socdem', 'demsoc'], step: 'C1',
-      shared: 'Both want the government to do something about how businesses treat the people who work in them, and both can ask for health care, pensions and fair pay.',
-      rule: 'In {o:socdem} the owners keep their businesses, and the government taxes them and pays for services. In {o:demsoc} the businesses, or the biggest of them, pass out of the owners’ hands to the government. A text that asks for both is {o:demsoc}.',
-      test: 'Once the government has acted, who owns the business? Is it still the owners, or has it passed to the government?' },
+      shared: 'Both ask the government to act for the people who work in the businesses, and both can ask for health care, pensions and fair pay.',
+      rule: 'In {o:socdem} the businesses stay with their owners, and the government takes a share of the profit. In {o:demsoc} the businesses, or the biggest of them, pass to the government. A text that asks for both is {o:demsoc}.',
+      test: 'Once the government has acted, who owns the business: the same owners as before, or the government?' },
     { id: 'socdem~mktsoc', pair: ['socdem', 'mktsoc'], step: 'C1', taughtIn: 'q-business',
       shared: 'Both leave the businesses selling to customers in a market, and both can speak up for the workers.',
-      rule: 'In {o:socdem} the owners keep their businesses. In {o:mktsoc} each business belongs to the people who work in it, and competes with the others.',
+      rule: 'In {o:socdem} the same owners stay in charge. In {o:mktsoc} each business belongs to the people who work in it, and competes with the others.',
       test: 'Who owns each business: the same owners as before, or the people who work in it?' },
     { id: 'socdem~marx', pair: ['socdem', 'marx'], step: 'C1', taughtIn: 'q-business',
       shared: 'Both say that owners gain from what working people do, and both can be written for the workers.',
-      rule: 'In {o:socdem} the text asks for something to be done: a tax, a floor for pay, public services. In {o:marx} the text sets out how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses.',
-      test: 'Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners come to gain from the work, and stop there?' },
+      rule: 'In {o:socdem} the text asks for something to be done: a tax, a floor for pay, public services. In {o:marx} the text explains how owners come by their profit, as the way the whole system works, and asks for nothing about the businesses.',
+      test: 'Does the text ask the government to do something about pay, taxes or services? Or does it explain how owners gain from the work, and stop there?' },
     { id: 'classonly~demsoc', pair: ['classonly', 'demsoc'], step: 'C1', taughtIn: 'q-business',
       shared: 'Both are on the workers’ side, and both can be written in a hurry for a leaflet or a post.',
-      rule: '{o:classonly} says nothing about the businesses. {o:demsoc} says the businesses go out of the owners’ hands, to the government or to those who work in them.',
+      rule: '{o:classonly} says nothing about who should own the businesses. {o:demsoc} says they should pass out of the owners’ hands, to the government or to the people who work in them.',
       test: 'Does the text say who should own the businesses? Or does it only say whose side it is on?' },
     { id: 'classonly~mktsoc', pair: ['classonly', 'mktsoc'], step: 'C1', taughtIn: 'q-business',
       shared: 'Both are on the workers’ side, and neither mentions a tax.',
       rule: '{o:classonly} says nothing about who should own the businesses. {o:mktsoc} says each should belong to the people who work in it, and compete with the others.',
       test: 'Does the text say who should own each business, and that the businesses should compete?' },
     { id: 'classonly~marx', pair: ['classonly', 'marx'], step: 'C1',
-      shared: 'Both are on the workers’ side, both can mention that owners take a profit, and neither says what should be done with the businesses.',
-      rule: 'In {o:classonly} the text complains about this owner or this profit and says nothing about how owners gain. In {o:marx} the text sets out how owners come by their profit from the work done for them, as the way the whole system works, whoever the owner is.',
-      test: 'Is the text about this owner’s choices? Or does it explain why any owner would gain from the work, as the way the arrangement works?' },
+      shared: 'Both are on the workers’ side, both can mention that owners take a profit, and neither says what to do with the businesses.',
+      rule: 'In {o:classonly} the text complains about this owner or this profit. In {o:marx} the text explains why any owner gains from the work, as the way the whole system works.',
+      test: 'Is the text about this owner’s choices? Or does it explain why any owner would gain from the work?' },
     { id: 'demsoc~mktsoc', pair: ['demsoc', 'mktsoc'], step: 'C1', taughtIn: 'q-business',
-      shared: 'Both want the businesses taken from their owners, and both can ask for it through elections.',
+      shared: 'Both take the businesses from their owners, and both can ask for it through elections.',
       rule: 'In {o:demsoc} the businesses pass to the government, or to the people who work in them, and nothing is said about competing. In {o:mktsoc} each business belongs to the people who work in it and competes with the others for customers. A text that says both is {o:mktsoc}.',
       test: 'After the handover, do the businesses compete with each other for customers, set their own prices and risk failing?' },
     { id: 'demsoc~marx', pair: ['demsoc', 'marx'], step: 'C1', taughtIn: 'q-business',
       shared: 'Both can describe how owners gain from the workers’ work, and both stand with the workers.',
-      rule: 'In {o:marx} the text explains how owners gain and says nothing about what to do with the businesses. In {o:demsoc} the text says the businesses should pass out of the owners’ hands. A text that explains and also asks for the handover is {o:demsoc}.',
+      rule: 'In {o:marx} the text explains how owners gain and stops there. In {o:demsoc} the text says the businesses should pass out of the owners’ hands. A text that explains and also asks for the handover is {o:demsoc}.',
       test: 'Does the text say what should happen to the businesses, or does it only explain how owners gain?' },
     { id: 'mktsoc~marx', pair: ['mktsoc', 'marx'], step: 'C1', taughtIn: 'q-business',
       shared: 'Both are on the workers’ side, and both can talk about the owners’ profit.',
-      rule: '{o:mktsoc} says what should happen: the businesses belong to their workers and compete. {o:marx} explains how owners gain and says nothing about what to do with the businesses.',
+      rule: '{o:mktsoc} says what should happen: each business belongs to its workers and competes. {o:marx} explains how owners gain and says nothing about what to do with the businesses.',
       test: 'Does the text say who should own each business, or does it only explain how owners gain?' },
     { id: 'anarch~mktsoc', pair: ['anarch', 'mktsoc'], step: 'C1',
       shared: 'Both want each business to belong to the people who work in it.',
-      rule: 'In {o:mktsoc} the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In {o:anarch} the text says nothing about competing, and wants the government got rid of.',
+      rule: 'In {o:mktsoc} the businesses compete for customers, set their own prices and can fail, and the text says nothing about getting rid of the government. In {o:anarch} the text says nothing about competing, and wants the government gone.',
       test: 'Once the workers own it, does the business compete with others for customers and risk failing? Or does the text say nothing about that, and want the government gone?' },
     { id: 'demsoc~ml', pair: ['demsoc', 'ml'], step: 'C2',
       shared: 'Both can want the businesses, or the biggest of them, to pass to the government, and both can speak for the workers.',
-      rule: 'In {o:demsoc} the change comes through elections that the people asking for it can lose, or the text says nothing about how. In {o:ml} the party or the workers take power by force or rule as the only party, with no offer to give it up at an election.',
+      rule: 'In {o:demsoc} the change comes through elections that the people asking for it can lose, or the text says nothing about how. In {o:ml} a party or the workers take power by force or rule as the only party, with no election they could lose.',
       test: 'Does the text say that a party, or the workers, will take power by force or rule as the only party? If it says nothing about power, the answer is no.' },
     { id: 'demsoc~anarch', pair: ['demsoc', 'anarch'], step: 'C2', taughtIn: 'q-government',
       shared: 'Both can want each business to belong to the people who work in it.',
-      rule: 'In {o:demsoc} the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In {o:anarch} the government is to be got rid of now, with people running their work and their towns together without it.',
+      rule: 'In {o:demsoc} the government stays, and elections decide who runs it, or the text says nothing about how the change is made. In {o:anarch} the government is to be got rid of now, with people running their work and their towns together.',
       test: 'Should the government stay, or be done away with now, according to the text?' },
     { id: 'ml~anarch', pair: ['ml', 'anarch'], step: 'C2',
       shared: 'Both can want working people to take control from the owners without waiting for an election.',
-      rule: 'In {o:ml} the workers, through a party, take power and keep it, and no rival is allowed. In {o:anarch} the government is got rid of, so that no party and no person holds power over the rest.',
-      test: 'After the change, does a party or committee hold power and rule alone? Or is there no government, and people run things together?' },
+      rule: 'In {o:ml} a party takes power for the workers and keeps it, and no rival is allowed. In {o:anarch} the government is got rid of, so that no party and no person holds power over the rest.',
+      test: 'After the change, does a party hold power and rule alone? Or is there no government, and people run things together?' },
     { id: 'marx~ml', pair: ['marx', 'ml'], step: 'C2', taughtIn: 'q-government',
       shared: 'Both can set out how owners come by their profit.',
-      rule: 'In {o:marx} the text explains and says nothing about who takes power. In {o:ml} the text says that a party, or the workers, will take power and keep it, with no rivals allowed.',
+      rule: 'In {o:marx} the text explains and says nothing about who takes power. In {o:ml} the text says a party, or the workers, will take power and keep it, with no rivals allowed.',
       test: 'Does the text say that a party, or the workers, will take power and keep it? Or does it only explain how owners gain?' },
     { id: 'anarch~marx', pair: ['anarch', 'marx'], step: 'C2', taughtIn: 'q-government',
       shared: 'Both can set out how owners come by their profit, and both are written for the workers.',
-      rule: 'In {o:marx} the text explains and leaves the government as it is, or says nothing about it. In {o:anarch} the text, whether or not it explains, wants the government got rid of now, with people running things together without it.',
+      rule: 'In {o:marx} the text explains and leaves the government as it is, or says nothing about it. In {o:anarch} the text wants the government got rid of now, whether or not it explains.',
       test: 'Besides the explanation, does the text say that the government should be done away with, now?' },
     { id: 'classonly~ml', pair: ['classonly', 'ml'], step: 'C2',
       shared: 'Both can say nothing about what should happen to the businesses, and both stand with the workers.',
-      rule: '{o:classonly} says nothing about the government. {o:ml} says that a party, or the workers, will take power and keep it, even when it says nothing about the businesses.',
+      rule: '{o:classonly} says nothing about the government. {o:ml} says a party, or the workers, will take power and keep it, even when it says nothing about the businesses.',
       test: 'Does the text say anything about who will hold power, or how? If it says a party will take power and rule alone, the answer is yes.' },
     { id: 'classonly~anarch', pair: ['classonly', 'anarch'], step: 'C2', taughtIn: 'q-government',
       shared: 'Both can say nothing about what should happen to the businesses, and both stand with the workers.',
@@ -94,10 +94,10 @@ FC.unit('ideology', 'u2', {
 
   // Parts are stopping points. They follow the answers of the key's question about the businesses (A13).
   parts: [
-    { id: 'p1', title: 'The owners keep their businesses, nothing is said about them, or they pass to the government',
+    { id: 'p1', title: 'Owners keep the businesses, nothing is said, or the government takes over',
       cards: ['orient', 'meet-socdem', 'check-socdem', 'meet-classonly', 'check-classonly', 'look-socdem-classonly',
               'meet-demsoc', 'check-demsoc', 'look-socdem-demsoc', 'meet-ml', 'check-ml', 'look-demsoc-ml', 'exc-bulletin'] },
-    { id: 'p2', title: 'The workers own the businesses, an explanation of how owners gain, and the two questions',
+    { id: 'p2', title: 'Workers own the businesses, an explanation, and the two questions',
       cards: ['meet-anarch', 'check-anarch', 'look-ml-anarch', 'meet-mktsoc', 'check-mktsoc', 'look-anarch-mktsoc',
               'meet-marx', 'check-marx', 'look-classonly-marx',
               'q-business', 'check-business', 'q-government', 'check-government', 'worked-docks'], drill: true, close: ['recap'] }
@@ -106,7 +106,7 @@ FC.unit('ideology', 'u2', {
   // The drill: the stages that carry the skill. Items are authored in groups of look-alikes. Every case is new.
   drill: {
     key: 'u2',            // the old quick-drill totals for this unit were stored under pl:ideology:stats:u2 (frozen; see E8)
-    add: 'Some of these texts say nothing about the businesses, and some say nothing about the government. Saying that a text does not say is one of the answers to each question, and a text that says nothing about either is a real case with a name of its own.',
+    add: 'Some of these texts say nothing about the businesses, and some say nothing about the government. That is on purpose: {a:C1.none} is a real answer to each question, and a text that says nothing about either is {o:classonly}.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'c-p-keep', step: 'C1' }, { case: 'c-p-none1', step: 'C1' }],
@@ -135,7 +135,8 @@ FC.unit('ideology', 'u2', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the first answer of the gate. Two questions and seven names, one bakery as the lens, seventeen look-alike pairs. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild
     // (public/subjects/ideology/standard0.js); the full table is docs/rebuild/ideology-plan.md, part a.

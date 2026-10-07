@@ -18,12 +18,12 @@ FC.cases('math', 'u3', [
       A1: ['take the curtain’s width in cm, subtract 4, then divide by 3', 'A curtain has 32 pleats']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is {a:A1.formula}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give a rule and the result it came to, with one number in the rule left out. Each thing done to that number can be undone, so it is {a:A1.formula}.'
     },
     not: {
       outcome: 'simul',
-      why: 'Only one number is left out, and one calculation has a result to undo. {o:simul} would be the name if two numbers were left out and two separate facts were given about them.'
+      why: 'Only one number is missing, from one calculation. It would be {o:simul} if two numbers were missing, with two facts about them.'
     },
     steps: [
       {
@@ -50,7 +50,7 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '108 cm',
-          slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
+          slip: 'you undo the steps in the order they were done, instead of starting with the last one.'
         },
         {
           id: 's2',
@@ -59,7 +59,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Undo each thing done to the missing number with its opposite, in reverse order: the last thing done sits on the outside, as socks go on before shoes and come off after them. Running the {t:formula} forward on your answer proves it.'
   },
 
   {
@@ -77,17 +77,17 @@ FC.cases('math', 'u3', [
       A1: ['puts 18 guests in every 12 rooms', 'It has 36 rooms free']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is {a:A1.rate}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give so much for so many, and a new amount of one of them, with nothing added on top. That is {a:A1.rate}.'
     },
     not: {
       outcome: 'rearr',
-      why: 'The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. {o:rearr} would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.'
+      why: 'It gives a rate and a new amount, with nothing on top and no result to undo. It would be {o:rearr} if a calculation, or a fixed charge on the rate, came with a result.'
     },
     steps: [
       {
-        does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 18 guests for 12 rooms. The new amount is 36 rooms, so it is paired with the 12 rooms in the rate'
+        does: 'Match the new amount to the same thing in the rate',
+        working: 'The rate is 18 guests for 12 rooms. The new amount is 36 rooms, so it is matched to the 12 rooms in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -106,15 +106,15 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '6 guests',
-          slip: 'you divide 18 by 3 instead of multiplying, so the answer moves the wrong way: more rooms must mean more guests.'
+          slip: 'you divide 18 by 3 instead of multiplying, so the answer goes the wrong way: more rooms must mean more guests.'
         },
         {
           id: 's2',
           text: '24 guests',
-          slip: 'you pair the new amount with 18 guests, the other number in the rate, and not with 12 rooms, the number of the same thing.'
+          slip: 'you match the new amount to 18 guests instead of to 12 rooms, the number in the rate that counts the same thing.'
         }
       ]
     },
-    why: 'A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.'
+    why: 'A rate keeps its two numbers in step, so if the new amount is so many times as big, the other number is that many times as big. Checking the direction catches a rate scaled the wrong way.'
   }
 ]);

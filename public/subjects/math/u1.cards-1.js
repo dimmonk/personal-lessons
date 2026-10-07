@@ -11,35 +11,33 @@
 FC.cards('math', 'u1', [
 
   { id: 'orient-kind', kind: 'orient',
-    h: 'Before any sum: what kind of problem are you looking at?',
-    canDo: 'After this unit you can read a problem with numbers in it, taken from everyday life, and say which of five kinds it is, pointing to the words that tell you. You will not solve anything here: solving comes after sorting, and it only works when you start from the right kind.',
+    h: 'Before you do the math, check what the problem is about',
+    canDo: 'Before you start on a number problem from real life (a bill, a recipe, a loan), check what it is about. There are five kinds, each is worked out with different steps, and the wrong steps still give you a number that looks fine.',
     everyday: [
-      'You already do a rough version of this. Picture a family planning a birthday meal, and five questions coming up in one afternoon, every one of them with numbers in it. “We have 36 balloons for 5 tables: will they go round evenly, and how many are left over?” “The caterer charges a set fee plus a price for each guest, and the bill came to $310: how many guests were we charged for?” “The cake shop puts its prices up by the same amount every year: what will the cake cost in five years?” “There are 4 starters and 3 main courses: how many different menus can we offer?” “How long must the ribbon be to run from the top of a 3 m pole to a peg 4 m from its foot?”',
-      'All five have numbers, and all five ask you to work out a number. But they ask for different things, and each one is worked out with different steps. Use the steps for the wrong kind and you still get a number, and nothing in that number tells you that it is wrong. So before any sum there is an earlier question: what does this problem ask me to work out? This unit teaches that question.'
+      'A friend is planning a birthday meal, and five questions come up in one afternoon, each with numbers in it. “Will 36 balloons go round 5 tables evenly, and how many are left over?” “The caterer charges a set fee plus a price for each guest, and the bill came to $310: how many guests?” “The cake shop raises its price by the same amount every year: what will the cake cost in five years?” “With 4 starters and 3 main courses, how many different menus can we offer?” “How long is the ribbon from the top of a 3 m pole to a peg 4 m from its foot?”',
+      'All five ask for a number, but each is worked out in a different way. Start with the wrong steps and you still get a number, and nothing in it tells you it is wrong. So the first thing to do is ask one question: {q:M1}'
     ],
-    add: 'A problem here means a short account of a situation with numbers in it, like something a friend tells you or a line on a bill. Each of the five kinds is wide: the finer names inside it, each with its own steps, come in the later units.',
     map: { branch: 'gate' } },
 
   /* ---------- The first kind: how whole numbers split ---------- */
   { id: 'meet-whole', kind: 'meet', family: 'whole',
-    link: 'The first kind: numbers that are whole counts of things, and a question about how those counts fit into equal groups.',
+    link: 'First: a problem about a count of things that has to split into equal groups.',
     case: 'gt-chairs', mark: 'M1',
-    strip: [
-      'One number: 72, a count of whole things. You cannot have half a chair.',
-      'The caretaker has a rule: every row holds the same number of chairs, with none left over.',
-      'The question is about that rule: in how many different ways can 72 be split into equal rows?',
-      'Nothing changes as time passes, there is no shape to measure, and nothing is left to luck.'
-    ],
     explain: [
-      'What you are shown is a whole number of things and a question about how that number breaks into equal groups. Seventy-two chairs can be set out in rows of 2 chairs, or 3, or 4, or 6, or 8, and each of those layouts is one of the ways the caretaker is asking about.',
-      'The kind holds more than splitting. A count that will not share evenly leaves something over. Two things that each repeat (one every 15 seconds, one every 20) meet again after a while. A count of days ends on one of the seven days of the week, because the days go round from Monday to Sunday and back. And a number can be asked about what it is made of. In all of them the numbers are whole counts, and the question is how they fit into each other.',
-      'The kind does not depend on the story (chairs could be tiles, coins or days), on how big the number is, or on whether the sum looks easy or hard. It depends on what the problem asks.'
+      'The hall has 72 chairs, and the caretaker wants equal rows: 2 rows of 36, or 3 rows of 24, or 4 rows of 18, and so on. The numbers are whole counts, because you cannot have half a chair, and the question is how a count breaks into equal groups.',
+      'Three more questions about counts belong here too: how many are left over when things will not share evenly, when two things that repeat (one every 15 seconds, one every 20) happen together again, and where a count of days ends on the days of the week. It does not matter whether the things are chairs, tiles or days. What decides it is what the problem asks.'
+    ],
+    spot: [
+      { do: 'Check the numbers are whole counts of things: 72 chairs.', why: 'You cannot have half a chair.' },
+      { do: 'Find the equal groups: every row holds the same number of chairs.', why: 'Splitting evenly, with none left over, is what this is about.' },
+      { do: 'Check the question is about how the count splits: “In how many different ways can he set them out?”', why: 'Nothing else is asked: no price, no length, nothing changing over time.' },
+      { do: 'Look for leftovers or repeats too: “how many are left over”, “when do they next happen together”, “what day will it be”.', why: 'These are the same kind of problem, because they are all about how whole counts fit together.' }
     ],
     feature: { step: 'M1', option: 'whole' },
-    name: 'This kind of problem is {a:M1.whole}. “Whole numbers” are the counting numbers, such as 1, 2 and 72: no halves and no decimals. The word to hold on to is “split”. Wherever a problem asks how a count breaks into equal groups, what is left when it will not break evenly, or when repeating things next meet, it is this kind.' },
+    name: 'This is {a:M1.whole}. Swap the chairs for tiles or coins and nothing changes.' },
 
   { id: 'check-whole', kind: 'check', after: 'whole',
     case: 'gt-rolls',
-    ask: { type: 'phrase', step: 'M1', say: 'Which words show that this problem asks what is left over when a number is shared out? Tap them.',
+    ask: { type: 'phrase', step: 'M1', say: 'Which words show that this problem asks what is left over? Tap them.',
            answer: 'How many rolls are left over for the staff?' } }
 ]);

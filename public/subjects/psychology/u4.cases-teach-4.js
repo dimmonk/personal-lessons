@@ -40,7 +40,7 @@ FC.cases('psychology', 'u4', [
     text: "Ward is sixty-three and has always been touchy about being corrected. In his twenties he sulked for an evening whenever a foreman put him right, and he still does, and then comes around and says sorry. He has done it at three workplaces, and at home, where his wife says she just waits for the evening to pass. He has kept the same friends for forty years, the whole street asks him to fetch the ladders, and his last employer gave him a long-service watch.",
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
     cues: { P1: ['has always been touchy about being corrected', 'then comes around and says sorry', 'the whole street asks him to fetch the ladders'] },
-    reason: { P1: 'Ward has been touchy for forty years and in every place, and the words that decide it are {cue:P1}. The sulk passes by the evening, he says sorry, and nothing has been lost: the same friends, the same street, a long-service watch.' },
+    reason: { P1: 'Ward has been touchy for forty years in every place, and what decides it is {cue:P1}. The sulk passes by evening, he says sorry, and he has lost nobody.' },
     not: { outcome: 'narcvuln', why: 'The sulk can look like hurt withdrawal. But Ward keeps no count of what he is owed, it passes within the evening, and he has lost nobody.' } },
 
   { id: 'pa-bruno', use: 'teach', tier: 'misleading', setting: 'leisure', topic: 'a theatrical man and the village Christmas show', name: 'The theatrical uncle',

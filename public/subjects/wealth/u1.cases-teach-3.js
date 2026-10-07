@@ -19,12 +19,12 @@ FC.cases('wealth', 'u1', [
     route: { D1: ['none'] },
     cues: { D1: 'a 401(k) at work that she will not touch until she retires at 67' },
     segments: [
-      { text: 'Nia, 52, is a nurse. She has a condo that she owns outright, $35,000 in savings and ', note: 'That tells you what she has. It does not say anything about when she needs it, or what could lose it.' },
+      { text: 'Nia, 52, is a nurse. She has a condo that she owns outright, $35,000 in savings and ', note: 'That says what she has. It says nothing about when she needs it.' },
       { text: 'a 401(k) at work that she will not touch until she retires at 67' },
-      { text: '. She has no debts. Last week a leaflet arrived from a firm offering to review her finances for a fee.', note: 'The leaflet is somebody offering a service. Nothing in these words says that her money could be lost.' }
+      { text: '. She has no debts. Last week a leaflet arrived from a firm offering to review her finances for a fee.', note: 'The leaflet is a firm offering a service. Nothing in these words says her money could be lost.' }
     ],
-    reason: { D1: 'The case shows money being kept, and when it will be needed: {cue:D1}. Nothing comes out of it every year, no one thing is most of it, and nothing is said about a death or a will. The leaflet is a firm offering a service, and it raises nothing about her money.' },
-    not: { outcome: 'erosion', why: 'The leaflet mentions a fee, but that is a firm’s price for a review it hopes to sell her. It is not something taken out of her money, and nothing comes out of it.' } },
+    reason: { D1: 'She will not touch it for fifteen years, and nothing in the story comes out of it, rests on one thing or changes hands.' },
+    not: { outcome: 'erosion', why: 'The leaflet mentions a fee, but that is a firm’s price for a review it hopes to sell her. It is not taken out of her money.' } },
 
   { id: 'w-la-quiet', use: 'teach', tier: 'clean', setting: 'work', topic: 'a 401(k) that will not be touched for decades',
     text: "Prices have fallen by 20% this year, and Ines, 38, has noticed it on her 401(k) statement. She will not need any of the $30,000 in it for twenty-five years, and she is not selling anything.",
@@ -55,40 +55,40 @@ FC.cases('wealth', 'u1', [
     text: "Rob, 49, has $180,000 in a fund in his IRA. The fund company takes 1.4% of it every year, and the adviser who set it up takes another 0.3%. Rob has never read the statement that says so.",
     outcome: 'feecore', route: { D1: ['erosion'], E1: ['picking'] },
     cues: { D1: 'The fund company takes 1.4% of it every year, and the adviser who set it up takes another 0.3%', E1: 'The fund company takes 1.4% of it every year, and the adviser who set it up takes another 0.3%' },
-    reason: { D1: 'Two sums come out of the money every year, one to the fund company and one to the adviser: {cue:D1}. Rob has not read the statement, so nobody has asked whether the charges are worth it.',
-              E1: 'Both sums are charges for choosing investments, taken whatever the fund does: {cue:E1}.' } },
+    reason: { D1: 'Two sums come out of his money every year, one to the fund company and one to the adviser: {cue:D1}. He has never read the statement, so nobody has asked whether the fees are worth it.',
+              E1: 'Both sums are fees for choosing investments, taken whatever the fund does: {cue:E1}.' } },
 
   { id: 'b-flat-fee', use: 'baseline', tier: 'clean', setting: 'work', topic: 'a flat fee for tax work, taking nothing from the investments',
     text: "Elena, 61, pays her tax adviser a flat $2,400 a year to file her returns and plan her retirement savings. The fee has been the same for six years, the work is done in writing, and the adviser takes nothing from what she invests.",
     outcome: 'nocut', route: { D1: ['erosion'], E1: ['nomore'] },
     cues: { D1: 'pays her tax adviser a flat $2,400 a year', E1: ['The fee has been the same for six years', 'the adviser takes nothing from what she invests'] },
-    reason: { D1: 'Something comes out of her money every year: {cue:D1}. Whether the charge is fair does not change what kind of case this is: it is about something coming out every year.',
-              E1: 'The charge is a flat price for work that is done, and it does not grow with her money: {cue:E1}. Nothing here needs cutting back.' } },
+    reason: { D1: 'Something comes out of her money every year: {cue:D1}. Whether the fee is fair does not change that.',
+              E1: 'The fee is a flat price for work that is done, and it does not grow with her money: {cue:E1}. Nothing here needs cutting back.' } },
 
   { id: 'b-bill-saved', use: 'baseline', tier: 'clean', setting: 'home', topic: 'a roof bill already saved for in cash',
     text: "Joe has a $22,000 bill for a new roof from his roofer, due in three months. He has the $22,000 in a savings account, and it is earning interest.",
     outcome: 'covered', route: { D1: ['timing'], T1: ['ready'] },
     cues: { D1: 'a $22,000 bill for a new roof from his roofer, due in three months', T1: 'He has the $22,000 in a savings account' },
-    reason: { D1: 'The case is about money needed on a date: {cue:D1}. That is the kind of case the answer about a fall in prices is for, even though here the money is already safe in cash.',
-              T1: 'The money for the bill is already in cash, not in anything whose price can fall: {cue:T1}. A fall would force no sale.' } },
+    reason: { D1: 'This is about money needed on a date: {cue:D1}. That fits {a:D1.timing}, even though here the money is already safe in cash.',
+              T1: 'The money for the bill is already in cash, not in anything that can fall: {cue:T1}. A fall would force no sale.' } },
 
   { id: 'b-company-shares', use: 'baseline', tier: 'clean', setting: 'work', topic: 'most of the money in an employer’s shares',
     text: "Dan, 44, sells car parts for a living. $400,000 of the $500,000 he owns is shares in the company he works for, and he could sell them any day. He does not run the company.",
     outcome: 'diversify', route: { D1: ['shock'], S1: ['freeheld'] },
     cues: { D1: '$400,000 of the $500,000 he owns is shares in the company he works for', S1: ['he could sell them any day', 'He does not run the company'] },
-    reason: { D1: 'One thing is most of what he owns: {cue:D1}. If that company did badly, nearly everything he has would do badly with it.',
+    reason: { D1: 'One thing is most of what he owns: {cue:D1}. If that company did badly, nearly everything he has would go with it.',
               S1: 'He is free to sell and has no part in running the company: {cue:S1}.' } },
 
   { id: 'b-old-will', use: 'baseline', tier: 'clean', setting: 'family', topic: 'a will that still names a former husband',
     text: "Moira, 59, has not changed her will since her divorce nine years ago. It still leaves her house and savings, $450,000, to her former husband.",
     outcome: 'basicdocs', route: { D1: ['handover'], H1: ['papers'] },
     cues: { D1: 'still leaves her house and savings, $450,000, to her former husband', H1: 'has not changed her will since her divorce nine years ago' },
-    reason: { D1: 'The case is about who gets the money when she dies, and the words that show the problem are these: {cue:D1}.',
+    reason: { D1: 'This is about who gets the money when she dies, and these words show the problem: {cue:D1}.',
               H1: 'The paper is out of date: {cue:H1}.' } },
 
   { id: 'b-long-saver', use: 'baseline', tier: 'clean', setting: 'work', topic: 'a 401(k) that will not be touched for thirty years',
     text: "Kim, 35, pays $350 a month into a 401(k) that she will not touch for thirty years. She has a steady job, no debts and three months of pay in savings.",
     route: { D1: ['none'] },
     cues: { D1: 'pays $350 a month into a 401(k) that she will not touch for thirty years' },
-    reason: { D1: 'The case shows money being put away for decades: {cue:D1}. It says nothing about what comes out of it, one thing most of it rests on, a bill, or a death, so nothing in what it says could lose the money.' } }
+    reason: { D1: 'Money is being put away for decades: {cue:D1}. Nothing in the story comes out of it, rests on one thing, falls due on a date or changes hands, so there is nothing that could lose the money.' } }
 ]);

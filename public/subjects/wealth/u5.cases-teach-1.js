@@ -1,4 +1,4 @@
-// Wealth Preservation, Unit Five: cases shown inside cards, part one (the two paper terms, the first two names and their look-alike pair).
+// Wealth Preservation, Unit Five: stories shown inside cards, part one (the two paper terms, the first two names and their look-alike pair).
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 // A case that only carries a term card (use 'teach', no route) is not asked anything.
 // route is { D1: [option], H1: [option] }: the answer to the first question, then to this unit's question.
@@ -28,11 +28,11 @@ FC.cases('wealth', 'u5', [
     outcome: 'basicdocs', route: { D1: ['handover'], H1: ['papers'] },
     cues: { H1: 'Last year she married Dev, and they bought a condo together. She has not changed the will.' },
     segments: [
-      { text: 'Aoife, 34, wrote a will at 28 that leaves everything to her sister. ', note: 'That is the paper and the person it names. It is half of what the question asks for: the other half is what has happened in her life since.' },
+      { text: 'Aoife, 34, wrote a will at 28 that leaves everything to her sister. ', note: 'That is the will and the person it names. The question asks what changed in her life since.' },
       { text: 'Last year she married Dev, and they bought a condo together. She has not changed the will.' }
     ],
-    reason: { H1: 'The will was written before a marriage and has not been touched since: {cue:H1}. It names her sister and not the husband she now has, and the condo they bought together is a new thing the will never had to deal with.' },
-    not: { outcome: 'simple', why: 'The case does show a will, but it does not show a current one. A paper written before a marriage no longer matches her life, so one of the papers is out of date.' } },
+    reason: { H1: 'The will was written before her marriage and still names only her sister.' },
+    not: { outcome: 'simple', why: 'The story shows a will, but not a current one: it was written before her marriage, so it no longer matches her life.' } },
 
   /* Nothing more needed */
 
@@ -45,8 +45,8 @@ FC.cases('wealth', 'u5', [
     text: "Fenella, 66, was widowed last year. She has a house and savings worth $280,000. After her husband died she rewrote her will, which leaves everything equally to her two children, changed the beneficiary form on her IRA to name them, and signed a power of attorney naming her son. Her children talk on the phone every Sunday. A letter arrived from a firm offering a 'full estate protection review' for $2,400.",
     outcome: 'simple', route: { D1: ['handover'], H1: ['inorder'] },
     cues: { H1: ["After her husband died she rewrote her will, which leaves everything equally to her two children, changed the beneficiary form on her IRA to name them, and signed a power of attorney naming her son", 'a house and savings worth $280,000'] },
-    reason: { H1: 'The case shows each paper brought up to date after the one thing in her life that changed: {cue:H1}. $280,000 is far below the tax-free limit, so no estate tax would come out, and the children talk every Sunday, so nothing here is about the people. The letter is an offer, and the case gives it no problem to answer.' },
-    not: { outcome: 'basicdocs', why: 'A will, a form and {t:poa} are all in the case, and each was brought up to date after the husband died. Nothing is missing, and nothing names someone it should no longer name.' } },
+    reason: { H1: 'Each paper was brought up to date after her husband died: {cue:H1}. The $280,000 is far below the limit, the children talk every Sunday, and the letter is a sales offer with no problem to fix.' },
+    not: { outcome: 'basicdocs', why: 'A will, a form and {t:poa} are all there, and each was updated after the husband died. Nothing is missing, and nothing names someone it should no longer name.' } },
 
   /* Papers out of date, or papers current */
 

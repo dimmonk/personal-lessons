@@ -14,8 +14,8 @@ FC.cases('civics', 'u4', [
     text: "The President told the air force to move its transport planes from two old bases to one new base in the south before the end of the month. The generals who run the bases were sent the order on Friday.",
     outcome: 'commander', route: { D1: ['president'], E1: ['military'] },
     cues: { E1: 'The President told the air force to move its transport planes from two old bases to one new base in the south' },
-    reason: { E1: 'The President is telling the armed forces where to go: {cue:E1}. No office is working from a law, and nothing is demanded of people outside the forces.' },
-    not: { outcome: 'execute', why: 'An office that carries out a law is working from a law Congress passed, and the case shows none. Here the President is telling the air force where its planes go.' } },
+    reason: { E1: 'The President tells the air force where to move its planes: {cue:E1}. No office is working from a law, and nothing is demanded of people outside the forces.' },
+    not: { outcome: 'execute', why: 'An office that carries out a law works from a law Congress passed, and the story shows none. Here the President tells the air force where its planes go.' } },
 
   /* ---------- Dealing with another country ---------- */
 
@@ -28,8 +28,8 @@ FC.cases('civics', 'u4', [
     text: "An official acting for the President met the officials of a country across the sea to talk about how many tourists each country’s ships may carry. The talks ended on Thursday with a signed agreement.",
     outcome: 'diplomacy', route: { D1: ['president'], E1: ['abroad'] },
     cues: { E1: 'An official acting for the President met the officials of a country across the sea' },
-    reason: { E1: 'The decision is made by an official speaking for the President: {cue:E1}. Two countries are dealing with each other, and the talks end in an agreement they sign.' },
-    not: { outcome: 'execute', why: 'An office that carries out a law is working from a law Congress passed, and the case shows none. Here an official is meeting another country’s officials and signing an agreement with them.' } },
+    reason: { E1: 'An official speaking for the President meets another country’s officials: {cue:E1}. The talks end in an agreement they sign.' },
+    not: { outcome: 'execute', why: 'An office that carries out a law works from a law Congress passed, and the story shows none. Here an official meets another country’s officials and signs an agreement with them.' } },
 
   /* ---------- The look-alike pair: the same ships and the same port, an order to one side and talks with the other ---------- */
 

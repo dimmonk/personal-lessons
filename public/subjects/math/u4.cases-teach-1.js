@@ -110,14 +110,14 @@ FC.cases('math', 'u4', [
     segments: [
       {
         text: 'A man buys a bond for $5,000 that pays 3% interest a year.',
-        note: 'This is the part that has a percentage in it, and it is why the problem looks like the second kind. The words that settle it are about what happens to the interest.'
+        note: 'This has a percentage in it, so it looks like {o:expg}. The words that settle it are about what happens to the interest.'
       },
       {
         text: 'The interest is paid out to him each year, and the $5,000 itself never changes.'
       },
       {
         text: 'How much interest will he have been paid in total after 8 years?',
-        note: 'That is the question, and it gives a time or a target. The words that say how the amount changes each time come before it.'
+        note: 'That is the question. The words that say how the amount changes each time come before it.'
       }
     ]
   }

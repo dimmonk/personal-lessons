@@ -25,11 +25,11 @@ FC.cases('civics', 'u4', [
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
     cues: { E1: 'a clerk at the federal animal-health agency checked it against the list in the law, found it complete and mailed her the permit' },
     segments: [
-      { text: 'Under a law Congress passed, anyone who brings a pet bird into the country needs an import permit', note: 'That is the law, and it came first. It is not the decision in the case.' },
-      { text: 'Mina sent in her form last month', note: 'That is what the person asking did. The decision belongs to the office that answers her.' },
+      { text: 'Under a law Congress passed, anyone who brings a pet bird into the country needs an import permit', note: 'That is the law, and it came first. It is not what the office decides.' },
+      { text: 'Mina sent in her form last month', note: 'That is what the person asking did. What you need is what the office does.' },
       { text: 'a clerk at the federal animal-health agency checked it against the list in the law, found it complete and mailed her the permit' }
     ],
-    reason: { E1: 'The decision is the clerk’s: an office is processing an application under a law that is already there. It writes no new rule, and it asks for nothing the law does not list.' } },
+    reason: { E1: 'A clerk is processing an application under a law that is already there, and asks for nothing the law does not list.' } },
 
   /* ---------- Beyond the President's power ---------- */
 
@@ -42,8 +42,8 @@ FC.cases('civics', 'u4', [
     text: "The federal education agency announced that every college in the country must charge each student a new fee of $200 a year and send the money to the government. The agency says it can do this by its own rule. No law Congress passed mentions such a fee.",
     outcome: 'beyondpres', route: { D1: ['president'], E1: ['newduty'] },
     cues: { E1: 'No law Congress passed mentions such a fee' },
-    reason: { E1: 'The rule demands a new fee of every student, and the case tells you the law is missing: {cue:E1}. The {t:agency}’s own rule is all there is behind it.' },
-    not: { outcome: 'execute', why: 'An office that carries out a law stays inside it. Here no law is behind the fee at all, so there is nothing for the office to be carrying out.' } },
+    reason: { E1: 'The office demands a new $200 fee of every student, and the law is missing: {cue:E1}. Only the office’s own rule stands behind it.' },
+    not: { outcome: 'execute', why: 'An office that carries out a law stays inside it. Here no law is behind the fee at all.' } },
 
   /* ---------- The look-alike pair: the same food rules, with a law behind one and none behind the other ---------- */
 
@@ -64,8 +64,8 @@ FC.cases('civics', 'u4', [
     outcome: 'execute', route: { D1: ['president'], E1: ['carryout'] },
     cues: { E1: 'The order asks nothing of families. It only tells the office how to run the law' },
     segments: [
-      { text: 'Congress passed a law last year that lets families apply for a federal grant to repair storm damage', note: 'That is the law, and it is why the order exists. The words asked for are in the order itself.' },
-      { text: 'the President signed an executive order telling the federal housing agency to answer every grant application within sixty days', note: 'That is the part that looks like the second name: an order from the President, with no vote. What settles it is what the order asks of people.' },
+      { text: 'Congress passed a law last year that lets families apply for a federal grant to repair storm damage', note: 'That is the law, and it is why the order exists. The words that decide it are in the order itself.' },
+      { text: 'the President signed an executive order telling the federal housing agency to answer every grant application within sixty days', note: 'That is the part that looks suspicious: an order from the President that nobody voted on. What settles it is what the order asks of people.' },
       { text: 'The order asks nothing of families. It only tells the office how to run the law' }
     ] }
 ]);

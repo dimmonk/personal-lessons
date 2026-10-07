@@ -1,5 +1,5 @@
 // Basic Math, Unit Five: the drill's problems (part 7 of 9), asked as a whole route.
-// Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question,
+// Every problem has a route, marked words and a reason for the key's first question and for the unit's own question,
 // and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
@@ -22,12 +22,12 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that something happens, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give the chance of red on each of 3 separate spins still to come and ask how likely it is that red comes up at least once; the 8 spins that are over do not change it, so the answer is {a:C1.atleast}.'
+      M1: 'The words {cue:M1} ask how likely red is in the next 3 spins, so you are finding a chance, not a count.',
+      C1: 'The words {cue:C1} give 3 separate spins still to come. The 8 spins already over do not change them.'
     },
     not: {
       outcome: 'multprin',
-      why: 'Spins that are multiplied together can look like {o:multprin}, which also multiplies separate things. But the problem asks how likely something is, not how many different results there are, and it asks for at least one.'
+      why: 'Multiplying spins can look alike, but the problem asks how likely something is, not how many results there are.'
     },
     steps: [
       {
@@ -35,11 +35,11 @@ FC.cases('math', 'u5', [
         working: 'Each spin: 1 − 0.25 = 0.75'
       },
       {
-        does: 'Multiply those chances: the chance that none of them happens',
+        does: 'Multiply those chances to get the chance that none happens',
         working: '0.75 × 0.75 × 0.75 = 0.421875'
       },
       {
-        does: 'Take that chance away from 1: the chance that at least one happens',
+        does: 'Take that away from 1 to get the chance that at least one happens',
         working: '1 − 0.421875 = 0.578125, which is 57.8%'
       }
     ],
@@ -50,7 +50,7 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '95.8%',
-          slip: 'you count the 8 spins that are over as well as the 3 still to come, as if red had to make up for them.'
+          slip: 'you count the 8 spins already over as well as the 3 to come, as if red were due.'
         },
         {
           id: 's2',
@@ -59,6 +59,6 @@ FC.cases('math', 'u5', [
         }
       ]
     },
-    why: 'Either at least one of the things happens, or none of them does. These two cannot both be true and nothing else can happen, so their chances add up to 1. The chance of none is easy to find: the things are separate, so it is one product. What is left of 1 is the chance that one or more happens.'
+    why: 'Either at least one of the things happens or none does, so the two chances add up to 1. The chance of none is one product, because the things are separate. What is left of 1 is the chance that one or more happens.'
   }
 ]);

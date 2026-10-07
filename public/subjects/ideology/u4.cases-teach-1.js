@@ -21,10 +21,10 @@ FC.cases('ideology', 'u4', [
             T1: 'Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first' },
     segments: [
       { text: "The shops of Oldgate have closed on Sunday since our grandfathers' day, so that a household can eat one meal together and go to church or chapel if it wishes.", note: 'That names the old way, a day of rest that is still kept. It is not yet what the text wants done with it.' },
-      { text: 'That day of rest should guide how the town plans its markets.', note: 'That says the old way should guide, which is the answer to Unit One’s question. This question asks what is to be done with it.' },
+      { text: 'That day of rest should guide how the town plans its markets.', note: 'That says the old way should guide, which Unit One already asked. This question is about what to do with it.' },
       { text: 'Keep it, and if the opening hours must change, change them slowly and ask the shopkeepers first' }
     ],
-    reason: { T1: 'The text says what is to be done with the day of rest: {cue:T1}. The day is still kept, and nothing that has gone is asked back. The text asks for it to stay, and for any change to be slow.' } },
+    reason: { T1: 'The day of rest is still kept, and the text asks only to keep it and change slowly: {cue:T1}.' } },
 
   /* ---------- Bringing back what has gone ---------- */
   { id: 'i4-meet-react', use: 'teach', tier: 'clean', setting: 'faith', topic: 'church courts abolished by an assembly', name: 'The Church courts of Aldmere',
@@ -38,5 +38,5 @@ FC.cases('ideology', 'u4', [
     outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },
     cues: { D1: ['Give the lord his market and his place on the bench back, and let the blessing be said again from his steps'],
             T1: ['That Act was a theft, and not a reform', 'Give the lord his market and his place on the bench back'] },
-    reason: { T1: 'The text names an order that has gone, the lord’s market and his place on the bench, and calls the way it was lost a wrong: {cue:T1}. It asks for the order to be given back, and nothing it names is still in place.' } }
+    reason: { T1: 'The lord’s market is gone, the text calls its loss a theft, and it asks for it back: {cue:T1}.' } }
 ]);

@@ -4,12 +4,12 @@
 
 FC.unit('psychology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
   title: { fromKey: 'D1.tactic' },        // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Four things one person can do to another that work against them, and how to tell them from the many cases where none of them is happening',
+  subtitle: 'Four things one person does to another that really do harm, and the normal argument that is none of them',
   teaches: { steps: ['T1'], outcomes: ['gaslight', 'darvo', 'lovebomb', 'projection', 'ordexchange'], terms: [] },
   assumes: ['u1', 'u2'],  // everything Units One and Two teach may be used; the first card restates the part this unit leans on
 
@@ -21,35 +21,35 @@ FC.unit('psychology', 'u3', {
   // The key's two tie-breaks are not restated here: they live in the key (yieldsTo) and are printed on the exception cards.
   ledger: [
     { id: 'gaslight~darvo', pair: ['gaslight', 'darvo'], step: 'T1',
-      shared: 'In both, a person denies that something happened.',
-      rule: '{o:darvo} is one exchange: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. {o:gaslight} is a denial of what happened that comes back again and again over weeks or months, until the other person doubts their own memory.',
-      test: 'Is this one exchange, with an attack and the speaker playing the one wronged? Or is it the same denial coming back over weeks or months, until the other person doubts their own memory?' },
+      shared: 'In both, someone denies that something happened.',
+      rule: '{o:darvo} is one conversation: asked about something they did, the person denies it, attacks the one who asked, and plays the one wronged. {o:gaslight} is the same denial coming back for weeks or months, until the other person doubts their own memory.',
+      test: 'Is it one conversation, with a denial, an attack and the speaker playing the one wronged? Or does the same denial keep coming back for weeks or months, until the other person doubts their own memory?' },
     { id: 'darvo~projection', pair: ['darvo', 'projection'], step: 'T1',
-      shared: 'In both, one person goes for the other about something the speaker is guilty of.',
-      rule: 'In {o:darvo} the attack comes in answer to being asked about something the person did, along with a denial and the person playing the one wronged. In {o:projection} nobody has raised anything with the speaker: the accusation comes first.',
-      test: 'Did someone first raise something with the speaker, so that the speaker is answering it? Or did the speaker start with the accusation?' },
+      shared: 'In both, one person goes after the other for something the speaker is guilty of.',
+      rule: 'In {o:darvo} the attack answers something the other person raised, along with a denial and the speaker playing the one wronged. In {o:projection} nobody has raised anything with the speaker: the accusation comes first.',
+      test: 'Did someone raise something with the speaker first, so that the speaker is answering? Or did the speaker start with the accusation?' },
     { id: 'gaslight~ordexchange', pair: ['gaslight', 'ordexchange'], step: 'T1',
-      shared: 'In both, two people disagree about something that happened, and one of them says it did not happen the way the other says.',
-      rule: 'The difference is how often it comes back, and what it does to the other person. In {o:gaslight} the thing really happened and the case shows it, the same denial returns over weeks or months, and the other person starts to doubt their own memory. In {o:ordexchange} it is one disagreement, or the person who says it did not happen is right, and each person still trusts their own memory.',
-      test: 'Does the case show that the thing really happened? Does the same denial come back over weeks or months? Does the other person now doubt their own memory? Or is this one disagreement that gets settled?' },
+      shared: 'In both, two people disagree about what happened, and one says it did not happen the way the other says.',
+      rule: 'The difference is how often it comes back, and what it does to the other person. In {o:gaslight} the thing really happened, the same denial returns for weeks or months, and the other person starts to doubt their own memory. In {o:ordexchange} it is one disagreement, or the person denying it is right, and each person still trusts their own memory.',
+      test: 'Does the story show that the thing really happened? Does the same denial come back for weeks or months? Does the other person now doubt their own memory? Or is it one disagreement that gets settled?' },
     { id: 'darvo~ordexchange', pair: ['darvo', 'ordexchange'], step: 'T1',
       shared: 'In both, someone is told about something and answers with a denial or with anger.',
-      rule: 'In {o:darvo} the case shows the person did it, and the answer is a denial, an attack on the one who raised it, and a claim to be the one wronged: all three. In {o:ordexchange} the answer may be a denial, or angry, or sharp, but either the case shows the person did not do it, or the answer is not all three.',
-      test: 'Does the case show that the person did what was raised with them? And is the answer a denial, an attack on the one who raised it, and a claim to be the one wronged: all three?' },
+      rule: 'In {o:darvo} the story shows the person did it, and the answer is all three: a denial, an attack on the one who raised it, and playing the one wronged. In {o:ordexchange} the answer may be a denial, or angry, or sharp, but either the story shows they did not do it, or the answer is not all three.',
+      test: 'Does the story show that the person did what was raised with them? And is the answer all three: a denial, an attack on the one who raised it, and playing the one wronged?' },
     { id: 'lovebomb~ordexchange', pair: ['lovebomb', 'ordexchange'], step: 'T1',
       shared: 'In both, someone is warm and generous early in a relationship.',
-      rule: 'In {o:lovebomb} the attention is far more than the relationship so far would explain, and it is later pulled back or turns into criticism. In {o:ordexchange} the warmth fits how well the two know each other, or it stays when the other person sets a limit.',
-      test: 'Set the attention against how long the two have known each other. Is it far more? Then ask what happens to it later, when the other person says no or goes their own way.' },
+      rule: 'In {o:lovebomb} the attention is far more than the time together would explain, and later it is pulled back or turns into criticism. In {o:ordexchange} the warmth fits how well the two know each other, or it stays when the other person says no.',
+      test: 'Is the attention far more than the time together would explain? Then what happens to it later, when the other person says no or goes their own way?' },
     { id: 'projection~ordexchange', pair: ['projection', 'ordexchange'], step: 'T1',
       shared: 'In both, one person accuses the other of something.',
-      rule: 'In {o:projection} the case shows the accuser doing or feeling it, and nothing shows the other person doing it. In {o:ordexchange} the case shows the other person doing it, so the accusation is fair, even if the accuser does it too.',
-      test: 'Who does the case show doing or feeling what is being said: the person accused, the accuser, or both?' }
+      rule: 'In {o:projection} the story shows the accuser doing it, and nothing shows the other person doing it. In {o:ordexchange} the story shows the other person doing it, so the accusation is fair, even if the accuser does it too.',
+      test: 'Who does the story show doing what is being said: the person accused, the accuser, or both?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The four things, and the ordinary exchange',
+    { id: 'p1', title: 'Four things people do, and a normal argument',
       cards: ['orient', 'meet-gaslight', 'check-gaslight', 'meet-darvo', 'check-darvo', 'exc-memory',
               'meet-projection', 'check-projection', 'exc-own',
               'meet-lovebomb', 'check-lovebomb', 'meet-ordexchange', 'check-ordexchange'] },
@@ -86,7 +86,8 @@ FC.unit('psychology', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     wrongIdeas: [],
     signoff: {

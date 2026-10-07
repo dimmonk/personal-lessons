@@ -20,11 +20,11 @@ FC.cases('stats', 'u4', [
     cues: { M1: "gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports" },
     segments: [
       { text: "A software company gives each team a $100 bonus for every 10 bug reports it closes in a month, and the team itself decides how a problem is split into reports." },
-      { text: "The team closed 40 reports in March and 120 in May.", note: 'These are the figures that rose, from 40 to 120. They do not show who gains from the rise or how it could be raised.' },
-      { text: "In May it began writing one report for each page a problem shows up on, where before it wrote one report for the whole problem.", note: 'This shows how the figure was raised. The words asked for are the ones that show the team gains from a higher figure and decides how it is made. They come in the first sentence.' },
-      { text: "The testers, who are paid a flat wage, count the different problems in the product themselves, and they counted 25 in March and 25 in May.", note: 'This is a count of the real thing, made by people who gain nothing from it. It shows whether the real thing moved, and not what made the figure move.' }
+      { text: "The team closed 40 reports in March and 120 in May.", note: 'These are the numbers that rose. They do not say who gains from the rise or how it was done.' },
+      { text: "In May it began writing one report for each page a problem shows up on, where before it wrote one report for the whole problem.", note: 'This shows how the count was raised. The words you want, who is paid and who decides, are in the first sentence.' },
+      { text: "The testers, who are paid a flat wage, count the different problems in the product themselves, and they counted 25 in March and 25 in May.", note: 'This count is made by people who gain nothing from it. It shows the real thing stood still, not why the figure rose.' }
     ],
-    reason: { M1: 'The team is paid for each report it closes, and it decides how a problem is split into reports: {cue:M1}. Splitting one problem into three reports raises the figure from 40 to 120 with no more problems fixed, and the testers’ count of different problems stayed at 25.' } },
+    reason: { M1: 'The team is paid per report and decides how to split a problem, so it raised the count from 40 to 120 while the testers still found 25 problems.' } },
 
   { id: 'meas-bus-logged', use: 'teach', tier: 'clean', setting: 'community', topic: 'bus drivers and an on-time button', name: 'The bus drivers’ button',
     text: "A city bus company gives its drivers a bonus when at least 90 of every 100 of their trips are logged 'on time'. At the end of each trip the driver presses 'on time' or 'late' on a panel. Over the past year the share of trips logged on time rose from 78 of every 100 to 90 of every 100, and the company's report says: 'Our buses are now on time 90% of the time.'",
@@ -48,7 +48,7 @@ FC.cases('stats', 'u4', [
     text: "A bank reports: 'Customer complaints fell from 600 to 400 this year.' Until last year the bank logged every complaint, whether made by phone, in person or in writing. This year it logs only complaints made in writing. Last year 350 of the 600 complaints were written ones, and this year 400 are.",
     outcome: 'defshift', route: { S1: ['measure'], M1: ['newrule'] },
     cues: { M1: "Until last year the bank logged every complaint, whether made by phone, in person or in writing. This year it logs only complaints made in writing" },
-    reason: { M1: 'The bank counts differently this year: {cue:M1}. Counted last year’s way, this year’s complaints would be more than 400, because phone and in-person ones are no longer logged. Counted this year’s way, last year’s were 350, so written complaints rose from 350 to 400 while the figure fell from 600 to 400.' } },
+    reason: { M1: 'The bank counts differently this year: {cue:M1}. Written complaints actually rose, from 350 to 400, while the figure fell from 600 to 400.' } },
 
   { id: 'meas-snow-moved', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a ski area and a measuring pole in a hollow', name: 'The ski area’s moved pole',
     text: "A ski area reports: 'Average snow depth in February rose from 90 cm to 120 cm over the past ten years.' In year six the ski area moved its measuring pole from an open slope to a hollow behind the lodge, where wind drifts snow. A second pole left on the open slope read 91 cm in the first February and 92 cm in the tenth.",

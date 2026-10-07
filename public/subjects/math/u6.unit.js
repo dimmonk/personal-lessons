@@ -1,22 +1,21 @@
 // Basic Math, Unit Six: the unit record. A PROCEDURE UNIT (kind 'P', lesson standard A12), the fifth of the subject.
-// It teaches the key's two questions about shapes, "What does the problem give you to work with?" and "Does the problem ask how long something
-// is, or how much area or volume it has?", and the four kinds of problem their answers lead to. The two questions cross: the first sorts
-// two sides of a triangle with a square corner, one side and an angle, and two things of the same shape; the second separates the two kinds
-// that start from two things of the same shape. Each kind has a procedure, taught with a problem of the kind, two worked examples in
-// different areas of life (kind solved: every step named by what it is for, with its working and its reason, and one step whose reason is
-// held back until the learner has chosen it), and problems the learner finishes. The drill has three stages: the last step of a worked
-// problem, a whole problem, and a route (the key's questions, the kind, then the solving).
+// It teaches the key's two questions about shapes (S1, what the problem gives you to work with; S2, whether you need a length or an area or volume)
+// and the four types of problem their answers lead to. The two questions cross: the first sorts two sides of a right triangle, one side and an
+// angle, and two things of the same shape; the second separates the two types that start from two things of the same shape. Each type has its own
+// steps, taught with a problem of the type, a worked example (kind solved: every step with its working and, mostly, one sentence of why, and one step
+// whose reason is held back until the learner has chosen it), and problems the learner finishes. The drill has one stage: a whole problem
+// (the key's questions, the type, then the solving).
 // Cards live in u6.cards-*.js, cases in u6.cases-*.js. Text fields never retype key wording; they use tokens:
 // {q:S1} {a:S1.option} {o:outcome} {plain:outcome} {needs:outcome} {t:term} {test:ledgerId} {cue:S1}.
 
 FC.unit('math', 'u6', {
   kind: 'P',
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Six',
   title: { fromKey: 'M1.shape' },
-  subtitle: 'Four kinds of problem about lengths, areas and volumes, and a procedure worked out step by step for each',
+  subtitle: 'Four types of problem about lengths, areas and volumes, and the steps for each',
   teaches: { steps: ['S1', 'S2'], outcomes: ['pyth', 'trig', 'similar', 'sqcube'], terms: [] },
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5'],
 
@@ -25,30 +24,30 @@ FC.unit('math', 'u6', {
   // other, the grouping of drill items, and what returns together later. test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'pyth~trig', pair: ['pyth', 'trig'], step: 'S1',
-      shared: 'Both find a side of a triangle with a square corner, and both can be about the very same ramp, wall or slope. The same length, such as 6.5 m, can be given in either.',
-      rule: '{o:pyth} gives the lengths of two sides and no angle besides the square corner, and finds the third side from the squares of the other two. {o:trig} gives one side and one angle in degrees, and finds another side with a button on a calculator.',
+      shared: 'Both find a side of a {t:righttriangle}, and both can be about the same ramp, wall or slope. The same length, such as 6.5 m, can be given in either.',
+      rule: '{o:pyth} gives two sides and no angle, and finds the third side from the squares of the other two. {o:trig} gives one side and one angle in degrees, and finds another side with a button on a calculator.',
       test: 'Besides the one length that everyone can see, is a second length given, or an angle in degrees?' },
     { id: 'pyth~similar', pair: ['pyth', 'similar'], step: 'S1',
-      shared: 'Both can be about a triangle with a square corner and two given lengths, and a shadow is both at once. Both find a length that nobody measures directly.',
-      rule: '{o:pyth} wants the third side of the very triangle whose other two sides are given, so there is one thing and its own triangle. {o:similar} wants a length on a second thing of exactly the same shape, found from how many times longer that thing is than the first.',
-      test: 'Is the length wanted a side of the very triangle whose other sides are given, or a length on a second thing of the same shape?' },
+      shared: 'Both can be about a {t:righttriangle} with two known lengths, and a shadow is both at once. Both find a length that nobody measures directly.',
+      rule: '{o:pyth} wants the third side of the same triangle whose other two sides are given. {o:similar} wants a length on a second thing of exactly the same shape, found from how many times longer that thing is.',
+      test: 'Is the length you want a side of the same triangle whose other sides are given, or a length on a second thing of the same shape?' },
     { id: 'trig~similar', pair: ['trig', 'similar'], step: 'S1', taughtIn: 'q-s1',
-      shared: 'Both can find a height that nobody can measure directly, such as a tower, a tree or a lighthouse, and both use a comparison between lengths that stays the same however big the thing is.',
-      rule: '{o:trig} is given one side and an angle in degrees, and the angle does the work of a second length. {o:similar} is given no angle: it is given a copy at another size, with a length measured on both things.',
+      shared: 'Both can find a height that nobody can measure directly, such as a tower, a tree or a lighthouse, and both rely on a comparison that stays the same however big the thing is.',
+      rule: '{o:trig} gives one side and an angle in degrees, and the angle does the work of a second length. {o:similar} gives no angle: it gives a copy at another size, with a length measured on both things.',
       test: 'Is an angle in degrees given, or a length measured on both of two things of the same shape?' },
     { id: 'similar~sqcube', pair: ['similar', 'sqcube'], step: 'S2',
-      shared: 'Both start from two things of exactly the same shape at different sizes, and both find their answer by multiplying by how many times longer the bigger one is. The same two things, with the same numbers, can be given in either.',
-      rule: '{o:similar} asks how long a part of the bigger thing is, and multiplies by how many times longer it is once. {o:sqcube} asks how much surface or how much room inside the bigger thing has, and multiplies by how many times longer it is twice over for a surface, and three times over for the room inside.',
-      test: 'Does the problem ask how long a part is, or how much surface or how much room inside?' }
+      shared: 'Both start from two things of exactly the same shape at different sizes, and both multiply by how many times longer the bigger one is. The same two things, with the same numbers, can be given in either.',
+      rule: '{o:similar} asks how long a part of the bigger thing is, and multiplies by how many times longer it is once. {o:sqcube} asks how much surface or room inside the bigger thing has, and multiplies by it twice for a surface and three times for the room inside.',
+      test: 'Does the problem ask how long a part is, or how much surface or room inside?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. The first covers the kinds that start from a
   // triangle with a square corner (Pythagoras' theorem, Trigonometry); the second the two that start from two things of the same shape
   // (Similar shapes, the Square-cube law) and the two questions. The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Two kinds of problem about a triangle with a square corner',
+    { id: 'p1', title: 'Two problems about a triangle with a square corner',
       cards: ['orient-shape', 'meet-pyth', 'check-pyth', 'solved-pyth-1', 'meet-trig', 'check-trig', 'solved-trig-1', 'look-pyth-trig'] },
-    { id: 'p2', title: 'Two things of the same shape: a length, or an area or a volume, then the drill',
+    { id: 'p2', title: 'Two problems with a copy at another size, then the drill',
       cards: ['meet-similar', 'check-similar', 'solved-similar-1', 'exc-shadow', 'q-s1', 'check-s1',
               'meet-sqcube', 'check-sqcube', 'solved-sqcube-1', 'look-similar-sqcube', 'q-s2', 'check-s2'],
       drill: true, close: ['recap-shape'] }
@@ -59,7 +58,7 @@ FC.unit('math', 'u6', {
   // Unit One, unlabelled.
   drill: {
     key: 'u6',
-    add: 'After each answer, look at the slip named behind a wrong choice. Every wrong choice is the answer one particular slip produces, and a slip you can name is a slip you can catch next time. Some of the problems tell a story that points the wrong way, on purpose: what the problem gives you and what it asks about decides the kind, and nothing else in the story does.',
+    add: 'After each answer, read the mistake behind a wrong choice. Each wrong answer comes from one mistake, and a mistake you can name is one you can catch next time. Some problems are written to point the wrong way, on purpose: what the problem gives you and what it asks for decides the type, and nothing else in it.',
     rungs: [
       { ask: 'route',
         items: [[{ earlier: 'u1' }, { earlier: 'u1' }],
@@ -78,7 +77,8 @@ FC.unit('math', 'u6', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fifth procedure unit of Basic Math, replacing the old Unit Three’s second half (the four shape cards), specimens 13 and 14 and two faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about shapes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the key’s two crossing questions each get a card; the shadow is taught as an exception; the drill has a last-step stage, a whole-problem stage and a route stage.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

@@ -18,23 +18,23 @@ FC.cases('math', 'u6', [
       S2: 'How long is the pipe?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
-      S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two sides of a {t:righttriangle}, and no angle besides the square corner.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle is given besides the square corner, so the angle buttons have nothing to work from. With one side and an angle in degrees, it would be {o:trig}.'
     },
     steps: [
       {
-        does: 'Find which side is the longest',
-        working: 'The side you want closes the triangle opposite the square corner, so it is the longest side. You are given the two shorter sides, 9 m and 40 m'
+        does: 'Find the longest side',
+        working: 'The pipe is opposite the square corner of the plot, so it is the longest side. You know the two shorter sides, 9 m and 40 m'
       },
-      { does: 'Multiply each given side by itself', working: '9 × 9 = 81; 40 × 40 = 1,600' },
+      { does: 'Multiply each side you know by itself', working: '9 × 9 = 81; 40 × 40 = 1,600' },
       { does: 'Add the two results', working: '81 + 1,600 = 1,681' },
       {
-        does: 'Find the number that multiplies by itself to give the result',
+        does: 'Find the number that multiplies by itself to make that result',
         working: '41 × 41 = 1,681, so the longest side is 41 m'
       }
     ],
@@ -44,17 +44,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '49 m',
-          slip: 'you add the two sides, 9 + 40, and never multiply them by themselves, though a straight line across is shorter than the two sides one after the other.'
+          slip: 'you add the two sides, 9 + 40, instead of multiplying each by itself. A straight line across is shorter than going along both sides.'
         },
         {
           id: 's2',
           text: '1,681 m²',
-          slip: 'you stop after adding the two results, so you give 1,681, which is an area, and not the length of a side.'
+          slip: 'you stop after adding the two results. 1,681 is an area, not the length of a side.'
         }
       ],
       right: 'r'
     },
-    why: 'In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So the longest side is the number that multiplies by itself to give the sum of the two other sides, each multiplied by itself.',
+    why: 'The tile squares on the two shorter sides add up to the tile square on the longest side. So the longest side is the number that multiplies by itself to make the two short squares added together.',
   },
 
   {
@@ -73,26 +73,26 @@ FC.cases('math', 'u6', [
       S2: 'How far is the boat from the foot of the lighthouse, measured along the sea?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
-      S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two sides of a {t:righttriangle}, and no angle besides the square corner.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle is given besides the square corner, so the angle buttons have nothing to work from. With one side and an angle in degrees, it would be {o:trig}.'
     },
     steps: [
       {
-        does: 'Find which side is the longest',
-        working: 'The longest side is the one opposite the square corner. Here it is the side you are given that is 50 m long. The side you want is one of the two shorter sides'
+        does: 'Find the longest side',
+        working: 'The line from the lamp to the boat is opposite the square corner, so the 50 m is the longest side. The side you want is a shorter one'
       },
-      { does: 'Multiply each given side by itself', working: '50 × 50 = 2,500; 48 × 48 = 2,304' },
+      { does: 'Multiply each side you know by itself', working: '50 × 50 = 2,500; 48 × 48 = 2,304' },
       {
-        does: 'Take the shorter side’s result away from the longest side’s result',
+        does: 'Take the shorter side’s result away from the longest side’s',
         working: '2,500 − 2,304 = 196'
       },
       {
-        does: 'Find the number that multiplies by itself to give the result',
+        does: 'Find the number that multiplies by itself to make that result',
         working: '14 × 14 = 196, so the shorter side is 14 m'
       }
     ],
@@ -102,17 +102,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: 'about 69.3 m',
-          slip: 'you add the two results, though the longest side is one of the sides you were given, so the other side must be found by taking away.'
+          slip: 'you add the two results. The 50 m side is the longest and was given, so you take away instead.'
         },
         {
           id: 's2',
           text: '2 m',
-          slip: 'you take the shorter side from the longest side, 50 − 48, and never multiply anything by itself, though it is the results that must be taken away.'
+          slip: 'you take the sides away from each other, 50 − 48, without multiplying anything by itself. It is the results you take away.'
         }
       ],
       right: 'r'
     },
-    why: 'In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So a shorter side is the number that multiplies by itself to give the longest side multiplied by itself, with the other shorter side multiplied by itself taken away.',
+    why: 'The tile squares on the two shorter sides add up to the tile square on the longest side. So a shorter side is the number that multiplies by itself to make the long square with the other short square taken away.',
   },
 
 ]);

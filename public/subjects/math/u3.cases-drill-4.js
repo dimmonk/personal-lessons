@@ -17,17 +17,17 @@ FC.cases('math', 'u3', [
       A1: ['uses 18 liters of cleaner for every 30 rooms', 'for 45 rooms']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give so much for so many of one thing, and a new amount of one of them, with nothing added on top and no calculation whose result has to be undone. That is {a:A1.rate}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give so much for so many, and a new amount of one of them, with nothing added on top. That is {a:A1.rate}.'
     },
     not: {
       outcome: 'rearr',
-      why: 'The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. {o:rearr} would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.'
+      why: 'It gives a rate and a new amount, with nothing on top and no result to undo. It would be {o:rearr} if a calculation, or a fixed charge on the rate, came with a result.'
     },
     steps: [
       {
-        does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 18 liters of cleaner for 30 rooms. The new amount is 45 rooms, so it is paired with the 30 rooms in the rate'
+        does: 'Match the new amount to the same thing in the rate',
+        working: 'The rate is 18 liters of cleaner for 30 rooms. The new amount is 45 rooms, so it is matched to the 30 rooms in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -46,16 +46,16 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '12 liters of cleaner',
-          slip: 'you divide 18 by 1.5 instead of multiplying, so the answer moves the wrong way: more rooms must mean more liters of cleaner.'
+          slip: 'you divide 18 by 1.5 instead of multiplying, so the answer goes the wrong way: more rooms must mean more liters of cleaner.'
         },
         {
           id: 's2',
           text: '75 liters of cleaner',
-          slip: 'you pair the new amount with 18 liters of cleaner, the other number in the rate, and not with 30 rooms, the number of the same thing.'
+          slip: 'you match the new amount to 18 liters of cleaner instead of to 30 rooms, the number in the rate that counts the same thing.'
         }
       ]
     },
-    why: 'A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.'
+    why: 'A rate keeps its two numbers in step, so if the new amount is so many times as big, the other number is that many times as big. Checking the direction catches a rate scaled the wrong way.'
   },
 
   {
@@ -73,17 +73,17 @@ FC.cases('math', 'u3', [
       A1: ['uses 18 eggs for every 12 students', 'Today 30 students are in for lunch']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give so much for so many, 18 eggs for every 12 students, and a new amount of students. The 3 cooks and the word “today” are numbers and words that no step uses, and nothing is added on top, so the answer is {a:A1.rate}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give 18 eggs for every 12 students and a new number of students. The 3 cooks are never used and nothing is added on top, so it is {a:A1.rate}.'
     },
     not: {
       outcome: 'rearr',
-      why: 'The problem gives a rate and a new amount, with nothing added on top and no calculation whose result has to be undone. {o:rearr} would be the name if a calculation, or a fixed amount on top of the rate, had a result to undo.'
+      why: 'It gives a rate and a new amount, with nothing on top and no result to undo. It would be {o:rearr} if a calculation, or a fixed charge on the rate, came with a result.'
     },
     steps: [
       {
-        does: 'Pair the new amount with the matching number in the rate',
-        working: 'The rate is 18 eggs for 12 students. The new amount is 30 students, so it is paired with the 12 students in the rate'
+        does: 'Match the new amount to the same thing in the rate',
+        working: 'The rate is 18 eggs for 12 students. The new amount is 30 students, so it is matched to the 12 students in the rate'
       },
       {
         does: 'Find how many times as big the new amount is',
@@ -102,15 +102,15 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '7.2 eggs',
-          slip: 'you divide 18 by 2.5 instead of multiplying, so the answer moves the wrong way: more students must mean more eggs.'
+          slip: 'you divide 18 by 2.5 instead of multiplying, so the answer goes the wrong way: more students must mean more eggs.'
         },
         {
           id: 's2',
           text: '20 eggs',
-          slip: 'you pair the new amount with 18 eggs, the other number in the rate, and not with 12 students, the number of the same thing.'
+          slip: 'you match the new amount to 18 eggs instead of to 12 students, the number in the rate that counts the same thing.'
         }
       ]
     },
-    why: 'A rate says that its two numbers keep in step: with twice as many of one there are twice as many of the other. So finding how many times as big the new amount is, and making the other number that many times as big, keeps to the same rate. The check on the direction catches a rate scaled the wrong way round.'
+    why: 'A rate keeps its two numbers in step, so if the new amount is so many times as big, the other number is that many times as big. Checking the direction catches a rate scaled the wrong way.'
   },
 ]);

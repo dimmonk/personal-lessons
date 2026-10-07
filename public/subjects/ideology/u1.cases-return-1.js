@@ -10,7 +10,7 @@ FC.cases('ideology', 'u1', [
     text: "The drivers on the Metrocab app say the company's owners have cut every fare by a quarter while its profits doubled. 'There are those who drive and those who own the app,' reads their statement. 'We are done pretending we want the same thing.'",
     route: { D1: ['class'] },
     cues: { D1: ['There are those who drive and those who own the app', 'We are done pretending we want the same thing'] },
-    reason: { D1: 'The text names two groups, those who drive and those who own the app, and speaks for the first: {cue:D1}.' },
+    reason: { D1: 'The text names two groups, those who drive and those who own the app, and speaks for the drivers: {cue:D1}.' },
     not: { outcome: 'none', why: 'A statement about fare cuts could simply report them. This one names two groups with different interests and stands with one.' } },
 
   /* ---------- the nation, or its ordinary people ---------- */

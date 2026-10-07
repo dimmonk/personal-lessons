@@ -1,4 +1,4 @@
-// Basic Math, Unit Two: the drill's problems. Every problem is a case with a route, marked words and a reason for the key's first
+// Basic Math, Unit Two: the drill's problems. Every problem has a route, marked words and a reason for the key's first
 // question and for the unit's own question, and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem's own numbers when the file was written: check a number you change against its working.
 
@@ -19,12 +19,12 @@ FC.cases('math', 'u2', [
       W1: ['share them out in equal piles, with more than one pile and more than one book in each pile']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
+      M1: 'The words {cue:M1} ask whether one whole number can be shared out in equal groups, and nothing grows or changes.',
+      W1: 'The words {cue:W1} give one number and ask only a yes or a no: does anything but 1 and itself share it out?'
     },
     not: {
       outcome: 'factor',
-      why: 'The problem asks only whether the number splits at all, and a yes or a no is all that is wanted. {o:factor} would be the name if it asked what the number is made of, or for every way it splits.'
+      why: 'It only asks whether the number splits at all, so a yes or a no is enough. It would be {o:factor} if it asked for the primes or every way it splits.'
     },
     steps: [
       {
@@ -45,16 +45,16 @@ FC.cases('math', 'u2', [
         {
           id: 's1',
           text: 'Prime: it is odd and does not end in 5',
-          slip: 'you judge by how the number looks, odd and not ending in 5, and never divide by 3.'
+          slip: 'you decide by how the number looks (odd, not ending in 5) and never try 3.'
         },
         {
           id: 's2',
           text: 'Not prime: 5 × 10',
-          slip: 'you read 51 = 5 × 10 + 1 as a fit and ignore the 1 left over, though a fit leaves nothing over.'
+          slip: 'you count 51 = 5 × 10 + 1 as a fit, though a fit leaves nothing over.'
         }
       ]
     },
-    why: 'A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the {t:sqroot} of the number. So testing no further than the {t:sqroot} is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not {t:prime}s misses nothing.'
+    why: 'If a number splits into equal groups, two whole numbers multiply to give it, and the smaller one is never more than the {t:sqroot}. So you only test the primes up to the {t:sqroot}: anything that fits by 6 also fits by 2 and by 3. If none fits, the number is a {t:prime}.'
   },
 
   {
@@ -69,12 +69,12 @@ FC.cases('math', 'u2', [
     route: { M1: ['whole'], W1: ['parts'] },
     cues: { M1: ['every way to set them out in equal rows'], W1: ['every way to set them out in equal rows'] },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is {a:W1.parts}.'
+      M1: 'The words {cue:M1} are about how one whole number splits, and nothing grows or changes.',
+      W1: 'The words {cue:W1} give one number and want its primes, or every way it splits: a list, not a yes or a no.'
     },
     not: {
       outcome: 'prime',
-      why: 'The problem asks for more than whether the number splits: it wants what the number is made of, or every way it splits. A yes or a no, which is what {o:prime} gives, would leave the question unanswered.'
+      why: 'It asks for more than whether the number splits: it wants a list. A yes or a no, which is what {o:prime} gives, would leave the question unanswered.'
     },
     steps: [
       {
@@ -86,7 +86,7 @@ FC.cases('math', 'u2', [
         working: '1, 2, 3, 5, 6 (2 × 3), 9 (3 × 3), 10 (2 × 5), 15 (3 × 5), 18 (2 × 3 × 3), 30 (2 × 3 × 5), 45 (3 × 3 × 5), 90 (2 × 3 × 3 × 5). Here 1 uses none of the primes and 90 uses all of them'
       },
       {
-        does: 'Leave out 1 and 90, which give one group, or groups of one',
+        does: 'Leave out 1 and 90, which mean one group, or groups of one',
         working: '2, 3, 5, 6, 9, 10, 15, 18, 30, 45'
       },
       { does: 'Count what is left', working: '10 different sizes' }
@@ -95,11 +95,11 @@ FC.cases('math', 'u2', [
       right: 'r',
       choices: [
         { id: 'r', text: '10' },
-        { id: 's1', text: '12', slip: 'you count 1 and 90 as well, though they give one group, or groups of one.' },
-        { id: 's2', text: '3', slip: 'you count only the prime numbers and never multiply any of them together.' }
+        { id: 's1', text: '12', slip: 'you count 1 and 90 too, though they mean one group, or groups of one.' },
+        { id: 's2', text: '3', slip: 'you list only the primes and never multiply any of them together.' }
       ]
     },
-    why: 'Every group size that fits exactly is a product of some of the primes of the number, and every product of some of them fits exactly, so building all the products lists every size. Using none of them gives 1 and using all of them gives the number itself, which are the cases the problem rules out.'
+    why: 'Every group size that fits is a product of some of the number’s primes, and every such product fits, so building all the products lists every size. Using none gives 1, and using all gives the number itself, which the problem rules out.'
   },
 
   {
@@ -117,17 +117,17 @@ FC.cases('math', 'u2', [
       W1: ['cut both into pieces of equal length with no wood wasted']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is {a:W1.piece}.'
+      M1: 'The words {cue:M1} are about cutting whole numbers into pieces of one size, and nothing grows or changes.',
+      W1: 'The words {cue:W1} give two numbers to cut into pieces of one size, and the question asks for the biggest.'
     },
     not: {
       outcome: 'lcm',
-      why: 'The problem asks for the biggest piece that fits into both numbers, and nothing repeats. {o:lcm} would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.'
+      why: 'The numbers are cut into equal pieces and nothing repeats, so the answer is never more than the smaller number. {o:lcm} would ask when two repeats meet.'
     },
     steps: [
       { does: 'Break each number into primes', working: '120 = 2 × 2 × 2 × 3 × 5; 200 = 2 × 2 × 2 × 5 × 5' },
       {
-        does: 'Pick out the primes both numbers have, each as many times as the number that has it fewer times',
+        does: 'Keep the primes that are in both lists, as many times as both lists have them',
         working: 'Both have 2 × 2 × 2 × 5'
       },
       { does: 'Multiply the shared primes', working: '2 × 2 × 2 × 5 = 40' }
@@ -139,7 +139,7 @@ FC.cases('math', 'u2', [
         {
           id: 's1',
           text: '600 cm',
-          slip: 'you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.'
+          slip: 'you keep every prime either number has, which gives the first time two repeats meet, not the biggest piece that fits both.'
         },
         {
           id: 's2',
@@ -148,7 +148,7 @@ FC.cases('math', 'u2', [
         }
       ]
     },
-    why: 'A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest {t:factor} the two numbers have in common.'
+    why: 'A piece that fits both numbers is built only from primes that both have, and the biggest piece uses each shared prime as often as both have it. That is the greatest {t:factor} the two numbers share.'
   },
 
   {
@@ -166,18 +166,18 @@ FC.cases('math', 'u2', [
       W1: ['one every 8 seconds and the other every 12 seconds']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
+      M1: 'The words {cue:M1} give two whole numbers that repeat, and no amount is growing.',
+      W1: 'The words {cue:W1} give two things that repeat, and the question asks when they next happen together.'
     },
     not: {
       outcome: 'hcf',
-      why: 'Here two schedules repeat and the question is when they first coincide, so the answer is not less than the bigger number. {o:hcf} asks for a piece that fits into both numbers, and is never more than the smaller.'
+      why: 'Two things repeat and the question is when they first meet, so the answer is never less than the bigger number. {o:hcf} would cut both numbers into equal pieces.'
     },
     steps: [
       { does: 'Break each number into primes', working: '8 = 2 × 2 × 2; 12 = 2 × 2 × 3' },
       {
-        does: 'Collect every prime that either number has, each as many times as the number that has it more times',
-        working: 'Collected: 2 × 2 × 2 × 3'
+        does: 'Keep every prime from either list, as many times as the list with more of it has it',
+        working: 'Kept: 2 × 2 × 2 × 3'
       },
       { does: 'Multiply them together', working: '2 × 2 × 2 × 3 = 24' }
     ],
@@ -188,16 +188,16 @@ FC.cases('math', 'u2', [
         {
           id: 's1',
           text: '4 seconds',
-          slip: 'you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.'
+          slip: 'you keep only the primes both numbers have, which gives the biggest piece that fits both, not the first meeting.'
         },
         {
           id: 's2',
           text: '96 seconds',
-          slip: 'you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.'
+          slip: 'you multiply the two numbers together, which is a meeting but not the first, because the numbers share a prime.'
         }
       ]
     },
-    why: 'The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.'
+    why: 'The first meeting is a number that both numbers divide, so it holds every prime of each. It needs each prime as often as the list with more of it: fewer, and one number would not divide it; more, and it would not be the first meeting.'
   },
 
   {
@@ -215,18 +215,18 @@ FC.cases('math', 'u2', [
       W1: ['delivers to a shop every 6 days and a second van every 9 days']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about two repeats and when they coincide. The numbers are whole counts that repeat, and no amount is followed as it grows, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give two repeating schedules and ask for the first time they coincide, which is {a:W1.together}.'
+      M1: 'The words {cue:M1} give two whole numbers that repeat, and no amount is growing.',
+      W1: 'The words {cue:W1} give two things that repeat, and the question asks when they next happen together.'
     },
     not: {
       outcome: 'modrem',
-      why: 'Two things repeat, so there are two repeats to bring together. {o:modrem} needs one loop, or one group size, and a count that goes round it.'
+      why: 'Two things repeat, so there are two schedules to bring together. {o:modrem} has one loop and a count going round it.'
     },
     steps: [
       { does: 'Break each number into primes', working: '6 = 2 × 3; 9 = 3 × 3' },
       {
-        does: 'Collect every prime that either number has, each as many times as the number that has it more times',
-        working: 'Collected: 2 × 3 × 3'
+        does: 'Keep every prime from either list, as many times as the list with more of it has it',
+        working: 'Kept: 2 × 3 × 3'
       },
       { does: 'Multiply them together', working: '2 × 3 × 3 = 18' }
     ],
@@ -237,16 +237,16 @@ FC.cases('math', 'u2', [
         {
           id: 's1',
           text: '3 days',
-          slip: 'you keep only the primes both numbers have, which gives the biggest piece that fits both and not the first time two repeats meet.'
+          slip: 'you keep only the primes both numbers have, which gives the biggest piece that fits both, not the first meeting.'
         },
         {
           id: 's2',
           text: '54 days',
-          slip: 'you multiply the two numbers together, which is a time when both happen but not the first, because the numbers share a prime.'
+          slip: 'you multiply the two numbers together, which is a meeting but not the first, because the numbers share a prime.'
         }
       ]
     },
-    why: 'The first time two repeats happen together must be a number that both numbers divide, so it has to contain every prime of each. It needs each prime as many times as the number that has it more times: with fewer, one of the numbers would not divide it, and with more, it would not be the first time.'
+    why: 'The first meeting is a number that both numbers divide, so it holds every prime of each. It needs each prime as often as the list with more of it: fewer, and one number would not divide it; more, and it would not be the first meeting.'
   },
 
   {
@@ -264,12 +264,12 @@ FC.cases('math', 'u2', [
       W1: ['On which day of the week will he call?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about the part that is not in a whole group, or the place a count reaches on a loop. The numbers are whole counts, and no amount is followed through time, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give a count and one group size, or one loop, and ask for the part not in a whole group or for the place the count reaches, which is {a:W1.cycle}.'
+      M1: 'The words {cue:M1} ask where a count of days ends round a week, which is whole numbers going round a loop.',
+      W1: 'The words {cue:W1} give a count and one loop, a week of 7 days, and ask where the count ends.'
     },
     not: {
       outcome: 'lcm',
-      why: 'There is one group size, or one loop, and a count that goes round it. {o:lcm} needs two separate schedules, and asks when they first coincide.'
+      why: 'There is one loop, the week, and a count going round it. {o:lcm} needs two separate schedules.'
     },
     steps: [
       {
@@ -287,11 +287,11 @@ FC.cases('math', 'u2', [
         {
           id: 's2',
           text: 'Wednesday',
-          slip: 'you count the place you start on as the first move, so you go one place too far.'
+          slip: 'you count the starting day as the first move, so you go one day too far.'
         }
       ]
     },
-    why: 'Every whole loop brings the count back to the place it started, so whole loops change nothing. Only what is left over after them moves you on, and it is moved from the start.'
+    why: 'Every whole loop brings the count back to where it started, so whole loops change nothing. Only what is left over moves you on, counted from the start.'
   },
 
   {
@@ -309,12 +309,12 @@ FC.cases('math', 'u2', [
       W1: ['Can the side be written exactly, as a fraction or a decimal that ends?']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one number can be written exactly. It is about the value of a number, with no amount followed through time and no hidden number for a calculation to fit, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} ask whether one number can be written exactly, which is {a:W1.exact}.'
+      M1: 'The words {cue:M1} ask about the exact value of one number, and nothing grows or changes.',
+      W1: 'The words {cue:W1} ask whether one number can be written exactly.'
     },
     not: {
       outcome: 'prime',
-      why: 'The problem asks for the exact value of a number, and nothing is shared out in equal groups. {o:prime} would be the name if it asked whether a count of things could be split in rows or teams.'
+      why: 'Nothing is shared out in equal groups: the question is whether a root can be written exactly. {o:prime} would be about a count of things split into rows or teams.'
     },
     steps: [
       { does: 'Name the whole number under the root sign', working: '√7: the whole number is 7' },
@@ -339,7 +339,7 @@ FC.cases('math', 'u2', [
         { id: 's2', text: 'Exact: 3', slip: 'you take the nearest whole number as the exact value.' }
       ]
     },
-    why: 'The {t:sqroot} of a whole number is either a whole number or a number that can never be written exactly as a fraction. There is nothing in between, so landing exactly on a whole number multiplied by itself is the only way for it to be exact, and when it does not land there, a calculator can only round it.'
+    why: 'The {t:sqroot} of a whole number is either a whole number or a number that can never be written exactly. So landing on a whole number multiplied by itself is the only way to be exact, and otherwise a calculator can only round it.'
   },
 
   {
@@ -357,12 +357,12 @@ FC.cases('math', 'u2', [
       W1: ['line them up in equal rows, with more than one row and more than one pot in each row']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about whether one whole number can be shared out in equal groups. Nothing in it changes as time passes, no hidden number has to be found from a calculation, and there is no shape or choice, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give one number and ask only whether anything other than 1 and itself shares it out exactly. That is a yes or a no about one number, which is {a:W1.split}.'
+      M1: 'The words {cue:M1} ask whether one whole number can be shared out in equal groups, and nothing grows or changes.',
+      W1: 'The words {cue:W1} give one number and ask only a yes or a no: does anything but 1 and itself share it out?'
     },
     not: {
       outcome: 'irrat',
-      why: 'The problem shares a count out in equal groups. {o:irrat} is about whether a root or pi can be written exactly, and nothing here is a root or pi.'
+      why: 'The pots are shared out in equal rows, and nothing here is a root or pi. {o:irrat} would ask whether a root can be written exactly.'
     },
     steps: [
       {
@@ -383,16 +383,16 @@ FC.cases('math', 'u2', [
         {
           id: 's1',
           text: 'Not prime: 3 × 30',
-          slip: 'you round 89 ÷ 3 up to 30 and call 3 × 30 a fit, though that is not 89.'
+          slip: 'you round 89 ÷ 3 up to 30 and call 3 × 30 a fit, though 3 × 30 is not 89.'
         },
         {
           id: 's2',
           text: 'Not prime: 1 × 89',
-          slip: 'you count 1 and 89 itself as a fit, though every number splits by 1 and by itself.'
+          slip: 'you count 1 and 89 as a fit, though every number splits by 1 and by itself.'
         }
       ]
     },
-    why: 'A number can be split into equal groups only if two whole numbers multiply to give it, and the smaller of the two is never more than the {t:sqroot} of the number. So testing no further than the {t:sqroot} is enough. Testing the primes is enough too: a number that splits by 6 also splits by 2 and by 3, so leaving out the numbers that are not {t:prime}s misses nothing.'
+    why: 'If a number splits into equal groups, two whole numbers multiply to give it, and the smaller one is never more than the {t:sqroot}. So you only test the primes up to the {t:sqroot}: anything that fits by 6 also fits by 2 and by 3. If none fits, the number is a {t:prime}.'
   },
 
   {
@@ -410,14 +410,14 @@ FC.cases('math', 'u2', [
       W1: ['the prime numbers that multiply together to give 105']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about what one whole number is made of or how it can be shared out. It follows no amount through time, hides no number to be found from a calculation, and has no shape or choice, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give one number and ask what it is made of, or every way it can be shared out. That is more than a yes or a no about one number, which is {a:W1.parts}.'
+      M1: 'The words {cue:M1} are about how one whole number splits, and nothing grows or changes.',
+      W1: 'The words {cue:W1} give one number and want its primes, or every way it splits: a list, not a yes or a no.'
     },
     not: {
       outcome: 'hcf',
-      why: 'There is one number here that is to be taken apart. {o:hcf} would need two numbers and a piece that fits into both.'
+      why: 'Only one number, 105, is to be taken apart. {o:hcf} would need two numbers and a piece that fits both.'
     },
-    wouldChange: 'If the question asked for the longest equal pieces that both slabs can be cut into, it would be {o:hcf}.',
+    wouldChange: 'If it asked for the longest equal pieces that both slabs can be cut into, it would be {o:hcf}.',
     steps: [
       {
         does: 'Find the smallest prime that divides the number exactly',
@@ -437,7 +437,7 @@ FC.cases('math', 'u2', [
         { id: 's2', text: '1 × 3 × 5 × 7', slip: 'you write 1 as one of the primes, though 1 is not prime.' }
       ]
     },
-    why: 'Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one set of primes that multiply to give it, so any order of splitting reaches the same list.'
+    why: 'Splitting off the smallest prime that fits, and then doing the same to what is left, never leaves a piece that can still be split, and the pieces multiply back to the number. A number has only one list of primes, so any order of splitting reaches the same one.'
   },
 
   {
@@ -455,18 +455,18 @@ FC.cases('math', 'u2', [
       W1: ['split their members into teams of the same size, with nobody left out and every team drawn from one club']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about pieces of one size that two whole numbers can both be split into. Nothing grows, no hidden number has to be found from a calculation, and there is no shape or chance, so the answer to the first question is {a:M1.whole}.',
-      W1: 'The words {cue:W1} give two numbers and ask for the biggest piece that both can be cut into with nothing left over, which is {a:W1.piece}.'
+      M1: 'The words {cue:M1} are about cutting whole numbers into pieces of one size, and nothing grows or changes.',
+      W1: 'The words {cue:W1} give two numbers to cut into pieces of one size, and the question asks for the biggest.'
     },
     not: {
       outcome: 'lcm',
-      why: 'The problem asks for the biggest piece that fits into both numbers, and nothing repeats. {o:lcm} would ask when two repeats meet, and its answer is never less than the bigger number, where this answer is never more than the smaller.'
+      why: 'The numbers are cut into equal pieces and nothing repeats, so the answer is never more than the smaller number. {o:lcm} would ask when two repeats meet.'
     },
-    wouldChange: 'If the question asked after how many weeks the two clubs would next hold something on the same Saturday, each repeating on its own, it would be {o:lcm}.',
+    wouldChange: 'If it asked after how many weeks the two clubs next hold something on the same Saturday, each repeating on its own, it would be {o:lcm}.',
     steps: [
       { does: 'Break each number into primes', working: '72 = 2 × 2 × 2 × 3 × 3; 108 = 2 × 2 × 3 × 3 × 3' },
       {
-        does: 'Pick out the primes both numbers have, each as many times as the number that has it fewer times',
+        does: 'Keep the primes that are in both lists, as many times as both lists have them',
         working: 'Both have 2 × 2 × 3 × 3'
       },
       { does: 'Multiply the shared primes', working: '2 × 2 × 3 × 3 = 36' }
@@ -478,7 +478,7 @@ FC.cases('math', 'u2', [
         {
           id: 's1',
           text: '216 members',
-          slip: 'you keep every prime that either number has, the most times either has it, which gives the first time two repeats meet and not the biggest piece that fits both.'
+          slip: 'you keep every prime either number has, which gives the first time two repeats meet, not the biggest piece that fits both.'
         },
         {
           id: 's2',
@@ -487,6 +487,6 @@ FC.cases('math', 'u2', [
         }
       ]
     },
-    why: 'A piece that fits into both numbers with nothing left over can only be built from primes that both numbers contain, and the biggest such piece uses every shared prime as many times as the number that has it fewer times. That is the largest {t:factor} the two numbers have in common.'
+    why: 'A piece that fits both numbers is built only from primes that both have, and the biggest piece uses each shared prime as often as both have it. That is the greatest {t:factor} the two numbers share.'
   }
 ]);

@@ -14,11 +14,11 @@ FC.cases('wealth', 'u2', [
     outcome: 'burnrate', route: { D1: ['erosion'], E1: ['fixedsum'] },
     cues: { E1: 'He has never changed the figure. His pot is now $500,000, so the $28,000 is 5.6% of it' },
     segments: [
-      { text: 'Felix, 65, sold his shop at 63 and set himself $28,000 a year to live on, which was 4% of the $700,000 he got.', note: 'That is how the sum was set, and at the time it was a fair share. It is half of what settles the case. The other half is what has happened to the sum since.' },
+      { text: 'Felix, 65, sold his shop at 63 and set himself $28,000 a year to live on, which was 4% of the $700,000 he got.', note: 'This is how the sum was set, and at the time it was a fair share. The words that decide it say what happened to the sum since.' },
       { text: 'He has never changed the figure. His pot is now $500,000, so the $28,000 is 5.6% of it' }
     ],
-    reason: { E1: 'The sum was set when {t:pot} was bigger, and it has not moved: {cue:E1}. The same $28,000 is now 5.6% of a pot that is $200,000 smaller than it was.' },
-    not: { outcome: 'nocut', why: 'A sum spent every year is only sound when it is reset as a percentage of what {t:pot} is worth now. Felix set a number of dollars and never reset it.' } },
+    reason: { E1: 'The sum was set when {t:pot} was bigger, and it has not moved: {cue:E1}.' },
+    not: { outcome: 'nocut', why: 'Spending is only sound when it is reset as a percentage of what {t:pot} is worth now. Felix set a number of dollars and never reset it.' } },
 
   /* ---------- The look-alike pair: income investments in the taxed account, and in the sheltered one ---------- */
   { id: 'e-l-nocut-a', use: 'teach', tier: 'clean', setting: 'family', topic: 'a brother’s bond fund in the ordinary account', name: 'Ravi and his bond fund',

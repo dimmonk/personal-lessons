@@ -2,24 +2,25 @@
 
 FC.cards('stats', 'u4', [
 
-  /* ---------- The second name: a change in how it is counted ---------- */
+  /* ---------- The second name: a new way of counting ---------- */
   { id: 'meet-defshift', kind: 'meet', outcome: 'defshift',
-    link: 'In {o:proxy} the people changed what they did. In the second way nobody does anything different at all. What changes is how the figure is made.',
+    link: 'In {o:proxy} the people changed what they did. Now nobody does anything different: what changes is how the figure is made.',
     case: 'meas-jobless', mark: 'M1',
-    strip: [
-      'There is a figure: joblessness, 9% last year and 6% this year.',
-      'There is a definition of who counts as jobless, and it changed. Last year: no job, and looked for work in the past twelve months. This year: no job, and looked for work in the past four weeks.',
-      'The people did not change. Of the same 1,000 adults who want work, 90 were counted last year and 60 this year.',
-      'The number of those 1,000 with no job at all stayed at 90 in both years.'
-    ],
     explain: [
-      'Counted last year’s way, this year is still 90 in 1,000, which is 9%. The 3 points the figure fell (9% − 6% = 3%) come from 30 adults (90 − 60 = 30) who have no job and are no longer counted, because they have not looked for work in the past four weeks.',
-      'Every figure has a definition behind it: an exact statement of what goes into the count. "Jobless" is not one fixed thing. It can mean no job at all, or no job and looking right now, or no job and looking within the year, and each gives a different number for the same city. Nothing is wrong with any of these definitions. The trouble starts when the definition changes between the two ends of a comparison and the claim does not say so.',
-      'Nobody has to be dishonest or paid on the figure. A new definition is often an improvement.'
+      'Count it last year’s way and this year is still 90 in 1,000, which is 9%. The fall to 6% comes from 30 adults (90 − 60 = 30) who still have no job but stopped being counted, because they have not looked for work in the past four weeks.',
+      'Every figure has a definition behind it: an exact rule for what goes in the count. “Jobless” can mean no job at all, or no job and looking this month, or no job and looking this year, and each gives a different number for the same city. None of these is wrong. The trouble starts when the definition changes between the two ends of a comparison and the claim does not say so. Nobody has to be dishonest, and a new definition is often an improvement.'
+    ],
+    spot: [
+      { do: 'Find the change in what counts as jobless: last year, looked in the past twelve months; this year, looked in the past four weeks.', why: 'Two numbers made by different definitions are not the same measure.' },
+      { do: 'Check whether the real thing moved: the same 1,000 adults, and 90 of them still have no job.', why: 'If the real thing stood still while the figure moved, the counting did the moving.' },
+      { do: 'Look for the small print: “revised”, “now includes”, “no longer counts”, “new method”.', why: 'The change is usually written there, not in the headline.' }
     ],
     feature: { step: 'M1', option: 'newrule' },
-    name: 'The name for this is {o:defshift}. It covers two kinds of change. A new definition, like this one, changes what counts. A new tool changes what does the counting: a different scale, a meter, a gauge, or the same one moved somewhere else.',
-    act: 'First look for the date something about the counting changed: read the small print and the words "revised", "now includes", "no longer counts" and "new method". Then ask for the figure counted both ways in the same period. The gap between the two is the part of the move that the counting made. If there is none, compare only numbers made the same way.' },
+    name: 'This is {o:defshift}. It covers a new definition of what counts, like this one, and a new tool that does the counting: a different scale, a meter, or the same one moved somewhere else.',
+    act: [
+      { do: 'Ask for the figure counted both ways in the same period: last year’s definition and this year’s, on the same adults.', why: 'The gap between the two is the part of the move that the counting made.' },
+      { do: 'If you cannot get it, compare only numbers made the same way: this year against this year.', why: 'Numbers made two ways cannot be set side by side.' }
+    ] },
 
   { id: 'check-defshift', kind: 'check', after: 'defshift',
     case: 'meas-complaints',
@@ -27,12 +28,12 @@ FC.cards('stats', 'u4', [
 
   /* ---------- The second look-alike pair: the same ski area ---------- */
   { id: 'look-defshift-real', kind: 'lookalike', ledger: 'defshift~meas_ok',
-    link: 'Here the second way again, beside a claim that holds, because the two have the same headline.',
+    link: 'Here the second way again, beside a claim that holds. The headline is the same.',
     cases: ['meas-snow-moved', 'meas-snow-same'],
-    instruction: 'Both claims come from the same ski area and give the same figure: average snow depth in February rose from 90 cm to 120 cm over ten years. Compare one thing: whether the pole that measures the snow stood in the same place all along.',
+    instruction: 'Both stories come from the same ski area and give the same figure: average snow depth in February rose from 90 cm to 120 cm over ten years. Compare one thing: whether the pole that measures the snow stood in the same place all along.',
     prompt: { kind: 'which', option: 'S1.holds', answer: 'meas-snow-same' },
     difference: [
-      'In Case A the ski area moved its pole in year six, from an open slope to a hollow behind the lodge, where wind drifts snow. A second pole left on the open slope read 91 cm and then 92 cm, so the snow itself barely changed (92 − 91 = 1 cm), and nearly all of the 30 cm rise (120 − 90 = 30) is where the pole stands. The first answer is {a:S1.measure}, and its second is {a:M1.newrule}: the case is {o:defshift}.',
-      'In Case B the pole has never been moved, and no other pole on the mountain reads differently. Nothing but the snow could have moved the figure. Every part holds, so the first answer is {a:S1.holds}, and the kind of claim it makes is {a:H1.change}: the claim is a sound one, {plain:meas_ok}.'
+      'In Story A the ski area moved its pole in year six, into a hollow where wind drifts snow. A second pole left on the open slope read 91 cm, then 92 cm, so the snow barely changed (92 − 91 = 1 cm), and nearly all of the 30 cm rise comes from where the pole stands. That is {o:defshift}.',
+      'In Story B the same pole has stood in the same place all along, and no other pole on the mountain reads differently. Only the snow could have moved the figure. That is {o:meas_ok}.'
     ] }
 ]);

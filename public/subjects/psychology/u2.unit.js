@@ -4,12 +4,12 @@
 
 FC.unit('psychology', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 6,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
-  title: { fromKey: 'D1.reasoning' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Five things a person’s reasoning can be doing, and how to tell which one you are looking at',
+  title: { text: 'Are the reasons real?' },
+  subtitle: 'Four ways reasoning protects the person, and one way it goes where the facts lead',
   teaches: { steps: ['R1'], outcomes: ['dissonance', 'sunkcost', 'confbias', 'motivated', 'fair'], terms: ['cd'] },
   assumes: ['u1'],        // everything Unit One teaches may be used; the first card restates the part this unit leans on
 
@@ -21,44 +21,44 @@ FC.unit('psychology', 'u2', {
   // Its rule is never shown in feedback before that card has been read.
   ledger: [
     { id: 'dissonance~sunkcost', pair: ['dissonance', 'sunkcost'], step: 'R1',
-      shared: 'Both look back at something the person has already done or spent.',
-      rule: '{o:dissonance} gives a reason why something the person did is fine. {o:sunkcost} gives what is already spent as the reason to take the next step.',
-      test: 'Read the reason the person gives. Does it say that something they did is fine or does not count? Or does it point at what is already spent and offer that as the reason for the next step?' },
+      shared: 'Both look back at something the person already did or spent.',
+      rule: '{o:dissonance} says something the person did is fine. {o:sunkcost} uses what is already spent as the reason for the next step.',
+      test: 'Does the reason say that something they did is fine, or does it use what is already spent to decide the next step?' },
     { id: 'confbias~motivated', pair: ['confbias', 'motivated'], step: 'R1',
       shared: 'In both, the person is harder on evidence they do not like, and ends where they began.',
-      rule: 'In {o:motivated} the person set out on a search to settle a choice or a question, and the answer was chosen before the search began. In {o:confbias} nobody set out to search: evidence turns up, and the evidence against the view gets a harder test than the evidence for it.',
-      test: 'Did the person set out on a search to settle something? If they did, can you point to the answer being chosen before the search began?' },
+      rule: 'In {o:motivated} the person set out to settle a choice or a question, and had picked the answer before they started. In {o:confbias} nobody set out to look: evidence turns up, and the evidence against the view gets picked apart harder than the evidence for it.',
+      test: 'Did the person set out to look into something? If so, had they picked the answer before they started?' },
     { id: 'dissonance~confbias', pair: ['dissonance', 'confbias'], step: 'R1', taughtIn: 'q-does',
-      shared: 'Both defend something the person is attached to, and the same person can do both.',
-      rule: 'In {o:dissonance} the person gives a reason why something they did is fine, and no evidence is being tested. In {o:confbias} evidence for a view and evidence against it are in the case, and the evidence against it gets the harder test.',
-      test: 'Is the person explaining something they did, or testing evidence about what is true?' },
+      shared: 'Both defend something the person is attached to, and one person can do both.',
+      rule: 'In {o:dissonance} the person gives a reason why something they did is fine, and no evidence is being weighed. In {o:confbias} there is evidence for a view and evidence against it, and the evidence against it gets picked apart harder.',
+      test: 'Is the person explaining something they did, or weighing evidence about what is true?' },
     { id: 'confbias~fair', pair: ['confbias', 'fair'], step: 'R1',
-      shared: 'Both start with a view and evidence against it.',
-      rule: 'In {o:fair} the evidence against the view gets the same test that evidence for it would get, and the view goes where the evidence points. In {o:confbias} the evidence against the view gets a harder test than the evidence for it ever got, and the view stays.',
-      test: 'Were the questions put to the evidence against the view also put to the evidence for it?' },
+      shared: 'Both start with a view and some evidence against it.',
+      rule: 'In {o:fair} the evidence against the view gets the same check that evidence for it would get, and the view goes where the evidence leads. In {o:confbias} the evidence against the view gets a harder check than the evidence for it ever got, and the view stays.',
+      test: 'Did the evidence against the view get the same questions as the evidence for it?' },
     { id: 'sunkcost~fair', pair: ['sunkcost', 'fair'], step: 'R1', taughtIn: 'q-does',
       shared: 'Both face a choice about something that has already cost a lot, and both can end with the person carrying on.',
-      rule: 'In {o:sunkcost} the reason given for the next step is what is already spent. In {o:fair} the reason given is what the next step would cost and what it would bring.',
-      test: 'Is the reason for the next step about what is already spent, or about what the next step would cost and bring?' },
+      rule: 'In {o:sunkcost} the reason for the next step is what is already spent. In {o:fair} the reason is what the next step would cost and bring.',
+      test: 'Is the reason for the next step what is already spent, or what the next step would cost and bring?' },
     { id: 'dissonance~fair', pair: ['dissonance', 'fair'], step: 'R1',
       shared: 'In both, the person’s view can change.',
-      rule: 'In {o:fair} a fact about the matter came between the old view and the new one. In {o:dissonance} the only thing that came between them is something the person did, and the new view is the reason why it is fine.',
-      test: 'What came between the old view and the new one: a new fact about the matter, or only something the person did?' },
+      rule: 'In {o:fair} a new fact came between the old view and the new one. In {o:dissonance} the only thing that came between them is something the person did, and the new view is the excuse for it.',
+      test: 'What came between the old view and the new one: a new fact, or only something the person did?' },
     { id: 'motivated~fair', pair: ['motivated', 'fair'], step: 'R1', taughtIn: 'q-does',
       shared: 'Both can end on the answer the person hoped for.',
-      rule: 'In {o:motivated} the answer was chosen before the search began, so the search could not have changed it. In {o:fair} the search came first and could have gone either way.',
-      test: 'Could the search have come out the other way, and would the person have gone with it?' }
+      rule: 'In {o:motivated} the answer was picked before the search, so the search could never change it. In {o:fair} the search came first and could have gone either way.',
+      test: 'Could the search have gone the other way, and would the person have gone with it?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Reasoning about something the person did or spent',
+    { id: 'p1', title: 'Excuses, and money already spent',
       cards: ['orient', 'term-cd', 'meet-dissonance', 'check-dissonance', 'meet-sunkcost', 'check-sunkcost', 'look-dissonance-sunkcost'] },
-    { id: 'p2', title: 'Reasoning about evidence, and reasoning that goes where the facts point',
+    { id: 'p2', title: 'Evidence, and going where the facts lead',
       cards: ['meet-confbias', 'check-confbias', 'meet-motivated', 'check-motivated', 'look-confbias-motivated',
               'meet-fair', 'check-fair', 'look-confbias-fair', 'exc-convert', 'q-does', 'check-does'] },
-    { id: 'p3', title: 'One whole case, then the drill',
+    { id: 'p3', title: 'One whole story, then the drill',
       cards: ['worked-tasting'], drill: true, close: ['recap'] }
   ],
 
@@ -67,6 +67,7 @@ FC.unit('psychology', 'u2', {
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u2',            // the old quick-drill totals for this unit were stored under pl:psychology:stats:u2 (frozen; see E8)
+    add: 'Some of these stories show reasoning that is fine. That is on purpose: {o:fair} is a real answer, and you will need it as often as the others.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'queue', step: 'R1' }, { case: 'shower', step: 'R1' }],
@@ -94,7 +95,8 @@ FC.unit('psychology', 'u2', {
       { rev: 2, date: '2026-10-05', change: 'The first question now has four answers (Unit One rebuilt), and its second answer is worded “Something one person does to another”. Unit Two prints the gate from the key, so its orient map changed with it.' },
       { rev: 3, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 4, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 5, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 5, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 6, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild.
     keyChanges: [

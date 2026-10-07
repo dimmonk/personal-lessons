@@ -18,24 +18,24 @@ FC.cases('math', 'u6', [
       S2: 'How wide is the large pattern?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length on one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, with a length measured on both.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'sqcube',
-      why: 'A length is asked, not an area or a volume. {o:sqcube} would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.'
+      why: 'It asks for a length, not an area or a volume. If it asked how much surface or room inside the bigger one has, it would be {o:sqcube}.'
     },
     steps: [
       {
-        does: 'Find a part that is measured on both things',
-        working: 'The length is 12 cm on the small pattern and 30 cm on the large pattern. The part you want, the width, is measured on the small pattern only: 9 cm'
+        does: 'Find a length that is measured on both things',
+        working: 'The length is 12 cm on the small pattern and 30 cm on the large one. The width, which you want, is known on the small one only: 9 cm'
       },
       {
-        does: 'Find how many times longer the bigger thing is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '30 ÷ 12 = 2.5'
       },
-      { does: 'Multiply the length you have by that number of times', working: '9 × 2.5 = 22.5 cm' }
+      { does: 'Multiply the length you know by that number', working: '9 × 2.5 = 22.5 cm' }
     ],
     answer: {
       choices: [
@@ -43,17 +43,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '3.6 cm',
-          slip: 'you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.'
+          slip: 'you divide where you should multiply, so the bigger one comes out shorter.'
         },
         {
           id: 's2',
           text: '27 cm',
-          slip: 'you add the same 18 cm that the part measured on both differs by, instead of multiplying by the same number of times, though a copy keeps its shape only if every length is multiplied by the same number.'
+          slip: 'you add the 18 cm that the two lengths differ by, instead of multiplying. A copy keeps its shape only if every length is multiplied by the same number.'
         }
       ],
       right: 'r'
     },
-    why: 'Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.',
+    why: 'An exact copy changes only in size: every length is the same number of times longer. So a length measured on both gives that number, and you can use it on any other length.',
   },
 
   {
@@ -72,25 +72,25 @@ FC.cases('math', 'u6', [
       S2: 'How high is the real house, in meters?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length on one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, with a length measured on both.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'sqcube',
-      why: 'A length is asked, not an area or a volume. {o:sqcube} would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.'
+      why: 'It asks for a length, not an area or a volume. If it asked how much surface or room inside the bigger one has, it would be {o:sqcube}.'
     },
     steps: [
       {
-        does: 'Find a part that is measured on both things',
-        working: 'The width is 40 cm on the model and 12 m on the real house. The part you want, the height, is measured on the model only: 25 cm'
+        does: 'Find a length that is measured on both things',
+        working: 'The width is 40 cm on the model and 12 m on the real house. The height, which you want, is known on the model only: 25 cm'
       },
       { does: 'Write both lengths in the same unit', working: '12 m = 1,200 cm' },
       {
-        does: 'Find how many times longer the bigger thing is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '1,200 ÷ 40 = 30'
       },
-      { does: 'Multiply the length you have by that number of times', working: '25 × 30 = 750 cm' },
+      { does: 'Multiply the length you know by that number', working: '25 × 30 = 750 cm' },
       { does: 'Write the answer in the unit the problem asks for', working: '750 cm ÷ 100 = 7.5 m' }
     ],
     answer: {
@@ -99,16 +99,16 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '750 m',
-          slip: 'you forget to change the answer from cm into m at the end, so the number is the one in cm and the unit is wrong.'
+          slip: 'you forget to change cm to m at the end, so the number is right and the unit is wrong.'
         },
         {
           id: 's2',
           text: '225 m',
-          slip: 'you multiply by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.'
+          slip: 'you multiply by the number of times longer twice, as for an area. A length is multiplied only once.'
         }
       ],
       right: 'r'
     },
-    why: 'Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.',
+    why: 'An exact copy changes only in size: every length is the same number of times longer. So a length measured on both gives that number, and you can use it on any other length.',
   }
 ]);

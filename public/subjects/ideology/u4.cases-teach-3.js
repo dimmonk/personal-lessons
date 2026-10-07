@@ -12,10 +12,10 @@ FC.cases('ideology', 'u4', [
     cues: { D1: ['for six hundred years the crown and the Church courts kept the peace between us', 'put the king back on his throne, and let the Church courts sit again as they sat before'],
             T1: ['That was a crime against the realm', 'put the king back on his throne, and let the Church courts sit again as they sat before'] },
     segments: [
-      { text: 'We are one people under one crown', note: 'That speaks for one people, and the text does say it. It is part of why the case can look like {o:fasc}, but it is not what the text asks the country to follow.' },
-      { text: 'for six hundred years the crown and the Church courts kept the peace between us. The Assembly tore both down and put talk in their place. That was a crime against the realm.', note: 'That names an old order, the crown and the Church courts, and says it was torn down wrongly. It is half of what settles it. The other half is what the text asks for.' },
+      { text: 'We are one people under one crown', note: 'That speaks for one people, which is why the text can look like {o:fasc}. But it is not what the text asks the country to follow.' },
+      { text: 'for six hundred years the crown and the Church courts kept the peace between us. The Assembly tore both down and put talk in their place. That was a crime against the realm.', note: 'That names an old order, the crown and the Church courts, and says it was torn down wrongly. It is only half: the other half is what the text asks for.' },
       { text: 'Let us close the Assembly, put the king back on his throne, and let the Church courts sit again as they sat before.' },
-      { text: 'One crown will speak for all of us, as it always did.', note: 'That is where "one voice for everyone" comes from, and it is why the case can look like {o:fasc}. But the text says it of an old order that was always so, and asks for that order to be put back. It does not say that a new leader or movement will make it.' }
+      { text: 'One crown will speak for all of us, as it always did.', note: 'That is where “one voice for everyone” comes from, so it can look like {o:fasc}. But the text says it of an old order that was always so, not of a new leader or movement.' }
     ] },
 
   /* ---------- Exception: old customs mourned, and the owners made to pay. Looks like the old-ways name; is the name from the working-people branch ---------- */
@@ -26,10 +26,10 @@ FC.cases('ideology', 'u4', [
     cues: { D1: ['those who cut the stone and those who own the quarry want different things, and we stand with those who cut it'],
             C1: ["The quarry stays with its owners. Let the council set a floor under our pay, and let a tax on the quarry's profits pay for the old quarrymen's pensions"] },
     segments: [
-      { text: 'The blessing of the stone at the start of each season, the Sunday rest and the old quarry songs were handed down to us by the quarrymen before us, and they should guide how this town is run. Keep them, and change them slowly, if at all.', note: 'That holds up old ways as the guide and asks for them to be kept, with change slow, which is what you point to for {o:conserv}. The text does say it. But the text does not stop there.' },
-      { text: 'But the owners of the quarry have cut the Sunday rest to pay for more stone,', note: 'That names the owners and what they did. It is half of what settles it. The words that finish it say which side the text is on.' },
+      { text: 'The blessing of the stone at the start of each season, the Sunday rest and the old quarry songs were handed down to us by the quarrymen before us, and they should guide how this town is run. Keep them, and change them slowly, if at all.', note: 'That asks to keep old customs and change them slowly, which is {o:conserv}. But the text does not stop there.' },
+      { text: 'But the owners of the quarry have cut the Sunday rest to pay for more stone,', note: 'That names the owners and what they did. It is only half: the next words say which side the text is on.' },
       { text: 'and those who cut the stone and those who own the quarry want different things, and we stand with those who cut it.' },
-      { text: "The quarry stays with its owners. Let the council set a floor under our pay, and let a tax on the quarry's profits pay for the old quarrymen's pensions.", note: 'That is what the text asks for about the quarry. It comes after the side is taken and does not say which side that is.' }
+      { text: "The quarry stays with its owners. Let the council set a floor under our pay, and let a tax on the quarry's profits pay for the old quarrymen's pensions.", note: 'That is what the text asks for about the quarry. It comes after the side is taken, and does not say which side.' }
     ] },
 
   /* ---------- The worked case: gentle and patient, and it asks for an order to be brought back ---------- */

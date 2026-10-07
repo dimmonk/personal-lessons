@@ -9,7 +9,7 @@ FC.cases('ideology', 'u2', [
     reason: { D1: 'The text sets the company that owns the hospital against the orderlies, and stands with the orderlies: {cue:D1}.',
               C1: 'The hospital is to belong to the government the party forms: {cue:C1}.',
               C2: 'The party will take power by force and keep it, with no rival: {cue:C2}.' },
-    not: { outcome: 'demsoc', why: 'Handing the hospital to the government is something {o:demsoc} asks for too. This text says the party will keep power with no rival. A text that left the change to the voters would be {o:demsoc}.' } },
+    not: { outcome: 'demsoc', why: 'This text hands the hospital to the government, as {o:demsoc} does, but the party will keep power with no rival. A text that left the change to the voters would be {o:demsoc}.' } },
 
   { id: 'c-ret-an1', use: 'return', tier: 'varied', setting: 'health', topic: 'clinic staff who want no health office',
     text: "A poster at the Bell Street clinic: 'The firm that owns the clinics pays the staff a flat wage and keeps the fees, and the health office backs it, and we are with the staff. The clinic should belong to those who work in it. We want no health office and no government: we will run the clinic and the district together, in open meetings.'",
@@ -18,5 +18,5 @@ FC.cases('ideology', 'u2', [
     reason: { D1: 'The text sets the firm that owns the clinics against the staff, and stands with the staff: {cue:D1}.',
               C1: 'The clinic is to belong to those who work in it: {cue:C1}. Nothing is said about competing.',
               C2: 'The text wants no government, and says how things will be run instead: {cue:C2}.' },
-    not: { outcome: 'demsoc', why: 'Giving the clinic to its staff is something {o:demsoc} asks for too. This text wants no government, and {o:demsoc} keeps it.' } }
+    not: { outcome: 'demsoc', why: 'Giving the clinic to its staff is something {o:demsoc} asks for too. But this text wants no government, and {o:demsoc} keeps it.' } }
 ]);

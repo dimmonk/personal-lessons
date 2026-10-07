@@ -13,13 +13,13 @@ FC.cases('wealth', 'u1', [
     route: { D1: ['shock'] },
     cues: { D1: 'The brokerage’s contract says it can demand the loan back at any time' },
     segments: [
-      { text: 'Paul owns shares worth $500,000.', note: 'That is what he has. It tells you how big the money is, not what could take it.' },
+      { text: 'Paul owns shares worth $500,000.', note: 'That is what he has. It does not say what could take it.' },
       { text: 'He bought some of them with a $300,000 margin loan from his brokerage.', note: 'That is where the loan comes from. A loan alone does not decide it: what matters is whether the lender can force a sale.' },
       { text: 'The brokerage’s contract says it can demand the loan back at any time' },
       { text: ', and Paul would have to sell shares to repay it', note: 'That is what would happen. The words that give the lender the power come before it.' }
     ],
-    reason: { D1: 'The case shows a lender who could force a sale: {cue:D1}. $300,000 borrowed against $500,000 of shares means that a demand for repayment would make Paul sell much of what he owns, whatever he thought of the price that day.' },
-    not: { outcome: 'timing', why: 'No bill on a date and no living costs are mentioned. What puts the money at risk is one lender with the right to force a sale, and it could use that right whether or not prices have fallen.' } },
+    reason: { D1: 'The lender can demand the loan back at any time, and $300,000 is most of what his shares are worth.' },
+    not: { outcome: 'timing', why: 'No bill on a date and no living costs are mentioned. The danger is one lender who could force a sale, whether or not prices have fallen.' } },
 
   { id: 'w-la-one', use: 'teach', tier: 'clean', setting: 'work', topic: 'one company and a lost contract',
     text: "Lars has $500,000. $350,000 of it is shares in the company where he works. Last month a rival won the company's biggest contract, and its price fell by 40%. Prices of other companies did not move.",
@@ -41,10 +41,10 @@ FC.cases('wealth', 'u1', [
     route: { D1: ['handover'] },
     cues: { D1: 'Two of them have not spoken to each other for six years' },
     segments: [
-      { text: 'Sunita, 74, has a will that leaves her $700,000 equally to her three children. ', note: 'That is who gets what. It is half of the handover, and the question asks what could go wrong with it.' },
+      { text: 'Sunita, 74, has a will that leaves her $700,000 equally to her three children. ', note: 'That is who gets what. The question asks what could go wrong with it.' },
       { text: 'Two of them have not spoken to each other for six years' },
-      { text: '. Everything in her will is up to date.', note: 'That shows the papers are in order. It does not say what could go wrong, and the words that do are before it.' }
+      { text: '. Everything in her will is up to date.', note: 'That shows her papers are in order. It does not say what could go wrong, and the words that do come before it.' }
     ],
-    reason: { D1: 'The case shows a risk in the people who will receive the money: {cue:D1}. The money is to be shared equally, so two of the three will have to deal with each other over it. The papers are in order, and nothing comes out every year or rests on one thing.' },
-    not: { outcome: 'erosion', why: 'Nothing comes out of the money every year in the case. What it raises is how the people who inherit will deal with one another, and that arises once, after her death.' } }
+    reason: { D1: 'Two of her three children are not speaking, and they will have to deal with each other over the money.' },
+    not: { outcome: 'erosion', why: 'Nothing comes out of the money every year. What it raises is how her children will deal with each other, once, after her death.' } }
 ]);

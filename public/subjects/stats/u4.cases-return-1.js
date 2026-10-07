@@ -8,7 +8,7 @@ FC.cases('stats', 'u4', [
     outcome: 'proxy', route: { S1: ['measure'], M1: ['pushed'] },
     cues: { S1: "pays each rep $2 for every call 'made', and the dialer counts a call as made when the line connects for one second. A rep can end a call at once",
             M1: "pays each rep $2 for every call 'made', and the dialer counts a call as made when the line connects for one second. A rep can end a call at once" },
-    reason: { S1: 'The count of calls can rise with no more selling: {cue:S1}. It rose by 110 a day (from 50 to 160), and the conversations that lasted more than a minute stayed at 12.',
+    reason: { S1: 'The count of calls can go up with no more selling: {cue:S1}. It rose by 110 a day (from 50 to 160), while conversations of more than a minute stayed at 12.',
               M1: 'The reps are paid on the count, and ending a call at once adds one to it: {cue:M1}. That is easier than holding a conversation.' },
     not: { outcome: 'detection', why: 'Nobody is looking harder for calls. The reps gain from the figure and can make it higher themselves.' } },
 
@@ -17,8 +17,8 @@ FC.cases('stats', 'u4', [
     outcome: 'proxy', route: { S1: ['measure'], M1: ['pushed'] },
     cues: { S1: "pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order",
             M1: "pays each salesperson a bonus for every car 'sold' in the last week of the quarter, and a car counts as sold when the customer signs the order" },
-    reason: { S1: 'The count of cars sold can rise with no more cars leaving: {cue:S1}. It rose by 35 (from 60 to 95), and 35 of the orders were canceled, so deliveries stayed at 60.',
-              M1: 'The salespeople are paid when the order is signed: {cue:M1}. Getting a signature on an order that will not last raises the figure with no more cars sold.' },
+    reason: { S1: 'The count of cars sold can go up with no more cars leaving: {cue:S1}. It rose by 35 (from 60 to 95), and 35 of the orders were canceled, so deliveries stayed at 60.',
+              M1: 'The salespeople are paid when the order is signed: {cue:M1}. A signature on an order that will not last raises the figure with no more cars sold.' },
     not: { outcome: 'defshift', why: 'A sale is counted at the same point in both years, when the customer signs. What changed is what the salespeople do to get signatures.' } },
 
   { id: 'm4-ret-accidents', use: 'return', tier: 'varied', setting: 'work', topic: 'a firm that counts only longer stoppages',
@@ -27,15 +27,15 @@ FC.cases('stats', 'u4', [
     cues: { S1: "Until last year every accident that stopped someone working for even a day was counted. This year only accidents that stop someone working for more than three days are counted",
             M1: "Until last year every accident that stopped someone working for even a day was counted. This year only accidents that stop someone working for more than three days are counted" },
     reason: { S1: 'The count fell with no fewer accidents: {cue:S1}. Counted last year’s way, this year is 30 + 20 = 50, the same as last year.',
-              M1: 'What counts as an accident changed: {cue:M1}. The 20 short stoppages are still happening; they are no longer counted.' },
-    not: { outcome: 'detection', why: 'Nobody looked less hard for accidents. The short stoppages were left out of the count by a new definition.' } },
+              M1: 'What counts as an accident changed: {cue:M1}. The 20 short stoppages are still happening, but they are no longer counted.' },
+    not: { outcome: 'detection', why: 'Nobody looked less hard for accidents. A new definition left the short stoppages out of the count.' } },
 
   { id: 'm4-ret-graduation', use: 'return', tier: 'varied', setting: 'learning', topic: 'a college that widened its finishing window',
     text: "A college reports: 'The graduation rate rose from 60% to 72%.' Until last year it counted a student as graduating only if they finished within four years. This year it counts those who finish within six. Of every 1,000 students who started, 600 finished within four years in both years, and 120 more finished in years five and six in both years.",
     outcome: 'defshift', route: { S1: ['measure'], M1: ['newrule'] },
     cues: { S1: "Until last year it counted a student as graduating only if they finished within four years. This year it counts those who finish within six",
             M1: "Until last year it counted a student as graduating only if they finished within four years. This year it counts those who finish within six" },
-    reason: { S1: 'The rate rose with no more students finishing: {cue:S1}. Counted the four-year way, both years are 600 in 1,000, which is 60%; counted the six-year way, both are 720, which is 72%.',
+    reason: { S1: 'The rate rose with no more students finishing: {cue:S1}. Counted the four-year way, both years are 600 in 1,000 (60%); counted the six-year way, both are 720 (72%).',
               M1: 'What counts as graduating changed, from four years to six: {cue:M1}. The students did the same in both years.' },
-    not: { outcome: 'detection', why: 'Nobody looked harder for graduates. The same 120 who finish late were there in both years, and this year they are counted.' } }
+    not: { outcome: 'detection', why: 'Nobody looked harder for graduates. The same 120 late finishers were there in both years, and this year they are counted.' } }
 ]);

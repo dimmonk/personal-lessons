@@ -18,13 +18,13 @@ FC.cases('math', 'u4', [
       G2: ['How much will be in the bottle after 5 hours?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount going down by the same number every hour, whatever it has reached so far, so the answer is {a:G1.adds}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}. For this kind either answer to this question leads to the same procedure, run forwards for the amount and backwards for the time.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show the amount going down by the same number every hour, whatever it has reached so far.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it. Either way the steps are the same: forward for the amount, backward for the time.'
     },
     not: {
       outcome: 'expg',
-      why: 'The amount is raised or lowered by the same figure every time, and not by a share of what it has reached. {o:expg} would be the name if each change were a percentage of the amount so far, or a doubling.'
+      why: 'The change is the same figure every time, not a share of the amount. {o:expg} would be the name if each change were a percentage of what the amount is now, or a doubling.'
     },
     steps: [
       {
@@ -50,7 +50,7 @@ FC.cases('math', 'u4', [
         }
       ]
     },
-    why: 'The same number is added every time, so the change in all is that number multiplied by how many times. Going forwards, the change in all is worked out from the time and put on the start. Going backwards, the start is taken from the target to find the change needed, and that is divided by the change each time to find how many times. The two directions are one fact, read two ways.'
+    why: 'The same number is added every time, so the total change is that number times how many times. Going forward, add it to the start. Going backward, take the start off the target and divide by the change each time.'
   },
 
   {
@@ -69,17 +69,17 @@ FC.cases('math', 'u4', [
       G2: ['How many times bigger will the count be after 3 days?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every day.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it.'
     },
     not: {
       outcome: 'oneoff',
-      why: 'The percentage comes again every time. {o:oneoff} would be the name if it were applied one time and then stopped.'
+      why: 'The count is multiplied by 10 every day. {o:oneoff} would be the name if it changed once and then stayed put.'
     },
     steps: [
       {
-        does: 'Turn the change into the number the amount is multiplied by each time',
+        does: 'Turn the change into the number you multiply by each time',
         working: 'Up one gridline each day: multiplied by 10'
       },
       {
@@ -87,7 +87,7 @@ FC.cases('math', 'u4', [
         working: 'Day 1: 1 × 10 = 10; Day 2: 10 × 10 = 100; Day 3: 100 × 10 = 1,000'
       },
       {
-        does: 'Round at the end, and say what it shows',
+        does: 'Round at the end, and give the answer',
         working: '1,000 needs no rounding, so the answer after 3 days is 1,000 times bigger'
       }
     ],
@@ -103,11 +103,11 @@ FC.cases('math', 'u4', [
         {
           id: 's2',
           text: '100 times bigger',
-          slip: 'you multiply one time too few, once for every day but the last.'
+          slip: 'you stop one multiplication short.'
         }
       ]
     },
-    why: 'On a {t:logscale}, each gridline up is multiplied by 10, so a count that rises one gridline every day is multiplied by 10 every day. After 3 days it has been multiplied by 10 three times, once for each day, and each multiplication is made on the result of the last. That is the {t:multiplier} idea again: the same number, once for each day, gives the amount at the end.'
+    why: 'On a {t:logscale}, each gridline up is 10 times the one below, so a count that rises one gridline a day is multiplied by 10 every day. After 3 days that is 10 × 10 × 10 = 1,000: the same number, once for each day.'
   },
 
   {
@@ -126,29 +126,29 @@ FC.cases('math', 'u4', [
       G2: ['After how many days will it hold 10,000 cells?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every day, as a percentage, a doubling or a halving is, so the answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the answer is {a:G2.howlong}.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every day.',
+      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there.'
     },
     not: {
       outcome: 'lin',
-      why: 'The amount is multiplied each time, and the problem gives a target and asks how long. {o:lin} would be the name if the same number were added each time.'
+      why: 'The amount is multiplied each time, not added to. {o:lin} would be the name if the same number were added each time.'
     },
     steps: [
       {
-        does: 'Turn the change into the number the amount is multiplied by each time',
+        does: 'Turn the change into the number you multiply by each time',
         working: 'Triples each day: multiplied by 3'
       },
       {
-        does: 'Divide the target by the start, to see how many times the start it must become',
+        does: 'Divide the target by the start, to see how many times bigger it must get',
         working: '10,000 ÷ 100 = 100'
       },
       {
-        does: 'Divide the log of that by the log of the number from the first step',
+        does: 'Use the log button: divide the log of that number by the log of the number you multiply by',
         working: 'log 100 = 2.0000 and log 3 = 0.4771, so 2.0000 ÷ 0.4771 = 4.19'
       },
       {
-        does: 'Round, check against whole numbers of times, and say what it shows',
+        does: 'Check it with whole numbers of times, then round',
         working: 'Starting from 100, 4 multiplications by 3 give 8,100 cells, still under the target; 5 multiplications give 24,300 cells, over it. So the target is reached during the 5th day. Rounded, the answer is about 4.2 days'
       }
     ],
@@ -159,7 +159,7 @@ FC.cases('math', 'u4', [
         {
           id: 's1',
           text: 'About 49.5 days',
-          slip: 'you add the same share of the start each time, so every rise is the same size, which ignores that each rise is bigger than the last.'
+          slip: 'you add the same amount each time, so every rise is the same size, when each rise should be bigger than the last.'
         },
         {
           id: 's2',
@@ -168,7 +168,7 @@ FC.cases('math', 'u4', [
         }
       ]
     },
-    why: 'The amount at the end is the start multiplied by the {t:multiplier} once for each time, so the question is how many multiplications by the {t:multiplier} turn the start into the target. The log of a number turns multiplying into adding: each multiplication adds the same amount, the log of the {t:multiplier}, to the log of the amount. So the number of multiplications is the log of how many times bigger the target is than the start, divided by the log of the {t:multiplier}. The check with whole numbers of times shows that the answer is where it should be.'
+    why: 'The amount at the end is the start multiplied by the {t:multiplier} once for each time, so you need to find how many times. A log turns repeated multiplying into adding, so that number is the log of how many times bigger the target is, divided by the log of the {t:multiplier}. Then check it with whole numbers of times.'
   },
 
   {
@@ -187,13 +187,13 @@ FC.cases('math', 'u4', [
       G2: ['What will a minute cost after 3 years?']
     },
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount changing one time and staying where it reached, so no change repeats and the answer is {a:G1.once}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}. For this kind either answer to this question leads to the same procedure.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show one change that then stayed put, so nothing repeats.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it. Either way the steps are the same.'
     },
     not: {
       outcome: 'expg',
-      why: 'The percentage was applied one time, and the amount has stayed since. {o:expg} would be the name if the percentage came again each time.'
+      why: 'The percentage was applied once, and the amount has stayed since. {o:expg} would be the name if the percentage came again each time.'
     },
     steps: [
       {
@@ -209,7 +209,7 @@ FC.cases('math', 'u4', [
         working: 'The problem says it has stayed at $0.12 since, and mentions no other change, so nothing repeats'
       },
       {
-        does: 'Carry the amount after the change forward as it is',
+        does: 'Carry the new amount forward as it is',
         working: 'In 3 years: $0.12'
       }
     ],
@@ -229,6 +229,6 @@ FC.cases('math', 'u4', [
         }
       ]
     },
-    why: 'A change that came one time, and is not said to come again, is not a pattern, so nothing is carried forward. The amount after the change is the amount at any later time, and a target that it is not already at is never reached unless a new change is made. The size of the change is a fact about the one change, and it is not carried forward.'
+    why: 'A change that happened once, and is not said to come again, gives nothing to carry forward. The amount after it is the amount at any later time, so a target it is not already at is never reached. The size of the change describes that one change only.'
   }
 ]);

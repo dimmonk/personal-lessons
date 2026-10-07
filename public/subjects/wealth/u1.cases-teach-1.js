@@ -36,12 +36,12 @@ FC.cases('wealth', 'u1', [
     route: { D1: ['erosion'] },
     cues: { D1: 'Every year he takes $25,000 out of it to spend on living' },
     segments: [
-      { text: 'Hal retired at 65 with $500,000.', note: 'That is what he has. It tells you how big the money is, and the question asks for what comes out of it.' },
+      { text: 'Hal retired at 65 with $500,000.', note: 'That is how much he has. The question asks what comes out of it.' },
       { text: 'Every year he takes $25,000 out of it to spend on living' },
-      { text: ', and he is now 69. His statement shows the balance is about the same as the day he retired.', note: 'That tells you where the money stands now, and nothing in it comes out. The words that settle it are in the sentence before.' }
+      { text: ', and he is now 69. His statement shows the balance is about the same as the day he retired.', note: 'That only says where his money stands now. What comes out is in the sentence before.' }
     ],
-    reason: { D1: 'The case shows a sum that comes out of the money every year, and what it is for: {cue:D1}. It is a sum Hal spends. The case does not say prices have fallen or that a bill is due on a date, and no one thing is most of what he has.' },
-    not: { outcome: 'timing', why: 'The case does not say that prices have fallen, or that a bill falls due on a date. What it shows is a sum that comes out every year.' } },
+    reason: { D1: 'It is $25,000 gone every year, and Hal spends it on living.' },
+    not: { outcome: 'timing', why: 'Nothing says prices fell or a bill is due on a date. All it shows is a sum that leaves every year.' } },
 
   { id: 'w-couple-fall', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'monthly bills paid by selling shares in a fall', name: 'Pete and Jean',
     text: "Pete and Jean are both 67. Everything they own is $400,000 in shares and funds, and every month they sell about $1,700 of them to pay their bills. They have no cash set aside. This spring prices fell by 30%.",
@@ -53,12 +53,12 @@ FC.cases('wealth', 'u1', [
     route: { D1: ['timing'] },
     cues: { D1: 'After years of rises it is 78% shares and 22% bonds' },
     segments: [
-      { text: 'Greg, 58, chose to keep his $360,000 in 60% shares and 40% bonds.', note: 'That is the plan he chose. It is half of what the question asks for: the other half is what the split is now.' },
+      { text: 'Greg, 58, chose to keep his $360,000 in 60% shares and 40% bonds.', note: 'That is the plan he chose. The question also needs what the split is now.' },
       { text: 'After years of rises it is 78% shares and 22% bonds' },
-      { text: '. He plans to stop work in two years.', note: 'That is when he will need the money, and it makes a fall matter. But the words that show what a fall would catch are the ones before it.' }
+      { text: '. He plans to stop work in two years.', note: 'That is when he will need the money, which makes a fall matter. But what a fall would hit is in the words before it.' }
     ],
-    reason: { D1: 'The case shows a mix that has moved: {cue:D1}. Greg chose 60% in shares and it is now 78%, so a fall would take a bigger share of his money than he chose, and he stops work in two years.' },
-    not: { outcome: 'erosion', why: 'Nothing comes out every year, and no charge or tax is mentioned. What it shows is a split that has moved from its plan.' } },
+    reason: { D1: 'He chose 60% in shares and it is now 78%, so a fall would take more than he planned.' },
+    not: { outcome: 'erosion', why: 'Nothing comes out every year, and no fee or tax is mentioned. All it shows is a split that has moved from its plan.' } },
 
   { id: 'w-la-fee', use: 'teach', tier: 'clean', setting: 'retirement', topic: 'an adviser’s yearly charge on a retired couple',
     text: "Greta and Sam are retired and have $300,000. Every December their adviser's firm takes 1.1% of it, $3,300, however the funds did that year.",

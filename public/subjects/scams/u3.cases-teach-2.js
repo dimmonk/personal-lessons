@@ -13,14 +13,14 @@ FC.cases('scams', 'u3', [
     text: "Femi's cousin messages him in a chat app: 'Hi, I sent my code to your number by mistake. Can you send it to me? I am locked out of my account.' A text with a six-digit code, from a company Femi has never used, arrives on his phone.",
     outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
     cues: { D1: 'Can you send it to me', A1: 'Can you send it to me', A2: "Femi's cousin messages him in a chat app" },
-    reason: { A1: 'A code has just come to Femi\'s phone, and he is asked to pass it on: {cue:A1}. No page asks him for a password and no {t:permission} asks him to press Allow, so what is asked for is the code.' } },
+    reason: { A1: 'A code has just come to Femi\'s phone, and he is asked to pass it on: {cue:A1}. No page asks for a password and no {t:permission} asks for an Allow.' } },
 
   { id: 'ac-bank-call', use: 'teach', tier: 'clean', setting: 'money', topic: 'a fraud-team call about a payment', name: 'The fraud-team call',
     text: "Hana's phone rings. A man says he is from her bank's fraud team and that someone is trying to pay $60 from her account. 'I have just sent a code to your phone,' he says. 'Read it out to me and I will stop the payment.'",
     outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
     cues: { D1: 'Read it out to me and I will stop the payment', A1: 'Read it out to me and I will stop the payment', A2: "Hana's phone rings" } },
 
-  { id: 'ac-shareddoc', use: 'teach', tier: 'clean', setting: 'work', topic: 'a shared document which opens a permission permission screen', name: 'The shared document',
+  { id: 'ac-shareddoc', use: 'teach', tier: 'clean', setting: 'work', topic: 'a shared document which opens a permission screen', name: 'The shared document',
     text: "Rafa gets an email: 'A colleague has shared a document with you. Open it here.' The link opens his email provider's own permission screen: 'Docs Sync Pro would like to read, send and delete all your email, and see all your contacts.' It has two buttons, Allow and Cancel.",
     outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
     cues: { D1: 'It has two buttons, Allow and Cancel', A1: 'Docs Sync Pro would like to read, send and delete all your email, and see all your contacts',
@@ -30,7 +30,7 @@ FC.cases('scams', 'u3', [
     text: "A poster at Jess's gym says: 'Join the 30-day challenge! Scan to join.' The app that the scan opens asks her to connect her email account. Her email provider's permission screen asks whether the app may read, send and delete all her email. She sees two buttons, Allow and Cancel.",
     outcome: 'appscam', route: { D1: ['access'], A1: ['allow'], A2: ['notfit'] },
     cues: { D1: 'She sees two buttons, Allow and Cancel', A1: 'asks whether the app may read, send and delete all her email', A2: 'A poster at Jess\'s gym says' },
-    reason: { A1: 'A {t:permission} from her email provider asks Jess to press Allow so that an app can use her account: {cue:A1}. No page asks for a password and nothing asks for a code, so what is asked is an Allow.' } },
+    reason: { A1: 'A {t:permission} from her email provider asks Jess to press Allow for an app: {cue:A1}. No page asks for a password and nothing asks for a code.' } },
 
   { id: 'ac-mail-doc', use: 'teach', tier: 'clean', setting: 'work', topic: 'a free storage offer', name: 'The free-storage text',
     text: "Omar gets a text from a number he does not know: 'You have won 100 GB of free storage. Claim it here.' The link opens his email provider's own permission screen, the same kind of permission screen as always: 'FreeStore would like to read, send and delete all your email, and see all your contacts.' It has two buttons, Allow and Cancel.",
@@ -42,7 +42,7 @@ FC.cases('scams', 'u3', [
     text: "A man calls Zoe and says he is from the pharmacy that sends her prescription, and that a payment for it has failed. A text with a six-digit number arrives on her phone. 'Read it to me,' he says, 'so that I can confirm it is you.'",
     outcome: 'codescam', route: { D1: ['access'], A1: ['code'], A2: ['notfit'] },
     cues: { D1: 'Read it to me', A1: ['A text with a six-digit number arrives on her phone', 'Read it to me'], A2: 'A man calls Zoe' },
-    reason: { A1: 'A number has just come to Zoe\'s phone, and the man asks her to read it out: {cue:A1}. No page asks for a password and no {t:permission} asks her to press Allow, so what is asked for is a code.' } },
+    reason: { A1: 'A number has just come to Zoe\'s phone, and the man asks her to read it out: {cue:A1}. No page asks for a password and no {t:permission} asks for an Allow.' } },
 
   { id: 'ac-wk-cv', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a free résumé checker which asks for all the mail', name: 'The résumé checker',
     text: "Fern is looking for work. She searches the web for 'free résumé checker' and opens the first site she finds. It says: 'Sign in with your email account to check your résumé.' Her email provider's own permission screen appears: 'Résumé Pal would like to read, send and delete all your email.' It has two buttons, Allow and Cancel.",

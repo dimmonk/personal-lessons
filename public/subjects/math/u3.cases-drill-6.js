@@ -18,12 +18,12 @@ FC.cases('math', 'u3', [
       A1: ['9 m longer than it is wide', 'its area is 52 m²']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
       A1: 'The words {cue:A1} give a result, and the missing number is multiplied by itself as well as used on its own. That is {a:A1.itself}.'
     },
     not: {
       outcome: 'rearr',
-      why: 'The missing number is multiplied by itself, so it cannot be undone one thing at a time. {o:rearr} would be the name if it appeared only once in the calculation.'
+      why: 'The missing number is multiplied by itself, so you cannot undo it one thing at a time. It would be {o:rearr} if it appeared only once.'
     },
     steps: [
       {
@@ -47,7 +47,7 @@ FC.cases('math', 'u3', [
         working: 'x = 8.5 − 4.5 = 4, or x = −8.5 − 4.5 = −13'
       },
       {
-        does: 'Throw out any answer the story rules out, and check the one left',
+        does: 'Throw out any answer the problem rules out, and check the one left',
         working: '−13 cannot be right, because a deck cannot have a width below zero, so x = 4. Check: 4 × (4 + 9) = 4 × 13 = 52'
       }
     ],
@@ -58,7 +58,7 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '8.5 m',
-          slip: 'you stop after the {t:sqroot} and give 8.5, though it is x + 4.5 that is 8.5, so 4.5 still has to come off.'
+          slip: 'you stop after the {t:sqroot} and give 8.5, but x + 4.5 is 8.5, so 4.5 still has to come off.'
         },
         {
           id: 's2',
@@ -67,6 +67,6 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Adding the square of half the number in front of x to both sides turns the left side into one number {t:squared}, (x + half of it)², and a number that has been multiplied by itself can be undone with a {t:sqroot}. A {t:sqroot} has two answers, one above zero and one below it, and the story decides which can stay.'
+    why: 'Adding the square of half the number in front of x makes the left side one number times itself, which a {t:sqroot} can undo. A {t:sqroot} gives two answers, one above zero and one below, and the problem decides which can stay.'
   }
 ]);

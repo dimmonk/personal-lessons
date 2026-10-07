@@ -15,7 +15,7 @@ FC.cases('wealth', 'u3', [
     text: "Rob, 60, owns a vacation cabin that he rents to guests, worth $450,000, and has $200,000 in savings. His landlord’s insurance pays up to $400,000 if a guest is hurt. A guest who falls on the steep stairs and cannot work again could ask for $1,800,000.",
     outcome: 'insure', route: { D1: ['shock'], S1: ['bigclaim'] },
     cues: { S1: ['His landlord’s insurance pays up to $400,000 if a guest is hurt', 'A guest who falls on the steep stairs and cannot work again could ask for $1,800,000'] },
-    reason: { S1: 'The cabin could bring {t:claim}, and the insurance has a limit: {cue:S1}. $1,800,000 less $400,000 leaves $1,400,000, more than the $650,000 Rob owns in all.' } },
+    reason: { S1: 'The cabin could bring {t:claim}, and the insurance has a limit: {cue:S1}. $1,800,000 less $400,000 leaves $1,400,000, more than the $650,000 Rob owns.' } },
 
   /* ---------- Separate companies for each property or business ---------- */
   { id: 'w3-h-t-company', use: 'teach', tier: 'clean', setting: 'property', topic: 'two rental houses, one owned through a company', name: 'Ana and Bo',
@@ -31,7 +31,7 @@ FC.cases('wealth', 'u3', [
     text: "Gil, 68, retired from construction. He owns four houses that he rents out to students, and the house he lives in, all in his own name. Together they are worth $1,300,000, and any tenant who is badly hurt could bring a claim against him.",
     outcome: 'entity', route: { D1: ['shock'], S1: ['onename'] },
     cues: { S1: ['all in his own name', 'any tenant who is badly hurt could bring a claim against him'] },
-    reason: { S1: 'Gil owns several properties, and every one is in his own name, with {t:claim} possible on each: {cue:S1}. A demand on one house could reach the other three and his own home, $1,300,000 in all. The case does not say what any insurance pays, so the comparison of {t:claim} with the insurance is not what the case shows.' } },
+    reason: { S1: 'Gil owns several properties, all in his own name, and {t:claim} is possible on each: {cue:S1}. One claim on one house could reach the other three and his own home, $1,300,000 in all.' } },
 
   { id: 'w3-h-exc-ins', use: 'teach', tier: 'misleading', setting: 'property', topic: 'five rental houses and a dangerous stair', name: 'Kwame and the old stairs', also: ['onename'],
     text: "Kwame, 59, owns five rental houses and the house he lives in, all in his own name, worth $1,400,000 together. A lawyer who looked at the stairs in the oldest rental says that a tenant badly hurt in a fall there could win $2,000,000. Kwame’s landlord insurance pays up to $300,000 on any one claim.",
@@ -40,10 +40,10 @@ FC.cases('wealth', 'u3', [
             S1: ['a tenant badly hurt in a fall there could win $2,000,000', 'Kwame’s landlord insurance pays up to $300,000 on any one claim'] },
     segments: [
       { text: 'Kwame, 59, owns five rental houses and the house he lives in, all in his own name, worth $1,400,000 together.',
-        note: 'That is what makes the case look like several properties in one name, and it is true. The question is what could take most of it, and {t:claim} that the insurance cannot meet comes first.' },
+        note: 'That is why this looks like several properties in one name, and it is true. But {t:claim} the insurance cannot meet comes first.' },
       { text: ' A lawyer who looked at the stairs in the oldest rental says that a tenant badly hurt in a fall there could win $2,000,000.' },
       { text: ' Kwame’s landlord insurance pays up to $300,000 on any one claim.',
-        note: 'That is the other half of the comparison, and it matters only because of the sentence before it. The words that settle the case are the ones that show the size of the claim.' }
+        note: 'That is the other half of the comparison. The words that settle it are the ones that show the size of the claim.' }
     ] },
 
   /* ---------- Borrow modestly, on safe terms ---------- */
@@ -59,12 +59,12 @@ FC.cases('wealth', 'u3', [
     cues: { S1: ['The bank can change the rate every six months'] },
     segments: [
       { text: 'Maribel, 66, owns a condo worth $500,000 and a $60,000 IRA. She owes $420,000 on the condo.',
-        note: 'That shows the size of the loan, 84% of the condo. The words asked for show the bank’s power to change the terms.' },
+        note: 'That shows the size of the loan: 84% of the condo. The words asked for show the bank’s power to change the terms.' },
       { text: ' The bank can change the rate every six months' },
       { text: ', and the loan must be repaid in full at the end of five years.',
-        note: 'That is a second way the lender could cause trouble. The words asked for are the ones about the rate.' }
+        note: 'That is a second way the loan could cause trouble. The words asked for are the ones about the rate.' }
     ],
-    reason: { S1: 'The bank can change the rate every six months, so the cost of the loan can jump, and the loan is large against the condo: $420,000 out of $500,000 is 84%. Either is enough to point to.' } },
+    reason: { S1: 'The cost of the loan can jump: {cue:S1}.' } },
 
   { id: 'w3-h-exc-sup', use: 'teach', tier: 'misleading', setting: 'business', topic: 'tire shops and a demand clause', name: 'Reza and the tire shops', also: ['riskyloan'],
     text: "Reza, 52, runs a small chain of tire shops worth $900,000, which is most of the $1,100,000 he owns. Two years ago he borrowed $200,000 from a bank to open a new shop. The loan agreement says the bank can demand the money back if sales in any three months fall below $60,000, and that the bank may take his shares in the company if he cannot repay it. His savings are $15,000 and his household spends $36,000 a year; the rest of what he owns is $185,000 in funds that hold thousands of companies.",
@@ -74,9 +74,9 @@ FC.cases('wealth', 'u3', [
     segments: [
       { text: 'Reza, 52, runs a small chain of tire shops worth $900,000, which is most of the $1,100,000 he owns.' },
       { text: ' Two years ago he borrowed $200,000 from a bank to open a new shop. The loan agreement says the bank can demand the money back if sales in any three months fall below $60,000, and that the bank may take his shares in the company if he cannot repay it.',
-        note: 'That is what makes the case look like a loan that the lender could use to force a sale, and it is true. But the loan is against his shares in a business he runs, and that is one of {t:threesupports}, so it belongs to this answer.' },
+        note: 'That is why this looks like a loan the lender could use, and it is true. But the loan is against the shares of a business he runs, which is one of {t:threesupports}, so it belongs to this answer.' },
       { text: ' His savings are $15,000 and his household spends $36,000 a year; the rest of what he owns is $185,000 in funds that hold thousands of companies.',
-        note: 'That shows a second support that is missing: $15,000 covers about five months. It is not what settles which answer this is.' }
+        note: 'That shows a second safety net missing: $15,000 covers about five months. It is not what settles the answer.' }
     ] },
 
   /* ---------- The check on the question, and the whole case ---------- */
@@ -84,7 +84,7 @@ FC.cases('wealth', 'u3', [
     text: "Rosario, 54, owns four condos that she rents out, each in an LLC of its own that she owns, and the house she lives in is in her own name. Each condo is worth $220,000, her house is worth $450,000, and she has $110,000 in savings. A tenant who is hurt in one condo can claim only against the LLC that owns that condo.",
     outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
     cues: { S1: ['each in an LLC of its own that she owns', 'A tenant who is hurt in one condo can claim only against the LLC that owns that condo'] },
-    reason: { S1: 'Several properties could each bring {t:claim}, which is why the first question gave its answer, but the case shows them already held apart: {cue:S1}. A demand on one condo could reach $220,000 and no more, not her house or her savings. Nothing is left to put right.' } },
+    reason: { S1: 'Several properties could each bring {t:claim}, but each is already held apart: {cue:S1}. One claim on one condo could reach $220,000 and no more, not her house or her savings.' } },
 
   { id: 'w3-h-wk-2', use: 'teach', tier: 'misleading', setting: 'business', topic: 'a brewery and a friend’s warning', name: 'Greta and the brewery',
     text: "Greta, 62, runs the family brewery, worth $1,400,000, which is most of the $2,000,000 she owns. This morning a friend told her: “Your whole life is in one place. A fire or a bad year, and you are finished. Sell half and buy funds.” Greta has $420,000 in funds that hold thousands of companies, and $180,000 in savings, which is six years of the $30,000 her household spends. No bank holds her shares in the brewery as security.",

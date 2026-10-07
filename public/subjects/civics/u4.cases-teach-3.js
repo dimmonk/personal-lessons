@@ -13,8 +13,8 @@ FC.cases('civics', 'u4', [
     text: "Congress passed a bill to close two federal post offices in the north. The bill arrived on the President’s desk on Friday. On Monday the President returned it to Congress, unsigned, with a note listing objections.",
     outcome: 'veto', route: { D1: ['president'], E1: ['sendback'] },
     cues: { E1: 'the President returned it to Congress, unsigned, with a note listing objections' },
-    reason: { E1: 'Congress has finished with the bill and passed it on. What the case shows next is the President’s decision: {cue:E1}.' },
-    not: { outcome: 'execute', why: 'An office that carries out a law starts from a law that is already in force. Here the bill is not yet in force: the President is refusing it.' } },
+    reason: { E1: 'Congress has finished with the bill. What the story shows next is the President’s decision: {cue:E1}.' },
+    not: { outcome: 'execute', why: 'An office that carries out a law starts from a law already in force. Here the bill is not yet a law, and the President is refusing it.' } },
 
   /* ---------- Forgiving a federal crime ---------- */
 
@@ -27,6 +27,6 @@ FC.cases('civics', 'u4', [
     text: "A federal court found a pilot guilty of leaving a test result off a safety form, and sentenced him to a year in prison. Last week the President pardoned him, and the sentence no longer applies.",
     outcome: 'pardon', route: { D1: ['president'], E1: ['forgive'] },
     cues: { E1: 'the President pardoned him, and the sentence no longer applies' },
-    reason: { E1: 'A person was found guilty of a federal crime, and the President’s act lifts the punishment: {cue:E1}. No judge is asked anything, and no law is being put into practice.' },
-    not: { outcome: 'veto', why: 'The President is not refusing a law Congress passed. A person was found guilty of a crime, and the President is forgiving it.' } }
+    reason: { E1: 'A federal court found him guilty, and the President lifts the punishment: {cue:E1}. No judge is asked anything, and no law is being put into practice.' },
+    not: { outcome: 'veto', why: 'The President is not refusing a bill Congress passed. A person was found guilty of a crime, and the President forgives it.' } }
 ]);

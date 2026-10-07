@@ -1,5 +1,5 @@
-// Civics, Unit One: cases shown inside cards, part two (the two look-alike pairs, the three named exceptions,
-// the worked case). Field guide: see u1.cases-teach-1.js.
+// Civics, Unit One: stories shown inside cards, part two (the two look-alike pairs, the three named exceptions,
+// the worked story). Field guide: see u1.cases-teach-1.js.
 // A quick lesson (lesson standard section 19). A look-alike pair is two cases with the same story and different last decisions. An exception is a case whose
 // story points to one family and whose last decision belongs to another. Neither depends on a tie-break, because the
 // first question has none: a case has one last decision, and these cases are where that is practiced.
@@ -32,8 +32,8 @@ FC.cases('civics', 'u1', [
     cues: { D1: 'the House and the Senate both passed a bill that makes the Calder River valley a protected park' },
     segments: [
       { text: 'the House and the Senate both passed a bill that makes the Calder River valley a protected park' },
-      { text: 'On Tuesday the President signed the bill at a ceremony', note: 'That is the last thing in the story, and it sounds like a decision. Look at what the signature adds: the bill was already passed, and every word of it was already settled by the votes.' },
-      { text: 'the mayors of the valley towns standing behind her', note: 'The mayors are there to watch. Nothing in the case says they decide anything.' }
+      { text: 'On Tuesday the President signed the bill at a ceremony', note: 'That is the last thing in the story, and it sounds like a decision. But the bill had already passed, and every word of it was settled by the votes.' },
+      { text: 'the mayors of the valley towns standing behind her', note: 'The mayors are there to watch. Nothing here says they decide anything.' }
     ] },
 
   { id: 'x-trial', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a department head is tried in the Senate', name: 'The department head on trial',
@@ -41,8 +41,8 @@ FC.cases('civics', 'u1', [
     route: { D1: ['congress'] },
     cues: { D1: ['the House voted to charge him', 'the senators will vote on whether he is guilty'] },
     segments: [
-      { text: 'The head of a federal department is accused of taking money from a company in return for contracts', note: 'That is the accusation. It tells you why this is happening, and it does not say who decides.' },
-      { text: 'On Tuesday the House voted to charge him', note: 'That is a vote by lawmakers, so it points to the same answer. But the part of the story that sounds like a court comes after it, and that is the part to read.' },
+      { text: 'The head of a federal department is accused of taking money from a company in return for contracts', note: 'That is the accusation. It tells you why this is happening, not who decides.' },
+      { text: 'On Tuesday the House voted to charge him', note: 'That is a vote by lawmakers, so it points the same way. But the courtroom words come after it, and that is the part to read.' },
       { text: 'This week the Senate is holding a trial, and on Friday the senators will vote on whether he is guilty' }
     ] },
 
@@ -51,8 +51,8 @@ FC.cases('civics', 'u1', [
     route: { D1: ['courts'] },
     cues: { D1: 'a judge in the state’s court heard both sides and ruled that she must give one dog away' },
     segments: [
-      { text: 'The county of Hale has a rule that no household may keep more than three dogs', note: 'That is a rule made by a county. It is how the matter got here. It is not the last decision in the case.' },
-      { text: 'Mrs. Lund keeps four, and the county told her to give one away', note: 'That is the county applying its rule. It comes before the last decision.' },
+      { text: 'The county of Hale has a rule that no household may keep more than three dogs', note: 'That is a rule made by a county. It is how the matter got here, not the final call.' },
+      { text: 'Mrs. Lund keeps four, and the county told her to give one away', note: 'That is the county applying its rule. It comes before the final call.' },
       { text: 'a judge in the state’s court heard both sides and ruled that she must give one dog away' }
     ] },
 

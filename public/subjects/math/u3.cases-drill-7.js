@@ -17,12 +17,12 @@ FC.cases('math', 'u3', [
       A1: ['width × (width + 5)', 'A pool’s area is 36 m²']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give a rule and the result it came to, 36 m², which looks like {a:A1.formula}. But in the rule the missing width appears twice, once on its own and once inside the parentheses, so it is multiplied by itself, and the answer is {a:A1.itself}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give a rule and its result, 36 m², which looks like {a:A1.formula}. But the missing width appears twice in the rule, once on its own and once inside the parentheses, so it is {a:A1.itself}.'
     },
     not: {
       outcome: 'rearr',
-      why: 'The missing number is multiplied by itself, so it cannot be undone one thing at a time. {o:rearr} would be the name if it appeared only once in the calculation.'
+      why: 'The missing number is multiplied by itself, so you cannot undo it one thing at a time. It would be {o:rearr} if it appeared only once.'
     },
     also: ['formula'],
     steps: [
@@ -47,7 +47,7 @@ FC.cases('math', 'u3', [
         working: 'x = 6.5 − 2.5 = 4, or x = −6.5 − 2.5 = −9'
       },
       {
-        does: 'Throw out any answer the story rules out, and check the one left',
+        does: 'Throw out any answer the problem rules out, and check the one left',
         working: '−9 cannot be right, because a pool cannot have a width below zero, so x = 4. Check: 4 × (4 + 5) = 4 × 9 = 36'
       }
     ],
@@ -58,15 +58,15 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '6.5 m',
-          slip: 'you stop after the {t:sqroot} and give 6.5, though it is x + 2.5 that is 6.5, so 2.5 still has to come off.'
+          slip: 'you stop after the {t:sqroot} and give 6.5, but x + 2.5 is 6.5, so 2.5 still has to come off.'
         },
         {
           id: 's2',
           text: '−9 m',
-          slip: 'you keep the answer below zero, −9, though the story rules it out.'
+          slip: 'you keep −9, though the problem rules out an answer below zero.'
         }
       ]
     },
-    why: 'Adding the square of half the number in front of x to both sides turns the left side into one number {t:squared}, (x + half of it)², and a number that has been multiplied by itself can be undone with a {t:sqroot}. A {t:sqroot} has two answers, one above zero and one below it, and the story decides which can stay.'
+    why: 'Adding the square of half the number in front of x makes the left side one number times itself, which a {t:sqroot} can undo. A {t:sqroot} gives two answers, one above zero and one below, and the problem decides which can stay.'
   },
 ]);

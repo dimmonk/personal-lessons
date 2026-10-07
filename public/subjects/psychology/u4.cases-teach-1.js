@@ -20,11 +20,11 @@ FC.cases('psychology', 'u4', [
     outcome: 'narcgrand', route: { D1: ['pattern'], P1: ['above'] },
     cues: { P1: ["a clown who couldn't kick a ball", 'He has fallen out with three managers and two clubs'] },
     segments: [
-      { text: 'He tells each new signing that he is the best player they have had, and expects to wear the number ten shirt whatever his form', note: 'That is Wes acting as if he is above the others. It happens before anything goes against him. The words asked for are what he does when something does.' },
+      { text: 'He tells each new signing that he is the best player they have had, and expects to wear the number ten shirt whatever his form', note: 'That is Wes acting above the others, and it happens before anything goes against him. The question asks what he does when something does.' },
       { text: "When the club chose a younger player as captain, Wes told the whole squad that the new captain was 'a clown who couldn't kick a ball'" },
       { text: 'He has fallen out with three managers and two clubs over where he is picked', note: 'That is a cost. It comes from what he does, but it is not what he does.' }
     ],
-    reason: { P1: 'The captaincy went to someone else, and Wes answered with scorn for the person who got it. The words that decide the case are {cue:P1}: the scorn, and what it has cost.' },
+    reason: { P1: 'Wes answered losing the captaincy with scorn for the player who got it, and it has cost him: {cue:P1}.' },
     not: { outcome: 'narcvuln', why: 'Wes does not go quiet and hurt. He turns on the new captain out loud, in front of the whole squad.' } },
 
   /* ---------- An ordinary personality ---------- */
@@ -37,8 +37,8 @@ FC.cases('psychology', 'u4', [
     text: "Marcus has taught math for thirty years in two schools and has always said exactly what he thinks. He tells students their working is 'a mess' when it is, and he tells the principal she is wrong when he thinks so. He was the same as a student teacher. Pupils tease him about it, he laughs, and former students still write to him. He has been asked to stay on three times, and the principal says she trusts him because he never says one thing and means another.",
     outcome: 'ordpersonality', route: { D1: ['pattern'], P1: ['steady'] },
     cues: { P1: ['has always said exactly what he thinks', 'former students still write to him'] },
-    reason: { P1: 'Marcus has been blunt for thirty years and in two schools, and the case shows what that has not done: {cue:P1}, and he has been asked to stay on three times. A way of being that is blunt and that keeps no cost behind it is not what the other names point to.' },
-    not: { outcome: 'narcgrand', why: 'He says hard things, and so does {o:narcgrand}. But nobody is scorned or driven away. He laughs when he is teased, and the people around him stay.' } },
+    reason: { P1: 'Marcus has been blunt for thirty years, and it has cost him nothing: {cue:P1}. He has been asked to stay on three times.' },
+    not: { outcome: 'narcgrand', why: 'He says hard things, as {o:narcgrand} does. But nobody is scorned or driven away: he laughs when teased, and people stay.' } },
 
   /* ---------- Vulnerable narcissism ---------- */
   { id: 'pa-ellis', use: 'teach', tier: 'clean', setting: 'work', topic: 'a clerk who is never thanked', name: 'The clerk',
@@ -50,6 +50,6 @@ FC.cases('psychology', 'u4', [
     text: "Lars has volunteered at the food bank for twelve years. He says that nobody ever thanks him for what he does, and that others get praised for much less. When a new volunteer was given a long-service award, Lars said nothing, went home and stayed away for a month. He did the same when the manager he had trained was promoted over him, and again when his own brother was thanked in the church newsletter. The manager says she has stopped asking him to events, because he goes quiet and cold for weeks afterward.",
     outcome: 'narcvuln', route: { D1: ['pattern'], P1: ['overlooked'] },
     cues: { P1: ['nobody ever thanks him for what he does', 'said nothing, went home and stayed away for a month'] },
-    reason: { P1: 'Lars says he is overlooked and owed more: {cue:P1}. When someone else is thanked he does not hit out. He withdraws, hurt, and he has done it with the manager, with the new volunteer and with his brother.' },
-    not: { outcome: 'narcgrand', why: 'Lars does not run anyone down or turn scornful. He pulls back, and what he feels is hurt and resentment.' } }
+    reason: { P1: 'Lars says he is overlooked and owed more: {cue:P1}. When someone else is thanked he does not hit out, he withdraws, and he has done it with the manager, the new volunteer and his brother.' },
+    not: { outcome: 'narcgrand', why: 'Lars does not run anyone down or turn scornful. He pulls back, hurt and resentful.' } }
 ]);

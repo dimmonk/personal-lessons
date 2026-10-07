@@ -11,9 +11,9 @@ FC.cases('wealth', 'u5', [
     outcome: 'basicdocs', route: { D1: ['handover'], H1: ['papers'] },
     cues: { H1: 'The beneficiary form on her IRA still names her husband, who died three years ago' },
     segments: [
-      { text: 'Winifred is 77 and a widow. Her house and investments come to $35,000,000, and her investments pay her $400,000 a year more than she spends. ', note: 'That is a large estate and money to spare, and it is why the case looks like {o:gifting}. It does not settle the name, because a paper comes first.' },
+      { text: 'Winifred is 77 and a widow. Her house and investments come to $35,000,000, and her investments pay her $400,000 a year more than she spends. ', note: 'That is a large estate and money to spare, so it looks like {o:gifting}. But a paper comes first.' },
       { text: 'The beneficiary form on her IRA still names her husband, who died three years ago' },
-      { text: '. She rewrote her will after he died. Nothing she owns is expected to change much in value. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit, and she is far above it.', note: 'That shows that the will is current and what the tax is. It does not show what is wrong with the form.' }
+      { text: '. She rewrote her will after he died. Nothing she owns is expected to change much in value. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit, and she is far above it.', note: 'The will is current, and the tax is real. Neither shows what is wrong with the form.' }
     ] },
 
   /* The check on the question */
@@ -22,9 +22,9 @@ FC.cases('wealth', 'u5', [
     text: "Hamid, 58, is the only person who signs for his taxi firm, which is worth $300,000. His will was rewritten last year. He has never signed a power of attorney, and the firm's bank accounts are in his name alone. His estate is far below the tax-free limit for estate tax.",
     outcome: 'basicdocs', route: { D1: ['handover'], H1: ['papers'] },
     cues: { D1: "He has never signed a power of attorney", H1: "He has never signed a power of attorney, and the firm's bank accounts are in his name alone" },
-    reason: { D1: 'The case is about someone else having to act for the owner if he cannot: {cue:D1}. Nothing in it comes out every year, and no price or loan is mentioned.',
-              H1: 'The will is current, but one of the three papers does not exist: {cue:H1}. If Hamid were ill, nobody could act for him on the firm’s accounts, as nobody could for Rashid. The estate is below the limit, so tax is not the problem, and nothing is said about the people.' },
-    not: { outcome: 'simple', why: 'The will was rewritten, which is one of the three papers. But the power of attorney does not exist, so not every paper is current.' } },
+    reason: { D1: 'This story is about someone else having to act for the owner if he cannot: {cue:D1}. Nothing in it comes out every year, and no price or loan is mentioned.',
+              H1: 'The will is current, but one of the three papers does not exist: {cue:H1}. If Hamid were ill, nobody could act on the firm’s accounts, as nobody could for Rashid.' },
+    not: { outcome: 'simple', why: 'The will was rewritten, which is one of the three papers. But there is no power of attorney, so not every paper is current.' } },
 
   /* The worked case */
 

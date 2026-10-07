@@ -10,12 +10,12 @@
 
 FC.unit('math', 'u3', {
   kind: 'P',
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Three',
-  title: { fromKey: 'M1.unknown' },
-  subtitle: 'Four kinds of problem with a number missing, and a procedure worked out step by step for each',
+  title: { text: 'Find the missing number' },
+  subtitle: 'Four types of problem with a number left out, and the steps for each',
   teaches: { steps: ['A1'], outcomes: ['rearr', 'prop', 'simul', 'quad'], terms: ['squared'] },
   assumes: ['u1', 'u2'],
 
@@ -25,16 +25,16 @@ FC.unit('math', 'u3', {
   // items, and what returns together later. test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'rearr~prop', pair: ['rearr', 'prop'], step: 'A1',
-      shared: 'Both leave one number out and both are worked with a few numbers and one multiplication or division. The same two numbers, such as 4 and 12, can be a rate in one and two numbers in a calculation in the other.',
-      rule: '{o:rearr} has a calculation, and the result it came to: the missing number is found by undoing the calculation. {o:prop} has only so much for so many and a new amount of the same thing: the rate is scaled up or down. A fixed amount added on top of a rate makes a calculation, so it is {o:rearr}.',
-      test: 'Is there a calculation with a result it came to, or anything fixed added on top of the price for each one? Or is there only a rate, and a new amount of what the rate is for?' },
+      shared: 'Both leave one number out, and both can have a price for each thing in them. The same two numbers, such as 4 and 12, can be a rate in one and part of a calculation in the other.',
+      rule: '{o:rearr} has a calculation and the result it came to: you undo the calculation. {o:prop} has only so much for so many and a new amount: you scale the rate up or down. A fixed amount on top of a rate makes it a calculation, so it is {o:rearr}.',
+      test: 'Is there a calculation and its result, or a fixed charge added on top of a price for each one? Or is there only a rate and a new amount of the same thing?' },
     { id: 'rearr~simul', pair: ['rearr', 'simul'], step: 'A1',
-      shared: 'Both leave numbers out and both end by putting the answer back to see that it fits. A problem about totals can be turned into a calculation, and a calculation can have two letters in it.',
-      rule: '{o:rearr} has one missing number and one result, and each thing done to the missing number is undone in turn. {o:simul} has two missing numbers and two separate facts about them; neither fact can be undone alone, so one fact is used to leave a single letter in the other.',
+      shared: 'Both leave numbers out, and both end by putting the answer back to see that it fits. A shop problem with two missing numbers can look like one calculation with two letters in it.',
+      rule: '{o:rearr} has one missing number and one result, and you undo each thing done to the missing number. {o:simul} has two numbers missing, and a count and a total to fit: neither can be undone alone, so you use the count to leave a single letter in the total.',
       test: 'How many numbers are left out, and how many separate facts are given about them? One number and one result, or two numbers and two facts?' },
     { id: 'rearr~quad', pair: ['rearr', 'quad'], step: 'A1',
       shared: 'Both give a {t:formula} and the result it came to, and leave one number out. The same shapes, such as a rectangle and its area, turn up in both.',
-      rule: '{o:rearr} has the missing number in the calculation once, so each thing done to it can be undone in turn. {o:quad} has the missing number multiplied by itself as well as on its own, so it cannot be undone one thing at a time: the square is completed instead, and there can be two answers.',
+      rule: '{o:rearr} has the missing number in the calculation once, so you can undo each thing done to it in turn. {o:quad} has it multiplied by itself as well as on its own, so you add a number to make a square instead, and there can be two answers.',
       test: 'Does the missing number appear once in the calculation, or is it multiplied by itself?' }
   ],
 
@@ -42,10 +42,10 @@ FC.unit('math', 'u3', {
   // key's order: a formula, a rate, two facts, a number multiplied by itself, then the question that tells them apart.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'A calculation and its result, and a rate',
+    { id: 'p1', title: 'Working backward from a result, and a rate',
       cards: ['orient-unknown', 'meet-rearr', 'check-rearr', 'solved-rearr-1',
               'meet-prop', 'check-prop', 'solved-prop-1', 'exc-bill'] },
-    { id: 'p2', title: 'Two numbers to find, a missing number multiplied by itself, then the drill',
+    { id: 'p2', title: 'Two missing numbers, a number times itself, then the drill',
       cards: ['meet-simul', 'check-simul', 'solved-simul-1', 'look-rearr-simul',
               'term-squared', 'meet-quad', 'check-quad', 'solved-quad-1', 'exc-breakeven',
               'q-a1', 'check-a1'], drill: true, close: ['recap-unknown'] }
@@ -75,7 +75,8 @@ FC.unit('math', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the missing-number branch of Basic Math, replacing the old Unit Three (first half) and its drill. Four kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two exceptions (an electricity bill that looks like a rate and is a formula, a break-even profit that looks like a formula and is a squared missing number); the drill has a last-step stage, a whole-problem stage and a route stage. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

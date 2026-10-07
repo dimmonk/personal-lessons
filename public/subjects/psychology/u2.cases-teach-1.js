@@ -1,7 +1,7 @@
 // Psychology, Unit Two: teach, part one: the word, the first two names and their look-alike pair.
 
 FC.cases('psychology', 'u2', [
-  /* ---------- Cognitive dissonance reduction ---------- */
+  /* ---------- Rationalizing ---------- */
   { id: 'dinner', use: 'teach', tier: 'clean', setting: 'work', topic: 'a team dinner, before the excuse', name: 'The team dinner',
     text: "Maya has told everyone at work that she is vegan. At a team dinner she learns, halfway through her plate, that the sauce is made with fish stock." },
 
@@ -15,11 +15,11 @@ FC.cases('psychology', 'u2', [
     outcome: 'dissonance', route: { D1: ['reasoning'], R1: ['addstory'] },
     cues: { R1: 'One order makes no difference to anyone' },
     segments: [
-      { text: 'Priya believes in buying from local stores and often says so', note: 'That is what she believes. It was there before the order.' },
+      { text: 'Priya believes in buying from local stores and often says so', note: 'That is what she believes. It was there before the order, so it is not the reason.' },
       { text: 'she ordered a week of groceries from a giant online retailer', note: 'That is what she did. The reason comes after it.' },
       { text: 'One order makes no difference to anyone' }
     ],
-    reason: { R1: 'These words come after the order was placed. They say the order is fine, and nothing else changes: Priya has still ordered from the giant retailer, and she still says she believes in local stores.' } },
+    reason: { R1: 'These words come after the order, and they only say it is fine: she has still ordered from the giant retailer.' } },
 
   /* ---------- Sunk cost fallacy ---------- */
   { id: 'renovation', use: 'teach', tier: 'clean', setting: 'home', topic: 'a house renovation', name: 'The renovation',
@@ -31,8 +31,8 @@ FC.cases('psychology', 'u2', [
     text: "Omar has paid for a year of evening classes in accounting. By the third month he knows he dislikes the subject and will never use it. 'I've paid for the whole year,' he says, 'so I'm going to every single class.'",
     outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
     cues: { R1: "I've paid for the whole year" },
-    reason: { R1: "Omar's reason is {cue:R1}: what he has already paid. He says nothing about what the remaining classes will bring him, and the case tells you they will bring nothing he wants." },
-    not: { outcome: 'dissonance', why: 'Omar is not giving a reason why something he did is fine. He is giving a past payment as the reason for the next nine months.' } },
+    reason: { R1: "Omar's reason is {cue:R1}: what he has already paid. He says nothing about what the remaining classes will bring him, and they will bring nothing he wants." },
+    not: { outcome: 'dissonance', why: 'Omar is not saying something he did is fine. He is using a past payment as the reason for the next nine months.' } },
 
   /* ---------- The look-alike pair: same person, same story, two names ---------- */
   { id: 'ticket-fever', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a concert ticket and a fever',

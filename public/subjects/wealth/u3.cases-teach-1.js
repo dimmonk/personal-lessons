@@ -21,12 +21,12 @@ FC.cases('wealth', 'u3', [
     cues: { S1: 'He could sell the shares through his broker tomorrow' },
     segments: [
       { text: 'Declan, 55, has $380,000 in all. $300,000 of it is shares in the telephone company where he worked until last year.',
-        note: 'That shows how much of what he owns rests on one company, 79%. The words asked for show what he is free to do about it.' },
+        note: 'That shows how much of his money rests on one company: 79%. The words asked for show what he is free to do about it.' },
       { text: ' He no longer works there.',
-        note: 'That shows he takes no part in running the company. It is half of the answer. The words asked for are the other half: nothing stops him selling.' },
+        note: 'That shows he does not run the company, which is half of the answer. The other half is that nothing stops him selling.' },
       { text: ' He could sell the shares through his broker tomorrow.' }
     ],
-    reason: { S1: 'Nothing stops Declan selling: he could do it tomorrow through his broker. Together with the fact that he left the company, that is the whole answer. $300,000 out of $380,000 is about 79%, all in one company.' } },
+    reason: { S1: 'Nothing stops Declan selling: {cue:S1}.' } },
 
   /* ---------- Cap the loss without selling ---------- */
   { id: 'w3-h-hdg-1', use: 'teach', tier: 'clean', setting: 'work', topic: 'software shares after the first public sale', name: 'Tomasz and the locked shares',
@@ -39,7 +39,7 @@ FC.cases('wealth', 'u3', [
     text: "Stefan, 29, was given shares in the delivery firm he works for as part of his pay. They are worth $150,000, which is most of what he has, and the firm’s rules say he may not sell any of them until March, two years away.",
     outcome: 'hedge', route: { D1: ['shock'], S1: ['blocked'] },
     cues: { S1: 'the firm’s rules say he may not sell any of them until March, two years away' },
-    reason: { S1: 'Stefan has one company’s shares that are most of what he has, and he is not allowed to sell them: {cue:S1}. The two years are the set time. Of the two answers met so far, only one has a rule that stops the sale.' } },
+    reason: { S1: 'Stefan has one company’s shares that are most of what he has, and a rule stops him selling them: {cue:S1}. The two years are the set time.' } },
 
   /* ---------- Look-alike pair: free to sell, or locked (the same person, the same shares) ---------- */
   { id: 'w3-h-la-dh-a', use: 'teach', tier: 'clean', setting: 'work', topic: 'former employer shares, free to sell', name: 'Ruth, no longer at the company',
@@ -63,7 +63,7 @@ FC.cases('wealth', 'u3', [
     text: "Dmitri, 63, owns and runs the garage he opened, worth $550,000, which is most of the $600,000 he owns. He has $5,000 in the bank, and the rest, $45,000, is tools and a van. His household spends $28,000 a year. He has never borrowed against the garage.",
     outcome: 'supports', route: { D1: ['shock'], S1: ['ownrun'] },
     cues: { S1: ['He has $5,000 in the bank, and the rest, $45,000, is tools and a van', 'His household spends $28,000 a year'] },
-    reason: { S1: 'Dmitri runs the garage, and it is most of what he owns. The other money is not spread across investments, and the bank balance covers about two months of his spending: {cue:S1}. At least one of {t:threesupports} is missing, which is all this answer needs, even though the loan support is in place.' } },
+    reason: { S1: 'Dmitri runs the garage, and two of {t:threesupports} are missing: {cue:S1}. His money is not spread out and his $5,000 covers about two months, even though he has no loan against the garage.' } },
 
   /* ---------- Safe as it stands ---------- */
   { id: 'w3-h-saf-1', use: 'teach', tier: 'clean', setting: 'family', topic: 'a family lumberyard with every support', name: 'Hugo and the lumberyard',
@@ -76,7 +76,7 @@ FC.cases('wealth', 'u3', [
     text: "Wanjiru, 49, owns and runs a pharmacy worth $400,000, which is most of the $700,000 she owns. $210,000 is in funds that hold thousands of companies and $90,000 is in savings, and her household spends $30,000 a year. The pharmacy has no loans.",
     outcome: 'safe', route: { D1: ['shock'], S1: ['madesafe'] },
     cues: { S1: ['$210,000 is in funds that hold thousands of companies and $90,000 is in savings', 'her household spends $30,000 a year', 'The pharmacy has no loans'] },
-    reason: { S1: 'Wanjiru runs a business that is most of what she owns, which is the situation of the answer before this one. The difference is in the words: {cue:S1}. The savings are three years of spending, the rest is spread, and nothing is borrowed against the pharmacy. All three supports are in place, so nothing is missing.' } },
+    reason: { S1: 'Wanjiru runs a business that is most of what she owns, as Femi did, but the words are different: {cue:S1}. Her savings cover three years, the rest is spread, and nothing is borrowed against the pharmacy, so none of the three is missing.' } },
 
   { id: 'w3-h-la-ss-a', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bakery with no loan', name: 'Alma, no loan',
     text: "Alma, 48, runs the bakery she opened, worth $500,000, which is most of the $800,000 she owns. $150,000 is in funds that hold thousands of companies and $150,000 in savings, and her household spends $40,000 a year, which is more than three years. No bank holds her shares in the bakery as security.",

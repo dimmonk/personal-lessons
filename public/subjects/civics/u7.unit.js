@@ -12,12 +12,12 @@
 
 FC.unit('civics', 'u7', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 3,
+  rev: 4,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Seven',
   title: { text: 'Congress, the President and the courts in numbers' },
-  subtitle: 'How big, how long and who is next: the offices of the government of the whole country, as facts to hold',
+  subtitle: 'How many, how long, and who is next in line: the facts to hold about the country’s top offices',
   teaches: { steps: [], outcomes: [], terms: [] },   // a fact unit teaches no step, no name and no term (A12)
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5', 'u6'],
 
@@ -25,13 +25,13 @@ FC.unit('civics', 'u7', {
   // of one names the other. rule names both answers by {f:}; test is a question to put to yourself, with no name in it.
   ledger: [
     { id: 'rl-house~rl-senate', pair: ['rl-house', 'rl-senate'],
-      shared: 'Both are about how a state’s seats in Congress are worked out, and both use the same words: shared out among the states.',
+      shared: 'Both are about how many seats a state gets in Congress, and the question uses the same words for both: shared out among the states.',
       rule: 'The House counts people: “{f:rl-house}”. The Senate counts states: “{f:rl-senate}”.',
-      test: 'Does a state with more people get more seats, or does every state get the same number, however many people live in it?' },
+      test: 'Does a state with more people get more seats, or does every state get the same number?' },
     { id: 'tm-house~tm-senate', pair: ['tm-house', 'tm-senate'],
-      shared: 'Both are the length of a term in one of the two chambers of Congress, and both are a small number of years.',
+      shared: 'Both are the length of a term in one of the two chambers of Congress.',
       rule: 'A term in the House is the short one: {f:tm-house}. A term in the Senate is the long one, three times as long: {f:tm-senate}.',
-      test: 'Is it the chamber whose seats come up again soon, or the chamber whose seats come up only after a long time?' },
+      test: 'Is it the chamber whose seats come up again soon, or the one whose seats come up only after a long time?' },
     { id: 'pr-age~pr-years', pair: ['pr-age', 'pr-years'],
       shared: 'Both are a number of years in the conditions for being President.',
       rule: 'The age is “{f:pr-age}”, and the residence is “{f:pr-years}”. The age is the larger number.',
@@ -40,13 +40,13 @@ FC.unit('civics', 'u7', {
 
   // Parts are stopping points (A13). Each part holds two or three groups; the last also holds the drill and the close.
   parts: [
-    { id: 'p1', title: 'How seats are shared out, how many there are, how long jobs last, and how much is up',
+    { id: 'p1', title: 'Seats, numbers, terms and elections',
       cards: ['orient-nums',
               'con-rule', 'facts-rule', 'chk-rl-house', 'chk-rl-senate', 'chk-rl-court', 'look-rule',
               'con-size', 'facts-size', 'chk-sz-house', 'chk-sz-senate', 'chk-sz-court',
               'con-term', 'facts-term', 'chk-tm-house', 'chk-tm-senate', 'chk-tm-pres', 'chk-tm-judge', 'look-term',
               'con-up', 'facts-up', 'chk-up-house', 'chk-up-senate', 'chk-up-judge'] },
-    { id: 'p2', title: 'Who leads, who is next in line, and what it takes to be President, then the drill',
+    { id: 'p2', title: 'Who leads, who is next, and who can be President, then the drill',
       cards: ['con-lead', 'facts-lead', 'chk-ld-tax', 'chk-ld-speaker', 'chk-ld-tie',
               'con-line', 'facts-line', 'chk-ln-first', 'chk-ln-next',
               'con-pres', 'facts-pres', 'chk-pr-age', 'chk-pr-born', 'chk-pr-years', 'chk-pr-twice', 'look-pres'],
@@ -74,7 +74,8 @@ FC.unit('civics', 'u7', {
     history: [
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for the offices in numbers, replacing the old Unit Three chamber cards (the House, the Senate, both chambers, the Vice President) and the old chambers drill. Seven groups of facts under the idea each serves (what fixes the number of seats, how many seats, how long each job lasts, how much is up at one election, who leads and who settles a tie, the line to the presidency, what it takes to be President), twenty-two facts, six look-alike pairs. Every fact comes from the old material of standard0.js and nothing is added to it. Skipped, because the old material does not state them: the age a member of the House or a senator must have reached, the number of states, and who holds any office now. Not retyped, because the key holds them once: the vote thresholds. Not yet deployed.' },
       { rev: 2, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 3, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 3, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 4, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // no wrong idea is held here: a fact unit has no refute card (lesson standard A12, gap 6 of the civics plan)

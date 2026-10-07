@@ -5,21 +5,19 @@ FC.cards('ideology', 'u2', [
 
   /* ---------- Marxism ---------- */
   { id: 'meet-marx', kind: 'meet', outcome: 'marx',
-    link: 'Every name so far has said what should be done about the businesses or about power, or has only taken a side. This text does none of those. It explains something.',
+    link: 'This text asks for nothing. It explains.',
     case: 'c-mx-mill', mark: 'C1',
-    strip: [
-      'The text is written for weavers, and it takes their side.',
-      'It gives a sum: a weaver is paid $60, and makes cloth worth $100 once costs are taken off. The $40 left over goes to the owner.',
-      'It says this is not because the owner is cruel: every owner has to keep a gap like it, because that is how the arrangement works. Owners live from what workers make and are not paid for.',
-      'It asks for nothing: no tax, no handover and no party.'
-    ],
     explain: [
-      'The text does one thing. It explains how an owner comes to gain from other people’s work, and says the explanation holds for every owner, however kind. The $40 is the part of what the weaver makes that she is not paid for.',
-      'The explanation is the whole text. It does not say that anything should be done about the mill. Some people who hold the explanation draw a plan from it, and then their text has a plan in it and gets another name.',
-      'The same explanation can be told as a story of history: in every age the owners and the workers fight over who gets what, and that fight is what moves history forward. That counts too.'
+      'The pamphlet does one thing: it shows how an owner comes to gain from other people’s work. The weaver is paid $60 and makes cloth worth $100, so $40 is the part of her work she is not paid for. And it says this is true of every owner, however kind.',
+      'The explanation is the whole text. It does not say what to do about the mill. Someone who holds the explanation may go on to draw a plan from it, and then the text has a plan in it and gets another name.'
+    ],
+    spot: [
+      { do: 'Find the sum: $60 paid, $100 made, $40 left over.', why: 'The gap between pay and what the work earns is the owner’s gain.' },
+      { do: 'Look for “every owner”: “Every owner has to keep a gap like it”.', why: 'It says this is how the system works, not one owner’s greed.' },
+      { do: 'Check it asks for nothing: no tax, no handover and no party.', why: 'A plan in the text would give it another name.' }
     ],
     feature: { step: 'C1', option: 'explain' },
-    name: 'The name for this is {o:marx}, after the writer whose books set out the explanation. It stands for a text that explains how owners gain from what workers make, and asks for nothing about the businesses or about power.' },
+    name: 'This is {o:marx}, after the writer whose books set out the explanation. The text explains how owners gain, and asks for nothing.' },
 
   { id: 'check-marx', kind: 'check', after: 'marx',
     case: 'c-mx-care',
@@ -27,13 +25,13 @@ FC.cards('ideology', 'u2', [
 
   /* ---------- The pair that both mention the owners' gain and ask for nothing ---------- */
   { id: 'look-classonly-marx', kind: 'lookalike', ledger: 'classonly~marx',
-    link: 'These two are the pair most often taken for each other, because both talk about the owner’s gain and neither asks for a tax or a handover. They part on how much the text explains.',
+    link: 'Both talk about the owner’s gain, and neither asks for a tax or a handover. They part on how much the text explains.',
     cases: ['c-lk-comx-co', 'c-lk-comx-mx'],
-    instruction: 'Both cases are about the Dunmore carpet mill and its owner’s gain. Compare one thing: is the text about this owner’s choice, or does it explain why any owner would keep a gap?',
+    instruction: 'Both stories are about the Dunmore carpet mill and its owner’s gain. Compare one thing: is the text about this owner’s choice, or does it explain why any owner would keep a gap?',
     prompt: { kind: 'which', option: 'C1.explain', answer: 'c-lk-comx-mx' },
     difference: [
-      'In Case A the text complains that this owner paid himself a bonus and refused a raise. That is one owner’s choice, and the text goes on to an invitation to a cafeteria meeting. Nothing is explained and nothing is asked. The answer is {a:C1.none}, and the case is {o:classonly}.',
-      'In Case B the text says the gap is not this owner’s greed: every owner has to keep a gap like it, because that is how the arrangement works. That is an explanation of how owners gain. The answer is {a:C1.explain}, and the case is {o:marx}.',
-      'One complains and the other explains.'
+      'In Story A the text complains that this owner paid himself a bonus and refused a raise, then invites people to a meeting. Nothing is explained and nothing is asked. The answer is {a:C1.none}, so this is {o:classonly}.',
+      'In Story B the text says the gap is not this owner’s greed: every owner has to keep a gap like it. That explains how owners gain. The answer is {a:C1.explain}, so this is {o:marx}.',
+      'One complains. The other explains.'
     ] }
 ]);

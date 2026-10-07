@@ -18,8 +18,8 @@ FC.cases('wealth', 'u5', [
     text: "Cormac, 63, owns shares worth $2,000,000 in a small firm that makes sensors. A bidder has offered to buy the firm for ten times its present value if a safety test passes next year. His house and investments come to $20,000,000, his income covers his spending, and his will, forms and power of attorney were renewed in May. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit, and he is already above it.",
     outcome: 'trust', route: { D1: ['handover'], H1: ['growth'] },
     cues: { H1: 'A bidder has offered to buy the firm for ten times its present value if a safety test passes next year' },
-    reason: { H1: 'The case shows something he holds that is expected to rise sharply: {cue:H1}. $2,000,000 would become $20,000,000, and his estate, $22,000,000 now, would become $40,000,000. The rise of $18,000,000 would all be above the limit, and at 40% that is $7,200,000 of new tax. His papers are current, and the case does not say he has money to spare.' },
-    not: { outcome: 'gifting', why: 'The estate above the limit is in the case once the rise comes, but the larger problem is the rise itself: $18,000,000 of new value that would all be taxed. Small yearly gifts could not touch it.' } },
+    reason: { H1: 'Something he holds is about to shoot up in value: {cue:H1}. $2,000,000 would become $20,000,000, and at 40% the $18,000,000 rise is $7,200,000 of new tax.' },
+    not: { outcome: 'gifting', why: 'The estate is above the limit, but the bigger problem is the $18,000,000 rise itself. Small yearly gifts could not touch it.' } },
 
   { id: 'exc-vineyard-case', use: 'teach', tier: 'misleading', setting: 'property', topic: 'a vineyard beside land a hotel group has bought', name: 'Leopold’s vineyard',
     also: ['bigestate'],
@@ -27,9 +27,9 @@ FC.cases('wealth', 'u5', [
     outcome: 'trust', route: { D1: ['handover'], H1: ['growth'] },
     cues: { H1: 'An appraiser says the vineyard could be worth $20,000,000 within four years' },
     segments: [
-      { text: 'Leopold is 75. His estate is $30,000,000, well above the tax-free limit, and it includes a vineyard worth $2,000,000 next to a village where a hotel group has just bought the neighboring land. ', note: 'That is how large the estate is. It is part of what makes the case look like {o:gifting}, and it does not settle which name this is.' },
+      { text: 'Leopold is 75. His estate is $30,000,000, well above the tax-free limit, and it includes a vineyard worth $2,000,000 next to a village where a hotel group has just bought the neighboring land. ', note: 'That is how big the estate is. It makes the story look like {o:gifting}, but it does not settle it.' },
       { text: 'An appraiser says the vineyard could be worth $20,000,000 within four years' },
-      { text: '. His investments pay him $500,000 a year more than he spends, and his will, forms and power of attorney were renewed in March. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit.', note: 'The spare income is real, and it is why the case looks like {o:gifting}. It does not settle the name, because the rise is the larger thing.' }
+      { text: '. His investments pay him $500,000 a year more than he spends, and his will, forms and power of attorney were renewed in March. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit.', note: 'The spare income is real, and it also makes the story look like {o:gifting}. The rise is the bigger thing.' }
     ] },
 
   /* Family rules for the money */
@@ -43,6 +43,6 @@ FC.cases('wealth', 'u5', [
     text: "Mabel, 74, will leave her $360,000 equally to her two daughters. One of them, Rhea, 41, is in the middle of a divorce and has asked Mabel to lend her money twice this year. Mabel's will, forms and power of attorney were all renewed in January. Her estate is far below the tax-free limit for estate tax.",
     outcome: 'governance', route: { D1: ['handover'], H1: ['people'] },
     cues: { H1: 'Rhea, 41, is in the middle of a divorce and has asked Mabel to lend her money twice this year' },
-    reason: { H1: 'The case shows a risk in a person who will receive the money: {cue:H1}. Part of the $360,000 would go to someone in the middle of a divorce, and she has already asked twice for money. The papers are current and the estate is far below the limit, so neither is the problem.' },
-    not: { outcome: 'basicdocs', why: 'All three papers were renewed in January, so no paper is missing or out of date. What the case raises is a person.' } }
+    reason: { H1: 'Rhea, who will get half of the $360,000, is in a divorce and has asked for money twice: {cue:H1}. The papers are current and the estate is far below the limit, so neither is the problem.' },
+    not: { outcome: 'basicdocs', why: 'All three papers were renewed in January, so none is missing or out of date. What this story raises is a person.' } }
 ]);

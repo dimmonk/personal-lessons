@@ -10,12 +10,12 @@
 
 FC.unit('wealth', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'One',
-  title: { text: 'What could lose the money' },
-  subtitle: 'The first question, and the five kinds of case it sorts every account of someone’s money into',
+  title: { text: 'Before you change anything about your money' },
+  subtitle: 'Find what could lose it first: a yearly fee, one big risk, a fall in prices, a death or illness, or nothing at all',
   teaches: { steps: ['D1'], outcomes: [], terms: ['pot', 'fund', 'bond', 'mix', 'claim'],
              families: ['erosion', 'timing', 'shock', 'handover', 'none'] },
   assumes: [],            // the first unit of the subject
@@ -27,45 +27,45 @@ FC.unit('wealth', 'u1', {
   // A quick lesson (section 19): four pairs have a look-alike card; the other three are taught on the question card (taughtIn).
   ledger: [
     { id: 'erosion~timing', pair: ['erosion', 'timing'], step: 'D1',
-      shared: 'In both, money leaves {t:pot} because of how the person pays for their life, and a fall in prices can be somewhere in the story.',
-      rule: '{a:D1.erosion} is about what leaves every year whatever prices do: a charge, a tax bill, or a sum spent. {a:D1.timing} is about the day things have to be sold: prices have fallen, or could fall, just when the money is needed.',
-      test: 'Is the case about how much leaves {t:pot} each year, whatever prices do? Or is it about the days when things have to be sold, because prices have fallen just when the money is needed?' },
+      shared: 'In both, money leaves {t:pot}, and a fall in prices may be somewhere in the story.',
+      rule: '{a:D1.erosion} is about a sum that leaves every year whatever prices do: a fee, a tax bill, or money spent. {a:D1.timing} is about the day money has to be raised: prices have fallen, or could fall, just when it is needed.',
+      test: 'Does a sum leave {t:pot} every year, whatever prices do? Or does money have to be raised on a certain day, with prices down?' },
     { id: 'shock~timing', pair: ['shock', 'timing'], step: 'D1',
-      shared: 'In both, a fall in prices is part of the story, and the person could lose a large part of what they have.',
-      rule: 'In {a:D1.shock} the harm comes through one company, one property, one business, one demand in a lawsuit or one loan, and could happen whatever the rest of the market does. In {a:D1.timing} the harm comes from prices falling in general, on a day when the money is needed or the split has moved.',
-      test: 'Would one thing do the damage even if every other price stayed where it is? Or is the damage done by prices falling across the board, on a day when the money is needed?' },
+      shared: 'In both, prices fall and the person could lose a large part of what they have.',
+      rule: 'In {a:D1.shock} the harm comes through one company, one property, one business, one demand for payment or one loan, whatever the rest of the market does. In {a:D1.timing} prices fall everywhere, on a day when the money is needed or after the split has drifted.',
+      test: 'Would one thing do the damage even if every other price stayed where it is? Or do prices fall everywhere, on a day when the money is needed?' },
     { id: 'none~timing', pair: ['none', 'timing'], step: 'D1',
       shared: 'In both, the money is invested, and prices may fall.',
-      rule: 'In {a:D1.none} no money is needed from the investments for years and no plan has been drifted from, so a fall is only a fall and there is time for prices to come back. In {a:D1.timing} the case shows something a fall would catch: living costs, a bill on a date, or a mix that has moved.',
-      test: 'When is the money needed? Does the case show living costs, a bill on a date, or a mix that has moved, that a fall would catch? Or is nothing needed from it for years?' },
+      rule: 'In {a:D1.none} nothing is needed from the investments for years, so a fall is only a fall and prices have time to come back. In {a:D1.timing} something is waiting for the money: living costs, a bill on a date, or a mix that has drifted.',
+      test: 'When is the money needed? Is something waiting for it, such as living costs, a bill on a date or a drifted mix? Or is nothing needed for years?' },
     { id: 'none~erosion', taughtIn: 'q-gate', pair: ['none', 'erosion'], step: 'D1',
       shared: 'In both, money is being kept in investments over many years, and the person may have no complaint.',
-      rule: 'In {a:D1.erosion} the case raises a charge, a tax bill or a sum being spent. In {a:D1.none} it raises none of them: nothing is said about anything that comes out.',
-      test: 'Does the case say anything about a charge, a tax bill or a sum taken out? If you cannot point to the words, it does not.' },
+      rule: 'In {a:D1.erosion} the story raises a fee, a tax bill or a sum being spent. In {a:D1.none} it raises none of them: nothing is said about anything coming out.',
+      test: 'Does the story say anything about a fee, a tax bill or money taken out? If you cannot find the words, it does not.' },
     { id: 'handover~erosion', taughtIn: 'q-gate', pair: ['handover', 'erosion'], step: 'D1',
       shared: 'In both, money leaves the owner’s hands for someone else: a firm or the tax office in one, family in the other.',
-      rule: 'In {a:D1.erosion} something leaves every year, for as long as the money is kept. In {a:D1.handover} what is at stake comes once, when the owner dies or can no longer act, and it depends on who gets the money and what is taken first.',
-      test: 'Does it come out every year while the owner is alive? Or does it arise once, at a death, an illness or a gift?' },
+      rule: 'In {a:D1.erosion} something leaves every year, for as long as the money is kept. In {a:D1.handover} what is at stake comes once, when the owner dies or can no longer act: who gets the money, and what is taken first.',
+      test: 'Does it come out every year while the owner is alive? Or does it come up once, at a death, an illness or a gift?' },
     { id: 'none~handover', pair: ['none', 'handover'], step: 'D1',
       shared: 'In both, the owner may be well and the money may be in good order.',
-      rule: '{a:D1.handover} is the answer whenever the case is about what happens when the owner dies or cannot act, even when every paper is in order. {a:D1.none} is the answer only when the case says nothing about a death, an illness or a gift.',
-      test: 'Does the case say anything about a death, a will, a form, an illness or a gift? If you cannot point to the words, it does not.' },
+      rule: '{a:D1.handover} is the answer whenever the story is about what happens when the owner dies or cannot act, even when every paper is in order. {a:D1.none} is the answer only when the story says nothing about a death, an illness or a gift.',
+      test: 'Does the story say anything about a death, a will, a form, an illness or a gift? If you cannot find the words, it does not.' },
     { id: 'none~shock', taughtIn: 'q-gate', pair: ['none', 'shock'], step: 'D1',
       shared: 'In both, the person may hold shares or property, and may feel well off.',
-      rule: '{a:D1.shock} shows one thing that is most of what the person has, or {t:claim} or a loan that could reach all of it. {a:D1.none} shows nothing of the kind: what the person has is spread out, and no claim or loan is in the case.',
-      test: 'Is there one company, property, business, claim or loan that is most of the case? Or is it spread, with nothing in it that could reach everything?' }
+      rule: '{a:D1.shock} shows one thing that is most of what the person has, {t:claim} that could reach all of it, or a loan that could force a sale. {a:D1.none} shows nothing like that: what the person has is spread out, and no demand or loan appears.',
+      test: 'Is there one company, property, business, demand for payment or loan that is most of the story? Or is the money spread out, with nothing that could reach all of it?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The first two follow the gate's
   // answers in the order the unit teaches them; the part with drill: true is the last, and its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Money going out, and the day it is needed',
+    { id: 'p1', title: 'Fees, and prices that fall at the wrong time',
       cards: ['orient-gate', 'term-pot', 'term-fund', 'meet-erosion', 'check-erosion', 'term-bond', 'term-mix', 'meet-timing',
               'check-timing', 'look-erosion-timing'] },
-    { id: 'p2', title: 'One thing, the handover, and nothing to name',
+    { id: 'p2', title: 'One big risk, what happens at death, and nothing wrong',
       cards: ['term-claim', 'meet-shock', 'check-shock', 'look-shock-timing', 'meet-handover', 'check-handover', 'meet-none',
               'check-none', 'look-none-timing', 'look-none-handover', 'q-gate'] },
-    { id: 'p3', title: 'One whole case, then the drill',
+    { id: 'p3', title: 'One whole story, then the drill',
       cards: ['worked-reunion'], drill: true,
       close: ['recap-gate', 'plan-gate'] }
   ],
@@ -77,7 +77,7 @@ FC.unit('wealth', 'u1', {
   // items from. Every stage that asks about cases holds a case whose answer is "Nothing in the case" (P26, V37).
   drill: {
     key: 'x1',            // the old quick-drill totals for this unit were stored under pl:wealth:stats:x1 (frozen; see E8)
-    add: 'Some of these cases show nothing that could lose the money, and some show a thing that is already looked after. That is on purpose. Saying that nothing could lose the money is one of the five answers, and you will need it as often as the other four.',
+    add: 'Some of these stories show nothing that could lose the money, and some show something that is already looked after. That is on purpose. Saying that nothing could lose the money is one of the five answers, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'd-p-adviser', step: 'D1' }, { case: 'd-p-newjob', step: 'D1' }, { case: 'd-p-will', step: 'D1' }],
@@ -103,7 +103,8 @@ FC.unit('wealth', 'u1', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Wealth Preservation. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [

@@ -27,7 +27,7 @@ FC.cases('ideology', 'u2', [
     reason: { D1: 'The text sets the helpers against the company that owns the contracts, and stands with the helpers: {cue:D1}.',
               C1: 'The services are to belong to the people who do them: {cue:C1}. Nothing is said about competing.',
               C2: 'The text wants no government, and says how things will be run instead: {cue:C2}.' },
-    not: { outcome: 'demsoc', why: 'Giving the services to the people who do them is something {o:demsoc} asks for as well. This text wants no government, and {o:demsoc} keeps the government.' } },
+    not: { outcome: 'demsoc', why: 'Giving services to the people who do them is something {o:demsoc} asks for too. But this text wants no government, and {o:demsoc} keeps it.' } },
 
   { id: 'c-r-mk1', use: 'drill', tier: 'varied', setting: 'town', topic: 'cycle couriers who want to own a competing courier service',
     text: "From the founding paper of the Penny Hill cycle couriers: 'The courier app's owners take a fee from every delivery, and the riders take the rain, and we are with the riders. Each courier service should belong to its riders, and the services should compete for orders, set their own rates and fold if they cannot cover their costs.'",

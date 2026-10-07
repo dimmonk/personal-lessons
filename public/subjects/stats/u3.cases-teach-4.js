@@ -14,7 +14,7 @@ FC.cases('stats', 'u3', [
     outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
     cues: { S1: ['5 wins from 5 games', 'Moth is the best player in the game'], A1: '5 wins from 5 games' },
     reason: { S1: 'The blog speaks for how good Moth is, but the figure comes from five games: {cue:S1}.',
-              A1: 'Every game Moth has played is counted, so nobody is left out. But there are only five: {cue:A1}. One lost game would make it 4 of 5, which is 80 in every 100, and the leaderboard puts a player with five games above players with five hundred.' } },
+              A1: 'Every game Moth has played is counted, but there are only five: {cue:A1}. One lost game would make it 4 of 5, so 100% means little.' } },
 
   /* ---------- The look-alike with the claim that holds: one player, four kicks and eighty ---------- */
   { id: 'cn-penalties-four', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a school soccer player and 4 penalties', name: 'The penalty taker, four kicks',
@@ -32,6 +32,6 @@ FC.cases('stats', 'u3', [
     text: "A new bakery has been open for one day, and three customers have come in. The owner asked each of them for a rating, and all three gave five stars. The sign in the window now says: 'Rated five stars by every customer.'",
     outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
     cues: { S1: ['all three gave five stars', 'Rated five stars by every customer'], A1: 'three customers have come in' },
-    reason: { S1: 'The sign makes "five stars by every customer" sound like a verdict on the bakery, but the figure comes from three people: {cue:S1}.',
-              A1: 'Nobody was left out, and nobody chose themselves in: every customer there has been is counted. But there are only a handful: {cue:A1}. One two-star rating would turn "every customer" into two of three, and the sign would say nothing.' } }
+    reason: { S1: 'The sign makes “five stars by every customer” sound like a verdict on the bakery, but the figure comes from three people: {cue:S1}.',
+              A1: 'Every customer so far is counted, but there are only three: {cue:A1}. One two-star rating would turn “every customer” into two of three.' } }
 ]);

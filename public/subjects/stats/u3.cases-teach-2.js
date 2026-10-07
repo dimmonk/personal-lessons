@@ -14,7 +14,7 @@ FC.cases('stats', 'u3', [
     outcome: 'selfselect', route: { S1: ['counted'], A1: ['chose'] },
     cues: { S1: ['Of the 214 slips, 190 said yes', 'The town wants the fair in June'], A1: 'Anyone who walked past could drop in a slip' },
     reason: { S1: 'The sign speaks for "the town", but the figure is 214 slips: {cue:S1}. The slips are from the people who walked past and chose to drop one in.',
-              A1: 'Nobody was asked by name: {cue:A1}. The ones who dropped a slip in chose to. A person who feels strongly about the date of the fair is likelier to stop than one who does not mind, and nobody counted the ones who walked on.' } },
+              A1: 'Nobody was asked by name: {cue:A1}. The people who dropped a slip in chose to, and nobody counted the ones who walked on.' } },
 
   { id: 'cn-homework-link', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a homework survey with a link in a newsletter', name: 'The homework survey, the link',
     text: "A school put a link to a survey in its newsletter and on its website: 'Is there too much homework?' Anyone who saw the link could answer. 240 people did, and 204 said yes. The principal says: 'Parents say there is too much homework: 85 in every 100.'",
@@ -27,10 +27,10 @@ FC.cases('stats', 'u3', [
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: 'The lab drew names by lottery', H1: 'The new pillow adds 25 minutes of sleep' },
     segments: [
-      { text: 'A sleep lab asked for volunteers through a newspaper ad, and 600 people came forward', note: 'This is what makes the case look like a poll anyone could answer. It says how the people came to the study. The words to tap are the ones that say how they were put into groups.' },
+      { text: 'A sleep lab asked for volunteers through a newspaper ad, and 600 people came forward', note: 'This is what makes it look like a poll anyone could answer. It says how people joined, and you want how they were put into groups.' },
       { text: 'The lab drew names by lottery: 300 were given a new pillow, and 300 kept their own' },
-      { text: 'the people with the new pillow slept 25 minutes longer a night on average', note: 'That is the result. It says how big the difference was, and not how the two groups were formed.' },
-      { text: 'The new pillow adds 25 minutes of sleep', note: 'That is the claim. It says what caused the difference, and the words to tap are the ones that say how the groups were formed.' }
+      { text: 'the people with the new pillow slept 25 minutes longer a night on average', note: 'That is the result. It says how big the difference was, not how the groups were formed.' },
+      { text: 'The new pillow adds 25 minutes of sleep', note: 'That is the claim. You want the words that say how the groups were formed.' }
     ],
-    not: { outcome: 'selfselect', why: 'The people in the study did choose to take part, which would fit {o:selfselect}. But nobody reads their answers as standing for people who did not take part. The claim is about the difference between two groups that a lottery formed from the same volunteers.' } }
+    not: { outcome: 'selfselect', why: 'The people in the study did choose to take part, which fits {o:selfselect}. But the claim is about two groups that a lottery formed from the volunteers, not about people who never took part.' } }
 ]);

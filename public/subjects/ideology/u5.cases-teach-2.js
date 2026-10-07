@@ -37,10 +37,10 @@ FC.cases('ideology', 'u5', [
     cues: { D1: 'Every woman is owed a fair start in life',
             R1: ['Rules that treat every patient alike are not enough', "Change the clinics' opening rules until women are seen as often as men"] },
     segments: [
-      { text: 'Every woman is owed a fair start in life: a clinic in each district, free screening, and help when she is out of work, all paid for by everyone together', note: 'That asks the government to give a fair start, and the text does say it. It is the sentence that makes the text look like one that asks for a fair start and nothing more. It is not where the text ends.' },
-      { text: 'But every clinic keeps the same hours for every patient, nine to five on weekdays, and those hours leave behind women who work nights or care for others by day', note: 'That says a rule that treats every patient alike leaves a group behind. It is half of what settles it. The other half is what the text asks to be done about it.' },
+      { text: 'Every woman is owed a fair start in life: a clinic in each district, free screening, and help when she is out of work, all paid for by everyone together', note: 'That asks the government for a fair start, and the text does say it. But it is not where the text ends.' },
+      { text: 'But every clinic keeps the same hours for every patient, nine to five on weekdays, and those hours leave behind women who work nights or care for others by day', note: 'That says the same hours leave a group behind, but not yet what the text wants done about it.' },
       { text: 'Rules that treat every patient alike are not enough' },
-      { text: "Change the clinics' opening rules until women are seen as often as men", note: 'That says what the statement asks to be changed. The words that say why the same rules for everyone are not enough come before it.' }
+      { text: "Change the clinics' opening rules until women are seen as often as men", note: 'That is what the statement asks to change. The words that say why the same rules are not enough come before it.' }
     ] },
 
   { id: 'i5-x-mill', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a mill with two shifts cut, and a school paid for by its profits', name: 'The mill hands’ leaflet',
@@ -51,10 +51,10 @@ FC.cases('ideology', 'u5', [
             C1: "The mill can stay in its owners' hands. Tax its profits to pay for the school and the clinic",
             C2: 'Tax its profits to pay for the school and the clinic' },
     segments: [
-      { text: 'Everyone is owed a fair start: a school, a doctor, and help when the work runs out', note: 'That says what every person is owed, and the text does say it. It is the sentence that makes the text look like one about what everyone is owed. It is not where the text ends.' },
-      { text: 'The owners of the mill have cut two shifts to save money, and the mill hands pay for it', note: 'That names the owners and the mill hands, and what the cut did to the hands. It is half of what settles it. The other half is whose side the text takes.' },
+      { text: 'Everyone is owed a fair start: a school, a doctor, and help when the work runs out', note: 'That says what everyone is owed, and the text does say it. But it is not where the text ends.' },
+      { text: 'The owners of the mill have cut two shifts to save money, and the mill hands pay for it', note: 'That names the owners and the mill hands, but not yet whose side the text takes.' },
       { text: 'The mill hands and the owners do not want the same things, and we stand with the mill hands' },
-      { text: "The mill can stay in its owners' hands. Tax its profits to pay for the school and the clinic", note: 'That says what the leaflet asks for. It is not what settles the first question.' }
+      { text: "The mill can stay in its owners' hands. Tax its profits to pay for the school and the clinic", note: 'That says what the leaflet asks for. It does not settle the first question.' }
     ] },
 
   { id: 'i5-x-parish', use: 'teach', tier: 'misleading', setting: 'faith', topic: 'a rector’s column on freedom and the church', name: 'The rector’s column',
@@ -64,10 +64,10 @@ FC.cases('ideology', 'u5', [
     cues: { D1: 'The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us',
             T1: 'Let us keep them, and let any change come slowly' },
     segments: [
-      { text: 'Each person should be free to worship, to speak and to keep what they earn, and the government should stay out of our lives', note: 'That asks for each person’s freedom and a government that stays out, and the text does say it. It is the sentence that makes the text look like one that wants each person left free. But the text goes on to say that this is not enough on its own.' },
-      { text: 'But freedom without the old ways is thin', note: 'That is the turn of the text. It says freedom needs something more, and it has not yet said what. The words that say it are in the sentence after.' },
+      { text: 'Each person should be free to worship, to speak and to keep what they earn, and the government should stay out of our lives', note: 'That asks for each person’s freedom and a government that stays out, and the text does say it. But the text goes on to say freedom is not enough on its own.' },
+      { text: 'But freedom without the old ways is thin', note: 'That is the turn of the text, but it has not yet said what freedom needs. The next sentence does.' },
       { text: 'The church, the Sunday table and the harvest supper are what hold a free village together, and they should guide us' },
-      { text: 'Let us keep them, and let any change come slowly', note: 'That says the old ways are to be kept. It is not what settles the first question.' }
+      { text: 'Let us keep them, and let any change come slowly', note: 'That says to keep them and change slowly. It does not settle the first question.' }
     ] },
 
   { id: 'i5-x-onepeople', use: 'teach', tier: 'misleading', setting: 'borders', topic: 'schools and clinics for our own people first', name: 'The speech about one people',
@@ -78,9 +78,9 @@ FC.cases('ideology', 'u5', [
             N1: 'we are one people with one past and one future, and what divides us is smaller than what holds us together',
             N2: 'Put your trust in us at the ballot box in May, and judge us there' },
     segments: [
-      { text: 'Every person is owed a school and a doctor, and the government should pay for both', note: 'That says what every person is owed, and the text does say it. It is the sentence that makes the text look like one about what everyone is owed. It is not where the text ends.' },
-      { text: 'But we are one people with one past and one future, and what divides us is smaller than what holds us together', note: 'That says the text speaks for one people as one. It is half of what settles it. The other half is that the text puts that people first.' },
+      { text: 'Every person is owed a school and a doctor, and the government should pay for both', note: 'That says what every person is owed, and the text does say it. But it is not where the text ends.' },
+      { text: 'But we are one people with one past and one future, and what divides us is smaller than what holds us together', note: 'That says the text speaks for one people as one, but not yet that it puts them first.' },
       { text: "Our schools and our clinics are for our own people first, before any stranger's claim" },
-      { text: 'Put your trust in us at the ballot box in May, and judge us there', note: 'That leaves the vote in place. It is not what settles the first question.' }
+      { text: 'Put your trust in us at the ballot box in May, and judge us there', note: 'That leaves the vote in place. It does not settle the first question.' }
     ] }
 ]);

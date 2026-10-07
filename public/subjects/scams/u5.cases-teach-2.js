@@ -14,12 +14,12 @@ FC.cases('scams', 'u5', [
     outcome: 'friendlychat', route: { D1: ['details'], F1: ['life'], F2: ['notfit'] },
     cues: { D1: 'What kind of work do you do? Are you saving for a house?', F1: ['from a number she does not know', 'What kind of work do you do? Are you saving for a house?'], F2: 'Lola has never heard of Kit' },
     segments: [
-      { text: 'A message arrives on Lola\'s phone from a number she does not know', note: 'That says how it arrived. The question is about what the sender wants to know about her.' },
-      { text: 'Hello Lola! I got your number from a friend of a friend, I hope that is OK. I\'m Kit', note: 'That is how Kit introduces himself. He is friendly, and nothing here asks Lola anything about herself.' },
+      { text: 'A message arrives on Lola\'s phone from a number she does not know', note: 'That is how it arrived, not what the sender wants to know about her.' },
+      { text: 'Hello Lola! I got your number from a friend of a friend, I hope that is OK. I\'m Kit', note: 'That is how Kit introduces himself. It asks Lola nothing about herself.' },
       { text: 'What kind of work do you do? Are you saving for a house?' },
-      { text: 'Lola has never heard of Kit', note: 'That says how well she knows him. It shows that he is a stranger, and the questions he asks are what the question looks at.' }
+      { text: 'Lola has never heard of Kit', note: 'That shows he is a stranger. The questions he asks are what decide it.' }
     ],
-    reason: { F1: 'Kit is a stranger who reached Lola out of nowhere, and what he asks about is her work and her money: {cue:F1}. He asks for no paper, no number and nothing else yet, so what he wants to know about is her life.' } },
+    reason: { F1: 'Kit is a stranger asking about her work and whether she is saving for a house, and he asks for no paper or number.' } },
 
   { id: 'u5-ines-chat', use: 'teach', tier: 'clean', setting: 'relationships', topic: 'three weeks of chat, with questions on his job and apartment',
     text: "Joel has been exchanging messages for three weeks with Ines, who first wrote to him by mistake. Today she asks what he does for a living, whether he rents or owns his apartment, and what he plans to do at Christmas. She has not asked him for anything.",
@@ -53,11 +53,11 @@ FC.cases('scams', 'u5', [
     text: "Aisha has ordered a sofa from the Harrow Furniture website, which she reached by typing its address herself. At the checkout the page asks for her delivery address and a phone number for the delivery team.",
     outcome: 'realdetails', route: { D1: ['details'], F1: ['identify'], F2: ['fits'] },
     cues: { D1: 'the page asks for her delivery address and a phone number for the delivery team', F1: 'her delivery address', F2: ['ordered a sofa from the Harrow Furniture website', 'which she reached by typing its address herself'] },
-    reason: { F1: 'The page asks for facts about Aisha that identify her: {cue:F1}. An address is one of the facts that count here, even though it is only needed for a delivery. It asks about nothing in her life.' } },
+    reason: { F1: 'The page asks for a fact that identifies Aisha: {cue:F1}. It asks nothing about her life.' } },
 
   { id: 'u5-qf2', use: 'check', tier: 'varied', setting: 'leisure', topic: 'calling the gym and being asked for more than a bill needs',
     text: "Max calls the number on his gym membership card to ask about a bill. The adviser asks him to confirm his date of birth, and also the full number and the three-digit code on the back of his bank card, 'to speed things up'.",
     outcome: 'identitytheft', route: { D1: ['details'], F1: ['identify'], F2: ['notfit'] },
     cues: { D1: 'confirm his date of birth, and also the full number and the three-digit code on the back of his bank card', F1: 'the full number and the three-digit code on the back of his bank card', F2: ['calls the number on his gym membership card to ask about a bill', 'also the full number and the three-digit code on the back of his bank card'] },
-    reason: { F2: 'Max did start this, through the number on his card. But to answer a question about a bill the adviser needs no more than his date of birth, and what she asks for goes further: {cue:F2}. The first half of the question is met, and the second is not.' } }
+    reason: { F2: 'Max did start this, through the number on his card, but a bill question does not need his full card number and its code: {cue:F2}.' } }
 ]);

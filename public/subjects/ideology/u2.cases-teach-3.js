@@ -12,7 +12,7 @@ FC.cases('ideology', 'u2', [
     text: "From a column in a care workers' newsletter: 'Why can a care chain make a profit at all? Because the home pays its caregivers less than the care is worth to the people who pay the fees. The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work. We write for the caregivers.'",
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { C1: 'The owners keep the gap, and not because they are greedy: it is how a business that pays wages has to work' },
-    reason: { C1: 'The text does not ask for anything to be done with the homes. It explains how the owners come to make a profit: {cue:C1}. That is an explanation of how the arrangement works.' } },
+    reason: { C1: 'The text explains how the owners make a profit: {cue:C1}. It asks for nothing to be done with the homes.' } },
 
   { id: 'c-lk-anmk-an', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bindery run in open meetings, with no rulers', name: 'A bindery run in open meetings, with no rulers',
     text: "The bookbinders at the Quill bindery say: 'The bindery's owner keeps the profit, and we do the binding, and we stand with the bookbinders. The bindery should belong to the people who work in it. We want no government telling us what to do or who to sell to: we will run the bindery and the district together, in meetings.'",

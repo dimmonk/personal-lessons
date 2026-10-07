@@ -1,53 +1,52 @@
-// Basic Math, Unit Two, part one: the opening card, and the first three kinds (does one number split, what is it made of, and the
+// Basic Math, Unit Two, part one: the opening card, and the first three kinds (does one number split, which primes make it, and the
 // biggest equal piece for two numbers), with the three words they lean on and the look-alike card for the first two.
-// Unit Two is the first procedure unit (kind 'P', lesson standard A12). A quick lesson (section 19): each kind has one meet card, one
-// check, and one worked example (u2.cards-solved-1.js, computed: do not edit a number by hand). The key has one question here, and
-// each of its six answers leads to one name.
+// Unit Two is the first unit that teaches steps (kind 'P', lesson standard A12). A quick lesson (section 19): each kind has one meet
+// card, one check, and one worked example (u2.cards-solved-1.js, computed: do not edit a number by hand). The key has one question
+// here, and each of its six answers leads to one name.
+// Plain, concrete writing (section 20): a real problem first, then the idea, then how to spot it as numbered steps, then the name.
 // Cards are structured data, not HTML. A text field is one paragraph (a string) or several (an array of strings).
 // Key wording is never typed here: tokens are filled in from key.js. The app prints, and this file therefore does not contain:
-// the preview map, the heading of a meet card, "what you must be able to point to", the key’s question and answer on a meet card,
-// and the stem of every commit prompt.
+// the preview map, the heading of a meet card, the key’s question and answer on a meet card, and the stem of every commit prompt.
 
 FC.cards('math', 'u2', [
 
   { id: 'orient-whole', kind: 'orient',
-    h: 'Six kinds of problem about whole numbers, and a procedure for each',
-    canDo: 'After this unit you can take a problem about whole numbers, such as whether 67 singers can stand in equal rows, when two buses arrive together again, or what day of the week it will be in 50 days, say which of six kinds it is, and then solve it with the procedure for that kind.',
+    h: 'Six whole-number problems that look alike',
+    canDo: 'Before you start calculating a problem about whole numbers, check what it is asking. Six different questions look alike, each needs its own steps, and the wrong steps still give you a neat number.',
     everyday: [
-      'Picture the planning of a school fair, with five questions coming up in one afternoon, every one of them about whole numbers. “We have 67 volunteers: can they stand in equal rows?” “These two ribbons, 60 cm and 84 cm long, are to be cut into pieces that are all the same length, with none left over: how long can each piece be at most?” “One stall restocks every 20 minutes and the other every 30 minutes: when do they restock together?” “There are 50 candies for 7 children: how many are left over?” And one child with a calculator asks: “Can the number that multiplies by itself to give 2 ever be written down exactly?”',
-      'They are five different questions about whole numbers, and a sixth, what a number is made of, belongs with them. Each has its own procedure, and a procedure for the wrong one still gives a number, with nothing in the number to say that it is wrong. So the order is always the same: first work out what the problem wants to know about its numbers, and only then solve it.'
+      'At a school fair, six questions come up in one afternoon, all about whole numbers. “Can our 67 volunteers stand in equal rows?” “Which prime numbers multiply together to give 60?” “Two ribbons, 60 cm and 84 cm long, are to be cut into pieces of one length with none left over: how long can the pieces be at most?” “One stall restocks every 20 minutes and the other every 30: when do they restock together?” “There are 50 candies for 7 children: how many are left over?” And a child with a calculator asks: “Can the number that multiplies by itself to give 2 be written down exactly?”',
+      'Each question needs its own steps, and nothing in the number you get says it came from the wrong ones. So the order is always the same: first find out what the problem wants to know about its numbers, then work it out.'
     ],
     add: [
-      'A procedure is the fixed set of steps that solves one kind of problem, whatever the numbers. The working is the procedure carried out on one problem, with every number written down. A calculator can do the arithmetic: what this unit practices is which steps to take, and why.'
+      'The steps for each kind are the same whatever the numbers. A calculator can do the arithmetic: what you practice here is which steps to take, and why.'
     ],
     map: { branch: 'whole' } },
 
   /* ---------- A word the first kind leans on ---------- */
   { id: 'term-prime', kind: 'term', term: 'prime',
     h: 'A number that will not split',
-    link: 'The first kind of problem is about a word you may or may not know: prime. Here it is first, in a situation you can hold in your hands.',
+    link: 'The first kind of problem needs the word “prime”. Here it is in a real example.',
     case: 'wd-squads',
     plain: [
-      'Twelve players can be made into teams in four different ways, because 12 can be shared out evenly by 2, by 3, by 4 and by 6. Thirteen players can only be made into one big team or into thirteen teams of one. No whole number between 1 and 13 shares 13 out evenly.',
-      'Whole numbers like 13, which nothing shares out evenly except 1 and themselves, are the building blocks that every other whole number is made from: 12 is built from 2, 2 and 3. The first few are 2, 3, 5, 7, 11 and 13. The number 1 is left out on purpose.'
+      'Twelve players can make teams in four ways, because 12 shares out evenly by 2, by 3, by 4 and by 6. Thirteen players cannot: nothing between 1 and 13 shares 13 out evenly, so it is one team of 13 or 13 teams of one.',
+      'A number like 13, which only 1 and itself share out evenly, is called a prime. Every other whole number is built from primes: 12 is 2 × 2 × 3. The first few are 2, 3, 5, 7, 11 and 13. The number 1 is left out on purpose.'
     ] },
 
   /* ---------- The first kind: testing whether one number splits ---------- */
   { id: 'meet-prime', kind: 'meet', outcome: 'prime',
-    link: 'The first kind of problem starts from a question that looks too simple to need a procedure: can one number be shared out in equal groups at all?',
+    link: 'First: one number, and a yes-or-no question about whether it splits.',
     case: 'wd-apples', mark: 'W1',
-    strip: [
-      'There is one whole number to work with: 59, a count of apples.',
-      'The seller has one rule: equal bags, with more than one bag and more than one apple in each bag.',
-      'The question is a yes or a no: is any packing of that kind possible at all?'
-    ],
     explain: [
-      'What you are shown is a single whole number and one question about it. The seller does not ask what the bags would be like, or how many. She only needs to know whether any packing works.',
-      'You could try every smaller number one by one, but for a big number that is very long. The procedure in this unit is shorter and just as certain: it tests only a short list of small numbers, and every division is written down.',
-      'What decides the kind is not that 59 is odd, or small. It is that the question asks only whether the number splits at all.'
+      'The seller has one number, 59, and one question: can the apples be packed in equal bags at all? She does not ask how many bags, or how big. Whether 59 is odd or small does not matter: what matters is that she only asks whether it splits.',
+      'You could try every smaller number one by one, but for a big number that takes forever. The steps in this unit test only a short list of small numbers, and the answer is just as sure.'
+    ],
+    spot: [
+      { do: 'Count the numbers: one, 59 apples.', why: 'Two numbers would be a different problem, coming later in this unit.' },
+      { do: 'Find the rule for the groups: equal bags, more than one bag, more than one apple in each.', why: 'Without that rule, one bag of 59 would always work.' },
+      { do: 'Find the question: “Is that possible?” It wants a yes or a no.', why: 'No list and no count is asked for.' }
     ],
     feature: { step: 'W1', option: 'split' },
-    name: 'A problem like this is {o:prime}. The procedure checks one number against the small numbers that could share it out. If it finds a fit, the number can be split. If it finds none, the number is a {t:prime}, and cannot.' },
+    name: 'A problem like this is {o:prime}. If no small number fits it, the number is a {t:prime}, and it cannot be split.' },
 
   { id: 'check-prime', kind: 'check', after: 'prime',
     case: 'wd-tour',
@@ -57,73 +56,73 @@ FC.cards('math', 'u2', [
   /* ---------- A word the procedure leans on ---------- */
   { id: 'term-sqroot', kind: 'term', term: 'sqroot',
     h: 'The number that multiplies by itself',
-    link: 'The procedure for this first kind stops testing at a particular point, and it needs one more word to say where. Here is the word, in a situation you can hold in your hands.',
+    link: 'The steps for the first kind stop testing at a certain point, and you need one more word to say where. Here it is in a real example.',
     case: 'wd-patio',
     plain: [
-      'The number of slabs along one side of the patio is the number that, multiplied by itself, gives the total: 6 × 6 = 36. A mathematician writes that as √36 = 6.',
-      'Most numbers have no whole number that multiplies by itself to give them. 50 slabs cannot be laid as a square: 7 × 7 = 49 is one slab short, and 8 × 8 = 64 is too many. The side of a square of 50 slabs is somewhere between 7 and 8 slabs, and a calculator will give how far between: about 7.07.'
+      'The number of slabs along one side of the square patio is the number that, multiplied by itself, gives the total: 6 × 6 = 36. That 6 is the {t:sqroot} of 36, written √36 = 6.',
+      'Most numbers have no whole number that multiplies by itself to give them. 50 slabs cannot make a square: 7 × 7 = 49 is one slab short, and 8 × 8 = 64 is too many. The side would be between 7 and 8 slabs, about 7.07 on a calculator.'
     ] },
 
   /* ---------- A word the second kind leans on ---------- */
   { id: 'term-factor', kind: 'term', term: 'factor',
     h: 'A number that shares another out exactly',
-    link: 'The second kind of problem takes one number apart, and it needs a word for the numbers that share it out exactly. Here it is first, in a situation you can hold in your hands.',
+    link: 'The second kind of problem takes one number apart, and it needs a word for the numbers that share it out exactly. Here it is in a real example.',
     case: 'wd-boxes',
     plain: [
-      'The baker’s 12 rolls can be packed in boxes of 3, and they fill 4 boxes exactly. They can be packed in boxes of 4, and they fill 3 boxes exactly. Boxes of 5 will not do, because they leave 2 rolls over. The numbers that share 12 out exactly, with nothing left over, are 1, 2, 3, 4, 6 and 12, and they come in pairs that multiply to give 12: 1 × 12, 2 × 6 and 3 × 4.'
+      'The baker’s 12 rolls fit exactly into 4 boxes of 3, or 3 boxes of 4. Boxes of 5 will not do: they leave 2 rolls over. The numbers that share 12 out exactly are 1, 2, 3, 4, 6 and 12, and they come in pairs that multiply to 12: 1 × 12, 2 × 6 and 3 × 4.'
     ],
     after: [
-      'So 3 and 4 are a pair of {t:factor}s of 12, and so are 2 and 6. Every number has at least two, 1 and itself, and a {t:prime} is a number that has no others.'
+      'So 3 and 4 are a {t:factor} pair of 12, and so are 2 and 6. Every number has at least two factors, 1 and itself, and a prime has no others.'
     ] },
 
   /* ---------- The second kind: breaking one number into primes ---------- */
   { id: 'meet-factor', kind: 'meet', outcome: 'factor',
-    link: 'The first kind of problem asked only whether a number splits. The second asks what the number is made of, and that needs a list, not a yes or a no.',
+    link: 'Second: one number again, but now you want a list, not a yes or a no.',
     case: 'wd-puzzle', mark: 'W1',
-    strip: [
-      'There is one whole number to work with: 60.',
-      'The question asks for the prime numbers that multiply together to give it.',
-      'The answer is a list of numbers, not a yes or a no.'
-    ],
     explain: [
-      'What you are shown is one whole number and a question about what it is built from. The building blocks are the {t:prime}s: 60 is built from 2, 2, 3 and 5, because 2 × 2 × 3 × 5 = 60. There is only one list that works, whichever order you find the numbers in.',
-      'The question can also be worded as “every way it splits”: how many ways 28 tables can be set out in equal rows, or which sizes of equal team 24 players allow. It is the same kind, because every way of sharing a number out evenly uses some of its primes multiplied together, so once you know the primes you can list every way.'
+      'The puzzle gives one number and asks which primes multiply together to make it. For 60 they are 2, 2, 3 and 5, because 2 × 2 × 3 × 5 = 60. There is only one such list, whatever order you find the primes in.',
+      'Sometimes the same problem is worded as “every way it splits”: the ways to set out 28 tables in equal rows, or the team sizes that 24 players allow. The steps are the same, because once you have the primes you can list every way.'
+    ],
+    spot: [
+      { do: 'Count the numbers: one, 60.', why: 'Two numbers would be a different problem.' },
+      { do: 'Find what is asked for: “which prime numbers multiply together to give 60”.', why: 'The answer is a list of numbers.' },
+      { do: 'Check it is not only “can it be split?”: here you want the actual primes.', why: 'A yes or a no would leave the question unanswered.' }
     ],
     feature: { step: 'W1', option: 'parts' },
-    name: 'A problem like this is {o:factor}: the {t:factor}s of the number that are {t:prime}s, written as a product.' },
+    name: 'A problem like this is {o:factor}. Its answer is the list of primes that multiply to make the number.' },
 
   { id: 'check-factor', kind: 'check', after: 'factor',
     case: 'wd-museum',
-    ask: { type: 'phrase', step: 'W1', say: 'Which words show that the problem asks what one number is made of? Tap them.',
+    ask: { type: 'phrase', step: 'W1', say: 'Which words show that the problem asks for the primes that make one number? Tap them.',
            answer: 'which prime numbers multiply together to give 45' } },
 
-  /* ---------- The look-alike pair: whether one number splits, or what it is made of ---------- */
+  /* ---------- The look-alike pair: whether one number splits, or which primes make it ---------- */
   { id: 'look-prime-factor', kind: 'lookalike', ledger: 'prime~factor',
-    link: 'The first two kinds are easy to mix up when a problem is about one number, because the working for one finds things that the other needs. This card puts them side by side.',
+    link: 'Both of these are about one number, and the working for one finds what the other needs.',
     cases: ['la-patrols-prime', 'la-patrols-factor'],
-    instruction: 'Both problems are about the same scout leader and the same 57 scouts. Compare one thing: does the problem ask only whether the number splits, or does it ask what the number is made of?',
+    instruction: 'Both problems are about the same 57 scouts. Compare one thing: does the problem ask only whether the number splits, or does it ask for the primes?',
     prompt: { kind: 'which', option: 'W1.parts', answer: 'la-patrols-factor' },
     difference: [
-      'In Case A the leader asks whether the 57 scouts can be split into equal patrols, with more than one patrol and more than one scout in each. The answer is a yes or a no, and the answer is {a:W1.split}.',
-      'In Case B the same leader asks which prime numbers multiply together to give 57. The answer is a list, and the answer is {a:W1.parts}.',
-      'Testing 57 finds that 3 fits, and 57 = 3 × 19, so the working for one contains what the other needs. What differs is only what is asked, a verdict or a list.'
+      'In the first problem the leader only asks whether it can be done: {a:W1.split}. The answer is a yes or a no.',
+      'In the second problem the same leader asks which primes multiply together to give 57: {a:W1.parts}. The answer is a list.',
+      'Testing 57 finds that 3 fits, and 57 = 3 × 19, so the working for one holds what the other needs. Only the question differs: a yes or a no, or a list.'
     ] },
 
   /* ---------- The third kind: the biggest equal piece for two numbers ---------- */
   { id: 'meet-hcf', kind: 'meet', outcome: 'hcf',
-    link: 'The first two kinds took one number apart. The third starts from two numbers and looks for the largest size of piece that cuts both of them exactly.',
+    link: 'Third: two numbers, and the biggest equal piece that fits both.',
     case: 'wd-peppers', mark: 'W1',
-    strip: [
-      'There are two whole numbers: 12 red peppers and 18 green peppers.',
-      'Every tray must hold the same number of peppers, with one color only in a tray and nothing left over.',
-      'The question asks for the largest tray size that does this for both numbers at once.'
-    ],
     explain: [
-      'What you are shown is two whole numbers and a question about a piece that fits into both with nothing left over. Trays of 2 would work: 6 red trays and 9 green trays. Trays of 3 would work, and trays of 6. Trays of 4 would not, because 18 peppers fill 4 trays of 4 and leave 2 over. The biggest tray that works for both colors is 6: 2 red trays and 3 green trays. Using the word for a number that shares another out exactly, 6 is a {t:factor} of 12 and a {t:factor} of 18.',
-      'There is a sign that you have the right number. The answer can never be more than the smaller of the two numbers, because a piece cannot be bigger than the whole it is cut from.'
+      'The cook has 12 red peppers and 18 green ones, and wants trays of one size with none left over. Trays of 2 work (6 red trays and 9 green), and so do trays of 3 and of 6. Trays of 4 do not: 18 peppers leave 2 over. The biggest that works for both is 6: 2 red trays and 3 green. Since 6 goes into both 12 and 18 exactly, 6 is a {t:factor} of both.',
+      'You can check the answer: it is never more than the smaller of the two numbers, because a piece cannot be bigger than what it is cut from.'
+    ],
+    spot: [
+      { do: 'Count the numbers: two, 12 peppers and 18 peppers.', why: 'One number would be a different problem.' },
+      { do: 'Find the cutting: trays that all hold the same number, none left over.', why: 'Both numbers must split exactly into that size.' },
+      { do: 'Find the biggest: “What is the largest number of peppers a tray can hold?”', why: 'You want the biggest size that fits both, never more than the smaller number.' }
     ],
     feature: { step: 'W1', option: 'piece' },
-    name: 'A problem like this is {o:hcf}. In the name, “common” means that both numbers share it: the answer is a {t:factor} of the first number and also a {t:factor} of the second, and “highest” means the biggest such number.' },
+    name: 'A problem like this is {o:hcf}. “Common” means both numbers have it, and “greatest” means the biggest one.' },
 
   { id: 'check-hcf', kind: 'check', after: 'hcf',
     case: 'wd-tulips',

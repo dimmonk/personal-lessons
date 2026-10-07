@@ -5,39 +5,39 @@
 // This is a gate unit (lesson standard A15): a card that would carry `outcome` in a branch unit carries `family`,
 // and the family's name is its answer to the key's first question, printed by {a:D1.<family>}.
 // The app prints, and this file therefore does not contain: the preview map, the heading of a meet card,
-// "what you must be able to point to", the key's question and answer on a meet card, the stem of every commit
-// prompt, and the heading of an again or portrait card.
+// the stem of every commit prompt, and the heading of an again or portrait card.
+// A meet card: the story first, then the idea (explain), then how to spot it (spot: numbered steps, a bold action
+// and one short sentence of why), then the name (lesson standard section 20).
 
 FC.cards('psychology', 'u1', [
 
   { id: 'orient-kind', kind: 'orient',
-    h: 'Before any name: what kind of thing are you looking at?',
-    canDo: 'After this unit you can read a short account of something a person said or did, and say which of four kinds of thing it shows, pointing to the words that tell you.',
+    h: 'Before you call it manipulation, check what you are looking at',
+    canDo: 'Before you call someone “manipulative”, “a narcissist” or “just moody”, check what you are actually looking at. It is always one of the four things below, each needs different evidence, and most snap judgments skip this step.',
     everyday: [
-      "You already do a rough version of this every week. A friend describes a row with her partner: 'He's manipulating her.' A colleague talks about himself all lunch: 'He is so full of himself.' Your brother is short with everyone at dinner: 'He's just a bad-tempered person.'",
-      'Each is a label reached in one jump, and they are not even about the same thing: what one person does to another, what a man is like across his whole life, and what may be only a bad week. Mix these up and you are wrong before you have chosen a word.',
-      'So before any label there is an earlier question: what kind of thing is in front of you? A case is a short account of something a person said or did. This unit teaches the question, and four kinds are its answers.'
+      'A friend says her boyfriend is “manipulative”. A coworker says the new manager is “a narcissist”. Your brother snaps at dinner, and someone says he has always been “difficult”.',
+      'Each label jumps past a simple question: what did you actually see? One conversation, one bad week, or twenty years? Get that wrong and every word you pick after it is wrong too.'
     ],
-    map: { branch: 'gate' } },              // a gate unit's preview map is the gate itself, drawn from the key
+    map: { branch: 'gate' } },              // the preview map is the first question itself, drawn from the key
 
-  /* ---------- The first kind: one person's reasoning ---------- */
-  { id: 'meet-reasoning', kind: 'meet', family: 'reasoning',     // heading is the family's plain words, from the key
-    link: 'The first kind: a person telling you what they have decided, and why.',
+  /* ---------- A choice and its reasons ---------- */
+  { id: 'meet-reasoning', kind: 'meet', family: 'reasoning',
+    link: 'First: a person explaining a choice of their own.',
     case: 'g-job', mark: 'D1',
-    strip: [
-      'One person at the center: Leila.',
-      'A choice that is hers, and her reasons in her own words: the pay against the train and her children.',
-      'Her sister is there only to listen. Nothing is said about her, or done to her.'
-    ],
     explain: [
-      'This is one decision and the thinking behind it: one person, something that is theirs (a choice, a view, or something they did), and the reasons they give. What they do with a fact counts too: changing their mind, or explaining why it does not count.',
-      'The kind does not depend on whether the reasoning is good, or on who listens. Leila could write the same words in a diary and nothing would change. Take the listener away: if the case is still whole, it is this kind.'
+      'Leila is explaining her own decision. Her sister just listens, and nothing Leila says is about her sister.',
+      'This is the most common thing you will see, and it is not a problem in itself. Whether her reasons are good is a separate question.'
+    ],
+    spot: [
+      { do: 'Find the choice that is theirs: Leila turns the job down.', why: 'Everything else in the story hangs on it.' },
+      { do: 'Find their reasons: the train and the children.', why: 'Reasons are what you judge a choice by.' },
+      { do: 'Check who the words are about: only Leila.', why: 'Words aimed at the listener are a different thing, covered next.' }
     ],
     feature: { step: 'D1', option: 'reasoning' },
-    name: 'Reasoning is the thinking a person does to reach, defend or change a view or a choice. It does not say the thinking is good.' },
+    name: 'This is {a:D1.reasoning}. Her sister could leave the room and nothing would change.' },
 
   { id: 'check-reasoning', kind: 'check', after: 'reasoning',
     case: 'g-car',
-    ask: { type: 'phrase', step: 'D1', say: 'Which part of this case gives a person’s reasons for a choice of her own? Tap it.',
+    ask: { type: 'phrase', step: 'D1', say: 'Which words are Esme’s reasons for her choice? Tap them.',
            answer: 'The repair was $300, and a new one would cost me $200 a month' } }
 ]);

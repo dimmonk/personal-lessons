@@ -6,53 +6,57 @@
 
 FC.cards('psychology', 'u1', [
 
-  /* ---------- The key's first question, as a question ---------- */
+  /* ---------- The question, in one place ---------- */
   { id: 'q-kind', kind: 'question', step: 'D1',
-    h: 'The question you have been answering all along',
-    link: 'This card puts the question and its four answers in one place.',
+    h: 'The one question to ask first',
+    link: 'Here is the question and its four answers in one place.',
     decides: [
-      'Get the kind wrong and you ask the wrong questions next, however carefully: take one evening for a whole character and you go looking for years the case does not have; take something said to another person for private reasoning and that person drops out of view. That is why this question comes first.'
+      'Get this wrong and everything after it goes wrong. Take one evening for a whole personality, and you go looking for years that are not there. Take words aimed at someone for the speaker’s own reasons, and you miss the person they hurt.'
     ],
     how: [
-      'Read the whole case, the last sentence included: the years are often there. Then check the kinds in this order, and stop at the first one the case shows: {a:D1.pattern}, then {a:D1.tactic}, then {a:D1.reasoning}. If it shows none of them, it is {a:D1.none}.',
-      'Whichever you choose, put your finger on the words that show it. If you cannot point, you do not have an answer yet.'
+      { do: 'Read to the end before you answer.', why: 'The years are often in the last sentence.' },
+      { do: 'First look for years, places and people: {a:D1.pattern}.', why: 'When a story shows the biggest claim, the biggest claim wins.' },
+      { do: 'Next look for a target: {a:D1.tactic}.', why: 'Words aimed at someone matter more than the speaker’s reasons.' },
+      { do: 'Next look for the person’s own reasons: {a:D1.reasoning}.', why: 'That is what is left when nobody is targeted.' },
+      { do: 'None of these? It is {a:D1.none}.', why: 'Then there is nothing more to name.' },
+      { do: 'Find the exact words that show your answer.', why: 'If you can’t find them, you don’t have an answer yet.' }
     ],
-    whenBoth: 'Some cases show two kinds at once. A reason for your own act can be made out of the person you say it to; one evening can have years behind it. The order above picks the answer. Three pairs have no case of their own here, and each is easy to mix up: {a:D1.tactic} and {a:D1.none}, {a:D1.reasoning} and {a:D1.none}, {a:D1.reasoning} and {a:D1.pattern}. The test for each is printed below.' },
+    whenBoth: 'Some stories show two at once: an excuse for your own lateness that blames the person you say it to, or one evening with twenty years behind it. Use the order above. The test for each pair is below.' },
 
-  /* ---------- One whole case, watched ---------- */
+  /* ---------- One whole story, worked ---------- */
   { id: 'worked-rehearsal', kind: 'worked',
-    h: 'A whole case, where the opening points the wrong way',
-    link: 'Watch one case run from the question to the answer. The first thing you notice in it is not the thing that decides it. Read to the end before you answer.',
+    h: 'One whole story, where the start points the wrong way',
+    link: 'Watch one story worked through. The first thing you notice is not what decides it, so read to the end.',
     case: 'g-rehearsal',
     steps: [
       { step: 'D1',
         reason: [
-          'The case opens with one missed rehearsal and Petra’s reasons for it. If it ended there, you would be looking at one person giving reasons for something she did.',
-          'It does not end there. Read on: {cue:D1}. That is twenty years, family occasions and three workplaces, and the same thing in each. The case has become a long view of one person.'
+          'It opens with one missed rehearsal and Petra’s reasons for it. If it stopped there, it would be {a:D1.reasoning}.',
+          'It does not stop there: {cue:D1}. That is twenty years, family events and three jobs, and the same thing every time.'
         ] }
     ],
     hold: {
       neighbor: 'reasoning',
       prompt: { kind: 'reason',
-        lead: 'Petra gives reasons for missing the rehearsal, so the case can look like {a:D1.reasoning}. What decides it?',
+        lead: 'Petra gives reasons for missing the rehearsal, so this can look like {a:D1.reasoning}. What decides it?',
         choices: [
-          { id: 'a', text: 'Petra gives reasons for missing the rehearsal: the traffic, and not being told about the time.',
-            note: 'True, and it is why the case can look like {a:D1.reasoning}. If the case ended there, that would be the answer. It does not end there.' },
-          { id: 'b', text: 'The same thing has happened for twenty years, at family occasions and at three jobs, each time with a reason.' },
+          { id: 'a', text: 'Petra gives reasons for missing the rehearsal: the traffic, and not being told the time.',
+            note: 'True, and it is why this looks like {a:D1.reasoning}. If the story ended there, that would be the answer.' },
+          { id: 'b', text: 'The same thing has happened for twenty years, at family events and at three jobs, each time with a reason.' },
           { id: 'c', text: 'Her sister was not surprised.',
-            note: 'True, and it hints at a history. But it is one person’s reaction on one day. The history itself is in the sentence after it.' }
+            note: 'True, but it is one person’s reaction on one day. The history itself is in the next sentence.' }
         ],
         answer: 'b' },
       reason: [
-        'A person giving reasons for something she did is what you point to for {a:D1.reasoning}, and the first half of this case shows it. The second half shows the same thing across twenty years. When a case shows both, the answer is {a:D1.pattern}: the larger claim is the one the case supports.',
-        'Petra’s reasons on the day may even be true. The answer does not depend on that. It depends on how much of her life the case shows.'
+        'The first half shows a person giving reasons. The second half shows the same thing for twenty years. When a story shows both, the bigger claim wins: {a:D1.pattern}.',
+        'Her excuse on the day may even be true. It does not change the answer.'
       ]
     },
     impression: {
       resembles: 'g-moira', first: 'g-birthday-brother',
       text: [
-        'Now a second look: does this case look like one you know? A missed occasion and a ready reason may bring back Dev and the forgotten birthday, which was {a:D1.reasoning}. So the likeness and the answer seem to disagree.',
-        'When that happens, go back to the question and find the words in the case that answer it: {cue:D1}. Dev’s case has nothing like them. Moira’s does, so the case this one really looks like is Moira’s, and the answer stands.'
+        'A second look: does this remind you of a story you know? A missed occasion and a ready excuse may bring back Dev and the forgotten birthday, which was {a:D1.reasoning}.',
+        'When a likeness and the answer disagree, go back to the words that answer the question: {cue:D1}. Dev’s story has nothing like them. Moira’s does, so the answer stands.'
       ]
     } },
 
@@ -61,10 +65,10 @@ FC.cards('psychology', 'u1', [
     h: 'What to carry away',
     link: 'You have now answered the first question on your own.',
     carry: [
-      'Before any name, ask what the case is made of, and point to the words that show it. If you cannot point, you do not have an answer yet.',
-      'The kind is not a verdict, and none of the four is a diagnosis. Each says only what the case shows.',
-      'One evening is never {a:D1.pattern}, however bad it was and whoever says "always". Count the occasions, the places and the people.',
+      'Before you use any label, ask what you are looking at, and find the words that show it.',
+      'None of the four is a verdict or a diagnosis. Each says only what the story shows.',
+      'One evening is never {a:D1.pattern}, however bad it was and whoever says "always". Count the years, the places and the people.',
       'A hard week after something real is {a:D1.none}. It does not need a bigger word.',
-      'When a case shows two kinds, the answer is chosen in this order: years, places and relationships first; then anything said or done to another person about them; then one person’s reasons.'
+      'When a story shows two, use the order: years, places and people first; then a target; then the person’s own reasons.'
     ] }
 ]);

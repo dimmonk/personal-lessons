@@ -13,8 +13,8 @@ FC.cases('stats', 'u3', [
     text: "A landlord pushed a form under the door of each of the 150 flats in a building, about the new heating. 30 forms were sent back, and 27 said they were satisfied. The landlord's notice says: 'Nine in ten tenants are satisfied with the new heating.'",
     outcome: 'nonresp', route: { S1: ['counted'], A1: ['replied'] },
     cues: { S1: ['30 forms were sent back', 'Nine in ten tenants are satisfied with the new heating'], A1: ['pushed a form under the door of each of the 150 flats', '30 forms were sent back'] },
-    reason: { S1: 'The notice speaks for "tenants", all 150 of them, but the figure comes from 30 forms: {cue:S1}. The other 120 tenants are not in it.',
-              A1: 'Everyone on a known list, the 150 flats, was asked: {cue:A1}. 30 is 20 in every 100 of the flats, and nothing is said about the other 120. A tenant who is cross about the heating is likelier to post a form than one who has no complaint.' } },
+    reason: { S1: 'The notice speaks for all 150 tenants, but the figure comes from 30 forms: {cue:S1}. The other 120 are not in it.',
+              A1: 'Everyone on a known list, the 150 flats, was asked: {cue:A1}. A tenant who is cross about the heating is likelier to post a form than one with no complaint.' } },
 
   /* ---------- The look-alike with the second name: the same school, two ways in ---------- */
   { id: 'cn-homework-mailed', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a homework survey emailed to every family', name: 'The homework survey, the emails',

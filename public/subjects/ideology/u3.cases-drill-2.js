@@ -10,9 +10,9 @@ FC.cases('ideology', 'u3', [
             N1: 'Farmers, clerks and sailors, from every region: this coin will pass through all your hands',
             N2: 'The government will answer for the coin at the election in the fall, and the opposition is free to say what it likes' },
     reason: { D1: 'The text puts one country first: {cue:D1}.',
-              N1: 'The treasurer speaks for farmers, clerks and sailors from every region as one: {cue:N1}. Nobody is named as the other side.',
-              N2: 'The government will answer at the election and the opposition is free to speak: {cue:N2}. The vote and the right to disagree stay.' },
-    not: { outcome: 'fasc', why: '{o:fasc} would speak for everyone in the same way but would end the election and silence the opposition. Here both are left in place.' } },
+              N1: 'The treasurer speaks for farmers, clerks and sailors from every region: {cue:N1}. Nobody is named as the other side.',
+              N2: 'The government will answer at the election and the opposition is free to speak: {cue:N2}.' },
+    not: { outcome: 'fasc', why: '{o:fasc} would speak for everyone in the same way, but end the election and silence the opposition. Here both stay.' } },
 
   { id: 'n-rt-shipyard', use: 'drill', tier: 'clean', setting: 'work', topic: 'the opening of a shipyard',
     text: "From the Leader's address at the opening of a shipyard in Vessany: 'Vessany is one people with one will, and I am the voice of that will. The old parliament has talked itself to death and will not meet again. Papers that print the old parties' complaints will be closed, and the old parties' leaders will be watched.'",
@@ -22,8 +22,8 @@ FC.cases('ideology', 'u3', [
             N2: ['The old parliament has talked itself to death and will not meet again', "Papers that print the old parties' complaints will be closed"] },
     reason: { D1: 'The text puts one people first: {cue:D1}.',
               N1: 'The Leader speaks for the whole of Vessany as one people: {cue:N1}. Nobody is ranked by blood.',
-              N2: 'Parliament will not meet again and the papers that print complaints will be closed: {cue:N2}. That takes away the vote and the say of those who disagree.' },
-    not: { outcome: 'nationalism', why: '{o:nationalism} would leave parliament and the papers in place. Here the Leader ends them, so that his is the one voice.' } },
+              N2: 'Parliament will not meet again and papers that print complaints will be closed: {cue:N2}. That takes away the vote and the say of those who disagree.' },
+    not: { outcome: 'nationalism', why: '{o:nationalism} would leave parliament and the papers alone. Here the Leader ends them, so his is the one voice.' } },
 
   { id: 'n-rt-theater', use: 'drill', tier: 'clean', setting: 'town', topic: 'a theater sold to a foreign chain',
     text: "From a poster of the Marren Stage list: 'The ministers and the arts officials have sold the old Marren theater to a foreign chain. Marren's stage should tell Marren's stories, in Marren's own voice. Vote Stage list on the fifth and the doors will open to our own again.'",
@@ -32,9 +32,9 @@ FC.cases('ideology', 'u3', [
             N1: ['The ministers and the arts officials have sold the old Marren theater to a foreign chain', "Marren's stage should tell Marren's stories, in Marren's own voice"],
             N2: 'Vote Stage list on the fifth and the doors will open to our own again' },
     reason: { D1: 'The text puts one people first, marked out by its own stories and voice: {cue:D1}.',
-              N1: 'It sets the town\'s people against an {t:elite}, the ministers and the officials, and wants the country\'s own culture put first: {cue:N1}.',
-              N2: 'The remedy is a vote: {cue:N2}. Nobody\'s say is to be taken away.' },
-    not: { outcome: 'pop', why: '{o:pop} would stop at the anger at the ministers and officials. This poster goes on to say that the stage should tell the people\'s own stories, which puts culture first.' } },
+              N1: 'It sets the town\'s people against an {t:elite}, the ministers and the officials, and wants its own culture put first: {cue:N1}.',
+              N2: 'The remedy is a vote: {cue:N2}. Nobody\'s say is taken away.' },
+    not: { outcome: 'pop', why: '{o:pop} would stop at the anger. This poster goes on to say the stage should tell the people\'s own stories, which puts culture first.' } },
 
   { id: 'n-rt-pension', use: 'drill', tier: 'clean', setting: 'money', topic: 'a pension fund lost',
     text: "From a pamphlet: 'The fund managers and the ministers who sit with them lost the pension money and kept their bonuses. The ordinary people of this country were left with the bill. Next month's election is our chance to send every one of them home.'",
@@ -43,9 +43,9 @@ FC.cases('ideology', 'u3', [
             N1: ['The fund managers and the ministers who sit with them lost the pension money and kept their bonuses', 'send every one of them home'],
             N2: "Next month's election is our chance to send every one of them home" },
     reason: { D1: 'The pamphlet speaks for the ordinary people of one country: {cue:D1}.',
-              N1: 'It sets ordinary people against a few at the top and stops there: {cue:N1}. It names no borders, culture or industry to put first.',
+              N1: 'It sets ordinary people against a few at the top and stops there: {cue:N1}. It puts no borders, culture or industry first.',
               N2: 'The remedy is an election: {cue:N2}. The vote stays.' },
-    not: { outcome: 'natpop', why: '{o:natpop} would say what the country\'s borders, culture or industry should be. The pamphlet says only that those at the top should be sent home.' } },
+    not: { outcome: 'natpop', why: '{o:natpop} would also say what the country should have, such as its industry first. The pamphlet only says those at the top should go home.' } },
 
   /* ---------- Varied ---------- */
 ]);

@@ -7,24 +7,24 @@ FC.cards('civics', 'u2', [
   /* ---------- group four: what the first three articles built ---------- */
   { id: 'con-art', kind: 'concept',
     h: 'What the first three articles built',
-    link: 'What the Constitution itself does.',
+    link: 'The Constitution sets up the government in its first three articles.',
     case: 'cn-reading',
     plain: [
-      'The original text of the Constitution, the one from 1787, has seven articles. The first three build the three parts of the government of the whole country, one article each: Article I describes Congress, Article II the President, Article III the courts. Each says what that part may do and, in places, what none may do.',
-      'You met these three parts in Unit One, as three of the four answers to whose decision a story ends on: {plain:congress}; {plain:president}; and {plain:courts}. Hold each article as a number and a part.'
+      'The original Constitution, the one from 1787, has seven articles. The first three set up the three parts of the government of the whole country, one article each: Article I is Congress, Article II is the President, Article III is the courts. Each says what that part may do and, in places, what none of them may do.',
+      'You met these three parts in Unit One: {plain:congress}; {plain:president}; and {plain:courts}. Remember each article as a number and a part.'
     ] },
 
   { id: 'facts-art', kind: 'facts',
     h: 'Three articles, three parts',
-    link: 'Each of the first three articles builds one part of the government.',
+    link: 'Each of the first three articles sets up one part of the government.',
     concept: 'con-art',
     rows: [
       { id: 'art-one', q: 'Which part of the government does Article I of the Constitution describe?', a: 'Congress',
-        relates: 'Article I is about the lawmakers of the whole country, and it is where the list of what Congress may do is found.' },
+        relates: 'Article I is about the lawmakers of the whole country. It is also where the list of what Congress may do is found.' },
       { id: 'art-two', q: 'Which part of the government does Article II of the Constitution describe?', a: 'The President',
-        relates: 'Article II gives the executive power, the power to carry the laws out, to a President.' },
+        relates: 'Article II gives the President the executive power: the power to carry out the laws.' },
       { id: 'art-three', q: 'Which part of the government does Article III of the Constitution describe?', a: 'The courts',
-        relates: 'Article III sets up the federal courts, with a Supreme Court at the top.' }
+        relates: 'Article III sets up the federal courts, with the Supreme Court at the top.' }
     ] },
 
   { id: 'chk-art-one', kind: 'check', after: 'facts-art', ask: { type: 'fact', row: 'art-one' } },
@@ -37,9 +37,9 @@ FC.cards('civics', 'u2', [
     link: 'Article I lists what Congress may do.',
     case: 'cn-post',
     plain: [
-      'Congress may set up a postal service, because Article I lists the power to establish post offices. Congress may not set how many hours a barber must train, because Article I lists nothing about that, so it belongs to the states.',
-      'Article I, Section 8, lists what Congress may do. Congress may use only the powers on the list, and one more: it may pass whatever laws are “necessary and proper” to carry the listed powers out. A power that is not on the list belongs to the states, or is something that no government may do.',
-      'The list is long. The facts below hold the five that matter most here: raising money, trade, the dollar and the mail, war and the armed forces, and the “necessary and proper” power. How far each power reaches is argued in court all the time. This holds only what is on the list.'
+      'Congress may set up a postal service, because Article I lists the power to establish post offices. Congress may not set how many hours a barber must train, because Article I says nothing about that. It belongs to the states.',
+      'The list is in Article I, Section 8. Congress may use only the powers on the list, plus one more: it may pass whatever laws are “necessary and proper” to carry out the listed powers. A power that is not on the list belongs to the states, or is something no government may do.',
+      'The list is long. The five below matter most: raising money, trade, the dollar and the mail, war and the armed forces, and the “necessary and proper” power. Courts argue all the time about how far each power reaches. This unit holds only what is on the list.'
     ] },
 
   { id: 'facts-pow', kind: 'facts',
@@ -47,16 +47,16 @@ FC.cards('civics', 'u2', [
     link: 'Congress may do only what the list gives it.',
     concept: 'con-pow',
     rows: [
-      { id: 'pow-money', q: 'What may Congress do to raise the money that the government spends?', a: 'Lay and collect taxes, and borrow money',
+      { id: 'pow-money', q: 'What may Congress do to raise the money that the government spends?', a: 'Collect taxes, and borrow money',
         relates: 'The first plan of government gave Congress no power to tax. It could only ask the states for money.' },
       { id: 'pow-trade', q: 'What may Congress do about trade?', a: 'Regulate trade with other countries and between the states',
-        relates: 'Import rules are about trade with other countries, and rules for goods shipped across state lines are about trade between the states. “Commerce” is another word for this trade.' },
+        relates: 'Import rules cover trade with other countries, and rules for goods shipped across state lines cover trade between the states. Another word for this trade is “commerce”.' },
       { id: 'pow-coin', q: 'What may Congress do about the dollar and about the mail?', a: 'Coin money and run the post offices',
         relates: 'The postal service in the story is this power at work.' },
       { id: 'pow-war', q: 'What may Congress do about war and the armed forces?', a: 'Declare war, and raise and support armies and a navy',
         relates: 'Congress votes a war into being, and it pays for the forces.' },
-      { id: 'pow-proper', q: 'Besides the listed powers, what else may Congress do?', a: 'Pass whatever laws are necessary and proper to carry the listed powers out',
-        relates: 'Where a law is needed to carry out a power on the list, this is the power behind it.' }
+      { id: 'pow-proper', q: 'Besides the powers on the list, what else may Congress do?', a: 'Pass the laws “necessary and proper” to carry out its listed powers',
+        relates: 'Where a law is needed to carry out one of the powers on the list, this is the power behind it.' }
     ] },
 
   { id: 'chk-pow-money', kind: 'check', after: 'facts-pow', ask: { type: 'fact', row: 'pow-money' } },

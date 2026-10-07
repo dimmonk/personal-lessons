@@ -8,12 +8,12 @@
 
 FC.unit('wealth', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
   title: { fromKey: 'D1.erosion' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Six things that can take money out of a person’s savings every year, how to tell which one you are looking at, and when nothing needs cutting back',
+  subtitle: 'Six things that take money out of savings every year, how to tell which one you are looking at, and when to leave it alone',
   teaches: { steps: ['E1'], outcomes: ['feecore', 'nocut', 'location', 'defer', 'harvest', 'burnrate'],
              terms: ['indexfund', 'sheltered', 'gain'] },
   assumes: ['u1'],        // everything Unit One teaches may be used; the first card restates the part this unit leans on
@@ -26,36 +26,36 @@ FC.unit('wealth', 'u2', {
   ledger: [
     { id: 'feecore~nocut', pair: ['feecore', 'nocut'], step: 'E1',
       shared: 'In both, a firm or an adviser is paid out of {t:pot} every year, and the person may have no complaint about it.',
-      rule: 'In {o:feecore} the charge is for choosing investments and for nothing else, and it is a percentage of {t:pot}, so it grows when {t:pot} does. In {o:nocut} the charge is for named work that would not otherwise get done, at a set price that does not grow with {t:pot}.',
-      test: 'If the charge stopped, what important job would stop being done? Can you point to that job in the case, and to a price that stays the same when {t:pot} grows?' },
+      rule: 'In {o:feecore} the fee is for picking investments and nothing else, and it is a percentage of {t:pot}, so it grows as the money does. In {o:nocut} the fee is for named work that would not otherwise get done, at a set price that does not grow with {t:pot}.',
+      test: 'If the fee stopped, what important job would stop being done? Can you find that job in the story, and a price that stays the same when {t:pot} grows?' },
     { id: 'location~defer', pair: ['location', 'defer'], step: 'E1',
       shared: 'Both are tax on money invested in an ordinary account, and in both the tax could be smaller.',
-      rule: 'In {o:location} the tax is on income that the investments pay out every year, so it comes whether or not anything is sold. In {o:defer} the tax is on {t:gain}, and it comes only because a sale is planned.',
+      rule: 'In {o:location} the tax is on income the investments pay out every year, so it comes whether or not anything is sold. In {o:defer} the tax is on {t:gain}, and it comes only because a sale is planned.',
       test: 'Does the tax arrive every year without anyone selling anything? Or would it arrive only if something were sold?' },
     { id: 'defer~harvest', pair: ['defer', 'harvest'], step: 'E1',
       shared: 'Both are about tax on {t:gain} that comes with a sale.',
       rule: 'In {o:defer} the sale is only planned and nothing needs it, so holding off removes the tax. In {o:harvest} a sale has already made {t:gain} that will be taxed this year, and another investment, not yet sold, is worth less than it cost, so selling that one lowers the tax.',
       test: 'Has something already been sold this year at {t:gain}? And is another investment, not yet sold, worth less than was paid for it?' },
     { id: 'location~nocut', pair: ['location', 'nocut'], step: 'E1',
-      shared: 'In both, the person holds an IRA or a 401(k) and an ordinary brokerage account, and one of the funds pays out a good deal of income every year.',
-      rule: 'In {o:location} the investment paying out the most is held in the taxed account, so tax is charged on it each year. In {o:nocut} it already sits in {t:sheltered}, and what is taxed is the investment that pays out little.',
-      test: 'Which account holds the investment that pays out the most income each year: the taxed one or the sheltered one?' },
+      shared: 'In both, the person has an IRA or a 401(k) and an ordinary brokerage account, and one of the funds pays out a good deal of income every year.',
+      rule: 'In {o:location} the fund that pays out the most sits in the taxed account, so it is taxed every year. In {o:nocut} it already sits in {t:sheltered}, and what is taxed is the fund that pays out little.',
+      test: 'Which account holds the fund that pays out the most each year: the taxed one or the sheltered one?' },
     { id: 'burnrate~nocut', pair: ['burnrate', 'nocut'], step: 'E1',
       shared: 'In both, a sum is taken out of {t:pot} every year to spend.',
-      rule: 'In {o:burnrate} the sum is a fixed number of dollars, set when {t:pot} was worth more, so it becomes a bigger share as {t:pot} shrinks. In {o:nocut} the sum is worked out again each year as a percentage of what {t:pot} is worth now, so it falls when {t:pot} falls.',
+      rule: 'In {o:burnrate} the sum is a fixed number of dollars, set when {t:pot} was worth more, so it becomes a bigger share as it shrinks. In {o:nocut} the sum is worked out again each year as a percentage of what {t:pot} is worth now, so it falls when the money falls.',
       test: 'Is the sum the same number of dollars as in earlier years, or worked out again each year from what {t:pot} is worth now?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The part with drill: true is the last; its
   // close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'A charge, and when paying it is right',
+    { id: 'p1', title: 'Fees, and when a fee is worth paying',
       cards: ['orient', 'term-indexfund', 'meet-feecore', 'check-feecore', 'term-sheltered', 'meet-nocut', 'check-nocut', 'look-feecore-nocut'] },
     { id: 'p2', title: 'Tax',
       cards: ['meet-location', 'check-location', 'look-location-nocut', 'term-gain',
               'meet-defer', 'check-defer', 'look-location-defer',
               'meet-harvest', 'check-harvest', 'look-defer-harvest'] },
-    { id: 'p3', title: 'A sum spent, the question, then the drill',
+    { id: 'p3', title: 'Spending, the question, then the drill',
       cards: ['meet-burnrate', 'check-burnrate', 'look-burnrate-nocut', 'q-erosion', 'check-erosion', 'worked-planner'], drill: true, close: ['recap', 'plan'] }
   ],
 
@@ -64,7 +64,7 @@ FC.unit('wealth', 'u2', {
   // shuffles inside each group. Every case is new. Every stage that asks about cases holds a case where nothing needs cutting back (P26, V37).
   drill: {
     key: 'x2',            // the old quick-drill totals for this unit were stored under pl:wealth:stats:x2 (frozen; see E8)
-    add: 'Some of these cases show a charge, a tax bill or a sum spent that is fine as it is. In real life that answer comes up as often as the others. Look for the words that show the problem. If you cannot point to them, do not invent them.',
+    add: 'Some of these stories show a fee, a tax bill or a spending sum that is fine as it is. {a:E1.nomore} is a real answer, and you will need it as often as the others. Look for the words that show a problem. If you cannot find them, do not invent one.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'e-p-fee', step: 'E1' }, { case: 'e-p-flat', step: 'E1' }],
@@ -86,7 +86,8 @@ FC.unit('wealth', 'u2', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the first branch unit of Wealth Preservation, for the gate answer "Something taken out of it every year". Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this branch of the key, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [

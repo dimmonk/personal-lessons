@@ -1,7 +1,7 @@
 // Psychology, Unit Two: teach, parts two and three: fair reasoning, its look-alikes, the near-miss, the check on the question and the worked case.
 
 FC.cases('psychology', 'u2', [
-  /* ---------- Fair reasoning ---------- */
+  /* ---------- Following the facts ---------- */
   { id: 'floodlights', use: 'teach', tier: 'clean', setting: 'community', topic: 'night games', name: 'The night games',
     text: "For years Ben told his soccer club's committee that night games under the lights would bring bigger crowds. The club tried it for a season. Then the attendance figures came in: crowds were smaller at every night game. 'I wanted this to work,' Ben told the committee. 'It didn't. I was wrong.'",
     outcome: 'fair', route: { D1: ['reasoning'], R1: ['follows'] },
@@ -11,8 +11,8 @@ FC.cases('psychology', 'u2', [
     text: "Farah told her book club for a month that her favorite author's new novel would be a masterpiece. She read it over the weekend. 'It's a mess,' she told them on Monday. 'I was wrong about this one.'",
     outcome: 'fair', route: { D1: ['reasoning'], R1: ['follows'] },
     cues: { R1: 'I was wrong about this one' },
-    reason: { R1: 'Farah had a view and had said it out loud. The book itself was the evidence, and it went against her view. She gave it no harder test for that, and her view went where it pointed: {cue:R1}.' },
-    not: { outcome: 'confbias', why: '{o:confbias} would have Farah finding reasons why this evidence does not count: a rushed edition, the wrong mood. She gave it no harder test than a book she liked would have gotten.' } },
+    reason: { R1: 'Farah had a view and said it out loud, and the book itself was the evidence against it. She gave it no harder check than a book she liked would have got, and her view went where it led: {cue:R1}.' },
+    not: { outcome: 'confbias', why: '{o:confbias} would have Farah explaining the evidence away: a rushed edition, the wrong mood. She did not.' } },
 
   /* ---------- Look-alike pair: a view meets evidence against it ---------- */
   { id: 'hire-fair', use: 'teach', tier: 'varied', setting: 'work', topic: 'a new hire, figures checked',
@@ -42,8 +42,8 @@ FC.cases('psychology', 'u2', [
     text: "A city council has spent $2 million on plans for a light-rail line. A new estimate shows the line would cost four times the original figure and carry half the passengers. 'We cannot walk away from two million dollars of work,' the council president says, and she approves the next stage.",
     outcome: 'sunkcost', route: { D1: ['reasoning'], R1: ['backward'] },
     cues: { R1: 'We cannot walk away from two million dollars of work' },
-    reason: { R1: 'The reason given for the next stage is {cue:R1}: the money already spent. The new estimate, which is about what the next stage would cost and bring, plays no part in it.' },
-    not: { outcome: 'confbias', why: 'The new estimate is evidence against going on, but the leader does not give it a harder test than other evidence. She does not test it at all. Her reason is not about evidence; it is the two million.' } },
+    reason: { R1: 'The reason given for the next stage is {cue:R1}: the money already spent. The new estimate, which is about what the next stage would cost and bring, plays no part.' },
+    not: { outcome: 'confbias', why: 'The new estimate goes against going on, but she does not pick it apart. Her reason is not about evidence at all: it is the two million.' } },
 
   /* ---------- The worked case ---------- */
   { id: 'tasting', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a coffee supplier', name: "Grace's tasting", also: ['scrutiny'],

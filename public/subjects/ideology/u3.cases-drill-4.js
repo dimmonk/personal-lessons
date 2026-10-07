@@ -10,9 +10,9 @@ FC.cases('ideology', 'u3', [
             N1: 'Our sons and daughters stand here in rows, as one. We have one flag, one anthem and one will to defend this country',
             N2: 'Those at home who say we are wrong are free to say so, and parliament will hear them' },
     reason: { D1: 'The president puts one country first: {cue:D1}.',
-              N1: 'He speaks for everyone, the whole country in rows, as one: {cue:N1}. Nobody inside it is named as the other side.',
-              N2: 'Critics at home are free to speak and parliament will hear them: {cue:N2}. The text leaves the right to disagree in place, whatever the banners and drums suggest.' },
-    not: { outcome: 'fasc', why: '{o:fasc} would also speak of one will, and the parade can bring it to mind. But it would push critics and parliament aside. This speech says they may speak and will be heard.' } },
+              N1: 'He speaks for the whole country in rows, as one: {cue:N1}. Nobody inside it is named as the other side.',
+              N2: 'Critics at home are free to speak and parliament will hear them: {cue:N2}. The banners and drums do not change that.' },
+    not: { outcome: 'fasc', why: 'The parade can bring {o:fasc} to mind, but {o:fasc} would push critics aside. Here they may speak and will be heard.' } },
 
   { id: 'n-rt-letter', use: 'drill', tier: 'misleading', setting: 'town', topic: 'a polite letter to the citizens', echo: 'n-anniversary',
     text: "From a letter to the citizens of Corvale: 'We are one people, Corvale, and we love our country as one household. In the interest of unity the Movement has asked the other parties to retire from public life, the newspapers to print only the Movement's news, and the schools to teach nothing against it. We ask this gently, and we expect it to be done.'",
@@ -22,6 +22,6 @@ FC.cases('ideology', 'u3', [
             N2: "the Movement has asked the other parties to retire from public life, the newspapers to print only the Movement's news" },
     reason: { D1: 'The letter puts one people first: {cue:D1}.',
               N1: 'It speaks for all of Corvale as one household: {cue:N1}. Nobody inside it is named as the other side.',
-              N2: 'The other parties are to retire and the newspapers are to print only the Movement\'s news: {cue:N2}. The tone is gentle, and it still takes away the say of everyone who disagrees.' },
-    not: { outcome: 'nationalism', why: '{o:nationalism} would speak for everyone in the same warm way and leave other parties and newspapers alone. A gentle tone does not change what the letter asks for.' } },
+              N2: 'The other parties are to retire and the newspapers are to print only the Movement\'s news: {cue:N2}. The tone is gentle, but it still takes away the say of everyone who disagrees.' },
+    not: { outcome: 'nationalism', why: '{o:nationalism} would speak just as warmly and leave other parties and newspapers alone. A gentle tone does not change what the letter asks for.' } },
 ]);

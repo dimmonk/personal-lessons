@@ -6,12 +6,12 @@
 
 FC.unit('ideology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
-  title: { text: 'Whose side a text is on' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The first question, and the five answers it sorts every text into',
+  title: { text: 'Before you call a text “socialist” or “fascist”' },   // a gate unit is titled in plain words; the answers are taught inside it
+  subtitle: 'Check whose side a text is on first: workers, one whole people, old customs, rights for every person, or nobody’s',
   teaches: { steps: ['D1'], outcomes: [], terms: ['ideology'], families: ['class', 'nation', 'tradition', 'rights', 'none'] },
   assumes: [],            // the first unit of the subject
 
@@ -19,53 +19,53 @@ FC.unit('ideology', 'u1', {
   // written once and used wherever the pair is compared. test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'class~nation', pair: ['class', 'nation'], step: 'D1',
-      shared: 'Both can be angry about the same closing or the same cut, and both can say "us" against someone else.',
-      rule: 'In {a:D1.class} "us" is the people who work for pay, and "them" is the people who own where they work. In {a:D1.nation} "us" is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still get the second answer, if what it speaks for is the people as a whole.',
-      test: 'Who is "us", and who is "them"? Are they the people who work for pay and the people who own where they work? Or is "us" one people, marked out by its country, culture or birth?' },
+      shared: 'Both can be angry about the same closing or the same cut, and both say “us” against someone else.',
+      rule: 'In {a:D1.class}, “us” is the people who work for pay and “them” is the people who own where they work. In {a:D1.nation}, “us” is one people, marked out by its country, culture or birth, and the text puts it first. A text can mention wages, bosses and the rich and still be the second, if it speaks for the people as a whole.',
+      test: 'Is “us” the people who work for pay, against their owners? Or is “us” one whole people?' },
     { id: 'class~tradition', pair: ['class', 'tradition'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can speak up for ordinary people against powerful ones, and both can be bitter about what a closing does to a town.',
-      rule: '{a:D1.class} is about who works for pay and who owns, and which of them the text stands with. {a:D1.tradition} is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before and should carry on.',
-      test: 'Is the text about the jobs and money of working people against owners? Or is it about something handed down from the past, which it says should guide?' },
+      rule: '{a:D1.class} is about who works for pay and who owns, and which side the text takes. {a:D1.tradition} is about what was handed down from the past, and the text holds it up as the guide. The first looks at jobs and money. The second looks at what came before.',
+      test: 'Is it about jobs and pay, workers against bosses? Or about what was handed down from the past?' },
     { id: 'class~rights', pair: ['class', 'rights'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can ask for fair pay and fair rules, and both can stand with people who have less.',
-      rule: 'In {a:D1.class} the people the text speaks for are the workers, and the owners are named as the other side. In {a:D1.rights} the text speaks for every person alike, and names no side to be on the far end of it.',
-      test: 'Is there a side the text is against, the people who own where others work? Or does it speak for every person, whoever they are?' },
+      rule: 'In {a:D1.class} the text speaks for the workers and names the owners as the other side. In {a:D1.rights} the text speaks for every person alike, and names no side to be against.',
+      test: 'Is there a side it is against, the owners? Or does it speak for every person?' },
     { id: 'class~none', pair: ['class', 'none'], step: 'D1',
       shared: 'Both can be about a workplace, and both can mention wages, bosses and schedules.',
-      rule: '{a:D1.class} takes the side of the workers against the owners. {a:D1.none} takes no side. It says only what will happen, or who is in charge.',
-      test: 'Does the text take the workers’ side against the owners? Or does it only say what is to be done, or who decides?' },
+      rule: '{a:D1.class} stands with the workers against the owners. {a:D1.none} takes no side: it only says what will happen, or who is in charge.',
+      test: 'Does it stand with the workers against the owners? Or does it only say what will happen?' },
     { id: 'nation~tradition', pair: ['nation', 'tradition'], step: 'D1',
-      shared: 'Both can love the country and its past, and both can say "our country" and "our ways".',
-      rule: '{a:D1.nation} puts one people first: its country, its culture or its birth. {a:D1.tradition} puts first the ways handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide.',
-      test: 'What does the text hold up as first: the people itself, marked out by country, culture or birth? Or ways handed down from the past, such as a faith or old customs?' },
+      shared: 'Both can love the country and its past, and both say “our country” and “our ways”.',
+      rule: '{a:D1.nation} puts one people first. {a:D1.tradition} puts first what was handed down from the past, such as a faith, home life or old customs. The first is about who belongs. The second is about what should guide.',
+      test: 'Does it put one people first? Or does it put what was handed down first?' },
     { id: 'nation~rights', pair: ['nation', 'rights'], step: 'D1',
-      shared: 'Both can speak of race and origin, and both can say that people are treated differently according to the group they were born into.',
-      rule: 'In {a:D1.nation} the people the text belongs to is put first, and may be placed above others. In {a:D1.rights} no people is placed above another: something is said to be owed to every person, and the complaint is that rules leave some groups behind.',
-      test: 'Is one people being put first, perhaps above the others? Or is something said to be owed to every person, whatever group they belong to?' },
+      shared: 'Both can talk about race and where people come from, and both can say that people are treated differently by the group they were born into.',
+      rule: 'In {a:D1.nation} one people is put first, and may be placed above others. In {a:D1.rights} no people is placed above another: something is owed to every person, and the complaint is that rules leave some groups behind.',
+      test: 'Is one people put first, maybe above the others? Or is something owed to every person?' },
     { id: 'nation~none', pair: ['nation', 'none'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can come from a ruler’s mouth, and both can speak of power and of who is in charge.',
       rule: '{a:D1.nation} speaks for a people and puts it first. {a:D1.none} says who holds power and how they keep it, or how one practical matter will be handled, and speaks for no people at all. A ruler’s methods are not a side.',
-      test: 'Does the text speak for one people and put it first? Or does it only say who is in charge and how they keep power, or what will happen?' },
+      test: 'Does it speak for one people? Or does it only say who is in charge, or what will happen?' },
     { id: 'tradition~rights', pair: ['tradition', 'rights'], step: 'D1', taughtIn: 'q-sides',
-      shared: 'Both can say that some things are owed to people and must not be taken away: a faith, a freedom, a way of life.',
-      rule: '{a:D1.tradition} holds up what was handed down from the past as what should guide. {a:D1.rights} holds up what is owed to every person, whether it is old or new. The first looks back at what came before. The second asks what each person is owed.',
-      test: 'Is the text’s reason that the thing was handed down from the past? Or is its reason that every person is owed it?' },
+      shared: 'Both can say that some things must not be taken away from people: a faith, a freedom, a way of life.',
+      rule: '{a:D1.tradition} holds up what was handed down from the past as the guide. {a:D1.rights} holds up what every person is owed, old or new. The first looks back at what came before. The second asks what each person is owed.',
+      test: 'Is its reason that it was handed down? Or that every person is owed it?' },
     { id: 'tradition~none', pair: ['tradition', 'none'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can be about a church, a parish, a village custom or a home matter.',
-      rule: '{a:D1.tradition} holds up a faith, a custom or an old order as what should guide. {a:D1.none} deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone.',
-      test: 'Does the text hold up old ways as what should guide? Or does it only handle one practical matter?' },
+      rule: '{a:D1.tradition} holds up a faith, a custom or an old order as the guide. {a:D1.none} deals with one practical matter, such as who will repair the church roof or when the bells ring, and says nothing about what should guide anyone.',
+      test: 'Does it hold up old customs as the guide? Or does it only handle one practical matter?' },
     { id: 'rights~none', pair: ['rights', 'none'], step: 'D1', taughtIn: 'q-sides',
       shared: 'Both can be about forms, appeals, services and fair process.',
-      rule: '{a:D1.rights} says that something is owed to every person, and puts that first. {a:D1.none} says only how one practical matter will be handled: who to write to, by when, at what cost.',
-      test: 'Does the text say that every person is owed something? Or does it only say how one thing is to be done?' }
+      rule: '{a:D1.rights} says something is owed to every person, and puts that first. {a:D1.none} only says how one practical matter will be handled: who to write to, by when, at what cost.',
+      test: 'Does it say every person is owed something? Or does it only say how one thing is done?' }
   ],
 
   // Parts are stopping points. The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first three answers: working people and owners, a people put first, old ways',
+    { id: 'p1', title: 'Workers, one whole people, and old customs',
       cards: ['orient-sides', 'term-ideology', 'meet-class', 'check-class', 'meet-nation', 'check-nation', 'look-class-nation',
               'meet-tradition', 'check-tradition', 'look-nation-tradition'] },
-    { id: 'p2', title: 'The other two answers, the question, one whole case, then the drill',
+    { id: 'p2', title: 'Rights for every person, a text with no side, then the drill',
       cards: ['meet-rights', 'check-rights', 'look-nation-rights', 'meet-none', 'check-none', 'look-class-none',
               'q-sides', 'check-sides', 'worked-wage'], drill: true, close: ['recap-sides'] }
   ],
@@ -75,7 +75,7 @@ FC.unit('ideology', 'u1', {
   // units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',            // the old quick-drill totals for this unit were stored under pl:ideology:stats:unit (frozen; see E8)
-    add: 'Some of these texts are only a notice or a schedule, and some name workers and owners without taking a side. That is on purpose. Saying that no side is named is one of the five answers, and you will need it as often as the other four.',
+    add: 'Some of these texts are only a notice or a schedule, and some mention workers and owners without taking a side. That is on purpose: {a:D1.none} is a real answer, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'i-p-class', step: 'D1' }, { case: 'i-p-none', step: 'D1' }, { tell: 'class~none' }],
@@ -100,7 +100,8 @@ FC.unit('ideology', 'u1', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Political Ideologies. Five answers taught as five families, the fifth ("no side named") with its own cases and an exception for a ruler’s orders. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key's first question and the structure around it, and why. This unit carries the lines
     // of the whole key and of the gate; the units that teach the other questions carry theirs. (docs/rebuild/ideology-plan.md, part a)

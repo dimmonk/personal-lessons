@@ -6,12 +6,12 @@
 
 FC.unit('stats', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
-  title: { text: 'Four parts of a claim, and a claim that holds' },
-  subtitle: 'The first question, and the five answers it sorts every claim into',
+  title: { text: 'Before you believe a number' },
+  subtitle: 'Find the first place a claim could fool you, or see that it holds up',
   teaches: { steps: ['S1'], outcomes: [], terms: [], families: ['counted', 'measure', 'compare', 'cause', 'holds'] },
   assumes: [],            // the first unit of the subject
 
@@ -19,55 +19,55 @@ FC.unit('stats', 'u1', {
   // same claim with and without the problem. Each entry is written once and printed everywhere it is needed. test contains no name.
   ledger: [
     { id: 'counted~measure', pair: ['counted', 'measure'], step: 'S1',
-      shared: 'Both are about a figure that looks solid. In both, the figure may be added up correctly, and a careful reader can still be misled by it.',
-      rule: 'In {a:S1.counted} the trouble is who or what is in the figure: they are not a fair picture of the group the claim is about, or there are too few of them. In {a:S1.measure} the people or things in the figure are fine, and the trouble is what the figure counts: it could rise, fall or differ while the real thing did not.',
-      test: 'Is the trouble in who or what the figure was worked out from, or in what the figure counts? Ask first whether the people or things in it are a fair picture and enough of them. If they are, ask whether anything about how the figure is made could move it on its own.' },
+      shared: 'In both, the number can be added up right and still mislead you.',
+      rule: 'In {a:S1.counted} the trouble is who is in the number: the wrong people, or too few. In {a:S1.measure} the people are fine, and the trouble is that the number could move without the real thing moving.',
+      test: 'Is the trouble in who the number comes from, or in how it is counted? Check the people first. If they are fine, ask whether the way it is counted could move it on its own.' },
     { id: 'measure~compare', pair: ['measure', 'compare'], step: 'S1', taughtIn: 'q-gate',
-      shared: 'Both are about a figure that has risen or fallen, or that sounds bigger or smaller than it is, and in both the people or things in it are fine.',
-      rule: 'In {a:S1.measure} what is counted could change, or be pushed, so that the figure moves while the real thing does not. In {a:S1.compare} what is counted is the same throughout, and the trouble is that the figure is given in a form (a percentage, a test’s accuracy, totals side by side) that leaves out what you need beside it.',
-      test: 'Is there anything about how the figure is counted that could have changed or been pushed? Or is it counted the same way throughout, and given as a percentage, a test result or two totals with something you need beside it left out?' },
+      shared: 'In both, a number has gone up or down, or sounds bigger or smaller than it is, and the people in it are fine.',
+      rule: 'In {a:S1.measure} the way of counting can change or be pushed, so the number moves while the real thing does not. In {a:S1.compare} it is counted the same way throughout, but the number comes without what you need beside it: the numbers behind a percentage, how rare the thing is, or what each total is made of.',
+      test: 'Could the counting have changed, or been pushed? Or is it counted the same way throughout, with something you need beside the number left out?' },
     { id: 'compare~cause', pair: ['compare', 'cause'], step: 'S1',
-      shared: 'Both can come with a figure for two groups, and both can make a program, a product or a habit sound as if it matters.',
-      rule: 'In {a:S1.compare} the trouble is a figure given in a form that hides what you need beside it, and the claim need not say anything about a cause. In {a:S1.cause} the figures are all given, and the trouble is that the claim goes on to say one thing caused another when the case shows another way to explain the result.',
-      test: 'Is something you need beside the figure missing, such as the numbers behind a percentage? Or are the figures all given, and does the claim say that one thing made the other happen?' },
+      shared: 'In both, two groups can be set side by side, and a program or a habit can sound as if it matters.',
+      rule: 'In {a:S1.compare} something is missing beside the number, and the claim need not say anything about a cause. In {a:S1.cause} every number is given, and the claim goes on to say one thing made the other happen.',
+      test: 'Is something you need beside the number missing, such as the numbers behind a percentage? Or are all the numbers given, and does the claim say one thing made the other happen?' },
     { id: 'counted~cause', pair: ['counted', 'cause'], step: 'S1', taughtIn: 'q-gate',
-      shared: 'Both can come with a claim that a program, a product or a habit pays off, and in both the figure can sound convincing.',
-      rule: 'In {a:S1.counted} the trouble is who or what the figure was worked out from. In {a:S1.cause} the figure comes from a fair picture, and the trouble is that the claim says one thing caused another when the case shows another way to explain the result.',
-      test: 'Look at the people or things in the figure before you look at the claim. Are they a fair picture, and enough of them? If so, does the claim say that one thing caused another, with another way in the case for the same result?' },
+      shared: 'In both, a program, a product or a habit is said to pay off, and the number sounds convincing.',
+      rule: 'In {a:S1.counted} the trouble is who the number comes from. In {a:S1.cause} the number comes from a fair picture, and the trouble is that the claim credits one thing for the result when something else could explain it.',
+      test: 'Check who is in the number before you look at the claim. Are they a fair picture, and enough of them? If so, does the claim say one thing caused another, with another way to explain the result?' },
     { id: 'counted~holds', pair: ['counted', 'holds'], step: 'S1',
-      shared: 'Both can give the same figure from the same list of people, and both can sound equally sure.',
-      rule: 'In {a:S1.counted} the people or things in the figure are not a fair picture of the group the claim is about, or there are too few of them. In {a:S1.holds} they are a fair picture and there are enough of them, and the claim speaks only for the group they stand for.',
-      test: 'How many of the people or things asked are in the figure, how did they come to be in it, and does the claim speak for more than they stand for?' },
+      shared: 'Both can give the same number from the same list of people, and both sound equally sure.',
+      rule: 'In {a:S1.counted} the people in the number are not a fair picture of the group, or there are too few. In {a:S1.holds} they are a fair picture and there are enough, and the claim speaks only for the group they stand for.',
+      test: 'How many of the people asked are in the number, how did they get in, and does the claim speak for more than they stand for?' },
     { id: 'measure~holds', pair: ['measure', 'holds'], step: 'S1', taughtIn: 'q-gate',
-      shared: 'Both can show a figure that has risen or fallen, with the same size of change and the same sort of headline.',
-      rule: 'In {a:S1.measure} something about how the figure is made changed, or could be pushed, so the figure can move while the real thing does not. In {a:S1.holds} the figure is counted the same way throughout, and nobody can move it without the real thing moving.',
-      test: 'Was the figure counted the same way, with the same tool and the same effort to find things, all the way through? Is there nothing anyone could do to raise it without more of the real thing?' },
+      shared: 'In both, a number rose or fell, with the same size of change and the same kind of headline.',
+      rule: 'In {a:S1.measure} something about how the number is made changed, or could be pushed, so it can move while the real thing does not. In {a:S1.holds} it is counted the same way throughout, and nobody can move it without the real thing moving.',
+      test: 'Was the number counted the same way all the way through, with the same tool and the same effort to find things? Could anyone raise it without more of the real thing?' },
     { id: 'compare~holds', pair: ['compare', 'holds'], step: 'S1', taughtIn: 'q-gate',
-      shared: 'Both can say that one thing is bigger, likelier or riskier than another, with the same claim about the same two things.',
-      rule: 'In {a:S1.compare} the claim leaves out something you need beside the figure to read it, such as the numbers behind a percentage, how common the thing is, or what each total is made of. In {a:S1.holds} the numbers are given, the two things are alike and counted the same way, and the claim says only which is bigger.',
-      test: 'Are the numbers behind the comparison given, are the two things alike, and were they counted the same way? Is anything you would need beside the figure missing?' },
+      shared: 'In both, one thing is said to be bigger, likelier or riskier than another, about the same two things.',
+      rule: 'In {a:S1.compare} the claim leaves out something you need beside the number, such as the numbers behind a percentage, how rare the thing is, or what each total is made of. In {a:S1.holds} the numbers are given, the two things are alike and counted the same way, and the claim says only which is bigger.',
+      test: 'Are the numbers behind the comparison given, are the two things alike, and were they counted the same way? Is anything you would need beside the number missing?' },
     { id: 'cause~holds', pair: ['cause', 'holds'], step: 'S1',
-      shared: 'Both can show two groups with the same difference between them, and both can say that one thing made the difference.',
-      rule: 'In {a:S1.cause} the case shows another way to explain the same result, usually because people ended up in their groups by their own choice or circumstance. In {a:S1.holds} the groups were formed by chance, so nothing else is likelier to be in one group than in the other.',
-      test: 'Who decided which group each person or thing was in: they did, their circumstances did, or a lottery did? Does the case show another way to explain the result?' },
+      shared: 'In both, two groups show the same difference, and both claims say one thing made the difference.',
+      rule: 'In {a:S1.cause} people sorted themselves into groups, so something else about them could explain the result. In {a:S1.holds} the groups were split by chance, so nothing else is likelier to sit in one group than the other.',
+      test: 'Who decided which group each person or thing was in: they did, their circumstances did, or a lottery did? Is there another way to explain the result?' },
     { id: 'measure~cause', pair: ['measure', 'cause'], step: 'S1', taughtIn: 'q-gate',
-      shared: 'Both can come with a claim that something worked, and with a figure that rose after it was introduced.',
-      rule: 'In {a:S1.measure} the figure could rise without the real thing moving, because of what is counted or because of what people do to the figure. In {a:S1.cause} the figure counts what it is read as showing, and the trouble is that the claim says one thing caused another when the case shows another way to explain the result.',
-      test: 'Could the figure have risen without the real thing it is read as showing moving? If not, does the claim say that one thing caused another, with another way in the case for the same result?' },
+      shared: 'In both, something is said to have worked, and a number rose after it began.',
+      rule: 'In {a:S1.measure} the number could rise without the real thing moving, because of what is counted or what people do to the number. In {a:S1.cause} the number does show the real thing, and the trouble is that the claim credits one thing for the result when something else could explain it.',
+      test: 'Could the number have risen without the real thing moving? If not, does the claim say one thing caused another, with another way to explain the result?' },
     { id: 'counted~compare', pair: ['counted', 'compare'], step: 'S1', taughtIn: 'q-gate',
-      shared: 'Both can give a percentage or a figure that sounds large, and both can leave you without what you need to read it.',
-      rule: 'In {a:S1.counted} the trouble is who or what the figure was worked out from. In {a:S1.compare} the people or things in the figure are fine, and the trouble is that the figure is given as a percentage, a test’s accuracy or totals side by side, with what you need beside it left out.',
-      test: 'Look at the people or things in the figure before you look at the form the figure is given in. Are they a fair picture, and enough of them? If so, does the form leave out something you need beside the figure?' }
+      shared: 'In both, you may get a percentage or a number that sounds large, without what you need to read it.',
+      rule: 'In {a:S1.counted} the trouble is who the number comes from. In {a:S1.compare} the people are fine, and the trouble is that the number comes as a percentage, a test score or totals, with what you need beside it left out.',
+      test: 'Check who is in the number before you look at its form. Are they a fair picture, and enough of them? If so, does the form leave out something you need beside the number?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The answers of the key's first question are taught in the key's order (A13).
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first three parts of a claim: the people in the figure, what it counts, what it is set beside',
+    { id: 'p1', title: 'The people behind a number, how it is counted, what it is set beside',
       cards: ['orient-claim', 'meet-counted', 'check-counted', 'meet-measure', 'check-measure', 'look-counted-measure',
               'meet-compare', 'check-compare'] },
-    { id: 'p2', title: 'The fourth part, the fifth answer, and the question',
+    { id: 'p2', title: 'Cause, claims that hold, and the question to ask first',
       cards: ['meet-cause', 'check-cause', 'look-compare-cause', 'meet-holds', 'check-holds',
               'look-counted-holds', 'look-cause-holds', 'q-gate', 'check-gate'] },
     { id: 'p3', title: 'One whole claim, then the drill',
@@ -78,7 +78,7 @@ FC.unit('stats', 'u1', {
   // and one tier. The drill and return cases are also the bank that later units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',            // the old quick-drill totals for this unit were stored under pl:stats:stats:u1 (frozen; see E8)
-    add: 'Some of these claims have nothing wrong with them, and that is on purpose. Finding that every part holds is one of the five answers, and you will need it as often as the other four. A claim that sounds alarming is not harder to judge for that, and a claim that sounds dull is not easier.',
+    add: 'Some of these claims have nothing wrong with them. That is on purpose: {a:S1.holds} is a real answer, and you will need it as often as the other four. A claim that sounds alarming is no harder to judge, and a dull one is no easier.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'gate-p-lobby', step: 'S1' }, { case: 'gate-p-scale', step: 'S1' }],
@@ -108,7 +108,8 @@ FC.unit('stats', 'u1', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit One (cards "A claim has four parts" to "Worked example: running the parts in order", drill V1).' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/stats-plan.md, section (a), "The gate").
     keyChanges: [

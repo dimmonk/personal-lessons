@@ -7,12 +7,12 @@
 
 FC.unit('scams', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'One',
-  title: { text: 'What it is asking you to do' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The first question, and the five things a message, a call or an offer can ask of you',
+  title: { text: 'Before you tap, call or pay' },   // a gate unit is titled in plain words; the answers are taught inside it
+  subtitle: 'Read what a message actually asks you to do: install, sign in, pay, tell, or nothing at all',
   teaches: { steps: ['D1'], outcomes: [], terms: ['already', 'check', 'code', 'permission', 'screenshare'],
              families: ['device', 'access', 'money', 'details', 'nothing'] },
   assumes: [],            // the first unit of the subject
@@ -22,49 +22,49 @@ FC.unit('scams', 'u1', {
   // message makes hard. test is a question to put to a message, with no names in it.
   ledger: [
     { id: 'access~nothing', pair: ['access', 'nothing'], step: 'D1',
-      shared: 'Both can arrive as the same message from the same company about the same event, and both can say that something has happened to your account.',
-      rule: 'In {a:D1.nothing} the message only tells you what has happened, and anything it suggests uses {t:already}, such as the app that is already on your phone. In {a:D1.access} the message asks you to sign in, give a code or press Allow, and the way to do it comes with the message: a link, a button or a caller.',
-      test: 'Does anything in it ask you to sign in, give a code or press Allow, with a link, a button or a caller to do it through? Or does it only tell you what has happened, and leave you to use your own app or number?' },
+      shared: 'Both can be the same message from the same company about the same event, and both can say something has happened to your account.',
+      rule: 'In {a:D1.nothing} the message only tells you what happened, and anything it suggests uses {t:already}, like the app on your phone. In {a:D1.access} the message asks you to sign in, give a code or press Allow, and the way to do it comes with the message: a link, a button or a caller.',
+      test: 'Does anything in it ask you to sign in, give a code or press Allow, through a link, a button or a caller? Or does it only tell you what happened, and leave you to use your own app or number?' },
     { id: 'device~access', pair: ['device', 'access'], step: 'D1',
       shared: 'In both, a box with an app’s name on it asks you to allow something, and the buttons look alike.',
-      rule: 'In {a:D1.device} the request is to put something on the phone or computer itself: to install it, to open it, or to let someone watch it. In {a:D1.access} the request is to open one of your accounts: with a password, a code, or an Allow so that an app can use the account.',
+      rule: 'In {a:D1.device} you are asked to put something on the phone or computer itself: to install it, open it, or let someone watch it. In {a:D1.access} you are asked to open one of your accounts: with a password, a code, or an Allow so that an app can use the account.',
       test: 'Would pressing it put something onto my phone or computer, open something on it, or let someone watch it? Or would it open one of my accounts to a page, an app or a caller?' },
     { id: 'money~nothing', pair: ['money', 'nothing'], step: 'D1', taughtIn: 'worked-statement',
       shared: 'Both can be about the same bill, from the same company, with the same amount in them.',
-      rule: 'In {a:D1.nothing} the message tells you about money and asks you to do nothing about it: it will be taken as usual, or it has been paid to you. In {a:D1.money} the message asks you to hand over money, and the way to do it comes with the message.',
+      rule: 'In {a:D1.nothing} the message tells you about money and asks you to do nothing: it will be taken as usual, or it has been paid to you. In {a:D1.money} the message asks you to hand over money, and the way to do it comes with the message.',
       test: 'Is anyone asking me to hand over money? Or is the money only mentioned as something that will happen or has happened?' },
     { id: 'money~details', pair: ['money', 'details'], step: 'D1',
       shared: 'Both can come from the same company about the same problem, with the same address to go to, and both can lead you to type your card number into a page.',
-      rule: 'In {a:D1.money} you are asked to pay: an amount is named, and you are told to send it. In {a:D1.details} you are asked to give them facts about yourself, such as your name, your date of birth or your card number, and no amount is named for you to pay.',
-      test: 'Is an amount named for me to pay? Or am I only asked to tell them facts about myself, such as my name, my date of birth or my card number?' },
+      rule: 'In {a:D1.money} you are asked to pay: an amount is named, and you are told to send it. In {a:D1.details} you are asked to tell them facts about yourself, like your name, your date of birth or your card number, and no amount is named for you to pay.',
+      test: 'Is an amount named for me to pay? Or am I only asked to tell them facts about myself, like my name, my date of birth or my card number?' },
     { id: 'device~money', pair: ['device', 'money'], step: 'D1',
       shared: 'In both, money is part of the story: a refund, a payment, an amount to send.',
-      rule: 'In {a:D1.device} the request is to put something on the phone or computer, to open it there, or to let someone watch it. In {a:D1.money} the request is to hand over money.',
+      rule: 'In {a:D1.device} you are asked to install something, open it, or let someone watch your phone or computer. In {a:D1.money} you are asked to hand over money.',
       test: 'Am I asked to install, open or share something on my phone or computer, whatever else is asked? Or is paying the only thing asked?' },
     { id: 'access~money', pair: ['access', 'money'], step: 'D1', taughtIn: 'q-gate',
       shared: 'In both, the story is about a payment: a fine, a bill, an amount that has to be paid.',
-      rule: 'In {a:D1.access} the request is to sign in, give a code or press Allow. In {a:D1.money} the request is to hand over money.',
+      rule: 'In {a:D1.access} you are asked to sign in, give a code or press Allow. In {a:D1.money} you are asked to hand over money.',
       test: 'Am I asked to sign in, give a code or press Allow first, whatever the payment is for? Or is paying the only thing asked?' },
     { id: 'details~nothing', pair: ['details', 'nothing'], step: 'D1', taughtIn: 'q-gate',
       shared: 'Both can be friendly, and neither asks for money, a password or a program.',
       rule: 'In {a:D1.nothing} the message only tells you something. In {a:D1.details} it asks you about yourself: on a form, on a call or in a friendly chat.',
-      test: 'Is there a question about me in it, such as my name, my date of birth, my work or where I live? Or does it only tell me something?' },
+      test: 'Is there a question about me in it, like my name, my date of birth, my work or where I live? Or does it only tell me something?' },
     { id: 'device~nothing', pair: ['device', 'nothing'], step: 'D1', taughtIn: 'q-gate',
       shared: 'Both can be a plain notice from a company you deal with, and both can come with a file or an update.',
-      rule: 'In {a:D1.nothing} the message only tells you something, and anything it suggests uses {t:already}. In {a:D1.device} it asks you to install something, to open a file, or to let someone watch your device.',
+      rule: 'In {a:D1.nothing} the message only tells you something, and anything it suggests uses {t:already}. In {a:D1.device} it asks you to install something, open a file, or let someone watch your device.',
       test: 'Does it ask me to install, open or share something, perhaps with a file, an update or a number of its own? Or does it only tell me that something will happen?' }
   ],
 
   // Parts are stopping points. Two parts come before the drill: the two words and the first two kinds, then the last
   // three kinds. The last part holds the question, the worked case, the drill and the close.
   parts: [
-    { id: 'p1', title: 'Two ideas, then a message that asks nothing, and a way into your accounts',
+    { id: 'p1', title: 'Two habits, then news and sign-in requests',
       cards: ['orient-gate', 'term-already', 'term-check', 'meet-nothing', 'check-nothing',
               'term-code', 'term-permission', 'meet-access', 'check-access', 'look-access-nothing'] },
-    { id: 'p2', title: 'Something on your device, money, and facts about you',
+    { id: 'p2', title: 'Your device, your money, and facts about you',
       cards: ['term-screenshare', 'meet-device', 'check-device', 'look-device-access',
               'meet-money', 'check-money', 'exc-refund', 'meet-details', 'check-details', 'look-money-details'] },
-    { id: 'p3', title: 'The first question, one whole case, then the drill',
+    { id: 'p3', title: 'Putting it together, then the drill',
       cards: ['q-gate', 'check-gate', 'worked-statement'], drill: true, close: ['recap-gate', 'plan-gate'] }
   ],
 
@@ -72,7 +72,7 @@ FC.unit('scams', 'u1', {
   // drill and return cases of this unit are the bank that later units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',
-    add: 'Some of these messages are real, and some are copies made to take something. That is on purpose: the question gives the same answer for a real message and for a copy that asks for the same thing. Saying that a message asks nothing is one of the five answers, and you will need it as often as the other four.',
+    add: 'Some of these messages are real, and some are copies made to take something. That is on purpose: a real message and a copy that ask for the same thing get the same answer. {a:D1.nothing} is a real answer, and you will need it as often as the other four.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'g-p-driver', step: 'D1' }, { case: 'g-p-bank-code', step: 'D1' }],
@@ -101,7 +101,8 @@ FC.unit('scams', 'u1', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit, written to the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Five families, with the real notice that asks nothing taught first; five term cards; eight look-alike pairs; a baseline check of six cases.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [

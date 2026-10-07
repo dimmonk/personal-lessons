@@ -13,11 +13,11 @@ FC.cases('ideology', 'u2', [
     outcome: 'ml', route: { D1: ['class'], C1: ['public'], C2: ['seize'] },
     cues: { C1: 'The sites will belong to the government it forms', C2: 'The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose' },
     segments: [
-      { text: 'The firms that own the building sites live off our labor, and we stand with the people who build', note: 'That names the two groups and the side the text takes. It says nothing yet about who holds power.' },
+      { text: 'The firms that own the building sites live off our labor, and we stand with the people who build', note: 'That names the two sides. It says nothing yet about who holds power.' },
       { text: 'The committee will take power in the city and hold it. It will be the only party, and it will not hold elections it could lose' },
-      { text: 'The sites will belong to the government it forms', note: 'That is about the sites. It says who will own them, and nothing about how the committee will win or hold power.' }
+      { text: 'The sites will belong to the government it forms', note: 'That is about who owns the sites. It does not say how the committee wins or keeps power.' }
     ],
-    reason: { C2: 'The committee takes power and keeps it: {cue:C2}. No rival is allowed to challenge it at an election.' } },
+    reason: { C2: 'The committee will keep power as the only party, with no election it could lose.' } },
 
   { id: 'c-an-print', use: 'teach', tier: 'clean', setting: 'work', topic: 'a print works and open meetings', name: 'The print-works zine',
     text: "From a zine handed out at the Marsh Lane print works: 'The people who own the print works tell us what to do, and the government tells the owners what is allowed. We want neither. The print works should belong to the people who work in it. The town should be run by open meetings of everyone in it, with no government at all.'",
@@ -29,11 +29,11 @@ FC.cases('ideology', 'u2', [
     outcome: 'anarch', route: { D1: ['class'], C1: ['workers'], C2: ['gone'] },
     cues: { C1: 'The teachers, cooks and custodians should run each school together', C2: "We want the government done away with, now, and not used first: we will run the valley's schools in open meetings" },
     segments: [
-      { text: 'The group that owns the schools runs them for profit, and the government backs it', note: 'That names the owners and the government and says what is wrong. It does not yet say what should be done about the government.' },
-      { text: 'The teachers, cooks and custodians should run each school together', note: 'That is about who should run the schools. The question here is about the government.' },
+      { text: 'The group that owns the schools runs them for profit, and the government backs it', note: 'That names the owners and the government and says what is wrong. It does not say what to do about the government.' },
+      { text: 'The teachers, cooks and custodians should run each school together', note: 'That is about who runs the schools. The question here is about the government.' },
       { text: "We want the government done away with, now, and not used first: we will run the valley's schools in open meetings" }
     ],
-    reason: { C2: 'The text wants the government got rid of, and says when and how: {cue:C2}. It does not want it used first and does not want a party to hold it.' } },
+    reason: { C2: 'The text wants the government gone now, and not used first.' } },
 
   { id: 'c-mk-furniture', use: 'teach', tier: 'clean', setting: 'work', topic: 'furniture makers who own their firm', name: 'The furniture makers',
     text: "From a proposal by the Ashby furniture makers: 'The firm's shareholders keep the profit, and we make the chairs. Each furniture firm should belong to the people who make its furniture, and the firms should compete for customers, set their own prices, and go under if they fail. We want the owners out of the workshop, not out of the market.'",
@@ -44,7 +44,7 @@ FC.cases('ideology', 'u2', [
     text: "From the minutes of a meeting of mechanics at the Orwell bicycle repair chain: 'The chain's owners keep what is left after wages, and we do the repairs. We want each shop to belong to the people who work in it. The shops should compete with each other for customers, set their own prices, and close if they cannot pay their way.'",
     outcome: 'mktsoc', route: { D1: ['class'], C1: ['market'], C2: ['none'] },
     cues: { C1: 'We want each shop to belong to the people who work in it. The shops should compete with each other for customers, set their own prices, and close if they cannot pay their way' },
-    reason: { C1: 'The shops are to belong to the people who work in them, and to compete: {cue:C1}. Handing the businesses to their workers is only half of what this answer needs, and the competing is the other half.' } },
+    reason: { C1: 'The shops are to belong to the people who work in them, and to compete: {cue:C1}. Workers owning is half of this answer, and competing is the other half.' } },
 
   { id: 'c-lk-dmml-dm', use: 'teach', tier: 'clean', setting: 'work', topic: 'mines passed on by a vote in parliament', name: 'Mines passed on by a vote in parliament',
     text: "The Hartfell miners' union says: 'The mines' owners sell the coal, and the miners dig it, and we stand with the miners. The mines should pass to the government, to be run for everyone. We will win a majority in parliament and pass the law.'",

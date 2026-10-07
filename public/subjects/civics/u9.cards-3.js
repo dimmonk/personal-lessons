@@ -7,11 +7,11 @@ FC.cards('civics', 'u9', [
   /* ---------- group five: how the country grew, and what it cost ---------- */
   { id: 'con-hist-growth', kind: 'concept',
     h: 'How the country grew, and what it cost',
-    link: 'The founding gave the country a government. This group is how it grew in the sixty years after 1800.',
+    link: 'How the country grew in the sixty years after 1800.',
     case: 'c9-panels',
     plain: [
-      'Three of the panels are three events, and each has a country in it. In 1803 the country bought the Louisiana land from France, which roughly doubled its size: a purchase, and not a war. The War of 1812 was fought against Britain, and the national anthem, The Star-Spangled Banner, was written during it. From 1846 to 1848 the country fought a war with Mexico, and gained California and the Southwest.',
-      'The fourth panel is the cost. All of this land was already home to Native nations, who were removed from it by signed agreements, by purchase and by force. In the 1830s came the forced marches that are now called the Trail of Tears.'
+      'Three of the panels are three events, and each one involves another country. The huge new area is the Louisiana land: in 1803 the country bought it from France, which roughly doubled its size. It was a purchase, not a war. The flag over the fort, with the song, is the War of 1812, fought against Britain. The Star-Spangled Banner, the national anthem, was written during it. The south-west corner is the war with Mexico, from 1846 to 1848, after which the country gained California and the Southwest.',
+      'The fourth panel is the cost. All of this land was already home to Native nations. They were removed from it by signed agreements, by purchase and by force. In the 1830s came the forced marches now called the Trail of Tears.'
     ] },
 
   { id: 'facts-hist-growth', kind: 'facts',
@@ -20,11 +20,11 @@ FC.cards('civics', 'u9', [
     concept: 'con-hist-growth',
     rows: [
       { id: 'ctry-france', q: 'From which country did the United States buy the Louisiana land in 1803?', a: 'France',
-        relates: 'A purchase and not a war. The land roughly doubled the size of the country.' },
+        relates: 'A purchase, not a war. The land roughly doubled the size of the country.' },
       { id: 'ctry-britain', q: 'Which country did the United States fight in the War of 1812?', a: 'Britain',
-        relates: 'The war was fought against Britain, and the national anthem was written during it.' },
+        relates: 'The national anthem was written during this war.' },
       { id: 'ctry-mexico', q: 'Which country did the United States fight in the war of 1846 to 1848?', a: 'Mexico',
-        relates: 'At the end of the war the country gained California and the Southwest.' }
+        relates: 'The country gained California and the Southwest.' }
     ] },
 
   { id: 'chk-hist-ctry-france', kind: 'check', after: 'facts-hist-growth', ask: { type: 'fact', row: 'ctry-france' } },

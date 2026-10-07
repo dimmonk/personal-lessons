@@ -23,12 +23,12 @@ FC.cases('scams', 'u2', [
     outcome: 'realinstall', route: { D1: ['device'], I1: ['own'] },
     cues: { I1: ["He types the printer maker's web address into his browser", 'nobody has contacted him'] },
     segments: [
-      { text: "Ed's new printer needs a program before it can scan", note: 'That is why Ed wants the program. It does not say how he came to it.' },
+      { text: "Ed's new printer needs a program before it can scan", note: 'That is why Ed wants the program. It does not say how he got it.' },
       { text: "He types the printer maker's web address into his browser, opens its Support page and picks his printer's model from a list" },
-      { text: 'He downloads the program and runs it, and his computer asks whether to allow it to make changes', note: 'That is the installation itself. The same box appears for a harmful program, so it cannot show how he came to the program.' },
-      { text: 'His phone has been quiet all day; nobody has contacted him', note: 'That is true, but it says only that nobody contacted him. The words that show where he went to get the program are in the second sentence.' }
+      { text: 'He downloads the program and runs it, and his computer asks whether to allow it to make changes', note: 'This is the installation itself. A harmful program shows the same box, so the box shows nothing about how he got it.' },
+      { text: 'His phone has been quiet all day; nobody has contacted him', note: 'True, but it only says nobody contacted him. Where he went to get the program is in the second piece.' }
     ],
-    reason: { I1: 'Ed went to the maker himself: {cue:I1}. He started it, he used an address he typed, and nobody contacted him. The box that asks whether to allow changes does not enter into it.' } },
+    reason: { I1: 'Ed started it himself, with an address he typed, and nobody contacted him: {cue:I1}.' } },
 
   /* ---------- the look-alike pair: the same person and the same program, fetched and sent ---------- */
   { id: 'dv-lk-photo-own', use: 'teach', tier: 'clean', setting: 'home', topic: 'a photo editor, fetched from its maker', name: 'The newest version',
@@ -51,5 +51,5 @@ FC.cases('scams', 'u2', [
     text: "A message reaches Kofi from a number he does not know: 'Hi! Here are the photos from Saturday. Download the zip file and open it.' Kofi was not at anything on Saturday, and nobody is talking to him on the phone.",
     outcome: 'malware', route: { D1: ['device'], I1: ['file'] },
     cues: { I1: ['A message reaches Kofi from a number he does not know', 'Download the zip file and open it'] },
-    reason: { I1: 'The request reached Kofi in a message from a stranger, with a file to open: {cue:I1}. Nobody is on a call with him, and he went nowhere to fetch it.' } }
+    reason: { I1: 'A stranger messaged Kofi a file to open: {cue:I1}. Nobody is on the phone with him, and he fetched nothing.' } }
 ]);

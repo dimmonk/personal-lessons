@@ -21,11 +21,11 @@ FC.cases('stats', 'u1', [
     route: { S1: ['counted'] },
     cues: { S1: 'The firm lists the 8 funds it still runs, and it closed 12 others in those years' },
     segments: [
-      { text: "A fund firm advertises: 'Every one of our funds has beaten the market for ten years.'", note: 'That is the claim. It says "every one of our funds", and what you are asked for is what that was worked out from, which comes next.' },
+      { text: "A fund firm advertises: 'Every one of our funds has beaten the market for ten years.'", note: 'That is the claim itself. You are asked for the words that show who is missing from it.' },
       { text: 'The firm lists the 8 funds it still runs, and it closed 12 others in those years.' }
     ],
-    reason: { S1: 'The claim speaks for "every one of our funds", but the figure is worked out from the 8 funds that are still open: {cue:S1}. The 12 that closed are not in it, and funds tend to close when they have done badly. The figure leaves out the very ones that would change it.' },
-    not: { outcome: 'measure', why: 'The funds that are listed are measured in the usual way, so nothing about how the figure is made has changed. What is wrong is which funds are in it.' } },
+    reason: { S1: 'The 12 funds that closed are missing from the number, and funds tend to close when they do badly.' },
+    not: { outcome: 'measure', why: 'The funds are measured the usual way, and nothing about the counting changed. What is wrong is which funds are counted.' } },
 
   /* ---------- What the figure counts ---------- */
   { id: 'gate-waits', use: 'teach', tier: 'clean', setting: 'health', topic: 'emergency room waiting time and a new clock', name: 'The emergency rooms',
@@ -37,9 +37,9 @@ FC.cases('stats', 'u1', [
     text: "A university says: 'Of our graduates, 95% were in work six months after leaving, up from 80% five years ago.' Every graduate of both years was contacted, and nearly all of them replied. Five years ago only full-time jobs counted as work. Now any paid work counts, including a few hours a week in a café.",
     route: { S1: ['measure'] },
     cues: { S1: 'Five years ago only full-time jobs counted as work. Now any paid work counts, including a few hours a week in a café' },
-    reason: { S1: 'The people in the figure are fine: every graduate was contacted and nearly all replied. What is counted changed: {cue:S1}. "In work" can rise from 80% to 95% with no more graduates in full-time jobs than before.' },
-    not: { outcome: 'counted', why: 'Nobody is left out and nobody is favored: every graduate of both years was contacted and nearly all replied. The trouble is not who is in the figure.' },
-    miss: { counted: 'The first part comes first, and it holds. Every graduate of both years was contacted and nearly all replied, so the people in the figure are a fair picture, and there are plenty of them. The case goes on to what the figure counts, and that is where it goes wrong.' } },
+    reason: { S1: 'The people are fine, but what counts as "in work" changed: {cue:S1}. It can rise from 80% to 95% with no more graduates in full-time jobs.' },
+    not: { outcome: 'counted', why: 'Nobody is left out: every graduate of both years was contacted and nearly all replied. The trouble is not who is in the number.' },
+    miss: { counted: 'Checking the people first was right, and they hold: nearly every graduate replied. The trouble is one part later, in what counts as "in work".' } },
 
   /* ---------- The look-alike pair: same school, same rise in scores ---------- */
   { id: 'gate-reading-volunteers', use: 'teach', tier: 'clean', setting: 'learning', topic: 'reading scores from volunteers',

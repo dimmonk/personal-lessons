@@ -9,12 +9,12 @@
 
 FC.unit('civics', 'u10', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Ten',
   title: { text: 'History since 1877' },
-  subtitle: 'From the factories and the great arrivals to September 11, the widening of the right to vote, and the symbols of the country',
+  subtitle: 'The great arrivals, the Depression, the wars, civil rights, September 11, who can vote, and the flag',
   teaches: { steps: [], outcomes: [], terms: [] },   // a fact unit teaches no step, no name and no term (A12)
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'u7', 'u8', 'u9'],
 
@@ -22,33 +22,33 @@ FC.unit('civics', 'u10', {
   // of one names the other. rule names both answers by {f:}; test is a question to put to yourself, with no name in it.
   ledger: [
     { id: 'wv-statue~wv-ellis', pair: ['wv-statue', 'wv-ellis'],
-      shared: 'Both stand in New York Harbor, both belong to the years when millions arrived, and their years are only six apart.',
-      rule: 'One is the year of the gift from France: {f:wv-statue}. The other is the year of the federal station where arrivals were examined: {f:wv-ellis}. The statue came first.',
-      test: 'Is it the year of the gift that stands in the harbor, or the year of the station where the arrivals were examined?' },
+      shared: 'Both are in New York Harbor, both belong to the years when millions arrived, and their years are only six apart.',
+      rule: 'One is the year of the gift from France: {f:wv-statue}. The other is the year of the federal station where arrivals were checked: {f:wv-ellis}. The statue came first.',
+      test: 'Is it the year of the gift that stands in the harbor, or the year of the station where arrivals were checked?' },
     { id: 'cr-brown~cr-act', pair: ['cr-brown', 'cr-act'],
-      shared: 'Both are landmarks of the civil rights movement, and both were aimed at segregation and discrimination.',
+      shared: 'Both were part of the civil rights movement, and both went after segregation and discrimination.',
       rule: 'One is a ruling by a court in 1954: {f:cr-brown}. The other is a law passed by Congress in 1964: {f:cr-act}.',
       test: 'Was it a ruling by a court, or a law passed by lawmakers?' },
     { id: 'vy-race~vy-vra', pair: ['vy-race', 'vy-vra'],
-      shared: 'Both are about the vote and race, so a story that mentions one can bring the other to mind.',
+      shared: 'Both are about the vote and race, so a story about one can bring the other to mind.',
       rule: 'One is when the promise was written down in the Constitution: {f:vy-race}. The other is when federal officials were put behind it: {f:vy-vra}.',
       test: 'Is it when the promise was written down, or when it was made real?' },
     { id: 'sy-stripes~sy-stars', pair: ['sy-stripes', 'sy-stars'],
-      shared: 'Both are on the flag, and both stand for a count: 13 and 50.',
-      rule: 'One counts how the country began: {f:sy-stripes}. The other counts what it is made of now: {f:sy-stars}.',
-      test: 'Does it count how the country began, or what it is made of now?' }
+      shared: 'Both are on the flag, and each is a count: 13 and 50.',
+      rule: 'One counts how the country began: {f:sy-stripes}. The other counts what it is now: {f:sy-stars}.',
+      test: 'Does it count how the country began, or what it is now?' }
   ],
 
   // Parts are stopping points (A13): the years of history to civil rights, then September 11, the vote and the symbols.
   parts: [
-    { id: 'p1', title: 'The great arrivals, the Depression, the Cold War and civil rights',
+    { id: 'p1', title: 'Arrivals, the Depression, the Cold War and civil rights',
       cards: ['orient-since',
               'con-wave', 'facts-wave', 'chk-wv-exclusion', 'chk-wv-statue', 'chk-wv-ellis', 'look-wave',
               'con-line', 'facts-line', 'chk-tl-ww1', 'chk-tl-depression', 'chk-tl-pearl', 'chk-tl-ww2end', 'chk-tl-attack',
               'con-hard', 'facts-hard', 'chk-hd-depression', 'chk-hd-newdeal', 'chk-hd-roosevelt', 'chk-hd-security',
               'con-cold', 'facts-cold', 'chk-cw-name', 'chk-cw-rival', 'chk-cw-wars',
               'con-civil', 'facts-civil', 'chk-cr-brown', 'chk-cr-king', 'chk-cr-act', 'chk-cr-end', 'look-civil'] },
-    { id: 'p2', title: 'September 11, the right to vote, and the symbols and names, then the drill',
+    { id: 'p2', title: 'September 11, the vote, the flag and four names, then the drill',
       cards: ['con-attack', 'facts-attack', 'chk-nn-planes', 'chk-nn-targets', 'chk-nn-dead', 'chk-nn-dept',
               'con-vote', 'facts-vote', 'chk-vy-race', 'chk-vy-sex', 'chk-vy-poll', 'chk-vy-vra', 'chk-vy-age', 'look-vote',
               'con-who', 'facts-who', 'chk-vw-founding', 'chk-vw-campaign', 'chk-vg-gap',
@@ -82,7 +82,8 @@ FC.unit('civics', 'u10', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the fact unit for history since 1877, replacing the old Unit Five cards on its last two eras ("Factories and immigration (1877 to 1914)" and "World wars, civil rights and today (1914 onward)"), "The right to vote, widened by inches", "Places and symbols", the drill items of those eras (n5), and old claim 6 (always a democracy), which is held as rows. Fourteen groups of facts under the idea each serves, sixty-one facts, nine look-alike pairs. Every fact comes from the old data and none is added. The years 1877 to 1900 are skipped: the unit holds three dates from them (1882, 1886, 1892) and says so. The old "which era" question is gone: a facts card cannot hold five rows with one answer (V57), so each era became groups of facts, each asked one way. Not yet deployed.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // old claim 6 becomes the founding-voters row and the years and gap rows; a fact unit has no refute card (A12, gap 6 of the civics plan)

@@ -8,12 +8,12 @@
 
 FC.unit('scams', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
   title: { fromKey: 'D1.access' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Three scams that ask you for a way into an account, the real thing they copy, and the two questions that tell them apart',
+  subtitle: 'Three scams that ask you to type, read out or press something, the real thing they copy, and two questions that tell them apart',
   teaches: { steps: ['A1', 'A2'], outcomes: ['realsignin', 'phishing', 'codescam', 'appscam'], terms: [] },
   assumes: ['u1', 'u2'],  // everything these units teach may be used; the first card restates the part this unit leans on
 
@@ -24,40 +24,40 @@ FC.unit('scams', 'u3', {
   // test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'phishing~realsignin', pair: ['phishing', 'realsignin'], step: 'A2',
-      shared: 'Both can arrive as the same sign-in page, with the same logo, for the same account, asking for a password.',
-      rule: 'In {o:realsignin} you began it yourself, using an app, an address or a number that you had before, and it asks no more than the task needs. In {o:phishing} it came to you in a message you did not ask for, and the page it leads to asks for a password.',
+      shared: 'Both can be the same sign-in page, with the same logo, for the same account, asking for a password.',
+      rule: 'In {o:realsignin} you started it yourself, from an app, an address or a number you already had, and it asks only for what a sign-in needs. In {o:phishing} a message you did not ask for sent you to a page that wants a password.',
       test: 'Did I start this myself, from an app, an address or a number I already had? Or did a message, a call or a pop-up bring me to the page?' },
     { id: 'codescam~realsignin', pair: ['codescam', 'realsignin'], step: 'A2',
-      shared: 'Both involve a code that a real company has sent to your phone, in the same list of texts, for the same account.',
-      rule: 'In {o:realsignin} the code arrives because of something you started, and you type it into the page or the app that you opened. In {o:codescam} someone who contacted you asks you to read the code out or send it on.',
+      shared: 'Both involve a real code that a real company sent to your phone, in the same list of texts, for the same account.',
+      rule: 'In {o:realsignin} the code comes because of something you started, and you type it into the page or app you opened. In {o:codescam} someone who contacted you asks you to read the code out or send it on.',
       test: 'Who is going to see this code: only the page or the app I opened myself, or a person who contacted me?' },
     { id: 'appscam~realsignin', pair: ['appscam', 'realsignin'], step: 'A2',
       shared: 'Both are the same {t:permission} from the same provider, with the same Allow button, for an app with an ordinary name.',
-      rule: 'In {o:realsignin} you went looking for the app yourself, and the list in the {t:permission} asks only for what the app\'s job needs. In {o:appscam} the app came to you in a message, or its list asks for far more than its job.',
-      test: 'Did I go looking for this app myself, and does the list in the {t:permission} ask only for what I want the app to do?' },
+      rule: 'In {o:realsignin} you went looking for the app yourself, and the list on the {t:permission} asks only for what the app\'s job needs. In {o:appscam} the app came to you in a message, or its list asks for far more than its job.',
+      test: 'Did I go looking for this app myself, and is everything it wants to do something I want it to do?' },
     { id: 'phishing~codescam', pair: ['phishing', 'codescam'], step: 'A1',
-      shared: 'Both begin with a message or a call that you did not ask for, with a reason to hurry, and a case can ask for both a password and a code.',
-      rule: 'In {o:phishing} what you are asked for is a password, typed into a page that a link took you to. In {o:codescam} it is a code that has just come to your phone, and a person who contacted you asks you to read it out or send it on.',
+      shared: 'Both begin with a message or a call you did not ask for, with a reason to hurry, and one story can ask for both a password and a code.',
+      rule: 'In {o:phishing} you are asked to type a password into a page that a link took you to. In {o:codescam} a code has just come to your phone, and someone who contacted you asks you to read it out or send it on.',
       test: 'Am I being asked to type a password into a page, or to pass on a code that has just come to my phone?' },
     { id: 'phishing~appscam', pair: ['phishing', 'appscam'], step: 'A1', taughtIn: 'q-A1',
-      shared: 'Both begin with a message that sends you to something that wants your account, with a reason such as a document or an offer.',
-      rule: 'In {o:phishing} what you are asked to type is a password, into a copied page. In {o:appscam} what you are asked to press is Allow, on a real {t:permission} from your provider, for an app, and no password is typed.',
-      test: 'Is there a field for a password that I would type into, or a {t:permission} with an Allow button and a list of what an app may do?' },
+      shared: 'Both begin with a message that sends you to something that wants into your account, with a reason such as a document or an offer.',
+      rule: 'In {o:phishing} you are asked to type a password into a copied page. In {o:appscam} you are asked to press Allow on a real {t:permission} from your provider, for an app, and no password is typed.',
+      test: 'Is there a field where I would type a password, or a {t:permission} with an Allow button and a list of what an app may do?' },
     { id: 'codescam~appscam', pair: ['codescam', 'appscam'], step: 'A1', taughtIn: 'q-A1',
-      shared: 'Both use something real: a real code in the one, a real {t:permission} from your provider in the other, and nothing is copied.',
-      rule: 'In {o:codescam} a person who reached you first wants a number read out or sent on. In {o:appscam} what is asked is that you press Allow on a {t:permission}, for an app.',
+      shared: 'Both use something real: a real code in the one, a real {t:permission} from your provider in the other. Nothing is copied.',
+      rule: 'In {o:codescam} someone who reached you first wants a number read out or sent on. In {o:appscam} a {t:permission} asks you to press Allow for an app.',
       test: 'Is someone asking me to say or send a number, or is a {t:permission} asking me to press Allow?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. They follow the first question's answers
   // (a password, a code, an Allow), with the real sign-in first. The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The thing you do every day, and the three scams that copy it',
+    { id: 'p1', title: 'The real thing, and the three scams that copy it',
       cards: ['orient', 'meet-realsignin', 'check-realsignin',
               'meet-phishing', 'check-phishing', 'look-phishing-realsignin',
               'meet-codescam', 'check-codescam', 'look-codescam-realsignin', 'exc-both',
               'meet-appscam', 'check-appscam', 'look-appscam-realsignin'] },
-    { id: 'p2', title: 'The two questions, one whole case, then the drill',
+    { id: 'p2', title: 'Two questions, one whole story, then the drill',
       cards: ['q-A1', 'check-A1', 'q-A2', 'check-A2', 'worked-cv'], drill: true, close: ['recap', 'plan-access'] }
   ],
 
@@ -66,7 +66,7 @@ FC.unit('scams', 'u3', {
   // band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u3',            // the old quick-drill totals for this unit were stored under pl:scams:stats:u3 (frozen; see E8)
-    add: 'Some of these requests are real and some are copies, on purpose. The real thing comes up as often as the three scams. In every case, put your finger on what you are asked to type or press, and on whether the person started it.',
+    add: 'Some of these requests are real and some are copies, on purpose. The real thing comes up as often as the three scams. In every story, find what the person is asked to type or press, and whether they started it.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'dp-a1-pw', step: 'A1' }, { case: 'dp-a1-code', step: 'A1' }, { case: 'dp-a1-allow', step: 'A1' }],
@@ -90,7 +90,8 @@ FC.unit('scams', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the access branch of the rewritten key (docs/rebuild/scams-plan.md), taught as a branch unit with two questions. The real sign-in is met first and is in every case stage; three scams (a copied page that asks for a password, someone who asks for a code that has just come to your phone, an app that asks for far more than its job); six look-alike pairs; the tie-break (a password then a code) taught on a named case; every portrait says what to do on the spot. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What changed in the key for this branch, and why (K2). Old wording is the app's wording before the rebuild
     // (from docs/rebuild/scams-plan.md, section a).

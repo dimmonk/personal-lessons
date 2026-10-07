@@ -11,7 +11,7 @@ FC.cases('stats', 'u2', [
     text: "A county tests the water at two public pools with the same lab and the same method every week for a year. Pool A failed 3 of 150 tests, and Pool B failed 9 of 150. The county says: 'Pool B's water fails tests more often: 6 in 100 against 2 in 100.'",
     outcome: 'comp_ok', route: { S1: ['holds'], H1: ['difference'] },
     cues: { S1: ['tests the water at two public pools with the same lab and the same method every week for a year'], H1: "Pool B's water fails tests more often: 6 in 100 against 2 in 100" },
-    reason: { H1: "The claim is {cue:H1}. It sets two pools side by side and says which fails more often, with the numbers behind it: 9 ÷ 150 = 0.06 and 3 ÷ 150 = 0.02. It does not follow one pool through time, and it does not say why Pool B fails more." } },
+    reason: { H1: "The claim is {cue:H1}: two pools side by side, with the numbers behind them (9 ÷ 150 = 0.06 and 3 ÷ 150 = 0.02)." } },
 
   { id: 'h-reservoir-usual', use: 'teach', tier: 'clean', setting: 'community', topic: 'a reservoir beside its usual level', name: 'The reservoir beside its usual level',
     text: "A water district reads the same gauge at the same dam at 8 a.m. on 1 September every year, and has done so for twenty-one years. Nobody's pay depends on the reading. This year the reservoir stood at 61% full. The average of the twenty earlier readings for that date is 74% full. The district says: 'On 1 September the reservoir stood at 61% full, 13 points below the usual 74% full for the date.'",
@@ -32,7 +32,7 @@ FC.cases('stats', 'u2', [
     text: "A garden co-op owns 200 plots of the same size and soil. A volunteer flipped a coin for each plot to decide whether it would get the new compost for the season. All 200 plots were planted with the same seeds on the same day and weighed the same way at harvest. The plots with compost gave 6.4 kilograms of tomatoes on average and the others gave 5.1. The co-op says: 'The new compost raised tomato yields: 6.4 kilograms against 5.1.'",
     outcome: 'cause_ok', route: { S1: ['holds'], H1: ['causes'] },
     cues: { S1: ['flipped a coin for each plot to decide whether it would get the new compost', 'weighed the same way at harvest'], H1: 'The new compost raised tomato yields: 6.4 kilograms against 5.1' },
-    reason: { H1: 'The claim is {cue:H1}. It does not stop at which group is ahead: it says that the compost raised the yields, which is saying what made the gap. The words that allow it are in the case: a coin decided which plots got the compost.' } },
+    reason: { H1: 'The claim is {cue:H1}: it says what made the gap, which the coin toss on every plot allows.' } },
 
   { id: 'h-reading-cause', use: 'teach', tier: 'clean', setting: 'learning', topic: 'reading groups at one school, the program credited', name: 'The reading program, the cause said',
     text: "A school drew names from a hat to choose 60 of its 120 students for a new reading program, and the other 60 kept their usual lessons. All 120 took the same test at the end of the term. The program group averaged 74 points and the other group averaged 62. The school says: 'The reading program raised test scores by 12 points: 74 against 62.'",
@@ -48,5 +48,5 @@ FC.cases('stats', 'u2', [
     text: "A company with 3,000 employees wants to know how many commute by bike. Its HR office drew 600 employee numbers by lottery from the full payroll list, emailed each one, and phoned the ones who had not replied until 570 had answered. Of the 570, 114 commute by bike, which is 20 in 100. HR says: 'About 20% of our employees commute by bike.'",
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
     cues: { S1: ['drew 600 employee numbers by lottery from the full payroll list', 'until 570 had answered'], H1: 'About 20% of our employees commute by bike' },
-    reason: { H1: 'The claim is {cue:H1}. It gives one figure about one group at one time. The words about the lottery and the 570 answers show why the figure holds, and the claim itself does not say that the figure rose, differs from another company’s or has a cause.' } }
+    reason: { H1: 'The claim is {cue:H1}: one figure about one group at one time. The lottery and the 570 answers show why it holds, but the claim says nothing about a rise, another company or a cause.' } }
 ]);

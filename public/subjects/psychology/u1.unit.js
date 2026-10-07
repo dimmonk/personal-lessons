@@ -8,12 +8,12 @@
 
 FC.unit('psychology', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
-  title: { text: 'Four kinds of thing' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The first question, and the four kinds of thing it sorts every case into',
+  title: { text: 'Before you call it manipulation' },   // a gate unit is titled in plain words; the answers are taught inside it
+  subtitle: 'Check what you are looking at first: one choice, words aimed at someone, years of the same, or one bad day',
   teaches: { steps: ['D1'], outcomes: [], terms: [], families: ['reasoning', 'tactic', 'pattern', 'none'] },
   assumes: [],            // the first unit of the subject
 
@@ -24,40 +24,41 @@ FC.unit('psychology', 'u1', {
   // test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'reasoning~tactic', pair: ['reasoning', 'tactic'], step: 'D1',
-      shared: 'In both, a person may be explaining or defending themselves, and someone else may be there to hear it.',
-      rule: 'In {a:D1.reasoning} the reasons are about the speaker’s own view, choice or act, and anyone else is only listening. In {a:D1.tactic} what is said or done is about the other person, or about what has happened between the two, and it is said or done to them.',
-      test: 'Who are the words about, and who are they said to? Are they about the speaker’s own view or choice, with anyone else only listening? Or are they said to another person, about that person or about what has happened between the two?' },
+      shared: 'In both, someone may be explaining themselves with another person in the room.',
+      rule: 'In {a:D1.reasoning} the words are about the speaker’s own choice, and the listener just listens. In {a:D1.tactic} the words are about the other person, or what happened between them, and are said to them.',
+      test: 'Who are the words about: the speaker’s own choice, or the person they are said to?' },
     { id: 'tactic~pattern', pair: ['tactic', 'pattern'], step: 'D1',
-      shared: 'In both, one person may be treating another badly, and the very same behavior can appear in each.',
-      rule: '{a:D1.tactic} stays between two people: it shows what one of them says or does to the other. {a:D1.pattern} follows one person across years, places and relationships.',
-      test: 'Does the case stay between two people, and show what one of them says or does to the other? Or does it show this: {needs:pattern}?' },
+      shared: 'In both, one person may treat another badly, in exactly the same way.',
+      rule: '{a:D1.tactic} stays between two people. {a:D1.pattern} follows one person for years, in different places, with different people.',
+      test: 'Does the story stay between two people, or follow one person for years, in different places, with different people?' },
     { id: 'pattern~none', pair: ['pattern', 'none'], step: 'D1',
-      shared: 'The behavior itself can be exactly the same in both. What differs is how much of the person’s life the case shows.',
-      rule: '{a:D1.none} shows one occasion or one short stretch. {a:D1.pattern} shows the same thing across years, places and relationships.',
-      test: 'How much of the person’s life does the case show? One occasion or one short stretch? Or this: {needs:pattern}?' },
+      shared: 'The behavior can be exactly the same in both.',
+      rule: '{a:D1.none} is one occasion or one short stretch. {a:D1.pattern} takes years of someone’s life, showing at work, at home and with friends alike.',
+      test: 'How much of the person’s life does the story show: one occasion, or years, places and people?' },
     { id: 'tactic~none', pair: ['tactic', 'none'], step: 'D1', taughtIn: 'q-kind',
-      shared: 'In both, someone can be hard to be around, and other people can be hurt by it.',
-      rule: 'In {a:D1.none} nothing is said or done to anyone about them: other people are near it, and are not what it is about. In {a:D1.tactic} something is said or done to one particular person, about that person or about what has happened between the two.',
-      test: 'Is anything said or done to one particular person, about that person or about what has happened between the two? Or is this only how someone was for a short while, with everyone or with no one?' },
+      shared: 'In both, someone can be hard to be around, and other people can get hurt.',
+      rule: 'In {a:D1.none} nobody is targeted: people are near it, not what it is about. In {a:D1.tactic} one person says or does something to another, about them.',
+      test: 'Is something said or done to one particular person, about them? Or is it just how someone was for a while, with everyone?' },
     { id: 'reasoning~none', pair: ['reasoning', 'none'], step: 'D1', taughtIn: 'q-kind',
-      shared: 'Both are about one person on one occasion, and both can follow something that happened to them.',
-      rule: 'In {a:D1.reasoning} the person gives reasons for a view, a choice or something they did. In {a:D1.none} no reasons are given: the case shows only how the person felt and acted.',
-      test: 'Does the person give reasons for a view, a choice or something they did? Or does the case show only how they felt and acted?' },
+      shared: 'Both are about one person on one occasion, often after something happened to them.',
+      rule: 'In {a:D1.reasoning} the person gives reasons for a choice or a view. In {a:D1.none} there are no reasons, only how they felt and acted.',
+      test: 'Does the person give reasons for a choice or a view, or does the story only show how they felt and acted?' },
     { id: 'reasoning~pattern', pair: ['reasoning', 'pattern'], step: 'D1', taughtIn: 'q-kind',
-      shared: 'Both can show a person defending themselves, and the reasons can sound the same.',
-      rule: '{a:D1.reasoning} shows one piece of thinking: this view, this choice, this occasion. {a:D1.pattern} shows the same behavior across years, places and relationships.',
-      test: 'Is the case one piece of thinking, about one view or one choice? Or does it show this: {needs:pattern}?' }
+      shared: 'Both can show a person defending themselves, with reasons that sound the same.',
+      rule: '{a:D1.reasoning} is one choice on one occasion. {a:D1.pattern} takes years of someone’s life, showing at work, at home and with friends alike.',
+      test: 'Is it one choice on one occasion, or years of someone’s life?' }
   ],
+
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The first two follow the key's four answers, two at a time (A13). The part with drill: true is the last;
   // its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first two kinds: a person and their reasons, and what one person does to another',
+    { id: 'p1', title: 'One choice, and words aimed at someone',
       cards: ['orient-kind', 'meet-reasoning', 'check-reasoning', 'meet-tactic', 'check-tactic', 'look-reasoning-tactic'] },
-    { id: 'p2', title: 'The other two kinds: a person across years, and a moment with nothing to name',
+    { id: 'p2', title: 'Years of the same, and one bad day',
       cards: ['meet-pattern', 'check-pattern', 'look-tactic-pattern', 'meet-none', 'check-none', 'look-pattern-none', 'q-kind'] },
-    { id: 'p3', title: 'One whole case, then the drill',
+    { id: 'p3', title: 'One whole story, then the drill',
       cards: ['worked-rehearsal'], drill: true, close: ['recap-kind'] }
   ],
 
@@ -68,7 +69,7 @@ FC.unit('psychology', 'u1', {
   // The drill and return cases of this unit are also the bank that later units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'u1',            // the old quick-drill totals for this unit were stored under pl:psychology:stats:u1 (frozen; see E8)
-    add: 'Some of these cases show nothing wrong at all, and some show an ordinary bad day. That is on purpose. Saying that there is nothing to name is one of the four answers, and you will need it as often as the other three.',
+    add: 'Some of these stories show nothing wrong at all, or just an ordinary bad day. That is on purpose: {a:D1.none} is a real answer, and you will need it as often as the other three.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'g-degree', step: 'D1' }, { case: 'g-memory', step: 'D1' }],
@@ -93,7 +94,8 @@ FC.unit('psychology', 'u1', {
       { rev: 1, date: '2026-10-04', change: 'First version under lesson standard 1: the gate unit. Not yet deployed, so later edits before the first deploy stay revision 1. Reviewed on 2026-10-05 as a beginner would read it and against the finished key: plainer wording, the diagnosis line added, no everyday label that is also a branch name, and the first worked case now follows the order the question card teaches.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per kind, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per kind, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps, and plain names for the four answers.' }
     ],
     // What the K2 rewrite changed in the gate, and why. "was" is the wording Unit Two's exemplar carried
     // (itself a partial rewrite of the old app's wording, which is quoted where it matters).

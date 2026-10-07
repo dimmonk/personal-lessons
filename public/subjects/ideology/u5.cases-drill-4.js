@@ -10,7 +10,7 @@ FC.cases('ideology', 'u5', [
             R1: 'The government should keep the courts open, see that promises are kept, and then leave schools and clinics to those who run them. It should not pay for them or run them' },
     reason: { D1: 'The text puts first what each person is free to do: {cue:D1}.',
               R1: 'The government is to keep the courts open and promises kept, and to leave schools and clinics alone: {cue:R1}. It is even told not to pay for them.' },
-    not: { outcome: 'modlib', why: 'A school and a clinic are what the fair-start leaflet asked the government to give. This text speaks of the same two things and asks the government to give neither. What decides the name is what the text wants done, not what it is about.' } },
+    not: { outcome: 'modlib', why: 'The fair-start leaflet asked the government to give a school and a clinic. This text names the same two and asks it to give neither, and the ask decides the name, not the topic.' } },
 
   { id: 'i5-r-modlib3', use: 'drill', tier: 'misleading', setting: 'town', topic: 'a driving test and paid lessons', echo: 'i5-idegal-meet',
     text: "From a leaflet of the Crossways Fair Start Group: 'The driving test is the same for every applicant, and it is not the test that is wrong. Everyone is owed a fair chance to pass it. But an applicant with no car and no lessons starts a long way back. We ask the government to pay for lessons and a practice car for any applicant who needs them, and we will all pay for it together.'",
@@ -19,7 +19,7 @@ FC.cases('ideology', 'u5', [
             R1: 'We ask the government to pay for lessons and a practice car for any applicant who needs them' },
     reason: { D1: 'The text puts first what everyone is owed: {cue:D1}.',
               R1: 'The government is to pay for lessons and a car for any applicant who needs them: {cue:R1}. The text says the test itself is not wrong.' },
-    not: { outcome: 'idegal', why: 'The hill-villages letter also told of a test that is the same for everyone. That letter said the test leaves a group behind and asked for it to change. This text says the test is not what is wrong, names no group, and asks the government to pay for help.' } },
+    not: { outcome: 'idegal', why: 'The hill-villages letter also told of a test that is the same for everyone, but it blamed the test and asked for it to change. This text says the test is not what is wrong, names no group, and asks the government to pay for help.' } },
 
   { id: 'i5-r-idegal3', use: 'drill', tier: 'misleading', setting: 'work', topic: 'a training program with a driver’s-license entry rule', echo: 'i5-modlib-meet',
     also: ['start'],
@@ -29,5 +29,5 @@ FC.cases('ideology', 'u5', [
             R1: ['A rule that treats every applicant alike has left women out of the program', 'Change the entry rule until women join as often as men'] },
     reason: { D1: 'The text wants fair treatment for women and wants no one placed above another: {cue:D1}.',
               R1: 'The text praises a paid program, and then says a rule that treats every applicant alike has left women out of it: {cue:R1}. When a text shows both a fair start for everyone and a rule that leaves a group behind, the answer is {a:R1.rules}.' },
-    not: { outcome: 'modlib', why: 'The text does praise a program that is paid for by all, which is what {o:modlib} asks for. But it goes on to say that a rule that treats every applicant alike has left women out, and asks for that rule to change. When a text shows both, the answer is {o:idegal}.' } }
+    not: { outcome: 'modlib', why: 'The text does praise a program paid for by all, which is what {o:modlib} asks for. But it says a rule that treats every applicant alike has left women out and asks for it to change, and when a text shows both, the answer is {o:idegal}.' } }
 ]);

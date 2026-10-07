@@ -13,7 +13,7 @@ FC.cases('ideology', 'u1', [
 
   /* ---------- The word the unit leans on (shown by the term card; asked of nothing) ---------- */
   { id: 'i-term-bus', use: 'teach', tier: 'clean', setting: 'town', topic: 'two neighbors at a bus stop',
-    text: "Two neighbors wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbor Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree, but each has given, in a few lines, an answer to who the country is for and a view of how it should be run." },
+    text: "Two neighbors wait at a bus stop and talk about the country. Dolores says, 'A country is for the people who keep it running, so they should have the first say, and the government should answer to them.' Her neighbor Emeka says, 'A country is for what we were handed by the people before us, so we should keep what works and change it slowly.' They do not agree." },
 
   /* ---------- The first answer: working people, against those who own the businesses ---------- */
   { id: 'i-whouse', use: 'teach', tier: 'clean', setting: 'work', topic: 'a freezer depot and its profits', name: 'The depot leaflet',
@@ -27,11 +27,11 @@ FC.cases('ideology', 'u1', [
     cues: { D1: ['The tellers and cleaners who keep these branches open', 'we will stand together against the owners until we get it'] },
     segments: [
       { text: 'The branch staff at Crowley Savings have voted to strike', note: 'That is what the staff did. It does not yet say who they stand against.' },
-      { text: "The bank's owners paid themselves a bonus the size of our whole year's wages", note: 'That names the owners and what they took. It is half of what you point to. The other half is the staff, and the side the text takes.' },
+      { text: "The bank's owners paid themselves a bonus the size of our whole year's wages", note: 'That names the owners and what they took. It is only half: you also need the staff, and the side the text takes.' },
       { text: 'The tellers and cleaners who keep these branches open are not asking for charity. We are asking for our share, and we will stand together against the owners until we get it.' }
     ],
-    reason: { D1: 'The words that settle it are {cue:D1}: working people on one side, owners on the other, and the text standing with the workers. Nothing in the text speaks for a nation or for old ways.' },
-    not: { outcome: 'none', why: 'A strike vote is a practical matter, and a text could report it and take no side. This one does not stop at reporting. It names the workers and the owners as two sides and stands with the first.' } },
+    reason: { D1: 'The staff are on one side, the owners on the other, and the text stands with the staff.' },
+    not: { outcome: 'none', why: 'A strike vote could just be reported, with no side taken. This text names the staff and the owners as two sides and stands with the staff.' } },
 
   /* ---------- The second answer: the nation, or its ordinary people ---------- */
   { id: 'i-speech-nation', use: 'teach', tier: 'clean', setting: 'borders', topic: 'a speech at a new bridge', name: 'The bridge speech',
@@ -43,6 +43,6 @@ FC.cases('ideology', 'u1', [
     text: "The education minister told a school assembly: 'Our children should learn first the songs, the history and the language of this country. We are one people, and a people that does not know its own story will not stay a people.'",
     route: { D1: ['nation'] },
     cues: { D1: 'We are one people, and a people that does not know its own story will not stay a people' },
-    reason: { D1: 'The text speaks for one people and puts it first: {cue:D1}. It names no workers and no owners, and it holds up nothing handed down from the past as the guide.' },
-    not: { outcome: 'class', why: 'Nothing in the text sorts anyone by wages or by owning a business. It speaks of one people, and the school is where that people’s story is passed on.' } }
+    reason: { D1: 'The text speaks for one people and puts it first: {cue:D1}. It names no workers and no owners.' },
+    not: { outcome: 'class', why: 'Nothing here sorts anyone by wages or by owning a business. The text is about one people, and the school is where its story is passed on.' } }
 ]);

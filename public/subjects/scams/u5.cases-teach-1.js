@@ -17,12 +17,12 @@ FC.cases('scams', 'u5', [
     outcome: 'realdetails', route: { D1: ['details'], F1: ['identify'], F2: ['fits'] },
     cues: { D1: 'I need your old address and your date of birth', F1: 'your old address and your date of birth', F2: 'She calls Northway County at the number printed on her last property tax bill' },
     segments: [
-      { text: 'Sana has just moved apartment, and she wants her property tax bill changed', note: 'That says why she is calling. It does not show how she reached the county.' },
+      { text: 'Sana has just moved apartment, and she wants her property tax bill changed', note: 'That says why she is calling, not how she reached the county.' },
       { text: 'She calls Northway County at the number printed on her last property tax bill' },
-      { text: "The clerk says: 'To find your account I need your old address and your date of birth.'", note: 'That is what the clerk asks for. It tells you what is asked, and not who began it.' },
-      { text: 'Sana gives them', note: 'That is what Sana does. The question is about how the call began.' }
+      { text: "The clerk says: 'To find your account I need your old address and your date of birth.'", note: 'That is what the clerk asks for, not who started the call.' },
+      { text: 'Sana gives them', note: 'That is what Sana does after the call began, not how it began.' }
     ],
-    reason: { F2: 'Sana is the one who began it, and she reached the county through {t:already}, the number printed on her bill: {cue:F2}. What the clerk asks for is only what is needed to find her account.' } },
+    reason: { F2: 'Sana called the number printed on her own bill, so she started this herself, and the clerk asks only what finding her account needs.' } },
 
   { id: 'u5-grant', use: 'teach', tier: 'clean', setting: 'government', topic: 'an energy grant and a passport photo', name: 'The energy grant',
     text: "An email reaches Kayode from the 'Energy Support Office': 'You are eligible for a $400 energy grant. To receive it, reply with a photo of your passport, your date of birth and your home address by Friday.' Kayode has never applied for any grant.",
@@ -36,13 +36,13 @@ FC.cases('scams', 'u5', [
     outcome: 'identitytheft', route: { D1: ['details'], F1: ['identify'], F2: ['notfit'] },
     cues: { D1: 'confirm your full name, your date of birth and the full number on your bank card', F1: 'your date of birth and the full number on your bank card', F2: 'Femi is not expecting a package' },
     segments: [
-      { text: 'Femi gets a text', note: 'That says how it arrived. A text can reach you because you asked for it, so how it arrived does not on its own show whether you began anything.' },
-      { text: 'Corbin Couriers: your package is at our facility', note: 'That is the reason the text gives. Nothing in it shows that Femi started anything.' },
-      { text: 'confirm your full name, your date of birth and the full number on your bank card', note: 'That is the request. The question here is whether Femi began it.' },
-      { text: 'There is nothing to pay', note: 'That is a promise in the text. It shows nothing about who began it.' },
+      { text: 'Femi gets a text', note: 'That is how it arrived. A text can be one you asked for, so this does not show who started it.' },
+      { text: 'Corbin Couriers: your package is at our facility', note: 'That is the reason the text gives, and nothing in it shows Femi started anything.' },
+      { text: 'confirm your full name, your date of birth and the full number on your bank card', note: 'That is the request. The question is whether Femi started it.' },
+      { text: 'There is nothing to pay', note: 'That is a promise in the text, not a sign of who started it.' },
       { text: 'Femi is not expecting a package' }
     ],
-    reason: { F2: 'Femi did not order anything, so there is nothing he began that these facts could be for: {cue:F2}. The text came to him, and it asks for his card number to rebook a delivery, which is more than a delivery needs.' } },
+    reason: { F2: 'Femi ordered nothing, and the text still asks for his card number to rebook a delivery.' } },
 
   { id: 'u5-job-real', use: 'teach', tier: 'clean', setting: 'work', topic: 'a job offer after an interview, with a work-eligibility check', name: 'The job that was real',
     text: "Dina applied for a warehouse job on the Brackley Logistics website, and was offered it after an interview. She signs in to the applicant account she made on that site, where a page says: 'Offer accepted. So that we can confirm you are eligible to work before you start on November 3, please upload your passport and your Social Security number.'",
@@ -64,8 +64,8 @@ FC.cases('scams', 'u5', [
     cues: { D1: 'Please confirm your date of birth and your home address', F1: 'your date of birth and your home address', F2: "Gabriela's phone rings" },
     segments: [
       { text: "Gabriela's phone rings" },
-      { text: "A man says that he is from Halbrook Bank's fraud team, and he uses her name", note: 'This is what the caller says about himself. He may be telling the truth or not, and nothing in the call shows which. It is not the words that settle the question.' },
-      { text: 'We have seen a strange payment on your account. First I must be sure that I am speaking to you', note: 'This is the reason he gives. The questions do not take a reason on trust, and the reason being a good one is why the case looks real.' },
-      { text: 'Please confirm your date of birth and your home address', note: 'That is the request. The same words come from a real bank and from a copy, so they cannot be what settles it.' }
+      { text: "A man says that he is from Halbrook Bank's fraud team, and he uses her name", note: 'The caller says who he is, but anyone can say that on a call. It does not show who started it.' },
+      { text: 'We have seen a strange payment on your account. First I must be sure that I am speaking to you', note: 'A good reason is why the call sounds real, but it does not show who started it.' },
+      { text: 'Please confirm your date of birth and your home address', note: 'A real bank and a copy ask for the same two things, so the request cannot settle it.' }
     ] }
 ]);

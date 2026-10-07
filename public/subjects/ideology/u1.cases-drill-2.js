@@ -31,7 +31,7 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['rights'] },
     cues: { D1: ['Each person is owed that freedom, and a government that forgets it has forgotten its job'] },
     reason: { D1: 'The text puts first what each person is owed: {cue:D1}.' },
-    not: { outcome: 'class', why: 'The writer is a shopkeeper, which is an owner, but the text does not sort people into owners and workers or take a side between them. It says that each person is owed a freedom.' } },
+    not: { outcome: 'class', why: 'The writer is a shopkeeper, but the text sets no owners against workers. It says each person is owed a freedom.' } },
 
   { id: 'i-r-none1', use: 'drill', tier: 'clean', setting: 'town', topic: 'recycling day moves',
     text: "From the first of June, recycling collection on Hollin Road moves from Mondays to Tuesdays. Put trash cans out by seven in the morning. Missed collections can be reported to the council by phone.",

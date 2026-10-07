@@ -15,7 +15,7 @@ FC.cases('civics', 'u5', [
     text: 'Ravi is charged with fraud. He has waited in jail for three years and his trial has still not started, because the court keeps setting new dates. His lawyer has asked the judge to rule that three years is not the speedy trial the Constitution promises.',
     outcome: 'trialrights', route: { D1: ['courts'], J1: ['accused'] },
     cues: { D1: 'His lawyer has asked the judge to rule', J1: 'three years is not the speedy trial the Constitution promises' },
-    reason: { J1: 'Ravi is accused of a crime, and his lawyer asks whether a step the Constitution promises was followed: {cue:J1}. Nobody says the law against fraud is wrong. The question is about how Ravi is being treated.' } },
+    reason: { J1: 'Ravi is accused, and his lawyer says a step the Constitution promises was skipped: {cue:J1}.' } },
 
   { id: 'ls-vince-arrest', use: 'teach', tier: 'clean', setting: 'community', topic: 'two days in a cell without a lawyer', name: 'Vince in the cell',
     text: 'Vince was arrested at a march on Third Street and is charged with blocking the road. The police kept him in a cell for two days and would not let him speak to a lawyer. His lawyer has asked a judge to decide whether the police followed the steps the Constitution promises to a person who is accused. Nobody says the law against blocking a road is wrong.',
@@ -29,7 +29,7 @@ FC.cases('civics', 'u5', [
 
   /* ---------- The whole case whose story points the wrong way ---------- */
   { id: 'w-megaphone', use: 'teach', tier: 'misleading', setting: 'community', topic: 'a protester and a megaphone', name: 'Greta’s megaphone',
-    text: 'Greta is a protester. At a rally outside the town hall she spoke through a small hand-held megaphone, and a town rule that bans loudspeakers near the building earned her a $40 fine. Greta says the right to speak is the most important right in the country. She does not say the rule is wrong, and she has asked a judge to decide whether a hand-held megaphone is a loudspeaker under the rule.',
+    text: 'Greta is a protester. At a rally outside the town hall she spoke through a small hand-held megaphone and was fined $40 under a town rule that bans loudspeakers near the building. Greta says the right to speak is the most important right in the country. She does not say the rule is wrong, and she has asked a judge to decide whether a hand-held megaphone is a loudspeaker under the rule.',
     outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
     cues: { D1: 'she has asked a judge to decide',
             J1: ['She does not say the rule is wrong', 'whether a hand-held megaphone is a loudspeaker under the rule'] } },

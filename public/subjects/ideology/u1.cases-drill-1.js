@@ -11,7 +11,7 @@ FC.cases('ideology', 'u1', [
     text: "Our members lay every brick of the Larkfield apartments and cannot afford to rent one. The developer who owns the site will sell them for twice what they cost to build. This newsletter will say, as often as it takes, which of the two sides it is on: the people who build, not the people who sell.",
     route: { D1: ['class'] },
     cues: { D1: ['The developer who owns the site will sell them for twice what they cost to build', 'which of the two sides it is on: the people who build, not the people who sell'] },
-    reason: { D1: 'The text sorts people into those who build and those who own and sell, and takes the first side: {cue:D1}.' },
+    reason: { D1: 'The text splits people into those who build and those who own and sell, and stands with the builders: {cue:D1}.' },
     not: { outcome: 'rights', why: 'The text does complain of unfairness, but it does not say what every person is owed. It names two sides and stands with one of them.' } },
 
   { id: 'i-p-none', use: 'drill', tier: 'clean', setting: 'work', topic: 'a scheduling notice for warehouse staff',
@@ -34,7 +34,7 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['nation'] },
     cues: { D1: ['a few insiders in the capital decide how their money is spent', 'This country belongs to its own people, and its own people will run it'] },
     reason: { D1: 'The text speaks for the country’s own people against a few at the top, and puts those people first: {cue:D1}.' },
-    not: { outcome: 'rights', why: 'The text speaks of the people of one country, and what they are owed is that they run it themselves. It does not say that every person is owed anything.' } },
+    not: { outcome: 'rights', why: 'The text is about the people of one country running it themselves. It never says every person is owed anything.' } },
 
   /* ---------- old ways, beside the nation ---------- */
   { id: 'i-p-tradition', use: 'drill', tier: 'clean', setting: 'town', topic: 'the church bells and the council',
@@ -42,5 +42,5 @@ FC.cases('ideology', 'u1', [
     route: { D1: ['tradition'] },
     cues: { D1: ['We were given those bells and that church, and we mean to keep them', 'They are what a town should be run by'] },
     reason: { D1: 'The text holds up what was handed down as what should guide: {cue:D1}.' },
-    not: { outcome: 'none', why: 'A text about bells and a council vote could be a plain notice. This one goes further and says the old ways should decide how the town is run.' } },
+    not: { outcome: 'none', why: 'A text about bells and a council vote could be a plain notice. This one goes further and says the old customs should decide how the town is run.' } },
 ]);

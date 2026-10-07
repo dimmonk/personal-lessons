@@ -6,12 +6,12 @@
 
 FC.unit('ideology', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
   title: { fromKey: 'D1.rights' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Three things a text can want done for people, and how to tell which one you are reading',
+  subtitle: 'What a text about fair treatment wants the government to do: stay out, pay for a fair start, or change a rule',
   teaches: { steps: ['R1'], outcomes: ['clib', 'modlib', 'idegal'], terms: ['equity'] },
   assumes: ['u1', 'u2', 'u3', 'u4'],   // everything these units teach may be used; the first card restates the part this unit leans on
 
@@ -22,37 +22,37 @@ FC.unit('ideology', 'u5', {
   // test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'clib~modlib', pair: ['clib', 'modlib'], step: 'R1',
-      shared: 'Both put each person’s freedom first and ask the government to protect it, and both can say that the government should not run everything.',
-      rule: 'In {o:clib} the text asks the government to protect rights and do little else, so nothing is given to people beyond that protection. In {o:modlib} the text asks the government to protect rights and then to provide a start for everyone, so something is given, and everyone pays for it together.',
-      test: 'Does the text ask the government only to protect rights and then stay out? Or does it also ask the government to give people something, such as a school, a doctor or help while out of work?' },
+      shared: 'Both put each person’s freedom first and ask the government to protect it.',
+      rule: 'In {o:clib} the text asks the government to protect rights and nothing more. In {o:modlib} it asks the government to protect rights and also give everyone a start, and everyone pays for that together.',
+      test: 'Does the text ask the government only to protect rights and then stay out? Or does it also ask the government to give people something, like a school, a doctor or help while out of work?' },
     { id: 'modlib~idegal', pair: ['modlib', 'idegal'], step: 'R1',
-      shared: 'Both say that fair treatment is owed to everyone, and both ask the government to act so that nobody is left behind.',
-      rule: 'In {o:modlib} the text asks for the same help for everyone, and names no rule as the cause of anyone being left behind. In {o:idegal} the text names rules that treat everyone alike as the cause of a group being left behind, and asks for those rules to be changed.',
-      test: 'Does the text name a group that is left behind and say that a rule which treats everyone alike is the cause? Or does it ask for the same help for everyone and blame no rule?' },
+      shared: 'Both say fair treatment is owed to everyone, and both want the government to act so that nobody is left behind.',
+      rule: 'In {o:modlib} the text asks for the same help for everyone and blames no rule for anyone being left behind. In {o:idegal} the text blames a rule that treats everyone alike for leaving a group behind, and asks for that rule to change.',
+      test: 'Does the text blame a rule that treats everyone alike for leaving a group behind? Or does it ask for the same help for everyone and blame no rule?' },
     { id: 'clib~idegal', pair: ['clib', 'idegal'], step: 'R1', taughtIn: 'q-does',
       shared: 'Both are about rules that treat everyone alike, and neither wants anyone placed above anyone else.',
-      rule: 'In {o:clib} the same rules for everyone are enough, and the government should do little beyond keeping them. In {o:idegal} the same rules for everyone are not enough: they leave some groups behind, and the text asks for them to be changed.',
-      test: 'Does the text say that the same rules for everyone are enough? Or does it say that they leave some group behind and must be changed?' },
+      rule: 'In {o:clib} the same rules for everyone are enough, and the government should do little beyond keeping them. In {o:idegal} the same rules are not enough: they leave some groups behind, and the text asks for them to change.',
+      test: 'Does the text say the same rules for everyone are enough? Or does it say they leave a group behind and must change?' },
     { id: 'modlib~socdem', pair: ['modlib', 'socdem'], step: 'D1',
-      shared: 'Both ask the government to pay for schools, health care and help for people out of work, and both ask everyone to share the cost.',
-      rule: 'In {o:socdem} the text names working people and the people who own the businesses as two sides, and stands with the workers. In {o:modlib} the text speaks for every person alike and has no side to be against.',
-      test: 'Does the text name two sides, the people who work for pay and the people who own where they work, and stand with the first? Or does it speak for every person alike, with nobody on the far side?' },
+      shared: 'Both want the government to pay for schools, health care and help for people out of work, with everyone sharing the cost.',
+      rule: 'In {o:socdem} the text sets working people against the people who own the businesses, and takes the workers’ side. In {o:modlib} it speaks for every person alike and is against nobody.',
+      test: 'Does the text set people who work for pay against the people who own where they work, and take the workers’ side? Or does it speak for every person alike, with nobody on the other side?' },
     { id: 'clib~conserv', pair: ['clib', 'conserv'], step: 'D1',
-      shared: 'Both can say that the government should be small and that each person should keep what they earn.',
-      rule: 'In {o:clib} what the text puts first is each person’s freedom, whether the ways of life it protects are old or new. In {o:conserv} what the text puts first is the ways handed down, such as faith, home life and custom, and freedom is held up as something those ways keep safe.',
-      test: 'Does the text hold up old ways, such as faith, home life and custom, as what should guide the country? Or does it hold up each person’s freedom as the thing that comes first?' },
+      shared: 'Both can want a small government and let people keep what they earn.',
+      rule: 'In {o:clib} what comes first is each person’s freedom, whether their way of life is old or new. In {o:conserv} what comes first is the ways handed down, like faith, home life and custom, and freedom is something those ways keep safe.',
+      test: 'Does the text hold up old ways, like faith, home life and custom, as what should guide the country? Or does it put each person’s freedom first?' },
     { id: 'modlib~nationalism', pair: ['modlib', 'nationalism'], step: 'D1',
-      shared: 'Both can ask the government to pay for schools and doctors, and both can speak warmly of the country.',
-      rule: 'In {o:modlib} the text speaks for every person alike, and what it asks is owed to a newcomer as to a neighbor. In {o:nationalism} the text speaks for one people as one, and puts that people first, so what it asks is for them before others.',
+      shared: 'Both can want the government to pay for schools and doctors, and both can speak warmly of the country.',
+      rule: 'In {o:modlib} the text speaks for every person alike, so what it asks is owed to a newcomer as to a neighbor. In {o:nationalism} it speaks for one people and puts that people first, so what it asks is for them before others.',
       test: 'Is what the text asks for owed to every person, whoever they are? Or is it for one people, which the text puts first?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first two answers',
+    { id: 'p1', title: 'Stay out, or pay for a fair start',
       cards: ['orient', 'meet-clib', 'check-clib', 'meet-modlib', 'check-modlib', 'look-clib-modlib'] },
-    { id: 'p2', title: 'The third answer, the question, and where the first question wins, then the drill',
+    { id: 'p2', title: 'Changing a rule, when another answer wins, then the drill',
       cards: ['term-equity', 'meet-idegal', 'check-idegal', 'look-modlib-idegal', 'exc-startrules',
               'q-does', 'check-does', 'exc-class', 'exc-tradition', 'exc-nation', 'worked-misleading'],
       drill: true, close: ['recap'] }
@@ -86,7 +86,8 @@ FC.unit('ideology', 'u5', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for “Rights and fair treatment for everyone”. One question, three names, the word equity taught on its own card, and the gate’s three decisions for this answer (working people against owners, old ways, one people put first) taught as exceptions. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What changed in the key for this branch, and why (K2). This unit carries the lines of the question and the outcomes it teaches;
     // the gate's lines are carried by Unit One. (docs/rebuild/ideology-plan.md, part a)

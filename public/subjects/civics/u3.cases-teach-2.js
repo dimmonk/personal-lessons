@@ -17,8 +17,8 @@ FC.cases('civics', 'u3', [
     text: "The national parks have more visitors every year, and rangers say they are short of staff. The House and the Senate passed a spending bill that cuts the money for park rangers by a third.",
     outcome: 'purse', route: { D1: ['congress'], C1: ['money'] },
     cues: { C1: 'a spending bill that cuts the money for park rangers by a third' },
-    reason: { C1: 'The bill is {cue:C1}. Congress is deciding how much money the government may spend on something, and cutting it is one of the ways to decide. Nobody has banned the rangers: there is less money to pay them.' },
-    not: { outcome: 'enumerated', why: 'The bill is a law, and every law is passed by both chambers. But it is not a law on one of the listed matters such as a tax. What it settles is how much the government may spend.' } },
+    reason: { C1: 'The bill is {cue:C1}, so Congress is deciding what the government may spend. Nobody has banned the rangers: there is just less money to pay them.' },
+    not: { outcome: 'enumerated', why: 'Every law passes the House and the Senate, but this bill is not a tax or another listed subject. It settles how much money the rangers get.' } },
 
   { id: 'l-clinic-tax', use: 'teach', tier: 'clean', setting: 'health', topic: 'a tax to pay for clinics',
     name: 'The clinic tax',
@@ -41,6 +41,6 @@ FC.cases('civics', 'u3', [
     text: "The President chose a new head for the federal tax office. On Wednesday the Senate voted 58 to 41 to approve her, and she starts work on Monday.",
     outcome: 'confirm', route: { D1: ['congress'], C1: ['approve'] },
     cues: { C1: 'the Senate voted 58 to 41 to approve her' },
-    reason: { C1: 'The President put a person forward for a top job, and the Senate voted on her: {cue:C1}. She does not start work until the vote is yes.' },
-    not: { outcome: 'impeach', why: 'A vote in the Senate about a person is all the two names have in common. Here nobody is accused of anything, and the woman does not yet hold the job.' } }
+    reason: { C1: 'The President put her forward and the Senate voted: {cue:C1}. She starts work only after that yes.' },
+    not: { outcome: 'impeach', why: 'Both are Senate votes about a person. But nobody is accused of anything here, and she has not started the job.' } }
 ]);

@@ -7,12 +7,12 @@
 
 FC.unit('scams', 'u2', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Two',
   title: { fromKey: 'D1.device' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Four things a request about your phone or your computer can be, and how to tell which one you are looking at',
+  subtitle: 'Three scams and one real thing: how to tell them apart before you press anything',
   teaches: { steps: ['I1'], outcomes: ['realinstall', 'malware', 'techsupport', 'refundscam'], terms: ['searchad'] },
   assumes: ['u1'],        // everything Unit One teaches may be used; the first card restates the part this unit leans on
 
@@ -24,41 +24,41 @@ FC.unit('scams', 'u2', {
   // test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'malware~realinstall', pair: ['malware', 'realinstall'], step: 'I1',
-      shared: 'Both put a program on your device, and both end in the same box on the computer asking whether to allow changes.',
-      rule: 'In {o:realinstall} you decided to get the software and fetched it yourself, from the maker’s own website or your device’s app store, through {t:already}. In {o:malware} the file or the link came to you in a message that you did not ask for, and nobody was on a call with you.',
-      test: 'Before this file or link reached you, did you set out to get this software yourself, from the maker’s own website or your app store? Or did it arrive in a message?' },
+      shared: 'Both put a program on your device, and both show the same box asking whether to allow changes.',
+      rule: 'In {o:realinstall} you chose the program and fetched it yourself, from its maker’s own website or your app store, through {t:already}. In {o:malware} the file or the link came to you in a message you did not ask for, and nobody was on the phone with you.',
+      test: 'Did you set out to get this program yourself, from its maker’s website or your app store? Or did a file or link arrive in a message?' },
     { id: 'techsupport~refundscam', pair: ['techsupport', 'refundscam'], step: 'I1',
-      shared: 'In both, a person you have reached by phone asks to see or control your device, and says that it is to put something right.',
-      rule: 'In {o:techsupport} the reason given for the request is a problem with your device. In {o:refundscam} the reason given is money: a refund that you are owed, or a bank account that needs attention.',
-      test: 'What reason does the person give for wanting to see or control the device: a problem with the device itself, or money, whether a refund or a bank account?' },
+      shared: 'In both, a person on the phone asks to see or control your device, and says it is to put something right.',
+      rule: 'In {o:techsupport} the reason is a problem with your device. In {o:refundscam} the reason is money: a refund you are owed, or a bank account that needs attention.',
+      test: 'Why does the person want to see your screen: a problem with your device, or money, such as a refund or your bank account?' },
     { id: 'techsupport~realinstall', pair: ['techsupport', 'realinstall'], step: 'I1',
-      shared: 'In both, you are on the phone with a helper who asks to see or control your device, and in both the company’s real name is used.',
-      rule: 'In {o:realinstall} you started the call yourself, at a number that you already had, such as the one on your bill or contract, and nobody contacted you first. In {o:techsupport} someone contacted you first, or what put you in touch was a {t:searchad}, a pop-up or a message, and none of those is {t:already}.',
-      test: 'Who started it, and where did the number or the address come from: from something that you already had, or from a page, a message, a call or the results of a search?' },
+      shared: 'In both, you are on the phone with a helper who asks to see or control your device, and the helper uses the company’s real name.',
+      rule: 'In {o:realinstall} you made the call yourself, to a number you already had, such as the one on your bill, and nobody contacted you first. In {o:techsupport} a {t:searchad}, a pop-up, a message or a call out of nowhere put you in touch, and none of those is {t:already}.',
+      test: 'Who started this, and where did the number or address come from: something you already had, or a page, a message, a call or a search?' },
     { id: 'techsupport~malware', pair: ['techsupport', 'malware'], step: 'I1', taughtIn: 'q-how',
-      shared: 'Both can start with a warning that says something is wrong with your device, and both can end with a program on it.',
-      rule: 'In {o:techsupport} a person is involved: you call a number, or someone calls you, and they ask you to install something or to let them watch. In {o:malware} a file or a link has come to you in a message, and nobody is on a call with you.',
-      test: 'Is there a person on a call, or a number to call, who will talk you through it? Or is there only a file or a link for you to open yourself?' },
+      shared: 'Both can start with a warning that says something is wrong with your device, and both can end with a harmful program on it.',
+      rule: 'In {o:techsupport} a person is involved: you call a number, or someone calls you, and they talk you into installing something or letting them watch. In {o:malware} a file or a link came to you in a message, and nobody is on the phone with you.',
+      test: 'Is someone on the phone, or a number to call, who will talk you through it? Or is there only a file or link for you to open?' },
     { id: 'malware~refundscam', pair: ['malware', 'refundscam'], step: 'I1', taughtIn: 'q-how',
-      shared: 'In both, you may be sent a file or a link to open, and in both the story can be about a payment or an account.',
-      rule: 'In {o:refundscam} a person is on a call with you, and gives money as the reason: a refund owed to you, or a danger to your bank account. In {o:malware} nobody is on a call with you: the file or the link just arrived in a message.',
-      test: 'Is someone on a call or in a chat with you right now, asking you to open it and talking about a refund or a bank account? Or did it simply arrive?' },
+      shared: 'In both, you may be sent a file or a link to open, and the story may be about a payment or an account.',
+      rule: 'In {o:refundscam} a person is on the phone with you, and the reason is money: a refund you are owed, or a bank account in danger. In {o:malware} nobody is on the phone: the file or the link just arrived in a message.',
+      test: 'Is a person with you on the phone or in a chat, talking money: a refund owed to you, or trouble with your bank? Or did the file just arrive?' },
     { id: 'realinstall~refundscam', pair: ['realinstall', 'refundscam'], step: 'I1', taughtIn: 'q-how',
-      shared: 'In both, you may end up installing a program or letting a person see your computer, and in both you may be dealing with a company that you really use.',
-      rule: 'In {o:realinstall} you started it and chose where to get the software, and nobody had contacted you. In {o:refundscam} somebody contacted you about a refund or your bank account, and the program or the view of your computer was theirs to ask for.',
-      test: 'Who started it: did you set out to get it, or did someone contact you and ask?' }
+      shared: 'In both, you may end up installing a program or letting a person see your computer, and the company may be one you really use.',
+      rule: 'In {o:realinstall} you started it and chose where to get the software, and nobody had contacted you. In {o:refundscam} someone contacted you, with money as the reason, and the program or the view of your computer was their request.',
+      test: 'Who started this: did you set out to get it yourself, or did someone contact you first and ask you to do it?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The last part holds the
   // drill, and its close cards come after the drill. The parts follow what a learner notices first: nobody on the line
   // (software you fetched, a file you were sent), then someone on the line.
   parts: [
-    { id: 'p1', title: 'Software you fetched, and a file that was sent to you',
+    { id: 'p1', title: 'Software you chose, and a file that was sent to you',
       cards: ['orient', 'meet-realinstall', 'check-realinstall', 'meet-malware', 'check-malware', 'look-malware-realinstall'] },
-    { id: 'p2', title: 'Someone on the line who offers to fix something, or to pay you back',
+    { id: 'p2', title: 'Someone who offers to fix something, or to pay you back',
       cards: ['term-searchad', 'meet-techsupport', 'check-techsupport', 'exc-searched', 'exc-helpdesk',
               'meet-refundscam', 'check-refundscam', 'look-techsupport-refundscam', 'exc-both-ways'] },
-    { id: 'p3', title: 'The question, one whole case, then the drill',
+    { id: 'p3', title: 'The question, one whole story, then the drill',
       cards: ['q-how', 'check-how', 'worked-form'], drill: true, close: ['recap', 'plan'] }
   ],
 
@@ -68,7 +68,7 @@ FC.unit('scams', 'u2', {
   // This is an action subject, so every stage that asks about cases holds a case of the real installation (V37).
   drill: {
     key: 'u2',            // the old quick-drill totals for the device unit were stored under pl:scams:stats:w4 (frozen; see E8)
-    add: 'One of the four names is the real thing, so not every case here is a scam.',
+    add: 'One of the four is the real thing, so not every story here is a scam.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'dv-p-pdf-reader', step: 'I1' }, { case: 'dv-p-cv', step: 'I1' }],
@@ -96,7 +96,8 @@ FC.unit('scams', 'u2', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the device branch of the rewritten key (docs/rebuild/scams-plan.md). Not yet deployed, so later edits before the first deploy stay revision 1. Four names (the real installation taught first, then the three scams told as they unfold, each with what to do on the spot), one term (search ad), six look-alike pairs, two named exceptions, and a drill that mixes a real installation into every stage.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US institutions and payments, US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this branch, and why (from docs/rebuild/scams-plan.md, section a).
     keyChanges: [

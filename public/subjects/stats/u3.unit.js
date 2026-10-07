@@ -10,12 +10,12 @@
 
 FC.unit('stats', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
   title: { fromKey: 'S1.counted' },       // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Four ways the people or things in a figure can fail to stand for the group the claim is about, and how to tell which one you are looking at',
+  subtitle: 'Four ways a figure can come from the wrong people, and how to spot each one',
   teaches: { steps: ['A1'], outcomes: ['survivor', 'selfselect', 'nonresp', 'smalln'], terms: [] },
   assumes: ['u1', 'u2'],  // everything Unit One and Unit Two teach may be used; the first card restates the part this unit leans on
 
@@ -26,46 +26,46 @@ FC.unit('stats', 'u3', {
   ledger: [
     { id: 'survivor~samp_ok', pair: ['survivor', 'samp_ok'], step: 'S1',
       shared: 'Both can report the same figure from the same garden, shop, club or program, and both sound equally sure.',
-      rule: 'In {o:survivor} the figure is worked out after the fact from the ones that lasted, the ones that did not are missing from it, and it is read as true of everyone who started. In {o:samp_ok} everyone who started is in the figure, or the ones in it were picked by lottery from a full list and nearly all of them answered, and the claim speaks only for that group.',
+      rule: 'In {o:survivor} the figure is taken at the end from the ones that lasted, the ones that did not are missing, and it is read as true of everyone who started. In {o:samp_ok} everyone who started is in the figure, or the people in it were picked by lottery from a full list and nearly all answered, and the claim speaks only for that group.',
       test: 'How many started, and are all of them in the figure? If some are missing, are they missing because of what happened to them?' },
     { id: 'survivor~selfselect', pair: ['survivor', 'selfselect'], step: 'A1', taughtIn: 'q-how',
-      shared: 'Both come with a claim about a whole group and a figure from only some of it, and the ones left out are the ones who could change it.',
-      rule: 'In {o:survivor} everyone was there at the start, and the figure is worked out after the fact from the ones that lasted; the ones that left are missing because of what happened to them. In {o:selfselect} nobody was asked by name, and the figure is worked out from the ones who chose to answer; the ones who are missing never chose to take part.',
+      shared: 'Both come with a claim about a whole group and a figure from only some of it, and the ones left out could change the answer.',
+      rule: 'In {o:survivor} everyone was there at the start, and the figure comes from the ones that lasted; the ones that left are missing because of what happened to them. In {o:selfselect} nobody was asked by name, and the figure comes from the ones who chose to answer; the missing ones never chose to take part.',
       test: 'Did the people or things in the figure get in by lasting to the end, or by choosing to answer when nobody asked them by name?' },
     { id: 'survivor~nonresp', pair: ['survivor', 'nonresp'], step: 'A1', taughtIn: 'worked-yoga',
       shared: 'In both, a list of people was asked by name, and the figure comes from the ones who answered.',
-      rule: 'In {o:nonresp} the list is the whole group the claim speaks for, and many on it did not reply. In {o:survivor} the list holds just the ones who stayed to the end, so almost nobody on it fails to reply, and the ones who left were never on it.',
-      test: 'Is everyone the claim speaks for on the list that was asked? Or is the list only the ones who are still there?' },
+      rule: 'In {o:nonresp} the list is the whole group the claim speaks for, and many on it did not reply. In {o:survivor} the list holds only the ones who stayed to the end, so almost nobody on it fails to reply, and the ones who left were never on it.',
+      test: 'Is everyone the claim speaks for on the list that was asked, or is the list only the ones who are still there?' },
     { id: 'selfselect~cause_ok', pair: ['selfselect', 'cause_ok'], step: 'S1',
       shared: 'In both, the people in the poll or the study came forward by their own choice.',
-      rule: 'In {o:selfselect} the answers of the people who chose to take part are read as true of a wider group. In {o:cause_ok} the people who volunteered were split into two groups by lottery, one was given the thing and the other not, and the claim is about the difference between those two groups, which choosing to volunteer cannot explain.',
-      test: 'Does the claim speak for a wider group than the people who came forward? Or is it about a difference between two groups that a lottery formed?' },
+      rule: 'In {o:selfselect} the answers of the people who chose to take part are read as true of a wider group. In {o:cause_ok} the volunteers were split into two groups by lottery, one was given the thing and the other not, and the claim is about the difference between the groups, which choosing to volunteer cannot explain.',
+      test: 'Does the claim speak for a wider group than the people who came forward, or is it about a difference between two groups that a lottery formed?' },
     { id: 'selfselect~nonresp', pair: ['selfselect', 'nonresp'], step: 'A1',
       shared: 'In both, the figure comes from some of the people it speaks for, and they are the ones with something to say.',
       rule: 'In {o:nonresp} everyone on a known list was asked by name, and many did not reply. In {o:selfselect} nobody was asked by name, and anyone who wanted to could answer.',
       test: 'Was everyone on a known list asked by name, or could anyone who saw the call answer?' },
     { id: 'nonresp~samp_ok', pair: ['nonresp', 'samp_ok'], step: 'S1',
       shared: 'Both ask the same list and can report the same figure.',
-      rule: 'In {o:nonresp} many on the list did not reply and nothing was done to hear from them, so the replies are read as the whole list. In {o:samp_ok} most of the list answered, or the ones who did not were followed up until most had, so the figure is a fair picture of the list.',
+      rule: 'In {o:nonresp} many on the list did not reply and nothing was done to hear from them, yet the replies are read as the whole list. In {o:samp_ok} most of the list answered, or the silent ones were followed up until most had, so the figure is a fair picture of the list.',
       test: 'How many of the list answered, and what was done about the ones who did not?' },
     { id: 'nonresp~smalln', pair: ['nonresp', 'smalln'], step: 'A1', taughtIn: 'q-how',
       shared: 'Both give a figure from only a few people, and both can sound exact.',
-      rule: 'In {o:nonresp} the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In {o:smalln} nobody is missing: everyone there is has been counted, and the whole group is only a handful.',
+      rule: 'In {o:nonresp} the figure comes from the few who replied out of a much bigger list, so most of the group is missing. In {o:smalln} nobody is missing: everyone there is was counted, and the whole group is only a handful.',
       test: 'Out of how many were the few counted: a much bigger list of people who did not reply, or everyone there is?' },
     { id: 'smalln~samp_ok', pair: ['smalln', 'samp_ok'], step: 'S1',
-      shared: 'Both can report a share from the same kind of group, and both sound equally sure.',
-      rule: 'In {o:smalln} there are so few in the figure that a change of one or two in the count would swing it a long way, and a high or low figure is read as meaning something. In {o:samp_ok} there are enough in the figure that the same change would hardly show, and the claim says no more than the figure for that group.',
+      shared: 'Both can report a share from the same sort of group, and both sound equally sure.',
+      rule: 'In {o:smalln} so few are in the figure that one or two more or fewer would swing it a long way, and a high or low figure is read as meaning something. In {o:samp_ok} enough are in the figure that the same change would hardly show, and the claim says no more than the figure for that group.',
       test: 'What would the figure be with one or two more or fewer, and does the claim say more than the group can show?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The four ways, one case each',
+    { id: 'p1', title: 'Four ways a figure goes wrong, one story each',
       cards: ['orient', 'meet-survivor', 'check-survivor', 'look-survivor-samp',
               'meet-selfselect', 'check-selfselect', 'exc-volunteers',
               'meet-nonresp', 'check-nonresp', 'meet-smalln', 'check-smalln'] },
-    { id: 'p2', title: 'Telling them apart, one whole claim, then the drill',
+    { id: 'p2', title: 'Telling them apart, then the drill',
       cards: ['look-selfselect-nonresp', 'look-nonresp-samp', 'look-smalln-samp',
               'q-how', 'check-how', 'worked-yoga'], drill: true, close: ['recap', 'plan'] }
   ],
@@ -75,7 +75,7 @@ FC.unit('stats', 'u3', {
   // written as cases of the claims-that-hold names that Unit Two teaches, so the learner meets a sound figure at every step.
   drill: {
     key: 'u3',            // the old quick-drill totals for this unit would have been stored under pl:stats:stats:u3 (frozen; see E8)
-    add: 'Some of these claims have nothing wrong with them: the figure comes from everyone, from people picked by lottery from a full list and nearly all heard from, or from a big enough group. A claim that sounds sure of itself is not for that reason a sound one, and a claim with few people in it is not for that reason a faulty one. Read how the people or things got into the figure, and go by that.',
+    add: 'Some of these claims are fine: the figure comes from everyone, or from people picked by lottery from a full list who nearly all answered, or from a group big enough that one or two more or fewer barely move it. A claim that sounds sure is not sound for that reason, and one from a small group is not always wrong. Check how the people or things got into the figure, and go by that.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'cd-p-lasted', step: 'A1' }, { case: 'cd-p-chose', step: 'A1' }, { case: 'cd-p-replied', step: 'A1' }, { case: 'cd-p-handful', step: 'A1' }, { case: 'cd-p-ok', step: 'S1' }],
@@ -102,7 +102,8 @@ FC.unit('stats', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the gate answer “Who was counted”. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Two (cards and drill V2) and old error-drill items 6, 7 and 9; every case is new.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this branch, and why (docs/rebuild/stats-plan.md, "Who was counted").
     keyChanges: [

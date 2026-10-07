@@ -20,8 +20,8 @@ FC.cases('wealth', 'u2', [
     text: "Femi, 39, has $60,000 in an ordinary brokerage account, in a fund that owns office buildings and passes the rent on to its owners. It pays out $3,600 a year, and Femi pays 25% tax on it, $900, every year. His 401(k), $40,000, is in a fund of shares that pays out almost nothing.",
     outcome: 'location', route: { D1: ['erosion'], E1: ['incometax'] },
     cues: { E1: 'It pays out $3,600 a year, and Femi pays 25% tax on it, $900, every year' },
-    reason: { E1: 'The investment that pays out the most sits in the account that is taxed in full, and the tax arrives every year without anything being sold: {cue:E1}. The 401(k) holds the investment that pays out almost nothing, so it has room to spare.' },
-    not: { outcome: 'defer', why: 'Nothing here is being sold. The tax is on income paid out every year, and it arrives whether or not Femi sells anything.' } },
+    reason: { E1: 'The fund that pays out the most sits in the fully taxed account, and the tax arrives every year without a sale: {cue:E1}. His 401(k) holds shares that pay out almost nothing.' },
+    not: { outcome: 'defer', why: 'Nothing here is being sold. The tax is on income paid out every year, and it arrives whether or not Femi sells.' } },
 
   /* ---------- Delay the tax by not selling ---------- */
   { id: 'e-m-def', use: 'teach', tier: 'clean', setting: 'family', topic: 'locking in a profit with no use for the cash', name: 'Imogen and the profit',
@@ -33,8 +33,8 @@ FC.cases('wealth', 'u2', [
     text: "Priya, 48, holds $45,000 of shares she bought for $30,000. A newsletter says 'take your profits before the summer', and she is about to sell them all. She needs no cash. The sale would bring tax of 15% on the $15,000 gain, $2,250.",
     outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] },
     cues: { E1: 'she is about to sell them all. She needs no cash. The sale would bring tax of 15% on the $15,000 gain, $2,250' },
-    reason: { E1: 'A sale is planned and it would bring a tax bill on {t:gain}: {cue:E1}. The case shows nothing that needs the sale. A newsletter telling people to take profits is a remark, not a bill or a need.' },
-    not: { outcome: 'harvest', why: 'Nothing has been sold at {t:gain} this year, and no other investment in the case is worth less than it cost, so there is no loss to set against the gain.' } },
+    reason: { E1: 'A sale is planned, it would bring tax on {t:gain}, and nothing needs it: {cue:E1}. A newsletter’s tip is a remark, not a bill or a need.' },
+    not: { outcome: 'harvest', why: 'Nothing has been sold yet, and nothing else Priya holds is worth less than it cost. So there is no loss to set against the gain.' } },
 
   /* ---------- The look-alike pair: income taxed every year, and a gain taxed on a sale ---------- */
   { id: 'e-l-loc-a', use: 'teach', tier: 'clean', setting: 'work', topic: 'a bond fund’s interest taxed annually', name: 'Imani’s interest',
@@ -57,8 +57,8 @@ FC.cases('wealth', 'u2', [
     text: "Hugo, 36, has two funds in an ordinary brokerage account. This year he sold one of them for $2,000 more than he paid, so he will owe tax of $300 on that gain. The other, which he has not sold, cost him $5,000 and is now worth $4,000.",
     outcome: 'harvest', route: { D1: ['erosion'], E1: ['gainloss'] },
     cues: { E1: 'so he will owe tax of $300 on that gain. The other, which he has not sold, cost him $5,000 and is now worth $4,000' },
-    reason: { E1: 'A sale this year has made {t:gain} that will be taxed, and another investment he has not sold is worth less than it cost: {cue:E1}. The two together are what this answer needs.' },
-    not: { outcome: 'defer', why: 'The sale has already happened this year, and nobody is planning an unnecessary one. The case shows an investment below what it cost that can be set against the gain.' } },
+    reason: { E1: 'A sale this year made {t:gain} that will be taxed, and {t:fund} he has not sold is worth less than it cost: {cue:E1}. This answer needs both.' },
+    not: { outcome: 'defer', why: 'The sale has already happened, so there is no needless sale to hold off. What the story shows is a loss that can be set against the gain.' } },
 
   /* ---------- The look-alike pair: a sale nobody needs, and a gain with a loss beside it ---------- */
   { id: 'e-l-def-a', use: 'teach', tier: 'clean', setting: 'home', topic: 'a fund up $6,000 and a sale planned', name: 'Noel and the fund that rose',

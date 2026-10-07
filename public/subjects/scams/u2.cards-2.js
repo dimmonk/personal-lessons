@@ -5,22 +5,23 @@ FC.cards('scams', 'u2', [
 
   /* ---------- Malware ---------- */
   { id: 'meet-malware', kind: 'meet', outcome: 'malware',
-    link: 'The first name was software that a person fetched. This one is the opposite: a file, or a link to one, that was sent without being asked for.',
+    link: 'Now the opposite: a file, or a link to one, that was sent to you without being asked for.',
     case: 'dv-invoice-file', mark: 'I1',
-    strip: [
-      'Sam gets an email from a firm that he has never dealt with.',
-      'It says that an invoice is unpaid, with a late fee as the reason to hurry, and gives him a file to open. The file name ends in .exe, which is the ending of a program. Opening it runs it.',
-      'Nobody is on a call with him. The file simply arrived.'
-    ],
     explain: [
-      'All that a request of this name needs is a file or a link in an email, a text or a chat, and a made-up reason to open it. The reason is chosen to suit you: an unpaid invoice, a pay stub, a package note, a job test, a photo. The story makes no difference. What decides it is that the file came to you and nobody is with you.',
-      'Once it runs, it can copy your passwords, watch your screen, lock your files or give someone else control of the device. Success often looks like nothing happening, so you cannot count on noticing afterward. When Sam opens it, his computer shows the same box that Priya saw. What differs is where each came from: Priya went to the maker, and the file came to Sam.'
+      'Sam asked for nothing. A file arrived with a reason to open it, and a late fee to hurry him. The reason is chosen to suit you: an unpaid invoice, a pay stub, a package note, a job test, a photo.',
+      'Once the file runs, it can copy your passwords, watch your screen, lock your files or let someone else control the device. Sam’s file ends in .exe, which means a program, and opening it runs it. You may notice nothing afterward, so you cannot wait to see what it does. His computer shows the same box as Priya’s, but her program came from the maker and his file came to him.'
+    ],
+    spot: [
+      { do: 'Find what arrived: an email with Invoice-4471.exe attached.', why: 'A file or a link that came to you is not one you went to get.' },
+      { do: 'Find the reason to open it: an unpaid invoice and a late fee.', why: 'There is always a reason, and it is chosen to hurry you.' },
+      { do: 'Check whether anyone is on the phone with you: nobody called Sam.', why: 'With someone on the line, it is a different scam.' }
     ],
     feature: { step: 'I1', option: 'file' },
-    name: 'The name for this is {o:malware}, short for “malicious software”: software made to do harm.',
+    name: 'This is {o:malware}, short for “malicious software”: software made to do harm.',
     act: [
-      'Do not open the file, tap the link or reply. Delete the message.',
-      'If it might be real, use {t:check}: ask the sender yourself, through {t:already}. If you have already opened it, take the device off the internet by turning off wifi, and call your bank at the number on your card.'
+      { do: 'Do not open the file or tap the link. Delete the message.', why: 'Nothing happens until you open it.' },
+      { do: 'If it might be real, use {t:check}: ask the sender yourself, through {t:already}.', why: 'Never use the phone number or link in the message itself.' },
+      { do: 'If you already opened it, turn off wifi and call your bank at the number on your card.', why: 'That cuts the device off while you work out what was taken.' }
     ] },
 
   { id: 'check-malware', kind: 'check', after: 'malware',
@@ -28,13 +29,13 @@ FC.cards('scams', 'u2', [
     ask: { type: 'option', step: 'I1', among: ['own', 'file'] } },
 
   { id: 'look-malware-realinstall', kind: 'lookalike', ledger: 'malware~realinstall',
-    link: 'In both, a program ends up on the device, and the same box appears on the computer.',
+    link: 'In both, a program ends up on the device, and the same box appears.',
     cases: ['dv-lk-photo-own', 'dv-lk-photo-mail'],
-    instruction: 'Both cases are about Lena and the same photo editor, and both end in the same box. Compare one thing: how the installer reached her.',
+    instruction: 'Both stories are about Lena and the same photo editor, and both end in the same box. Compare one thing: how the installer reached her.',
     prompt: { kind: 'which', option: 'I1.file', answer: 'dv-lk-photo-mail' },
     difference: [
-      'In Case A Lena typed the maker’s address herself, to get the newest version. Nobody had contacted her. The answer is {a:I1.own}, and the case is {o:realinstall}.',
-      'In Case B an email from an address she does not know says that her license needs updating, with an installer attached. The installer came to her. The answer is {a:I1.file}, and the case is {o:malware}.',
+      'In Story A Lena typed the maker’s address herself, to get the newest version. Nobody had contacted her. That is {a:I1.own}, so it is {o:realinstall}.',
+      'In Story B an email from an address she does not know says her license needs updating, with an installer attached. The installer came to her. That is {a:I1.file}, so it is {o:malware}.',
       'Same program, same company, same box. The only difference is who started it, and Lena can see that before she presses anything.'
     ] }
 ]);

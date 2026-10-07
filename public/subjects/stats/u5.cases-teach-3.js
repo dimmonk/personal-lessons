@@ -1,4 +1,4 @@
-// Statistical Claims, Unit Five: cases shown inside cards, part three: Simpson's paradox, its look-alike beside a claim that holds, and the worked claim.
+// Statistical Claims, Unit Five: stories shown inside cards, part three: Simpson's paradox, its look-alike beside a claim that holds, and the worked claim.
 
 FC.cases('stats', 'u5', [
 
@@ -12,7 +12,7 @@ FC.cases('stats', 'u5', [
     text: "A phone-repair ad says: 'Fixed first time: 78 of 100 phones at Quickfix, 59 of 100 at Phone Doctor. Choose Quickfix.' Phone Doctor takes mostly water-damaged phones, which are hard to fix. Quickfix takes mostly cracked screens, which are easy.",
     outcome: 'simpson', route: { S1: ['compare'], C1: ['split'] },
     cues: { C1: 'Phone Doctor takes mostly water-damaged phones, which are hard to fix' },
-    reason: { C1: 'The ad sets two totals side by side, and the case says that each shop gets a different mix: {cue:C1}. Break each total down by kind of phone. Cracked screens: Phone Doctor fixed 19 of 20 (95 in every 100), and Quickfix 72 of 80 (90 in every 100). Water damage: Phone Doctor fixed 40 of 80 (50 in every 100), and Quickfix 6 of 20 (30 in every 100). Phone Doctor is better with both kinds of phone and still has the lower total, because most of its phones were the hard kind.' } },
+    reason: { C1: 'The two shops get different mixes: {cue:C1}. Phone Doctor does better with both kinds (95 against 90 in 100 on cracked screens, 50 against 30 on water damage) and still has the lower total.' } },
 
   /* ---------- Simpson's paradox, beside A fair comparison: the same two coaches ---------- */
   { id: 'la6-coach-mix', use: 'teach', tier: 'varied', setting: 'leisure', topic: 'two swim coaches, the mix hidden', name: 'The two coaches',

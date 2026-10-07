@@ -1,4 +1,4 @@
-// Basic Math, Unit Six: stories shown inside cards, part one (the first two kinds: Pythagoras and Trigonometry).
+// Basic Math, Unit Six: problems shown inside cards, part one (the first two types: two sides of a right triangle, and one side and an angle).
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
 // route: { M1: [...], S1: [...], S2: [...] } gives the accepted answer to each question; cues are the exact words in the text that decide it;
 // segments are the tappable pieces for "tap the words" prompts, and note is shown if a piece is tapped in error.
@@ -19,10 +19,10 @@ FC.cases('math', 'u6', [
     cues: { M1: ['the distance across the display from one corner to the opposite corner', 'How long is that distance?'], S1: 'whose rectangular display is 48 cm high and 64 cm wide', S2: 'How long is that distance?' },
     segments: [
       { text: 'A shop sells a television whose rectangular display is 48 cm high and 64 cm wide.' },
-      { text: 'The label gives the distance across the display from one corner to the opposite corner.', note: 'That says which distance is wanted. The lengths that are given come in the first sentence.' },
-      { text: 'How long is that distance?', note: 'That is the question. The lengths that are given come in the first sentence.' }
+      { text: 'The label gives the distance across the display from one corner to the opposite corner.', note: 'That says which distance is wanted. The two sides you know come in the first sentence.' },
+      { text: 'How long is that distance?', note: 'That is the question. The two sides you know come in the first sentence.' }
     ],
-    reason: { S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, 48 cm and 64 cm, and no angle in degrees besides the square corner. That is {a:S1.twosides}.' } },
+    reason: { S1: 'These give two sides of the triangle, 48 cm and 64 cm, and no angle.' } },
 
   /* ---------- The second kind: one side and one angle of a right-angled triangle ---------- */
   { id: 'm6-wd-skilift', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a ski lift', name: 'The ski lift', outcome: 'trig',
@@ -35,9 +35,9 @@ FC.cases('math', 'u6', [
     route: { M1: ['shape'], S1: ['sideangle'], S2: ['length'] },
     cues: { M1: ['slopes up at an angle of 4° above level', 'How high does she climb?'], S1: 'The road is 500 m long and slopes up at an angle of 4° above level', S2: 'How high does she climb?' },
     segments: [
-      { text: 'A cyclist rides up a straight hill road.', note: 'That says what is happening. The length and the angle that are given come in the next sentence.' },
+      { text: 'A cyclist rides up a straight hill road.', note: 'That says what is happening. The length and the angle come in the next sentence.' },
       { text: 'The road is 500 m long and slopes up at an angle of 4° above level.' },
-      { text: 'How high does she climb?', note: 'That is the question. The length and the angle that are given come in the sentence before it.' }
+      { text: 'How high does she climb?', note: 'That is the question. The length and the angle come in the sentence before it.' }
     ],
-    reason: { S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle}, the road, and one angle in degrees besides the square corner. That is {a:S1.sideangle}.' } }
+    reason: { S1: 'These give the length of the road and its angle in degrees.' } }
 ]);

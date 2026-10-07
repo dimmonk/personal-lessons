@@ -5,29 +5,29 @@
 
 FC.cards('civics', 'u2', [
 
-  /* ---------- group two: which of the three is law ---------- */
+  /* ---------- group two: which documents are law ---------- */
   { id: 'con-law', kind: 'concept',
-    h: 'Which of the three is law',
+    h: 'Which documents are law',
     link: 'Can a court make anyone obey it?',
     case: 'cn-claims',
     plain: [
-      'Some documents are law, which means that a court can order people to obey them. Others explain or argue, and a court cannot order anything on their strength. The woman at the meeting is right about the Declaration.',
-      'The Constitution is law. It is the supreme law of the land, which means that it outranks every other law. By “the Constitution” this unit means the original text of 1787 together with every amendment added to it since. An amendment is a change added to the Constitution.',
-      'The Declaration of Independence, mainly written by Thomas Jefferson, is not law. It says why the colonies were leaving Britain and sets up no government. A court cannot order anyone to give you “the pursuit of happiness” because of it.',
-      'The Federalist Papers are not law either. Alexander Hamilton, James Madison and John Jay wrote them as essays arguing that New York should approve the Constitution. A judge may quote one to understand what the founders had in mind, but it does not bind her.'
+      'The woman is right: the Declaration is not law. Law means a court can order people to obey it. Some documents only explain or argue, and a court cannot order anything because of them.',
+      'The Constitution is law, and it is the highest law: it outranks every other law. In this unit “the Constitution” means the original text of 1787 plus every amendment added since. An amendment is a change added to the Constitution.',
+      'The Declaration of Independence, mainly written by Thomas Jefferson, is not law. It explains why the colonies were leaving Britain and sets up no government. No court can order anyone to give you “the pursuit of happiness” because of it.',
+      'The Federalist Papers are not law either. Alexander Hamilton, James Madison and John Jay wrote them as essays urging New York to approve the Constitution. A judge may quote one to see what the founders had in mind, but does not have to follow it.'
     ] },
 
   { id: 'facts-law', kind: 'facts',
     h: 'Law, or not law',
-    link: 'Only a document a court can enforce is law.',
+    link: 'Law is what a court can make people obey.',
     concept: 'con-law',
     rows: [
-      { id: 'law-decl', q: 'Is the Declaration of Independence law?', a: 'Not law, because it says why the colonies were leaving Britain',
-        relates: 'It gives reasons for a break and sets up no government, so a court cannot order anyone to do anything on its strength.' },
-      { id: 'law-const', q: 'Is the Constitution law?', a: 'Law, because it is the supreme law of the land, and it outranks every other law',
-        relates: 'It is the original text of 1787 and every amendment added since. That includes the Bill of Rights, the first ten amendments, so the Bill of Rights is law too.' },
-      { id: 'law-fed', q: 'Are the Federalist Papers law?', a: 'Not law, because they are essays that argued for approving the Constitution',
-        relates: 'They explain the Constitution and are not part of it. A judge may read them and is not bound by them.' }
+      { id: 'law-decl', q: 'Is the Declaration of Independence law?', a: 'Not law: it explains why the colonies were leaving Britain',
+        relates: 'It gives reasons for leaving Britain and sets up no government, so no court can order anything because of it.' },
+      { id: 'law-const', q: 'Is the Constitution law?', a: 'Law: it is the supreme law of the land, above every other law',
+        relates: 'It is the 1787 text plus every amendment added since. That includes the Bill of Rights, so the Bill of Rights is law too.' },
+      { id: 'law-fed', q: 'Are the Federalist Papers law?', a: 'Not law: they are essays urging people to approve the Constitution',
+        relates: 'They explain the Constitution but are not part of it. A judge may read them and does not have to follow them.' }
     ] },
 
   { id: 'chk-law-decl', kind: 'check', after: 'facts-law', ask: { type: 'fact', row: 'law-decl' } },
@@ -36,13 +36,13 @@ FC.cards('civics', 'u2', [
 
   { id: 'look-law', kind: 'lookalike', ledger: 'law-decl~law-fed',
     h: 'Two documents that are not law',
-    link: 'Both are quoted as if the founders had settled something.',
+    link: 'Both get quoted as if the founders had settled the matter.',
     facts: ['law-decl', 'law-fed'],
-    instruction: 'Compare what each one was written to do: explain a break with Britain, or argue for approving the Constitution.',
+    instruction: 'Ask what each was written to do: explain a break with Britain, or argue for approving the Constitution.',
     prompt: { kind: 'which', answer: 'law-fed' },
     difference: [
-      'Fact A is the Declaration of Independence: {f:law-decl}. It looks back at a break that had happened and gives the reasons for it.',
-      'Fact B is the Federalist Papers: {f:law-fed}. They look forward to a plan of government that had been written but not yet approved, and argue that it should be.'
+      'Fact A is the Declaration of Independence: {f:law-decl}. It looks back at a break that had already happened and gives the reasons.',
+      'Fact B is the Federalist Papers: {f:law-fed}. They were written while the plan of government was still waiting for approval, and they argue that it should get it.'
     ] },
 
   /* ---------- group three: what the Declaration says ---------- */
@@ -51,8 +51,10 @@ FC.cards('civics', 'u2', [
     link: 'The Declaration is not law, but it is quoted constantly.',
     case: 'cn-consent',
     plain: [
-      'The voter is repeating two ideas from the Declaration. They are why it is still quoted, though it is not law. The first is that people have unalienable rights, which means rights that cannot be taken away. It names three of them: life, liberty and the pursuit of happiness. The second is that a government gets its power from the consent of the governed, which means from the people agreeing to be governed. That is why Americans vote: where power comes from the people’s agreement, the people get a say in who runs it.',
-      'The rest of the Declaration is a long list of complaints against the king of Britain, the reasons it gives for separating from him.'
+      'The voter is repeating the two ideas from the Declaration that people still quote, even though it is not law.',
+      'The first is that people have unalienable rights, which means rights that cannot be taken away. It names three: life, liberty and the pursuit of happiness.',
+      'The second is that a government gets its power from the consent of the governed, which means from the people agreeing to be governed. That is why Americans vote: when power comes from the people’s agreement, the people get a say in who runs the government.',
+      'The rest of the Declaration is a long list of complaints against the king of Britain: the reasons it gives for leaving him.'
     ] },
 
   { id: 'facts-decl', kind: 'facts',
@@ -62,8 +64,8 @@ FC.cards('civics', 'u2', [
     rows: [
       { id: 'decl-rights', q: 'Which rights does the Declaration say cannot be taken away?', a: 'Among them, life, liberty and the pursuit of happiness',
         relates: 'The Declaration’s word for rights that cannot be taken away is “unalienable”. It states the idea. It is not a law that gives you any of them.' },
-      { id: 'decl-consent', q: 'Where does the Declaration say that a government gets its power?', a: 'From the consent of the governed, which means from the people agreeing to be governed',
-        relates: 'A government whose power comes from the people’s agreement is one in which the people have a say in who runs it.' }
+      { id: 'decl-consent', q: 'Where does the Declaration say that a government gets its power?', a: 'From the consent of the governed: the people agreeing to be governed',
+        relates: 'Power that comes from the people’s agreement means the people get a say in who runs the government.' }
     ] },
 
   { id: 'chk-decl-rights', kind: 'check', after: 'facts-decl', ask: { type: 'fact', row: 'decl-rights' } },

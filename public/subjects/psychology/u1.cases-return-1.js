@@ -16,21 +16,21 @@ FC.cases('psychology', 'u1', [
     text: "Each time Noelle books a weekend trip with her sister, her husband tells her that the children cry for her the whole time, and that a good mother would not need to get away. She has canceled the last two trips.",
     route: { D1: ['tactic'] },
     cues: { D1: 'her husband tells her that the children cry for her the whole time, and that a good mother would not need to get away' },
-    reason: { D1: 'One person is saying something to another, about her: {cue:D1}. The case shows where it leaves Noelle: two canceled trips.' },
-    not: { outcome: 'pattern', why: 'It happens each time, but always between the same two people. The case shows no other place and no other relationship of his.' } },
+    reason: { D1: 'One person is saying something to another, about her: {cue:D1}. The story shows where it leaves Noelle: two canceled trips.' },
+    not: { outcome: 'pattern', why: 'It happens each time, but always between the same two people. The story shows no other place and no other relationship of his.' } },
 
   { id: 'g-ret-coach', use: 'return', tier: 'clean', setting: 'leisure', topic: 'a coach of forty years',
     text: "Players he coached in the 1980s, players he coaches now, and the parents of both say the same about Mr. Lindqvist: he has never raised his voice, and nobody has ever left one of his sessions without one thing to practice. His own grown-up children say he was the same at home.",
     route: { D1: ['pattern'] },
     cues: { D1: ['Players he coached in the 1980s, players he coaches now, and the parents of both say the same', 'His own grown-up children say he was the same at home'] },
-    reason: { D1: 'The case is a long view of one man: {cue:D1}. Forty years, a club and a home, and players, parents and children all saying the same.' },
-    not: { outcome: 'none', why: 'One patient training session would be a moment. The case shows the same thing through forty years, in two places, from everyone who has known him.' },
-    wouldChange: 'If the case told you only about last Saturday’s session, it would be {a:D1.none}.' },
+    reason: { D1: 'The story is a long view of one man: {cue:D1}. Forty years, a club and a home, and players, parents and children all saying the same.' },
+    not: { outcome: 'none', why: 'One patient training session would be a moment. The story shows the same thing through forty years, in two places, from everyone who has known him.' },
+    wouldChange: 'If the story told you only about last Saturday’s session, it would be {a:D1.none}.' },
 
   { id: 'g-ret-puppy', use: 'return', tier: 'clean', setting: 'home', topic: 'the week a puppy arrived',
     text: "The week the puppy arrived, nobody in the Brennan house slept, and Mr. Brennan, who is usually the calm one, shouted at the television, the toaster and a parking meter. Two weeks later the puppy was sleeping through the night, and so was he.",
     route: { D1: ['none'] },
     cues: { D1: 'The week the puppy arrived' },
-    reason: { D1: 'The case is one short stretch, with something real behind it: {cue:D1}. Two weeks later it has passed, and the case even tells you he is usually the calm one.' },
-    not: { outcome: 'pattern', why: 'One week is not years, and the case says outright that this is not how he usually is.' } }
+    reason: { D1: 'The story is one short stretch, with something real behind it: {cue:D1}. Two weeks later it has passed, and the story even tells you he is usually the calm one.' },
+    not: { outcome: 'pattern', why: 'One week is not years, and the story says outright that this is not how he usually is.' } }
 ]);

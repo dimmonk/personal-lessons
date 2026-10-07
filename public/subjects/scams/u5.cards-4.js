@@ -1,5 +1,5 @@
 // Scams, Unit Five, part two: the two questions of the branch, each followed by a check on all its answers.
-// The app prints, on a question card: the question, what it is for, each answer with when it is given, why it decides,
+// The app prints, on a question card: the question, each answer with when it is given, why it decides,
 // and for every pair already compared the question that separates it. Field guide: see u5.cards-1.js.
 
 FC.cards('scams', 'u5', [
@@ -7,13 +7,14 @@ FC.cards('scams', 'u5', [
   /* ---------- The first question of the branch ---------- */
   { id: 'q-f1', kind: 'question', step: 'F1',
     h: 'The question about what they want to know',
-    link: 'You have seen this question at the foot of the cards for the new names. This card puts it in one place with both its answers.',
+    link: 'You have seen this question at the foot of the cards. Here it is in one place.',
     decides: [
-      'It separates {o:realdetails} from {o:friendlychat}. The receptionist at a clinic asks for your date of birth and your address, because that is what setting up a record needs. A stranger asks what you do for work and whether you live alone, because that is what getting to know you needs, and nothing you began needs it. Both ask you about yourself. What they want to know about is not the same thing.'
+      'It tells {o:realdetails} from {o:friendlychat}. A clinic receptionist asks for your date of birth and address, because setting up your record needs them. A stranger asks what you do and whether you live alone, because getting to know you needs that, and nothing you started needs it. Both ask about you, but they want to know different things.'
     ],
     how: [
-      'Read what you are asked about. Is it a document, a photo of one, an ID, tax or card number, your date of birth or your address? That is {a:F1.identify}. Is it the sort of thing a friend asks, such as what you do for a living, who you live with or what you plan to do, asked by someone you know only through messages, with nothing like a paper or a number asked for yet? That is {a:F1.life}.',
-      'If a case has both, the papers decide. A chat that has reached a request for a passport is {a:F1.identify}, however long the chat has gone on and however friendly it is.'
+      { do: 'Check whether they ask for papers or numbers: a passport, an ID or card number, your date of birth, your address.', why: 'That is {a:F1.identify}.' },
+      { do: 'Check whether they ask about your life: what you do for work, who you live with, what you plan to do. This is a stranger you know only through messages.', why: 'That is {a:F1.life}.' },
+      { do: 'If they ask for both, the papers decide.', why: 'A chat that reaches a request for a passport is {a:F1.identify}, however friendly it has been.' }
     ] },
 
   { id: 'check-f1', kind: 'check', after: 'F1',
@@ -23,17 +24,18 @@ FC.cards('scams', 'u5', [
   /* ---------- The second question of the branch ---------- */
   { id: 'q-f2', kind: 'question', step: 'F2',
     h: 'The question about whether it fits',
-    link: 'This question separated the first two names, and every case since has been answered by it as well.',
+    link: 'You have used this question since the first card. Here it is in one place.',
     decides: [
-      'Two things differ between a real request and its copy, and you can see both in the request: whether you began it, through {t:already}, and whether what is asked is what the job needs. If both are so, the facts are going where you meant to send them. If either is not, they are not, however convincing the rest of the request sounds.',
-      'It is the same question that is asked of a sign-in page: {q:A2}. Here it separates a real request for facts from its copies.'
+      'Two things tell a real request from its copy, and you can see both in the request itself: whether you started it, and whether what they ask for is what the job needs. If either is no, the facts are not going where you meant to send them, however convincing it sounds.',
+      'It is the same question you ask of a sign-in page: {q:A2}'
     ],
     how: [
-      'Ask two things, in this order. First: did I begin this? You began it if you called the number on your card or your bill, typed an address in yourself, opened an app you had installed, applied or ordered or booked, or walked into their office. You did not begin it if a call, a text, an email or a stranger reached you first. A number, a link or an app that came with a message is never one you already had, even if you are the one who dials it or taps it.',
-      'Second, even if I began it: does what they ask for match what I came to do? A new account needs proof of who you are. An offer of work needs proof that you may work. A room held until a showing needs a name and a way to reach you. If the list goes further than the job, the answer is no.',
-      'Both can be answered from the request itself, before you give anything. Whether the other side is honest cannot be told from the request: only {t:check} settles that.'
+      { do: 'Ask first: did I start this? You did if you called the number on your card or bill, typed an address in yourself, or walked into their office.', why: 'If a call, text, email or stranger reached you first, you did not.' },
+      { do: 'Check where the number, link or app came from.', why: 'One that came with a message is never one you already had, even if you are the one who dials or taps it.' },
+      { do: 'Then ask: does what they ask for match what I came to do? A new account needs proof of who you are. A room held until a showing needs only a name and a way to reach you.', why: 'If the list goes further than the job, the answer is no.' },
+      { do: 'Answer from the request itself, before you give anything.', why: 'You cannot tell from the request whether they are honest: only {t:check} settles that.' }
     ],
-    whenBoth: 'You may have begun it, and it may still ask for far more than the job needs: the answer is no, because both halves must be met. Or it may have reached you and sound exactly right, like the call that used Gabriela’s name: the answer is no too.' },
+    whenBoth: 'You may have started it and still be asked for far more than the job needs: the answer is no, because both must be true. Or it may have reached you and sound exactly right, like the bank call that used Gabriela’s name: the answer is no too.' },
 
   { id: 'check-f2', kind: 'check', after: 'F2',
     case: 'u5-qf2',

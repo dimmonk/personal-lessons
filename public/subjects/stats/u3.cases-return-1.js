@@ -11,15 +11,15 @@ FC.cases('stats', 'u3', [
     outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
     cues: { S1: ['the average for the 75 members who are still on the program after five years', 'People on our program take just 2 sick days a year'], A1: 'the 75 members who are still on the program after five years' },
     reason: { S1: 'The ad speaks for people on the program, but the figure comes from the 75 who stayed: {cue:S1}. 525 of the 600 who joined are not in it.',
-              A1: 'The average is worked out after the fact from the ones still there: {cue:A1}. People who are often ill are the ones likeliest to have left.' },
-    not: { outcome: 'selfselect', why: 'Nobody is in the figure by choosing to answer. They are in because they lasted five years. The ones who are missing left.' } },
+              A1: 'The average is taken at the end from the ones still there: {cue:A1}. People who are often ill are the ones likeliest to have left.' },
+    not: { outcome: 'selfselect', why: 'Nobody is in the figure by choosing to answer. They are in because they lasted five years, and the ones who left are missing.' } },
 
   { id: 'cr-sv-4', use: 'return', tier: 'varied', setting: 'home', topic: 'a phone company and customers of five years',
     text: "A phone company says: 'Our customers are happy: 96 in every 100 of those who have been with us for five years rate us excellent.' The company signed up 40,000 people five years ago. The ratings come from the 10,000 who are still customers, and the 30,000 who left were not asked.",
     outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
     cues: { S1: ['The ratings come from the 10,000 who are still customers', 'Our customers are happy'], A1: ['The ratings come from the 10,000 who are still customers', 'the 30,000 who left were not asked'] },
     reason: { S1: 'The company speaks for its customers, but the figure comes from the ones who stayed: {cue:S1}. 30,000 of the 40,000 who signed up are not in it.',
-              A1: 'The ratings are worked out after the fact from the ones still there: {cue:A1}. A customer who was unhappy is the likeliest to have left.' },
+              A1: 'The ratings are taken at the end from the ones still there: {cue:A1}. A customer who was unhappy is the likeliest to have left.' },
     not: { outcome: 'nonresp', why: 'Nobody who was asked failed to reply. The list that was asked is only the customers still there, and the ones who left were never on it.' } },
 
   /* ---------- Self-selection bias ---------- */

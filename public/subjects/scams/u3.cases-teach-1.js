@@ -17,12 +17,12 @@ FC.cases('scams', 'u3', [
             A1: 'Run Club would like to see your calendar, so that it can show your training days',
             A2: "She searches her phone's app store for the club's app and opens it" },
     segments: [
-      { text: 'Zainab joins a running club', note: 'This is the story. It does not say how she came to the app.' },
+      { text: 'Zainab joins a running club', note: 'This is the setup. It does not say how she found the app.' },
       { text: "She searches her phone's app store for the club's app and opens it" },
-      { text: "A permission screen says: 'Run Club would like to see your calendar, so that it can show your training days.'", note: 'This is what the app asks for, and it suits a running club. It does not say who started things: that is in the sentence before.' },
-      { text: 'She presses Allow', note: 'This is what she does when the {t:permission} appears. The words that show she started it come before.' }
+      { text: "A permission screen says: 'Run Club would like to see your calendar, so that it can show your training days.'", note: 'This is what the app asks for, and a running club needs it. It does not say who started this.' },
+      { text: 'She presses Allow', note: 'This is what she does last. How she got there comes earlier.' }
     ],
-    reason: { A2: "Zainab went looking for the app herself, in the app store that was on her phone: {cue:A2}. Nothing came to her. And the {t:permission} asks only to see her calendar, which is all a running club's app needs." } },
+    reason: { A2: "Zainab went looking for the app herself: {cue:A2}." } },
 
   { id: 'ac-mail-own', use: 'teach', tier: 'clean', setting: 'home', topic: 'a full mailbox, opened in the app', name: 'The full mailbox, in the app',
     text: "Dev opens the mail app he has used for years. A banner at the top says his mailbox is almost full. He taps 'Manage storage', and the app asks him to sign in again with his email address and password. He types them in.",
@@ -44,7 +44,7 @@ FC.cases('scams', 'u3', [
     text: "Greta wants to look at her retirement plan. She types the address printed on her yearly statement into her computer. The page asks for her username and password, and she types them in.",
     outcome: 'realsignin', route: { D1: ['access'], A1: ['password'], A2: ['fits'] },
     cues: { D1: 'The page asks for her username and password', A1: 'her username and password', A2: 'She types the address printed on her yearly statement into her computer' },
-    reason: { A2: 'Greta decided to look at her retirement plan and used an address she already had: {cue:A2}. Nothing was sent to her, and the page asks only for what signing in needs.' } },
+    reason: { A2: 'Greta set out to look at her plan and used an address she already had: {cue:A2}. Nothing was sent to her, and the page asks only for a sign-in.' } },
 
   { id: 'ac-locked', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a locked streaming service', name: 'The locked streaming account',
     text: "Sunita gets an email that says it is from her streaming service: 'Your account has been locked after a sign-in from another country. Tap here to unlock it.' The button opens a page with the service's logo. It asks her to type her email address and password.",
@@ -58,12 +58,12 @@ FC.cases('scams', 'u3', [
     cues: { D1: "It asks for the user ID and password of Mia's online tax account", A1: "It asks for the user ID and password of Mia's online tax account",
             A2: 'A text says it is from the IRS' },
     segments: [
-      { text: 'A text says it is from the IRS', note: 'This says who the text claims to be from. A copy can claim that too, and it is not what the page asks for.' },
-      { text: 'You are owed a refund of $312', note: 'This is the lure, the reason to act. It is not what Mia is asked to type.' },
-      { text: "The link opens a page with the IRS seal", note: 'This is how the page looks. A look can be copied.' },
+      { text: 'A text says it is from the IRS', note: 'This only says who the text claims to be. A copy can claim that too.' },
+      { text: 'You are owed a refund of $312', note: 'This is the bait. It is not what Mia is asked to type.' },
+      { text: "The link opens a page with the IRS seal", note: 'This is how the page looks, and a look can be copied.' },
       { text: "It asks for the user ID and password of Mia's online tax account" }
     ],
-    reason: { A1: "The page asks Mia to type a user ID and a password: {cue:A1}. That is a password, whatever the page looks like and whatever the refund story says." } },
+    reason: { A1: "The page asks Mia to type a password: {cue:A1}." } },
 
   { id: 'ac-mail-text', use: 'teach', tier: 'clean', setting: 'home', topic: 'a full mailbox, reached by a text', name: 'The full mailbox, by text',
     text: "Dev gets a text from a number he does not know: 'Your mailbox is almost full. Sign in now to upgrade, or your emails will be deleted.' The link opens a page with his email provider's logo. It asks for his email address and password.",
@@ -77,9 +77,9 @@ FC.cases('scams', 'u3', [
     cues: { D1: 'The link opens a page that asks for his password', A1: 'The link opens a page that asks for his password',
             A2: 'Gil gets an email that says it is from an online store' },
     segments: [
-      { text: 'Gil gets an email that says it is from an online store', note: 'This says who the email claims to be from, and it came to him. It does not say what he is asked to type first.' },
-      { text: "Your order is on hold. Sign in to release it", note: 'This is the reason given. What the page then asks for is in the next sentence.' },
+      { text: 'Gil gets an email that says it is from an online store', note: 'This only says who the email claims to be. What the page asks for comes later.' },
+      { text: "Your order is on hold. Sign in to release it", note: 'This is the bait. What the page asks for is in the next sentence.' },
       { text: 'The link opens a page that asks for his password' },
-      { text: "When he types it, a second window says: 'We have sent a six-digit code to your phone. Type it here to finish signing in.'", note: 'This is the code, and it is the part that makes the case look like the code scam. But it comes second, after the page has begun by asking for the password.' }
+      { text: "When he types it, a second window says: 'We have sent a six-digit code to your phone. Type it here to finish signing in.'", note: 'This code makes the story look like a code scam. But it comes second, after the page has already asked for his password.' }
     ] }
 ]);

@@ -32,7 +32,7 @@ FC.cases('civics', 'u6', [
     outcome: 'preempted', route: { D1: ['states'], S1: ['own'], S2: ['onlyrule'] },
     cues: { S1: 'The Tolland legislature passed a law with a stricter standard', S2: 'A federal law sets one safety standard for every crib sold in the country, and says that no state may set a different one' },
     segments: [
-      { text: 'The state of Tolland takes baby safety seriously, and its lawmakers want the cribs sold in Tolland shops to be as safe as possible', note: 'That is why the state acted, and it makes the rule sound like the state’s own business. It says nothing about any federal law.' },
+      { text: 'The state of Tolland takes baby safety seriously, and its lawmakers want the cribs sold in Tolland shops to be as safe as possible', note: 'That is why the state acted. It says nothing about a federal law.' },
       { text: 'A federal law sets one safety standard for every crib sold in the country, and says that no state may set a different one' },
       { text: 'The Tolland legislature passed a law with a stricter standard for cribs sold in Tolland shops', note: 'That is the state’s rule. The words asked for are about the federal law it runs into.' }] },
 
@@ -41,7 +41,7 @@ FC.cases('civics', 'u6', [
     outcome: 'protected', route: { D1: ['states'], S1: ['local'], S2: ['right'] },
     cues: { S1: 'the Kellmouth city council passed a rule', S2: 'newsstands may not sell the magazine that makes fun of the mayor' },
     segments: [
-      { text: 'newsstands stand on city sidewalks, and the city council decides who may set up there', note: 'That makes the matter sound like a local one, and it is why the case looks like a city’s own business. It does not show what the rule takes away.' },
+      { text: 'newsstands stand on city sidewalks, and the city council decides who may set up there', note: 'That makes it sound like a local matter. It does not show what the rule takes away.' },
       { text: 'the Kellmouth city council passed a rule', note: 'That shows who made the rule. It does not show what the rule takes away.' },
       { text: 'newsstands may not sell the magazine that makes fun of the mayor' }] },
 

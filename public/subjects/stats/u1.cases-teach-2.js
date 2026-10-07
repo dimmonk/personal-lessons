@@ -14,12 +14,12 @@ FC.cases('stats', 'u1', [
     route: { S1: ['compare'] },
     cues: { S1: 'Mr. Cho takes students who have already failed twice' },
     segments: [
-      { text: "A tutoring agency's website compares two tutors: 90 of Ms. Lee's 100 students passed the exam, and 80 of Mr. Cho's 100.", note: 'Those are the totals, and they are given in full. What you are asked for is what they leave out.' },
-      { text: "It says: 'Ms. Lee is the better tutor.'", note: 'That is the claim. What is wrong with it is what the totals leave out, which comes next.' },
+      { text: "A tutoring agency's website compares two tutors: 90 of Ms. Lee's 100 students passed the exam, and 80 of Mr. Cho's 100.", note: 'Those are the totals, and they are given in full. You are asked what they leave out.' },
+      { text: "It says: 'Ms. Lee is the better tutor.'", note: 'That is the claim. What is wrong with it is what the totals leave out.' },
       { text: 'It does not mention that Mr. Cho takes students who have already failed twice.' }
     ],
-    reason: { S1: 'The two totals are set side by side as if the tutors had the same kind of student, and the case shows they did not: {cue:S1}. Mr. Cho is given the hardest students, so his total can be lower with the better teaching. The claim leaves out what each total is made of.' },
-    not: { outcome: 'cause', why: 'The claim ranks the tutors. It does not say that one thing caused another, and the trouble is earlier: the two totals hide a different mix of students.' } },
+    reason: { S1: 'The totals treat the tutors as if they had the same students, but Mr. Cho takes the hardest ones: {cue:S1}.' },
+    not: { outcome: 'cause', why: 'The claim ranks the tutors without saying one thing caused another. The trouble is earlier: the totals hide a different mix of students.' } },
 
   /* ---------- What the claim says caused what ---------- */
   { id: 'gate-music', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a music class and math scores', name: 'The music class',
@@ -31,9 +31,9 @@ FC.cases('stats', 'u1', [
     text: "The city of Dunmore painted a bike lane on Pine Street. In the year after, bike accidents on Pine Street fell from 90 to 60. The mayor says: 'The new bike lane cut accidents by a third.' The year before the lane was the worst year for accidents on Pine Street on record.",
     route: { S1: ['cause'] },
     cues: { S1: 'The new bike lane cut accidents by a third' },
-    reason: { S1: 'The figures are given in full and counted the same way in both years, so the first three parts hold. Then the mayor says this: {cue:S1}. That is a claim of cause, and the case shows another way to explain the same result: the year before was the worst on record, so accidents could have fallen from there with or without a lane.' },
-    not: { outcome: 'compare', why: 'The numbers are given, 90 and 60, and both years are counted the same way, so nothing the claim needs beside the figure is left out. The trouble is the step the mayor takes from the fall to its cause.' },
-    miss: { compare: 'The figures are given in full, so the claim leaves nothing out of the comparison of one year with the other. The trouble comes one part later: the mayor says the lane made the difference, and the case shows another way to explain the fall.' } },
+    reason: { S1: 'The mayor says this: {cue:S1}. But the year before was the worst on record, so accidents could have fallen with or without a lane.' },
+    not: { outcome: 'compare', why: 'The numbers, 90 and 60, are given and counted the same way both years. The trouble is the step from the fall to its cause.' },
+    miss: { compare: 'Nothing is left out: both years are given in full. The trouble is one part later, in the mayor saying the lane made the difference.' } },
 
   /* ---------- The look-alike pair: same mentoring program, a percentage or a cause ---------- */
   { id: 'gate-mentor-percent', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a mentoring program and a percentage',

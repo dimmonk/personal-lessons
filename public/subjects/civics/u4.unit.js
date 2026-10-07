@@ -6,12 +6,12 @@
 
 FC.unit('civics', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
   title: { fromKey: 'D1.president' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Six things the President or a federal office can do, and how to tell which one you are looking at',
+  subtitle: 'When the news says the President or a federal office did something, work out which of six things it was',
   teaches: { steps: ['E1'], outcomes: ['execute', 'beyondpres', 'commander', 'diplomacy', 'veto', 'pardon'], terms: ['order'] },
   assumes: ['u1', 'u2', 'u3'],   // everything these units teach may be used; the first card restates the part this unit leans on
 
@@ -23,44 +23,44 @@ FC.unit('civics', 'u4', {
     { id: 'execute~beyondpres', pair: ['execute', 'beyondpres'], step: 'E1',
       shared: 'Both can be a rule or an order from a federal office or the President, and both can have a law somewhere in the story.',
       rule: 'In {o:execute} a law Congress passed stands behind what is done, and the office stays inside it. In {o:beyondpres} no law Congress passed allows what is demanded of people outside the government, so the order or the rule goes past what the President can do alone.',
-      test: 'Can you name a law Congress passed that allows what the rule or the order demands, and does the rule or order stay inside it?' },
+      test: 'Can you name a law Congress passed that allows what the rule or order demands, and does it stay inside that law?' },
     { id: 'commander~diplomacy', pair: ['commander', 'diplomacy'], step: 'E1',
       shared: 'Both are things the President does for the whole country, and both can involve ships, soldiers or another country’s leader.',
       rule: 'In {o:commander} the President gives the forces their orders, and they obey. In {o:diplomacy} the President, or someone speaking for the President, meets, negotiates or signs with another country’s government.',
-      test: 'Who is on the other side of what the President does: the armed forces, who are told where to go or what to do, or the leaders and officials of another country, who are met and negotiated with?' },
+      test: 'Who is on the other side: the armed forces, who are told what to do, or another country’s leaders, who are met and bargained with?' },
     { id: 'veto~pardon', pair: ['veto', 'pardon'], step: 'E1', taughtIn: 'q-pres',
-      shared: 'Both are things only the President can do, done by signing or not signing a paper, and both stop something that others set going: a bill Congress passed, or a punishment.',
+      shared: 'Both are things only the President can do, by signing or not signing a paper, and both stop something others set going: a bill Congress passed, or a punishment.',
       rule: 'In {o:veto} the President acts on a bill that Congress has passed, and refuses to sign it. In {o:pardon} the President acts on a person who broke a federal law, and forgives the crime.',
-      test: 'What is the President acting on: a bill that Congress passed, or a person who broke a federal law?' },
+      test: 'What is the President acting on: a bill Congress passed, or a person who broke a federal law?' },
     { id: 'veto~execute', pair: ['veto', 'execute'], step: 'E1', taughtIn: 'q-pres',
       shared: 'In both a law, or a bill that would become one, is in the story, and the President or an office is acting on it.',
-      rule: 'In {o:veto} the President is deciding whether a bill Congress passed will go any further, and refuses it. In {o:execute} the law is already in force, and an office is putting it into daily practice.',
-      test: 'Is the President deciding whether the bill will take effect, or is an office already putting a law into practice?' },
+      rule: 'In {o:veto} the President decides whether a bill Congress passed goes any further, and refuses it. In {o:execute} the law is already in force, and an office is putting it into daily practice.',
+      test: 'Is the President deciding whether a bill takes effect, or is an office already putting a law into practice?' },
     { id: 'diplomacy~execute', pair: ['diplomacy', 'execute'], step: 'E1', taughtIn: 'q-pres',
       shared: 'Both are done by federal officials, and both can involve people who come from another country.',
       rule: 'In {o:diplomacy} the official sits across the table from another country’s government, as one country with another. In {o:execute} the official makes a law Congress passed work for people, even when the people come from another country.',
-      test: 'Is the official dealing with another country’s government, or dealing with people under a law Congress passed?' },
+      test: 'Is the official dealing with another country’s government, or with people under a law Congress passed?' },
     { id: 'enumerated~execute', pair: ['enumerated', 'execute'], step: 'D1', taughtIn: 'q-pres',
       shared: 'Both are about one law: Congress passes it, and then an office puts it into practice.',
-      rule: 'In {o:enumerated} the case ends on the lawmakers’ vote that passes a law. In {o:execute} the law is already passed, and the case ends on what an office does with it.',
-      test: 'Does the case end on the vote that passed the law, or on what an office does with a law that is already passed?' },
+      rule: 'In {o:enumerated} the story ends on the lawmakers’ vote that passes a law. In {o:execute} the law is already passed, and the story ends on what an office does with it.',
+      test: 'Does the story end on the vote that passed the law, or on what an office does with a law that is already passed?' },
     { id: 'confirm~diplomacy', pair: ['confirm', 'diplomacy'], step: 'D1', taughtIn: 'q-pres',
       shared: 'Both are about an agreement with another country, or about a person who will deal with other countries: the President acts, and the Senate votes.',
-      rule: 'In {o:diplomacy} the case ends on the President’s side: someone meets, negotiates or signs. In {o:confirm} the case ends on the senators voting, or being asked to vote, on what the President put forward.',
-      test: 'Does the case end on the President’s side, meeting, negotiating and signing, or on senators voting, or being asked to vote, on what the President put forward?' },
+      rule: 'In {o:diplomacy} the story ends on the President’s side: someone meets, negotiates or signs. In {o:confirm} the story ends on the senators voting, or being asked to vote, on what the President put forward.',
+      test: 'Does the story end on the President’s side, meeting, negotiating and signing, or on senators voting, or being asked to vote, on what the President put forward?' },
     { id: 'beyondcong~beyondpres', pair: ['beyondcong', 'beyondpres'], step: 'D1',
       shared: 'Both are a rule that the one who made it had no power to make, and a judge may be asked about either.',
       rule: 'In {o:beyondcong} lawmakers voted on a law about a matter the Constitution does not give Congress, or that takes away a right. In {o:beyondpres} the President or an office demanded something of people with no law Congress passed to allow it.',
-      test: 'Who made the rule: lawmakers who voted on a law, or the President or an office acting by an order or a rule?' }
+      test: 'Who made the rule: lawmakers who voted on a law, or the President or an office by an order or a rule?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The President in charge of the laws, and what it looks like when no law is behind a demand',
+    { id: 'p1', title: 'An office running a law, and an order with no law behind it',
       cards: ['orient-pres', 'meet-execute', 'check-execute', 'term-order', 'meet-beyondpres', 'check-beyondpres',
               'exc-order', 'look-execute-beyondpres', 'look-beyondcong-beyondpres'] },
-    { id: 'p2', title: 'The President’s own powers, and the question',
+    { id: 'p2', title: 'What only the President can do, and the question to ask',
       cards: ['meet-commander', 'check-commander', 'meet-diplomacy', 'check-diplomacy', 'look-commander-diplomacy',
               'meet-veto', 'check-veto', 'meet-pardon', 'check-pardon', 'q-pres', 'check-pres', 'worked-harbor'],
       drill: true, close: ['recap-pres'] }
@@ -71,7 +71,7 @@ FC.unit('civics', 'u4', {
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'e1',            // new in this rebuild: a unit of standard 1 has no old quick-drill counter to keep (E8)
-    add: 'Many of these cases name a law, an office and the President together, and the one named first is often not the one that decides. Read each case to its end, and look for what the President or the office does last.',
+    add: 'Many of these stories name a law, an office and the President together, and the one named first is often not the one that decides. Read to the end, and find what the President or the office does last.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'e-p-lab', step: 'E1' }, { case: 'e-p-parking', step: 'E1' }],
@@ -105,7 +105,8 @@ FC.unit('civics', 'u4', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the President or a federal agency. It replaces old Unit Three’s President part, the airline-rule worked case, old Unit Four’s card on the citizenship test, and old Unit Seven’s passport-fee worked case. Not yet deployed, so later edits stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

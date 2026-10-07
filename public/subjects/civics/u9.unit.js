@@ -9,12 +9,12 @@
 
 FC.unit('civics', 'u9', {
   kind: 'F',              // C classification, F facts, P procedure
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Nine',
-  title: { text: 'History to the end of Reconstruction' },
-  subtitle: 'The colonies and the founding, the growth of the country and the slavery question, the Civil War, and the years after it, to 1877',
+  title: { text: 'US history up to 1877' },
+  subtitle: 'Why people came, the break with Britain, slavery and the Civil War, and the three amendments after it',
   teaches: { steps: [], outcomes: [], terms: [] },   // a fact unit teaches no step, no name and no term (A12)
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'u7', 'u8'],
 
@@ -23,18 +23,18 @@ FC.unit('civics', 'u9', {
   // A quick lesson (section 19) keeps only the pairs that a beginner really confuses.
   ledger: [
     { id: 'yr-written~yr-effect', pair: ['yr-written', 'yr-effect'],
-      shared: 'Both are years in the life of the Constitution, and only two years apart.',
-      rule: 'One is the year the Constitution was written: {f:yr-written}. The other is the year it took effect and began to govern: {f:yr-effect}.',
-      test: 'Is it the year the plan was written, or the year it began to govern?' },
+      shared: 'Both are years in the life of the Constitution, and they are only two years apart.',
+      rule: 'One is the year the Constitution was written: {f:yr-written}. The other is the year it took effect and the government started to work: {f:yr-effect}.',
+      test: 'Was the plan written that year, or did the government start to work that year?' },
     { id: 'am-14~am-15', pair: ['am-14', 'am-15'],
-      shared: 'Both are about the rights of freed people after the war, and they came only two years apart.',
+      shared: 'Both are about the rights of freed people after the war, and they came two years apart.',
       rule: 'One is about who is a citizen: {f:am-14}. The other is about who may vote: {f:am-15}.',
       test: 'Is it about who counts as a citizen, or about who may vote?' }
   ],
 
   // Parts are stopping points (A13): the colonies and the founding, the growth and the war, and Reconstruction with the drill.
   parts: [
-    { id: 'p1', title: 'Why people came, the quarrel with Britain, and the founding',
+    { id: 'p1', title: 'Why people came, the break with Britain, and the founding',
       cards: ['orient-hist',
               'con-hist-came', 'facts-hist-came', 'chk-hist-came-faith', 'chk-hist-came-vote', 'chk-hist-came-living', 'chk-hist-came-flee',
               'con-hist-who', 'facts-hist-who', 'chk-hist-who-indent', 'chk-hist-who-enslaved', 'chk-hist-who-native',
@@ -44,7 +44,7 @@ FC.unit('civics', 'u9', {
       cards: ['con-hist-growth', 'facts-hist-growth', 'chk-hist-ctry-france', 'chk-hist-ctry-britain', 'chk-hist-ctry-mexico',
               'con-hist-slavery', 'facts-hist-slavery', 'chk-hist-slv-question', 'chk-hist-slv-time', 'chk-hist-slv-citizen',
               'con-hist-war', 'facts-hist-war', 'chk-hist-w-secession', 'chk-hist-w-cause', 'chk-hist-w-emancip', 'chk-hist-w-lincoln'] },
-    { id: 'p3', title: 'Reconstruction, then the drill',
+    { id: 'p3', title: 'After the war, then the drill',
       cards: ['con-hist-amend', 'facts-hist-amend', 'chk-hist-am-13', 'chk-hist-am-14', 'chk-hist-am-15', 'look-hist-amend',
               'con-hist-after', 'facts-hist-after', 'chk-hist-ry-end', 'chk-hist-aft-seg', 'chk-hist-aft-1960s'],
       drill: true, close: ['recap-hist'] }
@@ -74,7 +74,8 @@ FC.unit('civics', 'u9', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1, replacing the first three eras of old Unit Five (colonies and the founding, growth and the slavery question, the Civil War and Reconstruction), their worked example and the matching items of the old drill, with the old claims about states’ rights and birthright citizenship held as the right fact. Fifteen groups of facts under the idea each serves, sixty-two facts, twelve look-alike pairs. Each facts card holds answers of one kind (years, names, countries, numbers, reasons, short clauses) so that a choice cannot be guessed from its shape; the old question "Which era?" is gone, because a facts card cannot hold five rows with one answer. Every fact comes from the old material of standard0.js and nothing is added to it; the unit skips what that material does not state: the terms of the compromise of 1850, any battle or general, the causes of the war beyond what the seceding states wrote, and anything after 1877. Not yet deployed.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     keyChanges: [],
     wrongIdeas: [],       // old claims 11 (states’ rights) and 16 (birthright citizenship always the rule) are rows, not refute cards: a fact unit has none (A12, P29)

@@ -10,25 +10,25 @@ FC.cards('math', 'u5', [
     kind: 'solved',
     outcome: 'multprin',
     h: 'Worked: how many different sandwiches?',
-    link: 'Here is the procedure for the first kind with real numbers: a sandwich shop, and every step written out.',
+    link: 'The steps for this kind of problem, worked out on a sandwich shop.',
     problem: 'm5-s-mp-1',
     steps: [
       {
-        does: 'Name each choice that has to be made',
+        does: 'Name each choice',
         working: 'bread; filling; sauce',
-        why: 'Each choice is a separate decision that the customer makes, and each has a list of its own. Naming them first shows what has to be counted: three choices, a bread, a filling and a sauce. A sandwich is one result of all three at once.'
+        why: 'Each is a separate decision with a list of its own. A sandwich is one result of all three.'
       },
       {
         does: 'Count the full list for each choice',
         working: 'bread: 3; filling: 5; sauce: 2',
-        why: 'The count for a choice is how many different things it can be, whatever was picked for the other choices. The shop has 3 breads, 5 fillings and 2 sauces, and a customer who picks rye still has all 5 fillings and both sauces to choose from. That is what makes each list full.'
+        why: 'Picking rye still leaves all 5 fillings and both sauces, so each list stays full.'
       },
       {
         does: 'Multiply the counts',
         working: '3 × 5 × 2 = 30 (3 × 5 = 15, then 15 × 2 = 30). That is 30 sandwiches'
       }
     ],
-    result: 'The shop can make 30 different sandwiches, each made of one bread, one filling and one sauce.',
+    result: 'The shop can make 30 different sandwiches, each with one bread, one filling and one sauce.',
     hold: {
       step: 2,
       prompt: {
@@ -36,24 +36,24 @@ FC.cards('math', 'u5', [
         choices: [
           {
             id: 'x',
-            text: 'Every one of the 3 breads can go with every one of the 5 fillings, and every one of those pairs can go with each of the 2 sauces, so the counts multiply.'
+            text: 'Every bread goes with every filling, and each of those pairs goes with either sauce, so the counts multiply.'
           },
           {
             id: 'y',
-            text: '3 + 5 + 2 = 10 is the number of things on the shelf.',
-            note: 'That is true, but it counts single items, a bread or a filling or a sauce, and never a whole sandwich. It does not say why the counts are multiplied.'
+            text: 'There are 3 + 5 + 2 = 10 things on the shelf.',
+            note: 'True, but that counts single items, such as a bread, and never a whole sandwich. It does not say why to multiply.'
           },
           {
             id: 'z',
-            text: 'The shop has 3 breads.',
-            note: 'That is true, and it is one of the counts, but it does not say what to do with the counts.'
+            text: 'The shop has 3 breads, 5 fillings and 2 sauces.',
+            note: 'True, but those are only the counts. It does not say what to do with them.'
           }
         ],
         answer: 'x'
       },
       reason: [
-        'Take one bread, say rye. With rye you can have any of the 5 fillings, which gives 5 different sandwiches that start with rye. The next bread, white, also goes with all 5 fillings, which gives 5 more, and so does the third bread. So the breads and fillings together give 3 × 5 = 15 different pairs.',
-        'Each of those 15 pairs can then go with either sauce, which doubles the count: every pair appears once with the first sauce and once with the second. 15 × 2 = 30. Had you added instead, 3 + 5 + 2 = 10, you would have counted the single items on the shelf, and a sandwich such as rye, ham and mustard would not be in your count at all.'
+        'Take rye. It goes with any of the 5 fillings, so 5 sandwiches start with rye. White and the third bread do the same, so the breads and fillings make 3 × 5 = 15 pairs.',
+        'Each pair can have either sauce, so every pair appears twice: 15 × 2 = 30. Adding would count the 10 things on the shelf, and a sandwich such as rye, ham and mustard would never be in your count.'
       ]
     }
   },
@@ -63,13 +63,13 @@ FC.cards('math', 'u5', [
     kind: 'solved',
     outcome: 'perm',
     h: 'Worked: who can fill three jobs in a club?',
-    link: 'Here is the procedure for the second kind with real numbers: a hiking club, and every step written out.',
+    link: 'The steps for this kind of problem, worked out on a hiking club.',
     problem: 'm5-s-pe-1',
     steps: [
       {
         does: 'Count the group and the picks',
         working: 'Group: 12 members. Picks: 3 (chair, secretary, treasurer)',
-        why: 'The group is everyone who can be picked, 12 members, and the picks are the three jobs. The jobs differ from each other, so the order of the picks matters: chair Ana with secretary Ben is not the same as chair Ben with secretary Ana.'
+        why: 'The jobs are different, so the order matters: chair Ana with secretary Ben is not chair Ben with secretary Ana.'
       },
       {
         does: 'Write how many can be picked each time',
@@ -78,7 +78,7 @@ FC.cards('math', 'u5', [
       {
         does: 'Multiply them',
         working: '12 × 11 × 10 = 1,320. That is 1,320 ways to fill the jobs',
-        why: 'Each pick is a choice from a list of its own, one shorter than the one before, so the counts multiply, as they did in the first kind: for each of the 12 chairs there are 11 secretaries, and for each of those 132 pairs there are 10 treasurers. 12 × 11 = 132, and 132 × 10 = 1,320. Every order is counted separately, because chair Ana with secretary Ben is a different way to fill the jobs from chair Ben with secretary Ana.'
+        why: 'For each of the 12 chairs there are 11 secretaries, and for each of those 132 pairs there are 10 treasurers: 12 × 11 = 132, and 132 × 10 = 1,320. Every order counts on its own.'
       }
     ],
     result: 'The club can fill the three jobs in 1,320 different ways.',
@@ -89,24 +89,24 @@ FC.cards('math', 'u5', [
         choices: [
           {
             id: 'x',
-            text: 'Whoever is picked for one job is taken out of the group, because no member may hold two jobs, so each job is picked from a group one smaller than for the job before.'
+            text: 'No member may hold two jobs, so each job is picked from a group one smaller than the last.'
           },
           {
             id: 'y',
-            text: '12 members are in the club.',
-            note: 'That is true, and it is the count for the first job, but it does not say why the counts then fall to 11 and 10.'
+            text: 'The club has 12 members, so the first job has 12 people to pick from.',
+            note: 'True, but that only explains the first count. It does not say why the next counts are 11 and 10.'
           },
           {
             id: 'z',
-            text: 'There are three jobs to fill.',
-            note: 'That is true, and it is how many counts there are, but it does not say why they are different from one another.'
+            text: 'There are three jobs, so there are three counts to multiply.',
+            note: 'True, but that only says how many counts there are. It does not say why they get smaller.'
           }
         ],
         answer: 'x'
       },
       reason: [
-        'Start with the chair. Any of the 12 members can be chair, so there are 12 choices. Say Ana is chair. Now the secretary: Ana already has a job and may not have another, so the secretary comes from the other 11 members. Say Ben is secretary. For the treasurer, Ana and Ben are both taken, which leaves 10.',
-        'The counts do not fall because the problem is awkward. They fall because each pick uses up a member. That is the difference from the first kind, where each choice had a full list of its own. Here every pick comes out of the same group, so the list for the next pick is one shorter.'
+        'Any of the 12 members can be chair. Say Ana is chair. She already has a job, so the secretary comes from the other 11. Say Ben is secretary. Ana and Ben are both taken, which leaves 10 for treasurer.',
+        'The counts fall because each pick uses up a member. For separate choices, each list stayed full. Here every pick comes out of the same group, so each list is one shorter.'
       ]
     }
   },
@@ -116,23 +116,23 @@ FC.cards('math', 'u5', [
     kind: 'solved',
     outcome: 'comb',
     h: 'Worked: how many different quiz teams?',
-    link: 'Here is the procedure for the third kind with real numbers: a quiz night, and every step written out.',
+    link: 'The steps for this kind of problem, worked out on a quiz night.',
     problem: 'm5-s-co-1',
     steps: [
       {
         does: 'Count the group and the picks',
         working: 'Group: 9 people. Picked: 4',
-        why: 'The group is the 9 people who put their names forward, and 4 of them are picked. All four have the same part on the team, so the same four people in a different order are the same team.'
+        why: 'All four have the same part, so the same four people in another order are the same team.'
       },
       {
         does: 'Count the picks as if the order mattered',
         working: '9 × 8 × 7 × 6 = 3,024',
-        why: 'This is the count of the second kind: each pick uses up a person, so the counts fall, 9, 8, 7, 6, and they multiply. It is not the answer yet, because it counts a team once for every order its four people can be listed in. Ana, Ben, Cal, Dev and Dev, Cal, Ben, Ana are two entries in this count, but they are one team.'
+        why: 'Each pick uses up a person, so the counts fall and multiply. This is too big, because it counts a team once for every order its four people can be listed in.'
       },
       {
-        does: 'Count the orders one chosen group can be put in',
+        does: 'Count the orders one team can come in',
         working: '4 people can be put in order in 4 × 3 × 2 × 1 = 24 ways',
-        why: 'A group of 4 can be listed in order in 4 × 3 × 2 × 1 ways: any of the 4 first, then any of the 3 left, then either of the 2 left, then the last. That makes 24 different lists of the same four people.'
+        why: 'Any of the 4 can go first, then any of the 3 left, then either of the 2 left, then the last one. So the same four people make 24 different lists.'
       },
       {
         does: 'Divide the first count by the second',
@@ -147,24 +147,24 @@ FC.cards('math', 'u5', [
         choices: [
           {
             id: 'x',
-            text: 'Every team is in the count of 3,024 once for each of the 24 orders its four people can be put in, so dividing by 24 leaves each team once.'
+            text: 'Every team is in the 3,024 once for each of its 24 orders, so dividing by 24 counts each team once.'
           },
           {
             id: 'y',
-            text: '3,024 ÷ 24 = 126.',
-            note: 'That is true, and it is the working of the step, but it does not say why dividing by 24 is right.'
+            text: 'Dividing 3,024 by 24 gives 126, and 126 × 24 = 3,024.',
+            note: 'True, but that is only the sum. It does not say why 24 is the number to divide by.'
           },
           {
             id: 'z',
             text: 'A team of 4 can be put in order in 24 ways.',
-            note: 'That is true, and it is where the 24 comes from, but it does not say why the count is divided by it.'
+            note: 'True, and that is where the 24 comes from. It does not say why you divide by it.'
           }
         ],
         answer: 'x'
       },
       reason: [
-        'Think of the count of 3,024 as a long table with one row for every way of picking 4 people in order. Take any one team, Ana, Ben, Cal and Dev. Its 4 people can be put in order in 24 ways, so this team has 24 rows in the table, one for each order. Every other team has exactly 24 rows too.',
-        'So the table has 24 rows for every team, and 3,024 rows in all. The number of teams is the number of rows divided by 24: 3,024 ÷ 24 = 126. A check: 126 × 24 = 3,024.'
+        'Picture the 3,024 as a table with one row for every way of picking 4 people in order. Take one team: Ana, Ben, Cal and Dev. They can be put in order in 24 ways, so that team fills 24 rows. Every other team fills exactly 24 rows too.',
+        'So the table has 24 rows for each team and 3,024 rows in all. The number of teams is 3,024 ÷ 24 = 126. Check: 126 × 24 = 3,024.'
       ]
     }
   }

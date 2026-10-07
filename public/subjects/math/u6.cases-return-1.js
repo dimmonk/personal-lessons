@@ -18,26 +18,26 @@ FC.cases('math', 'u6', [
       S2: 'How tall is the mast?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give the lengths of two sides of a {t:righttriangle}, and no angle in degrees besides the square corner. That is {a:S1.twosides}.',
-      S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two sides of a {t:righttriangle}, and no angle besides the square corner.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'trig',
-      why: 'No angle in degrees is given besides the square corner, so there is nothing for the calculator’s angle buttons to work from. {o:trig} would be the name if the problem gave one side and an angle in degrees.'
+      why: 'No angle is given besides the square corner, so the angle buttons have nothing to work from. With one side and an angle in degrees, it would be {o:trig}.'
     },
     steps: [
       {
-        does: 'Find which side is the longest',
-        working: 'The longest side is the one opposite the square corner. Here it is the side you are given that is 26 m long. The side you want is one of the two shorter sides'
+        does: 'Find the longest side',
+        working: 'The wire is opposite the square corner, so the 26 m is the longest side. The side you want, the mast, is a shorter one'
       },
-      { does: 'Multiply each given side by itself', working: '26 × 26 = 676; 10 × 10 = 100' },
+      { does: 'Multiply each side you know by itself', working: '26 × 26 = 676; 10 × 10 = 100' },
       {
-        does: 'Take the shorter side’s result away from the longest side’s result',
+        does: 'Take the shorter side’s result away from the longest side’s',
         working: '676 − 100 = 576'
       },
       {
-        does: 'Find the number that multiplies by itself to give the result',
+        does: 'Find the number that multiplies by itself to make that result',
         working: '24 × 24 = 576, so the shorter side is 24 m'
       }
     ],
@@ -47,17 +47,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: 'about 27.9 m',
-          slip: 'you add the two results, though the longest side is one of the sides you were given, so the other side must be found by taking away.'
+          slip: 'you add the two results. The 26 m side is the longest and was given, so you take away instead.'
         },
         {
           id: 's2',
           text: '576 m²',
-          slip: 'you stop after taking the results away, so you give 576, which is an area, and not the length of a side.'
+          slip: 'you stop after taking the results away. 576 is an area, not the length of a side.'
         }
       ],
       right: 'r'
     },
-    why: 'In a triangle with a square corner, the square on the longest side holds as many tiles as the squares on the two shorter sides together. So a shorter side is the number that multiplies by itself to give the longest side multiplied by itself, with the other shorter side multiplied by itself taken away.',
+    why: 'The tile squares on the two shorter sides add up to the tile square on the longest side. So a shorter side is the number that multiplies by itself to make the long square with the other short square taken away.',
   },
 
 ]);

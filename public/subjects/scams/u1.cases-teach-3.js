@@ -13,17 +13,17 @@ FC.cases('scams', 'u1', [
     route: { D1: ['details'] },
     cues: { D1: 'Please send a photo of your passport and your Social Security number' },
     segments: [
-      { text: 'A recruiter emails Fern about a job she has not applied for', note: 'That says who the email is from and what it is about. It does not say what it asks her to do.' },
-      { text: 'We would love to take your application further', note: 'That is the reason it gives. What it asks Fern to send comes next.' },
+      { text: 'A recruiter emails Fern about a job she has not applied for', note: 'That says who wrote and why, not what the email asks.' },
+      { text: 'We would love to take your application further', note: 'That is the reason it gives. What it asks for comes next.' },
       { text: 'Please send a photo of your passport and your Social Security number' }
     ],
-    reason: { D1: 'The email asks Fern to tell the sender facts about herself, in the form of papers and a number: {cue:D1}. It does not ask her to pay, sign in or install anything.' } },
+    reason: { D1: 'These words ask for papers and a number that prove who she is.' } },
 
   { id: 'g-council-bins', use: 'check', tier: 'clean', setting: 'government', topic: 'a change of trash day',
     text: "Mrs. Adeyemi gets a text from the county: 'Northway County: your trash pickup moves to Thursday this week only, because of the holiday.'",
     route: { D1: ['nothing'] },
     cues: { D1: 'your trash pickup moves to Thursday this week only, because of the holiday' },
-    reason: { D1: 'The text only tells Mrs. Adeyemi that something will change: {cue:D1}. Nothing in it asks her to install, sign in, pay or tell anyone anything, and it gives no number, link or app of its own.' } },
+    reason: { D1: 'The text only tells Mrs. Adeyemi that something will change: {cue:D1}. It asks her for nothing.' } },
 
   { id: 'g-statement', use: 'teach', tier: 'misleading', setting: 'money', topic: 'a statement that ends with a demand', name: 'The statement that wanted money',
     text: "Chidi gets a text from Lumen Broadband: 'Your summer statement is ready to view. Your account is now 41 days overdue. To keep your line open, pay $79 at lumen-pay.com today.'",

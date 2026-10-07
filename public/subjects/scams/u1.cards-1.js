@@ -9,53 +9,53 @@
 FC.cards('scams', 'u1', [
 
   { id: 'orient-gate', kind: 'orient',
-    h: 'Before anything else: what is this message asking you to do?',
-    canDo: 'After this unit you can take a message, a call, a text or an offer, and say which of five things it asks of you right now: {a:D1.device}; {a:D1.access}; {a:D1.money}; {a:D1.details}; or {a:D1.nothing}. You will be able to point to the words that show which one.',
+    h: 'Before you tap, call, pay or reply, check what the message asks',
+    canDo: 'Before you tap a link, call a number, pay or reply, check what the message actually asks you to do. It is always one of the five things below, it is written in the message, and you can read it before you do anything.',
     everyday: [
-      'You already do a rough version of this every day. Your phone buzzes with a text that says it is from your bank, and before you have read to the end, part of you has asked what it wants: for you to tap something, call someone, pay something, or only to know something.',
-      'That is the right question to start with, and it is easy to skip. A scam is built to make you ask other questions first: who is this from, how bad is the problem, how fast do I have to act? A real bank and a copy of it can use the same name, logo and words. What a message asks you to do is written in it, and it tells you what you could lose: control of your device, a way into an account, money, or facts about yourself.',
-      'In this unit a case is a message, a call or an offer, written the way someone really gets it. The message can be real or a copy made to take something. This unit does not decide that: it teaches the question that comes first.'
+      'Your phone buzzes with a text that says it is from your bank. Before you have read to the end, you are already asking yourself what it wants: for you to tap something, call someone, pay something, or only to know something.',
+      'That is the right question, and a scam is built to make you skip it. It wants you asking who it is from and how bad the problem is. A real bank and a copy of it can use the same name, logo and words. What the message asks you to do is the one thing you can read in it, and it shows what you could lose: your phone or computer, an account, your money, or facts about you.',
+      'The message can be real or a copy. This unit does not decide that. It teaches the question that comes first.'
     ],
     map: { branch: 'gate' } },              // a gate unit's preview map is the gate itself, drawn from the key
 
-  /* ---------- two ideas the first kind rests on ---------- */
+  /* ---------- two ideas the first answer rests on ---------- */
   { id: 'term-already', kind: 'term', term: 'already',
     h: 'Where a number, a link or an app comes from',
-    link: 'One idea has to be clear before the first message, because the question and its answers use it again and again.',
+    link: 'One idea comes first, because every answer in this unit uses it.',
     case: 'g-t-already',
     plain: [
-      'Mina’s text gave her a number to call, and she did not call it. She called the number printed on the back of her bank card instead. Anyone can send a text with any number in it, so she could not know the first number was the bank’s. She could know the one on her card was, because it was in her wallet before the text arrived.',
-      'So there are two kinds of number, link and app: the ones that came with the message, and the ones that were yours first, such as a number on your card, a web address you typed or saved long ago, or an app you installed months ago. Only the ones that were yours first can be relied on to lead to the real company. A number, a link or an app that came with the message never counts, even if you are the one who dials it or taps it.'
+      'Anyone can put any number in a text, so Mina could not know the first one was the bank’s. The number on her card was in her wallet before the text arrived, so she could trust it.',
+      'Numbers, links and apps come in two sorts: the ones that came with the message, and the ones that were yours first. Only the ones that were yours first lead to the real company. Anything that came with the message does not count, even if you are the one who dials it or taps it.'
     ] },
 
   { id: 'term-check', kind: 'term', term: 'check',
     h: 'What to do when you are not sure',
-    link: 'The idea of {t:already} gives you the one reliable way to settle a doubt about a message. It has a name.',
+    link: 'When you are not sure about a message, {t:already} gives you one dependable way to settle it. That way has a name.',
     case: 'g-t-check',
     plain: [
-      'Tom did three things. He did not do what the email asked, he did not reply to it, and he asked the person it claimed to come from, using {t:already}: the number in the staff directory. It works because the one person who knows whether she sent the email is the person it names. Tom could not have told a real email from a copy, and he did not need to.',
-      'A real company or person does not mind being asked this way. If someone gets angry, or hurries you, when you want to do it, that tells you something too.'
+      'Tom did not have to judge whether the email looked real. He did not do what it asked and he did not reply to it. He called his manager on the number in the staff directory, which is {t:already}, because only the person an email names can say whether she wrote it.',
+      'A real person or company does not mind being asked this way. If someone gets angry, or hurries you, when you want to ask, that tells you something too.'
     ] },
 
-  /* ---------- the first kind: a message that asks nothing ---------- */
+  /* ---------- First: a message that asks nothing ---------- */
   { id: 'meet-nothing', kind: 'meet', family: 'nothing',
-    link: 'The first kind is the easiest to forget, because it asks you for nothing at all and only gives you news.',
+    link: 'First: a message that asks nothing of you. It only gives you news, and it is the easiest one to forget.',
     case: 'g-delivery', mark: 'D1',
-    strip: [
-      'There is one message, from the store where Ruth placed an order.',
-      'It tells her what will happen: the order is out for delivery, and when to expect it.',
-      'It asks her for nothing and gives her nothing to tap. If she does nothing at all, the order still arrives.'
-    ],
     explain: [
-      'What you are shown is news: something will happen, the message says so, and then it stops. The news can be about a delivery, an appointment, an office that is closed, a new sign-in noticed on your account, or a refund that has gone through. Some of it sounds serious, and some of it mentions money. What puts a message here is that, whatever the subject, you are not asked to do anything about it.',
-      'It may suggest what you could do if the news is wrong, as long as what it suggests uses only {t:already}: the app on your phone, or the number on your card.',
-      'This is a kind of its own because it is the one kind that needs nothing from you. If there were no place for a real notice, you would file it under "suspicious", and someone who suspects everything stops reading the real warnings too.'
+      'Ruth’s text is news: something will happen, the text says so, and it stops. News can be about a delivery, an appointment, a closed office, a new sign-in on your account or a refund that went through. It can sound serious, and it can mention money. If you are not asked to do anything about it, it belongs here.',
+      'It may suggest a next step, as long as the step uses only {t:already}, like your own app or the number on your card.',
+      'Real warnings land here. If you treated every message as suspicious, you would stop reading the real ones too.'
+    ],
+    spot: [
+      { do: 'Look for a request: Ruth’s text only says her order is out for delivery.', why: 'News says what is happening, and a request says what you must do.' },
+      { do: 'Look for a link, number or app that came with it: Ruth’s text has none.', why: 'That is how a message gets you to act.' },
+      { do: 'Ask what happens if you do nothing: Ruth’s order still arrives.', why: 'If nothing depends on you, nothing is being asked.' }
     ],
     feature: { step: 'D1', option: 'nothing' },
-    name: 'The answer is {a:D1.nothing}. You looked, and what is there is only news.' },
+    name: 'This is {a:D1.nothing}. Ruth could ignore the text and nothing would change.' },
 
   { id: 'check-nothing', kind: 'check', after: 'nothing',
     case: 'g-closure',
-    ask: { type: 'phrase', step: 'D1', say: 'Which words tell Mr. Dunne something that will happen, without asking him to do anything? Tap them.',
+    ask: { type: 'phrase', step: 'D1', say: 'Which words are only news for Mr. Dunne? Tap them.',
            answer: 'Our office will be closed on October 27 and 28 for a staff training day' } }
 ]);

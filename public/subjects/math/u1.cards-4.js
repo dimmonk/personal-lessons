@@ -5,20 +5,21 @@ FC.cards('math', 'u1', [
 
   /* ---------- The fourth kind: counting ways, and chance ---------- */
   { id: 'meet-chance', kind: 'meet', family: 'chance',
-    link: 'The first three kinds use numbers to split, to fit or to follow. The fourth kind uses numbers to count the different ways something can turn out.',
+    link: 'Fourth: counting the different ways something can turn out.',
     case: 'gt-outfits', mark: 'M1',
-    strip: [
-      'Something can turn out in different ways: an outfit. It is made by several separate choices: a top, a pair of pants and a pair of shoes, each chosen from its own list.',
-      'The question is how many different results there are: how many different outfits.',
-      'Nothing is measured, nothing changes as time passes, and no calculation has a number missing. The question counts possibilities.'
-    ],
     explain: [
-      'What you are shown is a set of choices and a question about how many different results they give. The problem is about the choices themselves: how many different outfits there are, not what any one of them costs or weighs.',
-      'This kind has two halves. The first is counting ways: how many different results there are when you choose, pick or order things. The second is chance: how likely it is that something happens, or that a test result can be trusted. They sit together because a chance is a share of the ways something can turn out. Zara’s problem is the counting half.',
-      'Every kind can ask “how many”. What marks this kind is that what you are counting is the different results of a choice.'
+      'Zara picks one top, one pair of pants and one pair of shoes, each from its own list. The problem is not about what an outfit costs or weighs. It asks how many different outfits there are.',
+      'This kind has two halves. One is counting ways: how many different results you get when you choose, pick or order things. The other is chance: how likely it is that something happens, or that a test result can be trusted. Zara’s problem is the counting half.',
+      'Many problems ask “how many”. What marks this one is that you are counting the different results of a choice.'
+    ],
+    spot: [
+      { do: 'Find the separate choices: a top, pants and shoes.', why: 'Each is picked from its own list.' },
+      { do: 'Check the question counts results: “How many different outfits can she make?”', why: 'It asks how many different results the choices give, not what any one of them is.' },
+      { do: 'If it asks how likely something is instead, look for “at least one”, or for a test result that may be wrong.', why: 'Those are the two chance problems this course covers.' },
+      { do: 'Check nothing is split into equal groups, measured or followed over time.', why: 'Here the numbers only say how many things there are to choose from.' }
     ],
     feature: { step: 'M1', option: 'chance' },
-    name: 'This kind of problem is {a:M1.chance}. “Turn out” means end up, as a result of choices or of luck. Counting the ways is one half of the kind, and how likely something is, is the other.' },
+    name: 'This is {a:M1.chance}. The numbers 5, 4 and 3 only say how long each list is.' },
 
   { id: 'check-chance', kind: 'check', after: 'chance',
     case: 'gt-trains',
@@ -26,13 +27,13 @@ FC.cards('math', 'u1', [
 
   /* ---------- The look-alike pair: counts that split, or the results of a choice ---------- */
   { id: 'look-whole-chance', kind: 'lookalike', ledger: 'whole~chance',
-    link: 'The first kind and the fourth are both made of whole counts, and both can ask “in how many different ways”. Here they are side by side.',
+    link: 'Both use whole counts of friends, and both ask “in how many different ways”.',
     cases: ['gt-photo-rows', 'gt-photo-order'],
-    instruction: 'Both problems are about Hana and a photo of friends. Compare one thing: is the question about cutting a count into equal piles, or about the different results of a choice?',
+    instruction: 'Both are about Hana and a photo of friends. Compare one thing: is she cutting a count into equal rows, or choosing an order?',
     prompt: { kind: 'which', option: 'M1.chance', answer: 'gt-photo-order' },
     difference: [
-      'In Case A the 24 friends are one fixed group, and the question is about how the number 24 splits into equal rows. The answer is {a:M1.whole}.',
-      'In Case B nothing is being split. The question is about the different results of a choice: who stands first, who second, and so on. Each different order is a different result. The answer is {a:M1.chance}.',
-      'Both are about friends in rows, and both ask “in how many different ways”. What differs is what is counted: the ways a number splits, or the ways a choice can come out.'
+      'The photo of 24 friends is one fixed group, and the question is how the number 24 splits into equal rows. That is {a:M1.whole}.',
+      'The photo of four friends in a row splits nothing. The question is about who stands where: each different order is a different result. That is {a:M1.chance}.',
+      'Both ask “in how many different ways”. What differs is what you count: the ways a number splits, or the ways a choice can come out.'
     ] }
 ]);

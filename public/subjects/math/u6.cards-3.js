@@ -1,57 +1,61 @@
-// Basic Math, Unit Six, part three: the third kind (Similar shapes: a length on one of two things of the same shape at different sizes),
-// the exception that shows a triangle and a copy at once (the shadow), and the key’s first question, which can be taught now that all
+// Basic Math, Unit Six, part three: the third type (a length on one of two things of the same shape at different sizes),
+// the exception that shows a right triangle and a copy at once (the shadow), and the key’s first question, which can be taught now that all
 // three of its answers have been met. The worked example (kind solved) is in u6.cards-solved-2.js.
 
 FC.cards('math', 'u6', [
 
   { id: 'meet-similar', kind: 'meet', outcome: 'similar',
-    link: 'The first two kinds of problem were about a triangle with a square corner. The third kind is about two things of exactly the same shape at different sizes: a model and the real thing, a photo and its enlargement.',
+    link: 'Third type: two things of exactly the same shape at different sizes, like a model and the real thing, or a photo and its enlargement.',
     case: 'm6-wd-footbridge', mark: 'S1',
-    strip: [
-      'There are two things of exactly the same shape at different sizes: a model of a footbridge, and the real footbridge. The model is an exact copy at a smaller size.',
-      'A length is measured on both: the span, 20 cm on the model and 10 m on the real bridge.',
-      'Another length is measured on the model only: the tower, 12 cm tall. It is the length wanted, on the real bridge.',
-      'The question asks how long that part is on the real bridge: a length.'
-    ],
     explain: [
-      '“Exactly the same shape” has a precise meaning here. One thing is a copy of the other, made bigger or smaller, so that every length on one is the same number of times longer than the matching length on the other: the span, the tower, the height of the arch, the length of a cable. Nothing is stretched more in one direction than in another, because then it would no longer be the same shape.',
-      'That gives a way to find a length that you cannot measure. Use the part that is measured on both things to find how many times longer the bigger thing is. The span is 10 m, which is 1,000 cm, on the real bridge and 20 cm on the model, so the real bridge is 1,000 ÷ 20 = 50 times longer. Every length on the real bridge is 50 times the matching length on the model, so the real tower is 12 × 50 = 600 cm, which is 6 m.'
+      'The model is an exact copy, so every length on the real bridge is the same number of times longer than the matching length on the model: the span, the tower, the arch, every cable. If one direction were stretched more than another, it would not be the same shape.',
+      'You can measure the span on both, so use it to find how many times longer the real bridge is. The span is 10 m, which is 1,000 cm, against 20 cm on the model: 1,000 ÷ 20 = 50 times longer. So the real tower is 12 × 50 = 600 cm, which is 6 m.'
+    ],
+    spot: [
+      { do: 'Find the two things of the same shape: the model and the real footbridge.', why: 'One is an exact copy of the other at a different size.' },
+      { do: 'Find a length measured on both: the span, 20 cm on the model and 10 m on the real bridge.', why: 'It shows how many times longer the real bridge is.' },
+      { do: 'Find the part you know on one only: the tower, 12 cm on the model.', why: 'This is the length you carry over to the real bridge.' },
+      { do: 'Check you are asked for a length: how tall the real tower is.', why: 'Asking how much area or volume would be a different type.' }
     ],
     feature: { step: 'S1', option: 'matching' },
-    name: 'A problem like this is {o:similar}: finding a length on one thing from how many times longer it is than a copy of the same shape.' },
+    name: 'A problem like this is {o:similar}: a length you know on one thing, carried over to its copy.' },
 
   { id: 'check-similar', kind: 'check', after: 'similar',
     case: 'm6-wd-flagcopy',
-    ask: { type: 'phrase', step: 'S1', say: 'Which words say that there are two things of exactly the same shape? Tap them.',
+    ask: { type: 'phrase', step: 'S1', say: 'Which words say there are two things of exactly the same shape? Tap them.',
            answer: 'makes a flag as an exact copy of a badge' } },
 
-  /* ---------- The exception: a shadow shows a triangle with a square corner and is also a copy ---------- */
+  /* ---------- The exception: a shadow shows a right triangle and is also a copy ---------- */
   { id: 'exc-shadow', kind: 'exception', ledger: 'pyth~similar', looksLike: 'pyth', is: 'similar',
-    h: 'A shadow, which shows a triangle and is also a copy',
-    link: 'The first kind of problem in this unit had a triangle with a square corner and two of its sides. A shadow brings that triangle into a problem of the third kind, and the problem then shows both.',
+    h: 'A shadow makes a triangle, and is also a copy',
+    link: 'A shadow can make a problem look like the first type when it is really the third.',
     case: 'm6-ex-shadow',
-    setup: 'The problem gives a woman and her shadow: her height, 1.7 m, and the length of her shadow, 2 m. She stands straight up and the ground is level, so her height, her shadow and the line from the top of her head to the tip of her shadow make a triangle with a square corner, and two of its sides are given. That is what you point to for {a:S1.twosides}. Yet the answer for this case is {a:S1.matching}.',
+    setup: 'The woman is 1.7 m tall and her shadow is 2 m long. She stands straight up on level ground, so her height, her shadow and the line from her head to the tip of her shadow make a {t:righttriangle}, and two of its sides are given. That looks like {a:S1.twosides}. But the answer here is {a:S1.matching}.',
     prompt: { kind: 'phrase', answer: 'At the same moment a tree beside her casts a shadow 14 m long' },
     because: [
-      'Look at what is wanted. The triangle that is given is the woman’s, and the length wanted, the height of the tree, is not a side of it. It is a side of a second triangle, the tree’s, made by the tree, its shadow and the line from the top of the tree to the tip of its shadow.',
-      'The two triangles have exactly the same shape, because the sun is at the same angle for both at the same moment. So the woman and the tree are two things of exactly the same shape at different sizes, and a length is measured on both: the shadow, 2 m for the woman and 14 m for the tree. The tree’s shadow is 14 ÷ 2 = 7 times as long, so the tree is 7 times as tall as the woman: 1.7 × 7 = 11.9 m.'
+      'Look at what you are asked. The triangle you are given is the woman’s, but the height of the tree is not a side of it. It is a side of a second triangle, made by the tree, its shadow and the line from the top of the tree to the tip of its shadow.',
+      'The sun is at the same angle for both at the same moment, so the two triangles have the same shape. That makes the woman and the tree two things of exactly the same shape, with the shadow measured on both: 2 m and 14 m. The tree’s shadow is 14 ÷ 2 = 7 times as long, so the tree is 7 times as tall: 1.7 × 7 = 11.9 m.'
     ],
     take: [
-      'If the problem asked how far it is from the top of her head to the tip of her shadow, that line is the third side of her own triangle, and the answer would be {a:S1.twosides}.'
+      'If the problem had asked how far it is from the top of her head to the tip of her shadow, that line is the third side of her own triangle, and the answer would be {a:S1.twosides}.'
     ] },
 
   /* ---------- The first question for this unit, now that all of its answers have been met ---------- */
   { id: 'q-s1', kind: 'question', step: 'S1',
-    h: 'What the problem gives you: the first of this unit’s two questions',
-    link: 'At the foot of each kind’s first card you saw the question with one answer under it. This card puts the question and its three answers in one place.',
+    h: 'First question: what the problem gives you',
+    link: 'Here is the first question and its three answers in one place.',
     decides: [
-      'A procedure for the wrong kind still gives a number, and nothing in the number says that it is wrong. The numbers cannot tell you the kind: 3 and 4 can be two sides of a triangle with a square corner, or a part measured on a model and the same part measured on the real thing. What the problem gives you can: two sides of a triangle, one side and an angle, or two things of the same shape.'
+      'The numbers cannot tell you the type: 3 and 4 can be two sides of a {t:righttriangle}, or the same part measured on a model and on the real thing. What the problem gives you can.'
     ],
     how: [
-      'Look for what the problem gives you, and not for what it asks. Read the numbers in the problem and say what each one is: a side of a triangle with a square corner, an angle in degrees, or a length on one of two copies.',
-      'Two sides of a triangle with a square corner, and no angle in degrees besides the square corner, is {a:S1.twosides}. One side and one angle in degrees is {a:S1.sideangle}. A copy of something at another size, with a length measured on both, is {a:S1.matching}. A height that nobody can measure directly is {o:trig} if an angle in degrees is given, and {o:similar} if a copy with a length measured on both is given.',
-      'Put your finger on the words that show it. If a problem shows two of the answers, as the shadow did, the length wanted decides.'
-    ] },
+      { do: 'Say what each number in the problem is: a side of a {t:righttriangle}, an angle in degrees, or a length on one of two copies.', why: 'What a number does decides the type, not how big it is.' },
+      { do: 'Two sides and no angle besides the square corner? That is {a:S1.twosides}.', why: 'The third side comes from squaring the two you have.' },
+      { do: 'One side and one angle in degrees? That is {a:S1.sideangle}.', why: 'The angle does the work of a second side.' },
+      { do: 'A copy at another size, with a length measured on both? That is {a:S1.matching}.', why: 'The length measured on both shows how many times longer the copy is.' },
+      { do: 'A height nobody can measure directly? Look at what you are given.', why: 'An angle in degrees means {o:trig}, and a copy measured on both means {o:similar}.' },
+      { do: 'Find the exact words that show your answer.', why: 'If you can’t find them, you don’t have an answer yet.' }
+    ],
+    whenBoth: 'Some problems show two answers at once, like the shadow. Then the length you want decides.' },
 
   { id: 'check-s1', kind: 'check', after: 'S1',
     case: 'm6-wd-escalator',

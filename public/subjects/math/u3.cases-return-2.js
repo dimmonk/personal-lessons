@@ -25,20 +25,20 @@ FC.cases('math', 'u3', [
       ]
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'In {cue:A1}, two numbers are missing, and two facts are stated about the pair: how many there are in all, and what they come to in all. That is {a:A1.totals}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'In {cue:A1}, two numbers are missing, and two facts are given about them: how many there are in all, and what they come to in all. That is {a:A1.totals}.'
     },
     not: {
       outcome: 'rearr',
-      why: 'Two numbers are left out and two facts are given about them, so no single calculation can simply be undone. {o:rearr} would be the name if only one number were left out of one calculation.'
+      why: 'Two numbers are missing and two facts are given, so you cannot just undo one calculation. It would be {o:rearr} if only one number were missing.'
     },
     steps: [
       {
-        does: 'Name the two missing numbers with letters, and write the two facts',
+        does: 'Give each missing number a letter, and write the two facts',
         working: 'x is the number of deliveries of sand and y is the number of deliveries of gravel. The count fact: x + y = 26. The totals fact: 2 × x + 3 × y = 60'
       },
       {
-        does: 'Use the count fact to write one letter in terms of the other',
+        does: 'Use the count fact to write one letter using the other',
         working: 'From x + y = 26, x = 26 − y'
       },
       {
@@ -62,15 +62,15 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '8 deliveries of sand and 18 deliveries of gravel',
-          slip: 'you attach the two numbers to the wrong things: 8 belongs to the deliveries of gravel, the thing that was named y, and not to the deliveries of sand.'
+          slip: 'you swap the two numbers: 8 belongs to the deliveries of gravel, which is y, not to the deliveries of sand.'
         },
         {
           id: 's2',
           text: '13 deliveries of sand and 13 deliveries of gravel',
-          slip: 'you use only the count fact and share the 26 out equally, which ignores the totals fact.'
+          slip: 'you use only the count fact and share the 26 equally, so the totals fact is ignored.'
         }
       ]
     },
-    why: 'One fact alone cannot fix two missing numbers, because many pairs fit it. Using the count fact to write one letter in terms of the other leaves a single letter in the totals fact, and a single letter can be solved. The other number then follows from the count fact, and the pair has to fit both facts.'
+    why: 'One fact alone leaves many pairs, so use the count fact to leave a single letter in the totals fact, and solve that. The other number then comes from the count fact, and the pair must fit both facts.'
   },
 ]);

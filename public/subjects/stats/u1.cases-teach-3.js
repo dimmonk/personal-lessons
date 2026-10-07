@@ -15,13 +15,13 @@ FC.cases('stats', 'u1', [
     route: { S1: ['holds'] },
     cues: { S1: 'It drew 40 names from a hat to choose which classrooms use a new reading program for a year' },
     segments: [
-      { text: 'A school district has 80 classrooms.', note: 'That tells you who is in the figure, and it is all of them, which is a good start. But you were asked how the two groups were formed.' },
+      { text: 'A school district has 80 classrooms.', note: 'That tells you who is in the number: all 80 classrooms. You were asked how the two groups were formed.' },
       { text: 'It drew 40 names from a hat to choose which classrooms use a new reading program for a year.' },
-      { text: 'All 80 classrooms were tested the same way at the end of the year, and the 40 with the program averaged 8 points higher.', note: 'That is the result, and it is fair, since every classroom was tested the same way. But how the groups were formed is in the sentence before.' },
-      { text: "The district says: 'The program raised reading scores.'", note: 'That is the claim, and it says one thing caused another. What lets it stand is how the groups were formed, in the second sentence.' }
+      { text: 'All 80 classrooms were tested the same way at the end of the year, and the 40 with the program averaged 8 points higher.', note: 'That is the result, and it is fair, since every classroom was tested the same way. How the groups were formed is in the sentence before.' },
+      { text: "The district says: 'The program raised reading scores.'", note: 'That is the claim, and it says one thing caused another. What lets it stand is how the groups were formed.' }
     ],
-    reason: { S1: 'Take the parts in order. All 80 classrooms are in the figure, all were tested the same way, and the two averages are set side by side. Then the district says the program raised scores, which is a claim of cause. What lets it stand is this: {cue:S1}. Nobody chose, so no other difference is likelier to be in one group than in the other, and the case offers no other way to explain the result.' },
-    not: { outcome: 'cause', why: 'A claim of cause is usually weak because the groups picked themselves, and here they did not. The names were drawn from a hat, so the case shows no other way the result could have come about.' } },
+    reason: { S1: 'Names came out of a hat, so no classroom chose its group, and the story offers no other way to explain the difference.' },
+    not: { outcome: 'cause', why: 'A claim of cause is usually weak because people chose their own groups. Here names were drawn from a hat, so the story shows no other explanation.' } },
 
   /* ---------- The look-alike pair: same café, same list, same 90% ---------- */
   { id: 'gate-cafe-few', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a café survey with few replies',

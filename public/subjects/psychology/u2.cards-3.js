@@ -1,24 +1,24 @@
-// Psychology, Unit Two, part two (first half): "Reasoning about evidence", the next two names and the hardest look-alike pair.
+// Psychology, Unit Two, part two (first half): evidence. The next two names and the hardest look-alike pair.
 
 FC.cards('psychology', 'u2', [
 
   /* ---------- Confirmation bias ---------- */
   { id: 'meet-confbias', kind: 'meet', outcome: 'confbias',
-    link: 'The first two names were about a person explaining something they did or spent. The next two are about evidence. The question in the person’s mind is no longer "was what I did all right?" but "what is true?" or "which should I choose?"',
+    link: 'The first two were about a person explaining something already done or spent. The next two are about evidence: what is true, or what to choose.',
     case: 'oneway', mark: 'R1',
-    strip: [
-      'Greg already has a view: the one-way street plan has made traffic worse.',
-      'Two pieces of evidence arrive. One is for his view: the neighbor’s longer drive. One is against it: the council’s count.',
-      'He accepts the first without a single question.',
-      'He meets the second with three questions: who counted, when, and how.'
-    ],
     explain: [
-      'Greg’s questions are good ones. A count can be done badly. But one neighbor’s drive is much weaker evidence than a count of many journeys, and it was asked nothing at all.',
-      'That is the whole of it: a harder test for one side. Evidence for the view walks straight in. Evidence against it has to answer questions first. A person who keeps doing this can only become more sure, whatever is true.',
-      'Notice what Greg is not doing. He has not set out to find anything. The neighbor’s remark and the council’s count came to him, and he judged each as it arrived.'
+      'Greg’s questions are not bad ones: a count can be done badly. But one neighbor’s longer drive is much weaker evidence than a count of many trips, and nobody asked her anything.',
+      'That is all it is: a harder test for one side. Evidence for the view walks straight in, and evidence against it has to answer questions first. Someone who keeps doing this can only get more sure, whatever is true.',
+      'Notice what Greg is not doing: he is not looking for anything. The neighbor’s remark and the council’s count came to him, and he judged each as it arrived.'
+    ],
+    spot: [
+      { do: 'Find the view they already hold: the one-way plan made traffic worse.', why: 'Without a view there is nothing to protect.' },
+      { do: 'Find the evidence for it and the evidence against it: the neighbor’s longer drive, and the council’s count.', why: 'Both sides have to be in the story.' },
+      { do: 'Compare the questions each side gets: the neighbor gets none, the count gets "Who did the counting? When? How?"', why: 'The giveaway is one side questioned harder than the other.' },
+      { do: 'Check that Greg is not running a search: the evidence came to him.', why: 'A search with the answer already chosen is a different thing, and it is next.' }
     ],
     feature: { step: 'R1', option: 'scrutiny' },
-    name: 'The name for this is {o:confbias}: a lean toward whatever confirms what you already think.' },
+    name: 'This is {o:confbias}: leaning toward whatever backs up what you already think.' },
 
   { id: 'check-confbias', kind: 'check', after: 'confbias',
     case: 'homeworkers',
@@ -26,22 +26,20 @@ FC.cards('psychology', 'u2', [
 
   /* ---------- Motivated reasoning ---------- */
   { id: 'meet-motivated', kind: 'meet', outcome: 'motivated',
-    link: 'In {o:confbias} nobody sets out to find anything: evidence turns up, and the evidence against the view gets the harder test. In the next of the five the person does set out to find something. They run a search that is supposed to settle a choice. And the choice is already made.',
+    link: 'In {o:confbias} nobody sets out to find anything. In the next one the person does: they run a search to settle a choice, and the choice is already made.',
     case: 'interviews', mark: 'R1',
-    strip: [
-      'There is a choice to settle: who should lead the team.',
-      'There is a search meant to settle it: four interviews.',
-      'Carol chose before the search began.',
-      'During the search she wrote down only what supported her choice.',
-      'Afterward she presented her choice as the result of the search.'
-    ],
     explain: [
-      'Interviews are meant to work in one direction: you look first, and the answer comes out at the end. Carol ran hers backwards. She had the answer first, so the only thing the interviews could do was supply support for it.',
-      'Greg also had his view before the council’s count arrived, so "had a view first" is not the difference. The difference is what the person is doing. Greg was not looking for anything; evidence came to him and he judged it. Carol set out to look, and she had chosen the answer before the search began.',
-      'So put this to a case like Carol’s. {test:confbias~motivated} When the answer to both is yes, nothing in the search could have changed the outcome. A search that cannot change the answer only collects support.'
+      'Interviews are meant to work one way: you look first, and the answer comes at the end. Carol ran hers backwards. She had the answer first, so all the interviews could do was collect support for it.',
+      'Greg also held his view before the evidence came, so having a view first is not the difference. Greg was not looking for anything. Carol set out to look, with the answer already chosen.',
+      'A search that cannot change the answer only collects support.'
+    ],
+    spot: [
+      { do: 'Find the search: Carol interviews four candidates.', why: 'Something is meant to settle a choice or a question.' },
+      { do: 'Find when the answer was picked: before the interviews, she had already decided on Jas.', why: 'If the answer comes first, the search cannot change it.' },
+      { do: 'Check what the search collected: the good points of Jas and the weak points of everyone else.', why: 'It was never going to turn up anything against the answer.' }
     ],
     feature: { step: 'R1', option: 'fixed' },
-    name: 'The name for this is {o:motivated}. "Motivated" because what steers the reasoning is a motive, something the person wants, and not the evidence.' },
+    name: 'This is {o:motivated}. "Motivated" because what steers the reasoning is something the person wants, not the evidence.' },
 
   { id: 'check-motivated', kind: 'check', after: 'motivated',
     case: 'holiday',
@@ -49,12 +47,12 @@ FC.cards('psychology', 'u2', [
 
   /* ---------- The hardest look-alike pair ---------- */
   { id: 'look-confbias-motivated', kind: 'lookalike', ledger: 'confbias~motivated',
-    link: 'These two are the hardest pair in the unit. In both, a person is harder on evidence they do not like, and ends where they started.',
+    link: 'This is the hardest pair in the unit. In both, the person goes harder on evidence they do not like, and ends where they started.',
     cases: ['builder-friday', 'builder-local'],
-    instruction: 'Both cases are about Sam and builders, and in both he is harder on what goes against him. Compare one thing: is Sam running a search to settle a choice, and if he is, was the answer chosen before it began?',
+    instruction: 'Both stories are about Sam and builders, and in both he is harder on what goes against him. Compare one thing: is he running a search to settle a choice, and had he picked the answer before it began?',
     prompt: { kind: 'which', option: 'R1.fixed', answer: 'builder-friday' },
     difference: [
-      'In Case A Sam sets out to settle a choice: which firm to hire. He "gets quotes", which is a search. And you can see the order: he chose his cousin’s firm on Friday, and the search came on Saturday. It was never going to change anything: one question each, and a fault noted in each rival. The answer is {a:R1.fixed}, and the case is {o:motivated}.',
-      'In Case B Sam is not choosing anything and has not set out to find anything. He has held a view for years, and events come along. The same event, finishing a month late, counts as normal for a small builder and as proof against a big one. The answer is {a:R1.scrutiny}, and the case is {o:confbias}.'
+      'In Story A Sam is settling a choice: which firm to hire. He decided on his cousin’s firm on Friday and "got quotes" on Saturday, so the search could never change anything. That is {o:motivated}.',
+      'In Story B Sam is not choosing anything or looking for anything. He has held a view for years, and evidence comes along. A month late is normal for a small builder, and proof of failure for a big firm. That is {o:confbias}.'
     ] }
 ]);

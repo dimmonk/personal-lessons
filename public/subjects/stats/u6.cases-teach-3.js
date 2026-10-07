@@ -1,4 +1,4 @@
-// Statistical Claims, Unit Six: cases shown inside cards, part three (the check after the question card and the two whole worked cases).
+// Statistical Claims, Unit Six: stories shown inside cards, part three (the check after the question card and the whole worked story).
 // A case used by a worked card carries no reason of its own: the card's steps hold it, so there is one copy. Field guide: see u6.cases-teach-1.js.
 
 FC.cases('stats', 'u6', [
@@ -8,7 +8,7 @@ FC.cases('stats', 'u6', [
     text: "A school district says: 'Students who ride the new late bus go to after-school clubs twice as often as students who do not, so the late bus boosts club attendance.' The 140 students who ride it average 2.4 club visits a month, and the 460 who do not average 1.2. Families chose whether their child rides, and the district’s survey shows that most late-bus riders live more than six miles from school, where no other bus runs after 4 p.m.",
     outcome: 'confound', route: { S1: ['cause'], K1: ['behind'] },
     cues: { S1: 'so the late bus boosts club attendance', K1: 'most late-bus riders live more than six miles from school, where no other bus runs after 4 p.m.' },
-    reason: { K1: 'Families chose whether their child rides, so nobody formed the groups, and the survey shows something else that differs between them: {cue:K1}. Students who live far away can only stay for a club if a late bus exists, so the late bus and the club visits can both come from where they live. Another of the four answers does not fit: nothing shows the clubs came first, and no group was picked for being at an extreme.' } },
+    reason: { K1: 'Families chose whether their child rides, and {cue:K1}. Students who live far away can only stay for a club if a late bus runs, so where they live could explain both.' } },
 
   { id: 'k-gym-all', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'personal training for the members who signed up', name: 'Training for those who signed up',
     text: "A gym says: 'Our personal-training program works. The 90 members who signed up for it lost an average of 6 pounds in a year.' The gym has no weight figures for any member who did not sign up.",

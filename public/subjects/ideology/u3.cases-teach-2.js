@@ -30,7 +30,7 @@ FC.cases('ideology', 'u3', [
     text: "From a leaflet of the Lantern list: 'The editors and executives of the national broadcaster, who answer to nobody, fill the evenings with shows made abroad. Our stories should be told in our own language on our own screens. Vote Lantern in May and we will give the broadcaster back to its viewers.'",
     outcome: 'natpop', route: { D1: ['nation'], N1: ['elitenation'], N2: ['keep'] },
     cues: { N1: ['The editors and executives of the national broadcaster, who answer to nobody', 'Our stories should be told in our own language on our own screens'] },
-    reason: { N1: 'The text sets the country\'s viewers against a few at the top, the executives "who answer to nobody", and it wants the country\'s own culture put first: {cue:N1}. That is more than speaking for everyone, and more than anger at those at the top.' } },
+    reason: { N1: 'The text sets the country\'s viewers against a few at the top, the executives, and wants the country\'s own culture put first: {cue:N1}. That is more than speaking for everyone, and more than anger alone.' } },
 
   /* ---------- Populism with nothing attached ---------- */
 
@@ -45,7 +45,7 @@ FC.cases('ideology', 'u3', [
     text: "A post on a national forum: 'The ministers and their friends in the building trade have let the price of homes run away. Ordinary people of this country pay and they pocket. Vote every one of them out in May.'",
     outcome: 'pop', route: { D1: ['nation'], N1: ['eliteonly'], N2: ['keep'] },
     cues: { N1: ['The ministers and their friends in the building trade have let the price of homes run away', 'Ordinary people of this country pay and they pocket'] },
-    reason: { N1: 'The text sets ordinary people against a few at the top, the ministers and their friends, and stops there: {cue:N1}. It says nothing about the country\'s borders, culture or industry, and nothing about ranking anyone.' } },
+    reason: { N1: 'The text sets ordinary people against a few at the top, the ministers and their friends, and stops there: {cue:N1}. It says nothing about the country\'s borders, culture or industry.' } },
 
   /* ---------- Look-alike pairs between the names that set people against a few at the top ---------- */
 

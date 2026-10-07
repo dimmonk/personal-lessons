@@ -5,12 +5,12 @@
 
 FC.unit('ideology', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Four',
-  title: { fromKey: 'D1.tradition' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Two names for a text that holds up old ways, the one question that tells them apart, and the names they are mistaken for',
+  title: { text: 'Keep old customs, or bring back what is gone?' },
+  subtitle: 'Two names for a text that holds up old customs, and the one question that tells them apart',
   teaches: { steps: ['T1'], outcomes: ['conserv', 'react'], terms: [] },
   assumes: ['u1', 'u2', 'u3'],   // everything these units teach may be used; the first card restates the part this unit leans on
 
@@ -22,30 +22,30 @@ FC.unit('ideology', 'u4', {
   // test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'conserv~react', pair: ['conserv', 'react'], step: 'T1',
-      shared: 'Both hold up what was handed down from the past, both are fond of it, and both can be sad about what has changed.',
-      rule: '{o:conserv} asks for what is still there to be kept, and for any change to come slowly. Nothing is asked back. {o:react} says that an old order has gone, that its going was a wrong, and asks for it to be put back.',
-      test: 'Does the text ask for something that has gone to be put back, after calling its going a wrong? Or does it ask only for what is still there to stay, and for change to be slow?' },
+      shared: 'Both love what was handed down from the past, and both can be sad about what has changed.',
+      rule: '{o:conserv} asks for what is still there to be kept, and for change to come slowly. It asks for nothing back. {o:react} says an old order is gone, that losing it was a wrong, and asks for it to be put back.',
+      test: 'Is something already gone, and does the text call that a wrong and ask for it back? Or is everything it names still there, with the text asking only to keep it and go slowly?' },
     { id: 'conserv~nationalism', pair: ['conserv', 'nationalism'], step: 'D1',
-      shared: 'Both love the country and its past, both can say "our" ways and "our" people, and both leave elections alone.',
-      rule: '{o:nationalism} puts one people first, and speaks for it as a whole: {a:D1.nation}. {o:conserv} puts first the ways handed down from the past, and asks for them to be kept: {a:D1.tradition}. The first is about who belongs. The second is about what should guide.',
-      test: 'What does the text hold up first: one people, marked out by its country, its culture or its blood? Or ways that were handed down from the past, which it says should guide?' },
+      shared: 'Both love the country and its past, both say “our” ways and “our” people, and both leave elections alone.',
+      rule: '{o:nationalism} puts one people first and speaks for all of it: {a:D1.nation}. {o:conserv} puts ways handed down first and asks to keep them: {a:D1.tradition}. One is about who belongs. The other is about what should guide.',
+      test: 'What does the text put first: one people, marked out by its country, culture or blood? Or ways handed down from the past, which it says should guide?' },
     { id: 'react~fasc', pair: ['react', 'fasc'], step: 'D1',
-      shared: 'Both can speak of a great past, both can be impatient with a parliament, and both can ask for a very large change to the country.',
-      rule: '{o:fasc} puts the nation first, as a single people, and wants one leader or movement to speak for everyone: {a:D1.nation}. {o:react} puts an old order first, a crown, a church or ranks of birth that the text says were torn down wrongly: {a:D1.tradition}.',
-      test: 'Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people and say that one leader or movement should speak for everyone?' },
+      shared: 'Both can talk about a great past, both can be impatient with a parliament, and both can ask for a huge change to the country.',
+      rule: '{o:fasc} puts the nation first as one people, and wants one leader or movement to speak for everyone: {a:D1.nation}. {o:react} puts an old order first, such as a crown, a church or ranks of birth, that the text says was torn down wrongly: {a:D1.tradition}.',
+      test: 'Does the text hold up an order that once stood, and ask for it back? Or does it speak for one people, and say one leader or movement should speak for everyone?' },
     { id: 'conserv~socdem', pair: ['conserv', 'socdem'], step: 'D1',
-      shared: 'Both can be fond of the old ways of a town, and both can ask the government to protect people from change that comes too fast.',
+      shared: 'Both can be fond of a town’s old customs, and both can ask the government to protect people from change that comes too fast.',
       rule: '{o:socdem} sorts people into those who work for pay and those who own the businesses, and takes the workers’ side: {a:D1.class}. {o:conserv} holds up ways handed down, and sets nobody against anybody: {a:D1.tradition}.',
-      test: 'Does the text sort people into those who work for pay and those who own the businesses, and stand with the first? Or does it only hold up what was handed down?' }
+      test: 'Does the text sort people into those who work for pay and those who own the businesses, and stand with the workers? Or does it only hold up what was handed down?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. The part with drill: true is the last;
   // its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'Keeping what has been handed down, and bringing back what has gone',
+    { id: 'p1', title: 'Keep what is left, or ask for it back',
       cards: ['orient-ways', 'meet-conserv', 'check-conserv', 'meet-react', 'check-react',
               'look-conserv-react', 'q-ways', 'check-ways'] },
-    { id: 'p2', title: 'The names these two are mistaken for, then the drill',
+    { id: 'p2', title: 'Two names these get mistaken for, then the drill',
       cards: ['look-conserv-nationalism', 'exc-fasc-react', 'exc-class-conserv', 'worked-hospice'],
       drill: true, close: ['recap-ways'] }
   ],
@@ -78,7 +78,8 @@ FC.unit('ideology', 'u4', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the old-ways branch of the key, taught as two names and one question, with the names learners mistake them for (from the nation and working-people branches) as look-alike pairs. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/ideology-plan.md, part a). The gate and its tie-breaks
     // are carried by Unit One.

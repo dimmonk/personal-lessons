@@ -9,12 +9,12 @@
 
 FC.unit('math', 'u5', {
   kind: 'P',
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Five',
-  title: { fromKey: 'M1.chance' },
-  subtitle: 'Five kinds of problem about counting and chance, and a procedure worked out step by step for each',
+  title: { text: 'Counting ways, and how likely it is' },
+  subtitle: 'Five kinds of problem about counting and chance, each worked out step by step',
   teaches: { steps: ['C1'], outcomes: ['multprin', 'perm', 'comb', 'complement', 'baserate'], terms: [] },
   assumes: ['u1', 'u2', 'u3', 'u4'],
 
@@ -23,38 +23,38 @@ FC.unit('math', 'u5', {
   // grouping of drill items, and what returns together later. test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'multprin~perm', pair: ['multprin', 'perm'], step: 'C1',
-      shared: 'Both multiply one count for each choice, both can be about the very same people and the very same jobs, and in both a different order of the jobs is a different result.',
-      rule: '{o:multprin} makes separate choices, each from a full list of its own, so a pick uses nothing up and the counts stay the same. {o:perm} picks from one group, so each pick uses someone up and the counts fall by one each time.',
-      test: 'After one choice has been made, is the next one made from a list of the same length, or from what is left of the same group?' },
+      shared: 'Both multiply one count for each pick, both can be about the very same people and the very same jobs, and in both a different order is a different result.',
+      rule: '{o:multprin} makes separate choices, each from a full list of its own, so no pick uses anything up and the counts stay the same. {o:perm} picks from one group, so each pick uses someone up and the counts fall by one each time.',
+      test: 'After one pick, is the next one made from a list of the same length, or from what is left of the same group?' },
     { id: 'perm~comb', pair: ['perm', 'comb'], step: 'C1',
-      shared: 'Both pick from one group, with each pick using someone up, and both begin from the very same count of picks in order.',
-      rule: '{o:perm} counts a different order as a different result, so the count in order is the answer. {o:comb} counts the same things in any order as one result, so the count in order is divided by the number of orders one group can be put in.',
-      test: 'Does the same group of things, picked in a different order, count as a different result or as the same one?' },
+      shared: 'Both pick from one group, each pick uses someone up, and both start from the very same count of picks in order.',
+      rule: '{o:perm} counts a different order as a different result, so the count in order is the answer. {o:comb} counts the same things in any order as one result, so you divide the count in order by the number of orders one group can come in.',
+      test: 'Is the same group, picked in a different order, a different result or the same one?' },
     { id: 'multprin~comb', pair: ['multprin', 'comb'], step: 'C1', taughtIn: 'q-c1',
-      shared: 'Both can be about the same stall or menu, and both use multiplication to get the answer.',
-      rule: '{o:multprin} makes one pick from each of several separate lists, so every list stays full. {o:comb} makes several picks from one list, so each pick leaves one fewer, and the same picks in any order are one result.',
-      test: 'Are there several separate lists with one pick from each, or one list with several picks from it?' },
+      shared: 'Both can be about the same stall or menu, and both use multiplication.',
+      rule: '{o:multprin} takes a pick from every list, so each list stays full. {o:comb} takes several picks from one list, so each pick leaves one fewer, and the same picks in any order are one result.',
+      test: 'Does each list get one pick, or do several picks come from one list?' },
     { id: 'complement~multprin', pair: ['complement', 'multprin'], step: 'C1', taughtIn: 'q-c1',
-      shared: 'Both are about several separate things, and both multiply one number for each of them. They can be about the very same game.',
-      rule: '{o:multprin} asks how many different results the separate choices can make, so its answer is a count. {o:complement} asks how likely it is that one or more of the separate things happens, so its answer is a chance, a number from 0 to 1.',
-      test: 'Is the answer wanted a count of results, or the chance that something happens?' },
+      shared: 'Both are about several separate things, both multiply one number for each, and they can be about the very same game.',
+      rule: '{o:multprin} asks how many different results the choices can make, so its answer is a count. {o:complement} asks how likely it is that one or more of the things happens, so its answer is a chance, a number from 0 to 1.',
+      test: 'Do you want a count of results, or the chance that something happens?' },
     { id: 'complement~baserate', pair: ['complement', 'baserate'], step: 'C1', taughtIn: 'q-c1',
       shared: 'Both ask for a chance, both are given chances such as 90% or 5%, and both can be about a machine or a test that raises a flag.',
-      rule: '{o:complement} lists separate things that have yet to happen, each with its own chance, and wants the chance of one or more of them. {o:baserate} has one result that a test has already given, and asks how likely it is that the result is right, which depends on how rare the thing is.',
-      test: 'Are there several separate things, with a chance for each, that have yet to happen, or is there one result that has already come in and a question about how far to trust it?' }
+      rule: '{o:complement} has several separate things still to happen, each with its own chance, and wants the chance of one or more of them. {o:baserate} has one result a test has already given, and asks how far to trust it, which depends on how rare the thing is.',
+      test: 'Are there several separate things still to happen, each with its own chance, or one result that has already come in and a question about how far to trust it?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. Two parts before the drill: the three kinds of
   // counting, then the two kinds of chance. The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'ch-count', title: 'Counting the ways: separate lists, one group in order, one group in any order',
+    { id: 'ch-count', title: 'How many ways: separate lists, a group in order, a group in any order',
       cards: ['orient-chance', 'meet-multprin', 'check-multprin', 'solved-multprin-1',
               'meet-perm', 'check-perm', 'solved-perm-1', 'look-multprin-perm',
               'meet-comb', 'check-comb', 'solved-comb-1', 'look-perm-comb'] },
-    { id: 'ch-chance', title: 'How likely: at least one of several things, and trusting a test result',
+    { id: 'ch-chance', title: 'How likely: at least one of several things, and trusting a test',
       cards: ['meet-complement', 'check-complement', 'solved-complement-1',
               'meet-baserate', 'check-baserate', 'solved-baserate-1'] },
-    { id: 'ch-drill', title: 'The question that tells them apart, then the drill',
+    { id: 'ch-drill', title: 'Telling the five apart, then the drill',
       cards: ['q-c1', 'check-c1'], drill: true, close: ['recap-chance'] }
   ],
 
@@ -63,7 +63,7 @@ FC.unit('math', 'u5', {
   // misleading. The route stage also carries problems from Unit One, unlabelled.
   drill: {
     key: 'u5',
-    add: 'After each answer, look at the slip named behind a wrong choice: every wrong choice is the answer one particular slip produces. Some of the problems tell a story that points the wrong way, on purpose: how the picks are made, and what is asked, decide the kind, and nothing else in the story does.',
+    add: 'After each answer, read the slip named behind a wrong choice: every wrong choice is what one particular slip produces. Some problems point the wrong way on purpose. How the picks are made, and what is asked, decide the kind. Nothing else in the problem does.',
     rungs: [
       { ask: 'route',
         items: [[{ earlier: 'u1' }, { earlier: 'u1' }],
@@ -82,7 +82,8 @@ FC.unit('math', 'u5', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the counting and chance unit of Basic Math, replacing the old Unit Five (four cards and the counting drill), specimens 10 to 12 and three faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Five kinds of problem, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; the drill has a last-step stage, a whole-problem stage and a route stage. Three wrong ideas are refuted: the name of a lock, the run that is due, and the accurate test.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this unit's part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

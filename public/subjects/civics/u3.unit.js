@@ -7,12 +7,12 @@
 
 FC.unit('civics', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
-  title: { fromKey: 'D1.congress' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Five things Congress does, and how to tell which one you are looking at',
+  title: { text: 'What did Congress just do?' },     // titled in plain words; the names are taught inside it
+  subtitle: 'Five things Congress does, and how to tell which one a story is about',
   teaches: { steps: ['C1'], outcomes: ['enumerated', 'beyondcong', 'purse', 'confirm', 'impeach'], terms: ['treaty'] },
   assumes: ['u1', 'u2'],  // everything Unit One teaches may be used; the first card restates the part this unit leans on
 
@@ -24,17 +24,17 @@ FC.unit('civics', 'u3', {
   // Its rule is never shown in feedback before that card has been read.
   ledger: [
     { id: 'enumerated~beyondcong', pair: ['enumerated', 'beyondcong'], step: 'C1',
-      shared: 'In both, Congress passes a law with every vote in order: both chambers say yes. The vote cannot tell them apart, and neither can the story, because laws of both kinds can be about anything from mail to schools.',
-      rule: 'In {o:enumerated} the matter is one the Constitution lists for Congress, and the law takes away no right the Constitution protects. In {o:beyondcong} either the matter is not on the list, or the law takes away a right. One of those two is enough.',
-      test: 'Is the matter the law is about on the Constitution’s list for Congress? And does the law take away anyone’s right to speak, to worship, to publish or to gather peacefully?' },
+      shared: 'In both, the House and the Senate pass a law with every vote in order, so the votes cannot tell them apart.',
+      rule: 'In {o:enumerated} the subject is on the Constitution’s list for Congress, and the law takes away no right. In {o:beyondcong} the subject is off the list, or the law takes away a right. One of those is enough.',
+      test: 'Is the law about something on the Constitution’s list for Congress? Does it take away anyone’s right to speak, to worship, to publish or to gather peacefully?' },
     { id: 'enumerated~purse', pair: ['enumerated', 'purse'], step: 'C1',
-      shared: 'Both are about money, and both can be a bill that passes both chambers. A tax raises money by law, and a spending bill is a law too.',
-      rule: 'In {o:enumerated} Congress passes a law on a listed matter, a tax for example. In {o:purse} Congress decides whether the government may spend money on something. When one bill does both, the answer is {a:C1.money}.',
-      test: 'Is Congress raising money, or setting some other rule? Or is it deciding whether the government may spend money on something: voting it, cutting it or leaving it out?' },
+      shared: 'Both are about money, and both can be a bill that passes the House and the Senate.',
+      rule: 'In {o:enumerated} Congress passes a law on a listed subject, a tax for example. In {o:purse} Congress decides what the government may spend. When one bill does both, the answer is {a:C1.money}.',
+      test: 'Does the bill raise money or set some other rule? Or does it decide what the government may spend: voting money, cutting it or leaving it out?' },
     { id: 'confirm~impeach', pair: ['confirm', 'impeach'], step: 'C1',
-      shared: 'Both are votes in the Senate about a person who works for the government of the whole country, and the same judge or department head can be in both.',
-      rule: 'In {o:confirm} the Senate votes on a person, or an agreement, that the President has put forward, before the person starts the job. In {o:impeach} the official already holds the job and is accused of serious misconduct, and the vote is on the charge.',
-      test: 'Has the person already got the job, and is the vote about something they are accused of doing? Or has the President only just put the person forward for the job?' }
+      shared: 'Both are Senate votes about a person who works for the government of the whole country, and the same judge or department head can be in both.',
+      rule: 'In {o:confirm} the Senate votes on a person, or a {t:treaty}, that the President put forward, before the person starts the job. In {o:impeach} the official already holds the job and is accused of serious wrongdoing, and the vote is on the charge.',
+      test: 'Does the person already have the job, and is the vote about what they are accused of doing? Or has the President only just put the person forward?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
@@ -44,7 +44,7 @@ FC.unit('civics', 'u3', {
       cards: ['orient', 'meet-enumerated', 'check-enumerated',
               'meet-beyondcong', 'check-beyondcong', 'look-enumerated-beyondcong',
               'meet-purse', 'check-purse', 'look-enumerated-purse'] },
-    { id: 'p2', title: 'Votes on people, and the question, then the drill',
+    { id: 'p2', title: 'Votes on people, then the drill',
       cards: ['term-treaty', 'meet-confirm', 'check-confirm',
               'meet-impeach', 'check-impeach', 'look-confirm-impeach',
               'q-congress', 'check-congress', 'worked-mint'], drill: true, close: ['recap-congress'] }
@@ -56,6 +56,7 @@ FC.unit('civics', 'u3', {
   // Items from Unit One's bank come only as { earlier: 'u1' }: the other units are written at the same time as this one.
   drill: {
     key: 'u3',            // a new counter: the old Unit Three drill (n3, the chambers) moves to the fact unit u7, so this unit does not take its key
+    add: 'Some of these stories look like one thing and are another: a bill about the mail that takes a right away, or a bill about coins that spends money. That is on purpose. Read each story to the end, then look for what Congress did.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'pc-borrow', step: 'C1' }, { case: 'pc-speech', step: 'C1' }],
@@ -81,7 +82,8 @@ FC.unit('civics', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the Congress branch of Civics. It replaces the Congress part of old Unit Three (two questions, five names, the side-by-side table and the budget-fight worked case) and old specimens 1, 5, 9, 13 and 17. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a).
     // "was" is the wording of the old course.

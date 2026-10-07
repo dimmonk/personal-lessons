@@ -18,28 +18,28 @@ FC.cases('math', 'u6', [
       S2: 'How many times more jam does the big jar hold?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
+      M1: 'The problem asks {cue:M1}, an amount for one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, a small one and a big one.',
+      S2: 'The words {cue:S2} ask how much jam the big jar holds: room inside, so a volume.'
     },
     not: {
       outcome: 'similar',
-      why: 'The problem asks how much area or volume the bigger thing has, not how long one of its parts is. {o:similar} would be the name if it asked for a length on the bigger thing.'
+      why: 'It asks how much the bigger one covers or holds, not how long a part is. If it asked for a length on the bigger one, it would be {o:similar}.'
     },
     steps: [
       {
-        does: 'Find how many times longer the bigger one is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '24 ÷ 8 = 3'
       },
       {
         does: 'Decide whether the problem asks about area or about volume',
-        working: 'Jam fills a solid, so the problem asks about volume'
+        working: 'Jam fills a solid, so it is a volume'
       },
       {
-        does: 'Multiply that number of times by itself, with three of them in the product for a volume',
+        does: 'Multiply three of that number together, for a volume',
         working: '3 × 3 × 3 = 27'
       },
-      { does: 'Say what it shows', working: 'The bigger one has 27 times as much volume (jam)' }
+      { does: 'Say what you found', working: 'The big jar holds 27 times as much jam' }
     ],
     answer: {
       choices: [
@@ -47,17 +47,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '3 times as much',
-          slip: 'you multiply by the number of times longer only once, as for a length, though a volume has three directions, length, width and height, and all of them grow.'
+          slip: 'you multiply by the number of times longer only once, as for a length. A volume grows in three directions: length, width and height.'
         },
         {
           id: 's2',
           text: '9 times as much',
-          slip: 'you multiply by the number of times longer only twice, as for an area, though a volume has a third direction, height, that grows too.'
+          slip: 'you multiply by the number of times longer only twice, as for an area. A volume also grows in height, so there are three of them.'
         }
       ],
       right: 'r'
     },
-    why: 'If every length is made a number of times longer, the length, the width and the height of a solid all grow by that number of times, so the solid holds that number multiplied by itself twice over as many unit cubes. Volume grows by the number of times longer, multiplied by itself twice over.',
+    why: 'When every length is some number of times longer, a solid grows in length, width and height. So its volume grows by three of that number multiplied together.',
   },
 
   {
@@ -76,29 +76,29 @@ FC.cases('math', 'u6', [
       S2: 'How much glue does the large bandage use?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
+      M1: 'The problem asks {cue:M1}, an amount for one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, a small one and a big one.',
+      S2: 'The words {cue:S2} ask how much glue the large bandage uses: glue covers a surface, so an area.'
     },
     not: {
       outcome: 'similar',
-      why: 'The problem asks how much area or volume the bigger thing has, not how long one of its parts is. {o:similar} would be the name if it asked for a length on the bigger thing.'
+      why: 'It asks how much the bigger one covers or holds, not how long a part is. If it asked for a length on the bigger one, it would be {o:similar}.'
     },
     steps: [
       {
-        does: 'Find how many times longer the bigger one is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '9 ÷ 3 = 3'
       },
       {
         does: 'Decide whether the problem asks about area or about volume',
-        working: 'Glue covers a surface, so the problem asks about area'
+        working: 'Glue covers a surface, so it is an area'
       },
       {
-        does: 'Multiply that number of times by itself, with two of them in the product for an area',
+        does: 'Multiply two of that number together, for an area',
         working: '3 × 3 = 9'
       },
       {
-        does: 'Multiply the smaller one’s amount by that number of times',
+        does: 'Multiply the smaller one’s amount by that number',
         working: '2 g × 9 = 18 g'
       }
     ],
@@ -108,16 +108,16 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '6 g',
-          slip: 'you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.'
+          slip: 'you multiply by the number of times longer only once, as for a length. An area grows in two directions: length and width.'
         },
         {
           id: 's2',
           text: '54 g',
-          slip: 'you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.'
+          slip: 'you multiply by the number of times longer three times, as for a volume. This one covers a surface, so there are only two of them.'
         }
       ],
       right: 'r'
     },
-    why: 'If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.',
+    why: 'When every length is some number of times longer, a surface grows in length and width. So its area grows by two of that number multiplied together.',
   }
 ]);

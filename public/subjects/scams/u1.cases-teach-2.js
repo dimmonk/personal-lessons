@@ -12,7 +12,7 @@ FC.cases('scams', 'u1', [
     text: "Kofi switches on his game console. A box appears: 'A system update is ready. Install now?' He has always updated the console this way.",
     route: { D1: ['device'] },
     cues: { D1: 'A system update is ready. Install now?' },
-    reason: { D1: 'The box asks Kofi to install something on his console: {cue:D1}. A request to install something is a request about the device itself, whoever it comes from, so that is the answer to the first question. Whether it is the real console maker is a different question.' } },
+    reason: { D1: 'The box asks Kofi to install something on his console: {cue:D1}. Whether it comes from the real console maker is a different question.' } },
 
   { id: 'g-installer', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'installing a photo editor',
     text: "Ravi has downloaded Pixelwise, a photo editor, from the maker's own website. He opens the installer, and a box says: 'Install Pixelwise on this computer? Do you want to allow this app to make changes to your device?' with Yes and No.",
@@ -34,12 +34,12 @@ FC.cases('scams', 'u1', [
     route: { D1: ['money'] },
     cues: { D1: "Can you send $300 to my sister's account today" },
     segments: [
-      { text: "Gabi's friend Leon texts from a number she does not know", note: 'That says where the text comes from. It does not say what it asks.' },
-      { text: 'Hi Gabi, I dropped my phone in the lake and this is my new one', note: 'That is the story. The thing the text asks her to do comes after it.' },
+      { text: "Gabi's friend Leon texts from a number she does not know", note: 'That says where the text came from, not what it asks.' },
+      { text: 'Hi Gabi, I dropped my phone in the lake and this is my new one', note: 'That is the story he tells. The request comes after it.' },
       { text: "Can you send $300 to my sister's account today" },
-      { text: 'I will explain later', note: 'That is a promise to explain. It is not what the text asks her to do.' }
+      { text: 'I will explain later', note: 'That is a promise to explain, not a request.' }
     ],
-    reason: { D1: 'The text asks Gabi to send money: {cue:D1}. The story about the phone is the reason it gives, and the promise to explain comes after the request. The words that answer the question are the ones that say what she is to send and where.' } },
+    reason: { D1: 'These words say how much Gabi is to send, and where.' } },
 
   { id: 'g-refund-share', use: 'teach', tier: 'misleading', setting: 'money', topic: 'a refund that needs the screen shared', name: 'The refund call',
     also: ['money'],
@@ -47,10 +47,10 @@ FC.cases('scams', 'u1', [
     route: { D1: ['device'] },
     cues: { D1: 'Press the Share button in this meeting app so that I can see your screen' },
     segments: [
-      { text: 'A woman calls Harold and says she is from his broadband company', note: 'That says who the caller claims to be. It does not say what she asks.' },
-      { text: 'We owe you a refund of $48 for the outage', note: 'That is the reason she gives, and a refund sounds like money. But it is something she says she will give him, not something she asks him to do.' },
+      { text: 'A woman calls Harold and says she is from his broadband company', note: 'That says who the caller claims to be, not what she asks.' },
+      { text: 'We owe you a refund of $48 for the outage', note: 'That is what she offers him, not what she asks him to do.' },
       { text: 'Press the Share button in this meeting app so that I can see your screen' },
-      { text: 'Then you will need to send back the extra I put in by mistake', note: 'This does ask for money, and it is why the case looks like a request to pay. But it comes second, and when a message asks for two things, the answer is the earlier one in the list.' }
+      { text: 'Then you will need to send back the extra I put in by mistake', note: 'That asks for money, but it comes second. The request to see his screen comes first, so it wins.' }
     ] },
 
   { id: 'g-sim-fee', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a reactivation fee for a SIM',

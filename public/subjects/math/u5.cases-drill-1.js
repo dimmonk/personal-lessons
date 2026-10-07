@@ -1,5 +1,5 @@
 // Basic Math, Unit Five: the drill's problems (part 1 of 9), asked as a whole route.
-// Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question,
+// Every problem has a route, marked words and a reason for the key's first question and for the unit's own question,
 // and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
@@ -22,15 +22,15 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different ways there are to go, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give two separate choices, a road for the first leg and a road for the second, each from a list of its own, and ask how many different ways there are to go, so the answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many ways there are to drive, so you are counting results.',
+      C1: 'The words {cue:C1} give two separate choices, a road for each leg, each from its own list.'
     },
     not: {
       outcome: 'perm',
-      why: 'Picking from one group, so that each pick takes something off the list for the next, would be {o:perm}. Here every choice has a full list of its own, and nothing picked on one list changes another.'
+      why: 'The picks come out of one group, so each pick takes something off the list. Here every choice has its own full list.'
     },
     steps: [
-      { does: 'Name each choice that has to be made', working: 'first leg; second leg' },
+      { does: 'Name each choice', working: 'first leg; second leg' },
       { does: 'Count the full list for each choice', working: 'first leg: 4; second leg: 3' },
       { does: 'Multiply the counts', working: '4 × 3 = 12. That is 12 ways to go' }
     ],
@@ -41,7 +41,7 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '7 ways',
-          slip: 'you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.'
+          slip: 'you add the sizes of the lists, which counts single items and never a whole result.'
         },
         {
           id: 's2',
@@ -50,6 +50,6 @@ FC.cases('math', 'u5', [
         }
       ]
     },
-    why: 'Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.'
+    why: 'Every item on one list goes with every item on the next, so each new list multiplies the number of results. Adding would count single items and never a whole result made of one pick from each list.'
   }
 ]);

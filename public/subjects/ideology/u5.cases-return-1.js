@@ -10,7 +10,7 @@ FC.cases('ideology', 'u5', [
             R1: "The government's job is to keep the courts open and the doors honest, and not to change my hours" },
     reason: { D1: 'The text puts first what each person is free to do: {cue:D1}.',
               R1: 'The text hears the complaint that the hours leave people out, and says the same hours for everyone are fair: {cue:R1}. The government is to keep to the courts and honest dealing.' },
-    not: { outcome: 'idegal', why: 'The women’s health statement was also about clinic hours that are the same for every patient. That statement said the hours leave a group behind and asked for them to change. This text says the same hours for everyone are fair, and asks for no change.' } },
+    not: { outcome: 'idegal', why: 'The women’s health statement was also about clinic hours that are the same for every patient, but it said the hours leave a group behind and asked for them to change. This text says the same hours for everyone are fair, and asks for no change.' } },
 
   { id: 'i5-ret-modlib-1', use: 'return', tier: 'clean', setting: 'schooling', topic: 'a library in every town',
     text: "From a letter by the Garrow Fair Start Group: 'Each of us has the right to speak and to read what we choose. A right to read means little with no book within reach. We ask the government to pay for a library in every town and a computer for every child who has none, and we will all pay for it together.'",
@@ -28,5 +28,5 @@ FC.cases('ideology', 'u5', [
             R1: ['Treating everyone alike has left us out', 'Hold the permit day in the villages'] },
     reason: { D1: 'The text wants fair treatment for the hill traders, and says when that will be so: {cue:D1}.',
               R1: 'A permit that is the same for everyone is said to have left the hill traders out, and the text asks for the permit day to move: {cue:R1}.' },
-    not: { outcome: 'clib', why: 'The street-music petition also dealt with a permit. That petition said nobody should need one, and asked the council to keep out. This text accepts the permit, says it leaves one group out, and asks for the way it is given to change.' } }
+    not: { outcome: 'clib', why: 'The street-music petition also dealt with a permit, but it said nobody should need one and asked the council to keep out. This text accepts the permit, says it leaves one group out, and asks for the way it is given to change.' } }
 ]);

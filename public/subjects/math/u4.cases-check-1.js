@@ -20,18 +20,18 @@ FC.cases('math', 'u4', [
     segments: [
       {
         text: 'A train is 340 km from its destination',
-        note: 'That gives the start of the amount. You are asked for the words that say how it changes each time.'
+        note: 'That only gives where the amount starts. You are asked for the words that say how it changes.'
       },
       { text: 'and it gets 85 km closer every hour.' },
       {
         text: 'How far from its destination will it be after 3 hours?',
-        note: 'That is the question, and it gives a time or a target. The words that say how the amount changes each time come before it.'
+        note: 'That is the question. The words that say how the amount changes each time come before it.'
       }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the distance going down by the same number every hour, whatever it has reached so far, so the answer is {a:G1.adds}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show the distance going down by the same number every hour, whatever it has reached so far.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it.'
     }
   },
 
@@ -52,18 +52,18 @@ FC.cases('math', 'u4', [
     segments: [
       {
         text: 'A patient is given 160 mg of a medicine.',
-        note: 'That gives the start of the amount. You are asked for the words that say how it changes each time.'
+        note: 'That only gives where the amount starts. You are asked for the words that say how it changes.'
       },
       { text: 'Every hour the amount in the blood falls to half of what it was.' },
       {
         text: 'How much will be in the blood after 3 hours?',
-        note: 'That is the question, and it gives a time or a target. The words that say how the amount changes each time come before it.'
+        note: 'That is the question. The words that say how the amount changes each time come before it.'
       }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every hour, here a halving, so the answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every hour, here a halving.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it.'
     }
   },
 
@@ -87,14 +87,14 @@ FC.cases('math', 'u4', [
     segments: [
       {
         text: 'A café sells 200 coffees a day, and its daily sales grow by 10% every month.',
-        note: 'That gives the start and how the amount changes. You are asked for the words that say what the problem wants to know.'
+        note: 'That gives the start and how the amount changes. You are asked for the words that say what the problem wants to find out.'
       },
       { text: 'After how many months will it sell 400 coffees a day?' }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount being multiplied by the same number every month, so the answer is {a:G1.multiplies}.',
-      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there, so the answer is {a:G2.howlong}.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show the amount being multiplied by the same number every month.',
+      G2: 'The words {cue:G2} give a target for the amount and ask how long until it gets there.'
     }
   },
 
@@ -115,18 +115,18 @@ FC.cases('math', 'u4', [
     segments: [
       {
         text: 'A parking fee was $1.50 an hour.',
-        note: 'That gives the amount before the change. You are asked for the words that say what happens to the amount after it.'
+        note: 'That only gives the amount before the change. You are asked for the words that say what happens after it.'
       },
       { text: 'In June it rose to $2.00 an hour, and it has not changed since.' },
       {
         text: 'What will it cost an hour in 3 years?',
-        note: 'That is the question, and it gives a time. The words that say what happens to the amount come before it.'
+        note: 'That is the question. The words that say what happens to the amount come before it.'
       }
     ],
     reason: {
-      M1: 'The words {cue:M1} follow one amount as time passes, and the problem asks what it will be or how long it takes to reach a target. No whole number is being split, no number is hidden in a {t:formula}, and there is no shape or chance, so the answer to the first question is {a:M1.growth}.',
-      G1: 'The words {cue:G1} show the amount changing one time and staying where it reached, so no change repeats and the answer is {a:G1.once}.',
-      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it, so the answer is {a:G2.willbe}.'
+      M1: 'The words {cue:M1} follow one amount as time passes.',
+      G1: 'The words {cue:G1} show one change that then stayed put, so nothing repeats.',
+      G2: 'The words {cue:G2} give a time and ask for the amount at the end of it.'
     }
   },
 

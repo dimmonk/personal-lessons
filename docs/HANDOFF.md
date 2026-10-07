@@ -24,6 +24,16 @@ All 42 units are `status: 'draft'`: none has had the cold read the standard requ
 
 **Quick lessons (2026-10-05, standard section 19).** The first rebuild read like a course for a specialist. Every unit was then trimmed, cut not rewritten, to what a beginner needs to explain and use each idea after one read: a real example first, an answer before the reason, quick questions with an explanation each, and questions coming back on later days. There are no word counts or targets; `node tools/measure.mjs` sizes units for information only. The engine's own wording was cut the same way (`FC.ENGINE` 3): feedback is right or wrong, the reason, and after a miss one line; no machinery sentences. The brief the trim agents followed is the method for any future trim: section 19 plus "salvage, not rewrite".
 
+**Plain, concrete writing (2026-10-07, standard section 20).** Every key, subject note, unit and specimen file was rewritten to the standard the owner approved on the TMV coach course:
+- each card leads with a real story, then the idea;
+- "How to spot it" (and "What to do") are numbered steps: a bold action and one line of why;
+- names are plain and short (Psychology: "What are you looking at?" with "A choice and its reasons", "Something done to someone", "A lifelong pattern", "Just a one-off");
+- feedback is at most two sentences (V63);
+- abstract and textbook words are banned in every subject (`ABSTRACT` in `tests/plain-words.mjs`, V62 and the browser tests), next to each key's own `avoid` list;
+- the learner's word for an example is "story" ("problem" in Math, from `subject.example`).
+
+The method: the subject's key first (one agent per subject), then one agent per unit, with Psychology Unit One as the approved example. The bar is the owner's read: a card that takes a second read is a defect.
+
 `npm test` runs the data checks, about 1.1 million lesson checks, 86 negative controls and about 69,000 browser checks.
 
 ## 3. How the rebuild was done (and how to change a subject now)

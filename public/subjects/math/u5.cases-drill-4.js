@@ -1,5 +1,5 @@
 // Basic Math, Unit Five: the drill's problems (part 4 of 9), asked as a whole route.
-// Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question,
+// Every problem has a route, marked words and a reason for the key's first question and for the unit's own question,
 // and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
@@ -20,12 +20,12 @@ FC.cases('math', 'u5', [
       C1: ['no digit can be used twice', 'is a different code from']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different codes are possible, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 digits taken from the 10, with no digit used twice, so each dial has one fewer to choose from, and a different order giving a different code, so the answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask how many codes there are, so you are counting results.',
+      C1: 'The words {cue:C1} take 3 digits from the 10 with none used twice, so each dial has one fewer to choose from, and a different order is a different code.'
     },
     not: {
       outcome: 'multprin',
-      why: 'Three dials marked 0 to 9 look like three separate choices, each from its own full list, which is {o:multprin}. But here no digit may be used twice, so the second dial has only 9 digits left and the third only 8.'
+      why: 'Three dials marked 0 to 9 look like three separate full lists. But no digit can be used twice, so the second dial has only 9 digits left and the third only 8.'
     },
     steps: [
       {
@@ -45,15 +45,15 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '30 codes',
-          slip: 'you multiply the size of the group by the number of picks, 10 × 3, so no pick ever uses anyone up.'
+          slip: 'you multiply 10 × 3, the size of the group by the number of picks, so no pick uses anyone up.'
         },
         {
           id: 's2',
           text: '1,000 codes',
-          slip: 'you let the same one be picked every time, so each pick still has all 10 to choose from.'
+          slip: 'you let the same one be picked again, so each pick still has all 10 to choose from.'
         }
       ]
     },
-    why: 'The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.'
+    why: 'The first pick can be anyone in the group. That one is taken out, so the next pick is from a group one smaller, and the next from one smaller again. The counts multiply, and a different order counts as a different result.'
   }
 ]);

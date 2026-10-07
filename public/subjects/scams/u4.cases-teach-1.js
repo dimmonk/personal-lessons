@@ -1,5 +1,5 @@
-// Scams, Unit Four: the cases shown inside the cards. use 'teach' = the case of a meet card, the worked case or a look-alike card;
-// use 'check' = asked between cards. Every case carries the whole route (the gate, then the two questions of this unit).
+// Scams, Unit Four: the stories shown inside the cards. use 'teach' = the story of a meet card, the worked story or a look-alike card;
+// use 'check' = asked between cards. Every story carries the whole route (the gate, then the two questions of this unit).
 // cues[STEP] is the exact phrase that decides that question; segments are the tappable pieces; note says why a piece is not the answer.
 
 FC.cases('scams', 'u4', [
@@ -19,11 +19,11 @@ FC.cases('scams', 'u4', [
             M1: 'My phone and wallet were taken in Lisbon, and my bank has blocked my card',
             M2: 'My phone and wallet were taken in Lisbon, and my bank has blocked my card' },
     segments: [
-      { text: 'Craig has chatted with a woman called Ioana for five months on a language-learning app', note: 'This is how Craig knows her. It is not what the money is for.' },
-      { text: 'has never seen her on a live call', note: 'This shows that he has never met or seen her live. It is not what the money is for either.' },
+      { text: 'Craig has chatted with a woman called Ioana for five months on a language-learning app', note: 'That is how Craig knows her. It does not say what the money is for.' },
+      { text: 'has never seen her on a live call', note: 'That shows he has never seen her live. It does not say what the money is for either.' },
       { text: 'My phone and wallet were taken in Lisbon, and my bank has blocked my card' },
-      { text: "Please send $1,100 to my friend's account", note: 'This is the request. What it is for comes in the sentence before it.' } ],
-    reason: { M1: 'The money is for trouble that the writer says is hers: {cue:M1}. Craig knows her only through an app, and has never seen her on a live call.' } },
+      { text: "Please send $1,100 to my friend's account", note: 'That is the request itself. What it is for comes in the sentence before.' } ],
+    reason: { M1: 'The money is for trouble that she says is hers: {cue:M1}.' } },
 
   { id: 'm-pig-wrongnumber', use: 'teach', tier: 'clean', setting: 'money', topic: 'a wrong-number text and a trading app', name: 'The wrong number',
     text: "In March a stranger texted Lena: 'Sorry, wrong number! But you sound nice.' She replied politely, and they began to chat every day. The man, who gave his name as Kai, said he was a surveyor who traded currencies in his spare time. After six weeks he showed her how much he had made on a trading app and told her to download it. She put in $200 as a test, watched it grow to $260 in a week, and took out $100 without any trouble. Then Kai wrote: 'The platform has an offer for larger accounts this week. Put in $6,000 and your profits will triple.'",
@@ -39,10 +39,10 @@ FC.cases('scams', 'u4', [
             M1: 'she told him about a fund she traded in, which he could see in a link she sent',
             M2: 'Move your savings into it this week' },
     segments: [
-      { text: 'Dev matched with a woman called Amelia on a dating app', note: 'This is how Dev knows her. It does not say where the money is to go.' },
+      { text: 'Dev matched with a woman called Amelia on a dating app', note: 'That is how Dev knows her. It does not say where the money is to go.' },
       { text: 'Move your savings into it this week' },
-      { text: 'and I will guide you through every step', note: 'This is her offer of help. It is not where she asks him to put the money.' },
-      { text: 'They have never met', note: 'This is something to point to for the first question, but it is not the request.' } ],
+      { text: 'and I will guide you through every step', note: 'That is her offer of help. It does not say where the money goes.' },
+      { text: 'They have never met', note: 'That helps with the first question, but it is not the request.' } ],
     reason: { M2: 'Dev is asked to put his savings into a fund that she showed him: {cue:M2}.' } },
 
   { id: 'm-adv-lottery', use: 'teach', tier: 'clean', setting: 'money', topic: 'a prize drawing she never entered', name: 'The drawing nobody entered',
@@ -58,7 +58,7 @@ FC.cases('scams', 'u4', [
     cues: { D1: 'pay a $180 registration fee to the account in this message',
             M1: 'You have been selected for a $9,000 grant for small businesses',
             M2: 'To receive it, pay a $180 registration fee' },
-    reason: { M1: 'The text says that a grant is waiting for Sade, which she never applied for: {cue:M1}.' } },
+    reason: { M1: 'The text says that a grant is waiting for Sade, though she never applied: {cue:M1}.' } },
 
   { id: 'm-rec-trading', use: 'teach', tier: 'clean', setting: 'money', topic: 'a trading site taking his savings', name: 'The recovery email',
     text: "Malik lost $3,000 to a fake trading website in March, and he told nobody. In November an email arrives from a 'fund recovery service': 'We have traced the money you lost and can have it returned to your account. Our fee is $450, payable in advance by wire transfer, and refundable once your funds are released.'",
@@ -73,7 +73,7 @@ FC.cases('scams', 'u4', [
     cues: { D1: 'A release fee of $700 will unlock it',
             M1: 'Your money has been found',
             M2: 'A release fee of $700 will unlock it' },
-    reason: { M1: 'The firm says that money that Nora lost to a man she met online has been found: {cue:M1}. The money was hers, and it was taken from her.' } },
+    reason: { M1: 'The firm offers to give back money that Nora lost: {cue:M1}.' } },
 
   { id: 'm-real-rent', use: 'teach', tier: 'clean', setting: 'home', topic: "rent reminded in the agency's own app", name: 'The agency rent reminder',
     text: "Hana signed a one-year lease at a rental agency's office that she walked into herself. The agreement says rent of $950 is due on the 1st, paid into the agency's client account, and prints the account name, routing number and account number on page two. On the 25th the agency's own app, which she installed when she signed, shows: 'Please pay $950 by the 1st, to the account on page two of your agreement. Questions? Call the office at the number on your agreement.' It is the same amount, to the same account, as every month, and nobody mentions any deadline but the 1st.",
@@ -89,10 +89,10 @@ FC.cases('scams', 'u4', [
             M1: 'an invoice arrives from the same email address',
             M2: 'the same total and the same bank account details as the quote' },
     segments: [
-      { text: 'a roofer repaired its roof for the $2,200 he quoted by email', note: 'This is what Wen agreed. The words to tap are the ones that show that the invoice matches it.' },
+      { text: 'a roofer repaired its roof for the $2,200 he quoted by email', note: 'That is what Wen agreed. The words to tap show that the invoice matches it.' },
       { text: 'the same total and the same bank account details as the quote' },
-      { text: 'Pay within 30 days', note: 'This is the request, and it gives her a month. It does not show what the invoice matches.' } ],
-    reason: { M2: 'The invoice matches what Wen agreed: {cue:M2}. Nothing has changed, and she can call the roofer at the number on his quote.' } },
+      { text: 'Pay within 30 days', note: 'That is the request, and it gives her a month. It does not show what the invoice matches.' } ],
+    reason: { M2: 'The invoice matches what Wen agreed: {cue:M2}.' } },
 
   { id: 'm-inv-builder', use: 'teach', tier: 'clean', setting: 'home', topic: "a landscaper's monthly invoice", name: "The landscaper's new bank",
     text: "Every month for a year Joe has paid the invoice that his landscaper, Maeve, emails him on the last Friday, always into the same account. This month's invoice, for $1,850, arrives in the same email thread as before, with the same logo and signature. At the bottom it says: 'Please note that we have changed bank. From now on please pay all invoices, starting with this one, into the new account below.'",
@@ -108,10 +108,10 @@ FC.cases('scams', 'u4', [
             M1: "Owen's accountant has emailed him a bill every quarter for three years",
             M2: 'We have moved to a new bank' },
     segments: [
-      { text: "Owen's accountant has emailed him a bill every quarter for three years", note: 'This is the arrangement. It is not the part that is different this time.' },
+      { text: "Owen's accountant has emailed him a bill every quarter for three years", note: 'That is the usual arrangement, not what is different this time.' },
       { text: 'We have moved to a new bank' },
-      { text: 'Please pay the $620 into the account below', note: 'This is the request. The words to tap are the ones that say what has changed.' } ],
-    reason: { M2: 'A message says that the bank has changed: {cue:M2}. The new details are what Owen is asked to pay into.' } },
+      { text: 'Please pay the $620 into the account below', note: 'That is the request. The words to tap say what has changed.' } ],
+    reason: { M2: 'A message says that the bank has changed: {cue:M2}.' } },
 
   { id: 'm-link-parcel', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a redelivery fee in a text', name: 'The redelivery fee',
     text: "A text arrives on Jonas's phone from a number he does not know: 'ParcelPoint: your package could not be delivered. Pay a $2.99 redelivery fee at parcelpoint-redeliver.example to arrange a new time, or it will be sent back.' Jonas is expecting a package.",
@@ -126,7 +126,7 @@ FC.cases('scams', 'u4', [
     cues: { D1: 'Update your card at streamplus-billing.example',
             M1: 'Your account has been suspended because your last payment failed',
             M2: 'Update your card at streamplus-billing.example' },
-    reason: { M2: 'Kofi is told to pay on a page that he reaches through a link in the text: {cue:M2}.' } },
+    reason: { M2: 'Kofi is told to pay on a page behind a link in the text: {cue:M2}.' } },
 
   { id: 'm-off-tax', use: 'teach', tier: 'clean', setting: 'government', topic: 'a warrant and gift cards', name: 'The tax caller',
     text: "Dee's landline rings. A recorded voice says the IRS has issued a warrant for her arrest. She presses 1, and a man who gives his name as Officer Grant says she owes $2,300 in unpaid tax and that officers will be at her door within two hours unless it is settled today. He tells her to buy gift cards at the supermarket and read him the numbers, and not to tell the store staff why, because 'they may be involved'.",
@@ -141,7 +141,7 @@ FC.cases('scams', 'u4', [
     cues: { D1: 'unless you pay today in prepaid cards',
             M1: 'a claim of $480 has been made against your company',
             M2: 'pay today in prepaid cards. Do not contact your attorney' },
-    reason: { M1: 'The text claims to come from a court, and the reason is a claim against her firm: {cue:M1}.' } },
+    reason: { M1: 'The text claims to come from a court, over a claim against her firm: {cue:M1}.' } },
 
   { id: 'm-over-bike', use: 'teach', tier: 'clean', setting: 'shopping', topic: 'a used bike and a typo', name: 'The bike with a typo',
     text: "Rafa lists his used bike online for $400. Within the hour a buyer called Nick writes: 'I'll take it, no haggling.' A payment of $800 appears in Rafa's account. Nick writes again: 'Sorry, I typed the wrong amount. Please send the $400 difference to my courier's account, and he will collect the bike tomorrow.'",
@@ -165,7 +165,7 @@ FC.cases('scams', 'u4', [
     cues: { D1: 'Please pay the $300 deposit by the 10th',
             M1: "Lucia booked a vacation apartment through the owner's own website",
             M2: ['into the account named on your booking confirmation', 'Call me at the number on the website'] },
-    reason: { M1: 'The deposit is part of a booking that Lucia made herself: {cue:M1}. That is a deal that she is in, so the answer is {a:M1.deal}.' } },
+    reason: { M1: 'The deposit is part of a booking that Lucia made herself: {cue:M1}. That is a deal she is in, so the answer is {a:M1.deal}.' } },
 
   { id: 'm-chk-m2', use: 'check', tier: 'clean', setting: 'government', topic: 'a passport held at an airport',
     text: "Pete has written to a woman called Carla for seven months and has never met her. She writes: 'The police at the airport have taken my passport and say I must pay a $1,500 fine before they give it back. Please send it to the account below, and then I can fly to you.'",
@@ -173,5 +173,5 @@ FC.cases('scams', 'u4', [
     cues: { D1: 'Please send it to the account below',
             M1: 'The police at the airport have taken my passport and say I must pay a $1,500 fine',
             M2: 'The police at the airport have taken my passport and say I must pay a $1,500 fine' },
-    reason: { M2: 'Carla asks Pete to pay a fine that she says is hers, so that she can leave the airport: {cue:M2}. That is trouble of someone he has never met, so the answer is {a:M2.crisis}.' } }
+    reason: { M2: 'Carla asks Pete to pay a fine of hers so that she can leave the airport: {cue:M2}. That is trouble of someone he has never met, so the answer is {a:M2.crisis}.' } }
 ]);

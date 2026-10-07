@@ -1,5 +1,5 @@
 // Basic Math, Unit Five: the drill's problems (part 8 of 9), asked as a whole route.
-// Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question,
+// Every problem has a route, marked words and a reason for the key's first question and for the unit's own question,
 // and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
@@ -22,16 +22,16 @@ FC.cases('math', 'u5', [
       ]
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a detector that has shown a result, how common damp is, and how often the detector is right and wrong, and ask how likely it is that the result is right, so the answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that the house has damp, so you are finding a chance, not a count.',
+      C1: 'The words {cue:C1} give a detector that has already shown a result, and how often it is right and wrong, so the question is how far to trust it.'
     },
     not: {
       outcome: 'complement',
-      why: 'The problem is not about at least one of several separate things happening, which is {o:complement}. A test has given one result, and the question is how far to trust it.'
+      why: 'This is not about at least one of several separate things happening. A test has given one result, and the question is how far to trust it.'
     },
     steps: [
       {
-        does: 'Imagine a large group and split it into those who have the thing and those who do not',
+        does: 'Imagine a big group and split it into people who have it and people who do not',
         working: 'Imagine 10,000 houses. 1 in 25 have damp: 400 have damp and 9,600 do not'
       },
       { does: 'Count the positive results among those who have it', working: '90% of 400 = 360' },
@@ -52,7 +52,7 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '90%',
-          slip: 'you take the share of people who have it that the test catches, 90%, as the chance that a positive result is right.'
+          slip: 'you take the share of sick people the test catches, 90%, as the chance that a positive result is right.'
         },
         {
           id: 's2',
@@ -61,6 +61,6 @@ FC.cases('math', 'u5', [
         }
       ]
     },
-    why: 'A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.'
+    why: 'A positive result comes from two groups: people who have the thing and are rightly flagged, and people who do not and are wrongly flagged. The chance that a positive result is right is the share of all positive results that come from the first group. When the thing is rare, the second group starts from nearly everyone, so even a small error rate gives many wrong positives.'
   }
 ]);

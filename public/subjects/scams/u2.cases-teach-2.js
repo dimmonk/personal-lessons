@@ -15,7 +15,7 @@ FC.cases('scams', 'u2', [
     text: "A woman calls Walt: 'I am from the technical team at your computer's maker. We have detected errors coming from your computer. If you let me see your screen I can fix them now.' Walt has not contacted anyone, and his computer has been working well.",
     outcome: 'techsupport', route: { D1: ['device'], I1: ['support'] },
     cues: { I1: ['We have detected errors coming from your computer', 'If you let me see your screen I can fix them now'] },
-    reason: { I1: 'A caller says that there is a problem with Walt’s device and offers to fix it: {cue:I1}. Nobody could know that from outside, and the caller wants to see his device to fix it.' } },
+    reason: { I1: 'A caller says there is a problem with Walt’s device and offers to fix it: {cue:I1}. Nobody could know that from outside.' } },
 
   { id: 'dv-helpdesk-call', use: 'teach', tier: 'misleading', setting: 'home', topic: 'a broadband help desk called from the bill', name: 'The help desk call',
     text: "Kemal's broadband has been slow for days. He finds the company's number on his last bill and calls it. A helper answers: 'I can look at it from here if you open the meeting app and press Share, so that I can see your screen.' Kemal presses Share. Nobody had contacted him about the problem.",
@@ -24,8 +24,8 @@ FC.cases('scams', 'u2', [
     segments: [
       { text: "Kemal's broadband has been slow for days", note: 'That is the problem he wants fixed. It does not say how the call began.' },
       { text: "finds the company's number on his last bill and calls it" },
-      { text: "A helper answers: 'I can look at it from here if you open the meeting app and press Share, so that I can see your screen.' Kemal presses Share", note: 'That is the request to share the device. It is the same request that a scam call makes, so it cannot settle which this is.' },
-      { text: 'Nobody had contacted him about the problem', note: 'That is true, and it matters, but it says what did not happen. The words that show how the call began are about his bill.' }
+      { text: "A helper answers: 'I can look at it from here if you open the meeting app and press Share, so that I can see your screen.' Kemal presses Share", note: 'That is the request to share his screen. A scam call makes the same request, so it cannot settle which this is.' },
+      { text: 'Nobody had contacted him about the problem', note: 'True, but it only says what did not happen. How the call began is in the piece about his bill.' }
     ] },
 
   { id: 'dv-search-broadband', use: 'teach', tier: 'misleading', setting: 'home', topic: 'a broadband helpline found in a search', name: 'The helpline search',
@@ -34,9 +34,9 @@ FC.cases('scams', 'u2', [
     cues: { I1: ["calls the number at the top of the results, the one with a small 'Ad' label beside it", 'so that he can see her laptop and fix the problem'] },
     segments: [
       { text: "Ivy's wifi has dropped, and she cannot get a connection", note: 'That is the problem she is trying to fix. It does not say where the number she calls came from.' },
-      { text: "On her phone she types 'Brightnet broadband helpline' into a search page and", note: 'She did type the company’s name herself, and that is why it can feel like her own visit. But the results that come back are not hers: the search page chose what to show. The words that settle it are in the next piece.' },
+      { text: "On her phone she types 'Brightnet broadband helpline' into a search page and", note: 'She typed the company’s name herself, which is why it feels like her own visit. But the search page chose the results, not her.' },
       { text: "calls the number at the top of the results, the one with a small 'Ad' label beside it" },
-      { text: 'A man answers: \'Brightnet support.\' He asks her to open a web page and type in a code so that he can see her laptop and fix the problem', note: 'That is what the man asks once she has called. It shows what she is being asked to do, not where the number came from.' }
+      { text: 'A man answers: \'Brightnet support.\' He asks her to open a web page and type in a code so that he can see her laptop and fix the problem', note: 'That is what the man asks once she has called. It does not show where the number came from.' }
     ] },
 
   /* ---------- Refund scam ---------- */
@@ -49,7 +49,7 @@ FC.cases('scams', 'u2', [
     text: "Dev's phone rings: 'This is the billing team at your gym. You were charged twice this month, so $40 is coming back to you. Open the meeting app and press Share so that I can put it through while you watch.' Dev has not asked for anything.",
     outcome: 'refundscam', route: { D1: ['device'], I1: ['refund'] },
     cues: { I1: ['You were charged twice this month, so $40 is coming back to you', 'press Share so that I can put it through while you watch'] },
-    reason: { I1: 'The caller says that Dev is owed money, and asks him to share his device while it is put through: {cue:I1}. The reason given is a refund, and Dev has not asked for one.' } },
+    reason: { I1: 'The caller says Dev is owed money and asks him to share his screen: {cue:I1}. Dev never asked for a refund.' } },
 
   { id: 'dv-lk-hal-popup', use: 'teach', tier: 'clean', setting: 'home', topic: 'a locked laptop and a helpline', name: 'The locked laptop',
     text: "Hal's laptop starts beeping, and a page says: 'Your computer is locked. Call the helpline at (800) 555-0172.' He calls, and a man says: 'I can fix this today, but I need to see your screen. Press Share in the meeting app and I will tell you what to click.'",
@@ -66,10 +66,10 @@ FC.cases('scams', 'u2', [
     outcome: 'refundscam', route: { D1: ['device'], I1: ['refund'] },
     cues: { I1: ['you were charged twice for it, so I owe you $199 back', 'Let me see your screen and I will send the refund'] },
     segments: [
-      { text: "A page fills Nia's computer: 'Your computer is at risk. Call (800) 555-0165 now.'", note: 'That is a warning that gives her a number to call. It is why the case can look like someone offering to fix a problem. It is not the part that settles which of the two answers this case gets.' },
-      { text: 'She calls, and a man says he will clear the problem', note: 'That is a man offering to fix a problem with her device. It fits one answer. The case has a second reason in it, and the second reason is the one that wins.' },
+      { text: "A page fills Nia's computer: 'Your computer is at risk. Call (800) 555-0165 now.'", note: 'A warning with a number to call is why this looks like {o:techsupport}. It is not the part that settles it.' },
+      { text: 'She calls, and a man says he will clear the problem', note: 'He offers to fix her device, which fits {o:techsupport}. But the refund he brings up next is the reason that wins.' },
       { text: 'you were charged twice for it, so I owe you $199 back' },
-      { text: 'Let me see your screen and I will send the refund', note: 'That is the request, and it is the same request whichever answer the case gets, so it cannot settle which one it is.' }
+      { text: 'Let me see your screen and I will send the refund', note: 'That is the request. It is the same whichever answer the story gets, so it settles nothing.' }
     ] },
 
   { id: 'dv-w-form', use: 'teach', tier: 'misleading', setting: 'money', topic: 'a refund form to open while on the phone', name: 'The refund form',
@@ -82,5 +82,5 @@ FC.cases('scams', 'u2', [
     text: "Dina's phone shows a red dot beside Settings. She opens Settings herself, taps Software update and presses Install. Nobody has messaged or called her about it.",
     outcome: 'realinstall', route: { D1: ['device'], I1: ['own'] },
     cues: { I1: ['She opens Settings herself, taps Software update and presses Install', 'Nobody has messaged or called her about it'] },
-    reason: { I1: 'Dina started it herself, through her phone’s own update menu: {cue:I1}. Nobody contacted her first, so nothing came to her.' } }
+    reason: { I1: 'Dina started it herself, through her phone’s own update menu: {cue:I1}. Nobody contacted her first.' } }
 ]);

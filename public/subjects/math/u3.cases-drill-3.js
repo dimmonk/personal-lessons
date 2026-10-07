@@ -17,12 +17,12 @@ FC.cases('math', 'u3', [
       A1: ['a starting charge of $6, plus $1.50 for each kilometer', 'One fare comes to $21']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} show a price for each kilometer, which looks like a rate, but a starting charge is added on top of it, and the problem gives the result of that whole calculation and asks for the kilometers in it. A rate with a fixed amount added on top is {a:A1.formula}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} look like a rate, but a starting charge is added on top, and you are given the result of the whole calculation. A rate with a fixed amount on top is {a:A1.formula}.'
     },
     not: {
       outcome: 'prop',
-      why: 'There is a calculation to undo, with a result it came to, and not only a rate to scale. {o:prop} would be the name if the problem gave only so much for so many and a new amount of the same thing.'
+      why: 'It has a calculation and a result to undo, not only a rate. It would be {o:prop} if it gave only so much for so many and a new amount.'
     },
     also: ['rate'],
     steps: [
@@ -50,7 +50,7 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '8 km',
-          slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
+          slip: 'you undo the steps in the order they were done, instead of starting with the last one.'
         },
         {
           id: 's2',
@@ -59,7 +59,7 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Undo each thing done to the missing number with its opposite, in reverse order: the last thing done sits on the outside, as socks go on before shoes and come off after them. Running the {t:formula} forward on your answer proves it.'
   },
 
   {
@@ -81,12 +81,12 @@ FC.cases('math', 'u3', [
       A1: ['A rectangular banner is 5 m long', 'a strip of 1 m is added to its width', 'its area is 40 m²']
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, and a number is left out that has to be worked out from the numbers it does give. Nothing is followed through each hour, month or year, and there is no {t:righttriangle} or copy at another size, so the answer to the first question is {a:M1.unknown}.',
-      A1: 'The words {cue:A1} give an area, which is a result, and the missing width is used once in it: it has 1 added and is then multiplied by 5. The missing width is used once, so each thing done to it can be undone, which is {a:A1.formula}.'
+      M1: 'The words {cue:M1} ask for a number to be worked out from the others. Nothing changes over time and there is no {t:righttriangle} or copy at another size, so it is {a:M1.unknown}.',
+      A1: 'The words {cue:A1} give an area, which is a result, and the missing width is used once: 1 is added to it, then it is multiplied by 5. Used once, each thing done to it can be undone, so it is {a:A1.formula}.'
     },
     not: {
       outcome: 'quad',
-      why: 'The missing number is used once in the calculation, so each thing done to it can be undone in turn. {o:quad} would be the name if it were multiplied by itself as well.'
+      why: 'The missing number is used once, so each thing done to it can be undone in turn. It would be {o:quad} if it were multiplied by itself too.'
     },
     steps: [
       {
@@ -113,7 +113,7 @@ FC.cases('math', 'u3', [
         {
           id: 's1',
           text: '7.8 m',
-          slip: 'you undo the steps in the order they were done instead of in reverse, so what was done first is undone first.'
+          slip: 'you undo the steps in the order they were done, instead of starting with the last one.'
         },
         {
           id: 's2',
@@ -122,6 +122,6 @@ FC.cases('math', 'u3', [
         }
       ]
     },
-    why: 'Each thing done to the missing number can be canceled by its opposite, and the opposites have to be done in the reverse order, because the last thing done sits outside the others, as socks go on before shoes and come off after them. Undoing from the result back through the steps leads to the number you started from, and running the {t:formula} forward on the answer proves it.'
+    why: 'Undo each thing done to the missing number with its opposite, in reverse order: the last thing done sits on the outside, as socks go on before shoes and come off after them. Running the {t:formula} forward on your answer proves it.'
   },
 ]);

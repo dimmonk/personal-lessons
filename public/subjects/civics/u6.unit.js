@@ -4,12 +4,12 @@
 
 FC.unit('civics', 'u6', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Six',
-  title: { fromKey: 'D1.states' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Five things a rule from a state, a city or a county can come to, and the two questions that tell them apart',
+  title: { text: 'Whose rule is it, and what else covers it?' },
+  subtitle: 'Check who made a state, city or county rule, and whether a federal law or a right overrides it',
   teaches: { steps: ['S1', 'S2'], outcomes: ['police', 'localgov', 'preempted', 'concurrent', 'protected'], terms: [] },
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5'],   // everything the earlier units teach may be used; the first card restates the part this unit leans on
 
@@ -18,11 +18,11 @@ FC.unit('civics', 'u6', {
   // Psychology units). test is a question to put to a case, with no names in it. taughtIn names the card for an entry with no card of its own.
   ledger: [
     { id: 'police~localgov', pair: ['police', 'localgov'], step: 'S1',
-      shared: 'Both are rules on an everyday matter that nothing federal covers, and a state and a town can make a rule on the same matter, such as quiet hours.',
-      rule: 'In {o:police} the state itself made the rule: its legislature, its governor or one of its own offices. In {o:localgov} a council, a board or a mayor made it, using what the state gave to the place. Everything else is the same: nothing federal covers the matter, and no right is taken away.',
+      shared: 'Both are rules on an everyday matter that nothing federal covers. A state and a town can each make a rule on the same thing, such as quiet hours.',
+      rule: 'In {o:police} the state itself made the rule: its legislature, its governor or one of its own offices. In {o:localgov} a council, a board or a mayor made it, with power the state handed down.',
       test: 'Who made the rule: the state itself, or a city, a town or a county?' },
     { id: 'police~preempted', pair: ['police', 'preempted'], step: 'S2',
-      shared: 'In both a state’s lawmakers made the rule, and the matter can sound like one a state would settle for itself.',
+      shared: 'In both, the state’s lawmakers made the rule, on a matter that sounds like the state’s own.',
       rule: 'In {o:police} nothing federal covers the matter, so the state decides. In {o:preempted} a federal law covers the same matter and is meant to be the only rule, so the state’s rule gives way.',
       test: 'Has Congress already written a law on this same matter, and is it meant to be the only rule?' },
     { id: 'police~concurrent', pair: ['police', 'concurrent'], step: 'S2', taughtIn: 'q-else',
@@ -30,35 +30,35 @@ FC.unit('civics', 'u6', {
       rule: 'In {o:police} no federal law covers the matter. In {o:concurrent} one does, but it sets only a minimum or leaves room, so the state’s rule stands beside it.',
       test: 'Is there a federal law on this same matter at all?' },
     { id: 'police~protected', pair: ['police', 'protected'], step: 'S2', taughtIn: 'q-else',
-      shared: 'Both are rules a state makes about what people may do in a public place.',
-      rule: 'In {o:police} the rule takes away no right, so the state may make it. In {o:protected} a right stops the rule: one of the freedoms the Constitution guards is taken from people, so the state may not make it.',
+      shared: 'Both are state rules about what people may do in a public place.',
+      rule: 'In {o:police} the rule takes away no right, so the state may make it. In {o:protected} the rule takes away a right the Constitution protects, so the state may not make it.',
       test: 'Does the rule take away a right to speak, to worship, to publish or to gather peacefully?' },
     { id: 'localgov~preempted', pair: ['localgov', 'preempted'], step: 'S2', taughtIn: 'q-else',
-      shared: 'Both are rules a city, a town or a county makes, and the matter can sound like a purely local one.',
-      rule: 'In {o:localgov} nothing federal covers the matter, so the city or county decides with the power its state handed down. In {o:preempted} a federal law is meant to be the only rule, so the local rule gives way, as a state’s would.',
+      shared: 'Both are rules a city, a town or a county made, on a matter that sounds purely local.',
+      rule: 'In {o:localgov} nothing federal covers the matter, so the city or county decides. In {o:preempted} a federal law is meant to be the only rule, so the local rule gives way, as a state’s would.',
       test: 'Does a federal law already cover this matter and say that it is the only rule?' },
     { id: 'localgov~concurrent', pair: ['localgov', 'concurrent'], step: 'S2', taughtIn: 'q-else',
-      shared: 'Both are local rules on a matter that touches daily life, and in both the local rule stands.',
-      rule: 'In {o:localgov} the local rule is the only rule on the matter. In {o:concurrent} a federal law covers the matter too, but it sets only a minimum or leaves room, so the local rule stands beside it.',
+      shared: 'Both are local rules on a matter of daily life, and in both the local rule stands.',
+      rule: 'In {o:localgov} the local rule is the only rule on the matter. In {o:concurrent} a federal law covers it too, but sets only a minimum or leaves room, so the local rule stands beside it.',
       test: 'Is the local rule alone on this matter, or is there a federal law beside it?' },
     { id: 'localgov~protected', pair: ['localgov', 'protected'], step: 'S2',
       shared: 'Both are rules a city makes about its own streets and sidewalks.',
-      rule: 'In {o:localgov} the rule takes away no right, so the city may make it. In {o:protected} a right stops the rule, because one of the freedoms the Constitution guards is taken from people, and a city has no power to take it, whatever its state handed down.',
+      rule: 'In {o:localgov} the rule takes away no right, so the city may make it. In {o:protected} the rule takes away a freedom the Constitution guards, such as speech, so the city may not make it, and no state can give it that power.',
       test: 'Does the rule aim at what people say, believe or publish, or does it only say where, when or how?' },
     { id: 'preempted~concurrent', pair: ['preempted', 'concurrent'], step: 'S2',
-      shared: 'In both a federal law and a state’s or a city’s rule cover the same matter.',
-      rule: 'In {o:preempted} the federal law is meant to be the only rule, or the two cannot both be obeyed, so the state’s or city’s rule gives way. In {o:concurrent} the federal law sets only a minimum or leaves room, so the rule stands beside it, and obeying the rule also obeys the federal law.',
-      test: 'Does the federal law say that it is the only rule, or does it say that it is a minimum or leave room for the states?' },
+      shared: 'In both, a federal law and a state’s or a city’s rule cover the same matter.',
+      rule: 'In {o:preempted} the federal law is meant to be the only rule, or the two cannot both be obeyed, so the other rule gives way. In {o:concurrent} the federal law sets only a minimum or leaves room, so obeying the state’s or city’s rule also obeys the federal law.',
+      test: 'Does the federal law say that it is the only rule, or that it is a minimum with room for the states?' },
     { id: 'preempted~protected', pair: ['preempted', 'protected'], step: 'S2', taughtIn: 'q-else',
-      shared: 'In both the state’s or the city’s rule cannot stand.',
+      shared: 'In both, the state’s or the city’s rule cannot stand.',
       rule: 'In {o:preempted} a federal law stops the rule, and no right is needed. In {o:protected} a right stops the rule, and no federal law is needed.',
       test: 'What stops the rule: another law on the same matter, or a right that the rule takes away?' },
     { id: 'concurrent~protected', pair: ['concurrent', 'protected'], step: 'S2', taughtIn: 'q-else',
-      shared: 'In both something from the federal side of the Constitution sits beside the rule: a law in one, a right in the other.',
+      shared: 'In both, something from the federal side sits beside the rule: a law in one, a right in the other.',
       rule: 'In {o:concurrent} the rule stands, because the federal law leaves room. In {o:protected} the rule does not stand, because it takes away a right.',
-      test: 'Does the rule stand beside the federal side, or does it take something away that the federal side protects?' },
+      test: 'Does the rule stand beside the federal side, or does it take away something that the federal side protects?' },
     { id: 'protected~beyondcong', pair: ['protected', 'beyondcong'], step: 'D1',
-      shared: 'In both a right the Constitution protects stops a rule, and the same right can be involved in both.',
+      shared: 'In both, a right in the Constitution stops the rule, and it can be the same right.',
       rule: 'In {o:beyondcong} the rule is a law of Congress, and the first answer is {a:D1.congress}. In {o:protected} the rule is a state’s, a city’s or a county’s, and the first answer is {a:D1.states}.',
       test: 'Who made the rule: Congress, or a state, a city or a county?' }
   ],
@@ -68,7 +68,7 @@ FC.unit('civics', 'u6', {
   parts: [
     { id: 'p1', title: 'Who made the rule',
       cards: ['orient', 'meet-police', 'check-police', 'meet-localgov', 'check-localgov', 'look-police-localgov', 'q-who', 'check-who'] },
-    { id: 'p2', title: 'What else covers the matter, then the drill',
+    { id: 'p2', title: 'A federal law or a right, then the drill',
       cards: ['meet-preempted', 'check-preempted', 'meet-concurrent', 'check-concurrent', 'look-preempted-concurrent', 'exc-crib',
               'meet-protected', 'check-protected', 'exc-councilmag', 'look-protected-beyondcong', 'q-else', 'check-else',
               'worked-parkevent'], drill: true, close: ['recap'] }
@@ -79,7 +79,7 @@ FC.unit('civics', 'u6', {
   // inside a tier band (clean, then varied, then misleading) and shuffles inside each group. Every case is new.
   drill: {
     key: 'u6',            // no old quick-drill counter belonged to this unit: the old state-branch cards were drilled under the first unit's counter
-    add: 'Many of these cases name a federal law, a state and a city all at once, and the one named first is often not the one that decides. Read each story to its end, find who made the rule, and then ask what else covers the same matter.',
+    add: 'Many of these stories name a federal law, a state and a city all at once, and the one named first often does not decide it. Read each story to the end, find who made the rule, then ask what else covers the same matter.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'u6-p-fishing', step: 'S1' }, { case: 'u6-p-market', step: 'S1' }],
@@ -108,7 +108,8 @@ FC.unit('civics', 'u6', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the state, city or county branch of Civics, with two questions. It replaces old Unit One cards nine to sixteen, the "three names that look alike" card of old Unit Four, the crib-law worked case and the news item of old Unit Seven, and old specimens 2, 6, 10, 15 and 19. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

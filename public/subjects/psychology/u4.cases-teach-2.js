@@ -13,8 +13,8 @@ FC.cases('psychology', 'u4', [
     text: "Pru is forty and belongs to a book group. When her closest friend there mentioned that she might not come every month, Pru called her eleven times, brought gifts to the next meeting and said she would be lost without her. When the friend then missed a meeting, Pru told the others that she had never really cared, and the next day sent her a long apology. Pru's sister says it has been the same with every close friend and boyfriend since school. Six people have stopped answering her calls.",
     outcome: 'borderline', route: { D1: ['pattern'], P1: ['clings'] },
     cues: { P1: ['called her eleven times, brought gifts to the next meeting and said she would be lost without her', 'told the others that she had never really cared', 'Six people have stopped answering her calls'] },
-    reason: { P1: 'When her friend seems about to drift away, Pru reaches for her hard, and then turns on her: {cue:P1}. It has been the same with every close friend and boyfriend since school, and it has cost her six people.' },
-    not: { outcome: 'narcvuln', why: 'Pru does not pull back and keep a quiet count of who got what. She reaches for the friend, hard, and when that fails she attacks her, then begs her back.' } },
+    reason: { P1: 'When her friend seems about to drift away, Pru grabs hold, then turns on her: {cue:P1}. It has been the same with every close friend and boyfriend since school.' },
+    not: { outcome: 'narcvuln', why: 'Pru does not pull back and keep a quiet count. She reaches hard for the friend, attacks when that fails, then begs her back.' } },
 
   /* ---------- Histrionic personality ---------- */
   { id: 'pa-marguerite', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a guest who must be at the center', name: 'The guest who is always at the center',
@@ -26,8 +26,8 @@ FC.cases('psychology', 'u4', [
     text: "Tilly is thirty-eight and sings in a community choir. She arrives in a different costume each week and tells everyone about her week at a volume that stops the rehearsal. When the choir applauded a soloist, Tilly clutched her chest and said she felt faint with emotion, and kept it up until the conductor stopped to ask if she was all right. She has been like this in every group she has joined since she was a teenager. The choir has lost two altos who said they could not rehearse around her, and the conductor has asked her three times to keep the drama for the stage.",
     outcome: 'histrionic', route: { D1: ['pattern'], P1: ['center'] },
     cues: { P1: ['tells everyone about her week at a volume that stops the rehearsal', 'clutched her chest and said she felt faint with emotion', 'The choir has lost two altos'] },
-    reason: { P1: 'Tilly puts herself at the center, and when the applause goes to the soloist her display gets bigger: {cue:P1}. It has been the same in every group since her teens, and it has cost the choir two singers.' },
-    not: { outcome: 'narcgrand', why: 'Tilly does not run the soloist down or treat her with scorn. She turns the attention back to herself with a bigger display.' } },
+    reason: { P1: 'Tilly puts herself at the center, and when the applause went to the soloist her show got bigger: {cue:P1}. It has been the same in every group since her teens.' },
+    not: { outcome: 'narcgrand', why: 'Tilly does not run the soloist down or turn scornful. She pulls the attention back to herself with a bigger show.' } },
 
   /* ---------- Antisocial personality ---------- */
   { id: 'pa-callum', use: 'teach', tier: 'clean', setting: 'money', topic: 'a car dealership owner and his customers', name: 'The dealership owner',
@@ -39,8 +39,8 @@ FC.cases('psychology', 'u4', [
     text: "Sven is thirty-four. At nineteen he sold his classmates the answers to an exam he had stolen, and told the school it was another student. At twenty-five he took a deposit from a couple for a kitchen he never built, and at thirty he did the same to a family two towns away. When one of them called him in tears, he said, 'That's business. You should have asked for references.' He has been to court twice, and says each time that the judge 'had it in for him'.",
     outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
     cues: { P1: ['sold his classmates the answers to an exam he had stolen', 'took a deposit from a couple for a kitchen he never built', "That's business. You should have asked for references"] },
-    reason: { P1: 'Sven has broken rules and used people at nineteen, twenty-five and thirty, in different towns: {cue:P1}. When one of the people he harmed called in tears he showed no regret at all.' },
-    not: { outcome: 'narcgrand', why: 'Sven does not need anyone to see him as special, and he does not turn scornful when he is not. What he wants is the money, and he gets it by lying.' } },
+    reason: { P1: 'Sven has broken rules and used people at nineteen, twenty-five and thirty, in different towns: {cue:P1}. When someone he harmed called in tears, he showed no regret.' },
+    not: { outcome: 'narcgrand', why: 'Sven does not need anyone to see him as special. What he wants is the money, and he gets it by lying.' } },
 
   /* ---------- The case that carries the key's tie-break ---------- */
   { id: 'pa-victor', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a roofer who is better than everyone', name: 'The roofer', also: ['above'],
@@ -48,8 +48,8 @@ FC.cases('psychology', 'u4', [
     outcome: 'antisocial', route: { D1: ['pattern'], P1: ['uses'] },
     cues: { P1: ['taken deposits for roofs he never started', 'They should have read the contract. Not my problem'] },
     segments: [
-      { text: "He tells everyone in the county that nobody roofs like him, calls rival firms 'amateurs', and has screamed at customers who questioned a bill: 'Do you know who you are talking to?'", note: 'That is acting as if he is above everyone, with anger when he is questioned. It is real, and it is what you point to for the other name. It is not what settles this case.' },
+      { text: "He tells everyone in the county that nobody roofs like him, calls rival firms 'amateurs', and has screamed at customers who questioned a bill: 'Do you know who you are talking to?'", note: 'That is acting above everyone, with anger when he is questioned. It is real, and it is the sign of the other name, but it is not what decides this one.' },
       { text: "Over fifteen years, in four towns, he has taken deposits for roofs he never started and left a former partner with his debts. When one customer came to his yard in tears with her unpaid deposit, Victor said, 'They should have read the contract. Not my problem.'" },
-      { text: 'Eleven customers and a partner have lost money', note: 'That is the cost. It is needed for either name, so it cannot settle which of the two this is.' }
+      { text: 'Eleven customers and a partner have lost money', note: 'That is the cost. Both names need one, so it cannot decide between them.' }
     ] }
 ]);

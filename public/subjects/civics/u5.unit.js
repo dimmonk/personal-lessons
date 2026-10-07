@@ -7,12 +7,12 @@
 
 FC.unit('civics', 'u5', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Five',
-  title: { fromKey: 'D1.courts' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Four things a judge can be asked to do, and how to tell which one a case is about',
+  title: { text: 'What a judge is really being asked' },   // plain words, with the payoff up front
+  subtitle: 'Four things a judge can be asked to do, and how to spot which one a story is about',
   teaches: { steps: ['J1'], outcomes: ['review', 'interpret', 'notlegal', 'trialrights'], terms: ['precedent'] },
   assumes: ['u1', 'u2', 'u3', 'u4'],   // everything these units teach may be used; the first card restates the part this unit leans on
 
@@ -24,42 +24,42 @@ FC.unit('civics', 'u5', {
   // and what returns together later. test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'review~interpret', pair: ['review', 'interpret'], step: 'J1',
-      shared: 'In both, a law already exists, a person has been touched by it, and a judge is asked about it.',
-      rule: 'In {o:review} the person says the law itself is not allowed, because it clashes with the Constitution. In {o:interpret} nobody says that. The law is accepted, and the only question is whether its words reach what happened.',
-      test: 'Does anyone say the law should not exist at all, or only ask whether it covers what happened?' },
+      shared: 'In both, someone is fined or charged under a law and asks a judge about it.',
+      rule: 'In {o:review} the person says the law itself is not allowed, because it clashes with the Constitution. In {o:interpret} nobody says that: the law stands, and the only question is whether its words reach what happened.',
+      test: 'Does the person say the law should not exist, or only ask whether it covers what they did?' },
     { id: 'review~notlegal', pair: ['review', 'notlegal'], step: 'J1',
-      shared: 'In both, someone dislikes a rule or a situation, thinks it is unfair, and asks a judge to deal with it.',
-      rule: 'In {o:review} the person can point to something in the Constitution that the rule is said to break, and has been harmed by the rule. In {o:notlegal} nobody can point to a law or a right that settles it: the judge is asked to choose what would be better.',
-      test: 'Can the person asking point to a place in the Constitution that the rule is said to break, or do they say only that a different rule would be better?' },
+      shared: 'In both, someone thinks a rule is unfair and asks a judge to deal with it.',
+      rule: 'In {o:review} the person names a right in the Constitution that the rule breaks, and the rule has harmed them. In {o:notlegal} nobody names a law or a right that settles it: the judge is asked to choose what would be better.',
+      test: 'Does the person name a right in the Constitution that the rule breaks, or only say a different rule would be better?' },
     { id: 'interpret~notlegal', pair: ['interpret', 'notlegal'], step: 'J1', taughtIn: 'q-judge',
-      shared: 'In both, nobody says a law breaks the Constitution, and a judge is asked for something about a rule of government.',
-      rule: 'In {o:interpret} there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings ({t:precedent}). In {o:notlegal} there is no law that settles it and the judge is asked to choose, so there is nothing to read.',
-      test: 'Is there a law whose words, or the rulings on them, can answer the question, or is the person asking the judge to choose?' },
+      shared: 'In both, nobody says a law breaks the Constitution, and a judge is asked about a rule of government.',
+      rule: 'In {o:interpret} there is a law, and the judge can answer from its words, the rest of the law, what it was for and earlier rulings ({t:precedent}). In {o:notlegal} no law settles it, so there is nothing to read: the judge is asked to choose.',
+      test: 'Is there a law whose words, or earlier rulings on them, can answer the question, or is the person asking the judge to choose?' },
     { id: 'review~trialrights', pair: ['review', 'trialrights'], step: 'J1',
-      shared: 'In both, a person is in trouble with the law, and a judge is asked whether the Constitution was kept.',
-      rule: 'In {o:review} the law itself is what the person attacks. In {o:trialrights} nobody attacks the law: the question is whether the steps the Constitution promises to an accused person were followed when this person was dealt with.',
-      test: 'Is the person saying the law itself is not allowed, or saying that a step promised to someone accused was skipped in how they were dealt with?' },
+      shared: 'In both, a person is in trouble with the law and the judge is asked whether the Constitution was kept.',
+      rule: 'In {o:review} the person attacks the law itself. In {o:trialrights} nobody attacks the law: the question is whether the steps the Constitution promises an accused person were followed when this person was dealt with.',
+      test: 'Does the person say the law itself is not allowed, or that a step promised to someone accused was skipped?' },
     { id: 'interpret~trialrights', pair: ['interpret', 'trialrights'], step: 'J1', taughtIn: 'q-judge',
-      shared: 'In both, a person is charged under a law, and the judge is asked something about the person’s own case.',
-      rule: 'In {o:interpret} the judge reads the words of the law to see whether it reaches what the person did. In {o:trialrights} the judge checks whether the steps the Constitution promises to an accused person were followed, whatever the law says.',
+      shared: 'In both, a person is charged under a law, and the judge is asked something about what happened to that person.',
+      rule: 'In {o:interpret} the judge reads the words of the law to see whether it reaches what the person did. In {o:trialrights} the judge checks whether the steps promised to an accused person were followed, whatever the law says.',
       test: 'Is the judge asked whether the law covers what the person did, or whether the person was treated as the Constitution promises?' },
     { id: 'review~beyondcong', pair: ['review', 'beyondcong'], step: 'D1',
-      shared: 'In both, a law clashes with the Constitution, often with the same right, and it can be the very same law.',
-      rule: 'In {o:beyondcong} the case is about Congress passing the law, and the decision is a vote. In {o:review} the law is already passed, someone it has harmed has brought a case, and the decision is a judge’s.',
+      shared: 'In both, a law clashes with the Constitution, often over the same right, and it can be the very same law.',
+      rule: 'In {o:beyondcong} the story is about Congress passing the law, and the last decision is a vote. In {o:review} the law is already passed, someone it harmed has gone to court, and the last decision is a judge’s.',
       test: 'Does the story end with lawmakers voting on a law, or with someone harmed by a law asking a judge about it?' },
     { id: 'trialrights~beyondcong', pair: ['trialrights', 'beyondcong'], step: 'D1',
-      shared: 'In both, a right in the Constitution is what stops the government, and it can be the same right.',
-      rule: 'In {o:beyondcong} the right stops Congress from passing a law, and the decision is a vote. In {o:trialrights} the right is one of the steps promised to an accused person, and the decision is a judge’s about whether the steps were followed.',
+      shared: 'In both, a right in the Constitution stops the government, and it can be the same right.',
+      rule: 'In {o:beyondcong} the right stops Congress from passing a law, and the decision is a vote. In {o:trialrights} the right is one of the steps promised to an accused person, and a judge decides whether they were followed.',
       test: 'Is the last decision a vote by lawmakers on a law, or a judge dealing with a person accused of a crime?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'A judge asked about a law',
+    { id: 'p1', title: 'Is the law allowed, and what do its words cover?',
       cards: ['orient', 'meet-review', 'check-review', 'term-precedent', 'meet-interpret', 'check-interpret',
               'look-review-interpret'] },
-    { id: 'p2', title: 'A policy, an accused person, and the question',
+    { id: 'p2', title: 'A better rule, an accused person, then the drill',
       cards: ['meet-notlegal', 'check-notlegal', 'look-review-notlegal',
               'meet-trialrights', 'check-trialrights', 'look-review-trialrights',
               'look-review-beyondcong', 'look-trialrights-beyondcong',
@@ -72,7 +72,7 @@ FC.unit('civics', 'u5', {
   // Earlier-unit items are drawn from Unit One's bank only.
   drill: {
     key: 'u5',            // new in standard 1: no old quick-drill counter belongs to this unit
-    add: 'Many of these cases mention the Constitution, a trial, a vote or a fine, and what the story mentions first is often not what the judge is asked. Read each story to its end and look for what the judge is asked to do.',
+    add: 'Many of these stories mention the Constitution, a trial, a vote or a fine, and what the story mentions first is often not what the judge is asked. Read to the end and find the words that say what the judge is asked to do.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'pc-review-1', step: 'J1' }, { case: 'pc-notlegal-1', step: 'J1' }],
@@ -99,7 +99,8 @@ FC.unit('civics', 'u5', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit of Civics for a judge in any court. It replaces the courts part of old Unit Three, the election-holiday worked case and old specimens 3, 7, 11 and 16. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

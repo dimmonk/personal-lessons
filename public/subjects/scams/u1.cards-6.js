@@ -10,60 +10,60 @@ FC.cards('scams', 'u1', [
 
   /* ---------- the first question, as a question ---------- */
   { id: 'q-gate', kind: 'question', step: 'D1',
-    h: 'The question you have been answering all along',
-    link: 'This card puts the question and its five answers in one place.',
+    h: 'The one question to ask first',
+    link: 'Here is the question and its five answers in one place.',
     decides: [
-      'If you start with who a message says it is from, or how worried it sounds, you are looking at what the sender chose to show you. What it asks you to do is what you would actually be doing.'
+      'Skip this question and you end up judging how real a message looks, which is the one thing a scam is built to get right.'
     ],
     how: [
-      'Read the whole message before you answer, the last sentence included. The request is often at the end, after the reason it gives. Then go down the list in order, and stop at the first answer that the message shows.',
-      'First, look for {a:D1.device}: {needs:device}.',
-      'Second, look for {a:D1.access}: {needs:access}.',
-      'Third, look for {a:D1.money}: {needs:money}.',
-      'Fourth, look for {a:D1.details}: {needs:details}.',
-      'If the message shows none of those four, what is left is {a:D1.nothing}: {needs:nothing}.',
-      'Whichever answer you give, put your finger on the words that show it. If you cannot point to a request, you do not have an answer yet.'
+      { do: 'Read the whole message, last sentence included.', why: 'The request is often at the end, after the reason it gives.' },
+      { do: 'First look for {a:D1.device}.', why: 'It reaches everything on your phone or computer.' },
+      { do: 'Next look for {a:D1.access}.', why: 'It reaches what the account holds, money included.' },
+      { do: 'Next look for {a:D1.money}.', why: 'Money is usually gone once it is sent.' },
+      { do: 'Next look for {a:D1.details}.', why: 'Facts about you get used later.' },
+      { do: 'If none of those four is there, it is {a:D1.nothing}.', why: 'Then nothing is being asked.' },
+      { do: 'Find the exact words that show your answer.', why: 'If you cannot find them, you do not have an answer yet.' }
     ],
-    whenBoth: 'Some messages ask for two things at once: the refund call asked Harold to let a stranger watch his device and then to send money back. Every message gets one answer, and the earlier answer in the list wins. Each pair below has a question that tells it apart.' },
+    whenBoth: 'Some messages ask for two things at once: the refund call asked Harold to let a stranger watch his screen and then to send money back. Each message gets one answer, and the one higher in the list wins. The test for each pair is below.' },
 
   { id: 'check-gate', kind: 'check', after: 'D1',
     case: 'g-council-bins',
     ask: { type: 'step', step: 'D1' } },
 
-  /* ---------- one whole case, watched ---------- */
+  /* ---------- one whole message, worked ---------- */
   { id: 'worked-statement', kind: 'worked',
-    h: 'A whole case, where the opening points the wrong way',
-    link: 'Watch one case run from the question to the answer. The first thing you notice in it is not the thing that decides it. Read to the end before you answer.',
+    h: 'One whole message, where the opening points the wrong way',
+    link: 'Watch one message worked through. The first thing you notice is not what decides it, so read to the end.',
     case: 'g-statement',
     steps: [
       { step: 'D1',
         reason: [
-          'The text opens like a notice: the statement is ready to view. If it ended there, it would only be telling Chidi something.',
-          'It does not end there. Read on: {cue:D1}. That is a request to pay a sum at an address today, with a reason to hurry. The message has stopped being news and has become a demand. Nothing in it asks for a program, a file, a sign-in or facts about Chidi, so the earlier answers do not apply. The answer is the one for money.'
+          'The text opens like a notice: the statement is ready to view. If it stopped there, it would only be news.',
+          'It does not stop there: {cue:D1}. That asks Chidi to pay at an address, today. No program, file, sign-in or facts about him are asked for, so the answers higher in the list do not apply.'
         ] }
     ],
     hold: {
       neighbor: 'nothing',
       prompt: { kind: 'reason',
-        lead: 'The text opens with a statement that is ready to view, so the case can look like a message that tells you something.',
+        lead: 'The text opens with a statement that is ready to view, so it can look like {a:D1.nothing}. What decides it?',
         choices: [
           { id: 'a', text: 'It opens with news: the summer statement is ready to view.',
-            note: 'True, and it is why the case can look like {a:D1.nothing}. If the text ended there, that would be the answer. It does not end there.' },
-          { id: 'b', text: 'It ends by telling Chidi to pay $79 at an address today, to keep his line open.' },
-          { id: 'c', text: 'It comes from his broadband company, and the name of the company is correct.',
-            note: 'True, and it says who the text claims to be from. It is not a request, so it does not separate the two answers you are choosing between.' }
+            note: 'True, and it is why this looks like {a:D1.nothing}. If the text stopped there, that would be the answer.' },
+          { id: 'b', text: 'It ends by telling Chidi to pay $79 at an address today.' },
+          { id: 'c', text: 'It names his broadband company, and the name is correct.',
+            note: 'True, but that says who the text claims to be from. It does not say what it asks.' }
         ],
         answer: 'b' },
       reason: [
-        'For {a:D1.nothing} you must be able to point to this: {needs:nothing}. The statement being ready is news. The last sentence is a request for money, with its own address to pay at, and a message that only tells you something has no such thing.',
-        'A notice and a demand can be about the same bill. What separates them is whether anyone asks you to pay. {test:money~nothing} Here the text has both, and the demand is the part the question is about. The answer is {a:D1.money}.'
+        'The statement being ready is news. The last sentence asks Chidi to pay, with an address to pay at. A message that only tells you something has no such thing.',
+        'A notice and a demand can be about the same bill. The test is whether anyone asks you to pay. Here the text has both, and the demand wins: {a:D1.money}.'
       ]
     },
     impression: {
       resembles: 'g-rent', first: 'g-delivery',
       text: [
-        'Now a second look: does this case look like one you know? A company writing to say that something is ready may bring back the delivery update, which was {a:D1.nothing}. So the likeness and the question seem to disagree.',
-        'When that happens, go back to the question and find the words that answer it: {cue:D1}. The delivery update ended after the news. The rent email did not: it had an amount, an address and a day to pay by. So the case this one really looks like is the rent email, and the answer stands.'
+        'A second look: does this remind you of a story you know? A company writing to say something is ready may bring back the delivery update, which was {a:D1.nothing}.',
+        'When a likeness and the answer disagree, go back to the words that answer the question: {cue:D1}. The delivery update stopped after the news. This text did not: it had an amount, an address and a day to pay by, like the rent email. So the answer stands.'
       ]
     } },
 
@@ -72,18 +72,18 @@ FC.cards('scams', 'u1', [
     h: 'What to carry away',
     link: 'You have now answered the first question on your own.',
     carry: [
-      'Before anything else, ask what the message asks you to do right now, and point to the words that show it. If you cannot point to a request, you do not have an answer yet.',
-      'The answer is not a verdict. Each of the five kinds can be real or a copy. How a message looks, who it says it is from and how well it is written do not change the answer. Telling a real message from a copy is a job for what comes next, and for {t:check}.',
+      'Before you tap, call, pay or reply, find the words that show what the message asks you to do. If you cannot find a request, you do not have an answer yet.',
+      'The answer is not a verdict. Each of the five can be real or a copy, and how a message looks, who it says it is from and how well it is written change nothing. Telling real from copy is the job of what comes next, and of {t:check}.',
       'A message that only tells you something is {a:D1.nothing}. Treating it as a threat is a mistake too.',
-      'A number, a link or an app that came with the message is never {t:already}, even when you are the one who dials it or taps it.',
-      'When a message asks for two things, the answer is the earlier one in the list: something on your device, then a way into an account, then money, then facts about you.'
+      'A number, a link or an app that came with the message is never {t:already}, even when you are the one who dials or taps it.',
+      'When a message asks for two things, the one higher in the list wins: your device, then an account, then money, then facts about you.'
     ] },
 
   { id: 'plan-gate', kind: 'plan', optional: true,
     h: 'A plan, if you want one',
-    link: 'This card is for what you will do about it, and it is yours to fill in or to leave.',
+    link: 'This card is yours to fill in or to leave.',
     intro: [
-      'A plan is one line: if I see this, then I will do that. The moment a message arrives is the worst moment to think of what to do, and the best moment to do something you decided in advance. The lines below are examples to start from: use one, change it, or write your own. Nothing is saved until you press the button.'
+      'A plan is one line: if I see this, I will do that. The moment a message arrives is the worst time to decide what to do, so decide now. The lines below are examples. Use one, change it, or write your own. Nothing is saved until you press the button.'
     ],
     cues: [
       { cue: 'a request to put something on my phone or computer, to open a file, or to let someone watch my device',

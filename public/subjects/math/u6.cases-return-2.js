@@ -18,25 +18,25 @@ FC.cases('math', 'u6', [
       S2: 'How far does it run along the floor?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle} that is worked out from an angle. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give the length of one side of a {t:righttriangle} and one angle in degrees besides the square corner. That is {a:S1.sideangle}.',
-      S2: 'The words {cue:S2} ask how long a side is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length in a {t:righttriangle}, found from an angle. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give one side of a {t:righttriangle} and one angle in degrees.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'pyth',
-      why: 'The problem gives one side and an angle in degrees, and no second side. {o:pyth} would be the name if it gave the lengths of two sides and no angle besides the square corner.'
+      why: 'It gives one side and an angle in degrees, and no second side. With two sides and no angle, it would be {o:pyth}.'
     },
     steps: [
       {
-        does: 'Name the three sides, starting from the angle you were given',
-        working: 'The angle is 35°. The longest side, opposite the square corner, is the line along the edges of the steps. The side opposite the angle is the rise of 2.8 m. The side next to the angle, the one that is not the longest, is the distance along the floor'
+        does: 'Name the three sides from the angle you were given',
+        working: 'The angle is 35°. The longest side is the line along the edges of the steps. The side opposite the angle is the rise of 2.8 m. The side next to the angle is the distance along the floor'
       },
       {
-        does: 'Choose the calculator button that joins the side you know to the side you want',
-        working: 'You know the side opposite the angle (2.8 m) and want the side next to the angle. The tan button joins those two: tan = opposite ÷ next to'
+        does: 'Pick the calculator button that joins the side you know and the side you want',
+        working: 'You know the side opposite the angle (2.8 m) and want the side next to it. Tan joins those two: tan = opposite ÷ next to'
       },
       {
-        does: 'Write the button’s comparison with the numbers in',
+        does: 'Write the button’s sum with your numbers in',
         working: 'tan 35° = 2.8 ÷ distance'
       },
       { does: 'Get the side you want on its own', working: 'distance = 2.8 ÷ tan 35°' },
@@ -51,17 +51,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '4.9 m',
-          slip: 'you use the sin button, which compares the side opposite the angle with the longest side, though the two sides in this problem are the side opposite the angle and the side next to the angle.'
+          slip: 'you use the sin button, which joins the side opposite the angle and the longest side. Here the two sides are opposite the angle and next to it, so you need tan.'
         },
         {
           id: 's2',
           text: '2.0 m',
-          slip: 'you multiply by the button’s value, though the side you want is the one under the button’s comparison and the side you know is the one on top of it, so you should divide.'
+          slip: 'you multiply by the button’s value. The side you want is underneath in the button’s sum, so you divide.'
         }
       ],
       right: 'r'
     },
-    why: 'In a {t:righttriangle} the angle settles how long each side is compared with the others, whatever the size of the triangle, and each calculator button gives one of those comparisons for the angle you type in. Choosing the button whose two sides are the one you know and the one you want, and then multiplying or dividing by its value, turns that comparison into the missing length.',
+    why: 'In a {t:righttriangle} the angle fixes how long each side is compared with the others, whatever the size. Each calculator button gives one of those comparisons, so you pick the button that joins the side you know and the side you want, then multiply or divide by its value.',
   },
 
 ]);

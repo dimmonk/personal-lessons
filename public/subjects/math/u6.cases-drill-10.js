@@ -18,30 +18,30 @@ FC.cases('math', 'u6', [
       S2: 'How much paint do the walls of the garden shed need?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
+      M1: 'The problem asks {cue:M1}, an amount for one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, a small one and a big one.',
+      S2: 'The words {cue:S2} ask how much paint the walls need: paint covers a surface, so an area.'
     },
     not: {
       outcome: 'similar',
-      why: 'The problem asks how much area or volume the bigger thing has, not how long one of its parts is. {o:similar} would be the name if it asked for a length on the bigger thing.'
+      why: 'It asks how much the bigger one covers or holds, not how long a part is. If it asked for a length on the bigger one, it would be {o:similar}.'
     },
     echo: 'm6-wd-footbridge',
     steps: [
       {
-        does: 'Find how many times longer the bigger one is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '3 ÷ 1 = 3'
       },
       {
         does: 'Decide whether the problem asks about area or about volume',
-        working: 'Paint on walls covers a surface, so the problem asks about area'
+        working: 'Paint on walls covers a surface, so it is an area'
       },
       {
-        does: 'Multiply that number of times by itself, with two of them in the product for an area',
+        does: 'Multiply two of that number together, for an area',
         working: '3 × 3 = 9'
       },
       {
-        does: 'Multiply the smaller one’s amount by that number of times',
+        does: 'Multiply the smaller one’s amount by that number',
         working: '2 liters × 9 = 18 liters'
       }
     ],
@@ -51,17 +51,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '6 liters',
-          slip: 'you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.'
+          slip: 'you multiply by the number of times longer only once, as for a length. An area grows in two directions: length and width.'
         },
         {
           id: 's2',
           text: '54 liters',
-          slip: 'you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.'
+          slip: 'you multiply by the number of times longer three times, as for a volume. This one covers a surface, so there are only two of them.'
         }
       ],
       right: 'r'
     },
-    why: 'If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.',
+    why: 'When every length is some number of times longer, a surface grows in length and width. So its area grows by two of that number multiplied together.',
   },
 
 ]);

@@ -39,10 +39,10 @@ FC.cases('wealth', 'u4', [
     cues: { D1: 'she has taken exactly that every year since',
             E1: ['She set herself $36,000 a year', 'the funds are now worth $540,000'] },
     segments: [
-      { text: 'Dolores retired six years ago with $900,000 in funds of shares', note: 'That is where the money is held and how much there was. It does not yet show what the case is about.' },
+      { text: 'Dolores retired six years ago with $900,000 in funds of shares', note: 'That is where the money sits and how much there was. It does not yet show what the story is about.' },
       { text: 'She set herself $36,000 a year to live on, which was 4% of the money then, and she has taken exactly that every year since, by selling units of the funds each month' },
-      { text: 'She keeps no cash set aside', note: 'That is true, and it is what makes the case look like {o:cashbuffer}. It is not the part that decides it.' },
-      { text: 'Prices have fallen, and the funds are now worth $540,000', note: 'That is the fall, and it is the other half of what settles the case. The words asked for are about the sum.' }
+      { text: 'She keeps no cash set aside', note: 'True, and it is why this looks like {o:cashbuffer}. It is not the part that decides it.' },
+      { text: 'Prices have fallen, and the funds are now worth $540,000', note: 'That is the fall, only half of what settles it. The words asked for are about the sum.' }
     ] },
 
   { id: 'tm-exc-livingmix', use: 'teach', tier: 'misleading', setting: 'retirement', topic: 'a drifted mix and monthly sales to live on', name: 'Imre’s monthly sales',
@@ -51,18 +51,18 @@ FC.cases('wealth', 'u4', [
     cues: { D1: 'He needs $2,000 a month to live on',
             T1: 'he pays it by selling units of the shares every month, with no cash set aside' },
     segments: [
-      { text: 'His plan is 60% in shares and 40% in bonds, and shares are now 71% of his $500,000, which is $355,000', note: 'That is {t:mix}, and it has moved. It is real, but it is not the part that comes first.' },
+      { text: 'His plan is 60% in shares and 40% in bonds, and shares are now 71% of his $500,000, which is $355,000', note: 'That is {t:mix}, and it has moved. It is real, but it is not what comes first.' },
       { text: 'He needs $2,000 a month to live on, and he pays it by selling units of the shares every month, with no cash set aside' }
     ] },
 
   { id: 'tm-exc-bonus', use: 'teach', tier: 'misleading', setting: 'work', topic: 'a drifted mix, a planned sell-off and a bonus', name: 'Frank’s bonus',
-    text: "Frank is 45. His plan is 60% in shares and 40% in bonds, and his $400,000 has drifted to 70% in shares, $280,000. His adviser says to sell $40,000 of the shares now and buy bonds with the money. The shares are worth $90,000 more than Frank paid for them, so the sale would bring a tax bill of about $1,900 on the gain. Frank has just been paid a $60,000 bonus, and has not yet decided what to do with it. No bill and no living costs are in the case.",
+    text: "Frank is 45. His plan is 60% in shares and 40% in bonds, and his $400,000 has drifted to 70% in shares, $280,000. His adviser says to sell $40,000 of the shares now and buy bonds with the money. The shares are worth $90,000 more than Frank paid for them, so the sale would bring a tax bill of about $1,900 on the gain. Frank has just been paid a $60,000 bonus, and has not yet decided what to do with it. No bill and no living costs are in the story.",
     outcome: 'defer', route: { D1: ['erosion'], E1: ['needlesssale'] }, also: ['timing'],
     cues: { D1: 'the sale would bring a tax bill of about $1,900 on the gain',
             E1: ['the sale would bring a tax bill of about $1,900 on the gain', 'Frank has just been paid a $60,000 bonus'] },
     segments: [
-      { text: 'His plan is 60% in shares and 40% in bonds, and his $400,000 has drifted to 70% in shares, $280,000', note: 'That is {t:mix}, and it has moved. It is real, but it is not the part that decides the case.' },
-      { text: 'His adviser says to sell $40,000 of the shares now and buy bonds with the money. The shares are worth $90,000 more than Frank paid for them, so the sale would bring a tax bill of about $1,900 on the gain', note: 'That is the planned sale and its tax. It matters, but it is only half of what settles the case.' },
+      { text: 'His plan is 60% in shares and 40% in bonds, and his $400,000 has drifted to 70% in shares, $280,000', note: 'That is {t:mix}, and it has moved. It is real, but it does not decide the story.' },
+      { text: 'His adviser says to sell $40,000 of the shares now and buy bonds with the money. The shares are worth $90,000 more than Frank paid for them, so the sale would bring a tax bill of about $1,900 on the gain', note: 'That is the planned sale and its tax. It matters, but it is only half of what settles it.' },
       { text: 'Frank has just been paid a $60,000 bonus, and has not yet decided what to do with it' }
     ] },
 

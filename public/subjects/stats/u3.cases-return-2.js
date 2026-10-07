@@ -27,7 +27,7 @@ FC.cases('stats', 'u3', [
     cues: { S1: ['only 1 child in 80 has asthma', 'Tiny County has the cleanest air in the state'], A1: 'Tiny County has 80 children' },
     reason: { S1: 'The site reads the lowest figure as showing the cleanest air, but the figure comes from 80 children: {cue:S1}.',
               A1: 'Every child is counted, but there are only a handful: {cue:A1}. One child more or fewer with asthma moves the figure by 1.25 points, and the smallest counties sit at both ends of any list.' },
-    not: { outcome: 'samp_ok', why: 'A fair figure would be one that one or two more or fewer would barely move. Here one child is more than a whole point, and the site reads the gap between "lowest" and "ordinary" as meaning something about the air.' } },
+    not: { outcome: 'samp_ok', why: 'One child more or fewer would barely move a bigger county’s figure. Here one child is more than a whole point, and the site reads the gap between “lowest” and “ordinary” as meaning something about the air.' } },
 
   { id: 'cr-sn-2', use: 'return', tier: 'varied', setting: 'leisure', topic: 'a tennis champion against left-handers',
     text: "A tennis club's best player has played 5 sets against left-handers and won all 5. The club newsletter says: 'Our champion is unbeatable against left-handers.'",

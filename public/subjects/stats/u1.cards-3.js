@@ -1,35 +1,34 @@
-// Statistical Claims, Unit One, part two: the fourth answer (what the claim says caused what) and its look-alike with the third.
+// Statistical Claims, Unit One, part two: the fourth answer (what caused what) and its look-alike with the third.
 
 FC.cards('stats', 'u1', [
 
-  /* ---------- The fourth answer: what the claim says caused what ---------- */
+  /* ---------- What caused what ---------- */
   { id: 'meet-cause', kind: 'meet', family: 'cause',
-    link: 'Many claims stop at the first three parts. Some take one more step, from "these go together" to "this made that happen".',
+    link: 'Last of the four parts: a claim that something worked, or caused something. It comes last because it rests on the other three.',
     case: 'gate-music', mark: 'S1',
-    strip: [
-      'There are two groups and a figure for each: the 120 students who take the music class average 71 on the math exam, and the 380 who do not average 62.',
-      'The first three parts hold: the same exam, the numbers given for both groups, nothing left out.',
-      'Then the claim says the music lessons raised the scores. That is a claim of cause.',
-      'And the case shows another way to explain the same result: nearly all of the music students’ families also pay for extra math coaching.'
-    ],
     explain: [
-      'Two things go together in the figures: the students who take music have higher scores. The claim says that one made the other happen. That is a bigger claim than the figures, and the figures alone cannot carry it. Two things can go together without one making the other happen.',
-      'To see whether the claim is safe, look for another explanation of the same figures. Here the case tells you: the coaching alone could lift the scores, whether or not anyone ever took a music class. The figures would look exactly the same. This part comes last because a claim of cause is only as sound as the figures it is built on.'
+      'The numbers show that music students score higher on the math exam. The principal says the music lessons did it. That is a bigger claim than the numbers, and the numbers alone cannot carry it. Almost all the music students also pay for math coaching, and the coaching alone could lift their scores.',
+      'Two things can go together without one causing the other. To test a claim of cause, look for another way to get the same numbers. Music lessons may well help. The numbers just cannot show it.'
+    ],
+    spot: [
+      { do: 'Find the word that says one thing made the other happen: "raise".', why: 'Words like "raise", "works", "because" and "led to" belong to the speaker, not to the numbers.' },
+      { do: 'Find how people ended up in each group: the students chose music, and their families chose the coaching.', why: 'When people sort themselves into groups, the groups differ in other ways too.' },
+      { do: 'Look for another way to get the same numbers: the music families also pay for math coaching.', why: 'If something else fits the numbers, they cannot prove the cause.' }
     ],
     feature: { step: 'S1', option: 'cause' },
-    name: 'The answer, and the name, is {a:S1.cause}. Words that carry the step are "raise", "protect", "works", "led to", "because" and "so". They are the speaker’s, and the figures do not contain them. It does not say the claim is false: music lessons may help. It says that the figures cannot show it, because something else could produce them.' },
+    name: 'This is {a:S1.cause}. It does not say the claim is false, only that the numbers cannot show it.' },
 
   { id: 'check-cause', kind: 'check', after: 'cause',
     case: 'gate-bikelane',
     ask: { type: 'option', step: 'S1', among: ['counted', 'measure', 'compare', 'cause'] } },
 
   { id: 'look-compare-cause', kind: 'lookalike', ledger: 'compare~cause',
-    link: 'A claim about a program that "makes the difference" can go wrong in the third part or in the fourth, and the figures can sound alike either way.',
+    link: 'A claim that a program "makes the difference" can go wrong at the third part or the fourth, and the numbers can sound alike either way.',
     cases: ['gate-mentor-percent', 'gate-mentor-groups'],
-    instruction: 'Both cases are about the same mentoring program. Compare one thing: are the numbers behind the figure missing, or are they all given and the claim goes on to say what caused the difference?',
+    instruction: 'Both stories are about the same mentoring program. Compare one thing: are the numbers behind the percentage missing, or are they all given and the claim goes on to say what caused the difference?',
     prompt: { kind: 'which', option: 'S1.cause', answer: 'gate-mentor-groups' },
     difference: [
-      'In Case A the figure is "50% more likely to graduate", with no word on how many graduate with the program or without it. Nothing has yet been said about a cause. The trouble is what the figure is set beside. The answer is {a:S1.compare}.',
-      'In Case B the numbers are all there: 90 of 100 and 60 of 100. The trouble is the step the leaflet takes: it says the mentoring made the difference, and the case shows another way to explain the same result, which is that students who ask to join are the ones already doing well. The answer is {a:S1.cause}.'
+      'In Story A the leaflet says "50% more likely to graduate" and never says how many graduate with the program or without it. It has not said anything about a cause yet. The trouble is what the number is set beside. That is {a:S1.compare}.',
+      'In Story B every number is there: 90 of 100 and 60 of 100. The leaflet then says mentoring made the difference, but students who ask to join are mostly the ones already doing well. That is {a:S1.cause}.'
     ] }
 ]);

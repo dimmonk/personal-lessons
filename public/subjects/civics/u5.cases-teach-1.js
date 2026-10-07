@@ -15,16 +15,16 @@ FC.cases('civics', 'u5', [
             J1: ['was fined $50 for handing out leaflets about a school vote', 'told the judge that the rule goes against the right to speak that the Constitution protects'] } },
 
   { id: 'r-gate', use: 'check', tier: 'clean', setting: 'work', topic: 'workers meeting at a factory gate', name: 'The factory gate',
-    text: 'A state law bans any group of workers from meeting outside a factory gate before a shift. Anil was fined $120 for meeting his colleagues at the gate to talk about their pay. He took the state to court, saying the law takes away the right to gather peacefully. A judge will hear the case next month.',
+    text: 'A state law bans any group of workers from meeting outside a factory gate before a shift. Anil was fined $120 for meeting his colleagues at the gate to talk about their pay. He took the state to court, saying the law takes away the right to gather peacefully. A judge will hear Anil’s challenge next month.',
     outcome: 'review', route: { D1: ['courts'], J1: ['check'] },
-    cues: { D1: 'A judge will hear the case next month', J1: 'saying the law takes away the right to gather peacefully' },
+    cues: { D1: 'A judge will hear Anil’s challenge next month', J1: 'saying the law takes away the right to gather peacefully' },
     segments: [
-      { text: 'A state law bans any group of workers from meeting outside a factory gate before a shift', note: 'That is the law. It is how the matter began, and it is not what Anil asks the judge.' },
-      { text: 'Anil was fined $120 for meeting his colleagues at the gate to talk about their pay', note: 'That is the harm. It is why Anil can bring a case, and it is not what he says about the law.' },
+      { text: 'A state law bans any group of workers from meeting outside a factory gate before a shift', note: 'That is the law. It is not what Anil says about it.' },
+      { text: 'Anil was fined $120 for meeting his colleagues at the gate to talk about their pay', note: 'That is the harm. It lets Anil go to court, but it is not what he says about the law.' },
       { text: 'saying the law takes away the right to gather peacefully' },
-      { text: 'A judge will hear the case next month', note: 'That shows who decides. It does not show what the judge is asked.' }
+      { text: 'A judge will hear Anil’s challenge next month', note: 'That only says a judge will hear it. It does not say what the judge is asked.' }
     ],
-    reason: { J1: 'Anil was fined, so the law has actually harmed him. What he tells the court is that the law clashes with a right the Constitution protects, and the words are the ones you tapped. The law is being attacked, not read.' } },
+    reason: { J1: 'Anil was fined, and he says the law takes away a right the Constitution protects.' } },
 
   /* ---------- The look-alike pairs: the review case of each ---------- */
   { id: 'ls-amp-speech', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a loudspeaker at a park rally', name: 'The loudspeaker',

@@ -5,36 +5,36 @@
 // whether the problem wants the amount at a given time or the time to reach a target.
 // Cards are structured data, not HTML. A text field is one paragraph (a string) or several (an array of strings).
 // Key wording is never typed here: tokens are filled in from key.js. The app prints, and this file therefore does not contain:
-// the preview map, the heading of a meet card, "what you must be able to point to", the key’s question and answer on a meet card,
+// the preview map, the heading of a meet card, the key’s question and answer on a meet card,
 // and the stem of every commit prompt.
 // The worked examples (kind solved) are in u4.cards-solved-*.js. Their steps are computed, not typed: do not edit a number by hand.
 
 FC.cards('math', 'u4', [
 
   { id: 'orient-growth', kind: 'orient',
-    h: 'Four kinds of problem about an amount that changes, and a procedure for each',
-    canDo: 'After this unit you can take a problem about one amount that changes as time passes, say which of four kinds it is, and solve it with the procedure for that kind.',
+    h: 'Check how an amount changes before you work out what it will be',
+    canDo: 'Before you work out what a bill, a balance or a count will be later, check how it changes: the same number each time, a percentage each time, or just once. The wrong steps still give you a number, and nothing in the number warns you.',
     everyday: [
-      'Picture a family opening the mail on one afternoon, with four letters, and every one of them about an amount that changes as time passes. The gym writes: “Your fee is $30 a month, and it goes up by $2 every month: what will it be in six months?” The bank writes: “Your savings of $2,000 grow by 4% a year: what will you have in three years?” Later the bank writes again: “How many years until your savings reach $3,000?” And the bus company writes: “From 1 January the fare is $2.40, and it will stay at $2.40: what will it be in five years?”',
-      'The first question, which Unit One taught, gives the same answer to all four: {a:M1.growth}. But they are four different problems. In the first, the amount goes up by the same number every month. In the second and the third, it grows by the same share of itself every year, and the second asks for the amount while the third asks how long it takes. In the fourth, it changed one time and has stayed. Each kind has its own procedure, and the wrong procedure still gives a number, with nothing in the number to say that it is wrong. So the order is always the same: first work out how the amount changes and what the problem asks, and only then solve it.'
+      'Your gym fee goes up $2 every month. Your savings grow 4% a year. The bank asks how many years until your savings reach $3,000. The bus fare was raised once in January and has stayed put.',
+      'All four are about one amount that moves as time passes, and each is worked out differently. Find out which one you have before you do any sums.'
     ],
     map: { branch: 'growth' } },
 
-  /* ---------- The first kind: the same number added or taken away each time ---------- */
+  /* ---------- Linear growth: the same number added or taken away each time ---------- */
   { id: 'meet-lin', kind: 'meet', outcome: 'lin',
-    link: 'The first kind of problem is the simplest way an amount can change: it is raised, or lowered, by the same figure every time.',
+    link: 'First: an amount that gets the same top-up, or the same cut, every time.',
     case: 'm4-wd-jar', mark: 'G1',
-    strip: [
-      'There is one amount to follow: the money in the jar. It starts at $12.',
-      'Every week it changes in the same way: $3 more goes in. The $3 does not depend on what the jar already holds.',
-      'The question gives a time, 10 weeks, and asks for the amount at the end of it.'
-    ],
     explain: [
-      'The jar holds $15 after week 1, $18 after week 2 and $21 after week 3. Each week adds $3, and a jar holding $12 gets the same $3 as a jar holding $120. So the change over 10 weeks is 10 lots of $3: you work that total out once and put it on the start.',
-      'What decides the kind is a change of the same size every time, whether the amount goes up or down. The problem can ask for the amount at a given time, or for how long until it reaches a target. Both are worked by the same procedure, forwards or backwards.'
+      'The jar holds $15 after week 1, $18 after week 2 and $21 after week 3. Each week adds the same $3, whether the jar holds $12 or $120.',
+      'So over 10 weeks the jar gains 10 times $3, and you add that to the start. The same steps work backward: to find how long until a target, divide the distance to it by $3.'
+    ],
+    spot: [
+      { do: 'Find the one amount that changes: the money in the jar.', why: 'Everything else in the problem is about this one amount.' },
+      { do: 'Find the change each time, and check it is the same size: $3 every week.', why: 'A plain figure beside “every week”, “every day” or “every month” is the same size each time.' },
+      { do: 'Find what it asks: the amount after 10 weeks.', why: 'You can ask for the amount later or for the time to a target, and the steps are the same.' }
     ],
     feature: { step: 'G1', option: 'adds' },
-    name: 'A problem like this is {o:lin}. The word “linear” means “along a line”: marked week by week on a chart, the jar’s amount would sit on a straight line, because each week climbs by the same $3.' },
+    name: 'This is {o:lin}. Drawn week by week, the jar’s amount makes a straight line, because every week adds the same $3.' },
 
   { id: 'check-lin', kind: 'check', after: 'lin',
     case: 'm4-wd-train',

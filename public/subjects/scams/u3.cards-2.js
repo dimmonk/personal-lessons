@@ -5,25 +5,25 @@ FC.cards('scams', 'u3', [
 
   /* ---------- Phishing ---------- */
   { id: 'meet-phishing', kind: 'meet', outcome: 'phishing',
-    link: 'The first copy is a copy of a password page, and it is the most common scam of all.',
+    link: 'The most common scam of all copies a password page.',
     case: 'ac-locked', mark: 'A1',
-    strip: [
-      'There is one person, Sunita, and one email that says it is from her streaming service.',
-      'She did not ask for it. It came to her.',
-      'It says her account is locked, and gives her a button to unlock it.',
-      'The button opens a page that asks her to type her email address and her password.',
-      'What she is asked to type is a password.'
-    ],
     explain: [
-      'The scammer sends the same email to thousands of people, because a few will have an account there. The button leads to a page the scammer built, with the service\'s logo and layout copied. When Sunita types her password, the page does not sign her in: it sends the password to the scammer, who uses it on the real site at once and can lock her out.',
-      'Nothing was broken into. Sunita typed the password herself, into a page that looked right, and a page can be made to look like any other, padlock and all. So how it looks cannot be what you check. What you can check is how you got there: Marta opened her own app, and Sunita followed an email she did not ask for.'
+      'Sunita did not ask for this email. It came to her, and the page at the end of the link was built by a scammer, with the service\'s logo and layout copied. When she types her password, the page does not sign her in: it sends the password to the scammer, who uses it on the real site at once and can lock her out.',
+      'The scammer sends the same email to thousands of people, because a few will have an account there. Nothing was broken into: Sunita typed the password herself, into a page that looked right. A page can be made to look like any other, padlock and all, so how it looks is not what to check. How you got there is. Marta opened her own app, and Sunita followed an email she did not ask for.'
+    ],
+    spot: [
+      { do: 'Find how you got there: an email Sunita did not ask for.', why: 'It always starts with something that came to you: a message, a call or a pop-up.' },
+      { do: 'Find the link or button: "Tap here to unlock it."', why: 'It leads to a page the scammer built.' },
+      { do: 'Find what the page asks you to type: her email address and password.', why: 'A page that wants a password, reached from a message, is the whole scam.' }
     ],
     feature: { step: 'A1', option: 'password' },
     name: [
-      'The name for this is {o:phishing}. The word is a different spelling of "fishing": the message is the bait, and the password is what is caught.'
+      'This is {o:phishing}. The word is another spelling of "fishing": the message is the bait, and the password is what is caught.'
     ],
     act: [
-      'Do not tap the link again and do not type anything. Close it, then open the app yourself or type the address yourself: a real problem will be there too. If you have already typed the password, change it now on the real site, and anywhere else you used the same one.'
+      { do: 'Close the page and type nothing.', why: 'Whatever you type goes straight to the scammer.' },
+      { do: 'Open the app yourself, or type the address yourself.', why: 'A real problem with your account will be there too.' },
+      { do: 'If you already typed the password, change it now on the real site, and anywhere else you used it.', why: 'The scammer tries it on the real site at once.' }
     ] },
 
   { id: 'check-phishing', kind: 'check', after: 'phishing',
@@ -33,13 +33,13 @@ FC.cards('scams', 'u3', [
 
   /* ---------- The first look-alike pair: the same page, one started by you and one not ---------- */
   { id: 'look-phishing-realsignin', kind: 'lookalike', ledger: 'phishing~realsignin',
-    link: 'Both can ask for a password on a page that looks the same. This card puts a pair side by side.',
+    link: 'Both can ask for a password on a page that looks the same.',
     cases: ['ac-mail-own', 'ac-mail-text'],
-    instruction: 'Both cases are about Dev, his email provider and a mailbox that is almost full, and in both a page asks for his email address and password. Compare one thing: how Dev came to the sign-in.',
+    instruction: 'Both stories are about Dev, his email provider and a nearly full mailbox, and in both a page asks for his email address and password. Compare one thing: how Dev got to the sign-in.',
     prompt: { kind: 'which', option: 'A2.fits', answer: 'ac-mail-own' },
     difference: [
-      'In Case A Dev opens the mail app himself, an app he has used for years, and it shows him a banner about his mailbox. The sign-in came from what he did next. The answer is {a:A2.fits}, and the case is {o:realsignin}.',
-      'In Case B a text arrives from a number he does not know, with a link to a page that has his provider\'s logo. It started with the message. The answer is the other one for the same question, and the case is {o:phishing}.',
+      'In Story A, Dev opens the mail app himself, and the sign-in comes from what he does next. That is {o:realsignin}.',
+      'In Story B, a text from a number he does not know sends him to a page with his provider\'s logo. It started with the message. That is {o:phishing}.',
       'The same words, a full mailbox and a page that wants the password, can be either. What differs is where each one began.'
     ] }
 ]);

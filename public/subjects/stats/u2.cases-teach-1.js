@@ -24,11 +24,11 @@ FC.cases('stats', 'u2', [
     outcome: 'samp_ok', route: { S1: ['holds'], H1: ['group'] },
     cues: { S1: ['drew 500 student ID numbers by lottery from its full roll', 'until 470 had answered'], H1: 'About 40% of our students bring lunch from home' },
     segments: [
-      { text: 'It drew 500 student ID numbers by lottery from its full roll, and a staff member asked each one in person, tracking down anyone who was absent until 470 had answered', note: 'That says how the figure was got. It tells you why the figure can be relied on, and it is not the claim.' },
-      { text: 'Of the 470, 188 bring lunch from home, which is 40 in 100', note: 'That is the figure. The claim is what the district says the figure shows.' },
+      { text: 'It drew 500 student ID numbers by lottery from its full roll, and a staff member asked each one in person, tracking down anyone who was absent until 470 had answered', note: 'This is how the figure was gathered. It is why you can trust the figure, but it is not the claim.' },
+      { text: 'Of the 470, 188 bring lunch from home, which is 40 in 100', note: 'This is the figure itself. The claim is what the district says the figure shows.' },
       { text: 'About 40% of our students bring lunch from home' }
     ],
-    reason: { H1: 'The words after "The district says" are the claim, and the claim gives one figure about one group at one time. The sentences before it say how the figure was got, and they are what make it hold. They are not what the claim says.' } },
+    reason: { H1: 'The words after "The district says" are the claim: one figure, for one group, at one time.' } },
 
   { id: 'h-wait-avg', use: 'teach', tier: 'clean', setting: 'health', topic: 'a clinic’s average wait, timed once',  name: 'The clinic’s wait, drawn from last year',
     text: "A clinic saw 12,000 patients last year. To find out how long patients wait, a computer drew 400 of last year's visits by lottery from the booking system, and a clerk looked up the check-in time and the time the patient saw a doctor for every one of the 400. The average wait was 24 minutes. The clinic says: 'Last year the average wait for a visit was about 24 minutes.'",
@@ -44,7 +44,7 @@ FC.cases('stats', 'u2', [
     text: "A school records attendance every morning on the same register form for every class, and has done so since 2018. Nobody's pay, ranking or grant depends on the figure. In September, 94 in every 100 students were present on an average day. In November it was 91 in every 100. The school says: 'Average daily attendance fell from 94% in September to 91% in November.'",
     outcome: 'meas_ok', route: { S1: ['holds'], H1: ['change'] },
     cues: { S1: ['records attendance every morning on the same register form for every class', 'Nobody\'s pay, ranking or grant depends on the figure'], H1: 'Average daily attendance fell from 94% in September to 91% in November' },
-    reason: { H1: 'The claim is {cue:H1}. It follows one figure, attendance, through two times and says that it fell. It sets it beside nothing else. The answer for one figure at one time would be wrong, because the claim gives two times.' } },
+    reason: { H1: 'The claim is {cue:H1}: one figure, attendance, followed through two times.' } },
 
   { id: 'h-wait-change', use: 'teach', tier: 'clean', setting: 'health', topic: 'a clinic’s average wait, two years', name: 'The clinic’s wait, two years',
     text: "A clinic saw about 12,000 patients in each of 2022 and 2023. In both years the booking system recorded the check-in time and the time the patient saw a doctor for every visit, and nobody's pay depends on the number. The average wait was 31 minutes in 2022 and 24 minutes in 2023. The clinic says: 'The average wait fell from 31 minutes in 2022 to 24 minutes in 2023.'",

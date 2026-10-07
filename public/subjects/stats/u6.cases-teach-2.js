@@ -1,4 +1,4 @@
-// Statistical Claims, Unit Six: cases shown inside cards, part two (Confounding, Reverse causation, and the cases of their look-alike pairs).
+// Statistical Claims, Unit Six: stories shown inside cards, part two (Confounding, Reverse causation, and the cases of their look-alike pairs).
 // Field guide: see u6.cases-teach-1.js. A claim of cause here has passed the first three parts, so every route starts { S1: ['cause'] }.
 // A case of "Nothing goes wrong" (cause_ok, taught by Unit Two) is in the collection because a look-alike card needs one beside each fault.
 
@@ -14,7 +14,7 @@ FC.cases('stats', 'u6', [
     text: "A bank says: 'Customers who use our mobile app hold an average of $7,000 in savings, against $5,000 for customers who do not, so the app helps people save.' The app users chose to download it. The bank’s own records show that most of them have banked with it for over ten years and earn more than the customers who did not download it.",
     outcome: 'confound', route: { S1: ['cause'], K1: ['behind'] },
     cues: { S1: 'so the app helps people save', K1: 'most of them have banked with it for over ten years and earn more than the customers who did not download it' },
-    reason: { K1: 'The app users chose to download it, and {cue:K1}. Customers who have banked for over ten years and earn more would hold more in savings whether or not they had the app. The figures show a real difference between the groups, and something else that differs between them could bring it about alone.' } },
+    reason: { K1: 'The users chose to download it, and {cue:K1}. That alone could explain the bigger savings, with or without the app.' } },
 
   /* ---------- Reverse causation ---------- */
   { id: 'k-cameras', use: 'teach', tier: 'clean', setting: 'home', topic: 'security cameras and break-ins on a street', name: 'The security cameras',
@@ -26,7 +26,7 @@ FC.cases('stats', 'u6', [
     text: "A city study of 300 house fires finds that the more firefighters were sent to a fire, the more damage it did: fires with 20 or more firefighters averaged $90,000 in damage, and fires with fewer than 10 averaged $12,000. A councilor says: 'Sending firefighters makes fires worse.' The fire chief’s dispatch rules say that the more serious the fire, the more firefighters are sent.",
     outcome: 'reverse', route: { S1: ['cause'], K1: ['backward'] },
     cues: { S1: 'Sending firefighters makes fires worse', K1: 'the more serious the fire, the more firefighters are sent' },
-    reason: { K1: 'The councilor says that the first thing, sending firefighters, caused the second, damage. {cue:K1}, so the damage, or at least how serious the fire is, comes first and decides how many firefighters are sent. The figures go together because of the arrow running the other way, and nothing else is needed to explain them.' } },
+    reason: { K1: 'The councilor says sending firefighters made the damage worse, but {cue:K1}. So the fire’s size came first and decided how many were sent.' } },
 
   { id: 'k-trees-lots', use: 'teach', tier: 'clean', setting: 'home', topic: 'street trees and home prices, with lot size behind both', name: 'The trees and the lots',
     text: "A city study finds that streets with many trees have higher home prices: homes on the 20 tree-lined streets sell for an average of $480,000, against $350,000 on the 20 streets with few trees. A columnist writes: 'Planting trees raises home prices.' Most of the tree-lined streets are in the city’s older neighborhoods, where the lots are twice as large, and large lots sell for more and have room for trees.",

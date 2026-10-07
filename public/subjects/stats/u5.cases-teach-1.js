@@ -1,13 +1,13 @@
-// Statistical Claims, Unit Five: cases shown inside cards, part one: the word "false alarm", the first name (a percentage with no counts),
+// Statistical Claims, Unit Five: stories shown inside cards, part one: the word "false alarm", the first name (a percentage with no counts),
 // its look-alikes, and the check on the question.
 // use: 'teach' = shown in a card with its reasoning; 'check' = asked between cards. Neither may appear in the drill.
-// A case that sits in a card has a name. cues[STEP] is the exact phrase in the text that decides that step; segments are the tappable
+// A story that sits in a card has a name. cues[STEP] is the exact phrase in the text that decides that step; segments are the tappable
 // pieces for "tap the words" prompts, and note is shown if a piece is tapped in error.
-// Every case here is a claim as someone might say it. People, firms and studies are invented.
+// Every story here is a claim as someone might say it. People, firms and studies are invented.
 
 FC.cases('stats', 'u5', [
 
-  /* ---------- The case that carries the term "false alarm" (no name is asked of it) ---------- */
+  /* ---------- The story that carries the term "false alarm" (no name is asked of it) ---------- */
   { id: 'alarm-term', use: 'teach', tier: 'clean', setting: 'home', topic: 'a smoke alarm and toast', name: 'The toast alarm',
     text: "Priya's smoke alarm goes off every time she makes toast. Each time she opens a window, and each time there turns out to be no fire." },
 
@@ -22,11 +22,11 @@ FC.cases('stats', 'u5', [
     outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
     cues: { C1: 'late arrivals have fallen by 60%' },
     segments: [
-      { text: 'A school newsletter says', note: 'That tells you who is speaking. It is not the figure.' },
+      { text: 'A school newsletter says', note: 'That only tells you who is speaking.' },
       { text: 'Since the new bus route began, late arrivals have fallen by 60%' },
-      { text: 'It does not say how many students were late before or after', note: 'That tells you what is missing. The words asked for are the ones that give the percentage.' }
+      { text: 'It does not say how many students were late before or after', note: 'That is what is missing. The question asks for the percentage itself.' }
     ],
-    reason: { C1: 'The newsletter gives {cue:C1}: a share of how many arrivals were late before, with no word on how many that was or how many there are now. A fall of 60% is 5 late students falling to 2, or 500 falling to 200. The words do not let you tell which.' } },
+    reason: { C1: 'The newsletter gives {cue:C1} and no counts: 60% could be 5 late students falling to 2, or 500 falling to 200.' } },
 
   /* ---------- A percentage without the numbers, beside A fair comparison: same story, two answers ---------- */
   { id: 'la1-bus-pct', use: 'teach', tier: 'varied', setting: 'community', topic: 'late buses, a percentage only', name: 'The Line 12 percentage',
@@ -45,8 +45,8 @@ FC.cases('stats', 'u5', [
     outcome: 'smalln', route: { S1: ['counted'], A1: ['handful'] },
     cues: { S1: 'one theft last month and four this month', A1: 'one theft last month and four this month' },
     segments: [
-      { text: 'A shop owner posts', note: 'That tells you who is speaking. It is not the figure.' },
-      { text: 'Shoplifting at my store is up 300% this month!', note: 'That is the percentage, and it is the part that catches the eye. A percentage with no counts would be one thing. Here the counts are given in the next sentence, and they are what the case turns on.' },
+      { text: 'A shop owner posts', note: 'That only tells you who is speaking.' },
+      { text: 'Shoplifting at my store is up 300% this month!', note: 'That is the percentage, the part that catches the eye. The counts that decide this are in the next sentence.' },
       { text: 'one theft last month and four this month' }
     ] },
 
@@ -55,5 +55,5 @@ FC.cases('stats', 'u5', [
     text: "A town newsletter says: 'Since the new streetlights went up, night-time car break-ins on Elm Street have dropped by 80%.' It does not say how many break-ins there were before or after.",
     outcome: 'relrisk', route: { S1: ['compare'], C1: ['numbers'] },
     cues: { C1: 'night-time car break-ins on Elm Street have dropped by 80%' },
-    reason: { C1: 'The newsletter gives {cue:C1}: a share of how many break-ins there were before, and no count. A drop of 80% is 10 break-ins falling to 2, or 100 falling to 20. The words do not let you tell which.' } }
+    reason: { C1: 'The newsletter gives {cue:C1} and no counts: 80% could be 10 break-ins falling to 2, or 100 falling to 20.' } }
 ]);

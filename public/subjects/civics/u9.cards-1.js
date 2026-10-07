@@ -9,19 +9,20 @@
 FC.cards('civics', 'u9', [
 
   { id: 'orient-hist', kind: 'orient',
-    h: 'Facts to hold, about how the country began, grew and divided over slavery',
-    canDo: 'By the end you can say, without looking anything up, why people came to the colonies, how the colonists fell out with Britain, the main years of the founding, how the country grew and split over slavery, what happened in the Civil War, and what the three amendments after it did. The unit stops at 1877.',
-    everyday: 'The citizenship interview asks about this history directly, and the news keeps leaning on it: when a story says that a right “applies to the states”, or that a person is “a citizen by birth”, the amendments that followed the Civil War are what it rests on. Each fact comes with a short story, so it has something to hang on.',
-    add: 'This is the short form that the interview wants. It says plainly what happened, slavery and the removal of Native nations included, and it does not tell the whole story.' },
+    h: 'The US history you need to know, up to 1877',
+    canDo: 'The citizenship interview asks about this history, and news stories lean on it. After this unit you can say, from memory, why people came to the colonies, why they broke from Britain, how the country grew, why it split over slavery, and what the three amendments after the Civil War changed. It stops at 1877.',
+    everyday: 'When a story says a right “applies to the states”, or that someone is “a citizen by birth”, it is leaning on the amendments passed after the Civil War. Each group of facts starts with a short story, so each fact has something to hang on.',
+    add: 'This is the short version that the interview wants. It says plainly what happened, including slavery and the removal of Native nations, and it leaves out most of the story.' },
 
   /* ---------- group one: why people came ---------- */
   { id: 'con-hist-came', kind: 'concept',
-    h: 'Why people crossed the ocean to the colonies',
-    link: 'The start of the story: why people left home and crossed the ocean.',
+    h: 'Why people crossed the ocean',
+    link: 'Why people left home for the colonies.',
     case: 'c9-dock',
     plain: [
-      'The four people on the dock stand for the four reasons that people gave: religious freedom (being free to follow your own religion), political liberty (a say in how you are governed), economic opportunity (a chance to earn a better living), and persecution (being harmed or punished over who you are or what you believe).',
-      'Three are things people hoped to have. Persecution is the one they hoped to get away from. A person harmed for their beliefs may have wanted both, as Rafael’s family did, but the facts are still different: what you came to have, and what you came to leave behind.'
+      'Each person on the dock wants something different. Eliza wants to follow her own religion: that is religious freedom. Tom wants a say in how he is governed: political liberty. Hana wants better work and pay: economic opportunity.',
+      'Rafael’s family is different. They are not heading toward something, they are running from it. Persecution means being harmed or punished for who you are or what you believe.',
+      'To keep the four straight, ask one question: did the person come to get something, or to get away from something? Three reasons are about getting something. Persecution is the only one about getting away.'
     ] },
 
   { id: 'facts-hist-came', kind: 'facts',
@@ -30,13 +31,13 @@ FC.cards('civics', 'u9', [
     concept: 'con-hist-came',
     rows: [
       { id: 'came-faith', q: 'What did a person who wanted to follow their own religion come to the colonies to have?', a: 'Religious freedom',
-        relates: 'Being free to follow your own religion. It is something to have, unlike persecution, which is something to leave.' },
+        relates: 'Being free to follow your own religion. It is something to get, not something to run from.' },
       { id: 'came-vote', q: 'What did a person who wanted a say in how they were governed come to the colonies to have?', a: 'Political liberty',
-        relates: 'Freedom in public life, including a say in how you are governed. It is something to have.' },
+        relates: 'A say in how you are governed. It is something to get.' },
       { id: 'came-living', q: 'What did a person who wanted to earn a better living come to the colonies to find?', a: 'Economic opportunity',
-        relates: 'The reason about work and money, and not about belief or government. It is something to have.' },
-      { id: 'came-flee', q: 'What did a person who was being harmed at home for who they were or what they believed come to the colonies to get away from?', a: 'Persecution',
-        relates: 'Being harmed or punished over who you are or what you believe. It is the only one of the four that is something to get away from.' }
+        relates: 'A chance at better work and pay. It is about money, not belief or government.' },
+      { id: 'came-flee', q: 'What did a person being harmed at home for who they were or what they believed come to the colonies to escape?', a: 'Persecution',
+        relates: 'Being harmed or punished for who you are or what you believe. It is the only one of the four that is something to run from.' }
     ] },
 
   { id: 'chk-hist-came-faith', kind: 'check', after: 'facts-hist-came', ask: { type: 'fact', row: 'came-faith' } },
@@ -46,13 +47,15 @@ FC.cards('civics', 'u9', [
 
   /* ---------- group two: who else was in the colonies ---------- */
   { id: 'con-hist-who', kind: 'concept',
-    h: 'Who else was there, and how they came',
-    link: 'Not everyone in the colonies came by choice, and not everyone had come at all.',
+    h: 'Who else was in the colonies',
+    link: 'Not everyone came by choice, and some people were there before anyone arrived.',
     case: 'c9-farm',
     plain: [
-      'The three people in the field stand for three real groups. An indentured servant worked a set number of years to pay off the cost of the passage across the ocean, and then the debt was paid. Joan made an agreement.',
-      'From 1619, many people were brought to the colonies as enslaved people. An enslaved person was forced to work, was treated as the property of another person, and was not free to leave. Samuel made no agreement, because nobody asked him.',
-      'Native nations were there before all of them. The colonists did not arrive on empty land.'
+      'Joan, Samuel and Mika belong to three different groups.',
+      'Joan was an indentured servant. She agreed to work a set number of years to pay for her trip across the ocean, and when the years were up, the debt was paid.',
+      'Samuel was enslaved. From 1619, many people were brought to the colonies by force. An enslaved person was treated as someone else’s property and could not leave. Nobody asked Samuel, and he made no agreement.',
+      'Mika’s people, a Native nation, were there long before any ship came. The colonists did not settle empty land.',
+      'To tell Joan from Samuel, ask: did the person agree to the work, and could they leave when it was done?'
     ] },
 
   { id: 'facts-hist-who', kind: 'facts',
@@ -60,12 +63,12 @@ FC.cards('civics', 'u9', [
     link: 'The three groups, asked by how they came.',
     concept: 'con-hist-who',
     rows: [
-      { id: 'who-indent', q: 'What were people called who worked for a set number of years to pay off the cost of their passage across the ocean?', a: 'Indentured servants',
-        relates: 'Joan’s group. The work was for a set number of years, as payment for the passage.' },
-      { id: 'who-enslaved', q: 'What were people called who were brought to the colonies by force, many of them from 1619, and were not free to leave?', a: 'Enslaved people',
-        relates: 'Samuel’s group. They were brought by force and held as the property of other people.' },
+      { id: 'who-indent', q: 'What were people called who worked a set number of years to pay for their trip across the ocean?', a: 'Indentured servants',
+        relates: 'Joan’s group. They agreed to the work, and it ended after a set number of years.' },
+      { id: 'who-enslaved', q: 'What were people called who were brought to the colonies by force, many from 1619, and could not leave?', a: 'Enslaved people',
+        relates: 'Samuel’s group. They were brought by force and held as someone else’s property.' },
       { id: 'who-native', q: 'Who already lived on the land when the colonists came?', a: 'Native nations',
-        relates: 'They were there first. The colonists settled on land where Native nations already lived.' }
+        relates: 'Mika’s people. They were there first.' }
     ] },
 
   { id: 'chk-hist-who-indent', kind: 'check', after: 'facts-hist-who', ask: { type: 'fact', row: 'who-indent' } },

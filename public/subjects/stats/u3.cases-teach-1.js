@@ -19,11 +19,11 @@ FC.cases('stats', 'u3', [
     outcome: 'survivor', route: { S1: ['counted'], A1: ['lasted'] },
     cues: { S1: 'The exam is only offered to learners who reach level 20', A1: 'Of the 8,000 people who downloaded the app in January, 400 reached level 20' },
     segments: [
-      { text: "A language app advertises: 'Nine in ten learners pass the fluency exam.'", note: 'That is the claim. What you are asked for is who the figure was worked out from, and the words for that come next.' },
+      { text: "A language app advertises: 'Nine in ten learners pass the fluency exam.'", note: 'That is the claim. The words you want say who the figure came from.' },
       { text: 'The exam is only offered to learners who reach level 20. Of the 8,000 people who downloaded the app in January, 400 reached level 20.' }
     ],
-    reason: { S1: 'The claim speaks for "learners", but the exam is only for the ones who got far enough: {cue:S1}.',
-              A1: 'The figure is worked out from the learners who got to level 20: {cue:A1}. That is 400 of 8,000, which is 5 in every 100 of the people who started. The other 7,600 are not in it, and the ones who gave up are the ones least likely to pass.' } },
+    reason: { S1: 'The claim speaks for “learners”, but the exam is only for the ones who got far enough: {cue:S1}.',
+              A1: 'Only 400 of the 8,000 who downloaded the app got to level 20, so the 7,600 who gave up are not in the figure.' } },
 
   /* ---------- The look-alike with the claim that holds: the same trial, reported two ways ---------- */
   { id: 'cn-seeds-alive', use: 'teach', tier: 'clean', setting: 'home', topic: 'tomato seeds, only the plants that lived', name: 'The seed company, the plants that lived',

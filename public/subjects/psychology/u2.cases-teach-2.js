@@ -11,8 +11,8 @@ FC.cases('psychology', 'u2', [
     text: "Helen believes that people who work from home do less. When a home worker finishes a report early, she says he must have had an easy week. When a home worker misses a deadline, she says, 'See? This is what I mean.'",
     outcome: 'confbias', route: { D1: ['reasoning'], R1: ['scrutiny'] },
     cues: { R1: 'he must have had an easy week' },
-    reason: { R1: "A report finished early is evidence against Helen's view, and she explains it away: {cue:R1}. A missed deadline is evidence for her view, and it goes straight in as proof. One side gets a harder test." },
-    not: { outcome: 'dissonance', why: "Helen is not giving a reason why something she did is fine. Her reasoning is about what other people's results show." } },
+    reason: { R1: "A report finished early goes against Helen's view, and she explains it away: {cue:R1}. A missed deadline fits her view, and it goes straight in as proof." },
+    not: { outcome: 'dissonance', why: "Helen is not saying something she did is fine. She is deciding what other people's results show." } },
 
   /* ---------- Motivated reasoning ---------- */
   { id: 'interviews', use: 'teach', tier: 'clean', setting: 'work', topic: 'choosing a team leader', name: "Carol's interviews", also: ['scrutiny'],
@@ -21,7 +21,7 @@ FC.cases('psychology', 'u2', [
     cues: { R1: 'Before the interviews she has already decided' },
     segments: [
       { text: 'Before the interviews she has already decided it will be her friend Jas' },
-      { text: "she writes down the good points of Jas's answers and the weak points of everyone else's", note: 'That is being harder on one side. Both names can show it, so it cannot settle which of the two this is.' },
+      { text: "she writes down the good points of Jas's answers and the weak points of everyone else's", note: 'That is being harder on one side. Both names show it, so it cannot settle which this is.' },
       { text: 'Jas is clearly the strongest', note: 'That is where she ends up. Where a person ends up never decides the name.' }
     ] },
 
@@ -29,8 +29,8 @@ FC.cases('psychology', 'u2', [
     text: "Before the family meeting about where to go on vacation, Raj has made up his mind: Portugal. At the meeting he reads out the weather forecast for Portugal and the best review of the villa he likes. He leaves in his bag the price comparison the family asked him to bring.",
     outcome: 'motivated', route: { D1: ['reasoning'], R1: ['fixed'] },
     cues: { R1: 'Before the family meeting about where to go on vacation, Raj has made up his mind' },
-    reason: { R1: 'The family meeting is the search that was supposed to settle where to go, and the answer came before it: {cue:R1}. What he brings to the meeting is support for it, and the one thing that might go against it stays in his bag.' },
-    not: { outcome: 'confbias', why: '{o:confbias} would show Raj giving evidence against his view a harder test as it turned up. He does not test the price comparison at all; he keeps it out. And the case shows you the earlier thing: the answer was chosen before the meeting began.' } },
+    reason: { R1: 'The family meeting was meant to settle where to go, but the answer came first: {cue:R1}. What he brings supports it, and the price comparison that might not stays in his bag.' },
+    not: { outcome: 'confbias', why: 'He never picks the price comparison apart. He leaves it in his bag, because the answer was chosen before the meeting began.' } },
 
   /* ---------- The hardest pair: same person, same subject, two names ---------- */
   { id: 'builder-friday', use: 'teach', tier: 'varied', setting: 'home', topic: 'hiring a builder',

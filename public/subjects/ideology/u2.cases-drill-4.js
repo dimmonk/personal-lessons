@@ -11,7 +11,7 @@ FC.cases('ideology', 'u2', [
             C2: 'We are asking for a higher legal minimum' },
     reason: { D1: 'The text sets the cooks against the company that owns the kitchens, and stands with the cooks: {cue:D1}.',
               C1: 'The company keeps the kitchens, and a legal minimum and a tax are asked for: {cue:C1}.',
-              C2: 'The text asks the government for a higher minimum: {cue:C2}. It says nothing about how power is won or held, about elections, or about getting rid of the government.' },
+              C2: 'The text asks for a higher legal minimum: {cue:C2}. That is a plan for pay, and it says nothing about power or about getting rid of the government.' },
     not: { outcome: 'classonly', why: 'The text goes past taking the cooks’ side to a plan: a minimum and a tax. A text that only took the side would be {o:classonly}.' } },
 
   { id: 'c-r-co1', use: 'drill', tier: 'clean', setting: 'housing', topic: 'apartment cleaners and a sales office',
@@ -28,7 +28,7 @@ FC.cases('ideology', 'u2', [
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] },
     cues: { D1: ['The $60 goes to the owners', 'The circle meets for the fitters'], C1: 'Any owner has to keep a gap like it, and that is how the arrangement works', C2: 'The circle meets for the fitters' },
     reason: { D1: 'The text sets the fitters against the owners who take the gap, and is written for the fitters: {cue:D1}.',
-              C1: 'The text explains how owners gain, as the way the arrangement works for any owner: {cue:C1}. The $60 it says goes to the owners is the part of the fitter’s day that the fitter is not paid for. The text asks for nothing to be done with the railway.',
+              C1: 'The text explains how any owner gains: {cue:C1}. It asks for nothing to be done with the railway.',
               C2: 'The text says nothing about power or the government. It says who the circle is for: {cue:C2}.' },
     not: { outcome: 'classonly', why: 'The text does more than side with the fitters: it says why any owner gains. A text that only complained would be {o:classonly}.' } }
 ]);

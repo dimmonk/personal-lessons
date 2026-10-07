@@ -18,6 +18,6 @@ FC.cases('wealth', 'u5', [
     text: "Quentin is 81 and a widower. His house is worth $5,000,000, and he has $25,000,000 in investments. His income is $800,000 a year and he spends about $400,000. His will, forms and power of attorney were all renewed in the spring. The federal estate tax takes 40% of whatever a person leaves above a tax-free limit. Nothing he owns is expected to change much in value.",
     outcome: 'gifting', route: { D1: ['handover'], H1: ['bigestate'] },
     cues: { H1: ['His house is worth $5,000,000, and he has $25,000,000 in investments', 'His income is $800,000 a year and he spends about $400,000'] },
-    reason: { H1: 'The case shows the estate above the limit and money to spare: {cue:H1}. $5,000,000 and $25,000,000 make $30,000,000, far above the limit, so every $1,000,000 above it would cost $400,000. His income is $400,000 a year more than he spends. His papers are current, and nothing he owns is expected to rise sharply.' },
-    not: { outcome: 'simple', why: 'His papers are current, which is part of {o:simple}. But the estate is far above the limit and he has money he does not need, so something in the case could go wrong at the handover.' } }
+    reason: { H1: 'His estate is $30,000,000, far above the limit, and he has $400,000 a year to spare: {cue:H1}.' },
+    not: { outcome: 'simple', why: 'His papers are current, but the estate is far above the limit and he has money he does not need.' } }
 ]);

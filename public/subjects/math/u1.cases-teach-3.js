@@ -13,8 +13,8 @@ FC.cases('math', 'u1', [
     cues: { M1: ['$15 for every hour he works', 'How many hours did he work?'] },
     segments: [
       { text: 'A carpet cleaner charges a fixed $20 call-out fee plus $15 for every hour he works' },
-      { text: 'Bianca’s bill is $95', note: 'That is the result, and it matters. But the van hire had a result too, so it cannot be what makes the difference.' },
-      { text: 'How many hours did he work?', note: 'That is the number the problem leaves out. The van hire left a number out too, so it cannot be what makes the difference. Look at what the price is repeated for.' }
+      { text: 'Bianca’s bill is $95', note: 'That is the bill, and it matters. But the van hire had a bill too, so it is not what makes the difference.' },
+      { text: 'How many hours did he work?', note: 'That is the number the problem leaves out. The van hire left one out too, so look at what the price repeats for.' }
     ] },
 
   /* ---------- The exception: an amount that changes each day, and a day of the week ---------- */
@@ -24,8 +24,8 @@ FC.cases('math', 'u1', [
     route: { M1: ['whole'] },
     cues: { M1: ['takes one every day', 'On what day of the week will she take the last one?'] },
     segments: [
-      { text: 'Mira opens a box of 75 tablets on a Monday', note: 'That gives where the count starts and how long it is. It is part of the story, and it does not say what to work out.' },
-      { text: 'and takes one every day', note: 'That is why the problem can look like an amount changing over time: the box loses a tablet a day. It is not what the question asks about.' },
+      { text: 'Mira opens a box of 75 tablets on a Monday', note: 'That gives where the count starts and how long it is. It does not say what to work out.' },
+      { text: 'and takes one every day', note: 'That is why it looks like an amount that changes as days pass: the box loses a tablet a day. But it is not what the question asks about.' },
       { text: 'On what day of the week will she take the last one?' }
     ] },
 
@@ -48,9 +48,9 @@ FC.cases('math', 'u1', [
     cues: { M1: ['makes a model of a locomotive at a scale of 1 to 40', 'How long is the real locomotive?'] },
     segments: [
       { text: 'A toy company makes a model of a locomotive at a scale of 1 to 40' },
-      { text: 'every 1 cm on the model stands for 40 cm on the real locomotive', note: 'That is the rate, and it is why the problem looks like a hidden number that must fit a rate. It is not the words that say what the rate is a rate of.' },
-      { text: 'The model is 30 cm long', note: 'That is the number the rate is scaled to. It is a fact the answer depends on, and not the words that show what the problem is about.' },
-      { text: 'How long is the real locomotive?', note: 'That is the question. The words that say what the rate is a rate of come in the first sentence.' }
+      { text: 'every 1 cm on the model stands for 40 cm on the real locomotive', note: 'That is the rate, and it is why this looks like a missing number. It does not say what the rate compares.' },
+      { text: 'The model is 30 cm long', note: 'That is the number the rate is scaled to. The sum needs it, but it does not show what the problem is about.' },
+      { text: 'How long is the real locomotive?', note: 'That is the question. The words that show what the rate compares are in the first sentence.' }
     ] },
 
   /* ---------- The worked problem ---------- */

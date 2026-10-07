@@ -18,11 +18,11 @@ FC.cases('ideology', 'u2', [
     outcome: 'socdem', route: { D1: ['class'], C1: ['keep'], C2: ['none'] },
     cues: { C1: "We do not want the bank taken from its shareholders. We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use" },
     segments: [
-      { text: "The bank's shareholders collect the interest and the tellers collect the complaints", note: 'That names the owners and the workers. It does not say what the text wants done with the bank.' },
-      { text: "We do not want the bank taken from its shareholders", note: 'That says what the text does not want. The shareholders keep the bank. It is half of what you point to. The other half is what the text asks for in its place.' },
+      { text: "The bank's shareholders collect the interest and the tellers collect the complaints", note: 'That names the owners and the workers. It does not say what to do about the bank.' },
+      { text: "We do not want the bank taken from its shareholders", note: 'That is half of it: the shareholders keep the bank. You also need what the text asks for instead.' },
       { text: "We want a law that sets a minimum wage, and a tax on the bank's profits to pay for training that every worker in the county can use" }
     ],
-    reason: { C1: 'The words are {cue:C1}: the shareholders keep the bank, and a tax and a law are asked for to even out what people get.' } },
+    reason: { C1: 'These words say the shareholders keep the bank, and ask for a tax and a law to share things out more fairly.' } },
 
   { id: 'c-co-laundry', use: 'teach', tier: 'clean', setting: 'work', topic: 'a notice at a laundry', name: 'The laundry notice',
     text: "A notice pinned up at the Brightwell laundry: 'The women who work the presses are paid by the hour, and the owners are paid from what the presses make. We are on the side of the people who work. Come to the meeting on Thursday and stand with us.'",
@@ -33,7 +33,7 @@ FC.cases('ideology', 'u2', [
     text: "Drivers at the Thornley bus company have written to the town: 'The owners paid themselves a bonus while we were told there was no money for a raise. We drive, they own, and we are on the side of the drivers. Please come and stand with us outside the depot on Friday.'",
     outcome: 'classonly', route: { D1: ['class'], C1: ['none'], C2: ['none'] },
     cues: { C1: 'Please come and stand with us outside the depot on Friday' },
-    reason: { C1: 'The text says which side it is on and asks people to come: {cue:C1}. Where a plan for the buses would be, there is only an invitation. It says nothing about who should own the company, about taxes or services, or about how the owners gain.' } },
+    reason: { C1: 'Where a plan for the buses would be, there is only an invitation: {cue:C1}. It says nothing about who should own the company, about taxes, or about how the owners gain.' } },
 
   { id: 'c-dm-ferry', use: 'teach', tier: 'clean', setting: 'town', topic: 'a ferry service for all riders', name: 'The ferry crews',
     text: "From a campaign leaflet by the Westmarch ferry crews: 'The ferry company's owners take the fares, and the crews take the risks. We say the ferries should belong to the public, run by the government for everyone. We will ask the voters to put a government in place that will do it.'",
@@ -44,7 +44,7 @@ FC.cases('ideology', 'u2', [
     text: "The tellers at the Harrow Savings Bank say: 'The bank's shareholders gather the interest and the tellers gather the complaints. We side with the tellers. Parliament should pass a law that brings the bank into public ownership, to be run for everyone.'",
     outcome: 'demsoc', route: { D1: ['class'], C1: ['public'], C2: ['vote'] },
     cues: { C1: 'brings the bank into public ownership, to be run for everyone', C2: 'Parliament should pass a law' },
-    reason: { C1: 'The bank is to pass out of its shareholders’ hands: {cue:C1}. That is a handover, not a tax on owners who keep the bank.' } },
+    reason: { C1: 'The bank is to pass out of its shareholders’ hands: {cue:C1}. That is a handover, not a tax.' } },
 
   { id: 'c-lk-sdco-sd', use: 'teach', tier: 'clean', setting: 'work', topic: 'a dairy and a minimum wage', name: 'A dairy and a minimum wage',
     text: "Milkers at the Greenvale dairy have put out a statement: 'The family that owns the dairy took a large profit this year, and we have had no raise in four years. We are on the side of the people who do the milking. We would leave the dairy with its owners, but set a minimum wage that rises with prices, and tax its profits to pay for free training for every worker.'",

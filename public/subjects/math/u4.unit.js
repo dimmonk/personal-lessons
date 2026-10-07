@@ -10,12 +10,12 @@
 
 FC.unit('math', 'u4', {
   kind: 'P',
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'Four',
-  title: { fromKey: 'M1.growth' },
-  subtitle: 'Four kinds of problem about an amount that changes as time passes, and a procedure worked out step by step for each',
+  title: { text: 'Amounts that change over time' },
+  subtitle: 'Does it add the same number, multiply, or change just once? Then work out where it ends up, or how long it takes to get there.',
   teaches: { steps: ['G1', 'G2'], outcomes: ['lin', 'expg', 'logsolve', 'oneoff'], terms: ['multiplier', 'logscale'] },
   assumes: ['u1', 'u2', 'u3'],
 
@@ -25,41 +25,42 @@ FC.unit('math', 'u4', {
   // test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'lin~expg', pair: ['lin', 'expg'], step: 'G1',
-      shared: 'Both follow one amount that changes again and again, and for a while their numbers are close. A rise of 5% on $1,000 is $50, which is also what “$50 a month” says, so the first change can be the same size in both.',
-      rule: '{o:lin} changes the amount by the same number each time, so every change is the same size, whatever the amount has reached. {o:expg} changes it by the same share of what it has reached, so each change is bigger than the one before when the amount grows, and smaller when it shrinks.',
+      shared: 'Both follow an amount that changes again and again, and the first change can be the same size in both: 5% of $1,000 is $50, the same as “$50 a month”.',
+      rule: 'In {o:lin} every change is the same size, whatever the amount has reached. In {o:expg} every change is a share of what the amount is now, so it gets bigger as the amount grows and smaller as it shrinks.',
       test: 'Is the amount changed by the same number each time, such as $50 a month, or by the same share of itself each time, such as 5% a month or a doubling?' },
     { id: 'expg~logsolve', pair: ['expg', 'logsolve'], step: 'G2',
-      shared: 'Both have an amount that is multiplied by the same number each time, and the very same start, percentage and story can appear in both. The same town at 3% a year can be asked about either way.',
-      rule: '{o:expg} is given a time and asks for the amount at the end of it, so the amount is found by multiplying that many times. {o:logsolve} is given a target and asks for the time, so the number of times is what is missing, and it is found by counting how many multiplications reach the target.',
+      shared: 'In both, an amount is multiplied by the same number each time, and the same start and percentage can appear in both: a town at 3% a year can be asked about either way.',
+      rule: 'In {o:expg} you are given a time and asked for the amount, so you multiply that many times. In {o:logsolve} you are given a target and asked for the time, so you count how many multiplications reach it.',
       test: 'Does the problem give a length of time and ask for the amount, or give a target for the amount and ask how long?' },
     { id: 'lin~oneoff', pair: ['lin', 'oneoff'], step: 'G1',
-      shared: 'Both are about an amount that changes by a fixed number, and both can be written with the same figure: a price that went up by $2.',
-      rule: '{o:lin} changes the amount by the same number each time, so the change comes again and again. {o:oneoff} changes it by a number one time, after which it stays where it reached, so the change does not come again.',
-      test: 'After the change is made, does the problem say that it is made again each hour, day, week, month or year, or does the amount stay where it reached?' },
+      shared: 'In both, an amount changes by a fixed number, and the same figure can appear in both: a price that went up by $2.',
+      rule: 'In {o:lin} the change comes again and again. In {o:oneoff} it comes once, and the amount stays where it reached.',
+      test: 'After the change is made, does the problem say it is made again each hour, day, week, month or year, or does the amount stay put?' },
     { id: 'lin~logsolve', taughtIn: 'q-g1', pair: ['lin', 'logsolve'], step: 'G1',
-      shared: 'Both can ask for the time to a target, and both can start from the same amount and be given the same target.',
-      rule: '{o:lin} adds the same number each time, so the time to reach a target is the distance to it divided by that number. {o:logsolve} multiplies by the same number each time, so the time is how many multiplications it takes, and each change is bigger than the one before, so the target comes sooner.',
+      shared: 'Both can ask how long it takes to reach a target, from the same start and the same target.',
+      rule: 'In {o:lin} the same number is added each time, so the time is the distance to the target divided by that number. In {o:logsolve} the amount is multiplied each time, so each change is bigger than the one before, and the target comes sooner.',
       test: 'When the problem asks how long, is each change the same size, or is each change bigger than the one before?' },
     { id: 'expg~oneoff', taughtIn: 'q-g1', pair: ['expg', 'oneoff'], step: 'G1',
       shared: 'Both can be given as a percentage, and both can ask for the amount some years on.',
-      rule: '{o:expg} multiplies the amount by the same number every time, so the percentage is applied again and again. {o:oneoff} applies the percentage one time, so it is the only change.',
-      test: 'Is the percentage applied again each hour, day, week, month or year, or only one time?' },
+      rule: 'In {o:expg} the percentage is applied again and again. In {o:oneoff} it is applied once, and that is the only change.',
+      test: 'Is the percentage applied again each hour, day, week, month or year, or only once?' },
     { id: 'logsolve~oneoff', taughtIn: 'q-g1', pair: ['logsolve', 'oneoff'], step: 'G1',
-      shared: 'Both can ask for the time to a target, and the amount in both can be one that has already grown.',
-      rule: '{o:logsolve} has an amount that is multiplied each time, so it keeps moving, and a target above it is reached after some time. {o:oneoff} has an amount that changed one time and stays, so a target other than the figure it stays at is never reached.',
+      shared: 'Both can ask how long it takes to reach a target, with an amount that has already changed.',
+      rule: 'In {o:logsolve} the amount keeps being multiplied, so a target above it is reached in time. In {o:oneoff} the amount changed once and stays, so a target other than where it stays is never reached.',
       test: 'When the problem asks how long, is the amount still changing each hour, day, week, month or year, or has it stopped?' }
   ],
+
 
   // Parts are stopping points: each ends on a screen that says where the next one starts. They follow the key’s first question’s
   // answers: the same number each time, a share each time (asked for the amount, then asked how long), and a change made one time (A13).
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The same number each time, and a share of the amount each time',
+    { id: 'p1', title: 'The same number each time, and a percentage each time',
       cards: ['orient-growth', 'meet-lin', 'check-lin', 'solved-lin-2', 'term-multiplier', 'meet-expg', 'check-expg', 'solved-expg-1', 'look-lin-expg', 'exc-interest-out'] },
-    { id: 'p2', title: 'How long it takes, and a change made one time',
+    { id: 'p2', title: 'How long it takes, and a change made once',
       cards: ['meet-logsolve', 'check-logsolve', 'term-logscale', 'solved-logsolve-1', 'look-expg-logsolve',
               'meet-oneoff', 'check-oneoff', 'solved-oneoff-1', 'look-lin-oneoff'] },
-    { id: 'p3', title: 'The two questions that tell them apart, then the drill',
+    { id: 'p3', title: 'The two questions, then the drill',
       cards: ['q-g1', 'check-g1', 'q-g2', 'check-g2'], drill: true, close: ['recap-growth'] }
   ],
 
@@ -68,7 +69,7 @@ FC.unit('math', 'u4', {
   // tier, listed clean, then varied, then misleading. The route stage also carries problems from Unit One, unlabelled.
   drill: {
     key: 'u4',
-    add: 'Some of these problems tell a story that points the wrong way, on purpose. How the amount changes each time, and which question the problem asks, decide the kind. A friend’s word for it, a percentage or a quick rise does not.',
+    add: 'Some of these problems are told in a way that points the wrong way, on purpose. How the amount changes each time, and what the problem asks, decide the answer. A friend’s word for it, a percentage or a quick rise does not.',
     rungs: [
       { ask: 'route',
         items: [[{ earlier: 'u1' }, { earlier: 'u1' }],
@@ -87,7 +88,8 @@ FC.unit('math', 'u4', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the third procedure unit of Basic Math, replacing the old Unit Four (cards and the growth drill), specimens 7 to 9 and three faulty claims. Not yet deployed, so later edits before the first deploy stay revision 1. Four kinds of problem about an amount that changes as time passes, each taught with a problem of the kind, two worked examples with every step computed, and problems the learner finishes; two crossing questions; the drill has a last-step stage, a whole-problem stage and a route stage.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in this unit’s part of the key, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

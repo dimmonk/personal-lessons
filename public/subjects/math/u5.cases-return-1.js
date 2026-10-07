@@ -20,15 +20,15 @@ FC.cases('math', 'u5', [
       C1: ['a main from 7, a side from 5 and a drink from 4, one of each']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different lunches can be ordered, a count of ways something can turn out. The problem does not change as time passes, has no hidden number for a calculation to fit, does not share whole numbers out in groups and has no shape. It is about the number of ways that something can come out, or its chance, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} give three separate choices, a main, a side and a drink, each from a list of its own, and ask how many different lunches there are, so the answer is {a:C1.lists}.'
+      M1: 'The words {cue:M1} ask how many different lunches there are, so you are counting results.',
+      C1: 'The words {cue:C1} give three separate choices, each from its own list.'
     },
     not: {
       outcome: 'perm',
-      why: 'Picking from one group, so that each pick takes something off the list for the next, would be {o:perm}. Here every choice has a full list of its own, and nothing picked on one list changes another.'
+      why: 'The picks come out of one group, so each pick takes something off the list. Here every choice has its own full list.'
     },
     steps: [
-      { does: 'Name each choice that has to be made', working: 'main; side; drink' },
+      { does: 'Name each choice', working: 'main; side; drink' },
       { does: 'Count the full list for each choice', working: 'main: 7; side: 5; drink: 4' },
       {
         does: 'Multiply the counts',
@@ -42,7 +42,7 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '16 lunches',
-          slip: 'you add the sizes of the lists, which counts each single item once and never a whole result made of one from each list.'
+          slip: 'you add the sizes of the lists, which counts single items and never a whole result.'
         },
         {
           id: 's2',
@@ -51,6 +51,6 @@ FC.cases('math', 'u5', [
         }
       ]
     },
-    why: 'Every item on the first list can go with every item on the second, and every pair made that way can go with every item on the next list, and so on through all the lists. So the results fill a block, with as many rows as the first count, each as long as the second, and so on, and the size of the block is the counts multiplied together. Adding the counts would count each single item once and never a whole result made of one from each list.'
+    why: 'Every item on one list goes with every item on the next, so each new list multiplies the number of results. Adding would count single items and never a whole result made of one pick from each list.'
   }
 ]);

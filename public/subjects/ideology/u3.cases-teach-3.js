@@ -10,8 +10,8 @@ FC.cases('ideology', 'u3', [
             N1: "The bankers and ministers in the capital have sold this country's farms and mills to foreigners",
             N2: 'there will be no more elections to be bought by the rich, the other parties will be closed' },
     segments: [
-      { text: "The bankers and ministers in the capital have sold this country's farms and mills to foreigners and left our people poor", note: 'That is half of what you point to for {o:natpop}: a few at the top, and the country\'s own industry put first. It does not say what happens to the vote.' },
-      { text: 'Calder is one people with one will, and the movement is its voice', note: 'That speaks for the whole nation as one. It is another answer to the first question, and it does not say what happens to the vote.' },
+      { text: "The bankers and ministers in the capital have sold this country's farms and mills to foreigners and left our people poor", note: 'That is half of {o:natpop}: a few at the top blamed, and the country\'s own industry put first. It says nothing about the vote.' },
+      { text: 'Calder is one people with one will, and the movement is its voice', note: 'That speaks for the whole nation as one. It still says nothing about the vote.' },
       { text: 'When we take power, there will be no more elections to be bought by the rich, the other parties will be closed, and any paper that defends the bankers will be shut' }
     ] },
 
@@ -29,11 +29,11 @@ FC.cases('ideology', 'u3', [
     outcome: 'nazi', route: { D1: ['nation'], N1: ['blood'], N2: ['keep'] },
     cues: { N1: 'Children of the later peoples will be taught apart, and given the work that suits their lower place' },
     segments: [
-      { text: 'Children of the true blood will be taught in the Brotherhood schools', note: 'That says who goes to which school. It does not yet say that one people is worth more than another.' },
+      { text: 'Children of the true blood will be taught in the Brotherhood schools', note: 'That says who goes to which school. It does not yet say one people is worth less.' },
       { text: 'Children of the later peoples will be taught apart, and given the work that suits their lower place' },
-      { text: 'The Brotherhood asks every member to vote for it in the spring', note: 'That is about voting. It is not the words that place one people below another.' }
+      { text: 'The Brotherhood asks every member to vote for it in the spring', note: 'That is about voting. It does not place one people below another.' }
     ],
-    reason: { N1: 'The text puts the later peoples in a "lower place" and gives their children different schooling and different work for it: {cue:N1}. That is people sorted by blood into higher and lower, with the text\'s own people above.' } },
+    reason: { N1: 'The notice puts one people in a "lower place", with its own schooling and work: {cue:N1}.' } },
 
   /* ---------- The look-alike pair between the names that push the vote aside ---------- */
 
@@ -57,13 +57,13 @@ FC.cases('ideology', 'u3', [
     text: "From a leaflet: 'The ministers and the importers have signed our shipyards over to a foreign firm. Our ships should be built in our own yards, by our own people. Cast your vote for the Anchor list.'",
     outcome: 'natpop', route: { D1: ['nation'], N1: ['elitenation'], N2: ['keep'] },
     cues: { N1: ['The ministers and the importers have signed our shipyards over to a foreign firm', 'Our ships should be built in our own yards, by our own people'] },
-    reason: { N1: 'The text sets the country\'s own people against a few at the top, the ministers and the importers, and wants the country\'s own industry put first: {cue:N1}. It speaks for a part of the country against another, not for everyone alike, and it ranks nobody by blood.' } },
+    reason: { N1: 'The text sets the country\'s own people against a few at the top, the ministers and the importers, and wants its own industry put first: {cue:N1}. It speaks for one part of the country against another, not for everyone alike.' } },
 
   { id: 'n-elec-chk', use: 'check', tier: 'varied', setting: 'work', topic: 'a harvest address, no vote mentioned',
     text: "From a radio address by the head of the Harvest Board of Tolvar: 'Farmers of every region, we are one country, and this year's harvest is everyone's harvest. Bring in the grain and the whole nation eats.' The address did not mention elections, parties or critics at all.",
     outcome: 'nationalism', route: { D1: ['nation'], N1: ['whole'], N2: ['keep'] },
     cues: { N2: 'The address did not mention elections, parties or critics at all' },
-    reason: { N2: 'The text asks for nothing to be taken away: {cue:N2}. The question is what the text would do about the vote and about its critics, and a text that does not ask for them to go has not asked for them to go.' } },
+    reason: { N2: 'The address asks for nothing to be taken away: {cue:N2}. With nothing asked, the vote and the critics stay in place.' } },
 
   /* ---------- The two cases worked from the top ---------- */
 

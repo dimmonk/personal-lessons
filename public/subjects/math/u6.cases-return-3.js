@@ -18,24 +18,24 @@ FC.cases('math', 'u6', [
       S2: 'How tall is the tooth in the enlargement?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a length on one of two things of exactly the same shape. Nothing in it follows an amount through time, hides a number that a {t:formula} must fit, or counts ways, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, with a length measured on both. That is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how long a part is, which is {a:S2.length}.'
+      M1: 'The problem asks {cue:M1}, a length on one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, with a length measured on both.',
+      S2: 'The words {cue:S2} ask for a length.'
     },
     not: {
       outcome: 'sqcube',
-      why: 'A length is asked, not an area or a volume. {o:sqcube} would be the name if the problem asked how much surface or how much room inside the bigger thing has, or how many times more.'
+      why: 'It asks for a length, not an area or a volume. If it asked how much surface or room inside the bigger one has, it would be {o:sqcube}.'
     },
     steps: [
       {
-        does: 'Find a part that is measured on both things',
-        working: 'The filling is 4 mm on the photo and 14 mm on the enlargement. The part you want, the tooth, is measured on the photo only: 20 mm'
+        does: 'Find a length that is measured on both things',
+        working: 'The filling is 4 mm in the photo and 14 mm in the enlargement. The tooth, which you want, is known in the photo only: 20 mm'
       },
       {
-        does: 'Find how many times longer the bigger thing is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '14 ÷ 4 = 3.5'
       },
-      { does: 'Multiply the length you have by that number of times', working: '20 × 3.5 = 70 mm' }
+      { does: 'Multiply the length you know by that number', working: '20 × 3.5 = 70 mm' }
     ],
     answer: {
       choices: [
@@ -43,17 +43,17 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: 'about 5.71 mm',
-          slip: 'you divide by the number of times where you should multiply, so the bigger thing gets the shorter length.'
+          slip: 'you divide where you should multiply, so the bigger one comes out shorter.'
         },
         {
           id: 's2',
           text: '245 mm',
-          slip: 'you multiply by the number of times twice over, as for an area, though a length is asked and every length changes only once by that number.'
+          slip: 'you multiply by the number of times longer twice, as for an area. A length is multiplied only once.'
         }
       ],
       right: 'r'
     },
-    why: 'Two things of exactly the same shape differ only in size: every length on the bigger one is the same number of times longer than the matching length on the smaller one. So a part measured on both gives that number of times, and it can be used on any other matching length.',
+    why: 'An exact copy changes only in size: every length is the same number of times longer. So a length measured on both gives that number, and you can use it on any other length.',
   },
 
   {
@@ -72,29 +72,29 @@ FC.cases('math', 'u6', [
       S2: 'How much paint does the hull of the bigger boat need?'
     },
     reason: {
-      M1: 'The problem asks {cue:M1}, a question about how much one of two things of exactly the same shape has, and not a count of ways, an amount through time or a number that a {t:formula} must fit, so the answer to the first question is {a:M1.shape}.',
-      S1: 'The words {cue:S1} give two things of exactly the same shape at different sizes, which is {a:S1.matching}.',
-      S2: 'The words {cue:S2} ask how much area or volume something has, which is {a:S2.room}.'
+      M1: 'The problem asks {cue:M1}, an amount for one of two things of the same shape. Nothing in it follows an amount over time or counts ways.',
+      S1: 'The words {cue:S1} give two things of the same shape, a small one and a big one.',
+      S2: 'The words {cue:S2} ask how much paint the hull needs: paint covers a surface, so an area.'
     },
     not: {
       outcome: 'similar',
-      why: 'The problem asks how much area or volume the bigger thing has, not how long one of its parts is. {o:similar} would be the name if it asked for a length on the bigger thing.'
+      why: 'It asks how much the bigger one covers or holds, not how long a part is. If it asked for a length on the bigger one, it would be {o:similar}.'
     },
     steps: [
       {
-        does: 'Find how many times longer the bigger one is than the smaller one',
+        does: 'Work out how many times longer the bigger one is',
         working: '6 ÷ 2 = 3'
       },
       {
         does: 'Decide whether the problem asks about area or about volume',
-        working: 'Paint on a hull covers a surface, so the problem asks about area'
+        working: 'Paint on a hull covers a surface, so it is an area'
       },
       {
-        does: 'Multiply that number of times by itself, with two of them in the product for an area',
+        does: 'Multiply two of that number together, for an area',
         working: '3 × 3 = 9'
       },
       {
-        does: 'Multiply the smaller one’s amount by that number of times',
+        does: 'Multiply the smaller one’s amount by that number',
         working: '1.5 liters × 9 = 13.5 liters'
       }
     ],
@@ -104,16 +104,16 @@ FC.cases('math', 'u6', [
         {
           id: 's1',
           text: '4.5 liters',
-          slip: 'you multiply by the number of times longer only once, as for a length, though an area has two directions, length and width, and both grow.'
+          slip: 'you multiply by the number of times longer only once, as for a length. An area grows in two directions: length and width.'
         },
         {
           id: 's2',
           text: '40.5 liters',
-          slip: 'you multiply by the number of times longer three times over, as for a volume, though the problem asks about an area, which has only two directions that grow.'
+          slip: 'you multiply by the number of times longer three times, as for a volume. This one covers a surface, so there are only two of them.'
         }
       ],
       right: 'r'
     },
-    why: 'If every length is made a number of times longer, both the length and the width of a surface grow by that number of times, so the surface holds that number multiplied by itself as many unit squares. Area grows by the number of times longer, multiplied by itself.',
+    why: 'When every length is some number of times longer, a surface grows in length and width. So its area grows by two of that number multiplied together.',
   }
 ]);

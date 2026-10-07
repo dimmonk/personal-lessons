@@ -48,9 +48,9 @@ FC.cases('psychology', 'u3', [
     outcome: 'darvo', route: { D1: ['tactic'], T1: ['reverse'] },
     cues: { T1: ['She asks Gareth why nothing has gone in from him since March.', "'I paid,' Gareth says. 'You're the one who never pays into anything. You take advantage of everyone. I can't believe I'm being accused by you, after everything I've done for this car.'"] },
     segments: [
-      { text: 'Beth keeps the sheet for a car-share fund that she and Gareth pay into.', note: 'That sets the scene. It does not show what anyone says or does to the other.' },
+      { text: 'Beth keeps the sheet for a car-share fund that she and Gareth pay into.', note: 'That sets the scene. It shows nothing said or done to anyone.' },
       { text: 'She asks Gareth why nothing has gone in from him since March.' },
-      { text: 'The sheet shows no payment from Gareth since March, and a payment from Beth every month.', note: 'That shows Gareth doing what he goes on to accuse Beth of, and Beth not doing it: the reason the case looks like {o:projection}. But it is also what shows that he did it, which {o:darvo} needs. So it cannot settle which of the two this is.' },
-      { text: "'I paid,' Gareth says. 'You're the one who never pays into anything. You take advantage of everyone. I can't believe I'm being accused by you, after everything I've done for this car.'", note: 'That is what Gareth says back. It is the three parts of {o:darvo}, but it only counts as an answer if someone has first raised it with him, and that is the part you are asked for.' }
+      { text: 'The sheet shows no payment from Gareth since March, and a payment from Beth every month.', note: 'That shows Gareth doing what he accuses Beth of, which is why this looks like {o:projection}. It also shows he did it, which {o:darvo} needs, so it cannot settle which this is.' },
+      { text: "'I paid,' Gareth says. 'You're the one who never pays into anything. You take advantage of everyone. I can't believe I'm being accused by you, after everything I've done for this car.'", note: 'That is what Gareth says back: all three parts of {o:darvo}. But it only counts as an answer if someone raised it with him first.' }
     ] }
 ]);

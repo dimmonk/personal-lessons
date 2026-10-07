@@ -20,5 +20,5 @@ FC.cases('ideology', 'u2', [
     reason: { D1: 'The text sets the clerks against the company that owns the post offices, and stands with the clerks: {cue:D1}.',
               C1: 'The post offices are to be taken from the company and run by the government: {cue:C1}. The text also asks for a tax and a pension, and when a text shows both, the handover decides.',
               C2: 'The clerks will ask the voters: {cue:C2}.' },
-    not: { outcome: 'socdem', why: 'The tax and the pension are what you would point to for {o:socdem}. But the text goes on to ask for the post offices to be taken from the company, and when a text shows both, the handover decides.' } }
+    not: { outcome: 'socdem', why: 'The tax and the pension are what {o:socdem} asks for. But the text also asks for the post offices to be taken from the company, and when a text shows both, the handover decides.' } }
 ]);

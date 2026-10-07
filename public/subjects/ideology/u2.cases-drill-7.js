@@ -16,7 +16,7 @@ FC.cases('ideology', 'u2', [
     outcome: 'marx', route: { D1: ['class'], C1: ['explain'], C2: ['none'] }, echo: 'c-sd-warehouse',
     cues: { D1: ['the $34 goes to the owners', 'We write for the spinners'], C1: 'Every owner has to keep a gap like it, because that is how the arrangement works, and no law on pay changes that', C2: 'We write for the spinners' },
     reason: { D1: 'The text sets the spinners against the owners who keep the gap, and is written for the spinners: {cue:D1}.',
-              C1: 'The text explains how owners gain, as the way the arrangement works: {cue:C1}. The minimum wage and the tax are mentioned only as what other people say, and the text does not ask for them.',
+              C1: 'The text explains how owners gain: {cue:C1}. A minimum wage and a tax are only what other people say, and it does not ask for them.',
               C2: 'The text says nothing about power or the government. It says who it is written for: {cue:C2}.' },
     not: { outcome: 'socdem', why: 'The words minimum wage and tax are in the text, but as what other people say. The text itself asks for neither, and explains instead.' } }
 ]);

@@ -7,8 +7,8 @@ FC.cases('stats', 'u4', [
     outcome: 'detection', route: { S1: ['measure'], M1: ['looked'] },
     cues: { S1: "The city tripled its road crews: 2,000 km of road were driven and checked last year and 6,000 km this year, to the same standard",
             M1: "The city tripled its road crews: 2,000 km of road were driven and checked last year and 6,000 km this year, to the same standard" },
-    reason: { S1: 'The count of potholes found can rise with no more potholes: {cue:S1}. 0.4 for every km of 2,000 km is 800; 0.4 for every km of 6,000 km is 2,400.',
-              M1: 'More effort went into finding them: {cue:M1}. The standard is the same, and the number found for each km checked stayed at 0.4.' },
+    reason: { S1: 'The count of potholes found can go up with no more potholes: {cue:S1}. At 0.4 a km, 2,000 km gives 800 and 6,000 km gives 2,400.',
+              M1: 'More effort went into finding potholes: {cue:M1}. The standard is the same, and the number found for each km checked stayed at 0.4.' },
     not: { outcome: 'defshift', why: 'A pothole is counted by the same standard in both years. What changed is how many kilometers were checked.' } },
 
   { id: 'm4-ret-mold', use: 'return', tier: 'varied', setting: 'home', topic: 'a landlord who paid for four times as many visits',
@@ -16,7 +16,7 @@ FC.cases('stats', 'u4', [
     outcome: 'detection', route: { S1: ['measure'], M1: ['looked'] },
     cues: { S1: "Last year an inspector visited 100 flats picked at random. This year the landlord paid for visits to 400 flats",
             M1: "Last year an inspector visited 100 flats picked at random. This year the landlord paid for visits to 400 flats" },
-    reason: { S1: 'The count of mold found can rise with no damper buildings: {cue:S1}. 5 in every 100 of 100 flats is 5; 5 in every 100 of 400 flats is 20.',
+    reason: { S1: 'The count of mold found can go up with no damper buildings: {cue:S1}. At 5 in every 100 flats, 100 flats gives 5 and 400 flats gives 20.',
               M1: 'More visits were paid for: {cue:M1}. The test for mold is the same, and the share found among the flats visited stayed at 5 in 100.' },
     not: { outcome: 'proxy', why: 'The inspector is not paid by the amount of mold found. The landlord paid for four times as many visits.' } }
 ]);

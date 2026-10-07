@@ -6,12 +6,12 @@
 
 FC.unit('stats', 'u6', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Six',
   title: { fromKey: 'S1.cause' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Four other ways to explain the same result, and the one claim of cause where none of them is open',
+  subtitle: 'Before you believe “it worked”: four other explanations for the same result, and the one fair test',
   teaches: { steps: ['K1'], outcomes: ['nocontrol', 'regression', 'confound', 'reverse'], terms: [] },
   assumes: ['u1', 'u2', 'u3', 'u4', 'u5'],   // everything these units teach may be used; the first card restates the part this unit leans on
 
@@ -22,33 +22,33 @@ FC.unit('stats', 'u6', {
   // picked for the other, the grouping of drill items, and what returns together later. test has no name in it.
   ledger: [
     { id: 'nocontrol~regression', pair: ['nocontrol', 'regression'], step: 'K1',
-      shared: 'Both give a result that comes after something was done, and in both nothing was left alone and counted in the same way to set beside it.',
-      rule: 'In {o:regression} the group was chosen for how badly, or how well, it had done, so a return toward its usual level is expected with nothing done. In {o:nocontrol} nothing about how the group was formed makes a change likely: everyone who got the thing, or the one place that got it, is counted.',
-      test: 'How was the group picked? Was it everyone who got the thing, or was it picked because it was at its worst or best?' },
+      shared: 'Both give a result after something was done, and in both nobody was left alone to set it beside.',
+      rule: 'In {o:regression} the group was picked for doing very badly or very well, so it drifts back toward usual with nothing done. In {o:nocontrol} nobody was picked that way: it is everyone who got the thing, or the one place that got it.',
+      test: 'How was the group picked? Was it everyone who got the thing, or only the worst or the best?' },
     { id: 'nocontrol~confound', pair: ['nocontrol', 'confound'], step: 'K1',
-      shared: 'Both are about people who chose to take part in something, and both end with a claim that it worked.',
-      rule: 'In {o:confound} two groups are set side by side, the people who did the thing and the people who did not, and the account shows something else that differs between them. In {o:nocontrol} only the people who did the thing, or the one place that got it, are counted, so there is nothing beside them for anything to differ from.',
-      test: 'Is anyone who went without counted beside the people who got the thing? If so, does the account show something else that differs between the two groups?' },
+      shared: 'In both, people chose to take part, and the claim is that it worked.',
+      rule: 'In {o:confound} two groups are set side by side, those who did the thing and those who did not, and something else differs between them. In {o:nocontrol} only the people who did the thing, or the one place that got it, are counted, so there is nothing to set beside them.',
+      test: 'Is anyone who went without counted beside the people who got the thing? If so, does something else differ between the two groups?' },
     { id: 'confound~reverse', pair: ['confound', 'reverse'], step: 'K1',
-      shared: 'Both set two things side by side that go together, and in both someone says that the first caused the second.',
-      rule: 'In {o:confound} something else, which differs between the two groups, could bring about the result on its own. In {o:reverse} nothing else is needed: the result itself could have come first and led people to the thing.',
-      test: 'Is there something else that differs between the groups and could bring about the result by itself? Or could the result have come first, and led people to the thing?' },
+      shared: 'In both, two things go together, and someone says the first caused the second.',
+      rule: 'In {o:confound} something else that differs between the groups could produce the result on its own. In {o:reverse} nothing else is needed: the result may have come first and led people to the thing.',
+      test: 'Could something else that differs between the groups produce the result by itself? Or could the result have come first and led people to the thing?' },
     { id: 'nocontrol~cause_ok', pair: ['nocontrol', 'cause_ok'], step: 'S1', taughtIn: 'look-confound-fair',
-      shared: 'Both say that something worked, and both may give the same figure for the people who got it.',
-      rule: 'In {o:cause_ok} a second group of the same kind went without, was formed by chance and was counted in the same way, so the difference between the groups is what the claim rests on. In {o:nocontrol} there is no second group, or only a result from before and after, so nothing shows what would have happened anyway.',
-      test: 'Is there a second group that went without, formed by chance and counted in the same way? Or is the result only for the people or the place that got the thing?' },
+      shared: 'In both, someone says something worked, and the figure for the people who got it can look the same.',
+      rule: 'In {o:cause_ok} a second group went without, chance decided who was in it, and both groups were counted the same way. In {o:nocontrol} there is no such group, or only a before and after, so nothing shows what would have happened anyway.',
+      test: 'Is there a second group that went without, formed by chance and counted the same way? Or is the result only for the people or the place that got the thing?' },
     { id: 'confound~cause_ok', pair: ['confound', 'cause_ok'], step: 'S1',
-      shared: 'Both set a group that got a thing beside a group that did not, and both can show the same difference in the result.',
-      rule: 'In {o:cause_ok} chance decided who went in which group, so nothing else is likelier to be found in one group than in the other. In {o:confound} the people chose, or their circumstances put them there, so something else could differ between the groups and bring about the result on its own.',
+      shared: 'In both, a group that got the thing is set beside a group that did not, and the difference can look the same.',
+      rule: 'In {o:cause_ok} chance decided who went in which group, so nothing else is likelier to be in one group than the other. In {o:confound} people chose, or their circumstances put them there, so something else could differ between the groups and produce the result on its own.',
       test: 'Who decided which group each person was in: they did, their circumstances did, or a lottery did?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'One group, before and after, and a group picked at its worst',
+    { id: 'p1', title: 'Nothing to compare with, and a group picked at its worst',
       cards: ['orient', 'meet-nocontrol', 'check-nocontrol', 'meet-regression', 'check-regression', 'exc-extreme'] },
-    { id: 'p2', title: 'Two groups that put themselves where they are, a cause that runs the other way, and one whole claim',
+    { id: 'p2', title: 'Groups that picked their own side, a result that came first, and one whole claim',
       cards: ['meet-confound', 'check-confound', 'meet-reverse', 'check-reverse', 'look-nocontrol-confound', 'look-confound-reverse', 'look-confound-fair',
               'q-cause', 'check-cause', 'worked-swim'], drill: true, close: ['recap', 'plan'] }
   ],
@@ -59,7 +59,7 @@ FC.unit('stats', 'u6', {
   // A case of "Nothing goes wrong" is in every stage that asks about cases (P26, V37): in this unit, a case of the name Unit Two teaches for a claim of cause.
   drill: {
     key: 'u6',            // the old quick-drill totals for this unit were stored under pl:stats:stats:u6 (frozen; see E8)
-    add: 'Some of these claims have nothing wrong with them. A claim of cause that was tested fairly deserves to be believed, and a claim that sounds sure is not, for that reason, one that holds.',
+    add: 'Some of these claims are fine. A claim tested fairly, with groups formed by a draw, deserves to be believed. A claim that only sounds sure does not.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'k-p-yoga', step: 'K1' }, { case: 'k-p-stores', step: 'K1' }],
@@ -90,7 +90,8 @@ FC.unit('stats', 'u6', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the cause branch of Statistical Claims. Not yet deployed, so later edits before the first deploy stay revision 1. Replaces old Unit Five (cards and drill V5), the card and items for No comparison group from old Unit Four, and old faulty-claims item 2.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/stats-plan.md, section (a), "What it says caused what").
     keyChanges: [

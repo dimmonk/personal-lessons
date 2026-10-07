@@ -11,12 +11,12 @@
 
 FC.unit('math', 'u1', {
   kind: 'C',
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff
   tag: 'One',
-  title: { text: 'What kind of problem is it?' },
-  subtitle: 'The first question, and the five kinds of problem it sorts every problem into',
+  title: { text: 'Before you do the math, check what the problem is about' },
+  subtitle: 'Whole numbers, a missing number, change over time, counting ways, or a shape: check which one you have first',
   teaches: { steps: ['M1'], outcomes: [], terms: ['righttriangle', 'formula'], families: ['whole', 'unknown', 'growth', 'chance', 'shape'] },
   assumes: [],            // the first unit of the subject
 
@@ -28,34 +28,34 @@ FC.unit('math', 'u1', {
   // test is a question to put to a problem, with no name in it.
   ledger: [
     { id: 'whole~chance', pair: ['whole', 'chance'], step: 'M1',
-      shared: 'Both are made of whole counts of things, and both can ask “in how many different ways”. A group of friends, a row, a set of chairs can turn up in either.',
-      rule: 'In {a:M1.whole} a count is shared out evenly or set beside another count, and what is asked is how the count itself divides, repeats or is built up. In {a:M1.chance} what is asked is about the results of a choice, how many different results there are or how likely one is, and the numbers only say how many things there are to choose from.',
-      test: 'Is the question about sharing a count out evenly, what is left over, or when repeats meet? Or is it about the different results of a choice, how many of them there are or how likely one is?' },
+      shared: 'Both use whole counts of people or things, and both can ask “in how many different ways”.',
+      rule: 'In {a:M1.whole} the count itself is split into equal groups or set beside another count. In {a:M1.chance} the numbers only say how long the lists are, and you are counting the results of a choice or finding how likely one is.',
+      test: 'Is the question about splitting a count evenly, what is left over, or when repeats meet? Or is it about the different results of a choice, how many there are or how likely one is?' },
     { id: 'unknown~growth', pair: ['unknown', 'growth'], step: 'M1',
-      shared: 'Both can give a fixed amount, a price that is repeated and a result, and both can end in a question whose answer is a number you were not told.',
-      rule: 'In {a:M1.unknown} nothing is followed as time passes: the problem gives a calculation, a rate for each thing or two totals, and a number that must fit them. In {a:M1.growth} one amount is followed through time, changing each hour, day, month or year, and the question is where it ends up or how long it takes to reach a target.',
+      shared: 'Both can give a fixed amount and a price that repeats, and both end with a number you were not told.',
+      rule: 'In {a:M1.unknown} nothing changes as time passes: you get a calculation, a rate for each thing or two totals, and a number that has to fit. In {a:M1.growth} one amount changes each hour, day, month or year, and the question is where it ends up or how long until it reaches a target.',
       test: 'Does the problem follow one amount as hours, days, months or years pass? Or does it hide a number that has to fit a calculation, a rate for each thing or two totals?' },
     { id: 'unknown~shape', pair: ['unknown', 'shape'], step: 'M1',
-      shared: 'Both can give a rate or a pair of lengths, and both can end in a question about how long something is.',
-      rule: 'In {a:M1.unknown} the numbers are facts that a hidden number must fit, and there is no triangle and no copy of a shape. In {a:M1.shape} the problem has a {t:righttriangle}, or two things of exactly the same shape at different sizes, and asks for a length, an area or a volume.',
-      test: 'Is there a {t:righttriangle}, or are there two things of exactly the same shape at different sizes? Or are there only facts that a hidden number must fit?' },
+      shared: 'Both can give a rate or a pair of lengths, and both can end by asking how long something is.',
+      rule: 'In {a:M1.unknown} the numbers are facts that a missing number has to fit, and there is no triangle and no copy of a shape. In {a:M1.shape} there is a {t:righttriangle}, or two things of exactly the same shape at different sizes, and the problem asks for a length, an area or a volume.',
+      test: 'Is there a {t:righttriangle}, or are there two things of exactly the same shape at different sizes? Or are there only facts that a missing number has to fit?' },
     { id: 'growth~whole', pair: ['growth', 'whole'], step: 'M1',
       shared: 'Both can run over days or hours, and both can repeat the same step again and again.',
-      rule: 'In {a:M1.growth} one amount is followed over time, and the question is about the amount at a given time or the time it takes to reach a target. In {a:M1.whole} the numbers are counts that divide or repeat, and the question is how they fit together: the part that remains, when two repeats coincide, or the point a count reaches on a loop of days or hours.',
+      rule: 'In {a:M1.growth} one amount changes as time passes, and the question is what it will be or how long until it reaches a target. In {a:M1.whole} the numbers are counts, and the question is how they fit together: a day of the week, a time on a clock, what remains after sharing, or when two repeats meet.',
       test: 'Is the question about how an amount changes as time passes? Or is it about how counts fit together, such as a day of the week, what is left over, or when two repeats meet?' },
     { id: 'unknown~chance', pair: ['unknown', 'chance'], step: 'M1', taughtIn: 'q-kind',
       shared: 'Both can ask “how many”, and both can give numbers about two sorts of the same thing.',
-      rule: 'In {a:M1.unknown} the problem hides numbers that its facts fix: there is exactly one answer, and it has to fit. In {a:M1.chance} the problem asks about the results of a choice, how many different results there are or how likely one is, and nothing has to fit a result.',
-      test: 'Does the problem hide numbers that its facts fix, so that exactly one answer fits? Or does it ask how many different results a choice has, or how likely one is?' }
+      rule: 'In {a:M1.unknown} the facts fix exactly one answer, and it has to fit. In {a:M1.chance} the problem asks about the results of a choice, how many there are or how likely one is, and nothing has to fit.',
+      test: 'Do the facts fix exactly one answer that has to fit? Or does the problem ask how many different results a choice has, or how likely one is?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first three kinds: whole numbers, a number you are not told, an amount over time',
+    { id: 'p1', title: 'Splitting counts, a missing number, and change over time',
       cards: ['orient-kind', 'meet-whole', 'check-whole', 'term-formula', 'meet-unknown', 'check-unknown',
               'meet-growth', 'check-growth', 'exc-hourly', 'exc-tablets'] },
-    { id: 'p2', title: 'The other two kinds: counting ways and chance, and shapes',
+    { id: 'p2', title: 'Ways to count, how likely things are, and shapes',
       cards: ['meet-chance', 'check-chance', 'look-whole-chance', 'term-righttriangle', 'meet-shape', 'check-shape', 'exc-model', 'q-kind'] },
     { id: 'p3', title: 'One whole problem, then the drill',
       cards: ['worked-bed'], drill: true, close: ['recap-kind'] }
@@ -65,7 +65,7 @@ FC.unit('math', 'u1', {
   // because the route is one question long and its answer is the name. Items are authored in groups of look-alikes.
   drill: {
     key: 'u1',
-    add: 'Some of these problems tell a story that points the wrong way, on purpose: a ferry or a bank in the story says nothing about the kind. Every one of them is decided by what it asks you to work out, and by nothing else.',
+    add: 'Some of these problems have details that point the wrong way, on purpose: a price, a clock or a bank is not what decides it. Look at what the problem asks you to work out.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'gt-stamps', step: 'M1' }, { case: 'gt-breakfast', step: 'M1' }],
@@ -92,7 +92,8 @@ FC.unit('math', 'u1', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Basic Math, replacing the old Unit One (nine cards and the sorting drill). Not yet deployed, so later edits before the first deploy stay revision 1. The five kinds are taught one at a time; the three tie-breaks of the first question are taught as exceptions; nothing is solved.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the gate, and why (from docs/rebuild/math-plan.md, section (a)).
     keyChanges: [

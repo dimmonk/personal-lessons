@@ -8,12 +8,12 @@
 
 FC.unit('civics', 'u1', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'One',
-  title: { text: 'Who makes the last decision' },   // a gate unit is titled in plain words; the answers are taught inside it
-  subtitle: 'The first question, and the four kinds of decision-maker it sorts every case into',
+  title: { text: 'Which government decided this?' },   // a gate unit is titled in plain words; the answers are taught inside it
+  subtitle: 'When the news says “the government”, find out whether lawmakers, the President or an office, a judge, or a state or city made the final call',
   teaches: { steps: ['D1'], outcomes: [], terms: ['agency'], families: ['congress', 'president', 'courts', 'states'] },
   assumes: [],            // the first unit of the subject
 
@@ -24,42 +24,42 @@ FC.unit('civics', 'u1', {
   // test is a question to put to a case, with no names in it.
   ledger: [
     { id: 'congress~president', pair: ['congress', 'president'], step: 'D1',
-      shared: 'Both belong to the government of the whole country, and one law can appear in both: the lawmakers vote on it, and then the President or an office puts it into practice.',
-      rule: 'In {a:D1.congress} the last decision is a vote by lawmakers. In {a:D1.president} it is made by the President or by an office that carries out laws: a rule, an inspection, an order, a refusal to sign. A signature on a law the lawmakers passed does not count as a decision of its own, so a signed law stays with {a:D1.congress}.',
-      test: 'Does the story end on a vote by lawmakers, or on something the President or an office decides or does? If a law is in the story, was it already passed, with the story now about what is done with it?' },
+      shared: 'In both, the same law can be in the story: lawmakers vote on it, and then the President or an office puts it to work.',
+      rule: 'In {a:D1.congress} the final call is a vote by lawmakers. In {a:D1.president} it is the President’s or an office’s: a rule, an inspection, an order, a refusal to sign. Signing a law that lawmakers already passed is not a call of its own, so a signed law stays with {a:D1.congress}.',
+      test: 'Does the story end on a vote, or on something the President or an office decides or does? If a law is in the story, has it already passed?' },
     { id: 'congress~courts', pair: ['congress', 'courts'], step: 'D1',
-      shared: 'Both can be about one law, and both can be described with the same words: a trial, a charge, a decision, a vote on whether someone is guilty.',
-      rule: 'In {a:D1.congress} the deciders are lawmakers, who vote. In {a:D1.courts} the decider is a judge, who rules, or who has been asked to. A trial held in the Senate is a vote by senators, so it stays with {a:D1.congress}.',
-      test: 'Who casts the deciding votes, or gives the ruling: lawmakers in the House or the Senate, or a judge?' },
+      shared: 'Both can be about one law, and both can use the same words: a trial, a charge, a vote on whether someone is guilty.',
+      rule: 'In {a:D1.congress} the deciders are lawmakers, who vote. In {a:D1.courts} the decider is a judge, who rules, or has been asked to. A trial held in the Senate is a vote by senators, so it stays with {a:D1.congress}.',
+      test: 'Who casts the deciding votes or gives the ruling: lawmakers, or a judge?' },
     { id: 'president~courts', pair: ['president', 'courts'], step: 'D1', taughtIn: 'q-kind',
-      shared: 'Both can be about one rule: an office or the President makes it, and someone then takes it to a judge.',
-      rule: 'In {a:D1.president} the story ends with the President or an office deciding. In {a:D1.courts} it ends with a judge deciding, or with someone asking a judge to, even when the rule the judge is asked about came from an office. What the office did earlier is how the matter reached the judge.',
-      test: 'Where does the story stop: on a decision by the President or an office, or on a judge deciding, or on someone asking a judge to decide?' },
+      shared: 'Both can be about one rule: an office or the President makes it, and then someone takes it to a judge.',
+      rule: 'In {a:D1.president} the story ends with the President or an office deciding. In {a:D1.courts} it ends with a judge deciding, or with someone asking a judge to, even when the rule came from an office. The office’s rule is only how the matter reached the judge.',
+      test: 'Where does the story stop: on the President or an office deciding, or on a judge deciding, or on someone asking a judge to?' },
     { id: 'courts~states', pair: ['courts', 'states'], step: 'D1',
-      shared: 'Both can be about a local matter: a ticket, a fence, a rule about a street. A judge of a state’s court and a city council can both be in one story.',
-      rule: 'In {a:D1.courts} the last decision is a judge’s, in whatever court, and a judge in a state’s own court is still a judge. In {a:D1.states} it is made by the lawmakers, the governor or the offices of a state, or by a city, a town or a county. A state’s court does not turn a case into the state’s decision.',
-      test: 'Is the last decision made by a judge, whatever the court? Or is it made by a state, a city, a town or a county, acting as a government?' },
+      shared: 'Both can be about a local matter, such as a ticket, a fence or a street rule, and a state court judge and a city council can be in the same story.',
+      rule: 'In {a:D1.courts} the final call is a judge’s, whatever the court, and a judge in a state’s own court is still a judge. In {a:D1.states} it is made by a state’s lawmakers, governor or offices, or by a city, town or county. A state court does not make the call the state’s.',
+      test: 'Did a judge make the final call, whatever the court? Or did a state, city, town or county government make it?' },
     { id: 'president~states', pair: ['president', 'states'], step: 'D1',
-      shared: 'Both can be offices that inspect, license or enforce, and the work an inspector does can be exactly the same in each.',
-      rule: 'In {a:D1.president} the office belongs to the government of the whole country, or the decision is the President’s. In {a:D1.states} the office belongs to one state, or to a city, a town or a county. What the office does can be the same in both. Whose office it is separates them.',
-      test: 'Whose government does the office or the official belong to: the whole country’s, or one state’s, or a city’s, a town’s or a county’s?' },
+      shared: 'Both can be offices that inspect, license or enforce, and an inspector can do exactly the same work in each.',
+      rule: 'In {a:D1.president} the office belongs to the government of the whole country, or the call is the President’s. In {a:D1.states} the office belongs to one state, or to a city, town or county. The work can be identical, so whose office it is decides.',
+      test: 'Whose government does the office or official belong to: the whole country’s, or one state’s, city’s, town’s or county’s?' },
     { id: 'congress~states', pair: ['congress', 'states'], step: 'D1', taughtIn: 'q-kind',
-      shared: 'In both, lawmakers vote on a bill, and they can vote on the same sort of matter, such as a tax.',
-      rule: 'In {a:D1.congress} the lawmakers are the House and the Senate, and what they decide is for the whole country. In {a:D1.states} the lawmakers belong to one state, or the deciders are the council of a city, a town or a county, and what they decide is for that place alone.',
-      test: 'Do the lawmakers in the case make rules for the whole country, or for one state, city, town or county?' }
+      shared: 'In both, lawmakers vote on a bill, and it can be about the same thing, such as a tax.',
+      rule: 'In {a:D1.congress} the lawmakers are the House and the Senate, and the vote is for the whole country. In {a:D1.states} the lawmakers belong to one state, or the deciders are a city, town or county council, and the vote is for that place alone.',
+      test: 'Do the lawmakers make a rule for the whole country, or for one state, city, town or county?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts.
   // The first four parts follow the four answers of the key's first question, in the key's order (A13).
   // The part with drill: true is the last; its close cards come after the drill.
   parts: [
-    { id: 'p1', title: 'The first two kinds: lawmakers voting, and the President or an office',
+    { id: 'p1', title: 'Lawmakers voting, and the President or an office',
       cards: ['orient-kind', 'meet-congress', 'check-congress', 'term-agency', 'meet-president', 'check-president',
               'look-congress-president', 'exc-signed'] },
-    { id: 'p2', title: 'The other two kinds: a judge, and a state, a city or a county',
+    { id: 'p2', title: 'A judge, and a state, city or county',
       cards: ['meet-courts', 'check-courts', 'exc-trial', 'meet-states', 'check-states', 'exc-statejudge',
               'look-president-states', 'q-kind'] },
-    { id: 'p3', title: 'One whole case, then the drill',
+    { id: 'p3', title: 'One whole story, then the drill',
       cards: ['worked-bags'], drill: true, close: ['recap-kind'] }
   ],
 
@@ -70,7 +70,7 @@ FC.unit('civics', 'u1', {
   // The drill and return cases of this unit are also the bank that later units draw their { earlier: 'u1' } items from.
   drill: {
     key: 'n1',            // the old quick-drill totals for this unit were stored under pl:civics:stats:n1 (frozen; see E8)
-    add: 'Many of these cases name two or three parts of government, and the part named first is often not the one the question wants. That is on purpose. Read each story to its end before you answer, and look for the last decision, or the one the story asks for.',
+    add: 'Many of these stories name two or three parts of government, and the one named first is often not the one the question wants. That is on purpose. Read to the end and find the final call, or the one the story asks for.',
     rungs: [
       { ask: 'piece',
         items: [[{ case: 'g-postage', step: 'D1' }, { case: 'g-leash', step: 'D1' }],
@@ -99,7 +99,8 @@ FC.unit('civics', 'u1', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the gate unit of Civics. It replaces old Unit One cards one to eight and the Who decides drill. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the gate, and why (docs/rebuild/civics-plan.md, section a). "was" is the wording of the old course.
     keyChanges: [

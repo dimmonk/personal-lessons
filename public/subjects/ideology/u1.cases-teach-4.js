@@ -14,6 +14,6 @@ FC.cases('ideology', 'u1', [
     text: "From the newsletter of the Border Counties League: 'Our valleys have been home to one people for a thousand years, and laws made by strangers will not rule them. Our country, our language, our people first.'",
     route: { D1: ['nation'] },
     cues: { D1: ['Our valleys have been home to one people for a thousand years', 'Our country, our language, our people first'] },
-    reason: { D1: 'The text speaks for one people and puts it first: {cue:D1}. It sorts nobody by wages or by owning a business, and nothing it names is a faith or a custom held up as the guide.' },
-    not: { outcome: 'tradition', why: 'The text speaks of a long past, but it holds up no faith, home life or custom as what should guide. What it puts first is the people itself.' } }
+    reason: { D1: 'The text speaks for one people and puts it first: {cue:D1}. It sorts nobody by wages, and it holds up no faith or custom as the guide.' },
+    not: { outcome: 'tradition', why: 'The text mentions a long past, but it holds up no faith or custom as the guide. What it puts first is the people itself.' } }
 ]);

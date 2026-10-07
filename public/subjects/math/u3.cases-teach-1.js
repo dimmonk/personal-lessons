@@ -37,15 +37,15 @@ FC.cases('math', 'u3', [
       },
       {
         text: 'It booked 11 beds.',
-        note: 'That gives a number to work with, and it matters, but it is not the part you are asked to tap.'
+        note: 'That is the result of the calculation, not the calculation itself.'
       },
       {
         text: 'How many guests are coming?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
+        note: 'That is the question, not the calculation.'
       }
     ],
     reason: {
-      A1: 'The words {cue:A1} give a calculation and the result it came to, and one number in the calculation is left out. Each thing done to that number can be undone, which is {a:A1.formula}.'
+      A1: 'The words {cue:A1} give a rule and the result it came to, with the number of guests left out.'
     }
   },
 
@@ -88,11 +88,11 @@ FC.cases('math', 'u3', [
       },
       {
         text: 'This month’s bill is $38.',
-        note: 'That gives a number to work with, and it matters, but it is not the part you are asked to tap.'
+        note: 'That is the result. It does not show whether a charge is added on top.'
       },
       {
         text: 'How many units were used?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
+        note: 'That is the question. The words that settle it are in the first sentence.'
       }
     ]
   },
@@ -133,11 +133,11 @@ FC.cases('math', 'u3', [
       { text: 'A print shop uses 2 ink cartridges for every 1,200 pages it prints.' },
       {
         text: 'How many cartridges does it need for 3,000 pages?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
+        note: 'That is the question, not the rate.'
       }
     ],
     reason: {
-      A1: 'The words {cue:A1} give so much for so many, 2 cartridges for every 1,200 pages, and a new amount of pages, 3,000. Nothing is added on top and no calculation has a result to undo, so the answer is {a:A1.rate}.'
+      A1: 'The words {cue:A1} give so much for so many, 2 cartridges for every 1,200 pages, and a new number of pages, with nothing added on top.'
     }
   },
 
@@ -148,7 +148,7 @@ FC.cases('math', 'u3', [
     setting: 'work',
     topic: 'dye for cloth',
     outcome: 'prop',
-    text: 'A dye works needs 2 liters of dye for every 5 meters of cloth. How much dye is needed for 30 meters of cloth?',
+    text: 'A dye shop needs 2 liters of dye for every 5 meters of cloth. How much dye is needed for 30 meters of cloth?',
     route: { M1: ['unknown'], A1: ['rate'] },
     cues: {
       M1: [
@@ -158,7 +158,7 @@ FC.cases('math', 'u3', [
       A1: ['needs 2 liters of dye for every 5 meters of cloth', 'for 30 meters of cloth']
     },
     reason: {
-      A1: 'The words {cue:A1} give so much for so many, 2 liters of dye for every 5 meters of cloth, and a new amount of cloth, 30 meters. Nothing is added on top and no calculation has a result to undo, so the answer is {a:A1.rate}.'
+      A1: 'The words {cue:A1} give 2 liters for every 5 meters and a new amount of cloth. Nothing is added on top and no result has to be undone, so it is {a:A1.rate}.'
     }
   },
 
@@ -205,11 +205,11 @@ FC.cases('math', 'u3', [
       },
       {
         text: 'How many of each size did it sell?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
+        note: 'That is the question, not the facts.'
       }
     ],
     reason: {
-      A1: 'In {cue:A1}, two numbers are missing, how many small and how many large, and two facts are stated about them: 11 plants in all and $58 in all. That is {a:A1.totals}.'
+      A1: 'In {cue:A1}, two numbers are missing, and two facts are given about them: 11 plants in all, and $58 in all.'
     }
   },
 

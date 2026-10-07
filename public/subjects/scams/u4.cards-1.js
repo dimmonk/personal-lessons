@@ -1,39 +1,42 @@
 // Scams, Unit Four, first half of the names: the opening card, someone you know only online, and money that is waiting or lost.
 // Cards are structured data, not HTML. A text field is one paragraph (a string) or several (an array of strings).
 // Key wording is never typed here: tokens are filled in from key.js. The app prints the preview map, the heading of a meet
-// card, what to point to, the "also called" sentence and the stem of every commit prompt, so this file does not contain them.
+// card, what to look for, the "also called" sentence and the stem of every commit prompt, so this file does not contain them.
+// A meet card: the story first, then the idea (explain), then how to spot it (spot: numbered steps, an action with its example
+// built in and one short sentence of why), then the name, then what to do (act: steps) (lesson standard section 20).
 
 FC.cards('scams', 'u4', [
 
   { id: 'orient', kind: 'orient',
-    h: 'Money: what is the request for, and what does it ask you to do with it?',
-    canDo: 'After this unit you can take a request for money, however it reaches you, and say which of nine things it is: eight kinds of scam, and the real request that they copy. You will be able to point to the words that show it, and to say what to do next, before any money leaves your account.',
+    h: 'Before you pay, find out which of nine requests this is',
+    canDo: 'Before you hand money to anyone, you can tell which of nine things the request is: eight scams, or the one real request that they copy. Then you know what to do on the spot, before any money leaves your account.',
     everyday: [
-      'You already meet these. A text says that a package is waiting and a small fee must be paid. Your builder emails an invoice. Someone you have only ever met online is in trouble. A caller says that you owe tax. A buyer for your old bike pays you too much. Every one of them asks for money, and every one of them can be real or can be a copy.',
-      'This unit starts from {a:D1.money}, because money sent by wire transfer, in cash, in gift cards or in crypto is usually very hard to get back. There are two questions here: what the request says the money is for, and what it asks you to do with it.',
-      'One of the nine names is not a scam. The real request to pay has a name of its own, because real requests come with the same reasons as the copies: a bill, a fine, a deal. A person who suspects every request soon stops checking any of them.'
+      'A text says a package is waiting and you owe $2.99. Your builder emails a bill with a new bank account. A man you only know online needs money for his daughter in the hospital. A caller says you owe tax. A buyer for your old bike pays you too much. Every one asks for money, and every one could be real or fake.',
+      'Money sent by wire transfer, in cash, in gift cards or in crypto is very hard to get back, so the time to be careful is before you send it. Two questions do the work: what does the request say the money is for, and what does it ask you to do with it?',
+      'One of the nine is not a scam. A real bill, fine or deal has a name too, because someone who suspects every request soon stops checking any of them.'
     ],
-    add: 'What makes a request real is not how it looks. It is whether it holds up when you contact the person or the company yourself, through {t:already}. That is what {t:check} means.',
+    add: 'Looking real does not make a request real, and looking odd does not make it fake. The test that works on every one is {t:check}: contact the person or company yourself, through {t:already}.',
     map: { branch: 'money' } },
 
   /* ---------- Romance scam ---------- */
   { id: 'meet-romance', kind: 'meet', outcome: 'romance',
-    link: 'Nine names, and the first is the slowest of all: money asked for by someone you have never met.',
+    link: 'First, the slowest scam of all: money asked for by someone you have never met.',
     case: 'm-romance-engineer', mark: 'M1',
-    strip: [
-      'Ana has never met Daniel. She knows him only through a dating site, where he has written to her every day for eight months.',
-      'His daughter is in a hospital abroad and will not be treated until $4,200 is paid. He asks Ana to send it today, into an account.'
-    ],
     explain: [
-      'It did not arrive as a bill, a prize or a threat. It arrived from a person, after eight months in which he asked for nothing. That is the method, and it takes time on purpose: the scammer is warm and attentive every day, there is always a reason why the video call does not work, and then comes an emergency that is far away, urgent, and something only Ana can fix.',
-      'What Ana could point to on the day: Daniel is someone she knows only through messages, and the money is for trouble that he says is his own.'
+      'Ana has never met Daniel. For eight months he wrote to her every day and asked for nothing. Then came an emergency, far away and urgent, that only she could fix. The warm months are the method, and they take time on purpose.',
+      'Notice what never happens: every time Ana asks for a video call, the connection fails or he has to go.'
+    ],
+    spot: [
+      { do: 'Check how you know them: Daniel is a name on a dating site, and Ana has never seen him on a live call.', why: 'Someone you only know through messages could be anyone.' },
+      { do: 'Find what the money is for: his daughter’s hospital bill.', why: 'In this scam the emergency is always theirs, never yours.' },
+      { do: 'Notice the hurry: “send it today”.', why: 'A hurry stops you from thinking and from asking anyone.' }
     ],
     feature: { step: 'M1', option: 'online' },
-    name: 'The name for this is {o:romance}. The relationship is the tool: the money is asked for in the name of a partner who has become real to the person who pays.',
+    name: 'The name for this is {o:romance}. The relationship is the tool: the money is asked for in the name of a partner who feels real.',
     act: [
-      'Send nothing today, however urgent it sounds.',
-      'Ask for a live video call that they start now. If it fails again, or there is a new reason why not, that is your answer.',
-      'Tell someone who knows you in person. If you were told to keep it secret, that is the answer too.'
+      { do: 'Send nothing today, however urgent it sounds.', why: 'A scammer needs you to act before you think.' },
+      { do: 'Ask for a live video call that they start now.', why: 'A real partner can do it in a minute, and a scammer always has a new excuse.' },
+      { do: 'Tell someone who knows you in person.', why: 'If you were told to keep it secret, that is your answer too.' }
     ] },
 
   { id: 'check-romance', kind: 'check', after: 'romance',
@@ -43,23 +46,24 @@ FC.cards('scams', 'u4', [
 
   /* ---------- Pig-butchering scam ---------- */
   { id: 'meet-pigbutcher', kind: 'meet', outcome: 'pigbutcher',
-    link: 'The next name starts the same way, with someone you know only through messages, but it ends in a different request: to invest.',
+    link: 'The next scam starts the same way, with someone you only know online, but the money goes into an app.',
     case: 'm-pig-wrongnumber', mark: 'M2',
-    strip: [
-      'Lena has never met Kai. He began as a wrong-number text, and they have chatted every day for weeks.',
-      'He showed her a trading app. She put in $200, saw it grow, and took out $100: the app paid out, once.',
-      'Now he asks her to put $6,000 into the same app, with a promise that her profits will triple.'
-    ],
     explain: [
-      'In Ana’s case the money went to Daniel, for his trouble. Here it goes into an app that Kai showed her, and he says nothing about trouble of his own. Both start with someone known only online, so the first question gives the same answer. The second question, what the request asks you to do with the money, tells them apart.',
-      'The app is not a real market. The profits are numbers that the scam puts on the page, and the $100 she took out was paid on purpose, to prove that it works. A small amount that comes out makes the large deposit feel safe. Later, when she tries to take her profit out, the app will ask for a fee or a tax first. That is still this name.'
+      'Kai began as a wrong-number text, and he and Lena have chatted every day for weeks. He showed her a trading app. She put in $200, watched it grow and took out $100. That payout was real, and it was on purpose: a small amount that comes out makes the big deposit feel safe.',
+      'The app is not a real market. The profits are just numbers the scammer puts on the page. When Lena tries to take her profit out, it will ask for a fee or a tax first, and that is still this scam.'
+    ],
+    spot: [
+      { do: 'Check how you know them: Kai is a stranger who texted a wrong number.', why: 'Someone you only know online is where both of these scams begin.' },
+      { do: 'Find where the money is to go: “Put in $6,000” into the app Kai showed her.', why: 'Here the money goes into a site, not to the person.' },
+      { do: 'Look at the proof: she took out $100 and it worked.', why: 'A small payout is bait, so the big deposit feels safe.' }
     ],
     feature: { step: 'M2', option: 'site' },
-    name: 'The name for this is {o:pigbutcher}. A person is fed with attention and small wins for weeks, like an animal fattened before the end. The word is crude, and it is the one you will see in news reports.',
+    name: 'The name for this is {o:pigbutcher}. You are fed with attention and small wins, like an animal before the end, and the word is the one the news uses.',
     act: [
-      'Put nothing into any site or app that someone you know only online showed you, however well it seems to be working.',
-      'Look the firm up yourself: type in the address of a regulator, such as FINRA BrokerCheck (brokercheck.finra.org), and search its register for the firm’s name. If it is not there, stop.',
-      'Never pay a fee or a tax to take money out. Call your bank at the number on your card.'
+      { do: 'Put nothing into any site or app that someone you only know online showed you.', why: 'It can look as if it works, because it is built to.' },
+      { do: 'Look the firm up yourself in a regulator’s register, such as FINRA BrokerCheck (brokercheck.finra.org).', why: 'A firm that is not listed is a reason to stop.' },
+      { do: 'Never pay a fee or a tax to take money out.', why: 'That fee is the scammer’s next move.' },
+      { do: 'If you have already paid, call your bank at the number on your card.', why: 'Some transfers can be recalled in the first hours.' }
     ] },
 
   { id: 'check-pigbutcher', kind: 'check', after: 'pigbutcher',
@@ -67,33 +71,35 @@ FC.cards('scams', 'u4', [
     ask: { type: 'phrase', step: 'M2', say: 'Which words tell Dev where the money is to go? Tap them.', answer: 'Move your savings into it this week' } },
 
   { id: 'look-pigbutcher-romance', kind: 'lookalike', ledger: 'pigbutcher~romance',
-    link: 'These two are easy to mix up: in both, someone you have never met asks for a large sum.',
+    link: 'Both ask someone you have never met for a large sum, and here the same man asks in two ways.',
     cases: ['m-theo-app', 'm-theo-surgery'],
-    instruction: 'Both cases are about Mara and Theo, and in both he asks for $3,000. Compare one thing: where the money is to go.',
+    instruction: 'Both stories are about Mara and Theo, and in both he asks for $3,000. Compare one thing: where the money is to go.',
     prompt: { kind: 'which', option: 'M2.site', answer: 'm-theo-app' },
     difference: [
-      'In Case A the $3,000 is to go into a trading app that Theo showed her, and nothing is said about any trouble of his. The answer is {a:M2.site}, and the case is {o:pigbutcher}.',
-      'In Case B the $3,000 is to pay for his sister’s operation. The money is for trouble that he says is his, and the case is {o:romance}.'
+      'In Story A the $3,000 goes into a trading app that Theo showed her, and he mentions no trouble of his own. That is {a:M2.site}, so the name is {o:pigbutcher}.',
+      'In Story B the $3,000 pays for his sister’s operation. That is trouble he says is his, so the name is {o:romance}.',
+      'Where the money goes decides it, not how warm Theo sounds.'
     ] },
 
   /* ---------- Advance-fee scam ---------- */
   { id: 'meet-advancefee', kind: 'meet', outcome: 'advancefee',
     link: 'A different reason to pay: money that is said to be waiting for you.',
     case: 'm-adv-lottery', mark: 'M1',
-    strip: [
-      'Marta has never entered a competition. The email says that her address was drawn, and that she has won $250,000.',
-      'Before any of it reaches her, she must pay $340 by wire transfer, to an account that the email gives.'
-    ],
     explain: [
-      'Two things are in this email, and they need each other: money that is said to be waiting, and a payment that she must make before any of it reaches her. The prize is made up, so the $340 is the only real money in the story, and it goes to the scammer. They call it insurance, handling, a tax or a release code. What never changes is that you pay before you receive.',
-      'It does not have to be a prize: a grant, a loan, an inheritance or a refund can be the bait. A person who pays once is usually told that something else has come up, and asked for a second fee, then a third.'
+      'Marta never entered a competition, yet the email says she won $250,000. The prize is made up. The only real money in the story is the $340 she is told to pay first, and it goes to the scammer.',
+      'It does not have to be a prize: a grant, a loan, an inheritance or a refund can be the bait. The fee may be called insurance, handling, tax or a release code. If you pay once, you are usually told something else has come up, and asked for a second fee.'
+    ],
+    spot: [
+      { do: 'Ask whether you entered or applied: Marta never entered a drawing.', why: 'Nobody gives away money to people who never asked for it.' },
+      { do: 'Find the money said to be waiting: $250,000.', why: 'Big, easy money is the bait.' },
+      { do: 'Find the fee you must pay first: $340 by wire transfer.', why: 'Paying before you receive is the whole scam.' }
     ],
     feature: { step: 'M1', option: 'prize' },
-    name: 'The name for this is {o:advancefee}. “Advance” means ahead of time: the fee is paid before the money arrives, and the money never does.',
+    name: 'The name for this is {o:advancefee}. “Advance” means ahead of time: you pay first, and the money never comes.',
     act: [
-      'Pay nothing. A real prize, grant or inheritance does not need you to pay a stranger first, and you cannot win a drawing that you did not enter.',
-      'To find out whether you are really owed something, contact the organization yourself, at a number or in an app that you already had, not through the message.',
-      'Do not reply. A reply tells the sender that a person reads this address.'
+      { do: 'Pay nothing.', why: 'A real prize, grant or inheritance never needs a fee paid to a stranger first.' },
+      { do: 'To find out whether you are really owed something, contact the organization yourself, through {t:already}.', why: 'A number or link in the message leads to the scammer.' },
+      { do: 'Do not reply.', why: 'A reply tells the sender a real person reads this address.' }
     ] },
 
   { id: 'check-advancefee', kind: 'check', after: 'advancefee',
@@ -102,22 +108,23 @@ FC.cards('scams', 'u4', [
 
   /* ---------- Recovery scam ---------- */
   { id: 'meet-recovery', kind: 'meet', outcome: 'recovery',
-    link: 'The last name was money that you were never owed. The next is money that you did have, and lost.',
+    link: 'The last scam offered money you were never owed. This one offers money you had, and lost.',
     case: 'm-rec-trading', mark: 'M1',
-    strip: [
-      'Malik lost $3,000 to a fake trading website in March, and told nobody.',
-      'An email now offers to get that money back: “We have traced the money you lost”. There is a fee of $450, to be paid first by wire transfer.'
-    ],
     explain: [
-      'This is money Malik really had and really lost, and a person who has been robbed wants it back more than almost anything. How does the sender know? Often the people who took the first payment keep a list of those who paid, or sell it, or come back themselves. Someone who has paid once is the best target there is.',
-      'Real help with a loss exists: your bank, the police, a regulated attorney. They do not contact you first with a guarantee, and they do not ask for a fee by transfer to a personal account before they start.'
+      'Malik lost $3,000 to a fake trading website and told nobody. Now an email says it has traced his money and will get it back for a $450 fee. Someone who has been robbed wants the money back more than almost anything, and the sender knows it. Often the people who took the first payment keep a list of everyone who paid, or sell it.',
+      'Real help exists: your bank, the police, a licensed attorney. They do not contact you first, they do not promise a result, and they do not ask you to pay by transfer to a personal account before they start.'
+    ],
+    spot: [
+      { do: 'Check that you lost the money: Malik lost $3,000 in March.', why: 'The offer only works on people who were robbed.' },
+      { do: 'Notice who made contact: the email came to him.', why: 'Real help does not chase you.' },
+      { do: 'Find the fee that comes first: $450 by wire transfer.', why: 'A fee up front, for a result nobody can promise, is the whole scam.' }
     ],
     feature: { step: 'M1', option: 'lost' },
-    name: 'The name for this is {o:recovery}. “Recovery” means getting something back, and the scam is a fee for a recovery that does not happen.',
+    name: 'The name for this is {o:recovery}. “Recovery” means getting something back; here the fee is real, and the recovery is not.',
     act: [
-      'Pay nothing and do not reply. Anyone who contacts you first about your loss is a warning in itself.',
-      'Report the loss to your bank at the number on your card, and to the FTC at ReportFraud.ftc.gov. They are the real places to get help, and they do not charge you or contact you first.',
-      'If you went looking for help and found a firm through a search, remember that the top result may be an ad. Anyone can buy that place.'
+      { do: 'Pay nothing, and do not reply.', why: 'Anyone who contacts you first about your loss is a warning in itself.' },
+      { do: 'Report the loss to your bank at the number on your card, and to the FTC at ReportFraud.ftc.gov.', why: 'They are the real places to get help, and they do not charge you.' },
+      { do: 'If you looked for help through a search, do not trust the top result.', why: 'It may be a paid ad, and a scammer can buy that place.' }
     ] },
 
   { id: 'check-recovery', kind: 'check', after: 'recovery',
@@ -125,12 +132,13 @@ FC.cards('scams', 'u4', [
     ask: { type: 'option', step: 'M1', among: ['online', 'prize', 'lost'] } },
 
   { id: 'look-advancefee-recovery', kind: 'lookalike', ledger: 'advancefee~recovery',
-    link: 'Both end with a fee in advance. Here they are with the same man and the same sum.',
+    link: 'Both end with a fee paid in advance, and here they come with the same man and the same sum.',
     cases: ['m-imran-owed', 'm-imran-lost'],
-    instruction: 'Both cases are about Imran, $6,000 and a $150 release fee. Compare one thing: where the money comes from that is said to be waiting.',
+    instruction: 'Both stories are about Imran, $6,000 and a $150 release fee. Compare one thing: where the money that is said to be waiting comes from.',
     prompt: { kind: 'which', option: 'M1.lost', answer: 'm-imran-lost' },
     difference: [
-      'In Case A the $6,000 is compensation that Imran never claimed. It was never his. The answer is {a:M1.prize}, and the case is {o:advancefee}.',
-      'In Case B the $6,000 is money that Imran really had and lost, to a fake insurance broker, and the email says that it has been recovered. The answer is {a:M1.lost}, and the case is {o:recovery}.'
+      'In Story A the $6,000 is compensation that Imran never claimed. It was never his, so that is {a:M1.prize} and the name is {o:advancefee}.',
+      'In Story B the $6,000 is money Imran really had and lost to a fake insurance broker, and the email says it has been found. That is {a:M1.lost}, so the name is {o:recovery}.',
+      'Ask where the money came from: out of nowhere, or your own money that was taken.'
     ] }
 ]);

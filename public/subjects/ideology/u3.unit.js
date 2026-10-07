@@ -5,12 +5,12 @@
 
 FC.unit('ideology', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
+  rev: 5,                 // unit revision, shown in the app; goes up whenever the unit's content changes after its first deploy
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author). The app labels a draft as a draft.
   tag: 'Three',
-  title: { fromKey: 'D1.nation' },        // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Five names for a text that puts one people first, and the two questions that tell them apart',
+  title: { text: 'Before you call it fascist' },   // plain words, with the payoff up front
+  subtitle: 'Two questions that tell five look-alikes apart: who the text is for and against, and what it wants done about voting',
   teaches: { steps: ['N1', 'N2'], outcomes: ['nationalism', 'fasc', 'natpop', 'pop', 'nazi'], terms: ['elite'] },
   assumes: ['u1', 'u2'],  // everything Units One and Two teach may be used; the first card restates the part this unit leans on
 
@@ -22,39 +22,39 @@ FC.unit('ideology', 'u3', {
   ledger: [
     { id: 'nationalism~fasc', pair: ['nationalism', 'fasc'], step: 'N2',
       shared: 'Both speak for everyone in the country as one people and put it first, and both can sound loud, proud and sure of themselves.',
-      rule: 'In {o:nationalism} the text lets the voters keep their say. In {o:fasc} the answer to the second question is {a:N2.aside}: the text takes the voters’ say away, and with it the say of other parties and of anyone who objects.',
-      test: 'Look at what the text wants done with elections, other parties and people who disagree. Are they left in place, or are they to go?' },
+      rule: 'In {o:nationalism} the voters keep their say. In {o:fasc} the answer to the second question is {a:N2.aside}: the voters lose their say, and so do other parties and anyone who objects.',
+      test: 'Look at what the text asks for about elections, other parties and people who disagree. Does it keep them, or want them ended?' },
     { id: 'natpop~fasc', pair: ['natpop', 'fasc'], step: 'N2',
       shared: 'Both can blame a few at the top, and both can ask for the country’s industry, culture or borders to come first.',
-      rule: 'On the first question both can have the answer {a:N1.elitenation}. They part on the second: {o:natpop} leaves the vote in place, and {o:fasc} gets {a:N2.aside}. The first replaces those at the top by voting them out. The second takes the vote away.',
-      test: 'Does the text ask the voters to remove those at the top? Or does it go further, and take away elections, other parties or the right to object?' },
+      rule: 'On the first question both can get {a:N1.elitenation}. They part on the second: {o:natpop} leaves the vote in place, and {o:fasc} gets {a:N2.aside}. One removes those at the top by voting them out. The other takes the vote away.',
+      test: 'Does the text ask the voters to remove those at the top? Or does it go further and take away elections, other parties or the right to object?' },
     { id: 'nationalism~natpop', pair: ['nationalism', 'natpop'], step: 'N1',
       shared: 'Both put the nation first, both leave the vote in place, and both can be angry about the way the country is run.',
-      rule: 'In {o:nationalism} the text speaks for everyone, and nobody inside the country is named as the other side. In {o:natpop} the text speaks for the country’s ordinary people against an {t:elite}, so that someone inside the country is the other side.',
+      rule: 'In {o:nationalism} the text speaks for everyone, and nobody inside the country is the other side. In {o:natpop} the text speaks for the country’s ordinary people against an {t:elite}, so someone inside the country is the other side.',
       test: 'Is anyone inside the country named as the other side, a few at the top set against everyone else? Or does the text speak for everyone alike?' },
     { id: 'nationalism~pop', pair: ['nationalism', 'pop'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both leave the vote in place and rank nobody, and both can say that they speak for the people.',
-      rule: 'In {o:nationalism} the whole nation is spoken for as one, and nobody inside it is named as the other side. In {o:pop} the text is angry at an {t:elite} on behalf of ordinary people, and says no more.',
-      test: 'Does the text speak for everyone, or set ordinary people against a few at the top? If it does the second, does it add anything about what the country itself should have?' },
+      rule: 'In {o:nationalism} the whole nation is spoken for as one, and nobody inside it is the other side. In {o:pop} the text is angry at an {t:elite} on behalf of ordinary people, and says no more.',
+      test: 'Does the text speak for everyone, or set ordinary people against a few at the top? If the second, does it add anything about what the country should have?' },
     { id: 'nationalism~nazi', pair: ['nationalism', 'nazi'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both put one people first, and both can leave the vote in place.',
-      rule: 'In {o:nationalism} everyone in the country is spoken for as one, and nobody is ranked below anybody else. In {o:nazi} the text divides people by descent into peoples worth more and peoples worth less, and puts its own on top.',
+      rule: 'In {o:nationalism} everyone in the country is spoken for as one, and nobody is ranked below anybody else. In {o:nazi} the text splits people by descent into peoples worth more and peoples worth less, and puts its own on top.',
       test: 'Does the text rank peoples by blood or birth, with its own above the others? Or does it speak for everyone in the country as equals?' },
     { id: 'natpop~pop', pair: ['natpop', 'pop'], step: 'N1',
       shared: 'Both set ordinary people against a few at the top, and both leave the vote in place.',
       rule: 'The difference is what else the text asks for. {o:natpop} also wants the country’s borders, culture or industry put first, so its answer is {a:N1.elitenation}. {o:pop} asks for nothing more than getting those at the top out of the way, so its answer is {a:N1.eliteonly}.',
-      test: 'After the text has set ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If it does not, nothing more is attached.' },
+      test: 'After the text sets ordinary people against those at the top, does it say anything about the country’s borders, culture or industry? If not, there is nothing more.' },
     { id: 'natpop~nazi', pair: ['natpop', 'nazi'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both put one people first, and both can leave the vote in place.',
-      rule: 'In {o:natpop} the people is the country’s ordinary people, set against a few at the top. In {o:nazi} the people is marked out by blood and ranked above other peoples, and who counts as the other side is decided by blood or birth, not by being at the top.',
-      test: 'Who is the text against: a few at the top, or peoples that it ranks lower by blood or birth?' },
+      rule: 'In {o:natpop} the people is the country’s ordinary people, set against a few at the top. In {o:nazi} the people is marked out by blood and ranked above other peoples, and the other side is decided by birth, not by being at the top.',
+      test: 'Who is the text against: a few at the top, or peoples it ranks lower by blood or birth?' },
     { id: 'pop~nazi', pair: ['pop', 'nazi'], step: 'N1', taughtIn: 'q-who',
       shared: 'Both are angry, and both say that the wrong people are in charge.',
       rule: 'In {o:pop} the only line drawn is between ordinary people and an {t:elite}. In {o:nazi} the line is drawn by blood or birth, between peoples ranked higher and lower.',
       test: 'Is the only line the one between ordinary people and a few at the top? Or are peoples ranked by blood or birth?' },
     { id: 'fasc~nazi', pair: ['fasc', 'nazi'], step: 'N1',
       shared: 'Both can end the vote, shut out other parties and silence critics, and both can be full of marches, uniforms and talk of one nation.',
-      rule: 'In {o:fasc} the people is the whole nation, or the country’s ordinary people against an {t:elite}, and nobody is ranked by blood. In {o:nazi} peoples are ranked by blood or birth and the text’s own is placed above the rest. The answer goes by that ranking alone: a text that ranks peoples by blood gets {a:N1.blood}, whatever it says about the vote.',
+      rule: 'In {o:fasc} the people is the whole nation, or the country’s ordinary people against an {t:elite}, and nobody is ranked by blood. In {o:nazi} peoples are ranked by blood or birth, with the text’s own above the rest. Only the ranking counts: a text that ranks peoples by blood gets {a:N1.blood}, whatever it says about the vote.',
       test: 'Does the text rank peoples by blood or birth, with its own above the others? Or does it speak of one nation, or of its ordinary people, with nobody ranked by blood?' }
   ],
 
@@ -66,7 +66,7 @@ FC.unit('ideology', 'u3', {
               'meet-fasc', 'check-fasc', 'look-nationalism-fasc',
               'meet-natpop', 'check-natpop', 'meet-pop', 'check-pop',
               'look-nationalism-natpop', 'look-natpop-pop', 'exc-elitefasc'] },
-    { id: 'p2', title: 'One people ranked by blood, the two questions, then the drill',
+    { id: 'p2', title: 'People ranked by blood, the two questions, then the drill',
       cards: ['meet-nazi', 'check-nazi', 'look-fasc-nazi',
               'q-who', 'check-who', 'q-elections', 'check-elections', 'worked-torchlit'], drill: true, close: ['recap'] }
   ],
@@ -101,7 +101,8 @@ FC.unit('ideology', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch unit for the key’s second answer. Two questions, five names, one term. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US words and spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What changed in the key for this branch, and why (K2). From docs/rebuild/ideology-plan.md, part a.
     keyChanges: [

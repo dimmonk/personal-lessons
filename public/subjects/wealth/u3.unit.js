@@ -8,63 +8,63 @@
 
 FC.unit('wealth', 'u3', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 4,
+  rev: 5,
   standard: 1,
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Three',
-  title: { fromKey: 'D1.shock' },     // a branch unit is titled with the gate answer it teaches
-  subtitle: 'Seven names for what to do when one thing could take most of what a person has, including the one that says to leave it alone',
+  title: { text: 'When one thing is most of your money' },
+  subtitle: 'What to do when one stock, property, business, claim or loan could take most of what you have, and when to leave it alone',
   teaches: { steps: ['S1'], outcomes: ['diversify', 'hedge', 'supports', 'safe', 'insure', 'entity', 'deleverage'],
              terms: ['threesupports', 'company'] },
   assumes: ['u1', 'u2'],
 
   // THE LOOK-ALIKE LEDGER. One entry for each pair of names a learner will confuse. Each entry is written once and used six ways:
-  // the look-alike card, its side-by-side table, the list on the question card, the feedback when one is picked for the other, the
-  // grouping of drill items, and what returns together later. test is a question to put to a case, with no name in it. Two entries
-  // carry the key's tie-breaks and are taught by an exception card as well; one is taught by a card that names both names.
+  // the look-alike card, the list on the question card, the feedback when one is picked for the other, the grouping of drill
+  // items, and what returns together later. test is a question to put to a story, with no name in it. Two entries carry the
+  // key's tie-breaks and are taught by an exception card as well; four are taught by the question card or a look-alike card.
   ledger: [
     { id: 'diversify~hedge', pair: ['diversify', 'hedge'], step: 'S1',
       shared: 'In both, one company’s shares are most of what the person has, and nothing is said about prices in general.',
-      rule: 'In {o:diversify} nothing stops the person selling the shares, so the fix is to sell them in steps. In {o:hedge} a rule stops them selling for a set time, so the fix can only limit the loss while they wait.',
+      rule: 'In {o:diversify} nothing stops the person selling the shares, so the fix is to sell them in steps. In {o:hedge} a rule stops them selling for a set time, so all they can do is limit the loss while they wait.',
       test: 'Is anything stopping the person selling, and until when?' },
     { id: 'diversify~supports', pair: ['diversify', 'supports'], step: 'S1', taughtIn: 'w3-q-shock',
       shared: 'In both, one holding is most of what the person has, and it may be doing very well.',
-      rule: 'In {o:diversify} the person takes no part in running it and can sell. In {o:supports} the person runs the business day to day, and at least one thing that would make it safe is missing.',
+      rule: 'In {o:diversify} the person has no part in running it and can sell it. In {o:supports} the person runs the business day to day, and at least one of {t:threesupports} is missing.',
       test: 'Does the person do the work of running it, or does someone else?' },
     { id: 'supports~safe', pair: ['supports', 'safe'], step: 'S1',
       shared: 'In both, the person runs a business that is most of what they have.',
-      rule: 'In {o:supports} at least one of {t:threesupports} is missing. In {o:safe} all three are in place.',
-      test: 'Can you point to each of the three: everything else spread, several years of spending held outside, and no loan against the shares? Which, if any, is missing?' },
+      rule: 'In {o:supports} at least one of {t:threesupports} is missing. In {o:safe} all three are there.',
+      test: 'Which of the three is missing, if any: everything else spread out, several years of spending held outside the business, or no loan against its shares?' },
     { id: 'insure~safe', pair: ['insure', 'safe'], step: 'S1', taughtIn: 'w3-q-shock',
-      shared: 'In both, something in the person’s life could bring {t:claim}, and insurance is in the case.',
-      rule: 'In {o:insure} the demand that could come is far bigger than the insurance. In {o:safe} the insurance is well above any demand that could come.',
-      test: 'Put the biggest demand that the case says could come next to what the insurance pays. Which is bigger, and by how much?' },
+      shared: 'In both, something in the person’s life could bring {t:claim}, and the person has insurance.',
+      rule: 'In {o:insure} the biggest claim that could come is far bigger than the insurance. In {o:safe} the insurance is well above any claim that could come.',
+      test: 'Put the biggest claim that could come next to what the insurance pays. Which is bigger, and by how much?' },
     { id: 'insure~entity', pair: ['insure', 'entity'], step: 'S1',
-      shared: 'In both, {t:claim} is in the case, and what a demand could reach is most of what the person owns.',
-      rule: 'In {o:insure} the case shows {t:claim} that could be far bigger than the insurance. In {o:entity} the case shows several properties or businesses in one name, so a demand on any one could reach the rest. When a case shows both, the answer is {o:insure}.',
-      test: 'Does the case show a demand bigger than the insurance, or only how the properties are held?' },
+      shared: 'In both, {t:claim} could come, and it could reach most of what the person owns.',
+      rule: 'In {o:insure} the claim could be far bigger than the insurance. In {o:entity} the properties or businesses are all in one name, so {t:claim} on any one could reach the rest. When a story shows both, the answer is {o:insure}.',
+      test: 'Is there {t:claim} bigger than the insurance, or does the story only show how the properties are held?' },
     { id: 'entity~safe', pair: ['entity', 'safe'], step: 'S1', taughtIn: 'w3-q-shock',
-      shared: 'In both, several properties or businesses are in the case, and each could bring {t:claim}.',
-      rule: 'In {o:entity} they are all held in the person’s own name, so one demand could reach the rest. In {o:safe} each is already held in a company of its own, so a demand stops at the edge of that company.',
+      shared: 'In both, several properties or businesses could each bring {t:claim}.',
+      rule: 'In {o:entity} they are all in the person’s own name, so one claim could reach the rest. In {o:safe} each is already in a company of its own, so {t:claim} stops at the edge of that company.',
       test: 'Whose name is each property or business held in?' },
     { id: 'deleverage~safe', pair: ['deleverage', 'safe'], step: 'S1', taughtIn: 'w3-q-shock',
       shared: 'In both, there is a loan against something that is most of what the person has.',
-      rule: 'In {o:deleverage} the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In {o:safe} the loan is modest, at a fixed rate, and cannot be demanded back while it is paid.',
+      rule: 'In {o:deleverage} the lender could force a sale: the loan is large against what it is secured on, or the lender can demand it back, or the rate can jump. In {o:safe} the loan is small, at a fixed rate, and cannot be demanded back while it is paid.',
       test: 'How large is the loan against what it is secured on, and what is the lender allowed to do?' },
     { id: 'deleverage~supports', pair: ['deleverage', 'supports'], step: 'S1',
       shared: 'In both, a loan could be used against the borrower, and what it is secured on is most of what they have.',
-      rule: 'In {o:supports} the person runs the business, and a loan against its shares is one of the gaps. In {o:deleverage} the loan is against something the person does not run. When a case shows both, the answer is {o:supports}.',
+      rule: 'In {o:supports} the person runs the business, and a loan against its shares is one of the gaps. In {o:deleverage} the loan is against something the person does not run. When a story shows both, the answer is {o:supports}.',
       test: 'Is what the loan is secured on a business that the person runs?' }
   ],
 
   // Parts are stopping points: each ends on a screen that says where the next one starts (A13). The part with drill: true is the
   // last, and its close cards come after the drill.
   parts: [
-    { id: 'u3p1', title: 'One holding, a business the person runs, and what makes it safe',
+    { id: 'u3p1', title: 'One big holding, and a business you run',
       cards: ['w3-orient', 'w3-meet-diversify', 'w3-check-diversify', 'w3-meet-hedge', 'w3-check-hedge', 'w3-look-diversify-hedge',
               'w3-term-threesupports', 'w3-meet-supports', 'w3-check-supports', 'w3-meet-safe', 'w3-check-safe',
               'w3-look-supports-safe'] },
-    { id: 'u3p2', title: 'Claims, properties in one name and loans, the question, then the drill',
+    { id: 'u3p2', title: 'Claims, properties in one name and loans, then the drill',
       cards: ['w3-meet-insure', 'w3-check-insure', 'w3-term-company', 'w3-meet-entity', 'w3-check-entity', 'w3-exc-insure',
               'w3-meet-deleverage', 'w3-check-deleverage', 'w3-exc-supports', 'w3-q-shock', 'w3-check-shock',
               'w3-worked-brewery'],
@@ -107,7 +107,8 @@ FC.unit('wealth', 'u3', {
       { rev: 1, date: '2026-10-05', change: 'First version under lesson standard 1: the branch of the key for one thing most of the money depends on. Not yet deployed, so later edits before the first deploy stay revision 1.' },
       { rev: 2, date: '2026-10-05', change: 'Plain words: the lesson machinery\'s own names ("key", "route" and so on) replaced with plain ones.' },
       { rev: 3, date: '2026-10-05', change: 'American English: dollars, US accounts, rules and institutions, US spelling.' },
-      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' }
+      { rev: 4, date: '2026-10-05', change: 'Trimmed to a quick lesson: one case per name, the essentials, a short drill.' },
+      { rev: 5, date: '2026-10-07', change: 'Rewritten in plain, concrete words: the payoff up front, a story before each idea, how to spot each one as numbered steps.' }
     ],
     // What the K2 rewrite changed in the key for this branch, and why (docs/rebuild/wealth-plan.md, section (a)).
     keyChanges: [

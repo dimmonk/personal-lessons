@@ -18,7 +18,7 @@ FC.cases('civics', 'u5', [
     text: 'A city law says that every food business must display its health inspection grade in the window. Imran sells coffee from a bicycle with a box on the back. The city says the bicycle is a food business and fined him for not displaying a grade. Imran asked a judge to decide whether a coffee bicycle is a food business under the law. He does not say the city’s law is wrong.',
     outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
     cues: { D1: 'Imran asked a judge to decide', J1: 'asked a judge to decide whether a coffee bicycle is a food business under the law' },
-    reason: { J1: 'The law is accepted, and Imran asks only how far its words reach: {cue:J1}. He does not say that it clashes with the Constitution, so the judge is not asked whether it is allowed.' } },
+    reason: { J1: 'Imran accepts the law and asks only how far its words reach: {cue:J1}.' } },
 
   { id: 'ls-amp-violin', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a violin and a small amplifier', name: 'The violin',
     text: 'A city rule says that nobody may use amplified sound in the city’s parks. Eli played a violin with a small clip-on amplifier in Mill Park and was fined $100. He does not say the rule is wrong. He asked a judge to decide whether a violin with a small amplifier counts as amplified sound under the rule.',
@@ -29,7 +29,7 @@ FC.cases('civics', 'u5', [
     text: 'A state law says that every bakery must label its bread with a list of ingredients. Hamza bakes at home and sells his loaves from a market stall without labels, saying that a stall is not a bakery. The state fined him, and he has asked a judge to decide whether a market stall that sells bread it bakes is a bakery under the law. He does not say the law is wrong.',
     outcome: 'interpret', route: { D1: ['courts'], J1: ['words'] },
     cues: { D1: 'he has asked a judge to decide', J1: 'asked a judge to decide whether a market stall that sells bread it bakes is a bakery under the law' },
-    reason: { J1: 'Nobody says the law is wrong. Hamza asks only whether the word reaches his stall: {cue:J1}. That is a question about what the words of the law cover.' } },
+    reason: { J1: 'Hamza accepts the law and asks only how far one word reaches: {cue:J1}.' } },
 
   /* ---------- A political question ---------- */
   { id: 'n-bus', use: 'teach', tier: 'clean', setting: 'community', topic: 'a bus fare', name: 'The bus fare',
@@ -41,7 +41,7 @@ FC.cases('civics', 'u5', [
     text: 'Residents of Pell Heights ask a judge to order the city to open a second walk-in clinic, saying that it would be better for the neighborhood. No law requires a second clinic, and nobody says the city takes away a right by not opening one.',
     outcome: 'notlegal', route: { D1: ['courts'], J1: ['policy'] },
     cues: { D1: 'ask a judge to order the city', J1: 'No law requires a second clinic, and nobody says the city takes away a right by not opening one' },
-    reason: { J1: 'The residents ask the judge to choose, and their reason is that it would be better. Nothing settles it: {cue:J1}. There is no law or right for the judge to apply.' } },
+    reason: { J1: 'The residents want the judge to choose because it would be better, and nothing settles it: {cue:J1}.' } },
 
   { id: 'ls-permit-stage', use: 'teach', tier: 'clean', setting: 'leisure', topic: 'a stage for a village green', name: 'The stage',
     text: 'A town rule says that any gathering on Riverside Green needs a permit from the town. A group of residents asks a judge to order the town to build a stage on the green for community events, saying that a stage would be better for the town. No law requires a town to build one, and nobody says the permit rule takes away a right.',

@@ -8,8 +8,10 @@ FC.cards('civics', 'u10', [
     link: 'The movement, from 1954 to 1965, to end segregation.',
     case: 'c10-civil',
     plain: [
-      'Amir’s daughter already has the three parts of the answer in her question: a court, a law and people. They are the three landmarks of the civil rights movement, which pushed to end segregation (keeping people of different races apart, as in separate public schools for Black and white children) and discrimination (treating people worse because of their race).',
-      'The court was the Supreme Court. In 1954 it ruled, in Brown v. Board of Education, that separate public schools for Black and white children are unequal. A court checking a law against the Constitution is {o:review}. The people included Martin Luther King Jr. and thousands of others, who led marches and boycotts. A boycott is a group’s refusal to use or buy something, to press for a change. The law was the Civil Rights Act of 1964, passed by Congress, which outlaws segregation and discrimination.'
+      'Amir’s daughter already has the three parts of the answer in her question: a court, a law and people. They are the three big parts of the civil rights movement. It pushed to end segregation (keeping people of different races apart, as in separate public schools for Black and white children) and discrimination (treating people worse because of their race).',
+      'The court: in 1954 the Supreme Court ruled, in Brown v. Board of Education, that separate public schools for Black and white children are unequal. A court checking a law against the Constitution is {o:review}.',
+      'The people: Martin Luther King Jr. and thousands of others led marches and boycotts. A boycott is when a group refuses to use or buy something, to press for a change.',
+      'The law: the Civil Rights Act of 1964, passed by Congress, outlaws segregation and discrimination.'
     ] },
 
   { id: 'facts-civil', kind: 'facts',
@@ -19,12 +21,12 @@ FC.cards('civics', 'u10', [
     rows: [
       { id: 'cr-brown', q: 'Which 1954 ruling of the Supreme Court said that separate public schools for Black and white children are unequal?', a: 'Brown v. Board of Education',
         relates: 'A court checked a law against the Constitution, which is called {o:review}. It came ten years before the law of 1964.' },
-      { id: 'cr-king', q: 'Which leader, together with thousands of others, led the marches and boycotts of the movement?', a: 'Martin Luther King Jr.',
-        relates: 'The movement was the work of many people, and he is the leader that this course names.' },
+      { id: 'cr-king', q: 'Which leader, with thousands of others, led the marches and boycotts of the movement?', a: 'Martin Luther King Jr.',
+        relates: 'The movement was the work of many people. He is the leader this course names.' },
       { id: 'cr-act', q: 'Which 1964 law, passed by Congress, outlawed discrimination?', a: 'The Civil Rights Act of 1964',
-        relates: 'It is Congress writing the rules, which is a different job from the court’s ruling in 1954.' },
+        relates: 'Congress wrote this law. That is a different job from the court’s ruling in 1954.' },
       { id: 'cr-end', q: 'What did the civil rights movement push to end?', a: 'Segregation',
-        relates: 'It is what the court ruled against in the schools, and what the 1964 law outlawed.' }
+        relates: 'The court ruled against it in schools, and the 1964 law outlawed it.' }
     ] },
 
   { id: 'chk-cr-brown', kind: 'check', after: 'facts-civil', ask: { type: 'fact', row: 'cr-brown' } },
@@ -34,23 +36,24 @@ FC.cards('civics', 'u10', [
 
   { id: 'look-civil', kind: 'lookalike', ledger: 'cr-brown~cr-act',
     h: 'A court’s ruling and a law of Congress',
-    link: 'Two landmarks aimed at the same thing, one from a court and one from lawmakers, get swapped.',
+    link: 'One came from a court and one from Congress, and people swap them.',
     facts: ['cr-brown', 'cr-act'],
     instruction: 'Compare who acted: a court that ruled, or lawmakers who passed a law.',
     prompt: { kind: 'which', answer: 'cr-act' },
     difference: [
-      'Fact A is {f:cr-brown}: a ruling by the Supreme Court in 1954, in a case about separate public schools.',
-      'Fact B is {f:cr-act}: a law passed by Congress in 1964, outlawing segregation and discrimination.'
+      'Fact A is {f:cr-brown}: a Supreme Court ruling in 1954, in a court case about separate public schools.',
+      'Fact B is {f:cr-act}: a law passed by Congress in 1964. It outlaws segregation and discrimination.'
     ] },
 
   /* ---------- September 11, 2001 ---------- */
   { id: 'con-attack', kind: 'concept',
     h: 'September 11, 2001: what happened that day',
-    link: 'The most recent event this course holds, and what the country changed after it.',
+    link: 'The most recent event in this course, and what changed after it.',
     case: 'c10-attack',
     plain: [
-      'On September 11, 2001, terrorists hijacked four airplanes and attacked the World Trade Center in New York and the Pentagon near Washington. Terrorists are people who use violence to frighten a country; to hijack an airplane is to take it over by force. Nearly 3,000 people were killed.',
-      'Afterward the country made new security rules and created a new federal department for homeland security. Adaeze was right that the rules changed afterward.'
+      'On September 11, 2001, terrorists hijacked four airplanes and attacked the World Trade Center in New York and the Pentagon near Washington. Nearly 3,000 people were killed.',
+      'Terrorists are people who use violence to frighten a country. To hijack an airplane is to take it over by force.',
+      'Afterward the country made new security rules, like the ones in Adaeze’s line, and created a new federal department for homeland security.'
     ] },
 
   { id: 'facts-attack', kind: 'facts',
@@ -59,13 +62,13 @@ FC.cards('civics', 'u10', [
     concept: 'con-attack',
     rows: [
       { id: 'nn-planes', q: 'How many airplanes did the terrorists hijack on September 11, 2001?', a: 'Four airplanes',
-        relates: 'Four airplanes were taken over by force and used in the attacks.' },
+        relates: 'The terrorists took over four airplanes by force and used them in the attacks.' },
       { id: 'nn-targets', q: 'Which two places did the attacks hit?', a: 'The World Trade Center and the Pentagon',
-        relates: 'The World Trade Center is in New York, and the Pentagon is near Washington.' },
+        relates: 'The World Trade Center is in New York. The Pentagon is near Washington.' },
       { id: 'nn-dead', q: 'About how many people were killed that day?', a: 'Nearly 3,000 people',
         relates: 'The number shows how large the attacks were.' },
-      { id: 'nn-dept', q: 'What new federal body was created afterward?', a: 'A department for homeland security',
-        relates: 'A new part of the government of the whole country, made in answer to the attacks.' }
+      { id: 'nn-dept', q: 'What new part of the federal government was created afterward?', a: 'A department for homeland security',
+        relates: 'It is a new part of the national government, made in answer to the attacks.' }
     ] },
 
   { id: 'chk-nn-planes', kind: 'check', after: 'facts-attack', ask: { type: 'fact', row: 'nn-planes' } },
@@ -76,11 +79,15 @@ FC.cards('civics', 'u10', [
   /* ---------- the vote, in five years ---------- */
   { id: 'con-vote', kind: 'concept',
     h: 'The right to vote was widened five times: in what years',
-    link: 'The vote was widened by inches. These are the five years.',
+    link: 'The vote was widened one group at a time. These are the five years.',
     case: 'c10-vote',
     plain: [
-      'Hadiya’s grandmother is right. At the founding, the vote was mostly limited to white men who owned property, and each widening after that was won against opposition. An earlier unit held what each amendment says. This group holds when.',
-      'In 1870 the Fifteenth Amendment said that the right to vote cannot be denied because of race. In 1920 the Nineteenth said that it cannot be denied because of sex. In 1964 the Twenty-fourth ended the poll tax, a fee to vote, in federal elections. In 1965 the Voting Rights Act put federal officials behind the Fifteenth Amendment’s promise. In 1971 the Twenty-sixth Amendment lowered the voting age to eighteen.'
+      'Hadiya’s grandmother is right. At the founding, the vote was mostly limited to white men who owned property, and each widening after that was won against opposition. An earlier unit covers what each amendment says. This group is about when.',
+      '1870: the Fifteenth Amendment said the right to vote cannot be denied because of race.',
+      '1920: the Nineteenth Amendment said it cannot be denied because of sex.',
+      '1964: the Twenty-fourth Amendment ended the poll tax, a fee to vote, in federal elections.',
+      '1965: the Voting Rights Act put federal officials behind the Fifteenth Amendment’s promise.',
+      '1971: the Twenty-sixth Amendment lowered the voting age to eighteen.'
     ] },
 
   { id: 'facts-vote', kind: 'facts',
@@ -89,15 +96,15 @@ FC.cards('civics', 'u10', [
     concept: 'con-vote',
     rows: [
       { id: 'vy-race', q: 'In what year did the Fifteenth Amendment say that the right to vote cannot be denied because of race?', a: '1870',
-        relates: 'The first of the five, in the years just after the Civil War. It is an amendment, so it is part of the Constitution.' },
+        relates: 'The first of the five, just after the Civil War. An amendment is part of the Constitution.' },
       { id: 'vy-sex', q: 'In what year did the Nineteenth Amendment say that the right to vote cannot be denied because of sex?', a: '1920',
         relates: 'It came after a campaign for women’s right to vote that began in 1848.' },
       { id: 'vy-poll', q: 'In what year did the Twenty-fourth Amendment end the poll tax, a fee to vote, in federal elections?', a: '1964',
-        relates: 'A poll tax is a fee that a person had to pay in order to vote. It came in the same year as the Civil Rights Act.' },
+        relates: 'A poll tax was a fee a person had to pay to vote. It came in the same year as the Civil Rights Act.' },
       { id: 'vy-vra', q: 'In what year did the Voting Rights Act put federal officials behind the Fifteenth Amendment’s promise?', a: '1965',
-        relates: 'An Act of Congress, not an amendment. It made the promise of 1870 real, ninety-five years after it was written.' },
+        relates: 'This is an Act of Congress, not an amendment. It made the promise of 1870 real, ninety-five years after it was written.' },
       { id: 'vy-age', q: 'In what year did the Twenty-sixth Amendment lower the voting age to eighteen?', a: '1971',
-        relates: 'The most recent widening of the vote that this course holds.' }
+        relates: 'The most recent widening of the vote in this course.' }
     ] },
 
   { id: 'chk-vy-race', kind: 'check', after: 'facts-vote', ask: { type: 'fact', row: 'vy-race' } },
@@ -114,6 +121,6 @@ FC.cards('civics', 'u10', [
     prompt: { kind: 'which', answer: 'vy-vra' },
     difference: [
       'Fact A is the Fifteenth Amendment: {f:vy-race}. It wrote the promise into the Constitution.',
-      'Fact B is the Voting Rights Act: {f:vy-vra}. It put federal officials behind that promise, so that it became real for the people who had been shut out.'
+      'Fact B is the Voting Rights Act: {f:vy-vra}. It put federal officials behind that promise, so it became real for the people who had been shut out.'
     ] }
 ]);

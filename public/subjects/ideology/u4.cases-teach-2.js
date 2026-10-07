@@ -23,7 +23,7 @@ FC.cases('ideology', 'u4', [
     outcome: 'react', route: { D1: ['tradition'], T1: ['restore'] },
     cues: { D1: 'This old order of the wards should guide how the hospital is run',
             T1: ['That was a wrong done to the sick', 'put the matrons back on every ward, with their belts and their authority, as it was'] },
-    reason: { T1: 'The text names an order that has gone, the matrons with their belts and their word, and says its going was a wrong: {cue:T1}. It asks for the order to be put back. Nothing it names is still in place, so the answer is the one for an order brought back.' } },
+    reason: { T1: 'The matrons are gone, the text calls that a wrong, and it asks for them back: {cue:T1}.' } },
 
   /* ---------- The same harbor festival, old ways and one people ---------- */
   { id: 'i4-lk-conserv-harbor', use: 'teach', tier: 'clean', setting: 'town', topic: 'a blessing of the boats at a harbor festival', name: 'The blessing of the boats',

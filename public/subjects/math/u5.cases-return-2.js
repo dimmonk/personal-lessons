@@ -20,12 +20,12 @@ FC.cases('math', 'u5', [
       C1: ['Four friends join a queue at a ticket window, one behind another']
     },
     reason: {
-      M1: 'The words {cue:M1} ask in how many different orders the friends can stand, a count of ways something can turn out. Nothing in it follows an amount as time passes, hides a number that a calculation must fit, or splits whole numbers into groups, and there is no shape to measure. What it asks for is a count of the results, or the chance of something, so the answer to the first question is {a:M1.chance}.',
-      C1: 'The words {cue:C1} show one group of 4 friends placed one behind another, so that each place uses a friend up, and ask how many different orders there are, so the answer is {a:C1.order}.'
+      M1: 'The words {cue:M1} ask in how many orders the friends can stand, so you are counting results.',
+      C1: 'The words {cue:C1} put one group of 4 friends in places one behind another, and each place uses a friend up.'
     },
     not: {
       outcome: 'comb',
-      why: 'If the same things in a different order were the same result, it would be {o:comb}. Here a different order is a different result, so every order is counted.'
+      why: 'The same things in a different order are one result. Here a different order is a different result.'
     },
     steps: [
       {
@@ -45,16 +45,16 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '16 orders',
-          slip: 'you multiply the size of the group by the number of picks, 4 × 4, so no pick ever uses anyone up.'
+          slip: 'you multiply 4 × 4, the size of the group by the number of picks, so no pick uses anyone up.'
         },
         {
           id: 's2',
           text: '256 orders',
-          slip: 'you let the same one be picked every time, so each pick still has all 4 to choose from.'
+          slip: 'you let the same one be picked again, so each pick still has all 4 to choose from.'
         }
       ]
     },
-    why: 'The first pick can be any one of the group. Whoever it is, that one is taken out, so the next pick is made from a group one smaller, and the pick after that from one smaller again. Each pick is a choice from a list of its own, so the counts multiply, and a different order is counted as a different result, which is what the problem asks for.'
+    why: 'The first pick can be anyone in the group. That one is taken out, so the next pick is from a group one smaller, and the next from one smaller again. The counts multiply, and a different order counts as a different result.'
   },
 
   {
@@ -72,18 +72,18 @@ FC.cases('math', 'u5', [
       C1: ['The gift is the same whichever jar goes in first']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how many different gifts can be packed, a count of ways something can turn out. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
-      C1: 'The words {cue:C1} show 3 different jars taken from 10, where the gift is the same whichever goes in first, so that the same 3 jars in any order are one gift, so the answer is {a:C1.group}.'
+      M1: 'The words {cue:M1} ask how many different gifts there are, so you are counting results.',
+      C1: 'The words {cue:C1} say the same 3 jars, in any order, are one gift.'
     },
     not: {
       outcome: 'perm',
-      why: 'If a different order counted as a different result, it would be {o:perm}. Here the same things in any order are one result, so the count in order has to be divided down.'
+      why: 'A different order is a different result. Here the same things in any order are one result, so you divide.'
     },
     steps: [
       { does: 'Count the group and the picks', working: 'Group: 10 jars. Picked: 3' },
       { does: 'Count the picks as if the order mattered', working: '10 × 9 × 8 = 720' },
       {
-        does: 'Count the orders one chosen group can be put in',
+        does: 'Count the orders one group can come in',
         working: '3 jars can be put in order in 3 × 2 × 1 = 6 ways'
       },
       { does: 'Divide the first count by the second', working: '720 ÷ 6 = 120. That is 120 gifts' }
@@ -95,15 +95,15 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '720 gifts',
-          slip: 'you stop after counting the picks in order, so each group is counted once for every order it can be put in.'
+          slip: 'you stop after counting the picks in order, so each group is counted once for every order it can come in.'
         },
         {
           id: 's2',
           text: '240 gifts',
-          slip: 'you divide by the number of picks, 3, instead of by the number of orders one group can be put in, 6.'
+          slip: 'you divide by the number of picks, 3, instead of the number of orders one group can come in, 6.'
         }
       ]
     },
-    why: 'Counting the picks in order counts every group once for every order its 3 jars can be put in, and that is 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of different groups, and dividing by 6 leaves each group counted once.'
+    why: 'Counting the picks in order counts every group once for every order its 3 jars can come in: 3 × 2 × 1 = 6 orders. So the count in order is 6 times the number of groups, and dividing by 6 counts each group once.'
   }
 ]);

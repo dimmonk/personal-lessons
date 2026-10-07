@@ -5,34 +5,34 @@
 FC.cards('ideology', 'u5', [
 
   { id: 'orient', kind: 'orient',
-    h: 'Everyone is owed something. What should be done about it?',
-    canDo: 'After this unit you can read a short text that puts first what every person is owed, such as a petition, a speech or a letter, and say which of three things it wants done for people. You will be able to point to the words that tell you.',
+    h: 'Everyone deserves a fair shot. But what should the government do about it?',
+    canDo: 'When a speech, petition or letter says everyone deserves rights and fair treatment, you can tell what it is actually asking the government to do: stay out of the way, pay for a fair start, or change a rule. The three sound alike and ask for very different things.',
     everyday: [
-      'You have probably heard all three of these in one week. One person says, "Just protect people’s rights and leave them alone." Another says, "Rights are no use to a child with no school, so the government should pay for one." A third says, "The rules are the same for everyone, and that is exactly the problem." Each can say, honestly, that every person has rights and should be treated fairly. They are not disagreeing about that. They are disagreeing about what to do.',
-      'This unit has one question and three answers. Each answer leads to one name. The names describe what a text asks for. They are not insults and not compliments, and a text can ask for one of them whether or not you agree.'
+      'You have probably heard all three in one week. One person says, "Just protect people’s rights and leave them alone." Another says, "Rights are no use to a child with no school, so the government should pay for one." A third says, "The rules are the same for everyone, and that is exactly the problem."',
+      'All three say every person has rights and should be treated fairly. They do not disagree about that. They disagree about what to do.',
+      'Each of the three leads to a name. The names describe what a text asks for. They are not insults or compliments, and a text can ask for any of them whether or not you agree.'
     ],
     add: ['Every text in this unit is invented, and the unit takes no side. It teaches you to read what a text asks for.'],
     map: { branch: 'rights' } },         // the preview map is drawn from the key, with plain words beside each label
 
   /* ---------- Classical liberalism ---------- */
-  { id: 'meet-clib', kind: 'meet', outcome: 'clib',     // heading is the outcome's plain words, from the key
+  { id: 'meet-clib', kind: 'meet', outcome: 'clib',     // heading is the outcome's name, from the key
     link: 'Start with the answer that asks the least of the government.',
     case: 'i5-clib-meet', mark: 'R1',
-    strip: [
-      'The text names what each person is free to do: to play, to speak and to sell what they make on a public street.',
-      'It names the council’s jobs, and counts them off: the police who keep the peace, the courts that settle disputes, the fire service that answers a call.',
-      'It says that licensing who may sing is not one of those jobs.',
-      'Its last request is "protect our rights, and then leave us alone". Nothing is asked of the council for anyone: no money, no service and no help.'
-    ],
     explain: [
-      'What this text wants done for people is very little, and it says so. A council is a local government, and "the government" is the word this unit uses for any of them. Here the council is to guard the freedoms (keep the peace, settle disputes, answer a fire) and then step back.',
-      'A few jobs does not mean none. The musicians want the police, the courts and the fire service, and would be dismayed to lose them. They ask only that the council stay inside those jobs.'
+      'The musicians want to play, speak and sell on the street, and they want the council to stay out of it. A council is a local government, and "the government" is the word this unit uses for any of them. They are happy for the council to keep a few jobs: the police, the courts and the fire service. They only ask that it stick to those and not decide who may sing.',
+      'A few jobs does not mean none. The musicians would be upset to lose the police, the courts or the fire service.'
+    ],
+    spot: [
+      { do: 'Find what people are free to do: play, speak and sell on a public street.', why: 'This answer puts freedom first.' },
+      { do: 'List the government’s jobs: police, courts, fire service.', why: 'The list is short, and every job protects people.' },
+      { do: 'Check what it asks the government to give: no money, no service, no help.', why: 'A text that wants something given is the next answer.' }
     ],
     feature: { step: 'R1', option: 'leave' },
-    name: 'The name for this is {o:clib}. "Liberal" comes from an old word for free: each person’s freedom comes first. "Classical" is the word for the older form of that view. The name is for what the text asks for: rights protected, a government kept to a few jobs, and nothing given.' },
+    name: 'This is {o:clib}. "Liberal" comes from an old word for free, and "classical" means the older form of that view.' },
 
   { id: 'check-clib', kind: 'check', after: 'clib',
     case: 'i5-clib-check',
-    ask: { type: 'phrase', step: 'R1', say: 'Which part of this case says what the text wants the government to do? Tap it.',
+    ask: { type: 'phrase', step: 'R1', say: 'Which words say what Mirela wants the government to do? Tap them.',
            answer: 'The government should keep the roads safe and the courts open, and otherwise leave traders alone' } }
 ]);

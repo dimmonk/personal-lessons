@@ -1,5 +1,5 @@
 // Basic Math, Unit Five: the drill's problems (part 9 of 9), asked as a whole route.
-// Every problem is a case with a route, marked words and a reason for the key's first question and for the unit's own question,
+// Every problem has a route, marked words and a reason for the key's first question and for the unit's own question,
 // and carries its whole working and the slip behind every wrong choice.
 // The working, the wrong choices and the slip behind each were computed from the problem’s own numbers when the file was written: check a number you change against its working.
 
@@ -20,16 +20,16 @@ FC.cases('math', 'u5', [
       C1: ['described as 99% accurate', 'The illness affects 1 person in 1,000']
     },
     reason: {
-      M1: 'The words {cue:M1} ask how likely it is that a result is right, a chance and not a count. Nothing here is followed through time, no number is hidden for a calculation to fit, no whole number is split into groups, and no shape is measured. The problem asks for the number of different results, or for a chance, which is the answer to the first question {a:M1.chance}.',
-      C1: 'The words {cue:C1} give a test that has come back positive, call it 99% accurate, and say the illness affects 1 person in 1,000, and ask how likely it is that the result is right, so the answer is {a:C1.test}.'
+      M1: 'The words {cue:M1} ask how likely it is that the person has the illness, so you are finding a chance, not a count.',
+      C1: 'The words {cue:C1} say how accurate the test is and how rare the illness is, so the question is how far to trust a positive result.'
     },
     not: {
       outcome: 'complement',
-      why: 'Two chances of 99% and 1% can look like separate things to be combined, as in {o:complement}. But no list of separate things is asked about, and nothing is at least one of them: a test has given one result, the illness is rare, and the question is how far to trust the result.'
+      why: 'Two chances, 99% and 1%, can look like separate things to combine. But nothing asks for at least one of several things: one test has given one result, and the question is whether to trust it.'
     },
     steps: [
       {
-        does: 'Imagine a large group and split it into those who have the thing and those who do not',
+        does: 'Imagine a big group and split it into people who have it and people who do not',
         working: 'Imagine 100,000 people. 1 in 1,000 have it: 100 have it and 99,900 do not'
       },
       { does: 'Count the positive results among those who have it', working: '99% of 100 = 99' },
@@ -50,7 +50,7 @@ FC.cases('math', 'u5', [
         {
           id: 's1',
           text: '99%',
-          slip: 'you take the share of people who have it that the test catches, 99%, as the chance that a positive result is right.'
+          slip: 'you take the share of sick people the test catches, 99%, as the chance that a positive result is right.'
         },
         {
           id: 's2',
@@ -59,6 +59,6 @@ FC.cases('math', 'u5', [
         }
       ]
     },
-    why: 'A positive result comes from two kinds of people: those who have the thing and are rightly flagged, and those who do not have it and are wrongly flagged. The chance that a positive result is right is the share of all the positive results that are of the first kind. When the thing is rare, the second group starts from nearly everyone, so a small rate of wrong flags still gives many wrong positive results. Counting both kinds in an imagined group shows the share directly.'
+    why: 'A positive result comes from two groups: people who have the thing and are rightly flagged, and people who do not and are wrongly flagged. The chance that a positive result is right is the share of all positive results that come from the first group. When the thing is rare, the second group starts from nearly everyone, so even a small error rate gives many wrong positives.'
   }
 ]);

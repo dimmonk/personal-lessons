@@ -17,15 +17,15 @@ FC.cases('civics', 'u3', [
     cues: { C1: 'a bill that puts a new tax of ten dollars on every airline ticket' } },
 
   { id: 'k-courts', use: 'check', tier: 'clean', setting: 'community', topic: 'more judges for a busy federal court', name: 'The busy court',
-    text: "The federal court in one of the busiest regions has far more cases than its judges can hear. The House and the Senate passed a bill that adds four judges to that court. The bill now waits for the President’s signature.",
+    text: "The federal court in one of the busiest regions has far more court cases than its judges can hear. The House and the Senate passed a bill that adds four judges to that court. The bill now waits for the President’s signature.",
     outcome: 'enumerated', route: { D1: ['congress'], C1: ['listed'] },
     cues: { C1: 'a bill that adds four judges to that court' },
     segments: [
-      { text: 'The federal court in one of the busiest regions has far more cases than its judges can hear', note: 'That is why the bill exists. It is the reason for the law, not the law.' },
+      { text: 'The federal court in one of the busiest regions has far more court cases than its judges can hear', note: 'That is why the bill exists, not what Congress did.' },
       { text: 'The House and the Senate passed a bill that adds four judges to that court' },
-      { text: 'The bill now waits for the President’s signature', note: 'That is what happens to the law next. It is not what Congress did.' }
+      { text: 'The bill now waits for the President’s signature', note: 'That is what happens to the law next, not what Congress did.' }
     ],
-    reason: { C1: 'Congress passed a law, and what it is about is the federal courts. Nothing in the law takes away anyone’s right to speak, to worship, to publish or to gather.' } },
+    reason: { C1: 'Adding judges to a federal court is on the Constitution’s list, and the law takes no right away.' } },
 
   { id: 'b-reading', use: 'teach', tier: 'clean', setting: 'learning', topic: 'a list of books for every school', name: 'The book list',
     text: "Many parents say that students across the country read too little. The House and the Senate passed a bill that tells every school in every state which ten books its students must read in ninth grade.",
@@ -36,8 +36,8 @@ FC.cases('civics', 'u3', [
     text: "Seven hundred people had planned a peaceful march past the federal courthouse in their city. The House and the Senate have now passed a bill that bans every march on a street next to a federal building, even a peaceful one.",
     outcome: 'beyondcong', route: { D1: ['congress'], C1: ['barred'] },
     cues: { C1: 'a bill that bans every march on a street next to a federal building, even a peaceful one' },
-    reason: { C1: 'Congress passed a law, and the law is {cue:C1}. A march that is peaceful is a way of gathering, and the Constitution protects the right to gather peacefully. Whatever else the law is about, it takes that right away.' },
-    not: { outcome: 'enumerated', why: 'Congress passed a law with both chambers voting, which is true of every law. But a law that takes away a right is not on the Constitution’s list, whatever its subject.' } },
+    reason: { C1: 'The law is {cue:C1}, and a peaceful march is gathering, a right the Constitution protects.' },
+    not: { outcome: 'enumerated', why: 'Every law passes the House and the Senate, so the vote settles nothing. This law bans peaceful marches, and gathering peacefully is a protected right.' } },
 
   { id: 'l-mail-rates', use: 'teach', tier: 'clean', setting: 'community', topic: 'the price of posting a parcel',
     name: 'The parcel price',

@@ -10,7 +10,7 @@ FC.cases('ideology', 'u2', [
     cues: { D1: 'The company that owns the taxi licenses charges us a fortune to drive and keeps most of the fares, and we are with the drivers', C1: 'The company can keep its licenses. We ask for a law that caps what it can charge a driver, and a tax on its profits to pay for sick pay for every driver', C2: 'We ask for a law that caps what it can charge a driver' },
     reason: { D1: 'The text sets the drivers against the company that owns the licenses, and stands with the drivers: {cue:D1}.',
               C1: 'The company keeps its licenses, and a law and a tax are asked for: {cue:C1}.',
-              C2: 'The text asks the government for a cap: {cue:C2}. It says nothing about how power is won or held, or about the government itself.' },
+              C2: 'The text asks for a cap on what drivers pay: {cue:C2}. That is a plan for pay, and it says nothing about power or about getting rid of the government.' },
     not: { outcome: 'demsoc', why: 'The company keeps its licenses. A text that asked for them to pass to the government would be {o:demsoc}.' } },
 
   { id: 'c-ret-co1', use: 'return', tier: 'varied', setting: 'schooling', topic: 'school-bus drivers asking for a crowd at the gates',
@@ -29,5 +29,5 @@ FC.cases('ideology', 'u2', [
     reason: { D1: 'The text sets the nurses against the company that owns the clinics, and stands with the nurses: {cue:D1}.',
               C1: 'The clinics are to pass out of the company’s hands to the government: {cue:C1}.',
               C2: 'The nurses will accept the voters’ answer: {cue:C2}. The change is to come through an election they can lose.' },
-    not: { outcome: 'ml', why: 'The text hands the clinics to the government, as {o:ml} might. But it accepts the voters’ answer. A text that said a party would take power and keep it would be {o:ml}.' } }
+    not: { outcome: 'ml', why: 'This text hands the clinics to the government, as {o:ml} might, but it accepts the voters’ answer. A text that said a party would take power and keep it would be {o:ml}.' } }
 ]);

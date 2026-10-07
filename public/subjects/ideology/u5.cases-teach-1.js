@@ -19,12 +19,12 @@ FC.cases('ideology', 'u5', [
     cues: { D1: 'Each of us is free to buy from anyone and sell to anyone',
             R1: 'The government should keep the roads safe and the courts open, and otherwise leave traders alone' },
     segments: [
-      { text: 'Mirela Tosc has traded at the Eastgate market for thirty years', note: 'That says who she is. It says nothing about what she wants done.' },
-      { text: 'Each of us is free to buy from anyone and sell to anyone', note: 'That is the freedom she puts first. It says what each trader may do, and nothing yet about what she wants the government to do.' },
+      { text: 'Mirela Tosc has traded at the Eastgate market for thirty years', note: 'That says who she is, not what she wants done.' },
+      { text: 'Each of us is free to buy from anyone and sell to anyone', note: 'That is the freedom she puts first. It says what traders may do, not what the government should do.' },
       { text: 'The government should keep the roads safe and the courts open, and otherwise leave traders alone' }
     ],
-    reason: { D1: 'She says what each trader is free to do and puts it first: {cue:D1}. She sets no side against another.',
-              R1: 'She asks the government for a few jobs and no more: {cue:R1}. Nothing is asked of it for anyone beyond that.' } },
+    reason: { D1: 'She puts first what each trader is free to do: {cue:D1}.',
+              R1: 'She wants the government to keep the roads safe and the courts open, and to do nothing else.' } },
 
   { id: 'i5-modlib-meet', use: 'teach', tier: 'clean', setting: 'schooling', topic: 'a school and a doctor in every district', name: 'The fair-start leaflet',
     text: "From a leaflet of the Ashgrove Fair Start Group: 'Each person has the right to speak, to believe and to keep what they earn, and the government must protect those rights. But a right means little to a child who begins life with no school within reach and no doctor to call. We ask the government to give everyone a fair start: a school in every district, health care for anyone who is ill, help for anyone who loses work, and fair rules for the businesses that sell to us. We will all pay for it together, through our taxes.'",
@@ -38,9 +38,9 @@ FC.cases('ideology', 'u5', [
     outcome: 'modlib', route: { D1: ['rights'], R1: ['start'] },
     cues: { D1: 'Each of us is free to rent from whom we choose',
             R1: 'We ask the government to build homes that anyone can afford and to pay the rent of anyone between jobs' },
-    reason: { D1: 'She says what each person is free to do, and what that freedom needs: {cue:D1}. She names no side to be against.',
-              R1: 'She asks the government for more than protection: {cue:R1}. Homes and rent are to be given, and paid for together.' },
-    not: { outcome: 'clib', why: 'She does say that the government must protect each person’s freedom to rent. That is where {o:clib} would stop. She goes on to ask the government to give people homes and rent money.' } },
+    reason: { D1: 'She says what each person is free to do, and what that freedom needs: {cue:D1}.',
+              R1: 'She asks the government for more than protection: {cue:R1}. Homes and rent money are to be given, and paid for together.' },
+    not: { outcome: 'clib', why: 'She does ask the government to protect the freedom to rent, which is where {o:clib} would stop. But she goes on to ask for homes and rent money.' } },
 
   { id: 'i5-term-steps', use: 'teach', tier: 'clean', setting: 'town', topic: 'steps at a town hall entrance', name: 'The town-hall steps',
     text: "The Fennmoor town hall has a stone stair at its only entrance. The clerk says, 'Anyone may come in and apply for a permit, and the rules are exactly the same for each person.' Rafael uses a wheelchair and cannot get up the stair. The council builds a ramp at the side door, and only the people who need it will use it." },
@@ -53,11 +53,11 @@ FC.cases('ideology', 'u5', [
                  'We ask that the rules be changed, with a test day held in the villages, until results come out as fair for the villages as for the city'] } },
 
   { id: 'i5-idegal-check', use: 'check', tier: 'clean', setting: 'work', topic: 'a website form blind applicants cannot read',
-    text: "A disability charity wrote to the Eskmouth water company: 'Every application for a job here is made on one website form, the same for every applicant. The form cannot be read by the software that blind applicants use. It is fair on its face, and it shuts blind applicants out. We ask the company to change the form until blind applicants are hired as often as anyone.'",
+    text: "A disability charity wrote to Eskmouth city council about the city's water company: 'Every application for a job there is made on one website form, the same for every applicant. The form cannot be read by the software that blind applicants use. It is fair on its face, and it shuts blind applicants out. We ask the council to make the company change the form until blind applicants are hired as often as anyone.'",
     outcome: 'idegal', route: { D1: ['rights'], R1: ['rules'] },
     cues: { D1: 'until blind applicants are hired as often as anyone',
-            R1: ['It is fair on its face, and it shuts blind applicants out', 'We ask the company to change the form'] },
-    reason: { D1: 'The text wants blind applicants treated fairly, and says when that will be so: {cue:D1}. It sets no side against another.',
-              R1: 'The form treats every applicant alike, and the text says that this is what shuts one group out: {cue:R1}. It asks for the form to change, not for anyone to be given a school or a doctor.' },
-    not: { outcome: 'modlib', why: 'The text asks for something to change, as {o:modlib} does. But it asks for no school, no doctor and no help for everyone. It names one form that treats everyone alike and leaves one group out, and asks for that form to change.' } }
+            R1: ['It is fair on its face, and it shuts blind applicants out', 'We ask the council to make the company change the form'] },
+    reason: { D1: 'The text wants blind applicants treated fairly, and says when that will be so: {cue:D1}.',
+              R1: 'The form treats every applicant alike, and the text says that is what shuts one group out: {cue:R1}.' },
+    not: { outcome: 'modlib', why: 'Like {o:modlib}, the text asks for something to change. But it asks for no school or doctor for everyone: it blames one form that leaves one group out.' } }
 ]);

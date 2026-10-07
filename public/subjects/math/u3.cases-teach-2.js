@@ -19,11 +19,11 @@ FC.cases('math', 'u3', [
       { text: 'A rectangular play area is 4 m longer than it is wide, and its area is 77 m².' },
       {
         text: 'How wide is it?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
+        note: 'That is the question, not the link between the sides.'
       }
     ],
     reason: {
-      A1: 'The words {cue:A1} say that the length is the width plus 4, and the area is the width multiplied by the length, so the missing width is multiplied by itself as well as used on its own. That is {a:A1.itself}.'
+      A1: 'The words {cue:A1} make the length the width plus 4, so the missing width shows up twice in the area.'
     }
   },
 
@@ -48,7 +48,7 @@ FC.cases('math', 'u3', [
       },
       {
         text: 'How many crates must she sell to just break even, with a profit of zero?',
-        note: 'That is the question. The words you are asked to tap are in another sentence.'
+        note: 'That is the question. The words that settle it are in the first sentence.'
       }
     ]
   },
