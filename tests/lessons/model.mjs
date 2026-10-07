@@ -32,7 +32,7 @@ function keyLinesOf(key, steps) {
   return [
     ...key.outcomes.flatMap(o => [o.n, o.plain, o.needs]),
     ...(key.terms || []).flatMap(t => [t.n, t.means]),
-    ...steps.flatMap(s => [s.q, s.purpose, s.why, ...s.options.flatMap(o => [o.n, o.when])])
+    ...steps.flatMap(s => [s.q, s.why, ...s.options.flatMap(o => [o.n, o.when])])
   ].flatMap(paras).filter(Boolean);
 }
 
@@ -72,7 +72,7 @@ function keyProse(key) {
   const steps = [key.gate, ...Object.values(key.branches || {}).flat()].filter(Boolean);
   return {
     outcomes: key.outcomes.map(o => ({ plain: o.plain, needs: o.needs })),
-    steps: steps.map(s => ({ q: s.q, purpose: s.purpose, why: s.why,
+    steps: steps.map(s => ({ q: s.q, why: s.why,
       options: s.options.map(o => ({ when: o.when, plain: o.plain, needs: o.needs, say: (o.yieldsTo || []).map(t => t.say) })) })),
     terms: (key.terms || []).map(t => ({ means: t.means }))
   };

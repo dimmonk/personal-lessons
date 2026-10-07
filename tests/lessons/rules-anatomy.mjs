@@ -47,7 +47,7 @@ export const V12 = branchRule('V12', (u, check) => {
   for (const meet of u.cards.filter(c => c.kind === 'meet' && !c.continues)) {
     const where = `card ${meet.id}`;
     check(u.cases[meet.case].tier === 'clean', `${where}: its case must be clean`);
-    check(meet.strip.length >= 2, `${where}: strip needs at least two entries`);
+    check(meet.spot.length >= 2, `${where}: how to spot it needs at least two steps`);
     check(u.option(meet.feature.step, meet.feature.option).keeps.includes(meet.outcome), `${where}: feature.option does not keep ${meet.outcome}`);
     check(tokenIn(meet.name, 'o', meet.outcome), `${where}: name must contain {o:${meet.outcome}}`);
   }
@@ -117,7 +117,9 @@ function ledgerEntryProblems(u, l) {
   if (own.length === 0 && via) {
     const text = prose(via).map(([, s]) => s).join(' ');
     const afterMeets = l.pair.every(id => u.pos(via.id) > u.at('meet', c => c.outcome === id));
-    const names = l.pair.every(id => hasToken(text, 'o', id) || via.outcome === id);
+    // the question card of the pair's own step prints the pair by name itself, under "When two answers both seem to fit"
+    const printedByApp = via.kind === 'question' && via.step === l.step;
+    const names = printedByApp || l.pair.every(id => hasToken(text, 'o', id) || via.outcome === id);
     if (!afterMeets || !names) problems.push('its taughtIn card must come after both meet cards and name both outcomes');
   }
   return problems;
@@ -139,18 +141,6 @@ export const V16 = branchRule('V16', (u, check) => {
     for (const opt of u.step(code).options) {
       check(opt.keeps.some(id => { const m = u.at('meet', c => c.outcome === id); return m >= 0 && m < q; }), `${code}: the question card comes before any outcome kept by "${opt.n}" has been met`);
     }
-  }
-});
-
-/* ---------- V17: a purpose names no topic ---------- */
-const TOPIC_WORD_MIN = 4;
-const topicWords = u => new Set(u.caseList.flatMap(c => c.topic ? norm(c.topic).split(' ') : []).filter(w => w.length >= TOPIC_WORD_MIN));
-
-export const V17 = branchRule('V17', (u, check) => {
-  const topics = topicWords(u);
-  for (const s of u.unitSteps()) {
-    const hits = norm(joined(s.purpose)).split(' ').filter(w => topics.has(w));
-    check(hits.length === 0, `${s.code}: purpose contains the topic word(s) ${unique(hits).join(', ')}`);
   }
 });
 
@@ -335,4 +325,4 @@ export const V59 = unitRule('V59', (u, check) => {
   for (const o of u.taught) check(u.cards.some(c => ['meet', 'portrait'].includes(c.kind) && c.outcome === o && isFilled(c.act)), `${o}: an action subject says what to do when you meet it ("act" on its meet card or portrait)`);
 }, { kinds: BRANCH_LIKE });
 
-export const RULES_ANATOMY = [V59, V10, V11, V12, V13, V14, V15, V16, V17, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55, V57];
+export const RULES_ANATOMY = [V59, V10, V11, V12, V13, V14, V15, V16, V18, V20, V21, V22, V23, V24, V25, V26, V27, V51, V55, V57];

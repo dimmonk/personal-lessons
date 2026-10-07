@@ -43,18 +43,18 @@ function answerMiss(ask, c, code, chosenId){
   // the tie-break form is used only where the case really shows both answers, so two lines never contradict
   const tie = (c.also || []).includes(chosenId) && v.tieBreak(code, chosenId, right.id);
   if(tie && tie.loser === chosenId)
-    return `You chose ${T.kw(chosen.n)}. This case does show that. It also shows ${esc(tie.say)}, and when a case shows both, the answer is ${T.kw(right.n)}.`;
+    return `You chose ${T.kw(chosen.n)}. This ${SAY.example(v)} does show that. It also shows ${esc(tie.say)}, and when a ${SAY.example(v)} shows both, the answer is ${T.kw(right.n)}.`;
   // the nearest wrong name's reason is the line for its answer: in a gate unit the answer is that name, elsewhere the answer that leads only to it
   if(c.not && (chosen.id === c.not.outcome || (chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome)))
     return T.t(paras(c.not.why).join(' '), c);
-  return `You chose ${T.kw(chosen.n)}. Give that answer when ${esc(chosen.when)}. This case shows something else: ${esc(right.when.replace(/^the case shows /, ''))}.`;   // a gate's lines open with "the case shows"
+  return `You chose ${T.kw(chosen.n)}. Give that answer when ${esc(chosen.when)}. This ${SAY.example(v)} shows something else: ${esc(right.when)}.`;
 }
 // the one line about a wrong name: the case's own, else the nearest wrong name's reason, else built from the two names' needs
 function nameMiss(ask, c, chosenId){
   const { v, T } = ask, target = caseTarget(v, c);
   if(c.miss && c.miss[chosenId]) return T.t(paras(c.miss[chosenId]).join(' '), c);
   if(c.not && c.not.outcome === chosenId) return T.t(paras(c.not.why).join(' '), c);
-  return `${T.o(chosenId)} needs ${esc(v.thing(chosenId).needs)}. This case shows something else: ${esc(v.thing(target).needs)}.`;
+  return `${T.o(chosenId)} needs ${esc(v.thing(chosenId).needs)}. This ${SAY.example(v)} shows something else: ${esc(v.thing(target).needs)}.`;
 }
 function taughtOnLine(ask, what){
   const hit = ask.taughtOn ? ask.taughtOn(what) : null;
@@ -100,7 +100,7 @@ function caseFeedback(ask){
   ];
   if(own.length) rest.push(`<div class="vblock"><span class="m">Your answer</span>${own.map(l => `<p>${l}</p>`).join('')}</div>`);
   if(c.wouldChange && item.asked.length) rest.push(`<div class="vblock soft"><span class="m">${SAY.wouldChange}</span><p>${T.t(paras(c.wouldChange).join(' '), c)}</p></div>`);
-  if(item.stops) rest.push(`<p class="stopline">${SAY.stopsHere}</p>`);
+  if(item.stops) rest.push(`<p class="stopline">${SAY.stopsHere(SAY.example(ask.v))}</p>`);
   rest.push(taughtOnLine(ask, item.askName ? { name: target } : { step: last }));
   return out.join('') + foldRest(ask, res.ok, rest.join(''));
 }
@@ -177,7 +177,7 @@ function tellOptions(ask){
 function tellHtml(ask){
   const { v, T, item, state } = ask, entry = item.entry, [x, y] = entry.pair;
   const order = state.order.map(v.ledger);
-  const stem = `You cannot decide whether a case is ${T.o(x)} or ${T.o(y)}. Which question do you put to the case?`;
+  const stem = `You cannot decide whether a ${SAY.example(v)} is ${T.o(x)} or ${T.o(y)}. Which question do you put to it?`;
   if(state.picked === null) return promptStem(stem) + `<div class="opts">${order.map(l => `<button class="opt" data-pick="${esc(l.id)}">${T.t(paras(l.test).join(' '))}</button>`).join('')}</div></div>`;
   const ok = state.picked === entry.id, chosen = v.ledger(state.picked);
   return `<div class="stepopen prompt"><p class="stem">${stem}</p></div><div class="feedback">${answerHead(ok, T.t(paras(entry.test).join(' ')))}
@@ -189,7 +189,7 @@ function tellHtml(ask){
 /* ---------- the name is given: what would you expect to hear, or find? ---------- */
 function reverseHtml(ask){
   const { v, T, item, state } = ask, c = item.c;
-  const stem = `This is ${T.o(c.outcome)}. ${c.expect === 'hear' ? 'Which of these would you expect to hear?' : 'Which detail would you expect to find in the case?'}`;
+  const stem = `This is ${T.o(c.outcome)}. ${c.expect === 'hear' ? 'Which of these would you expect to hear?' : `Which detail would you expect to find in the ${SAY.example(v)}?`}`;
   const options = state.order.map(i => c.options[i]);
   if(state.picked === null) return promptStem(stem) + `<div class="opts">${state.order.map(i => `<button class="opt" data-pick="${i}">${esc(c.options[i].text)}</button>`).join('')}</div></div>`;
   const right = c.options.find(o => o.voice === c.outcome), chosen = c.options[state.picked], ok = chosen === right;
@@ -203,7 +203,7 @@ function reverseHtml(ask){
 function claimParts(ask, c){
   const { v, T } = ask;
   if(c.ask.type === 'missing') return {
-    question: `The claim uses the name ${T.o(c.ask.name)}. What would you need to see in the case before that name could be used?`,
+    question: `The claim uses the name ${T.o(c.ask.name)}. What would you need to see in the ${SAY.example(v)} before that name could be used?`,
     choices: v.taught.map(id => ({ id, html: esc(cap(v.thing(id).needs)) })),
     answer: c.ask.name
   };
@@ -231,7 +231,7 @@ function claimHtml(ask){
     + `<div class="opts">${parts.choices.map(x => `<button class="opt" data-pick="${esc(x.id)}">${x.html}</button>`).join('')}</div></div>`;
   const ok = state.picked === parts.answer, right = parts.choices.find(x => x.id === parts.answer);
   const own = ok ? '' : c.ask.type === 'missing'
-    ? `That is what you must be able to point to for ${T.o(state.picked)}, which is not the name the claim uses.`
+    ? `That is what you look for in ${T.o(state.picked)}, which is not the name the claim uses.`
     : `You chose ${T.kw(v.option(c.ask.step, state.picked).n)}. Give that answer when ${esc(v.option(c.ask.step, state.picked).when)}. This claim shows something else: ${esc(v.option(c.ask.step, parts.answer).when)}.`;
   return claimQuote(T, c) + `<div class="stepopen prompt"><p class="stem">${parts.question}</p></div>
     <div class="feedback">${answerHead(ok, right.html)}${own ? `<div class="vblock"><span class="m">Your answer</span><p>${own}</p></div>` : ''}${claimClosing(T, c)}</div>`;
@@ -250,7 +250,7 @@ function separatorItem(v, entryId){
 const answersText = (v, code, id) => joinWords(pairAnswers(v, code, id).map(o => o.n), 'or');
 function separatorHtml(ask){
   const { v, T, item, state } = ask, [x, y] = item.entry.pair;
-  const stem = SAY.separatorStem(T.o(x), T.o(y));
+  const stem = SAY.separatorStem(T.o(x), T.o(y), SAY.example(v));
   if(state.order === null) state.order = shuffled(item.codes);
   if(state.picked === null) return promptStem(stem)
     + `<div class="opts">${state.order.map(code => `<button class="opt" data-pick="${esc(code)}">${esc(v.step(code).q)}</button>`).join('')}</div></div>`;

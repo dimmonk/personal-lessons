@@ -3,6 +3,7 @@
 // Everything worded by the key is printed from the key here (lesson standard E1). Codes and ids are never shown.
 
 const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
+const isSteps = body => Array.isArray(body) && body.length > 0 && typeof body[0] === 'object';
 const cuesOf = (c, step) => c.cues && c.cues[step] ? paras(c.cues[step]) : [];
 const TOKEN = /\{(o|plain|needs|q|a|when|t|means|test|cue|f):([^}]+)\}/g;
 const lowerFirst = s => s.charAt(0).toLowerCase() + s.slice(1);
@@ -23,32 +24,34 @@ const unitLabel = (data, unitId) => 'Unit ' + (data.units[unitId] || lessonFail(
 // The wording the app owns: the same sentence in every unit, so no unit types it (lesson standard K9, E2, E3, E6).
 const SAY = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
-  route: 'Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.',
-  preview: n => `The question this unit teaches, with its answers. Beside each answer is what it leads to. Each card that follows explains one.`,
-  howTaught: 'Each starts from a real case. After each one you answer a quick question, and the reason is shown right away.',
-  pointTo: 'What you must be able to point to',
+  route: 'Two things are marked separately: the name you give a story, and your answers to the questions on the way to it.',
+  howTaught: example => `Each starts from a real ${example}. After each one you answer a quick question, and the reason is shown right away.`,
+  spotIt: 'How to spot it',
+  lookFor: 'What to look for',
   keyAsks: 'The question',
   aka: (akas, nameHtml) => `You may also hear this called ${joinWords(akas.map(x => '“' + esc(x) + '”'), 'or')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${nameHtml}.`,
-  againHeading: name => `${name}: the same thing in a different story`,
+  againHeading: (name, ex) => `${name}: the same thing in a different ${ex}`,
   portraitHeading: name => `${name}: what it is like`,
   lookalikeHeading: (x, y) => `${x} or ${y}: telling them apart`,
-  checkHeading: 'A question about a new case',
-  againStem: (firstName, firstCue) => `In <i>${esc(firstName)}</i>, these words show it: ${firstCue}${/[.?!]”$/.test(firstCue) ? '' : '.'} Which words show the same thing in this case? Tap them.`,
-  exceptionStem: (looks, is) => `This looks like ${looks}. Before you read why it is ${is}, tap the words in the case that settle it.`,
-  whichStem: answer => `Which case gives the answer ${answer}?`,
-  holdStem: (x, y) => `Why is this ${x} and not ${y}? Every statement below is true of the case. Before you read the reason, choose the one that settles it.`,
+  checkHeading: example => `A question about a new ${example}`,
+  // the learner's word for an example: a problem in a procedure unit, a story everywhere else
+  example: v => (v.meta && v.meta.example) || 'story',
+  againStem: (firstName, firstCue, ex) => `In <i>${esc(firstName)}</i>, these words show it: ${firstCue}${/[.?!]”$/.test(firstCue) ? '' : '.'} Which words show the same thing in this ${ex}? Tap them.`,
+  exceptionStem: (looks, is, ex) => `This looks like ${looks}. Before you read why it is ${is}, tap the words in the ${ex} that settle it.`,
+  whichStem: (answer, ex) => `Which ${ex} gives the answer ${answer}?`,
+  holdStem: (x, y) => `Why is this ${x} and not ${y}? All of these are true. Choose the one that settles it.`,
+  holdPick: 'All of these are true. Choose the one that settles it.',
   whyThisOne: 'Why this one and not the other',
   tellApart: 'How to tell them apart',
   sideBySide: 'Side by side',
-  tieBreak: (loser, say, winner) => `When a case shows both ${loser} and ${esc(say)}, the answer is ${winner}.`,
-  secondLook: 'Does it look like a case you know?',
+  tieBreak: (loser, say, winner, ex) => `When a ${ex} shows both ${loser} and ${esc(say)}, the answer is ${winner}.`,
+  secondLook: ex => `Does it look like a ${ex} you know?`,
   ask: 'The question to ask when you spot it',
   act: 'What to do when you meet it',
-  notOnRoute: 'Not asked for this one',
   transferNote: 'One line is enough. It is kept on this device only and is never marked.',
   draft: 'Draft: not yet read by a newcomer',
   endOfPart: (n, next) => `End of part ${n}. You can stop here; your place is kept. Next: part ${n + 1}, ${next}.`,
-  endOfUnit: tag => `End of Unit ${tag}. Every name comes back on later days with a new case: what you missed first, in a day or two, and the rest a little later.`,
+  endOfUnit: (tag, ex) => `End of Unit ${tag}. Every name comes back on later days with a new ${ex}: what you missed first, in a day or two, and the rest a little later.`,
   toDrill: 'Already know this unit? Go straight to the drill.',
   confused: 'This card confused me',
   confusedNoted: 'Noted, with this unit’s revision. It stays on this device.',
@@ -60,17 +63,17 @@ const SAY = {
   cardsNotReached: 'Not reached yet',
   theDrill: 'The drill',
   cardCount: n => `${n} cards`,
-  stopsHere: 'The rest of this case comes in a later unit.',
+  stopsHere: ex => `The rest of this ${ex} comes in a later unit.`,
   rightNameWrongRoute: 'Right name, wrong answer on the way',
   wouldChange: 'What would make it a different name',
-  drillIntro: (earlier, isFacts) => (isFacts ? 'The cards are out of view. Facts that are easy to swap sit next to each other on purpose. '
-      : 'The cards are out of view, and every case is new. Cases that are easy to mix up sit next to each other on purpose. ')
-    + (earlier ? `${cap(numWord(earlier))} of the cases come${earlier === 1 ? 's' : ''} from an earlier unit. ` : '')
+  drillIntro: (earlier, isFacts, example) => (isFacts ? 'The cards are out of view. Facts that are easy to swap sit next to each other on purpose. '
+      : `The cards are out of view, and every ${example} is new. Ones that are easy to mix up sit next to each other on purpose. `)
+    + (earlier ? `${cap(numWord(earlier))} of them come${earlier === 1 ? 's' : ''} from an earlier unit. ` : '')
     + 'Nothing is graded. What you miss comes back before the drill ends and on later days.',
   // fact units (A12)
   factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${numWord(facts)} fact${facts === 1 ? '' : 's'}, in ${numWord(groups)} group${groups === 1 ? '' : 's'}:`,
-  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away.',
+  howTaughtFacts: 'Each group starts with a story, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away.',
   factCheckHeading: 'A question from memory',
   factStem: q => esc(q),
   whichFactStem: answer => `Which of these two facts has the answer ${answer}?`,
@@ -87,10 +90,10 @@ const SAY = {
   workingLabel: 'The working, step by step',
   solveLast: does => `The working is shown up to the last step. The last step is yours: ${does}. Choose what the problem comes to.`,   // does: already filled and escaped (T.t)
   solveWhole: 'The whole problem is yours. Work it out, then choose the answer.',
-  solveRoute: 'Now work the problem with that procedure and choose the answer.',
+  solveRoute: 'Now work it out that way and choose the answer.',
   slipLine: (text, slip) => `You chose ${text}. That is the answer you get when ${slip}`,
   // separator items (E6)
-  separatorStem: (x, y) => `You cannot tell whether a case is ${x} or ${y}. Which question tells these two apart?`,
+  separatorStem: (x, y, ex) => `You cannot tell whether a ${ex} is ${x} or ${y}. Which question tells these two apart?`,
   separatorSame: (q, answers) => `You chose ${q}. Both of these give the answer ${answers}, so that question does not separate them.`,
   separatorSplit: (answers) => `That question gives ${answers}.`,
   // action subjects (E18, E21)
@@ -105,17 +108,17 @@ const SAY = {
   baselineReal: 'Real',
   baselineWrong: 'Something is wrong',
   baselineWhy: 'And why? In a line, if you like.',
-  baselineIntro: unit => `Before ${unit}, a few cases. For each one, say whether it is real or something is wrong with it, and why if you can. Nothing is shown about your answers until you finish ${unit}, and they are never scored. They only show where you started.`,
+  baselineIntro: unit => `Before ${unit}, a few stories. For each one, say whether it is real or something is wrong with it, and why if you can. Nothing is shown about your answers until you finish ${unit}, and they are never scored. They only show where you started.`,
   baselineKept: unit => `Kept. Nothing is shown about this one until you finish ${unit}.`,
-  baselineAfter: unit => `Before ${unit}, you were asked about these cases. Here is what each one was.`,
+  baselineAfter: unit => `Before ${unit}, you were asked about these stories. Here is what each one was.`,
   baselineSaid: said => `You said: ${said}.`,
   baselineWas: real => real ? 'It was real.' : 'Something was wrong with it.',
   // the faulty-claims tile (E14)
   claimsTitle: 'Faulty claims',
   claimsIntro: 'These are claims from the units you have finished. Each one has a fault, and each is asked from memory.',
   claimsTile: n => `${n} claim${n === 1 ? '' : 's'} from finished units`,
-  soundHead: 'Cases where nothing was wrong',
-  unsoundHead: 'Cases where something was wrong',
+  soundHead: 'Stories where nothing was wrong',
+  unsoundHead: 'Stories where something was wrong',
   stage: {
     last: () => 'Each problem is worked up to its last step. Do the last step.',
     whole: () => 'Work each problem out, then choose the answer.',
@@ -125,7 +128,7 @@ const SAY = {
     piece: () => 'One question at a time.',
     finish: shownCount => `${shownCount === 1 ? 'The first answer is shown.' : 'The first answers are shown.'} Answer the rest, then give the name.`,
     route: () => 'No help. Answer every question, then give the name.',
-    routeGate: () => 'No help. Name each case.',
+    routeGate: ex => `No help. Name each ${ex}.`,
     claimsAlone: () => 'Each is something a person might say. Find its fault before it is shown.',
     claim: () => 'Each is something a person might say. Find its fault before it is shown.'
   }
@@ -241,6 +244,9 @@ function lessonText(v){
   });
   const P = (text, c) => paras(text).map(p => t(p, c));
   const PP = (text, c) => P(text, c).map(p => `<p>${p}</p>`).join('');
+  // numbered steps: a bold action, then one short sentence of why
+  const S = (list, c) => `<ol class="lsteps">${list.map(s => `<li><b>${t(s.do, c)}</b> ${t(s.why, c)}</li>`).join('')}</ol>`;
+  const B = (body, c) => isSteps(body) ? S(body, c) : PP(body, c);
   // the case as shown, with the deciding words for the given questions marked. Marked words that overlap or touch
   // (two questions can be decided by the same stretch of the case) are shown as one mark.
   const marked = (c, markSteps) => {
@@ -262,7 +268,7 @@ function lessonText(v){
   const names = ids => joinWords(ids.map(o));
   // on a card read before some of these names are taught, a name not met yet is shown by its plain words (P3: nothing points forward)
   const namesAt = (ids, cardId) => joinWords(ids.map(id => !v.metBefore || v.metBefore(id, cardId) ? o(id) : esc(v.thing(id).plain)));
-  return { kw, o, q, a, t, P, PP, show, marked, caseName, names, namesAt, quoteCues };
+  return { kw, o, q, a, t, P, PP, S, B, show, marked, caseName, names, namesAt, quoteCues };
 }
 
 // Small HTML helpers shared by cards, checks, drill and feedback.

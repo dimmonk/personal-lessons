@@ -10,7 +10,7 @@ const REF_SAY = {
   namesHeading: 'Names',
   stopsHeading: 'Where these questions stop',
   alsoCalled: 'Also called',
-  namedCases: 'Named cases',
+  namedCases: 'Named stories',
   lookalikes: 'Look-alikes',
   plainWords: 'In plain words'
 };
@@ -40,7 +40,7 @@ function nameEntryHtml(sv, thing){
       <span class="ar" style="display:flex">${icon('chevron', 16)}</span></summary>
     <div class="fg-body lesson">
       ${lessonSection(REF_SAY.plainWords, `<p>${esc(cap(thing.plain))}.</p>`)}
-      ${lessonSection(SAY.pointTo, `<p>${esc(cap(thing.needs))}.</p>`)}
+      ${lessonSection(SAY.lookFor, `<p>${esc(cap(thing.needs))}.</p>`)}
       ${thing.aka && thing.aka.length ? lessonSection(REF_SAY.alsoCalled, `<p>${esc(joinWords(thing.aka, 'and'))}.</p>`) : ''}
       ${cases.length ? lessonSection(REF_SAY.namedCases, cases.join('')) : ''}
       ${lines.length ? lessonSection(REF_SAY.lookalikes, lines.join('')) : ''}

@@ -159,7 +159,7 @@ export async function testDueToday(env, width = 390) {
   check(answered >= set.n, `${answered} items were answered of ${set.n}`);
   check(await page.locator('.done-screen.results').count() === 1, 'the returned set did not end on the results screen');
   const results = await screenOf(page);
-  check(/That set is done/.test(results) && /Cases that came back today/.test(results) && /What comes back, and when/.test(results), `the results screen reads "${results.slice(0, 160)}"`);
+  check(/That set is done/.test(results) && /Stories that came back today/.test(results) && /What comes back, and when/.test(results), `the results screen reads "${results.slice(0, 160)}"`);
   await layout(env, page, `${width}px returned set results`);
   await shot(page, 'due-set-results');
   const items = await getStore(page, `pl:${t.subject}:items`), log = await getStore(page, 'pl:log');
@@ -387,7 +387,7 @@ export async function testDetermination(env, width = 390) {
   await env.openSubject(page, 'mini');
   await page.click('#screen [data-v="det"]');
   let text = await screenOf(page);
-  check(/No case is open to you yet/.test(text) && /Four more open with later units/.test(text), `with no unit done, the overview reads "${text.slice(0, 260)}"`);
+  check(/No story is open to you yet/.test(text) && /Four more open with later units/.test(text), `with no unit done, the overview reads "${text.slice(0, 260)}"`);
   check(await page.locator('#startDet').count() === 0 && await page.locator('#anyway').count() === 1, 'with no unit done, a case is offered by default');
   await layout(env, page, `${width}px determination, nothing open`);
   await shot(page, 'determination-nothing-open');
@@ -401,7 +401,7 @@ export async function testDetermination(env, width = 390) {
   await env.openSubject(page, 'mini');
   await page.click('#screen [data-v="det"]');
   text = await screenOf(page);
-  check(/Two cases are open to you now/.test(text) && /Two more open with later units/.test(text), `with one unit done, the overview reads "${text.slice(0, 260)}"`);
+  check(/Two stories are open to you now/.test(text) && /Two more open with later units/.test(text), `with one unit done, the overview reads "${text.slice(0, 260)}"`);
   await layout(env, page, `${width}px determination overview`);
   await shot(page, 'determination-overview');
   await page.click('#startDet');
@@ -412,7 +412,7 @@ export async function testDetermination(env, width = 390) {
   await shot(page, 'determination-worked');
   await page.click('#goOn');
   text = await screenOf(page);
-  check(/Question 1 of 4/.test(text) && text.includes('What kind of thing is this?') && !/\b(G1|B1|B2)\b/.test(text), 'the questions are not headed by number and text, or show a code');
+  check(/Question 1 of 4/.test(text) && text.includes('What are you looking at?') && !/\b(G1|B1|B2)\b/.test(text), 'the questions are not headed by number and text, or show a code');
   check(await page.locator('.feedback').count() === 0, 'feedback is on screen before an answer');
   await layout(env, page, `${width}px determination, first case`);
   await shot(page, 'determination-case');
@@ -464,7 +464,7 @@ export async function testRealDetermination(env, width = 390) {
     await env.openSubject(page, s.id);
     await page.click('#screen [data-v="det"]');
     let text = await screenOf(page);
-    check(/No case is open to you yet/.test(text) && text.includes(later) && await page.locator('#startDet').count() === 0, `${label}: with no unit done, the overview reads "${text.slice(0, 220)}"`);
+    check(/No story is open to you yet/.test(text) && text.includes(later) && await page.locator('#startDet').count() === 0, `${label}: with no unit done, the overview reads "${text.slice(0, 220)}"`);
     await page.click('#anyway');
     await page.click('#goOn');
     const anyway = await page.evaluate(() => ({ mode: DET.mode, names: DET.cur.item.names.length, queue: DET.queue.map(sp => sp.id) }));
@@ -569,7 +569,7 @@ export async function testProgress(env, width = 390) {
   await page.reload();
   await env.clickVisible(page, '[data-v="progress"]');
   const block = norm(await page.locator('[data-practice-record]').textContent());
-  check(block.includes('All first tries2 of 4 · 50%') && block.includes('Whole cases1 of 2 · 50%') && block.includes('Single questions1 of 2 · 50%'), `the practice record reads "${block.slice(0, 220)}"`);
+  check(block.includes('All first tries2 of 4 · 50%') && block.includes('Whole stories1 of 2 · 50%') && block.includes('Single questions1 of 2 · 50%'), `the practice record reads "${block.slice(0, 220)}"`);
   check(/Units started1/.test(block) && /Parts completed1/.test(block) && /Sets completed1/.test(block) && /Days returned2/.test(block), `the persistence figures read "${block.slice(200, 420)}"`);
   await layout(env, page, `${width}px progress`);
   await shot(page, 'progress');
@@ -640,7 +640,7 @@ export async function testSearch(env, width = 390) {
   const groups = await page.evaluate(() => Object.fromEntries([...document.querySelectorAll('.resgroup')].map(g => [g.querySelector('.m').textContent, [...g.querySelectorAll('.res .t')].map(t => t.textContent)])));
   check((groups.Names || []).filter(x => x === data.name).length === 1, `the name "${data.name}" is listed ${JSON.stringify(groups.Names)} under Names`);
   r = await search(data.teachText);
-  check(/Cases/.test(r), 'the text of a case on a card is not found');
+  check(/Stories/.test(r), 'the text of a story on a card is not found');
   r = await search(data.returnText);
   check(/Nothing matches/.test(r), 'the text of a return case, which the learner has not met, can be found');
   check(!!data.card, 'no card of the unit has a heading of its own to search for');
@@ -655,7 +655,7 @@ export async function testSearch(env, width = 390) {
   const mini = await withMini(env, width);
   await mini.page.evaluate(() => { INDEX = null; });
   await env.clickVisible(mini.page, '[data-v="search"]');
-  await mini.page.fill('#q', 'case sp-c');
+  await mini.page.fill('#q', 'story sp-c');
   await mini.page.click('.res >> nth=0');
   check(await mini.page.evaluate(() => APP.view === 'det' && DET.queue[0].id === 'sp-c'), 'a specimen result did not open that specimen in the determination');
   await mini.context.close();

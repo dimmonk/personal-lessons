@@ -11,18 +11,18 @@ export function registerActionUnit() {
       { id: 'invoice', group: 'pay', unit: 'u2', n: 'Fake invoice', plain: 'a bill for something you never ordered', needs: 'a bill from a sender you were expecting, with new account details', aka: [] },
       { id: 'prize', group: 'pay', unit: 'u2', n: 'Prize scam', plain: 'a prize you must pay to collect', needs: 'a payment asked for before a prize you never entered for', aka: [] },
       { id: 'realbill', group: 'pay', unit: 'u2', legit: true, n: 'Real bill', plain: 'a bill that is just a bill', needs: 'a bill from a sender you were expecting, to the account you always pay', aka: [] }],
-    gate: { code: 'D1', unit: 'u1', q: 'What is the message trying to get you to do?', purpose: 'Sorts messages by what they want from you', why: 'What a message wants decides what could go wrong.',
+    gate: { code: 'D1', unit: 'u1', q: 'What is the message trying to get you to do?', why: 'What a message wants decides what could go wrong.',
       options: [
         { id: 'pay', n: 'Pay money', plain: 'a request for money', needs: 'a request to pay, and an amount or an account', when: 'the message asks you to pay', keeps: ['invoice', 'prize', 'realbill'], aka: [] },
         { id: 'share', n: 'Share a secret', plain: 'a request for a code or password', needs: 'a request for a code, a password or a number only you should know', when: 'the message asks for a code or a password', keeps: [] },
         { id: 'fine', n: 'Nothing to do', plain: 'a message that asks for nothing risky', legit: true, needs: 'a message that only tells you something and asks for nothing', when: 'the message asks nothing of you', keeps: [] }] },
     branches: { pay: [
-      { code: 'R1', unit: 'u2', q: 'Were you expecting a payment request from this sender?', purpose: 'Sorts senders you know from senders you do not',
+      { code: 'R1', unit: 'u2', q: 'Were you expecting a payment request from this sender?',
         why: 'A request from someone you were expecting has a reason to exist; one from a stranger has to prove it.',
         options: [
           { id: 'yes', n: 'Expecting it', when: 'you have an account or an order with the sender', keeps: ['realbill', 'invoice'] },
           { id: 'no', n: 'Not expecting it', when: 'you have no account or order with the sender', keeps: ['prize'] }] },
-      { code: 'R2', unit: 'u2', q: 'Does the payment go to the account you always pay?', purpose: 'Sorts a usual account from a new one',
+      { code: 'R2', unit: 'u2', q: 'Does the payment go to the account you always pay?',
         why: 'A scam has to move the money somewhere new.',
         options: [
           { id: 'usual', n: 'The usual account', when: 'the account is the one you have always paid', keeps: ['realbill'] },
@@ -36,7 +36,7 @@ export function registerActionUnit() {
   // a branch case
   const b = (id, outcome, route, cues, text, extra) => ({ id, use: 'teach', tier: 'clean', setting: 'work', topic: id, text, outcome, route: { D1: ['pay'], ...route }, cues: { D1: cues.D1, ...cues },
     reason: { D1: 'The message asks {cue:D1}.', R1: 'On the sender: {cue:R1}.', R2: 'On the account: {cue:R2}.' },
-    not: { outcome: { invoice: 'prize', prize: 'realbill', realbill: 'invoice' }[outcome], why: 'It does not fit that name for this case.' }, ...extra });
+    not: { outcome: { invoice: 'prize', prize: 'realbill', realbill: 'invoice' }[outcome], why: 'It does not fit that name for this story.' }, ...extra });
   // a payment request, built from the outcome: who writes, and where the money goes
   const sureBill = (id, outcome, use, tier, extra) => {
     const stranger = outcome === 'prize', account = outcome === 'realbill' ? 'the account on every old bill' : 'a brand new account';
@@ -78,15 +78,15 @@ export function registerActionUnit() {
     sureBill('d2-inv2', 'invoice', 'drill', 'varied', { setting: 'money' }), sureBill('d2-prz2', 'prize', 'drill', 'varied', { setting: 'work' }), sureBill('d2-rb2', 'realbill', 'drill', 'misleading', { setting: 'home' }),
     ...rt('invoice'), ...rt('prize'), ...rt('realbill')
   ]);
-  const meet = (outcome, caseId, step, option) => ({ id: `meet-${outcome}`, kind: 'meet', outcome, link: 'Link.', case: caseId, mark: step, strip: ['one', 'two'], explain: 'Because {cue:R1}.',
+  const meet = (outcome, caseId, step, option) => ({ id: `meet-${outcome}`, kind: 'meet', outcome, link: 'Link.', case: caseId, mark: step, spot: [{ do: 'Find the first thing.', why: 'It decides.' }, { do: 'Find the second thing.', why: 'It confirms.' }], explain: 'Because {cue:R1}.',
     feature: { step, option }, name: 'The name is {o:' + outcome + '}.' });
   FC.cards(S, 'u1', [
     { id: 'orient', kind: 'orient', h: 'Orient', canDo: 'Do it.', everyday: 'Every day.', map: { branch: 'none' } },
-    { id: 'meet-pay', kind: 'meet', family: 'pay', link: 'Link.', case: 't-pay', mark: 'D1', strip: ['one', 'two'], explain: 'Because {cue:D1}.', feature: { step: 'D1', option: 'pay' }, name: 'The name is {o:pay}.' },
+    { id: 'meet-pay', kind: 'meet', family: 'pay', link: 'Link.', case: 't-pay', mark: 'D1', spot: [{ do: 'Find the first thing.', why: 'It decides.' }, { do: 'Find the second thing.', why: 'It confirms.' }], explain: 'Because {cue:D1}.', feature: { step: 'D1', option: 'pay' }, name: 'The name is {o:pay}.' },
     { id: 'check-pay', kind: 'check', after: 'pay', case: 't-pay2', ask: { type: 'phrase', step: 'D1', say: 'Tap the request.', answer: 'transfer the fee to this account' } },
-    { id: 'meet-share', kind: 'meet', family: 'share', link: 'Link.', case: 't-share', mark: 'D1', strip: ['one', 'two'], explain: 'Because {cue:D1}.', feature: { step: 'D1', option: 'share' }, name: 'The name is {o:share}.' },
+    { id: 'meet-share', kind: 'meet', family: 'share', link: 'Link.', case: 't-share', mark: 'D1', spot: [{ do: 'Find the first thing.', why: 'It decides.' }, { do: 'Find the second thing.', why: 'It confirms.' }], explain: 'Because {cue:D1}.', feature: { step: 'D1', option: 'share' }, name: 'The name is {o:share}.' },
     { id: 'check-share', kind: 'check', after: 'share', case: 't-share2', ask: { type: 'phrase', step: 'D1', say: 'Tap the request.', answer: 'confirm the code from your phone' } },
-    { id: 'meet-fine', kind: 'meet', family: 'fine', link: 'Link.', case: 't-fine', mark: 'D1', strip: ['one', 'two'], explain: 'Because {cue:D1}.', feature: { step: 'D1', option: 'fine' }, name: 'The name is {o:fine}.' },
+    { id: 'meet-fine', kind: 'meet', family: 'fine', link: 'Link.', case: 't-fine', mark: 'D1', spot: [{ do: 'Find the first thing.', why: 'It decides.' }, { do: 'Find the second thing.', why: 'It confirms.' }], explain: 'Because {cue:D1}.', feature: { step: 'D1', option: 'fine' }, name: 'The name is {o:fine}.' },
     { id: 'check-fine', kind: 'check', after: 'fine', case: 't-fine2', ask: { type: 'phrase', step: 'D1', say: 'Tap what the message says.', answer: 'the office is closed on Monday' } },
     { id: 'q-d1', kind: 'question', step: 'D1', h: 'The question', link: 'Link.', decides: 'It decides.', how: 'Look.' },
     { id: 'recap', kind: 'recap', h: 'Recap', link: 'Link.', carry: ['carry this'] },

@@ -1,6 +1,10 @@
 // The exact shapes of section 4 (S1 to S6), written once in the schema language of schema.mjs.
 import { str, text, int, bool, en, arr, map, obj, either, nullable } from './schema.mjs';
 
+// Numbered steps: each a bold action (do) and ONE short sentence of why (lesson standard section 20).
+const STEPS = arr(obj({ do: str, why: str }));
+const TEXT_OR_STEPS = either(text, STEPS);
+
 export const USES = ['teach', 'check', 'drill', 'return', 'baseline'];
 export const TIERS = ['clean', 'varied', 'misleading'];
 export const UNIT_KINDS = ['C', 'F', 'P'];
@@ -13,12 +17,12 @@ const strings = arr(str);
 export const SUBJECT = obj(
   { id: str, name: str, rev: int, standard: int, action: bool, blurb: text, units: strings, settings: strings,
     limits: arr(obj({ h: str, text }), { empty: true }), history },
-  { baseline: strings });
+  { baseline: strings, example: str });   // example: the learner's word for one example, if not "story" (math: "problem")
 
 // a gate answer is also a family (A15): it carries plain and needs as an outcome does, and legit where nothing is wrong (S1)
 const OPTION = obj({ id: str, n: str, when: text, keeps: arr(str, { empty: true }) },
   { yieldsTo: arr(obj({ option: str, say: text })), plain: str, needs: text, aka: arr(str, { empty: true }), legit: bool });
-const STEP = obj({ code: str, unit: str, q: str, purpose: text, why: text, options: arr(OPTION) });
+const STEP = obj({ code: str, unit: str, q: str, why: text, options: arr(OPTION) });
 // a subject made only of fact units has a key with no gate and no branches (S1)
 export const KEY = obj({
   outcomes: arr(obj({ id: str, group: str, unit: str, n: str, plain: str, needs: text, aka: arr(str, { empty: true }) }, { legit: bool }), { empty: true }),
@@ -65,11 +69,11 @@ export const CARDS = {
   orient: card('orient', { h: str, canDo: text, everyday: text }, { map: obj({ branch: str }), add: text }),
   term: card('term', { term: str, h: str, link: text, case: str, plain: text }, { after: text }),
   // meet, again and portrait are about an outcome, or in a gate unit about a family (A15)
-  meet: byThing('meet', { link: text, case: str, mark: str, strip: arr(text), explain: text, feature: obj({ step: str, option: str }), name: text }, { act: text }),
+  meet: byThing('meet', { link: text, case: str, mark: str, explain: text, feature: obj({ step: str, option: str }), name: text, spot: STEPS }, { act: TEXT_OR_STEPS }),
   again: byThing('again', { link: text, first: str, second: str, step: str, instruction: text, prompt: commit.phrase, shared: text }, { h: str }),
   lens: card('lens', { h: str, link: text, body: text, fixed: text, varies: strings }),
   // act: what to do when you meet it; required in an action subject's branch units (P26, V59)
-  portrait: byThing('portrait', { link: text, typical: arr(text), not: text, wild: strings, self: text, ask: text }, { h: str, act: text }),
+  portrait: byThing('portrait', { link: text, typical: arr(text), not: text, wild: strings, self: text, ask: text }, { h: str, act: TEXT_OR_STEPS }),
   // a check holds one case and one question; in a fact unit one row of the facts card before it, with no case (S4)
   check: card('check', { after: str, ask: either(
     obj({ type: en('phrase'), step: str, say: text, answer: str }),
@@ -83,7 +87,7 @@ export const CARDS = {
     card('lookalike', { ledger: str, h: str, link: text, facts: arr(str), instruction: text, prompt: obj({ kind: en('which'), answer: str }), difference: text })),
   exception: card('exception', { ledger: str, looksLike: str, is: str, h: str, link: text, case: str, setup: text, prompt: commit.phrase, because: text }, { take: text }),
   refute: card('refute', { about: str, h: str, link: text, idea: str, verdict: text, right: text, testedBy: strings }),
-  question: card('question', { step: str, h: str, link: text, decides: text, how: text }, { whenBoth: text }),
+  question: card('question', { step: str, h: str, link: text, decides: text, how: TEXT_OR_STEPS }, { whenBoth: text }),
   worked: card('worked', { h: str, link: text, case: str, steps: arr(obj({ step: str, reason: text })),
     hold: obj({ neighbor: str, prompt: commit.reason, reason: text }),
     impression: obj({ resembles: str, text }, { first: str }) }),

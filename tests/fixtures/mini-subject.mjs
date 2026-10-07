@@ -12,8 +12,8 @@ export function registerMiniSubject() {
     settings: ['work', 'home', 'money'], limits: [{ h: 'It is a test subject', text: 'Nothing here says anything about the world.' }],
     history: [{ rev: 1, date: '2026-10-05', change: 'fixture' }] });
 
-  const step = (code, unit, q, a, b) => ({ code, unit, q, purpose: `Sorts ${a.id} from ${b.id}.`, why: `${a.n} and ${b.n} need different things.`, options: [a, b] });
-  const opt = (id, n, keeps) => ({ id, n, when: `the case says ${n.toLowerCase()}`, keeps });
+  const step = (code, unit, q, a, b) => ({ code, unit, q, why: `${a.n} and ${b.n} need different things.`, options: [a, b] });
+  const opt = (id, n, keeps) => ({ id, n, when: `the story says ${n.toLowerCase()}`, keeps });
   FC.key(S, {
     outcomes: [
       { id: 'oa', group: 'x', unit: 'u1', n: 'Alpha reading', plain: 'big and loud', needs: 'a big thing that is loud', aka: ['the first one'] },
@@ -21,8 +21,8 @@ export function registerMiniSubject() {
       { id: 'oc', group: 'x', unit: 'u2', n: 'Gamma reading', plain: 'small and loud', needs: 'a small thing that is loud', aka: [] },
       { id: 'od', group: 'x', unit: 'u2', n: 'Delta reading', plain: 'small and quiet', needs: 'a small thing that is quiet', aka: [], legit: true }],
     terms: [], avoid: [],
-    gate: { code: 'G1', unit: 'u1', q: 'What kind of thing is this?', purpose: 'Sorts kind X from kind Y.', why: 'The next questions depend on the kind.',
-      options: [{ id: 'x', n: 'Kind X', when: 'the case shows kind X', keeps: ['oa', 'ob', 'oc', 'od'] }, { id: 'y', n: 'Kind Y', when: 'the case shows kind Y', keeps: [] }] },
+    gate: { code: 'G1', unit: 'u1', q: 'What are you looking at?', why: 'The next questions depend on the kind.',
+      options: [{ id: 'x', n: 'Kind X', when: 'the story shows kind X', keeps: ['oa', 'ob', 'oc', 'od'] }, { id: 'y', n: 'Kind Y', when: 'the story shows kind Y', keeps: [] }] },
     branches: { x: [
       step('B1', 'u1', 'Is it big or small?', opt('big', 'It is big', ['oa', 'ob']), opt('small', 'It is small', ['oc', 'od'])),
       step('B2', 'u2', 'Is it loud or quiet?', opt('loud', 'It is loud', ['oa', 'oc']), opt('quiet', 'It is quiet', ['ob', 'od']))] }
@@ -33,8 +33,8 @@ export function registerMiniSubject() {
   const NEAR = { oa: 'ob', ob: 'oa', oc: 'od', od: 'oc' };
   const make = (id, outcome, use, tier, setting, extra) => {
     const [size, noise] = OUT[outcome];
-    return { id, use, tier, setting, topic: id, text: `${setting} case ${id}: it was ${size} and ${noise} all at once, and that was the whole thing.`, outcome,
-      route: { G1: ['x'], B1: [size], B2: [noise] }, cues: { G1: `case ${id}`, B1: `it was ${size}`, B2: `${noise} all at once` },
+    return { id, use, tier, setting, topic: id, text: `${setting} story ${id}: it was ${size} and ${noise} all at once, and that was the whole thing.`, outcome,
+      route: { G1: ['x'], B1: [size], B2: [noise] }, cues: { G1: `story ${id}`, B1: `it was ${size}`, B2: `${noise} all at once` },
       reason: { G1: 'It is a thing of one kind: {cue:G1}.', B1: 'Look at the size: {cue:B1}.', B2: 'Look at the noise: {cue:B2}.' },
       not: { outcome: NEAR[outcome], why: 'The other name needs a different noise than {cue:B2}, or a different size than {cue:B1}.' }, ...extra };
   };
@@ -43,15 +43,15 @@ export function registerMiniSubject() {
       make(`r${o}1`, o, 'return', 'clean', 'money'), make(`r${o}2`, o, 'return', 'varied', 'work'), make(`r${o}3`, o, 'return', 'varied', 'home')]),
     ...taught.map(o => make(`t${o}`, o, 'teach', 'clean', 'money', { name: `The ${OUT[o].join(' and ')} one` }))];
   FC.cases(S, 'u1', forUnit(['oa', 'ob'], ['oa']));
-  FC.cases(S, 'u2', [...forUnit(['oc', 'od'], ['oc']), make('wc', 'oc', 'teach', 'clean', 'home', { name: 'A whole case' })]);
+  FC.cases(S, 'u2', [...forUnit(['oc', 'od'], ['oc']), make('wc', 'oc', 'teach', 'clean', 'home', { name: 'A whole story' })]);
 
-  const ledger = (id, pair, st) => ({ id, pair, step: st, shared: `Both are ${OUT[pair[0]][0]} or ${OUT[pair[1]][0]}.`, rule: `{o:${pair[0]}} and {o:${pair[1]}} differ in one answer.`, test: 'Which answer does the case give?' });
-  const orient = id => ({ id, kind: 'orient', h: 'Where this unit starts', canDo: 'Say which reading a case has.', everyday: 'Things are big or small, loud or quiet.', map: { branch: 'x' } });
+  const ledger = (id, pair, st) => ({ id, pair, step: st, shared: `Both are ${OUT[pair[0]][0]} or ${OUT[pair[1]][0]}.`, rule: `{o:${pair[0]}} and {o:${pair[1]}} differ in one answer.`, test: 'Which answer does the story give?' });
+  const orient = id => ({ id, kind: 'orient', h: 'Where this unit starts', canDo: 'Say which reading a story has.', everyday: 'Things are big or small, loud or quiet.', map: { branch: 'x' } });
   FC.cards(S, 'u1', [orient('orient-1')]);
-  FC.cards(S, 'u2', [orient('orient-2'), { id: 'worked-c', kind: 'worked', h: 'A whole case, start to end', link: 'Here is one whole case.', case: 'wc',
+  FC.cards(S, 'u2', [orient('orient-2'), { id: 'worked-c', kind: 'worked', h: 'A whole story, start to end', link: 'Here is one whole story.', case: 'wc',
     steps: ['G1', 'B1', 'B2'].map(code => ({ step: code, reason: `Reason for ${code}: {cue:${code}}.` })),
     hold: { neighbor: 'od', prompt: { kind: 'reason', choices: [{ id: 'p', text: 'It is loud.' }, { id: 'q', text: 'It is small.', note: 'That is true of both.' }], answer: 'p' }, reason: 'The noise settles it.' },
-    impression: { resembles: 'toc', text: 'It looks like a case you know.' } }]);
+    impression: { resembles: 'toc', text: 'It looks like a story you know.' } }]);
   const unit = (id, tag, title, steps, outcomes, assumes, ledgerEntries, cards, rungs, returns) => FC.unit(S, id, {
     kind: 'C', rev: 1, standard: 1, status: 'draft', tag, title: { text: title }, subtitle: 'A fixture unit', teaches: { steps, outcomes, terms: [] }, assumes,
     ledger: ledgerEntries, parts: [{ id: 'p1', title: 'Everything', cards, drill: true, close: [] }], drill: { key: id, rungs, returns },

@@ -36,6 +36,13 @@ export const STRUCTURAL_IN = /\.(route|cues|segments\.\d+\.text|pair|among|teste
 const QUOTED = /^\.text$|\.(idea|wild\.\d+|options\.\d+\.text)$/;
 export const prose = obj => [...strings(obj)].filter(([p]) => !STRUCTURAL.test(p) && !STRUCTURAL_IN.test(p) && !QUOTED.test(p));
 
+// How many sentences a piece of text holds: tokens count as words, and the usual abbreviations do not end a sentence.
+const ABBREVIATIONS = /\b(Mr|Mrs|Ms|Dr|St|Jr|Sr|vs|etc|e\.g|i\.e|U\.S|a\.m|p\.m|No)\./g;
+export const sentenceCount = text => {
+  const plain = stripTokens(text, 'x').replace(ABBREVIATIONS, '$1').replace(/\d\.\d/g, '0').trim();
+  return plain ? plain.split(/[.!?][’”'")]*\s+(?=[A-Z“"‘'(0-9$])/).length : 0;
+};
+
 // Comparison form: no capitals, no punctuation, single spaces.
 // a possessive "’s" is dropped first, so "House’s" is not read as "houses"
 export const norm = s => s.toLowerCase().replace(/[’']s\b/g, '').replace(/[’']/g, '').replace(/[^a-z0-9£ ]+/g, ' ').replace(/\s+/g, ' ').trim();

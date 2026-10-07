@@ -6,8 +6,8 @@
 
 const DUE_SAY = {
   title: 'Due today',
-  tile: n => `${cap(numWord(n))} name${n === 1 ? ' is' : 's are'} due. Each comes back on a case you have not seen, next to the case it is most often taken for. A set is at most six cases.`,
-  none: 'There is nothing to ask right now. A name comes back on a later day, and the cases it can come back on are used up when you have seen them.',
+  tile: n => `${cap(numWord(n))} name${n === 1 ? ' is' : 's are'} due. Each comes back on a story you have not seen, next to the story it is most often taken for. A set is at most six stories.`,
+  none: 'There is nothing to ask right now. A name comes back on a later day, and the stories it can come back on are used up when you have seen them.',
   planHeading: 'Your plan',
   planNote: saved => `You saved this on ${saved}. It is shown back once, with a returned set.`,
   planChange: 'Change it'

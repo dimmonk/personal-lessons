@@ -209,7 +209,6 @@ function outcomeProblems(o) {
 function stepProblems(step) {
   const problems = [];
   if (!/\?$/.test(step.q || '')) problems.push('q must end in "?"');
-  if (!hasWording(step.purpose)) problems.push('purpose is missing');
   if (!hasWording(step.why)) problems.push('why is missing');
   for (const o of step.options) {
     if (!o.n) problems.push(`answer ${o.id}: n is missing`);

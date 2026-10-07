@@ -5,16 +5,16 @@
 // asked and marked by the engine's own asking code (ask.js: askHtml, wireAsk), so the verdict is the one of E5 and E7.
 
 const DET_SAY = {
-  title: 'Name a case',
-  how: 'For each case, answer the questions in order, from the first, and then give the name. The name and your answers on the way are marked separately: a right name reached by a wrong answer on the way counts as a miss. ' + SAY.stakes,
-  open: n => `${cap(numWord(n))} case${n === 1 ? ' is' : 's are'} open to you now, because the unit that teaches ${n === 1 ? 'its name is' : 'their names are'} done.`,
-  none: 'No case is open to you yet: each opens when the unit that teaches its name is done.',
+  title: 'Name a story',
+  how: 'For each story, answer the questions in order, from the first, and then give the name. The name and your answers on the way are marked separately: a right name reached by a wrong answer on the way counts as a miss. ' + SAY.stakes,
+  open: n => `${cap(numWord(n))} ${n === 1 ? 'story is' : 'stories are'} open to you now, because the unit that teaches ${n === 1 ? 'its name is' : 'their names are'} done.`,
+  none: 'No story is open to you yet: each opens when the unit that teaches its name is done.',
   later: n => `${cap(numWord(n))} more open${n === 1 ? 's' : ''} with later units.`,
   anyway: 'Try one anyway',
-  anywayNote: 'These cases use names you have not been taught yet. Every name in the subject is offered, and a miss only decides what comes back.',
+  anywayNote: 'These stories use names you have not been taught yet. Every name in the subject is offered, and a miss only decides what comes back.',
   start: 'Start',
   workedHeading: 'One worked for you first',
-  workedLead: 'This one is worked for you before the first that is yours: every question the case is asked, in order, then the name. Nothing is asked of you.',
+  workedLead: 'This one is worked for you before the first that is yours: every question the story is asked, in order, then the name. Nothing is asked of you.',
   keyMap: 'All the questions, as a map',
   done: 'That set is done',
   firsts: 'These are your first tries. ' + SAY.stakes
@@ -123,9 +123,9 @@ function paintDetAsk(subj, sv){
   const { item, state } = DET.cur, view = detView(sv), T = lessonText(view);
   const ask = { v: view, T, item, state, taughtOn: what => detTaughtOn(sv, what) };
   const paint = () => {
-    detFrame(subj, `Case ${DET.i + 1} of ${DET.queue.length}`, `${DET.mode === 'anyway' ? `<p class="forline">${esc(DET_SAY.anywayNote)}</p>` : ''}
+    detFrame(subj, `Story ${DET.i + 1} of ${DET.queue.length}`, `${DET.mode === 'anyway' ? `<p class="forline">${esc(DET_SAY.anywayNote)}</p>` : ''}
       <div id="detcase">${askHtml(ask)}</div>${keyDetails(sv)}`,
-      `<div class="actbar">${state.done ? `<button class="btn" id="next">${DET.i === DET.queue.length - 1 ? 'Finish' : 'Next case'}${icon('arrow')}</button>`
+      `<div class="actbar">${state.done ? `<button class="btn" id="next">${DET.i === DET.queue.length - 1 ? 'Finish' : 'Next story'}${icon('arrow')}</button>`
         : `<button class="btn ghost" id="skip">Skip for now</button>`}</div>`);
     wireAsk(screenEl(), ask, paint, outcome => {
       recordTry(subj.id, 'spec', sp.id, sv.meta.rev, { mode: 'spec', context: 'unit', steps: outcome.steps, name: outcome.name, ok: outcome.ok });
@@ -143,7 +143,7 @@ function paintDetDone(subj, sv){
   detFrame(subj, DET_SAY.title, `<div class="done-screen results"><h2>${DET_SAY.done}</h2><p>${esc(DET_SAY.firsts)}</p>
     <table class="k results"><tr><td>Names right</td><td>${a(firsts.filter(t => t.nameOk).length, firsts.length)}</td></tr>
       <tr><td>Routes right</td><td>${a(firsts.filter(t => t.routeOk).length, firsts.length)}</td></tr></table></div>`,
-    `<div class="actbar"><button class="btn" id="again">Back to the cases</button>
+    `<div class="actbar"><button class="btn" id="again">Back to the stories</button>
       <button class="btn ghost" data-v="subject">Back to ${esc(subj.name)}</button></div>`);
   on('#again', () => { DET = null; render(); });
 }
@@ -165,6 +165,6 @@ function detCard(subj){
     <div class="statrow"><span class="stat"><b>${stats.n}/${stats.total}</b><span>Met</span></span>
       <span class="stat"><b>${stats.n ? stats.nameRight : '&mdash;'}</b><span>Name</span></span>
       <span class="stat"><b>${stats.n ? stats.routeRight : '&mdash;'}</b><span>Answers</span></span></div>
-    <button class="btn ghost sm" data-v="det">${stats.n ? 'Go on naming cases' : 'Name a case'}</button>
+    <button class="btn ghost sm" data-v="det">${stats.n ? 'Go on naming stories' : 'Name a story'}</button>
   </div></div>`;
 }

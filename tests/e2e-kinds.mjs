@@ -306,7 +306,7 @@ async function probeAction(env) {
   await gotoDrill(page);
   const asked = await playDrill(page);
   results = await unitText(page);
-  out.legitResults = /Cases where nothing was wrong/.test(results) && /Cases where something was wrong/.test(results) && asked.some(a => a.id === 'd1-fine');
+  out.legitResults = /Stories where nothing was wrong/.test(results) && /Stories where something was wrong/.test(results) && asked.some(a => a.id === 'd1-fine');
   // the late return: a fourth return about twelve weeks after the third (each return on a case of its own, as the schedule counts first tries)
   await seedTries(page, S, 'u1', [['d1-pay', 100, true, 'unit', 'route', null, { D1: 'pay' }], ['rt1-pay-1', 98, true, 'return', 'route', null, { D1: 'pay' }], ['rt1-pay-2', 91, true, 'return', 'route', null, { D1: 'pay' }], ['rt1-pay-3', 66, true, 'return', 'route', null, { D1: 'pay' }]]);
   out.lateReturn = await safe(() => page.evaluate(S => { const s = returnState(unitView(S, 'u1'), 'u1', 'pay'); return s.level === 3 && s.due === addDays(today(), -66 + 84); }, S));
@@ -332,7 +332,7 @@ async function probeSeparator(env) {
   const opts = (await page.locator('#host .opt').allTextContents()).map(norm).sort();
   // the question the key itself says separates the pair: the one on which the two share no answer
   const truth = await page.evaluate(() => { const v = unitView('acttest', 'u2'), [x, y] = v.ledger('invoice~prize').pair; return v.unitSteps.filter(s => !s.options.some(o => o.keeps.includes(x) && o.keeps.includes(y))).map(s => s.q); });
-  out.separatorAsked = /You cannot tell whether a case is Fake invoice or Prize scam\. Which question tells these two apart\?/.test(stem)
+  out.separatorAsked = /You cannot tell whether a story is Fake invoice or Prize scam\. Which question tells these two apart\?/.test(stem)
     && JSON.stringify(opts) === JSON.stringify(['Does the payment go to the account you always pay?', 'Were you expecting a payment request from this sender?']) && truth.length === 1 && !(await page.locator('#host .feedback').count());
   out.separatorRight = await safe(async () => {
     await page.click(`#host .opt >> text="${truth[0]}"`);

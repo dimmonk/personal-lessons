@@ -47,13 +47,13 @@ function paintResults(){
   const q = APP.query.trim();
   if(!q){
     box.innerHTML = `<p class="empty">Everything is searchable &mdash; subject names, unit titles,
-      the names and questions in each subject, the cases on the cards and the whole cases for naming.</p>`;
+      the names and questions in each subject, the stories on the cards and the whole stories for naming.</p>`;
     return;
   }
   const hits = searchIndex().filter(e => e.t.toLowerCase().includes(q.toLowerCase()));
   if(!hits.length){ box.innerHTML = `<p class="empty">Nothing matches &ldquo;${esc(q)}&rdquo;.</p>`; return; }
 
-  const order = ['Subjects','Units','Cards','Names','Questions','Cases','Whole cases'];
+  const order = ['Subjects','Units','Cards','Names','Questions','Stories','Whole stories'];
   const groups = order.map(g => [g, hits.filter(h => h.g === g)]).filter(([,list]) => list.length);
   let n = 0;
 
@@ -95,7 +95,7 @@ function unitSearchEntries(subj, unitId){
   const cards = v.cardOrder.map(v.card).filter(card => !card.continues).map(card => ({ g: 'Cards', s: subj, t: plainOf(cardHeading(v, T, card)),
     sub: `${where} · card ${v.cardOrder.indexOf(card.id) + 1}`, go: () => openCardAt(subj, at, card.id) }));
   const cases = v.casesOf(unitId).filter(c => !c.kind && (c.use === 'teach' || c.use === 'check') && c.text)
-    .map(c => ({ g: 'Cases', s: subj, t: c.text, quote: true, sub: `${where} · ${c.name || 'a case on a card'}`, go: () => openUnit(subj, at) }));
+    .map(c => ({ g: 'Stories', s: subj, t: c.text, quote: true, sub: `${where} · ${c.name || 'a story on a card'}`, go: () => openUnit(subj, at) }));
   return [...cards, ...cases];
 }
 function subjectSearchEntries(subj){
@@ -103,7 +103,7 @@ function subjectSearchEntries(subj){
   const steps = [sv.key.gate, ...sv.key.gate.options.flatMap(o => sv.key.branches[o.id] || [])];
   const names = mapNames(sv).map(t => ({ g: 'Names', s: subj, t: t.n, sub: `${subj.name} · ${t.plain}`, go: () => openReference(subj) }));
   const questions = steps.map(step => ({ g: 'Questions', s: subj, t: step.q, sub: `${subj.name} · a question`, go: () => openReference(subj) }));
-  const specimens = sv.data.specimens.map((sp, i) => ({ g: 'Whole cases', s: subj, t: sp.text, quote: true,
-    sub: `${subj.name} · case ${pad2(i + 1)}`, go: () => openSpecimen(subj.id, sp.id) }));
+  const specimens = sv.data.specimens.map((sp, i) => ({ g: 'Whole stories', s: subj, t: sp.text, quote: true,
+    sub: `${subj.name} · story ${pad2(i + 1)}`, go: () => openSpecimen(subj.id, sp.id) }));
   return [...sv.unitIds().flatMap(unitId => unitSearchEntries(subj, unitId)), ...names, ...questions, ...specimens];
 }

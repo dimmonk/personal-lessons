@@ -2,7 +2,7 @@
 // What each card kind shows (lesson standard E2) and the prompts that make the learner commit before the
 // explanation exists on the screen (E3). A card is data; this file is the only place that lays one out.
 //
-// ctx = { v, T, cardId, index, ledgerRead:Set, namedSteps:Set, firstWorked:cardId, ui, answer(choice), record(itemId, attempt) }
+// ctx = { v, T, cardId, index, ledgerRead:Set, namedSteps:Set, ui, answer(choice), record(itemId, attempt) }
 // ui  = this visit's state for the card: { picked, step }. Nothing is in the page before a choice is made.
 
 /* ---------- pieces shared by several kinds ---------- */
@@ -45,36 +45,22 @@ function factPairTable(ctx, entry){
 function pairAnswers(v, code, id){
   return v.isOutcome(id) ? v.answersFor(code, id) : (v.key.gate && code === v.key.gate.code ? [v.option(code, id)] : []);
 }
-// the questions on a look-alike pair's routes, in the key's order: for two names of one branch, that branch's questions;
-// for a pair from two branches (lesson standard S3), each one's own questions too. Only questions the learner has been taught.
-function pairSteps(v, entry){
-  const [x, y] = entry.pair;
-  const taught = s => s.unit === v.unitId || v.unit.assumes.includes(s.unit);
-  return v.steps.filter(s => taught(s) && (pairAnswers(v, s.code, x).length || pairAnswers(v, s.code, y).length));
-}
-function pairTable(ctx, entry){
-  if(entry.pair.every(ctx.v.isFact)) return factPairTable(ctx, entry);
-  const { v } = ctx, [x, y] = entry.pair;
-  const cell = (code, id) => pairAnswers(v, code, id).length ? esc(pairAnswers(v, code, id).map(o => o.n).join(' / ')) : `<i>${SAY.notOnRoute}</i>`;
-  return `<table class="k pair"><tr><th></th><th>${esc(v.nameOf(x))}</th><th>${esc(v.nameOf(y))}</th></tr>`
-    + pairSteps(v, entry).map(s => `<tr><td>${esc(s.q)}</td><td>${cell(s.code, x)}</td><td>${cell(s.code, y)}</td></tr>`).join('')
-    + `<tr><td>${SAY.pointTo}</td><td>${esc(cap(v.thing(x).needs))}</td><td>${esc(cap(v.thing(y).needs))}</td></tr></table>`;
-}
 // the key's own tie-break for a look-alike pair, if it has one
 function tieLine(ctx, entry){
   const { v, T } = ctx;
   if(!entry.pair.every(v.isOutcome)) return null;
   const [x, y] = entry.pair.map(id => v.answersFor(entry.step, id)[0].id);
   const tie = v.tieBreak(entry.step, x, y);
-  return tie ? SAY.tieBreak(T.a(entry.step, tie.loser), tie.say, T.a(entry.step, tie.winner)) : null;
+  return tie ? SAY.tieBreak(T.a(entry.step, tie.loser), tie.say, T.a(entry.step, tie.winner), SAY.example(v)) : null;
 }
-// "How to tell them apart": the test on every card of the pair; the side-by-side table once, on its first card.
+// "How to tell them apart": the test on every card of the pair. Two facts also get their side-by-side table, once, on
+// the pair's first card; two names do not: the card's own two stories and the test already show the difference.
 function tellApart(ctx, entry, withTie){
   const { v, T } = ctx;
   const tie = withTie ? tieLine(ctx, entry) : null;
   const firstCard = v.cardOrder.find(id => v.card(id).ledger === entry.id);
   return lessonSection(SAY.tellApart, `<p>${T.t(entry.test)}</p>${tie ? `<p>${tie}</p>` : ''}`)
-    + (firstCard === ctx.cardId ? lessonSection(SAY.sideBySide, pairTable(ctx, entry)) : '');
+    + (firstCard === ctx.cardId && entry.pair.every(v.isFact) ? lessonSection(SAY.sideBySide, factPairTable(ctx, entry)) : '');
 }
 
 /* ---------- one function per card kind ---------- */
@@ -100,19 +86,18 @@ CARD.orient = (ctx, card) => {
     out.push(lessonSection(`What ${unitLabel(v.data, s.unit)} taught, in one place`,
       `<p>The first question is ${T.q(s.code)} Its answers:</p>`
       + lessonList(s.options.map(opt => `${T.a(s.code, opt.id)}: give this answer when ${esc(opt.when)}.`
-          + (opt.id === card.map.branch ? ' <b class="here">This unit is about these cases.</b>' : '')))
+          + (opt.id === card.map.branch ? ` <b class="here">This unit is about these ${SAY.example(v) === 'problem' ? 'problems' : 'stories'}.</b>` : '')))
       + `<p>${SAY.route}</p>`));
   });
-  out.push(lessonSection('The questions this unit teaches', `<p>${SAY.preview(v.taught.length)}</p>`
-    + branch.map(s => `<p class="mapq">${esc(s.q)}</p>` + lessonList(s.options.map(opt => {
-        const leads = v.isGate ? [opt.plain] : opt.keeps.filter(id => v.taught.includes(id)).map(id => v.thing(id).plain);
-        return `<span class="kw">${esc(opt.n)}</span>${leads.length ? ' → ' + esc(leads.join(' · ')) : ''}`;
-      }))).join('')));
-  out.push(lessonSection(`The ${numWord(v.taught.length)} things, and the name each will get`,
-    lessonList(v.taught.map(id => `${esc(cap(v.thing(id).plain))}: <span class="kw">${esc(v.nameOf(id))}</span>`))));
+  // the unit's questions, each answer with what it means (a gate unit: its answers are the names) or the names it leads to
+  out.push(branch.map(s => `<p class="mapq">${esc(s.q)}</p>` + lessonList(s.options.map(opt => {
+      const leads = v.isGate ? [opt.plain] : opt.keeps.filter(id => v.taught.includes(id)).map(v.nameOf);
+      return `<span class="kw">${esc(opt.n)}</span>${leads.length ? ' → ' + esc(leads.join(' · ')) : ''}`;
+    }))).join(''));
+  if(!v.isGate) out.push(lessonList(v.taught.map(id => `<span class="kw">${esc(v.nameOf(id))}</span>: ${esc(v.thing(id).plain)}`)));
   out.push(`<p>The unit has ${numWord(v.unit.parts.length)} part${v.unit.parts.length === 1 ? '' : 's'}, and you can stop after any of them.</p>`
     + `<ol>${v.unit.parts.map(p => `<li>${esc(p.title)}</li>`).join('')}</ol>`
-    + (card.add ? T.PP(card.add) : '') + `<p>${SAY.howTaught} ${SAY.stakes}</p>`);
+    + (card.add ? T.PP(card.add) : '') + `<p>${SAY.howTaught(SAY.example(v))} ${SAY.stakes}</p>`);
   return out.join('');
 };
 
@@ -126,10 +111,10 @@ CARD.term = (ctx, card) => {
 CARD.meet = (ctx, card) => {
   const { v, T } = ctx, c = v.caseById(card.case), id = card.outcome || card.family, thing = v.thing(id);
   return `<p>${T.t(card.link)}</p>${T.caseName(c)}${T.show(c, [card.mark])}`
-    + lessonList(T.P(card.strip, c)) + T.PP(card.explain, c)
-    + lessonSection(SAY.pointTo, `<p>${esc(cap(thing.needs))}.</p>`)
+    + T.PP(card.explain, c)
+    + lessonSection(SAY.spotIt, T.S(card.spot, c))
     + T.PP(card.name, c)
-    + (card.act ? lessonSection(SAY.act, T.PP(card.act, c)) : '')
+    + (card.act ? lessonSection(SAY.act, T.B(card.act, c)) : '')
     + (thing.aka && thing.aka.length ? `<p>${SAY.aka(thing.aka, T.o(id))}</p>` : '');
 };
 
@@ -138,17 +123,17 @@ CARD.again = (ctx, card) => {
   const tap = tappableCase(T, second, card.prompt.answer, ui.picked);
   const firstCue = T.quoteCues(first, card.step);
   return `<p>${T.t(card.link)}</p>`
-    + `<p>The first case again, in one line. <i>${esc(first.name)}</i>: ${firstCue}</p>`
-    + `<p>The second case.</p>${T.caseName(second)}${tap.html}`
+    + `<p>The first ${SAY.example(ctx.v)} again, in one line. <i>${esc(first.name)}</i>: ${firstCue}</p>`
+    + `<p>The second ${SAY.example(ctx.v)}.</p>${T.caseName(second)}${tap.html}`
     + lessonSection('What to compare', `<p>${T.t(paras(card.instruction).join(' '))}</p>`)
-    + (ui.picked === null ? promptStem(SAY.againStem(first.name, firstCue)) + '</div>'
+    + (ui.picked === null ? promptStem(SAY.againStem(first.name, firstCue, SAY.example(ctx.v))) + '</div>'
         : tapResult(T, second, tap.right, ui.picked) + lessonSection('What the two share', T.PP(card.shared)));
 };
 
 CARD.lens = (ctx, card) => {
   const { T } = ctx;
   return `<p>${T.t(card.link)}</p>${T.PP(card.body)}`
-    + lessonSection('Stays the same from case to case', `<p>${T.P(card.fixed).join('; ')}</p>`)
+    + lessonSection(`Stays the same from ${SAY.example(ctx.v)} to ${SAY.example(ctx.v)}`, `<p>${T.P(card.fixed).join('; ')}</p>`)
     + lessonSection('Changes on purpose', `<p>${esc(card.varies.join('; '))}.</p>`);
 };
 
@@ -159,7 +144,7 @@ CARD.portrait = (ctx, card) => {
     + lessonSection('What it is not', T.PP(card.not))
     + lessonSection('Where you will hear it', `<p>${esc(card.wild.join(' '))}</p>${T.PP(card.self)}`)
     + lessonSection(SAY.ask, T.PP(card.ask))
-    + (card.act ? lessonSection(SAY.act, T.PP(card.act)) : '');
+    + (card.act ? lessonSection(SAY.act, T.B(card.act)) : '');
 };
 
 CARD.refute = (ctx, card) => {
@@ -173,14 +158,14 @@ CARD.refute = (ctx, card) => {
 CARD.lookalike = (ctx, card) => {
   if(card.facts) return factLookalike(ctx, card);
   const { v, T, ui } = ctx, entry = v.ledger(card.ledger), [x, y] = card.cases.map(v.caseById);
-  const stem = SAY.whichStem(T.a(...card.prompt.option.split('.')));
+  const stem = SAY.whichStem(T.a(...card.prompt.option.split('.')), SAY.example(ctx.v));
   const rightLetter = card.prompt.answer === x.id ? 'A' : 'B';
   return `<p>${T.t(card.link)}</p>`
-    + lessonSection('Case A', T.show(x)) + lessonSection('Case B', T.show(y))
+    + lessonSection(`${cap(SAY.example(ctx.v))} A`, T.show(x)) + lessonSection(`${cap(SAY.example(ctx.v))} B`, T.show(y))
     + lessonSection('What to compare', `<p>${T.t(paras(card.instruction).join(' '))}</p>`)
     + (ui.picked === null
-        ? promptStem(stem) + `<div class="opts two"><button class="opt" data-pick="A">Case A</button><button class="opt" data-pick="B">Case B</button></div></div>`
-        : `<div class="answerline"><p>Case ${rightLetter}.</p></div>`
+        ? promptStem(stem) + `<div class="opts two"><button class="opt" data-pick="A">${cap(SAY.example(ctx.v))} A</button><button class="opt" data-pick="B">${cap(SAY.example(ctx.v))} B</button></div></div>`
+        : `<div class="answerline"><p>${cap(SAY.example(ctx.v))} ${rightLetter}.</p></div>`
           + lessonSection(SAY.whyThisOne, T.PP(card.difference)) + tellApart(ctx, entry, false));
 };
 
@@ -188,7 +173,7 @@ CARD.exception = (ctx, card) => {
   const { v, T, ui } = ctx, c = v.caseById(card.case), entry = v.ledger(card.ledger);
   const tap = tappableCase(T, c, card.prompt.answer, ui.picked);
   return `<p>${T.t(card.link)}</p>${T.caseName(c)}${tap.html}<p>${T.t(paras(card.setup).join(' '))}</p>`
-    + (ui.picked === null ? promptStem(SAY.exceptionStem(T.o(card.looksLike), T.o(card.is))) + '</div>'
+    + (ui.picked === null ? promptStem(SAY.exceptionStem(T.o(card.looksLike), T.o(card.is), SAY.example(ctx.v))) + '</div>'
         : tapResult(T, c, tap.right, ui.picked)
           + lessonSection(`Why this is ${v.nameOf(card.is)} and not ${v.nameOf(card.looksLike)}`, T.PP(card.because, c))
           + tellApart(ctx, entry, true) + T.PP(card.take, c));
@@ -207,20 +192,18 @@ CARD.question = (ctx, card) => {
   const entries = v.unit.ledger.filter(l => l.step === s.code && ctx.ledgerRead.has(l.id));
   return `<p>${T.t(card.link)}</p>`
     + lessonSection(SAY.keyAsks, `<p>${T.q(s.code)}</p>`)
-    + lessonSection('What it is for', `<p>${esc(s.purpose)}.</p>`)
     + lessonSection('Its answers',
         (single && !v.isGate ? `<p>Each answer leads to one name, and so rules out the other ${numWord(taught.length - 1)}.</p>` : '') + `<ul class="answers">${answers}</ul>`)
-    + lessonSection('Why it decides', `<p>${esc(s.why)}</p>${T.PP(card.decides)}`)
-    + lessonSection('How to answer it from a case', T.PP(card.how))
+    + lessonSection('Why it matters', `<p>${esc(s.why)}</p>${T.PP(card.decides)}`)
+    + lessonSection('How to answer it', T.B(card.how))
     + (entries.length ? lessonSection('When two answers both seem to fit', T.PP(card.whenBoth)
-        + lessonList(entries.map(l => `${esc(v.nameOf(l.pair[0]))} or ${esc(v.nameOf(l.pair[1]))}: ${T.t(l.test)}${tieLine(ctx, l) ? ' ' + tieLine(ctx, l) : ''}`))) : '');
+        + lessonList(entries.map(l => `${esc(v.nameOf(l.pair[0]))} or ${esc(v.nameOf(l.pair[1]))}: ${T.t(l.test)}`))) : '');
 };
 
 // A worked case is several screens: one per key question, then the name, the hold-back prompt and the second look.
 const workedScreens = card => card.steps.length + 1;
 CARD.worked = (ctx, card) => {
   const { v, T, ui } = ctx, c = v.caseById(card.case), n = card.steps.length;
-  const fullWhy = ctx.firstWorked === card.id;
   const target = caseTarget(v, c);
   const liveAfter = upto => card.steps.slice(0, upto + 1).reduce((live, st) => {
     const opt = v.option(st.step, c.route[st.step][0]);
@@ -241,7 +224,6 @@ CARD.worked = (ctx, card) => {
       + `<div class="steps">${card.steps.slice(0, ui.step).map(doneRow).join('')}`
       + `<div class="stepopen"><div class="stephead"><span class="num on">${ui.step + 1}</span><span class="m a">Question ${ui.step + 1} of ${n}</span></div>`
       + `<p class="stem">${esc(s.q)}</p>`
-      + `<p class="forline">What it is for: ${esc(lowerFirst(s.purpose))}.${fullWhy ? ' ' + esc(s.why) : ''}</p>`
       + `<p class="forline">Answer: ${T.a(st.step, opt.id)}</p></div></div>`
       + `<div class="lesson">${T.PP(st.reason, c)}</div>` + (v.isGate ? '' : readout(live));   // a gate's one answer is the name
   }
@@ -251,11 +233,11 @@ CARD.worked = (ctx, card) => {
     + `<div class="steps">${card.steps.map(doneRow).join('')}</div>`
     + (v.isGate ? '' : lessonSection('Name it', `<p>${T.o(target)}</p>`))
     + (picked === null
-        ? promptStem((p.lead ? T.t(paras(p.lead).join(' '), c) + ' ' : '') + SAY.holdStem(T.o(target), T.o(card.hold.neighbor)))
+        ? promptStem(p.lead ? `${T.t(paras(p.lead).join(' '), c)} ${SAY.holdPick}` : SAY.holdStem(T.o(target), T.o(card.hold.neighbor)))
           + `<div class="opts">${p.choices.map(x => `<button class="opt" data-pick="${esc(x.id)}">${T.t(x.text, c)}</button>`).join('')}</div></div>`
         : `<div class="answerline"><p>The one that settles it: ${T.t(right.text, c)}</p>${picked !== right && picked.note ? `<p>${T.t(paras(picked.note).join(' '), c)}</p>` : ''}</div>`
           + lessonSection(`Why this is ${v.nameOf(target)} and not ${v.nameOf(card.hold.neighbor)}`, T.PP(card.hold.reason, c))
-          + lessonSection(SAY.secondLook, T.PP(card.impression.text, c)));
+          + lessonSection(SAY.secondLook(SAY.example(ctx.v)), T.PP(card.impression.text, c)));
 };
 
 CARD.recap = (ctx, card) => {
@@ -268,9 +250,9 @@ CARD.recap = (ctx, card) => {
   return `<p>${T.t(card.link)}</p>`
     + lessonSection('This unit’s questions and answers', v.unitSteps.map(s => `<p class="mapq">${esc(s.q)}</p>`
         + lessonList(s.options.map(opt => `<span class="kw">${esc(opt.n)}</span>${v.isGate ? '' : ' → ' + esc(opt.keeps.filter(id => v.taught.includes(id)).map(v.nameOf).join(' · '))}`))).join(''))
-    + lessonSection(`For each name: ${lowerFirst(SAY.pointTo)}, and ${lowerFirst(SAY.ask)}`,
+    + lessonSection(`For each name: ${lowerFirst(SAY.lookFor)}, and ${lowerFirst(SAY.ask)}`,
         lessonList(v.taught.map(id => `${T.o(id)}: ${esc(v.thing(id).needs)}.`
-          + (portraitOf(id) ? `<ul><li>Ask: ${T.P(portraitOf(id).ask).join(' ')}</li>${portraitOf(id).act ? `<li>Do: ${T.P(portraitOf(id).act).join(' ')}</li>` : ''}</ul>` : ''))))
+          + (portraitOf(id) ? `<ul><li>Ask: ${T.P(portraitOf(id).ask).join(' ')}</li>${portraitOf(id).act ? `<li>Do: ${(isSteps(portraitOf(id).act) ? portraitOf(id).act.map(st => T.t(st.do)) : T.P(portraitOf(id).act)).join(' ')}</li>` : ''}</ul>` : ''))))
     + lessonSection('To carry away', lessonList(T.P(card.carry)));
 };
 
@@ -349,9 +331,9 @@ function factLookalike(ctx, card){
 function cardHeading(v, T, card){
   const id = card.outcome || card.family;
   if(card.continues) return cardHeading(v, T, v.card(card.continues));
-  if(card.kind === 'meet') return esc(cap(v.thing(id).plain));
-  if(card.kind === 'check') return card.ask.type === 'fact' ? SAY.factCheckHeading : SAY.checkHeading;
-  if(card.kind === 'again' && !card.h) return esc(SAY.againHeading(v.nameOf(id)));
+  if(card.kind === 'meet') return esc(v.nameOf(id));   // one name per idea: the card is titled with the name
+  if(card.kind === 'check') return card.ask.type === 'fact' ? SAY.factCheckHeading : SAY.checkHeading(SAY.example(v));
+  if(card.kind === 'again' && !card.h) return esc(SAY.againHeading(v.nameOf(id), SAY.example(v)));
   if(card.kind === 'portrait' && !card.h) return esc(SAY.portraitHeading(v.nameOf(id)));
   if(card.kind === 'lookalike' && !card.h) return esc(SAY.lookalikeHeading(...v.ledger(card.ledger).pair.map(v.nameOf)));
   if(card.h == null) lessonFail(`card ${card.id} has no heading`);

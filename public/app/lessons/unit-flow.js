@@ -66,8 +66,7 @@ function cardContext(v, T, cardId, ui, full){
   return {
     v, T, cardId, index: at, ui,
     ledgerRead: new Set(v.unit.ledger.filter(l => readNow.some(k => v.card(k).ledger === l.id || l.taughtIn === k)).map(l => l.id)),
-    namedSteps: new Set([...v.assumedSteps.map(s => s.code), ...readBefore.map(v.card).filter(k => k.kind === 'question').map(k => k.step)]),
-    firstWorked: v.cardOrder.find(id => v.card(id).kind === 'worked')
+    namedSteps: new Set([...v.assumedSteps.map(s => s.code), ...readBefore.map(v.card).filter(k => k.kind === 'question').map(k => k.step)])
   };
 }
 
@@ -82,10 +81,10 @@ function checkJoined(v, T, card, c){
     return v.isGate || !names.length ? '' : `This answer leads to ${T.namesAt(names, card.id)}.`;
   }
   // in a gate unit the answer is the name, so there is no second thing to join
-  if(v.isGate) return a.type === 'phrase' ? `The answer for this case is ${T.a(a.step, answer.id)}.` : '';
+  if(v.isGate) return a.type === 'phrase' ? `That makes it ${T.a(a.step, answer.id)}.` : '';
   return a.type === 'phrase'
-    ? `The answer for this case is ${T.a(a.step, answer.id)}, and the name is ${T.o(target)}.`
-    : `The name that goes with this answer is ${T.o(target)}.`;
+    ? `That makes the answer ${T.a(a.step, answer.id)}, and the name ${T.o(target)}.`
+    : `That makes the name ${T.o(target)}.`;
 }
 // A check is one case and one question; in a fact unit one row of the facts card before it; in a procedure unit a problem to finish.
 function checkItem(ctx, card){
@@ -98,6 +97,6 @@ function checkItem(ctx, card){
   if(a.type === 'solve') return problemItem(v, c, a.solve, 'check');
   if(a.type === 'phrase') return { type: 'tap', c, step: a.step, say: a.say, answer: a.answer, mode: 'check', joined };
   const among = a.type === 'option' ? a.among : v.step(a.step).options.map(o => o.id);
-  const amongNote = a.type === 'option' && !ctx.namedSteps.has(a.step) ? 'Which of the answers you have met so far fits this case?' : undefined;
+  const amongNote = a.type === 'option' && !ctx.namedSteps.has(a.step) ? `Which of the answers you have met so far fits this ${SAY.example(v)}?` : undefined;
   return { type: 'case', c, shown: [], asked: [a.step], askName: false, names: [], among, amongNote, mode: 'check', joined };
 }

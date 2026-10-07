@@ -5,7 +5,7 @@ import { testUnits, testUnitAt360, testDraftUnits, testMigration } from './e2e-u
 import { testLessonEngineReview } from './e2e-review.mjs';
 import { testNewScreens } from './e2e-screens.mjs';
 import { testKinds } from './e2e-kinds.mjs';
-import { APP_JARGON } from './plain-words.mjs';
+import { APP_JARGON, abstractIn } from './plain-words.mjs';
 import { britishIn } from './american.mjs';
 import { subjectMeta } from './fixtures/app-data.mjs';
 
@@ -59,7 +59,7 @@ async function jargonShown(page) {
     return copy.textContent;
   });
   const prose = text.replace(/“[^”]*”|"[^"]*"/g, ' ');   // and so may a quotation
-  return APP_JARGON.filter(w => new RegExp(`\\b${w}(['’]s)?\\b`, 'i').test(prose));
+  return [...APP_JARGON.filter(w => new RegExp(`\\b${w}(['’]s)?\\b`, 'i').test(prose)), ...abstractIn(prose).map(e => e.word)];
 }
 
 async function inspect(page, label) {

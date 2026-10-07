@@ -24,13 +24,13 @@ const withCard = (h, d, partId, afterId, added) => {
   const cards = h.updateIn(d, ['subjects', P, 'cards', U], c => [...c, added]);
   return h.updateIn(cards, part(partId, 'cards'), ids => ids.flatMap(id => id === afterId ? [id, added.id] : [id]));
 };
-const AGAIN = { id: 'again-dissonance', kind: 'again', outcome: 'dissonance', link: 'Here is a second case.', first: 'sauce', second: 'shops', step: 'R1',
-  instruction: 'Find what the two cases share.', prompt: { kind: 'phrase', answer: 'One order makes no difference to anyone' }, shared: 'Both gave a reason afterward for why it is fine.' };
+const AGAIN = { id: 'again-dissonance', kind: 'again', outcome: 'dissonance', link: 'Here is a second story.', first: 'sauce', second: 'shops', step: 'R1',
+  instruction: 'Find what the two stories share.', prompt: { kind: 'phrase', answer: 'One order makes no difference to anyone' }, shared: 'Both gave a reason afterward for why it is fine.' };
 const PORTRAIT = { id: 'portrait-dissonance', kind: 'portrait', outcome: 'dissonance', link: 'Here is the rest of the picture.', typical: ['The act comes first and the reason second.'],
   not: 'Doing something that does not fit a belief is not yet the name.', wild: ['"It hardly counts."'], self: 'You will hear it in your own head.', ask: '"What would I do if that reason were not available?"' };
 const REFUTE = { id: 'refute-mismatch', kind: 'refute', about: 'dissonance', h: 'A wrong idea', link: 'A wrong idea is common.', idea: '"He says one thing and does another."',
   verdict: 'This is wrong.', right: 'Saying one thing and doing another is not enough.', testedBy: ['claim-mismatch'] };
-const LENS = { id: 'lens', kind: 'lens', h: 'The story never decides the answer', link: 'The story tells you nothing.', body: 'Every case has a story and the reasoning under it.',
+const LENS = { id: 'lens', kind: 'lens', h: 'The story never decides the answer', link: 'The story tells you nothing.', body: 'Every story has a topic and the reasoning under it.',
   fixed: ['what the reasoning does'], varies: ['the topic'] };
 const TRANSFER = { id: 'transfer', kind: 'transfer', h: 'Where would you meet this?', link: 'The last step is yours.', ask: 'Pick one of the five and name an occasion of your own.',
   prompts: ['dissonance', 'sunkcost', 'confbias', 'motivated', 'fair'].map(outcome => ({ outcome, occasion: 'An occasion of your own.' })), places: ['At home'] };
@@ -54,11 +54,11 @@ export const CONTROLS = [
   { rule: 'V1', name: 'a question does not end in a question mark',
     data: (d, h) => h.setIn(d, key('branches', 'reasoning', { code: 'R1' }, 'q'), 'What does the reasoning do') },
   { rule: 'V2', name: 'a card types an outcome name by hand',
-    data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('Fair reasoning comes next.')) },
+    data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('Following the facts comes next.')) },
   { rule: 'V3', name: 'a token names a ledger entry that does not exist',
     data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('See {test:nosuch~entry}.')) },
   { rule: 'V4', name: 'a card shows a step code',
-    data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('Ask R1 of every case.')) },
+    data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('Ask R1 of every story.')) },
   { rule: 'V5', name: 'a card uses an answer before the card that teaches it',
     data: (d, h) => h.updateIn(d, [...card('meet-dissonance'), 'link'], appended('This answers {a:R1.fixed} elsewhere.')) },
   { rule: 'V6', name: 'no drill item uses the taught term',
@@ -87,8 +87,6 @@ export const CONTROLS = [
     data: (d, h) => h.updateIn(d, unit('ledger', { id: 'dissonance~fair' }, 'test'), appended('Is it {o:fair}?')) },
   { rule: 'V16', name: 'no check follows the question card by its step',
     data: (d, h) => h.setIn(d, [...card('check-does'), 'after'], 'fair') },
-  { rule: 'V17', name: 'a purpose names a topic of a case',
-    data: (d, h) => h.updateIn(d, key('branches', 'reasoning', { code: 'R1' }, 'purpose'), appended('Think of a sauce.')) },
   { rule: 'V18', name: 'a worked card has no single right choice',
     data: (d, h) => h.setIn(d, [...card('worked-tasting'), 'hold', 'prompt', 'answer'], 'nonesuch') },
   { rule: 'V20', name: 'two teaching steps with no check between them',
@@ -128,7 +126,7 @@ export const CONTROLS = [
   { rule: 'V35', name: 'a route case has no reason for a question',
     data: (d, h) => h.removeIn(d, [...kase('payroll'), 'reason', 'R1']) },
   { rule: 'V36', name: 'a reason opens with a bare verdict',
-    data: (d, h) => h.updateIn(d, [...kase('payroll'), 'reason', 'R1'], prepended('Correct.')) },
+    data: (d, h) => h.updateIn(d, [...kase('parking'), 'reason', 'D1'], prepended('Correct.')) },
   { rule: 'V59', name: 'a portrait in an action subject says nothing about what to do', also: ['V25', 'V37', 'V44'],
     // action: true also turns on the plan card (V25), legitimate cases (V37) and a second return per name (V44)
     data: (d, h) => h.setIn(d, meta('action'), true) },
@@ -169,6 +167,10 @@ export const CONTROLS = [
     data: (d, h) => h.setIn(d, ['subjects', P, 'units', 'u3', 'drill', 'key'], d.subjects[P].units[U].drill.key) },
   { rule: 'V60', name: 'a case story is spelled the British way',
     data: (d, h) => h.updateIn(d, kase('sauce'), c => ({ ...c, text: `${c.text} The walls were a pale colour.` })) },
+  { rule: 'V63', name: 'a reason runs past two sentences',
+    data: (d, h) => h.updateIn(d, kase('parking'), c => ({ ...c, reason: Object.fromEntries(Object.entries(c.reason).map(([k, t]) => [k, `${t} One more thing. And another.`])) })) },
+  { rule: 'V62', name: 'a card uses an abstract word',
+    data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('It is one kind of thing.')) },
   { rule: 'V50', name: 'a card uses a word the app avoids',
     data: (d, h) => h.updateIn(d, [...card('meet-sunkcost'), 'explain'], appended('This lesson is about reasoning.')) },
   { rule: 'V51', name: 'a second lens card',

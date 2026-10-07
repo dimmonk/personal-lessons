@@ -10,12 +10,12 @@ export function registerProcedureUnit() {
     outcomes: [
       { id: 'of', group: 'percent', unit: 'u1', n: 'Percent of an amount', plain: 'a share of one number', needs: 'one amount, and a percentage to take of it', aka: [] },
       { id: 'change', group: 'percent', unit: 'u1', n: 'Percent change', plain: 'how far a number moved, as a share', needs: 'an old amount, a new amount, and the move between them as a share of the old one', aka: [] }],
-    gate: { code: 'D1', unit: 'u1', q: 'What does the problem ask you to find?', purpose: 'Sorts percentage problems from everything else', why: 'Only a percentage problem has these procedures.',
+    gate: { code: 'D1', unit: 'u1', q: 'What does the problem ask you to find?', why: 'Only a percentage problem has these procedures.',
       options: [
         { id: 'percent', n: 'A percentage', when: 'the problem asks for a share out of a hundred, or for a share of something', keeps: ['of', 'change'] },
         { id: 'other', n: 'Something else', when: 'the problem asks for something that is not a percentage', keeps: [] }] },
     branches: { percent: [
-      { code: 'R1', unit: 'u1', q: 'Is the percentage taken of one amount, or does it compare two amounts?', purpose: 'Sorts a share of one amount from a move between two',
+      { code: 'R1', unit: 'u1', q: 'Is the percentage taken of one amount, or does it compare two amounts?',
         why: 'The two procedures start from different numbers: one amount, or an old amount and a new one.',
         options: [
           { id: 'one', n: 'Taken of one amount', when: 'the problem gives one amount and a percentage to take of it', keeps: ['of'] },
@@ -106,7 +106,7 @@ export function registerProcedureUnit() {
   ]);
   FC.cards(S, 'u1', [
     { id: 'orient', kind: 'orient', h: 'Percent problems', canDo: 'Take a percentage problem from a real situation, say which of two procedures it needs, and work it.', everyday: 'A price is cut, a rent goes up, a bill shrinks: each one is a percentage problem.', map: { branch: 'percent' } },
-    { id: 'meet-of', kind: 'meet', outcome: 'of', link: 'The first kind of percent problem starts with one amount.', case: 'm-of', mark: 'R1', strip: ['one amount: £80', 'a percentage: 15%'],
+    { id: 'meet-of', kind: 'meet', outcome: 'of', link: 'The first kind of percent problem starts with one amount.', case: 'm-of', mark: 'R1', spot: [{ do: 'Find the first thing.', why: 'It decides.' }, { do: 'Find the second thing.', why: 'It confirms.' }],
       explain: 'The jacket has one price, and the percentage is taken of that price. Each step of the procedure is there for a reason, and the cards after this one show them.',
       feature: { step: 'R1', option: 'one' }, name: 'A problem like this is {o:of}.' },
     { id: 'again-of', kind: 'again', outcome: 'of', link: 'The same kind of problem in a different story.', first: 'm-of', second: 'a-of', step: 'R1',
@@ -131,7 +131,7 @@ export function registerProcedureUnit() {
       hold: { step: 1, prompt: { kind: 'reason', choices: [{ id: 'x', text: 'A share of an amount is found by multiplying.' }, { id: 'y', text: 'The tank is 60 litres.', note: 'That is true, but it is the amount, not the reason for the step.' }], answer: 'x' },
         reason: 'The tank is 35% full, so the part that is full is 35% of 60, found by multiplying.' } },
     { id: 'check-of-solve', kind: 'check', after: 'of', case: 'ck-of', ask: { type: 'solve', solve: 'last' } },
-    { id: 'meet-change', kind: 'meet', outcome: 'change', link: 'The second kind has two amounts.', case: 'm-ch', mark: 'R1', strip: ['an old amount: £500', 'a new amount: £550'],
+    { id: 'meet-change', kind: 'meet', outcome: 'change', link: 'The second kind has two amounts.', case: 'm-ch', mark: 'R1', spot: [{ do: 'Find the first thing.', why: 'It decides.' }, { do: 'Find the second thing.', why: 'It confirms.' }],
       explain: 'The rent has two prices, an old one and a new one, and the question is how far it moved.',
       feature: { step: 'R1', option: 'two' }, name: 'A problem like this is {o:change}.' },
     { id: 'again-change', kind: 'again', outcome: 'change', link: 'The same kind in a different story.', first: 'm-ch', second: 'a-ch', step: 'R1',
@@ -156,7 +156,7 @@ export function registerProcedureUnit() {
         reason: 'A fall is a move like a rise, and it is measured against the old amount in the same way.' } },
     { id: 'check-change-solve', kind: 'check', after: 'change', case: 'ck-ch', ask: { type: 'solve', solve: 'whole' } },
     { id: 'look-pc', kind: 'lookalike', ledger: 'of~change', link: 'These two get mixed up, because both talk about the same phone.', cases: ['l-of', 'l-ch'], instruction: 'Compare what each one gives you.',
-      prompt: { kind: 'which', option: 'R1.two', answer: 'l-ch' }, difference: 'Case B gives an old and a new price, and so it compares two amounts. Case A gives one price and a percentage of it.' },
+      prompt: { kind: 'which', option: 'R1.two', answer: 'l-ch' }, difference: 'Story B gives an old and a new price, and so it compares two amounts. Story A gives one price and a percentage of it.' },
     { id: 'q-r1', kind: 'question', step: 'R1', h: 'Which procedure', link: 'One question chooses between the two.', decides: 'It decides which numbers you start from.', how: 'Count the amounts the problem gives.' },
     { id: 'check-r1', kind: 'check', after: 'R1', case: 'ck-ch-tap', ask: { type: 'step', step: 'R1' } },
     { id: 'recap', kind: 'recap', h: 'What to carry', link: 'Here is the unit in one place.', carry: ['Count the amounts, then choose the procedure.'] },

@@ -5,9 +5,9 @@
 
 const PROGRESS_SAY = {
   heading: 'Practice record',
-  intro: 'First tries only: what you got right the first time a question or a case came up. Anything missed came back, and is not counted again.',
+  intro: 'First tries only: what you got right the first time a question or a story came up. Anything missed came back, and is not counted again.',
   allFirst: 'All first tries',
-  whole: 'Whole cases',
+  whole: 'Whole stories',
   single: 'Single questions',
   persistence: 'Showing up',
   logNote: 'The log stays on this device. The file holds the log and, for every subject, your practice record, your places and your notes.',
@@ -69,7 +69,7 @@ function renderProgress(){
     <div class="topbar"><span class="m">Progress</span></div>
     <div class="mast">
       <h1>${doneUnits} of ${totalUnits}</h1>
-      <p>units run across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. Naming whole cases is the measure that matters: a name only counts when every answer on the way to it is right too.</p>
+      <p>units run across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. Naming whole stories is the measure that matters: a name only counts when every answer on the way to it is right too.</p>
     </div>
     ${practiceBlockHtml()}
     <div class="sect"><span class="m">By subject</span></div>

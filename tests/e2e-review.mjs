@@ -188,9 +188,10 @@ async function wordingAndData(env) {
     const section = (id, label) => {
       const d = document.createElement('div');
       d.innerHTML = CARD[v.card(id).kind](cardContext(narrowed, T, id, ui), v.card(id));
-      return [...d.querySelectorAll('.lsec')].find(s => s.textContent.startsWith(label)).textContent;
+      return label ? [...d.querySelectorAll('.lsec')].find(s => s.textContent.startsWith(label)).textContent : d.textContent;
     };
-    return section('recap', 'This unit’s questions and answers') + ' ' + section('orient', 'The questions this unit teaches');
+    // the orient map has no section label of its own: the whole card is read
+    return section('recap', 'This unit’s questions and answers') + ' ' + section('orient', null);
   });
   const names = await page.evaluate(() => { const v = unitView('psychology', 'u2'); return v.taught.slice(2).map(v.nameOf); });
   const plains = await page.evaluate(() => { const v = unitView('psychology', 'u2'); return v.taught.slice(2).map(id => v.thing(id).plain); });
@@ -393,9 +394,9 @@ async function gateUnit(env) {
   }, S));
   env.check(out.problems.length === 0, `a gate unit failed to render: ${out.problems.join('; ')}`);
   const orient = out.seen.find(x => x.startsWith('orient:')) || '';
-  env.check(/Alpha thing → the alpha sort/.test(orient) && /The three things, and the name each will get/.test(orient), `a gate unit's orient card reads: ${orient.slice(0, 200)}`);
+  env.check(/Alpha thing → the alpha sort/.test(orient) && !/The three things, and the name each will get/.test(orient), `a gate unit's orient card reads: ${orient.slice(0, 200)}`);
   const route = out.seen.find(x => x.startsWith('route d-1')) || '';
-  env.check(/You chose Beta thing\. Give that answer when the case shows beta\./.test(route) && !/Right: /.test(route), `a gate route item misses wrongly: ${route.slice(0, 200)}`);
+  env.check(/You chose Beta thing\. Give that answer when the story shows beta\./.test(route) && !/Right: /.test(route), `a gate route item misses wrongly: ${route.slice(0, 200)}`);
   await context.close();
 }
 

@@ -2,7 +2,7 @@
 // V8 (other names only on the meet card), V28 (no forward pointers), V36 (no praise), V50 (words to avoid).
 // Each rule scans the authored prose of one unit (its cards, cases and records) or of one subject (specimens and the subject record). Fields that quote what people say are never scanned for key wording (S5).
 import { unitRule, subjectRule } from './rule.mjs';
-import { APP_JARGON } from '../plain-words.mjs';
+import { APP_JARGON, abstractIn } from '../plain-words.mjs';
 import { britishIn } from '../american.mjs';
 import { tokensOf, stripTokens, hasUnknownToken, prose, norm, wordSet, containsPhrase, cuesOf, strings, STRUCTURAL, STRUCTURAL_IN } from './text.mjs';
 
@@ -155,6 +155,17 @@ function V50(ctx, check) {
   }
 }
 
+/* ---------- V62: no abstract or textbook words ---------- */
+// The same text V50 reads: every card, case reason, key line and subject note a learner sees (tests/plain-words.mjs ABSTRACT).
+// A case's own story is quoted and may say anything; it is not read.
+function V62(ctx, check) {
+  const extra = [ctx.keyTarget, ctx.limitsTarget].filter(Boolean).map(f => f());
+  const keyLines = extra.flatMap(t => prose(t.obj).map(([path, text]) => ({ where: `${t.label}${path}`, text })));
+  for (const { where, text } of [...proseOf(ctx), ...keyLines]) {
+    abstractIn(stripTokens(text)).forEach(e => check(false, `${where}: "${e.word}" (say instead: ${e.say}) in "${text.slice(0, 60)}"`));
+  }
+}
+
 /* ---------- V60: American English ---------- */
 // The reader is moving to the United States: every string a learner can read, case stories included, is American English
 // with dollars (tests/american.mjs). Ids and codes are skipped, and so are the maintainers' notes (a unit's build record,
@@ -175,5 +186,5 @@ export const V60 = subjectRule('V60', (s, check) => {
 
 export const RULES_VOCAB = [V60, 
   ...unitAndSubject('V2', V2), ...unitAndSubject('V3', V3), ...unitAndSubject('V4', V4), ...unitAndSubject('V8', V8),
-  ...unitAndSubject('V28', V28), ...unitAndSubject('V36', V36), ...unitAndSubject('V50', V50)
+  ...unitAndSubject('V28', V28), ...unitAndSubject('V36', V36), ...unitAndSubject('V50', V50), ...unitAndSubject('V62', V62)
 ];

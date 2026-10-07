@@ -272,7 +272,7 @@ function paintComplete(run, screen){
   unitFrame(run, screen, `<div class="done-screen">
       <span style="color:var(--accent);display:flex">${icon('check', 34)}</span>
       <h2>Unit ${esc(v.unit.tag)} complete</h2>
-      <p>${esc(SAY.endOfUnit(v.unit.tag))}</p>
+      <p>${esc(SAY.endOfUnit(v.unit.tag, SAY.example(v)))}</p>
       ${baselineFeedbackHtml(run)}
       <div class="segs" style="width:100%;max-width:300px">${subj.course.map((_, k) => `<i class="${unitDone(subj, k) ? 'on' : ''}"></i>`).join('')}</div>
       <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px;padding-top:6px">

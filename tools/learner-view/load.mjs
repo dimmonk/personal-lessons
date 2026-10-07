@@ -62,6 +62,7 @@ export function unitView(subject, unitId) {
   const outcome = id => key.outcomes.find(o => o.id === id) || fail(`unknown outcome ${id}`);
   const family = id => gate.options.find(o => o.id === id) || fail(`unknown family ${id}`);
   return {
+    example: subject.meta.example || 'story',   // the learner's word for one example (the app's SAY.example)
     key, unit, steps, assumedSteps, priorSteps, subject, gate, isGate, isFacts, taught,
     fact: id => rows[id] || fail(`unknown fact ${id}`),
     // has the learner met this name by the time they read this card? (the app's metBefore)

@@ -14,41 +14,38 @@ const blocks = arr => arr.flatMap(p => [p, '']);
 
 export const APP = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
-  route: 'Two things are marked separately: the name you give a case, and your answers to the questions on the way to it.',
-  preview: n => `**The question this unit teaches.** With its answers. Beside each answer is what it leads to. Each card that follows explains one.`,
-  // a gate unit: the answers are the names, so the preview has no second list
-  previewGate: n => `**The question this unit teaches.** With its answers. Beside each answer is what a case of that kind is made of. Each card that follows explains one.`,
-  howTaught: 'Each starts from a real case. After each one you answer a quick question, and the reason is shown right away.',
-  pointTo: 'What you must be able to point to',
-  inPlain: 'In plain words',
+  route: 'Two things are marked separately: the name you give a story, and your answers to the questions on the way to it.',
+  howTaught: example => `Each starts from a real ${example}. After each one you answer a quick question, and the reason is shown right away.`,
+  spotIt: 'How to spot it',
+  lookFor: 'What to look for',
   keyAsks: 'The question:',
   aka: (akas, name) => `You may also hear this called ${akas.map(x => `“${x}”`).join(' or ')}. ${akas.length > 1 ? 'Those words mean' : 'That means'} the same thing here, and from now on this unit uses one name: ${name}.`,
-  againHeading: name => `${name}: the same thing in a different story`,
+  againHeading: (name, ex) => `${name}: the same thing in a different ${ex}`,
   portraitHeading: name => `${name}: what it is like`,
   lookalikeHeading: (x, y) => `${x} or ${y}: telling them apart`,
-  againStem: (firstName, firstCue) => `In *${firstName}*, these words show it: ${firstCue}${/[.?!]”$/.test(firstCue) ? '' : '.'} Which words show the same thing in this case? Tap them.`,
-  exceptionStem: (looks, is) => `This looks like ${looks}. Before you read why it is ${is}, tap the words in the case that settle it.`,
-  whichStem: answer => `Which case gives the answer ${answer}?`,
-  holdStem: (x, y) => `Why is this ${x} and not ${y}? Every statement below is true of the case. Before you read the reason, choose the one that settles it.`,
+  againStem: (firstName, firstCue, ex) => `In *${firstName}*, these words show it: ${firstCue}${/[.?!]”$/.test(firstCue) ? '' : '.'} Which words show the same thing in this ${ex}? Tap them.`,
+  exceptionStem: (looks, is, ex) => `This looks like ${looks}. Before you read why it is ${is}, tap the words in the ${ex} that settle it.`,
+  whichStem: (answer, ex) => `Which ${ex} gives the answer ${answer}?`,
+  holdStem: (x, y) => `Why is this ${x} and not ${y}? All of these are true. Choose the one that settles it.`,
+  holdPick: 'All of these are true. Choose the one that settles it.',
   tellApart: 'How to tell them apart',
-  tieBreak: (loser, say, winner) => `When a case shows both ${loser} and ${say}, the answer is ${winner}.`,
-  secondLook: 'Does it look like a case you know?',
+  tieBreak: (loser, say, winner, ex) => `When a ${ex} shows both ${loser} and ${say}, the answer is ${winner}.`,
+  secondLook: ex => `Does it look like a ${ex} you know?`,
   ask: 'The question to ask when you spot it',
   act: 'What to do when you meet it',
-  notOnRoute: 'Not asked for this one',
-  stopsHere: 'The rest of this case comes in a later unit.',
+  stopsHere: ex => `The rest of this ${ex} comes in a later unit.`,
   // procedure units (A12): the app's wording, view.js SAY
   solvedProblem: 'The problem', solvedResult: 'The result', workingLabel: 'The working, step by step',
   solvedStem: 'This step carries the idea. Every statement below is true of the problem. Before you read the reason, choose the one that explains why this step is done.',
   solveLast: does => `The working is shown up to the last step. The last step is yours: ${does}. Choose what the problem comes to.`,
   solveWhole: 'The whole problem is yours. Work it out, then choose the answer.',
-  solveRoute: 'Now work the problem with that procedure and choose the answer.',
+  solveRoute: 'Now work it out that way and choose the answer.',
   slipLine: (text, slip) => `You chose ${text}. That is the answer you get when ${slip}`,
   transferNote: 'One line is enough. It is kept on this device only and is never marked.',
   // fact units (A12): the app's wording, view.js SAY
   factsToHold: 'This unit is facts to hold, not a skill to apply. There are no questions to work through. Each fact is something you will be asked from memory, and it comes back on later days.',
   factsCount: (facts, groups) => `The unit holds ${num(facts)} fact${facts === 1 ? '' : 's'}, in ${num(groups)} group${groups === 1 ? '' : 's'}:`,
-  howTaughtFacts: 'Each group starts with a case, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away.',
+  howTaughtFacts: 'Each group starts with a story, then the idea in plain words, then the facts. After each fact you are asked it from memory, and the answer and how it fits are shown right away.',
   factCheckHeading: 'A question from memory',
   whichFactStem: answer => `Which of these two facts has the answer ${answer}?`,
   factColumns: ['The fact', 'The answer'],
@@ -75,7 +72,7 @@ export function makeText(v) {
     if (kind === 'f') return `**${v.fact(ref).a}**`;   // a fact's answer (fact units, A12)
     if (kind === 'means') return v.term(ref).means;
     if (kind === 'test') return t(v.ledger(ref).test, c);   // a test may itself print a line of the key
-    if (!c || !cuesOf(c, ref).length) throw new Error(`{cue:${ref}} has no case or no marked words`);
+    if (!c || !cuesOf(c, ref).length) throw new Error(`{cue:${ref}} has no story or no marked words`);
     return quoteCues(c, ref);
   });
   // the case as shown, with the deciding words for the given steps marked
@@ -83,7 +80,7 @@ export function makeText(v) {
   const show = (c, markSteps = []) => {
     const ranges = [...new Set(markSteps.flatMap(s => cuesOf(c, s)))].map(cue => {
       const at = c.text.indexOf(cue);
-      if (at < 0) throw new Error(`case ${c.id}: marked words not in text: ${cue}`);
+      if (at < 0) throw new Error(`story ${c.id}: marked words not in text: ${cue}`);
       return [at, at + cue.length];
     }).sort((x, y) => x[0] - y[0]);
     const merged = ranges.reduce((out, r) => out.length && r[0] <= out[out.length - 1][1]
@@ -101,7 +98,7 @@ export function makeText(v) {
 // "Tap the words": the pieces, the right one, and the note for each other piece.
 function tapPrompt(T, c, stem, answer) {
   const right = c.segments.find(s => s.text.includes(answer));
-  if (!right) throw new Error(`case ${c.id}: no tappable piece holds the answer "${answer}"`);
+  if (!right) throw new Error(`story ${c.id}: no tappable piece holds the answer "${answer}"`);
   const out = [`**You are asked:** ${stem}`, '', 'The pieces you can tap:'];
   c.segments.forEach((s, i) => out.push(`${i + 1}. “${s.text}”`));
   out.push('', `**Shown as soon as you tap.** The words are “${right.text}”.`);
@@ -110,38 +107,29 @@ function tapPrompt(T, c, stem, answer) {
 }
 
 export function makeCardRenderers(v, T) {
-  const C = id => v.cases[id] || (() => { throw new Error(`unknown case ${id}`); })();
+  const C = id => v.cases[id] || (() => { throw new Error(`unknown story ${id}`); })();
   const taught = v.taught;
   const plainName = id => v.thing(id).n;
   const R = {};
+  // the learner's word for an example (the app's SAY.example)
+  const EX = v.example;
+  // numbered steps (the app's T.S): a bold action, then one short sentence of why
+  const isSteps = body => Array.isArray(body) && body.length > 0 && typeof body[0] === 'object';
+  const stepsOut = (steps, c) => steps.map((st, i) => `${i + 1}. **${T.t(st.do, c).replace(/\*\*/g, '')}** ${T.t(st.why, c)}`);
+  const bodyOut = (body, c) => isSteps(body) ? [...stepsOut(body, c), ''] : blocks(T.P(body, c));
 
-  // rows are the key's questions in order, then what you must be able to point to (lesson standard E2).
-  // In a gate unit the one question's answers are the two names in the heading, so the first row is each
-  // family's plain words instead: every word in the table has been printed on an earlier card.
-  const pairTable = entry => {
-    const [x, y] = entry.pair;
-    const cell = (code, id) => v.answersFor(code, id).map(o => o.n).join(' / ') || `*${APP.notOnRoute}*`;
-    // the questions on the pair's routes that the learner has been taught (the app's pairSteps)
-    const taughtStep = s => s.unit === v.unit.id || v.unit.assumes.includes(s.unit) || v.unit.teaches.steps.includes(s.code);
-    const onRoute = s => v.answersFor(s.code, x).length || v.answersFor(s.code, y).length;
-    const rows = v.isGate ? [`| ${APP.inPlain} | ${cap(v.thing(x).plain)} | ${cap(v.thing(y).plain)} |`]
-      : v.steps.filter(s => taughtStep(s) && onRoute(s)).map(s => `| ${s.q} | ${cell(s.code, x)} | ${cell(s.code, y)} |`);
-    return [`| | ${plainName(x)} | ${plainName(y)} |`, '|---|---|---|', ...rows,
-      `| ${APP.pointTo} | ${cap(v.thing(x).needs)} | ${cap(v.thing(y).needs)} |`];
-  };
   // the key's own tie-break for a ledger pair, if it has one
   const tieLine = entry => {
     const [x, y] = entry.pair.map(id => v.answersFor(entry.step, id)[0].id);
     const tie = v.tieBreak(entry.step, x, y);
-    return tie ? APP.tieBreak(T.a(entry.step, tie.loser), tie.say, T.a(entry.step, tie.winner)) : null;
+    return tie ? APP.tieBreak(T.a(entry.step, tie.loser), tie.say, T.a(entry.step, tie.winner), EX) : null;
   };
   // the test is printed on every card of the pair; the side-by-side table once, on the first; the key's tie-break on the
   // exception card that teaches it (and from then on wherever the pair's test is listed)
   const tabled = new Set();
   const tellApart = (entry, withTie) => {
     const out = [`**${APP.tellApart}**`, '', T.t(entry.test), '', ...(withTie && tieLine(entry) ? [tieLine(entry), ''] : [])];
-    if (!tabled.has(entry.id)) { tabled.add(entry.id); out.push('**Side by side**', '', ...pairTable(entry), ''); }
-    return out;
+    return out;   // two names get no side-by-side table (the app's tellApart): the two stories and the test show it
   };
 
   // A fact unit's first card: what the unit is, and the groups of facts it holds (A12; the app's factOrient)
@@ -183,28 +171,26 @@ export function makeCardRenderers(v, T) {
     const out = [...blocks(T.P(card.canDo)), ...blocks(T.P(card.everyday)), ...blocks(T.P(card.add))];
     v.priorSteps.forEach(s => {
       out.push(`**What Unit One taught, in one place.** The first question is ${T.q(s.code)} Its answers:`, '');
-      s.options.forEach(opt => out.push(`- ${T.a(s.code, opt.id)}: give this answer when ${opt.when}.` + (opt.id === card.map.branch ? ' **This unit is about these cases.**' : '')));
+      s.options.forEach(opt => out.push(`- ${T.a(s.code, opt.id)}: give this answer when ${opt.when}.` + (opt.id === card.map.branch ? ` **This unit is about these ${EX === 'problem' ? 'problems' : 'stories'}.**` : '')));
       out.push('', APP.route, '', '*(One tap on any of these lines opens the card in Unit One that taught it.)*', '');
     });
+    // the app: the unit's questions, each answer with what it means (gate) or the names it leads to, then each name in one line
     if (v.isGate) {
-      // the gate itself: each answer with the plain words of its own family, and no second list of names
-      out.push(APP.previewGate(taught.length), '', `${v.gate.q}`);
+      out.push(`${v.gate.q}`);
       v.gate.options.forEach(opt => out.push(`- ${opt.n} → ${opt.plain}`));
       out.push('');
     } else {
-      out.push(APP.preview(taught.length), '');
       v.key.branches[card.map.branch].forEach(s => {
         out.push(`${s.q}`);
-        s.options.forEach(opt => out.push(`- ${opt.n} → ${opt.keeps.map(id => v.outcome(id).plain).join(' · ')}`));
+        s.options.forEach(opt => out.push(`- ${opt.n} → ${opt.keeps.filter(id => taught.includes(id)).map(id => v.outcome(id).n).join(' · ')}`));
         out.push('');
       });
-      out.push(`**The ${num(taught.length)} things, and the name each will get**`, '');
-      taught.forEach(id => out.push(`- ${cap(v.outcome(id).plain)}: ${v.outcome(id).n}`));
+      taught.forEach(id => out.push(`- ${v.outcome(id).n}: ${v.outcome(id).plain}`));
       out.push('');
     }
     out.push(`The unit has ${num(v.unit.parts.length)} parts, and you can stop after any of them.`, '');
     v.unit.parts.forEach((p, i) => out.push(`${i + 1}. ${p.title}`));
-    out.push('', `${APP.howTaught} ${APP.stakes}`);
+    out.push('', `${APP.howTaught(EX)} ${APP.stakes}`);
     return out;
   };
 
@@ -218,9 +204,9 @@ export function makeCardRenderers(v, T) {
   R.meet = card => {
     const c = C(card.case), oc = v.thing(v.subjectOf(card));
     const out = [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c, [card.mark]), '',
-      ...list(T.P(card.strip, c)), '', ...blocks(T.P(card.explain, c)),
-      `**${APP.pointTo}.** ${cap(oc.needs)}.`, '',
-      ...blocks(T.P(card.name, c)), ...(card.act ? [`**${APP.act}**`, '', ...blocks(T.P(card.act, c))] : [])];
+      ...blocks(T.P(card.explain, c)),
+      `**${APP.spotIt}**`, '', ...stepsOut(card.spot, c), '',
+      ...blocks(T.P(card.name, c)), ...(card.act ? [`**${APP.act}**`, '', ...bodyOut(card.act, c)] : [])];
     while (out[out.length - 1] === '') out.pop();
     if (oc.aka.length) out.push('', APP.aka(oc.aka, T.name(oc.id)));
     return out;
@@ -228,18 +214,18 @@ export function makeCardRenderers(v, T) {
 
   R.again = card => {
     const first = C(card.first), second = C(card.second);
-    return [T.t(card.link), '', `The first case again, in one line. *${first.name}*: ${T.quoteCues(first, card.step)}`, '',
-      'The second case.', ...(second.name ? ['', `*${second.name}*`] : []), '', T.show(second),   // the app: T.caseName(second) '', `**What to compare.** ${T.t(card.instruction)}`, '',
-      ...tapPrompt(T, second, APP.againStem(first.name, T.quoteCues(first, card.step)), card.prompt.answer), '',
+    return [T.t(card.link), '', `The first ${EX} again, in one line. *${first.name}*: ${T.quoteCues(first, card.step)}`, '',
+      `The second ${EX}.`, ...(second.name ? ['', `*${second.name}*`] : []), '', T.show(second),   // the app: T.caseName(second) '', `**What to compare.** ${T.t(card.instruction)}`, '',
+      ...tapPrompt(T, second, APP.againStem(first.name, T.quoteCues(first, card.step), EX), card.prompt.answer), '',
       '**What the two share**', '', ...blocks(T.P(card.shared))];
   };
 
   R.lens = card => [T.t(card.link), '', ...blocks(T.P(card.body)),
-    `**Stays the same from case to case:** ${T.P(card.fixed).join('; ')}`, '', `**Changes on purpose:** ${card.varies.join('; ')}.`];
+    `**Stays the same from ${EX} to ${EX}:** ${T.P(card.fixed).join('; ')}`, '', `**Changes on purpose:** ${card.varies.join('; ')}.`];
 
   R.portrait = card => [T.t(card.link), '', '**What it is usually like**', '', ...list(T.P(card.typical)), '',
     '**What it is not**', '', ...blocks(T.P(card.not)), '**Where you will hear it**', '', card.wild.join(' '), '', ...blocks(T.P(card.self)),
-    `**${APP.ask}**`, '', ...T.P(card.ask), ...(card.act ? ['', `**${APP.act}**`, '', ...T.P(card.act)] : [])];
+    `**${APP.ask}**`, '', ...T.P(card.ask), ...(card.act ? ['', `**${APP.act}**`, '', ...bodyOut(card.act)] : [])];
 
   R.refute = card => [T.t(card.link), '', `**The idea, as people say it:** ${card.idea}`, '', `**${card.verdict}**`, '',
     '**What is right instead**', '', ...blocks(T.P(card.right))];
@@ -255,17 +241,17 @@ export function makeCardRenderers(v, T) {
         ...(tabled.has(entry.id) ? [] : (tabled.add(entry.id), ['**Side by side**', '', ...factPairTable(entry), '']))];
     }
     const entry = v.ledger(card.ledger), [x, y] = card.cases.map(C);
-    return [T.t(card.link), '', '**Case A**', '', T.show(x), '', '**Case B**', '', T.show(y), '',
+    return [T.t(card.link), '', `**${cap(EX)} A**`, '', T.show(x), '', `**${cap(EX)} B**`, '', T.show(y), '',
       `**What to compare.** ${T.t(card.instruction)}`, '',
-      `**You are asked:** ${APP.whichStem(T.a(...card.prompt.option.split('.')))} (Case A / Case B)`, '',
-      `**Shown as soon as you answer.** Case ${card.prompt.answer === x.id ? 'A' : 'B'}.`, '', '**Why this one and not the other**', '',
+      `**You are asked:** ${APP.whichStem(T.a(...card.prompt.option.split('.')), EX)} (${cap(EX)} A / ${cap(EX)} B)`, '',
+      `**Shown as soon as you answer.** ${cap(EX)} ${card.prompt.answer === x.id ? 'A' : 'B'}.`, '', '**Why this one and not the other**', '',
       ...blocks(T.P(card.difference)), ...tellApart(entry, false)];
   };
 
   R.exception = card => {
     const c = C(card.case), entry = v.ledger(card.ledger);
     return [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c), '', T.t(card.setup), '',
-      ...tapPrompt(T, c, APP.exceptionStem(T.name(card.looksLike), T.name(card.is)), card.prompt.answer), '',
+      ...tapPrompt(T, c, APP.exceptionStem(T.name(card.looksLike), T.name(card.is), EX), card.prompt.answer), '',
       `**Why this is ${plainName(card.is)} and not ${plainName(card.looksLike)}**`, '', ...blocks(T.P(card.because, c)),
       ...tellApart(entry, true), ...blocks(T.P(card.take, c))];
   };
@@ -274,7 +260,7 @@ export function makeCardRenderers(v, T) {
     const s = v.step(card.step);
     const gateStep = v.isGate && s.code === v.gate.code;
     const single = !gateStep && s.options.every(opt => opt.keeps.filter(id => taught.includes(id)).length === 1);
-    const out = [T.t(card.link), '', `**${APP.keyAsks}** ${T.q(s.code)}`, '', `**What it is for.** ${s.purpose}.`, '',
+    const out = [T.t(card.link), '', `**${APP.keyAsks}** ${T.q(s.code)}`, '',
       '**Its answers**', ''];
     if (single) out.push(`Each answer leads to one name, and so rules out the other ${num(taught.length - 1)}.`, '');
     s.options.forEach(opt => {
@@ -283,12 +269,12 @@ export function makeCardRenderers(v, T) {
       const keeps = opt.keeps.filter(id => taught.includes(id)), gone = taught.filter(id => !keeps.includes(id));
       out.push(single ? `  - It leads to ${T.namesAt(keeps, card.id)}.` : `  - Keeps ${T.namesAt(keeps, card.id)}.` + (gone.length ? ` Rules out ${T.namesAt(gone, card.id)}.` : ''));
     });
-    out.push('', '**Why it decides**', '', s.why, '', ...blocks(T.P(card.decides)),
-      '**How to answer it from a case**', '', ...blocks(T.P(card.how)));
+    out.push('', '**Why it matters**', '', s.why, '', ...blocks(T.P(card.decides)),
+      '**How to answer it**', '', ...bodyOut(card.how));
     const entries = v.unit.ledger.filter(l => l.step === s.code && ledgerRead.has(l.id));
     if (entries.length) {
       out.push('**When two answers both seem to fit**', '', ...blocks(T.P(card.whenBoth)));
-      entries.forEach(l => out.push(`- ${plainName(l.pair[0])} or ${plainName(l.pair[1])}: ${T.t(l.test)}` + (tieLine(l) ? ` ${tieLine(l)}` : '')));
+      entries.forEach(l => out.push(`- ${plainName(l.pair[0])} or ${plainName(l.pair[1])}: ${T.t(l.test)}`));
       out.push('');
     }
     return out;
@@ -298,11 +284,9 @@ export function makeCardRenderers(v, T) {
     const c = C(card.case), own = v.thingOf(c);
     const out = [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c), ''];
     let live = taught;
-    // the reason behind each question is given in full in the unit's first worked case and in one line after that (P9 requires 5)
-    const first = Object.values(v.cards).filter(k => k.kind === 'worked')[0] === card;
     card.steps.forEach((st, i) => {
       const s = v.step(st.step), opt = v.option(st.step, c.route[st.step][0]);
-      out.push(`**Question ${i + 1} of ${card.steps.length}: ${s.q}**`, '', `What it is for: ${s.purpose.charAt(0).toLowerCase() + s.purpose.slice(1)}.` + (first ? ` ${s.why}` : ''), '', T.show(c, [st.step]), '',
+      out.push(`**Question ${i + 1} of ${card.steps.length}: ${s.q}**`, '', T.show(c, [st.step]), '',
         `Answer: ${T.a(st.step, opt.id)}`, '', ...blocks(T.P(st.reason, c)));
       if (v.isGate) return;
       live = live.filter(id => opt.keeps.includes(id));
@@ -311,12 +295,12 @@ export function makeCardRenderers(v, T) {
     });
     const p = card.hold.prompt, right = p.choices.find(x => x.id === p.answer);
     if (!v.isGate) out.push(`**Name it:** ${T.name(own)}`, '');
-    out.push(`**You are asked:** ${p.lead ? T.t(p.lead, c) + ' ' : ''}${APP.holdStem(T.name(own), T.name(card.hold.neighbor))}`, '');
+    out.push(`**You are asked:** ${p.lead ? `${T.t(p.lead, c)} ${APP.holdPick}` : APP.holdStem(T.name(own), T.name(card.hold.neighbor))}`, '');
     p.choices.forEach(x => out.push(`- (${x.id}) ${T.t(x.text, c)}`));
     out.push('', `**Shown as soon as you choose.** The one that settles it is (${right.id}): ${T.t(right.text, c)}`);
     p.choices.filter(x => x !== right).forEach(x => out.push(`- If you chose (${x.id}): ${T.t(x.note, c)}`));
     out.push('', `**Why this is ${plainName(own)} and not ${plainName(card.hold.neighbor)}**`, '', ...blocks(T.P(card.hold.reason, c)),
-      `**${APP.secondLook}**`, '', ...blocks(T.P(card.impression.text, c)));
+      `**${APP.secondLook(EX)}**`, '', ...blocks(T.P(card.impression.text, c)));
     while (out[out.length - 1] === '') out.pop();
     return out;
   };
@@ -331,8 +315,8 @@ export function makeCardRenderers(v, T) {
       s.options.forEach(opt => out.push(v.isGate ? `- ${opt.n}` : `- ${opt.n} → ${opt.keeps.map(id => v.outcome(id).n).join(' · ')}`));
       out.push('');
     });
-    out.push(`**For each name: ${APP.pointTo.charAt(0).toLowerCase() + APP.pointTo.slice(1)}, and ${APP.ask.charAt(0).toLowerCase() + APP.ask.slice(1)}**`, '');
-    taught.forEach(id => out.push(`- ${T.name(id)}: ${v.thing(id).needs}.`, ...(portraitOf(id) ? [`  - Ask: ${T.P(portraitOf(id).ask).join(' ')}`] : []), ...(portraitOf(id) && portraitOf(id).act ? [`  - Do: ${T.P(portraitOf(id).act).join(' ')}`] : [])));
+    out.push(`**For each name: ${APP.lookFor.charAt(0).toLowerCase() + APP.lookFor.slice(1)}, and ${APP.ask.charAt(0).toLowerCase() + APP.ask.slice(1)}**`, '');
+    taught.forEach(id => out.push(`- ${T.name(id)}: ${v.thing(id).needs}.`, ...(portraitOf(id) ? [`  - Ask: ${T.P(portraitOf(id).ask).join(' ')}`] : []), ...(portraitOf(id) && portraitOf(id).act ? [`  - Do: ${(isSteps(portraitOf(id).act) ? portraitOf(id).act.map(st => T.t(st.do)) : T.P(portraitOf(id).act)).join(' ')}`] : [])));
     out.push('', '**To carry away**', '', ...list(T.P(card.carry)));
     return out;
   };
@@ -343,5 +327,5 @@ export function makeCardRenderers(v, T) {
 
   R.plan = card => [T.t(card.link), '', ...blocks(T.P(card.intro)), ...card.cues.map(x => `- ${x.cue}, ${x.then}`), '', 'Or write your own: If …, then I will …'];
 
-  return { R, pairTable, tieLine };
+  return { R };
 }

@@ -95,7 +95,7 @@ function renderMixed(){
       <div class="topbar"><span class="m">Mixed drill</span></div>
       <div class="done-screen">
         <h2>Nothing to mix yet</h2>
-        <p>The mixed drill draws on the units you have finished, and on names that are due to come back. Finish a unit, drill and all, and its cases start coming here.</p>
+        <p>The mixed drill draws on the units you have finished, and on names that are due to come back. Finish a unit, drill and all, and its stories start coming here.</p>
         <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:300px;padding-top:6px">
           <button class="btn" data-v="library">Back to the library</button>
         </div>

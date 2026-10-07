@@ -38,12 +38,14 @@ const questionCardOf = code => cardsInOrder.find(c => c.kind === 'question' && c
 const taughtOn = card => card ? `- Taught on: “${headingOf[card.id] || cardHeading(card)}” (one tap opens the card).` : null;
 const taughtOnStep = code => taughtOn(questionCardOf(code)) || '- Taught in Unit One (one tap opens the card).';
 
+// the learner's word for an example (the app's SAY.example)
+const EXAMPLE = subject.meta.example || 'story';
 function cardHeading(card) {
   if (card.continues) return headingOf[card.continues] || cardHeading(v.cards[card.continues]);   // a chain keeps its first card's heading
   const name = id => v.thing(id).n;
-  if (card.kind === 'meet') return cap(v.thing(v.subjectOf(card)).plain);
-  if (card.kind === 'check') return card.ask.type === 'fact' ? APP.factCheckHeading : 'A question about a new case';
-  if (card.kind === 'again' && !card.h) return APP.againHeading(name(v.subjectOf(card)));
+  if (card.kind === 'meet') return name(v.subjectOf(card));   // the app: one name per idea
+  if (card.kind === 'check') return card.ask.type === 'fact' ? APP.factCheckHeading : `A question about a new ${EXAMPLE}`;
+  if (card.kind === 'again' && !card.h) return APP.againHeading(name(v.subjectOf(card)), EXAMPLE);
   if (card.kind === 'portrait' && !card.h) return APP.portraitHeading(name(v.subjectOf(card)));
   if (card.kind === 'lookalike' && !card.h) return APP.lookalikeHeading(...v.ledger(card.ledger).pair.map(name));
   return T.t(card.h).replace(/\*/g, '');
@@ -57,13 +59,13 @@ const stepLine = (c, code) => `${v.step(code).q} **${c.route[code].map(id => v.o
 // 3. after a miss, ONE line on the answer the learner chose (the app's answerMiss): the case's own line, the tie-break form,
 //    the nearest wrong name's reason, or a line from the key's own wording
 const genericMiss = (code, chosenId, rightId) =>
-  `You chose **${v.option(code, chosenId).n}**. Give that answer when ${v.option(code, chosenId).when}. This case shows something else: ${v.option(code, rightId).when.replace(/^the case shows /, '')}.`;
+  `You chose **${v.option(code, chosenId).n}**. Give that answer when ${v.option(code, chosenId).when}. This ${EXAMPLE} shows something else: ${v.option(code, rightId).when}.`;
 function answerMiss(c, code, chosenId, rightId) {
   const chosen = v.option(code, chosenId), right = v.option(code, rightId);
   if (c.miss && c.miss[chosenId]) return T.t(c.miss[chosenId], c);
   // the tie-break form is used only where the case really shows both answers (case.also), so it is never false
   const tie = (c.also || []).includes(chosenId) && v.tieBreak(code, chosenId, rightId);
-  if (tie && tie.loser === chosenId) return `You chose **${chosen.n}**. This case does show that. It also shows ${tie.say}, and when a case shows both, the answer is **${right.n}**.`;
+  if (tie && tie.loser === chosenId) return `You chose **${chosen.n}**. This ${EXAMPLE} does show that. It also shows ${tie.say}, and when a ${EXAMPLE} shows both, the answer is **${right.n}**.`;
   if (c.not && (chosenId === c.not.outcome || (chosen.keeps.length === 1 && chosen.keeps[0] === c.not.outcome))) return T.t(c.not.why, c);
   return genericMiss(code, chosenId, rightId);
 }
@@ -72,14 +74,14 @@ function ownChoiceLines(c, code, among, rightId) {
   const others = among.filter(id => id !== rightId);
   const written = others.filter(id => answerMiss(c, code, id, rightId) !== genericMiss(code, id, rightId));
   return [...written.map(id => `- If you chose **${v.option(code, id).n}**: ${answerMiss(c, code, id, rightId)}`),
-    ...(written.length < others.length ? [`- ${written.length ? 'Any other answer' : 'Any wrong answer'}: one line on what that answer needs, and what this case shows instead.`] : [])];
+    ...(written.length < others.length ? [`- ${written.length ? 'Any other answer' : 'Any wrong answer'}: one line on what that answer needs, and what this ${EXAMPLE} shows instead.`] : [])];
 }
 // the app's nameMiss: the case's own line, else the nearest wrong name's reason, else a line from the two names' needs
 function nameMissLines(c) {
   const own = Object.entries(c.miss || {}).filter(([id]) => v.isThing(id) && id !== notOf(c));
   return [...(c.not ? [`- If you chose ${T.o(notOf(c))}: ${T.t(c.not.why, c)}`] : []),
     ...own.map(([id, line]) => `- If you chose ${T.o(id)}: ${T.t(line, c)}`),
-    `- ${c.not || own.length ? 'Any other name' : 'Any wrong name'}: one line on what that name needs, and what this case shows instead.`];
+    `- ${c.not || own.length ? 'Any other name' : 'Any wrong name'}: one line on what that name needs, and what this ${EXAMPLE} shows instead.`];
 }
 
 // a fact asked from memory (A12; the app's factHtml): the other rows of its own card are the choices
@@ -120,9 +122,9 @@ function renderCheck(card) {
   const answer = v.option(ask.step, c.route[ask.step][0]);
   // E4: after a thing's own cards, the feedback joins the words in the case, the key's answer and the name.
   // In a gate unit the answer is the name, so there are two things to join, not three.
-  const joined = v.isGate ? (afterThing && ask.type === 'phrase' ? ` The answer for this case is ${T.a(ask.step, answer.id)}.` : '')
-    : afterThing && ask.type === 'phrase' ? ` The answer for this case is ${T.a(ask.step, answer.id)}, and the name is ${T.o(c.outcome)}.`
-    : afterThing ? ` The name that goes with this answer is ${T.o(c.outcome)}.` : ` This answer leads to ${T.namesAt(answer.keeps.filter(id => v.taught.includes(id)), card.id)}.`;
+  const joined = v.isGate ? (afterThing && ask.type === 'phrase' ? ` That makes it ${T.a(ask.step, answer.id)}.` : '')
+    : afterThing && ask.type === 'phrase' ? ` That makes the answer ${T.a(ask.step, answer.id)}, and the name ${T.o(c.outcome)}.`
+    : afterThing ? ` That makes the name ${T.o(c.outcome)}.` : ` This answer leads to ${T.namesAt(answer.keeps.filter(id => v.taught.includes(id)), card.id)}.`;
   say(T.show(c), '');
   if (ask.type === 'phrase') {
     const right = c.segments.find(s => s.text.includes(ask.answer));
@@ -137,7 +139,7 @@ function renderCheck(card) {
   const among = ask.type === 'step' ? allIds(ask.step) : ask.among;
   // E4: before the question's own card, an option check offers only the answers met so far and says so
   const prompt = namedSteps.has(ask.step) ? `${APP.keyAsks}** ${T.q(ask.step)}`
-    : `${APP.keyAsks}** ${T.q(ask.step)} Which of the answers you have met so far fits this case?`;
+    : `${APP.keyAsks}** ${T.q(ask.step)} Which of the answers you have met so far fits this ${EXAMPLE}?`;
   say(`**${prompt}`, '', ...optionLines(ask.step, among), '', '**Shown as soon as you answer**', '');
   say(`- If you are right: “Right: **${answer.n}.**” ${stepReason(c, ask.step)}${joined}`);
   say(`- If you miss: “The answer is **${answer.n}.**” The same reason follows, then one line on the answer you chose:`);
@@ -184,7 +186,7 @@ function renderItem(item, rung) {
   if (typeof item === 'object' && item.tell) {
     const entry = v.ledger(item.tell), [x, y] = entry.pair;
     const options = unit.ledger.filter(l => l.pair.includes(x) || l.pair.includes(y));
-    say(`**You are asked:** You cannot decide whether a case is ${T.name(x)} or ${T.name(y)}. Which question do you put to the case?`, '',
+    say(`**You are asked:** You cannot decide whether a ${EXAMPLE} is ${T.name(x)} or ${T.name(y)}. Which question do you put to it?`, '',
       ...options.map(l => `- ${T.t(l.test)}`), '', '**Shown as soon as you answer**', '',
       `- The answer is: “${T.t(entry.test)}” ${T.t(entry.rule)}`,
       ...options.filter(l => l !== entry).map(l => `- If you chose “${T.t(l.test)}”: that question separates ${T.names(l.pair)}.`),
@@ -198,11 +200,11 @@ function renderItem(item, rung) {
     const picked = [...new Set(bank.map(c => c.route[GATE][0]))].map(f => bank.find(c => c.route[GATE][0] === f));
     const c = (picked.length ? picked : bank)[earlierSeen++ % (picked.length || bank.length)];
     if (c.kind === 'problem') { say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}, unlabeled. This is a sample.)*`, ''); return renderProblem(c, 'route'); }
-    say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}: its drill and return cases, due ones first. The learner is not told which unit it is from. This is a sample.)*`, '', T.show(c), '', `**You are asked:** ${v.key.gate.q}`, '',
+    say(`*(Drawn by the app from the bank of Unit ${from ? from.tag : item.earlier}: its drill and return stories, due ones first. The learner is not told which unit it is from. This is a sample.)*`, '', T.show(c), '', `**You are asked:** ${v.key.gate.q}`, '',
       ...optionLines(GATE, allIds(GATE)), '', '**Shown as soon as you answer**', '',
       `- If you are right: “Right: **${v.option(GATE, c.route[GATE][0]).n}.**” ${stepReason(c, GATE)}`,
       `- If you miss: “The answer is …”, the same reason, then one line on the answer you chose.`,
-      `- Then, right or wrong: “${APP.stopsHere}”`);
+      `- Then, right or wrong: “${APP.stopsHere(EXAMPLE)}”`);
     return;
   }
   if (typeof item === 'object' && item.fact) return renderFact(item.fact);
@@ -211,7 +213,7 @@ function renderItem(item, rung) {
     const entry = v.ledger(item.separator), [x, y] = entry.pair, codes = v.unit.teaches.steps;
     const answers = (code, id) => v.answersFor(code, id).map(o => o.n);
     const right = codes.find(code => !answers(code, x).some(a => answers(code, y).includes(a)));
-    say(`**You are asked:** You cannot tell whether a case is ${T.o(x)} or ${T.o(y)}. Which question tells these two apart?`, '',
+    say(`**You are asked:** You cannot tell whether a ${EXAMPLE} is ${T.o(x)} or ${T.o(y)}. Which question tells these two apart?`, '',
       ...codes.map(code => `- ${v.step(code).q}`), '', '**Shown as soon as you answer**', '',
       `- The answer is: **${v.step(right).q}** ${T.t(entry.rule)} ${T.o(x)}: ${answers(right, x).join(' or ')}. ${T.o(y)}: ${answers(right, y).join(' or ')}.`,
       ...codes.filter(code => code !== right).map(code => `- If you chose “${v.step(code).q}”: “You chose that question. Both of these give the answer ${answers(code, x).filter(a => answers(code, y).includes(a)).join(' and ')}, so that question does not separate them.”`),
@@ -221,7 +223,7 @@ function renderItem(item, rung) {
   const c = v.cases[typeof item === 'string' ? item : item.case];
   if (c.kind === 'reverse') {
     const own = v.subjectOf(c), right = c.options.find(o => o.voice === own);
-    const stem = c.expect === 'hear' ? 'Which of these would you expect to hear?' : 'Which detail would you expect to find in the case?';
+    const stem = c.expect === 'hear' ? 'Which of these would you expect to hear?' : `Which detail would you expect to find in the ${EXAMPLE}?`;
     say(`**You are asked:** This is ${T.name(own)}. ${stem}`, '', ...c.options.map(o => `- ${o.text}`), '', '**Shown as soon as you answer**', '',
       `- The answer is: ${right.text} ${T.t(c.why)}`, ...c.options.filter(o => o !== right).map(o => `- If you chose ${o.text.startsWith('"') ? o.text : `“${o.text}”`}: that belongs to ${T.name(o.voice)}.`),
       taughtOn(cardsInOrder.find(k => k.kind === 'portrait' && v.subjectOf(k) === own)));
@@ -245,13 +247,11 @@ function renderClaim(c, demo) {
   say(`> ${c.text}`, '');
   const needsLines = v.taught.map(id => `- ${cap(v.thing(id).needs)}`);
   const question = c.ask.type === 'missing'
-    ? (v.isGate ? `The claim treats what it describes as ${T.name(c.ask.name)}. What would you need to see in the case before that answer could be given?`
-                : `The claim uses the name ${T.o(c.ask.name)}. What would you need to see in the case before that name could be used?`)
+    ? `The claim uses the name ${T.name(c.ask.name)}. What would you need to see in the ${EXAMPLE} before that name could be used?`
     : `${v.step(c.ask.step).q} (asked of ${v.isGate ? 'what the claim describes' : 'the reasoning in the claim itself'})`;
   const choices = c.ask.type === 'missing' ? needsLines : optionLines(c.ask.step, allIds(c.ask.step));
   const answer = c.ask.type === 'missing' ? cap(v.thing(c.ask.name).needs) : v.option(c.ask.step, c.ask.answer).n;
-  const otherLine = v.isGate ? '- If you chose another line: “That is what you must be able to point to for «the kind it belongs to», which is not the kind the claim treats this as.”'
-    : '- If you chose another line: “That is what you must be able to point to for «the name it belongs to», which is not the name the claim uses.”';
+  const otherLine = '- If you chose another line: “That is what you look for in «the name it belongs to», which is not the name the claim uses.”';
   if (demo) say('*Worked for you. Nothing is asked.*', '', `**The question:** ${question}`, '', ...choices, '', `**The answer:** ${answer}.`);
   else say(`**You are asked:** ${question}`, '', ...choices, '', '**Shown as soon as you answer**', '', `- The answer is: **${answer}.**`,
     c.ask.type === 'missing' ? otherLine : `- If you chose another answer: one line on what that answer needs, and what the claim shows instead.`);
@@ -274,11 +274,11 @@ const STAGE = {
   fact: 'Answer each fact from memory.'
 };
 const stageText = ask => ask === 'route' && unit.kind === 'P' ? 'No help. Answer the questions, say what kind of problem it is, then solve it.'
-  : ask === 'route' && v.isGate ? 'No help. Name each case.' : STAGE[ask];
+  : ask === 'route' && v.isGate ? `No help. Name each ${EXAMPLE}.` : STAGE[ask];
 // the app's SAY.drillIntro
 const drillIntro = (v.isFacts ? 'The cards are out of view. Facts that are easy to swap sit next to each other on purpose. '
-    : 'The cards are out of view, and every case is new. Cases that are easy to mix up sit next to each other on purpose. ')
-  + (earlierCount ? `${cap(num(earlierCount))} of the cases come${earlierCount === 1 ? 's' : ''} from an earlier unit. ` : '')
+    : `The cards are out of view, and every ${EXAMPLE} is new. Ones that are easy to mix up sit next to each other on purpose. `)
+  + (earlierCount ? `${cap(num(earlierCount))} of them come${earlierCount === 1 ? 's' : ''} from an earlier unit. ` : '')
   + 'Nothing is graded. What you miss comes back before the drill ends and on later days.';
 
 /* ---------- the document ---------- */
@@ -287,12 +287,12 @@ const draft = unit.status === 'draft' ? ' · Draft: not yet read by a newcomer' 
 say(`# Learner view: ${subject.meta.name}, Unit ${unit.tag}: ${title}`, '',
   `*${unit.subtitle}.* Unit revision ${unit.rev}, built to lesson standard ${unit.standard}, status: ${unit.status}.`, '',
   'This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.', '',
-  '- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What you must be able to point to" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).',
+  '- **Bold text in quotation marks** is the subject’s own wording for its questions and answers, written once and printed everywhere. Bold names are the names, written once in the same place. Neither is typed anywhere else. "What to look for" lines and "How to tell them apart" lines are also printed from one place each (the subject’s questions and the pairs it compares).',
   v.isGate ? '- This is the subject’s first unit. It teaches the first question, and its names are that question’s answers: wherever a bold answer in quotation marks appears, it is also the name of a kind.' : null,
-  '- ⟦Double brackets⟧ show the words the app marks in a case (one highlight style everywhere).',
+  '- ⟦Double brackets⟧ show the words the app marks in a story (one highlight style everywhere).',
   '- The line in italics under each heading is the app’s top bar. The line in square brackets after it is for reviewers and is not shown to the learner.',
   '- Headings, prompt wording and stage instructions that are the same in every unit are the app’s wording, not this unit’s.',
-  '- "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a case is met, or after a miss.',
+  '- "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a story is met, or after a miss.',
   '- After every answer the app shows: right or wrong; the reason, quoting the marked words; after a miss, one line on the answer the learner chose; and a link to the card that taught it.', '');
 
 let n = 0;
@@ -327,18 +327,18 @@ unit.parts.forEach((part, pi) => {
       if (rung.demo) { say('**A claim worked for you**', ''); renderClaim(v.cases[rung.demo], true); say(''); }
       flat(rung).forEach(item => { k++; say(`**Drill item ${k} of ${count}**`, ''); renderItem(item, rung); say(''); });
     });
-    say(`**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, ${v.isGate ? 'mixed cases beside single questions, the pair of kinds' : 'whole cases beside single questions, the pair of names'} they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. ${APP.stakes}`, '');
+    say(`**When the drill ends.** The learner sees their own results: first-try accuracy for each stage, ${v.isGate ? 'mixed stories beside single questions, the pair of kinds' : 'whole stories beside single questions, the pair of names'} they mixed up most often, and what will come back and when. Anything missed was asked again before the drill ended. ${APP.stakes}`, '');
     (part.close || []).forEach(renderCard);
   }
   const next = unit.parts[pi + 1];
   say(next ? `*End of part ${pi + 1}. You can stop here; your place is kept. Next: part ${pi + 2}, ${next.title}.*`
-           : `*End of Unit ${unit.tag}. Every name comes back on later days with a new case: what you missed first, in a day or two, and the rest a little later.*`, '');
+           : `*End of Unit ${unit.tag}. Every name comes back on later days with a new ${EXAMPLE}: what you missed first, in a day or two, and the rest a little later.*`, '');
 });
 
 say('---', '', '## After the unit: what comes back on later days', '',
-  `A name that is due returns as a case the learner has not seen, next to a case of the name they most often confuse it with. ${v.isGate ? 'Each is asked the first question, with the full feedback of the last case stage.' : 'Each is run as a whole case: every question, then the name.'} These are the fresh cases held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.`, '');
+  `A name that is due returns as a story the learner has not seen, next to a story of the name they most often confuse it with. ${v.isGate ? 'Each is asked the first question, with the full feedback of the last story stage.' : 'Each is run as a whole story: every question, then the name.'} These are the fresh stories held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.`, '');
 unit.drill.returns.forEach((id, i) => {
-  say(`**Return case ${i + 1} of ${unit.drill.returns.length}**`, '');
+  say(`**Return story ${i + 1} of ${unit.drill.returns.length}**`, '');
   if (v.isGate) renderGateCase(v.cases[id], true); else if (v.cases[id].kind === 'problem') renderProblem(v.cases[id], 'route'); else renderCaseItem(v.cases[id], 'route');
   say('');
 });
@@ -346,4 +346,4 @@ unit.drill.returns.forEach((id, i) => {
 const file = new URL(`../../docs/learner-view/${SUBJECT}-${UNIT}.md`, import.meta.url);
 await mkdir(new URL('.', file), { recursive: true });
 await writeFile(file, out.join('\n') + '\n');
-console.log(`${file} written: ${n} cards, ${unit.drill.rungs.reduce((s, r) => s + flat(r).length, 0)} drill items, ${unit.drill.returns.length} return cases, ${out.join(' ').split(/\s+/).length} words`);
+console.log(`${file} written: ${n} cards, ${unit.drill.rungs.reduce((s, r) => s + flat(r).length, 0)} drill items, ${unit.drill.returns.length} return stories, ${out.join(' ').split(/\s+/).length} words`);

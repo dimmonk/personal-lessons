@@ -1,7 +1,7 @@
 // Section 8, cases and feedback: V30 to V35, V37, V52, V53, V54. A rule that reads a unit's own cases runs per unit;
 // the part of it that reads specimens (which belong to the subject, not to a unit) runs once per subject under the same id.
 import { unitRule, subjectRule, checkEach } from './rule.mjs';
-import { cuesOf, joined, hasToken, isFilled, unique, duplicatesOf } from './text.mjs';
+import { cuesOf, joined, hasToken, isFilled, unique, duplicatesOf, paras, sentenceCount } from './text.mjs';
 
 const unitAndSubject = (id, run) => [unitRule(id, run), subjectRule(id, run)];
 const isUnit = ctx => ctx.unitId !== undefined;
@@ -198,7 +198,33 @@ export const V54 = unitRule('V54', (u, check) => {
   }
 }, { kinds: ['branch', 'gate'] });   // a fact unit has no routes, and a procedure unit's second look is the solved example (section 8 table)
 
+/* ---------- V63: feedback is short ---------- */
+// After an answer the learner reads the reason, and after a miss one line on what they chose (E5). Each is at most two
+// sentences, quoting the words that decide it (section 20). Read on every story's reason, not, miss, tappable-piece
+// notes, wouldChange and claim fault, and on the notes of every prompt choice on a card.
+export const FEEDBACK_SENTENCES = 2;
+const feedbackFields = c => [
+  ...Object.entries(c.reason || {}).map(([k, t]) => [`reason.${k}`, t]),
+  ...(c.not ? [['not.why', c.not.why]] : []),
+  ...Object.entries(c.miss || {}).map(([k, t]) => [`miss.${k}`, t]),
+  ...(c.segments || []).filter(s => s.note).map((s, i) => [`segments.${i}.note`, s.note]),
+  ...(c.wouldChange ? [['wouldChange', c.wouldChange]] : []),
+  ...(c.fault ? [['fault', c.fault]] : [])];
+const promptNotes = card => [card.prompt, card.hold && card.hold.prompt].filter(Boolean)
+  .flatMap(p => (p.choices || []).filter(x => x.note).map(x => [`choice ${x.id} note`, x.note]));
+// A "tap the words" check after a name's own card closes its reason with the app's one-line "That makes it …",
+// so that story's reason has one sentence to itself.
+const joinedChecks = ctx => new Set(isUnit(ctx) ? ctx.cards.filter(k => k.kind === 'check' && k.ask.type === 'phrase' && !ctx.steps.some(s => s.code === k.after)).map(k => k.case) : []);
+function V63(ctx, check) {
+  const tooLong = limit => ([where, t]) => { const n = paras(t).reduce((sum, p) => sum + sentenceCount(p), 0);
+    return n > limit ? [`${where} is ${n} sentences; feedback is at most ${FEEDBACK_SENTENCES}${limit < FEEDBACK_SENTENCES ? ', the app’s closing line included' : ''}`] : []; };
+  const joined = joinedChecks(ctx);
+  for (const c of [...stories(ctx), ...(isUnit(ctx) ? ctx.caseList.filter(k => k.use === 'claim') : [])])
+    checkEach(check, caseName(c), feedbackFields(c).flatMap(([where, t]) => tooLong(joined.has(c.id) && where.startsWith('reason') ? FEEDBACK_SENTENCES - 1 : FEEDBACK_SENTENCES)([where, t])));
+  if (isUnit(ctx)) for (const card of ctx.cards) checkEach(check, `card ${card.id}`, promptNotes(card).flatMap(tooLong(FEEDBACK_SENTENCES)));
+}
+
 export const RULES_CASES = [
   ...unitAndSubject('V30', V30), ...unitAndSubject('V31', V31), V32, ...unitAndSubject('V33', V33), V34,
-  ...unitAndSubject('V35', V35), V37_subject, V37_unit, ...unitAndSubject('V52', V52), ...unitAndSubject('V53', V53), V54
+  ...unitAndSubject('V35', V35), V37_subject, V37_unit, ...unitAndSubject('V52', V52), ...unitAndSubject('V53', V53), V54, ...unitAndSubject('V63', V63)
 ];

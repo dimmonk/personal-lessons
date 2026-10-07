@@ -77,7 +77,7 @@ function stageQueue(v, rung){
 }
 function stageInstruction(v, rung){
   if(rung.ask === 'route' && v.unit.kind === 'P') return SAY.stage.routeSolve();
-  if(rung.ask === 'route' && v.isGate) return SAY.stage.routeGate();
+  if(rung.ask === 'route' && v.isGate) return SAY.stage.routeGate(SAY.example(v));
   const say = SAY.stage[rung.ask] || lessonFail(`drill stage "${rung.ask}" has no instruction`);
   if(rung.ask === 'finish') return say(v.priorSteps.length);
   return say();
@@ -102,7 +102,7 @@ function unitDrillRun(subj, v, context, fromAsk){
   const start = fromAsk ? Math.max(0, rungs.findIndex(r => r.ask === fromAsk)) : 0;
   const stages = rungs.slice(start).map(rung => ({ ask: rung.ask, instruction: stageInstruction(v, rung), demo: rung.demo || null, queue: stageQueue(v, rung), shownIntro: false }));
   const earlier = rungs.flatMap(r => r.items.flat()).filter(raw => typeof raw === 'object' && raw.earlier).length;
-  return { subj, v, context, title: context === 'again' ? 'Practice again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(earlier, v.isFacts) : null,
+  return { subj, v, context, title: context === 'again' ? 'Practice again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(earlier, v.isFacts, SAY.example(v)) : null,
            add: context === 'unit' ? v.unit.drill.add : null, stages, si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
 }
 // A run over items from several units (a returned set, the faulty-claims tile): one stage, whose items name their own unit.
@@ -115,7 +115,7 @@ function returnSetRun(subj, items){
   const allFacts = items.length > 0 && items.every(i => i.fact);
   const intro = allFacts
     ? 'These are facts that are due to come back, each next to the fact it is most often swapped with. Each is asked from memory. ' + SAY.stakes
-    : 'These are names that are due to come back, each on a case you have not seen, next to a case of the name it is most often taken for. Answer every question in order, then give the name. ' + SAY.stakes;
+    : 'These are names that are due to come back, each on a story you have not seen, next to a story of the name it is most often taken for. Answer every question in order, then give the name. ' + SAY.stakes;
   return crossUnitRun(subj, { context: 'return', title: 'Due today', intro, ask: allFacts ? 'fact' : 'route',
     instruction: allFacts ? SAY.stage.fact() : SAY.stage.route(), queue: items.map(i => ({ returned: true, unitId: i.unitId, caseId: i.caseId, fact: i.fact })) });
 }
@@ -241,7 +241,7 @@ function mountDrillRun(host, run, onEnd){
 function runResultsHtml(run){
   const firsts = run.tries.filter(t => t.first);
   const acc = list => { const a = firstTryAccuracy(list); return a.n ? `${a.ok} of ${a.n}` : '—'; };
-  const stageNames = { name: 'Naming', piece: 'One question at a time', finish: 'Finishing the answers', route: 'Whole cases', claim: 'Faulty claims',
+  const stageNames = { name: 'Naming', piece: 'One question at a time', finish: 'Finishing the answers', route: 'Whole stories', claim: 'Faulty claims',
                        last: 'The last step', whole: 'Whole problems', fact: 'Facts from memory' };
   const stages = [...new Set(run.tries.map(t => t.stage))];
   const whole = firsts.filter(t => ['finish', 'route', 'whole'].includes(t.mode)), single = firsts.filter(t => ['piece', 'name', 'tell', 'reverse', 'separator', 'fact', 'last'].includes(t.mode));
@@ -252,10 +252,10 @@ function runResultsHtml(run){
   const worst = Object.keys(confusions).sort((a, b) => confusions[b] - confusions[a])[0];
   const rows = [];
   if(run.context === 'return'){
-    rows.push(['Cases that came back today', acc(firsts)]);
+    rows.push(['Stories that came back today', acc(firsts)]);
   } else {
     stages.forEach(s => rows.push([stageNames[s] || s, acc(firsts.filter(t => t.stage === s))]));
-    if(whole.length && single.length){ rows.push(['All whole cases, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
+    if(whole.length && single.length){ rows.push(['All whole stories, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
   }
   // action subjects: accuracy on sound cases beside cases with a fault (lesson standard E8)
   const named = firsts.filter(t => t.target && t.mode !== 'reverse');
@@ -286,9 +286,9 @@ function dueSummary(subjectId){
     const v = unitView(subjectId, unitId);
     v.taught.forEach(t => { const s = returnState(v, unitId, t); if(s.due) dates.push(s.due); });
   });
-  if(!dates.length) return 'Every name comes back on later days with a new case, starting about two days after its unit’s drill.';
+  if(!dates.length) return 'Every name comes back on later days with a new story, starting about two days after its unit’s drill.';
   const dueNow = dates.filter(d => d <= now).length, next = dates.filter(d => d > now).sort()[0];
   const days = next ? Math.round((new Date(next) - new Date(now)) / 86400000) : null;
   return (dueNow ? `${cap(numWord(dueNow))} name${dueNow === 1 ? ' is' : 's are'} due now. ` : '')
-    + (next ? `The next return is in ${days} day${days === 1 ? '' : 's'}, on a case you have not seen.` : 'Nothing else is scheduled yet.');
+    + (next ? `The next return is in ${days} day${days === 1 ? '' : 's'}, on a story you have not seen.` : 'Nothing else is scheduled yet.');
 }
