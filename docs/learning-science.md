@@ -1377,7 +1377,7 @@ P5 ("with an explicit mapping" became "say which name it means"), P14 ("two chec
 
 #### What this changes for the lesson standard
 
-The designs drafted before this pass (`docs/lesson-standard/_drafts-sonnet/`) were written against the earlier text. Before any of them is adopted it must be checked against: no glossary card (P4 requires 3); the heading rule (P7 requires 5); screen fit as a check, never a limit (P7 requires 3); the order of section 4.3, with a check at the end of every step and the key question taught at the contrast; the key as a map and the side-by-side table (P30); mixed problem types in procedure units (P22 requires 8); the record kept against outcomes and key questions, with fresh cases on return (P24 requires 1); and the subject-level rules of section 4.4.
+The designs drafted before this pass (once `docs/lesson-standard/_drafts-sonnet/`, removed on 2026-10-08 after every subject was rebuilt and rewritten) were written against the earlier text. Before any of them is adopted it must be checked against: no glossary card (P4 requires 3); the heading rule (P7 requires 5); screen fit as a check, never a limit (P7 requires 3); the order of section 4.3, with a check at the end of every step and the key question taught at the contrast; the key as a map and the side-by-side table (P30); mixed problem types in procedure units (P22 requires 8); the record kept against outcomes and key questions, with fresh cases on return (P24 requires 1); and the subject-level rules of section 4.4.
 
 #### Still open after this pass
 
