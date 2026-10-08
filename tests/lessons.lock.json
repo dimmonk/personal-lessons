@@ -21,6 +21,10 @@
       "rev": 4,
       "fp": "sha256:83317f53446f69ee74ed5b41489b74c87fd1b9db5c060a18b8d0298e3d230183"
     },
+    "singing": {
+      "rev": 1,
+      "fp": "sha256:df33597c38eb74db2215025a2681f91778062b01035232a10d2c7943f1aae6e5"
+    },
     "stats": {
       "rev": 4,
       "fp": "sha256:93018192ef8328d63c0e6e97e39e9a031c71300562c634893a446cc7ab4f0eee"
@@ -185,6 +189,36 @@
       "rev": 4,
       "standard": 1,
       "fp": "sha256:c37077648626b133d06f08ab0d67dd17a4dac44d8a3ad32afc628f6983259493"
+    },
+    "singing/u1": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:f34faee0f8c6f0a7a37eb5aa0d036d5ead3416315b11aa759efc8d1f72433f4b"
+    },
+    "singing/u2": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:39d22dd101ff92a355d6d907117488dd4ee93ab5752eb75f8ce6688e94f20c99"
+    },
+    "singing/u3": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:bd0253f6085c49830e2a19d5a7e6f2a8844b381058f42a32a13db73205747ae3"
+    },
+    "singing/u4": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:e2687c4b0f31f7fde8b1cc5a587e19a31155d12a99f3de9b683859e6d4bb14d2"
+    },
+    "singing/u5": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:611eda4bf5c0b4cdbd188cdf4153355a5c0d9f48426cf2f78916f7425687cc25"
+    },
+    "singing/u6": {
+      "rev": 1,
+      "standard": 1,
+      "fp": "sha256:f4cab45176c8387b07a5de88db76e3f293051965cb8117ee0034c0f7a39a6695"
     },
     "stats/u1": {
       "rev": 5,

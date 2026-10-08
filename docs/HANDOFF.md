@@ -17,8 +17,9 @@ Every subject is in the interactive format of `docs/lesson-standard.md` (version
 | Scams (action) | 6 | gate, 4 branch, 1 fact | 27 |
 | Wealth Preservation (action) | 5 | gate, 4 branch | 27 |
 | US Civics | 10 | gate, 4 branch, 5 fact | 20 |
+| Singing (action) | 6 | gate, 4 branch, 1 fact | 19 |
 
-All 42 units are `status: 'draft'`: none has had the cold read the standard requires before a unit is live (A14). The owner reading a unit cold is that check. Unit revisions start at 1 (Psychology Unit Two is at 2, the Psychology subject record at 3); raise `rev` whenever content changes after a deploy and run `npm run lock`.
+All 48 units are `status: 'draft'`: none has had the cold read the standard requires before a unit is live (A14). The owner reading a unit cold is that check. Unit revisions start at 1 (Psychology Unit Two is at 2, the Psychology subject record at 3); raise `rev` whenever content changes after a deploy and run `npm run lock`.
 
 **Plain words.** The standard's names for the lesson machinery ("key", "route", "gate", "branch", "specimen", "determination", "ledger") are never shown to the learner: one list, `tests/plain-words.mjs`, is checked by the validator (V50) on every unit, key line and subject note, and by the browser tests on every screen as shown. What to say instead is in the standard, K9. This came from the owner's first cold read.
 
@@ -34,7 +35,9 @@ All 42 units are `status: 'draft'`: none has had the cold read the standard requ
 
 The method: the subject's key first (one agent per subject), then one agent per unit, with Psychology Unit One as the approved example. The bar is the owner's read: a card that takes a second read is a defect.
 
-`npm test` runs the data checks, about 1.1 million lesson checks, 86 negative controls and about 69,000 browser checks.
+`npm test` runs the data checks, about 1.6 million lesson checks, 86 negative controls and the browser checks on every unit.
+
+**Singing (2026-10-08).** A new subject for someone who sings for fun, built from nothing to the standard: the key and the plan (`docs/rebuild/singing-plan.md`) written first, then the six units on Sonnet, one agent per unit, with Scams Units One, Two and Six as the examples. The first question is "What bothers you about it?" with five kinds, one of them nothing wrong (the voice is just not the record's); four branches of one question each (the top notes, the air, the note, the sound of the words), each ending in a name for the voice doing fine as well as names for what went wrong; and a fact unit on looking after the voice. Nineteen names, nineteen specimens, a baseline of six stories. One thing the build settled: **a line of the key (`why`, `when`, `plain`, `needs`, `means`) is plain text and carries no token.** The app prints those lines escaped (`public/app/lessons/cards.js`, `ask.js`) and no subject's key uses a token in them, so a key line names a term in ordinary words; the validator's allowance in V6 for a term used "in the key" is dormant. Every unit starts at `rev: 1`, `status: 'draft'`: the owner's cold read is what remains.
 
 ## 3. How the rebuild was done (and how to change a subject now)
 - **The key first.** Each subject's `key.js` is the one vocabulary; every card prints its wording by token. Keys were rewritten on Opus to section 6 (K2) of the standard; the plan for each subject, with every key change and why, is `docs/rebuild/<subject>-plan.md`.

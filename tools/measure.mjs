@@ -26,19 +26,20 @@ const oldWords = subject => {
 
 // how many units each subject had in the old card format (its whole text, cards, drills and cases, is divided among them)
 const OLD_UNITS = { psychology: 6, ideology: 5, math: 7, stats: 7, scams: 7, wealth: 7, civics: 7 };
-const rows = [], subjects = Object.keys(OLD_UNITS);
+// a subject that never had the old format (Singing, added 2026-10-08) has no old column
+const rows = [], subjects = (await readdir(new URL('../public/subjects/', import.meta.url))).sort();
 for (const s of subjects) {
   const meta = await readFile(new URL(`../public/subjects/${s}/subject.js`, import.meta.url), 'utf8');
   const units = meta.match(/units:\s*\[([^\]]*)\]/)[1].replace(/['\s]/g, '').split(',');
-  const old = oldWords(s);
+  const old = OLD_UNITS[s] ? Math.round(oldWords(s) / OLD_UNITS[s]) : null;
   for (const u of units) {
     const md = await readFile(new URL(`../docs/learner-view/${s}-${u}.md`, import.meta.url), 'utf8');
-    rows.push({ unit: `${s}/${u}`, oldPerUnit: Math.round(old / OLD_UNITS[s]), now: onePass(md) });
+    rows.push({ unit: `${s}/${u}`, oldPerUnit: old, now: onePass(md) });
   }
 }
 if (opt('--save')) await writeFile(opt('--save'), JSON.stringify(rows, null, 1));
 const before = opt('--before') ? Object.fromEntries(JSON.parse(await readFile(opt('--before'), 'utf8')).map(r => [r.unit, r.now])) : null;
 console.log(['unit', 'old (avg per unit)', before ? 'before trim' : '', 'one read-through now'].filter(Boolean).join(' | '));
-rows.forEach(r => console.log([r.unit, r.oldPerUnit, ...(before ? [before[r.unit]] : []), r.now].join(' | ')));
+rows.forEach(r => console.log([r.unit, r.oldPerUnit ?? '–', ...(before ? [before[r.unit]] : []), r.now].join(' | ')));
 const med = a => [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)];
-console.log(`median | ${med(rows.map(r => r.oldPerUnit))}${before ? ` | ${med(Object.values(before))}` : ''} | ${med(rows.map(r => r.now))}`);
+console.log(`median | ${med(rows.filter(r => r.oldPerUnit !== null).map(r => r.oldPerUnit))}${before ? ` | ${med(Object.values(before))}` : ''} | ${med(rows.map(r => r.now))}`);

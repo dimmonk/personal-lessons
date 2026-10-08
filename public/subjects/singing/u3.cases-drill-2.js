@@ -1,0 +1,95 @@
+// Singing, Unit Three: drill stories for the route stage: the first question and this unit's question together. Clean groups
+// first, then the stories whose surface misleads. echo names a teaching story of a DIFFERENT name whose story the story is built
+// to bring back. Every story carries marked words and a reason for both questions, and not names a look-alike.
+
+FC.cases('singing', 'u3', [
+
+  /* ---------- clean ---------- */
+  { id: 'b-r-openmic-fine', use: 'drill', tier: 'clean', setting: 'openmic', topic: 'a mirror check before a solo',
+    text: "Backstage at an open mic, Aisha worries that she breathes too high. In the mirror her belly moves out, her shoulders stay down, and her breath is silent. On stage she sings the long first line and has air left at the end.",
+    outcome: 'breathfine', route: { D1: ['breath'], B1: ['lasts'] },
+    cues: { D1: 'worries that she breathes too high',
+            B1: ['her belly moves out, her shoulders stay down, and her breath is silent', 'has air left at the end'] },
+    reason: { D1: 'Aisha doubts her breathing: {cue:D1}. That is a question about the air.',
+              B1: 'Her breath was low and silent, and she had air left: {cue:B1}.' },
+    not: { outcome: 'shallowbreath', why: 'Her shoulders stayed down and the breath was silent, so it was not a high one.' } },
+
+  { id: 'b-r-church-gasp', use: 'drill', tier: 'clean', setting: 'church', topic: 'a gasp before a long hymn line',
+    text: "In church, Leo gasps in before the long line of the opening hymn. His chest and shoulders lift, and the air is gone before the line ends, so the last words come out squeezed.",
+    outcome: 'shallowbreath', route: { D1: ['breath'], B1: ['gone'] },
+    cues: { D1: 'the air is gone before the line ends',
+            B1: ['gasps in before the long line', 'His chest and shoulders lift', 'the air is gone before the line ends'] },
+    reason: { D1: 'The air gives out before the line ends: {cue:D1}. That is a problem with the air.',
+              B1: 'His breath was a gasp that lifted his chest and shoulders: {cue:B1}.' },
+    not: { outcome: 'unplanned', why: 'The breath itself was the problem, a gasp that lifted his shoulders. It was not a full, low breath taken in the wrong place.' } },
+
+  { id: 'b-r-car-chopped', use: 'drill', tier: 'clean', setting: 'car', topic: 'a pop song cut at every phrase',
+    text: "Kenji sings along to a pop song in the car. Every breath is low and full, belly out and shoulders still, but he breathes only when he runs out, so he splits 'everything' in two and takes another halfway through the next phrase.",
+    outcome: 'unplanned', route: { D1: ['breath'], B1: ['grabbed'] },
+    cues: { D1: "he splits 'everything' in two",
+            B1: ['Every breath is low and full, belly out and shoulders still', "he breathes only when he runs out, so he splits 'everything' in two"] },
+    reason: { D1: 'A word is split by a breath: {cue:D1}. That is a problem with the air.',
+              B1: 'His breaths were low and full, but he took them wherever he ran out: {cue:B1}.' },
+    not: { outcome: 'shallowbreath', why: 'His breaths were low and full, with the shoulders still. The trouble was where he took them, not how.' } },
+
+  { id: 'b-r-party-leak', use: 'drill', tier: 'clean', setting: 'party', topic: 'a soft party song that leaks',
+    text: "At a party, Fiona sings a soft song for her friends. She breathes in low and quietly, but her friends can hear air escaping with every note, the sound is soft and whispery, and she is out of air after two lines.",
+    outcome: 'airytone', route: { D1: ['breath'], B1: ['leak'] },
+    cues: { D1: 'she is out of air after two lines',
+            B1: ['air escaping with every note, the sound is soft and whispery', 'out of air after two lines'] },
+    reason: { D1: 'The air gives out fast: {cue:D1}. That is a problem with the air.',
+              B1: 'Her breath was low and quiet, but air escaped with a soft, whispery sound: {cue:B1}.' },
+    not: { outcome: 'forcing', why: 'Nothing was driven out hard. The air leaked softly, and the sound was whispery, not harsh.' } },
+
+  { id: 'b-r-home-shove', use: 'drill', tier: 'clean', setting: 'home', topic: 'a big ending sung alone',
+    text: "At home, Hamza sings the big ending of a song at full volume. He shoves the air out hard on every word, the sound is loud and harsh, and his throat is tired afterward.",
+    outcome: 'forcing', route: { D1: ['breath'], B1: ['force'] },
+    cues: { D1: 'He shoves the air out hard on every word',
+            B1: ['He shoves the air out hard on every word, the sound is loud and harsh', 'his throat is tired afterward'] },
+    reason: { D1: 'The air is driven out hard: {cue:D1}. That is a problem with the air.',
+              B1: 'The air was shoved out and the sound was loud and harsh: {cue:B1}.' },
+    not: { outcome: 'airytone', why: 'The sound was loud and harsh, not soft and whispery, and no air hissed through it.' } },
+
+  /* ---------- misleading ---------- */
+  { id: 'b-r-choir-quick', use: 'drill', tier: 'misleading', setting: 'choir', topic: 'a quick breath that is still low',
+    echo: 'b-meet-gasp',
+    text: "In choir, Lena has only a beat to breathe before the fast verse, and she is sure a breath that quick must be a gasp. In the mirror at rehearsal, her belly moves out, her shoulders stay down, and the breath makes almost no sound. She sings the fast verse and has air left at the end.",
+    outcome: 'breathfine', route: { D1: ['breath'], B1: ['lasts'] },
+    cues: { D1: 'she is sure a breath that quick must be a gasp',
+            B1: ['her belly moves out, her shoulders stay down, and the breath makes almost no sound', 'has air left at the end'] },
+    reason: { D1: 'Lena doubts her breathing: {cue:D1}. That is a question about the air.',
+              B1: 'The breath was quick, but it was low and almost silent, and she had air left: {cue:B1}.' },
+    not: { outcome: 'shallowbreath', why: 'Marcus’s gasp lifted his shoulders. Lena’s belly moved out and her shoulders stayed down.' },
+    wouldChange: 'If her shoulders had jumped up with the quick breath, the name would be {o:shallowbreath}.' },
+
+  { id: 'b-r-kids-shove', use: 'drill', tier: 'misleading', setting: 'kids', topic: 'a loud last line after a high gasp',
+    echo: 'b-meet-chorus', also: ['force'],
+    text: "At a sing-along for kids, Tomas jumps into the loud last line. He gasps in with his shoulders up, then drives the air out hard, and the sound is loud and harsh. The air is gone before the last word.",
+    outcome: 'shallowbreath', route: { D1: ['breath'], B1: ['gone'] },
+    cues: { D1: 'The air is gone before the last word',
+            B1: ['He gasps in with his shoulders up', 'The air is gone before the last word'] },
+    reason: { D1: 'The air gives out early: {cue:D1}. That is a problem with the air.',
+              B1: 'He gasped in with his shoulders up before he shoved the air out: {cue:B1}. The quick, high breath comes first, and a shove after it does not change the answer.' },
+    not: { outcome: 'forcing', why: 'The shove is there, but it came after a quick, high breath. The breath is what to fix first.' } },
+
+  { id: 'b-r-openmic-bigger', use: 'drill', tier: 'misleading', setting: 'openmic', topic: 'a singer who blames the size of her breath',
+    echo: 'b-meet-gasp',
+    text: "At an open mic, Ines tells the host that she runs out of air after two short lines, so she takes a bigger breath. It is low and quiet, with her belly out and her shoulders still, but the sound still comes out soft and whispery, with air hissing out along with every note.",
+    outcome: 'airytone', route: { D1: ['breath'], B1: ['leak'] },
+    cues: { D1: 'she runs out of air after two short lines',
+            B1: ['the sound still comes out soft and whispery, with air hissing out along with every note', 'It is low and quiet, with her belly out and her shoulders still'] },
+    reason: { D1: 'Ines runs out of air fast: {cue:D1}. That is a problem with the air.',
+              B1: 'Her breath was low and quiet, but air hissed out with a whispery sound: {cue:B1}.' },
+    not: { outcome: 'shallowbreath', why: 'Running out in two lines can look like a high breath, but hers was low and quiet. The hiss in the sound is the leak.' } },
+
+  { id: 'b-r-kids-hiss', use: 'drill', tier: 'misleading', setting: 'kids', topic: 'a lullaby pushed to cover a hiss',
+    echo: 'b-meet-whisper',
+    text: "Greg sings a lullaby to his niece, and he hears a hiss in the soft sound, so he pushes more air through to cover it. The air is driven out hard now, the sound is loud and harsh, and his throat is tired by the second line.",
+    outcome: 'forcing', route: { D1: ['breath'], B1: ['force'] },
+    cues: { D1: 'he pushes more air through to cover it',
+            B1: ['The air is driven out hard now, the sound is loud and harsh', 'his throat is tired by the second line'] },
+    reason: { D1: 'Greg pushes more air through: {cue:D1}. That is a problem with the air.',
+              B1: 'The air was driven out hard, and the sound was loud and harsh: {cue:B1}.' },
+    not: { outcome: 'airytone', why: 'The hiss was there at first, but the sound is now loud and harsh. The trouble now is the air being shoved.' },
+    wouldChange: 'If he had left the air alone and the hiss had stayed, the name would be {o:airytone}.' }
+]);
