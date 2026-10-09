@@ -45,6 +45,7 @@ The method: the subject's key first (one agent per subject), then one agent per 
 - **Engine gaps were fixed at the root as real data hit them**, never worked around in a lesson. Section 17 of the standard lists every one.
 
 ## 4. Open
+- **Sound for Singing (2026-10-09).** The subject has no audio, and the owner asked for notes and examples. The assessment, the engine change it needs and two questions with recommendations are in `docs/singing-audio.md`: read it before touching the subject.
 - **Cold read.** Read units as a beginner and report anything unclear; a report that a card is confusing is a defect (A14). Start with Psychology Unit One.
 - **Done: American English.** The owner is Canadian and moving to the United States: every subject is in dollars, with US rules, accounts and institutions (IRS, 401(k), FTC) and US spelling. `tests/american.mjs` lists British forms; V60 and the browser tests keep them out, case stories included.
 - **Not built** (unchanged from before): E3 typed reasons, E10, E12, E15 (the deploy-time list of drafts and unverified sources). Several `refute` cards cite sources marked unverified in `build.wrongIdeas`.
