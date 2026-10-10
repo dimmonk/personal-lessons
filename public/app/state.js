@@ -32,7 +32,7 @@ function touch(id){ RECENT[id] = Date.now(); storageSave('pl:recent', RECENT); }
 
 const SAVED = storageLoad('pl:app', {view:'library', subjectId:null, filter:'all', sort:'recent'});
 const APP = {
-  view:'library', subjectId:null, query:'', mixed:null, refMode:'units',
+  view:'library', subjectId:null, query:'', refMode:'units',
   filter: ['all','progress','done','new'].includes(SAVED.filter) ? SAVED.filter : 'all',
   sort:   SAVED.sort === 'az' ? 'az' : 'recent'
 };

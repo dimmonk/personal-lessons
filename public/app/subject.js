@@ -38,7 +38,6 @@ function renderSubject(subj){
 
     <div class="block"><button class="btn" id="resume">${resumeText}${icon('arrow',17)}</button></div>
 
-    ${dueTileForSubject(subj)}
     ${keyGlance(subj)}
     ${detCard(subj)}
 
@@ -65,7 +64,6 @@ function renderSubject(subj){
   on('[data-v]', el => go(el.dataset.v));
   on('[data-u]', el => openUnit(subj, +el.dataset.u));
   on('[data-ref]', el => go('reference', {refMode: el.dataset.ref}));
-  on('[data-due]', el => startDue(el.dataset.due));
   on('[data-again]', el => startAgain(subj.id, el.dataset.again));
   on('[data-claims]', () => startClaims(subj.id));
   on('#resume', () => resumeSubject(subj.id));

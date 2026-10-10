@@ -36,7 +36,7 @@ function renderLibrary(){
       <p>Learn the questions that decide a call, then practice them on real stories that come with no label.</p>
     </div>
     <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects, units, cards</span></button>
-    ${dueTileForLibrary()}
+    ${reviewTileForLibrary()}
     ${cont ? continueCard(cont) : ''}
     <div class="chips">${chips.map(([k,label]) =>
       `<button class="chip ${APP.filter===k?'on':''}" data-f="${k}">${esc(label)}</button>`).join('')}</div>
@@ -62,7 +62,7 @@ function renderLibrary(){
   on('[data-v]', el => go(el.dataset.v));
   on('#sortBtn', () => { APP.sort = APP.sort === 'az' ? 'recent' : 'az'; saveApp(); renderLibrary(); });
   on('[data-resume]', el => resumeSubject(el.dataset.resume));
-  on('[data-due]', el => startDue(el.dataset.due));
+  on('[data-review-start]', startReview);
 }
 
 /* Where "resume" actually lands: after a finished unit, the next one. */

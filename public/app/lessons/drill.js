@@ -2,7 +2,7 @@
 // Practice as a ramp (lesson standard E6): stages in order; inside a stage the authored groups are shuffled
 // within their tier band (clean, then varied, then misleading) and never split, so look-alikes stay next to
 // each other; a missed item comes back at least three items later until it has been answered right once.
-// The same runner asks a returned set (E9) and "Practice again" (E14).
+// The same runner asks a subject's part of the weekly review (E9, section 24) and "Practice again" (E14).
 
 const TIER_BANDS = ['clean', 'varied', 'misleading'];
 const REQUEUE_GAP = 3;
@@ -83,7 +83,7 @@ function stageInstruction(v, rung){
   return say();
 }
 
-/* ---------- a run: a unit's drill, a returned set, or "Practice again" ---------- */
+/* ---------- a run: a unit's drill, a part of the review, or "Practice again" ---------- */
 // run = { subj, v, context, title, stages:[{ ask, instruction, demo, queue:[raw], intro }], si, qi, current, tries:[], onEnd }
 // Action subjects (lesson standard A10, V37): every stage that asks about cases holds one where nothing was wrong,
 // so the learner is never taught that every case has a fault.
@@ -105,18 +105,17 @@ function unitDrillRun(subj, v, context, fromAsk){
   return { subj, v, context, title: context === 'again' ? 'Practice again' : 'The drill', intro: context === 'unit' ? SAY.drillIntro(earlier, v.isFacts, SAY.example(v)) : null,
            add: context === 'unit' ? v.unit.drill.add : null, stages, si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
 }
-// A run over items from several units (a returned set, the faulty-claims tile): one stage, whose items name their own unit.
+// A run over items from several units (the review, the faulty-claims tile): one stage, whose items name their own unit.
 // queue entries: { unitId, caseId } | { unitId, fact }, and returned: true where the item is a return (the results count those apart).
 function crossUnitRun(subj, { context, title, intro, ask, instruction, queue }){
   return { subj, v: null, context, title, intro, add: null, stages: [{ ask, instruction, demo: null, queue, shownIntro: true }],
            si: 0, qi: 0, current: null, tries: [], started: false, asked: [], met: [] };
 }
-function returnSetRun(subj, items){
+// One subject's part of the weekly review (lesson standard section 24): every item is a whole story or a fact from memory, asked
+// with its answer and reason after each; `intro` names the subject. Tries are recorded with the context 'review'.
+function reviewRun(subj, items, intro){
   const allFacts = items.length > 0 && items.every(i => i.fact);
-  const intro = allFacts
-    ? 'These are facts that are due to come back, each next to the fact it is most often swapped with. Each is asked from memory. ' + SAY.stakes
-    : 'These are names that are due to come back, each on a story you have not seen, next to a story of the name it is most often taken for. Answer every question in order, then give the name. ' + SAY.stakes;
-  return crossUnitRun(subj, { context: 'return', title: 'Due today', intro, ask: allFacts ? 'fact' : 'route',
+  return crossUnitRun(subj, { context: 'review', title: 'Review', intro, ask: allFacts ? 'fact' : 'route',
     instruction: allFacts ? SAY.stage.fact() : SAY.stage.route(), queue: items.map(i => ({ returned: true, unitId: i.unitId, caseId: i.caseId, fact: i.fact })) });
 }
 // The faulty claims of units the learner has finished, asked the way a drill asks them: the learner answers before the fault is shown.
@@ -137,15 +136,16 @@ const runCounts = run => ({
 });
 
 /* ---------- Back, inside a drill (lesson standard E11) ---------- */
-// A drill inside a unit goes back to the cards: the run keeps its place, so Next comes back to it. A returned set or
+// A drill inside a unit goes back to the cards: the run keeps its place, so Next comes back to it. A review or
 // "Practice again" has run.leave and goes back to where it was started. The control belongs to the drill's frame, above the
 // part that every answer repaints, so it is never lost.
-const drillBackHtml = run => `<div class="drillnav"><button class="linkish" data-drill-back>${icon('back', 14)}${esc(run.leave ? SAY.backFrom(run.subj.name) : SAY.backToCards)}</button></div>`;
+const drillBackHtml = run => `<div class="drillnav"><button class="linkish" data-drill-back>${icon('back', 14)}${esc(run.leave ? SAY.backFrom(run.backName || run.subj.name) : SAY.backToCards)}</button></div>`;
 const wireDrillBack = run => on('[data-drill-back]', () => run.leave ? run.leave() : goBack(UNIT_RUN));
-// A drill that is not part of a unit (a returned set, "Practice again"): its own screen, with its Back control.
+// A drill that is not part of a unit (a review, "Practice again"): its own screen, with its Back control. A run goes back to the
+// subject unless it says otherwise (run.leaveView, run.backName).
 function paintDrillScreen(subj, run, label, onEnd){
   screenEl().innerHTML = `<div class="pane" style="--accent:${subj.accent}">
-    <div class="topbar"><button class="iconbtn" data-v="subject" aria-label="Back to ${esc(subj.name)}">${icon('back', 20)}</button><span class="m">${label}</span><span class="spacer"></span></div>
+    <div class="topbar"><button class="iconbtn" data-v="${run.leaveView || 'subject'}" aria-label="${esc(SAY.backFrom(run.backName || subj.name))}">${icon('back', 20)}</button><span class="m">${label}</span><span class="spacer"></span></div>
     ${drillBackHtml(run)}<div id="host"></div></div>`;
   on('[data-v]', el => go(el.dataset.v));
   wireDrillBack(run);
@@ -251,12 +251,8 @@ function runResultsHtml(run){
   });
   const worst = Object.keys(confusions).sort((a, b) => confusions[b] - confusions[a])[0];
   const rows = [];
-  if(run.context === 'return'){
-    rows.push(['Stories that came back today', acc(firsts)]);
-  } else {
-    stages.forEach(s => rows.push([stageNames[s] || s, acc(firsts.filter(t => t.stage === s))]));
-    if(whole.length && single.length){ rows.push(['All whole stories, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
-  }
+  stages.forEach(s => rows.push([stageNames[s] || s, acc(firsts.filter(t => t.stage === s))]));
+  if(whole.length && single.length){ rows.push(['All whole stories, every stage', acc(whole)]); rows.push(['All single questions, every stage', acc(single)]); }
   // action subjects: accuracy on sound cases beside cases with a fault (lesson standard E8)
   const named = firsts.filter(t => t.target && t.mode !== 'reverse');
   if(run.subj && FC.get(run.subj.id).meta && FC.get(run.subj.id).meta.action && named.some(t => t.legit) && named.some(t => !t.legit)){
@@ -272,7 +268,7 @@ function runResultsHtml(run){
   }
   const due = dueSummary(run.subj.id);
   return `<div class="done-screen results">
-      <h2>${run.context === 'return' ? 'That set is done' : 'The drill is done'}</h2>
+      <h2>The drill is done</h2>
       <p>These are your first tries. Anything missed was asked again before the end. ${SAY.stakes}</p>
       <table class="k results">${rows.map(([label, value]) => `<tr><td>${esc(label)}</td><td>${esc(value)}</td></tr>`).join('')}</table>
       ${confusion}

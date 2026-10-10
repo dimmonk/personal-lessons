@@ -169,8 +169,8 @@ export const CONTROLS = [
     data: (d, h) => h.setIn(d, unit('standard'), 0) },
   { rule: 'V46', name: 'content changed and the lock was not regenerated', keepLock: true,
     data: (d, h) => h.updateIn(d, meta('blurb'), appended('Changed after the lock was written.')) },
-  { rule: 'V46', name: 'deployed content changed without a higher revision', keepLock: true, also: ['V69'],   // changed content with no approved design is also what V69 refuses
-    input: input => ({ ...input, committedLock: { standard: 1, subjects: {}, units: { [`${P}/${U}`]: { rev: input.data.subjects[P].units[U].rev, standard: 1, fp: 'sha256:' + '0'.repeat(64), deployed: '2026-10-20' } } } }) },   // the unit's own revision, deployed with other content
+  { rule: 'V46', name: 'deployed content changed without a higher revision', keepLock: true,
+    input: input => ({ ...input, designs: { ...input.designs, [P]: approvedAs(input.designs[P], { endResult: '2026-10-10', practice: '2026-10-10', pilot: '2026-10-10' }) }, committedLock: { standard: 1, subjects: {}, units: { [`${P}/${U}`]: { rev: input.data.subjects[P].units[U].rev, standard: 1, fp: 'sha256:' + '0'.repeat(64), deployed: '2026-10-20' } } } }) },   // the unit's own revision, deployed with other content
   { rule: 'V47', name: 'a script file is over the line limit', keepLock: true,
     input: input => ({ ...input, site: { ...input.site, files: [...input.site.files, { path: 'subjects/psychology/u9.cards-1.js', lines: 801 }] } }) },
   { rule: 'V49', name: 'two units share a drill key',

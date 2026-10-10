@@ -4,6 +4,7 @@ import { startServer } from './static-server.mjs';
 import { testUnits, testUnitAt360, testDraftUnits, testMigration } from './e2e-unit.mjs';
 import { testLessonEngineReview } from './e2e-review.mjs';
 import { testNewScreens } from './e2e-screens.mjs';
+import { testWeeklyReview } from './e2e-weekly.mjs';
 import { testKinds } from './e2e-kinds.mjs';
 import { testAudio } from './e2e-audio.mjs';
 import { APP_JARGON, abstractIn } from './plain-words.mjs';
@@ -81,7 +82,7 @@ async function inspect(page, label) {
 async function testScreens() {
   for (const width of WIDTHS) {
     const { context, page } = await freshPage(width);
-    for (const v of ['library', 'mixed', 'progress']) {
+    for (const v of ['library', 'review', 'progress']) {
       await clickVisible(page, `[data-v="${v}"]`);
       await inspect(page, `${width}px ${v}`);
     }
@@ -163,6 +164,7 @@ try {
   await testMigration(unitEnv);
   await testLessonEngineReview(unitEnv);
   await testNewScreens(unitEnv);
+  await testWeeklyReview(unitEnv);
   await testKinds(unitEnv);
   await testAudio(unitEnv);
   await testPwa();

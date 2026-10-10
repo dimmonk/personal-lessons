@@ -10,7 +10,6 @@ const MAX_TRIES = 12;
 const MAX_LOG = 500;
 const RETURN_GAPS = [2, 7, 24];        // days: after the drill or a miss, after the first good day, after the second
 const ACTION_LATE_GAP = 84;            // action subjects add one return about twelve weeks after the third (E9)
-const RETURN_SET_SIZE = 6;
 const NAME_MODES = ['name', 'finish', 'route', 'spec', 'fact'];
 
 const dayOf = date => `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
@@ -166,14 +165,14 @@ function returnState(v, unitId, target){
   const from = level === 0 ? anchor : goodDays[level - 1];
   return { level, due: addDays(from, gaps[level]) };
 }
-// The names due today across a subject's finished units: [{ unitId, target, due }]
-function dueReturns(subjectId){
-  const sv = subjectView(subjectId), now = today(), out = [];
+// The names due on or before `through` (today unless said otherwise) across a subject's finished units: [{ unitId, target, due }]
+function dueReturns(subjectId, through = today()){
+  const sv = subjectView(subjectId), out = [];
   sv.unitIds().filter(unitId => rebuiltUnitDone(subjectId, unitId)).forEach(unitId => {
     const v = unitView(subjectId, unitId);
     v.taught.forEach(target => {
       const state = returnState(v, unitId, target);
-      if(state.due && state.due <= now) out.push({ unitId, target, due: state.due });
+      if(state.due && state.due <= through) out.push({ unitId, target, due: state.due });
     });
   });
   return out.sort((a, b) => a.due < b.due ? -1 : a.due > b.due ? 1 : 0);
@@ -215,18 +214,32 @@ function returnItemsFor(v, due, items){
   const beside = neighbor && pickReturnCase(v, unitId, neighbor, [...used, own.c.id]);
   return [own, ...(beside ? [beside] : [])].map(p => ({ unitId, caseId: p.c.id, repeat: p.repeat }));
 }
-// The returned set: each due name on a case, next to a case of the name it is most often taken for.
-function buildReturnSet(subjectId){
+/* ---------- the weekly review: what is due by the end of the week (lesson standard E9, section 24) ---------- */
+// Weeks run Monday to Sunday in local time. `day` is 'YYYY-MM-DD'; the answer is that week's Sunday.
+function weekEnd(day = today()){
+  const [y, m, d] = day.split('-').map(Number), sinceMonday = (new Date(y, m - 1, d).getDay() + 6) % 7;
+  return addDays(day, 6 - sinceMonday);
+}
+// Everything a subject has due on or before the end of this week, each name asked as E9 pairs it: a case of it next to a case of
+// the name it is most often taken for, or in a fact unit the row next to the row it is most often swapped with. No cap and
+// nothing random: the same record gives the same items. [{ unitId, caseId, repeat } | { unitId, fact, repeat }]
+function reviewItems(subjectId){
   const items = [];
-  for(const due of dueReturns(subjectId)){
-    if(items.length >= RETURN_SET_SIZE) break;
-    const v = unitView(subjectId, due.unitId);
-    returnItemsFor(v, due, items).forEach(p => {
-      if(p.repeat) logEvent('repeat', { subject: subjectId, unit: due.unitId, card: p.caseId });
-      items.push(p.fact ? { unitId: p.unitId, fact: p.fact } : { unitId: p.unitId, caseId: p.caseId });
+  for(const due of dueReturns(subjectId, weekEnd())){
+    returnItemsFor(unitView(subjectId, due.unitId), due, items).forEach(p => {
+      items.push(p.fact ? { unitId: p.unitId, fact: p.fact, repeat: false } : { unitId: p.unitId, caseId: p.caseId, repeat: p.repeat });
     });
   }
-  return items.slice(0, RETURN_SET_SIZE);
+  return items;
+}
+// The earliest day after `after` on which any name of any finished unit falls due, or null when nothing more is scheduled.
+function nextReturnDate(after){
+  const dates = [];
+  SUBJECTS.forEach(subj => subjectView(subj.id).unitIds().filter(unitId => rebuiltUnitDone(subj.id, unitId)).forEach(unitId => {
+    const v = unitView(subj.id, unitId);
+    v.taught.forEach(target => { const s = returnState(v, unitId, target); if(s.due && s.due > after) dates.push(s.due); });
+  }));
+  return dates.sort()[0] || null;
 }
 
 /* ---------- figures for the results and progress screens ---------- */

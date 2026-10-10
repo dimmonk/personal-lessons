@@ -230,9 +230,6 @@ table.k td b{color:var(--text)}
 .vblock p{margin:0;font-family:var(--serif);font-size:16.5px;line-height:1.6;color:var(--body);text-wrap:pretty}
 .vblock.soft p{color:var(--bodydim)}
 
-.score{display:flex;align-items:center;justify-content:space-between;gap:10px;
-  margin-top:20px;padding-top:12px;border-top:1px solid var(--divider)}
-
 /* ---------- action bar ---------- */
 /* The bar sits over the foot of the page. A control scrolled into view (by a tap, a Tab or a script) must clear it, not stop under it. */
 html{scroll-padding-bottom:120px}

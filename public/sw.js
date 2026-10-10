@@ -2,7 +2,7 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v12';
+const CACHE = 'fieldcraft-v13';
 const SHELL = [
   './', 'manifest.json', 'app.css', 'app-screens.css',
   'app/helpers.js', 'app/registry.js', 'subjects/ideology/subject.js', 'subjects/ideology/key.js',
@@ -176,11 +176,11 @@ const SHELL = [
   'subjects/singing/u6.unit.js', 'subjects/singing/u6.cards-1.js', 'subjects/singing/u6.cards-2.js', 'subjects/singing/u6.cases-1.js',
   'subjects/singing/specimens.js', 'app/lessons/view.js', 'app/lessons/records.js',
   'app/state.js', 'app/shell.js', 'app/library.js', 'app/subject.js',
-  'app/reference.js', 'app/mixed.js', 'app/progress.js', 'app/search.js',
+  'app/reference.js', 'app/progress.js', 'app/search.js',
   'app/lessons/audio-notes.js', 'app/lessons/audio-pitch.js', 'app/lessons/audio-synth.js',
   'app/lessons/audio-meter.js', 'app/lessons/audio-card.js', 'app/lessons/cards.js', 'app/lessons/ask.js', 'app/lessons/drill.js', 'app/lessons/taught.js',
   'app/lessons/unit-flow.js', 'app/lessons/unit.js', 'app/lessons/key-map.js', 'app/lessons/key-reference.js',
-  'app/lessons/practice.js', 'app/lessons/returns.js', 'app/lessons/review-first.js', 'app/lessons/determination.js',
+  'app/lessons/practice.js', 'app/lessons/review.js', 'app/lessons/review-first.js', 'app/lessons/determination.js',
   'app/init.js', 'fonts/fonts.css', 'fonts/bricolage-grotesque-latin.woff2', 'fonts/literata-latin.woff2',
   'fonts/jetbrains-mono-latin.woff2', 'icons/favicon.svg', 'icons/favicon-32.png', 'icons/apple-touch-icon.png',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png'

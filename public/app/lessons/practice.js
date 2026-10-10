@@ -1,10 +1,10 @@
 /* ===================== SCREENS: RUNS OUTSIDE A UNIT ===================== */
-// A returned set ("Due today") and "Practice again" are drill runs that live on their own screens, not inside a unit.
-// Both are built by the engine (returnSetRun, unitDrillRun in drill.js) and asked by its runner (mountDrillRun); this
+// "Practice again" and the faulty-claims tile are drill runs that live on their own screens, not inside a unit.
+// Both are built by the engine (unitDrillRun, claimsRun in drill.js) and asked by its runner (mountDrillRun); this
 // file hosts them (paintDrillScreen gives each its Back control), and ends each on the results screen (lesson standard E10, E11, E14).
 // PRACTICE is this visit's working state; what is learned is stored by the engine, in the practice record.
 
-let PRACTICE = null;   // { kind: 'due' | 'again' | 'claims', subj, run, ... }
+let PRACTICE = null;   // { kind: 'again' | 'claims', subj, run, ... }
 
 /* ---------- Practice again: the drill from the piece stage on, the least recently seen cases first ---------- */
 const lastSeenDay = (subjectId, unitId, id) => { const t = triesOf(subjectId, unitId, id); return t.length ? t[t.length - 1].d : ''; };

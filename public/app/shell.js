@@ -1,6 +1,6 @@
 /* ===================== RENDER ROOT ===================== */
 
-const TABBED = ['library','mixed','progress','subject'];
+const TABBED = ['library','review','progress','subject'];
 
 function render(){
   const subj = currentSubject();
@@ -9,7 +9,8 @@ function render(){
   renderTabbar();
   switch(APP.view){
     case 'search':   return renderSearch();
-    case 'mixed':    return renderMixed();
+    case 'review':   return renderReview();
+    case 'reviewrun': return renderReviewRun();
     case 'progress': return renderProgress();
   }
   if(!subj){ APP.view = 'library'; return renderLibrary(); }
@@ -17,7 +18,6 @@ function render(){
     case 'subject':   return renderSubject(subj);
     case 'unit':      return renderUnit(subj);
     case 'det':       return renderDet(subj);
-    case 'due':       return renderDue(subj);
     case 'again':     return renderAgain(subj);
     case 'claims':    return renderClaims(subj);
     case 'reviewfirst': return renderReviewFirst(subj);
@@ -32,16 +32,12 @@ function renderTabbar(){
   bar.style.display = '';
   const tabs = [
     ['library', 'Library',     'library', ['library','subject'].includes(APP.view)],
-    ['mixed',   'Mixed drill', 'target',  APP.view === 'mixed'],
+    ['review',  REVIEW_TEXT.tab, 'target', APP.view === 'review'],
     ['progress','Progress',    'bars',    APP.view === 'progress']
   ];
   bar.innerHTML = tabs.map(([v,label,ic,isOn]) =>
     `<button data-v="${v}" class="${isOn?'on':''}">${icon(ic,20)}<span>${label}</span></button>`).join('');
-  on('button', el => {
-    const v = el.dataset.v;
-    if(v === 'mixed' && !APP.mixed) APP.mixed = buildMixed(12);
-    go(v);
-  }, bar);
+  on('button', el => go(el.dataset.v), bar);
 }
 
 function renderRail(){
@@ -63,13 +59,9 @@ function renderRail(){
     }).join('')}</div>
     <div class="rfoot">
       <button data-v="library" class="${APP.view==='library'?'on':''}">${icon('library',16)}<span style="flex-grow:1">Library</span></button>
-      <button data-v="mixed" class="${APP.view==='mixed'?'on':''}">${icon('target',16)}<span style="flex-grow:1">Mixed drill</span></button>
+      <button data-v="review" class="${APP.view==='review'?'on':''}">${icon('target',16)}<span style="flex-grow:1">${REVIEW_TEXT.tab}</span></button>
       <button data-v="progress" class="${APP.view==='progress'?'on':''}">${icon('bars',16)}<span style="flex-grow:1">Progress</span></button>
     </div>`;
   on('[data-s]', el => openSubject(el.dataset.s), rail);
-  on('[data-v]', el => {
-    const v = el.dataset.v;
-    if(v === 'mixed' && !APP.mixed) APP.mixed = buildMixed(12);
-    go(v);
-  }, rail);
+  on('[data-v]', el => go(el.dataset.v), rail);
 }

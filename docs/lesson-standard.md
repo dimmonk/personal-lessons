@@ -1257,3 +1257,438 @@ and general enough for any body skill the app can measure through the microphone
     microphone (the section 21 recorder): a sung note within and outside the tolerance is scored on and off, octave folding
     holds, the line is drawn only in `withLine` tries, the range is stored once and every target lies inside it, nothing
     sounds or listens before a tap, and nothing but numbers is stored. Each check has a seeded fault.
+7. **As built** (`public/app/lessons/review.js`; `reviewItems`, `weekEnd` and `nextReturnDate` in `records.js`; `reviewRun` in `drill.js`).
+   Nothing in 1 to 6 changed; what the build settled: Back (the arrow or "Back to the library") leaves the review for the library
+   and records nothing. A finished part is still logged as `return` for its subject, so the Progress count of days returned keeps
+   its meaning. With no cap, a name that is the usual confusion of several others is asked beside each of them, so its stories can
+   run out inside one review; the story asked again is then one the learner has seen, and the repeat is logged as E9 says. The
+   results give the date of the earliest question still to come after today, or say that skipped questions are still due.
+
+## 26. Revision of 2026-10-10: the practice engine (overrides every rule above where they conflict)
+
+All eight subjects went through the `build-subject` gates and all eight came back "rebuild from scratch"
+(`docs/subjects/<id>/design.md`). The engine of sections 1 to 22 (a key, routes, stories sorted into names, choice drills)
+was built for one task and then forced on every subject. This section is the one engine for all eight designs: one set of
+building blocks, no per-subject code. **A lesson is a short why, a sequence of practice items, and the end check of its
+gate 4 part.** It replaces sections 1 to 22 and 25 where they conflict, and the drawing of questions in section 24 (26.4).
+`FC.STANDARD` becomes 2 and `FC.ENGINE` 6.
+
+### 26.1 The data model
+
+Files (F1 to F4 still hold: classic scripts, one frozen registry, every file under 800 lines and listed in `index.html` and
+`SHELL`):
+
+```
+public/subjects/<id>/subject.js       FC.subject   the record: lists, rules, facets, strands, review, private forms
+public/subjects/<id>/l<N>.lesson.js   FC.lesson    one lesson
+public/subjects/<id>/items-<k>.js     FC.items     fixed items, in as many files as needed
+public/subjects/<id>/gen-<k>.js       FC.gen       items made with fresh numbers (Math, Wealth)
+```
+
+**Subject.**
+```js
+FC.subject('stats', {
+  name, rev, standard: 2, history,
+  endResult: Text,                         // the design record's endResult, word for word (V80)
+  lists: { verdict: [{ id, text }], slip: [{ id, text }], ... },   // option lists worded once, printed by the app
+  rules?: { [ruleId]: { name, needs: [{ id, text }] } },          // what a label or a word requires (Ideology, Psychology)
+  facets: { [facetId]: { name, values: [{ id, text }] } },        // how results and pass rules count items apart
+  mix: [{ facet, value, min?, max? } | { facet, equal: true }],   // what every set and check must hold (V76)
+  strands: [{ id, title }],                // what the review schedules (26.4)
+  review?: { gaps?: [2, 7, 24], every?: days, dateField?: 'answers.interviewDate' },
+  readingShare: 0.25,                      // the most of a lesson that may be reading, from the design's gate 3 (V73)
+  timed?: true,                            // only a subject whose design times its items (Scams)
+  refs?: [{ id, text, value, asOf, source }],     // dated values looked up, not memorized (Wealth's reporting threshold)
+  own?: { [formId]: Form }                 // the learner's private data forms (26.3)
+});
+```
+
+**Lesson.**
+```js
+FC.lesson('stats', {
+  id: 'l2', part: 'B', role?: 'baseline',  // part is a gate 4 part id; only a baseline has part: null
+  title, rev, status: 'draft' | 'live', history, tried?: { date, words },
+  why: Text,                               // one screen
+  flow: [Step],
+  check: Check });
+Step  = { show: [Block], title }           // a teaching screen: a rule, a wrong idea, a contrast pair, a map
+      | { worked: itemId }                 // an item shown answered, step by step (one optional choice to commit to first)
+      | { set: Set }
+      | { own: formId, model?: itemId }    // the same step on the learner's own data (26.3)
+Set   = { items: [ItemRef | [ItemRef, ItemRef]],   // an inner pair is asked one after the other, its order random
+          order: 'listed' | 'shuffle', support?: Support, seconds?: 15 | 20,
+          mix?: { from: [lessonId], share }, over?: 'busy', plan?: true }   // plan: the saved plan shown before the set
+ItemRef = itemId | { gen: genId, n, with?: params } | { sing: SingTask, n }
+Check = { items: [ItemRef] | { draw: { strands, n } }, feedback: 'at-end' | 'after-each',
+          pass: [PassRule], spoken?: true, seconds?, retest?: days }
+PassRule = { ask?: askId, where?: { facet: value }, right?: { min }, wrong?: { max }, slip?: slipId, max? }
+```
+A check is written in the design's terms: "8 of 10, no control pattern missed, at most one ordinary moment labeled" is
+`[{ right: { min: 8 } }, { where: { kind: 'control' }, wrong: { max: 0 } }, { where: { kind: 'ordinary' }, wrong: { max: 1 } }]`;
+"no scam acted on" is `{ slip: 'acted', max: 0 }`; "4 of 5 on each side" is two rules with `where: { side }`.
+
+**Item.** Every item in every subject has one shape: what is shown, what is asked, and why.
+```js
+{ id, strand, facets: { [facetId]: valueId },
+  blocks: [Block],                         // what the learner sees
+  asks: [Ask],                             // answered in order on one screen; each opens when the one before is answered
+  steps?: [{ id, does: Text, working: Text, ask?: askId }],   // the working: shown in worked items and feedback, left to
+                                           // the learner by `support.leave`
+  reason: Text,                            // why the right answers are right, quoting the deciding words
+  deciding?: [segmentId | rowId],          // highlighted in the blocks after the answer
+  need?: Text,                             // what you would need to see for it to hold; the fair comparison (Stats)
+  has?: { [needId]: segmentId | null },    // each requirement found (where) or missing (Ideology, Psychology)
+  fact?: itemId,                           // the interview question a news answer rests on (Civics), printed from that item
+  redraw?: 'from-zero', figure?: Block }   // pictures added to the feedback
+```
+**A generator** (`FC.gen`) is an item whose numbers are made fresh each time: `{ id, strand, facets, params: { name: [min,
+max, step] | [choice, ...] }, make(pick, params) { return { name: number, ... } }, ...the item fields }`. `make` is a pure
+function: the same seed gives the same numbers. Text in blocks, asks and steps fills `{name}` slots from its values; an
+ask's `answer` and each slip's `value` name a value; a household of documents (Wealth) is one generator. A try stores the
+seed, never the numbers (26.3), so the exact problem can be rebuilt.
+
+**Asks**: the responses, each defined once.
+
+| Kind | Shown as | The learner | Scored | After a miss, one line from |
+|---|---|---|---|---|
+| `choose` | buttons: `options: [{ id, text, ok, slip?, then }]`, or `from: listId` with `right` (and `only`) | taps one (`many`: several) | right if every tapped option is `ok` | the chosen option's `then`: the consequence or the slip |
+| `tap` | the `lines` of block `in` become tappable; `none` adds "Not given" or "No demand here" | taps one segment (`pick: n`: n) | right if the tapped set is `right` | the tapped segment's `note` |
+| `number` | a `frame` with slots ("from __ in 1,000 to __ in 1,000"), the `unit`; `estimate` puts an estimate box first; a calculator button except on the estimate | types numbers | each slot within `tol` (`abs`, `rel`, or the stated `round`); an estimate within half to double | the slip whose value it matches: "That is the answer you get when …"; else the working |
+| `text` | a question (read, or `spoken`) and a "Not yet" button | types words | matches an `accept` entry after normalizing: case, punctuation, one small misspelling, words in brackets optional, number words equal digits; `count: n` needs n distinct accepted answers; `accept: { own: 'answers.q23' }` reads the learner's own entry; `model` in place of `accept` is shown after for the learner to compare, not scored | every accepted answer, and the `meaning` line |
+| `order` | `steps` to arrange | taps them in order | `first` (the first step) and/or the whole order | why the order matters |
+| `sing` | the pitch strip (26.1.1) | sings after the target plays | 26.1.1 | the result in words |
+| `exchange` | a call or chat whose turns arrive: `turns: { id: { lines: [Segment], push?, options: [{ text, goto } | { text, end }] } }`, `ends: { id: { ok, slip? } }` | picks a reply each turn; the next turn follows the reply | right if it reaches an `ok` end | at the end: the lines that pushed marked, and the turn where it could have ended |
+| `form` | rows of fields (choose, number, text, date) | fills them in | when the item states answers, field by field as `number` and `choose`; with `into` (own data) never scored, saved (26.3) | the right value and the line of the document it comes from |
+
+- **A verdict** is a `choose` drawing on the subject's `verdict` list, so its words are typed once and are the same in
+  every lesson, check and result: Stats "holds up / does not show it / cannot tell from this"; Ideology "earned / not earned /
+  too little to tell"; Psychology "the word fits / an ordinary moment / can't tell yet / a pattern of control"; Scams
+  "risky / nothing risky"; Wealth "change it / leave it"; Civics "theirs to make / not theirs / being challenged in court";
+  Math "right / wrong" for a shown total. `only` offers part of the list where a lesson teaches part of it (Psychology L2).
+- **A fixed sequence of steps** is an item with several asks: Psychology (tap the act, what else would explain it, verdict,
+  next step), Stats (verdict, deciding line or "not given", plain size), Civics news (who decided, theirs to make, who can
+  stop it), Ideology (verdict, then the name the words earn, then the deciding words). `when: { ask, is: [optionIds] }`
+  opens an ask only after that answer (Ideology's name after "not earned"; Scams' channel after "check it first"). An item
+  is right when every scored ask is right; a pass rule may count one ask.
+- **Wrong answers are named.** A wrong option, a number slip, a wrong exchange end or a tapped segment may carry `slip`,
+  an id of the subject's `slip` list (Scams `acted`: did what a scam asked; Math `upside-down`, `wrong-whole`,
+  `added-percents`, `rounded-down`). Results and pass rules count them.
+- **Timeout** (a timed set): the item stops at zero and records `timeout`, a miss that is not a slip.
+
+#### 26.1.1 Singing: the `sing` ask (absorbs section 25)
+
+- **Tasks**: `warmup` (a hum or straw slide with the line, unscored, skippable; opens every lesson and the Singing part of
+  the review, S5), `range` (two easy slides up and down; the lowest and highest steady notes become the range), `match`,
+  `hold` (`seconds` 2 to 6), `slide` (`maxSemitones`), `interval` (`minSemitones`, `maxSemitones`), `melody` (`notes` 3 to
+  5, `maxStep`, the last note long), `light` (a loud and a talking-loudness note sung first set the scale).
+- **Targets are made fresh** from the learner's range, so every sung item is generated: `match` and `interval` from the
+  middle of the range, `light` from its top fifth, and every target inside it (S1). A lesson whose learner has no range
+  opens with the `range` task. In general: **a lesson that needs private data an earlier lesson makes opens that form
+  first when it is empty** (Singing's range, Wealth's sheet).
+- **Turn-taking, timing, scoring and words**: section 25 items 3 to 5, unchanged. The microphone is ignored while the
+  target plays and for 0.25 s after; the window is each note plus 0.4 s, a hold plus 1 s; audio clock and frames, no
+  timers; a note is the median of the middle 60% of its readings, folded to the nearest octave, "on" within `cents` (25);
+  a hold is the longest run on; a slide is scored on its last 0.4 s; `light` also needs median loudness at most 15% above
+  the talking note. Results are words ("On the note", "A shade under", "A shade over", "Well under", "Well over"), never
+  cents or hertz.
+- **The line** is drawn live only while the set's support has `line`; without it the strip shows the result after the try.
+
+#### 26.1.2 Presentation blocks, each defined once
+
+| Block | What it shows | Fields |
+|---|---|---|
+| `prose` | a short text: the why, a rule, a map in words; `tone: 'wrong'` shows a wrong idea marked wrong, the right line last | text |
+| `message` | a message as it arrives on a phone. `form`: `sms`; `email` (display name, subject, link text); `popup`; `chat` (a marketplace or friend thread, with history); `call` (the incoming-call screen, the caller's lines as a transcript); `note` (your own note after an argument); `notification` (a banner over a busy task) | from, detail, subject?, lines: [Segment], link? |
+| `article` | `form`: `news` (headline, body, source line), `post` (a label and the commenter's words over quoted words or a policy, with who said it), `ad`, `report` | headline: Segment, lines, source, label?: { text, by, side } |
+| `chart` | a chart drawn as SVG from data: bars or a line, real axes (a cut axis allowed), a time window | type, title, x, y: { from, to, step, unit }, series, source |
+| `document` | a statement or table: 401(k) statement, fee disclosure, IRA or brokerage statement, pay stub with the match rule, beneficiary page, foreign account summary, receipt, recipe card, price tag, loan or savings offer, plain table. A household's documents are tabs | form, title, rows: [{ id, cells }], notes? |
+| `figure` | a fixed picture filled with numbers: the rate table (two rows), the 100% bar, a room plan with measurements, a year-by-year table, 1,000 people | type, data |
+| `spoken` | a question spoken by the phone's own speech synthesis, with "Hear it again"; its words shown, or behind "Show the words" in the mock interview | text, show |
+| `pitch` | the strip of a `sing` ask: time across, pitch up, targets as bars, the voice as a line | drawn from the ask |
+| `panel` | what a label or word requires, printed from `subject.rules`, beside the item while support lasts | rules: [ruleId] |
+| `pair` | two blocks side by side (stacked on a phone) and the one thing to compare | a, b, compare |
+
+A `Segment` is `{ id, text, note? }`: every line or sentence that can be tapped or highlighted is one.
+
+### 26.2 Feedback, fading and order
+
+**Feedback after each item** (R7, M6, P19), in this order: each ask's mark (right, or the right answer); the deciding
+words highlighted in the blocks (a document's line, a chart redrawn from zero, a figure filled with the item's and the
+learner's numbers); `reason`; after a miss, one line on the learner's own choice; then what the item has of: the
+consequence of the right action, `need`, each requirement found or missing (`has`), the working with the learner's own
+numbers and the estimate beside the answer, the interview `fact` with its accepted answers. It opens only when the last
+ask is answered, so no answer gives a later one away (X2). No praise (V36) and no length rule: feedback holds what the
+design names and nothing else. Section 20's two-sentence cap (V63) is retired; the designs ask for more (Stats two to four
+sentences, Math the full working).
+
+**Fading: support fades, feedback after the answer does not.** Support is help during the attempt; the evidence for
+fading (S3, the guidance hypothesis; M2; P17) is about that. Feedback after an answer stays (R7, M6), except where a test
+holds it to the end.
+- Support: `line` (Singing, the live pitch line), `panel` (Ideology, Psychology: the requirements beside the item),
+  `shown` (Stats: the question shown, or the deciding line pre-marked to confirm), `leave: n` (Math, Wealth, Stats: a
+  worked item with its last n steps left to the learner: last step, then last two, then the whole problem),
+  `estimateCheck` (Math: "your answer and your estimate disagree; look again" before scoring).
+- In a lesson, a set with support is followed by a set of the same strand with less or none (V79). Checks, the review and
+  retests never have support.
+- Checks give feedback `at-end` by default (one result screen, then every item's feedback, misses first); Singing's checks
+  are `after-each` (the result word after a try is the faded form, S3). The baseline (Scams L0) and the mock interview
+  (Civics) show nothing per item; the baseline ends with the design's one line.
+- **Timed sets** (only where `subject.timed`, Scams: 15 or 20 seconds an item): a countdown drawn on the frame clock;
+  nothing ever moves on by itself (X1). The design calls timing a judgement call (SC5); first-try accuracy timed against
+  the end check is what tests it.
+
+**Order and difficulty**, from the designs:
+1. A new strand alone first, then mixed, unlabelled, with earlier ones (M4, R9): `mix.from` and `share` (Stats a third
+   from lesson 3; Math three items from lesson 3; Civics the due items of earlier lessons).
+2. Contrast pairs before mixed items (Civics, Scams L3, Psychology L3, Ideology): an inner pair is asked back to back.
+3. Ramps are successive sets: Singing 2 then 4 second holds, steps then leaps, 3 then 4 then 5 notes; Math last step,
+   last two, whole; Stats question shown, then alone; Psychology L3 each word pair, then mixed.
+4. A missed item comes back at least three items later in the same set until right (R2); a generated or sung one comes
+   back with fresh numbers or targets. Not in checks, baselines or retests: a miss there makes its strand due.
+5. Every set and check holds the subject's `mix` (V76): Scams about half genuine; Stats sound and "cannot tell" items in
+   every set; Ideology earned, unearned and too-little items, labels thrown from each side in equal number; Psychology about
+   half ordinary, control in every set from L5; Wealth one item to leave alone in every set.
+6. Scams exchanges raise the pressure on a hesitant reply (the branch); `over: 'busy'` runs a simple busy task in the app
+   (sorting a shopping list by taps) while messages arrive as banners, and scores only the messages.
+
+### 26.3 The record and the learner's private data
+
+The storage key names do not change (owner).
+
+| Key | Holds |
+|---|---|
+| `pl:<s>:items` | **the only practice record**: `{ [itemId or genId]: { tries: [Try] } }`, the last twelve per item |
+| `pl:<s>:notes` | the learner's private data for the subject (below) |
+| `pl:<s>:seen` | `{ [lessonId]: { rev, at } }`: the lesson's revision last opened and the place (a step index). Nothing else |
+| `pl:log`, `pl:app`, `pl:recent` | unchanged (E19: sessions, "this confused me" reports, the export) |
+
+`Try = { d, run, lesson, rev, engine, context, sup, seed?, a: { [askId]: answer }, r: { [askId]: 'ok' | 'no' | slipId | 'timeout' | 'claimed' }, ok, ms? }`.
+`context` is `practice`, `check`, `review`, `retest`, `again` or `baseline`; `sup` says whether support was on; `run`
+groups one sitting, so a check's result is computed from its run; `ms` is time to answer in a timed set. `a` holds what
+was chosen, tapped or typed; a sung answer is numbers only (`{ cents: [...], holdMs?, loud? }`). Every figure the app shows
+(done marks, check results, accuracy by facet, slips, due dates) is computed from `items`; nothing is stored twice. A
+lesson is done when its check has one complete run. `claimed` is Civics' "my answer means the same": counted right in
+that run and listed as "counted on your word", not a good session for the schedule, so the question returns.
+
+**Private data**, in `pl:<s>:notes` only, never scored against a truth, never sent anywhere:
+- `range: { low, high, set }` (Singing; measured, not typed);
+- `sheet: { accounts: [{ id, type, balance, holdings: [{ name, value, kind, expense }], fees, matchRule?, beneficiary }], mix }`
+  (Wealth). No field holds an account number, login or password, and a field refuses a run of 8 or more digits (V81, X24);
+- `answers: { q23: '…', …, interviewDate? }` (Civics: the eight answers that depend on where and when, looked up by the
+  learner at uscis.gov/citizenship/testupdates; read by `text` asks through `accept.own`);
+- `plan: { cue, then, saved, shown? }`, one per subject (Scams, Psychology; optional in Stats); `setup: { [stepId]: date }`
+  (Scams: own channels saved, marked by the learner); `lines: [{ d, text }]` (Psychology: a real label rewritten as what
+  the person did);
+- `actions: [{ id, what, where, when, done?, repeat? }]` (Wealth: every change dated; the yearly check is an action with
+  `repeat: 'year'`); `triggers: { [id]: date }` (Wealth: a US job started, an account opened, a yearly statement came).
+
+An own step shows the app's arithmetic on what was typed, warns outside the field's plausible range (an expense ratio over
+2%, a share over 100%), and shows the matching line of a sample document as the model. The E19 export includes `notes`,
+so the sheet leaves the phone only in a file the learner saves. Records of the old lessons stay in storage untouched and
+unread (as E8 left the old counters) and stay in the export; nothing is computed from them.
+
+### 26.4 Review (section 24's week, tile, screen and results stay; what it asks is new)
+
+- **What is scheduled is a strand**: one thing that comes back as a new instance. A Civics question (the question
+  itself), a Civics news question, a Scams kind of request, a Stats part, an Ideology label family, a Psychology word or
+  judgment, a Math or Wealth kind of problem (fresh numbers), a Singing lesson's check (fresh targets).
+- **Until right in three separate sessions** (R2, R4, R6): a strand is due 2 days after its lesson's check or after a miss,
+  then 7 days after its first good session, then 24 days after the second, and leaves the schedule after the third. A good
+  session is a day on which the strand's first item was right at the first try, in any context but `baseline`; a miss
+  resets it. `review.every` keeps it coming back after that (Scams: 60 days, its principle 9); `review.dateField` adds
+  rounds about a week apart in the six weeks before the learner's interview date (Civics principle 4).
+- **In its real form** (R8): a due strand is asked on an item of it the learner has not seen, with fresh numbers, or with
+  fresh targets; a Civics question is asked as itself. Singing's review is singing: a warm-up, then each due lesson's check,
+  without the line. Scams: new messages and exchanges; Math: new problems, estimate first; Wealth: new sample documents for
+  parts 2 to 7; Civics: due questions typed (and spoken), plus a news story per due news strand. Each subject's part is
+  mixed (R9), with feedback after each item, and a miss is asked again at least three items later until right (R2). A
+  saved plan is shown once at the start of its subject's part.
+- **Retests**: a check with `retest: n` comes back once, whole, on new items, n days after its first complete run, as its
+  own block of the review with its pass rules and no warning (Scams and Stats 28; Psychology 21; Math 14; Civics' second
+  mock interview 7).
+- When a strand's unseen items run out, the least recently seen one is asked and the repeat is logged (E9's rule, kept).
+
+### 26.5 Screens (what is shown)
+
+- **Library**: the subject tiles and "This week's review" (section 24).
+- **A subject**: its end result in one sentence; its lessons in part order, each with title, revision, the draft line
+  (E15) and its state (not started; step n of m; check passed or "not yet", with date and score; waiting for a trigger);
+  the learner's own data (your range; your accounts and dated actions; your eight answers and interview date; your plan
+  and saved channels); results; "Practice again" on a done lesson (its sets again, on unseen items, fresh numbers or fresh
+  targets, `context: 'again'`). No map, reference, determination or specimens.
+- **A lesson**: a top bar (title, rev, draft line, step n of m); the why; then each step: a show screen; a worked item
+  answered step by step; a set, one item a screen (the blocks, the asks in order, the support while it lasts, the
+  countdown if timed, then the feedback and Next); an own step (the form on the learner's own data, the model line, then
+  "Done now" or a date with what and where). Between sets a screen says the learner can stop and the place is kept (P28).
+  Back is always there and keeps the place.
+- **The end check**: one screen naming the check in plain words ("6 new items: verdict and deciding line, 5 to pass");
+  the items, without support; then the result: "8 of 10: passed" or "6 of 10: not yet", each pass rule with met or not met
+  ("No scam acted on: met"), then each item's feedback, misses first; then the next lesson.
+- **Results** (E10's purpose): first-try accuracy per lesson and per facet value side by side (genuine beside scam, sound
+  rejected beside problems found, left beside right, ordinary beside control, per channel and kind of request), the slips
+  made most, the check history, and what comes back when. No grade, no comparison with anyone.
+
+### 26.6 What is deleted
+
+One commit, a clean break, no shim and no compatibility layer (owner rules):
+- **The model**: the key (`FC.key`: gate, branches, steps, options, outcomes, terms, `keeps`, `yieldsTo`, `avoid`), routes,
+  the look-alike ledger, tokens (S5), unit kinds `C`, `F`, `P` and `S`, every card kind (`orient`, `term`, `meet`,
+  `again`, `lens`, `portrait`, `check`, `lookalike`, `exception`, `refute`, `question`, `worked`, `solved`, `concept`,
+  `facts`, `recap`, `transfer`, `plan`), cases and their `use`, `tier`, `cues`, `segments`, `not`, `also`, `echo`, `miss`,
+  `wouldChange`; the drill (rungs, stages `name`, `piece`, `finish`, `route`, `claim`, `fact`, `last`, `whole`; groups,
+  `earlier`, `tell`, `separator`, reverse items, claims, `drill.key`, `drill.returns`); specimens and the determination
+  (E13, "try anyway"); `subject.baseline`, `settings`, `action`, `example`; card `audio` blocks (`tones`, `notecheck`).
+- **The engine rules**: sections 1 to 19 as rules for lessons (A, S, E1 to E7, E9, E12 to E14, E16 to E18, E20, E21, K, W),
+  section 21's card sound (the sound files stay as infrastructure), section 22, section 25 (absorbed in 26.1.1), section
+  24's drawing of names and facts, the E8 migration of pre-standard progress.
+- **The code**: `public/app/lessons/` `ask.js`, `cards.js`, `determination.js`, `drill.js`, `key-map.js`,
+  `key-reference.js`, `practice.js`, `taught.js`, `unit-flow.js`, `unit.js`, `review-first.js`, `audio-card.js`, and
+  `records.js`, `review.js`, `view.js` as written (rewritten for 26.3 and 26.4; `SAY` keeps only the new wording).
+  `audio-synth.js`, `audio-pitch.js`, `audio-notes.js` and `audio-meter.js` stay.
+- **The data**: every file in `public/subjects/<id>/` but `subject.js` (rewritten); `docs/learner-view/*` (regenerated for
+  lessons by a rewritten `tools/learner-view/`); `docs/rebuild/*-plan.md`; `docs/lesson-standard/exemplar/`;
+  `tests/fixtures/`; the old entries of `tests/lessons.lock.json`.
+- **Nothing of the old lesson data is kept.** The commit before the deletion is tagged `old-lessons`; an author may read
+  any story, number or line there (`git show old-lessons:<path>`) and reuse it as raw material for an item, once it fits
+  the lesson's gate 5 block. Nothing is migrated.
+
+### 26.7 Validator rules and browser checks
+
+**Kept**: V4 (no codes or ids in learner text), V36 (no praise), V45 (revisions and history; `live` needs `tried` with a
+date and the owner's words), V46 (the lock: a lesson's fingerprint covers the lesson, its items and its generators' text
+and parameters; a subject's covers its record), V47 (files), V50 and V62 (plain words; the list gains the engine's own
+words: strand, facet, ask, item, set, generator, support), V56 (titles), V58 (held findings), V60 (American English), V69
+(revised below). **Every other rule from V0 to V68 is retired**; numbers are not reused. Section 25's V70 was never coded
+and is replaced by the V70 below.
+
+**Tying each lesson to its gate 4 part.** The design record's front matter gains `parts: [{ id, title }]` (the gate 4
+table, its ids as written there: numbers or letters), `pilot: lessonId` and `tried: { pilot: { date, words } | null }`.
+V69 then refuses a lesson written before `approved.endResult` and `approved.practice`, and **any lesson but the pilot (and
+a baseline) before `tried.pilot` holds the owner's words from the phone try** (gate 6: the advance approval of 2026-10-10
+let the pilot be built; it does not stand in for the try). V71 holds the map both ways.
+
+| Rule | Checks | Seeded fault that turns exactly it red |
+|---|---|---|
+| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator and pass rule matches 26.1 exactly; ids unique in the subject; every reference exists; `seconds` only where `subject.timed` | an ask with an unknown `kind` |
+| V71 | Every lesson's `part` is a part of the design record; every part has exactly one lesson; only a `role: 'baseline'` lesson has no part; lessons are in part order; the pilot is a lesson | a part with no lesson |
+| V72 | A check is its part's: none of its fixed items appears in the lesson's sets; it has no support; every pass rule names an ask, facet value or slip that exists; no `min` exceeds the number of items it counts | a check item also in a set |
+| V73 | Most of the lesson is doing: words of the why and show screens at 200 a minute, against the doing time (a default time per ask kind, named once in the validator; a timed set its seconds), stay within `subject.readingShare` | a why padded past the share |
+| V74 | Every ask can be scored and explained: a `choose` has an `ok` option and a `then` or slip on each wrong one; a `tap`'s `right` are segments of its block; a `number` has `tol`; a `text` has `accept` or `model`, and `count` no more than its distinct answers; every item has `reason`, and its `deciding` ids exist | a wrong option with no `then` |
+| V75 | Generators: each run on 200 seeds gives finite values inside `params`, fills every slot, keeps every slip outside the answer's tolerance, and the same seed gives the same item | a slip equal to the answer |
+| V76 | Every set and check holds the subject's `mix` | a Scams set with no genuine message |
+| V77 | Banks: each strand has enough unseen items for its scheduled returns and its retest (generators and sung tasks always do; a Civics question returns as itself) | a strand one item short |
+| V78 | Singing limits: tasks and parameters inside 26.1.1; checks without `line`; the warm-up first in every lesson | a hold of 9 seconds |
+| V79 | Fading: a set with support is followed by a set of the same strand with less or none; no support in a check | a lesson whose last set has the panel |
+| V80 | The subject's `endResult` equals the design record's, word for word (one is the mirror of the other) | one word changed |
+| V81 | Private forms: no field for an account number, login, password or Social Security number; every `into` is a slot of 26.3 | a field named "Account number" |
+
+**Browser checks.** Kept: X1 (nothing advances by itself; a timed item stops, it does not move on), X2 (no feedback before
+the last ask is answered), X3 (360 px), X5 (the stored keys are those of 26.3), X6 (draft line), X7, X8 (no sound, no
+microphone before a tap), X10, X11, X12. Deleted: X4 (the migration), X9 (card sounds). New, each with a seeded fault that
+must turn it red:
+
+| Check | What | Seeded fault |
+|---|---|---|
+| X13 | `number`: in and out of tolerance scored right and wrong; a slip's value shows its line; the estimate box comes first and has no calculator; "disagree" shows in practice, never in a check | the prompt left on in a check |
+| X14 | `text`: case, punctuation, one misspelling, brackets, "27" for "twenty-seven" and two distinct answers for "name two" are right; a near miss is wrong; "Not yet" records a try; a claim is logged and the question returns | a repeated answer counted twice |
+| X15 | `tap`: the deciding line, "Not given", and nothing highlighted before the answer | the highlight shown early |
+| X16 | `sing`: known pitches fed as the microphone are scored on and off at 25 cents; an octave away counts; a hold is timed; each melody note scored; the line drawn only with `line`; the range stored once, every target inside it; the microphone released | the line drawn in a check |
+| X17 | Timed sets: the countdown runs on the frame clock; at zero the try is `timeout` and the screen waits for Next | auto-advance at zero |
+| X18 | `exchange`: the turns follow the replies; the pushing lines are marked at the end | a branch that skips its pressure turn |
+| X19 | `spoken`: speech starts only after the learner's tap to begin; only an on-device voice is used; with none, the words are shown | speech on screen open |
+| X20 | `chart` and `figure`: the drawn axis start, values and bar heights match the data; the redraw from zero in feedback | a bar drawn from zero on a cut axis |
+| X21 | The record: after a scripted session through practice, a check, a review and a retest, every try has exactly the 26.3 fields, sung answers hold numbers only, and **no network request leaves the app** beyond its own files | one request to another host |
+| X22 | Review: due strands are asked on unseen items (fresh numbers, fresh targets), Singing's review sings, a retest appears after its days (clock set ahead), a miss returns three items later | a seen item asked while unseen ones exist |
+| X23 | Checks: an `at-end` check shows nothing between items; the result lists each pass rule met or not | feedback shown between items |
+| X24 | Own data: a run of 8 digits is refused; a dated action writes a calendar file; a done mark sticks; nothing private appears outside the subject's own screens and the export | an 8-digit balance accepted |
+
+### 26.8 Build order: one capability at a time, Singing first
+
+Each step is its own commits; tests (validator, seeded faults, browser checks) pass at every step; each subject's pilot
+lesson is built, checked, deployed and tried by the owner cold on the phone (gate 6, recorded in `design.md`) before any
+other lesson of that subject; every later lesson gets the same try before it is `live` (gate 7).
+
+0. **Records.** Each design record gains `parts`, `pilot` and `tried`. Pilots: Singing L2, Math L1, Wealth L2, Stats L1,
+   Ideology L2, Psychology L1, Scams L3 (with L0, the baseline, built beside it), Civics L1. Scams and Stats named no
+   pilot; L3 is Scams' core decision, L1 is Stats' first whole item.
+1. **The core, and the deletion** (26.6, same commit). Registry, the record, the lesson player (why, show, worked, set,
+   check, result), `choose` with lists and slips, feedback, support and fading, order rules, pass rules, results, the
+   review on strands, `prose` and `pair` blocks, the learner view, V70 to V77, V79 to V81, X1 to X3, X5, X21 to X23.
+   Subject screens list each design part as "not built yet".
+2. **Sound: Singing.** `sing` with every task, the `pitch` block, the range, loudness; V78, X16. Pilot L2 (it opens with
+   the range) → owner try → L1, L3 to L7 → Singing's review.
+3. **Numbers: Math.** `number` (frames, tolerance, estimate, slips, calculator), generators, `document` (receipt, recipe,
+   tag, offer), `figure` (rate table, 100% bar, plan, year table), `worked` and `leave`; V75, X13, X20. Pilot L1 → L2 to L7.
+4. **Documents and own data: Wealth.** Household documents, `form`, the private sheet, dated actions with calendar files,
+   triggers, `refs`; V81, X24. Pilot L2 (opens the sheet form when empty) → L1, L3 to L8.
+5. **Articles and charts: Stats.** `article`, `tap` with "Not given" and the pre-marked line, `chart`, the 1,000-people
+   figure; X15. Pilot L1 → L2 to L7.
+6. **Labels: Ideology.** The `post` form with label and side, `panel` and `rules`, per-side results. Pilot L2 → L1, L3 to L6.
+7. **Accounts: Psychology.** `message` forms friend, thread and note; four-ask items; `text` with `model`. Pilot L1 → L2 to L6.
+8. **Pressure: Scams.** `message` channels, timed sets, `exchange`, the busy task, `order`, plan and setup; X17, X18. L0
+   and pilot L3 → L1, L2, L4 to L6.
+9. **Recall and speech: Civics.** `text`, `spoken`, the mock interview (a check drawing 20 of the 128, `at-end`), the
+   eight own answers and the interview date; X14, X19. Content: the 128 with their accepted answers (M-1778, 09/25) and
+   about 70 news stories. Pilot L1 → L2 to L14.
+
+### 26.9 Capabilities and the subjects that need them
+
+| Capability | Singing | Scams | Stats | Civics | Ideology | Psychology | Math | Wealth |
+|---|---|---|---|---|---|---|---|---|
+| `choose` (actions, channel, next step, name, why this step) | | ● | ● | ● | ● | ● | ● | ● |
+| verdict (a `choose` on the subject's list) | | ● | ● | ● | ● | ● | ● | ● |
+| `tap` (one or more segments, "Not given") | | ● | ● | | ● | ● | ● | |
+| `number` (tolerance, slots, slips) | | | ● | | | | ● | ● |
+| estimate first, calculator | | | | | | | ● | (calculator) |
+| `text` (accepted answers; `model` unscored) | | | ● (L7 recall) | ● | | ● (model) | | |
+| `order` | | ● | | | | | | |
+| `sing` and `pitch` | ● | | | | | | | |
+| `exchange` | | ● | | | | | | |
+| `form` scored on samples | | | | | | | | ● |
+| `form` into private data (Singing's range is stored by `sing`) | | ● (plan, setup) | ● (plan) | ● (answers) | | ● (plan, line) | | ● (sheet, actions) |
+| several asks in one item | | ● | ● | ● | ● | ● | ● | ● |
+| `message` | | ● | | | | ● | | |
+| `article` | | | ● | ● | ● (post) | | | |
+| `chart` | | | ● | | | | | |
+| `document` | | | | ● (map table) | | | ● | ● |
+| `figure` | | | ● (1,000 people) | | | | ● | |
+| `spoken` | | (calls, later) | | ● | | | | |
+| `panel` and `rules` | | | | | ● | ● | | |
+| `pair` | | ● | ● | ● | ● | ● | | |
+| generators (fresh numbers or targets) | ● | | | | | | ● | ● |
+| support fading | ● line | | ● shown, leave | | ● panel | ● panel | ● leave, estimateCheck | ● leave |
+| timed sets, busy task | | ● | | | | | | |
+| facets and per-facet results | | ● genuine, channel, request | ● sound | ● level | ● side, sound | ● ordinary, control | ● kind | ● leave alone |
+| retest | | 28 | 28 | 7 (second mock) | | 21 | 14 | yearly action |
+| baseline lesson | | ● L0 | | | | | | |
+
+**What a static, offline phone app cannot do, and the nearest it can:**
+
+| A design asks for | Why not | The nearest |
+|---|---|---|
+| Hearing a spoken answer (Civics mock interview, "wanted") | Browser speech recognition sends the voice to a server (Chrome) or is missing in an installed iPhone web app; nothing may be sent | Say it aloud, then type it |
+| Reminders on a date (Wealth actions and the yearly check; returns as reminders in Scams) | No notification without a push server | A calendar file (.ics) the app writes for the learner's own calendar; the review tile; the app icon badge where the phone supports it |
+| Offering a lesson at its trigger (Wealth: a new job) | The app cannot know | The learner marks the trigger; the own step waits for it |
+| A real voice on calls (Scams, "later") | No recordings; the phone's synthetic voice only | The caller's lines as a transcript, read by an on-device voice where one exists |
+| A message arriving while busy in another app (Scams L4) | No notifications from outside the app | The busy task inside the app, with banners |
+| Seeing that a change was really made (Scams setup, Wealth changes) | The app cannot see a bank's site | The learner's done mark and date |
+| Measuring "no pushing" exactly (Singing L7) | Phone microphones differ; some keep automatic gain on | Loudness compared only with the learner's own talking note in the same sitting |
+| Knowing the question list changed (Civics) | Offline | Content carries its date and source; before a mock interview a line asks the learner to check uscis.gov |
+
+**Conflicts between designs, and what this section decided:**
+1. Fading (Singing S3, Ideology, Stats, Math) against feedback after every answer (Civics, Psychology, Scams; R7): support
+   fades, feedback after the answer stays; only checks, the baseline and the mock interview hold it to the end.
+2. Scams' time limits against "no timers" (E11, X1, P28): a visible countdown in subjects whose design times items;
+   nothing moves on by itself.
+3. Feedback length (V63's two sentences) and reading caps against "no length rule" (V29): the designs win; V63 and V29 are
+   retired; reading is held to each design's share (V73).
+4. What returns: E9 scheduled names; the designs bring back a request kind, a part, a label, a word, a problem kind, a
+   question or a sung check. One idea, the strand, with each design's gaps (Scams' every 60 days, Civics' interview date,
+   the retests).
+5. Each subject's verdict words differ (two, three or four answers): one mechanism, words typed once per subject.
+6. Pilots that are not the first lesson (Singing, Ideology, Wealth L2) need data an earlier lesson makes: the lesson opens
+   that form first. Scams and Stats named no pilot: L3 and L1 chosen (26.8).
+7. Civics' "my answer means the same": counted in that sitting, still returns.
+8. The pre-approval of every pilot (2026-10-10) against gate 6's try: the try is still required before the rest is built
+   (V69).
+9. Old learner data: kept untouched and unread rather than deleted, because it is the learner's and costs nothing.

@@ -39,9 +39,9 @@ const seedTries = (page, S, unitId, list) => page.evaluate(([S, unitId, list]) =
 const resetDrill = page => page.evaluate(() => { UNIT_RUN.drillRun = null; UNIT_RUN.drillFinished = false; });
 const focusInFeedback = page => page.evaluate(() => !!document.activeElement && !!document.activeElement.closest('.answerline, .feedback'));
 const kindsSeen = seen => new Set(seen.filter(s => s.type === 'card').map(s => s.kind));
-// a returned set mounted in the drill host, answered like a drill; the results are written into the host when it ends
+// a review part mounted in the drill host, answered like a drill; the results are written into the host when it ends
 const runReturnSet = (page, S, set) => page.evaluate(([S, set]) => {
-  const run = returnSetRun({ id: S }, set || buildReturnSet(S));
+  const run = reviewRun({ id: S }, set || reviewItems(S), 'A review.');
   run.started = true; UNIT_RUN.drillRun = run;
   const host = document.getElementById('host');
   mountDrillRun(host, run, () => { host.innerHTML = runResultsHtml(run); });
@@ -74,7 +74,7 @@ async function probeGate(env) {
   // a family taken for another comes back beside it, where the name chosen is the answer given to the gate question
   await seedTries(page, S, 'u1', [['d-3', 3, false, 'unit', 'route', null, { D1: 'a' }]]);
   out.gateReturns = await safe(() => page.evaluate(S => {
-    const set = buildReturnSet(S), v = unitView(S, 'u1'), targets = set.map(i => caseTarget(v, v.caseById(i.caseId)));
+    const set = reviewItems(S), v = unitView(S, 'u1'), targets = set.map(i => caseTarget(v, v.caseById(i.caseId)));
     return JSON.stringify(targets) === '["c","a"]' && set.every(i => v.caseById(i.caseId).use === 'return');
   }, S));
   await context.close();
@@ -132,7 +132,7 @@ async function probeFact(env) {
   // returns: a fact comes back on the schedule, beside the fact it was swapped with
   await seedTries(page, S, 'u1', [['t-house', 3, true, 'unit', 'fact', 't-house'], ['t-house', 3, false, 'unit', 'fact', 't-senate']]);
   out.factReturns = await safe(() => page.evaluate(S => {
-    const set = buildReturnSet(S), due = dueReturns(S).map(d => d.target);
+    const set = reviewItems(S), due = dueReturns(S).map(d => d.target);
     return due.length === 1 && due[0] === 't-house' && JSON.stringify(set.map(i => i.fact)) === JSON.stringify(['t-house', 't-senate']) && set.every(i => i.fact && !i.caseId);
   }, S));
   out.factReturnRun = await safe(async () => {
@@ -141,7 +141,7 @@ async function probeFact(env) {
     await runReturnSet(page, S, [{ unitId: 'u1', fact: 't-house' }, { unitId: 'u1', fact: 't-senate' }]);
     const asked = await playDrill(page);
     const t = await storedTries(page, S, 'u1/t-house');
-    return asked.length === 2 && asked.every(a => a.type === 'fact') && t[t.length - 1].context === 'return' && t[t.length - 1].ok === true;
+    return asked.length === 2 && asked.every(a => a.type === 'fact') && t[t.length - 1].context === 'review' && t[t.length - 1].ok === true;
   });
   await context.close();
   return out;
@@ -224,7 +224,7 @@ async function probeProc(env) {
   // returns: a problem type comes back as a whole problem, on a fresh problem, beside the type it is taken for
   await seedTries(page, S, 'u1', [['dr-of1', 3, true, 'unit', 'route', 'of'], ['dr-ch1', 3, true, 'unit', 'route', 'change']]);
   out.procReturns = await safe(async () => {
-    const set = await page.evaluate(S => buildReturnSet(S), S);
+    const set = await page.evaluate(S => reviewItems(S), S);
     await runReturnSet(page, S);
     const cur = await page.evaluate(() => { const i = UNIT_RUN.drillRun.current.item; return { type: i.type, solve: i.solve }; });
     return set.length === 2 && set.every(i => i.caseId.startsWith('rt-')) && cur.type === 'problem' && cur.solve === 'route';
