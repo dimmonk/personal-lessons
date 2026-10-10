@@ -13,6 +13,36 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "A",
+      "title": "See the request"
+    },
+    {
+      "id": "B",
+      "title": "Your own way in"
+    },
+    {
+      "id": "C",
+      "title": "Act, check or leave, on mixed messages"
+    },
+    {
+      "id": "D",
+      "title": "Hold off when it pushes"
+    },
+    {
+      "id": "E",
+      "title": "Keep it"
+    },
+    {
+      "id": "F",
+      "title": "If it already went out"
+    }
+  ],
+  "pilot": "l3",
+  "tried": {
+    "pilot": null
   }
 }
 ---

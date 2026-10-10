@@ -13,6 +13,36 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "A",
+      "title": "What they did"
+    },
+    {
+      "id": "B",
+      "title": "One moment or a pattern"
+    },
+    {
+      "id": "C",
+      "title": "Words about how someone treats you"
+    },
+    {
+      "id": "D",
+      "title": "Words about who someone is"
+    },
+    {
+      "id": "E",
+      "title": "A pattern of control"
+    },
+    {
+      "id": "F",
+      "title": "The whole check, mixed, and your own"
+    }
+  ],
+  "pilot": "l1",
+  "tried": {
+    "pilot": null
   }
 }
 ---

@@ -12,6 +12,40 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "1",
+      "title": "Your range"
+    },
+    {
+      "id": "2",
+      "title": "Match a note"
+    },
+    {
+      "id": "3",
+      "title": "Hold it steady"
+    },
+    {
+      "id": "4",
+      "title": "Move between notes"
+    },
+    {
+      "id": "5",
+      "title": "Steps and leaps"
+    },
+    {
+      "id": "6",
+      "title": "Short melodies"
+    },
+    {
+      "id": "7",
+      "title": "A lighter top"
+    }
+  ],
+  "pilot": "l2",
+  "tried": {
+    "pilot": null
   }
 }
 ---

@@ -14,6 +14,44 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "1",
+      "title": "The list"
+    },
+    {
+      "id": "2",
+      "title": "What it costs a year, in dollars"
+    },
+    {
+      "id": "3",
+      "title": "Your biggest single bet"
+    },
+    {
+      "id": "4",
+      "title": "Mix and drift"
+    },
+    {
+      "id": "5",
+      "title": "The full match"
+    },
+    {
+      "id": "6",
+      "title": "Foreign holdings under US rules"
+    },
+    {
+      "id": "7",
+      "title": "Who inherits, and who can act"
+    },
+    {
+      "id": "8",
+      "title": "The whole check, done and repeated"
+    }
+  ],
+  "pilot": "l2",
+  "tried": {
+    "pilot": null
   }
 }
 ---

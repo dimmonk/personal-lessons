@@ -12,6 +12,36 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "1",
+      "title": "Find what the words ask for"
+    },
+    {
+      "id": "2",
+      "title": "Economy labels"
+    },
+    {
+      "id": "3",
+      "title": "The US left–right words"
+    },
+    {
+      "id": "4",
+      "title": "Us-and-them labels"
+    },
+    {
+      "id": "5",
+      "title": "Power labels"
+    },
+    {
+      "id": "6",
+      "title": "Labels in the wild"
+    }
+  ],
+  "pilot": "l2",
+  "tried": {
+    "pilot": null
   }
 }
 ---

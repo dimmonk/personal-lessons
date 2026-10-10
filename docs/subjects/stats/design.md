@@ -13,6 +13,40 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "A",
+      "title": "Find the claim and its number"
+    },
+    {
+      "id": "B",
+      "title": "Size it plainly"
+    },
+    {
+      "id": "C",
+      "title": "Compared with what"
+    },
+    {
+      "id": "D",
+      "title": "Who was counted, and how"
+    },
+    {
+      "id": "E",
+      "title": "Cause or just a link"
+    },
+    {
+      "id": "F",
+      "title": "Read the chart, not its shape"
+    },
+    {
+      "id": "G",
+      "title": "The whole item, unprompted"
+    }
+  ],
+  "pilot": "l1",
+  "tried": {
+    "pilot": null
   }
 }
 ---

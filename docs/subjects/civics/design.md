@@ -13,6 +13,68 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "1",
+      "title": "Who does what"
+    },
+    {
+      "id": "2",
+      "title": "Who made the call"
+    },
+    {
+      "id": "3",
+      "title": "Congress, the presidency and the courts"
+    },
+    {
+      "id": "4",
+      "title": "Federal or state, and your own answers"
+    },
+    {
+      "id": "5",
+      "title": "Theirs to make?"
+    },
+    {
+      "id": "6",
+      "title": "Who can stop it"
+    },
+    {
+      "id": "7",
+      "title": "Principles and founding documents"
+    },
+    {
+      "id": "8",
+      "title": "Rights and responsibilities"
+    },
+    {
+      "id": "9",
+      "title": "Colonies and independence"
+    },
+    {
+      "id": "10",
+      "title": "The 1800s"
+    },
+    {
+      "id": "11",
+      "title": "The 1900s to now"
+    },
+    {
+      "id": "12",
+      "title": "Symbols and holidays"
+    },
+    {
+      "id": "13",
+      "title": "Whole stories"
+    },
+    {
+      "id": "14",
+      "title": "The interview"
+    }
+  ],
+  "pilot": "l1",
+  "tried": {
+    "pilot": null
   }
 }
 ---

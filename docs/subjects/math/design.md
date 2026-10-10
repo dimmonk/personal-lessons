@@ -13,6 +13,40 @@
     "endResult": "2026-10-10",
     "practice": "2026-10-10",
     "pilot": "2026-10-10"
+  },
+  "parts": [
+    {
+      "id": "1",
+      "title": "Ballpark and check"
+    },
+    {
+      "id": "2",
+      "title": "Rates and scaling"
+    },
+    {
+      "id": "3",
+      "title": "Percents forward"
+    },
+    {
+      "id": "4",
+      "title": "Percents backward and stacked"
+    },
+    {
+      "id": "5",
+      "title": "Areas, volumes and how much to buy"
+    },
+    {
+      "id": "6",
+      "title": "Money over time"
+    },
+    {
+      "id": "7",
+      "title": "Two steps and mixed"
+    }
+  ],
+  "pilot": "l1",
+  "tried": {
+    "pilot": null
   }
 }
 ---
