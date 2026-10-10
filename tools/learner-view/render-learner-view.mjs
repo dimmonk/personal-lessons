@@ -8,13 +8,18 @@
 import { writeFile, mkdir } from 'node:fs/promises';
 import { loadSubject, unitView, paras } from './load.mjs';
 import { makeText, makeCardRenderers, APP, cap, num } from './render-cards.mjs';
+import { makeAudioRenderer } from './render-audio.mjs';
+import { audioLines } from './say.mjs';
 
 const [SUBJECT, UNIT] = process.argv.slice(2).filter(a => !a.startsWith('-'));
 if (!SUBJECT || !UNIT) { console.error('usage: node tools/learner-view/render-learner-view.mjs <subject> <unit>'); process.exit(1); }
 const subject = await loadSubject(SUBJECT);
 const v = unitView(subject, UNIT);
 const T = makeText(v);
-const { R } = makeCardRenderers(v, T);
+// the app's sentences for sound are read only for a unit that has sound; a missing key stops the tool and names it (say.mjs)
+const hasAudio = Object.values(v.cards).some(c => c.audio);
+const audioOf = makeAudioRenderer(v, T, hasAudio ? await audioLines() : null);
+const { R } = makeCardRenderers(v, T, audioOf);
 const unit = v.unit;
 const GATE = v.gate ? v.gate.code : null;   // a subject of fact units only has no gate
 const out = [];
@@ -309,7 +314,8 @@ unit.parts.forEach((part, pi) => {
       // a continuing card: its link, the case it names, then its prose (the app's continuedCard)
       const c = card.case ? v.cases[card.case] : null;
       say(T.t(card.link), '', ...(c ? [...(c.name ? [`*${c.name}*`, ''] : []), T.show(c), ''] : []),
-        ...Object.keys(card).filter(k => !['id', 'kind', 'continues', 'link', 'h', 'outcome', 'family', 'step', 'case'].includes(k)).flatMap(k => [...T.P(card[k], c).flatMap(x => [x, ''])]));
+        ...Object.keys(card).filter(k => !['id', 'kind', 'continues', 'link', 'h', 'outcome', 'family', 'step', 'case', 'audio'].includes(k)).flatMap(k => [...T.P(card[k], c).flatMap(x => [x, ''])]),
+        ...audioOf(card));
     } else if (card.kind === 'check') renderCheck(card); else say(...R[card.kind](card, ledgerRead));
     if (card.kind === 'question') namedSteps.add(card.step);
     say('');

@@ -5,10 +5,11 @@
   "scripts": {
     "icons": "node scripts/render-icons.mjs",
     "test:data": "node tests/validate-data.mjs",
+    "test:audio": "node tests/audio-pure.mjs",
     "test:lessons": "node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs",
     "test:e2e": "node tests/e2e.mjs",
     "lock": "node tests/lessons/lock.mjs",
-    "test": "npm run test:data && npm run test:lessons && npm run test:e2e",
+    "test": "npm run test:data && npm run test:audio && npm run test:lessons && npm run test:e2e",
     "deploy": "npm test && firebase deploy --only hosting"
   },
   "devDependencies": {

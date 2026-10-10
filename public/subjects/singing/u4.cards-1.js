@@ -27,7 +27,12 @@ FC.cards('singing', 'u4', [
       'Rosa did not go by the feeling. She measured her note against a steady one, and the way she had to slide told her what was wrong.',
       'If you do not have to slide at all, the note was fine, and there is nothing to fix.'
     ],
-    after: 'Use it before you change anything, because a note that sounds wrong to you is often fine.' },
+    after: 'Use it before you change anything, because a note that sounds wrong to you is often fine. The tool below does the same job as a piano app: it plays a note and you sing it.',
+    audio: {
+      kind: 'notecheck',
+      says: 'This tool plays a note and listens while you sing. The note you pick stands in for the song’s note. Sing it, and the tool tells you whether you are under it, right on it, or over it.',
+      answers: { under: 'P1.under', on: 'P1.match', over: 'P1.over' }
+    } },
 
   /* ---------- On the note ---------- */
   { id: 'meet-onnote', kind: 'meet', outcome: 'onnote',
@@ -37,6 +42,11 @@ FC.cards('singing', 'u4', [
       'Hector felt sure he had missed the note, and his daughter said the chorus sounded funny. But when he ran {t:notecheck}, his note and the song’s note matched. The chorus only sounded wrong.',
       'This happens a lot on recordings, and when a listener frowns. Only the check can say whether the note was really off, so trust it over the feeling.'
     ],
+    audio: {
+      kind: 'tones',
+      says: 'Press the button to hear two notes that start together and sound like one steady note. That is what a match sounds like.',
+      examples: [{ label: '{a:P1.match}', play: [{ note: 'D4', ms: 3000 }, { note: 'D4', ms: 3000 }] }]
+    },
     spot: [
       { do: 'Run the check on the line that sounded wrong: Hector paused the recording on the chorus’s first note and held it.', why: 'It gives you something steady to compare with.' },
       { do: 'Sing your note beside it and listen for a slide: Hector’s note sounded the same, so he had nothing to slide.', why: 'If nothing needs to move, the note is not off.' },
@@ -63,6 +73,11 @@ FC.cards('singing', 'u4', [
       'Beatriz’s note was close, but low. She was tired and she sang the ends of her phrases heavily, and a tired, heavy voice loses lift, so the note sags a little.',
       'That is the usual cause of a low note: too little lift or energy, from tiredness or from singing heavily or very softly. The fix is more lift, and not more volume.'
     ],
+    audio: {
+      kind: 'tones',
+      says: 'Press the button. You hear the song’s note, and beside it a second note that starts a shade low. The two wobble while they are apart, and the wobble fades as the second note slides up and matches.',
+      examples: [{ label: '{a:P1.under}', play: [{ note: 'D4', ms: 4000 }, { note: 'D4', path: [[0, -30], [1600, -30], [2500, 0], [4000, 0]] }] }]
+    },
     spot: [
       { do: 'Run the check on the line: Beatriz played the last note of her part on a piano app and sang hers beside it.', why: 'You need a steady note to measure against.' },
       { do: 'See where your note sits and which way you slide: hers sat lower, and she slid up.', why: 'A slide up means you were under, and a slide down means you were over.' },
@@ -100,6 +115,11 @@ FC.cards('singing', 'u4', [
       'Petra’s note was close, but high. She was nervous, her shoulders were tight, and tension pushes a note up.',
       'It is the same small miss as the one before, in the other direction. The usual causes are pushing, tension and nerves.'
     ],
+    audio: {
+      kind: 'tones',
+      says: 'Press the button. You hear the song’s note, and beside it a second note that starts a shade high. The two wobble while they are apart, and the wobble fades as the second note slides down and matches.',
+      examples: [{ label: '{a:P1.over}', play: [{ note: 'D4', ms: 4000 }, { note: 'D4', path: [[0, 30], [1600, 30], [2500, 0], [4000, 0]] }] }]
+    },
     spot: [
       { do: 'Run the check on the line: Petra played the song’s first note on a piano app and sang hers beside it.', why: 'It is the same check as before.' },
       { do: 'See where your note sits and which way you slide: hers sat higher, and she slid down.', why: 'A slide down means you were over.' },

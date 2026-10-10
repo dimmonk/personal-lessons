@@ -62,14 +62,23 @@ const commit = {
   reason: obj({ kind: en('reason'), choices: arr(obj({ id: str, text }, { note: text })), answer: str }, { lead: text })
 };
 const COMMON_OPTIONAL = { continues: str };
+
+/* S4 audio (section 21): an optional block on term, meet and question cards. A Tone is one steady note, or one note that moves
+   along a path of [ms, cents] points. The shape checks types and presence; V64 to V68 own where it may sit and every limit. */
+const TONE = either(
+  obj({ note: str, ms: int }, { at: int, cents: int }),
+  obj({ note: str, path: arr(arr(int)) }, { at: int }));
+const AUDIO = either(
+  obj({ kind: en('tones'), says: text, examples: arr(obj({ label: str, play: arr(TONE) })) }),
+  obj({ kind: en('notecheck'), says: text, answers: obj({ under: str, on: str, over: str }) }, { notes: arr(str) }));
 const card = (kind, required, optional = {}) => obj({ id: str, kind: en(kind), ...required }, { ...optional, ...COMMON_OPTIONAL });
 const byThing = (kind, required, optional = {}) => either(card(kind, { outcome: str, ...required }, optional), card(kind, { family: str, ...required }, optional));
 export const CARDS = {
   // a fact unit has no preview map (A12)
   orient: card('orient', { h: str, canDo: text, everyday: text }, { map: obj({ branch: str }), add: text }),
-  term: card('term', { term: str, h: str, link: text, case: str, plain: text }, { after: text }),
+  term: card('term', { term: str, h: str, link: text, case: str, plain: text }, { after: text, audio: AUDIO }),
   // meet, again and portrait are about an outcome, or in a gate unit about a family (A15)
-  meet: byThing('meet', { link: text, case: str, mark: str, explain: text, feature: obj({ step: str, option: str }), name: text, spot: STEPS }, { act: TEXT_OR_STEPS }),
+  meet: byThing('meet', { link: text, case: str, mark: str, explain: text, feature: obj({ step: str, option: str }), name: text, spot: STEPS }, { act: TEXT_OR_STEPS, audio: AUDIO }),
   again: byThing('again', { link: text, first: str, second: str, step: str, instruction: text, prompt: commit.phrase, shared: text }, { h: str }),
   lens: card('lens', { h: str, link: text, body: text, fixed: text, varies: strings }),
   // act: what to do when you meet it; required in an action subject's branch units (P26, V59)
@@ -87,7 +96,7 @@ export const CARDS = {
     card('lookalike', { ledger: str, h: str, link: text, facts: arr(str), instruction: text, prompt: obj({ kind: en('which'), answer: str }), difference: text })),
   exception: card('exception', { ledger: str, looksLike: str, is: str, h: str, link: text, case: str, setup: text, prompt: commit.phrase, because: text }, { take: text }),
   refute: card('refute', { about: str, h: str, link: text, idea: str, verdict: text, right: text, testedBy: strings }),
-  question: card('question', { step: str, h: str, link: text, decides: text, how: TEXT_OR_STEPS }, { whenBoth: text }),
+  question: card('question', { step: str, h: str, link: text, decides: text, how: TEXT_OR_STEPS }, { whenBoth: text, audio: AUDIO }),
   worked: card('worked', { h: str, link: text, case: str, steps: arr(obj({ step: str, reason: text })),
     hold: obj({ neighbor: str, prompt: commit.reason, reason: text }),
     impression: obj({ resembles: str, text }, { first: str }) }),

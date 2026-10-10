@@ -206,9 +206,9 @@
       "fp": "sha256:bd0253f6085c49830e2a19d5a7e6f2a8844b381058f42a32a13db73205747ae3"
     },
     "singing/u4": {
-      "rev": 1,
+      "rev": 2,
       "standard": 1,
-      "fp": "sha256:e2687c4b0f31f7fde8b1cc5a587e19a31155d12a99f3de9b683859e6d4bb14d2"
+      "fp": "sha256:230d7d85f14ea09d41a88eec83f50a425f0aaffa7a20928e991863a64e4b981b"
     },
     "singing/u5": {
       "rev": 1,

@@ -37,6 +37,7 @@ function renderUnit(subj){
   paintUnit();
 }
 function paintUnit(){
+  stopAudio();   // any repaint ends every sound and switches the microphone off (lesson standard section 21)
   const run = UNIT_RUN, screen = run.flow[run.i];
   run.reached = Math.max(run.reached, run.i);
   ({ card: paintCard, partend: paintPartEnd, drill: paintDrill, results: paintDrillResults, complete: paintComplete, baseline: paintBaseline })[screen.type](run, screen);
@@ -145,6 +146,7 @@ function wireCard(run, card, cs, ask){
     moveTo(run.i + 1);
   });
   on('[data-to-drill]', () => moveTo(run.flow.findIndex(s => s.type === 'drill')));
+  wireAudio(root, card, v);
   on('[data-confused]', () => {
     logEvent('confused', { subject: subj.id, unit: v.unitId, rev: v.unit.rev, card: card.id });
     run.noted.add(card.id); paintUnit();

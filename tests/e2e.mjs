@@ -5,6 +5,7 @@ import { testUnits, testUnitAt360, testDraftUnits, testMigration } from './e2e-u
 import { testLessonEngineReview } from './e2e-review.mjs';
 import { testNewScreens } from './e2e-screens.mjs';
 import { testKinds } from './e2e-kinds.mjs';
+import { testAudio } from './e2e-audio.mjs';
 import { APP_JARGON, abstractIn } from './plain-words.mjs';
 import { britishIn } from './american.mjs';
 import { subjectMeta } from './fixtures/app-data.mjs';
@@ -163,6 +164,7 @@ try {
   await testLessonEngineReview(unitEnv);
   await testNewScreens(unitEnv);
   await testKinds(unitEnv);
+  await testAudio(unitEnv);
   await testPwa();
 } catch (err) {
   failures.push(`crashed: ${err.stack || err}`);

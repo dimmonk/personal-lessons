@@ -106,7 +106,8 @@ function tapPrompt(T, c, stem, answer) {
   return out;
 }
 
-export function makeCardRenderers(v, T) {
+// audio: the renderer of a card's sound block (render-audio.mjs); it prints nothing for a card with none
+export function makeCardRenderers(v, T, audio = () => []) {
   const C = id => v.cases[id] || (() => { throw new Error(`unknown story ${id}`); })();
   const taught = v.taught;
   const plainName = id => v.thing(id).n;
@@ -198,13 +199,13 @@ export function makeCardRenderers(v, T) {
     const c = C(card.case), term = v.term(card.term);
     // the app prints a case's name only when it has one (T.caseName)
     return [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c), '', ...blocks(T.P(card.plain, c)),
-      `**The word for this.** *${cap(term.n)}*: ${term.means}.`, '', ...blocks(T.P(card.after, c))];
+      `**The word for this.** *${cap(term.n)}*: ${term.means}.`, '', ...blocks(T.P(card.after, c)), ...audio(card)];
   };
 
   R.meet = card => {
     const c = C(card.case), oc = v.thing(v.subjectOf(card));
     const out = [T.t(card.link), '', ...(c.name ? [`*${c.name}*`, ''] : []), T.show(c, [card.mark]), '',
-      ...blocks(T.P(card.explain, c)),
+      ...blocks(T.P(card.explain, c)), ...audio(card),
       `**${APP.spotIt}**`, '', ...stepsOut(card.spot, c), '',
       ...blocks(T.P(card.name, c)), ...(card.act ? [`**${APP.act}**`, '', ...bodyOut(card.act, c)] : [])];
     while (out[out.length - 1] === '') out.pop();
@@ -270,7 +271,7 @@ export function makeCardRenderers(v, T) {
       out.push(single ? `  - It leads to ${T.namesAt(keeps, card.id)}.` : `  - Keeps ${T.namesAt(keeps, card.id)}.` + (gone.length ? ` Rules out ${T.namesAt(gone, card.id)}.` : ''));
     });
     out.push('', '**Why it matters**', '', s.why, '', ...blocks(T.P(card.decides)),
-      '**How to answer it**', '', ...bodyOut(card.how));
+      '**How to answer it**', '', ...bodyOut(card.how), ...audio(card));
     const entries = v.unit.ledger.filter(l => l.step === s.code && ledgerRead.has(l.id));
     if (entries.length) {
       out.push('**When two answers both seem to fit**', '', ...blocks(T.P(card.whenBoth)));

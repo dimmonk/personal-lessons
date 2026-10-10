@@ -23,12 +23,14 @@ Status on 2026-10-09, checked against the lesson data, the live site and the tes
 - [x] 2026-10-05: every subject rebuilt in the interactive format, the old card format deleted, American English everywhere, every unit trimmed to a quick lesson
 - [x] 2026-10-07: every key, unit and specimen rewritten in plain, concrete words
 - [x] 2026-10-08: Singing built from nothing, one agent per unit, and deployed
-- [x] 2026-10-09: the missing sound in Singing assessed (`docs/singing-audio.md`)
+- [x] 2026-10-09: the missing sound in Singing assessed, then built: the note tool and five example sounds in Unit Four (`docs/singing-audio.md`), the rule in section 21 of the standard
 
 ## Singing: sound
-- [ ] A reference note and a pitch meter in the app, so the note check in Unit Four works inside the app (no sound files needed)
-- [ ] Example sounds for singing flat, sharp and scooping, made by the app (no sound files needed)
+- [x] A reference note and a pitch meter in the app, so the note check in Unit Four works inside the app (no sound files needed): the note tool on the note-check card, 2026-10-09
+- [x] Example sounds for singing flat, sharp and scooping, made by the app (no sound files needed), and for a match and for hunting: five cards of Unit Four, 2026-10-09
+- [x] The list of clips to record, written: `docs/singing-clips.md`
 - [ ] Recorded clips for the rest: pushing, cracking, squeezing, an airy tone, a nasal sound, a muffled sound. The recordings have to come from you or from licensed clips
+- [ ] Listen to the new sounds and try the note tool on a real phone (`docs/singing-audio.md` says what to listen for)
 - [ ] The screen before Unit One asks "Is this real, or is something wrong with it?". "Real" reads oddly for singing, and the wording is shared by every subject you act on
 
 ## Not built yet
@@ -36,6 +38,5 @@ Status on 2026-10-09, checked against the lesson data, the live site and the tes
 - [ ] A gap the units say out loud: Civics skips the years 1877 to 1900
 
 ## Needs your decision
-- [ ] Build the Singing sound now: the reference note, the pitch meter and the example sounds? Recommended: yes, one session (details in `docs/singing-audio.md`)
-- [ ] The recorded clips: will you record them, or should I build the player with placeholders and the list of clips needed? Recommended: the list first
+- [ ] The recorded clips: will you record them? The list is `docs/singing-clips.md`; the player is built when the files exist
 - [ ] Cold read: read any unit as a beginner and say what is unclear. Start with Psychology Unit One

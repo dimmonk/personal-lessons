@@ -1,6 +1,6 @@
 # Learner view: Singing, Unit Four: Whether you are on the note
 
-*Check the note before you fix it: four ways to be off, and one way to be fine.* Unit revision 1, built to lesson standard 1, status: draft.
+*Check the note before you fix it: four ways to be off, and one way to be fine.* Unit revision 2, built to lesson standard 1, status: draft.
 
 This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.
 
@@ -17,7 +17,7 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ### 1. Before you fix a note, check it
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 1 of 22*
 
 [reviewers only: card kind `orient`, id `orient`]
 
@@ -62,7 +62,7 @@ Each starts from a real story. After each one you answer a quick question, and t
 
 ### 2. To find out if a note is off, play it and sing against it
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 2 of 22*
 
 [reviewers only: card kind `term`, id `term-notecheck`]
 
@@ -78,12 +78,37 @@ If you do not have to slide at all, the note was fine, and there is nothing to f
 
 **The word for this.** *The note check*: play the song’s note on a piano app, or pause the recording on it, hold it, sing yours, and slide until the two match; which way you had to slide tells you which way you were off.
 
-Use it before you change anything, because a note that sounds wrong to you is often fine.
+Use it before you change anything, because a note that sounds wrong to you is often fine. The tool below does the same job as a piano app: it plays a note and you sing it.
+
+**Try it**
+
+This tool plays a note and listens while you sing. The note you pick stands in for the song’s note. Sing it, and the tool tells you whether you are under it, right on it, or over it.
+
+Pick a note. You will hear it.
+The note buttons: C, D, E, F, G, A, B.
+
+A button: **Start the microphone**. While the microphone is on it reads **Stop the microphone**.
+
+The sound from your microphone is checked on this device and thrown away. Nothing is recorded or sent anywhere.
+
+Now sing that note and hold it.
+Too high or too low for you? Sing the same note in your own range. The tool counts it as the same note.
+
+Once the microphone is on, the tool shows one line and a needle:
+- While the app’s own note is sounding: “Listen to the note first, then sing it.”
+- Until it hears a steady note: “Listening...”
+- Then one of three lines, the key’s own wording for the answers to **“Where does your note land?”**
+  - The note you sing is under the picked note: **“A shade under the song’s note”**
+  - It is on the picked note: **“On the song’s note”**
+  - It is over the picked note: **“A shade over the song’s note”**
+- If no note was picked yet: “Pick a note first.”
+- If the microphone is refused: “The microphone is turned off for this page. You can still hear the notes.”
+- If there is none: “No microphone is available here. You can still hear the notes.”
 
 
 ### 3. On the note
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 3 of 22*
 
 [reviewers only: card kind `meet`, id `meet-onnote`]
 
@@ -96,6 +121,13 @@ Start with the one where nothing is wrong, so you know what a match sounds like.
 Hector felt sure he had missed the note, and his daughter said the chorus sounded funny. But when he ran *the note check*, his note and the song’s note matched. The chorus only sounded wrong.
 
 This happens a lot on recordings, and when a listener frowns. Only the check can say whether the note was really off, so trust it over the feeling.
+
+**Hear it**
+
+Press the button to hear two notes that start together and sound like one steady note. That is what a match sounds like.
+
+Buttons, one for each sound. A tap plays the sound; while it plays the button reads “Playing” and a second tap stops it (“Stop”):
+- **“On the song’s note”**
 
 **How to spot it**
 
@@ -115,7 +147,7 @@ You may also hear this called “in tune” or “on pitch”. Those words mean 
 
 ### 4. A question about a new story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 4 of 22*
 
 [reviewers only: card kind `check`, id `check-onnote`]
 
@@ -140,7 +172,7 @@ The pieces you can tap:
 
 ### 5. Singing flat
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 5 of 22*
 
 [reviewers only: card kind `meet`, id `meet-flat`]
 
@@ -153,6 +185,13 @@ Now the first way to be off: a note that sits a little under the song’s note.
 Beatriz’s note was close, but low. She was tired and she sang the ends of her phrases heavily, and a tired, heavy voice loses lift, so the note sags a little.
 
 That is the usual cause of a low note: too little lift or energy, from tiredness or from singing heavily or very softly. The fix is more lift, and not more volume.
+
+**Hear it**
+
+Press the button. You hear the song’s note, and beside it a second note that starts a shade low. The two wobble while they are apart, and the wobble fades as the second note slides up and matches.
+
+Buttons, one for each sound. A tap plays the sound; while it plays the button reads “Playing” and a second tap stops it (“Stop”):
+- **“A shade under the song’s note”**
 
 **How to spot it**
 
@@ -173,7 +212,7 @@ You may also hear this called “under the note” or “off pitch on the low si
 
 ### 6. A question about a new story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 6 of 22*
 
 [reviewers only: card kind `check`, id `check-flat`]
 
@@ -193,7 +232,7 @@ You may also hear this called “under the note” or “off pitch on the low si
 
 ### 7. Singing flat or On the note: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 7 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-flat-onnote`]
 
@@ -228,7 +267,7 @@ Did you have to slide up to reach the song’s note, or did the two already soun
 
 ### 8. Singing sharp
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 8 of 22*
 
 [reviewers only: card kind `meet`, id `meet-sharp`]
 
@@ -241,6 +280,13 @@ Now the other direction: a note that sits a little over the song’s note.
 Petra’s note was close, but high. She was nervous, her shoulders were tight, and tension pushes a note up.
 
 It is the same small miss as the one before, in the other direction. The usual causes are pushing, tension and nerves.
+
+**Hear it**
+
+Press the button. You hear the song’s note, and beside it a second note that starts a shade high. The two wobble while they are apart, and the wobble fades as the second note slides down and matches.
+
+Buttons, one for each sound. A tap plays the sound; while it plays the button reads “Playing” and a second tap stops it (“Stop”):
+- **“A shade over the song’s note”**
 
 **How to spot it**
 
@@ -260,7 +306,7 @@ You may also hear this called “over the note” or “off pitch on the high si
 
 ### 9. A question about a new story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 9 of 22*
 
 [reviewers only: card kind `check`, id `check-sharp`]
 
@@ -281,7 +327,7 @@ You may also hear this called “over the note” or “off pitch on the high si
 
 ### 10. Singing flat or Singing sharp: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 1 of 3 · Card 10 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-flat-sharp`]
 
@@ -322,7 +368,7 @@ Which way did you have to slide to match the song’s note: up or down?
 
 ### 11. Scooping
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 11 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 11 of 22*
 
 [reviewers only: card kind `meet`, id `meet-scooping`]
 
@@ -335,6 +381,14 @@ The first two were steady notes that sat a little off. This one is a note that m
 Dev’s notes are not low. He does get to each one. But every note starts underneath and slides up, so it arrives late and the line swoops.
 
 It is a habit copied from singers on records, and it is easy to pick up without noticing. Dev only heard it on his own recording.
+
+**Hear it**
+
+Press the first button, then the second, and listen to how each note starts. In the first, each note starts underneath and slides up, so it arrives late. In the second, each note lands right on it.
+
+Buttons, one for each sound. A tap plays the sound; while it plays the button reads “Playing” and a second tap stops it (“Stop”):
+- **“Under it at first, then sliding up into it”**
+- **“On the song’s note”**
 
 **How to spot it**
 
@@ -355,7 +409,7 @@ You may also hear this called “sliding into the note” or “swooping”. Tho
 
 ### 12. A question about a new story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 12 of 22*
 
 [reviewers only: card kind `check`, id `check-scooping`]
 
@@ -377,7 +431,7 @@ You may also hear this called “sliding into the note” or “swooping”. Tho
 
 ### 13. Scooping or Singing flat: telling them apart
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 13 of 22*
 
 [reviewers only: card kind `lookalike`, id `look-scooping-flat`]
 
@@ -412,7 +466,7 @@ Does the note stay where it is, a little low, or does it start low and move up i
 
 ### 14. Guessing the note
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 14 of 22*
 
 [reviewers only: card kind `meet`, id `meet-guessing`]
 
@@ -425,6 +479,13 @@ The last one starts before any of this: the note was never in your head.
 Mei did not know the first note when she opened her mouth, so her voice had to look for it. Sometimes it finds the note and sometimes it never does, and the melody wanders.
 
 This is about the start, before any note is sung. It does not mean something is wrong with your ears: nearly everybody sings before they listen.
+
+**Hear it**
+
+Press the button to hear a voice that does not know its note. It moves up and down until it finds the note.
+
+Buttons, one for each sound. A tap plays the sound; while it plays the button reads “Playing” and a second tap stops it (“Stop”):
+- **“Wherever your voice happens to start, until you find it”**
 
 **How to spot it**
 
@@ -445,7 +506,7 @@ You may also hear this called “singing before you hear it” or “not hearing
 
 ### 15. A question about a new story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 15 of 22*
 
 [reviewers only: card kind `check`, id `check-guessing`]
 
@@ -467,7 +528,7 @@ You may also hear this called “singing before you hear it” or “not hearing
 
 ### 16. When the note ends up low and no note was in her head
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 16 of 22*
 
 [reviewers only: card kind `exception`, id `exc-guess-flat`]
 
@@ -507,7 +568,7 @@ When a story shows both **“A shade under the song’s note”** and a start wi
 
 ### 17. When the slide is a search
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 2 of 3 · Card 17 of 22*
 
 [reviewers only: card kind `exception`, id `exc-guess-scoop`]
 
@@ -551,7 +612,7 @@ When a story shows both **“Under it at first, then sliding up into it”** and
 
 ### 18. The question to ask about every note
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 18 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 18 of 22*
 
 [reviewers only: card kind `question`, id `q-how`]
 
@@ -607,7 +668,7 @@ Sometimes two answers both seem to fit. Each pair below has one question that se
 
 ### 19. A question about a new story
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 19 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 19 of 22*
 
 [reviewers only: card kind `check`, id `check-how`]
 
@@ -630,7 +691,7 @@ Sometimes two answers both seem to fit. Each pair below has one question that se
 
 ### 20. One whole story, where the wince points the wrong way
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 20 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 20 of 22*
 
 [reviewers only: card kind `worked`, id `worked-tired`]
 
@@ -1100,7 +1161,7 @@ Each question is shown with all of its answers, in order, and the names offered 
 
 ### 21. What to carry away
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 21 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 21 of 22*
 
 [reviewers only: card kind `recap`, id `recap`]
 
@@ -1132,7 +1193,7 @@ Where does your note land?
 
 ### 22. A plan, if you want one
 
-*Unit Four · rev 1 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 22 of 22*
+*Unit Four · rev 2 · Draft: not yet read by a newcomer · Part 3 of 3 · Card 22 of 22*
 
 [reviewers only: card kind `plan`, id `plan`]
 

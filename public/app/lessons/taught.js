@@ -67,16 +67,19 @@ function openCardSheet(v, cardId, opener){
     }
   };
   function close(){
+    stopAudio();   // closing the sheet ends every sound and switches the microphone off (lesson standard section 21)
     document.removeEventListener('keydown', keep);
     sheet.remove();
     app.inert = false;
     document.body.style.overflow = '';
     if(opener && opener.isConnected) opener.focus();
   }
+  stopAudio();   // whatever sounded on the page behind is over: the sheet is its own screen
   app.inert = true;
   document.body.style.overflow = 'hidden';
   document.body.appendChild(sheet);
   document.addEventListener('keydown', keep);
   on('[data-close-sheet]', close, sheet);
+  wireAudio(sheet, card, v);
   sheet.querySelector('[data-close-sheet]').focus();
 }

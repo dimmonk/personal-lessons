@@ -12,6 +12,14 @@ FC.cards('singing', 'u4', [
       'Dev’s notes are not low. He does get to each one. But every note starts underneath and slides up, so it arrives late and the line swoops.',
       'It is a habit copied from singers on records, and it is easy to pick up without noticing. Dev only heard it on his own recording.'
     ],
+    audio: {
+      kind: 'tones',
+      says: 'Press the first button, then the second, and listen to how each note starts. In the first, each note starts underneath and slides up, so it arrives late. In the second, each note lands right on it.',
+      examples: [
+        { label: '{a:P1.slide}', play: [{ note: 'D4', path: [[0, -300], [400, 0], [1500, 0]] }, { note: 'F4', at: 1800, path: [[0, -300], [400, 0], [1500, 0]] }] },
+        { label: '{a:P1.match}', play: [{ note: 'D4', ms: 1500 }, { note: 'F4', at: 1800, ms: 1500 }] }
+      ]
+    },
     spot: [
       { do: 'Record the line and listen to how each note starts: Dev heard every long note begin underneath.', why: 'The start of the note is where this one shows.' },
       { do: 'Listen for a slide up into the note: Dev’s notes slid up until they reached it.', why: 'A steady note that is a little low would not move.' },
@@ -49,6 +57,11 @@ FC.cards('singing', 'u4', [
       'Mei did not know the first note when she opened her mouth, so her voice had to look for it. Sometimes it finds the note and sometimes it never does, and the melody wanders.',
       'This is about the start, before any note is sung. It does not mean something is wrong with your ears: nearly everybody sings before they listen.'
     ],
+    audio: {
+      kind: 'tones',
+      says: 'Press the button to hear a voice that does not know its note. It moves up and down until it finds the note.',
+      examples: [{ label: '{a:P1.hunt}', play: [{ note: 'D4', path: [[0, -250], [500, 130], [1000, -100], [1500, 70], [2000, -30], [2500, 0], [3500, 0]] }] }]
+    },
     spot: [
       { do: 'Ask whether you had the note in your head before you sang: Mei did not.', why: 'A voice that starts with no note has to hunt for one.' },
       { do: 'Listen to the start of the line: Mei’s voice moved up and down before it settled.', why: 'Hunting sounds like wandering, not like one steady note that is wrong.' },

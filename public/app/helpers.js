@@ -35,6 +35,9 @@ const ICON = {
   list:    '<path d="M4 6h16M4 12h16M4 18h16"/>',
   book:    '<path d="M5 4h11a2 2 0 012 2v14H7a2 2 0 01-2-2z"/><path d="M9 8h7M9 12h7"/>',
   alert:   '<path d="M12 4l8 15H4z"/><path d="M12 10v4M12 16.5v.5"/>',
-  info:    '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8.5v.5"/>'
+  info:    '<circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8.5v.5"/>',
+  play:    '<path d="M7 5l12 7-12 7z"/>',
+  stop:    '<rect x="6" y="6" width="12" height="12"/>',
+  mic:     '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/>'
 };
 const icon = (name, w) => SVG(ICON[name], w);

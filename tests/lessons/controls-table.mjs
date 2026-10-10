@@ -35,6 +35,12 @@ const LENS = { id: 'lens', kind: 'lens', h: 'The story never decides the answer'
 const TRANSFER = { id: 'transfer', kind: 'transfer', h: 'Where would you meet this?', link: 'The last step is yours.', ask: 'Pick one of the five and name an occasion of your own.',
   prompts: ['dissonance', 'sunkcost', 'confbias', 'motivated', 'fair'].map(outcome => ({ outcome, occasion: 'An occasion of your own.' })), places: ['At home'] };
 
+// Sound (section 21): valid audio blocks to seed into the exemplar's term card (term-cd) and meet card (meet-sunkcost), and the faults on them.
+const HEAR = { kind: 'tones', says: 'Press the button and listen to one steady note.', examples: [{ label: 'One steady note', play: [{ note: 'D4', ms: 2000 }] }] };
+const TRY = { kind: 'notecheck', says: 'Pick a note, hear it, then sing it.', notes: ['C4', 'D4'], answers: { under: 'R1.addstory', on: 'R1.backward', over: 'R1.scrutiny' } };
+const withAudio = (id, audio) => (d, h) => h.setIn(d, [...card(id), 'audio'], audio);
+const tonesWith = change => ({ ...HEAR, ...change });
+const exampleWith = (label, ...play) => ({ label, play });
 
 // The units of the fixtures that stand for the other kinds (kind-fixtures.mjs)
 const FACT = ['subjects', 'facttest'], PROC = ['subjects', 'proctest'], GATE = ['subjects', 'gatetest'];
@@ -187,6 +193,57 @@ export const CONTROLS = [
     data: (d, h) => h.updateIn(d, unit('ledger'), l => l.map(e => ({ ...e, step: 'D1' }))) },
   { rule: 'V56', name: 'two units share a title',
     data: (d, h) => h.setIn(d, ['subjects', P, 'units', 'u3', 'title'], d.subjects[P].units[U].title) },
+
+  /* ----- section 21: sound ----- */
+  { rule: 'V64', name: 'audio on a card that waits for an answer', only: true,
+    data: withAudio('check-does', HEAR) },
+  { rule: 'V65', name: 'what the sound says runs past three sentences',
+    data: withAudio('term-cd', tonesWith({ says: 'Listen first. Then press the button. Press it again to stop it. Then try the next one.' })) },
+  { rule: 'V66', name: 'two buttons in one block carry the same label',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('A steady note', { note: 'D4', ms: 1000 }), exampleWith('A steady note', { note: 'E4', ms: 1000 })] })) },
+  { rule: 'V66', name: 'a block holds more than four examples',
+    data: withAudio('term-cd', tonesWith({ examples: ['A', 'B', 'C', 'D', 'E'].map(x => exampleWith(`Note ${x}`, { note: 'D4', ms: 1000 })) })) },
+  { rule: 'V66', name: 'an example sounds more than four tones',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('Five together', ...['C4', 'D4', 'E4', 'F4', 'G4'].map(note => ({ note, ms: 1000 })))] })) },
+  { rule: 'V67', name: 'a tone names a note that does not exist',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('One steady note', { note: 'H4', ms: 1000 })] })) },
+  { rule: 'V67', name: 'a tone is in an octave outside the range',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('One steady note', { note: 'D7', ms: 1000 })] })) },
+  { rule: 'V67', name: 'a tone is shifted further than the limit',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('One steady note', { note: 'D4', cents: 1500, ms: 1000 })] })) },
+  { rule: 'V67', name: 'the times of a moving tone do not rise',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('One moving note', { note: 'D4', path: [[0, -30], [1800, 0], [1800, 0]] })] })) },
+  { rule: 'V67', name: 'a moving tone has a path of one point',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('One moving note', { note: 'D4', path: [[0, -30]] })] })) },
+  { rule: 'V67', name: 'one tone lasts longer than four seconds',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('One long note', { note: 'D4', ms: 4500 })] })) },
+  { rule: 'V67', name: 'an example runs past six seconds from the tap',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('Two late notes', { note: 'D4', ms: 4000 }, { note: 'E4', at: 3000, ms: 4000 })] })) },
+  { rule: 'V67', name: 'a note check offers a note that does not exist',
+    data: withAudio('term-cd', { ...TRY, notes: ['C4', 'H4'] }) },
+  { rule: 'V68', name: 'a note check names one answer for two of the three',
+    data: withAudio('term-cd', { ...TRY, answers: { under: 'R1.addstory', on: 'R1.addstory', over: 'R1.scrutiny' } }) },
+  { rule: 'V68', name: 'a note check names a question the unit does not teach',
+    data: withAudio('term-cd', { ...TRY, answers: { under: 'D1.reasoning', on: 'R1.backward', over: 'R1.scrutiny' } }) },
+  { rule: 'V50', name: 'what the sound says uses a word the app avoids',
+    data: withAudio('term-cd', tonesWith({ says: 'Press the button to hear this lesson in one steady note.' })) },
+  { rule: 'V62', name: 'what the sound says uses an abstract word',
+    data: withAudio('term-cd', tonesWith({ says: 'Press the button to hear one kind of thing.' })) },
+  { rule: 'V2', name: 'a button label types a line of the key by hand',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('Makes excuses for what they already did', { note: 'D4', ms: 1000 })] })) },
+  { rule: 'V3', name: 'a button label holds a token that names nothing',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('{test:nosuch~entry}', { note: 'D4', ms: 1000 })] })) },
+  { rule: 'V60', name: 'a button label is spelled the British way',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('A colour of sound', { note: 'D4', ms: 1000 })] })) },
+  { rule: 'V5', name: 'a button label uses an answer before the card that teaches it',
+    data: withAudio('term-cd', tonesWith({ examples: [exampleWith('{a:R1.fixed}', { note: 'D4', ms: 1000 })] })) },
+  { rule: 'V5', name: 'what the sound says uses an answer before the card that teaches it',
+    data: withAudio('term-cd', tonesWith({ says: 'Press the button to hear {a:R1.fixed}.' })) },
+  { rule: 'V4', name: 'what the sound says shows a step code',
+    data: withAudio('term-cd', tonesWith({ says: 'Press the button and listen for R1.' })) },
+  { rule: '(none)', green: true, name: 'note names, numbers, kinds and answers in a block are not read as prose (no false finding)',
+    data: (d, h) => h.setIn(withAudio('term-cd', { ...TRY, notes: ['C4', 'D4', 'A4'] })(d, h), [...card('meet-sunkcost'), 'audio'],
+      tonesWith({ examples: [exampleWith('{a:R1.backward}', { note: 'D4', path: [[0, -30], [1800, 0]] }, { note: 'A4', at: 100, cents: 12, ms: 1500 })] })) },
 
   /* ----- section 15: the legit marker, and the rules of the other kinds of unit ----- */
   { rule: 'V0', name: 'an outcome is marked legit with something that is not true',

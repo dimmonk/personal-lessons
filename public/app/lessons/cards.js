@@ -105,13 +105,15 @@ CARD.term = (ctx, card) => {
   const { v, T } = ctx, c = v.caseById(card.case), term = v.term(card.term);
   return `<p>${T.t(card.link)}</p>${T.caseName(c)}${T.show(c)}${T.PP(card.plain, c)}`
     + lessonSection('The word for this', `<p><i>${esc(cap(term.n))}</i>: ${esc(term.means)}.</p>`)
-    + T.PP(card.after, c);
+    + T.PP(card.after, c)
+    + audioHtml(ctx, card);
 };
 
 CARD.meet = (ctx, card) => {
   const { v, T } = ctx, c = v.caseById(card.case), id = card.outcome || card.family, thing = v.thing(id);
   return `<p>${T.t(card.link)}</p>${T.caseName(c)}${T.show(c, [card.mark])}`
     + T.PP(card.explain, c)
+    + audioHtml(ctx, card)
     + lessonSection(SAY.spotIt, T.S(card.spot, c))
     + T.PP(card.name, c)
     + (card.act ? lessonSection(SAY.act, T.B(card.act, c)) : '')
@@ -196,6 +198,7 @@ CARD.question = (ctx, card) => {
         (single && !v.isGate ? `<p>Each answer leads to one name, and so rules out the other ${numWord(taught.length - 1)}.</p>` : '') + `<ul class="answers">${answers}</ul>`)
     + lessonSection('Why it matters', `<p>${esc(s.why)}</p>${T.PP(card.decides)}`)
     + lessonSection('How to answer it', T.B(card.how))
+    + audioHtml(ctx, card)
     + (entries.length ? lessonSection('When two answers both seem to fit', T.PP(card.whenBoth)
         + lessonList(entries.map(l => `${esc(v.nameOf(l.pair[0]))} or ${esc(v.nameOf(l.pair[1]))}: ${T.t(l.test)}`))) : '');
 };
@@ -357,11 +360,12 @@ function commitRight(v, card, picked){
 // A continuing card (S4 chains) carries on the explanation of the card before it: its link line restating what that card
 // established, then its prose, in the order written, with the case it names shown where it names one. Its heading is the
 // first card's (cardHeading). It asks nothing: V24 holds it to prose and a case.
-const CHAIN_META = ['id', 'kind', 'continues', 'link', 'h', 'outcome', 'family', 'step'];
+const CHAIN_META = ['id', 'kind', 'continues', 'link', 'h', 'outcome', 'family', 'step', 'audio'];
 function continuedCard(ctx, card){
   const { v, T } = ctx, c = card.case ? v.caseById(card.case) : null;
   return `<p>${T.t(card.link)}</p>` + (c ? T.caseName(c) + T.show(c) : '')
-    + Object.keys(card).filter(k => !CHAIN_META.includes(k) && k !== 'case').map(k => T.PP(card[k], c)).join('');
+    + Object.keys(card).filter(k => !CHAIN_META.includes(k) && k !== 'case').map(k => T.PP(card[k], c)).join('')
+    + audioHtml(ctx, card);
 }
 function cardHtml(ctx, card){
   if(card.continues) return continuedCard(ctx, card);

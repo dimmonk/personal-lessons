@@ -7,7 +7,7 @@
 
 FC.unit('singing', 'u4', {
   kind: 'C',              // C classification, F facts, P procedure
-  rev: 1,                 // unit revision, shown in the app
+  rev: 2,                 // unit revision, shown in the app
   standard: 1,            // lesson-standard version this unit was built to
   status: 'draft',        // 'live' only after the cold read in build.signoff (a person, not the author)
   tag: 'Four',
@@ -100,7 +100,8 @@ FC.unit('singing', 'u4', {
   // Build notes: not shown to the learner, and left out of the fingerprint. The validator reads them.
   build: {
     history: [
-      { rev: 1, date: '2026-10-08', change: 'First version under lesson standard 1: the pitch branch of the singing key (docs/rebuild/singing-plan.md). Five names (a note that was fine taught first, then a little under, a little over, a slide up into the note, and hunting for it), one term (the note check), seven look-alike pairs, two named exceptions where the hunt wins, and a drill that holds a fine note in every stage.' }
+      { rev: 1, date: '2026-10-08', change: 'First version under lesson standard 1: the pitch branch of the singing key (docs/rebuild/singing-plan.md). Five names (a note that was fine taught first, then a little under, a little over, a slide up into the note, and hunting for it), one term (the note check), seven look-alike pairs, two named exceptions where the hunt wins, and a drill that holds a fine note in every stage.' },
+      { rev: 2, date: '2026-10-09', change: 'Sound added: a note tool on the note-check card (pick a note, hear it, sing it, and the app says whether you are under it, on it or over it), and example sounds on five cards (a match, a note a shade under, a note a shade over, a slide up into the note, and a voice hunting for it). No teaching text changed except one sentence on the note-check card.' }
     ],
     keyChanges: [],
     wrongIdeas: [],

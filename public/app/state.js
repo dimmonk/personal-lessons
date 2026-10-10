@@ -79,6 +79,7 @@ function statusOf(subj){
 /* ===================== NAVIGATION ===================== */
 
 function go(view, extra){
+  stopAudio();
   Object.assign(APP, {view}, extra || {});
   saveApp(); render(); window.scrollTo(0,0);
 }
