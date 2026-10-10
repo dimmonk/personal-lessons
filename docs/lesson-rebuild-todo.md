@@ -1,31 +1,41 @@
-# Lesson rebuild: every subject in the interactive format
+---
+title: Lesson rebuild
+artifact: https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv
+---
 
-Started and finished 2026-10-05, in one session. Keys on Opus, units on Sonnet (one agent per unit), engine and validator gaps fixed at the root as real data hit them (`docs/lesson-standard.md` section 17). The state and how to continue: `docs/HANDOFF.md`.
+# Lesson rebuild
 
-## Subjects
-- [x] Psychology: 4 units (gate, reasoning, between two people, lasting ways), 16 specimens
-- [x] Statistical Claims: 6 units, 23 specimens
-- [x] Scams: 6 units (one a fact unit), 27 specimens
-- [x] Wealth Preservation: 5 units, 27 specimens
-- [x] US Civics: 10 units (five fact units), 20 specimens
+Status on 2026-10-09, checked against the lesson data, the live site and the tests (code at commit 08c5f41). Fieldcraft has 8 subjects and 48 units, all in the interactive format and all live at https://fieldcraft.web.app. Every unit is still a draft until you read it cold. How to continue: `docs/HANDOFF.md`.
+
+## Live now
+- [x] Psychology: 4 units, 16 specimens
 - [x] Political Ideologies: 5 units, 30 specimens
-- [x] Basic Math: 6 units (five procedure units), 35 specimens
-- [x] Old card-format data deleted from every subject
-- [x] Old card-format screens, tests and written pattern deleted (2026-10-05, standard section 18)
+- [x] Basic Math: 6 units (5 procedure), 35 specimens
+- [x] Statistical Claims: 6 units, 23 specimens
+- [x] Scams: 6 units (1 fact), 27 specimens
+- [x] Wealth Preservation: 5 units, 27 specimens
+- [x] US Civics: 10 units (5 fact), 20 specimens
+- [x] Singing: 6 units (1 fact), 19 specimens, added 2026-10-08
+- [x] The live site is identical to the code: all 713 files match, Singing included
+- [x] All tests pass today: 1,154 data checks, 1,622,727 lesson checks across 48 units, 87 negative controls, 44,177 browser checks
 
-## Engine, validator, tools, tests
-- [x] Gate, fact and procedure units on real data; chains (`continues`); cross-branch look-alike pairs; `act` and V59; names and terms of assumed units; earlier problem types in later drills and Mixed; unmet names shown by plain words; an empty Mixed drill explains itself
-- [x] Learner-view tool for every unit kind (`tools/learner-view/`); all 42 units rendered in `docs/learner-view/`
-- [x] Browser tests read their expectations from the data
-- [x] npm test green: data, about 1.6 million lesson checks, 86 negative controls, about 57,000 browser checks
+## How it got here
+- [x] 2026-10-05: every subject rebuilt in the interactive format, the old card format deleted, American English everywhere, every unit trimmed to a quick lesson
+- [x] 2026-10-07: every key, unit and specimen rewritten in plain, concrete words
+- [x] 2026-10-08: Singing built from nothing, one agent per unit, and deployed
+- [x] 2026-10-09: the missing sound in Singing assessed (`docs/singing-audio.md`)
 
-## Finish
-- [x] Lock written for 42 units; HANDOFF.md rewritten
-- [x] Commit, deploy, push
+## Singing: sound
+- [ ] A reference note and a pitch meter in the app, so the note check in Unit Four works inside the app (no sound files needed)
+- [ ] Example sounds for singing flat, sharp and scooping, made by the app (no sound files needed)
+- [ ] Recorded clips for the rest: pushing, cracking, squeezing, an airy tone, a nasal sound, a muffled sound. The recordings have to come from you or from licensed clips
+- [ ] The screen before Unit One asks "Is this real, or is something wrong with it?". "Real" reads oddly for singing, and the wording is shared by every subject you act on
 
-- [x] American English everywhere: dollars, US rules and institutions, US spelling (V60)
-
-- [x] Every unit trimmed to a quick lesson; engine feedback and wording cut to what the learner needs (standard section 19, FC.ENGINE 3)
+## Not built yet
+- [ ] Typed reasons, the first-met-today accuracy figure, the author's under-taught-unit figure and the deploy-time list of draft units (E3, E10, E12, E15 in the standard)
+- [ ] A gap the units say out loud: Civics skips the years 1877 to 1900
 
 ## Needs your decision
-- Cold read: read any unit as a beginner and say what is unclear (start with Psychology Unit One).
+- [ ] Build the Singing sound now: the reference note, the pitch meter and the example sounds? Recommended: yes, one session (details in `docs/singing-audio.md`)
+- [ ] The recorded clips: will you record them, or should I build the player with placeholders and the list of clips needed? Recommended: the list first
+- [ ] Cold read: read any unit as a beginner and say what is unclear. Start with Psychology Unit One

@@ -1,6 +1,6 @@
 # Handoff: the Fieldcraft lessons
 
-Written 2026-10-05, after every subject was rebuilt in the interactive format. To continue in a new session, say: "Read docs/HANDOFF.md in /Users/dim/Documents/PersonalLessons and continue the work from it."
+Written 2026-10-05, after every subject was rebuilt in the interactive format; status re-checked 2026-10-09 (section 2). The live status page is `docs/lesson-rebuild-todo.md`, shown at https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv: update both whenever an item moves. To continue in a new session, say: "Read docs/HANDOFF.md in /Users/dim/Documents/PersonalLessons and continue the work from it."
 
 ## 1. What this is
 Fieldcraft ("Pragmatic knowledge") is a static learning web app for the owner's own use: https://fieldcraft.web.app. Firebase project `fieldcraft-a795f`, site `fieldcraft`; deploy with `firebase deploy --only hosting --project fieldcraft-a795f`. GitHub `dimmonk/personal-lessons`, branch `main`. Plain HTML/CSS/JS in `public/`, no build step, installable PWA. Progress lives in localStorage under `pl:`; never change those key names. The reader is a beginner: every unit is written so someone with no background can follow it.
@@ -19,7 +19,9 @@ Every subject is in the interactive format of `docs/lesson-standard.md` (version
 | US Civics | 10 | gate, 4 branch, 5 fact | 20 |
 | Singing (action) | 6 | gate, 4 branch, 1 fact | 19 |
 
-All 48 units are `status: 'draft'`: none has had the cold read the standard requires before a unit is live (A14). The owner reading a unit cold is that check. Unit revisions start at 1 (Psychology Unit Two is at 2, the Psychology subject record at 3); raise `rev` whenever content changes after a deploy and run `npm run lock`.
+**Checked 2026-10-09** (commit 08c5f41, tree clean, in step with GitHub). The lesson data holds 8 subjects, 48 units, 1,203 cards, 1,810 cases, 197 specimens and 155 names, and `tests/lessons.lock.json` and `docs/learner-view/` hold all 48 units. Every file on https://fieldcraft.web.app is identical to `public/` (713 files, service worker cache `fieldcraft-v10`), Singing included. `npm test` today passes in full: 1,154 data checks, 1,622,727 lesson checks across 48 units, 87 negative controls and 44,177 browser checks.
+
+All 48 units are `status: 'draft'`: none has had the cold read the standard requires before a unit is live (A14). The owner reading a unit cold is that check. Revisions as of 2026-10-09: the seven older subjects' units are at rev 4 to 6 (most at 5; Psychology Unit Two at 6) and their subject records at rev 4 (Psychology at 6); Singing's six units and its subject record are at rev 1. Raise `rev` whenever content changes after a deploy and run `npm run lock`.
 
 **Plain words.** The standard's names for the lesson machinery ("key", "route", "gate", "branch", "specimen", "determination", "ledger") are never shown to the learner: one list, `tests/plain-words.mjs`, is checked by the validator (V50) on every unit, key line and subject note, and by the browser tests on every screen as shown. What to say instead is in the standard, K9. This came from the owner's first cold read.
 
@@ -35,7 +37,7 @@ All 48 units are `status: 'draft'`: none has had the cold read the standard requ
 
 The method: the subject's key first (one agent per subject), then one agent per unit, with Psychology Unit One as the approved example. The bar is the owner's read: a card that takes a second read is a defect.
 
-`npm test` runs the data checks, about 1.6 million lesson checks, 86 negative controls and the browser checks on every unit.
+`npm test` runs the data checks, about 1.6 million lesson checks, 87 negative controls and the browser checks on every unit.
 
 **Singing (2026-10-08).** A new subject for someone who sings for fun, built from nothing to the standard: the key and the plan (`docs/rebuild/singing-plan.md`) written first, then the six units on Sonnet, one agent per unit, with Scams Units One, Two and Six as the examples. The first question is "What bothers you about it?" with five kinds, one of them nothing wrong (the voice is just not the record's); four branches of one question each (the top notes, the air, the note, the sound of the words), each ending in a name for the voice doing fine as well as names for what went wrong; and a fact unit on looking after the voice. Nineteen names, nineteen specimens, a baseline of six stories. One thing the build settled: **a line of the key (`why`, `when`, `plain`, `needs`, `means`) is plain text and carries no token.** The app prints those lines escaped (`public/app/lessons/cards.js`, `ask.js`) and no subject's key uses a token in them, so a key line names a term in ordinary words; the validator's allowance in V6 for a term used "in the key" is dormant. Every unit starts at `rev: 1`, `status: 'draft'`: the owner's cold read is what remains.
 
@@ -46,10 +48,11 @@ The method: the subject's key first (one agent per subject), then one agent per 
 
 ## 4. Open
 - **Sound for Singing (2026-10-09).** The subject has no audio, and the owner asked for notes and examples. The assessment, the engine change it needs and two questions with recommendations are in `docs/singing-audio.md`: read it before touching the subject.
+- **Singing baseline wording.** The screen before Unit One asks "Is this real, or is something wrong with it?". That is the app's own wording (standard E21), shared by every action subject, and "real" reads oddly for singing. Changing it is an engine and standard change: the owner's call.
 - **Cold read.** Read units as a beginner and report anything unclear; a report that a card is confusing is a defect (A14). Start with Psychology Unit One.
 - **Done: American English.** The owner is Canadian and moving to the United States: every subject is in dollars, with US rules, accounts and institutions (IRS, 401(k), FTC) and US spelling. `tests/american.mjs` lists British forms; V60 and the browser tests keep them out, case stories included.
-- **Not built** (unchanged from before): E3 typed reasons, E10, E12, E15 (the deploy-time list of drafts and unverified sources). Several `refute` cards cite sources marked unverified in `build.wrongIdeas`.
-- **Known content limits**, said in the units themselves: Math teaches completing the square with a positive middle term only; Civics skips 1877 to 1899 and every fact the old material did not support.
+- **Not built** (unchanged from before): E3 typed reasons, E10, E12, E15 (the deploy-time list of draft units). There are no `refute` cards and no `build.wrongIdeas` entries left in any unit (they were cut in the quick-lesson trim; checked 2026-10-09), so there are no unverified sources to list.
+- **Known content limit**, said in the unit itself: Civics skips the years 1877 to 1900 and every fact the old material did not support. (An earlier version of this line also named a Math limit on completing the square; that wording is not in the Math units now, so it was removed on 2026-10-09.)
 
 ## 5. Where the old material is
 The old card-format data (`public/subjects/<id>/standard0.js`) was deleted with the rebuild, and on 2026-10-05 so were the old card-format screens, their tests and their written pattern (standard section 18). Only the migration of old progress remains (E8), because progress saved under the old lessons can still be in a browser. Build notes in the units cite it by that name; it can be read in git at commit `afad69c` (for example `git show afad69c:public/subjects/math/standard0.js`). The comprehension audits of the old lessons are in `docs/comprehension-audit/`.
