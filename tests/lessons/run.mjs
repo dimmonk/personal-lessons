@@ -6,6 +6,7 @@
 //   site                 { files: [{ path, lines }], indexScripts, swShell, hasIndex } for V47
 //   held, committedHeld  { held: [message, ...] } the working list of held findings (V58), and the list of the last commit
 //   validatorSources     { name: source text } for V29
+//   designs              { [subjectId]: design record } from docs/subjects/<id>/design.md, for V69 (designs.mjs)
 // Every registered subject and unit is held to every rule. V0 runs first: when a subject or unit fails its shape,
 // its other rules are skipped and the run says so, because rules read the shape they were promised.
 import { subjectView, unitView } from './model.mjs';

@@ -7,6 +7,8 @@ import { runRules } from './run.mjs';
 import { RULES } from './rules-index.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { collectSite, collectValidatorSources } from './site.mjs';
+import { collectDesigns } from './designs.mjs';
+import { DEFAULTS } from './paths.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
 import { KIND_FIXTURES, loadKindFixture } from './kind-fixtures.mjs';
@@ -27,7 +29,8 @@ async function baselines() {
   const data = onlyExemplarSubject(plain(await loadFromPublic(EXEMPLAR)));
   const exemplar = {
     data, lock: lockEntries(data), committedLock: null,
-    site: await collectSite(EXEMPLAR), validatorSources: await collectValidatorSources()
+    site: await collectSite(EXEMPLAR), validatorSources: await collectValidatorSources(),
+    designs: await collectDesigns(DEFAULTS.designsDir)
   };
   const kinds = Object.fromEntries(await Promise.all(Object.keys(KIND_FIXTURES).map(async kind => [kind, emptyInput(plain(await loadKindFixture(kind)))])));
   return { exemplar, ...kinds };

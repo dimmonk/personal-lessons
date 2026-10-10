@@ -5,39 +5,43 @@ artifact: https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv
 
 # Lesson rebuild
 
-Status on 2026-10-10, checked against the lesson data, the live site and the tests (code at commit 9f28326). Fieldcraft has 8 subjects and 48 units, all in the interactive format and all live at https://fieldcraft.web.app. Every unit is still a draft until you read it cold. How to continue: `docs/HANDOFF.md`.
+Status on 2026-10-10. Fieldcraft is live at https://fieldcraft.web.app with 8 subjects. On 2026-10-10 the Singing subject
+was found useless for singing (it was built as story-sorting, the Scams template), and the cause was the way subjects get
+built, not one subject. From now on every subject goes through the `build-subject` skill (`~/.claude/skills/build-subject`).
 
-## Live now
-- [x] Psychology: 4 units, 16 specimens
-- [x] Political Ideologies: 5 units, 30 specimens
-- [x] Basic Math: 6 units (5 procedure), 35 specimens
-- [x] Statistical Claims: 6 units, 23 specimens
-- [x] Scams: 6 units (1 fact), 27 specimens
-- [x] Wealth Preservation: 5 units, 27 specimens
-- [x] US Civics: 10 units (5 fact), 20 specimens
-- [x] Singing: 6 units (1 fact), 19 specimens, added 2026-10-08
-- [x] The live site is identical to the code: all 719 files match, Singing included
-- [x] All tests pass today: 1,239 data checks, 579 sound checks, 1,624,031 lesson checks across 48 units, 110 negative controls, 44,272 browser checks
-- [x] Sound is live in Singing Unit Four: the note tool and five example sounds. Checked on the live site: before any tap nothing sounds and the microphone is not asked for
+## Goal
+- **Goal**: the reader efficiently learns each subject: after it, they can do the thing in real life.
+- **The standard**: every subject starts from its end result and its real moment, never from the app's existing engine;
+  practice is the real action (a voice skill is practiced by singing); every lesson serves a part of the end result;
+  every design decision cites the evidence (`docs/learning-science.md`, `docs/research/`); the owner approves the end
+  result and the practice method before content is written, and tries one lesson before the rest is built.
+- **How we stay on track**: earlier style rules are inputs, not rules; nothing is kept because it exists; tests pass
+  before anything is called done; one session owns the job: commit, push and deploy as each piece lands.
 
-## How it got here
-- [x] 2026-10-05: every subject rebuilt in the interactive format, the old card format deleted, American English everywhere, every unit trimmed to a quick lesson
-- [x] 2026-10-07: every key, unit and specimen rewritten in plain, concrete words
-- [x] 2026-10-08: Singing built from nothing, one agent per unit, and deployed
-- [x] 2026-10-09: the missing sound in Singing assessed, then built: the note tool and five example sounds in Unit Four (`docs/singing-audio.md`), the rule in section 21 of the standard
+## Main task
+- [x] The `build-subject` skill: seven gates in order, from the kind of learning to a tried pilot
+- [x] The research for the weekly review: `docs/research/review-after-lessons.md`
+- [ ] **(now)** The gates enforced in the app: each subject has `docs/subjects/<id>/design.md`, and the validator refuses a subject whose gates are missing or unapproved
+- [ ] The weekly review: one review replacing the returns and the Mixed drill; each item has its own next date; only questions in the real form, mixed; misses again until right; an item retires after about three right weeks (standard section, engine, tests, deploy)
+- [ ] The research document rewritten by kind of learning: it assumed "diagnostic classification" before looking at any evidence; add the evidence for body skills (the voice)
+- [ ] Singing, gate 1: the evidence for learning to sing
+- [ ] Singing, gates 2 and 3: the end result, the test, the practice method (your approval)
+- [ ] Singing, the app capabilities the practice needs: a pitch line against the target, timing a held note, a short melody played and sung back
+- [ ] Singing, gates 4 and 5: the parts and each lesson's design
+- [ ] Singing, gate 6: one lesson built, you try it on your phone
+- [ ] Singing, gate 7: the rest built; the old Singing deleted in one commit
+- [ ] The other seven subjects through gates 1 to 5, designed blind, then compared with what exists: keeps, changes, goes (Wealth expected to change: it stops at naming and never acts on your own numbers)
+- [ ] Rebuild whatever the audit says changes or goes
 
-## Singing: sound
-- [x] A reference note and a pitch meter in the app, so the note check in Unit Four works inside the app (no sound files needed): the note tool on the note-check card, 2026-10-09
-- [x] Example sounds for singing flat, sharp and scooping, made by the app (no sound files needed), and for a match and for hunting: five cards of Unit Four, 2026-10-09
-- [x] The list of clips to record, written: `docs/singing-clips.md`
-- [ ] Recorded clips for the rest: pushing, cracking, squeezing, an airy tone, a nasal sound, a muffled sound. The recordings have to come from you or from licensed clips
-- [x] The screen before Unit One now asks "Is something wrong here, or is it fine?", with "It is fine" and "Something is wrong" as the answers, in every subject you act on. It used to say "real", words that only made sense for Scams (2026-10-10)
+## Parked
+- [ ] Scams baseline: a real invoice and a real reset code are marked "Something was wrong with it." Each baseline story carries whether it is real; the screen reads that
+- [ ] The learner view prints the baseline screens (built, not committed)
+- [ ] The status docs (`docs/HANDOFF.md`) brought up to date
 
-## Not built yet
-- [ ] Typed reasons, the first-met-today accuracy figure, the author's under-taught-unit figure and the deploy-time list of draft units (E3, E10, E12, E15 in the standard)
-- [ ] A gap the units say out loud: Civics skips the years 1877 to 1900
+## Done earlier today
+- [x] The baseline question asks "Is something wrong here, or is it fine?" in every subject you act on (live)
+- [x] Sound in Singing Unit Four: the note tool and five example sounds (live; the engine pieces are kept for the rebuild)
 
 ## Needs your decision
-- [ ] Try the note tool and the example sounds on your phone and tell me what sounds or reads wrong (`docs/singing-audio.md` says what to listen for)
-- [ ] The recorded clips: will you record them? The list is `docs/singing-clips.md`; the player is built when the files exist
-- [ ] Cold read: read any unit as a beginner and say what is unclear. Start with Psychology Unit One
+- [ ] For each subject, approve the end result and the practice method (two or three lines each; sent to you as each subject reaches gate 3)
+- [ ] Singing pilot: try the first lesson on your phone and say whether it moved you

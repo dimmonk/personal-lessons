@@ -18,6 +18,10 @@ const prepended = sentence => value => Array.isArray(value) ? [sentence, ...valu
 const swap = (list, a, b) => list.map(x => x === a ? b : x === b ? a : x);
 const without = (list, x) => list.filter(y => y !== x);
 const find = (list, id) => list.find(x => x.id === id);
+// V69: the last commit's lock with one unit's content different, and a design record with the given approvals
+const changedUnit = (lock, unitKey) => ({ ...lock, units: { ...lock.units, [unitKey]: { ...lock.units[unitKey], fp: 'sha256:' + '1'.repeat(64) } } });
+const approvedAs = (record, approved) => ({ ...record, approved });
+
 
 // A card the trimmed unit no longer carries, added to the unit so that a control can still break its rule (inside a part, after another card).
 const withCard = (h, d, partId, afterId, added) => {
@@ -165,7 +169,7 @@ export const CONTROLS = [
     data: (d, h) => h.setIn(d, unit('standard'), 0) },
   { rule: 'V46', name: 'content changed and the lock was not regenerated', keepLock: true,
     data: (d, h) => h.updateIn(d, meta('blurb'), appended('Changed after the lock was written.')) },
-  { rule: 'V46', name: 'deployed content changed without a higher revision', keepLock: true,
+  { rule: 'V46', name: 'deployed content changed without a higher revision', keepLock: true, also: ['V69'],   // changed content with no approved design is also what V69 refuses
     input: input => ({ ...input, committedLock: { standard: 1, subjects: {}, units: { [`${P}/${U}`]: { rev: input.data.subjects[P].units[U].rev, standard: 1, fp: 'sha256:' + '0'.repeat(64), deployed: '2026-10-20' } } } }) },   // the unit's own revision, deployed with other content
   { rule: 'V47', name: 'a script file is over the line limit', keepLock: true,
     input: input => ({ ...input, site: { ...input.site, files: [...input.site.files, { path: 'subjects/psychology/u9.cards-1.js', lines: 801 }] } }) },
@@ -258,6 +262,16 @@ export const CONTROLS = [
     } },
   { rule: 'V32', name: 'a baseline case is in no subject.baseline list',
     data: (d, h) => h.updateIn(d, ['subjects', P, 'cases', U], cs => [...cs, { id: 'base-x', use: 'baseline', tier: 'clean', setting: 'work', topic: 'x', text: 'A made-up case.' }]) },
+  /* ----- section 23: the build-subject gates ----- */
+  { rule: 'V69', name: 'a subject has no design record', input: input => ({ ...input, designs: {} }) },
+  { rule: 'V69', name: 'a design record names a kind of learning that does not exist',
+    input: input => ({ ...input, designs: { ...input.designs, [P]: { ...input.designs[P], kinds: ['reading'] } } }) },
+  { rule: 'V69', name: 'lessons changed before the end result and the practice method were approved',
+    input: input => ({ ...input, committedLock: changedUnit(input.lock, `${P}/${U}`), designs: { ...input.designs, [P]: approvedAs(input.designs[P], { endResult: null, practice: null, pilot: null }) } }) },
+  { rule: 'V69', name: 'a unit past the pilot written before the pilot was approved',
+    input: input => ({ ...input, committedLock: changedUnit(input.lock, `${P}/${U}`), designs: { ...input.designs, [P]: approvedAs(input.designs[P], { endResult: '2026-10-10', practice: '2026-10-10', pilot: null }) } }) },
+  { rule: 'V69', name: 'the pilot unit changed once the end result and practice were approved', green: true,
+    input: input => ({ ...input, committedLock: changedUnit(input.lock, `${P}/u1`), designs: { ...input.designs, [P]: approvedAs(input.designs[P], { endResult: '2026-10-10', practice: '2026-10-10', pilot: null }) } }) },
   { rule: 'V58', name: 'a held finding no longer fires', input: input => ({ ...input, held: { held: ['V2 psychology: a line that is no longer typed'] }, committedHeld: { held: ['V2 psychology: a line that is no longer typed'] } }) },
   { rule: 'V58', name: 'a finding was added to the held list', input: input => ({ ...input, held: { held: ['V2 psychology: a new finding'] }, committedHeld: { held: [] } }) },
 

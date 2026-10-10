@@ -7,6 +7,7 @@ import { RULES_CASES } from './rules-cases.mjs';
 import { RULES_DRILL } from './rules-drill.mjs';
 import { RULES_REVISIONS } from './rules-revisions.mjs';
 import { RULES_AUDIO } from './rules-audio.mjs';
+import { RULES_DESIGN } from './rules-design.mjs';
 
 const number = id => Number(id.slice(1));
-export const RULES = [...RULES_SHAPE, ...RULES_VOCAB, ...RULES_TAUGHT, ...RULES_ANATOMY, ...RULES_CASES, ...RULES_DRILL, ...RULES_REVISIONS, ...RULES_AUDIO].sort((a, b) => number(a.id) - number(b.id));
+export const RULES = [...RULES_SHAPE, ...RULES_VOCAB, ...RULES_TAUGHT, ...RULES_ANATOMY, ...RULES_CASES, ...RULES_DRILL, ...RULES_REVISIONS, ...RULES_AUDIO, ...RULES_DESIGN].sort((a, b) => number(a.id) - number(b.id));

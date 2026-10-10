@@ -1163,3 +1163,25 @@ The screen before an action subject's first unit asked "Is this real, or is some
 2. **The rule behind them.** The baseline asks only whether something is wrong with what the story describes. It never asks whether a story is real, fake, true or legitimate: those words belong to one subject and do not carry to the others.
 3. **What did not change.** The stories, the answers, the marks and the storage (E21): a sound case is still the one `v.isLegit` says it is, the tries are still stored with `context: 'baseline'` and never scored, and the feedback still comes back only on the finished unit's complete screen. No unit's content changed, so no unit revision, no fingerprint and no lock entry changed.
 4. **Checked in the browser.** `tests/e2e-kinds.mjs`: the question and the two button labels are read off the first baseline screen (`baselineWords`), and a seeded fault that puts the old question back turns exactly that check red.
+
+## 23. Revision of 2026-10-10: subjects are designed through the build-subject gates (overrides every rule above where they conflict)
+
+Singing was built as stories to sort, the Scams template, and was useless for learning to sing. Every check passed,
+because every check asked whether a lesson was well built and none asked whether it teaches. The cause was the process:
+the design started from the engine that existed, and even `docs/learning-science.md` fixed the task ("diagnostic
+classification") before looking at any evidence. From now on:
+
+1. **The one goal** is that the learner efficiently learns the subject: after it, they can do the thing in real life.
+   Every earlier rule in this standard is an input to that goal, kept where it serves it and overruled where it does not.
+2. **Every subject is designed through the global `build-subject` skill** (`~/.claude/skills/build-subject/SKILL.md`): the
+   kind of learning and its evidence; the end result, the real moment and a real-world test (the owner approves); the
+   practice method and whether the app can deliver it (the owner approves); the parts of the end result; each lesson's
+   design; one pilot lesson the owner tries; then the rest.
+3. **The design record** is `docs/subjects/<id>/design.md`: its opening JSON holds `kinds` (facts, judging, procedure,
+   body, habit), `endResult`, `realMoment`, `test`, `practice` and `approved` (`endResult`, `practice`, `pilot`: a date
+   or null); the gates' reasoning follows in prose.
+4. **V69** (`tests/lessons/rules-design.mjs`): every subject has a valid record; no lesson content (a unit, the subject
+   record, the key, the specimens) is written or changed, measured against the last commit's lock, before the owner has
+   approved the end result and the practice method; and no unit past the first is written before the owner has approved
+   the pilot. Content that matches the last commit predates the gates and waits for its audit (gates 4 and 5, designed
+   blind). Seeded faults: four that turn V69 red and one that must stay green (the pilot unit, once approved).
