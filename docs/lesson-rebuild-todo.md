@@ -25,16 +25,18 @@ built, not one subject. From now on every subject goes through the `build-subjec
 - [ ] **(now)** The weekly review: one review replacing the returns and the Mixed drill; each item has its own next date; only questions in the real form, mixed; misses again until right; an item retires after about three right weeks (standard section, engine, tests, deploy)
 - [ ] The research document rewritten by kind of learning: it assumed "diagnostic classification" before looking at any evidence; add the evidence for body skills (the voice)
 - [x] Singing, gate 1: the evidence for learning to sing (`docs/research/learning-to-sing.md`, 551f34d)
-- [ ] Singing, gates 2 and 3: the end result, the test, the practice method: drafts written, waiting for your approval
-- [ ] **(now)** Singing, the app capabilities the practice needs: a new kind of lesson where you sing (standard section 25): a pitch line against the target that fades, a range finder, held notes, melodies played and sung back
+- [x] Singing, gates 2 and 3: the end result, the test, the practice method (approved 2026-10-10)
+- [ ] Singing, the app capabilities the practice needs: a new kind of lesson where you sing (standard section 25): a pitch line against the target that fades, a range finder, held notes, melodies played and sung back
 - [x] Singing, gates 4 and 5: seven parts (range, match, hold, slide, intervals, short tunes, a lighter top) and a lesson for each (`docs/subjects/singing/design.md`)
 - [ ] Singing, gate 6: one lesson built, you try it on your phone
 - [ ] Singing, gate 7: the rest built; the old Singing deleted in one commit
-- [ ] **(now)** Every subject through the skill (you trust no lesson built before it): Scams, Statistical Claims, US Civics, Political Ideologies, Psychology, Basic Math and Wealth each through gates 1 to 5, designed blind, then each existing unit judged keeps / changes / goes, and the subject kept, adjusted or rebuilt from scratch (7 Opus agents running)
-- [ ] Rebuild whatever the audit says changes or goes
+- [x] Every subject through the skill, designed blind then audited: all eight come back "rebuild from scratch"; the practice never matched the real moment (f7ef6d5; verdicts in each `docs/subjects/<id>/design.md`)
+- [ ] **(now)** One new practice engine for all eight designs (standard section 26): answers you give (typed numbers, typed answers, actions, verdicts, singing), what you see (messages as they arrive, charts, statements, spoken questions), fading feedback, private records; the old engine deleted
+- [ ] Each subject rebuilt on the new engine, pilot lesson first: Singing, then the others
+- [ ] The old lessons and engine deleted
 
 ## Parked
-- [ ] Scams baseline: a real invoice and a real reset code are marked "Something was wrong with it." Each baseline story carries whether it is real; the screen reads that
+- [x] Scams baseline bug: confirmed by the audit; it goes with the old lessons (Scams is rebuilt)
 - [x] The learner view prints the baseline screens (d6bb657)
 - [ ] The status docs (`docs/HANDOFF.md`) brought up to date
 
@@ -43,5 +45,5 @@ built, not one subject. From now on every subject goes through the `build-subjec
 - [x] Sound in Singing Unit Four: the note tool and five example sounds (live; the engine pieces are kept for the rebuild)
 
 ## Needs your decision
-- [ ] Your approvals in the design records: the permission system will not let me write your approval for you. Either allow it, or set the `approved` dates yourself in `docs/subjects/<id>/design.md`. Until then V69 blocks lesson changes (building the engine is not blocked)
+- [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
 - [ ] Singing pilot: try the first lesson on your phone and say whether it moved you
