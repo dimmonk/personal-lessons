@@ -1185,3 +1185,29 @@ classification") before looking at any evidence. From now on:
    approved the end result and the practice method; and no unit past the first is written before the owner has approved
    the pilot. Content that matches the last commit predates the gates and waits for its audit (gates 4 and 5, designed
    blind). Seeded faults: four that turn V69 red and one that must stay green (the pilot unit, once approved).
+
+## 24. Revision of 2026-10-10: the weekly review (replaces "Due today" and the Mixed drill; changes E9, E10, E14)
+
+The evidence is `docs/research/review-after-lessons.md` (R1 to R9). The schedule of E9 already follows it: a name comes back
+on a story not seen before, next to the name it is most often taken for (R8, R9), a miss sets it back (R2, R7), the app and
+never the learner decides what returns (R3), and it retires after three separate good days at gaps of 2, 7 and 24 days (84
+more in an action subject) (R2, R4, R6). What changes is how it is met: one review a week across every subject, in place of
+a per-subject "Due today" set of at most six and a Mixed drill that drew random items (R3: the app decides, by the record).
+
+1. **One review.** "Due today" (the per-subject tiles, the `due` screen, the set of at most six) and the Mixed drill (the
+   tab, `mixed.js`, its random pool and its "Lifetime" figure) are deleted. The tab is "Review". Earlier tries with
+   `context: 'return'` or `'mixed'` stay in the record and count as before; new review tries have `context: 'review'`.
+2. **What it holds.** Every name and fact that E9 makes due on or before the end of the current week (weeks run Monday to
+   Sunday, local time), in every subject, each asked with its E9 pairing. No size cap and nothing random: the length is
+   whatever is due.
+3. **How it runs.** Only questions: no cards. Subject by subject, each part run as a returned set is (the whole route on a
+   new story, or the fact from memory), with the answer and the reason after each item (R7) and every miss asked again at
+   least three items later until it is answered right (R2). A subject's saved plan (E18) is shown once at the start of its
+   part. Back leaves the review; it is built again from the record next time.
+4. **The tile.** On the library: "This week's review", with the number of questions due this week and the subjects they
+   come from; when nothing is due this week: "Done for this week" and the date the next item falls due; before any unit is
+   finished it says that the review starts when one is.
+5. **Results** (E10): at the end, first-try accuracy per subject and in all, the names missed, and when the next review
+   has something due.
+6. "Review these first" (E12) and "Practice again" (E14) are unchanged: one is a hint before a unit, the other practice the
+   learner chooses, and neither removes anything from the schedule.
