@@ -2,7 +2,7 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v11';
+const CACHE = 'fieldcraft-v12';
 const SHELL = [
   './', 'manifest.json', 'app.css', 'app-screens.css',
   'app/helpers.js', 'app/registry.js', 'subjects/ideology/subject.js', 'subjects/ideology/key.js',
