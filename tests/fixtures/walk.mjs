@@ -173,7 +173,7 @@ export async function walkUnit(page, { onScreen, onBefore, onAnswered, onDrill, 
         await page.click('#planSave');
       }
     } else if (s.type === 'baseline') {
-      if (await page.locator('[data-judge]').count()) await page.click('[data-judge="real"]');
+      if (await page.locator('[data-judge]').count()) await page.click('[data-judge="fine"]');
     } else if (s.type === 'drill') {
       const asked = await playDrill(page, { onItem });
       if (onDrill) await onDrill(asked, page);

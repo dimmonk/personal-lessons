@@ -1,5 +1,5 @@
 // Statistical Claims, Unit One: the baseline check (lesson standard E21). Six claims asked once, before the subject's first unit, as
-// "real or not, and why?": three in which nothing goes wrong and three that go wrong in a different part. They are in no card and no drill.
+// "is something wrong, or is it fine, and why?": three in which nothing goes wrong and three that go wrong in a different part. They are in no card and no drill.
 // Each is an ordinary case with a route, marked words and a reason for the first question; the reason is shown only when the learner
 // finishes the unit, beside what they said. They are listed in subject.baseline (the one edit this unit makes to subject.js).
 // No case here is used by a card, so none of them may appear in the drill (V32).

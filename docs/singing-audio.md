@@ -58,8 +58,7 @@ Each button is labeled with the key's own answer for what it plays, so the words
 
 1. **Recorded clips of a real voice.** Pushing, cracking, squeezing, an airy tone, a nasal sound, a muffled sound and the like cannot be made by the app. The list of what to record, with file names, what to sing, how it should sound, its paired good version, how long, and which card it sits on, is `docs/singing-clips.md`. They need to come from the owner or someone who agrees, never a real singer's recording without a license. When the clips exist a `clip` kind is built to the same rules as the other sounds (plays only on a tap, nothing recorded or sent, the learner view prints its `says` line, and the offline list names every file; the check that compares `index.html`, `sw.js` and the files on disk (V47) is extended to audio files).
 2. **A standalone practice screen** is a possible next: a page, outside any unit, where the learner picks any note and sings against it, using the same tool. It is not built and nothing needs it yet; the question is whether the owner uses the tool in the unit enough to want it on its own.
-3. **The baseline wording.** The screen before Unit One asks "Is this real, or is something wrong with it?". That wording is the app's own (lesson standard E21) and is shared by every action subject; for singing, "real" reads oddly. Changing it is an engine and standard change, left for the owner's call.
-4. **The cold read.** All six Singing units are drafts (`status: 'draft'`) until the owner reads them cold, like every other unit. Unit Four is at `rev: 2` for the sound.
+3. **The cold read.** All six Singing units are drafts (`status: 'draft'`) until the owner reads them cold, like every other unit. Unit Four is at `rev: 2` for the sound.
 
 ## Not to forget
 

@@ -1,6 +1,6 @@
 // Scams, Unit One: fresh cases held back for later days, part three: a message that asks nothing (two), and the
 // baseline check (lesson standard E21).
-// The baseline is six cases asked once, before this unit, as "real or not, and why?": three where nothing is wrong and
+// The baseline is six cases asked once, before this unit, as "is something wrong, or is it fine, and why?": three where nothing is wrong and
 // three scams. They are in no card, check or drill (use 'baseline'), they are listed in subject.baseline, and they carry
 // the marked words and the reason for the first question, which is the only thing shown back when the unit is finished.
 

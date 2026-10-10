@@ -31,7 +31,7 @@ Status on 2026-10-10, checked against the lesson data, the live site and the tes
 - [x] Example sounds for singing flat, sharp and scooping, made by the app (no sound files needed), and for a match and for hunting: five cards of Unit Four, 2026-10-09
 - [x] The list of clips to record, written: `docs/singing-clips.md`
 - [ ] Recorded clips for the rest: pushing, cracking, squeezing, an airy tone, a nasal sound, a muffled sound. The recordings have to come from you or from licensed clips
-- [ ] The screen before Unit One asks "Is this real, or is something wrong with it?". "Real" reads oddly for singing, and the wording is shared by every subject you act on
+- [x] The screen before Unit One now asks "Is something wrong here, or is it fine?", with "It is fine" and "Something is wrong" as the answers, in every subject you act on. It used to say "real", words that only made sense for Scams (2026-10-10)
 
 ## Not built yet
 - [ ] Typed reasons, the first-met-today accuracy figure, the author's under-taught-unit figure and the deploy-time list of draft units (E3, E10, E12, E15 in the standard)

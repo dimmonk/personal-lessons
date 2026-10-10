@@ -54,7 +54,7 @@ async function everyUnit(env) {
 // An action subject's baseline check comes before the unit's first card (E21); this answers it and goes on.
 async function passBaseline(page) {
   for (let guard = 0; guard < 20 && (await screenInfo(page)).type === 'baseline'; guard++) {
-    if (await page.locator('[data-judge]').count()) await page.click('[data-judge="real"]');
+    if (await page.locator('[data-judge]').count()) await page.click('[data-judge="fine"]');
     await page.click('#fwd');
   }
 }
@@ -190,7 +190,7 @@ async function walkCards(env, page, u, opts) {
       if (s.kind === 'transfer') await fillTransfer(env, page, u, label);
       if (s.kind === 'plan') { await page.click('#planCues .opt >> nth=0'); await page.click('#planSave'); }
     } else if (s.type === 'baseline') {
-      if (await page.locator('[data-judge]').count()) await page.click('[data-judge="real"]');
+      if (await page.locator('[data-judge]').count()) await page.click('[data-judge="fine"]');
     } else if (s.type === 'partend') {
       const want = `End of part ${s.part + 1}. You can stop here; your place is kept. Next: part ${s.part + 2}, ${s.parts[s.part + 1]}.`;
       check((await unitText(page)).includes(want), `${label}: the end-of-part screen does not read "${want}"`);

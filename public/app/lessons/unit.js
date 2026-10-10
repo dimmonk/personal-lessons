@@ -200,7 +200,7 @@ function wirePlan(run, card, cs, root){
 }
 
 /* ---------- the baseline check, before an action subject's first unit (lesson standard E21) ---------- */
-// "Real or not, and why?" The answer is kept with context 'baseline', never scored and never shown back until the unit is finished.
+// "Is something wrong here, or is it fine, and why?" The answer is kept with context 'baseline', never scored and never shown back until the unit is finished.
 function paintBaseline(run, screen){
   const { subj, v, T } = run, c = v.caseById(screen.id), unit = unitLabel(v.data, v.unitId);
   const said = run.base[c.id] || null, answered = !!said || seenBefore(subj.id, v.unitId, c.id);
@@ -209,7 +209,7 @@ function paintBaseline(run, screen){
     <div class="eyebrow-row"><span class="m a">${esc(v.title)}</span><h1>${esc(SAY.baselineHeading)}</h1></div>
     <div class="lesson" id="cardbody"><p>${esc(SAY.baselineIntro(unit))}</p>${T.caseName(c)}${T.show(c)}
       ${answered ? `<div class="answerline" role="status"><p>${esc(SAY.baselineKept(unit))}</p></div>`
-        : promptStem(SAY.baselineAsk) + `<div class="opts two"><button class="opt" data-judge="real">${esc(SAY.baselineReal)}</button><button class="opt" data-judge="wrong">${esc(SAY.baselineWrong)}</button></div></div>`}
+        : promptStem(SAY.baselineAsk) + `<div class="opts two"><button class="opt" data-judge="fine">${esc(SAY.baselineFine)}</button><button class="opt" data-judge="wrong">${esc(SAY.baselineWrong)}</button></div></div>`}
       <div class="lsec"><label class="m fieldlabel" for="baseWhy">${esc(SAY.baselineWhy)}</label>
         <input class="noteinput" id="baseWhy" type="text" maxlength="280" autocomplete="off" value="${esc(why)}"></div></div>`,
     unitActions(run.i === 0 ? '' : 'Back', 'Next', !answered));
@@ -217,9 +217,9 @@ function paintBaseline(run, screen){
   on('#fwd', () => moveTo(run.i + 1));
   on('[data-judge]', el => {
     if(answered) return;
-    const real = el.dataset.judge === 'real';
+    const fine = el.dataset.judge === 'fine';
     run.base = { ...run.base, [c.id]: el.dataset.judge };
-    recordTry(subj.id, v.unitId, c.id, v.unit.rev, { mode: 'baseline', context: 'baseline', steps: {}, name: null, ok: real === v.isLegit(caseTarget(v, c)) });
+    recordTry(subj.id, v.unitId, c.id, v.unit.rev, { mode: 'baseline', context: 'baseline', steps: {}, name: null, ok: fine === v.isLegit(caseTarget(v, c)) });
     paintUnit();
     focusOn('.answerline');
   });
@@ -234,7 +234,7 @@ function baselineFeedbackHtml(run){
     const c = v.caseById(id), last = triesOf(subj.id, v.unitId, id).filter(t => t.context === 'baseline').pop();
     if(!last) return '';
     const truth = v.isLegit(caseTarget(v, c)), said = last.ok ? truth : !truth, code = v.routeSteps(c)[0];
-    return `<div class="lsec">${T.show(c, v.routeSteps(c))}<p>${esc(SAY.baselineSaid(said ? SAY.baselineReal.toLowerCase() : SAY.baselineWrong.toLowerCase()))} ${esc(SAY.baselineWas(truth))}</p>`
+    return `<div class="lsec">${T.show(c, v.routeSteps(c))}<p>${esc(SAY.baselineSaid(said ? SAY.baselineFine.toLowerCase() : SAY.baselineWrong.toLowerCase()))} ${esc(SAY.baselineWas(truth))}</p>`
       + (code && c.reason && c.reason[code] ? T.PP(c.reason[code], c) : '') + '</div>';
   }).join('');
   return rows ? `<div class="lesson baselineafter"><p>${esc(SAY.baselineAfter(unitLabel(v.data, v.unitId)))}</p>${rows}</div>` : '';

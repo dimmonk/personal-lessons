@@ -248,11 +248,14 @@ async function probeAction(env) {
   const first = await screenInfo(page);
   out.baselineFirst = first.type === 'baseline' && first.of === 4 && /Before the unit/.test(await page.locator('.unitbar').textContent()) && !(await page.locator('#fwd').isEnabled());
   const preText = await unitText(page);
-  await page.click('[data-judge="real"]');
+  const buttons = (await page.locator('[data-judge]').allTextContents()).map(t => t.trim());
+  await page.click('[data-judge="fine"]');
   const baselineFocus = await page.evaluate(() => !!document.activeElement.closest('.answerline'));
   const kept = await unitText(page);
-  out.baselineSilent = !(await page.locator('.feedback, .marks, .mark').count()) && !/Right:|The answer|It was real|Something was wrong/.test(kept)
-    && /Kept\. Nothing is shown about this one until you finish Unit One\./.test(kept) && await page.locator('#fwd').isEnabled() && preText.includes('Is this real, or is something wrong with it?');
+  // the question fits every action subject: nothing about a story being "real", only whether something is wrong with it
+  out.baselineWords = preText.includes('Is something wrong here, or is it fine?') && buttons.join('|') === 'It is fine|Something is wrong';
+  out.baselineSilent = !(await page.locator('.feedback, .marks, .mark').count()) && !/Right:|The answer|It was fine|Something was wrong/.test(kept)
+    && /Kept\. Nothing is shown about this one until you finish Unit One\./.test(kept) && await page.locator('#fwd').isEnabled();
   const bl = await storedTries(page, S, 'u1/bl-1');
   out.baselineStored = bl.length === 1 && bl[0].context === 'baseline' && bl[0].mode === 'baseline' && bl[0].ok === false;
   await page.fill('#baseWhy', 'it looked odd');
@@ -266,7 +269,7 @@ async function probeAction(env) {
   const seen = await walkUnit(page, {});
   out.actionWalk = seen[seen.length - 1].type === 'complete' && seen.filter(s => s.type === 'baseline').length === 3;
   const done = await unitText(page);
-  out.baselineAfter = (done.match(/You said: /g) || []).length === 4 && /It was real\./.test(done) && /Something was wrong with it\./.test(done);
+  out.baselineAfter = (done.match(/You said: /g) || []).length === 4 && /It was fine\./.test(done) && /Something was wrong with it\./.test(done);
   // asked once: opening the unit again goes straight to its first card
   await page.evaluate(S => { openUnit(SUBJECTS.find(s => s.id === S), 0); }, S);
   out.baselineOnce = (await screenInfo(page)).type === 'card';
@@ -314,7 +317,8 @@ async function probeAction(env) {
   return out;
 }
 const actionControls = [
-  { name: 'a baseline that tells the learner the answer', red: 'baselineSilent', seed: page => page.evaluate(() => { SAY.baselineKept = () => 'Right: it was real. Kept.'; }) },
+  { name: 'a baseline that tells the learner the answer', red: 'baselineSilent', seed: page => page.evaluate(() => { SAY.baselineKept = () => 'Right: it was fine. Kept.'; }) },
+  { name: 'a baseline that asks in the old words', red: 'baselineWords', seed: page => page.evaluate(() => { SAY.baselineAsk = 'Is this real, or is something wrong with it?'; }) },
   { name: 'a baseline kept as an ordinary drill answer', red: 'baselineStored', seed: page => page.evaluate(() => { const o = recordTry; recordTry = (s, u, i, r, a) => o(s, u, i, r, a.mode === 'baseline' ? { ...a, mode: 'route' } : a); }) },
   { name: 'an answer that leaves focus where it was', red: 'actionFocus', seed: page => page.evaluate(() => { focusOn = () => {}; }) },
   { name: 'a plan that is never saved', red: 'planSave', seed: page => page.evaluate(() => { savePlan = () => {}; }) },
