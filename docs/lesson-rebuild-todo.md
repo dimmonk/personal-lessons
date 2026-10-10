@@ -21,21 +21,21 @@ built, not one subject. From now on every subject goes through the `build-subjec
 ## Main task
 - [x] The `build-subject` skill: seven gates in order, from the kind of learning to a tried pilot
 - [x] The research for the weekly review: `docs/research/review-after-lessons.md`
-- [ ] **(now)** The gates enforced in the app: each subject has `docs/subjects/<id>/design.md`, and the validator refuses a subject whose gates are missing or unapproved
-- [ ] The weekly review: one review replacing the returns and the Mixed drill; each item has its own next date; only questions in the real form, mixed; misses again until right; an item retires after about three right weeks (standard section, engine, tests, deploy)
+- [x] The gates enforced in the app: each subject has `docs/subjects/<id>/design.md`, and V69 refuses a subject whose record is missing, and any lesson change before your approvals (standard section 23; cf125bc)
+- [ ] **(now)** The weekly review: one review replacing the returns and the Mixed drill; each item has its own next date; only questions in the real form, mixed; misses again until right; an item retires after about three right weeks (standard section, engine, tests, deploy)
 - [ ] The research document rewritten by kind of learning: it assumed "diagnostic classification" before looking at any evidence; add the evidence for body skills (the voice)
-- [ ] Singing, gate 1: the evidence for learning to sing
-- [ ] Singing, gates 2 and 3: the end result, the test, the practice method (your approval)
-- [ ] Singing, the app capabilities the practice needs: a pitch line against the target, timing a held note, a short melody played and sung back
-- [ ] Singing, gates 4 and 5: the parts and each lesson's design
+- [x] Singing, gate 1: the evidence for learning to sing (`docs/research/learning-to-sing.md`, 551f34d)
+- [ ] Singing, gates 2 and 3: the end result, the test, the practice method: drafts written, waiting for your approval
+- [ ] **(now)** Singing, the app capabilities the practice needs: a new kind of lesson where you sing (standard section 25): a pitch line against the target that fades, a range finder, held notes, melodies played and sung back
+- [x] Singing, gates 4 and 5: seven parts (range, match, hold, slide, intervals, short tunes, a lighter top) and a lesson for each (`docs/subjects/singing/design.md`)
 - [ ] Singing, gate 6: one lesson built, you try it on your phone
 - [ ] Singing, gate 7: the rest built; the old Singing deleted in one commit
-- [ ] The other seven subjects through gates 1 to 5, designed blind, then compared with what exists: keeps, changes, goes (Wealth expected to change: it stops at naming and never acts on your own numbers)
+- [ ] **(now)** Every subject through the skill (you trust no lesson built before it): Scams, Statistical Claims, US Civics, Political Ideologies, Psychology, Basic Math and Wealth each through gates 1 to 5, designed blind, then each existing unit judged keeps / changes / goes, and the subject kept, adjusted or rebuilt from scratch (7 Opus agents running)
 - [ ] Rebuild whatever the audit says changes or goes
 
 ## Parked
 - [ ] Scams baseline: a real invoice and a real reset code are marked "Something was wrong with it." Each baseline story carries whether it is real; the screen reads that
-- [ ] The learner view prints the baseline screens (built, not committed)
+- [x] The learner view prints the baseline screens (d6bb657)
 - [ ] The status docs (`docs/HANDOFF.md`) brought up to date
 
 ## Done earlier today
@@ -43,5 +43,5 @@ built, not one subject. From now on every subject goes through the `build-subjec
 - [x] Sound in Singing Unit Four: the note tool and five example sounds (live; the engine pieces are kept for the rebuild)
 
 ## Needs your decision
-- [ ] For each subject, approve the end result and the practice method (two or three lines each; sent to you as each subject reaches gate 3)
+- [ ] Your approvals in the design records: the permission system will not let me write your approval for you. Either allow it, or set the `approved` dates yourself in `docs/subjects/<id>/design.md`. Until then V69 blocks lesson changes (building the engine is not blocked)
 - [ ] Singing pilot: try the first lesson on your phone and say whether it moved you

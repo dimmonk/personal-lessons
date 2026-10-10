@@ -1211,3 +1211,49 @@ a per-subject "Due today" set of at most six and a Mixed drill that drew random 
    has something due.
 6. "Review these first" (E12) and "Practice again" (E14) are unchanged: one is a hint before a unit, the other practice the
    learner chooses, and neither removes anything from the schedule.
+
+## 25. Revision of 2026-10-10: practice units, where the learner does the skill (adds a unit kind; a subject may have no key)
+
+Built for Singing (`docs/subjects/singing/design.md`, gates 3 to 5; evidence `docs/research/learning-to-sing.md`, S1–S6),
+and general enough for any body skill the app can measure through the microphone.
+
+1. **Kind `S`.** A practice unit: `{ id, kind: 'S', tag, title: { text }, subtitle, rev, standard, status, part, why,
+   exercises, check, history }`. `part` is the gate 4 part it serves (an integer); `why` is Text of at most 90 words (a
+   minute of reading, S6); `exercises` is a list run in order; `check` is the part's check. No cards, cases, key or drill.
+2. **Exercise types**, each `{ id, type, withLine, withoutLine, ...params }` (`withLine` and `withoutLine`: tries with
+   the pitch line shown, then hidden, S3):
+   - `range`: two easy slides, up then down; sets the learner's range (lowest and highest steady note reached). No params.
+   - `match`: one note, heard then sung. Notes are drawn at random from the middle of the range.
+   - `hold`: a matched note held; `seconds` (2 to 6).
+   - `slide`: two notes heard, then a slide from one to the other that lands; `maxSemitones`.
+   - `interval`: two notes heard, then sung back; `minSemitones`, `maxSemitones`.
+   - `melody`: `notes` (3 to 5) heard, then sung back; `maxStep` in semitones; the last note is long.
+   - `light`: a loud note and a talking-loudness note set the scale, then notes from the top fifth of the range at no
+     more than talking loudness.
+   Every target lies inside the learner's range (S1). Without a range the unit opens the range exercise first.
+3. **Turn-taking.** The app plays the target (the learner listens; the microphone is ignored while it plays and for a
+   quarter second after, as in section 21), then the learner sings in a window sized to the target (each note's length plus
+   0.4 s; a hold's seconds plus 1 s). Timing runs on the audio clock and animation frames, never timers.
+4. **Scoring.** Pitch readings come from the section 21 finder. A note's sung pitch is the median of the middle 60% of the
+   readings in its window, folded to the octave nearest the target; it is on when within `check.cents` (25 by default) of
+   the target. A hold is the longest run within the tolerance; a slide is scored on its last 0.4 s; `light` compares the
+   median loudness with the learner's own talking note (at most 15% above it) as well as the pitch.
+5. **The pitch line.** A strip shows time across and pitch up, the target notes as bars and the learner's voice as a line
+   drawn as they sing (S2). In the `withoutLine` tries neither is drawn while singing; the result is shown after (S3).
+   Results are words: "On the note", "A shade under", "A shade over", "Well under", "Well over"; never cents or hertz.
+   Instructions name the sound and the line, not the body (S4).
+6. **The check** (`{ type, tries, pass, cents?, holdMs? }`) is the part's check from gate 4, always without the line. Its
+   result is shown as "4 of 5 on the note: passed" or "3 of 5: not yet". A unit is done when its check has been tried once.
+7. **What is stored** (E8): the range as `notes[<range unit id>].range = { low, high, set }` in `pl:<subject>:notes`; each
+   try as a practice-record entry on item `<unitId>/<exerciseId>` or `<unitId>/check` with `mode: 'sing'` and an optional
+   `cents` (the median error, rounded). No sound is stored or sent.
+8. **The weekly review** (section 24) asks a practice unit's check again, by the E9 schedule applied to `<unitId>/check`:
+   the review of a skill is doing it (R8).
+9. **A subject with no key.** When every unit of a subject is kind `S`, `FC.key` and specimens are absent; the subject
+   screen lists its lessons and has no map, reference or determination; key rules (V1 to the drill rules) do not apply to
+   it. A subject mixing kinds is not allowed until a subject needs it.
+10. **Validator and browser checks.** V70: the shape and limits of a kind `S` unit (types, params in range, `why` length,
+    `check` fields, `part` matching the design record's gate 4 map). Browser checks feed known pitches as the
+    microphone (the section 21 recorder): a sung note within and outside the tolerance is scored on and off, octave folding
+    holds, the line is drawn only in `withLine` tries, the range is stored once and every target lies inside it, nothing
+    sounds or listens before a tap, and nothing but numbers is stored. Each check has a seeded fault.
