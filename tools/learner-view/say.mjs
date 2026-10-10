@@ -1,6 +1,7 @@
-// The app's own wording for sound, read from SAY in public/app/lessons/view.js, its one copy: this tool never types a sentence the
-// app prints. SAY is a plain object literal at the top level of a classic script, so it is cut out of the source and evaluated
-// alone; its functions only run when called. A key that is missing stops the tool with its name (lesson standard section 21 item 6).
+// The app's own wording for sound and for the baseline check, read from SAY in public/app/lessons/view.js, its one copy: this tool never
+// types a sentence the app prints. SAY is a plain object literal at the top level of a classic script, so it is cut out of the source and
+// evaluated alone; its functions only run when called. A key that is missing stops the tool with its name (lesson standard section 21
+// item 6 for sound; section 22 and E21 for the baseline).
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
 import { ROOT } from './load.mjs';
@@ -9,6 +10,8 @@ const VIEW = 'app/lessons/view.js';
 const START = 'const SAY = {';
 const AUDIO_KEYS = ['audioHear', 'audioPlaying', 'audioStop', 'audioTry', 'notePick', 'noteSing', 'noteAnyRange', 'micStart', 'micStop', 'micListening', 'micWait',
   'micPickFirst', 'micDenied', 'micMissing', 'micPrivate'];
+const BASELINE_KEYS = ['baselineHeading', 'baselineAsk', 'baselineFine', 'baselineWrong', 'baselineWhy', 'baselineIntro', 'baselineKept', 'baselineAfter',
+  'baselineSaid', 'baselineWas'];
 
 let cached = null;
 export async function loadSay() {
@@ -22,10 +25,12 @@ export async function loadSay() {
   return cached;
 }
 
-// The app's sentences for sound, every one required: line('micStart') is the sentence, and a function key is called with the arguments given.
-export async function audioLines() {
+// A set of the app's sentences, every one required: line('micStart') is the sentence, and a function key is called with the arguments given.
+async function linesFor(keys, what) {
   const say = await loadSay();
-  const missing = AUDIO_KEYS.filter(k => !(k in say));
-  if (missing.length) throw new Error(`SAY in ${VIEW} has no key for sound: ${missing.join(', ')}. The engine adds them; run the learner view again after that`);
+  const missing = keys.filter(k => !(k in say));
+  if (missing.length) throw new Error(`SAY in ${VIEW} has no key for ${what}: ${missing.join(', ')}. The engine adds them; run the learner view again after that`);
   return (key, ...args) => typeof say[key] === 'function' ? say[key](...args) : say[key];
 }
+export const audioLines = () => linesFor(AUDIO_KEYS, 'sound');
+export const baselineLines = () => linesFor(BASELINE_KEYS, 'the baseline check');

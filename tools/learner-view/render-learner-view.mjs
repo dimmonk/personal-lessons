@@ -9,7 +9,8 @@ import { writeFile, mkdir } from 'node:fs/promises';
 import { loadSubject, unitView, paras } from './load.mjs';
 import { makeText, makeCardRenderers, APP, cap, num } from './render-cards.mjs';
 import { makeAudioRenderer } from './render-audio.mjs';
-import { audioLines } from './say.mjs';
+import { makeBaselineRenderer, baselineIds } from './render-baseline.mjs';
+import { audioLines, baselineLines } from './say.mjs';
 
 const [SUBJECT, UNIT] = process.argv.slice(2).filter(a => !a.startsWith('-'));
 if (!SUBJECT || !UNIT) { console.error('usage: node tools/learner-view/render-learner-view.mjs <subject> <unit>'); process.exit(1); }
@@ -289,6 +290,9 @@ const drillIntro = (v.isFacts ? 'The cards are out of view. Facts that are easy 
 /* ---------- the document ---------- */
 const title = unit.title.fromKey ? v.option(...unit.title.fromKey.split('.')).n : unit.title.text;
 const draft = unit.status === 'draft' ? ' · Draft: not yet read by a newcomer' : '';
+// the baseline check opens an action subject's first unit and is answered on its complete screen; its sentences are read only for that unit (say.mjs)
+const baseline = makeBaselineRenderer(v, T, baselineIds(subject.meta, UNIT).length ? await baselineLines() : null,
+  { unitId: UNIT, label: `Unit ${unit.tag}`, bar: `Unit ${unit.tag} · rev ${unit.rev}${draft}` });
 say(`# Learner view: ${subject.meta.name}, Unit ${unit.tag}: ${title}`, '',
   `*${unit.subtitle}.* Unit revision ${unit.rev}, built to lesson standard ${unit.standard}, status: ${unit.status}.`, '',
   'This file is generated from the data files by `tools/render-learner-view.mjs`. It shows every screen in the order a learner meets it. In the app one card is on screen at a time and the learner moves on when ready.', '',
@@ -300,6 +304,7 @@ say(`# Learner view: ${subject.meta.name}, Unit ${unit.tag}: ${title}`, '',
   '- "Shown as soon as you …" is what appears the moment the learner answers. Nothing is hidden behind a second tap the first time a story is met, or after a miss.',
   '- After every answer the app shows: right or wrong; the reason, quoting the marked words; after a miss, one line on the answer the learner chose; and a link to the card that taught it.', '');
 
+say(...baseline.before());
 let n = 0;
 unit.parts.forEach((part, pi) => {
   say('---', '', `## Part ${pi + 1} of ${unit.parts.length}: ${part.title}`, '');
@@ -341,6 +346,7 @@ unit.parts.forEach((part, pi) => {
            : `*End of Unit ${unit.tag}. Every name comes back on later days with a new ${EXAMPLE}: what you missed first, in a day or two, and the rest a little later.*`, '');
 });
 
+say(...baseline.after());
 say('---', '', '## After the unit: what comes back on later days', '',
   `A name that is due returns as a story the learner has not seen, next to a story of the name they most often confuse it with. ${v.isGate ? 'Each is asked the first question, with the full feedback of the last story stage.' : 'Each is run as a whole story: every question, then the name.'} These are the fresh stories held back for that purpose: three for each name, one for each scheduled return. The first return is about two days after the drill, the next about a week after that, the next about three and a half weeks later.`, '');
 unit.drill.returns.forEach((id, i) => {

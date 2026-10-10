@@ -14,6 +14,114 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ---
 
+## Before the unit: A few questions before you start
+
+*Asked once, before the unit’s first card, one screen for each of the 6 stories below, in this order. Nothing about the answers is shown until the unit is finished, and nothing is scored.*
+
+### Question 1 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 1 of 6*
+
+[reviewers only: baseline story `b-fund-fees`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Rob, 49, has $180,000 in a fund in his IRA. The fund company takes 1.4% of it every year, and the adviser who set it up takes another 0.3%. Rob has never read the statement that says so.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 2 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 2 of 6*
+
+[reviewers only: baseline story `b-flat-fee`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Elena, 61, pays her tax adviser a flat $2,400 a year to file her returns and plan her retirement savings. The fee has been the same for six years, the work is done in writing, and the adviser takes nothing from what she invests.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 3 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 3 of 6*
+
+[reviewers only: baseline story `b-bill-saved`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Joe has a $22,000 bill for a new roof from his roofer, due in three months. He has the $22,000 in a savings account, and it is earning interest.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 4 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 4 of 6*
+
+[reviewers only: baseline story `b-company-shares`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Dan, 44, sells car parts for a living. $400,000 of the $500,000 he owns is shares in the company he works for, and he could sell them any day. He does not run the company.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 5 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 5 of 6*
+
+[reviewers only: baseline story `b-old-will`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Moira, 59, has not changed her will since her divorce nine years ago. It still leaves her house and savings, $450,000, to her former husband.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 6 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 6 of 6*
+
+[reviewers only: baseline story `b-long-saver`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Kim, 35, pays $350 a month into a 401(k) that she will not touch for thirty years. She has a steady job, no debts and three months of pay in savings.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+---
+
 ## Part 1 of 3: Fees, and prices that fall at the wrong time
 
 ### 1. Before you change anything about your money, find what could lose it
@@ -1145,6 +1253,48 @@ A plan is one sentence in two parts: what you will notice, and what you will the
 Or write your own: If …, then I will …
 
 *End of Unit One. Every name comes back on later days with a new story: what you missed first, in a day or two, and the rest a little later.*
+
+---
+
+## When the unit is finished: what each of the first 6 stories was
+
+Before Unit One, you were asked about these stories. Here is what each one was.
+
+> Rob, 49, has $180,000 in a fund in his IRA. ⟦The fund company takes 1.4% of it every year, and the adviser who set it up takes another 0.3%⟧. Rob has never read the statement that says so.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+Two sums come out of his money every year, one to the fund company and one to the adviser: “The fund company takes 1.4% of it every year, and the adviser who set it up takes another 0.3%”. He has never read the statement, so nobody has asked whether the fees are worth it.
+
+> Elena, 61, ⟦pays her tax adviser a flat $2,400 a year⟧ to file her returns and plan her retirement savings. ⟦The fee has been the same for six years⟧, the work is done in writing, and ⟦the adviser takes nothing from what she invests⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+Something comes out of her money every year: “pays her tax adviser a flat $2,400 a year”. Whether the fee is fair does not change that.
+
+> Joe has ⟦a $22,000 bill for a new roof from his roofer, due in three months⟧. ⟦He has the $22,000 in a savings account⟧, and it is earning interest.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+This is about money needed on a date: “a $22,000 bill for a new roof from his roofer, due in three months”. That fits **“Prices falling at the wrong time”**, even though here the money is already safe in cash.
+
+> Dan, 44, sells car parts for a living. ⟦$400,000 of the $500,000 he owns is shares in the company he works for⟧, and ⟦he could sell them any day⟧. ⟦He does not run the company⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+One thing is most of what he owns: “$400,000 of the $500,000 he owns is shares in the company he works for”. If that company did badly, nearly everything he has would go with it.
+
+> Moira, 59, ⟦has not changed her will since her divorce nine years ago⟧. It ⟦still leaves her house and savings, $450,000, to her former husband⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+This is about who gets the money when she dies, and these words show the problem: “still leaves her house and savings, $450,000, to her former husband”.
+
+> Kim, 35, ⟦pays $350 a month into a 401(k) that she will not touch for thirty years⟧. She has a steady job, no debts and three months of pay in savings.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+Money is being put away for decades: “pays $350 a month into a 401(k) that she will not touch for thirty years”. Nothing in the story comes out of it, rests on one thing, falls due on a date or changes hands, so there is nothing that could lose the money.
 
 ---
 

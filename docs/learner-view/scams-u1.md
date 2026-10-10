@@ -14,6 +14,114 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ---
 
+## Before the unit: A few questions before you start
+
+*Asked once, before the unit’s first card, one screen for each of the 6 stories below, in this order. Nothing about the answers is shown until the unit is finished, and nothing is scored.*
+
+### Question 1 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 1 of 6*
+
+[reviewers only: baseline story `g-base-signin`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Aisha opens her banking app and finds a notice in its own message center: 'A new device, an Orbit phone, signed in to your account at 2:02 p.m. today. If this was you, you do not need to do anything.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 2 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 2 of 6*
+
+[reviewers only: baseline story `g-base-tiler`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Ayo hired a tile installer for her bathroom and agreed $640 in writing. After the job the tile installer's invoice arrives: 'Total: $640, as quoted. Please pay by ACH transfer to the account on your quote, within 14 days.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 3 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 3 of 6*
+
+[reviewers only: baseline story `g-base-realcode`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Sofia asks the website she banks with to reset her password. The site's page says: 'We have sent a code to your phone. Type it here.' Her phone buzzes with the code, and she types it into the same page.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 4 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 4 of 6*
+
+[reviewers only: baseline story `g-base-parcelfee`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A text reaches Dev: 'Swift Package: your package is held at the facility. Pay a $1.45 redelivery fee at swiftparcel-fee.com within 24 hours or it will be returned.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 5 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 5 of 6*
+
+[reviewers only: baseline story `g-base-callercode`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A caller says that he is from Halbrook Bank's fraud team. 'A payment is being made from your account right now,' he says. 'I have just texted you a code. Read it to me and I will stop it.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 6 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 6 of 6*
+
+[reviewers only: baseline story `g-base-refundshare`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A woman calls and says that she is from the electricity company: 'You have been overcharged $62 and I will put it back. Press Share in this meeting app, so that I can see your computer and process the refund.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+---
+
 ## Part 1 of 3: Two habits, then news and sign-in requests
 
 ### 1. Before you tap, call, pay or reply, check what the message asks
@@ -1112,6 +1220,48 @@ A plan is one line: if I see this, I will do that. The moment a message arrives 
 Or write your own: If …, then I will …
 
 *End of Unit One. Every name comes back on later days with a new story: what you missed first, in a day or two, and the rest a little later.*
+
+---
+
+## When the unit is finished: what each of the first 6 stories was
+
+Before Unit One, you were asked about these stories. Here is what each one was.
+
+> Aisha opens her banking app and finds a notice in its own message center: 'A new device, an Orbit phone, signed in to your account at 2:02 p.m. today. ⟦If this was you, you do not need to do anything⟧.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+The notice only tells Aisha that something has happened: “If this was you, you do not need to do anything”. It asks her for nothing and gives her no link, number or app.
+
+> Ayo hired a tile installer for her bathroom and agreed $640 in writing. After the job the tile installer's invoice arrives: 'Total: $640, as quoted. ⟦Please pay by ACH transfer to the account on your quote, within 14 days⟧.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The invoice asks Ayo to pay: “Please pay by ACH transfer to the account on your quote, within 14 days”. That is a request for money, whether or not it is a fair one.
+
+> Sofia asks the website she banks with to reset her password. The site's page says: '⟦We have sent a code to your phone. Type it here⟧.' Her phone buzzes with the code, and she types it into the same page.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The page asks Sofia to type in a code: “We have sent a code to your phone. Type it here”. That is a way into an account, whether or not she started it.
+
+> A text reaches Dev: 'Swift Package: your package is held at the facility. ⟦Pay a $1.45 redelivery fee at swiftparcel-fee.com within 24 hours⟧ or it will be returned.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The text asks Dev to pay a fee at an address: “Pay a $1.45 redelivery fee at swiftparcel-fee.com within 24 hours”. That is a request for money, however small.
+
+> A caller says that he is from Halbrook Bank's fraud team. 'A payment is being made from your account right now,' he says. 'I have just texted you a code. ⟦Read it to me and I will stop it⟧.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The caller asks the customer to read out a code that just came to her phone: “Read it to me and I will stop it”. That is a way into her account.
+
+> A woman calls and says that she is from the electricity company: 'You have been overcharged $62 and I will put it back. ⟦Press Share in this meeting app, so that I can see your computer and process the refund⟧.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The caller asks the customer to let her watch the computer: “Press Share in this meeting app, so that I can see your computer and process the refund”. That is a request about the device itself.
 
 ---
 

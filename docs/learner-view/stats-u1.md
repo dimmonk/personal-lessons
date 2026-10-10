@@ -14,6 +14,114 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ---
 
+## Before the unit: A few questions before you start
+
+*Asked once, before the unit’s first card, one screen for each of the 6 stories below, in this order. Nothing about the answers is shown until the unit is finished, and nothing is scored.*
+
+### Question 1 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 1 of 6*
+
+[reviewers only: baseline story `gate-b-survey`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A city council surveyed 1,200 residents whose addresses were drawn by lottery from the full list of homes in the city. It sent a reminder, and then a visitor, to everyone who had not replied, and 1,100 answered. Sixty-two percent said they would use a new bus line. The city council says: 'About six in ten residents would use the new bus line.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 2 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 2 of 6*
+
+[reviewers only: baseline story `gate-b-poll`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A local news site put a poll on its home page: 'Should the town ban cars from Main Street?' Of the 3,400 people who clicked an answer, 81% said yes. The site's headline says: 'Town backs car ban, 4 in 5 say yes.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 3 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 3 of 6*
+
+[reviewers only: baseline story `gate-b-clinics`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A health department compared two clinics. Both clinics start the clock when a patient checks in and stop it when the patient sees a doctor, they serve the same neighborhoods, and the department counted every visit last year. Clinic A had 2,000 visits, and 600 waited more than an hour. Clinic B had 2,100 visits, and 840 waited more than an hour. The department says: 'Patients at Clinic B wait more than an hour more often: 40 in 100 against 30.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 4 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 4 of 6*
+
+[reviewers only: baseline story `gate-b-screening`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A clinic reports: 'Diagnoses of a skin condition doubled in two years.' Two years ago the clinic began offering a free screening day to everyone in town, and it now checks about six times as many people as before.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 5 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 5 of 6*
+
+[reviewers only: baseline story `gate-b-scheme`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A school drew lots to choose 60 of its 120 students for a new reading scheme, and the other 60 kept their usual lessons. All 120 took the same test at the end of the term, and the scheme group averaged 12 points higher. The school says: 'The reading scheme raised scores.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 6 of 6. A few questions before you start
+
+*Unit One · rev 5 · Draft: not yet read by a newcomer · Before the unit · Question 6 of 6*
+
+[reviewers only: baseline story `gate-b-dogs`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> A pet magazine reports: 'People who own dogs live longer than people who do not, so get a dog.' It compared 5,000 dog owners with 5,000 others, and the owners lived two years longer on average. The dog owners in the study were mostly people who walked every day and could afford the vet.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+---
+
 ## Part 1 of 3: The people behind a number, how it is counted, what it is set beside
 
 ### 1. Before you believe a number, find where it could fool you
@@ -1007,6 +1115,48 @@ You do not have to write one. If you do, it has two halves: the moment, and what
 Or write your own: If …, then I will …
 
 *End of Unit One. Every name comes back on later days with a new story: what you missed first, in a day or two, and the rest a little later.*
+
+---
+
+## When the unit is finished: what each of the first 6 stories was
+
+Before Unit One, you were asked about these stories. Here is what each one was.
+
+> A city council surveyed 1,200 residents whose addresses were ⟦drawn by lottery from the full list of homes in the city. It sent a reminder, and then a visitor, to everyone who had not replied, and 1,100 answered⟧. Sixty-two percent said they would use a new bus line. The city council says: 'About six in ten residents would use the new bus line.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+Each part holds: “drawn by lottery from the full list of homes in the city. It sent a reminder, and then a visitor, to everyone who had not replied, and 1,100 answered”. The claim gives one number for one group and says no more.
+
+> A local news site put a poll on its home page: 'Should the town ban cars from Main Street?' ⟦Of the 3,400 people who clicked an answer⟧, 81% said yes. The site's headline says: 'Town backs car ban, 4 in 5 say yes.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The headline speaks for the whole town, but the number comes from people who chose to click: “Of the 3,400 people who clicked an answer”. Nobody was picked, and people with a strong view click more.
+
+> A health department compared two clinics. ⟦Both clinics start the clock when a patient checks in and stop it when the patient sees a doctor, they serve the same neighborhoods, and the department counted every visit last year⟧. Clinic A had 2,000 visits, and 600 waited more than an hour. Clinic B had 2,100 visits, and 840 waited more than an hour. The department says: 'Patients at Clinic B wait more than an hour more often: 40 in 100 against 30.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+Each part holds: “Both clinics start the clock when a patient checks in and stop it when the patient sees a doctor, they serve the same neighborhoods, and the department counted every visit last year”. The claim says only which clinic has the longer waits, not why.
+
+> A clinic reports: 'Diagnoses of a skin condition doubled in two years.' Two years ago the clinic ⟦began offering a free screening day to everyone in town, and it now checks about six times as many people as before⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+What changed is how many people are looked at: “began offering a free screening day to everyone in town, and it now checks about six times as many people as before”. Six times as many people checked can mean twice as many diagnoses with less of the condition in town.
+
+> A school ⟦drew lots to choose 60 of its 120 students for a new reading scheme⟧, and the other 60 kept their usual lessons. All 120 took the same test at the end of the term, and the scheme group averaged 12 points higher. The school says: 'The reading scheme raised scores.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+Nobody chose their group: “drew lots to choose 60 of its 120 students for a new reading scheme”. So the story offers no other way to explain the difference.
+
+> A pet magazine reports: '⟦People who own dogs live longer than people who do not, so get a dog⟧.' It compared 5,000 dog owners with 5,000 others, and the owners lived two years longer on average. The dog owners in the study were mostly people who walked every day and could afford the vet.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The claim says owning a dog made people live longer: “People who own dogs live longer than people who do not, so get a dog”. But the owners already walked every day and could afford the vet, which could explain it alone.
 
 ---
 

@@ -14,6 +14,114 @@ This file is generated from the data files by `tools/render-learner-view.mjs`. I
 
 ---
 
+## Before the unit: A few questions before you start
+
+*Asked once, before the unit’s first card, one screen for each of the 6 stories below, in this order. Nothing about the answers is shown until the unit is finished, and nothing is scored.*
+
+### Question 1 of 6. A few questions before you start
+
+*Unit One · rev 1 · Draft: not yet read by a newcomer · Before the unit · Question 1 of 6*
+
+[reviewers only: baseline story `g-base-choir-shout`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> At choir practice the soprano line climbs to its last note. Nadia gets louder and louder as it goes up, her jaw clenches, and the top note comes out as a shout.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 2 of 6. A few questions before you start
+
+*Unit One · rev 1 · Draft: not yet read by a newcomer · Before the unit · Question 2 of 6*
+
+[reviewers only: baseline story `g-base-car-fine`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Singing along in the car, Theo hits every note of the chorus, nothing feels tight, and he has air to spare at the end of each line. He turns the song off anyway: 'I sound nothing like the guy on the record.'
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 3 of 6. A few questions before you start
+
+*Unit One · rev 1 · Draft: not yet read by a newcomer · Before the unit · Question 3 of 6*
+
+[reviewers only: baseline story `g-base-karaoke-air`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> At karaoke, Imani grabs a quick gasp before each line, her shoulders jump up, and halfway through the long line the air is gone.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 4 of 6. A few questions before you start
+
+*Unit One · rev 1 · Draft: not yet read by a newcomer · Before the unit · Question 4 of 6*
+
+[reviewers only: baseline story `g-base-kids-fine`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> Luis sings a lullaby to his daughter every night. The notes are right, nothing hurts, and every word is clear. His only complaint is that he does not sound like the singer on the album.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 5 of 6. A few questions before you start
+
+*Unit One · rev 1 · Draft: not yet read by a newcomer · Before the unit · Question 5 of 6*
+
+[reviewers only: baseline story `g-base-shower-note`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> In the shower, Pat sings the first line of a song and is not sure the second note is right. It sounds a shade off to him, and he keeps going back to it.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+### Question 6 of 6. A few questions before you start
+
+*Unit One · rev 1 · Draft: not yet read by a newcomer · Before the unit · Question 6 of 6*
+
+[reviewers only: baseline story `g-base-party-nasal`]
+
+Before Unit One, a few stories. For each one, say whether something is wrong or it is fine, and why if you can. Nothing is shown about your answers until you finish Unit One, and they are never scored. They only show where you started.
+
+> At a party, Elena sings along and her friend says she sounds like she is singing through her nose. The notes are right and she has plenty of air; the sound is pinched.
+
+**Is something wrong here, or is it fine?**
+
+- It is fine
+- Something is wrong
+
+Under the two buttons, a line for the learner’s own words: *And why? In a line, if you like.* After either answer the screen says “Kept. Nothing is shown about this one until you finish Unit One.” and Next opens.
+
+---
+
 ## Part 1 of 3: Nothing wrong, the top notes, and the air
 
 ### 1. Before you blame your voice, say what bothered you
@@ -1215,6 +1323,48 @@ A plan is one line: if I see this, I will do that. The moment a line comes out w
 Or write your own: If …, then I will …
 
 *End of Unit One. Every name comes back on later days with a new story: what you missed first, in a day or two, and the rest a little later.*
+
+---
+
+## When the unit is finished: what each of the first 6 stories was
+
+Before Unit One, you were asked about these stories. Here is what each one was.
+
+> At choir practice the soprano line climbs to its last note. Nadia ⟦gets louder and louder as it goes up, her jaw clenches, and the top note comes out as a shout⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The trouble starts where the notes go up, and at the top the voice shouts: “gets louder and louder as it goes up, her jaw clenches, and the top note comes out as a shout”.
+
+> Singing along in the car, Theo ⟦hits every note of the chorus, nothing feels tight, and he has air to spare⟧ at the end of each line. He turns the song off anyway: '⟦I sound nothing like the guy on the record⟧.'
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+The notes are right, nothing is tight or short of air, and the only complaint is about the singer on the record: “hits every note of the chorus, nothing feels tight, and he has air to spare” and “I sound nothing like the guy on the record”.
+
+> At karaoke, Imani ⟦grabs a quick gasp before each line, her shoulders jump up, and halfway through the long line the air is gone⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The trouble is with the air: Imani gasps with her shoulders up, and halfway through the line it runs out: “grabs a quick gasp before each line, her shoulders jump up, and halfway through the long line the air is gone”.
+
+> Luis sings a lullaby to his daughter every night. ⟦The notes are right, nothing hurts, and every word is clear⟧. His only complaint is that ⟦he does not sound like the singer on the album⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **It was fine.**
+
+The notes, the throat and the words are all fine, and the complaint is only about the singer on the album: “The notes are right, nothing hurts, and every word is clear” and “he does not sound like the singer on the album”.
+
+> In the shower, Pat sings the first line of a song and ⟦is not sure the second note is right. It sounds a shade off to him⟧, and he keeps going back to it.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+What Pat doubts is the note itself: “is not sure the second note is right. It sounds a shade off to him”. Nothing is said about the top notes or the air.
+
+> At a party, Elena sings along and her friend says she sounds like she is singing through her nose. ⟦The notes are right and she has plenty of air; the sound is pinched⟧.
+
+Beside the learner’s own answer (“You said: it is fine.” or “You said: something is wrong.”): **Something was wrong with it.**
+
+The notes and the air are fine, and what bothers her is the sound of the words: “The notes are right and she has plenty of air; the sound is pinched”.
 
 ---
 
