@@ -5,7 +5,7 @@ artifact: https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv
 
 # Lesson rebuild
 
-Status on 2026-10-09, checked against the lesson data, the live site and the tests (code at commit 08c5f41). Fieldcraft has 8 subjects and 48 units, all in the interactive format and all live at https://fieldcraft.web.app. Every unit is still a draft until you read it cold. How to continue: `docs/HANDOFF.md`.
+Status on 2026-10-10, checked against the lesson data, the live site and the tests (code at commit 9f28326). Fieldcraft has 8 subjects and 48 units, all in the interactive format and all live at https://fieldcraft.web.app. Every unit is still a draft until you read it cold. How to continue: `docs/HANDOFF.md`.
 
 ## Live now
 - [x] Psychology: 4 units, 16 specimens
@@ -16,8 +16,9 @@ Status on 2026-10-09, checked against the lesson data, the live site and the tes
 - [x] Wealth Preservation: 5 units, 27 specimens
 - [x] US Civics: 10 units (5 fact), 20 specimens
 - [x] Singing: 6 units (1 fact), 19 specimens, added 2026-10-08
-- [x] The live site is identical to the code: all 713 files match, Singing included
-- [x] All tests pass today: 1,154 data checks, 1,622,727 lesson checks across 48 units, 87 negative controls, 44,177 browser checks
+- [x] The live site is identical to the code: all 719 files match, Singing included
+- [x] All tests pass today: 1,239 data checks, 579 sound checks, 1,624,031 lesson checks across 48 units, 110 negative controls, 44,272 browser checks
+- [x] Sound is live in Singing Unit Four: the note tool and five example sounds. Checked on the live site: before any tap nothing sounds and the microphone is not asked for
 
 ## How it got here
 - [x] 2026-10-05: every subject rebuilt in the interactive format, the old card format deleted, American English everywhere, every unit trimmed to a quick lesson
@@ -30,7 +31,6 @@ Status on 2026-10-09, checked against the lesson data, the live site and the tes
 - [x] Example sounds for singing flat, sharp and scooping, made by the app (no sound files needed), and for a match and for hunting: five cards of Unit Four, 2026-10-09
 - [x] The list of clips to record, written: `docs/singing-clips.md`
 - [ ] Recorded clips for the rest: pushing, cracking, squeezing, an airy tone, a nasal sound, a muffled sound. The recordings have to come from you or from licensed clips
-- [ ] Listen to the new sounds and try the note tool on a real phone (`docs/singing-audio.md` says what to listen for)
 - [ ] The screen before Unit One asks "Is this real, or is something wrong with it?". "Real" reads oddly for singing, and the wording is shared by every subject you act on
 
 ## Not built yet
@@ -38,5 +38,6 @@ Status on 2026-10-09, checked against the lesson data, the live site and the tes
 - [ ] A gap the units say out loud: Civics skips the years 1877 to 1900
 
 ## Needs your decision
+- [ ] Try the note tool and the example sounds on your phone and tell me what sounds or reads wrong (`docs/singing-audio.md` says what to listen for)
 - [ ] The recorded clips: will you record them? The list is `docs/singing-clips.md`; the player is built when the files exist
 - [ ] Cold read: read any unit as a beginner and say what is unclear. Start with Psychology Unit One
