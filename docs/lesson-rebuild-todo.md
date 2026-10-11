@@ -5,52 +5,42 @@ artifact: https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv
 
 # Lesson rebuild
 
-Status on 2026-10-10. Fieldcraft is live at https://fieldcraft.web.app with 8 subjects. On 2026-10-10 the Singing subject
-was found useless for singing (it was built as story-sorting, the Scams template), and the cause was the way subjects get
-built, not one subject. From now on every subject goes through the `build-subject` skill (`~/.claude/skills/build-subject`).
+Status on 2026-10-11. Fieldcraft is live at https://fieldcraft.web.app. On 2026-10-10 every subject was found to practice
+the wrong thing (Singing was story-sorting), so every subject is being rebuilt through the `build-subject` skill on one
+new practice engine (lesson standard section 26), each subject's pilot lesson first, the rest after you try the pilot.
 
 ## Goal
 - **Goal**: the reader efficiently learns each subject: after it, they can do the thing in real life.
 - **The standard**: every subject starts from its end result and its real moment, never from the app's existing engine;
   practice is the real action (a voice skill is practiced by singing); every lesson serves a part of the end result;
-  every design decision cites the evidence (`docs/learning-science.md`, `docs/research/`); the owner approves the end
-  result and the practice method before content is written, and tries one lesson before the rest is built.
+  every design decision cites the evidence (`docs/research/`); the owner approves the end result and the practice
+  method before content is written, and tries one lesson before the rest is built.
 - **How we stay on track**: earlier style rules are inputs, not rules; nothing is kept because it exists; tests pass
   before anything is called done; one session owns the job: commit, push and deploy as each piece lands.
 
 ## Main task
 - [x] The `build-subject` skill: seven gates in order, from the kind of learning to a tried pilot
-- [x] The research for the weekly review: `docs/research/review-after-lessons.md`
-- [x] The gates enforced in the app: each subject has `docs/subjects/<id>/design.md`, and V69 refuses a subject whose record is missing, and any lesson change before your approvals (standard section 23; cf125bc)
-- [x] The weekly review (live, 4b4c9c5): one review replacing the returns and the Mixed drill; each item has its own next date; only questions in the real form, mixed; misses again until right; an item retires after about three right weeks (standard section, engine, tests, deploy)
-- [ ] The research document rewritten by kind of learning: it assumed "diagnostic classification" before looking at any evidence; add the evidence for body skills (the voice)
-- [x] Singing, gate 1: the evidence for learning to sing (`docs/research/learning-to-sing.md`, 551f34d)
-- [x] Singing, gates 2 and 3: the end result, the test, the practice method (approved 2026-10-10)
-- [ ] Singing, the app capabilities the practice needs: a new kind of lesson where you sing (standard section 25): a pitch line against the target that fades, a range finder, held notes, melodies played and sung back
-- [x] Singing, gates 4 and 5: seven parts (range, match, hold, slide, intervals, short tunes, a lighter top) and a lesson for each (`docs/subjects/singing/design.md`)
-- [ ] Singing, gate 6: one lesson built, you try it on your phone
-- [ ] Singing, gate 7: the rest built; the old Singing deleted in one commit
-- [x] Every subject through the skill, designed blind then audited: all eight come back "rebuild from scratch"; the practice never matched the real moment (f7ef6d5; verdicts in each `docs/subjects/<id>/design.md`)
-- [x] The practice engine designed for all eight subjects (standard section 26)
-- [x] The engine core built and the old engine and lessons deleted (b884add; not deployed until Singing's pilot exists; old lessons at the tag `old-lessons`)
-- [x] Singing on the new engine: the singing answer, the pitch line, your range, and the pilot lesson "Match a note" (live 2026-10-10): answers you give (typed numbers, typed answers, actions, verdicts, singing), what you see (messages as they arrive, charts, statements, spoken questions), fading feedback, private records; the old engine deleted
-- [x] Math on the new engine: the typed number (rough answer first, then the exact one with a calculator, wrong answers named), problems made with fresh prices, receipts and recipe cards on screen, and the pilot lesson "Ballpark and check" (draft, step 3)
-- [x] Stats on the new engine: headlines, posts, ads and reports as they arrive, tap the line that gives the number, charts with a cut axis redrawn from zero, 1,000 people, and the pilot lesson "Find the claim and its number" (draft, step 5)
-- [ ] Each subject rebuilt on the new engine, pilot lesson first: Singing and Math done; Wealth, Stats, Ideology, Psychology, Scams, Civics next
+- [x] The gates enforced in the app: design records and V69 (standard sections 23 and 26.7)
+- [x] Every subject designed blind and audited: all eight rebuilt from scratch (verdicts in `docs/subjects/<id>/design.md`)
+- [x] The weekly review: one review a week across every subject (section 24; live)
+- [x] The practice engine designed (section 26) and its core built; the old engine and lessons deleted (tag `old-lessons`)
+- [x] Singing's pilot live: the singing answer, the pitch line that fades, your range, "Match a note"
+- [x] Basic Math's pilot live: typed numbers, estimate first, fresh prices each try, "Ballpark and check"
+- [x] Wealth's pilot live: your own accounts sheet on the phone, statements, dollar costs, dated actions
+- [x] Statistical Claims' pilot live: headlines, charts and ads as they appear, tap the line that decides
+- [x] Your two bugs fixed and live: phone Back stays in the app; "Find my range again" on the Singing screen
+- [ ] **(now)** Political Ideologies' pilot: labels thrown from both sides, earned / not earned / too little to tell
+- [ ] Psychology's pilot: accounts of what someone did, one moment or a pattern, the next step
+- [ ] Scams' pilot: messages as they arrive, act / check first / ignore, calls that push back
+- [ ] US Civics' pilot: questions spoken aloud, typed answers checked, the interview
+- [ ] Each subject's other lessons, after your try of its pilot
+- [ ] The research document (`docs/learning-science.md`) reorganized by kind of learning
 
 ## Parked
-- [x] Scams baseline bug: confirmed by the audit; it goes with the old lessons (Scams is rebuilt)
-- [x] The learner view prints the baseline screens (d6bb657)
-- [ ] The status docs (`docs/HANDOFF.md`) brought up to date
-
-## Done earlier today
-- [x] The baseline question asks "Is something wrong here, or is it fine?" in every subject you act on (live)
-- [x] Sound in Singing Unit Four: the note tool and five example sounds (live; the engine pieces are kept for the rebuild)
+- [ ] The status docs (`docs/HANDOFF.md`) brought up to date with the new engine
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
-- [ ] **Try Math's pilot on your phone**: Library → Basic Math → Ballpark and check; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
-- [ ] **Try Stats' pilot on your phone**: Library → Statistical Claims → Find the claim and its number; a line on how it went unlocks Stats' other six lessons (gate 6)
-- [ ] **Try Wealth's pilot on your phone**: Library → Wealth → What it costs a year; it asks for your own accounts, kept only on the phone
-- [ ] **Try Basic Math's pilot on your phone**: Library → Basic Math → Ballpark and check; a line on how it went unlocks Math's other six lessons
-- [ ] **Try Singing's pilot on your phone**: Library → Singing → Match a note; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
+- [ ] **Try the pilots on your phone** and tell me in a line how each went (each line unlocks that subject's other lessons):
+  Singing → Match a note; Basic Math → Ballpark and check; Wealth → What it costs a year; Statistical Claims → Find the
+  claim and its number
