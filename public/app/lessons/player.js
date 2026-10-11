@@ -103,7 +103,7 @@ function workedAnswerHtml(data, inst){
   const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '', redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
-  return `<div class="feedback"><div class="marks">${marks}</div>${block(SAY.whyLabel, paras(item.reason))}${block(SAY.needLabel, paras(item.need))}${picture}${redrawn}</div>`;
+  return `<div class="feedback"><div class="marks">${marks}</div>${block(SAY.whyLabel, paras(item.reason))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}</div>`;
 }
 
 /* ---------- a group of questions ---------- */
@@ -188,7 +188,7 @@ function paintCheckResult(log){
   LESSON = { ...LESSON, at: stepTotal(lesson) - 1 };
   saveLessonPlace();
   lessonShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total, sung) : SAY.checkNotYet(result.right, result.total))}</h2>
-    <table class="k results">${rows}</table></div>${each}`, actions);
+    <table class="k results">${rows}</table>${splitsHtml(facetSplits(data, queueOutcomes(log)))}</div>${each}`, actions);
   on('#toNext', () => openLesson(subj, next.id));
   on('#again', () => { LESSON = { ...LESSON, at: checkStep(lesson) }; paintCheckIntro(); window.scrollTo(0, 0); });
   window.scrollTo(0, 0);

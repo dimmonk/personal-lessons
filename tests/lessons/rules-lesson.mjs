@@ -55,9 +55,11 @@ export const V72 = subjectRule('V72', (s, check) => {
 });
 
 /* ---------- V73: most of the lesson is doing ---------- */
+// the words a panel prints on a teaching screen come from the subject's rules, and are read like any other
+const panelWords = (s, blocks) => blocks.flatMap(b => b.kind === 'panel' ? b.rules.map(id => s.meta.rules[id]) : []);
 function readingWords(s, lv) {
   const { lesson } = lv;
-  const parts = [lesson.why, ...lesson.flow.filter(x => x.show).map(x => ({ title: x.title, show: x.show })),
+  const parts = [lesson.why, ...lesson.flow.filter(x => x.show).map(x => ({ title: x.title, show: x.show, printed: panelWords(s, x.show) })),
     ...lv.worked.map(id => { const i = s.items[id]; return { blocks: i.blocks, steps: i.steps, reason: i.reason, need: i.need }; })];
   return parts.flatMap(p => learnerStrings(p, '')).reduce((n, t) => n + wordCount(t.text), 0);
 }
@@ -107,6 +109,22 @@ function tapExplainProblems(s, item, ask, where, slipIds) {
   lines.filter(l => l.slip && right.includes(l.id)).forEach(l => problems.push(`${where}: the right line "${l.id}" carries the slip "${l.slip}"`));
   return problems;
 }
+// A question with a panel names what the label needs, and says for each need where the words show it, or that they do not: every need of its
+// rules and no other, each found line a line of the text and among the deciding words (so it is marked after the answer).
+function hasExplainProblems(s, item) {
+  const e = s.engine, panels = e.panelBlocksOf(item), problems = [];
+  if (!panels.length) return 'has' in item ? ['it says where the needs of a label are found, and has no panel naming the label'] : [];
+  if (!('has' in item)) return ['it has a panel and does not say, for each need, where the words show it or that they do not'];
+  const needs = e.ruleNeeds(s.subject, e.itemRuleIds(item)).map(n => n.id), ids = Object.keys(item.has);
+  needs.filter(id => !ids.includes(id)).forEach(id => problems.push(`has: the need "${id}" of its panel is not accounted for`));
+  ids.filter(id => !needs.includes(id)).forEach(id => problems.push(`has: "${id}" is not a need of its panel`));
+  const lines = item.blocks.flatMap(b => e.segmentsOf(b)).map(x => x.id);
+  Object.entries(item.has).filter(([, line]) => line !== null).forEach(([id, line]) => {
+    if (!lines.includes(line)) problems.push(`has: the need "${id}" is found in "${line}", which is not a line of the text`);
+    else if (!(item.deciding || []).includes(line)) problems.push(`has: the need "${id}" is found in "${line}", which is not among the deciding words, so it would not be marked after the answer`);
+  });
+  return problems;
+}
 // the asks a question really holds: a form's fields are asks of their own kinds
 const flatAsks = (s, item) => item.asks.flatMap(a => a.kind === 'form' ? a.fields.map(f => ({ ...s.engine.formFieldAsk(f), id: `${a.id}.${f.id}` })) : [a]);
 function explainProblems(s, item) {
@@ -122,6 +140,7 @@ function explainProblems(s, item) {
   });
   const segments = item.blocks.flatMap(b => s.engine.segmentsOf(b)).map(x => x.id);
   (item.deciding || []).filter(id => !segments.includes(id)).forEach(id => problems.push(`deciding "${id}" is not a segment of the blocks`));
+  problems.push(...hasExplainProblems(s, item));
   return problems;
 }
 export const V74 = subjectRule('V74', (s, check) => {

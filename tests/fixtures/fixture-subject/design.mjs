@@ -59,10 +59,23 @@ export const FEED_DESIGN = {
   pilot: 'l1',
   tried: { pilot: { date: '2026-10-11', words: 'Clear on a phone.' } }
 };
-export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN };
+export const LABELS_DESIGN = {
+  subject: 'labels',
+  kinds: ['judging'],
+  endResult: 'Say whether a label pinned on a post fits the words under it.',
+  realMoment: 'Reading a post with a label on it.',
+  test: 'Two new posts, one from each side: say whether the label fits and tap the line that decides it; both right.',
+  practice: 'Judge labelled posts, with what the label needs beside the words at first and then not, and feedback after each answer.',
+  approved: { endResult: '2026-10-11', practice: '2026-10-11', pilot: '2026-10-11' },
+  parts: [{ id: '1', title: 'Does the label fit' }],
+  pilot: 'l1',
+  tried: { pilot: { date: '2026-10-11', words: 'Clear on a phone.' } }
+};
+export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN };
 // the files of the test subjects, in load order, relative to this folder
 export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 'items-timing.js', 'l1.lesson.js', 'l2.lesson.js',
   'chorus-subject.js', 'chorus-l1.lesson.js', 'chorus-l2.lesson.js', 'till-subject.js', 'till-items.js', 'till-l1.lesson.js',
-  'ledger-subject.js', 'ledger-items.js', 'ledger-l1.lesson.js', 'feed-subject.js', 'feed-items.js', 'feed-l1.lesson.js'];
+  'ledger-subject.js', 'ledger-items.js', 'ledger-l1.lesson.js', 'feed-subject.js', 'feed-items.js', 'feed-l1.lesson.js',
+  'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js'];
 // the ids of the test subjects, in the order they load
-export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed'];
+export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels'];

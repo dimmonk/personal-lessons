@@ -32,6 +32,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   // articles, charts, the tap and the 1,000 people
   'tapPick', 'tapRightIds', 'tapSegments', 'tapBlocks', 'tapReady', 'tapRightText', 'tapClip', 'scoreTap', 'TAP_NONE', 'tapMissHtml', 'tapHtml', 'articleHtml', 'chartHtml', 'chartTicks', 'chartAt', 'chartPlotHeight',
   'chartBand', 'chartFromZero', 'chartProblems', 'chartAlt', 'chartIsCut', 'niceStep', 'CHART_BOX', 'CHART_PLOT', 'CHART_MAX_TICKS', 'peopleHtml', 'redrawHtml',
+  'LABEL_SIDES', 'panelBlocksOf', 'itemRuleIds', 'ruleOf', 'ruleNeeds', 'labelledPostsOf', 'hasLines', 'facetSplits', 'panelHtml', 'hasHtml', 'splitsHtml', 'labelledPostHtml', 'queueOutcomes',
   'documentTabsHtml', 'blockPieces', 'blocksHtml', 'refHtml', 'DOC_TAB', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownDigitRun', 'ownValidDay', 'ownFieldProblem', 'ownRecord', 'ownSheetFromDraft',
   'ownDraftsFromSheet', 'ownHoldingDollars', 'ownAccountCost', 'ownSheetCost', 'ownSheetBalance', 'ownBalanceGaps', 'ownWarnings', 'ownDraftWarnings', 'ownActionFromDraft',
   'ownMarkDone', 'ownCalendarFile', 'ownCalendarName', 'ownMoney', 'sheetEditorHtml', 'ownCostsHtml', 'ownCostDocument', 'ownSectionHtml', 'parseTyped'];

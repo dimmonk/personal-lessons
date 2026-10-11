@@ -18,13 +18,13 @@ const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text
 const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }) });
 export const SUBJECT = obj(
   { id: str, name: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
-    lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) })), mix: arr(MIX_ENTRY, { empty: true }),
+    lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
     strands: arr(idTitle(), { empty: true }), readingShare: num },
   { rules: map(obj({ name: str, needs: arr(idText) })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
     refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool });
 function idTitle() { return obj({ id: str, title: str }); }
 
-/* blocks (26.1.2): prose, pair, document, figure, article and chart so far */
+/* blocks (26.1.2): prose, pair, document, figure, article, chart and panel so far */
 // a line that can be tapped or marked; `para` starts a new paragraph, `fine` is small print, `slip` names the slip of tapping it when it is not the line
 const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str });
 export const PROSE = obj({ kind: en('prose') }, { id: str, text, lines: arr(SEGMENT), tone: en('wrong') });
@@ -50,7 +50,12 @@ export const FIGURE_DATA = {
 };
 // a news story, a post, an ad, a report (article-view.js): where it comes from, a headline for the forms that have one, and its lines
 export const ARTICLE_FORMS = ['news', 'post', 'ad', 'report'];
-export const ARTICLE = obj({ kind: en('article'), form: en(...ARTICLE_FORMS), source: str, lines: arr(SEGMENT) }, { id: str, headline: SEGMENT });
+// A post may carry a label (panel.js): the commenter's words that carry it, how the commenter is known, and the side it is thrown from.
+export const LABEL_SIDES = ['left', 'right'];
+export const LABEL = obj({ text: str, by: str, side: en(...LABEL_SIDES) });
+export const ARTICLE = obj({ kind: en('article'), form: en(...ARTICLE_FORMS), source: str, lines: arr(SEGMENT) }, { id: str, headline: SEGMENT, label: LABEL });
+// what a label needs, printed from the subject's `rules` (panel.js): the rules it names
+export const PANEL = obj({ kind: en('panel'), rules: arr(str) });
 // a chart drawn from its data (chart.js): bars or a line, an axis that may start above zero, one or two series
 export const CHART = obj({ kind: en('chart'), type: en('bars', 'line'), title: str, x: arr(str), y: obj({ from: num, to: num, step: num }, { unit: str }),
   series: arr(obj({ values: arr(num) }, { name: str })), source: str }, { labels: bool });

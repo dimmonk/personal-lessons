@@ -134,7 +134,7 @@ function paintRetestResult(part, lesson, log){
   const rows = result.lines.map(l => `<tr><td>${esc(l.text)}</td><td>${esc(l.met ? SAY.ruleMet : SAY.ruleNotMet)}</td></tr>`).join('');
   const each = lesson.check.feedback === 'at-end' ? `<div class="vblock"><span class="m">${esc(SAY.checkEveryAnswer)}</span></div>${checkAnswersHtml(part.data, log)}` : '';
   reviewShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total) : SAY.checkNotYet(result.right, result.total))}</h2>
-    <p>${esc(T.retestResult(lesson.title))}</p><table class="k results">${rows}</table></div>${each}`, nextAction(SAY.goOn));
+    <p>${esc(T.retestResult(lesson.title))}</p><table class="k results">${rows}</table>${splitsHtml(facetSplits(part.data, queueOutcomes(log)))}</div>${each}`, nextAction(SAY.goOn));
   on('#fwd', () => nextBlock({ kind: 'retest', lesson, result }));
   window.scrollTo(0, 0);
   focusScreenHead();
@@ -153,6 +153,8 @@ function endPart(){
 
 /* ---------- the results (E10) ---------- */
 const partFirsts = at => REVIEW.results.filter(r => r.at === at && r.kind === 'questions').flatMap(r => r.log.filter(e => e.first));
+// a subject's compared facets (which side threw the label), met in this review's first tries: shown side by side
+const partSplits = at => splitsHtml(facetSplits(REVIEW.parts[at].data, queueOutcomes(partFirsts(at))), `${REVIEW.parts[at].subj.name}: `);
 const figure = list => list.length ? `${list.filter(e => e.ok).length} of ${list.length} · ${pct(list.filter(e => e.ok).length, list.length)}` : '—';
 function missedStrands(at){
   const data = REVIEW.parts[at].data, titles = new Map(data.meta.strands.map(s => [s.id, s.title]));
@@ -172,6 +174,7 @@ function paintReviewResults(){
       <h2>${T.resultsTitle}</h2>
       <p>${esc(T.resultsNote)} ${esc(SAY.stakes)}</p>
       <table class="k results">${rows.map(([label, value]) => `<tr><td>${esc(label)}</td><td>${esc(value)}</td></tr>`).join('')}</table>
+      ${parts.map((_, at) => partSplits(at)).join('')}
       ${retests.map(r => `<div class="vblock"><span class="m">${esc(T.retestResult(r.lesson.title))}</span><p>${esc(r.result.passed ? SAY.checkPassed(r.result.right, r.result.total) : SAY.checkNotYet(r.result.right, r.result.total))}</p></div>`).join('')}
       <div class="vblock"><span class="m">${T.missed}</span>${missed.length
         ? missed.map(m => `<p><b>${esc(m.subj.name)}</b>: ${esc(m.names.join('; '))}</p>`).join('') : `<p>${T.noMisses}</p>`}</div>

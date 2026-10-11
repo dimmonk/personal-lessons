@@ -2,7 +2,7 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -12,12 +12,11 @@ export const NOT_BUILT = {
   'a baseline lesson': 'step 8 (Scams)', 'a private form into answers, a plan, a setup or lines': 'steps 7 to 9', 'a timed group': 'step 8 (Scams)', 'a busy task': 'step 8 (Scams)',
   'a saved plan': 'step 8 (Scams)', 'a spoken check': 'step 9 (Civics)', 'a check with a time': 'step 8 (Scams)',
   'a subject that times its items': 'step 8 (Scams)', 'the interview date': 'step 9 (Civics)',
-  'a panel': 'steps 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
-  'a label on a post': 'step 6 (Ideology)'
+  'an interview fact': 'step 9 (Civics)'
 };
 
 /* ---------- the pieces ---------- */
-function blockProblems(block, where, kinds, refIds = [], engine = null) {
+function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds = []) {
   if (!block || typeof block !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(block.kind)) return [`${where} has a block of kind "${block.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (block.kind === 'pitch') return [`${where} is a pitch block, which only a sung question the app makes from a { sing } task may carry`];
@@ -36,24 +35,29 @@ function blockProblems(block, where, kinds, refIds = [], engine = null) {
     return data.length || block.type !== 'people' ? data : peopleProblems(block.data, where);
   }
   if (block.kind === 'article') return articleProblems(block, where);
+  if (block.kind === 'panel') {
+    const shape = show(checkShape(block, PANEL, where));
+    return shape.length ? shape : [...duplicatesOf(block.rules).map(id => `${where}: the rule "${id}" is named twice`),
+      ...block.rules.filter(id => !ruleIds.includes(id)).map(id => `${where}: "${id}" is not one of the subject's rules`)];
+  }
   if (block.kind === 'chart') {
     const shape = show(checkShape(block, CHART, where));
     return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
   }
-  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine)];
+  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine, ruleIds), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine, ruleIds)];
 }
 
 // The 1,000 people: every row is a count of the 1,000, a whole number from 0 to 1,000.
 function peopleProblems(data, where) {
   return data.rows.filter(r => r.count < 0 || r.count > 1000).map(r => `${where}: "${r.label}" is ${r.count} in 1,000, which is not between 0 and 1,000`);
 }
-// An article: a headline for the forms that have one (a post has none), no label (it belongs to the post of Ideology, step 6), lines whose
-// ids are all different from the answer "none", at least one line that is not small print.
+// An article: a headline for the forms that have one (a post has none), a label only on a post, lines whose ids are all different from the
+// answer "none", at least one line that is not small print.
 function articleProblems(block, where) {
   const problems = [];
-  if ('label' in block) return [`${where} has a label on a post, which is built in ${NOT_BUILT['a label on a post']}`];
   problems.push(...show(checkShape(block, ARTICLE, where)));
   if (problems.length) return problems;
+  if (block.label && block.form !== 'post') problems.push(`${where}: only a post carries a label, not a ${block.form}`);
   if (block.form === 'post' && block.headline) problems.push(`${where}: a post has no headline`);
   if (block.form !== 'post' && !block.headline) problems.push(`${where}: a ${block.form} needs a headline`);
   if (!block.lines.some(l => !l.fine)) problems.push(`${where}: an article needs at least one line that is not small print`);
@@ -140,7 +144,8 @@ function itemProblems(item, where, ctx, isGen) {
     if (!facet) problems.push(`${where}: facet "${f}" is not one of the subject's facets`);
     else if (!facet.values.some(x => x.id === v)) problems.push(`${where}: "${v}" is not a value of the facet ${f}`);
   });
-  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine)));
+  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds)));
+  problems.push(...labelProblems(item, where, subject, engine));
   const taps = item.asks.filter(a => a.kind === 'tap');
   if (taps.length > 1) problems.push(`${where}: a question has one tap, not ${taps.length}`);
   taps.filter(a => a.in && !item.blocks.some(b => b.id === a.in)).forEach(a => problems.push(`${where}: the tap "${a.id}" names the block "${a.in}", which the question does not have`));
@@ -153,10 +158,22 @@ function itemProblems(item, where, ctx, isGen) {
   const segIds = item.blocks.flatMap(b => engine.segmentsOf(b)).map(s => s.id);
   problems.push(...duplicatesOf(segIds).map(id => `${where}: segment "${id}" appears twice`));
   problems.push(...duplicatesOf([...(item.steps || []).map(s => s.id)]).map(id => `${where}: step "${id}" appears twice`));
-  const unbuilt = [...('has' in item ? ['requirements found or missing'] : []), ...('fact' in item ? ['an interview fact'] : [])];
+  const unbuilt = [...('fact' in item ? ['an interview fact'] : [])];
   unbuilt.forEach(n => problems.push(`${where} uses ${n}, which is built in ${NOT_BUILT[n]}`));
   if ('figure' in item && (!item.figure || item.figure.kind !== 'figure')) problems.push(`${where}: the figure added to the feedback must be a figure block`);
-  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine));
+  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds));
+  return problems;
+}
+
+// A label pinned on words is judged against what the label needs, so its question names the rules in a panel; and the side the label is
+// thrown from is kept once: when the subject sorts its questions by `side`, the question's side is the label's.
+function labelProblems(item, where, subject, engine) {
+  const posts = engine.labelledPostsOf(item), problems = [];
+  if (posts.length && !engine.panelBlocksOf(item).length) problems.push(`${where}: a label is pinned on words and the question has no panel naming what the label needs`);
+  if (posts.length > 1) problems.push(`${where}: a question holds one labelled post, not ${posts.length}`);
+  if (subject.meta.facets.side) {
+    posts.filter(b => item.facets.side !== b.label.side).forEach(b => problems.push(`${where}: the label is thrown from the ${b.label.side}, and the question is sorted as "${item.facets.side}"`));
+  }
   return problems;
 }
 
@@ -168,11 +185,6 @@ function refProblems(ref, where, ctx) {
   const id = ctx.engine.refId(ref);
   if (typeof ref === 'string') return ctx.subject.items[id] ? [] : [`${where}: "${id}" is not an item of the subject`];
   return ctx.subject.gens[id] ? [] : [`${where}: "${id}" is not a generator of the subject`];
-}
-
-function supportProblems(support, where) {
-  if (!support) return [];
-  return support.panel ? [`${where} uses panel, which is built in ${NOT_BUILT['a panel']}`] : [];
 }
 
 // Help that needs something in the questions it is given to: the "disagree" line needs an estimate and an exact answer to compare, and
@@ -187,6 +199,7 @@ function supportFitsProblems(set, where, ctx) {
     problems.push(`${where}: the group turns on the estimate check and none of its questions has an estimate and an exact answer`);
   }
   if (support.leave && defs.some(d => !(d.steps || []).length)) problems.push(`${where}: leaves the last steps to the learner, and a question of the group has no steps`);
+  if (support.panel && defs.some(d => !engine.panelBlocksOf(d).length)) problems.push(`${where}: shows what the label needs beside the words, and a question of the group has no panel`);
   return problems;
 }
 
@@ -207,13 +220,12 @@ function stepProblems(step, where, ctx) {
   const problems = show(checkShape(step, STEPS[kind], where));
   if (problems.length) return problems;
   const { subject, engine } = ctx;
-  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine)));
+  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds)));
   if (kind === 'worked' && !subject.items[step.worked]) problems.push(`${where}: "${step.worked}" is not an item of the subject`);
   if (kind === 'own') problems.push(...ownStepProblems(step, where, ctx));
   if (kind === 'set') {
     const set = step.set;
     engine.flatRefs(set.items).forEach((r, i) => problems.push(...refProblems(r, `${where}.items`, ctx)));
-    problems.push(...supportProblems(set.support, `${where}.support`));
     if (set.seconds !== undefined && !subject.meta.timed) problems.push(`${where} has seconds in a subject that does not time its items`);
     if (set.seconds !== undefined) problems.push(`${where} is timed, which is built in ${NOT_BUILT['a timed group']}`);
     if (set.over) problems.push(`${where} runs a busy task, which is built in ${NOT_BUILT['a busy task']}`);
@@ -237,7 +249,6 @@ function lessonProblems(lesson, ctx) {
   const check = lesson.check;
   if (Array.isArray(check.items)) check.items.forEach(r => problems.push(...refProblems(r, `${where}.check.items`, ctx)));
   else check.items.draw.strands.filter(s => !subject.meta.strands.some(x => x.id === s)).forEach(s => problems.push(`${where}.check: "${s}" is not a strand of the subject`));
-  problems.push(...supportProblems(check.support, `${where}.check.support`));
   if (check.seconds !== undefined) problems.push(`${where}.check has a time, which is built in ${NOT_BUILT['a check with a time']}`);
   if (check.spoken) problems.push(`${where}.check is spoken, which is built in ${NOT_BUILT['a spoken check']}`);
   return problems;
@@ -285,6 +296,7 @@ function subjectProblems(s) {
   problems.push(...duplicatesOf(meta.strands.map(x => x.id)).map(id => `the subject record: strand "${id}" appears twice`));
   Object.entries(meta.lists).forEach(([name, list]) => problems.push(...duplicatesOf(list.map(o => o.id)).map(id => `the subject record: list ${name} holds "${id}" twice`)));
   Object.entries(meta.facets).forEach(([name, f]) => problems.push(...duplicatesOf(f.values.map(v => v.id)).map(id => `the subject record: facet ${name} holds "${id}" twice`)));
+  problems.push(...duplicatesOf(Object.values(meta.rules || {}).flatMap(r => r.needs.map(n => n.id))).map(id => `the subject record: the need "${id}" appears twice among the rules`));
   meta.mix.forEach((m, i) => {
     const facet = meta.facets[m.facet];
     if (!facet) problems.push(`the subject record: mix[${i}] names the facet "${m.facet}", which the subject does not have`);
@@ -300,7 +312,7 @@ function subjectProblems(s) {
 export const V70 = subjectRule('V70', (s, check) => {
   const problems = subjectProblems(s);
   if (problems.length) { checkEach(check, 'subject', problems); return; }
-  const ctx = { subject: s.subject, engine: s.engine, listIds: s.listIds, refIds: (s.meta.refs || []).map(r => r.id) };
+  const ctx = { subject: s.subject, engine: s.engine, listIds: s.listIds, refIds: (s.meta.refs || []).map(r => r.id), ruleIds: Object.keys(s.meta.rules || {}) };
   const items = Object.values(s.items), gens = Object.values(s.gens), lessons = s.lessonList;
   items.forEach(i => checkEach(check, `item ${i.id}`, itemProblems(i, `item ${i.id}`, ctx, false)));
   gens.forEach(g => checkEach(check, `generator ${g.id}`, itemProblems(g, `generator ${g.id}`, ctx, true)));

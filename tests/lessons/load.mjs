@@ -14,7 +14,7 @@ import vm from 'node:vm';
 
 export const REGISTRY_FILE = 'app/registry.js';
 // the pure files of the engine the rules read from: nothing in them touches the page or storage
-export const ENGINE_FILES = ['app/helpers.js', 'app/lessons/view.js', 'app/lessons/gen.js', 'app/lessons/rules.js', 'app/lessons/number.js', 'app/lessons/form.js', 'app/lessons/own.js', 'app/lessons/sing-task.js', 'app/lessons/tap.js', 'app/lessons/chart.js', 'app/lessons/item-view.js',
+export const ENGINE_FILES = ['app/helpers.js', 'app/lessons/view.js', 'app/lessons/gen.js', 'app/lessons/rules.js', 'app/lessons/number.js', 'app/lessons/form.js', 'app/lessons/own.js', 'app/lessons/sing-task.js', 'app/lessons/tap.js', 'app/lessons/chart.js', 'app/lessons/panel.js', 'app/lessons/item-view.js',
   'app/lessons/audio-notes.js'];
 export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseOptions', 'scoreChoose', 'askedAsks', 'shownStepIds', 'ruleCounts', 'ruleMet', 'ruleText',
   'checkResult', 'supportWeight', 'flatRefs', 'checkSize', 'checkIsDrawn', 'flowSets', 'refId', 'refCount', 'whereMatches', 'isRangeParam', 'drawParam', 'genValues',
@@ -22,7 +22,8 @@ export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseO
   'SING_RANGE_MIN_SPAN', 'singTaskProblems', 'singPlan', 'singKey', 'isSingKey', 'noteToMidi', 'singItem', 'rightWord', 'SING_LOUD_LIMIT', 'SING_MELODY_HOLD_MS', 'SAY',
   'parseTyped', 'fmtNumber', 'frameParts', 'slotCount', 'numberAnswers', 'numbersMatch', 'scoreNumber', 'tolOf', 'withinTol', 'isEstimateAsk', 'frameFilled',
   'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'NUMBER_BAND', 'formFieldAsk', 'formFieldText', 'formFieldRight', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownValidDay',
-  'tapPick', 'tapRightIds', 'tapSegments', 'scoreTap', 'tapRightText', 'TAP_NONE', 'chartProblems', 'chartFromZero', 'chartTicks'];
+  'tapPick', 'tapRightIds', 'tapSegments', 'scoreTap', 'tapRightText', 'TAP_NONE', 'chartProblems', 'chartFromZero', 'chartTicks',
+  'LABEL_SIDES', 'panelBlocksOf', 'itemRuleIds', 'ruleNeeds', 'labelledPostsOf', 'hasLines', 'facetSplits'];
 export const isDataFile = src => src === REGISTRY_FILE || src.startsWith('subjects/') || ENGINE_FILES.includes(src);
 
 export const asDirUrl = dir => dir instanceof URL ? new URL(dir.href.replace(/\/?$/, '/')) : new URL(`file://${dir.replace(/\/?$/, '/')}`);

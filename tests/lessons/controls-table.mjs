@@ -21,6 +21,10 @@ const ledgerMeta = (...rest) => ['subjects', 'ledger', 'meta', ...rest];
 // the test subject of articles, the tap, the charts and the 1,000 people
 const feedItem = (id, ...rest) => ['subjects', 'feed', 'items', id, ...rest];
 const feedLesson = (id, ...rest) => ['subjects', 'feed', 'lessons', id, ...rest];
+// the test subject of labels pinned on posts, the panel and the sides
+const labelsItem = (id, ...rest) => ['subjects', 'labels', 'items', id, ...rest];
+const labelsLesson = (id, ...rest) => ['subjects', 'labels', 'lessons', id, ...rest];
+const labelsMeta = (...rest) => ['subjects', 'labels', 'meta', ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -106,7 +110,6 @@ export const CONTROLS = [
   { rule: 'V70', name: 'an article of a form that is not one', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 0, 'show', 0, 'form'), 'tweet') },
   { rule: 'V70', name: 'a post with a headline', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 0, 'show', 1, 'headline'), { id: 'h', text: 'Everyone is switching' }) },
   { rule: 'V70', name: 'an ad with no headline', data: (d, h) => h.removeIn(d, feedLesson('l1', 'flow', 0, 'show', 2, 'headline')) },
-  { rule: 'V70', name: 'a label on a post, which waits for the labels of Ideology', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 0, 'show', 1, 'label'), { text: 'Socialist', by: 'a critic', side: 'right' }) },
   { rule: 'V70', name: 'a chart value off its axis', data: (d, h) => h.setIn(d, feedItem('n-bars', 'blocks', 1, 'series', 0, 'values', 0), 80) },
   { rule: 'V70', name: 'a chart label wider than the space under its bar', data: (d, h) => h.setIn(d, feedItem('n-bars', 'blocks', 1, 'x', 0), 'The members of the clubs') },
   { rule: 'V70', name: 'a row of 1,001 people in 1,000', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 1, 'show', 2, 'data', 'rows', 0, 'count'), 1001) },
@@ -117,7 +120,26 @@ export const CONTROLS = [
   { rule: 'V74', name: 'a tap whose right line is not among the deciding words', data: (d, h) => h.setIn(d, feedItem('n-news', 'deciding'), ['h']) },
   { rule: 'V74', name: 'a tap that wants two lines and names one', data: (d, h) => h.setIn(d, feedItem('n-two', 'asks', 0, 'right'), ['a1']) },
   { rule: 'V74', name: 'a tapped line that names a slip the subject does not have', data: (d, h) => h.setIn(d, feedItem('n-last', 'blocks', 0, 'lines', 1, 'slip'), 'mystery') },
-  { rule: 'V36', name: 'a tapped line\'s note opens with praise', data: (d, h) => h.setIn(d, feedItem('n-news', 'blocks', 0, 'lines', 1, 'note'), 'Correct. That is when the line opened.') }
+  { rule: 'V36', name: 'a tapped line\'s note opens with praise', data: (d, h) => h.setIn(d, feedItem('n-news', 'blocks', 0, 'lines', 1, 'note'), 'Correct. That is when the line opened.') },
+  // labels pinned on posts, the panel, each need found or missing, the sides (step 6)
+  { rule: 'V70', name: 'a label on a news story, which only a post carries', data: (d, h) => h.setIn(d, labelsLesson('l1', 'flow', 0, 'show', 0, 'form'), 'news') },
+  { rule: 'V70', name: 'a label thrown from a side that is neither left nor right', data: (d, h) => h.setIn(d, labelsItem('g-1', 'blocks', 0, 'label', 'side'), 'centre') },
+  { rule: 'V70', name: 'a panel that names a rule the subject does not have', data: (d, h) => h.setIn(d, labelsItem('g-1', 'blocks', 1, 'rules', 0), 'sunny') },
+  { rule: 'V70', name: 'a panel that names one rule twice', data: (d, h) => h.setIn(d, labelsItem('g-1', 'blocks', 1, 'rules'), ['dry', 'dry']) },
+  { rule: 'V70', name: 'a labelled post in a question with no panel', data: (d, h) => h.removeIn(d, labelsItem('c-1', 'blocks', 1)) },
+  { rule: 'V70', name: 'a label thrown from the right on a question sorted as from the left', data: (d, h) => h.setIn(d, labelsItem('c-1', 'facets', 'side'), 'right') },
+  { rule: 'V70', name: 'the help that shows the panel on a group whose questions have none', data: (d, h) => h.setIn(d, lesson('l1', 'flow', 2, 'set', 'support'), { panel: true }) },
+  { rule: 'V70', name: 'two rules that share the id of a need', data: (d, h) => h.setIn(d, labelsMeta('rules', 'wet', 'needs', 0, 'id'), 'dry-sky') },
+  { rule: 'V70', name: 'a facet whose compare is not true or false', data: (d, h) => h.setIn(d, labelsMeta('facets', 'side', 'compare'), 'yes') },
+  { rule: 'V74', name: 'a panel with a need the question never accounts for', data: (d, h) => h.removeIn(d, labelsItem('g-1', 'has', 'dry-ground')) },
+  { rule: 'V74', name: 'a question that accounts for a need its panel does not have', data: (d, h) => h.setIn(d, labelsItem('g-1', 'has', 'wet-rain'), null) },
+  { rule: 'V74', name: 'a need found in a line the text does not have', data: (d, h) => h.setIn(d, labelsItem('g-1', 'has', 'dry-sky'), 'nowhere') },
+  { rule: 'V74', name: 'a need found in a line that is not among the deciding words', data: (d, h) => h.setIn(d, labelsItem('g-1', 'deciding'), ['g-1-b']) },
+  { rule: 'V74', name: 'a question with no panel that says where the needs of a label are found', data: (d, h) => h.setIn(d, feedItem('n-news', 'has'), { x: null }) },
+  { rule: 'V76', name: 'a group with a label from one side and none from the other', data: (d, h) => h.setIn(d, labelsLesson('l1', 'flow', 3, 'set', 'items'), ['h-1']) },
+  { rule: 'V79', name: 'a lesson whose last group still shows the panel', data: (d, h) => h.setIn(d, labelsLesson('l1', 'flow', 3, 'set', 'support'), { panel: true }) },
+  { rule: 'V50', name: 'a need that uses the engine\'s word "item"', data: (d, h) => h.setIn(d, labelsMeta('rules', 'dry', 'needs', 0, 'text'), 'The item has no cloud.') },
+  { rule: 'V4', name: 'a need that shows its own id', data: (d, h) => h.setIn(d, labelsMeta('rules', 'dry', 'needs', 1, 'text'), 'The dry-ground is dry.') }
 ];
 
 // Rules with no seeded fault of their own, and why

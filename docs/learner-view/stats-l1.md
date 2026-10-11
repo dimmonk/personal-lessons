@@ -40,6 +40,7 @@ The working, one step at a time:
 1. Check the headline against the text. The text calls it “a link, not proof”, and says the coffee drinkers also exercised more and smoked less. So the text does not show that the coffee did it. The headline says more than the text.
 
 Then the answer: One thing makes another happen / People who drank three cups of coffee a day had 12% fewer heart attacks than people who drank none, researchers reported Tuesday. / Does not show it. The headline says coffee “cuts” the risk, but the study only compared people who already drank different amounts of coffee. The lead researcher calls it “a link, not proof”, and the coffee drinkers also exercised more and smoked less. In plain terms, the numbers are 25 heart attacks in every 1,000 people who drank no coffee and 22 in every 1,000 who drank three cups: 3 fewer in 1,000.
+What you would need to see: You would need people split by chance into coffee and no coffee, or two groups alike in exercise and smoking, and the difference still showing.
 
 A picture follows:
 Heart attacks in six years, out of 1,000 people: a row of 1,000 dots for each count, the first ones marked and read left to right, top to bottom: Drank no coffee, 25 in 1,000; Drank three cups a day, 22 in 1,000.

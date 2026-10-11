@@ -202,8 +202,9 @@ closer to the end result?" is answered under each.
 Review: the weekly review draws new labelled items from the lessons done, mixed, in the same form (principle 10; R8).
 
 ## Gates 6 and 7
-Not started. Lesson 2 is the pilot; it needs the labelled-item verdict, the per-side record and the requirement panel
-of gate 3 first.
+Gate 6 not passed: the pilot, lesson 2 "Socialist, or not?", is built (2026-10-11, standard 26.10 step 6: the label on a post,
+the verdict with the name that fits instead, the requirements panel, per-side results) and waits for the owner's try on a
+phone; its words go into `tried.pilot` above. Gate 7 not started.
 
 ## Audit of the existing lessons (2026-10-10)
 

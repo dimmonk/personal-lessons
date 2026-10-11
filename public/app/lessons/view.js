@@ -248,7 +248,16 @@ const SAY = {
   tapMany: n => `Tap ${numWord(n)} sentences in the text above, then tap Answer.`,
   youTapped: 'You tapped',
   tapNotThat: 'That is not the sentence.',
-  tapThereIsOne: 'The text does give one. It is marked above.'
+  tapThereIsOne: 'The text does give one. It is marked above.',
+  // a label pinned on words, what it needs, and the sides it is thrown from (26.1.2)
+  pinnedOn: 'The words it is pinned on',
+  panelHeading: 'What the label needs',
+  helpPanel: 'What the label needs is shown beside the words.',
+  hasHeading: name => `What “${name}” needs`,
+  hasFound: 'Found',
+  hasMissing: 'Missing',
+  hasNowhere: 'The words do not say it.',
+  splitHeading: name => `${name}, side by side`
 };
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const WORDS = ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];

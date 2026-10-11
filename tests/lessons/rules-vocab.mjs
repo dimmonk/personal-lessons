@@ -9,7 +9,7 @@ import { britishIn } from '../american.mjs';
 // fields that hold ids, enums, numbers, references or the maintainers' notes, never prose
 const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', 'role', 'status', 'history', 'tried', 'order', 'feedback', 'support', 'mix', 'pass',
   'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
-  'dateField', 'tol', 'standard', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
+  'dateField', 'tol', 'standard', 'rules', 'side', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
   'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels']);
 // block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own
 const QUOTING = ['message', 'article', 'document', 'chart', 'figure', 'spoken', 'exchange'];
@@ -33,6 +33,8 @@ function subjectText(s) {
     ...learnerStrings(record, 'the subject record'),
     // the private forms are read separately: the word `own` is also a lesson step's field, which holds an id and is no prose
     ...learnerStrings(meta.own || {}, 'the subject record'),
+    // what a label needs: the key `rules` is also the list of rules a panel names (ids), so the subject's own rules are read here
+    ...learnerStrings(meta.rules || {}, 'the subject record'),
     // the end result and the parts are the owner's approved wording from the design record (V80, V71): the plain-words rules leave them alone
     ...learnerStrings({ endResult, parts }, 'the subject record', true),
     ...Object.values(subject.lessons).flatMap(l => learnerStrings(l, `lesson ${l.id}`)),
@@ -49,7 +51,7 @@ function everyId(s) {
     ...Object.keys(subject.lessons), ...Object.keys(subject.items), ...Object.keys(subject.gens),
     ...asks.flatMap(i => [...i.asks.flatMap(a => [a.id, ...(a.options || []).map(o => o.id)]), ...(i.steps || []).map(x => x.id), ...i.blocks.flatMap(b => s.engine.segmentsOf(b).map(x => x.id))]),
     ...meta.strands.map(x => x.id), ...Object.keys(meta.facets), ...Object.values(meta.facets).flatMap(f => f.values.map(v => v.id)),
-    ...Object.keys(meta.lists), ...Object.values(meta.lists).flatMap(l => l.map(o => o.id)), ...Object.keys(meta.rules || {}), ...Object.keys(meta.own || {})
+    ...Object.keys(meta.lists), ...Object.values(meta.lists).flatMap(l => l.map(o => o.id)), ...Object.keys(meta.rules || {}), ...Object.values(meta.rules || {}).flatMap(r => r.needs.map(n => n.id)), ...Object.keys(meta.own || {})
   ];
 }
 // an id that is not an ordinary word: it holds a digit, an underscore or a hyphen next to a letter ("c-1", "n80", "l2")

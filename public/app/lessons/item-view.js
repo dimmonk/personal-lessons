@@ -2,7 +2,8 @@
 // Lesson standard 26.1.2 (blocks) and 26.2 (feedback). Pure HTML builders: the blocks an item shows, the asks, and the feedback
 // that opens when the last ask is answered. Nothing here stores anything or reads the page.
 // ctx for a block: { deciding: [segmentId] } marks those segments with the one highlight (mark.cue); { tap } makes the lines of an open tap ask
-// buttons, and after the answer shows which were tapped: tap = { ids: [segmentId], picked: [segmentId], locked, marks, right: [segmentId] }.
+// buttons, and after the answer shows which were tapped: tap = { ids: [segmentId], picked: [segmentId], locked, marks, right: [segmentId] };
+// { panel: false } hides a panel block (a group without the help `panel`, a check, the review); on a teaching screen it is not set and a panel shows.
 
 /* ---------- blocks ---------- */
 // One segment: marked when it decides the answer, a button while a tap ask is open on it, and after that ask is answered the line the learner
@@ -33,7 +34,7 @@ function pairHtml(block, ctx){
     <p class="compare"><span class="m lab">${esc(SAY.compare)}</span>${esc(paras(block.compare).join(' '))}</p></div>`;
 }
 const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block),
-  ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block) };
+  ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
@@ -80,9 +81,11 @@ function itemHtml(data, inst, state){
   const item = inst.item, support = state.support || null;
   const open = openAsks(item, support, state.a);
   const marked = state.marks || (support && support.shown);
-  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null, data, scope: `${inst.key}|${inst.seed === undefined ? '' : inst.seed}`, tap: tapContext(item, open, state) };
+  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null, data, scope: `${inst.key}|${inst.seed === undefined ? '' : inst.seed}`, tap: tapContext(item, open, state),
+    panel: !!(support && support.panel) };
   const steps = shownStepsHtml(item, support);
-  const hint = support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '';
+  const hint = (support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '')
+    + (support && support.panel && panelBlocksOf(item).length ? `<p class="hintline">${esc(SAY.helpPanel)}</p>` : '');
   const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, sing: state.sing,
     typed: state.typed, looked: state.looked, calc: state.calc }, { item, support, answers: state.a })).join('');
   return `<div class="item" data-item="${esc(inst.key)}" ${inst.seed === undefined ? '' : `data-seed="${inst.seed}"`}>
@@ -117,7 +120,7 @@ function feedbackHtml(data, inst, support, answers, score){
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   return `<div class="feedback" data-feedback><div class="marks">${marks}</div>
-    ${block(SAY.whyLabel, paras(item.reason))}${misses}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${picture}${redrawn}${working}</div>`;
+    ${block(SAY.whyLabel, paras(item.reason))}${misses}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}${working}</div>`;
 }
 // the chart of a question whose axis was cut, drawn again from zero: the same numbers on the scale that does not exaggerate them
 function redrawHtml(item){
