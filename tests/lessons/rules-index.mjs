@@ -1,13 +1,9 @@
-// Every rule of section 8, in id order, with V0 first.
+// Every rule of section 26.7, in id order.
 import { RULES_SHAPE } from './rules-shape.mjs';
 import { RULES_VOCAB } from './rules-vocab.mjs';
-import { RULES_TAUGHT } from './rules-taught.mjs';
-import { RULES_ANATOMY } from './rules-anatomy.mjs';
-import { RULES_CASES } from './rules-cases.mjs';
-import { RULES_DRILL } from './rules-drill.mjs';
+import { RULES_LESSON } from './rules-lesson.mjs';
 import { RULES_REVISIONS } from './rules-revisions.mjs';
-import { RULES_AUDIO } from './rules-audio.mjs';
 import { RULES_DESIGN } from './rules-design.mjs';
 
 const number = id => Number(id.slice(1));
-export const RULES = [...RULES_SHAPE, ...RULES_VOCAB, ...RULES_TAUGHT, ...RULES_ANATOMY, ...RULES_CASES, ...RULES_DRILL, ...RULES_REVISIONS, ...RULES_AUDIO, ...RULES_DESIGN].sort((a, b) => number(a.id) - number(b.id));
+export const RULES = [...RULES_SHAPE, ...RULES_VOCAB, ...RULES_LESSON, ...RULES_REVISIONS, ...RULES_DESIGN].sort((a, b) => number(a.id) - number(b.id));

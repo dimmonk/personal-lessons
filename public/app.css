@@ -166,12 +166,6 @@ mark{background:var(--accent);color:var(--bg)}
 .lsteps b{font-weight:600}
 .lesson b,.lesson strong,.lesson i{color:var(--text)}
 .lesson>*:last-child{margin-bottom:0}
-.tell{display:block;font-family:var(--mono);font-size:11.5px;line-height:1.5;color:var(--accent);
-  margin-top:10px;text-transform:none;letter-spacing:.01em}
-.note,.warn{padding:15px 16px;margin:18px 0;font-size:15.5px;line-height:1.55}
-.note{background:var(--raised);color:var(--bodydim)}
-.warn{background:#1F1512;color:#D6C9C0}
-.warn strong{color:var(--coral)}
 table.k{width:100%;border-collapse:collapse;margin:16px 0;font-family:var(--sans);font-size:14.5px;line-height:1.45}
 table.k th,table.k td{border:1px solid var(--rule);padding:9px 10px;text-align:left;vertical-align:top;color:var(--bodydim)}
 table.k th{background:var(--raised);font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;
@@ -182,53 +176,64 @@ table.k td b{color:var(--text)}
 .eyebrow-row h1{margin:0;font-size:29px;font-weight:800;letter-spacing:-.03em;line-height:1.08}
 @media(min-width:1000px){.eyebrow-row h1{font-size:36px}}
 
-.passage{margin:0 0 20px;padding:16px;background:var(--raised);font-family:var(--serif);
-  font-size:17px;line-height:1.58;color:var(--body)}
-
 .hint{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--disabled);text-align:center;margin:0}
 
-/* ---------- determination ---------- */
-.readout{display:flex;flex-direction:column;gap:10px;padding:0 0 24px}
-.readhead{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
-.cands{display:flex;flex-wrap:wrap;gap:5px 10px;margin:0;padding:0;list-style:none}
-.cand{font-family:var(--mono);font-size:10.5px;color:var(--accent);transition:color .25s ease}
-.cand.out{color:#3E382E;text-decoration:line-through}
-
-.steps{display:flex;flex-direction:column;gap:2px}
-.stepdone{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:10px 14px;background:var(--raised)}
-.stepdone .grow{display:flex;flex-direction:column;gap:2px;flex-grow:1;min-width:0}
-.stepdone .v{font-size:15px;font-weight:600}
+/* ---------- a question and its answers ---------- */
 .stepopen{display:flex;flex-direction:column;gap:12px;padding:16px 14px;background:var(--raised);border:1px solid var(--accent)}
-.stephead{display:flex;align-items:center;gap:12px}
-.steplock{display:flex;align-items:center;gap:12px;min-height:56px;padding:10px 14px;border:1px dashed var(--rule)}
-.steplock .grow{display:flex;flex-direction:column;gap:2px;flex-grow:1;min-width:0}
-.steplock .v{font-size:15px;font-weight:500;color:var(--disabled)}
-.tick{display:flex;align-items:center;justify-content:center;flex:0 0 20px;width:20px;height:20px;background:var(--accent);color:var(--bg)}
-.num{display:flex;align-items:center;justify-content:center;flex:0 0 20px;width:20px;height:20px;font-family:var(--mono);font-size:10px}
-.num.on{background:var(--accent);color:var(--bg);font-weight:600}
-.num.off{border:1px solid var(--border);color:var(--disabled)}
+.stepopen.prompt{gap:14px}
+.stem{margin:0;font-family:var(--sans);font-size:16px;line-height:1.45;color:var(--text)}
+.forline{margin:0;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--dim)}
 .opts{display:flex;flex-direction:column;gap:7px}
 .opt{display:flex;flex-direction:column;justify-content:center;width:100%;min-height:48px;padding:10px 14px;
-  border:1px solid var(--border);color:var(--body);font-size:14.5px;line-height:1.3}
+  border:1px solid var(--border);color:var(--body);font-size:14.5px;line-height:1.3;overflow-wrap:anywhere}
 .opt:hover{border-color:var(--text);color:var(--text)}
 .opt.sel{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
 .opt[disabled]{cursor:default}
-.opt[disabled]:not(.sel){opacity:.42}
+.opt[disabled]:not(.sel):not(.right){opacity:.42}
 .opt[disabled]:hover{border-color:var(--border);color:var(--body)}
 .opt.sel[disabled]:hover{color:var(--bg)}
-.opt small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
-  text-transform:uppercase;opacity:.62;margin-top:3px;font-weight:400}
+.opt.right{opacity:1;border-color:var(--green);color:var(--text)}
+.opt.sel.right{background:color-mix(in srgb,var(--green) 22%,transparent);color:var(--text);border-color:var(--green)}
+.opt.sel.wrong{background:color-mix(in srgb,var(--coral) 22%,transparent);color:var(--text);border-color:var(--coral)}
+.opt.right[disabled]:hover,.opt.sel.right[disabled]:hover{border-color:var(--green);color:var(--text)}
+.opt.sel.wrong[disabled]:hover{border-color:var(--coral);color:var(--text)}
 
 .marks{display:flex;gap:8px;flex-wrap:wrap}
 .mark{display:flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid var(--green);
   font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
 .mark.no{border-color:var(--coral);color:var(--coral)}
 .mark .verd{flex:none;white-space:nowrap}
-.mark .ans{font-size:14px;letter-spacing:0;text-transform:none;line-height:1.4}
+.mark .ans{font-size:14px;letter-spacing:0;text-transform:none;line-height:1.4;overflow-wrap:anywhere}
 .vblock{display:flex;flex-direction:column;gap:9px}
 .vblock p{margin:0;font-family:var(--serif);font-size:16.5px;line-height:1.6;color:var(--body);text-wrap:pretty}
 .vblock.soft p{color:var(--bodydim)}
+.item{display:flex;flex-direction:column;gap:16px}
+.asks{display:flex;flex-direction:column;gap:14px}
+.qlabel{margin:22px 0 14px}
+.resitem{margin:0 0 28px;padding-top:22px;border-top:1px solid var(--divider)}
+.feedback{display:flex;flex-direction:column;gap:18px;padding-top:6px}
+.answerline{margin:16px 0;padding:14px 16px;background:var(--raised)}
+.answerline p{margin:0 0 8px}
+.answerline p:last-child{margin-bottom:0}
+.hintline{margin:8px 0 0;font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--label)}
+.linkish{display:inline;color:var(--dim);font-family:var(--sans);font-size:13px;text-decoration:underline;text-underline-offset:3px}
+.linkish:hover{color:var(--text)}
+.unitbar{margin:6px 0 0;line-height:1.7}
+.draftline{color:var(--accent)}
+
+/* ---------- blocks ---------- */
+/* one highlight for the deciding words, in every subject: a low-alpha tint of the accent, text colour, weight 600, no border */
+mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(--text);font-weight:600;padding:0;border:none}
+.blocks{display:flex;flex-direction:column;gap:14px}
+.block-prose{padding:16px;background:var(--raised)}
+.wrongidea{margin:0 0 16px;padding:14px 16px;background:#1F1512}
+.wrongidea p{margin:6px 0 0;color:#D6C9C0}
+.pairgrid{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:560px){.pairgrid{grid-template-columns:1fr 1fr}}
+.pairside .block-prose{height:100%}
+.compare{margin:12px 0 0;font-family:var(--sans);font-size:15px;line-height:1.5;color:var(--text)}
+.m.lab{display:block;margin-bottom:8px}
 
 /* ---------- action bar ---------- */
 /* The bar sits over the foot of the page. A control scrolled into view (by a tap, a Tab or a script) must clear it, not stop under it. */
@@ -237,19 +242,7 @@ html{scroll-padding-bottom:120px}
   margin:24px -20px 0;margin-top:auto;padding:18px 20px calc(20px + env(safe-area-inset-bottom));
   border-top:1px solid var(--divider);background:var(--footer)}
 .actrow{display:flex;gap:10px}
-.actrow .btn.ghost{width:92px;flex:0 0 92px}
 @media(min-width:1000px){.actbar{margin:24px -40px 0;margin-top:auto;padding:18px 40px 24px}}
-
-/* ---------- reference ---------- */
-.fg{border-bottom:1px solid var(--divider)}
-.fg summary{display:flex;align-items:center;gap:12px;min-height:54px;cursor:pointer;
-  font-size:15px;font-weight:500;list-style:none}
-.fg summary::-webkit-details-marker{display:none}
-.fg summary::marker{content:''}
-.fg[open] summary{color:var(--accent)}
-.fg summary .ar{margin-left:auto;color:var(--disabled);transition:transform .2s ease}
-.fg[open] summary .ar{transform:rotate(90deg);color:var(--accent)}
-.fg-body{padding:4px 0 22px}
 
 /* ---------- search results ---------- */
 .resgroup{display:flex;flex-direction:column;gap:4px;padding:0 0 20px}
@@ -263,101 +256,16 @@ html{scroll-padding-bottom:120px}
   font-size:9px;letter-spacing:.06em;color:var(--accent);margin-top:2px}
 .empty{padding:40px 0;text-align:center;color:var(--label);font-size:14px}
 
-/* ---------- lesson aside (wide) ---------- */
-.withaside{display:flex;flex-grow:1;min-width:0}
-.aside{display:none}
-@media(min-width:1280px){
-  .aside{display:flex;flex-direction:column;gap:6px;flex:0 0 280px;width:280px;
-    border-right:1px solid var(--divider);padding:24px 20px 40px;position:sticky;top:0;height:100vh;overflow-y:auto}
-  .aside .ahead{display:flex;flex-direction:column;gap:8px;padding-bottom:16px;border-bottom:1px solid var(--divider);margin-bottom:12px}
-  .aside .ahead h2{margin:0;font-size:22px;font-weight:800;letter-spacing:-.03em;line-height:1.05}
-  .acard{display:flex;gap:10px;width:100%;padding:7px 0;font-size:12.5px;line-height:1.35;color:var(--label)}
-  .acard.on{color:var(--accent)}
-  .acard:hover{color:var(--text)}
-  .acard i{font-family:var(--mono);font-style:normal;font-size:10px;flex:0 0 14px}
-}
+/* ---------- finished screens, results ---------- */
 .done-screen{display:flex;flex-direction:column;align-items:center;gap:18px;padding:60px 0 40px;text-align:center}
 .done-screen h2{margin:0;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1.05}
 .done-screen p{margin:0;color:var(--dim);font-size:15px;line-height:1.5;max-width:36ch}
-
-/* ---------- rebuilt units (lesson standard E16) ---------- */
-/* one highlight for marked words, in every subject: a low-alpha tint of the accent, text colour, weight 600, no border */
-mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(--text);font-weight:600;padding:0;border:none}
-/* the key's own wording: sans face, normal weight */
-.kw{font-family:var(--sans);font-weight:400;font-style:normal;color:var(--text)}
-.lesson b.here{font-family:var(--sans);font-weight:400;padding:1px 6px;background:var(--divider)}
-.lsec{margin:24px 0 16px}
-.lsec>*:last-child{margin-bottom:0}
-.m.lab{display:block;margin-bottom:8px}
-.lesson .m{font-family:var(--mono)}
-.lesson .opt,.lesson .btn,.lesson .chip,.lesson .noteinput{font-family:var(--sans)}
-.lesson .answers{padding-left:20px}
-.lesson ul ul{margin:6px 0 0}
-
-.unitbar{margin:6px 0 0;line-height:1.7}
-.draftline{color:var(--accent)}
-.confusedrow{padding:26px 0 8px}
-.linkish{display:inline;color:var(--dim);font-family:var(--sans);font-size:13px;text-decoration:underline;text-underline-offset:3px}
-.linkish:hover{color:var(--text)}
-.hintline{margin:8px 0 0;font-family:var(--sans);font-size:13px;line-height:1.5;color:var(--label)}
-
-.casename{margin:0 0 8px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
-.passage.tappable{line-height:2.1}
-span.tap{cursor:pointer;color:var(--text);text-decoration:underline dotted;
-  text-decoration-color:var(--label);text-underline-offset:4px;text-decoration-thickness:2px;padding:2px 0}
-span.tap:hover{background:color-mix(in srgb,var(--accent) 14%,transparent)}
-.tap.missed{text-decoration:none;background:color-mix(in srgb,var(--coral) 20%,transparent);color:var(--text)}
-
-.stepopen.prompt{gap:14px}
-.stem{margin:0;font-family:var(--sans);font-size:16px;line-height:1.45;color:var(--text)}
-.amongnote{display:block;margin-top:6px;font-size:13px;color:var(--dim)}
-.forline{margin:0;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--dim)}
-.opts.two{flex-direction:row}
-.opts.two .opt{align-items:center;text-align:center}
-.chips.wrap{flex-wrap:wrap;overflow:visible}
-.stepdone.static{cursor:default}
-.stepdone.wrong .tick{background:var(--coral)}
-.lesson+.readout{margin-top:16px}
-.shownroute ul.choices{margin:12px 0 0;padding-left:20px;font-family:var(--sans);font-size:15px;line-height:1.45;color:var(--bodydim)}
-.shownroute ul.choices li{margin-bottom:8px}
-.noteinput{width:100%;height:48px;padding:0 14px;background:var(--field);border:1px solid var(--border);
-  color:var(--text);font-size:15px}
-.noteinput:focus{border-color:var(--accent);outline:none}
-
-.answerline{margin:16px 0;padding:14px 16px;background:var(--raised)}
-.answerline p{margin:0 0 8px}
-.answerline p:last-child{margin-bottom:0}
-.feedback{display:flex;flex-direction:column;gap:18px;padding-top:22px}
-.taughton{margin:0;font-family:var(--sans);font-size:13.5px;color:var(--dim)}
-.shownroute{margin:0 0 16px;padding:14px 16px;background:var(--raised)}
-.shownroute ul{margin:8px 0 0}
-.stopline{margin:0;font-family:var(--sans);font-size:14.5px;line-height:1.55;color:var(--dim)}
-.wrongidea{margin:0 0 16px;padding:14px 16px;background:#1F1512}
-.wrongidea p{margin:6px 0 0;color:#D6C9C0}
-.verdictline{font-family:var(--sans);font-size:16px;line-height:1.45;color:var(--coral)}
-.mapq{margin:14px 0 6px;font-family:var(--sans);color:var(--text)}
-.drillintro{padding:16px 0 24px}
-
-table.k.pair{table-layout:fixed;font-size:13.5px}
-table.k.pair th,table.k.pair td{overflow-wrap:break-word}
-table.k.pair th{width:auto;white-space:normal;font-family:var(--sans);font-size:13px;letter-spacing:0;text-transform:none;color:var(--text)}
-table.k.pair th:first-child,table.k.pair td:first-child{width:30%}
 table.k.results{max-width:380px;margin:0}
 table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var(--text);white-space:nowrap}
 .done-screen.results{align-items:stretch;text-align:left;padding-top:32px}
 .done-screen.results p{max-width:none}
-.done-screen .stopline{max-width:36ch}
-
-.sheet{position:fixed;inset:0;z-index:20;overflow-y:auto;background:var(--bg);display:flex;flex-direction:column}
-.sheet .pane{flex-grow:1}
-.sheetstep{margin-bottom:32px;padding-bottom:24px;border-bottom:1px solid var(--divider)}
-
-/* ===== unit kinds: the plan card, the baseline check, fact and procedure items (lesson standard A12, E18, E21) ===== */
-.fieldlabel{display:block;margin:0 0 8px}
-.fieldlabel.second{margin-top:14px}
-.baselineafter{width:100%;text-align:left}
-/* a facts card's table: the question is the longest cell, so it gets the widest column (the pair table's 30% label column would break its words) */
-table.k.facts{font-size:13.5px}
-table.k.facts th{font-family:var(--sans);font-size:13px;letter-spacing:0;text-transform:none;color:var(--text)}
-table.k.facts td{overflow-wrap:break-word}
-table.k.facts td:first-child{width:46%}
+.row.notbuilt{cursor:default}
+.row.notbuilt .t{color:var(--dim)}
+.row.notbuilt:hover .t{color:var(--dim)}
+[data-practice-record] table.k.results{max-width:none}
+[data-practice-record] .btn{margin-top:4px}

@@ -1,28 +1,28 @@
-// Structural checks on the page: every subject's course, the offline shell, and the scripts' global names.
+// Structural checks on the page: every subject's list of parts, the offline shell, and the scripts' global names.
+// The shape of the lessons themselves is checked by the lesson validator (tests/validate-lessons.mjs).
 // Run: npm run test:data
 import { readFile } from 'node:fs/promises';
 import { loadApp, scriptList } from './load-app.mjs';
 
-const app = await loadApp();
+const app = await loadApp({ fixture: true });
 const { SUBJECTS } = app;
 const failures = [];
 let checks = 0;
 const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
 
-// A subject's key, routes, specimens and drills are checked by the lesson validator (tests/validate-lessons.mjs);
-// here, only what the page builds from them.
-function checkCourse(s) {
-  check(new Set(s.course.map(u => u.id)).size === s.course.length, `${s.id}: duplicate unit ids in the course`);
-  s.course.forEach((u, n) => {
-    const tag = `${s.id}: course unit #${n + 1}`;
-    check(u.cards && u.cards.length > 0, `${tag}: no lesson cards`);
-    check(Number.isInteger(u.rev) && u.rev >= 1, `${tag}: no revision`);
-  });
+// What the page builds from a subject's record: its parts, its lessons in part order, its sums.
+function checkSubject(s) {
+  check(new Set(s.parts.map(p => p.id)).size === s.parts.length, `${s.id}: duplicate part ids`);
+  check(s.parts.length > 0, `${s.id}: no parts`);
+  check(typeof s.endResult === 'string' && s.endResult.length > 10, `${s.id}: no end result`);
+  s.lessons.forEach(l => check(l.part === null || s.parts.some(p => p.id === l.part), `${s.id}/${l.id}: part "${l.part}" is not one of the subject's parts`));
+  const order = s.lessons.filter(l => l.part !== null).map(l => s.parts.findIndex(p => p.id === l.part));
+  check(order.every((x, i) => i === 0 || x >= order[i - 1]), `${s.id}: lessons are not in part order`);
 }
 
 check(SUBJECTS.length > 0, 'no subjects registered');
 check(new Set(SUBJECTS.map(s => s.id)).size === SUBJECTS.length, 'duplicate subject ids');
-SUBJECTS.forEach(checkCourse);
+SUBJECTS.forEach(checkSubject);
 
 // The service worker must precache everything the page loads, or the app breaks offline.
 async function checkOfflineShell() {
@@ -32,6 +32,7 @@ async function checkOfflineShell() {
   const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
   const styles = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map(m => m[1]);
   for (const path of [...await scriptList(), ...styles]) check(shell.has(path), `sw.js: SHELL is missing ${path}`);
+  check(/const CACHE = 'fieldcraft-v\d+'/.test(sw), 'sw.js: no cache name');
 }
 await checkOfflineShell();
 
@@ -54,4 +55,4 @@ if (failures.length) {
   failures.forEach(f => console.error('  - ' + f));
   process.exit(1);
 }
-console.log(`✓ ${checks} data checks passed across ${SUBJECTS.length} subjects`);
+console.log(`✓ ${checks} data checks passed across ${SUBJECTS.length - 1} subjects (and the test subject)`);

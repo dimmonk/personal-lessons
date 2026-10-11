@@ -1,190 +1,107 @@
-// Section 8, vocabulary: V2 (no key wording typed by hand), V3 (tokens resolve), V4 (no codes or ids shown),
-// V8 (other names only on the meet card), V28 (no forward pointers), V36 (no praise), V50 (words to avoid).
-// Each rule scans the authored prose of one unit (its cards, cases and records) or of one subject (specimens and the subject record). Fields that quote what people say are never scanned for key wording (S5).
-import { unitRule, subjectRule } from './rule.mjs';
+// Section 26.7, the kept vocabulary rules: V4 (no codes or ids shown), V36 (no praise), V50 (the app's own words and the engine's),
+// V60 (American English), V62 (no abstract or textbook words). They read every string a learner can read, and nothing else:
+// ids, enums, numbers and the maintainers' notes (history, the owner's words from the phone try) are left out.
+import { subjectRule } from './rule.mjs';
+import { norm, containsPhrase } from './text.mjs';
 import { APP_JARGON, abstractIn } from '../plain-words.mjs';
 import { britishIn } from '../american.mjs';
-import { tokensOf, stripTokens, hasUnknownToken, prose, norm, wordSet, containsPhrase, cuesOf, strings, STRUCTURAL, STRUCTURAL_IN } from './text.mjs';
 
-const cache = new WeakMap();
-// [{ where, text, owner }] for every prose string of a view; computed once per view.
-function proseOf(ctx) {
-  if (!cache.has(ctx)) {
-    cache.set(ctx, ctx.scanTargets().flatMap(t => prose(t.obj).map(([path, text]) => ({ where: `${t.label}${path}`, text, owner: t.owner }))));
+// fields that hold ids, enums, numbers, references or the maintainers' notes, never prose
+const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', 'role', 'status', 'history', 'tried', 'order', 'feedback', 'support', 'mix', 'pass',
+  'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
+  'dateField', 'tol', 'standard', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
+  'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is']);
+// block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own
+const QUOTING = ['message', 'article', 'document', 'chart', 'figure', 'spoken', 'exchange'];
+
+// [{ where, text, quoted }] for every string of a value a learner reads
+function learnerStrings(value, where, quoted = false, out = []) {
+  if (typeof value === 'string') out.push({ where, text: value, quoted });
+  else if (Array.isArray(value)) value.forEach((x, i) => learnerStrings(x, `${where}[${i}]`, quoted, out));
+  else if (value && typeof value === 'object') {
+    const isQuote = quoted || QUOTING.includes(value.kind);
+    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k)).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote, out));
   }
-  return cache.get(ctx);
-}
-// Both scopes share one function per rule.
-const unitAndSubject = (id, run) => [unitRule(id, run), subjectRule(id, run)];
-
-/* ---------- V2 ---------- */
-const NEAR_COPY_RATIO = 0.75;          // three quarters of the distinct words of four letters or more
-const NEAR_COPY_MIN_WORDS = 6;         // only a key line with at least six such words can be near-copied
-
-const prepared = ctx => ctx.keyLines.map(line => ({ line, n: norm(line), words: wordSet(line) }));
-const sentencesOf = text => stripTokens(text).split(/(?<=[.?!:])\s+/);
-const overlap = (line, words) => [...line.words].filter(w => words.has(w)).length / line.words.size;
-
-function V2(ctx, check) {
-  const lines = prepared(ctx);
-  const nearable = lines.filter(l => l.words.size >= NEAR_COPY_MIN_WORDS);
-  for (const { where, text } of proseOf(ctx)) {
-    const bare = norm(stripTokens(text));
-    // whole words: the term "rate" is not typed inside "separate"
-    const typed = lines.filter(l => containsPhrase(bare, l.n)).map(l => `key wording typed by hand: "${l.line.slice(0, 50)}"`);
-    const near = sentencesOf(text).flatMap(sentence => {
-      const got = wordSet(sentence);
-      return nearable.filter(l => overlap(l, got) >= NEAR_COPY_RATIO).map(l => `near-copy of a key line: "${sentence.slice(0, 60)}" ~ "${l.line.slice(0, 40)}"`);
-    });
-    const problems = [...typed, ...near];
-    if (problems.length === 0) check(true, '');
-    problems.forEach(p => check(false, `${where}: ${p}`));
-  }
+  return out;
 }
 
-/* ---------- V3 ---------- */
-const lookupToken = (ctx, { kind, ref }) => {
-  try {
-    if (['o', 'plain', 'needs'].includes(kind)) return Boolean(ctx.things[ref]);
-    else if (kind === 'f') return Boolean(ctx.rows && ctx.rows[ref]);
-    else if (kind === 'q') ctx.step(ref);
-    else if (['a', 'when'].includes(kind)) ctx.option(...ref.split('.'));
-    else if (['t', 'means'].includes(kind)) ctx.term(ref);
-    else if (kind === 'test') return ledgerIds(ctx).includes(ref);
-    return true;
-  } catch (error) {
-    if (/^unknown /.test(error.message)) return false;
-    throw error;
-  }
-};
-const ledgerIds = ctx => Object.values(ctx.subject.units).flatMap(u => (u.ledger || []).map(l => l.id));
-
-function V3(ctx, check) {
-  for (const { where, text, owner } of proseOf(ctx)) {
-    for (const token of tokensOf(text)) {
-      check(lookupToken(ctx, token), `${where}: {${token.kind}:${token.ref}} does not resolve`);
-      if (token.kind === 'cue') check(Boolean(owner) && cuesOf(owner, token.ref).length > 0, `${where}: {cue:${token.ref}} but no case here has marked words for it`);
-    }
-    check(!hasUnknownToken(text), `${where}: an unknown token`);
-  }
+// everything a subject shows, by where it sits
+function subjectText(s) {
+  const { meta, subject } = s;
+  const { history, rev, standard, id, mix, readingShare, review, complete, timed, endResult, parts, ...record } = meta;
+  return [
+    ...learnerStrings(record, 'the subject record'),
+    // the end result and the parts are the owner's approved wording from the design record (V80, V71): the plain-words rules leave them alone
+    ...learnerStrings({ endResult, parts }, 'the subject record', true),
+    ...Object.values(subject.lessons).flatMap(l => learnerStrings(l, `lesson ${l.id}`)),
+    ...Object.values(subject.items).flatMap(i => learnerStrings(i, `item ${i.id}`)),
+    ...Object.values(subject.gens).flatMap(g => learnerStrings(g, `generator ${g.id}`))
+  ];
 }
 
-/* ---------- V4 ---------- */
-const ORDINARY_ID = /^[A-Za-z]+$/;
-function nonWordIds(ctx) {
-  const ids = [
-    ...ctx.steps.map(s => s.code), ...ctx.steps.flatMap(s => s.options.map(o => o.id)),
-    ...ctx.key.outcomes.map(o => o.id), ...(ctx.key.terms || []).map(t => t.id),
-    ...Object.values(ctx.subject.units).flatMap(u => [u.id, ...(u.ledger || []).map(l => l.id), ...(u.parts || []).map(p => p.id)]),
-    ...Object.values(ctx.subject.cards).flat().map(c => c.id), ...Object.values(ctx.subject.cases).flat().map(c => c.id),
-    ...ctx.specimens.map(s => s.id)];
-  return [...new Set(ids)].filter(id => !ORDINARY_ID.test(id) || /^[A-Z][A-Za-z]?\d/.test(id));
+/* ---------- V4: no codes or ids in learner text ---------- */
+function everyId(s) {
+  const { meta, subject } = s;
+  const asks = [...Object.values(subject.items), ...Object.values(subject.gens)];
+  return [
+    ...Object.keys(subject.lessons), ...Object.keys(subject.items), ...Object.keys(subject.gens),
+    ...asks.flatMap(i => [...i.asks.flatMap(a => [a.id, ...(a.options || []).map(o => o.id)]), ...(i.steps || []).map(x => x.id), ...i.blocks.flatMap(b => s.engine.segmentsOf(b).map(x => x.id))]),
+    ...meta.strands.map(x => x.id), ...Object.keys(meta.facets), ...Object.values(meta.facets).flatMap(f => f.values.map(v => v.id)),
+    ...Object.keys(meta.lists), ...Object.values(meta.lists).flatMap(l => l.map(o => o.id)), ...Object.keys(meta.rules || {}), ...Object.keys(meta.own || {})
+  ];
 }
-const shownId = (text, id) => text.includes(id) && new RegExp(`(^|[^A-Za-z0-9~_-])${id.replace(/[.*+?^${}()|[\]\\~-]/g, '\\$&')}(?![A-Za-z0-9~_-])`).test(text);
+// an id that is not an ordinary word: it holds a digit, an underscore or a hyphen next to a letter ("c-1", "n80", "l2")
+const NON_WORD_ID = /^(?=.*[A-Za-z])(?=.*[\d_~-])[\w~-]+$/;
 const CODE_LIKE = /\b[A-Z]\d\b/;
-
-function V4(ctx, check) {
-  const ids = nonWordIds(ctx);
-  for (const { where, text } of proseOf(ctx)) {
-    const bare = stripTokens(text);
-    const shown = ids.filter(id => shownId(bare, id));
-    check(shown.length === 0 && !CODE_LIKE.test(bare), `${where}: a step code or id is shown${shown.length ? `: ${shown.join(', ')}` : ''}`);
-  }
-}
-
-/* ---------- V8 ---------- */
-// K5: outside the meet card an other name may appear only quoted, as words someone says, where the feedback maps it back.
-const QUOTED = /“[^”]*”|"[^"]*"/g;
-function V8(ctx, check) {
-  const akas = ctx.key.outcomes.flatMap(o => o.aka);
-  for (const { where, text } of proseOf(ctx)) {
-    const bare = norm(stripTokens(text).replace(QUOTED, ' '));
-    akas.forEach(aka => check(!containsPhrase(bare, aka), `${where}: another name ("${aka}") is used; only the meet card prints it`));
-  }
-}
-
-/* ---------- V28 ---------- */
-const NUMBER_WORDS = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty'];
-const FORWARD = [/later card/i, /next unit/i, /you will meet this in/i, /Lesson \d/i];
-
-function laterUnitPattern(ctx) {
-  const index = ctx.unitId === undefined ? -1 : ctx.meta.units.indexOf(ctx.unitId);
-  const later = ctx.meta.units.map((_, i) => i).filter(i => i > index);
-  const names = later.flatMap(i => [NUMBER_WORDS[i] || `${i + 1}`, `${i + 1}`]);
-  return names.length ? new RegExp(`\\bin Unit (${names.join('|')})\\b`, 'i') : null;
-}
-
-function V28(ctx, check) {
-  const later = ctx.unitId === undefined ? null : laterUnitPattern(ctx);
-  for (const { where, text } of proseOf(ctx)) {
-    const hit = FORWARD.some(re => re.test(text)) || (later && later.test(text));
-    check(!hit, `${where}: a forward pointer: "${text.slice(0, 60)}"`);
-  }
-}
-
-/* ---------- V36 ---------- */
-const PRAISE = /^\W*(great|well done|good job|nice work|excellent|not quite|oops|correct|incorrect|right|wrong)\W*($|[!.]\s)/i;
-
-function feedbackFields(obj) {
-  const fields = [obj.reason, obj.not && obj.not.why, obj.miss, obj.wouldChange, obj.fault, obj.corrected, obj.why,
-    (obj.segments || []).map(s => s.note || ''), (obj.options || []).map(() => '')];
-  const hold = obj.hold && [obj.hold.reason, (obj.hold.prompt.choices || []).map(c => c.note || '')];
-  const worked = (obj.steps || []).map(s => s.reason);
-  return [...fields, hold, worked].filter(x => x !== undefined && x !== null);
-}
-
-function V36(ctx, check) {
-  for (const t of ctx.scanTargets()) {
-    for (const [path, text] of strings(feedbackFields(t.obj))) {
-      if (text.trim() !== '') check(!PRAISE.test(text.trim()), `${t.label}${path}: praise or a bare verdict: "${text.slice(0, 40)}"`);
-    }
-  }
-}
-
-/* ---------- V50 ---------- */
-// "screen" alone is ordinary in some subjects (share your screen); only the app's own screens are meant
-const APP_WORDS_TO_AVOID = ['lesson', 'rung', 'this screen', 'next screen', 'last screen', 'provisional', 'deciding feature', ...APP_JARGON];
-
-function V50(ctx, check) {
-  const words = [...(ctx.key.avoid || []).map(a => a.word), ...APP_WORDS_TO_AVOID];
-  const extra = [ctx.keyTarget, ctx.limitsTarget].filter(Boolean).map(f => f());
-  const keyLines = extra.flatMap(t => prose(t.obj).map(([path, text]) => ({ where: `${t.label}${path}`, text })));
-  for (const { where, text } of [...proseOf(ctx), ...keyLines]) {
-    const bare = norm(stripTokens(text));
-    words.forEach(w => check(!containsPhrase(bare, w), `${where}: a word to avoid, "${w}", in "${text.slice(0, 50)}"`));
-  }
-}
-
-/* ---------- V62: no abstract or textbook words ---------- */
-// The same text V50 reads: every card, case reason, key line and subject note a learner sees (tests/plain-words.mjs ABSTRACT).
-// A case's own story is quoted and may say anything; it is not read.
-function V62(ctx, check) {
-  const extra = [ctx.keyTarget, ctx.limitsTarget].filter(Boolean).map(f => f());
-  const keyLines = extra.flatMap(t => prose(t.obj).map(([path, text]) => ({ where: `${t.label}${path}`, text })));
-  for (const { where, text } of [...proseOf(ctx), ...keyLines]) {
-    abstractIn(stripTokens(text)).forEach(e => check(false, `${where}: "${e.word}" (say instead: ${e.say}) in "${text.slice(0, 60)}"`));
-  }
-}
-
-/* ---------- V60: American English ---------- */
-// The reader is moving to the United States: every string a learner can read, case stories included, is American English
-// with dollars (tests/american.mjs). Ids and codes are skipped, and so are the maintainers' notes (a unit's build record,
-// the key's avoid list), which no learner sees.
-const MAINTAINERS_ONLY = /^\.(units\.[^.]+\.build|key\.avoid)(\.|$)/;
-// a unit's lists of ids and codes (its drill items, parts, what it teaches and assumes, its ledger pairs)
-const UNIT_IDS = /^\.units\.[^.]+\.(drill\.(rungs\.\d+\.(items|demo|ask)|returns|key)|parts\.\d+\.(cards|close|id|drill)|teaches|assumes|ledger\.\d+\.(pair|id|step|taughtIn)|title\.fromKey|kind|status|tag|id)(\.|$)/;
-export const V60 = subjectRule('V60', (s, check) => {
-  for (const [path, text] of strings(s.subject)) {
-    if (MAINTAINERS_ONLY.test(path) || UNIT_IDS.test(path)) continue;
-    // a card's, a case's or a specimen's own fields, read the way the rest of the validator reads them
-    const field = path.replace(/^\.(cases|cards)\.[^.]+\.\d+|^\.specimens\.\d+/, '');
-    if (field !== path && (STRUCTURAL.test(field) || STRUCTURAL_IN.test(field))) continue;
-    const found = britishIn(text);
-    check(found.length === 0, `${path}: British form${found.length > 1 ? 's' : ''} ${found.map(f => `"${f}"`).join(', ')} in "${text.slice(0, 60)}"`);
+const shownId = (text, id) => text.includes(id) && new RegExp(`(^|[^A-Za-z0-9~_-])${id.replace(/[.*+?^${}()|[\]\\~-]/g, '\\$&')}(?![A-Za-z0-9~_-])`).test(text);
+export const V4 = subjectRule('V4', (s, check) => {
+  const ids = [...new Set(everyId(s))].filter(id => NON_WORD_ID.test(id));
+  for (const { where, text } of subjectText(s)) {
+    const shown = ids.filter(id => shownId(text, id));
+    check(shown.length === 0 && !CODE_LIKE.test(text), `${where}: a code or id is shown${shown.length ? `: ${shown.join(', ')}` : ''}`);
   }
 });
 
-export const RULES_VOCAB = [V60, 
-  ...unitAndSubject('V2', V2), ...unitAndSubject('V3', V3), ...unitAndSubject('V4', V4), ...unitAndSubject('V8', V8),
-  ...unitAndSubject('V28', V28), ...unitAndSubject('V36', V36), ...unitAndSubject('V50', V50), ...unitAndSubject('V62', V62)
+/* ---------- V36: no praise, no bare verdict ---------- */
+const PRAISE = /^\W*(great|well done|good job|nice work|excellent|not quite|oops|correct|incorrect|right|wrong)\W*($|[!.]\s)/i;
+const feedbackOf = (item, where) => [
+  ...learnerStrings(item.reason, `${where}.reason`), ...learnerStrings(item.need, `${where}.need`),
+  ...(item.steps || []).flatMap((x, i) => learnerStrings(x.working, `${where}.steps[${i}].working`)),
+  ...item.asks.flatMap((a, i) => [...learnerStrings(a.then, `${where}.asks[${i}].then`), ...(a.options || []).flatMap((o, j) => learnerStrings(o.then, `${where}.asks[${i}].options[${j}].then`))]),
+  ...item.blocks.flatMap((b, i) => (b.lines || []).flatMap((seg, j) => learnerStrings(seg.note, `${where}.blocks[${i}].lines[${j}].note`)))
 ];
+export const V36 = subjectRule('V36', (s, check) => {
+  const all = [...Object.values(s.items).map(i => [i, `item ${i.id}`]), ...Object.values(s.gens).map(g => [g, `generator ${g.id}`])];
+  for (const [item, where] of all) {
+    for (const { where: w, text } of feedbackOf(item, where)) check(!PRAISE.test(text.trim()), `${w}: praise or a bare verdict: "${text.slice(0, 40)}"`);
+  }
+});
+
+/* ---------- V50 and V62: plain words ---------- */
+// "screen" alone is ordinary in some subjects (share your screen); only the app's own screens are meant
+const APP_WORDS_TO_AVOID = ['lesson', 'rung', 'this screen', 'next screen', 'last screen', 'provisional', 'deciding feature', ...APP_JARGON];
+// the app's own words in text it writes; a quoted block may say anything
+const authored = s => subjectText(s).filter(t => !t.quoted);
+export const V50 = subjectRule('V50', (s, check) => {
+  for (const { where, text } of authored(s)) {
+    const bare = norm(text.replace(/\{[A-Za-z0-9]+\}/g, ' '));
+    APP_WORDS_TO_AVOID.forEach(w => check(!containsPhrase(bare, w), `${where}: a word to avoid, "${w}", in "${text.slice(0, 50)}"`));
+  }
+});
+export const V62 = subjectRule('V62', (s, check) => {
+  for (const { where, text } of authored(s)) {
+    abstractIn(text).forEach(e => check(false, `${where}: "${e.word}" (say instead: ${e.say}) in "${text.slice(0, 60)}"`));
+    check(true, '');
+  }
+});
+
+/* ---------- V60: American English ---------- */
+export const V60 = subjectRule('V60', (s, check) => {
+  for (const { where, text } of subjectText(s)) {
+    const found = britishIn(text);
+    check(found.length === 0, `${where}: British form${found.length > 1 ? 's' : ''} ${found.map(f => `"${f}"`).join(', ')} in "${text.slice(0, 60)}"`);
+  }
+});
+
+export const RULES_VOCAB = [V4, V36, V50, V60, V62];
+export { learnerStrings, subjectText };

@@ -1,11 +1,10 @@
-// Validates the lesson data against the lesson standard (docs/lesson-standard.md, section 8) and the revision lock (section 13).
+// Validates the lesson data against the lesson standard (docs/lesson-standard.md, section 26.7) and the revision lock (section 13).
 // Run: node tests/validate-lessons.mjs
-//      node tests/validate-lessons.mjs --public docs/lesson-standard/exemplar/public --lock docs/lesson-standard/exemplar/tests/lessons.lock.json
 import { loadFromPublic } from './lessons/load.mjs';
 import { runRules } from './lessons/run.mjs';
 import { parseTargetArgs } from './lessons/paths.mjs';
 import { readJsonIfPresent, readCommittedJson } from './lessons/lockfile.mjs';
-import { collectSite, collectValidatorSources } from './lessons/site.mjs';
+import { collectSite } from './lessons/site.mjs';
 import { collectDesigns } from './lessons/designs.mjs';
 
 export async function gatherInput({ publicDir, lockFile, heldFile, designsDir }) {
@@ -17,7 +16,6 @@ export async function gatherInput({ publicDir, lockFile, heldFile, designsDir })
     held: heldFile ? await readJsonIfPresent(heldFile) : null,
     committedHeld: heldFile ? readCommittedJson(heldFile) : null,
     site: await collectSite(publicDir),
-    validatorSources: await collectValidatorSources(),
     designs: designsDir ? await collectDesigns(designsDir) : {}
   };
 }
@@ -33,7 +31,7 @@ async function main() {
     result.skipped.forEach(s => console.error(`  (${s})`));
     process.exit(1);
   }
-  console.log(`✓ ${result.checks} lesson checks passed across ${result.units} units`);
+  console.log(`✓ ${result.checks} lesson checks passed across ${result.subjects} subjects and ${result.lessons} lessons`);
   if (result.held && result.held.length > 0) console.log(`  ${result.held.length} findings are held, not fixed (tests/lessons/held-findings.json, V58):\n${result.held.map(f => `    - ${f.message}`).join('\n')}`);
 }
 

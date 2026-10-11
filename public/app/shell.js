@@ -16,12 +16,8 @@ function render(){
   if(!subj){ APP.view = 'library'; return renderLibrary(); }
   switch(APP.view){
     case 'subject':   return renderSubject(subj);
-    case 'unit':      return renderUnit(subj);
-    case 'det':       return renderDet(subj);
-    case 'again':     return renderAgain(subj);
-    case 'claims':    return renderClaims(subj);
-    case 'reviewfirst': return renderReviewFirst(subj);
-    case 'reference': return renderReference(subj);
+    case 'lesson':    return renderLesson(subj);
+    case 'results':   return renderResults(subj);
     default:          return renderLibrary();
   }
 }
@@ -49,7 +45,7 @@ function renderRail(){
     </div>
     <div class="rsect"><span class="m s">Subjects</span><span class="m s">${SUBJECTS.length}</span></div>
     <div class="rlist">${SUBJECTS.map(s => {
-      const done = unitsDone(s), total = s.course.length, isOn = s.id === APP.subjectId;
+      const done = partsDone(s), total = s.parts.length, isOn = s.id === APP.subjectId;
       const tail = statusOf(s) === 'done'
         ? `<span style="color:${s.accent};display:flex">${icon('check',12)}</span>`
         : `<span class="ct">${done ? done + '/' + total : '&mdash;'}</span>`;

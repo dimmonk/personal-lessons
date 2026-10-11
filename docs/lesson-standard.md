@@ -1692,3 +1692,89 @@ other lesson of that subject; every later lesson gets the same try before it is 
 8. The pre-approval of every pilot (2026-10-10) against gate 6's try: the try is still required before the rest is built
    (V69).
 9. Old learner data: kept untouched and unread rather than deleted, because it is the learner's and costs nothing.
+
+### 26.10 As built: step 1, the core and the deletion (2026-10-10)
+
+Nothing in 26.1 to 26.9 changed. This is what the build settled where the text was open, and the closest sound version where a rule
+could not be built as written. The code is `public/app/registry.js`, `public/app/lessons/` (`view`, `gen`, `rules`, `records`,
+`schedule`, `sets`, `item-view`, `queue`, `player`, `review`), `state`, `library`, `subject` (with the results), `progress` and
+`search`; the validator is `tests/lessons/` (`rules-shape`, `rules-vocab`, `rules-lesson`, `rules-revisions`, `rules-design`, with
+the seeded faults in `controls-table.mjs`); the browser checks are `tests/e2e-checks.mjs` and their faults `tests/e2e-controls.mjs`;
+the pure engine is checked by `tests/engine-pure.mjs`; the test subject is `tests/fixtures/fixture-subject/` ("Umbrella days": two
+lessons, never shipped); the learner view is `tools/learner-view/`.
+
+**The subject record.**
+1. It gains `parts: [{ id, title }]`, the design record's parts word for word, because the offline app cannot read `docs/` and the
+   subject screen lists each part that has no lesson as "Not built yet". V71 holds it equal to the design record's.
+2. It gains `complete: true`, set in the commit that adds the last part's lesson. V71 says every part has exactly one lesson only
+   for a subject that says it is complete; before that a part with no lesson is "not built yet", so a subject can be built one lesson at
+   a time (pilot first). Two lessons for one part, a lesson for a part the record does not have, and lesson numbers out of part order
+   (`l2` before `l1`) are refused always. The design record's pilot must be a lesson once the subject has one.
+3. `endResult` and the parts' titles are the owner's approved wording (V80, V71), so V50 and V62 leave them alone; the browser
+   checks leave them out of the plain-words test (`data-owner-words`). The eight subject records are rewritten as 26.6 says, one
+   revision higher with a history line, and `readingShare` from each design's gate 3 (Civics .2, Ideology .25, Math .25, Psychology .2,
+   Scams .15, Singing .1, Stats .33, Wealth .15).
+
+**Items, asks and generators.**
+1. A `prose` block holds `text` or `lines: [Segment]` (exactly one), so deciding words can be marked; with `tone: 'wrong'` all
+   paragraphs but the last are the wrong idea and the last is the right line.
+2. A `choose` ask drawing on a list says what happens after a wrong pick with `then: { optionId: Text }` and `slips: { optionId: slipId }`;
+   an ask with its own options says it on the option. A `many` ask is right only when exactly the right options are tapped (a subset
+   is a miss). An `ok` option may carry `then`: it is the consequence of the right action, shown in the feedback.
+3. A generator's `pick(name)` returns the value of that parameter for the seed; every parameter is drawn first, in the order listed
+   (`with` fixes some), and `make` returns the derived values. A parameter is a range when it is three numbers `[min, max, step]` with
+   the step above zero and min at most max; any other list is a list of choices. A made `choose` ask puts the answer in a slot (`right:
+   '{verdict}'`), or names values: the ask's `answer` and an option's `value`. V75 refuses a slip whose value is the answer's, an option
+   with a slip that is also right, a right option that does not show the answer, and a right answer that is not in the list.
+4. `ask.when` must name an ask before it in the same item. A step's `ask` must be an ask of the item. Segment, ask, step and option
+   ids are unique within an item.
+5. A set's `seconds`, `over` and `plan`, a check's `seconds` and `spoken`, an `own` step, a baseline lesson, the supports `panel`,
+   `line` and `estimateCheck`, the item fields `has`, `fact`, `redraw` and `figure`, a timed subject and `review.dateField` are in the
+   shape and refused by V70 with the step that builds them (`NOT_BUILT` in `rules-shape.mjs`). So is every ask kind but `choose` and
+   every block kind but `prose` and `pair`. `ASK_KINDS` and `BLOCK_KINDS` in `rules.js` are the one list.
+
+**Order and difficulty.**
+1. A missed question comes back after three other questions (position + 4); when fewer than three remain it goes to the end of
+   the group. A made question comes back with a new seed. Checks, the review's retests and baselines never repeat.
+2. A set's `mix: { from, share }` adds questions from the named earlier lessons' groups so that they are `share` of the group, at
+   least one, the never-seen first and then the least recently seen, spread among the new ones with nothing to mark them.
+3. A subject's `mix` entry `{ facet, value, min?, max? }`: a number below 1 is a share of the group's questions, 1 or more a count.
+   `{ facet, equal: true }` needs every value of the facet in equal number among the questions that carry the facet. V76 reads the
+   questions a group names (a made one n times); a drawn check is not read.
+4. Support is `shown` (the deciding words marked before the answer) or `leave: n` (a question with `steps` shows all but its last n
+   steps, with the asks tied to them given, and asks the rest). A group with support needs a later group of the same topic with a
+   lower weight (`shown` counts 1, `leave` its n); a check never has support (V79 owns both; V72 does not repeat it).
+
+**Passing.** A pass rule counts the questions its `where` selects (and, with `ask`, those that answered that ask). `right: { min }`
+needs that many right, `wrong: { max }` at most that many wrong, `slip` with `max` (0 if left out) at most that many with the slip.
+It is read in words by `ruleText`: "At least 8 right", "None wrong among control patterns", "None treated a chance as a promise".
+A lesson is done when its check has one complete run, passed or not; the subject screen says which.
+
+**The record.** `run` is the time the sitting began in base 36 with a counter; a try's `lesson` and `rev` are the lesson that owns it
+(a review try, the lesson whose check holds its topic). A first try is the first try of a question in a sitting (one per seed for a
+made question); redo tries are not first tries. Checks, the review and results all read first tries.
+
+**The review.** A topic's good day is a day on which every first try of its questions was right; a day with any miss resets it (this
+is stricter than "the strand's first item", because tries carry no order). Days before or on the check's day do not count. After the
+third good day it leaves, or with `review.every` comes back that many days after the last good day. A topic is asked on a made
+question if it has a generator, else on a question held in reserve (one no lesson names) that was never tried; with none left, the
+least recently seen tried question returns and the repeat is logged. A topic with a single question returns as itself (V77 does not
+count a bank for it). The pairing with "the name most often taken for it" (E9) is gone with the names. A retest is whole, on new
+questions of the same topics and facet values, as its own block with an intro; the tile counts its questions with the week's.
+
+**Validator.** V73 reads 200 words a minute against `DOING_SECONDS` (choose and tap 15, number 60, text 30, order 25, sing 20,
+exchange 45, form 60; a drawn check 20 a question). V77 needs, for each topic a check covers, three unseen questions for its returns
+and one more for each of its questions in a retest, unless the topic has a generator or one question. V46 fingerprints a lesson
+with the items and generators it names (a generator's text, parameters and the source of its `make`) and the questions held in
+reserve for the topics its check covers. V69 needs the owner's words in `tried.pilot` for any lesson but the pilot and a baseline; the
+pilot itself needs only the two approvals. V50 and V62 do not read a quoting block (message, article, document and the like). The
+seeded faults run on the test subject, loaded as a real subject would be.
+
+**Browser checks.** Each of X1, X2, X3, X5 and X21 to X23 is a function in `e2e-checks.mjs` that returns its failures; a seeded fault
+is a change to one of the app's files on its way to the browser (`transform` in `static-server.mjs`), the whole set of checks is run on
+that app, and exactly the check named must go red. A fault whose text is not in the file fails the run. Review tests fix the weekday
+(`setDay`), because a review is for a Monday-to-Sunday week.
+
+**Not built in step 1** (26.8 gives the step): every ask kind but `choose`, every block kind but `prose` and `pair`, `V78`, `X13` to
+`X20`, `X24`, the private forms (the shape and V81 are built; no step writes them), timed groups, the baseline, a drawn check is built and tested
+on the pure side only, no subject uses one yet, and the learner's own data on the subject screen.

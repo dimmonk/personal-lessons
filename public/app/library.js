@@ -7,7 +7,7 @@ function sortedSubjects(){
   return list;
 }
 function continueTarget(){
-  const open = SUBJECTS.filter(s => statusOf(s) !== 'done' && RECENT[s.id]);
+  const open = SUBJECTS.filter(s => statusOf(s) !== 'done' && RECENT[s.id] && resumePoint(s));
   if(!open.length) return null;
   return open.sort((a,b) => (RECENT[b.id]||0) - (RECENT[a.id]||0))[0];
 }
@@ -33,9 +33,9 @@ function renderLibrary(){
     <div class="topbar"><span class="m">Fieldcraft &middot; Pragmatic knowledge</span></div>
     <div class="mast">
       <h1>${cap(numWord(SUBJECTS.length))} ${SUBJECTS.length === 1 ? 'subject' : 'subjects'}.</h1>
-      <p>Learn the questions that decide a call, then practice them on real stories that come with no label.</p>
+      <p>Short lessons that end with doing the real thing, then questions that come back on later days.</p>
     </div>
-    <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects, units, cards</span></button>
+    <button class="searchfield" data-v="search">${icon('search',16)}<span>Search subjects and lessons</span></button>
     ${reviewTileForLibrary()}
     ${cont ? continueCard(cont) : ''}
     <div class="chips">${chips.map(([k,label]) =>
@@ -49,7 +49,7 @@ function renderLibrary(){
         <span class="sigil">${s.keyNo}</span>
         <span class="grow">
           <span class="t">${esc(s.name)}</span>
-          <span class="s">${s.course.length} units &middot; ${s.nameCount} names</span>
+          <span class="s">${s.parts.length} parts &middot; ${s.lessons.length} built</span>
         </span>
         <span class="end">${progressMark(s)}</span>
         ${icon('chevron')}
@@ -65,37 +65,28 @@ function renderLibrary(){
   on('[data-review-start]', startReview);
 }
 
-/* Where "resume" actually lands: after a finished unit, the next one. */
-function resumePoint(subj){
-  const c = st(subj).course;
-  if(c.phase === 'unitdone' && c.u < subj.course.length - 1)
-    return {ui: c.u + 1, fresh: true};
-  return {ui: c.u, fresh: false};
-}
 function resumeLabel(subj){
-  const r = resumePoint(subj), u = subj.course[r.ui];
-  if(r.fresh) return 'Start Unit ' + u.tag;
-  return rebuiltStatus(subj.id, u.id) === 'progress' ? 'Resume the lesson' : (unitDone(subj, r.ui) ? 'Review Unit ' + u.tag : 'Start Unit ' + u.tag);
+  const l = resumePoint(subj);
+  return lessonPlace(subj, l) > 0 ? SAY.resume : SAY.start;
 }
 function resumeSubject(id){
-  const s = SUBJECTS.find(x => x.id === id);
+  const s = SUBJECTS.find(x => x.id === id), l = resumePoint(s);
   APP.subjectId = id; touch(id);
-  openUnit(s, resumePoint(s).ui);
+  if(l) openLesson(s, l.id);
 }
 
 function continueCard(s){
-  const u = s.course[resumePoint(s).ui];
-  const label = resumeLabel(s);
+  const l = resumePoint(s);
   return `<div class="block"><div class="card" style="--accent:${s.accent}">
     <div class="ch">
       <span class="m a">Continue</span>
-      <span class="m" style="letter-spacing:.1em">${unitsDone(s)} / ${s.course.length} units</span>
+      <span class="m" style="letter-spacing:.1em">${partsDone(s)} / ${s.parts.length} parts</span>
     </div>
     <div style="display:flex;flex-direction:column;gap:4px">
       <span class="cn">${esc(s.name)}</span>
-      <span class="cs">Unit ${esc(u.tag)} &middot; ${esc(u.title)}</span>
+      <span class="cs">${esc(l.title)}</span>
     </div>
-    <div class="segs">${s.course.map((_,i) => `<i class="${unitDone(s,i)?'on':''}"></i>`).join('')}</div>
-    <button class="btn sm" data-resume="${s.id}">${label}${icon('arrow')}</button>
+    <div class="segs">${s.parts.map(p => `<i class="${s.lessons.some(x => x.part === p.id && lessonIsDone(s, x.id)) ? 'on' : ''}"></i>`).join('')}</div>
+    <button class="btn sm" data-resume="${s.id}">${resumeLabel(s)}${icon('arrow')}</button>
   </div></div>`;
 }

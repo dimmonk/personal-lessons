@@ -4,7 +4,7 @@
   "description": "Fieldcraft \u2014 pragmatic knowledge. Static site in public/, no build step.",
   "scripts": {
     "icons": "node scripts/render-icons.mjs",
-    "test:data": "node tests/validate-data.mjs",
+    "test:data": "node tests/validate-data.mjs && node tests/engine-pure.mjs",
     "test:audio": "node tests/audio-pure.mjs",
     "test:lessons": "node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs",
     "test:e2e": "node tests/e2e.mjs",

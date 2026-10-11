@@ -1,8 +1,7 @@
-// What V47 and V29 read from disk: the script files under public/app/ and public/subjects/, index.html's script tags,
-// sw.js's SHELL, and the validator's own source. Collected once and passed to the rules as plain data.
+// What V47 reads from disk: the script files under public/app/ and public/subjects/, index.html's script tags and sw.js's SHELL.
+// Collected once and passed to the rules as plain data.
 import { readFile, readdir } from 'node:fs/promises';
 import { scriptSources, asDirUrl } from './load.mjs';
-import { REPO } from './paths.mjs';
 
 const isLessonScript = path => /^(app|subjects)\/.+\.js$/.test(path);
 const clean = path => path.replace(/^\.?\//, '');
@@ -44,13 +43,4 @@ export async function collectSite(publicDir) {
     indexScripts: html === null ? null : scriptSources(html).map(clean).filter(isLessonScript),
     swShell: sw === null ? null : shellEntries(sw).map(clean).filter(isLessonScript)
   };
-}
-
-// The validator's own source: every module under tests/lessons and the CLI that runs them.
-export async function collectValidatorSources() {
-  const dir = new URL('tests/lessons/', REPO);
-  const names = (await readdir(dir)).filter(n => n.endsWith('.mjs')).sort();
-  const sources = await Promise.all(names.map(async n => [`tests/lessons/${n}`, await readFile(new URL(n, dir), 'utf8')]));
-  const cli = await readIfPresent(new URL('tests/validate-lessons.mjs', REPO));
-  return Object.fromEntries([...sources, ...(cli === null ? [] : [['tests/validate-lessons.mjs', cli]])]);
 }

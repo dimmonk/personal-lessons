@@ -35,5 +35,8 @@ export function removeIn(root, path) {
   });
 }
 
-// A plain, unfrozen deep copy of loaded data (the registry freezes what it holds, in another realm).
-export const plain = value => JSON.parse(JSON.stringify(value));
+// A plain, unfrozen deep copy of loaded data (the registry freezes what it holds, in another realm). Functions (a generator's `make`)
+// are kept as they are.
+export const plain = value => typeof value === 'function' ? value
+  : Array.isArray(value) ? value.map(plain)
+  : value && typeof value === 'object' ? Object.fromEntries(Object.entries(value).map(([k, x]) => [k, plain(x)])) : value;

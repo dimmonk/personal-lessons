@@ -27,7 +27,7 @@ async function main() {
     process.exit(1);
   }
   await writeLock(lockFile, lock);
-  console.log(`lock written: ${Object.keys(lock.subjects).length} subjects, ${Object.keys(lock.units).length} units -> ${lockFile.pathname}`);
+  console.log(`lock written: ${Object.keys(lock.subjects).length} subjects, ${Object.keys(lock.lessons).length} lessons -> ${lockFile.pathname}`);
 }
 
 if (import.meta.url === pathToFileURL(process.argv[1]).href) {

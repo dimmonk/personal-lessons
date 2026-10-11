@@ -1,8 +1,9 @@
-// Section 23 (the build-subject gates): V69. Every subject has a design record (docs/subjects/<id>/design.md) that states the
-// kind of learning, the end result, the real moment, the real-world test and the practice method, with the owner's approval
-// dates. No lesson content may be written or changed before the owner has approved the end result and the practice method,
-// and nothing past the first unit (the pilot) before the owner has approved the pilot. "Written or changed" is measured
-// against the lock of the last commit: content that matches it was there before the gates and is waiting for its audit.
+// Sections 23 and 26.7 (the build-subject gates): V69. Every subject has a design record (docs/subjects/<id>/design.md) that states the
+// kind of learning, the end result, the real moment, the real-world test, the practice method, the parts of the end result, the pilot
+// lesson, and the owner's approvals and words. No lesson content may be written or changed before the owner has approved the end result
+// and the practice method; and no lesson but the pilot (and a baseline) before the owner has tried the pilot on a phone and said what
+// they thought (`tried.pilot`: the advance approval of the pilot lets it be built, and does not stand in for the try).
+// "Written or changed" is measured against the lock of the last commit.
 import { siteRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 
@@ -22,29 +23,34 @@ function recordProblems(id, r) {
   const a = r.approved;
   if (!a || typeof a !== 'object') problems.push('the design record has no "approved" part');
   else APPROVALS.filter(k => !(a[k] === null || (typeof a[k] === 'string' && DATE.test(a[k])))).forEach(k => problems.push(`approved.${k} is neither null nor a date`));
+  if (!Array.isArray(r.parts) || r.parts.length === 0 || r.parts.some(p => !p || typeof p.id !== 'string' || typeof p.title !== 'string')) problems.push('the design record has no valid list of parts (an id and a title each)');
+  if (typeof r.pilot !== 'string' || !r.pilot) problems.push('the design record names no pilot lesson');
+  const t = r.tried && r.tried.pilot;
+  if (!r.tried || typeof r.tried !== 'object' || !('pilot' in r.tried)) problems.push('the design record has no "tried" part with a pilot');
+  else if (t !== null && !(t && typeof t === 'object' && DATE.test(t.date || '') && typeof t.words === 'string' && t.words.trim())) problems.push('tried.pilot is neither null nor a date with the owner\'s words');
   return problems;
 }
 
-// The units and the subject record whose content differs from the last commit's lock (or is not in it).
+// The lessons and the subject record whose content differs from the last commit's lock (or is not in it).
 function changedSince(data, id, committed) {
   const now = lockEntries({ ...data, subjects: { [id]: data.subjects[id] } });
-  const units = Object.keys(now.units).filter(k => !committed.units[k] || committed.units[k].fp !== now.units[k].fp).map(k => k.split('/')[1]);
+  const was = committed.lessons || {};
+  const lessons = Object.keys(now.lessons).filter(k => !was[k] || was[k].fp !== now.lessons[k].fp).map(k => k.split('/')[1]);
   const subject = !committed.subjects[id] || committed.subjects[id].fp !== now.subjects[id].fp;
-  return { units, subject };
+  return { lessons, subject };
 }
 
 function gateProblems(data, id, r, committed) {
   if (!committed) return [];   // no last commit to measure against (a seeded control without one): only the record is checked
-  const { units, subject } = changedSince(data, id, committed);
-  if (!units.length && !subject) return [];
+  const { lessons, subject } = changedSince(data, id, committed);
+  if (!lessons.length && !subject) return [];
   const a = r.approved;
   if (!a.endResult || !a.practice) {
-    const what = [...(subject ? ['the subject record, key or specimens'] : []), ...units.map(u => `unit ${u}`)].join(', ');
+    const what = [...(subject ? ['the subject record'] : []), ...lessons.map(l => `lesson ${l}`)].join(', ');
     return [`content was written or changed (${what}) before the owner approved the end result and the practice method (gates 2 and 3)`];
   }
-  const pilot = data.subjects[id].meta.units[0];
-  const beyond = units.filter(u => u !== pilot);
-  if (!a.pilot && beyond.length) return [`units past the pilot (${beyond.join(', ')}) were written before the owner approved the pilot (gate 6)`];
+  const beyond = lessons.filter(l => l !== r.pilot && data.subjects[id].lessons[l].role !== 'baseline');
+  if (!r.tried.pilot && beyond.length) return [`lessons past the pilot (${beyond.join(', ')}) were written before the owner tried the pilot and said what they thought (gate 6)`];
   return [];
 }
 

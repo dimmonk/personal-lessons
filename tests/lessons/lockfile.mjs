@@ -31,7 +31,7 @@ export function readCommittedJson(fileUrl) {
   }
 }
 
-const GROUPS = ['subjects', 'units'];
+const GROUPS = ['subjects', 'lessons'];
 
 // For every committed entry that has been deployed: different content needs a higher rev, the same content needs the same rev,
 // and the entry may not disappear. Returns the problems as strings.
@@ -55,7 +55,7 @@ export function nextLock(now, committed, working) {
     return deployed ? { deployed } : {};
   };
   const withDeployed = group => Object.fromEntries(Object.entries(now[group]).map(([id, e]) => [id, { ...e, ...keep(group, id) }]));
-  return { standard: now.standard, subjects: withDeployed('subjects'), units: withDeployed('units') };
+  return { standard: now.standard, subjects: withDeployed('subjects'), lessons: withDeployed('lessons') };
 }
 
 export const formatLock = lock => JSON.stringify(lock, null, 2) + '\n';

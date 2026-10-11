@@ -1,5 +1,5 @@
-// Section 8, revisions and files: V29, V45, V46, V47, V58.
-import { unitRule, subjectRule, siteRule, heldRule, checkEach } from './rule.mjs';
+// Section 26.7, revisions and files: V45 (revisions and history), V46 (the lock), V47 (files), V58 (held findings).
+import { subjectRule, siteRule, heldRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { anchorProblems } from './lockfile.mjs';
 import { unique } from './text.mjs';
@@ -14,32 +14,24 @@ function historyProblems(history, rev, what) {
     ...(h.date && h.change ? [] : [`${what} entry ${i + 1} needs a date and a change`])]);
 }
 
-function revisionProblems(record, history, what, maxStandard) {
+function revisionProblems(record, what, maxStandard) {
   return [
     ...(Number.isInteger(record.rev) && record.rev >= 1 ? [] : [`${what} rev must be an integer of at least 1`]),
-    ...(Number.isInteger(record.rev) ? historyProblems(history, record.rev, `${what} history`) : []),
-    ...(Number.isInteger(record.standard) && record.standard >= 1 && record.standard <= maxStandard ? [] : [`${what} standard must be from 1 to the standard version ${maxStandard}`])];
+    ...(Number.isInteger(record.rev) ? historyProblems(record.history, record.rev, `${what} history`) : []),
+    ...(record.standard === undefined ? [] : Number.isInteger(record.standard) && record.standard >= 2 && record.standard <= maxStandard ? [] : [`${what} standard must be from 2 to the standard version ${maxStandard}`])];
 }
 
-function liveProblems(unit) {
-  if (unit.status !== 'live') return [];
-  const cold = unit.build.signoff.coldRead;
-  if (!cold) return ['status live needs build.signoff.coldRead'];
-  const since = unit.build.signoff.since || [];
-  const covered = Array.from({ length: Math.max(unit.rev - cold.rev, 0) }, (_, i) => cold.rev + 1 + i).every(r => since.some(s => s.rev === r));
-  return [
-    ...(['novice', 'near-novice'].includes(cold.reader) ? [] : ['the cold read must be by a novice or near-novice']),
-    ...(cold.date ? [] : ['the cold read needs a date']),
-    ...(cold.restated === true && cold.drillAttempted === true ? [] : ['the cold read must record that every card was restated and the drill attempted']),
-    ...(cold.rev === unit.rev || (cold.rev < unit.rev && covered) ? [] : ['the cold read is of an earlier revision and signoff.since does not list every later one'])];
+// a lesson is live only after the owner's own try of it on a phone: a date and their words
+function liveProblems(lesson) {
+  if (lesson.status !== 'live') return [];
+  const t = lesson.tried;
+  if (!t) return ['status live needs tried: the date and the owner\'s words from the try'];
+  return [...(t.date ? [] : ['tried needs a date']), ...(t.words && t.words.trim() ? [] : ['tried needs the owner\'s words'])];
 }
 
-export const V45_unit = unitRule('V45', (u, check) => {
-  checkEach(check, 'unit', [...revisionProblems(u.unit, u.unit.build.history, 'unit', u.data.standard), ...liveProblems(u.unit)]);
-});
-
-export const V45_subject = subjectRule('V45', (s, check) => {
-  checkEach(check, 'subject', revisionProblems(s.meta, s.meta.history, 'subject', s.data.standard));
+export const V45 = subjectRule('V45', (s, check) => {
+  checkEach(check, 'subject', revisionProblems(s.meta, 'subject', s.data.standard));
+  for (const l of s.lessonList) checkEach(check, `lesson ${l.id}`, [...revisionProblems(l, 'lesson', s.data.standard), ...liveProblems(l)]);
 });
 
 /* ---------- V46: the lock ---------- */
@@ -49,7 +41,7 @@ export const V46 = siteRule('V46', (input, check) => {
   const empty = Object.keys(now.subjects).length === 0;
   if (!lock) { check(empty, 'there is no lock file; run node tests/lessons/lock.mjs'); return; }
   check(lock.standard === now.standard, `the lock says standard ${lock.standard}, the app says ${now.standard}`);
-  for (const group of ['subjects', 'units']) {
+  for (const group of ['subjects', 'lessons']) {
     for (const [id, mine] of Object.entries(now[group])) {
       const theirs = (lock[group] || {})[id];
       check(Boolean(theirs), `${id}: no lock entry; run node tests/lessons/lock.mjs`);
@@ -79,19 +71,6 @@ export const V47 = siteRule('V47', (input, check) => {
   if (indexScripts !== null && swShell !== null) check(sameSet(unique(indexScripts), unique(swShell)), 'index.html and sw.js list different scripts');
 });
 
-/* ---------- V29: the validator holds no limit on how long anything may be ---------- */
-// The patterns are assembled from pieces so that this file does not contain what it looks for.
-const COUNTED = ['wor' + 'd', 'sen' + 'tence', 'para' + 'graph', 'ch' + 'ar', 'li' + 'ne'].join('|');
-const UPPER_BOUND_ON_COUNT = new RegExp(`(?:${COUNTED})\\w*\\s*(?:\\.length|\\.size|\\.count)\\s*<=?\\s*\\d`, 'i');
-const MAX_SETTING = new RegExp(`\\b[Mm]` + `ax\\w*(?:${COUNTED})s?\\b|\\b(?:${COUNTED})s?\\w*[Mm]` + `ax\\b`);
-const LIMIT_PATTERNS = [UPPER_BOUND_ON_COUNT, MAX_SETTING];
-
-export const V29 = siteRule('V29', (input, check) => {
-  for (const [name, source] of Object.entries(input.validatorSources)) {
-    source.split('\n').forEach((text, i) => check(!LIMIT_PATTERNS.some(re => re.test(text)), `${name}:${i + 1} holds a limit on the length of something: ${text.trim().slice(0, 60)}`));
-  }
-});
-
 export const V58 = heldRule('V58');
 
-export const RULES_REVISIONS = [V29, V45_unit, V45_subject, V46, V47, V58];
+export const RULES_REVISIONS = [V45, V46, V47, V58];

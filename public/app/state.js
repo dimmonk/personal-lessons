@@ -1,26 +1,16 @@
 /* ===================== SUBJECTS ===================== */
-// One list of units per subject, built from the FC registry's frozen data: a subject's units are the ids in its subject
-// record, in order, and each is run by unit.js. SUBJECTS holds new objects; nothing registered is ever changed.
+// One list of subjects, built from the FC registry's frozen data. A subject's lessons are the ones registered, in part order;
+// its parts are the design record's, mirrored in the subject record. SUBJECTS holds new objects; nothing registered is changed.
 
 const ACCENTS = ['#DFA83E','#57C48E','#62AFEE','#C39BF0','#F0907E'];
-const WORDS = ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];
-const numWord = n => n < WORDS.length ? WORDS[n] : String(n);
-const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 
-function courseEntry(subjectId, unitId){
-  const v = unitView(subjectId, unitId);
-  return { id: unitId, tag: v.unit.tag, title: v.title, rev: v.unit.rev, status: v.unit.status, cards: v.cardOrder };
-}
 function buildSubject(id, index){
-  const data = FC.get(id);
-  const course = data.meta.units.map(unitId => courseEntry(id, unitId));
-  // the subject record is the only place the name, revision and blurb are typed
+  const data = FC.get(id), meta = data.meta;
+  const lessons = lessonsInOrder(data).map(l => ({ id: l.id, part: l.part, title: l.title, rev: l.rev, status: l.status, role: l.role || null }));
   return {
-    id, name: data.meta.name, rev: data.meta.rev, blurb: data.meta.blurb, course,
+    id, name: meta.name, rev: meta.rev, endResult: meta.endResult, parts: meta.parts, lessons,
     accent: ACCENTS[index % ACCENTS.length],
-    keyNo: pad2(index + 1),
-    nameCount: data.key.outcomes.length,
-    cardCount: course.reduce((a, u) => a + u.cards.length, 0)
+    keyNo: pad2(index + 1)
   };
 }
 const SUBJECTS = FC.ids().map(buildSubject);
@@ -32,7 +22,7 @@ function touch(id){ RECENT[id] = Date.now(); storageSave('pl:recent', RECENT); }
 
 const SAVED = storageLoad('pl:app', {view:'library', subjectId:null, filter:'all', sort:'recent'});
 const APP = {
-  view:'library', subjectId:null, query:'', refMode:'units',
+  view:'library', subjectId:null, query:'',
   filter: ['all','progress','done','new'].includes(SAVED.filter) ? SAVED.filter : 'all',
   sort:   SAVED.sort === 'az' ? 'az' : 'recent'
 };
@@ -47,50 +37,38 @@ function saveApp(){
   });
 }
 
-const subjectStates = {};
 const currentSubject = () => SUBJECTS.find(s => s.id === APP.subjectId);
+const dataOf = subj => FC.get(subj.id);
 
-// Where "resume" lands: the unit the learner is in (a place saved in `seen`, the one home of progress, lesson standard E8),
-// else the first unit not done; phase is 'unitdone' once every unit is done. Whether a unit is done is read from `seen` on
-// demand, never copied.
-function courseFromSeen(subj){
-  const seen = seenOf(subj.id);
-  const placed = i => { const e = seen[subj.course[i].id]; return !!(e && !e.done && e.at && e.rev >= 1); };
-  const indexes = subj.course.map((_, i) => i);
-  const open = indexes.find(placed) ?? indexes.find(i => !unitDone(subj, i));
-  return open === undefined ? {u: subj.course.length - 1, phase: 'unitdone'} : {u: open, phase: 'read'};
-}
-
-function st(subj){
-  if(subjectStates[subj.id]) return subjectStates[subj.id];
-  migrateProgress(subj.id, subj.course.map(u => u.id));
-  subjectStates[subj.id] = { course: courseFromSeen(subj) };
-  return subjectStates[subj.id];
-}
-
-const unitDone = (subj, i) => rebuiltUnitDone(subj.id, subj.course[i].id);
-const unitsDone = subj => subj.course.filter((_, i) => unitDone(subj, i)).length;
-const pctOf     = subj => Math.round(100 * unitsDone(subj) / subj.course.length);
+// Whether a lesson is done is worked out from the practice record on demand (a complete run of its check), never copied.
+const lessonIsDone = (subj, lessonId) => lessonDone(dataOf(subj), subj.id, dataOf(subj).lessons[lessonId]);
+const lessonsDone = subj => subj.lessons.filter(l => lessonIsDone(subj, l.id)).length;
+const partsDone = subj => subj.parts.filter(p => subj.lessons.some(l => l.part === p.id && lessonIsDone(subj, l.id))).length;
+const pctOf = subj => subj.parts.length ? Math.round(100 * partsDone(subj) / subj.parts.length) : 0;
+// where the learner has put a lesson down: a saved place beyond the start, in the lesson's current revision
+const lessonPlace = (subj, l) => { const s = seenOf(subj.id)[l.id]; return s && s.rev === l.rev && s.at > 0 && s.at < stepTotal(dataOf(subj).lessons[l.id]) - 1 ? s.at : 0; };
 function statusOf(subj){
-  const d = unitsDone(subj);
-  return d === 0 ? 'new' : (d === subj.course.length ? 'done' : 'progress');
+  const d = partsDone(subj);
+  if(subj.parts.length && d === subj.parts.length) return 'done';
+  return d > 0 || subj.lessons.some(l => lessonPlace(subj, l) > 0 || lessonIsDone(subj, l.id)) ? 'progress' : 'new';
+}
+// where "continue" lands: the lesson the learner put down, else the first lesson not done; null when every lesson built is done
+function resumePoint(subj){
+  const placed = subj.lessons.find(l => lessonPlace(subj, l) > 0 && !lessonIsDone(subj, l.id));
+  return placed || subj.lessons.find(l => !lessonIsDone(subj, l.id)) || null;
 }
 
 /* ===================== NAVIGATION ===================== */
 
+// Stops every sound and switches the microphone off. Called on every move to another screen.
+function stopAudio(){
+  stopSounds();
+  stopMeter();
+}
 function go(view, extra){
   stopAudio();
   Object.assign(APP, {view}, extra || {});
   saveApp(); render(); window.scrollTo(0,0);
 }
 function openSubject(id){ APP.subjectId = id; touch(id); go('subject'); }
-function openUnit(subj, ui){
-  const c = st(subj).course, unit = subj.course[ui];
-  c.u = ui; c.phase = 'read';
-  APP.subjectId = subj.id; touch(subj.id);
-  // a unit that leans on one the learner found hard opens on "Review these first" (E12): a prompt, never a gate
-  const weak = reviewFirstFor(subj, unit);
-  if(weak){ go('reviewfirst', { reviewUnit: ui }); return; }
-  beginRebuiltUnit(subj, unit);
-}
 function on(sel, fn, root){ (root || screenEl()).querySelectorAll(sel).forEach(el => el.onclick = () => fn(el)); }

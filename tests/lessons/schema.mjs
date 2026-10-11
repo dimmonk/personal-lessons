@@ -1,7 +1,7 @@
 // A small schema language for the exact shapes of section 4 (S1 to S6), and the checker that applies it.
 // checkShape(value, schema, path) returns the list of problems: [{ path, message }]. It never throws and never changes the value.
 //
-//   str, text, int, bool, any      leaf types (a Text is a string or a list of strings; "empty" is not "present")
+//   str, text, int, num, bool, fn, any  leaf types (a Text is a string or a list of strings; "empty" is not "present")
 //   en(...values)                  one of these values
 //   arr(item, { empty })           a list of item; an empty list is "not present" unless empty: true
 //   map(value)                     an object with free keys (route, cues, reason ...)
@@ -14,6 +14,8 @@ export const str = { t: 'str' };
 export const text = { t: 'text' };
 export const int = { t: 'int' };
 export const bool = { t: 'bool' };
+export const num = { t: 'num' };
+export const fn = { t: 'fn' };
 export const any = { t: 'any' };
 export const en = (...values) => ({ t: 'enum', values });
 export const arr = (item, { empty = false } = {}) => ({ t: 'arr', item, empty });
@@ -30,12 +32,14 @@ const LEAF = {
   str: (v, p) => typeof v === 'string' && v !== '' ? [] : problem(p, 'must be a non-empty string'),
   int: (v, p) => Number.isInteger(v) ? [] : problem(p, 'must be an integer'),
   bool: (v, p) => typeof v === 'boolean' ? [] : problem(p, 'must be true or false'),
+  num: (v, p) => typeof v === 'number' && Number.isFinite(v) ? [] : problem(p, 'must be a number'),
+  fn: (v, p) => typeof v === 'function' ? [] : problem(p, 'must be a function'),
   any: () => [],
   text: (v, p) => typeof v === 'string' && v !== '' || (Array.isArray(v) && v.length > 0 && v.every(s => typeof s === 'string' && s !== ''))
     ? [] : problem(p, 'must be a Text: a non-empty string, or a non-empty list of non-empty strings')
 };
 
-const mayBeEmpty = (sub, v) => sub.t === 'bool' || sub.t === 'int' || (sub.t === 'arr' && sub.empty && Array.isArray(v)) || (sub.nullable && v === null);
+const mayBeEmpty = (sub, v) => sub.t === 'bool' || sub.t === 'int' || sub.t === 'num' || sub.t === 'fn' || (sub.t === 'arr' && sub.empty && Array.isArray(v)) || (sub.nullable && v === null);
 
 function checkObject(value, schema, path) {
   if (!isObject(value)) return problem(path, 'must be an object');

@@ -1,45 +1,30 @@
-// A guard is not coverage until it has been seen to fail. This seeds one fault per rule into an in-memory copy of the exemplar
-// (never on disk) and asserts that exactly that rule goes red, then prints which rules have a control and which do not, and why.
+// A guard is not coverage until it has been seen to fail. This seeds one fault per rule into an in-memory copy of the test subject
+// (tests/fixtures/fixture-subject, never on disk) and asserts that exactly that rule goes red, then prints which rules have a control.
 // Run: node tests/lessons/negative-controls.mjs
 import { pathToFileURL } from 'node:url';
 import { loadFromPublic } from './load.mjs';
 import { runRules } from './run.mjs';
 import { RULES } from './rules-index.mjs';
 import { lockEntries } from './fingerprint.mjs';
-import { collectSite, collectValidatorSources } from './site.mjs';
-import { collectDesigns } from './designs.mjs';
+import { collectSite } from './site.mjs';
 import { DEFAULTS } from './paths.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
-import { KIND_FIXTURES, loadKindFixture } from './kind-fixtures.mjs';
+import { FIXTURE_FILES, FIXTURE_DESIGN } from '../fixtures/fixture-subject/design.mjs';
 
-// The exemplar is the live Psychology subject (Unit Two is the unit every control seeds its fault into), read from public/,
-// its one copy, so the controls can never run on wording the app no longer ships. Only that subject is kept, which keeps a
-// control as fast as one subject's validation.
-const EXEMPLAR = new URL('../../public/', import.meta.url);
-const EXEMPLAR_SUBJECT = 'psychology';
-const onlyExemplarSubject = data => ({ ...data, subjects: { [EXEMPLAR_SUBJECT]: data.subjects[EXEMPLAR_SUBJECT] } });
+const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
 
-const emptyInput = data => ({ data, lock: lockEntries(data), committedLock: null,
-  site: { files: [], indexScripts: null, swShell: null }, validatorSources: {} });
-
-// The exemplar, and a unit of each other kind (fact, procedure, gate). The exemplar runs every rule; a unit of another kind runs only the
-// rules that apply to its kind and that its fixture meets (kind-fixtures.mjs).
-async function baselines() {
-  const data = onlyExemplarSubject(plain(await loadFromPublic(EXEMPLAR)));
-  const exemplar = {
-    data, lock: lockEntries(data), committedLock: null,
-    site: await collectSite(EXEMPLAR), validatorSources: await collectValidatorSources(),
-    designs: await collectDesigns(DEFAULTS.designsDir)
-  };
-  const kinds = Object.fromEntries(await Promise.all(Object.keys(KIND_FIXTURES).map(async kind => [kind, emptyInput(plain(await loadKindFixture(kind)))])));
-  return { exemplar, ...kinds };
+// The test subject alone, loaded the way a real subject is, with the app's own site (V47) and a design record for it.
+export async function baseline() {
+  const loaded = await loadFromPublic(DEFAULTS.publicDir, { extra: FIXTURE_FILES.map(f => new URL(f, FIXTURE)) });
+  const data = { ...loaded, subjects: { fixture: plain(loaded.subjects.fixture) } };
+  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs: { fixture: FIXTURE_DESIGN }, held: null, committedHeld: null };
 }
 
 const redRules = result => [...new Set(result.failures.map(f => f.rule))].sort();
 const sameList = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]);
 
-// The input a control runs on: the exemplar with its fault. The lock is regenerated from the faulty data, so that a content fault
+// The input a control runs on: the baseline with its fault. The lock is regenerated from the faulty data, so that a content fault
 // does not also turn the lock rule (V46) red, unless the control is about the lock itself.
 function faultyInput(base, control) {
   const data = control.data ? control.data(base.data, { setIn, updateIn, removeIn }) : base.data;
@@ -48,29 +33,22 @@ function faultyInput(base, control) {
   return control.input ? control.input(input) : input;
 }
 
-const rulesFor = control => control.only ? RULES.filter(r => r.id === control.rule)
-  : control.base ? RULES.filter(r => KIND_FIXTURES[control.base].rules.includes(r.id) && r.scope !== 'site') : RULES;
-
-function runControl(bases, control) {
-  const input = faultyInput(bases[control.base || 'exemplar'], control);
-  const result = runRules(input, rulesFor(control));
+function runControl(base, control) {
+  const result = runRules(faultyInput(base, control));
   const red = redRules(result);
   // green: the fault is one the rule must let through (an exemption), so nothing may go red
   const expected = control.green ? [] : [control.rule, ...(control.also || [])].sort();
   const unprefixed = result.failures.filter(f => !f.message.startsWith(`${f.rule} `));
-  return { red, expected, ok: sameList(red, expected) && unprefixed.length === 0, detail: unprefixed.map(f => `a failure does not start with its rule id: ${f.message}`) };
+  return { red, expected, ok: sameList(red, expected) && unprefixed.length === 0, detail: [...result.failures.slice(0, 3).map(f => f.message), ...unprefixed.map(f => `a failure does not start with its rule id: ${f.message}`)] };
 }
 
 export async function runAll() {
-  const bases = await baselines();
-  const results = ['exemplar', ...Object.keys(KIND_FIXTURES)].map(name => {
-    const rules = name === 'exemplar' ? RULES : RULES.filter(r => KIND_FIXTURES[name].rules.includes(r.id) && r.scope !== 'site');
-    const clean = runRules(bases[name], rules);
-    return { name: `baseline, ${name === 'exemplar' ? 'the exemplar' : `a ${name} unit`}`, rule: '(none)', red: redRules(clean), expected: [], ok: clean.failures.length === 0, detail: clean.failures.slice(0, 3).map(f => f.message) };
-  });
+  const base = await baseline();
+  const clean = runRules(base);
+  const results = [{ name: 'baseline, the test subject', rule: '(none)', red: redRules(clean), expected: [], ok: clean.failures.length === 0, detail: clean.failures.slice(0, 3).map(f => f.message) }];
   for (const control of CONTROLS) {
     let outcome;
-    try { outcome = runControl(bases, control); }
+    try { outcome = runControl(base, control); }
     catch (error) { outcome = { red: [], expected: [control.rule], ok: false, detail: [`the control itself failed to build: ${error.message}`] }; }
     results.push({ name: control.name, rule: control.rule, ...outcome });
   }
@@ -93,19 +71,18 @@ async function main() {
   for (const r of results) {
     const line = r.ok ? `ok    ${r.rule.padEnd(4)} ${r.name}` : `FAIL  ${r.rule.padEnd(4)} ${r.name}: expected red ${JSON.stringify(r.expected)}, got ${JSON.stringify(r.red)}`;
     (r.ok ? console.log : console.error)(line);
-    (r.detail || []).forEach(d => console.error(`        ${d}`));
+    if (!r.ok) (r.detail || []).forEach(d => console.error(`        ${d}`));
   }
   const report = coverageReport(results);
   console.log(`\nrules with a control (${report.covered.length}): ${[...report.covered].sort((a, b) => Number(a.slice(1)) - Number(b.slice(1))).join(' ')}`);
-  console.log('rules without a control:');
-  Object.entries(NO_CONTROL).forEach(([id, why]) => console.log(`  ${id}: ${why}`));
+  Object.entries(NO_CONTROL).forEach(([id, why]) => console.log(`  ${id} has no control: ${why}`));
   if (report.unexplained.length) console.error(`rules with neither a control nor a stated reason: ${report.unexplained.join(' ')}`);
   if (report.stale.length) console.error(`rules listed as having no control that do have one, or do not exist: ${report.stale.join(' ')}`);
   if (failed.length || report.unexplained.length || report.stale.length) {
     console.error(`\n${failed.length} of ${results.length} controls failed`);
     process.exit(1);
   }
-  console.log(`\n✓ ${results.filter(r => r.rule !== '(none)').length} negative controls went red on exactly their own rule (${results.filter(r => r.rule === '(none)').length} baselines green)`);
+  console.log(`\n✓ ${results.filter(r => r.rule !== '(none)').length} negative controls went red on exactly their own rule (baseline green)`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

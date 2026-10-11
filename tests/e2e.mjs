@@ -1,120 +1,44 @@
 // Drives the real app in Chromium. Run: npm run test:e2e
+//   1. every browser check of 26.7 built so far (e2e-checks.mjs), on the app with the test subject loaded;
+//   2. the installable app: its name, manifest, service worker, offline load and fonts;
+//   3. every seeded fault (e2e-controls.mjs): the app with one fault in it must turn exactly one check red.
 import { chromium } from 'playwright';
 import { startServer } from './static-server.mjs';
-import { testUnits, testUnitAt360, testDraftUnits, testMigration } from './e2e-unit.mjs';
-import { testLessonEngineReview } from './e2e-review.mjs';
-import { testNewScreens } from './e2e-screens.mjs';
-import { testWeeklyReview } from './e2e-weekly.mjs';
-import { testKinds } from './e2e-kinds.mjs';
-import { testAudio } from './e2e-audio.mjs';
-import { APP_JARGON, abstractIn } from './plain-words.mjs';
-import { britishIn } from './american.mjs';
-import { subjectMeta } from './fixtures/app-data.mjs';
+import { makeEnv } from './e2e-env.mjs';
+import { CHECKS } from './e2e-checks.mjs';
+import { FAULTS, runWithFault } from './e2e-controls.mjs';
 
-const WIDTHS = [360, 390, 768, 1200, 1600];
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
 const failures = [];
 let checks = 0;
-const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
-
-const server = await startServer();
 const browser = await chromium.launch();
 
-async function freshPage(width = 390) {
-  const context = await browser.newContext({ viewport: { width, height: 800 } });
+/* ---------- the checks, on the app as it is ---------- */
+async function runChecks() {
+  const server = await startServer({ fixture: true });
+  const env = makeEnv(browser, server);
+  try {
+    for (const [id, run] of Object.entries(CHECKS)) {
+      try {
+        const c = await run(env);
+        checks += c.count;
+        failures.push(...c.failures);
+      } catch (error) { failures.push(`${id} crashed: ${error.stack || error}`); }
+    }
+  } finally { await server.close(); }
+}
+
+/* ---------- the installable app, without the test subject ---------- */
+async function testPwa() {
+  const server = await startServer();
+  const check = (ok, msg) => { checks++; if (!ok) failures.push(`PWA: ${msg}`); };
+  const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
   const page = await context.newPage();
-  page.on('pageerror', err => failures.push(`page error: ${err.message}`));
-  page.on('console', msg => { if (msg.type() === 'error') failures.push(`console error: ${msg.text()}`); });
+  page.on('pageerror', err => failures.push(`PWA: page error: ${err.message}`));
+  page.on('console', msg => { if (msg.type() === 'error') failures.push(`PWA: console error: ${msg.text()}`); });
   await page.goto(server.url);
   await page.evaluate(() => localStorage.clear());
   await page.reload();
-  return { context, page };
-}
-
-// Navigation goes through the visible controls: the tab bar on phones, the rail on desktop.
-const clickVisible = (page, selector) => page.locator(`${selector}:visible`).first().click();
-const toLibrary = page => clickVisible(page, '[data-v="library"]');
-const toSubject = page => clickVisible(page, '#screen [data-v="subject"]');
-async function openSubject(page, id) {
-  await toLibrary(page);
-  await clickVisible(page, `#screen [data-s="${id}"]`);
-}
-const screenText = async page => (await page.locator('#screen').textContent()).trim();
-
-async function horizontalOverflow(page) {
-  return page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-}
-
-// Text cut off inside a control (the page-level check can't see these). Deliberate ellipses are fine.
-async function clippedText(page) {
-  return page.evaluate(() => [...document.querySelectorAll('button, .opt, .chip, .tile, .mark, .stat')]
-    .filter(el => el.offsetParent !== null && el.scrollWidth > el.clientWidth + 1 &&
-      getComputedStyle(el).textOverflow !== 'ellipsis')
-    .map(el => `"${el.textContent.trim().replace(/\s+/g, ' ').slice(0, 30)}"`));
-}
-
-// The words a learner never reads outside a case's own story or a quotation (tests/plain-words.mjs; lesson standard K9).
-async function jargonShown(page) {
-  const text = await page.evaluate(() => {
-    const copy = document.querySelector('#screen').cloneNode(true);
-    copy.querySelectorAll('blockquote, .passage, .casename').forEach(el => el.remove());   // a case may say anything
-    return copy.textContent;
-  });
-  const prose = text.replace(/“[^”]*”|"[^"]*"/g, ' ');   // and so may a quotation
-  return [...APP_JARGON.filter(w => new RegExp(`\\b${w}(['’]s)?\\b`, 'i').test(prose)), ...abstractIn(prose).map(e => e.word)];
-}
-
-async function inspect(page, label) {
-  const text = await screenText(page);
-  check(text.length > 40, `${label}: screen is empty`);
-  const jargon = await jargonShown(page);
-  // American English everywhere on screen, case stories included (tests/american.mjs)
-  const british = britishIn(await page.evaluate(() => document.querySelector('#screen').textContent));
-  check(british.length === 0, `${label}: shows the British form${british.length > 1 ? 's' : ''} ${british.map(w => `"${w}"`).join(', ')}`);
-  check(jargon.length === 0, `${label}: shows the maintainers' word${jargon.length > 1 ? 's' : ''} ${jargon.map(w => `"${w}"`).join(', ')}`);
-  const over = await horizontalOverflow(page);
-  check(over <= 0, `${label}: ${over}px horizontal overflow`);
-  const clipped = await clippedText(page);
-  check(clipped.length === 0, `${label}: clipped text in ${clipped.join(', ')}`);
-}
-
-// 1 + 4. Every screen of every subject renders, with no overflow or clipping at each width.
-async function testScreens() {
-  for (const width of WIDTHS) {
-    const { context, page } = await freshPage(width);
-    for (const v of ['library', 'review', 'progress']) {
-      await clickVisible(page, `[data-v="${v}"]`);
-      await inspect(page, `${width}px ${v}`);
-    }
-    await toLibrary(page);
-    await clickVisible(page, '[data-v="search"]');
-    await page.fill('#q', 'the');
-    await inspect(page, `${width}px search`);
-    for (const s of await subjectMeta(page)) {
-      const tag = `${width}px ${s.id}`;
-      await openSubject(page, s.id);
-      await inspect(page, `${tag}/index`);
-      for (let u = 0; u < s.units; u++) {
-        await clickVisible(page, `#screen [data-u="${u}"]`);
-        await inspect(page, `${tag}/unit ${u + 1}`);
-        await toSubject(page);
-      }
-      await clickVisible(page, '#screen [data-v="det"]');
-      await inspect(page, `${tag}/det`);
-      await toSubject(page);
-      for (const ref of ['units', 'caveats']) {
-        await clickVisible(page, `#screen [data-ref="${ref}"]`);
-        await inspect(page, `${tag}/reference ${ref}`);
-        await toSubject(page);
-      }
-    }
-    await context.close();
-  }
-}
-
-// 6. Name, manifest, service worker, installability and offline load.
-async function testPwa() {
-  const { context, page } = await freshPage();
   check(await page.title() === 'Fieldcraft · Pragmatic knowledge', `title is "${await page.title()}"`);
   const brand = (await page.locator('#screen .topbar .m').first().textContent()).trim();
   check(brand === 'Fieldcraft · Pragmatic knowledge', `library brand is "${brand}"`);
@@ -130,8 +54,7 @@ async function testPwa() {
   check(install.installabilityErrors.length === 0, `not installable: ${JSON.stringify(install.installabilityErrors)}`);
 
   const manifest = await page.evaluate(() => fetch('manifest.json').then(r => r.json()));
-  check(manifest.name === 'Fieldcraft' && manifest.short_name === 'Fieldcraft' && manifest.display === 'standalone',
-    'manifest name/short_name/display wrong');
+  check(manifest.name === 'Fieldcraft' && manifest.short_name === 'Fieldcraft' && manifest.display === 'standalone', 'manifest name/short_name/display wrong');
   for (const icon of [...manifest.icons.map(i => i.src), 'icons/apple-touch-icon.png', 'icons/favicon-32.png', 'icons/favicon.svg']) {
     const status = await page.evaluate(src => fetch(src).then(r => r.status), icon);
     check(status === 200, `${icon} returned ${status}`);
@@ -140,39 +63,40 @@ async function testPwa() {
 
   await context.setOffline(true);
   await page.reload();
-  check((await screenText(page)).length > 40, 'app does not render offline');
-  // A lesson card uses all three families (the library alone never asks for the serif).
-  await openSubject(page, (await subjectMeta(page))[0].id);
-  await clickVisible(page, '#screen [data-u="0"]');
-  const fontsOk = await page.evaluate(async (families) => {
+  check((await page.locator('#screen').textContent()).trim().length > 40, 'app does not render offline');
+  // a search result quotes the end result in the serif (the library alone never asks for it)
+  await page.locator('#screen [data-v="search"]:visible').first().click();
+  await page.fill('#q', 'sing');
+  const fontsOk = await page.evaluate(async families => {
     await document.fonts.ready;
     const faces = [...document.fonts];
-    return faces.every(f => f.status !== 'error') &&
-      families.every(fam => faces.some(f => f.family.replace(/"/g, '') === fam && f.status === 'loaded'));
+    return faces.every(f => f.status !== 'error') && families.every(fam => faces.some(f => f.family.replace(/"/g, '') === fam && f.status === 'loaded'));
   }, FONT_FAMILIES);
   check(fontsOk, 'self-hosted fonts not loaded offline');
   await context.close();
+  await server.close();
 }
 
-const unitEnv = { freshPage, check, inspect, clickVisible, openSubject, screenText };
+/* ---------- the seeded faults ---------- */
+async function testFaults() {
+  const results = await Promise.all(FAULTS.map(async fault => ({ fault, ...(await runWithFault(browser, fault)) })));
+  for (const { fault, red, errors, unused } of results) {
+    checks++;
+    const exact = red.length === 1 && red[0] === fault.check && unused.length === 0;
+    if (!exact) failures.push(`seeded fault "${fault.name}" should turn exactly ${fault.check} red, and turned [${red.join(', ')}] red${unused.length ? `; the fault was never applied to ${unused.join(', ')}` : ''}${errors.length ? ` (${errors.join('; ')})` : ''}`);
+  }
+  return results.length;
+}
 
+let faultCount = 0;
 try {
-  await testScreens();
-  await testUnits(unitEnv);
-  await testUnitAt360(unitEnv);
-  await testDraftUnits(unitEnv);
-  await testMigration(unitEnv);
-  await testLessonEngineReview(unitEnv);
-  await testNewScreens(unitEnv);
-  await testWeeklyReview(unitEnv);
-  await testKinds(unitEnv);
-  await testAudio(unitEnv);
+  await runChecks();
   await testPwa();
+  if (!process.env.E2E_SKIP_FAULTS) faultCount = await testFaults();   // a quick local run of the checks alone
 } catch (err) {
   failures.push(`crashed: ${err.stack || err}`);
 } finally {
   await browser.close();
-  await server.close();
 }
 
 if (failures.length) {
@@ -180,4 +104,4 @@ if (failures.length) {
   failures.forEach(f => console.error('  - ' + f));
   process.exit(1);
 }
-console.log(`✓ ${checks} browser checks passed`);
+console.log(`✓ ${checks} browser checks passed${faultCount ? ` (${faultCount} seeded faults each turned exactly its own check red)` : ''}`);
