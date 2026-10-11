@@ -50,6 +50,7 @@ function paintQueue(){
   wireNumber();
   wireForm();
   wireTap();
+  wireText();
   if(sung) wireSing(inst, cur.done);
 }
 

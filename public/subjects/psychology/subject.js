@@ -1,8 +1,9 @@
-// Psychology: subject record (lesson standard 26.1). No lesson is built yet: the subject screen lists each part of the design
-// record as not built yet. endResult and parts are the design record's, word for word (V80, V71).
+// Psychology: subject record (lesson standard 26.1). Only the pilot, lesson 1, is built: the subject screen lists every other part of the design
+// record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design record's, word for
+// word (V80, V71).
 FC.subject('psychology', {
   name: "Psychology",
-  rev: 7,
+  rev: 8,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-04",
@@ -18,7 +19,9 @@ FC.subject('psychology', {
     { rev: 6, date: "2026-10-07",
       change: "Plain, concrete writing: the key, the subject notes and the whole stories rewritten in plain words, with plain short names and shorter definitions." },
     { rev: 7, date: "2026-10-10",
-      change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." }
+      change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
+    { rev: 8, date: "2026-10-11",
+      change: "Step 7, accounts: the record holds what lesson 1 needs (what counts as what someone did, the four ways an account can read, the next steps, the common slips, and the one topic that comes back in the review), and lesson 1, What did they do?, is added as the pilot." }
   ],
   endResult: "When someone reaches for a word like \"narcissist\", \"gaslighting\" or \"manipulative\", check it against what the person actually did: say what they did, whether it shows one bad moment or a pattern, and what to do next.",
   parts: [
@@ -29,9 +32,40 @@ FC.subject('psychology', {
     { id: "E", title: "A pattern of control" },
     { id: "F", title: "The whole check, mixed, and your own" }
   ],
-  lists: {},
-  facets: {},
-  mix: [],
-  strands: [],
+  lists: {
+    step: [
+      { id: "find-out", text: "Find out what happened" },
+      { id: "watch", text: "Watch whether it repeats" },
+      { id: "limit", text: "Say what they did and where your limit is" },
+      { id: "help", text: "Get help from outside" }
+    ],
+    slip: [
+      { id: "took-guess", text: "tapped a guess about why, not what they did" },
+      { id: "took-feeling", text: "tapped how it felt, not what they did" },
+      { id: "took-label", text: "tapped a word or a verdict about the person, not what they did" },
+      { id: "took-teller", text: "tapped what the teller did, not what the person did" },
+      { id: "took-around", text: "tapped background, not what they did" },
+      { id: "kept-label", text: "kept the label when saying it again" },
+      { id: "softened", text: "made the label softer instead of saying what happened" },
+      { id: "swapped-guess", text: "swapped the label for a guess about why" },
+      { id: "jumped-ahead", text: "picked a next step before the account showed what they did" }
+    ]
+  },
+  rules: {
+    act: { name: "What they did", heading: "What counts as what they did", needs: [
+      { id: "act-did", text: "It says something they did or said." },
+      { id: "act-seen", text: "Anyone there could have seen or heard it. It has no guess about why." }
+    ] }
+  },
+  facets: {
+    account: { name: "What the account shows", values: [
+      { id: "ordinary", text: "an ordinary moment" },
+      { id: "word", text: "the word fits" },
+      { id: "unclear", text: "can’t tell yet" },
+      { id: "control", text: "a pattern of control" }
+    ] }
+  },
+  mix: [{ facet: "account", value: "ordinary", min: 0.4, max: 0.6 }],
+  strands: [{ id: "what-they-did", title: "What they did" }],
   readingShare: 0.2
 });

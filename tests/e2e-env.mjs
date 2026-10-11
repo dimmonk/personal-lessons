@@ -70,7 +70,7 @@ export function makeEnv(browser, server) {
   env.jargonShown = async page => {
     const text = await page.evaluate(() => {
       const copy = document.querySelector('#screen').cloneNode(true);
-      copy.querySelectorAll('blockquote, .passage, [data-owner-words], .block-article, .block-chart').forEach(el => el.remove());   // quoted material: a story, a post, an ad, a chart say what they say
+      copy.querySelectorAll('blockquote, .passage, [data-owner-words], .block-article, .block-chart, .block-message').forEach(el => el.remove());   // quoted material: a story, a post, an ad, a chart say what they say
       return copy.textContent;
     });
     const prose = text.replace(/“[^”]*”|"[^"]*"/g, ' ');

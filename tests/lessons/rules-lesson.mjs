@@ -109,6 +109,12 @@ function tapExplainProblems(s, item, ask, where, slipIds) {
   lines.filter(l => l.slip && right.includes(l.id)).forEach(l => problems.push(`${where}: the right line "${l.id}" carries the slip "${l.slip}"`));
   return problems;
 }
+// A line to write: it has a model line to compare with (accepted answers are Civics', and V70 refuses them until then). It is never scored, so the
+// question also holds an ask that is.
+function textExplainProblems(ask, where) {
+  const model = Array.isArray(ask.model) ? ask.model.join(' ') : ask.model;
+  return typeof model === 'string' && model.trim() ? [] : [`${where} has no model line to compare with`];
+}
 // A question with a panel names what the label needs, and says for each need where the words show it, or that they do not: every need of its
 // rules and no other, each found line a line of the text and among the deciding words (so it is marked after the answer).
 function hasExplainProblems(s, item) {
@@ -132,12 +138,14 @@ function explainProblems(s, item) {
   flatAsks(s, item).forEach(ask => {
     if (ask.kind === 'number') { problems.push(...numberExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     if (ask.kind === 'tap') { problems.push(...tapExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
+    if (ask.kind === 'text') { problems.push(...textExplainProblems(ask, `ask ${ask.id}`)); return; }
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
     if (!options.some(o => o.ok)) problems.push(`${where} has no right option`);
     if (ask.many === undefined && options.filter(o => o.ok).length > 1) problems.push(`${where} has more than one right option and does not take several`);
     options.filter(o => !o.ok && !o.then && !o.slip).forEach(o => problems.push(`${where}: the wrong option "${o.text}" has neither a line of its own nor a slip`));
     options.filter(o => o.slip && !ids.includes(o.slip)).forEach(o => problems.push(`${where}: the slip "${o.slip}" is not in the subject's list of slips`));
   });
+  if (!flatAsks(s, item).some(a => s.engine.askIsScored(a))) problems.push('it has no ask that can be scored: a line written against a model is never marked');
   const segments = item.blocks.flatMap(b => s.engine.segmentsOf(b)).map(x => x.id);
   (item.deciding || []).filter(id => !segments.includes(id)).forEach(id => problems.push(`deciding "${id}" is not a segment of the blocks`));
   problems.push(...hasExplainProblems(s, item));

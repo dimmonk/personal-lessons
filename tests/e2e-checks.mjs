@@ -3,7 +3,8 @@
 // tests/e2e-number.mjs and e2e-math.mjs; the papers and the learner's own data of step 4 (X24, X27, and X26, Wealth's pilot walked) are in
 // tests/e2e-own.mjs and e2e-wealth.mjs; the articles, the tap and the charts of step 5 (X15, X31, and the chart half of X20, which is in
 // tests/e2e-number.mjs beside the figure half; and X30, Stats' pilot walked) are in tests/e2e-feed.mjs and e2e-stats.mjs; the labels, the panel
-// and the sides of step 6 (X32, and X33, Ideology's pilot walked) are in tests/e2e-labels.mjs. Each is a function of the environment
+// and the sides of step 6 (X32, and X33, Ideology's pilot walked) are in tests/e2e-labels.mjs; the message, the line to write and the questions of
+// four asks of step 7 (X34, X35, and X36, Psychology's pilot walked) are in tests/e2e-account.mjs and e2e-psychology.mjs. Each is a function of the environment
 // (e2e-env.mjs) that drives the real app, in Chromium, with the test subject loaded, and returns its checker: how many assertions it
 // made and which failed. tests/e2e-controls.mjs runs every one of them against the app with a seeded fault and requires exactly
 // that check to go red.
@@ -17,6 +18,8 @@ import { HISTORY_CHECKS } from './e2e-history.mjs';
 import { FEED_CHECKS } from './e2e-feed.mjs';
 import { STATS_CHECKS } from './e2e-stats.mjs';
 import { LABEL_CHECKS } from './e2e-labels.mjs';
+import { ACCOUNT_CHECKS } from './e2e-account.mjs';
+import { PSYCHOLOGY_CHECKS } from './e2e-psychology.mjs';
 
 // A Monday. Reviews run Monday to Sunday, so the tests that move through days start on one and name the days they move to.
 const MONDAY = '2026-11-02', WEDNESDAY = '2026-11-04', SUNDAY = '2026-11-08', NEXT_MONDAY = '2026-11-09';
@@ -280,4 +283,4 @@ export async function X23(env) {
   return c;
 }
 
-export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X15: FEED_CHECKS.X15, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, X30: STATS_CHECKS.X30, X31: FEED_CHECKS.X31, X32: LABEL_CHECKS.X32, X33: LABEL_CHECKS.X33, ...SOUND_CHECKS };
+export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X15: FEED_CHECKS.X15, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, X30: STATS_CHECKS.X30, X31: FEED_CHECKS.X31, X32: LABEL_CHECKS.X32, X33: LABEL_CHECKS.X33, X34: ACCOUNT_CHECKS.X34, X35: ACCOUNT_CHECKS.X35, X36: PSYCHOLOGY_CHECKS.X36, ...SOUND_CHECKS };

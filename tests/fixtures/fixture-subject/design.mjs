@@ -71,11 +71,23 @@ export const LABELS_DESIGN = {
   pilot: 'l1',
   tried: { pilot: { date: '2026-10-11', words: 'Clear on a phone.' } }
 };
-export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN };
+export const ACCOUNT_DESIGN = {
+  subject: 'account',
+  kinds: ['judging'],
+  endResult: 'Say what someone did, from the account of it, and what to do next.',
+  realMoment: 'A friend writes to you about someone, or you read your own note after an argument.',
+  test: 'Four new accounts: tap the line that says what they did in each; at least 3 of 4 right.',
+  practice: 'Tap the line that says what they did, with the checklist beside the account at first and then not, and feedback after each answer.',
+  approved: { endResult: '2026-10-11', practice: '2026-10-11', pilot: '2026-10-11' },
+  parts: [{ id: '1', title: 'What they did' }],
+  pilot: 'l1',
+  tried: { pilot: { date: '2026-10-11', words: 'Clear on a phone.' } }
+};
+export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN, account: ACCOUNT_DESIGN };
 // the files of the test subjects, in load order, relative to this folder
 export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 'items-timing.js', 'l1.lesson.js', 'l2.lesson.js',
   'chorus-subject.js', 'chorus-l1.lesson.js', 'chorus-l2.lesson.js', 'till-subject.js', 'till-items.js', 'till-l1.lesson.js',
   'ledger-subject.js', 'ledger-items.js', 'ledger-l1.lesson.js', 'feed-subject.js', 'feed-items.js', 'feed-l1.lesson.js',
-  'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js'];
+  'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js', 'account-subject.js', 'account-items.js', 'account-l1.lesson.js'];
 // the ids of the test subjects, in the order they load
-export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels'];
+export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account'];

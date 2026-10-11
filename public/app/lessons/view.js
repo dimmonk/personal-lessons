@@ -257,7 +257,18 @@ const SAY = {
   hasFound: 'Found',
   hasMissing: 'Missing',
   hasNowhere: 'The words do not say it.',
-  splitHeading: name => `${name}, side by side`
+  splitHeading: name => `${name}, side by side`,
+  helpPanelNamed: name => `${name} is shown beside the words.`,
+  // a message as it arrives (26.1.2), and a line the learner writes against a model (26.1)
+  msgYou: 'You',
+  writeHint: 'Write it in your own words, then tap Answer. Or tap Not yet to see a model line.',
+  writeBox: 'Your words',
+  writeNotYet: 'Not yet',
+  writePrivate: 'What you write stays on this phone.',
+  writeYours: 'Your words',
+  writeNone: 'You did not write one.',
+  writeModel: 'A model line',
+  writeCompare: 'Yours will not match word for word. Compare what each one says.'
 };
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const WORDS = ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];

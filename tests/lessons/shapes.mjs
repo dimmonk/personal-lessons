@@ -20,13 +20,14 @@ export const SUBJECT = obj(
   { id: str, name: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
     strands: arr(idTitle(), { empty: true }), readingShare: num },
-  { rules: map(obj({ name: str, needs: arr(idText) })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
+  { rules: map(obj({ name: str, needs: arr(idText) }, { heading: str })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
     refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool });
 function idTitle() { return obj({ id: str, title: str }); }
 
-/* blocks (26.1.2): prose, pair, document, figure, article, chart and panel so far */
+/* blocks (26.1.2): prose, pair, document, figure, article, chart, panel and message so far */
 // a line that can be tapped or marked; `para` starts a new paragraph, `fine` is small print, `slip` names the slip of tapping it when it is not the line
-const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str });
+// (`me` marks a line you sent, in a thread)
+const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str, me: bool });
 export const PROSE = obj({ kind: en('prose') }, { id: str, text, lines: arr(SEGMENT), tone: en('wrong') });
 export const PAIR = obj({ kind: en('pair'), a: any, b: any, compare: text });
 // the everyday papers, and a household's: statement (401(k), IRA, brokerage), fees (a plan's fee sheet), paystub, matchrule (the plan's employer
@@ -54,13 +55,16 @@ export const ARTICLE_FORMS = ['news', 'post', 'ad', 'report'];
 export const LABEL_SIDES = ['left', 'right'];
 export const LABEL = obj({ text: str, by: str, side: en(...LABEL_SIDES) });
 export const ARTICLE = obj({ kind: en('article'), form: en(...ARTICLE_FORMS), source: str, lines: arr(SEGMENT) }, { id: str, headline: SEGMENT, label: LABEL });
+// a message as it arrives (message-view.js): a friend's message about someone, a thread you are in, your own note
+export const MESSAGE_FORMS = ['friend', 'thread', 'note'];
+export const MESSAGE = obj({ kind: en('message'), form: en(...MESSAGE_FORMS), from: str, detail: str, lines: arr(SEGMENT) }, { id: str });
 // what a label needs, printed from the subject's `rules` (panel.js): the rules it names
 export const PANEL = obj({ kind: en('panel'), rules: arr(str) });
 // a chart drawn from its data (chart.js): bars or a line, an axis that may start above zero, one or two series
 export const CHART = obj({ kind: en('chart'), type: en('bars', 'line'), title: str, x: arr(str), y: obj({ from: num, to: num, step: num }, { unit: str }),
   series: arr(obj({ values: arr(num) }, { name: str })), source: str }, { labels: bool });
 
-/* asks (26.1): choose, number, form and tap so far */
+/* asks (26.1): choose, number, form, tap and text so far */
 const OPTION = obj({ id: str, text: str }, { ok: bool, slip: str, then: text, value: str });
 export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
   { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), many: bool, when: obj({ ask: str, is: arr(str) }),
@@ -68,6 +72,9 @@ export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
 
 // a tap ask (tap.js): the lines of the question, or of the block named by `in`, become tappable; `right` is the lines that decide it, or 'none'
 export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(str, arr(str)) }, { in: str, pick: int, none: text, when: obj({ ask: str, is: arr(str) }) });
+
+// a line the learner writes (text-view.js): built so far with a `model` line to compare with; accepted answers (`accept`, `count`) are built with Civics
+export const TEXT = obj({ id: str, kind: en('text'), prompt: text }, { model: text, accept: any, count: int, when: obj({ ask: str, is: arr(str) }) });
 
 // a number ask (number.js): one blank in the frame for each value of the answer; a value is a number or the name of one the question makes
 const VALUE = either(num, str);

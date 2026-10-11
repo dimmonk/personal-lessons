@@ -234,7 +234,10 @@ control; F adds mixing and the real forms. Passing all six is the gate 2 test.
 several sessions (principle 9).
 
 ## Gates 6 and 7
-Not started. The pilot is L1, tried cold on a phone.
+Gate 6 not passed: the pilot, lesson 1 "What did they do?", is built (2026-10-11, standard 26.10 step 7: the message in its forms friend,
+thread and note, the tap on a line of it, "Nothing here says what they did" as an answer with finding out as the next step, the fair
+rewrite picked or written against a model, the checklist of what counts as what they did beside the account while help lasts) and waits
+for the owner's try on a phone; its words go into `tried.pilot` above. Gate 7 not started.
 
 ## Audit of the existing lessons (2026-10-10)
 

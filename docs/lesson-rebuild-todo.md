@@ -44,3 +44,4 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [ ] **Try the pilots on your phone** and tell me in a line how each went (each line unlocks that subject's other lessons):
   Singing → Match a note; Basic Math → Ballpark and check; Wealth → What it costs a year; Statistical Claims → Find the
   claim and its number; Political Ideologies → Socialist, or not?
+- [x] The helpline in Psychology's pilot checked against thehotline.org (2026-10-11): 1.800.799.SAFE (7233) and text START to 88788, as written

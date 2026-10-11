@@ -25,6 +25,10 @@ const feedLesson = (id, ...rest) => ['subjects', 'feed', 'lessons', id, ...rest]
 const labelsItem = (id, ...rest) => ['subjects', 'labels', 'items', id, ...rest];
 const labelsLesson = (id, ...rest) => ['subjects', 'labels', 'lessons', id, ...rest];
 const labelsMeta = (...rest) => ['subjects', 'labels', 'meta', ...rest];
+// the test subject of messages, the written line and questions of four asks
+const accountItem = (id, ...rest) => ['subjects', 'account', 'items', id, ...rest];
+const accountLesson = (id, ...rest) => ['subjects', 'account', 'lessons', id, ...rest];
+const accountMeta = (...rest) => ['subjects', 'account', 'meta', ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -139,7 +143,22 @@ export const CONTROLS = [
   { rule: 'V76', name: 'a group with a label from one side and none from the other', data: (d, h) => h.setIn(d, labelsLesson('l1', 'flow', 3, 'set', 'items'), ['h-1']) },
   { rule: 'V79', name: 'a lesson whose last group still shows the panel', data: (d, h) => h.setIn(d, labelsLesson('l1', 'flow', 3, 'set', 'support'), { panel: true }) },
   { rule: 'V50', name: 'a need that uses the engine\'s word "item"', data: (d, h) => h.setIn(d, labelsMeta('rules', 'dry', 'needs', 0, 'text'), 'The item has no cloud.') },
-  { rule: 'V4', name: 'a need that shows its own id', data: (d, h) => h.setIn(d, labelsMeta('rules', 'dry', 'needs', 1, 'text'), 'The dry-ground is dry.') }
+  { rule: 'V4', name: 'a need that shows its own id', data: (d, h) => h.setIn(d, labelsMeta('rules', 'dry', 'needs', 1, 'text'), 'The dry-ground is dry.') },
+  // messages, the written line, a checklist with a heading, questions of four asks (step 7)
+  { rule: 'V70', name: 'a message of a form that is not one', data: (d, h) => h.setIn(d, accountLesson('l1', 'flow', 0, 'show', 0, 'form'), 'telegram') },
+  { rule: 'V70', name: 'a line you sent in a message from a friend', data: (d, h) => h.setIn(d, accountLesson('l1', 'flow', 0, 'show', 0, 'lines', 0, 'me'), true) },
+  { rule: 'V70', name: 'a thread with no line from the other person',
+    data: (d, h) => h.setIn(d, accountLesson('l1', 'flow', 0, 'show', 1, 'lines'), [{ id: 't-b', text: 'That is the third time.', me: true }]) },
+  { rule: 'V70', name: 'a message with no lines', data: (d, h) => h.setIn(d, accountLesson('l1', 'flow', 0, 'show', 2, 'lines'), []) },
+  { rule: 'V70', name: 'a written line that uses accepted answers', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'accept'), ['the leftovers']) },
+  { rule: 'V70', name: 'a rule with a heading of its own beside another rule in one panel',
+    data: (d, h) => h.setIn(h.setIn(d, accountMeta('rules', 'side'), { name: 'Another', needs: [{ id: 'side-one', text: 'It has one thing.' }] }), accountLesson('l1', 'flow', 0, 'show', 3, 'rules'), ['act', 'side']) },
+  { rule: 'V74', name: 'a written line with no model line to compare with', data: (d, h) => h.removeIn(d, accountItem('h-1', 'asks', 1, 'model')) },
+  { rule: 'V74', name: 'a question whose only ask is a written line',
+    data: (d, h) => h.updateIn(d, accountItem('h-1', 'asks'), asks => [asks[1]]) },
+  { rule: 'V50', name: 'a model line uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'model'), 'This item is the leftovers he ate.') },
+  { rule: 'V60', name: 'a model line in British spelling', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'model'), 'He ate the favourite leftovers I saved for lunch.') },
+  { rule: 'V50', name: 'a checklist heading uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountMeta('rules', 'act', 'heading'), 'What counts as an item') }
 ];
 
 // Rules with no seeded fault of their own, and why

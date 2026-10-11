@@ -429,3 +429,20 @@ table.ownsum td:last-child{white-space:normal}
 .hasneeds li.missing{background:color-mix(in srgb,var(--coral) 14%,transparent)}
 .hasneeds li b{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--text)}
 .hasline{font-family:var(--serif);font-size:14.5px;line-height:1.45;color:var(--dim)}
+
+/* ---------- a message as it arrives, and a line the learner writes ---------- */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.block-message{display:flex;flex-direction:column;gap:10px;padding:14px 16px;background:var(--raised);border:1px solid var(--border)}
+.msg-head{display:flex;flex-direction:column;gap:2px;margin:0}
+.msg-from{font-size:15px;font-weight:700;line-height:1.3;color:var(--text);overflow-wrap:anywhere}
+.msg-detail{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;line-height:1.5;color:var(--label)}
+.msg-lines{display:flex;flex-direction:column;gap:6px}
+.msg-line{align-self:flex-start;max-width:90%;padding:9px 12px;background:var(--field);font-size:16px;line-height:1.5;color:var(--body);overflow-wrap:anywhere}
+.msg-line.me{align-self:flex-end;background:var(--divider);color:var(--text)}
+.msg-note .msg-lines{gap:8px}
+.msg-note .msg-line{align-self:stretch;max-width:none;padding:0;background:none;font-family:var(--serif);font-size:16.5px;line-height:1.6}
+.msg-line .tapped{padding:0 2px}
+.writebox{display:block;width:100%;min-height:84px;padding:10px 12px;resize:vertical;background:var(--field);border:1px solid var(--border);border-radius:0;
+  color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.5}
+.writebox[disabled]{opacity:1;border-color:var(--rule);color:var(--bodydim);-webkit-text-fill-color:var(--bodydim)}
+.mark.note{border-color:var(--border);color:var(--dim)}

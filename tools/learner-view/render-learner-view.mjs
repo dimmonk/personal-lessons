@@ -43,8 +43,10 @@ const formName = form => { const name = FORM_NAMES[form] || form; return `${/^[a
 function blockLines(block, deciding = [], refs = [], extra = {}) {
   if (block.kind === 'panel') {
     if (extra.panel === false) return [];
-    return ['A panel, "What the label needs":', ...block.rules.flatMap(id => [`- ${extra.rules[id].name}`, ...extra.rules[id].needs.map((n, i) => `  ${i + 1}. ${n.text}`)])];
+    const own = block.rules.length === 1 && extra.rules[block.rules[0]].heading;   // a checklist with a heading of its own
+    return [`A panel, "${own || 'What the label needs'}":`, ...block.rules.flatMap(id => [...(own ? [] : [`- ${extra.rules[id].name}`]), ...extra.rules[id].needs.map((n, i) => `  ${i + 1}. ${n.text}`)])];
   }
+  if (block.kind === 'message') return messageLines(block, deciding);
   if (block.kind === 'document') {
     const tab = block.tab ? ` (a tab named "${block.tab}", one of a household's papers: one open at a time, the first at the start, and the one with a marked line after the answer)` : '';
     return [`${formName(block.form)}, "${block.title}"${tab}:`, '', ...(block.head ? [`> ${block.head.join('  |  ')}  (the column heads)`] : []),
@@ -63,6 +65,13 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
   const text = block.lines ? [block.lines.map(s => deciding.includes(s.id) ? `**${s.text}**` : s.text).join(' ')] : paras(block.text);
   if (block.tone === 'wrong') return [`A wrong idea, marked wrong: ${text.slice(0, -1).join(' ') || text.join(' ')}`, ...(text.length > 1 ? [`The right line: ${text[text.length - 1]}`] : [])];
   return text;
+}
+// a message as it arrives: who it is from and when, then each line (a thread names whose line it is; the other person's at the left, yours at the right)
+const MESSAGE_NAMES = { friend: 'A message from a friend about someone', thread: 'A text thread you are in', note: 'Your own note, written after an argument' };
+function messageLines(block, deciding) {
+  const mark = seg => deciding.includes(seg.id) ? `**${seg.text}**` : seg.text;
+  const who = seg => block.form !== 'thread' ? '' : seg.me ? '(you, at the right) ' : `(${block.from}, at the left) `;
+  return [`${MESSAGE_NAMES[block.form]}: "${block.from}", ${block.detail}.`, '', ...block.lines.map(l => `> ${who(l)}${mark(l)}`)];
 }
 const blocksText = (blocks, deciding, refs, extra = {}) => blocks.flatMap(b => [...blockLines(b, deciding, refs, extra), '']).filter((l, i, all) => l !== '' || all[i - 1] !== '').join('\n');
 
@@ -110,7 +119,15 @@ function tapAskLines(e, data, ask, marks, item) {
   if (ask.none) out.push(`- A button: "${paras(ask.none).join(' ')}"${marks && ask.right === 'none' ? ' (right)' : ''}${marks && ask.right !== 'none' ? ` — if chosen: ${SAY.tapThereIsOne}` : ''}`);
   return out;
 }
+// a line to write against a model: never scored; the model is shown after, beside what was written
+function textAskLines(e, ask, marks) {
+  const { SAY } = e;
+  return [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
+    `- ${SAY.writeHint} Nothing is marked: it is not scored. "${SAY.writeNotYet}" answers with nothing written. ${SAY.writePrivate} At most ${e.TEXT_MAX} characters.`,
+    ...(marks ? [`- After: "${SAY.writeYours}" (what was written, or "${SAY.writeNone}") beside "${SAY.writeModel}": ${paras(ask.model).join(' ')} ${SAY.writeCompare}`] : [])];
+}
 function askLines(e, data, ask, marks, item) {
+  if (ask.kind === 'text') return textAskLines(e, ask, marks);
   if (ask.kind === 'tap') return tapAskLines(e, data, ask, marks, item);
   if (ask.kind === 'form') return formAskLines(e, data, ask, item, marks);
   if (ask.kind === 'number') return numberAskLines(e, ask, item, marks);
@@ -122,14 +139,14 @@ function askLines(e, data, ask, marks, item) {
 }
 function questionLines(e, data, inst, support, label) {
   const item = inst.item, lines = [`#### ${label}${inst.seed !== undefined ? ` (made with fresh numbers; this is seed ${inst.seed})` : ''}`, '', blocksText(item.blocks, support && support.shown ? item.deciding : [], data.subjects.__current.meta.refs || [], { rules: data.subjects.__current.meta.rules, panel: !!(support && support.panel) })];
-  if (support && support.panel && e.panelBlocksOf(item).length) lines.push(`Help on screen: ${e.SAY.helpPanel}`, '');
+  if (support && support.panel && e.panelBlocksOf(item).length) { const own = e.itemRuleIds(item).map(id => data.subjects.__current.meta.rules[id]).filter(r => r.heading); lines.push(`Help on screen: ${own.length === 1 && e.itemRuleIds(item).length === 1 ? e.SAY.helpPanelNamed(own[0].heading) : e.SAY.helpPanel}`, ''); }
   if (support && support.shown) lines.push('Help on screen: the words that decide it are marked.', '');
   const shown = e.shownStepIds(item, support);
   if (shown.length) lines.push('Help on screen: the working up to the last steps.', ...item.steps.filter(s => shown.includes(s.id)).map(s => `- ${s.does} ${s.working}`), '');
   e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true, item), ''));
   lines.push(`After the answer: the deciding words are marked${(item.deciding || []).length ? '' : ' (none named)'}. Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
-  if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${e.SAY.hasHeading(g.name)}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
+  if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
   if (item.figure) lines.push('A picture is added to the feedback:', ...blockLines(item.figure));
   if (item.redraw) lines.push(`A chart is added to the feedback, "${SAYWORDS.redraw}": the chart above drawn again with the scale starting at zero.`);
   if (item.steps) lines.push('The working:', ...item.steps.map(s => `- ${s.does} ${s.working}`));
@@ -219,14 +236,15 @@ export function renderLesson(loaded, subjectId, lessonId) {
       const item = subject.items[step.worked];
       out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || [], { rules: subject.meta.rules }));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
-      const right = a => a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
-      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
-        ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${e.SAY.hasHeading(g.name)}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
+      const right = a => a.kind === 'text' ? paras(a.model).join(' ') : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
+        ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
         ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');
     } else {
       const set = step.set, refs = e.flatRefs(set.items), sung = refs.some(isSung), count = refs.reduce((k, r) => k + e.refCount(r), 0);
       const HELP_WORDS = { panel: 'what the label needs, shown beside the words', line: 'the line and the notes drawn while singing', estimateCheck: 'a line that says when the answer and the estimate disagree: an answer more than double or less than half of the learner\'s own estimate is held back once' };
-      const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (HELP_WORDS[k] || k) : `${k} ${v}`).join(', ')})` : '';
+      const checklist = set.support && set.support.panel && refs.length && refs.every(r => { const d = subject.items[e.refId(r)] || subject.gens[e.refId(r)]; return e.itemRuleIds(d).length === 1 && subject.meta.rules[e.itemRuleIds(d)[0]].heading; });
+      const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (k === 'panel' && checklist ? 'the checklist of what counts, shown beside the words' : HELP_WORDS[k] || k) : `${k} ${v}`).join(', ')})` : '';
       if (sung) {
         out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum with the line drawn. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}. A missed try comes back at least three tries later, with a new note, until it is on the note.`, '');
         out.push(...rangeFirst(e, refs, rangeShown), ...sungRefLines(e, refs, set.support, 'Try', n));

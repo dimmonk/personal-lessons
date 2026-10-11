@@ -99,8 +99,8 @@ function paintWorked(step){
 // the right answers of a worked item, then why
 function workedAnswerHtml(data, inst){
   const item = inst.item;
-  const right = a => a.kind === 'tap' ? tapRightText(a, item) : a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
-  const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
+  const right = a => a.kind === 'text' ? paras(a.model).join(' ') : a.kind === 'tap' ? tapRightText(a, item) : a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
+  const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(a.kind === 'text' ? SAY.writeModel : SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '', redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
   return `<div class="feedback"><div class="marks">${marks}</div>${block(SAY.whyLabel, paras(item.reason))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}</div>`;

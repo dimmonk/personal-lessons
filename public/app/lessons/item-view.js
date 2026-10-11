@@ -34,7 +34,7 @@ function pairHtml(block, ctx){
     <p class="compare"><span class="m lab">${esc(SAY.compare)}</span>${esc(paras(block.compare).join(' '))}</p></div>`;
 }
 const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block),
-  ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx) };
+  ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx), message: (block, ctx) => messageHtml(block, ctx) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
@@ -70,7 +70,7 @@ function tapHtml(data, ask, st){
     <span class="forline">${esc(n > 1 ? SAY.tapMany(n) : SAY.tapOne)}</span>${none ? `<div class="opts">${none}</div>` : ''}${submit}</div>`;
 }
 const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtml(data, ask, st, ctx), form: (data, ask, st, ctx) => formHtml(data, ask, st, ctx), sing: (data, ask, st) => singAskHtml(data, ask, st),
-  tap: (data, ask, st) => tapHtml(data, ask, st) };
+  tap: (data, ask, st) => tapHtml(data, ask, st), text: (data, ask, st) => writeHtml(data, ask, st) };
 
 /* ---------- the item ---------- */
 // The item as it stands: its blocks (deciding words marked when `deciding` is on), then the asks open now, then, once
@@ -85,7 +85,7 @@ function itemHtml(data, inst, state){
     panel: !!(support && support.panel) };
   const steps = shownStepsHtml(item, support);
   const hint = (support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '')
-    + (support && support.panel && panelBlocksOf(item).length ? `<p class="hintline">${esc(SAY.helpPanel)}</p>` : '');
+    + (support && support.panel && panelBlocksOf(item).length ? `<p class="hintline">${esc(panelHint(data, item))}</p>` : '');
   const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, sing: state.sing,
     typed: state.typed, looked: state.looked, calc: state.calc }, { item, support, answers: state.a })).join('');
   return `<div class="item" data-item="${esc(inst.key)}" ${inst.seed === undefined ? '' : `data-seed="${inst.seed}"`}>
@@ -111,15 +111,16 @@ function shownStepsHtml(item, support){
 // In this order (26.2): each ask's mark; the deciding words (marked in the blocks by itemHtml); the reason; after a miss, one line on
 // the learner's own choice; then what the item has of: the consequence of the right action, what you would need to see, the working.
 function feedbackHtml(data, inst, support, answers, score){
-  const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in score.r);
+  const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in answers);
   const marks = asked.map(a => markHtml(data, a, answers[a.id], score.r[a.id], item, answers)).join('');
-  const misses = asked.filter(a => score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id], item)).join('');
+  const written = asked.some(a => a.kind === 'text') ? `<p class="hintline">${esc(SAY.writeCompare)}</p>` : '';
+  const misses = asked.filter(a => askIsScored(a) && score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id], item)).join('');
   const consequences = asked.filter(a => a.kind === 'choose').flatMap(a => chooseOptions(data, a).filter(o => o.ok && o.then).map(o => o.then));
   const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '';
   const redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
-  return `<div class="feedback" data-feedback><div class="marks">${marks}</div>
+  return `<div class="feedback" data-feedback><div class="marks">${marks}</div>${written}
     ${block(SAY.whyLabel, paras(item.reason))}${misses}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}${working}</div>`;
 }
 // the chart of a question whose axis was cut, drawn again from zero: the same numbers on the scale that does not exaggerate them
@@ -133,6 +134,7 @@ function markHtml(data, ask, answer, result, item, answers){
   if(ask.kind === 'sing') return singMarksHtml(ask, answer, ok);
   if(ask.kind === 'number') return numberMarkHtml(ask, answer, result, item, answers);
   if(ask.kind === 'form') return formMarksHtml(data, ask, answer, item);
+  if(ask.kind === 'text') return writeMarkHtml(ask, answer);
   if(ask.kind === 'tap') return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? tapRightText(ask, item) : `${SAY.theAnswer}: ${tapRightText(ask, item)}`)}</span></div>`;
   const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text);
   return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;

@@ -71,7 +71,7 @@ The working, one step at a time:
 1. Check each need against the words. The industry is there: the power companies. The owner is not, because they stay private. So the label is not earned.
 1. Name what the words do earn. A tax pays a benefit to every household, and the companies stay private. That is the social democrat idea.
 
-Then the answer: Not earned / Social democrat / The power companies would stay privately owned and keep running as they do now.. “Socialist” needs a main industry named and the public or the workers owning it. The plan names one, the power companies. But “The power companies would stay privately owned and keep running as they do now”, so no one but private owners owns them. A tax that pays part of every household’s heating bill is a benefit paid for by taxes, with business left private. That is what a social democrat idea is.
+Then the answer: Not earned / Social democrat / The power companies would stay privately owned and keep running as they do now. “Socialist” needs a main industry named and the public or the workers owning it. The plan names one, the power companies. But “The power companies would stay privately owned and keep running as they do now”, so no one but private owners owns them. A tax that pays part of every household’s heating bill is a benefit paid for by taxes, with business left private. That is what a social democrat idea is.
 What you would need to see: To earn “socialist”, the words would have to say the public or the workers would own the power companies.
 What “Socialist” needs, each need found (with its line) or missing:
 - Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “The money would come from a tax on the profits of the state’s power companies.”

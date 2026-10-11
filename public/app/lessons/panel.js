@@ -1,7 +1,9 @@
 /* ===================== LESSONS: WHAT A LABEL NEEDS ===================== */
 // Lesson standard 26.1 (`rules`, `has`, a facet that is compared) and 26.1.2 (the `panel` block and the label on a `post`). Pure: no page and
 // no storage, so the player, the validator and the tests all read what a label needs, and what the words show of it, the same way.
-//   subject.rules   { [ruleId]: { name, needs: [{ id, text }] } }   what a label (or a word) needs; need ids are different across the subject
+//   subject.rules   { [ruleId]: { name, needs: [{ id, text }], heading? } }   what a label (or a word) needs; need ids are different across the subject.
+//                   A rule with a `heading` is a checklist of its own (what counts as what someone did): the heading stands over its needs in
+//                   the panel and over the needs found or missing in the feedback, in place of "What the label needs", and the rule is alone in its panel
 //   panel block     { kind: 'panel', rules: [ruleId] }              those rules, printed from the subject's record, beside the question while
 //                                                                   its group has the help `panel`; always on a teaching screen
 //   item.has        { [needId]: segmentId | null }                  each need of the question's panel found (the line that shows it) or missing
@@ -23,7 +25,7 @@ function hasLines(data, item) {
   const lines = item.blocks.flatMap(segmentsOf), has = item.has || {};
   return itemRuleIds(item).map(id => {
     const rule = ruleOf(data, id);
-    return { id, name: rule.name, needs: rule.needs.map(n => ({ ...n, found: has[n.id] ? lines.find(s => s.id === has[n.id]) || null : null })) };
+    return { id, name: rule.name, heading: rule.heading, needs: rule.needs.map(n => ({ ...n, found: has[n.id] ? lines.find(s => s.id === has[n.id]) || null : null })) };
   });
 }
 

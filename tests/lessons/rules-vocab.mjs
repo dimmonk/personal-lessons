@@ -20,7 +20,8 @@ function learnerStrings(value, where, quoted = false, out = []) {
   else if (Array.isArray(value)) value.forEach((x, i) => learnerStrings(x, `${where}[${i}]`, quoted, out));
   else if (value && typeof value === 'object') {
     const isQuote = quoted || QUOTING.includes(value.kind);
-    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k)).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote, out));
+    // `model` is an item id in a step that shows a sample of the learner's own data, and the line to compare with in a text ask
+    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote, out));
   }
   return out;
 }
