@@ -16,19 +16,27 @@ const FIGURE_WORDS = {
   plan: d => [`A plan drawn to one scale, each side written in ${d.unit}: ${d.parts.map(p => `${p.w} by ${p.h}${p.label ? ` (${p.label})` : ''}${p.cut ? ', cut out' : ''}`).join('; ')}.`],
   years: d => [`A table, year by year: ${d.columns.join(' | ')}; ${d.rows.map(r => r.join(' | ')).join('; ')}.`]
 };
-function blockLines(block, deciding = []) {
+const FORM_NAMES = { fees: 'fee sheet', paystub: 'pay stub', matchrule: 'match rule', beneficiary: 'beneficiary page', foreign: 'foreign account summary', table: 'plain table' };
+const formName = form => { const name = FORM_NAMES[form] || form; return `${/^[aeiou]/i.test(name) ? 'An' : 'A'} ${name}`; };
+function blockLines(block, deciding = [], refs = []) {
   if (block.kind === 'document') {
-    return [`A ${block.form}, "${block.title}":`, '', ...block.rows.map(r => `> ${r.cells.map(cellText).join('  |  ')}${deciding.includes(r.id) ? '  <- marked after the answer' : ''}`), ...(block.notes || []).map(n => `> (${n})`)];
+    const tab = block.tab ? ` (a tab named "${block.tab}", one of a household's papers: one open at a time, the first at the start, and the one with a marked line after the answer)` : '';
+    return [`${formName(block.form)}, "${block.title}"${tab}:`, '', ...(block.head ? [`> ${block.head.join('  |  ')}  (the column heads)`] : []),
+      ...block.rows.map(r => `> ${r.cells.map(cellText).join('  |  ')}${deciding.includes(r.id) ? '  <- marked after the answer' : ''}`), ...(block.notes || []).map(n => `> (${n})`)];
+  }
+  if (block.kind === 'ref') {
+    const ref = refs.find(r => r.id === block.ref);
+    return [`A value looked up, never memorized: "${ref.text}": ${ref.value}. It prints "Looked up ${ref.asOf}" and "Source: ${ref.source}", says to check the source, and after a year says to look it up again.`];
   }
   if (block.kind === 'figure') return FIGURE_WORDS[block.type](block.data);
   if (block.kind === 'pair') {
-    return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding).join(' ')} | ${blockLines(block.b, deciding).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
+    return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding, refs).join(' ')} | ${blockLines(block.b, deciding, refs).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
   }
   const text = block.lines ? [block.lines.map(s => deciding.includes(s.id) ? `**${s.text}**` : s.text).join(' ')] : paras(block.text);
   if (block.tone === 'wrong') return [`A wrong idea, marked wrong: ${text.slice(0, -1).join(' ') || text.join(' ')}`, ...(text.length > 1 ? [`The right line: ${text[text.length - 1]}`] : [])];
   return text;
 }
-const blocksText = (blocks, deciding) => blocks.flatMap(b => [...blockLines(b, deciding), '']).join('\n');
+const blocksText = (blocks, deciding, refs) => blocks.flatMap(b => [...blockLines(b, deciding, refs), '']).join('\n');
 
 /* ---------- a question ---------- */
 const TOL_WORDS = tol => 'round' in tol ? `to the nearest ${tol.round}` : 'band' in tol ? `from ${tol.band[0]} to ${tol.band[1]} times the exact answer` : [...('abs' in tol ? [`within ${tol.abs}`] : []), ...('rel' in tol ? [`within ${Math.round(tol.rel * 100)}%`] : [])].join(' or ');
@@ -43,15 +51,36 @@ function numberAskLines(e, ask, item, marks) {
   if (estimate) lines.push(`- Shown after: how far off it was, for example "${e.SAY.estimateLine('$' + (want[0] * 1.1).toFixed(2), e.frameFilled(ask, want), { pct: 10, dir: 'over' })}"`);
   return lines;
 }
+// a form: one box for each number and one set of options for each choice, answered whole; each field is described as the ask of its own kind
+function formAskLines(e, data, ask, item, marks) {
+  const lines = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
+    '- The learner fills in every field, then taps Answer. Answer stays shut until every box holds a number and every choice has an option; nothing is marked before it.'];
+  ask.fields.forEach(f => {
+    const as = e.formFieldAsk(f);
+    if (f.type === 'number') {
+      lines.push(`- ${f.label}: a number in ${(f.frame || '__').replace(/__/g, '[ ]')}${f.unit ? ` ${f.unit}` : ''}`);
+      if (marks) {
+        lines.push(`  - Right (${TOL_WORDS(e.tolOf(f))}): ${e.frameFilled(as, e.numberAnswers(item, as))}`);
+        (f.traps || []).forEach(t => lines.push(`  - If typed ${e.frameFilled(as, e.numberAnswers(item, { answer: t.value }))}: ${t.then ? paras(t.then).join(' ') : `a slip: ${t.slip}`}`));
+      }
+    } else {
+      lines.push(`- ${f.label}: choose one`);
+      e.chooseOptions(data.subjects.__current, as).forEach(o => lines.push(`  - ${o.text}${marks && o.ok ? ' (right)' : ''}${marks && !o.ok ? ` — if chosen: ${o.then ? paras(o.then).join(' ') : `a slip: ${o.slip}`}` : ''}`));
+    }
+  });
+  return lines;
+}
 function askLines(e, data, ask, marks, item) {
+  if (ask.kind === 'form') return formAskLines(e, data, ask, item, marks);
   if (ask.kind === 'number') return numberAskLines(e, ask, item, marks);
   const options = e.chooseOptions(data.subjects.__current, ask);
   const lines = [`**${paras(ask.prompt).join(' ')}**${ask.many ? ' (choose every one that fits)' : ''}${ask.when ? ' (opens only after a certain answer)' : ''}`];
+  if (ask.shuffle) lines.push('(the options come in an order that depends on the seed of the question)');
   options.forEach(o => lines.push(`- ${o.text}${marks && o.ok ? ' (right)' : ''}${marks && !o.ok ? ` — if chosen: ${o.then ? paras(o.then).join(' ') : `a slip: ${o.slip}`}` : ''}`));
   return lines;
 }
 function questionLines(e, data, inst, support, label) {
-  const item = inst.item, lines = [`#### ${label}${inst.seed !== undefined ? ` (made with fresh numbers; this is seed ${inst.seed})` : ''}`, '', blocksText(item.blocks, support && support.shown ? item.deciding : [])];
+  const item = inst.item, lines = [`#### ${label}${inst.seed !== undefined ? ` (made with fresh numbers; this is seed ${inst.seed})` : ''}`, '', blocksText(item.blocks, support && support.shown ? item.deciding : [], data.subjects.__current.meta.refs || [])];
   if (support && support.shown) lines.push('Help on screen: the words that decide it are marked.', '');
   const shown = e.shownStepIds(item, support);
   if (shown.length) lines.push('Help on screen: the working up to the last steps.', ...item.steps.filter(s => shown.includes(s.id)).map(s => `- ${s.does} ${s.working}`), '');
@@ -104,6 +133,25 @@ function rangeFirst(e, refs, shown) {
   return ['When no range is stored yet, this group opens with the range exercise, and the group follows it:', '', ...singLines(e, { sing: { task: 'range' }, n: 1 }, null, 'First')];
 }
 
+/* ---------- the step on the learner's own data ---------- */
+// What the learner meets, in order. Every sentence the app prints is read from SAY; the fields are read from the subject's private forms.
+const fieldWords = f => `${f.label}${f.optional ? SAYPLAIN.optional : ''} (${f.type === 'choose' ? 'choose one' : f.type === 'number' ? `a number${f.unit ? `, in ${f.unit}` : ''}` : f.type === 'date' ? 'a day' : 'words'})${f.warn ? `; over ${f.warn.over}: "${f.warn.text}"` : ''}`;
+const SAYPLAIN = { optional: ' (optional)' };
+function ownLines(e, subject, lesson, step, at) {
+  const { SAY } = e, form = subject.meta.own[step.own], actions = Object.values(subject.meta.own).find(f => f.into === 'actions'), lists = subject.meta.lists;
+  const model = step.model ? subject.items[step.model] : null, trigger = lesson.trigger && ((lists.trigger || []).find(t => t.id === lesson.trigger) || {}).text;
+  const out = [`## ${at}: On your own accounts`, '', 'The same step on the learner\'s own data. Nothing here is scored, stored as a try, logged or sent: it is written to this phone only (the sheet, the dated changes and the moments marked).', ''];
+  if (trigger) out.push(`**Waits for a moment.** Until the learner marks "${trigger}" (on this screen, or on the subject screen) the step says "${SAY.ownWaitTitle}": "${SAY.ownWaitLine(trigger)}" with "${SAY.ownWaitMark}" and "${SAY.ownWaitLater}".`, '');
+  out.push(`**The sheet, when it is empty.** "${SAY.ownSheetTitle}": ${SAY.ownSheetHow} ${SAY.ownPrivate}`, '',
+    ...form.fields.map(f => `- ${fieldWords(f)}`), ...(form.rows ? [`- ${form.rows.label}, one row for each, added with "${SAY.ownAddFund}":`, ...form.rows.fields.map(f => `  - ${fieldWords(f)}`)] : []), '',
+    `Each account has "${SAY.ownRemoveAccount}" and the sheet has "${SAY.ownAddAccount}". Refused, with a line under the field and nothing stored: a field left empty, a word where a number goes, and any run of ${e.OWN_MAX_DIGITS || 8} or more digits ("${SAY.ownDigits}"). A fund row or an account left wholly blank is dropped. Buttons: "${SAY.ownSave}", and "${SAY.ownNoAccounts}" (then "${SAY.ownNoAccountsLine}").`, '');
+  out.push(`**What it costs.** "${SAY.ownCostsTitle}": ${SAY.ownCostsHow} Each account is a statement of its funds (value, yearly cost, dollars a year), the fees, and "${SAY.ownThisCosts}" in dollars; then "${SAY.ownAllCost}" in dollars with its share of what is in the accounts. A yearly cost over the form's own limit is warned about and kept; funds that add up to a different balance are said so.`, '');
+  if (model) out.push(`**The lines to find.** "${SAY.ownModelHeading}": ${SAY.ownModelLine} The sample of the worked example is shown again with its deciding lines marked:`, '', blocksText(model.blocks, model.deciding || [], subject.meta.refs || []));
+  out.push(`**The change.** "${SAY.ownActionHeading}": ${SAY.ownActionHow}`, '', ...actions.fields.map(f => `- ${fieldWords(f)}`), '',
+    `Buttons: "${SAY.ownSaveAction}" (the day may not be in the past) and "${SAY.ownDoneNow}" (needs only what and where, and is marked done today). Each change is listed with "${SAY.ownCalendar}", which saves a calendar file (.ics) for its day with a reminder at nine, and "${SAY.ownMarkDone}". "${SAY.ownNothing}" Then "${SAY.goOn}".`, '');
+  return out;
+}
+
 /* ---------- a lesson ---------- */
 export function renderLesson(loaded, subjectId, lessonId) {
   const e = loaded.engine, data = { ...loaded, subjects: { ...loaded.subjects, __current: loaded.subjects[subjectId] } };
@@ -112,6 +160,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
   const part = (subject.meta.parts.find(p => p.id === lesson.part) || {}).title;
   const out = [`# ${subject.meta.name}: ${lesson.title}`, '',
     `Revision ${lesson.rev}, ${lesson.status}${lesson.status === 'draft' ? ' (the screen carries the draft line)' : ''}. Part: ${part || 'none'}. Where the subject ends up: ${subject.meta.endResult}`, '',
+    ...(lesson.trigger ? [`Waits for a moment: the learner marks "${((subject.meta.lists.trigger || []).find(t => t.id === lesson.trigger) || {}).text}" before the step on their own data opens.`, ''] : []),
     '## The why', '', ...paras(lesson.why), ''];
   let n = 0;
   // a made question is shown with the seed of its place in the lesson, so the numbers in the view differ from one question to the next
@@ -119,12 +168,13 @@ export function renderLesson(loaded, subjectId, lessonId) {
   const rangeShown = { done: false }, needsRange = ref => isSung(ref) && e.SING_NEEDS_RANGE.includes(ref.sing.task);
   lesson.flow.forEach((step, i) => {
     const at = `Step ${i + 1}`;
-    if (step.show) out.push(`## ${at}: ${step.title}`, '', blocksText(step.show));
+    if (step.show) out.push(`## ${at}: ${step.title}`, '', blocksText(step.show, [], subject.meta.refs || []));
+    else if (step.own) out.push(...ownLines(e, subject, lesson, step, at));
     else if (step.worked) {
       const item = subject.items[step.worked];
-      out.push(`## ${at}: A worked example`, '', blocksText(item.blocks));
+      out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || []));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
-      const right = a => a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      const right = a => a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
       out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ')}. ${paras(item.reason).join(' ')}`, '');
     } else {
       const set = step.set, refs = e.flatRefs(set.items), sung = refs.some(isSung), count = refs.reduce((k, r) => k + e.refCount(r), 0);
@@ -139,7 +189,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
         rangeShown.done ||= refs.some(needsRange);
         return;
       }
-      out.push(`## ${at}: Questions`, '', `${count} questions, ${set.order}${help}${set.mix ? `, with about ${Math.round(set.mix.share * 100)}% from earlier lessons mixed in, unlabeled` : ''}. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.`, '');
+      out.push(`## ${at}: Questions`, '', `${count} question${count === 1 ? '' : 's'}, ${set.order}${help}${set.mix ? `, with about ${Math.round(set.mix.share * 100)}% from earlier lessons mixed in, unlabeled` : ''}. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.`, '');
       refs.forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(typeof ref === 'string' ? ref : { ...ref }), set.support, `Question ${++n}`)); });
       out.push('Then a screen: you can stop here, your place is kept.', '');
     }

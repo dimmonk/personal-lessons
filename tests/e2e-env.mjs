@@ -6,9 +6,9 @@ import { startRecorder } from './fixtures/audio-recorder.mjs';
 
 export const WIDTHS = [360, 390, 768, 1200, 1600];
 
-// the page's clock plus a number of days, kept across a reload in the tab (sessionStorage), so a test can move to the day a review is due
+// the page's clock plus a number of milliseconds, kept across a reload in the tab (sessionStorage), so a test can move to the day a review is due
 const SKEW_SCRIPT = `(() => {
-  const Real = Date, skew = () => Number(sessionStorage.getItem('__skew') || 0) * 86400000;
+  const Real = Date, skew = () => Number(sessionStorage.getItem('__skew') || 0);
   class Skewed extends Real { constructor(...a) { if (a.length) super(...a); else super(Real.now() + skew()); } static now() { return Real.now() + skew(); } }
   window.Date = Skewed;
 })();`;
@@ -48,11 +48,11 @@ export function makeEnv(browser, server) {
     await page.reload();
     return { context, page, outside };
   };
-  // makes it a given day ('2026-11-02') in this tab, whatever the real day is: the weeks of a review depend on the weekday, so a test fixes it
+  // makes it a given day ('2026-11-02') in this tab, whatever the real day is: the weeks of a review depend on the weekday, so a test fixes it.
+  // The page's clock is put at noon of that day, so a change of clocks between now and then (the first Sunday of November) cannot move it a day.
   env.setDay = async (page, day) => {
-    const [y, m, d] = day.split('-').map(Number), midnight = date => new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
-    const days = Math.round((new Date(y, m - 1, d).getTime() - midnight(new Date())) / 86400000);
-    await page.evaluate(n => sessionStorage.setItem('__skew', String(n)), days);
+    const [y, m, d] = day.split('-').map(Number), ms = new Date(y, m - 1, d, 12).getTime() - Date.now();
+    await page.evaluate(n => sessionStorage.setItem('__skew', String(n)), ms);
     await page.reload();
   };
 

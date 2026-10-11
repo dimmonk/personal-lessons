@@ -56,6 +56,7 @@ function paintLesson(){
   if(step.show) return paintShow(step);
   if(step.worked) return paintWorked(step);
   if(step.set) return startSet(step);
+  if(step.own) return paintOwn(step);
   return lessonFail(`${lesson.id}: unknown step ${at}`);
 }
 const goOn = () => moveLesson(LESSON.at + 1);
@@ -67,7 +68,7 @@ function paintWhy(){
   on('#fwd', goOn);
 }
 function paintShow(step){
-  lessonShell(`${heading(SAY.showHeading, step.title)}${blocksHtml(step.show, {})}`, nextAction(SAY.goOn));
+  lessonShell(`${heading(SAY.showHeading, step.title)}${blocksHtml(step.show, { data: LESSON.data, scope: `show|${LESSON.lesson.id}|${LESSON.at}` })}`, nextAction(SAY.goOn));
   on('#fwd', goOn);
 }
 
@@ -80,7 +81,7 @@ function paintWorked(step){
   const committing = ask && ask.kind === 'choose' && w.picked === null && !w.skipped;
   const finished = !committing && w.shown >= steps.length;
   const inst = { key: item.id, item };
-  const ctx = { deciding: finished ? item.deciding || [] : [] };
+  const ctx = { deciding: finished ? item.deciding || [] : [], data, scope: `worked|${item.id}` };
   const commit = committing
     ? `<div class="stepopen prompt" data-ask="${esc(ask.id)}"><p class="stem">${esc(SAY.workedCommit)}</p><p class="stem">${esc(paras(ask.prompt).join(' '))}</p><div class="opts">${chooseOptions(data, ask).map(o => `<button class="opt" data-commit="${esc(o.id)}">${esc(o.text)}</button>`).join('')}</div>
         <button class="linkish" id="workedSkip">${esc(SAY.workedShow)}</button></div>` : '';
@@ -98,7 +99,7 @@ function paintWorked(step){
 // the right answers of a worked item, then why
 function workedAnswerHtml(data, inst){
   const item = inst.item;
-  const right = a => a.kind === 'number' ? numberRightText(a, item) : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
+  const right = a => a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
   const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   return `<div class="feedback"><div class="marks">${marks}</div>${block(SAY.whyLabel, paras(item.reason))}${block(SAY.needLabel, paras(item.need))}</div>`;

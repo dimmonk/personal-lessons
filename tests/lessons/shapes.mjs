@@ -11,8 +11,11 @@ const idText = obj({ id: str, text: str });
 
 /* the subject (26.1) */
 const MIX_ENTRY = either(obj({ facet: str, value: str }, { min: num, max: num }), obj({ facet: str, equal: bool }));
-const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text', 'date') });
-const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) });
+// A field of a private form (26.3). A choice reads its words from one of the subject's lists. `warn` is the plausible range: a number over
+// `over` or under `under` is kept and the learner is told why it looks wrong.
+const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text', 'date') },
+  { list: str, unit: str, optional: bool, warn: obj({ text: text }, { over: num, under: num }) });
+const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }) });
 export const SUBJECT = obj(
   { id: str, name: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) })), mix: arr(MIX_ENTRY, { empty: true }),
@@ -25,8 +28,13 @@ function idTitle() { return obj({ id: str, title: str }); }
 const SEGMENT = obj({ id: str, text: str }, { note: str });
 export const PROSE = obj({ kind: en('prose') }, { text, lines: arr(SEGMENT), tone: en('wrong') });
 export const PAIR = obj({ kind: en('pair'), a: any, b: any, compare: text });
-export const DOCUMENT_FORMS = ['receipt', 'recipe', 'tag', 'offer'];
-export const DOCUMENT = obj({ kind: en('document'), form: en(...DOCUMENT_FORMS), title: str, rows: arr(obj({ id: str, cells: arr(str) }, { strong: bool })) }, { notes: arr(str) });
+// the everyday papers, and a household's: statement (401(k), IRA, brokerage), fees (a plan's fee sheet), paystub, matchrule (the plan's employer
+// match), beneficiary, foreign (a foreign account summary), table (plain). `head` names the columns; `tab` makes the paper one of a household's tabs.
+export const DOCUMENT_FORMS = ['receipt', 'recipe', 'tag', 'offer', 'statement', 'fees', 'paystub', 'matchrule', 'beneficiary', 'foreign', 'table'];
+export const DOCUMENT = obj({ kind: en('document'), form: en(...DOCUMENT_FORMS), title: str, rows: arr(obj({ id: str, cells: arr(str) }, { strong: bool })) },
+  { notes: arr(str), head: arr(str), tab: str });
+// a value looked up, named by id: the subject keeps its text, value, day and source (refs)
+export const REF_BLOCK = obj({ kind: en('ref'), ref: str });
 // a figure's numbers may be words in a generator's template ("{pct}"), filled when the question is made
 export const FIGURE_TYPES = ['rate-table', 'bar', 'plan', 'years'];
 export const FIGURE = obj({ kind: en('figure'), type: en(...FIGURE_TYPES), data: any });
@@ -43,7 +51,7 @@ export const FIGURE_DATA = {
 const OPTION = obj({ id: str, text: str }, { ok: bool, slip: str, then: text, value: str });
 export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
   { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), many: bool, when: obj({ ask: str, is: arr(str) }),
-    then: map(text), slips: map(str), answer: str });
+    then: map(text), slips: map(str), answer: str, shuffle: bool });
 
 // a number ask (number.js): one blank in the frame for each value of the answer; a value is a number or the name of one the question makes
 const VALUE = either(num, str);
@@ -51,6 +59,13 @@ const VALUES = either(VALUE, arr(VALUE));
 export const NUMBER = obj({ id: str, kind: en('number'), prompt: text, answer: VALUES },
   { frame: str, unit: str, places: int, estimate: bool, tol: obj({}, { abs: num, rel: num, round: num, band: arr(num) }),
     traps: arr(obj({ slip: str, value: VALUES }, { then: text })), when: obj({ ask: str, is: arr(str) }) });
+
+// a form ask (form.js): a prompt and fields, each a number or a choice; a field is the shape of the ask of its own kind without id, kind and prompt
+const FORM_NUMBER_FIELD = obj({ id: str, label: str, type: en('number'), answer: VALUES }, { frame: str, unit: str, places: int, tol: obj({}, { abs: num, rel: num, round: num, band: arr(num) }),
+  traps: arr(obj({ slip: str, value: VALUES }, { then: text })) });
+const FORM_CHOOSE_FIELD = obj({ id: str, label: str, type: en('choose') },
+  { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), then: map(text), slips: map(str), answer: str, shuffle: bool });
+export const FORM_ASK = obj({ id: str, kind: en('form'), prompt: text, fields: arr(either(FORM_NUMBER_FIELD, FORM_CHOOSE_FIELD)) }, { when: obj({ ask: str, is: arr(str) }) });
 
 /* items and generators */
 const STEP_DEF = obj({ id: str, does: text, working: text }, { ask: str });
@@ -64,7 +79,7 @@ const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }), obj({ sin
 const SUPPORT = obj({}, { panel: bool, line: bool, shown: bool, leave: int, estimateCheck: bool });
 const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffle') },
   { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });
-const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int });
+const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
 const CHECK = obj({ items: either(arr(REF), obj({ draw: obj({ strands: arr(str), n: int }) })), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
   { spoken: bool, seconds: int, retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds
@@ -72,4 +87,4 @@ export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ 
 export const stepKind = step => Object.keys(STEPS).find(k => step && typeof step === 'object' && k in step);
 export const LESSON = obj(
   { id: str, part: nullable(str), title: str, rev: int, status: en(...STATUSES), history, why: text, flow: arr(any), check: CHECK },
-  { role: en('baseline'), tried: obj({ date: str, words: str }) });
+  { role: en('baseline'), tried: obj({ date: str, words: str }), trigger: str });

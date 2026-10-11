@@ -37,16 +37,7 @@ function practiceBlockHtml(){
 // its notes. The site has no backend, so this is the only way it leaves the device.
 const exportBody = () => JSON.stringify({ exported: today(), standard: FC.STANDARD, engine: FC.ENGINE, log: logOf(),
   subjects: Object.fromEntries(SUBJECTS.map(s => [s.id, { items: itemsOf(s.id), seen: seenOf(s.id), notes: notesOf(s.id) }])) }, null, 2);
-function exportLog(){
-  const url = URL.createObjectURL(new Blob([exportBody()], { type: 'application/json' }));
-  const link = document.createElement('a');
-  link.href = url;
-  link.download = `fieldcraft-log-${today()}.json`;
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
-}
+const exportLog = () => saveFile(`fieldcraft-log-${today()}.json`, exportBody(), 'application/json');
 
 function subjectLine(s){
   const firsts = subjectFirstTries(s.id);

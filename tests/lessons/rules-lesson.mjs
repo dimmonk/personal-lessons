@@ -66,7 +66,8 @@ function doingSeconds(s, lv) {
   const group = (refs, support) => defsOf(s, refs).reduce((n, x) => n + asksTime(x.def, support), 0);
   const sets = lv.sets.reduce((n, set, i) => n + group(lv.setRefs[i], set.support), 0);
   const check = s.engine.checkIsDrawn(lv.lesson.check) ? lv.lesson.check.items.draw.n * DRAWN_ITEM_SECONDS : group(lv.checkRefs, null);
-  return sets + check;
+  const own = lv.lesson.flow.filter(step => step.own).length * DOING_SECONDS.form;   // the step on the learner's own data is doing, not reading
+  return sets + check + own;
 }
 export const V73 = subjectRule('V73', (s, check) => {
   for (const lv of s.lessons) {
@@ -90,9 +91,11 @@ function numberExplainProblems(s, item, ask, where, ids) {
   if (ask.estimate && before.some(a => a.kind === 'number' && !a.estimate)) problems.push(`${where}: the estimate comes after an exact answer; it is typed first`);
   return problems;
 }
+// the asks a question really holds: a form's fields are asks of their own kinds
+const flatAsks = (s, item) => item.asks.flatMap(a => a.kind === 'form' ? a.fields.map(f => ({ ...s.engine.formFieldAsk(f), id: `${a.id}.${f.id}` })) : [a]);
 function explainProblems(s, item) {
   const problems = [], ids = s.listIds.slip || [];
-  item.asks.forEach(ask => {
+  flatAsks(s, item).forEach(ask => {
     if (ask.kind === 'number') { problems.push(...numberExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
     if (!options.some(o => o.ok)) problems.push(`${where} has no right option`);
@@ -127,7 +130,7 @@ function generatorProblems(s, gen) {
       Object.entries(values).forEach(([name, v]) => { if (!(typeof v === 'string' || (typeof v === 'number' && Number.isFinite(v)))) problems.add(`${name} is ${v}, which is not a finite number or a word`); });
       const a = e.itemFromGen(gen, seed), b = e.itemFromGen(gen, seed);
       if (JSON.stringify(a) !== JSON.stringify(b)) problems.add('the same seed does not give the same question');
-      a.asks.filter(ask => ask.kind === 'number').forEach(ask => {
+      flatAsks(s, a).filter(ask => ask.kind === 'number').forEach(ask => {
         const wanted = e.numberAnswers(a, ask), tol = e.tolOf(ask);
         wanted.forEach(v => { if (!Number.isFinite(v)) problems.add(`ask ${ask.id}: the answer is ${v}`); });
         if (e.numbersMatch(wanted, wanted, tol) !== true) problems.add(`ask ${ask.id}: the answer is not within its own tolerance`);
@@ -136,7 +139,7 @@ function generatorProblems(s, gen) {
           if (e.numbersMatch(slipValues, wanted, tol)) problems.add(`the slip "${t.slip}" gives the answer ${wanted.join(', ')}, or lands within its tolerance`);
         });
       });
-      a.asks.filter(ask => ask.kind === 'choose').forEach(ask => {
+      flatAsks(s, a).filter(ask => ask.kind === 'choose').forEach(ask => {
         const options = e.chooseOptions(s.subject, ask), listIds = ask.from ? s.listIds[ask.from] : null;
         if (listIds) e.asList(ask.right).filter(id => !listIds.includes(id)).forEach(id => problems.add(`the right answer "${id}" is not in the list ${ask.from}`));
         options.filter(o => o.slip && o.ok).forEach(o => problems.add(`the slip "${o.slip}" is also the right option`));

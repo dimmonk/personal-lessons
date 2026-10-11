@@ -1,5 +1,7 @@
 // The browser checks of lesson standard 26.7 built in step 1: X1, X2, X3, X5, X21, X22, X23; the sound checks of step 2 (X8, X10, X11, X12,
-// X16) are in tests/e2e-sing.mjs and listed here with them. Each is a function of the environment
+// X16) are in tests/e2e-sing.mjs and listed here with them; the numbers of step 3 (X13, X20, and X25, Math's pilot walked) are in
+// tests/e2e-number.mjs and e2e-math.mjs; the papers and the learner's own data of step 4 (X24, X27, and X26, Wealth's pilot walked) are in
+// tests/e2e-own.mjs and e2e-wealth.mjs. Each is a function of the environment
 // (e2e-env.mjs) that drives the real app, in Chromium, with the test subject loaded, and returns its checker: how many assertions it
 // made and which failed. tests/e2e-controls.mjs runs every one of them against the app with a seeded fault and requires exactly
 // that check to go red.
@@ -7,6 +9,9 @@
 import { SOUND_CHECKS } from './e2e-sing.mjs';
 import { NUMBER_CHECKS } from './e2e-number.mjs';
 import { X25 } from './e2e-math.mjs';
+import { OWN_CHECKS } from './e2e-own.mjs';
+import { WEALTH_CHECKS } from './e2e-wealth.mjs';
+import { HISTORY_CHECKS } from './e2e-history.mjs';
 
 // A Monday. Reviews run Monday to Sunday, so the tests that move through days start on one and name the days they move to.
 const MONDAY = '2026-11-02', WEDNESDAY = '2026-11-04', SUNDAY = '2026-11-08', NEXT_MONDAY = '2026-11-09';
@@ -270,4 +275,4 @@ export async function X23(env) {
   return c;
 }
 
-export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X20: NUMBER_CHECKS.X20, X21, X22, X23, X25, ...SOUND_CHECKS };
+export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, ...SOUND_CHECKS };

@@ -13,6 +13,11 @@ const sung = (id, ...rest) => ['subjects', 'chorus', 'lessons', id, ...rest];
 const tillItem = (id, ...rest) => ['subjects', 'till', 'items', id, ...rest];
 const tillGen = (id, ...rest) => ['subjects', 'till', 'gens', id, ...rest];
 const tillLesson = (id, ...rest) => ['subjects', 'till', 'lessons', id, ...rest];
+// the test subject of papers, a form, the private sheet and the dated changes
+const ledgerItem = (id, ...rest) => ['subjects', 'ledger', 'items', id, ...rest];
+const ledgerGen = (id, ...rest) => ['subjects', 'ledger', 'gens', id, ...rest];
+const ledgerLesson = (id, ...rest) => ['subjects', 'ledger', 'lessons', id, ...rest];
+const ledgerMeta = (...rest) => ['subjects', 'ledger', 'meta', ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -79,7 +84,21 @@ export const CONTROLS = [
   { rule: 'V80', name: 'an end result with one word changed',
     data: (d, h) => h.setIn(d, meta('endResult'), 'Read a one-line weather forecast and decide, in a few seconds, whether to bring a raincoat.') },
   { rule: 'V81', name: 'a private form with a field "Account number"',
-    data: (d, h) => h.setIn(d, meta('own'), { sheet: { into: 'sheet', fields: [{ id: 'f1', label: 'Account number', type: 'number' }] } }) }
+    data: (d, h) => h.updateIn(d, ledgerMeta('own', 'sheet', 'fields'), fields => [...fields, { id: 'acct', label: 'Account number', type: 'number' }]) },
+  { rule: 'V81', name: 'a fund row with a field "Online banking password"',
+    data: (d, h) => h.updateIn(d, ledgerMeta('own', 'sheet', 'rows', 'fields'), fields => [...fields, { id: 'secret', label: 'Online banking password', type: 'text', optional: true }]) },
+  // papers, a form, the private sheet, the dated changes (step 4)
+  { rule: 'V70', name: 'a form field with no tolerance', data: (d, h) => h.removeIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 0, 'tol')) },
+  { rule: 'V70', name: 'a ref block that names a ref the subject does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 0, 'show', 7, 'ref'), 'nope') },
+  { rule: 'V70', name: 'an own step that names a private form the subject does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'own'), 'nothing') },
+  { rule: 'V70', name: 'a private form that leaves out a field the app reads', data: (d, h) => h.removeIn(d, ledgerMeta('own', 'sheet', 'fields', 2)) },
+  { rule: 'V70', name: 'a lesson that waits for a moment the subject does not list', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'trigger'), 'moon') },
+  { rule: 'V70', name: 'a dated value looked up on a day that is not one', data: (d, h) => h.setIn(d, ledgerMeta('refs', 0, 'asOf'), '2025-02-30') },
+  { rule: 'V74', name: 'a form field whose answer names a value the question never makes', data: (d, h) => h.setIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 1, 'answer'), 'balance') },
+  { rule: 'V74', name: 'a form field trap that names a slip the subject does not have', data: (d, h) => h.setIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 0, 'traps', 0, 'slip'), 'mystery') },
+  { rule: 'V75', name: 'a form field slip that lands on the answer', data: (d, h) => h.setIn(d, ledgerGen('l-gen', 'asks', 0, 'fields', 0, 'traps', 0, 'value'), 'rate') },
+  { rule: 'V36', name: 'a form field trap opens with a bare verdict', data: (d, h) => h.setIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 0, 'traps', 0, 'then'), 'Wrong. That is the cost of the Safe Fund.') },
+  { rule: 'V50', name: 'a private form label uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, ledgerMeta('own', 'sheet', 'rows', 'fields', 0, 'label'), 'Name of the item') }
 ];
 
 // Rules with no seeded fault of their own, and why

@@ -2,7 +2,8 @@
 // Lesson standard 26.1.2. A `document` is a thing the situation hands you: a receipt, a recipe card, a price tag, a loan or savings offer
 // (form), with a title, rows of cells and notes. A `figure` is a fixed picture filled with numbers: a rate table, the 100% bar, a plan with
 // measurements, a year-by-year table. Pure string builders; the numbers drawn are the numbers in the data, never rounded or moved.
-//   document: { kind: 'document', form, title, rows: [{ id, cells: [Text], strong? }], notes?: [Text] }
+//   document: { kind: 'document', form, title, head?: [Text], tab?: Text, rows: [{ id, cells: [Text], strong? }], notes?: [Text] }
+//   ref:      { kind: 'ref', ref: id of one of the subject's refs }
 //   figure:   { kind: 'figure', type, data }
 //     'rate-table'  { top: { label, cells }, bottom: { label, cells } }                      two rows; a cell may be a blank to fill in
 //     'bar'         { whole, parts: [{ label, pct }] }                                       the whole is 100; each part is drawn pct wide
@@ -11,18 +12,52 @@
 // A row of a document is a segment of the block: ctx.deciding marks the rows that decide the answer, once it is given.
 
 /* ---------- a document ---------- */
+// form: receipt, recipe, tag, offer (the everyday papers); statement (a 401(k), IRA or brokerage statement), fees (a plan's fee sheet),
+// paystub, matchrule (the plan's employer match), beneficiary, foreign (a foreign account summary), table (a plain table). `head` names the
+// columns. A household's papers (26.1.2) are documents with a `tab`: the adjacent ones are shown as tabs, one open at a time.
 function documentHtml(block, ctx){
   const marked = row => (ctx.deciding || []).includes(row.id);
+  const amt = (i, n) => i === n - 1 && n > 1 ? 'amt' : '';
+  const head = block.head ? `<thead><tr>${block.head.map((h, i) => `<th scope="col" class="${amt(i, block.head.length)}">${esc(h)}</th>`).join('')}</tr></thead>` : '';
   const rows = block.rows.map(row => {
-    const cells = row.cells.map((cell, i) => {
-      const last = i === row.cells.length - 1 && row.cells.length > 1;
-      return `<td class="${last ? 'amt' : ''}">${marked(row) ? `<mark class="cue">${esc(cell)}</mark>` : esc(cell)}</td>`;
-    }).join('');
+    const cells = row.cells.map((cell, i) => `<td class="${amt(i, row.cells.length)}">${marked(row) ? `<mark class="cue">${esc(cell)}</mark>` : esc(cell)}</td>`).join('');
     return `<tr data-seg="${esc(row.id)}" class="${row.strong ? 'strong' : ''}">${cells}</tr>`;
   }).join('');
   const notes = (block.notes || []).map(n => `<p class="doc-note">${esc(n)}</p>`).join('');
   return `<div class="block-doc doc-${esc(block.form)}" data-document="${esc(block.form)}"><p class="doc-title">${esc(block.title)}</p>
-    <table class="doc-rows"><tbody>${rows}</tbody></table>${notes}</div>`;
+    <table class="doc-rows">${head}<tbody>${rows}</tbody></table>${notes}</div>`;
+}
+
+// The tab the learner last opened in a group of papers, kept across the repaints of one screen: { scope, at }. A group with no choice of
+// its own opens on the paper that holds a marked line, once there is one, else on the first.
+let DOC_TAB = { scope: '', at: 0 };
+function documentTabsHtml(docs, ctx){
+  const holdsMarked = doc => doc.rows.some(r => (ctx.deciding || []).includes(r.id));
+  const chosen = ctx.scope && DOC_TAB.scope === ctx.scope && DOC_TAB.at < docs.length ? DOC_TAB.at : Math.max(0, docs.findIndex(holdsMarked));
+  const tabs = docs.map((d, i) => `<button type="button" role="tab" class="doctab ${i === chosen ? 'on' : ''}" data-doc-tab="${i}" aria-selected="${i === chosen}">${holdsMarked(d) ? `<mark class="cue">${esc(d.tab)}</mark>` : esc(d.tab)}</button>`).join('');
+  const panels = docs.map((d, i) => `<div role="tabpanel" data-doc-panel="${i}" ${i === chosen ? '' : 'hidden'}>${documentHtml(d, ctx)}</div>`).join('');
+  return `<div class="doc-tabs" data-doc-tabs data-scope="${esc(ctx.scope || '')}"><div class="doctabs" role="tablist" aria-label="${esc(SAY.docTabs)}">${tabs}</div>${panels}</div>`;
+}
+const isTabbedDocument = block => block.kind === 'document' && !!block.tab;
+// The blocks of a screen as pieces: adjacent tabbed documents become one piece, every other block stays one. [{ tabs: [doc] } | { block }]
+function blockPieces(blocks){
+  return blocks.reduce((pieces, block) => {
+    const last = pieces[pieces.length - 1];
+    if(isTabbedDocument(block) && last && last.tabs) return [...pieces.slice(0, -1), { tabs: [...last.tabs, block] }];
+    return [...pieces, isTabbedDocument(block) ? { tabs: [block] } : { block }];
+  }, []);
+}
+
+/* ---------- a value looked up ---------- */
+// A dated value (a threshold, a limit) is never memorized: the subject keeps it with the day it was looked up and where, and the block
+// prints all three. After a year it says to look again.
+const REF_STALE_DAYS = 365;
+function refHtml(block, ctx){
+  const refs = (ctx.data && ctx.data.meta.refs) || [], ref = refs.find(r => r.id === block.ref) || lessonFail(`unknown ref ${block.ref}`);
+  const [y, m, d] = ref.asOf.split('-').map(Number), [ty, tm, td] = today().split('-').map(Number);
+  const old = (new Date(ty, tm - 1, td) - new Date(y, m - 1, d)) / 86400000 > REF_STALE_DAYS;
+  return `<div class="block-ref" data-ref="${esc(ref.id)}"><p class="ref-text">${esc(ref.text)}</p><p class="ref-value">${esc(ref.value)}</p>
+    <p class="doc-note">${esc(SAY.refLooked(ref.asOf))}. ${esc(SAY.refSource(ref.source))}.</p><p class="doc-note ${old ? 'old' : ''}">${esc(old ? SAY.refOld : SAY.refCheck)}</p></div>`;
 }
 
 /* ---------- a figure ---------- */

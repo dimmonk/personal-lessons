@@ -243,7 +243,16 @@ would they be closer to the end result?". Lesson 2 is the pilot (largest, most c
 number input and own-accounts sheet first).
 
 ## Gates 6 and 7
-Not started. Lesson 2 is the pilot; it needs the gate 3 capabilities first.
+Gate 6, in progress: the app capabilities of gate 3 are built (lesson standard 26.10, step 4: the papers of a household as tabs, the
+form with the number typed, the private sheet of the learner's accounts, dated changes with a calendar file, and the export and delete
+controls) and lesson 2, "What it costs a year, in dollars", is in the app as a draft (2026-10-10): the rule, a worked account (a plan's
+statement and fee sheet, two funds, the plan's fee, 469.62 a year, change the stock fund), one account to leave alone with the last two
+steps left to the learner, two accounts alone (one to change and one to leave alone), the same step on the learner's own accounts (the
+sheet form first when it is empty, then what each account costs in dollars, the sample lines to find and a change made now or dated),
+and the check (three new accounts: the dollars within a tenth, change or leave right on all three, none to leave alone changed, and the
+right fund named). Reading is 12% of it. The learner view is `docs/learner-view/wealth-l2.md`. It waits for the owner's try on a phone:
+`tried.pilot` stays null, and lessons 1 and 3 to 8 are not written, until the owner has tried it and said what it did. Gate 7: not
+started.
 
 ## Audit of the existing lessons (2026-10-10)
 

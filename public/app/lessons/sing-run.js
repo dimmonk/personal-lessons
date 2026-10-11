@@ -168,6 +168,25 @@ function singRangeScored(s, plan){
   saveNote(Q.subj.id, 'range', { low: midiToNote(found.low), high: midiToNote(found.high), set: today() });
   return { span: found.span, steady: found.steady };
 }
+/* ---------- finding the range again, from the subject screen ---------- */
+// The range exercise by itself: the task a lesson opens with when no range is stored, run on its own. The range is replaced only when the
+// exercise succeeds (singRangeScored); the try is not stored (the question is unscored, as the warm-up is), so no lesson's progress changes;
+// Back, or leaving, keeps the old range.
+function renderRangeAgain(subj){
+  const data = FC.get(subj.id), run = newRunId();
+  const inst = instanceOf(data, { sing: { task: 'range' }, n: 1 }, freshSeed(subj.id, 'sing-range', run, 0));
+  startQueue({ subj, data, list: [{ ...inst, item: { ...inst.item, unscored: true } }], run, context: 'practice', support: null, redo: false, feedback: 'after-each',
+    owner: () => ({ lesson: 'range', rev: 0 }), shell: rangeShell, onDone: () => go('subject') });
+}
+function rangeShell(inner, actions){
+  const subj = Q.subj;
+  screenEl().innerHTML = `<div class="pane read flush" style="--accent:${subj.accent}">
+    <div class="topbar"><button class="iconbtn" data-v="subject" aria-label="Back to ${esc(subj.name)}">${icon('back', 20)}</button><span class="spacer"></span></div>
+    <p class="m unitbar">${esc(subj.name)} &middot; ${esc(SAY.rangeAgain)}</p>${inner}${actions || ''}</div>`;
+  on('[data-v]', el => go(el.dataset.v));
+}
+const rangeAgain = subj => { APP.subjectId = subj.id; go('range'); };
+
 function singRetry(why){
   setSing({ phase: 'nothing', failure: why });
   singRepaint();

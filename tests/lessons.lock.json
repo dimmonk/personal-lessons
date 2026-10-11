@@ -30,8 +30,8 @@
       "fp": "sha256:cf87397e840d08650a04f0def331186d16de6701efdf423239ba3f08f0eaf684"
     },
     "wealth": {
-      "rev": 5,
-      "fp": "sha256:c815ef3fea8dd9e60382f5534ee47db2cb209839fb134d4de57bb5b3746deb88"
+      "rev": 6,
+      "fp": "sha256:7e499c87d78f0139a238a2dea61b8550c1712f71502c6b6b9431d5a31d5e13bf"
     }
   },
   "lessons": {
@@ -42,6 +42,10 @@
     "singing/l2": {
       "rev": 1,
       "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
+    },
+    "wealth/l2": {
+      "rev": 1,
+      "fp": "sha256:b6d0fe2b74f857b552ef2e4b6e9e26546e7ed3ddf72d5b8cc771943d001049d3"
     }
   }
 }

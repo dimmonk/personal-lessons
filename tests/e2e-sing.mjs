@@ -424,7 +424,42 @@ export async function X16(env) {
   return c;
 }
 
-export const SOUND_CHECKS = { X8, X10, X11, X12, X16 };
+/* ---------- X29: finding the range again (26.10, a note of 2026-10-11) ---------- */
+// From the Singing subject screen, with a range stored: "Find my range again" runs the range exercise by itself. A range found replaces the stored
+// one, the try is not stored and no lesson's place changes, and nothing asks with a browser dialog; Back in the middle of it keeps the old range.
+export async function X29(env) {
+  const c = env.checker('X29'), { context, page } = await openSung(env, c, { subject: 'singing', lesson: 'l2', range: RANGE, at: 3 }), dialogs = [];
+  page.on('dialog', d => { dialogs.push(d.type()); d.dismiss(); });
+  await env.clickVisible(page, '[data-v="subject"]');
+  const before = await page.evaluate(() => JSON.stringify(seenOf('singing')));
+  c.check((await page.locator('[data-own="range"]').textContent()).includes('A2 to E4') && await page.locator('[data-range-again]').count() === 1, 'the subject screen does not show the range with a button to find it again');
+  await inspectSung(env, c, page, 'the subject screen with the range and its button');
+  // Back in the middle keeps the old range
+  await page.locator('[data-range-again]').click();
+  c.check(await labelOf(page) === 'Find your range', `the button does not open the range exercise (${await labelOf(page)})`);
+  await page.locator('#singGo').click();
+  await D.waitPhase(page, 'sing');
+  await D.setMic(page, 0);
+  await env.clickVisible(page, '[data-v="subject"]');
+  c.check(JSON.stringify(await D.storedRange(page, 'singing')) === JSON.stringify(RANGE), 'Back in the middle of the exercise changed the range');
+  c.check((await page.locator('[data-own="range"]').textContent()).includes('A2 to E4'), 'the subject screen does not still show the old range after Back');
+  // a range found replaces it
+  await page.locator('[data-range-again]').click();
+  await page.locator('#singGo').click();
+  await D.singRange(page, 50, 62);
+  await D.waitOutcome(page);
+  c.check((await D.marksText(page)).join() === 'Your range is saved', 'the new range was not reported as saved');
+  await finish(page);
+  const found = await D.storedRange(page, 'singing');
+  c.check(!!found && Math.abs(noteMidi(found.low) - 50) <= 1 && Math.abs(noteMidi(found.high) - 62) <= 1 && /^\d{4}-\d\d-\d\d$/.test(found.set) && found.set !== RANGE.set, `the stored range is ${JSON.stringify(found)}, not D3 to D4 from today`);
+  c.check(/D3 to D4/.test(await page.locator('[data-own="range"]').textContent()) && await page.evaluate(() => APP.view) === 'subject', 'the subject screen does not show the new range when the exercise ends');
+  c.check((await tries(page, 'singing', 'sing-range')).length === 0 && JSON.stringify(await page.evaluate(() => seenOf('singing'))) === before, 'finding the range again stored a try or moved a lesson\'s place');
+  c.check(dialogs.length === 0, `the browser asked with a dialog (${dialogs.join(', ')})`);
+  await context.close();
+  return c;
+}
+
+export const SOUND_CHECKS = { X8, X10, X11, X12, X16, X29 };
 // The sound checks run in two lanes at a time at most: the long one (X16, two pages) and the four short ones one after another. Many more
 // audio pages at once make Chromium's headless audio device report errors that have nothing to do with the app.
-export const SOUND_LANES = [['X8', 'X10', 'X11', 'X12'], ['X16']];
+export const SOUND_LANES = [['X8', 'X10', 'X11', 'X12', 'X29'], ['X16']];

@@ -10,7 +10,7 @@ import { britishIn } from '../american.mjs';
 const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', 'role', 'status', 'history', 'tried', 'order', 'feedback', 'support', 'mix', 'pass',
   'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
   'dateField', 'tol', 'standard', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
-  'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is']);
+  'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional']);
 // block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own
 const QUOTING = ['message', 'article', 'document', 'chart', 'figure', 'spoken', 'exchange'];
 
@@ -31,6 +31,8 @@ function subjectText(s) {
   const { history, rev, standard, id, mix, readingShare, review, complete, timed, endResult, parts, ...record } = meta;
   return [
     ...learnerStrings(record, 'the subject record'),
+    // the private forms are read separately: the word `own` is also a lesson step's field, which holds an id and is no prose
+    ...learnerStrings(meta.own || {}, 'the subject record'),
     // the end result and the parts are the owner's approved wording from the design record (V80, V71): the plain-words rules leave them alone
     ...learnerStrings({ endResult, parts }, 'the subject record', true),
     ...Object.values(subject.lessons).flatMap(l => learnerStrings(l, `lesson ${l.id}`)),
@@ -67,8 +69,8 @@ const PRAISE = /^\W*(great|well done|good job|nice work|excellent|not quite|oops
 const feedbackOf = (item, where) => [
   ...learnerStrings(item.reason, `${where}.reason`), ...learnerStrings(item.need, `${where}.need`),
   ...(item.steps || []).flatMap((x, i) => learnerStrings(x.working, `${where}.steps[${i}].working`)),
-  ...item.asks.flatMap((a, i) => [...learnerStrings(a.then, `${where}.asks[${i}].then`), ...(a.options || []).flatMap((o, j) => learnerStrings(o.then, `${where}.asks[${i}].options[${j}].then`)),
-    ...(a.traps || []).flatMap((t, j) => learnerStrings(t.then, `${where}.asks[${i}].traps[${j}].then`))]),
+  ...item.asks.flatMap((ask, i) => (ask.kind === 'form' ? ask.fields : [ask]).flatMap((a, k) => [...learnerStrings(a.then, `${where}.asks[${i}].${k}.then`), ...(a.options || []).flatMap((o, j) => learnerStrings(o.then, `${where}.asks[${i}].${k}.options[${j}].then`)),
+    ...(a.traps || []).flatMap((t, j) => learnerStrings(t.then, `${where}.asks[${i}].${k}.traps[${j}].then`))])),
   ...item.blocks.flatMap((b, i) => (b.lines || []).flatMap((seg, j) => learnerStrings(seg.note, `${where}.blocks[${i}].lines[${j}].note`)))
 ];
 export const V36 = subjectRule('V36', (s, check) => {

@@ -19,6 +19,18 @@ function storageLoad(key, fallback){
   return fallback;
 }
 
+// A file the learner saves from the page: the log export, one subject's own data, a calendar file. Nothing is sent anywhere.
+function saveFile(name, body, type){
+  const url = URL.createObjectURL(new Blob([body], { type }));
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = name;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
 const SVG = (d, w) => `<svg width="${w||16}" height="${w||16}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
 const ICON = {
   chevron: '<path d="M9 6l6 6-6 6"/>',

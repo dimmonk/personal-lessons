@@ -21,19 +21,23 @@ function pairHtml(block, ctx){
   return `<div class="block-pair"><div class="pairgrid"><div class="pairside">${blockHtml(block.a, ctx)}</div><div class="pairside">${blockHtml(block.b, ctx)}</div></div>
     <p class="compare"><span class="m lab">${esc(SAY.compare)}</span>${esc(paras(block.compare).join(' '))}</p></div>`;
 }
-const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block) };
+const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block),
+  ref: (block, ctx) => refHtml(block, ctx) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
-const blocksHtml = (blocks, ctx) => `<div class="blocks">${blocks.map(b => blockHtml(b, ctx)).join('')}</div>`;
+const blocksHtml = (blocks, ctx) => `<div class="blocks">${blockPieces(blocks).map(p => p.tabs ? documentTabsHtml(p.tabs, ctx) : blockHtml(p.block, ctx)).join('')}</div>`;
 // every segment of a block, pairs included; the rows of a document are its segments
 const segmentsOf = block => block.kind === 'pair' ? [...segmentsOf(block.a), ...segmentsOf(block.b)]
   : block.kind === 'document' ? block.rows.map(row => ({ id: row.id, text: row.cells.join(' ') })) : (block.lines || []);
 
 /* ---------- asks ---------- */
+// A made question whose right option would always sit in one place says `shuffle`: its options are shown in an order that depends on its
+// seed, the same each time the same question is shown (the order is never stored).
+const shownOptions = (options, ask, ctx) => ask.shuffle && ctx && ctx.item && ctx.item.seed !== undefined ? shuffled(options, hashSeed(`${ctx.item.seed}|${ask.id}`)) : options;
 // st: { answer, many: [optionId], marks } for this ask. `marks` shows right and wrong on the options (after the item).
-function chooseHtml(data, ask, st){
-  const options = chooseOptions(data, ask), locked = st.answer !== undefined || st.marks, picked = ask.many ? (st.answer || st.many || []) : asList(st.answer);
+function chooseHtml(data, ask, st, ctx){
+  const options = shownOptions(chooseOptions(data, ask), ask, ctx), locked = st.answer !== undefined || st.marks, picked = ask.many ? (st.answer || st.many || []) : asList(st.answer);
   const buttons = options.map(o => {
     const cls = ['opt', picked.includes(o.id) ? 'sel' : '', st.marks && o.ok ? 'right' : '', st.marks && picked.includes(o.id) && !o.ok ? 'wrong' : ''].filter(Boolean).join(' ');
     return `<button class="${cls}" data-opt="${esc(o.id)}" ${locked ? 'disabled' : ''} aria-pressed="${picked.includes(o.id)}">${esc(o.text)}</button>`;
@@ -42,7 +46,7 @@ function chooseHtml(data, ask, st){
   return `<div class="stepopen prompt" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>
     <span class="forline">${esc(ask.many ? SAY.chooseMany : SAY.chooseOne)}</span><div class="opts">${buttons}</div>${submit}</div>`;
 }
-const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtml(data, ask, st, ctx), sing: (data, ask, st) => singAskHtml(data, ask, st) };
+const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtml(data, ask, st, ctx), form: (data, ask, st, ctx) => formHtml(data, ask, st, ctx), sing: (data, ask, st) => singAskHtml(data, ask, st) };
 
 /* ---------- the item ---------- */
 // The item as it stands: its blocks (deciding words marked when `deciding` is on), then the asks open now, then, once
@@ -53,7 +57,7 @@ function itemHtml(data, inst, state){
   const item = inst.item, support = state.support || null;
   const open = openAsks(item, support, state.a);
   const marked = state.marks || (support && support.shown);
-  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null };
+  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null, data, scope: `${inst.key}|${inst.seed === undefined ? '' : inst.seed}` };
   const steps = shownStepsHtml(item, support);
   const hint = support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '';
   const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, sing: state.sing,
@@ -75,9 +79,9 @@ function shownStepsHtml(item, support){
 function feedbackHtml(data, inst, support, answers, score){
   const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in score.r);
   const marks = asked.map(a => markHtml(data, a, answers[a.id], score.r[a.id], item, answers)).join('');
-  const misses = asked.filter(a => score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id])).join('');
+  const misses = asked.filter(a => score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id], item)).join('');
   const consequences = asked.filter(a => a.kind === 'choose').flatMap(a => chooseOptions(data, a).filter(o => o.ok && o.then).map(o => o.then));
-  const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, {})}</div>` : '';
+  const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '';
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   return `<div class="feedback" data-feedback><div class="marks">${marks}</div>
@@ -88,13 +92,15 @@ function markHtml(data, ask, answer, result, item, answers){
   const ok = result === 'ok';
   if(ask.kind === 'sing') return singMarksHtml(ask, answer, ok);
   if(ask.kind === 'number') return numberMarkHtml(ask, answer, result, item, answers);
+  if(ask.kind === 'form') return formMarksHtml(data, ask, answer, item);
   const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text);
   return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;
 }
 // "You chose X. <what happens>" for a wrong answer; a slip with no line of its own is named from the subject's list of slips
-function missLine(data, ask, answer, result){
+function missLine(data, ask, answer, result, item){
   if(ask.kind === 'sing') return singMissHtml(ask, answer);
   if(ask.kind === 'number') return numberMissHtml(data, ask, answer, result);
+  if(ask.kind === 'form') return formMissHtml(data, ask, answer, item);
   const options = chooseOptions(data, ask), chosen = asList(answer).map(id => options.find(o => o.id === id)).filter(o => o && !o.ok);
   const lines = chosen.map(o => `<p><b>${esc(SAY.youChose)}: ${esc(o.text)}.</b> ${esc(o.then ? paras(o.then).join(' ') : o.slip ? SAY.slipLine(slipText(data, o.slip)) : '')}</p>`);
   return lines.length ? `<div class="vblock">${lines.join('')}</div>` : '';

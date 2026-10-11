@@ -7,7 +7,8 @@ function lessonStateLine(subj, l){
   const data = dataOf(subj), lesson = data.lessons[l.id], last = lastCheck(data, subj.id, lesson);
   if(last) return (last.passed ? SAY.statePassed : SAY.stateNotYet)(last.right, last.total, shortDay(last.d));
   const at = lessonPlace(subj, l);
-  return at > 0 ? SAY.stepOf(at + 1, stepTotal(lesson)) : SAY.notStarted;
+  if(at > 0) return SAY.stepOf(at + 1, stepTotal(lesson));
+  return l.trigger && !triggersOf(subj.id)[l.trigger] ? SAY.stateWaiting(triggerText(data, l.trigger)) : SAY.notStarted;
 }
 
 function lessonRow(subj, l, number){
@@ -44,12 +45,14 @@ function againSection(subj){
       <span class="tf"><b>${esc(SAY.practiceAgain)}</b>${icon('arrow', 14)}</span></button>`).join('')}</div>`;
 }
 
-// the learner's own data (26.3, 26.5): today only Singing's range, measured by the range exercise
+// the learner's own data (26.3, 26.5): Singing's range, measured by the range exercise; and a subject's private forms: its accounts, its
+// dated actions and the moments the learner has marked, with the controls that take it out of the phone or off it
 function ownDataSection(subj){
   const range = rangeOf(subj.id);
-  if(!range) return '';
-  return `<div class="sect top"><span class="m">${esc(SAY.yourRange)}</span></div>
-    <table class="k results" data-own="range"><tr><td>${esc(SAY.yourRange)}</td><td>${esc(SAY.rangeIs(range.low, range.high))}</td></tr></table>`;
+  const rangeHtml = range ? `<div class="sect top"><span class="m">${esc(SAY.yourRange)}</span></div>
+    <table class="k results" data-own="range"><tr><td>${esc(SAY.yourRange)}</td><td>${esc(SAY.rangeIs(range.low, range.high))}</td></tr></table>
+    <button class="btn ghost sm" data-range-again>${esc(SAY.rangeAgain)}</button>` : '';
+  return rangeHtml + (hasPrivateForms(dataOf(subj)) ? ownSectionHtml(subj, dataOf(subj), OWN_SUBJECT) : '');
 }
 
 function renderSubject(subj){
@@ -97,6 +100,8 @@ function renderSubject(subj){
   on('[data-l]', el => openLesson(subj, el.dataset.l));
   on('[data-again]', el => practiceAgain(subj, el.dataset.again));
   on('#resume', () => openLesson(subj, resume.id));
+  on('[data-range-again]', () => rangeAgain(subj));
+  wireOwnSection(subj);
 }
 
 /* ===================== RESULTS ===================== */

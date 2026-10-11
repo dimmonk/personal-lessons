@@ -35,9 +35,22 @@ export const TILL_DESIGN = {
   pilot: 'l1',
   tried: { pilot: { date: '2026-10-10', words: 'Clear on a phone.' } }
 };
-export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN };
+export const LEDGER_DESIGN = {
+  subject: 'ledger',
+  kinds: ['procedure'],
+  endResult: 'Read the papers of a household, say what each fund costs a year, and keep your own accounts and dates.',
+  realMoment: 'At the table with a statement, a fee sheet and a pay stub.',
+  test: 'Two new accounts: the yearly cost of the fund and what it costs in dollars; both right.',
+  practice: 'Fill in the line for a sample account, then the same on your own accounts, with the change dated.',
+  approved: { endResult: '2026-10-10', practice: '2026-10-10', pilot: '2026-10-10' },
+  parts: [{ id: '1', title: 'Read the papers' }],
+  pilot: 'l1',
+  tried: { pilot: { date: '2026-10-10', words: 'Clear on a phone.' } }
+};
+export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN };
 // the files of the test subjects, in load order, relative to this folder
 export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 'items-timing.js', 'l1.lesson.js', 'l2.lesson.js',
-  'chorus-subject.js', 'chorus-l1.lesson.js', 'chorus-l2.lesson.js', 'till-subject.js', 'till-items.js', 'till-l1.lesson.js'];
+  'chorus-subject.js', 'chorus-l1.lesson.js', 'chorus-l2.lesson.js', 'till-subject.js', 'till-items.js', 'till-l1.lesson.js',
+  'ledger-subject.js', 'ledger-items.js', 'ledger-l1.lesson.js'];
 // the ids of the test subjects, in the order they load
-export const FIXTURE_IDS = ['fixture', 'chorus', 'till'];
+export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger'];

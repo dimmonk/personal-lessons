@@ -48,6 +48,7 @@ function paintQueue(){
   on('[data-answer]', el => commitMany(el.dataset.answer));
   on('#qNext', nextQuestion);
   wireNumber();
+  wireForm();
   if(sung) wireSing(inst, cur.done);
 }
 

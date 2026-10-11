@@ -23,6 +23,7 @@ function weekEnd(day = today()){
 }
 // 'Thursday, October 15'
 const dayWords = day => { const [y, m, d] = day.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' }); };
+const longDay = day => { const [y, m, d] = day.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); };
 const shortDay = day => { const [y, m, d] = day.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); };
 // one sitting: the same id on every try made in it, so a check's result is worked out from its run
 let RUN_COUNTER = 0;

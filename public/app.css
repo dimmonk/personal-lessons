@@ -326,3 +326,47 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .fig-room.cut{fill:none;stroke-dasharray:5 4}
 .fig-label{fill:var(--dim);font-family:var(--mono);font-size:11px}
 .fig-label.in{fill:var(--text)}
+
+/* ---------- a household's papers, a value looked up, a form, and the learner's own data ---------- */
+.doc-rows th{padding:0 0 6px;text-align:left;font-family:var(--mono);font-size:9.5px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--label);border-bottom:1px solid var(--rule)}
+.doc-rows th.amt{padding-left:12px;text-align:right;white-space:nowrap}
+.doc-statement .doc-rows,.doc-fees .doc-rows,.doc-paystub .doc-rows,.doc-matchrule .doc-rows,.doc-beneficiary .doc-rows,.doc-foreign .doc-rows,.doc-table .doc-rows{font-size:14.5px}
+.doc-statement .doc-title,.doc-fees .doc-title,.doc-paystub .doc-title,.doc-matchrule .doc-title,.doc-beneficiary .doc-title,.doc-foreign .doc-title{font-size:15px}
+.doc-tabs{display:flex;flex-direction:column}
+.doctabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:-1px}
+.doctab{min-height:44px;padding:0 14px;border:1px solid var(--border);background:var(--field);color:var(--dim);font-size:14px;font-weight:600;line-height:1.2}
+.doctab:hover{color:var(--text)}
+.doctab.on{background:var(--raised);border-bottom-color:var(--raised);color:var(--text)}
+.block-ref{display:flex;flex-direction:column;gap:6px;padding:16px;background:var(--raised);border:1px solid var(--border)}
+.block-ref p{margin:0}
+.ref-text{font-size:15px;line-height:1.4;color:var(--bodydim)}
+.ref-value{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--text)}
+.doc-note.old{color:var(--accent)}
+.formrows{display:flex;flex-direction:column;gap:16px}
+.formrow,.ownfield{display:flex;flex-direction:column;gap:8px}
+.formlabel{font-size:14px;line-height:1.35;color:var(--bodydim)}
+.selbox{width:100%;max-width:100%;min-width:0;height:50px;padding:0 10px;background:var(--field);border:1px solid var(--border);border-radius:0;color:var(--text);font-family:var(--sans);font-size:16px}
+.textbox{width:100%;font-family:var(--sans);font-size:16px}
+.datebox{width:100%;font-size:16px}
+.ownform,.ownsection{display:flex;flex-direction:column;gap:14px}
+.ownsection{padding-top:6px}
+.owncard{display:flex;flex-direction:column;gap:14px;padding:16px;background:var(--raised);border:1px solid var(--border)}
+.owntitle{margin:0;font-size:17px;font-weight:700;letter-spacing:-.01em;color:var(--text)}
+.ownfund{display:flex;flex-direction:column;gap:12px;padding:14px;background:var(--field);border:1px solid var(--rule)}
+.ownfund .m.lab{margin:0}
+.privateline{color:var(--accent)}
+.fielderr{margin:0;font-size:13.5px;line-height:1.4;color:var(--coral)}
+.ownwarn{margin:0;padding:10px 12px;background:color-mix(in srgb,var(--accent) 14%,transparent);font-size:14px;line-height:1.45;color:var(--text)}
+.owntotal{margin:0;font-size:16px;line-height:1.5;color:var(--bodydim)}
+.owntotal b{color:var(--text)}
+.ownactions{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.ownaction{display:flex;flex-direction:column;gap:10px;padding:12px 14px;background:var(--raised);border:1px solid var(--border)}
+.owntext{display:flex;flex-direction:column;gap:4px;color:var(--text)}
+.ownwhere{font-size:13.5px;color:var(--dim)}
+.ownbtns{display:flex;flex-wrap:wrap;gap:8px}
+.ownbtns .btn{width:auto;padding:0 16px}
+table.ownsum{max-width:none;margin:0}
+table.ownsum td:last-child{white-space:normal}
+.ownactionform{display:flex;flex-direction:column;gap:14px;padding:16px;background:var(--raised);border:1px solid var(--border)}
+.lesson + .ownform{margin-top:18px}
+.doc-statement .doc-rows td.amt,.doc-fees .doc-rows td.amt,.doc-paystub .doc-rows td.amt,.doc-matchrule .doc-rows td.amt,.doc-beneficiary .doc-rows td.amt,.doc-foreign .doc-rows td.amt,.doc-table .doc-rows td.amt{white-space:normal;overflow-wrap:break-word}

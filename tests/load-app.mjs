@@ -26,7 +26,12 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   // typed numbers, documents and figures
   'parseTyped', 'fmtNumber', 'typedText', 'frameParts', 'slotCount', 'numberValue', 'numberAnswers', 'frameFilled', 'isEstimateAsk', 'tolOf', 'withinTol',
   'numbersMatch', 'scoreNumber', 'estimateTyped', 'estimatesDisagree', 'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'NUMBER_BAND', 'numberHtml',
-  'numberMarkHtml', 'numberMissHtml', 'numberRightText', 'calcHtml', 'documentHtml', 'figureHtml', 'markHtml', 'missLine'];
+  'numberMarkHtml', 'numberMissHtml', 'numberRightText', 'calcHtml', 'documentHtml', 'figureHtml', 'markHtml', 'missLine',
+  // forms, papers, values looked up, the learner's own data
+  'formFieldAsk', 'formFieldResults', 'scoreForm', 'formDraftReady', 'formAnswerFrom', 'formFieldText', 'formFieldRight', 'formHtml', 'formMarksHtml', 'formMissHtml',
+  'documentTabsHtml', 'blockPieces', 'blocksHtml', 'refHtml', 'DOC_TAB', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownDigitRun', 'ownValidDay', 'ownFieldProblem', 'ownRecord', 'ownSheetFromDraft',
+  'ownDraftsFromSheet', 'ownHoldingDollars', 'ownAccountCost', 'ownSheetCost', 'ownSheetBalance', 'ownBalanceGaps', 'ownWarnings', 'ownDraftWarnings', 'ownActionFromDraft',
+  'ownMarkDone', 'ownCalendarFile', 'ownCalendarName', 'ownMoney', 'sheetEditorHtml', 'ownCostsHtml', 'ownCostDocument', 'ownSectionHtml', 'parseTyped'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {

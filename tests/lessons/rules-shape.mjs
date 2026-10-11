@@ -2,14 +2,14 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, DOCUMENT, FIGURE, FIGURE_DATA, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
 
 // What 26.1 describes and the engine has not built yet (26.8). A lesson that uses one is refused, so nothing is written that cannot run.
 export const NOT_BUILT = {
-  'a baseline lesson': 'step 8 (Scams)', 'an own step': 'step 4 (Wealth)', 'a timed group': 'step 8 (Scams)', 'a busy task': 'step 8 (Scams)',
+  'a baseline lesson': 'step 8 (Scams)', 'a private form into answers, a plan, a setup or lines': 'steps 7 to 9', 'a timed group': 'step 8 (Scams)', 'a busy task': 'step 8 (Scams)',
   'a saved plan': 'step 8 (Scams)', 'a spoken check': 'step 9 (Civics)', 'a check with a time': 'step 8 (Scams)',
   'a subject that times its items': 'step 8 (Scams)', 'the interview date': 'step 9 (Civics)',
   'a panel': 'steps 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
@@ -17,10 +17,14 @@ export const NOT_BUILT = {
 };
 
 /* ---------- the pieces ---------- */
-function blockProblems(block, where, kinds) {
+function blockProblems(block, where, kinds, refIds = []) {
   if (!block || typeof block !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(block.kind)) return [`${where} has a block of kind "${block.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (block.kind === 'pitch') return [`${where} is a pitch block, which only a sung question the app makes from a { sing } task may carry`];
+  if (block.kind === 'ref') {
+    const shape = show(checkShape(block, REF_BLOCK, where));
+    return shape.length ? shape : refIds.includes(block.ref) ? [] : [`${where}: "${block.ref}" is not one of the subject's refs`];
+  }
   if (block.kind === 'prose') {
     return [...show(checkShape(block, PROSE, where)), ...('text' in block) === ('lines' in block) ? [`${where} must have exactly one of text and lines`] : []];
   }
@@ -29,7 +33,7 @@ function blockProblems(block, where, kinds) {
     const shape = show(checkShape(block, FIGURE, where));
     return shape.length ? shape : show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
   }
-  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds), ...blockProblems(block.b, `${where}.b`, kinds)];
+  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds), ...blockProblems(block.b, `${where}.b`, kinds, refIds)];
 }
 
 // A typed number: its frame has one blank for each value of the answer, each trap's value has as many, and the tolerance is one of the
@@ -54,11 +58,25 @@ function numberProblems(ask, where) {
   return problems;
 }
 
+// A form: the shape of 26.1, and each field the shape of the ask of its own kind (a number with a tolerance and a frame with one blank, a choice
+// with a list or options). A field is the ask without its id, kind and prompt, so it is checked as that ask.
+function formProblems(ask, where, kinds, listIds) {
+  const problems = show(checkShape(ask, FORM_ASK, where));
+  if (problems.length) return problems;
+  problems.push(...duplicatesOf(ask.fields.map(f => f.id)).map(id => `${where}: field "${id}" appears twice`));
+  ask.fields.forEach((f, i) => {
+    const { label, type, ...rest } = f, as = { ...rest, kind: type, prompt: label };
+    problems.push(...askProblems(as, `${where}.fields[${i}]`, ['number', 'choose'], listIds));
+  });
+  return problems;
+}
+
 function askProblems(ask, where, kinds, listIds) {
   if (!ask || typeof ask !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(ask.kind)) return [`${where} has an ask of kind "${ask.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (ask.kind === 'sing') return [`${where} is a sing ask, which only a sung question the app makes from a { sing } task may carry`];
   if (ask.kind === 'number') return numberProblems(ask, where);
+  if (ask.kind === 'form') return formProblems(ask, where, kinds, listIds);
   const problems = show(checkShape(ask, CHOOSE, where));
   if (('options' in ask) === ('from' in ask)) problems.push(`${where} must have exactly one of options and from`);
   if ('from' in ask) {
@@ -84,7 +102,7 @@ function itemProblems(item, where, ctx, isGen) {
     if (!facet) problems.push(`${where}: facet "${f}" is not one of the subject's facets`);
     else if (!facet.values.some(x => x.id === v)) problems.push(`${where}: "${v}" is not a value of the facet ${f}`);
   });
-  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS)));
+  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds)));
   item.asks.forEach((a, i) => problems.push(...askProblems(a, `${where}.asks[${i}]`, engine.ASK_KINDS, ctx.listIds)));
   const askIds = item.asks.map(a => a.id);
   problems.push(...duplicatesOf(askIds).map(id => `${where}: ask "${id}" appears twice`));
@@ -96,7 +114,7 @@ function itemProblems(item, where, ctx, isGen) {
   const unbuilt = [...('has' in item ? ['requirements found or missing'] : []), ...('fact' in item ? ['an interview fact'] : []), ...('redraw' in item ? ['a chart redrawn from zero'] : [])];
   unbuilt.forEach(n => problems.push(`${where} uses ${n}, which is built in ${NOT_BUILT[n]}`));
   if ('figure' in item && (!item.figure || item.figure.kind !== 'figure')) problems.push(`${where}: the figure added to the feedback must be a figure block`);
-  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS));
+  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds));
   return problems;
 }
 
@@ -130,15 +148,26 @@ function supportFitsProblems(set, where, ctx) {
   return problems;
 }
 
+// An own step: the private form it fills in is one of the subject's, writes into the sheet, and the model it shows is one of its questions; the
+// subject has the form for dated actions the step ends in.
+function ownStepProblems(step, where, ctx) {
+  const { subject } = ctx, own = subject.meta.own || {}, form = own[step.own], problems = [];
+  if (!form) problems.push(`${where}: "${step.own}" is not one of the subject's private forms`);
+  else if (form.into !== 'sheet') problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; the step on the learner's own data fills in the sheet`);
+  if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
+  if (!Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
+  return problems;
+}
+
 function stepProblems(step, where, ctx) {
   const kind = stepKind(step);
   if (!kind) return [`${where} is not a show screen, a worked item, a set or an own step`];
   const problems = show(checkShape(step, STEPS[kind], where));
   if (problems.length) return problems;
   const { subject, engine } = ctx;
-  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS)));
+  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds)));
   if (kind === 'worked' && !subject.items[step.worked]) problems.push(`${where}: "${step.worked}" is not an item of the subject`);
-  if (kind === 'own') problems.push(`${where} is an own step, which is built in ${NOT_BUILT['an own step']}`);
+  if (kind === 'own') problems.push(...ownStepProblems(step, where, ctx));
   if (kind === 'set') {
     const set = step.set;
     engine.flatRefs(set.items).forEach((r, i) => problems.push(...refProblems(r, `${where}.items`, ctx)));
@@ -161,6 +190,7 @@ function lessonProblems(lesson, ctx) {
   const { subject, engine } = ctx;
   if ((lesson.part === null) !== (lesson.role === 'baseline')) problems.push(`${where}: only a baseline lesson has no part`);
   if (lesson.role === 'baseline') problems.push(`${where} is a baseline lesson, which is built in ${NOT_BUILT['a baseline lesson']}`);
+  if (lesson.trigger && !((subject.meta.lists || {}).trigger || []).some(t => t.id === lesson.trigger)) problems.push(`${where}: the trigger "${lesson.trigger}" is not in the subject's list of triggers`);
   lesson.flow.forEach((step, i) => problems.push(...stepProblems(step, `${where}.flow[${i}]`, ctx)));
   const check = lesson.check;
   if (Array.isArray(check.items)) check.items.forEach(r => problems.push(...refProblems(r, `${where}.check.items`, ctx)));
@@ -168,6 +198,39 @@ function lessonProblems(lesson, ctx) {
   problems.push(...supportProblems(check.support, `${where}.check.support`));
   if (check.seconds !== undefined) problems.push(`${where}.check has a time, which is built in ${NOT_BUILT['a check with a time']}`);
   if (check.spoken) problems.push(`${where}.check is spoken, which is built in ${NOT_BUILT['a spoken check']}`);
+  return problems;
+}
+
+// The dated values a subject keeps (26.1 refs): each with the day it was looked up, a real day, and where it came from.
+function refsProblems(meta) {
+  const refs = meta.refs || [];
+  return [...duplicatesOf(refs.map(r => r.id)).map(id => `the subject record: ref "${id}" appears twice`),
+    ...refs.filter(r => !engineDay(r.asOf)).map(r => `the subject record: ref "${r.id}" was looked up on "${r.asOf}", which is not a day (YYYY-MM-DD)`)];
+}
+const engineDay = day => /^\d{4}-\d\d-\d\d$/.test(day) && !Number.isNaN(Date.parse(`${day}T00:00:00Z`)) && new Date(`${day}T00:00:00Z`).toISOString().slice(0, 10) === day;
+
+// The private forms (26.3): written into a slot the app builds, a choice that reads one of the subject's lists, and the fields the app reads
+// from that kind of form. (What a field may not be, an account number or a login, is V81's.)
+function ownFormsProblems(meta, engine) {
+  const lists = meta.lists || {}, problems = [];
+  Object.entries(meta.own || {}).forEach(([id, form]) => {
+    const where = `the subject record: private form ${id}`;
+    if (!engine.OWN_SLOTS.includes(form.into)) { problems.push(`${where} writes into "${form.into}", which is built in ${NOT_BUILT['a private form into answers, a plan, a setup or lines']}`); return; }
+    const need = engine.OWN_REQUIRED[form.into];
+    const check = (fields, wanted, label) => {
+      problems.push(...duplicatesOf(fields.map(f => f.id)).map(f => `${where}: ${label} "${f}" appears twice`));
+      Object.entries(wanted).forEach(([fid, type]) => {
+        const f = fields.find(x => x.id === fid);
+        if (!f) problems.push(`${where} has no ${label} "${fid}", which the app reads`);
+        else if (f.type !== type) problems.push(`${where}: ${label} "${fid}" is a ${f.type}, the app reads a ${type}`);
+      });
+      fields.filter(f => f.type === 'choose').forEach(f => { if (!lists[f.list]) problems.push(`${where}: ${label} "${f.id}" reads the list "${f.list}", which the subject does not have`); });
+      fields.filter(f => f.type !== 'choose' && f.list).forEach(f => problems.push(`${where}: ${label} "${f.id}" is not a choice and names a list`));
+    };
+    check(form.fields, need.fields, 'field');
+    if (need.rows) { if (!form.rows) problems.push(`${where} has no rows for the funds, which the app reads`); else check(form.rows.fields, need.rows, 'fund field'); }
+    else if (form.rows) problems.push(`${where} has rows, which a form into "${form.into}" does not take`);
+  });
   return problems;
 }
 
@@ -186,6 +249,7 @@ function subjectProblems(s) {
     else if ('value' in m && !facet.values.some(v => v.id === m.value)) problems.push(`the subject record: mix[${i}] names "${m.value}", which is not a value of ${m.facet}`);
   });
   if (!(meta.readingShare > 0 && meta.readingShare < 1)) problems.push('the subject record: readingShare must be above 0 and below 1');
+  problems.push(...refsProblems(meta), ...ownFormsProblems(meta, engine));
   if (meta.timed) problems.push(`the subject record times its items, which is built in ${NOT_BUILT['a subject that times its items']}`);
   if (meta.review && meta.review.dateField) problems.push(`the subject record uses the interview date, which is built in ${NOT_BUILT['the interview date']}`);
   return problems;
@@ -194,7 +258,7 @@ function subjectProblems(s) {
 export const V70 = subjectRule('V70', (s, check) => {
   const problems = subjectProblems(s);
   if (problems.length) { checkEach(check, 'subject', problems); return; }
-  const ctx = { subject: s.subject, engine: s.engine, listIds: s.listIds };
+  const ctx = { subject: s.subject, engine: s.engine, listIds: s.listIds, refIds: (s.meta.refs || []).map(r => r.id) };
   const items = Object.values(s.items), gens = Object.values(s.gens), lessons = s.lessonList;
   items.forEach(i => checkEach(check, `item ${i.id}`, itemProblems(i, `item ${i.id}`, ctx, false)));
   gens.forEach(g => checkEach(check, `generator ${g.id}`, itemProblems(g, `generator ${g.id}`, ctx, true)));
@@ -237,7 +301,7 @@ export const V81 = subjectRule('V81', (s, check) => {
   const problems = [];
   Object.entries(s.meta.own || {}).forEach(([formId, form]) => {
     if (!SLOTS.includes(form.into)) problems.push(`form ${formId} writes into "${form.into}", which is not a slot of the learner's private data`);
-    form.fields.forEach(f => {
+    [...form.fields, ...(form.rows ? form.rows.fields : [])].forEach(f => {
       if (PRIVATE_FIELD.test(f.label) || PRIVATE_FIELD.test(f.id)) problems.push(`form ${formId} has a field "${f.label}", which would hold an account number, a login, a password or a Social Security number`);
     });
   });

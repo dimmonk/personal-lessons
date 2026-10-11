@@ -3,8 +3,8 @@
 // (lesson standard 26.1, 26.2, 26.5). No page and no storage here. `data` is a registered subject: FC.get(id).
 
 // The ask kinds and block kinds built so far (26.8). A lesson that uses another fails V70 until its step is built.
-const ASK_KINDS = ['choose', 'number', 'sing'];
-const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure'];
+const ASK_KINDS = ['choose', 'number', 'form', 'sing'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (26.4)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));
@@ -29,7 +29,7 @@ function scoreChoose(data, ask, answer){
   return slipped ? slipped.slip : 'no';
 }
 // each scorer reads the question too (item.values: the numbers a generator made)
-const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer) };
+const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), form: (data, ask, answer, item) => scoreForm(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer) };
 
 // An ask opens only when the one it depends on was answered with one of the named options.
 const askApplies = (ask, answers) => !ask.when || (ask.when.ask in answers && asList(answers[ask.when.ask]).some(id => ask.when.is.includes(id)));
@@ -79,7 +79,8 @@ function ruleMet(rule, outcomes){
 }
 const facetValueText = (data, facet, value) => (((data.meta.facets || {})[facet] || { values: [] }).values.find(v => v.id === value) || { text: value }).text;
 const slipText = (data, slip) => ((((data.meta.lists || {}).slip) || []).find(s => s.id === slip) || { text: slip }).text;
-// A pass rule in plain words, for the check's first screen and its result: "At least 8 right", "None wrong among control patterns".
+// A pass rule in plain words, for the check's first screen and its result: "At least 8 right", "None wrong among control patterns". `of` names
+// what a rule counts when a facet cannot ("At least 3 right (what the account costs a year)").
 // A sung check says "on the note" where others say "right" (the caller passes the word).
 function ruleText(data, rule, right = 'right'){
   const scope = rule.where ? ' among ' + Object.entries(rule.where).map(([f, v]) => facetValueText(data, f, v)).join(', ') : '';
@@ -87,7 +88,7 @@ function ruleText(data, rule, right = 'right'){
     ...(rule.right ? [`At least ${rule.right.min} ${right}${scope}`] : []),
     ...(rule.wrong ? [rule.wrong.max === 0 ? `None wrong${scope}` : `At most ${rule.wrong.max} wrong${scope}`] : []),
     ...(rule.slip ? [(rule.max || 0) === 0 ? `None ${slipText(data, rule.slip)}${scope}` : `At most ${rule.max} ${slipText(data, rule.slip)}${scope}`] : [])];
-  return parts.join('; ');
+  return parts.join('; ') + (rule.of ? ` (${paras(rule.of).join(' ')})` : '');
 }
 // The result of a run: how many were right, whether every rule is met, and each rule in words.
 function checkResult(data, rules, outcomes, right = 'right'){

@@ -87,6 +87,9 @@ async function testPwa() {
 // Faults in the sound code run the five sound checks, which spend minutes in real time on real sound: a few at a time, after the others,
 // so that a busy machine never makes a frame late. The others all run at once, as they always have.
 const SOUND_FAULTS_AT_ONCE = 3;
+// The others run in a pool too: a fault such as "a question moves on by itself after two and a half seconds" is only exact while a step of a check
+// is quicker than that, and forty pages at once on one machine are not.
+const QUICK_FAULTS_AT_ONCE = 4;
 async function inPool(items, limit, work) {
   const out = [];
   let next = 0;
@@ -97,7 +100,7 @@ async function inPool(items, limit, work) {
 }
 async function testFaults() {
   const run = async fault => ({ fault, ...(await runWithFault(browser, fault)) });
-  const quick = await Promise.all(FAULTS.filter(f => !f.only).map(run));
+  const quick = await inPool(FAULTS.filter(f => !f.only), QUICK_FAULTS_AT_ONCE, run);
   const slow = await inPool(FAULTS.filter(f => f.only), SOUND_FAULTS_AT_ONCE, run);
   const results = [...quick, ...slow];
   for (const { fault, red, errors, unused } of results) {

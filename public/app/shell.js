@@ -17,6 +17,7 @@ function render(){
   switch(APP.view){
     case 'subject':   return renderSubject(subj);
     case 'lesson':    return renderLesson(subj);
+    case 'range':     return renderRangeAgain(subj);
     case 'results':   return renderResults(subj);
     default:          return renderLibrary();
   }
