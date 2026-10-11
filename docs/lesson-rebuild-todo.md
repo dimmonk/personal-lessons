@@ -19,6 +19,8 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
   before anything is called done; one session owns the job: commit, push and deploy as each piece lands.
 
 ## Main task
+- [ ] **(now)** Stand-in learner reviews (the gain gate) of the seven live pilots: "after this lesson, can the reader do more of the real thing?"; fix what fails (owner, 2026-10-11: "keep going. just finish everything and don't wait on my read")
+- [ ] V69 enforces it: every lesson needs a passing stand-in review or your own try; the pilot gate accepts the stand-in with your words recorded
 - [x] The `build-subject` skill: seven gates in order, from the kind of learning to a tried pilot
 - [x] The gates enforced in the app: design records and V69 (standard sections 23 and 26.7)
 - [x] Every subject designed blind and audited: all eight rebuilt from scratch (verdicts in `docs/subjects/<id>/design.md`)
@@ -33,7 +35,7 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [x] Psychology's pilot live: what someone did, told the way it reaches you, "can't tell yet" a right answer
 - [x] Scams' pilot and baseline built and tested (2026-10-11), waiting to be deployed: messages as they arrive in six forms, act / check first / leave, a clock, a call that pushes back (standard 26.10, step 8)
 - [x] US Civics' pilot built and tested (2026-10-11), waiting to be deployed: the 17 questions of part 1 in the list's own words, read aloud when you tap, answered from memory and checked, "my answer means the same", your own answers and interview date, the mock interview (on the test subject) (standard 26.10, step 9)
-- [ ] Each subject's other lessons, after your try of its pilot
+- [ ] Each subject's other lessons (about 50), each with a passing stand-in review, tested and deployed subject by subject
 - [ ] The research document (`docs/learning-science.md`) reorganized by kind of learning
 
 ## Parked
@@ -41,8 +43,5 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
-- [ ] **Try the pilots on your phone** and tell me in a line how each went (each line unlocks that subject's other lessons):
-  Singing → Match a note; Basic Math → Ballpark and check; Wealth → What it costs a year; Statistical Claims → Find the
-  claim and its number; Political Ideologies → Socialist, or not?; Psychology → What did they do?; Scams → Act, check or leave; Scams → Act, check or
-  leave (and Before you start, which comes first on the Scams screen); US Civics → Who does what
+- [ ] Whenever you have time: try any lesson on your phone; your words overwrite the stand-in review
 - [x] The helpline in Psychology's pilot checked against thehotline.org (2026-10-11): 1.800.799.SAFE (7233) and text START to 88788, as written
