@@ -9,6 +9,10 @@ const lesson = (id, ...rest) => ['subjects', F, 'lessons', id, ...rest];
 const meta = (...rest) => ['subjects', F, 'meta', ...rest];
 // the sung test subject
 const sung = (id, ...rest) => ['subjects', 'chorus', 'lessons', id, ...rest];
+// the test subject of typed numbers, documents and figures
+const tillItem = (id, ...rest) => ['subjects', 'till', 'items', id, ...rest];
+const tillGen = (id, ...rest) => ['subjects', 'till', 'gens', id, ...rest];
+const tillLesson = (id, ...rest) => ['subjects', 'till', 'lessons', id, ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -22,6 +26,7 @@ const padding = Array.from({ length: 200 }, () => 'The chance is a number.').joi
 export const CONTROLS = [
   { rule: 'V4', name: 'a question\'s reason shows its id', data: (d, h) => h.setIn(d, item('c-1', 'reason'), 'The forecast says 80% chance of rain. See c-1.') },
   { rule: 'V36', name: 'a reason opens with praise', data: (d, h) => h.setIn(d, item('c-2', 'reason'), 'Correct. A 20% chance means rain on about two days in ten like this one.') },
+  { rule: 'V36', name: 'a trap\'s line opens with a bare verdict', data: (d, h) => h.setIn(d, tillGen('t-cart', 'asks', 1, 'traps', 0, 'then'), 'Wrong. That is the answer you get when the roast chicken is left out.') },
   { rule: 'V45', name: 'a lesson at revision 2 with one history entry', data: (d, h) => h.setIn(d, lesson('l2', 'rev'), 2) },
   { rule: 'V45', name: 'a live lesson with no word from the owner', data: (d, h) => h.removeIn(d, lesson('l1', 'tried')) },
   { rule: 'V46', name: 'content that differs from the lock', keepLock: true,
@@ -46,11 +51,20 @@ export const CONTROLS = [
   { rule: 'V69', name: 'the pilot changed before it was tried (allowed)', green: true,
     input: input => asDesign(input, 'fixture/l1', { tried: { pilot: null } }) },
   { rule: 'V70', name: 'an ask of an unknown kind', data: (d, h) => h.setIn(d, item('c-2', 'asks', 0, 'kind'), 'telepathy') },
+  { rule: 'V70', name: 'a number with no tolerance', data: (d, h) => h.removeIn(d, tillGen('t-cart', 'asks', 1, 'tol')) },
+  { rule: 'V70', name: 'a frame with two blanks and a one-number answer', data: (d, h) => h.setIn(d, tillItem('t-recipe', 'asks', 0, 'answer'), 3) },
+  { rule: 'V70', name: 'the estimate check on a group with no estimate to compare', data: (d, h) => h.setIn(d, tillLesson('l1', 'flow', 4, 'set', 'support'), { estimateCheck: true }) },
+  { rule: 'V70', name: 'a document of a form that is not one', data: (d, h) => h.setIn(d, tillLesson('l1', 'flow', 0, 'show', 0, 'form'), 'menu') },
+  { rule: 'V70', name: 'a bar part with no percent', data: (d, h) => h.removeIn(d, tillLesson('l1', 'flow', 1, 'show', 1, 'data', 'parts', 0, 'pct')) },
   { rule: 'V71', name: 'a part with no lesson in a subject that says it is complete', data: (d, h) => h.removeIn(d, lesson('l2')) },
   { rule: 'V72', name: 'a check question that is also in a group', data: (d, h) => h.setIn(d, lesson('l1', 'check', 'items', 0), 'c-1') },
   { rule: 'V73', name: 'a why padded far past the reading share', data: (d, h) => h.setIn(d, lesson('l2', 'why'), padding) },
   { rule: 'V74', name: 'a wrong option with no line of its own and no slip',
     data: (d, h) => h.setIn(d, item('c-3', 'asks', 0, 'then'), { bring: 'You carry it and stay dry if the rain comes.' }) },
+  { rule: 'V74', name: 'a number whose answer names a value the question never makes', data: (d, h) => h.setIn(d, tillItem('t-leave', 'asks', 1, 'answer'), 'balance') },
+  { rule: 'V74', name: 'a trap that names a slip the subject does not have', data: (d, h) => h.setIn(d, tillItem('t-leave', 'asks', 1, 'traps', 0, 'slip'), 'mystery') },
+  { rule: 'V74', name: 'an estimate asked after the exact answer', data: (d, h) => h.updateIn(d, tillGen('t-cart', 'asks'), asks => [asks[1], asks[0]]) },
+  { rule: 'V75', name: 'a number slip that lands on the answer', data: (d, h) => h.setIn(d, tillGen('t-cart', 'asks', 1, 'traps', 0, 'value'), 'total') },
   { rule: 'V75', name: 'a slip that gives the answer', data: (d, h) => h.setIn(d, gen('g-chance', 'asks', 0, 'options', 1, 'value'), 'days') },
   { rule: 'V76', name: 'a group with no dry forecast', data: (d, h) => h.setIn(d, lesson('l1', 'flow', 2, 'set', 'items'), ['c-1', 'c-3']) },
   { rule: 'V77', name: 'a topic one question short of its returns', data: (d, h) => h.removeIn(h.removeIn(d, item('b-3')), item('b-4')) },

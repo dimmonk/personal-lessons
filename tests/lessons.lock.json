@@ -10,8 +10,8 @@
       "fp": "sha256:c0e37d441bcaf16b5ffbcd151f647aa1c7dfd588acfabc3b58924e0b95696114"
     },
     "math": {
-      "rev": 5,
-      "fp": "sha256:4fde17439719604e0bfc6b6d2816f5be15f42121afef12cacc1efa3898e9eaac"
+      "rev": 6,
+      "fp": "sha256:f2793899f98e07638907f45e5a61287ea9d99d57d3b6ab23c9fcc21311115b87"
     },
     "psychology": {
       "rev": 7,
@@ -35,6 +35,10 @@
     }
   },
   "lessons": {
+    "math/l1": {
+      "rev": 1,
+      "fp": "sha256:6a99a59719ea06509038046667cec53f94dcc8603e4863847f65a2bb8b2ede14"
+    },
     "singing/l2": {
       "rev": 1,
       "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"

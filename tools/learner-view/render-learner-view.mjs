@@ -9,7 +9,18 @@ const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
 const quote = lines => lines.map(l => `> ${l}`).join('\n');
 
 /* ---------- blocks ---------- */
+const cellText = cell => String(cell);
+const FIGURE_WORDS = {
+  'rate-table': d => [`A table with two rows: ${[d.top, d.bottom].map(r => `${r.label}: ${r.cells.join(', ')}`).join(' / ')}.`],
+  bar: d => [`A bar for the whole, "${d.whole}", cut into parts as wide as their percents: ${d.parts.map(p => `${p.label} ${p.pct}%`).join(', ')}.`],
+  plan: d => [`A plan drawn to one scale, each side written in ${d.unit}: ${d.parts.map(p => `${p.w} by ${p.h}${p.label ? ` (${p.label})` : ''}${p.cut ? ', cut out' : ''}`).join('; ')}.`],
+  years: d => [`A table, year by year: ${d.columns.join(' | ')}; ${d.rows.map(r => r.join(' | ')).join('; ')}.`]
+};
 function blockLines(block, deciding = []) {
+  if (block.kind === 'document') {
+    return [`A ${block.form}, "${block.title}":`, '', ...block.rows.map(r => `> ${r.cells.map(cellText).join('  |  ')}${deciding.includes(r.id) ? '  <- marked after the answer' : ''}`), ...(block.notes || []).map(n => `> (${n})`)];
+  }
+  if (block.kind === 'figure') return FIGURE_WORDS[block.type](block.data);
   if (block.kind === 'pair') {
     return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding).join(' ')} | ${blockLines(block.b, deciding).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
   }
@@ -20,7 +31,20 @@ function blockLines(block, deciding = []) {
 const blocksText = (blocks, deciding) => blocks.flatMap(b => [...blockLines(b, deciding), '']).join('\n');
 
 /* ---------- a question ---------- */
-function askLines(e, data, ask, marks) {
+const TOL_WORDS = tol => 'round' in tol ? `to the nearest ${tol.round}` : 'band' in tol ? `from ${tol.band[0]} to ${tol.band[1]} times the exact answer` : [...('abs' in tol ? [`within ${tol.abs}`] : []), ...('rel' in tol ? [`within ${Math.round(tol.rel * 100)}%`] : [])].join(' or ');
+function numberAskLines(e, ask, item, marks) {
+  const estimate = e.isEstimateAsk(ask), blanks = (ask.frame || '__').replace(/__/g, '[ ]'), tol = e.tolOf(ask);
+  const lines = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
+    `- The learner types ${estimate ? 'a rough answer from their head, with no calculator' : 'a number, with the calculator within reach'}: ${blanks}${ask.unit ? ` ${ask.unit}` : ''}.`];
+  if (!marks) return lines;
+  const want = e.numberAnswers(item, ask);
+  lines.push(`- Right (${TOL_WORDS(tol)}${estimate && !ask.tol ? ': an estimate with no tolerance of its own is right from half to double' : ''}): ${e.frameFilled(ask, want)}`);
+  (ask.traps || []).forEach(t => lines.push(`- If typed ${e.frameFilled(ask, e.numberAnswers(item, { answer: t.value }))}: ${t.then ? paras(t.then).join(' ') : `a slip: ${t.slip}`}`));
+  if (estimate) lines.push(`- Shown after: how far off it was, for example "${e.SAY.estimateLine('$' + (want[0] * 1.1).toFixed(2), e.frameFilled(ask, want), { pct: 10, dir: 'over' })}"`);
+  return lines;
+}
+function askLines(e, data, ask, marks, item) {
+  if (ask.kind === 'number') return numberAskLines(e, ask, item, marks);
   const options = e.chooseOptions(data.subjects.__current, ask);
   const lines = [`**${paras(ask.prompt).join(' ')}**${ask.many ? ' (choose every one that fits)' : ''}${ask.when ? ' (opens only after a certain answer)' : ''}`];
   options.forEach(o => lines.push(`- ${o.text}${marks && o.ok ? ' (right)' : ''}${marks && !o.ok ? ` — if chosen: ${o.then ? paras(o.then).join(' ') : `a slip: ${o.slip}`}` : ''}`));
@@ -31,7 +55,7 @@ function questionLines(e, data, inst, support, label) {
   if (support && support.shown) lines.push('Help on screen: the words that decide it are marked.', '');
   const shown = e.shownStepIds(item, support);
   if (shown.length) lines.push('Help on screen: the working up to the last steps.', ...item.steps.filter(s => shown.includes(s.id)).map(s => `- ${s.does} ${s.working}`), '');
-  e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true), ''));
+  e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true, item), ''));
   lines.push(`After the answer: the deciding words are marked${(item.deciding || []).length ? '' : ' (none named)'}. Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
   if (item.steps) lines.push('The working:', ...item.steps.map(s => `- ${s.does} ${s.working}`));
@@ -89,8 +113,9 @@ export function renderLesson(loaded, subjectId, lessonId) {
   const out = [`# ${subject.meta.name}: ${lesson.title}`, '',
     `Revision ${lesson.rev}, ${lesson.status}${lesson.status === 'draft' ? ' (the screen carries the draft line)' : ''}. Part: ${part || 'none'}. Where the subject ends up: ${subject.meta.endResult}`, '',
     '## The why', '', ...paras(lesson.why), ''];
-  const instance = ref => e.refId(ref) in subject.items ? { key: e.refId(ref), item: subject.items[e.refId(ref)] } : { key: e.refId(ref), item: e.itemFromGen(subject.gens[e.refId(ref)], 1), seed: 1 };
   let n = 0;
+  // a made question is shown with the seed of its place in the lesson, so the numbers in the view differ from one question to the next
+  const instance = ref => e.refId(ref) in subject.items ? { key: e.refId(ref), item: subject.items[e.refId(ref)] } : { key: e.refId(ref), item: e.itemFromGen(subject.gens[e.refId(ref)], n + 1, ref.with), seed: n + 1 };
   const rangeShown = { done: false }, needsRange = ref => isSung(ref) && e.SING_NEEDS_RANGE.includes(ref.sing.task);
   lesson.flow.forEach((step, i) => {
     const at = `Step ${i + 1}`;
@@ -98,11 +123,13 @@ export function renderLesson(loaded, subjectId, lessonId) {
     else if (step.worked) {
       const item = subject.items[step.worked];
       out.push(`## ${at}: A worked example`, '', blocksText(item.blocks));
-      if (item.asks.length) out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false), '');
-      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(a => e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ')).join(' / ')}. ${paras(item.reason).join(' ')}`, '');
+      if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
+      const right = a => a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ')}. ${paras(item.reason).join(' ')}`, '');
     } else {
       const set = step.set, refs = e.flatRefs(set.items), sung = refs.some(isSung), count = refs.reduce((k, r) => k + e.refCount(r), 0);
-      const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (k === 'line' ? 'the line and the notes drawn while singing' : k) : `${k} ${v}`).join(', ')})` : '';
+      const HELP_WORDS = { line: 'the line and the notes drawn while singing', estimateCheck: 'a line that says when the answer and the estimate disagree: an answer more than double or less than half of the learner\'s own estimate is held back once' };
+      const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (HELP_WORDS[k] || k) : `${k} ${v}`).join(', ')})` : '';
       if (sung) {
         out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum with the line drawn. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}. A missed try comes back at least three tries later, with a new note, until it is on the note.`, '');
         out.push(...rangeFirst(e, refs, rangeShown), ...sungRefLines(e, refs, set.support, 'Try', n));
@@ -118,7 +145,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
     }
   });
   const check = lesson.check, size = e.checkSize(check);
-  out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
+  out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
     'To pass:', ...check.pass.map(r => `- ${e.ruleText(subject, r, e.rightWord(check))}`), '');
   if (e.checkIsDrawn(check)) out.push(`The questions are drawn from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them).`, '');
   else if (e.checkIsSung(check)) out.push(...rangeFirst(e, e.flatRefs(check.items), rangeShown), ...sungRefLines(e, e.flatRefs(check.items), null, 'Check try', n));

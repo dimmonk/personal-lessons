@@ -5,6 +5,8 @@
 // that check to go red.
 
 import { SOUND_CHECKS } from './e2e-sing.mjs';
+import { NUMBER_CHECKS } from './e2e-number.mjs';
+import { X25 } from './e2e-math.mjs';
 
 // A Monday. Reviews run Monday to Sunday, so the tests that move through days start on one and name the days they move to.
 const MONDAY = '2026-11-02', WEDNESDAY = '2026-11-04', SUNDAY = '2026-11-08', NEXT_MONDAY = '2026-11-09';
@@ -268,4 +270,4 @@ export async function X23(env) {
   return c;
 }
 
-export const CHECKS = { X1, X2, X3, X5, X21, X22, X23, ...SOUND_CHECKS };
+export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X20: NUMBER_CHECKS.X20, X21, X22, X23, X25, ...SOUND_CHECKS };

@@ -77,9 +77,23 @@ export const V73 = subjectRule('V73', (s, check) => {
 });
 
 /* ---------- V74: every ask can be scored and explained ---------- */
+// a typed number: its answer and every trap's value are numbers the question makes, each trap names a slip of the subject, and an estimate
+// is typed before the exact answer it is compared with
+function numberExplainProblems(s, item, ask, where, ids) {
+  const e = s.engine, problems = [];
+  try { e.numberAnswers(item, ask); } catch (error) { problems.push(`${where}: ${error.message}`); }
+  (ask.traps || []).forEach(t => {
+    try { e.numberAnswers(item, { answer: t.value }); } catch (error) { problems.push(`${where}: the trap "${t.slip}": ${error.message}`); }
+    if (!ids.includes(t.slip)) problems.push(`${where}: the slip "${t.slip}" is not in the subject's list of slips`);
+  });
+  const before = item.asks.slice(0, item.asks.indexOf(ask));
+  if (ask.estimate && before.some(a => a.kind === 'number' && !a.estimate)) problems.push(`${where}: the estimate comes after an exact answer; it is typed first`);
+  return problems;
+}
 function explainProblems(s, item) {
   const problems = [], ids = s.listIds.slip || [];
   item.asks.forEach(ask => {
+    if (ask.kind === 'number') { problems.push(...numberExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
     if (!options.some(o => o.ok)) problems.push(`${where} has no right option`);
     if (ask.many === undefined && options.filter(o => o.ok).length > 1) problems.push(`${where} has more than one right option and does not take several`);
@@ -113,7 +127,16 @@ function generatorProblems(s, gen) {
       Object.entries(values).forEach(([name, v]) => { if (!(typeof v === 'string' || (typeof v === 'number' && Number.isFinite(v)))) problems.add(`${name} is ${v}, which is not a finite number or a word`); });
       const a = e.itemFromGen(gen, seed), b = e.itemFromGen(gen, seed);
       if (JSON.stringify(a) !== JSON.stringify(b)) problems.add('the same seed does not give the same question');
-      a.asks.forEach(ask => {
+      a.asks.filter(ask => ask.kind === 'number').forEach(ask => {
+        const wanted = e.numberAnswers(a, ask), tol = e.tolOf(ask);
+        wanted.forEach(v => { if (!Number.isFinite(v)) problems.add(`ask ${ask.id}: the answer is ${v}`); });
+        if (e.numbersMatch(wanted, wanted, tol) !== true) problems.add(`ask ${ask.id}: the answer is not within its own tolerance`);
+        (ask.traps || []).forEach(t => {
+          const slipValues = e.numberAnswers(a, { answer: t.value });
+          if (e.numbersMatch(slipValues, wanted, tol)) problems.add(`the slip "${t.slip}" gives the answer ${wanted.join(', ')}, or lands within its tolerance`);
+        });
+      });
+      a.asks.filter(ask => ask.kind === 'choose').forEach(ask => {
         const options = e.chooseOptions(s.subject, ask), listIds = ask.from ? s.listIds[ask.from] : null;
         if (listIds) e.asList(ask.right).filter(id => !listIds.includes(id)).forEach(id => problems.add(`the right answer "${id}" is not in the list ${ask.from}`));
         options.filter(o => o.slip && o.ok).forEach(o => problems.add(`the slip "${o.slip}" is also the right option`));

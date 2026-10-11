@@ -5,7 +5,7 @@
   'use strict';
 
   const LESSON_STANDARD = 2;   // docs/lesson-standard.md version the engine implements
-  const ENGINE_WORDING = 7;    // goes up when the app's own wording changes
+  const ENGINE_WORDING = 8;    // goes up when the app's own wording changes
   let subjects = Object.freeze({});
 
   function deepFreeze(value) {

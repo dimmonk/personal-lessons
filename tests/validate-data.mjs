@@ -3,6 +3,7 @@
 // Run: npm run test:data
 import { readFile } from 'node:fs/promises';
 import { loadApp, scriptList } from './load-app.mjs';
+import { FIXTURE_IDS } from './fixtures/fixture-subject/design.mjs';
 
 const app = await loadApp({ fixture: true });
 const { SUBJECTS } = app;
@@ -55,4 +56,4 @@ if (failures.length) {
   failures.forEach(f => console.error('  - ' + f));
   process.exit(1);
 }
-console.log(`✓ ${checks} data checks passed across ${SUBJECTS.length - 1} subjects (and the test subject)`);
+console.log(`✓ ${checks} data checks passed across ${SUBJECTS.length - FIXTURE_IDS.length} subjects (and ${FIXTURE_IDS.length} test subjects)`);

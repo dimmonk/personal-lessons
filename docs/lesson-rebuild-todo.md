@@ -34,7 +34,8 @@ built, not one subject. From now on every subject goes through the `build-subjec
 - [x] The practice engine designed for all eight subjects (standard section 26)
 - [x] The engine core built and the old engine and lessons deleted (b884add; not deployed until Singing's pilot exists; old lessons at the tag `old-lessons`)
 - [x] Singing on the new engine: the singing answer, the pitch line, your range, and the pilot lesson "Match a note" (live 2026-10-10): answers you give (typed numbers, typed answers, actions, verdicts, singing), what you see (messages as they arrive, charts, statements, spoken questions), fading feedback, private records; the old engine deleted
-- [ ] Each subject rebuilt on the new engine, pilot lesson first: Singing, then the others
+- [x] Math on the new engine: the typed number (rough answer first, then the exact one with a calculator, wrong answers named), problems made with fresh prices, receipts and recipe cards on screen, and the pilot lesson "Ballpark and check" (draft, step 3)
+- [ ] Each subject rebuilt on the new engine, pilot lesson first: Singing and Math done; Wealth, Stats, Ideology, Psychology, Scams, Civics next
 
 ## Parked
 - [x] Scams baseline bug: confirmed by the audit; it goes with the old lessons (Scams is rebuilt)
@@ -47,4 +48,5 @@ built, not one subject. From now on every subject goes through the `build-subjec
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
+- [ ] **Try Math's pilot on your phone**: Library → Basic Math → Ballpark and check; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
 - [ ] **Try Singing's pilot on your phone**: Library → Singing → Match a note; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)

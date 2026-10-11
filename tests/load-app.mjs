@@ -22,7 +22,11 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'SING_RANGE_MIN_SPAN', 'SING_MELODY_HOLD_MS', 'SING_LOUD_LIMIT', 'SING_MISSED', 'SING_CENTS', 'singKey', 'isSingKey', 'singTaskProblems', 'singItem',
   'singDefinition', 'singPlan', 'singScalePlan', 'singExample', 'singOk', 'scoreSing', 'singWordKey', 'singMiddle', 'singTop',
   'singNoteCents', 'singHoldMs', 'singLevel', 'singAnswer', 'singFindRange', 'steadyNotes', 'middleOf', 'stripAxis', 'voicePath', 'stripMidi',
-  'singMarksHtml', 'singMissHtml', 'stripHtml', 'pitchHtml']; 
+  'singMarksHtml', 'singMissHtml', 'stripHtml', 'pitchHtml',
+  // typed numbers, documents and figures
+  'parseTyped', 'fmtNumber', 'typedText', 'frameParts', 'slotCount', 'numberValue', 'numberAnswers', 'frameFilled', 'isEstimateAsk', 'tolOf', 'withinTol',
+  'numbersMatch', 'scoreNumber', 'estimateTyped', 'estimatesDisagree', 'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'NUMBER_BAND', 'numberHtml',
+  'numberMarkHtml', 'numberMissHtml', 'numberRightText', 'calcHtml', 'documentHtml', 'figureHtml', 'markHtml', 'missLine'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {

@@ -247,8 +247,13 @@ far, unlabeled. Feedback in every block is gate 3's. Estimate first on every pro
 never questions about the lessons.
 
 ## Gates 6 and 7
-Not started. Lesson 1 is the pilot; it needs the typed numeric answer, the estimate and number-varied problems of gate 3
-first.
+Gate 6, in progress: the app capabilities of gate 3 are built (lesson standard 26.10, step 3: the typed number with its estimate
+first, tolerance, named slips and calculator; problems made with fresh prices; documents and figures) and lesson 1, "Ballpark and
+check", is in the app as a draft (2026-10-10): the rule of rounding and a worked receipt, two groups of three rough totals each
+followed by the exact total (the first with "your answer and your estimate disagree"), four printed totals to judge, and the check
+(5 rough totals, 4 within a fifth, and 3 printed totals with the wrong one caught). Reading is 8% of it. The learner view is
+`docs/learner-view/math-l1.md`. It waits for the owner's try on a phone: `tried.pilot` stays null, and lessons 2 to 7 are not
+written, until the owner has tried it and said what it did. Gate 7: not started.
 
 ## Audit of the existing lessons (2026-10-10)
 

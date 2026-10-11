@@ -95,7 +95,12 @@ function leastSeen(subjectId, defs){
 function strandInstance(data, subjectId, strandId, run, k, taken, facets){
   const defs = strandDefs(data, strandId).filter(d => !taken.includes(d.id) || d.make);
   const gens = defs.filter(d => d.make);
-  if(gens.length) return { inst: freshInstance(data, subjectId, gens[k % gens.length], run, k), repeat: false };
+  // a strand with several generators (Math's printed totals: right ones and wrong ones) draws among them, by the run, among those that
+  // match the facets asked for (a retest); taking them in turn would always hand the first kind to a one-question review
+  if(gens.length){
+    const alike = facets ? gens.filter(g => whereMatches(facets, g.facets)) : gens, pool = alike.length ? alike : gens;
+    return { inst: freshInstance(data, subjectId, pool[hashSeed(`${run}|${strandId}|${k}`) % pool.length], run, k), repeat: false };
+  }
   const used = usedIds(data), fixed = defs.filter(d => !d.make);
   const near = list => facets ? [...list.filter(d => Object.entries(facets).every(([f, v]) => (d.facets || {})[f] === v)), ...list] : list;
   const bank = leastSeen(subjectId, fixed.filter(d => !used.has(d.id) && !seenBefore(subjectId, d.id)));
@@ -122,5 +127,5 @@ function retestInstances(data, subjectId, lesson, run){
       if(pick){ out.push(pick.inst); if(pick.inst.seed === undefined) taken.push(pick.inst.key); }
     }
   });
-  return out;
+  return lesson.check.order === 'shuffle' ? shuffled(out, hashSeed(`${run}|retest`)) : out;
 }

@@ -12,7 +12,8 @@
 // exercise that opens a sung run).
 
 let Q = null;
-const freshCur = () => ({ a: {}, many: {}, done: false, score: null });
+// typed: what is in the boxes of each typed number; looked: the typed numbers whose "disagree" line has been shown; calc: the calculator
+const freshCur = () => ({ a: {}, many: {}, done: false, score: null, typed: {}, looked: {}, calc: { open: false, st: CALC_START } });
 
 function startQueue(opts){
   singReset();
@@ -37,6 +38,7 @@ function paintQueue(){
   const inst = queueItem(), cur = Q.cur, sung = isSung(inst);
   const marks = cur.done && Q.feedback === 'after-each';
   const body = itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done) : null,
+    typed: cur.typed, looked: cur.looked, calc: cur.calc,
     feedback: marks ? feedbackHtml(Q.data, inst, Q.support, cur.a, cur.score) : '' });
   const last = Q.at === Q.list.length - 1;
   const actions = `<div class="actbar"><button class="btn neutral" id="qNext" ${cur.done ? '' : 'disabled'}>${last ? SAY.finish : SAY.next}${icon('arrow')}</button>
@@ -45,6 +47,7 @@ function paintQueue(){
   on('[data-opt]', el => pickOption(el.closest('[data-ask]').dataset.ask, el.dataset.opt));
   on('[data-answer]', el => commitMany(el.dataset.answer));
   on('#qNext', nextQuestion);
+  wireNumber();
   if(sung) wireSing(inst, cur.done);
 }
 
@@ -69,7 +72,7 @@ function answerAsk(askId, answer){
   Q.cur = { ...Q.cur, a: { ...Q.cur.a, [askId]: answer } };
   if(itemAnswered(queueItem().item, Q.support, Q.cur.a)) return finishItem();
   paintQueue();
-  focusOn('[data-ask]:last-of-type');
+  focusAfterAnswer();
 }
 
 // a missed question comes back at least three questions later, until it is right (R2); a made one comes back with new numbers
@@ -93,7 +96,7 @@ function finishItem(){
 }
 function nextQuestion(){
   if(!Q.cur.done) return;
-  Q = { ...Q, at: Q.at + 1, cur: freshCur() };
+  Q = { ...Q, at: Q.at + 1, cur: { ...freshCur(), calc: { open: Q.cur.calc.open, st: CALC_START } } };
   paintQueue();
   window.scrollTo(0, 0);
   focusOn('.qlabel');

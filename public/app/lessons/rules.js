@@ -3,8 +3,8 @@
 // (lesson standard 26.1, 26.2, 26.5). No page and no storage here. `data` is a registered subject: FC.get(id).
 
 // The ask kinds and block kinds built so far (26.8). A lesson that uses another fails V70 until its step is built.
-const ASK_KINDS = ['choose', 'sing'];
-const BLOCK_KINDS = ['prose', 'pair', 'pitch'];
+const ASK_KINDS = ['choose', 'number', 'sing'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (26.4)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));
@@ -28,7 +28,8 @@ function scoreChoose(data, ask, answer){
   const slipped = chosen.map(id => options.find(o => o.id === id)).find(o => o && !o.ok && o.slip);
   return slipped ? slipped.slip : 'no';
 }
-const SCORERS = { choose: scoreChoose, sing: (data, ask, answer) => scoreSing(data, ask, answer) };
+// each scorer reads the question too (item.values: the numbers a generator made)
+const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer) };
 
 // An ask opens only when the one it depends on was answered with one of the named options.
 const askApplies = (ask, answers) => !ask.when || (ask.when.ask in answers && asList(answers[ask.when.ask]).some(id => ask.when.is.includes(id)));
@@ -57,7 +58,7 @@ const itemAnswered = (item, support, answers) => askedAsks(item, support).filter
 // { r: { [askId]: result }, ok }: an item is right when every scored ask is right.
 function scoreItem(data, item, support, answers){
   const asks = askedAsks(item, support).filter(a => askApplies(a, answers) && a.id in answers);
-  const r = Object.fromEntries(asks.map(a => [a.id, SCORERS[a.kind](data, a, answers[a.id])]));
+  const r = Object.fromEntries(asks.map(a => [a.id, SCORERS[a.kind](data, a, answers[a.id], item)]));
   return { r, ok: asks.length > 0 && asks.every(a => r[a.id] === 'ok') };
 }
 

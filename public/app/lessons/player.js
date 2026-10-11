@@ -77,7 +77,7 @@ function paintShow(step){
 function paintWorked(step){
   const { data } = LESSON, item = data.items[step.worked], w = LESSON.worked || { picked: null, skipped: false, shown: 0 };
   const steps = item.steps || [], ask = (item.asks || [])[0];
-  const committing = ask && w.picked === null && !w.skipped;
+  const committing = ask && ask.kind === 'choose' && w.picked === null && !w.skipped;
   const finished = !committing && w.shown >= steps.length;
   const inst = { key: item.id, item };
   const ctx = { deciding: finished ? item.deciding || [] : [] };
@@ -98,7 +98,8 @@ function paintWorked(step){
 // the right answers of a worked item, then why
 function workedAnswerHtml(data, inst){
   const item = inst.item;
-  const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(SAY.workedAnswer)}</span><span class="ans">${esc(chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; '))}</span></div>`).join('');
+  const right = a => a.kind === 'number' ? numberRightText(a, item) : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
+  const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   return `<div class="feedback"><div class="marks">${marks}</div>${block(SAY.whyLabel, paras(item.reason))}${block(SAY.needLabel, paras(item.need))}</div>`;
 }
@@ -162,7 +163,8 @@ function paintCheckIntro(){
 function checkInstances(run){
   const { data, subj, lesson } = LESSON, check = lesson.check;
   if(checkIsDrawn(check)) return drawInstances(data, subj.id, check.items.draw, run, flowSetIds(lesson));
-  return flatRefs(check.items).flatMap((ref, k) => refInstances(data, subj.id, ref, run, k));
+  const list = flatRefs(check.items).flatMap((ref, k) => refInstances(data, subj.id, ref, run, k));
+  return check.order === 'shuffle' ? shuffled(list, hashSeed(`${run}|check`)) : list;   // a check in mixed order gives no hint from the place of a question
 }
 const flowSetIds = lesson => flowSets(lesson).flatMap(set => flatRefs(set.items).map(refId));
 function startCheck(){

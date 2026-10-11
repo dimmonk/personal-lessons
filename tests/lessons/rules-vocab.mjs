@@ -67,7 +67,8 @@ const PRAISE = /^\W*(great|well done|good job|nice work|excellent|not quite|oops
 const feedbackOf = (item, where) => [
   ...learnerStrings(item.reason, `${where}.reason`), ...learnerStrings(item.need, `${where}.need`),
   ...(item.steps || []).flatMap((x, i) => learnerStrings(x.working, `${where}.steps[${i}].working`)),
-  ...item.asks.flatMap((a, i) => [...learnerStrings(a.then, `${where}.asks[${i}].then`), ...(a.options || []).flatMap((o, j) => learnerStrings(o.then, `${where}.asks[${i}].options[${j}].then`))]),
+  ...item.asks.flatMap((a, i) => [...learnerStrings(a.then, `${where}.asks[${i}].then`), ...(a.options || []).flatMap((o, j) => learnerStrings(o.then, `${where}.asks[${i}].options[${j}].then`)),
+    ...(a.traps || []).flatMap((t, j) => learnerStrings(t.then, `${where}.asks[${i}].traps[${j}].then`))]),
   ...item.blocks.flatMap((b, i) => (b.lines || []).flatMap((seg, j) => learnerStrings(seg.note, `${where}.blocks[${i}].lines[${j}].note`)))
 ];
 export const V36 = subjectRule('V36', (s, check) => {

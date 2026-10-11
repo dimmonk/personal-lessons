@@ -2,7 +2,7 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, DOCUMENT, FIGURE, FIGURE_DATA, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -12,8 +12,8 @@ export const NOT_BUILT = {
   'a baseline lesson': 'step 8 (Scams)', 'an own step': 'step 4 (Wealth)', 'a timed group': 'step 8 (Scams)', 'a busy task': 'step 8 (Scams)',
   'a saved plan': 'step 8 (Scams)', 'a spoken check': 'step 9 (Civics)', 'a check with a time': 'step 8 (Scams)',
   'a subject that times its items': 'step 8 (Scams)', 'the interview date': 'step 9 (Civics)',
-  'a panel or estimate prompt': 'steps 3, 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
-  'a picture added to feedback': 'steps 3 and 5'
+  'a panel': 'steps 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
+  'a chart redrawn from zero': 'step 5 (Stats)'
 };
 
 /* ---------- the pieces ---------- */
@@ -24,13 +24,41 @@ function blockProblems(block, where, kinds) {
   if (block.kind === 'prose') {
     return [...show(checkShape(block, PROSE, where)), ...('text' in block) === ('lines' in block) ? [`${where} must have exactly one of text and lines`] : []];
   }
+  if (block.kind === 'document') return show(checkShape(block, DOCUMENT, where));
+  if (block.kind === 'figure') {
+    const shape = show(checkShape(block, FIGURE, where));
+    return shape.length ? shape : show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
+  }
   return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds), ...blockProblems(block.b, `${where}.b`, kinds)];
+}
+
+// A typed number: its frame has one blank for each value of the answer, each trap's value has as many, and the tolerance is one of the
+// kinds number.js knows (an estimate may leave it out: it is then right from half to double).
+const TOL_KEYS = ['abs', 'rel', 'round', 'band'];
+function numberProblems(ask, where) {
+  const problems = show(checkShape(ask, NUMBER, where));
+  if (problems.length) return problems;
+  const blanks = (ask.frame || '__').split('__').length - 1, count = v => Array.isArray(v) ? v.length : 1;
+  if (blanks < 1) problems.push(`${where}: the frame has no blank ("__") to type in`);
+  else if (count(ask.answer) !== blanks) problems.push(`${where}: the frame has ${blanks} blank${blanks === 1 ? '' : 's'} and the answer has ${count(ask.answer)} value${count(ask.answer) === 1 ? '' : 's'}`);
+  (ask.traps || []).forEach(t => { if (count(t.value) !== blanks) problems.push(`${where}: the trap "${t.slip}" has ${count(t.value)} value${count(t.value) === 1 ? '' : 's'}, the frame ${blanks} blank${blanks === 1 ? '' : 's'}`); });
+  const tol = ask.tol;
+  if (!tol) { if (!ask.estimate) problems.push(`${where}: a number needs a tolerance (tol)`); }
+  else {
+    const keys = Object.keys(tol);
+    if (!keys.length) problems.push(`${where}: tol names no tolerance (${TOL_KEYS.join(', ')})`);
+    if (keys.includes('round') && keys.length > 1) problems.push(`${where}: a rounding (round) stands alone; abs and rel may stand together`);
+    if (keys.includes('band') && (keys.length > 1 || tol.band.length !== 2 || !(tol.band[0] > 0 && tol.band[0] < tol.band[1]))) problems.push(`${where}: a band is two numbers, the least above 0 and the most above it, and stands alone`);
+    if (keys.some(k => typeof tol[k] === 'number' && !(tol[k] > 0))) problems.push(`${where}: a tolerance is above 0`);
+  }
+  return problems;
 }
 
 function askProblems(ask, where, kinds, listIds) {
   if (!ask || typeof ask !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(ask.kind)) return [`${where} has an ask of kind "${ask.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (ask.kind === 'sing') return [`${where} is a sing ask, which only a sung question the app makes from a { sing } task may carry`];
+  if (ask.kind === 'number') return numberProblems(ask, where);
   const problems = show(checkShape(ask, CHOOSE, where));
   if (('options' in ask) === ('from' in ask)) problems.push(`${where} must have exactly one of options and from`);
   if ('from' in ask) {
@@ -65,8 +93,10 @@ function itemProblems(item, where, ctx, isGen) {
   const segIds = item.blocks.flatMap(b => engine.segmentsOf(b)).map(s => s.id);
   problems.push(...duplicatesOf(segIds).map(id => `${where}: segment "${id}" appears twice`));
   problems.push(...duplicatesOf([...(item.steps || []).map(s => s.id)]).map(id => `${where}: step "${id}" appears twice`));
-  const unbuilt = [...('has' in item ? ['requirements found or missing'] : []), ...('fact' in item ? ['an interview fact'] : []), ...(('redraw' in item || 'figure' in item) ? ['a picture added to feedback'] : [])];
+  const unbuilt = [...('has' in item ? ['requirements found or missing'] : []), ...('fact' in item ? ['an interview fact'] : []), ...('redraw' in item ? ['a chart redrawn from zero'] : [])];
   unbuilt.forEach(n => problems.push(`${where} uses ${n}, which is built in ${NOT_BUILT[n]}`));
+  if ('figure' in item && (!item.figure || item.figure.kind !== 'figure')) problems.push(`${where}: the figure added to the feedback must be a figure block`);
+  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS));
   return problems;
 }
 
@@ -82,8 +112,22 @@ function refProblems(ref, where, ctx) {
 
 function supportProblems(support, where) {
   if (!support) return [];
-  const unbuilt = ['panel', 'estimateCheck'].filter(k => support[k]);
-  return unbuilt.length ? [`${where} uses ${unbuilt.join(', ')}, which is built in ${NOT_BUILT['a panel or estimate prompt']}`] : [];
+  return support.panel ? [`${where} uses panel, which is built in ${NOT_BUILT['a panel']}`] : [];
+}
+
+// Help that needs something in the questions it is given to: the "disagree" line needs an estimate and an exact answer to compare, and
+// leaving the last steps to the learner needs steps to leave.
+function supportFitsProblems(set, where, ctx) {
+  const support = set.support, { subject, engine } = ctx;
+  if (!support) return [];
+  const defs = engine.flatRefs(set.items).map(r => subject.items[engine.refId(r)] || subject.gens[engine.refId(r)]).filter(Boolean);
+  const problems = [];
+  const numbers = d => (d.asks || []).filter(a => a.kind === 'number');
+  if (support.estimateCheck && !defs.some(d => numbers(d).some(a => a.estimate) && numbers(d).some(a => !a.estimate))) {
+    problems.push(`${where}: the group turns on the estimate check and none of its questions has an estimate and an exact answer`);
+  }
+  if (support.leave && defs.some(d => !(d.steps || []).length)) problems.push(`${where}: leaves the last steps to the learner, and a question of the group has no steps`);
+  return problems;
 }
 
 function stepProblems(step, where, ctx) {
@@ -105,6 +149,7 @@ function stepProblems(step, where, ctx) {
     if (set.plan) problems.push(`${where} shows a saved plan, which is built in ${NOT_BUILT['a saved plan']}`);
     if (set.mix) set.mix.from.filter(id => !subject.lessons[id]).forEach(id => problems.push(`${where}.mix: "${id}" is not a lesson of the subject`));
     set.items.filter(Array.isArray).forEach(pair => { if (pair.length !== 2) problems.push(`${where}: a pair holds two items, not ${pair.length}`); });
+    problems.push(...supportFitsProblems(set, where, ctx));
   }
   return problems;
 }
