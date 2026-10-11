@@ -18,6 +18,9 @@ const ledgerItem = (id, ...rest) => ['subjects', 'ledger', 'items', id, ...rest]
 const ledgerGen = (id, ...rest) => ['subjects', 'ledger', 'gens', id, ...rest];
 const ledgerLesson = (id, ...rest) => ['subjects', 'ledger', 'lessons', id, ...rest];
 const ledgerMeta = (...rest) => ['subjects', 'ledger', 'meta', ...rest];
+// the test subject of articles, the tap, the charts and the 1,000 people
+const feedItem = (id, ...rest) => ['subjects', 'feed', 'items', id, ...rest];
+const feedLesson = (id, ...rest) => ['subjects', 'feed', 'lessons', id, ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -98,7 +101,23 @@ export const CONTROLS = [
   { rule: 'V74', name: 'a form field trap that names a slip the subject does not have', data: (d, h) => h.setIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 0, 'traps', 0, 'slip'), 'mystery') },
   { rule: 'V75', name: 'a form field slip that lands on the answer', data: (d, h) => h.setIn(d, ledgerGen('l-gen', 'asks', 0, 'fields', 0, 'traps', 0, 'value'), 'rate') },
   { rule: 'V36', name: 'a form field trap opens with a bare verdict', data: (d, h) => h.setIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 0, 'traps', 0, 'then'), 'Wrong. That is the cost of the Safe Fund.') },
-  { rule: 'V50', name: 'a private form label uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, ledgerMeta('own', 'sheet', 'rows', 'fields', 0, 'label'), 'Name of the item') }
+  { rule: 'V50', name: 'a private form label uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, ledgerMeta('own', 'sheet', 'rows', 'fields', 0, 'label'), 'Name of the item') },
+  // articles, the tap, the charts and the 1,000 people (step 5)
+  { rule: 'V70', name: 'an article of a form that is not one', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 0, 'show', 0, 'form'), 'tweet') },
+  { rule: 'V70', name: 'a post with a headline', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 0, 'show', 1, 'headline'), { id: 'h', text: 'Everyone is switching' }) },
+  { rule: 'V70', name: 'an ad with no headline', data: (d, h) => h.removeIn(d, feedLesson('l1', 'flow', 0, 'show', 2, 'headline')) },
+  { rule: 'V70', name: 'a label on a post, which waits for the labels of Ideology', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 0, 'show', 1, 'label'), { text: 'Socialist', by: 'a critic', side: 'right' }) },
+  { rule: 'V70', name: 'a chart value off its axis', data: (d, h) => h.setIn(d, feedItem('n-bars', 'blocks', 1, 'series', 0, 'values', 0), 80) },
+  { rule: 'V70', name: 'a chart label wider than the space under its bar', data: (d, h) => h.setIn(d, feedItem('n-bars', 'blocks', 1, 'x', 0), 'The members of the clubs') },
+  { rule: 'V70', name: 'a row of 1,001 people in 1,000', data: (d, h) => h.setIn(d, feedLesson('l1', 'flow', 1, 'show', 2, 'data', 'rows', 0, 'count'), 1001) },
+  { rule: 'V70', name: 'a redraw from zero of a chart that starts at zero', data: (d, h) => h.setIn(d, feedItem('n-last', 'redraw'), 'from-zero') },
+  { rule: 'V70', name: 'a tap that names a block the question does not have', data: (d, h) => h.setIn(d, feedItem('n-news', 'asks', 0, 'in'), 'nowhere') },
+  { rule: 'V70', name: 'a tap whose answer is "none" with no words for the button', data: (d, h) => h.removeIn(d, feedItem('n-post', 'asks', 0, 'none')) },
+  { rule: 'V74', name: 'a tap whose right line is not a line of the text', data: (d, h) => h.setIn(d, feedItem('n-news', 'asks', 0, 'right'), ['zz']) },
+  { rule: 'V74', name: 'a tap whose right line is not among the deciding words', data: (d, h) => h.setIn(d, feedItem('n-news', 'deciding'), ['h']) },
+  { rule: 'V74', name: 'a tap that wants two lines and names one', data: (d, h) => h.setIn(d, feedItem('n-two', 'asks', 0, 'right'), ['a1']) },
+  { rule: 'V74', name: 'a tapped line that names a slip the subject does not have', data: (d, h) => h.setIn(d, feedItem('n-last', 'blocks', 0, 'lines', 1, 'slip'), 'mystery') },
+  { rule: 'V36', name: 'a tapped line\'s note opens with praise', data: (d, h) => h.setIn(d, feedItem('n-news', 'blocks', 0, 'lines', 1, 'note'), 'Correct. That is when the line opened.') }
 ];
 
 // Rules with no seeded fault of their own, and why

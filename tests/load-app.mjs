@@ -29,6 +29,9 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'numberMarkHtml', 'numberMissHtml', 'numberRightText', 'calcHtml', 'documentHtml', 'figureHtml', 'markHtml', 'missLine',
   // forms, papers, values looked up, the learner's own data
   'formFieldAsk', 'formFieldResults', 'scoreForm', 'formDraftReady', 'formAnswerFrom', 'formFieldText', 'formFieldRight', 'formHtml', 'formMarksHtml', 'formMissHtml',
+  // articles, charts, the tap and the 1,000 people
+  'tapPick', 'tapRightIds', 'tapSegments', 'tapBlocks', 'tapReady', 'tapRightText', 'tapClip', 'scoreTap', 'TAP_NONE', 'tapMissHtml', 'tapHtml', 'articleHtml', 'chartHtml', 'chartTicks', 'chartAt', 'chartPlotHeight',
+  'chartBand', 'chartFromZero', 'chartProblems', 'chartAlt', 'chartIsCut', 'niceStep', 'CHART_BOX', 'CHART_PLOT', 'CHART_MAX_TICKS', 'peopleHtml', 'redrawHtml',
   'documentTabsHtml', 'blockPieces', 'blocksHtml', 'refHtml', 'DOC_TAB', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownDigitRun', 'ownValidDay', 'ownFieldProblem', 'ownRecord', 'ownSheetFromDraft',
   'ownDraftsFromSheet', 'ownHoldingDollars', 'ownAccountCost', 'ownSheetCost', 'ownSheetBalance', 'ownBalanceGaps', 'ownWarnings', 'ownDraftWarnings', 'ownActionFromDraft',
   'ownMarkDone', 'ownCalendarFile', 'ownCalendarName', 'ownMoney', 'sheetEditorHtml', 'ownCostsHtml', 'ownCostDocument', 'ownSectionHtml', 'parseTyped'];

@@ -35,6 +35,7 @@ built, not one subject. From now on every subject goes through the `build-subjec
 - [x] The engine core built and the old engine and lessons deleted (b884add; not deployed until Singing's pilot exists; old lessons at the tag `old-lessons`)
 - [x] Singing on the new engine: the singing answer, the pitch line, your range, and the pilot lesson "Match a note" (live 2026-10-10): answers you give (typed numbers, typed answers, actions, verdicts, singing), what you see (messages as they arrive, charts, statements, spoken questions), fading feedback, private records; the old engine deleted
 - [x] Math on the new engine: the typed number (rough answer first, then the exact one with a calculator, wrong answers named), problems made with fresh prices, receipts and recipe cards on screen, and the pilot lesson "Ballpark and check" (draft, step 3)
+- [x] Stats on the new engine: headlines, posts, ads and reports as they arrive, tap the line that gives the number, charts with a cut axis redrawn from zero, 1,000 people, and the pilot lesson "Find the claim and its number" (draft, step 5)
 - [ ] Each subject rebuilt on the new engine, pilot lesson first: Singing and Math done; Wealth, Stats, Ideology, Psychology, Scams, Civics next
 
 ## Parked
@@ -49,6 +50,7 @@ built, not one subject. From now on every subject goes through the `build-subjec
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
 - [ ] **Try Math's pilot on your phone**: Library → Basic Math → Ballpark and check; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
+- [ ] **Try Stats' pilot on your phone**: Library → Statistical Claims → Find the claim and its number; a line on how it went unlocks Stats' other six lessons (gate 6)
 - [ ] **Try Wealth's pilot on your phone**: Library → Wealth → What it costs a year; it asks for your own accounts, kept only on the phone
 - [ ] **Try Basic Math's pilot on your phone**: Library → Basic Math → Ballpark and check; a line on how it went unlocks Math's other six lessons
 - [ ] **Try Singing's pilot on your phone**: Library → Singing → Match a note; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)

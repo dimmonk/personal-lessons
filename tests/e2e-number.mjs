@@ -1,8 +1,10 @@
 // The browser checks of lesson standard 26.7 for typed numbers, documents and figures: X13 (the number ask) and X20 (the drawn figures and
 // documents match their data). Each is a function of the environment (e2e-env.mjs) that drives the real app in Chromium on the test subject
 // "At the till" (tests/fixtures/fixture-subject/till-*.js) and returns its checker. tests/e2e-controls.mjs runs each against the app with a
-// seeded fault and requires exactly that check to go red. (X20 is the figure half of the standard's X20; the chart half is built with Stats.)
+// seeded fault and requires exactly that check to go red. (X20 draws the figures of the test subject "At the till" here, and the charts and the
+// 1,000 people of the test subject "On the feed" in tests/e2e-feed.mjs: chartHalf.)
 import * as D from './e2e-number-drive.mjs';
+import { chartHalf } from './e2e-feed.mjs';
 
 const openIn = async (env, page, subject, lesson) => { await env.openSubject(page, subject); await env.clickVisible(page, `#screen [data-l="${lesson}"]`); };
 const next = page => page.locator('#qNext').click();
@@ -205,6 +207,7 @@ export async function X20(env) {
   c.check(JSON.stringify(table) === JSON.stringify([years.columns, ...years.rows]), 'the year table is not the data');
   await env.inspect(c, page, 'the figures');
   await context.close();
+  await chartHalf(env, c);
   return c;
 }
 

@@ -3,8 +3,8 @@
 // (lesson standard 26.1, 26.2, 26.5). No page and no storage here. `data` is a registered subject: FC.get(id).
 
 // The ask kinds and block kinds built so far (26.8). A lesson that uses another fails V70 until its step is built.
-const ASK_KINDS = ['choose', 'number', 'form', 'sing'];
-const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref'];
+const ASK_KINDS = ['choose', 'number', 'form', 'sing', 'tap'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (26.4)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));
@@ -29,7 +29,8 @@ function scoreChoose(data, ask, answer){
   return slipped ? slipped.slip : 'no';
 }
 // each scorer reads the question too (item.values: the numbers a generator made)
-const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), form: (data, ask, answer, item) => scoreForm(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer) };
+const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), form: (data, ask, answer, item) => scoreForm(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer),
+  tap: (data, ask, answer, item) => scoreTap(data, ask, answer, item) };
 
 // An ask opens only when the one it depends on was answered with one of the named options.
 const askApplies = (ask, answers) => !ask.when || (ask.when.ask in answers && asList(answers[ask.when.ask]).some(id => ask.when.is.includes(id)));

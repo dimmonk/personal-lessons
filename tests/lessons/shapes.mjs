@@ -24,9 +24,10 @@ export const SUBJECT = obj(
     refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool });
 function idTitle() { return obj({ id: str, title: str }); }
 
-/* blocks (26.1.2): prose, pair, document and figure so far */
-const SEGMENT = obj({ id: str, text: str }, { note: str });
-export const PROSE = obj({ kind: en('prose') }, { text, lines: arr(SEGMENT), tone: en('wrong') });
+/* blocks (26.1.2): prose, pair, document, figure, article and chart so far */
+// a line that can be tapped or marked; `para` starts a new paragraph, `fine` is small print, `slip` names the slip of tapping it when it is not the line
+const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str });
+export const PROSE = obj({ kind: en('prose') }, { id: str, text, lines: arr(SEGMENT), tone: en('wrong') });
 export const PAIR = obj({ kind: en('pair'), a: any, b: any, compare: text });
 // the everyday papers, and a household's: statement (401(k), IRA, brokerage), fees (a plan's fee sheet), paystub, matchrule (the plan's employer
 // match), beneficiary, foreign (a foreign account summary), table (plain). `head` names the columns; `tab` makes the paper one of a household's tabs.
@@ -36,7 +37,7 @@ export const DOCUMENT = obj({ kind: en('document'), form: en(...DOCUMENT_FORMS),
 // a value looked up, named by id: the subject keeps its text, value, day and source (refs)
 export const REF_BLOCK = obj({ kind: en('ref'), ref: str });
 // a figure's numbers may be words in a generator's template ("{pct}"), filled when the question is made
-export const FIGURE_TYPES = ['rate-table', 'bar', 'plan', 'years'];
+export const FIGURE_TYPES = ['rate-table', 'bar', 'plan', 'years', 'people'];
 export const FIGURE = obj({ kind: en('figure'), type: en(...FIGURE_TYPES), data: any });
 const quantity = either(num, str);
 const RATE_ROW = obj({ label: str, cells: arr(str) });
@@ -44,14 +45,24 @@ export const FIGURE_DATA = {
   'rate-table': obj({ top: RATE_ROW, bottom: RATE_ROW }),
   bar: obj({ whole: str, parts: arr(obj({ label: str, pct: quantity })) }),
   plan: obj({ unit: str, parts: arr(obj({ x: quantity, y: quantity, w: quantity, h: quantity }, { label: str, cut: bool })) }),
-  years: obj({ columns: arr(str), rows: arr(arr(str)) })
+  years: obj({ columns: arr(str), rows: arr(arr(str)) }),
+  people: obj({ caption: str, rows: arr(obj({ label: str, count: int })) })
 };
+// a news story, a post, an ad, a report (article-view.js): where it comes from, a headline for the forms that have one, and its lines
+export const ARTICLE_FORMS = ['news', 'post', 'ad', 'report'];
+export const ARTICLE = obj({ kind: en('article'), form: en(...ARTICLE_FORMS), source: str, lines: arr(SEGMENT) }, { id: str, headline: SEGMENT });
+// a chart drawn from its data (chart.js): bars or a line, an axis that may start above zero, one or two series
+export const CHART = obj({ kind: en('chart'), type: en('bars', 'line'), title: str, x: arr(str), y: obj({ from: num, to: num, step: num }, { unit: str }),
+  series: arr(obj({ values: arr(num) }, { name: str })), source: str }, { labels: bool });
 
-/* asks (26.1): choose and number so far */
+/* asks (26.1): choose, number, form and tap so far */
 const OPTION = obj({ id: str, text: str }, { ok: bool, slip: str, then: text, value: str });
 export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
   { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), many: bool, when: obj({ ask: str, is: arr(str) }),
     then: map(text), slips: map(str), answer: str, shuffle: bool });
+
+// a tap ask (tap.js): the lines of the question, or of the block named by `in`, become tappable; `right` is the lines that decide it, or 'none'
+export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(str, arr(str)) }, { in: str, pick: int, none: text, when: obj({ ask: str, is: arr(str) }) });
 
 // a number ask (number.js): one blank in the frame for each value of the answer; a value is a number or the name of one the question makes
 const VALUE = either(num, str);

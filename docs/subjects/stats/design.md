@@ -241,6 +241,16 @@ in every set, and an area of life in the end check that the lesson did not use (
 **Review** (all parts): new items per part, mixed, on the app's spaced schedule (about a day or two, a week, three to four
 weeks; R4, P24), with the Gate 2 test itself at four weeks.
 
+## Gates 6 and 7
+Gate 6, in progress: the app capabilities of gate 3 are built (lesson standard 26.10, step 5: a headline, post, ad or report as it
+arrives on a phone; tapping the sentence that gives the number, or "Not given", with the deciding line pre-marked at first; charts
+drawn from data, a cut axis redrawn from zero in the feedback; the 1,000-people picture) and lesson 1, "Find the claim and its
+number", is in the app as a draft (2026-10-11): what to find, one worked story (a headline that says more than its text), a group
+of three with the deciding words marked, a group of five, and the check of part A (5 new questions from areas of life the groups
+did not use, 4 of 5, at most one sound claim turned down). The typed plain size is part B's and is not in lesson 1. Reading is 22%
+of it. The learner view is `docs/learner-view/stats-l1.md`. It waits for the owner's try on a phone: `tried.pilot` stays null, and
+lessons 2 to 7 are not written, until the owner has tried it and said what it did. Gate 7: not started.
+
 ## Audit of the existing lessons (2026-10-10)
 
 Written after gates 1 to 5. Read: `public/subjects/stats/key.js`, `u1.unit.js`, sample case files (`u1.cases-drill-2.js`,

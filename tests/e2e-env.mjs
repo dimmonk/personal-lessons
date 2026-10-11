@@ -65,11 +65,12 @@ export function makeEnv(browser, server) {
   env.clippedText = page => page.evaluate(() => [...document.querySelectorAll('button, .opt, .chip, .tile, .mark, .stat')]
     .filter(el => el.offsetParent !== null && el.scrollWidth > el.clientWidth + 1 && getComputedStyle(el).textOverflow !== 'ellipsis')
     .map(el => `"${el.textContent.trim().replace(/\s+/g, ' ').slice(0, 30)}"`));
-  // The words a learner never reads outside a quotation (tests/plain-words.mjs), and the owner's approved wording, are left out.
+  // The words a learner never reads outside a quotation (tests/plain-words.mjs), and the owner's approved wording, are left out. A news story, a post, an ad,
+  // a report and a chart are quotations too (V50 leaves them alone), though their English is still checked.
   env.jargonShown = async page => {
     const text = await page.evaluate(() => {
       const copy = document.querySelector('#screen').cloneNode(true);
-      copy.querySelectorAll('blockquote, .passage, [data-owner-words]').forEach(el => el.remove());
+      copy.querySelectorAll('blockquote, .passage, [data-owner-words], .block-article, .block-chart').forEach(el => el.remove());   // quoted material: a story, a post, an ad, a chart say what they say
       return copy.textContent;
     });
     const prose = text.replace(/“[^”]*”|"[^"]*"/g, ' ');

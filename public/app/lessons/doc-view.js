@@ -9,6 +9,7 @@
 //     'bar'         { whole, parts: [{ label, pct }] }                                       the whole is 100; each part is drawn pct wide
 //     'plan'        { unit, parts: [{ x, y, w, h, label?, cut? }] }                          rectangles in the unit; a cut part is not counted
 //     'years'       { columns: [Text], rows: [[Text]] }                                      year by year
+//     'people'      { caption, rows: [{ label, count }] }                                    1,000 people for each row, the first `count` marked
 // A row of a document is a segment of the block: ctx.deciding marks the rows that decide the answer, once it is given.
 
 /* ---------- a document ---------- */
@@ -92,7 +93,17 @@ function planHtml(d){
     <text class="fig-label" x="${at(p.x) + margin - 6}" y="${at(p.y + p.h / 2) + margin}" text-anchor="end">${esc(p.h)} ${esc(d.unit)}</text>${p.label ? `<text class="fig-label in" x="${at(p.x + p.w / 2) + margin}" y="${at(p.y + p.h / 2) + margin + 4}" text-anchor="middle">${esc(p.label)}</text>` : ''}`).join('');
   return `<svg class="fig-plan" viewBox="0 0 ${FIGURE_W} ${height}" role="img" aria-label="${esc(parts.map(p => `${p.w} by ${p.h} ${d.unit}`).join(', '))}">${shapes}${notes}</svg>`;
 }
-const FIGURE_HTML = { 'rate-table': rateTableHtml, bar: barHtml, plan: planHtml, years: yearsHtml };
+// 1,000 people: for each row a grid of 1,000 dots (50 across, 20 down), the first `count` of them marked, read left to right and top to bottom.
+// A relative number ("cuts the risk by half") becomes "so many in 1,000" by looking at the people.
+const PEOPLE = { total: 1000, columns: 50, gap: 6 };
+function peopleRowHtml(row){
+  const dots = Array.from({ length: PEOPLE.total }, (_, i) => `<circle class="fig-person${i < row.count ? ' on' : ''}" cx="${(i % PEOPLE.columns) * PEOPLE.gap + PEOPLE.gap / 2}" cy="${Math.floor(i / PEOPLE.columns) * PEOPLE.gap + PEOPLE.gap / 2}" r="${i < row.count ? 2.5 : 1.5}"></circle>`).join('');
+  const rows = PEOPLE.total / PEOPLE.columns;
+  return `<div class="fig-people-row"><p class="fig-rowcap">${esc(SAY.peopleIn(row.label, row.count))}</p>
+    <svg class="fig-people" viewBox="0 0 ${PEOPLE.columns * PEOPLE.gap} ${rows * PEOPLE.gap}" role="img" aria-label="${esc(SAY.peopleIn(row.label, row.count))}">${dots}</svg></div>`;
+}
+const peopleHtml = d => `<p class="fig-cap">${esc(d.caption)}</p>${d.rows.map(peopleRowHtml).join('')}`;
+const FIGURE_HTML = { 'rate-table': rateTableHtml, bar: barHtml, plan: planHtml, years: yearsHtml, people: peopleHtml };
 function figureHtml(block){
   return `<div class="block-fig" data-figure="${esc(block.type)}">${FIGURE_HTML[block.type](block.data)}</div>`;
 }

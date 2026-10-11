@@ -237,7 +237,18 @@ const SAY = {
   ownDeleteYes: 'Yes, delete them',
   ownDeleteNo: 'Keep them',
   ownDeleted: 'Deleted from this phone.',
-  ownOnPhone: 'Kept on this phone only. Your export file and the buttons below are the only way it leaves.'
+  ownOnPhone: 'Kept on this phone only. Your export file and the buttons below are the only way it leaves.',
+  // an article, a chart, the people, a tapped line (26.1.2)
+  artAd: 'Ad',
+  artReport: 'Report summary',
+  chartSource: source => `Source: ${source}`,
+  redrawLabel: 'The same chart, drawn from zero',
+  peopleIn: (label, count) => `${label}: ${fmtNumber(count)} in 1,000`,
+  tapOne: 'Tap a sentence in the text above.',
+  tapMany: n => `Tap ${numWord(n)} sentences in the text above, then tap Answer.`,
+  youTapped: 'You tapped',
+  tapNotThat: 'That is not the sentence.',
+  tapThereIsOne: 'The text does give one. It is marked above.'
 };
 const cap = s => s.charAt(0).toUpperCase() + s.slice(1);
 const WORDS = ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve'];

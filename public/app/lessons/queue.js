@@ -49,6 +49,7 @@ function paintQueue(){
   on('#qNext', nextQuestion);
   wireNumber();
   wireForm();
+  wireTap();
   if(sung) wireSing(inst, cur.done);
 }
 

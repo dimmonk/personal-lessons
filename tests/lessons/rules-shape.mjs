@@ -2,7 +2,7 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -13,11 +13,11 @@ export const NOT_BUILT = {
   'a saved plan': 'step 8 (Scams)', 'a spoken check': 'step 9 (Civics)', 'a check with a time': 'step 8 (Scams)',
   'a subject that times its items': 'step 8 (Scams)', 'the interview date': 'step 9 (Civics)',
   'a panel': 'steps 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
-  'a chart redrawn from zero': 'step 5 (Stats)'
+  'a label on a post': 'step 6 (Ideology)'
 };
 
 /* ---------- the pieces ---------- */
-function blockProblems(block, where, kinds, refIds = []) {
+function blockProblems(block, where, kinds, refIds = [], engine = null) {
   if (!block || typeof block !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(block.kind)) return [`${where} has a block of kind "${block.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (block.kind === 'pitch') return [`${where} is a pitch block, which only a sung question the app makes from a { sing } task may carry`];
@@ -31,9 +31,34 @@ function blockProblems(block, where, kinds, refIds = []) {
   if (block.kind === 'document') return show(checkShape(block, DOCUMENT, where));
   if (block.kind === 'figure') {
     const shape = show(checkShape(block, FIGURE, where));
-    return shape.length ? shape : show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
+    if (shape.length) return shape;
+    const data = show(checkShape(block.data, FIGURE_DATA[block.type], `${where}.data`));
+    return data.length || block.type !== 'people' ? data : peopleProblems(block.data, where);
   }
-  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds), ...blockProblems(block.b, `${where}.b`, kinds, refIds)];
+  if (block.kind === 'article') return articleProblems(block, where);
+  if (block.kind === 'chart') {
+    const shape = show(checkShape(block, CHART, where));
+    return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
+  }
+  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine)];
+}
+
+// The 1,000 people: every row is a count of the 1,000, a whole number from 0 to 1,000.
+function peopleProblems(data, where) {
+  return data.rows.filter(r => r.count < 0 || r.count > 1000).map(r => `${where}: "${r.label}" is ${r.count} in 1,000, which is not between 0 and 1,000`);
+}
+// An article: a headline for the forms that have one (a post has none), no label (it belongs to the post of Ideology, step 6), lines whose
+// ids are all different from the answer "none", at least one line that is not small print.
+function articleProblems(block, where) {
+  const problems = [];
+  if ('label' in block) return [`${where} has a label on a post, which is built in ${NOT_BUILT['a label on a post']}`];
+  problems.push(...show(checkShape(block, ARTICLE, where)));
+  if (problems.length) return problems;
+  if (block.form === 'post' && block.headline) problems.push(`${where}: a post has no headline`);
+  if (block.form !== 'post' && !block.headline) problems.push(`${where}: a ${block.form} needs a headline`);
+  if (!block.lines.some(l => !l.fine)) problems.push(`${where}: an article needs at least one line that is not small print`);
+  [...(block.headline ? [block.headline] : []), ...block.lines].filter(l => l.id === 'none').forEach(() => problems.push(`${where}: no line may be called "none", the answer "Not given"`));
+  return problems;
 }
 
 // A typed number: its frame has one blank for each value of the answer, each trap's value has as many, and the tolerance is one of the
@@ -71,10 +96,23 @@ function formProblems(ask, where, kinds, listIds) {
   return problems;
 }
 
+// A tap: the shape, a block named by `in` that the question has and that has lines, and the words of the "not there" button when that is the answer.
+// (That the right lines are lines of the block, and the slips they name, are V74's: they need the question's blocks.)
+function tapProblems(ask, where) {
+  const problems = show(checkShape(ask, TAP, where));
+  if (problems.length) return problems;
+  if (ask.right === 'none' && !ask.none) problems.push(`${where}: the answer is "none", and the ask has no words for the button (none)`);
+  if (typeof ask.right === 'string' && ask.right !== 'none') problems.push(`${where}: right is a list of lines, or "none"`);
+  if (ask.pick !== undefined && (ask.pick < 1 || ask.pick > 4)) problems.push(`${where}: a tap wants one to four lines`);
+  if (ask.right === 'none' && ask.pick !== undefined && ask.pick > 1) problems.push(`${where}: "none" is one answer, not ${ask.pick} lines`);
+  return problems;
+}
+
 function askProblems(ask, where, kinds, listIds) {
   if (!ask || typeof ask !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(ask.kind)) return [`${where} has an ask of kind "${ask.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (ask.kind === 'sing') return [`${where} is a sing ask, which only a sung question the app makes from a { sing } task may carry`];
+  if (ask.kind === 'tap') return tapProblems(ask, where);
   if (ask.kind === 'number') return numberProblems(ask, where);
   if (ask.kind === 'form') return formProblems(ask, where, kinds, listIds);
   const problems = show(checkShape(ask, CHOOSE, where));
@@ -102,7 +140,11 @@ function itemProblems(item, where, ctx, isGen) {
     if (!facet) problems.push(`${where}: facet "${f}" is not one of the subject's facets`);
     else if (!facet.values.some(x => x.id === v)) problems.push(`${where}: "${v}" is not a value of the facet ${f}`);
   });
-  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds)));
+  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine)));
+  const taps = item.asks.filter(a => a.kind === 'tap');
+  if (taps.length > 1) problems.push(`${where}: a question has one tap, not ${taps.length}`);
+  taps.filter(a => a.in && !item.blocks.some(b => b.id === a.in)).forEach(a => problems.push(`${where}: the tap "${a.id}" names the block "${a.in}", which the question does not have`));
+  if (item.redraw && !item.blocks.some(b => b.kind === 'chart' && b.y && b.y.from > 0)) problems.push(`${where}: redraw from zero needs a chart whose axis starts above zero`);
   item.asks.forEach((a, i) => problems.push(...askProblems(a, `${where}.asks[${i}]`, engine.ASK_KINDS, ctx.listIds)));
   const askIds = item.asks.map(a => a.id);
   problems.push(...duplicatesOf(askIds).map(id => `${where}: ask "${id}" appears twice`));
@@ -111,10 +153,10 @@ function itemProblems(item, where, ctx, isGen) {
   const segIds = item.blocks.flatMap(b => engine.segmentsOf(b)).map(s => s.id);
   problems.push(...duplicatesOf(segIds).map(id => `${where}: segment "${id}" appears twice`));
   problems.push(...duplicatesOf([...(item.steps || []).map(s => s.id)]).map(id => `${where}: step "${id}" appears twice`));
-  const unbuilt = [...('has' in item ? ['requirements found or missing'] : []), ...('fact' in item ? ['an interview fact'] : []), ...('redraw' in item ? ['a chart redrawn from zero'] : [])];
+  const unbuilt = [...('has' in item ? ['requirements found or missing'] : []), ...('fact' in item ? ['an interview fact'] : [])];
   unbuilt.forEach(n => problems.push(`${where} uses ${n}, which is built in ${NOT_BUILT[n]}`));
   if ('figure' in item && (!item.figure || item.figure.kind !== 'figure')) problems.push(`${where}: the figure added to the feedback must be a figure block`);
-  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds));
+  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine));
   return problems;
 }
 
@@ -165,7 +207,7 @@ function stepProblems(step, where, ctx) {
   const problems = show(checkShape(step, STEPS[kind], where));
   if (problems.length) return problems;
   const { subject, engine } = ctx;
-  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds)));
+  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine)));
   if (kind === 'worked' && !subject.items[step.worked]) problems.push(`${where}: "${step.worked}" is not an item of the subject`);
   if (kind === 'own') problems.push(...ownStepProblems(step, where, ctx));
   if (kind === 'set') {

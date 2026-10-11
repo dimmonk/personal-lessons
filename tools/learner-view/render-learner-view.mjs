@@ -7,6 +7,7 @@ import { loadAll } from './load.mjs';
 
 const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
 const quote = lines => lines.map(l => `> ${l}`).join('\n');
+const SAYWORDS = { redraw: 'The same chart, drawn from zero' };
 
 /* ---------- blocks ---------- */
 const cellText = cell => String(cell);
@@ -14,8 +15,23 @@ const FIGURE_WORDS = {
   'rate-table': d => [`A table with two rows: ${[d.top, d.bottom].map(r => `${r.label}: ${r.cells.join(', ')}`).join(' / ')}.`],
   bar: d => [`A bar for the whole, "${d.whole}", cut into parts as wide as their percents: ${d.parts.map(p => `${p.label} ${p.pct}%`).join(', ')}.`],
   plan: d => [`A plan drawn to one scale, each side written in ${d.unit}: ${d.parts.map(p => `${p.w} by ${p.h}${p.label ? ` (${p.label})` : ''}${p.cut ? ', cut out' : ''}`).join('; ')}.`],
-  years: d => [`A table, year by year: ${d.columns.join(' | ')}; ${d.rows.map(r => r.join(' | ')).join('; ')}.`]
+  years: d => [`A table, year by year: ${d.columns.join(' | ')}; ${d.rows.map(r => r.join(' | ')).join('; ')}.`],
+  people: d => [`${d.caption}: a row of 1,000 dots for each count, the first ones marked and read left to right, top to bottom: ${d.rows.map(r => `${r.label}, ${r.count} in 1,000`).join('; ')}.`]
 };
+const ARTICLE_NAMES = { news: 'A news story', post: 'A post', ad: 'An ad', report: 'A report summary' };
+// the lines of an article as paragraphs (a line with `para` starts a new one), and the small print last
+function articleLines(block, deciding) {
+  const mark = seg => deciding.includes(seg.id) ? `**${seg.text}**` : seg.text;
+  const body = block.lines.filter(l => !l.fine).reduce((out, l, i) => i === 0 || l.para ? [...out, [l]] : [...out.slice(0, -1), [...out[out.length - 1], l]], []);
+  return [`${ARTICLE_NAMES[block.form]}, from "${block.source}"${block.form === 'ad' ? ' (marked "Ad")' : block.form === 'report' ? ' (marked "Report summary")' : ''}:`, '',
+    ...(block.headline ? [`> # ${mark(block.headline)}`, '>'] : []), ...body.map(p => `> ${p.map(mark).join(' ')}`),
+    ...block.lines.filter(l => l.fine).map(l => `> (small print) ${mark(l)}`)];
+}
+function chartWords(block) {
+  const y = block.y, cut = y.from > 0;
+  return `A ${block.type === 'line' ? 'line chart' : 'bar chart'}, "${block.title}". The scale runs from ${y.from} to ${y.to}${y.unit ? `, in ${y.unit}` : ''}${cut ? ', and does not start at zero' : ', and starts at zero'}. `
+    + `${block.series.map(s => `${s.name ? `${s.name}: ` : ''}${block.x.map((l, i) => `${l} ${s.values[i]}`).join(', ')}`).join('. ')}. ${block.labels ? 'The values are written on it. ' : ''}Source: ${block.source}.`;
+}
 const FORM_NAMES = { fees: 'fee sheet', paystub: 'pay stub', matchrule: 'match rule', beneficiary: 'beneficiary page', foreign: 'foreign account summary', table: 'plain table' };
 const formName = form => { const name = FORM_NAMES[form] || form; return `${/^[aeiou]/i.test(name) ? 'An' : 'A'} ${name}`; };
 function blockLines(block, deciding = [], refs = []) {
@@ -29,6 +45,8 @@ function blockLines(block, deciding = [], refs = []) {
     return [`A value looked up, never memorized: "${ref.text}": ${ref.value}. It prints "Looked up ${ref.asOf}" and "Source: ${ref.source}", says to check the source, and after a year says to look it up again.`];
   }
   if (block.kind === 'figure') return FIGURE_WORDS[block.type](block.data);
+  if (block.kind === 'article') return articleLines(block, deciding);
+  if (block.kind === 'chart') return [chartWords(block)];
   if (block.kind === 'pair') {
     return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding, refs).join(' ')} | ${blockLines(block.b, deciding, refs).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
   }
@@ -70,7 +88,20 @@ function formAskLines(e, data, ask, item, marks) {
   });
   return lines;
 }
+// a tap: the lines of the text become tappable (the headline does not); "Not given" is a button; a wrong line answers with its own note and slip
+function tapAskLines(e, data, ask, marks, item) {
+  const { SAY } = e, lines = e.tapSegments(item, ask), right = e.tapRightIds(ask), slips = data.subjects.__current.meta.lists.slip || [];
+  const out = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
+    `- ${e.tapPick(ask) > 1 ? SAY.tapMany(e.tapPick(ask)) : SAY.tapOne} ${ask.in ? `The lines of one block can be tapped; the rest cannot. ` : ''}Nothing is marked before the answer${ask.pick > 1 ? '; Answer opens when that many are tapped' : ', and a tap is the answer'}.`];
+  lines.forEach(l => {
+    const extra = [l.note ? `note: ${l.note}` : null, l.slip ? `slip: ${(slips.find(s => s.id === l.slip) || { text: l.slip }).text}` : null].filter(Boolean);
+    out.push(`- "${l.text}"${marks && right.includes(l.id) ? ' (right)' : ''}${marks && !right.includes(l.id) ? ` — if tapped: ${extra.length ? extra.join('; ') : SAY.tapNotThat}` : ''}`);
+  });
+  if (ask.none) out.push(`- A button: "${paras(ask.none).join(' ')}"${marks && ask.right === 'none' ? ' (right)' : ''}${marks && ask.right !== 'none' ? ` — if chosen: ${SAY.tapThereIsOne}` : ''}`);
+  return out;
+}
 function askLines(e, data, ask, marks, item) {
+  if (ask.kind === 'tap') return tapAskLines(e, data, ask, marks, item);
   if (ask.kind === 'form') return formAskLines(e, data, ask, item, marks);
   if (ask.kind === 'number') return numberAskLines(e, ask, item, marks);
   const options = e.chooseOptions(data.subjects.__current, ask);
@@ -87,6 +118,8 @@ function questionLines(e, data, inst, support, label) {
   e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true, item), ''));
   lines.push(`After the answer: the deciding words are marked${(item.deciding || []).length ? '' : ' (none named)'}. Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
+  if (item.figure) lines.push('A picture is added to the feedback:', ...blockLines(item.figure));
+  if (item.redraw) lines.push(`A chart is added to the feedback, "${SAYWORDS.redraw}": the chart above drawn again with the scale starting at zero.`);
   if (item.steps) lines.push('The working:', ...item.steps.map(s => `- ${s.does} ${s.working}`));
   return [...lines, ''];
 }
@@ -174,8 +207,8 @@ export function renderLesson(loaded, subjectId, lessonId) {
       const item = subject.items[step.worked];
       out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || []));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
-      const right = a => a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
-      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ')}. ${paras(item.reason).join(' ')}`, '');
+      const right = a => a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ')}. ${paras(item.reason).join(' ')}`, ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');
     } else {
       const set = step.set, refs = e.flatRefs(set.items), sung = refs.some(isSung), count = refs.reduce((k, r) => k + e.refCount(r), 0);
       const HELP_WORDS = { line: 'the line and the notes drawn while singing', estimateCheck: 'a line that says when the answer and the estimate disagree: an answer more than double or less than half of the learner\'s own estimate is held back once' };
