@@ -10,9 +10,11 @@ import { britishIn } from '../american.mjs';
 const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', 'role', 'status', 'history', 'tried', 'order', 'feedback', 'support', 'mix', 'pass',
   'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
   'dateField', 'tol', 'standard', 'rules', 'side', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
-  'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels']);
+  'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels',
+  'start', 'scored', 'danger']);
 // block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own
-const QUOTING = ['message', 'article', 'document', 'chart', 'figure', 'spoken', 'exchange'];
+// (what the other side of an exchange says is quoted too: the lines of a turn, not the replies the learner can pick or the app's words about it)
+const QUOTING = ['message', 'article', 'document', 'chart', 'figure', 'spoken'];
 
 // [{ where, text, quoted }] for every string of a value a learner reads
 function learnerStrings(value, where, quoted = false, out = []) {
@@ -21,7 +23,7 @@ function learnerStrings(value, where, quoted = false, out = []) {
   else if (value && typeof value === 'object') {
     const isQuote = quoted || QUOTING.includes(value.kind);
     // `model` is an item id in a step that shows a sample of the learner's own data, and the line to compare with in a text ask
-    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote, out));
+    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote || (k === 'lines' && 'options' in value), out));
   }
   return out;
 }
@@ -50,7 +52,7 @@ function everyId(s) {
   const asks = [...Object.values(subject.items), ...Object.values(subject.gens)];
   return [
     ...Object.keys(subject.lessons), ...Object.keys(subject.items), ...Object.keys(subject.gens),
-    ...asks.flatMap(i => [...i.asks.flatMap(a => [a.id, ...(a.options || []).map(o => o.id)]), ...(i.steps || []).map(x => x.id), ...i.blocks.flatMap(b => s.engine.segmentsOf(b).map(x => x.id))]),
+    ...asks.flatMap(i => [...i.asks.flatMap(a => [a.id, ...(a.options || []).map(o => o.id), ...(a.steps || []).map(o => o.id), ...Object.keys(a.turns || {}), ...Object.values(a.turns || {}).flatMap(t => t.options.map(o => o.id)), ...Object.keys(a.ends || {})]), ...(i.steps || []).map(x => x.id), ...i.blocks.flatMap(b => s.engine.segmentsOf(b).map(x => x.id))]),
     ...meta.strands.map(x => x.id), ...Object.keys(meta.facets), ...Object.values(meta.facets).flatMap(f => f.values.map(v => v.id)),
     ...Object.keys(meta.lists), ...Object.values(meta.lists).flatMap(l => l.map(o => o.id)), ...Object.keys(meta.rules || {}), ...Object.values(meta.rules || {}).flatMap(r => r.needs.map(n => n.id)), ...Object.keys(meta.own || {})
   ];

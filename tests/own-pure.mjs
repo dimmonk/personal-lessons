@@ -174,7 +174,7 @@ const ask = item => item.asks.find(a => a.id === 'line');
 }
 
 /* ---------- the forms a subject may keep ---------- */
-same(OWN_SLOTS, ['sheet', 'actions'], 'the private forms built');
+same(OWN_SLOTS, ['sheet', 'actions', 'plan', 'setup'], 'the private forms built (the plan and the setup came with step 8)');
 same(Object.keys(OWN_REQUIRED), OWN_SLOTS, 'what the app reads is named for each form built');
 same(Object.keys(wealth.meta.own).sort(), ['actions', 'sheet'], 'Wealth keeps a sheet of accounts and the dated changes');
 

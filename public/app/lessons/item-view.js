@@ -50,7 +50,7 @@ const segmentsOf = block => block.kind === 'pair' ? [...segmentsOf(block.a), ...
 const shownOptions = (options, ask, ctx) => ask.shuffle && ctx && ctx.item && ctx.item.seed !== undefined ? shuffled(options, hashSeed(`${ctx.item.seed}|${ask.id}`)) : options;
 // st: { answer, many: [optionId], marks } for this ask. `marks` shows right and wrong on the options (after the item).
 function chooseHtml(data, ask, st, ctx){
-  const options = shownOptions(chooseOptions(data, ask), ask, ctx), locked = st.answer !== undefined || st.marks, picked = ask.many ? (st.answer || st.many || []) : asList(st.answer);
+  const options = shownOptions(chooseOptions(data, ask), ask, ctx), locked = st.answer !== undefined || st.marks || st.locked, picked = ask.many ? (st.answer || st.many || []) : asList(st.answer);
   const buttons = options.map(o => {
     const cls = ['opt', picked.includes(o.id) ? 'sel' : '', st.marks && o.ok ? 'right' : '', st.marks && picked.includes(o.id) && !o.ok ? 'wrong' : ''].filter(Boolean).join(' ');
     return `<button class="${cls}" data-opt="${esc(o.id)}" ${locked ? 'disabled' : ''} aria-pressed="${picked.includes(o.id)}">${esc(o.text)}</button>`;
@@ -62,7 +62,7 @@ function chooseHtml(data, ask, st, ctx){
 // A tap ask: the prompt, and the buttons that are not lines of the text ("Not given", and Answer when several lines are wanted). The lines
 // themselves are tapped where they stand, in the blocks above (segmentHtml).
 function tapHtml(data, ask, st){
-  const answered = st.answer !== undefined, locked = answered || st.marks, picked = answered ? asList(st.answer) : (st.many || []), n = tapPick(ask);
+  const answered = st.answer !== undefined, locked = answered || st.marks || st.locked, picked = answered ? asList(st.answer) : (st.many || []), n = tapPick(ask);
   const none = ask.none ? `<button type="button" class="opt${picked.includes(TAP_NONE) ? ' sel' : ''}${st.marks && ask.right === TAP_NONE ? ' right' : ''}${st.marks && picked.includes(TAP_NONE) && ask.right !== TAP_NONE ? ' wrong' : ''}" data-tap-none
     ${locked ? 'disabled' : ''} aria-pressed="${picked.includes(TAP_NONE)}">${esc(paras(ask.none).join(' '))}</button>` : '';
   const submit = n > 1 && !locked ? `<button type="button" class="btn sm" data-tap-answer ${tapReady(ask, picked) ? '' : 'disabled'}>${esc(SAY.answerBtn)}</button>` : '';
@@ -70,7 +70,8 @@ function tapHtml(data, ask, st){
     <span class="forline">${esc(n > 1 ? SAY.tapMany(n) : SAY.tapOne)}</span>${none ? `<div class="opts">${none}</div>` : ''}${submit}</div>`;
 }
 const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtml(data, ask, st, ctx), form: (data, ask, st, ctx) => formHtml(data, ask, st, ctx), sing: (data, ask, st) => singAskHtml(data, ask, st),
-  tap: (data, ask, st) => tapHtml(data, ask, st), text: (data, ask, st) => writeHtml(data, ask, st) };
+  tap: (data, ask, st) => tapHtml(data, ask, st), text: (data, ask, st) => writeHtml(data, ask, st),
+  exchange: (data, ask, st, ctx) => exchangeHtml(data, ask, st, ctx), order: (data, ask, st, ctx) => orderHtml(data, ask, st, ctx) };
 
 /* ---------- the item ---------- */
 // The item as it stands: its blocks (deciding words marked when `deciding` is on), then the asks open now, then, once
@@ -86,7 +87,7 @@ function itemHtml(data, inst, state){
   const steps = shownStepsHtml(item, support);
   const hint = (support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '')
     + (support && support.panel && panelBlocksOf(item).length ? `<p class="hintline">${esc(panelHint(data, item))}</p>` : '');
-  const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, sing: state.sing,
+  const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, locked: !!state.done, sing: state.sing,
     typed: state.typed, looked: state.looked, calc: state.calc }, { item, support, answers: state.a })).join('');
   return `<div class="item" data-item="${esc(inst.key)}" ${inst.seed === undefined ? '' : `data-seed="${inst.seed}"`}>
     ${blocksHtml(item.blocks, ctx)}${hint}${steps}<div class="asks">${asks}</div>${state.feedback || ''}</div>`;
@@ -97,7 +98,7 @@ function tapContext(item, open, state){
   const ask = open.find(a => a.kind === 'tap');
   if(!ask) return null;
   const answered = ask.id in state.a;
-  return { ids: tapSegments(item, ask).map(s => s.id), picked: answered ? asList(state.a[ask.id]) : (state.many[ask.id] || []), locked: answered || !!state.marks, marks: !!state.marks, right: tapRightIds(ask) };
+  return { ids: tapSegments(item, ask).map(s => s.id), picked: answered ? asList(state.a[ask.id]) : (state.many[ask.id] || []), locked: answered || !!state.marks || !!state.done, marks: !!state.marks, right: tapRightIds(ask) };
 }
 // the working a set's support shows before the learner answers: the steps that are not left to them
 function shownStepsHtml(item, support){
@@ -111,17 +112,18 @@ function shownStepsHtml(item, support){
 // In this order (26.2): each ask's mark; the deciding words (marked in the blocks by itemHtml); the reason; after a miss, one line on
 // the learner's own choice; then what the item has of: the consequence of the right action, what you would need to see, the working.
 function feedbackHtml(data, inst, support, answers, score){
-  const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in answers);
+  const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in answers || score.r[a.id] === 'timeout');
   const marks = asked.map(a => markHtml(data, a, answers[a.id], score.r[a.id], item, answers)).join('');
   const written = asked.some(a => a.kind === 'text') ? `<p class="hintline">${esc(SAY.writeCompare)}</p>` : '';
   const misses = asked.filter(a => askIsScored(a) && score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id], item)).join('');
+  const pushed = asked.filter(a => a.kind === 'exchange' && a.id in answers).map(a => exchangeReviewHtml(a, answers[a.id])).join('');
   const consequences = asked.filter(a => a.kind === 'choose').flatMap(a => chooseOptions(data, a).filter(o => o.ok && o.then).map(o => o.then));
   const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '';
   const redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   return `<div class="feedback" data-feedback><div class="marks">${marks}</div>${written}
-    ${block(SAY.whyLabel, paras(item.reason))}${misses}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}${working}</div>`;
+    ${block(SAY.whyLabel, paras(item.reason))}${misses}${pushed}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}${working}</div>`;
 }
 // the chart of a question whose axis was cut, drawn again from zero: the same numbers on the scale that does not exaggerate them
 function redrawHtml(item){
@@ -131,7 +133,10 @@ function redrawHtml(item){
 // one ask's mark: right, or the right answer (a choice); the words for how the voice sat (a sung answer)
 function markHtml(data, ask, answer, result, item, answers){
   const ok = result === 'ok';
+  if(result === 'timeout') return timeoutMarkHtml(data, ask, item);
   if(ask.kind === 'sing') return singMarksHtml(ask, answer, ok);
+  if(ask.kind === 'exchange') return exchangeMarkHtml(ask, answer, result);
+  if(ask.kind === 'order') return orderMarkHtml(ask, answer, result);
   if(ask.kind === 'number') return numberMarkHtml(ask, answer, result, item, answers);
   if(ask.kind === 'form') return formMarksHtml(data, ask, answer, item);
   if(ask.kind === 'text') return writeMarkHtml(ask, answer);
@@ -141,7 +146,10 @@ function markHtml(data, ask, answer, result, item, answers){
 }
 // "You chose X. <what happens>" for a wrong answer; a slip with no line of its own is named from the subject's list of slips
 function missLine(data, ask, answer, result, item){
+  if(result === 'timeout') return `<div class="vblock"><p>${esc(SAY.timerUpLine)}</p></div>`;
   if(ask.kind === 'sing') return singMissHtml(ask, answer);
+  if(ask.kind === 'exchange') return '';
+  if(ask.kind === 'order') return orderMissHtml(ask, answer);
   if(ask.kind === 'number') return numberMissHtml(data, ask, answer, result);
   if(ask.kind === 'form') return formMissHtml(data, ask, answer, item);
   if(ask.kind === 'tap') return tapMissHtml(data, ask, answer, item);
@@ -158,4 +166,10 @@ function tapMissHtml(data, ask, answer, item){
     return `<p><b>${esc(SAY.youTapped)}: “${esc(tapClip(seg.text))}”</b> ${esc(parts.length ? parts.join(' ') : SAY.tapNotThat)}</p>`;
   });
   return lines.length ? `<div class="vblock">${lines.join('')}</div>` : '';
+}
+// an ask that ran out of time: no answer was given, so the mark is the time and the right answer
+function timeoutMarkHtml(data, ask, item){
+  const right = ask.kind === 'choose' ? chooseOptions(data, ask).filter(o => o.ok).map(o => o.text).join('; ')
+    : ask.kind === 'order' ? orderRightText(ask) : ask.kind === 'tap' ? tapRightText(ask, item) : '';
+  return `<div class="mark no"><span class="verd">${esc(SAY.timerUp)}</span>${right ? `<span class="ans">${esc(`${SAY.theAnswer}: ${right}`)}</span>` : ''}</div>`;
 }

@@ -27,7 +27,8 @@ function checkStrands(data, lesson){
   if(checkIsDrawn(lesson.check)) return lesson.check.items.draw.strands;
   return [...new Set(flatRefs(lesson.check.items).map(r => (definitionOf(data, refId(r)) || {}).strand).filter(Boolean))];
 }
-const lessonsCovering = (data, strandId) => lessonsInOrder(data).filter(l => checkStrands(data, l).includes(strandId));
+// a baseline measures and teaches nothing, so it never owns a topic or starts the schedule of one
+const lessonsCovering = (data, strandId) => lessonsInOrder(data).filter(l => l.role !== 'baseline' && checkStrands(data, l).includes(strandId));
 
 /* ---------- when a strand is due ---------- */
 // { [strandId]: { lessonId, level, due } } for every strand whose lesson check has been completed. `due` is null once it has left.

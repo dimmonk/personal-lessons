@@ -67,11 +67,14 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
   return text;
 }
 // a message as it arrives: who it is from and when, then each line (a thread names whose line it is; the other person's at the left, yours at the right)
-const MESSAGE_NAMES = { friend: 'A message from a friend about someone', thread: 'A text thread you are in', note: 'Your own note, written after an argument' };
+const MESSAGE_NAMES = { friend: 'A message from a friend about someone', thread: 'A text thread you are in', note: 'Your own note, written after an argument',
+  sms: 'A text message', email: 'An email', popup: 'A pop-up on a screen', chat: 'A chat, with its history', call: 'An incoming call, the caller\'s words as a transcript', banner: 'A banner over another task' };
 function messageLines(block, deciding) {
   const mark = seg => deciding.includes(seg.id) ? `**${seg.text}**` : seg.text;
-  const who = seg => block.form !== 'thread' ? '' : seg.me ? '(you, at the right) ' : `(${block.from}, at the left) `;
-  return [`${MESSAGE_NAMES[block.form]}: "${block.from}", ${block.detail}.`, '', ...block.lines.map(l => `> ${who(l)}${mark(l)}`)];
+  const who = seg => block.form === 'thread' || block.form === 'chat' ? (seg.me ? '(you, at the right) ' : `(${block.from}, at the left) `) : '';
+  const subject = block.subject ? [`> Subject: **${block.subject}**`, '>'] : [];
+  const link = !block.link ? [] : block.form === 'popup' ? [`> [a button: "${block.link}"]`] : [`> (the link in it, drawn as words and never one that can be followed: ${block.link})`];
+  return [`${MESSAGE_NAMES[block.form]}: "${block.from}", ${block.detail}.`, '', ...subject, ...block.lines.map(l => `> ${who(l)}${mark(l)}`), ...link];
 }
 const blocksText = (blocks, deciding, refs, extra = {}) => blocks.flatMap(b => [...blockLines(b, deciding, refs, extra), '']).filter((l, i, all) => l !== '' || all[i - 1] !== '').join('\n');
 
@@ -126,7 +129,32 @@ function textAskLines(e, ask, marks) {
     `- ${SAY.writeHint} Nothing is marked: it is not scored. "${SAY.writeNotYet}" answers with nothing written. ${SAY.writePrivate} At most ${e.TEXT_MAX} characters.`,
     ...(marks ? [`- After: "${SAY.writeYours}" (what was written, or "${SAY.writeNone}") beside "${SAY.writeModel}": ${paras(ask.model).join(' ')} ${SAY.writeCompare}`] : [])];
 }
+// a call or chat that pushes back: every turn once, in the order a learner meets them, with the replies and where each leads
+function exchangeAskLines(e, data, ask, marks) {
+  const { SAY } = e, order = [], name = id => `turn ${order.indexOf(id) + 1}`;
+  const walk = id => { if (!order.includes(id)) { order.push(id); ask.turns[id].options.filter(o => 'goto' in o).forEach(o => walk(o.goto)); } };
+  walk(ask.start);
+  const out = [`**${paras(ask.prompt).join(' ')}**`, `- ${ask.form === 'call' ? 'An incoming call' : 'A chat'} from "${ask.from}" (${ask.detail}). The turns arrive one after another; the learner picks a reply each time and the next turn follows the reply. ${SAY.exchangeHint(ask.form)} Nothing is marked until it ends, and a call is not on a clock.`];
+  order.forEach(id => {
+    const turn = ask.turns[id];
+    out.push(`- ${name(id)}, the other side says: ${turn.lines.map(l => `"${l.text}"`).join(' ')}${turn.push ? ` [pushes: ${paras(turn.push).join(' ')}]` : ''}`);
+    turn.options.forEach(o => {
+      const end = 'end' in o ? ask.ends[o.end] : null;
+      out.push(`  - reply "${o.text}": ${end ? `the ${ask.form} ends${marks ? `${end.ok ? ' (right)' : ' (not this one)'}: ${paras(end.then).join(' ')}${end.slip ? ` [slip: ${(data.subjects.__current.meta.lists.slip.find(s => s.id === end.slip) || { text: end.slip }).text}]` : ''}` : ''}` : `goes on to ${name(o.goto)}, where the pressure comes back`}`);
+    });
+  });
+  if (marks) out.push(`- After it ends: the lines of every turn that pushed are marked and named ("${SAY.exchangePushes}"), and the reply where it could have ended the right way is named ("${SAY.exchangeCould('first', 'the reply')}" or "${SAY.exchangeSoon}").`);
+  return out;
+}
+// steps put in order: the learner taps them in the order they would do them
+function orderAskLines(e, ask, marks) {
+  const { SAY } = e, text = id => ask.steps.find(s => s.id === id).text;
+  return [`**${paras(ask.prompt).join(' ')}**`, `- ${SAY.orderHint(ask.right.length, e.orderScored(ask))} The steps are offered mixed (never already in the right order): ${ask.steps.map(s => `"${s.text}"`).join('; ')}. Each tapped step is numbered; "${SAY.orderReset}" clears the taps; the answer is the order tapped once ${ask.right.length} are.`,
+    ...(marks ? [`- Right: ${ask.right.map(text).join(', then ')}${e.orderScored(ask) === 'first' ? ' (only the first step counts)' : ''}. After a miss: "${SAY.orderYouPut}: …" and why the order matters: ${paras(ask.then).join(' ')}`] : [])];
+}
 function askLines(e, data, ask, marks, item) {
+  if (ask.kind === 'exchange') return exchangeAskLines(e, data, ask, marks);
+  if (ask.kind === 'order') return orderAskLines(e, ask, marks);
   if (ask.kind === 'text') return textAskLines(e, ask, marks);
   if (ask.kind === 'tap') return tapAskLines(e, data, ask, marks, item);
   if (ask.kind === 'form') return formAskLines(e, data, ask, item, marks);
@@ -199,7 +227,15 @@ function rangeFirst(e, refs, shown) {
 // What the learner meets, in order. Every sentence the app prints is read from SAY; the fields are read from the subject's private forms.
 const fieldWords = f => `${f.label}${f.optional ? SAYPLAIN.optional : ''} (${f.type === 'choose' ? 'choose one' : f.type === 'number' ? `a number${f.unit ? `, in ${f.unit}` : ''}` : f.type === 'date' ? 'a day' : 'words'})${f.warn ? `; over ${f.warn.over}: "${f.warn.text}"` : ''}`;
 const SAYPLAIN = { optional: ' (optional)' };
+// the plan: two boxes, the sentence they make, kept as { cue, then, saved }; the own ways in: things marked done on a day
+function planLines(e, subject, step, at) {
+  const { SAY } = e, form = subject.meta.own[step.own];
+  if (form.into === 'setup') return [`## ${at}: ${SAY.setupTitle}`, '', `${SAY.setupHow} Each of these is a row with "${SAY.setupMark}" (the day is kept) and, once done, "${SAY.setupUndo}":`, '', ...form.fields.map(f => `- ${f.label}`), '', SAY.setupNote, ''];
+  return [`## ${at}: ${SAY.planTitle}`, '', `${SAY.planHow} ${SAY.planPrivate}`, '', ...form.fields.map(f => `- ${f.label}${f.hint ? ` (for example: ${f.hint})` : ''}`), '',
+    `Buttons: "${SAY.planSave}" (both boxes must be filled in; the plan is kept as one sentence, "${SAY.planIf} <when>, ${SAY.planThen} <what>.", with the day it was saved) and "${SAY.planSkip}". Once saved: "${SAY.planSaved}" and "${SAY.planChange}". A group of questions that rehearses the plan shows it once first: "${SAY.planBeforeTitle}", "${SAY.planBefore}", and the sentence, when there is one.`, ''];
+}
 function ownLines(e, subject, lesson, step, at) {
+  if (['plan', 'setup'].includes(subject.meta.own[step.own].into)) return planLines(e, subject, step, at);
   const { SAY } = e, form = subject.meta.own[step.own], actions = Object.values(subject.meta.own).find(f => f.into === 'actions'), lists = subject.meta.lists;
   const model = step.model ? subject.items[step.model] : null, trigger = lesson.trigger && ((lists.trigger || []).find(t => t.id === lesson.trigger) || {}).text;
   const out = [`## ${at}: On your own accounts`, '', 'The same step on the learner\'s own data. Nothing here is scored, stored as a try, logged or sent: it is written to this phone only (the sheet, the dated changes and the moments marked).', ''];
@@ -244,6 +280,9 @@ export function renderLesson(loaded, subjectId, lessonId) {
       const set = step.set, refs = e.flatRefs(set.items), sung = refs.some(isSung), count = refs.reduce((k, r) => k + e.refCount(r), 0);
       const HELP_WORDS = { panel: 'what the label needs, shown beside the words', line: 'the line and the notes drawn while singing', estimateCheck: 'a line that says when the answer and the estimate disagree: an answer more than double or less than half of the learner\'s own estimate is held back once' };
       const checklist = set.support && set.support.panel && refs.length && refs.every(r => { const d = subject.items[e.refId(r)] || subject.gens[e.refId(r)]; return e.itemRuleIds(d).length === 1 && subject.meta.rules[e.itemRuleIds(d)[0]].heading; });
+      const setWords = (set.items.some(Array.isArray) ? ', with each inner pair asked one after the other, in a random order' : '') + (set.seconds ? `, each question on a ${set.seconds} second clock (the clock only shows the time, counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed)` : '')
+        + (set.over === 'busy' ? ', over the busy task (a shopping list to sort by taps; a banner arrives over it after two sorts and its clock starts then; the sorting is never scored or stored)' : '')
+        + (set.plan ? ', with the learner\'s saved plan shown once first when there is one' : '');
       const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (k === 'panel' && checklist ? 'the checklist of what counts, shown beside the words' : HELP_WORDS[k] || k) : `${k} ${v}`).join(', ')})` : '';
       if (sung) {
         out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum with the line drawn. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}. A missed try comes back at least three tries later, with a new note, until it is on the note.`, '');
@@ -254,19 +293,26 @@ export function renderLesson(loaded, subjectId, lessonId) {
         rangeShown.done ||= refs.some(needsRange);
         return;
       }
-      out.push(`## ${at}: Questions`, '', `${count} question${count === 1 ? '' : 's'}, ${set.order}${help}${set.mix ? `, with about ${Math.round(set.mix.share * 100)}% from earlier lessons mixed in, unlabeled` : ''}. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.`, '');
+      out.push(`## ${at}: Questions`, '', `${count} question${count === 1 ? '' : 's'}, ${set.order}${help}${setWords}${set.mix ? `, with about ${Math.round(set.mix.share * 100)}% from earlier lessons mixed in, unlabeled` : ''}. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.`, '');
       refs.forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(typeof ref === 'string' ? ref : { ...ref }), set.support, `Question ${++n}`)); });
       out.push('Then a screen: you can stop here, your place is kept.', '');
     }
   });
-  const check = lesson.check, size = e.checkSize(check);
-  out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
-    'To pass:', ...check.pass.map(r => `- ${e.ruleText(subject, r, e.rightWord(check))}`), '');
+  const check = lesson.check, size = e.checkSize(check), baseline = lesson.role === 'baseline';
+  const clockWords = check.seconds ? ` ${e.SAY.checkTimed(check.seconds)} A call is not on a clock.` : '';
+  if (baseline) out.push('## The baseline', '', `${e.SAY.baselineIntro(size)}${clockWords}`, `It is not passed or failed: no rule is shown, nothing is shown per question${check.order === 'shuffle' ? ', and the questions come in mixed order' : ''}. It is stored as tries in the context "baseline", never counted in the results by lesson or in the schedule of a topic, and taken once.`, '');
+  else out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
+    ...(clockWords ? [clockWords.trim(), ''] : []), 'To pass:', ...check.pass.map(r => `- ${e.ruleText(subject, r, e.rightWord(check))}`), '');
   if (e.checkIsDrawn(check)) out.push(`The questions are drawn from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them).`, '');
   else if (e.checkIsSung(check)) out.push(...rangeFirst(e, e.flatRefs(check.items), rangeShown), ...sungRefLines(e, e.flatRefs(check.items), null, 'Check try', n));
   else e.flatRefs(check.items).forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(ref), null, `Check question ${++n}`)); });
   const compared = Object.values(subject.meta.facets).filter(f => f.compare);
+  if (baseline) {
+    const d = subject.meta.danger, text = (facet, v) => subject.meta.facets[facet].values.find(x => x.id === v).text, slip = subject.meta.lists.slip.find(x => x.id === d.slip).text;
+    out.push('## The result', '', `One screen headed "${e.SAY.baselineDone}" with the one line the baseline ends on, for example "${e.SAY.baselineLine(text(d.facet, d.risky), 6, slip, 1, text(d.facet, d.real), 4, 4)}", then "${e.SAY.baselineNote}" and the way on to the next lesson. No pass, no rule, no answer. The subject's results screen shows the same line, on the day it was taken, under "${e.SAY.baselineRow('Oct 11')}".`, '');
+  } else {
   out.push('## The result', '', ...(compared.length ? [`Under the rules, the facets the subject compares are shown side by side: ${compared.map(f => `"${f.name}" (${f.values.map(v => v.text).join(' beside ')}, each as "n of m" right the first time)`).join('; ')}. The same is shown at the end of the weekly review.`, ''] : []), e.checkIsSung(check) ? 'For example "4 of 5 on the note: passed" or "3 of 5: not yet", each rule above shown as met or not met. The result of each try was shown as it was sung.' : 'For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.', '');
+  }
   return out.join('\n');
 }
 

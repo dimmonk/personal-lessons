@@ -79,7 +79,7 @@ What “Socialist” needs, each need found (with its line) or missing:
 
 ## Step 5: Questions
 
-4 questions, listed, with help (what the label needs, shown beside the words). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+4 questions, listed, with help (what the label needs, shown beside the words), with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Question 1
 

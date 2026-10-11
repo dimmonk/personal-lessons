@@ -31,7 +31,7 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [x] Your two bugs fixed and live: phone Back stays in the app; "Find my range again" on the Singing screen
 - [x] Political Ideologies' pilot live: labels thrown from both sides, earned or not, results side by side
 - [x] Psychology's pilot live: what someone did, told the way it reaches you, "can't tell yet" a right answer
-- [ ] **(now)** Scams' pilot: messages as they arrive, act / check first / ignore, calls that push back
+- [x] Scams' pilot and baseline built and tested (2026-10-11), waiting to be deployed: messages as they arrive in six forms, act / check first / leave, a clock, a call that pushes back (standard 26.10, step 8)
 - [ ] US Civics' pilot: questions spoken aloud, typed answers checked, the interview
 - [ ] Each subject's other lessons, after your try of its pilot
 - [ ] The research document (`docs/learning-science.md`) reorganized by kind of learning
@@ -43,5 +43,6 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
 - [ ] **Try the pilots on your phone** and tell me in a line how each went (each line unlocks that subject's other lessons):
   Singing → Match a note; Basic Math → Ballpark and check; Wealth → What it costs a year; Statistical Claims → Find the
-  claim and its number; Political Ideologies → Socialist, or not?; Psychology → What did they do?
+  claim and its number; Political Ideologies → Socialist, or not?; Psychology → What did they do?; Scams → Act, check or
+  leave (and Before you start, which comes first on the Scams screen)
 - [x] The helpline in Psychology's pilot checked against thehotline.org (2026-10-11): 1.800.799.SAFE (7233) and text START to 88788, as written

@@ -58,10 +58,10 @@ function lastPerContext(tries){
     .flatMap(indexes => indexes.slice(-MAX_TRIES)));
   return tries.filter((_, i) => kept.has(i));
 }
-// attempt: { run, lesson, rev, context, sup, seed?, a, r, ok } -> the Try as stored
+// attempt: { run, lesson, rev, context, sup, seed?, a, r, ok, ms? } -> the Try as stored (`ms` is the time taken in a timed question)
 function recordTry(subjectId, key, attempt){
   const entry = { d: today(), run: attempt.run, lesson: attempt.lesson, rev: attempt.rev, engine: FC.ENGINE, context: attempt.context,
-    sup: !!attempt.sup, ...(attempt.seed !== undefined ? { seed: attempt.seed } : {}), a: attempt.a, r: attempt.r, ok: !!attempt.ok };
+    sup: !!attempt.sup, ...(attempt.seed !== undefined ? { seed: attempt.seed } : {}), a: attempt.a, r: attempt.r, ok: !!attempt.ok, ...(attempt.ms !== undefined ? { ms: attempt.ms } : {}) };
   const tries = lastPerContext([...rawTries(subjectId, key), entry]);
   itemsCache[subjectId] = { ...itemsOf(subjectId), [key]: { tries } };
   storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
@@ -112,9 +112,10 @@ function outcomeOf(data, key, t){
   const def = definitionOf(data, key);
   return { facets: def ? def.facets : {}, r: t.r, ok: t.ok, key, d: t.d, seed: t.seed };
 }
-// The runs of a lesson's check (context 'check', or 'retest'), oldest first: [{ run, d, outcomes, complete }]. A run is complete
-// when every question of the check was answered in it.
-function checkRuns(data, subjectId, lesson, context = 'check'){
+// The runs of a lesson's check (context 'check', or 'retest'; a baseline lesson's check is run as 'baseline'), oldest first: [{ run, d, outcomes, complete }].
+// A run is complete when every question of the check was answered in it.
+const checkContext = lesson => lesson.role === 'baseline' ? 'baseline' : 'check';
+function checkRuns(data, subjectId, lesson, context = checkContext(lesson)){
   const byRun = new Map();
   allTries(subjectId).filter(({ t }) => t.context === context && t.lesson === lesson.id).forEach(({ key, t }) => {
     byRun.set(t.run, [...(byRun.get(t.run) || []), outcomeOf(data, key, t)]);
@@ -123,7 +124,7 @@ function checkRuns(data, subjectId, lesson, context = 'check'){
   return [...byRun.entries()].sort(([a], [b]) => a < b ? -1 : 1)
     .map(([run, outcomes]) => ({ run, d: outcomes[0].d, outcomes, complete: outcomes.length >= size }));
 }
-const completeRuns = (data, subjectId, lesson, context = 'check') => checkRuns(data, subjectId, lesson, context).filter(r => r.complete);
+const completeRuns = (data, subjectId, lesson, context = checkContext(lesson)) => checkRuns(data, subjectId, lesson, context).filter(r => r.complete);
 const lessonDone = (data, subjectId, lesson) => completeRuns(data, subjectId, lesson).length > 0;
 function lastCheck(data, subjectId, lesson){
   const runs = completeRuns(data, subjectId, lesson), run = runs[runs.length - 1];

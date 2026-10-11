@@ -65,9 +65,10 @@ function readingWords(s, lv) {
 }
 function doingSeconds(s, lv) {
   const asksTime = (def, support) => s.engine.askedAsks(def, support).reduce((n, a) => n + (DOING_SECONDS[a.kind] || 0), 0);
-  const group = (refs, support) => defsOf(s, refs).reduce((n, x) => n + asksTime(x.def, support), 0);
-  const sets = lv.sets.reduce((n, set, i) => n + group(lv.setRefs[i], set.support), 0);
-  const check = s.engine.checkIsDrawn(lv.lesson.check) ? lv.lesson.check.items.draw.n * DRAWN_ITEM_SECONDS : group(lv.checkRefs, null);
+  // a timed group gives each question its seconds (the learner has no more, and a call or chat that is not timed counts as its own time)
+  const group = (refs, support, seconds) => defsOf(s, refs).reduce((n, x) => n + (seconds && !x.def.asks.some(a => a.kind === 'exchange') ? seconds : asksTime(x.def, support)), 0);
+  const sets = lv.sets.reduce((n, set, i) => n + group(lv.setRefs[i], set.support, set.seconds), 0);
+  const check = s.engine.checkIsDrawn(lv.lesson.check) ? lv.lesson.check.items.draw.n * DRAWN_ITEM_SECONDS : group(lv.checkRefs, null, lv.lesson.check.seconds);
   const own = lv.lesson.flow.filter(step => step.own).length * DOING_SECONDS.form;   // the step on the learner's own data is doing, not reading
   return sets + check + own;
 }
@@ -131,6 +132,18 @@ function hasExplainProblems(s, item) {
   });
   return problems;
 }
+// An exchange is explained: every end says what happened next (the shape needs it) and a wrong end that names a slip names one the subject has, the
+// other side really pushes (at least one turn says how), and a reply that holds off can run into more pressure. An order says why the order matters
+// (the shape needs it).
+function exchangeExplainProblems(s, ask, where, slipIds) {
+  const problems = [], turns = Object.values(ask.turns);
+  Object.entries(ask.ends).filter(([, e]) => e.slip && !slipIds.includes(e.slip)).forEach(([id, e]) => problems.push(`${where}: the end "${id}" names the slip "${e.slip}", which is not in the subject's list of slips`));
+  Object.entries(ask.ends).filter(([, e]) => e.slip && e.ok).forEach(([id]) => problems.push(`${where}: the right end "${id}" carries a slip`));
+  if (!turns.some(t => t.push)) problems.push(`${where}: no turn pushes, so it is not a call or chat that pushes back`);
+  if (!turns.some(t => t.options.some(o => 'goto' in o && ask.turns[o.goto].push))) problems.push(`${where}: no reply that holds off runs into more pressure`);
+  return problems;
+}
+
 // the asks a question really holds: a form's fields are asks of their own kinds
 const flatAsks = (s, item) => item.asks.flatMap(a => a.kind === 'form' ? a.fields.map(f => ({ ...s.engine.formFieldAsk(f), id: `${a.id}.${f.id}` })) : [a]);
 function explainProblems(s, item) {
@@ -139,6 +152,8 @@ function explainProblems(s, item) {
     if (ask.kind === 'number') { problems.push(...numberExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     if (ask.kind === 'tap') { problems.push(...tapExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     if (ask.kind === 'text') { problems.push(...textExplainProblems(ask, `ask ${ask.id}`)); return; }
+    if (ask.kind === 'exchange') { problems.push(...exchangeExplainProblems(s, ask, `ask ${ask.id}`, ids)); return; }
+    if (ask.kind === 'order') return;
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
     if (!options.some(o => o.ok)) problems.push(`${where} has no right option`);
     if (ask.many === undefined && options.filter(o => o.ok).length > 1) problems.push(`${where} has more than one right option and does not take several`);

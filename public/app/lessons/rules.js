@@ -3,7 +3,7 @@
 // (lesson standard 26.1, 26.2, 26.5). No page and no storage here. `data` is a registered subject: FC.get(id).
 
 // The ask kinds and block kinds built so far (26.8). A lesson that uses another fails V70 until its step is built.
-const ASK_KINDS = ['choose', 'number', 'form', 'sing', 'tap', 'text'];
+const ASK_KINDS = ['choose', 'number', 'form', 'sing', 'tap', 'text', 'exchange', 'order'];
 const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (26.4)
 
@@ -30,7 +30,7 @@ function scoreChoose(data, ask, answer){
 }
 // each scorer reads the question too (item.values: the numbers a generator made)
 const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), form: (data, ask, answer, item) => scoreForm(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer),
-  tap: (data, ask, answer, item) => scoreTap(data, ask, answer, item) };
+  tap: (data, ask, answer, item) => scoreTap(data, ask, answer, item), exchange: (data, ask, answer) => scoreExchange(data, ask, answer), order: (data, ask, answer) => scoreOrder(data, ask, answer) };
 
 // A line the learner writes against a model (26.1, `text` with `model`) is answered and kept but never scored: it has no right answer to match.
 const askIsScored = ask => !(ask.kind === 'text' && 'model' in ask);

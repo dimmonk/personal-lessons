@@ -18,8 +18,8 @@
       "fp": "sha256:861719518cec06741e4d21b667549cd96cdd4e427c175ad02cf81ff065f56474"
     },
     "scams": {
-      "rev": 5,
-      "fp": "sha256:206f8b1be88ae1f5a7b2b6ccddf305d84f0d5f558176044add613cd76fd7de23"
+      "rev": 6,
+      "fp": "sha256:43d867108d6e149053583f303c546d5f99b0d6cfe376e5ac3339537e1b43023a"
     },
     "singing": {
       "rev": 3,
@@ -46,6 +46,14 @@
     "psychology/l1": {
       "rev": 1,
       "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973"
+    },
+    "scams/l0": {
+      "rev": 1,
+      "fp": "sha256:1b70adbbee86c00174186acb8f74b7cce3084035f74cc373677da6a082cd23f0"
+    },
+    "scams/l3": {
+      "rev": 1,
+      "fp": "sha256:89b8016ef43c3002eee51c4e7373bdf7f19a4ac06da797514f9c2cec46593bf4"
     },
     "singing/l2": {
       "rev": 1,

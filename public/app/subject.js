@@ -5,6 +5,7 @@
 // "Check passed, 8 of 10, Oct 12", "Step 3 of 6", or "Not started"
 function lessonStateLine(subj, l){
   const data = dataOf(subj), lesson = data.lessons[l.id], last = lastCheck(data, subj.id, lesson);
+  if(last && lesson.role === 'baseline') return SAY.stateBaseline(shortDay(last.d));   // a baseline is measured, not passed
   if(last) return (last.passed ? SAY.statePassed : SAY.stateNotYet)(last.right, last.total, shortDay(last.d));
   const at = lessonPlace(subj, l);
   if(at > 0) return SAY.stepOf(at + 1, stepTotal(lesson));
@@ -82,7 +83,7 @@ function renderSubject(subj){
     ${resume ? `<div class="block"><button class="btn" id="resume">${esc(lessonPlace(subj, resume) > 0 ? SAY.resume : SAY.start)}: ${esc(resume.title)}${icon('arrow',17)}</button></div>` : ''}
 
     <div class="sect"><span class="m">${esc(SAY.lessonsHeading)}</span>
-      <span class="m s">${total} parts &middot; ${subj.lessons.length} built</span></div>
+      <span class="m s">${total} parts &middot; ${subj.lessons.filter(l => l.part !== null).length} built</span></div>
     <div class="rows">${courseRows(subj)}</div>
 
     ${againSection(subj)}
@@ -126,7 +127,7 @@ function slipRows(subj, rows){
 }
 function checkRows(subj){
   const data = dataOf(subj);
-  return subj.lessons.flatMap(l => {
+  return subj.lessons.filter(l => l.part !== null).flatMap(l => {
     const lesson = data.lessons[l.id];
     return completeRuns(data, subj.id, lesson).map(run => {
       const r = checkResult(data, lesson.check.pass, run.outcomes);
@@ -140,10 +141,18 @@ function comingBackRows(subj){
   const retests = retestDays(data, subj.id).map(r => [`Second check: ${r.lesson.title}`, dayWords(r.due)]);
   return [...strands, ...retests];
 }
+// what the baseline found, in the one line it showed at the end, on the day it was taken
+function baselineSection(subj){
+  const data = dataOf(subj);
+  return subj.lessons.filter(l => l.part === null).flatMap(l => {
+    const run = completeRuns(data, subj.id, data.lessons[l.id]).pop();
+    return run ? [`<div class="sect top"><span class="m">${esc(SAY.baselineRow(shortDay(run.d)))}</span></div><p class="hintline" data-baseline-line>${esc(baselineLine(data, run.outcomes))}</p>`] : [];
+  }).join('');
+}
 function renderResults(subj){
   const rows = triesWithDefs(subj), table = list => list.length
     ? `<table class="k results">${list.map(([a, b]) => `<tr><td>${esc(a)}</td><td>${esc(b)}</td></tr>`).join('')}</table>` : `<p class="hintline">Nothing yet.</p>`;
-  const perLesson = subj.lessons.map(l => [l.title, outOf(rows.filter(x => x.t.lesson === l.id).map(x => x.t))]);
+  const perLesson = subj.lessons.filter(l => l.part !== null).map(l => [l.title, outOf(rows.filter(x => x.t.lesson === l.id).map(x => x.t))]);
   const section = (title, list) => `<div class="sect top"><span class="m">${esc(title)}</span></div>${table(list)}`;
   screenEl().innerHTML = `<div class="pane read" style="--accent:${subj.accent}">
     <div class="topbar"><button class="back" data-v="subject">${icon('back',18)}${esc(subj.name)}</button></div>
@@ -152,6 +161,7 @@ function renderResults(subj){
     ${section('Right the first time, by lesson', perLesson)}
     ${section('Right the first time, side by side', facetRows(subj, rows))}
     ${section('Slips made most', slipRows(subj, rows))}
+    ${baselineSection(subj)}
     ${section('Checks', checkRows(subj))}
     ${section('What comes back, and when', comingBackRows(subj))}
   </div>`;

@@ -11,11 +11,14 @@
 // Nothing here may hold an account number, a login or a password: a field refuses a run of OWN_MAX_DIGITS or more digits.
 
 // The forms a subject may keep, and the fields the app reads from each (the sheet form is read by the costs and the summary, the form for
-// actions by the calendar file): a form that leaves one out cannot work, and the validator says so (V70).
-const OWN_SLOTS = ['sheet', 'actions'];
+// actions by the calendar file, the plan by the plan sentence, the setup as a list of marks): a form that leaves one out cannot work, and the
+// validator says so (V70).
+const OWN_SLOTS = ['sheet', 'actions', 'plan', 'setup'];
 const OWN_REQUIRED = {
   sheet: { fields: { type: 'choose', balance: 'number', fees: 'number' }, rows: { name: 'text', value: 'number', expense: 'number' } },
-  actions: { fields: { what: 'text', where: 'text', when: 'date' } }
+  actions: { fields: { what: 'text', where: 'text', when: 'date' } },
+  plan: { fields: { cue: 'text', then: 'text' } },
+  setup: { fields: {}, allType: 'date' }   // every field of the setup is a thing marked done on a day
 };
 const OWN_MAX_DIGITS = 8;
 const OWN_MAX_TEXT = 80;

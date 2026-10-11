@@ -16,6 +16,7 @@ const REVIEW_TEXT = {
   next: day => `The next question falls due on ${day}.`,
   how: 'It runs one subject at a time. After each answer you see the reason, and anything you miss comes back a few questions later in the same review.',
   intro: (name, n) => `${name}. ${cap(numWord(n))} question${n === 1 ? '' : 's'}, each on something you have not seen before. ${SAY.stakes}`,
+  timed: s => `Each question has ${s} seconds. The clock only shows the time: nothing moves on until you tap Next.`,
   retestIntro: title => `A second check of “${title}”, on new questions. No help, and no answer until the end.`,
   retestResult: title => `Second check: ${title}`,
   resultsTitle: 'The review is done',
@@ -39,7 +40,7 @@ function reviewPlan(){
   }).filter(p => p.count);
   const total = parts.reduce((n, p) => n + p.count, 0);
   const next = total ? null : SUBJECTS.map(s => nextDueDay(FC.get(s.id), s.id, through)).filter(Boolean).sort()[0] || null;
-  return { parts, total, started: SUBJECTS.some(s => lessonsDone(s) > 0), next };
+  return { parts, total, started: SUBJECTS.some(s => s.lessons.some(l => l.part !== null && lessonIsDone(s, l.id))), next };
 }
 function reviewTileHtml(plan){
   const T = REVIEW_TEXT;
@@ -116,12 +117,12 @@ function renderReviewRun(){
 function paintBlockIntro(part, block){
   const T = REVIEW_TEXT, retest = block.kind === 'retest';
   reviewShell(`<div class="eyebrow-row"><span class="m a">${esc(part.subj.name)}</span><h1>${esc(retest ? T.retestResult(block.lesson.title) : T.title)}</h1></div>
-    <div class="lesson"><p>${esc(retest ? T.retestIntro(block.lesson.title) : T.intro(part.subj.name, block.list.length))}</p></div>`,
+    <div class="lesson"><p>${esc(retest ? T.retestIntro(block.lesson.title) : T.intro(part.subj.name, block.list.length))}</p>${!retest && part.data.meta.timed ? `<p>${esc(T.timed(TIMER_REVIEW_SECONDS))}</p>` : ''}</div>${!retest && notesOf(part.subj.id).plan ? `<div class="lesson"><p>${esc(SAY.planBefore)}</p></div>${planSentenceHtml(notesOf(part.subj.id).plan)}` : ''}`,
     `<div class="actbar"><button class="btn neutral" id="beginBlock">${T.begin}${icon('arrow')}</button></div>`);
   on('#beginBlock', () => { REVIEW = { ...REVIEW, phase: 'run' }; render(); window.scrollTo(0, 0); });
 }
 function runQuestions(part, block){
-  startQueue({ subj: part.subj, data: part.data, list: block.list, run: part.run, context: 'review', feedback: 'after-each', support: null, redo: true,
+  startQueue({ subj: part.subj, data: part.data, list: block.list, run: part.run, context: 'review', feedback: 'after-each', support: null, redo: true, seconds: part.data.meta.timed ? TIMER_REVIEW_SECONDS : null,
     owner: inst => ownerOfItem(part.data, inst), shell: reviewShell, onDone: log => nextBlock({ kind: 'questions', log }) });
 }
 function runRetest(part, block){

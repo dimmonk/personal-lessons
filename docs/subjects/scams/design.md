@@ -274,3 +274,11 @@ patch to the existing units turns naming into acting; the engine's item types ca
    third-person stories ("Mira ordered a coat") rather than messages to you in the form they arrive; there is no live
    call or chat that pushes, no time limit, and no consequence shown. That is the format the field studies found does
    not move behavior, and it skips where people actually fail: urgency, emotion and a live voice (SC3, SC4, SC5, SC7).
+
+## Built (2026-10-11, standard 26.10 step 8)
+
+Only the pilot, **L3 Act, check or leave** (part C), and **L0 Before you start** (the baseline, built beside it) exist; `tried.pilot` is still null, so
+V69 holds L1, L2 and L4 to L6 back until the owner has tried the pilot on a phone and said what they thought (gate 6). What was built differs from gate 5
+in the places 26.10 lists (14 messages and the worked text in the lesson, not about 35; one topic for the review; the second question "how do you check";
+a real message judged by the action that suits it, which is what the old baseline got wrong). The learner views are `docs/learner-view/scams-l3.md` and
+`scams-l0.md`.

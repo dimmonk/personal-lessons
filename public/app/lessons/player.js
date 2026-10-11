@@ -22,6 +22,7 @@ function saveLessonPlace(){
   saveSeenLesson(subj.id, lesson.id, { rev: lesson.rev, at });
 }
 function moveLesson(at){
+  timerStop();
   LESSON = { ...LESSON, at, worked: null };
   saveLessonPlace();
   paintLesson();
@@ -109,10 +110,14 @@ function workedAnswerHtml(data, inst){
 /* ---------- a group of questions ---------- */
 const lessonOwner = () => () => ({ lesson: LESSON.lesson.id, rev: LESSON.lesson.rev });
 function startSet(step){
-  const { subj, data, lesson } = LESSON, set = step.set, run = newRunId();
+  const { subj, data, lesson } = LESSON, set = step.set;
+  // a group that rehearses the learner's plan shows it once first, when there is one
+  if(set.plan && notesOf(subj.id).plan && LESSON.planShownAt !== LESSON.at) return paintPlanBefore(step, () => { LESSON = { ...LESSON, planShownAt: LESSON.at }; paintLesson(); window.scrollTo(0, 0); });
+  const run = newRunId();
   const list = buildSet(data, subj.id, lesson, set, run, { again: LESSON.again === true });
   const next = () => LESSON.again ? goOnAgain() : goOn();
   startQueueWithRange({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: 'after-each', support: set.support || null, redo: true,
+    seconds: set.seconds || null, over: set.over || null,
     owner: lessonOwner(), shell: lessonShell, onDone: log => log.every(e => e.unscored) ? next() : paintBreak(log) });
 }
 // A sung run needs the learner's range; when it is not set yet, the range exercise runs first and the run follows it (26.1.1).
@@ -157,9 +162,15 @@ function goOnAgain(){
 /* ---------- the end check ---------- */
 function paintCheckIntro(){
   const { data, lesson } = LESSON, check = lesson.check, n = checkSize(check);
+  const timed = check.seconds ? `<p>${esc(SAY.checkTimed(check.seconds))}</p>` : '';
+  // a baseline is not passed: it says what it is, and shows no rule
+  if(lesson.role === 'baseline'){
+    lessonShell(`${heading(SAY.baselineHeading, lesson.title)}<div class="lesson"><p>${esc(SAY.baselineIntro(n))}</p>${timed}</div>`, nextAction(SAY.baselineStart));
+    return on('#fwd', startCheck);
+  }
   const rules = check.pass.map(rule => `<li>${esc(ruleText(data, rule, rightWord(check)))}</li>`).join('');
   lessonShell(`${heading(SAY.checkHeading, lesson.title)}<div class="lesson"><p>${esc(checkIsSung(check) ? SAY.checkIntroSung(n) : SAY.checkIntro(n))}</p><ul>${rules}</ul>
-    ${check.feedback === 'at-end' ? `<p>${esc(SAY.checkNoFeedback)}</p>` : ''}</div>`, nextAction(SAY.checkStart));
+    ${check.feedback === 'at-end' ? `<p>${esc(SAY.checkNoFeedback)}</p>` : ''}${timed}</div>`, nextAction(SAY.checkStart));
   on('#fwd', startCheck);
 }
 function checkInstances(run){
@@ -172,8 +183,8 @@ const flowSetIds = lesson => flowSets(lesson).flatMap(set => flatRefs(set.items)
 function startCheck(){
   const { subj, data, lesson } = LESSON, run = newRunId();
   LESSON = { ...LESSON, run };
-  startQueueWithRange({ subj, data, list: checkInstances(run), run, context: 'check', feedback: lesson.check.feedback, support: null, redo: false,
-    owner: lessonOwner(), shell: lessonShell, onDone: log => paintCheckResult(log) });
+  startQueueWithRange({ subj, data, list: checkInstances(run), run, context: checkContext(lesson), feedback: lesson.check.feedback, support: null, redo: false,
+    seconds: lesson.check.seconds || null, owner: lessonOwner(), shell: lessonShell, onDone: log => lesson.role === 'baseline' ? paintBaselineResult(log) : paintCheckResult(log) });
 }
 // "8 of 10: passed", each rule met or not, then every answer with the misses first (when the answers were held back)
 function paintCheckResult(log){
@@ -191,6 +202,25 @@ function paintCheckResult(log){
     <table class="k results">${rows}</table>${splitsHtml(facetSplits(data, queueOutcomes(log)))}</div>${each}`, actions);
   on('#toNext', () => openLesson(subj, next.id));
   on('#again', () => { LESSON = { ...LESSON, at: checkStep(lesson) }; paintCheckIntro(); window.scrollTo(0, 0); });
+  window.scrollTo(0, 0);
+  focusScreenHead();
+}
+/* ---------- the baseline: measured, not passed ---------- */
+// One line: how many of the risky messages the learner did what they asked on, and how many real ones they handled the right way (26.2, gate 5).
+// The words come from the subject's `danger` (the slip that is the failure, the facet it is counted by, which value is risky and which is real).
+function baselineLine(data, outcomes){
+  const d = data.meta.danger, risky = outcomes.filter(o => o.facets[d.facet] === d.risky), real = outcomes.filter(o => o.facets[d.facet] === d.real);
+  const slipped = risky.filter(o => Object.values(o.r).includes(d.slip)).length;
+  return SAY.baselineLine(facetValueText(data, d.facet, d.risky), risky.length, slipText(data, d.slip), slipped, facetValueText(data, d.facet, d.real), real.length, real.filter(o => o.ok).length);
+}
+function paintBaselineResult(log){
+  const { subj, data, lesson } = LESSON, outcomes = queueOutcomes(log), next = nextLessonOf(data, lesson);
+  logEvent('baseline', { subject: subj.id, lesson: lesson.id, rev: lesson.rev });
+  LESSON = { ...LESSON, at: stepTotal(lesson) - 1 };
+  saveLessonPlace();
+  lessonShell(`<div class="done-screen results"><h2>${esc(SAY.baselineDone)}</h2><p data-baseline-line>${esc(baselineLine(data, outcomes))}</p><p>${esc(SAY.baselineNote)}</p></div>`,
+    `<div class="actbar">${next ? `<button class="btn neutral" id="toNext">${esc(SAY.nextLesson)}${icon('arrow')}</button>` : ''}<button class="btn ghost" data-v="subject">${esc(SAY.toSubject)}</button></div>`);
+  on('#toNext', () => openLesson(subj, next.id));
   window.scrollTo(0, 0);
   focusScreenHead();
 }

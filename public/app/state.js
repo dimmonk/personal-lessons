@@ -83,6 +83,7 @@ function backInApp(){
 }
 function go(view, extra){
   stopAudio();
+  timerStop();
   ownSubjectReset();
   Object.assign(APP, {view}, extra || {});
   saveApp(); render(); window.scrollTo(0,0);

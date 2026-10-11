@@ -446,3 +446,46 @@ table.ownsum td:last-child{white-space:normal}
   color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.5}
 .writebox[disabled]{opacity:1;border-color:var(--rule);color:var(--bodydim);-webkit-text-fill-color:var(--bodydim)}
 .mark.note{border-color:var(--border);color:var(--dim)}
+
+/* ---------- a message in the forms it arrives in, a countdown, a live call, steps in order, the busy task, the plan (step 8) ---------- */
+.msg-sms .msg-line,.msg-chat .msg-line{border-radius:0}
+.msg-link,.msg-button{margin:0;align-self:flex-start;max-width:90%;font-size:15px;line-height:1.45;overflow-wrap:anywhere}
+.msg-link span{color:var(--accent);text-decoration:underline;text-underline-offset:2px}
+.msg-subject{margin:0;font-size:16px;font-weight:700;line-height:1.35;color:var(--text);overflow-wrap:anywhere}
+.msg-email .msg-lines{gap:8px}
+.msg-email .msg-line{align-self:stretch;max-width:none;padding:0;background:none;font-family:var(--serif);font-size:16px;line-height:1.55}
+.msg-popup{padding:0;gap:0;background:var(--field);border-color:var(--dim)}
+.msg-popup .msg-head{padding:10px 14px;background:var(--divider)}
+.msg-popup .msg-lines{padding:12px 14px 4px}
+.msg-popup .msg-line{align-self:stretch;max-width:none;padding:0;background:none;color:var(--text)}
+.msg-popup .msg-button{align-self:center;max-width:none;margin:8px 14px 14px;padding:10px 18px;background:var(--text);color:var(--bg);font-size:15px;font-weight:700;text-align:center}
+.msg-call{background:var(--field)}
+.msg-call .msg-from{font-size:20px}
+.msg-call .msg-line{align-self:stretch;max-width:none;padding:0;background:none;font-family:var(--serif);font-size:16px;font-style:italic;line-height:1.55;color:var(--bodydim)}
+.msg-call .msg-line.me{align-self:flex-end;max-width:90%;padding:9px 12px;background:var(--divider);font-family:var(--sans);font-style:normal;color:var(--text)}
+.msg-banner{flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:10px 14px;background:var(--divider);border-color:var(--dim)}
+.msg-banner .msg-head{flex-direction:row;align-items:baseline;gap:10px}
+.msg-banner .msg-lines{flex-basis:100%}
+.msg-banner .msg-line{align-self:stretch;max-width:none;padding:0;background:none;font-size:15px;line-height:1.4;color:var(--text)}
+.msg-live .msg-line.me{align-self:flex-end}
+.pushnote{margin:0;font-size:14px;line-height:1.45;color:var(--dim)}
+.pushlist{margin:6px 0 8px;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.pushlist li{padding:10px 12px;background:var(--field);font-size:15px;line-height:1.45;color:var(--body)}
+.pushlist li b{display:block;font-size:14px;color:var(--text)}
+.exchange .msg-lines{gap:8px}
+.timer{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:10px 14px;background:var(--raised);border:1px solid var(--border)}
+.timernum{font-family:var(--mono);font-size:22px;font-weight:700;line-height:1;color:var(--text);min-width:2ch;text-align:right}
+.timerword{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--label)}
+.timerbar{flex:1;height:8px;background:var(--divider)}
+.timerbar i{display:block;height:100%;background:var(--accent)}
+.timerup{margin:0 0 12px;padding:10px 14px;background:color-mix(in srgb,var(--coral) 16%,transparent);font-size:15px;font-weight:600;color:var(--text)}
+.orderstep{flex-direction:row;align-items:center;gap:10px}
+.orderno{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;background:var(--bg);color:var(--text);font-family:var(--mono);font-size:12px;font-weight:700}
+.busy{display:flex;flex-direction:column;gap:10px;margin-top:14px;padding:14px 16px;background:var(--raised);border:1px solid var(--border)}
+.busyword{margin:0;font-size:17px;font-weight:600;line-height:1.35;color:var(--text)}
+.busybins{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.busybins .btn{justify-content:center;text-align:center}
+.plansentence{margin:0 0 12px;padding:14px 16px;background:var(--raised);border:1px solid var(--border);font-family:var(--serif);font-size:17px;line-height:1.55;color:var(--text)}
+.setuplist{margin:0 0 12px;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.setuprow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--field)}
+.setuprow.done{background:color-mix(in srgb,var(--green) 12%,transparent)}

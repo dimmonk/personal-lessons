@@ -2,17 +2,15 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
 
 // What 26.1 describes and the engine has not built yet (26.8). A lesson that uses one is refused, so nothing is written that cannot run.
 export const NOT_BUILT = {
-  'a baseline lesson': 'step 8 (Scams)', 'a private form into answers, a plan, a setup or lines': 'steps 7 to 9', 'a timed group': 'step 8 (Scams)', 'a busy task': 'step 8 (Scams)',
-  'a saved plan': 'step 8 (Scams)', 'a spoken check': 'step 9 (Civics)', 'a check with a time': 'step 8 (Scams)',
-  'a subject that times its items': 'step 8 (Scams)', 'the interview date': 'step 9 (Civics)',
-  'an interview fact': 'step 9 (Civics)', 'a text ask with accepted answers': 'step 9 (Civics)'
+  'a private form into answers or lines': 'step 9 (Civics) and part F of Psychology', 'a spoken check': 'step 9 (Civics)',
+  'the interview date': 'step 9 (Civics)', 'an interview fact': 'step 9 (Civics)', 'a text ask with accepted answers': 'step 9 (Civics)'
 };
 
 /* ---------- the pieces ---------- */
@@ -41,7 +39,7 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
       ...block.rules.filter(id => !ruleIds.includes(id)).map(id => `${where}: "${id}" is not one of the subject's rules`),
       ...(block.rules.length > 1 ? block.rules.filter(id => headed.includes(id)).map(id => `${where}: the rule "${id}" has a heading of its own and stands alone in a panel`) : [])];
   }
-  if (block.kind === 'message') return messageProblems(block, where);
+  if (block.kind === 'message') return messageProblems(block, where, engine);
   if (block.kind === 'chart') {
     const shape = show(checkShape(block, CHART, where));
     return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
@@ -49,13 +47,19 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
   return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine, ruleIds, headed), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine, ruleIds, headed)];
 }
 
-// A message: a thread is the only form with lines of your own (`me`), and the lines are not called "none", the answer "Not given".
-function messageProblems(block, where) {
+// A message: a thread or a chat is the only form with lines of your own (`me`), an email has a subject, only the forms that carry a link or a button
+// have one, a banner is one short line, and the lines are not called "none", the answer "Not given".
+function messageProblems(block, where, engine) {
   const problems = show(checkShape(block, MESSAGE, where));
   if (problems.length) return problems;
+  const yours = engine.MESSAGE_YOURS.includes(block.form);
   if (!block.lines.length) problems.push(`${where}: a message needs at least one line`);
-  if (block.form !== 'thread') block.lines.filter(l => l.me).forEach(l => problems.push(`${where}: the line "${l.id}" is one you sent, and only a thread has lines of your own`));
-  if (block.form === 'thread' && !block.lines.some(l => !l.me)) problems.push(`${where}: a thread needs at least one line from the other person`);
+  if (!yours) block.lines.filter(l => l.me).forEach(l => problems.push(`${where}: the line "${l.id}" is one you sent, and only a thread or a chat has lines of your own`));
+  if (yours && !block.lines.some(l => !l.me)) problems.push(`${where}: a ${block.form} needs at least one line from the other person`);
+  if (block.form === 'email' && !block.subject) problems.push(`${where}: an email has a subject`);
+  if (block.subject && block.form !== 'email') problems.push(`${where}: only an email has a subject, not a ${block.form}`);
+  if (block.link && !engine.MESSAGE_LINK_FORMS.includes(block.form)) problems.push(`${where}: a ${block.form} has no link or button (${engine.MESSAGE_LINK_FORMS.join(', ')} do)`);
+  if (block.form === 'banner' && block.lines.length !== 1) problems.push(`${where}: a banner is one short line, not ${block.lines.length}`);
   block.lines.filter(l => l.id === 'none').forEach(() => problems.push(`${where}: no line may be called "none", the answer "Not given"`));
   return problems;
 }
@@ -108,7 +112,7 @@ function formProblems(ask, where, kinds, listIds) {
   problems.push(...duplicatesOf(ask.fields.map(f => f.id)).map(id => `${where}: field "${id}" appears twice`));
   ask.fields.forEach((f, i) => {
     const { label, type, ...rest } = f, as = { ...rest, kind: type, prompt: label };
-    problems.push(...askProblems(as, `${where}.fields[${i}]`, ['number', 'choose'], listIds));
+    problems.push(...askProblems(as, `${where}.fields[${i}]`, ['number', 'choose'], listIds, null));
   });
   return problems;
 }
@@ -133,12 +137,50 @@ function textProblems(ask, where) {
   return problems;
 }
 
-function askProblems(ask, where, kinds, listIds) {
+// An exchange: its turns are a path that always ends. The start and every goto are turns, every end is an end, a turn offers at least two replies
+// each of which goes on or ends, every turn can be reached, the turns do not loop, and there is a right end and a wrong one. (That each end is
+// explained, and that the other side really pushes, is V74's.)
+function exchangeProblems(ask, where, engine) {
+  const problems = show(checkShape(ask, EXCHANGE, where));
+  if (problems.length) return problems;
+  const turns = ask.turns, ends = ask.ends, turnIds = Object.keys(turns);
+  if (!turns[ask.start]) return [`${where}: it starts at "${ask.start}", which is not one of its turns`];
+  turnIds.forEach(id => {
+    const turn = turns[id], ids = turn.options.map(o => o.id);
+    if (turn.options.length < 2) problems.push(`${where}: the turn "${id}" offers fewer than two replies`);
+    problems.push(...duplicatesOf(ids).map(o => `${where}: the turn "${id}" has the reply "${o}" twice`));
+    turn.options.forEach(o => {
+      if ('goto' in o && !turns[o.goto]) problems.push(`${where}: the reply "${o.id}" of "${id}" goes to "${o.goto}", which is not a turn`);
+      if ('end' in o && !ends[o.end]) problems.push(`${where}: the reply "${o.id}" of "${id}" ends at "${o.end}", which is not an end`);
+    });
+  });
+  if (problems.length) return problems;
+  if (engine.exchangeLoops(ask)) problems.push(`${where}: the turns loop back on themselves, so an exchange could go on for ever`);
+  else {
+    const reach = engine.exchangeReach(ask);
+    turnIds.filter(id => !reach.includes(id)).forEach(id => problems.push(`${where}: the turn "${id}" cannot be reached from the start`));
+  }
+  const used = new Set(turnIds.flatMap(id => turns[id].options.filter(o => 'end' in o).map(o => o.end)));
+  Object.keys(ends).filter(id => !used.has(id)).forEach(id => problems.push(`${where}: the end "${id}" is reached by no reply`));
+  if (!Object.values(ends).some(e => e.ok)) problems.push(`${where}: no end is the right one`);
+  if (!Object.values(ends).some(e => !e.ok)) problems.push(`${where}: no end is a wrong one, so the exchange cannot be lost`);
+  problems.push(...duplicatesOf(turnIds.flatMap(id => turns[id].lines.map(l => l.id))).map(id => `${where}: the line "${id}" appears twice among the turns`));
+  return problems;
+}
+// Steps to put in order: the shape, then ids that are steps (order.js)
+function orderShapeProblems(ask, where, engine) {
+  const problems = show(checkShape(ask, ORDER, where));
+  return problems.length ? problems : engine.orderProblems(ask).map(p => `${where}: ${p}`);
+}
+
+function askProblems(ask, where, kinds, listIds, engine) {
   if (!ask || typeof ask !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(ask.kind)) return [`${where} has an ask of kind "${ask.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (ask.kind === 'sing') return [`${where} is a sing ask, which only a sung question the app makes from a { sing } task may carry`];
   if (ask.kind === 'tap') return tapProblems(ask, where);
   if (ask.kind === 'text') return textProblems(ask, where);
+  if (ask.kind === 'exchange') return exchangeProblems(ask, where, engine);
+  if (ask.kind === 'order') return orderShapeProblems(ask, where, engine);
   if (ask.kind === 'number') return numberProblems(ask, where);
   if (ask.kind === 'form') return formProblems(ask, where, kinds, listIds);
   const problems = show(checkShape(ask, CHOOSE, where));
@@ -172,7 +214,9 @@ function itemProblems(item, where, ctx, isGen) {
   if (taps.length > 1) problems.push(`${where}: a question has one tap, not ${taps.length}`);
   taps.filter(a => a.in && !item.blocks.some(b => b.id === a.in)).forEach(a => problems.push(`${where}: the tap "${a.id}" names the block "${a.in}", which the question does not have`));
   if (item.redraw && !item.blocks.some(b => b.kind === 'chart' && b.y && b.y.from > 0)) problems.push(`${where}: redraw from zero needs a chart whose axis starts above zero`);
-  item.asks.forEach((a, i) => problems.push(...askProblems(a, `${where}.asks[${i}]`, engine.ASK_KINDS, ctx.listIds)));
+  item.asks.forEach((a, i) => problems.push(...askProblems(a, `${where}.asks[${i}]`, engine.ASK_KINDS, ctx.listIds, engine)));
+  const exchanges = item.asks.filter(a => a.kind === 'exchange');
+  if (exchanges.length > 1) problems.push(`${where}: a question has one call or chat, not ${exchanges.length}`);
   const askIds = item.asks.map(a => a.id);
   problems.push(...duplicatesOf(askIds).map(id => `${where}: ask "${id}" appears twice`));
   item.asks.forEach((a, i) => { if (a.when && askIds.indexOf(a.when.ask) < 0 || a.when && askIds.indexOf(a.when.ask) >= i) problems.push(`${where}: ask "${a.id}" opens on "${a.when.ask}", which is not an ask before it`); });
@@ -225,14 +269,15 @@ function supportFitsProblems(set, where, ctx) {
   return problems;
 }
 
-// An own step: the private form it fills in is one of the subject's, writes into the sheet, and the model it shows is one of its questions; the
-// subject has the form for dated actions the step ends in.
+// An own step: the private form it fills in is one of the subject's. A step on the sheet shows a model that is one of its questions, and the subject
+// has the form for dated actions the step ends in; a step on the plan or the setup has neither.
 function ownStepProblems(step, where, ctx) {
   const { subject } = ctx, own = subject.meta.own || {}, form = own[step.own], problems = [];
-  if (!form) problems.push(`${where}: "${step.own}" is not one of the subject's private forms`);
-  else if (form.into !== 'sheet') problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; the step on the learner's own data fills in the sheet`);
+  if (!form) { problems.push(`${where}: "${step.own}" is not one of the subject's private forms`); return problems; }
+  if (!['sheet', 'plan', 'setup'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the plan or the setup`);
   if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
-  if (!Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
+  if (step.model && form.into !== 'sheet') problems.push(`${where}: only a step on the sheet shows a model`);
+  if (form.into === 'sheet' && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
   return problems;
 }
 
@@ -249,13 +294,22 @@ function stepProblems(step, where, ctx) {
     const set = step.set;
     engine.flatRefs(set.items).forEach((r, i) => problems.push(...refProblems(r, `${where}.items`, ctx)));
     if (set.seconds !== undefined && !subject.meta.timed) problems.push(`${where} has seconds in a subject that does not time its items`);
-    if (set.seconds !== undefined) problems.push(`${where} is timed, which is built in ${NOT_BUILT['a timed group']}`);
-    if (set.over) problems.push(`${where} runs a busy task, which is built in ${NOT_BUILT['a busy task']}`);
-    if (set.plan) problems.push(`${where} shows a saved plan, which is built in ${NOT_BUILT['a saved plan']}`);
+    if (set.plan && !Object.values(subject.meta.own || {}).some(f => f.into === 'plan')) problems.push(`${where} shows the saved plan, and the subject has no private form for a plan`);
     if (set.mix) set.mix.from.filter(id => !subject.lessons[id]).forEach(id => problems.push(`${where}.mix: "${id}" is not a lesson of the subject`));
     set.items.filter(Array.isArray).forEach(pair => { if (pair.length !== 2) problems.push(`${where}: a pair holds two items, not ${pair.length}`); });
     problems.push(...supportFitsProblems(set, where, ctx));
   }
+  return problems;
+}
+
+// A baseline measures and teaches nothing (26.2): its flow is only screens that say how it goes, it holds its answers to the end, and the subject says
+// what its closing line counts (the slip that is the failure, and which kind of question is risky and which real).
+function baselineProblems(lesson, where, subject) {
+  const problems = [];
+  lesson.flow.filter(s => !s.show).forEach(() => problems.push(`${where}: a baseline teaches nothing, so its flow holds only screens that say how it goes`));
+  if (lesson.check.feedback !== 'at-end') problems.push(`${where}: a baseline holds its answers to the end`);
+  if (lesson.check.retest !== undefined) problems.push(`${where}: a baseline is taken once and is never taken again as a retest`);
+  if (!subject.meta.danger) problems.push(`${where}: a baseline ends on one line about the failure, and the subject names no \`danger\` for it to count`);
   return problems;
 }
 
@@ -265,13 +319,13 @@ function lessonProblems(lesson, ctx) {
   if (problems.length) return problems;
   const { subject, engine } = ctx;
   if ((lesson.part === null) !== (lesson.role === 'baseline')) problems.push(`${where}: only a baseline lesson has no part`);
-  if (lesson.role === 'baseline') problems.push(`${where} is a baseline lesson, which is built in ${NOT_BUILT['a baseline lesson']}`);
+  if (lesson.role === 'baseline') problems.push(...baselineProblems(lesson, where, subject));
   if (lesson.trigger && !((subject.meta.lists || {}).trigger || []).some(t => t.id === lesson.trigger)) problems.push(`${where}: the trigger "${lesson.trigger}" is not in the subject's list of triggers`);
   lesson.flow.forEach((step, i) => problems.push(...stepProblems(step, `${where}.flow[${i}]`, ctx)));
   const check = lesson.check;
   if (Array.isArray(check.items)) check.items.forEach(r => problems.push(...refProblems(r, `${where}.check.items`, ctx)));
   else check.items.draw.strands.filter(s => !subject.meta.strands.some(x => x.id === s)).forEach(s => problems.push(`${where}.check: "${s}" is not a strand of the subject`));
-  if (check.seconds !== undefined) problems.push(`${where}.check has a time, which is built in ${NOT_BUILT['a check with a time']}`);
+  if (check.seconds !== undefined && !subject.meta.timed) problems.push(`${where}.check has seconds in a subject that does not time its items`);
   if (check.spoken) problems.push(`${where}.check is spoken, which is built in ${NOT_BUILT['a spoken check']}`);
   return problems;
 }
@@ -290,8 +344,9 @@ function ownFormsProblems(meta, engine) {
   const lists = meta.lists || {}, problems = [];
   Object.entries(meta.own || {}).forEach(([id, form]) => {
     const where = `the subject record: private form ${id}`;
-    if (!engine.OWN_SLOTS.includes(form.into)) { problems.push(`${where} writes into "${form.into}", which is built in ${NOT_BUILT['a private form into answers, a plan, a setup or lines']}`); return; }
+    if (!engine.OWN_SLOTS.includes(form.into)) { problems.push(`${where} writes into "${form.into}", which is built in ${NOT_BUILT['a private form into answers or lines']}`); return; }
     const need = engine.OWN_REQUIRED[form.into];
+    if (need.allType) form.fields.filter(f => f.type !== need.allType).forEach(f => problems.push(`${where}: "${f.id}" is a ${f.type}; every field of a form into "${form.into}" is marked on a ${need.allType}`));
     const check = (fields, wanted, label) => {
       problems.push(...duplicatesOf(fields.map(f => f.id)).map(f => `${where}: ${label} "${f}" appears twice`));
       Object.entries(wanted).forEach(([fid, type]) => {
@@ -326,7 +381,12 @@ function subjectProblems(s) {
   });
   if (!(meta.readingShare > 0 && meta.readingShare < 1)) problems.push('the subject record: readingShare must be above 0 and below 1');
   problems.push(...refsProblems(meta), ...ownFormsProblems(meta, engine));
-  if (meta.timed) problems.push(`the subject record times its items, which is built in ${NOT_BUILT['a subject that times its items']}`);
+  if (meta.danger) {
+    const d = meta.danger, facet = meta.facets[d.facet];
+    if (!(meta.lists.slip || []).some(x => x.id === d.slip)) problems.push(`the subject record: the danger slip "${d.slip}" is not in the list of slips`);
+    if (!facet) problems.push(`the subject record: the danger names the facet "${d.facet}", which the subject does not have`);
+    else [d.risky, d.real].filter(v => !facet.values.some(x => x.id === v)).forEach(v => problems.push(`the subject record: the danger names "${v}", which is not a value of ${d.facet}`));
+  }
   if (meta.review && meta.review.dateField) problems.push(`the subject record uses the interview date, which is built in ${NOT_BUILT['the interview date']}`);
   return problems;
 }

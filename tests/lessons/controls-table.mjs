@@ -29,6 +29,10 @@ const labelsMeta = (...rest) => ['subjects', 'labels', 'meta', ...rest];
 const accountItem = (id, ...rest) => ['subjects', 'account', 'items', id, ...rest];
 const accountLesson = (id, ...rest) => ['subjects', 'account', 'lessons', id, ...rest];
 const accountMeta = (...rest) => ['subjects', 'account', 'meta', ...rest];
+// the test subject of the six forms of a message, timed groups, a call that pushes back, steps in order, the busy task, the plan and the baseline
+const pressureItem = (id, ...rest) => ['subjects', 'pressure', 'items', id, ...rest];
+const pressureLesson = (id, ...rest) => ['subjects', 'pressure', 'lessons', id, ...rest];
+const pressureMeta = (...rest) => ['subjects', 'pressure', 'meta', ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -158,6 +162,34 @@ export const CONTROLS = [
     data: (d, h) => h.updateIn(d, accountItem('h-1', 'asks'), asks => [asks[1]]) },
   { rule: 'V50', name: 'a model line uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'model'), 'This item is the leftovers he ate.') },
   { rule: 'V60', name: 'a model line in British spelling', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'model'), 'He ate the favourite leftovers I saved for lunch.') },
+  // the six forms of a message, timed groups, a call that pushes back, steps in order, the busy task, the plan, the baseline (step 8)
+  { rule: 'V70', name: 'a link on an incoming call', data: (d, h) => h.setIn(d, pressureLesson('l1', 'flow', 0, 'show', 4, 'link'), 'call-back.example') },
+  { rule: 'V70', name: 'an email with no subject', data: (d, h) => h.removeIn(d, pressureLesson('l1', 'flow', 0, 'show', 1, 'subject')) },
+  { rule: 'V70', name: 'a subject on a text', data: (d, h) => h.setIn(d, pressureLesson('l1', 'flow', 0, 'show', 0, 'subject'), 'Locked') },
+  { rule: 'V70', name: 'a banner of two lines', data: (d, h) => h.updateIn(d, pressureLesson('l1', 'flow', 0, 'show', 5, 'lines'), lines => [...lines, { id: 'f-z', text: 'And more.' }]) },
+  { rule: 'V70', name: 'a line you sent in a call', data: (d, h) => h.setIn(d, pressureLesson('l1', 'flow', 0, 'show', 4, 'lines', 0, 'me'), true) },
+  { rule: 'V70', name: 'a reply that goes to a turn the call does not have', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'turns', 'one', 'options', 1, 'goto'), 'nowhere') },
+  { rule: 'V70', name: 'a call whose turns loop back', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'turns', 'two', 'options', 0), { id: 'again', text: 'Say it again', goto: 'one' }) },
+  { rule: 'V70', name: 'a call with no right end', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'ends', 'hung', 'ok'), false) },
+  { rule: 'V70', name: 'a turn the call can never reach', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'turns', 'three'), { lines: [{ id: 'x3a', text: 'Hello?' }], options: [{ id: 'a', text: 'Hang up', end: 'hung' }, { id: 'b', text: 'Stay', end: 'gave' }] }) },
+  { rule: 'V70', name: 'a right order that names a step that is not one', data: (d, h) => h.setIn(d, pressureItem('o-1', 'asks', 0, 'right', 1), 'nope') },
+  { rule: 'V70', name: 'a private form for the plan that leaves out the cue', data: (d, h) => h.removeIn(d, pressureMeta('own', 'plan', 'fields', 0)) },
+  { rule: 'V70', name: 'a setup field that is not a day', data: (d, h) => h.setIn(d, pressureMeta('own', 'setup', 'fields', 0, 'type'), 'text') },
+  { rule: 'V70', name: 'a step on the plan, and a group that shows it, in a subject with no private form for one', data: (d, h) => h.removeIn(d, pressureMeta('own', 'plan')) },
+  { rule: 'V70', name: 'a baseline whose flow holds a group of questions', data: (d, h) => h.updateIn(d, pressureLesson('l0', 'flow'), flow => [...flow, { set: { items: ['t-1'], order: 'listed' } }]) },
+  { rule: 'V70', name: 'a baseline that shows its answers as it goes', data: (d, h) => h.setIn(d, pressureLesson('l0', 'check', 'feedback'), 'after-each') },
+  { rule: 'V70', name: 'a check of 25 seconds', data: (d, h) => h.setIn(d, pressureLesson('l1', 'check', 'seconds'), 25) },
+  { rule: 'V70', name: 'seconds in a subject that does not time its items', data: (d, h) => h.setIn(d, pressureMeta('timed'), false) },
+  { rule: 'V70', name: 'a danger slip the subject does not list', data: (d, h) => h.setIn(d, pressureMeta('danger', 'slip'), 'nothing') },
+  { rule: 'V74', name: 'a call in which nobody pushes', data: (d, h) => h.removeIn(h.removeIn(d, pressureItem('x-1', 'asks', 0, 'turns', 'one', 'push')), pressureItem('x-1', 'asks', 0, 'turns', 'two', 'push')) },
+  { rule: 'V74', name: 'a call that ends on a slip the subject does not have', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'ends', 'gave', 'slip'), 'mystery') },
+  { rule: 'V74', name: 'the right end of a call that carries a slip', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'ends', 'hung', 'slip'), 'acted') },
+  { rule: 'V82', name: 'a real message whose wrong option is marked as the failure', data: (d, h) => h.setIn(d, pressureItem('t-1', 'asks', 0, 'slips', 'check'), 'acted') },
+  { rule: 'V82', name: 'the failure moved to a slip that real messages make', data: (d, h) => h.setIn(d, pressureMeta('danger', 'slip'), 'habit') },
+  { rule: 'V83', name: 'a typed line in a timed group', data: (d, h) => h.updateIn(d, pressureItem('t-3', 'asks'), asks => [...asks, { id: 'say', kind: 'text', prompt: 'Say what you would do.', model: 'I would check in the app.' }]) },
+  { rule: 'V83', name: 'a busy group that is not timed', data: (d, h) => h.removeIn(d, pressureLesson('l1', 'flow', 5, 'set', 'seconds')) },
+  { rule: 'V83', name: 'a busy group whose question is not a banner', data: (d, h) => h.setIn(d, pressureLesson('l1', 'flow', 5, 'set', 'items'), ['t-3', 'y-2']) },
+  { rule: 'V50', name: 'a reply of a call uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'turns', 'one', 'options', 0, 'text'), 'Read out the item') },
   { rule: 'V50', name: 'a checklist heading uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountMeta('rules', 'act', 'heading'), 'What counts as an item') }
 ];
 

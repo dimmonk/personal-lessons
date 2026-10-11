@@ -86,22 +86,24 @@ function ownActionFormHtml(form, draft, problems){
 // marked, and the two controls that take it out of the phone or off it.
 function ownSectionHtml(subj, data, state){
   const notes = notesOf(subj.id), lists = data.meta.lists, accounts = (notes.sheet || { accounts: [] }).accounts, actions = notes.actions || [], triggers = notes.triggers || {};
+  const has = into => Object.values(data.meta.own || {}).some(f => f.into === into);
   const accountRows = accounts.map(a => `<tr><td>${esc(ownAccountTitle(lists, a))}</td><td>${esc(ownWhole(a.balance))}</td><td>${esc(ownMoney(ownAccountCost(a).total))} ${esc(SAY.ownAYear)}</td></tr>`).join('');
   const moments = ((lists || {}).trigger || []).map(t => `<tr data-trigger="${esc(t.id)}"><td>${esc(t.text)}</td><td>${triggers[t.id]
     ? `${esc(SAY.ownMarked(triggers[t.id]))} <button type="button" class="linkish" data-trigger-clear="${esc(t.id)}">${esc(SAY.ownMomentClear)}</button>`
     : `<button type="button" class="btn ghost sm" data-trigger-mark="${esc(t.id)}">${esc(SAY.ownMomentMark)}</button>`}</td></tr>`).join('');
   const hasAny = Object.keys(notes).length > 0;
   const remove = state.deleting
-    ? `<div class="vblock" data-own-delete-ask><p>${esc(SAY.ownDeleteAsk)}</p><div class="numacts"><button type="button" class="btn sm" data-own-delete-yes>${esc(SAY.ownDeleteYes)}</button>
+    ? `<div class="vblock" data-own-delete-ask><p>${esc(has('sheet') ? SAY.ownDeleteAsk : SAY.planDeleteAsk)}</p><div class="numacts"><button type="button" class="btn sm" data-own-delete-yes>${esc(SAY.ownDeleteYes)}</button>
         <button type="button" class="btn ghost sm" data-own-delete-no>${esc(SAY.ownDeleteNo)}</button></div></div>`
-    : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(SAY.ownDelete)}</button>`;
-  return `<div class="sect top"><span class="m">${esc(SAY.ownSection)}</span></div><div class="ownsection" data-own="private">
+    : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownDelete : SAY.planDelete)}</button>`;
+  const sheetHtml = has('sheet') ? `<span class="m lab">${esc(SAY.ownAccountsHeading)}</span>
+    ${accounts.length ? `<table class="k results ownsum">${accountRows}</table>` : `<p class="hintline">${esc(SAY.ownNoSheet)}</p>`}` : '';
+  const actionsHtml = has('actions') ? `<span class="m lab">${esc(SAY.ownActionsHeading)}</span>
+    ${actions.length ? ownActionListHtml(actions, subj.id) : `<p class="hintline">${esc(SAY.ownNoActions)}</p>`}` : '';
+  return `<div class="sect top"><span class="m">${esc(has('sheet') ? SAY.ownSection : SAY.planSection)}</span></div><div class="ownsection" data-own="private">
     <p class="hintline">${esc(SAY.ownOnPhone)}</p>
-    <span class="m lab">${esc(SAY.ownAccountsHeading)}</span>
-    ${accounts.length ? `<table class="k results ownsum">${accountRows}</table>` : `<p class="hintline">${esc(SAY.ownNoSheet)}</p>`}
-    <span class="m lab">${esc(SAY.ownActionsHeading)}</span>
-    ${actions.length ? ownActionListHtml(actions, subj.id) : `<p class="hintline">${esc(SAY.ownNoActions)}</p>`}
+    ${sheetHtml}${actionsHtml}${planSectionHtml(data, notes)}
     ${moments ? `<span class="m lab">${esc(SAY.ownMomentsHeading)}</span><table class="k results ownsum">${moments}</table>` : ''}
-    <div class="numacts"><button type="button" class="btn ghost sm" data-own-export ${hasAny ? '' : 'disabled'}>${esc(SAY.ownExport)}</button></div>
+    <div class="numacts"><button type="button" class="btn ghost sm" data-own-export ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownExport : SAY.planExport)}</button></div>
     ${state.deleted ? `<p class="hintline" role="status">${esc(SAY.ownDeleted)}</p>` : ''}${remove}</div>`;
 }

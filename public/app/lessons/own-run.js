@@ -30,6 +30,9 @@ const without = (list, at) => list.filter((_, i) => i !== at);
 /* ---------- the step ---------- */
 function paintOwn(step){
   const { subj, data, lesson } = LESSON;
+  const into = ownFormOf(data, step.own).into;
+  if(into === 'plan') return paintPlanStep(step);
+  if(into === 'setup') return paintSetupStep(step);
   if(lesson.trigger && !triggersOf(subj.id)[lesson.trigger]) return paintOwnWait();
   const form = ownFormOf(data, step.own), accounts = sheetAccounts(subj.id);
   OWN = { step, phase: accounts.length ? 'costs' : 'sheet', drafts: accounts.length ? ownDraftsFromSheet(form, accounts) : [ownEmptyAccount(form)], problems: [], action: { draft: {}, problems: [] } };
@@ -159,4 +162,5 @@ function wireOwnSection(subj){
   on('[data-trigger-mark]', el => { markTrigger(subj.id, el.dataset.triggerMark); again({ deleted: false }); });
   on('[data-trigger-clear]', el => { clearTrigger(subj.id, el.dataset.triggerClear); again({ deleted: false }); });
   wireActionRows(subj, () => again({ deleted: false }));
+  wireSetupRows(subj, () => again({ deleted: false }));
 }

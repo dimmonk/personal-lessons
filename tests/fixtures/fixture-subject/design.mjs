@@ -83,11 +83,24 @@ export const ACCOUNT_DESIGN = {
   pilot: 'l1',
   tried: { pilot: { date: '2026-10-11', words: 'Clear on a phone.' } }
 };
-export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN, account: ACCOUNT_DESIGN };
+export const PRESSURE_DESIGN = {
+  subject: 'pressure',
+  kinds: ['judging', 'habit'],
+  endResult: 'Decide what to do with a message that wants something, even while the clock runs and the other side pushes.',
+  realMoment: 'A text, a call or a banner arrives while you are busy.',
+  test: 'Four new messages and calls: pick what you do with each; no scam acted on and at most one real message mishandled.',
+  practice: 'Decide on messages in the form they arrive in, with a clock, a call that pushes back, and feedback after each answer.',
+  approved: { endResult: '2026-10-11', practice: '2026-10-11', pilot: '2026-10-11' },
+  parts: [{ id: '1', title: 'Act, check or leave' }],
+  pilot: 'l1',
+  tried: { pilot: { date: '2026-10-11', words: 'Clear on a phone.' } }
+};
+export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN, account: ACCOUNT_DESIGN, pressure: PRESSURE_DESIGN };
 // the files of the test subjects, in load order, relative to this folder
 export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 'items-timing.js', 'l1.lesson.js', 'l2.lesson.js',
   'chorus-subject.js', 'chorus-l1.lesson.js', 'chorus-l2.lesson.js', 'till-subject.js', 'till-items.js', 'till-l1.lesson.js',
   'ledger-subject.js', 'ledger-items.js', 'ledger-l1.lesson.js', 'feed-subject.js', 'feed-items.js', 'feed-l1.lesson.js',
-  'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js', 'account-subject.js', 'account-items.js', 'account-l1.lesson.js'];
+  'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js', 'account-subject.js', 'account-items.js', 'account-l1.lesson.js',
+  'pressure-subject.js', 'pressure-items.js', 'pressure-l0.lesson.js', 'pressure-l1.lesson.js'];
 // the ids of the test subjects, in the order they load
-export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account'];
+export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure'];

@@ -4,20 +4,28 @@
 // in a lesson, the end check, the weekly review and a retest all run through here; the caller says what to do with the result.
 // Nothing advances by itself: the learner taps Next.
 //
-// Q: { subj, data, list: [instance], at, cur: { a, many, done, score }, log, context, feedback: 'after-each' | 'at-end',
-//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic }
+// Q: { subj, data, list: [instance], at, cur: { a, many, done, score, left, taps, arrived, timedOut }, log, context, feedback: 'after-each' | 'at-end',
+//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt }
+// A timed group or check (`seconds`, 26.2) gives each question that many seconds, counted on the frame clock (timer-run.js); at zero the question
+// stops with a timeout and waits for Next. A call or chat that pushes back is not timed. In a busy group (`over: 'busy'`) the banner of a question
+// arrives after the learner has sorted BUSY_TAPS_BEFORE things of the busy task, and the countdown starts then.
 // log entry: { inst, a, r, ok, first, unscored }
 // A sung question (26.1.1) is answered by the sing controller (sing-run.js), which calls answerAsk when a try is scored. A warm-up is
 // unscored: it is not stored, not counted, and never comes back. `keepMic` leaves the microphone on when this run ends (the range
 // exercise that opens a sung run).
 
 let Q = null;
-// typed: what is in the boxes of each typed number; looked: the typed numbers whose "disagree" line has been shown; calc: the calculator
-const freshCur = () => ({ a: {}, many: {}, done: false, score: null, typed: {}, looked: {}, calc: { open: false, st: CALC_START } });
+// typed: what is in the boxes of each typed number; looked: the typed numbers whose "disagree" line has been shown; calc: the calculator;
+// left: the seconds left of a timed question (null when it is not timed); taps and arrived: the busy task and whether the banner is there
+const freshCur = left => ({ a: {}, many: {}, done: false, score: null, typed: {}, looked: {}, calc: { open: false, st: CALC_START }, left, taps: 0, arrived: false, timedOut: false });
+// the seconds a question has: the group's, unless it is a live call or chat (those are not timed)
+const questionSeconds = inst => Q.seconds && inst && !inst.item.asks.some(a => a.kind === 'exchange') ? Q.seconds : null;
 
 function startQueue(opts){
   singReset();
-  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, ...opts, at: 0, cur: freshCur(), log: [], firstTotal: opts.list.length };
+  timerStop();
+  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, seconds: null, over: null, ...opts, at: 0, log: [], firstTotal: opts.list.length, busyAt: 0 };
+  Q.cur = freshCur(questionSeconds(Q.list[0]));
   paintQueue();
 }
 const queueItem = () => Q.list[Q.at];
@@ -32,18 +40,21 @@ function questionLabel(inst){
 
 function paintQueue(){
   if(Q.at >= Q.list.length){
+    timerStop();
     if(!Q.keepMic) stopAudio();
     return Q.onDone(Q.log);
   }
-  const inst = queueItem(), cur = Q.cur, sung = isSung(inst);
+  const inst = queueItem(), cur = Q.cur, sung = isSung(inst), busy = Q.over === 'busy', waiting = busy && !cur.arrived;
   const marks = cur.done && Q.feedback === 'after-each';
-  const body = itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done) : null,
+  const body = waiting ? '' : itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, done: cur.done, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done) : null,
     typed: cur.typed, looked: cur.looked, calc: cur.calc,
     feedback: marks ? feedbackHtml(Q.data, inst, Q.support, cur.a, cur.score) : '' });
+  const clock = cur.left === null || waiting ? '' : cur.done ? (cur.timedOut ? `<p class="timerup" data-timer-up>${esc(SAY.timerUp)}</p>` : '') : timerHtml(cur.left, Q.seconds);
+  const task = busy ? busyHtml(Q.busyAt, cur.taps, cur.arrived) : '';
   const last = Q.at === Q.list.length - 1;
   const actions = `<div class="actbar"><button class="btn neutral" id="qNext" ${cur.done ? '' : 'disabled'}>${last ? SAY.finish : SAY.next}${icon('arrow')}</button>
-    ${cur.done ? '' : `<p class="hint">${esc(sung ? SAY.singToGoOn : SAY.answerToGoOn)}</p>`}</div>`;
-  Q.shell(`<p class="m qlabel">${esc(questionLabel(inst))}</p>${body}`, actions);
+    ${cur.done ? '' : `<p class="hint">${esc(sung ? SAY.singToGoOn : waiting ? SAY.busyWait : SAY.answerToGoOn)}</p>`}</div>`;
+  Q.shell(`<p class="m qlabel">${esc(questionLabel(inst))}</p>${clock}${body}${task}`, actions);
   on('[data-opt]', el => pickOption(el.closest('[data-ask]').dataset.ask, el.dataset.opt));
   on('[data-answer]', el => commitMany(el.dataset.answer));
   on('#qNext', nextQuestion);
@@ -51,7 +62,11 @@ function paintQueue(){
   wireForm();
   wireTap();
   wireText();
+  wireExchange();
+  wireOrder();
+  wireBusy();
   if(sung) wireSing(inst, cur.done);
+  timerEnsure();
 }
 
 // the ask a tap belongs to, if it is open and not yet answered
@@ -85,21 +100,33 @@ function redoOf(inst){
   return { ...instanceOf(Q.data, inst.ref, seed), redo: true };
 }
 function finishItem(){
-  const inst = queueItem(), score = scoreItem(Q.data, inst.item, Q.support, Q.cur.a), owner = Q.owner(inst), unscored = !!inst.item.unscored;
+  const inst = queueItem();
+  settle(inst, scoreItem(Q.data, inst.item, Q.support, Q.cur.a), false);
+}
+// the time ran out: whatever is not answered is a timeout (a miss that is not a slip), and the question waits for Next
+function timeoutItem(){
+  if(!Q || Q.cur.done) return;
+  const inst = queueItem(), score = scoreItem(Q.data, inst.item, Q.support, Q.cur.a);
+  const open = openAsks(inst.item, Q.support, Q.cur.a).filter(a => !(a.id in Q.cur.a));
+  settle(inst, { r: { ...score.r, ...Object.fromEntries(open.map(a => [a.id, 'timeout'])) }, ok: false }, true);
+}
+function settle(inst, score, timedOut){
+  timerStop();
+  const owner = Q.owner(inst), unscored = !!inst.item.unscored, timed = Q.cur.left !== null;
   if(!unscored) recordTry(Q.subj.id, inst.key, { run: Q.run, lesson: owner.lesson, rev: owner.rev, context: Q.context, sup: supportWeight(Q.support) > 0,
-    seed: inst.seed, a: Q.cur.a, r: score.r, ok: score.ok });
+    seed: inst.seed, a: Q.cur.a, r: score.r, ok: score.ok, ...(timed ? { ms: Math.round((Q.seconds - Q.cur.left) * 1000) } : {}) });
   Q.log = [...Q.log, { inst, a: Q.cur.a, r: score.r, ok: score.ok, first: !inst.redo, unscored }];
   if(Q.redo && !score.ok && !unscored){
     const at = Math.min(Q.at + 4, Q.list.length);
     Q.list = [...Q.list.slice(0, at), redoOf(inst), ...Q.list.slice(at)];
   }
-  Q.cur = { ...Q.cur, done: true, score };
+  Q.cur = { ...Q.cur, done: true, score, timedOut };
   paintQueue();
   focusOn(Q.feedback === 'after-each' ? '[data-feedback]' : '.qlabel');
 }
 function nextQuestion(){
   if(!Q.cur.done) return;
-  Q = { ...Q, at: Q.at + 1, cur: { ...freshCur(), calc: { open: Q.cur.calc.open, st: CALC_START } } };
+  Q = { ...Q, at: Q.at + 1, cur: { ...freshCur(questionSeconds(Q.list[Q.at + 1])), calc: { open: Q.cur.calc.open, st: CALC_START } } };
   paintQueue();
   window.scrollTo(0, 0);
   focusOn('.qlabel');

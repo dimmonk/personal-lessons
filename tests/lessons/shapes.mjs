@@ -14,14 +14,16 @@ const MIX_ENTRY = either(obj({ facet: str, value: str }, { min: num, max: num })
 // A field of a private form (26.3). A choice reads its words from one of the subject's lists. `warn` is the plausible range: a number over
 // `over` or under `under` is kept and the learner is told why it looks wrong.
 const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text', 'date') },
-  { list: str, unit: str, optional: bool, warn: obj({ text: text }, { over: num, under: num }) });
+  { list: str, unit: str, hint: str, optional: bool, warn: obj({ text: text }, { over: num, under: num }) });
 const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }) });
 export const SUBJECT = obj(
   { id: str, name: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
     strands: arr(idTitle(), { empty: true }), readingShare: num },
   { rules: map(obj({ name: str, needs: arr(idText) }, { heading: str })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
-    refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool });
+    refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool,
+    // the slip that is the failure, the facet the questions are sorted by, and which of its values is the risky one and which is the real one (V82)
+    danger: obj({ slip: str, facet: str, risky: str, real: str }) });
 function idTitle() { return obj({ id: str, title: str }); }
 
 /* blocks (26.1.2): prose, pair, document, figure, article, chart, panel and message so far */
@@ -56,15 +58,23 @@ export const LABEL_SIDES = ['left', 'right'];
 export const LABEL = obj({ text: str, by: str, side: en(...LABEL_SIDES) });
 export const ARTICLE = obj({ kind: en('article'), form: en(...ARTICLE_FORMS), source: str, lines: arr(SEGMENT) }, { id: str, headline: SEGMENT, label: LABEL });
 // a message as it arrives (message-view.js): a friend's message about someone, a thread you are in, your own note
-export const MESSAGE_FORMS = ['friend', 'thread', 'note'];
-export const MESSAGE = obj({ kind: en('message'), form: en(...MESSAGE_FORMS), from: str, detail: str, lines: arr(SEGMENT) }, { id: str });
+// (sms, email, popup, chat, call and banner are the forms of a phone: a text, an email with its subject, a pop-up with its button, a chat, an incoming
+// call and a banner over another task; a link is words drawn like a link, never one that can be followed)
+export const MESSAGE_FORMS = ['friend', 'thread', 'note', 'sms', 'email', 'popup', 'chat', 'call', 'banner'];
+export const MESSAGE = obj({ kind: en('message'), form: en(...MESSAGE_FORMS), from: str, detail: str, lines: arr(SEGMENT) }, { id: str, subject: str, link: str });
 // what a label needs, printed from the subject's `rules` (panel.js): the rules it names
 export const PANEL = obj({ kind: en('panel'), rules: arr(str) });
 // a chart drawn from its data (chart.js): bars or a line, an axis that may start above zero, one or two series
 export const CHART = obj({ kind: en('chart'), type: en('bars', 'line'), title: str, x: arr(str), y: obj({ from: num, to: num, step: num }, { unit: str }),
   series: arr(obj({ values: arr(num) }, { name: str })), source: str }, { labels: bool });
 
-/* asks (26.1): choose, number, form, tap and text so far */
+/* asks (26.1): choose, number, form, tap, text, exchange and order */
+// a call or chat that branches on the learner's reply (exchange.js): turns, each with what the other side says and the replies to pick, and the ends
+export const EXCHANGE_OPTION = either(obj({ id: str, text: str, goto: str }), obj({ id: str, text: str, end: str }));
+export const EXCHANGE = obj({ id: str, kind: en('exchange'), prompt: text, form: en('call', 'chat'), from: str, detail: str, start: str,
+  turns: map(obj({ lines: arr(SEGMENT), options: arr(EXCHANGE_OPTION) }, { push: text })), ends: map(obj({ ok: bool, then: text }, { slip: str })) }, { when: obj({ ask: str, is: arr(str) }) });
+// steps to put in order (order.js)
+export const ORDER = obj({ id: str, kind: en('order'), prompt: text, steps: arr(obj({ id: str, text: str })), right: arr(str), then: text }, { scored: en('whole', 'first'), when: obj({ ask: str, is: arr(str) }) });
 const OPTION = obj({ id: str, text: str }, { ok: bool, slip: str, then: text, value: str });
 export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
   { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), many: bool, when: obj({ ask: str, is: arr(str) }),
@@ -104,7 +114,7 @@ const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffl
   { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });
 const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
 const CHECK = obj({ items: either(arr(REF), obj({ draw: obj({ strands: arr(str), n: int }) })), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
-  { spoken: bool, seconds: int, retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
+  { spoken: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds
 export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str }) };
 export const stepKind = step => Object.keys(STEPS).find(k => step && typeof step === 'object' && k in step);
