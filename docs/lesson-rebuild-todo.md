@@ -49,4 +49,5 @@ built, not one subject. From now on every subject goes through the `build-subjec
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
 - [ ] **Try Math's pilot on your phone**: Library → Basic Math → Ballpark and check; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
+- [ ] **Try Basic Math's pilot on your phone**: Library → Basic Math → Ballpark and check; a line on how it went unlocks Math's other six lessons
 - [ ] **Try Singing's pilot on your phone**: Library → Singing → Match a note; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
