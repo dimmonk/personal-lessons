@@ -13,7 +13,8 @@ const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', '
   'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels',
   'start', 'scored', 'danger']);
 // block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own
-// (what the other side of an exchange says is quoted too: the lines of a turn, not the replies the learner can pick or the app's words about it)
+// (what the other side of an exchange says is quoted too: the lines of a turn, not the replies the learner can pick or the app's words about it;
+// so are the answers a published list accepts, which are the list's own words)
 const QUOTING = ['message', 'article', 'document', 'chart', 'figure', 'spoken'];
 
 // [{ where, text, quoted }] for every string of a value a learner reads
@@ -23,7 +24,7 @@ function learnerStrings(value, where, quoted = false, out = []) {
   else if (value && typeof value === 'object') {
     const isQuote = quoted || QUOTING.includes(value.kind);
     // `model` is an item id in a step that shows a sample of the learner's own data, and the line to compare with in a text ask
-    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote || (k === 'lines' && 'options' in value), out));
+    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote || (k === 'lines' && 'options' in value) || k === 'accept', out));
   }
   return out;
 }

@@ -247,7 +247,31 @@ two new news stories (R8, R9). Before an entered interview date, the app adds re
 (principle 4).
 
 ## Gates 6 and 7
-Not started. Lesson 1 is the pilot; it needs delivery items 1, 2 and 4 first.
+Gate 6 not passed: the owner has not tried the pilot (`tried.pilot` stays null until they do; V69 keeps every other lesson of this
+subject unbuilt until then). Lesson 1, Who does what, was built on 2026-10-11 (lesson standard 26.10, step 9) and is a draft.
+
+What the build delivered of gate 3's delivery check: item 1 (a typed answer checked against the accepted answers: capitals,
+punctuation, "a/an/the/and", brackets, numbers in words, one small misspelling, parts in any order, "name two"; the claim "my
+answer means the same", logged, counted right in that sitting and still returning); item 2 (the question spoken, only on a tap and
+only with a voice on the phone; the words shown, or behind "Show the words" in the mock interview; the words shown when the phone
+has no voice); item 4 (a record that brings each question back as itself on the schedule, with rounds a week apart in the six weeks
+before the interview date); item 5 (the form for the eight answers that vary and the interview date, with the link to
+uscis.gov/citizenship/testupdates and a line when they are old); item 7 (the mock interview as a drawn check read aloud: 20 of the
+128, no answer until the end, tested on a test subject, not yet a lesson). Not built: item 3 (speech recognition: the browser's
+sends the voice to a server, or is missing in an installed phone app, and nothing may be sent; the learner says the answer out
+loud, then types it) and item 6 (the news story with three taps: lessons 2, 5 and 6).
+
+The questions of lesson 1 are the 17 of part 1 (Q15 to 20, 40 to 47, 50 to 52), in the wording and with the accepted answers of
+USCIS form M-1778 (09/25), "128 Civics Questions and Answers (2025 version)":
+https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf, looked
+up on 2026-10-11 (the subject record's `refs` hold the link and the day; `tests/fixtures/uscis-m1778-lesson1.json` holds the 17 as
+the list prints them, read from the PDF's own text by a script, and `tests/civics-pure.mjs` holds the app's questions to it, word
+for word). The page that posts the answers that change, uscis.gov/citizenship/testupdates, is a second ref.
+
+As built, lesson 1 differs from gate 5 in these ways: four groups (3, 3, 8 and 3 questions: the branches, Congress, the president,
+the courts) with a break between, not one run of 17; the map is a table of who does what; the check asks the same 17 again in mixed
+order with no answer until the end, 16 to pass (9 in 10 of 17), and V72 now lets a check ask a lesson's own questions again when it
+says so (`recall`), since a fact is recalled, not found anew.
 
 ## Audit of the existing lessons (2026-10-10)
 Read after gates 1 to 5 were written: `public/subjects/civics/*.js` (units, cards, cases, key, specimens) and

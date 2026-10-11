@@ -33,6 +33,7 @@ function paintOwn(step){
   const into = ownFormOf(data, step.own).into;
   if(into === 'plan') return paintPlanStep(step);
   if(into === 'setup') return paintSetupStep(step);
+  if(into === 'answers') return paintAnswersStep(step);
   if(lesson.trigger && !triggersOf(subj.id)[lesson.trigger]) return paintOwnWait();
   const form = ownFormOf(data, step.own), accounts = sheetAccounts(subj.id);
   OWN = { step, phase: accounts.length ? 'costs' : 'sheet', drafts: accounts.length ? ownDraftsFromSheet(form, accounts) : [ownEmptyAccount(form)], problems: [], action: { draft: {}, problems: [] } };
@@ -159,6 +160,7 @@ function wireOwnSection(subj){
   on('[data-own-delete]', () => again({ deleting: true, deleted: false }));
   on('[data-own-delete-no]', () => again({ deleting: false }));
   on('[data-own-delete-yes]', () => { localStorage.removeItem(`pl:${subj.id}:notes`); again({ deleting: false, deleted: true }); });
+  on('[data-answers-edit]', () => go('answers'));
   on('[data-trigger-mark]', el => { markTrigger(subj.id, el.dataset.triggerMark); again({ deleted: false }); });
   on('[data-trigger-clear]', el => { clearTrigger(subj.id, el.dataset.triggerClear); again({ deleted: false }); });
   wireActionRows(subj, () => again({ deleted: false }));

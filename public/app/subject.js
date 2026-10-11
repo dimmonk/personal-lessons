@@ -141,6 +141,12 @@ function comingBackRows(subj){
   const retests = retestDays(data, subj.id).map(r => [`Second check: ${r.lesson.title}`, dayWords(r.due)]);
   return [...strands, ...retests];
 }
+// the answers the learner counted right on their own word ("my answer means the same", 26.3), each with the day: they still come back
+function claimedRows(subj){
+  const data = dataOf(subj);
+  return allTries(subj.id).filter(({ t }) => triesClaimed(t) && t.context !== 'baseline').map(({ key, t }) => ({ def: definitionOf(data, key), t })).filter(x => x.def)
+    .map(({ def, t }) => [recallQuestionText(def), shortDay(t.d)]);
+}
 // what the baseline found, in the one line it showed at the end, on the day it was taken
 function baselineSection(subj){
   const data = dataOf(subj);
@@ -161,6 +167,7 @@ function renderResults(subj){
     ${section('Right the first time, by lesson', perLesson)}
     ${section('Right the first time, side by side', facetRows(subj, rows))}
     ${section('Slips made most', slipRows(subj, rows))}
+    ${claimedRows(subj).length ? section(SAY.claimedHeading, claimedRows(subj)) : ''}
     ${baselineSection(subj)}
     ${section('Checks', checkRows(subj))}
     ${section('What comes back, and when', comingBackRows(subj))}

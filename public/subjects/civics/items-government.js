@@ -1,0 +1,62 @@
+// Civics, lesson 1: Who does what (part 1). The 17 questions about the three branches of the federal government, in the wording and with the accepted
+// answers of the 2025 civics test (USCIS form M-1778, 09/25, looked up 2026-10-11: the subject record's refs), numbered as the list numbers them.
+// Each is read aloud and answered from memory, and each is a topic of its own, so it comes back in the review as itself. The line under each is
+// what the answer means, in plain words. Checked against the list by tests/civics-pure.mjs.
+(() => {
+  const SAY_IT = "Say your answer out loud, then type it.";
+  const question = (n, words, accept, reason) => ({ id: "q" + n, strand: "q" + n, facets: {}, blocks: [{ kind: "spoken", text: words }],
+    asks: [{ id: "say", kind: "text", prompt: SAY_IT, accept }], reason });
+  FC.items("civics", [
+    question(15, "There are three branches of government. Why?",
+      ["So one part does not become too powerful", "Checks and balances", "Separation of powers"],
+      "Each branch has its own job and can stop the others, so no one part can take over."),
+    question(16, "Name the three branches of government.",
+      [{ text: "Legislative, executive, and judicial", parts: ["Legislative","executive","judicial"] }, { text: "Congress, president, and the courts", parts: ["Congress","president","the courts"] }],
+      "Congress makes the laws. The president carries them out. The courts decide what the laws mean."),
+    question(17, "The President of the United States is in charge of which branch of government?",
+      ["Executive branch"],
+      "The president leads the executive branch, the part that carries out the laws."),
+    question(18, "What part of the federal government writes laws?",
+      ["(U.S.) Congress", "(U.S. or national) legislature", "Legislative branch"],
+      "Congress writes the laws. It is also called the legislative branch."),
+    question(19, "What are the two parts of the U.S. Congress?",
+      [{ text: "Senate and House (of Representatives)", parts: ["Senate","House (of Representatives)"] }],
+      "Congress has two houses. Both have to pass a bill before it can become a law."),
+    question(20, "Name one power of the U.S. Congress.",
+      ["Writes laws", "Declares war", "Makes the federal budget"],
+      "Congress can write laws, declare war, and make the federal budget."),
+    question(40, "If the president can no longer serve, who becomes president?",
+      ["The Vice President (of the United States)"],
+      "The vice president takes over if the president can no longer serve."),
+    question(41, "Name one power of the president.",
+      ["Signs bills into law", "Vetoes bills", "Enforces laws", "Commander in Chief (of the military)", "Chief diplomat", "Appoints federal judges"],
+      "The president signs or vetoes bills, carries out the laws, leads the military, deals with other countries, and chooses federal judges."),
+    question(42, "Who is Commander in Chief of the U.S. military?",
+      ["The President (of the United States)"],
+      "The president leads the military, so the president is its commander in chief."),
+    question(43, "Who signs bills to become laws?",
+      ["The President (of the United States)"],
+      "Congress passes a bill. It becomes a law when the president signs it."),
+    question(44, "Who vetoes bills?",
+      ["The President (of the United States)"],
+      "A veto is the president refusing to sign a bill that Congress passed."),
+    question(45, "Who appoints federal judges?",
+      ["The President (of the United States)"],
+      "The president chooses federal judges. The Senate has to approve them."),
+    question(46, "The executive branch has many parts. Name one.",
+      ["President (of the United States)", "Cabinet", "Federal departments and agencies"],
+      "The executive branch is the president, the Cabinet, and the federal departments and agencies that carry out the laws."),
+    question(47, "What does the President’s Cabinet do?",
+      ["Advises the President (of the United States)"],
+      "The Cabinet is the heads of the federal departments and a few other top officials. They advise the president."),
+    question(50, "What is one part of the judicial branch?",
+      ["Supreme Court", "Federal Courts"],
+      "The judicial branch is the Supreme Court and the other federal courts."),
+    question(51, "What does the judicial branch do?",
+      ["Reviews laws", "Explains laws", "Resolves disputes (disagreements) about the law", "Decides if a law goes against the (U.S.) Constitution"],
+      "The courts explain what laws mean, settle disagreements about the law, and decide whether a law goes against the Constitution."),
+    question(52, "What is the highest court in the United States?",
+      ["Supreme Court"],
+      "The Supreme Court is the highest court. What it decides about a law is the last word.")
+  ]);
+})();

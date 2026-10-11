@@ -128,17 +128,18 @@ function runQuestions(part, block){
 function runRetest(part, block){
   const run = newRunId(), lesson = block.lesson;
   startQueue({ subj: part.subj, data: part.data, list: retestInstances(part.data, part.subj.id, lesson, run), run, context: 'retest', feedback: lesson.check.feedback, support: null, redo: false,
-    owner: () => ({ lesson: lesson.id, rev: lesson.rev }), shell: reviewShell, onDone: log => paintRetestResult(part, lesson, log) });
+    spoken: !!lesson.check.spoken, owner: () => ({ lesson: lesson.id, rev: lesson.rev }), shell: reviewShell, onDone: log => paintRetestResult(part, lesson, log, run) });
 }
-function paintRetestResult(part, lesson, log){
-  const result = checkResult(part.data, lesson.check.pass, queueOutcomes(log)), T = REVIEW_TEXT;
+function paintRetestResult(part, lesson, log, run, counted = false){
+  const scrolled = window.scrollY, result = checkResult(part.data, lesson.check.pass, queueOutcomes(log)), T = REVIEW_TEXT;
   const rows = result.lines.map(l => `<tr><td>${esc(l.text)}</td><td>${esc(l.met ? SAY.ruleMet : SAY.ruleNotMet)}</td></tr>`).join('');
   const each = lesson.check.feedback === 'at-end' ? `<div class="vblock"><span class="m">${esc(SAY.checkEveryAnswer)}</span></div>${checkAnswersHtml(part.data, log)}` : '';
   reviewShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total) : SAY.checkNotYet(result.right, result.total))}</h2>
-    <p>${esc(T.retestResult(lesson.title))}</p><table class="k results">${rows}</table>${splitsHtml(facetSplits(part.data, queueOutcomes(log)))}</div>${each}`, nextAction(SAY.goOn));
+    <p>${esc(T.retestResult(lesson.title))}</p><table class="k results">${rows}</table>${splitsHtml(facetSplits(part.data, queueOutcomes(log)))}${claimedListHtml(part.data, log)}</div>${each}`, nextAction(SAY.goOn));
+  wireClaims((at, askId) => paintRetestResult(part, lesson, claimInLog(part.subj.id, run, log, at, askId), run, true));
   on('#fwd', () => nextBlock({ kind: 'retest', lesson, result }));
-  window.scrollTo(0, 0);
-  focusScreenHead();
+  window.scrollTo(0, counted ? scrolled : 0);
+  if(!counted) focusScreenHead();
 }
 function nextBlock(result){
   const upcoming = REVIEW.parts[REVIEW.at].blocks[REVIEW.block + 1];

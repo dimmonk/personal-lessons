@@ -40,7 +40,11 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'MESSAGE_LINK_FORMS', 'MESSAGE_YOURS', 'checkContext',
   'documentTabsHtml', 'blockPieces', 'blocksHtml', 'refHtml', 'DOC_TAB', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownDigitRun', 'ownValidDay', 'ownFieldProblem', 'ownRecord', 'ownSheetFromDraft',
   'ownDraftsFromSheet', 'ownHoldingDollars', 'ownAccountCost', 'ownSheetCost', 'ownSheetBalance', 'ownBalanceGaps', 'ownWarnings', 'ownDraftWarnings', 'ownActionFromDraft',
-  'ownMarkDone', 'ownCalendarFile', 'ownCalendarName', 'ownMoney', 'sheetEditorHtml', 'ownCostsHtml', 'ownCostDocument', 'ownSectionHtml', 'parseTyped'];
+  'ownMarkDone', 'ownCalendarFile', 'ownCalendarName', 'ownMoney', 'sheetEditorHtml', 'ownCostsHtml', 'ownCostDocument', 'ownSectionHtml', 'parseTyped',
+  // answers from memory, the question read aloud, a claim, the learner's own answers and the interview date
+  'recallTokens', 'recallVariants', 'recallMatch', 'scoreRecall', 'recallGiven', 'recallWithOwn', 'recallOwnEntries', 'recallDefReady', 'recallProblems', 'recallEntryText',
+  'isRecallAsk', 'recallListHtml', 'recallMarkHtml', 'recallClaimHtml', 'recallQuestionText', 'factHtml', 'spokenHtml', 'speechPick', 'claimTry', 'triesClaimed', 'claimedResults', 'resultOk',
+  'interviewDay', 'roundDays', 'logOf', 'answersSectionHtml', 'answersFormHtml', 'answersFormOf', 'ANSWERS_PAGE'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {

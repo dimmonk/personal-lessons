@@ -34,7 +34,8 @@ function pairHtml(block, ctx){
     <p class="compare"><span class="m lab">${esc(SAY.compare)}</span>${esc(paras(block.compare).join(' '))}</p></div>`;
 }
 const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block),
-  ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx), message: (block, ctx) => messageHtml(block, ctx) };
+  ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx), message: (block, ctx) => messageHtml(block, ctx),
+  spoken: (block, ctx) => spokenHtml(block, ctx) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
@@ -70,19 +71,20 @@ function tapHtml(data, ask, st){
     <span class="forline">${esc(n > 1 ? SAY.tapMany(n) : SAY.tapOne)}</span>${none ? `<div class="opts">${none}</div>` : ''}${submit}</div>`;
 }
 const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtml(data, ask, st, ctx), form: (data, ask, st, ctx) => formHtml(data, ask, st, ctx), sing: (data, ask, st) => singAskHtml(data, ask, st),
-  tap: (data, ask, st) => tapHtml(data, ask, st), text: (data, ask, st) => writeHtml(data, ask, st),
+  tap: (data, ask, st) => tapHtml(data, ask, st), text: (data, ask, st) => isRecallAsk(ask) ? recallAskHtml(data, ask, st) : writeHtml(data, ask, st),
   exchange: (data, ask, st, ctx) => exchangeHtml(data, ask, st, ctx), order: (data, ask, st, ctx) => orderHtml(data, ask, st, ctx) };
 
 /* ---------- the item ---------- */
 // The item as it stands: its blocks (deciding words marked when `deciding` is on), then the asks open now, then, once
 // `feedback` is given, the feedback. state: { a, many, marks, feedback: html|'' , support, sing, typed, looked, calc }
 // `sing` is the view of a sung question (sing-run.js): the strip and the controls are drawn from it. `typed`, `looked` and `calc` are what
-// is in the boxes of a typed number, whether its "disagree" line has been shown, and the calculator (number-run.js).
+// is in the boxes of a typed number, whether its "disagree" line has been shown, and the calculator (number-run.js). `speech` is what a question
+// read aloud needs to know (speech-run.js).
 function itemHtml(data, inst, state){
   const item = inst.item, support = state.support || null;
   const open = openAsks(item, support, state.a);
   const marked = state.marks || (support && support.shown);
-  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null, data, scope: `${inst.key}|${inst.seed === undefined ? '' : inst.seed}`, tap: tapContext(item, open, state),
+  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null, data, scope: `${inst.key}|${inst.seed === undefined ? '' : inst.seed}`, tap: tapContext(item, open, state), speech: state.speech || null,
     panel: !!(support && support.panel) };
   const steps = shownStepsHtml(item, support);
   const hint = (support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '')
@@ -111,10 +113,14 @@ function shownStepsHtml(item, support){
 /* ---------- feedback ---------- */
 // In this order (26.2): each ask's mark; the deciding words (marked in the blocks by itemHtml); the reason; after a miss, one line on
 // the learner's own choice; then what the item has of: the consequence of the right action, what you would need to see, the working.
-function feedbackHtml(data, inst, support, answers, score){
+// opts: { claim } offers "my answer means the same" under a missed answer from memory (not in a baseline); { at } is the place of the question in
+// the list of answers shown at the end of a run, so the button knows which one it is.
+function feedbackHtml(data, inst, support, answers, score, opts = {}){
   const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in answers || score.r[a.id] === 'timeout');
   const marks = asked.map(a => markHtml(data, a, answers[a.id], score.r[a.id], item, answers)).join('');
-  const written = asked.some(a => a.kind === 'text') ? `<p class="hintline">${esc(SAY.writeCompare)}</p>` : '';
+  const recalled = asked.filter(isRecallAsk);
+  const accepted = recalled.map(a => recallListHtml(a, answers[a.id]) + (opts.claim ? recallClaimHtml(a, answers[a.id], score.r[a.id], opts.at) : '')).join('');
+  const written = asked.some(a => a.kind === 'text' && !isRecallAsk(a)) ? `<p class="hintline">${esc(SAY.writeCompare)}</p>` : '';
   const misses = asked.filter(a => askIsScored(a) && score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id], item)).join('');
   const pushed = asked.filter(a => a.kind === 'exchange' && a.id in answers).map(a => exchangeReviewHtml(a, answers[a.id])).join('');
   const consequences = asked.filter(a => a.kind === 'choose').flatMap(a => chooseOptions(data, a).filter(o => o.ok && o.then).map(o => o.then));
@@ -122,8 +128,8 @@ function feedbackHtml(data, inst, support, answers, score){
   const redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
-  return `<div class="feedback" data-feedback><div class="marks">${marks}</div>${written}
-    ${block(SAY.whyLabel, paras(item.reason))}${misses}${pushed}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}${working}</div>`;
+  return `<div class="feedback" data-feedback><div class="marks">${marks}</div>${accepted}${written}
+    ${block(SAY.whyLabel, paras(item.reason))}${misses}${pushed}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${factHtml(data, item)}${picture}${redrawn}${working}</div>`;
 }
 // the chart of a question whose axis was cut, drawn again from zero: the same numbers on the scale that does not exaggerate them
 function redrawHtml(item){
@@ -139,7 +145,7 @@ function markHtml(data, ask, answer, result, item, answers){
   if(ask.kind === 'order') return orderMarkHtml(ask, answer, result);
   if(ask.kind === 'number') return numberMarkHtml(ask, answer, result, item, answers);
   if(ask.kind === 'form') return formMarksHtml(data, ask, answer, item);
-  if(ask.kind === 'text') return writeMarkHtml(ask, answer);
+  if(ask.kind === 'text') return isRecallAsk(ask) ? recallMarkHtml(ask, answer, result) : writeMarkHtml(ask, answer);
   if(ask.kind === 'tap') return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? tapRightText(ask, item) : `${SAY.theAnswer}: ${tapRightText(ask, item)}`)}</span></div>`;
   const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text);
   return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;
@@ -153,6 +159,7 @@ function missLine(data, ask, answer, result, item){
   if(ask.kind === 'number') return numberMissHtml(data, ask, answer, result);
   if(ask.kind === 'form') return formMissHtml(data, ask, answer, item);
   if(ask.kind === 'tap') return tapMissHtml(data, ask, answer, item);
+  if(ask.kind === 'text') return '';
   const options = chooseOptions(data, ask), chosen = asList(answer).map(id => options.find(o => o.id === id)).filter(o => o && !o.ok);
   const lines = chosen.map(o => `<p><b>${esc(SAY.youChose)}: ${esc(o.text)}.</b> ${esc(o.then ? paras(o.then).join(' ') : o.slip ? SAY.slipLine(slipText(data, o.slip)) : '')}</p>`);
   return lines.length ? `<div class="vblock">${lines.join('')}</div>` : '';

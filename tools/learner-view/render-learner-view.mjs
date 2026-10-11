@@ -8,6 +8,8 @@ import { loadAll } from './load.mjs';
 const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
 const quote = lines => lines.map(l => `> ${l}`).join('\n');
 const SAYWORDS = { redraw: 'The same chart, drawn from zero' };
+// what has been described in full once in this lesson, so a lesson of many questions of one kind says it once
+let SEEN = new Set();
 
 /* ---------- blocks ---------- */
 const cellText = cell => String(cell);
@@ -47,6 +49,11 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
     return [`A panel, "${own || 'What the label needs'}":`, ...block.rules.flatMap(id => [...(own ? [] : [`- ${extra.rules[id].name}`]), ...extra.rules[id].needs.map((n, i) => `  ${i + 1}. ${n.text}`)])];
   }
   if (block.kind === 'message') return messageLines(block, deciding);
+  if (block.kind === 'spoken') {
+    const first = !SEEN.has('spoken'); SEEN.add('spoken');
+    return [first ? `A question the phone reads aloud, never by itself: a button "Hear the question" (then "Hear it again") reads it with a voice on the phone when the learner taps, and once they have tapped the next question in the run is read when they tap Next. A phone with no voice of its own shows the words and says so. Its words: **${block.text}**${block.show === false ? ' (held back behind "Show the words")' : ''}`
+      : `The question, read aloud as above: **${block.text}**${block.show === false ? ' (held back behind "Show the words")' : ''}`];
+  }
   if (block.kind === 'document') {
     const tab = block.tab ? ` (a tab named "${block.tab}", one of a household's papers: one open at a time, the first at the start, and the one with a marked line after the answer)` : '';
     return [`${formName(block.form)}, "${block.title}"${tab}:`, '', ...(block.head ? [`> ${block.head.join('  |  ')}  (the column heads)`] : []),
@@ -125,9 +132,24 @@ function tapAskLines(e, data, ask, marks, item) {
 // a line to write against a model: never scored; the model is shown after, beside what was written
 function textAskLines(e, ask, marks) {
   const { SAY } = e;
+  if (ask.accept) return recallAskLines(e, ask, marks);
   return [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
     `- ${SAY.writeHint} Nothing is marked: it is not scored. "${SAY.writeNotYet}" answers with nothing written. ${SAY.writePrivate} At most ${e.TEXT_MAX} characters.`,
     ...(marks ? [`- After: "${SAY.writeYours}" (what was written, or "${SAY.writeNone}") beside "${SAY.writeModel}": ${paras(ask.model).join(' ')} ${SAY.writeCompare}`] : [])];
+}
+// an answer from memory: one box, typed after saying it out loud, checked against the answers the list accepts (recall.js); every accepted answer, the one given
+// marked, and the claim "my answer means the same" after a miss are the feedback
+function recallAskLines(e, ask, marks) {
+  const { SAY } = e, own = !Array.isArray(ask.accept), need = own ? 1 : e.recallNeed(ask);
+  const how = 'What counts as the same: capital letters, punctuation, "a", "an", "the" and "and" do not matter; a number in words is the number ("twenty-seven" is 27); words in brackets are optional; one small misspelling in the whole answer is forgiven (a word that is one letter off, in words of four letters or more); parts of an answer said in any order. A word left out or added, or another word, is a miss.';
+  const first = !SEEN.has('recall'); SEEN.add('recall');
+  const lines = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
+    ...(first ? [`- One box and "${SAY.answerBtn}" (shut until something is typed; Enter sends it), and "${SAY.recallNotYet}", which answers with nothing and shows the answers. "${SAY.recallHint}" Nothing is marked before the answer.`,
+      `- ${how}`, `- After: the mark (${SAY.markRight}, ${SAY.markNo}, or "${SAY.recallNotYet}") with "${SAY.recallSaid}: …", then the accepted answers, every one, the one given marked "${SAY.recallGave}" (and "${SAY.recallBrackets}" when some words are in brackets). After a miss with something typed: "${SAY.recallClaimLine}" with the button "${SAY.recallClaim}". It counts right in that sitting (shown as "${SAY.markClaimed}"), is logged and listed under the result and in the results, and is not a good day for the schedule, so the question comes back.`]
+      : ['- The same box, checking and feedback as above.']),
+    ...(need > 1 ? [`- The question wants ${need} different accepted answers ("${SAY.recallMany(need)}"): more is fine, the same one twice is counted once.`] : [])];
+  if (own) return [...lines, `- It reads the answer the learner entered (${ask.accept.own}); two answers entered with a semicolon between are two accepted answers, listed after under "${SAY.recallYours}". It is asked only once they have entered it.`];
+  return [...lines, ...(marks ? [`- The accepted answers shown after (${SAY.recallAccepted}):`, ...ask.accept.map(a => `  - ${e.recallEntryText(a)}${typeof a === 'string' ? '' : ` (said in parts, any order: ${a.parts.join(' / ')})`}`)] : [])];
 }
 // a call or chat that pushes back: every turn once, in the order a learner meets them, with the replies and where each leads
 function exchangeAskLines(e, data, ask, marks) {
@@ -174,6 +196,7 @@ function questionLines(e, data, inst, support, label) {
   e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true, item), ''));
   lines.push(`After the answer: the deciding words are marked${(item.deciding || []).length ? '' : ' (none named)'}. Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
+  if (item.fact) { const f = data.subjects.__current.items[item.fact], a = f.asks.find(x => x.accept); lines.push(`${e.SAY.factHeading}: ${f.blocks.find(b => b.kind === 'spoken').text} Accepted: ${a.accept.map(x => e.recallEntryText(x)).join('; ')}.`); }
   if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
   if (item.figure) lines.push('A picture is added to the feedback:', ...blockLines(item.figure));
   if (item.redraw) lines.push(`A chart is added to the feedback, "${SAYWORDS.redraw}": the chart above drawn again with the scale starting at zero.`);
@@ -234,8 +257,16 @@ function planLines(e, subject, step, at) {
   return [`## ${at}: ${SAY.planTitle}`, '', `${SAY.planHow} ${SAY.planPrivate}`, '', ...form.fields.map(f => `- ${f.label}${f.hint ? ` (for example: ${f.hint})` : ''}`), '',
     `Buttons: "${SAY.planSave}" (both boxes must be filled in; the plan is kept as one sentence, "${SAY.planIf} <when>, ${SAY.planThen} <what>.", with the day it was saved) and "${SAY.planSkip}". Once saved: "${SAY.planSaved}" and "${SAY.planChange}". A group of questions that rehearses the plan shows it once first: "${SAY.planBeforeTitle}", "${SAY.planBefore}", and the sentence, when there is one.`, ''];
 }
+// the step where the learner enters the answers that depend on where they live and who holds office, and the day of their interview
+function answersLines(e, subject, step, at) {
+  const { SAY } = e, form = subject.meta.own[step.own];
+  return [`## ${at}: On your own answers`, '', `"${SAY.answersTitle}": ${SAY.answersHow} The page named is ${SAY.answersLink} (a link to https://www.uscis.gov/citizenship/testupdates that opens in the browser). ${SAY.answersPrivate}`, '',
+    ...form.fields.map(f => `- ${f.label}${f.hint ? ` (the box says: "${f.hint}")` : ''}${f.type === 'date' ? ' (a day; optional)' : ''}`), '',
+    `Every answer is needed; the day is not. Refused, with a line under the field and the cursor on the first: a field left empty ("${SAY.ownRequired}"), and a run of ${e.OWN_MAX_DIGITS || 8} or more digits. "Go on" is not offered until "${SAY.answersSave}" has saved them; then "${SAY.answersSaved}" They are kept on this phone under the subject's own answers and appear on its subject screen under "${SAY.answersSection}" (with "${SAY.answersEdit}", and a line when they are more than a month old), nowhere else, and in the file the learner saves. The questions that read them are asked only once they are entered. With the date entered, the review brings each topic back once more a week at a time in the six weeks before it.`, ''];
+}
 function ownLines(e, subject, lesson, step, at) {
   if (['plan', 'setup'].includes(subject.meta.own[step.own].into)) return planLines(e, subject, step, at);
+  if (subject.meta.own[step.own].into === 'answers') return answersLines(e, subject, step, at);
   const { SAY } = e, form = subject.meta.own[step.own], actions = Object.values(subject.meta.own).find(f => f.into === 'actions'), lists = subject.meta.lists;
   const model = step.model ? subject.items[step.model] : null, trigger = lesson.trigger && ((lists.trigger || []).find(t => t.id === lesson.trigger) || {}).text;
   const out = [`## ${at}: On your own accounts`, '', 'The same step on the learner\'s own data. Nothing here is scored, stored as a try, logged or sent: it is written to this phone only (the sheet, the dated changes and the moments marked).', ''];
@@ -252,6 +283,7 @@ function ownLines(e, subject, lesson, step, at) {
 
 /* ---------- a lesson ---------- */
 export function renderLesson(loaded, subjectId, lessonId) {
+  SEEN = new Set();
   const e = loaded.engine, data = { ...loaded, subjects: { ...loaded.subjects, __current: loaded.subjects[subjectId] } };
   const subject = loaded.subjects[subjectId], lesson = subject.lessons[lessonId];
   if (!lesson) throw new Error(`${subjectId} has no lesson ${lessonId}`);
@@ -272,7 +304,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
       const item = subject.items[step.worked];
       out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || [], { rules: subject.meta.rules }));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
-      const right = a => a.kind === 'text' ? paras(a.model).join(' ') : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      const right = a => a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
       out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
         ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
         ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');
@@ -301,9 +333,13 @@ export function renderLesson(loaded, subjectId, lessonId) {
   const check = lesson.check, size = e.checkSize(check), baseline = lesson.role === 'baseline';
   const clockWords = check.seconds ? ` ${e.SAY.checkTimed(check.seconds)} A call is not on a clock.` : '';
   if (baseline) out.push('## The baseline', '', `${e.SAY.baselineIntro(size)}${clockWords}`, `It is not passed or failed: no rule is shown, nothing is shown per question${check.order === 'shuffle' ? ', and the questions come in mixed order' : ''}. It is stored as tries in the context "baseline", never counted in the results by lesson or in the schedule of a topic, and taken once.`, '');
-  else out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
+  else out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : check.recall ? e.SAY.checkIntroAgain(size).replace(/ To pass:$/, '') : e.checkIsDrawn(check) ? e.SAY.checkIntroDrawn(size).replace(/ To pass:$/, '') : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
     ...(clockWords ? [clockWords.trim(), ''] : []), 'To pass:', ...check.pass.map(r => `- ${e.ruleText(subject, r, e.rightWord(check))}`), '');
-  if (e.checkIsDrawn(check)) out.push(`The questions are drawn from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them).`, '');
+  if (check.spoken) out.push(`The check is spoken: ${e.SAY.checkSpoken} Its first screen adds: ${e.SAY.checkUpdates}`, '');
+  if (e.checkIsDrawn(check)) {
+    out.push(`The questions are drawn at random from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them), the same run drawing the same; what no earlier ${check.retest ? 'run of this check' : 'check'} asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:`, '');
+    check.items.draw.strands.flatMap(id => Object.values(subject.items).filter(i => i.strand === id)).forEach(i => out.push(...questionLines(e, data, { key: i.id, item: i }, null, `Question in the draw: ${i.id}`)));
+  }
   else if (e.checkIsSung(check)) out.push(...rangeFirst(e, e.flatRefs(check.items), rangeShown), ...sungRefLines(e, e.flatRefs(check.items), null, 'Check try', n));
   else e.flatRefs(check.items).forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(ref), null, `Check question ${++n}`)); });
   const compared = Object.values(subject.meta.facets).filter(f => f.compare);

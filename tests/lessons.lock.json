@@ -2,8 +2,8 @@
   "standard": 2,
   "subjects": {
     "civics": {
-      "rev": 5,
-      "fp": "sha256:d6edc93b0207767bf61b23f74db45899c4431df8516948f365c621ae6bd57d2c"
+      "rev": 6,
+      "fp": "sha256:e710684b6dc31a2b09622b6b6bf06d09cb6e0baa6c2cf5767b36d005307bbcaa"
     },
     "ideology": {
       "rev": 6,
@@ -35,6 +35,10 @@
     }
   },
   "lessons": {
+    "civics/l1": {
+      "rev": 1,
+      "fp": "sha256:580b2b867594d1ed2b21e3663fc368ca71eeff943af93d20a47e859c7af4946e"
+    },
     "ideology/l2": {
       "rev": 1,
       "fp": "sha256:bb0cd7a0d8266c1eb568c31ebb0a1760bf26036ea4fb9f87d8b9eab010dd1b95"

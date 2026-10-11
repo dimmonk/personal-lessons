@@ -4,8 +4,9 @@
 // in a lesson, the end check, the weekly review and a retest all run through here; the caller says what to do with the result.
 // Nothing advances by itself: the learner taps Next.
 //
-// Q: { subj, data, list: [instance], at, cur: { a, many, done, score, left, taps, arrived, timedOut }, log, context, feedback: 'after-each' | 'at-end',
-//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt }
+// Q: { subj, data, list: [instance], at, cur: { a, many, done, score, left, taps, arrived, timedOut, words }, log, context, feedback: 'after-each' | 'at-end',
+//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt, spoken }
+// A spoken run (`spoken`, the mock interview) holds the words of every question that is read aloud behind "Show the words" (speech-run.js).
 // A timed group or check (`seconds`, 26.2) gives each question that many seconds, counted on the frame clock (timer-run.js); at zero the question
 // stops with a timeout and waits for Next. A call or chat that pushes back is not timed. In a busy group (`over: 'busy'`) the banner of a question
 // arrives after the learner has sorted BUSY_TAPS_BEFORE things of the busy task, and the countdown starts then.
@@ -17,14 +18,18 @@
 let Q = null;
 // typed: what is in the boxes of each typed number; looked: the typed numbers whose "disagree" line has been shown; calc: the calculator;
 // left: the seconds left of a timed question (null when it is not timed); taps and arrived: the busy task and whether the banner is there
-const freshCur = left => ({ a: {}, many: {}, done: false, score: null, typed: {}, looked: {}, calc: { open: false, st: CALC_START }, left, taps: 0, arrived: false, timedOut: false });
+// words: the learner asked to see the words of a question that is read aloud and held back (a spoken check)
+const freshCur = left => ({ a: {}, many: {}, done: false, score: null, typed: {}, looked: {}, calc: { open: false, st: CALC_START }, left, taps: 0, arrived: false, timedOut: false, words: false });
 // the seconds a question has: the group's, unless it is a live call or chat (those are not timed)
 const questionSeconds = inst => Q.seconds && inst && !inst.item.asks.some(a => a.kind === 'exchange') ? Q.seconds : null;
 
 function startQueue(opts){
   singReset();
   timerStop();
-  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, seconds: null, over: null, ...opts, at: 0, log: [], firstTotal: opts.list.length, busyAt: 0 };
+  speechReset();
+  // a question about the learner's own answers is asked with what they entered (recall.js); one whose answer is not entered is not asked
+  const answers = notesOf(opts.subj.id).answers, list = opts.list.map(inst => recallWithOwn(inst, answers)).filter(inst => !inst.ownMissing);
+  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, seconds: null, over: null, spoken: false, ...opts, list, at: 0, log: [], firstTotal: list.length, busyAt: 0 };
   Q.cur = freshCur(questionSeconds(Q.list[0]));
   paintQueue();
 }
@@ -47,8 +52,8 @@ function paintQueue(){
   const inst = queueItem(), cur = Q.cur, sung = isSung(inst), busy = Q.over === 'busy', waiting = busy && !cur.arrived;
   const marks = cur.done && Q.feedback === 'after-each';
   const body = waiting ? '' : itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, done: cur.done, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done) : null,
-    typed: cur.typed, looked: cur.looked, calc: cur.calc,
-    feedback: marks ? feedbackHtml(Q.data, inst, Q.support, cur.a, cur.score) : '' });
+    typed: cur.typed, looked: cur.looked, calc: cur.calc, speech: speechView(inst, cur),
+    feedback: marks ? feedbackHtml(Q.data, inst, Q.support, cur.a, cur.score, { claim: Q.context !== 'baseline' }) : '' });
   const clock = cur.left === null || waiting ? '' : cur.done ? (cur.timedOut ? `<p class="timerup" data-timer-up>${esc(SAY.timerUp)}</p>` : '') : timerHtml(cur.left, Q.seconds);
   const task = busy ? busyHtml(Q.busyAt, cur.taps, cur.arrived) : '';
   const last = Q.at === Q.list.length - 1;
@@ -62,6 +67,8 @@ function paintQueue(){
   wireForm();
   wireTap();
   wireText();
+  wireRecall();
+  wireSpeech();
   wireExchange();
   wireOrder();
   wireBusy();
@@ -130,6 +137,7 @@ function nextQuestion(){
   paintQueue();
   window.scrollTo(0, 0);
   focusOn('.qlabel');
+  speakQuestion();   // the tap on Next is the learner's: once they have tapped to hear a question, the next one is read to them
 }
 // the instances of a finished run asked for the first time, as pass rules read them: [{ facets, r, ok }]
 const queueOutcomes = log => log.filter(e => e.first && !e.unscored).map(e => ({ facets: e.inst.item.facets || {}, r: e.r, ok: e.ok }));

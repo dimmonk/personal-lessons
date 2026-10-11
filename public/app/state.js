@@ -60,10 +60,11 @@ function resumePoint(subj){
 
 /* ===================== NAVIGATION ===================== */
 
-// Stops every sound and switches the microphone off. Called on every move to another screen.
+// Stops every sound, stops reading a question aloud, and switches the microphone off. Called on every move to another screen.
 function stopAudio(){
   stopSounds();
   stopMeter();
+  speechStop();
 }
 // The phone's Back button must go back inside the app, not out of it. The app is one page, so one history entry is added when the learner
 // leaves the library, and a Back that comes to the entry below it does what the screen's own back control does (backInApp); Back at the

@@ -34,6 +34,11 @@ const pressureItem = (id, ...rest) => ['subjects', 'pressure', 'items', id, ...r
 const pressureLesson = (id, ...rest) => ['subjects', 'pressure', 'lessons', id, ...rest];
 const pressureMeta = (...rest) => ['subjects', 'pressure', 'meta', ...rest];
 
+// the test subject of answers from memory, questions read aloud, the learner's own answers and the mock interview
+const interviewItem = (id, ...rest) => ['subjects', 'interview', 'items', id, ...rest];
+const interviewLesson = (id, ...rest) => ['subjects', 'interview', 'lessons', id, ...rest];
+const interviewMeta = (...rest) => ['subjects', 'interview', 'meta', ...rest];
+
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
 const asDesign = (input, lessonKey, patch) => {
@@ -157,7 +162,7 @@ export const CONTROLS = [
   { rule: 'V70', name: 'a written line that uses accepted answers', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'accept'), ['the leftovers']) },
   { rule: 'V70', name: 'a rule with a heading of its own beside another rule in one panel',
     data: (d, h) => h.setIn(h.setIn(d, accountMeta('rules', 'side'), { name: 'Another', needs: [{ id: 'side-one', text: 'It has one thing.' }] }), accountLesson('l1', 'flow', 0, 'show', 3, 'rules'), ['act', 'side']) },
-  { rule: 'V74', name: 'a written line with no model line to compare with', data: (d, h) => h.removeIn(d, accountItem('h-1', 'asks', 1, 'model')) },
+  { rule: 'V74', name: 'a written line whose model line is blank', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'model'), ' ') },
   { rule: 'V74', name: 'a question whose only ask is a written line',
     data: (d, h) => h.updateIn(d, accountItem('h-1', 'asks'), asks => [asks[1]]) },
   { rule: 'V50', name: 'a model line uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountItem('h-1', 'asks', 1, 'model'), 'This item is the leftovers he ate.') },
@@ -190,6 +195,26 @@ export const CONTROLS = [
   { rule: 'V83', name: 'a busy group that is not timed', data: (d, h) => h.removeIn(d, pressureLesson('l1', 'flow', 5, 'set', 'seconds')) },
   { rule: 'V83', name: 'a busy group whose question is not a banner', data: (d, h) => h.setIn(d, pressureLesson('l1', 'flow', 5, 'set', 'items'), ['t-3', 'y-2']) },
   { rule: 'V50', name: 'a reply of a call uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, pressureItem('x-1', 'asks', 0, 'turns', 'one', 'options', 0, 'text'), 'Read out the item') },
+  // answers from memory, questions read aloud, the learner's own answers, the mock interview (step 9)
+  { rule: 'V70', name: 'a text ask that is a line to write and an answer from memory', data: (d, h) => h.setIn(d, interviewItem('form', 'asks', 0, 'model'), 'The people choose.') },
+  { rule: 'V70', name: 'a text ask with neither a model nor accepted answers', data: (d, h) => h.removeIn(d, interviewItem('form', 'asks', 0, 'accept')) },
+  { rule: 'V70', name: 'a count of one answer', data: (d, h) => h.setIn(d, interviewItem('oath', 'asks', 0, 'count'), 1) },
+  { rule: 'V70', name: 'an own answer that names a field the subject does not have', data: (d, h) => h.setIn(d, interviewItem('senator', 'asks', 0, 'accept', 'own'), 'answers.q99') },
+  { rule: 'V70', name: 'an interview date read from a field that is not a date', data: (d, h) => h.setIn(d, interviewMeta('review', 'dateField'), 'answers.q23') },
+  { rule: 'V70', name: 'a spoken block with no words', data: (d, h) => h.removeIn(d, interviewItem('form', 'blocks', 0, 'text')) },
+  { rule: 'V70', name: 'a check drawn at random that asks its questions again', data: (d, h) => h.setIn(d, interviewLesson('l3', 'check', 'recall'), true) },
+  { rule: 'V70', name: 'a lesson that asks about the learner\'s own answers before a step enters them', data: (d, h) => h.updateIn(d, interviewLesson('l2', 'flow'), flow => [flow[1], flow[0]]) },
+  { rule: 'V70', name: 'an interview fact that is not an item of the subject', data: (d, h) => h.setIn(d, interviewItem('news-veto', 'fact'), 'nowhere') },
+  { rule: 'V70', name: 'an interview fact that has no answer from memory to print', data: (d, h) => h.setIn(d, interviewItem('news-veto', 'fact'), 'news-sign') },
+  { rule: 'V72', name: 'a check that asks again a question the lesson never asked', data: (d, h) => h.setIn(d, interviewLesson('l1', 'check', 'items', 0), 'declare') },
+  { rule: 'V72', name: 'a check read aloud that can ask a question with no spoken block', data: (d, h) => h.updateIn(d, interviewLesson('l3', 'check', 'items', 'draw', 'strands'), list => [...list, 'news']) },
+  { rule: 'V74', name: 'a question that wants two answers and accepts one', data: (d, h) => h.setIn(d, interviewItem('oath', 'asks', 0, 'accept'), ['Be loyal to the United States']) },
+  { rule: 'V74', name: 'an answer accepted twice', data: (d, h) => h.updateIn(d, interviewItem('form', 'asks', 0, 'accept'), list => [...list, 'republic']) },
+  { rule: 'V74', name: 'an answer said in parts that has one part', data: (d, h) => h.setIn(d, interviewItem('branches', 'asks', 0, 'accept', 0, 'parts'), ['Legislative']) },
+  { rule: 'V74', name: 'a question from memory with no spoken block', data: (d, h) => h.setIn(d, interviewItem('vote', 'blocks'), [{ kind: 'prose', text: 'Who can vote in federal elections?' }]) },
+  { rule: 'V81', name: 'a private form into the answers with a field "Social Security number"',
+    data: (d, h) => h.updateIn(d, interviewMeta('own', 'answers', 'fields'), fields => [...fields, { id: 'ssn', label: 'Social Security number', type: 'text', optional: true }]) },
+  { rule: 'V84', name: 'questions from a published list and no source for it', data: (d, h) => h.removeIn(d, interviewMeta('refs')) },
   { rule: 'V50', name: 'a checklist heading uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountMeta('rules', 'act', 'heading'), 'What counts as an item') }
 ];
 

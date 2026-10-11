@@ -4,7 +4,7 @@
 
 // The ask kinds and block kinds built so far (26.8). A lesson that uses another fails V70 until its step is built.
 const ASK_KINDS = ['choose', 'number', 'form', 'sing', 'tap', 'text', 'exchange', 'order'];
-const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message', 'spoken'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (26.4)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));
@@ -30,7 +30,8 @@ function scoreChoose(data, ask, answer){
 }
 // each scorer reads the question too (item.values: the numbers a generator made)
 const SCORERS = { choose: scoreChoose, number: (data, ask, answer, item) => scoreNumber(data, ask, answer, item), form: (data, ask, answer, item) => scoreForm(data, ask, answer, item), sing: (data, ask, answer) => scoreSing(data, ask, answer),
-  tap: (data, ask, answer, item) => scoreTap(data, ask, answer, item), exchange: (data, ask, answer) => scoreExchange(data, ask, answer), order: (data, ask, answer) => scoreOrder(data, ask, answer) };
+  tap: (data, ask, answer, item) => scoreTap(data, ask, answer, item), exchange: (data, ask, answer) => scoreExchange(data, ask, answer), order: (data, ask, answer) => scoreOrder(data, ask, answer),
+  text: (data, ask, answer) => scoreRecall(data, ask, answer) };
 
 // A line the learner writes against a model (26.1, `text` with `model`) is answered and kept but never scored: it has no right answer to match.
 const askIsScored = ask => !(ask.kind === 'text' && 'model' in ask);
@@ -58,6 +59,12 @@ function openAsks(item, support, answers){
   }
   return out;
 }
+// A claim ("my answer means the same", 26.3) turns one miss into `claimed`: counted right in that run, and still not a good day for the schedule.
+const resultOk = result => result === 'ok' || result === 'claimed';
+function claimedResults(r, askId){
+  const next = { ...r, [askId]: 'claimed' };
+  return { r: next, ok: Object.values(next).every(resultOk) };
+}
 const itemAnswered = (item, support, answers) => askedAsks(item, support).filter(a => askApplies(a, answers)).every(a => a.id in answers);
 // { r: { [askId]: result }, ok }: an item is right when every scored ask is right (a line written against a model is not scored).
 function scoreItem(data, item, support, answers){
@@ -72,7 +79,7 @@ const whereMatches = (where, facets) => !where || Object.entries(where).every(([
 // those that answered that ask), and the results of that ask, or of every ask when none is named.
 function ruleCounts(rule, outcomes){
   const rows = outcomes.filter(o => whereMatches(rule.where, o.facets) && (!rule.ask || rule.ask in o.r));
-  const isRight = o => rule.ask ? o.r[rule.ask] === 'ok' : o.ok;
+  const isRight = o => rule.ask ? resultOk(o.r[rule.ask]) : o.ok;
   const resultsOf = o => rule.ask ? [o.r[rule.ask]] : Object.values(o.r);
   return { n: rows.length, right: rows.filter(isRight).length, wrong: rows.filter(o => !isRight(o)).length,
     slips: rule.slip ? rows.filter(o => resultsOf(o).includes(rule.slip)).length : 0 };

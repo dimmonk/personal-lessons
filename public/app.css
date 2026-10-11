@@ -489,3 +489,16 @@ table.ownsum td:last-child{white-space:normal}
 .setuplist{margin:0 0 12px;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
 .setuprow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--field)}
 .setuprow.done{background:color-mix(in srgb,var(--green) 12%,transparent)}
+
+/* ---------- a question read aloud, an answer from memory, the accepted answers, your own answers (step 9) ---------- */
+.block-spoken{display:flex;flex-direction:column;gap:12px;padding:16px;background:var(--raised);border:1px solid var(--border)}
+.spoken-words{margin:0;font-family:var(--serif);font-size:19px;line-height:1.5;color:var(--text);overflow-wrap:anywhere}
+.spoken-tools{flex-wrap:wrap}
+.spoken-tools .btn{flex:0 1 auto;gap:8px}
+.recallbox{display:block;width:100%;height:50px;padding:0 12px;background:var(--field);border:1px solid var(--border);border-radius:0;color:var(--text);font-family:var(--sans);font-size:17px}
+.recallbox[disabled]{opacity:1;border-color:var(--rule);color:var(--bodydim);-webkit-text-fill-color:var(--bodydim)}
+.acceptlist{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.acceptlist li{padding:9px 12px;background:var(--field);font-size:15px;line-height:1.45;color:var(--body);overflow-wrap:anywhere}
+.acceptlist li.given{background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--text)}
+.acceptlist .gave{margin-left:6px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.plainlink{color:var(--text);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}

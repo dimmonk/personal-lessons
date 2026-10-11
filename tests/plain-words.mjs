@@ -3,7 +3,8 @@
 // every lesson, item and subject record) and by the browser tests (on every screen as shown).
 // Say instead: "question" for an item, "group of questions" for a set, "help" for support, "topic" for a strand, "the way it is
 // sorted" for a facet; "case" is a story, an example or a situation.
-export const APP_JARGON = ['key', 'keys', 'route', 'routes', 'gate', 'gates', 'branch', 'branches', 'determination', 'specimen', 'specimens', 'ledger',
+// ("branch" and "branches" were the key's own words; the key is gone, and the branches of government are Civics' first subject.)
+export const APP_JARGON = ['key', 'keys', 'route', 'routes', 'gate', 'gates', 'determination', 'specimen', 'specimens', 'ledger',
   'strand', 'strands', 'facet', 'facets', 'ask', 'asks', 'item', 'items', 'set', 'sets', 'generator', 'generators', 'support', 'supports'];
 
 // Abstract and textbook words, in every subject (lesson standard section 20). A beginner reads every card for "what do I do

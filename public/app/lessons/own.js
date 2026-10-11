@@ -6,6 +6,7 @@
 //   sheet    { accounts: [{ id, type, name?, balance, fees, holdings: [{ name, value, kind?, expense }] }], mix? }
 //   actions  [{ id, what, where, when, done?, repeat? }]
 //   triggers { [triggerId]: 'YYYY-MM-DD' }
+//   answers  { [fieldId]: text, interviewDate?: 'YYYY-MM-DD', saved: 'YYYY-MM-DD' }   (Civics, step 9)
 // A private form (`subject.own`) is { into, fields: [Field], rows?: { id, label, fields: [Field] } }, a Field is
 // { id, label, type: 'choose' | 'number' | 'text' | 'date', list?, unit?, places?, optional?, warn?: { over?, under?, text } }.
 // Nothing here may hold an account number, a login or a password: a field refuses a run of OWN_MAX_DIGITS or more digits.
@@ -13,12 +14,13 @@
 // The forms a subject may keep, and the fields the app reads from each (the sheet form is read by the costs and the summary, the form for
 // actions by the calendar file, the plan by the plan sentence, the setup as a list of marks): a form that leaves one out cannot work, and the
 // validator says so (V70).
-const OWN_SLOTS = ['sheet', 'actions', 'plan', 'setup'];
+const OWN_SLOTS = ['sheet', 'actions', 'plan', 'setup', 'answers'];
 const OWN_REQUIRED = {
   sheet: { fields: { type: 'choose', balance: 'number', fees: 'number' }, rows: { name: 'text', value: 'number', expense: 'number' } },
   actions: { fields: { what: 'text', where: 'text', when: 'date' } },
   plan: { fields: { cue: 'text', then: 'text' } },
-  setup: { fields: {}, allType: 'date' }   // every field of the setup is a thing marked done on a day
+  setup: { fields: {}, allType: 'date' },  // every field of the setup is a thing marked done on a day
+  answers: { fields: {} }                  // the answers and the interview date: which fields a subject reads is its own (V70 checks each `accept.own` and `dateField`)
 };
 const OWN_MAX_DIGITS = 8;
 const OWN_MAX_TEXT = 80;

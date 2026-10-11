@@ -2,7 +2,7 @@
 // V75 (generators), V76 (the subject's mix), V77 (banks), V79 (fading). Each reads the subject through model.mjs and the engine's
 // own pure functions, so the validator and the app can never hold two ideas of what counts as right.
 import { subjectRule, checkEach } from './rule.mjs';
-import { wordCount, unique } from './text.mjs';
+import { wordCount, unique, duplicatesOf } from './text.mjs';
 import { learnerStrings } from './rules-vocab.mjs';
 
 // V73. The time a learner spends reading and the time they spend doing, in seconds. Named once, here.
@@ -42,14 +42,26 @@ function passProblems(s, lv) {
   });
   return problems;
 }
+// A check that asks a part's questions again (`recall`: the questions of a published list are recalled, not found anew; Civics) holds only questions the
+// lesson's own groups asked, each once. Any other check holds none of them. A spoken check is read aloud, so each question it can ask has a spoken block.
+function recallCheckProblems(s, lv) {
+  const check = lv.lesson.check, drawn = s.engine.checkIsDrawn(check), inFlow = new Set(lv.setRefs.flat().map(r => r.id)), problems = [];
+  if (!drawn && check.recall) {
+    lv.checkRefs.filter(r => !inFlow.has(r.id)).forEach(r => problems.push(`the check asks "${r.id}" again, and none of the lesson's groups asked it`));
+    duplicatesOf(lv.checkRefs.map(r => r.id)).forEach(id => problems.push(`the check asks "${id}" twice`));
+  } else if (!drawn) {
+    const worked = new Set(lv.worked);
+    lv.checkRefs.filter(r => typeof r.ref === 'string' && (inFlow.has(r.id) || worked.has(r.id))).forEach(r => problems.push(`the check question "${r.id}" is also in the lesson's own groups or worked example`));
+  }
+  if (check.spoken) {
+    const defs = drawn ? [...Object.values(s.items), ...Object.values(s.gens)].filter(d => check.items.draw.strands.includes(d.strand)) : lv.checkRefs.map(r => s.def(r.id));
+    defs.filter(d => !d.blocks.some(b => b.kind === 'spoken')).forEach(d => problems.push(`the check is read aloud, and the question "${d.id}" has no spoken block`));
+  }
+  return problems;
+}
 export const V72 = subjectRule('V72', (s, check) => {
   for (const lv of s.lessons) {
-    const problems = [];
-    if (!s.engine.checkIsDrawn(lv.lesson.check)) {
-      const inFlow = new Set([...lv.setRefs.flat().map(r => r.id), ...lv.worked]);
-      lv.checkRefs.filter(r => typeof r.ref === 'string' && inFlow.has(r.id)).forEach(r => problems.push(`the check question "${r.id}" is also in the lesson's own groups or worked example`));
-    }
-    problems.push(...passProblems(s, lv));
+    const problems = [...recallCheckProblems(s, lv), ...passProblems(s, lv)];
     checkEach(check, lv.label, problems);
   }
 });
@@ -110,9 +122,10 @@ function tapExplainProblems(s, item, ask, where, slipIds) {
   lines.filter(l => l.slip && right.includes(l.id)).forEach(l => problems.push(`${where}: the right line "${l.id}" carries the slip "${l.slip}"`));
   return problems;
 }
-// A line to write: it has a model line to compare with (accepted answers are Civics', and V70 refuses them until then). It is never scored, so the
-// question also holds an ask that is.
-function textExplainProblems(ask, where) {
+// A line to write has a model line to compare with. It is never scored, so the question also holds an ask that is. An answer from memory has accepted
+// answers that are sound (recall.js: none twice, none empty, enough for its count).
+function textExplainProblems(s, ask, where) {
+  if ('accept' in ask) return s.engine.recallProblems(ask).map(p => `${where}: ${p}`);
   const model = Array.isArray(ask.model) ? ask.model.join(' ') : ask.model;
   return typeof model === 'string' && model.trim() ? [] : [`${where} has no model line to compare with`];
 }
@@ -151,7 +164,7 @@ function explainProblems(s, item) {
   flatAsks(s, item).forEach(ask => {
     if (ask.kind === 'number') { problems.push(...numberExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     if (ask.kind === 'tap') { problems.push(...tapExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
-    if (ask.kind === 'text') { problems.push(...textExplainProblems(ask, `ask ${ask.id}`)); return; }
+    if (ask.kind === 'text') { problems.push(...textExplainProblems(s, ask, `ask ${ask.id}`)); return; }
     if (ask.kind === 'exchange') { problems.push(...exchangeExplainProblems(s, ask, `ask ${ask.id}`, ids)); return; }
     if (ask.kind === 'order') return;
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
@@ -161,6 +174,9 @@ function explainProblems(s, item) {
     options.filter(o => o.slip && !ids.includes(o.slip)).forEach(o => problems.push(`${where}: the slip "${o.slip}" is not in the subject's list of slips`));
   });
   if (!flatAsks(s, item).some(a => s.engine.askIsScored(a))) problems.push('it has no ask that can be scored: a line written against a model is never marked');
+  // a question answered from memory is read, or heard: its words are in a spoken block (and only one), never in the prompt, which a spoken check would give away
+  const recalled = flatAsks(s, item).some(a => a.kind === 'text' && 'accept' in a), spokenBlocks = item.blocks.filter(b => b.kind === 'spoken').length;
+  if (recalled && spokenBlocks !== 1) problems.push(`it asks a question from memory and has ${spokenBlocks} spoken blocks; the question is one`);
   const segments = item.blocks.flatMap(b => s.engine.segmentsOf(b)).map(x => x.id);
   (item.deciding || []).filter(id => !segments.includes(id)).forEach(id => problems.push(`deciding "${id}" is not a segment of the blocks`));
   problems.push(...hasExplainProblems(s, item));

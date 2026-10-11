@@ -93,17 +93,17 @@ function ownSectionHtml(subj, data, state){
     : `<button type="button" class="btn ghost sm" data-trigger-mark="${esc(t.id)}">${esc(SAY.ownMomentMark)}</button>`}</td></tr>`).join('');
   const hasAny = Object.keys(notes).length > 0;
   const remove = state.deleting
-    ? `<div class="vblock" data-own-delete-ask><p>${esc(has('sheet') ? SAY.ownDeleteAsk : SAY.planDeleteAsk)}</p><div class="numacts"><button type="button" class="btn sm" data-own-delete-yes>${esc(SAY.ownDeleteYes)}</button>
+    ? `<div class="vblock" data-own-delete-ask><p>${esc(has('sheet') ? SAY.ownDeleteAsk : has('answers') ? SAY.answersDeleteAsk : SAY.planDeleteAsk)}</p><div class="numacts"><button type="button" class="btn sm" data-own-delete-yes>${esc(SAY.ownDeleteYes)}</button>
         <button type="button" class="btn ghost sm" data-own-delete-no>${esc(SAY.ownDeleteNo)}</button></div></div>`
-    : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownDelete : SAY.planDelete)}</button>`;
+    : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownDelete : has('answers') ? SAY.answersDelete : SAY.planDelete)}</button>`;
   const sheetHtml = has('sheet') ? `<span class="m lab">${esc(SAY.ownAccountsHeading)}</span>
     ${accounts.length ? `<table class="k results ownsum">${accountRows}</table>` : `<p class="hintline">${esc(SAY.ownNoSheet)}</p>`}` : '';
   const actionsHtml = has('actions') ? `<span class="m lab">${esc(SAY.ownActionsHeading)}</span>
     ${actions.length ? ownActionListHtml(actions, subj.id) : `<p class="hintline">${esc(SAY.ownNoActions)}</p>`}` : '';
-  return `<div class="sect top"><span class="m">${esc(has('sheet') ? SAY.ownSection : SAY.planSection)}</span></div><div class="ownsection" data-own="private">
+  return `<div class="sect top"><span class="m">${esc(has('sheet') ? SAY.ownSection : has('answers') ? SAY.answersSection : SAY.planSection)}</span></div><div class="ownsection" data-own="private">
     <p class="hintline">${esc(SAY.ownOnPhone)}</p>
-    ${sheetHtml}${actionsHtml}${planSectionHtml(data, notes)}
+    ${sheetHtml}${actionsHtml}${planSectionHtml(data, notes)}${answersSectionHtml(data, notes)}
     ${moments ? `<span class="m lab">${esc(SAY.ownMomentsHeading)}</span><table class="k results ownsum">${moments}</table>` : ''}
-    <div class="numacts"><button type="button" class="btn ghost sm" data-own-export ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownExport : SAY.planExport)}</button></div>
+    <div class="numacts"><button type="button" class="btn ghost sm" data-own-export ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownExport : has('answers') ? SAY.answersExport : SAY.planExport)}</button></div>
     ${state.deleted ? `<p class="hintline" role="status">${esc(SAY.ownDeleted)}</p>` : ''}${remove}</div>`;
 }

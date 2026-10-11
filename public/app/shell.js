@@ -18,6 +18,7 @@ function render(){
     case 'subject':   return renderSubject(subj);
     case 'lesson':    return renderLesson(subj);
     case 'range':     return renderRangeAgain(subj);
+    case 'answers':   return renderAnswers(subj);
     case 'results':   return renderResults(subj);
     default:          return renderLibrary();
   }

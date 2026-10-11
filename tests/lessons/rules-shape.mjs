@@ -2,15 +2,14 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
 
 // What 26.1 describes and the engine has not built yet (26.8). A lesson that uses one is refused, so nothing is written that cannot run.
 export const NOT_BUILT = {
-  'a private form into answers or lines': 'step 9 (Civics) and part F of Psychology', 'a spoken check': 'step 9 (Civics)',
-  'the interview date': 'step 9 (Civics)', 'an interview fact': 'step 9 (Civics)', 'a text ask with accepted answers': 'step 9 (Civics)'
+  'a private form into lines': 'part F of Psychology'
 };
 
 /* ---------- the pieces ---------- */
@@ -40,6 +39,7 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
       ...(block.rules.length > 1 ? block.rules.filter(id => headed.includes(id)).map(id => `${where}: the rule "${id}" has a heading of its own and stands alone in a panel`) : [])];
   }
   if (block.kind === 'message') return messageProblems(block, where, engine);
+  if (block.kind === 'spoken') return show(checkShape(block, SPOKEN, where));
   if (block.kind === 'chart') {
     const shape = show(checkShape(block, CHART, where));
     return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
@@ -129,13 +129,24 @@ function tapProblems(ask, where) {
   return problems;
 }
 
-// A line to write: the shape, and nothing that is built later (accepted answers come with Civics). That it has a model line is V74's.
-function textProblems(ask, where) {
+// A text ask is a line to write against a model, or an answer from memory checked against what a list accepts: exactly one of the two. `count` belongs to a
+// list of accepted answers and is two or more (one is what a question wants without it). An answer the learner entered (`own`) names a text field of the
+// subject's form into `answers`. (That the accepted answers are sound, and that the question is spoken, are V74's; that the model line is there is V74's too.)
+function textProblems(ask, where, meta) {
   const problems = show(checkShape(ask, TEXT, where));
   if (problems.length) return problems;
-  if ('accept' in ask || 'count' in ask) problems.push(`${where} uses accepted answers, which is built in ${NOT_BUILT['a text ask with accepted answers']}`);
+  if (('model' in ask) === ('accept' in ask)) problems.push(`${where} must have exactly one of model (a line to write) and accept (an answer from memory)`);
+  if ('count' in ask && !Array.isArray(ask.accept)) problems.push(`${where}: count belongs to a list of accepted answers`);
+  if ('count' in ask && ask.count < 2) problems.push(`${where}: count is two or more; one answer is what a question wants without it`);
+  if (ask.accept && !Array.isArray(ask.accept)) {
+    const field = String(ask.accept.own).replace(/^answers\./, ''), form = answersFormOf(meta);
+    if (!/^answers\./.test(ask.accept.own)) problems.push(`${where}: own names "${ask.accept.own}", which is not an entry of the form into answers (answers.<field>)`);
+    else if (!form || !form.fields.some(f => f.id === field && f.type === 'text')) problems.push(`${where}: own names "${ask.accept.own}", and the subject has no text field "${field}" in a form into answers`);
+  }
   return problems;
 }
+// the subject's private form into `answers`, or null
+const answersFormOf = meta => meta ? Object.values(meta.own || {}).find(f => f.into === 'answers') || null : null;
 
 // An exchange: its turns are a path that always ends. The start and every goto are turns, every end is an end, a turn offers at least two replies
 // each of which goes on or ends, every turn can be reached, the turns do not loop, and there is a right end and a wrong one. (That each end is
@@ -173,12 +184,12 @@ function orderShapeProblems(ask, where, engine) {
   return problems.length ? problems : engine.orderProblems(ask).map(p => `${where}: ${p}`);
 }
 
-function askProblems(ask, where, kinds, listIds, engine) {
+function askProblems(ask, where, kinds, listIds, engine, meta = null) {
   if (!ask || typeof ask !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(ask.kind)) return [`${where} has an ask of kind "${ask.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (ask.kind === 'sing') return [`${where} is a sing ask, which only a sung question the app makes from a { sing } task may carry`];
   if (ask.kind === 'tap') return tapProblems(ask, where);
-  if (ask.kind === 'text') return textProblems(ask, where);
+  if (ask.kind === 'text') return textProblems(ask, where, meta);
   if (ask.kind === 'exchange') return exchangeProblems(ask, where, engine);
   if (ask.kind === 'order') return orderShapeProblems(ask, where, engine);
   if (ask.kind === 'number') return numberProblems(ask, where);
@@ -214,7 +225,7 @@ function itemProblems(item, where, ctx, isGen) {
   if (taps.length > 1) problems.push(`${where}: a question has one tap, not ${taps.length}`);
   taps.filter(a => a.in && !item.blocks.some(b => b.id === a.in)).forEach(a => problems.push(`${where}: the tap "${a.id}" names the block "${a.in}", which the question does not have`));
   if (item.redraw && !item.blocks.some(b => b.kind === 'chart' && b.y && b.y.from > 0)) problems.push(`${where}: redraw from zero needs a chart whose axis starts above zero`);
-  item.asks.forEach((a, i) => problems.push(...askProblems(a, `${where}.asks[${i}]`, engine.ASK_KINDS, ctx.listIds, engine)));
+  item.asks.forEach((a, i) => problems.push(...askProblems(a, `${where}.asks[${i}]`, engine.ASK_KINDS, ctx.listIds, engine, subject.meta)));
   const exchanges = item.asks.filter(a => a.kind === 'exchange');
   if (exchanges.length > 1) problems.push(`${where}: a question has one call or chat, not ${exchanges.length}`);
   const askIds = item.asks.map(a => a.id);
@@ -224,11 +235,18 @@ function itemProblems(item, where, ctx, isGen) {
   const segIds = item.blocks.flatMap(b => engine.segmentsOf(b)).map(s => s.id);
   problems.push(...duplicatesOf(segIds).map(id => `${where}: segment "${id}" appears twice`));
   problems.push(...duplicatesOf([...(item.steps || []).map(s => s.id)]).map(id => `${where}: step "${id}" appears twice`));
-  const unbuilt = [...('fact' in item ? ['an interview fact'] : [])];
-  unbuilt.forEach(n => problems.push(`${where} uses ${n}, which is built in ${NOT_BUILT[n]}`));
+  if ('fact' in item) problems.push(...factProblems(item, where, subject));
   if ('figure' in item && (!item.figure || item.figure.kind !== 'figure')) problems.push(`${where}: the figure added to the feedback must be a figure block`);
   else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds));
   return problems;
+}
+
+// The interview question a news answer rests on is an item of the subject that asks a question from memory (and is not the question itself)
+function factProblems(item, where, subject) {
+  const fact = subject.items[item.fact];
+  if (!fact) return [`${where}: the interview question "${item.fact}" is not an item of the subject`];
+  if (fact.id === item.id) return [`${where}: the question cannot rest on itself`];
+  return fact.asks.some(a => a.kind === 'text' && a.accept) ? [] : [`${where}: the interview question "${item.fact}" has no answers from memory to print`];
 }
 
 // A label pinned on words is judged against what the label needs, so its question names the rules in a panel; and the side the label is
@@ -274,7 +292,7 @@ function supportFitsProblems(set, where, ctx) {
 function ownStepProblems(step, where, ctx) {
   const { subject } = ctx, own = subject.meta.own || {}, form = own[step.own], problems = [];
   if (!form) { problems.push(`${where}: "${step.own}" is not one of the subject's private forms`); return problems; }
-  if (!['sheet', 'plan', 'setup'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the plan or the setup`);
+  if (!['sheet', 'plan', 'setup', 'answers'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the plan, the setup or the answers`);
   if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
   if (step.model && form.into !== 'sheet') problems.push(`${where}: only a step on the sheet shows a model`);
   if (form.into === 'sheet' && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
@@ -322,11 +340,27 @@ function lessonProblems(lesson, ctx) {
   if (lesson.role === 'baseline') problems.push(...baselineProblems(lesson, where, subject));
   if (lesson.trigger && !((subject.meta.lists || {}).trigger || []).some(t => t.id === lesson.trigger)) problems.push(`${where}: the trigger "${lesson.trigger}" is not in the subject's list of triggers`);
   lesson.flow.forEach((step, i) => problems.push(...stepProblems(step, `${where}.flow[${i}]`, ctx)));
+  problems.push(...ownAnswersProblems(lesson, where, ctx));
   const check = lesson.check;
   if (Array.isArray(check.items)) check.items.forEach(r => problems.push(...refProblems(r, `${where}.check.items`, ctx)));
   else check.items.draw.strands.filter(s => !subject.meta.strands.some(x => x.id === s)).forEach(s => problems.push(`${where}.check: "${s}" is not a strand of the subject`));
   if (check.seconds !== undefined && !subject.meta.timed) problems.push(`${where}.check has seconds in a subject that does not time its items`);
-  if (check.spoken) problems.push(`${where}.check is spoken, which is built in ${NOT_BUILT['a spoken check']}`);
+  if (check.recall && !Array.isArray(check.items)) problems.push(`${where}.check asks its questions again, and a check that is drawn at random has no questions to ask again`);
+  return problems;
+}
+// A lesson that asks about the learner's own answers (a senator, the capital) has a step before it where they enter them; a drawn check leaves such a
+// question out until they are entered.
+function ownAnswersProblems(lesson, where, ctx) {
+  const { subject, engine } = ctx, forms = Object.entries(subject.meta.own || {}).filter(([, f]) => f.into === 'answers').map(([id]) => id);
+  const reads = id => { const d = subject.items[id]; return !!d && d.asks.some(a => engine.recallIsOwn(a)); };
+  let entered = false;
+  const problems = [];
+  lesson.flow.forEach((step, i) => {
+    if (step.own && forms.includes(step.own)) entered = true;
+    const ids = step.worked ? [step.worked] : step.set ? engine.flatRefs(step.set.items).map(engine.refId) : [];
+    ids.filter(reads).forEach(id => { if (!entered) problems.push(`${where}.flow[${i}] asks "${id}", which reads the learner's own answers, before any step where they enter them`); });
+  });
+  if (Array.isArray(lesson.check.items)) engine.flatRefs(lesson.check.items).map(engine.refId).filter(reads).forEach(id => { if (!entered) problems.push(`${where}.check asks "${id}", which reads the learner's own answers, and no step enters them`); });
   return problems;
 }
 
@@ -344,7 +378,7 @@ function ownFormsProblems(meta, engine) {
   const lists = meta.lists || {}, problems = [];
   Object.entries(meta.own || {}).forEach(([id, form]) => {
     const where = `the subject record: private form ${id}`;
-    if (!engine.OWN_SLOTS.includes(form.into)) { problems.push(`${where} writes into "${form.into}", which is built in ${NOT_BUILT['a private form into answers or lines']}`); return; }
+    if (!engine.OWN_SLOTS.includes(form.into)) { problems.push(`${where} writes into "${form.into}", which is built in ${NOT_BUILT['a private form into lines']}`); return; }
     const need = engine.OWN_REQUIRED[form.into];
     if (need.allType) form.fields.filter(f => f.type !== need.allType).forEach(f => problems.push(`${where}: "${f.id}" is a ${f.type}; every field of a form into "${form.into}" is marked on a ${need.allType}`));
     const check = (fields, wanted, label) => {
@@ -362,6 +396,13 @@ function ownFormsProblems(meta, engine) {
     else if (form.rows) problems.push(`${where} has rows, which a form into "${form.into}" does not take`);
   });
   return problems;
+}
+
+// The interview date the review counts its rounds from (26.4): `answers.<field>`, a date field of the subject's form into `answers`
+function dateFieldProblems(meta) {
+  const name = meta.review.dateField, field = name.replace(/^answers\./, ''), form = answersFormOf(meta);
+  if (!/^answers\./.test(name)) return [`the subject record: the review reads its date from "${name}", which is not an entry of the form into answers (answers.<field>)`];
+  return form && form.fields.some(f => f.id === field && f.type === 'date') ? [] : [`the subject record: the review reads its date from "${name}", and the subject has no date field "${field}" in a form into answers`];
 }
 
 /* ---------- V70 ---------- */
@@ -387,7 +428,7 @@ function subjectProblems(s) {
     if (!facet) problems.push(`the subject record: the danger names the facet "${d.facet}", which the subject does not have`);
     else [d.risky, d.real].filter(v => !facet.values.some(x => x.id === v)).forEach(v => problems.push(`the subject record: the danger names "${v}", which is not a value of ${d.facet}`));
   }
-  if (meta.review && meta.review.dateField) problems.push(`the subject record uses the interview date, which is built in ${NOT_BUILT['the interview date']}`);
+  if (meta.review && meta.review.dateField) problems.push(...dateFieldProblems(meta));
   return problems;
 }
 

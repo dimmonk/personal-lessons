@@ -22,6 +22,8 @@ import { ACCOUNT_CHECKS } from './e2e-account.mjs';
 import { PSYCHOLOGY_CHECKS } from './e2e-psychology.mjs';
 import { PRESSURE_CHECKS } from './e2e-pressure.mjs';
 import { SCAMS_CHECKS } from './e2e-scams.mjs';
+import { INTERVIEW_CHECKS, walkInterview } from './e2e-interview.mjs';
+import { CIVICS_CHECKS } from './e2e-civics.mjs';
 import { walkPressure } from './e2e-pressure.mjs';
 
 // A Monday. Reviews run Monday to Sunday, so the tests that move through days start on one and name the days they move to.
@@ -122,6 +124,7 @@ export async function X3(env) {
       await env.openSubject(page, 'fixture');
       await env.clickVisible(page, '#screen [data-again]'); await env.inspect(c, page, `${width}px practice again`);
       await walkPressure(env, c, page, `${width}px pressure`);
+      await walkInterview(env, c, page, `${width}px recall`);
     }
     await context.close();
   }
@@ -287,4 +290,4 @@ export async function X23(env) {
   return c;
 }
 
-export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X15: FEED_CHECKS.X15, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, X30: STATS_CHECKS.X30, X31: FEED_CHECKS.X31, X32: LABEL_CHECKS.X32, X33: LABEL_CHECKS.X33, X34: ACCOUNT_CHECKS.X34, X35: ACCOUNT_CHECKS.X35, X36: PSYCHOLOGY_CHECKS.X36, ...PRESSURE_CHECKS, ...SCAMS_CHECKS, ...SOUND_CHECKS };
+export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X15: FEED_CHECKS.X15, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, X30: STATS_CHECKS.X30, X31: FEED_CHECKS.X31, X32: LABEL_CHECKS.X32, X33: LABEL_CHECKS.X33, X34: ACCOUNT_CHECKS.X34, X35: ACCOUNT_CHECKS.X35, X36: PSYCHOLOGY_CHECKS.X36, ...PRESSURE_CHECKS, ...SCAMS_CHECKS, ...INTERVIEW_CHECKS, ...CIVICS_CHECKS, ...SOUND_CHECKS };

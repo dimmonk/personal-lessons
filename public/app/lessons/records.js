@@ -3,7 +3,7 @@
 // facet, slips, due dates) is computed from it; nothing is stored twice. Records are replaced, never edited in place.
 //   pl:<subject>:items   { [itemId or generatorId]: { tries: [Try] } }     the last twelve tries per item and context
 //   pl:<subject>:seen    { [lessonId]: { rev, at } }                       the revision last opened and the place (a step index)
-//   pl:<subject>:notes   the learner's private data for the subject (26.3); today only Singing's range, written by the range exercise
+//   pl:<subject>:notes   the learner's private data for the subject (26.3): Singing's range, Wealth's sheet, the plan, Civics' answers and interview date
 //   pl:log               [{ d, type, subject?, lesson?, rev? }]            at most 500, oldest dropped first
 // Try = { d, run, lesson, rev, engine, context, sup, seed?, a, r, ok, ms? }
 
@@ -66,6 +66,18 @@ function recordTry(subjectId, key, attempt){
   itemsCache[subjectId] = { ...itemsOf(subjectId), [key]: { tries } };
   storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
   return entry;
+}
+// A claim (26.3): the try of a question just answered, with one miss counted on the learner's word ("my answer means the same"). The record replaces
+// the try, never edits it, and the claim is logged. The question still comes back: a claimed try is not a good day (schedule.js).
+const triesClaimed = t => Object.values(t.r).includes('claimed');
+function claimTry(subjectId, key, run, seed, askId){
+  const tries = rawTries(subjectId, key), at = tries.map(t => t.run === run && t.seed === seed && t.r[askId] === 'no').lastIndexOf(true);
+  if(at < 0) return null;
+  const claim = claimedResults(tries[at].r, askId), made = { ...tries[at], r: claim.r, ok: claim.ok };
+  itemsCache[subjectId] = { ...itemsOf(subjectId), [key]: { tries: tries.map((t, i) => i === at ? made : t) } };
+  storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
+  logEvent('claim', { subject: subjectId, item: key });
+  return made;
 }
 // every try of a subject with the id it is stored under: [{ key, t }]
 const allTries = subjectId => Object.entries(itemsOf(subjectId)).flatMap(([key, entry]) => entry.tries.filter(isNewTry).map(t => ({ key, t })));

@@ -100,8 +100,8 @@ function paintWorked(step){
 // the right answers of a worked item, then why
 function workedAnswerHtml(data, inst){
   const item = inst.item;
-  const right = a => a.kind === 'text' ? paras(a.model).join(' ') : a.kind === 'tap' ? tapRightText(a, item) : a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
-  const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(a.kind === 'text' ? SAY.writeModel : SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
+  const right = a => a.kind === 'text' ? (isRecallAsk(a) ? a.accept.map(recallEntryText).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? tapRightText(a, item) : a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
+  const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(a.kind === 'text' && !isRecallAsk(a) ? SAY.writeModel : SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '', redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
   return `<div class="feedback"><div class="marks">${marks}</div>${block(SAY.whyLabel, paras(item.reason))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${picture}${redrawn}</div>`;
@@ -169,13 +169,16 @@ function paintCheckIntro(){
     return on('#fwd', startCheck);
   }
   const rules = check.pass.map(rule => `<li>${esc(ruleText(data, rule, rightWord(check)))}</li>`).join('');
-  lessonShell(`${heading(SAY.checkHeading, lesson.title)}<div class="lesson"><p>${esc(checkIsSung(check) ? SAY.checkIntroSung(n) : SAY.checkIntro(n))}</p><ul>${rules}</ul>
-    ${check.feedback === 'at-end' ? `<p>${esc(SAY.checkNoFeedback)}</p>` : ''}${timed}</div>`, nextAction(SAY.checkStart));
+  const intro = checkIsSung(check) ? SAY.checkIntroSung(n) : check.recall ? SAY.checkIntroAgain(n) : checkIsDrawn(check) ? SAY.checkIntroDrawn(n) : SAY.checkIntro(n);
+  // a check that is spoken (the mock interview) says how it goes and sends the learner to the page where the answers that change are posted
+  const spoken = check.spoken ? `<p>${esc(SAY.checkSpoken)}</p><p data-updates>${esc(SAY.checkUpdates)}</p>` : '';
+  lessonShell(`${heading(SAY.checkHeading, lesson.title)}<div class="lesson"><p>${esc(intro)}</p><ul>${rules}</ul>
+    ${check.feedback === 'at-end' ? `<p>${esc(SAY.checkNoFeedback)}</p>` : ''}${timed}${spoken}</div>`, nextAction(SAY.checkStart));
   on('#fwd', startCheck);
 }
 function checkInstances(run){
   const { data, subj, lesson } = LESSON, check = lesson.check;
-  if(checkIsDrawn(check)) return drawInstances(data, subj.id, check.items.draw, run, flowSetIds(lesson));
+  if(checkIsDrawn(check)) return drawInstances(data, subj.id, check.items.draw, run, flowSetIds(lesson), lesson.id);
   const list = flatRefs(check.items).flatMap((ref, k) => refInstances(data, subj.id, ref, run, k));
   return check.order === 'shuffle' ? shuffled(list, hashSeed(`${run}|check`)) : list;   // a check in mixed order gives no hint from the place of a question
 }
@@ -184,12 +187,13 @@ function startCheck(){
   const { subj, data, lesson } = LESSON, run = newRunId();
   LESSON = { ...LESSON, run };
   startQueueWithRange({ subj, data, list: checkInstances(run), run, context: checkContext(lesson), feedback: lesson.check.feedback, support: null, redo: false,
-    seconds: lesson.check.seconds || null, owner: lessonOwner(), shell: lessonShell, onDone: log => lesson.role === 'baseline' ? paintBaselineResult(log) : paintCheckResult(log) });
+    seconds: lesson.check.seconds || null, spoken: !!lesson.check.spoken, owner: lessonOwner(), shell: lessonShell,
+    onDone: log => lesson.role === 'baseline' ? paintBaselineResult(log) : paintCheckResult(log) });
 }
 // "8 of 10: passed", each rule met or not, then every answer with the misses first (when the answers were held back)
-function paintCheckResult(log){
-  const { subj, data, lesson } = LESSON, sung = checkIsSung(lesson.check), result = checkResult(data, lesson.check.pass, queueOutcomes(log), rightWord(lesson.check));
-  logEvent('check', { subject: subj.id, lesson: lesson.id, rev: lesson.rev });
+function paintCheckResult(log, counted = false){
+  const scrolled = window.scrollY, { subj, data, lesson } = LESSON, sung = checkIsSung(lesson.check), result = checkResult(data, lesson.check.pass, queueOutcomes(log), rightWord(lesson.check));
+  if(!counted) logEvent('check', { subject: subj.id, lesson: lesson.id, rev: lesson.rev });
   const rows = result.lines.map(l => `<tr><td>${esc(l.text)}</td><td>${esc(l.met ? SAY.ruleMet : SAY.ruleNotMet)}</td></tr>`).join('');
   const each = lesson.check.feedback === 'at-end' ? `<div class="vblock"><span class="m">${esc(SAY.checkEveryAnswer)}</span></div>${checkAnswersHtml(data, log)}` : '';
   const next = nextLessonOf(data, lesson);
@@ -199,11 +203,12 @@ function paintCheckResult(log){
   LESSON = { ...LESSON, at: stepTotal(lesson) - 1 };
   saveLessonPlace();
   lessonShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total, sung) : SAY.checkNotYet(result.right, result.total))}</h2>
-    <table class="k results">${rows}</table>${splitsHtml(facetSplits(data, queueOutcomes(log)))}</div>${each}`, actions);
+    <table class="k results">${rows}</table>${splitsHtml(facetSplits(data, queueOutcomes(log)))}${claimedListHtml(data, log)}</div>${each}`, actions);
+  wireClaims((at, askId) => paintCheckResult(claimInLog(subj.id, LESSON.run, log, at, askId), true));
   on('#toNext', () => openLesson(subj, next.id));
   on('#again', () => { LESSON = { ...LESSON, at: checkStep(lesson) }; paintCheckIntro(); window.scrollTo(0, 0); });
-  window.scrollTo(0, 0);
-  focusScreenHead();
+  window.scrollTo(0, counted ? scrolled : 0);   // an answer counted on the learner's word keeps their place in the list
+  if(!counted) focusScreenHead();
 }
 /* ---------- the baseline: measured, not passed ---------- */
 // One line: how many of the risky messages the learner did what they asked on, and how many real ones they handled the right way (26.2, gate 5).
@@ -226,9 +231,18 @@ function paintBaselineResult(log){
 }
 // every question of a finished check with its feedback; the missed ones first
 function checkAnswersHtml(data, log){
-  const ordered = [...log.filter(e => !e.ok), ...log.filter(e => e.ok)];
-  return ordered.map(e => `<div class="resitem">${itemHtml(data, e.inst, { a: e.a, many: {}, marks: true, support: null,
-    feedback: feedbackHtml(data, e.inst, null, e.a, { r: e.r, ok: e.ok }) })}</div>`).join('');
+  const ordered = [...log.map((e, at) => ({ e, at })).filter(x => !x.e.ok), ...log.map((e, at) => ({ e, at })).filter(x => x.e.ok)];
+  return ordered.map(({ e, at }) => `<div class="resitem">${itemHtml(data, e.inst, { a: e.a, many: {}, marks: true, support: null,
+    feedback: feedbackHtml(data, e.inst, null, e.a, { r: e.r, ok: e.ok }, { claim: true, at }) })}</div>`).join('');
+}
+// the answers counted on the learner's word in a finished run, listed under its result
+function claimedListHtml(data, log){
+  const claimed = log.filter(e => !e.unscored && Object.values(e.r).includes('claimed'));
+  return claimed.length ? `<div class="vblock" data-claimed-list>${lessonLabel(SAY.claimedHeading)}${claimed.map(e => `<p>${esc(recallQuestionText(e.inst.item))}</p>`).join('')}</div>` : '';
+}
+// the "my answer means the same" buttons among the answers listed after a finished run: `again(at, askId)` shows the run with that answer counted
+function wireClaims(again){
+  on('[data-claim][data-claim-at]', el => again(Number(el.dataset.claimAt), el.dataset.claim));
 }
 // the lesson after this one in part order, or null
 function nextLessonOf(data, lesson){

@@ -26,7 +26,7 @@ export const SUBJECT = obj(
     danger: obj({ slip: str, facet: str, risky: str, real: str }) });
 function idTitle() { return obj({ id: str, title: str }); }
 
-/* blocks (26.1.2): prose, pair, document, figure, article, chart, panel and message so far */
+/* blocks (26.1.2): prose, pair, document, figure, article, chart, panel, message and spoken so far */
 // a line that can be tapped or marked; `para` starts a new paragraph, `fine` is small print, `slip` names the slip of tapping it when it is not the line
 // (`me` marks a line you sent, in a thread)
 const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str, me: bool });
@@ -83,8 +83,14 @@ export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
 // a tap ask (tap.js): the lines of the question, or of the block named by `in`, become tappable; `right` is the lines that decide it, or 'none'
 export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(str, arr(str)) }, { in: str, pick: int, none: text, when: obj({ ask: str, is: arr(str) }) });
 
-// a line the learner writes (text-view.js): built so far with a `model` line to compare with; accepted answers (`accept`, `count`) are built with Civics
-export const TEXT = obj({ id: str, kind: en('text'), prompt: text }, { model: text, accept: any, count: int, when: obj({ ask: str, is: arr(str) }) });
+// a text ask is a line the learner writes against a `model` (text-view.js, never scored), or an answer from memory checked against what a list accepts
+// (`accept`, recall.js): each accepted answer is words (brackets are optional), or words said in parts in any order; or `{ own }`, the answer the
+// learner entered in the form into `answers`; `count` is how many different ones a question wants
+export const ACCEPT_ENTRY = either(str, obj({ text: str, parts: arr(str) }));
+export const TEXT = obj({ id: str, kind: en('text'), prompt: text },
+  { model: text, accept: either(arr(ACCEPT_ENTRY), obj({ own: str })), count: int, when: obj({ ask: str, is: arr(str) }) });
+// a question read aloud (speech-view.js); `show: false` holds its words back behind "Show the words"
+export const SPOKEN = obj({ kind: en('spoken'), text: str }, { show: bool });
 
 // a number ask (number.js): one blank in the frame for each value of the answer; a value is a number or the name of one the question makes
 const VALUE = either(num, str);
@@ -114,7 +120,7 @@ const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffl
   { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });
 const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
 const CHECK = obj({ items: either(arr(REF), obj({ draw: obj({ strands: arr(str), n: int }) })), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
-  { spoken: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
+  { spoken: bool, recall: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds
 export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str }) };
 export const stepKind = step => Object.keys(STEPS).find(k => step && typeof step === 'object' && k in step);

@@ -1,8 +1,11 @@
-// US Civics & History: subject record (lesson standard 26.1). No lesson is built yet: the subject screen lists each part of the design
-// record as not built yet. endResult and parts are the design record's, word for word (V80, V71).
-FC.subject('civics', {
+// US Civics & History: subject record (lesson standard 26.1). Only the pilot, lesson 1, is built: the subject screen lists every other part of the
+// design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design record's, word for
+// word (V80, V71). The questions are the 128 of the 2025 civics test; each is a topic of its own (a question returns as itself), and each lesson names
+// the ones its part covers. The answers that depend on where the learner lives and who holds office are entered by the learner (own.answers); the app
+// stores no official's name.
+FC.subject("civics", {
   name: "US Civics & History",
-  rev: 5,
+  rev: 6,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -14,7 +17,9 @@ FC.subject('civics', {
     { rev: 4, date: "2026-10-07",
       change: "Plain, concrete writing: the key, the subject notes and the whole stories rewritten in plain words, with plain short names and shorter definitions." },
     { rev: 5, date: "2026-10-10",
-      change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." }
+      change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
+    { rev: 6, date: "2026-10-11",
+      change: "Step 9, recall and speech: the record holds the 17 questions of lesson 1, Who does what, each a topic that comes back as itself, the source of the list (USCIS form M-1778, 09/25, looked up 2026-10-11), the form for the answers that depend on where you live and who holds office, and the interview date the review counts its rounds from. Lesson 1 is added as the pilot." }
   ],
   endResult: "Read a news story about the US government and know who made the final call and whether they were allowed to; answer the citizenship interview questions.",
   parts: [
@@ -36,6 +41,46 @@ FC.subject('civics', {
   lists: {},
   facets: {},
   mix: [],
-  strands: [],
+  strands: [
+    { id: "q15", title: "Why the government has three branches" },
+    { id: "q16", title: "The three branches" },
+    { id: "q17", title: "Who leads the executive branch" },
+    { id: "q18", title: "Who writes laws" },
+    { id: "q19", title: "The two parts of Congress" },
+    { id: "q20", title: "A power of Congress" },
+    { id: "q40", title: "Who takes over from the president" },
+    { id: "q41", title: "A power of the president" },
+    { id: "q42", title: "The commander in chief" },
+    { id: "q43", title: "Who signs bills" },
+    { id: "q44", title: "Who vetoes bills" },
+    { id: "q45", title: "Who appoints federal judges" },
+    { id: "q46", title: "A part of the executive branch" },
+    { id: "q47", title: "What the Cabinet does" },
+    { id: "q50", title: "A part of the judicial branch" },
+    { id: "q51", title: "What the judicial branch does" },
+    { id: "q52", title: "The highest court" }
+  ],
+  // where the questions come from and the page that posts the answers that change (26.1 refs): looked up, not remembered
+  refs: [
+    { id: "list", text: "The official list of the 128 civics test questions and their accepted answers (USCIS form M-1778, 09/25)", value: "M-1778 (09/25)", asOf: "2026-10-11",
+      source: "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf" },
+    { id: "updates", text: "The page that posts the answers that change with elections and appointments", value: "uscis.gov/citizenship/testupdates", asOf: "2026-10-11",
+      source: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/check-for-test-updates" }
+  ],
+  // rounds about a week apart in the six weeks before the interview the learner entered (the design's principle 4)
+  review: { dateField: "answers.interviewDate" },
+  // the eight answers the list says will vary, in the list's own words, and the day of the interview (26.3)
+  own: {
+    answers: { into: "answers", fields: [
+      { id: "q23", label: "Who is one of your state’s U.S. senators now?", type: "text", hint: "Both names, with a semicolon between" },
+      { id: "q29", label: "Name your U.S. representative.", type: "text" },
+      { id: "q30", label: "What is the name of the Speaker of the House of Representatives now?", type: "text" },
+      { id: "q38", label: "What is the name of the President of the United States now?", type: "text" },
+      { id: "q39", label: "What is the name of the Vice President of the United States now?", type: "text" },
+      { id: "q57", label: "Who is the Chief Justice of the United States now?", type: "text" },
+      { id: "q61", label: "Who is the governor of your state now?", type: "text" },
+      { id: "q62", label: "What is the capital of your state?", type: "text" },
+      { id: "interviewDate", label: "The day of your interview", type: "date", optional: true }] }
+  },
   readingShare: 0.2
 });
