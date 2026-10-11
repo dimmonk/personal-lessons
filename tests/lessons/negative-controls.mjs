@@ -10,15 +10,15 @@ import { collectSite } from './site.mjs';
 import { DEFAULTS } from './paths.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
-import { FIXTURE_FILES, FIXTURE_DESIGN } from '../fixtures/fixture-subject/design.mjs';
+import { FIXTURE_FILES, FIXTURE_DESIGNS, FIXTURE_IDS } from '../fixtures/fixture-subject/design.mjs';
 
 const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
 
-// The test subject alone, loaded the way a real subject is, with the app's own site (V47) and a design record for it.
+// The test subjects alone, loaded the way a real subject is, with the app's own site (V47) and a design record for each.
 export async function baseline() {
   const loaded = await loadFromPublic(DEFAULTS.publicDir, { extra: FIXTURE_FILES.map(f => new URL(f, FIXTURE)) });
-  const data = { ...loaded, subjects: { fixture: plain(loaded.subjects.fixture) } };
-  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs: { fixture: FIXTURE_DESIGN }, held: null, committedHeld: null };
+  const data = { ...loaded, subjects: Object.fromEntries(FIXTURE_IDS.map(id => [id, plain(loaded.subjects[id])])) };
+  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs: FIXTURE_DESIGNS, held: null, committedHeld: null };
 }
 
 const redRules = result => [...new Set(result.failures.map(f => f.rule))].sort();

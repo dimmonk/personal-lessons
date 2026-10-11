@@ -119,8 +119,11 @@ function wholeCheck(app, run, wrong = []) {
   const last = app.lastCheck(d, 'fixture', l1);
   check(last.passed && last.right === 5 && last.total === 5, 'the last check is worked out from the record');
   for (let i = 0; i < 15; i++) app.recordTry('fixture', 'k-1', attempt(`x${i}`, 'practice', true));
-  check(app.itemsOf('fixture')['k-1'].tries.length === 12, 'an item keeps its last twelve tries');
-  check(app.firstTries('fixture').length === 12 + 4, 'a first try is the first of each question in a sitting');
+  check(app.itemsOf('fixture')['k-1'].tries.filter(t => t.context === 'practice').length === 12, 'an item keeps its last twelve tries');
+  check(app.firstTries('fixture').length === 12 + 1 + 4, 'a first try is the first of each question in a sitting');
+  for (let i = 0; i < 3; i++) app.recordTry('fixture', 'k-1', attempt(`y${i}`, 'check', true));
+  for (let i = 0; i < 14; i++) app.recordTry('fixture', 'k-1', attempt(`z${i}`, 'practice', true));
+  check(app.itemsOf('fixture')['k-1'].tries.filter(t => t.context === 'check').length === 4 && app.itemsOf('fixture')['k-1'].tries.filter(t => t.context === 'practice').length === 12, 'practice never pushes a check\'s tries out of the record: twelve are kept in each context');
 }
 {
   // the schedule: 2 days after the check, then 7, then 24, leaving after the third good day; a miss starts again

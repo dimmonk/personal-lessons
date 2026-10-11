@@ -1,13 +1,13 @@
 /* ===================== LESSONS: WHAT IS STORED, AND WHAT IS WORKED OUT FROM IT ===================== */
 // One practice record per subject (lesson standard 26.3). Every figure the app shows (done marks, check results, accuracy by
 // facet, slips, due dates) is computed from it; nothing is stored twice. Records are replaced, never edited in place.
-//   pl:<subject>:items   { [itemId or generatorId]: { tries: [Try] } }     the last twelve tries per item
+//   pl:<subject>:items   { [itemId or generatorId]: { tries: [Try] } }     the last twelve tries per item and context
 //   pl:<subject>:seen    { [lessonId]: { rev, at } }                       the revision last opened and the place (a step index)
-//   pl:<subject>:notes   the learner's private data for the subject (26.3); nothing writes it before the steps that need it
+//   pl:<subject>:notes   the learner's private data for the subject (26.3); today only Singing's range, written by the range exercise
 //   pl:log               [{ d, type, subject?, lesson?, rev? }]            at most 500, oldest dropped first
 // Try = { d, run, lesson, rev, engine, context, sup, seed?, a, r, ok, ms? }
 
-const MAX_TRIES = 12;
+const MAX_TRIES = 12;   // the last twelve tries of an item in each context, so a check's tries are never pushed out by practice
 const MAX_LOG = 500;
 
 const dayOf = date => `${date.getFullYear()}-${pad2(date.getMonth() + 1)}-${pad2(date.getDate())}`;
@@ -50,11 +50,18 @@ const rawTries = (subjectId, key) => (itemsOf(subjectId)[key] || { tries: [] }).
 const triesOf = (subjectId, key) => rawTries(subjectId, key).filter(isNewTry);
 const seenBefore = (subjectId, key) => triesOf(subjectId, key).length > 0;
 
+// The last twelve tries of each context, in the order they were made. Every sung question of a task shares one item, so without this a
+// lesson's practice would push its check out of the record, and the lesson would stop being done.
+function lastPerContext(tries){
+  const kept = new Set(Object.values(tries.reduce((byContext, t, i) => ({ ...byContext, [t.context]: [...(byContext[t.context] || []), i] }), {}))
+    .flatMap(indexes => indexes.slice(-MAX_TRIES)));
+  return tries.filter((_, i) => kept.has(i));
+}
 // attempt: { run, lesson, rev, context, sup, seed?, a, r, ok } -> the Try as stored
 function recordTry(subjectId, key, attempt){
   const entry = { d: today(), run: attempt.run, lesson: attempt.lesson, rev: attempt.rev, engine: FC.ENGINE, context: attempt.context,
     sup: !!attempt.sup, ...(attempt.seed !== undefined ? { seed: attempt.seed } : {}), a: attempt.a, r: attempt.r, ok: !!attempt.ok };
-  const tries = [...rawTries(subjectId, key), entry].slice(-MAX_TRIES);
+  const tries = lastPerContext([...rawTries(subjectId, key), entry]);
   itemsCache[subjectId] = { ...itemsOf(subjectId), [key]: { tries } };
   storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
   return entry;
@@ -85,6 +92,12 @@ function saveSeenLesson(subjectId, lessonId, entry){
   storageSave(`pl:${subjectId}:seen`, seenCache[subjectId]);
 }
 const notesOf = subjectId => storageRead(`pl:${subjectId}:notes`) || {};
+// The learner's private data is replaced whole, never edited in place: the notes with one field changed.
+function saveNote(subjectId, field, value){
+  storageSave(`pl:${subjectId}:notes`, { ...notesOf(subjectId), [field]: value });
+}
+// Singing's range (26.3): { low, high, set }, the lowest and highest notes the learner sang steadily, or null until it is measured
+const rangeOf = subjectId => notesOf(subjectId).range || null;
 
 /* ---------- the log (sessions; the export, E19) ---------- */
 const logOf = () => storageRead('pl:log') || [];

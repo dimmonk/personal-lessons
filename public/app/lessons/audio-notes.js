@@ -22,6 +22,19 @@ function noteToHz(note){
   const midi = 12 * (Number(m[3]) + 1) + AUDIO_NOTE_SEMITONES[m[1]] + accidental;
   return AUDIO_A4_HZ * Math.pow(2, (midi - 69) / 12);
 }
+// a note as its number on a piano, counting half-steps (A4 = 69), and back; sharps are used for the black keys
+const AUDIO_NOTE_NAMES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+function noteToMidi(note){
+  const m = AUDIO_NOTE_PATTERN.exec(String(note));
+  if(!m) throw new Error(`Sound: "${note}" is not a note (a letter A to G, an optional # or b, and an octave from 2 to 6)`);
+  return 12 * (Number(m[3]) + 1) + AUDIO_NOTE_SEMITONES[m[1]] + (m[2] === '#' ? 1 : m[2] === 'b' ? -1 : 0);
+}
+function midiToNote(midi){
+  if(!Number.isInteger(midi) || midi < 36 || midi > 95) throw new RangeError(`Sound: ${midi} is outside the notes from C2 to B6`);
+  return AUDIO_NOTE_NAMES[midi % 12] + (Math.floor(midi / 12) - 1);
+}
+// the number of a sound on the same scale, with the part of a half-step left over: 440 Hz is 69
+const hzToMidi = hz => 69 + 12 * Math.log2(hz / AUDIO_A4_HZ);
 // how far above (positive) or below the second sound the first is, in cents
 const centsBetween = (hz, refHz) => 1200 * Math.log2(hz / refHz);
 function centsToHz(hz, cents){ return hz * Math.pow(2, cents / 1200); }

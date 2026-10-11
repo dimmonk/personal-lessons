@@ -40,7 +40,7 @@ export const ITEM = obj(ITEM_FIELDS, ITEM_OPTIONAL);
 export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), make: fn }, ITEM_OPTIONAL);
 
 /* lessons */
-const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }));
+const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }), obj({ sing: obj({ task: str }, { seconds: int, maxSemitones: int, minSemitones: int, notes: int, maxStep: int, cents: int }), n: int }));
 const SUPPORT = obj({}, { panel: bool, line: bool, shown: bool, leave: int, estimateCheck: bool });
 const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffle') },
   { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });

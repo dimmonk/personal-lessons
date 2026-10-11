@@ -26,7 +26,7 @@ export function subjectView(data, subjectId) {
   return {
     data, engine: e, id: subjectId, label: subjectId, subject, meta,
     items: subject.items, gens: subject.gens, lessonList,
-    def: id => subject.items[id] || subject.gens[id],
+    def: id => e.definitionOf(subject, id),
     get lessons() { return once('lessons', () => lessonList.map(l => lessonView(data, subjectId, l))); },
     get partIds() { return once('partIds', () => meta.parts.map(p => p.id)); },
     get listIds() { return once('listIds', () => Object.fromEntries(Object.entries(meta.lists).map(([k, v]) => [k, v.map(o => o.id)]))); },

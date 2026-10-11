@@ -7,6 +7,8 @@ const item = (id, ...rest) => ['subjects', F, 'items', id, ...rest];
 const gen = (id, ...rest) => ['subjects', F, 'gens', id, ...rest];
 const lesson = (id, ...rest) => ['subjects', F, 'lessons', id, ...rest];
 const meta = (...rest) => ['subjects', F, 'meta', ...rest];
+// the sung test subject
+const sung = (id, ...rest) => ['subjects', 'chorus', 'lessons', id, ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
@@ -52,6 +54,13 @@ export const CONTROLS = [
   { rule: 'V75', name: 'a slip that gives the answer', data: (d, h) => h.setIn(d, gen('g-chance', 'asks', 0, 'options', 1, 'value'), 'days') },
   { rule: 'V76', name: 'a group with no dry forecast', data: (d, h) => h.setIn(d, lesson('l1', 'flow', 2, 'set', 'items'), ['c-1', 'c-3']) },
   { rule: 'V77', name: 'a topic one question short of its returns', data: (d, h) => h.removeIn(h.removeIn(d, item('b-3')), item('b-4')) },
+  { rule: 'V70', name: 'a sung task that is not one', data: (d, h) => h.setIn(d, sung('l1', 'flow', 4, 'set', 'items', 0, 'sing', 'task'), 'whistle') },
+  { rule: 'V78', name: 'a hold of 9 seconds', data: (d, h) => h.setIn(d, sung('l1', 'flow', 4, 'set', 'items', 0, 'sing', 'seconds'), 9) },
+  { rule: 'V78', name: 'an interval too wide for the narrowest range', data: (d, h) => h.setIn(d, sung('l2', 'flow', 2, 'set', 'items', 0, 'sing'), { task: 'interval', minSemitones: 11, maxSemitones: 12 }) },
+  { rule: 'V78', name: 'a lesson that sings with no warm-up first', data: (d, h) => h.removeIn(d, sung('l1', 'flow', 0)) },
+  { rule: 'V78', name: 'a warm-up in the check', data: (d, h) => h.setIn(d, sung('l1', 'check', 'items'), [{ sing: { task: 'match' }, n: 2 }, { sing: { task: 'warmup' }, n: 1 }]) },
+  { rule: 'V78', also: ['V79'], name: 'a check that shows the line', data: (d, h) => h.setIn(d, sung('l1', 'check', 'support'), { line: true }) },
+  { rule: 'V78', name: 'a sung check that shows its result only at the end', data: (d, h) => h.setIn(d, sung('l1', 'check', 'feedback'), 'at-end') },
   { rule: 'V79', name: 'a lesson whose last group still has help', data: (d, h) => h.setIn(d, lesson('l1', 'flow', 3, 'set', 'support'), { shown: true }) },
   { rule: 'V80', name: 'an end result with one word changed',
     data: (d, h) => h.setIn(d, meta('endResult'), 'Read a one-line weather forecast and decide, in a few seconds, whether to bring a raincoat.') },

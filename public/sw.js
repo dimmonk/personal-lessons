@@ -2,13 +2,14 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v14';
+const CACHE = 'fieldcraft-v15';
 const SHELL = [
   './', 'manifest.json', 'app.css', 'app/helpers.js', 'app/registry.js', 'subjects/civics/subject.js',
   'subjects/ideology/subject.js', 'subjects/math/subject.js', 'subjects/psychology/subject.js', 'subjects/scams/subject.js',
-  'subjects/singing/subject.js', 'subjects/stats/subject.js', 'subjects/wealth/subject.js', 'app/lessons/view.js',
-  'app/lessons/gen.js', 'app/lessons/rules.js', 'app/lessons/records.js', 'app/lessons/schedule.js', 'app/lessons/sets.js',
-  'app/lessons/item-view.js', 'app/lessons/queue.js', 'app/lessons/player.js', 'app/lessons/review.js', 'app/state.js',
+  'subjects/singing/subject.js', 'subjects/singing/l2.lesson.js', 'subjects/stats/subject.js', 'subjects/wealth/subject.js', 'app/lessons/view.js',
+  'app/lessons/gen.js', 'app/lessons/rules.js', 'app/lessons/sing-task.js', 'app/lessons/sing-score.js', 'app/lessons/records.js',
+  'app/lessons/schedule.js', 'app/lessons/sets.js', 'app/lessons/item-view.js', 'app/lessons/sing-strip.js', 'app/lessons/queue.js',
+  'app/lessons/sing-run.js', 'app/lessons/player.js', 'app/lessons/review.js', 'app/state.js',
   'app/shell.js', 'app/library.js', 'app/subject.js', 'app/progress.js', 'app/search.js', 'app/lessons/audio-notes.js',
   'app/lessons/audio-pitch.js', 'app/lessons/audio-synth.js', 'app/lessons/audio-meter.js', 'app/init.js', 'fonts/fonts.css',
   'fonts/bricolage-grotesque-latin.woff2', 'fonts/literata-latin.woff2', 'fonts/jetbrains-mono-latin.woff2', 'icons/favicon.svg',

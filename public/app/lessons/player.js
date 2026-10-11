@@ -108,11 +108,20 @@ const lessonOwner = () => () => ({ lesson: LESSON.lesson.id, rev: LESSON.lesson.
 function startSet(step){
   const { subj, data, lesson } = LESSON, set = step.set, run = newRunId();
   const list = buildSet(data, subj.id, lesson, set, run, { again: LESSON.again === true });
-  startQueue({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: 'after-each', support: set.support || null, redo: true,
-    owner: lessonOwner(), shell: lessonShell, onDone: log => paintBreak(log) });
+  const next = () => LESSON.again ? goOnAgain() : goOn();
+  startQueueWithRange({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: 'after-each', support: set.support || null, redo: true,
+    owner: lessonOwner(), shell: lessonShell, onDone: log => log.every(e => e.unscored) ? next() : paintBreak(log) });
+}
+// A sung run needs the learner's range; when it is not set yet, the range exercise runs first and the run follows it (26.1.1).
+// The range try belongs to the lesson's practice, not to the run it opens, so a check's size and result are not changed by it.
+function startQueueWithRange(opts){
+  const needs = opts.list.some(i => i.item.asks.some(a => a.kind === 'sing' && SING_NEEDS_RANGE.includes(a.task)));
+  if(!needs || rangeOf(opts.subj.id)) return startQueue(opts);
+  const run = newRunId(), range = instanceOf(opts.data, { sing: { task: 'range' }, n: 1 }, freshSeed(opts.subj.id, 'sing-range', run, 0));
+  startQueue({ ...opts, list: [range], run, context: 'practice', support: null, redo: false, feedback: 'after-each', keepMic: true, onDone: () => startQueue(opts) });
 }
 function paintBreak(log){
-  const firsts = log.filter(e => e.first), ok = firsts.filter(e => e.ok).length;
+  const firsts = log.filter(e => e.first && !e.unscored), ok = firsts.filter(e => e.ok).length;
   const more = LESSON.again ? nextSetAt() >= 0 : true;
   lessonShell(`<div class="done-screen"><h2>${esc(SAY.breakTitle)}</h2><p>${esc(SAY.groupResult(ok, firsts.length))}</p><p>${esc(SAY.breakLine)}</p></div>`, nextAction(more ? SAY.goOn : SAY.toSubject));
   on('#fwd', () => LESSON.again ? goOnAgain() : goOn());
@@ -145,8 +154,8 @@ function goOnAgain(){
 /* ---------- the end check ---------- */
 function paintCheckIntro(){
   const { data, lesson } = LESSON, check = lesson.check, n = checkSize(check);
-  const rules = check.pass.map(rule => `<li>${esc(ruleText(data, rule))}</li>`).join('');
-  lessonShell(`${heading(SAY.checkHeading, lesson.title)}<div class="lesson"><p>${esc(SAY.checkIntro(n))}</p><ul>${rules}</ul>
+  const rules = check.pass.map(rule => `<li>${esc(ruleText(data, rule, rightWord(check)))}</li>`).join('');
+  lessonShell(`${heading(SAY.checkHeading, lesson.title)}<div class="lesson"><p>${esc(checkIsSung(check) ? SAY.checkIntroSung(n) : SAY.checkIntro(n))}</p><ul>${rules}</ul>
     ${check.feedback === 'at-end' ? `<p>${esc(SAY.checkNoFeedback)}</p>` : ''}</div>`, nextAction(SAY.checkStart));
   on('#fwd', startCheck);
 }
@@ -159,12 +168,12 @@ const flowSetIds = lesson => flowSets(lesson).flatMap(set => flatRefs(set.items)
 function startCheck(){
   const { subj, data, lesson } = LESSON, run = newRunId();
   LESSON = { ...LESSON, run };
-  startQueue({ subj, data, list: checkInstances(run), run, context: 'check', feedback: lesson.check.feedback, support: null, redo: false,
+  startQueueWithRange({ subj, data, list: checkInstances(run), run, context: 'check', feedback: lesson.check.feedback, support: null, redo: false,
     owner: lessonOwner(), shell: lessonShell, onDone: log => paintCheckResult(log) });
 }
 // "8 of 10: passed", each rule met or not, then every answer with the misses first (when the answers were held back)
 function paintCheckResult(log){
-  const { subj, data, lesson } = LESSON, result = checkResult(data, lesson.check.pass, queueOutcomes(log));
+  const { subj, data, lesson } = LESSON, sung = checkIsSung(lesson.check), result = checkResult(data, lesson.check.pass, queueOutcomes(log), rightWord(lesson.check));
   logEvent('check', { subject: subj.id, lesson: lesson.id, rev: lesson.rev });
   const rows = result.lines.map(l => `<tr><td>${esc(l.text)}</td><td>${esc(l.met ? SAY.ruleMet : SAY.ruleNotMet)}</td></tr>`).join('');
   const each = lesson.check.feedback === 'at-end' ? `<div class="vblock"><span class="m">${esc(SAY.checkEveryAnswer)}</span></div>${checkAnswersHtml(data, log)}` : '';
@@ -174,7 +183,7 @@ function paintCheckResult(log){
     <button class="btn ghost" data-v="subject">${esc(SAY.toSubject)}</button></div>`;
   LESSON = { ...LESSON, at: stepTotal(lesson) - 1 };
   saveLessonPlace();
-  lessonShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total) : SAY.checkNotYet(result.right, result.total))}</h2>
+  lessonShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total, sung) : SAY.checkNotYet(result.right, result.total))}</h2>
     <table class="k results">${rows}</table></div>${each}`, actions);
   on('#toNext', () => openLesson(subj, next.id));
   on('#again', () => { LESSON = { ...LESSON, at: checkStep(lesson) }; paintCheckIntro(); window.scrollTo(0, 0); });

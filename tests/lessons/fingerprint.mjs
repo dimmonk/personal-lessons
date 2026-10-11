@@ -19,7 +19,10 @@ export function lessonFingerprint(data, subjectId, lessonId) {
   });
   const drawn = e.checkIsDrawn(lesson.check);
   if (!drawn) e.flatRefs(lesson.check.items).forEach(r => named.add(e.refId(r)));
+  // a sung question is made by the app from the task the lesson names, which the lesson's own fingerprint already holds; a name with
+  // no item or generator behind it is V70's to report, and is left out here so the lock does not stop on it
   const defs = id => subject.items[id] || subject.gens[id];
+  [...named].filter(id => !defs(id)).forEach(id => named.delete(id));
   const strands = new Set([...named].map(id => defs(id).strand).concat(drawn ? lesson.check.items.draw.strands : []));
   // the items held in reserve for those strands come back as the review's questions, so a change to one is a change to what is taught
   const reserve = [...Object.values(subject.items), ...Object.values(subject.gens)].filter(d => strands.has(d.strand)).map(d => d.id);

@@ -12,7 +12,7 @@ export const NOT_BUILT = {
   'a baseline lesson': 'step 8 (Scams)', 'an own step': 'step 4 (Wealth)', 'a timed group': 'step 8 (Scams)', 'a busy task': 'step 8 (Scams)',
   'a saved plan': 'step 8 (Scams)', 'a spoken check': 'step 9 (Civics)', 'a check with a time': 'step 8 (Scams)',
   'a subject that times its items': 'step 8 (Scams)', 'the interview date': 'step 9 (Civics)',
-  'a panel, line or estimate prompt': 'steps 2, 3, 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
+  'a panel or estimate prompt': 'steps 3, 6 and 7', 'requirements found or missing': 'steps 6 and 7', 'an interview fact': 'step 9 (Civics)',
   'a picture added to feedback': 'steps 3 and 5'
 };
 
@@ -20,6 +20,7 @@ export const NOT_BUILT = {
 function blockProblems(block, where, kinds) {
   if (!block || typeof block !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(block.kind)) return [`${where} has a block of kind "${block.kind}", which is not built (built: ${kinds.join(', ')})`];
+  if (block.kind === 'pitch') return [`${where} is a pitch block, which only a sung question the app makes from a { sing } task may carry`];
   if (block.kind === 'prose') {
     return [...show(checkShape(block, PROSE, where)), ...('text' in block) === ('lines' in block) ? [`${where} must have exactly one of text and lines`] : []];
   }
@@ -29,6 +30,7 @@ function blockProblems(block, where, kinds) {
 function askProblems(ask, where, kinds, listIds) {
   if (!ask || typeof ask !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(ask.kind)) return [`${where} has an ask of kind "${ask.kind}", which is not built (built: ${kinds.join(', ')})`];
+  if (ask.kind === 'sing') return [`${where} is a sing ask, which only a sung question the app makes from a { sing } task may carry`];
   const problems = show(checkShape(ask, CHOOSE, where));
   if (('options' in ask) === ('from' in ask)) problems.push(`${where} must have exactly one of options and from`);
   if ('from' in ask) {
@@ -69,6 +71,10 @@ function itemProblems(item, where, ctx, isGen) {
 }
 
 function refProblems(ref, where, ctx) {
+  if (typeof ref === 'object' && ref !== null && 'sing' in ref) {   // the limits of the task are V78's
+    return [...(ctx.engine.SING_TASKS.includes(ref.sing.task) ? [] : [`${where}: "${ref.sing.task}" is not a sung task (${ctx.engine.SING_TASKS.join(', ')})`]),
+      ...(ref.n >= 1 ? [] : [`${where}: a sung task is asked at least once`])];
+  }
   const id = ctx.engine.refId(ref);
   if (typeof ref === 'string') return ctx.subject.items[id] ? [] : [`${where}: "${id}" is not an item of the subject`];
   return ctx.subject.gens[id] ? [] : [`${where}: "${id}" is not a generator of the subject`];
@@ -76,8 +82,8 @@ function refProblems(ref, where, ctx) {
 
 function supportProblems(support, where) {
   if (!support) return [];
-  const unbuilt = ['panel', 'line', 'estimateCheck'].filter(k => support[k]);
-  return unbuilt.length ? [`${where} uses ${unbuilt.join(', ')}, which is built in ${NOT_BUILT['a panel, line or estimate prompt']}`] : [];
+  const unbuilt = ['panel', 'estimateCheck'].filter(k => support[k]);
+  return unbuilt.length ? [`${where} uses ${unbuilt.join(', ')}, which is built in ${NOT_BUILT['a panel or estimate prompt']}`] : [];
 }
 
 function stepProblems(step, where, ctx) {

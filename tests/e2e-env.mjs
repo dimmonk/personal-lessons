@@ -2,6 +2,7 @@
 // that leaves the page, and the ways to drive a lesson through its visible controls. Nothing here asserts; the checks do.
 import { APP_JARGON, abstractIn } from './plain-words.mjs';
 import { britishIn } from './american.mjs';
+import { startRecorder } from './fixtures/audio-recorder.mjs';
 
 export const WIDTHS = [360, 390, 768, 1200, 1600];
 
@@ -26,9 +27,12 @@ export function makeEnv(browser, server) {
     return { id, failures, get count() { return count; }, check(ok, msg) { count += 1; if (!ok) failures.push(`${id}: ${msg}`); } };
   };
 
-  env.freshPage = async (c, width = 390) => {
+  // opts.recorder: a mode of startRecorder (tests/fixtures/audio-recorder.mjs); the sound system and the microphone are then watched, and the
+  // microphone answers from a sound the test chooses
+  env.freshPage = async (c, width = 390, opts = {}) => {
     const context = await browser.newContext({ viewport: { width, height: 800 }, serviceWorkers: 'block' });
     await context.addInitScript(SKEW_SCRIPT);
+    if (opts.recorder) await context.addInitScript(startRecorder, opts.recorder);
     const outside = [];
     await context.route('**/*', route => {
       const url = route.request().url();

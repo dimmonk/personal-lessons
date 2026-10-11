@@ -3,8 +3,8 @@
 // (lesson standard 26.1, 26.2, 26.5). No page and no storage here. `data` is a registered subject: FC.get(id).
 
 // The ask kinds and block kinds built so far (26.8). A lesson that uses another fails V70 until its step is built.
-const ASK_KINDS = ['choose'];
-const BLOCK_KINDS = ['prose', 'pair'];
+const ASK_KINDS = ['choose', 'sing'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (26.4)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));
@@ -28,7 +28,7 @@ function scoreChoose(data, ask, answer){
   const slipped = chosen.map(id => options.find(o => o.id === id)).find(o => o && !o.ok && o.slip);
   return slipped ? slipped.slip : 'no';
 }
-const SCORERS = { choose: scoreChoose };
+const SCORERS = { choose: scoreChoose, sing: (data, ask, answer) => scoreSing(data, ask, answer) };
 
 // An ask opens only when the one it depends on was answered with one of the named options.
 const askApplies = (ask, answers) => !ask.when || (ask.when.ask in answers && asList(answers[ask.when.ask]).some(id => ask.when.is.includes(id)));
@@ -79,26 +79,30 @@ function ruleMet(rule, outcomes){
 const facetValueText = (data, facet, value) => (((data.meta.facets || {})[facet] || { values: [] }).values.find(v => v.id === value) || { text: value }).text;
 const slipText = (data, slip) => ((((data.meta.lists || {}).slip) || []).find(s => s.id === slip) || { text: slip }).text;
 // A pass rule in plain words, for the check's first screen and its result: "At least 8 right", "None wrong among control patterns".
-function ruleText(data, rule){
+// A sung check says "on the note" where others say "right" (the caller passes the word).
+function ruleText(data, rule, right = 'right'){
   const scope = rule.where ? ' among ' + Object.entries(rule.where).map(([f, v]) => facetValueText(data, f, v)).join(', ') : '';
   const parts = [
-    ...(rule.right ? [`At least ${rule.right.min} right${scope}`] : []),
+    ...(rule.right ? [`At least ${rule.right.min} ${right}${scope}`] : []),
     ...(rule.wrong ? [rule.wrong.max === 0 ? `None wrong${scope}` : `At most ${rule.wrong.max} wrong${scope}`] : []),
     ...(rule.slip ? [(rule.max || 0) === 0 ? `None ${slipText(data, rule.slip)}${scope}` : `At most ${rule.max} ${slipText(data, rule.slip)}${scope}`] : [])];
   return parts.join('; ');
 }
 // The result of a run: how many were right, whether every rule is met, and each rule in words.
-function checkResult(data, rules, outcomes){
-  const lines = rules.map(rule => ({ text: ruleText(data, rule), met: ruleMet(rule, outcomes) }));
+function checkResult(data, rules, outcomes, right = 'right'){
+  const lines = rules.map(rule => ({ text: ruleText(data, rule, right), met: ruleMet(rule, outcomes) }));
   return { right: outcomes.filter(o => o.ok).length, total: outcomes.length, passed: lines.every(l => l.met), lines };
 }
 
 /* ---------- a lesson's shape, read by the player and the validator ---------- */
 const supportWeight = s => s ? (s.shown ? 1 : 0) + (s.panel ? 1 : 0) + (s.line ? 1 : 0) + (s.estimateCheck ? 1 : 0) + (s.leave || 0) : 0;
-const refCount = ref => typeof ref === 'object' && ref !== null && 'gen' in ref ? ref.n : 1;
+const refCount = ref => typeof ref === 'object' && ref !== null ? ref.n : 1;
 // Item references of a list, pairs flattened: [ItemRef]
 const flatRefs = items => items.flatMap(r => Array.isArray(r) ? r : [r]);
 const checkIsDrawn = check => !Array.isArray(check.items);
+// a check of sung questions says "on the note" where others say "right"
+const checkIsSung = check => !checkIsDrawn(check) && flatRefs(check.items).some(r => typeof r === 'object' && r !== null && 'sing' in r);
+const rightWord = check => checkIsSung(check) ? 'on the note' : 'right';
 function checkSize(check){
   return checkIsDrawn(check) ? check.items.draw.n : flatRefs(check.items).reduce((n, r) => n + refCount(r), 0);
 }

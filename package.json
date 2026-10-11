@@ -5,7 +5,7 @@
   "scripts": {
     "icons": "node scripts/render-icons.mjs",
     "test:data": "node tests/validate-data.mjs && node tests/engine-pure.mjs",
-    "test:audio": "node tests/audio-pure.mjs",
+    "test:audio": "node tests/audio-pure.mjs && node tests/sing-pure.mjs",
     "test:lessons": "node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs",
     "test:e2e": "node tests/e2e.mjs",
     "lock": "node tests/lessons/lock.mjs",

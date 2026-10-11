@@ -22,7 +22,7 @@
       "fp": "sha256:206f8b1be88ae1f5a7b2b6ccddf305d84f0d5f558176044add613cd76fd7de23"
     },
     "singing": {
-      "rev": 2,
+      "rev": 3,
       "fp": "sha256:0bc7ee4bbf2b64ae6383411dd928d016b8edd15de32fb7e03a3e373c682469af"
     },
     "stats": {
@@ -34,5 +34,10 @@
       "fp": "sha256:c815ef3fea8dd9e60382f5534ee47db2cb209839fb134d4de57bb5b3746deb88"
     }
   },
-  "lessons": {}
+  "lessons": {
+    "singing/l2": {
+      "rev": 1,
+      "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
+    }
+  }
 }

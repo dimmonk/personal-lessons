@@ -269,3 +269,12 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .row.notbuilt:hover .t{color:var(--dim)}
 [data-practice-record] table.k.results{max-width:none}
 [data-practice-record] .btn{margin-top:4px}
+
+/* ---------- a sung question ---------- */
+.block-pitch{display:flex;flex-direction:column;gap:6px}
+.pitchstrip{display:block;width:100%;height:auto;background:var(--raised);border:1px solid var(--border)}
+.pitchstrip .mid{stroke:var(--rule);stroke-width:1}
+.pitchstrip .bar{fill:var(--accent);opacity:.4}
+.pitchstrip .voice{fill:none;stroke:var(--text);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.singask .btn{align-self:flex-start;width:auto;padding:0 22px}
+.singsay{margin:0;min-height:1.5em;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--dim)}

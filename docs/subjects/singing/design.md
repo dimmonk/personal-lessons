@@ -110,4 +110,7 @@ with the line hidden, then the part's check. About eight to ten minutes. A straw
 The weekly review for Singing is a short round of the checks of the lessons done, not questions (R8: review in the real form).
 
 ## Gates 6 and 7
-Not started. Lesson 2 is the pilot; it needs the app capabilities of gate 3 first.
+Gate 6, in progress: the app capabilities of gate 3 are built (lesson standard 26.10, step 2) and lesson 2, "Match a note", is in the app as a
+draft (2026-10-10): a warm-up, a screen on how a try goes, eight tries with the line, eight without, and the check (4 of 5 on the note, without
+the line). It opens with the range exercise when no range is stored. It waits for the owner's try on a phone: `tried.pilot` stays null, and
+lessons 1 and 3 to 7 are not written, until the owner has tried it and said what it did. Gate 7: not started.

@@ -21,7 +21,7 @@ function pairHtml(block, ctx){
   return `<div class="block-pair"><div class="pairgrid"><div class="pairside">${blockHtml(block.a, ctx)}</div><div class="pairside">${blockHtml(block.b, ctx)}</div></div>
     <p class="compare"><span class="m lab">${esc(SAY.compare)}</span>${esc(paras(block.compare).join(' '))}</p></div>`;
 }
-const BLOCK_HTML = { prose: proseHtml, pair: pairHtml };
+const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
@@ -41,19 +41,20 @@ function chooseHtml(data, ask, st){
   return `<div class="stepopen prompt" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>
     <span class="forline">${esc(ask.many ? SAY.chooseMany : SAY.chooseOne)}</span><div class="opts">${buttons}</div>${submit}</div>`;
 }
-const ASK_HTML = { choose: chooseHtml };
+const ASK_HTML = { choose: chooseHtml, sing: (data, ask, st) => singAskHtml(data, ask, st) };
 
 /* ---------- the item ---------- */
 // The item as it stands: its blocks (deciding words marked when `deciding` is on), then the asks open now, then, once
-// `feedback` is given, the feedback. state: { a, many, marks, feedback: html|'' , support }
+// `feedback` is given, the feedback. state: { a, many, marks, feedback: html|'' , support, sing }
+// `sing` is the view of a sung question (sing-run.js): the strip and the controls are drawn from it.
 function itemHtml(data, inst, state){
   const item = inst.item, support = state.support || null;
   const open = openAsks(item, support, state.a);
   const marked = state.marks || (support && support.shown);
-  const ctx = { deciding: marked ? item.deciding || [] : [] };
+  const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null };
   const steps = shownStepsHtml(item, support);
   const hint = support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '';
-  const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks })).join('');
+  const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, sing: state.sing })).join('');
   return `<div class="item" data-item="${esc(inst.key)}" ${inst.seed === undefined ? '' : `data-seed="${inst.seed}"`}>
     ${blocksHtml(item.blocks, ctx)}${hint}${steps}<div class="asks">${asks}</div>${state.feedback || ''}</div>`;
 }
@@ -70,20 +71,24 @@ function shownStepsHtml(item, support){
 // the learner's own choice; then what the item has of: the consequence of the right action, what you would need to see, the working.
 function feedbackHtml(data, inst, support, answers, score){
   const item = inst.item, asked = askedAsks(item, support).filter(a => a.id in score.r);
-  const marks = asked.map(a => {
-    const options = chooseOptions(data, a), right = options.filter(o => o.ok).map(o => o.text);
-    const ok = score.r[a.id] === 'ok';
-    return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;
-  }).join('');
+  const marks = asked.map(a => markHtml(data, a, answers[a.id], score.r[a.id])).join('');
   const misses = asked.filter(a => score.r[a.id] !== 'ok').map(a => missLine(data, a, answers[a.id], score.r[a.id])).join('');
-  const consequences = asked.flatMap(a => chooseOptions(data, a).filter(o => o.ok && o.then).map(o => o.then));
+  const consequences = asked.filter(a => a.kind === 'choose').flatMap(a => chooseOptions(data, a).filter(o => o.ok && o.then).map(o => o.then));
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   return `<div class="feedback" data-feedback><div class="marks">${marks}</div>
     ${block(SAY.whyLabel, paras(item.reason))}${misses}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${working}</div>`;
 }
+// one ask's mark: right, or the right answer (a choice); the words for how the voice sat (a sung answer)
+function markHtml(data, ask, answer, result){
+  const ok = result === 'ok';
+  if(ask.kind === 'sing') return singMarksHtml(ask, answer, ok);
+  const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text);
+  return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;
+}
 // "You chose X. <what happens>" for a wrong answer; a slip with no line of its own is named from the subject's list of slips
 function missLine(data, ask, answer, result){
+  if(ask.kind === 'sing') return singMissHtml(ask, answer);
   const options = chooseOptions(data, ask), chosen = asList(answer).map(id => options.find(o => o.id === id)).filter(o => o && !o.ok);
   const lines = chosen.map(o => `<p><b>${esc(SAY.youChose)}: ${esc(o.text)}.</b> ${esc(o.then ? paras(o.then).join(' ') : o.slip ? SAY.slipLine(slipText(data, o.slip)) : '')}</p>`);
   return lines.length ? `<div class="vblock">${lines.join('')}</div>` : '';

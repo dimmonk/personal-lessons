@@ -1,6 +1,6 @@
 /* ===================== SUBJECT SCREEN ===================== */
 // Lesson standard 26.5: the end result in a sentence; the lessons in part order, each with its title, revision, draft line and state;
-// a part with no lesson yet says so; practice again on a done lesson; the results.
+// a part with no lesson yet says so; practice again on a done lesson; the learner's own data; the results.
 
 // "Check passed, 8 of 10, Oct 12", "Step 3 of 6", or "Not started"
 function lessonStateLine(subj, l){
@@ -44,6 +44,14 @@ function againSection(subj){
       <span class="tf"><b>${esc(SAY.practiceAgain)}</b>${icon('arrow', 14)}</span></button>`).join('')}</div>`;
 }
 
+// the learner's own data (26.3, 26.5): today only Singing's range, measured by the range exercise
+function ownDataSection(subj){
+  const range = rangeOf(subj.id);
+  if(!range) return '';
+  return `<div class="sect top"><span class="m">${esc(SAY.yourRange)}</span></div>
+    <table class="k results" data-own="range"><tr><td>${esc(SAY.yourRange)}</td><td>${esc(SAY.rangeIs(range.low, range.high))}</td></tr></table>`;
+}
+
 function renderSubject(subj){
   const done = partsDone(subj), total = subj.parts.length, resume = resumePoint(subj);
   const hasRecord = allTries(subj.id).length > 0;
@@ -75,6 +83,8 @@ function renderSubject(subj){
     <div class="rows">${courseRows(subj)}</div>
 
     ${againSection(subj)}
+
+    ${ownDataSection(subj)}
 
     ${hasRecord ? `<div style="padding-top:26px"><button class="row sm" data-v="results">
         <span style="color:var(--label);display:flex">${icon('bars',18)}</span>

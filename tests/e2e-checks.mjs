@@ -1,7 +1,10 @@
-// The browser checks of lesson standard 26.7 built in step 1: X1, X2, X3, X5, X21, X22, X23. Each is a function of the environment
+// The browser checks of lesson standard 26.7 built in step 1: X1, X2, X3, X5, X21, X22, X23; the sound checks of step 2 (X8, X10, X11, X12,
+// X16) are in tests/e2e-sing.mjs and listed here with them. Each is a function of the environment
 // (e2e-env.mjs) that drives the real app, in Chromium, with the test subject loaded, and returns its checker: how many assertions it
 // made and which failed. tests/e2e-controls.mjs runs every one of them against the app with a seeded fault and requires exactly
 // that check to go red.
+
+import { SOUND_CHECKS } from './e2e-sing.mjs';
 
 // A Monday. Reviews run Monday to Sunday, so the tests that move through days start on one and name the days they move to.
 const MONDAY = '2026-11-02', WEDNESDAY = '2026-11-04', SUNDAY = '2026-11-08', NEXT_MONDAY = '2026-11-09';
@@ -125,7 +128,7 @@ export async function X5(env) {
   const seen = JSON.parse(stored['pl:fixture:seen'] || '{}');
   c.check(Object.values(seen).length > 0 && Object.values(seen).every(e => JSON.stringify(Object.keys(e).sort()) === '["at","rev"]'), 'a place holds more than the revision and the step');
   const items = JSON.parse(stored['pl:fixture:items'] || '{}');
-  c.check(Object.values(items).every(e => Object.keys(e).join() === 'tries' && e.tries.length <= 12), 'the practice record is not { tries } with at most twelve each');
+  c.check(Object.values(items).every(e => Object.keys(e).join() === 'tries' && Object.values(e.tries.reduce((n, t) => ({ ...n, [t.context]: (n[t.context] || 0) + 1 }), {})).every(n => n <= 12)), 'the practice record is not { tries } with at most twelve of each context per item');
   await context.close();
   return c;
 }
@@ -265,4 +268,4 @@ export async function X23(env) {
   return c;
 }
 
-export const CHECKS = { X1, X2, X3, X5, X21, X22, X23 };
+export const CHECKS = { X1, X2, X3, X5, X21, X22, X23, ...SOUND_CHECKS };

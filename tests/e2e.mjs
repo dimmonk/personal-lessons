@@ -1,11 +1,12 @@
 // Drives the real app in Chromium. Run: npm run test:e2e
-//   1. every browser check of 26.7 built so far (e2e-checks.mjs), on the app with the test subject loaded;
+//   1. every browser check of 26.7 built so far (e2e-checks.mjs, and the sound checks of e2e-sing.mjs), on the app with the test subjects loaded;
 //   2. the installable app: its name, manifest, service worker, offline load and fonts;
 //   3. every seeded fault (e2e-controls.mjs): the app with one fault in it must turn exactly one check red.
 import { chromium } from 'playwright';
 import { startServer } from './static-server.mjs';
 import { makeEnv } from './e2e-env.mjs';
 import { CHECKS } from './e2e-checks.mjs';
+import { SOUND_CHECKS, SOUND_LANES } from './e2e-sing.mjs';
 import { FAULTS, runWithFault } from './e2e-controls.mjs';
 
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
@@ -17,14 +18,19 @@ const browser = await chromium.launch();
 async function runChecks() {
   const server = await startServer({ fixture: true });
   const env = makeEnv(browser, server);
-  try {
-    for (const [id, run] of Object.entries(CHECKS)) {
+  const lane = async list => {
+    for (const [id, run] of list) {
       try {
         const c = await run(env);
         checks += c.count;
         failures.push(...c.failures);
       } catch (error) { failures.push(`${id} crashed: ${error.stack || error}`); }
     }
+  };
+  try {
+    // the sound checks spend their time waiting for real sound, so they run in lanes of their own, at the same time as the rest
+    const all = Object.entries(CHECKS), isSound = ([id]) => id in SOUND_CHECKS;
+    await Promise.all([lane(all.filter(e => !isSound(e))), ...SOUND_LANES.map(ids => lane(ids.map(id => [id, CHECKS[id]])))]);
   } finally { await server.close(); }
 }
 
@@ -78,8 +84,22 @@ async function testPwa() {
 }
 
 /* ---------- the seeded faults ---------- */
+// Faults in the sound code run the five sound checks, which spend minutes in real time on real sound: a few at a time, after the others,
+// so that a busy machine never makes a frame late. The others all run at once, as they always have.
+const SOUND_FAULTS_AT_ONCE = 3;
+async function inPool(items, limit, work) {
+  const out = [];
+  let next = 0;
+  await Promise.all(Array.from({ length: limit }, async () => {
+    for (let i = next++; i < items.length; i = next++) out[i] = await work(items[i]);
+  }));
+  return out;
+}
 async function testFaults() {
-  const results = await Promise.all(FAULTS.map(async fault => ({ fault, ...(await runWithFault(browser, fault)) })));
+  const run = async fault => ({ fault, ...(await runWithFault(browser, fault)) });
+  const quick = await Promise.all(FAULTS.filter(f => !f.only).map(run));
+  const slow = await inPool(FAULTS.filter(f => f.only), SOUND_FAULTS_AT_ONCE, run);
+  const results = [...quick, ...slow];
   for (const { fault, red, errors, unused } of results) {
     checks++;
     const exact = red.length === 1 && red[0] === fault.check && unused.length === 0;

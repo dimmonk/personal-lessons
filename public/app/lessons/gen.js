@@ -68,17 +68,20 @@ function itemFromGen(gen, seed, fixed){
   return { ...fillDeep(item, values), seed, values };
 }
 
-// What a lesson names: an item id, { gen, n, with? } or a pair of those. The instance the learner meets:
+// What a lesson names: an item id, { gen, n, with? }, { sing, n } or a pair of those. The instance the learner meets:
 // { key: id the tries are stored under, item, seed? }
-const refId = ref => typeof ref === 'string' ? ref : ref.gen;
+// A sung question (26.1.1) is named by its task: { sing: { task, ...params }, n }. Its stored id is singKey (sing-task.js).
+const refId = ref => typeof ref === 'string' ? ref : 'sing' in ref ? singKey(ref.sing) : ref.gen;
+// `ref` is kept on a made instance, so a missed question can be made again with new numbers or targets (queue.js)
 function instanceOf(data, ref, seed){
   if(typeof ref === 'string'){
     const item = data.items[ref] || lessonFail(`unknown item ${ref}`);
     return { key: ref, item };
   }
+  if('sing' in ref) return { key: singKey(ref.sing), item: singItem(ref.sing), seed, ref };
   const gen = data.gens[ref.gen] || lessonFail(`unknown generator ${ref.gen}`);
   const item = itemFromGen(gen, seed, ref.with);
-  return { key: gen.id, item, seed };
+  return { key: gen.id, item, seed, ref };
 }
-// The definition (an item or a generator) behind a stored id, or null when the data no longer has it.
-const definitionOf = (data, id) => data.items[id] || data.gens[id] || null;
+// The definition (an item, a generator or a sung question) behind a stored id, or null when the data no longer has it.
+const definitionOf = (data, id) => data.items[id] || data.gens[id] || singDefinition(id);

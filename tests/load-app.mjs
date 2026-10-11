@@ -3,7 +3,7 @@
 // fixture subject (tests/fixtures/fixture-subject), registered as a real subject would be, so the engine runs on known data.
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
-import { FIXTURE_FILES } from './fixtures/fixture-subject/design.mjs';
+import { FIXTURE_FILES, FIXTURE_IDS } from './fixtures/fixture-subject/design.mjs';
 
 const PUBLIC = new URL('../public/', import.meta.url);
 const FIXTURE = new URL('./fixtures/fixture-subject/', import.meta.url);
@@ -16,7 +16,13 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'definitionOf', 'addDays', 'weekEnd', 'dayOf', 'itemsOf', 'recordTry', 'firstTries', 'checkRuns', 'completeRuns', 'lessonDone', 'lastCheck',
   'lessonsInOrder', 'usedIds', 'strandDefs', 'checkStrands', 'lessonsCovering', 'strandSchedules', 'dueStrands', 'retestDays', 'retestsDue',
   'strandInstance', 'retestInstances', 'drawInstances', 'buildSet', 'freshSeed', 'blockHtml', 'segmentsOf', 'itemHtml', 'feedbackHtml',
-  'paras', 'lessonFail', 'storageRead'];
+  'paras', 'lessonFail', 'storageRead', 'rangeOf', 'saveNote', 'notesOf', 'checkIsSung', 'rightWord',
+  // sound and singing
+  'noteToMidi', 'midiToNote', 'hzToMidi', 'noteToHz', 'centsBetween', 'foldCents', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE', 'SING_PARAMS',
+  'SING_RANGE_MIN_SPAN', 'SING_MELODY_HOLD_MS', 'SING_LOUD_LIMIT', 'SING_MISSED', 'SING_CENTS', 'singKey', 'isSingKey', 'singTaskProblems', 'singItem',
+  'singDefinition', 'singPlan', 'singScalePlan', 'singExample', 'singOk', 'scoreSing', 'singWordKey', 'singMiddle', 'singTop',
+  'singNoteCents', 'singHoldMs', 'singLevel', 'singAnswer', 'singFindRange', 'steadyNotes', 'middleOf', 'stripAxis', 'voicePath', 'stripMidi',
+  'singMarksHtml', 'singMissHtml', 'stripHtml', 'pitchHtml']; 
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {
@@ -35,7 +41,7 @@ export async function loadApp({ fixture = false, seed = null } = {}) {
     return `/* ${src} */\n` + (seed ? seed(src, text) : text);
   }));
   const fixtureParts = fixture ? await Promise.all(FIXTURE_FILES.map(async f => `/* fixture/${f} */\n` + await readFile(new URL(f, FIXTURE), 'utf8'))) : [];
-  const add = fixture ? `\nSUBJECTS.push(buildSubject('fixture', SUBJECTS.length));` : '';
+  const add = fixture ? FIXTURE_IDS.map(id => `\nSUBJECTS.push(buildSubject('${id}', SUBJECTS.length));`).join('') : '';
   const source = parts.join('\n') + '\n' + fixtureParts.join('\n') + add + `\nglobalThis.__app = { ${EXPORTS.join(', ')} };`;
   // the app reads and writes localStorage; headless it gets an empty in-memory one, so nothing is read or kept
   const memory = new Map();
