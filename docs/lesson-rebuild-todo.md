@@ -33,7 +33,7 @@ built, not one subject. From now on every subject goes through the `build-subjec
 - [x] Every subject through the skill, designed blind then audited: all eight come back "rebuild from scratch"; the practice never matched the real moment (f7ef6d5; verdicts in each `docs/subjects/<id>/design.md`)
 - [x] The practice engine designed for all eight subjects (standard section 26)
 - [x] The engine core built and the old engine and lessons deleted (b884add; not deployed until Singing's pilot exists; old lessons at the tag `old-lessons`)
-- [ ] **(now)** Singing on the new engine: the singing answer, the pitch line, your range, and the pilot lesson "Match a note" (26.8 step 2): answers you give (typed numbers, typed answers, actions, verdicts, singing), what you see (messages as they arrive, charts, statements, spoken questions), fading feedback, private records; the old engine deleted
+- [x] Singing on the new engine: the singing answer, the pitch line, your range, and the pilot lesson "Match a note" (live 2026-10-10): answers you give (typed numbers, typed answers, actions, verdicts, singing), what you see (messages as they arrive, charts, statements, spoken questions), fading feedback, private records; the old engine deleted
 - [ ] Each subject rebuilt on the new engine, pilot lesson first: Singing, then the others
 
 ## Parked
@@ -47,4 +47,4 @@ built, not one subject. From now on every subject goes through the `build-subjec
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
-- [ ] Singing pilot: try the first lesson on your phone and say whether it moved you
+- [ ] **Try Singing's pilot on your phone**: Library → Singing → Match a note; then tell me in a line how it went. Your words unlock the other six lessons (gate 6)
