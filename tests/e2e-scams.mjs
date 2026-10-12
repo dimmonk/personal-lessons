@@ -26,7 +26,7 @@ async function answer(page, act, via = 'own') {
 }
 const BEST = {   // what suits each message of the pilot and its check: the action, and the way in when it is to check
   'p-code-real': 'act', 'p-code-fake': 'leave', 'p-ship-real': 'leave', 'p-ship-fee': 'check', 'p-alert-real': 'check', 'p-alert-fake': 'check',
-  'g-invoice-real': 'act', 'g-invoice-new': 'check', 'g-popup': 'leave', 'g-boss': 'check', 'g-receipt': 'leave', 'g-reset': 'act', 'g-credit': 'check', 'g-call': 'check',
+  'g-invoice-real': 'act', 'g-invoice-new': 'check', 'g-popup': 'leave', 'g-boss': 'check', 'g-receipt': 'leave', 'g-reset': 'act', 'g-credit': 'check', 'g-call': 'check', 'g-friend': 'leave',
   'k-pickup': 'act', 'k-bill': 'act', 'k-buyer': 'act', 'k-alert-real': 'check', 'k-credit-real': 'check', 'k-dental-call': 'leave',
   's-held': 'check', 's-final': 'check', 's-buyer': 'check', 's-grandson': 'check', 's-suspended': 'check', 's-romance': 'leave',
   'b-salon': 'act', 'b-invoice': 'act', 'b-code': 'act', 'b-alert': 'check', 'b-parcel': 'check', 'b-popup': 'leave', 'b-buyer': 'check', 'b-manager': 'check' };
@@ -38,8 +38,8 @@ async function theThreeQuestions(env, c, page) {
   c.check((await env.screenText(page)).includes('Step 1 of 6'), 'the lesson is not six steps long (the why, four steps and the check)');
   await env.goOn(page);
   const text = await env.screenText(page);
-  c.check(/What does it want\?/.test(text) && /Did I start this, just now, here\?/.test(text) && /Is there a way I already had\?/.test(text) && /Never the link, number or reply the message gives you/.test(text), 'the first screen does not give the three questions and the rule for the way in');
-  c.check(/Do what it says only when you started it/.test(text) && /Check first when you did not/.test(text) && /Leave it when nothing of yours is involved/.test(text), 'the first screen does not say when to do, check and leave');
+  c.check(/What does it want\?/.test(text) && /Did I start this, or arrange it myself\?/.test(text) && /Is there a way I already had\?/.test(text) && /Never the link, number or reply the message gives you/.test(text), 'the first screen does not give the three questions and the rule for the way in');
+  c.check(/Do what it says when you started it or arranged it/.test(text) && /Someone you only know online who wants money/.test(text) && /Checking a real message is also safe/.test(text) && /Check first when you did not/.test(text) && /Leave it when nothing of yours is involved/.test(text), 'the first screen does not say when to do, check and leave');
   await env.inspect(c, page, 'the three questions');
   await env.goOn(page);
 }
@@ -84,12 +84,17 @@ async function theFirstGroup(env, c, page) {
 }
 async function theSecondGroup(env, c, page) {
   const asked = [], texts = {};
-  c.check((await env.screenText(page)).includes('Question 1 of 8'), 'the second group is not eight questions');
+  // a timed group is announced before its first question, with what a clock that runs out counts as
+  if (/A timed group/.test(await env.screenText(page))) {   // the notice of a timed group (X17 owns what it says)
+    await env.inspect(c, page, 'the notice of a timed group');
+    await env.goOn(page);
+  }
+  c.check((await env.screenText(page)).includes('Question 1 of 9'), 'the second group is not nine questions');
   for (let guard = 0; await page.locator('#qNext').count() && guard < 20; guard++) {
     const s = await here(page);
     asked.push(s);
     const clock = await page.evaluate(() => { const t = document.querySelector('[data-timer]'); return t && t.getAttribute('role'); });
-    c.check(clock === 'timer' && s.left > 19.5, `${s.key}: the question is not on a 20 second clock (${clock}, ${s.left})`);
+    c.check(clock === 'timer' && s.left > 19, `${s.key}: the question is not on a 20 second clock (${clock}, ${s.left})`);
     await plainWords(c, page, env, `the message ${s.key}`);
     if (!s.redo && s.key === 'g-boss') await answer(page, 'act');   // a scam acted on: gift cards sent to a "boss"
     else if (!s.redo && s.key === 'g-credit') await answer(page, 'check', 'theirs');   // the number in the text, called
@@ -99,25 +104,26 @@ async function theSecondGroup(env, c, page) {
     await nextQ(page);
   }
   const firsts = asked.filter(a => !a.redo);
-  c.check(firsts.length === 8 && new Set(firsts.map(a => a.key)).size === 8, `the second group is not eight different messages (${firsts.map(a => a.key)})`);
+  c.check(firsts.length === 9 && new Set(firsts.map(a => a.key)).size === 9, `the second group is not nine different messages (${firsts.map(a => a.key)})`);
   const genuine = await page.evaluate(() => ['g-invoice-real', 'g-receipt', 'g-reset', 'g-credit'].map(id => FC.get('scams').items[id].facets.genuine).join());
   c.check(genuine === 'genuine,genuine,genuine,genuine' && asked.filter(a => a.redo).map(a => a.key).sort().join() === 'g-boss,g-credit', `half the second group is not real, or the misses did not come back (${asked.map(a => a.key + (a.redo ? '*' : ''))})`);
   c.check(/The gift cards were emptied within minutes/.test(texts['g-boss']) && /Priya says she sent nothing/.test(texts['g-boss*'] || ''), 'the boss\'s gift cards are not shown with what happened, and what checking would have shown');
   c.check(/You paid \$1,860 into the account on the quote, the way you agreed/.test(texts['g-invoice-real']) && !/common slip/.test(texts['g-invoice-real']) && /Right/.test(texts['g-invoice-real']), 'the real invoice is not shown as paid the way you already pay, and right');
-  c.check(/6 of 8 right the first time/.test(await env.screenText(page)), 'the second group does not end on "6 of 8 right the first time"');
+  c.check(/7 of 9 right the first time/.test(await env.screenText(page)), 'the second group does not end on "7 of 9 right the first time"');
   await env.goOn(page);
 }
 async function theCheck(env, c, page) {
   let text = await env.screenText(page);
-  c.check(/Twelve new questions/.test(text) && /None did what a scam asked/.test(text) && /None checked through the link, number or reply the message gave/.test(text) && /At most 1 wrong among real messages/.test(text) && /You will not see any answer until the end/.test(text) && /You have 20 seconds for each/.test(text), `the check does not name itself and its three rules (${text.slice(0, 260)})`);
+  c.check(/Twelve new questions/.test(text) && /None did what a scam asked/.test(text) && /None checked through the link, number or reply the message gave/.test(text) && /At most 1 wrong among real messages/.test(text) && /You will not see any answer until the end/.test(text) && /You have 20 seconds for each/.test(text) && /When time runs out, the question stops and counts as a miss/.test(text), `the check does not name itself and its three rules (${text.slice(0, 260)})`);
   await env.inspect(c, page, 'the first screen of the check');
   await env.goOn(page);
   const keys = [];
   for (let i = 0; i < 12; i++) {
     const s = await here(page);
     keys.push(s.key);
-    c.check(!s.redo && s.left > 19.5 && await page.locator('[data-timer]').count() === 1, `${s.key}: a question of the check is not asked once, on a clock`);
-    if (s.key === 'k-bill') await answer(page, 'leave');   // a real bill left unpaid: the one real message mishandled
+    c.check(!s.redo && s.left > 19 && await page.locator('[data-timer]').count() === 1, `${s.key}: a question of the check is not asked once, on a clock`);
+    if (s.key === 'k-pickup') await answer(page, 'leave');   // a real order left in the shop: the one real message mishandled
+    else if (s.key === 'k-bill') await answer(page, 'check', 'own');   // a real bill the learner pays in the app, checked first through the app: as right as paying it
     else await answer(page, best(s.key));
     c.check(await page.locator('#qNext').isEnabled(), 'the check leaves Next shut after an answer');
     await nextQ(page);
@@ -128,7 +134,7 @@ async function theCheck(env, c, page) {
   c.check(/11 of 12: passed/.test(text) && rules.length === 3 && rules.every(r => /met$/.test(r) && !/not met$/.test(r)), `the check was not passed 11 of 12 with its three rules met (${text.slice(0, 160)})`);
   c.check(await page.locator('.resitem').count() === 12 && await page.locator('.resitem').first().locator('.mark.no').count() >= 1, 'the answers are not all shown with the missed one first');
   c.check(/Real or a scam, side by side/.test(text) && /Real messages\s*\d of 6/.test(text) && /Scams\s*\d of 6/.test(text), `the real messages are not shown beside the scams (${text.slice(text.indexOf('Real or a scam'), text.indexOf('Real or a scam') + 90)})`);
-  c.check(/A real bill left unpaid|The bill goes unpaid until the late fee/.test(text) && !/is a scam|was a scam/.test(text.slice(text.indexOf('k-bill'))), 'the real bill that was left is not shown with what it cost, or is called a scam');
+  c.check(/Your drill stays on the shelf/.test(text) && !/is a scam|was a scam/.test(text), 'the real order that was left is not shown with what it cost, or a real message is called a scam');
   await plainWords(c, page, env, 'the result of the check');
 }
 async function theRecord(env, c, page) {
@@ -139,13 +145,15 @@ async function theRecord(env, c, page) {
   const stored = await env.storage(page), items = JSON.parse(stored['pl:scams:items'] || '{}'), seen = JSON.parse(stored['pl:scams:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
   const inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 12 && inCheck.every(t => t.lesson === 'l3' && t.rev === 1 && t.sup === false && Number.isInteger(t.ms) && t.ms < 20000), 'the check was not stored as twelve tries of lesson 3, each with the time it took');
+  c.check(inCheck.length === 12 && inCheck.every(t => t.lesson === 'l3' && t.rev === 2 && t.sup === false && Number.isInteger(t.ms) && t.ms < 20000), 'the check was not stored as twelve tries of lesson 3, each with the time it took');
   c.check(practice.filter(t => t.key.startsWith('p-')).every(t => !('ms' in t)) && practice.filter(t => t.key.startsWith('g-')).every(t => Number.isInteger(t.ms)), 'the first group (no clock) holds a time, or the second (a clock) does not');
   const slips = new Set(tries.flatMap(t => Object.values(t.r)));
   ['acted', 'their-way', 'habit'].forEach(slip => c.check(slips.has(slip), `the slip "${slip}" is not in the record`));
   c.check(tries.every(t => Object.keys(t.a).every(k => ['act', 'via'].includes(k)) && (t.a.act !== 'check' || typeof t.a.via === 'string') && (t.a.act === 'check' || !('via' in t.a))), 'an answer is not stored as the action, and how it was checked only when it was a check');
+  const bill = tries.find(t => t.key === 'k-bill' && t.context === 'check');
+  c.check(!!bill && bill.ok === true && bill.a.act === 'check' && bill.a.via === 'own', 'a real bill checked first through the app you already pay in is not scored right');
   c.check(!tries.some(t => t.key === 'w-locked'), 'the worked text was stored as a try');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l3: { rev: 1, at: 5 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l3: { rev: 2, at: 5 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('scams'); return lessonDone(d, 'scams', d.lessons.l3) && lastCheck(d, 'scams', d.lessons.l3).passed; }), 'the lesson is not done with the check passed');
 }
 async function theResults(env, c, page) {
@@ -164,10 +172,10 @@ async function theReview(env, c, page) {
   const tile = await page.locator('[data-review-tile]').textContent();
   c.check(/1 due/.test(tile) && /Scams/.test(tile), `the review does not hold the topic two days after the check (${tile.replace(/\s+/g, ' ').slice(0, 160)})`);
   await page.locator('[data-review-start]').first().click();
-  c.check(/Each question has 20 seconds/.test(await env.screenText(page)), 'the review of a subject with a clock does not say so');
+  c.check(/Each question has 20 seconds/.test(await env.screenText(page)) && /counts as a miss/.test(await env.screenText(page)), 'the review of a subject with a clock does not say so');
   await page.locator('#beginBlock').click();
   const s = await here(page);
-  c.check(await page.evaluate(() => Q.list[Q.at].item.strand) === 'act-check-leave' && s.left > 19.5, `the review asked ${s.key}, which is not a message of the topic that came due on a clock`);
+  c.check(await page.evaluate(() => Q.list[Q.at].item.strand) === 'act-check-leave' && s.left > 19, `the review asked ${s.key}, which is not a message of the topic that came due on a clock`);
   await plainWords(c, page, env, 'a message of the review');
   await answer(page, best(s.key) || 'check');
   await nextQ(page);

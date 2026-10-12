@@ -14,7 +14,7 @@ Nothing here is graded, and you see no answers until the end.
 
 ## The baseline
 
-Ten things, the way they arrive on a phone. Do what you would really do. Nothing here is graded, and you see no answers until the end. You have 20 seconds for each. The clock only shows the time: nothing moves on until you tap Next. A call is not on a clock.
+Ten things, the way they arrive on a phone. Do what you would really do. Nothing here is graded, and you see no answers until the end. You have 20 seconds for each. When time runs out, the question stops and counts as a miss. Nothing moves on until you tap Next. A call is not on a clock.
 It is not passed or failed: no rule is shown, nothing is shown per question, and the questions come in mixed order. It is stored as tries in the context "baseline", never counted in the results by lesson or in the schedule of a topic, and taken once.
 
 #### Check question 1
@@ -28,7 +28,7 @@ A text message: "Salon Wren", Text message · 8:00 AM.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You called the salon. They confirmed. A minute spent and not needed.
+- Check first, a way I already had (right)
 - Leave it — if chosen: Your slot may be given away.
 
 **How do you check?** (opens only after a certain answer)
@@ -36,7 +36,7 @@ A text message: "Salon Wren", Text message · 8:00 AM.
 - A reply to the text — if chosen: The message gave you that, so the sender decides who answers.
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: You booked this, it is a reminder, and the reply is one letter that costs nothing.
+After the answer: the deciding words are marked. Reason: You booked this, it is a reminder, and the reply is one letter that costs nothing. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Check question 2
 
@@ -52,7 +52,7 @@ An email: "Odell Roofing", Email · Monday.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You called Nate on the number from the quote. He confirmed. It cost a minute and was not needed: nothing changed from what you agreed.
+- Check first, a way I already had (right)
 - Leave it — if chosen: The bill goes unpaid, and Nate has to chase you.
 
 **How do you check?** (opens only after a certain answer)
@@ -60,7 +60,7 @@ An email: "Odell Roofing", Email · Monday.
 - The account on my quote (right)
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: You hired him, the amount is the quote, and the way to pay is the one you already agreed. Paying through that way is right.
+After the answer: the deciding words are marked. Reason: You hired him, the amount is the quote, and the way to pay is the one you already agreed. Paying through that way is right. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Check question 3
 
@@ -73,7 +73,7 @@ A text message: "Calderwood Bank", Text message · 7:45 AM.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: A minute spent on something you started. You were already on the right page.
+- Check first, a way I already had (right)
 - Leave it — if chosen: You are still signed out, and the code runs out.
 
 **How do you check?** (opens only after a certain answer)
@@ -81,7 +81,7 @@ A text message: "Calderwood Bank", Text message · 7:45 AM.
 - The number the text came from — if chosen: The message gave you that, so the sender decides who answers.
 - The Calderwood page I am on (right)
 
-After the answer: the deciding words are marked. Reason: You asked for this code a moment ago, on the page you are on. Using it there is what it is for.
+After the answer: the deciding words are marked. Reason: You asked for this code a moment ago, on the page you are on. Using it there is what it is for. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Check question 4
 

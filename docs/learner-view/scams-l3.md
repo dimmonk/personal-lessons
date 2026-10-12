@@ -1,6 +1,6 @@
 # Scams & Social Engineering: Act, check or leave
 
-Revision 1, draft (the screen carries the draft line). Part: Act, check or leave, on mixed messages. Where the subject ends up: When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.
+Revision 2, draft (the screen carries the draft line). Part: Act, check or leave, on mixed messages. Where the subject ends up: When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.
 
 ## The why
 
@@ -10,9 +10,10 @@ You see messages as they arrive and choose what you would do: do what it says, c
 ## Step 1: Three questions, then choose
 
 1. What does it want? A payment, a code, your details, or your phone or computer.
-2. Did I start this, just now, here? A code you just asked for is yours. A message out of the blue is not.
+2. Did I start this, or arrange it myself? A code you just asked for, an order you placed, a job you hired, a bill you always pay are yours. A message out of the blue is not.
 3. Is there a way I already had? Your bank’s app, the number on your card, the shop’s order page. Never the link, number or reply the message gives you.
-Then choose. Do what it says only when you started it. Check first when you did not and you have a way of your own. Leave it when nothing of yours is involved.
+Then choose. Do what it says when you started it or arranged it. Check first when you did not and you have a way of your own. Checking a real message is also safe, and costs a minute. Leave it when nothing of yours is involved.
+Someone you only know online who wants money: you have no way of your own to check, so the answer is no. Tell someone you know in person.
 
 ## Step 2: A worked example
 
@@ -53,7 +54,7 @@ A text message: "Marlowe & Finch", Text message · 9:02 AM.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: A minute spent on something you started. You were already on the right page.
+- Check first, a way I already had (right)
 - Leave it — if chosen: You are still signed out, and the code runs out in ten minutes.
 
 **How do you check?** (opens only after a certain answer)
@@ -61,7 +62,7 @@ A text message: "Marlowe & Finch", Text message · 9:02 AM.
 - The Marlowe & Finch page I am on (right)
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: You asked for this code a moment ago, on the page you are on. Using it there is exactly what it is for.
+After the answer: the deciding words are marked. Reason: You asked for this code a moment ago, on the page you are on. Using it there is exactly what it is for. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Question 2
 
@@ -95,15 +96,15 @@ A text message: "Thistlewick Outfitters", Text message · Tuesday 10:05 AM.
 
 **What do you do?**
 - Do what it says — if chosen: There was nothing to do, so nothing happened.
-- Check first, a way I already had — if chosen: The account shows the same news the email did. A minute spent.
+- Check first, a way I already had (right)
 - Leave it (right)
 
 **How do you check?** (opens only after a certain answer)
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The details in the email — if chosen: The message gave you that, so the sender decides who answers.
+- The details in the text — if chosen: The message gave you that, so the sender decides who answers.
 - My Thistlewick account (right)
 
-After the answer: the deciding words are marked. Reason: It wants nothing from you. It tells you what you already expect, so there is nothing to act on and nothing to check.
+After the answer: the deciding words are marked. Reason: It wants nothing from you. It tells you what you already expect, so there is nothing to act on and nothing to check. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Question 4
 
@@ -175,7 +176,7 @@ Then a screen: you can stop here, your place is kept.
 
 ## Step 4: Questions
 
-8 questions, shuffle, each question on a 20 second clock (the clock only shows the time, counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+9 questions, shuffle, after a screen that says "You have 20 seconds for each message. When time runs out, the question stops and counts as a miss. Nothing moves on until you tap Next." (button: "Start"), each question on a 20 second clock (counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Question 7
 
@@ -191,7 +192,7 @@ An email: "Iwu Tiling", Email · Friday.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You called Femi on the number from the quote. He said the job was done. It cost a minute and was not needed: nothing changed from what you agreed.
+- Check first, a way I already had (right)
 - Leave it — if chosen: The bill goes unpaid, and Femi has to chase you.
 
 **How do you check?** (opens only after a certain answer)
@@ -199,7 +200,7 @@ An email: "Iwu Tiling", Email · Friday.
 - The details in the email — if chosen: The message gave you that, so the sender decides who answers.
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: You hired him, the amount is the quote, and the way to pay is the one you already agreed. Paying through that way is right.
+After the answer: the deciding words are marked. Reason: You hired him, the amount is the quote, and the way to pay is the one you already agreed. Paying through that way is right. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Question 8
 
@@ -227,7 +228,7 @@ After the answer: the deciding words are marked. Reason: New bank details sent i
 
 #### Question 9
 
-You are reading a recipe on a website.
+You are reading a recipe on a website on your computer. Your computer has its own security settings.
 
 A pop-up on a screen: "Security alert", On a web page.
 
@@ -242,7 +243,7 @@ A pop-up on a screen: "Security alert", On a web page.
 
 **How do you check?** (opens only after a certain answer)
 - The number on the pop-up — if chosen: The message gave you that, so the sender decides who answers.
-- My own antivirus program, or a shop I know (right)
+- My computer’s own security settings, or a repair shop I know (right)
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
 After the answer: the deciding words are marked. Reason: A web page cannot see inside your computer. It shows this to frighten you into calling, and the number belongs to the scammer.
@@ -281,7 +282,7 @@ An email: "Lumenfall", Email · October 1.
 
 **What do you do?**
 - Do what it says — if chosen: There was nothing to do, so nothing happened.
-- Check first, a way I already had — if chosen: The account shows the $12.99 charge, as expected. A minute spent.
+- Check first, a way I already had (right)
 - Leave it (right)
 
 **How do you check?** (opens only after a certain answer)
@@ -289,7 +290,7 @@ An email: "Lumenfall", Email · October 1.
 - The details in the email — if chosen: The message gave you that, so the sender decides who answers.
 - My Lumenfall account (right)
 
-After the answer: the deciding words are marked. Reason: It tells you something you already know, and says no action is needed.
+After the answer: the deciding words are marked. Reason: It tells you something you already know, and says no action is needed. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Question 12
 
@@ -305,7 +306,7 @@ An email: "Thistlewick Outfitters", Email · 8:15 AM.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You went to the site yourself and asked again. It worked, and it cost you a few minutes.
+- Check first, a way I already had (right)
 - Leave it — if chosen: You are still locked out, and the link expires in an hour.
 
 **How do you check?** (opens only after a certain answer)
@@ -313,7 +314,7 @@ An email: "Thistlewick Outfitters", Email · 8:15 AM.
 - The link in the email — if chosen: The message gave you that, so the sender decides who answers.
 - The Thistlewick site I am on (right)
 
-After the answer: the deciding words are marked. Reason: You asked for this reset a moment ago, so the email is the answer to your own request. Using it is right.
+After the answer: the deciding words are marked. Reason: You asked for this reset a moment ago, so the email is the answer to your own request. Using it is right. Checking first, through a way you already had, is also safe. It costs a minute.
 
 #### Question 13
 
@@ -338,7 +339,7 @@ After the answer: the deciding words are marked. Reason: You did not start this 
 
 #### Question 14
 
-Your phone rings. The screen shows a number you do not know.
+Calderwood Bank is your bank, and its number is on the back of your card. Your phone rings. The screen shows a number you do not know.
 
 An incoming call, the caller's words as a transcript: "Fraud team", Incoming call · 5:20 PM.
 
@@ -357,20 +358,38 @@ An incoming call, the caller's words as a transcript: "Fraud team", Incoming cal
 
 After the answer: the deciding words are marked. Reason: No bank needs you to read out a code it just texted you. You did not start this call, and you hold a number of your own to settle it.
 
+#### Question 15
+
+You have played an online game with Dev for three months and chat every day. You have never met him or spoken to him on a call.
+
+A chat, with its history: "Dev in the game chat", Chat history and today’s message.
+
+> (Dev in the game chat, at the left) Still on for tonight?
+> (you, at the right) Yes, as always!
+> (Dev in the game chat, at the left) My account got frozen and I need $300 to get it back. I will pay you back on Friday.
+> (Dev in the game chat, at the left) Can you buy a gift card and send me the code? It is urgent.
+
+**What do you do?**
+- Do what it says — if chosen: You sent $300 in gift cards. Dev asked for more the next day.
+- Check first, a way I already had — if chosen: You have no way to reach Dev except this chat, so checking means asking Dev, who vouches for himself.
+- Leave it (right)
+
+After the answer: the deciding words are marked. Reason: Months of friendly chat, then an emergency and a request for money, from someone you have never met or heard live. You have no way of your own to check him, so the answer is no, and you tell someone you know in person.
+
 Then a screen: you can stop here, your place is kept.
 
 ## The check
 
 12 new questions, no help. No answer is shown until the end. The questions come in mixed order.
 
-You have 20 seconds for each. The clock only shows the time: nothing moves on until you tap Next. A call is not on a clock.
+You have 20 seconds for each. When time runs out, the question stops and counts as a miss. Nothing moves on until you tap Next. A call is not on a clock.
 
 To pass:
 - None did what a scam asked
 - None checked through the link, number or reply the message gave
 - At most 1 wrong among real messages
 
-#### Check question 15
+#### Check question 16
 
 You ordered a drill from Hobnail Hardware for pickup today.
 
@@ -381,7 +400,7 @@ A text message: "Hobnail Hardware", Text message · 10:12 AM.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: The order page says ready for pickup. A minute spent and not needed.
+- Check first, a way I already had (right)
 - Leave it — if chosen: Your drill stays on the shelf.
 
 **How do you check?** (opens only after a certain answer)
@@ -389,9 +408,9 @@ A text message: "Hobnail Hardware", Text message · 10:12 AM.
 - The details in the text — if chosen: The message gave you that, so the sender decides who answers.
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: You placed this order and it is ready. The code only works at their counter, and nothing is wanted from you but to go and get it.
+After the answer: the deciding words are marked. Reason: You placed this order and it is ready. The code only works at their counter, and nothing is wanted from you but to go and get it. Checking first, through a way you already had, is also safe. It costs a minute.
 
-#### Check question 16
+#### Check question 17
 
 Fenwick Electric sends your power bill every month. You pay it in the Fenwick app.
 
@@ -404,7 +423,7 @@ An email: "Fenwick Electric", Email · October 14.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You opened the app and saw the same bill. A minute spent and not needed: it is the way you already pay.
+- Check first, a way I already had (right)
 - Leave it — if chosen: The bill goes unpaid until the late fee.
 
 **How do you check?** (opens only after a certain answer)
@@ -412,9 +431,9 @@ An email: "Fenwick Electric", Email · October 14.
 - The Fenwick app on my phone (right)
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: It is the bill you get every month, for the amount you expect, and it points you to the way you already pay. Paying that way is right.
+After the answer: the deciding words are marked. Reason: It is the bill you get every month, for the amount you expect, and it points you to the way you already pay. Paying that way is right. Checking first, through a way you already had, is also safe. It costs a minute.
 
-#### Check question 17
+#### Check question 18
 
 You listed a lamp for sale on Bramblecote Market.
 
@@ -426,7 +445,7 @@ A chat, with its history: "Dana on Bramblecote Market", Chat about the lamp.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: The app shows Dana’s profile and no problem. A minute spent and not needed.
+- Check first, a way I already had (right)
 - Leave it — if chosen: You missed a buyer.
 
 **How do you check?** (opens only after a certain answer)
@@ -434,9 +453,9 @@ A chat, with its history: "Dana on Bramblecote Market", Chat about the lamp.
 - The Bramblecote Market app (right)
 - Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
-After the answer: the deciding words are marked. Reason: A buyer wanting a pickup time wants nothing risky: no payment link, no code, no details. Answering is how a sale happens.
+After the answer: the deciding words are marked. Reason: A buyer wanting a pickup time wants nothing risky: no payment link, no code, no details. Answering is how a sale happens. Checking first, through a way you already had, is also safe. It costs a minute.
 
-#### Check question 18
+#### Check question 19
 
 Marrowbeck Mobile is your phone company. You did not just sign in to anything.
 
@@ -458,7 +477,7 @@ A text message: "Marrowbeck Mobile", Text message · 6:48 PM.
 
 After the answer: the deciding words are marked. Reason: You did not start this and it is about your account, so you go in through the app you already have. A real message and a fake one look alike, so the link is never the way.
 
-#### Check question 19
+#### Check question 20
 
 Penhallow Credit Union is your credit union.
 
@@ -479,9 +498,9 @@ A text message: "Penhallow CU", Text message · 3:12 PM.
 
 After the answer: the deciding words are marked. Reason: It is about your money and you did not start it, so you use a number you already had. The number inside the message is the sender’s, whoever the sender is.
 
-#### Check question 20
+#### Check question 21
 
-You have a dental cleaning booked on Thursday.
+You have a dental cleaning booked on Thursday at 3. Friday at 3 would suit you just as well.
 
 An incoming call, the caller's words as a transcript: "Kestrel Dental", Incoming call · 9:40 AM.
 
@@ -490,7 +509,7 @@ An incoming call, the caller's words as a transcript: "Kestrel Dental", Incoming
 
 **What do you do?**
 - Do what it says — if chosen: You called back for no reason. It cost a few minutes.
-- Check first, a way I already had — if chosen: You called the number on your appointment card. They confirmed Friday. Not needed.
+- Check first, a way I already had (right)
 - Leave it (right)
 
 **How do you check?** (opens only after a certain answer)
@@ -498,9 +517,9 @@ An incoming call, the caller's words as a transcript: "Kestrel Dental", Incoming
 - The number that called me — if chosen: The message gave you that, so the sender decides who answers.
 - The number on my appointment card (right)
 
-After the answer: the deciding words are marked. Reason: It tells you a new time and wants nothing risky from you: no money, no code, no details. If Friday suits you, there is nothing to do.
+After the answer: the deciding words are marked. Reason: It tells you a new time and wants nothing risky from you: no money, no code, no details. If Friday suits you, there is nothing to do. Checking first, through a way you already had, is also safe. It costs a minute.
 
-#### Check question 21
+#### Check question 22
 
 You are waiting for a parcel from Thistlewick Outfitters.
 
@@ -522,7 +541,7 @@ A text message: "Quillfeather Parcel", Text message · 12:30 PM.
 
 After the answer: the deciding words are marked. Reason: You expect a parcel, and this wants your details through its own link. The shop’s order page shows where the parcel really is.
 
-#### Check question 22
+#### Check question 23
 
 Fenwick Electric sends your power bill. You pay it in the Fenwick app.
 
@@ -546,7 +565,7 @@ An email: "Fenwick Electric", Email · 7:02 AM.
 
 After the answer: the deciding words are marked. Reason: A threat with a two-hour clock and a demand to pay by gift card is pressure, not a bill. Your own app shows what you really owe.
 
-#### Check question 23
+#### Check question 24
 
 You listed a lamp for sale on Bramblecote Market.
 
@@ -568,7 +587,7 @@ A chat, with its history: "Buyer on Bramblecote Market", Chat about the lamp.
 
 After the answer: the deciding words are marked. Reason: Money you are owed arrives in your own account, never by tapping a buyer’s link. The marketplace app shows whether anything was paid.
 
-#### Check question 24
+#### Check question 25
 
 Your grandson Eli lives in another city. You have his number saved.
 
@@ -589,7 +608,7 @@ An incoming call, the caller's words as a transcript: "Unknown number", Incoming
 
 After the answer: the deciding words are marked. Reason: A loved one in trouble, a new number, a secret and a sum of money, all at once, is the plan and not a coincidence. Eli’s own number settles it in a minute.
 
-#### Check question 25
+#### Check question 26
 
 You watch Lumenfall on your TV and pay each month.
 
@@ -611,7 +630,7 @@ A text message: "Lumenfall", Text message · 9:15 PM.
 
 After the answer: the deciding words are marked. Reason: It wants your payment details through its own link, and you did not start it. Your own account shows the truth.
 
-#### Check question 26
+#### Check question 27
 
 You have chatted with Ioana on a language app for five weeks. You have never met her or spoken on a live call.
 
@@ -624,13 +643,8 @@ A chat, with its history: "Ioana on the language app", Chat history and today’
 
 **What do you do?**
 - Do what it says — if chosen: You sent $1,100. Ioana wrote again the next day with a bigger emergency.
-- Check first, a way I already had — if chosen: You have no way to reach Ioana except this chat, so checking through it lets her vouch for herself. Telling someone you know in person is the move.
+- Check first, a way I already had — if chosen: You have no way to reach Ioana except this chat, so checking means asking Ioana, who vouches for herself.
 - Leave it (right)
-
-**How do you check?** (opens only after a certain answer)
-- A reply in the chat — if chosen: The message gave you that, so the sender decides who answers.
-- A friend or relative I know in person (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
 
 After the answer: the deciding words are marked. Reason: Weeks of kind messages, then an emergency and a request for money, from someone you have never met or seen live. You have no way of your own to check her, so the answer is no, and you tell someone you know in person.
 

@@ -16,7 +16,7 @@ const REVIEW_TEXT = {
   next: day => `The next question falls due on ${day}.`,
   how: 'It runs one subject at a time. After each answer you see the reason, and anything you miss comes back a few questions later in the same review.',
   intro: (name, n) => `${name}. ${cap(numWord(n))} question${n === 1 ? '' : 's'}, each on something you have not seen before. ${SAY.stakes}`,
-  timed: s => `Each question has ${s} seconds. The clock only shows the time: nothing moves on until you tap Next.`,
+  timed: s => `Each question has ${s} seconds. When time runs out, the question stops and counts as a miss. Nothing moves on until you tap Next.`,
   retestIntro: title => `A second check of “${title}”, on new questions. No help, and no answer until the end.`,
   retestResult: title => `Second check: ${title}`,
   resultsTitle: 'The review is done',

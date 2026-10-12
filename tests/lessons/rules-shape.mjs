@@ -295,6 +295,8 @@ function ownStepProblems(step, where, ctx) {
   if (!['sheet', 'plan', 'setup', 'answers'].includes(form.into)) problems.push(`${where}: the form "${step.own}" writes into "${form.into}"; a step fills in the sheet, the plan, the setup or the answers`);
   if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
   if (step.model && form.into !== 'sheet') problems.push(`${where}: only a step on the sheet shows a model`);
+  if (step.model && !(step.where && step.where.length)) problems.push(`${where}: a step that shows a model says where the same lines are on the learner's own papers (where)`);
+  if (!step.model && step.where) problems.push(`${where}: where belongs to a step that shows a model`);
   if (form.into === 'sheet' && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
   return problems;
 }

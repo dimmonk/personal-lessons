@@ -119,7 +119,7 @@ function formAskLines(e, data, ask, item, marks) {
 }
 // a tap: the lines of the text become tappable (the headline does not); "Not given" is a button; a wrong line answers with its own note and slip
 function tapAskLines(e, data, ask, marks, item) {
-  const { SAY } = e, lines = e.tapSegments(item, ask), right = e.tapRightIds(ask), slips = data.subjects.__current.meta.lists.slip || [];
+  const { SAY } = e, lines = e.tapSegments(item, ask), right = e.tapRightIds(ask, item), slips = data.subjects.__current.meta.lists.slip || [];
   const out = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`,
     `- ${e.tapPick(ask) > 1 ? SAY.tapMany(e.tapPick(ask)) : SAY.tapOne} ${ask.in ? `The lines of one block can be tapped; the rest cannot. ` : ''}Nothing is marked before the answer${ask.pick > 1 ? '; Answer opens when that many are tapped' : ', and a tap is the answer'}.`];
   lines.forEach(l => {
@@ -149,8 +149,13 @@ function recallAskLines(e, ask, marks) {
       : ['- The same box, checking and feedback as above.']),
     ...(need > 1 ? [`- The question wants ${need} different accepted answers ("${SAY.recallMany(need)}"): more is fine, the same one twice is counted once.`] : [])];
   if (own) return [...lines, `- It reads the answer the learner entered (${ask.accept.own}); two answers entered with a semicolon between are two accepted answers, listed after under "${SAY.recallYours}". It is asked only once they have entered it.`];
-  return [...lines, ...(marks ? [`- The accepted answers shown after (${SAY.recallAccepted}):`, ...ask.accept.map(a => `  - ${e.recallEntryText(a)}${typeof a === 'string' ? '' : ` (said in parts, any order: ${a.parts.join(' / ')})`}`)] : [])];
+  return [...lines, ...(marks ? [`- The accepted answers shown after (${SAY.recallAccepted}):`, ...ask.accept.map(a => `  - ${e.recallEntryText(a)}${recallEntryNote(a)}`)] : [])];
 }
+// what an accepted answer is besides its printed words: said in parts, with its brackets as other words, with equivalents the list does not print
+const recallEntryNote = a => typeof a === 'string' ? '' : [
+  a.parts ? ` (said in parts, any order: ${a.parts.map(p => [].concat(p).join(' or ')).join(' / ')})` : '',
+  a.as ? ` (its brackets are other words, not extra ones: ${a.as.join(' / ')})` : '',
+  a.also && a.also.length ? ` (also accepted, not printed: ${a.also.join(' / ')})` : ''].join('');
 // a call or chat that pushes back: every turn once, in the order a learner meets them, with the replies and where each leads
 function exchangeAskLines(e, data, ask, marks) {
   const { SAY } = e, order = [], name = id => `turn ${order.indexOf(id) + 1}`;
@@ -197,7 +202,7 @@ function questionLines(e, data, inst, support, label) {
   lines.push(`After the answer: the deciding words are marked${(item.deciding || []).length ? '' : ' (none named)'}. Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
   if (item.fact) { const f = data.subjects.__current.items[item.fact], a = f.asks.find(x => x.accept); lines.push(`${e.SAY.factHeading}: ${f.blocks.find(b => b.kind === 'spoken').text} Accepted: ${a.accept.map(x => e.recallEntryText(x)).join('; ')}.`); }
-  if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
+  if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found.length ? `${e.SAY.hasFound}: ${n.text} ${n.found.map(f => `“${f.text}”`).join(' ')}` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
   if (item.figure) lines.push('A picture is added to the feedback:', ...blockLines(item.figure));
   if (item.redraw) lines.push(`A chart is added to the feedback, "${SAYWORDS.redraw}": the chart above drawn again with the scale starting at zero.`);
   if (item.steps) lines.push('The working:', ...item.steps.map(s => `- ${s.does} ${s.working}`));
@@ -275,7 +280,7 @@ function ownLines(e, subject, lesson, step, at) {
     ...form.fields.map(f => `- ${fieldWords(f)}`), ...(form.rows ? [`- ${form.rows.label}, one row for each, added with "${SAY.ownAddFund}":`, ...form.rows.fields.map(f => `  - ${fieldWords(f)}`)] : []), '',
     `Each account has "${SAY.ownRemoveAccount}" and the sheet has "${SAY.ownAddAccount}". Refused, with a line under the field and nothing stored: a field left empty, a word where a number goes, and any run of ${e.OWN_MAX_DIGITS || 8} or more digits ("${SAY.ownDigits}"). A fund row or an account left wholly blank is dropped. Buttons: "${SAY.ownSave}", and "${SAY.ownNoAccounts}" (then "${SAY.ownNoAccountsLine}").`, '');
   out.push(`**What it costs.** "${SAY.ownCostsTitle}": ${SAY.ownCostsHow} Each account is a statement of its funds (value, yearly cost, dollars a year), the fees, and "${SAY.ownThisCosts}" in dollars; then "${SAY.ownAllCost}" in dollars with its share of what is in the accounts. A yearly cost over the form's own limit is warned about and kept; funds that add up to a different balance are said so.`, '');
-  if (model) out.push(`**The lines to find.** "${SAY.ownModelHeading}": ${SAY.ownModelLine} The sample of the worked example is shown again with its deciding lines marked:`, '', blocksText(model.blocks, model.deciding || [], subject.meta.refs || []));
+  if (model) out.push(`**The lines to find.** "${SAY.ownModelHeading}": ${paras(step.where).join(' ')} The sample of the worked example is shown again with its deciding lines marked:`, '', blocksText(model.blocks, model.deciding || [], subject.meta.refs || []));
   out.push(`**The change.** "${SAY.ownActionHeading}": ${SAY.ownActionHow}`, '', ...actions.fields.map(f => `- ${fieldWords(f)}`), '',
     `Buttons: "${SAY.ownSaveAction}" (the day may not be in the past) and "${SAY.ownDoneNow}" (needs only what and where, and is marked done today). Each change is listed with "${SAY.ownCalendar}", which saves a calendar file (.ics) for its day with a reminder at nine, and "${SAY.ownMarkDone}". "${SAY.ownNothing}" Then "${SAY.goOn}".`, '');
   return out;
@@ -306,18 +311,18 @@ export function renderLesson(loaded, subjectId, lessonId) {
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
       const right = a => a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
       out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
-        ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
+        ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found.length ? `${e.SAY.hasFound}: ${n.text} ${n.found.map(f => `“${f.text}”`).join(' ')}` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
         ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');
     } else {
       const set = step.set, refs = e.flatRefs(set.items), sung = refs.some(isSung), count = refs.reduce((k, r) => k + e.refCount(r), 0);
       const HELP_WORDS = { panel: 'what the label needs, shown beside the words', line: 'the line and the notes drawn while singing', estimateCheck: 'a line that says when the answer and the estimate disagree: an answer more than double or less than half of the learner\'s own estimate is held back once' };
       const checklist = set.support && set.support.panel && refs.length && refs.every(r => { const d = subject.items[e.refId(r)] || subject.gens[e.refId(r)]; return e.itemRuleIds(d).length === 1 && subject.meta.rules[e.itemRuleIds(d)[0]].heading; });
-      const setWords = (set.items.some(Array.isArray) ? ', with each inner pair asked one after the other, in a random order' : '') + (set.seconds ? `, each question on a ${set.seconds} second clock (the clock only shows the time, counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed)` : '')
+      const setWords = (set.items.some(Array.isArray) ? ', with each inner pair asked one after the other, in a random order' : '') + (set.seconds ? `, after a screen that says "${e.SAY.timedLine(set.seconds)}" (button: "${e.SAY.timedStart}"), each question on a ${set.seconds} second clock (counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed)` : '')
         + (set.over === 'busy' ? ', over the busy task (a shopping list to sort by taps; a banner arrives over it after two sorts and its clock starts then; the sorting is never scored or stored)' : '')
         + (set.plan ? ', with the learner\'s saved plan shown once first when there is one' : '');
       const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (k === 'panel' && checklist ? 'the checklist of what counts, shown beside the words' : HELP_WORDS[k] || k) : `${k} ${v}`).join(', ')})` : '';
       if (sung) {
-        out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum with the line drawn. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}. A missed try comes back at least three tries later, with a new note, until it is on the note.`, '');
+        out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum with the line drawn. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}. A missed try comes back at least three tries later, with a new note, until it is on the note${set.returns ? `, but at most ${set.returns} come back in one group, so a group always ends` : ''}.`, '');
         out.push(...rangeFirst(e, refs, rangeShown), ...sungRefLines(e, refs, set.support, 'Try', n));
         n += count;
         if (!refs.every(r => isSung(r) && r.sing.task === 'warmup')) out.push('Then a screen: you can stop here, your place is kept.', '');

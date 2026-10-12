@@ -102,12 +102,12 @@ async function theBox(env, c, page) {
   c.check(now.key === 'law' && now.redo, `the miss does not come back (${now.key}${now.redo ? '*' : ''})`);
   await type(page, 'constitution');
   await next(page);
-  c.check(/2 of 3 right the first time/.test(await screenText(page)), `an answer counted on the learner's word is not counted right in the group (${(await screenText(page)).slice(0, 200)})`);
+  c.check(/1 of 3 right the first time, and 1 counted on your word/.test(await screenText(page)), `an answer counted on the learner's word is counted right the first time in the group (${(await screenText(page)).slice(0, 200)})`);
   await env.goOn(page);
   // parts in any order are right; one answer for two is a miss that still offers a claim
   now = await look(page);
   c.check(now.key === 'branches', `the first question of the second group is ${now.key}`);
-  await type(page, 'judicial, legislative and executive');
+  await type(page, 'judiciary, the legislative branches and executive branch');   // a part with another wording, the word branch, an ending
   c.check(JSON.stringify(await accepted(page)) === JSON.stringify(['Legislative, executive, and judicial You gave this one', 'Congress, president, and the courts']), `an answer in parts is not marked as the answer given (${JSON.stringify(await accepted(page))})`);
   await next(page);
   c.check((await look(page)).wants === 2 && /Give two different answers/.test(await screenText(page)), 'a question that wants two answers does not say so');

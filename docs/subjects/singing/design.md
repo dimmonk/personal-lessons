@@ -114,3 +114,8 @@ Gate 6, in progress: the app capabilities of gate 3 are built (lesson standard 2
 draft (2026-10-10): a warm-up, a screen on how a try goes, eight tries with the line, eight without, and the check (4 of 5 on the note, without
 the line). It opens with the range exercise when no range is stored. It waits for the owner's try on a phone: `tried.pilot` stays null, and
 lessons 1 and 3 to 7 are not written, until the owner has tried it and said what it did. Gate 7: not started.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l2.md`, verdict passes; the non-blocking fixes done in rev 2
+Done: a group may say `returns: n`, and both groups of eight say 4, so a learner who misses most is never held in a group; "until the bar ends or 'Sing now'
+goes away"; the bar is drawn the height of the band scored as on the note (25 cents either side); the card says the middle of the try is what counts. Not done:
+the straw in the warm-up text (the warm-up is its own screen and is skippable; it is not in the lesson data this pass).

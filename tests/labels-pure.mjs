@@ -12,7 +12,7 @@ const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
 const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
 const app = await loadApp({ fixture: true });
 const { FC, scoreItem, itemHtml, feedbackHtml, blockHtml, hasLines, hasHtml, panelHtml, labelledPostHtml, facetSplits, splitsHtml, panelBlocksOf, itemRuleIds, ruleNeeds, labelledPostsOf,
-  LABEL_SIDES, ruleText, ruleMet, checkResult, flatRefs, refId, flowSets, SAY, segmentsOf, tapRightIds, tapSegments } = app;
+  LABEL_SIDES, ruleText, ruleMet, checkResult, flatRefs, refId, flowSets, SAY, segmentsOf, tapRightIds, tapSegments, scoreTap, tapMissHtml, tapRightText } = app;
 const labels = FC.get('labels'), ideology = FC.get('ideology');
 
 /* ---------- the sides: one list, in the engine and in the validator's shape ---------- */
@@ -27,9 +27,9 @@ same(LABEL_SIDES, SHAPE_SIDES, 'the sides a label is thrown from are the same in
   same(labelledPostsOf(g1).length, 1, 'the posts that carry a label');
   const lines = hasLines(labels, g1);
   same(lines.map(g => g.id), ['dry'], 'one group of needs for one rule');
-  same(lines[0].needs.map(n => [n.id, n.found ? n.found.id : null]), [['dry-sky', 'g-1-a'], ['dry-ground', null]], 'a need found in a line, and a need missing');
-  same(lines[0].needs[0].found.text, 'The sky is clear.', 'the line that shows a need is the line of the text');
-  same(hasLines(labels, g2)[0].needs.map(n => n.found && n.found.id), ['g-2-a'], 'a rule with one need');
+  same(lines[0].needs.map(n => [n.id, n.found.map(f => f.id)]), [['dry-sky', ['g-1-a']], ['dry-ground', []]], 'a need found in a line, and a need missing (no lines)');
+  same(lines[0].needs[0].found[0].text, 'The sky is clear.', 'the line that shows a need is the line of the text');
+  same(hasLines(labels, g2)[0].needs.map(n => n.found.map(f => f.id)), [['g-2-a']], 'a rule with one need');
   // the feedback lists each need with its mark
   const html = hasHtml(labels, g1);
   check(/data-has="dry"/.test(html) && /class="found" data-need="dry-sky"/.test(html) && /class="missing" data-need="dry-ground"/.test(html), 'the feedback marks a need found and a need missing');
@@ -71,6 +71,23 @@ same(LABEL_SIDES, SHAPE_SIDES, 'the sides a label is thrown from are the same in
   check(!tapSegments(labels.items['g-1'], labels.items['g-1'].asks[1]).some(s => s.text === post.label.text), 'the commenter\'s own words cannot be tapped');
 }
 
+/* ---------- a tap that takes any line meeting a need ---------- */
+{
+  const earned = labels.items['w-1'], tap = earned.asks[1], skyLine = 'w-1-a', groundLine = 'w-1-b', speakerLine = 'w-1-s';
+  check(tap.meets === true && earned.has['dry-sky'] === skyLine && earned.has['dry-ground'] === groundLine, 'the test question puts its two needs in two lines and takes any line that meets one');
+  same(tapRightIds(tap, earned), [skyLine, groundLine], 'both lines that meet a need are right');
+  same([skyLine, groundLine].map(id => scoreTap(labels, tap, [id], earned)), ['ok', 'ok'], 'either line that meets a need is scored right');
+  same(scoreTap(labels, tap, [speakerLine], earned), 'took-speaker', 'a line that meets no need is still wrong, with its slip');
+  same(scoreTap(labels, tap, [skyLine, groundLine], earned), 'no', 'two lines tapped for a tap that wants one are not right');
+  check(tapMissHtml(labels, tap, [skyLine], earned) === '' && tapMissHtml(labels, tap, [groundLine], earned) === '', 'a line that meets a need is never called wrong in the feedback');
+  check(tapMissHtml(labels, tap, [speakerLine], earned).includes('That says who said it'), 'a line that meets no need still gets its own note');
+  check(tapRightText(tap, earned).includes('The sky is clear all morning.') && tapRightText(tap, earned).includes('The grass is dry.'), 'the answer prints every line that meets a need');
+  // a question that does not take any line keeps its one right line
+  const off = labels.items['g-1'], offTap = off.asks[1];
+  same(tapRightIds(offTap, off), ['g-1-b'], 'a question that does not say meets has the one right line');
+  same(scoreTap(labels, offTap, ['g-1-a'], off), 'no', 'and the line that meets its one need is not right there');
+}
+
 /* ---------- the sides, side by side ---------- */
 {
   const out = (side, ok) => ({ facets: { side }, ok });
@@ -96,7 +113,7 @@ same(LABEL_SIDES, SHAPE_SIDES, 'the sides a label is thrown from are the same in
   const ids = refs => flatRefs(refs).map(refId);
   const groups = flowSets(lesson).map(s => ids(s.items)), checkIds = ids(lesson.check.items), workedId = lesson.flow.find(s => s.worked).worked;
   const used = new Set([...groups.flat(), ...checkIds, workedId]), reserve = Object.keys(items).filter(id => !used.has(id));
-  same(groups.map(g => g.length), [4, 8], 'the two groups are four and eight questions');
+  same(groups.map(g => g.length), [4, 10], 'the two groups are four and ten questions');
   same([checkIds.length, reserve.length], [6, 4], 'the check is six questions and four are held in reserve');
   same(Object.keys(meta.rules), ['market', 'socdem', 'socialist', 'communist'], 'the four labels of part 2');
   same(meta.lists.name.map(o => o.id), [...Object.keys(meta.rules), 'none'], 'the names a question offers are the rules, then none of them');
@@ -123,14 +140,26 @@ same(LABEL_SIDES, SHAPE_SIDES, 'the sides a label is thrown from are the same in
     if (item.facets.fit === 'earned') check(found.length === Object.keys(item.has).length, `${id}: an earned label has every need found`);
     else if (item.facets.fit === 'thin') check(found.length === 0 && words.right === 'none', `${id}: a label on words with too little to tell has nothing found and nothing to tap`);
     else check(found.length < Object.keys(item.has).length && words.right !== 'none', `${id}: a label the words do not earn has a need missing and a sentence that shows it`);
-    const quoted = item.deciding.map(d => post.lines.find(l => l.id === d)).filter(Boolean).map(l => l.text.replace(/[.]$/, ''));
+    // a question whose words say too little marks no line as deciding (nothing decides it); its reason quotes a line all the same
+    if (item.facets.fit === 'thin') check(item.deciding.length === 0, `${id}: words with too little to tell mark no deciding words`);
+    const quotable = item.facets.fit === 'thin' ? post.lines.filter(l => !l.fine).map(l => l.id) : item.deciding;
+    const quoted = quotable.map(d => post.lines.find(l => l.id === d)).filter(Boolean).map(l => l.text.replace(/[.]$/, ''));
     check(quoted.some(q => [].concat(item.reason).join(' ').includes(q)), `${id}: the reason quotes a line that decides it`);
+    // every sentence that is not an answer says why: no bare "That is not the sentence."
+    const answers = words.right === 'none' ? [] : words.meets ? Object.values(item.has).filter(Boolean) : words.right;
+    check(post.lines.filter(l => !answers.includes(l.id)).every(l => !!l.note), `${id}: every sentence that is not the answer has a reason of its own`);
+    check(post.lines.filter(l => answers.includes(l.id)).every(l => !l.note), `${id}: a sentence that is an answer carries no note that calls it wrong`);
     check(item.facets.fit === 'earned' || !!item.need, `${id}: a label that is not earned says what the words would need`);
   });
   // both sides in balance, everywhere
   const side = id => items[id].facets.side, fit = id => items[id].facets.fit, count = (list, f, v) => list.filter(id => f(id) === v).length;
   [...groups, checkIds, reserve].forEach((list, k) => same([count(list, side, 'left'), count(list, side, 'right')], [list.length / 2, list.length / 2], `group ${k + 1}: labels thrown from each side in equal number`));
   const taught = [...groups.flat(), ...checkIds];
+  // the boundary the real moment sits on: a benefit paid by taxes with nothing said about who owns anything
+  const silent = id => fit(id) === 'unearned' && !/privately|private|change hands|stay/i.test(items[id].blocks[0].lines.map(l => l.text).join(' '));
+  check(groups[1].some(silent) && checkIds.some(silent), 'a practice question and a check question are a benefit paid by taxes with nothing said about ownership');
+  // the left's misfires are not only self-labels: a label thrown from the left at a plan it does not fit
+  check(taught.some(id => side(id) === 'left' && fit(id) === 'unearned' && items[id].blocks[0].label.text.length && items[id].blocks[1].rules[0] === 'market'), 'a free-market or capitalist label thrown from the left at a plan that is not one');
   ['earned', 'unearned', 'thin'].forEach(f => ['left', 'right'].forEach(s => check(taught.some(id => fit(id) === f && side(id) === s), `every side throws a label of each kind (${s}, ${f})`)));
   same(['earned', 'unearned', 'thin'].map(f => count(checkIds, fit, f)), [2, 2, 2], 'the check holds two of each kind');
   same(['earned', 'unearned', 'thin'].map(f => count(reserve, fit, f)).map(n => n > 0), [true, true, true], 'the reserve holds each kind');

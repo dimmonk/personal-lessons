@@ -1,10 +1,12 @@
 // Ideology, lesson 2: Socialist, or not? (part 2, Economy labels). The pilot (docs/subjects/ideology/design.md, gate 5). The wrong idea about the
 // word first, then what the four labels need, one label on two sets of words; one worked example (a label on a plan that pays a benefit and leaves
-// the companies alone); a first group of four with what the label needs beside the words; a second group of eight with nothing beside them; and the
+// the companies alone); a first group of four with what the label needs beside the words; a second group of ten with nothing beside them; and the
 // check of part 2: six new labels, three thrown from each side, 5 of 6 to pass and at least 2 of 3 on each side.
 FC.lesson("ideology", {
-  id: "l2", part: "2", title: "Socialist, or not?", rev: 1, status: "draft",
-  history: [{ rev: 1, date: "2026-10-11", change: "First version, built as the pilot of Ideology under the practice engine. Not tried on a phone yet." }],
+  id: "l2", part: "2", title: "Socialist, or not?", rev: 2, status: "draft",
+  history: [
+    { rev: 1, date: "2026-10-11", change: "First version, built as the pilot of Ideology under the practice engine. Not tried on a phone yet." },
+    { rev: 2, date: "2026-10-11", change: "After the stand-in learner review: on a label the words earn with its needs in different sentences, any sentence that meets a need is right (and is never called wrong); every sentence that is not the answer says why; sentences that say nothing are not marked as deciding words; words that only have taxes pay for a benefit, with no takeover named, are taught and practised as not earned; a wrong idea for \"capitalist\" and a \"capitalist\" thrown from the left at a plan that is not one are added; the second group is ten questions and the check swaps one question for a benefit that says nothing about ownership." }],
   why: [
     "A label like “socialist” is a claim about what some words want done. People throw it from every side, and often it does not fit.",
     "Here you check a label against the words it is pinned on. You find what the words say, compare that with what the label needs, and decide: earned, not earned, or too little to tell."
@@ -19,7 +21,11 @@ FC.lesson("ideology", {
           "A label pinned on words is a claim. You can check it in three steps.",
           "1. Find what the words say should be done. Leave out the tone, the insults and who is speaking.",
           "2. Read what the label needs. Each label needs a few things, and the words have to show every one.",
-          "3. Decide. Earned: the words show every need. Not earned: they show something that does not fit, and you say which name fits instead. Too little to tell: the words are too vague to show the label or rule it out."] }
+          "3. Decide. Earned: the words show every need. Not earned: they show something that does not fit, and you say which name fits instead. Too little to tell: the words are too vague to show the label or rule it out.",
+          "Words that only say a tax pays for a benefit, and take nothing over, are not “socialist” either. They are the social democrat idea, and they do not have to say that business stays private."] },
+        { kind: "prose", tone: "wrong", text: [
+          "“Capitalist means greedy, or pro-business.”",
+          "As a label it means one thing you can check: businesses in private hands and prices decided by buyers and sellers. A plan can help business and fix the price, and then it is not that. A plan can be called greedy and still be that."] }
       ] },
     { title: "What the four labels need",
       show: [
@@ -39,10 +45,10 @@ FC.lesson("ideology", {
       ] },
     { worked: "w-power" },
     { set: { items: [["p-fares", "p-bus"], "p-jobs", "p-fortunes"], order: "listed", support: { panel: true } } },
-    { set: { items: ["q-sell", "q-farms", "q-coops", "q-utilities", "q-economy", "q-steel", "q-ordinary", "q-banks"], order: "shuffle" } }
+    { set: { items: ["q-sell", "q-farms", "q-coops", "q-utilities", "q-economy", "q-steel", "q-ordinary", "q-banks", "q-rail", "q-meals"], order: "shuffle" } }
   ],
   check: {
-    items: ["k-water", "k-rents", "k-drugs", "k-wage", "k-unleash", "k-city"],
+    items: ["k-water", "k-rents", "k-leave", "k-wage", "k-unleash", "k-city"],
     feedback: "at-end", order: "shuffle",
     pass: [{ right: { min: 5 } }, { where: { side: "left" }, right: { min: 2 } }, { where: { side: "right" }, right: { min: 2 } }]
   }

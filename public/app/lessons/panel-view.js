@@ -16,10 +16,11 @@ function panelHint(data, item) {
   return rules.length === 1 && rules[0].heading ? SAY.helpPanelNamed(rules[0].heading) : SAY.helpPanel;
 }
 
-// The feedback of a question that has a panel: each need of the label, and the line of the words that shows it or the word that it is missing
-function hasHtml(data, item) {
-  return hasLines(data, item).map(g => `<div class="vblock" data-has="${esc(g.id)}">${lessonLabel(g.heading || SAY.hasHeading(g.name))}<ul class="hasneeds">${g.needs.map(n => n.found
-    ? `<li class="found" data-need="${esc(n.id)}"><b>${esc(SAY.hasFound)}</b> ${esc(n.text)}<span class="hasline">“${esc(tapClip(n.found.text))}”</span></li>`
+// The feedback of a question that has a panel: each need of the label, and the lines of the words that show it or the word that it is missing.
+// A checklist that says `feedback: 'on-miss'` is listed after a miss, or when a need is missing (`missed`), and not after every right answer.
+function hasHtml(data, item, missed = true) {
+  return hasLines(data, item).filter(g => !g.onMiss || missed || g.needs.some(n => !n.found.length)).map(g => `<div class="vblock" data-has="${esc(g.id)}">${lessonLabel(g.heading || SAY.hasHeading(g.name))}<ul class="hasneeds">${g.needs.map(n => n.found.length
+    ? `<li class="found" data-need="${esc(n.id)}"><b>${esc(SAY.hasFound)}</b> ${esc(n.text)}${n.found.map(f => `<span class="hasline">“${esc(tapClip(f.text))}”</span>`).join('')}</li>`
     : `<li class="missing" data-need="${esc(n.id)}"><b>${esc(SAY.hasMissing)}</b> ${esc(n.text)}<span class="hasline">${esc(SAY.hasNowhere)}</span></li>`).join('')}</ul></div>`).join('');
 }
 

@@ -40,20 +40,20 @@ FC.items("stats", [
   statsItem({
     id: "p-crosswalk", fit: "holds", kind: "compare", line: "s1",
     blocks: [{ kind: "article", form: "news", source: "Pinecrest Daily · City Hall",
-      headline: statsLine("h", "Crashes at 12 busy corners fell after new crosswalk lights went in"),
+      headline: statsLine("h", "City counts 19 crashes at 12 busy corners this year, down from 31 last year"),
       lines: [
-        statsLine("s1", "The city counted 19 crashes at the 12 corners in the two years since the lights went in, down from 31 in the two years before, the public works department said Monday."),
-        statsLine("s2", "The lights count down the seconds left to cross and stop traffic in every direction at once.", { para: true }),
+        statsLine("s1", "The city counted 19 crashes at the 12 corners in the past 12 months, down from 31 in the 12 months before, the public works department said Monday."),
+        statsLine("s2", "New crosswalk lights went in at all 12 corners last spring. They count down the seconds left to cross.", { para: true, note: "That says what was installed, not how many crashes there were." }),
         statsLine("s3", "Public works director Elena Park said the department will add lights at six more corners next year if the council approves the money.", { note: "That is what comes next, not a number about crashes." })] }],
     deciding: ["h", "s1"],
-    reason: ["The headline says crashes “fell after” the lights went in, and the department’s own count says the same: 31 crashes in the two years before, 19 in the two years since. The headline does not say the lights are the reason, and neither does the story."],
-    need: "To say the lights caused the drop, you would need other corners with no new lights over the same years. The headline does not claim that."
+    reason: ["The headline says crashes are down, from 31 to 19, and the department’s own count says the same. The headline compares two years and claims nothing more. It does not say the new lights are the reason, and neither does the story."],
+    need: "To say the lights caused the drop, you would need other corners with no new lights over the same years. The headline does not say that."
   }),
   statsItem({
     id: "p-savings", fit: "unclear", kind: "compare", line: null,
     blocks: [{ kind: "article", form: "post", source: "Jordan Reyes · @jordansaves · 3h",
       lines: [
-        statsLine("s1", "Everyone I know is moving their savings to Pinecone Bank. Their rates are way better than the big banks right now."),
+        statsLine("s1", "Pinecone Bank’s savings rates are way better than the big banks right now."),
         statsLine("s2", "Seriously, don’t miss out.", { note: "That is a push to act, not a number." })] }],
     deciding: ["s1"],
     reason: ["The post says Pinecone Bank’s rates are “way better”, but it gives no rate and names no bank to compare with. With no number in the text, there is nothing to check, so you cannot tell."],
@@ -108,11 +108,9 @@ FC.items("stats", [
       { kind: "article", form: "post", source: "Ravi Menon · Operations lead · 5h",
         lines: [
           statsLine("s1", "Our on-time delivery rate was 94% in June: 1,860 of 1,980 orders arrived by the promised date."),
-          statsLine("s2", "Thank you to the whole dispatch team.", { note: "That is a thank-you, not a number." })] },
-      { kind: "chart", type: "line", title: "Orders delivered on time", x: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"], y: { from: 0, to: 100, step: 25, unit: "% of orders" },
-        series: [{ values: [81, 85, 88, 90, 92, 94] }], labels: true, source: "Ravi Menon, operations records" }],
+          statsLine("s2", "Thank you to the whole dispatch team.", { note: "That is a thank-you, not a number." })] }],
     deciding: ["s1"],
-    reason: ["The post says 94% in June, and gives the counts behind it: 1,860 of 1,980 orders, which is 94%. The chart shows the same June figure, on a scale that starts at zero. The post claims a size and the text shows it."],
+    reason: ["The post says 94% in June, and gives the counts behind it: 1,860 of 1,980 orders, which is 94%. The post claims a size and the text shows it."],
     need: "Nothing more is needed for the size. To say why the rate went up you would need to know what changed, and the post does not claim that."
   }),
   statsItem({

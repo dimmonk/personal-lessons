@@ -3,7 +3,7 @@
 // word (V80, V71).
 FC.subject('psychology', {
   name: "Psychology",
-  rev: 8,
+  rev: 9,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-04",
@@ -21,7 +21,9 @@ FC.subject('psychology', {
     { rev: 7, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 8, date: "2026-10-11",
-      change: "Step 7, accounts: the record holds what lesson 1 needs (what counts as what someone did, the four ways an account can read, the next steps, the common slips, and the one topic that comes back in the review), and lesson 1, What did they do?, is added as the pilot." }
+      change: "Step 7, accounts: the record holds what lesson 1 needs (what counts as what someone did, the four ways an account can read, the next steps, the common slips, and the one topic that comes back in the review), and lesson 1, What did they do?, is added as the pilot." },
+    { rev: 9, date: "2026-10-11",
+      change: "After the pilot's stand-in review: the checklist of what counts as what they did is listed in the feedback only after a miss or when nothing says what they did, and the first next step is worded \"Find out what was said or done\"." }
   ],
   endResult: "When someone reaches for a word like \"narcissist\", \"gaslighting\" or \"manipulative\", check it against what the person actually did: say what they did, whether it shows one bad moment or a pattern, and what to do next.",
   parts: [
@@ -34,7 +36,7 @@ FC.subject('psychology', {
   ],
   lists: {
     step: [
-      { id: "find-out", text: "Find out what happened" },
+      { id: "find-out", text: "Find out what was said or done" },
       { id: "watch", text: "Watch whether it repeats" },
       { id: "limit", text: "Say what they did and where your limit is" },
       { id: "help", text: "Get help from outside" }
@@ -52,7 +54,7 @@ FC.subject('psychology', {
     ]
   },
   rules: {
-    act: { name: "What they did", heading: "What counts as what they did", needs: [
+    act: { name: "What they did", heading: "What counts as what they did", feedback: "on-miss", needs: [
       { id: "act-did", text: "It says something they did or said." },
       { id: "act-seen", text: "Anyone there could have seen or heard it. It has no guess about why." }
     ] }

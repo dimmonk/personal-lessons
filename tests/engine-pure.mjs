@@ -67,6 +67,11 @@ const data = app => app.FC.get('fixture');
   same(scoreItem(d, c1, null, { num: 'n20', v: 'bring' }), { r: { num: 'no', v: 'ok' }, ok: false }, 'an item with one wrong ask is wrong');
   const many = { id: 'm', kind: 'choose', prompt: 'x', many: true, options: [{ id: 'a', text: 'A', ok: true }, { id: 'b', text: 'B', ok: true }, { id: 'c', text: 'C', then: 'no' }] };
   check(scoreChoose(d, many, ['a', 'b']) === 'ok' && scoreChoose(d, many, ['a']) === 'no' && scoreChoose(d, many, ['a', 'b', 'c']) === 'no', 'several choices are right only when exactly the right ones are tapped');
+  // any one of several right options is right when the ask says either (a real message that offers no way in: do what it says, or check it)
+  const either = { id: 'e', kind: 'choose', prompt: 'x', either: true, options: [{ id: 'a', text: 'Do it', ok: true }, { id: 'b', text: 'Check first', ok: true }, { id: 'c', text: 'Leave it', then: 'no' }] };
+  check(scoreChoose(d, either, 'a') === 'ok' && scoreChoose(d, either, 'b') === 'ok' && scoreChoose(d, either, 'c') === 'no' && scoreChoose(d, either, ['a', 'b']) === 'no', 'with either, any one right option is right, and two at once are not');
+  check(app.markHtml(d, either, 'c', 'no', { id: 'i' }, {}).includes('The answer: Do it or Check first'), 'the answer of an either ask names the right options with "or"');
+  check(app.markHtml(d, many, ['a'], 'no', { id: 'i' }, {}).includes('The answer: A; B'), 'the answer of an ask that takes several keeps the semicolon');
   const t1 = d.items['t-1'];
   same(askedAsks(t1, null).map(a => a.id), ['when', 'v'], 'with no help every ask is the learner\'s');
   same(askedAsks(t1, { leave: 1 }).map(a => a.id), ['v'], 'help that leaves one step shows the other and gives its answer');

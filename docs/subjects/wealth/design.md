@@ -289,3 +289,13 @@ named answers and the drills go.
    contracts, one LLC per property, estate-tax gifts and trusts, a bond per bill, tax-loss harvesting) and leaves out
    the quiet leaks of someone starting out in the US: the employer match, foreign accounts and funds under US rules,
    and simply listing what you have.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l2.md`, verdict fails; fixed in rev 2
+Done: the papers carry the labels real ones do (category, gross and net expense ratio, a fee charged each quarter, an advisory fee as a percent of the
+account); the rule says which number to use (net), what the same kind is (the same category on the papers: Large Growth is not Large Blend), what to do with
+a target-date fund, and that a switch in a taxable account can owe tax; "Find the same lines on yours" is replaced by where the lines are on a 401(k)'s papers
+and on a broker's (`where` on the own step); the name cue is broken (five generators: an account to change, one to leave that is a cheap fund, one to leave
+that is an active fund and the cheapest of its category, three funds held with one to change, one target-date fund; which fund is cheap is drawn and names carry
+no hint); the pass rule says "within 10%". The check is now three new accounts of three fee shapes (quarterly, flat, a percent of the account) with one to change
+and two to leave. Gate 5 says the check has "one cheap index fund to leave"; the record wins on what the check measures (a cheap fund to leave, a held fund that is
+cheapest of its kind), and the cheap fund to leave is no longer named for it.

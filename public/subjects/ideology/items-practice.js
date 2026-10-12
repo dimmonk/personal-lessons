@@ -57,10 +57,10 @@ FC.items("ideology", [
     id: "p-jobs", side: "left", fit: "thin", rule: "market", word: "capitalist",
     post: { source: "Comment · @priya_o · 6h", by: "On a left-leaning news page", text: "Capitalist nonsense, as usual." },
     lines: [
-      L("j1", "Our plan is to grow the economy and bring good jobs back to the county."),
-      L("j2", "We will work with business, workers and local leaders."),
+      L("j1", "Our plan is to grow the economy and bring good jobs back to the county.", "That is a goal. It names no business, no owner and no price."),
+      L("j2", "We will work with business, workers and local leaders.", "That says who the plan would work with, not who owns or prices anything."),
       FROM("j3", "Said by a candidate for county commissioner.")],
-    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: ["j1", "j2"],
+    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: [],
     reason: ["“Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our plan is to grow the economy and bring good jobs back to the county” says neither.",
       "It names no business, no owner and no price, so the words cannot show the label and cannot rule it out."],
     need: "To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices."
@@ -85,7 +85,7 @@ FC.items("ideology", [
     post: { source: "Comment · @theo_b · 8h", by: "On a left-leaning news page", text: "Free-market thinking again. Leave it to the market and watch who loses." },
     lines: [
       L("m1", "The Lakeshore Bus Plan would sell the state-owned bus company to private firms."),
-      L("m2", "The new owners could charge whatever fares riders will pay.", "That is about fares, once the company is sold."),
+      L("m2", "The new owners could charge whatever fares riders will pay."),
       L("m3", "The state would only enforce safety rules and contracts.", "That says what the state would keep doing."),
       FROM("m4", "Said by a state budget official on a radio show.")],
     tap: "m1", has: { "fm-private": "m1", "fm-prices": "m2" }, deciding: ["m1", "m2", "m3"],
@@ -134,10 +134,10 @@ FC.items("ideology", [
     id: "q-economy", side: "left", fit: "thin", rule: "market", word: "capitalist",
     post: { source: "Comment · @nina_v · 10h", by: "On a left-leaning news page", text: "Capitalism at work, as always." },
     lines: [
-      L("x1", "Our economy should work better for everyone."),
-      L("x2", "We have heard from hundreds of residents, and we are ready to act."),
+      L("x1", "Our economy should work better for everyone.", "That is a hope. It names no business, no owner and no price."),
+      L("x2", "We have heard from hundreds of residents, and we are ready to act.", "That says who was heard, not what the plan does."),
       FROM("x3", "Said by a state commerce director in a speech.")],
-    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: ["x1", "x2"],
+    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: [],
     reason: ["“Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our economy should work better for everyone” names no business, no owner and no price.",
       "The words cannot show the label and cannot rule it out."],
     need: "To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices."
@@ -159,10 +159,10 @@ FC.items("ideology", [
     id: "q-ordinary", side: "right", fit: "thin", rule: "socialist", word: "socialist",
     post: { source: "Comment · @ed_m · 11h", by: "On a right-leaning news page", text: "Socialist, obviously." },
     lines: [
-      L("v1", "It is time for a government that puts ordinary people first."),
-      L("v2", "For too long, working families have been ignored."),
+      L("v1", "It is time for a government that puts ordinary people first.", "That is a promise about who comes first. It names no business, no owner and no price."),
+      L("v2", "For too long, working families have been ignored.", "That is a complaint about the past, not a plan."),
       FROM("v3", "Said by a candidate in a campaign video.")],
-    tap: "none", has: { "soc-industry": null, "soc-owner": null }, deciding: ["v1", "v2"],
+    tap: "none", has: { "soc-industry": null, "soc-owner": null }, deciding: [],
     reason: ["“Socialist” needs a main industry named and the public or the workers owning it. “It is time for a government that puts ordinary people first” names no industry and says nothing about who would own anything.",
       "The words cannot show the label and cannot rule it out."],
     need: "To judge “socialist”, the words would have to say which industry, and who would own it."
@@ -179,6 +179,32 @@ FC.items("ideology", [
     reason: ["“Communist” needs nearly all property and business owned in common or by the state, and one central plan. “The Public Banking Act would have the state buy the three largest banks and the main railroad” covers a few industries, and “All other businesses, farms and shops would stay privately owned” leaves the rest alone.",
       "Public ownership of a few main industries is the socialist idea."],
     need: "To earn “communist”, the words would have to say that nearly all farms, factories and shops would be owned in common or by the state."
+  }),
+  ideoItem({
+    id: "q-rail", side: "left", fit: "unearned", rule: "market", word: "capitalist", name: "socialist",
+    post: { source: "Comment · @iris_m · 14h", by: "On a left-leaning news page", text: "Capitalist robbery, as always." },
+    lines: [
+      L("n1", "The Rail Rescue Plan would have the state buy the failing Valley Railroad from its owners."),
+      L("n2", "A public board would run it, and the board would decide the fares.", "That says how it would be run, once the state owns it."),
+      L("n3", "Freight companies would pay the same rates as before.", "That is about rates, not who owns the railroad."),
+      FROM("n4", "Said by a state transport official.")],
+    tap: "n1", has: { "fm-private": null, "fm-prices": null }, deciding: ["n1", "n2"],
+    reason: ["“Free-market” needs businesses in private hands and prices decided by buyers and sellers. “The Rail Rescue Plan would have the state buy the failing Valley Railroad from its owners” takes a company out of private hands, and “the board would decide the fares” takes the prices away from buyers and sellers.",
+      "A main industry bought by the state and run as a public service is the socialist idea, so that is the name the words earn."],
+    need: "To earn “capitalist”, the words would have to leave the railroad with its private owners and the fares to buyers and sellers."
+  }),
+  ideoItem({
+    id: "q-meals", side: "right", fit: "unearned", rule: "socialist", word: "socialist", name: "socdem",
+    post: { source: "Comment · @lou_b · 9h", by: "On a right-leaning news page", text: "Socialism for lunch. Here we go." },
+    lines: [
+      L("l1", "The Full Plate Plan would give every public school student a free breakfast and lunch.", "That is what students get, not who owns anything."),
+      L("l2", "A 0.5% tax on large company profits would pay for it."),
+      L("l3", "Kitchens would open in September.", "That says when, not what the plan does."),
+      FROM("l4", "Said by a school board member.")],
+    tap: "l2", has: { "soc-industry": null, "soc-owner": null }, deciding: ["l1", "l2"],
+    reason: ["“Socialist” needs a main industry named and the public or the workers owning it. The plan names no industry and takes nothing over: “A 0.5% tax on large company profits would pay for it” is a tax paying for a benefit.",
+      "Nothing changes hands, so the label is not earned. Words that only say a tax pays for a benefit are the social democrat idea. They do not have to say that business stays private."],
+    need: "To earn “socialist”, the words would have to name an industry and say the public or the workers would own it."
   })
 ]);
 })();

@@ -20,7 +20,7 @@ export const SUBJECT = obj(
   { id: str, name: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
     strands: arr(idTitle(), { empty: true }), readingShare: num },
-  { rules: map(obj({ name: str, needs: arr(idText) }, { heading: str })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
+  { rules: map(obj({ name: str, needs: arr(idText) }, { heading: str, feedback: en('on-miss') })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
     refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool,
     // the slip that is the failure, the facet the questions are sorted by, and which of its values is the risky one and which is the real one (V82)
     danger: obj({ slip: str, facet: str, risky: str, real: str }) });
@@ -78,15 +78,15 @@ export const ORDER = obj({ id: str, kind: en('order'), prompt: text, steps: arr(
 const OPTION = obj({ id: str, text: str }, { ok: bool, slip: str, then: text, value: str });
 export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
   { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), many: bool, when: obj({ ask: str, is: arr(str) }),
-    then: map(text), slips: map(str), answer: str, shuffle: bool });
+    then: map(text), slips: map(str), answer: str, shuffle: bool, either: bool });
 
 // a tap ask (tap.js): the lines of the question, or of the block named by `in`, become tappable; `right` is the lines that decide it, or 'none'
-export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(str, arr(str)) }, { in: str, pick: int, none: text, when: obj({ ask: str, is: arr(str) }) });
+export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(str, arr(str)) }, { in: str, pick: int, meets: bool, none: text, when: obj({ ask: str, is: arr(str) }) });
 
 // a text ask is a line the learner writes against a `model` (text-view.js, never scored), or an answer from memory checked against what a list accepts
 // (`accept`, recall.js): each accepted answer is words (brackets are optional), or words said in parts in any order; or `{ own }`, the answer the
 // learner entered in the form into `answers`; `count` is how many different ones a question wants
-export const ACCEPT_ENTRY = either(str, obj({ text: str, parts: arr(str) }));
+export const ACCEPT_ENTRY = either(str, obj({ text: str, parts: arr(either(str, arr(str))) }), obj({ text: str }, { as: arr(str), also: arr(str) }));
 export const TEXT = obj({ id: str, kind: en('text'), prompt: text },
   { model: text, accept: either(arr(ACCEPT_ENTRY), obj({ own: str })), count: int, when: obj({ ask: str, is: arr(str) }) });
 // a question read aloud (speech-view.js); `show: false` holds its words back behind "Show the words"
@@ -109,7 +109,7 @@ export const FORM_ASK = obj({ id: str, kind: en('form'), prompt: text, fields: a
 /* items and generators */
 const STEP_DEF = obj({ id: str, does: text, working: text }, { ask: str });
 const ITEM_FIELDS = { id: str, strand: str, facets: map(str), blocks: arr(any), asks: arr(any), reason: text };
-const ITEM_OPTIONAL = { steps: arr(STEP_DEF), deciding: arr(str), need: text, has: map(any), fact: str, redraw: en('from-zero'), figure: any };
+const ITEM_OPTIONAL = { steps: arr(STEP_DEF), deciding: arr(str), need: text, notice: text, has: map(any), fact: str, redraw: en('from-zero'), figure: any };
 export const ITEM = obj(ITEM_FIELDS, ITEM_OPTIONAL);
 export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), make: fn }, ITEM_OPTIONAL);
 
@@ -117,12 +117,12 @@ export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), mak
 const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }), obj({ sing: obj({ task: str }, { seconds: int, maxSemitones: int, minSemitones: int, notes: int, maxStep: int, cents: int }), n: int }));
 const SUPPORT = obj({}, { panel: bool, line: bool, shown: bool, leave: int, estimateCheck: bool });
 const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffle') },
-  { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });
+  { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool, returns: int });
 const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
 const CHECK = obj({ items: either(arr(REF), obj({ draw: obj({ strands: arr(str), n: int }) })), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
   { spoken: bool, recall: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds
-export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str }) };
+export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str, where: text }) };
 export const stepKind = step => Object.keys(STEPS).find(k => step && typeof step === 'object' && k in step);
 export const LESSON = obj(
   { id: str, part: nullable(str), title: str, rev: int, status: en(...STATUSES), history, why: text, flow: arr(any), check: CHECK },

@@ -3,7 +3,7 @@
 // for word (V80, V71). The learner's own accounts and dated actions are private data (26.3): the forms below say what the app may ask for.
 FC.subject('wealth', {
   name: "Wealth Preservation",
-  rev: 6,
+  rev: 7,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -17,7 +17,9 @@ FC.subject('wealth', {
     { rev: 5, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 6, date: "2026-10-10",
-      change: "Step 4, documents and your own data: the record holds what lesson 2 needs (change it or leave it, the slips of reading a fee sheet, the kind of question that comes back in the review) and the private forms for the learner's accounts and dated changes, and lesson 2, What it costs a year, in dollars, is added as the pilot." }
+      change: "Step 4, documents and your own data: the record holds what lesson 2 needs (change it or leave it, the slips of reading a fee sheet, the kind of question that comes back in the review) and the private forms for the learner's accounts and dated changes, and lesson 2, What it costs a year, in dollars, is added as the pilot." },
+    { rev: 7, date: "2026-10-11",
+      change: "After the pilot's stand-in review: two more slips (a fee charged each quarter counted once; a fund of a different category) and the fund-costs papers worded as real ones are." }
   ],
   endResult: "Run the yearly check on your own US accounts: work out what each costs you a year in dollars, your biggest single bet, how far your mix has drifted, whether you take the full employer match, which foreign holdings need a US filing, and who inherits each account; then make the changes it calls for and leave alone what it clears.",
   parts: [
@@ -35,11 +37,11 @@ FC.subject('wealth', {
     slip: [
       { id: "percent-as-dollars", text: "used each percent as if it were dollars, without dividing by 100" },
       { id: "left-out-fee", text: "left the plan's own fee out of the total" },
-      { id: "top-rate-on-all", text: "used the costly fund's yearly cost on everything in the account" },
-      { id: "wrong-row", text: "read the yearly cost of a different fund" },
+      { id: "quarter-once", text: "counted a fee charged each quarter once, not four times a year" },
+      { id: "wrong-row", text: "read the net expense ratio of a different fund" },
       { id: "churned", text: "changed a fund that was already the cheapest of its kind" },
       { id: "overpaid", text: "left a fund that costs more than another of its kind on the same list" },
-      { id: "wrong-kind", text: "switched to a fund of a different kind because it costs less" }
+      { id: "wrong-kind", text: "switched to a fund of a different category because it costs less" }
     ],
     accountType: [
       { id: "401k", text: "401(k) from a job" }, { id: "ira", text: "IRA" }, { id: "roth", text: "Roth IRA" }, { id: "hsa", text: "HSA" },

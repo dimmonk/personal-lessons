@@ -13,8 +13,8 @@ export const jump = (page, at) => page.evaluate(n => moveLesson(n), at);
 // the question in front of the learner: which one, and the asks still open (the tap ask with what it wants)
 export const look = page => page.evaluate(() => {
   const inst = Q.list[Q.at], open = openAsks(inst.item, Q.support, Q.cur.a).filter(a => !(a.id in Q.cur.a));
-  return { key: inst.key, redo: !!inst.redo, done: Q.cur.done, open: open.map(a => ({ id: a.id, kind: a.kind, pick: a.pick || 1, right: a.kind === 'tap' ? tapRightIds(a) : chooseOptions(FC.get(Q.subj.id), a).filter(o => o.ok).map(o => o.id),
-    wrong: a.kind === 'tap' ? tapSegments(inst.item, a).map(s => s.id).filter(id => !tapRightIds(a).includes(id)) : chooseOptions(FC.get(Q.subj.id), a).filter(o => !o.ok).map(o => o.id) })) };
+  return { key: inst.key, redo: !!inst.redo, done: Q.cur.done, open: open.map(a => ({ id: a.id, kind: a.kind, pick: a.pick || 1, right: a.kind === 'tap' ? asList(a.right) : chooseOptions(FC.get(Q.subj.id), a).filter(o => o.ok).map(o => o.id),
+    wrong: a.kind === 'tap' ? tapSegments(inst.item, a).map(s => s.id).filter(id => !tapRightIds(a, inst.item).includes(id)) : chooseOptions(FC.get(Q.subj.id), a).filter(o => !o.ok).map(o => o.id) })) };
 });
 const tapLine = (page, id) => page.locator(`[data-tap="${id}"]`).click();
 // answers the asks open now, one at a time, right (or, with `miss`, the first ask wrong)

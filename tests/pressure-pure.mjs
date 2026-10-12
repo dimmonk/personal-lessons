@@ -153,7 +153,7 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
   const sets = l3.flow.filter(s => s.set).map(s => group(s.set.items)), checkIds = l3.check.items, baseIds = l0.check.items;
   const all = [...sets.flat(), ...checkIds, ...baseIds, l3.flow[1].worked];
   check(new Set(all).size === all.length, 'no message is in two places of the pilot or the baseline');
-  same([sets[0].length, sets[1].length, checkIds.length, baseIds.length], [6, 8, 12, 10], 'six in the pairs, eight mixed, twelve in the check, ten in the baseline');
+  same([sets[0].length, sets[1].length, checkIds.length, baseIds.length], [6, 9, 12, 10], 'six in the pairs, nine mixed, twelve in the check, ten in the baseline');
   same(l3.flow.filter(s => s.set).map(s => s.set.seconds || null), [null, 20], 'the pairs are untimed, the mixed group has 20 seconds');
   same([l3.check.seconds, l0.check.seconds, l3.check.feedback, l0.check.feedback], [20, 20, 'at-end', 'at-end'], 'the check and the baseline give 20 seconds and show nothing until the end');
   const real = id => items[id].facets.genuine === 'genuine', facet = id => items[id].facets;
@@ -165,10 +165,28 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
   l3.flow[2].set.items.forEach(pair => check(pair.length === 2 && real(pair[0]) !== real(pair[1]) && facet(pair[0]).channel === facet(pair[1]).channel, `the pair ${pair} is a real message and a scam of one channel`));
   const act = x => (typeof x === 'string' ? items[x] : x).asks[0];
   const right = id => act(id).right;
+  const rights = id => [].concat(act(id).right);
   // no scam's best action is to do what it says; a real message that wants something is judged by the action that suits it
   Object.values(items).filter(i => i.facets.genuine === 'scam' && i.asks[0].id === 'act').forEach(i => check(right(i.id) !== 'act', `${i.id}: a scam is never right to do what it says`));
-  ['g-invoice-real', 'b-invoice'].forEach(id => check(real(id) && right(id) === 'act' && JSON.stringify(act(id).slips) === '{}', `${id}: a real invoice is paid the way you already pay, and doing so is no slip`));
-  ['p-code-real', 'b-code', 'g-reset'].forEach(id => check(real(id) && right(id) === 'act', `${id}: a code or a reset you asked for is used where you are`));
+  ['g-invoice-real', 'b-invoice'].forEach(id => check(real(id) && rights(id).includes('act') && JSON.stringify(act(id).slips) === '{}', `${id}: a real invoice is paid the way you already pay, and doing so is no slip`));
+  ['p-code-real', 'b-code', 'g-reset'].forEach(id => check(real(id) && rights(id).includes('act'), `${id}: a code or a reset you asked for is used where you are`));
+  // a real message that offers no way in of its own is handled normally by doing what it says or leaving it, and checking it through a way you already had is as right
+  // (design, principle 6); one that offers its own link, number or reply is checked, and following it is the habit
+  Object.values(items).filter(i => i.facets.genuine === 'genuine' && i.asks[0].id === 'act').forEach(i => {
+    const offers = act(i).slips.act === 'habit';
+    same(offers ? rights(i.id) : rights(i.id).includes('check') && rights(i.id).length === 2, offers ? ['check'] : true, `${i.id}: a real message that ${offers ? 'offers its own way in is checked, only' : 'offers none may also be checked'}`);
+    check(offers ? !act(i).either : act(i).either === true, `${i.id}: either is said exactly where checking is as right as the action that suits it`);
+    check(offers || /Checking first, through a way you already had, is also safe/.test(i.reason), `${i.id}: the reason says that checking was safe too`);
+  });
+  // the stranger you only know online has no way of your own: checking can only go through the sender, so leaving it is the one right action, and there is no "how"
+  Object.values(items).filter(i => i.asks[0].id === 'act' && !i.asks[1]).forEach(i => check(i.facets.genuine === 'scam' && right(i.id) === 'leave' && act(i).slips.check === 'their-way' && act(i).slips.act === 'acted', `${i.id}: with no way of your own to check, checking is the sender's way and leaving it is right`));
+  check(['s-romance', 'g-friend'].every(id => !items[id].asks[1]), 'the online friend who wants money is taught (g-friend) and tested (s-romance), with no choice of how to check');
+  // the words of a message's options name its channel: a text is never an email
+  Object.values(items).filter(i => i.asks[0].id === 'act').forEach(i => {
+    const channel = i.facets.channel, text = JSON.stringify([i.asks[1] ? i.asks[1].options : [], act(i).then]);
+    check(channel !== 'sms' || !/\bemail\b/i.test(text), `${i.id}: a text is called an email in its options or its consequences`);
+    check(channel !== 'email' || !/\b(the|in the) text\b/i.test(text.replace(/the text message/gi, '')), `${i.id}: an email is called a text in its options or its consequences`);
+  });
   ['p-alert-real', 'g-credit', 'k-alert-real', 'k-credit-real', 'b-alert'].forEach(id => check(real(id) && right(id) === 'check' && act(id).slips.act === 'habit', `${id}: a real alert is checked in your own way, and following its own link is the habit, not the failure`));
   // the failure is made only on scams; a real message never carries it; every scam that can be acted on does
   Object.values(items).forEach(i => {
@@ -220,7 +238,7 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
   check(items['w-locked'].steps.length === 4 && items['w-locked'].steps[3].ask === 'act' && right('w-locked') === 'check', 'the worked text has four steps, the last making the choice');
   // an answer scored by the action: the engine's own scoring of the choice, every action of every message
   Object.values(items).filter(i => i.asks[0].id === 'act').forEach(i => ['act', 'check', 'leave'].forEach(a => {
-    const result = scoreChoose(scams, i.asks[0], a), want = a === right(i.id) ? 'ok' : (i.asks[0].slips[a] || 'no');
+    const result = scoreChoose(scams, i.asks[0], a), want = rights(i.id).includes(a) ? 'ok' : (i.asks[0].slips[a] || 'no');
     check(result === want, `${i.id}: ${a} scores ${result}, wanted ${want}`);
   }));
   // the asks the engine knows

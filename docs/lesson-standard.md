@@ -1941,3 +1941,36 @@ Nothing in 26.1 to 26.9 changed except where a line below says so. The code is `
 12. **Only the pilot is built.** Lessons 2 to 14 wait for the owner's try (V69). Not built: the other 111 questions, the news stories and their three-tap items, the lesson that enters the answers (lesson 4), the mock interview as a lesson (14) and its retest, and the weekly review's news story per due news topic.
 13. **X14 is the standard's `text` check, run on `interview`:** every rule of matching as a row (right and wrong), "name two" counted by different answers, the box (Answer shut until something is typed, Enter sends it, "Not yet" stored as a miss with nothing typed), every accepted answer shown with the one given marked, a claim (counted right, logged, listed, its repeat gone, and two days on not a good day where a right answer waits a week), claims among the answers after a check. **X19 is `spoken`:** nothing read on opening or reopening, a tap reads the question with a voice on the phone and not a network voice, a replay, the next question read at Next, what was typed kept across the replay, leaving stops the voice, no voice and no speech show the words and say so, and the mock holds its words back until asked. **X43 is new:** the mock interview (a draw of five, none about the learner's own answers until entered, its first screen, its result, and the second a week on in the review, read aloud, five questions the first did not ask, with a claim among its answers). **X44 is new:** the learner's own answers and date (the form on a lesson step and on the subject screen, required answers, the stored shape, the questions reading two senators, the link, the age, nothing shown anywhere else, the rounds before the date and none after). **X45 is new:** Civics' pilot walked end to end at 375 px by a learner who types every answer; it asserts what the walk shows and leaves what X14, X19, X43 and X44 own to them, and types each answer as the list prints it, so that a fault in how an answer is matched is X14's alone. X3 gains a walk of every screen the step adds, at every width. Each check has seeded faults (17 for X14, 7 for X19, 7 for X43, 11 for X44, 5 for X45) and each turns exactly its own check red.
 14. **The validator's seeded faults** (tests/lessons/controls-table.mjs): 18 new, each turning exactly one rule red: V70 (a text ask that is a line to write and an answer from memory; neither; a count of one; an own answer naming a field the subject lacks; a review date read from a field that is not a date; a spoken block with no words; a drawn check that asks its questions again; a lesson that asks about the learner's own answers before a step enters them; an interview fact that is not an item, and one with no answer from memory to print), V72 (a check that asks again a question the lesson never asked; a check read aloud that can ask a question with no spoken block), V74 (a question that wants two answers and accepts one; an answer accepted twice; an answer of one part; a question from memory with no spoken block), V81 (a field "Social Security number" in the answers form) and V84. The test `own-pure.mjs` now lists `answers` among the private forms built.
+
+#### Revision of 2026-10-11: what the first stand-in learner reviews changed (`FC.ENGINE` 15, cache `fieldcraft-v23`)
+
+Each pilot (Math l1, Wealth l2, Stats l1, Ideology l2, Scams l3, Singing l2, Psychology l1, Civics l1) was read by a learner who had not built it
+(`docs/subjects/<id>/reviews/`). A design record's gate 5 block wins where a review disagrees; the places where one did are said in each design record's
+last section ("Reviewed 2026-10-11"). The engine changes, each with its seeded fault in `tests/e2e-controls.mjs`, `tests/lessons/controls-table.mjs` or
+`tests/sing-pure.mjs`:
+
+1. **The calculator follows the usual order of operations** (`number.js`): the keys pressed are kept and worked out whole at "=", × and ÷ before + and −
+   (`5 × 11.09 + 3 × 9.09 =` is one sum). It replaces "one operation at a time". Pure test in `number-pure.mjs`; fault: left to right (X13).
+2. **`tap` with `meets: true`** (`tap.js`): for a label the words earn whose `has` puts the needs in different sentences, any sentence that meets a need is
+   right, `right` is the first of them, and the feedback never calls one wrong. V74 requires one line wanted, every need found, at least two lines, and
+   `right` among them. `has` may list several lines for a need (a list of segment ids). Faults: X32 (the first line only), V74 (two controls).
+3. **`choose` with `either: true`** (`rules.js`, `item-view.js`): any one of several right options is right (a real message that offers no way in: do what it
+   says, or check it through a way you already had), printed "A or B". V74: at least two right options, never with `many`. Faults: X41, V74.
+4. **A group may say `returns: n`** (`queue.js`, `player.js`): the most missed questions that come back in one run, so a learner who misses most is never held
+   in it (Singing: 4 of 8). Fault: X32.
+5. **A timed group opens on a screen that says so** (`player.js`, `view.js`): the seconds, and that time running out counts as a miss; the check intro and the
+   review say the same. While a clock runs the choices are pinned over the foot of the screen (`.asks.pinned`) and the shut Next bar is hidden, so a long
+   message cannot push "Leave it" below the fold at 375 px. Faults: X17 (the notice; the pinning), X41 (the check's words).
+6. **`own` step with `model` needs `where`** (`own-run.js`): where the same lines are on the learner's own papers, printed in place of the old generic line.
+   V70 control; fault X26.
+7. **An item may carry `notice`** (`item-view.js`): shown first in the feedback, in a block of its own, before the marks (Psychology's account of control:
+   "If you are in danger now, call 911", the hotline is for the US). Fault: X36.
+8. **A rule may say `feedback: 'on-miss'`** (`panel-view.js`): the needs found or missing are listed only after a miss or when a need is missing. A need with
+   two lines that say it is found in both, not one in each. Fault: X36.
+9. **The singing strip draws the bar the height of the band scored as on the note** (`sing-strip.js`), and the axis is a little tighter so it stays visible.
+   Fault in `tests/sing-pure.mjs`.
+10. **Recall** (`recall.js`): a plural or a verb ending is not another word (`recallInflects`: law and laws, veto and vetoes, carry and carries); "or", "can"
+    and "they" do not matter; an entry may say `as` (what its brackets mean when they are another word, not an extra one: "Resolves disputes (disagreements)")
+    and `also` (clear equivalents the list does not print), and a part may list several wordings (`['Judicial (branch)', 'Judiciary']`). The printed list is
+    still the official one, word for word (`tests/civics-pure.mjs`). A group's summary counts an answer taken on the learner's word apart ("1 of 3 right the
+    first time, and 2 counted on your word"). Faults: X14 (three).

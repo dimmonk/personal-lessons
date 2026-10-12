@@ -240,3 +240,11 @@ reused where they fit a labelled item, not lessons to keep.
    several paragraphs, plus drill items that ask which key question separates two names; no party cues, no labels
    thrown from both sides by design, no per-side results, so the main distortion in the real moment (L3: Cohen 2003)
    is never trained.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l2.md`, verdict fails; fixed in rev 2
+Done: engine `tap` with `meets` (any sentence that meets a need is right when the words put the needs in different sentences, and is never called wrong);
+every sentence that is not the answer says why (checked by `tests/labels-pure.mjs`); sentences on words with too little to tell are not marked as deciding
+words; words that only say a tax pays for a benefit are taught as not earned (the social democrat idea), with two new questions (one in the check) that say
+nothing about ownership; a wrong idea for "capitalist"; a "capitalist" label thrown from the left at a plan that is not one. The second group is ten questions
+(gate 5 says "eight"); the record wins on the count of kinds (every side throws every kind) and the two new questions are the ones the review found missing.
+Not done: shortening the worked example's working (it repeats its reason): it stays, as it is the one place the three steps are shown whole.

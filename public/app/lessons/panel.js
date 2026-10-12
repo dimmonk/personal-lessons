@@ -6,7 +6,9 @@
 //                   the panel and over the needs found or missing in the feedback, in place of "What the label needs", and the rule is alone in its panel
 //   panel block     { kind: 'panel', rules: [ruleId] }              those rules, printed from the subject's record, beside the question while
 //                                                                   its group has the help `panel`; always on a teaching screen
-//   item.has        { [needId]: segmentId | null }                  each need of the question's panel found (the line that shows it) or missing
+//   item.has        { [needId]: segmentId | [segmentId] | null }    each need of the question's panel found (the line, or the lines, that show it) or missing
+//   rule.feedback   'on-miss'                                       the needs found or missing are listed in the feedback only after a miss, or when a need
+//                                                                   is missing (a checklist that would otherwise repeat the answer after every right one)
 //   post label      { text, by, side }                              the commenter's words that carry the label, how the commenter is known,
 //                                                                   and the side they throw it from: 'left' or 'right'
 //   facet.compare   true: the end of a check and of the review show the facet's values side by side ("3 of 3" beside "2 of 3")
@@ -19,13 +21,14 @@ const ruleNeeds = (data, ids) => ids.flatMap(id => ruleOf(data, id).needs);
 // the posts of a question that carry a label
 const labelledPostsOf = item => item.blocks.filter(b => b.kind === 'article' && b.label);
 
-// For each rule of the question's panel: its name, and each of its needs with the line of the text that shows it, or null when the words do
-// not show it. [{ id, name, needs: [{ id, text, found: Segment | null }] }]
+// For each rule of the question's panel: its name, and each of its needs with the lines of the text that show it (none when the words do not
+// show it). [{ id, name, heading, onMiss, needs: [{ id, text, found: [Segment] }] }]
 function hasLines(data, item) {
   const lines = item.blocks.flatMap(segmentsOf), has = item.has || {};
   return itemRuleIds(item).map(id => {
     const rule = ruleOf(data, id);
-    return { id, name: rule.name, heading: rule.heading, needs: rule.needs.map(n => ({ ...n, found: has[n.id] ? lines.find(s => s.id === has[n.id]) || null : null })) };
+    return { id, name: rule.name, heading: rule.heading, onMiss: rule.feedback === 'on-miss',
+      needs: rule.needs.map(n => ({ ...n, found: asList(has[n.id]).map(lineId => lines.find(s => s.id === lineId)).filter(Boolean) })) };
   });
 }
 

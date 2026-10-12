@@ -50,7 +50,7 @@ export async function X25(env) {
   c.check(await page.locator('[data-commit]').count() === 0, 'a worked example of typed numbers asks to commit to a choice');
   for (let i = 0; i < 4; i++) await page.locator('#workedMore').click();
   const worked = await env.screenText(page);
-  c.check(/The answer.*\$23\.43/.test(worked), 'the worked example does not end on the exact total');
+  c.check(/The answer\W*\$23\s*The answer\W*\$23\.43/.test(worked.replace(/\s+/g, ' ')), 'the worked example does not end on its rough answer, $23, and then the exact total');
   c.check(/\$3\.49 is \$3/.test(worked) && /3 \+ 4 \+ 4 \+ 12 = 23/.test(worked) && /close to \$23/.test(worked), 'the working is not shown step by step');
   await env.inspect(c, page, 'the worked example, finished');
   await env.goOn(page);
@@ -166,14 +166,14 @@ export async function X25(env) {
   const stored = await env.storage(page), items = JSON.parse(stored['pl:math:items'] || '{}'), seen = JSON.parse(stored['pl:math:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
   const inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 8 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false), 'the check was not stored as eight tries of lesson 1 without help');
+  c.check(inCheck.length === 8 && inCheck.every(t => t.lesson === 'l1' && t.rev === 2 && t.sup === false), 'the check was not stored as eight tries of lesson 1 without help');
   c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
   const carts = practice.filter(t => t.key === 'g-cart').sort((a, b) => a.seed - b.seed);
   const missed = carts.find(t => t.r.exact === 'missed-line');
   c.check(!!missed && missed.r.est === 'no' && missed.ok === false && missed.a.exact.length === 1 && typeof missed.a.exact[0] === 'number' && typeof missed.seed === 'number', 'the missed cart is not in the record with its slip, its numbers and its seed');
   c.check(carts.filter(t => t.run === (missed || {}).run).length >= 2 && carts.some(t => t.ok), 'the cart that came back is not in the record as right');
   c.check(tries.every(t => Object.values(t.a).every(a => Array.isArray(a) ? a.every(x => typeof x === 'number') : typeof a === 'string')), 'an answer is stored as neither numbers nor an option');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 1, at: 7 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 2, at: 7 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('math'); return lessonDone(d, 'math', d.lessons.l1) && lastCheck(d, 'math', d.lessons.l1).passed; }), 'the lesson is not done with the check passed');
   await context.close();
   return c;

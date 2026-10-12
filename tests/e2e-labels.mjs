@@ -84,19 +84,26 @@ async function theGroupThatHelps(env, c, page) {
   const second = await look(page);
   const rain = await page.evaluate(() => [...document.querySelectorAll('.block-panel [data-need]')].map(e => e.dataset.need));
   c.check(second.key === 'g-2' && JSON.stringify(rain) === JSON.stringify(['wet-rain']), `the next question does not show its own rule (${second.key}, ${rain})`);
-  await answerAll(page);
+  await answerAll(page, { miss: { verdict: ['off'] } });   // both questions missed: the group says that only one may come back
   await next(page);
-  while (await page.locator('#qNext').count()) { await answerAll(page); await next(page); }   // the two that came back
+  const back = [];
+  while (await page.locator('#qNext').count()) { back.push((await look(page)).key); await answerAll(page); await next(page); }
+  c.check(back.length === 1 && back[0] === 'g-1', `a group that says one miss may come back brought back ${back.length} (${back})`);
 }
 
 async function theGroupThatDoesNot(env, c, page) {
   await env.goOn(page);   // the break
   let seen = 0;
-  while (await page.locator('#qNext').count()) {
+  while (await page.locator('#qNext').count() && seen < 6) {   // bounded: a question missed would otherwise come back for ever
     seen++;
     c.check(await page.locator('.block-panel').count() === 0 && await page.locator('[data-need]').count() === 0, `a question of the group without help shows what the label needs (question ${seen})`);
     c.check(!/shown beside the words/.test(await env.screenText(page)), 'a group without help says that something is beside the words');
-    await answerAll(page);
+    const now = await look(page);
+    // a label the words earn, with its two needs in two lines: the line that meets the second need is as right as the first
+    if (now.key === 'h-1' && !now.redo) {
+      await answerAll(page, { miss: { words: ['h-1-a'] } });
+      c.check(await page.locator('.mark.no').count() === 0 && !(await env.screenText(page)).includes('That is not the sentence'), 'a line that meets a need of the label is marked wrong, or called not the sentence');
+    } else await answerAll(page);
     c.check(await page.locator('.block-panel').count() === 0 && await page.locator('[data-has]').count() === 1, 'after the answer the panel is drawn again, or the needs are not listed');
     await next(page);
   }
@@ -267,9 +274,9 @@ async function theSecondGroup(env, c, page) {
     await next(page);
   }
   const firsts = asked.filter(a => !a.redo);
-  c.check(firsts.length === 8 && new Set(firsts.map(a => a.key)).size === 8, `the second group is not eight different questions (${firsts.map(a => a.key)})`);
+  c.check(firsts.length === 10 && new Set(firsts.map(a => a.key)).size === 10, `the second group is not ten different questions (${firsts.map(a => a.key)})`);
   c.check(asked.filter(a => a.redo).map(a => a.key).join() === 'q-farms', 'the label turned down does not come back');
-  c.check(/7 of 8 right the first time/.test(await env.screenText(page)), 'the second group does not end on "7 of 8 right the first time"');
+  c.check(/9 of 10 right the first time/.test(await env.screenText(page)), 'the second group does not end on "9 of 10 right the first time"');
   await env.goOn(page);
 }
 async function theCheckOfPartTwo(env, c, page) {
@@ -286,7 +293,7 @@ async function theCheckOfPartTwo(env, c, page) {
     c.check(await page.locator('#qNext').isEnabled(), 'the check leaves Next shut after an answer');
     await next(page);
   }
-  c.check([...keys].sort().join() === 'k-city,k-drugs,k-rents,k-unleash,k-wage,k-water', `the check is not the six questions of part 2 (${keys})`);
+  c.check([...keys].sort().join() === 'k-city,k-leave,k-rents,k-unleash,k-wage,k-water', `the check is not the six questions of part 2 (${keys})`);
   text = await env.screenText(page);
   const rules = await page.locator('.done-screen > table.results tr td:last-child').allTextContents();
   c.check(/5 of 6: passed/.test(text) && rules.length === 3 && rules.every(v => v === 'met'), `the check was not passed with its three rules met (${text.slice(0, 160)})`);
@@ -300,7 +307,7 @@ async function theRecord(env, c, page) {
   await env.inspect(c, page, 'the Ideology subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:ideology:items'] || '{}'), seen = JSON.parse(stored['pl:ideology:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 6 && inCheck.every(t => t.lesson === 'l2' && t.rev === 1 && t.sup === false), 'the check was not stored as six tries of lesson 2 without help');
+  c.check(inCheck.length === 6 && inCheck.every(t => t.lesson === 'l2' && t.rev === 2 && t.sup === false), 'the check was not stored as six tries of lesson 2 without help');
   c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
   c.check(tries.every(t => Object.keys(t.a).every(k => KEYS.includes(k)) && typeof t.a.verdict === 'string' && Array.isArray(t.a.words) && (!('name' in t.a) || t.a.verdict === 'not-earned')),
     'an answer is not stored as the verdict, the name only after "not earned", and the ids of the lines tapped');
@@ -308,7 +315,7 @@ async function theRecord(env, c, page) {
   ['believed', 'wrong-name', 'doubted'].forEach(slip => c.check(slips.has(slip), `the slip "${slip}" is not in the record`));
   c.check(tries.filter(t => t.key === 'p-jobs').some(t => JSON.stringify(t.a.words) === '["none"]'), '"Nothing here decides it" is not stored as the answer "none"');
   c.check(!tries.some(t => t.key === 'w-power'), 'the worked example was stored as a try');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l2: { rev: 1, at: 7 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l2: { rev: 2, at: 7 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('ideology'); return lessonDone(d, 'ideology', d.lessons.l2) && lastCheck(d, 'ideology', d.lessons.l2).passed; }), 'the lesson is not done with the check passed');
 }
 async function theIdeologyReview(env, c, page) {

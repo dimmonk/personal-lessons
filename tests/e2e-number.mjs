@@ -45,6 +45,9 @@ async function cartSlip(env, c, page) {
   c.check(await D.calcDisplay(page) === '25', `the calculator shows ${await D.calcDisplay(page)} for 12.5 × 2`);
   await page.locator('[data-calc-use]').click();
   c.check(await D.boxes(page, 'exact').first().inputValue() === '25', 'the calculator did not put its number in the box');
+  await D.pressKeys(page, ['C', '2', '+', '3', '*', '4', '=']);
+  c.check(await D.calcDisplay(page) === '14', `the calculator shows ${await D.calcDisplay(page)} for 2 + 3 × 4, which is 14 (multiply before adding)`);
+  await D.pressKeys(page, ['C']);
   await env.inspect(c, page, '360px the calculator open');
   // the slip: the total without the roast
   const slip = now.values.noRoast;

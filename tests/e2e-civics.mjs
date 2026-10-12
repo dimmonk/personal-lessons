@@ -18,7 +18,7 @@ const OFFICIAL = {   // the questions as the list words them (tests/fixtures/usc
   q16: 'Name the three branches of government.', q15: 'There are three branches of government. Why?', q17: 'The President of the United States is in charge of which branch of government?',
   q52: 'What is the highest court in the United States?'
 };
-const GROUPS = [['q16', 'q15', 'q17'], ['q18', 'q19', 'q20'], ['q41', 'q42', 'q43', 'q44', 'q45', 'q40', 'q46', 'q47'], ['q50', 'q51', 'q52']];
+const GROUPS = [['q16', 'q15', 'q17'], ['q18', 'q19', 'q20'], ['q41', 'q42', 'q40', 'q43', 'q47', 'q44', 'q46', 'q45'], ['q50', 'q51', 'q52']];
 const ALL = GROUPS.flat();
 
 async function theSubject(env, c, page) {
@@ -36,7 +36,7 @@ async function theWhyAndTheMap(env, c, page) {
   await env.inspect(c, page, 'the why');
   await env.goOn(page);
   const rows = await page.locator('.block-doc tr').allTextContents().then(list => list.map(t => t.replace(/\s+/g, ' ').trim()));
-  c.check(rows.length === 4 && /Branch/.test(rows[0]) && /Legislative.*Congress.*Writes laws/.test(rows[1]) && /Executive.*The president.*Signs or vetoes bills and carries out the laws/.test(rows[2]) && /Judicial.*The courts.*Explain the laws/.test(rows[3]), `the map of the three branches is not a table of who does what (${JSON.stringify(rows)})`);
+  c.check(rows.length === 4 && /Branch/.test(rows[0]) && /Legislative.*Congress.*Writes laws/.test(rows[1]) && /Executive.*The president.*Signs bills into law, vetoes bills and enforces laws/.test(rows[2]) && /Judicial.*The courts.*Explain laws and resolve disputes about the law/.test(rows[3]), `the map of the three branches is not a table of who does what (${JSON.stringify(rows)})`);
   await env.inspect(c, page, 'the map of the three branches');
   await env.goOn(page);
 }
@@ -96,7 +96,7 @@ async function theRestOfTheGroups(env, c, page) {
   await env.goOn(page);
   const third = await runGroup(env, c, page, 'the president', GROUPS[2], { answers: { q44: WRONG } });
   const at = third.findIndex(a => a.key === 'q44' && !a.redo), back = third.findIndex(a => a.key === 'q44' && a.redo);
-  c.check(third.length === 9 && at === 3 && back - at >= 4, `the president group is not eight questions with the miss back four or more later (${third.map(a => a.key + (a.redo ? '*' : ''))})`);
+  c.check(third.length === 9 && at === 5 && back - at >= 3, `the president group is not eight questions with the miss back at the end, three places on (${third.map(a => a.key + (a.redo ? '*' : ''))})`);
   c.check(/7 of 8 right the first time/.test(await screenText(page)), 'the third group does not end on "7 of 8 right the first time"');
   await env.goOn(page);
   const last = await runGroup(env, c, page, 'the courts', GROUPS[3]);
@@ -132,11 +132,11 @@ async function theRecord(env, c, page) {
   const items = await storedItems(page, 'civics'), seen = JSON.parse(await page.evaluate(() => localStorage.getItem('pl:civics:seen')) || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
   const inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 17 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false && t.engine === 14 && typeof t.a.say === 'string' && ['ok', 'no'].includes(t.r.say)), 'the check was not stored as 17 typed answers of lesson 1 without help');
+  c.check(inCheck.length === 17 && inCheck.every(t => t.lesson === 'l1' && t.rev === 2 && t.sup === false && t.engine === 15 && typeof t.a.say === 'string' && ['ok', 'no'].includes(t.r.say)), 'the check was not stored as 17 typed answers of lesson 1 without help');
   c.check(practice.length === 17 + 2 + 1 && practice.every(t => typeof t.a.say === 'string'), `the groups were not stored as 20 tries: 17 first tries, the three that came back (${practice.length})`);
   c.check(practice.filter(t => t.key === 'q17').map(t => t.a.say).join('|') === `${WRONG}|Executive branch` && practice.filter(t => t.key === 'q17').map(t => t.r.say).join() === 'no,ok', 'a miss is not stored as the words typed, then the answer that was right');
   c.check(tries.filter(t => t.key === 'q15').map(t => t.r.say).join() === 'no,ok,ok', 'a question missed in the group, then right when it came back, then right in the check, is not stored so');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 1, at: 6 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 2, at: 6 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('civics'); return lessonDone(d, 'civics', d.lessons.l1) && lastCheck(d, 'civics', d.lessons.l1).passed; }), 'the lesson is not done with the check passed');
   const log = await storedLog(page);
   c.check(!log.some(e => e.type === 'claim'), 'a claim was logged when none was made');

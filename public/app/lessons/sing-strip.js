@@ -5,14 +5,14 @@
 // A view: { plan, showLine, bars, path, status, prompt, button, skip, micLine, micOff, hidden }
 // Needs esc, SAY, noteToMidi, hzToMidi, RANGE_LOW_HZ, RANGE_HIGH_HZ (audio-notes.js) and the SING_ constants (sing-task.js, sing-score.js).
 
-const STRIP = { w: 300, h: 140, pad: 8, barMin: 8 };
+const STRIP = { w: 300, h: 140, pad: 8 };
 
 // The pitch axis of a strip, as [least, most] on the half-step scale. A question with targets is drawn around them, so the bar sits in
 // the middle and the line's distance from it is what shows; a hum with no target is drawn across the whole voice.
 function stripAxis(plan){
   if(!plan.bars.length) return [Math.floor(hzToMidi(RANGE_LOW_HZ)), Math.ceil(hzToMidi(RANGE_HIGH_HZ))];
   const midis = plan.bars.map(b => noteToMidi(b.note)), least = Math.min(...midis), most = Math.max(...midis);
-  const half = Math.max(5, (most - least) / 2 + 3), middle = (least + most) / 2;
+  const half = Math.max(4, (most - least) / 2 + 3), middle = (least + most) / 2;
   return [middle - half, middle + half];
 }
 const stripX = (plan, ms) => STRIP.pad + Math.max(0, Math.min(1, ms / plan.totalMs)) * (STRIP.w - 2 * STRIP.pad);
@@ -42,7 +42,7 @@ function voicePath(plan, points){
 function barsSvg(plan){
   const [least, most] = stripAxis(plan), perHalfStep = (STRIP.h - 2 * STRIP.pad) / (most - least);
   return plan.bars.map(b => {
-    const thick = Math.max(STRIP.barMin, 2 * plan.cents / 100 * perHalfStep), y = stripY(plan, noteToMidi(b.note));
+    const thick = 2 * plan.cents / 100 * perHalfStep, y = stripY(plan, noteToMidi(b.note));   // exactly the band that is scored as on the note
     return `<rect class="bar" x="${round1(stripX(plan, b.fromMs))}" y="${round1(y - thick / 2)}" width="${round1(stripX(plan, b.fromMs + b.ms) - stripX(plan, b.fromMs))}" height="${round1(thick)}"></rect>`;
   }).join('');
 }

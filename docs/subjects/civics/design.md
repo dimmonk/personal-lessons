@@ -314,3 +314,13 @@ from u3–u6, for the news lessons. No unit carries over as it is.
    sequences and tidy invented stories. The facts and the news stories sit in separate units that never refer to each
    other. The end result needs three plain questions asked of real-looking stories, with the government facts as the
    reason for each answer.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l1.md`, verdict fails; fixed in rev 2
+Done: the table is worded as the official list words these answers ("Signs bills into law, vetoes bills and enforces laws"; "Explain laws and resolve disputes
+about the law") and the questions also accept the lesson's own earlier words ("signs or vetoes bills", "carries out the laws"); a plural or a verb ending is not
+another word (`recallInflects`), and "or", "can" and "they" do not matter; "executive", "legislative" and "X branch" name a branch, "judiciary" is the judicial
+branch; the bracket in the answer about what the judicial branch does is another word for "disputes", not an extra one (`as`), so "resolves disagreements about the
+law" is right and the doubled phrase is not; what counts as the same is said once, before the first question; an answer counted on your word is not "right the
+first time" in a group's summary; the questions about the president are mixed in with the others. The printed accepted answers are still the official ones word for
+word (`tests/civics-pure.mjs`), and the equivalents (`also`) are never printed, never a wrong fact. Not done: the check still counts a claimed answer as right (the
+design's claim button is on the result screen).

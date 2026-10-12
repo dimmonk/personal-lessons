@@ -98,13 +98,13 @@ async function theSecondGroup(env, c, page) {
   const firsts = asked.filter(a => !a.redo);
   c.check(firsts.length === 5 && new Set(firsts.map(a => a.key)).size === 5 && doubted, `the second group is not five different questions (${firsts.map(a => a.key)})`);
   c.check(asked.filter(a => a.redo).map(a => a.key).join() === 'q-commute', 'the sound claim that was turned down does not come back');
-  c.check(charts >= 2, 'the two posts and reports with a chart do not draw it');
+  c.check(charts >= 1, 'the report with a chart does not draw it');
   c.check(/4 of 5 right the first time/.test(await env.screenText(page)), 'the second group does not end on "4 of 5 right the first time"');
   await env.goOn(page);
 }
 async function theCheck(env, c, page) {
   let text = await env.screenText(page);
-  c.check(/Five new questions/.test(text) && /At least 4 right/.test(text) && /At most 1 turned down a claim that holds up/.test(text), `the check does not name itself and its rules (${text.slice(0, 260)})`);
+  c.check(/Five new questions/.test(text) && /At least 4 right \(whether the text shows it\)/.test(text) && /At least 4 right \(what it claims\)/.test(text) && /At most 1 turned down a claim that holds up/.test(text), `the check does not name itself and its rules (${text.slice(0, 260)})`);
   await env.inspect(c, page, 'the first screen of the check');
   await env.goOn(page);
   const keys = [];
@@ -119,7 +119,7 @@ async function theCheck(env, c, page) {
   c.check([...keys].sort().join() === 'k-5k,k-boarding,k-diner,k-reading,k-shelter', `the check is not the five questions of part A (${keys})`);
   text = await env.screenText(page);
   const rules = await page.locator('table.results tr td:last-child').allTextContents();
-  c.check(/4 of 5: passed/.test(text) && rules.length === 2 && rules.every(v => v === 'met'), `the check was not passed with both rules met (${text.slice(0, 160)})`);
+  c.check(/4 of 5: passed/.test(text) && rules.length === 4 && rules.every(v => v === 'met'), `the check was not passed with every rule met (${text.slice(0, 160)})`);
   c.check(await page.locator('.resitem').count() === 5 && await page.locator('.resitem').first().locator('.mark.no').count() >= 1, 'the answers are not all shown with the missed one first');
   c.check(/common slip: took it for a claim that one thing is more or less than another/.test(text), 'the wrong kind in the check is not named in its answers');
   await plainWords(c, page, env, 'the result of the check');
@@ -131,7 +131,7 @@ async function theRecord(env, c, page) {
   await env.inspect(c, page, 'the Stats subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:stats:items'] || '{}'), seen = JSON.parse(stored['pl:stats:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 5 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false), 'the check was not stored as five tries of lesson 1 without help');
+  c.check(inCheck.length === 5 && inCheck.every(t => t.lesson === 'l1' && t.rev === 2 && t.sup === false), 'the check was not stored as five tries of lesson 1 without help');
   c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
   c.check(tries.every(t => Object.keys(t.a).every(k => KEYS.includes(k)) && Array.isArray(t.a.line) && t.a.line.every(id => typeof id === 'string') && typeof t.a.kind === 'string' && typeof t.a.verdict === 'string'),
     'an answer is not stored as the kind chosen, the ids of the lines tapped and the verdict chosen');
@@ -139,7 +139,7 @@ async function theRecord(env, c, page) {
   ['took-cause', 'believed', 'doubted', 'took-compare'].forEach(slip => c.check(slips.has(slip), `the slip "${slip}" is not in the record`));
   c.check(tries.filter(t => t.key === 'p-savings').some(t => JSON.stringify(t.a.line) === '["none"]'), '"Not given" is not stored as the answer "none"');
   c.check(!tries.some(t => t.key === 'w-coffee'), 'the worked story was stored as a try');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 1, at: 5 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 2, at: 5 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('stats'); return lessonDone(d, 'stats', d.lessons.l1) && lastCheck(d, 'stats', d.lessons.l1).passed; }), 'the lesson is not done with the check passed');
 }
 async function theReview(env, c, page) {

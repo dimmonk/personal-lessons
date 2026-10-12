@@ -31,6 +31,9 @@ function ideoNameAsk(spec) {
     slips: Object.fromEntries(wrong.map(id => [id, right === "none" ? "forced-name" : id === "none" ? "missed-name" : "wrong-name"])) };
 }
 
+// a label the words earn, with its needs shown in two or more different sentences: any sentence that meets a need is as right as another
+const ideoNeedsInManyLines = spec => spec.fit === "earned" && new Set(Object.values(spec.has)).size >= 2;
+
 function ideoItem(spec) {
   const verdict = IDEO_VERDICT[spec.fit];
   return {
@@ -42,7 +45,8 @@ function ideoItem(spec) {
     asks: [
       { id: "verdict", kind: "choose", prompt: `Do the words earn the label “${spec.word}”?`, from: "verdict", right: verdict.right, slips: verdict.slips },
       ideoNameAsk(spec),
-      { id: "words", kind: "tap", prompt: "Tap the sentence that decides it.", none: "Nothing here decides it", right: spec.tap === "none" ? "none" : [spec.tap] }
+      { id: "words", kind: "tap", prompt: "Tap the sentence that decides it.", none: "Nothing here decides it", right: spec.tap === "none" ? "none" : [spec.tap],
+        ...(ideoNeedsInManyLines(spec) ? { meets: true } : {}) }
     ],
     ...(spec.steps ? { steps: spec.steps } : {}),
     has: spec.has, deciding: spec.deciding, reason: spec.reason,

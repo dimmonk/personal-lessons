@@ -170,14 +170,21 @@ const chartOf = (over = {}) => ({ kind: 'chart', type: 'bars', title: 'T', x: ['
   same([...fits(flatRefs(lesson.check.items).map(refId))].sort(), ['holds', 'holds', 'outruns', 'outruns', 'unclear'], 'the check: two sound, two that go further, one that cannot be told');
   same(lesson.flow.filter(s => s.set).map(s => s.set.support || null), [{ shown: true }, null], 'help in the first group only');
   // the check, as a pass rule reads it
-  const outcome = (id, ok, r = {}) => ({ facets: byId[id].facets, r, ok });
+  const outcome = (id, ok, r = {}) => ({ facets: byId[id].facets, r: { kind: 'ok', line: 'ok', verdict: 'ok', ...r }, ok });
   const ids = flatRefs(lesson.check.items).map(refId);
   const run = oks => ids.map((id, i) => outcome(id, oks[i], oks[i] ? {} : { verdict: byId[id].facets.fit === 'holds' ? 'doubted' : 'believed' }));
   check(checkResult(stats, lesson.check.pass, run([true, true, true, true, true])).passed && checkResult(stats, lesson.check.pass, run([false, true, true, true, true])).passed, '4 of 5 passes');
   check(!checkResult(stats, lesson.check.pass, run([false, false, true, true, true])).passed, '3 of 5 does not pass');
   const turnedDown = ids.map((id, i) => outcome(id, byId[id].facets.fit !== 'holds', byId[id].facets.fit === 'holds' ? { verdict: 'doubted' } : {}));
   check(!checkResult(stats, lesson.check.pass, turnedDown).passed, 'turning down both sound claims does not pass, whatever else is right');
-  same(checkResult(stats, lesson.check.pass, run([true, true, true, true, true])).lines.map(l => l.text), ['At least 4 right', 'At most 1 turned down a claim that holds up'], 'the rules in words');
+  same(checkResult(stats, lesson.check.pass, run([true, true, true, true, true])).lines.map(l => l.text),
+    ['At least 4 right (whether the text shows it)', 'At least 4 right (the sentence with the number)', 'At least 4 right (what it claims)', 'At most 1 turned down a claim that holds up'], 'the rules in words');
+  // one wrong label does not sink a question whose judgment is right; the label still counts, 4 of 5, like the other two answers
+  const labelMissed = n => ids.map((id, i) => outcome(id, i >= n, i < n ? { kind: 'took-cause' } : {}));
+  check(checkResult(stats, lesson.check.pass, labelMissed(1)).passed, 'one wrong label among five, with every verdict and sentence right, passes');
+  check(!checkResult(stats, lesson.check.pass, labelMissed(2)).passed, 'two wrong labels do not pass');
+  const lineMissed = ids.map((id, i) => outcome(id, i > 1, i <= 1 ? { line: 'no' } : {}));
+  check(!checkResult(stats, lesson.check.pass, lineMissed).passed, 'two wrong sentences do not pass, whatever the verdicts');
   // the figures in the claims are what the text says they are
   same([Math.round((25 - 22) / 25 * 100), 25 - 22], [12, 3], 'the coffee: 25 to 22 in 1,000 is 12% fewer, 3 fewer in 1,000');
   same(Math.round(1860 / 1980 * 100), 94, 'the deliveries: 1,860 of 1,980 is 94%');

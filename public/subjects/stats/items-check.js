@@ -27,11 +27,11 @@ FC.items("stats", [
     blocks: [{ kind: "article", form: "news", source: "Valley Courier · Food",
       headline: statsLine("h", "Hillside Diner’s new menu is a hit, owner says"),
       lines: [
-        statsLine("s1", "The diner added 14 new dishes in April, and owner Tess Moreno says customers “keep telling me” they like it better.", { note: "That is how many dishes were added, not how many customers like the menu." }),
+        statsLine("s1", "The diner added 14 new dishes in April, and owner Tess Moreno says most customers “keep telling me” they love it.", { note: "That is how many dishes were added, not how many customers love the menu." }),
         statsLine("s2", "“We’re busier than ever,” Moreno said.", { para: true }),
         statsLine("s3", "The 42-seat diner is open from 6 a.m. to 2 p.m. daily.", { note: "That is the size of the diner, not a count of customers." })] }],
     deciding: ["h", "s2"],
-    reason: ["The headline says the menu is a hit, and the only thing behind it is the owner’s word: customers “keep telling me” and “we’re busier than ever”. The numbers in the story are 14 dishes and 42 seats, and neither counts customers or sales, so you cannot tell."],
+    reason: ["The headline says the menu is a hit, a claim about what most customers think, and the only thing behind it is the owner’s word: customers “keep telling me” and “we’re busier than ever”. The numbers in the story are 14 dishes and 42 seats, and neither counts customers or sales, so you cannot tell."],
     need: "You would need a number that measures the claim, such as sales or customers before and after the change, ideally from someone other than the owner."
   }),
   statsItem({

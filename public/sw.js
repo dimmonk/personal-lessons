@@ -2,7 +2,7 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v22';
+const CACHE = 'fieldcraft-v23';
 const SHELL = [
   './', 'manifest.json', 'app.css', 'app/helpers.js', 'app/registry.js', 'subjects/civics/subject.js', 'subjects/civics/items-government.js', 'subjects/civics/l1.lesson.js',
   'subjects/ideology/subject.js', 'subjects/ideology/items-build.js', 'subjects/ideology/items-practice.js', 'subjects/ideology/items-check.js', 'subjects/ideology/items-reserve.js', 'subjects/ideology/l2.lesson.js', 'subjects/math/subject.js', 'subjects/math/items-ballpark.js', 'subjects/math/gen-totals.js', 'subjects/math/l1.lesson.js', 'subjects/psychology/subject.js', 'subjects/psychology/items-build.js', 'subjects/psychology/items-practice.js', 'subjects/psychology/items-check.js', 'subjects/psychology/items-reserve.js', 'subjects/psychology/l1.lesson.js', 'subjects/scams/subject.js', 'subjects/scams/items-build.js', 'subjects/scams/items-practice.js', 'subjects/scams/items-check.js', 'subjects/scams/items-reserve.js', 'subjects/scams/items-baseline.js', 'subjects/scams/l0.lesson.js', 'subjects/scams/l3.lesson.js',

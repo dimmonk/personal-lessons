@@ -282,3 +282,12 @@ V69 holds L1, L2 and L4 to L6 back until the owner has tried the pilot on a phon
 in the places 26.10 lists (14 messages and the worked text in the lesson, not about 35; one topic for the review; the second question "how do you check";
 a real message judged by the action that suits it, which is what the old baseline got wrong). The learner views are `docs/learner-view/scams-l3.md` and
 `scams-l0.md`.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l3.md`, verdict fails; fixed in rev 2
+Done: the rule and the key agree (step 1's second question covers what you arranged yourself; checking a real message that offers no way in, through a way you
+already had, is scored right beside doing what it says, the design's principle 6, via `either` on the choice; a real message that offers its own link, number or
+reply is still checked, and following it is the habit); the online friend who wants money is taught (a line in step 1) and practised (`g-friend`), and the
+Ioana question has no "how do you check" (a friend is not a way to check the sender); "text" for the jacket text; the timed group is announced first, and says
+that time running out counts as a miss, in the lesson, the check and the review; the choices of a timed question are pinned over the foot of the screen so "Leave
+it" is in sight while the clock runs; the dentist call says Friday suits you, the fraud call says Calderwood is your bank, the pop-up names a way everyone has.
+The practice has fourteen messages and the second group nine.

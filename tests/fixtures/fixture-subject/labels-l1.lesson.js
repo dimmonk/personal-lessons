@@ -14,7 +14,7 @@ FC.lesson('labels', {
         { kind: 'prose', text: 'Each label needs the things listed. The lines have to show every one.' }
       ] },
     { worked: 'w-1' },
-    { set: { items: ['g-1', 'g-2'], order: 'listed', support: { panel: true } } },
+    { set: { items: ['g-1', 'g-2'], order: 'listed', support: { panel: true }, returns: 1 } },
     { set: { items: ['h-1', 'h-2'], order: 'listed' } }
   ],
   check: {

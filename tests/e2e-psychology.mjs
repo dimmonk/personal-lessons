@@ -24,9 +24,9 @@ async function whatCountsAsWhatTheyDid(env, c, page) {
   c.check((await env.screenText(page)).includes('Step 1 of 6'), 'the lesson is not six steps long (the why, four steps and the check)');
   await env.goOn(page);
   const text = await env.screenText(page);
-  c.check(/A wrong idea/.test(text) && /He’s selfish” tells you what he did/.test(text) && /A guess about why/.test(text) && /A feeling/.test(text) && /A word for the person/.test(text) && await page.locator('.block-panel').count() === 1,
+  c.check(/A wrong idea/.test(text) && /He’s selfish” tells you what he did/.test(text) && /A guess about why/.test(text) && /A feeling/.test(text) && /A word or a verdict/.test(text) && await page.locator('.block-panel').count() === 1,
     'the first screen does not give the wrong idea, the checklist and the three lines that are not what someone did');
-  c.check(/Some accounts have no line about what the person did/.test(text), 'the first screen does not say that an account can have no line about what was done');
+  c.check(/No line about what they did\?/.test(text) && /find out what was said or done/.test(text), 'the first screen does not say that an account can have no line about what was done, and what the next step is');
   await env.inspect(c, page, 'what counts as what they did');
   await env.goOn(page);
 }
@@ -54,6 +54,7 @@ async function theFirstGroup(env, c, page) {
   await answerAll(page, { miss: { act: ['k1'], say: ['soft'] } });
   let text = await env.screenText(page);
   c.check(await page.locator('.mark.no').count() === 2 && await page.locator('.mark').count() === 2, 'a wrong tap and a wrong line are not marked as such');
+  c.check(await page.locator('[data-has]').count() === 1, 'after a miss the checklist is not listed with what was found');
   c.check(/common slip: tapped a word or a verdict about the person, not what they did/.test(text) && /A softer word is still a word for the person\. It does not say what they did\./.test(text), 'a label tapped is not named as a slip, or a softer word picked does not show its own line');
   c.check(await page.locator('mark.cue').count() >= 1 && /Priya felt/.test(text), 'the feedback does not mark the line that says what he did, or give the reason');
   await plainWords(c, page, env, 'a missed account with its feedback');
@@ -64,6 +65,7 @@ async function theFirstGroup(env, c, page) {
   c.check(now.key === 'a-cancel' && now.open.length === 1, `the second question is ${now.key}`);
   await answerAll(page);
   c.check(await page.locator('.mark.no').count() === 0 && await page.locator('.mark').count() === 2, 'two right answers are not marked right');
+  c.check(await page.locator('[data-has]').count() === 0, 'after two right answers the checklist is listed again');
   await next(page);
   // 3: a note, with too little to tell
   now = await look(page);
@@ -93,8 +95,8 @@ async function theFirstGroup(env, c, page) {
   await env.goOn(page);
 }
 // the questions of the second group by the pick they want and what they hold
-const PICK = { 'b-money': 2, 'b-stonewall': 2, 'b-phone': 2 };
-const WRITE = { 'b-midnight': 'Rita rang the bell at midnight.', 'b-neighbor': 'The neighbor did not answer when I waved.' };
+const PICK = { 'b-money': 2, 'b-stonewall': 2, 'b-ignored': 2, 'b-phone': 2 };
+const WRITE = { 'b-midnight': 'Rita rang the bell at midnight.', 'b-neighbor': 'The neighbor did not answer when I waved.', 'b-humiliate': 'Kofi read my mistakes out loud in front of the team.' };
 async function theSecondGroup(env, c, page) {
   const asked = [];
   let controlSeen = false;
@@ -111,6 +113,7 @@ async function theSecondGroup(env, c, page) {
     const text = await env.screenText(page);
     if (now.key === 'b-phone') {
       controlSeen = true;
+      c.check(await page.evaluate(() => { const f = document.querySelector('[data-feedback]'); return !!f && f.firstElementChild.hasAttribute('data-notice') && /If you are in danger now, call 911\./.test(f.firstElementChild.textContent) && /in the US/.test(f.firstElementChild.textContent); }), 'the notice on the account of control is not first in the feedback, in a block of its own, with 911 and that the hotline is for the US');
       c.check(HOTLINE.test(text) && NUMBERS.test(text) && /text START to 88788/.test(text) && /A friend can call too/.test(text) && /safety matter/.test(text) && /phone or computer they cannot see/.test(text), 'the account of control does not name the hotline, its numbers and the way to use it safely');
       c.check(!/narcissist|abuser|abusive|disorder/i.test(text), 'the account of control names or diagnoses someone');
       await plainWords(c, page, env, 'the account of control, answered');
@@ -119,9 +122,9 @@ async function theSecondGroup(env, c, page) {
     await next(page);
   }
   const firsts = asked.filter(a => !a.redo);
-  c.check(firsts.length === 8 && new Set(firsts.map(a => a.key)).size === 8 && controlSeen, `the second group is not eight different accounts (${firsts.map(a => a.key)})`);
+  c.check(firsts.length === 10 && new Set(firsts.map(a => a.key)).size === 10 && controlSeen, `the second group is not ten different accounts (${firsts.map(a => a.key)})`);
   c.check(asked.filter(a => a.redo).map(a => a.key).join() === 'b-stonewall', 'the account that was missed does not come back');
-  c.check(/7 of 8 right the first time/.test(await env.screenText(page)), 'the second group does not end on "7 of 8 right the first time"');
+  c.check(/9 of 10 right the first time/.test(await env.screenText(page)), 'the second group does not end on "9 of 10 right the first time"');
   await env.goOn(page);
 }
 async function theCheck(env, c, page) {
@@ -138,7 +141,7 @@ async function theCheck(env, c, page) {
     c.check(await page.locator('#qNext').isEnabled(), 'the check leaves Next shut after an answer');
     await next(page);
   }
-  c.check([...keys].sort().join() === 'k-fake,k-heat,k-lazy,k-meeting,k-party,k-plans', `the check is not the six accounts of part A (${keys})`);
+  c.check([...keys].sort().join() === 'k-fake,k-heat,k-lazy,k-meeting,k-plans,k-snapped', `the check is not the six accounts of part A (${keys})`);
   text = await env.screenText(page);
   const rules = await page.locator('.done-screen > table.results tr td:last-child').allTextContents();
   c.check(/5 of 6: passed/.test(text) && rules.length === 1 && rules[0] === 'met', `the check was not passed 5 of 6 with its rule met (${text.slice(0, 160)})`);
@@ -153,7 +156,7 @@ async function theRecord(env, c, page) {
   await env.inspect(c, page, 'the Psychology subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:psychology:items'] || '{}'), seen = JSON.parse(stored['pl:psychology:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 6 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false), 'the check was not stored as six tries of lesson 1 without help');
+  c.check(inCheck.length === 6 && inCheck.every(t => t.lesson === 'l1' && t.rev === 2 && t.sup === false), 'the check was not stored as six tries of lesson 1 without help');
   c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
   c.check(tries.every(t => Object.keys(t.a).every(k => KEYS.includes(k)) && Array.isArray(t.a.act) && t.a.act.every(id => typeof id === 'string') && Object.values(t.a).filter(v => !Array.isArray(v)).every(v => typeof v === 'string')),
     'an answer is not stored as the ids of the lines tapped, and the line picked or written, or the next step');
@@ -163,7 +166,7 @@ async function theRecord(env, c, page) {
   c.check(tries.filter(t => t.key === 'b-midnight').every(t => typeof t.a.say === 'string' && !('say' in t.r)), 'the line written is not stored with the try, or has a result');
   c.check(tries.filter(t => t.key === 'b-money').every(t => t.a.act.length === 2) && tries.filter(t => t.key === 'b-phone').every(t => t.a.act.length === 2), 'the accounts of two acts are not stored as two lines');
   c.check(!tries.some(t => t.key === 'w-leftovers'), 'the worked account was stored as a try');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 1, at: 5 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 2, at: 5 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('psychology'); return lessonDone(d, 'psychology', d.lessons.l1) && lastCheck(d, 'psychology', d.lessons.l1).passed; }), 'the lesson is not done with the check passed');
 }
 async function theResults(env, c, page) {

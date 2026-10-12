@@ -25,8 +25,8 @@ export const look = page => page.evaluate(() => {
   const options = a => chooseOptions(data, a);
   return { key: inst.key, redo: !!inst.redo, done: Q.cur.done, answered: Object.keys(Q.cur.a),
     open: open.map(a => ({ id: a.id, kind: a.kind, pick: a.pick || 1,
-      right: a.kind === 'tap' ? tapRightIds(a) : a.kind === 'text' ? [] : options(a).filter(o => o.ok).map(o => o.id),
-      wrong: a.kind === 'tap' ? tapSegments(inst.item, a).map(s => s.id).filter(id => !tapRightIds(a).includes(id)) : a.kind === 'text' ? [] : options(a).filter(o => !o.ok).map(o => o.id) })) };
+      right: a.kind === 'tap' ? asList(a.right) : a.kind === 'text' ? [] : options(a).filter(o => o.ok).map(o => o.id),
+      wrong: a.kind === 'tap' ? tapSegments(inst.item, a).map(s => s.id).filter(id => !tapRightIds(a, inst.item).includes(id)) : a.kind === 'text' ? [] : options(a).filter(o => !o.ok).map(o => o.id) })) };
 });
 const tapLine = (page, id) => page.locator(`[data-tap="${id}"]`).click();
 const MODEL_ANSWER = 'He ate the leftovers.';

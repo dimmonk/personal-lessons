@@ -9,7 +9,7 @@
     question('form', 'What is the form of government of the United States?', ['Republic', 'Constitution-based federal republic', 'Representative democracy'], 'The people choose representatives to make the laws.'),
     question('law', 'What is the supreme law of the land?', ['(U.S.) Constitution'], 'Every other law has to fit the Constitution.'),
     question('amend', 'How many amendments does the U.S. Constitution have?', ['Twenty-seven (27)'], 'Each amendment is a change added to the Constitution.'),
-    question('branches', 'Name the three branches of government.', [parts('Legislative, executive, and judicial', ['Legislative', 'executive', 'judicial']),
+    question('branches', 'Name the three branches of government.', [parts('Legislative, executive, and judicial', [['Legislative', 'Legislative branch'], ['executive', 'executive branch'], ['judicial', 'judicial branch', 'judiciary']]),
       parts('Congress, president, and the courts', ['Congress', 'president', 'the courts'])], 'Congress makes the laws, the president carries them out, and the courts explain them.'),
     question('oath', 'Name two promises that new citizens make in the Oath of Allegiance.', ['Give up loyalty to other countries', 'Defend the (U.S.) Constitution', 'Obey the laws of the United States',
       'Serve in the military (if needed)', 'Serve (help, do important work for) the nation (if needed)', 'Be loyal to the United States'], 'The oath is the promise a new citizen says out loud.', { count: 2 }),

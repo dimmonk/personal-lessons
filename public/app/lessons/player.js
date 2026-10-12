@@ -23,7 +23,7 @@ function saveLessonPlace(){
 }
 function moveLesson(at){
   timerStop();
-  LESSON = { ...LESSON, at, worked: null };
+  LESSON = { ...LESSON, at, worked: null, timedShownAt: null };   // a timed group says so each time it is entered
   saveLessonPlace();
   paintLesson();
   window.scrollTo(0, 0);
@@ -113,12 +113,18 @@ function startSet(step){
   const { subj, data, lesson } = LESSON, set = step.set;
   // a group that rehearses the learner's plan shows it once first, when there is one
   if(set.plan && notesOf(subj.id).plan && LESSON.planShownAt !== LESSON.at) return paintPlanBefore(step, () => { LESSON = { ...LESSON, planShownAt: LESSON.at }; paintLesson(); window.scrollTo(0, 0); });
+  // a timed group says so, and what a run-out clock counts as, before the first question
+  if(set.seconds && LESSON.timedShownAt !== LESSON.at) return paintTimedBefore(() => { LESSON = { ...LESSON, timedShownAt: LESSON.at }; paintLesson(); window.scrollTo(0, 0); });
   const run = newRunId();
   const list = buildSet(data, subj.id, lesson, set, run, { again: LESSON.again === true });
   const next = () => LESSON.again ? goOnAgain() : goOn();
-  startQueueWithRange({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: 'after-each', support: set.support || null, redo: true,
+  startQueueWithRange({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: 'after-each', support: set.support || null, redo: true, returns: set.returns === undefined ? null : set.returns,
     seconds: set.seconds || null, over: set.over || null,
     owner: lessonOwner(), shell: lessonShell, onDone: log => log.every(e => e.unscored) ? next() : paintBreak(log) });
+}
+function paintTimedBefore(then){
+  lessonShell(`${heading(SAY.timedHeading, LESSON.lesson.title)}<div class="lesson"><p>${esc(SAY.timedLine(LESSON.lesson.flow[LESSON.at - 1].set.seconds))}</p></div>`, nextAction(SAY.timedStart));
+  on('#fwd', then);
 }
 // A sung run needs the learner's range; when it is not set yet, the range exercise runs first and the run follows it (26.1.1).
 // The range try belongs to the lesson's practice, not to the run it opens, so a check's size and result are not changed by it.
@@ -129,9 +135,10 @@ function startQueueWithRange(opts){
   startQueue({ ...opts, list: [range], run, context: 'practice', support: null, redo: false, feedback: 'after-each', keepMic: true, onDone: () => startQueue(opts) });
 }
 function paintBreak(log){
-  const firsts = log.filter(e => e.first && !e.unscored), ok = firsts.filter(e => e.ok).length;
+  // an answer counted on the learner's own word ("my answer means the same") is not right the first time: it is said apart
+  const firsts = log.filter(e => e.first && !e.unscored), claimed = firsts.filter(e => e.ok && Object.values(e.r).includes('claimed')).length, ok = firsts.filter(e => e.ok).length - claimed;
   const more = LESSON.again ? nextSetAt() >= 0 : true;
-  lessonShell(`<div class="done-screen"><h2>${esc(SAY.breakTitle)}</h2><p>${esc(SAY.groupResult(ok, firsts.length))}</p><p>${esc(SAY.breakLine)}</p></div>`, nextAction(more ? SAY.goOn : SAY.toSubject));
+  lessonShell(`<div class="done-screen"><h2>${esc(SAY.breakTitle)}</h2><p>${esc(SAY.groupResult(ok, firsts.length, claimed))}</p><p>${esc(SAY.breakLine)}</p></div>`, nextAction(more ? SAY.goOn : SAY.toSubject));
   on('#fwd', () => LESSON.again ? goOnAgain() : goOn());
   window.scrollTo(0, 0);
   focusScreenHead();

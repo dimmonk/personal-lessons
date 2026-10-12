@@ -79,7 +79,8 @@ const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtm
 // `feedback` is given, the feedback. state: { a, many, marks, feedback: html|'' , support, sing, typed, looked, calc }
 // `sing` is the view of a sung question (sing-run.js): the strip and the controls are drawn from it. `typed`, `looked` and `calc` are what
 // is in the boxes of a typed number, whether its "disagree" line has been shown, and the calculator (number-run.js). `speech` is what a question
-// read aloud needs to know (speech-run.js).
+// read aloud needs to know (speech-run.js). `timed` is a question on a clock that is not answered yet: its choices are pinned over the foot of the
+// screen, so they are in sight while the message is read and the clock runs.
 function itemHtml(data, inst, state){
   const item = inst.item, support = state.support || null;
   const open = openAsks(item, support, state.a);
@@ -92,7 +93,7 @@ function itemHtml(data, inst, state){
   const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, locked: !!state.done, sing: state.sing,
     typed: state.typed, looked: state.looked, calc: state.calc }, { item, support, answers: state.a })).join('');
   return `<div class="item" data-item="${esc(inst.key)}" ${inst.seed === undefined ? '' : `data-seed="${inst.seed}"`}>
-    ${blocksHtml(item.blocks, ctx)}${hint}${steps}<div class="asks">${asks}</div>${state.feedback || ''}</div>`;
+    ${blocksHtml(item.blocks, ctx)}${hint}${steps}<div class="asks${state.timed ? ' pinned' : ''}">${asks}</div>${state.feedback || ''}</div>`;
 }
 // What the blocks need to know about the tap ask that is open on the question (at most one): which lines can be tapped, which were, and which
 // are right. The lines are only tappable once the ask is open; before that, and for a question with no tap, it is null.
@@ -100,7 +101,7 @@ function tapContext(item, open, state){
   const ask = open.find(a => a.kind === 'tap');
   if(!ask) return null;
   const answered = ask.id in state.a;
-  return { ids: tapSegments(item, ask).map(s => s.id), picked: answered ? asList(state.a[ask.id]) : (state.many[ask.id] || []), locked: answered || !!state.marks || !!state.done, marks: !!state.marks, right: tapRightIds(ask) };
+  return { ids: tapSegments(item, ask).map(s => s.id), picked: answered ? asList(state.a[ask.id]) : (state.many[ask.id] || []), locked: answered || !!state.marks || !!state.done, marks: !!state.marks, right: tapRightIds(ask, item) };
 }
 // the working a set's support shows before the learner answers: the steps that are not left to them
 function shownStepsHtml(item, support){
@@ -128,8 +129,10 @@ function feedbackHtml(data, inst, support, answers, score, opts = {}){
   const redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
   const working = (item.steps || []).length ? `<div class="vblock soft">${lessonLabel(SAY.workingLabel)}<ol class="lsteps">${item.steps.map(s => `<li><b>${esc(s.does)}</b> ${esc(s.working)}</li>`).join('')}</ol></div>` : '';
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
-  return `<div class="feedback" data-feedback><div class="marks">${marks}</div>${accepted}${written}
-    ${block(SAY.whyLabel, paras(item.reason))}${misses}${pushed}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item)}${factHtml(data, item)}${picture}${redrawn}${working}</div>`;
+  // a notice that must not be missed (an account that may describe danger) comes first, before the marks, in a block of its own
+  const notice = item.notice ? `<div class="vblock notice" role="note" data-notice>${paras(item.notice).map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
+  return `<div class="feedback" data-feedback>${notice}<div class="marks">${marks}</div>${accepted}${written}
+    ${block(SAY.whyLabel, paras(item.reason))}${misses}${pushed}${block(SAY.consequence, consequences.flatMap(paras))}${block(SAY.needLabel, paras(item.need))}${hasHtml(data, item, asked.some(a => askIsScored(a) && score.r[a.id] !== 'ok'))}${factHtml(data, item)}${picture}${redrawn}${working}</div>`;
 }
 // the chart of a question whose axis was cut, drawn again from zero: the same numbers on the scale that does not exaggerate them
 function redrawHtml(item){
@@ -147,8 +150,8 @@ function markHtml(data, ask, answer, result, item, answers){
   if(ask.kind === 'form') return formMarksHtml(data, ask, answer, item);
   if(ask.kind === 'text') return isRecallAsk(ask) ? recallMarkHtml(ask, answer, result) : writeMarkHtml(ask, answer);
   if(ask.kind === 'tap') return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? tapRightText(ask, item) : `${SAY.theAnswer}: ${tapRightText(ask, item)}`)}</span></div>`;
-  const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text);
-  return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;
+  const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text), joiner = ask.either ? ` ${SAY.either} ` : '; ';
+  return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join(joiner) : `${SAY.theAnswer}: ${right.join(joiner)}`)}</span></div>`;
 }
 // "You chose X. <what happens>" for a wrong answer; a slip with no line of its own is named from the subject's list of slips
 function missLine(data, ask, answer, result, item){
@@ -166,7 +169,7 @@ function missLine(data, ask, answer, result, item){
 }
 // "You tapped “…”. <the line's own note> <the slip it names>" for a line that was not the one; "You chose: Not given." when a line was there
 function tapMissHtml(data, ask, answer, item){
-  const right = tapRightIds(ask), segs = tapSegments(item, ask);
+  const right = tapRightIds(ask, item), segs = tapSegments(item, ask);
   const lines = asList(answer).filter(id => !right.includes(id)).map(id => {
     if(id === TAP_NONE) return `<p><b>${esc(SAY.youChose)}: ${esc(paras(ask.none).join(' '))}.</b> ${esc(SAY.tapThereIsOne)}</p>`;
     const seg = segs.find(s => s.id === id) || { text: id }, parts = [seg.note, seg.slip ? SAY.slipLine(slipText(data, seg.slip)) : null].filter(Boolean);

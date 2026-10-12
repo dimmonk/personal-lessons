@@ -33,10 +33,10 @@ FC.items("ideology", [
     id: "r-left-behind", side: "right", fit: "thin", rule: "socialist", word: "socialist",
     post: { source: "Comment · @cal_d · 2d", by: "On a right-leaning news page", text: "Socialist talk." },
     lines: [
-      L("y1", "This is a plan for people who feel left behind."),
-      L("y2", "We are listening, and we will act."),
+      L("y1", "This is a plan for people who feel left behind.", "That says who the plan is for, not what it does."),
+      L("y2", "We are listening, and we will act.", "That is a promise to act, not a plan."),
       FROM("y3", "Said by a candidate at a rally.")],
-    tap: "none", has: { "soc-industry": null, "soc-owner": null }, deciding: ["y1", "y2"],
+    tap: "none", has: { "soc-industry": null, "soc-owner": null }, deciding: [],
     reason: ["“Socialist” needs a main industry named and the public or the workers owning it. “This is a plan for people who feel left behind” names no industry and says nothing about who would own anything.",
       "The words cannot show the label and cannot rule it out."],
     need: "To judge “socialist”, the words would have to say which industry, and who would own it."

@@ -20,6 +20,9 @@ import { britishIn } from './american.mjs';
 const MONDAY = '2026-11-02', WEDNESDAY = '2026-11-04';
 export const STEP = { why: 0, forms: 1, worked: 2, timed: 3, call: 4, order: 5, busy: 6, plan: 7, setup: 8, planned: 9, check: 10 };
 export const jump = (page, at) => page.evaluate(n => moveLesson(n), at);
+// a timed group opens on a screen that says so (X17 owns what it says): go on from it, when it is there, to the first question
+const onFromNotice = async page => { if (/A timed group/.test(await page.locator('#screen').textContent())) await page.locator('#fwd').click(); };
+const jumpOn = async (page, at) => { await jump(page, at); await onFromNotice(page); };
 export const openPressure = async (env, page, lesson = 'l1') => { await env.openSubject(page, 'pressure'); await env.clickVisible(page, `#screen [data-l="${lesson}"]`); };
 const now = page => page.evaluate(() => ({ key: Q.list[Q.at].key, left: Q.cur.left, done: Q.cur.done, redo: !!Q.list[Q.at].redo, taps: Q.cur.taps, arrived: Q.cur.arrived, at: Q.at }));
 const tapOn = (page, ask, option) => page.locator(`[data-ask="${ask}"] [data-opt="${option}"]`).click();
@@ -51,7 +54,8 @@ export async function walkPressure(env, c, page, label) {
   const tapIf = async selector => { const l = page.locator(selector).first(); if (await l.count() && await l.isEnabled()) await l.click(); };
   await openPressure(env, page);
   await jump(page, STEP.forms); await at('the six forms of a message');
-  await jump(page, STEP.timed); await at('a timed question');
+  await jump(page, STEP.timed); await at('the notice of a timed group');
+  await onFromNotice(page); await at('a timed question');
   await tapIf('[data-ask="act"] [data-opt="check"]'); await at('a timed question, how to check');
   await tapIf('[data-ask="via"] [data-opt="link"]'); await at('a timed question with its feedback');
   await jump(page, STEP.call); await at('a call, the first turn');
@@ -61,7 +65,7 @@ export async function walkPressure(env, c, page, label) {
   await tapIf('[data-order-step="wait"]'); await at('steps in order, one tapped');
   for (const id of ['pass', 'report']) await tapIf(`[data-order-step="${id}"]`);
   await at('steps in order, answered wrong');
-  await jump(page, STEP.busy); await at('the busy task, before the banner');
+  await jumpOn(page, STEP.busy); await at('the busy task, before the banner');
   await tapIf('[data-busy-bin]'); await tapIf('[data-busy-bin]'); await at('the busy task, with its banner');
   await jump(page, STEP.plan); await at('the plan, empty');
   await jump(page, STEP.setup); await at('the own ways in');
@@ -86,6 +90,15 @@ export async function X17(env) {
   const c = env.checker('X17'), { context, page } = await heldClock(env, c);
   await openPressure(env, page);
   await jump(page, STEP.timed);
+  const notice = await env.screenText(page);
+  c.check(/A timed group/.test(notice) && /You have 15 seconds for each message/.test(notice) && /counts as a miss/.test(notice) && await page.locator('[data-timer]').count() === 0, 'a timed group does not open on a screen that says so, and what a clock that runs out counts as');
+  await page.locator('#fwd').click();
+  // while the clock runs the choices are in sight on a small phone, however long the message above them is
+  await page.setViewportSize({ width: 375, height: 667 });
+  const inSight = await page.evaluate(() => [...document.querySelectorAll('[data-ask="act"] [data-opt]')].map(e => e.getBoundingClientRect().bottom <= innerHeight && e.getBoundingClientRect().top >= 0));
+  c.check(inSight.length === 3 && inSight.every(Boolean), `the choices of a question on a clock are not all in sight on a 375 by 667 screen (${inSight})`);
+  const pinned = await page.evaluate(() => { const a = document.querySelector('.asks'); return a && { cls: a.className, position: getComputedStyle(a).position }; });
+  c.check(!!pinned && /pinned/.test(pinned.cls) && pinned.position === 'sticky', `the choices of a question on a clock are not pinned over the foot of the screen, so a long message would push them out of sight (${JSON.stringify(pinned)})`);
   let t = await timerNow(page);
   c.check(!!t && t.role === 'timer' && t.num === '15' && t.width === 100, `a timed question does not open on 15 seconds and a full bar (${JSON.stringify(t)})`);
   await page.clock.runFor(5500);
@@ -275,7 +288,7 @@ export async function X38(env) {
   const tries = await triesOf(env, page);
   c.check(JSON.stringify(tries.filter(t => t.key === 'o-1').map(t => [t.a.order, t.r.order])) === '[[["wait","pass","report"],"no"],[["bank","pass","report"],"ok"]]', `the orders are not stored as the steps tapped and their result (${JSON.stringify(tries.map(t => [t.key, t.a, t.r]))})`);
   // the busy task
-  await jump(page, STEP.busy);
+  await jumpOn(page, STEP.busy);
   let t = await timerNow(page);
   c.check(await page.locator('[data-busy]').count() === 1 && await page.locator('.block-message').count() === 0 && t === null && /Nothing sorted yet/.test(await env.screenText(page)), 'the busy task does not open alone, with nothing sorted and no banner or clock');
   await page.clock.runFor(3000);
@@ -307,7 +320,7 @@ export async function X39(env) {
   await env.setDay(page, MONDAY);
   await openPressure(env, page);
   // no plan yet: the group goes straight to its first question
-  await jump(page, STEP.planned);
+  await jumpOn(page, STEP.planned);
   c.check(await page.locator('[data-ask="act"]').count() === 1 && !/before you start/i.test(await env.screenText(page)), 'a group that rehearses the plan shows a plan screen when there is none');
   await jump(page, STEP.plan);
   c.check(await page.locator('[data-own-plan] input').count() === 2 && /One plan, for when a request comes/.test(await env.screenText(page)) && /stays on this phone/.test(await env.screenText(page)), 'the plan step does not show its two boxes and say it stays on the phone');
@@ -339,6 +352,7 @@ export async function X39(env) {
   c.check(/Your plan, before you start/.test(before) && before.includes('If a text wants a code, I will hang up and call the number on my card.') && await page.locator('[data-ask]').count() === 0, 'the group that rehearses the plan does not show it first');
   await env.inspect(c, page, 'the plan before a group');
   await env.goOn(page);
+  await onFromNotice(page);   // the notice of the timed group
   c.check(await page.locator('[data-ask="act"]').count() === 1 && !/before you start/i.test(await env.screenText(page)), 'the plan is shown again after the learner has gone on');
   // it is shown on the subject screen, and on no other
   await env.openSubject(page, 'pressure');

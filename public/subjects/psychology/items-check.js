@@ -6,13 +6,13 @@ FC.items("psychology", [
   psyItem({
     id: "k-lazy", kind: "ordinary", form: "friend", from: "Rosa", detail: "Text message · Thursday, 5:40 PM", who: "Pete",
     lines: [
-      L("z1", "Pete is so lazy.", "label"),
       L("z2", "He left at 4:55 while I was still packing the last order.", "act"),
+      L("z1", "Pete is a slacker.", "label"),
       L("z3", "He never thinks about how much I’m carrying.", "guess"),
       L("z4", "His shift ends at 5.", "around"),
       L("z5", "I was furious.", "feeling")],
     act: ["z2"],
-    reason: "“He left at 4:55 while I was still packing the last order” is what Pete did. “Lazy” is a word for him and “he never thinks about how much I’m carrying” is a guess about his mind. His shift ending at 5 is what was going on around it, and “I was furious” is how Rosa felt."
+    reason: "“He left at 4:55 while I was still packing the last order” is what Pete did. “A slacker” is a word for him and “he never thinks about how much I’m carrying” is a guess about his mind. His shift ending at 5 is what was going on around it, and “I was furious” is how Rosa felt."
   }),
   psyItem({
     id: "k-heat", kind: "ordinary", form: "thread", from: "Ben", detail: "Text thread · Sunday, 9:10 PM", who: "Ben",
@@ -20,21 +20,21 @@ FC.items("psychology", [
       L("t1", "Why is it freezing in here?", "teller", { me: true }),
       L("t2", "I turned the heat down to 60 while you were out.", "act"),
       L("t3", "You’re trying to freeze me out.", "guess", { me: true }),
-      L("t4", "You are so cheap.", "label", { me: true }),
+      L("t4", "You’re cheap.", "label", { me: true }),
       L("t5", "The bill came and it scared me.", "feeling", { note: "That is how he says he feels, not what he did." })],
     act: ["t2"],
-    reason: "“I turned the heat down to 60 while you were out” is what Ben did. “You’re trying to freeze me out” is your guess about why, and “you are so cheap” is your word for him. “The bill came and it scared me” is how he says he feels."
+    reason: "“I turned the heat down to 60 while you were out” is what Ben did. “You’re trying to freeze me out” is your guess about why, and “you’re cheap” is your word for him. “The bill came and it scared me” is how he says he feels."
   }),
   psyItem({
-    id: "k-party", kind: "ordinary", form: "note", from: "Your note", detail: "Written after the party", who: "Sofia",
+    id: "k-snapped", kind: "ordinary", form: "friend", from: "Nadia", detail: "Text message · Friday, 4:10 PM", who: "Marc",
     lines: [
-      L("q1", "Sofia is so self-absorbed.", "label"),
-      L("q2", "At the party she talked about her new job for the whole hour we were together.", "act"),
-      L("q3", "She only wants an audience.", "guess"),
-      L("q4", "I felt like furniture.", "feeling"),
-      L("q5", "She starts Monday at a hospital she has wanted to work at for years.", "around")],
-    act: ["q2"],
-    reason: "“At the party she talked about her new job for the whole hour we were together” is what Sofia did. “Self-absorbed” is a word for her and “she only wants an audience” is a guess about what she wants. “I felt like furniture” is how you felt, and her new job is the background."
+      L("p1", "Marc is a jerk.", "label"),
+      L("p2", "He snapped at me in front of everyone, told me it was wrong and said to do it again.", "act"),
+      L("p3", "He just likes making people feel small.", "guess"),
+      L("p4", "I couldn’t stop shaking.", "feeling"),
+      L("p5", "The deadline was at five.", "around")],
+    act: ["p2"],
+    reason: "“He snapped at me in front of everyone, told me it was wrong and said to do it again” mixes what he did with Nadia’s reading of it. “Snapped” is her word for how he said it. What could be heard is that he told her it was wrong and to do it again. “A jerk” is a word for him, “he just likes making people feel small” is a guess about why, and “I couldn’t stop shaking” is how she felt. The deadline is the background."
   }),
   psyItem({
     id: "k-meeting", kind: "word", form: "friend", from: "Leo", detail: "Text message · Tuesday, 12:30 PM", who: "Leo’s manager",
@@ -60,7 +60,7 @@ FC.items("psychology", [
   psyItem({
     id: "k-fake", kind: "unclear", form: "note", from: "Your note", detail: "Written after dinner", who: "Priyanka",
     lines: [
-      L("y1", "Priyanka is so fake.", "label"),
+      L("y1", "Priyanka is fake.", "label"),
       L("y2", "She was being weird at dinner. I just know she talks about me behind my back.", "guess"),
       L("y3", "I feel so stupid for trusting her.", "feeling"),
       L("y4", "We’ve been friends since college.", "around")],

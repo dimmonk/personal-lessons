@@ -40,8 +40,8 @@ same(recallTokens('four hundred and thirty five'), ['435'], 'a number in words w
 same(recallTokens('two three'), ['2', '3'], 'two numbers side by side are two numbers');
 same(recallTokens('1,000 people'), ['1000', 'people'], 'a thousands comma is dropped');
 same(recallTokens('Constitución'), ['constitucion'], 'an accent is dropped');
-same(recallVariants('Citizens eighteen (18) and older (can vote).').map(v => v.join(' ')).sort(), ['citizens 18 18 older can vote', 'citizens 18 18 older', 'citizens 18 older can vote', 'citizens 18 older'].sort(),
-  'brackets are in or out, every way');
+same(recallVariants('Citizens eighteen (18) and older (can vote).').map(v => v.join(' ')).sort(), ['citizens 18 18 older vote', 'citizens 18 18 older', 'citizens 18 older vote', 'citizens 18 older'].sort(),
+  'brackets are in or out, every way ("can" is one of the words that do not matter)');
 
 /* ---------- what counts as the right answer: the pilot's own questions ---------- */
 right(civics, 'q52', 'Supreme Court');
@@ -66,8 +66,10 @@ right(civics, 'q18', 'US legislature', 'either half');
 right(civics, 'q18', 'U.S. or national legislature', 'the whole bracket');
 wrong(civics, 'q18', 'executive branch', 'the other branch');
 wrong(civics, 'q17', 'legislative branch', 'the other branch');
-wrong(civics, 'q17', 'executive', 'the word "branch" left out');
+right(civics, 'q17', 'executive', 'the word "branch" left out: a branch is named by its name');
 right(civics, 'q17', 'executive branch');
+right(civics, 'q17', 'the Executive Branch');
+wrong(civics, 'q17', 'judicial', 'another branch');
 wrong(civics, 'q20', 'declares was', 'a short word must be exact');
 right(civics, 'q20', 'declare war', 'one small misspelling counts for a word that is one letter off');
 right(civics, 'q20', 'makes the federal budget');
@@ -87,9 +89,65 @@ right(civics, 'q15', 'Separation of powers');
 right(civics, 'q15', 'so one part does not become too powerful');
 wrong(civics, 'q15', 'so no one part gets too powerful', 'the same meaning in other words is not matched (a claim does that)');
 right(civics, 'q51', 'resolves disputes about the law', 'brackets out');
-right(civics, 'q51', 'Resolves disputes (disagreements) about the law', 'brackets in');
+right(civics, 'q51', 'resolves disagreements about the law', 'the bracket is another word for "disputes", so either is right');
+right(civics, 'q51', 'Resolves disputes about the law');
+wrong(civics, 'q51', 'resolves disputes disagreements about the law', 'both words are not an answer: the bracket is not an extra word');
+right(civics, 'q51', 'explains the law', 'the table says "explain"; one law or many');
+right(civics, 'q51', 'explains laws');
+right(civics, 'q51', 'settle disagreements about the law', 'the lesson\u2019s own table words');
+wrong(civics, 'q51', 'makes laws', 'that is Congress');
 right(civics, 'q51', 'decides if a law goes against the constitution');
 right(civics, 'q46', 'federal departments and agencies');
+
+/* ---------- word endings, forms of a verb, and the lesson's own table ---------- */
+right(civics, 'q41', 'veto bills', 'a verb form: "vetoes" and "veto" are one word');
+right(civics, 'q41', 'vetoes bills');
+right(civics, 'q41', 'veto', 'a bracket leaves out "bills"');
+right(civics, 'q41', 'can veto bills', '"can" does not matter');
+right(civics, 'q41', 'signs bills into law');
+right(civics, 'q41', 'signs bills', 'a bracket leaves out "into law"');
+right(civics, 'q41', 'sign bills');
+right(civics, 'q41', 'signs or vetoes bills', 'the table\u2019s own words');
+right(civics, 'q41', 'carries out the laws', 'the table\u2019s own words');
+right(civics, 'q41', 'enforce laws', 'a verb form');
+right(civics, 'q41', 'appoints judges', 'a bracket leaves out "federal"');
+right(civics, 'q41', 'commander in chief');
+wrong(civics, 'q41', 'declares war', 'a power of Congress');
+wrong(civics, 'q41', 'makes laws', 'a power of Congress');
+wrong(civics, 'q41', 'veto laws bills', 'a word that is not there');
+right(civics, 'q20', 'make laws');
+right(civics, 'q20', 'makes the laws');
+right(civics, 'q20', 'passes laws');
+right(civics, 'q20', 'write laws');
+wrong(civics, 'q20', 'signs bills into law', 'a power of the president');
+right(civics, 'q18', 'legislative', 'the branch named by its name');
+right(civics, 'q47', 'advise the president');
+right(civics, 'q47', 'they advise the president', '"they" does not matter');
+wrong(civics, 'q47', 'advises the congress', 'another body');
+right(civics, 'q15', 'so no one gets too much power', 'the same meaning in the words people use');
+right(civics, 'q15', 'check and balance');
+right(civics, 'q15', 'balance of power');
+right(civics, 'q16', 'legislative branch, executive branch, and judicial branch', 'each with its word "branch"');
+right(civics, 'q16', 'legislative, executive and judiciary', '"judiciary" is the judicial branch');
+right(civics, 'q16', 'the congress, the president and the courts');
+wrong(civics, 'q16', 'legislative branch, executive branch', 'two of three');
+wrong(civics, 'q16', 'legislative, executive, judiciary, military', 'a branch that is not one');
+right(civics, 'q46', 'cabinet');
+right(civics, 'q46', 'federal agencies');
+right(civics, 'q50', 'federal court');
+right(civics, 'q42', 'the president');
+wrong(civics, 'q42', 'vice president', 'the next in line is not the commander');
+// the words that count as the same are ones the engine knows, written once
+same(recallTokens('The Presidents and the Senates'), ['presidents', 'senates'], 'tokens keep their endings; the matcher forgives them');
+check(app.recallInflects('law', 'laws') && app.recallInflects('vetoes', 'veto') && app.recallInflects('carries', 'carry') && app.recallInflects('judge', 'judges'), 'a plural or a verb ending is the same word');
+check(!app.recallInflects('war', 'was') && !app.recallInflects('us', 'use') && !app.recallInflects('state', 'estate') && !app.recallInflects('1800', '1800s') && !app.recallInflects('go', 'goes'), 'other words, numbers and very short words are not');
+// a table the lesson shows, and the accepted answers, say the same things
+{
+  const table = civics.lessons.l1.flow[0].show.find(b => b.kind === 'document'), words = table.rows.map(r => r.cells[2]);
+  const said = { q41: ['signs bills into law', 'vetoes bills', 'enforces laws'], q51: ['explain laws', 'resolve disputes about the law'], q20: ['writes laws'] };
+  check(words[1] === 'Signs bills into law, vetoes bills and enforces laws' && words[2] === 'Explain laws and resolve disputes about the law' && words[0] === 'Writes laws', 'the table is worded as the official list words these answers');
+  Object.entries(said).forEach(([id, answers]) => answers.forEach(a => check(typed(civics, id, a) === 'ok', `${id}: the table says "${a}", and the question accepts it`)));
+}
 
 /* ---------- numbers, brackets and "name two": the test subject ---------- */
 right(interview, 'amend', '27');
@@ -285,12 +343,21 @@ const attempt = (run, context, ok, extra = {}) => ({ run, lesson: 'l1', rev: 1, 
     const ask = item.asks[0];
     same(ask.accept.map(e => typeof e === 'string' ? e : e.text), q.answers, `Q${q.n}: the accepted answers are the official ones, in order`);
     check(item.strand === `q${q.n}` && civics.meta.strands.some(s => s.id === item.strand) && item.asks.length === 1 && ask.kind === 'text' && !ask.count, `Q${q.n}: one question, its own topic, one answer wanted`);
-    ask.accept.filter(e => typeof e !== 'string').forEach(e => check(e.parts.every(p => e.text.toLowerCase().includes(p.toLowerCase())), `Q${q.n}: "${e.text}" is said in the parts it lists`));
-    q.answers.forEach((answer, i) => check(recallMatch(ask, answer.replace(/\s*\([^)]*\)/g, '')) !== null && recallMatch(ask, answer) !== null, `Q${q.n}: the official answer "${answer}" is accepted as printed and without its brackets`));
+    ask.accept.filter(e => typeof e !== 'string' && e.parts).forEach(e => check(e.parts.every(p => e.text.toLowerCase().includes([].concat(p)[0].replace(/\s*\([^)]*\)/g, '').toLowerCase())), `Q${q.n}: "${e.text}" is said in the parts it lists`));
+    // an official answer is accepted as printed and without its brackets; one whose brackets are another word (`as`) is accepted in each of the ways it says
+    q.answers.forEach((answer, i) => {
+      const entry = ask.accept[i];
+      if (entry.as) entry.as.forEach(w => check(recallMatch(ask, w.replace(/[()]/g, '')) !== null && recallMatch(ask, w.replace(/\s*\([^)]*\)/g, '')) !== null, `Q${q.n}: "${answer}" is accepted as "${w}" says, with and without its brackets`));
+      else check(recallMatch(ask, answer.replace(/\s*\([^)]*\)/g, '')) !== null && recallMatch(ask, answer) !== null, `Q${q.n}: the official answer "${answer}" is accepted as printed and without its brackets`);
+    });
   });
   const l1 = civics.lessons.l1, sets = l1.flow.filter(s => s.set).map(s => s.set.items), inSets = sets.flat();
   same([...inSets].sort(), list.questions.map(q => `q${q.n}`).sort(), 'the groups ask the 17 questions, each once');
   same([...l1.check.items].sort(), [...inSets].sort(), 'the check asks the same 17 again');
+  // the five questions whose answer is "the president" are not asked back to back: no two in a row, so the answer cannot be given by pattern
+  const president = ['q42', 'q43', 'q44', 'q45'], president3 = sets[2];
+  check(president3.every((id, i) => i === 0 || !(president.includes(id) && president.includes(president3[i - 1]))), `the questions about the president are mixed in with the others (${president3})`);
+  same([SAY.groupResult(3, 3), SAY.groupResult(1, 3, 2)], ['3 of 3 right the first time', '1 of 3 right the first time, and 2 counted on your word'], 'a group counts an answer taken on the learner\u2019s word apart from the ones that were right');
   check(l1.check.recall === true && l1.check.order === 'shuffle' && l1.check.feedback === 'at-end' && l1.check.pass.length === 1 && l1.check.pass[0].right.min === 16, 'the check is mixed, shows nothing until the end, and wants 16 of 17 (9 in 10)');
   check(l1.part === '1' && civics.meta.parts[0].title === 'Who does what' && l1.status === 'draft', 'the pilot is the lesson of part 1, still a draft');
   check(Object.keys(civics.lessons).join() === 'l1', 'only the pilot is built');

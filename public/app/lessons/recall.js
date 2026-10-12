@@ -4,10 +4,15 @@
 //   ask    { id, kind: 'text', prompt, accept: [Entry] | { own: 'answers.q23' }, count?: n, when? }
 //   Entry  'Writes laws'                                        one accepted answer; words in brackets are optional
 //          { text: 'Legislative, executive, and judicial', parts: ['Legislative', 'executive', 'judicial'] }
-//                                                               one accepted answer made of parts, said in any order; `text` is printed
-// What counts as the same, after both are cleaned: capital letters, punctuation, "a", "an", "the" and "and" do not matter; a number written as
-// words is the number ("twenty-seven" is 27, "twenty second" is 22nd); brackets are optional; and one small misspelling in the whole answer is
-// forgiven (one word that is one letter off, in words of four letters or more, never in a number). Anything else is a miss: a word left out, a
+//                                                               one accepted answer made of parts, said in any order; `text` is printed; a part may be
+//                                                               a list of wordings, any one of which says it (['Judicial (branch)', 'Judiciary'])
+//          { text, as?: [wording], also?: [wording] }           `text` is what is printed. `as` says what it means when its brackets are not
+//                                                               optional words ("Resolves disputes (disagreements)": another word, not an extra one);
+//                                                               `also` adds clear equivalents the list does not print ("Makes laws" for "Writes laws")
+// What counts as the same, after both are cleaned: capital letters, punctuation, "a", "an", "the", "and", "or", "can" and "they" do not matter; a
+// number written as words is the number ("twenty-seven" is 27, "twenty second" is 22nd); brackets are optional; a plural or a verb ending is not
+// another word ("veto" and "vetoes", "law" and "laws", "carry" and "carries"); and one small misspelling in the whole answer is forgiven (one word
+// that is one letter off, in words of four letters or more, never in a number). Anything else is a miss: a word left out, a
 // word added, the other branch of government. `count: n` needs n different accepted answers, said once each; more are fine, a repeat is not
 // counted twice. A learner whose answer says the same in other words says so (a claim, queue.js); the app never decides that for them.
 
@@ -15,7 +20,8 @@ const RECALL_MAX = 200;             // the most a learner may type for one answe
 const RECALL_SLIPS = 1;             // one small misspelling in a whole answer
 const RECALL_MIN_WORD = 4;          // a word shorter than this must be exact
 const RECALL_OPTIONAL_MAX = 4;      // brackets in one accepted answer
-const RECALL_LEFT_OUT = ['a', 'an', 'the', 'and'];
+const RECALL_LEFT_OUT = ['a', 'an', 'the', 'and', 'or', 'can', 'they'];
+const RECALL_INFLECT_MIN = 3;       // a word shorter than this has no endings to forgive
 
 /* ---------- numbers written as words ---------- */
 const RECALL_UNITS = { zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13,
@@ -88,11 +94,16 @@ function recallVariants(text){
   return out;
 }
 const recallEntryText = entry => typeof entry === 'string' ? entry : entry.text;
+// the wordings an accepted answer is matched against, each with its brackets: what the entry says it means (`as`, else its printed text), and `also`
+const recallWordings = entry => typeof entry === 'string' ? [entry] : [...(entry.as || [entry.text]), ...(entry.also || [])];
+const uniqueWordings = list => list.filter((w, i) => list.findIndex(x => x.join(' ') === w.join(' ')) === i);
+const recallPartVariants = part => uniqueWordings((Array.isArray(part) ? part : [part]).flatMap(recallVariants));
 // an accepted answer compiled for matching: { text, variants } or { text, parts: [variants] }
 const RECALL_COMPILED = new WeakMap();
 function recallCompile(entry){
   if(typeof entry === 'object' && entry !== null && RECALL_COMPILED.has(entry)) return RECALL_COMPILED.get(entry);
-  const made = typeof entry === 'string' ? { text: entry, variants: recallVariants(entry) } : { text: entry.text, parts: entry.parts.map(recallVariants) };
+  const made = entry.parts ? { text: entry.text, parts: entry.parts.map(recallPartVariants) }
+    : { text: recallEntryText(entry), variants: uniqueWordings(recallWordings(entry).flatMap(recallVariants)) };
   if(typeof entry === 'object' && entry !== null) RECALL_COMPILED.set(entry, made);
   return made;
 }
@@ -109,13 +120,19 @@ function recallOneOff(a, b){
   const [long, short] = a.length > b.length ? [a, b] : [b, a], at = [...short].findIndex((ch, i) => ch !== long[i]);
   return at < 0 || short.slice(at) === long.slice(at + 1);
 }
+// one word is the other with a plural or verb ending: law and laws, veto and vetoes, carry and carries (never a number, never a very short word)
+function recallInflects(a, b){
+  if(/\d/.test(a + b) || Math.min(a.length, b.length) < RECALL_INFLECT_MIN) return false;
+  const [short, long] = a.length <= b.length ? [a, b] : [b, a];
+  return long === short + 's' || long === short + 'es' || (short.endsWith('y') && long === short.slice(0, -1) + 'ies');
+}
 // the cost (0, or 1 for the small misspelling) of the typed words from `at` being exactly this accepted wording; null when they are not
 function recallFit(tokens, at, wording){
   if(at + wording.length > tokens.length) return null;
   let cost = 0;
   for(let i = 0; i < wording.length; i++){
     const typed = tokens[at + i], wanted = wording[i];
-    if(typed === wanted) continue;
+    if(typed === wanted || recallInflects(typed, wanted)) continue;
     const forgiven = typed.length >= RECALL_MIN_WORD && wanted.length >= RECALL_MIN_WORD && !/\d/.test(typed + wanted) && recallOneOff(typed, wanted);
     if(!forgiven || ++cost > RECALL_SLIPS) return null;
   }

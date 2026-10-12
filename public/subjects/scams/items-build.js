@@ -8,12 +8,16 @@
 //
 // spec: { id, genuine ('genuine' | 'scam'), channel, request ('money' | 'login' | 'details' | 'device' | 'none'), context? (what you were doing),
 //   message (a message block), right ('act' | 'check' | 'leave'), own (the way in you already had), theirs (the way the message offers, as a way to check),
-//   offers? (a real message that gives its own link, number or reply), say: [what doing it leads to, what checking leads to, what leaving it leads to], deciding: [lineIds], reason, steps? }
+//   offers? (a real message that gives its own link, number or reply), noWay? (a sender you have no way of your own to reach: checking can only go through the sender, so
+//   leaving it is the one right action and there is no "how do you check"), say: [what doing it leads to, what checking leads to, what leaving it leads to], deciding: [lineIds], reason, steps? }
 const SCAM_STRAND = "act-check-leave";
 // what doing it names when doing it is wrong: the failure on a scam; the wrong habit on a real message you did not start that offers its own link, number or
 // reply (`offers`); nothing on a real message that offers no way in, where doing it is harmless
-const scamActSlip = spec => spec.genuine === "scam" ? { act: "acted" } : spec.offers ? { act: "habit" } : {};
-const scamAct = spec => ({ id: "act", kind: "choose", prompt: "What do you do?", from: "action", right: spec.right,
+const scamActSlip = spec => spec.genuine === "scam" ? { act: "acted", ...(spec.noWay ? { check: "their-way" } : {}) } : spec.offers ? { act: "habit" } : {};
+// A real message that offers no way in of its own is handled normally by doing what it says or by leaving it, and checking it through a way you already had is
+// as right: it is safe and costs a minute (design, principle 6). A real message that offers its own link, number or reply is checked, never followed.
+const scamRight = spec => spec.genuine === "genuine" && !spec.offers && spec.right !== "check" ? [spec.right, "check"] : spec.right;
+const scamAct = spec => ({ id: "act", kind: "choose", prompt: "What do you do?", from: "action", right: scamRight(spec), ...(Array.isArray(scamRight(spec)) ? { either: true } : {}),
   then: { act: spec.say[0], check: spec.say[1], leave: spec.say[2] },
   slips: spec.right === "act" ? {} : scamActSlip(spec) });
 // how to check: through a way you already had, or through what the message gave (a link, a number, a reply), which is the sender's way
@@ -26,7 +30,9 @@ const scamVia = spec => {
 };
 const scamItem = spec => ({ id: spec.id, strand: SCAM_STRAND, facets: { genuine: spec.genuine, channel: spec.channel, request: spec.request },
   blocks: [...(spec.context ? [{ kind: "prose", text: spec.context }] : []), spec.message],
-  asks: [scamAct(spec), scamVia(spec)], deciding: spec.deciding, reason: spec.reason, ...(spec.steps ? { steps: spec.steps } : {}) });
+  asks: spec.noWay ? [scamAct(spec)] : [scamAct(spec), scamVia(spec)], deciding: spec.deciding,
+  reason: Array.isArray(scamRight(spec)) ? `${spec.reason} Checking first, through a way you already had, is also safe. It costs a minute.` : spec.reason,
+  ...(spec.steps ? { steps: spec.steps } : {}) });
 const scamLine = (id, text, extra) => ({ id, text, ...extra });
 // the blocks a message is made of
 const scamSms = (from, detail, lines, link) => ({ kind: "message", form: "sms", from, detail, lines, ...(link ? { link } : {}) });

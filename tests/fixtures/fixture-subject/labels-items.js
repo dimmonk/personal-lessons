@@ -11,12 +11,12 @@
       { kind: 'panel', rules: [s.rule] }],
     asks: [
       { id: 'verdict', kind: 'choose', prompt: `Does the label “${s.word}” fit?`, from: 'verdict', right: s.fit, then: { [s.fit === 'fits' ? 'off' : 'fits']: 'Read the lines marked after the answer.' } },
-      { id: 'words', kind: 'tap', prompt: 'Tap the line that decides it.', right: [s.tap] }],
+      { id: 'words', kind: 'tap', prompt: 'Tap the line that decides it.', right: [s.tap], ...(s.meets ? { meets: true } : {}) }],
     has: s.has, deciding: s.deciding, reason: `The lines decide it: ${s.lines.find(l => l.id === s.tap).text}`
   });
   const dryFits = (id, strand, side) => labelled({ id, strand, side, fit: 'fits', rule: 'dry', word: 'dry',
     lines: [line(`${id}-a`, 'The sky is clear all morning.'), line(`${id}-b`, 'The grass is dry.', { note: 'That is about the grass, not the sky.' })],
-    tap: `${id}-b`, has: { 'dry-sky': `${id}-a`, 'dry-ground': `${id}-b` }, deciding: [`${id}-a`, `${id}-b`] });
+    tap: `${id}-b`, meets: true, has: { 'dry-sky': `${id}-a`, 'dry-ground': `${id}-b` }, deciding: [`${id}-a`, `${id}-b`] });
   const dryOff = (id, strand, side) => labelled({ id, strand, side, fit: 'off', rule: 'dry', word: 'dry',
     lines: [line(`${id}-a`, 'The sky is clear.'), line(`${id}-b`, 'The grass is soaked.')],
     tap: `${id}-b`, has: { 'dry-sky': `${id}-a`, 'dry-ground': null }, deciding: [`${id}-a`, `${id}-b`] });

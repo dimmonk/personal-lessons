@@ -6,7 +6,7 @@
 // is the message, the lines that say what was done, and the reasons. It makes plain data and registers nothing.
 //
 // spec: { id, kind ('ordinary' | 'word' | 'unclear' | 'control'), form, from, detail, who (the person the account is about, as the prompt names
-//   them), lines, act (the ids of the lines that say what they did, or 'none'), reason, need?, steps?, deciding? (the lines marked after the answer,
+//   them), lines, act (the ids of the lines that say what they did, or 'none'), reason, need?, notice? (shown first in the feedback), steps?, deciding? (the lines marked after the answer,
 //   when none is the answer), say?: { prompt, ok, kept, soft, guess, order } | write?: { prompt, model } | next?: true }
 const PSY_STRAND = "what-they-did";
 // a line that is not something the person did says what it is instead; tapping it names that as a slip
@@ -50,8 +50,8 @@ function psyItem(spec) {
     blocks: [{ kind: "message", form: spec.form, from: spec.from, detail: spec.detail, lines: spec.lines }, { kind: "panel", rules: ["act"] }],
     asks: [tap, ...more],
     ...(spec.steps ? { steps: spec.steps } : {}),
-    has: act.length ? { "act-did": act[0], "act-seen": act[act.length - 1] } : { "act-did": null, "act-seen": null },
+    has: act.length ? { "act-did": act, "act-seen": act } : { "act-did": null, "act-seen": null },
     deciding: spec.deciding || act, reason: spec.reason,
-    ...(spec.need ? { need: spec.need } : {})
+    ...(spec.need ? { need: spec.need } : {}), ...(spec.notice ? { notice: spec.notice } : {})
   };
 }

@@ -30,7 +30,7 @@ async function openSung(env, c, { subject, lesson, width = 390, recorder = 'gran
   if (range || at) {
     await page.evaluate(([s, l, r, a]) => {
       if (r) localStorage.setItem(`pl:${s}:notes`, JSON.stringify({ range: r }));
-      if (a) localStorage.setItem(`pl:${s}:seen`, JSON.stringify({ [l]: { rev: 1, at: a } }));
+      if (a) localStorage.setItem(`pl:${s}:seen`, JSON.stringify({ [l]: { rev: FC.get(s).lessons[l].rev, at: a } }));   // the place is kept only for the revision it was made in
     }, [subject, lesson, range, at]);
     await page.reload();
   }

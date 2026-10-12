@@ -184,7 +184,10 @@ async function run(seed) {
   const hidden = A.stripHtml(view({ showLine: false, bars: false, hidden: true }));
   check('words', !hidden.includes('class="bar"') && hidden.includes('<path class="voice" d=""') && hidden.includes('data-line="off"') && hidden.includes('No line this time'), 'a hidden strip has no bar and no line');
   const [axLo, axHi] = A.stripAxis(planA), mid = A.noteToMidi(planA.bars[0].note);
-  check('words', near((axLo + axHi) / 2, mid, 1e-9) && axHi - axLo >= 10, 'the strip is drawn around the target, so the line\'s distance from it is what shows');
+  check('words', near((axLo + axHi) / 2, mid, 1e-9) && axHi - axLo >= 8, 'the strip is drawn around the target, so the line\'s distance from it is what shows');
+  // the bar is the band that is scored as on the note, nothing wider: its height is the tolerance in the strip's own scale
+  const barHeight = Number((svg.match(/<rect class="bar"[^>]*height="([\d.]+)"/) || [])[1]), want = 2 * planA.cents / 100 * (140 - 16) / (axHi - axLo);
+  check('words', Math.abs(barHeight - want) < 0.06, `the bar is not the height of what counts as on the note (${barHeight}, wanted ${want.toFixed(2)})`);
   const folded = A.stripMidi(planA, 100, A.noteToHz(planA.bars[0].note) / 2);
   check('words', near(folded, mid, 0.01), 'a voice an octave away is drawn on the bar, as it is scored');
   const path = A.voicePath(planA, [{ ms: 0, midi: mid }, { ms: 50, midi: mid }, { ms: 900, midi: mid }]);
@@ -209,6 +212,7 @@ const FAULTS = [
   { group: 'meaning', name: 'a match on the note within 40 cents', seed: edit('app/lessons/sing-task.js', 'const SING_CENTS = 25; ', 'const SING_CENTS = 40; ') },
   { group: 'meaning', name: 'a melody needs only one note', seed: edit('app/lessons/sing-task.js', 'cents.filter(on).length >= Math.ceil(0.8 * ask.notes)', 'cents.filter(on).length >= 1') },
   { group: 'words', name: 'a hidden strip that still draws its bar', seed: edit('app/lessons/sing-strip.js', "const bars = view.bars ? barsSvg(view.plan) : '';", 'const bars = barsSvg(view.plan);') },
+  { group: 'words', name: 'a bar drawn a third wider than what counts as on the note', seed: edit('app/lessons/sing-strip.js', 'const thick = 2 * plan.cents / 100 * perHalfStep', 'const thick = 3 * plan.cents / 100 * perHalfStep') },
   { group: 'words', name: 'a screen that says cents', seed: edit('app/lessons/view.js', "shadeUnder: 'A shade under', shadeOver: 'A shade over'", "shadeUnder: 'About 40 cents under', shadeOver: 'A shade over'") }
 ];
 

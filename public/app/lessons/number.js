@@ -81,15 +81,38 @@ function estimateOff(typed, exact){
 }
 
 /* ---------- the calculator ---------- */
-// A plain four-function calculator, one operation at a time, as on a phone. State is replaced at every press, never changed.
-//   { shown: '0', acc: null, op: null, fresh: true, error: false }
-const CALC_START = { shown: '0', acc: null, op: null, fresh: true, error: false };
+// A four-function calculator that follows the usual order of operations: × and ÷ before + and −, as on a phone held sideways and as in
+// the sum a receipt writes ("5 × $11.09 + 3 × $9.09"). The keys pressed so far are kept as `tokens`, [number, operator, number, ...], and
+// worked out whole at "=", so no sum of products needs a memory key. State is replaced at every press, never changed.
+//   { shown: '0', tokens: [], fresh: true, error: false }     `fresh`: the next digit starts a number (and an operator key replaces the last)
+const CALC_START = { shown: '0', tokens: [], fresh: true, error: false };
 const CALC_OPS = ['+', '-', '*', '/'];
 const CALC_MAX_DIGITS = 12;
-const calcClean = value => String(Number(value.toPrecision(12)));
-function calcApply(acc, op, value){
-  const out = op === '+' ? acc + value : op === '-' ? acc - value : op === '*' ? acc * value : value === 0 ? NaN : acc / value;
-  return Number.isFinite(out) ? { shown: calcClean(out), error: false } : { shown: 'Error', error: true };
+const CALC_ERROR = { ...CALC_START, shown: 'Error', error: true };
+const calcIsMul = op => op === '*' || op === '/';
+// one operation, to twelve figures; null for dividing by nothing
+function calcOp(a, op, b){
+  const out = op === '+' ? a + b : op === '-' ? a - b : op === '*' ? a * b : b === 0 ? NaN : a / b;
+  return Number.isFinite(out) ? Number(out.toPrecision(12)) : null;
+}
+// [number, operator, number, ...] worked out with × and ÷ first; null for an error
+function calcFold(tokens){
+  let total = 0, addOp = '+', term = tokens[0];
+  for(let i = 1; i <= tokens.length; i += 2){
+    const op = tokens[i];
+    if(op && calcIsMul(op)){ term = calcOp(term, op, tokens[i + 1]); if(term === null) return null; continue; }
+    total = calcOp(total, addOp, term);
+    addOp = op; term = tokens[i + 1];
+  }
+  return total;
+}
+// what the display shows once an operator has been pressed: the running total after + or −, the product so far after × or ÷
+function calcRunning(tokens){
+  const done = tokens.slice(0, -1), op = tokens[tokens.length - 1];
+  if(!calcIsMul(op)) return calcFold(done);
+  let from = 0;
+  done.forEach((t, i) => { if(i % 2 === 1 && !calcIsMul(t)) from = i + 1; });
+  return calcFold(done.slice(from));
 }
 function calcPress(st, key){
   const base = st.error ? CALC_START : st;
@@ -109,13 +132,15 @@ function calcPress(st, key){
     return base.shown.includes('.') ? base : { ...base, shown: base.shown + '.' };
   }
   if(CALC_OPS.includes(key)){
-    const chained = base.op && !base.fresh ? calcApply(base.acc, base.op, Number(base.shown)) : { shown: base.shown, error: false };
-    return chained.error ? { ...CALC_START, shown: 'Error', error: true } : { shown: chained.shown, acc: Number(chained.shown), op: key, fresh: true, error: false };
+    const waiting = base.tokens.length > 0 && base.fresh;   // an operator was the last key: this one replaces it
+    const tokens = waiting ? [...base.tokens.slice(0, -1), key] : [...base.tokens, Number(base.shown), key];
+    const running = calcRunning(tokens);
+    return running === null ? CALC_ERROR : { shown: String(running), tokens, fresh: true, error: false };
   }
   if(key === '='){
-    if(!base.op || base.fresh) return base;
-    const done = calcApply(base.acc, base.op, Number(base.shown));
-    return done.error ? { ...CALC_START, shown: 'Error', error: true } : { shown: done.shown, acc: null, op: null, fresh: true, error: false };
+    if(base.tokens.length === 0 || base.fresh) return base;
+    const done = calcFold([...base.tokens, Number(base.shown)]);
+    return done === null ? CALC_ERROR : { shown: String(done), tokens: [], fresh: true, error: false };
   }
   return base;
 }

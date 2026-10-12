@@ -1,6 +1,6 @@
 # Basic Math: Ballpark and check
 
-Revision 1, draft (the screen carries the draft line). Part: Ballpark and check. Where the subject ends up: Work out the number an everyday situation needs (a scaled amount, a percent, an area and how much to buy, the cost of a loan or the growth of savings), set up from the situation, with a calculator for the arithmetic, and tell whether the answer is sensible.
+Revision 2, draft (the screen carries the draft line). Part: Ballpark and check. Where the subject ends up: Work out the number an everyday situation needs (a scaled amount, a percent, an area and how much to buy, the cost of a loan or the growth of savings), set up from the situation, with a calculator for the arithmetic, and tell whether the answer is sensible.
 
 ## The why
 
@@ -10,8 +10,9 @@ Here you make a rough answer first, then the exact one, and see how close you we
 ## Step 1: Round first, then add
 
 A rough answer takes a few seconds and catches big mistakes before they cost you money.
-To get one, round each price to the nearest whole dollar, then add the dollars. $3.49 becomes $3. $11.86 becomes $12.
+To get one, round each price to the nearest whole dollar, then add the dollars. 50 cents or more rounds up; less rounds down. $3.49 becomes $3. $11.86 becomes $12.
 When you buy several of the same thing, round the price, then multiply: 4 packs at $3.29 is about 4 × $3 = $12.
+On the calculator, type a sum the way it is written, such as 4 × 3.29 + 2 × 5.99. It multiplies and divides before it adds and takes away, as it should.
 To split a bill, round it to a number the group divides evenly: $142.80 among 6 people is close to $144, and $144 ÷ 6 = $24 each.
 
 A wrong idea, marked wrong: “A rough answer has to be exact to be any use.”
@@ -32,7 +33,7 @@ The working, one step at a time:
 1. Add the exact prices on the calculator. $3.49 + $4.29 + $3.79 + $11.86 = $23.43.
 1. Compare the two. $23.43 is close to $23. They agree, so the total is sensible. A total of $2.34 or $234.30 would not agree, and you would look again.
 
-Then the answer: $23.43 / $23.43. A rough answer comes from rounding each price and adding. The exact total on the calculator should land close to it. When it does not, one of them has a mistake.
+Then the answer: $23 / $23.43. A rough answer comes from rounding each price and adding. The exact total on the calculator should land close to it. When it does not, one of them has a mistake.
 
 ## Step 3: Questions
 
@@ -216,6 +217,8 @@ Then a screen: you can stop here, your place is kept.
 
 A printed total can be wrong. Two mistakes are common: a digit slips, so the total comes out $10 or $20 too high, or a line gets left out of the total.
 Round the lines and add them, then compare with the printed total. If they are near each other, the total is right. If they are far apart, find the line that does not fit.
+A real shop receipt also has a tax line, a few percent of the lines, so its total sits a little above the lines added. That is not a mistake. A gap of $10 or more, or a whole line, is. The receipts here have no tax line, so the total should match the lines.
+Totals go wrong most where a person or a calculator added them: a restaurant check, a hand-written bill, a friend’s tally, your own calculator total.
 
 ## Step 6: Questions
 
@@ -347,22 +350,20 @@ The working:
 
 A receipt, "Fresh Basket":
 
-> Dog food  |  $12.49
-> Yogurt  |  $2.89
-> Eggs  |  $1.79
-> Bananas  |  $4.39
-> Apples  |  $6.29
+> Bread  |  $7.89
+> Yogurt  |  $5.69
+> Roast chicken  |  $31.59
 
 **About how much does this cart come to? Round each price to the nearest dollar and add them in your head.**
 - The learner types a rough answer from their head, with no calculator: $[ ].
-- Right (within 20%): $27.85
-- If typed $15.36: That is what you get when the Dog food line is left out. Count every line.
-- Shown after: how far off it was, for example "You said $30.64. The exact answer is $27.85, so you were 10% over."
+- Right (within 20%): $45.17
+- If typed $13.58: That is what you get when the Roast chicken line is left out. Count every line.
+- Shown after: how far off it was, for example "You said $49.69. The exact answer is $45.17, so you were 10% over."
 
-After the answer: the deciding words are marked (none named). Reason: Rounded to the nearest dollar, the prices make about $27. The exact total is $27.85. A rough answer only has to be near it, within about a fifth.
+After the answer: the deciding words are marked (none named). Reason: Rounded to the nearest dollar, the prices make about $46. The exact total is $45.17. A rough answer only has to be near it, within about a fifth.
 The working:
-- Round each price to the nearest dollar and add. $12 + $3 + $2 + $4 + $6 = $27.
-- Check it on a calculator. The exact total is $27.85.
+- Round each price to the nearest dollar and add. $8 + $6 + $32 = $46.
+- Check it on a calculator. The exact total is $45.17.
 
 #### Check question 13 (made with fresh numbers; this is seed 13)
 

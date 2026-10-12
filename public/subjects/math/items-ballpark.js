@@ -4,7 +4,7 @@ FC.items('math', [{
   blocks: [{ kind: 'document', form: 'receipt', title: 'Corner Market', rows: [
     { id: 'l1', cells: ['Bread', '$3.49'] }, { id: 'l2', cells: ['Milk', '$4.29'] }, { id: 'l3', cells: ['Eggs', '$3.79'] }, { id: 'l4', cells: ['Roast chicken', '$11.86'] }] }],
   asks: [
-    { id: 'est', kind: 'number', prompt: 'About how much does this cart come to?', frame: '$__', places: 2, estimate: true, answer: 23.43, tol: { rel: 0.2 } },
+    { id: 'est', kind: 'number', prompt: 'About how much does this cart come to?', frame: '$__', places: 0, estimate: true, answer: 23, tol: { rel: 0.2 } },
     { id: 'exact', kind: 'number', prompt: 'What is the exact total?', frame: '$__', places: 2, answer: 23.43, tol: { round: 0.01 } }],
   steps: [
     { id: 'round', does: 'Round each price to the nearest dollar.', working: '$3.49 is $3. $4.29 is $4. $3.79 is $4. $11.86 is $12.' },

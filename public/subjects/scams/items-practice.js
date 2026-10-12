@@ -43,9 +43,9 @@ FC.items("scams", [
     id: "p-ship-real", genuine: "genuine", channel: "sms", request: "none",
     context: "You ordered a jacket from Thistlewick Outfitters on Monday.",
     message: scamSms("Thistlewick Outfitters", "Text message · Tuesday 10:05 AM", [L("p3a", "Your jacket is on its way and should arrive Thursday."), L("p3b", "You can follow it any time in your Thistlewick account.")]),
-    right: "leave", own: "My Thistlewick account", theirs: "The details in the email",
+    right: "leave", own: "My Thistlewick account", theirs: "The details in the text",
     say: ["There was nothing to do, so nothing happened.",
-      "The account shows the same news the email did. A minute spent.",
+      "The account shows the same news the text did. A minute spent.",
       "You did nothing, and the jacket arrived on Thursday."],
     deciding: ["p3b"], reason: "It wants nothing from you. It tells you what you already expect, so there is nothing to act on and nothing to check." }),
   scamItem({
@@ -97,9 +97,9 @@ FC.items("scams", [
     deciding: ["g2b"], reason: "New bank details sent in a message are the oldest trick for this. A real change is confirmed on a number you already had." }),
   scamItem({
     id: "g-popup", genuine: "scam", channel: "popup", request: "device",
-    context: "You are reading a recipe on a website.",
+    context: "You are reading a recipe on a website on your computer. Your computer has its own security settings.",
     message: scamPopup("Security alert", "On a web page", [L("g3a", "Your computer is infected!"), L("g3b", "Do not turn it off. Call Pinecrest Support now.")], "Call 1-555-0142"),
-    right: "leave", own: "My own antivirus program, or a shop I know", theirs: "The number on the pop-up",
+    right: "leave", own: "My computer’s own security settings, or a repair shop I know", theirs: "The number on the pop-up",
     say: ["A stranger asked to see your screen, then for payment in gift cards. Your computer was fine before they touched it.",
       "There is nothing to check. A web page cannot know what is on your computer, so leaving it is the whole answer.",
       "You closed the page. Nothing was wrong with your computer."],
@@ -142,12 +142,21 @@ FC.items("scams", [
     deciding: ["g7b"], reason: "You did not start this and it touches your money, so you go in through a number you already had. That the number in the text is real this time does not make it the way to check." }),
   scamItem({
     id: "g-call", genuine: "scam", channel: "call", request: "login",
-    context: "Your phone rings. The screen shows a number you do not know.",
+    context: "Calderwood Bank is your bank, and its number is on the back of your card. Your phone rings. The screen shows a number you do not know.",
     message: scamCall("Fraud team", "Incoming call · 5:20 PM", [L("g8a", "This is the fraud team at Calderwood Bank."), L("g8b", "We blocked a payment on your card. To unblock it, read me the six-digit code we just texted you.")]),
     right: "check", own: "The number on the back of my card", theirs: "The number that called me",
     say: ["The code was your sign-in code. They were in your account within seconds.",
       "You hung up and called the number on your card. The bank had not called, and nothing was blocked.",
       "You are safe, though a real block would still be waiting."],
-    deciding: ["g8b"], reason: "No bank needs you to read out a code it just texted you. You did not start this call, and you hold a number of your own to settle it." })
+    deciding: ["g8b"], reason: "No bank needs you to read out a code it just texted you. You did not start this call, and you hold a number of your own to settle it." }),
+  scamItem({
+    id: "g-friend", genuine: "scam", channel: "chat", request: "money", noWay: true,
+    context: "You have played an online game with Dev for three months and chat every day. You have never met him or spoken to him on a call.",
+    message: scamChat("Dev in the game chat", "Chat history and today’s message", [L("g9a", "Still on for tonight?"), L("g9b", "Yes, as always!", { me: true }), L("g9c", "My account got frozen and I need $300 to get it back. I will pay you back on Friday."), L("g9d", "Can you buy a gift card and send me the code? It is urgent.")]),
+    right: "leave",
+    say: ["You sent $300 in gift cards. Dev asked for more the next day.",
+      "You have no way to reach Dev except this chat, so checking means asking Dev, who vouches for himself.",
+      "You sent nothing. If it nags at you, tell a friend or relative you know in person."],
+    deciding: ["g9d"], reason: "Months of friendly chat, then an emergency and a request for money, from someone you have never met or heard live. You have no way of your own to check him, so the answer is no, and you tell someone you know in person." })
 ]);
 })();

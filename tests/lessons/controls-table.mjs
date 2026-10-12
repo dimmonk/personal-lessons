@@ -111,6 +111,7 @@ export const CONTROLS = [
   { rule: 'V70', name: 'a form field with no tolerance', data: (d, h) => h.removeIn(d, ledgerItem('l-sheet', 'asks', 0, 'fields', 0, 'tol')) },
   { rule: 'V70', name: 'a ref block that names a ref the subject does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 0, 'show', 7, 'ref'), 'nope') },
   { rule: 'V70', name: 'an own step that names a private form the subject does not have', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'flow', 3, 'own'), 'nothing') },
+  { rule: 'V70', name: 'a step that shows a model and says nowhere where the same lines are on the learner\'s own papers', data: (d, h) => h.removeIn(d, ledgerLesson('l1', 'flow', 3, 'where')) },
   { rule: 'V70', name: 'a private form that leaves out a field the app reads', data: (d, h) => h.removeIn(d, ledgerMeta('own', 'sheet', 'fields', 2)) },
   { rule: 'V70', name: 'a lesson that waits for a moment the subject does not list', data: (d, h) => h.setIn(d, ledgerLesson('l1', 'trigger'), 'moon') },
   { rule: 'V70', name: 'a dated value looked up on a day that is not one', data: (d, h) => h.setIn(d, ledgerMeta('refs', 0, 'asOf'), '2025-02-30') },
@@ -136,6 +137,9 @@ export const CONTROLS = [
   { rule: 'V36', name: 'a tapped line\'s note opens with praise', data: (d, h) => h.setIn(d, feedItem('n-news', 'blocks', 0, 'lines', 1, 'note'), 'Correct. That is when the line opened.') },
   // labels pinned on posts, the panel, each need found or missing, the sides (step 6)
   { rule: 'V70', name: 'a label on a news story, which only a post carries', data: (d, h) => h.setIn(d, labelsLesson('l1', 'flow', 0, 'show', 0, 'form'), 'news') },
+  { rule: 'V74', name: 'a choice that says either and has one right option', data: (d, h) => h.setIn(d, item('c-1', 'asks', 1, 'either'), true) },
+  { rule: 'V74', name: 'a tap that takes any line meeting a need, when a need is met by no line', data: (d, h) => h.setIn(d, labelsItem('g-1', 'asks', 1, 'meets'), true) },
+  { rule: 'V74', name: 'a tap that takes any line meeting a need, when both needs are in one line', data: (d, h) => h.setIn(d, labelsItem('w-1', 'has', 'dry-ground'), 'w-1-a') },
   { rule: 'V70', name: 'a label thrown from a side that is neither left nor right', data: (d, h) => h.setIn(d, labelsItem('g-1', 'blocks', 0, 'label', 'side'), 'centre') },
   { rule: 'V70', name: 'a panel that names a rule the subject does not have', data: (d, h) => h.setIn(d, labelsItem('g-1', 'blocks', 1, 'rules', 0), 'sunny') },
   { rule: 'V70', name: 'a panel that names one rule twice', data: (d, h) => h.setIn(d, labelsItem('g-1', 'blocks', 1, 'rules'), ['dry', 'dry']) },

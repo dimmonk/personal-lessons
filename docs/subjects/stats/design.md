@@ -300,3 +300,10 @@ not as content.
 3. **The procedure half is never practised.** Turning "cuts risk by half" or "99% accurate" into so many in 1,000 is done
    only in the feedback text; the learner never computes a plain size, so the part of a claim that persuades most (C5)
    goes untrained.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l1.md`, verdict fails; fixed in rev 2
+Done: size and "most people" are drawn by a share below or above half, in the rule and in each question; the savings post makes one claim (it no longer says
+"everyone I know"); the diner says "most customers ... love it" with no "better"; the crosswalk headline no longer implies a cause ("down from 31 last year");
+the tap says the sentence is in the text, not the headline; the delivery post has no chart; the check counts the verdict, the sentence and the kind each on 4 of 5,
+so one wrong label no longer sinks an item whose judgment is right. Gate 4 asks for the kind and the line and the verdict on 4 of 5; the record wins, and this
+keeps all three asked and scored. Not done: the redraw-from-zero chart on the walking-clubs question stays (a review noted it is part F material; it is one question).

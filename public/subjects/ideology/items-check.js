@@ -28,17 +28,17 @@ FC.items("ideology", [
       "“Owners could charge whatever tenants are willing to pay” leaves the prices to buyers and sellers. Both needs are there."]
   }),
   ideoItem({
-    id: "k-drugs", side: "right", fit: "unearned", rule: "socialist", word: "socialist", name: "socdem",
+    id: "k-leave", side: "right", fit: "unearned", rule: "socialist", word: "socialist", name: "socdem",
     post: { source: "Comment · @ivo_c · 4h", by: "On a right-leaning news page", text: "Another socialist scheme." },
     lines: [
-      L("n1", "The Full Cover Plan would pay for every prescription drug, with no charge at the pharmacy.", "That is what patients get, not who owns the drug companies."),
-      L("n2", "A 1% tax on incomes over $200,000 would pay for it.", "That says where the money comes from."),
-      L("n3", "Drug companies and pharmacies would stay privately owned."),
+      L("n1", "The Family First Plan would give every new parent 12 weeks of paid leave.", "That is what parents get, not who owns anything."),
+      L("n2", "A payroll tax of 0.4% would pay for it."),
+      L("n3", "The plan would start next January.", "That says when, not what the plan does."),
       FROM("n4", "Said by a state senator in a news release.")],
-    tap: "n3", has: { "soc-industry": "n3", "soc-owner": null }, deciding: ["n1", "n3"],
-    reason: ["“Socialist” needs a main industry named and the public or the workers owning it. The plan names the drug companies, but “Drug companies and pharmacies would stay privately owned”, so no one but private owners owns them.",
-      "A tax that pays for every prescription is a benefit paid for by taxes, with business left private: a social democrat idea."],
-    need: "To earn “socialist”, the words would have to say the public or the workers would own the drug companies."
+    tap: "n2", has: { "soc-industry": null, "soc-owner": null }, deciding: ["n1", "n2"],
+    reason: ["“Socialist” needs a main industry named and the public or the workers owning it. The plan names no industry and takes nothing over: “A payroll tax of 0.4% would pay for it” is a tax paying for a benefit.",
+      "Nothing changes hands, so the label is not earned. Words that only say a tax pays for a benefit are the social democrat idea."],
+    need: "To earn “socialist”, the words would have to name an industry and say the public or the workers would own it."
   }),
   ideoItem({
     id: "k-wage", side: "left", fit: "unearned", rule: "socialist", word: "socialist", name: "socdem",
@@ -58,10 +58,10 @@ FC.items("ideology", [
     id: "k-unleash", side: "right", fit: "thin", rule: "market", word: "free-market",
     post: { source: "Post · Prairie Business Alliance · 6h", by: "From a right-leaning business group", text: "A free-market plan for a stronger state." },
     lines: [
-      L("e1", "We will unleash this state’s economy and let its people prosper."),
-      L("e2", "Our plan is bold, and our plan is fair."),
+      L("e1", "We will unleash this state’s economy and let its people prosper.", "That is a hope. It names no business, no owner and no price."),
+      L("e2", "Our plan is bold, and our plan is fair.", "That is a boast about the plan, not what it does."),
       FROM("e3", "Said by the alliance’s director.")],
-    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: ["e1", "e2"],
+    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: [],
     reason: ["“Free-market” needs businesses in private hands and prices decided by buyers and sellers. “We will unleash this state’s economy and let its people prosper” names no business, no owner and no price.",
       "The words cannot show the label and cannot rule it out."],
     need: "To judge “free-market”, the words would have to say who owns the businesses, or who decides the prices."
@@ -70,10 +70,10 @@ FC.items("ideology", [
     id: "k-city", side: "left", fit: "thin", rule: "market", word: "capitalist",
     post: { source: "Comment · @lena_r · 7h", by: "On a left-leaning news page", text: "Capitalist spin, nothing more." },
     lines: [
-      L("z1", "We will make this a city where good ideas can grow and good jobs stay."),
-      L("z2", "The details will come this spring."),
+      L("z1", "We will make this a city where good ideas can grow and good jobs stay.", "That is a hope. It names no business, no owner and no price."),
+      L("z2", "The details will come this spring.", "That says when, not what the plan would do."),
       FROM("z3", "Said by the mayor’s economic adviser.")],
-    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: ["z1", "z2"],
+    tap: "none", has: { "fm-private": null, "fm-prices": null }, deciding: [],
     reason: ["“Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “We will make this a city where good ideas can grow and good jobs stay” names no business, no owner and no price.",
       "The words cannot show the label and cannot rule it out."],
     need: "To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices."

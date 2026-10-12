@@ -14,8 +14,8 @@
       "fp": "sha256:f2793899f98e07638907f45e5a61287ea9d99d57d3b6ab23c9fcc21311115b87"
     },
     "psychology": {
-      "rev": 8,
-      "fp": "sha256:861719518cec06741e4d21b667549cd96cdd4e427c175ad02cf81ff065f56474"
+      "rev": 9,
+      "fp": "sha256:30dceab0b7b7140785008f40a97fb032a1ff4d236deb3cf0b2e60f8a0c9cee01"
     },
     "scams": {
       "rev": 6,
@@ -30,46 +30,46 @@
       "fp": "sha256:9368b609cbb70169f6e44c357f3d2b7bc526e59edcaa1840f83c0e8c74afc134"
     },
     "wealth": {
-      "rev": 6,
-      "fp": "sha256:7e499c87d78f0139a238a2dea61b8550c1712f71502c6b6b9431d5a31d5e13bf"
+      "rev": 7,
+      "fp": "sha256:dad0f57690dbd4fa7b825e054b4c823f4b23376fdf20d9fb7013f327f8a549a0"
     }
   },
   "lessons": {
     "civics/l1": {
-      "rev": 1,
-      "fp": "sha256:580b2b867594d1ed2b21e3663fc368ca71eeff943af93d20a47e859c7af4946e"
+      "rev": 2,
+      "fp": "sha256:124ece02599487a107e3d3bfdd176bede2795cc9969d5b156e5782b4a31f9e5f"
     },
     "ideology/l2": {
-      "rev": 1,
-      "fp": "sha256:bb0cd7a0d8266c1eb568c31ebb0a1760bf26036ea4fb9f87d8b9eab010dd1b95"
+      "rev": 2,
+      "fp": "sha256:a7c8074f2fa8787e691546df7591ef4b602ae8668412cc108015682ebd36b1da"
     },
     "math/l1": {
-      "rev": 1,
-      "fp": "sha256:6a99a59719ea06509038046667cec53f94dcc8603e4863847f65a2bb8b2ede14"
+      "rev": 2,
+      "fp": "sha256:79b0d18f7243a84b31f8b8dde64e2405f7ebecf10f2734e08774ae30f6629ce6"
     },
     "psychology/l1": {
-      "rev": 1,
-      "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973"
+      "rev": 2,
+      "fp": "sha256:f3cbb59d966954f19159eb6cc15a4c070f91f5c0c3c15098c2cab3277525991f"
     },
     "scams/l0": {
       "rev": 1,
-      "fp": "sha256:1b70adbbee86c00174186acb8f74b7cce3084035f74cc373677da6a082cd23f0"
+      "fp": "sha256:d1d027d89832bea4c43e15e746ae1e90db36d6316e86ad2b1cd57e6de633443c"
     },
     "scams/l3": {
-      "rev": 1,
-      "fp": "sha256:89b8016ef43c3002eee51c4e7373bdf7f19a4ac06da797514f9c2cec46593bf4"
+      "rev": 2,
+      "fp": "sha256:ca851ba461d2ca96f79a121014125240ba3fad082c7dfbf4622fbe0d5d0c01ef"
     },
     "singing/l2": {
-      "rev": 1,
-      "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
+      "rev": 2,
+      "fp": "sha256:1ba448cd6a8cc89db983d2abbc598eefc8fc8b0daf75c87a8117ead2d939254d"
     },
     "stats/l1": {
-      "rev": 1,
-      "fp": "sha256:d2c1e900786b6426538a9ea577e3e6351576b15c40129922402dfe406c84b1c9"
+      "rev": 2,
+      "fp": "sha256:5d90ca215bf47f48594617cca1a5378a61f1c139b1ce1c5f2628013756584497"
     },
     "wealth/l2": {
-      "rev": 1,
-      "fp": "sha256:b6d0fe2b74f857b552ef2e4b6e9e26546e7ed3ddf72d5b8cc771943d001049d3"
+      "rev": 2,
+      "fp": "sha256:87a57340039a6e2e021ab245ce37c1a9f8b9ecff47dee8ec9182a377f6637fec"
     }
   }
 }

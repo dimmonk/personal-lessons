@@ -17,8 +17,8 @@ export const FAULTS = [
     edits: [replace('app/lessons/queue.js', "  Q.cur = { ...Q.cur, done: true, score, timedOut };\n  paintQueue();",
       "  Q.cur = { ...Q.cur, done: true, score, timedOut };\n  const stay = Q.at, run = Q.run; setTimeout(() => { if (Q.run === run && Q.at === stay) nextQuestion(); }, 2500);\n  paintQueue();")] },
   { check: 'X2', name: 'the reason shows as soon as one of two asks is answered',
-    edits: [replace('app/lessons/item-view.js', "<div class=\"asks\">${asks}</div>${state.feedback || ''}</div>`;",
-      "<div class=\"asks\">${asks}</div>${state.feedback || (open.length > Object.keys(state.a).length && Object.keys(state.a).length ? `<div class=\"feedback\" data-feedback>${esc(paras(item.reason).join(' '))}</div>` : '')}</div>`;")] },
+    edits: [replace('app/lessons/item-view.js', "${asks}</div>${state.feedback || ''}</div>`;",
+      "${asks}</div>${state.feedback || (open.length > Object.keys(state.a).length && Object.keys(state.a).length ? `<div class=\"feedback\" data-feedback>${esc(paras(item.reason).join(' '))}</div>` : '')}</div>`;")] },
   { check: 'X3', name: 'an answer button wider than a phone',
     edits: [replace('app.css', '.opt{display:flex;', '.opt{min-width:420px;display:flex;')] },
   { check: 'X5', name: 'a place saved under a key of its own',
@@ -38,6 +38,8 @@ export const FAULTS = [
     edits: [replace('app/lessons/number-view.js', "${locked || estimate ? '' : calcHtml(calc)}", "${locked ? '' : calcHtml(calc)}")] },
   { check: 'X13', name: 'a tolerance by distance that leaves out its own edge',
     edits: [replace('app/lessons/number.js', "('abs' in tol && distance <= tol.abs + NUMBER_EPS)", "('abs' in tol && distance < tol.abs)")] },
+  { check: 'X13', name: 'a calculator that works left to right and multiplies after adding',
+    edits: [replace('app/lessons/number.js', "if(op && calcIsMul(op)){ term = calcOp(term, op, tokens[i + 1]);", "if(false && op && calcIsMul(op)){ term = calcOp(term, op, tokens[i + 1]);")] },
   { check: 'X13', name: 'an estimate that is under the answer called over it',
     edits: [replace('app/lessons/number.js', "const dir = typed > exact ? 'over' : typed < exact ? 'under' : 'same';", "const dir = typed < exact ? 'over' : typed > exact ? 'under' : 'same';")] },
   { check: 'X20', name: 'a 100% bar part drawn a tenth too short',
@@ -74,10 +76,12 @@ export const FAULTS = [
   { check: 'X26', name: 'the percent used as dollars no longer recognised as a slip in Wealth',
     edits: [replace('subjects/wealth/gen-cost.js', "{ slip: 'percent-as-dollars', value: 'percentWhole',", "{ slip: 'percent-as-dollars', value: 'noFee',")] },
   { check: 'X26', name: 'the fund of a different kind not named as a slip in Wealth',
-    edits: [replace('subjects/wealth/items-cost.js', "{ id: 'bonds', text: 'Total Bond Index Fund', slip: 'wrong-kind', then:", "{ id: 'bonds', text: 'Total Bond Index Fund', then:"),
-      replace('subjects/wealth/gen-cost.js', "{ id: 'bonds', text: '{bondIndexName}', slip: 'wrong-kind', then:", "{ id: 'bonds', text: '{bondIndexName}', then:")] },
+    edits: [replace('subjects/wealth/items-cost.js', "{ id: 'side', text: 'Northfield 500 Fund', slip: 'wrong-kind', then:", "{ id: 'side', text: 'Northfield 500 Fund', then:"),
+      replace('subjects/wealth/gen-cost.js', "{ id: 'side', text: '{nbLowName}', slip: 'wrong-kind', then:", "{ id: 'side', text: '{nbLowName}', then:")] },
   { check: 'X26', name: 'no sample to find the lines on the learner\'s own papers',
-    edits: [replace('subjects/wealth/l2.lesson.js', "{ own: 'sheet', model: 'w-statement' }", "{ own: 'sheet' }")] },
+    edits: [replace('subjects/wealth/l2.lesson.js', "{ own: 'sheet', model: 'w-statement', where: [", "{ own: 'sheet', where: [")] },
+  { check: 'X26', name: 'the words on where the lines are on real papers left off the step on your own accounts',
+    edits: [replace('app/lessons/own-run.js', "${paras(OWN.step.where).map(t => `<p>${esc(t)}</p>`).join('')}", "")] },
   // articles, the tap and the charts (26.7: X15, X20; 26.10: X30, X31)
   { check: 'X15', name: 'the right line of a tap marked before the answer',
     edits: [replace('app/lessons/item-view.js', "const picked = !!tap && tap.picked.includes(seg.id), fine = seg.fine ? ' fine' : '';",
@@ -111,14 +115,28 @@ export const FAULTS = [
   { check: 'X30', name: 'the worked story without its marked lines',
     edits: [replace('subjects/stats/items-claims.js', 'deciding: ["h", "s1", "s4", "s5"],', 'deciding: [],')] },
   { check: 'X30', name: 'the check of part A asks for 5 of 5',
-    edits: [replace('subjects/stats/l1.lesson.js', 'pass: [{ right: { min: 4 } }, { slip: "doubted", max: 1 }]', 'pass: [{ right: { min: 5 } }, { slip: "doubted", max: 1 }]')] },
+    edits: [replace('subjects/stats/l1.lesson.js', '{ ask: "kind", right: { min: 4 }, of: "what it claims" }', '{ ask: "kind", right: { min: 5 }, of: "what it claims" }')] },
   // a label pinned on a post, the panel, the needs found or missing, the sides (26.7; 26.10: X32, X33)
   { check: 'X32', name: 'the panel drawn in every group, not only where the help is on',
     edits: [replace('app/lessons/item-view.js', "    panel: !!(support && support.panel) };", "    panel: true };")] },
   { check: 'X32', name: 'every need shown as missing, whatever the words show',
-    edits: [replace('app/lessons/panel.js', "found: has[n.id] ? lines.find(s => s.id === has[n.id]) || null : null", "found: null")] },
+    edits: [replace('app/lessons/panel-view.js', '<ul class="hasneeds">${g.needs.map(n => n.found.length', '<ul class="hasneeds">${g.needs.map(n => false')] },
   { check: 'X32', name: 'a need found with no line quoted',
-    edits: [replace('app/lessons/panel-view.js', '<span class="hasline">“${esc(tapClip(n.found.text))}”</span>', '<span class="hasline"></span>')] },
+    edits: [replace('app/lessons/panel-view.js', '<span class="hasline">“${esc(tapClip(f.text))}”</span>', '<span class="hasline"></span>')] },
+  { check: 'X32', name: 'only the first line that meets a need taken as the right one',
+    edits: [replace('app/lessons/tap.js', "ask.meets ? tapMeeting(item) : asList(ask.right)", "asList(ask.right)")] },
+  { check: 'X36', name: 'the notice of an account that may describe danger drawn after the marks',
+    edits: [replace('app/lessons/item-view.js', '<div class="feedback" data-feedback>${notice}<div class="marks">${marks}</div>', '<div class="feedback" data-feedback><div class="marks">${marks}</div>${notice}')] },
+  { check: 'X36', name: 'the checklist of what they did listed again after every right answer',
+    edits: [replace('app/lessons/panel-view.js', '.filter(g => !g.onMiss || missed || g.needs.some(n => !n.found.length))', '')] },
+  { check: 'X32', name: 'every missed question of a group that limits its returns coming back',
+    edits: [replace('app/lessons/queue.js', "(Q.returns === null || Q.list.filter(i => i.redo).length < Q.returns)", "true")] },
+  { check: 'X14', name: 'a plural or a verb ending taken for another word',
+    edits: [replace('app/lessons/recall.js', 'if(typed === wanted || recallInflects(typed, wanted)) continue;', 'if(typed === wanted) continue;')] },
+  { check: 'X14', name: 'a part with another wording that takes only its first wording',
+    edits: [replace('app/lessons/recall.js', '(Array.isArray(part) ? part : [part]).flatMap(recallVariants)', '[Array.isArray(part) ? part[0] : part].flatMap(recallVariants)')] },
+  { check: 'X14', name: 'an answer taken on the learner\'s word counted right the first time in the summary of a group',
+    edits: [replace('app/lessons/player.js', 'ok = firsts.filter(e => e.ok).length - claimed;', 'ok = firsts.filter(e => e.ok).length;')] },
   { check: 'X32', name: 'the needs of the panel listed in reverse',
     edits: [replace('app/lessons/panel-view.js', '<ol class="panel-needs">${r.needs.map(', '<ol class="panel-needs">${[...r.needs].reverse().map(')] },
   { check: 'X32', name: 'the sides side by side counting every question as right',
@@ -137,6 +155,14 @@ export const FAULTS = [
     edits: [replace('subjects/ideology/l2.lesson.js', 'pass: [{ right: { min: 5 } },', 'pass: [{ right: { min: 6 } },')] },
   { check: 'X33', name: 'the side of a label named in other words in Ideology',
     edits: [replace('subjects/ideology/subject.js', '{ id: "left", text: "labels thrown from the left" }', '{ id: "left", text: "labels thrown from the west" }')] },
+  { check: 'X17', name: 'a timed group that starts with no notice of the clock',
+    edits: [replace('app/lessons/player.js', "if(set.seconds && LESSON.timedShownAt !== LESSON.at)", "if(false && set.seconds && LESSON.timedShownAt !== LESSON.at)")] },
+  { check: 'X17', name: 'the choices of a question on a clock left below the message',
+    edits: [replace('app/lessons/item-view.js', "<div class=\"asks${state.timed ? ' pinned' : ''}\">", "<div class=\"asks\">")] },
+  { check: 'X41', name: 'checking a real message through a way you already had scored wrong beside doing what it says',
+    edits: [replace('app/lessons/rules.js', "chosen.length === 1 && rightIds.includes(chosen[0]);", "chosen.length === 1 && rightIds[0] === chosen[0];")] },
+  { check: 'X41', name: 'the words that say a clock running out is a miss left off the check',
+    edits: [replace('app/lessons/view.js', "checkTimed: s => `You have ${s} seconds for each. When time runs out, the question stops and counts as a miss. Nothing moves on until you tap Next.`", "checkTimed: s => `You have ${s} seconds for each. The clock only shows the time: nothing moves on until you tap Next.`")] },
   // a message as it arrives, the checklist with a heading of its own, a line to write against a model (26.7; 26.10: X34, X35, X36)
   { check: 'X34', name: 'the lines of a thread all drawn at the left, yours too',
     edits: [replace('app/lessons/message-view.js', "return `<div class=\"msg-line${seg.me ? ' me' : ''}\">${who}${segmentHtml(seg, ctx)}</div>`;", "return `<div class=\"msg-line${seg.me && block.form !== 'thread' ? ' me' : ''}\">${who}${segmentHtml(seg, ctx)}</div>`;")] },
@@ -175,7 +201,7 @@ export const FAULTS = [
   { check: 'X36', name: 'the worked account without its marked line in Psychology',
     edits: [replace('subjects/psychology/items-practice.js', 'act: ["w2"],\n    say:', 'act: ["w2"], deciding: [],\n    say:')] },
   { check: 'X36', name: 'the account of control without its safety wording in Psychology',
-    edits: [replace('subjects/psychology/items-practice.js', 'call 1-800-799-7233, or text START to 88788.', 'call someone you trust.')] },
+    edits: [replace('subjects/psychology/items-practice.js', 'Call 1-800-799-7233, or text START to 88788.', 'Call someone you trust.')] },
   { check: 'X36', name: 'the account of money asking for one line, not the two acts in Psychology',
     edits: [replace('subjects/psychology/items-practice.js', 'act: ["c2", "c3"],', 'act: ["c2"],')] },
   { check: 'X36', name: 'the check of part A asks for 6 of 6 in Psychology',
@@ -281,7 +307,7 @@ export const FAULTS = [
   { check: 'X41', name: 'the second group of Scams without its clock',
     edits: [replace('subjects/scams/l3.lesson.js', 'order: "shuffle", seconds: 20 } }', 'order: "shuffle" } }')] },
   { check: 'X41', name: 'the second group of Scams one message short',
-    edits: [replace('subjects/scams/l3.lesson.js', '"g-credit", "g-call"], order', '"g-credit"], order')] },
+    edits: [replace('subjects/scams/l3.lesson.js', '"g-credit", "g-call", "g-friend"], order', '"g-credit", "g-call"], order')] },
   { check: 'X41', name: 'the review of a subject with a clock not saying so',
     edits: [replace('app/lessons/review.js', "${!retest && part.data.meta.timed ?", "${false && part.data.meta.timed ?")] },
   { check: 'X42', name: 'the scam done on purpose in the baseline no longer named as the failure in Scams',
@@ -382,9 +408,9 @@ export const FAULTS = [
   { check: 'X45', name: 'the check of Civics\' pilot that needs 15 of 17',
     edits: [replace('subjects/civics/l1.lesson.js', 'pass: [{ right: { min: 16 } }]', 'pass: [{ right: { min: 15 } }]')] },
   { check: 'X45', name: 'a question of the president group left out of Civics\' pilot',
-    edits: [replace('subjects/civics/l1.lesson.js', '"q45", "q40", "q46", "q47"], order: "listed" }', '"q45", "q40", "q46"], order: "listed" }')] },
+    edits: [replace('subjects/civics/l1.lesson.js', '"q44", "q46", "q45"], order: "listed" }', '"q44", "q46"], order: "listed" }')] },
   { check: 'X45', name: 'the map of the three branches that says the courts write laws',
-    edits: [replace('subjects/civics/l1.lesson.js', '"Explain the laws and settle disagreements about them"', '"Write the laws"')] },
+    edits: [replace('subjects/civics/l1.lesson.js', '"Explain laws and resolve disputes about the law"', '"Write the laws"')] },
   { check: 'X45', name: 'the first question of Civics\' pilot not worded as the list words it',
     edits: [replace('subjects/civics/items-government.js', '"Name the three branches of government."', '"Name three branches of government."')] },
   { check: 'X45', name: 'the check of Civics\' pilot asked in the order of the groups',
@@ -442,6 +468,14 @@ function transformFor(fault) {
   return { transform, used };
 }
 
+// A check that runs over this long is stopped and counts as failed: a seeded fault can make a check's loop spin for ever, and that must be red, not a hang.
+export const CHECK_LIMIT_MS = 15 * 60 * 1000;
+export const withLimit = (promise, id) => {
+  let timer;
+  const stop = new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`${id} ran over ${CHECK_LIMIT_MS / 60000} minutes and was stopped`)), CHECK_LIMIT_MS); timer.unref(); });
+  return Promise.race([promise, stop]).finally(() => clearTimeout(timer));
+};
+
 // Runs every check against the app with one fault in it. Resolves to { red: [check ids that failed], errors }.
 export async function runWithFault(browser, fault) {
   const { transform, used } = transformFor(fault);
@@ -451,7 +485,7 @@ export async function runWithFault(browser, fault) {
   const ids = fault.only || Object.keys(CHECKS).filter(id => !(id in SOUND_CHECKS));
   const lane = async list => {
     for (const id of list) {
-      try { const c = await CHECKS[id](env); if (c.failures.length) { red.push(id); errors.push(c.failures[0]); } }
+      try { const c = await withLimit(CHECKS[id](env), id); if (c.failures.length) { red.push(id); errors.push(c.failures[0]); } }
       catch (error) { red.push(id); errors.push(`${id} crashed: ${error.message.split('\n')[0]}`); }
     }
   };

@@ -5,7 +5,7 @@
 // Nothing advances by itself: the learner taps Next.
 //
 // Q: { subj, data, list: [instance], at, cur: { a, many, done, score, left, taps, arrived, timedOut, words }, log, context, feedback: 'after-each' | 'at-end',
-//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt, spoken }
+//      support, redo, returns, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt, spoken }
 // A spoken run (`spoken`, the mock interview) holds the words of every question that is read aloud behind "Show the words" (speech-run.js).
 // A timed group or check (`seconds`, 26.2) gives each question that many seconds, counted on the frame clock (timer-run.js); at zero the question
 // stops with a timeout and waits for Next. A call or chat that pushes back is not timed. In a busy group (`over: 'busy'`) the banner of a question
@@ -29,7 +29,7 @@ function startQueue(opts){
   speechReset();
   // a question about the learner's own answers is asked with what they entered (recall.js); one whose answer is not entered is not asked
   const answers = notesOf(opts.subj.id).answers, list = opts.list.map(inst => recallWithOwn(inst, answers)).filter(inst => !inst.ownMissing);
-  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, seconds: null, over: null, spoken: false, ...opts, list, at: 0, log: [], firstTotal: list.length, busyAt: 0 };
+  Q = { support: null, redo: false, returns: null, feedback: 'after-each', keepMic: false, seconds: null, over: null, spoken: false, ...opts, list, at: 0, log: [], firstTotal: list.length, busyAt: 0 };
   Q.cur = freshCur(questionSeconds(Q.list[0]));
   paintQueue();
 }
@@ -52,12 +52,14 @@ function paintQueue(){
   const inst = queueItem(), cur = Q.cur, sung = isSung(inst), busy = Q.over === 'busy', waiting = busy && !cur.arrived;
   const marks = cur.done && Q.feedback === 'after-each';
   const body = waiting ? '' : itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, done: cur.done, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done) : null,
-    typed: cur.typed, looked: cur.looked, calc: cur.calc, speech: speechView(inst, cur),
+    typed: cur.typed, looked: cur.looked, calc: cur.calc, speech: speechView(inst, cur), timed: cur.left !== null && !cur.done,
     feedback: marks ? feedbackHtml(Q.data, inst, Q.support, cur.a, cur.score, { claim: Q.context !== 'baseline' }) : '' });
   const clock = cur.left === null || waiting ? '' : cur.done ? (cur.timedOut ? `<p class="timerup" data-timer-up>${esc(SAY.timerUp)}</p>` : '') : timerHtml(cur.left, Q.seconds);
   const task = busy ? busyHtml(Q.busyAt, cur.taps, cur.arrived) : '';
   const last = Q.at === Q.list.length - 1;
-  const actions = `<div class="actbar"><button class="btn neutral" id="qNext" ${cur.done ? '' : 'disabled'}>${last ? SAY.finish : SAY.next}${icon('arrow')}</button>
+  // while a clock runs the choices take the foot of the screen, so the bar with its shut Next button gives way
+  const clocked = !waiting && cur.left !== null && !cur.done;
+  const actions = `<div class="actbar" ${clocked ? 'hidden' : ''}><button class="btn neutral" id="qNext" ${cur.done ? '' : 'disabled'}>${last ? SAY.finish : SAY.next}${icon('arrow')}</button>
     ${cur.done ? '' : `<p class="hint">${esc(sung ? SAY.singToGoOn : waiting ? SAY.busyWait : SAY.answerToGoOn)}</p>`}</div>`;
   Q.shell(`<p class="m qlabel">${esc(questionLabel(inst))}</p>${clock}${body}${task}`, actions);
   on('[data-opt]', el => pickOption(el.closest('[data-ask]').dataset.ask, el.dataset.opt));
@@ -123,7 +125,8 @@ function settle(inst, score, timedOut){
   if(!unscored) recordTry(Q.subj.id, inst.key, { run: Q.run, lesson: owner.lesson, rev: owner.rev, context: Q.context, sup: supportWeight(Q.support) > 0,
     seed: inst.seed, a: Q.cur.a, r: score.r, ok: score.ok, ...(timed ? { ms: Math.round((Q.seconds - Q.cur.left) * 1000) } : {}) });
   Q.log = [...Q.log, { inst, a: Q.cur.a, r: score.r, ok: score.ok, first: !inst.redo, unscored }];
-  if(Q.redo && !score.ok && !unscored){
+  // a missed question comes back; a group may say `returns: n`, the most that come back in one run, so a learner who misses most is never held in it
+  if(Q.redo && !score.ok && !unscored && (Q.returns === null || Q.list.filter(i => i.redo).length < Q.returns)){
     const at = Math.min(Q.at + 4, Q.list.length);
     Q.list = [...Q.list.slice(0, at), redoOf(inst), ...Q.list.slice(at)];
   }

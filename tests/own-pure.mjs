@@ -142,35 +142,53 @@ const ask = item => item.asks.find(a => a.id === 'line');
 {
   const seeds = Array.from({ length: 20000 }, (_, k) => k + 1);
   const gen = id => wealth.gens[id], parsed = text => parseTyped(text);
+  const HELD = { 'g-cost-change': 2, 'g-cost-leave': 2, 'g-cost-active': 2, 'g-cost-three': 3, 'g-cost-target': 1 };
+  const feeLabel = { 'g-cost-change': 'each quarter', 'g-cost-leave': 'a year', 'g-cost-active': 'of your account a year', 'g-cost-three': 'each quarter', 'g-cost-target': 'a year' };
   const walk = (id, wantChange) => seeds.forEach(seed => {
-    const item = itemFromGen(gen(id), seed), v = item.values, cost = item.asks.find(a => a.id === 'cost'), rates = item.asks.find(a => a.id === 'rates');
-    const account = { balance: 0, holdings: [{ value: parsed(v.bal1Text), expense: v.rate1 }, { value: parsed(v.bal2Text), expense: v.rate2 }], fees: v.fee };
+    const item = itemFromGen(gen(id), seed), v = item.values, cost = item.asks.find(a => a.id === 'cost'), rates = item.asks.find(a => a.id === 'rates'), n = HELD[id];
+    const heldRows = Array.from({ length: n }, (_, i) => ({ name: v[`sn${i + 1}`], value: parsed(v[`sb${i + 1}`]), rate: v[`sr${i + 1}`] }));
+    const account = { balance: 0, holdings: heldRows.map(h => ({ value: h.value, expense: h.rate })), fees: v.feeDollars };
     if (Math.abs(ownAccountCost(account).total - v.total) > 0.005) check(false, `${id} seed ${seed}: the generator's total ${v.total} is not the app's arithmetic ${ownAccountCost(account).total}`);
-    const wanted = numberAnswers(item, formFieldAsk(rates.fields[0]));
-    if (!numbersMatch(wanted, wanted, tolOf(rates.fields[0]))) check(false, `${id} seed ${seed}: a rate is not within its own tolerance`);
+    if (rates.fields.length !== n) check(false, `${id} seed ${seed}: ${rates.fields.length} rates asked for ${n} funds held`);
+    rates.fields.forEach(f => { const wanted = numberAnswers(item, formFieldAsk(f)); if (!numbersMatch(wanted, wanted, tolOf(f))) check(false, `${id} seed ${seed}: a rate is not within its own tolerance`); });
     // a slip is never within the tolerance of the answer it replaces
     [...cost.traps].forEach(t => { if (numbersMatch(numberAnswers(item, { answer: t.value }), numberAnswers(item, cost), tolOf(cost))) check(false, `${id} seed ${seed}: the slip ${t.slip} lands within a tenth of the answer`); });
-    rates.fields.forEach(f => f.traps.forEach(t => { if (numbersMatch(numberAnswers(item, { answer: t.value }), numberAnswers(item, f), tolOf(f))) check(false, `${id} seed ${seed}: reading the other row lands on the answer`); }));
-    const held = [v.rate1, v.rate2], idx = parseFloat(v.indexText), act = parseFloat(v.activeText), dear = parseFloat(v.dearText), bond = parseFloat(v.bondIndexText);
-    const stock = held.find(r => r !== bond && Math.abs(r - bond) > 1e-9) ?? held[0];
-    if (wantChange ? !(Math.abs(stock - act) < 1e-9 && idx < act && act < dear) : !(Math.abs(stock - idx) < 1e-9 && idx < act && idx < dear)) check(false, `${id} seed ${seed}: the account is not one to ${wantChange ? 'change' : 'leave alone'}`);
-    if (!(v.total > 80 && v.total < 900)) check(false, `${id} seed ${seed}: a total of ${v.total} is not an account's`);
-    if (!(Math.abs(v.rate1 - v.rate2) >= 0.0199)) check(false, `${id} seed ${seed}: the two rates are too close to tell apart`);
+    if (n > 1) rates.fields.forEach(f => f.traps.forEach(t => { if (numbersMatch(numberAnswers(item, { answer: t.value }), numberAnswers(item, f), tolOf(f))) check(false, `${id} seed ${seed}: reading the other row lands on the answer`); }));
+    // the fee papers: every fund of the papers has its category and its net ratio; a fund held has a cheaper one in its category exactly when the account is to change
+    const rows = Array.from({ length: id === 'g-cost-target' ? 6 : 7 }, (_, i) => ({ name: v[`rn${i + 1}`], cat: v[`rc${i + 1}`], net: parseFloat(v[`rr${i + 1}`]), gross: parseFloat(v[`rg${i + 1}`]) }));
+    if (rows.some(r => !(r.gross >= r.net))) check(false, `${id} seed ${seed}: a gross ratio is below its net ratio`);
+    const cheaper = h => { const row = rows.find(r => r.name === h.name); return rows.filter(r => r.cat === row.cat && r.net < row.net - 1e-9); };
+    const toChange = heldRows.filter(h => cheaper(h).length);
+    if (wantChange ? toChange.length !== 1 : toChange.length !== 0) check(false, `${id} seed ${seed}: the account is not one to ${wantChange ? 'change, in one fund' : 'leave alone'}`);
+    if (!(v.total > 60 && v.total < 1600)) check(false, `${id} seed ${seed}: a total of ${v.total} is not an account's`);
+    const rs = heldRows.map(h => h.rate);
+    if (rs.some((r, i) => rs.some((q, j) => i !== j && Math.abs(r - q) < 0.0099))) check(false, `${id} seed ${seed}: two rates held are too close to tell apart`);
+    if (!new RegExp(feeLabel[id] + '$').test(v.feeCells2)) check(false, `${id} seed ${seed}: the account's fee is not written the way ${id} writes it (${v.feeCells2})`);
     if (wantChange) {
-      const sw = item.asks.find(a => a.id === 'switch');
-      if (sw.options.filter(o => o.ok).length !== 1 || !/Fund$/.test(sw.options.find(o => o.ok).text)) check(false, `${id} seed ${seed}: the fund to switch to is not one right option`);
+      const sw = item.asks.find(a => a.id === 'switch'), right = sw.options.filter(o => o.ok), held = toChange[0], best = cheaper(held).sort((a, b) => a.net - b.net)[0];
+      if (right.length !== 1 || right[0].text !== best.name) check(false, `${id} seed ${seed}: the fund to switch to is not the cheapest of its own category`);
+      if (sw.options.filter(o => o.slip === 'wrong-kind').length !== 1 || /Fund$/.test(sw.options.find(o => o.slip === 'wrong-kind').text) === false) check(false, `${id} seed ${seed}: the fund of another category that costs less is not the named slip`);
+      const wrongKind = rows.find(r => r.name === sw.options.find(o => o.slip === 'wrong-kind').text);
+      if (wrongKind.cat === rows.find(r => r.name === held.name).cat || wrongKind.net >= held.rate) check(false, `${id} seed ${seed}: the fund of another category is in the same category, or costs more than the fund held`);
     }
   });
-  walk('g-cost-change', true);
-  walk('g-cost-leave', false);
-  check(true, 'the numbers of 20,000 accounts of each kind are the app\'s arithmetic, with slips outside the tolerance and the right fund');
+  Object.keys(HELD).forEach(id => walk(id, id === 'g-cost-change' || id === 'g-cost-three'));
+  check(true, 'the numbers of 20,000 accounts of each kind are the app\'s arithmetic, with slips outside the tolerance and the right fund in the right category');
+  // no word in a name tells how much it costs: of the funds that cost least in their category over many accounts, a good share are not called "Index"
+  {
+    const nameOf = seed => { const v = itemFromGen(gen('g-cost-change'), seed).values; return /Index|500|100|Total/.test(v.lowName); };
+    const share = seeds.slice(0, 2000).filter(nameOf).length / 2000;
+    check(share > 0.1 && share < 0.9, `the name of the fund that costs least in its category is not a clue to which it is (${share})`);
+  }
+  // a fee comes three ways across the lesson: a flat amount a year, a charge each quarter, a percent of the whole account
+  same(Object.values(wealth.gens).map(g => g.asks.find(a => a.id === 'cost').traps.map(t => t.slip).includes('quarter-once')).sort(), [false, false, false, true, true], 'the quarterly fee, counted once, is a named slip of exactly the two accounts that charge one');
   // the worked account is the same account with its numbers fixed
   const w = wealth.items['w-statement'], answers = { rates: { r1: [0.95], r2: [0.07] }, cost: [469.62], call: 'change', switch: 'same' };
   same(scoreItem(wealth, w, null, answers).ok, true, 'the worked account scored with its own answers');
-  same(ownAccountCost({ holdings: [{ value: 38400, expense: 0.95 }, { value: 12600, expense: 0.07 }], fees: 96 }).total, 469.62, 'the worked account costs 469.62 a year by the app\'s arithmetic');
+  same(ownAccountCost({ holdings: [{ value: 38400, expense: 0.95 }, { value: 12600, expense: 0.07 }], fees: 96 }).total, 469.62, 'the worked account costs 469.62 a year by the app\'s arithmetic, with its fee of 24 a quarter counted four times');
   same(Math.round(38400 * (0.95 - 0.04)) / 100, 349.44, 'and switching saves 349.44');
-  same([scoreItem(wealth, w, null, { ...answers, cost: [364.8 + 8.82] }).r.cost, scoreItem(wealth, w, null, { ...answers, cost: [38400 * 0.95 + 12600 * 0.07 + 96] }).r.cost], ['no', 'no'], 'the worked account: without the fee, or with the percents as dollars, is wrong (the worked account names no slips)');
-  same(scoreItem(wealth, w, null, { ...answers, switch: 'bonds' }).r.switch, 'wrong-kind', 'the worked account: the cheapest fund of a different kind is the named slip');
+  same([scoreItem(wealth, w, null, { ...answers, cost: [364.8 + 8.82] }).r.cost, scoreItem(wealth, w, null, { ...answers, cost: [38400 * 0.95 + 12600 * 0.07 + 96] }).r.cost], ['no', 'no'], 'the worked account: without the fee, or with the percents as dollars, is wrong (the worked account names no slip)');
+  same(scoreItem(wealth, w, null, { ...answers, switch: 'side' }).r.switch, 'wrong-kind', 'the worked account: the cheaper fund of another category is the named slip');
 }
 
 /* ---------- the forms a subject may keep ---------- */

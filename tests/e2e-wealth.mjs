@@ -24,8 +24,7 @@ async function answerAll(env, page, opts = {}) {
   for (let now = await look(page); now.open.length; now = await look(page)) {
     const open = now.open[0];
     if (open.id === 'rates') {
-      await page.locator('[data-field="r1"]').fill(String(now.values.rate1));
-      await page.locator('[data-field="r2"]').fill(String(now.values.rate2));
+      for (let i = 1; await page.locator(`[data-field="r${i}"]`).count(); i++) await page.locator(`[data-field="r${i}"]`).fill(String(now.values[`sr${i}`]));
       await page.locator('[data-form-answer="rates"]').click();
     } else if (open.id === 'cost') await D.typeAnswer(page, 'cost', [D.cents(opts.cost ? opts.cost(now.values) : now.values.total)]);
     else if (open.id === 'call') await env.tap(page, 'call', now.facets.call);
@@ -44,8 +43,8 @@ async function theRuleAndTheWorkedAccount(env, c, page) {
   while (await page.locator('#workedMore').count()) await page.locator('#workedMore').click();
   text = await env.screenText(page);
   c.check(/\$38,400 × 0\.95% = \$364\.80/.test(text) && /Together \$469\.62 a year/.test(text), 'the working is not shown step by step in dollars');
-  c.check(/The answer.*0\.95%.*0\.07%/.test(text) && /\$469\.62 a year/.test(text) && /Change it/.test(text) && /Index 500 Fund/.test(text), 'the worked account does not end on its four answers');
-  c.check(await page.locator('.doc-tabs [data-doc-tab]').count() === 2 && await page.locator('.block-doc mark.cue').count() >= 3, 'the statement and the fee sheet are not two tabs with the deciding lines marked');
+  c.check(/The answer.*0\.95%.*0\.07%/.test(text) && /\$469\.62 a year/.test(text) && /Change it/.test(text) && /Growth 100 Fund/.test(text), 'the worked account does not end on its four answers');
+  c.check(await page.locator('.doc-tabs [data-doc-tab]').count() === 3 && await page.locator('.block-doc mark.cue').count() >= 3, 'the statement, the fund costs and the account fee are not three tabs with the deciding lines marked');
   await env.inspect(c, page, 'the worked account, finished');
   await env.goOn(page);
 }
@@ -53,7 +52,7 @@ async function theFirstGroup(env, c, page) {
   c.check((await env.screenText(page)).includes('Question 1 of 1'), 'the first group is not one account');
   const first = await look(page);
   c.check(first.key === 'g-cost-leave' && first.open.length === 1 && first.open[0].id === 'cost', 'the first account does not leave only the dollars and the decision to the learner');
-  c.check(/Find each fund’s yearly cost on the fee sheet\./.test(await env.screenText(page)) && /The working is shown up to the last steps/.test(await env.screenText(page)), 'the first group does not show the working up to the last steps');
+  c.check(/Find the net expense ratio of each fund you hold\./.test(await env.screenText(page)) && /The working is shown up to the last steps/.test(await env.screenText(page)), 'the first group does not show the working up to the last steps');
   await plainWords(c, page, env, 'an account with its first steps shown');
   await D.typeAnswer(page, 'cost', [D.cents(first.values.percentWhole)]);   // each percent used as if it were dollars
   c.check((await look(page)).open[0].id === 'call', 'the decision does not open after the dollars');
@@ -82,17 +81,17 @@ async function theSecondGroup(env, c, page) {
     await plainWords(c, page, env, 'an account to judge');
     if (now.facets.call === 'change' && !slipped && !now.redo) {
       slipped = true;
-      await answerAll(env, page, { switchTo: 'bonds' });
+      await answerAll(env, page, { switchTo: 'side' });
       const text = await env.screenText(page);
-      c.check(/holds bonds, not/.test(text), 'switching to the cheapest fund of a different kind does not say what is different');
+      c.check(/is in [A-Za-z ]+, not [A-Za-z ]+\./.test(text), 'switching to the cheapest fund of a different category does not say what is different');
       c.check(await page.locator('.mark.no').count() === 1, 'the wrong fund to switch to is not the one miss');
     } else await answerAll(env, page);
     await next(page);
   }
   const firsts = asked.filter(a => !a.redo), redone = asked.filter(a => a.redo);
-  c.check(firsts.length === 2 && new Set(firsts.map(a => a.facets.call)).size === 2, `the second group is not one account to change and one to leave alone (${firsts.map(a => a.facets.call)})`);
+  c.check(firsts.length === 3 && new Set(firsts.map(a => a.facets.call)).size === 2, `the second group is not one account to change and two to leave alone (${firsts.map(a => a.facets.call)})`);
   c.check(redone.length === 1 && redone[0].facets.call === 'change', 'the account missed does not come back as the same kind of account');
-  c.check(/1 of 2 right the first time/.test(await env.screenText(page)), 'the second group does not end on "1 of 2 right the first time"');
+  c.check(/2 of 3 right the first time/.test(await env.screenText(page)), 'the second group does not end on "2 of 3 right the first time"');
   await env.goOn(page);
 }
 async function theOwnAccounts(env, c, page) {
@@ -106,6 +105,7 @@ async function theOwnAccounts(env, c, page) {
   c.check(/Work 401\(k\) \(401\(k\) from a job\)/.test(costs) && /\$364\.80/.test(costs) && /\$8\.82/.test(costs) && /\$469\.62 a year/.test(costs), `the costs of the typed account are not the dollars of the working (${costs.slice(0, 400)})`);
   c.check(await page.locator('.ownwarn').count() === 0 && /0\.92% of what is in them/.test(costs), 'the account in range is warned about, or its share of the balance is not shown');
   c.check(await page.locator('.doc-tabs').count() === 1 && await page.locator('.block-doc mark.cue').count() >= 3, 'the sample lines to find on your own papers are not shown marked');
+  c.check(/investments page online/.test(costs) && /line called expense ratio/.test(costs), 'the step on your own accounts does not say where the same lines are on a plan\u2019s papers and a broker\u2019s');
   await env.inspect(c, page, 'what your account costs');
   const future = await O.dayIn(page, 7);
   await O.typeAction(page, { what: 'Switch Summit Growth Fund to Index 500 Fund', where: 'On my plan website', when: future });
@@ -120,7 +120,7 @@ async function theOwnAccounts(env, c, page) {
 }
 async function theCheck(env, c, page) {
   let text = await env.screenText(page);
-  c.check(/Three new questions/.test(text) && /At least 3 right \(what the account costs a year, to within a tenth\)/.test(text) && /At least 3 right \(change it or leave it\)/.test(text)
+  c.check(/Three new questions/.test(text) && /At least 3 right \(what the account costs a year, to within 10%\)/.test(text) && /At least 3 right \(change it or leave it\)/.test(text)
     && /None wrong among accounts to leave alone/.test(text) && /None wrong \(the fund to switch to\)/.test(text), `the check does not name itself and its rules (${text.slice(0, 300)})`);
   await env.inspect(c, page, 'the first screen of the check');
   await env.goOn(page);
@@ -133,7 +133,7 @@ async function theCheck(env, c, page) {
     c.check(await page.locator('#qNext').isEnabled(), 'the check leaves Next shut after an answer');
     await next(page);
   }
-  c.check(kinds.filter(k => k === 'leave').length === 1 && kinds.filter(k => k === 'change').length === 2, `the check is not two accounts to change and one to leave alone (${kinds})`);
+  c.check(kinds.filter(k => k === 'leave').length === 2 && kinds.filter(k => k === 'change').length === 1, `the check is not one account to change and two to leave alone (${kinds})`);
   text = await env.screenText(page);
   const rules = await page.locator('table.results tr td:last-child').allTextContents();
   c.check(/3 of 3: passed/.test(text) && rules.length === 4 && rules.every(v => v === 'met'), `the check was not passed with every rule met (${text.slice(0, 160)})`);
@@ -147,13 +147,13 @@ async function theRecord(env, c, page) {
   await env.inspect(c, page, 'the Wealth subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:wealth:items'] || '{}'), seen = JSON.parse(stored['pl:wealth:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 3 && inCheck.every(t => t.lesson === 'l2' && t.rev === 1 && t.sup === false && t.ok), 'the check was not stored as three right tries of lesson 2 without help');
+  c.check(inCheck.length === 3 && inCheck.every(t => t.lesson === 'l2' && t.rev === 2 && t.sup === false && t.ok), 'the check was not stored as three right tries of lesson 2 without help');
   c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
   c.check(tries.some(t => t.r.cost === 'percent-as-dollars') && tries.some(t => t.r.switch === 'wrong-kind') && tries.every(t => typeof t.seed === 'number'), 'the two slips and the seed of each made account are not in the record');
   c.check(tries.every(t => Object.values(t.a.rates || { r1: [0] }).every(v => Array.isArray(v) && typeof v[0] === 'number') && (t.a.cost === undefined || (Array.isArray(t.a.cost) && typeof t.a.cost[0] === 'number'))
     && (t.a.call === undefined || typeof t.a.call === 'string')), 'an answer is not stored as the numbers typed and the option chosen');
   c.check(!/Work 401|Summit/.test(JSON.stringify(items)), 'the record of tries holds the learner\'s own accounts');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l2: { rev: 1, at: 6 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(JSON.stringify(seen) === JSON.stringify({ l2: { rev: 2, at: 6 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
   c.check(await page.evaluate(() => { const d = FC.get('wealth'); return lessonDone(d, 'wealth', d.lessons.l2) && lastCheck(d, 'wealth', d.lessons.l2).passed; }), 'the lesson is not done with the check passed');
 }
 

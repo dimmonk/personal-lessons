@@ -50,12 +50,12 @@ FC.items("scams", [
     deciding: ["k5b"], reason: "It is about your money and you did not start it, so you use a number you already had. The number inside the message is the sender’s, whoever the sender is." }),
   scamItem({
     id: "k-dental-call", genuine: "genuine", channel: "call", request: "none",
-    context: "You have a dental cleaning booked on Thursday.",
+    context: "You have a dental cleaning booked on Thursday at 3. Friday at 3 would suit you just as well.",
     message: scamCall("Kestrel Dental", "Incoming call · 9:40 AM", [L("k6a", "Hi, this is Kestrel Dental."), L("k6b", "We need to move your cleaning from Thursday at 3 to Friday at 3. Call us back if Friday does not work.")]),
     right: "leave", own: "The number on my appointment card", theirs: "The number that called me",
     say: ["You called back for no reason. It cost a few minutes.",
       "You called the number on your appointment card. They confirmed Friday. Not needed.",
-      "Friday at 3 works for you, so you did nothing and went on Friday."],
+      "You did nothing and went on Friday at 3, which suits you."],
     deciding: ["k6b"], reason: "It tells you a new time and wants nothing risky from you: no money, no code, no details. If Friday suits you, there is nothing to do." }),
   scamItem({
     id: "s-held", genuine: "scam", channel: "sms", request: "details",
@@ -106,9 +106,9 @@ FC.items("scams", [
     id: "s-romance", genuine: "scam", channel: "chat", request: "money",
     context: "You have chatted with Ioana on a language app for five weeks. You have never met her or spoken on a live call.",
     message: scamChat("Ioana on the language app", "Chat history and today’s message", [L("s6a", "Good morning! I miss our talks."), L("s6b", "I hope you are safe.", { me: true }), L("s6c", "I am stuck in Lisbon. My wallet was stolen and my bank has blocked my card."), L("s6d", "Could you send $1,100 to my friend so I can fly home and finally meet you?")]),
-    right: "leave", own: "A friend or relative I know in person", theirs: "A reply in the chat",
+    right: "leave", noWay: true,
     say: ["You sent $1,100. Ioana wrote again the next day with a bigger emergency.",
-      "You have no way to reach Ioana except this chat, so checking through it lets her vouch for herself. Telling someone you know in person is the move.",
+      "You have no way to reach Ioana except this chat, so checking means asking Ioana, who vouches for herself.",
       "You sent nothing. The next step is to tell a friend or relative you know in person."],
     deciding: ["s6d"], reason: "Weeks of kind messages, then an emergency and a request for money, from someone you have never met or seen live. You have no way of your own to check her, so the answer is no, and you tell someone you know in person." })
 ]);

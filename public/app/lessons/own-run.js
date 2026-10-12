@@ -110,7 +110,7 @@ function paintOwnSkipped(){
 function paintOwnCosts(){
   const { subj, data } = LESSON, form = ownFormOf(data, OWN.step.own), actionForm = ownActionFormOf(data), lists = data.meta.lists;
   const model = OWN.step.model ? data.items[OWN.step.model] : null;
-  const modelHtml = model ? `<div class="vblock soft">${lessonLabel(SAY.ownModelHeading)}<p>${esc(SAY.ownModelLine)}</p></div>
+  const modelHtml = model ? `<div class="vblock soft">${lessonLabel(SAY.ownModelHeading)}${paras(OWN.step.where).map(t => `<p>${esc(t)}</p>`).join('')}</div>
     ${blocksHtml(model.blocks, { deciding: model.deciding || [], data, scope: `own|${model.id}` })}` : '';
   lessonShell(`${heading(SAY.ownEyebrow, SAY.ownCostsTitle)}<div class="lesson"><p>${esc(SAY.ownCostsHow)}</p></div>${ownCostsHtml(form, lists, sheetAccounts(subj.id))}${modelHtml}
     <div class="ownsection"><h2 class="owntitle">${esc(SAY.ownActionHeading)}</h2><p class="forline">${esc(SAY.ownActionHow)}</p>

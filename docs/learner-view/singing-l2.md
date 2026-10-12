@@ -1,6 +1,6 @@
 # Singing: Match a note
 
-Revision 1, draft (the screen carries the draft line). Part: Match a note. Where the subject ends up: Sing a short melody you have just heard, in your own range, in tune and without any display, with long notes held steady and no pushing.
+Revision 2, draft (the screen carries the draft line). Part: Match a note. Where the subject ends up: Sing a short melody you have just heard, in your own range, in tune and without any display, with long notes held steady and no pushing.
 
 ## The why
 
@@ -26,13 +26,13 @@ Then the next step: a warm-up has no break screen.
 
 ## Step 2: How a try goes
 
-Tap Hear the note and listen to all of it. When it ends, sing it back on “oo” and keep going until the line ends.
+Tap Hear the note and listen to all of it. When it ends, sing it back on “oo” and keep going until the bar ends or “Sing now” goes away.
 
-The line is your voice. The bar is the note. Aim to put the line on the bar. After each try you see whether you were on the note, a shade under it or a shade over it.
+The line is your voice. The bar is the note. Put the line on the bar. The middle of your try is what counts, so start on the note. After each try you see whether you were on the note, a shade under it or a shade over it.
 
 ## Step 3: Tries
 
-8 tries, listed, with help (the line and the notes drawn while singing). A missed try comes back at least three tries later, with a new note, until it is on the note.
+8 tries, listed, with help (the line and the notes drawn while singing). A missed try comes back at least three tries later, with a new note, until it is on the note, but at most 4 come back in one group, so a group always ends.
 
 When no range is stored yet, this group opens with the range exercise, and the group follows it:
 
@@ -65,7 +65,7 @@ Then a screen: you can stop here, your place is kept.
 
 ## Step 4: Tries
 
-8 tries, listed. A missed try comes back at least three tries later, with a new note, until it is on the note.
+8 tries, listed. A missed try comes back at least three tries later, with a new note, until it is on the note, but at most 4 come back in one group, so a group always ends.
 
 #### Try 10: Match the note (a sung question; the notes are made fresh from the learner's range, inside it)
 

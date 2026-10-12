@@ -32,29 +32,35 @@
   const stripped = def => { const { roughReason, ...rest } = def; return rest; };
 
   /* ---------- a grocery receipt: add the prices ---------- */
-  const cart = {
-    id: 'g-cart', strand: 'ballpark', facets: { kind: 'estimate' },
-    params: { a: [149, 649, 10], b: [149, 649, 10], c: [149, 649, 10], d: [149, 649, 10], big: [1149, 1849, 10], at: [0, 4, 1], bn: [0, 5, 1], ...NAME_PARAMS },
-    make: pick => {
-      const cents = place(['a', 'b', 'c', 'd'].map(pick), pick('at'), pick('big')), total = sum(cents);
-      const names = place(pickNames(FOOD, pick, 4), pick('at'), BIG[pick('bn')]), rounded = cents.map(dollars), rough = sum(rounded);
-      return { shop: MARKETS[pick('store')], n1: names[0], n2: names[1], n3: names[2], n4: names[3], n5: names[4],
-        p1: usd(cents[0]), p2: usd(cents[1]), p3: usd(cents[2]), p4: usd(cents[3]), p5: usd(cents[4]),
-        roundedSum: rounded.map(r => '$' + r).join(' + '), exactSum: cents.map(usd).join(' + '), rough, total: total / 100, totalText: usd(total),
-        bigName: BIG[pick('bn')], noBig: (total - pick('big')) / 100, tenfold: total / 10, tenth: total / 1000 };
-    },
-    blocks: [{ kind: 'document', form: 'receipt', title: '{shop}', rows: [1, 2, 3, 4, 5].map(k => ({ id: `l${k}`, cells: [`{n${k}}`, `{p${k}}`] })) }],
-    asks: [
-      estimateAsk('About how much does this cart come to? Round each price to the nearest dollar and add them in your head.',
-        [{ slip: 'missed-line', value: 'noBig', then: 'That is what you get when the {bigName} line is left out. Count every line.' }]),
-      exactAsk('What is the exact total?', [{ slip: 'missed-line', value: 'noBig', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps])],
-    steps: [
-      { id: 'round', does: 'Round each price to the nearest dollar and add.', working: '{roundedSum} = ${rough}.', ask: 'est' },
-      { id: 'add', does: 'Add the exact prices on the calculator.', working: '{exactSum} = {totalText}.', ask: 'exact' },
-      { id: 'compare', does: 'Compare the two.', working: '{totalText} is close to ${rough}, so the total is sensible.' }],
-    reason: 'Rounded to the nearest dollar, the prices make about ${rough}. Exactly, they add up to {totalText}. The two are close, so the total is sensible.',
-    roughReason: 'Rounded to the nearest dollar, the prices make about ${rough}. The exact total is {totalText}. A rough answer only has to be near it, within about a fifth.'
+  // `count` lines, one of them a big one (`big`); the others are `small`. The check also asks a wider receipt (fewer, dearer lines), so a flat
+  // guess of the usual cart cannot pass it.
+  const makeCart = ({ id, count, small, big }) => {
+    const rows = Array.from({ length: count }, (_, k) => k + 1), letters = ['a', 'b', 'c', 'd', 'e', 'f'].slice(0, count - 1);
+    return {
+      id, strand: 'ballpark', facets: { kind: 'estimate' },
+      params: { ...Object.fromEntries(letters.map(l => [l, small])), big, at: [0, count - 1, 1], bn: [0, 5, 1], ...NAME_PARAMS },
+      make: pick => {
+        const cents = place(letters.map(pick), pick('at'), pick('big')), total = sum(cents);
+        const names = place(pickNames(FOOD, pick, count - 1), pick('at'), BIG[pick('bn')]), rounded = cents.map(dollars), rough = sum(rounded);
+        return { shop: MARKETS[pick('store')], ...Object.fromEntries(rows.flatMap((k, i) => [[`n${k}`, names[i]], [`p${k}`, usd(cents[i])]])),
+          roundedSum: rounded.map(r => '$' + r).join(' + '), exactSum: cents.map(usd).join(' + '), rough, total: total / 100, totalText: usd(total),
+          bigName: BIG[pick('bn')], noBig: (total - pick('big')) / 100, tenfold: total / 10, tenth: total / 1000 };
+      },
+      blocks: [{ kind: 'document', form: 'receipt', title: '{shop}', rows: rows.map(k => ({ id: `l${k}`, cells: [`{n${k}}`, `{p${k}}`] })) }],
+      asks: [
+        estimateAsk('About how much does this cart come to? Round each price to the nearest dollar and add them in your head.',
+          [{ slip: 'missed-line', value: 'noBig', then: 'That is what you get when the {bigName} line is left out. Count every line.' }]),
+        exactAsk('What is the exact total?', [{ slip: 'missed-line', value: 'noBig', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps])],
+      steps: [
+        { id: 'round', does: 'Round each price to the nearest dollar and add.', working: '{roundedSum} = ${rough}.', ask: 'est' },
+        { id: 'add', does: 'Add the exact prices on the calculator.', working: '{exactSum} = {totalText}.', ask: 'exact' },
+        { id: 'compare', does: 'Compare the two.', working: '{totalText} is close to ${rough}, so the total is sensible.' }],
+      reason: 'Rounded to the nearest dollar, the prices make about ${rough}. Exactly, they add up to {totalText}. The two are close, so the total is sensible.',
+      roughReason: 'Rounded to the nearest dollar, the prices make about ${rough}. The exact total is {totalText}. A rough answer only has to be near it, within about a fifth.'
+    };
   };
+  const cart = makeCart({ id: 'g-cart', count: 5, small: [149, 649, 10], big: [1149, 1849, 10] });
+  const cartWide = makeCart({ id: 'g-cart-wide', count: 3, small: [499, 1499, 10], big: [1999, 3999, 10] });
 
   /* ---------- an order with quantities: multiply, then add ---------- */
   const order = {
@@ -150,6 +156,6 @@
   // the verdict alone, for the check: "the one that is wrong is caught"
   const verdictOnly = def => ({ ...def, id: `${def.id}-v`, asks: def.asks.filter(a => a.id === 'verdict'), steps: def.steps.map(({ ask, ...rest }) => ask === 'by' ? rest : { ...rest, ...(ask ? { ask } : {}) }) });
 
-  FC.gen('math', [stripped(cart), stripped(roughOnly(cart, 'total')), stripped(order), stripped(roughOnly(order, 'total')), stripped(split), stripped(roughOnly(split, 'share')),
+  FC.gen('math', [stripped(cart), stripped(roughOnly(cart, 'total')), stripped(cartWide), stripped(roughOnly(cartWide, 'total')), stripped(order), stripped(roughOnly(order, 'total')), stripped(split), stripped(roughOnly(split, 'share')),
     totalRight, verdictOnly(totalRight), totalWrong, verdictOnly(totalWrong)]);
 })();

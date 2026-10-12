@@ -106,15 +106,26 @@ function numberExplainProblems(s, item, ask, where, ids) {
   if (ask.estimate && before.some(a => a.kind === 'number' && !a.estimate)) problems.push(`${where}: the estimate comes after an exact answer; it is typed first`);
   return problems;
 }
+// A tap that takes any line meeting a need (`meets`): one line is wanted; the question's `has` finds every need in some line (the label is
+// earned) and puts the needs in at least two different lines (else `right` alone says it); `right` is one of those lines.
+function meetsProblems(e, item, ask, meeting, where) {
+  const problems = [], has = item.has || {};
+  if (e.tapPick(ask) !== 1) problems.push(`${where}: a tap that takes any line meeting a need wants one line`);
+  if (!Object.keys(has).length || Object.values(has).some(v => !e.asList(v).length)) problems.push(`${where}: a tap that takes any line meeting a need needs every need found in a line (has); a need is missing`);
+  if (meeting.length < 2) problems.push(`${where}: a tap that takes any line meeting a need has the needs in one line, so right alone says it`);
+  if (!meeting.includes(e.asList(ask.right)[0])) problems.push(`${where}: the right line "${e.asList(ask.right)[0]}" is not a line that meets a need`);
+  return problems;
+}
 // a tap: the lines it wants are lines of the text that can be tapped, there are as many as it asks for, and they are among the words that decide
 // the question (so the answer is marked in the text once it is given); a line that carries a slip names one of the subject's slips
 function tapExplainProblems(s, item, ask, where, slipIds) {
-  const e = s.engine, problems = [], lines = e.tapSegments(item, ask), ids = lines.map(l => l.id), right = e.tapRightIds(ask);
+  const e = s.engine, problems = [], lines = e.tapSegments(item, ask), ids = lines.map(l => l.id), right = e.tapRightIds(ask, item);
   if (!lines.length) problems.push(`${where}: there is nothing to tap in ${ask.in ? `the block "${ask.in}"` : 'the question'}`);
   if (ask.right === 'none') { if (!ask.none) problems.push(`${where}: nothing to find, and no words for the button`); }
   else {
     right.filter(id => !ids.includes(id)).forEach(id => problems.push(`${where}: the right line "${id}" is not a line that can be tapped`));
-    if (right.length !== e.tapPick(ask)) problems.push(`${where}: it wants ${e.tapPick(ask)} line${e.tapPick(ask) === 1 ? '' : 's'} and the answer is ${right.length}`);
+    if (ask.meets) problems.push(...meetsProblems(e, item, ask, right, where));
+    else if (right.length !== e.tapPick(ask)) problems.push(`${where}: it wants ${e.tapPick(ask)} line${e.tapPick(ask) === 1 ? '' : 's'} and the answer is ${right.length}`);
     right.filter(id => !(item.deciding || []).includes(id)).forEach(id => problems.push(`${where}: the right line "${id}" is not among the deciding words, so it would not be marked after the answer`));
   }
   if (ask.pick > ids.length) problems.push(`${where}: it wants ${ask.pick} lines and the text has ${ids.length}`);
@@ -139,10 +150,10 @@ function hasExplainProblems(s, item) {
   needs.filter(id => !ids.includes(id)).forEach(id => problems.push(`has: the need "${id}" of its panel is not accounted for`));
   ids.filter(id => !needs.includes(id)).forEach(id => problems.push(`has: "${id}" is not a need of its panel`));
   const lines = item.blocks.flatMap(b => e.segmentsOf(b)).map(x => x.id);
-  Object.entries(item.has).filter(([, line]) => line !== null).forEach(([id, line]) => {
+  Object.entries(item.has).forEach(([id, found]) => e.asList(found).forEach(line => {
     if (!lines.includes(line)) problems.push(`has: the need "${id}" is found in "${line}", which is not a line of the text`);
     else if (!(item.deciding || []).includes(line)) problems.push(`has: the need "${id}" is found in "${line}", which is not among the deciding words, so it would not be marked after the answer`);
-  });
+  }));
   return problems;
 }
 // An exchange is explained: every end says what happened next (the shape needs it) and a wrong end that names a slip names one the subject has, the
@@ -169,7 +180,8 @@ function explainProblems(s, item) {
     if (ask.kind === 'order') return;
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
     if (!options.some(o => o.ok)) problems.push(`${where} has no right option`);
-    if (ask.many === undefined && options.filter(o => o.ok).length > 1) problems.push(`${where} has more than one right option and does not take several`);
+    if (ask.many === undefined && !ask.either && options.filter(o => o.ok).length > 1) problems.push(`${where} has more than one right option and does not take several`);
+    if (ask.either && (options.filter(o => o.ok).length < 2 || ask.many)) problems.push(`${where} says either, and has ${ask.many ? 'several answers to tap' : 'fewer than two right options'}`);
     options.filter(o => !o.ok && !o.then && !o.slip).forEach(o => problems.push(`${where}: the wrong option "${o.text}" has neither a line of its own nor a slip`));
     options.filter(o => o.slip && !ids.includes(o.slip)).forEach(o => problems.push(`${where}: the slip "${o.slip}" is not in the subject's list of slips`));
   });

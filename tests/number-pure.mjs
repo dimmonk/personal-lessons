@@ -88,7 +88,18 @@ check(withinTol(0, 0, { rel: 0.2 }) && !withinTol(0.1, 0, { rel: 0.2 }), 'zero i
   same(run('3 + 4 =').shown, '7', '3 + 4');
   same(run('1 2 . 5 * 2 =').shown, '25', '12.5 × 2');
   same(run('1 0 / 4 =').shown, '2.5', '10 ÷ 4');
-  same(run('2 + 3 * 4 =').shown, '20', 'one operation at a time, as on a phone');
+  same(run('2 + 3 * 4 =').shown, '14', 'multiply before adding, as a receipt writes it');
+  same(run('2 * 3 + 4 =').shown, '10', 'a product first, then the sum');
+  same(run('1 0 - 2 * 3 =').shown, '4', 'multiply before taking away');
+  same(run('1 0 / 4 * 2 =').shown, '5', 'divide and multiply from the left');
+  same(run('8 - 3 - 2 =').shown, '3', 'take away from the left');
+  same(run('1 2 / 3 / 2 =').shown, '2', 'divide from the left');
+  same(run('5 * 1 1 . 0 9 + 3 * 9 . 0 9 + 3 * 7 . 9 9 + 4 * 6 . 8 9 =').shown, '134.25', 'a sum of products is typed as it is written');
+  same(run('2 + 3 * 4 +').shown, '14', 'the running total after a plus');
+  same(run('2 + 3 *').shown, '3', 'the product so far after a times');
+  same(run('5 + * 3 =').shown, '15', 'a second operator key replaces the first');
+  same(run('5 * + 3 =').shown, '8', 'a plus after a times replaces it');
+  same(run('1 + 2 / 0 =').shown, 'Error', 'dividing by nothing inside a sum is an error');
   same(run('1 / 3 =').shown, '0.333333333333', 'a long decimal is cut to twelve figures');
   same(run('0 . 1 + 0 . 2 =').shown, '0.3', 'decimals add as a person expects');
   same(run('1 / 0 =').shown, 'Error', 'dividing by nothing is an error');
@@ -167,13 +178,17 @@ check(withinTol(0, 0, { rel: 0.2 }) && !withinTol(0.1, 0, { rel: 0.2 }), 'zero i
 {
   const seeds = Array.from({ length: 400 }, (_, k) => k + 1), rel = (a, b) => Math.abs(a - b) / b;
   const bundle = id => seeds.map(seed => at(math, id, seed));
-  for (const id of ['g-cart', 'g-qty']) {
+  for (const id of ['g-cart', 'g-cart-wide', 'g-qty']) {
     const items = bundle(id), worst = Math.max(...items.map(i => rel(i.values.rough, i.values.total)));
     check(worst <= 0.15, `${id}: rounding each price to the nearest dollar is within 15% of the total on every seed (worst ${(worst * 100).toFixed(1)}%)`);
     check(items.every(i => i.values.rough > 0), `${id}: there is always a rough total`);
     check(new Set(items.map(i => i.values.totalText)).size > 100, `${id}: 400 seeds make more than 100 different totals`);
     check(items.every(i => !ask(i, 'est').traps.some(t => withinTol(i.values[t.value], i.values.total, { rel: 0.2 }))), `${id}: the left-out slip is never inside the estimate's 20%`);
   }
+  // a flat guess of the usual cart cannot pass the wide one
+  const wide = bundle('g-cart-wide'), usual = bundle('g-cart'), flat = 30;
+  check(wide.filter(i => withinTol(flat, i.values.total, { rel: 0.2 })).length <= 40, 'g-cart-wide: a flat guess of $30 is within a fifth of at most one receipt in ten');
+  check(usual.filter(i => withinTol(flat, i.values.total, { rel: 0.2 })).length > 100 && wide.every(i => i.blocks[0].rows.length === 3) && usual.every(i => i.blocks[0].rows.length === 5), 'the usual cart has five lines and the wide one three');
   const splits = bundle('g-split'), worstSplit = Math.max(...splits.map(i => rel(i.values.roughShare, i.values.total)));
   check(worstSplit <= 0.10, `g-split: dividing the bill rounded to a multiple of the people is within 10% of the share on every seed (worst ${(worstSplit * 100).toFixed(1)}%)`);
   check(splits.every(i => Math.abs(i.values.total * 100 - Math.round(i.values.total * 100)) < 1e-6), 'g-split: a share is always a whole number of cents');
@@ -189,7 +204,7 @@ check(withinTol(0, 0, { rel: 0.2 }) && !withinTol(0.1, 0, { rel: 0.2 }), 'zero i
   check(missed.every(i => Math.abs(i.values.off - i.values.mid / 100) < 1e-9), 'g-total-wrong: a left-out line is off by that line');
   check(missed.every(i => i.values.shownText !== i.values.totalText), 'g-total-wrong: the printed total always differs from the real one');
   // the check's short forms are the same questions with the first ask alone
-  for (const id of ['g-cart-est', 'g-qty-est', 'g-split-est']) check(at(math, id, 9).asks.length === 1 && at(math, id, 9).asks[0].id === 'est', `${id}: the rough total alone`);
+  for (const id of ['g-cart-est', 'g-cart-wide-est', 'g-qty-est', 'g-split-est']) check(at(math, id, 9).asks.length === 1 && at(math, id, 9).asks[0].id === 'est', `${id}: the rough total alone`);
   for (const id of ['g-total-right-v', 'g-total-wrong-v']) check(at(math, id, 9).asks.length === 1 && at(math, id, 9).asks[0].id === 'verdict', `${id}: the verdict alone`);
   check(at(math, 'g-total-wrong-v', 9).steps.every(s => !s.ask || at(math, 'g-total-wrong-v', 9).asks.some(a => a.id === s.ask)), 'g-total-wrong-v: no step is tied to an ask it does not have');
   // the same seed gives the same question

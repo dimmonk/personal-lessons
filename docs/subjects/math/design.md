@@ -291,3 +291,10 @@ mined for settings and numbers.
    least common multiple, irrational numbers, systems, quadratics, permutations, combinations, trigonometry, the
    square-cube law) are problems an adult seldom meets, while the problems they meet weekly (a discount then a tax, a
    percent change, a unit price, paint for a room, checking a bill by a rough estimate) have no unit.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l1.md`, verdict fails; fixed in rev 2
+Done: the in-app calculator follows the usual order of operations (`FC.ENGINE` 15; a sum of products is typed as written); the rule of rounding
+("50 cents or more rounds up"); the worked example's rough answer is $23, not $23.43; the printed-totals teaching says a real receipt has a tax line and where
+printed totals really go wrong; the check's carts include a wide receipt (three dearer lines) so a flat guess of $30 cannot pass both. Not done, and why:
+two wrong totals among the three printed ones. Gate 4's check says "of 3 shown totals, the one that is wrong is caught", so the record wins; the three are
+shuffled and each verdict is scored, so a coin flip passes them one time in eight.

@@ -18,7 +18,7 @@ FC.lesson('ledger', {
       ] },
     { worked: 'l-sheet' },
     { set: { items: [{ gen: 'l-gen', n: 2 }], order: 'listed' } },
-    { own: 'sheet', model: 'l-sheet' }
+    { own: 'sheet', model: 'l-sheet', where: ['On your own statement, the funds and balances are on the page called holdings.', 'On your plan\u2019s fee sheet, the yearly cost is the column called expense ratio.'] }
   ],
   check: { items: [{ gen: 'l-gen', n: 2 }], feedback: 'at-end', pass: [{ right: { min: 2 } }] }
 });

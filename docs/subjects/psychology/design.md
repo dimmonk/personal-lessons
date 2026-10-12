@@ -276,3 +276,13 @@ look-alike pairs (for L3, rewritten as one side's account), U4's opening card (f
    practices diagnosing personality disorders, and Unit One spends half its families on choices and lifelong patterns.
    Each unit is 14 to 23 cards of reading (10,600 to 21,100 words in the learner view) before the drill, and the drill's
    action is naming, not checking a word against what was done.
+
+## Stand-in review of the pilot (2026-10-11): `reviews/l1.md`, verdict passes; the improvements done in rev 2
+Done: the notice on the account of control comes first in the feedback, in its own block, with "If you are in danger now, call 911" and that the hotline is for
+the US (engine `notice`); the card names background, the one telling it and a verdict, says a person's own reason counts, says a line can mix an act with a reading,
+and says the next step when nothing says what they did ("find out what was said or done"); two accounts mix what was done with a reading ("humiliated me",
+"ignored my texts") and one is in the check; a second account with nothing in it, without the checklist beside it; cues vary (labels without "so", guesses without
+"obviously", the act in any place); the checklist after an answer is listed only after a miss or when a need is missing, and a need with two lines is found in both
+(engine `feedback: 'on-miss'`, `has` lists); "She should have called first" and "You never respect my stuff" are retagged. Gate 4 says the check is "6 new accounts,
+5 right": the record wins, so the check does not also require the account with nothing in it. Not done: the Alex thread shows no days (the reason no longer
+names them).

@@ -20,7 +20,8 @@ function chooseOptions(data, ask){
   return offered.map(o => ({ id: o.id, text: o.text, ok: right.includes(o.id),
     ...(ask.slips && ask.slips[o.id] ? { slip: ask.slips[o.id] } : {}), ...(ask.then && ask.then[o.id] ? { then: ask.then[o.id] } : {}) }));
 }
-// 'ok', a slip id, or 'no'. A single choice is right when the option is; several are right when exactly the right ones are tapped.
+// 'ok', a slip id, or 'no'. A single choice is right when the option is (`either`: when it is any one of several right options); several are right
+// when exactly the right ones are tapped.
 function scoreChoose(data, ask, answer){
   const options = chooseOptions(data, ask), chosen = asList(answer), rightIds = options.filter(o => o.ok).map(o => o.id);
   const ok = ask.many ? sameIds(chosen, rightIds) : chosen.length === 1 && rightIds.includes(chosen[0]);

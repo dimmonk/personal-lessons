@@ -1,6 +1,6 @@
 # Political Ideologies: Socialist, or not?
 
-Revision 1, draft (the screen carries the draft line). Part: Economy labels. Where the subject ends up: When a speech or a post is called "socialist", "fascist" or the like, check for yourself which label its own words earn.
+Revision 2, draft (the screen carries the draft line). Part: Economy labels. Where the subject ends up: When a speech or a post is called "socialist", "fascist" or the like, check for yourself which label its own words earn.
 
 ## The why
 
@@ -16,6 +16,10 @@ A label pinned on words is a claim. You can check it in three steps.
 1. Find what the words say should be done. Leave out the tone, the insults and who is speaking.
 2. Read what the label needs. Each label needs a few things, and the words have to show every one.
 3. Decide. Earned: the words show every need. Not earned: they show something that does not fit, and you say which name fits instead. Too little to tell: the words are too vague to show the label or rule it out.
+Words that only say a tax pays for a benefit, and take nothing over, are not “socialist” either. They are the social democrat idea, and they do not have to say that business stays private.
+
+A wrong idea, marked wrong: “Capitalist means greedy, or pro-business.”
+The right line: As a label it means one thing you can check: businesses in private hands and prices decided by buyers and sellers. A plan can help business and fix the price, and then it is not that. A plan can be called greedy and still be that.
 
 ## Step 2: What the four labels need
 
@@ -195,12 +199,12 @@ Help on screen: What the label needs is shown beside the words.
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Our plan is to grow the economy and bring good jobs back to the county." — if tapped: That is not the sentence.
-- "We will work with business, workers and local leaders." — if tapped: That is not the sentence.
+- "Our plan is to grow the economy and bring good jobs back to the county." — if tapped: note: That is a goal. It names no business, no owner and no price.
+- "We will work with business, workers and local leaders." — if tapped: note: That says who the plan would work with, not who owns or prices anything.
 - "Said by a candidate for county commissioner." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" (right)
 
-After the answer: the deciding words are marked. Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our plan is to grow the economy and bring good jobs back to the county” says neither. It names no business, no owner and no price, so the words cannot show the label and cannot rule it out.
+After the answer: the deciding words are marked (none named). Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our plan is to grow the economy and bring good jobs back to the county” says neither. It names no business, no owner and no price, so the words cannot show the label and cannot rule it out.
 What you would need to see: To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices.
 What “Free-market (capitalist)” needs, each need found (with its line) or missing:
 - Missing: Businesses and property stay in private hands. The words do not say it.
@@ -252,7 +256,7 @@ Then a screen: you can stop here, your place is kept.
 
 ## Step 6: Questions
 
-8 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+10 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Question 5
 
@@ -278,7 +282,7 @@ A post with a label pinned on words, from "Comment · @theo_b · 8h". Under it: 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The Lakeshore Bus Plan would sell the state-owned bus company to private firms." (right)
-- "The new owners could charge whatever fares riders will pay." — if tapped: note: That is about fares, once the company is sold.
+- "The new owners could charge whatever fares riders will pay." (right)
 - "The state would only enforce safety rules and contracts." — if tapped: note: That says what the state would keep doing.
 - "Said by a state budget official on a radio show." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
@@ -314,7 +318,7 @@ A post with a label pinned on words, from "Comment · @walt_p · 7h". Under it: 
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The People’s Economy Act would end private ownership of farms, factories and shops." (right)
 - "Everything would be owned in common and run by the state." — if tapped: note: That says how it would be run, once private ownership has ended.
-- "One national plan would decide what is made, how much, and at what price." — if tapped: That is not the sentence.
+- "One national plan would decide what is made, how much, and at what price." (right)
 - "Backers say it would end poverty in ten years." — if tapped: note: That is a promise about results, not what the plan does.; slip: tapped the tone or the promise, not what it would do
 - "Said by the author of a book on economics." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
@@ -415,12 +419,12 @@ A post with a label pinned on words, from "Comment · @nina_v · 10h". Under it:
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Our economy should work better for everyone." — if tapped: That is not the sentence.
-- "We have heard from hundreds of residents, and we are ready to act." — if tapped: That is not the sentence.
+- "Our economy should work better for everyone." — if tapped: note: That is a hope. It names no business, no owner and no price.
+- "We have heard from hundreds of residents, and we are ready to act." — if tapped: note: That says who was heard, not what the plan does.
 - "Said by a state commerce director in a speech." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" (right)
 
-After the answer: the deciding words are marked. Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our economy should work better for everyone” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
+After the answer: the deciding words are marked (none named). Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our economy should work better for everyone” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
 What you would need to see: To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices.
 What “Free-market (capitalist)” needs, each need found (with its line) or missing:
 - Missing: Businesses and property stay in private hands. The words do not say it.
@@ -483,12 +487,12 @@ A post with a label pinned on words, from "Comment · @ed_m · 11h". Under it: "
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "It is time for a government that puts ordinary people first." — if tapped: That is not the sentence.
-- "For too long, working families have been ignored." — if tapped: That is not the sentence.
+- "It is time for a government that puts ordinary people first." — if tapped: note: That is a promise about who comes first. It names no business, no owner and no price.
+- "For too long, working families have been ignored." — if tapped: note: That is a complaint about the past, not a plan.
 - "Said by a candidate in a campaign video." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" (right)
 
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. “It is time for a government that puts ordinary people first” names no industry and says nothing about who would own anything. The words cannot show the label and cannot rule it out.
+After the answer: the deciding words are marked (none named). Reason: “Socialist” needs a main industry named and the public or the workers owning it. “It is time for a government that puts ordinary people first” names no industry and says nothing about who would own anything. The words cannot show the label and cannot rule it out.
 What you would need to see: To judge “socialist”, the words would have to say which industry, and who would own it.
 What “Socialist” needs, each need found (with its line) or missing:
 - Missing: A main industry or a big company is named: such as power, rail, banks or hospitals. The words do not say it.
@@ -529,6 +533,76 @@ What “Communist” needs, each need found (with its line) or missing:
 - Missing: Nearly all property and business would be owned in common or by the state: farms, factories and shops, not just a few industries. The words do not say it.
 - Missing: One central plan, not buyers and sellers, would decide what is made and what it costs. The words do not say it.
 
+#### Question 13
+
+A post with a label pinned on words, from "Comment · @iris_m · 14h". Under it: "On a left-leaning news page". The commenter's words: **Capitalist robbery, as always.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+
+> The Rail Rescue Plan would have the state buy the failing Valley Railroad from its owners.
+> A public board would run it, and the board would decide the fares.
+> Freight companies would pay the same rates as before.
+> (small print) Said by a state transport official.
+
+**Do the words earn the label “capitalist”?**
+- Earned — if chosen: a slip: believed
+- Not earned (right)
+- Too little to tell — if chosen: a slip: hedged
+
+**Which name do the words earn instead?** (opens only after a certain answer)
+- Free-market (capitalist) — if chosen: a slip: wrong-name
+- Social democrat — if chosen: a slip: wrong-name
+- Socialist (right)
+- Communist — if chosen: a slip: wrong-name
+- None of these four — if chosen: a slip: missed-name
+
+**Tap the sentence that decides it.**
+- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
+- "The Rail Rescue Plan would have the state buy the failing Valley Railroad from its owners." (right)
+- "A public board would run it, and the board would decide the fares." — if tapped: note: That says how it would be run, once the state owns it.
+- "Freight companies would pay the same rates as before." — if tapped: note: That is about rates, not who owns the railroad.
+- "Said by a state transport official." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
+- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+
+After the answer: the deciding words are marked. Reason: “Free-market” needs businesses in private hands and prices decided by buyers and sellers. “The Rail Rescue Plan would have the state buy the failing Valley Railroad from its owners” takes a company out of private hands, and “the board would decide the fares” takes the prices away from buyers and sellers. A main industry bought by the state and run as a public service is the socialist idea, so that is the name the words earn.
+What you would need to see: To earn “capitalist”, the words would have to leave the railroad with its private owners and the fares to buyers and sellers.
+What “Free-market (capitalist)” needs, each need found (with its line) or missing:
+- Missing: Businesses and property stay in private hands. The words do not say it.
+- Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
+
+#### Question 14
+
+A post with a label pinned on words, from "Comment · @lou_b · 9h". Under it: "On a right-leaning news page". The commenter's words: **Socialism for lunch. Here we go.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+
+> The Full Plate Plan would give every public school student a free breakfast and lunch.
+> A 0.5% tax on large company profits would pay for it.
+> Kitchens would open in September.
+> (small print) Said by a school board member.
+
+**Do the words earn the label “socialist”?**
+- Earned — if chosen: a slip: believed
+- Not earned (right)
+- Too little to tell — if chosen: a slip: hedged
+
+**Which name do the words earn instead?** (opens only after a certain answer)
+- Free-market (capitalist) — if chosen: a slip: wrong-name
+- Social democrat (right)
+- Socialist — if chosen: a slip: wrong-name
+- Communist — if chosen: a slip: wrong-name
+- None of these four — if chosen: a slip: missed-name
+
+**Tap the sentence that decides it.**
+- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
+- "The Full Plate Plan would give every public school student a free breakfast and lunch." — if tapped: note: That is what students get, not who owns anything.
+- "A 0.5% tax on large company profits would pay for it." (right)
+- "Kitchens would open in September." — if tapped: note: That says when, not what the plan does.
+- "Said by a school board member." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
+- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+
+After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. The plan names no industry and takes nothing over: “A 0.5% tax on large company profits would pay for it” is a tax paying for a benefit. Nothing changes hands, so the label is not earned. Words that only say a tax pays for a benefit are the social democrat idea. They do not have to say that business stays private.
+What you would need to see: To earn “socialist”, the words would have to name an industry and say the public or the workers would own it.
+What “Socialist” needs, each need found (with its line) or missing:
+- Missing: A main industry or a big company is named: such as power, rail, banks or hospitals. The words do not say it.
+- Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
+
 Then a screen: you can stop here, your place is kept.
 
 ## The check
@@ -540,7 +614,7 @@ To pass:
 - At least 2 right among labels thrown from the left
 - At least 2 right among labels thrown from the right
 
-#### Check question 13
+#### Check question 15
 
 A post with a label pinned on words, from "Comment · @hal_s · 2h". Under it: "On a right-leaning news page". The commenter's words: **Socialism, pure and simple.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
 
@@ -563,7 +637,7 @@ A post with a label pinned on words, from "Comment · @hal_s · 2h". Under it: "
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Clean Water Act would take over the state’s three private water companies." — if tapped: That is not the sentence.
+- "The Clean Water Act would take over the state’s three private water companies." (right)
 - "They would be owned and run by the state as a public utility." (right)
 - "Customers would pay the state instead of the companies." — if tapped: note: That says who gets the bills, not who owns the companies.
 - "Said by the bill’s main sponsor." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
@@ -574,7 +648,7 @@ What “Socialist” needs, each need found (with its line) or missing:
 - Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “The Clean Water Act would take over the state’s three private water companies.”
 - Found: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. “They would be owned and run by the state as a public utility.”
 
-#### Check question 14
+#### Check question 16
 
 A post with a label pinned on words, from "Comment · @june_l · 3h". Under it: "On a left-leaning news page". The commenter's words: **Free-market greed, dressed up as a housing plan.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
 
@@ -598,7 +672,7 @@ A post with a label pinned on words, from "Comment · @june_l · 3h". Under it: 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
 - "The Open Housing Plan would end all limits on rent." — if tapped: note: That ends the limits, but it does not say who decides the price after.
-- "The city would sell its 40 apartment buildings to private owners." — if tapped: That is not the sentence.
+- "The city would sell its 40 apartment buildings to private owners." (right)
 - "Owners could charge whatever tenants are willing to pay." (right)
 - "Said by a city councilmember on a talk show." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
@@ -608,13 +682,13 @@ What “Free-market (capitalist)” needs, each need found (with its line) or mi
 - Found: Businesses and property stay in private hands. “The city would sell its 40 apartment buildings to private owners.”
 - Found: Buyers and sellers decide prices. The government does not fix them or run the business. “Owners could charge whatever tenants are willing to pay.”
 
-#### Check question 15
+#### Check question 17
 
 A post with a label pinned on words, from "Comment · @ivo_c · 4h". Under it: "On a right-leaning news page". The commenter's words: **Another socialist scheme.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
 
-> The Full Cover Plan would pay for every prescription drug, with no charge at the pharmacy.
-> A 1% tax on incomes over $200,000 would pay for it.
-> Drug companies and pharmacies would stay privately owned.
+> The Family First Plan would give every new parent 12 weeks of paid leave.
+> A payroll tax of 0.4% would pay for it.
+> The plan would start next January.
 > (small print) Said by a state senator in a news release.
 
 **Do the words earn the label “socialist”?**
@@ -631,19 +705,19 @@ A post with a label pinned on words, from "Comment · @ivo_c · 4h". Under it: "
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Full Cover Plan would pay for every prescription drug, with no charge at the pharmacy." — if tapped: note: That is what patients get, not who owns the drug companies.
-- "A 1% tax on incomes over $200,000 would pay for it." — if tapped: note: That says where the money comes from.
-- "Drug companies and pharmacies would stay privately owned." (right)
+- "The Family First Plan would give every new parent 12 weeks of paid leave." — if tapped: note: That is what parents get, not who owns anything.
+- "A payroll tax of 0.4% would pay for it." (right)
+- "The plan would start next January." — if tapped: note: That says when, not what the plan does.
 - "Said by a state senator in a news release." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
 
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. The plan names the drug companies, but “Drug companies and pharmacies would stay privately owned”, so no one but private owners owns them. A tax that pays for every prescription is a benefit paid for by taxes, with business left private: a social democrat idea.
-What you would need to see: To earn “socialist”, the words would have to say the public or the workers would own the drug companies.
+After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. The plan names no industry and takes nothing over: “A payroll tax of 0.4% would pay for it” is a tax paying for a benefit. Nothing changes hands, so the label is not earned. Words that only say a tax pays for a benefit are the social democrat idea.
+What you would need to see: To earn “socialist”, the words would have to name an industry and say the public or the workers would own it.
 What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “Drug companies and pharmacies would stay privately owned.”
+- Missing: A main industry or a big company is named: such as power, rail, banks or hospitals. The words do not say it.
 - Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
 
-#### Check question 16
+#### Check question 18
 
 A post with a label pinned on words, from "Post · Rise Together Coalition · 5h". Under it: "From a left-leaning community group". The commenter's words: **This is what socialism looks like, and we are proud.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
 
@@ -680,7 +754,7 @@ What “Socialist” needs, each need found (with its line) or missing:
 - Missing: A main industry or a big company is named: such as power, rail, banks or hospitals. The words do not say it.
 - Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
 
-#### Check question 17
+#### Check question 19
 
 A post with a label pinned on words, from "Post · Prairie Business Alliance · 6h". Under it: "From a right-leaning business group". The commenter's words: **A free-market plan for a stronger state.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
 
@@ -702,18 +776,18 @@ A post with a label pinned on words, from "Post · Prairie Business Alliance · 
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "We will unleash this state’s economy and let its people prosper." — if tapped: That is not the sentence.
-- "Our plan is bold, and our plan is fair." — if tapped: That is not the sentence.
+- "We will unleash this state’s economy and let its people prosper." — if tapped: note: That is a hope. It names no business, no owner and no price.
+- "Our plan is bold, and our plan is fair." — if tapped: note: That is a boast about the plan, not what it does.
 - "Said by the alliance’s director." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" (right)
 
-After the answer: the deciding words are marked. Reason: “Free-market” needs businesses in private hands and prices decided by buyers and sellers. “We will unleash this state’s economy and let its people prosper” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
+After the answer: the deciding words are marked (none named). Reason: “Free-market” needs businesses in private hands and prices decided by buyers and sellers. “We will unleash this state’s economy and let its people prosper” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
 What you would need to see: To judge “free-market”, the words would have to say who owns the businesses, or who decides the prices.
 What “Free-market (capitalist)” needs, each need found (with its line) or missing:
 - Missing: Businesses and property stay in private hands. The words do not say it.
 - Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
 
-#### Check question 18
+#### Check question 20
 
 A post with a label pinned on words, from "Comment · @lena_r · 7h". Under it: "On a left-leaning news page". The commenter's words: **Capitalist spin, nothing more.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
 
@@ -735,12 +809,12 @@ A post with a label pinned on words, from "Comment · @lena_r · 7h". Under it: 
 
 **Tap the sentence that decides it.**
 - Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "We will make this a city where good ideas can grow and good jobs stay." — if tapped: That is not the sentence.
-- "The details will come this spring." — if tapped: That is not the sentence.
+- "We will make this a city where good ideas can grow and good jobs stay." — if tapped: note: That is a hope. It names no business, no owner and no price.
+- "The details will come this spring." — if tapped: note: That says when, not what the plan would do.
 - "Said by the mayor’s economic adviser." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
 - A button: "Nothing here decides it" (right)
 
-After the answer: the deciding words are marked. Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “We will make this a city where good ideas can grow and good jobs stay” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
+After the answer: the deciding words are marked (none named). Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “We will make this a city where good ideas can grow and good jobs stay” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
 What you would need to see: To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices.
 What “Free-market (capitalist)” needs, each need found (with its line) or missing:
 - Missing: Businesses and property stay in private hands. The words do not say it.
