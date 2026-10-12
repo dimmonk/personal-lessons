@@ -29,10 +29,13 @@ jobs:
             if [ "${{ github.event.forced }}" = "true" ]; then echo "a forced push after which nothing is new against main: history was rewritten, and nothing was checked"; exit 1; fi
             echo "nothing new to check"; exit 0
           fi
+          # the gates start at this commit (the record tools, --base and the owner-line check); a commit that is its ancestor predates
+          # them and is checked by npm test at the head only; a merge that brings such commits in is held for every gate file it changes
+          GATES_START=21da9cf36e71329fea154dcaf51721ab8539c8d2
+          git rev-parse -q --verify "$GATES_START^{commit}" >/dev/null || { echo "the commit where the gates start is not in this clone"; exit 1; }
           for c in $COMMITS; do
             git checkout -q "$c"
-            # the gates start where the record tools and --base exist; a commit from before them is checked by npm test at the head only
-            if ! git cat-file -e "$c:tools/design/owner-line.mjs" 2>/dev/null || ! git show "$c:tests/lessons/paths.mjs" | grep -q -- "--base"; then echo "== $c predates the gates: skipped"; continue; fi
+            if git merge-base --is-ancestor "$c" "$GATES_START"; then echo "== $c predates the gates: skipped"; continue; fi
             parent=$(git rev-parse -q --verify "$c^" || true)
             echo "== $c against ${parent:-nothing}"
             if [ -n "$parent" ]; then node tests/validate-lessons.mjs --base "$parent"; else node tests/validate-lessons.mjs; fi
@@ -41,5 +44,10 @@ jobs:
             # the owner-line check is the PARENT's copy of the tool, so a commit cannot loosen the check it is held to; a parent from
             # before the gates has none, and the commit's own copy is used
             if [ -n "$parent" ] && git cat-file -e "$parent:tools/design/owner-line.mjs" 2>/dev/null; then git show "$parent:tools/design/owner-line.mjs" > /tmp/owner-line.mjs; else cp tools/design/owner-line.mjs /tmp/owner-line.mjs; fi
-            git show -s --format=%B "$c" > /tmp/msg && node /tmp/owner-line.mjs /tmp/msg --commit "$c"
+            git show -s --format=%B "$c" > /tmp/msg
+            BROUGHT=""
+            if [ "$(git rev-list --parents -n 1 "$c" | wc -w)" -gt 2 ]; then
+              for b in $(git rev-list "$parent..$c"); do if git merge-base --is-ancestor "$b" "$GATES_START"; then BROUGHT="--brought $parent"; break; fi; done
+            fi
+            node /tmp/owner-line.mjs /tmp/msg --commit "$c" $BROUGHT
           done

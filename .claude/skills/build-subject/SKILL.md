@@ -110,8 +110,11 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   (`.github/workflows/lesson-tier.yml`: the tiers at the pushed head, and at every pushed commit, the lesson tier
   against its parent and the owner's word where the gates changed, checked with the parent's copy of the check, so a
   branch committed with hooks off shows on push; a merge is held only for its own changes, since what it brings in was
-  checked on the commits that made it; a forced push after which nothing is new against `main` fails; commits from
-  before the gates existed are skipped there and checked by the tiers at the head. The workflow file runs from the
+  checked on the commits that made it, and a merge that brings in commits from before the gates is held for every gate
+  file it changes; a forced push after which nothing is new against `main` fails; commits that are ancestors of the
+  commit where the gates start (named in the workflow) are skipped there and checked by the tiers at the head. The
+  branch that built the gates lands on `main` by a fast-forward, so every commit of it has been checked where it was
+  made; a fork from before the gates is rebased onto `main` or dropped. The workflow file runs from the
   pushed commit, so its own edit is held only by the owner's word in that commit and by the owner's setting on `main`:
   a ruleset that requires this check, runs it from `main`, and forbids force-pushes); a fast-forward merge makes no commit and
   runs no hook, which only the owner's branch protection on `main` stops; an approval's history entries are the
@@ -128,7 +131,7 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
 
   | Stage (list) | May open | Must not open |
   |---|---|---|
-  | Gate 0 (`asks`) | the owner's messages, briefs and course documents; the version of the subject they were using (the tag `old-lessons`) | |
+  | Gate 0 (`asks`) | the owner's messages, the brief, their own course documents (a top-level folder of theirs), the worklist, the handoff, this subject's own record, this subject's old lessons at the tag `old-lessons` | a research note, an audit, code, a learner view, another subject's record or lessons |
   | Gate 1 (`research`) | `docs/research/`, the sources themselves, `docs/learning-science.md` for its sources | any lesson, learner view or review; any other subject's record |
   | Gates 2 to 5 (`design`) | this subject's record, the notes gate 1 cites, `docs/lesson-standard.md` (what the app can do) | this subject's lessons (`public/subjects/<id>/`), its learner views and reviews; any other subject's record or lessons; the engine's code |
   | The comparison, in an audit | this subject's lessons and learner views, only after gates 2 to 5 are written | |

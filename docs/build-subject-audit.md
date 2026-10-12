@@ -2337,3 +2337,172 @@ For the owner:
 - An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part M. The tenth review (2026-10-12)
+
+An independent review of 68bd7df ("the skill's ninth review answered"), by an agent that did not write it, against
+part L's six fixes (L5). Line numbers are `SKILL.md`'s at 68bd7df. **`npm test` is green**: 300 design reader checks,
+48,520 lesson checks, 245 seeded faults (the pin is 245). Every attack was run on a scratch copy (`git archive HEAD`,
+its own `git init`, `npm run hooks`), never on the real records. The push workflow's per-commit step was cut out of
+`lesson-tier.yml` as written (the `run:` block, with the event's values filled in) and run on a fresh clone of a bare
+copy of the scratch repo. It was also run on a bare clone of this repository with `main` at d03b63f, which is the push
+that lands this work, and with `main` moved to 68bd7df, for what comes after.
+
+What is better, briefly:
+- This branch now passes end to end. The 13 commits before the gates are skipped, and 21da9cf, 575563e and 68bd7df
+  each pass against their parent.
+- A clean merge of an approved gate change is green on push. An evil merge that adds a line to `SKILL.md` is *red*.
+- A forced push to `main` is *red*. A branch made at `main`'s head is green ("nothing new to check"). Tags no longer
+  run the workflow (`branches: ['**']`).
+- A read of the engine's code or of a learner view, taken off `opened.asks`, is *red* under a seeded fault.
+- "👍" and "✅" are two replies, and a check pins it.
+
+What is left falls in three groups:
+- The skip test reads the commit's own tree. One hooks-off commit can mark itself, and every commit after it, as
+  "from before the gates".
+- `--cc` misses an evil merge that takes the other side's version of a file. A merge that brings in skipped commits
+  carries their gate changes in with no owner line. The commit-message hook still holds a merge to everything it
+  brings in.
+- One guard and one key are still never seen red. Some text is still not done.
+
+### M1. L5's six items
+
+| # | L5 item | Status | Evidence |
+|---|---|---|---|
+| 1 | The per-commit step starts where the gates start; the skill names how this branch lands | **Done, with a break** | yml 34-35. R1: this branch's range `d03b63f..68bd7df` gives 13 commits skipped, and 21da9cf, 575563e and 68bd7df each green (exit 0). <br>Broke (M3, item 1): whether a commit "predates the gates" is read from the commit's own tree. <br>Not done: no text says how this branch lands. R2: as a pull request, GitHub's merge commit is checked against `main` (d03b63f) and fails 32 V69 checks. A squash fails the same way (part L, z9). The commit message says "the skill says how", but SKILL 114 only says that early commits are skipped. |
+| 2 | `owner-line.mjs --commit` reads a merge's own changes (`--cc`) | **Done, with a break** | owner-line 11-18. A4: a clean `--no-ff` merge of a commit that carries the owner's word, with no line on the merge, is green on push. A5: an evil merge adding a line to `SKILL.md` is *red*. <br>Broke (M3, items 2 and 3): <br>- A5b, an evil merge that takes the other side's version, is green. <br>- A9, a merge that brings in skipped commits, needs no owner line. <br>- The hook still refuses the clean merge of A4 locally ("this commit changes the gates (.claude/skills/build-subject/SKILL.md)"). |
+| 3 | An empty range fails only on a forced push; no tag pushes | **Done** | yml 6-9, 28-31. A7: a forced push to `main` (amended) is *red*: "a forced push after which nothing is new against main". A8: a branch pushed at `main`'s head, not forced, prints "nothing new to check" and exits 0. With only `branches` set, GitHub runs no workflow for tags. |
+| 4 | A seeded fault for the forbidden classes | **Mostly** | controls-table 153-154. Each class was taken out of `FORBIDDEN_EVERYWHERE` (design-shape 165-167) in turn: <br>- the engine (`public/`): one control fails; <br>- a learner view: one control fails; <br>- `tests/` and `tools/`: all 245 controls and 300 reader checks stay green (M3, item 4). |
+| 5 | `sameWords`: a reply with no letters is not the same words; pin the `\p{L}\p{N}` key | **Partly** | design-shape 102-104, design-pure 62-64. Done: `sameWords('👍','✅')` is false. With the fallback taken out, "two replies with no letters are two replies" fails. <br>Not done: with the key put back to `[^a-z0-9]` and the fallback kept, every control and reader check stays green. The check named "letters of any script count" also passes under the ASCII key, because "Très" keys to "tr s" on both sides. Under that key, "OK да" and "OK нет" read as the same words (M3, item 5). |
+| 6 | Text: gate 0's sources at SKILL 129 and 210; "a merge's own changes"; the setting that holds the workflow; the standard's entry | **Partly** | Done: <br>- step 1 (SKILL 210-213) names the sources as `asksOk` holds them; <br>- SKILL 112-113 say "a merge is held only for its own changes"; <br>- SKILL 115-116 say a ruleset that requires this check, runs it from `main` and forbids force-pushes. <br>Not done: <br>- the gate 0 row of "What may be opened" (SKILL 131) still has an empty "Must not open". Its "May open" still lacks the worklist, the handoff and this subject's record, and still does not say "this subject's" old lessons; <br>- the standard's section 11 entry now says "rounds four to nine", but its body is the same four lines. It still names none of the rules from rounds seven to nine: topics only grow, the narrowed gate 0 sources, a forbidden read never erased, the same words across subjects, the parent's check on push, a merge's own changes, the forced-push rule, the skip of commits from before the gates. |
+
+One is done, two are done with a break, one is mostly done and two are partly done. Nothing is red.
+
+### M2. The attacks
+
+- **(a) to (e), (h), (j) to (p), (s) to (x), (z3) to (z6):** not run again. The code they reach did not change in
+  68bd7df: `rules-design`, `designs`, `rules-shape`, `paths`, `approve`, the records and the fixture are the same as
+  at 575563e. Part K's and part L's results stand, and the named ones stay named.
+- **(q), (z7) The same words, new punctuation, on one subject or two:** their controls are green on the new key.
+  A reply with no letters is compared as typed, so "👍" and "👍!" are two replies. That is the comment's stated
+  choice (design-shape 102). Reusing a reply is invented owner words, which is named.
+- **(f) A hooks-off ask removal** (Math's `primes-factors`, with `owner-line.mjs` made to exit 0, first push): *red*
+  at the lesson tier.
+- **(g') The checker edited in a hooks-off commit** (the tool made to exit 0, a line added to `SKILL.md`): *red*,
+  judged by the parent's copy.
+- **(g2) The tool deleted in a hooks-off commit, with the ask removed (new, A2):** "predates the gates: skipped". The
+  step exits 0, and `npm test` at the head is green. Not named (M3, item 1).
+- **(g3) `--base` spelled `-\-base` in `paths.mjs`, with the ask removed (new, A3b):** same result. The validator
+  still takes `--base`. The commit is skipped, and so is every later commit that carries the file. Not named (M3,
+  item 1).
+- **(z8) An evil merge that adds a `SKILL.md` line (A5):** *red*.
+- **(z8') An evil merge that takes the other side (new, A5b).** `main` gets an approved change to
+  `tests/lessons/design-shape.mjs`. A branch from before that change is merged with the hooks off, the file is
+  resolved to the branch's version, and the merge has no owner line. The approved change is reverted, and the push is
+  green. `--cc` lists nothing; the first-parent diff and `git show --remerge-diff` both list the file. Not named (M3,
+  item 2).
+- **(z9) This branch lands:**
+  - as a first push, or a fast-forward of `main` (R1): green;
+  - as a pull request (R2): *red*, 32 V69, because GitHub's merge commit is measured against `main`'s pre-redesign
+    records;
+  - as a squash: *red* (part L).
+
+  The text names no route (M3, item 6).
+- **(z10) A clean merge of an approved gate change (A4):** green on push. Locally, with the hooks on, the
+  commit-message hook *refuses* it (M3, item 3).
+- **(z11) An old fork merged after this lands (new, A9).** On a bare clone with `main` at 68bd7df, a branch from
+  d03b63f has one hooks-off commit, with no owner line, that edits `tests/lessons/rule.mjs`. It is merged with
+  `--no-ff`. That commit "predates the gates" and is skipped. The merge's `--cc` is empty, so the push is green. The
+  real branch `pilot-fixes-2026-10-12` is such a fork: it is based at d03b63f and changes four gate files
+  (`controls-table`, `rules-lesson`, `rules-shape`, `shapes`). Not named (M3, item 2).
+- **(z12) The forced-push rule (A7, A8):** a forced push to `main` is *red*. A branch at `main`'s head is green.
+  Right.
+- **(f2), (z2):** a branch's later push checks only its new commits, and GitHub runs the edited workflow file. Both
+  are named (SKILL 114-116).
+
+### M3. What the fixes broke or missed
+
+1. **The skip test can be chosen by the commit it skips** (g2, g3). Line 35 asks whether *this* commit's tree has
+   `tools/design/owner-line.mjs`, and whether its `paths.mjs` contains the text `--base`. A hooks-off commit decides
+   both. It can delete the tool, or spell the flag another way, and then it is never checked, along with every commit
+   after it that keeps the change. The tiers at the head cannot see what such a commit removed, because at the head
+   "since the last commit" is the head itself. The fix is to decide by ancestry against a fixed point: name the first
+   gated commit (21da9cf) in the workflow, and skip a commit only when it does not descend from that commit
+   (`git merge-base --is-ancestor`). A later commit cannot change its ancestry.
+2. **A merge's own changes are read too narrowly** (z8', z11):
+   - `diff-tree --cc` lists a path only when the result differs from every parent. A merge that resolves a gate file
+     to the other side's version, which git's own merge would not do, shows nothing.
+     `git diff-tree --remerge-diff --name-only <merge>` (git 2.36 and later) compares the merge with git's automatic
+     result. On the three merges tried, it lists exactly the right files: none for A4, `SKILL.md` for A5, and
+     `design-shape.mjs` for A5b.
+   - "What it brings in was checked on the commits that made it" is false for commits the step skips. A merge
+     whose second-parent side holds a skipped commit should be held to its whole first-parent gate diff.
+3. **The hook and the push now disagree on merges** (z10). In `--staged` mode, `owner-line.mjs` reads
+   `git diff --cached` against HEAD. That is everything the merge brings in, so a session that merges `main` into a
+   branch, as 21b726a did, needs a fresh owner line, or `--no-verify`, for gate changes that already carry the owner's
+   word. The skill says a merge is held only for its own changes. During a merge (`MERGE_HEAD` exists), the hook can
+   compare the staged tree with the automatic merge (`git merge-tree --write-tree HEAD MERGE_HEAD`), which is the same
+   reading as `--remerge-diff`.
+4. **The `tests/` and `tools/` forbidden class is never seen red.** Its only effect of its own is in `erasable`. With
+   it removed, all 245 controls stay green. It needs a seeded fault: a read of `tools/design/approve.mjs` committed
+   under `asks`, then taken off.
+5. **The `\p{L}\p{N}` key is not pinned.** The check meant to pin it, "letters of any script count", passes under the
+   ASCII key too. A check that does fail there: `!sameWords('OK да', 'OK нет')`.
+6. **Text:**
+   - The gate 0 row (SKILL 131) should be filled as step 1 now reads.
+   - Name how this branch lands, in the skill's account of the push or in the handoff: by fast-forward of `main`. A
+     pull request or a squash is red against `main`'s records from before the redesign.
+   - The body of the standard's section 11 entry should name the rules from rounds seven to nine.
+
+### M4. The two screens the owner reads
+
+Neither record has changed since 575563e, which part L reviewed. `approve.mjs <id> goal --show` prints the same text:
+Psychology at 4,551 characters (747 words), Geography at 3,402 characters (679 words). Part L's readings stand:
+- **Psychology:** true to its record. The test reaches every topic group. Readable: fair, and "projection" appears
+  more than once. *Verdict:* it can go out. Its length is the owner's call.
+- **Geography:** true to its record. The test reaches every topic group. Readable: good. The paragraph's "pointed at"
+  and the sentence's "lit" are the same act in two words. *Verdict:* it can go out.
+
+`docs/research/designing-a-subject.md` and the skill's "What the gates rest on" did not change in 68bd7df. There is
+no new finding there.
+
+### M5. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. Decide "from before the gates" by ancestry against a commit named in the workflow (21da9cf), not by the commit's
+   own tree. As written, one hooks-off commit that deletes the tool or respells `--base` exempts itself and every
+   later commit (g2, g3).
+2. Read a merge's own changes with `--remerge-diff`, not `--cc`. Hold a merge that brings in skipped commits to its
+   whole first-parent gate diff (z8', z11).
+3. The commit-message hook reads a merge's own changes the same way, against the automatic merge (z10).
+4. A seeded fault for the `tests/` and `tools/` forbidden class.
+5. Pin the `\p{L}\p{N}` key with a check that fails under the ASCII key (`'OK да'` against `'OK нет'`).
+6. Text:
+   - SKILL 131, gate 0's row;
+   - how this branch lands (fast-forward; a pull request or a squash is red);
+   - the body of the standard's section 11 entry.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, and a letterless reply
+  reused with new punctuation.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, until the owner's ruleset is in place. A branch's later push checks only its new commits.
+- The workflow file edited with the hooks off: GitHub runs the edited copy.
+- What was opened is the session's own account. The audit listed by its GitHub URL passes gate 0.
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line.
+- Commits from before the gates are checked only by the tiers at the head (SKILL 114).
+
+For the owner:
+- A ruleset on `main`: it requires the "lesson tier" check, runs it from `main` and forbids force-pushes. (Carried
+  over.)
+- Land this branch by fast-forward. As things stand, a pull request or a squash is red.
+- `pilot-fixes-2026-10-12` is based on the old `main` and changes four gate files. Rebase it onto the new `main`, or
+  drop it. Do not merge it as it is (z11).
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

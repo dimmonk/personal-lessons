@@ -789,10 +789,16 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   review names the version it reviewed; a record review is a gate 5 field; the research notes state their read level;
   `designedOn` dates a design; the two hooks hold the gates (9.1, 9.2 V69, section 2). Version 1 had none of these.
 
-- **2026-10-12, later**: the review loop's rounds four to nine (commits e298e1e, fdbb6e3, fece38c, 21da9cf, 575563e and the one that follows): owner
-  entries append-only with their history; every review names the version it reviewed and its date is the file's;
-  V80 and V71 hold the subject record's mirrors only when the record is written; the lesson tier is measured against a
-  base (`--base`, each pushed commit's parent in the workflow); a merge commit runs the same hook.
+- **2026-10-12, later**: the review loop's rounds four to ten (commits e298e1e, fdbb6e3, fece38c, 21da9cf, 575563e, 68bd7df and
+  the one that follows): owner entries append-only with their history (`approved.history`, `previous`); the same words
+  as an earlier approval refused, letters of any script counted; every review names the version it reviewed and its
+  date is the file's; a Disclosure voids a review; V80 and V71 hold the subject record's mirrors only when the record is
+  written; `designedOn` dates a design and a redesign needs its own review; the topics an ask is taught under only grow
+  without the owner's word; the lesson tier is measured against a base (`--base`, each pushed commit's parent in the
+  workflow, with the parent's copy of the owner-line check); a merge is held for its own changes (the remerge diff) and
+  for what it brings in from before the gates; the pre-commit hook validates the staged tree with the base unset; the
+  gates (skill, record rules, tools, notes, hooks, workflow, package.json) change only with the owner's word in the
+  commit.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.
