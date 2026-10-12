@@ -104,11 +104,12 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   or the research notes. What does not, said here so no one mistakes it for a check: a session can write a quote that
   was never said, write a review file and its verdict itself, or mark a note's finding as read in full without reading
   it, or write a review's date, verdict or fingerprint line by hand; a hook is skipped with `--no-verify`, with
-  `core.hooksPath` pointed elsewhere, with a hook file edited and left unstaged, or by rewriting history after the
-  fact; a session that edits the validator and its controls together can switch a rule off (the commit then carries an
-  owner line that only the owner can read as false). The push runs the tiers again where no session edits the runner
-  (`.github/workflows/lesson-tier.yml`: the tiers at the pushed head, and the lesson tier at every pushed commit
-  against its parent, so a branch committed with hooks off shows on push); a fast-forward merge makes no commit and
+  `core.hooksPath` pointed elsewhere, with a hook file edited and left unstaged, by a `cherry-pick`, a `rebase` or an
+  `am` (which run no commit hook), or by rewriting history after the fact; a session that edits the validator and its controls together can switch a rule off (the commit then carries an
+  owner line that only the owner can read as false). The push runs the tiers again outside the session's hooks
+  (`.github/workflows/lesson-tier.yml`, which a session can edit only with the owner's word in the commit: the tiers at
+  the pushed head, and at every pushed commit, the lesson tier against its parent and the owner's word where the gates
+  changed, so a branch committed with hooks off shows on push); a fast-forward merge makes no commit and
   runs no hook, which only the owner's branch protection on `main` stops; an approval's history entries are the
   record's own claims (their fingerprints cannot be checked against screens that are gone; the committed prefix is what
   is held). The rest rests on honesty, and on the owner reading the record's owner fields, the review files and the
@@ -212,8 +213,8 @@ order. A subject in the app carries everything.
    null, and the item appears on gate 2's screen as needing the owner's word (every item appears there: with the topics
    it is placed under, or the owner's word on it, or "needs your word"), and waits. Only the owner's word, recorded with its source in `owner`, settles an item:
    `dropped: true` on their word to drop it, or topics found for it on their word to keep it (`tools/design/asked.mjs`).
-   A drop, topics taken away, or fewer topics than before, since the last commit, needs a new word of theirs in that
-   same change. An item they move to another subject is dropped here with those words and
+   A drop, or any topic taken away from the ones an ask is taught under (the topics only grow), since the last commit,
+   needs a new word of theirs in that same change. An item they move to another subject is dropped here with those words and
    asked for there. While any item is not dropped and not covered, the validator refuses every change to the subject's
    content.
 

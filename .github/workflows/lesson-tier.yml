@@ -1,6 +1,7 @@
-# The fast tiers run on every push, where no session can skip a hook: at the pushed head, npm test; and for every commit of the push, the
-# lesson tier measured against that commit's first parent (what "since the last commit" means), so an ask removed, an owner entry edited
-# or a record deleted on any commit of a branch shows, merge commits included (build-subject skill, "How it runs").
+# The fast tiers run on every push, where no session can skip a hook: at the pushed head, npm test; and for every commit of the push (a new
+# branch's or a force-push's commits are those not on main), the lesson tier measured against that commit's first parent (what "since the
+# last commit" means) and the owner's word on a commit that changes the gates. So an ask removed, an owner entry edited, a record deleted or
+# a gate changed with the hooks off shows on push, merge commits included (build-subject skill, "How it runs").
 name: lesson tier
 on: [push, pull_request]
 jobs:
@@ -12,11 +13,14 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm test
-      - name: each commit against its parent
+      - name: each commit against its parent, with the owner's word where the gates changed
         run: |
           set -e
-          if [ "${{ github.event_name }}" = "pull_request" ]; then RANGE="origin/${{ github.base_ref }}..HEAD"; else RANGE="${{ github.event.before }}..${{ github.sha }}"; fi
-          git rev-parse "${{ github.event.before }}" >/dev/null 2>&1 || RANGE="HEAD~1..HEAD"
+          BEFORE="${{ github.event.before }}"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then RANGE="origin/${{ github.base_ref }}..HEAD"
+          elif [ -n "$BEFORE" ] && git rev-parse -q --verify "$BEFORE^{commit}" >/dev/null && git merge-base --is-ancestor "$BEFORE" HEAD; then RANGE="$BEFORE..HEAD"
+          else RANGE="$(git merge-base origin/main HEAD 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"; fi
+          echo "checking $RANGE"
           for c in $(git rev-list --reverse "$RANGE"); do
             git checkout -q "$c"
             parent=$(git rev-parse -q --verify "$c^" || true)
@@ -24,4 +28,5 @@ jobs:
             if [ -n "$parent" ]; then node tests/validate-lessons.mjs --base "$parent"; else node tests/validate-lessons.mjs; fi
             node tests/lessons/negative-controls.mjs >/dev/null
             node tests/design-pure.mjs >/dev/null
+            git show -s --format=%B "$c" > /tmp/msg && node tools/design/owner-line.mjs /tmp/msg --commit "$c"
           done

@@ -56,7 +56,7 @@ for (const [id, r] of Object.entries(designs)) {
   if (r.error || !r.goal) continue;
   const n = screenText(r, 'goal').length;
   ok(n <= GOAL_SCREEN_MAX_CHARS, `${id}: the printed gate 2 screen is ${n} characters`);
-  dropsToShow(r).forEach(d => ok(!r.asked.find(a => a.id === d.id).owner, `${id}: ${d.id} is shown as dropped although the owner spoke on it`));
+  dropsToShow(r).forEach(d => ok(!r.asked.find(a => a.id === d.id).owner, `${id}: ${d.id} is shown as needing the owner's word although they spoke on it`));
 }
 same(parseRecord('no dashes').error, 'does not open with a line of three dashes', 'a record with no dashes');
 

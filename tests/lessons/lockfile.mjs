@@ -19,8 +19,16 @@ export async function readJsonIfPresent(fileUrl) {
 // What git says when a file simply is not in the last commit (so there is no history to anchor to).
 const NOT_COMMITTED = /exists on disk, but not in|does not exist in|not a git repository|bad revision|unknown revision|invalid object name|ambiguous argument|bad object/i;
 
-// The commit the working tree is measured against: HEAD, or the ref in LESSONS_BASE (the workflow sets each pushed commit's parent).
-export const BASE = () => process.env.LESSONS_BASE || 'HEAD';
+// The commit the working tree is measured against: HEAD, or the ref in LESSONS_BASE (the workflow sets each pushed commit's parent). A base
+// that is not a commit is an error, never "nothing committed": a typo would otherwise skip every since-last-commit check.
+export function BASE() {
+  const base = process.env.LESSONS_BASE || 'HEAD';
+  if (base !== 'HEAD') {
+    try { execFileSync('git', ['rev-parse', '-q', '--verify', `${base}^{commit}`], { stdio: ['ignore', 'pipe', 'pipe'] }); }
+    catch { throw new Error(`the base ${base} is not a commit of this repository`); }
+  }
+  return base;
+}
 
 // The JSON committed at the base for a working file, or null when it was never committed.
 export function readCommittedJson(fileUrl) {

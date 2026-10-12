@@ -1,8 +1,6 @@
 #!/bin/sh
-# A change to the build-subject skill, to the record rules and their harness, to the tools that write the design records, to the research notes
-# the records cite, to the hooks or to package.json is a change to the gates the session is held to, so the commit carries the owner's word
-# for it: a line "Owner's word: "<their words>" (<where they said it>)" in the message. Set up once with: npm run hooks
+# A change to the gates (the skill, the record rules and their harness, the record tools, the research notes, the hooks, the push workflow,
+# package.json) carries the owner's word in the message: tools/design/owner-line.mjs says which paths and checks the line. The push
+# workflow runs the same check on every pushed commit. Set up once with: npm run hooks
 cd "$(git rev-parse --show-toplevel)"
-if git diff --cached --name-only | grep -qE '^(\.claude/skills/build-subject/|tests/lessons/|tests/validate-lessons\.mjs|tests/design-pure\.mjs|tests/fixtures/fixture-subject/design\.mjs|tools/design/|docs/research/|\.githooks/|\.github/|package\.json)'; then
-  grep -qE "^Owner's word: \".+\" \(.+\)" "$1" || { echo "commit-msg: this commit changes the gates (the skill, the record rules, the tools, the research notes or the hooks); add a line: Owner's word: \"<their words>\" (<where they said it>)"; exit 1; }
-fi
+node tools/design/owner-line.mjs "$1" --staged

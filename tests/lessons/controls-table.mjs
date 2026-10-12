@@ -44,7 +44,7 @@ const interviewMeta = (...rest) => ['subjects', 'interview', 'meta', ...rest];
 // V69: the last commit's lock with one lesson's content different, and a design record patched as given (reviews and research too)
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
 const asDesign = (input, lessonKey, patch, more = {}) => ({
-  ...input, ...more, designs: { ...input.designs, [F]: { ...input.designs[F], ...patch } }, committedLock: lessonKey ? changed(input.lock, lessonKey) : input.committedLock });
+  ...input, ...more, designs: { ...input.designs, [F]: { ...input.designs[F], ...patch } }, committedLock: lessonKey ? changed(input.lock, lessonKey) : more.committedLock !== undefined ? more.committedLock : input.committedLock });
 const design = input => input.designs[F];
 // a patch to the record with the goal's approval recomputed over the patched screen (the owner approved the record as patched)
 const reapproved = (input, patch) => { const r = { ...design(input), ...patch }; return { ...patch, approved: { ...r.approved, goal: { ...r.approved.goal, fp: fingerprint(approvedText(r, 'goal')), shown: dropsToShow(r).map(d => d.id) } } }; };
@@ -94,7 +94,7 @@ export const CONTROLS = [
     input: input => asDesign(input, 'fixture/l1', { parts: design(input).parts.map(p => ({ ...p, topics: [] })), asked: [{ ...design(input).asked[0], kept: null, dropped: true, owner: { date: '2026-10-12', words: 'drop it', where: 'chat, 2026-10-12' } }] }) },
   { rule: 'V69', name: 'a part covering a topic that is not on the list', input: input => asDesign(input, null, { parts: design(input).parts.map(p => p.id === '1' ? { ...p, topics: [...p.topics, 'the wind'] } : p) }) },
   { rule: 'V69', name: 'the goal changed after the owner approved it', input: input => asDesign(input, null, { goal: design(input).goal + ' And more.' }) },
-  { rule: 'V69', name: 'an approval that does not record which asks were shown as dropped', input: input => asDesign(input, null, { approved: { ...design(input).approved, goal: (({ shown, ...rest }) => rest)(design(input).approved.goal) } }) },
+  { rule: 'V69', name: 'an approval that does not record which asks were shown as needing the owner\'s word', input: input => asDesign(input, null, { approved: { ...design(input).approved, goal: (({ shown, ...rest }) => rest)(design(input).approved.goal) } }) },
   { rule: 'V69', name: 'the same words of the owner\'s on two subjects (a blanket)', input: input => asDesign(input, null, { approved: { ...design(input).approved, practice: { ...design(input).approved.practice, words: input.designs.chorus.approved.practice.words } } }) },
   { rule: 'V69', name: 'a goal screen longer than one screen', input: input => asDesign(input, null, { goal: Array.from({ length: 150 }, () => 'You can read a forecast.').join(' ') }) },
   { rule: 'V69', name: 'a practice longer than three lines', input: input => asDesign(input, null, { practice: Array.from({ length: 30 }, () => 'Decide on forecasts.').join(' ') }) },
@@ -119,6 +119,9 @@ export const CONTROLS = [
   { rule: 'V69', name: 'a history entry that is not an approval that stood', input: input => asDesign(input, null, { approved: { ...design(input).approved, history: { ...design(input).approved.history, practice: [{ date: '2026-10-01', words: 'yes' }] } } }) },
   { rule: 'V69', name: 'two replacements of an approval between commits, the chain kept (allowed)', green: true, input: input => asDesign(input, null, { approved: { ...design(input).approved, goal: { ...design(input).approved.goal, date: '2026-10-14', words: 'third words, on track' }, history: { ...design(input).approved.history, goal: [design(input).approved.goal, { ...design(input).approved.goal, date: '2026-10-13', words: 'second words' }] } } }, { committedDesigns: { [F]: design(input) } }) },
   { rule: 'V69', name: 'an ask dropped since the last commit without a new word of the owner\'s', input: input => asDesign(input, null, reapproved(input, { asked: [{ ...design(input).asked[0], kept: null, dropped: true, owner: { date: '2026-10-12', words: 'keep it', where: 'chat, 2026-10-12' } }] }), { committedDesigns: { [F]: { ...design(input), asked: [{ ...design(input).asked[0], owner: { date: '2026-10-12', words: 'keep it', where: 'chat, 2026-10-12' } }] } } }) },
+  { rule: 'V69', name: 'an ask moved to another topic since the last commit without a new word of the owner\'s', input: input => asDesign(input, null, reapproved(input, { asked: [{ ...design(input).asked[0], kept: [design(input).topics[1]] }] }), { committedDesigns: { [F]: design(input) } }) },
+  { rule: 'V80', name: 'a redesign\'s readingShare waiting for the owner, the subject record unchanged (allowed)', green: true,
+    input: input => asDesign(input, null, { readingShare: 0.3, approved: { ...design(input).approved, practice: null, history: { ...design(input).approved.history, practice: [design(input).approved.practice] } } }, { committedDesigns: { [F]: design(input) }, committedLock: input.lock }) },
   { rule: 'V69', name: 'an ask placed under fewer topics than at the last commit without a new word of the owner\'s', input: input => asDesign(input, null, reapproved(input, { asked: [{ ...design(input).asked[0], kept: [design(input).topics[0]] }] }), { committedDesigns: { [F]: { ...design(input), asked: [{ ...design(input).asked[0], kept: [...design(input).topics] }] } } }) },
   { rule: 'V69', name: 'an approval whose sentence is not the one on its screen', also: ['V80'], input: input => asDesign(input, null, { approved: { ...design(input).approved, goal: { ...design(input).approved.goal, sentence: 'Another sentence.' } } }) },
   { rule: 'V69', name: 'a forbidden read erased from opened.asks since the last commit', input: input => asDesign(input, null, {}, { committedDesigns: { [F]: { ...design(input), opened: { ...design(input).opened, asks: [...design(input).opened.asks, 'docs/subjects/chorus/design.md'] } } } }) },
@@ -348,4 +351,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 236;
+export const PINNED_CONTROL_COUNT = 238;

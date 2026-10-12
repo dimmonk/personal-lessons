@@ -478,7 +478,8 @@ export const V80 = subjectRule('V80', (s, check) => {
   if (approved && s.subjectChanged) check(s.meta.endResult === approved, 'the subject\'s end result is not the sentence the owner approved, word for word (approved.goal.sentence)');
   else if (!approved && !s.committedDesign) check(s.meta.endResult === design.endResult, 'the subject\'s end result is not the design record\'s end result, word for word');
   else check(true, '');
-  check(s.meta.readingShare === design.readingShare, `the subject's readingShare is ${s.meta.readingShare} and the design record's is ${design.readingShare}`);
+  if (s.subjectChanged) check(s.meta.readingShare === design.readingShare, `the subject's readingShare is ${s.meta.readingShare} and the design record's is ${design.readingShare}`);
+  else check(true, '');
 });
 
 /* ---------- V81 ---------- */

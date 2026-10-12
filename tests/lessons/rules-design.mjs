@@ -87,7 +87,7 @@ function gateProblems(data, id, r, committedLock, reviews) {
   if (!lessons.length && !subject) return problems;
   const what = [...(subject ? ['the subject record'] : []), ...lessons.map(l => `lesson ${l}`)].join(', ');
   const holds = [
-    ...openedProblems(id, r).filter(p => !p.startsWith('the design record has no')).map(p => `${p}: the content is held until the subject is redesigned`),
+    ...openedProblems(id, r).filter(p => !p.startsWith('the design record has no')).map(p => `${p}: the content is held (a redesign starts new research, design and writing lists; a forbidden read listed under asks holds it for good)`),
     ...unplacedAsks(r).map(a => `something the owner asked for is in no part: ${a} (gate 0)`),
     ...uncoveredTopics(r).map(t => `a topic the owner signed off is in no part: ${t} (gates 2 and 4)`),
     ...(r.approved.goal && r.approved.practice ? [] : ['the owner has not approved the goal and the practice method (gates 2 and 3)']),
@@ -107,7 +107,7 @@ function blanketProblems(designs) {
     for (const k of ['goal', 'practice']) {
       const v = r.approved[k];
       if (!v || !isText(v.words, 1)) continue;
-      const key = v.words.trim().toLowerCase();
+      const key = v.words.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
       if (seen[key] && seen[key] !== id) return [`${id}: approved.${k} carries the same words as ${seen[key]}'s approval ("${v.words.slice(0, 60)}"): one message of the owner's cannot approve two subjects`];
       seen[key] = id;
     }

@@ -84,7 +84,7 @@ export function askedSinceProblems(r, committed) {
     const newWord = Boolean(n.owner) && !sameEntry(n.owner, a.owner);
     if (n.dropped && !a.dropped && !newWord) problems.push(`asked item ${a.id} was dropped since the last commit without a new word of the owner's: only their word drops an ask`);
     if (a.kept !== null && n.kept === null && !n.dropped && !newWord) problems.push(`asked item ${a.id} lost its topics since the last commit without a new word of the owner's`);
-    if (Array.isArray(a.kept) && Array.isArray(n.kept) && n.kept.length < a.kept.length && n.kept.every(x => a.kept.includes(x)) && !newWord) problems.push(`asked item ${a.id} is placed under fewer topics than at the last commit (${a.kept.length} to ${n.kept.length}) without a new word of the owner's`);
+    if (Array.isArray(a.kept) && Array.isArray(n.kept) && !a.kept.every(x => n.kept.includes(x)) && !newWord) problems.push(`asked item ${a.id} lost a topic it was placed under at the last commit (${a.kept.filter(x => !n.kept.includes(x)).join('; ')}) without a new word of the owner's: the topics an ask is taught under only grow`);
     return problems;
   });
 }
@@ -155,9 +155,10 @@ export function principleProblems(r, research) {
 
 // what each stage may open (SKILL.md, "What may be opened"); `opened` keeps one list per stage
 const RESEARCH_OK = /^(docs\/research\/|docs\/learning-science|https?:\/\/)/;
-const ASKS_OK = /^(chat\b|the brief|old-lessons:|https?:\/\/|docs\/(?!research\/)|[^/\s]+\/[^/\s]+\.md\b)/;   // the owner's messages, the brief, their course documents, the project's written records of their words (the worklist, a plan), the version they used; never a research note
+const ASKS_OK = /^(chat\b|the brief|old-lessons:|https?:\/\/|docs\/lesson-rebuild-todo\.md|docs\/HANDOFF\.md|docs\/subjects\/[^/]+\/design\.md|[^/\s]+\/[^/\s]+\.md\b)/;   // the owner's messages, the brief, their course documents, the project's records of their words (the worklist, the handoff, this subject's own record), the version they used; never a research note or code
 const FORBIDDEN_EVERYWHERE = (id, p) => p.startsWith(`public/subjects/${id}/`) ? 'the subject\'s own lessons' : p.startsWith(`docs/learner-view/${id}-`) ? 'the subject\'s learner views'
-  : p.startsWith(`docs/subjects/${id}/reviews/`) ? 'the subject\'s reviews' : (/^docs\/subjects\/([^/]+)\//.exec(p) || [])[1] && !p.startsWith(`docs/subjects/${id}/`) ? 'another subject\'s record' : p.startsWith('public/subjects/') ? 'another subject\'s lessons' : null;
+  : p.startsWith(`docs/subjects/${id}/reviews/`) ? 'the subject\'s reviews' : (/^docs\/subjects\/([^/]+)\//.exec(p) || [])[1] && !p.startsWith(`docs/subjects/${id}/`) ? 'another subject\'s record' : p.startsWith('public/subjects/') ? 'another subject\'s lessons'
+  : p.startsWith('docs/learner-view/') ? 'a learner view' : p.startsWith('public/') ? 'the engine\'s code' : p.startsWith('tests/') || p.startsWith('tools/') ? 'the validator or the tools' : null;
 // the writer (gates 6 and 7) may open this record, the standard, the test subject for the data shape, this subject's own files, and this
 // subject's old material at the tag old-lessons (never another subject's lessons: a copied lesson becomes a template)
 const writingOk = (id, p) => p === `docs/subjects/${id}/design.md` || p === 'docs/lesson-standard.md' || p.startsWith('tests/fixtures/fixture-subject/') || p.startsWith(`public/subjects/${id}/`)

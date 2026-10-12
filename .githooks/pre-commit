@@ -1,8 +1,10 @@
 #!/bin/sh
 # The lesson tier runs on the STAGED tree before every commit (not the working tree: a change staged while the working file is left as it was
 # would otherwise slip past): the staged files are exported to a temporary folder and validated there against HEAD, with the seeded faults and
-# the reader checks on the real text. A red tier is never committed (build-subject skill, "How it runs"). Set up once with: npm run hooks
+# the reader checks on the real text. A red tier is never committed (build-subject skill, "How it runs"). LESSONS_BASE is unset here: the
+# base of a commit is HEAD and nothing else. Set up once with: npm run hooks
 set -e
+unset LESSONS_BASE
 ROOT="$(git rev-parse --show-toplevel)"
 TMP="$(mktemp -d "${TMPDIR:-/tmp}/pre-commit.XXXXXX")"
 trap 'rm -rf "$TMP"' EXIT
