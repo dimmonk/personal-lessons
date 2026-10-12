@@ -35,6 +35,11 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [x] Psychology's pilot live: what someone did, told the way it reaches you, "can't tell yet" a right answer
 - [x] Scams' pilot and baseline built and tested (2026-10-11), waiting to be deployed: messages as they arrive in six forms, act / check first / leave, a clock, a call that pushes back (standard 26.10, step 8)
 - [x] US Civics' pilot built and tested (2026-10-11), waiting to be deployed: the 17 questions of part 1 in the list's own words, read aloud when you tap, answered from memory and checked, "my answer means the same", your own answers and interview date, the mock interview (on the test subject) (standard 26.10, step 9)
+- [x] The build-subject skill audited from its outputs (2026-10-12, `docs/build-subject-audit.md`, part A): the design gates have
+  never said no; the stand-in gain review says no and finds real defects (5 of 7 pilots fail); none of the five is fixed yet;
+  the records share one shape; most evidence is read from abstracts; the approvals and the phone try assume an owner with time
+- [ ] The skill's own text audited (part B, eight questions with pass conditions) and fixed: waits on the file, which lives only
+  on your Mac; then the gain review becomes a gate (V69), approvals shrink to one screen, one current standard
 - [ ] Geography, a new subject (2026-10-12): the plan is written through the gates (`docs/subjects/geography/design.md`, evidence
   `docs/research/knowing-where-places-are.md`): a name shown, the place tapped on a map with no names on it; 21 parts, 26
   lessons; no lesson is written until you approve the end result and the practice method (V69)
@@ -46,7 +51,9 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
-- [ ] Geography: approve or change the end result and the practice method in `docs/subjects/geography/design.md` (gates 2
-  and 3); then the pilot, lesson 1 (the map of the United States), is built for you to try
+- [ ] Copy the skill into the repo from your Mac (`cp -R ~/.claude/skills/build-subject .claude/skills/build-subject`, commit,
+  push; the commands are at the end of `docs/build-subject-audit.md`), or paste its text into the chat
+- [ ] Geography: waits for the skill audit; then its record is re-run through the fixed skill with your three changes of
+  2026-10-12 (the world first, flags as a third form of each country, one line of what the country is), and you approve gates 2 and 3
 - [ ] Whenever you have time: try any lesson on your phone; your words overwrite the stand-in review
 - [x] The helpline in Psychology's pilot checked against thehotline.org (2026-10-11): 1.800.799.SAFE (7233) and text START to 88788, as written
