@@ -5,7 +5,7 @@ artifact: https://claude.ai/artifact/GwniHhX1ntEJah2MQ5kFjv
 
 # Lesson rebuild
 
-Status on 2026-10-11. Fieldcraft is live at https://fieldcraft.web.app. On 2026-10-10 every subject was found to practice
+Status on 2026-10-12. Fieldcraft is live at https://fieldcraft.web.app. On 2026-10-10 every subject was found to practice
 the wrong thing (Singing was story-sorting), so every subject is being rebuilt through the `build-subject` skill on one
 new practice engine (lesson standard section 26), each subject's pilot lesson first, the rest after you try the pilot.
 
@@ -35,6 +35,9 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [x] Psychology's pilot live: what someone did, told the way it reaches you, "can't tell yet" a right answer
 - [x] Scams' pilot and baseline built and tested (2026-10-11), waiting to be deployed: messages as they arrive in six forms, act / check first / leave, a clock, a call that pushes back (standard 26.10, step 8)
 - [x] US Civics' pilot built and tested (2026-10-11), waiting to be deployed: the 17 questions of part 1 in the list's own words, read aloud when you tap, answered from memory and checked, "my answer means the same", your own answers and interview date, the mock interview (on the test subject) (standard 26.10, step 9)
+- [ ] Geography, a new subject (2026-10-12): the plan is written through the gates (`docs/subjects/geography/design.md`, evidence
+  `docs/research/knowing-where-places-are.md`): a name shown, the place tapped on a map with no names on it; 21 parts, 26
+  lessons; no lesson is written until you approve the end result and the practice method (V69)
 - [ ] Each subject's other lessons (about 50), each with a passing stand-in review, tested and deployed subject by subject
 - [ ] The research document (`docs/learning-science.md`) reorganized by kind of learning
 
@@ -43,5 +46,7 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
+- [ ] Geography: approve or change the end result and the practice method in `docs/subjects/geography/design.md` (gates 2
+  and 3); then the pilot, lesson 1 (the map of the United States), is built for you to try
 - [ ] Whenever you have time: try any lesson on your phone; your words overwrite the stand-in review
 - [x] The helpline in Psychology's pilot checked against thehotline.org (2026-10-11): 1.800.799.SAFE (7233) and text START to 88788, as written
