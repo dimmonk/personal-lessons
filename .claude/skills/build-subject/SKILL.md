@@ -109,8 +109,9 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   owner line that only the owner can read as false). The push runs the tiers again outside the session's hooks
   (`.github/workflows/lesson-tier.yml`: the tiers at the pushed head, and at every pushed commit, the lesson tier
   against its parent and the owner's word where the gates changed, checked with the parent's copy of the check, so a
-  branch committed with hooks off shows on push, and the check is never a commit's own copy: it is the copy `main`
-  held before the push; a merge is held only for its own changes (its remerge diff, renames not followed), since what
+  branch committed with hooks off shows on push, and the check is never a commit's own copy: on a push to `main` it
+  is the copy `main` held before the push, on any other push or pull request it is `main`'s, and the start commit's
+  when that has none (a worded change to the check itself therefore judges only later pushes, not the rest of its own); a merge is held only for its own changes (its remerge diff, renames not followed), since what
   it brings in was checked on the commits that made it, and a merge that brings in commits that do not descend from
   the commit where the gates start is held for every gate file it changes; a forced push after which nothing is new
   against `main` fails; commits that are ancestors of the commit where the gates start (named in the workflow) are

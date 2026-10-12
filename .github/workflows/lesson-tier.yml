@@ -35,9 +35,10 @@ jobs:
           # before this push (what main held), or the start's when that has none.
           GATES_START=21da9cf36e71329fea154dcaf51721ab8539c8d2
           git rev-parse -q --verify "$GATES_START^{commit}" >/dev/null || { echo "the commit where the gates start is not in this clone"; exit 1; }
-          CHECK_REF="$BEFORE"
-          git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="origin/main"
-          git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$GATES_START"
+          # the copy of the check that judges this push: on a push to main, what main held before it (BEFORE); on any other push or a pull
+          # request, main's; the start commit's when that ref has none. Never the pushed head's.
+          if [ "${{ github.ref }}" = "refs/heads/main" ] && [ "${{ github.event_name }}" = "push" ]; then CHECK_REF="$BEFORE"; else CHECK_REF="origin/main"; fi
+          git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$GATES_START"
           git show "$CHECK_REF:tools/design/owner-line.mjs" > /tmp/owner-line.mjs
           echo "the owner-line check is the copy at $CHECK_REF"
           for c in $COMMITS; do
