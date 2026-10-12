@@ -62,7 +62,8 @@ same(parseRecord('no dashes').error, 'does not open with a line of three dashes'
 ok(sameWords('On track.', 'on track'), 'the same words with other punctuation');
 ok(!sameWords('👍', '✅'), 'two replies with no letters are two replies');
 ok(sameWords('Très bien, continue.', 'tres bien continue') === false && sameWords('Très bien, continue.', 'très bien continue'), 'letters of any script count');
-ok(sameWords('été', 'ÉTÉ') && !sameWords('été', 'ete'), 'letters outside ASCII are letters (an ASCII-only key would read both as empty and compare the raw strings)');
+ok(sameWords('été', 'ÉTÉ') && !sameWords('été', 'ete'), 'letters outside ASCII are letters');
+ok(!sameWords('OK да', 'OK нет') && sameWords('OK да', 'ok да!'), 'letters of another script tell two replies apart (an ASCII-only key would read both as "ok")');
 
 if (failures.length) { console.error(`${failures.length} of ${checks} design reader checks failed:`); failures.forEach(f => console.error(`  - ${f}`)); process.exit(1); }
 console.log(`✓ ${checks} design reader checks passed on the real notes, reviews and records`);

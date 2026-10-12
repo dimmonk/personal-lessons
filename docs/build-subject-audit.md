@@ -2506,3 +2506,184 @@ For the owner:
 - An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part N. The eleventh review (2026-10-12)
+
+An independent review of c452c30 ("the skill's tenth review answered"), by an agent that did not write it, against
+part M's six fixes (M5). Line numbers are `SKILL.md`'s at c452c30. **`npm test` is green**: 301 design reader checks,
+48,520 lesson checks, 247 seeded faults (the pin is 247). The mutations were run on a scratch copy (`git archive
+HEAD`, its own `git init`, `npm run hooks`). The push attacks were run on a clone of this repository with a bare
+"origin" whose `main` is c452c30, because the scratch copy has no 21da9cf. The workflow's per-commit step was taken out
+of `lesson-tier.yml` as written (the `run:` block, with the event's values filled in). The real records were never
+touched.
+
+What is better, briefly:
+- This branch passes end to end as a fast-forward of `main` from d03b63f (exit 0).
+- A hooks-off commit cannot exempt itself any more. The skip is decided by ancestry, which a later commit cannot change.
+- An evil merge that takes the other side's version of a gate file is *red*.
+- A clean merge of an approved gate change passes the local hook.
+- A read of the validator taken off `opened.asks` is *red* under a seeded fault.
+- The gate 0 row is filled. The skill names how this branch lands.
+
+What is left falls in three groups:
+- Two routes put a gate change on `main` with no owner word anywhere, with the hooks off and no history rewritten, and
+  the push is green:
+  - a fork from before the gates, whose first commit is judged by its own copy of the check;
+  - an evil merge that moves the check out of `tools/design/`. The new merge reading uses `git log`, which follows
+    renames, so the merge lists only the new path.
+- The hook's merge reading is not the push's. It refuses a clean merge and passes a resolution the push refuses. It
+  also passes any gate file renamed out of the gated paths.
+- Some items are only partly done:
+  - the `tools/` forbidden class and the `\p{L}\p{N}` key are still never seen red;
+  - the commit where the gates start is skipped;
+  - the standard's entry still leaves out three rules.
+
+### N1. M5's six items
+
+| # | M5 item | Status | Evidence |
+|---|---|---|---|
+| 1 | Decide "from before the gates" by ancestry against 21da9cf | **Done, with a break** | yml 34-39. R1: `d03b63f..c452c30` gives 16 commits skipped; 575563e, 68bd7df and c452c30 are checked; exit 0. A2: a hooks-off commit that deletes `tools/design/owner-line.mjs` and removes Math's `primes-factors` is checked, not skipped. It is *red* at V69, and the parent's copy of the check refuses it too ("changes the gates (tools/design/owner-line.mjs)"). <br>Broke (N3, item 4): `git merge-base --is-ancestor` is true for the commit itself, so 21da9cf is skipped. It has the tool, passes against fece38c (exit 0) and carries an owner line. SKILL 114 says "ancestors of" the commit, which in plain words leaves it out. |
+| 2 | `--remerge-diff`; a merge that brings in skipped commits is held to its whole first-parent gate diff | **Done, with two breaks** | owner-line 27-30, yml 47-51. A5b: `main` gets an approved change to `design-shape.mjs`; a branch from before it is merged hooks-off and the file is resolved to the branch's version. *Red* ("changes the gates (tests/lessons/design-shape.mjs)"). <br>Broke (N3, item 1): `--brought` fires only when a brought-in commit is an ancestor of 21da9cf. On `main` that never happens, because every such commit is already reachable from the first parent. A fork from before the gates is not its ancestor. It is checked commit by commit, and the first fork commit's parent has no tool, so that commit's own copy is used. <br>Broke (N3, item 2): `git log --remerge-diff --name-only` detects renames, so a gate file the merge moves out of the gated paths lists only its new path. |
+| 3 | The commit-message hook reads a merge's own changes the same way, against the automatic merge | **Partly** | owner-line 18-24. Done: A4 locally (a `--no-ff` merge of an approved `stand-in-review.md` change, hooks on) is committed. <br>Not done (N3, item 3): the hook keeps the staged files that differ from *both* sides, which is the `--cc` reading, not the automatic merge. <br>- m1: both sides edit different hunks of `stand-in-review.md`, each with the owner's word. Git merges them cleanly. The hook *refuses* the merge; on push the remerge list is empty, exit 0. <br>- m2: both sides edit the same line, the conflict is resolved with `--theirs`, and side B's approved edit is discarded. The hook *commits* it; on push it is *red*. <br>The code's comment and the commit message say "read the same way". |
+| 4 | A seeded fault for the `tests/` and `tools/` forbidden class | **Partly** | controls-table 154-155. With `tests/` taken out of `FORBIDDEN_EVERYWHERE`, "a read of the validator erased from the gate 0 list" fails. With `tools/` taken out, all 247 controls and 301 reader checks stay green. The new control "a lesson changed in a subject whose gate 1 opened the tools" is red through `RESEARCH_OK`, not through the class. The class's only effect of its own is in `erasable` (design-shape 192), and that needs a `tools/` read taken off `opened.asks`. |
+| 5 | Pin the `\p{L}\p{N}` key with a check that fails under the ASCII key | **Not done** | design-pure 65. With the key put back to `[^a-z0-9]` and the fallback kept, every control and reader check stays green. Under the ASCII key, "été" and "ÉTÉ" both key to "t", and "ete" keys to "ete". The new check passes, and its message ("an ASCII-only key would read both as empty") is wrong. Part M's `!sameWords('OK да', 'OK нет')` was not used. |
+| 6 | Text: SKILL 131; how this branch lands; the standard's entry | **Mostly** | Done: <br>- the gate 0 row (SKILL 134) matches step 1 and `asksOk`; <br>- SKILL 115-117 name the fast-forward, and a fork from before the gates is rebased or dropped; <br>- the standard's section 11 entry names most rules of rounds seven to ten. <br>Left: the entry still leaves out three rules: the narrowed gate 0 sources, a forbidden read never erased, and a forced push with nothing new failing. |
+
+One is done with a break and one with two breaks. One is mostly done, two are partly done and one is not done. Nothing
+is red.
+
+### N2. The attacks
+
+- **(a) to (e), (h), (j) to (p), (q), (s) to (x), (z3) to (z7):** not run again. The code they reach is the same as at
+  68bd7df: `rules-design`, `designs`, `rules-shape`, `paths`, `approve`, the hooks, the records and the fixture. Parts
+  K to M's results stand.
+- **(f) A hooks-on ask removal** (Math's `primes-factors`): *refused* by the pre-commit hook.
+- **(g2) The tool deleted in a hooks-off commit, with the ask removed (A2):** *red* at V69 and at the parent's check.
+  Fixed.
+- **(g3) `--base` respelled:** not run. Ancestry no longer reads the tree, and `paths.mjs` is a gate file.
+- **(z8') An evil merge that takes the other side (A5b):** *red*. Fixed.
+- **(z9) This branch lands:**
+  - as a fast-forward (R1): green;
+  - as a pull request: *red*, with 32 V69 refusals against d03b63f, which `--brought d03b63f` would also fail.
+
+  The skill now names the fast-forward. Named.
+- **(z10) A clean merge of an approved gate change, hooks on (A4):** committed. Fixed.
+- **(z10') Both sides edit one gate file in different hunks, merged cleanly, hooks on (m1, new):** the hook refuses
+  it, falsely. The push passes it. Not named (N3, item 3).
+- **(z10'') A merge in progress with a conflict on a gate file, resolved `--theirs`, hooks on (m2, new):** the hook
+  passes it. The push is *red*. Not named (N3, item 3).
+- **(z11) An old fork, one hooks-off gate edit, merged `--no-ff`:** *red*, but only because the fork's validator does
+  not know `--base` ("unknown argument: --base"). `--brought` never fires.
+- **(z11') An old fork that supplies its own checks (new).** Three hooks-off commits on d03b63f, then `git merge
+  --no-ff` into `main` at c452c30, with no owner line anywhere:
+  - F1 adds empty `tools/design/owner-line.mjs`, `validate-lessons.mjs`, `negative-controls.mjs` and
+    `design-pure.mjs`;
+  - F2 sets the tree to c452c30's, keeps the four empty files, and appends a line to `tests/lessons/rule.mjs`;
+  - F3 puts back the four real files.
+
+  How the push reads it:
+  - F1 is judged by its own empty check, because its parent has none;
+  - F2 and F3 are judged by F1's and F2's empty checks;
+  - the merge is clean, and its remerge list is empty;
+  - none of the brought commits is an ancestor of 21da9cf.
+
+  The step exits 0, and `npm test` at the head is green. `main` now differs from c452c30 by one line in a gate file.
+  Not named (N3, item 1).
+- **(z13) An evil merge that moves the check out (new).** A hooks-off `--no-ff` merge of a docs-only branch into
+  `main`, which in its resolution runs `git mv tools/design/owner-line.mjs scripts/owner-line.mjs`. Its remerge list is
+  `scripts/owner-line.mjs` only, so the parent's check passes it. Next comes commit C: an empty
+  `tools/design/owner-line.mjs`, and a line appended to `tests/lessons/rule.mjs`. C's parent has no tool, so C is
+  judged by its own empty copy. Commit D puts the real tool back, judged by C's empty copy. The step exits 0, and
+  `npm test` at the head is green. At 68bd7df, `diff-tree --cc`, which detects no renames, listed the deleted path.
+  Not named (N3, item 2).
+- **(z14) A gate file renamed out, hooks on (new):** `git mv tools/design/tried.mjs scripts/tried.mjs` is committed.
+  `git diff --cached --name-only` lists only `scripts/tried.mjs`. On push, a plain commit is read by `diff-tree`,
+  which does not detect renames, and is *red*. Not named (N3, item 2). This predates c452c30.
+- **(z12) The forced-push rule; (f2), (z2):** unchanged. Named (SKILL 114-120).
+
+### N3. What the fixes broke or missed
+
+1. **A commit is judged by its own copy of the check whenever its parent has none** (z11', z13). The fallback (yml
+   44-45) was meant for the first gated commit, whose parent predates the tool. Now that 21da9cf is named, it is not
+   needed for that, and it opens two doors:
+   - a fork from before the gates, which is neither an ancestor nor a descendant of 21da9cf;
+   - any descendant whose parent lost the tool (z13).
+
+   `--brought` tests the wrong thing. It asks whether a brought commit is an *ancestor* of 21da9cf, which on `main`
+   is never true. The commits it should hold are the ones that do not *descend* from 21da9cf.
+
+   The end-game fix:
+   - a commit in the range that does not descend from 21da9cf, and is not its ancestor, fails ("a fork from before
+     the gates: rebase it onto main", as SKILL 117 already says);
+   - the owner-line check is always the parent's copy, and a parent without one fails;
+   - `--brought` holds a merge when a brought commit does not descend from 21da9cf.
+2. **Renames hide a gate path** (z13, z14). `git log --remerge-diff --name-only` and `git diff --cached --name-only`
+   are porcelain commands that detect renames by default, and list only the new path. Pass `--no-renames` to both,
+   and add a reader check: a rename out of `tools/design/` is listed as a gate change.
+3. **The hook's merge reading is `--cc`, not the automatic merge** (m1, m2). Compare each staged path with the tree of
+   `git merge-tree --write-tree HEAD MERGE_HEAD`, as M3 proposed. Conflicted files then always count, and a clean
+   merge of two approved edits never does. The comment "read the same way" is true only then.
+4. **The gates' start commit is skipped** (R1). `--is-ancestor` is reflexive. Skip a commit only when it is an ancestor
+   and is not 21da9cf, or have SKILL 114 and the yml comment say "up to and including".
+5. **The `tools/` forbidden class is still never seen red** (N1, item 4). Its seeded fault is a read of
+   `tools/design/approve.mjs` committed under `opened.asks`, then taken off.
+6. **The key is still not pinned** (N1, item 5). Use `!sameWords('OK да', 'OK нет')`, and correct the message of the
+   "été" check.
+7. **Text:** the standard's section 11 entry should also name the narrowed gate 0 sources, a forbidden read never
+   erased, and the forced-push rule.
+
+### N4. The two screens the owner reads
+
+No record, research note or reader changed since 68bd7df. `approve.mjs <id> goal --show` prints Psychology at 4,551
+characters (747 words) and Geography at 3,402 characters (679 words). Both were read again:
+- **Psychology:** true to its record. The test reaches every topic group: the accounts, the arguments, the heated
+  moments and the next step. Readable: fair. "Projection" is both a topic and one of the defense mechanisms, and the
+  first ask's words are cut off at 100 characters. *Verdict:* it can go out. Its length is the owner's call.
+- **Geography:** true to its record. The test reaches every topic group. Readable: good. *Verdict:* it can go out.
+
+`docs/research/designing-a-subject.md` and the skill's "What the gates rest on" did not change. There is no new
+finding there.
+
+### N5. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. Never judge a commit by its own copy of the owner-line check. Fail a commit that neither descends from 21da9cf nor
+   is its ancestor. Have `--brought` test descent. As written, an old fork puts a gate change on `main` with no owner
+   word, and the push is green (z11').
+2. `--no-renames` in both readings of `owner-line.mjs`, pinned by a check. As written, an evil merge that moves the
+   check out is green, and so is everything after it (z13). With the hooks on, a gate file renamed out is committed
+   (z14).
+3. The hook reads a merge in progress against `git merge-tree --write-tree HEAD MERGE_HEAD`, not "differs from both
+   sides". As written, it refuses a clean merge (m1) and passes a one-sided conflict resolution (m2).
+4. Check 21da9cf itself, or say "up to and including" in SKILL 114 and the yml.
+5. A seeded fault for the `tools/` forbidden class: a `tools/` read taken off `opened.asks`.
+6. Pin the `\p{L}\p{N}` key with `!sameWords('OK да', 'OK нет')`, and correct the "été" check's message.
+7. The standard's section 11 entry: the narrowed gate 0 sources, a forbidden read never erased, the forced-push rule.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, and a letterless reply reused
+  with new punctuation.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, until the owner's ruleset is in place. A branch's later push checks only its new commits.
+- The workflow file edited with the hooks off: GitHub runs the edited copy.
+- What was opened is the session's own account. The audit by its GitHub URL passes gate 0, and so does another
+  subject's old lesson spelled `old-lessons:public/subjects/<id>/../<other>/` (a `startsWith` test; read in the code,
+  not run).
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line.
+- Commits from before the gates are checked only by the tiers at the head. A pull request or a squash of this branch
+  is red, and the skill says it lands by fast-forward.
+
+For the owner:
+- A ruleset on `main`: it requires the "lesson tier" check, runs it from `main` and forbids force-pushes. It does not
+  close fix 1 or fix 2: the check itself passes those pushes. (Carried over.)
+- Land this branch by fast-forward, after fixes 1 to 3.
+- `pilot-fixes-2026-10-12`: rebase it onto the new `main`, or drop it. Today it is red only because its old validator
+  does not know `--base`. (Carried over.)
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

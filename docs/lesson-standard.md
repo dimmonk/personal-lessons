@@ -798,7 +798,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   workflow, with the parent's copy of the owner-line check); a merge is held for its own changes (the remerge diff) and
   for what it brings in from before the gates; the pre-commit hook validates the staged tree with the base unset; the
   gates (skill, record rules, tools, notes, hooks, workflow, package.json) change only with the owner's word in the
-  commit.
+  commit; gate 0's sources are the owner's own material and the project's records of their words, never a research
+  note, an audit, code or another subject's lessons; a forbidden read listed on any opened list is never erased; a
+  forced push after which nothing is new against `main` fails on push, and a fork from before the gates is rebased or
+  dropped.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

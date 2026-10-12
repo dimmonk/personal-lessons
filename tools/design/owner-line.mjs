@@ -16,17 +16,19 @@ const git = args => execFileSync('git', args, { stdio: ['ignore', 'pipe', 'pipe'
 const lines = s => s.split('\n').filter(Boolean);
 function changed(mode, sha) {
   if (mode !== '--commit') {
-    const staged = lines(git(['diff', '--cached', '--name-only']));
+    const staged = lines(git(['diff', '--cached', '--name-only', '--no-renames']));
     let mergeHead = null;
     try { mergeHead = git(['rev-parse', '-q', '--verify', 'MERGE_HEAD']).trim(); } catch { mergeHead = null; }
     if (!mergeHead) return staged;
-    const blob = (ref, f) => { try { return git(['rev-parse', '-q', '--verify', `${ref}:${f}`]).trim(); } catch { return null; } };
-    return staged.filter(f => { const s = blob('', f) || blob(':0', f); return s !== blob('HEAD', f) && s !== blob('MERGE_HEAD', f); });
+    // a merge in progress: its own changes are the staged files that differ from what an automatic merge of the two sides gives
+    const auto = git(['merge-tree', '--write-tree', 'HEAD', 'MERGE_HEAD']).trim().split('\n')[0];
+    const stagedTree = git(['write-tree']).trim();
+    return lines(git(['diff-tree', '-r', '--name-only', '--no-renames', auto, stagedTree]));
   }
   const parents = git(['rev-list', '--parents', '-n', '1', sha]).trim().split(/\s+/).slice(1);
-  if (parents.length <= 1) return lines(git(['diff-tree', '--no-commit-id', '--name-only', '-r', '--root', sha]));
+  if (parents.length <= 1) return lines(git(['diff-tree', '--no-commit-id', '--name-only', '--no-renames', '-r', '--root', sha]));
   // the remerge diff names the files the merge changed on its own; the names are the lines that are paths after the headers
-  const out = git(['log', '-1', '--remerge-diff', '--name-only', '--format=', sha]);
+  const out = git(['log', '-1', '--remerge-diff', '--name-only', '--no-renames', '--format=', sha]);
   return lines(out).filter(l => !/^[0-9a-f]{40}$/.test(l));
 }
 
@@ -38,7 +40,7 @@ const [file, mode = '--staged', sha] = argv;
 if (!file) { console.error('usage: node tools/design/owner-line.mjs <message-file> [--staged | --commit <sha> [--brought <base>]]'); process.exit(2); }
 const brought = argv.indexOf('--brought') >= 0 ? argv[argv.indexOf('--brought') + 1] : null;
 const own = changed(mode, sha);
-const gated = [...own, ...(brought ? lines(git(['diff', '--name-only', brought, sha])) : [])].filter(f => GATED.test(f));
+const gated = [...own, ...(brought ? lines(git(['diff', '--name-only', '--no-renames', brought, sha])) : [])].filter(f => GATED.test(f));
 if (gated.length && !LINE.test(readFileSync(file, 'utf8'))) {
   console.error(`${mode === '--commit' ? sha : 'this commit'} changes the gates (${gated.slice(0, 4).join(', ')}${gated.length > 4 ? ', …' : ''}); it needs a line: Owner's word: "<their words>" (<where they said it>)`);
   process.exit(1);
