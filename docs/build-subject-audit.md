@@ -1956,3 +1956,192 @@ For the owner:
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Geography: should "what it borders" be taught (a line on the list) or dropped from the promise?
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part K. The eighth review (2026-10-12)
+
+An independent review of 21da9cf ("the skill's seventh review answered"), by an agent that did not write it, against
+part J's nine fixes (J5). Line numbers are `SKILL.md`'s at 21da9cf. **`npm test` is green**: 297 design reader checks,
+48,520 lesson checks, 238 seeded faults (the pin is 238). Every attack was run on a scratch copy (`git archive HEAD`,
+its own `git init`, `npm run hooks`), never on the real records. The push workflow's per-commit step was taken out of
+`lesson-tier.yml` as written and run on a fresh clone of the scratch repo, with the event's values filled in.
+
+What is better, briefly:
+- An ask's topics only grow: the swap that slipped through in part J is refused, with a control.
+- A new branch's first push and a force-push to a branch now list the branch's commits, and catch a hooks-off removal.
+- The hook unsets `LESSONS_BASE`, and a base that is not a commit makes the validator exit 1.
+- V80 holds `readingShare` only when the subject record is written.
+- The engine's code, the tools and every learner view are now forbidden reads.
+- The same words on two subjects with new punctuation are refused. Geography's list, sentence and test agree.
+
+What is left falls in three groups:
+- The push checks each commit with that commit's own owner-line check, and reads no files for a merge commit. A force-push
+  to main checks nothing.
+- Gate 0's allow-list still admits the project's working docs and any path at the tag `old-lessons`.
+- Three of the new guards have no seeded fault, `sameWords` still drops every letter outside a to z, and two lines of
+  text are wrong.
+
+### K1. J5's nine items
+
+| # | J5 item | Status | Evidence |
+|---|---|---|---|
+| 1 | Refuse an ask that lost any committed topic without a new word; control | **Done** | design-shape 87 and the control at controls-table 122. On Psychology's `biases`, a swap of one topic was *refused* ("lost a topic ... the topics an ask is taught under only grow"). Adding a sixth topic was committed. |
+| 2 | The push: list a new branch's or a force-push's commits, fail when the range will not list; the commit-message rule on each pushed commit | **Partly** | Done: `--verify "$BEFORE^{commit}"` now fails on all zeros and on a commit that is gone, so the fallback runs. A first push with `before` all zeros, and a force-push to a branch with an unknown `before`, both checked both commits and were *red* on the hooks-off removal of Math's `primes-factors`. `owner-line.mjs` runs at every commit. Missed (K3, items 1 to 3): <br>- At each commit the step runs *that commit's* `owner-line.mjs`. <br>- A merge commit's files are read with a plain `diff-tree`, which lists nothing for a merge. <br>- A force-push to main gives the empty range `origin/main..HEAD`. <br>- "Fail when the range will not list" was not done: `for c in $(git rev-list ...)` still swallows an error. |
+| 3 | The hook unsets `LESSONS_BASE`; `--base` refuses a base that does not resolve | **Done** | pre-commit line 7. `LESSONS_BASE=<a dangling commit of the staged tree> git commit` and `LESSONS_BASE=nonsense git commit`, each removing Math's ask: both *refused*. A benign commit with `LESSONS_BASE=nonsense` lands (the variable is ignored). `--base nonsense` exits 1 ("the base nonsense is not a commit"). Latent: `collectCommittedDesigns` (designs.mjs 89-90) catches `BASE()`'s throw and returns "nothing committed". The run is red only because the lock read (validate-lessons 15) throws first. |
+| 4 | V80 holds `readingShare` only on write; controls for both sides | **Partly** | rules-shape 481. On a live run, Psychology's subject record set to 0.3 is refused by V80 ("readingShare is 0.3 and the design record's is 0.2"). The green control is at controls-table 123. There is no red control: with the check switched off (`if (false)`), all 238 controls stay green. |
+| 5 | Say what lifts a forbidden read in `opened.asks` | **Done** | rules-design 90: "a forbidden read listed under asks holds it for good". |
+| 6 | The engine's code is never erased; narrow `ASKS_OK` | **Partly** | Done: `FORBIDDEN_EVERYWHERE` (design-shape 159-161) adds `docs/learner-view/`, `public/`, `tests/` and `tools/`. Each was refused under Geography's `asks`: another subject's learner view, `public/app/engine.js`. Once committed under Psychology's `asks`, the engine read could not be taken off (*refused*). Not done (K3, item 4): <br>- `ASKS_OK` (158) still ends in the general `[^/\s]+\/[^/\s]+\.md`. Under Geography's `asks`, `docs/build-subject-audit.md` was committed as owner material, and so would be `docs/lesson-standard.md` and `docs/learning-science.md` (probed). <br>- `old-lessons:` admits any path. `old-lessons:public/subjects/math/` under Geography's `asks` was committed. <br>- Removing the four new forbidden classes leaves all 238 controls green. |
+| 7 | `sameWords` in `blanketProblems`; `sameWords` keeps letters outside a to z | **Partly** | The check across subjects now ignores punctuation: Geography "looks right for geography again", then Psychology "Looks right, for geography again!", was *refused*. But: <br>- it is an inline copy of the normalization (rules-design 110), not `sameWords`; <br>- `sameWords` (design-shape 103) still drops every character outside a to z and 0 to 9, so `sameWords("Да", "Нет")` and `sameWords("👍", "✅")` are both true; <br>- reverting line 110 to the old compare leaves every control and reader check green. |
+| 8 | Geography: place "two sittings"; borders on the list or out of the promise | **Done** | The topics list has "what a place borders: its neighbors on the map". The test ends "All of it on two sittings at least a week apart" (K4). |
+| 9 | Text | **Mostly** | Done: <br>- "where no session edits the runner" is gone; <br>- `cherry-pick`, `rebase` and `am` are named (SKILL 107-108); <br>- the standard's V71 row; <br>- no "shown as dropped" is left in the skill, the tests, the tools or the standard. <br>Left: <br>- the new SKILL 110 says the workflow "a session can edit only with the owner's word in the commit", which is false with hooks off (K3, item 1); <br>- the standard's section 11 ends at "rounds four to six", with no entry for this commit's rule changes; <br>- the V69 row does not say that an ask's topics only grow. |
+
+Four are done, one is mostly done and four are partly done. Nothing is red.
+
+### K2. The attacks
+
+- **(a) Approve with made-up words** (Geography, through the tool): committed. Named.
+- **(b) Remove a record or an ask through the index** (`git rm --cached`; a staged removal with the working file restored;
+  `commit -a` with the record deleted): all *refused*.
+- **(c) Change an ask's words:** a reworded ask, an owner word edited in place, and `biases` flipped to dropped under its
+  keep word: all *refused*.
+- **(d), (e), (j), (k), (l), (m), (o), (p), (t), (x):** not run again. The code they reach did not change in 21da9cf:
+  - `tried.mjs` and `designs.mjs` (how a review is read and dated);
+  - the redesign holds;
+  - gate order.
+
+  Part J's results stand. The named ones stay named.
+- **(f) A hooks-off branch on push** (run here as the workflow step):
+  - a push to an existing branch: *red*;
+  - a branch's first push: *red* (new);
+  - a force-push to a branch: *red* (new);
+  - a force-push to main: the range is empty, nothing is checked, and the step exits 0. Named as history rewriting and
+    the owner's branch protection (SKILL 108, 112). But the workflow's own comment says a force-push's commits are
+    checked.
+- **(g') The checker edited in the same hooks-off commit.** On a branch from main, one `--no-verify`-style commit with no
+  owner line did three things:
+  - `tools/design/owner-line.mjs` exits 0 at its top;
+  - `askedSinceProblems` skips Math;
+  - Math's `primes-factors` is removed.
+
+  The push step exited 0. The parent's `owner-line.mjs` run on the same commit refuses it ("changes the gates
+  (tests/lessons/design-shape.mjs, tools/design/owner-line.mjs)"). Not named (K3, item 1).
+- **(h) Re-fingerprint a changed screen** (South America cut from Geography, `fp` recomputed, same words): *refused*
+  twice, once because the ask lost a topic and once because the approval was edited.
+- **(n) Rewrite a reviewed lesson and reuse the review:** `tried.mjs` *refused* it.
+- **(q) Clear, then re-approve with the same words and new punctuation:** *refused* by the tool and by hand.
+- **(s) An invented history entry with a made-up `fp`:** committed. Named (SKILL 113-114).
+- **(u) A built subject's sentence changed while the approval is null:** committed. Right.
+- **(v) Approve Psychology, then write another sentence into the subject record:** *refused* by V80 and by V69's hold.
+- **(w) Approve Psychology, leave the subject record alone:** committed. Right.
+- **(y) Take things off `opened.asks`, or list them:**
+  - another subject's learner view or the engine's code under Geography: *refused* (new);
+  - the engine read, once committed under Psychology, taken off: *refused* (new);
+  - `docs/build-subject-audit.md` as owner material: *committed*. Not named (K3, item 4);
+  - another subject's `old-lessons:` path: *committed*. Not named (K3, item 4).
+- **(z2) The workflow edited to `echo skipped`:**
+  - with the hooks on and no owner line: *refused*;
+  - with `"sure"`: committed. Named.
+  - With the hooks off, the edited workflow is the one GitHub runs for that push, so nothing asks for the line. The skill
+    says otherwise (K3, item 1).
+- **(z3) A hand-written `approved.goal.sentence`:** *refused*.
+- **(z4) Swap a topic of Psychology's `biases`:** *refused* (new).
+- **(z5) The base from the environment** (a dangling commit, or `nonsense`): *refused* (new).
+- **(z6) `readingShare`:**
+  - Psychology's design changed with no approvals: *refused* ("gate 3 changed ... without the owner's word").
+  - Its subject record changed: V80 *refuses*.
+- **(z7) The same words on two subjects, new punctuation:** *refused* (new). Two different replies in a non-Latin script
+  or in emoji read as the same words: a false refusal (probed on `sameWords`).
+- **(z8) An evil merge.** A `--no-ff` merge with the hooks off added a line to `SKILL.md` and carried no owner line. The
+  push step exited 0, because `owner-line.mjs --commit` lists nothing for a merge commit. `git diff-tree --cc
+  --name-only` lists `SKILL.md`. Not named (K3, item 2).
+
+### K3. What the fixes broke or missed
+
+1. **The push runs each commit's own check** (g'; z2 with the hooks off). At each commit the loop checks out that commit
+   and runs its `tools/design/owner-line.mjs`. A hooks-off commit that also edits the check passes. The fix is to run the
+   parent's version (`git show "$parent:tools/design/owner-line.mjs"`): a commit that changes the check is then judged
+   by the check it changes. The workflow file itself cannot be held this way, because GitHub runs the copy in the pushed
+   commit. SKILL 110 ("which a session can edit only with the owner's word in the commit") is true only with the hooks
+   on. Only the owner's setting holds the workflow: a required check from a protected source.
+2. **A merge commit's files are not read** (z8). `diff-tree -r --root <merge>` prints nothing for a merge, so an evil
+   merge that changes the gates needs no owner line on push. The yml's comment says "merge commits included". For a
+   commit with more than one parent, `--cc` lists what the merge itself changed.
+3. **A force-push to main checks nothing and passes** (f). `BEFORE` is not an ancestor, and `origin/main` is the pushed
+   head, so the range is empty. The step should fail when a push moved the branch and the range lists no commit, or
+   when `rev-list` fails. It should not report green over nothing.
+4. **Gate 0's allow-list is wider than the skill.** SKILL 205-207 name the owner's messages, briefs, course documents,
+   records of their words and "the version they used". `ASKS_OK` also admits:
+   - any `docs/<name>.md`: the audit (which quotes other subjects' records), the standard, `learning-science.md`;
+   - any path at the tag `old-lessons`, so another subject's old lessons, or the engine as it was.
+
+   Those are the anchoring reads D14 is about. Course documents live outside `docs/` (`psychology/…`,
+   `political-ideologies/…`). The general pattern can exclude `docs/`, and `old-lessons:` can be held to
+   `old-lessons:public/subjects/<id>/`.
+5. **Three new guards have never been seen to go red:**
+   - V80's `readingShare` on write: J5 asked for this control.
+   - The four new forbidden classes.
+   - The punctuation-blind compare across subjects.
+
+   Each was switched off on the scratch copy, and the 238 controls and 297 reader checks stayed green.
+6. **`sameWords` drops every letter outside a to z** (z7). It is used in three places and copied into a fourth, so
+   the false refusal ("Да" and "Нет" are the same words) reaches every approval. Unicode letters and digits
+   (`\p{L}\p{N}`) keep the intent.
+7. **Latent: an unresolvable base still reads as "nothing committed" in one function** (`collectCommittedDesigns`,
+   designs.mjs 90). It is masked today by the order of the reads.
+8. **Text:**
+   - SKILL 110, as in item 1;
+   - the standard's section 11 entry for 21da9cf;
+   - the V69 row's "topics only grow".
+
+### K4. The two screens the owner reads
+
+**Psychology** (`approve.mjs psychology goal --show`: 4,551 characters, 747 words; unchanged since part I):
+- *True to its record:* yes.
+- *Readable:* fair. "Projection" is listed twice.
+- *Does the test reach every topic group?* Yes.
+- *Verdict:* it can go out. Its length is the owner's call.
+
+**Geography** (3,368 characters, 674 words):
+- *True to its record:* yes.
+- *Does the test reach every topic group?* Yes. "What a place borders" is now on the list, and the sentence, the
+  paragraph and the test agree on borders and water.
+- *Readable:* good.
+  - "All of it on two sittings at least a week apart" closes the test and governs all of it.
+  - One small point: Placing's parenthetical (states, cities, countries, seas, rivers, mountain ranges) leaves out
+    provinces, deserts and oceans, although "every list" covers them.
+- *Verdict:* it can go out.
+
+### K5. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. The push runs the parent commit's `owner-line.mjs` on each commit, not the commit's own. SKILL 110 then says the
+   workflow file runs from the pushed commit, so its own edit is held only by the owner's setting.
+2. `owner-line.mjs --commit` reads a merge commit's own changes with `diff-tree --cc`.
+3. The per-commit step fails when the push moved the branch but the range lists nothing (a force-push to main), or when
+   `rev-list` fails.
+4. Narrow `ASKS_OK`: no `docs/<name>.md` through the general pattern, and `old-lessons:` only under
+   `public/subjects/<id>/`.
+5. Seeded faults for V80's `readingShare` on write, the new forbidden classes, the narrowed `ASKS_OK` and the compare
+   across subjects.
+6. `sameWords` keeps every letter and digit (`\p{L}\p{N}`), and `blanketProblems` calls it instead of a copy.
+7. `collectCommittedDesigns` lets a bad base throw rather than reading "nothing committed".
+8. Text: the standard's section 11 entry for 21da9cf, and the V69 row's "topics only grow".
+
+Named, rests on honesty:
+- Invented owner words: (a), a drop with invented words, (d), (g), (p), and (z2) with an owner line.
+- A self-written record review (j); a review's fingerprint or date line written by hand (k, t).
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, including a force-push to main, until the owner's branch protection.
+- The fingerprints of `approved.history` entries are the record's own claims (s).
+- The validator and its controls edited together under an owner line.
+
+For the owner:
+- Branch protection on `main`: a required "lesson tier" check and no force-push. GitHub runs the workflow from the
+  pushed commit, so a ruleset that requires the workflow from a protected branch is the only thing that holds the
+  workflow file itself. (Carried over, widened.)
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics now only grow. Rewording a topic an ask sits under needs your word on that ask, even when you have
+  re-approved the screen. Is the re-approval enough?
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

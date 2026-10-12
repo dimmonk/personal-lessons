@@ -144,6 +144,12 @@ export const CONTROLS = [
   { rule: 'V69', name: 'an approval cleared since the last commit, kept in the history (allowed: it is asked again)', green: true, input: input => asDesign(input, null, { approved: { ...design(input).approved, practice: null, history: { ...design(input).approved.history, practice: [design(input).approved.practice] } } }, { committedDesigns: { [F]: design(input) } }) },
   { rule: 'V69', name: 'an approval cleared since the last commit without going to the history', input: input => asDesign(input, null, { approved: { ...design(input).approved, practice: null } }, { committedDesigns: { [F]: design(input) } }) },
   { rule: 'V69', name: 'a redesign on a later date with new opened lists (allowed)', green: true, input: input => asDesign(input, null, { designedOn: '2026-10-13', opened: { ...design(input).opened, research: ['docs/research/umbrella-days.md', 'https://example.org/paper'] } }, { committedDesigns: { [F]: { ...design(input), opened: { ...design(input).opened, research: ['docs/research/umbrella-days.md', 'docs/learning-science.md'] } } } }) },
+  { rule: 'V69', name: 'gate 0 that lists the audit as the owner\'s source', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, asks: [...design(input).opened.asks, 'docs/build-subject-audit.md'] } }) },
+  { rule: 'V69', name: 'gate 0 that lists another subject\'s old lessons', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, asks: [...design(input).opened.asks, 'old-lessons:public/subjects/chorus/u1.unit.js'] } }) },
+  { rule: 'V69', name: 'a lesson changed in a subject whose gate 1 opened a learner view of another subject', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, research: [...design(input).opened.research, 'docs/learner-view/chorus-l1.md'] } }) },
+  { rule: 'V69', name: 'the same words of the owner\'s on two subjects, with other punctuation', input: input => asDesign(input, null, { approved: { ...design(input).approved, practice: { ...design(input).approved.practice, words: input.designs.chorus.approved.practice.words.toUpperCase() + '!!' } } }) },
+  { rule: 'V80', name: 'the subject record written with a readingShare that is not the design record\'s', keepLock: true, also: ['V46'],
+    data: (d, h) => h.setIn(d, meta('readingShare'), 0.35) },
   { rule: 'V69', name: 'gate 0 that opened the engine\'s code', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, asks: ['public/app/lessons/ask.js'] } }) },
   { rule: 'V69', name: 'a record with no designedOn', input: input => asDesign(input, null, { designedOn: undefined }) },
   { rule: 'V69', name: 'an owner\'s try that records no pass, confusion, waste or coming back',
@@ -351,4 +357,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 238;
+export const PINNED_CONTROL_COUNT = 243;

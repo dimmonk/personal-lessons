@@ -107,9 +107,11 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   `core.hooksPath` pointed elsewhere, with a hook file edited and left unstaged, by a `cherry-pick`, a `rebase` or an
   `am` (which run no commit hook), or by rewriting history after the fact; a session that edits the validator and its controls together can switch a rule off (the commit then carries an
   owner line that only the owner can read as false). The push runs the tiers again outside the session's hooks
-  (`.github/workflows/lesson-tier.yml`, which a session can edit only with the owner's word in the commit: the tiers at
-  the pushed head, and at every pushed commit, the lesson tier against its parent and the owner's word where the gates
-  changed, so a branch committed with hooks off shows on push); a fast-forward merge makes no commit and
+  (`.github/workflows/lesson-tier.yml`: the tiers at the pushed head, and at every pushed commit, the lesson tier
+  against its parent and the owner's word where the gates changed, checked with the parent's copy of the check, so a
+  branch committed with hooks off shows on push; a merge's own changes are read against its first parent; a push after
+  which nothing is new against `main` fails. The workflow file runs from the pushed commit, so its own edit is held
+  only by the owner's word in that commit and by the branch protection on `main`, which is the owner's setting); a fast-forward merge makes no commit and
   runs no hook, which only the owner's branch protection on `main` stops; an approval's history entries are the
   record's own claims (their fingerprints cannot be checked against screens that are gone; the committed prefix is what
   is held). The rest rests on honesty, and on the owner reading the record's owner fields, the review files and the

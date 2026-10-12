@@ -9,7 +9,7 @@ import { siteRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { GATE_FIELDS, LEARNING_KINDS, askedProblems, askedSinceProblems, unplacedAsks, principleProblems, openedProblems, openedSinceProblems, goalProblems,
   practiceProblems, approvalProblems, partProblems, blockProblems, uncoveredTopics, designReviewProblems, designReviewed, triedShapeProblems, triedPasses, lessonFp, isText,
-  ownerSinceProblems, designedOnProblems } from './design-shape.mjs';
+  ownerSinceProblems, designedOnProblems, wordsKey } from './design-shape.mjs';
 export { LEARNING_KINDS, triedPasses } from './design-shape.mjs';
 export { READ_LEVELS } from './designs.mjs';
 
@@ -107,7 +107,7 @@ function blanketProblems(designs) {
     for (const k of ['goal', 'practice']) {
       const v = r.approved[k];
       if (!v || !isText(v.words, 1)) continue;
-      const key = v.words.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+      const key = wordsKey(v.words);
       if (seen[key] && seen[key] !== id) return [`${id}: approved.${k} carries the same words as ${seen[key]}'s approval ("${v.words.slice(0, 60)}"): one message of the owner's cannot approve two subjects`];
       seen[key] = id;
     }

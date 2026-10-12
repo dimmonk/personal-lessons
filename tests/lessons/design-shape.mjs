@@ -99,7 +99,8 @@ const keepsInPrevious = (now, was) => { if (!now || !Array.isArray(now.previous)
 const laterWord = (now, was) => !was || sameEntry(now, was) && isPrefix(was.previous || [], now.previous || [])
   || (now && now.date >= was.date && now.words !== was.words && keepsInPrevious(now, was));
 // the owner's words compared without case, punctuation or spacing: "On track." and "on track" are one word
-export const sameWords = (a, b) => String(a).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim() === String(b).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+export const wordsKey = s => String(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+export const sameWords = (a, b) => wordsKey(a) === wordsKey(b);
 export const previousProblems = (e, where) => e && typeof e === 'object' && 'previous' in e && !(Array.isArray(e.previous) && e.previous.every(x => x && typeof x === 'object')) ? [`${where}: previous is not a list of the entries it replaced`] : [];
 export function unplacedAsks(r) {
   const covered = new Set((Array.isArray(r.parts) ? r.parts : []).flatMap(p => (p && Array.isArray(p.topics)) ? p.topics : []));
@@ -155,7 +156,11 @@ export function principleProblems(r, research) {
 
 // what each stage may open (SKILL.md, "What may be opened"); `opened` keeps one list per stage
 const RESEARCH_OK = /^(docs\/research\/|docs\/learning-science|https?:\/\/)/;
-const ASKS_OK = /^(chat\b|the brief|old-lessons:|https?:\/\/|docs\/lesson-rebuild-todo\.md|docs\/HANDOFF\.md|docs\/subjects\/[^/]+\/design\.md|[^/\s]+\/[^/\s]+\.md\b)/;   // the owner's messages, the brief, their course documents, the project's records of their words (the worklist, the handoff, this subject's own record), the version they used; never a research note or code
+// the owner's messages, the brief, their course documents (a top-level folder of their own, never docs, tests, tools or public), the project's
+// records of their words (the worklist, the handoff, this subject's own record), the version of this subject they used; never a research
+// note, an audit, code or another subject's old lessons
+const asksOk = (id, p) => /^(chat\b|the brief|https?:\/\/|docs\/lesson-rebuild-todo\.md|docs\/HANDOFF\.md)/.test(p) || p === `docs/subjects/${id}/design.md`
+  || p.startsWith(`old-lessons:public/subjects/${id}/`) || /^(?!docs\/|tests\/|tools\/|public\/|\.)[^/\s]+\/[^/\s]+\.md\b/.test(p);
 const FORBIDDEN_EVERYWHERE = (id, p) => p.startsWith(`public/subjects/${id}/`) ? 'the subject\'s own lessons' : p.startsWith(`docs/learner-view/${id}-`) ? 'the subject\'s learner views'
   : p.startsWith(`docs/subjects/${id}/reviews/`) ? 'the subject\'s reviews' : (/^docs\/subjects\/([^/]+)\//.exec(p) || [])[1] && !p.startsWith(`docs/subjects/${id}/`) ? 'another subject\'s record' : p.startsWith('public/subjects/') ? 'another subject\'s lessons'
   : p.startsWith('docs/learner-view/') ? 'a learner view' : p.startsWith('public/') ? 'the engine\'s code' : p.startsWith('tests/') || p.startsWith('tools/') ? 'the validator or the tools' : null;
@@ -169,7 +174,7 @@ export function openedProblems(id, r) {
   const notes = (Array.isArray(r.principles) ? r.principles : []).map(p => p && `docs/research/${p.note}.md`);
   const problems = [];
   [...o.asks, ...o.research, ...o.design].forEach(p => { const why = FORBIDDEN_EVERYWHERE(id, p); if (why) problems.push(`the designer opened ${why} before the gates were written: ${p}`); });
-  o.asks.filter(p => !ASKS_OK.test(p)).forEach(p => problems.push(`gate 0 opened ${p}, which is not one of the owner's messages, briefs or course documents, or the version they used (old-lessons:…)`));
+  o.asks.filter(p => !asksOk(id, p)).forEach(p => problems.push(`gate 0 opened ${p}, which is not one of the owner's messages, briefs or course documents, the project's records of their words, or the version of this subject they used (old-lessons:public/subjects/${id}/…)`));
   o.research.filter(p => !RESEARCH_OK.test(p)).forEach(p => problems.push(`gate 1 opened ${p}, which is not a research note, a source or the science document`));
   o.design.filter(p => !(p === `docs/subjects/${id}/design.md` || notes.includes(p) || p === 'docs/lesson-standard.md')).forEach(p => problems.push(`gates 2 to 5 opened ${p}; they may open only this record, the notes gate 1 cites and docs/lesson-standard.md`));
   o.writing.filter(p => !writingOk(id, p)).forEach(p => problems.push(`the writer opened ${p}; gates 6 and 7 may open only this record, the standard, the test subject, this subject's own files and its old material at the tag old-lessons`));
@@ -183,7 +188,7 @@ export function openedSinceProblems(r, committed, id) {
   const redesigned = isDate(r.designedOn) && (!committed.designedOn || r.designedOn > committed.designedOn);
   // a source listed under asks that was never owner material (it fails the allow-list) is a mistake, not a read, and may be taken off; a read
   // of what no stage may open (a lesson, a learner view, a review, another record) is never taken off
-  const erasable = p => !ASKS_OK.test(p) && !FORBIDDEN_EVERYWHERE(id, p);
+  const erasable = p => !asksOk(id, p) && !FORBIDDEN_EVERYWHERE(id, p);
   return ['asks', 'research', 'design', 'writing'].filter(k => k === 'asks' || !redesigned).flatMap(k => (Array.isArray(committed.opened[k]) ? committed.opened[k] : []).filter(p => !(Array.isArray(r.opened[k]) && r.opened[k].includes(p)) && !(k === 'asks' && erasable(p))).map(p => `opened.${k} lost "${p}" since the last commit: what was opened is never un-opened`));
 }
 

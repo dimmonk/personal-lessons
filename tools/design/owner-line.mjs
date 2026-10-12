@@ -8,8 +8,12 @@ import { execFileSync } from 'node:child_process';
 export const GATED = /^(\.claude\/skills\/build-subject\/|tests\/lessons\/|tests\/validate-lessons\.mjs|tests\/design-pure\.mjs|tests\/fixtures\/fixture-subject\/design\.mjs|tools\/design\/|docs\/research\/|\.githooks\/|\.github\/|package\.json)/;
 const LINE = /^Owner's word: ".+" \(.+\)/m;
 
+// a commit's changes are read against its first parent, so a merge that brings a gate change in shows it; a root commit against nothing
 function changed(mode, sha) {
-  const args = mode === '--commit' ? ['diff-tree', '--no-commit-id', '--name-only', '-r', '--root', sha] : ['diff', '--cached', '--name-only'];
+  if (mode !== '--commit') return execFileSync('git', ['diff', '--cached', '--name-only']).toString().split('\n').filter(Boolean);
+  let parent = null;
+  try { parent = execFileSync('git', ['rev-parse', '-q', '--verify', `${sha}^1`], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim(); } catch { parent = null; }
+  const args = parent ? ['diff', '--name-only', parent, sha] : ['diff-tree', '--no-commit-id', '--name-only', '-r', '--root', sha];
   return execFileSync('git', args).toString().split('\n').filter(Boolean);
 }
 

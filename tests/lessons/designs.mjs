@@ -85,12 +85,13 @@ export async function collectDesigns(designsDir) {
 // { [id]: record } for every record that was committed and parses; a record never committed is absent.
 export async function collectCommittedDesigns(designsDir) {
   const out = {};
+  const base = BASE();   // throws on a base that is not a commit: never read as "nothing committed"
   let names;
-  try { names = execFileSync('git', ['ls-tree', '--name-only', BASE(), './'], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().split('\n').filter(Boolean).map(n => n.replace(/\/$/, '')); }
+  try { names = execFileSync('git', ['ls-tree', '--name-only', base, './'], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().split('\n').filter(Boolean).map(n => n.replace(/\/$/, '')); }
   catch { return out; }
   for (const id of names) {
     let text;
-    try { text = execFileSync('git', ['show', `${BASE()}:./${id}/${RECORD_FILE}`], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
+    try { text = execFileSync('git', ['show', `${base}:./${id}/${RECORD_FILE}`], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
     catch { continue; }
     const parsed = parseRecord(text);
     if (!parsed.error) out[id] = parsed.record;
