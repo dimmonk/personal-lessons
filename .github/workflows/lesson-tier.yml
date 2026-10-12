@@ -1,7 +1,9 @@
 # The fast tiers run on every push, where no session can skip a hook: at the pushed head, npm test; and for every commit of the push (a new
-# branch's or a force-push's commits are those not on main), the lesson tier measured against that commit's first parent (what "since the
-# last commit" means) and the owner's word on a commit that changes the gates. So an ask removed, an owner entry edited, a record deleted or
-# a gate changed with the hooks off shows on push, merge commits included (build-subject skill, "How it runs").
+# branch's or a force-push's commits are those not on main; commits from before the commit where the gates start are skipped), the lesson
+# tier measured against that commit's first parent (what "since the last commit" means) and the owner's word on a commit that changes the
+# gates, read with the copy of the check that main held (never the pushed commit's). So an ask removed, an owner entry edited, a record
+# deleted or a gate changed with the hooks off shows on push, merge commits included; a merge of more than two parents is refused
+# (build-subject skill, "How it runs").
 name: lesson tier
 on:
   push:
@@ -38,7 +40,9 @@ jobs:
           # the copy of the check that judges this push: on a push to main, what main held before it (BEFORE); on any other push or a pull
           # request, main's; the start commit's when that ref has none. Never the pushed head's.
           if [ "${{ github.ref }}" = "refs/heads/main" ] && [ "${{ github.event_name }}" = "push" ]; then CHECK_REF="$BEFORE"; else CHECK_REF="origin/main"; fi
-          git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$GATES_START"
+          # when that ref has no copy (the landing push of the gates), the fallback is the named commit whose readings are the current ones
+          FALLBACK_CHECK=cd1a7b8
+          git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$FALLBACK_CHECK"
           git show "$CHECK_REF:tools/design/owner-line.mjs" > /tmp/owner-line.mjs
           echo "the owner-line check is the copy at $CHECK_REF"
           for c in $COMMITS; do
@@ -52,6 +56,7 @@ jobs:
             node tests/design-pure.mjs >/dev/null
             git show -s --format=%B "$c" > /tmp/msg
             BROUGHT=""
+            if [ "$(git rev-list --parents -n 1 "$c" | wc -w)" -gt 3 ]; then echo "== $c is a merge of more than two parents: refused; merge one branch at a time"; exit 1; fi
             if [ "$(git rev-list --parents -n 1 "$c" | wc -w)" -gt 2 ]; then
               for b in $(git rev-list "$parent..$c"); do if ! git merge-base --is-ancestor "$GATES_START" "$b"; then BROUGHT="--brought $parent"; break; fi; done
             fi

@@ -2831,3 +2831,148 @@ For the owner:
 - An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part P. The thirteenth review (2026-10-12)
+
+An independent review of cd1a7b8 ("the skill's twelfth review answered"), by an agent that did not write it, against
+part O's four fixes (O5). Line numbers are `SKILL.md`'s and `owner-line.mjs`'s at cd1a7b8. **`npm test` is green**: 302
+design reader checks, 8 owner-line checks, 48,520 lesson checks, 248 seeded faults (the pin is 248). Every attack was
+run in a clone of this worktree. For each push, a bare "origin" held the pushed refs, and a fresh clone of it was checked
+out at the pushed commit, as `actions/checkout` does. The workflow's per-commit step was taken out of that commit's
+`lesson-tier.yml` as written, with the event's values filled in. The local cases ran in a clone with `npm run hooks`.
+The real records were never touched.
+
+What is better, briefly:
+- This branch passes end to end as a fast-forward of `main` from d03b63f (exit 0).
+- L1 (the landing push with a hooks-off head that empties the check) is *red*.
+- B (a branch's push 1 empties the check, push 2 makes an unworded gate edit) is *red* on both pushes, before and after
+  landing.
+- A merge in progress with a conflict only in a non-gate file is committed, with no crash. A gate conflict resolved to
+  one side is refused by the check's own message.
+
+What is left falls in three groups:
+- Two merge shapes are read as having no changes of their own, so a gate change rides them onto `main` with no owner
+  word, the hooks off and no history rewritten:
+  - an octopus merge, under any copy of the check. Git skips the remerge diff for a merge of more than two parents.
+  - any merge on the landing push, because the fallback copy (21da9cf's) reads no merge at all.
+- The check's new test pins neither the readings that follow renames nor the check's verdict.
+- Two lines of text still say "the parent's copy" or "the branch before this push".
+
+### P1. O5's four items
+
+| # | O5 item | Status | Evidence |
+|---|---|---|---|
+| 1 | The check's copy: `BEFORE` on a push to `main`, `origin/main` otherwise, 21da9cf's when that has none | **Done, with a break** | yml 36-39. Done: <br>- L1 is *red* at the extra commit ("changes the gates (tests/lessons/rule.mjs, tools/design/owner-line.mjs)"), judged by 21da9cf's copy; <br>- B is *red* on both pushes, both with `main` at d03b63f (21da9cf's copy) and with `main` at cd1a7b8 (`origin/main`). <br>Broke (P3, item 2): the fallback is 21da9cf's copy. That copy reads every commit with a bare `git diff-tree --name-only -r --root`, which prints nothing for a merge, and its `GATED` lacks `tests/owner-line-pure.mjs`. L1m: the landing push from d03b63f carries one more commit, a hooks-off `--no-ff` merge of a docs-only branch whose resolution puts `process.exit(0);` at the top of `owner-line.mjs` and appends a line to `tests/lessons/rule.mjs`, with no owner line. Exit 0, and `npm test` at that head is green. `main` then holds an emptied check, and every later push to `main` is judged by it. |
+| 2 | Read `git merge-tree`'s exit 1 as "conflicts" in the hook | **Done** | owner-line 23-31. m3 (a conflict only in `docs/build-subject-audit.md`, resolved by hand, hooks on) is committed. m2 (a conflict on `tests/lessons/rule.mjs` between two worded edits, resolved `--theirs`, no owner line) is refused: "this commit changes the gates (tests/lessons/rule.mjs)". No stack trace. |
+| 3 | A reader check for `owner-line.mjs`: a rename out, a conflicted non-gate merge, a one-sided gate resolution | **Partly** | `tests/owner-line-pure.mjs`. Done: the conflicted non-gate merge, the one-sided gate resolution, the clean merge of two worded edits and `--brought`. Taking out the `merge-tree` catch, or going back to "differs from both sides", turns it red. <br>Not done (P3, item 3): <br>- the rename case is a plain commit, read by `diff-tree`, which never follows renames. With `--no-renames` taken out of the staged reading (owner-line 35) or of the remerge reading (44), the two that do follow renames, all 8 checks stay green; <br>- nothing tests the verdict. With `LINE` set to `/[\s\S]*/`, all stay green. With `process.exit(0);` at the top of the tool (L1's edit), the test exits 0 silently on import, and `npm test` stays green. |
+| 4 | Text: SKILL 111; the standard's entry; the comment at owner-line 13-14 | **Partly** | Done: the standard's section 11 entry names `main`'s copy, "never checked", the fork rule, and runs its list to 6f42ca1 "and the one that follows". The tool's head (owner-line 4-5, 10-11) says "main held" and "against the automatic merge". <br>Left: <br>- SKILL 111 still says "checked with the parent's copy of the check", one line before SKILL 112-114 say otherwise; <br>- the yml comment (31-34) says "the copy on the branch before this push (what main held)", which on any push but `main`'s is not what yml 36-37 do. |
+
+One is done. One is done with a break, and two are partly done. Nothing is red.
+
+### P2. The attacks
+
+- **(a) to (e), (h), (j) to (p), (q), (s) to (x), (z3) to (z7):** not run again. `git diff --stat 6f42ca1 HEAD` is empty
+  on `tests/lessons/`, `approve.mjs`, `tried.mjs`, `design-pure.mjs`, `validate-lessons.mjs`, the records, the notes,
+  the fixture, the hooks and `stand-in-review.md`. Parts K to O's results stand.
+- **(R1) This branch's own history**, `main` fast-forwarded from d03b63f: 16 commits skipped, then 21da9cf to cd1a7b8
+  checked, with 21da9cf's copy as the check. Exit 0.
+- **(L1) The landing push with a hooks-off head** that empties the check and edits `rule.mjs`: *red*. Fixed.
+- **(L1m) The landing push with a hooks-off evil merge on top (new):** the merge empties the check and edits `rule.mjs`.
+  21da9cf's copy lists nothing for a merge. Exit 0, and `npm test` is green. Not named (P3, item 2).
+- **(B) A branch's later push**, `main` at d03b63f and again at cd1a7b8: push 1 *red*, push 2 *red* both times. Fixed.
+- **(oct) An evil octopus merge after landing (new):** `main` is at cd1a7b8. One hooks-off merge of two docs-only
+  branches, whose resolution empties the check and edits `rule.mjs`, is pushed to `main`. It is judged by `main`'s own
+  copy, and `git log --remerge-diff` warns "Skipping remerge-diff for octopus merges" and lists nothing. Exit 0. `npm
+  test` at that head is green, and `owner-line-pure` printed nothing. Not named (P3, item 1).
+- **(oct') An octopus merge in progress, hooks on (new):** the hook compares with `merge-tree HEAD MERGE_HEAD`, which
+  takes only the first head. A clean octopus whose worded gate change comes from the second head is read as the merge's
+  own change, and refused falsely. An evil edit in it is refused.
+- **(m3) A conflict only in a non-gate file, hooks on:** committed. Fixed.
+- **(m2) A gate conflict resolved to one side, hooks on:** refused by the check's message. Fixed.
+- **(z14) A gate file renamed out, hooks on:** not run again. The staged reading is the same call as at 6f42ca1
+  (`diff --cached --no-renames`). Part O's result stands, but no check pins it (P1, item 3).
+- **(nc) The check's own test, with seeded faults (new):** `--no-renames` taken out of each of the four readings, one
+  at a time; `LINE` set to match any message; `process.exit(0)` at the top of the tool. All stay green.
+- **(f2), (z2), (z9), (z12):** unchanged. Named (SKILL 114-124).
+
+### P3. What the fixes broke or missed
+
+1. **An octopus merge has no changes of its own to any copy of the check** (oct). This was missed since c452c30 brought
+   in the remerge diff, which git does not compute for more than two parents. `--brought` does not fire, because every
+   brought commit descends from 21da9cf. SKILL 114 says "a merge is held only for its own changes (its remerge diff)",
+   and for an octopus that is nothing.
+
+   The end-game fix:
+   - the tool refuses a commit with more than two parents ("merge one branch at a time"), on push;
+   - the hook refuses a merge in progress with more than one `MERGE_HEAD` line;
+   - `owner-line-pure` pins both.
+2. **The fallback copy reads no merge** (L1m). The landing push is the one push that the fallback judges: its `BEFORE`,
+   d03b63f, has no tool. 21da9cf's copy predates every merge reading. Pushes to other branches and pull requests are
+   also judged by it until `main` holds the tool. That does not land anything by itself. The landing push does,
+   though, and what it lands becomes the copy that judges every later push to `main`.
+
+   The end-game fix: the fallback is a named commit whose copy has the current readings. That is the commit that lands
+   fix 1, kept apart from `GATES_START`, which still decides what is skipped.
+3. **The check's test pins the readings that cannot regress, not the ones that can, and not the verdict** (nc). It
+   needs:
+   - a staged rename out of `tools/design/` (owner-line 35);
+   - a merge whose resolution renames a gate file out (44);
+   - the tool run as a script on the scratch repository: a gated change with no owner line exits 1, and with one exits
+     0. That turns red under `LINE` matching anything, and under an early `process.exit(0)`.
+4. **Text:**
+   - SKILL 111 "checked with the parent's copy of the check" should go;
+   - the yml comment (31-34) should say what yml 36-37 do;
+   - SKILL 114 should say an octopus merge is refused, once fix 1 is in.
+
+### P4. The two screens the owner reads
+
+No record, research note or reader changed since 6f42ca1. `approve.mjs <id> goal --show` prints Psychology at 4,551
+characters (747 words) and Geography at 3,402 characters (679 words). Both were read again:
+- **Psychology:** true to its record. The test reaches every topic group: the accounts, the arguments, the heated
+  moments and the next step. Readable: fair. "Projection" is both a topic and one of the defense mechanisms, and the
+  first ask's words are cut at 100 characters. *Verdict:* it can go out. Its length is the owner's call.
+- **Geography:** true to its record. The test reaches every topic group. Readable: good. *Verdict:* it can go out.
+
+`docs/research/designing-a-subject.md` and the skill's "What the gates rest on" did not change. There is no new
+finding there.
+
+### P5. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. Refuse an octopus merge, on push and in the hook, pinned by a check. As written, an octopus merge empties the check
+   and edits a gate file with no owner word, and `main`'s own copy passes it (oct, green). Every later push to `main`
+   is then judged by the emptied copy.
+2. Make the fallback copy one that reads merges: a named commit with the current readings, not 21da9cf. As written, the
+   landing push carries an unworded evil merge (L1m, green).
+3. `owner-line-pure` pins a staged rename, a merge that renames out, and the tool's verdict run as a script. As written,
+   `--no-renames` dropped from either live reading, a `LINE` that matches anything, or an early `process.exit(0)` all
+   stay green.
+4. Text: SKILL 111 "the parent's copy"; the yml comment 31-34; SKILL 114 on an octopus.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, and a letterless reply reused
+  with new punctuation.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, until the owner's ruleset is in place.
+- The workflow file edited with the hooks off: GitHub runs the edited copy.
+- What was opened is the session's own account. The audit by its GitHub URL passes gate 0, and so does another
+  subject's old lesson spelled `old-lessons:public/subjects/<id>/../<other>/`.
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line.
+- Commits from before the gates are checked only by the tiers at the head. A pull request or a squash of this branch
+  is red, and the skill says it lands by fast-forward.
+- A worded change to `owner-line.mjs` judges the pushes after it, not the rest of its own push.
+
+For the owner:
+- A ruleset on `main`: it requires the "lesson tier" check, runs it from `main` and forbids force-pushes. It does not
+  close fix 1 or fix 2: the check itself passes those pushes. (Carried over.)
+- Land this branch by fast-forward, after fixes 1 and 2. Fix 2 concerns exactly that push.
+- `pilot-fixes-2026-10-12` fails as a fork from before the gates. Rebase it onto the new `main`, or drop it. (Carried
+  over.)
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

@@ -5,7 +5,10 @@ import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { changed, gatedChanges } from '../tools/design/owner-line.mjs';
+import { changed, gatedChanges, OctopusError } from '../tools/design/owner-line.mjs';
+import { fileURLToPath } from 'node:url';
+const TOOL = fileURLToPath(new URL('../tools/design/owner-line.mjs', import.meta.url));
+const run = (args, cwd) => { try { execFileSync('node', [TOOL, ...args], { cwd, stdio: ['ignore', 'pipe', 'pipe'] }); return 0; } catch (error) { return error.status; } };
 
 const dir = mkdtempSync(join(tmpdir(), 'owner-line-'));
 const git = (...args) => execFileSync('git', args, { cwd: dir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
@@ -44,6 +47,28 @@ try {
   same(gatedChanges('--commit', 'HEAD', base, dir).sort(), ['tools/design/other.mjs', 'tools/design/owner-line.mjs'], 'with --brought, the gate files changed against the base are held');
   // a plain commit's own changes
   same(changed('--commit', base, dir).sort(), ['README.md', 'notes.txt', 'tools/design/owner-line.mjs'], 'a root commit against nothing');
+  // the check run as a script: its verdict on a commit with and without the line
+  writeFileSync(join(dir, 'msg-none.txt'), 'no line\n'); writeFileSync(join(dir, 'msg-word.txt'), 'x\n\nOwner\'s word: "yes" (chat)\n');
+  same(run(['msg-none.txt', '--commit', 'HEAD', '--brought', base], dir), 1, 'the script refuses a gate change without the line');
+  same(run(['msg-word.txt', '--commit', 'HEAD', '--brought', base], dir), 0, 'the script passes a gate change with the line');
+  same(run(['msg-none.txt', '--commit', 'HEAD'], dir), 0, 'the script passes a clean merge with no own change');
+  // a staged rename of a gate file out of its folder is a change to it
+  git('checkout', '-q', '-b', 'e', base); git('mv', 'tools/design/owner-line.mjs', 'moved.mjs');
+  ok(gatedChanges('--staged', undefined, null, dir).includes('tools/design/owner-line.mjs'), 'a staged rename out is a change to the gate file');
+  same(run(['msg-none.txt', '--staged'], dir), 1, 'the script refuses the staged rename without the line');
+  git('reset', '-q', '--hard'); 
+  // a merge whose own change renames a gate file out
+  git('checkout', '-q', '-b', 'f', base); write('other.txt', 'f\n'); git('add', '-A'); git('commit', '-q', '-m', 'f');
+  git('merge', '-q', '--no-commit', '--no-ff', 'a'); git('mv', 'tools/design/owner-line.mjs', 'gone.mjs'); git('commit', '-q', '-m', 'evil rename');
+  ok(gatedChanges('--commit', 'HEAD', null, dir).includes('tools/design/owner-line.mjs'), 'a merge that renames a gate file out is held for it');
+  // an octopus merge is refused
+  git('checkout', '-q', '-b', 'g', base); write('g.txt', 'g\n'); git('add', '-A'); git('commit', '-q', '-m', 'g');
+  git('checkout', '-q', '-b', 'h', base); write('h.txt', 'h\n'); git('add', '-A'); git('commit', '-q', '-m', 'h');
+  git('checkout', '-q', '-b', 'i', base); write('i.txt', 'i\n'); git('add', '-A'); git('commit', '-q', '-m', 'i'); git('merge', '-q', '--no-edit', 'g', 'h');
+  same(git('rev-list', '--parents', '-n', '1', 'HEAD').split(/\s+/).length, 4, 'the merge has three parents');
+  let octo = false; try { gatedChanges('--commit', 'HEAD', null, dir); } catch (error) { octo = error instanceof OctopusError; }
+  ok(octo, 'a merge of more than two parents is refused');
+  same(run(['msg-word.txt', '--commit', 'HEAD'], dir), 1, 'the script refuses an octopus merge even with the line');
 } finally { rmSync(dir, { recursive: true, force: true }); }
 
 if (failures.length) { console.error(`${failures.length} of ${checks} owner-line checks failed:`); failures.forEach(f => console.error(`  - ${f}`)); process.exit(1); }

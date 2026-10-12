@@ -30,16 +30,24 @@ function autoMergeTree(a, b, cwd) {
   }
 }
 
+// a merge of more than two parents (an octopus) has no remerge reading in git, so it is refused outright: merge one branch at a time
+export class OctopusError extends Error {}
+const parentsOf = (sha, cwd) => git(['rev-list', '--parents', '-n', '1', sha], cwd).trim().split(/\s+/).slice(1);
+
 export function changed(mode, sha, cwd = process.cwd()) {
   if (mode !== '--commit') {
     const staged = lines(git(['diff', '--cached', '--name-only', '--no-renames'], cwd));
-    let mergeHead = null;
-    try { mergeHead = git(['rev-parse', '-q', '--verify', 'MERGE_HEAD'], cwd).trim(); } catch { mergeHead = null; }
+    let mergeHeads = [];
+    try { mergeHeads = lines(git(['rev-parse', '-q', '--verify', 'MERGE_HEAD'], cwd)); } catch { mergeHeads = []; }
+    try { if (mergeHeads.length) mergeHeads = lines(readFileSync(`${git(['rev-parse', '--git-path', 'MERGE_HEAD'], cwd).trim()}`, 'utf8')); } catch { /* one head */ }
+    if (mergeHeads.length > 1) throw new OctopusError('a merge of more than two branches at once cannot be read: merge one branch at a time');
+    const mergeHead = mergeHeads[0] || null;
     if (!mergeHead) return staged;
     const auto = autoMergeTree('HEAD', 'MERGE_HEAD', cwd), stagedTree = git(['write-tree'], cwd).trim();
     return lines(git(['diff-tree', '-r', '--name-only', '--no-renames', auto, stagedTree], cwd));
   }
-  const parents = git(['rev-list', '--parents', '-n', '1', sha], cwd).trim().split(/\s+/).slice(1);
+  const parents = parentsOf(sha, cwd);
+  if (parents.length > 2) throw new OctopusError(`${sha} is a merge of ${parents.length} parents, which cannot be read: merge one branch at a time`);
   if (parents.length <= 1) return lines(git(['diff-tree', '--no-commit-id', '--name-only', '--no-renames', '-r', '--root', sha], cwd));
   return lines(git(['log', '-1', '--remerge-diff', '--name-only', '--no-renames', '--format=', sha], cwd)).filter(l => !isSha(l));
 }
@@ -55,7 +63,9 @@ function main(argv) {
   const [file, mode = '--staged', sha] = argv;
   if (!file) { console.error('usage: node tools/design/owner-line.mjs <message-file> [--staged | --commit <sha> [--brought <base>]]'); process.exit(2); }
   const brought = argv.indexOf('--brought') >= 0 ? argv[argv.indexOf('--brought') + 1] : null;
-  const gated = gatedChanges(mode, sha, brought);
+  let gated;
+  try { gated = gatedChanges(mode, sha, brought); }
+  catch (error) { if (error instanceof OctopusError) { console.error(error.message); process.exit(1); } throw error; }
   if (gated.length && !LINE.test(readFileSync(file, 'utf8'))) {
     console.error(`${mode === '--commit' ? sha : 'this commit'} changes the gates (${gated.slice(0, 4).join(', ')}${gated.length > 4 ? ', …' : ''}); it needs a line: Owner's word: "<their words>" (<where they said it>)`);
     process.exit(1);
