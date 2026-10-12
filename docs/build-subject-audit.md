@@ -3314,3 +3314,156 @@ For the owner:
 - An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part S. The sixteenth review (2026-10-13)
+
+An independent review of e06ed14 ("the skill's fifteenth review answered"), by an agent that did not write it, against
+part R's three fixes (R6). Line numbers are those at e06ed14. **`npm test` is green** (exit 0): 302 design reader
+checks, 21 owner-line checks, 48,520 lesson checks, 248 seeded faults. Every push was simulated against a bare
+"origin" copied from this worktree with `main` at d03b63f, the pushed refs written into it, unreachable objects pruned,
+and a fresh `--no-local` clone checked out at the pushed commit (so a commit a force-push left behind is absent, as on
+a runner). The per-commit step was taken out of the pushed commit's `lesson-tier.yml` as written, with the event's
+values filled in, its temporary files on a real path unless said otherwise, and run under `bash -eo pipefail`. The
+hook cases ran in a clone with `npm run hooks`. The real records were never touched.
+
+What is better, briefly:
+- The check's test now turns red on every seeded fault that changes a verdict, the argv-gated exit included.
+- A push that creates `main` is checked from the gates' start, and an unworded gate edit on it is red.
+- The fallback copy, 27ab552, holds the same `owner-line.mjs` as HEAD (`git diff --quiet 27ab552 HEAD`), so the
+  landing push is checked by the real-path guard; L1 with the step's files under macOS's `/tmp` is now red.
+
+What is left:
+- The new "creates `main`" line also catches a **forced** push to `main` whose old head is no longer in the clone,
+  which is what a rewrite leaves. Such a push used to be refused; now it is checked from the gates' start and passes.
+- The standard's section 11 still names 2d0027d as the fallback, and neither it nor the skill names the new rule.
+
+### S1. R6's three items
+
+| # | R6 item | Status | Evidence |
+|---|---|---|---|
+| 1 | Register the test's `exit` handler before the probe and the tool's import | **Done** | test 9-12, before the probe (16) and the import (18). `if (process.argv[1]) process.exit(0);` at the top of the tool: *red*, "the run stopped before its end", and `npm run test:data` exits 1. The clean tool: green. |
+| 2 | A push to `main` with no `BEFORE` commit is checked from `GATES_START`, or fails | **Done, with a regression** | yml 26. (del) `main` deleted, then a hooks-off commit that empties the check and edits `rule.mjs` pushed as a new `main`: *red*, "checking 21da9cf…^..HEAD", 11 checked, "4dfa7b4 changes the gates". (delclean) this branch's head pushed as a new `main`: exit 0, 10 checked. <br>The condition is "the `BEFORE` commit is not in this clone", not "`BEFORE` is all zeros", so it also takes a forced push whose old head was rewritten away (S3, item 1). |
+| 3 | `FALLBACK_CHECK` is a commit with the real-path guard | **Done** | yml 45, `FALLBACK_CHECK=27ab552`; its `owner-line.mjs` is HEAD's. (L1sym) L1 with the step's files under `/tmp` (a symlink on macOS): *red*, by 27ab552's copy. The text that names it is stale (S3, item 2). |
+
+Two are done; one is done with a regression.
+
+### S2. The seeded faults of the check's test
+
+Each fault was seeded alone into a clone's `tools/design/owner-line.mjs`; `node tests/owner-line-pure.mjs` and
+`npm run test:data` were run.
+
+- **Red (test and `test:data` both exit 1):**
+  - part R's open one: `if (process.argv[1]) process.exit(0);` at the top of the tool;
+  - variants (new): the same line placed just before the script guard; `process.exit(0)` only when `argv[1]` ends in
+    `owner-line-pure.mjs`;
+  - part Q's three: an early `process.exit(0)`; the staged octopus refusal removed; `--no-renames` dropped from
+    `--brought`;
+  - part Q's six: `--no-renames` dropped from the staged and from the remerge reading; `LINE` set to match anything;
+    the refusal's `process.exit(1)` set to 0; the commit octopus refusal removed; the `merge-tree` catch removed;
+  - part R's eight: `MERGE_HEAD` read against the process's directory; only the first head read; the old
+    string-compare guard; an `OctopusError` exiting 0; `--brought` ignored in `main`; a merge read as `[]`; a staged
+    merge read without the automatic merge; `tools/design/` dropped from `GATED`;
+  - new: a failed `MERGE_HEAD` read swallowed and read as one head.
+- **Green:**
+  - `setTimeout(() => process.exit(0), 0)` at the top of the tool (new). Not a fault: every verdict is reached
+    synchronously, so the timer fires after the run or the refusal and changes no exit code.
+  - `GATED` narrowed by any entry other than `tools/design/`: as part R found, a worded change to the check, in the
+    named class.
+
+### S3. The attacks
+
+- **(a) to (e), (h), (j) to (p), (q), (s) to (x), (z3) to (z7), (z11'), (z13), (oct2), (oct-br), (B), (f2), (z2),
+  (z9), (z12), (m1) to (m3), (z14):** not run again. `git diff --stat 27ab552 HEAD` touches only the yml's range
+  line and fallback, the check's test, and this file; `owner-line.mjs` and the hooks are unchanged. Parts K to R's
+  results stand.
+- **(R1) This branch landing on `main` from d03b63f:** 15 skipped, 21da9cf to e06ed14 (10) checked with 27ab552's copy.
+  Exit 0.
+- **(L1) The landing push with a hooks-off head** that empties the check and edits `rule.mjs`: *red*, "4dfa7b4 changes
+  the gates (tests/lessons/rule.mjs, tools/design/owner-line.mjs)".
+- **(L1m) The landing push with a hooks-off evil two-parent merge:** *red*, by 27ab552's copy.
+- **(L1sym) L1 with the step's files under `/tmp`:** *red*. Fixed.
+- **(oct-L) The landing push with an evil octopus:** *red*, refused by yml 60.
+- **(del) `main` created by an unworded gate edit:** *red*. Fixed.
+- **(delclean) `main` created at this branch's head:** exit 0.
+- **(fr) `main` at a docs commit A, then force-pushed to a sibling docs commit B, A pruned (new):** *green*, "checking
+  21da9cf…^..HEAD", 11 checked. The same push with yml 26 taken out (frold): *red*, "a forced push after which nothing
+  is new against main: history was rewritten". The fix opened this (S4, item 1).
+- **(H) A merge in progress with three heads, hooks on, `git commit` from `tools/`:** refused, "a merge of more than
+  two branches at once cannot be read".
+- **(hook) An unworded `rule.mjs` edit, hooks on:** refused.
+
+### S4. What the fixes broke or missed
+
+1. **A rewrite of `main` now passes** (fr). Yml 26 tests whether `BEFORE` is a commit in the clone. After a forced push
+   that rewrote history, the old head is on no ref, so `actions/checkout` (all branches and tags) does not fetch it,
+   and the test cannot tell this from a created `main`. The push is then checked from the gates' start with the
+   fallback copy and passes. Until e06ed14 the same push fell to `merge-base origin/main HEAD`, which is `HEAD`, and
+   was refused as forced. So the skill's "a forced push after which nothing is new against `main` fails" (SKILL
+   115-116) no longer holds on `main`, the one branch it matters most for. A rewrite that drops a commit, such as one
+   that added an ask or an owner entry, leaves no removal for the per-commit tier to see. The fix: take this route
+   only when `BEFORE` is all zeros (`github.event.created`), and leave a missing non-zero `BEFORE` to the forced
+   refusal (fail closed).
+2. **The text was not brought along.**
+   - `docs/lesson-standard.md` section 11, round fourteen, still says "the push's fallback copy of the check … is the
+     named commit 2d0027d". It is 27ab552.
+   - No dated entry, and no line in the skill's "How it runs", names the new rule that a push creating `main` is
+     checked from the gates' start. Section 11's last line asks for a dated entry for each rule change, and part Q
+     counted the same gap as a defect.
+   - The yml head comment (1-6) does not name it either.
+
+### S5. The two screens the owner reads
+
+No record, research note, reader, hook or record tool changed since 6f42ca1 (`git diff --stat 6f42ca1 HEAD` is empty
+on all of them). `approve.mjs <id> goal --show` prints Psychology at 4,551 characters (747 words) and Geography at
+3,402 characters (679 words), the same as in parts O to R. Both were read again:
+- **Psychology:** true to its record. The test reaches every topic group: the accounts, the arguments, the heated
+  moments and the next step. Readable: fair. "Projection" is both a topic and one of the defense mechanisms, and the
+  asks' words are cut at 100 characters. *Verdict:* it can go out. Its length is the owner's call.
+- **Geography:** true to its record. The test reaches every topic group, flags and distance included. *Verdict:* it
+  can go out.
+
+`docs/research/designing-a-subject.md` and the skill's "What the gates rest on" did not change. There is no new
+finding there.
+
+### S6. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. Yml 26: test for a created `main` by `BEFORE` being all zeros, not by its absence from the clone. As written, a
+   force-push that rewrites `main` passes, where until e06ed14 it was refused (reachable until the owner's ruleset
+   forbids force-pushes).
+2. Text: in `docs/lesson-standard.md` section 11, change the fallback from 2d0027d to 27ab552, and add a dated entry
+   for "a push that creates `main` is checked from the gates' start". Add the same rule to SKILL "How it runs" and to
+   the yml head comment.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, and a letterless reply reused
+  with new punctuation.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, until the owner's ruleset is in place. The workflow refuses it only on a branch, and on `main`
+  once item 1 is fixed.
+- The workflow file edited with the hooks off: GitHub runs the edited copy.
+- What was opened is the session's own account.
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line. In the same class: a worded edit that narrows
+  `GATED`.
+- Commits from before the gates are checked only by the tiers at the head. A pull request or a squash of this branch
+  is red, and it lands by fast-forward.
+- A worded change to `owner-line.mjs` judges the pushes after it, not the rest of its own push.
+
+For the owner:
+- A ruleset on `main`: it requires the "lesson tier" check, runs it from `main`, forbids force-pushes and restricts
+  deletions. (Carried over.)
+- Part R asked whether "just finish everything" was yours, and when, since 27ab552 dated it "(chat, 2026-10-13)" on a
+  commit made 2026-10-12 17:19. e06ed14 carries the same words with the place changed to "(chat, the morning after
+  the 2026-10-12 session)", on a commit made 2026-10-12 17:56, which is before that morning. The question was not
+  answered; the wording was changed instead. Are those your words, and when did you say them?
+- Land this branch by fast-forward. Neither fix changes what the landing push decides.
+- `pilot-fixes-2026-10-12` fails as a fork from before the gates. Rebase it onto the new `main`, or drop it. (Carried
+  over.)
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

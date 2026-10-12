@@ -113,7 +113,7 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   is the copy `main` held before the push, on any other push or pull request it is `main`'s, and a named fallback commit's when that has none (a worded change to the check itself therefore judges only later pushes, not the rest of its own); a merge of more than two parents is refused on push and in the hook, since git has no reading of what such a merge changed itself; a merge is held only for its own changes (its remerge diff, renames not followed), since what
   it brings in was checked on the commits that made it, and a merge that brings in commits that do not descend from
   the commit where the gates start is held for every gate file it changes; a forced push after which nothing is new
-  against `main` fails; commits that are ancestors of the commit where the gates start (named in the workflow) are
+  against `main` fails; a push that creates `main` is checked from the commit where the gates start; commits that are ancestors of the commit where the gates start (named in the workflow) are
   skipped there and checked by the tiers at the head, and a commit that is neither its ancestor nor its descendant
   fails. The
   branch that built the gates lands on `main` by a fast-forward, so every commit of it has been checked where it was
