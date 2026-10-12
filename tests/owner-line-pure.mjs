@@ -6,6 +6,11 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+// the run must reach its last line: an early exit anywhere (in the tool on import, or here) is a failure, not a pass
+// registered before the tool is probed or imported, so an exit inside it is caught too
+let finished = false;
+process.on('exit', code => { if (!finished && code === 0) { console.error('owner-line checks: the run stopped before its end'); process.exitCode = 1; } });
+
 const TOOL = fileURLToPath(new URL('../tools/design/owner-line.mjs', import.meta.url));
 // the tool must come back from being imported: an exit at import (any code) would end this run before a single check
 const probe = execFileSync('node', ['--input-type=module', '-e', `await import(${JSON.stringify(pathToFileURL(TOOL).href)}); console.log('imported')`], { stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
@@ -13,9 +18,6 @@ if (probe !== 'imported') { console.error('owner-line checks: the tool exits whe
 const { changed, gatedChanges, OctopusError } = await import('../tools/design/owner-line.mjs');
 const run = (args, cwd) => { try { execFileSync('node', [TOOL, ...args], { cwd, stdio: ['ignore', 'pipe', 'pipe'] }); return 0; } catch (error) { return error.status; } };
 
-// the run must reach its last line: an early exit anywhere (in the tool on import, or here) is a failure, not a pass
-let finished = false;
-process.on('exit', code => { if (!finished && code === 0) { console.error('owner-line checks: the run stopped before its end'); process.exitCode = 1; } });
 const dir = mkdtempSync(join(tmpdir(), 'owner-line-'));
 const git = (...args) => execFileSync('git', args, { cwd: dir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
 const write = (f, s) => { mkdirSync(join(dir, f, '..'), { recursive: true }); writeFileSync(join(dir, f), s); };

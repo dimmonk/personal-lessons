@@ -23,6 +23,7 @@ jobs:
           set -e
           BEFORE="${{ github.event.before }}"
           if [ "${{ github.event_name }}" = "pull_request" ]; then RANGE="origin/${{ github.base_ref }}..HEAD"
+          elif [ "${{ github.ref }}" = "refs/heads/main" ] && ! git rev-parse -q --verify "$BEFORE^{commit}" >/dev/null 2>&1; then RANGE="21da9cf36e71329fea154dcaf51721ab8539c8d2^..HEAD"   # a push that creates main: every commit from the gates' start
           elif [ -n "$BEFORE" ] && git rev-parse -q --verify "$BEFORE^{commit}" >/dev/null && git merge-base --is-ancestor "$BEFORE" HEAD; then RANGE="$BEFORE..HEAD"
           else RANGE="$(git merge-base origin/main HEAD 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"; fi
           echo "checking $RANGE"
@@ -41,7 +42,7 @@ jobs:
           # request, main's; the named fallback commit's when that ref has none. Never the pushed head's.
           if [ "${{ github.ref }}" = "refs/heads/main" ] && [ "${{ github.event_name }}" = "push" ]; then CHECK_REF="$BEFORE"; else CHECK_REF="origin/main"; fi
           # when that ref has no copy (the landing push of the gates), the fallback is the named commit whose readings are the current ones
-          FALLBACK_CHECK=2d0027d
+          FALLBACK_CHECK=27ab552
           git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$FALLBACK_CHECK"
           git show "$CHECK_REF:tools/design/owner-line.mjs" > /tmp/owner-line.mjs
           echo "the owner-line check is the copy at $CHECK_REF"
