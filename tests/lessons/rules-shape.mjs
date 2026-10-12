@@ -467,10 +467,13 @@ export const V71 = subjectRule('V71', (s, check) => {
 });
 
 /* ---------- V80 ---------- */
+// The subject record mirrors the sentence the owner approved. While a redesign's sentence waits for their word (approved.goal null), the
+// subject keeps the sentence it was built to: the last committed record's.
 export const V80 = subjectRule('V80', (s, check) => {
   const design = s.design;
   if (!design || design.error) { check(true, ''); return; }   // V69 owns a missing or unreadable record
-  check(s.meta.endResult === design.endResult, 'the subject\'s end result is not the design record\'s end result, word for word');
+  const settled = design.approved && design.approved.goal ? design : (s.committedDesign || design);
+  check(s.meta.endResult === settled.endResult, `the subject's end result is not the ${settled === design ? 'design record\'s' : 'last approved (committed) design record\'s'} end result, word for word`);
   check(s.meta.readingShare === design.readingShare, `the subject's readingShare is ${s.meta.readingShare} and the design record's is ${design.readingShare}`);
 });
 

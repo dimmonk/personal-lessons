@@ -34,7 +34,7 @@ function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026
     practice: text.practice, feedback: text.feedback || 'From the app, after each answer: right or wrong and the reason.', delivery: text.delivery || [],
     readingShare: text.readingShare, form: text.form || 'The real moment\'s own form: the input as it arrives, the answer the learner would give.',
     parts: parts.map(p => ({ ...p, topics: [p.title.toLowerCase()] })), lessons: Object.fromEntries(Object.entries(lessons).map(([id, part]) => [id, { part, does: text.does || text.practice, feedback: text.feedback || 'Right or wrong and the reason, after each answer.', check: checks[part], why: ['U1', 'U2'] }])),
-    pilot, approved: { goal: approved(subject, goalScreen, date), practice: { ...word(subject, 'the practice', date), fp: fingerprint(text.practice) } },
+    pilot, approved: { goal: approved(subject, goalScreen, date), practice: { ...word(subject, 'the practice', date), fp: fingerprint(text.practice) }, history: { goal: [], practice: [] } },
     designReview: { date, file: 'reviews/design.md' }, designedOn: date,
     tried
   };

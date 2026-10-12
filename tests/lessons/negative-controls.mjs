@@ -9,7 +9,7 @@ import { lockEntries } from './fingerprint.mjs';
 import { collectSite } from './site.mjs';
 import { DEFAULTS } from './paths.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
-import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
+import { CONTROLS, NO_CONTROL, PINNED_CONTROL_COUNT } from './controls-table.mjs';
 import { FIXTURE_FILES, FIXTURE_DESIGNS, FIXTURE_IDS, FIXTURE_REVIEWS, FIXTURE_RESEARCH, withTriedFps, withReviewFps } from '../fixtures/fixture-subject/design.mjs';
 import { lessonFingerprint } from './fingerprint.mjs';
 
@@ -86,7 +86,8 @@ async function main() {
   Object.entries(NO_CONTROL).forEach(([id, why]) => console.log(`  ${id} has no control: ${why}`));
   if (report.unexplained.length) console.error(`rules with neither a control nor a stated reason: ${report.unexplained.join(' ')}`);
   if (report.stale.length) console.error(`rules listed as having no control that do have one, or do not exist: ${report.stale.join(' ')}`);
-  if (failed.length || report.unexplained.length || report.stale.length) {
+  if (CONTROLS.length < PINNED_CONTROL_COUNT) console.error(`the controls are fewer than pinned: ${CONTROLS.length} of ${PINNED_CONTROL_COUNT} (a control was taken away)`);
+  if (failed.length || report.unexplained.length || report.stale.length || CONTROLS.length < PINNED_CONTROL_COUNT) {
     console.error(`\n${failed.length} of ${results.length} controls failed`);
     process.exit(1);
   }

@@ -186,13 +186,18 @@
   "designedOn": "2026-10-12",
   "approved": {
     "goal": null,
-    "practice": null
+    "practice": null,
+    "history": {
+      "goal": [],
+      "practice": []
+    }
   },
   "tried": {},
   "opened": {
     "asks": [
       "docs/research/knowing-where-places-are.md (the cloud session's plan)",
-      "docs/lesson-rebuild-todo.md (the three changes, 2026-10-12)"
+      "docs/lesson-rebuild-todo.md (the three changes, 2026-10-12)",
+      "chat, 2026-10-12 (the owner asked for the subject; the cloud session planned it at their request)"
     ],
     "research": [
       "docs/research/knowing-where-places-are.md",

@@ -998,3 +998,246 @@ For the owner:
   edited with its controls, which no code can close. If it is, the defence is reading the owner fields and the commit
   log.
 - Math's three, Singing's three and Wealth's four undecided asks still wait for their word.
+
+## Part G. The fourth review (2026-10-12)
+
+An independent review of d9dcf4b ("the skill's third review answered"), by an agent that did not write it, against
+part F's fourteen fixes (F6). Line numbers are `SKILL.md`'s at d9dcf4b. `npm test` is green: 292 design reader checks,
+48,520 lesson checks, 213 seeded faults. Every attack below was run on a scratch copy (`git archive HEAD`, its own
+`git init`, `npm run hooks`), never on the real records.
+
+What is better, briefly:
+- Every ask is on the gate 2 screen with where it is taught, and the approval binds that placement.
+- A review names the fingerprint of what it read, and `tried.mjs` refuses a review of another version or `reviews/design.md`.
+- Read levels are stated, never inferred. O8 and M4 are decides/full again, and on every finding of every note the
+  parser now agrees with the finding's own Read line.
+- V69 lists committed records from git, so `git rm` of a record is refused.
+- A built subject's gate 1 can change before the practice is approved.
+- Gain is out of the stand-in's pass rule.
+
+What is left falls in three groups:
+- The pre-commit hook checks the working tree, not the commit, so anything V69 refuses can be committed with no bypass flag.
+- "Never edited" is not what the code does: a changed word passes as "a later word".
+- The research notes are not under the commit-message hook, though the skill and the commit say they are.
+
+### G1. F6's fourteen items
+
+| # | F6 item | Status | Evidence |
+|---|---|---|---|
+| 1 | Each ask's mapping on the screen, under the fingerprint; resolve 197 against 198-199 | **Mostly** | `asksToShow` and `goalScreen` (design-shape 41-42); attack (m) is refused. The text was left behind. 202-204 still says an item "is shown as dropped ... while it has no topics and no word from the owner" and is kept by "topics found for it on their word". 289-290 says "the owner's own word on an ask does not" re-open the approval, yet a `--drop` of a kept ask clears `kept` and does (tried). `approve.mjs` 2-3 still describes "What you asked for that this design drops". |
+| 2 | A review carries the fingerprint of what it reviewed | **Done** | `REVIEWED_LINE`, `triedPasses`, `designReviewed`, `tried.mjs` 42-48; (n) is refused. One caveat: the seven `Reviewed:` lines in the 2026-10-11 reviews were written by the committing session on 2026-10-12, and no file says so (G4, item 6). |
+| 3 | Read level stated per source; O8 and M4 restored | **Done** | `readLevel` (designs.mjs 44-48). O8 and M4 are D/full. The real notes have no unstated level on a finding's own line. Two gaps remain: a span still runs past headings, and a missing Read line is accepted by V69 (item 7). |
+| 4 | Committed records from git; the deletion fault runs the reader | **Mostly** | `collectCommittedDesigns` uses `git ls-tree HEAD`, and `git rm` of Geography is refused (tried). The seeded fault still injects `committedDesigns`. The hook lets the deletion in another way: attack (b). |
+| 5 | Compare approvals and tries; refuse re-approval in the same words; let a word be superseded | **Partly** | `ownerSinceProblems` and `laterWord` (design-shape 90, 98-112). (1) Any different words with a date no earlier count as "a later word". An approval's words were edited in place and committed. Psychology's `biases` ask had the owner's "restore all ..." keep rewritten in place to an invented "drop the biases", with `dropped: true`, and V69 stayed green. (2) The same-words refusal compares only with the approval now on the record. Clearing it in one commit and re-approving with the old words in the next bound the old words to a changed screen (tried). (3) The seeded fault "an approval edited in place" edits `where`, not the words. |
+| 6 | A built subject's principles change before the approvals | **Done** | `blockProblems` 224-225; `designSinceProblems` does not cover gate 1. |
+| 7 | Notes under the hook, or compared with the commit; `design-pure.mjs` in pre-commit | **Not done** | `.githooks/commit-msg` 6 has no `docs/research/`, and d9dcf4b did not touch `.githooks/`. A note's G4 was promoted to decides/full and committed with no owner line (attack p). Pre-commit runs `test:lessons` only. V69 skips a finding with no Read line (`mark.read && ...`, design-shape 128): SC3's Read line was deleted, the record claimed decides/full, and the commit went in. Only `test:data` saw it. Both the commit message ("7. The research notes are under the commit-message hook") and SKILL 101-103 claim what is not so. |
+| 8 | Math's held content gets an exit | **Partly** | `designedOn` exists, and a later date resets `opened`. The redesign asks for nothing else (attack o). |
+| 9 | Parse the Reviewer line's `opened:`; re-run Psychology l1 | **Partly** | `REVIEWER_LINE` needs "(model)" and a date; `opened:` is not parsed. Psychology l1's line still says "what it opened is in its notes below". Both re-reviews are open on the worklist (38 and 65). |
+| 10 | Gain out of the pass | **Done** | `stand-in-review.md` 46-47. |
+| 11 | The standard: the V69 row; dated entries | **Partly** | The V69 row is updated, though it still says "every principle is cited by a block" where the code waits for the practice approval. Section 11 has no dated entry for the rule changes of e8fc74e or d9dcf4b, against its own last paragraph. |
+| 12 | D7 as a judgement call | **Partly** | Gate 4 (350) says it is one. Gate 3 step 1 (314) still states it as a rule. |
+| 13 | An allow-list for `opened.asks` | **Partly** | `ASKS_OK` (design-shape 138) admits any `docs/` path and any `x/y.md`. Geography's "docs/research/knowing-where-places-are.md (the cloud session's plan)" still passes as a source of the owner's asks. |
+| 14 | The worklist's Geography line | **Done** | `docs/lesson-rebuild-todo.md` 32. |
+
+Five are done, two mostly done, six partly done and one not done. The commit message says what it does about each, and
+item 7's claim is false.
+
+### G2. The attacks
+
+- **(a) Approve with made-up words.** `approve.mjs geography goal --words "yes this is fine go ahead"`: green, and
+  committed. Nothing stopped it. The skill names this gap (103-104).
+- **(b) Remove an ask by deleting the record.** *Stopped* in a plain commit: `git rm` of the record is refused.
+  *Not stopped* with `--no-verify`, which the skill names. *Not stopped with no flag at all*:
+  - `git rm --cached docs/subjects/geography/design.md` was committed. The hook validated the working tree, where the
+    file still stood. HEAD no longer had the record.
+  - The record was then edited without `world-first`, re-added, and committed green.
+  - The same route works for any refused change. Stage the change, restore the working file, commit. Math's undecided
+    `primes-factors` was removed from HEAD this way, and the tree was green afterwards.
+
+  *Not named:* the skill names only `--no-verify`.
+- **(c) Reword an ask.** *Stopped* for its words, when and where. *Not stopped:* an owner word already recorded can be
+  rewritten in place (G1, item 5). The invented words are a named gap. "Never edited" is a claim the code does not keep,
+  and that is not named.
+- **(d) Make a failing pilot pass.** Five steps, all on Scams l3 (review: fails):
+  1. fake approvals of the goal and the practice;
+  2. a self-written `reviews/design.md` stamped with `fp.mjs scams`;
+  3. `tried.mjs scams l3 --owner --words "fine" --passed yes`;
+  4. `status: "live"`;
+  5. `tried.mjs` re-run so the try carries the new fingerprint.
+
+  Green, and committed. Named, as invented quotes and self-written reviews (103-105).
+- **(e) Write gate 3 early.** *Stopped* on Geography with no approval. *Not stopped* once (a) fakes it. Named through (a).
+- **(f) Commit a red tier.** *Stopped* by pre-commit. Three ways round it:
+  - `--no-verify`: named.
+  - `core.hooksPath` pointed elsewhere: not named, though `npm test` turns the hooks back on.
+  - The index route of (b): not named, and it needs no flag.
+
+  After one such commit, HEAD is the new baseline. That is not named either.
+- **(g) Switch V69 off.** The commit is refused with no owner line. With `Owner's word: "sure" (chat, 2026-10-12)`, the
+  commit went in after `RULES_DESIGN` was taken out of `rules-index.mjs` and the V69 controls were filtered out. The
+  tier stayed green on 140 controls where there had been 213, and nothing pins the count. Named (105-106).
+- **(h) Re-fingerprint a changed screen.**
+  - Recomputing `fp` by hand with the same words: *stopped* (`laterWord`).
+  - Editing `approved.goal.words` in place: *green*.
+  - Clearing the approval in one commit and re-running `approve.mjs` with the old words in the next, on a screen with a
+    topic cut: *green*.
+
+  *Not named:* 86-87 and 99-100 say the opposite.
+- **(i) Promote a finding without reading it.** The same as (p).
+- **(j) Write your own record review.** A self-written `reviews/design.md` lifts the hold (d). After the blocks were
+  gutted and `form` became "Ten items, 8 of 10", the review stopped counting, and the hold came back (*stopped*, new).
+  Pasting `fp.mjs scams` into its `Reviewed:` line lifted the hold again. Named (104).
+- **(k) Re-stamp a rewritten lesson.** `--stand-in reviews/design.md` is refused (*stopped*, new). The old
+  `reviews/l1.md` is refused (*stopped*, new). A hand-edited entry `fp` is refused by V69. Editing the review's
+  `Reviewed:` line passes. Named.
+- **(l) Drop an ask on the owner's word, then change a lesson.** On Wealth, with faked approvals and record review:
+  - the four undecided asks were dropped with `asked.mjs --drop`;
+  - the pilot was retitled and the lock regenerated.
+
+  *Allowed*, green and committed, as it should be. One wrinkle: dropping an ask that was *kept* re-opens the approval,
+  against 289-290 (G1, item 1).
+- **(m) Re-place an ask after the approval.** `asked.mjs wealth before-you-change --kept "Your biggest single bet"`:
+  *refused* ("the screen the owner approved ... changed"). Un-dropping a dropped ask by placing it: *refused*. Right.
+- **(n) Rewrite a reviewed lesson and re-run `tried.mjs` with the old review.** Psychology l1 was retitled. `tried.mjs`
+  refused: "reviews/l1.md reviewed sha256:cb71...; the lesson is now sha256:79f5...". *Stopped.* Only an edit of the
+  review file gets past it, which is named.
+- **(o) A later `designedOn` with a shrunk `opened`.** On Math, with faked approvals, drops and record review, a
+  lesson change was held by the engine paths in `opened.design`. Three edits lifted the hold:
+  - `designedOn` moved to `2026-10-13`;
+  - the two paths deleted;
+  - `opened.asks` replaced by `["chat"]`.
+
+  Green, and committed. Nothing else is demanded:
+  - The 2026-10-12 record review still counts, because `designFingerprint` leaves out `opened` and `designedOn`, and
+    a review dated before the redesign is accepted.
+  - The approvals stand.
+  - The History prose (385-386) is unchecked.
+  - `opened.asks` resets too, although gate 0 is not part of a redesign.
+
+  It should demand more: a record review dated on or after `designedOn`, and `opened.asks` left alone. *Not named.*
+- **(p) A note's Read line from `summary:` (here `abstract:`) to `full:`, then claimed.** G4 in
+  `knowing-where-places-are.md` went to "*Read: full: full text, pp. 422-437.*" and **Decides:**. Geography's record then
+  claimed G4 decides, full, with a choice. V69 and `design-pure.mjs` were green, and the commit went in with no owner
+  line. *What stops it: nothing.* Not reading is named (104-105). But the skill (101-103) and the commit say the notes
+  are under the commit-message hook, and that hook is the one thing that would have asked. *Named wrongly.*
+
+### G3. The two screens the owner reads tomorrow
+
+**Psychology** (`approve.mjs psychology goal --show`; 4,846 characters, 154 under the bound):
+- *True to its record:* yes. It prints the record's goal, 27 topics, sentence, test and all eight asks with their topics,
+  and the fingerprint covers what is printed.
+- *Readable:* poorly.
+  - The first ask's line repeats all 27 topics (about 900 characters), and the biases ask repeats five.
+  - At about 760 words it is several phone screens.
+  - The sentence prints as "After this subject you can: When someone reaches for ..., check it ...", which is not the
+    skill's "you can ___ when ___".
+- *A true picture:* no.
+  - The paragraph promises spotting biases "in other people's reasoning and in your own", the defense mechanisms, and
+    keeping your emotions in check.
+  - The sentence and the test cover only the labels: ten accounts, judged fits / ordinary / can't tell / control, then
+    a next step.
+  - About a third of the topics (cognitive dissonance to defense mechanisms, and "keeping yourself in check") are tested
+    by nothing.
+  - So gate 4's rule cannot be met for those topics: each part's check must be "a small version of gate 2's test".
+  - Gate 2 has no rejection for a test narrower than the topics, so the screen would be approved as it stands.
+  - The sentence and the test should be rewritten before the screen goes out.
+
+**Geography** (4,054 characters):
+- *True to its record:* yes.
+- *Readable:* fair. The first ask's line repeats all 20 topics (about 1,000 characters). The paragraph's "It starts with
+  the world, then ...; a country comes as its name, its place and its flag" says how the lessons run, which gate 2
+  rejects. It is there because those were the owner's three asks: tolerable.
+- *A true picture:* yes, with one gap. The test covers placing, naming, unseen places and distance. Flags, a listed
+  topic, are not tested.
+
+### G4. What the fixes broke or missed
+
+1. **The pre-commit hook tests the working tree, not the commit** (attacks b and f). Any refusal V69 makes, a record
+   deletion or an ask removed among them, is committed by staging it while the working file stays as it was. No flag is
+   needed. Not named.
+2. **"Never edited" is untrue as built.** `laterWord` accepts any different words dated no earlier, so an approval, an
+   owner word on an ask, or an owner's try can be rewritten in place. An edit cannot be told apart from a superseding
+   word, and the record keeps no trace of the old word. 86-87 and 99-100, and the standard's V69 row, claim otherwise.
+3. **The same-words refusal is beaten in two commits** (clear, then re-approve).
+4. **The notes are outside the commit-msg hook**, and a finding with no Read line constrains nothing in V69 (G1, item 7).
+   The skill and the commit claim the hook covers the notes.
+5. **A redesign demands nothing beyond a date** (attack o).
+6. **The `Reviewed:` lines in the seven 2026-10-11 reviews were added by the committing session**, not by the reviewers.
+   Nothing in those files says so. Psychology l1's pass now rests on a binding the reviewer never wrote: the same pattern
+   as the four Reviewer lines part E named.
+7. **Gate 2 does not reject a test narrower than the topics.** Psychology's screen has exactly this (G3), and gate 4's
+   "a smaller gate 2 test" then cannot be met.
+8. **The screen bound moved from 3,000 to 5,000 characters**, and its comment (design-shape 7) justifies it by the
+   subject that needed it ("a subject with eight asks and 27 topics sits near it"). F's line 261 said a longer screen
+   "is the finding". About 1,000 characters of each screen are repeated topic lists.
+9. **Text left behind:** SKILL 202-204, 289-290 and 314 (G1, items 1 and 12); the header of `approve.mjs`; the
+   standard's V69 row on cited principles; and section 11 with no entries.
+10. **The notes against the skill.** Scams' SC3 is marked **Decides:** in its note on an abstract read, against gate 1
+    step 3. The record marks it supports, so no record overclaims.
+11. **Seeded faults that prove less than their names:**
+    - "an approval edited in place" edits `where` only;
+    - "a design record deleted since the last commit" still injects `committedDesigns`;
+    - nothing pins the control count (213).
+
+### G5. The two subjects, on paper, from where they stand
+
+**Psychology** (in the app; approvals null; 27 topics, none in a part; no `designReview`; l1 passes on a back-filled
+`Reviewed:` line).
+- *Gate 0.* All eight asks are placed by topics and shown with their placement. Five owner words are relayed or carried
+  over, and each can now be replaced by a later word. *Possible.*
+- *Gate 1.* New principles can be added before the practice approval: blocks are not required to cite them until then,
+  and a built subject's gate 1 is not frozen. The research still has to be written first: biases in yourself, emotion
+  regulation, defense mechanisms. *Possible in order* (F4, item 9 is fixed).
+- *Gate 2.* The screen fits by 154 characters, and approval is possible. But the test leaves about a third of the
+  topics untested (G3), and nothing in V69 or in the gate's rejections catches it.
+  - Rewriting the test to cover them adds characters. Each new topic costs about double, because the first ask repeats
+    the whole list. That pushes the screen over 5,000.
+  - So the screen should first show "every topic" for an ask kept by the whole list.
+- *Gates 3 to 5.* Possible in order. Covering 27 topics changes the subject record's `parts` (V71). That is held until
+  both approvals, full coverage and a passing `designReview` are in.
+- *Gate 6.* l1's pass carries over only while l1's file is unchanged. A new part id forces a change, and with it a
+  re-review, which is on the worklist (38).
+- **Verdict:** possible in order. The gate 2 screen should not go out until the test covers what the paragraph and the
+  topics promise.
+
+**Geography** (not in the app; stopped at gate 2; approval null; screen 4,054 characters).
+- *Gate 0.* All four asks are placed. The blanket "finish these 2" on `where-places-are` can now be replaced by a later
+  word. `opened.asks` names a research note as the source of an ask. *Possible.*
+- *Gate 2.* Approval is possible, and the screen is honest. Flags are not in the test.
+- *Gate 3.* Refused until `approved.goal`, then possible. The blank-map tap is a `delivery` string.
+- *Gates 4 and 5.* No coverage check applies until the pilot is committed. Then the whole record applies, with a passing
+  `designReview`.
+- *Gate 6.* Possible, with a waiver quoted with its date.
+- **Verdict:** possible as the skill stands. Like every record, it can be laundered through an index-only commit (G4,
+  item 1).
+
+### G6. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. Run the pre-commit tier on the staged tree (export the index, for example `git checkout-index -a --prefix=<tmp>/`,
+   and validate there against HEAD), or name the gap in the skill.
+2. Put `docs/research/` under the commit-msg hook as the skill already says. Make V69 read a missing Read line as
+   summary. Run `design-pure.mjs` in pre-commit.
+3. Make owner words append-only: each owner field keeps its entries, and the committed entries must stay a prefix. Then
+   "never edited" is true, superseding still works, and re-approval checks the same words against the whole history.
+4. Make a redesign carry a record review dated on or after `designedOn`, and keep `opened.asks` out of the reset.
+5. Gate 2: reject a test that does not exercise every topic (or a topic no part of the test reaches). Rewrite
+   Psychology's sentence and test before its screen goes out.
+6. Print "every topic" for an ask kept by the whole list.
+7. Bring the text in line with the code: SKILL 202-204, 289-290 and 314; the head of `approve.mjs`; the standard's V69
+   row; section 11's entries for e8fc74e and d9dcf4b.
+8. Parse `opened:` on the Reviewer line. Re-run Psychology l1's and Singing l2's reviews. Say in the seven reviews that
+   their `Reviewed:` line was added on 2026-10-12 by the session.
+9. Narrow `ASKS_OK` to owner material (no `docs/research/`), and fix Geography's `opened.asks`.
+10. Scams' SC3: mark it Supports in its note.
+11. Seeded faults: an approval whose words are edited in place; a deletion that runs the reader; pin the control count.
+
+For the owner:
+- Is a 4,846-character screen (about 760 words, several phone screens) "one screen"? The bound was raised from 3,000 to
+  fit Psychology.
+- Psychology: should the test also test the biases, the defense mechanisms and keeping yourself in check, or should
+  those topics leave the subject?
+- Replacement words for "finish these 2", for "On track, record my words on Psychology", and for the seven relayed words.
+- The floor at SKILL 103-108: invented quotes, self-written reviews, hook bypasses, and a validator edited together with
+  its controls. Is that acceptable, given that the defence is your reading of the owner fields and the commit log?
+- Math's three, Singing's three and Wealth's four undecided asks still wait for your word.

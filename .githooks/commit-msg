@@ -1,8 +1,8 @@
 #!/bin/sh
-# A change to the build-subject skill, to V69 or to the tools that write the design records is a change to the gates the session is held to,
-# so the commit carries the owner's word for it: a line "Owner's word: "<their words>" (<where>)" in the message. Set up once with: npm run hooks
+# A change to the build-subject skill, to the record rules and their harness, to the tools that write the design records, to the research notes
+# the records cite, to the hooks or to package.json is a change to the gates the session is held to, so the commit carries the owner's word
+# for it: a line "Owner's word: "<their words>" (<where they said it>)" in the message. Set up once with: npm run hooks
 cd "$(git rev-parse --show-toplevel)"
-# the gates: the skill, the record rules and their harness (the runner, the index, the controls, the fixtures, the entry points), the tools, the hooks
-if git diff --cached --name-only | grep -qE '^(\.claude/skills/build-subject/|tests/lessons/|tests/validate-lessons\.mjs|tests/fixtures/fixture-subject/design\.mjs|tools/design/|\.githooks/|package\.json)'; then
-  grep -qE "^Owner's word: \".+\" \(.+\)" "$1" || { echo "commit-msg: this commit changes the skill, V69 or the record tools; add a line: Owner's word: \"<their words>\" (<where they said it>)"; exit 1; }
+if git diff --cached --name-only | grep -qE '^(\.claude/skills/build-subject/|tests/lessons/|tests/validate-lessons\.mjs|tests/design-pure\.mjs|tests/fixtures/fixture-subject/design\.mjs|tools/design/|docs/research/|\.githooks/|package\.json)'; then
+  grep -qE "^Owner's word: \".+\" \(.+\)" "$1" || { echo "commit-msg: this commit changes the gates (the skill, the record rules, the tools, the research notes or the hooks); add a line: Owner's word: \"<their words>\" (<where they said it>)"; exit 1; }
 fi

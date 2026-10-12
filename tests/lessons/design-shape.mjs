@@ -45,7 +45,7 @@ export function screenText(r, field) {
   if (field === 'practice') return `How ${r.subject} is practiced:\n${r.practice}\n\nOn track, or not?`;
   const lines = [r.goal, '', `${r.subject} teaches:`, ...(Array.isArray(r.topics) ? r.topics : []).map(t => `- ${t}`), '', `After this subject you can: ${r.endResult}`, '', `The test: ${r.test}`];
   const asks = asksToShow(r);
-  if (asks.length) lines.push('', 'What you asked for, and where it is taught:', ...asks.map(a => `- ${a.words.length > ASK_SHOWN_CHARS ? a.words.slice(0, ASK_SHOWN_CHARS - 3) + '...' : a.words}: ${a.dropped ? `dropped on your word ("${a.owner}")` : a.kept ? `taught under ${a.kept.join('; ')}` : a.owner ? `you said "${a.owner}"; the design still has to place it` : 'NOT IN THIS DESIGN: needs your word (keep it here, move it, or drop it)'}`));
+  if (asks.length) lines.push('', 'What you asked for, and where it is taught:', ...asks.map(a => `- ${a.words.length > ASK_SHOWN_CHARS ? a.words.slice(0, ASK_SHOWN_CHARS - 3) + '...' : a.words}: ${a.dropped ? `dropped on your word ("${a.owner}")` : a.kept ? `taught under ${Array.isArray(r.topics) && a.kept.length === r.topics.length && r.topics.every(x => a.kept.includes(x)) ? 'every topic' : a.kept.join('; ')}` : a.owner ? `you said "${a.owner}"; the design still has to place it` : 'NOT IN THIS DESIGN: needs your word (keep it here, move it, or drop it)'}`));
   lines.push('', 'On track, or not?');
   return lines.join('\n');
 }
@@ -58,7 +58,7 @@ export function askedProblems(r) {
     const where = `asked item ${a && a.id ? a.id : i + 1}`;
     if (!a || !isText(a.id, 1) || !isText(a.words, 1) || !isText(a.when, 1) || !isText(a.where, 1) || !('owner' in a) || !('kept' in a) || typeof a.dropped !== 'boolean') return [`${where} needs id, words (the owner's), when, where, owner (null or their word), kept (null or the topics that cover it) and dropped (true or false)`];
     const problems = [];
-    if (a.owner !== null) problems.push(...ownerWord(a.owner, `${where}: owner`));
+    if (a.owner !== null) problems.push(...ownerWord(a.owner, `${where}: owner`), ...previousProblems(a.owner, `${where}: owner`));
     if (a.kept !== null) {
       if (!isList(a.kept)) problems.push(`${where}: kept is neither null nor a list of the topics that cover it`);
       else if (!topics) problems.push(`${where} is kept by topics before the record has a topics list (gate 2)`);
@@ -80,33 +80,47 @@ export function askedSinceProblems(r, committed) {
     const problems = [];
     if (n.words !== a.words) problems.push(`asked item ${a.id} was reworded since the last commit: the owner's words never change`);
     if (n.when !== a.when || n.where !== a.where) problems.push(`asked item ${a.id}: when or where it was asked changed since the last commit`);
-    if (a.owner && !laterWord(n.owner, a.owner)) problems.push(`asked item ${a.id}: the owner's recorded word on it was edited or taken away since the last commit (a later word of theirs replaces it; it is never edited in place)`);
+    if (a.owner && !laterWord(n.owner, a.owner)) problems.push(`asked item ${a.id}: the owner's recorded word on it was edited or taken away since the last commit (a later word of theirs replaces it and keeps it in previous; it is never edited in place)`);
     return problems;
   });
 }
 
 // the asks that hold the content: not dropped and not covered (no topics, or a topic no part covers)
-// an owner's word that stands may be replaced by a later word (a later date, other words), never edited in place or taken away
-const laterWord = (now, was) => !was || (now && now.date >= was.date && now.words !== was.words) || JSON.stringify(now) === JSON.stringify(was);
+// Owner entries are append-only. An entry that stands may be replaced by a later one (a later or same date, other words) that keeps it, and
+// everything it kept, in `previous`; it is never edited in place or taken away. `bare` is an entry without its previous list.
+const bare = e => { if (!e || typeof e !== 'object') return e; const { previous, ...rest } = e; return rest; };
+const sameEntry = (a, b) => JSON.stringify(bare(a)) === JSON.stringify(bare(b));
+const isPrefix = (was, now) => Array.isArray(was) && Array.isArray(now) && was.length <= now.length && was.every((e, i) => JSON.stringify(e) === JSON.stringify(now[i]));
+const laterWord = (now, was) => !was || sameEntry(now, was) && isPrefix(was.previous || [], now.previous || [])
+  || (now && now.date >= was.date && now.words !== was.words && Array.isArray(now.previous) && now.previous.length > 0 && sameEntry(now.previous[now.previous.length - 1], was) && isPrefix(was.previous || [], now.previous.slice(0, -1)));
+export const previousProblems = (e, where) => e && typeof e === 'object' && 'previous' in e && !(Array.isArray(e.previous) && e.previous.every(x => x && typeof x === 'object')) ? [`${where}: previous is not a list of the entries it replaced`] : [];
 export function unplacedAsks(r) {
   const covered = new Set((Array.isArray(r.parts) ? r.parts : []).flatMap(p => (p && Array.isArray(p.topics)) ? p.topics : []));
   return (Array.isArray(r.asked) ? r.asked : []).filter(a => a && !a.dropped && !(Array.isArray(a.kept) && a.kept.length && a.kept.every(t => covered.has(t))))
     .map(a => a.id + (a.owner ? ' (the owner said keep; no part covers it yet)' : a.kept ? ' (its topics are in no part yet)' : ' (undecided)'));
 }
 
-// approvals and tries are compared with the last commit the same way: cleared (an approval), or replaced by a later word, never edited
+// approvals and tries are compared with the last commit the same way. An approval that is cleared or replaced goes, unchanged, to the end of
+// approved.history[k], which only grows; a try that is replaced is kept in the new entry's `previous`; nothing is edited or taken away.
 export function ownerSinceProblems(r, committed) {
   if (!committed) return [];
   const problems = [];
   ['goal', 'practice'].forEach(k => {
     const was = committed.approved && committed.approved[k], now = r.approved && r.approved[k];
-    if (was && now && !laterWord(now, was)) problems.push(`approved.${k} was edited since the last commit: an approval is cleared (null) or replaced by the owner's later words, never edited`);
+    const wasHistory = (committed.approved && committed.approved.history && committed.approved.history[k]) || [], nowHistory = (r.approved && r.approved.history && r.approved.history[k]) || [];
+    if (!isPrefix(wasHistory, nowHistory)) problems.push(`approved.history.${k} lost or changed an entry since the last commit: it only grows`);
+    if (was && !sameEntry(now, was)) {
+      const kept = nowHistory.length === wasHistory.length + 1 && sameEntry(nowHistory[nowHistory.length - 1], was);
+      if (!kept) problems.push(`approved.${k} was changed since the last commit without the entry that stood going to approved.history.${k}: an approval is never edited or taken away`);
+      if (now && now.words.trim().toLowerCase() === was.words.trim().toLowerCase()) problems.push(`approved.${k} was replaced by the same words: a new approval needs the owner's new words`);
+    }
   });
   Object.entries(committed.tried || {}).forEach(([l, was]) => {
     const now = r.tried && r.tried[l];
     if (!now) { problems.push(`tried.${l} was taken away since the last commit: a try or review is replaced by a later one, never removed`); return; }
-    const same = JSON.stringify(now) === JSON.stringify(was);
-    if (!same && !(now.date >= was.date && (now.by !== was.by || now.fp !== was.fp || (now.by === 'owner' && now.words !== was.words) || (now.by === 'stand-in' && now.review !== was.review)))) problems.push(`tried.${l} was edited since the last commit: a later try or review replaces it, it is never edited in place`);
+    if (sameEntry(now, was) && isPrefix(was.previous || [], now.previous || [])) return;
+    const kept = now.date >= was.date && Array.isArray(now.previous) && now.previous.length > 0 && sameEntry(now.previous[now.previous.length - 1], was) && isPrefix(was.previous || [], now.previous.slice(0, -1));
+    if (!kept) problems.push(`tried.${l} was changed since the last commit without keeping the entry that stood in its previous: a later try or review replaces it, it is never edited in place`);
   });
   return problems;
 }
@@ -135,7 +149,7 @@ export function principleProblems(r, research) {
 
 // what each stage may open (SKILL.md, "What may be opened"); `opened` keeps one list per stage
 const RESEARCH_OK = /^(docs\/research\/|docs\/learning-science|https?:\/\/)/;
-const ASKS_OK = /^(chat\b|the brief|old-lessons:|docs\/|https?:\/\/|[^/\s]+\/[^/\s]+\.md\b)/;   // the owner's messages, briefs and course documents, the version they used
+const ASKS_OK = /^(chat\b|the brief|old-lessons:|https?:\/\/|docs\/|[^/\s]+\/[^/\s]+\.md\b)/;   // the owner's messages, the brief, their course documents, the project's written records of their words (a plan made at their request, the worklist), the version they used
 const FORBIDDEN_EVERYWHERE = (id, p) => p.startsWith(`public/subjects/${id}/`) ? 'the subject\'s own lessons' : p.startsWith(`docs/learner-view/${id}-`) ? 'the subject\'s learner views'
   : p.startsWith(`docs/subjects/${id}/reviews/`) ? 'the subject\'s reviews' : (/^docs\/subjects\/([^/]+)\//.exec(p) || [])[1] && !p.startsWith(`docs/subjects/${id}/`) ? 'another subject\'s record' : p.startsWith('public/subjects/') ? 'another subject\'s lessons' : null;
 // the writer (gates 6 and 7) may open this record, the standard, the test subject for the data shape, this subject's own files, and this
@@ -159,8 +173,8 @@ export function openedProblems(id, r) {
 // advances, gates 1 to 5 were run again, and the lists are the new pass's (the old pass's lists stay in the prose under History).
 export function openedSinceProblems(r, committed) {
   if (!committed || !committed.opened || typeof committed.opened !== 'object' || !r.opened || typeof r.opened !== 'object') return [];
-  if (isDate(r.designedOn) && (!committed.designedOn || r.designedOn > committed.designedOn)) return [];
-  return ['asks', 'research', 'design', 'writing'].flatMap(k => (Array.isArray(committed.opened[k]) ? committed.opened[k] : []).filter(p => !(Array.isArray(r.opened[k]) && r.opened[k].includes(p))).map(p => `opened.${k} lost "${p}" since the last commit: what was opened is never un-opened`));
+  const redesigned = isDate(r.designedOn) && (!committed.designedOn || r.designedOn > committed.designedOn);
+  return ['asks', 'research', 'design', 'writing'].filter(k => k === 'asks' || !redesigned).flatMap(k => (Array.isArray(committed.opened[k]) ? committed.opened[k] : []).filter(p => !(Array.isArray(r.opened[k]) && r.opened[k].includes(p))).map(p => `opened.${k} lost "${p}" since the last commit: what was opened is never un-opened`));
 }
 
 /* ---------- gates 2 and 3 ---------- */
@@ -185,6 +199,7 @@ export function practiceProblems(r) {
 export function approvalProblems(r) {
   const a = r.approved;
   if (!a || typeof a !== 'object' || !('goal' in a) || !('practice' in a)) return ['the design record has no "approved" part with goal and practice (each null or the owner\'s approval)'];
+  if (!a.history || typeof a.history !== 'object' || !['goal', 'practice'].every(k => Array.isArray(a.history[k]))) return ['approved has no history (goal and practice lists of the approvals that were cleared or replaced; possibly empty)'];
   return ['goal', 'practice'].flatMap(k => {
     const v = a[k];
     if (v === null) return [];
@@ -251,12 +266,13 @@ export function designReviewProblems(r, reviews) {
   return [];
 }
 // the record's review counts for the design it reviewed: its Reviewed fingerprint is the design's now
-export const designReviewed = (r, reviews) => Boolean(r.designReview) && Boolean(reviews[r.designReview.file]) && reviews[r.designReview.file].verdict === 'passes' && reviews[r.designReview.file].reviewed === designFingerprint(r);
+export const designReviewed = (r, reviews) => Boolean(r.designReview) && Boolean(reviews[r.designReview.file]) && reviews[r.designReview.file].verdict === 'passes' && reviews[r.designReview.file].reviewed === designFingerprint(r)
+  && (!isDate(r.designedOn) || r.designReview.date >= r.designedOn);
 
 /* ---------- gates 6 and 7 ---------- */
 export function triedProblems(entry, where, reviews) {
   if (!entry || typeof entry !== 'object') return [`${where} is not an object`];
-  const fp = typeof entry.fp === 'string' && entry.fp.startsWith('sha256:') ? [] : [`${where} carries no fingerprint of the lesson as it was tried (fp; tools/design/tried.mjs writes it)`];
+  const fp = [...(typeof entry.fp === 'string' && entry.fp.startsWith('sha256:') ? [] : [`${where} carries no fingerprint of the lesson as it was tried (fp; tools/design/tried.mjs writes it)`]), ...previousProblems(entry, where)];
   if (entry.by === 'owner') {
     const problems = [...ownerWord(entry, where), ...fp];
     if (typeof entry.passed !== 'boolean' || !isText(entry.confused, 1) || !isText(entry.waste, 1) || typeof entry.comeBack !== 'boolean') problems.push(`${where} is the owner's try and records passed (true or false), what confused them, what was waste, and comeBack (true or false)`);

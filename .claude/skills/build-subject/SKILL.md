@@ -83,8 +83,9 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   research note or a lesson to approve.
 - **Every owner word carries its source.** Whatever is recorded as the owner's (an approval, a word on an ask, a try,
   a waiver) is their words quoted, with the date and where they said them. The tools refuse an entry without a source,
-  and a word once recorded is never edited (the validator compares it with the last commit; a new word is a new entry
-  in the prose, and the record keeps the one that stands). A waiver is per subject and per lesson, recorded each time
+  and a word once recorded is never edited or taken away: a later word of theirs replaces it and keeps it (an ask's
+  `owner.previous`, a try's `previous`, an approval in `approved.history`), and the validator compares every owner
+  entry with the last commit. The same words as an earlier entry are refused: a new screen needs their new words. A waiver is per subject and per lesson, recorded each time
   with its source; the owner's standing instruction may be quoted again with its date, never assumed. The validator
   cannot check that a quote is real; the source makes it auditable, and a session that invents one is lying, which no
   rule can stop.
@@ -158,7 +159,7 @@ it applies.
               "design": ["docs/subjects/scams/design.md", "docs/lesson-standard.md"], "writing": [] },   // one list per stage; a list only grows
   "goal": "…",                                         // gate 2: the owner's paragraph
   "topics": ["what a request is", "…"],                // gate 2: everything the subject teaches, one line each
-  "endResult": "…", "realMoment": "…", "test": "…", "out": "…",   // gate 2; the screen (goal, topics, endResult, test) is under 3,000 characters
+  "endResult": "…", "realMoment": "…", "test": "…", "out": "…",   // gate 2; the printed screen is under 5,000 characters; the subject record mirrors the approved sentence (V80)
   "practice": "…",                                     // gate 3: three lines, under 600 characters
   "feedback": "…",                                     // gate 3
   "delivery": ["a 20 second clock on a set", "…"],     // gate 3: what the app must do, each built or planned first
@@ -171,7 +172,8 @@ it applies.
   "pilot": "l3",                                       // gate 5: the first lesson built
   "approved": {                                        // gates 2 and 3, written by tools/design/approve.mjs
     "goal": { "date": "2026-10-13", "words": "On track.", "where": "chat, 2026-10-13", "fp": "sha256:…", "shown": ["biases"] },
-    "practice": null                                   //   fp binds the printed screen, drops included; shown: the asks listed as dropped on it
+    "practice": null,                                  //   fp binds what the design put on the screen; shown: the asks listed as needing their word
+    "history": { "goal": [], "practice": [] }          //   every approval that was cleared or replaced, unchanged; it only grows
   },
   "designedOn": "2026-10-13",                          // the date gates 1 to 5 were last run; a later date is a redesign
   "designReview": { "date": "2026-10-13", "file": "reviews/design.md" },   // gate 5: the record read against this skill by someone who did not write it;
@@ -195,14 +197,15 @@ order. A subject in the app carries everything.
    should teach, in chat, in a brief, in a course document, in an earlier version they accepted. Each item has an
    `id`, their `words`, `when` and `where` it was said. For an existing subject, every unit of the version the owner was
    using is an item too, because they had accepted it. Write this list before gate 1, from the sources (`opened.asks`),
-   never from memory, and `opened.asks` lists those sources. The words of an item, its when and where, and any word of
+   never from memory, and `opened.asks` lists those sources (the owner's messages, briefs and course documents, the
+   project's written records of their words such as a plan made at their request, the version they used). The words of an item, its when and where, and any word of
    the owner's on it never change afterwards, and an item is never removed: the validator compares the list with the
    last commit's and refuses a removed, reworded or edited ask, and a deleted record.
 2. **The list is must-keep.** Later gates place each item: `kept` names the topics of gate 2's list that cover it, and
    gate 4 covers those topics with parts. A design that would leave an item out does not drop it: it leaves `kept`
    null, and the item is shown as dropped on gate 2's screen (an item is shown there while it has no topics and no
-   word from the owner), and waits. Only the owner's word, recorded with its source in `owner`, settles an item: `dropped: true` on their word to drop it, or topics found for it on their word
-   to keep it (`tools/design/asked.mjs`). An item they move to another subject is dropped here with those words and
+   word from the owner), and waits. Only the owner's word, recorded with its source in `owner`, settles an item:
+   `dropped: true` on their word to drop it, or topics found for it on their word to keep it (`tools/design/asked.mjs`). An item they move to another subject is dropped here with those words and
    asked for there. While any item is not dropped and not covered, the validator refuses every change to the subject's
    content.
 
@@ -273,16 +276,18 @@ read in full and names the choice it decides, and `opened.research` holds only w
 3. **One sentence** (`endResult`): **"After this subject you can ___ when ___."** The second blank is the **real
    moment** (`realMoment`): where and how the learner meets this in life (a text on their phone, their own voice in the
    car, a bill, a news story).
-4. **The real-world test** (`test`): a task in the form of the real moment, on new cases, with what counts as passing.
-   It must be something the learner does, not something they say about it. ("Sing a five-note line with a guide note;
+4. **The real-world test** (`test`): a task in the form of the real moment, on new cases, with what counts as passing,
+   that reaches every group of topics on the list (a test narrower than the list is a test of part of the subject; the
+   record's review checks this). It must be something the learner does, not something they say about it. ("Sing a five-note line with a guide note;
    at least four notes land on pitch." Not "name what is wrong with Nadia's singing.") The pass number is a convention
    (D15): say it, and do not argue it from evidence.
 5. **What is out** (`out`): what the subject does not try to do, so it stays short.
 6. **Ask the owner** with the screen `approve.mjs <subject> goal --show` prints: the paragraph; the topics; the
    sentence; the test; then, under "What you asked for, and where it is taught", every gate 0 item (its first hundred
    characters) with the topics it is placed under, or the owner's word on it, or "needs your word"; then "On track, or
-   not?". The screen is under 5,000 characters, about 750 words; if it is longer, the subject has too many asks or
-   topics to sign off at once, and that is the finding. Record
+   not?" (an ask covered by the whole list prints "taught under every topic"). The screen is under 5,000 characters,
+   about 750 words; if it is longer, the subject has too many asks or topics to sign off at once, and that is the
+   finding. `approve.mjs <subject> goal --clear` clears an approval into `approved.history` so the screen is asked again. Record
    their reply with `approve.mjs <subject> goal --words "<their reply>" --where "<where>"`, and their word on each
    dropped item with `asked.mjs`. The approval binds what the design put on the screen: the paragraph, the list, the
    sentence, the test, and each ask with the topics it is placed under; a change to any of these asks for it again,
@@ -382,8 +387,9 @@ record against this skill, gate by gate, and lists what fails. What fails is fix
 `docs/subjects/<id>/reviews/design.md`, opening with `Verdict: passes` or `Verdict: fails`, a `Reviewer:` line (who
 (which model), the date) and a `Reviewed:` line with the design's fingerprint (`node tools/design/fp.mjs <subject>`);
 the record points at it in `designReview`, it counts for that design only, and the validator holds the subject's
-content until it passes. A redesign sets `designedOn` to its date; the old pass's prose and `opened` lists go under
-History, and the new lists start. (The validator checks the shape; the review checks the design.)
+content until it passes. A redesign sets `designedOn` to its date; the old pass's prose and its research, design and
+writing lists go under History, the new lists start (`opened.asks` never resets: the owner's asks and their sources
+only grow), and the redesign needs its own record review, dated on or after `designedOn`, before any content moves. (The validator checks the shape; the review checks the design.)
 
 Reject when: its main activity is not the part's real action; most of its time is reading; its end check measures
 something other than the part; `why` names a principle gate 1 does not have; or the answer to "if the learner did only

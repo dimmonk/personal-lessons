@@ -1,6 +1,15 @@
 #!/bin/sh
-# The lesson tier runs before every commit: the validator (every design record, every lesson) and the seeded faults. A red tier is never
-# committed (build-subject skill, "How it runs"). Set up once with: npm run hooks
+# The lesson tier runs on the STAGED tree before every commit (not the working tree: a change staged while the working file is left as it was
+# would otherwise slip past): the staged files are exported to a temporary folder and validated there against HEAD, with the seeded faults and
+# the reader checks on the real text. A red tier is never committed (build-subject skill, "How it runs"). Set up once with: npm run hooks
 set -e
-cd "$(git rev-parse --show-toplevel)"
-npm run --silent test:lessons >/tmp/pre-commit-lessons.log 2>&1 || { tail -20 /tmp/pre-commit-lessons.log; echo "pre-commit: the lesson tier is red; nothing committed"; exit 1; }
+ROOT="$(git rev-parse --show-toplevel)"
+TMP="$(mktemp -d "${TMPDIR:-/tmp}/pre-commit.XXXXXX")"
+trap 'rm -rf "$TMP"' EXIT
+cd "$ROOT"
+git checkout-index -a -f --prefix="$TMP/"
+export GIT_DIR="$(git rev-parse --absolute-git-dir)"
+export GIT_WORK_TREE="$TMP"
+cd "$TMP"
+LOG="$TMP/lessons.log"
+( node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs && node tests/design-pure.mjs ) >"$LOG" 2>&1 || { tail -25 "$LOG"; echo "pre-commit: the lesson tier is red on the staged tree; nothing committed"; exit 1; }

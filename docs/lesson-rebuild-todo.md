@@ -62,7 +62,7 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 - [ ] The five failing pilots fixed from their reviews (raw material on the branch `pilot-fixes-2026-10-12`), re-reviewed, deployed
 - [ ] Each subject's other lessons, each with a passing stand-in review, tested and deployed subject by subject
 - [x] The misreading of Pan and Rickard's "response congruency" in `docs/research/review-after-lessons.md` (R8) corrected, and the note marked (2026-10-12)
-- [ ] Singing's pilot reviewed again by a fresh stand-in: its review of 2026-10-11 carries a Disclosure and does not count
+- [x] Singing's pilot reviewed again by a fresh stand-in (2026-10-12): it fails on six places a beginner would stall; Psychology's pilot reviewed again the same day: passes, with fixes recommended
 - [ ] The research document (`docs/learning-science.md`) retired to history once every record cites the per-subject notes only
 
 ## Needs your decision

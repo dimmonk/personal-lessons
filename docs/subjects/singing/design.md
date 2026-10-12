@@ -261,19 +261,36 @@
   "designedOn": "2026-10-10",
   "approved": {
     "goal": null,
-    "practice": null
+    "practice": null,
+    "history": {
+      "goal": [],
+      "practice": []
+    }
   },
   "tried": {
     "l2": {
       "by": "stand-in",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "review": "reviews/l2.md",
       "waived": {
-        "date": "2026-10-11",
+        "date": "2026-10-12",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
       },
-      "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
+      "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353",
+      "previous": [
+        {
+          "by": "stand-in",
+          "date": "2026-10-11",
+          "review": "reviews/l2.md",
+          "waived": {
+            "date": "2026-10-11",
+            "words": "keep going. just finish everything and don't wait on my read",
+            "where": "chat, 2026-10-11"
+          },
+          "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
+        }
+      ]
     }
   },
   "opened": {

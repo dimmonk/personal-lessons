@@ -11,7 +11,7 @@ export const REVIEWS_DIR = 'reviews';
 export const VERDICTS = ['passes', 'fails'];
 export const READ_LEVELS = ['full', 'abstract', 'summary'];
 const VERDICT_LINE = /^Verdict: (passes|fails)\s*$/;
-const REVIEWER_LINE = /^Reviewer: [^\n]*\([^)]+\)[^\n]*\d{4}-\d\d-\d\d/m;   // who (which model), the date
+const REVIEWER_LINE = /^Reviewer: [^\n]*\([^)]+\)[^\n]*\d{4}-\d\d-\d\d[^\n]*opened:/m;   // who (which model), the date; opened: what it read
 const REVIEWED_LINE = /^Reviewed: (sha256:[0-9a-f]{64})\s*$/m;              // the fingerprint of what was reviewed
 const DISCLOSURE_LINE = /^Disclosure: /m;
 // a finding opens a paragraph as **SC1. …** or **R2. …**
@@ -39,12 +39,11 @@ export function reviewVerdict(text) {
 export const findingIds = text => [...text.matchAll(FINDING)].map(m => m[1]);
 
 // how far a finding was read, stated on its "*Read: <level>: …*" line: the level is the first word, full, abstract or summary, said by the
-// author, never inferred (a section named Abstract inside a full text is not an abstract read). A Read line without the level reads as
-// 'summary' (the weakest), so an unstated level never overstates.
+// author, never inferred (a section named Abstract inside a full text is not an abstract read). A Read line without the level, or no Read
+// line at all, reads as 'summary' (the weakest), so an unstated level never overstates.
 export function readLevel(paragraph) {
   const m = paragraph.match(/\*Read:\s*(full|abstract|summary):/i);
-  if (m) return m[1].toLowerCase();
-  return /\*Read:/.test(paragraph) ? 'summary' : null;
+  return m ? m[1].toLowerCase() : 'summary';
 }
 
 // { ids, marks: { [id]: { decides: true | false | null, read: level | null } } } for one note: a finding's paragraph runs to the next finding

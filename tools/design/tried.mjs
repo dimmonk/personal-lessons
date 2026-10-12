@@ -46,7 +46,10 @@ async function main(argv) {
     if (rv.verdict === 'unreadable') throw new Error(`${args.entry.review} needs its Verdict line first, a Reviewer line (who (model), date) and a Reviewed line with the lesson's fingerprint (node tools/design/fp.mjs ${args.subject} ${args.lesson})`);
     if (rv.reviewed !== fp) throw new Error(`${args.entry.review} reviewed ${rv.reviewed}; the lesson is now ${fp}: a rewritten lesson is reviewed again`);
   }
-  await writeRecord(args.subject, { ...record, tried: { ...record.tried, [args.lesson]: { ...args.entry, fp } } }, prose);
+  // a new try or review keeps the one it replaces (and all before it) in its previous
+  const was = record.tried[args.lesson];
+  const previous = was ? [...(was.previous || []), (({ previous, ...e }) => e)(was)] : [];
+  await writeRecord(args.subject, { ...record, tried: { ...record.tried, [args.lesson]: { ...args.entry, fp, previous } } }, prose);
   console.log(`${args.subject}/${args.lesson}: tried by ${args.entry.by} on ${args.entry.date}`);
 }
 

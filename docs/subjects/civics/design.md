@@ -512,7 +512,11 @@
   "designedOn": "2026-10-10",
   "approved": {
     "goal": null,
-    "practice": null
+    "practice": null,
+    "history": {
+      "goal": [],
+      "practice": []
+    }
   },
   "tried": {},
   "opened": {

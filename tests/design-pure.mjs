@@ -1,7 +1,7 @@
 // The readers of the design records, run on the real text they will read (docs/research/*.md, docs/subjects/*/reviews/*.md, the records):
 // a seeded fault on an injected value proves the rule, not the reader. Run: node tests/design-pure.mjs
 import { readFile } from 'node:fs/promises';
-import { parseRecord, reviewVerdict, noteMarks, readLevel, collectDesigns, collectReviews, collectResearch } from './lessons/designs.mjs';
+import { parseRecord, reviewVerdict, noteMarks, readLevel, collectDesigns, collectCommittedDesigns, collectReviews, collectResearch } from './lessons/designs.mjs';
 import { dropsToShow, screenText, GOAL_SCREEN_MAX_CHARS } from './lessons/design-shape.mjs';
 
 const REPO = new URL('../', import.meta.url);
@@ -15,13 +15,13 @@ same(readLevel('x *Read: abstract: Crossref and the abstract; a section named Ab
 same(readLevel('x *Read: summary: a press release.*'), 'summary', 'a stated summary');
 same(readLevel('x *Read: full text, Rohrer, Abstract, Results.*'), 'summary', 'an unstated level reads as summary, whatever the words');
 same(readLevel('x *Read:\nfull: broken across lines.*'), 'full', 'a Read line broken across lines');
-same(readLevel('x no read line'), null, 'no Read line');
+same(readLevel('x no read line'), 'summary', 'no Read line reads as summary');
 
 // the real notes: every finding carries a mark and a Read line; the ones the records rely on read as the records say
 const research = await collectResearch(new URL('docs/research/', REPO));
 for (const [note, { ids, marks }] of Object.entries(research)) {
   ok(ids.length > 0, `${note}: no findings found`);
-  ids.forEach(id => { ok(marks[id].decides !== null, `${note} ${id}: no Decides or Supports mark`); ok(marks[id].read !== null, `${note} ${id}: no Read line`); });
+  ids.forEach(id => { ok(marks[id].decides !== null, `${note} ${id}: no Decides or Supports mark`); ok(['full', 'abstract', 'summary'].includes(marks[id].read), `${note} ${id}: no read level`); });
 }
 same(research['scams-judging-and-acting'].marks.SC1, { decides: true, read: 'full' }, 'SC1 as its note reads');
 same(research['scams-judging-and-acting'].marks.SC3.read, 'abstract', 'SC3 rests on an abstract too');
@@ -37,11 +37,15 @@ for (const [id, files] of Object.entries(reviews)) Object.entries(files).forEach
 same(reviews.singing['reviews/l2.md'].verdict, 'disclosed', 'Singing l2 carries a Disclosure');
 same(reviews.scams['reviews/l3.md'].verdict, 'fails', 'Scams l3 fails');
 const FP = 'sha256:' + 'a'.repeat(64);
-same(reviewVerdict(`Verdict: passes\n\nReviewer: a stand-in (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\n`), { verdict: 'passes', reviewed: FP }, 'a passing review');
-same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5)\nReviewed: ${FP}\n`).verdict, 'unreadable', 'a reviewer line without a date');
-same(reviewVerdict('Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11\n').verdict, 'unreadable', 'no Reviewed line');
-same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\nDisclosure: I read the record.\n`).verdict, 'disclosed', 'a disclosure');
-same(reviewVerdict(`# no verdict\nReviewer: x (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\n`).verdict, 'unreadable', 'no verdict line');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: a stand-in (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\n`), { verdict: 'passes', reviewed: FP }, 'a passing review');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5); opened: the learner view\nReviewed: ${FP}\n`).verdict, 'unreadable', 'a reviewer line without a date');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\n`).verdict, 'unreadable', 'a reviewer line that does not say what it opened');
+same(reviewVerdict('Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11; opened: the learner view\n').verdict, 'unreadable', 'no Reviewed line');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\nDisclosure: I read the record.\n`).verdict, 'disclosed', 'a disclosure');
+same(reviewVerdict(`# no verdict\nReviewer: x (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\n`).verdict, 'unreadable', 'no verdict line');
+same(reviews.psychology['reviews/l1.md'].verdict, 'passes', 'Psychology l1, reviewed again on 2026-10-12');
+const committed = await collectCommittedDesigns(new URL('docs/subjects/', REPO));
+ok(Object.keys(committed).length >= 9 && 'geography' in committed, `the committed records are listed from git: ${Object.keys(committed).length} found`);
 
 // the real records: every one parses, and the gate 2 screen of each fits one screen
 const designs = await collectDesigns(new URL('docs/subjects/', REPO));

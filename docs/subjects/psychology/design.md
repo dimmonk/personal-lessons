@@ -251,9 +251,9 @@
     "the next step: ask, watch, set a limit, get help",
     "all of it mixed, on real accounts and on your own"
   ],
-  "endResult": "When someone reaches for a word like \"narcissist\", \"gaslighting\" or \"manipulative\", check it against what the person actually did: say what they did, whether it shows one bad moment or a pattern, and what to do next.",
+  "endResult": "After this subject you can take a word thrown at a real person (narcissist, gaslighting, manipulative, toxic, and the rest), say what the person actually did and whether the word fits; spot the common biases in someone else's reasoning and in your own; and keep your own reaction in check in the moment, when a friend, a post or your own head reaches for the word.",
   "realMoment": "A label about a real person: in your own head after they upset you, or from a friend telling you about someone, usually with one side of the story and one or a few incidents.",
-  "test": "Ten new accounts in the form they arrive (a friend's message, a text thread, your own note after an argument). For each: tap what the person did, judge it (the word fits / an ordinary moment / can't tell yet / a pattern of control) and pick the next step. Pass: 8 of 10 right, no control pattern missed, at most one ordinary moment labeled.",
+  "test": "Ten new accounts in the form they arrive (a friend's message, a text thread, your own note after an argument), each with a word thrown at someone: for each, tap what the person did, say whether the word fits (or it is one ordinary moment, or you cannot tell yet, or a pattern of control), and pick the next step. Then six new arguments, two of them your own notes: name the bias at work (or none). Then three of your own heated moments, written as they happened: say what you felt, what else would explain it, and what you did instead of reacting. Pass: 8 of 10 accounts, no control pattern missed, at most one ordinary moment labeled; 5 of 6 biases; all three self-checks with a named feeling and an alternative.",
   "out": "Diagnosing anyone; clinical disorders beyond what the popular word needs; therapy and self-help (emotions, habits, sleep); reasoning biases in decisions, money or news (Statistical Claims and Scams cover those); conversation scripts beyond the next step; facts and history of psychology; a key of named outcomes to memorize; crisis response beyond \"this is a safety matter: here is who to call\".",
   "practice": "Many new accounts in that same form, mixed, about half ordinary: tap what was done, say what else would explain it, judge, pick the next step; feedback after each; the weekly review brings each judgment back on a new account.",
   "feedback": "Immediately after each item, from the app: the line that decides it; what the word requires and whether this account has it; the fair one-line description of what was done; why the next step fits. A missed item returns later in the same session on a new account, and in the weekly review on later days. An optional typed rewrite is compared by the learner to a model line, not graded.",
@@ -378,19 +378,36 @@
   "designedOn": "2026-10-10",
   "approved": {
     "goal": null,
-    "practice": null
+    "practice": null,
+    "history": {
+      "goal": [],
+      "practice": []
+    }
   },
   "tried": {
     "l1": {
       "by": "stand-in",
-      "date": "2026-10-11",
+      "date": "2026-10-12",
       "review": "reviews/l1.md",
       "waived": {
-        "date": "2026-10-11",
+        "date": "2026-10-12",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
       },
-      "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973"
+      "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973",
+      "previous": [
+        {
+          "by": "stand-in",
+          "date": "2026-10-11",
+          "review": "reviews/l1.md",
+          "waived": {
+            "date": "2026-10-11",
+            "words": "keep going. just finish everything and don't wait on my read",
+            "where": "chat, 2026-10-11"
+          },
+          "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973"
+        }
+      ]
     }
   },
   "opened": {

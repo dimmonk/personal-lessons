@@ -66,7 +66,7 @@ export function runRules(input, rules = RULES) {
   let lessons = 0;
   for (const id of subjectIds) {
     if (!data.subjects[id].meta) { report.checker('V70', id)(false, 'the subject has no subject record (FC.subject)'); continue; }
-    const sv = { ...subjectView(data, id), design: (input.designs || {})[id] };
+    const sv = { ...subjectView(data, id), design: (input.designs || {})[id], committedDesign: (input.committedDesigns || {})[id] };
     runScope(byScope(rules, 'subject'), sv, id, report);
     lessons += Object.keys(data.subjects[id].lessons).length;
   }

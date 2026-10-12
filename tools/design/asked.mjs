@@ -11,9 +11,16 @@ function parse([subject, item, flag, ...rest]) {
   const word = ownerWordFrom(rest);
   if (!word) return null;
   const { rest: _, ...owner } = word;
-  if (flag === '--keep') return { subject, item, patch: { owner, dropped: false } };
-  if (flag === '--drop') return { subject, item, patch: { owner, kept: null, dropped: true } };
+  if (flag === '--keep') return { subject, item, owner, patch: { dropped: false } };
+  if (flag === '--drop') return { subject, item, owner, patch: { kept: null, dropped: true } };
   return null;
+}
+// a new word of the owner's keeps the one it replaces (and all before it) in its previous; the same words again are refused
+function withOwner(a, owner) {
+  const previous = a.owner ? [...(a.owner.previous || []), (({ previous, ...e }) => e)(a.owner)] : [];
+  const earlier = previous.find(e => e.words.trim().toLowerCase() === owner.words.trim().toLowerCase()) || (a.owner && a.owner.words.trim().toLowerCase() === owner.words.trim().toLowerCase() ? a.owner : null);
+  if (earlier) throw new Error(`"${owner.words}" is already the owner's word on "${a.id}" (${earlier.date})`);
+  return { ...owner, previous };
 }
 
 async function main(argv) {
@@ -26,7 +33,7 @@ async function main(argv) {
     const missing = args.patch.kept.filter(t => !(record.topics || []).includes(t));
     if (missing.length) throw new Error(`not on ${args.subject}'s topics list: ${missing.map(t => `"${t}"`).join(', ')}`);
   }
-  await writeRecord(args.subject, { ...record, asked: asked.map(a => a.id === args.item ? { ...a, ...args.patch } : a) }, prose);
+  await writeRecord(args.subject, { ...record, asked: asked.map(a => a.id === args.item ? { ...a, ...args.patch, ...(args.owner ? { owner: withOwner(a, args.owner) } : {}) } : a) }, prose);
   console.log(`${args.subject}: "${args.item}" ${args.patch.kept ? `covered by ${args.patch.kept.length} topic(s)` : args.patch.dropped ? 'dropped on the owner\'s word' : 'the owner says keep; the design places it'}`);
 }
 

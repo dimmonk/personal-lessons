@@ -47,9 +47,8 @@ and concluded phishing is "an attention problem, rather than a knowledge one" (L
 2022 abstract only.* **Design:** reading about scams is close to worthless; time goes to deciding on real-looking
 messages, and the reminders (returns) are part of the treatment, not an add-on. *(Corrected 2026-10-12 against the full
 text: "about a third closed it at once" is 37 to 51% of sessions; "more than half had clicked" is over 56% at any point in
-the study; the 2% is an absolute reduction.)* **Decides:** the reading share (85% of every lesson is deciding, at most two
-short screens of reading) and the returns over weeks as part of the treatment, instead of a reading course taught once.
-
+the study; the 2% is an absolute reduction.)* **Supports.** (It would decide the reading share (85% of every lesson is deciding, at most two
+short screens of reading) and the returns over weeks as part of the treatment, instead of a reading course taught once; its returns half rests on the Lain et al. abstracts, so the choice is a judgement call, 2026-10-12.)
 **SC4. Habit and autopilot lower suspicion, and training effects fade as habits take over.** In the Suspicion, Cognition
 and Automaticity Model, tested in two phishing experiments, habitual email handling predicted falling for phish beyond
 what people knew; the authors argue cue-spotting training addresses only one cause (Vishwanath, Harrison & Ng, 2016,
