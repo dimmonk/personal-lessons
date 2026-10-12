@@ -187,7 +187,14 @@
   "out": "Map reading on the ground (the phone's map turns itself and finds you); outlines, populations, economies and climate; capitals of countries other than the ones the news uses as the government's name (Ottawa, Mexico City, Brussels, Beijing, Moscow, and the ones on each region's list); the geography of other planets, of the oceans' depths and of history (old borders, old names); navigation with a compass; towns under a quarter of a million people unless the news names them; the geography of the learner's own town. Canada's provinces are in (part 9) because the learner's own country is the one they will be asked about most.",
   "designedOn": "2026-10-12",
   "approved": {
-    "goal": null,
+    "goal": {
+      "date": "2026-10-12",
+      "words": "I only want to do a single one. Do the geography since it easier to do the lessons for me when I'm currently mentally over worked",
+      "where": "chat, 2026-10-12, on the printed gate 2 screen",
+      "fp": "sha256:08aca41a669049ce03bc2ef847e1ba3305e264f151d3687f427f28f74486813b",
+      "shown": [],
+      "sentence": "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight."
+    },
     "practice": null,
     "history": {
       "goal": [],
