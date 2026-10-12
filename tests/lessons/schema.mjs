@@ -1,4 +1,4 @@
-// A small schema language for the exact shapes of section 3 (S1 to S6), and the checker that applies it.
+// A small schema language for the exact shapes of section 3 of the history (docs/lesson-standard/history-v1.md) (S1 to S6), and the checker that applies it.
 // checkShape(value, schema, path) returns the list of problems: [{ path, message }]. It never throws and never changes the value.
 //
 //   str, text, int, num, bool, fn, any  leaf types (a Text is a string or a list of strings; "empty" is not "present")

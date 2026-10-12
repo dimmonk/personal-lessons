@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A TYPED NUMBER ON SCREEN ===================== */
-// Lesson standard 3 and 26.2. The HTML of a `number` ask (the boxes of its frame, the calculator, the "disagree" line), and what it
+// Lesson standard 3 and 4. The HTML of a `number` ask (the boxes of its frame, the calculator, the "disagree" line), and what it
 // leaves in the feedback (its mark, the line about the learner's own answer). Pure string builders: nothing here reads the page.
 //   st: { answer?: [numbers], marks, typed?: { [askId]: [text] }, looked?: { [askId]: true }, calc?: { open, st } }
 //   ctx: { item, support, answers }

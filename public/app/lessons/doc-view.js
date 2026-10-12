@@ -1,5 +1,5 @@
 /* ===================== LESSONS: DOCUMENTS AND FIGURES ===================== */
-// Lesson standard 26.1.2. A `document` is a thing the situation hands you: a receipt, a recipe card, a price tag, a loan or savings offer
+// Lesson standard 3.9. A `document` is a thing the situation hands you: a receipt, a recipe card, a price tag, a loan or savings offer
 // (form), with a title, rows of cells and notes. A `figure` is a fixed picture filled with numbers: a rate table, the 100% bar, a plan with
 // measurements, a year-by-year table. Pure string builders; the numbers drawn are the numbers in the data, never rounded or moved.
 //   document: { kind: 'document', form, title, head?: [Text], tab?: Text, rows: [{ id, cells: [Text], strong? }], notes?: [Text] }

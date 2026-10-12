@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WRITING THE PLAN AND MARKING THE OWN WAYS IN ===================== */
-// Lesson standard 3 (an `own` step on the form for the plan or the setup), 5 and 26.5. The step in a lesson where the learner writes one
+// Lesson standard 3 (an `own` step on the form for the plan or the setup), 5 and 7. The step in a lesson where the learner writes one
 // if-then plan, cued by the request, or marks the things they have done on their own phone. Nothing here is scored, stored as a try, logged or sent:
 // the plan is `notes.plan`, the marks are `notes.setup`. Needs the lesson player (LESSON, lessonShell, heading, goOn), own.js and plan-view.js.
 //   PLAN: { step, draft: { [fieldId]: text }, problems, editing }

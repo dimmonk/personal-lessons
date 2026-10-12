@@ -1,5 +1,5 @@
 /* ===================== SOUND: NOTES, CENTS AND THE VERDICT (pure) ===================== */
-// Lesson standard section 21. Nothing here touches the page, the sound system or the microphone, so it loads headlessly.
+// Lesson standard section 3.8. Nothing here touches the page, the sound system or the microphone, so it loads headlessly.
 // A note is a letter A to G, an optional # or b, and an octave from 2 to 6; A4 is 440 Hz, equal temperament.
 // A "cent" is a hundredth of a half-step: 1200 cents make an octave, and positive is higher.
 

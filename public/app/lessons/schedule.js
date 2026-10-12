@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WHAT COMES BACK, AND WHEN ===================== */
-// Lesson standard 26.4. What the review schedules is a strand: one thing that comes back as a new instance. A strand is due 2 days
+// Lesson standard 6. What the review schedules is a strand: one thing that comes back as a new instance. A strand is due 2 days
 // after its lesson's check or after a miss, then 7 days after its first good session, then 24 days after the second, and leaves
 // the schedule after the third (R2, R4, R6). Everything here is worked out from the practice record; nothing is stored.
 

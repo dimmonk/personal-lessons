@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE STEP ON THE LEARNER'S OWN DATA ===================== */
-// Lesson standard 3 (an `own` step), 5 and 26.5. After the sample questions, the same step on the learner's own data: the sheet of their
+// Lesson standard 3 (an `own` step), 5 and 7. After the sample questions, the same step on the learner's own data: the sheet of their
 // accounts when it is empty, the app's arithmetic on what they typed beside the lines of a sample to find on their own papers, and the
 // change made now or dated with a what, a where and a day (and a calendar file for the day). Nothing here is scored, stored as a try, logged
 // or sent: it is written to `pl:<subject>:notes` (sheet, actions, triggers) and shown only on the subject's own screens.

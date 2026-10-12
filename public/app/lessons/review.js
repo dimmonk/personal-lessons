@@ -1,5 +1,5 @@
 /* ===================== SCREENS: THE WEEKLY REVIEW ===================== */
-// Lesson standard section 6 and 26.4. One review a week across every subject. What it holds is worked out from the practice record
+// Lesson standard section 8 and 6. One review a week across every subject. What it holds is worked out from the practice record
 // (schedule.js): every strand that falls due by the end of the week, each asked on a question the learner has not seen (fresh
 // numbers where the strand has a generator), plus any check whose retest is due. A subject at a time; only questions; the answer
 // and the reason after each; every miss asked again at least three questions later until it is right. Nothing is stored here

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A FORM ON SCREEN ===================== */
-// Lesson standard 3 and 26.2. The HTML of a `form` ask (a box for each number, the options for each choice, one Answer button), and
+// Lesson standard 3 and 4. The HTML of a `form` ask (a box for each number, the options for each choice, one Answer button), and
 // what it leaves in the feedback (a mark for each field, the line about each field the learner missed). Pure string builders.
 //   st: { answer?: { [fieldId]: [numbers] | optionId }, marks, typed?: { [askId]: { [fieldId]: text | optionId } } }
 //   ctx: { item, support, answers }

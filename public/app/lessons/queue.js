@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A RUN OF QUESTIONS ===================== */
-// Lesson standard 3 and 26.2. One question a screen: the blocks, the asks in order (each opens when the one before is answered),
+// Lesson standard 3 and 4. One question a screen: the blocks, the asks in order (each opens when the one before is answered),
 // then the feedback, which opens only when the last ask is answered so that no answer gives a later one away. Groups of questions
 // in a lesson, the end check, the weekly review and a retest all run through here; the caller says what to do with the result.
 // Nothing advances by itself: the learner taps Next.

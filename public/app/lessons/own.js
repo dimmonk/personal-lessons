@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE LEARNER'S OWN DATA, CHECKED AND WORKED OUT ===================== */
-// Lesson standard 26.3. The learner's private sheet of their own accounts (`sheet`), their dated actions (`actions`) and the moments
+// Lesson standard 5. The learner's private sheet of their own accounts (`sheet`), their dated actions (`actions`) and the moments
 // they mark (`triggers`) are kept in `pl:<subject>:notes` and nowhere else, and never scored against a truth. This file is the pure half:
 // what a typed field must be, how a draft becomes the stored shape, the app's arithmetic on what was typed, the plausible-range
 // warnings, and the calendar file (.ics) of a dated action. No page and no storage here (own-store.js, own-run.js).

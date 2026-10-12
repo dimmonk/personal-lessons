@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A LESSON ON SCREEN ===================== */
-// Lesson standard 26.5. A lesson is a short why, then its steps in order (a teaching screen, a worked example, a group of
+// Lesson standard 7. A lesson is a short why, then its steps in order (a teaching screen, a worked example, a group of
 // questions), then the end check and its result. One screen at a time; nothing advances by itself; Back is always there and keeps
 // the place. The place is a step index, saved on every move: 0 is the why, 1 to n the flow, n + 1 the check.
 // LESSON is this visit's working state.

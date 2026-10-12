@@ -1,41 +1,201 @@
 ---
 {
   "subject": "geography",
+  "asked": [
+    {
+      "id": "where-places-are",
+      "words": "Geography: knowing where places are when a place is named, placed on a map with no names on it",
+      "when": "2026-10-12",
+      "where": "the owner, in the cloud session that planned the subject (docs/research/knowing-where-places-are.md)",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "i already signed off psychology and geography so finish these 2"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "world-first",
+      "words": "the world first",
+      "when": "2026-10-12",
+      "where": "the owner, on the first plan (docs/lesson-rebuild-todo.md)",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "the world first"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "flags",
+      "words": "flags as a third form of each country",
+      "when": "2026-10-12",
+      "where": "the owner, on the first plan",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "flags as a third form of each country"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "one-line",
+      "words": "one line of what the country is, in the feedback",
+      "when": "2026-10-12",
+      "where": "the owner, on the first plan",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "one line of what the country is"
+      },
+      "kept": null,
+      "dropped": false
+    }
+  ],
   "kinds": [
     "facts",
     "judging"
+  ],
+  "goal": "After this subject, when a place is named, in the news, by a person or in a travel plan, with no map in sight, you know where it is: the region it sits in, what it borders, the coast or water it is on, and roughly how far it is from you. You can put it on a map with no names on it, name a place that is pointed at, and place a town you have never heard of from the clues a story gives. It starts with the world, then the United States and Canada, then each region; a country comes as its name, its place and its flag, and when you place it you get one line of what it is. It does not teach map reading on the ground, populations, climate or history.",
+  "topics": [
+    "the world first: the continents, the oceans and the big regions, on one map",
+    "the map of the United States: the coasts, the four regions, the mountain ranges and the big rivers",
+    "the states, region by region: the West, the Midwest, the South, the Northeast",
+    "the big US cities, west and east of the Mississippi",
+    "the state capitals the news uses for the state",
+    "Canada's provinces and territories; Mexico, Central America and the Caribbean",
+    "South America",
+    "Europe, west and north",
+    "Europe, east and south",
+    "the Middle East and North Africa",
+    "West and Central Africa",
+    "East and Southern Africa",
+    "South and Central Asia",
+    "East Asia, Southeast Asia and the Pacific",
+    "the world's water, mountains and deserts",
+    "each country's flag, as a third form of it beside its name and its place",
+    "one line of what each country is, in the feedback when you place it",
+    "how far: the distance band and the travel band between two places",
+    "placing a place you have never heard of, from the clues a story gives",
+    "the whole world, mixed"
   ],
   "endResult": "When a place is named, in the news, by a person or on a trip, know where it is: the region it sits in, what it borders, the coast or water it is on, and roughly how far it is from you.",
   "realMoment": "A place named in a news story, in a conversation or in a travel plan, with no map in sight; a map on the phone that shows where you are but not what the named place is near.",
   "test": "Placing: 40 names drawn at random from every list of the subject (states, cities, countries, seas, rivers, mountain ranges), each tapped on a map with no names on it; at least 34 of 40 in the right place. Naming: 10 places lit on the blank map, named from memory by typing; at least 8 of 10. Both on two sittings at least a week apart. Judging: 10 places never practised, given as a story gives them (\"a town in Oaxaca\", \"the port of Mombasa, Kenya\"), placed by region on the blank map; at least 8 of 10. Distance: 10 pairs of places, the distance band and the travel-time band right for at least 8.",
   "practice": "Facts: a name is shown and the learner taps where it is on a map with no names on it; the right place lights up at once, with the unit it sits in, what it borders and the water it is on; the same places come back the other way (a place lit, its name typed from memory); misses return in the session until right, then on later days until right in three separate sessions (the app decides). Each new group is shown for a minute on a labeled map first, by region, then only recalled. Judging: places never seen, given as a story gives them, placed by region on the blank map, the clue that decides it shown after; distances answered as a band, both places then lit with the true figure. Reading is a minute per lesson at most.",
   "approved": {
-    "endResult": null,
-    "practice": null,
-    "pilot": null
+    "goal": {
+      "date": "2026-10-12",
+      "words": "i already signed off psychology and geography so finish these 2 and they'll be the 2 test subjects before doing anything else",
+      "fp": "sha256:123cfb82c054a1dafc79bd3e675fba82a5758f1d2d4ad328c7d1a59675361a24"
+    },
+    "practice": null
   },
   "parts": [
-    { "id": "1", "title": "The map of the United States" },
-    { "id": "2", "title": "The West" },
-    { "id": "3", "title": "The Midwest" },
-    { "id": "4", "title": "The South" },
-    { "id": "5", "title": "The Northeast" },
-    { "id": "6", "title": "The cities west of the Mississippi" },
-    { "id": "7", "title": "The cities east of the Mississippi" },
-    { "id": "8", "title": "The capitals the news uses for the state" },
-    { "id": "9", "title": "The neighbors: Canada, Mexico, Central America and the Caribbean" },
-    { "id": "10", "title": "South America" },
-    { "id": "11", "title": "Europe, west and north" },
-    { "id": "12", "title": "Europe, east and south" },
-    { "id": "13", "title": "The Middle East and North Africa" },
-    { "id": "14", "title": "West and Central Africa" },
-    { "id": "15", "title": "East and Southern Africa" },
-    { "id": "16", "title": "South and Central Asia" },
-    { "id": "17", "title": "East Asia, Southeast Asia and the Pacific" },
-    { "id": "18", "title": "The world's water, mountains and deserts" },
-    { "id": "19", "title": "How far" },
-    { "id": "20", "title": "Placing a place you have never heard of" },
-    { "id": "21", "title": "The whole world" }
+    {
+      "id": "1",
+      "title": "The map of the United States",
+      "topics": []
+    },
+    {
+      "id": "2",
+      "title": "The West",
+      "topics": []
+    },
+    {
+      "id": "3",
+      "title": "The Midwest",
+      "topics": []
+    },
+    {
+      "id": "4",
+      "title": "The South",
+      "topics": []
+    },
+    {
+      "id": "5",
+      "title": "The Northeast",
+      "topics": []
+    },
+    {
+      "id": "6",
+      "title": "The cities west of the Mississippi",
+      "topics": []
+    },
+    {
+      "id": "7",
+      "title": "The cities east of the Mississippi",
+      "topics": []
+    },
+    {
+      "id": "8",
+      "title": "The capitals the news uses for the state",
+      "topics": []
+    },
+    {
+      "id": "9",
+      "title": "The neighbors: Canada, Mexico, Central America and the Caribbean",
+      "topics": []
+    },
+    {
+      "id": "10",
+      "title": "South America",
+      "topics": []
+    },
+    {
+      "id": "11",
+      "title": "Europe, west and north",
+      "topics": []
+    },
+    {
+      "id": "12",
+      "title": "Europe, east and south",
+      "topics": []
+    },
+    {
+      "id": "13",
+      "title": "The Middle East and North Africa",
+      "topics": []
+    },
+    {
+      "id": "14",
+      "title": "West and Central Africa",
+      "topics": []
+    },
+    {
+      "id": "15",
+      "title": "East and Southern Africa",
+      "topics": []
+    },
+    {
+      "id": "16",
+      "title": "South and Central Asia",
+      "topics": []
+    },
+    {
+      "id": "17",
+      "title": "East Asia, Southeast Asia and the Pacific",
+      "topics": []
+    },
+    {
+      "id": "18",
+      "title": "The world's water, mountains and deserts",
+      "topics": []
+    },
+    {
+      "id": "19",
+      "title": "How far",
+      "topics": []
+    },
+    {
+      "id": "20",
+      "title": "Placing a place you have never heard of",
+      "topics": []
+    },
+    {
+      "id": "21",
+      "title": "The whole world",
+      "topics": []
+    }
   ],
   "pilot": "l1",
   "tried": {

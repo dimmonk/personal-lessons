@@ -1,5 +1,5 @@
 /* ===================== SINGING: SCORING A TRY (pure) ===================== */
-// Lesson standard 3.8 (items 3 and 4) and 26.1.1. The microphone gives a reading about every 50 ms: { t, hz, level }, where t is the sound
+// Lesson standard 3.8 (items 3 and 4) and 3.8. The microphone gives a reading about every 50 ms: { t, hz, level }, where t is the sound
 // system's clock in seconds, hz is the pitch found (null when the sound was not clear) and level is how loud it was. These functions turn
 // the readings of a try into the numbers it stores. Nothing here touches the page or the sound system.
 // Needs medianOf (audio-pitch.js), centsBetween, foldCents, hzToMidi, noteToHz (audio-notes.js) and the SING_ constants (sing-task.js).

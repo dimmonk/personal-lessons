@@ -7,7 +7,7 @@
 export const APP_JARGON = ['key', 'keys', 'route', 'routes', 'gate', 'gates', 'determination', 'specimen', 'specimens', 'ledger',
   'strand', 'strands', 'facet', 'facets', 'ask', 'asks', 'item', 'items', 'set', 'sets', 'generator', 'generators', 'support', 'supports'];
 
-// Abstract and textbook words, in every subject (lesson standard section 8). A beginner reads every card for "what do I do
+// Abstract and textbook words, in every subject (lesson standard section 9). A beginner reads every card for "what do I do
 // with this, or how do I spot it in real life?", and these words answer neither. Each says what to write instead.
 // Read by the lesson validator (V62, on every unit, key line and subject record) and by the browser tests (on every screen).
 export const ABSTRACT = [

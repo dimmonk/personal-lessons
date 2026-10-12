@@ -1,5 +1,5 @@
 /* ===================== LESSONS: FILLING IN A FORM ===================== */
-// Lesson standard 26.1. What happens on the screen the queue (queue.js) has just painted when it holds a `form` ask: the boxes keep what is
+// Lesson standard 3. What happens on the screen the queue (queue.js) has just painted when it holds a `form` ask: the boxes keep what is
 // typed in Q.cur.typed[askId] ({ [fieldId]: text | optionId }) so a repaint loses nothing, a tap on an option marks it in place, and the
 // Answer button opens when every box holds a number and every choice has an option. The whole form is answered at once.
 // Needs the queue (Q, openAsk, answerAsk) and form.js.

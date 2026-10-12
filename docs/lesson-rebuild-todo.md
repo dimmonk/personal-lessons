@@ -23,22 +23,26 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
   job: commit, push and deploy as each piece lands.
 
 ## Main task
-- [ ] **(now)** The skill rewritten to end game (`.claude/skills/build-subject/`): the slogan as the goal; a "Reject when" line and one worked rejection per gate; your paragraph first in gate 2, the thing you approve; gate 4 opens with the form the real moment forces; "May open" per stage; evidence marked decides or supports, decides read in full; the record's JSON shape in the skill; the stand-in review's files named; points to the short standard
-- [ ] The record shape and V69 rewritten to match the skill: `goal`, `out`, `feedback`, `delivery`, `form`, `readingShare`, `principles` (decides needs `read: full`), parts with a `check`, `lessons` blocks tied to their part's check, `approved` bound to the text by fingerprint, one `tried` entry per lesson (owner or stand-in, the verdict read from the review file), `opened`; a live lesson needs a passing review (V45's own `tried` goes); V71 compares parts by id and title; V80 adds readingShare; seeded faults for each new refusal; the fixture records rewritten; `tools/design/approve.mjs` writes an approval with its fingerprint
-- [ ] One current standard: `docs/lesson-standard.md` rewritten as the rules in force only (the core, the skill and V69, section 3 to 9 with the as-built decisions folded in, the V and X tables); the old file kept whole as `docs/lesson-standard/history-v1.md`; the 256 citations of old section numbers in code, tests and docs rewritten from a mapping table, zero old numbers left
-- [ ] Evidence marked: in every research note, each finding marked decides or supports; every decides finding read in full (open-access text) with where it was read, or re-marked supports with the design choice called a judgement call
-- [ ] The nine records migrated to the new shape: your paragraph written for each (eight from the approved end result; Geography new), parts' checks, lessons blocks, delivery lists, the seven reviews recorded as stand-in entries with your waiver, `opened` lists; the eight approvals of 2026-10-10 carried over onto the paragraphs with a note; `npm run test:lessons` green
-- [ ] The five failing pilots fixed from their reviews (Math's calculator; Scams' rule and key agreeing on real messages; Stats' claim kinds; Wealth's real papers and the tax line; Ideology's two-line taps), each re-reviewed by a fresh stand-in until it passes, its rev raised, the lock rewritten, the relevant browser checks run
-- [ ] Deployed: the fixed pilots on https://fieldcraft.web.app, the deploy stamp committed
-- [ ] Geography's record rerun through the fixed skill with your three changes (the world first, flags as a third form of each country, one line of what the country is in the feedback); its paragraph and practice put in front of you; nothing built until you approve
+- [x] The skill rewritten to end game (2026-10-12, commit on `ccr-3700e563-5529u1`): gate 0 (your asks, must-keep), your paragraph and the topics list as the one approval of gate 2, a "Reject when" line and a worked rejection per gate, what may be opened per stage, evidence marked decides or supports with full reads, the record's JSON shape in the skill, the stand-in review's files named
+- [x] V69 reads the record's shape: asks, principles, goal and topics bound to the approval by fingerprint, parts with checks and topics, lesson blocks tied to their part's check, one `tried` entry per lesson, `opened`; content held while an ask or a topic is in no part; 167 seeded faults; `tools/design/approve.mjs`, `asked.mjs`, `tried.mjs`
+- [x] One current standard (749 lines, the rules in force, the vocabulary of 2026-10-12 in 8.1); the old file is `docs/lesson-standard/history-v1.md`; 209 citations rewritten
+- [x] Evidence marked in all nine notes: each finding decides or supports; every decides finding read in full (Psychology 2, Math 3, Stats 4, Scams 2, Wealth 2, Civics 2, Singing 2, Ideology 3), several corrected by the full text
+- [x] The nine records in the new shape; your words recorded on Psychology (the need-to-know terms and the biases, understanding others and yourself) and your restore decision on the Psychology and Ideology topics; the gate 0 lists of every subject from your course documents and the old units
+- [x] Psychology: paragraph and 27 topics signed off ("perfect. this is basically a lesson plan.")
+- [x] Geography: paragraph signed off ("finish these 2"); the topics list written under it from the regions and your three changes, for you to see
+- [ ] **(now)** Psychology redesigned through the skill on the signed-off goal and topics: gate 1 researched for the new ground (biases in yourself, keeping emotions in check, defense mechanisms), parts covering all 27 topics, lesson blocks, the pilot; the practice in three lines recorded on your "finish these 2" and shown to you in the morning
+- [ ] **(now)** Geography redesigned through the skill with your three changes (the world first, flags, one line): parts covering the topics, lesson blocks, the pilot; the practice in three lines likewise
+- [ ] Geography's app capabilities built before its pilot: a tap on a map with no names (regions as shapes, scored by where the tap lands, pinch-zoom), the flag beside the name, one line of what the country is in the feedback; validator and browser checks with seeded faults
+- [ ] Psychology's pilot built from its new block (the existing "What did they do?" kept, changed or replaced as the design says), reviewed by a fresh stand-in until it passes, tested
+- [ ] Geography's pilot (the world) built from its block, reviewed by a stand-in until it passes, tested
+- [ ] Both pilots deployed to https://fieldcraft.web.app; the lock rewritten; the deploy stamp committed
 - [ ] The Mac's `~/.claude/skills/build-subject` replaced by a link to the repo's copy, so there is one skill
 - [ ] `docs/HANDOFF.md` and `docs/build-subject-audit.md` (part C) brought up to date with what landed
-- [ ] Each subject's other lessons (about 50), each from its block, each with a passing stand-in review, tested and deployed subject by subject
 - [x] The `build-subject` skill: seven gates in order, from the kind of learning to a tried pilot
-- [x] The gates enforced in the app: design records and V69 (standard sections 2 and 9)
+- [x] The gates enforced in the app: design records and V69
 - [x] Every subject designed blind and audited: all eight rebuilt from scratch (verdicts in `docs/subjects/<id>/design.md`)
-- [x] The weekly review: one review a week across every subject (section 6; live)
-- [x] The practice engine designed (section 3 to 9) and its core built; the old engine and lessons deleted (tag `old-lessons`)
+- [x] The weekly review: one review a week across every subject (live)
+- [x] The practice engine designed and its core built; the old engine and lessons deleted (tag `old-lessons`)
 - [x] Singing's pilot live: the singing answer, the pitch line that fades, your range, "Match a note"
 - [x] Basic Math's pilot live: typed numbers, estimate first, fresh prices each try, "Ballpark and check"
 - [x] Wealth's pilot live: your own accounts sheet on the phone, statements, dollar costs, dated actions
@@ -46,22 +50,23 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 - [x] Your two bugs fixed and live: phone Back stays in the app; "Find my range again" on the Singing screen
 - [x] Political Ideologies' pilot live: labels thrown from both sides, earned or not, results side by side
 - [x] Psychology's pilot live: what someone did, told the way it reaches you, "can't tell yet" a right answer
-- [x] Scams' pilot and baseline live (service worker v22 on the site, 2026-10-12): messages as they arrive in six forms, act / check first / leave, a clock, a call that pushes back
-- [x] US Civics' pilot live (service worker v22 on the site, 2026-10-12): the 17 questions of part 1 in the list's own words, read aloud when you tap, answered from memory and checked, "my answer means the same", your own answers and interview date, the mock interview (on the test subject)
-- [x] Stand-in learner reviews (the gain gate) of the seven live pilots: Psychology and Singing pass; Ideology, Math, Scams, Stats and Wealth fail (`docs/subjects/<id>/reviews/`)
-- [x] The build-subject skill audited from its outputs (2026-10-12, `docs/build-subject-audit.md`, part A): the design gates have
-  never said no; the stand-in gain review says no and finds real defects (5 of 7 pilots fail); none of the five is fixed yet;
-  the records share one shape; most evidence is read from abstracts; the approvals and the phone try assume an owner with time
-- [x] The skill's own text audited (part B, 2026-10-12, `docs/build-subject-audit.md`): B5 passes (a three-line approval);
-  B1, B2, B3, B4, B6, B7, B8 fail; first fix is B8, the record's JSON shape in the skill with one `tried` shape V69 reads
+- [x] Scams' pilot and baseline live (service worker v22 on the site, 2026-10-12)
+- [x] US Civics' pilot live (service worker v22 on the site, 2026-10-12)
+- [x] Stand-in learner reviews of the seven live pilots: Psychology and Singing pass; Ideology, Math, Scams, Stats and Wealth fail (`docs/subjects/<id>/reviews/`)
+- [x] The build-subject skill audited from its outputs and its text (2026-10-12, `docs/build-subject-audit.md`, parts A and B)
 
-## Parked
-- [ ] The research document (`docs/learning-science.md`) reorganized by kind of learning, or retired to history once every record cites the per-subject notes only
+## Parked (waits for your word on the other seven paragraphs)
+- [ ] The other seven subjects' paragraphs and topics signed off, their dropped topics decided (Math, Wealth, Singing), Ideology's restored topics designed in
+- [ ] The five failing pilots fixed from their reviews (raw material on the branch `pilot-fixes-2026-10-12`), re-reviewed, deployed
+- [ ] Each subject's other lessons, each with a passing stand-in review, tested and deployed subject by subject
+- [ ] The misreading of Pan and Rickard's "response congruency" in `docs/research/review-after-lessons.md` (R8) corrected as the Math note was
+- [ ] The research document (`docs/learning-science.md`) retired to history once every record cites the per-subject notes only
 
 ## Needs your decision
-- [ ] Nine paragraphs to read, one line each: on track or not (written in this session; the eight existing subjects keep going on your approval of 2026-10-10 until you say otherwise; Geography waits)
+- [ ] Seven paragraphs and their topics lists to read when you have time: Ideology, Math, Stats, Scams, Wealth, Civics, Singing (in the chat of 2026-10-12); one line each, and a word on each dropped topic
+- [ ] Geography's topics list (written under your signed-off paragraph): say if anything is missing or wrong, and the approval resets
 - [ ] Whenever you have time: try any lesson on your phone; your words overwrite the stand-in review
-- [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
-- [x] The skill copied into the repo (2026-10-12, `.claude/skills/build-subject/`, commit 0e8cb55)
-- [x] The skill's fixes: yours to decide after part B → handed to this session (2026-10-12, "just get everything done")
-- [x] The helpline in Psychology's pilot checked against thehotline.org (2026-10-11): 1.800.799.SAFE (7233) and text START to 88788, as written
+- [x] Psychology: "On track, record my words on Psychology"; the topics: "perfect. this is basically a lesson plan." (2026-10-12)
+- [x] Geography: "i already signed off psychology and geography so finish these 2" (2026-10-12)
+- [x] "restore all the psychology and ideology topics" (2026-10-12), recorded on each item
+- [x] The vocabulary: subject, goal, topics, part, lesson, check, item, asks, review ("that holds. make this part of the app", 2026-10-12; standard 8.1)
