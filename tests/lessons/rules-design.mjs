@@ -99,7 +99,9 @@ function blockProblems(r, principleIds) {
   const blocks = r.lessons;
   if (!blocks || typeof blocks !== 'object' || Object.keys(blocks).length === 0) return ['the design record has no lesson blocks (gate 5)'];
   const checks = Object.fromEntries((r.parts || []).filter(p => p && p.id).map(p => [p.id, p.check]));
-  return Object.entries(blocks).flatMap(([id, b]) => {
+  const cited = new Set(Object.values(blocks).flatMap(b => (b && Array.isArray(b.why)) ? b.why : []));
+  const dead = principleIds.filter(id => !cited.has(id)).map(id => `principle ${id} is cited by no lesson block: a principle that decides or supports nothing in a lesson is decoration (gate 1)`);
+  return [...dead, ...Object.entries(blocks).flatMap(([id, b]) => {
     const where = `the block of lesson ${id}`;
     if (!b || typeof b !== 'object') return [`${where} is not an object`];
     const problems = [];
@@ -110,7 +112,7 @@ function blockProblems(r, principleIds) {
     if (!Array.isArray(b.why) || b.why.length === 0) problems.push(`${where} names no principle under why`);
     else b.why.filter(w => !principleIds.includes(w)).forEach(w => problems.push(`${where} applies principle "${w}", which gate 1 does not have`));
     return problems;
-  });
+  })];
 }
 
 // an entry of `tried`: the owner's try, or a stand-in review; 'passes' says whether it lets the lesson go on
@@ -185,12 +187,16 @@ function gateProblems(data, id, r, committed, reviews) {
   return problems;
 }
 
+// Every subject in the app needs a record; every record in the folder is held to the shape, whether or not its subject is built yet
+// (a subject designed and not yet in the app, like Geography before its first lesson, is still refused for a missing field).
 export const V69 = siteRule('V69', (input, check) => {
   const designs = input.designs || {}, research = input.research || {}, allReviews = input.reviews || {};
-  for (const id of Object.keys(input.data.subjects)) {
+  const ids = [...new Set([...Object.keys(input.data.subjects), ...Object.keys(designs)])];
+  for (const id of ids) {
     const r = designs[id], reviews = allReviews[id] || {};
     const shape = recordProblems(id, r, research, reviews);
-    checkEach(check, id, shape.length ? shape : gateProblems(input.data, id, r, input.committedLock, reviews));
+    const built = id in input.data.subjects;
+    checkEach(check, id, shape.length ? shape : built ? gateProblems(input.data, id, r, input.committedLock, reviews) : []);
   }
 });
 

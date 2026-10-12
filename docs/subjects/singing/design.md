@@ -90,12 +90,6 @@
       "note": "learning-to-sing",
       "decides": false,
       "read": "summary"
-    },
-    {
-      "id": "S6",
-      "note": "learning-to-sing",
-      "decides": false,
-      "read": "summary"
     }
   ],
   "goal": "After this subject you can sing a short melody you have just heard, in your own range, in tune, with the long notes held steady and no pushing, with nothing on a screen to help: in the car, at karaoke, with friends. It does not teach reading music, songs with words, or performing.",

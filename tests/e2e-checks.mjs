@@ -145,7 +145,7 @@ export async function X5(env) {
   const stored = await env.storage(page);
   const keys = Object.keys(stored).filter(k => k.startsWith('pl:'));
   c.check(keys.length >= 4, `only ${keys.length} keys were stored`);
-  keys.forEach(k => c.check(KEY.test(k), `the key "${k}" is not one of the stored keys of 26.3`));
+  keys.forEach(k => c.check(KEY.test(k), `the key "${k}" is not one of the stored keys of lesson standard 5`));
   Object.keys(stored).filter(k => !k.startsWith('pl:')).forEach(k => c.check(false, `the key "${k}" is not a pl: key`));
   const seen = JSON.parse(stored['pl:fixture:seen'] || '{}');
   c.check(Object.values(seen).length > 0 && Object.values(seen).every(e => JSON.stringify(Object.keys(e).sort()) === '["at","rev"]'), 'a place holds more than the revision and the step');

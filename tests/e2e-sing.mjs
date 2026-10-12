@@ -146,7 +146,7 @@ export async function X11(env) {
   await sungTry(page, note(-30)); await finish(page);   // a miss comes back, so this one is also stored
   const stored = await env.storage(page);
   const keys = Object.keys(stored);
-  keys.forEach(k => c.check(/^pl:(app|log|recent)$|^pl:singing:(items|seen|notes)$/.test(k), `the key "${k}" is not one of the stored keys of 26.3`));
+  keys.forEach(k => c.check(/^pl:(app|log|recent)$|^pl:singing:(items|seen|notes)$/.test(k), `the key "${k}" is not one of the stored keys of lesson standard 5`));
   const items = JSON.parse(stored['pl:singing:items']), all = Object.values(items).flatMap(e => e.tries);
   c.check(all.length >= 2, `${all.length} tries stored`);
   all.forEach(t => {

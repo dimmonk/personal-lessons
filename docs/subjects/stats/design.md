@@ -75,12 +75,6 @@
       "read": "full"
     },
     {
-      "id": "C3",
-      "note": "judging-statistical-claims",
-      "decides": false,
-      "read": "abstract"
-    },
-    {
       "id": "C4",
       "note": "judging-statistical-claims",
       "decides": true,

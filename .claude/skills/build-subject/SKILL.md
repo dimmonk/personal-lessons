@@ -1,6 +1,6 @@
 ---
 name: build-subject
-description: The only way to design, rebuild or audit a subject or course of lessons (any learning content, in any project). Walks seven gates in order, from how people learn, to the owner's one-paragraph goal, to how it is practiced, to each lesson, to a pilot reviewed as a learner, before content is written at scale. Every gate can refuse, and the record it writes is the one the validator reads. Use whenever the user asks for a new subject, course, module or lesson set, asks to rebuild one, or asks whether existing lessons work. Never start writing lesson content outside it.
+description: The only way to design, rebuild or audit a subject or course of lessons (any learning content, in any project). Walks eight gates, 0 to 7, in order: what the owner asked for, how people learn, the owner's one-paragraph goal and the list of what the subject teaches (signed off before any plan), how it is practiced, the parts, each lesson on paper, a pilot reviewed as a learner, then the rest. Every gate can refuse, the session that runs it is held to the gates too, and the record it writes is the one the validator reads. Use whenever the user asks for a new subject, course, module or lesson set, asks to rebuild one, or asks whether existing lessons work. Never start writing lesson content outside it.
 ---
 
 # build-subject
@@ -49,6 +49,12 @@ for goes unchecked.**
   date, their words and a fingerprint of the exact text approved into `approved`. A change to that text afterwards
   makes the validator ask for the approval again. Never ask the owner to read a gate's prose, a research note or a
   lesson to approve.
+- **The session that runs the skill is held to the gates too.** A sign-off is asked for in the same turn it becomes
+  possible, and nothing after that gate is started, by the session or by an agent it launches, until the owner's word
+  is on the record: not a plan, not a design pass, not "structural work in the meantime". An approval given earlier,
+  to other text or to everything at once, never carries over; the record holds only an approval of the exact text,
+  with its fingerprint. The worklist's first item is always the next sign-off the owner owes, and everything else sits
+  below it.
 - **The question at every gate**, asked in the record: **"If the learner did only this, would they be closer to the end
   result?"** A "no" or a "not really" stops the gate.
 - **What may be opened** (the record's `opened` lists every path gates 1 to 5 read; V69 refuses the forbidden ones):
@@ -81,7 +87,7 @@ The JSON that opens `design.md`. Every field is asked for by a gate below and ch
       "kept": null, "dropped": false }                 //   owner: their recorded word on it; kept: the part that covers it; dropped: only on their word
   ],                                                   //   an item in no part and not dropped holds the subject's content, whatever the owner has said
   "kinds": ["judging", "habit"],                       // gate 1: facts, judging, procedure, body, habit
-  "principles": [                                      // gate 1: the five to ten that drive the design
+  "principles": [                                      // gate 1: the ones that drive the design; each cited by a lesson block's why (V69)
     { "id": "SC1", "note": "scams-judging-and-acting", "decides": true,  "read": "full" },
     { "id": "SC3", "note": "scams-judging-and-acting", "decides": false, "read": "abstract" }
   ],                                                   //   a "decides" principle needs "read": "full"
@@ -150,7 +156,8 @@ Pass when: every item on the list is covered by a part or dropped in the owner's
    principle must have been read in full (the paper or its author manuscript, not an abstract or a summary), with
    where in it the finding sits, and the note's own "Read:" line says so. A finding that would decide but cannot be
    read in full is marked supports, and the choice it would have decided is written as a judgement call to be measured.
-4. **Record**: `kinds`, `principles` (five to ten, each `id`, `note`, `decides`, `read`), and `opened`.
+4. **Record**: `kinds`, `principles` (each `id`, `note`, `decides`, `read`; only the ones the gate 5 blocks will cite,
+   and every one cited by at least one block, so no principle is decoration), and `opened`.
 
 Reject when: a principle names no finding in a note; a decides principle was not read in full; every principle is
 "supports" (then the evidence decided nothing, and the design is habit); a kind's principles were borrowed from another
@@ -170,7 +177,8 @@ it decides, and `opened` holds only what gate 1 may open.
 1. **The owner's paragraph** (`goal`), written before anything else in this gate and before any plan: in plain words,
    for the owner, one phone screen. What you will be able to do after this subject; where in your life it shows up;
    what it leaves out. It is the precheck: the owner reads it and knows at once whether the subject is on the right
-   track, instead of after the lessons are written. Nothing past this gate is written until the owner's words are on it.
+   track, instead of after the lessons are written. Nothing past this gate is started until the owner's words are on it:
+   no plan, no design pass, no agent.
 2. **The list of what it teaches** (`topics`), under the paragraph: every term, idea, skill or list the subject will
    teach, in plain words, one line each, so the owner signs off the contents and not only the aim. Gate 4 must cover
    every item of it with a part; the validator holds the content while one is uncovered.
@@ -182,8 +190,8 @@ it decides, and `opened` holds only what gate 1 may open.
    four notes land on pitch." Not "name what is wrong with Nadia's singing.")
 5. **What is out** (`out`): what the subject does not try to do, so it stays short.
 6. **Ask the owner** for the paragraph's approval in one message: the paragraph and the topics list; then, under "What you asked for that
-   this design drops", every gate 0 item with neither `kept` nor `dropped`, in their words, each needing a word from
-   them (keep it here, move it, or drop it); then "on track, or not?". Apply their words with
+   this design drops", every gate 0 item in no part and not dropped, in their words, each needing a word from them
+   (keep it here, move it, or drop it; an earlier word of theirs on it is shown beside it); then "on track, or not?". Apply their words with
    `tools/design/approve.mjs <subject> goal "<words>"` and `tools/design/asked.mjs <subject> <item> --keep "<words>" |
    --drop "<words>" | --kept <part>`. The approval binds the paragraph and the list together: a change to either asks
    for it again. A paragraph approved while an item is undecided is still approved; the content waits.
