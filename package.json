@@ -11,7 +11,8 @@
     "lock": "node tests/lessons/lock.mjs",
     "test": "npm run test:data && npm run test:audio && npm run test:lessons",
     "test:e2e:all": "node tests/e2e.mjs --all",
-    "deploy": "npm test && firebase deploy --only hosting"
+    "deploy": "npm test && firebase deploy --only hosting",
+    "hooks": "git config core.hooksPath .githooks && echo \"hooks on: the lesson tier runs before every commit; a change to the skill, V69 or the record tools needs the owner's word in the message\""
   },
   "devDependencies": {
     "playwright": "1.59.1"

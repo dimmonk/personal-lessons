@@ -8,7 +8,9 @@
       "when": "2026-08-04",
       "where": "political-ideologies/Identifying-Political-Ideologies-Practical-Course-v3.md, Lesson 1; old Unit One",
       "owner": null,
-      "kept": "1",
+      "kept": [
+        "Find what the words ask for"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-08-04",
       "where": "the course document, Lesson 2; old Unit Two",
       "owner": null,
-      "kept": "2",
+      "kept": [
+        "Economy labels"
+      ],
       "dropped": false
     },
     {
@@ -27,7 +31,8 @@
       "where": "the course document, Lesson 2",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics (relayed by the deployment session)"
+        "words": "restore all the psychology and ideology topics (relayed by the deployment session)",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -39,7 +44,8 @@
       "where": "the course document, Lesson 2",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics (relayed by the deployment session)"
+        "words": "restore all the psychology and ideology topics (relayed by the deployment session)",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -50,7 +56,9 @@
       "when": "2026-08-04",
       "where": "the course document, Lesson 3; old Unit Three",
       "owner": null,
-      "kept": "5",
+      "kept": [
+        "Power labels"
+      ],
       "dropped": false
     },
     {
@@ -60,7 +68,8 @@
       "where": "the course document, Lesson 3",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics (relayed by the deployment session)"
+        "words": "restore all the psychology and ideology topics (relayed by the deployment session)",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -71,7 +80,9 @@
       "when": "2026-10-05",
       "where": "old Unit Four at the tag old-lessons",
       "owner": null,
-      "kept": "3",
+      "kept": [
+        "The US left–right words"
+      ],
       "dropped": false
     },
     {
@@ -80,7 +91,9 @@
       "when": "2026-10-05",
       "where": "old Unit Five at the tag old-lessons",
       "owner": null,
-      "kept": "3",
+      "kept": [
+        "The US left–right words"
+      ],
       "dropped": false
     },
     {
@@ -89,7 +102,9 @@
       "when": "2026-08-04",
       "where": "the course document, Lesson 4",
       "owner": null,
-      "kept": "4",
+      "kept": [
+        "Us-and-them labels"
+      ],
       "dropped": false
     },
     {
@@ -98,7 +113,9 @@
       "when": "2026-08-04",
       "where": "the course document, Lesson 5",
       "owner": null,
-      "kept": "6",
+      "kept": [
+        "Labels in the wild"
+      ],
       "dropped": false
     }
   ],
@@ -122,7 +139,8 @@
       "id": "L2",
       "note": "judging-political-labels",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "which wrong idea lesson 2 opens with and that it states the welfare-versus-ownership line; if readers already took \"socialist\" to mean public ownership, that opener would go."
     },
     {
       "id": "L9",
@@ -164,13 +182,15 @@
       "id": "L6",
       "note": "judging-political-labels",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "that lesson 4 teaches \"populist\" as a question apart from side and pairs a left with a right populist text; if populism carried its own politics, it would be taught as a side."
     },
     {
       "id": "L7",
       "note": "judging-political-labels",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the four-requirement line lesson 5 draws for \"fascist\"; with no shared scholarly core, the subject could not score a \"fascist\" verdict as right or wrong."
     },
     {
       "id": "R7",
@@ -352,14 +372,25 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l2.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/judging-political-labels.md",
-    "docs/research/review-after-lessons.md",
-    "docs/learning-science.md"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/judging-political-labels.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md"
+    ],
+    "design": [
+      "docs/subjects/ideology/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # ideology: design record (build-subject skill)

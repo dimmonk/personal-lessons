@@ -2,15 +2,17 @@
 // the build-subject skill asks for and V69, V71 and V80 read; with the stand-in reviews and the research note the records cite.
 import { fingerprint } from '../../lessons/fingerprint.mjs';
 
-// the one research note of the test subjects, and its findings
-export const FIXTURE_RESEARCH = { 'umbrella-days': ['U1', 'U2', 'U3'] };
+// the one research note of the test subjects: its findings, each with its mark and what was read
+export const FIXTURE_RESEARCH = { 'umbrella-days': { ids: ['U1', 'U2', 'U3'], marks: { U1: { decides: true, read: 'full' }, U2: { decides: false, read: 'abstract' }, U3: { decides: false, read: 'summary' } } } };
 // the stand-in reviews of the test subjects: { [subjectId]: { 'reviews/<lesson>.md': verdict } }
 export const FIXTURE_REVIEWS = { fixture: { 'reviews/l2.md': 'passes' } };
 
-const approved = (text, date, words) => ({ date, words, fp: fingerprint(text) });
-const owner = (date, words = 'Clear on a phone.') => ({ by: 'owner', date, words });
+// an owner's word on a subject: their reply quoted, with where; every subject has its own words (the same words twice is a blanket)
+const word = (subject, what, date) => ({ date, words: `${subject}: ${what}, on track.`, where: `chat, ${date}` });
+const approved = (subject, screen, date, shown = []) => ({ ...word(subject, 'the paragraph and the list', date), fp: fingerprint(screen), shown });
+const owner = (date, words = 'Clear on a phone.') => ({ by: 'owner', date, words, where: `chat, ${date}`, passed: true, confused: 'nothing', waste: 'nothing', comeBack: true });
 const PRINCIPLES = [
-  { id: 'U1', note: 'umbrella-days', decides: true, read: 'full' },
+  { id: 'U1', note: 'umbrella-days', decides: true, read: 'full', choice: 'the deciding words are marked at first and then not' },
   { id: 'U2', note: 'umbrella-days', decides: false, read: 'abstract' }
 ];
 
@@ -18,15 +20,18 @@ const PRINCIPLES = [
 // block does the practice and gets its feedback; `tried` is the owner's try of each lesson that was tried.
 function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026-10-10') {
   const checks = Object.fromEntries(parts.map(p => [p.id, p.check]));
+  const topics = parts.map(p => p.title.toLowerCase());
+  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test };
   return {
-    subject, asked: text.asked || [{ id: 'the-thing', words: 'teach me to do the thing', when: '2026-10-09', where: 'the brief', owner: null, kept: parts[0].id, dropped: false }],
+    subject, asked: text.asked || [{ id: 'the-thing', words: 'teach me to do the thing', when: '2026-10-09', where: 'the brief', owner: null, kept: [topics[0]], dropped: false }],
     kinds, principles: PRINCIPLES,
-    goal: text.goal, topics: parts.map(p => p.title.toLowerCase()), endResult: text.endResult, realMoment: text.realMoment, test: text.test, out: text.out || 'Everything the end result does not name.',
+    opened: { asks: ['the brief'], research: ['docs/research/umbrella-days.md'], design: [`docs/subjects/${subject}/design.md`], writing: ['docs/lesson-standard.md', `old-lessons:public/subjects/${subject}/u1.unit.js`] },
+    goal: text.goal, topics, endResult: text.endResult, realMoment: text.realMoment, test: text.test, out: text.out || 'Everything the end result does not name.',
     practice: text.practice, feedback: text.feedback || 'From the app, after each answer: right or wrong and the reason.', delivery: text.delivery || [],
     readingShare: text.readingShare, form: text.form || 'The real moment\'s own form: the input as it arrives, the answer the learner would give.',
     parts: parts.map(p => ({ ...p, topics: [p.title.toLowerCase()] })), lessons: Object.fromEntries(Object.entries(lessons).map(([id, part]) => [id, { part, does: text.does || text.practice, feedback: text.feedback || 'Right or wrong and the reason, after each answer.', check: checks[part], why: ['U1', 'U2'] }])),
-    pilot, approved: { goal: approved({ goal: text.goal, topics: parts.map(p => p.title.toLowerCase()) }, date, 'approve all, keep going'), practice: approved(text.practice, date, 'approve all, keep going') },
-    tried, opened: ['docs/research/umbrella-days.md']
+    pilot, approved: { goal: approved(subject, goalScreen, date), practice: { ...word(subject, 'the practice', date), fp: fingerprint(text.practice) } },
+    tried
   };
 }
 
@@ -42,7 +47,7 @@ export const FIXTURE_DESIGN = record('fixture', ['judging'], {
   { id: '2', title: 'Read the timing', check: 'Three new forecasts with a time of day: decide for each; at least 2 of 3 right.' }
 ], { l1: '1', l2: '2' }, 'l1', {
   l1: owner('2026-10-10', 'Clear on a phone. The marked words helped.'),
-  l2: { by: 'stand-in', date: '2026-10-11', review: 'reviews/l2.md', waived: 'keep going, do not wait on my read' }
+  l2: { by: 'stand-in', date: '2026-10-11', review: 'reviews/l2.md', waived: { date: '2026-10-11', words: 'keep going, do not wait on my read', where: 'chat, 2026-10-11' } }
 });
 
 export const CHORUS_DESIGN = record('chorus', ['body'], {

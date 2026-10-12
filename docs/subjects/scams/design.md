@@ -8,7 +8,9 @@
       "when": "2026-10-05",
       "where": "old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "A",
+      "kept": [
+        "See the request"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-10-05",
       "where": "old Unit Two",
       "owner": null,
-      "kept": "C",
+      "kept": [
+        "Act, check or leave, on mixed messages"
+      ],
       "dropped": false
     },
     {
@@ -26,7 +30,9 @@
       "when": "2026-10-05",
       "where": "old Unit Three",
       "owner": null,
-      "kept": "C",
+      "kept": [
+        "Act, check or leave, on mixed messages"
+      ],
       "dropped": false
     },
     {
@@ -35,7 +41,9 @@
       "when": "2026-10-05",
       "where": "old Unit Four",
       "owner": null,
-      "kept": "C",
+      "kept": [
+        "Act, check or leave, on mixed messages"
+      ],
       "dropped": false
     },
     {
@@ -44,7 +52,9 @@
       "when": "2026-10-05",
       "where": "old Unit Five",
       "owner": null,
-      "kept": "D",
+      "kept": [
+        "Hold off when it pushes"
+      ],
       "dropped": false
     },
     {
@@ -53,7 +63,9 @@
       "when": "2026-10-05",
       "where": "old Unit Six",
       "owner": null,
-      "kept": "F",
+      "kept": [
+        "If it already went out"
+      ],
       "dropped": false
     }
   ],
@@ -66,7 +78,8 @@
       "id": "SC1",
       "note": "scams-judging-and-acting",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the practice and the test answer with real actions scored by the action, and the learner checks every request through their own channel instead of being taught to detect fakes and check only what looks wrong."
     },
     {
       "id": "SC2",
@@ -78,7 +91,8 @@
       "id": "SC3",
       "note": "scams-judging-and-acting",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the reading share (85% of every lesson is deciding, at most two short screens of reading) and the returns over weeks as part of the treatment, instead of a reading course taught once."
     },
     {
       "id": "SC4",
@@ -323,14 +337,25 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l3.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/scams-judging-and-acting.md",
-    "docs/research/review-after-lessons.md",
-    "docs/learning-science.md"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/scams-judging-and-acting.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md"
+    ],
+    "design": [
+      "docs/subjects/scams/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # scams: design record (build-subject skill)

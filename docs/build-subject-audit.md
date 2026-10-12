@@ -309,3 +309,226 @@ git commit -m "docs: the build-subject skill moved into the repo for the audit"
 git push
 ```
 Or paste the text of `SKILL.md` (and any files beside it) into the chat, and the session writes it in.
+
+## Part D. The rebuilt skill reviewed (2026-10-12)
+
+An independent review of the rebuilt skill, by an agent that did not write it. The skill changed while it was being
+reviewed (39a5fcf, then 5f60a80, which added "the session that runs the skill is held to the gates", "every principle
+is cited by a block" and "V69 reads every record in the folder"); this part is written against **5f60a80**, and line
+numbers are `SKILL.md`'s at that commit unless marked. At 5f60a80 the validator is red: 30 V69 failures, all of them
+Geography's record (no principles, out, feedback, form, delivery, readingShare, part checks, lesson blocks or opened).
+The tools were tried on scratch copies (`git archive HEAD`, with their own git), never on the real records.
+
+What is good, briefly. Every gate now has a "Reject when" line, and gates 0 to 6 a worked rejection. The record's shape
+is in the skill and V69 reads almost all of it, with seeded faults for each new refusal. The stand-in review has a file
+list, a verdict line V69 reads, and a place in `tried`. Approvals carry a fingerprint, so changing approved text clears
+the approval. Gate 0 exists and holds the content while an ask is in no part. The standard in force is 65 KB (the old
+file is 366 KB), and it names every V rule and X check the code has. On the text, part B's tally (one pass, seven fails)
+is mostly reversed. What is left is enforcement. The session writes almost every owner field itself, through tools that
+accept any words, and V69 cannot tell a gate that was run from one that was skipped.
+
+### D1. B1 to B11
+
+| # | Verdict | The lines | What would make it pass |
+|---|---|---|---|
+| B1 Can each gate fail? | **Pass** | "Reject when:" at 131, 162, 199, 225, 250, 271, 295, 316; "Rejected, for example:" at 135, 166, 203, 229, 254, 275, 299. Gate 2 (199-201): "the sentence names knowing, understanding or recognizing rather than doing; ... the paragraph takes more than a screen". | Gate 7 has the reject line and no worked rejection. Every rejection except gate 0's (the validator) and gate 6's (an outside reviewer) is applied by the session that wrote the gate. Say per gate who applies the rejection. |
+| B2 Does the evidence decide? | **Pass** on the text, partial in code | 154-158: "A principle *decides* when a choice in this design would be different if the finding were false: name that choice in the record. ... A decides principle must have been read in full ..., and the note's own "Read:" line says so." V69 refuses a decides principle not read `full` and a record with no decides. | The record's `read` is its own claim: V69 never compares it with the note's "Read:" line or the note's own mark. The "choice" has no field (it is in the note's **Decides:** line, which V69 does not read). `docs/research/review-after-lessons.md` (R1 to R9, cited by six records) has no Decides or Supports mark. Scams' SC3 is recorded `full`, but its reminder half rests on Lain et al. 2024 "abstract and §8" and Lain 2022 "abstract only". V69 should read each finding's mark and Read line and refuse a mismatch. |
+| B3 Does it template? | **Pass** | 239-242: "The form first (`form`), before any part is written and before any other subject's record is opened ... A check that is "ten items, 8 of 10" is one form among many, never the default." 65 forbids other records; 332, Never: "another subject's record". | `form` was added to the eight older records in the 2026-10-12 migration, after their parts of 2026-10-10 (the field is absent at b0522e3), so none of them shows the order the gate asks for. The fixture's default `form` is one sentence used by every test subject. It holds for new subjects. |
+| B4 Who reviews? | **Pass** on the text; fails once in the data | `stand-in-review.md` 10-19 names the files (the learner view, the running app, the brief's pasted end result, real moment, part title and check), withholds `design.md`, and says "A reviewer that read any of these says so ... under "Disclosure", and the review is run again by another reviewer." The skill (288-292) records the review in `tried`, and V69 reads its verdict. | V69 never reads a Disclosure. Singing's review (`reviews/l2.md` line 8: "printing the head of `design.md` also showed the first lines of the gate 5 list") says `passes` and is recorded as `tried.l2`, so Singing's pilot counts as passed on a review the skill says must be run again. Four of the seven reviews carry a Disclosure (Ideology, Math, Singing, Stats). Nothing records who reviewed, or that it was not the builder. Treat a review with a Disclosure as unreadable; have the review name its reviewer and the files it opened. |
+| B5 Is the approval real? | **Partial** | 46-51: "reads one screen each time ... Never ask the owner to read a gate's prose, a research note or a lesson to approve." | What the owner reads is the goal, the topics and the drops list, but V69 bounds only the goal (1,200 characters). Psychology's goal and 27 topics come to 1,850 characters before any drops; Geography's to 1,627. "Three lines" for the method is not measured (practice runs 225 to 723 characters). The owner no longer approves the gate 2 sentence, the real moment or the test: `approvedText` (rules-design.mjs line 20) binds `goal` and `topics` only. Yet the standard (3.2) still calls `endResult` the owner's approved wording. Bound the whole message to one screen. Either put `endResult` and `test` under the goal's fingerprint, or stop calling them approved. |
+| B6 Is it one document? | **Pass** | 73-74: "The rules for building a lesson are `docs/lesson-standard.md` (short: the rules in force) and the validator ... Nothing else is a rule". | 65 KB and 768 lines is not short for a brief, and the file has the errors listed in D3. Fix those. |
+| B7 What does "blind" mean? | **Partial** | 62-68 (the table of what each stage may and must not open) and 60: "the record's `opened` lists every path gates 1 to 5 read; V69 refuses the forbidden ones". | `opened` is the session's own list. Every existing record's list was written in the migration, two days after the reads it reports, so it is a reconstruction. V69 refuses only the paths it knows to forbid: this subject's lessons, learner views and reviews, and other records. It does not refuse gate 1's "any lesson" of another subject, nor anything under the writer's or reviewer's rows. Nothing checks the May-open column: Math's `opened` lists the deleted engine's `public/app/lessons/ask.js` and `drill.js` and passes. One list cannot tell gate 1's reads from those of gates 2 to 5. The designer's brief is not told to list its files (only the reviewer's is). Name the designer's files in the brief, check `opened` against the May-open column, and keep one list per stage. |
+| B8 Does it match the code? | **Partial** | 78: "Every field is asked for by a gate below and checked by V69". | See D2: 21 things asked for and unchecked, 5 checked and not asked for. Most fields now match; what stays unchecked is mostly what would show that a gate was skipped. |
+| B9 Are the owner's asks must-keep? | **Partial** | 18-19: "One thing is never overruled by a gate: what the owner asked the subject to teach, in their words."; 124-129; 131-133; 338-339, Never: "Drop anything the owner asked for on the strength of a design argument or an earlier blanket approval: only their recorded word on that item drops it." V69 (line 46): a drop needs `owner`; the content is held while an ask is in no part and not dropped. | Each hole was tried on a scratch copy. (a) **Deleting an ask** drops it with no word and nothing refuses it. Math's three undecided asks (primes-factors, counting-and-chance, right-triangles) were removed and both approvals written as "approve all, keep going"; the pilot's title was then changed and the lock rewritten. The validator passed all 48,518 checks. V69 never compares `asked` with the last commit's record, so rewording an ask into something smaller is just as invisible. (b) **`kept` may name any part.** V69 checks only that the part exists (line 45), not that its topics or check cover the ask. `asked.mjs psychology biases --kept C` would file biases under part C, which has no lesson on biases. (c) **Any string counts as the owner's word.** For Geography's `where-places-are`, the owner's word is recorded as "i already signed off psychology and geography so finish these 2": a blanket line about something else. (d) `asked: []` passes; nothing checks the list against its sources. To pass: compare `asked` with the last commit and refuse a removed or shrunk item that has no owner drop; let `kept` name topics (and through them a part); give each owner word its source (the quoted message and where it was said). |
+| B10 Paragraph and topics signed off before any plan, with the drops, bound to the text? | **Fail** | 177-181: "written before anything else in this gate and before any plan ... Nothing past this gate is started until the owner's words are on it: no plan, no design pass, no agent."; 182-184 (topics); 192-197 (the drops list in the same message); 107: "fp binds the paragraph and the topics". | The binding works: a change to the goal or the topics clears the approval (seeded faults). The other two halves fail. (1) V69 refuses any record that is not whole: gates 0 to 5 at once, and since 5f60a80 also for a subject not yet in the app. A record waiting at gate 2 cannot pass, so the only green path writes the plan first. Geography is that case: it waits for sign-off and the validator is red on it. (2) The approval binds the text in the record when the session runs `approve.mjs`, not the text the owner saw. Geography's goal and 20 topics first appear in 39a5fcf, the same commit that records their approval in words from an earlier message. Nothing records the drops list that was shown, and `approve.mjs` neither prints nor stores it. To pass: let a record be valid at gate 2 (asked, goal, topics and the drops list as shown), with V69 refusing later gates' fields before `approved.goal`. Have `approve.mjs` print the exact screen and store its fingerprint. |
+| B11 Can the session waive a gate for itself? | **Fail** | 52-57: "The session that runs the skill is held to the gates too. ... An approval given earlier, to other text or to everything at once, never carries over". | What stops it: V69's holds (content needs both approvals, no ask in no part, no topic in no part, and a passing pilot; `live` needs a passing entry), the fingerprint, the forbidden `opened` paths, and `npm run deploy` running the tests. What does not. (1) The session writes every owner field through tools that take any words (`approve.mjs`, `asked.mjs --keep/--drop`, `tried.mjs --owner/--waived`). On a scratch copy, `tried.mjs scams l3 --owner "fine"` was accepted; by `triedPasses` (line 130) that makes Scams' failing pilot pass and opens every later lesson. (2) Deleting or shrinking an ask (B9a). (3) `kept` pointed at any part (B9b). (4) The session writes the review file; no reviewer is named and a Disclosure is ignored (B4). (5) `opened` is the session's own report (B7). (6) The order of the gates, "in the same turn", "no structural work in the meantime" and "never carries over" are prose only. Geography's recorded approval is exactly an earlier one carried over, and V69 accepts the field. (7) The same session can edit V69, the tools and the skill in the same commit as the records they judge. 5f60a80 added "a principle no block cites is refused" and in that same commit deleted Singing's S6 and Stats' C3 from their records rather than cite them. That may be right, but the session judged itself. The repository has no hook (`.claude/` holds `launch.json` and `skills/`), and a red validator can be committed (5f60a80 is red). To pass: owner words enter the record only as quotes from a message the owner wrote, and the tools refuse words not found there; V69 refuses changes to `asked`, `approved` and `tried` since the last commit that carry no such quote; a pre-commit hook runs `npm run test:lessons`; a change to `rules-design.mjs`, `tools/design/` or the skill needs the owner's word in the commit. |
+
+### D2. The record shape, three ways (at 5f60a80)
+
+**Asked for by the skill, unchecked by V69 (21):**
+1. Gate 0: the list is complete (for an existing subject, every unit the owner used is an item). `asked: []` passes.
+2. Gate 0: an ask removed or reworded between commits (B9a).
+3. Gate 0: `kept` is "the part that covers it". Only the part's existence is checked.
+4. Gate 1: the choice a decides principle decides ("name that choice in the record"). There is no field for it.
+5. Gate 1: the record's `read` and `decides` against the note's "Read:" line and its own mark.
+6. Gate 1: principles borrowed from another kind of learning "without saying so and why". A finding carries no kind.
+7. Gate 2: the approval message fits one screen (goal, topics, drops). Only `goal` is checked, at 1,200 characters.
+8. Gate 2: the drops list "has been put in front of them". It is not recorded.
+9. Gates 2 and 4: every signed-off topic is in a part. This is checked only as a hold on content: Psychology passes with
+   21 of its 27 topics in no part.
+10. Gate 3: the method "in three lines". It is not measured.
+11. Gate 3: each `delivery` item "exists in the app or is planned before the first lesson". These are strings only.
+12. Gate 4: `form` is written before the parts. This cannot be checked.
+13. Gate 4: "Every part is covered by a lesson". V69 checks that each block's part exists, not that each part has a
+    block. V71 checks it only for built lessons, and only once a subject is `complete`.
+14. Gate 5: a built lesson's check against its block's. The block's `check` is checked against the part's (as strings),
+    but nothing ties the lesson file's `check` to either.
+15. Gate 6: what an owner's try records (passed the check, what confused, what was waste, would they come back). Only
+    `words` is checked.
+16. Gate 6: "the reviewer was shown the record, the block or the evidence". The Disclosure is not read.
+17. Gates 6 and 7: a fresh reviewer for a second review.
+18. Gate 7: the evidence after use and the dated record of a change. There is no field.
+19. Auditing: the keeps, changes and goes table, and "a lesson that goes is an ask of the owner's". There is no field.
+20. How it runs: "No later gate starts before an earlier one passes", and the session held to the gates (52-57). No
+    field could show either.
+21. What may be opened: the May-open column, gate 1's "any lesson", and the writer's and reviewer's rows.
+
+**Checked by V69, V71 or V80, not in the skill's shape (5):**
+1. The format of a finding id in a research note (`**SC1.` opening a paragraph). It decides whether a principle "is a
+   finding of its note".
+2. A minimum of 10 characters on every text field.
+3. V71's one lesson per part. Gate 4 step 4 (247-248) still allows several lessons for one part.
+4. The subject record's `parts` must equal the design record's (id and title), and its `complete` flag. Gate 7 names
+   `complete: true`, but not the mirror.
+5. The whole record at once, for a subject not yet in the app (5f60a80). The skill fills the record gate by gate (B10).
+
+**Real records that fail the skill's shape while V69 passes them (7):**
+1. Psychology: 21 of 27 signed-off topics are in no part, and five asks the owner said to keep are in no part, so gate 4
+   does not pass. The parts and lesson blocks predate the topics they must cover. `approved.practice` is null while a
+   pilot exists.
+2. Ideology: market-socialism, anarchism and nazis-socialists, which the owner said to keep on 2026-10-12, are in no part
+   and not on the topics list.
+3. Math (primes-factors, counting-and-chance, right-triangles), Singing (breath, tone, voice-care) and Wealth
+   (cash-for-bills, tax-placement, spending-rate, insurance-and-structures): asks with no owner word and no part, never
+   yet put before the owner.
+4. Civics, Ideology, Math, Scams, Singing, Stats and Wealth: `approved.goal` and `approved.practice` are null, yet gates
+   4 to 6 are filled and a pilot is built.
+5. Singing: `tried.l2` passes on a review that carries a Disclosure (B4).
+6. Math: `opened` lists the deleted engine's `ask.js` and `drill.js`.
+7. All eight older records: `opened`, `form`, `goal`, `topics` and the principle marks were written in the 2026-10-12
+   migration, after the gates they record.
+
+Geography is not on this list, because V69 now refuses it, which is right for the shape and wrong for the skill (B10).
+
+**The fixture records** (`tests/fixtures/fixture-subject/design.mjs`) pass V69, since they are its green controls. But:
+- every approval's words are "approve all, keep going" (line 28), the blanket approval the skill forbids (54-55);
+- every ask is kept with `owner: null`;
+- every block cites both principles (`why: ['U1', 'U2']`), so no fixture has a principle that only one lesson uses;
+- the topics are the part titles in lower case, so no fixture has a topics list wider than its parts.
+
+**The tools** do what the skill says and nothing more, but each checks less than the skill implies:
+- `approve.mjs` writes `{ date, words, fp }` for `goal` or `practice`. It does not show or store the drops list, does
+  not check that `topics` exists, accepts any words, and overwrites an earlier approval without keeping it.
+- `asked.mjs` makes the three moves the skill names. `--kept` takes any part and needs no owner word; `--drop` clears
+  `kept`, which is right.
+- `tried.mjs` refuses a lesson with no block. It accepts any `--owner` words, and a review path that does not exist
+  (V69 then refuses that entry).
+- `record.mjs` rewrites the JSON and keeps the prose.
+
+All of them date entries in UTC (`toISOString`), so an evening approval in New York is dated the next day.
+
+### D3. The standard, version 2, against version 1
+
+**Changed in meaning (7):**
+1. When a lesson may go `live`. Old 26.7 (V45), 26.8, 26.9 item 8 and 26.10 ("Validator"): only with the owner's words
+   from a phone try. New 3.3, 9.2 (V69) and 10.3: the owner's try, or a stand-in review that passes. This is deliberate
+   (part C, item 2), but section 11 says "No rule changed in substance".
+2. What the owner approves before any content. Old 23.3-23.4 and 26.7: `approved.endResult` and `approved.practice`,
+   and the pilot (`approved.pilot`). New 2 and 9.2 (V69): `approved.goal` (the paragraph and topics, fingerprinted) and
+   `approved.practice`. The end result and the pilot are no longer approved.
+3. The owner's wording. Old 26.10 (step 1, item 3): the end result and the part titles are the owner's approved wording,
+   so V50 and V62 leave them alone. New 3.2 and 8.2 keep the exemption, but after change 2 neither is approved.
+4. Which rule wins. In the old file the core "governs everything below", then 23.1 makes every earlier rule an input,
+   "kept where it serves it and overruled where it does not", and 26 "overrides every rule above". New section 1 says
+   "Where any rule below asks for more than the core needs, the core wins", and also that every rule serves the skill's
+   goal, with no order between the two. The core's bar is a reading bar ("a beginner reads it once and can explain the
+   idea and use it"), and it now outranks section 4's practice rules.
+5. Who refuses support in a check. Old 26.10 ("Order", item 4): "V79 owns both; V72 does not repeat it". New 9.2 puts
+   "no support" in V72's row, while new 3.4 and the code have it in V79.
+6. X6 (the draft line) and X7 (cold start measured per subject, an owner rule) were kept in old 26.7. New 9.3 says they
+   are "not in force", with no dated entry.
+7. The worked step. Old 26.1: "one optional choice to commit to first". New 3.3: "one choice to commit to first".
+
+**In force in version 1 or in the code, missing from version 2 (9):**
+1. The warm-up can be skipped (old 26.1.1; `sing-run.js` line 76 still offers it).
+2. Four rules for matching typed answers (old step 9, item 2; X14 asserts all four):
+   - the same answer twice counts once;
+   - every word typed must belong to some accepted answer;
+   - two number words that do not join are two numbers;
+   - "state's" is "states".
+3. A good day counts in any context but `baseline` (old 26.4).
+4. Each subject's part of the review is mixed (old 26.4, R9).
+5. Singing's review: a warm-up, then each due lesson's check, without the line (old 26.4). Version 2 keeps only "not
+   built".
+6. A lesson may reuse old material from the tag `old-lessons` once it fits a gate 5 block (old 26.6). The writer's row
+   of the skill's table does not list it either.
+7. A thread names who wrote each line, in text a screen reader reads (old step 7, item 1).
+8. A thread has a line from the other person, and no message is empty (old step 7, item 7; V70).
+9. Each build step is its own commits, with the tests green at every step (old 26.8).
+
+**In version 2, never in version 1 (6):**
+1. 8.1: the learner sees the goal as "the subject screen's opening" and the topics as "the subject screen's list". But
+   the subject record has no `goal` or `topics` field (3.2), and section 7 opens the subject screen on the end result.
+   This is invented, and the same file contradicts it.
+2. Section 2 names V73 as the rule that holds the `readingShare` mirror. The code checks the mirror in V80
+   (`rules-shape.mjs` line 474), and the V80 row in 9.2 leaves it out.
+3. 9.2 (V69): the holds on the owner's asks and signed-off topics, the fingerprint, "decides is read in full", and
+   `opened`. These come from the skill.
+4. 9.1: the whole browser suite runs only when the owner asks. This comes from commit d03b63f.
+5. 6.3: "Back leaves the review and records nothing". Version 1 said only "Back leaves the review".
+6. 8.1's vocabulary table, owner-confirmed on 2026-10-12.
+
+Section 9 names every V rule in the code (V4, V36, V45, V46, V47, V50, V56, V58, V60, V62, V69 to V84). It also names
+every X check in `tests/e2e-checks.mjs` and the files it imports (X1, X2, X3, X5, X8, X10 to X45). Its only errors are
+the V72 and V80 rows above. `tests/lessons/rules-index.mjs` line 1 still says "Every rule of section 3.1".
+
+### D4. The record sample (Scams, Ideology, Psychology, drawn at random)
+
+**Scams.** SC1 is marked as deciding that "the practice and the test answer with real actions". As a counterfactual
+that is honest. But the note's own correction shows the behavior task is less sensitive than detection (d' 0.39 against
+0.96), so the choice now rests on "looking does not reliably tell" rather than on the finding first cited. SC3 decides
+the reading share and the returns. Its returns half rests on Lain et al. 2024 (read: abstract and §8) and Lain 2022
+(abstract only), so `read: full` overstates it. Lesson 1's block ("mark risky or not") is a labelling task of the kind
+SC1 decides against, and l1 does not cite SC1. The other `why` ids fit: SC5 and SC7 for the timed and pushing practice
+(l3, l4), SC9 for the plan (l5), R7 and R8 for the feedback and the real form. The R principles come from a note that
+carries no marks.
+
+**Ideology.** L2, L6 and L7 decide content, not method: which wrong idea opens lesson 2, populism taught apart from
+side, and the four-part line for "fascist". Each names a choice that would differ if the finding were false. But L2's
+own note says the data point elsewhere (equality is the commonest meaning; the welfare reading is 10%) and calls the
+opener a judgement call, which is what "supports" means. L7's line follows Griffin, whom no one read (Paxton was read).
+The method (labelled posts judged with a verdict and a tap, a panel that fades, a reading share of 0.25) rests only on
+supports: L1 from summaries, L9 and L10 from abstracts, and L11. The `why` ids fit: L2 on l2, L6 on l4, L7 on l5, and
+L3 and L4 (party cues) on l1 and l6.
+
+**Psychology.** O1 (Gilbert & Malone, full text pp. 25-30) decides part B and the answer "one moment, ordinary reason",
+and the note states the counterfactual. O8 (Morewedge et al., full text) decides practice over cards, and the note
+reports the evidence against itself: the video worked too, and the game also carried instruction. These are the
+best-kept marks of the three. The `why` ids fit: O3 on l2's "what else", O5 on l4's narcissist, O6 on l5's control.
+But O8 is the argument that cut the biases topics. The owner has since signed off 27 topics, including confirmation
+bias, sunk cost and the fundamental attribution error, and the record's parts and blocks still serve the old six.
+
+**Overall.** The marks are honest more often than not, and where a record differs from its note it marks lower (Math
+M5, Singing S3 and Wealth F10 are marked lower than they were read). "Decides" mostly settles content details. In every
+sampled subject the practice method rests on supports, or on a single deciding finding. A5's point is narrower now, but
+it stands.
+
+### D5. What to fix before the pilots are built on this skill, ranked
+
+1. **A record that is valid at each gate.** V69 should accept gate 2's fields alone (asked, goal, topics, and the drops
+   list as shown) and refuse later gates' fields before `approved.goal`. Then the owner signs off before any plan,
+   Geography goes green honestly, and Psychology's stale parts show as "gate 4 not passed".
+2. **Owner words with a source.** The tools should take the owner's message quoted, with where it was said, refuse words
+   reused from elsewhere, and store the exact screen approved (goal, topics, drops) with its fingerprint. Put
+   `endResult` and `test` under that fingerprint. Ask again for Geography's approval, whose words are an earlier blanket
+   line.
+3. **Close the gate 0 holes.** V69 should compare `asked` with the last commit and refuse a removed or shrunk ask that
+   has no owner drop. `kept` should name topics, not a part.
+4. **A review with a Disclosure does not pass.** Record the reviewer and the files it opened, and run Singing's l2
+   review again before it counts.
+5. **Hold the owner-gated files.** Add a pre-commit `npm run test:lessons`, and require the owner's word in the commit
+   for any change to `rules-design.mjs`, `tools/design/` or the skill.
+6. **Fix the standard:**
+   - the V72 and V80 rows;
+   - section 2's V73;
+   - 8.1's goal and topics on the subject screen;
+   - 3.2's "owner's approved wording";
+   - section 1's order of precedence;
+   - the nine missing rules;
+   - a true revision entry: `live` by review, the goal in place of the end result, X6 and X7 retired.
+7. **Read the evidence marks in code.** Mark `docs/research/review-after-lessons.md` decides or supports, and have V69
+   compare each principle's `decides` and `read` with its note.
+8. **Check `opened`** against the May-open column, keep one list per stage, and name the designer's files in its brief.
+
+After these, the owner's asks for Math, Singing and Wealth go on their drops lists beside the paragraphs. That is the
+owner's work, not a fix to the skill.

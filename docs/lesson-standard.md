@@ -25,11 +25,10 @@ the research, and only that:
    explained at once.
 4. **Questions come back on later days.** The returns already built.
 
-Where any rule below asks for more than the core needs, the core wins.
-
-Every rule here serves the one goal of the build-subject skill (`.claude/skills/build-subject/SKILL.md`): after a
-subject, the learner can do the thing in real life, in the moment they meet it. A rule that does not serve that goal is
-not kept.
+**Which rule wins.** The one goal of the build-subject skill (`.claude/skills/build-subject/SKILL.md`) governs: after a
+subject, the learner can do the thing in real life, in the moment they meet it; a rule that does not serve it is not
+kept. The core is that goal's reading bar for text: where a rule asks a text for more than the core needs, the core
+wins. It does not outrank section 4's practice rules (feedback, support and fading, order and difficulty).
 
 ## 2. Design
 
@@ -43,7 +42,11 @@ checks, one block per lesson, the pilot, the owner's two approvals, the try or r
 designer opened. V69 reads that JSON and refuses what is missing or inconsistent, and holds back any lesson the gates
 have not yet allowed. This standard says how a lesson is built once its block exists.
 
-Three fields of the subject record mirror the design record: `endResult` (V80), `parts` (V71) and `readingShare` (V73).
+Three fields of the subject record mirror the design record: `endResult` and `readingShare` (V80), and `parts` (V71).
+
+**Old material.** A writer may take raw material (a story, a number, a line) from the tag `old-lessons`'s version of
+**this subject only** (`git show old-lessons:<path>`), once it fits a gate 5 block, and lists it in the record's
+`opened.design`. Never another subject's lessons (the skill's "What may be opened"). Nothing is migrated.
 
 ## 3. The data model
 
@@ -69,7 +72,7 @@ FC.subject('stats', {
   endResult: Text,                       // the design record's endResult, word for word (V80)
   parts: [{ id, title }],                // the design record's parts, word for word (V71)
   complete?: true,                       // set in the commit that adds the last part's lesson
-  readingShare: 0.25,                    // the design record's readingShare (V73)
+  readingShare: 0.25,                    // the design record's readingShare (V80); V73 measures against it
   lists: { verdict: [{ id, text }], slip: [{ id, text }], trigger?: [...], ... },  // option lists, worded once
   rules?: { [ruleId]: { name, needs: [{ id, text }], heading? } },               // what a label or a word requires
   facets: { [facetId]: { name, values: [{ id, text }], compare?: true } },
@@ -86,7 +89,9 @@ FC.subject('stats', {
 - `parts` lets the offline app list each part that has no lesson as "Not built yet". Before `complete: true`, a part may
   have no lesson; after it, every part has exactly one (V71). Two lessons for one part, a lesson for a part the record
   does not have, and lessons out of part order are always refused.
-- `endResult` and the parts' titles are the owner's approved wording: the plain-words rules leave them alone (section 8).
+- `endResult` is the sentence on the screen the owner signs off at gate 2 (the paragraph, the topics, the sentence and
+  the test), under `approved.goal`'s fingerprint, so V50 and V62 leave it alone. The parts' titles are the design
+  record's gate 4 words (V71), under no approval; V50 and V62 leave them alone too (section 8.2).
 - A facet with `compare: true` shows its values side by side at the end of a check, a retest and the review ("Labels
   thrown from the left: 3 of 3 beside from the right: 2 of 3"), when at least two of its values were met.
 - A rule with `heading` is a checklist of its own and stands alone in its panel: the heading replaces "What the label
@@ -104,7 +109,7 @@ FC.lesson('stats', {
   flow: [Step],
   check: Check });
 Step = { show: [Block], title }            // a teaching screen: a rule, a wrong idea, a contrast pair, a map
-     | { worked: itemId }                  // an item shown answered, step by step (one choice to commit to first)
+     | { worked: itemId }                  // an item shown answered, step by step (one optional choice to commit to first)
      | { set: Set }
      | { own: formId, model?: itemId }     // the same step on the learner's own data (section 5.4)
 Set  = { items: [ItemRef | [ItemRef, ItemRef]],   // an inner pair is asked back to back, its order random
@@ -247,9 +252,11 @@ chosen and nothing is marked until the end.
   in what was typed. `accept.own` reads the learner's own entry. The item's `reason` is the meaning line, shown after
   every answer with every accepted answer. The app accepts only what the list prints.
 - *What counts as the same* (`recall.js`): capital letters, accents, punctuation, "a", "an", "the" and "and" do not
-  matter; "U.S." is "us"; a number in words is the number; words in brackets are in or out; one small misspelling in the
-  whole answer is forgiven (one letter off, in a word of four letters or more, never a number). A word left out or
-  added, another answer's words, or two misspellings is a miss.
+  matter; "U.S." is "us" and "state's" is "states"; a number in words is the number, and two number words that do not
+  join are two numbers ("two three" is 2 3); words in brackets are in or out; one small misspelling in the whole answer
+  is forgiven (one letter off, in a word of four letters or more, never a number). Every word typed must belong to some
+  accepted answer: a word left out or added, another answer's words, or two misspellings is a miss. With `count`, the
+  same answer twice counts once. X14 asserts each of these.
 - *A claim*, "My answer means the same": after a miss with something typed, it counts the answer right in that sitting
   (`r: 'claimed'`, shown as "Counted on your word"), logs `claim`, removes the item's repeat, and is not a good day for
   the schedule, so the question returns. Offered in a set, in the review and among a check's answers; never in a
@@ -273,9 +280,9 @@ A sung question is never a written item. A set or check names a task, `{ sing: {
 each question from the learner's range and a seed, and stores its tries under `sing-<task>`. Its strand is the task.
 `SING_PARAMS` in `public/app/lessons/sing-task.js` is the one list of limits (V78).
 
-- **Tasks**: `warmup` (a hum with the line, unscored; a step of its own, the first of every sung lesson, never asked
-  again, not stored), `range`, `match`, `hold` (`seconds` 2 to 6), `slide` (`maxSemitones`), `interval` (`minSemitones`,
-  `maxSemitones`), `melody` (`notes` 3 to 5, `maxStep`), `light`. `cents` (5 to 100, default 25) is a setting of the
+- **Tasks**: `warmup` (a hum with the line, unscored, skippable by "Skip the warm-up"; a step of its own, the first of
+  every sung lesson, never asked again, not stored), `range`, `match`, `hold` (`seconds` 2 to 6), `slide`
+  (`maxSemitones`), `interval` (`minSemitones`, `maxSemitones`), `melody` (`notes` 3 to 5, `maxStep`), `light`. `cents` (5 to 100, default 25) is a setting of the
   task, so the tolerance travels with its questions.
 - **Targets**: match and hold notes from the middle 60% of the range, light notes from its top fifth; every note of
   every task inside the range (V78 makes each task on 200 seeds over five ranges).
@@ -322,6 +329,8 @@ each question from the learner's range and a seed, and stores its tries under `s
 
 - A `Segment` is `{ id, text, note?, para?, fine?, slip?, me? }`: every line that can be tapped or marked is one.
   `para` starts a paragraph, `fine` is small print, `me` a line you sent (a thread only).
+- **A message** has at least one line; a thread or chat has at least one from the other person (V70), and names who
+  wrote each line in text a screen reader reads and the eye does not see.
 - **A labelled post.** `label.text` is the commenter's words that carry the label; `by` is how they are known ("On a
   left-leaning news page"), `side` 'left' or 'right' (not drawn). The post's `lines` are the words the label is pinned
   on, under "The words it is pinned on"; who said them is the last line, small print, tappable, with a slip of its own.
@@ -343,8 +352,8 @@ each question from the learner's range and a seed, and stores its tries under `s
 
 - A private form into `lines` (Psychology part F), refused by V70 (`NOT_BUILT` in `tests/lessons/rules-shape.mjs`).
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
-- Singing's review, the retest of a sung check, the range as a lesson step with a check of its own, and a range typed
-  by hand.
+- Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
+  the range as a lesson step with a check of its own, and a range typed by hand.
 
 ## 4. Feedback, support and fading, order and difficulty
 
@@ -485,7 +494,8 @@ baseline never starts one.
 
 ### 6.2 When it comes back
 
-- A **good day** for a strand is a day on which every first try of its items was right; a day with any miss resets it.
+- A **good day** for a strand is a day on which every first try of its items, in any context but `baseline`, was right;
+  a day with any miss resets it.
   Days on or before the check's day do not count. A claim is never a good day.
 - Due 2 days after its lesson's check or after a miss, then 7 days after its first good day, then 24 after the second
   (`review.gaps`); it leaves after the third, or with `review.every` comes back that many days after the last good day
@@ -499,9 +509,9 @@ baseline never starts one.
 - In its real form: a strand with a generator is asked on a made item (among several generators, drawn by the run, and
   by matching facets in a retest); else on an item held in reserve (one no lesson names) never tried; with none left,
   the least recently seen tried item returns and the repeat is logged. A strand of one item returns as itself.
-- Subject by subject, only questions, feedback after each, every miss asked again three items later until right. A
-  subject's saved plan is shown once at the start of its part. Back leaves the review and records nothing; it is built
-  again from the record next time.
+- Subject by subject, each subject's part mixed in an order its run fixes; only questions, feedback after each, every
+  miss asked again three items later until right. A subject's saved plan is shown once at the start of its part. Back
+  leaves the review and records nothing; it is built again from the record next time (as built in `review.js`).
 - A finished part is logged as `return` for its subject.
 
 ### 6.4 Retests
@@ -557,9 +567,9 @@ column is what the screen says; the plain-words rule (V50) keeps the machinery's
 | Word | Means | The learner sees |
 |---|---|---|
 | **subject** | the whole thing on a tile: Psychology, Geography (never "module") | the subject's name |
-| **goal** | the paragraph the owner signs off: what you can do after the subject (`goal` in the record) | the subject screen's opening |
-| **topics** | the list the owner signs off under the paragraph: what the subject teaches; biases is a topic, each word on a words list is a topic (`topics`) | the subject screen's list; "topic" is also what the review brings back |
-| **part** | one piece of the end result, in order, covering some of the topics; the designer's cut of the topics into a sequence (`parts`) | a part's title, as the owner approved it |
+| **goal** | the paragraph the owner signs off: what you can do after the subject (`goal` in the design record) | nothing; it lives in the design record (the subject screen opens on the end result sentence, section 7) |
+| **topics** | the list the owner signs off under the paragraph: what the subject teaches; biases is a topic, each word on a words list is a topic (`topics`) | nothing; the list lives in the design record. "Topic" on screen is what the review brings back |
+| **part** | one piece of the end result, in order, covering some of the topics; the designer's cut of the topics into a sequence (`parts`) | a part's title, the design record's words |
 | **lesson** | one sitting, serving one part, ending in that part's check | "lesson" |
 | **check** | the test at the end of a lesson, and the real-world test at the end of the subject | "the check" |
 | **item** | one thing you answer: an account, a message, a problem, a sung try | "question" ("try" when sung) |
@@ -585,8 +595,8 @@ Each enforced by a validator rule (and by the browser checks on every screen as 
 - **Titles**: no two lessons of a subject share one (V56).
 - **What is read**: every string a learner reads, including the subject's lists, rules, needs and private form labels,
   and a `text` ask's `model`. Quoted material (`message`, `article`, `document`, `chart`, `figure`, `spoken`) may say
-  anything for V50 and V62 but is still held to V60. The owner's approved words, `endResult` and the parts' titles, are
-  exempt from V50 and V62.
+  anything for V50 and V62 but is still held to V60. `endResult` (the owner's approved sentence) and the parts' titles
+  (the design record's words) are exempt from V50 and V62 (section 3.2).
 - There is no length cap on feedback; the most of a lesson that may be reading is the subject's `readingShare` (V73).
 
 ## 9. Validator rules and browser checks
@@ -596,8 +606,10 @@ Each enforced by a validator rule (and by the browser checks on every screen as 
 - `npm test`: the fast tiers, the data and pure-engine checks, the sound checks, and the validator with its seeded
   faults (`npm run test:lessons`: `tests/validate-lessons.mjs`, then `tests/lessons/negative-controls.mjs`).
 - `npm run test:e2e -- X28 X33`: the browser checks named, and their seeded faults. Name the checks that exercise the
-  change; `PWA` names the installable-app check. The whole suite (`npm run test:e2e:all`) runs only when the owner asks.
+  change; `PWA` names the installable-app check. The whole suite (`npm run test:e2e:all`) runs only when the owner asks
+  (commit d03b63f).
 - `npm run lock`: rewrites `tests/lessons.lock.json` after a content change (raise `rev` first if it was deployed).
+- Each build step is its own commits, with the tests green at every step.
 
 **A seeded fault** turns exactly its own rule or check red. A validator fault is a pure function of the test subjects'
 data (`tests/lessons/controls-table.mjs`). A browser fault is a text change to one app file on its way to the browser
@@ -619,10 +631,10 @@ days"), `chorus`, `till`, `ledger`, `feed`, `labels`, `account`, `pressure`, `in
 | V58 | Held findings (`tests/lessons/held-findings.json`) only shrink: one that no longer fires must go, and none may be added since the last commit | a held finding that no longer fires |
 | V60 | American English in every string | "colour" in a reason |
 | V62 | No abstract or textbook word | "utilize" in a reason |
-| V69 | The design record is complete and consistent (the skill's "The record"); no content before the two approvals; no lesson past the pilot (a baseline aside) before the pilot's try or review passed; no `live` lesson without a passing `tried` entry; measured against the last commit's lock | no design record |
+| V69 | The design record, in the skill's terms (its "The record"; this row is right to come from the skill). The record grows gate by gate: no gate's fields before the earlier gates are complete, gate 3 not before `approved.goal`, gate 4 not before `approved.practice`; a subject in the app needs the whole record. Owner words carry a date, the words and where they were said; an ask removed or reworded since the last commit is refused, and one is dropped only on the owner's word; each approval's fingerprint binds the screen approved (the goal: the paragraph, the topics, the sentence and the test), and one approval's words on two subjects are refused. Each principle's decides or supports and its read level are its note's marks, one that decides is read in full and names its choice, and every principle is cited by a block; `opened` holds nothing forbidden; one lesson block per part, its check the part's word for word. A stand-in review that carries a Disclosure does not count. Content is held, measured against the last commit's lock, while an ask or signed-off topic is in no part, the design opened what it may not, or an approval is missing; no lesson past the pilot (a baseline aside) before the pilot's try or review passed; no `live` lesson without a passing `tried` entry | no design record |
 | V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused | an ask of an unknown kind |
 | V71 | Every lesson's part is a part of the record, in part order; one lesson per part once `complete`; the subject's `parts` equal the design record's; the pilot is a lesson once there is one | a part with no lesson in a complete subject |
-| V72 | A check is its part's: no fixed item also in a set (unless `recall`), no support, every pass rule names something that exists, no `min` above what it counts | a check item also in a set |
+| V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (support in a check is V79's) | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; doing is `DOING_SECONDS` (choose and tap 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20) | a why padded past the share |
 | V74 | Every ask can be scored and explained: a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
 | V75 | Generators: on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item | a trap that lands on the answer |
@@ -630,7 +642,7 @@ days"), `chorus`, `till`, `ledger`, `feed`, `labels`, `account`, `pressure`, `in
 | V77 | Banks: each strand a check covers has three unseen items for its returns and one more per item of a retest, unless it has a generator or one item | a strand one item short |
 | V78 | Singing: tasks and parameters inside `SING_PARAMS`; the warm-up first and once, never in a check; no line in a check; sung checks `after-each`; every target inside the range | a hold of 9 seconds |
 | V79 | Fading: a set with support has a later set of the same strand with less or none; no support in a check | a lesson whose last set has the panel |
-| V80 | The subject's `endResult` equals the design record's, word for word | one word changed |
+| V80 | The subject's `endResult` equals the design record's, word for word, and its `readingShare` equals the design record's | one word changed |
 | V81 | Private forms: no field for an account number, login, password or Social Security number, fund rows included; every `into` is a slot of section 5.3 | a field "Account number" |
 | V82 | The failure (`danger.slip`) sits only on risky items, never on a real one, and can be made at least once | a real message whose wrong option is the failure |
 | V83 | A timed set holds only choose, tap, order or exchange; a busy set is timed and each item opens on a banner and asks one choice | a busy set that is not timed |
@@ -686,7 +698,7 @@ Every other rule id below V84 is retired and never reused.
 
 A pilot walk asserts only what the walk shows; what another check owns is left to it, so a fault turns one check red.
 The sound checks (X8, X10, X11, X12, X16, X29) run in their own lanes, and a sound fault runs only them. X4, X6, X7 and
-X9 are not in force; the draft line is asserted by the pilot walks.
+X9 are not in force (X6 and X7 retired on 2026-10-12, section 11); the draft line is asserted by the pilot walks.
 
 ## 10. Capabilities by subject, and what is built
 
@@ -762,7 +774,15 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 
 ## 11. Revision log
 
-- **Version 2, 2026-10-12**: consolidated from version 1 (history-v1.md): sections 1 to 22 retired as history; 23 replaced by the build-subject skill; 24 and 25 absorbed into 6 and 3; 26.1 to 26.9 with the as-built decisions of 26.10 folded in. No rule changed in substance.
+- **Version 2, 2026-10-12**: consolidated from version 1 (history-v1.md): sections 1 to 22 retired as history; 23 replaced by the build-subject skill; 24 and 25 absorbed into 6 and 3; 26.1 to 26.9 with the as-built decisions of 26.10 folded in. Three rules changed in substance, each an entry below.
+- **2026-10-12, live by review**: a lesson goes `live` through a passing entry in the design record's `tried`, the
+  owner's try or a stand-in review that passes (3.3, 9.2 V69, 10.3). Version 1 (26.7, V45) needed the owner's words
+  from a phone try.
+- **2026-10-12, the goal approved in place of the end result and the pilot**: the owner approves `approved.goal` (the
+  gate 2 screen: the paragraph, the topics, the sentence and the test, fingerprinted) and `approved.practice` (section
+  2, 9.2 V69). Version 1 (23.3, 23.4, 26.7) approved `endResult`, `practice` and the pilot.
+- **2026-10-12, X6 and X7 retired** (9.3): the draft line is asserted by the pilot walks; cold start measured per
+  subject (X7, an owner rule) is no longer a check.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

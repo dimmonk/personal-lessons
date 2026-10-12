@@ -1,0 +1,7 @@
+#!/bin/sh
+# A change to the build-subject skill, to V69 or to the tools that write the design records is a change to the gates the session is held to,
+# so the commit carries the owner's word for it: a line "Owner's word: "<their words>" (<where>)" in the message. Set up once with: npm run hooks
+cd "$(git rev-parse --show-toplevel)"
+if git diff --cached --name-only | grep -qE '^(\.claude/skills/build-subject/|tests/lessons/rules-design\.mjs|tests/lessons/design-shape\.mjs|tests/lessons/designs\.mjs|tools/design/)'; then
+  grep -qE "^Owner's word: \".+\" \(.+\)" "$1" || { echo "commit-msg: this commit changes the skill, V69 or the record tools; add a line: Owner's word: \"<their words>\" (<where they said it>)"; exit 1; }
+fi

@@ -8,7 +8,9 @@
       "when": "2026-10-05",
       "where": "old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "1",
+      "kept": [
+        "The list"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-10-05",
       "where": "old Unit Two",
       "owner": null,
-      "kept": "2",
+      "kept": [
+        "What it costs a year, in dollars"
+      ],
       "dropped": false
     },
     {
@@ -26,7 +30,9 @@
       "when": "2026-10-05",
       "where": "old Unit Three",
       "owner": null,
-      "kept": "3",
+      "kept": [
+        "Your biggest single bet"
+      ],
       "dropped": false
     },
     {
@@ -35,7 +41,9 @@
       "when": "2026-10-05",
       "where": "old Unit Four",
       "owner": null,
-      "kept": "4",
+      "kept": [
+        "Mix and drift"
+      ],
       "dropped": false
     },
     {
@@ -53,7 +61,9 @@
       "when": "2026-10-05",
       "where": "old Unit Five",
       "owner": null,
-      "kept": "7",
+      "kept": [
+        "Who inherits, and who can act"
+      ],
       "dropped": false
     },
     {
@@ -94,7 +104,8 @@
       "id": "F1",
       "note": "acting-on-your-own-money",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "every lesson ends on the learner's own accounts, and a lesson whose own-account step cannot be done yet is held until its trigger; if teaching decayed little with time, the course could teach on sample statements ahead of the moment and need no own-account step."
     },
     {
       "id": "F3",
@@ -142,7 +153,8 @@
       "id": "F7",
       "note": "acting-on-your-own-money",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "every own-account step ends in a change made now or dated with a day, a time and a place, never in a savings target; if writing down a dated plan did not raise follow-through, the step would end at the answer and the dated-action list the app builds would not be needed."
     },
     {
       "id": "F8",
@@ -349,14 +361,25 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l2.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/acting-on-your-own-money.md",
-    "docs/learning-science.md",
-    "docs/research/review-after-lessons.md"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/acting-on-your-own-money.md",
+      "docs/learning-science.md",
+      "docs/research/review-after-lessons.md"
+    ],
+    "design": [
+      "docs/subjects/wealth/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # wealth: design record (build-subject skill)

@@ -8,7 +8,9 @@
       "when": "2026-10-05",
       "where": "old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "1",
+      "kept": [
+        "Ballpark and check"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-10-05",
       "where": "old Unit Two",
       "owner": null,
-      "kept": "2",
+      "kept": [
+        "Rates and scaling"
+      ],
       "dropped": false
     },
     {
@@ -35,7 +39,9 @@
       "when": "2026-10-05",
       "where": "old Unit Three",
       "owner": null,
-      "kept": "4",
+      "kept": [
+        "Percents backward and stacked"
+      ],
       "dropped": false
     },
     {
@@ -44,7 +50,9 @@
       "when": "2026-10-05",
       "where": "old Unit Four",
       "owner": null,
-      "kept": "6",
+      "kept": [
+        "Money over time"
+      ],
       "dropped": false
     },
     {
@@ -62,7 +70,9 @@
       "when": "2026-10-05",
       "where": "old Unit Six",
       "owner": null,
-      "kept": "5",
+      "kept": [
+        "Areas, volumes and how much to buy"
+      ],
       "dropped": false
     },
     {
@@ -84,7 +94,8 @@
       "id": "M1",
       "note": "learning-everyday-math",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "every lesson opens a new kind with one worked example before the learner solves anything of that kind, instead of giving problems with feedback only."
     },
     {
       "id": "M2",
@@ -96,13 +107,15 @@
       "id": "M3",
       "note": "learning-everyday-math",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "each kind of problem is taught as one fixed picture (a two-row table, a 100% bar, a sketch, a year table) filled in from the problem, and the learner reads the whole problem, instead of teaching key words or leaving each learner to find a method."
     },
     {
       "id": "M4",
       "note": "learning-everyday-math",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "from lesson 3 on, part of every lesson is mixed, unlabeled problems of all kinds so far, after the kind has been taught on its own, instead of a block of one kind per lesson."
     },
     {
       "id": "M5",
@@ -326,16 +339,27 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l1.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/learning-everyday-math.md",
-    "docs/research/review-after-lessons.md",
-    "docs/learning-science.md",
-    "public/app/lessons/ask.js",
-    "public/app/lessons/drill.js"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/learning-everyday-math.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md"
+    ],
+    "design": [
+      "public/app/lessons/ask.js",
+      "public/app/lessons/drill.js",
+      "docs/subjects/math/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # math: design record (build-subject skill)

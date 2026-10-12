@@ -1,0 +1,6 @@
+#!/bin/sh
+# The lesson tier runs before every commit: the validator (every design record, every lesson) and the seeded faults. A red tier is never
+# committed (build-subject skill, "How it runs"). Set up once with: npm run hooks
+set -e
+cd "$(git rev-parse --show-toplevel)"
+npm run --silent test:lessons >/tmp/pre-commit-lessons.log 2>&1 || { tail -20 /tmp/pre-commit-lessons.log; echo "pre-commit: the lesson tier is red; nothing committed"; exit 1; }

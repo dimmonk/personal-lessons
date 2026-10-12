@@ -8,7 +8,9 @@
       "when": "2026-10-05",
       "where": "old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "2",
+      "kept": [
+        "Who made the call"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-10-05",
       "where": "old Unit Two",
       "owner": null,
-      "kept": "7",
+      "kept": [
+        "Principles and founding documents"
+      ],
       "dropped": false
     },
     {
@@ -26,7 +30,9 @@
       "when": "2026-10-05",
       "where": "old Unit Three",
       "owner": null,
-      "kept": "3",
+      "kept": [
+        "Congress, the presidency and the courts"
+      ],
       "dropped": false
     },
     {
@@ -35,7 +41,9 @@
       "when": "2026-10-05",
       "where": "old Unit Four",
       "owner": null,
-      "kept": "3",
+      "kept": [
+        "Congress, the presidency and the courts"
+      ],
       "dropped": false
     },
     {
@@ -44,7 +52,9 @@
       "when": "2026-10-05",
       "where": "old Unit Five",
       "owner": null,
-      "kept": "5",
+      "kept": [
+        "Theirs to make?"
+      ],
       "dropped": false
     },
     {
@@ -53,7 +63,9 @@
       "when": "2026-10-05",
       "where": "old Unit Six",
       "owner": null,
-      "kept": "4",
+      "kept": [
+        "Federal or state, and your own answers"
+      ],
       "dropped": false
     },
     {
@@ -62,7 +74,9 @@
       "when": "2026-10-05",
       "where": "old Unit Seven",
       "owner": null,
-      "kept": "3",
+      "kept": [
+        "Congress, the presidency and the courts"
+      ],
       "dropped": false
     },
     {
@@ -71,7 +85,9 @@
       "when": "2026-10-05",
       "where": "old Unit Eight",
       "owner": null,
-      "kept": "8",
+      "kept": [
+        "Rights and responsibilities"
+      ],
       "dropped": false
     },
     {
@@ -80,7 +96,9 @@
       "when": "2026-10-05",
       "where": "old Unit Nine",
       "owner": null,
-      "kept": "9",
+      "kept": [
+        "Colonies and independence"
+      ],
       "dropped": false
     },
     {
@@ -89,7 +107,9 @@
       "when": "2026-10-05",
       "where": "old Unit Ten",
       "owner": null,
-      "kept": "11",
+      "kept": [
+        "The 1900s to now"
+      ],
       "dropped": false
     }
   ],
@@ -102,13 +122,15 @@
       "id": "C1",
       "note": "civics-interview-and-news",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the practice form (a question heard, an answer produced from memory, no options) and the shape of the end test (a 20-question spoken mock interview drawn from the 128, with the bar set above the real 12)."
     },
     {
       "id": "C2",
       "note": "civics-interview-and-news",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the item bank (the 128 with their accepted answers, distinct answers counted for \"name two/three/five\") and that the eight variable answers are entered by the learner, never stored in the app."
     },
     {
       "id": "C4",
@@ -492,12 +514,19 @@
     "practice": null
   },
   "tried": {},
-  "opened": [
-    "docs/research/civics-interview-and-news.md",
-    "docs/research/review-after-lessons.md",
-    "docs/learning-science.md",
-    "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/civics-interview-and-news.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md",
+      "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf"
+    ],
+    "design": [
+      "docs/subjects/civics/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # civics: design record (build-subject skill)

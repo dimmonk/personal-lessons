@@ -8,7 +8,9 @@
       "when": "2026-10-08",
       "where": "old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "1",
+      "kept": [
+        "Your range"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-10-08",
       "where": "old Unit Two",
       "owner": null,
-      "kept": "7",
+      "kept": [
+        "A lighter top"
+      ],
       "dropped": false
     },
     {
@@ -35,7 +39,9 @@
       "when": "2026-10-08",
       "where": "old Unit Four",
       "owner": null,
-      "kept": "2",
+      "kept": [
+        "Match a note"
+      ],
       "dropped": false
     },
     {
@@ -65,13 +71,15 @@
       "id": "S1",
       "note": "learning-to-sing",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the range is found first (part 1) and every target in every part sits inside it, rather than fixed notes for everyone; melodies are practiced, not only single notes."
     },
     {
       "id": "S2",
       "note": "learning-to-sing",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the pitch line is shown against the target while singing (it is the delivery's first capability), and melodies of three to five notes are the centre of the practice."
     },
     {
       "id": "S3",
@@ -259,13 +267,24 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l2.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/learning-to-sing.md",
-    "docs/research/review-after-lessons.md"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/learning-to-sing.md",
+      "docs/research/review-after-lessons.md"
+    ],
+    "design": [
+      "docs/subjects/singing/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # singing: design record (build-subject skill)

@@ -1,14 +1,18 @@
 // The design records of the build-subject skill (.claude/skills/build-subject/SKILL.md, "The record"): docs/subjects/<id>/design.md, one per
 // subject. A record opens with its machine-readable part between two lines of three dashes, as JSON; the gates' reasoning follows in prose.
-// Read here once, into { [subjectId]: record } or { [subjectId]: { error } }, for V69 (rules-design.mjs), V71 and V80 (rules-shape.mjs).
-// Beside the records: the verdict line of every stand-in review (docs/subjects/<id>/reviews/<lesson>.md) and the finding ids of every
-// research note (docs/research/<note>.md), which V69 reads a record's `tried` and `principles` against.
+// Read here once for V69 (rules-design.mjs), V71 and V80 (rules-shape.mjs): the working records, the records committed at HEAD (so a change
+// to the owner's asks since the last commit can be seen), every stand-in review's verdict line and reviewer line, and every research note's
+// findings with their marks (decides or supports) and what was read.
 import { readdir, readFile } from 'node:fs/promises';
+import { execFileSync } from 'node:child_process';
 
 export const RECORD_FILE = 'design.md';
 export const REVIEWS_DIR = 'reviews';
 export const VERDICTS = ['passes', 'fails'];
+export const READ_LEVELS = ['full', 'abstract', 'summary'];
 const VERDICT_LINE = /^Verdict: (passes|fails)\s*$/;
+const REVIEWER_LINE = /^Reviewer: /m;
+const DISCLOSURE_LINE = /^Disclosure: /m;
 // a finding opens a paragraph as **SC1. …** or **R2. …**
 const FINDING = /^\*\*([A-Z]{1,3}\d{1,2})\./gm;
 
@@ -22,13 +26,38 @@ export function parseRecord(text) {
   catch (error) { return { error: `its opening part is not JSON (${error.message})` }; }
 }
 
-// The verdict a review file opens with: 'passes', 'fails', or 'unreadable' when its first line is neither.
+// What a review file says: its verdict ('passes' or 'fails'), or why it cannot count: 'unreadable' (no verdict line, or no Reviewer line
+// naming who reviewed and what they opened), 'disclosed' (the reviewer saw the record, the block or the evidence, so the review runs again).
 export function reviewVerdict(text) {
   const m = text.split('\n')[0].match(VERDICT_LINE);
-  return m ? m[1] : 'unreadable';
+  if (!m || !REVIEWER_LINE.test(text)) return 'unreadable';
+  if (DISCLOSURE_LINE.test(text)) return 'disclosed';
+  return m[1];
 }
 
 export const findingIds = text => [...text.matchAll(FINDING)].map(m => m[1]);
+
+// how far a finding was read, from its "*Read: …*" line: 'full' for a full text or manuscript, 'abstract', else 'summary'
+function readLevel(paragraph) {
+  const m = paragraph.match(/\*Read:([^*]*)\*/);
+  if (!m) return null;
+  const s = m[1].replace(/\s+/g, ' ').toLowerCase();
+  if (/full text|full-text|manuscript|read in full|in full/.test(s)) return 'full';
+  if (/abstract/.test(s)) return 'abstract';
+  return 'summary';
+}
+
+// { ids, marks: { [id]: { decides: true | false | null, read: level | null } } } for one note: a finding's paragraph runs to the next finding
+export function noteMarks(text) {
+  const matches = [...text.matchAll(FINDING)];
+  const marks = {};
+  matches.forEach((m, i) => {
+    const paragraph = text.slice(m.index, i + 1 < matches.length ? matches[i + 1].index : undefined);
+    const decides = /\*\*Decides:\*\*/.test(paragraph) ? true : /\*\*Supports\b/.test(paragraph) ? false : null;
+    marks[m[1]] = { decides, read: readLevel(paragraph) };
+  });
+  return { ids: matches.map(m => m[1]), marks };
+}
 
 async function readIfPresent(url) {
   try { return await readFile(url, 'utf8'); }
@@ -51,7 +80,20 @@ export async function collectDesigns(designsDir) {
   return out;
 }
 
-// { [subjectId]: { 'reviews/l3.md': 'passes' | 'fails' | 'unreadable' } }
+// The records as committed at HEAD: { [id]: record } for every record that was committed and parses; a record never committed is absent.
+export async function collectCommittedDesigns(designsDir) {
+  const out = {};
+  for (const id of await subjectDirs(designsDir)) {
+    let text;
+    try { text = execFileSync('git', ['show', `HEAD:./${id}/${RECORD_FILE}`], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
+    catch { continue; }
+    const parsed = parseRecord(text);
+    if (!parsed.error) out[id] = parsed.record;
+  }
+  return out;
+}
+
+// { [subjectId]: { 'reviews/l3.md': 'passes' | 'fails' | 'disclosed' | 'unreadable' } }
 export async function collectReviews(designsDir) {
   const out = {};
   for (const id of await subjectDirs(designsDir)) {
@@ -64,11 +106,11 @@ export async function collectReviews(designsDir) {
   return out;
 }
 
-// { [note]: ['SC1', 'SC2', ...] } for every docs/research/<note>.md
+// { [note]: { ids, marks } } for every docs/research/<note>.md
 export async function collectResearch(researchDir) {
   let names;
   try { names = (await readdir(researchDir)).filter(n => n.endsWith('.md')); }
   catch { return {}; }
-  const entries = await Promise.all(names.map(async n => [n.replace(/\.md$/, ''), findingIds(await readFile(new URL(n, researchDir), 'utf8'))]));
+  const entries = await Promise.all(names.map(async n => [n.replace(/\.md$/, ''), noteMarks(await readFile(new URL(n, researchDir), 'utf8'))]));
   return Object.fromEntries(entries);
 }

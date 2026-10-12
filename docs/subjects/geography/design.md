@@ -9,7 +9,8 @@
       "where": "the owner, in the cloud session that planned the subject (docs/research/knowing-where-places-are.md)",
       "owner": {
         "date": "2026-10-12",
-        "words": "i already signed off psychology and geography so finish these 2"
+        "words": "i already signed off psychology and geography so finish these 2",
+        "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
       "kept": null,
       "dropped": false
@@ -21,7 +22,8 @@
       "where": "the owner, on the first plan (docs/lesson-rebuild-todo.md)",
       "owner": {
         "date": "2026-10-12",
-        "words": "the world first"
+        "words": "the world first",
+        "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
       "kept": null,
       "dropped": false
@@ -33,7 +35,8 @@
       "where": "the owner, on the first plan",
       "owner": {
         "date": "2026-10-12",
-        "words": "flags as a third form of each country"
+        "words": "flags as a third form of each country",
+        "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
       "kept": null,
       "dropped": false
@@ -45,7 +48,8 @@
       "where": "the owner, on the first plan",
       "owner": {
         "date": "2026-10-12",
-        "words": "one line of what the country is"
+        "words": "one line of what the country is",
+        "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
       "kept": null,
       "dropped": false
@@ -54,6 +58,76 @@
   "kinds": [
     "facts",
     "judging"
+  ],
+  "principles": [
+    {
+      "id": "G1",
+      "note": "knowing-where-places-are",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "G2",
+      "note": "knowing-where-places-are",
+      "decides": true,
+      "read": "full",
+      "choice": "that a new group gets one look at the labeled map and then recall only, never a second look or a rereading screen, and that the look is kept to about a minute; the one-minute length itself, the overt tap and the days-long returns are judgement calls beyond this study (the app's own evidence, R1 and R2)."
+    },
+    {
+      "id": "G3",
+      "note": "knowing-where-places-are",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "G4",
+      "note": "knowing-where-places-are",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "G5",
+      "note": "knowing-where-places-are",
+      "decides": true,
+      "read": "full",
+      "choice": "that the subject has contrast items for the known traps (Europe against the United States, South America against North America) with the true map shown after the answer, instead of leaving them to the places' own lessons. That one fixed north-up frame reduces the errors is the design's bet, not this paper's result."
+    },
+    {
+      "id": "G7",
+      "note": "knowing-where-places-are",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R1",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R2",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R7",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R8",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R9",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    }
   ],
   "goal": "After this subject, when a place is named, in the news, by a person or in a travel plan, with no map in sight, you know where it is: the region it sits in, what it borders, the coast or water it is on, and roughly how far it is from you. You can put it on a map with no names on it, name a place that is pointed at, and place a town you have never heard of from the clues a story gives. It starts with the world, then the United States and Canada, then each region; a country comes as its name, its place and its flag, and when you place it you get one line of what it is. It does not teach map reading on the ground, populations, climate or history.",
   "topics": [
@@ -81,129 +155,33 @@
   "endResult": "When a place is named, in the news, by a person or on a trip, know where it is: the region it sits in, what it borders, the coast or water it is on, and roughly how far it is from you.",
   "realMoment": "A place named in a news story, in a conversation or in a travel plan, with no map in sight; a map on the phone that shows where you are but not what the named place is near.",
   "test": "Placing: 40 names drawn at random from every list of the subject (states, cities, countries, seas, rivers, mountain ranges), each tapped on a map with no names on it; at least 34 of 40 in the right place. Naming: 10 places lit on the blank map, named from memory by typing; at least 8 of 10. Both on two sittings at least a week apart. Judging: 10 places never practised, given as a story gives them (\"a town in Oaxaca\", \"the port of Mombasa, Kenya\"), placed by region on the blank map; at least 8 of 10. Distance: 10 pairs of places, the distance band and the travel-time band right for at least 8.",
-  "practice": "Facts: a name is shown and the learner taps where it is on a map with no names on it; the right place lights up at once, with the unit it sits in, what it borders and the water it is on; the same places come back the other way (a place lit, its name typed from memory); misses return in the session until right, then on later days until right in three separate sessions (the app decides). Each new group is shown for a minute on a labeled map first, by region, then only recalled. Judging: places never seen, given as a story gives them, placed by region on the blank map, the clue that decides it shown after; distances answered as a band, both places then lit with the true figure. Reading is a minute per lesson at most.",
+  "out": "Map reading on the ground (the phone's map turns itself and finds you); outlines, populations, economies and climate; capitals of countries other than the ones the news uses as the government's name (Ottawa, Mexico City, Brussels, Beijing, Moscow, and the ones on each region's list); the geography of other planets, of the oceans' depths and of history (old borders, old names); navigation with a compass; towns under a quarter of a million people unless the news names them; the geography of the learner's own town. Canada's provinces are in (part 9) because the learner's own country is the one they will be asked about most.",
   "approved": {
-    "goal": {
-      "date": "2026-10-12",
-      "words": "i already signed off psychology and geography so finish these 2 and they'll be the 2 test subjects before doing anything else",
-      "fp": "sha256:123cfb82c054a1dafc79bd3e675fba82a5758f1d2d4ad328c7d1a59675361a24"
-    },
+    "goal": null,
     "practice": null
   },
-  "parts": [
-    {
-      "id": "1",
-      "title": "The map of the United States",
-      "topics": []
-    },
-    {
-      "id": "2",
-      "title": "The West",
-      "topics": []
-    },
-    {
-      "id": "3",
-      "title": "The Midwest",
-      "topics": []
-    },
-    {
-      "id": "4",
-      "title": "The South",
-      "topics": []
-    },
-    {
-      "id": "5",
-      "title": "The Northeast",
-      "topics": []
-    },
-    {
-      "id": "6",
-      "title": "The cities west of the Mississippi",
-      "topics": []
-    },
-    {
-      "id": "7",
-      "title": "The cities east of the Mississippi",
-      "topics": []
-    },
-    {
-      "id": "8",
-      "title": "The capitals the news uses for the state",
-      "topics": []
-    },
-    {
-      "id": "9",
-      "title": "The neighbors: Canada, Mexico, Central America and the Caribbean",
-      "topics": []
-    },
-    {
-      "id": "10",
-      "title": "South America",
-      "topics": []
-    },
-    {
-      "id": "11",
-      "title": "Europe, west and north",
-      "topics": []
-    },
-    {
-      "id": "12",
-      "title": "Europe, east and south",
-      "topics": []
-    },
-    {
-      "id": "13",
-      "title": "The Middle East and North Africa",
-      "topics": []
-    },
-    {
-      "id": "14",
-      "title": "West and Central Africa",
-      "topics": []
-    },
-    {
-      "id": "15",
-      "title": "East and Southern Africa",
-      "topics": []
-    },
-    {
-      "id": "16",
-      "title": "South and Central Asia",
-      "topics": []
-    },
-    {
-      "id": "17",
-      "title": "East Asia, Southeast Asia and the Pacific",
-      "topics": []
-    },
-    {
-      "id": "18",
-      "title": "The world's water, mountains and deserts",
-      "topics": []
-    },
-    {
-      "id": "19",
-      "title": "How far",
-      "topics": []
-    },
-    {
-      "id": "20",
-      "title": "Placing a place you have never heard of",
-      "topics": []
-    },
-    {
-      "id": "21",
-      "title": "The whole world",
-      "topics": []
-    }
-  ],
-  "pilot": "l1",
-  "tried": {
-    "pilot": null
+  "tried": {},
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/knowing-where-places-are.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md"
+    ],
+    "design": [
+      "docs/subjects/geography/design.md"
+    ],
+    "writing": []
   }
 }
 ---
+
+The record stops at gate 2 (2026-10-12): the owner signs off the printed screen, then gates 3 to 5 are designed through the skill, blind. The first plan of 2026-10-12 was written with the Civics record open and stands below under History only; its gates 3 to 5 are not in the record.
+
+Approvals before the screen rule of 2026-10-12 (re-asked on the printed screen): goal: 2026-10-12, "i already signed off psychology and geography so finish these 2 and they'll be the 2 test subjects before doing anything else".
 # geography: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the first plan's prose below stands until the design pass through the skill; `opened` names the Civics record that plan read, which the skill forbids, so V69 refuses this record until the design pass replaces it.
 
 Written 2026-10-12. A new subject: no subject record, lesson, item or map exists, so there is nothing to audit. Gates 2
 and 3 are drafts waiting for the owner's approval; until then V69 bars every lesson of this subject. The pilot, lesson 1,

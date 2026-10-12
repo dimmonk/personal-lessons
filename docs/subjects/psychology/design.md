@@ -9,7 +9,8 @@
       "where": "the owner, in chat, on the Psychology paragraph; the first ask (2026-08-03) was \"the need-to-know terms, and biases\", the list of terms left to the designer",
       "owner": {
         "date": "2026-10-12",
-        "words": "On track, record my words on Psychology"
+        "words": "On track, record my words on Psychology",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -20,7 +21,7 @@
       "when": "2026-08-03",
       "where": "psychology/Identifying-Psychological-Patterns-Practical-Course.md, Lesson 1; old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "B",
+      "kept": null,
       "dropped": false
     },
     {
@@ -30,7 +31,8 @@
       "where": "the owner's request for the first Psychology, in their words; the course document, Lesson 2; old Unit Two \"Are the reasons real?\" at the tag old-lessons",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics"
+        "words": "restore all the psychology and ideology topics",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -42,7 +44,8 @@
       "where": "the course document, Lesson 3; part of old Unit Four",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics"
+        "words": "restore all the psychology and ideology topics",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -54,7 +57,8 @@
       "where": "the course document, Lesson 4; old Unit Four \"five ways of being that keep costing someone\"",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics"
+        "words": "restore all the psychology and ideology topics",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -66,7 +70,8 @@
       "where": "the course document, Lesson 5",
       "owner": {
         "date": "2026-10-12",
-        "words": "restore all the psychology and ideology topics"
+        "words": "restore all the psychology and ideology topics",
+        "where": "chat, 2026-10-12, relayed by the deployment session"
       },
       "kept": null,
       "dropped": false
@@ -77,7 +82,7 @@
       "when": "2026-08-03",
       "where": "the course document, Lesson 5; old Unit Three",
       "owner": null,
-      "kept": "C",
+      "kept": null,
       "dropped": false
     },
     {
@@ -86,7 +91,7 @@
       "when": "2026-08-03",
       "where": "the course document, Lesson 6",
       "owner": null,
-      "kept": "F",
+      "kept": null,
       "dropped": false
     }
   ],
@@ -99,7 +104,8 @@
       "id": "O1",
       "note": "reading-other-people",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "part B and the shape of every item: \"one moment, ordinary reason\" as a frequent right answer, with the situation named; if the finding were false the subject would not need the one-moment-or-pattern step."
     },
     {
       "id": "O2",
@@ -135,7 +141,8 @@
       "id": "O8",
       "note": "reading-other-people",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "the practice method: many new accounts judged with feedback after each and one short card per idea, rather than a card-led course about biases."
     },
     {
       "id": "O10",
@@ -317,11 +324,7 @@
   },
   "pilot": "l1",
   "approved": {
-    "goal": {
-      "date": "2026-10-12",
-      "words": "On track, record my words on Psychology. perfect. this is basically a lesson plan.",
-      "fp": "sha256:6707a54288a9899f91bb9b8e0c2cf7d1cb9086e34d3385e918506c08da2d7087"
-    },
+    "goal": null,
     "practice": null
   },
   "tried": {
@@ -329,16 +332,29 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l1.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/reading-other-people.md",
-    "docs/research/review-after-lessons.md",
-    "docs/learning-science.md"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/reading-other-people.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md"
+    ],
+    "design": [
+      "docs/subjects/psychology/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
+
+Approvals before the screen rule of 2026-10-12 (re-asked on the printed screen): goal: 2026-10-12, "On track, record my words on Psychology. perfect. this is basically a lesson plan.".
 # psychology: design record (build-subject skill)
 
 JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.

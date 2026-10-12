@@ -18,7 +18,7 @@ const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
 export async function baseline() {
   const loaded = await loadFromPublic(DEFAULTS.publicDir, { extra: FIXTURE_FILES.map(f => new URL(f, FIXTURE)) });
   const data = { ...loaded, subjects: Object.fromEntries(FIXTURE_IDS.map(id => [id, plain(loaded.subjects[id])])) };
-  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs: FIXTURE_DESIGNS, reviews: FIXTURE_REVIEWS, research: FIXTURE_RESEARCH, held: null, committedHeld: null };
+  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs: FIXTURE_DESIGNS, committedDesigns: {}, reviews: FIXTURE_REVIEWS, research: FIXTURE_RESEARCH, held: null, committedHeld: null };
 }
 
 const redRules = result => [...new Set(result.failures.map(f => f.rule))].sort();

@@ -8,7 +8,9 @@
       "when": "2026-10-05",
       "where": "old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": "A",
+      "kept": [
+        "Find the claim and its number"
+      ],
       "dropped": false
     },
     {
@@ -17,7 +19,9 @@
       "when": "2026-10-05",
       "where": "old Unit Two",
       "owner": null,
-      "kept": "C",
+      "kept": [
+        "Compared with what"
+      ],
       "dropped": false
     },
     {
@@ -26,7 +30,9 @@
       "when": "2026-10-05",
       "where": "old Unit Three",
       "owner": null,
-      "kept": "D",
+      "kept": [
+        "Who was counted, and how"
+      ],
       "dropped": false
     },
     {
@@ -35,7 +41,9 @@
       "when": "2026-10-05",
       "where": "old Unit Four",
       "owner": null,
-      "kept": "E",
+      "kept": [
+        "Cause or just a link"
+      ],
       "dropped": false
     },
     {
@@ -44,7 +52,9 @@
       "when": "2026-10-05",
       "where": "old Unit Five",
       "owner": null,
-      "kept": "G",
+      "kept": [
+        "The whole item, unprompted"
+      ],
       "dropped": false
     },
     {
@@ -53,7 +63,9 @@
       "when": "2026-10-05",
       "where": "old Unit Six",
       "owner": null,
-      "kept": "E",
+      "kept": [
+        "Cause or just a link"
+      ],
       "dropped": false
     }
   ],
@@ -72,19 +84,22 @@
       "id": "C2",
       "note": "judging-statistical-claims",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "each lesson teaches one question with an explicit worked item and then practises that same question (rather than a list of rules to read, or practice with no teaching)."
     },
     {
       "id": "C4",
       "note": "judging-statistical-claims",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "parts A, D and E (what the headline claims against the body, who was studied, cause or just a link) are lessons of their own and come early, instead of a catalogue of statistical terms."
     },
     {
       "id": "C5",
       "note": "judging-statistical-claims",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "part B, \"Size it plainly\", is a lesson of its own and the test asks for a typed plain size on every risk or change; if relative numbers were understood and no more persuasive, a plain size would be a feedback line, not a part."
     },
     {
       "id": "C6",
@@ -96,7 +111,8 @@
       "id": "C7",
       "note": "judging-statistical-claims",
       "decides": true,
-      "read": "full"
+      "read": "full",
+      "choice": "part F's practice is typing the real change from the axis numbers, not spotting or naming a cut axis."
     },
     {
       "id": "C8",
@@ -299,14 +315,25 @@
       "by": "stand-in",
       "date": "2026-10-11",
       "review": "reviews/l1.md",
-      "waived": "keep going. just finish everything and don't wait on my read"
+      "waived": {
+        "date": "2026-10-11",
+        "words": "keep going. just finish everything and don't wait on my read",
+        "where": "chat, 2026-10-11"
+      }
     }
   },
-  "opened": [
-    "docs/research/judging-statistical-claims.md",
-    "docs/research/review-after-lessons.md",
-    "docs/learning-science.md"
-  ]
+  "opened": {
+    "asks": [],
+    "research": [
+      "docs/research/judging-statistical-claims.md",
+      "docs/research/review-after-lessons.md",
+      "docs/learning-science.md"
+    ],
+    "design": [
+      "docs/subjects/stats/design.md"
+    ],
+    "writing": []
+  }
 }
 ---
 # stats: design record (build-subject skill)
