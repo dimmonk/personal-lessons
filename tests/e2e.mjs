@@ -7,11 +7,24 @@ import { startServer } from './static-server.mjs';
 import { makeEnv } from './e2e-env.mjs';
 import { CHECKS } from './e2e-checks.mjs';
 import { SOUND_CHECKS, SOUND_LANES } from './e2e-sing.mjs';
-import { FAULTS, runWithFault } from './e2e-controls.mjs';
+import { FAULTS, runWithFault, withLimit } from './e2e-controls.mjs';
 
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
 const failures = [];
 let checks = 0;
+// Browser checks run only by name: the ones that exercise the change (the owner's rule: the whole suite only when the owner
+// asks, and never as a step before a deploy). `npm run test:e2e -- X33 X36` runs those checks and their seeded faults; PWA names
+// the installable-app check; `npm run test:e2e:all` runs everything and is for the owner's request only.
+const ARGS = process.argv.slice(2);
+const ALL = ARGS.includes('--all');
+const PICKED = ARGS.filter(a => !a.startsWith('--'));
+if (!ALL && !PICKED.length) {
+  console.error('Name the browser checks that exercise your change, e.g. npm run test:e2e -- X33 X36 (PWA for the installable app).\nThe whole suite runs only when the owner asks for it: npm run test:e2e:all');
+  process.exit(2);
+}
+const UNKNOWN = PICKED.filter(id => id !== 'PWA' && !(id in CHECKS));
+if (UNKNOWN.length) { console.error(`No browser check is called ${UNKNOWN.join(', ')}. The checks: ${Object.keys(CHECKS).join(' ')} PWA`); process.exit(2); }
+const wanted = id => ALL || PICKED.includes(id);
 const browser = await chromium.launch();
 
 /* ---------- the checks, on the app as it is ---------- */
@@ -21,7 +34,7 @@ async function runChecks() {
   const lane = async list => {
     for (const [id, run] of list) {
       try {
-        const c = await run(env);
+        const c = await withLimit(run(env), id);
         checks += c.count;
         failures.push(...c.failures);
       } catch (error) { failures.push(`${id} crashed: ${error.stack || error}`); }
@@ -29,8 +42,8 @@ async function runChecks() {
   };
   try {
     // the sound checks spend their time waiting for real sound, so they run in lanes of their own, at the same time as the rest
-    const all = Object.entries(CHECKS), isSound = ([id]) => id in SOUND_CHECKS;
-    await Promise.all([lane(all.filter(e => !isSound(e))), ...SOUND_LANES.map(ids => lane(ids.map(id => [id, CHECKS[id]])))]);
+    const all = Object.entries(CHECKS).filter(([id]) => wanted(id)), isSound = ([id]) => id in SOUND_CHECKS;
+    await Promise.all([lane(all.filter(e => !isSound(e))), ...SOUND_LANES.map(ids => lane(ids.filter(wanted).map(id => [id, CHECKS[id]])))]);
   } finally { await server.close(); }
 }
 
@@ -100,8 +113,8 @@ async function inPool(items, limit, work) {
 }
 async function testFaults() {
   const run = async fault => ({ fault, ...(await runWithFault(browser, fault)) });
-  const quick = await inPool(FAULTS.filter(f => !f.only), QUICK_FAULTS_AT_ONCE, run);
-  const slow = await inPool(FAULTS.filter(f => f.only), SOUND_FAULTS_AT_ONCE, run);
+  const quick = await inPool(FAULTS.filter(f => wanted(f.check) && !f.only), QUICK_FAULTS_AT_ONCE, run);
+  const slow = await inPool(FAULTS.filter(f => wanted(f.check) && f.only), SOUND_FAULTS_AT_ONCE, run);
   const results = [...quick, ...slow];
   for (const { fault, red, errors, unused } of results) {
     checks++;
@@ -114,7 +127,7 @@ async function testFaults() {
 let faultCount = 0;
 try {
   await runChecks();
-  await testPwa();
+  if (wanted('PWA')) await testPwa();
   if (!process.env.E2E_SKIP_FAULTS) faultCount = await testFaults();   // a quick local run of the checks alone
 } catch (err) {
   failures.push(`crashed: ${err.stack || err}`);
