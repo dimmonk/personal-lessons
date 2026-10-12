@@ -41,7 +41,7 @@ jobs:
           # request, main's; the start commit's when that ref has none. Never the pushed head's.
           if [ "${{ github.ref }}" = "refs/heads/main" ] && [ "${{ github.event_name }}" = "push" ]; then CHECK_REF="$BEFORE"; else CHECK_REF="origin/main"; fi
           # when that ref has no copy (the landing push of the gates), the fallback is the named commit whose readings are the current ones
-          FALLBACK_CHECK=cd1a7b8
+          FALLBACK_CHECK=2d0027d
           git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$FALLBACK_CHECK"
           git show "$CHECK_REF:tools/design/owner-line.mjs" > /tmp/owner-line.mjs
           echo "the owner-line check is the copy at $CHECK_REF"
