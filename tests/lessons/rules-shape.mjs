@@ -458,8 +458,9 @@ export const V71 = subjectRule('V71', (s, check) => {
   const ordered = s.sortedLessons.filter(l => l.part !== null).map(l => partIds.indexOf(l.part));
   if (ordered.some((x, i) => i > 0 && x < ordered[i - 1])) problems.push('the lessons are not in part order: lesson numbers must rise with the parts');
   if (design && !design.error) {
+    // the subject record mirrors the design's parts (id and title) whenever it is written; while a redesign's parts wait, it keeps the ones it was built to
     const idTitle = parts => JSON.stringify((Array.isArray(parts) ? parts : []).map(p => ({ id: p.id, title: p.title })));
-    if (idTitle(s.meta.parts) !== idTitle(design.parts)) problems.push('the subject record\'s parts are not the design record\'s parts (id and title), word for word');
+    if (s.subjectChanged && idTitle(s.meta.parts) !== idTitle(design.parts)) problems.push('the subject record\'s parts are not the design record\'s parts (id and title), word for word');
     const built = s.lessonList.filter(l => l.role !== 'baseline');
     if (built.length && !s.subject.lessons[design.pilot]) problems.push(`the design record's pilot "${design.pilot}" is not a lesson of the subject`);
   }

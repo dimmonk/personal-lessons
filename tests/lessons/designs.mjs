@@ -5,6 +5,7 @@
 // findings with their marks (decides or supports) and what was read.
 import { readdir, readFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
+import { BASE } from './lockfile.mjs';
 
 export const RECORD_FILE = 'design.md';
 export const REVIEWS_DIR = 'reviews';
@@ -33,6 +34,7 @@ export function parseRecord(text) {
 export function reviewVerdict(text) {
   const m = text.split('\n')[0].match(VERDICT_LINE), fp = text.match(REVIEWED_LINE), who = text.match(REVIEWER_LINE);
   if (!m || !who || !fp) return { verdict: 'unreadable', reviewed: fp ? fp[1] : null, date: who ? who[2] : null };
+  if (/model not recorded/.test(who[1]) && who[2] !== '2026-10-11') return { verdict: 'unreadable', reviewed: fp[1], date: who[2] };   // the exception is for those reviews alone
   return { verdict: DISCLOSURE_LINE.test(text) ? 'disclosed' : m[1], reviewed: fp[1], date: who[2] };
 }
 
@@ -79,16 +81,16 @@ export async function collectDesigns(designsDir) {
   return out;
 }
 
-// The records as committed at HEAD, listed from git itself (a record whose folder was deleted is still here): { [id]: record } for every
-// record that was committed and parses; a record never committed is absent.
+// The records as committed at the base (HEAD, or LESSONS_BASE), listed from git itself (a record whose folder was deleted is still here):
+// { [id]: record } for every record that was committed and parses; a record never committed is absent.
 export async function collectCommittedDesigns(designsDir) {
   const out = {};
   let names;
-  try { names = execFileSync('git', ['ls-tree', '--name-only', 'HEAD', './'], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().split('\n').filter(Boolean).map(n => n.replace(/\/$/, '')); }
+  try { names = execFileSync('git', ['ls-tree', '--name-only', BASE(), './'], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().split('\n').filter(Boolean).map(n => n.replace(/\/$/, '')); }
   catch { return out; }
   for (const id of names) {
     let text;
-    try { text = execFileSync('git', ['show', `HEAD:./${id}/${RECORD_FILE}`], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
+    try { text = execFileSync('git', ['show', `${BASE()}:./${id}/${RECORD_FILE}`], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
     catch { continue; }
     const parsed = parseRecord(text);
     if (!parsed.error) out[id] = parsed.record;

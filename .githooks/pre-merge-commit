@@ -1,0 +1,5 @@
+#!/bin/sh
+# A merge commit is held to the same tier as any commit: the merged tree, staged, against the branch being merged into (HEAD). A
+# fast-forward merge makes no commit and runs no hook; the push workflow checks each commit against its parent, and the owner's branch
+# protection on main is the guard for that.
+exec "$(git rev-parse --show-toplevel)/.githooks/pre-commit"

@@ -4,6 +4,7 @@
 // Records one thing the owner asked the subject to teach (build-subject skill, gate 0). Only their word drops an ask; V69 holds the
 // subject's content while an ask is not dropped and not covered by topics that a part covers.
 import { readRecord, writeRecord, ownerWordFrom } from './record.mjs';
+import { sameWords } from '../../tests/lessons/design-shape.mjs';
 
 function parse([subject, item, flag, ...rest]) {
   if (!subject || !item) return null;
@@ -18,7 +19,7 @@ function parse([subject, item, flag, ...rest]) {
 // a new word of the owner's keeps the one it replaces (and all before it) in its previous; the same words again are refused
 function withOwner(a, owner) {
   const previous = a.owner ? [...(a.owner.previous || []), (({ previous, ...e }) => e)(a.owner)] : [];
-  const earlier = previous.find(e => e.words.trim().toLowerCase() === owner.words.trim().toLowerCase()) || (a.owner && a.owner.words.trim().toLowerCase() === owner.words.trim().toLowerCase() ? a.owner : null);
+  const earlier = previous.find(e => sameWords(e.words, owner.words)) || (a.owner && sameWords(a.owner.words, owner.words) ? a.owner : null);
   if (earlier) throw new Error(`"${owner.words}" is already the owner's word on "${a.id}" (${earlier.date})`);
   return { ...owner, previous };
 }

@@ -84,6 +84,7 @@ export function askedSinceProblems(r, committed) {
     const newWord = Boolean(n.owner) && !sameEntry(n.owner, a.owner);
     if (n.dropped && !a.dropped && !newWord) problems.push(`asked item ${a.id} was dropped since the last commit without a new word of the owner's: only their word drops an ask`);
     if (a.kept !== null && n.kept === null && !n.dropped && !newWord) problems.push(`asked item ${a.id} lost its topics since the last commit without a new word of the owner's`);
+    if (Array.isArray(a.kept) && Array.isArray(n.kept) && n.kept.length < a.kept.length && n.kept.every(x => a.kept.includes(x)) && !newWord) problems.push(`asked item ${a.id} is placed under fewer topics than at the last commit (${a.kept.length} to ${n.kept.length}) without a new word of the owner's`);
     return problems;
   });
 }
@@ -97,6 +98,8 @@ const isPrefix = (was, now) => Array.isArray(was) && Array.isArray(now) && was.l
 const keepsInPrevious = (now, was) => { if (!now || !Array.isArray(now.previous)) return false; const i = now.previous.findIndex(e => sameEntry(e, was)); return i >= 0 && isPrefix(was.previous || [], now.previous.slice(0, i)); };
 const laterWord = (now, was) => !was || sameEntry(now, was) && isPrefix(was.previous || [], now.previous || [])
   || (now && now.date >= was.date && now.words !== was.words && keepsInPrevious(now, was));
+// the owner's words compared without case, punctuation or spacing: "On track." and "on track" are one word
+export const sameWords = (a, b) => String(a).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim() === String(b).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 export const previousProblems = (e, where) => e && typeof e === 'object' && 'previous' in e && !(Array.isArray(e.previous) && e.previous.every(x => x && typeof x === 'object')) ? [`${where}: previous is not a list of the entries it replaced`] : [];
 export function unplacedAsks(r) {
   const covered = new Set((Array.isArray(r.parts) ? r.parts : []).flatMap(p => (p && Array.isArray(p.topics)) ? p.topics : []));
@@ -174,11 +177,13 @@ export function openedProblems(id, r) {
 }
 // what was opened only grows: a path taken off a list after the fact hides a read. The one exception is a redesign: when `designedOn`
 // advances, gates 1 to 5 were run again, and the lists are the new pass's (the old pass's lists stay in the prose under History).
-export function openedSinceProblems(r, committed) {
+export function openedSinceProblems(r, committed, id) {
   if (!committed || !committed.opened || typeof committed.opened !== 'object' || !r.opened || typeof r.opened !== 'object') return [];
   const redesigned = isDate(r.designedOn) && (!committed.designedOn || r.designedOn > committed.designedOn);
-  // a source listed under asks that was never owner material (it fails the allow-list) is a mistake, not a read, and may be taken off
-  return ['asks', 'research', 'design', 'writing'].filter(k => k === 'asks' || !redesigned).flatMap(k => (Array.isArray(committed.opened[k]) ? committed.opened[k] : []).filter(p => !(Array.isArray(r.opened[k]) && r.opened[k].includes(p)) && !(k === 'asks' && !ASKS_OK.test(p))).map(p => `opened.${k} lost "${p}" since the last commit: what was opened is never un-opened`));
+  // a source listed under asks that was never owner material (it fails the allow-list) is a mistake, not a read, and may be taken off; a read
+  // of what no stage may open (a lesson, a learner view, a review, another record) is never taken off
+  const erasable = p => !ASKS_OK.test(p) && !FORBIDDEN_EVERYWHERE(id, p);
+  return ['asks', 'research', 'design', 'writing'].filter(k => k === 'asks' || !redesigned).flatMap(k => (Array.isArray(committed.opened[k]) ? committed.opened[k] : []).filter(p => !(Array.isArray(r.opened[k]) && r.opened[k].includes(p)) && !(k === 'asks' && erasable(p))).map(p => `opened.${k} lost "${p}" since the last commit: what was opened is never un-opened`));
 }
 
 /* ---------- gates 2 and 3 ---------- */
@@ -212,9 +217,10 @@ export function approvalProblems(r) {
     const problems = ownerWord(v, `approved.${k}`);
     if (problems.length) return problems;
     if (typeof v.fp !== 'string') return [`approved.${k} has no fingerprint of the screen approved (tools/design/approve.mjs writes it)`];
-    if (k === 'goal' && !Array.isArray(v.shown)) return ['approved.goal does not record which asks were shown as dropped on the screen (shown: a list of ids, possibly empty)'];
+    if (k === 'goal' && !Array.isArray(v.shown)) return ['approved.goal does not record which asks were shown as needing the owner\'s word (shown: a list of ids, possibly empty)'];
     if (k === 'goal' && !isText(v.sentence)) return ['approved.goal does not carry the sentence approved (sentence: the endResult on the screen; the subject record mirrors it, V80)'];
-    const again = a.history[k].find(e => e && isText(e.words, 1) && e.words.trim().toLowerCase() === v.words.trim().toLowerCase());
+    if (k === 'goal' && v.sentence !== r.endResult) return ['approved.goal.sentence is not the endResult on the screen it binds'];
+    const again = a.history[k].find(e => e && isText(e.words, 1) && sameWords(e.words, v.words));
     if (again) return [`approved.${k} carries the same words as an earlier approval (${again.date}): a new approval needs the owner's new words`];
     if (k === 'goal') {
       const waiting = dropsToShow(r).map(d => d.id).filter(id => !v.shown.includes(id));

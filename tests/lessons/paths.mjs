@@ -1,4 +1,4 @@
-// Command-line paths for the lesson tools: --public <dir>, --lock <file>, --held <file>.
+// Command-line paths for the lesson tools: --public <dir>, --lock <file>, --held <file>, --base <commit> (what "since the last commit" is measured against; HEAD by default).
 import { pathToFileURL } from 'node:url';
 import { resolve, dirname, basename } from 'node:path';
 
@@ -23,6 +23,7 @@ export function parseTargetArgs(argv) {
   const rest = [];
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
+    if (arg === '--base') { if (i + 1 >= argv.length) throw new Error('--base needs a commit'); process.env.LESSONS_BASE = argv[i + 1]; i += 1; continue; }
     if (['--public', '--lock', '--held'].includes(arg)) {
       if (i + 1 >= argv.length) throw new Error(`${arg} needs a value`);
       options[arg.slice(2)] = argv[i + 1];

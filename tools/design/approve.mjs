@@ -12,7 +12,7 @@
 // node tools/design/approve.mjs <subject> goal|practice --clear
 //   clears the approval (it goes to the history), so that the screen is asked again.
 import { fingerprint } from '../../tests/lessons/fingerprint.mjs';
-import { approvedText, screenText, dropsToShow, GOAL_SCREEN_MAX_CHARS, PRACTICE_MAX_CHARS } from '../../tests/lessons/design-shape.mjs';
+import { approvedText, screenText, dropsToShow, sameWords, GOAL_SCREEN_MAX_CHARS, PRACTICE_MAX_CHARS } from '../../tests/lessons/design-shape.mjs';
 import { readRecord, writeRecord, ownerWordFrom } from './record.mjs';
 
 const FIELDS = ['goal', 'practice'];
@@ -36,11 +36,11 @@ async function main([subject, field, ...rest]) {
   const word = ownerWordFrom(rest);
   if (!word) throw new Error('an approval needs --words "<the owner\'s reply, quoted>" and --where "<where they said it>"');
   const { rest: _, ...w } = word;
-  const earlier = [...history[field], ...(was ? [was] : [])].find(e => e.words.trim().toLowerCase() === w.words.trim().toLowerCase());
+  const earlier = [...history[field], ...(was ? [was] : [])].find(e => sameWords(e.words, w.words));
   if (earlier) throw new Error(`"${w.words}" is already the owner's word on the ${field} (${earlier.date}); a new approval needs their new words on the screen as it is now`);
   const entry = { ...w, fp: fingerprint(approvedText(record, field)), ...(field === 'goal' ? { shown: dropsToShow(record).map(d => d.id), sentence: record.endResult } : {}) };
   await writeRecord(subject, { ...record, approved: { ...record.approved, [field]: entry, history: { ...history, [field]: [...history[field], ...(was ? [was] : [])] } } }, prose);
-  console.log(`${subject}: ${field} approved on ${entry.date}, "${entry.words}" (${entry.where})${field === 'goal' ? `; shown as dropped: ${entry.shown.join(', ') || 'nothing'}` : ''}`);
+  console.log(`${subject}: ${field} approved on ${entry.date}, "${entry.words}" (${entry.where})${field === 'goal' ? `; shown as needing their word: ${entry.shown.join(', ') || 'nothing'}` : ''}`);
 }
 
 main(process.argv.slice(2)).catch(error => { console.error(error.message); process.exit(1); });

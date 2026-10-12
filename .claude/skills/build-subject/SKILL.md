@@ -78,7 +78,7 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   lines. `node tools/design/approve.mjs <subject> goal|practice --show` prints the screen; it is pasted to the owner as
   printed. Their reply is recorded with `approve.mjs <subject> goal|practice --words "<their reply, quoted>" --where
   "<where they said it>"`, which writes the date, their words, where, a fingerprint of the exact screen and (gate 2)
-  the asks shown as dropped. A change to that screen afterwards makes the validator ask again. The same words on two
+  the asks shown as needing their word. A change to that screen afterwards makes the validator ask again. The same words on two
   subjects are refused: one message of the owner's approves one thing. Never ask the owner to read a gate's prose, a
   research note or a lesson to approve.
 - **Every owner word carries its source.** Whatever is recorded as the owner's (an approval, a word on an ask, a try,
@@ -99,7 +99,7 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   review counts for the version it read, and a rewritten lesson or design is reviewed again), owner entries compared
   with the last commit (an approval is cleared or replaced by a later word, a try replaced by a later one, never edited
   or taken away), a deleted record or a shrunk `opened` list refused (a redesign, `designedOn` advanced, starts new
-  lists), the pre-commit hook that runs the lesson tier (`npm test` turns the hooks on), and the commit-message hook
+  research, design and writing lists; the asks list never resets, and a forbidden read is never erased from it), the pre-commit hook that runs the lesson tier (`npm test` turns the hooks on), and the commit-message hook
   that asks for the owner's word on any change to the skill, the record rules and their harness, the tools, the hooks
   or the research notes. What does not, said here so no one mistakes it for a check: a session can write a quote that
   was never said, write a review file and its verdict itself, or mark a note's finding as read in full without reading
@@ -107,8 +107,12 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   `core.hooksPath` pointed elsewhere, with a hook file edited and left unstaged, or by rewriting history after the
   fact; a session that edits the validator and its controls together can switch a rule off (the commit then carries an
   owner line that only the owner can read as false). The push runs the tiers again where no session edits the runner
-  (`.github/workflows/lesson-tier.yml`), and the rest rests on honesty, and on the owner reading the record's owner
-  fields, the review files and the commit log, which this skill keeps short enough to read.
+  (`.github/workflows/lesson-tier.yml`: the tiers at the pushed head, and the lesson tier at every pushed commit
+  against its parent, so a branch committed with hooks off shows on push); a fast-forward merge makes no commit and
+  runs no hook, which only the owner's branch protection on `main` stops; an approval's history entries are the
+  record's own claims (their fingerprints cannot be checked against screens that are gone; the committed prefix is what
+  is held). The rest rests on honesty, and on the owner reading the record's owner fields, the review files and the
+  commit log, which this skill keeps short enough to read.
 - **The question at every gate**, asked in the record: **"If the learner did only this, would they be closer to the end
   result?"** A "no" or a "not really" stops the gate.
 - **Who applies each rejection.** Gate 0: the validator and the owner. Gates 1 to 5: the session that designs, checked
@@ -208,7 +212,8 @@ order. A subject in the app carries everything.
    null, and the item appears on gate 2's screen as needing the owner's word (every item appears there: with the topics
    it is placed under, or the owner's word on it, or "needs your word"), and waits. Only the owner's word, recorded with its source in `owner`, settles an item:
    `dropped: true` on their word to drop it, or topics found for it on their word to keep it (`tools/design/asked.mjs`).
-   A drop, or topics taken away, since the last commit needs a new word of theirs in that same change. An item they move to another subject is dropped here with those words and
+   A drop, topics taken away, or fewer topics than before, since the last commit, needs a new word of theirs in that
+   same change. An item they move to another subject is dropped here with those words and
    asked for there. While any item is not dropped and not covered, the validator refuses every change to the subject's
    content.
 
@@ -219,7 +224,7 @@ reworded into something smaller than what was asked; an item is gone since the l
 Rejected, for example: Psychology (2026-10-10): the blind audit cut the old Unit Two on biases ("general cognitive
 biases: considered and rejected") although the owner had asked by name for "a lesson on biases and the different types
 of bias", and the approval of the end result had been given before the cut existed. The item goes on the list with
-nothing decided, it is shown as dropped on the gate 2 screen, and the subject waits for their word. (On 2026-10-12 the
+nothing decided, it is shown on the gate 2 screen as needing the owner's word, and the subject waits for it. (On 2026-10-12 the
 owner's word was "restore all the psychology and ideology topics".)
 
 Pass when: every item on the list is covered by topics a part covers, or dropped in the owner's recorded words.
@@ -322,7 +327,8 @@ the record.
    of learning. Its core must be the real moment's own action: the same kind of input and the same answer or action
    (D6: what must match is the answer or action the learner produces, not the device they produce it on). A body skill
    is practiced by doing it with feedback; judging situations is practiced on real-looking cases; recall is practiced
-   by recalling; a complex skill is practiced as a simplified whole before its parts are drilled apart (D7).
+   by recalling; a complex skill is practiced as a simplified whole before its parts are drilled apart (D7, a judgement
+  call on thin evidence).
 2. **Guided, for a beginner** (D5): the first item of each new kind is the real action shown and worked, and that shown
    case counts as practice, not as reading. After it, the learner does the action with feedback.
 3. **What the learner spends their time doing.** Most of the time in every lesson goes to that practice, not to reading
@@ -470,7 +476,7 @@ each existing lesson, one of: **keeps** (it is what gate 5 would have designed),
 practice is not), **goes** (it serves no part). Report the verdict per lesson in the record's prose, in a table;
 whatever does not pass goes back through the gates as a rebuild, never a patch. A kept lesson still needs its review
 (gate 6 or 7) before it is live. A lesson that **goes** is an ask of the owner's (gate 0) until they say otherwise: it
-is shown to them as dropped on the gate 2 screen, and the subject's content waits for their word.
+is shown to them on the gate 2 screen as needing their word, and the subject's content waits for it.
 
 ## Never
 

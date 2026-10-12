@@ -1,5 +1,6 @@
-# The fast tiers run on every push, where no session can skip a hook: the data checks, the sound checks, the lesson validator with its
-# seeded faults, and the readers on the real notes, reviews and records (build-subject skill, "How it runs").
+# The fast tiers run on every push, where no session can skip a hook: at the pushed head, npm test; and for every commit of the push, the
+# lesson tier measured against that commit's first parent (what "since the last commit" means), so an ask removed, an owner entry edited
+# or a record deleted on any commit of a branch shows, merge commits included (build-subject skill, "How it runs").
 name: lesson tier
 on: [push, pull_request]
 jobs:
@@ -7,7 +8,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 2 }
+        with: { fetch-depth: 0 }
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm test
+      - name: each commit against its parent
+        run: |
+          set -e
+          if [ "${{ github.event_name }}" = "pull_request" ]; then RANGE="origin/${{ github.base_ref }}..HEAD"; else RANGE="${{ github.event.before }}..${{ github.sha }}"; fi
+          git rev-parse "${{ github.event.before }}" >/dev/null 2>&1 || RANGE="HEAD~1..HEAD"
+          for c in $(git rev-list --reverse "$RANGE"); do
+            git checkout -q "$c"
+            parent=$(git rev-parse -q --verify "$c^" || true)
+            echo "== $c against ${parent:-nothing}"
+            if [ -n "$parent" ]; then node tests/validate-lessons.mjs --base "$parent"; else node tests/validate-lessons.mjs; fi
+            node tests/lessons/negative-controls.mjs >/dev/null
+            node tests/design-pure.mjs >/dev/null
+          done

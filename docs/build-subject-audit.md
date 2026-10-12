@@ -1503,3 +1503,249 @@ For the owner:
   close the history-rewrite route.
 - Replacement words for the relayed words, the floor at SKILL 104-109, and the undecided asks: Math 3, Singing 3,
   Wealth 4. (Carried over from G.)
+
+## Part I. The sixth review (2026-10-12)
+
+An independent review of fdbb6e3 ("the skill's fifth review answered"), by an agent that did not write it, against
+part H's ten fixes (H7). Line numbers are `SKILL.md`'s at fdbb6e3. **`npm test` is green**: 295 design reader checks,
+48,520 lesson checks, 232 seeded faults (the pin is 232). The push workflow ran once on GitHub and passed. Every attack
+was run on a scratch copy (`git archive HEAD`, its own `git init`, `npm run hooks`), never on the real records.
+
+What is better, briefly:
+- The tree is green and commits land. V80 holds the subject record to `approved.goal.sentence` only when the subject
+  record is written, so a redesign's sentence waits without turning anything red (u, v, w).
+- An ask flipped to dropped, or taken off all its topics, needs a new word of the owner's (c).
+- A record review's date is its file's (t, x), and the same words as any earlier approval are refused by V69 (q).
+- Psychology's test reaches every group of its topics, and Geography's reaches flags.
+
+What is left falls in three groups:
+- The since-last-commit refusals hold only for a commit made in a clone with the hooks on. A merge runs no lesson
+  tier, and the push workflow compares each commit with itself.
+- Three checks are narrower than their text: narrowing an ask's topics, the sentence an approval carries, and a history
+  entry "that stood". The opened-list exemption also lets a forbidden read be erased.
+- V71 still mirrors the parts on every run, the lock V80 had, moved one rule over.
+
+### I1. H7's ten items
+
+| # | H7 item | Status | Evidence |
+|---|---|---|---|
+| 1 | V80 to the approved sentence, on write; controls | **Done** | rules-shape 473-481 (V80). (u): a design sentence changed with no approval committed, and the next commit was green. (w): approved, subject record untouched, committed. (v): the subject's `endResult` changed to another sentence is refused by V80, and set to `approved.goal.sentence` V80 is green. Two controls. One gap: the sentence is not bound to the screen (I3, item 4). |
+| 2 | A drop needs a new word; `dropped` in the fingerprint | **Partly** | `askedSinceProblems` (design-shape 84-86) refuses a `dropped` flip (c3) and `kept` going to null without a new word. `goalScreen` carries `dropped`. Not refused: an ask's `kept` narrowed to fewer topics. Psychology's `biases` ask, which the owner said to keep, went from five topics to one ("one act read as a trait") with no word, and was committed green (attack z4). SKILL 211 says "a drop, or topics taken away ... needs a new word". |
+| 3 | A review's date is its file's | **Done** | `reviewVerdict` reads the date from the Reviewer line. `designReviewProblems` and `triedProblems` refuse a record date that differs (design-shape 275, 299). `designReviewed` needs it on or after `designedOn`. (x) and (t) were refused. Controls exist. |
+| 4 | Words against the whole history; history entries stood; chains | **Partly** | The same words are refused against `approved.history` (design-shape 217; q2 refused). Chains of replacements are allowed (a control). Two gaps. "An approval that stood" is checked for shape only (date, words, where, an `fp` string): an invented entry with `fp: "sha256:0000"` was committed (s2). "The same words" is a lowercase, trimmed compare: "Yes, this is fine. Go ahead!" after "yes this is fine go ahead" was committed by hand over a cut screen (q3). |
+| 5 | Gate 2 test reaches every group; the two screens | **Mostly** | It is a rejection at SKILL 305. Psychology's test now asks for "the bias or the defense mechanism" (I4). The sentence prints once, and Geography's says the doing. New: Geography's sentence and paragraph promise "what it borders and what water it is on", and its test asks neither (I4). |
+| 6 | Every way past the hooks named; tiers on push | **Partly** | SKILL 104-110 name `--no-verify`, `core.hooksPath`, an edited unstaged hook and history rewriting, and `lesson-tier.yml` runs `npm test` on push. Three gaps (I3, item 1): a merge runs no lesson tier; the workflow's run compares HEAD with itself, so no since-last-commit check can fire there; and `.github/` is not under the commit-msg hook, so the session edits the runner freely (z2). SKILL 109-110, "where no session edits the runner", is false on both counts. |
+| 7 | Text in line with the code | **Partly** | Done: gate 0 step 2 (211), gate 2 (297-300), 427 ("replaces it and keeps it"), `stand-in-review.md` 4 and its last line, and the standard's section 2. Left: the standard's V80 row (645, "equals the design record's") and its data model (72, "the design record's endResult, word for word"). The V69 row still says "every principle is cited by a block". Section 11 has no entry for fdbb6e3's rule changes (V80 to the approved sentence, a drop needs a new word, a review's date). SKILL 81, 222 and 473, `approve.mjs` and the V69 message still say "shown as dropped" for an undecided ask, which the screen prints as "needs your word". SKILL 101 says a redesign "starts new lists", and `asks` never resets. Gate 3 step 1 (325) still states D7 as a rule. |
+| 8 | The older reviews; no empty Disclosure; Check by position | **Partly** | Five notes added, Scams l3 and Ideology l2 say "model not recorded", and the brief (56) and the Check answer (42-43) are right. But Wealth l2, Math l1 and Stats l1 still say "(Sonnet 5.5)" on their Reviewer line. That model name was put there by the session in e86d51d (the reviewers' own text at 0ddc0ae names no model). The note directly below it says "The model was not recorded by the reviewer". The "model not recorded" exception in `REVIEWER_LINE` (designs.mjs 14) is not limited to those files, so any new review can use it. Singing l2's reviewer's "Disclosure:" was relabelled "Note" by the session; the file says so, and the verdict is fails either way. |
+| 9 | No research note in `opened.asks`; Geography's prose | **Mostly** | `ASKS_OK` excludes `docs/research/` (y3 refused). Geography's list and its prose (214) are fixed. A listed note can be taken off (y1) and `old-lessons:` cannot (y2), as intended. But the exemption is "anything that fails `ASKS_OK`", and that includes forbidden reads. `public/subjects/psychology/l1.lesson.js` listed under `asks` was taken off with no redesign and committed green (y6). The same path under `design` was refused (y7). The ask `where-places-are` still says "(docs/research/knowing-where-places-are.md)" in its `where`, which is frozen. The prose explains it. |
+| 10 | Psychology l1's lenient pass | **Done** | Worklist 65; the reviewer's file is unchanged. |
+
+Three are done, three mostly done and four partly done. Nothing is red.
+
+### I2. The attacks
+
+- **(a) Approve with made-up words** (Geography): committed. Named (104-105).
+- **(b) Remove a record or an ask through the index:** *refused* by every route:
+  - `git rm --cached` of Geography's record;
+  - a staged removal of Math's `primes-factors` with the working file restored;
+  - a partial commit;
+  - `commit -a`.
+- **(c) Reword, edit in place, flip `dropped`:**
+  - A reworded ask, an owner word on an ask edited in place, and `anarchism` flipped to dropped under its old keep word:
+    all *refused* (the flip is new).
+  - `asked.mjs --drop` with invented words: committed. Named.
+- **(d) Make a failing pilot pass** (Scams l3):
+  - faked approvals of the goal and the practice;
+  - a self-written `reviews/design.md` stamped with `fp.mjs`;
+  - `tried.mjs --owner --passed yes`;
+  - `status: "live"` and the lock.
+
+  Committed. Named.
+- **(e) Write gate 3 early** (Geography): *refused* with no approval; committed after (a). Named through (a).
+- **(f) Commit a red tier.** All three of these committed, and all are named:
+  - `--no-verify`;
+  - `git -c core.hooksPath=/dev/null`;
+  - an edited, unstaged `pre-commit`.
+
+  New and not named:
+  - **A merge.** A branch committed with the hooks off, as in a fresh clone that has not yet run `npm test`, removed
+    Math's `primes-factors`. `git merge --no-ff` into main ran no lesson tier, and the commit-msg hook does not cover
+    `docs/subjects/`. Main then validated green. A fast-forward runs no hook at all.
+  - **The push workflow catches none of this.** `npm test` at the HEAD of a `--no-verify` commit that removed an
+    ask was green (exit 0). The validator reads "the last commit" as `HEAD`, and on the runner `HEAD` is the pushed
+    commit itself.
+- **(g) Switch V69 off.** `RULES_DESIGN` was taken out, the V69 controls filtered and the pin set to 0, with a Math ask
+  removed in the same commit. It was refused with no owner line, and committed with `Owner's word: "sure"`: 142 controls
+  were green. Named (108-109).
+- **(h) Re-fingerprint a changed screen.** South America was cut and `fp` recomputed with the same words: *refused*.
+  The words edited in place: *refused*.
+- **(i) Promote a finding without reading it:** as (p).
+- **(j) Write your own record review:** it lifts the hold in (d) and (l). Named.
+- **(k) Re-stamp a rewritten lesson.** Psychology l1 was retitled, then the `Reviewed:` line was edited to the new
+  fingerprint, and `tried.mjs` accepted it. Named.
+- **(l) Drop asks on the owner's word, then change a lesson** (Wealth, faked approvals and record review). The four
+  undecided asks were dropped with words, the pilot retitled at rev 2, and the lock regenerated: *allowed*, committed.
+  Right.
+- **(m) Re-place an ask after the approval.** `--kept` on `before-you-change` was *refused*, and un-dropping by placing
+  was *refused*. The owner's own `--keep` word on a placed ask was allowed, with no reopening (SKILL 297-298). Right.
+- **(n) Rewrite a reviewed lesson and reuse the review.** Psychology l1 was retitled, and `tried.mjs` *refused* it
+  ("reviewed sha256:cb71...; the lesson is now sha256:79f5..."). Right.
+- **(o) A redesign that shrinks the lists** (Wealth). `designedOn` was moved to 2026-10-13, `research` and `design`
+  were shortened, and the pilot was retitled. *Held*: "no passing review of its own". Right.
+- **(p) A note's Read line promoted to full.** It was *refused* by commit-msg with no owner line, and committed with
+  `"sure"`. Named.
+- **(q) Clear, then re-approve.**
+  - The clear was committed. The same words through the tool were *refused*.
+  - The same words by hand on a cut screen were *refused* by V69 (new).
+  - The same words with new punctuation by hand were committed. Named as an invented quote, but the "same words"
+    check is weaker than it says (I1, item 4).
+- **(r) Replace an ask's owner word by hand without `previous`:** *refused*.
+- **(s) Hand-edit `approved.history`.**
+  - A dropped entry: *refused*.
+  - An invented entry with no `fp`: *refused* (new).
+  - An invented entry with a made-up `fp`: committed. Low: it adds a false line and removes nothing.
+- **(t) A redesign with the old review.** Moving only `designReview.date` was *refused* (new). Rewriting the review
+  file's own date line by hand lifted the hold. Named ("a review's date ... by hand").
+- **(u) A built subject's sentence changed while the approval is null:** committed, and the next commit was green.
+  Right.
+- **(v) Approve Psychology, then write another sentence into the subject record.**
+  - V80 refuses: "the subject's end result is not the sentence the owner approved".
+  - V69 holds the content too (27 topics in no part).
+  - With the approved sentence written in, V80 is green.
+- **(w) Approve, leave the subject record alone:** committed. Right.
+- **(x) `designReview` dated unlike its file:** *refused* ("the record's date is the file's").
+- **(y) Take things off `opened.asks`:**
+  - a research note listed under Psychology's `asks`: taken off, *allowed* (as intended);
+  - `old-lessons:public/subjects/psychology/`: *refused*;
+  - **a forbidden read**, the subject's own `l1.lesson.js` listed under `asks`: taken off with no redesign, *allowed*
+    (y6). Not named; I3, item 2.
+
+Two further attacks:
+- **(z2)** `lesson-tier.yml` changed to `echo skipped`: committed with no owner line.
+- **(z3)** `approved.goal.sentence` written by hand as "After this subject you can diagnose anyone ..." on a valid
+  approval: committed. V80 would then hold the subject record to a sentence the owner never saw.
+
+### I3. What the fixes broke or missed
+
+1. **The since-last-commit refusals are local only** (f, z2). They cover:
+   - an ask removed, reworded or dropped;
+   - an owner entry edited;
+   - a record deleted;
+   - content changed while held.
+
+   Each is measured against `HEAD`. It is enforced only by a pre-commit hook in a clone where `npm test` has run.
+   - A merge runs no lesson tier, and a fast-forward runs no hook. Work from another session or a fresh clone reaches
+     main unchecked, and once it is HEAD it is the baseline.
+   - On the runner, `HEAD` is the pushed commit, so the workflow can only catch shape faults.
+   - The workflow file is outside the commit-msg hook.
+
+   The skill names none of this, and says the push runs "where no session edits the runner".
+2. **A forbidden read can be erased from `opened.asks`** (y6). The exemption meant for a misfiled research note covers
+   every path that fails `ASKS_OK`, the subject's own lessons and other subjects' records included. Left in place, the
+   same read would hold the content for good, since a redesign never resets `asks`. So V69's message "held until the
+   subject is redesigned" is wrong for that list.
+3. **V71 mirrors the parts on every run** (rules-shape 462). On a built subject:
+   - A gate 4 that only fills part topics under the existing ids and titles lands alone (tried).
+   - A gate 4 that adds or renames a part is refused by V71 until the subject record follows. A subject record change
+     is held content, so gates 4 and 5, the record review and the subject record must land in one commit (tried).
+
+   This is the lock H found in V80, now in V71. The V80 fix's own logic applies: hold the subject record's parts to the
+   design's when the subject record is written. `partIds` comes from the subject record (model.mjs 31), so lessons stay
+   consistent. It is not named. Psychology will meet it if its 27 topics need new parts.
+4. **The sentence an approval carries is not bound to its screen** (z3). `approvalProblems` checks only that
+   `sentence` is text, and the fingerprint does not cover it.
+5. **An ask can be narrowed without a word** (z4; I1, item 2). This is the founding incident in small: the biases ask
+   cut from five topics to one. The screen would show it, but SKILL 211 promises a refusal.
+6. **The history and same-words checks are shallower than their text** (s2, q3).
+7. **Text** (I1, item 7) and **the reviews** (I1, item 8).
+
+### I4. The two screens the owner reads
+
+**Psychology** (`approve.mjs psychology goal --show`: 4,551 characters, 747 words):
+- *True to its record:* yes. The screen is built from the record, and the fingerprint covers what is printed.
+- *Readable:* fair. The sentence prints once. "Projection" is listed twice, as a word and as a defense mechanism. The
+  first ask prints "taught under every topic".
+- *Does the test reach every topic group?* Yes:
+  - the words, "one ordinary moment", control patterns and the next step: ten accounts;
+  - the biases and the defense mechanisms: six arguments, "name the bias or the defense mechanism at work (or none)";
+  - keeping yourself in check: three of your own moments;
+  - the mix: across all of them.
+- *Verdict:* it can go out. Its length is the owner's call (below).
+
+**Geography** (3,179 characters, 633 words):
+- *True to its record:* yes.
+- *Readable:* good. "All on two sittings at least a week apart" sits after Naming, so it is unclear which parts it governs.
+- *Does the test reach every topic group?* Yes, flags included.
+- *The sentence:* it says the doing. But it promises "say what it borders and what water it is on", and the paragraph
+  promises "what it borders, the coast or water it is on". No part of the test asks either. This is gate 2's first
+  rejection in another form: the sentence promises what the test does not check.
+- *Verdict:* it should not go out until the sentence and the test agree.
+
+### I5. The two subjects, from where they stand
+
+**Psychology** (in the app; approvals null, history empty; 27 topics, the six parts cover none; no `designReview`;
+`designedOn` 2026-10-10; l1 draft, passing on a lenient review).
+- *Now.* Green; commits land.
+- *Gate 0.* Eight asks placed, five with relayed owner words. A drop needs a new word. A narrowing does not (z4).
+- *Gate 1.* No research yet for biases in yourself, defense mechanisms or keeping emotions in check. That makes it a
+  redesign: `designedOn` moves, new research and design lists start, and `asks` stays.
+- *Gate 2.* The screen fits and its test reaches every group. Approval was possible on the scratch copy (w), and V80
+  then waits for the subject record (v).
+- *Gate 3.* The practice approval was possible on the scratch copy.
+- *Gates 4 and 5.* Part topics under the six existing ids can be committed alone. A new or renamed part brings in the
+  V71 lock (I3, item 3): gates 4 and 5, the record review dated on or after the new `designedOn`, and the subject
+  record land in one commit.
+- *Gate 6.* l1 changes, so it is reviewed again, without counting the lenient pass.
+- **Verdict:** possible in order. The last design commit is all-in-one if the parts change, and the skill does not
+  say so.
+
+**Geography** (not in the app; stopped at gate 2; approval null).
+- *Gate 0.* Four asks placed with four owner words. `opened.asks` is owner material only.
+- *Gate 2.* The sentence and the test disagree on borders and water (I4).
+- *Gate 3.* Refused until the approval (e), then possible.
+- *Gates 4 and 5.* After the practice approval.
+- *Gate 6.* The first content commit carries the subject record and the pilot, with both approvals, full coverage and a
+  passing record review. V80 and V71 apply on that write. Then the pilot is reviewed, with a waiver quoted with its
+  date.
+- **Verdict:** possible in order, once the sentence and the test agree.
+
+### I6. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. Make the since-last-commit checks hold beyond one clone:
+   - the validator takes its baseline as a parameter (default `HEAD`);
+   - the workflow checks every pushed commit against its first parent (`github.event.before` to the pushed SHA, full
+     fetch);
+   - a `pre-merge-commit` hook runs the tier;
+   - `.github/` goes under the commit-msg hook;
+   - SKILL 104-110 name the merge and the fresh clone and stop saying no session edits the runner.
+2. The `opened.asks` exemption: only a path that is not forbidden (`FORBIDDEN_EVERYWHERE` is null) may be taken off.
+   Add a control, and correct "held until the subject is redesigned" for `asks`.
+3. V71: hold the subject record's parts to the design's when the subject record is written, as V80 now does for the
+   sentence. Add controls for both sides. Otherwise, name the one-commit landing in gate 4.
+4. Refuse an ask whose `kept` loses a topic still on the topics list since the last commit, without a new owner word, as
+   SKILL 211 says. Add a control.
+5. Refuse an `approved.goal` whose `sentence` is not the `endResult` of the screen it fingerprints. Add a control.
+6. Geography: make the sentence, the paragraph and the test agree on borders and water before the screen goes out, and
+   say which test parts "two sittings a week apart" covers.
+7. Make three more checks do what they say:
+   - entries added to `approved.history` since the last commit start with the approval that stood at the last commit
+     and are not invented;
+   - "the same words" ignores punctuation and spacing;
+   - the "model not recorded" exception holds only for reviews dated 2026-10-11.
+8. Text:
+   - the standard's V80 row and data model line, the V69 row's "every principle is cited by a block", and a section 11
+     entry for fdbb6e3;
+   - "shown as dropped" at SKILL 81, 222 and 473, in `approve.mjs` and in the V69 message;
+   - SKILL 101 ("starts new lists");
+   - gate 3 step 1's D7.
+9. Reviews: Wealth l2, Math l1 and Stats l1 say "(Sonnet 5.5)", which the session inserted. Make them say "model not
+   recorded", as their notes do.
+
+For the owner:
+- GitHub branch protection on `main`: a required "lesson tier" check and no force-push. It is your setting. With fix 1,
+  it closes the merge, fresh-clone and history routes.
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Geography: should borders and water be in the promise and the test, or out of both?
+- Replacement words for the relayed words; the floor at SKILL 104-110; the undecided asks of Math 3, Singing 3 and
+  Wealth 4. (Carried over.)

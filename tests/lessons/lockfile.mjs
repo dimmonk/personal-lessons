@@ -19,15 +19,18 @@ export async function readJsonIfPresent(fileUrl) {
 // What git says when a file simply is not in the last commit (so there is no history to anchor to).
 const NOT_COMMITTED = /exists on disk, but not in|does not exist in|not a git repository|bad revision|unknown revision|invalid object name|ambiguous argument|bad object/i;
 
-// The JSON committed at HEAD for a working file, or null when it was never committed.
+// The commit the working tree is measured against: HEAD, or the ref in LESSONS_BASE (the workflow sets each pushed commit's parent).
+export const BASE = () => process.env.LESSONS_BASE || 'HEAD';
+
+// The JSON committed at the base for a working file, or null when it was never committed.
 export function readCommittedJson(fileUrl) {
   try {
-    const out = execFileSync('git', ['show', `HEAD:./${nameOf(fileUrl)}`], { cwd: dirOf(fileUrl), stdio: ['ignore', 'pipe', 'pipe'] });
+    const out = execFileSync('git', ['show', `${BASE()}:./${nameOf(fileUrl)}`], { cwd: dirOf(fileUrl), stdio: ['ignore', 'pipe', 'pipe'] });
     return JSON.parse(out.toString());
   } catch (error) {
     const stderr = error.stderr ? error.stderr.toString() : '';
     if (NOT_COMMITTED.test(stderr) || error.code === 'ENOENT') return null;
-    throw new Error(`could not read ${nameOf(fileUrl)} at HEAD: ${stderr || error.message}`);
+    throw new Error(`could not read ${nameOf(fileUrl)} at ${BASE()}: ${stderr || error.message}`);
   }
 }
 

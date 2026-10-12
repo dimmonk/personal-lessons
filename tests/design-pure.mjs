@@ -44,6 +44,8 @@ same(reviewVerdict('Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11; ope
 same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\nDisclosure: I read the record.\n`).verdict, 'disclosed', 'a disclosure');
 same(reviewVerdict(`# no verdict\nReviewer: x (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\n`).verdict, 'unreadable', 'no verdict line');
 same(reviews.psychology['reviews/l1.md'].verdict, 'passes', 'Psychology l1, reviewed again on 2026-10-12');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: x (model not recorded), 2026-10-12; opened: the learner view\nReviewed: ${FP}\n`).verdict, 'unreadable', 'an unrecorded model on any date but 2026-10-11');
+same(reviewVerdict(`Verdict: fails\n\nReviewer: x (model not recorded; an agent), 2026-10-11; opened: the learner view\nReviewed: ${FP}\n`).verdict, 'fails', 'the one exception: 2026-10-11');
 const committed = await collectCommittedDesigns(new URL('docs/subjects/', REPO));
 ok(Object.keys(committed).length >= 9 && 'geography' in committed, `the committed records are listed from git: ${Object.keys(committed).length} found`);
 

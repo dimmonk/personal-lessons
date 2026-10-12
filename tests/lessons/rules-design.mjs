@@ -121,7 +121,7 @@ export const V69 = siteRule('V69', (input, check) => {
   for (const id of ids) {
     const r = designs[id], reviews = allReviews[id] || {}, built = id in input.data.subjects, c = committedDesigns[id];
     if (!r && c && !built) { checkEach(check, id, ['the design record was deleted since the last commit: a record is never removed (its asks are the owner\'s)']); continue; }
-    const shape = [...recordProblems(id, r, research, reviews, built), ...(r && !r.error ? [...askedSinceProblems(r, c), ...openedSinceProblems(r, c), ...ownerSinceProblems(r, c), ...(built ? designSinceProblems(r, c) : [])] : [])];
+    const shape = [...recordProblems(id, r, research, reviews, built), ...(r && !r.error ? [...askedSinceProblems(r, c), ...openedSinceProblems(r, c, id), ...ownerSinceProblems(r, c), ...(built ? designSinceProblems(r, c) : [])] : [])];
     checkEach(check, id, shape.length ? shape : built ? gateProblems(input.data, id, r, input.committedLock, reviews) : []);
   }
   checkEach(check, 'approvals', blanketProblems(designs));
