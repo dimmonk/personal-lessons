@@ -2,7 +2,7 @@
 # branch's or a force-push's commits are those not on main; commits from before the commit where the gates start are skipped), the lesson
 # tier measured against that commit's first parent (what "since the last commit" means) and the owner's word on a commit that changes the
 # gates, read with the copy of the check that main held (never the pushed commit's). So an ask removed, an owner entry edited, a record
-# deleted or a gate changed with the hooks off shows on push, merge commits included; a merge of more than two parents is refused
+# deleted or a gate changed with the hooks off shows on push, merge commits included. A merge of more than two parents is refused.
 # A push that creates main (an all-zero before) is checked from the commit where the gates start; any other push whose old head is not
 # in the clone falls to the range against main (build-subject skill, "How it runs").
 name: lesson tier

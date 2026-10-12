@@ -119,7 +119,7 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   branch that built the gates lands on `main` by a fast-forward, so every commit of it has been checked where it was
   made; a fork from before the gates is rebased onto `main` or dropped. The workflow file runs from the
   pushed commit, so its own edit is held only by the owner's word in that commit and by the owner's setting on `main`:
-  a ruleset that requires this check, runs it from `main`, and forbids force-pushes); a fast-forward merge makes no commit and
+  a ruleset that requires this check, runs it from `main`, forbids force-pushes and restricts deletions); a fast-forward merge makes no commit and
   runs no hook, which only the owner's branch protection on `main` stops; an approval's history entries are the
   record's own claims (their fingerprints cannot be checked against screens that are gone; the committed prefix is what
   is held). The rest rests on honesty, and on the owner reading the record's owner fields, the review files and the

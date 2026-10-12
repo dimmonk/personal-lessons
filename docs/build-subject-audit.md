@@ -3467,3 +3467,127 @@ For the owner:
 - An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part T. The seventeenth review (2026-10-13)
+
+An independent review of 797a5f7 ("the skill's sixteenth review answered"), by an agent that did not write it, against
+part S's two fixes (S6). Line numbers are those at 797a5f7. **`npm test` is green** (exit 0): 302 design reader checks,
+21 owner-line checks, 48,520 lesson checks, 248 negative controls. Every push was simulated as in part S: a bare
+"origin" cloned from a clone of this worktree, `main` set to its starting commit, the push written as a ref update,
+unreachable objects pruned, then a fresh `--no-local` clone checked out at the pushed commit. The per-commit step was
+taken out of the pushed commit's `lesson-tier.yml` as written, with `before`, `event_name`, `ref` and `forced` filled in
+as GitHub sends them (forty zeros for a creation), its temporary files on a real path unless said otherwise, and run
+under `bash -eo pipefail`. The hook case ran in a clone with `npm run hooks`. The real records were never touched.
+
+### T1. S6's two items
+
+| # | S6 item | Status | Evidence |
+|---|---|---|---|
+| 1 | Yml: a created `main` is an all-zero `BEFORE`, not one missing from the clone | **Done** | yml 27 compares `BEFORE` with forty zeros. (fr) `main` at a docs commit A, force-pushed to a sibling B, A pruned: *red*, "a forced push after which nothing is new against main". (del) a created `main` with an unworded gate edit: *red*. (delclean) a created `main` at this branch's head: exit 0, 11 checked from 21da9cf. SKILL 115-116 ("a forced push after which nothing is new against `main` fails") holds on `main` again. |
+| 2 | Text: the standard's fallback, a dated entry for the creation rule, SKILL "How it runs", the yml head comment | **Done, with a misdated entry** | Standard section 11: "a named commit (27ab552 since round fifteen); a push that creates `main` (an all-zero before) is checked from the commit where the gates start". SKILL 116: "a push that creates `main` is checked from the commit where the gates start". Yml 6-7 name the rule and the fall-through. But the rule sits inside the entry headed "round fourteen (commits 2d0027d, 2b0b98d and the one that follows)", and those commits did not bring it: e06ed14 did, and 797a5f7 narrowed it (T4, item 1). |
+
+### T2. The seeded faults of the check's test
+
+Each fault was seeded alone into a clone's `tools/design/owner-line.mjs`; `node tests/owner-line-pure.mjs` and
+`npm run test:data` were run.
+
+- **Red (both exit 1), 21 faults:**
+  - the argv-gated exits: `if (process.argv[1]) process.exit(0);` at the top, the same just before the script guard,
+    and an exit only when `argv[1]` ends in `owner-line-pure.mjs`;
+  - an early `process.exit(0)`;
+  - the staged and the commit octopus refusals removed; an `OctopusError` exiting 0; only the first `MERGE_HEAD` head
+    read;
+  - `--no-renames` dropped from the staged, the remerge and the `--brought` readings;
+  - `LINE` set to match anything; the refusal's `process.exit(1)` set to 0;
+  - the `merge-tree` catch removed; `MERGE_HEAD` read against the process's directory; a failed `MERGE_HEAD` read
+    (against the process's directory) swallowed and read as one head;
+  - the old string-compare guard; `--brought` ignored in `main`; a merge read as `[]`; a staged merge read without
+    the automatic merge; `tools/design/` dropped from `GATED`.
+- **Green, and not faults:**
+  - `setTimeout(() => process.exit(0), 0)` at the top (as part S found: every verdict is reached synchronously);
+  - a `try`/`catch` around the correct `MERGE_HEAD` read: the read never fails, so no verdict changes.
+
+### T3. The attacks
+
+- **(a) to (z14), (oct), (oct2), (oct-br), (z13), (B), (L1m), (oct-L), (H), (m1) to (m3):** not run again.
+  `git diff --stat e06ed14 HEAD` touches only one line of the skill, the yml's range line and head comment, one line
+  of the standard and this file; `owner-line.mjs`, its test and the hooks are unchanged since e06ed14
+  (`git diff --stat 27ab552 HEAD -- tools .githooks tests` is the test alone). Parts K to S's results stand.
+- **(R1) This branch landing on `main` from d03b63f:** 15 skipped, 21da9cf to 797a5f7 (11) checked with 27ab552's
+  copy. Exit 0.
+- **(fr) `main` force-pushed from A to a sibling B, A pruned:** *red*. Fixed.
+- **(fr-held) the same with A still held by another branch:** *red* (the old head is in the clone, not an ancestor,
+  so the range falls to `main` and is empty).
+- **(del) `main` created by a hooks-off commit that empties the check and edits `rule.mjs`:** *red*, "1863517 changes
+  the gates", by 27ab552's copy.
+- **(delclean) `main` created at this branch's head:** exit 0.
+- **(L1) the landing push with that hooks-off head:** *red*.
+- **(L1sym) L1 with the step's files under macOS's `/tmp`:** *red*.
+- **(delold, new) `main` created at d03b63f:** that commit has no workflow, so nothing runs. A deletion and re-creation
+  is a rewrite: it needs the default branch moved first, and the owner's ruleset restricting deletions stops it (named).
+- **(hook) an unworded `rule.mjs` edit, hooks on:** refused.
+
+### T4. What the fix broke or missed
+
+Nothing in the gates. The yml's new condition is exact: GitHub sends forty zeros only on a creation, every forced push
+to `main` falls to a range against `main` that is empty and is refused, and a non-forced push always has its old head
+in the clone. Two text slips:
+1. **The standard's log misdates the creation rule.** Section 11 put "a push that creates `main` … is checked from the
+   commit where the gates start" into the entry headed "round fourteen (commits 2d0027d, 2b0b98d and the one that
+   follows)", that is 27ab552. The rule came in e06ed14 and was narrowed in 797a5f7. The "(27ab552 since round
+   fifteen)" note shows the entry was stretched rather than a new one written. The header should name rounds fourteen
+   to sixteen and their commits, or the two rules should get their own entry.
+2. **Yml 5 lost its full stop** when the head comment was extended: "a merge of more than two parents is refused" runs
+   into "A push that creates main". This is cosmetic; it changes no meaning.
+
+### T5. The two screens the owner reads
+
+No record, research note, reader, hook or record tool changed since 6f42ca1 (`git diff --stat 6f42ca1 HEAD` is empty on
+all of them). `approve.mjs <id> goal --show` prints Psychology at 4,551 characters (747 words) and Geography at 3,402
+characters (679 words), the same as in parts O to S. Both were read again:
+- **Psychology:** true to its record. The test reaches every topic group: the accounts, the arguments, the heated
+  moments and the next step. Readable: fair. "Projection" is both a topic and one of the defense mechanisms, and the
+  asks' words are cut at 100 characters. *Verdict:* it can go out. Its length is the owner's call.
+- **Geography:** true to its record. The test reaches every topic group, flags and distance included. *Verdict:* it
+  can go out.
+
+`docs/research/designing-a-subject.md` and the skill's "What the gates rest on" did not change. There is no new
+finding there.
+
+### T6. Closing verdict
+
+Not "nothing is left to fix", by one text item. What to fix:
+1. `docs/lesson-standard.md` section 11: date the creation rule and the 27ab552 fallback to the commits that made them
+   (e06ed14, 797a5f7), not to round fourteen's (and restore yml 5's full stop in the same commit). No gate depends on it.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, and a letterless reply reused
+  with new punctuation.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, until the owner's ruleset is in place. The workflow refuses a forced push on a branch and on
+  `main`. A deleted and re-created `main` (delold) is checked only for what it holds, which needs the default branch
+  moved first.
+- The workflow file edited with the hooks off: GitHub runs the edited copy.
+- What was opened is the session's own account.
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line. In the same class: a worded edit that narrows
+  `GATED`.
+- Commits from before the gates are checked only by the tiers at the head. A pull request or a squash of this branch
+  is red, and it lands by fast-forward.
+- A worded change to `owner-line.mjs` judges the pushes after it, not the rest of its own push.
+
+For the owner:
+- A ruleset on `main`: it requires the "lesson tier" check, runs it from `main`, forbids force-pushes and restricts
+  deletions. (Carried over.) The skill's "How it runs" names the first three, not deletions.
+- 797a5f7 answers part R's and S's question about "just finish everything" in its message: said in chat on
+  2026-10-12, the earlier dates being the session's error. Only you can confirm the words are yours.
+- Land this branch by fast-forward. The fix changes nothing the landing push decides (R1 green, L1 red).
+- `pilot-fixes-2026-10-12` fails as a fork from before the gates. Rebase it onto the new `main`, or drop it. (Carried
+  over.)
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

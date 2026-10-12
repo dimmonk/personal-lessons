@@ -806,8 +806,11 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 
 - **2026-10-12, round fourteen** (commits 2d0027d, 2b0b98d and the one that follows): a merge of more than two parents
   is refused by the owner-line check, in the hook and on push, since git has no reading of what such a merge changed
-  itself; the push's fallback copy of the check, for a ref that has none, is a named commit (27ab552 since round fifteen); a push that creates `main` (an all-zero before) is checked from the commit where the gates start; the check runs
+  itself; the push's fallback copy of the check, for a ref that has none, is the named commit 2d0027d; the check runs
   as a script by any path, symlinks included, and its own test fails when a run stops before its end.
+- **2026-10-12, rounds fifteen and sixteen** (commits e06ed14 and 797a5f7): the fallback copy is 27ab552; a push that
+  creates `main` (GitHub's all-zero before) is checked from the commit where the gates start, and any other push is
+  checked against `main`.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.
