@@ -1,8 +1,11 @@
 // node tools/design/tried.mjs <subject> <lesson> --owner --words "<their words>" --where "<where>" --passed yes|no --confused "<…>" --waste "<…>" --come-back yes|no
 // node tools/design/tried.mjs <subject> <lesson> --stand-in reviews/<lesson>.md --words "<the owner's words for going on without their try>" --where "<where>"
 // Writes one lesson's entry into the design record's `tried` (build-subject skill, gates 6 and 7). An owner's try replaces a stand-in's.
-// The stand-in's verdict is read by V69 from the review file's first line; a review with a Disclosure line does not count.
-import { readRecord, writeRecord, ownerWordFrom } from './record.mjs';
+// The stand-in's verdict is read by V69 from the review file's first line; a review with a Disclosure line does not count. The entry
+// carries the fingerprint of the lesson as it was tried; once the lesson changes, the entry no longer passes.
+import { readRecord, writeRecord, ownerWordFrom, REPO } from './record.mjs';
+import { loadFromPublic } from '../../tests/lessons/load.mjs';
+import { lessonFingerprint } from '../../tests/lessons/fingerprint.mjs';
 
 const yes = v => v === 'yes' ? true : v === 'no' ? false : null;
 
@@ -30,7 +33,11 @@ async function main(argv) {
   if (!args) throw new Error('usage: see the head of tools/design/tried.mjs');
   const { record, prose } = await readRecord(args.subject);
   if (!record.lessons || !(args.lesson in record.lessons)) throw new Error(`the record of ${args.subject} has no block for lesson ${args.lesson}`);
-  await writeRecord(args.subject, { ...record, tried: { ...record.tried, [args.lesson]: args.entry } }, prose);
+  // the entry is for the lesson as it is now: its fingerprint goes with it, and a rewritten lesson is tried again
+  const data = await loadFromPublic(new URL('public/', REPO));
+  if (!data.subjects[args.subject] || !data.subjects[args.subject].lessons[args.lesson]) throw new Error(`lesson ${args.lesson} of ${args.subject} is not in the app: a try is of a built lesson`);
+  const fp = lessonFingerprint(data, args.subject, args.lesson);
+  await writeRecord(args.subject, { ...record, tried: { ...record.tried, [args.lesson]: { ...args.entry, fp } } }, prose);
   console.log(`${args.subject}/${args.lesson}: tried by ${args.entry.by} on ${args.entry.date}`);
 }
 

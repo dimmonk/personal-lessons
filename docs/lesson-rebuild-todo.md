@@ -28,8 +28,8 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 - [x] One current standard (749 lines, the rules in force, the vocabulary of 2026-10-12 in 8.1); the old file is `docs/lesson-standard/history-v1.md`; 209 citations rewritten
 - [x] Evidence marked in all nine notes: each finding decides or supports; every decides finding read in full (Psychology 2, Math 3, Stats 4, Scams 2, Wealth 2, Civics 2, Singing 2, Ideology 3), several corrected by the full text
 - [x] The nine records in the new shape; your words recorded on Psychology (the need-to-know terms and the biases, understanding others and yourself) and your restore decision on the Psychology and Ideology topics; the gate 0 lists of every subject from your course documents and the old units
-- [x] Psychology: paragraph and 27 topics signed off ("perfect. this is basically a lesson plan.")
-- [x] Geography: paragraph signed off ("finish these 2"); the topics list written under it from the regions and your three changes, for you to see
+- [ ] Psychology: paragraph and 27 topics were signed off ("perfect. this is basically a lesson plan."); the approval was cleared on 2026-10-12 because the screen the skill binds now also carries the sentence and the test: the printed screen goes to you again
+- [ ] Geography: the paragraph was signed off ("finish these 2"); cleared for the same reason; the printed screen (with the topics list written from the regions and your three changes) goes to you
 - [ ] **(now)** The skill finished by the review loop (owner, 2026-10-12: "do not continue until you sign off on a finished skill. so work, review, fix, audit, review"): part D's eleven verdicts and eight fixes applied (the record grows gate by gate; owner words with a source, the approval bound to the printed screen; asks removed or reworded refused; a Disclosure voids a review; evidence marks read from the notes; opened per stage; one lesson per part; the two hooks; the standard corrected; the returns note marked and R8 fixed); the evidence for the process researched (`docs/research/designing-a-subject.md`) and folded in; then a fresh review until nothing is left, then the sign-off
 - [ ] Psychology's and Geography's gate 2 screens printed and put in front of you in the morning (the paragraph, the topics, the sentence, the test, the drops), your word recorded with its source
 - [ ] Psychology redesigned through the finished skill on the signed-off screen: gate 1 researched for the new ground (biases in yourself, keeping emotions in check, defense mechanisms), parts covering all 27 topics and the restored asks, lesson blocks, the pilot; the practice in three lines to you
@@ -61,14 +61,15 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 - [ ] The other seven subjects' paragraphs and topics signed off, their dropped topics decided (Math, Wealth, Singing), Ideology's restored topics designed in
 - [ ] The five failing pilots fixed from their reviews (raw material on the branch `pilot-fixes-2026-10-12`), re-reviewed, deployed
 - [ ] Each subject's other lessons, each with a passing stand-in review, tested and deployed subject by subject
-- [ ] The misreading of Pan and Rickard's "response congruency" in `docs/research/review-after-lessons.md` (R8) corrected as the Math note was
+- [x] The misreading of Pan and Rickard's "response congruency" in `docs/research/review-after-lessons.md` (R8) corrected, and the note marked (2026-10-12)
+- [ ] Singing's pilot reviewed again by a fresh stand-in: its review of 2026-10-11 carries a Disclosure and does not count
 - [ ] The research document (`docs/learning-science.md`) retired to history once every record cites the per-subject notes only
 
 ## Needs your decision
 - [ ] Seven paragraphs and their topics lists to read when you have time: Ideology, Math, Stats, Scams, Wealth, Civics, Singing (in the chat of 2026-10-12); one line each, and a word on each dropped topic
 - [ ] Geography's topics list (written under your signed-off paragraph): say if anything is missing or wrong, and the approval resets
 - [ ] Whenever you have time: try any lesson on your phone; your words overwrite the stand-in review
-- [x] Psychology: "On track, record my words on Psychology"; the topics: "perfect. this is basically a lesson plan." (2026-10-12)
-- [x] Geography: "i already signed off psychology and geography so finish these 2" (2026-10-12)
+- [x] Psychology: "On track, record my words on Psychology"; the topics: "perfect. this is basically a lesson plan." (2026-10-12; in the record's prose; the approval is re-asked on the printed screen)
+- [x] Geography: "i already signed off psychology and geography so finish these 2" (2026-10-12; your word on the subject's ask; the screen approval is re-asked)
 - [x] "restore all the psychology and ideology topics" (2026-10-12), recorded on each item
 - [x] The vocabulary: subject, goal, topics, part, lesson, check, item, asks, review ("that holds. make this part of the app", 2026-10-12; standard 8.1)

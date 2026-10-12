@@ -111,7 +111,7 @@
       "id": "F3",
       "note": "acting-on-your-own-money",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "F4",
@@ -123,19 +123,19 @@
       "id": "F6",
       "note": "acting-on-your-own-money",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "F5",
       "note": "acting-on-your-own-money",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "F10",
       "note": "acting-on-your-own-money",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "F11",
@@ -365,11 +365,14 @@
         "date": "2026-10-11",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
-      }
+      },
+      "fp": "sha256:b6d0fe2b74f857b552ef2e4b6e9e26546e7ed3ddf72d5b8cc771943d001049d3"
     }
   },
   "opened": {
-    "asks": [],
+    "asks": [
+      "old-lessons:public/subjects/wealth/"
+    ],
     "research": [
       "docs/research/acting-on-your-own-money.md",
       "docs/learning-science.md",

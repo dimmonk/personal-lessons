@@ -101,7 +101,7 @@
       "id": "M2",
       "note": "learning-everyday-math",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "M3",
@@ -113,9 +113,8 @@
     {
       "id": "M4",
       "note": "learning-everyday-math",
-      "decides": true,
-      "read": "full",
-      "choice": "from lesson 3 on, part of every lesson is mixed, unlabeled problems of all kinds so far, after the kind has been taught on its own, instead of a block of one kind per lesson."
+      "decides": false,
+      "read": "abstract"
     },
     {
       "id": "M5",
@@ -133,7 +132,7 @@
       "id": "M7",
       "note": "learning-everyday-math",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "M8",
@@ -343,11 +342,15 @@
         "date": "2026-10-11",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
-      }
+      },
+      "fp": "sha256:6a99a59719ea06509038046667cec53f94dcc8603e4863847f65a2bb8b2ede14"
     }
   },
   "opened": {
-    "asks": [],
+    "asks": [
+      "old-lessons:public/subjects/math/",
+      "docs/lesson-rebuild-todo.md (the subject blurb)"
+    ],
     "research": [
       "docs/research/learning-everyday-math.md",
       "docs/research/review-after-lessons.md",

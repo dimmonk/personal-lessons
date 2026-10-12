@@ -65,7 +65,7 @@ a warm-up for singers. *Read: summaries.* **Design:** a short straw or hum warm-
 claimed to make anyone sing better. **Supports.**
 
 **S6. Spaced, short, regular practice** (general evidence: `docs/research/review-after-lessons.md`, R1-R6). **Design:** short
-daily sessions; the weekly review for Singing is singing, not questions. **Supports.**
+daily sessions; the weekly review for Singing is singing, not questions. *Read: the notes cited; no source of its own.* **Supports.**
 
 ## What the evidence does not settle
 - No controlled study was found of a months-long program for adult beginners with pitch accuracy as the outcome. The

@@ -12,7 +12,35 @@
         "words": "On track, record my words on Psychology",
         "where": "chat, 2026-10-12, relayed by the deployment session"
       },
-      "kept": null,
+      "kept": [
+        "narcissist: grandiose and vulnerable, and the clinical bar",
+        "gaslighting",
+        "manipulative",
+        "DARVO",
+        "love-bombing then devaluation",
+        "borderline",
+        "histrionic",
+        "psychopath and sociopath",
+        "toxic",
+        "trauma and traumatized",
+        "triggered",
+        "boundaries",
+        "codependent",
+        "bipolar",
+        "OCD",
+        "projection",
+        "cognitive dissonance and self-justification",
+        "confirmation bias",
+        "motivated reasoning",
+        "sunk cost",
+        "one act read as a trait (the fundamental attribution error)",
+        "defense mechanisms, briefly: denial, projection, rationalization, displacement, minimizing",
+        "one act or a pattern: a bad moment with an ordinary reason, against a pattern",
+        "a pattern of control told as if it were nothing",
+        "keeping yourself in check in the moment: name what you feel, pause, ask what else would explain it, ask instead of guess",
+        "the next step: ask, watch, set a limit, get help",
+        "all of it mixed, on real accounts and on your own"
+      ],
       "dropped": false
     },
     {
@@ -117,13 +145,13 @@
       "id": "O3",
       "note": "reading-other-people",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "O4",
       "note": "reading-other-people",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "O5",
@@ -140,9 +168,8 @@
     {
       "id": "O8",
       "note": "reading-other-people",
-      "decides": true,
-      "read": "full",
-      "choice": "the practice method: many new accounts judged with feedback after each and one short card per idea, rather than a card-led course about biases."
+      "decides": false,
+      "read": "abstract"
     },
     {
       "id": "O10",
@@ -336,11 +363,16 @@
         "date": "2026-10-11",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
-      }
+      },
+      "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973"
     }
   },
   "opened": {
-    "asks": [],
+    "asks": [
+      "psychology/Identifying-Psychological-Patterns-Practical-Course.md",
+      "old-lessons:public/subjects/psychology/",
+      "chat, 2026-10-12 (the owner on the Psychology paragraph)"
+    ],
     "research": [
       "docs/research/reading-other-people.md",
       "docs/research/review-after-lessons.md",

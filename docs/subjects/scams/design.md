@@ -90,27 +90,26 @@
     {
       "id": "SC3",
       "note": "scams-judging-and-acting",
-      "decides": true,
-      "read": "full",
-      "choice": "the reading share (85% of every lesson is deciding, at most two short screens of reading) and the returns over weeks as part of the treatment, instead of a reading course taught once."
+      "decides": false,
+      "read": "abstract"
     },
     {
       "id": "SC4",
       "note": "scams-judging-and-acting",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "SC5",
       "note": "scams-judging-and-acting",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "SC6",
       "note": "scams-judging-and-acting",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "SC7",
@@ -128,7 +127,7 @@
       "id": "SC9",
       "note": "scams-judging-and-acting",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "R2",
@@ -341,11 +340,14 @@
         "date": "2026-10-11",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
-      }
+      },
+      "fp": "sha256:89b8016ef43c3002eee51c4e7373bdf7f19a4ac06da797514f9c2cec46593bf4"
     }
   },
   "opened": {
-    "asks": [],
+    "asks": [
+      "old-lessons:public/subjects/scams/"
+    ],
     "research": [
       "docs/research/scams-judging-and-acting.md",
       "docs/research/review-after-lessons.md",

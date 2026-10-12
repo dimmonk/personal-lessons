@@ -10,7 +10,8 @@ import { collectSite } from './site.mjs';
 import { DEFAULTS } from './paths.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
-import { FIXTURE_FILES, FIXTURE_DESIGNS, FIXTURE_IDS, FIXTURE_REVIEWS, FIXTURE_RESEARCH } from '../fixtures/fixture-subject/design.mjs';
+import { FIXTURE_FILES, FIXTURE_DESIGNS, FIXTURE_IDS, FIXTURE_REVIEWS, FIXTURE_RESEARCH, withTriedFps } from '../fixtures/fixture-subject/design.mjs';
+import { lessonFingerprint } from './fingerprint.mjs';
 
 const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
 
@@ -18,7 +19,8 @@ const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
 export async function baseline() {
   const loaded = await loadFromPublic(DEFAULTS.publicDir, { extra: FIXTURE_FILES.map(f => new URL(f, FIXTURE)) });
   const data = { ...loaded, subjects: Object.fromEntries(FIXTURE_IDS.map(id => [id, plain(loaded.subjects[id])])) };
-  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs: FIXTURE_DESIGNS, committedDesigns: {}, reviews: FIXTURE_REVIEWS, research: FIXTURE_RESEARCH, held: null, committedHeld: null };
+  const designs = withTriedFps(FIXTURE_DESIGNS, (id, l) => lessonFingerprint(data, id, l));
+  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs, committedDesigns: {}, reviews: FIXTURE_REVIEWS, research: FIXTURE_RESEARCH, held: null, committedHeld: null };
 }
 
 const redRules = result => [...new Set(result.failures.map(f => f.rule))].sort();
@@ -26,10 +28,13 @@ const sameList = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]
 
 // The input a control runs on: the baseline with its fault. The lock is regenerated from the faulty data, so that a content fault
 // does not also turn the lock rule (V46) red, unless the control is about the lock itself.
+// The tries in the design records carry the fingerprint of the lesson as tried, so they are recomputed from the faulty data too, unless the
+// control is about a lesson rewritten after its try (keepTriedFps).
 function faultyInput(base, control) {
   const data = control.data ? control.data(base.data, { setIn, updateIn, removeIn }) : base.data;
   const lock = control.keepLock ? base.lock : lockEntries(data);
-  const input = { ...base, data, lock };
+  const designs = control.keepTriedFps ? base.designs : withTriedFps(base.designs, (id, l) => data.subjects[id] && data.subjects[id].lessons[l] ? lessonFingerprint(data, id, l) : base.designs[id].tried[l].fp);
+  const input = { ...base, data, lock, designs };
   return control.input ? control.input(input) : input;
 }
 

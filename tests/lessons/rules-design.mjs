@@ -7,8 +7,8 @@
 // passed; and no lesson is live without a passing entry. Owner words carry a source, and the same words on two subjects are a blanket.
 import { siteRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
-import { GATE_FIELDS, LEARNING_KINDS, askedProblems, askedSinceProblems, unplacedAsks, principleProblems, openedProblems, goalProblems, practiceProblems,
-  approvalProblems, partProblems, blockProblems, uncoveredTopics, triedShapeProblems, triedPasses, isText } from './design-shape.mjs';
+import { GATE_FIELDS, LEARNING_KINDS, askedProblems, askedSinceProblems, unplacedAsks, principleProblems, openedProblems, openedSinceProblems, goalProblems,
+  practiceProblems, approvalProblems, partProblems, blockProblems, uncoveredTopics, designReviewProblems, designReviewed, triedShapeProblems, triedPasses, lessonFp, isText } from './design-shape.mjs';
 export { LEARNING_KINDS, triedPasses } from './design-shape.mjs';
 export { READ_LEVELS } from './designs.mjs';
 
@@ -47,7 +47,18 @@ function recordProblems(id, r, research, reviews, built) {
   problems.push(...approvalProblems(r));
   if (reached >= 4) problems.push(...partProblems(r));
   if (reached >= 5) problems.push(...blockProblems(r));
-  problems.push(...triedShapeProblems(r, reviews));
+  problems.push(...designReviewProblems(r, reviews), ...triedShapeProblems(r, reviews));
+  return problems;
+}
+
+// a built subject's design fields change only on the owner's word: gate 3's after the goal's approval, gates 4 and 5's after the practice's
+const changedFields = (r, c, fields) => fields.filter(f => JSON.stringify(r[f]) !== JSON.stringify(c[f]));
+function designSinceProblems(r, committed) {
+  if (!committed) return [];
+  const problems = [];
+  const g3 = changedFields(r, committed, GATE_FIELDS[3]), g45 = changedFields(r, committed, [...GATE_FIELDS[4], ...GATE_FIELDS[5]]);
+  if (g3.length && !r.approved.goal) problems.push(`gate 3 changed (${g3.join(', ')}) since the last commit without the owner's word on gate 2's screen`);
+  if (g45.length && !r.approved.practice) problems.push(`gates 4 and 5 changed (${g45.join(', ')}) since the last commit without the owner's word on the practice`);
   return problems;
 }
 
@@ -68,7 +79,7 @@ function gateProblems(data, id, r, committedLock, reviews) {
     const b = r.lessons[l.id];
     if (!b) problems.push(`lesson ${l.id} is built and has no block in the design record (gate 5)`);
     else if (b.part !== l.part) problems.push(`lesson ${l.id} is for part "${l.part}" and its block is for part "${b.part}"`);
-    if (l.status === 'live' && !triedPasses(r.tried[l.id], reviews)) problems.push(`lesson ${l.id} is live without a passing entry in tried: the owner's try (passed, and they would come back), or a stand-in review whose verdict passes (gates 6 and 7)`);
+    if (l.status === 'live' && !triedPasses(r.tried[l.id], reviews, lessonFp(data, id, l.id))) problems.push(`lesson ${l.id} is live without a passing entry in tried for the lesson as it is now: the owner's try that passed the check, or a stand-in review whose verdict passes, on this version (gates 6 and 7)`);
   });
   if (!committedLock) return problems;   // no last commit to measure against (a seeded control without one): only the record is held
   const { lessons, subject } = changedSince(data, id, committedLock);
@@ -78,11 +89,12 @@ function gateProblems(data, id, r, committedLock, reviews) {
     ...openedProblems(id, r).filter(p => !p.startsWith('the design record has no')).map(p => `${p}: the content is held until the subject is redesigned`),
     ...unplacedAsks(r).map(a => `something the owner asked for is in no part: ${a} (gate 0)`),
     ...uncoveredTopics(r).map(t => `a topic the owner signed off is in no part: ${t} (gates 2 and 4)`),
-    ...(r.approved.goal && r.approved.practice ? [] : ['the owner has not approved the goal and the practice method (gates 2 and 3)'])
+    ...(r.approved.goal && r.approved.practice ? [] : ['the owner has not approved the goal and the practice method (gates 2 and 3)']),
+    ...(designReviewed(r, reviews) ? [] : ['the record has no passing review of its own (gate 5: someone who did not write it reads it against the skill before the pilot is built)'])
   ];
   if (holds.length) return [...problems, ...holds.map(h => `content was written or changed (${what}) while ${h}`)];
   const beyond = lessons.filter(l => l !== r.pilot && data.subjects[id].lessons[l].role !== 'baseline');
-  if (beyond.length && !triedPasses(r.tried[r.pilot], reviews)) problems.push(`lessons past the pilot (${beyond.join(', ')}) were written before the pilot's try or review passed (gate 6)`);
+  if (beyond.length && !triedPasses(r.tried[r.pilot], reviews, lessonFp(data, id, r.pilot))) problems.push(`lessons past the pilot (${beyond.join(', ')}) were written before the pilot's try or review passed on the pilot as it is now (gate 6)`);
   return problems;
 }
 
@@ -104,10 +116,11 @@ function blanketProblems(designs) {
 
 export const V69 = siteRule('V69', (input, check) => {
   const designs = input.designs || {}, committedDesigns = input.committedDesigns || {}, research = input.research || {}, allReviews = input.reviews || {};
-  const ids = [...new Set([...Object.keys(input.data.subjects), ...Object.keys(designs)])];
+  const ids = [...new Set([...Object.keys(input.data.subjects), ...Object.keys(designs), ...Object.keys(committedDesigns)])];
   for (const id of ids) {
-    const r = designs[id], reviews = allReviews[id] || {}, built = id in input.data.subjects;
-    const shape = [...recordProblems(id, r, research, reviews, built), ...(r && !r.error ? askedSinceProblems(r, committedDesigns[id]) : [])];
+    const r = designs[id], reviews = allReviews[id] || {}, built = id in input.data.subjects, c = committedDesigns[id];
+    if (!r && c && !built) { checkEach(check, id, ['the design record was deleted since the last commit: a record is never removed (its asks are the owner\'s)']); continue; }
+    const shape = [...recordProblems(id, r, research, reviews, built), ...(r && !r.error ? [...askedSinceProblems(r, c), ...openedSinceProblems(r, c), ...(built ? designSinceProblems(r, c) : [])] : [])];
     checkEach(check, id, shape.length ? shape : built ? gateProblems(input.data, id, r, input.committedLock, reviews) : []);
   }
   checkEach(check, 'approvals', blanketProblems(designs));

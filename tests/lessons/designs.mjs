@@ -11,7 +11,7 @@ export const REVIEWS_DIR = 'reviews';
 export const VERDICTS = ['passes', 'fails'];
 export const READ_LEVELS = ['full', 'abstract', 'summary'];
 const VERDICT_LINE = /^Verdict: (passes|fails)\s*$/;
-const REVIEWER_LINE = /^Reviewer: /m;
+const REVIEWER_LINE = /^Reviewer: .+\d{4}-\d\d-\d\d/m;   // who, which model, the date
 const DISCLOSURE_LINE = /^Disclosure: /m;
 // a finding opens a paragraph as **SC1. …** or **R2. …**
 const FINDING = /^\*\*([A-Z]{1,3}\d{1,2})\./gm;
@@ -37,14 +37,18 @@ export function reviewVerdict(text) {
 
 export const findingIds = text => [...text.matchAll(FINDING)].map(m => m[1]);
 
-// how far a finding was read, from its "*Read: …*" line: 'full' for a full text or manuscript, 'abstract', else 'summary'
-function readLevel(paragraph) {
+// how far a finding was read, from its "*Read: …*" line. The clause before the first semicolon says how the finding's own source was
+// read; companions come after it. Within that clause the weakest source named sets the level (a finding whose own clause names a full
+// text and an abstract was read as an abstract); 'summary' when it names neither a full text nor an abstract.
+export function readLevel(paragraph) {
   const m = paragraph.match(/\*Read:([^*]*)\*/);
   if (!m) return null;
-  const s = m[1].replace(/\s+/g, ' ').toLowerCase();
-  if (/full text|full-text|manuscript|read in full|in full/.test(s)) return 'full';
-  if (/abstract/.test(s)) return 'abstract';
-  return 'summary';
+  const s = m[1].replace(/\s+/g, ' ').split(';')[0].toLowerCase();
+  const full = /full text|full-text|manuscript|read in full|in full/.test(s), abstract = /abstract/.test(s);
+  const summary = /summar|press release|review of|secondary|record only|record page|wwc page|not reach|unreachable|not reachable/.test(s);
+  if (summary) return 'summary';
+  if (abstract) return 'abstract';
+  return full ? 'full' : 'summary';
 }
 
 // { ids, marks: { [id]: { decides: true | false | null, read: level | null } } } for one note: a finding's paragraph runs to the next finding

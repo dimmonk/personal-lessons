@@ -532,3 +532,255 @@ it stands.
 
 After these, the owner's asks for Math, Singing and Wealth go on their drops lists beside the paragraphs. That is the
 owner's work, not a fix to the skill.
+
+## Part E. The second review (2026-10-12)
+
+An independent review of e86d51d ("the skill reviewed and rebuilt on its findings"), by an agent that did not write it,
+against part D's verdicts and fixes. Line numbers are `SKILL.md`'s at e86d51d. `npm run test:lessons` is green (48,520
+checks; 191 seeded faults). Every attack below was run on a scratch copy (`git archive HEAD`, its own `git init`, the
+hooks switched on with `core.hooksPath`), never on the real records.
+
+What is better, briefly. A record now grows gate by gate: Geography is green at gate 2, and gate 3's fields are refused
+before `approved.goal` (tried). The fingerprint covers the paragraph, the topics, the sentence and the test. `kept` names
+topics, and an ask removed or reworded since HEAD is refused (tried). Notes carry Decides/Supports marks, and V69 compares
+each principle's mark and read level with its note. A `Disclosure:` line voids a review. `opened` has one list per stage,
+with allow-lists for gates 1 to 7. Every part has exactly one block. The standard's D3 errors are fixed. Two hooks exist.
+What is left: every owner field is still written by the session through tools that take any words, and five new holes
+let a fixed rule be stepped round.
+
+### E1. B1 to B11
+
+| # | Pass condition (part D) | The lines now | Verdict | What would make it pass |
+|---|---|---|---|---|
+| B1 Can each gate fail? | gate 7 gets a worked rejection; say per gate who applies the rejection | 96-99 ("Who applies each rejection"); 412-413 (gate 7's example) | **Pass** | The "independent review of the record" that applies gates 1 to 5 (96-98, 354-356) has no field, so whether it ran cannot be seen (E3, list 1, item 13). |
+| B2 Does the evidence decide? | V69 reads each finding's mark and Read line and refuses a mismatch; a field for the choice; the returns note marked | 212-219, 140; `design-shape.mjs` 84-89; `designs.mjs` 41-60 | **Partial** | `readLevel` returns `full` when any source on the Read line was read in full. Scams' SC3 ("Lain et al. 2024 abstract and §8 ... Lain 2022 abstract only") and Math's M1 ("Barbieri ... only as its abstract") still pass as decides/full, which was D4's own example. A finding with no Read line (G7, M10, C10, S6, D16) accepts any `read` a record claims. The last finding's span runs to the end of the file, through "What the evidence does not settle". The notes are not covered by the commit-msg hook, so the evidence V69 compares against is edited freely. To pass: read each source's level, and refuse `full` on a decides finding whose Read line names an abstract or summary; refuse a cited finding with no Read line; end the span at the next heading. |
+| B3 Does it template? | holds for new subjects | 316-321, 105-108 | **Pass** | Unchanged. The fixture still cites both principles from every block, and its topics are its part titles. |
+| B4 Who reviews? | a Disclosure voids a review; the review names its reviewer and the files it opened | `stand-in-review.md` 25-28, 50-53; `designs.mjs` 31-36 | **Partial** | The Disclosure is read. The Reviewer line is checked only as `^Reviewer: ` anywhere in the file, not as "who, which model, date; opened: files". Four Reviewer lines (Psychology, Math, Stats and Wealth) were written into the 2026-10-11 reviews by the committing session on 2026-10-12. Psychology l1 is the only passing review; its line says what it opened "is in its notes below", and the notes list no file. Scams l3's reviewer read "the design record's opening" and `l3.lesson.js` with no Disclosure (it fails anyway). Singing l2 was voided, not re-run. To pass: parse the Reviewer line, check its files against the reviewer's row of the table (109), and re-run Psychology l1 by a reviewer that writes its own line. |
+| B5 Is the approval real? | one screen bounds the whole message; `endResult` and `test` under the fingerprint | 73-80, 258-265; `design-shape.mjs` 28-32, 121-122; `approve.mjs` 15-37 | **Partial** | `endResult` and `test` are under the fingerprint. The bound is not the screen. `goalProblems` and `approve.mjs` measure goal, topics, sentence and test (Psychology 2,409, Geography 2,413), while the printed screen with its headings and drops is **4,325 and 3,103 characters** (tried). Line 261 says that is "the finding", and the tool lets it through. The drops are wrong at gate 2 (E4, item 1), and they are outside the fingerprint. To pass: measure and fingerprint the printed screen as `approve.mjs --show` prints it. |
+| B6 Is it one document? | fix the standard's errors | 115-116; `docs/lesson-standard.md` | **Pass** | One new contradiction: section 2 sends the writer's old material to `opened.design`, which V69 refuses there (tried); the skill (108) and V69 use `opened.writing`. |
+| B7 What does "blind" mean? | the designer's files named in the brief, `opened` checked against May-open, one list per stage | 100-114; `design-shape.mjs` 95-113 | **Partial** | Four lists exist, with allow-lists for `research`, `design` and `writing`. `asks` has none: `public/app/lessons/ask.js` and `docs/learner-view/psychology-l1.md` pass there (tried). `opened` is not compared with the last commit. Deleting Math's two engine paths from `opened.design` clears the content hold they cause (tried). The reviewer's reads are not checked (B4). All nine records have `opened.asks: []`, although gate 0 says the list is written "from the sources (`opened.asks`)" (177). To pass: allow-list `asks`; refuse removals from `opened` since the last commit; require `opened.asks` when `asked` is non-empty. |
+| B8 Does it match the code? | every field asked for is checked, and the reverse | 120-123: "Every field is asked for by a gate below and checked by V69" | **Partial** | E3: 19 asked for and unchecked (21 at part D; several closed and new ones found), 3 checked and not asked for. |
+| B9 Are the owner's asks must-keep? | `asked` compared with the last commit; `kept` names topics; owner words carry a source | 174-198; `design-shape.mjs` 35-71 | **Partial** | Removal and rewording against HEAD are refused (tried). Three holes remain. (1) **Launder in two commits:** deleting an unbuilt subject's `design.md` passes V69 and the hook (`ids` comes from the data and the working records only), and recreating it next commit without the ask passes too (tried on Geography's `flags`). (2) `when`, `where` and `owner` of an ask can be changed silently, and `asked.mjs --drop --words "drop flags" --where "chat, 2026-10-12"` drops an ask on invented words (tried). (3) `kept` accepts any topic on the list: all eight Psychology asks "kept" by the first topic passes (tried). Geography's `where-places-are` still carries "i already signed off psychology and geography so finish these 2" as the owner's word: B9(c) of part D, unchanged. To pass: compare every field of every ask with every committed version (or forbid deleting a record), and replace the blanket line. |
+| B10 Paragraph and topics signed off before any plan, with the drops, bound to the text? | a record valid at gate 2; later gates refused before `approved.goal`; `approve.mjs` prints and fingerprints the exact screen | 67-72, 241-265; `rules-design.mjs` 18-28 | **Partial** | It holds for a subject not yet in the app (tried both ways). It fails for a subject **in** the app: `stagingProblems` skips the approval checks when `built`, so Psychology's practice and parts were rewritten with no approval and V69 stayed green (tried). Psychology is the first subject to go through. The printed drops are wrong at gate 2 and are not in the fingerprint (B5, E4 item 1). To pass: for a built subject, refuse a change since the last commit to gates 3 to 5's fields while the approvals before them are missing; fix and fingerprint the drops. |
+| B11 Can the session waive a gate for itself? | owner words only as quotes the tools check; V69 refuses unsourced changes to `asked`, `approved` and `tried`; a pre-commit hook; the owner's word in a commit that changes the gates | 85-93; `.githooks/*`; `package.json` `hooks` | **Fail** | The results of attacks (a) to (g) follow the table. |
+
+The B11 attacks, on the scratch copy:
+
+- **(a) Approve a goal with made-up words.** `approve.mjs geography goal --words "yes this is fine go ahead" --where
+  "chat, 2026-10-12"` was accepted, V69 was green, and the commit went in. *Nothing stopped it.* The blanket rule stops only
+  the identical words (lower-cased and trimmed) on a second subject. "Yes this is fine go ahead." on Scams passed.
+- **(b) Remove an ask.** *Stopped in one commit* by V69 ("removed since the last commit"), and renaming the id is
+  stopped too. *Not stopped in two:* delete `docs/subjects/geography/design.md` (green, committed), then restore it
+  without `flags` (green, committed).
+- **(c) Reword an ask.** *Stopped* (V69). Changing its `when`, `where` or `owner` is *not* stopped.
+- **(d) Make a failing pilot pass.** `tried.mjs scams l3 --owner --words "fine" --where "chat, 2026-10-12" --passed yes
+  --confused nothing --waste nothing --come-back yes`, with fake approvals of the goal and the practice, let Scams' l3
+  (review: fails) be changed and marked `live`. Green, and committed. *Nothing stopped it.*
+- **(e) Write gate 3 into a gate 2 record.** *Stopped* on Geography before an approval ("gate 3 was written before the
+  owner's word"). *Not stopped* once (a) had faked the approval, and *never stopped* for a built subject (Psychology).
+- **(f) Commit a red lesson tier.** *Stopped* by the pre-commit hook. `git commit --no-verify` committed it. The hooks
+  are per-clone opt-in (`npm run hooks`), so a fresh clone or a cloud session has none.
+- **(g) Change `rules-design.mjs` without an owner line.** *Stopped* by commit-msg. With an invented line
+  (`Owner's word: "sure" (chat, 2026-10-12)`) it committed. Removing `...RULES_DESIGN` from `rules-index.mjs` and skipping
+  the V69 controls in `negative-controls.mjs` switched V69 off: two unprotected files, a green tier (140 controls), and no
+  owner line needed. The hooks themselves (`.githooks/*`) were emptied and committed with no owner line.
+
+### E2. Part D's D5 list
+
+1. **A record valid at each gate**: *partly done.* Gate by gate for a subject not yet in the app, yes (Geography green;
+   gate 3 refused before the approval). Not for a subject in the app: its record's gates 3 to 5 change with no approval
+   (B10). Psychology's stale parts are not shown as "gate 4 not passed". They show only as a content hold, which fires
+   when content changes.
+2. **Owner words with a source**: *partly done.*
+   - Done: `--words` and `--where` are required; `approve.mjs --show` prints a screen; `endResult` and `test` are
+     fingerprinted; both approvals were cleared.
+   - Not done: words reused from elsewhere are refused only for identical approvals. The drops are outside the
+     fingerprint and wrong at gate 2. The date is the tool's date, not the day the owner spoke.
+   - Not done: Geography's blanket line is still on an ask. Psychology's cleared approval words ("On track, record my
+     words on Psychology") were moved onto the `need-to-know-and-biases` ask.
+3. **Close the gate 0 holes**: *mostly done.* Removal and rewording against HEAD are refused, and `kept` names topics.
+   Still open: delete and recreate, the other fields of an ask, and any topic counting as cover (B9).
+4. **A Disclosure does not pass**: *partly done.* Code done. The Reviewer line is unchecked in form. Singing l2 was not
+   re-run. Four Reviewer lines were written after the fact.
+5. **Hold the owner-gated files**: *partly done.* Both hooks exist and work when switched on. They are opt-in and
+   bypassable, the owner line is not checked against anything, and the protected set leaves out the files that switch V69
+   off (B11 g).
+6. **Fix the standard**: *done*, except one new contradiction: section 2's `opened.design`.
+   - Done: the V72 and V80 rows, section 2's mirror, 8.1, 3.2 and section 1's order.
+   - Done: all nine missing rules are back (4.x, 3.7, 3.9, 9.1).
+   - Done: three revision entries.
+7. **Read the evidence marks in code**: *done, with a permissive parser* (B2). `review-after-lessons.md` is marked, and
+   R8 is corrected to say what Pan & Rickard define.
+8. **Check `opened`**: *mostly done* (B7). Four lists and three allow-lists. Still open: `asks` is unchecked, the lists
+   are editable after the fact, and all nine `opened.asks` are empty.
+
+### E3. The record shape, three ways (at e86d51d)
+
+**Asked for by the skill, unchecked by V69 (19):**
+1. Gate 0, written "from the sources (`opened.asks`)" (177): all nine records have `opened.asks: []`, and V69 passes it.
+2. Gate 0, "an item is never removed" (178): deleting an unbuilt record and recreating it passes. `when`, `where` and
+   `owner` of an ask are not compared.
+3. Gate 0, `kept` "the topics ... that cover it" (180-181): any topic on the list counts.
+4. Every owner word "with the date ... they said them" (81-82): the tools stamp today's date, accept `--where "chat"`,
+   and the blanket rule covers approvals only, by exact match.
+5. Gate 1, borrowing a kind's principles "without saying so and why" (211): no field.
+6. Gate 1, "a record may not say full where the note read an abstract" (216-217): the parser counts any full source as
+   full, and a finding with no Read line accepts any claim (B2).
+7. Gate 2, "the screen is under 3,000 characters" (260-261): the printed screen is not what is measured (B5).
+8. Gate 2, "every dropped item on it has been put in front of them" (278-279): `shown` is computed wrongly at gate 2,
+   kept out of the fingerprint, and never compared.
+9. "Nothing past this gate is started until the owner's words are on it" (244-245), for a subject in the app (B10).
+10. Gate 3, each `delivery` item "exists in the app or is planned" (314): strings only.
+11. Gate 4, every topic and kept ask in a part (339): for a record not yet in the app, checked only at the first lesson
+    commit (as a content hold), so gates 4 and 5 and the record's review can pass without it.
+12. Gate 4, `form` before the parts: uncheckable.
+13. Gate 5, "an independent review of the record ... found nothing left to fix" (354-356, 366-367): no field.
+14. Gates 5 and 6, a built lesson's check against its block's: unchecked.
+15. Gates 6 and 7, a try or review is of the lesson as tried: `tried` carries no fingerprint or `rev`. Psychology's l1 was
+    rewritten, relocked and set `live` on its 2026-10-11 review, green (tried).
+16. Gates 6 and 7, the Reviewer line's form, its files against the reviewer's row, and "a second review ... by a
+    different reviewer" (`stand-in-review.md` 15-16, 51-52): unchecked.
+17. Auditing, "a lesson that goes is an ask of the owner's" (425-426): no field.
+18. "What may be opened" (100): `asks` has no allow-list, and `opened` can be edited afterwards to clear a hold.
+19. "The commit-message hook that asks for the owner's word on any change to the skill, V69 or the tools" (91-92): the
+    protected set leaves out `rules-index.mjs`, `run.mjs`, `validate-lessons.mjs`, `negative-controls.mjs`,
+    `controls-table.mjs`, `fingerprint.mjs`, the notes, `.githooks/` and `package.json`.
+
+Closed since part D: the owner's try fields, the Disclosure, "every part has a block", the `choice` field, the note's
+mark against the record's, `endResult` and `test` under the fingerprint, one lesson per part, a record valid at gate 2,
+and `kept` as topics.
+
+**Checked by V69, V71 or V80, not in the skill's shape (3):**
+1. The grammar of a research note: a finding opens `**SC1.`, the mark is `**Decides:**` or `**Supports`, and the Read
+   line is `*Read: …*`, whose words decide the level ("manuscript", "in full" and "full text" make it `full`).
+2. A minimum of 10 characters on most text fields.
+3. The subject record's mirror of `endResult` (V80), and of `parts` and `complete` (V71). The skill's record names only
+   `readingShare`'s mirror (149).
+
+**Real records that fail the skill while V69 passes them (9):**
+1. All nine: `opened.asks` is empty, although every ask names a source.
+2. Geography `where-places-are`: the owner's word is the blanket line part D named.
+3. Psychology `need-to-know-and-biases`: the owner's word is the cleared goal approval's words. Seven owner words on
+   Psychology and Ideology are sourced "relayed by the deployment session", not where the owner said them.
+4. Psychology: all 27 topics and 8 asks are in no part (each part's `topics` is `[]`), yet gates 3 to 5 are filled; the
+   printed gate 2 screen is 4,325 characters. Geography's is 3,103.
+5. Ideology (3 asks), Math (3), Singing (3) and Wealth (4): asks in no part. All eight built records have both approvals
+   null with gates 3 to 5 filled (held, not refused).
+6. Math: `opened.design` still lists the engine's `ask.js` and `drill.js`. Deleting those two lines clears the hold.
+7. Psychology l1, the only passing review: the Reviewer line was added afterwards and names no files. Its pilot serves
+   part A, which now covers no topic.
+8. Scams l3: the reviewer read the design record's opening and the lesson's data files, and the review has no
+   Disclosure.
+9. Scams SC3 and Math M1: decides/full on Read lines that name abstracts for part of the finding.
+
+### E4. What the fixes broke or missed
+
+1. **The gate 2 screen lists kept asks as dropped.** `approve.mjs`'s `dropsOf` uses `unplacedAsks`, which counts an ask
+   as covered only when a *part* covers its topics. At gate 2 there are no parts, so every ask prints under "What you
+   asked for that this design drops", and `shown` records them all. Tried on Geography: `flags` and `world-first` were
+   kept by their topics and still printed as drops. The screen the owner is about to sign tells them the design drops
+   what it keeps.
+2. **A review is not bound to what was reviewed.** `triedPasses` reads the entry and the verdict, never the lesson's
+   fingerprint, so a pilot rewritten after a passing review keeps its pass (tried on Psychology l1).
+3. **Laundering by deletion.** V69's subject list is `data.subjects` plus the working records, and the HEAD comparison
+   needs a working record, so an unbuilt record can be deleted and recreated smaller (tried).
+4. **Holds that clear by editing the report.** `openedProblems` reads only the working `opened` (tried on Math).
+5. **V69 can be switched off without the owner.** `rules-index.mjs` and `negative-controls.mjs` are outside the hook's
+   list (tried). The owner line is a regex. e86d51d's own line ("do not continue until you sign off on a finished skill")
+   is a standing instruction, and it would pass for any future change.
+6. **The standard against V69.** Section 2's old material goes to `opened.design` (refused there); the skill and V69
+   say `opened.writing`.
+7. **The skill against its note.**
+   - The first finding, "practice and checks aligned to the real task produce most of the gain (D1)" (43), overstates D1.
+     D1 shows large effects on the aligned test and small ones beyond it.
+   - D4 compares active classes with lectures, not doing with reading (45).
+   - D7 is stated as a rule (48-49, 323-324) where the note marks it Supports and calls it a judgement call, and gate 4
+     does not say so (56).
+   - D4's **Decides:** makes "would they come back" a persistence signal "not evidence the lesson teaches", yet the
+     owner's try passes only with `comeBack: true` (395; `triedPasses`).
+   - D11 suggests a stand-in pass rest on "no unresolved shown defect rather than a claimed gain". `stand-in-review.md`
+     46-47 requires that Gain names an ability, the part the skill calls "proof of nothing" (433).
+8. **Seeded faults that prove less than their names.**
+   - "a live lesson whose stand-in review carries a Disclosure" and "a review file that does not open with its verdict and
+     its reviewer" inject the token `disclosed` or `unreadable`. No fault runs `reviewVerdict` on text.
+   - Every note-mark fault injects marks. None runs `noteMarks` or `readLevel`.
+   - "a goal screen longer than one screen" pads `goal`, never the printed screen.
+   - The blanket fault copies words exactly.
+   - No fault covers `collectCommittedDesigns`.
+9. **Waivers.** One waiver ("keep going. just finish everything and don't wait on my read", 2026-10-11) sits on seven
+   subjects. The blanket rule ignores waivers, and the skill does not say whether a waiver carries to a new subject.
+10. **The worklist.** `docs/lesson-rebuild-todo.md` lines 31-32 still mark both paragraphs "signed off", quoting
+    "finish these 2". Its first open item is not the next sign-off owed (88-89).
+
+### E5. The two subjects through the gates, on paper
+
+**Psychology** (in the app; both approvals null; pilot l1 passes its review).
+- *Gate 0.* Eight asks: five carry an owner word and three are undecided; `opened.asks` is empty.
+  - The skill demands each ask be kept by topics or dropped on the owner's word. `asked.mjs --kept` makes that
+    possible today, since the 27 topics exist.
+  - It also demands the list come from the sources. V69 does not check either.
+  - The carried-over "On track" on `need-to-know-and-biases` should be replaced; nothing demands it.
+- *Gate 1.* The restored ground (biases in yourself, defense mechanisms) needs evidence, because O8 was the finding that
+  cut biases. The skill demands new research (209-211); V69 cannot. Possible.
+- *Gate 2.* Psychology's screen fails the skill twice, but approval is still possible: `approve.mjs` allows it (2,409
+  counted).
+  - The printed screen is 4,325 characters; by line 261 that is the finding: the subject is too big or the list too
+    wordy.
+  - The drops list shows all eight asks even after `kept` is set (E4 item 1), so the owner is asked to keep things the
+    topics already keep.
+  - The test and the sentence were written for the old six parts, so the gate 2 rejection ("the parts do not add up")
+    will bite at gate 4.
+- *Gates 3 to 5.* Nothing in V69 stops the session rewriting the parts and blocks before the owner answers (tried). The
+  skill forbids it; V69 does not.
+  - Covering 27 topics probably means new parts. That changes the subject record's `parts` (V71), which is content, so
+    it is held until both approvals are in and every topic and ask is covered. Then it is allowed.
+  - The record review before the pilot (354-356) has no field.
+- *Gate 6.* The l1 pilot's 2026-10-11 pass stays valid whatever l1 becomes (E4 item 2), so lessons past the pilot could
+  open on a review of a lesson that no longer exists. The skill (391) intends a fresh review; V69 does not demand it.
+- **Verdict:** possible as the skill stands, but two of V69's answers are wrong for this subject: the screen it lets
+  through and the pilot pass it keeps.
+
+**Geography** (not in the app; stopped at gate 2; approval null).
+- *Gate 0.* Four asks, all with owner words and none kept. `where-places-are` carries the blanket line. Placing them by
+  topics is possible (`world-first`, `flags` and `one-line` have topics of the same words).
+- *Gate 1.* Done (G2 and G5 decide, both full).
+- *Gate 2.* Approval is possible, but on a screen that misreports what is dropped.
+  - The printed screen is 3,103 characters, over the bound.
+  - After `kept` is set, all four asks still print as drops. The owner would read that the design drops "the world
+    first" and "flags", which are its first and sixteenth topics.
+  - `approve.mjs` accepts it: 2,413 counted.
+- *Gate 3.* Refused until `approved.goal` (tried). The tap on a map with no names goes on `delivery` and must be built
+  before the pilot. V69 sees only a string.
+- *Gates 4 and 5.* V69 does not check topic coverage while the subject is not in the app, so a gap shows only when the
+  first lesson is committed (as a hold). Possible.
+- *Gate 6.* The pilot commit makes it a built subject. V69 then needs the whole record, both approvals, every ask and
+  topic covered, and `opened` clean. A stand-in review needs the owner's waiver words: the skill does not say whether the
+  2026-10-11 waiver carries over, and V69 accepts it.
+- **Verdict:** possible, provided E4 item 1 is fixed before the screen is printed.
+
+### E6. Closing verdict
+
+What to fix, ranked:
+1. Compute the gate 2 drops from `kept` (topics), not from parts, and fingerprint the drops with the screen.
+2. Measure the printed screen, as `approve.mjs --show` prints it, against the 3,000-character bound.
+3. Bind each `tried` entry to the lesson's fingerprint and `rev`: a changed lesson needs a new try or review.
+4. For a subject in the app, refuse a change since the last commit to gates 3 to 5's fields while the earlier approval
+   is missing.
+5. Refuse deleting a design record, and compare every field of `asked`, plus `opened` and `tried`, with the committed
+   record.
+6. Put every file that can switch V69 off, and the research notes, under the commit-msg hook. Switch the hooks on for
+   every clone, or run the tier where commits cannot skip it.
+7. Read levels per source: refuse `full` for a decides finding whose Read line names an abstract or summary, and refuse
+   a cited finding with no Read line. End a finding's span at the next heading.
+8. Fix the records:
+   - list gate 0's sources in all nine `opened.asks`;
+   - replace Geography's blanket line and Psychology's carried-over "On track";
+   - re-source the relayed words.
+9. Check the Reviewer line's form and files against the reviewer's row. Re-run Psychology l1's and Singing l2's reviews.
+10. Standard section 2: the writer's old material goes in `opened.writing`.
+11. Restate D1, D4 and D7 as the note does. Make `comeBack` and the stand-in's Gain recorded signals, or mark both as
+    judgement calls against D4 and D11.
+12. Seeded faults that read real text: a review file with a Disclosure line, a mixed Read line, and an over-long printed
+    screen.
+13. Add a field for gate 5's independent record review. Say whether a waiver carries to another subject.
+14. Fix the worklist: lines 31-32, and the next sign-off as its first open item.

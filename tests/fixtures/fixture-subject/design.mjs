@@ -5,7 +5,7 @@ import { fingerprint } from '../../lessons/fingerprint.mjs';
 // the one research note of the test subjects: its findings, each with its mark and what was read
 export const FIXTURE_RESEARCH = { 'umbrella-days': { ids: ['U1', 'U2', 'U3'], marks: { U1: { decides: true, read: 'full' }, U2: { decides: false, read: 'abstract' }, U3: { decides: false, read: 'summary' } } } };
 // the stand-in reviews of the test subjects: { [subjectId]: { 'reviews/<lesson>.md': verdict } }
-export const FIXTURE_REVIEWS = { fixture: { 'reviews/l2.md': 'passes' } };
+export const FIXTURE_REVIEWS = Object.fromEntries(['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview'].map(id => [id, { 'reviews/design.md': 'passes', ...(id === 'fixture' ? { 'reviews/l2.md': 'passes' } : {}) }]));
 
 // an owner's word on a subject: their reply quoted, with where; every subject has its own words (the same words twice is a blanket)
 const word = (subject, what, date) => ({ date, words: `${subject}: ${what}, on track.`, where: `chat, ${date}` });
@@ -21,7 +21,7 @@ const PRINCIPLES = [
 function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026-10-10') {
   const checks = Object.fromEntries(parts.map(p => [p.id, p.check]));
   const topics = parts.map(p => p.title.toLowerCase());
-  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test };
+  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test, drops: [] };
   return {
     subject, asked: text.asked || [{ id: 'the-thing', words: 'teach me to do the thing', when: '2026-10-09', where: 'the brief', owner: null, kept: [topics[0]], dropped: false }],
     kinds, principles: PRINCIPLES,
@@ -31,6 +31,7 @@ function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026
     readingShare: text.readingShare, form: text.form || 'The real moment\'s own form: the input as it arrives, the answer the learner would give.',
     parts: parts.map(p => ({ ...p, topics: [p.title.toLowerCase()] })), lessons: Object.fromEntries(Object.entries(lessons).map(([id, part]) => [id, { part, does: text.does || text.practice, feedback: text.feedback || 'Right or wrong and the reason, after each answer.', check: checks[part], why: ['U1', 'U2'] }])),
     pilot, approved: { goal: approved(subject, goalScreen, date), practice: { ...word(subject, 'the practice', date), fp: fingerprint(text.practice) } },
+    designReview: { date, file: 'reviews/design.md' },
     tried
   };
 }
@@ -147,6 +148,8 @@ export const INTERVIEW_DESIGN = record('interview', ['facts'], {
   { id: '4', title: 'A news story', check: 'Two new stories: who decided and whether it was theirs to decide; both right.' }
 ], { l1: '1', l2: '2', l3: '3', l4: '4' }, 'l1', { l1: owner('2026-10-11'), l2: owner('2026-10-11'), l3: owner('2026-10-11'), l4: owner('2026-10-11') }, '2026-10-11');
 
+// the entries of `tried` carry the fingerprint of the lesson as tried; negative-controls.mjs fills it from the loaded data (withTriedFps)
+export const withTriedFps = (designs, fpOf) => Object.fromEntries(Object.entries(designs).map(([id, r]) => [id, { ...r, tried: Object.fromEntries(Object.entries(r.tried).map(([l, e]) => [l, { ...e, fp: fpOf(id, l) }])) }]));
 export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN, account: ACCOUNT_DESIGN, pressure: PRESSURE_DESIGN, interview: INTERVIEW_DESIGN };
 // the files of the test subjects, in load order, relative to this folder
 export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 'items-timing.js', 'l1.lesson.js', 'l2.lesson.js',

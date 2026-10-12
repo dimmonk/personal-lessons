@@ -225,7 +225,7 @@ knowledge, a well-designed problem, groups, older learners; Sinha & Kapur, *RER*
 phone does not meet; *read: press summaries only*. Stating objectives in place of practice (D3). Judging a lesson by
 how it feels, the learner's or the builder's (D4, D11). Training general thinking (D12). Long explanations before the
 first try have no direct test against short ones; what the evidence supports is explanation that is complete but
-followed at once by guided practice (D5, `learning-science.md` section 5). Strength: as cited. **Supports.**
+followed at once by guided practice (D5, `learning-science.md` section 5). Strength: as cited. *Read: the sources as the notes cited read them; no source of its own.* **Supports.**
 
 ## What the evidence does not settle
 

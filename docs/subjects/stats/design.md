@@ -78,7 +78,7 @@
       "id": "C1",
       "note": "judging-statistical-claims",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "C2",
@@ -105,7 +105,7 @@
       "id": "C6",
       "note": "judging-statistical-claims",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "C7",
@@ -118,13 +118,13 @@
       "id": "C8",
       "note": "judging-statistical-claims",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "C9",
       "note": "judging-statistical-claims",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "C10",
@@ -319,11 +319,14 @@
         "date": "2026-10-11",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
-      }
+      },
+      "fp": "sha256:d2c1e900786b6426538a9ea577e3e6351576b15c40129922402dfe406c84b1c9"
     }
   },
   "opened": {
-    "asks": [],
+    "asks": [
+      "old-lessons:public/subjects/stats/"
+    ],
     "research": [
       "docs/research/judging-statistical-claims.md",
       "docs/research/review-after-lessons.md",

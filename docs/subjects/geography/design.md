@@ -12,7 +12,28 @@
         "words": "i already signed off psychology and geography so finish these 2",
         "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
-      "kept": null,
+      "kept": [
+        "the world first: the continents, the oceans and the big regions, on one map",
+        "the map of the United States: the coasts, the four regions, the mountain ranges and the big rivers",
+        "the states, region by region: the West, the Midwest, the South, the Northeast",
+        "the big US cities, west and east of the Mississippi",
+        "the state capitals the news uses for the state",
+        "Canada's provinces and territories; Mexico, Central America and the Caribbean",
+        "South America",
+        "Europe, west and north",
+        "Europe, east and south",
+        "the Middle East and North Africa",
+        "West and Central Africa",
+        "East and Southern Africa",
+        "South and Central Asia",
+        "East Asia, Southeast Asia and the Pacific",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "how far: the distance band and the travel band between two places",
+        "placing a place you have never heard of, from the clues a story gives",
+        "the whole world, mixed"
+      ],
       "dropped": false
     },
     {
@@ -83,7 +104,7 @@
       "id": "G4",
       "note": "knowing-where-places-are",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "G5",
@@ -162,7 +183,10 @@
   },
   "tried": {},
   "opened": {
-    "asks": [],
+    "asks": [
+      "docs/research/knowing-where-places-are.md (the cloud session's plan)",
+      "docs/lesson-rebuild-todo.md (the three changes, 2026-10-12)"
+    ],
     "research": [
       "docs/research/knowing-where-places-are.md",
       "docs/research/review-after-lessons.md",

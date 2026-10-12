@@ -136,7 +136,7 @@
       "id": "C4",
       "note": "civics-interview-and-news",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "C5",
@@ -515,7 +515,9 @@
   },
   "tried": {},
   "opened": {
-    "asks": [],
+    "asks": [
+      "old-lessons:public/subjects/civics/"
+    ],
     "research": [
       "docs/research/civics-interview-and-news.md",
       "docs/research/review-after-lessons.md",

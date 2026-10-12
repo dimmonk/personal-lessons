@@ -111,7 +111,7 @@ procedure gets its own drill. **Supports.**
 **C10. General evidence that applies unchanged** (`docs/research/review-after-lessons.md` and `docs/learning-science.md`):
 practice in the form of real use transfers best (R8, Pan & Rickard 2018); mixed practice for telling related problems
 apart (R9, P22, and Sana, Yan & Kim 2017 on statistical concepts); feedback after each answer (R7, P19, P20); commit
-before seeing the answer (P15); spaced returns with new cases, scheduled by the app (R1–R6, P24). **Supports.**
+before seeing the answer (P15); spaced returns with new cases, scheduled by the app (R1–R6, P24). *Read: the notes cited; no source of its own.* **Supports.**
 
 ## What the evidence does not settle
 

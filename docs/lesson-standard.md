@@ -46,7 +46,7 @@ Three fields of the subject record mirror the design record: `endResult` and `re
 
 **Old material.** A writer may take raw material (a story, a number, a line) from the tag `old-lessons`'s version of
 **this subject only** (`git show old-lessons:<path>`), once it fits a gate 5 block, and lists it in the record's
-`opened.design`. Never another subject's lessons (the skill's "What may be opened"). Nothing is migrated.
+`opened.writing`. Never another subject's lessons (the skill's "What may be opened"). Nothing is migrated.
 
 ## 3. The data model
 

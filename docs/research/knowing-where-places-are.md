@@ -89,7 +89,7 @@ what a named place is near, and that is what this subject teaches. **Supports.**
 
 **G7. No study was found on learning how far apart places are.** The design's bet is the one the rest of the app rests
 on: produce an answer (a distance band, a travel-time band), see the right one at once with the two places lit on the
-map, and come back on later days (R1, R2, R7). The pilot and the end check are the evidence. **Supports.**
+map, and come back on later days (R1, R2, R7). The pilot and the end check are the evidence. *Read: no source: none was found; the notes cited.* **Supports.**
 
 ## What the evidence does not settle
 - How many taps a place needs before it holds: successive relearning until right in three sessions (R2) is used because

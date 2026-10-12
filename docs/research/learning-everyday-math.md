@@ -109,7 +109,7 @@ conclusions were not read. *Read: search summaries.* **So** most of M1–M8 is b
 (gate 6) is the real test for an adult on a phone. **Supports.**
 
 **M10. Spaced return of new problems** (R1–R6 in `review-after-lessons.md`): a problem type comes back in later
-sessions, as a new problem to solve (R8), until it is solved right in several sessions. **Supports.** (Would decide that wrong kinds come back in later
+sessions, as a new problem to solve (R8), until it is solved right in several sessions. *Read: the notes cited; no source of its own.* **Supports.** (Would decide that wrong kinds come back in later
 sessions as new problems; it rests on R2 and R4, read only as abstracts and summaries: a judgement call.)
 
 ## What the evidence does not settle

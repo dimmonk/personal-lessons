@@ -164,19 +164,19 @@
       "id": "L3",
       "note": "judging-political-labels",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "L4",
       "note": "judging-political-labels",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "L5",
       "note": "judging-political-labels",
       "decides": false,
-      "read": "abstract"
+      "read": "summary"
     },
     {
       "id": "L6",
@@ -376,11 +376,16 @@
         "date": "2026-10-11",
         "words": "keep going. just finish everything and don't wait on my read",
         "where": "chat, 2026-10-11"
-      }
+      },
+      "fp": "sha256:bb0cd7a0d8266c1eb568c31ebb0a1760bf26036ea4fb9f87d8b9eab010dd1b95"
     }
   },
   "opened": {
-    "asks": [],
+    "asks": [
+      "political-ideologies/Identifying-Political-Ideologies-Practical-Course-v3.md",
+      "old-lessons:public/subjects/ideology/",
+      "chat, 2026-10-12 (relayed by the deployment session)"
+    ],
     "research": [
       "docs/research/judging-political-labels.md",
       "docs/research/review-after-lessons.md",

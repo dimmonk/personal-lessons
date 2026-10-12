@@ -44,7 +44,9 @@ const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { 
 const asDesign = (input, lessonKey, patch, more = {}) => ({
   ...input, ...more, designs: { ...input.designs, [F]: { ...input.designs[F], ...patch } }, committedLock: lessonKey ? changed(input.lock, lessonKey) : input.committedLock });
 const design = input => input.designs[F];
-const failingReview = { by: 'stand-in', date: '2026-10-11', review: 'reviews/l1.md', waived: { date: '2026-10-11', words: 'keep going', where: 'chat, 2026-10-11' } };
+// the lock without one subject's entries, for a control that removes that subject
+const lockOf = (input, drop) => ({ ...input.lock, subjects: Object.fromEntries(Object.entries(input.lock.subjects).filter(([k]) => k !== drop)), lessons: Object.fromEntries(Object.entries(input.lock.lessons).filter(([k]) => !k.startsWith(`${drop}/`))) });
+const failingReview = { by: 'stand-in', date: '2026-10-11', review: 'reviews/l1.md', fp: 'sha256:' + '3'.repeat(64), waived: { date: '2026-10-11', words: 'keep going', where: 'chat, 2026-10-11' } };
 const padding = Array.from({ length: 200 }, () => 'The chance is a number.').join(' ');
 
 export const CONTROLS = [
@@ -77,8 +79,8 @@ export const CONTROLS = [
     input: input => asDesign(input, 'fixture/l1', { asked: [{ ...design(input).asked[0], kept: null, owner: { date: '2026-10-12', words: 'keep it', where: 'chat, 2026-10-12' } }] }) },
   { rule: 'V69', name: 'an ask removed since the last commit', input: input => asDesign(input, null, { asked: [] }, { committedDesigns: { [F]: design(input) } }) },
   { rule: 'V69', name: 'an ask reworded since the last commit', input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], words: 'teach me a bit of the thing' }] }, { committedDesigns: { [F]: design(input) } }) },
-  { rule: 'V69', name: 'an undecided ask with no content changed (allowed: the record is valid, the content waits)', green: true,
-    input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], kept: null }] }) },
+  { rule: 'V69', name: 'an ask the owner said to keep, not placed yet, with no content changed (allowed: the record is valid, the content waits)', green: true,
+    input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], kept: null, owner: { date: '2026-10-12', words: 'keep it', where: 'chat, 2026-10-12' } }] }) },
   { rule: 'V69', name: 'an ask dropped on the owner\'s words, with a lesson changed (allowed)', green: true,
     input: input => asDesign(input, 'fixture/l1', { asked: [{ ...design(input).asked[0], kept: null, dropped: true, owner: { date: '2026-10-12', words: 'drop it', where: 'chat, 2026-10-12' } }] }) },
   { rule: 'V69', name: 'the topics list changed after the owner approved it', input: input => asDesign(input, null, { topics: [...design(input).topics, 'the wind'] }) },
@@ -102,8 +104,25 @@ export const CONTROLS = [
   { rule: 'V69', name: 'a review file that does not open with its verdict and its reviewer', input: input => ({ ...input, reviews: { ...input.reviews, [F]: { 'reviews/l2.md': 'unreadable' } } }) },
   { rule: 'V69', name: 'an owner\'s try that records no pass, confusion, waste or coming back',
     input: input => asDesign(input, null, { tried: { ...design(input).tried, l1: { by: 'owner', date: '2026-10-12', words: 'fine', where: 'chat, 2026-10-12' } } }) },
-  { rule: 'V69', name: 'a live lesson the owner tried and would not come back to',
+  { rule: 'V69', name: 'a live lesson the owner tried and did not pass',
+    input: input => asDesign(input, null, { tried: { ...design(input).tried, l1: { ...design(input).tried.l1, passed: false } } }) },
+  { rule: 'V69', name: 'a live lesson the owner would not come back to (allowed: recorded, not a pass condition)', green: true,
     input: input => asDesign(input, null, { tried: { ...design(input).tried, l1: { ...design(input).tried.l1, comeBack: false } } }) },
+  { rule: 'V69', name: 'a live lesson rewritten since it was tried (its fingerprint moved)', keepTriedFps: true,
+    data: (d, h) => h.setIn(d, lesson('l1', 'why'), 'A forecast is a chance, and a chance is a number you can read.') },
+  { rule: 'V69', name: 'a try with no fingerprint of the lesson tried', input: input => asDesign(input, null, { tried: { ...design(input).tried, l1: (({ fp, ...e }) => e)(design(input).tried.l1) } }) },
+  { rule: 'V69', name: 'a lesson changed in a subject whose record has no passing review of its own', input: input => asDesign(input, 'fixture/l1', { designReview: null }) },
+  { rule: 'V69', name: 'a record review whose file does not exist', input: input => asDesign(input, null, { designReview: { date: '2026-10-12', file: 'reviews/none.md' } }) },
+  { rule: 'V69', name: 'a design record deleted since the last commit', input: input => ({ ...input, designs: Object.fromEntries(Object.entries(input.designs).filter(([k]) => k !== 'chorus')), data: { ...input.data, subjects: Object.fromEntries(Object.entries(input.data.subjects).filter(([k]) => k !== 'chorus')) }, lock: lockOf(input, 'chorus'), committedDesigns: { chorus: input.designs.chorus } }) },
+  { rule: 'V69', name: 'an opened list that lost a path since the last commit', input: input => asDesign(input, null, { opened: { ...design(input).opened, research: [] } }, { committedDesigns: { [F]: design(input) } }) },
+  { rule: 'V69', name: 'an ask whose where changed since the last commit', input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], where: 'elsewhere' }] }, { committedDesigns: { [F]: design(input) } }) },
+  { rule: 'V69', name: 'a lesson changed in a subject whose opened.asks is empty', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, asks: [] } }) },
+  { rule: 'V69', name: 'a built subject whose gate 3 changed since the last commit with no word on gate 2',
+    input: input => asDesign(input, null, { approved: { ...design(input).approved, goal: null }, practice: design(input).practice + ' And again.' }, { committedDesigns: { [F]: design(input) } }) },
+  { rule: 'V69', name: 'a built subject whose parts changed since the last commit with no word on the practice', also: ['V71'],
+    input: input => asDesign(input, null, { approved: { ...design(input).approved, practice: null }, parts: design(input).parts.map(p => ({ ...p, title: p.title + '!' })) }, { committedDesigns: { [F]: design(input) } }) },
+  { rule: 'V69', name: 'an ask waiting for the owner\'s word that was not on the approved screen',
+    input: input => asDesign(input, null, { asked: [...design(input).asked, { id: 'the-wind', words: 'teach me the wind too', when: '2026-10-12', where: 'chat', owner: null, kept: null, dropped: false }] }) },
   { rule: 'V69', name: 'a lesson block whose end check is not its part\'s',
     input: input => asDesign(input, null, { lessons: { ...design(input).lessons, l2: { ...design(input).lessons.l2, check: 'Three forecasts; all right.' } } }) },
   { rule: 'V69', name: 'a part with no lesson block', input: input => asDesign(input, null, { lessons: { l1: design(input).lessons.l1 } }) },
@@ -129,14 +148,14 @@ export const CONTROLS = [
   { rule: 'V69', name: 'a lesson changed in a subject whose gates 2 to 5 opened the engine\'s code', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, design: ['public/app/lessons/ask.js'] } }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose writer opened another subject\'s lessons', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, writing: ['public/subjects/chorus/l1.lesson.js'] } }) },
   { rule: 'V69', name: 'a record of a subject not yet in the app whose designer opened another subject\'s record',
-    input: input => ({ ...input, designs: { ...input.designs, ghost: { ...design(input), subject: 'ghost', tried: {}, opened: { ...design(input).opened, design: ['docs/subjects/ghost/design.md', 'docs/subjects/chorus/design.md'], writing: [] } } } }) },
+    input: input => ({ ...input, designs: { ...input.designs, ghost: { ...design(input), subject: 'ghost', tried: {}, designReview: null, opened: { ...design(input).opened, design: ['docs/subjects/ghost/design.md', 'docs/subjects/chorus/design.md'], writing: [] } } } }) },
   { rule: 'V69', name: 'a record of a subject not yet in the app, stopped after gate 2 (allowed)', green: true,
-    input: input => ({ ...input, designs: { ...input.designs, ghost: (({ practice, feedback, delivery, readingShare, form, parts, lessons, pilot, ...r }) => ({ ...r, subject: 'ghost', tried: {}, approved: { goal: null, practice: null }, asked: r.asked.map(a => ({ ...a, kept: null })), opened: { ...r.opened, design: ['docs/subjects/ghost/design.md'], writing: [] } }))(design(input)) } }) },
+    input: input => ({ ...input, designs: { ...input.designs, ghost: (({ practice, feedback, delivery, readingShare, form, parts, lessons, pilot, ...r }) => ({ ...r, subject: 'ghost', tried: {}, designReview: null, approved: { goal: null, practice: null }, asked: r.asked.map(a => ({ ...a, kept: null })), opened: { ...r.opened, design: ['docs/subjects/ghost/design.md'], writing: [] } }))(design(input)) } }) },
   { rule: 'V69', name: 'a record of a subject not yet in the app, with gate 3 written before the owner\'s word on gate 2',
-    input: input => ({ ...input, designs: { ...input.designs, ghost: (({ form, parts, lessons, pilot, ...r }) => ({ ...r, subject: 'ghost', tried: {}, approved: { goal: null, practice: null }, asked: r.asked.map(a => ({ ...a, kept: null })), opened: { ...r.opened, design: ['docs/subjects/ghost/design.md'], writing: [] } }))(design(input)) } }) },
+    input: input => ({ ...input, designs: { ...input.designs, ghost: (({ form, parts, lessons, pilot, ...r }) => ({ ...r, subject: 'ghost', tried: {}, designReview: null, approved: { goal: null, practice: null }, asked: r.asked.map(a => ({ ...a, kept: null })), opened: { ...r.opened, design: ['docs/subjects/ghost/design.md'], writing: [] } }))(design(input)) } }) },
   { rule: 'V69', name: 'a record of a subject not yet in the app, with gate 2 written and gate 1 missing',
-    input: input => ({ ...input, designs: { ...input.designs, ghost: (({ kinds, principles, opened, practice, feedback, delivery, readingShare, form, parts, lessons, pilot, ...r }) => ({ ...r, subject: 'ghost', tried: {}, approved: { goal: null, practice: null }, asked: r.asked.map(a => ({ ...a, kept: null })) }))(design(input)) } }) },
-  { rule: 'V69', name: 'a record of a subject not yet in the app, with no goal', input: input => ({ ...input, designs: { ...input.designs, ghost: { ...design(input), subject: 'ghost', tried: {}, goal: '', opened: { ...design(input).opened, design: ['docs/subjects/ghost/design.md'], writing: [] } } } }) },
+    input: input => ({ ...input, designs: { ...input.designs, ghost: (({ kinds, principles, opened, practice, feedback, delivery, readingShare, form, parts, lessons, pilot, ...r }) => ({ ...r, subject: 'ghost', tried: {}, designReview: null, approved: { goal: null, practice: null }, asked: r.asked.map(a => ({ ...a, kept: null })) }))(design(input)) } }) },
+  { rule: 'V69', name: 'a record of a subject not yet in the app, with no goal', input: input => ({ ...input, designs: { ...input.designs, ghost: { ...design(input), subject: 'ghost', tried: {}, designReview: null, goal: '', opened: { ...design(input).opened, design: ['docs/subjects/ghost/design.md'], writing: [] } } } }) },
   { rule: 'V69', name: 'the pilot changed before it was tried (allowed)', green: true,
     data: (d, h) => h.setIn(d, lesson('l1', 'status'), 'draft'),
     input: input => asDesign(input, 'fixture/l1', { tried: {} }) },
