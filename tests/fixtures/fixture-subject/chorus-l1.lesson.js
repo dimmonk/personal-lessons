@@ -1,7 +1,6 @@
 FC.lesson('chorus', {
   id: 'l1', part: '1', title: 'Single notes', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-10', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-10', words: 'Clear on a phone.' },
   why: 'Hear a note, then sing it back. The line shows your voice at first and then goes away.',
   flow: [
     { set: { items: [{ sing: { task: 'warmup' }, n: 1 }], order: 'listed' } },

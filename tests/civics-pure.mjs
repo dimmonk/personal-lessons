@@ -1,4 +1,4 @@
-// The pure half of step 9 (lesson standard 26.1, 26.1.2, 26.3, 26.4, 26.7, 26.10): an answer from memory checked against what a list accepts (case,
+// The pure half of step 9 (lesson standard 3, 3.9, 5, 6, 9, 3 to 9): an answer from memory checked against what a list accepts (case,
 // punctuation, articles, one small misspelling, brackets, numbers in words, parts in any order, "name two"), the learner's own answers, a claim, the
 // rounds before an interview date, the mock interview's draw, the voice a question is read with, and what must be true of Civics' pilot as data: the
 // 17 questions of lesson 1 are the official ones, word for word, each asked once in a group and once in the check. No browser: the app's scripts are

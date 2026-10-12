@@ -1,6 +1,6 @@
-// Wealth Preservation: subject record (lesson standard 26.1). Only the pilot, lesson 2, is built: the subject screen lists every other part of the
+// Wealth Preservation: subject record (lesson standard 3). Only the pilot, lesson 2, is built: the subject screen lists every other part of the
 // design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design record's, word
-// for word (V80, V71). The learner's own accounts and dated actions are private data (26.3): the forms below say what the app may ask for.
+// for word (V80, V71). The learner's own accounts and dated actions are private data (5): the forms below say what the app may ask for.
 FC.subject('wealth', {
   name: "Wealth Preservation",
   rev: 6,

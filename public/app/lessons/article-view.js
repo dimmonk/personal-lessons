@@ -1,11 +1,11 @@
 /* ===================== LESSONS: A NEWS STORY, A POST, AN AD, A REPORT ===================== */
-// Lesson standard 26.1.2 (the `article` block). The thing as it arrives on a phone: where it comes from, the headline over the text, the
+// Lesson standard 3.9 (the `article` block). The thing as it arrives on a phone: where it comes from, the headline over the text, the
 // text a line at a time. Every line is a segment (tappable, markable); the words are quoted material and may say anything.
 //   article { kind: 'article', id?, form: 'news' | 'post' | 'ad' | 'report', source, headline?: Segment, lines: [Segment] }
 //   form    news: headline over the story, the paper and section above; post: who posted and when, then what they wrote (no headline);
 //           ad: the advertiser, the headline, and the small print last; report: the organization, the title and the summary
 //   Segment { id, text, note?, para?: true (starts a new paragraph), fine?: true (small print, drawn small and last) }
-//   A post may carry a label (26.1.2): { text, by, side }. It is then drawn as a label pinned on words: who posted, how the commenter is known
+//   A post may carry a label (3.9): { text, by, side }. It is then drawn as a label pinned on words: who posted, how the commenter is known
 //   (`by`), the commenter's own words (`text`, which carry the label), and under them, in a box of their own, the words the label is pinned
 //   on (the lines): quoted words or a policy, with who said them as small print last. `side` is 'left' or 'right' and is not drawn: it is
 //   the side the label is thrown from, kept for the results (panel.js).

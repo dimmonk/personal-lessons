@@ -1,4 +1,4 @@
-// The pure half of step 6 (lesson standard 26.1, 26.1.2, 26.10): a label pinned on a post laid out, the panel and who sees it, each need found or
+// The pure half of step 6 (lesson standard 3, 3.9, 3 to 9): a label pinned on a post laid out, the panel and who sees it, each need found or
 // missing, the sides kept once and shown side by side, a pass rule counted by side; and what must be true of Ideology's pilot as data: what each
 // verdict, name and need says about the words, both sides in balance, no party, every quoted line really quoted in its reason. No browser: the app's
 // scripts are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).

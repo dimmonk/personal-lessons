@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WHAT A LABEL NEEDS, ON SCREEN ===================== */
-// Lesson standard 26.1.2 (the `panel` block) and 26.2 (each need found or missing). Pure HTML builders over panel.js. The words come from the
+// Lesson standard 3.9 (the `panel` block) and 4 (each need found or missing). Pure HTML builders over panel.js. The words come from the
 // subject's `rules`, typed once; a panel and the feedback that follows it print the same needs.
 
 // The panel: every rule it names, with its needs in a numbered list. While a group has the help `panel` it stands beside the words; on a

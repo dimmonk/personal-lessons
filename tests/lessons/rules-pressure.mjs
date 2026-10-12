@@ -1,4 +1,4 @@
-// Section 26.7 and 26.10 (step 8): V82 (the danger slip sits only on risky questions) and V83 (timed groups and the busy task). Each reads the subject
+// Section 9 and 3 to 9 (step 8): V82 (the danger slip sits only on risky questions) and V83 (timed groups and the busy task). Each reads the subject
 // through model.mjs and the engine's own pure functions.
 import { subjectRule, checkEach } from './rule.mjs';
 import { unique } from './text.mjs';

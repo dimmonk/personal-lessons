@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A MESSAGE AS IT ARRIVES ===================== */
-// Lesson standard 26.1.2 (the `message` block). Pure HTML builder over segmentHtml (item-view.js): no page and no storage. The words are quoted
+// Lesson standard 3.9 (the `message` block). Pure HTML builder over segmentHtml (item-view.js): no page and no storage. The words are quoted
 // material and may say anything. A message is drawn as it arrives on a phone, in the form it comes in; its link is only drawn (it is words, never
 // a link that can be followed).
 //   message { kind: 'message', id?, form, from, detail, lines: [Segment], subject?, link? }

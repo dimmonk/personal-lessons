@@ -1,5 +1,5 @@
 /* ===================== LESSONS: READING A QUESTION ALOUD ===================== */
-// Lesson standard 26.1.2 (the `spoken` block) and 26.7 (X19). The phone's own speech synthesis reads a question. It never speaks by itself: the
+// Lesson standard 3.9 (the `spoken` block) and 9 (X19). The phone's own speech synthesis reads a question. It never speaks by itself: the
 // first question of a run is read when the learner taps "Hear the question", and from then on each next question is read when the learner taps
 // Next. A reload, a screen opened again, or a run that begins without a tap speaks nothing. Only a voice that runs on the phone is used (speech-view.js).
 // Needs the queue (Q, queueItem, paintQueue).

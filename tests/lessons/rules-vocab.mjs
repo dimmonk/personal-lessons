@@ -1,4 +1,4 @@
-// Section 26.7, the kept vocabulary rules: V4 (no codes or ids shown), V36 (no praise), V50 (the app's own words and the engine's),
+// Section 9, the kept vocabulary rules: V4 (no codes or ids shown), V36 (no praise), V50 (the app's own words and the engine's),
 // V60 (American English), V62 (no abstract or textbook words). They read every string a learner can read, and nothing else:
 // ids, enums, numbers and the maintainers' notes (history, the owner's words from the phone try) are left out.
 import { subjectRule } from './rule.mjs';
@@ -7,7 +7,7 @@ import { APP_JARGON, abstractIn } from '../plain-words.mjs';
 import { britishIn } from '../american.mjs';
 
 // fields that hold ids, enums, numbers, references or the maintainers' notes, never prose
-const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', 'role', 'status', 'history', 'tried', 'order', 'feedback', 'support', 'mix', 'pass',
+const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', 'role', 'status', 'history', 'order', 'feedback', 'support', 'mix', 'pass',
   'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
   'dateField', 'tol', 'standard', 'rules', 'side', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
   'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels',

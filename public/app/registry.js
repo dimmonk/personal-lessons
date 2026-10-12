@@ -1,4 +1,4 @@
-// Fieldcraft subject registry. Loaded before any file under public/subjects/ (lesson standard 26.1).
+// Fieldcraft subject registry. Loaded before any file under public/subjects/ (lesson standard 3).
 // Subject files call FC.subject / FC.lesson / FC.items / FC.gen. Nothing here renders. Every registered object is
 // deep-frozen, and each call replaces the subject's slot with a new object, so no data file can change another's content.
 (function (root) {

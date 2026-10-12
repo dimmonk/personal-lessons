@@ -1,4 +1,4 @@
-// The pure half of the practice engine (lesson standard 26): seeded numbers, scoring, pass rules, dates, the practice record, what
+// The pure half of the practice engine (lesson standard 3 to 9): seeded numbers, scoring, pass rules, dates, the practice record, what
 // comes back and when, and how a group of questions is built. No browser: the app's scripts are loaded as in tests/load-app.mjs, with
 // the test subject (tests/fixtures/fixture-subject), and the clock is set by hand so a run is the same every time.
 // Run: node tests/engine-pure.mjs

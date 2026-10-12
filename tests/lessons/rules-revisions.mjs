@@ -1,4 +1,5 @@
-// Section 26.7, revisions and files: V45 (revisions and history), V46 (the lock), V47 (files), V58 (held findings).
+// Revisions and files: V45 (revisions and history; a lesson is live only through the design record's `tried`, which V69 reads), V46 (the lock),
+// V47 (files), V58 (held findings).
 import { subjectRule, siteRule, heldRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { anchorProblems } from './lockfile.mjs';
@@ -21,17 +22,9 @@ function revisionProblems(record, what, maxStandard) {
     ...(record.standard === undefined ? [] : Number.isInteger(record.standard) && record.standard >= 2 && record.standard <= maxStandard ? [] : [`${what} standard must be from 2 to the standard version ${maxStandard}`])];
 }
 
-// a lesson is live only after the owner's own try of it on a phone: a date and their words
-function liveProblems(lesson) {
-  if (lesson.status !== 'live') return [];
-  const t = lesson.tried;
-  if (!t) return ['status live needs tried: the date and the owner\'s words from the try'];
-  return [...(t.date ? [] : ['tried needs a date']), ...(t.words && t.words.trim() ? [] : ['tried needs the owner\'s words'])];
-}
-
 export const V45 = subjectRule('V45', (s, check) => {
   checkEach(check, 'subject', revisionProblems(s.meta, 'subject', s.data.standard));
-  for (const l of s.lessonList) checkEach(check, `lesson ${l.id}`, [...revisionProblems(l, 'lesson', s.data.standard), ...liveProblems(l)]);
+  for (const l of s.lessonList) checkEach(check, `lesson ${l.id}`, revisionProblems(l, 'lesson', s.data.standard));
 });
 
 /* ---------- V46: the lock ---------- */

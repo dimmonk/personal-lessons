@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE BUSY TASK ===================== */
-// Lesson standard 26.2 item 6 and 26.9 ("a message arriving while busy in another app" has no nearest: the app cannot get a notification from
+// Lesson standard 4 item 6 and 10 ("a message arriving while busy in another app" has no nearest: the app cannot get a notification from
 // outside, so the busy task runs inside it). A group with `over: 'busy'` is a shopping list to sort by taps; messages arrive over it as banners.
 // Only the messages are scored: nothing about the sorting is stored. Pure: the list and the HTML, no page and no storage.
 

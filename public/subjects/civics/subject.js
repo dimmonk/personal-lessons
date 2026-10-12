@@ -1,4 +1,4 @@
-// US Civics & History: subject record (lesson standard 26.1). Only the pilot, lesson 1, is built: the subject screen lists every other part of the
+// US Civics & History: subject record (lesson standard 3). Only the pilot, lesson 1, is built: the subject screen lists every other part of the
 // design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design record's, word for
 // word (V80, V71). The questions are the 128 of the 2025 civics test; each is a topic of its own (a question returns as itself), and each lesson names
 // the ones its part covers. The answers that depend on where the learner lives and who holds office are entered by the learner (own.answers); the app
@@ -60,7 +60,7 @@ FC.subject("civics", {
     { id: "q51", title: "What the judicial branch does" },
     { id: "q52", title: "The highest court" }
   ],
-  // where the questions come from and the page that posts the answers that change (26.1 refs): looked up, not remembered
+  // where the questions come from and the page that posts the answers that change (3 refs): looked up, not remembered
   refs: [
     { id: "list", text: "The official list of the 128 civics test questions and their accepted answers (USCIS form M-1778, 09/25)", value: "M-1778 (09/25)", asOf: "2026-10-11",
       source: "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf" },
@@ -69,7 +69,7 @@ FC.subject("civics", {
   ],
   // rounds about a week apart in the six weeks before the interview the learner entered (the design's principle 4)
   review: { dateField: "answers.interviewDate" },
-  // the eight answers the list says will vary, in the list's own words, and the day of the interview (26.3)
+  // the eight answers the list says will vary, in the list's own words, and the day of the interview (5)
   own: {
     answers: { into: "answers", fields: [
       { id: "q23", label: "Who is one of your state’s U.S. senators now?", type: "text", hint: "Both names, with a semicolon between" },

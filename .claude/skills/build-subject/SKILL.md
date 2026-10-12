@@ -14,7 +14,9 @@ well-written card: none of these is the goal, and none counts as reaching it.
 
 Every gate below serves that goal and nothing else. Earlier style rules, templates, engines and habits of the project
 are inputs, not rules: each is kept only where it serves the goal, and a gate may overrule any of them. Writing that is
-plain, a format that already exists, content that is already built: none of these is a reason to keep anything.
+plain, a format that already exists, content that is already built: none of these is a reason to keep anything. One
+thing is never overruled by a gate: what the owner asked the subject to teach, in their words. A design may argue that
+an ask belongs elsewhere, but only the owner's recorded word drops it (gate 0).
 
 ## Why this exists
 
@@ -24,8 +26,11 @@ asked whether doing it makes you better at the thing. The template was chosen fi
 was written for that template, and nothing in the process ever asked what the learner would be able to do at the end.
 Then (2026-10-12) the first version of these gates was audited: eight subjects went through gates 1 to 5 and no gate
 ever said no, because the gates were prose a writer interpreted; the one check that found real defects was a reviewer
-reading a lesson as a learner, and its verdict had nowhere to be recorded. So this version makes every gate refusable,
-puts the owner's own paragraph before any plan, names what may be opened, and writes the record in the shape the
+reading a lesson as a learner, and its verdict had nowhere to be recorded. The same day the owner found that the blind
+audit of Psychology had cut a lesson on biases they had asked for by name, and that their one-line approval had been
+given to drafts written before the audits narrowed the subjects, so the cut was never put in front of them. So this
+version opens with the owner's asks as a must-keep list, makes every gate refusable, puts the owner's own paragraph and
+the list of anything dropped before any plan, names what may be opened, and writes the record in the shape the
 validator reads. **Design starts from the end result, never from what the app already does, and nothing the skill asks
 for goes unchecked.**
 
@@ -38,7 +43,8 @@ for goes unchecked.**
   three dashes (the shape is below; the validator's V69 reads it and refuses what is missing or inconsistent), then
   one `##` section per gate in prose: what was decided and why, with sources. It is the single source for the
   subject's design; plans elsewhere point to it.
-- **The owner approves twice**, and reads one screen each time: gate 2's paragraph, and gate 3's method in three lines.
+- **The owner approves twice**, and reads one screen each time: gate 2's paragraph (with the list of any ask of theirs
+  the design drops, each needing their word), and gate 3's method in three lines.
   An approval is applied with `node tools/design/approve.mjs <subject> goal|practice "<their words>"`, which writes the
   date, their words and a fingerprint of the exact text approved into `approved`. A change to that text afterwards
   makes the validator ask for the approval again. Never ask the owner to read a gate's prose, a research note or a
@@ -68,24 +74,31 @@ The JSON that opens `design.md`. Every field is asked for by a gate below and ch
 ```js
 {
   "subject": "scams",                                  // the folder's name
+  "asked": [                                           // gate 0: what the owner asked for, in their words; never dropped silently
+    { "id": "biases", "words": "a lesson on biases and the different types of bias", "when": "before 2026-10-10",
+      "where": "the owner's request for the first Psychology; old Unit Two at the tag old-lessons",
+      "owner": { "date": "2026-10-12", "words": "restore all the psychology and ideology topics" },
+      "kept": null, "dropped": false }                 //   owner: their recorded word on it; kept: the part that covers it; dropped: only on their word
+  ],                                                   //   an item in no part and not dropped holds the subject's content, whatever the owner has said
   "kinds": ["judging", "habit"],                       // gate 1: facts, judging, procedure, body, habit
   "principles": [                                      // gate 1: the five to ten that drive the design
     { "id": "SC1", "note": "scams-judging-and-acting", "decides": true,  "read": "full" },
     { "id": "SC3", "note": "scams-judging-and-acting", "decides": false, "read": "abstract" }
   ],                                                   //   a "decides" principle needs "read": "full"
   "goal": "…",                                         // gate 2: the owner's paragraph, one screen (under 1,200 characters)
+  "topics": ["what a request is", "…"],                // gate 2: everything the subject teaches, signed off with the paragraph
   "endResult": "…", "realMoment": "…", "test": "…", "out": "…",   // gate 2
   "practice": "…", "feedback": "…",                    // gate 3
   "delivery": ["a 20 second clock on a set", "…"],     // gate 3: what the app must do, each built or planned first
   "readingShare": 0.15,                                // gate 3: the most of a lesson that may be reading (mirrored in the subject record, V80)
   "form": "…",                                         // gate 4: the form the real moment forces on practice and checks
-  "parts": [{ "id": "A", "title": "See the request", "check": "…" }],   // gate 4: each with its check
+  "parts": [{ "id": "A", "title": "See the request", "check": "…", "topics": ["what a request is"] }],   // gate 4: its check and the topics it covers
   "lessons": {                                         // gate 5: one block per lesson of the map
     "l3": { "part": "C", "does": "…", "feedback": "…", "check": "…", "why": ["SC1", "SC5"] }
   },                                                   //   check is its part's check, word for word; why names principles above
   "pilot": "l3",                                       // gate 5: the first lesson built
   "approved": {                                        // gates 2 and 3, written by tools/design/approve.mjs
-    "goal":     { "date": "2026-10-10", "words": "approve all, keep going", "fp": "sha256:…" },
+    "goal":     { "date": "2026-10-10", "words": "approve all, keep going", "fp": "sha256:…" },   // fp binds the paragraph and the topics
     "practice": null
   },
   "tried": {                                           // gates 6 and 7: one entry per lesson that was tried or reviewed
@@ -95,6 +108,30 @@ The JSON that opens `design.md`. Every field is asked for by a gate below and ch
   "opened": ["docs/research/scams-judging-and-acting.md"]   // what gates 1 to 5 read
 }
 ```
+
+## Gate 0. What the owner asked for
+
+1. **List every request the owner has made for this subject**, in their words (`asked`): what they said the subject
+   should teach, in chat, in a brief, in an earlier version they accepted. Each item has an `id`, their `words`, `when`
+   and `where` it was said. For an existing subject, every unit of the version the owner was using is an item too,
+   because they had accepted it. Write this list before gate 1, from the sources, never from memory.
+2. **The list is must-keep.** Later gates place each item: `kept` names the part of the end result that covers it (gate
+   4). A design that would leave an item out does not drop it: it leaves `kept` null, puts the item on the drops list
+   shown with gate 2's paragraph, and waits. Only the owner's word, recorded in `owner: { date, words }`, settles an
+   item: `dropped: true` on their word to drop it, or a part found for it on their word to keep it. An item they move to
+   another subject is dropped here with those words and asked for there. While any item is in no part and not dropped,
+   the validator refuses every change to the subject's content.
+
+Reject when: an item of the list is in no part and has no recorded word from the owner (the validator refuses any
+change to the subject's content while this is so); the list was written from memory instead of the sources; an item is
+reworded into something smaller than what was asked.
+
+Rejected, for example: Psychology (2026-10-10): the blind audit cut the old Unit Two on biases ("general cognitive
+biases: considered and rejected") although the owner had asked by name for "a lesson on biases and the different types
+of bias", and the approval of the end result had been given before the cut existed. The item goes on the list with
+nothing decided, the drops list goes to the owner with the paragraph, and the subject waits for their word.
+
+Pass when: every item on the list is covered by a part or dropped in the owner's recorded words.
 
 ## Gate 1. The kind of learning, then the evidence that decides
 
@@ -134,15 +171,22 @@ it decides, and `opened` holds only what gate 1 may open.
    for the owner, one phone screen. What you will be able to do after this subject; where in your life it shows up;
    what it leaves out. It is the precheck: the owner reads it and knows at once whether the subject is on the right
    track, instead of after the lessons are written. Nothing past this gate is written until the owner's words are on it.
-2. **One sentence** (`endResult`): **"After this subject you can ___ when ___."** The second blank is the **real
+2. **The list of what it teaches** (`topics`), under the paragraph: every term, idea, skill or list the subject will
+   teach, in plain words, one line each, so the owner signs off the contents and not only the aim. Gate 4 must cover
+   every item of it with a part; the validator holds the content while one is uncovered.
+3. **One sentence** (`endResult`): **"After this subject you can ___ when ___."** The second blank is the **real
    moment** (`realMoment`): where and how the learner meets this in life (a text on their phone, their own voice in the
    car, a bill, a news story).
-3. **The real-world test** (`test`): a task in the form of the real moment, with what counts as passing. It must be
+4. **The real-world test** (`test`): a task in the form of the real moment, with what counts as passing. It must be
    something the learner does, not something they say about it. ("Sing a five-note line with a guide note; at least
    four notes land on pitch." Not "name what is wrong with Nadia's singing.")
-4. **What is out** (`out`): what the subject does not try to do, so it stays short.
-5. **Ask the owner** for the paragraph's approval in one message: the paragraph, then "on track, or not?". Apply their
-   words with `tools/design/approve.mjs <subject> goal "<words>"`.
+5. **What is out** (`out`): what the subject does not try to do, so it stays short.
+6. **Ask the owner** for the paragraph's approval in one message: the paragraph and the topics list; then, under "What you asked for that
+   this design drops", every gate 0 item with neither `kept` nor `dropped`, in their words, each needing a word from
+   them (keep it here, move it, or drop it); then "on track, or not?". Apply their words with
+   `tools/design/approve.mjs <subject> goal "<words>"` and `tools/design/asked.mjs <subject> <item> --keep "<words>" |
+   --drop "<words>" | --kept <part>`. The approval binds the paragraph and the list together: a change to either asks
+   for it again. A paragraph approved while an item is undecided is still approved; the content waits.
 
 Reject when: the sentence names knowing, understanding or recognizing rather than doing; the real moment is not a time
 and place the learner meets in life; the test asks the learner to say something about the task instead of doing it;
@@ -152,8 +196,8 @@ Rejected, for example: "After this subject you understand how scams work, when y
 not an action, and reading about a scam is not the moment. Rewritten: "After this subject you stop, see what a message
 wants, and check it through a way you already had, when a text, call or offer asks you to act."
 
-Pass when: the owner's words are on the paragraph (`approved.goal`), and the sentence, the real moment, the test and
-what is out are in the record.
+Pass when: the owner's words are on the paragraph and the topics list (`approved.goal`), the drops list has been put in
+front of them, and the sentence, the real moment, the test and what is out are in the record.
 
 ## Gate 3. How it is practiced, and whether the app can deliver it
 
@@ -190,7 +234,8 @@ Pass when: the owner's words are on the method (`approved.practice`), `readingSh
    spoken question. A check that is "ten items, 8 of 10" is one form among many, never the default.
 2. **Break the end result into parts** (`parts`): the smaller abilities it needs (for singing: breath, matching a note,
    holding it, moving between notes, range, a whole song line). Order them so each builds on the ones before.
-3. **A check for each part** (`parts[].check`): a small version of gate 2's test, in the form of step 1.
+3. **A check for each part** (`parts[].check`): a small version of gate 2's test, in the form of step 1; and **the
+   topics it covers** (`parts[].topics`), from gate 2's list. Every topic on the list is covered by a part.
 4. **Map parts to lessons.** Every part is covered by a lesson; no lesson exists without a part. A lesson that serves no
    part is cut, however good.
 
@@ -202,8 +247,8 @@ Rejected, for example: Ideology's part "know the history of each label": no chec
 test is judging a label thrown on a post), so the part goes. And: a Singing check written as "ten items, 8 of 10" when
 the form is a sung line without the pitch line; the check became "five notes heard and sung back, four on the note".
 
-Pass when: the form is written, every part has a check in that form, the map is complete both ways, and the parts
-together add up to the end result (if every part passes, the gate 2 test would pass).
+Pass when: the form is written, every part has a check in that form, every signed-off topic is in a part, the map is
+complete both ways, and the parts together add up to the end result (if every part passes, the gate 2 test would pass).
 
 ## Gate 5. Each lesson, designed before it is written
 
@@ -267,11 +312,12 @@ Pass when: every lesson of the map is built, reviewed and live, and the subject 
 
 ## Auditing an existing subject
 
-Run gates 1 to 5 blind (the "Must not open" column), then lay the existing lessons against the gate 4 map and the gate
-5 blocks. For each existing lesson, one of: **keeps** (it is what gate 5 would have designed), **changes** (its part is
+Run gate 0 from the sources (the owner's requests and the units they were using are both asks), then gates 1 to 5
+blind (the "Must not open" column), then lay the existing lessons against the gate 4 map and the gate 5 blocks. For each existing lesson, one of: **keeps** (it is what gate 5 would have designed), **changes** (its part is
 right, its practice is not), **goes** (it serves no part). Report the verdict per subject in a table in the record;
 whatever does not pass goes back through the gates as a rebuild, never a patch. A kept lesson still needs its review
-(gate 6 or 7) before it is live.
+(gate 6 or 7) before it is live. A lesson that **goes** is an ask of the owner's (gate 0) until they say otherwise: it
+is shown to them on the drops list with the paragraph, and the subject's content waits for their word.
 
 ## Never
 
@@ -281,3 +327,5 @@ whatever does not pass goes back through the gates as a rebuild, never a patch. 
   review, and the end checks after use, prove it teaches.
 - Ask the owner to read more than a screen to approve anything.
 - Keep content because it exists, or because time and tokens were spent on it.
+- Drop anything the owner asked for on the strength of a design argument or an earlier blanket approval: only their
+  recorded word on that item drops it.

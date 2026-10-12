@@ -1,5 +1,5 @@
 // Singing, lesson 2: Match a note (part 2). The pilot (docs/subjects/singing/design.md, gate 5). Every note is made fresh from the learner's range;
-// when no range is stored yet the lesson opens with the range exercise first (lesson standard 26.1.1). A warm-up opens the lesson (S5),
+// when no range is stored yet the lesson opens with the range exercise first (lesson standard 3.8). A warm-up opens the lesson (S5),
 // eight tries with the line, eight without (S3), then the check without the line.
 FC.lesson('singing', {
   id: 'l2', part: '2', title: 'Match a note', rev: 1, status: 'draft',

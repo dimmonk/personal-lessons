@@ -1,4 +1,4 @@
-// Section 26.7: V72 (a check is its part's), V73 (most of the lesson is doing), V74 (every ask can be scored and explained),
+// Section 9: V72 (a check is its part's), V73 (most of the lesson is doing), V74 (every ask can be scored and explained),
 // V75 (generators), V76 (the subject's mix), V77 (banks), V79 (fading). Each reads the subject through model.mjs and the engine's
 // own pure functions, so the validator and the app can never hold two ideas of what counts as right.
 import { subjectRule, checkEach } from './rule.mjs';

@@ -1,5 +1,5 @@
 /* ===================== SOUND: LISTENING THROUGH THE MICROPHONE ===================== */
-// Lesson standard section 21, item 5, and 26.1.1. The microphone half of the sound engine. It starts only on a tap, reads the sound on
+// Lesson standard section 3.8, item 5, and 26.1.1. The microphone half of the sound engine. It starts only on a tap, reads the sound on
 // the browser's frame loop (no timers), finds the pitch (audio-pitch.js), and tells its caller what it hears. Nothing it reads is
 // recorded, stored or sent anywhere: each stretch of sound is looked at and dropped.
 // Two ways to listen. startMeter judges the sound against one picked note and reports under, on or over (the note tool). startListening

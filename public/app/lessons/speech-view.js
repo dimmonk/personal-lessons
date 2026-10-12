@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A QUESTION READ ALOUD, ON SCREEN ===================== */
-// Lesson standard 26.1.2 (the `spoken` block) and 26.7 (X19), as built in step 9. A question the phone reads aloud with its own speech synthesis,
+// Lesson standard 3.9 (the `spoken` block) and 9 (X19), as built in step 9. A question the phone reads aloud with its own speech synthesis,
 // with its words shown or behind "Show the words" (the mock interview), and a replay. Pure string builders and the choice of a voice: nothing here
 // reads the page or speaks (speech-run.js does). Speech starts only when the learner taps; only a voice that runs on the phone is used, because a
 // voice that needs the network would send the question away; with none, the words are shown.

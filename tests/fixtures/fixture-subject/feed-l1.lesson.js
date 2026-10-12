@@ -3,7 +3,6 @@
 FC.lesson('feed', {
   id: 'l1', part: '1', title: 'Find the number', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-11', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-11', words: 'Clear on a phone.' },
   why: 'What arrives on your phone has a number somewhere in it. Find the line that gives it.',
   flow: [
     { title: 'What arrives',

@@ -1,12 +1,12 @@
 /* ===================== LESSONS: A FORM OF SEVERAL FIELDS, SCORED ON A SAMPLE ===================== */
-// Lesson standard 26.1 (the `form` ask). Rows of fields answered together, each a typed number or a choice, scored field by field the
+// Lesson standard 3 (the `form` ask). Rows of fields answered together, each a typed number or a choice, scored field by field the
 // way a `number` ask and a `choose` ask are: the same tolerances, the same named slips. A form is right when every field is. Pure: no page
 // and no storage, so the player, the validator and the tests all score a form the same way.
 //   ask    { id, kind: 'form', prompt, fields: [Field], when? }
 //   Field  { id, label, type: 'number', answer, tol, frame?, unit?, places?, traps? }   (a number ask: the label is its prompt; a frame like '__%' puts the sign after the box)
 //        | { id, label, type: 'choose', options | from + right (+ only, slips, then) }    (a choose ask without kind/prompt)
 //   answer { [fieldId]: [numbers typed] | optionId }          the same shapes a number ask and a choose ask store
-// The private forms of the learner's own data (26.3) are a different thing: they are never scored (own.js).
+// The private forms of the learner's own data (5) are a different thing: they are never scored (own.js).
 
 // a field as the ask of its own kind, which is what the scorers and the views read
 const formFieldAsk = field => ({ ...field, kind: field.type, prompt: field.label });

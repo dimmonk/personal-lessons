@@ -1,4 +1,4 @@
-// Every rule of section 26.7, in id order.
+// Every rule of section 9, in id order.
 import { RULES_SHAPE } from './rules-shape.mjs';
 import { RULES_VOCAB } from './rules-vocab.mjs';
 import { RULES_LESSON } from './rules-lesson.mjs';

@@ -1,84 +1,508 @@
 ---
 {
   "subject": "civics",
+  "asked": [
+    {
+      "id": "which-government",
+      "words": "Which government decided this?",
+      "when": "2026-10-05",
+      "where": "old Unit One at the tag old-lessons",
+      "owner": null,
+      "kept": "2",
+      "dropped": false
+    },
+    {
+      "id": "constitution",
+      "words": "The Constitution and its amendments",
+      "when": "2026-10-05",
+      "where": "old Unit Two",
+      "owner": null,
+      "kept": "7",
+      "dropped": false
+    },
+    {
+      "id": "congress-did",
+      "words": "What did Congress just do?",
+      "when": "2026-10-05",
+      "where": "old Unit Three",
+      "owner": null,
+      "kept": "3",
+      "dropped": false
+    },
+    {
+      "id": "president-did",
+      "words": "When the news says the President or a federal office did something, work out which of six things it was",
+      "when": "2026-10-05",
+      "where": "old Unit Four",
+      "owner": null,
+      "kept": "3",
+      "dropped": false
+    },
+    {
+      "id": "what-a-judge-is-asked",
+      "words": "What a judge is really being asked",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": "5",
+      "dropped": false
+    },
+    {
+      "id": "whose-rule",
+      "words": "Whose rule is it, and what else covers it?",
+      "when": "2026-10-05",
+      "where": "old Unit Six",
+      "owner": null,
+      "kept": "4",
+      "dropped": false
+    },
+    {
+      "id": "in-numbers",
+      "words": "Congress, the President and the courts in numbers",
+      "when": "2026-10-05",
+      "where": "old Unit Seven",
+      "owner": null,
+      "kept": "3",
+      "dropped": false
+    },
+    {
+      "id": "rights-and-duties",
+      "words": "Rights and duties",
+      "when": "2026-10-05",
+      "where": "old Unit Eight",
+      "owner": null,
+      "kept": "8",
+      "dropped": false
+    },
+    {
+      "id": "history-to-1877",
+      "words": "US history up to 1877",
+      "when": "2026-10-05",
+      "where": "old Unit Nine",
+      "owner": null,
+      "kept": "9",
+      "dropped": false
+    },
+    {
+      "id": "history-since-1877",
+      "words": "History since 1877",
+      "when": "2026-10-05",
+      "where": "old Unit Ten",
+      "owner": null,
+      "kept": "11",
+      "dropped": false
+    }
+  ],
   "kinds": [
     "judging",
     "facts"
   ],
+  "principles": [
+    {
+      "id": "C1",
+      "note": "civics-interview-and-news",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "C2",
+      "note": "civics-interview-and-news",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "C4",
+      "note": "civics-interview-and-news",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "C5",
+      "note": "civics-interview-and-news",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "C6",
+      "note": "civics-interview-and-news",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "C7",
+      "note": "civics-interview-and-news",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "C8",
+      "note": "civics-interview-and-news",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R2",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R4",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R8",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    }
+  ],
+  "goal": "After this subject you can pass the civics part of the citizenship interview: asked out loud, with no options, you answer from memory in a few words, including the questions whose answers depend on where you live and when. And when a news story is about a law, an order or a ruling, you know who made the final call and whether they were allowed to. It does not cover the English test, your own N-400 history, how to immigrate, or questions a court has not settled.",
+  "topics": [
+    "Who does what",
+    "Who made the call",
+    "Congress, the presidency and the courts",
+    "Federal or state, and your own answers",
+    "Theirs to make?",
+    "Who can stop it",
+    "Principles and founding documents",
+    "Rights and responsibilities",
+    "Colonies and independence",
+    "The 1800s",
+    "The 1900s to now",
+    "Symbols and holidays",
+    "Whole stories",
+    "The interview"
+  ],
   "endResult": "Read a news story about the US government and know who made the final call and whether they were allowed to; answer the citizenship interview questions.",
   "realMoment": "A news story about a law, an order or a ruling; the citizenship interview.",
   "test": "Interview: a mock interview of 20 questions drawn at random from the 128, heard (or read) with no options, answered from memory in a few words; at least 16 right (the real bar is 12), on two mock interviews at least a week apart. News: six new news-style stories never seen before; for each, name who made the call (level and body), whether it is theirs to make, and who could stop or undo it; at least 5 of 6 fully right.",
+  "out": "The English reading, writing and speaking test (a separate skill; add it only if the owner needs it); the N-400 questions about the applicant's own history; how to immigrate or qualify; state-by-state law; history beyond the 128; contested constitutional questions a court has not settled (a story counts as clear only when its own words make it clear); the 65/20 special list; party politics. The app does not store officials' names: the learner enters them from uscis.gov/citizenship/testupdates.",
   "practice": "Facts: hear or read each of the 128 questions and produce the answer from memory (say it, then type it), the accepted answers shown at once; missed items return in the session until right, then on later days until right in three separate sessions (the app decides). News: short news-style stories, new each time, answered with three taps (who decided, theirs to make, who can stop it), the decisive sentence and the interview fact it uses shown after each. Reading is a minute per lesson at most.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "From the app, after every answer: the accepted answers (all of them, so the learner sees which they gave), or the decisive sentence and the reason. The mock interview gives none until the end, like the real one.",
+  "delivery": [
+    "take a typed free answer and check it against a question's accepted answers (case, punctuation and small misspellings forgiven, bracketed words optional, 27 equal to twenty-seven, distinct answers counted for name two, three or five; a logged \"my answer means the same\" claim that still returns the item)",
+    "speak a question aloud (browser speech synthesis)",
+    "hear a spoken answer (speech recognition) for the mock interview: wanted, not required; without it the learner says the answer aloud and types it",
+    "a per-item record across days and a schedule that brings items back until right in three separate sessions, with gaps set from an optional interview date",
+    "answers the learner enters for the eight variable questions, with the link to look them up and a prompt to check them before a mock interview",
+    "a news story with three tap questions and the decisive sentence highlighted in the feedback",
+    "a mock interview mode: 20 random questions from all 128, spoken, answered without feedback, scored at the end",
+    "content: the 128 with accepted answers (USCIS M-1778, 09/25) and a bank of about 70 news-style stories, so every check and review uses stories the learner has not seen"
+  ],
+  "readingShare": 0.2,
+  "form": "A question heard or read with no options, an answer produced from memory in a few words and typed (said aloud first), checked against the list's accepted answers with the answers shown at once; a news-style story the learner has not seen, answered with three taps (who decided, theirs to make or not, who can stop it), the decisive sentence shown after each. The end tests are the interview itself, a spoken 20-question mock with no feedback until the end, and six new stories.",
   "parts": [
     {
       "id": "1",
-      "title": "Who does what"
+      "title": "Who does what",
+      "check": "Q15-20, 40-47, 50-52 (17 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Who does what"
+      ]
     },
     {
       "id": "2",
-      "title": "Who made the call"
+      "title": "Who made the call",
+      "check": "Five new news-style stories never seen before; for each, tap the body that decided (Congress, the President, a federal agency, a federal court, the Supreme Court); at least 4 of 5 right.",
+      "topics": [
+        "Who made the call"
+      ]
     },
     {
       "id": "3",
-      "title": "Congress, the presidency and the courts"
+      "title": "Congress, the presidency and the courts",
+      "check": "Q21, 22, 24-28, 31-37, 48, 49, 53-56 (20 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Congress, the presidency and the courts"
+      ]
     },
     {
       "id": "4",
-      "title": "Federal or state, and your own answers"
+      "title": "Federal or state, and your own answers",
+      "check": "Q58-60 and the eight answers the learner entered (Q23, 29, 30, 38, 39, 57, 61, 62), 11 items: Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Federal or state, and your own answers"
+      ]
     },
     {
       "id": "5",
-      "title": "Theirs to make?"
+      "title": "Theirs to make?",
+      "check": "Five new news-style stories never seen before, now with states, cities and counties; for each, tap whether the call was theirs to make, not theirs, or being challenged in court (only when the story says so); at least 4 of 5 right.",
+      "topics": [
+        "Theirs to make?"
+      ]
     },
     {
       "id": "6",
-      "title": "Who can stop it"
+      "title": "Who can stop it",
+      "check": "Five new news-style stories never seen before; for each, tap who can stop it (the President's veto, the courts, Congress changing the law, the next President, federal law over a state); at least 4 of 5 right.",
+      "topics": [
+        "Who can stop it"
+      ]
     },
     {
       "id": "7",
-      "title": "Principles and founding documents"
+      "title": "Principles and founding documents",
+      "check": "Q1-14 (14 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Principles and founding documents"
+      ]
     },
     {
       "id": "8",
-      "title": "Rights and responsibilities"
+      "title": "Rights and responsibilities",
+      "check": "Q63-72 (10 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Rights and responsibilities"
+      ]
     },
     {
       "id": "9",
-      "title": "Colonies and independence"
+      "title": "Colonies and independence",
+      "check": "Q73-89 (17 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Colonies and independence"
+      ]
     },
     {
       "id": "10",
-      "title": "The 1800s"
+      "title": "The 1800s",
+      "check": "Q90-99 (10 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "The 1800s"
+      ]
     },
     {
       "id": "11",
-      "title": "The 1900s to now"
+      "title": "The 1900s to now",
+      "check": "Q100-118 (19 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "The 1900s to now"
+      ]
     },
     {
       "id": "12",
-      "title": "Symbols and holidays"
+      "title": "Symbols and holidays",
+      "check": "Q119-128 (10 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "topics": [
+        "Symbols and holidays"
+      ]
     },
     {
       "id": "13",
-      "title": "Whole stories"
+      "title": "Whole stories",
+      "check": "The news test of the end result: six new news-style stories never seen before, mixed federal, state and local; for each, name who made the call (level and body), whether it is theirs to make, and who could stop or undo it; at least 5 of 6 with all three right.",
+      "topics": [
+        "Whole stories"
+      ]
     },
     {
       "id": "14",
-      "title": "The interview"
+      "title": "The interview",
+      "check": "The interview test of the end result: a mock interview of 20 questions drawn at random from the 128, heard (or read where speech is not available), no options, answered from memory in a few words; at least 16 of 20 right, on two mock interviews at least a week apart.",
+      "topics": [
+        "The interview"
+      ]
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "1",
+      "does": "The map of the three branches (a minute), then the 17 questions of part 1 recalled with first-sight \"not yet\" allowed, misses repeated until right, then the part's check (about 12 to 15 minutes).",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q15-20, 40-47, 50-52 (17 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6"
+      ]
+    },
+    "l2": {
+      "part": "2",
+      "does": "One worked story with the decisive sentence marked, then ten stories answered by tap, in contrast pairs first (a bill passed by Congress and the same bill signed; an executive order and a law; an agency rule and the law it rests on; a district court and the Supreme Court), then mixed, then the part's check (about 12 minutes).",
+      "feedback": "After every story, the decisive sentence in it is highlighted and the interview fact the answer rests on is named. For example: only Congress writes laws (Q18).",
+      "check": "Five new news-style stories never seen before; for each, tap the body that decided (Congress, the President, a federal agency, a federal court, the Supreme Court); at least 4 of 5 right.",
+      "why": [
+        "C7",
+        "C8"
+      ]
+    },
+    "l3": {
+      "part": "3",
+      "does": "The 20 questions of part 3, as lesson 1, with lesson 1's due items mixed in, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q21, 22, 24-28, 31-37, 48, 49, 53-56 (20 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l4": {
+      "part": "4",
+      "does": "Look up and enter the eight variable answers (about three minutes, the one step that is not recall, because no app can know them), then recall all 11 questions with misses repeated until right, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q58-60 and the eight answers the learner entered (Q23, 29, 30, 38, 39, 57, 61, 62), 11 items: Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C2"
+      ]
+    },
+    "l5": {
+      "part": "5",
+      "does": "One worked story, then ten stories answered by tap, in pairs first (a state sets driver's license rules / a state prints its own money; Congress declares war / a governor declares war; a city zoning rule / a city immigration rule; the President signs a bill / the President \"passes\" a law alone), then mixed, then the part's check.",
+      "feedback": "After every story, the decisive sentence in it is highlighted and the interview fact the answer rests on is named. The fact named is Q58, Q59, Q60 or Q18.",
+      "check": "Five new news-style stories never seen before, now with states, cities and counties; for each, tap whether the call was theirs to make, not theirs, or being challenged in court (only when the story says so); at least 4 of 5 right.",
+      "why": [
+        "C7",
+        "C8"
+      ]
+    },
+    "l6": {
+      "part": "6",
+      "does": "One worked story, then ten stories answered by tap (a bill vetoed; a law struck down by a court; an order reversed by the next President; a state law overridden by federal law; a court ruling answered by a new law), then the part's check.",
+      "feedback": "After every story, the decisive sentence in it is highlighted and the interview fact the answer rests on is named. The fact named is Q44, Q51 or Q15.",
+      "check": "Five new news-style stories never seen before; for each, tap who can stop it (the President's veto, the courts, Congress changing the law, the next President, federal law over a state); at least 4 of 5 right.",
+      "why": [
+        "C7",
+        "C8"
+      ]
+    },
+    "l7": {
+      "part": "7",
+      "does": "The 14 questions of part 7, as lesson 1, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q1-14 (14 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l8": {
+      "part": "8",
+      "does": "The 10 questions of part 8, as lesson 1, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q63-72 (10 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l9": {
+      "part": "9",
+      "does": "The 17 questions of part 9, the people questions (Q86-89) after the events they belong to, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q73-89 (17 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l10": {
+      "part": "10",
+      "does": "The 10 questions of part 10, as lesson 1, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q90-99 (10 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l11": {
+      "part": "11",
+      "does": "The 19 questions of part 11, the why-did-the-US-enter questions together so their reasons are compared, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q100-118 (19 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l12": {
+      "part": "12",
+      "does": "The 10 questions of part 12, as lesson 1, then the part's check.",
+      "feedback": "Accepted answers (all of them) and one sentence of meaning after every answer; a miss comes back later in the lesson until right.",
+      "check": "Q119-128 (10 items): Every item of the part asked once more, mixed, no options, answered from memory; at least 9 in 10 right on the first try (misses stay in the queue).",
+      "why": [
+        "C1",
+        "R8",
+        "C4",
+        "R2",
+        "C6",
+        "R4"
+      ]
+    },
+    "l13": {
+      "part": "13",
+      "does": "Twelve new stories, mixed federal, state and local, all three questions each, feedback after each, then the news test (six more new stories).",
+      "feedback": "After every story, the decisive sentence in it is highlighted and the interview fact the answer rests on is named.",
+      "check": "The news test of the end result: six new news-style stories never seen before, mixed federal, state and local; for each, name who made the call (level and body), whether it is theirs to make, and who could stop or undo it; at least 5 of 6 with all three right.",
+      "why": [
+        "C8",
+        "R8"
+      ]
+    },
+    "l14": {
+      "part": "14",
+      "does": "Check the eight entered answers, then a 20-question mock interview, spoken, no feedback until the end, misses then go to the queue; a second mock a week or more later.",
+      "feedback": "None during the mock, like the real interview; at the end the score and the accepted answers of every miss, which go to the queue.",
+      "check": "The interview test of the end result: a mock interview of 20 questions drawn at random from the 128, heard (or read where speech is not available), no options, answered from memory in a few words; at least 16 of 20 right, on two mock interviews at least a week apart.",
+      "why": [
+        "C1",
+        "R8",
+        "R4",
+        "C5"
+      ]
+    }
+  },
   "pilot": "l1",
-  "tried": {
-    "pilot": null
-  }
+  "approved": {
+    "goal": null,
+    "practice": null
+  },
+  "tried": {},
+  "opened": [
+    "docs/research/civics-interview-and-news.md",
+    "docs/research/review-after-lessons.md",
+    "docs/learning-science.md",
+    "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf"
+  ]
 }
 ---
 # civics: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 2 and 3 are drafts waiting for the owner's approval; until then V69 keeps every lesson of this
 subject as it is. The content that exists predates the gates and is audited against this record (gates 4 and 5, designed

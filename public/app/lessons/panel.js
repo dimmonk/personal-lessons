@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WHAT A LABEL NEEDS ===================== */
-// Lesson standard 26.1 (`rules`, `has`, a facet that is compared) and 26.1.2 (the `panel` block and the label on a `post`). Pure: no page and
+// Lesson standard 3 (`rules`, `has`, a facet that is compared) and 3.9 (the `panel` block and the label on a `post`). Pure: no page and
 // no storage, so the player, the validator and the tests all read what a label needs, and what the words show of it, the same way.
 //   subject.rules   { [ruleId]: { name, needs: [{ id, text }], heading? } }   what a label (or a word) needs; need ids are different across the subject.
 //                   A rule with a `heading` is a checklist of its own (what counts as what someone did): the heading stands over its needs in

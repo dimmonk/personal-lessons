@@ -10,24 +10,29 @@ what those do not cover. Each finding says what was read.
 **C1. What the test is.** Applicants who file Form N-400 on or after 20 October 2025 take the 2025 civics test: an
 **oral** test; the officer asks up to 20 of 128 published questions; **12 right passes**; the officer stops at 12 right or
 9 wrong. Those who filed earlier take the 2008 test (10 of 100, 6 to pass). A failed test is retaken once, 60 to 90 days
-later, on the failed part only. *Read: USCIS "Study for the Test" page and "Scoring Guidelines for the U.S.
-Naturalization Test" (v.10_20_25), full text.* **Design:** the practice is a spoken question answered from memory in a
-few words; no options are ever shown at the interview, so none are shown in practice.
+later, on the failed part only. *Read: full text, USCIS "Study for the Test" page (2025 and 2008 sections; the stop at 12 right or 9 wrong is there), "Scoring
+Guidelines for the U.S. Naturalization Test" v.10_20_25 (civics paragraph and retest paragraph, p. 2: 12 of 20, oral, retest
+60 to 90 days later on the failed part only) and M-1778 p. 1, 2026-10-12.* **Design:** the practice is a spoken question
+answered from memory in a few words; no options are ever shown at the interview, so none are shown in practice.
+**Decides:** the practice form (a question heard, an answer produced from memory, no options) and the shape of the end test (a
+20-question spoken mock interview drawn from the 128, with the bar set above the real 12).
 
 **C2. What the answers are.** The 128 questions and their accepted answers are published (M-1778, 09/25). Many accept
-several answers ("Name one power of the president": six accepted); some ask for two, three or five; about 20 ask
+several answers ("Name one power of the president": six accepted); some ask for two, three or five; 19 ask
 "why" with a short accepted reason (Q15 three branches "so one part does not become too powerful"; Q26 shorter House
 terms "to more closely follow public opinion"; Q56 justices for life "to be independent"). Eight depend on where the
 applicant lives or who holds office at the interview date (Q23, 29, 30, 38, 39, 57, 61, 62); USCIS posts the current names
 at uscis.gov/citizenship/testupdates. USCIS "encourages" answering with the listed answers while allowing that other
-correct answers exist. *Read: M-1778, full text.* **Design:** the item bank is the 128 with their accepted answers;
+correct answers exist, and the applicant must give the name of the official serving at the time of the interview. *Read: full
+text, M-1778: the introduction on p. 1 and Q15 to Q62 (pp. 3 to 8), 2026-10-12.* **Design:** the item bank is the 128 with their accepted answers;
 checking accepts any listed answer and counts distinct answers for "name two/three/five"; the learner looks up and
-enters the eight variable answers themselves.
+enters the eight variable answers themselves. **Decides:** the item bank (the 128 with their accepted answers, distinct answers
+counted for "name two/three/five") and that the eight variable answers are entered by the learner, never stored in the app.
 
 **C3. How the officer speaks.** For the English part, officers "repeat and rephrase" questions until satisfied the
 applicant understands. The civics questions are asked orally. *Read: Scoring Guidelines, full text.* **Design:**
 practice the question heard as well as read; rephrasings are not part of the published test, so they are a small extra,
-not the core.
+not the core. **Supports.**
 
 ## Recalling facts for a spoken answer
 
@@ -35,7 +40,7 @@ not the core.
 retention three days later than multiple-choice practice (Kang, McDermott & Roediger, 2007, *European Journal of
 Cognitive Psychology* 19, 528–558, Experiment 2); without feedback and with low first-try success, multiple choice did
 better (Experiment 1). *Read: abstract and secondary summaries.* With R8 (response match, Pan & Rickard 2018) this
-points one way: produce the answer, then see the accepted answer at once.
+points one way: produce the answer, then see the accepted answer at once. **Supports.**
 
 **C5. Saying it or typing it: little difference to the testing effect.** Typing, speaking and silent recall gave
 similar testing benefits in the few studies found (Sundqvist, Mäntylä & Jönsson, 2017, *Frontiers in Psychology*
@@ -44,24 +49,34 @@ Putnam & Roediger, 2013, *Memory & Cognition* 41, 36–48, citation only, abstra
 remembered better than reading it silently (the production effect: MacLeod et al., 2010; a meta-analysis of
 between-group designs, Fawcett 2013, g ≈ 0.37). *Read: secondary summaries; strength limited.* **Design:** typed recall
 is a sound core practice; saying the answer aloud first is cheap and asked for; the final mock interview is spoken and
-heard, because that is the real moment's form (R8), not because speaking is proven to teach more.
+heard, because that is the real moment's form (R8), not because speaking is proven to teach more. **Supports.**
 
 **C6. "Why" answers need a meaning, not only a string.** Asking learners to explain why a fact is true (elaborative
 interrogation) and self-explanation are rated moderate utility (Dunlosky et al., 2013, via `docs/learning-science.md`
 P15). *Read: as cited there.* **Design:** each item gets one plain sentence of what it means when first shown; the
-answer that is checked stays the short official one.
+answer that is checked stays the short official one. **Supports.**
 
 ## Reading a news story about the government
 
 **C7. Knowing the domain is what makes a text readable.** Readers who knew baseball understood and recalled a game
 description far better than those who did not, whatever their general reading ability (Recht & Leslie, 1988, *Journal of
-Educational Psychology*, 64 young teenagers; small, and its broader use is criticized by Shanahan). Knowledge of
+Educational Psychology* 80(1), 16-20, 64 young teenagers; small, and its broader use is criticized by Shanahan). Knowledge of
 institutions and processes is the core of measured political knowledge, and in US surveys it is low (Delli Carpini &
 Keeter, 1996, *What Americans Know about Politics and Why It Matters*: 44% could name one branch). *Read: secondary
 summaries.* **Design:** the system-of-government facts (who writes laws, who signs and vetoes, what courts do, what is
 federal and what is state) are learned first and then used, in news-format stories, to answer who made the call, whether
 it is theirs to make, and who can stop it. No study was found that tests this transfer from civics facts to news
-reading directly: the pilot and the end checks are the evidence.
+reading directly: the pilot and the end checks are the evidence. **Supports** (would decide the order of the parts, each fact part
+just before the news part that uses it; full text not reachable 2026-10-12: a judgement call).
+
+**C8. Judging is practised on new stories of the same kind, a worked one first, look-alikes in pairs, then mixed.** Carried over
+from `docs/learning-science.md`, whose strength labels are kept: transfer to new cases of the same kind in the format real life
+uses is moderate, and far transfer is rare (P25); a complete worked case before the learner runs the route alone is strong for
+novices, moderate for classification (P10); teaching by contrast, cases in pairs, is moderate (P12); mixing confusable kinds is
+strong for pictures and mathematics but limited for verbal and conceptual categories, which is what a news story is (P22).
+*Read: as marked there, mostly abstracts.* **Design:** the news lessons (2, 5, 6) open with one worked story, go through
+contrast pairs, then mix, always on stories the learner has not seen. **Supports** (would decide the pairs-then-mixed order of
+lessons 2, 5 and 6; full text not reached 2026-10-12: a judgement call).
 
 ## What the evidence does not settle
 - Whether a spoken mock interview teaches more than typed recall; C5 says probably little, so speech is for the final

@@ -39,13 +39,12 @@ const interviewItem = (id, ...rest) => ['subjects', 'interview', 'items', id, ..
 const interviewLesson = (id, ...rest) => ['subjects', 'interview', 'lessons', id, ...rest];
 const interviewMeta = (...rest) => ['subjects', 'interview', 'meta', ...rest];
 
-// V69: the last commit's lock with one lesson's content different, and a design record with the given approvals and words
+// V69: the last commit's lock with one lesson's content different, and a design record patched as given (reviews and research too)
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
-const asDesign = (input, lessonKey, patch) => {
-  const { changes, ...rest } = patch;
-  return { ...input, designs: { ...input.designs, [F]: { ...input.designs[F], ...rest } }, committedLock: changed(input.lock, lessonKey) };
-};
-const TRIED = { date: '2026-10-10', words: 'Clear on a phone.' };
+const asDesign = (input, lessonKey, patch, more = {}) => ({
+  ...input, ...more, designs: { ...input.designs, [F]: { ...input.designs[F], ...patch } }, committedLock: lessonKey ? changed(input.lock, lessonKey) : input.committedLock });
+const design = input => input.designs[F];
+const failingReview = { by: 'stand-in', date: '2026-10-11', review: 'reviews/l1.md', waived: 'keep going' };
 const padding = Array.from({ length: 200 }, () => 'The chance is a number.').join(' ');
 
 export const CONTROLS = [
@@ -53,7 +52,6 @@ export const CONTROLS = [
   { rule: 'V36', name: 'a reason opens with praise', data: (d, h) => h.setIn(d, item('c-2', 'reason'), 'Correct. A 20% chance means rain on about two days in ten like this one.') },
   { rule: 'V36', name: 'a trap\'s line opens with a bare verdict', data: (d, h) => h.setIn(d, tillGen('t-cart', 'asks', 1, 'traps', 0, 'then'), 'Wrong. That is the answer you get when the roast chicken is left out.') },
   { rule: 'V45', name: 'a lesson at revision 2 with one history entry', data: (d, h) => h.setIn(d, lesson('l2', 'rev'), 2) },
-  { rule: 'V45', name: 'a live lesson with no word from the owner', data: (d, h) => h.removeIn(d, lesson('l1', 'tried')) },
   { rule: 'V46', name: 'content that differs from the lock', keepLock: true,
     data: (d, h) => h.setIn(d, lesson('l2', 'why'), 'A forecast also says when. Rain at night does not need an umbrella on your walk at noon.') },
   { rule: 'V46', name: 'a deployed lesson changed with the same revision', keepLock: true,
@@ -68,13 +66,47 @@ export const CONTROLS = [
   { rule: 'V60', name: 'a British spelling in a reason', data: (d, h) => h.setIn(d, item('c-5', 'reason'), 'Ninety percent is nearly certain, and the colour of the sky agrees.') },
   { rule: 'V62', name: 'an abstract word in a reason', data: (d, h) => h.setIn(d, item('c-6', 'reason'), 'Ten percent is a small chance, so utilize the free hand.') },
   { rule: 'V69', name: 'no design record', input: input => ({ ...input, designs: {} }) },
-  { rule: 'V69', name: 'a lesson changed before the end result was approved',
-    input: input => asDesign(input, 'fixture/l1', { approved: { endResult: null, practice: '2026-10-10', pilot: '2026-10-10' } }) },
-  { rule: 'V69', name: 'a lesson past the pilot changed before the pilot was tried',
-    input: input => asDesign(input, 'fixture/l2', { tried: { pilot: null } }) },
-  { rule: 'V69', name: 'a design record whose pilot try is not a date and words', input: input => asDesign(input, 'fixture/l1', { tried: { pilot: 'yes' } }) },
+  { rule: 'V69', name: 'a lesson changed before the goal was approved',
+    input: input => asDesign(input, 'fixture/l1', { approved: { ...design(input).approved, goal: null } }) },
+  { rule: 'V69', name: 'a lesson changed while an ask of the owner\'s is neither kept nor dropped',
+    input: input => asDesign(input, 'fixture/l1', { asked: [{ ...design(input).asked[0], kept: null }] }) },
+  { rule: 'V69', name: 'an ask kept by a part that does not exist', input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], kept: '9' }] }) },
+  { rule: 'V69', name: 'an ask dropped without the owner\'s words', input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], kept: null, dropped: true }] }) },
+  { rule: 'V69', name: 'a lesson changed while an ask the owner said to keep is in no part yet',
+    input: input => asDesign(input, 'fixture/l1', { asked: [{ ...design(input).asked[0], kept: null, owner: { date: '2026-10-12', words: 'keep it' } }] }) },
+  { rule: 'V69', name: 'an undecided ask with no content changed (allowed: the record is valid, the content waits)', green: true,
+    input: input => asDesign(input, null, { asked: [{ ...design(input).asked[0], kept: null }] }) },
+  { rule: 'V69', name: 'an ask dropped on the owner\'s words, with a lesson changed (allowed)', green: true,
+    input: input => asDesign(input, 'fixture/l1', { asked: [{ ...design(input).asked[0], kept: null, dropped: true, owner: { date: '2026-10-12', words: 'drop it' } }] }) },
+  { rule: 'V69', name: 'the topics list changed after the owner approved it', input: input => asDesign(input, null, { topics: [...design(input).topics, 'the wind'] }) },
+  { rule: 'V69', name: 'a lesson changed while a signed-off topic is in no part',
+    input: input => asDesign(input, 'fixture/l1', { parts: design(input).parts.map(p => ({ ...p, topics: [] })), approved: { ...design(input).approved, goal: null } }) },
+  { rule: 'V69', name: 'a part covering a topic that is not on the list', input: input => asDesign(input, null, { parts: design(input).parts.map(p => p.id === '1' ? { ...p, topics: [...p.topics, 'the wind'] } : p) }) },
+  { rule: 'V69', name: 'the goal changed after the owner approved it', input: input => asDesign(input, null, { goal: design(input).goal + ' And more.' }) },
+  { rule: 'V69', name: 'a lesson past the pilot changed before the pilot\'s review passed',
+    input: input => asDesign(input, 'fixture/l2', { tried: { l2: design(input).tried.l2 } }) },
+  { rule: 'V69', name: 'a live lesson whose stand-in review fails',
+    input: input => asDesign(input, null, { tried: { ...design(input).tried, l1: failingReview } }, { reviews: { ...input.reviews, [F]: { ...input.reviews[F], 'reviews/l1.md': 'fails' } } }) },
+  { rule: 'V69', name: 'a stand-in entry whose review file does not exist',
+    input: input => asDesign(input, null, { tried: { ...design(input).tried, l1: { ...failingReview, review: 'reviews/l9.md' } } }) },
+  { rule: 'V69', name: 'a review file that does not open with its verdict', input: input => ({ ...input, reviews: { ...input.reviews, [F]: { 'reviews/l2.md': 'unreadable' } } }) },
+  { rule: 'V69', name: 'a lesson block whose end check is not its part\'s',
+    input: input => asDesign(input, null, { lessons: { ...design(input).lessons, l2: { ...design(input).lessons.l2, check: 'Three forecasts; all right.' } } }) },
+  { rule: 'V69', name: 'a built lesson with no block', input: input => asDesign(input, null, { lessons: { l1: design(input).lessons.l1 } }) },
+  { rule: 'V69', name: 'a block that applies a principle gate 1 does not have',
+    input: input => asDesign(input, null, { lessons: { ...design(input).lessons, l1: { ...design(input).lessons.l1, why: ['U9'] } } }) },
+  { rule: 'V69', name: 'a principle that decides, read from an abstract',
+    input: input => asDesign(input, null, { principles: [{ id: 'U1', note: 'umbrella-days', decides: true, read: 'abstract' }] }) },
+  { rule: 'V69', name: 'a principle that is not a finding of its note',
+    input: input => asDesign(input, null, { principles: [...design(input).principles, { id: 'U7', note: 'umbrella-days', decides: false, read: 'full' }] }) },
+  { rule: 'V69', name: 'a record whose principles all merely support', input: input => asDesign(input, null, { principles: [{ id: 'U2', note: 'umbrella-days', decides: false, read: 'abstract' }] }) },
+  { rule: 'V69', name: 'a part with no check', input: input => asDesign(input, null, { parts: design(input).parts.map(p => p.id === '2' ? { id: p.id, title: p.title } : p) }) },
+  { rule: 'V69', name: 'a goal longer than a screen', input: input => asDesign(input, null, { goal: Array.from({ length: 60 }, () => 'You can read a forecast.').join(' ') }) },
+  { rule: 'V69', name: 'a designer who opened the subject\'s own lessons before the gates', input: input => asDesign(input, null, { opened: ['public/subjects/fixture/l1.lesson.js'] }) },
+  { rule: 'V69', name: 'a designer who opened another subject\'s record', input: input => asDesign(input, null, { opened: ['docs/subjects/chorus/design.md'] }) },
   { rule: 'V69', name: 'the pilot changed before it was tried (allowed)', green: true,
-    input: input => asDesign(input, 'fixture/l1', { tried: { pilot: null } }) },
+    data: (d, h) => h.setIn(d, lesson('l1', 'status'), 'draft'),
+    input: input => asDesign(input, 'fixture/l1', { tried: {} }) },
   { rule: 'V70', name: 'an ask of an unknown kind', data: (d, h) => h.setIn(d, item('c-2', 'asks', 0, 'kind'), 'telepathy') },
   { rule: 'V70', name: 'a number with no tolerance', data: (d, h) => h.removeIn(d, tillGen('t-cart', 'asks', 1, 'tol')) },
   { rule: 'V70', name: 'a frame with two blanks and a one-number answer', data: (d, h) => h.setIn(d, tillItem('t-recipe', 'asks', 0, 'answer'), 3) },

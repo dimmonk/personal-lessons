@@ -1,4 +1,4 @@
-// The browser checks of lesson standard 26.7 for typed numbers, documents and figures: X13 (the number ask) and X20 (the drawn figures and
+// The browser checks of lesson standard 9 for typed numbers, documents and figures: X13 (the number ask) and X20 (the drawn figures and
 // documents match their data). Each is a function of the environment (e2e-env.mjs) that drives the real app in Chromium on the test subject
 // "At the till" (tests/fixtures/fixture-subject/till-*.js) and returns its checker. tests/e2e-controls.mjs runs each against the app with a
 // seeded fault and requires exactly that check to go red. (X20 draws the figures of the test subject "At the till" here, and the charts and the

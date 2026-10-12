@@ -1,4 +1,4 @@
-// Section 13, R3, as 26.7 keeps it: fingerprints. A fingerprint is the full SHA-256 of the canonical JSON (keys sorted) of what the
+// Section 13, R3, as 9 keeps it: fingerprints. A fingerprint is the full SHA-256 of the canonical JSON (keys sorted) of what the
 // learner can see or be marked on, stored as "sha256:<64 hex>". A lesson's covers the lesson, every item and generator it names
 // (a generator's text, parameters and the source of its `make`), and the items held in reserve for the topics its check covers.
 // A subject's covers its record without rev and history. The app's own wording is in no fingerprint: FC.ENGINE goes up when it changes.
@@ -27,7 +27,7 @@ export function lessonFingerprint(data, subjectId, lessonId) {
   // the items held in reserve for those strands come back as the review's questions, so a change to one is a change to what is taught
   const reserve = [...Object.values(subject.items), ...Object.values(subject.gens)].filter(d => strands.has(d.strand)).map(d => d.id);
   const ids = [...new Set([...named, ...reserve])].sort();
-  return fingerprint({ lesson: omit(lesson, 'rev', 'status', 'history', 'tried'), items: byId(ids.map(id => asData(defs(id)))) });
+  return fingerprint({ lesson: omit(lesson, 'rev', 'status', 'history'), items: byId(ids.map(id => asData(defs(id)))) });
 }
 
 export function subjectFingerprint(data, subjectId) {

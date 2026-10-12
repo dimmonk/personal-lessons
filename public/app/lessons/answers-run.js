@@ -1,5 +1,5 @@
 /* ===================== LESSONS: ENTERING THE LEARNER'S OWN ANSWERS ===================== */
-// Lesson standard 26.1 (an `own` step on the form into `answers`), 26.3 and 26.5 (step 9). The learner types the answers that depend on where
+// Lesson standard 3 (an `own` step on the form into `answers`), 5 and 7 (step 9). The learner types the answers that depend on where
 // they live and who holds office, and the date of their interview, from the page the form names. They are saved whole to `pl:<subject>:notes`
 // as `answers` and nowhere else, never scored against a truth and never sent anywhere. The same form is a step of a lesson and a screen of the
 // subject (the answers change, and are looked up again before a mock interview). Needs the lesson player (LESSON, lessonShell, heading, goOn),

@@ -1,5 +1,5 @@
 /* ===================== SINGING: THE STRIP AND THE CONTROLS OF A SUNG QUESTION ===================== */
-// Lesson standard 26.1.2 (the `pitch` block) and 26.1.1 (the line). The strip shows time across and the learner's voice up, the targets as
+// Lesson standard 3.9 (the `pitch` block) and 3.8 (the line). The strip shows time across and the learner's voice up, the targets as
 // bars and the voice as a line drawn as they sing. It is drawn from a view the sing controller (sing-run.js) builds: these functions only
 // turn a view into HTML and a list of points into a path, so nothing here reads the page, the sound system or storage.
 // A view: { plan, showLine, bars, path, status, prompt, button, skip, micLine, micOff, hidden }

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: RECALLING AN ANSWER, AND CHECKING IT ===================== */
-// Lesson standard 26.1 (the `text` ask with accepted answers) and 26.7 (X14), as built in step 9. A question is answered from memory in a few
+// Lesson standard 3 (the `text` ask with accepted answers) and 9 (X14), as built in step 9. A question is answered from memory in a few
 // words and checked against the answers a published list accepts. Pure: no page and no storage. Needs view.js (paras).
 //   ask    { id, kind: 'text', prompt, accept: [Entry] | { own: 'answers.q23' }, count?: n, when? }
 //   Entry  'Writes laws'                                        one accepted answer; words in brackets are optional
@@ -157,7 +157,7 @@ const scoreRecall = (data, ask, answer) => recallMatch(ask, answer) ? 'ok' : 'no
 const recallGiven = (ask, typed) => (recallMatch(ask, typed) || { used: [] }).used;
 
 /* ---------- the learner's own answers ---------- */
-// "Answers will vary" questions read what the learner entered in the answers form (26.3): `accept: { own: 'answers.q23' }`. The entry may hold several
+// "Answers will vary" questions read what the learner entered in the answers form (5): `accept: { own: 'answers.q23' }`. The entry may hold several
 // answers, one after another with a semicolon between (two senators).
 const recallOwnKey = ask => String(ask.accept.own).replace(/^answers\./, '');
 const recallOwnEntries = value => String(value === undefined || value === null ? '' : value).split(/[;\n]/).map(s => s.trim()).filter(Boolean);

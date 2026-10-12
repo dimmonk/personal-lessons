@@ -1,5 +1,5 @@
-// X26: Wealth's pilot lesson, "What it costs a year, in dollars", end to end on a phone (375 px). Not one of the checks the standard lists in 26.7:
-// it was added with step 4 (26.10), the way step 3 ran Math's pilot. The test plays a learner who types every answer: the rule and the worked
+// X26: Wealth's pilot lesson, "What it costs a year, in dollars", end to end on a phone (375 px). Not one of the checks the standard lists in 9:
+// it was added with step 4 (3 to 9), the way step 3 ran Math's pilot. The test plays a learner who types every answer: the rule and the worked
 // account (the household's papers as tabs); a first group with the last steps left to the learner, one dollar figure typed as a percent used for
 // dollars (a named slip) and the question coming back with new numbers; a second group, one switch to the wrong kind of fund (a named slip);
 // the step on the learner's own data, which opens the sheet form because the sheet is empty, then the costs and a dated change with its

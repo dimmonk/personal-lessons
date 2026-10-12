@@ -3,7 +3,6 @@
 FC.lesson('interview', {
   id: 'l3', part: '3', title: 'The mock', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-11', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-11', words: 'Clear on a phone.' },
   why: 'The real interview is spoken, with no options and no help. This is the same.',
   flow: [{ title: 'Before you start', show: [{ kind: 'prose', text: 'Listen to each question, say your answer out loud, then type it.' }] }],
   check: {

@@ -1,4 +1,4 @@
-// The pure half of step 8 (lesson standard 26.1, 26.1.2, 26.2, 26.3, 26.10): the six forms of a message laid out, a call that pushes back walked down every
+// The pure half of step 8 (lesson standard 3, 3.9, 4, 5, 3 to 9): the six forms of a message laid out, a call that pushes back walked down every
 // path, steps put in order, the countdown's arithmetic, the busy task, the plan and the own ways in, a baseline kept apart from every figure; and what
 // must be true of Scams' pilot and baseline as data: half of every group real, a real message never marked as the failure whatever it contains, a real
 // invoice paid the way you already pay, no scam whose best action is to do what it says, invented names only. No browser: the app's scripts are loaded as

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE LEARNER'S OWN DATA ON SCREEN ===================== */
-// Lesson standard 26.3 and 26.5. The HTML of the sheet form, of what the accounts cost, of the dated actions and of the "Your accounts and
+// Lesson standard 5 and 26.5. The HTML of the sheet form, of what the accounts cost, of the dated actions and of the "Your accounts and
 // dates" section of the subject screen. Pure string builders: nothing here reads the page or the storage (own-run.js does).
 //   problems: [{ path, text }]   the message that belongs under a field ("accounts.0.holdings.1.value")
 //   Every box carries data-path, so a typed value goes back into the draft of the field it belongs to.

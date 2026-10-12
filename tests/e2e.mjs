@@ -1,5 +1,5 @@
 // Drives the real app in Chromium. Run: npm run test:e2e
-//   1. every browser check of 26.7 built so far (e2e-checks.mjs, and the sound checks of e2e-sing.mjs), on the app with the test subjects loaded;
+//   1. every browser check of 9 built so far (e2e-checks.mjs, and the sound checks of e2e-sing.mjs), on the app with the test subjects loaded;
 //   2. the installable app: its name, manifest, service worker, offline load and fonts;
 //   3. every seeded fault (e2e-controls.mjs): the app with one fault in it must turn exactly one check red.
 import { chromium } from 'playwright';

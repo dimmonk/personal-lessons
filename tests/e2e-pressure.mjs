@@ -1,4 +1,4 @@
-// X17, X18, X37, X38, X39 and X40, on the pressure of a message (lesson standard 26.1, 26.1.2, 26.2, 26.3, 26.7; new with step 8, 26.10). Each is a
+// X17, X18, X37, X38, X39 and X40, on the pressure of a message (lesson standard 3, 3.9, 4, 5, 9; new with step 8, 3 to 9). Each is a
 // function of the environment (e2e-env.mjs) that drives the real app in Chromium on the test subject "Under pressure"
 // (tests/fixtures/fixture-subject/pressure-*.js) and returns its checker; tests/e2e-controls.mjs runs each against the app with a seeded fault and
 // requires exactly that check to go red.

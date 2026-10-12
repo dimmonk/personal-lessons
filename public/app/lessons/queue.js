@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A RUN OF QUESTIONS ===================== */
-// Lesson standard 26.1 and 26.2. One question a screen: the blocks, the asks in order (each opens when the one before is answered),
+// Lesson standard 3 and 26.2. One question a screen: the blocks, the asks in order (each opens when the one before is answered),
 // then the feedback, which opens only when the last ask is answered so that no answer gives a later one away. Groups of questions
 // in a lesson, the end check, the weekly review and a retest all run through here; the caller says what to do with the result.
 // Nothing advances by itself: the learner taps Next.
@@ -7,11 +7,11 @@
 // Q: { subj, data, list: [instance], at, cur: { a, many, done, score, left, taps, arrived, timedOut, words }, log, context, feedback: 'after-each' | 'at-end',
 //      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt, spoken }
 // A spoken run (`spoken`, the mock interview) holds the words of every question that is read aloud behind "Show the words" (speech-run.js).
-// A timed group or check (`seconds`, 26.2) gives each question that many seconds, counted on the frame clock (timer-run.js); at zero the question
+// A timed group or check (`seconds`, 4) gives each question that many seconds, counted on the frame clock (timer-run.js); at zero the question
 // stops with a timeout and waits for Next. A call or chat that pushes back is not timed. In a busy group (`over: 'busy'`) the banner of a question
 // arrives after the learner has sorted BUSY_TAPS_BEFORE things of the busy task, and the countdown starts then.
 // log entry: { inst, a, r, ok, first, unscored }
-// A sung question (26.1.1) is answered by the sing controller (sing-run.js), which calls answerAsk when a try is scored. A warm-up is
+// A sung question (3.8) is answered by the sing controller (sing-run.js), which calls answerAsk when a try is scored. A warm-up is
 // unscored: it is not stored, not counted, and never comes back. `keepMic` leaves the microphone on when this run ends (the range
 // exercise that opens a sung run).
 

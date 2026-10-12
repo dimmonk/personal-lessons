@@ -1,5 +1,5 @@
-// X30: Stats' pilot lesson, "Find the claim and its number", end to end on a phone (375 px). Not one of the checks the standard lists in 26.7: it
-// was added with step 5 (26.10), the way step 4 ran Wealth's pilot (X26). The test plays a learner who taps every answer: what to find and the
+// X30: Stats' pilot lesson, "Find the claim and its number", end to end on a phone (375 px). Not one of the checks the standard lists in 9: it
+// was added with step 5 (3 to 9), the way step 4 ran Wealth's pilot (X26). The test plays a learner who taps every answer: what to find and the
 // worked story (a headline that says more than its story); a first group of three with the deciding words marked (one claim taken for the wrong
 // kind, one "cannot tell" believed, both coming back); a second group of five (one sound claim turned down); the check, passed 4 of 5 with its
 // rules; the subject screen; the record; and the review two days later, which asks a question held in reserve.

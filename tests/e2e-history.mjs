@@ -1,4 +1,4 @@
-// X28 (26.10, step 4, a note of 2026-10-11): the phone's Back button goes back inside the app. The app is one page, so the installed app used to
+// X28 (3 to 9, step 4, a note of 2026-10-11): the phone's Back button goes back inside the app. The app is one page, so the installed app used to
 // leave on the first Back. From the library the learner goes to a subject and into a lesson; two presses of Back land on the subject (the
 // lesson's place kept) and then on the library, and the page is never anywhere but the app's own origin. A screen of the review goes back to
 // the library, and a Back leaves no confirmation of a delete open on the subject screen that was left.

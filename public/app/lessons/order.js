@@ -1,5 +1,5 @@
 /* ===================== LESSONS: PUTTING STEPS IN ORDER ===================== */
-// Lesson standard 26.1 (the `order` ask). The learner taps steps in the order they would do them. Pure: no page and no storage, so the player,
+// Lesson standard 3 (the `order` ask). The learner taps steps in the order they would do them. Pure: no page and no storage, so the player,
 // the validator and the tests all score an order the same way.
 //   ask    { id, kind: 'order', prompt, steps: [{ id, text }], right: [stepId], scored?: 'whole' | 'first', then: Text, when? }
 //   `steps` are all the steps offered (a step that is in none of `right` is one that does not belong); `right` is the order of the steps the learner

@@ -1,5 +1,5 @@
-// X25: Math's pilot lesson, "Ballpark and check", end to end on a phone (375 px). Not one of the checks the standard lists in 26.7: it was added
-// with step 3 (26.10), the way step 2 ran Singing's pilot with a microphone fed known notes. The test plays a learner who types every answer:
+// X25: Math's pilot lesson, "Ballpark and check", end to end on a phone (375 px). Not one of the checks the standard lists in 9: it was added
+// with step 3 (3 to 9), the way step 2 ran Singing's pilot with a microphone fed known notes. The test plays a learner who types every answer:
 // the teaching screens and the worked example; a first group of three with a rough total typed first, one estimate that misses and a slip that
 // is named (the missed question coming back with new numbers); a second group; a printed total trusted when it was wrong, and one caught with
 // its error found; then the check, one estimate off by half, passed 7 of 8; the result with every rule; the subject screen; and the record.

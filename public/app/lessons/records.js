@@ -1,9 +1,9 @@
 /* ===================== LESSONS: WHAT IS STORED, AND WHAT IS WORKED OUT FROM IT ===================== */
-// One practice record per subject (lesson standard 26.3). Every figure the app shows (done marks, check results, accuracy by
+// One practice record per subject (lesson standard 5). Every figure the app shows (done marks, check results, accuracy by
 // facet, slips, due dates) is computed from it; nothing is stored twice. Records are replaced, never edited in place.
 //   pl:<subject>:items   { [itemId or generatorId]: { tries: [Try] } }     the last twelve tries per item and context
 //   pl:<subject>:seen    { [lessonId]: { rev, at } }                       the revision last opened and the place (a step index)
-//   pl:<subject>:notes   the learner's private data for the subject (26.3): Singing's range, Wealth's sheet, the plan, Civics' answers and interview date
+//   pl:<subject>:notes   the learner's private data for the subject (5): Singing's range, Wealth's sheet, the plan, Civics' answers and interview date
 //   pl:log               [{ d, type, subject?, lesson?, rev? }]            at most 500, oldest dropped first
 // Try = { d, run, lesson, rev, engine, context, sup, seed?, a, r, ok, ms? }
 
@@ -16,7 +16,7 @@ function addDays(day, n){
   const [y, m, d] = day.split('-').map(Number);
   return dayOf(new Date(y, m - 1, d + n));
 }
-// Weeks run Monday to Sunday in local time. `day` is 'YYYY-MM-DD'; the answer is that week's Sunday (lesson standard 24).
+// Weeks run Monday to Sunday in local time. `day` is 'YYYY-MM-DD'; the answer is that week's Sunday (lesson standard 6).
 function weekEnd(day = today()){
   const [y, m, d] = day.split('-').map(Number), sinceMonday = (new Date(y, m - 1, d).getDay() + 6) % 7;
   return addDays(day, 6 - sinceMonday);
@@ -45,7 +45,7 @@ function itemsOf(subjectId){
   if(!itemsCache[subjectId]) itemsCache[subjectId] = storageRead(`pl:${subjectId}:items`) || {};
   return itemsCache[subjectId];
 }
-// Tries of the old lessons stay in storage untouched and are never read: they have no run (26.3).
+// Tries of the old lessons stay in storage untouched and are never read: they have no run (5).
 const isNewTry = t => typeof t.run === 'string';
 const rawTries = (subjectId, key) => (itemsOf(subjectId)[key] || { tries: [] }).tries;
 const triesOf = (subjectId, key) => rawTries(subjectId, key).filter(isNewTry);
@@ -67,7 +67,7 @@ function recordTry(subjectId, key, attempt){
   storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
   return entry;
 }
-// A claim (26.3): the try of a question just answered, with one miss counted on the learner's word ("my answer means the same"). The record replaces
+// A claim (5): the try of a question just answered, with one miss counted on the learner's word ("my answer means the same"). The record replaces
 // the try, never edits it, and the claim is logged. The question still comes back: a claimed try is not a good day (schedule.js).
 const triesClaimed = t => Object.values(t.r).includes('claimed');
 function claimTry(subjectId, key, run, seed, askId){
@@ -109,7 +109,7 @@ const notesOf = subjectId => storageRead(`pl:${subjectId}:notes`) || {};
 function saveNote(subjectId, field, value){
   storageSave(`pl:${subjectId}:notes`, { ...notesOf(subjectId), [field]: value });
 }
-// Singing's range (26.3): { low, high, set }, the lowest and highest notes the learner sang steadily, or null until it is measured
+// Singing's range (5): { low, high, set }, the lowest and highest notes the learner sang steadily, or null until it is measured
 const rangeOf = subjectId => notesOf(subjectId).range || null;
 
 /* ---------- the log (sessions; the export, E19) ---------- */

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: BUILDING A GROUP OF QUESTIONS ===================== */
-// Lesson standard 26.2 (order and difficulty). A group of questions (a lesson's `set`) is built from its references when it starts:
+// Lesson standard 4 (order and difficulty). A group of questions (a lesson's `set`) is built from its references when it starts:
 // pairs kept side by side in a random order, the order listed or shuffled, questions from earlier lessons mixed in unlabelled,
 // generated ones made with fresh numbers. The same run gives the same group.
 

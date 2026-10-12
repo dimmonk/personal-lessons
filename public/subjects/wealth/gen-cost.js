@@ -1,5 +1,5 @@
 // Wealth, lesson 2 "What it costs a year, in dollars": a plan's statement and its fee sheet, made with fresh numbers each time (lesson standard
-// 26.1, a generator). An account holds two funds, a stock fund and a bond fund. The learner finds each fund's yearly cost on the fee sheet,
+// 3, a generator). An account holds two funds, a stock fund and a bond fund. The learner finds each fund's yearly cost on the fee sheet,
 // turns the two into dollars, adds the plan's own fee, and decides: change a fund, or leave it alone. Two generators, one for each decision.
 // Dollars are whole dollars and yearly costs whole hundredths of a percent, so no rounding decides a mark; every number is a pure function
 // of the seed. The worked example (items-cost.js) is the same account with its numbers fixed.

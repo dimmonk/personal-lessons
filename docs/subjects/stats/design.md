@@ -1,56 +1,323 @@
 ---
 {
   "subject": "stats",
+  "asked": [
+    {
+      "id": "before-you-believe",
+      "words": "Before you believe a number",
+      "when": "2026-10-05",
+      "where": "old Unit One at the tag old-lessons",
+      "owner": null,
+      "kept": "A",
+      "dropped": false
+    },
+    {
+      "id": "claim-holds-up",
+      "words": "When a claim with numbers holds up",
+      "when": "2026-10-05",
+      "where": "old Unit Two",
+      "owner": null,
+      "kept": "C",
+      "dropped": false
+    },
+    {
+      "id": "wrong-people",
+      "words": "Four ways a figure can come from the wrong people, and how to spot each one",
+      "when": "2026-10-05",
+      "where": "old Unit Three",
+      "owner": null,
+      "kept": "D",
+      "dropped": false
+    },
+    {
+      "id": "why-it-moved",
+      "words": "Why a number moved",
+      "when": "2026-10-05",
+      "where": "old Unit Four",
+      "owner": null,
+      "kept": "E",
+      "dropped": false
+    },
+    {
+      "id": "trust-a-figure",
+      "words": "Before you trust a figure",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": "G",
+      "dropped": false
+    },
+    {
+      "id": "it-worked",
+      "words": "Before you believe \"it worked\": four other explanations for the same result, and the one fair test",
+      "when": "2026-10-05",
+      "where": "old Unit Six",
+      "owner": null,
+      "kept": "E",
+      "dropped": false
+    }
+  ],
   "kinds": [
     "judging",
     "procedure"
   ],
+  "principles": [
+    {
+      "id": "C1",
+      "note": "judging-statistical-claims",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "C2",
+      "note": "judging-statistical-claims",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "C3",
+      "note": "judging-statistical-claims",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "C4",
+      "note": "judging-statistical-claims",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "C5",
+      "note": "judging-statistical-claims",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "C6",
+      "note": "judging-statistical-claims",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "C7",
+      "note": "judging-statistical-claims",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "C8",
+      "note": "judging-statistical-claims",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "C9",
+      "note": "judging-statistical-claims",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "C10",
+      "note": "judging-statistical-claims",
+      "decides": false,
+      "read": "summary"
+    }
+  ],
+  "goal": "After this subject, when a number on your phone is about to make you believe, share or act, in a headline and its article, a chart, an ad, a post or a report, you can tell whether it shows what it is used to claim, point to what is wrong or missing when it does not, and say how big it really is in plain terms, so many in 1,000. It does not do statistics, read a study's methods, check a source on the web, or decide whether an effect matters to you.",
+  "topics": [
+    "Find the claim and its number",
+    "Size it plainly",
+    "Compared with what",
+    "Who was counted, and how",
+    "Cause or just a link",
+    "Read the chart, not its shape",
+    "The whole item, unprompted"
+  ],
   "endResult": "When you meet a number on your phone (a headline and its article, a chart, an ad, a post or a report) and are about to believe, share or act on it, you can tell whether it shows what it is used to claim, point to what is wrong or missing when it does not, and say how big it is in plain terms (so many in 1,000).",
   "realMoment": "Reading on your phone: a headline with its article, a chart in a post, an ad or a report summary, with a number doing the persuading, and a choice to believe, share or act.",
   "test": "Ten new items in their real form (headline plus article, chart, ad), from areas of life not used in the lessons, with no questions or hints: about four hold up, four do not show what they claim, two do not say enough. For each: verdict (holds up / does not show it / cannot tell from this), the line that decides it (or 'not given'), and the plain size typed where there is a risk or a change. Pass: verdict and deciding line right on 8 of 10, at most one sound item rejected, plain size right on 4 of 5. Repeated with new items four weeks later.",
+  "out": "Doing statistics (significance, confidence intervals, regression); reading a study's methods section; checking a source on the web (lateral reading, a separate skill); spotting invented or fraudulent numbers; deciding whether an effect matters to you (a value judgement: the subject gives the size, you decide); making charts; building the habit of checking unprompted (an optional if-then plan is offered, nothing more is claimed).",
   "practice": "Judging whole items in their real form from the first lesson: read, commit to a verdict, tap the deciding line, type the plain size; feedback right after each with the line highlighted and the reading worked out. Each lesson adds one question, taught by one worked item; sound claims in every set; later lessons mix all questions with no prompt; the app brings back new items on a spaced schedule. Most of each lesson is doing.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "From the app, right after each item: the right verdict; the deciding line highlighted in the item; two to four sentences of reading in the question's words; what you would need to see for it to hold; the plain size worked out with the numbers. Separate running scores for problems found and for sound items wrongly rejected.",
+  "delivery": [
+    "show a multi-paragraph item (headline, body, source line) on a phone: built (text cases)",
+    "tap-to-choose verdicts and reasons: built",
+    "tap the sentence of the item that gives the claim or the number, with 'Not given' as a choice, and check it: built (lesson standard 26.10, 2026-10-11)",
+    "show a chart drawn from data (bar and line, real axes, a cut axis redrawn from zero in the feedback): built",
+    "show the 1,000-people picture in the feedback: built",
+    "take a typed number and check it with a tolerance: planned before lesson 2",
+    "score sound-item rejections separately and show them: planned before lesson 2 (check records.js)",
+    "spaced return of new items per part, chosen by the app: planned before the first review (per-part item banks)"
+  ],
+  "readingShare": 0.33,
+  "form": "A whole item as it arrives on a phone (a headline with its article, a chart, an ad, a report summary), judged by committing to a verdict, tapping the line that decides it or 'not given', and typing the plain size where there is a risk or a change. Each part's check is a short set of new items in that form, scored on verdict and line, with a typed number for the sizes and the charts.",
   "parts": [
     {
       "id": "A",
-      "title": "Find the claim and its number"
+      "title": "Find the claim and its number",
+      "check": "5 new items: tap the claim's kind and the line with its number; verdict where the headline outruns the body. 4 of 5",
+      "topics": [
+        "Find the claim and its number"
+      ]
     },
     {
       "id": "B",
-      "title": "Size it plainly"
+      "title": "Size it plainly",
+      "check": "5 new numbers in items: typed plain size, right within rounding on 4 of 5, and whether the headline's word (\"doubles\", \"slashes\") fits",
+      "topics": [
+        "Size it plainly"
+      ]
     },
     {
       "id": "C",
-      "title": "Compared with what"
+      "title": "Compared with what",
+      "check": "6 new items, mixed fair, unfair and none: verdict and deciding line on 5 of 6",
+      "topics": [
+        "Compared with what"
+      ]
     },
     {
       "id": "D",
-      "title": "Who was counted, and how"
+      "title": "Who was counted, and how",
+      "check": "6 new items: verdict and line on 5 of 6",
+      "topics": [
+        "Who was counted, and how"
+      ]
     },
     {
       "id": "E",
-      "title": "Cause or just a link"
+      "title": "Cause or just a link",
+      "check": "6 new items, including sound randomised ones: verdict and line on 5 of 6",
+      "topics": [
+        "Cause or just a link"
+      ]
     },
     {
       "id": "F",
-      "title": "Read the chart, not its shape"
+      "title": "Read the chart, not its shape",
+      "check": "5 new charts: typed real change on 4 of 5 and verdict",
+      "topics": [
+        "Read the chart, not its shape"
+      ]
     },
     {
       "id": "G",
-      "title": "The whole item, unprompted"
+      "title": "The whole item, unprompted",
+      "check": "8 new items: the Gate 2 test in small (verdict and line on 7 of 8, at most one sound item rejected)",
+      "topics": [
+        "The whole item, unprompted"
+      ]
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "A",
+      "does": "2 min, one worked item (headline \"X cuts Y\"; the article's own words say \"linked to\"; the number and what it counts). 10 min, 8 items: tap the claim's kind and the line with the number; verdict (holds / does not show it / cannot tell); several items where the headline outruns the body, several sound.",
+      "feedback": "the claim and the number highlighted; where the headline outruns the text, the two lines side by side.",
+      "check": "5 new items: tap the claim's kind and the line with its number; verdict where the headline outruns the body. 4 of 5",
+      "why": [
+        "C2",
+        "C4",
+        "C9",
+        "C10"
+      ]
+    },
+    "l2": {
+      "part": "B",
+      "does": "3 min, one worked item (\"halves your risk\": picture 1,000 people, 4 become 2), with percent versus percentage points shown on the same item. 10 min, 10 items: type the plain size, then say whether the headline's word fits; some items have no base (\"cannot tell\": out of how many?).",
+      "feedback": "the 1,000 people worked out with the item's numbers; the typed answer compared.",
+      "check": "5 new numbers in items: typed plain size, right within rounding on 4 of 5, and whether the headline's word (\"doubles\", \"slashes\") fits",
+      "why": [
+        "C5",
+        "C6",
+        "C9",
+        "C10"
+      ]
+    },
+    "l3": {
+      "part": "C",
+      "does": "2 min, one worked pair on the same topic, one fair comparison and one unfair, with the learner told what to compare. 10 min, 8 items mixed fair, unfair, none, including a rise that comes from counting differently or looking harder (more tests, a new definition); about a third turn on A or B instead.",
+      "feedback": "the deciding line; what the fair comparison would be.",
+      "check": "6 new items, mixed fair, unfair and none: verdict and deciding line on 5 of 6",
+      "why": [
+        "C2",
+        "C4",
+        "C8",
+        "C10"
+      ]
+    },
+    "l4": {
+      "part": "D",
+      "does": "2 min, one worked item (an online poll, or a study in mice reported as people). 10 min, 8 items: small samples, self-chosen answerers, survivors, the wrong people, the seller's own survey, and sound samples; a third on A to C.",
+      "feedback": "the line that names who was counted, and who the claim is about, side by side.",
+      "check": "6 new items: verdict and line on 5 of 6",
+      "why": [
+        "C1",
+        "C4",
+        "C8",
+        "C10"
+      ]
+    },
+    "l5": {
+      "part": "E",
+      "does": "3 min, one worked pair: the same question answered by a randomised trial (holds) and by a survey of people who chose (does not show the cause), with the other explanation named. 10 min, 8 items including bounce-back after an extreme and the reversed arrow; a third on A to D.",
+      "feedback": "the line that shows how the groups were formed; the other explanation in one sentence; what a fair test would be.",
+      "check": "6 new items, including sound randomised ones: verdict and line on 5 of 6",
+      "why": [
+        "C1",
+        "C2",
+        "C4",
+        "C8",
+        "C10"
+      ]
+    },
+    "l6": {
+      "part": "F",
+      "does": "2 min, one worked chart drawn two ways from the same data, with the real change worked out from the axis. 10 min, 8 charts in posts and articles: type the real change, then the verdict; some charts fair.",
+      "feedback": "the axis start and the two values marked; the change worked out; the same data drawn from zero.",
+      "check": "5 new charts: typed real change on 4 of 5 and verdict",
+      "why": [
+        "C5",
+        "C6",
+        "C7",
+        "C10"
+      ]
+    },
+    "l7": {
+      "part": "G",
+      "does": "1 min, recall the questions before seeing them listed (retrieval, not a reread). 12 min, 10 mixed items with no question shown, sound, faulty and \"cannot tell\" in an unpredictable order, a plain size wherever one applies.",
+      "feedback": "as in every lesson, plus the learner's two scores (problems found; sound items rejected).",
+      "check": "8 new items: the Gate 2 test in small (verdict and line on 7 of 8, at most one sound item rejected)",
+      "why": [
+        "C8",
+        "C9",
+        "C10"
+      ]
+    }
+  },
   "pilot": "l1",
+  "approved": {
+    "goal": null,
+    "practice": null
+  },
   "tried": {
-    "pilot": null
-  }
+    "l1": {
+      "by": "stand-in",
+      "date": "2026-10-11",
+      "review": "reviews/l1.md",
+      "waived": "keep going. just finish everything and don't wait on my read"
+    }
+  },
+  "opened": [
+    "docs/research/judging-statistical-claims.md",
+    "docs/research/review-after-lessons.md",
+    "docs/learning-science.md"
+  ]
 }
 ---
 # stats: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 2 to 5 were designed blind (before reading the existing lessons), then the existing lessons
 were audited against them (last section). Gates 2 and 3 below revise the drafts the owner approved: the verdict gains

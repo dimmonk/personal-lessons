@@ -1,4 +1,4 @@
-// The pure half of the typed number (lesson standard 26.1, 26.2, step 3): what is typed, tolerances, slips, the estimate and its "disagree" line,
+// The pure half of the typed number (lesson standard 3, 4, step 3): what is typed, tolerances, slips, the estimate and its "disagree" line,
 // the calculator, documents and figures as HTML, and the numbers Math's questions are made of. No browser: the app's scripts are loaded as in
 // tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/number-pure.mjs

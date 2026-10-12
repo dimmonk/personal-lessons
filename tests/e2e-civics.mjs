@@ -1,5 +1,5 @@
-// X45: Civics' pilot lesson, "Who does what", end to end on a phone (375 px). Not one of the checks the standard lists in 26.7: it was added with step 9
-// (26.10), the way step 8 ran Scams' pilot (X41). The test plays a learner who types every answer: the subject screen (the pilot and the thirteen parts
+// X45: Civics' pilot lesson, "Who does what", end to end on a phone (375 px). Not one of the checks the standard lists in 9: it was added with step 9
+// (3 to 9), the way step 8 ran Scams' pilot (X41). The test plays a learner who types every answer: the subject screen (the pilot and the thirteen parts
 // not built yet), the why and the map of the three branches, four groups of questions (the three branches with two misses, Congress, the
 // president with one miss, the courts), each read aloud when the learner taps and answered from memory, the check (the same 17 again, in a new order,
 // 16 to pass), the record, the results, the review two days later (each question comes back as itself) and the form for the learner's own answers.

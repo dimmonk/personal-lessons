@@ -1,5 +1,5 @@
 /* ===================== SINGING: ONE SUNG TRY ON SCREEN ===================== */
-// Lesson standard 25 (item 3) and 26.1.1. A sung question runs on the sound system's clock and the browser's frame loop, never on a
+// Lesson standard 3.8 (item 3) and 26.1.1. A sung question runs on the sound system's clock and the browser's frame loop, never on a
 // timer: a tap plays the target (the app listens to nothing while it plays and for a quarter of a second after), the learner's window
 // opens at that moment and is as long as the target plus 0.4 s (a hold: its seconds plus 1 s), and every reading the microphone
 // gives falls on that same clock. When the window ends the try is scored (sing-score.js) and handed to the queue as an answer, which
@@ -160,7 +160,7 @@ function singScored(s, plan){
   const answer = singAnswer(plan, s.readings, s.windowStartS, SING_SCALE && SING_SCALE.talk);
   return answer || { retry: 'nothing' };
 }
-// The range is measured here and saved once, as the learner's private data (26.3); the try stores only how much was found.
+// The range is measured here and saved once, as the learner's private data (5); the try stores only how much was found.
 function singRangeScored(s, plan){
   const found = singFindRange(plan, s.readings, s.windowStartS);
   if(!found) return { retry: 'nothing' };

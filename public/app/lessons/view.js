@@ -1,6 +1,6 @@
 /* ===================== LESSONS: SMALL HELPERS AND THE APP'S OWN WORDING ===================== */
 // Lookups over a subject's registered data, text helpers every screen uses, and SAY: the sentences the app owns, the same in
-// every subject, so no lesson types them (lesson standard 26.5). The engine's own names (strand, facet, ask, item, set,
+// every subject, so no lesson types them (lesson standard 7). The engine's own names (strand, facet, ask, item, set,
 // generator, support) are never shown to the learner (tests/plain-words.mjs).
 
 const paras = text => text == null ? [] : Array.isArray(text) ? text : [text];
@@ -64,7 +64,7 @@ const SAY = {
   needLabel: 'What you would need to see',
   workingLabel: 'The working',
   consequence: 'What happens next',
-  // a typed number (26.1): the boxes, the calculator, the estimate
+  // a typed number (3): the boxes, the calculator, the estimate
   numberHint: 'Type a number. You can use the calculator.',
   numberEstimateHint: 'A rough answer from your head. No calculator for this one.',
   numberBox: 'Your answer',
@@ -105,7 +105,7 @@ const SAY = {
   yourRange: 'Your range',
   rangeAgain: 'Find my range again',
   rangeIs: (low, high) => `${low} to ${high}`,
-  // sung questions (26.1.1): the app's words around a try. A learner never sees a music word here: no cents, hertz, half-step, octave or pitch
+  // sung questions (3.8): the app's words around a try. A learner never sees a music word here: no cents, hertz, half-step, octave or pitch
   singToGoOn: 'Sing above to go on',
   singLabel: { warmup: 'Warm-up', range: 'Find your range', match: 'Match the note', hold: 'Hold the note', slide: 'Slide to the note',
     interval: 'Sing both notes', melody: 'Sing the tune', light: 'Sing it lightly' },
@@ -162,7 +162,7 @@ const SAY = {
   singLoudLine: 'That was louder than your talking voice. Sing it again with less force and keep the note.',
   singRangeSaved: 'Your range is saved',
   singWarmupDone: 'Warm-up done',
-  // a form of several fields (26.1), a dated value looked up, the papers of a household (26.1.2)
+  // a form of several fields (3), a dated value looked up, the papers of a household (3.9)
   formHint: 'Type each number, then tap Answer.',
   formHintChoose: 'Type each number and choose where asked, then tap Answer.',
   docTabs: 'The papers',
@@ -170,7 +170,7 @@ const SAY = {
   refSource: source => `Source: ${source}`,
   refCheck: 'A value like this changes. Check the source before you rely on it.',
   refOld: 'This was looked up more than a year ago. Look it up again before you rely on it.',
-  // the learner's own data (26.3, 26.5): the sheet, what it costs, the dated actions, the moments, export and delete
+  // the learner's own data (5, 7): the sheet, what it costs, the dated actions, the moments, export and delete
   ownEyebrow: 'On your own accounts',
   ownSheetTitle: 'Your accounts',
   ownPrivate: 'This stays on this phone and is never sent anywhere. Do not type an account number, a login or a password.',
@@ -239,7 +239,7 @@ const SAY = {
   ownDeleteNo: 'Keep them',
   ownDeleted: 'Deleted from this phone.',
   ownOnPhone: 'Kept on this phone only. Your export file and the buttons below are the only way it leaves.',
-  // an article, a chart, the people, a tapped line (26.1.2)
+  // an article, a chart, the people, a tapped line (3.9)
   artAd: 'Ad',
   artReport: 'Report summary',
   chartSource: source => `Source: ${source}`,
@@ -250,7 +250,7 @@ const SAY = {
   youTapped: 'You tapped',
   tapNotThat: 'That is not the sentence.',
   tapThereIsOne: 'The text does give one. It is marked above.',
-  // a label pinned on words, what it needs, and the sides it is thrown from (26.1.2)
+  // a label pinned on words, what it needs, and the sides it is thrown from (3.9)
   pinnedOn: 'The words it is pinned on',
   panelHeading: 'What the label needs',
   helpPanel: 'What the label needs is shown beside the words.',
@@ -260,7 +260,7 @@ const SAY = {
   hasNowhere: 'The words do not say it.',
   splitHeading: name => `${name}, side by side`,
   helpPanelNamed: name => `${name} is shown beside the words.`,
-  // a message as it arrives (26.1.2), and a line the learner writes against a model (26.1)
+  // a message as it arrives (3.9), and a line the learner writes against a model (3)
   msgYou: 'You',
   writeHint: 'Write it in your own words, then tap Answer. Or tap Not yet to see a model line.',
   writeBox: 'Your words',
@@ -270,7 +270,7 @@ const SAY = {
   writeNone: 'You did not write one.',
   writeModel: 'A model line',
   writeCompare: 'Yours will not match word for word. Compare what each one says.',
-  // a message in the forms it arrives in on a phone, a timed question, a call or chat that pushes back, steps put in order, the busy task (26.1.2, 26.2)
+  // a message in the forms it arrives in on a phone, a timed question, a call or chat that pushes back, steps put in order, the busy task (3.9, 4)
   msgCaller: 'The caller says',
   msgLink: 'The link in it',
   msgButton: 'The button in it',
@@ -292,7 +292,7 @@ const SAY = {
   busyWhere: name => `Where does ${name} go?`,
   busySorted: n => n === 0 ? 'Nothing sorted yet.' : `${cap(numWord(n))} sorted so far.`,
   busyWait: 'A message may arrive.',
-  // the plan, the own ways in, and a baseline (26.3, 26.5)
+  // the plan, the own ways in, and a baseline (5, 7)
   planIf: 'If',
   planThen: 'I will',
   planEyebrow: 'Your plan',
@@ -327,7 +327,7 @@ const SAY = {
   baselineLine: (riskyText, risky, slipText, n, realText, real, ok) => `Of ${risky} ${riskyText}, you ${lowerFirst(slipText)} on ${n}. Of ${real} ${realText}, you handled ${ok} the right way.`,
   baselineNote: 'This was not graded. It is what you can compare with later.',
   baselineRow: day => `Before you start, ${day}`,
-  // a question answered from memory, a question read aloud, a claim, the checks of a list of questions, your own answers (26.1, 26.1.2, 26.3; step 9)
+  // a question answered from memory, a question read aloud, a claim, the checks of a list of questions, your own answers (3, 3.9, 5; step 9)
   recallBox: 'Your answer',
   recallHint: 'Not sure? Tap Not yet to see the answers.',
   recallMany: n => `Give ${numWord(n)} different answers, with a comma between them. Not sure? Tap Not yet to see the answers.`,

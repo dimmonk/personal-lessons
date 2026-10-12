@@ -1,4 +1,4 @@
-// The browser checks of lesson standard 26.7 built in step 1: X1, X2, X3, X5, X21, X22, X23; the sound checks of step 2 (X8, X10, X11, X12,
+// The browser checks of lesson standard 9 built in step 1: X1, X2, X3, X5, X21, X22, X23; the sound checks of step 2 (X8, X10, X11, X12,
 // X16) are in tests/e2e-sing.mjs and listed here with them; the numbers of step 3 (X13, X20, and X25, Math's pilot walked) are in
 // tests/e2e-number.mjs and e2e-math.mjs; the papers and the learner's own data of step 4 (X24, X27, and X26, Wealth's pilot walked) are in
 // tests/e2e-own.mjs and e2e-wealth.mjs; the articles, the tap and the charts of step 5 (X15, X31, and the chart half of X20, which is in
@@ -131,7 +131,7 @@ export async function X3(env) {
   return c;
 }
 
-/* ---------- X5: the stored keys are those of 26.3 ---------- */
+/* ---------- X5: the stored keys are those of 5 ---------- */
 const KEY = /^(pl:(app|log|recent)|pl:[a-z]+:(items|seen|notes))$/;
 export async function X5(env) {
   const c = env.checker('X5'), { context, page } = await env.freshPage(c);

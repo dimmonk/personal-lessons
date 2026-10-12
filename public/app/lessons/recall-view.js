@@ -1,5 +1,5 @@
 /* ===================== LESSONS: AN ANSWER FROM MEMORY, ON SCREEN ===================== */
-// Lesson standard 26.1 (the `text` ask with `accept`), 26.2 and 26.7 (X14). Pure HTML builders over recall.js: the box a learner types an answer in,
+// Lesson standard 3 (the `text` ask with `accept`), 4 and 9 (X14). Pure HTML builders over recall.js: the box a learner types an answer in,
 // the marks after it, the accepted answers (all of them, so the learner sees which they gave), the claim "my answer means the same", and the interview
 // question a news answer rests on. Nothing here reads the page or the storage.
 //   st: { answer, marks, locked, typed }  the same as the other asks; the answer is the words typed, or '' for "Not yet"

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE BUSY TASK, ON SCREEN ===================== */
-// Lesson standard 26.2 item 6 (`over: 'busy'`). A tap on a bin sorts the thing in front of the learner and moves to the next; the banner of the
+// Lesson standard 4 item 6 (`over: 'busy'`). A tap on a bin sorts the thing in front of the learner and moves to the next; the banner of the
 // question arrives after BUSY_TAPS_BEFORE sorts and its countdown starts then. What is sorted is never scored and never stored. Needs the queue
 // (Q, paintQueue) and busy.js.
 

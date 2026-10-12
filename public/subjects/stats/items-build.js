@@ -1,4 +1,4 @@
-// Stats: the one way a question of part A is put together (lesson standard 26.1). Every question is a headline, post, ad or report as it arrives
+// Stats: the one way a question of part A is put together (lesson standard 3). Every question is a headline, post, ad or report as it arrives
 // on a phone, and three answers in one order: what it claims (a kind), the sentence that gives the number it rests on (or "Not given"), and
 // whether the text shows what it claims. The helper writes the three asks, so the words of the asks and the slips they name are the same in
 // every question; what differs is the thing itself, and the lines that decide it. It makes plain data and registers nothing.

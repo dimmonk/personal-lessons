@@ -3,7 +3,6 @@
 FC.lesson('pressure', {
   id: 'l1', part: '1', title: 'Act, check or leave', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-11', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-11', words: 'Clear on a phone.' },
   why: 'A message wants something. Decide what to do before the time is up.',
   flow: [
     { title: 'Six ways a message arrives',

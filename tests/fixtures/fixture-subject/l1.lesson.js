@@ -1,7 +1,6 @@
 FC.lesson('fixture', {
   id: 'l1', part: '1', title: 'Read the chance', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-10', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-10', words: 'Clear on a phone. The marked words helped.' },
   why: 'A forecast gives a chance of rain, not a promise. Your job is to decide in a few seconds whether to bring an umbrella.',
   flow: [
     { title: 'What a chance means',

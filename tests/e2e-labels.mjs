@@ -1,4 +1,4 @@
-// X32 and X33, on a label pinned on a post (lesson standard 26.1.2, 26.7; new with step 6, 26.10). Each is a function of the environment
+// X32 and X33, on a label pinned on a post (lesson standard 3.9, 9; new with step 6, 3 to 9). Each is a function of the environment
 // (e2e-env.mjs) that drives the real app in Chromium and returns its checker; tests/e2e-controls.mjs runs each against the app with a seeded fault
 // and requires exactly that check to go red.
 //   X32  the mechanics, on the test subject "Pinned labels" (tests/fixtures/fixture-subject/labels-*.js): a labelled post is drawn (who posted, how

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE LEARNER'S OWN ANSWERS, ON SCREEN ===================== */
-// Lesson standard 26.3 and 26.5 (step 9). The answers a few interview questions depend on, which the app cannot know: who the learner's senators
+// Lesson standard 5 and 7 (step 9). The answers a few interview questions depend on, which the app cannot know: who the learner's senators
 // are, the governor, the capital of their state, who holds the highest offices now, and the date of their interview. The learner looks them up on
 // the page the form itself names and types them. Pure HTML builders over own.js: the form, and the part of the subject screen that shows them.
 // Nothing here reads the page or the storage.

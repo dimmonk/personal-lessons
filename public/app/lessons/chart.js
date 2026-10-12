@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE NUMBERS OF A CHART ===================== */
-// Lesson standard 26.1.2 (the `chart` block). Pure: where the axis starts, where each tick, bar and point is drawn, and what is wrong
+// Lesson standard 3.9 (the `chart` block). Pure: where the axis starts, where each tick, bar and point is drawn, and what is wrong
 // with a chart's data. The view (chart-view.js), the validator and the tests all read the picture from here, so the axis a learner sees
 // is the axis the data says. Nothing here reads the page.
 //   chart { kind: 'chart', type: 'bars' | 'line', title, x: [label], y: { from, to, step, unit }, series: [{ name, values: [number] }],

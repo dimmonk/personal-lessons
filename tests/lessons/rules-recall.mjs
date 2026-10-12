@@ -1,6 +1,6 @@
-// Section 26.7, step 9: V84 (a published list of questions names its source). A subject that asks questions from memory against a list somebody else
+// Section 9, step 9: V84 (a published list of questions names its source). A subject that asks questions from memory against a list somebody else
 // publishes (Civics: the 128 questions of USCIS form M-1778) records where the list is and the day it was looked up, so a reader can check it and
-// the app can say how old it is (refs, 26.1; V70 holds each ref's day to be a real one). Nothing here repeats V70.
+// the app can say how old it is (refs, 3; V70 holds each ref's day to be a real one). Nothing here repeats V70.
 import { subjectRule, checkEach } from './rule.mjs';
 
 const ASKS_FROM_LIST = item => item.asks.some(a => a.kind === 'text' && 'accept' in a);

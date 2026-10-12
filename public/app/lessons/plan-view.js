@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE PLAN AND THE OWN WAYS IN, ON SCREEN ===================== */
-// Lesson standard 26.3 and 26.5. Pure HTML builders over plan.js and own-view.js: the plan form and the plan as a sentence, the list of things the
+// Lesson standard 5 and 26.5. Pure HTML builders over plan.js and own-view.js: the plan form and the plan as a sentence, the list of things the
 // learner does on their own phone, and the part of the subject screen that shows both. Nothing here reads the page or the storage.
 //   problems: [{ path, text }]   the message that belongs under a field (the path is the field's id)
 

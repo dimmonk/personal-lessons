@@ -1,17 +1,17 @@
-// The exact shapes of lesson standard 26.1, written once in the schema language of schema.mjs. The ask kinds and block kinds
+// The exact shapes of lesson standard 3, written once in the schema language of schema.mjs. The ask kinds and block kinds
 // are those the engine has built (ASK_KINDS and BLOCK_KINDS in public/app/lessons/rules.js); a lesson that uses another fails V70
-// until its step of 26.8 is built.
+// until its step of 10.3 is built.
 import { str, text, int, num, bool, fn, any, en, arr, map, obj, either, nullable } from './schema.mjs';
 
 export const STATUSES = ['draft', 'live'];
-export const SLOTS = ['range', 'sheet', 'answers', 'plan', 'setup', 'lines', 'actions', 'triggers'];   // where a private form may write (26.3)
+export const SLOTS = ['range', 'sheet', 'answers', 'plan', 'setup', 'lines', 'actions', 'triggers'];   // where a private form may write (5)
 
 const history = arr(obj({ rev: int, date: str, change: str }));
 const idText = obj({ id: str, text: str });
 
-/* the subject (26.1) */
+/* the subject (3) */
 const MIX_ENTRY = either(obj({ facet: str, value: str }, { min: num, max: num }), obj({ facet: str, equal: bool }));
-// A field of a private form (26.3). A choice reads its words from one of the subject's lists. `warn` is the plausible range: a number over
+// A field of a private form (5). A choice reads its words from one of the subject's lists. `warn` is the plausible range: a number over
 // `over` or under `under` is kept and the learner is told why it looks wrong.
 const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text', 'date') },
   { list: str, unit: str, hint: str, optional: bool, warn: obj({ text: text }, { over: num, under: num }) });
@@ -26,7 +26,7 @@ export const SUBJECT = obj(
     danger: obj({ slip: str, facet: str, risky: str, real: str }) });
 function idTitle() { return obj({ id: str, title: str }); }
 
-/* blocks (26.1.2): prose, pair, document, figure, article, chart, panel, message and spoken so far */
+/* blocks (3.9): prose, pair, document, figure, article, chart, panel, message and spoken so far */
 // a line that can be tapped or marked; `para` starts a new paragraph, `fine` is small print, `slip` names the slip of tapping it when it is not the line
 // (`me` marks a line you sent, in a thread)
 const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str, me: bool });
@@ -68,7 +68,7 @@ export const PANEL = obj({ kind: en('panel'), rules: arr(str) });
 export const CHART = obj({ kind: en('chart'), type: en('bars', 'line'), title: str, x: arr(str), y: obj({ from: num, to: num, step: num }, { unit: str }),
   series: arr(obj({ values: arr(num) }, { name: str })), source: str }, { labels: bool });
 
-/* asks (26.1): choose, number, form, tap, text, exchange and order */
+/* asks (3): choose, number, form, tap, text, exchange and order */
 // a call or chat that branches on the learner's reply (exchange.js): turns, each with what the other side says and the replies to pick, and the ends
 export const EXCHANGE_OPTION = either(obj({ id: str, text: str, goto: str }), obj({ id: str, text: str, end: str }));
 export const EXCHANGE = obj({ id: str, kind: en('exchange'), prompt: text, form: en('call', 'chat'), from: str, detail: str, start: str,
@@ -126,4 +126,4 @@ export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ 
 export const stepKind = step => Object.keys(STEPS).find(k => step && typeof step === 'object' && k in step);
 export const LESSON = obj(
   { id: str, part: nullable(str), title: str, rev: int, status: en(...STATUSES), history, why: text, flow: arr(any), check: CHECK },
-  { role: en('baseline'), tried: obj({ date: str, words: str }), trigger: str });
+  { role: en('baseline'), trigger: str });

@@ -1,56 +1,346 @@
 ---
 {
   "subject": "math",
+  "asked": [
+    {
+      "id": "check-the-problem",
+      "words": "Before you do the math, check what the problem is about",
+      "when": "2026-10-05",
+      "where": "old Unit One at the tag old-lessons",
+      "owner": null,
+      "kept": "1",
+      "dropped": false
+    },
+    {
+      "id": "whole-number-problems",
+      "words": "Six kinds of whole-number problem, and the steps for each",
+      "when": "2026-10-05",
+      "where": "old Unit Two",
+      "owner": null,
+      "kept": "2",
+      "dropped": false
+    },
+    {
+      "id": "primes-factors",
+      "words": "Primes and common factors",
+      "when": "2026-10-05",
+      "where": "old Unit Two",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "missing-number",
+      "words": "Find the missing number",
+      "when": "2026-10-05",
+      "where": "old Unit Three",
+      "owner": null,
+      "kept": "4",
+      "dropped": false
+    },
+    {
+      "id": "amounts-over-time",
+      "words": "Amounts that change over time",
+      "when": "2026-10-05",
+      "where": "old Unit Four",
+      "owner": null,
+      "kept": "6",
+      "dropped": false
+    },
+    {
+      "id": "counting-and-chance",
+      "words": "Counting ways, and how likely it is",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "lengths-areas-volumes",
+      "words": "Four types of problem about lengths, areas and volumes, and the steps for each",
+      "when": "2026-10-05",
+      "where": "old Unit Six",
+      "owner": null,
+      "kept": "5",
+      "dropped": false
+    },
+    {
+      "id": "right-triangles",
+      "words": "Right triangles: the ladder against a wall",
+      "when": "2026-10-05",
+      "where": "old Unit Six and the subject's own blurb",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    }
+  ],
   "kinds": [
     "procedure",
     "judging"
   ],
+  "principles": [
+    {
+      "id": "M1",
+      "note": "learning-everyday-math",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "M2",
+      "note": "learning-everyday-math",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "M3",
+      "note": "learning-everyday-math",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "M4",
+      "note": "learning-everyday-math",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "M5",
+      "note": "learning-everyday-math",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "M6",
+      "note": "learning-everyday-math",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "M7",
+      "note": "learning-everyday-math",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "M8",
+      "note": "learning-everyday-math",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "M10",
+      "note": "learning-everyday-math",
+      "decides": false,
+      "read": "summary"
+    }
+  ],
+  "goal": "After this subject, when a real situation hands you numbers and a question with no method named, a receipt, a recipe, a sale tag, a room to paint, a loan or a savings offer, you can work out the number it needs: a scaled amount, a percent, an area and how much to buy, what a loan costs or what savings grow to. You set it up from the situation, estimate first, use a calculator for the arithmetic, and tell whether the answer is sensible. It leaves out school algebra, mental arithmetic as a skill of its own, and anything you would not meet in a shop, a kitchen or a bank.",
+  "topics": [
+    "Ballpark and check",
+    "Rates and scaling",
+    "Percents forward",
+    "Percents backward and stacked",
+    "Areas, volumes and how much to buy",
+    "Money over time",
+    "Two steps and mixed"
+  ],
   "endResult": "Work out the number an everyday situation needs (a scaled amount, a percent, an area and how much to buy, the cost of a loan or the growth of savings), set up from the situation, with a calculator for the arithmetic, and tell whether the answer is sensible.",
   "realMoment": "A real situation with numbers and a question, no method named: a receipt, a recipe card, a sale tag, a room to paint, a loan or savings offer.",
   "test": "Six new problems in mixed order, one from each kind plus one two-step, no hint of the method. For each, type a rough estimate, then the answer (calculator allowed). Pass: at least 5 of 6 right to the stated rounding, and no answer more than double or less than half the right one. Taken at the end and again two weeks later.",
+  "out": "Arithmetic by hand and speed drills (the calculator does it; only rough mental rounding for estimates is taught); algebra beyond the one unknown a ratio or a percent gives, equations, negatives, powers beyond growth over years; geometry beyond rectangles, shapes made of rectangles, circles and boxes (no right triangles or the ladder rule); chance and statistics (the Statistical Claims subject); deciding which loan or saving is wise (the Wealth subject: this subject gives the number, not the choice); working out a loan's monthly payment (the lender states it; the learner works out what it costs in total).",
   "practice": "For each kind of problem: a worked example with each step's reason, then problems with the last steps left to do, then whole problems; every answer typed as a number, an estimate typed first, and feedback that shows the working and names the slip. Once two kinds are taught, problems are mixed so the learner chooses the method. Most of each lesson is solving.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "Immediate, from the app, after each typed answer: right or wrong against the problem's stated rounding; then the full working with the learner's own numbers, the picture filled in, and, where the answer matches a known wrong path, one line naming that slip. The estimate is shown next to the exact answer. While practicing, an answer more than double or less than half the learner's own estimate gets \"your answer and your estimate disagree; look again\" before it is scored; this prompt is removed in end checks.",
+  "delivery": [
+    "a typed numeric answer, scored with the problem's rounding, units shown",
+    "a typed estimate before the answer, scored as within half to double, with the \"your answer and your estimate disagree\" prompt",
+    "known wrong answers per problem mapped to a named slip",
+    "a worked example step by step, then completion problems with the last steps typed",
+    "problems made from number ranges, with the answer and the wrong paths computed, so numbers are fresh every time",
+    "mixed, unlabeled problems of earlier kinds, with wrong ones coming back later",
+    "a calculator on the problem screen",
+    "the kind's picture (a two-row table, a 100% bar, a labeled sketch, a year table) drawn with the problem's numbers"
+  ],
+  "readingShare": 0.25,
+  "form": "A short everyday situation worked to a typed number: an estimate typed first with no calculator, then the answer typed with its unit, scored against the problem's stated rounding and against half-to-double of the right answer. Every part's check is a small set of new problems of that kind in that same form, with no hint of the method, and the last part's check is the whole test.",
   "parts": [
     {
       "id": "1",
-      "title": "Ballpark and check"
+      "title": "Ballpark and check",
+      "check": "4 of 5 estimates within 20% of the exact answer, without the calculator; and of 3 shown totals, the one that is wrong (a slipped digit or a missed item) is caught",
+      "topics": [
+        "Ballpark and check"
+      ]
     },
     {
       "id": "2",
-      "title": "Rates and scaling"
+      "title": "Rates and scaling",
+      "check": "4 of 5 rate problems right, none outside half-to-double",
+      "topics": [
+        "Rates and scaling"
+      ]
     },
     {
       "id": "3",
-      "title": "Percents forward"
+      "title": "Percents forward",
+      "check": "4 of 5 right, none outside half-to-double",
+      "topics": [
+        "Percents forward"
+      ]
     },
     {
       "id": "4",
-      "title": "Percents backward and stacked"
+      "title": "Percents backward and stacked",
+      "check": "4 of 5 right, none outside half-to-double",
+      "topics": [
+        "Percents backward and stacked"
+      ]
     },
     {
       "id": "5",
-      "title": "Areas, volumes and how much to buy"
+      "title": "Areas, volumes and how much to buy",
+      "check": "4 of 5 right including the rounding up, none outside half-to-double",
+      "topics": [
+        "Areas, volumes and how much to buy"
+      ]
     },
     {
       "id": "6",
-      "title": "Money over time"
+      "title": "Money over time",
+      "check": "4 of 5 right, none outside half-to-double",
+      "topics": [
+        "Money over time"
+      ]
     },
     {
       "id": "7",
-      "title": "Two steps and mixed"
+      "title": "Two steps and mixed",
+      "check": "The gate 2 test",
+      "topics": [
+        "Two steps and mixed"
+      ]
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "1",
+      "does": "Read what rounding to one figure means, with one receipt worked (1 min); 6 everyday totals estimated in the head and typed, each followed by the exact total (5 min); 4 receipts or bills where a total is shown: right or wrong, and if wrong, by about how much (3 min); end check (4 min). About 13 minutes.",
+      "feedback": "The estimate against the exact answer and how far off in percent; for a receipt, which line the error is in.",
+      "check": "4 of 5 estimates within 20% of the exact answer, without the calculator; and of 3 shown totals, the one that is wrong (a slipped digit or a missed item) is caught",
+      "why": [
+        "M5",
+        "M7",
+        "M8"
+      ]
+    },
+    "l2": {
+      "part": "2",
+      "does": "Read what a rate is and the two-row table (1 min); one worked example, scaling a recipe from 4 to 7 servings, each step's reason, with a prompt \"why divide by 4 first?\" (2 min); 3 completion problems (unit price, hourly pay, fuel per distance), last step then last two steps typed (3 min); 6 whole problems, varied settings (a currency, a map scale, a unit change) (6 min); end check (4 min). About 16 minutes.",
+      "feedback": "The table filled in; the named slip for the upside-down ratio (\"you divided 4 by 7\").",
+      "check": "4 of 5 rate problems right, none outside half-to-double",
+      "why": [
+        "M1",
+        "M2",
+        "M3",
+        "M5",
+        "M6",
+        "M8"
+      ]
+    },
+    "l3": {
+      "part": "3",
+      "does": "Read the 100% bar: the whole is 100% (1 min); one worked example each for a percent of, a share as a percent and a percent change (3 min); 3 completion problems (2 min); 5 whole problems (5 min); 3 mixed problems with lesson 2 (2 min); end check (4 min). About 17 minutes.",
+      "feedback": "The bar filled in; slips named: the change divided by the new amount instead of the old, percent of the wrong whole.",
+      "check": "4 of 5 right, none outside half-to-double",
+      "why": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ]
+    },
+    "l4": {
+      "part": "4",
+      "does": "Read why a discount and a tax do not add (1 min); worked examples: a price before a 20% discount, a discount then a tax (2 min); 3 completion problems (2 min); 5 whole problems, including \"up 20%, then down 20%\" and percentage points (5 min); 3 mixed with lessons 2 and 3 (2 min); end check (4 min). About 16 minutes.",
+      "feedback": "The bar run backward; slips named: added the percents, took the percent of the price after the change.",
+      "check": "4 of 5 right, none outside half-to-double",
+      "why": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ]
+    },
+    "l5": {
+      "part": "5",
+      "does": "Read the labeled sketch, square units, and rounding up to whole cans (1 min); worked example: paint for a room with a door, coverage per can (2 min); 3 completion problems (an L-shaped floor, a round rug, a planter box) (3 min); 5 whole problems, some in mixed units (5 min); 3 mixed with earlier kinds (2 min); end check (4 min). About 17 minutes.",
+      "feedback": "The sketch with the measurements; slips named: perimeter instead of area, a unit not converted, rounded down.",
+      "check": "4 of 5 right including the rounding up, none outside half-to-double",
+      "why": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6"
+      ]
+    },
+    "l6": {
+      "part": "6",
+      "does": "Read the year-by-year table and the calculator's power key (1 min); worked examples: simple interest; growth at 5% for 10 years; a loan's total cost from payment times months (3 min); 3 completion problems (2 min); 5 whole problems, including doubling time estimated by 72 divided by the rate and checked on the calculator (5 min); 3 mixed (2 min); end check (4 min). About 17 minutes.",
+      "feedback": "The table's first years filled in; slips named: simple where it compounds, a monthly rate used as yearly, interest counted on the payment.",
+      "check": "4 of 5 right, none outside half-to-double",
+      "why": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7"
+      ]
+    },
+    "l7": {
+      "part": "7",
+      "does": "One worked two-step example (paint: area, cans, cost) (2 min); 3 two-step problems with the first step done (3 min); 8 problems of every kind, mixed, unlabeled, some two-step (9 min); then the gate 2 test (6 problems, about 6 min). About 20 minutes; may be split over two sessions with the test opening the second.",
+      "feedback": "As before; for a two-step problem, which step went wrong.",
+      "check": "The gate 2 test",
+      "why": [
+        "M2",
+        "M4",
+        "M10"
+      ]
+    }
+  },
   "pilot": "l1",
+  "approved": {
+    "goal": null,
+    "practice": null
+  },
   "tried": {
-    "pilot": null
-  }
+    "l1": {
+      "by": "stand-in",
+      "date": "2026-10-11",
+      "review": "reviews/l1.md",
+      "waived": "keep going. just finish everything and don't wait on my read"
+    }
+  },
+  "opened": [
+    "docs/research/learning-everyday-math.md",
+    "docs/research/review-after-lessons.md",
+    "docs/learning-science.md",
+    "public/app/lessons/ask.js",
+    "public/app/lessons/drill.js"
+  ]
 }
 ---
 # math: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 2 and 3 are drafts waiting for the owner's approval; until then V69 keeps every lesson of this
 subject as it is. The content that exists predates the gates and is audited against this record (gates 4 and 5, designed

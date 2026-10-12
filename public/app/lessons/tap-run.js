@@ -1,5 +1,5 @@
 /* ===================== LESSONS: TAPPING A LINE, ON SCREEN ===================== */
-// Lesson standard 26.1 (the `tap` ask). What happens on the screen the queue (queue.js) has just painted when a tap ask is open: a tap on a
+// Lesson standard 3 (the `tap` ask). What happens on the screen the queue (queue.js) has just painted when a tap ask is open: a tap on a
 // line of the text answers it (or, when several lines are wanted, picks it and Answer sends them), and "Not given" answers that nothing
 // is there. Needs the queue (Q, openAsk, answerAsk, queueItem, paintQueue) and tap.js.
 

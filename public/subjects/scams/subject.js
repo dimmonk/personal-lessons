@@ -1,4 +1,4 @@
-// Scams & Social Engineering: subject record (lesson standard 26.1). Two lessons are built: the pilot, lesson 3 "Act, check or leave" (part C, the core
+// Scams & Social Engineering: subject record (lesson standard 3). Two lessons are built: the pilot, lesson 3 "Act, check or leave" (part C, the core
 // decision), and lesson 0 "Before you start", the baseline built beside it (docs/subjects/scams/design.md, gate 5). The subject screen lists every other
 // part of the design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design record's,
 // word for word (V80, V71).

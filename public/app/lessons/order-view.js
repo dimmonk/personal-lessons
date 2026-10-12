@@ -1,5 +1,5 @@
 /* ===================== LESSONS: PUTTING STEPS IN ORDER, ON SCREEN ===================== */
-// Lesson standard 26.1 (the `order` ask). Pure HTML builders over order.js: the steps as buttons in a mixed order, each tapped one numbered in the
+// Lesson standard 3 (the `order` ask). Pure HTML builders over order.js: the steps as buttons in a mixed order, each tapped one numbered in the
 // order it was tapped, and after the answer the steps tapped marked right or wrong by their place. Nothing here reads the page.
 //   st: { answer?: [stepId], many?: [stepId], marks }
 

@@ -1,4 +1,4 @@
-// The pure half of the sound engine (lesson standard section 21): note names, cents, folding, the verdict, the checker of an
+// The pure half of the sound engine (lesson standard section 3.8): note names, cents, folding, the verdict, the checker of an
 // audio block's numbers, and the pitch finder measured on made-up signals. No browser. Run: node tests/audio-pure.mjs
 // Loads public/app/lessons/audio-notes.js and audio-pitch.js the way tests/load-app.mjs loads the page's scripts: as plain
 // scripts in one isolated context, so a script that touched the page or the sound system at load would fail here.

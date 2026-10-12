@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A CHART DRAWN FROM ITS DATA ===================== */
-// Lesson standard 26.1.2 (the `chart` block). An SVG drawn from the block's numbers by chart.js: real axes, bars or a line, a cut axis when
+// Lesson standard 3.9 (the `chart` block). An SVG drawn from the block's numbers by chart.js: real axes, bars or a line, a cut axis when
 // the data says so. The numbers drawn are the numbers in the data, never rounded or moved: a bar is as tall as its value is far above the
 // start of the axis, and the start of the axis is written on it. The title, the labels and the source are quoted material.
 

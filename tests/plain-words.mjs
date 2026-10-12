@@ -1,5 +1,5 @@
 // Words the learner never sees outside a quotation: the maintainers' names for the parts of the lesson machinery, which a beginner
-// has no reason to know (lesson standard K9, and the engine's own words from 26.7). One list, read by the lesson validator (V50, on
+// has no reason to know (lesson standard K9, and the engine's own words from 9). One list, read by the lesson validator (V50, on
 // every lesson, item and subject record) and by the browser tests (on every screen as shown).
 // Say instead: "question" for an item, "group of questions" for a set, "help" for support, "topic" for a strand, "the way it is
 // sorted" for a facet; "case" is a story, an example or a situation.
@@ -7,7 +7,7 @@
 export const APP_JARGON = ['key', 'keys', 'route', 'routes', 'gate', 'gates', 'determination', 'specimen', 'specimens', 'ledger',
   'strand', 'strands', 'facet', 'facets', 'ask', 'asks', 'item', 'items', 'set', 'sets', 'generator', 'generators', 'support', 'supports'];
 
-// Abstract and textbook words, in every subject (lesson standard section 20). A beginner reads every card for "what do I do
+// Abstract and textbook words, in every subject (lesson standard section 8). A beginner reads every card for "what do I do
 // with this, or how do I spot it in real life?", and these words answer neither. Each says what to write instead.
 // Read by the lesson validator (V62, on every unit, key line and subject record) and by the browser tests (on every screen).
 export const ABSTRACT = [

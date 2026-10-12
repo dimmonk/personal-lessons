@@ -1,52 +1,347 @@
 ---
 {
   "subject": "psychology",
+  "asked": [
+    {
+      "id": "need-to-know-and-biases",
+      "words": "I wanted to learn the commonly used terms that have lost all meaning current society because of their overused and misused. which i name a few. the point was to learn and understand these things. So being able to identify them is only the first part. it was the same thing with biases. if i can identify them i can not fall prey to peoples biases and keep my own biases in check. part of this is also to keep myself in check. the more i can keep my emotions in check, the more i can be truthful and authentic and be less prone to being manipulated by the outside world. So understanding others and myself to better protect myself.",
+      "when": "2026-10-12",
+      "where": "the owner, in chat, on the Psychology paragraph; the first ask (2026-08-03) was \"the need-to-know terms, and biases\", the list of terms left to the designer",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "On track, record my words on Psychology"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "diagnostic-mindset",
+      "words": "The diagnostic mindset: what they did first, and not pathologizing a moment",
+      "when": "2026-08-03",
+      "where": "psychology/Identifying-Psychological-Patterns-Practical-Course.md, Lesson 1; old Unit One at the tag old-lessons",
+      "owner": null,
+      "kept": "B",
+      "dropped": false
+    },
+    {
+      "id": "biases",
+      "words": "A lesson on biases and the different types of bias: cognitive dissonance and self-justification, confirmation bias, motivated reasoning, sunk cost",
+      "when": "2026-08-03",
+      "where": "the owner's request for the first Psychology, in their words; the course document, Lesson 2; old Unit Two \"Are the reasons real?\" at the tag old-lessons",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "narcissism-spectrum",
+      "words": "The narcissism spectrum: grandiose and vulnerable, and the actual clinical criteria stated plainly",
+      "when": "2026-08-03",
+      "where": "the course document, Lesson 3; part of old Unit Four",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "look-alikes",
+      "words": "Look-alikes and false friends: narcissistic against borderline, histrionic, antisocial or psychopathy; words that are not diagnoses",
+      "when": "2026-08-03",
+      "where": "the course document, Lesson 4; old Unit Four \"five ways of being that keep costing someone\"",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "defense-mechanisms",
+      "words": "Defense mechanisms, briefly",
+      "when": "2026-08-03",
+      "where": "the course document, Lesson 5",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "manipulation-tactics",
+      "words": "Manipulation tactics in the wild: gaslighting, DARVO, love-bombing then devaluation, and the trap that everything becomes manipulation",
+      "when": "2026-08-03",
+      "where": "the course document, Lesson 5; old Unit Three",
+      "owner": null,
+      "kept": "C",
+      "dropped": false
+    },
+    {
+      "id": "mixed-drill",
+      "words": "A mixed identification drill across everything",
+      "when": "2026-08-03",
+      "where": "the course document, Lesson 6",
+      "owner": null,
+      "kept": "F",
+      "dropped": false
+    }
+  ],
   "kinds": [
     "judging",
     "habit"
   ],
+  "principles": [
+    {
+      "id": "O1",
+      "note": "reading-other-people",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "O2",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "O3",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "O4",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "O5",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "O6",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "O8",
+      "note": "reading-other-people",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "O10",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "full"
+    },
+    {
+      "id": "O11",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "O12",
+      "note": "reading-other-people",
+      "decides": false,
+      "read": "full"
+    },
+    {
+      "id": "R9",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    }
+  ],
+  "goal": "After this subject you understand the words people now throw around until they mean nothing: narcissist, gaslighting, manipulative, DARVO, love-bombing, borderline, psychopath, and the rest from your course. You know what each really means, what it looks like in what someone actually does, and what it gets stretched over, so when one is used about a real person, by a friend or in your own head, you can tell whether it fits and say what the person did instead. You know the common biases, cognitive dissonance and self-justification, confirmation bias, motivated reasoning, sunk cost, and the defense mechanisms, and you can spot them in other people's reasoning and in your own, so you are not led by theirs and you keep yours in check. And you know your own reactions well enough to keep your emotions in check in the moment, so you stay truthful and authentic and are harder for anyone to manipulate. Understanding others and yourself, to protect yourself. It does not diagnose anyone or replace therapy.",
+  "topics": [
+    "narcissist: grandiose and vulnerable, and the clinical bar",
+    "gaslighting",
+    "manipulative",
+    "DARVO",
+    "love-bombing then devaluation",
+    "borderline",
+    "histrionic",
+    "psychopath and sociopath",
+    "toxic",
+    "trauma and traumatized",
+    "triggered",
+    "boundaries",
+    "codependent",
+    "bipolar",
+    "OCD",
+    "projection",
+    "cognitive dissonance and self-justification",
+    "confirmation bias",
+    "motivated reasoning",
+    "sunk cost",
+    "one act read as a trait (the fundamental attribution error)",
+    "defense mechanisms, briefly: denial, projection, rationalization, displacement, minimizing",
+    "one act or a pattern: a bad moment with an ordinary reason, against a pattern",
+    "a pattern of control told as if it were nothing",
+    "keeping yourself in check in the moment: name what you feel, pause, ask what else would explain it, ask instead of guess",
+    "the next step: ask, watch, set a limit, get help",
+    "all of it mixed, on real accounts and on your own"
+  ],
   "endResult": "When someone reaches for a word like \"narcissist\", \"gaslighting\" or \"manipulative\", check it against what the person actually did: say what they did, whether it shows one bad moment or a pattern, and what to do next.",
   "realMoment": "A label about a real person: in your own head after they upset you, or from a friend telling you about someone, usually with one side of the story and one or a few incidents.",
   "test": "Ten new accounts in the form they arrive (a friend's message, a text thread, your own note after an argument). For each: tap what the person did, judge it (the word fits / an ordinary moment / can't tell yet / a pattern of control) and pick the next step. Pass: 8 of 10 right, no control pattern missed, at most one ordinary moment labeled.",
+  "out": "Diagnosing anyone; clinical disorders beyond what the popular word needs; therapy and self-help (emotions, habits, sleep); reasoning biases in decisions, money or news (Statistical Claims and Scams cover those); conversation scripts beyond the next step; facts and history of psychology; a key of named outcomes to memorize; crisis response beyond \"this is a safety matter: here is who to call\".",
   "practice": "Many new accounts in that same form, mixed, about half ordinary: tap what was done, say what else would explain it, judge, pick the next step; feedback after each; the weekly review brings each judgment back on a new account.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "Immediately after each item, from the app: the line that decides it; what the word requires and whether this account has it; the fair one-line description of what was done; why the next step fits. A missed item returns later in the same session on a new account, and in the weekly review on later days. An optional typed rewrite is compared by the learner to a model line, not graded.",
+  "delivery": [
+    "show an account as it arrives, with its source line (\"From a friend:\", \"Your note after the argument\"); built",
+    "tap one line of an account (tap items); built",
+    "one item with four fixed, separately scored steps and no branching key; checked and built before the pilot",
+    "mixed items, returns on new accounts and the weekly review, keyed per word and judgment; built",
+    "typed own-case line and if-then plan; built"
+  ],
+  "readingShare": 0.2,
+  "form": "A label arrives with one side's account of one or a few incidents, as a friend's message, a text thread or your own note after an argument, and the response is four steps on that account: tap the line that is what was done, say what else would explain it, judge it (the word fits / an ordinary moment / can't tell yet / a pattern of control) and pick the next step. Each check is a set of new accounts in that form, about half ordinary and the control cases told minimized, never a list of names to recall.",
   "parts": [
     {
       "id": "A",
-      "title": "What they did"
+      "title": "What they did",
+      "check": "6 new accounts: tap the line that is what was done; 5 right.",
+      "topics": []
     },
     {
       "id": "B",
-      "title": "One moment or a pattern"
+      "title": "One moment or a pattern",
+      "check": "8 new accounts: ordinary moment / repeated / can't tell yet, plus the next step; 7 right.",
+      "topics": []
     },
     {
       "id": "C",
-      "title": "Words about how someone treats you"
+      "title": "Words about how someone treats you",
+      "check": "8 new accounts with a word attached: fits / doesn't / can't tell; 7 right, at most one false \"fits\".",
+      "topics": []
     },
     {
       "id": "D",
-      "title": "Words about who someone is"
+      "title": "Words about who someone is",
+      "check": "6 new accounts: earns it / says nothing about who they are; 5 right, and the fair rewrite chosen.",
+      "topics": []
     },
     {
       "id": "E",
-      "title": "A pattern of control"
+      "title": "A pattern of control",
+      "check": "8 new accounts, half control told minimized: every control case flagged, at most one false alarm.",
+      "topics": []
     },
     {
       "id": "F",
-      "title": "The whole check, mixed, and your own"
+      "title": "The whole check, mixed, and your own",
+      "check": "The gate 2 test.",
+      "topics": []
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "A",
+      "does": "One card, the difference between the act and the reading of it, on one worked account split line by line (2 min). Then 12 accounts in mixed forms: tap the line that is the act (8 min); for 4 of them, pick the fair rewrite of the label line (\"he's so selfish\" becomes \"he ate the leftovers I'd saved without asking\") (3 min).",
+      "feedback": "The act line; why each other line is a motive, feeling or label.",
+      "check": "6 new accounts: tap the line that is what was done; 5 right.",
+      "why": [
+        "O1",
+        "O8",
+        "O12"
+      ]
+    },
+    "l2": {
+      "part": "B",
+      "does": "One card, what one act can show and the three answers, with a worked account that runs the \"what else?\" step (3 min). Then 14 accounts, half one-offs with an ordinary reason: tap the act, choose what else would explain it, judge, pick ask or watch (12 min).",
+      "feedback": "The situation that explains it, or the repeat that rules it out; why asking beats guessing.",
+      "check": "8 new accounts: ordinary moment / repeated / can't tell yet, plus the next step; 7 right.",
+      "why": [
+        "O1",
+        "O3",
+        "O4",
+        "O10"
+      ]
+    },
+    "l3": {
+      "part": "C",
+      "does": "Five words, each introduced in two to four lines with its look-alike, two at a time (gaslighting / remembering it differently; manipulative / asking openly; then passive-aggressive / tired and curt; stonewalling / asking for a break; love-bombing / keen early on), each followed by 4 accounts on that pair (about 14 min with the cards); then 8 mixed accounts with the word someone reached for (5 min). Next step adds name the behavior and set a limit.",
+      "feedback": "What the word requires, the line that has it or lacks it, the fair description.",
+      "check": "8 new accounts with a word attached: fits / doesn't / can't tell; 7 right, at most one false \"fits\".",
+      "why": [
+        "O2",
+        "O10",
+        "R9"
+      ]
+    },
+    "l4": {
+      "part": "D",
+      "does": "One card, what a \"who someone is\" word requires (many situations, over time, more than one side) and how rare the disorder behind \"narcissist\" is; \"toxic\" named as a word with no fixed meaning (3 min). Then 12 accounts with such a word attached: earns it / says nothing about who they are; then choose the fair rewrite (10 min).",
+      "feedback": "What the account would need to contain to earn the word; the rewrite.",
+      "check": "6 new accounts: earns it / says nothing about who they are; 5 right, and the fair rewrite chosen.",
+      "why": [
+        "O1",
+        "O2",
+        "O5",
+        "O10"
+      ]
+    },
+    "l5": {
+      "part": "E",
+      "does": "One card, control as several kinds together and repeated, how it is usually played down, and DARVO (3 min); one worked account told minimized (2 min). Then 14 accounts, half control told minimized, half ordinary conflicts with strong words: tap the controlling acts (two kinds), judge, pick the next step, with get outside help now among them and a named helpline in the feedback (11 min).",
+      "feedback": "The kinds of control present, or why a hard fight is not control.",
+      "check": "8 new accounts, half control told minimized: every control case flagged, at most one false alarm.",
+      "why": [
+        "O10",
+        "O6",
+        "O8"
+      ]
+    },
+    "l6": {
+      "part": "F",
+      "does": "16 mixed accounts across every word and judgment, in every form, with the full four steps (13 min). Then, optional: one line about a real person you have labeled, written as what they did, and an if-then plan (\"if I catch myself calling someone a ___, then I'll first say what they did\") (3 min).",
+      "feedback": "As before, per step.",
+      "check": "The gate 2 test.",
+      "why": [
+        "O8",
+        "R9",
+        "O11"
+      ]
+    }
+  },
   "pilot": "l1",
+  "approved": {
+    "goal": {
+      "date": "2026-10-12",
+      "words": "On track, record my words on Psychology. perfect. this is basically a lesson plan.",
+      "fp": "sha256:6707a54288a9899f91bb9b8e0c2cf7d1cb9086e34d3385e918506c08da2d7087"
+    },
+    "practice": null
+  },
   "tried": {
-    "pilot": null
-  }
+    "l1": {
+      "by": "stand-in",
+      "date": "2026-10-11",
+      "review": "reviews/l1.md",
+      "waived": "keep going. just finish everything and don't wait on my read"
+    }
+  },
+  "opened": [
+    "docs/research/reading-other-people.md",
+    "docs/research/review-after-lessons.md",
+    "docs/learning-science.md"
+  ]
 }
 ---
 # psychology: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 1 to 5 were worked blind on 2026-10-10 (the existing units, cases, key and learner views were
 not read until the gates below were written); the audit of the existing lessons follows them.

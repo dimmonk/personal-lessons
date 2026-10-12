@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WHAT AN ITEM LOOKS LIKE ===================== */
-// Lesson standard 26.1.2 (blocks) and 26.2 (feedback). Pure HTML builders: the blocks an item shows, the asks, and the feedback
+// Lesson standard 3.9 (blocks) and 4 (feedback). Pure HTML builders: the blocks an item shows, the asks, and the feedback
 // that opens when the last ask is answered. Nothing here stores anything or reads the page.
 // ctx for a block: { deciding: [segmentId] } marks those segments with the one highlight (mark.cue); { tap } makes the lines of an open tap ask
 // buttons, and after the answer shows which were tapped: tap = { ids: [segmentId], picked: [segmentId], locked, marks, right: [segmentId] };
@@ -111,7 +111,7 @@ function shownStepsHtml(item, support){
 }
 
 /* ---------- feedback ---------- */
-// In this order (26.2): each ask's mark; the deciding words (marked in the blocks by itemHtml); the reason; after a miss, one line on
+// In this order (4): each ask's mark; the deciding words (marked in the blocks by itemHtml); the reason; after a miss, one line on
 // the learner's own choice; then what the item has of: the consequence of the right action, what you would need to see, the working.
 // opts: { claim } offers "my answer means the same" under a missed answer from memory (not in a baseline); { at } is the place of the question in
 // the list of answers shown at the end of a run, so the button knows which one it is.

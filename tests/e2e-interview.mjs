@@ -1,15 +1,15 @@
 // X14, X19, X43 and X44, on the test subject "Quick answers" (tests/fixtures/fixture-subject/interview-*.js), in Chromium. Each is a function of the
 // environment (e2e-env.mjs) that drives the real app and returns its checker; tests/e2e-controls.mjs runs each against the app with a seeded fault and
 // requires exactly that check to go red.
-//   X14 (lesson standard 26.7, `text`): an answer from memory. What counts as the same (case, punctuation, brackets in or out, "27" and "twenty-seven",
+//   X14 (lesson standard 9, `text`): an answer from memory. What counts as the same (case, punctuation, brackets in or out, "27" and "twenty-seven",
 //       one small misspelling, parts in any order, two different answers for "name two") is right and a near miss is wrong; the box (Answer shut until
 //       something is typed, Enter sends it, "Not yet" records a try as a miss); the answers the list accepts all shown with the one given marked; "my
 //       answer means the same" (counted right in that sitting, logged, listed, its repeat taken off the group, and still not a good day: the question
 //       comes back two days later, where a right answer waits a week).
-//   X19 (26.7, `spoken`): a question read aloud. Nothing is spoken until the learner taps; only a voice on the phone is used; with none the words
+//   X19 (9, `spoken`): a question read aloud. Nothing is spoken until the learner taps; only a voice on the phone is used; with none the words
 //       are shown; the next question is read when Next is tapped; a replay; speech stops on leaving; a check read aloud holds its words back behind
 //       "Show the words".
-//   X43 (new with step 9, 26.10): the mock interview, a check drawn at random and read aloud, taken a second time a week later: what its first screen says,
+//   X43 (new with step 9, 3 to 9): the mock interview, a check drawn at random and read aloud, taken a second time a week later: what its first screen says,
 //       that it holds five different questions and leaves out those about the learner's own answers until they are entered, that nothing is shown
 //       between questions, the result and every answer at the end, an answer counted on the learner's word, and the second mock, in the review, a
 //       different five where there are some.
@@ -32,7 +32,7 @@ const marks = page => page.evaluate(() => [...document.querySelectorAll('.marks 
 const accepted = page => page.locator('[data-accepted] li').allTextContents().then(list => list.map(t => t.replace(/\s+/g, ' ').trim()));
 
 /* ---------- X14: what counts as the same ---------- */
-// [question, what is typed, the result]: the rules of 26.1, each as a row
+// [question, what is typed, the result]: the rules of 3, each as a row
 const MATCHING = [
   ['form', 'REPUBLIC!', 'ok'], ['form', '  representative   democracy ', 'ok'], ['form', 'republic and democracy', 'no'], ['form', '', 'no'], ['form', '   ', 'no'],
   ['law', 'constitution', 'ok'], ['law', 'US Constitution', 'ok'], ['law', 'the u.s. constitution', 'ok'], ['law', 'constitutoin', 'ok'], ['law', 'consitution!', 'ok'],

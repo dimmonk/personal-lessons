@@ -1,5 +1,5 @@
 /* ===================== LESSONS: REPLYING IN A CALL OR CHAT, ON SCREEN ===================== */
-// Lesson standard 26.1 (the `exchange` ask). What happens on the screen the queue (queue.js) has just painted when an exchange is open: a reply
+// Lesson standard 3 (the `exchange` ask). What happens on the screen the queue (queue.js) has just painted when an exchange is open: a reply
 // is picked; if it ends the exchange the replies picked are the answer, else the next turn arrives. The replies so far are kept in Q.cur.many[askId]
 // so a repaint loses nothing. Needs the queue (Q, openAsk, answerAsk, paintQueue) and exchange.js.
 

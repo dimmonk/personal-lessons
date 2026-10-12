@@ -30,7 +30,7 @@ function checkStrands(data, lesson){
 // a baseline measures and teaches nothing, so it never owns a topic or starts the schedule of one
 const lessonsCovering = (data, strandId) => lessonsInOrder(data).filter(l => l.role !== 'baseline' && checkStrands(data, l).includes(strandId));
 
-/* ---------- the interview date: rounds about a week apart in the six weeks before it (26.4, Civics principle 4) ---------- */
+/* ---------- the interview date: rounds about a week apart in the six weeks before it (6, Civics principle 4) ---------- */
 const ROUND_WEEKS = 6;
 // the day the learner entered, read from the record's `review.dateField` ('answers.interviewDate'); null when there is none, it is not a day, or it has passed
 function interviewDay(data, subjectId){
@@ -81,7 +81,7 @@ function nextDueDay(data, subjectId, after){
 }
 
 /* ---------- retests ---------- */
-// a check with `retest: n` comes back once, whole, on new items, n days after its first complete run (26.4)
+// a check with `retest: n` comes back once, whole, on new items, n days after its first complete run (6)
 function retestDays(data, subjectId){
   return lessonsInOrder(data).filter(l => l.check.retest && completeRuns(data, subjectId, l).length && !completeRuns(data, subjectId, l, 'retest').length)
     .map(l => ({ lesson: l, due: addDays(completeRuns(data, subjectId, l)[0].d, l.check.retest) }));
@@ -123,7 +123,7 @@ function strandInstance(data, subjectId, strandId, run, k, taken, facets){
   const again = [...leastSeen(subjectId, fixed.filter(d => seenBefore(subjectId, d.id))), ...fixed.filter(d => !seenBefore(subjectId, d.id))];
   return again.length ? { inst: instanceOf(data, near(again)[0].id), repeat: true } : null;
 }
-// The instances of a drawn check (the mock interview, 26.8 step 9): n questions of the listed topics drawn at random, the same run drawing the same.
+// The instances of a drawn check (the mock interview, 10.3 step 9): n questions of the listed topics drawn at random, the same run drawing the same.
 // What an earlier check or retest (of this lesson, when it is named) already asked comes last, so a second draw is a different set where it can be.
 // A question that needs the learner's own answers is left out until they are entered.
 function drawInstances(data, subjectId, draw, run, taken, lessonId){

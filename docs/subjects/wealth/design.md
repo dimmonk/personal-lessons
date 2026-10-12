@@ -1,61 +1,367 @@
 ---
 {
   "subject": "wealth",
+  "asked": [
+    {
+      "id": "before-you-change",
+      "words": "Before you change anything about your money",
+      "when": "2026-10-05",
+      "where": "old Unit One at the tag old-lessons",
+      "owner": null,
+      "kept": "1",
+      "dropped": false
+    },
+    {
+      "id": "yearly-costs",
+      "words": "Six things that take money out of savings every year, how to tell which one you are looking at, and when to leave it alone",
+      "when": "2026-10-05",
+      "where": "old Unit Two",
+      "owner": null,
+      "kept": "2",
+      "dropped": false
+    },
+    {
+      "id": "one-thing-most",
+      "words": "When one thing is most of your money",
+      "when": "2026-10-05",
+      "where": "old Unit Three",
+      "owner": null,
+      "kept": "3",
+      "dropped": false
+    },
+    {
+      "id": "what-a-fall-hits",
+      "words": "Check what a fall would actually hit: bills paid by selling, a bill on a date, a drifted mix, or nothing",
+      "when": "2026-10-05",
+      "where": "old Unit Four",
+      "owner": null,
+      "kept": "4",
+      "dropped": false
+    },
+    {
+      "id": "cash-for-bills",
+      "words": "Cash set aside per known bill, so a fall never forces a sale",
+      "when": "2026-10-05",
+      "where": "old Unit Four",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "old-papers-and-heirs",
+      "words": "Old papers, tax, and the people who get it: how to spot each one before you pay for a fix",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": "7",
+      "dropped": false
+    },
+    {
+      "id": "tax-placement",
+      "words": "Tax placement across accounts, deferring gains, and using a loss to cut tax",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "spending-rate",
+      "words": "The retirement spending rate",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "insurance-and-structures",
+      "words": "Umbrella insurance, LLCs and trusts",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": null,
+      "dropped": false
+    }
+  ],
   "kinds": [
     "procedure",
     "judging",
     "habit"
   ],
+  "principles": [
+    {
+      "id": "F1",
+      "note": "acting-on-your-own-money",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "F3",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "F4",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "F6",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "F5",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "F10",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "F11",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "full"
+    },
+    {
+      "id": "F9",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "F7",
+      "note": "acting-on-your-own-money",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "F8",
+      "note": "acting-on-your-own-money",
+      "decides": false,
+      "read": "abstract"
+    }
+  ],
+  "goal": "After this subject, once a year and whenever you start a US job, open an account or move money, you can run the check on your own accounts with your statements, fee disclosure and beneficiary pages in front of you: what each account costs you a year in dollars, your biggest single bet, how far your mix has drifted, whether you take the full employer match, which foreign holdings need a US filing, and who inherits each account. Then you make the changes it calls for, each with a date, and leave alone what it clears. It does not pick investments, predict markets, or replace a tax professional for the filings it flags.",
+  "topics": [
+    "The list",
+    "What it costs a year, in dollars",
+    "Your biggest single bet",
+    "Mix and drift",
+    "The full match",
+    "Foreign holdings under US rules",
+    "Who inherits, and who can act",
+    "The whole check, done and repeated"
+  ],
   "endResult": "Run the yearly check on your own US accounts: work out what each costs you a year in dollars, your biggest single bet, how far your mix has drifted, whether you take the full employer match, which foreign holdings need a US filing, and who inherits each account; then make the changes it calls for and leave alone what it clears.",
   "realMoment": "Once a year, and when you start a US job, open an account or move money: your own statements, plan fee disclosure, beneficiary pages and will, open in front of you.",
   "test": "On a new sample household (5 to 6 documents) and then on your own accounts: yearly cost in dollars per account within 10%, the largest single holding's share and the stock/bond split within 2 points, the dollars short of the full match within 10%, and every flag (switch fund, rebalance, raise contribution, foreign filing, missing beneficiary or paper) correctly raised or cleared, including the sound items left alone. On your own accounts: every change dated, done within 30 days, and the next check scheduled.",
+  "out": "Choosing your ideal mix, picking investments, timing the market (the check uses the mix you chose, or a target-date fund's own); earning, budgeting, debt, building a US credit history, buying a home, insurance pricing; filing taxes and cross-border tax planning (the subject only flags foreign holdings that need a US filing or that the US taxes harshly, and the action is booking a cross-border tax preparer); trusts, LLCs, estate-tax planning, Social Security, Medicare, annuities in detail (an annuity appears only as a cost line to find); memorizing limits and thresholds, which change yearly and are read from a dated reference when used.",
   "practice": "For each step of the check: one worked example on a realistic sample statement, one with the last step left for you, then two new statements alone (one that should be left alone), typing the numbers and deciding change or leave, with the app's own calculation and the line you should have read shown after each. Then the same step on your own statement, and the change made now or dated with a when and where. A minute or two of reading per lesson.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "On samples: immediate and exact, from the app's own calculation: the right number, the line it comes from highlighted on the document, the arithmetic, and why change or leave. On the learner's own numbers the app cannot know the truth: it recomputes from what was typed and shows the arithmetic, warns on values outside a plausible range (an expense ratio over 2%, a share over 100%), and shows the matching line on a sample statement of the same kind as a model to compare against.",
+  "delivery": [
+    "show a realistic US document (statement, fee disclosure, pay stub, beneficiary page) and highlight a line on it after an answer",
+    "take a typed number and score it against a tolerance, with worked feedback",
+    "a private sheet of the learner's accounts on the device (type, balance, holdings, fees, match rule, beneficiary yes or no; never account numbers or logins)",
+    "the calculator behind the sheet: cost in dollars, share of one holding, mix and drift, rebalancing trade, match shortfall",
+    "a dated action list with done marks, one reminder per date, and the yearly check scheduled",
+    "offer a lesson at its trigger (new job, new account) and hold the own-account step until then"
+  ],
+  "readingShare": 0.15,
+  "form": "A real-looking US document is on screen; the learner finds the line, types the number, the app checks it against a tolerance and shows the line and the arithmetic, and the learner decides change or leave, with a sound account in every set that must be left alone. Each part's check is that same step on new sample documents, then on the learner's own accounts, ending in a change made now or dated with a day, a time and a place.",
   "parts": [
     {
       "id": "1",
-      "title": "The list"
+      "title": "The list",
+      "check": "On a sample household: every account found with the right type and balance. Own: the sheet lists every account",
+      "topics": [
+        "The list"
+      ]
     },
     {
       "id": "2",
-      "title": "What it costs a year, in dollars"
+      "title": "What it costs a year, in dollars",
+      "check": "On 3 new sample accounts: cost in dollars within 10%, and change/leave right on all 3 (one is a cheap index fund to leave). Own: cost in dollars per account; each switch made or dated",
+      "topics": [
+        "What it costs a year, in dollars"
+      ]
     },
     {
       "id": "3",
-      "title": "Your biggest single bet"
+      "title": "Your biggest single bet",
+      "check": "On a sample household: share within 2 points; flag raised over 10% and cleared for a broad index fund. Own: share and, if over, the sell-down dated",
+      "topics": [
+        "Your biggest single bet"
+      ]
     },
     {
       "id": "4",
-      "title": "Mix and drift"
+      "title": "Mix and drift",
+      "check": "On 3 samples: split within 2 points, trade within 10%, \"leave\" when drift is under 5 points or the holding is a target-date fund. Own: split, and the rebalance done or dated",
+      "topics": [
+        "Mix and drift"
+      ]
     },
     {
       "id": "5",
-      "title": "The full match"
+      "title": "The full match",
+      "check": "On 3 sample pay stubs: shortfall within 10%, and \"leave\" when already at the full match. Own: rate raised now on the plan site, or dated to the first payroll",
+      "topics": [
+        "The full match"
+      ]
     },
     {
       "id": "6",
-      "title": "Foreign holdings under US rules"
+      "title": "Foreign holdings under US rules",
+      "check": "On 3 sample households: flags right, including one under the threshold with no foreign funds (no flag). Own: flags, and the booking dated",
+      "topics": [
+        "Foreign holdings under US rules"
+      ]
     },
     {
       "id": "7",
-      "title": "Who inherits, and who can act"
+      "title": "Who inherits, and who can act",
+      "check": "On a sample household: every missing or wrong beneficiary and paper found, and the sound ones left. Own: each account marked named/not; each fix done on the site or dated; will and power of attorney dated if missing",
+      "topics": [
+        "Who inherits, and who can act"
+      ]
     },
     {
       "id": "8",
-      "title": "The whole check, done and repeated"
+      "title": "The whole check, done and repeated",
+      "check": "The gate 2 test, whole: on a new sample household all six items scored, then the learner's own sheet refreshed, the changes listed with dates, and the next check scheduled",
+      "topics": [
+        "The whole check, done and repeated"
+      ]
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "1",
+      "does": "Read a sample household's five documents and fill the sheet (type, balance), 6 min; then fill it for your own accounts, 6 min.",
+      "feedback": "Each type and balance checked, the line shown.",
+      "check": "On a sample household: every account found with the right type and balance. Own: the sheet lists every account",
+      "why": [
+        "F10",
+        "F9"
+      ]
+    },
+    "l2": {
+      "part": "2",
+      "does": "Read the rule (\"expense ratio times balance, plus fee lines; switch only to a same-kind fund that costs less\"), 1 min; a worked sample, a completion sample, two alone (one a cheap index fund to leave), 7 min; then own: each account's dollars a year, and the switch made on the plan site or dated, 6 min.",
+      "feedback": "Dollars, the fee disclosure line highlighted, the cheaper same-kind fund in the menu named.",
+      "check": "On 3 new sample accounts: cost in dollars within 10%, and change/leave right on all 3 (one is a cheap index fund to leave). Own: cost in dollars per account; each switch made or dated",
+      "why": [
+        "F5",
+        "F10",
+        "F11",
+        "F3",
+        "F7"
+      ]
+    },
+    "l3": {
+      "part": "3",
+      "does": "Read the rule (one company over 10% of the whole is a bet you did not choose to make), 1 min; samples including employer stock and RSUs spread over two accounts and a broad index fund to clear, 7 min; then own share, with the sell-down plan dated if over, 4 min.",
+      "feedback": "The share, and the holdings added across accounts.",
+      "check": "On a sample household: share within 2 points; flag raised over 10% and cleared for a broad index fund. Own: share and, if over, the sell-down dated",
+      "why": [
+        "F6",
+        "F10",
+        "F11",
+        "F3"
+      ]
+    },
+    "l4": {
+      "part": "4",
+      "does": "Read the rule (outside 5 points, trade back; trade inside sheltered accounts first; a target-date fund does this for you), 2 min; samples including one under 5 points and one target-date to leave, 7 min; then own split against your chosen mix, the trade done or dated, with the option to move to a set-once fund, 5 min.",
+      "feedback": "The split, and the trade in dollars and which account it belongs in.",
+      "check": "On 3 samples: split within 2 points, trade within 10%, \"leave\" when drift is under 5 points or the holding is a target-date fund. Own: split, and the rebalance done or dated",
+      "why": [
+        "F4",
+        "F6",
+        "F10",
+        "F11"
+      ]
+    },
+    "l5": {
+      "part": "5",
+      "does": "Offered when a US job starts. Read the rule (contribute at least what takes the whole match), 1 min; three sample pay stubs and match rules, one already full, 6 min; then own: the rate changed now on the plan site, or dated to before the first payroll, 4 min.",
+      "feedback": "The rate needed and the dollars left a year, with the match sentence and the stub line highlighted.",
+      "check": "On 3 sample pay stubs: shortfall within 10%, and \"leave\" when already at the full match. Own: rate raised now on the plan site, or dated to the first payroll",
+      "why": [
+        "F1",
+        "F4",
+        "F3",
+        "F7"
+      ]
+    },
+    "l6": {
+      "part": "6",
+      "does": "Offered before the first US tax year. Read the rule (foreign accounts together over the reporting threshold need a yearly filing; foreign-registered funds are taxed harshly in the US; the fix is a cross-border tax preparer), with the threshold read from a dated reference, 2 min; three sample households, one with nothing to flag, 5 min; then own: the total and the flags, with the booking dated, 4 min.",
+      "feedback": "The total, which item crosses the threshold, and why a fund is flagged.",
+      "check": "On 3 sample households: flags right, including one under the threshold with no foreign funds (no flag). Own: flags, and the booking dated",
+      "why": [
+        "F1",
+        "F6",
+        "F11",
+        "F3"
+      ]
+    },
+    "l7": {
+      "part": "7",
+      "does": "Read the rule (the beneficiary on the account beats the will; name a primary and a backup on every account), 1 min; a sample household with a missing beneficiary, an ex-spouse and one sound account, 5 min; then own: each account checked on its website and fixed there now (usually a few minutes), and the will and power of attorney dated with a lawyer if missing, 6 min.",
+      "feedback": "Which accounts need a fix, and why \"estate\" or an ex-spouse is a problem.",
+      "check": "On a sample household: every missing or wrong beneficiary and paper found, and the sound ones left. Own: each account marked named/not; each fix done on the site or dated; will and power of attorney dated if missing",
+      "why": [
+        "F3",
+        "F4",
+        "F11",
+        "F7"
+      ]
+    },
+    "l8": {
+      "part": "8",
+      "does": "A new sample household, all six items, scored, 10 min; then your own sheet refreshed, the change list with dates, and the yearly check scheduled, 8 min. It comes back every year.",
+      "feedback": "Item by item, as in lessons 2 to 7.",
+      "check": "The gate 2 test, whole: on a new sample household all six items scored, then the learner's own sheet refreshed, the changes listed with dates, and the next check scheduled",
+      "why": [
+        "F3",
+        "F8"
+      ]
+    }
+  },
   "pilot": "l2",
+  "approved": {
+    "goal": null,
+    "practice": null
+  },
   "tried": {
-    "pilot": null
-  }
+    "l2": {
+      "by": "stand-in",
+      "date": "2026-10-11",
+      "review": "reviews/l2.md",
+      "waived": "keep going. just finish everything and don't wait on my read"
+    }
+  },
+  "opened": [
+    "docs/research/acting-on-your-own-money.md",
+    "docs/learning-science.md",
+    "docs/research/review-after-lessons.md"
+  ]
 }
 ---
 # wealth: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 2 and 3 were drafts the owner approved on 2026-10-10 (below). Gates 1 to 5 were then worked
 blind (before the existing lessons were read) by a separate pass, which revised the gate 2 and 3 wording: the approved

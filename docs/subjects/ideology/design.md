@@ -1,51 +1,370 @@
 ---
 {
   "subject": "ideology",
+  "asked": [
+    {
+      "id": "five-questions",
+      "words": "The five diagnostic questions, and the valence trap",
+      "when": "2026-08-04",
+      "where": "political-ideologies/Identifying-Political-Ideologies-Practical-Course-v3.md, Lesson 1; old Unit One",
+      "owner": null,
+      "kept": "1",
+      "dropped": false
+    },
+    {
+      "id": "socialist-family",
+      "words": "The socialist family and its main branches",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 2; old Unit Two",
+      "owner": null,
+      "kept": "2",
+      "dropped": false
+    },
+    {
+      "id": "market-socialism",
+      "words": "Market socialism, as a branch of the socialist family",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 2",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics (relayed by the deployment session)"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "anarchism",
+      "words": "Anarchism",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 2",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics (relayed by the deployment session)"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "fascism",
+      "words": "Fascism: a working definition, the cluster of markers, the key distinctions",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 3; old Unit Three",
+      "owner": null,
+      "kept": "5",
+      "dropped": false
+    },
+    {
+      "id": "nazis-socialists",
+      "words": "The \"Nazis were socialists\" claim, and fascism against Nazism",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 3",
+      "owner": {
+        "date": "2026-10-12",
+        "words": "restore all the psychology and ideology topics (relayed by the deployment session)"
+      },
+      "kept": null,
+      "dropped": false
+    },
+    {
+      "id": "conservative-reactionary",
+      "words": "Keep old customs, or bring back what is gone: conservative against reactionary",
+      "when": "2026-10-05",
+      "where": "old Unit Four at the tag old-lessons",
+      "owner": null,
+      "kept": "3",
+      "dropped": false
+    },
+    {
+      "id": "fair-treatment",
+      "words": "What a text about fair treatment wants the government to do: stay out, pay for a fair start, or change a rule",
+      "when": "2026-10-05",
+      "where": "old Unit Five at the tag old-lessons",
+      "owner": null,
+      "kept": "3",
+      "dropped": false
+    },
+    {
+      "id": "contemporary-formations",
+      "words": "Look-alikes and the two contemporary formations: populism and national conservatism",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 4",
+      "owner": null,
+      "kept": "4",
+      "dropped": false
+    },
+    {
+      "id": "mixed-drill",
+      "words": "A mixed identification drill across everything",
+      "when": "2026-08-04",
+      "where": "the course document, Lesson 5",
+      "owner": null,
+      "kept": "6",
+      "dropped": false
+    }
+  ],
   "kinds": [
     "judging"
+  ],
+  "principles": [
+    {
+      "id": "L1",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R8",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "L2",
+      "note": "judging-political-labels",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "L9",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "L10",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "L11",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "full"
+    },
+    {
+      "id": "L3",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "L4",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "L5",
+      "note": "judging-political-labels",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "L6",
+      "note": "judging-political-labels",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "L7",
+      "note": "judging-political-labels",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "R7",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    }
+  ],
+  "goal": "After this subject, when a post, a headline, a speech clip or a relative calls something socialist, fascist or the like, you can check for yourself whether the words earn that label, whichever side threw it. You say earned, not earned (and the name the words do earn), or too little to tell, and you can point to the words that decide it. It judges words, not people or parties; it does not say whether an ideology is good, teach the history of ideas, or check whether a quote is genuine.",
+  "topics": [
+    "Find what the words ask for",
+    "Economy labels",
+    "The US left–right words",
+    "Us-and-them labels",
+    "Power labels",
+    "Labels in the wild"
   ],
   "endResult": "When a speech or a post is called \"socialist\", \"fascist\" or the like, check for yourself which label its own words earn.",
   "realMoment": "A political label pinned on quoted words or a policy: a post, a headline, a speech clip, a relative's remark.",
   "test": "Ten new items, each a label pinned on quoted words or a policy, five labels thrown from the left and five from the right. For each: earned, not earned (and the name the words do earn, if any), or too little to tell, and tap the words that decide. Pass: 8 of 10 right with the deciding words, and at least 4 of 5 on each side.",
+  "out": "Verdicts on any living person or party (the subject judges words, not people); whether an ideology is good; the history of ideas and thinkers; whether a quote is genuine or in context (source checking, another skill); what a policy would do; labels with no agreed meaning (\"woke\", \"globalist\"), which the subject names as such and does not teach; traditions outside Europe and North America; making the learner check more often (a habit, not taught).",
   "practice": "Judge many new labelled items in the real form (label plus words, verdict plus deciding words), mixed and from both sides, with feedback after each naming the deciding words and what the label requires. Reading is one short card per label and one wrong-idea card; three quarters of every lesson is judging.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "After every item, at once, from the app: the verdict; the deciding words highlighted in the passage; each of the label's requirements marked present or missing; the name the words earn; and, after a miss, one line on the learner's own choice. At the end of each lesson and in the review, the learner's accuracy on labels thrown from the left and from the right, side by side.",
+  "delivery": [
+    "Show a short passage and take a choice among names (the case item): exists",
+    "Tap the deciding sentence in a passage (the tap item, a case's segments): exists",
+    "A label pinned on words with a three-way verdict (earned, not earned plus which name, too little to tell) scored with the tapped words: built before any lesson",
+    "Show a label's requirements beside the passage, then hide them in later items: built before any lesson",
+    "Record each item's side (label thrown from the left or the right) and show accuracy per side: built before any lesson",
+    "The weekly review draws these items in this form"
+  ],
+  "readingShare": 0.25,
+  "form": "A label pinned on a post, headline or quoted remark, answered with a verdict (earned, not earned plus the name the words earn, or too little to tell) and a tap on the sentence that decides. So every check is a handful of new labelled items scored on the verdict and the tapped words, with the label's requirements hidden, and results are counted per side the label was thrown from.",
   "parts": [
     {
       "id": "1",
-      "title": "Find what the words ask for"
+      "title": "Find what the words ask for",
+      "check": "5 new labelled items: tap the sentence that states what should be done, or say there is none; 4 of 5",
+      "topics": [
+        "Find what the words ask for"
+      ]
     },
     {
       "id": "2",
-      "title": "Economy labels"
+      "title": "Economy labels",
+      "check": "5 new labelled items from this family, both sides; 4 of 5 verdicts with the deciding words, without the requirements shown",
+      "topics": [
+        "Economy labels"
+      ]
     },
     {
       "id": "3",
-      "title": "The US left–right words"
+      "title": "The US left–right words",
+      "check": "5 new labelled items from this family, both sides; 4 of 5 verdicts with the deciding words, without the requirements shown",
+      "topics": [
+        "The US left–right words"
+      ]
     },
     {
       "id": "4",
-      "title": "Us-and-them labels"
+      "title": "Us-and-them labels",
+      "check": "5 new labelled items from this family, both sides, with party cues on some; 4 of 5 verdicts with the deciding words, without the requirements shown",
+      "topics": [
+        "Us-and-them labels"
+      ]
     },
     {
       "id": "5",
-      "title": "Power labels"
+      "title": "Power labels",
+      "check": "5 new labelled items from this family, both sides, mixed with part 4 look-alikes; 4 of 5 verdicts with the deciding words, without the requirements shown",
+      "topics": [
+        "Power labels"
+      ]
     },
     {
       "id": "6",
-      "title": "Labels in the wild"
+      "title": "Labels in the wild",
+      "check": "The gate 2 test: ten new labelled items, five thrown from each side; 8 of 10 verdicts right with the deciding words, and at least 4 of 5 on each side",
+      "topics": [
+        "Labels in the wild"
+      ]
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "1",
+      "does": "One card on the job (find the demand; the label, the tone and the speaker are not evidence), 1 min; a worked item, 1 min; then 12 labelled posts: tap the sentence that states what should be done, or say there is no demand here; distractors are insults, slogans and the commenter's own words (10 min).",
+      "feedback": "The demand sentence highlighted, and why the tempting sentence is commentary or tone.",
+      "why": [
+        "R8",
+        "L3",
+        "L4",
+        "L5"
+      ],
+      "check": "5 new labelled items: tap the sentence that states what should be done, or say there is none; 4 of 5"
+    },
+    "l2": {
+      "part": "2",
+      "does": "The wrong idea first (\"socialism means the government pays for things\"), marked wrong, then the line (1 min); a card per label with its requirements (2 min); a contrast pair, a public health plan inside private ownership against taking over the hospitals (1 min); then 14 labelled items pinning socialist, communist and free-market on plans and quotes, earned, unearned and too thin, both sides (11 min).",
+      "feedback": "Verdict, the deciding words highlighted in the passage, each of the label's requirements marked present or missing, and the name the words earn, after every item; after a miss, one line on the learner's own choice.",
+      "why": [
+        "L1",
+        "R8",
+        "L2",
+        "L9",
+        "L10",
+        "L11",
+        "L5",
+        "R7"
+      ],
+      "check": "5 new labelled items from this family, both sides; 4 of 5 verdicts with the deciding words, without the requirements shown"
+    },
+    "l3": {
+      "part": "3",
+      "does": "The wrong idea (\"liberal means the same everywhere\"; \"libertarian is just very conservative\"), 1 min; requirement cards, 2 min; a contrast pair, a US liberal text against a classical liberal one, 1 min; then 14 labelled items (11 min).",
+      "feedback": "Verdict, the deciding words highlighted in the passage, each of the label's requirements marked present or missing, and the name the words earn, after every item; after a miss, one line on the learner's own choice.",
+      "why": [
+        "L1",
+        "R8",
+        "L9",
+        "L10",
+        "L11",
+        "R7"
+      ],
+      "check": "5 new labelled items from this family, both sides; 4 of 5 verdicts with the deciding words, without the requirements shown"
+    },
+    "l4": {
+      "part": "4",
+      "does": "The wrong ideas (\"populist means popular or plain-spoken\"; \"nationalist means patriotic\"), 1 min; requirement cards, 2 min; a contrast pair, a left populist and a right populist speech with the same people-against-elite structure, 1 min; then 14 items, some with a party cue (\"said a Republican governor\"), both sides (11 min).",
+      "feedback": "Verdict, the deciding words highlighted in the passage, each of the label's requirements marked present or missing, and the name the words earn, after every item; after a miss, one line on the learner's own choice. Adds that populism never decides left or right.",
+      "why": [
+        "L1",
+        "R8",
+        "L9",
+        "L10",
+        "L11",
+        "L3",
+        "L4",
+        "L6"
+      ],
+      "check": "5 new labelled items from this family, both sides, with party cues on some; 4 of 5 verdicts with the deciding words, without the requirements shown"
+    },
+    "l5": {
+      "part": "5",
+      "does": "The wrong idea (\"fascist means a strong state or anyone cruel\"), 1 min; requirement cards and the line drawn (fascist needs all four; nationalism or authoritarianism alone does not earn it), with the note that historians draw it differently, 2 min; a contrast pair, a nationalist speech against a fascist one, 1 min; then 14 items mixed with part 4 look-alikes (11 min).",
+      "feedback": "Verdict, the deciding words highlighted in the passage, each of the label's requirements marked present or missing, and the name the words earn, after every item; after a miss, one line on the learner's own choice.",
+      "why": [
+        "L1",
+        "R8",
+        "L9",
+        "L10",
+        "L11",
+        "L5",
+        "L7"
+      ],
+      "check": "5 new labelled items from this family, both sides, mixed with part 4 look-alikes; 4 of 5 verdicts with the deciding words, without the requirements shown"
+    },
+    "l6": {
+      "part": "6",
+      "does": "One card (this is the real form, mixed, and it will feel harder; why), 1 min; then 20 items from all families, both sides, with party cues, earned, unearned and too thin, in the post and headline form (14 min); then the learner's own per-side results.",
+      "feedback": "Verdict, the deciding words highlighted in the passage, each of the label's requirements marked present or missing, and the name the words earn, after every item; after a miss, one line on the learner's own choice. At the end, the learner's accuracy on labels thrown from the left and from the right, side by side.",
+      "why": [
+        "R8",
+        "L11",
+        "L3",
+        "L4",
+        "R7"
+      ],
+      "check": "The gate 2 test: ten new labelled items, five thrown from each side; 8 of 10 verdicts right with the deciding words, and at least 4 of 5 on each side"
+    }
+  },
   "pilot": "l2",
+  "approved": {
+    "goal": null,
+    "practice": null
+  },
   "tried": {
-    "pilot": null
-  }
+    "l2": {
+      "by": "stand-in",
+      "date": "2026-10-11",
+      "review": "reviews/l2.md",
+      "waived": "keep going. just finish everything and don't wait on my read"
+    }
+  },
+  "opened": [
+    "docs/research/judging-political-labels.md",
+    "docs/research/review-after-lessons.md",
+    "docs/learning-science.md"
+  ]
 }
 ---
 # ideology: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 1 to 5 were worked on 2026-10-10, blind (before the existing lessons were read); the audit of
 the existing lessons follows them. The end-result sentence is the approved one. The real moment, the test and the

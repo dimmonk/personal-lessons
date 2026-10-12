@@ -1,5 +1,5 @@
-// X36: Psychology's pilot lesson, "What did they do?", end to end on a phone (375 px). Not one of the checks the standard lists in 26.7: it was added
-// with step 7 (26.10), the way step 6 ran Ideology's pilot (X33). The test plays a learner who taps every answer and types the lines they are asked to
+// X36: Psychology's pilot lesson, "What did they do?", end to end on a phone (375 px). Not one of the checks the standard lists in 9: it was added
+// with step 7 (3 to 9), the way step 6 ran Ideology's pilot (X33). The test plays a learner who taps every answer and types the lines they are asked to
 // write: what counts as what someone did, the worked account (a friend's message about a roommate); a first group of four with the checklist beside the
 // account (a label tapped for the act and a softer word picked, an account with nothing in it answered with a next step that jumps ahead, both coming
 // back); a second group of eight (two lines written against a model, three accounts of two acts, the one pattern of control with its safety wording,

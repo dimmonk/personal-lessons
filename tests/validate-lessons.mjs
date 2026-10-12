@@ -1,13 +1,13 @@
-// Validates the lesson data against the lesson standard (docs/lesson-standard.md, section 26.7) and the revision lock (section 13).
+// Validates the lesson data against the lesson standard (docs/lesson-standard.md) and the revision lock.
 // Run: node tests/validate-lessons.mjs
 import { loadFromPublic } from './lessons/load.mjs';
 import { runRules } from './lessons/run.mjs';
 import { parseTargetArgs } from './lessons/paths.mjs';
 import { readJsonIfPresent, readCommittedJson } from './lessons/lockfile.mjs';
 import { collectSite } from './lessons/site.mjs';
-import { collectDesigns } from './lessons/designs.mjs';
+import { collectDesigns, collectReviews, collectResearch } from './lessons/designs.mjs';
 
-export async function gatherInput({ publicDir, lockFile, heldFile, designsDir }) {
+export async function gatherInput({ publicDir, lockFile, heldFile, designsDir, researchDir }) {
   const data = await loadFromPublic(publicDir);
   return {
     data,
@@ -16,7 +16,9 @@ export async function gatherInput({ publicDir, lockFile, heldFile, designsDir })
     held: heldFile ? await readJsonIfPresent(heldFile) : null,
     committedHeld: heldFile ? readCommittedJson(heldFile) : null,
     site: await collectSite(publicDir),
-    designs: designsDir ? await collectDesigns(designsDir) : {}
+    designs: designsDir ? await collectDesigns(designsDir) : {},
+    reviews: designsDir ? await collectReviews(designsDir) : {},
+    research: researchDir ? await collectResearch(researchDir) : {}
   };
 }
 

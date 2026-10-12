@@ -1,5 +1,5 @@
 /* ===================== SINGING: THE KINDS OF SUNG QUESTION (pure) ===================== */
-// Lesson standard 26.1.1 (and section 25, items 2 to 4). A sung question is never written as an item: a lesson names a task,
+// Lesson standard 3.8 (and section 3.8, items 2 to 4). A sung question is never written as an item: a lesson names a task,
 // `{ sing: { task, ...params }, n }`, and the app makes each question from it. The targets are made fresh from the learner's range
 // and a seed, so every target lies inside the range (S1) and the exact question can be rebuilt from the seed. Nothing here touches the
 // page, the sound system, the microphone or storage, so the validator and the headless tests read the same numbers the phone does.
@@ -8,7 +8,7 @@
 const SING_TASKS = ['warmup', 'range', 'match', 'hold', 'slide', 'interval', 'melody', 'light'];
 const SING_FREE = ['warmup', 'range'];   // no target: the learner hums and the line follows
 const SING_NEEDS_RANGE = ['match', 'hold', 'slide', 'interval', 'melody', 'light'];
-// what a task may carry, as [least, most] whole numbers (26.1.1)
+// what a task may carry, as [least, most] whole numbers (3.8)
 const SING_PARAMS = {
   hold: { seconds: [2, 6] },
   slide: { maxSemitones: [2, 12] },
@@ -18,7 +18,7 @@ const SING_PARAMS = {
 const SING_CENTS = 25;                 // on the note: within this many hundredths of a half-step (a quarter of one)
 const SING_CENTS_LIMITS = [5, 100];    // what a task may set `cents` to
 
-// timing, all in milliseconds on the sound system's clock (section 25, item 3)
+// timing, all in milliseconds on the sound system's clock (section 3.8, item 3)
 const SING_NOTE_MS = 1500;             // a note to match sounds this long
 const SING_STEP_MS = 1000;             // each of the two notes of a slide or an interval
 const SING_MELODY_MS = 800;            // each note of a melody but the last

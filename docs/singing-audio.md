@@ -4,7 +4,7 @@ Written 2026-10-09, the day after the Singing subject shipped (commits `8995c05`
 
 ## The gap, and what closed it
 
-Nothing in the app made a sound. The owner asked on 2026-10-09: "is there any sound, notes, audio examples? isn't this part super important for this type of lesson?" The answer was no, and it was a real gap for a singing subject. The rule for sound is section 21 of `docs/lesson-standard.md`; this page says what is built and what is left.
+Nothing in the app made a sound. The owner asked on 2026-10-09: "is there any sound, notes, audio examples? isn't this part super important for this type of lesson?" The answer was no, and it was a real gap for a singing subject. The rule for sound is section 3.8 of `docs/lesson-standard.md`; this page says what is built and what is left.
 
 ## What is built
 
@@ -44,7 +44,7 @@ Each button is labeled with the key's own answer for what it plays, so the words
 **Measured (run on 2026-10-09).**
 - The lesson side: `node tests/validate-lessons.mjs` (the rules V64 to V68 and every older rule on the data) and `node tests/lessons/negative-controls.mjs` (a seeded fault for each new rule, and for each prose check on `says` and the button labels: each turns exactly its own rule red). The numbers in the Unit Four sounds are checked against the app's own limits.
 - The pitch finder and the verdict, on made-up signals: `node tests/audio-pure.mjs` (579 checks and 9 seeded faults, each turning its own group red). This proves the arithmetic, not a real voice.
-- The browser checks of section 21 item 9 (X8 to X12) are part of `npm test` and ran green on 2026-10-10: 95 sound checks inside 44,272 browser checks. They render each example sound offline and measure its pitch, feed known notes in as the microphone, and check that nothing sounds, no microphone is requested and nothing is stored before or without a tap. The same behavior was then checked on the live site: before any tap there is no sound system, no sound and no microphone request; a tap on a note makes one sound; only "Start the microphone" asks for the microphone.
+- The browser checks of section 3.8 item 9 (X8 to X12) are part of `npm test` and ran green on 2026-10-10: 95 sound checks inside 44,272 browser checks. They render each example sound offline and measure its pitch, feed known notes in as the microphone, and check that nothing sounds, no microphone is requested and nothing is stored before or without a tap. The same behavior was then checked on the live site: before any tap there is no sound system, no sound and no microphone request; a tap on a note makes one sound; only "Start the microphone" asks for the microphone.
 - How big the wobble is: a second note 30 cents off a D beats against it about five times a second, which is the slow wobble the two cards describe. This is arithmetic, not listening.
 
 **Only a person with a phone can check these.**
@@ -52,7 +52,7 @@ Each button is labeled with the key's own answer for what it plays, so the words
 - The note tool with a real voice in a real room: a phone microphone's noise cancelling, a speaker that bleeds into the microphone, a quiet voice, a croaky one. The octave rule and the steadiness test are the parts most likely to need tuning.
 - The microphone permission prompt on a real phone, in the installed app (offline) and in the browser, on iPhone and on Android.
 - Volume: the sounds are meant to be soft, and what is soft on a laptop speaker may be loud in earbuds.
-- Whether the first card of Unit Four reads well with the tool on it. The tool sits on the note-check card, ahead of the cards that teach the names, so it shows the key's wording ("A shade under the song's note") before the meet cards teach it (section 21, "What the build settled", item 5). If that reads badly cold, the tool moves to a later card.
+- Whether the first card of Unit Four reads well with the tool on it. The tool sits on the note-check card, ahead of the cards that teach the names, so it shows the key's wording ("A shade under the song's note") before the meet cards teach it (section 3.8, "What the build settled", item 5). If that reads badly cold, the tool moves to a later card.
 
 ## What is left
 
@@ -63,4 +63,4 @@ Each button is labeled with the key's own answer for what it plays, so the words
 ## Not to forget
 
 - The method used to build the subject, and the one convention it settled (key lines carry no tokens), are in `docs/HANDOFF.md` and `docs/rebuild/singing-plan.md`.
-- The rule for sound in any subject (what a block is, where it sits, the note tool, the validator rules V64 to V68, the browser checks X8 to X12) is section 21 of `docs/lesson-standard.md`, with the list of what the build settled at its end.
+- The rule for sound in any subject (what a block is, where it sits, the note tool, the validator rules V64 to V68, the browser checks X8 to X12) is section 3.8 of `docs/lesson-standard.md`, with the list of what the build settled at its end.

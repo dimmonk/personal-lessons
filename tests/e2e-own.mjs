@@ -1,11 +1,11 @@
 // X24 and X27, on the test subject "Household papers" (tests/fixtures/fixture-subject/ledger-*.js), in Chromium.
-//   X24 (lesson standard 26.7, own data): the learner's private sheet and dated changes. A lesson that waits for a moment says so, and its step on
+//   X24 (lesson standard 9, own data): the learner's private sheet and dated changes. A lesson that waits for a moment says so, and its step on
 //       the learner's own data opens the sheet form when the sheet is empty; a run of eight digits, a word where a number goes and a day in the
 //       past are refused with a line under the field and nothing is stored; the costs are the app's arithmetic on what was typed and warn
 //       outside the plausible range; a dated change writes a calendar file for its day, "I did it now" and a done mark stick across a reload;
 //       the sheet is kept in pl:<subject>:notes alone and appears nowhere outside the subject's own screens and the two files the learner saves;
 //       delete asks inline (never a browser dialog) and takes everything off the phone; and no request leaves the app.
-//   X27 (new with step 4, 26.10): the papers of a household and the form. Every kind of paper is drawn as its data says; a household's papers are
+//   X27 (new with step 4, 3 to 9): the papers of a household and the form. Every kind of paper is drawn as its data says; a household's papers are
 //       tabs, one open at a time, kept across a repaint; a dated value looked up prints its day and source and says when it is old; a form is
 //       answered whole (Answer opens only when every field is filled), scored field by field, each missed field with its own line, and stored as
 //       numbers and option ids. It leaves to X24 whatever is the learner's own data, and to X3 the layout of screens with answer buttons.

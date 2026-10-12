@@ -2,7 +2,6 @@
 FC.lesson('ledger', {
   id: 'l1', part: '1', title: 'Read the papers', rev: 1, status: 'live', trigger: 'job',
   history: [{ rev: 1, date: '2026-10-10', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-10', words: 'Clear on a phone.' },
   why: 'A household keeps its money on a few papers. Read them for what each fund costs a year.',
   flow: [
     { title: 'The papers',

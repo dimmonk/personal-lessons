@@ -1,7 +1,6 @@
 FC.lesson('chorus', {
   id: 'l2', part: '2', title: 'Several notes', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-10', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-10', words: 'Clear on a phone.' },
   why: 'Hear two notes, then a short tune, then sing them back. A light note is sung no louder than you talk.',
   flow: [
     { set: { items: [{ sing: { task: 'warmup' }, n: 1 }], order: 'listed' } },

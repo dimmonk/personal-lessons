@@ -3,7 +3,6 @@
 FC.lesson('account', {
   id: 'l1', part: '1', title: 'What they did', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-11', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-11', words: 'Clear on a phone.' },
   why: 'An account comes with a word. Find what the person did first.',
   flow: [
     { title: 'Three ways an account arrives',

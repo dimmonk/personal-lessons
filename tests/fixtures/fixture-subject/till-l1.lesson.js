@@ -1,7 +1,6 @@
 FC.lesson('till', {
   id: 'l1', part: '1', title: 'Count the cart', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-10', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-10', words: 'Clear on a phone.' },
   why: 'A cart comes to a number you can guess before the register says it. Guess first, then work it out exactly.',
   flow: [
     { title: 'What the papers look like',

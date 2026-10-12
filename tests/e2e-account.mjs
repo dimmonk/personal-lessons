@@ -1,4 +1,4 @@
-// X34 and X35, on a message and a line to write (lesson standard 26.1, 26.1.2, 26.7; new with step 7, 26.10). Each is a function of the environment
+// X34 and X35, on a message and a line to write (lesson standard 3, 3.9, 9; new with step 7, 3 to 9). Each is a function of the environment
 // (e2e-env.mjs) that drives the real app in Chromium on the test subject "Told by a friend" (tests/fixtures/fixture-subject/account-*.js) and returns
 // its checker; tests/e2e-controls.mjs runs each against the app with a seeded fault and requires exactly that check to go red.
 //   X34  the message block in its three forms: a friend's message, a thread you are in (the other person's lines at the left, yours at the right,

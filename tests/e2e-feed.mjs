@@ -1,5 +1,5 @@
-// The browser checks of lesson standard 26.7 for articles, the tap and the charts: X15 (the tap ask), X31 (the article block in its four
-// forms; new with step 5, 26.10) and the chart half of X20 (the chart and the 1,000-people figure are drawn from their data and the cut
+// The browser checks of lesson standard 9 for articles, the tap and the charts: X15 (the tap ask), X31 (the article block in its four
+// forms; new with step 5, 3 to 9) and the chart half of X20 (the chart and the 1,000-people figure are drawn from their data and the cut
 // chart is redrawn from zero; the figure half is in tests/e2e-number.mjs). Each is a function of the environment (e2e-env.mjs) that drives the
 // real app in Chromium on the test subject "On the feed" (tests/fixtures/fixture-subject/feed-*.js) and returns its checker.
 // tests/e2e-controls.mjs runs each against the app with a seeded fault and requires exactly that check to go red.

@@ -12,7 +12,7 @@ const DEFAULT_NOTES = ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4'];
 const AUDIO_A4_HZ = 440;
 const AUDIO_NOTE_SEMITONES = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };
 const AUDIO_NOTE_PATTERN = /^([A-G])(#|b)?([2-6])$/;
-// The limits of an audio block (section 21, item 2). One place, read by the checker below and by the validator.
+// The limits of an audio block (section 3.8, item 2). One place, read by the checker below and by the validator.
 const AUDIO_LIMITS = { examples: 4, tones: 4, toneMs: 4000, exampleMs: 6000, centsMax: 1200 };
 
 function noteToHz(note){
@@ -96,7 +96,7 @@ function audioExampleProblems(example, where){
   const end = Math.max(...example.play.map(audioToneEndMs));
   return end > AUDIO_LIMITS.exampleMs ? [...problems, `${where}: an example ends at most ${AUDIO_LIMITS.exampleMs} ms after the tap, this one at ${end}`] : problems;
 }
-// The problems with an audio block's notes and numbers (the limits of section 21, item 2): [] when it is fine.
+// The problems with an audio block's notes and numbers (the limits of section 3.8, item 2): [] when it is fine.
 // The words of a block (says, labels, answers) are checked by the lesson validator, not here.
 function audioBlockProblems(block){
   if(!block || typeof block !== 'object') return ['audio is not a block'];

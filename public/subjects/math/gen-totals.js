@@ -1,4 +1,4 @@
-// Math, lesson 1 "Ballpark and check": every question is made with fresh prices each time (lesson standard 26.1, a generator). Prices are in
+// Math, lesson 1 "Ballpark and check": every question is made with fresh prices each time (lesson standard 3, a generator). Prices are in
 // cents so the arithmetic is whole numbers; a price always ends in 9, as on a shelf. What the learner is asked for is a rough total typed first
 // (no calculator), then the exact one, or whether a printed total is right. Each generator is also made in a shorter form for the check: a
 // rough total alone, or the verdict alone (the check of part 1 asks for an estimate within a fifth and for the wrong total to be caught).

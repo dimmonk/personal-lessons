@@ -136,7 +136,7 @@ function ownActionFromDraft(form, draft, today, doneNow, id){
 const ownMarkDone = (actions, id, today) => actions.map(a => a.id === id ? { ...a, done: today } : a);
 
 /* ---------- the calendar file ---------- */
-// A learner's own calendar app reads this and gives the reminder; the app itself can send no notification (26.9). One all-day event on the
+// A learner's own calendar app reads this and gives the reminder; the app itself can send no notification (10). One all-day event on the
 // action's day, a reminder at nine in the morning, repeating every year when the action does. Lines end in CRLF and are folded at 75.
 const icsEscape = text => String(text).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
 const icsDay = day => day.replace(/-/g, '');

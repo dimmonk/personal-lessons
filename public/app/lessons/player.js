@@ -120,7 +120,7 @@ function startSet(step){
     seconds: set.seconds || null, over: set.over || null,
     owner: lessonOwner(), shell: lessonShell, onDone: log => log.every(e => e.unscored) ? next() : paintBreak(log) });
 }
-// A sung run needs the learner's range; when it is not set yet, the range exercise runs first and the run follows it (26.1.1).
+// A sung run needs the learner's range; when it is not set yet, the range exercise runs first and the run follows it (3.8).
 // The range try belongs to the lesson's practice, not to the run it opens, so a check's size and result are not changed by it.
 function startQueueWithRange(opts){
   const needs = opts.list.some(i => i.item.asks.some(a => a.kind === 'sing' && SING_NEEDS_RANGE.includes(a.task)));
@@ -211,7 +211,7 @@ function paintCheckResult(log, counted = false){
   if(!counted) focusScreenHead();
 }
 /* ---------- the baseline: measured, not passed ---------- */
-// One line: how many of the risky messages the learner did what they asked on, and how many real ones they handled the right way (26.2, gate 5).
+// One line: how many of the risky messages the learner did what they asked on, and how many real ones they handled the right way (4, gate 5).
 // The words come from the subject's `danger` (the slip that is the failure, the facet it is counted by, which value is risky and which is real).
 function baselineLine(data, outcomes){
   const d = data.meta.danger, risky = outcomes.filter(o => o.facets[d.facet] === d.risky), real = outcomes.filter(o => o.facets[d.facet] === d.real);

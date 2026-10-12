@@ -1,4 +1,4 @@
-// The pure half of step 4 (lesson standard 26.1, 26.3, 26.10): a form scored field by field, the papers of a household drawn as tabs, a value
+// The pure half of step 4 (lesson standard 3, 5, 3 to 9): a form scored field by field, the papers of a household drawn as tabs, a value
 // looked up, what the learner's own data must be and how it is worked out, the calendar file, and the numbers Wealth's accounts are made of.
 // No browser: the app's scripts are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/own-pure.mjs

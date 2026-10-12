@@ -1,5 +1,5 @@
 /* ===================== SUBJECT SCREEN ===================== */
-// Lesson standard 26.5: the end result in a sentence; the lessons in part order, each with its title, revision, draft line and state;
+// Lesson standard 7: the end result in a sentence; the lessons in part order, each with its title, revision, draft line and state;
 // a part with no lesson yet says so; practice again on a done lesson; the learner's own data; the results.
 
 // "Check passed, 8 of 10, Oct 12", "Step 3 of 6", or "Not started"
@@ -46,7 +46,7 @@ function againSection(subj){
       <span class="tf"><b>${esc(SAY.practiceAgain)}</b>${icon('arrow', 14)}</span></button>`).join('')}</div>`;
 }
 
-// the learner's own data (26.3, 26.5): Singing's range, measured by the range exercise; and a subject's private forms: its accounts, its
+// the learner's own data (5, 7): Singing's range, measured by the range exercise; and a subject's private forms: its accounts, its
 // dated actions and the moments the learner has marked, with the controls that take it out of the phone or off it
 function ownDataSection(subj){
   const range = rangeOf(subj.id);
@@ -107,7 +107,7 @@ function renderSubject(subj){
 
 /* ===================== RESULTS ===================== */
 // First-try accuracy per lesson and per facet value side by side, the slips made most, the check history, and what comes back when
-// (26.5). All of it is computed from the practice record. No grade, no comparison with anyone.
+// (7). All of it is computed from the practice record. No grade, no comparison with anyone.
 const SCORED = ['baseline'];
 function triesWithDefs(subj){
   const data = dataOf(subj);
@@ -141,7 +141,7 @@ function comingBackRows(subj){
   const retests = retestDays(data, subj.id).map(r => [`Second check: ${r.lesson.title}`, dayWords(r.due)]);
   return [...strands, ...retests];
 }
-// the answers the learner counted right on their own word ("my answer means the same", 26.3), each with the day: they still come back
+// the answers the learner counted right on their own word ("my answer means the same", 5), each with the day: they still come back
 function claimedRows(subj){
   const data = dataOf(subj);
   return allTries(subj.id).filter(({ t }) => triesClaimed(t) && t.context !== 'baseline').map(({ key, t }) => ({ def: definitionOf(data, key), t })).filter(x => x.def)

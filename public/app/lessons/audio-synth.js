@@ -1,5 +1,5 @@
 /* ===================== SOUND: MAKING NOTES ===================== */
-// Lesson standard section 21, items 2 and 4. The app makes its own sounds with Web Audio: a sine for each tone, with a quick
+// Lesson standard section 3.8, items 2 and 4. The app makes its own sounds with Web Audio: a sine for each tone, with a quick
 // fade in and out. There are no sound files, no setTimeout and no setInterval: every sound is put on the sound system's own
 // clock, and a button learns that its sound is over from the last oscillator's "ended" event.
 // Nothing here runs at load. The one AudioContext is made on the first tap (audioContext) and never earlier.

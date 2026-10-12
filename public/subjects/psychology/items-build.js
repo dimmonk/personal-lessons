@@ -1,4 +1,4 @@
-// Psychology: the one way an account is put together (lesson standard 26.1, 26.1.2). Every account arrives as a message in one of three forms (a
+// Psychology: the one way an account is put together (lesson standard 3, 3.9). Every account arrives as a message in one of three forms (a
 // friend's message about someone, a text thread you are in, your own note after an argument), with the checklist of what counts as what
 // they did in a panel, and these asks in this order: tap the line (or lines) that say what the person did, or say that none does; then, on some,
 // say it again without the word (pick the fair line, or write it and compare it with a model), or, when the account says nothing the person did,

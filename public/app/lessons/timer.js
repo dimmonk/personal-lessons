@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A COUNTDOWN THAT ONLY SHOWS THE TIME ===================== */
-// Lesson standard 26.2 (timed groups, only in a subject that says `timed`) and 26.7 (X17). A timed question shows the seconds it has left, drawn
+// Lesson standard 4 (timed groups, only in a subject that says `timed`) and 9 (X17). A timed question shows the seconds it has left, drawn
 // on the frame clock (requestAnimationFrame): there is no timer. At zero the question stops, whatever has not been answered is a `timeout` (a miss
 // that is not a slip), and the screen waits for Next: nothing ever moves on by itself. Pure: the arithmetic and the HTML, no page and no storage.
 

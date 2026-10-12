@@ -1,52 +1,341 @@
 ---
 {
   "subject": "scams",
+  "asked": [
+    {
+      "id": "before-you-tap",
+      "words": "Before you tap, call or pay",
+      "when": "2026-10-05",
+      "where": "old Unit One at the tag old-lessons",
+      "owner": null,
+      "kept": "A",
+      "dropped": false
+    },
+    {
+      "id": "three-scams-one-real",
+      "words": "Three scams and one real thing: how to tell them apart before you press anything",
+      "when": "2026-10-05",
+      "where": "old Unit Two",
+      "owner": null,
+      "kept": "C",
+      "dropped": false
+    },
+    {
+      "id": "type-read-press",
+      "words": "Three scams that ask you to type, read out or press something, the real thing they copy, and two questions that tell them apart",
+      "when": "2026-10-05",
+      "where": "old Unit Three",
+      "owner": null,
+      "kept": "C",
+      "dropped": false
+    },
+    {
+      "id": "asks-for-money",
+      "words": "Eight scams that ask for money, and the real request they copy",
+      "when": "2026-10-05",
+      "where": "old Unit Four",
+      "owner": null,
+      "kept": "C",
+      "dropped": false
+    },
+    {
+      "id": "asks-about-you",
+      "words": "A form, a call or a stranger asks about you: how to tell what is normal from what is a scam",
+      "when": "2026-10-05",
+      "where": "old Unit Five",
+      "owner": null,
+      "kept": "D",
+      "dropped": false
+    },
+    {
+      "id": "already-happened",
+      "words": "If it has already happened",
+      "when": "2026-10-05",
+      "where": "old Unit Six",
+      "owner": null,
+      "kept": "F",
+      "dropped": false
+    }
+  ],
   "kinds": [
     "judging",
     "habit"
   ],
+  "principles": [
+    {
+      "id": "SC1",
+      "note": "scams-judging-and-acting",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "SC2",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "SC3",
+      "note": "scams-judging-and-acting",
+      "decides": true,
+      "read": "full"
+    },
+    {
+      "id": "SC4",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "SC5",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "SC6",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "SC7",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "SC8",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "full"
+    },
+    {
+      "id": "SC9",
+      "note": "scams-judging-and-acting",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R2",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R3",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R4",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R5",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "abstract"
+    },
+    {
+      "id": "R7",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R8",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    },
+    {
+      "id": "R9",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "summary"
+    }
+  ],
+  "goal": "After this subject, when a message, call or offer asks you to act, by text, email, pop-up, chat or a call, often urgent and looking real while you are busy, you stop, see what it wants, and check it through a way you already had, your bank's app or the number on your card, before doing anything, while still handling real messages normally. When a caller pushes, you hang up and call back without having to think about it. And if something already went out, you make the first calls at once. It does not teach scam types for their own sake, reading links or sender addresses, or the law.",
+  "topics": [
+    "See the request",
+    "Your own way in",
+    "Act, check or leave, on mixed messages",
+    "Hold off when it pushes",
+    "Keep it",
+    "If it already went out"
+  ],
   "endResult": "When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.",
   "realMoment": "A text, email, call, chat or pop-up on your phone or computer, often urgent, often looking real, usually while you are busy with something else.",
   "test": "Twelve new messages in the forms they arrive in (texts, emails, pop-ups, a marketplace chat, and at least two live calls or chats that push back), about half genuine, about 20 seconds each. For each you pick what you would do from the real actions (do what it asks, reply, check through a channel you already had and which one, or leave it). Pass: no scam acted on; every check goes through a channel you already had, never one the message gave; at most one genuine message mishandled. Scored by the action, never by whether the message turned out real. Taken before the subject, at its end, and again with new messages about four weeks later.",
+  "out": "Naming scam types or tactics as a goal; reading links, headers and sender addresses (unreliable for a lay reader, and replaced by checking yourself); judging investments and 'too good to be true' business offers (Wealth Preservation); setting up technical protections beyond keeping your own channels to hand; the law and how scammers are caught.",
   "practice": "Deciding what to do on many real-looking messages, about half genuine, in the form they arrive in, with the consequence shown after each; then live calls and chats that push, practiced until hanging up and calling back is automatic; one rehearsed if-then plan; the app brings new messages back over weeks.",
-  "approved": {
-    "endResult": "2026-10-10",
-    "practice": "2026-10-10",
-    "pilot": "2026-10-10"
-  },
+  "feedback": "From the app, immediately after each decision: what happens next if you did that, the request named in the message's own words, and the one-line right move. In live exchanges, at the end of the exchange, with the pressure lines marked. Results per channel and per kind of request are shown, and genuine-message handling beside scam handling.",
+  "delivery": [
+    "render a message as it arrives: SMS bubble with sender, email with display name and link text, pop-up, marketplace chat, call screen",
+    "answer with actions, not labels (tap link, call the number given, pay, read the code, install, reply, check through my own channel, leave it), with a channel picker for 'check'",
+    "live exchange: a scripted call or chat that branches on the learner's reply and escalates pressure",
+    "a time limit per message",
+    "consequence feedback, and scoring by action with the asymmetric rule (acting on a scam fails, checking a genuine message is right)",
+    "per-item record and returns with new instances of the same request, keyed on the request kind",
+    "a typed if-then plan, shown again at returns"
+  ],
+  "readingShare": 0.15,
+  "form": "An action chosen on a message as it arrives, on a clock, with the consequence shown; a reply chosen on a live call or chat that pushes back and escalates. Each part's check is a small run of new messages or exchanges answered with real actions and scored by the action taken, never by whether the message turned out real.",
   "parts": [
     {
       "id": "A",
-      "title": "See the request"
+      "title": "See the request",
+      "check": "10 mixed messages, 15 s each: tap the line that asks, mark risky or not. Pass 9 of 10.",
+      "topics": [
+        "See the request"
+      ]
     },
     {
       "id": "B",
-      "title": "Your own way in"
+      "title": "Your own way in",
+      "check": "8 messages: pick the channel from options that include the message's own. Pass 8 of 8. Plus the setup done (self-reported).",
+      "topics": [
+        "Your own way in"
+      ]
     },
     {
       "id": "C",
-      "title": "Act, check or leave, on mixed messages"
+      "title": "Act, check or leave, on mixed messages",
+      "check": "12 new messages, 20 s each. Pass: no scam acted on, all checks through own channel, at most one genuine mishandled.",
+      "topics": [
+        "Act, check or leave, on mixed messages"
+      ]
     },
     {
       "id": "D",
-      "title": "Hold off when it pushes"
+      "title": "Hold off when it pushes",
+      "check": "3 new live exchanges: ends each and checks through own channel; never gives a code, a payment or remote access, whatever is said. Pass 3 of 3.",
+      "topics": [
+        "Hold off when it pushes"
+      ]
     },
     {
       "id": "E",
-      "title": "Keep it"
+      "title": "Keep it",
+      "check": "The gate 2 test with new messages, about four weeks after the end, unannounced. Same bar.",
+      "topics": [
+        "Keep it"
+      ]
     },
     {
       "id": "F",
-      "title": "If it already went out"
+      "title": "If it already went out",
+      "check": "5 situations: pick the first step and order the next two. Pass: every first step right.",
+      "topics": [
+        "If it already went out"
+      ]
     }
   ],
+  "lessons": {
+    "l1": {
+      "part": "A",
+      "does": "One screen with the four kinds of risky request and one example each (about 1 min); then about 30 messages in their real form, mixed channels, about half wanting nothing risky (about 9 min): tap the line that asks, mark risky or not, 15 s each.",
+      "feedback": "The request highlighted in the message's own words, and why it is or is not risky.",
+      "check": "10 mixed messages, 15 s each: tap the line that asks, mark risky or not. Pass 9 of 10.",
+      "why": [
+        "SC2",
+        "SC4",
+        "SC6",
+        "R9",
+        "R7"
+      ]
+    },
+    "l2": {
+      "part": "B",
+      "does": "One screen on why anything the message gives belongs to the sender (about 1 min); about 20 messages: pick how you would check it, from options that include the message's link and number, the caller's offer to transfer you, and your own channels (about 7 min); then the real-life setup (about 5 min, done on the phone itself: save the bank's number from your card, check you have the apps, agree a check question with family).",
+      "feedback": "Where each option would really take you.",
+      "check": "8 messages: pick the channel from options that include the message's own. Pass 8 of 8. Plus the setup done (self-reported).",
+      "why": [
+        "SC2",
+        "SC6",
+        "SC4"
+      ]
+    },
+    "l3": {
+      "part": "C",
+      "does": "One worked message shown deciding aloud through the routine (about 1 min); about 35 messages, about half genuine, all channels, timed at 20 s, answered with real actions (about 14 min). Built around pairs that differ in one thing: the genuine reset code you asked for against the 'read me the code' text; the genuine delivery notice against the 'pay a small fee' one; a genuine bank fraud alert (right move: check in the app) against a fake one (same move).",
+      "feedback": "The consequence of the chosen action and of the right one; for genuine messages, what checking cost (a minute) and what it confirmed.",
+      "check": "12 new messages, 20 s each. Pass: no scam acted on, all checks through own channel, at most one genuine mishandled.",
+      "why": [
+        "SC1",
+        "SC5",
+        "SC7",
+        "SC8",
+        "R7",
+        "R8",
+        "R9"
+      ]
+    },
+    "l4": {
+      "part": "D",
+      "does": "One screen naming the move 'end it, call back on your own channel' (about 1 min); about 6 live exchanges, branching, each 2 to 3 minutes, pressure rising as the learner hesitates (bank 'fraud team', grandchild in trouble, boss needing gift cards now, tech support pop-up with a number, a buyer on a marketplace sending a 'payment link', a courier call asking for the code, an online friend of several weeks who brings up money or a trading app, shown as a chat history then a live turn) (about 14 min); then about 10 timed messages arriving over a distracting task (about 3 min).",
+      "feedback": "At the end of each exchange, the lines that pushed marked, and where the learner could have ended it.",
+      "check": "3 new live exchanges: ends each and checks through own channel; never gives a code, a payment or remote access, whatever is said. Pass 3 of 3.",
+      "why": [
+        "SC5",
+        "SC7",
+        "R8",
+        "R7"
+      ]
+    },
+    "l5": {
+      "part": "E",
+      "does": "Write one if-then plan in your own words, with the cue as the request (example cues given, about 2 min); rehearse it on about 10 mixed timed messages and one live exchange, the plan shown before (about 5 min); the app schedules returns at about a day, a week, three to four weeks, then every couple of months, with new messages never seen before and misses coming back in the same session until right.",
+      "feedback": "As in lessons 3 and 4: the consequence after each decision, the pressure lines marked in live exchanges. The immediate check is the rehearsal set at part C's bar; the real check is the four-week retest.",
+      "check": "The gate 2 test with new messages, about four weeks after the end, unannounced. Same bar.",
+      "why": [
+        "SC3",
+        "SC8",
+        "SC9",
+        "R2",
+        "R3",
+        "R4",
+        "R5"
+      ]
+    },
+    "l6": {
+      "part": "F",
+      "does": "One screen with the first-hour steps for money, a password or code, and remote access (about 2 min); about 8 short situations: pick the first step, then order the next two (about 5 min).",
+      "feedback": "Why the order matters (a bank can sometimes stop a payment only in the first hours; a reused password opens the other accounts).",
+      "check": "5 situations: pick the first step and order the next two. Pass: every first step right.",
+      "why": [
+        "R7",
+        "R8"
+      ]
+    }
+  },
   "pilot": "l3",
+  "approved": {
+    "goal": null,
+    "practice": null
+  },
   "tried": {
-    "pilot": null
-  }
+    "l3": {
+      "by": "stand-in",
+      "date": "2026-10-11",
+      "review": "reviews/l3.md",
+      "waived": "keep going. just finish everything and don't wait on my read"
+    }
+  },
+  "opened": [
+    "docs/research/scams-judging-and-acting.md",
+    "docs/research/review-after-lessons.md",
+    "docs/learning-science.md"
+  ]
 }
 ---
 # scams: design record (build-subject skill)
+
+JSON migrated to the skill's record shape on 2026-10-12; the gates' prose below is as written on 2026-10-10.
 
 Written 2026-10-10. Gates 2 and 3 are drafts waiting for the owner's approval; until then V69 keeps every lesson of this
 subject as it is. The content that exists predates the gates and is audited against this record (gates 4 and 5, designed

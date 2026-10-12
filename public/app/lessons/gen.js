@@ -1,5 +1,5 @@
 /* ===================== LESSONS: ITEMS MADE WITH FRESH NUMBERS ===================== */
-// Lesson standard 26.1 ("A generator"). A generator is an item whose numbers are made fresh each time: `params` says what
+// Lesson standard 3 ("A generator"). A generator is an item whose numbers are made fresh each time: `params` says what
 // may vary, `make(pick, params)` is a pure function of the seed, and every `{name}` slot in the item's text is filled from the
 // values it returns. A try stores the seed, never the numbers, so the exact problem can be rebuilt. Pure: no page, no storage.
 
@@ -70,7 +70,7 @@ function itemFromGen(gen, seed, fixed){
 
 // What a lesson names: an item id, { gen, n, with? }, { sing, n } or a pair of those. The instance the learner meets:
 // { key: id the tries are stored under, item, seed? }
-// A sung question (26.1.1) is named by its task: { sing: { task, ...params }, n }. Its stored id is singKey (sing-task.js).
+// A sung question (3.8) is named by its task: { sing: { task, ...params }, n }. Its stored id is singKey (sing-task.js).
 const refId = ref => typeof ref === 'string' ? ref : 'sing' in ref ? singKey(ref.sing) : ref.gen;
 // `ref` is kept on a made instance, so a missed question can be made again with new numbers or targets (queue.js)
 function instanceOf(data, ref, seed){

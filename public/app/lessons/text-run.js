@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WRITING A LINE ===================== */
-// Lesson standard 26.1 (the `text` ask). What happens on the screen the queue (queue.js) has just painted when it holds a line to write: the
+// Lesson standard 3 (the `text` ask). What happens on the screen the queue (queue.js) has just painted when it holds a line to write: the
 // words are kept in Q.cur.typed[askId] as they are typed (so a repaint loses nothing), Answer opens when something is written, and "Not yet"
 // answers with nothing written so that the model line can be read. Needs the queue (Q, openAsk, answerAsk) and text-view.js.
 

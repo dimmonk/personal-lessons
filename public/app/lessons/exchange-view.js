@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A CALL OR CHAT ON SCREEN ===================== */
-// Lesson standard 26.1 (the `exchange` ask) and 26.2. Pure HTML builders over exchange.js: the turns met so far as a transcript (what the other side
+// Lesson standard 3 (the `exchange` ask) and 26.2. Pure HTML builders over exchange.js: the turns met so far as a transcript (what the other side
 // says, then the reply picked), the replies the learner can pick now, and, once the question is answered and its feedback shows, the lines that
 // pushed marked and the reply where it could have ended. Nothing here reads the page or stores anything.
 //   st: { answer?: [optionId], many?: [optionId], marks }   `many` is the replies picked so far in an exchange not yet ended

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: TAPPING A LINE OF THE TEXT ===================== */
-// Lesson standard 26.1 (the `tap` ask). The lines of a block become tappable; the learner taps the one that decides it, or says it is not
+// Lesson standard 3 (the `tap` ask). The lines of a block become tappable; the learner taps the one that decides it, or says it is not
 // there. Pure: no page and no storage, so the player, the validator and the tests all score a tap the same way.
 //   ask    { id, kind: 'tap', prompt, in?: id of a block, pick?: n, right: [segmentId] | 'none', none?: Text, when? }
 //   `in` names one block of the question (it carries that `id`); without it every line of every block can be tapped. `pick` is how many

@@ -1,5 +1,5 @@
 /* ===================== LESSONS: WORDS THE LEARNER WRITES, ON SCREEN ===================== */
-// Lesson standard 26.1 (the `text` ask), as built in step 7: a line the learner writes in their own words and then compares with a model. It is
+// Lesson standard 3 (the `text` ask), as built in step 7: a line the learner writes in their own words and then compares with a model. It is
 // never scored (it has no right answer to match), it is kept with the try, and the feedback shows theirs beside the model. Matching typed
 // answers against accepted ones (`accept`) is built with Civics (step 9). Pure string builders: nothing here reads the page.
 //   ask     { id, kind: 'text', prompt, model: Text, when? }

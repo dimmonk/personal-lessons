@@ -1,5 +1,5 @@
 /* ===================== LESSONS: TYPED NUMBERS ===================== */
-// Lesson standard 26.1 (the `number` ask), 26.2 (the estimate, and "your answer and your estimate disagree"). Pure: no page and no
+// Lesson standard 3 (the `number` ask), 4 (the estimate, and "your answer and your estimate disagree"). Pure: no page and no
 // storage, so the player, the validator and the tests all score a typed number the same way.
 //   ask   { id, kind: 'number', prompt, frame?: 'from __ in 1,000 to __ in 1,000', unit?, places?, answer: value | [value, ...],
 //           tol: { abs?, rel? } | { round } | { band: [least, most] }, estimate?: true, traps?: [{ slip, value, then? }], when? }
@@ -66,7 +66,7 @@ function estimateTyped(item, answers){
   const ask = (item.asks || []).find(a => isEstimateAsk(a) && a.id in answers);
   return ask ? asList(answers[ask.id])[0] : null;
 }
-// "Your answer and your estimate disagree" (26.2): the answer is more than double, or less than half, of the learner's own estimate.
+// "Your answer and your estimate disagree" (4): the answer is more than double, or less than half, of the learner's own estimate.
 // Only in practice (the caller passes the group's support), only on an exact ask, never on the estimate itself.
 const estimateCheckOn = support => !!(support && support.estimateCheck);
 function estimatesDisagree(item, support, ask, answers, typed){

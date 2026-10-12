@@ -6,6 +6,7 @@
 //   site                 { files: [{ path, lines }], indexScripts, swShell } for V47
 //   held, committedHeld  { held: [message, ...] } the working list of held findings (V58), and the list of the last commit
 //   designs              { [subjectId]: design record } from docs/subjects/<id>/design.md, for V69, V71 and V80 (designs.mjs)
+//   reviews, research    the verdict of every stand-in review and the finding ids of every research note, for V69 (designs.mjs)
 // Every registered subject is held to every rule. V70 runs first: when a subject fails its shape, its other rules are skipped
 // and the run says so, because rules read the shape they were promised.
 import { subjectView } from './model.mjs';

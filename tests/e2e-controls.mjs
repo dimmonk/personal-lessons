@@ -31,7 +31,7 @@ export const FAULTS = [
     edits: [replace('app/lessons/schedule.js', "const bank = leastSeen(subjectId, fixed.filter(d => !used.has(d.id) && !seenBefore(subjectId, d.id)));", "const bank = [];")] },
   { check: 'X23', name: 'feedback shown between the questions of a check',
     edits: [replace('app/lessons/queue.js', "const marks = cur.done && Q.feedback === 'after-each';", "const marks = cur.done;")] },
-  // typed numbers and figures (26.7: X13, X20)
+  // typed numbers and figures (9: X13, X20)
   { check: 'X13', name: 'the "your answer and your estimate disagree" line shown in a check',
     edits: [replace('app/lessons/number.js', "const estimateCheckOn = support => !!(support && support.estimateCheck);", "const estimateCheckOn = support => true;")] },
   { check: 'X13', name: 'a calculator on the estimate',
@@ -44,7 +44,7 @@ export const FAULTS = [
     edits: [replace('app/lessons/doc-view.js', 'width="${p.pct}" height="20"', 'width="${p.pct * 0.9}" height="20"')] },
   { check: 'X25', name: 'the cart without its big line no longer recognised as a slip in Math',
     edits: [replace('subjects/math/gen-totals.js', "[{ slip: 'missed-line', value: 'noBig', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps])],", "[{ slip: 'missed-line', value: 'tenfold', then: 'That is the answer you get when the {bigName} line is left out.' }, ...pointTraps])],")] },
-  // the learner's own data, the papers and the form (26.7: X24; 26.10: X26, X27)
+  // the learner's own data, the papers and the form (9: X24; 3 to 9: X26, X27)
   { check: 'X24', name: 'a balance of eight digits accepted',
     edits: [replace('app/lessons/own.js', 'const OWN_MAX_DIGITS = 8;', 'const OWN_MAX_DIGITS = 80;')] },
   { check: 'X24', name: 'a day in the past accepted for a dated change',
@@ -78,7 +78,7 @@ export const FAULTS = [
       replace('subjects/wealth/gen-cost.js', "{ id: 'bonds', text: '{bondIndexName}', slip: 'wrong-kind', then:", "{ id: 'bonds', text: '{bondIndexName}', then:")] },
   { check: 'X26', name: 'no sample to find the lines on the learner\'s own papers',
     edits: [replace('subjects/wealth/l2.lesson.js', "{ own: 'sheet', model: 'w-statement' }", "{ own: 'sheet' }")] },
-  // articles, the tap and the charts (26.7: X15, X20; 26.10: X30, X31)
+  // articles, the tap and the charts (9: X15, X20; 3 to 9: X30, X31)
   { check: 'X15', name: 'the right line of a tap marked before the answer',
     edits: [replace('app/lessons/item-view.js', "const picked = !!tap && tap.picked.includes(seg.id), fine = seg.fine ? ' fine' : '';",
       "const picked = !!tap && tap.picked.includes(seg.id), fine = seg.fine ? ' fine' : '';\n  if(tap && !tap.locked && tap.right.includes(seg.id)) return `<button type=\"button\" class=\"tapseg\" data-tap=\"${esc(seg.id)}\" data-seg=\"${esc(seg.id)}\"><mark class=\"cue\">${esc(seg.text)}</mark></button>`;")] },
@@ -112,7 +112,7 @@ export const FAULTS = [
     edits: [replace('subjects/stats/items-claims.js', 'deciding: ["h", "s1", "s4", "s5"],', 'deciding: [],')] },
   { check: 'X30', name: 'the check of part A asks for 5 of 5',
     edits: [replace('subjects/stats/l1.lesson.js', 'pass: [{ right: { min: 4 } }, { slip: "doubted", max: 1 }]', 'pass: [{ right: { min: 5 } }, { slip: "doubted", max: 1 }]')] },
-  // a label pinned on a post, the panel, the needs found or missing, the sides (26.7; 26.10: X32, X33)
+  // a label pinned on a post, the panel, the needs found or missing, the sides (9; 3 to 9: X32, X33)
   { check: 'X32', name: 'the panel drawn in every group, not only where the help is on',
     edits: [replace('app/lessons/item-view.js', "    panel: !!(support && support.panel) };", "    panel: true };")] },
   { check: 'X32', name: 'every need shown as missing, whatever the words show',
@@ -137,7 +137,7 @@ export const FAULTS = [
     edits: [replace('subjects/ideology/l2.lesson.js', 'pass: [{ right: { min: 5 } },', 'pass: [{ right: { min: 6 } },')] },
   { check: 'X33', name: 'the side of a label named in other words in Ideology',
     edits: [replace('subjects/ideology/subject.js', '{ id: "left", text: "labels thrown from the left" }', '{ id: "left", text: "labels thrown from the west" }')] },
-  // a message as it arrives, the checklist with a heading of its own, a line to write against a model (26.7; 26.10: X34, X35, X36)
+  // a message as it arrives, the checklist with a heading of its own, a line to write against a model (9; 3 to 9: X34, X35, X36)
   { check: 'X34', name: 'the lines of a thread all drawn at the left, yours too',
     edits: [replace('app/lessons/message-view.js', "return `<div class=\"msg-line${seg.me ? ' me' : ''}\">${who}${segmentHtml(seg, ctx)}</div>`;", "return `<div class=\"msg-line${seg.me && block.form !== 'thread' ? ' me' : ''}\">${who}${segmentHtml(seg, ctx)}</div>`;")] },
   { check: 'X34', name: 'when a message came left off',
@@ -182,7 +182,7 @@ export const FAULTS = [
     edits: [replace('subjects/psychology/l1.lesson.js', 'pass: [{ right: { min: 5 } }]', 'pass: [{ right: { min: 6 } }]')] },
   { check: 'X36', name: 'a pattern of control named in other words in Psychology',
     edits: [replace('subjects/psychology/subject.js', '{ id: "control", text: "a pattern of control" }', '{ id: "control", text: "a pattern of power" }')] },
-  // the pressure of a message: timed groups, the call that pushes back, the six forms, steps in order, the busy task, the plan, the baseline (26.7: X17, X18; 26.10: X37 to X40)
+  // the pressure of a message: timed groups, the call that pushes back, the six forms, steps in order, the busy task, the plan, the baseline (9: X17, X18; 3 to 9: X37 to X40)
   { check: 'X17', name: 'a question moves on by itself when its time runs out',
     edits: [replace('app/lessons/queue.js', "ok: false }, true);\n}", "ok: false }, true);\n  nextQuestion();\n}")] },
   { check: 'X17', name: 'the countdown run on a timer, not on the frame clock',
@@ -269,7 +269,7 @@ export const FAULTS = [
     edits: [replace('app/lessons/player.js', "risky = outcomes.filter(o => o.facets[d.facet] === d.risky), real =", "risky = outcomes, real =")] },
   { check: 'X40', name: 'the call of the baseline put on a clock',
     edits: [replace('app/lessons/queue.js', "Q.seconds && inst && !inst.item.asks.some(a => a.kind === 'exchange') ? Q.seconds : null;", "Q.seconds && inst ? Q.seconds : null;")] },
-  // Scams' pilot and baseline (26.10: X41, X42)
+  // Scams' pilot and baseline (3 to 9: X41, X42)
   { check: 'X41', name: 'a real alert followed by its own link no longer named as the wrong habit in Scams',
     edits: [replace('subjects/scams/items-practice.js', 'id: "p-alert-real", genuine: "genuine", channel: "sms", request: "money", offers: true,', 'id: "p-alert-real", genuine: "genuine", channel: "sms", request: "money",')] },
   { check: 'X41', name: 'a real invoice judged by whether it asks for money, not by the action that suits it, in Scams',
@@ -294,7 +294,7 @@ export const FAULTS = [
     edits: [replace('subjects/scams/l0.lesson.js', '"b-manager", "b-call", "b-happened"]', '"b-manager", "b-call"]')] },
   { check: 'X42', name: 'the call of the baseline that cannot be ended by hanging up in Scams',
     edits: [replace('subjects/scams/items-baseline.js', '{ id: "hang", text: "Hang up and call the number on my card", end: "hung" }] },\n        two:', '{ id: "hang", text: "Hang up and call the number on my card", end: "gave" }] },\n        two:')] },
-  // answers from memory, a question read aloud, the mock interview, the learner's own answers (26.7: X14, X19; 26.10, 2026-10-11: X43, X44, X45)
+  // answers from memory, a question read aloud, the mock interview, the learner's own answers (9: X14, X19; 3 to 9, 2026-10-11: X43, X44, X45)
   { check: 'X14', name: 'a repeated answer counted twice for "name two"',
     edits: [replace('app/lessons/recall.js', "walk(span.end, cost + span.cost, used.includes(i) ? used : [...used, i]);", "walk(span.end, cost + span.cost, [...used, i]);")] },
   { check: 'X14', name: 'two misspellings forgiven in one answer',
@@ -389,14 +389,14 @@ export const FAULTS = [
     edits: [replace('subjects/civics/items-government.js', '"Name the three branches of government."', '"Name three branches of government."')] },
   { check: 'X45', name: 'the check of Civics\' pilot asked in the order of the groups',
     edits: [replace('subjects/civics/l1.lesson.js', 'recall: true, order: "shuffle", feedback: "at-end",', 'recall: true, feedback: "at-end",')] },
-  // the Back button of the phone (26.10, 2026-10-11: X28)
+  // the Back button of the phone (3 to 9, 2026-10-11: X28)
   { check: 'X28', name: 'leaving the library adds nothing to the history, so Back leaves the app',
     edits: [replace('app/state.js', "if(APP.view !== 'library' && !inApp()) history.pushState({ fc: 'in' }, '');", "if(false) history.pushState({ fc: 'in' }, '');")] },
   { check: 'X28', name: 'the added entry kept after coming back to the library',
     edits: [replace('app/state.js', "else if(APP.view === 'library' && inApp() && !droppingEntry){ droppingEntry = true; history.back(); }", "else if(false){ void 0; }")] },
   { check: 'X28', name: 'a Back that does nothing inside the app',
     edits: [replace('app/init.js', "window.addEventListener('popstate', backInApp);", "void 0;")] },
-  // sound and singing (26.7: X8, X10, X11, X12, X16; 26.10, 2026-10-11: X29)
+  // sound and singing (9: X8, X10, X11, X12, X16; 3 to 9, 2026-10-11: X29)
   sound({ check: 'X8', name: 'a sound system made when a sung question opens',
     edits: [replace('app/lessons/sing-run.js', "  singEnsure(inst, answered);\n  wireSingControls();", "  singEnsure(inst, answered);\n  audioContext();\n  wireSingControls();")] }),
   sound({ check: 'X8', name: 'the microphone asked for when a sung question opens',

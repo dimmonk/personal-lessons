@@ -1,4 +1,4 @@
-// Ideology: the one way a question about a label is put together (lesson standard 26.1, 26.1.2). Every question is a label pinned on words, as a
+// Ideology: the one way a question about a label is put together (lesson standard 3, 3.9). Every question is a label pinned on words, as a
 // post, with the rule it is judged by in a panel, and three asks in one order: do the words earn the label (earned, not earned, too little to
 // tell); when not earned, which of the subject's names do they earn instead; and the sentence that decides it, or that none does. The helper
 // writes the three asks, so the words of the asks and the slips they name are the same in every question; what differs is the post, the lines

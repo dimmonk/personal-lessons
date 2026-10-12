@@ -1,5 +1,5 @@
 /* ===================== LESSONS: PUTTING STEPS IN ORDER, ON SCREEN (TAPS) ===================== */
-// Lesson standard 26.1 (the `order` ask). A tap on a step adds it to the order; when as many are tapped as the right order holds, the order is the
+// Lesson standard 3 (the `order` ask). A tap on a step adds it to the order; when as many are tapped as the right order holds, the order is the
 // answer. "Start again" clears the taps. The taps so far are kept in Q.cur.many[askId]. Needs the queue (Q, openAsk, answerAsk, paintQueue).
 
 function wireOrder(){

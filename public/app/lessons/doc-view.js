@@ -15,7 +15,7 @@
 /* ---------- a document ---------- */
 // form: receipt, recipe, tag, offer (the everyday papers); statement (a 401(k), IRA or brokerage statement), fees (a plan's fee sheet),
 // paystub, matchrule (the plan's employer match), beneficiary, foreign (a foreign account summary), table (a plain table). `head` names the
-// columns. A household's papers (26.1.2) are documents with a `tab`: the adjacent ones are shown as tabs, one open at a time.
+// columns. A household's papers (3.9) are documents with a `tab`: the adjacent ones are shown as tabs, one open at a time.
 function documentHtml(block, ctx){
   const marked = row => (ctx.deciding || []).includes(row.id);
   const amt = (i, n) => i === n - 1 && n > 1 ? 'amt' : '';

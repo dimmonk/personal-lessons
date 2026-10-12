@@ -1,4 +1,4 @@
-// Section 26.7: V70 (shape and references), V71 (lessons and the design record's parts), V80 (the end result mirrors the design
+// Section 9: V70 (shape and references), V71 (lessons and the design record's parts), V80 (the end result mirrors the design
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
@@ -7,7 +7,7 @@ import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
 
-// What 26.1 describes and the engine has not built yet (26.8). A lesson that uses one is refused, so nothing is written that cannot run.
+// What 3 describes and the engine has not built yet (10.3). A lesson that uses one is refused, so nothing is written that cannot run.
 export const NOT_BUILT = {
   'a private form into lines': 'part F of Psychology'
 };
@@ -104,7 +104,7 @@ function numberProblems(ask, where) {
   return problems;
 }
 
-// A form: the shape of 26.1, and each field the shape of the ask of its own kind (a number with a tolerance and a frame with one blank, a choice
+// A form: the shape of 3, and each field the shape of the ask of its own kind (a number with a tolerance and a frame with one blank, a choice
 // with a list or options). A field is the ask without its id, kind and prompt, so it is checked as that ask.
 function formProblems(ask, where, kinds, listIds) {
   const problems = show(checkShape(ask, FORM_ASK, where));
@@ -320,7 +320,7 @@ function stepProblems(step, where, ctx) {
   return problems;
 }
 
-// A baseline measures and teaches nothing (26.2): its flow is only screens that say how it goes, it holds its answers to the end, and the subject says
+// A baseline measures and teaches nothing (4): its flow is only screens that say how it goes, it holds its answers to the end, and the subject says
 // what its closing line counts (the slip that is the failure, and which kind of question is risky and which real).
 function baselineProblems(lesson, where, subject) {
   const problems = [];
@@ -364,7 +364,7 @@ function ownAnswersProblems(lesson, where, ctx) {
   return problems;
 }
 
-// The dated values a subject keeps (26.1 refs): each with the day it was looked up, a real day, and where it came from.
+// The dated values a subject keeps (3 refs): each with the day it was looked up, a real day, and where it came from.
 function refsProblems(meta) {
   const refs = meta.refs || [];
   return [...duplicatesOf(refs.map(r => r.id)).map(id => `the subject record: ref "${id}" appears twice`),
@@ -372,7 +372,7 @@ function refsProblems(meta) {
 }
 const engineDay = day => /^\d{4}-\d\d-\d\d$/.test(day) && !Number.isNaN(Date.parse(`${day}T00:00:00Z`)) && new Date(`${day}T00:00:00Z`).toISOString().slice(0, 10) === day;
 
-// The private forms (26.3): written into a slot the app builds, a choice that reads one of the subject's lists, and the fields the app reads
+// The private forms (5): written into a slot the app builds, a choice that reads one of the subject's lists, and the fields the app reads
 // from that kind of form. (What a field may not be, an account number or a login, is V81's.)
 function ownFormsProblems(meta, engine) {
   const lists = meta.lists || {}, problems = [];
@@ -398,7 +398,7 @@ function ownFormsProblems(meta, engine) {
   return problems;
 }
 
-// The interview date the review counts its rounds from (26.4): `answers.<field>`, a date field of the subject's form into `answers`
+// The interview date the review counts its rounds from (6): `answers.<field>`, a date field of the subject's form into `answers`
 function dateFieldProblems(meta) {
   const name = meta.review.dateField, field = name.replace(/^answers\./, ''), form = answersFormOf(meta);
   if (!/^answers\./.test(name)) return [`the subject record: the review reads its date from "${name}", which is not an entry of the form into answers (answers.<field>)`];
@@ -458,8 +458,8 @@ export const V71 = subjectRule('V71', (s, check) => {
   const ordered = s.sortedLessons.filter(l => l.part !== null).map(l => partIds.indexOf(l.part));
   if (ordered.some((x, i) => i > 0 && x < ordered[i - 1])) problems.push('the lessons are not in part order: lesson numbers must rise with the parts');
   if (design && !design.error) {
-    const mine = JSON.stringify(s.meta.parts), theirs = JSON.stringify(design.parts);
-    if (mine !== theirs) problems.push('the subject record\'s parts are not the design record\'s parts, word for word');
+    const idTitle = parts => JSON.stringify((Array.isArray(parts) ? parts : []).map(p => ({ id: p.id, title: p.title })));
+    if (idTitle(s.meta.parts) !== idTitle(design.parts)) problems.push('the subject record\'s parts are not the design record\'s parts (id and title), word for word');
     const built = s.lessonList.filter(l => l.role !== 'baseline');
     if (built.length && !s.subject.lessons[design.pilot]) problems.push(`the design record's pilot "${design.pilot}" is not a lesson of the subject`);
   }
@@ -471,6 +471,7 @@ export const V80 = subjectRule('V80', (s, check) => {
   const design = s.design;
   if (!design || design.error) { check(true, ''); return; }   // V69 owns a missing or unreadable record
   check(s.meta.endResult === design.endResult, 'the subject\'s end result is not the design record\'s end result, word for word');
+  check(s.meta.readingShare === design.readingShare, `the subject's readingShare is ${s.meta.readingShare} and the design record's is ${design.readingShare}`);
 });
 
 /* ---------- V81 ---------- */

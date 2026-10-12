@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE COUNTDOWN, ON SCREEN ===================== */
-// Lesson standard 26.2 and 26.7 (X17). The seconds left of a timed question are counted on the frame clock: one requestAnimationFrame loop, no
+// Lesson standard 4 and 9 (X17). The seconds left of a timed question are counted on the frame clock: one requestAnimationFrame loop, no
 // timer, that takes the time between frames off Q.cur.left (timer.js caps a late frame, so a hidden page does not run out) and draws the number
 // and the bar in place, without repainting the screen. At zero the question is stopped by timeoutItem (queue.js) and waits for Next.
 // Needs the queue (Q, timeoutItem).

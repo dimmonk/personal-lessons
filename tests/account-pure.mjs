@@ -1,4 +1,4 @@
-// The pure half of step 7 (lesson standard 26.1, 26.1.2, 26.10): a message laid out in its three forms, a line the learner writes against a model
+// The pure half of step 7 (lesson standard 3, 3.9, 3 to 9): a message laid out in its three forms, a line the learner writes against a model
 // (kept, never scored), questions of four asks that open one after the other, a checklist with a heading of its own; and what must be true of
 // Psychology's pilot as data: what each line of an account is, where the lines that say what was done are, both ways of saying it again, the
 // next step when nothing was done, the safety wording only where a pattern of control appears and nothing that diagnoses. No browser: the

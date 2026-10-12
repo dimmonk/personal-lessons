@@ -1,4 +1,4 @@
-// The browser checks of lesson standard 26.7 for sound and singing: X8 (nothing sounds and nothing listens before a tap), X10 (the microphone:
+// The browser checks of lesson standard 9 for sound and singing: X8 (nothing sounds and nothing listens before a tap), X10 (the microphone:
 // what it is asked for, what it never hears, what it does when it is refused), X11 (only numbers are stored), X12 (the sung screens fit a phone,
 // in plain words) and X16 (the sing ask: known pitches fed in as the microphone are scored on and off at 25 cents, an octave away counts, a hold is
 // timed, each note of a run is scored, the line is drawn only with the line, the range is stored once and every target lies inside it, the
@@ -424,7 +424,7 @@ export async function X16(env) {
   return c;
 }
 
-/* ---------- X29: finding the range again (26.10, a note of 2026-10-11) ---------- */
+/* ---------- X29: finding the range again (3 to 9, a note of 2026-10-11) ---------- */
 // From the Singing subject screen, with a range stored: "Find my range again" runs the range exercise by itself. A range found replaces the stored
 // one, the try is not stored and no lesson's place changes, and nothing asks with a browser dialog; Back in the middle of it keeps the old range.
 export async function X29(env) {

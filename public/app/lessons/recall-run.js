@@ -1,5 +1,5 @@
 /* ===================== LESSONS: TYPING AN ANSWER FROM MEMORY ===================== */
-// Lesson standard 26.1 (the `text` ask with `accept`) and 26.7 (X14). What happens on the screen the queue (queue.js) has just painted when it holds a
+// Lesson standard 3 (the `text` ask with `accept`) and 9 (X14). What happens on the screen the queue (queue.js) has just painted when it holds a
 // question answered from memory: the words are kept in Q.cur.typed[askId] as they are typed (so a repaint loses nothing), Answer opens when something is
 // typed (Enter sends it), "Not yet" answers with nothing typed, and after a miss "My answer means the same" counts the answer on the learner's word.
 // Needs the queue (Q, openAsk, answerAsk, queueItem, paintQueue), recall.js and recall-view.js.

@@ -1,5 +1,5 @@
 // X41 and X42: Scams' pilot lesson, "Act, check or leave", and its baseline, "Before you start", end to end on a phone (375 px). Not among the checks the standard
-// lists in 26.7: they were added with step 8 (26.10), the way step 7 ran Psychology's pilot (X36). The test plays a learner who taps every answer.
+// lists in 9: they were added with step 8 (3 to 9), the way step 7 ran Psychology's pilot (X36). The test plays a learner who taps every answer.
 //   X41  the pilot: the three questions, the worked text, a first group of three pairs (a real code and one that is not asked for, a parcel notice and the
 //        fee, a real alert and a fake one) with a wrong answer in each kind (did what a scam asked, checked through the message's own link, did what a real
 //        message said when it was not started), a second group of eight on a clock, the check of part C passed 11 of 12 with the one real message left alone

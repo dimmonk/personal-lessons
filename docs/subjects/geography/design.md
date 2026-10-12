@@ -149,7 +149,7 @@ tapped spot beside it; for a distance, both places lit and the true figure. The 
    punctuation, one small misspelling, "the" optional, alternatives such as "Türkiye / Turkey", "Czechia / Czech
    Republic", "DC / Washington, D.C.").
 4. A per-item record across days and the schedule that brings a place back until right in three separate sessions,
-   asked in whichever form it was not last asked (26.4, with the form chosen by the app).
+   asked in whichever form it was not last asked (6, with the form chosen by the app).
 5. A `choose` from the subject's `distance` and `travel` lists, and feedback that lights two places and prints the
    figure (straight-line miles, computed from coordinates in the data; the travel band is written in the item).
 6. Content: the 50 states and DC with their regions and neighbors; about 40 US cities and the 50 state capitals, each

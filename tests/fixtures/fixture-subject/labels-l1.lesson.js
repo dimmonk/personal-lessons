@@ -3,7 +3,6 @@
 FC.lesson('labels', {
   id: 'l1', part: '1', title: 'Does the label fit', rev: 1, status: 'live',
   history: [{ rev: 1, date: '2026-10-11', change: 'First version, for the tests.' }],
-  tried: { date: '2026-10-11', words: 'Clear on a phone.' },
   why: 'A label is pinned on a few lines. Check what the label needs against the lines.',
   flow: [
     { title: 'A label on words',

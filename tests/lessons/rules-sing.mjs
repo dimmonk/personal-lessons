@@ -1,5 +1,5 @@
-// Section 26.7: V78 (Singing limits). A sung question is named by a task in a lesson ({ sing: { task, ...params }, n }) and made by the app from
-// the learner's range, so what a lesson can get wrong is small and all of it is here: the task and its numbers inside the limits of 26.1.1
+// Section 9: V78 (Singing limits). A sung question is named by a task in a lesson ({ sing: { task, ...params }, n }) and made by the app from
+// the learner's range, so what a lesson can get wrong is small and all of it is here: the task and its numbers inside the limits of 3.8
 // (the app's own list, SING_PARAMS, read out of public/app/lessons/sing-task.js, so the validator and the phone cannot disagree), the warm-up
 // first in every lesson that sings, a check without the line that shows its result after each try, and every target inside the range
 // (S1): each task is made on 200 seeds over ranges from the narrowest allowed to a wide one, and no note may fall outside.

@@ -1,4 +1,4 @@
-// Scams: the one way a message to act on is put together (lesson standard 26.1, 26.1.2). Every message arrives in the form it comes in (a text, an email, a
+// Scams: the one way a message to act on is put together (lesson standard 3, 3.9). Every message arrives in the form it comes in (a text, an email, a
 // pop-up, a chat, a call), with a line before it about what you were doing when it came, and then two questions on one screen: what do you do (do what it
 // says, check first through a way you already had, or leave it), and, only when you chose to check, how. A genuine message is judged by the action that
 // suits it, never by whether it contains a request: a real invoice is paid the way you already pay, a code you just asked for is used on the page you

@@ -25,7 +25,7 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 ## Main task
 - [ ] **(now)** The skill rewritten to end game (`.claude/skills/build-subject/`): the slogan as the goal; a "Reject when" line and one worked rejection per gate; your paragraph first in gate 2, the thing you approve; gate 4 opens with the form the real moment forces; "May open" per stage; evidence marked decides or supports, decides read in full; the record's JSON shape in the skill; the stand-in review's files named; points to the short standard
 - [ ] The record shape and V69 rewritten to match the skill: `goal`, `out`, `feedback`, `delivery`, `form`, `readingShare`, `principles` (decides needs `read: full`), parts with a `check`, `lessons` blocks tied to their part's check, `approved` bound to the text by fingerprint, one `tried` entry per lesson (owner or stand-in, the verdict read from the review file), `opened`; a live lesson needs a passing review (V45's own `tried` goes); V71 compares parts by id and title; V80 adds readingShare; seeded faults for each new refusal; the fixture records rewritten; `tools/design/approve.mjs` writes an approval with its fingerprint
-- [ ] One current standard: `docs/lesson-standard.md` rewritten as the rules in force only (the core, the skill and V69, section 26 with the as-built decisions folded in, the V and X tables); the old file kept whole as `docs/lesson-standard/history-v1.md`; the 256 citations of old section numbers in code, tests and docs rewritten from a mapping table, zero old numbers left
+- [ ] One current standard: `docs/lesson-standard.md` rewritten as the rules in force only (the core, the skill and V69, section 3 to 9 with the as-built decisions folded in, the V and X tables); the old file kept whole as `docs/lesson-standard/history-v1.md`; the 256 citations of old section numbers in code, tests and docs rewritten from a mapping table, zero old numbers left
 - [ ] Evidence marked: in every research note, each finding marked decides or supports; every decides finding read in full (open-access text) with where it was read, or re-marked supports with the design choice called a judgement call
 - [ ] The nine records migrated to the new shape: your paragraph written for each (eight from the approved end result; Geography new), parts' checks, lessons blocks, delivery lists, the seven reviews recorded as stand-in entries with your waiver, `opened` lists; the eight approvals of 2026-10-10 carried over onto the paragraphs with a note; `npm run test:lessons` green
 - [ ] The five failing pilots fixed from their reviews (Math's calculator; Scams' rule and key agreeing on real messages; Stats' claim kinds; Wealth's real papers and the tax line; Ideology's two-line taps), each re-reviewed by a fresh stand-in until it passes, its rev raised, the lock rewritten, the relevant browser checks run
@@ -35,10 +35,10 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 - [ ] `docs/HANDOFF.md` and `docs/build-subject-audit.md` (part C) brought up to date with what landed
 - [ ] Each subject's other lessons (about 50), each from its block, each with a passing stand-in review, tested and deployed subject by subject
 - [x] The `build-subject` skill: seven gates in order, from the kind of learning to a tried pilot
-- [x] The gates enforced in the app: design records and V69 (standard sections 23 and 26.7)
+- [x] The gates enforced in the app: design records and V69 (standard sections 2 and 9)
 - [x] Every subject designed blind and audited: all eight rebuilt from scratch (verdicts in `docs/subjects/<id>/design.md`)
-- [x] The weekly review: one review a week across every subject (section 24; live)
-- [x] The practice engine designed (section 26) and its core built; the old engine and lessons deleted (tag `old-lessons`)
+- [x] The weekly review: one review a week across every subject (section 6; live)
+- [x] The practice engine designed (section 3 to 9) and its core built; the old engine and lessons deleted (tag `old-lessons`)
 - [x] Singing's pilot live: the singing answer, the pitch line that fades, your range, "Match a note"
 - [x] Basic Math's pilot live: typed numbers, estimate first, fresh prices each try, "Ballpark and check"
 - [x] Wealth's pilot live: your own accounts sheet on the phone, statements, dollar costs, dated actions

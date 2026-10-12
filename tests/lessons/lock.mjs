@@ -1,5 +1,5 @@
 // node tests/lessons/lock.mjs [--public <dir>] [--lock <file>]
-// Rewrites the lock (section 13, R5) from the data. It refuses, and writes nothing, when
+// Rewrites the lock (section 9, R5) from the data. It refuses, and writes nothing, when
 //   - an entry that was deployed has changed content but not a higher rev,
 //   - an entry that was deployed has a different rev but the same content, or
 //   - an entry that was deployed would disappear.

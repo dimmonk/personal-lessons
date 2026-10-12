@@ -1,4 +1,4 @@
-// The pure half of the sung questions (lesson standard 26.1.1, section 25): how a task becomes targets inside the learner's range, how the readings
+// The pure half of the sung questions (lesson standard 3.8, section 3.8): how a task becomes targets inside the learner's range, how the readings
 // of a try become the numbers it stores, what those numbers mean, and the words and strip drawn from them. No browser: the app's scripts are loaded
 // as in tests/load-app.mjs. Made-up readings stand in for the microphone, so every case is known by construction.
 // Negative controls: each seeded fault is a change to one of the app's files that must turn exactly its own group red.

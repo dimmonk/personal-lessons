@@ -1,5 +1,5 @@
 /* ===================== LESSONS: A CALL OR CHAT THAT PUSHES BACK ===================== */
-// Lesson standard 26.1 (the `exchange` ask) and 26.2 (pressure rises on a hesitant reply). A call or chat whose turns arrive one after another
+// Lesson standard 3 (the `exchange` ask) and 4 (pressure rises on a hesitant reply). A call or chat whose turns arrive one after another
 // and branch on what the learner replies. Pure: no page and no storage, so the player, the validator and the tests all walk an exchange the
 // same way.
 //   ask   { id, kind: 'exchange', prompt, form: 'call' | 'chat', from, detail, start: turnId,

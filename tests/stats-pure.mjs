@@ -1,4 +1,4 @@
-// The pure half of step 5 (lesson standard 26.1, 26.1.2, 26.10): a tap scored, a chart's axis and bars worked out from its data, the cut chart
+// The pure half of step 5 (lesson standard 3, 3.9, 3 to 9): a tap scored, a chart's axis and bars worked out from its data, the cut chart
 // redrawn from zero, the 1,000 people, an article laid out, and the numbers and sorting of Stats' pilot lesson. No browser: the app's scripts
 // are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/stats-pure.mjs

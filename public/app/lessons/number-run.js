@@ -1,8 +1,8 @@
 /* ===================== LESSONS: TYPING A NUMBER ===================== */
-// Lesson standard 26.1 and 26.2. What happens on the screen the queue (queue.js) has just painted when it holds a typed number: the
+// Lesson standard 3 and 26.2. What happens on the screen the queue (queue.js) has just painted when it holds a typed number: the
 // boxes keep what is typed in Q.cur.typed (so a repaint loses nothing), the Answer button opens when every box holds a number, the
 // calculator works in place (no repaint, so the page does not jump), and in practice an answer far from the learner's own estimate is
-// held back once with "your answer and your estimate disagree" (26.2). A check's group has no support, so it is never held back.
+// held back once with "your answer and your estimate disagree" (4). A check's group has no support, so it is never held back.
 // Needs the queue (Q, openAsk, answerAsk, queueItem, paintQueue) and number.js.
 
 const boxesOf = askId => [...document.querySelectorAll(`[data-ask="${askId}"] .numbox`)];
