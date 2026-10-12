@@ -38,8 +38,10 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 - [x] The build-subject skill audited from its outputs (2026-10-12, `docs/build-subject-audit.md`, part A): the design gates have
   never said no; the stand-in gain review says no and finds real defects (5 of 7 pilots fail); none of the five is fixed yet;
   the records share one shape; most evidence is read from abstracts; the approvals and the phone try assume an owner with time
-- [ ] The skill's own text audited (part B, eight questions with pass conditions) and fixed: waits on the file, which lives only
-  on your Mac; then the gain review becomes a gate (V69), approvals shrink to one screen, one current standard
+- [x] The skill's own text audited (part B, 2026-10-12, `docs/build-subject-audit.md`): B5 passes (a three-line approval);
+  B1, B2, B3, B4, B6, B7, B8 fail; first fix is B8, the record's JSON shape in the skill with one `tried` shape V69 reads
+- [ ] The skill fixed from part B, in the order of the audit's part C (your call after reading the answers): the gain review
+  becomes a gate (V69), approvals bound to the record's own words, one current standard, "decides" marks on the evidence
 - [ ] Geography, a new subject (2026-10-12): the plan is written through the gates (`docs/subjects/geography/design.md`, evidence
   `docs/research/knowing-where-places-are.md`): a name shown, the place tapped on a map with no names on it; 21 parts, 26
   lessons; no lesson is written until you approve the end result and the practice method (V69)
@@ -51,8 +53,7 @@ new practice engine (lesson standard section 26), each subject's pilot lesson fi
 
 ## Needs your decision
 - [x] Your approvals: "approve all, keep going" (2026-10-10), recorded in all eight design records
-- [ ] Copy the skill into the repo from your Mac (`cp -R ~/.claude/skills/build-subject .claude/skills/build-subject`, commit,
-  push; the commands are at the end of `docs/build-subject-audit.md`), or paste its text into the chat
+- [x] The skill copied into the repo (2026-10-12, `.claude/skills/build-subject/`, commit 0e8cb55)
 - [ ] Geography: waits for the skill audit; then its record is re-run through the fixed skill with your three changes of
   2026-10-12 (the world first, flags as a third form of each country, one line of what the country is), and you approve gates 2 and 3
 - [ ] Whenever you have time: try any lesson on your phone; your words overwrite the stand-in review
