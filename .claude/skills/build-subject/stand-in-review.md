@@ -1,13 +1,22 @@
 # The stand-in learner review (gates 6 and 7 when the owner is not trying lessons)
 
-Used when the owner has said to go on without their own try (record their words). It never replaces the owner's try once
-they give one: their words overwrite the stand-in's.
+Used when the owner has said to go on without their own try; their words go in the record's `tried[lesson].waived`. It
+never replaces the owner's try once they give one: an owner entry overwrites the stand-in's.
 
 ## Who does it
-An agent that did not build the lesson and is told only: the subject's end result and real moment (gate 2), the lesson's
-part and its check (gate 4), and the lesson as the learner meets it (the learner view, and the app at phone width when it
-can be run). It is told to be a real beginner: an adult with no background in the subject, reading on a phone, with ten
-minutes. It is not shown the gate 5 block, the evidence or anyone's opinion of the lesson.
+An agent that did not build the lesson. It is told to be a real beginner: an adult with no background in the subject,
+reading on a phone, with ten minutes.
+
+## What it may open, and nothing else
+- `docs/learner-view/<subject>-<lessonId>.md`: the lesson as the learner meets it (regenerate it first with
+  `node tools/learner-view/render-learner-view.mjs <subject> <lessonId>`).
+- The running app at phone width, when it can be run, at the lesson's own screen.
+- The brief, which pastes as text: the subject's end result and real moment (the record's `endResult` and
+  `realMoment`), and the lesson's part title and check (`parts[part].title`, `parts[part].check`).
+
+It is not given `docs/subjects/<id>/design.md`, the research notes, the lesson's block, the subject's other lessons, or
+anyone's opinion of the lesson, and its brief says so. A reviewer that read any of these says so at the top of its
+review under "Disclosure", and the review is run again by another reviewer.
 
 ## What it does
 1. Before the lesson, it writes what it can do now on the part's real task (honestly, as a beginner: usually little).
@@ -26,10 +35,11 @@ minutes. It is not shown the gate 5 block, the evidence or anyone's opinion of t
 - **Waste**: what could be cut without losing the gain?
 
 **Verdict: passes** only when Gain, Doing and Check are all yes and nothing under Clear blocks a beginner. Otherwise
-**Verdict: fails**, with the fixes needed. A failed lesson is fixed and reviewed again by a fresh reviewer.
+**Verdict: fails**, with the fixes needed. A failed lesson is fixed and reviewed again by a fresh reviewer; the fixes
+needed are the next revision's list.
 
 ## The record
-`docs/subjects/<id>/reviews/<lessonId>.md`, opening with the line `Verdict: passes` or `Verdict: fails`, then the before,
-the notes, the after, and the five answers. The design record's `tried` holds, per lesson, either the owner's try
-(`by: 'owner'`, date, words) or the stand-in's (`by: 'stand-in'`, date, the review file, and `waived`: the owner's words
-for going on without their try).
+`docs/subjects/<id>/reviews/<lessonId>.md`, opening with the line `Verdict: passes` or `Verdict: fails` (the validator
+reads that line), then the before, the notes, the after, the five answers and the fixes. The design record's `tried`
+gains `"<lessonId>": { "by": "stand-in", "date": "YYYY-MM-DD", "review": "reviews/<lessonId>.md", "waived": "<the
+owner's words for going on>" }`. A second review of the same lesson replaces the file and the entry's date.
