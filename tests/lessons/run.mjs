@@ -12,6 +12,7 @@
 // and the run says so, because rules read the shape they were promised.
 import { subjectView } from './model.mjs';
 import { RULES } from './rules-index.mjs';
+import { subjectFingerprint } from './fingerprint.mjs';
 
 const byScope = (rules, scope) => rules.filter(r => r.scope === scope);
 
@@ -66,7 +67,9 @@ export function runRules(input, rules = RULES) {
   let lessons = 0;
   for (const id of subjectIds) {
     if (!data.subjects[id].meta) { report.checker('V70', id)(false, 'the subject has no subject record (FC.subject)'); continue; }
-    const sv = { ...subjectView(data, id), design: (input.designs || {})[id], committedDesign: (input.committedDesigns || {})[id] };
+    const committedLock = input.committedLock, mine = committedLock && committedLock.subjects && committedLock.subjects[id];
+    const subjectChanged = !committedLock ? true : !mine || mine.fp !== subjectFingerprint(data, id);
+    const sv = { ...subjectView(data, id), design: (input.designs || {})[id], committedDesign: (input.committedDesigns || {})[id], subjectChanged };
     runScope(byScope(rules, 'subject'), sv, id, report);
     lessons += Object.keys(data.subjects[id].lessons).length;
   }

@@ -467,13 +467,16 @@ export const V71 = subjectRule('V71', (s, check) => {
 });
 
 /* ---------- V80 ---------- */
-// The subject record mirrors the sentence the owner approved. While a redesign's sentence waits for their word (approved.goal null), the
-// subject keeps the sentence it was built to: the last committed record's.
+// The subject record mirrors the sentence the owner approved (approved.goal.sentence). It is held to it when the subject record is written
+// (changed since the last commit): while a redesign's sentence waits for the owner's word, the record keeps the sentence it was built to,
+// and V69 holds the content; once the owner approves, the next write of the subject record carries the approved sentence.
 export const V80 = subjectRule('V80', (s, check) => {
   const design = s.design;
   if (!design || design.error) { check(true, ''); return; }   // V69 owns a missing or unreadable record
-  const settled = design.approved && design.approved.goal ? design : (s.committedDesign || design);
-  check(s.meta.endResult === settled.endResult, `the subject's end result is not the ${settled === design ? 'design record\'s' : 'last approved (committed) design record\'s'} end result, word for word`);
+  const approved = design.approved && design.approved.goal && design.approved.goal.sentence;
+  if (approved && s.subjectChanged) check(s.meta.endResult === approved, 'the subject\'s end result is not the sentence the owner approved, word for word (approved.goal.sentence)');
+  else if (!approved && !s.committedDesign) check(s.meta.endResult === design.endResult, 'the subject\'s end result is not the design record\'s end result, word for word');
+  else check(true, '');
   check(s.meta.readingShare === design.readingShare, `the subject's readingShare is ${s.meta.readingShare} and the design record's is ${design.readingShare}`);
 });
 

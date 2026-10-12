@@ -45,6 +45,7 @@ async function main(argv) {
     const rv = reviewVerdict(await readFile(new URL(`docs/subjects/${args.subject}/${args.entry.review}`, REPO), 'utf8'));
     if (rv.verdict === 'unreadable') throw new Error(`${args.entry.review} needs its Verdict line first, a Reviewer line (who (model), date) and a Reviewed line with the lesson's fingerprint (node tools/design/fp.mjs ${args.subject} ${args.lesson})`);
     if (rv.reviewed !== fp) throw new Error(`${args.entry.review} reviewed ${rv.reviewed}; the lesson is now ${fp}: a rewritten lesson is reviewed again`);
+    args.entry.date = rv.date;   // the entry's date is the review's
   }
   // a new try or review keeps the one it replaces (and all before it) in its previous
   const was = record.tried[args.lesson];

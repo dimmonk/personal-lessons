@@ -34,10 +34,10 @@ same(research['learning-everyday-math'].marks.M4.read, 'full', 'M4 was read in f
 const reviews = await collectReviews(new URL('docs/subjects/', REPO));
 ok(Object.keys(reviews).length >= 7, 'fewer than seven subjects have reviews');
 for (const [id, files] of Object.entries(reviews)) Object.entries(files).forEach(([f, v]) => { ok(['passes', 'fails', 'disclosed'].includes(v.verdict), `${id} ${f}: verdict read as "${v.verdict}"`); ok(/^sha256:[0-9a-f]{64}$/.test(v.reviewed || ''), `${id} ${f}: no Reviewed fingerprint`); });
-same(reviews.singing['reviews/l2.md'].verdict, 'disclosed', 'Singing l2 carries a Disclosure');
+same(reviews.singing['reviews/l2.md'].verdict, 'fails', 'Singing l2, reviewed again on 2026-10-12, fails');
 same(reviews.scams['reviews/l3.md'].verdict, 'fails', 'Scams l3 fails');
 const FP = 'sha256:' + 'a'.repeat(64);
-same(reviewVerdict(`Verdict: passes\n\nReviewer: a stand-in (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\n`), { verdict: 'passes', reviewed: FP }, 'a passing review');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: a stand-in (Sonnet 5.5), 2026-10-11; opened: the learner view\nReviewed: ${FP}\n`), { verdict: 'passes', reviewed: FP, date: '2026-10-11' }, 'a passing review');
 same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5); opened: the learner view\nReviewed: ${FP}\n`).verdict, 'unreadable', 'a reviewer line without a date');
 same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\n`).verdict, 'unreadable', 'a reviewer line that does not say what it opened');
 same(reviewVerdict('Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11; opened: the learner view\n').verdict, 'unreadable', 'no Reviewed line');

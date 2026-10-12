@@ -8,11 +8,11 @@ export const FIXTURE_RESEARCH = { 'umbrella-days': { ids: ['U1', 'U2', 'U3'], ma
 // the stand-in reviews of the test subjects: { [subjectId]: { 'reviews/<lesson>.md': verdict } }
 // each review names what it reviewed; negative-controls.mjs fills the fingerprints from the loaded data (withTriedFps, withReviewFps)
 export const FIXTURE_REVIEWS = Object.fromEntries(['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview'].map(id => [id, { 'reviews/design.md': { verdict: 'passes', reviewed: null }, ...(id === 'fixture' ? { 'reviews/l2.md': { verdict: 'passes', reviewed: null } } : {}) }]));
-export const withReviewFps = (reviews, designs, fpOf) => Object.fromEntries(Object.entries(reviews).map(([id, files]) => [id, Object.fromEntries(Object.entries(files).map(([f, rv]) => [f, { ...rv, reviewed: f === 'reviews/design.md' ? designFingerprint(designs[id]) : fpOf(id, f.replace(/^reviews\/|\.md$/g, '')) }]))]));
+export const withReviewFps = (reviews, designs, fpOf) => Object.fromEntries(Object.entries(reviews).map(([id, files]) => [id, Object.fromEntries(Object.entries(files).map(([f, rv]) => [f, { ...rv, reviewed: f === 'reviews/design.md' ? designFingerprint(designs[id]) : fpOf(id, f.replace(/^reviews\/|\.md$/g, '')), date: f === 'reviews/design.md' ? designs[id].designReview.date : designs[id].tried[f.replace(/^reviews\/|\.md$/g, '')].date }]))]));
 
 // an owner's word on a subject: their reply quoted, with where; every subject has its own words (the same words twice is a blanket)
 const word = (subject, what, date) => ({ date, words: `${subject}: ${what}, on track.`, where: `chat, ${date}` });
-const approved = (subject, screen, date, shown = []) => ({ ...word(subject, 'the paragraph and the list', date), fp: fingerprint(screen), shown });
+const approved = (subject, screen, date, shown = []) => ({ ...word(subject, 'the paragraph and the list', date), fp: fingerprint(screen), shown, sentence: screen.endResult });
 const owner = (date, words = 'Clear on a phone.') => ({ by: 'owner', date, words, where: `chat, ${date}`, passed: true, confused: 'nothing', waste: 'nothing', comeBack: true });
 const PRINCIPLES = [
   { id: 'U1', note: 'umbrella-days', decides: true, read: 'full', choice: 'the deciding words are marked at first and then not' },
@@ -25,7 +25,7 @@ function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026
   const checks = Object.fromEntries(parts.map(p => [p.id, p.check]));
   const topics = parts.map(p => p.title.toLowerCase());
   const asked = text.asked || [{ id: 'the-thing', words: 'teach me to do the thing', when: '2026-10-09', where: 'the brief', owner: null, kept: [topics[0]], dropped: false }];
-  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test, asks: asked.map(a => ({ words: a.words, kept: a.kept })) };
+  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test, asks: asked.map(a => ({ words: a.words, kept: a.kept, dropped: a.dropped })) };
   return {
     subject, asked,
     kinds, principles: PRINCIPLES,

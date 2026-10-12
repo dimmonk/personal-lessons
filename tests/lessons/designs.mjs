@@ -11,7 +11,7 @@ export const REVIEWS_DIR = 'reviews';
 export const VERDICTS = ['passes', 'fails'];
 export const READ_LEVELS = ['full', 'abstract', 'summary'];
 const VERDICT_LINE = /^Verdict: (passes|fails)\s*$/;
-const REVIEWER_LINE = /^Reviewer: [^\n]*\([^)]+\)[^\n]*\d{4}-\d\d-\d\d[^\n]*opened:/m;   // who (which model), the date; opened: what it read
+const REVIEWER_LINE = /^Reviewer: [^\n]*\(([^)]*\d[^)]*|model not recorded[^)]*)\)[^\n]*?(\d{4}-\d\d-\d\d)[^\n]*opened:/m;   // who (which model, with its version; "model not recorded" only for the reviews of 2026-10-11 that did not say), the date; opened: what it read
 const REVIEWED_LINE = /^Reviewed: (sha256:[0-9a-f]{64})\s*$/m;              // the fingerprint of what was reviewed
 const DISCLOSURE_LINE = /^Disclosure: /m;
 // a finding opens a paragraph as **SC1. …** or **R2. …**
@@ -31,9 +31,9 @@ export function parseRecord(text) {
 // who (which model) and the date, or no Reviewed line with the fingerprint of what it reviewed), 'disclosed' (the reviewer saw the record,
 // the block or the evidence, so the review runs again). `reviewed` is that fingerprint: a review counts for that version only.
 export function reviewVerdict(text) {
-  const m = text.split('\n')[0].match(VERDICT_LINE), fp = text.match(REVIEWED_LINE);
-  if (!m || !REVIEWER_LINE.test(text) || !fp) return { verdict: 'unreadable', reviewed: fp ? fp[1] : null };
-  return { verdict: DISCLOSURE_LINE.test(text) ? 'disclosed' : m[1], reviewed: fp[1] };
+  const m = text.split('\n')[0].match(VERDICT_LINE), fp = text.match(REVIEWED_LINE), who = text.match(REVIEWER_LINE);
+  if (!m || !who || !fp) return { verdict: 'unreadable', reviewed: fp ? fp[1] : null, date: who ? who[2] : null };
+  return { verdict: DISCLOSURE_LINE.test(text) ? 'disclosed' : m[1], reviewed: fp[1], date: who[2] };
 }
 
 export const findingIds = text => [...text.matchAll(FINDING)].map(m => m[1]);
@@ -96,7 +96,7 @@ export async function collectCommittedDesigns(designsDir) {
   return out;
 }
 
-// { [subjectId]: { 'reviews/l3.md': { verdict: 'passes' | 'fails' | 'disclosed' | 'unreadable', reviewed: fingerprint | null } } }
+// { [subjectId]: { 'reviews/l3.md': { verdict: 'passes' | 'fails' | 'disclosed' | 'unreadable', reviewed: fingerprint | null, date: the reviewer's date } } }
 export async function collectReviews(designsDir) {
   const out = {};
   for (const id of await subjectDirs(designsDir)) {

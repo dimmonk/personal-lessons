@@ -103,10 +103,12 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   that asks for the owner's word on any change to the skill, the record rules and their harness, the tools, the hooks
   or the research notes. What does not, said here so no one mistakes it for a check: a session can write a quote that
   was never said, write a review file and its verdict itself, or mark a note's finding as read in full without reading
-  it; a hook is skipped with `--no-verify`; a session that edits the validator and its controls together can switch a
-  rule off (the commit then carries an owner line that only the owner can read as false). These rest on honesty, and
-  on the owner reading the record's owner fields, the review files and the commit log, which this skill keeps short
-  enough to read.
+  it, or write a review's date, verdict or fingerprint line by hand; a hook is skipped with `--no-verify`, with
+  `core.hooksPath` pointed elsewhere, with a hook file edited and left unstaged, or by rewriting history after the
+  fact; a session that edits the validator and its controls together can switch a rule off (the commit then carries an
+  owner line that only the owner can read as false). The push runs the tiers again where no session edits the runner
+  (`.github/workflows/lesson-tier.yml`), and the rest rests on honesty, and on the owner reading the record's owner
+  fields, the review files and the commit log, which this skill keeps short enough to read.
 - **The question at every gate**, asked in the record: **"If the learner did only this, would they be closer to the end
   result?"** A "no" or a "not really" stops the gate.
 - **Who applies each rejection.** Gate 0: the validator and the owner. Gates 1 to 5: the session that designs, checked
@@ -203,9 +205,10 @@ order. A subject in the app carries everything.
    last commit's and refuses a removed, reworded or edited ask, and a deleted record.
 2. **The list is must-keep.** Later gates place each item: `kept` names the topics of gate 2's list that cover it, and
    gate 4 covers those topics with parts. A design that would leave an item out does not drop it: it leaves `kept`
-   null, and the item is shown as dropped on gate 2's screen (an item is shown there while it has no topics and no
-   word from the owner), and waits. Only the owner's word, recorded with its source in `owner`, settles an item:
-   `dropped: true` on their word to drop it, or topics found for it on their word to keep it (`tools/design/asked.mjs`). An item they move to another subject is dropped here with those words and
+   null, and the item appears on gate 2's screen as needing the owner's word (every item appears there: with the topics
+   it is placed under, or the owner's word on it, or "needs your word"), and waits. Only the owner's word, recorded with its source in `owner`, settles an item:
+   `dropped: true` on their word to drop it, or topics found for it on their word to keep it (`tools/design/asked.mjs`).
+   A drop, or topics taken away, since the last commit needs a new word of theirs in that same change. An item they move to another subject is dropped here with those words and
    asked for there. While any item is not dropped and not covered, the validator refuses every change to the subject's
    content.
 
@@ -291,13 +294,16 @@ read in full and names the choice it decides, and `opened.research` holds only w
    their reply with `approve.mjs <subject> goal --words "<their reply>" --where "<where>"`, and their word on each
    dropped item with `asked.mjs`. The approval binds what the design put on the screen: the paragraph, the list, the
    sentence, the test, and each ask with the topics it is placed under; a change to any of these asks for it again,
-   and so does a new item waiting for their word that was not on the screen they saw. The owner's own word on an ask
-   does not. The tool refuses a re-approval in the same words: a new screen needs their new words. An approval while an
+   and so does a new item waiting for their word that was not on the screen they saw, or an item dropped. The owner's
+   own word on an ask does not. The same words as any earlier approval are refused, by the tool and by the validator: a
+   new screen needs their new words. The approval carries the sentence approved; the subject record mirrors that
+   sentence whenever it is next written (V80). An approval while an
    item is undecided is still an approval; the content waits.
 
 Reject when: the sentence names knowing, understanding or recognizing rather than doing; the real moment is not a time
-and place the learner meets in life; the test asks the learner to say something about the task instead of doing it, or
-reuses the lessons' own cases; the screen is longer than one screen, or the paragraph says how the lessons work instead
+and place the learner meets in life; the test asks the learner to say something about the task instead of doing it,
+reuses the lessons' own cases, or leaves a group of the topics untested (the session applies this before the screen
+goes out; the record's review checks it); the screen is longer than one screen, or the paragraph says how the lessons work instead
 of what the learner will be able to do.
 
 Rejected, for example: "After this subject you understand how scams work, when you read about one." Understanding is
@@ -417,7 +423,8 @@ Pass when: every part has a block that survives those rejections, the pilot is n
      Record it with `tried.mjs <subject> <lesson> --stand-in reviews/<lesson>.md --words "<the owner's words for going
      on>" --where "<where>"`. The verdict is the review file's first line; a `Disclosure:` line voids it; its Gain answer
      is a model's judgement and is not what passes it (`stand-in-review.md`). The entry carries the lesson's fingerprint:
-     once the lesson changes, it is tried again. The owner's own try, when it comes, overwrites it.
+     once the lesson changes, it is tried again. The owner's own try, when it comes, replaces it and keeps it in
+     `previous`.
 3. Decide: go on, or go back to gate 3 or 5. This caps the cost of a wrong design at one lesson. One try finds a
    minority of the problems (D10): the first lesson's review is the floor, not the proof.
 

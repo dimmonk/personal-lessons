@@ -38,7 +38,7 @@ async function main([subject, field, ...rest]) {
   const { rest: _, ...w } = word;
   const earlier = [...history[field], ...(was ? [was] : [])].find(e => e.words.trim().toLowerCase() === w.words.trim().toLowerCase());
   if (earlier) throw new Error(`"${w.words}" is already the owner's word on the ${field} (${earlier.date}); a new approval needs their new words on the screen as it is now`);
-  const entry = { ...w, fp: fingerprint(approvedText(record, field)), ...(field === 'goal' ? { shown: dropsToShow(record).map(d => d.id) } : {}) };
+  const entry = { ...w, fp: fingerprint(approvedText(record, field)), ...(field === 'goal' ? { shown: dropsToShow(record).map(d => d.id), sentence: record.endResult } : {}) };
   await writeRecord(subject, { ...record, approved: { ...record.approved, [field]: entry, history: { ...history, [field]: [...history[field], ...(was ? [was] : [])] } } }, prose);
   console.log(`${subject}: ${field} approved on ${entry.date}, "${entry.words}" (${entry.where})${field === 'goal' ? `; shown as dropped: ${entry.shown.join(', ') || 'nothing'}` : ''}`);
 }

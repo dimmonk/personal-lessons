@@ -1,0 +1,13 @@
+# The fast tiers run on every push, where no session can skip a hook: the data checks, the sound checks, the lesson validator with its
+# seeded faults, and the readers on the real notes, reviews and records (build-subject skill, "How it runs").
+name: lesson tier
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: npm test

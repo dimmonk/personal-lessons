@@ -179,9 +179,9 @@
     "placing a place you have never heard of, from the clues a story gives",
     "the whole world, mixed"
   ],
-  "endResult": "When a place is named, in the news, by a person or on a trip, know where it is: the region it sits in, what it borders, the coast or water it is on, and roughly how far it is from you.",
+  "endResult": "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.",
   "realMoment": "A place named in a news story, in a conversation or in a travel plan, with no map in sight; a map on the phone that shows where you are but not what the named place is near.",
-  "test": "Placing: 40 names drawn at random from every list of the subject (states, cities, countries, seas, rivers, mountain ranges), each tapped on a map with no names on it; at least 34 of 40 in the right place. Naming: 10 places lit on the blank map, named from memory by typing; at least 8 of 10. Both on two sittings at least a week apart. Judging: 10 places never practised, given as a story gives them (\"a town in Oaxaca\", \"the port of Mombasa, Kenya\"), placed by region on the blank map; at least 8 of 10. Distance: 10 pairs of places, the distance band and the travel-time band right for at least 8.",
+  "test": "Placing: 40 names drawn at random from every list of the subject (states, cities, countries, seas, rivers, mountain ranges), each tapped on a map with no names on it; at least 34 of 40 in the right place. Flags: 10 flags shown, the country tapped on the blank map; at least 8 of 10. Naming: 10 places lit on the blank map, named from memory by typing; at least 8 of 10. All on two sittings at least a week apart. Judging: 10 places never practised, given as a story gives them, placed by region on the blank map; at least 8 of 10. Distance: 10 pairs of places, the distance band and the travel-time band right for at least 8.",
   "out": "Map reading on the ground (the phone's map turns itself and finds you); outlines, populations, economies and climate; capitals of countries other than the ones the news uses as the government's name (Ottawa, Mexico City, Brussels, Beijing, Moscow, and the ones on each region's list); the geography of other planets, of the oceans' depths and of history (old borders, old names); navigation with a compass; towns under a quarter of a million people unless the news names them; the geography of the learner's own town. Canada's provinces are in (part 9) because the learner's own country is the one they will be asked about most.",
   "designedOn": "2026-10-12",
   "approved": {
@@ -195,7 +195,6 @@
   "tried": {},
   "opened": {
     "asks": [
-      "docs/research/knowing-where-places-are.md (the cloud session's plan)",
       "docs/lesson-rebuild-todo.md (the three changes, 2026-10-12)",
       "chat, 2026-10-12 (the owner asked for the subject; the cloud session planned it at their request)"
     ],
@@ -211,6 +210,8 @@
   }
 }
 ---
+
+The research note docs/research/knowing-where-places-are.md was listed as a source of the owner's asks on 2026-10-12 and taken off the same day: it is the cloud session's plan, not the owner's words; the owner's request is recorded as chat, 2026-10-12.
 
 The record stops at gate 2 (2026-10-12): the owner signs off the printed screen, then gates 3 to 5 are designed through the skill, blind. The first plan of 2026-10-12 was written with the Civics record open and stands below under History only; its gates 3 to 5 are not in the record.
 
