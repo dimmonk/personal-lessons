@@ -150,6 +150,8 @@ export const CONTROLS = [
   { rule: 'V69', name: 'the same words of the owner\'s on two subjects, with other punctuation', input: input => asDesign(input, null, { approved: { ...design(input).approved, practice: { ...design(input).approved.practice, words: input.designs.chorus.approved.practice.words.toUpperCase() + '!!' } } }) },
   { rule: 'V80', name: 'the subject record written with a readingShare that is not the design record\'s', keepLock: true, also: ['V46'],
     data: (d, h) => h.setIn(d, meta('readingShare'), 0.35) },
+  { rule: 'V69', name: 'a read of the engine\'s code erased from the gate 0 list since the last commit', input: input => asDesign(input, null, {}, { committedDesigns: { [F]: { ...design(input), opened: { ...design(input).opened, asks: [...design(input).opened.asks, 'public/app/lessons/ask.js'] } } } }) },
+  { rule: 'V69', name: 'a read of a learner view erased from the gate 0 list since the last commit', input: input => asDesign(input, null, {}, { committedDesigns: { [F]: { ...design(input), opened: { ...design(input).opened, asks: [...design(input).opened.asks, 'docs/learner-view/chorus-l1.md'] } } } }) },
   { rule: 'V69', name: 'gate 0 that opened the engine\'s code', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, asks: ['public/app/lessons/ask.js'] } }) },
   { rule: 'V69', name: 'a record with no designedOn', input: input => asDesign(input, null, { designedOn: undefined }) },
   { rule: 'V69', name: 'an owner\'s try that records no pass, confusion, waste or coming back',
@@ -357,4 +359,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 243;
+export const PINNED_CONTROL_COUNT = 245;

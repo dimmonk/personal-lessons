@@ -8,13 +8,13 @@ import { execFileSync } from 'node:child_process';
 export const GATED = /^(\.claude\/skills\/build-subject\/|tests\/lessons\/|tests\/validate-lessons\.mjs|tests\/design-pure\.mjs|tests\/fixtures\/fixture-subject\/design\.mjs|tools\/design\/|docs\/research\/|\.githooks\/|\.github\/|package\.json)/;
 const LINE = /^Owner's word: ".+" \(.+\)/m;
 
-// a commit's changes are read against its first parent, so a merge that brings a gate change in shows it; a root commit against nothing
+// a commit's own changes: a plain commit against its parent, a root commit against nothing, and a merge only what it changed itself
+// (its conflict resolutions and any edit of its own: --cc), since what it brings in was checked on the commits that made it
 function changed(mode, sha) {
   if (mode !== '--commit') return execFileSync('git', ['diff', '--cached', '--name-only']).toString().split('\n').filter(Boolean);
-  let parent = null;
-  try { parent = execFileSync('git', ['rev-parse', '-q', '--verify', `${sha}^1`], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim(); } catch { parent = null; }
-  const args = parent ? ['diff', '--name-only', parent, sha] : ['diff-tree', '--no-commit-id', '--name-only', '-r', '--root', sha];
-  return execFileSync('git', args).toString().split('\n').filter(Boolean);
+  const parents = execFileSync('git', ['rev-list', '--parents', '-n', '1', sha]).toString().trim().split(/\s+/).slice(1);
+  const args = parents.length > 1 ? ['diff-tree', '--cc', '--name-only', '-r', sha] : ['diff-tree', '--no-commit-id', '--name-only', '-r', '--root', sha];
+  return execFileSync('git', args).toString().split('\n').filter(Boolean).filter(l => !/^[0-9a-f]{40}$/.test(l));
 }
 
 const [file, mode = '--staged', sha] = process.argv.slice(2);

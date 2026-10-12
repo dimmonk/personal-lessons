@@ -2,7 +2,7 @@
 // a seeded fault on an injected value proves the rule, not the reader. Run: node tests/design-pure.mjs
 import { readFile } from 'node:fs/promises';
 import { parseRecord, reviewVerdict, noteMarks, readLevel, collectDesigns, collectCommittedDesigns, collectReviews, collectResearch } from './lessons/designs.mjs';
-import { dropsToShow, screenText, GOAL_SCREEN_MAX_CHARS } from './lessons/design-shape.mjs';
+import { dropsToShow, screenText, sameWords, GOAL_SCREEN_MAX_CHARS } from './lessons/design-shape.mjs';
 
 const REPO = new URL('../', import.meta.url);
 let checks = 0, failures = [];
@@ -59,6 +59,9 @@ for (const [id, r] of Object.entries(designs)) {
   dropsToShow(r).forEach(d => ok(!r.asked.find(a => a.id === d.id).owner, `${id}: ${d.id} is shown as needing the owner's word although they spoke on it`));
 }
 same(parseRecord('no dashes').error, 'does not open with a line of three dashes', 'a record with no dashes');
+ok(sameWords('On track.', 'on track'), 'the same words with other punctuation');
+ok(!sameWords('👍', '✅'), 'two replies with no letters are two replies');
+ok(sameWords('Très bien, continue.', 'tres bien continue') === false && sameWords('Très bien, continue.', 'très bien continue'), 'letters of any script count');
 
 if (failures.length) { console.error(`${failures.length} of ${checks} design reader checks failed:`); failures.forEach(f => console.error(`  - ${f}`)); process.exit(1); }
 console.log(`✓ ${checks} design reader checks passed on the real notes, reviews and records`);

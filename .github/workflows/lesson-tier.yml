@@ -3,7 +3,10 @@
 # last commit" means) and the owner's word on a commit that changes the gates. So an ask removed, an owner entry edited, a record deleted or
 # a gate changed with the hooks off shows on push, merge commits included (build-subject skill, "How it runs").
 name: lesson tier
-on: [push, pull_request]
+on:
+  push:
+    branches: ['**']
+  pull_request:
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -22,15 +25,21 @@ jobs:
           else RANGE="$(git merge-base origin/main HEAD 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"; fi
           echo "checking $RANGE"
           COMMITS=$(git rev-list --reverse "$RANGE") || { echo "the range cannot be listed"; exit 1; }
-          [ -n "$COMMITS" ] || { echo "the push moved the branch and no commit is new against main: history was rewritten, and nothing was checked"; exit 1; }
+          if [ -z "$COMMITS" ]; then
+            if [ "${{ github.event.forced }}" = "true" ]; then echo "a forced push after which nothing is new against main: history was rewritten, and nothing was checked"; exit 1; fi
+            echo "nothing new to check"; exit 0
+          fi
           for c in $COMMITS; do
             git checkout -q "$c"
+            # the gates start where the record tools and --base exist; a commit from before them is checked by npm test at the head only
+            if ! git cat-file -e "$c:tools/design/owner-line.mjs" 2>/dev/null || ! git show "$c:tests/lessons/paths.mjs" | grep -q -- "--base"; then echo "== $c predates the gates: skipped"; continue; fi
             parent=$(git rev-parse -q --verify "$c^" || true)
             echo "== $c against ${parent:-nothing}"
             if [ -n "$parent" ]; then node tests/validate-lessons.mjs --base "$parent"; else node tests/validate-lessons.mjs; fi
             node tests/lessons/negative-controls.mjs >/dev/null
             node tests/design-pure.mjs >/dev/null
-            # the owner-line check is the PARENT's copy of the tool, so a commit cannot loosen the check it is held to
-            if [ -n "$parent" ]; then git show "$parent:tools/design/owner-line.mjs" > /tmp/owner-line.mjs; else cp tools/design/owner-line.mjs /tmp/owner-line.mjs; fi
+            # the owner-line check is the PARENT's copy of the tool, so a commit cannot loosen the check it is held to; a parent from
+            # before the gates has none, and the commit's own copy is used
+            if [ -n "$parent" ] && git cat-file -e "$parent:tools/design/owner-line.mjs" 2>/dev/null; then git show "$parent:tools/design/owner-line.mjs" > /tmp/owner-line.mjs; else cp tools/design/owner-line.mjs /tmp/owner-line.mjs; fi
             git show -s --format=%B "$c" > /tmp/msg && node /tmp/owner-line.mjs /tmp/msg --commit "$c"
           done

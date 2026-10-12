@@ -109,9 +109,11 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   owner line that only the owner can read as false). The push runs the tiers again outside the session's hooks
   (`.github/workflows/lesson-tier.yml`: the tiers at the pushed head, and at every pushed commit, the lesson tier
   against its parent and the owner's word where the gates changed, checked with the parent's copy of the check, so a
-  branch committed with hooks off shows on push; a merge's own changes are read against its first parent; a push after
-  which nothing is new against `main` fails. The workflow file runs from the pushed commit, so its own edit is held
-  only by the owner's word in that commit and by the branch protection on `main`, which is the owner's setting); a fast-forward merge makes no commit and
+  branch committed with hooks off shows on push; a merge is held only for its own changes, since what it brings in was
+  checked on the commits that made it; a forced push after which nothing is new against `main` fails; commits from
+  before the gates existed are skipped there and checked by the tiers at the head. The workflow file runs from the
+  pushed commit, so its own edit is held only by the owner's word in that commit and by the owner's setting on `main`:
+  a ruleset that requires this check, runs it from `main`, and forbids force-pushes); a fast-forward merge makes no commit and
   runs no hook, which only the owner's branch protection on `main` stops; an approval's history entries are the
   record's own claims (their fingerprints cannot be checked against screens that are gone; the committed prefix is what
   is held). The rest rests on honesty, and on the owner reading the record's owner fields, the review files and the
@@ -206,8 +208,10 @@ order. A subject in the app carries everything.
    should teach, in chat, in a brief, in a course document, in an earlier version they accepted. Each item has an
    `id`, their `words`, `when` and `where` it was said. For an existing subject, every unit of the version the owner was
    using is an item too, because they had accepted it. Write this list before gate 1, from the sources (`opened.asks`),
-   never from memory, and `opened.asks` lists those sources (the owner's messages, briefs and course documents, the
-   project's written records of their words such as a plan made at their request, the version they used). The words of an item, its when and where, and any word of
+   never from memory, and `opened.asks` lists those sources: the owner's messages (`chat, <date>`), the brief, their
+   own course documents (a top-level folder of theirs), the worklist, the handoff, this subject's own record, and this
+   subject's old lessons at the tag (`old-lessons:public/subjects/<id>/…`). Never a research note, an audit, code or
+   another subject's lessons; the validator refuses those. The list is the session's own account of what it read. The words of an item, its when and where, and any word of
    the owner's on it never change afterwards, and an item is never removed: the validator compares the list with the
    last commit's and refuses a removed, reworded or edited ask, and a deleted record.
 2. **The list is must-keep.** Later gates place each item: `kept` names the topics of gate 2's list that cover it, and

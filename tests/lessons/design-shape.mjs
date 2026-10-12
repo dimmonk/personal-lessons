@@ -99,7 +99,8 @@ const keepsInPrevious = (now, was) => { if (!now || !Array.isArray(now.previous)
 const laterWord = (now, was) => !was || sameEntry(now, was) && isPrefix(was.previous || [], now.previous || [])
   || (now && now.date >= was.date && now.words !== was.words && keepsInPrevious(now, was));
 // the owner's words compared without case, punctuation or spacing: "On track." and "on track" are one word
-export const wordsKey = s => String(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+// two replies are the same words when their letters and digits (of any script) are the same; a reply with none (a thumbs-up) is itself
+export const wordsKey = s => { const k = String(s).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').trim(); return k || String(s).trim(); };
 export const sameWords = (a, b) => wordsKey(a) === wordsKey(b);
 export const previousProblems = (e, where) => e && typeof e === 'object' && 'previous' in e && !(Array.isArray(e.previous) && e.previous.every(x => x && typeof x === 'object')) ? [`${where}: previous is not a list of the entries it replaced`] : [];
 export function unplacedAsks(r) {

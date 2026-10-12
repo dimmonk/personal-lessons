@@ -789,7 +789,7 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   review names the version it reviewed; a record review is a gate 5 field; the research notes state their read level;
   `designedOn` dates a design; the two hooks hold the gates (9.1, 9.2 V69, section 2). Version 1 had none of these.
 
-- **2026-10-12, later**: the review loop's rounds four to eight (commits e298e1e, fdbb6e3, fece38c, 21da9cf and the one that follows): owner
+- **2026-10-12, later**: the review loop's rounds four to nine (commits e298e1e, fdbb6e3, fece38c, 21da9cf, 575563e and the one that follows): owner
   entries append-only with their history; every review names the version it reviewed and its date is the file's;
   V80 and V71 hold the subject record's mirrors only when the record is written; the lesson tier is measured against a
   base (`--base`, each pushed commit's parent in the workflow); a merge commit runs the same hook.

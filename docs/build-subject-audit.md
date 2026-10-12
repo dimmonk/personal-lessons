@@ -2145,3 +2145,195 @@ For the owner:
   re-approved the screen. Is the re-approval enough?
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part L. The ninth review (2026-10-12)
+
+An independent review of 575563e ("the skill's eighth review answered"), by an agent that did not write it, against
+part K's eight fixes (K5). Line numbers are `SKILL.md`'s at 575563e. **`npm test` is green**: 297 design reader checks,
+48,520 lesson checks, 243 seeded faults (the pin is 243). Every attack was run on a scratch copy (`git archive HEAD`,
+its own `git init`, `npm run hooks`), never on the real records. The push workflow's per-commit step was taken out of
+`lesson-tier.yml` as written and run on a fresh clone of a bare copy of the scratch repo, with the event's values
+filled in. It was also run on a bare clone of this repository, with `main` moved to 575563e from `origin/main`
+(d03b63f), which is the push that lands this work.
+
+What is better, briefly:
+- The parent's copy of the owner-line check holds. A hooks-off commit that makes `owner-line.mjs` exit 0 at its top,
+  with no owner line, is *red* on push ("changes the gates (tools/design/owner-line.mjs)").
+- A hooks-off `--no-ff` merge that brings a gate change in is *red* on push. Locally, the commit-message hook refuses
+  the same merge.
+- A force-push to `main` is *red* now. Before, it checked nothing and passed.
+- Gate 0 refuses two sources by path: the audit and another subject's old lessons.
+- `sameWords` keeps Cyrillic: "Да" and "Нет" are different words now.
+- A bad base throws in `collectCommittedDesigns`.
+
+What is left falls in three groups:
+- The step cannot pass on the push that lands this work on `main`. Two causes:
+  - it replays commits made before the gates existed;
+  - a squash or merge commit fails 32 V69 checks against `main`'s older records.
+- The new merge reading turns every pull request that changes a gate red, because GitHub's merge commit carries no
+  owner line. The new "nothing new" rule turns red a branch made at `main` and every tag push.
+- One guard still has no seeded fault, one false refusal remains, and some lines of text do not match the code.
+
+### L1. K5's eight items
+
+| # | K5 item | Status | Evidence |
+|---|---|---|---|
+| 1 | The push runs the parent's `owner-line.mjs`; SKILL says the workflow file runs from the pushed commit | **Done, with a break** | yml 33-35. Attack A: a hooks-off commit that neuters the tool, on a branch's first push: *red*. SKILL 113-114 now says the workflow runs from the pushed commit. Broke (L3, item 1): when the parent has no `tools/design/owner-line.mjs`, `git show` fails and the step exits 128. Tried on scratch: "path 'tools/design/owner-line.mjs' exists on disk, but not in <parent>". `origin/main` has no tool, so the first commit that brings the tool to `main` cannot pass. |
+| 2 | `owner-line.mjs --commit` reads a merge's changes | **Done, with a break** | owner-line 12-17 diff against `sha^1`. A hooks-off `--no-ff` merge of a gate change, with no line: *red* on push. Broke (L3, item 2): on `pull_request`, `actions/checkout` checks out GitHub's merge commit ("Merge <head> into <base>"). That commit is in `origin/main..HEAD`, has no owner line, and its first-parent diff is the whole pull request. Tried: a branch whose only commit carries an owner line is green on push and *red* as a pull request. The code reads everything the merge brings in, while SKILL 112 says "a merge's own changes". |
+| 3 | Fail when the range lists nothing or cannot be listed | **Done, with a break** | yml 24-25. A force-push to `main` (an amended commit) and a reset: *red*. Broke (L3, item 3): a new branch pushed at `main`'s head and a tag push also give an empty range. Both are *red* with "history was rewritten", and nothing was rewritten. `on: [push, …]` runs on tags. |
+| 4 | Narrow gate 0's sources | **Mostly** | design-shape 162-163. Under Geography's `asks`, two paths were *refused* on commit: `docs/build-subject-audit.md` and `old-lessons:public/subjects/math/`. `old-lessons:public/subjects/geography/` was committed. Every real record still passes. Left (L3, item 6), SKILL's text: <br>- The gate 0 row (129) still has an empty "Must not open" cell. <br>- Step 1 (210) still admits "a plan made at their request". The code refuses any `docs/` plan except the worklist and the handoff: `docs/geography-plan.md` is refused. |
+| 5 | Seeded faults for `readingShare` on write, the forbidden classes, the narrowed sources and the compare across subjects | **Partly** | Each guard was switched off on scratch: <br>- V80's `readingShare` check off: its new control fails ("expected red [V46, V80], got [V46]"). <br>- `asksOk` back to the wide pattern: two controls fail. <br>- `blanketProblems` back to `toLowerCase().trim()`: one control fails. <br>- The four forbidden classes taken out of `FORBIDDEN_EVERYWHERE` (learner views, `public/`, `tests/`, `tools/`): all 243 controls and 297 reader checks stay green (L3, item 4). |
+| 6 | `sameWords` keeps every letter and digit; `blanketProblems` uses it | **Mostly** | design-shape 102 (`wordsKey`), rules-design 110. `sameWords("Да","Нет")` is false. Left (L3, item 5): <br>- A reply with no letter or digit keys to "", so `sameWords("👍","✅")` is still true. <br>- Putting back `[^a-z0-9]` leaves every control and reader check green. |
+| 7 | A bad base throws in `collectCommittedDesigns` | **Done** | designs.mjs 88. With `LESSONS_BASE=nonsense` the function throws "the base nonsense is not a commit of this repository"; `--base nonsense` exits with that message. |
+| 8 | Text: the standard's revision entry; the V69 row; Geography's placing list | **Mostly** | Done: <br>- the V69 row says "the topics an ask is taught under only grow"; <br>- Geography's Placing names states and provinces, oceans and seas, and deserts. <br>Left: the standard's section 11 entry now says "rounds four to eight", but its body names none of the rules from rounds seven and eight: <br>- topics only grow; <br>- the narrowed gate 0 sources; <br>- forbidden reads never erased; <br>- the same words across subjects; <br>- the parent's check on push; <br>- the empty range. |
+
+Two are done and three are done with a break; three are mostly or partly done. Nothing is red.
+
+### L2. The attacks
+
+- **(a) Approve with made-up words:** not run again (no change). Named.
+- **(b), (c), (h), (n), (q), (z3), (z4):** not run again. The code they reach changed only in `sameWords`, and the
+  controls for (q) and (z7) are green. Part K's results stand.
+- **(d), (e), (j), (k), (l), (m), (o), (p), (s), (t), (u), (v), (w), (x):** not run again; the code they reach did
+  not change in 575563e. The named ones stay named.
+- **(f) A hooks-off branch on push** (the step as written):
+  - first push of a commit that neuters `owner-line.mjs`, no line: *red* (new, the parent's copy);
+  - a hooks-off merge of a gate change: *red* (new);
+  - a hooks-off ask removal (Math's `primes-factors`): *red*; with the hooks on: *refused*;
+  - a force-push to `main`: *red* (new);
+  - a branch made at `main`, and a tag push: *red*, falsely (L3, item 3).
+- **(f2) Three pushes to one branch.** First, the neutered tool: *red*. Then a hooks-off merge of a gate change with no
+  line: *green*, because only the new commit is checked, and it is checked with its parent's neutered copy. Then the
+  ask removal: *red*. Every push to `main` covers the whole branch. Named: SKILL 108-115 rest on the owner's branch
+  protection.
+- **(g') The checker edited in a hooks-off commit:** *red* (new). With an invented owner line on that commit, every
+  later commit on the branch is judged by the loosened copy. Named as an invented quote.
+- **(y) Gate 0's sources:**
+  - the audit by path: *refused* (new);
+  - another subject's `old-lessons:`: *refused* (new);
+  - this subject's `old-lessons:`: committed. Right.
+  - the audit by its GitHub URL (`https://github.com/dimmonk/personal-lessons/blob/main/docs/build-subject-audit.md`):
+    committed. Named: what was opened is the session's own account (SKILL 139).
+- **(z2) The workflow edited, hooks off:** GitHub runs the edited copy. Named (SKILL 113-114). The text says a
+  "branch protection" holds it (L3, item 6).
+- **(z5) A base that is not a commit:** *refused*, in both readers now.
+- **(z7) Two replies with no letter on two subjects** (👍, then ✅): read as the same words, a false refusal (L3,
+  item 5).
+- **(z8) An evil merge, hooks off:** *red* (new).
+- **(z9) The push that lands this work on `main`** (bare clone, `main` moved from d03b63f to 575563e):
+  - fast-forward or rebase: *red* at the first commit, 8c027f1, whose validator says "unknown argument: --base";
+  - a squash onto d03b63f: *red* with 32 V69 refusals, four per subject. Examples: "tried.pilot was taken away" and
+    "approved.practice was changed ... without the entry that stood going to approved.history". `main`'s records are
+    in the shape before the redesign;
+  - a pull request: the same range as a fast-forward, so *red*.
+
+  Not named (L3, item 1).
+
+### L3. What the fixes broke or missed
+
+1. **The step cannot pass on the push that lands this work** (z9). Parts J and K tried the step only on a scratch
+   repo whose base already held every tool. The per-commit loop replays every commit that is not on `main`, and
+   commits made before the gates existed fail:
+   - the validator before fece38c does not know `--base`;
+   - from 575563e on, a parent without `tools/design/owner-line.mjs` makes `git show` exit 128.
+
+   A squash or a merge commit instead compares against `main`'s records from before the redesign and fails 32 V69
+   checks. A required "lesson tier" check would therefore block this branch on every route.
+
+   The end-game fix:
+   - The per-commit check starts at the first commit whose parent carries the workflow and the tool. Earlier commits
+     predate the gates, and the skill says so.
+   - The skill names how this branch lands: by fast-forward or rebase, so that each commit is checked against its
+     own parent.
+2. **Every pull request that changes a gate is red** (fix 2). GitHub's merge commit is in the range and has no owner
+   line. Its first-parent diff is the whole pull request. The same holds for a "Merge pull request" commit pushed to
+   `main`, unless the owner types the line into it.
+
+   Reading a merge's own changes (`git diff-tree --cc --name-only`) holds the evil merge (z8) and passes a clean
+   merge. It is also what SKILL 112 says ("a merge's own changes"). The commits a merge brings in are in the range
+   and checked one by one.
+
+   On `pull_request`, the step could also check the head's commits (`origin/<base>..<head sha>`) rather than
+   GitHub's merge commit.
+3. **"Nothing new" is red where nothing was rewritten.** A branch pushed at a commit already on `main`, and any tag
+   push, fail with "history was rewritten". The push payload says whether a push was forced (`github.event.forced`).
+   Fail an empty range only on a forced push, and run the workflow on branch pushes only.
+4. **The forbidden classes are still never seen red.** Their only effect of their own is in `erasable`: they stop a
+   read of the engine, the tools, the tests or a learner view from being taken off `opened.asks`. Every other list
+   refuses those paths through its own allow-list. Seeded fault: such a read committed under `asks`, then taken off.
+5. **`sameWords` still makes a false refusal.** A reply with no letter or digit (👍, ✅) keys to "". Fix: compare the
+   trimmed text when either key is empty. Add a reader check or control that pins the `\p{L}\p{N}` key; today
+   reverting it leaves everything green.
+6. **Text:**
+   - SKILL 129 and 210 do not match `asksOk`:
+     - name the worklist, the handoff and this subject's record, not "a plan made at their request";
+     - fill gate 0's "Must not open": an audit, a research note, code, the tools, another subject's old lessons or
+       learner views.
+   - SKILL 112: "a merge's own changes" (item 2).
+   - SKILL 114: "the branch protection on `main`". A required status check does not hold the workflow file: the
+     edited workflow still reports the check. Only a ruleset that runs the workflow from `main` does.
+   - The standard's section 11 entry for rounds seven and eight (L1, item 8).
+
+### L4. The two screens the owner reads
+
+**Psychology** (`approve.mjs psychology goal --show`: 4,551 characters, 747 words; its record has not changed since
+part K):
+- *True to its record:* yes.
+- *Readable:* fair. "Projection" is listed twice.
+- *Does the test reach every topic group?* Yes.
+- *Verdict:* it can go out. Its length is the owner's call.
+
+**Geography** (3,402 characters, 679 words):
+- *True to its record:* yes.
+- *Does the test reach every topic group?* Yes. Placing now names every kind of list: states and provinces, cities,
+  countries, oceans and seas, rivers, mountain ranges, deserts. Borders and water, flags, naming, judging and
+  distance are each in both the sentence and the test.
+- *Readable:* good. Small points:
+  - the paragraph says "a place that is pointed at", and the sentence says "a place that is lit";
+  - Placing leaves out continents and regions, which the world-first topic teaches.
+- *Verdict:* it can go out.
+
+### L5. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. The per-commit step starts where the gates start: commits whose parent lacks the workflow or the tool are not
+   replayed. The skill names how this branch lands on `main`, by fast-forward or rebase. As written, every route is
+   red (z9).
+2. `owner-line.mjs --commit` reads a merge's own changes (`--cc`), not its whole first-parent diff. As written, every
+   pull request that changes a gate is red.
+3. Fail an empty range only on a forced push (`github.event.forced`), and do not run the workflow on tag pushes. As
+   written, a branch made at `main` and a tag push are red.
+4. A seeded fault for the forbidden classes: a read of the engine, the tools or a learner view, taken off
+   `opened.asks`.
+5. `sameWords`: a reply with no letter or digit (👍 against ✅) must not read as the same words. Pin the
+   `\p{L}\p{N}` key with a check.
+6. Text:
+   - SKILL 129 and 210, gate 0's sources as the code holds them;
+   - SKILL 112, "a merge's own changes" (after fix 2);
+   - SKILL 114, which setting holds the workflow file;
+   - the standard's section 11 entry for rounds seven and eight.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, after which the branch's
+  later commits are judged by the loosened copy.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting until the owner's branch protection. A branch whose earlier push was red can go green on a later
+  push, which checks only the new commits; a push to `main` checks them all.
+- The workflow file edited with the hooks off: GitHub runs the edited copy.
+- What was opened is the session's own account. The audit listed by its GitHub URL passes gate 0's check.
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line.
+
+For the owner:
+- Branch protection on `main`: a ruleset that runs the "lesson tier" workflow from `main` (a required status check
+  alone does not hold the workflow file), and no force-push. (Carried over, sharpened.)
+- When a merge brings in commits that each carry your word, should the merge commit need your word again? Fix 2
+  says no; the code today says yes.
+- How this branch reaches `main`: fast-forward or rebase, after fix 1.
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
