@@ -2976,3 +2976,173 @@ For the owner:
 - An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
 - Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
 - Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)
+
+## Part Q. The fourteenth review (2026-10-12)
+
+An independent review of 2d0027d and 2b0b98d ("the skill's thirteenth review answered" and the fallback set to 2d0027d),
+by an agent that did not write them, against part P's four fixes (P5). Line numbers are those at 2b0b98d. **`npm test`
+is green** (exit 0): 302 design reader checks, 17 owner-line checks, 48,520 lesson checks, 248 seeded faults. Every
+attack was run in a clone of this worktree. For each push, a bare "origin" held the pushed refs, and a fresh clone of it
+was checked out at the pushed commit, as `actions/checkout` does. The per-commit step was taken out of the pushed
+commit's `lesson-tier.yml` as written, with the event's values filled in and run under `bash -eo pipefail`. The hook
+cases ran in a clone with `npm run hooks`. The real records were never touched.
+
+A warning for whoever runs these next. The first round of this review ran the step with its temporary files under
+macOS's `$TMPDIR` (`/var/...`, a symlink to `/private/var/...`). There, `node <copy>/owner-line.mjs` checked nothing
+and exited 0, so every push was green, L1 included. The tool runs `main` only when `import.meta.url` (the real path)
+equals `process.argv[1]` (the path as typed). All results below come from a second round, run from a real path (Q3,
+item 3).
+
+What is better, briefly:
+- This branch passes end to end as a fast-forward of `main` from d03b63f. Fifteen commits are skipped as predating the
+  gates, then 21da9cf to 2b0b98d are checked with 2d0027d's copy. Exit 0, and `npm test` at the head is green.
+- An evil octopus merge is *red* everywhere it was tried:
+  - on the landing push;
+  - after landing;
+  - on a branch;
+  - with the workflow's own octopus line deleted in the same commit (`main`'s copy of the tool refuses it).
+- The landing push with an evil two-parent merge (L1m) is *red*, judged by 2d0027d's copy.
+- The hook refuses a merge in progress with two or three `MERGE_HEAD`s:
+  - in a clone, from a subdirectory and in a linked worktree;
+  - by `git commit` and by an auto-committing `git merge g h`.
+
+What is left is small, and none of it opens a gate in the shipped setup:
+- The check's test still stays green under three seeded faults:
+  - an early `process.exit(0)`, which part P named;
+  - the hook's octopus refusal taken out;
+  - `--no-renames` dropped from the `--brought` reading.
+- A library call with a `cwd` other than the process's own misses an in-progress octopus.
+- The tool's verdict fails open when it is run by a symlinked path.
+- Four lines of text are stale or garbled.
+
+### Q1. P5's four items
+
+| # | P5 item | Status | Evidence |
+|---|---|---|---|
+| 1 | Refuse an octopus merge, on push and in the hook, pinned by a check | **Done; the pin partly** | owner-line 33-35, 40-43, 49-50, 66-68; yml 59. <br>On push, *red* in four cases: <br>- oct (`main` at 2b0b98d): "671f364 is a merge of more than two parents: refused"; <br>- oct2 (the same, with yml 59 deleted in the commit): `main`'s copy says "a merge of 3 parents, which cannot be read"; <br>- oct-br (a branch, after landing); <br>- oct-L and oct-br0 (before landing, judged by 2d0027d's copy). <br>In the hook, refused with exit 1 in five cases: two heads; three heads; from `tools/`; in a linked worktree (`--git-path` is absolute there); by a real `git commit` and by `git merge -m … g h` ("Not committing merge"). <br>The pin covers only the commit side. With line 43 or line 42 taken out, all 17 checks stay green, so the hook's refusal is unpinned (Q3, item 1). |
+| 2 | The fallback copy is a named commit with the current readings | **Done** | yml 43-45, `FALLBACK_CHECK=2d0027d`. Its `owner-line.mjs` is HEAD's: 2b0b98d touched only the yml. <br>- L1m (the landing push plus a hooks-off `--no-ff` merge that empties the check and appends to `rule.mjs`): *red*, "9557ce6 changes the gates (tests/lessons/rule.mjs, tools/design/owner-line.mjs)". <br>- L1: *red*. <br>- R1 and R1b (this branch as a new branch while `main` is at d03b63f): exit 0. |
+| 3 | `owner-line-pure` pins a staged rename, a merge that renames out, and the verdict run as a script | **Partly** | Red as asked: <br>- `--no-renames` dropped from the staged reading (39): 2 fail; <br>- dropped from the remerge reading (52): 1 fails; <br>- `LINE` set to `/[\s\S]*/`: 2 fail; <br>- the refusal's `process.exit(1)` set to 0: 2 fail; <br>- the commit octopus refusal removed: 2 fail. <br>Still green (Q3, item 1): <br>- `process.exit(0);` at the top of the tool. The test imports the tool statically, so it exits 0 with no output before any check runs, and `npm test` stays green. Part P asked for exactly this case. <br>Dropping `--no-renames` from 47 and 51 (`diff-tree`, which never follows renames) rightly changes nothing. |
+| 4 | Text: SKILL 111; the yml comment; SKILL 114 on an octopus | **Partly** | Done: "the parent's copy" is gone, and SKILL 114 names the octopus rule and the fallback. The yml head comment (1-6) is right. <br>Left (Q3, item 4): <br>- SKILL 113-114 now read "and the start commit's a named fallback commit's when that has none": the old words were left in; <br>- the in-step comment part P named (now yml 34-37) is unchanged: "the copy on the branch before this push (what main held), or the start's when that has none"; <br>- yml 41 still says "the start commit's when that ref has none". |
+
+Two are done; one is done with its pin only partly done, and one is partly done. Nothing is red.
+
+### Q2. The attacks
+
+- **(a) to (e), (h), (j) to (p), (q), (s) to (x), (z3) to (z7):** not run again. `git diff --stat cd1a7b8 HEAD` is
+  empty on `tests/lessons/`, `approve.mjs`, `tried.mjs`, `design-pure.mjs`, `validate-lessons.mjs`, `docs/subjects/`,
+  `docs/research/`, the fixture, `.githooks/` and `stand-in-review.md`. Parts K to P's results stand.
+- **(R1) This branch's own history, landing on `main` from d03b63f:** 15 skipped, 21da9cf to 2b0b98d checked with
+  2d0027d's copy. Exit 0; `npm test` at the head is green. (R1b, the same as a new branch: exit 0.)
+- **(L1) The landing push with a hooks-off head that empties the check and edits `rule.mjs`:** *red*.
+- **(L1m) The landing push with a hooks-off evil merge:** *red*. Fixed.
+- **(oct) An evil octopus pushed to `main` after landing:** *red* by yml 59. Fixed. `npm test` at that head is green,
+  because the test exits silently on the emptied tool (Q3, item 1). The job is red all the same.
+- **(oct2) The same, with yml 59 deleted in the commit (new):** *red* by `main`'s copy of the tool.
+- **(oct-br, oct-L, oct-br0) An evil octopus on a branch after landing, on the landing push, and on a branch before
+  landing (new):** all *red*.
+- **(H) A merge in progress with two or three heads, hooks on:** refused every way it was tried. Fixed.
+- **(B) A branch's push 1 empties the check, push 2 makes an unworded gate edit (`main` at 2b0b98d):** both *red*,
+  judged by `origin/main`.
+- **(z11') An old fork with its own empty check, merged `--no-ff`:** *red*, "neither before nor after".
+- **(z13) An evil merge that moves `owner-line.mjs` to `scripts/`:** *red*, "323542c changes the gates
+  (tools/design/owner-line.mjs)".
+- **(m1, m2, m3, z14) The two-head hook cases, again:**
+  - m1, a clean merge of two worded edits to `stand-in-review.md`: passes;
+  - m2, a gate conflict resolved `--theirs`: refused;
+  - m3, a non-gate conflict resolved by hand: passes;
+  - z14, a staged `git mv tools/design/tried.mjs scripts/`: refused.
+  The octopus change broke none of them.
+- **(sym) The tool run by a symlinked path (new):**
+  - `node /tmp/x.mjs <msg> --commit 2d0027d` exits 0 with no output, and the same file by its real path exits 1;
+  - the hook is not affected. `git rev-parse --show-toplevel` gives the real path, and a clone under `/tmp` refuses an
+    unworded `rule.mjs` edit, also from a subdirectory.
+- **(cwd) `gatedChanges('--staged', …, dir)` from a process in another directory, during an octopus merge in `dir`
+  (new):** returns `[]` instead of throwing (Q3, item 2).
+- **(f2), (z2), (z9), (z12):** unchanged. Named (SKILL 105-124).
+
+### Q3. What the fixes broke or missed
+
+1. **The check's test still misses three faults** (Q1, items 1 and 3):
+   - An early `process.exit(0)` in the tool: the test's static `import` runs the tool's top level first, so the test
+     process exits 0 before any check. It needs to run a script check that must exit 1 *before* it loads the tool:
+     load the tool by dynamic `import()`, or assert the count line in the npm script.
+   - The hook's octopus refusal (owner-line 42-43): no check has a merge in progress with two `MERGE_HEAD`s. Add one,
+     run as a script with `cwd` set to the scratch repository, and through the library once item 2 is fixed.
+   - `--no-renames` on the `--brought` reading (owner-line 58): `git diff` follows renames by default (seen:
+     `--name-only` lists only `y.mjs` for a `git mv tools/design/x.mjs y.mjs`). Without the flag, a gate file renamed
+     out in a brought-in commit is missed. Add a `--brought` case with a rename.
+2. **`changed()` reads `MERGE_HEAD` against the process's directory, not `cwd`, and swallows the failure** (owner-line
+   42). `git rev-parse --git-path MERGE_HEAD` prints a path relative to `cwd`, which is `.git/MERGE_HEAD` in a plain
+   clone, and `readFileSync` resolves it against `process.cwd()`. The `catch { /* one head */ }` then falls back to one
+   head. The hook is not affected (it runs from the top level), but the exported function does not do what its `cwd`
+   parameter says. Because of this, the pin item 1 asks for could not be written through the library. Resolve the
+   path against `cwd`, and fail closed rather than fall back.
+3. **The tool fails open when run by a symlinked path** (sym; owner-line 75). The guard
+   `import.meta.url === pathToFileURL(process.argv[1]).href` compares a real path with the typed one, and when they
+   differ the script exits 0 having checked nothing. This is latent in the shipped setup: `ubuntu-latest`'s `/tmp` is
+   a real directory, and the hook passes a real path. It is still a check that reports a pass it never made. It voided
+   this review's first round, and it would do the same on any macOS runner. Compare real paths (`realpathSync`), or
+   keep the entry point in a separate script.
+4. **Text:**
+   - SKILL 113-114: delete the leftover "and the start commit's" before "a named fallback commit's".
+   - yml 36-37: the in-step comment should say what yml 40-45 do (`BEFORE` on a push to `main`, `origin/main`
+     otherwise, the named fallback when that has none). yml 41: "the start commit's" should be "the named fallback's".
+   - `docs/lesson-standard.md` section 11: the octopus refusal and the named fallback are rules of the gates with no
+     dated entry. The entry's list ends at "6f42ca1 and the one that follows". Section 11's own last line asks for a
+     dated entry for each rule change.
+
+### Q4. The two screens the owner reads
+
+No record, research note or reader changed since 6f42ca1. `approve.mjs <id> goal --show` prints Psychology at 4,551
+characters (747 words) and Geography at 3,402 characters (679 words), the same as in parts O and P. Both were read
+again:
+- **Psychology:** true to its record. The test reaches every topic group: the accounts, the arguments, the heated
+  moments and the next step. Readable: fair. "Projection" is both a topic and one of the defense mechanisms, and the
+  first ask's words are cut at 100 characters. *Verdict:* it can go out. Its length is the owner's call.
+- **Geography:** true to its record. The test reaches every topic group, flags and distance included. Readable: good.
+  *Verdict:* it can go out.
+
+`docs/research/designing-a-subject.md` and the skill's "What the gates rest on" did not change (the skill's diff since
+cd1a7b8 is the six lines of "How it runs"). There is no new finding there.
+
+### Q5. Closing verdict
+
+Not "nothing is left to fix". What to fix, ranked:
+1. `owner-line-pure`: make an early `process.exit(0)` in the tool turn it red (part P asked for this). Pin the hook's
+   octopus refusal and a `--brought` rename. As written, all three seeded faults stay green.
+2. `changed()`: read `MERGE_HEAD` relative to `cwd` and fail closed. As written, the library misses an in-progress
+   octopus whenever `cwd` is not the process's own directory.
+3. The tool's script guard: compare real paths. As written, the check exits 0 unchecked when run by a symlinked path.
+   This is latent on `ubuntu-latest` and in the hook.
+4. Text: the SKILL 113-114 leftover; the yml comments at 36-37 and 41; a dated entry in the standard's section 11 for
+   the octopus rule and the named fallback.
+
+Named, rests on honesty or on the owner's setting:
+- Invented owner words. This includes one invented line on an edit of `owner-line.mjs`, and a letterless reply reused
+  with new punctuation.
+- A self-written record review; a review's fingerprint or date line written by hand.
+- Getting past the hook: `--no-verify`, `core.hooksPath`, an unstaged hook edit, `cherry-pick`, `rebase`, `am`, and a
+  fast-forward merge.
+- History rewriting, until the owner's ruleset is in place.
+- The workflow file edited with the hooks off: GitHub runs the edited copy. With yml 59 deleted, `main`'s copy of the
+  tool still refuses an octopus (oct2).
+- What was opened is the session's own account. The audit by its GitHub URL passes gate 0, and so does another
+  subject's old lesson spelled `old-lessons:public/subjects/<id>/../<other>/`.
+- The fingerprints of `approved.history` entries are the record's own claims.
+- The validator and its controls edited together under an owner line.
+- Commits from before the gates are checked only by the tiers at the head. A pull request or a squash of this branch
+  is red, and the skill says it lands by fast-forward. If it is squashed, 2d0027d is gone and the fallback fails
+  closed.
+- A worded change to `owner-line.mjs` judges the pushes after it, not the rest of its own push.
+
+For the owner:
+- A ruleset on `main`: it requires the "lesson tier" check, runs it from `main` and forbids force-pushes. Without it, a
+  red push still lands, and what it lands becomes the copy that judges the next push to `main`. (Carried over.)
+- Land this branch by fast-forward. Fixes 1 to 4 do not change what any push decides on `ubuntu-latest`.
+- `pilot-fixes-2026-10-12` fails as a fork from before the gates. Rebase it onto the new `main`, or drop it. (Carried
+  over.)
+- A forbidden read honestly listed under `opened.asks` freezes the subject for good. Is that what you want? (Carried
+  over.)
+- An ask's topics only grow: is a re-approved screen enough to reword a topic an ask sits under? (Carried over.)
+- Psychology's screen is 4,551 characters (747 words). Is that one screen? (Carried over.)
+- Replacement words for the relayed words; the undecided asks of Math 3, Singing 3 and Wealth 4. (Carried over.)

@@ -804,5 +804,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   forced push after which nothing is new against `main` fails on push, and a fork from before the gates is rebased or
   dropped.
 
+- **2026-10-12, round fourteen** (commits 2d0027d, 2b0b98d and the one that follows): a merge of more than two parents
+  is refused by the owner-line check, in the hook and on push, since git has no reading of what such a merge changed
+  itself; the push's fallback copy of the check, for a ref that has none, is the named commit 2d0027d; the check runs
+  as a script by any path, symlinks included, and its own test fails when a run stops before its end.
+
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

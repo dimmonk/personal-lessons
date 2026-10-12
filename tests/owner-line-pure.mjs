@@ -1,15 +1,21 @@
 // The owner-line check (tools/design/owner-line.mjs) on a scratch repository: a gate file renamed out is a change to it; a merge in
 // progress with a conflict only in a non-gate file needs no word and does not crash; a gate conflict resolved to one side is the merge's
 // own change; a clean merge of two worded gate edits is not. Run: node tests/owner-line-pure.mjs
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync } from 'node:fs';
+import { mkdtempSync, mkdirSync, writeFileSync, rmSync, symlinkSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { changed, gatedChanges, OctopusError } from '../tools/design/owner-line.mjs';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 const TOOL = fileURLToPath(new URL('../tools/design/owner-line.mjs', import.meta.url));
+// the tool must come back from being imported: an exit at import (any code) would end this run before a single check
+const probe = execFileSync('node', ['--input-type=module', '-e', `await import(${JSON.stringify(pathToFileURL(TOOL).href)}); console.log('imported')`], { stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
+if (probe !== 'imported') { console.error('owner-line checks: the tool exits when it is imported, so nothing it says can be trusted'); process.exit(1); }
+const { changed, gatedChanges, OctopusError } = await import('../tools/design/owner-line.mjs');
 const run = (args, cwd) => { try { execFileSync('node', [TOOL, ...args], { cwd, stdio: ['ignore', 'pipe', 'pipe'] }); return 0; } catch (error) { return error.status; } };
 
+// the run must reach its last line: an early exit anywhere (in the tool on import, or here) is a failure, not a pass
+let finished = false;
+process.on('exit', code => { if (!finished && code === 0) { console.error('owner-line checks: the run stopped before its end'); process.exitCode = 1; } });
 const dir = mkdtempSync(join(tmpdir(), 'owner-line-'));
 const git = (...args) => execFileSync('git', args, { cwd: dir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim();
 const write = (f, s) => { mkdirSync(join(dir, f, '..'), { recursive: true }); writeFileSync(join(dir, f), s); };
@@ -69,7 +75,23 @@ try {
   let octo = false; try { gatedChanges('--commit', 'HEAD', null, dir); } catch (error) { octo = error instanceof OctopusError; }
   ok(octo, 'a merge of more than two parents is refused');
   same(run(['msg-word.txt', '--commit', 'HEAD'], dir), 1, 'the script refuses an octopus merge even with the line');
+  // a merge in progress with three heads is refused, through the library from another directory and through the script
+  git('checkout', '-q', '-b', 'j', base); write('j.txt', 'j\n'); git('add', '-A'); git('commit', '-q', '-m', 'j');
+  git('merge', '--no-commit', '--no-ff', 'g', 'h');
+  let octoStaged = false; try { gatedChanges('--staged', undefined, null, dir); } catch (error) { octoStaged = error instanceof OctopusError; }
+  ok(octoStaged, 'a merge in progress with three heads is refused (read from the repository at cwd, not the process directory)');
+  same(run(['msg-word.txt', '--staged'], dir), 1, 'the script refuses a merge in progress with three heads');
+  git('merge', '--abort');
+  // --brought does not follow renames: a gate file renamed out in what a merge brings in is held
+  git('checkout', '-q', '-b', 'k', base); git('mv', 'tools/design/owner-line.mjs', 'away.mjs'); git('commit', '-q', '-m', 'k: Owner\'s word: "yes" (chat)');
+  git('checkout', '-q', '-b', 'l', base); write('l.txt', 'l\n'); git('add', '-A'); git('commit', '-q', '-m', 'l'); git('merge', '-q', '--no-edit', '--no-ff', 'k');
+  ok(gatedChanges('--commit', 'HEAD', git('rev-parse', 'HEAD^1'), dir).includes('tools/design/owner-line.mjs'), 'a rename out brought in by a merge is held under --brought');
+  // the script run by a symlinked path still checks
+  const link = join(dir, 'link-owner-line.mjs'); symlinkSync(TOOL, link);
+  let code; try { execFileSync('node', [link, 'msg-none.txt', '--commit', 'HEAD', '--brought', git('rev-parse', 'HEAD^1')], { cwd: dir, stdio: ['ignore', 'pipe', 'pipe'] }); code = 0; } catch (error) { code = error.status; }
+  same(code, 1, 'the script run by a symlinked path refuses a gate change without the line');
 } finally { rmSync(dir, { recursive: true, force: true }); }
 
+finished = true;
 if (failures.length) { console.error(`${failures.length} of ${checks} owner-line checks failed:`); failures.forEach(f => console.error(`  - ${f}`)); process.exit(1); }
 console.log(`✓ ${checks} owner-line checks passed on a scratch repository`);

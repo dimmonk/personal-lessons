@@ -9,9 +9,10 @@
 // brings in was checked on the commits that made it; with --brought <base>, a merge that brings in commits never checked (the workflow
 // passes it) is held for every gate file it changes against <base> too. A merge in progress (--staged with MERGE_HEAD) is the staged
 // tree against the automatic merge of the two sides. Renames are never followed: a gate file renamed out is a change to it.
-import { readFileSync } from 'node:fs';
+import { readFileSync, realpathSync } from 'node:fs';
+import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath } from 'node:url';
 
 export const GATED = /^(\.claude\/skills\/build-subject\/|tests\/lessons\/|tests\/validate-lessons\.mjs|tests\/design-pure\.mjs|tests\/owner-line-pure\.mjs|tests\/fixtures\/fixture-subject\/design\.mjs|tools\/design\/|docs\/research\/|\.githooks\/|\.github\/|package\.json)/;
 export const LINE = /^Owner's word: ".+" \(.+\)/m;
@@ -39,7 +40,8 @@ export function changed(mode, sha, cwd = process.cwd()) {
     const staged = lines(git(['diff', '--cached', '--name-only', '--no-renames'], cwd));
     let mergeHeads = [];
     try { mergeHeads = lines(git(['rev-parse', '-q', '--verify', 'MERGE_HEAD'], cwd)); } catch { mergeHeads = []; }
-    try { if (mergeHeads.length) mergeHeads = lines(readFileSync(`${git(['rev-parse', '--git-path', 'MERGE_HEAD'], cwd).trim()}`, 'utf8')); } catch { /* one head */ }
+    // every head of the merge in progress, read from MERGE_HEAD in the repository at cwd (its path is relative to cwd)
+    if (mergeHeads.length) mergeHeads = lines(readFileSync(resolve(cwd, git(['rev-parse', '--git-path', 'MERGE_HEAD'], cwd).trim()), 'utf8'));
     if (mergeHeads.length > 1) throw new OctopusError('a merge of more than two branches at once cannot be read: merge one branch at a time');
     const mergeHead = mergeHeads[0] || null;
     if (!mergeHead) return staged;
@@ -72,4 +74,6 @@ function main(argv) {
   }
 }
 
-if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main(process.argv.slice(2));
+// run as a script when invoked by any path to this file, symlinks included
+const invokedHere = () => { try { return realpathSync(process.argv[1]) === realpathSync(fileURLToPath(import.meta.url)); } catch { return false; } };
+if (process.argv[1] && invokedHere()) main(process.argv.slice(2));

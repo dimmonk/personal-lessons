@@ -34,11 +34,11 @@ jobs:
           # the gates start at this commit (the record tools, --base and the owner-line check). A commit that is its ancestor predates
           # them and is checked by npm test at the head only; the start itself and its descendants are checked here; a commit that is
           # neither (a fork from before the gates) fails. The owner-line check is never a commit's own copy: it is the copy on the branch
-          # before this push (what main held), or the start's when that has none.
+          # before this push (what main held), main's for any other push, or the named fallback commit's when that has none.
           GATES_START=21da9cf36e71329fea154dcaf51721ab8539c8d2
           git rev-parse -q --verify "$GATES_START^{commit}" >/dev/null || { echo "the commit where the gates start is not in this clone"; exit 1; }
           # the copy of the check that judges this push: on a push to main, what main held before it (BEFORE); on any other push or a pull
-          # request, main's; the start commit's when that ref has none. Never the pushed head's.
+          # request, main's; the named fallback commit's when that ref has none. Never the pushed head's.
           if [ "${{ github.ref }}" = "refs/heads/main" ] && [ "${{ github.event_name }}" = "push" ]; then CHECK_REF="$BEFORE"; else CHECK_REF="origin/main"; fi
           # when that ref has no copy (the landing push of the gates), the fallback is the named commit whose readings are the current ones
           FALLBACK_CHECK=2d0027d
