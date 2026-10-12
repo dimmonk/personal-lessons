@@ -174,10 +174,14 @@ export function openedProblems(id, r) {
   if (!o || typeof o !== 'object' || Array.isArray(o) || !['asks', 'research', 'design', 'writing'].every(k => Array.isArray(o[k]) && o[k].every(p => typeof p === 'string'))) return ['the design record has no "opened" lists: what gate 0 (asks), gate 1 (research), gates 2 to 5 (design) and gates 6 and 7 (writing) read, one list each'];
   const notes = (Array.isArray(r.principles) ? r.principles : []).map(p => p && `docs/research/${p.note}.md`);
   const problems = [];
-  [...o.asks, ...o.research, ...o.design].forEach(p => { const why = FORBIDDEN_EVERYWHERE(id, p); if (why) problems.push(`the designer opened ${why} before the gates were written: ${p}`); });
+  // gates 2 to 5 may open this record, the notes gate 1 cites, the standard, the process itself (this skill and the tools that write the
+  // record) and the test subject's data shape (what an ask looks like, for gate 3's delivery check): none of these is a lesson to copy
+  const designOk = p => p === `docs/subjects/${id}/design.md` || notes.includes(p) || p === 'docs/lesson-standard.md' || p.startsWith('.claude/skills/build-subject/')
+    || p.startsWith('tools/design/') || p.startsWith('tests/fixtures/fixture-subject/');
+  [...o.asks, ...o.research, ...o.design.filter(p => !designOk(p))].forEach(p => { const why = FORBIDDEN_EVERYWHERE(id, p); if (why) problems.push(`the designer opened ${why} before the gates were written: ${p}`); });
   o.asks.filter(p => !asksOk(id, p)).forEach(p => problems.push(`gate 0 opened ${p}, which is not one of the owner's messages, briefs or course documents, the project's records of their words, or the version of this subject they used (old-lessons:public/subjects/${id}/…)`));
   o.research.filter(p => !RESEARCH_OK.test(p)).forEach(p => problems.push(`gate 1 opened ${p}, which is not a research note, a source or the science document`));
-  o.design.filter(p => !(p === `docs/subjects/${id}/design.md` || notes.includes(p) || p === 'docs/lesson-standard.md')).forEach(p => problems.push(`gates 2 to 5 opened ${p}; they may open only this record, the notes gate 1 cites and docs/lesson-standard.md`));
+  o.design.filter(p => !designOk(p)).forEach(p => problems.push(`gates 2 to 5 opened ${p}; they may open only this record, the notes gate 1 cites, docs/lesson-standard.md, the skill, the record tools and the test subject's data shape`));
   o.writing.filter(p => !writingOk(id, p)).forEach(p => problems.push(`the writer opened ${p}; gates 6 and 7 may open only this record, the standard, the test subject, this subject's own files and its old material at the tag old-lessons`));
   if (Array.isArray(r.asked) && r.asked.length && o.asks.length === 0) problems.push('opened.asks is empty: the asks were written from sources (the owner\'s messages, briefs, course documents, the version they used), and those are listed');
   return problems;

@@ -155,6 +155,32 @@
       "note": "review-after-lessons",
       "decides": false,
       "read": "summary"
+    },
+    {
+      "id": "D4",
+      "note": "designing-a-subject",
+      "decides": false,
+      "read": "full"
+    },
+    {
+      "id": "D5",
+      "note": "designing-a-subject",
+      "decides": true,
+      "read": "full",
+      "choice": "that each new kind of question (a tap from a name, a name typed, a flag, borders and water, a story place, a distance) opens with one item done for the learner, the tap or the answer shown with its line, before their first try, instead of starting cold."
+    },
+    {
+      "id": "D6",
+      "note": "designing-a-subject",
+      "decides": true,
+      "read": "full",
+      "choice": "that every practice item is answered with the place itself (a tap on it, or its name typed) as the real moment and the test are, never a choice among names; the tap rather than another input is a judgement call."
+    },
+    {
+      "id": "R4",
+      "note": "review-after-lessons",
+      "decides": false,
+      "read": "full"
     }
   ],
   "goal": "After this subject, when a place is named, in the news, by a person or in a travel plan, with no map in sight, you know where it is: the region it sits in, what it borders, the coast or water it is on, and roughly how far it is from you. You can put it on a map with no names on it, name a place that is pointed at, and place a town you have never heard of from the clues a story gives. It starts with the world, then the United States and Canada, then each region; a country comes as its name, its place and its flag, and when you place it you get one line of what it is. It does not teach map reading on the ground, populations, climate or history.",
@@ -185,6 +211,21 @@
   "realMoment": "A place named in a news story, in a conversation or in a travel plan, with no map in sight; a map on the phone that shows where you are but not what the named place is near.",
   "test": "Placing: 40 names drawn at random from every list of the subject (states and provinces, cities, countries, oceans and seas, rivers, mountain ranges, deserts), each tapped on a map with no names on it; at least 34 of 40 in the right place. Flags: 10 flags shown, the country tapped on the blank map; at least 8 of 10. Naming: 10 places lit on the blank map, named from memory by typing; at least 8 of 10. Borders and water: 10 places lit; for each, tap a place it borders and the water it is on, or say it is landlocked; at least 8 of 10. Judging: 10 places never practised, given as a story gives them, placed by region on the blank map; at least 8 of 10. Distance: 10 pairs of places, the distance band and the travel-time band right for at least 8. All of it on two sittings at least a week apart.",
   "out": "Map reading on the ground (the phone's map turns itself and finds you); outlines, populations, economies and climate; capitals of countries other than the ones the news uses as the government's name (Ottawa, Mexico City, Brussels, Beijing, Moscow, and the ones on each region's list); the geography of other planets, of the oceans' depths and of history (old borders, old names); navigation with a compass; towns under a quarter of a million people unless the news names them; the geography of the learner's own town. Canada's provinces are in (part 9) because the learner's own country is the one they will be asked about most.",
+  "practice": "Most of the time you answer on a map with no names: a name shown, you tap the place; a place lit, you type its name; a flag, you tap its country; a neighbor and the water tapped, or \"landlocked\"; a town you never met, placed from a story's clues; two places, the distance band.\nEach new kind of question starts with one done for you; each new group of places with one look at its map with names, then recall only.\nPlaces come back both ways, then on later days until right three times; after each answer the right place lights with one line of what the country is.",
+  "feedback": "From the app, at once after each answer in a set (a check gives it all at the end): the right place lit on the same blank map, the learner's tap marked beside it after a miss, and one line: the unit it sits in, its neighbors and its water, and for a country one line of what it is. A distance lights both places and prints the straight-line miles beside the band; a story place names the clue that decided its region; a trap item shows the true map after the answer. A miss comes back three items later until right, and on later days by the schedule.",
+  "delivery": [
+    "A `place` ask, NOT BUILT: a blank map drawn as shapes from offline data (no names, north-up, one projection for the world and one for the United States, projected in advance so the phone only draws); a tap scored by the shape it lands in; pinch-zoom and pan that never count against the learner; the right shape lit and the tap marked in the feedback.",
+    "What \"right\" is in the `place` ask, NOT BUILT: a state, province or country is its own shape; a city is inside its unit and in the part the item names (the unit split into halves or thirds, e.g. western Nevada); a river is a band drawn around its line; a range, a desert or a sea is its own area shape; a story place is right in its region (a coarser set of shapes).",
+    "A `map` block, NOT BUILT: the lesson's region drawn from the same data, with names for the one look at a new group, a place lit for naming, two places lit for a distance, and the true map after a trap item.",
+    "The map data, NOT BUILT: Natural Earth (public domain) countries, US states and Canadian provinces, rivers, lakes, seas, ranges and deserts, simplified and split into one file per region, each under 800 lines and listed in sw.js for offline; a budget of about 600 KB in all, measured when built; Alaska and Hawaii on insets of the US map.",
+    "Flags, BUILT as text: the emoji flags of countries render offline on iPhone and Android phones and are shown as the `place` ask's prompt; Kosovo and Palestine are to be checked on the phone; there are none for US states or Canadian provinces, so flags are asked for countries only.",
+    "The one line per country, BUILT: the item's `reason`, always shown after the answer; the lines themselves are content, written per region.",
+    "Generators that draw places fresh, NOT BUILT for places: `FC.gen` with a list of choices is built, but one that makes a `place` or naming item from the map data (a place of the group, the form it was not last asked) is not; the review asks a strand on a generator, so each group of places is a strand with its generator.",
+    "Naming a lit place, BUILT except the map: a `text` ask from memory with accepted spellings (one small misspelling forgiven, \"the\" optional, alternatives such as Türkiye / Turkey and Czechia / Czech Republic); the lit place needs the `map` block.",
+    "Borders and water, NOT BUILT: a `place` ask that takes a tap on any one neighbor's shape and a tap on the water's shape, with a \"Landlocked\" button in place of the water (as `tap` has \"Not given\").",
+    "The distance band, BUILT: a `choose` from the subject's `distance` and `travel` lists, the miles printed in the reason; lighting the two places needs the `map` block."
+  ],
+  "readingShare": 0.1,
   "designedOn": "2026-10-12",
   "approved": {
     "goal": {
@@ -210,10 +251,18 @@
     "research": [
       "docs/research/knowing-where-places-are.md",
       "docs/research/review-after-lessons.md",
-      "docs/learning-science.md"
+      "docs/learning-science.md",
+      "docs/research/designing-a-subject.md"
     ],
     "design": [
-      "docs/subjects/geography/design.md"
+      "docs/subjects/geography/design.md",
+      ".claude/skills/build-subject/SKILL.md",
+      "docs/research/knowing-where-places-are.md",
+      "docs/research/review-after-lessons.md",
+      "docs/research/designing-a-subject.md",
+      "docs/lesson-standard.md",
+      "tests/fixtures/fixture-subject/design.mjs",
+      "tools/design/record.mjs"
     ],
     "writing": []
   }
@@ -225,6 +274,28 @@ The research note docs/research/knowing-where-places-are.md was listed as a sour
 The record stops at gate 2 (2026-10-12): the owner signs off the printed screen, then gates 3 to 5 are designed through the skill, blind. The first plan of 2026-10-12 was written with the Civics record open and stands below under History only; its gates 3 to 5 are not in the record.
 
 Approvals before the screen rule of 2026-10-12 (re-asked on the printed screen): goal: 2026-10-12, "i already signed off psychology and geography so finish these 2 and they'll be the 2 test subjects before doing anything else".
+## Gate 3
+
+Written 2026-10-12, blind (the record, the notes gate 1 cites, `docs/lesson-standard.md` sections 3, 4, 6 and 10, and
+the test subject's data shape; no other subject, lesson or engine code). Waits for the owner's word on the practice.
+
+- **The practice is the moment's own answer** (D6, G1): every question is answered with the place itself, a tap on a map
+  with no names or its name typed, the same answers the gate 2 test asks for; a choice among four names is never the
+  practice. Flags are asked as the test asks them, a flag shown and the country tapped, so the answer is still the place
+  (the owner's ask; G1's note that no moment asks for a flag is overruled by gate 0). Borders and water are a tap on a
+  neighbor and on the water, or "Landlocked"; a story place is tapped by region; the distance is two bands chosen.
+- **Shown first** (D5): each new kind of question opens with one done for the learner. Each new group of places gets one
+  look at its map with names, about a minute, then recall only, never a second look (G2, decides). Contrast items for
+  the alignment traps, with the true map after the answer (G5, decides).
+- **Both ways, then later days** (G3, supports; R2, R4, R8): a place is asked name-to-map and map-to-name in the lesson,
+  and its group returns 2, 7 and 24 days later until right on three days, as the app's review already schedules
+  strands. Feedback at once (R7): the right place lit, the tap beside it, one line (G4: the unit is always named).
+- **readingShare 0.1**: the only reading is the one look at the labeled map, about a minute of a twelve-minute lesson;
+  the worked item of each kind is practice, not reading (D5). The number is a judgement call (D4).
+- **Delivery**: the `place` ask, the `map` block, the map data, the place generators and the borders-and-water form are
+  not built; flags (emoji), the one line (`reason`), naming (`text`) and the distance band (`choose`) are. Everything
+  not built is built before the pilot, or the subject waits.
+
 # geography: design record (build-subject skill)
 
 JSON migrated to the skill's record shape on 2026-10-12; the first plan's prose below stands until the design pass through the skill; `opened` names the Civics record that plan read, which the skill forbids, so V69 refuses this record until the design pass replaces it.

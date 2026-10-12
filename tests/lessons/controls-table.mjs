@@ -200,6 +200,8 @@ export const CONTROLS = [
   { rule: 'V69', name: 'a part with no check', input: input => asDesign(input, null, { parts: design(input).parts.map(p => p.id === '2' ? { id: p.id, title: p.title, topics: p.topics } : p) }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose designer opened its own lessons before the gates', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, design: ['public/subjects/fixture/l1.lesson.js'] } }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose designer opened another subject\'s record', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, research: ['docs/subjects/chorus/design.md'] } }) },
+  { rule: 'V69', name: 'gates 2 to 5 that opened the skill, the record tools and the test subject (allowed: the process and the data shape)', green: true,
+    input: input => asDesign(input, null, { opened: { ...design(input).opened, design: [...design(input).opened.design, '.claude/skills/build-subject/SKILL.md', 'tools/design/record.mjs', 'tests/fixtures/fixture-subject/design.mjs'] } }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose gates 2 to 5 opened the engine\'s code', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, design: ['public/app/lessons/ask.js'] } }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose writer opened another subject\'s lessons', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, writing: ['public/subjects/chorus/l1.lesson.js'] } }) },
   { rule: 'V69', name: 'a record of a subject not yet in the app whose designer opened another subject\'s record',
@@ -362,4 +364,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 248;
+export const PINNED_CONTROL_COUNT = 249;
