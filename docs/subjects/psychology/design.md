@@ -49,7 +49,10 @@
       "when": "2026-08-03",
       "where": "psychology/Identifying-Psychological-Patterns-Practical-Course.md, Lesson 1; old Unit One at the tag old-lessons",
       "owner": null,
-      "kept": null,
+      "kept": [
+        "one act read as a trait (the fundamental attribution error)",
+        "one act or a pattern: a bad moment with an ordinary reason, against a pattern"
+      ],
       "dropped": false
     },
     {
@@ -62,7 +65,13 @@
         "words": "restore all the psychology and ideology topics",
         "where": "chat, 2026-10-12, relayed by the deployment session"
       },
-      "kept": null,
+      "kept": [
+        "cognitive dissonance and self-justification",
+        "confirmation bias",
+        "motivated reasoning",
+        "sunk cost",
+        "one act read as a trait (the fundamental attribution error)"
+      ],
       "dropped": false
     },
     {
@@ -75,7 +84,9 @@
         "words": "restore all the psychology and ideology topics",
         "where": "chat, 2026-10-12, relayed by the deployment session"
       },
-      "kept": null,
+      "kept": [
+        "narcissist: grandiose and vulnerable, and the clinical bar"
+      ],
       "dropped": false
     },
     {
@@ -88,7 +99,11 @@
         "words": "restore all the psychology and ideology topics",
         "where": "chat, 2026-10-12, relayed by the deployment session"
       },
-      "kept": null,
+      "kept": [
+        "borderline",
+        "histrionic",
+        "psychopath and sociopath"
+      ],
       "dropped": false
     },
     {
@@ -101,7 +116,9 @@
         "words": "restore all the psychology and ideology topics",
         "where": "chat, 2026-10-12, relayed by the deployment session"
       },
-      "kept": null,
+      "kept": [
+        "defense mechanisms, briefly: denial, projection, rationalization, displacement, minimizing"
+      ],
       "dropped": false
     },
     {
@@ -110,7 +127,12 @@
       "when": "2026-08-03",
       "where": "the course document, Lesson 5; old Unit Three",
       "owner": null,
-      "kept": null,
+      "kept": [
+        "gaslighting",
+        "manipulative",
+        "DARVO",
+        "love-bombing then devaluation"
+      ],
       "dropped": false
     },
     {
@@ -119,7 +141,9 @@
       "when": "2026-08-03",
       "where": "the course document, Lesson 6",
       "owner": null,
-      "kept": null,
+      "kept": [
+        "all of it mixed, on real accounts and on your own"
+      ],
       "dropped": false
     }
   ],
@@ -168,8 +192,9 @@
     {
       "id": "O8",
       "note": "reading-other-people",
-      "decides": false,
-      "read": "abstract"
+      "decides": true,
+      "read": "full",
+      "choice": "the practice method: many new accounts judged with feedback after each and one short card per idea, rather than a card-led course about biases."
     },
     {
       "id": "O10",
@@ -350,6 +375,7 @@
     }
   },
   "pilot": "l1",
+  "designedOn": "2026-10-10",
   "approved": {
     "goal": null,
     "practice": null

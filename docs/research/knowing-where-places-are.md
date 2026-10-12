@@ -12,7 +12,7 @@ P30); this note adds what those do not cover. Each finding says what was read.
 place comes as a name ("Sudan", "Reno", "a town in Oaxaca") and the useful knowledge is where that is: the region, the
 neighbors, the coast, roughly how far. In the National Geographic–Roper survey of 510 Americans aged 18 to 24 (fielded
 December 2005 to January 2006), 63% could not find Iraq on a map of the Middle East, about 75% could not find Israel or
-Iran, and fewer than half could find New York or Ohio on a map of the United States. *Read: the press reports of the
+Iran, and fewer than half could find New York or Ohio on a map of the United States. *Read: summary: the press reports of the
 survey (Washington Times, RFE/RL, the Associated Press copy); the survey's own tables were not reached.* **Design:** the
 practice is a name shown and the place tapped on a map with no names on it; recognizing an outline or a flag is never the
 practice, because no real moment asks for it. **Supports.**
@@ -24,7 +24,7 @@ two maps of 12 features each (roads, rivers and buildings such as a school or a 
 area, not countries), one by study and one by tests in which one feature was removed from the displayed map and had to be
 recalled, covertly and self-scored, in its place; thirty minutes later their drawings of the tested map were better than
 of the studied one, by all four scoring rules (Carpenter & Pashler, 2007, *Psychonomic Bulletin & Review* 14, 474–478).
-*Read: full text, Method and Results, 2026-10-12 (the in-press manuscript, ERIC ED505596).* **Design:** after a minute's
+*Read: full: full text, Method and Results, 2026-10-12 (the in-press manuscript, ERIC ED505596).* **Design:** after a minute's
 look at a labeled map, every place is practised by recall, never by looking at the map again. *(Corrected 2026-10-12
 against the full text: the thing removed was a feature of a displayed map, not a place on a blank one; each map was
 studied for 20 seconds, then tested for 100 seconds, under two tests per feature on average; the gain is modest and
@@ -38,7 +38,7 @@ days-long returns are judgement calls beyond this study (the app's own evidence,
 **G3. Testing on a map transfers to the reversed question.** Fourth and fifth graders learned to match regions or cities
 to map locations by testing or by study; a day later the testing group did better both on the same task and on new,
 harder questions, and the gain was no smaller on the transfer test (Rohrer, Taylor & Sholar, 2010, *Journal of
-Experimental Psychology: Learning, Memory, and Cognition* 36, 233–239). *Read: abstract and the USF repository record.*
+Experimental Psychology: Learning, Memory, and Cognition* 36, 233–239). *Read: abstract: abstract and the USF repository record.*
 **Design:** each place is practised both ways, name to map and map to name, and the end check asks each way; the review
 asks a due place in whichever form it was not last asked. A 2025 study of routes (not of places) found that practice in
 one direction hurt the reverse direction: testing a route start to end helped walking it forward and made walking it
@@ -52,7 +52,7 @@ et al. not reachable 2026-10-12: a judgement call, and the 2025 study points the
 **G4. Memory for places is hierarchical, and errors follow the hierarchy.** People judge the relation between two places
 from the relation between the larger units that hold them: asked the direction from San Diego to Reno (drawn on a north-up
 circle, as later accounts describe the task), most put Reno to the east, because California is west of Nevada; Reno is
-in fact to the northwest (Stevens & Coupe, 1978, *Cognitive Psychology* 10, 422–437, three experiments). *Read: abstract and the standard summaries.* **Design:** the regions come first (the four
+in fact to the northwest (Stevens & Coupe, 1978, *Cognitive Psychology* 10, 422–437, three experiments). *Read: abstract: abstract and the standard summaries.* **Design:** the regions come first (the four
 US regions, the continents and their parts), then the places within each; feedback always names the unit a place sits in
 ("Reno: Nevada's western edge, on the California line"), and the known traps are items of their own (part 20 of the
 record). **Supports** (would decide the units-first order of the parts
@@ -66,7 +66,7 @@ between North and South America the errors toward alignment significantly outnum
 Philadelphia but alignment pulls it south; New York is west of Santiago but alignment pulls it east); 65% (75 of 115) preferred a map of
 the Americas altered to be more aligned over the true one, and 63% (135 of 215) the same for the Americas against
 Europe–Africa–Asia; 75% of 60 set a South America cutout more upright than it is; on four invented maps learned for a
-minute each, 24 students erred the same way (compass pairs, average score −1.46 against 0; sketches −1.08). *Read: full
+minute each, 24 students erred the same way (compass pairs, average score −1.46 against 0; sketches −1.08). *Read: full: full
 text, pp. 411–418 (Alignment, Rotation, Artificial Maps), 2026-10-12.* **Design:** every map in the subject is drawn
 north-up at one orientation, so the learner's picture has one frame; the distortions themselves are taught as contrast
 items with the true map shown after the answer (part 20 of the record); distance and direction items are answered in
@@ -81,7 +81,7 @@ frame reduces the errors is the design's bet, not this paper's result.
 
 **G6. A map read in the hand is a different skill.** Reading a "you are here" map depends on it being turned to match the
 ground and matched to the structure in front of the reader (Levine, 1982, *Environment and Behavior* 14, 221–237; Levine,
-Marchon & Hanley, 1984, *Environment and Behavior* 16, 139–157). *Read: abstracts.* **Design:** map reading on the ground
+Marchon & Hanley, 1984, *Environment and Behavior* 16, 139–157). *Read: abstract: abstracts.* **Design:** map reading on the ground
 is out of this subject: the phone's own map turns itself and finds the reader. What the phone cannot do is tell the reader
 what a named place is near, and that is what this subject teaches. **Supports.**
 
@@ -89,7 +89,7 @@ what a named place is near, and that is what this subject teaches. **Supports.**
 
 **G7. No study was found on learning how far apart places are.** The design's bet is the one the rest of the app rests
 on: produce an answer (a distance band, a travel-time band), see the right one at once with the two places lit on the
-map, and come back on later days (R1, R2, R7). The pilot and the end check are the evidence. *Read: no source: none was found; the notes cited.* **Supports.**
+map, and come back on later days (R1, R2, R7). The pilot and the end check are the evidence. *Read: summary: no source: none was found; the notes cited.* **Supports.**
 
 ## What the evidence does not settle
 - How many taps a place needs before it holds: successive relearning until right in three sessions (R2) is used because

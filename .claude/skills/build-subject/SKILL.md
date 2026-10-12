@@ -94,14 +94,18 @@ not the learner (D3). Where a gate below rests on judgement, it says so.
   to other text or to everything at once, never carries over. The worklist's first item is always the next sign-off
   the owner owes, and everything else sits below it. What holds this mechanically: the staged record, the fingerprints,
   the holds, the committed-record comparison (an ask removed or reworded since the last commit is refused), the
-  Disclosure line on reviews, the fingerprint a try carries (a rewritten lesson is tried again), the record review of
-  gate 5 with its own verdict file, a deleted record or a shrunk `opened` list refused, the pre-commit hook that runs
-  the lesson tier (`npm test` turns the hooks on), and the commit-message hook that asks for the owner's word on any
-  change to the skill, the record rules and their harness, the tools or the hooks. What does not, said here so no one
-  mistakes it for a check: a session can write a quote that was never said; a hook is skipped with `--no-verify`; a
-  session that edits the validator and its controls together can switch a rule off (the commit then carries an owner
-  line that only the owner can read as false). These rest on honesty, and on the owner reading the record's owner
-  fields and the commit log, which this skill keeps short enough to read.
+  Disclosure line on reviews, the fingerprint every review and try names (`Reviewed:` in the file, `fp` in the entry: a
+  review counts for the version it read, and a rewritten lesson or design is reviewed again), owner entries compared
+  with the last commit (an approval is cleared or replaced by a later word, a try replaced by a later one, never edited
+  or taken away), a deleted record or a shrunk `opened` list refused (a redesign, `designedOn` advanced, starts new
+  lists), the pre-commit hook that runs the lesson tier (`npm test` turns the hooks on), and the commit-message hook
+  that asks for the owner's word on any change to the skill, the record rules and their harness, the tools, the hooks
+  or the research notes. What does not, said here so no one mistakes it for a check: a session can write a quote that
+  was never said, write a review file and its verdict itself, or mark a note's finding as read in full without reading
+  it; a hook is skipped with `--no-verify`; a session that edits the validator and its controls together can switch a
+  rule off (the commit then carries an owner line that only the owner can read as false). These rest on honesty, and
+  on the owner reading the record's owner fields, the review files and the commit log, which this skill keeps short
+  enough to read.
 - **The question at every gate**, asked in the record: **"If the learner did only this, would they be closer to the end
   result?"** A "no" or a "not really" stops the gate.
 - **Who applies each rejection.** Gate 0: the validator and the owner. Gates 1 to 5: the session that designs, checked
@@ -169,7 +173,9 @@ it applies.
     "goal": { "date": "2026-10-13", "words": "On track.", "where": "chat, 2026-10-13", "fp": "sha256:…", "shown": ["biases"] },
     "practice": null                                   //   fp binds the printed screen, drops included; shown: the asks listed as dropped on it
   },
-  "designReview": { "date": "2026-10-13", "file": "reviews/design.md" },   // gate 5: the record read against this skill by someone who did not write it
+  "designedOn": "2026-10-13",                          // the date gates 1 to 5 were last run; a later date is a redesign
+  "designReview": { "date": "2026-10-13", "file": "reviews/design.md" },   // gate 5: the record read against this skill by someone who did not write it;
+                                                       //   its Reviewed line is the design's fingerprint (tools/design/fp.mjs <subject>), so it counts for that design only
   "tried": {                                           // gates 6 and 7: one entry per lesson that was tried or reviewed
     "l3": { "by": "stand-in", "date": "2026-10-11", "review": "reviews/l3.md", "fp": "sha256:…",
             "waived": { "date": "2026-10-11", "words": "keep going, don't wait on my read", "where": "chat, 2026-10-11" } },
@@ -227,7 +233,9 @@ Pass when: every item on the list is covered by topics a part covers, or dropped
 3. **Mark each principle "decides" or "supports".** A principle *decides* when a choice in this design would be
    different if the finding were false: name that choice (`choice`). Everything else *supports*. A decides principle
    must have been read in full (the paper or its author manuscript, not an abstract or a summary), with where in it the
-   finding sits, and the note's own "Read:" line says so. The validator reads the note's mark and Read line: a record
+   finding sits, and the note's own Read line says so. A note's Read line states its level as its first word:
+   `*Read: full: …*`, `*Read: abstract: …*` or `*Read: summary: …*` (the finding's own source first; companions after a
+   semicolon); the level is never inferred from the words after it, and a line with no level reads as summary. The validator reads the note's mark and Read line: a record
    claims no more than its note (a finding may decide less in a subject than in its note, never more; a record may not
    say "full" where the note read an abstract). A finding that would decide but cannot be read in full is marked
    supports, and the choice it would have decided is written as a judgement call to be measured. Most findings about a
@@ -271,14 +279,16 @@ read in full and names the choice it decides, and `opened.research` holds only w
    (D15): say it, and do not argue it from evidence.
 5. **What is out** (`out`): what the subject does not try to do, so it stays short.
 6. **Ask the owner** with the screen `approve.mjs <subject> goal --show` prints: the paragraph; the topics; the
-   sentence; the test; then, under "What you asked for that this design drops", every gate 0 item not covered and not
-   dropped, in their words, with any earlier word of theirs beside it; then "On track, or not?". The screen is under
-   3,000 characters; if it is longer, the subject is too big or the list too wordy, and that is the finding. Record
+   sentence; the test; then, under "What you asked for, and where it is taught", every gate 0 item (its first hundred
+   characters) with the topics it is placed under, or the owner's word on it, or "needs your word"; then "On track, or
+   not?". The screen is under 5,000 characters, about 750 words; if it is longer, the subject has too many asks or
+   topics to sign off at once, and that is the finding. Record
    their reply with `approve.mjs <subject> goal --words "<their reply>" --where "<where>"`, and their word on each
-   dropped item with `asked.mjs`. The approval binds the printed screen, drops included: a change to the paragraph,
-   the list, the sentence, the test or the words of a dropped item asks for it again, and so does a new item waiting
-   for their word that was not on the screen they saw. An approval while an item is undecided is still an approval;
-   the content waits.
+   dropped item with `asked.mjs`. The approval binds what the design put on the screen: the paragraph, the list, the
+   sentence, the test, and each ask with the topics it is placed under; a change to any of these asks for it again,
+   and so does a new item waiting for their word that was not on the screen they saw. The owner's own word on an ask
+   does not. The tool refuses a re-approval in the same words: a new screen needs their new words. An approval while an
+   item is undecided is still an approval; the content waits.
 
 Reject when: the sentence names knowing, understanding or recognizing rather than doing; the real moment is not a time
 and place the learner meets in life; the test asks the learner to say something about the task instead of doing it, or
@@ -337,7 +347,7 @@ Pass when: the owner's words, with their source, are on the practice (`approved.
    10" is one form among many, never the default.
 2. **Break the end result into parts** (`parts`): the smaller abilities it needs (for singing: breath, matching a note,
    holding it, moving between notes, range, a whole song line). Order them so each builds on the ones before; where the
-   skill is a whole, the first parts are the whole made simple, not the pieces (D7).
+   skill is a whole, the first parts are the whole made simple, not the pieces (D7, a judgement call on thin evidence).
 3. **A check for each part** (`parts[].check`): a small version of gate 2's test, in the form of step 1, on cases the
    lesson did not use (D1); and **the topics it covers** (`parts[].topics`), from gate 2's list. Every topic on the
    list is covered by a part, and every ask's `kept` topics with it.
@@ -369,9 +379,11 @@ Then name the **pilot** (`pilot`): the first lesson built, the one whose failure
 
 Then, before the pilot is built, **an independent review of the record**: an agent that did not write it reads the
 record against this skill, gate by gate, and lists what fails. What fails is fixed first. The review is a file,
-`docs/subjects/<id>/reviews/design.md`, opening with `Verdict: passes` or `Verdict: fails` and a `Reviewer:` line (who,
-which model, the date); the record points at it in `designReview`, and the validator holds the subject's content until
-it passes. (The validator checks the shape; the review checks the design.)
+`docs/subjects/<id>/reviews/design.md`, opening with `Verdict: passes` or `Verdict: fails`, a `Reviewer:` line (who
+(which model), the date) and a `Reviewed:` line with the design's fingerprint (`node tools/design/fp.mjs <subject>`);
+the record points at it in `designReview`, it counts for that design only, and the validator holds the subject's
+content until it passes. A redesign sets `designedOn` to its date; the old pass's prose and `opened` lists go under
+History, and the new lists start. (The validator checks the shape; the review checks the design.)
 
 Reject when: its main activity is not the part's real action; most of its time is reading; its end check measures
 something other than the part; `why` names a principle gate 1 does not have; or the answer to "if the learner did only

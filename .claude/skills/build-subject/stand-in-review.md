@@ -43,13 +43,16 @@ then never counts as passing, and it is run again by another reviewer.
 - **Clear**: could a beginner follow every screen without outside help? (List every place they could not.)
 - **Waste**: what could be cut without losing the gain?
 
-**Verdict: passes** only when Doing and Check are yes, the check was passed, Gain names an ability, and nothing under
-Clear blocks a beginner. Otherwise **Verdict: fails**, with the fixes needed. A failed lesson is fixed and reviewed
+**Verdict: passes** only when Doing and Check are yes, the check was passed, and nothing under Clear blocks a beginner.
+Gain is answered and recorded; it is a model's judgement and is not what passes the lesson. Otherwise **Verdict:
+fails**, with the fixes needed. A failed lesson is fixed and reviewed
 again by a fresh reviewer; the fixes needed are the next revision's list.
 
 ## The record
 `docs/subjects/<id>/reviews/<lessonId>.md`, opening with the line `Verdict: passes` or `Verdict: fails` (the validator
-reads it), then a line `Reviewer: <who, which model>, <date>; opened: <the files>`, a `Disclosure:` line if any, then
+reads it), then a line `Reviewer: <who> (<which model>), <date>; opened: <the files>`, then a line `Reviewed: <the
+lesson's fingerprint>` (the brief gives it, from `node tools/design/fp.mjs <subject> <lessonId>`; the review counts for
+that version of the lesson only), a `Disclosure:` line if any, then
 the before, the notes, the check's score, the after, the five answers and the fixes. The design record's `tried` gains
 `"<lessonId>": { "by": "stand-in", "date": "YYYY-MM-DD", "review": "reviews/<lessonId>.md", "waived": { "date", "words",
 "where" } }`, written with `node tools/design/tried.mjs <subject> <lessonId> --stand-in reviews/<lessonId>.md --words

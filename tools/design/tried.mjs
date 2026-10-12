@@ -4,8 +4,10 @@
 // The stand-in's verdict is read by V69 from the review file's first line; a review with a Disclosure line does not count. The entry
 // carries the fingerprint of the lesson as it was tried; once the lesson changes, the entry no longer passes.
 import { readRecord, writeRecord, ownerWordFrom, REPO } from './record.mjs';
+import { readFile } from 'node:fs/promises';
 import { loadFromPublic } from '../../tests/lessons/load.mjs';
 import { lessonFingerprint } from '../../tests/lessons/fingerprint.mjs';
+import { reviewVerdict } from '../../tests/lessons/designs.mjs';
 
 const yes = v => v === 'yes' ? true : v === 'no' ? false : null;
 
@@ -37,6 +39,13 @@ async function main(argv) {
   const data = await loadFromPublic(new URL('public/', REPO));
   if (!data.subjects[args.subject] || !data.subjects[args.subject].lessons[args.lesson]) throw new Error(`lesson ${args.lesson} of ${args.subject} is not in the app: a try is of a built lesson`);
   const fp = lessonFingerprint(data, args.subject, args.lesson);
+  if (args.entry.by === 'stand-in') {
+    // the review file says what it reviewed: it counts only for the lesson as it is now, and never a record review
+    if (args.entry.review !== `reviews/${args.lesson}.md`) throw new Error(`a review of lesson ${args.lesson} is reviews/${args.lesson}.md`);
+    const rv = reviewVerdict(await readFile(new URL(`docs/subjects/${args.subject}/${args.entry.review}`, REPO), 'utf8'));
+    if (rv.verdict === 'unreadable') throw new Error(`${args.entry.review} needs its Verdict line first, a Reviewer line (who (model), date) and a Reviewed line with the lesson's fingerprint (node tools/design/fp.mjs ${args.subject} ${args.lesson})`);
+    if (rv.reviewed !== fp) throw new Error(`${args.entry.review} reviewed ${rv.reviewed}; the lesson is now ${fp}: a rewritten lesson is reviewed again`);
+  }
   await writeRecord(args.subject, { ...record, tried: { ...record.tried, [args.lesson]: { ...args.entry, fp } } }, prose);
   console.log(`${args.subject}/${args.lesson}: tried by ${args.entry.by} on ${args.entry.date}`);
 }

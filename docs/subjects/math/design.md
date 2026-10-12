@@ -113,8 +113,9 @@
     {
       "id": "M4",
       "note": "learning-everyday-math",
-      "decides": false,
-      "read": "abstract"
+      "decides": true,
+      "read": "full",
+      "choice": "from lesson 3 on, part of every lesson is mixed, unlabeled problems of all kinds so far, after the kind has been taught on its own, instead of a block of one kind per lesson."
     },
     {
       "id": "M5",
@@ -329,6 +330,7 @@
     }
   },
   "pilot": "l1",
+  "designedOn": "2026-10-10",
   "approved": {
     "goal": null,
     "practice": null

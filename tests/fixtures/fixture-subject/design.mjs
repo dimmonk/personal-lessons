@@ -1,11 +1,14 @@
 // The design records of the test subjects (what docs/subjects/<id>/design.md holds between its two lines of three dashes), in the shape
 // the build-subject skill asks for and V69, V71 and V80 read; with the stand-in reviews and the research note the records cite.
 import { fingerprint } from '../../lessons/fingerprint.mjs';
+import { designFingerprint } from '../../lessons/design-shape.mjs';
 
 // the one research note of the test subjects: its findings, each with its mark and what was read
 export const FIXTURE_RESEARCH = { 'umbrella-days': { ids: ['U1', 'U2', 'U3'], marks: { U1: { decides: true, read: 'full' }, U2: { decides: false, read: 'abstract' }, U3: { decides: false, read: 'summary' } } } };
 // the stand-in reviews of the test subjects: { [subjectId]: { 'reviews/<lesson>.md': verdict } }
-export const FIXTURE_REVIEWS = Object.fromEntries(['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview'].map(id => [id, { 'reviews/design.md': 'passes', ...(id === 'fixture' ? { 'reviews/l2.md': 'passes' } : {}) }]));
+// each review names what it reviewed; negative-controls.mjs fills the fingerprints from the loaded data (withTriedFps, withReviewFps)
+export const FIXTURE_REVIEWS = Object.fromEntries(['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview'].map(id => [id, { 'reviews/design.md': { verdict: 'passes', reviewed: null }, ...(id === 'fixture' ? { 'reviews/l2.md': { verdict: 'passes', reviewed: null } } : {}) }]));
+export const withReviewFps = (reviews, designs, fpOf) => Object.fromEntries(Object.entries(reviews).map(([id, files]) => [id, Object.fromEntries(Object.entries(files).map(([f, rv]) => [f, { ...rv, reviewed: f === 'reviews/design.md' ? designFingerprint(designs[id]) : fpOf(id, f.replace(/^reviews\/|\.md$/g, '')) }]))]));
 
 // an owner's word on a subject: their reply quoted, with where; every subject has its own words (the same words twice is a blanket)
 const word = (subject, what, date) => ({ date, words: `${subject}: ${what}, on track.`, where: `chat, ${date}` });
@@ -21,9 +24,10 @@ const PRINCIPLES = [
 function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026-10-10') {
   const checks = Object.fromEntries(parts.map(p => [p.id, p.check]));
   const topics = parts.map(p => p.title.toLowerCase());
-  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test, drops: [] };
+  const asked = text.asked || [{ id: 'the-thing', words: 'teach me to do the thing', when: '2026-10-09', where: 'the brief', owner: null, kept: [topics[0]], dropped: false }];
+  const goalScreen = { goal: text.goal, topics, endResult: text.endResult, test: text.test, asks: asked.map(a => ({ words: a.words, kept: a.kept })) };
   return {
-    subject, asked: text.asked || [{ id: 'the-thing', words: 'teach me to do the thing', when: '2026-10-09', where: 'the brief', owner: null, kept: [topics[0]], dropped: false }],
+    subject, asked,
     kinds, principles: PRINCIPLES,
     opened: { asks: ['the brief'], research: ['docs/research/umbrella-days.md'], design: [`docs/subjects/${subject}/design.md`], writing: ['docs/lesson-standard.md', `old-lessons:public/subjects/${subject}/u1.unit.js`] },
     goal: text.goal, topics, endResult: text.endResult, realMoment: text.realMoment, test: text.test, out: text.out || 'Everything the end result does not name.',
@@ -31,7 +35,7 @@ function record(subject, kinds, text, parts, lessons, pilot, tried, date = '2026
     readingShare: text.readingShare, form: text.form || 'The real moment\'s own form: the input as it arrives, the answer the learner would give.',
     parts: parts.map(p => ({ ...p, topics: [p.title.toLowerCase()] })), lessons: Object.fromEntries(Object.entries(lessons).map(([id, part]) => [id, { part, does: text.does || text.practice, feedback: text.feedback || 'Right or wrong and the reason, after each answer.', check: checks[part], why: ['U1', 'U2'] }])),
     pilot, approved: { goal: approved(subject, goalScreen, date), practice: { ...word(subject, 'the practice', date), fp: fingerprint(text.practice) } },
-    designReview: { date, file: 'reviews/design.md' },
+    designReview: { date, file: 'reviews/design.md' }, designedOn: date,
     tried
   };
 }

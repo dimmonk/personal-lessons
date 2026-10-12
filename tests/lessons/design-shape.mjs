@@ -4,7 +4,8 @@ import { fingerprint, lessonFingerprint } from './fingerprint.mjs';
 import { READ_LEVELS, VERDICTS } from './designs.mjs';
 
 export const LEARNING_KINDS = ['facts', 'judging', 'procedure', 'body', 'habit'];
-export const GOAL_SCREEN_MAX_CHARS = 3000;    // the one screen the owner reads at gate 2: the paragraph, the topics, the sentence and the test
+export const GOAL_SCREEN_MAX_CHARS = 5000;    // the one screen the owner reads at gate 2, as printed: about 750 words (a subject with eight asks and 27 topics sits near it); more is too much to sign off at once
+export const ASK_SHOWN_CHARS = 100;           // an ask is shown by its first hundred characters: the owner knows their own words; the screen shows where each lands
 export const PRACTICE_MAX_CHARS = 600;        // gate 3's "three lines"
 // the fields each gate writes; a record may stop after any gate, and no gate's fields may appear before the gates before it are complete
 export const GATE_FIELDS = {
@@ -20,6 +21,11 @@ export const isText = (s, min = 10) => typeof s === 'string' && s.trim().length 
 export const isDate = s => typeof s === 'string' && DATE.test(s);
 const isList = (x, min = 1) => Array.isArray(x) && x.length >= min && x.every(s => isText(s, 1));
 const READ_RANK = { full: 3, abstract: 2, summary: 1 };
+// the design as reviewed at gate 5: everything the gates decide, without the approvals, the tries, the review pointer and the reads
+const DESIGN_FIELDS = ['asked', 'kinds', 'principles', 'goal', 'topics', 'endResult', 'realMoment', 'test', 'out', 'practice', 'feedback', 'delivery', 'readingShare', 'form', 'parts', 'lessons', 'pilot'];
+// the owner's own decisions (their word on an ask, a drop, and the placement the approval screen shows them) are not what the record
+// review judged: an ask counts in the design by its words; whether every ask is covered is the hold on content
+export const designFingerprint = r => fingerprint(Object.fromEntries(DESIGN_FIELDS.filter(f => f in r).map(f => [f, f === 'asked' ? (Array.isArray(r.asked) ? r.asked : []).map(a => ({ id: a && a.id, words: a && a.words })) : r[f]])));
 
 // the owner's recorded word: their words, quoted, with the date and where they said it
 export const ownerWord = (w, where) => !w || typeof w !== 'object' || !isDate(w.date) || !isText(w.words, 1) || !isText(w.where, 1)
@@ -30,13 +36,16 @@ export const dropsToShow = r => (Array.isArray(r.asked) ? r.asked : []).filter(a
 // What the owner approves at gate 2 is one screen, printed by tools/design/approve.mjs exactly as `screenText` builds it: the paragraph,
 // the list of what the subject teaches, the sentence, the test and the drops. The approval's fingerprint is over the paragraph, the
 // topics, the sentence, the test and the drops' words; `shown` keeps the drops' ids.
-export const goalScreen = r => ({ goal: r.goal, topics: r.topics, endResult: r.endResult, test: r.test, drops: dropsToShow(r).map(d => d.words) });
+// every ask is on the screen with where it is taught (its topics), the owner's word on it, or "needs your word": a session cannot map an ask away unseen.
+// The fingerprint covers what the design decides for each ask (its words and the topics it is placed under), not the owner's own word on it.
+export const asksToShow = r => (Array.isArray(r.asked) ? r.asked : []).map(a => ({ words: a.words, kept: a.kept, dropped: a.dropped, owner: a.owner ? a.owner.words : null }));
+export const goalScreen = r => ({ goal: r.goal, topics: r.topics, endResult: r.endResult, test: r.test, asks: asksToShow(r).map(a => ({ words: a.words, kept: a.kept })) });
 export const approvedText = (r, field) => field === 'goal' ? goalScreen(r) : r[field];
 export function screenText(r, field) {
   if (field === 'practice') return `How ${r.subject} is practiced:\n${r.practice}\n\nOn track, or not?`;
-  const drops = dropsToShow(r);
   const lines = [r.goal, '', `${r.subject} teaches:`, ...(Array.isArray(r.topics) ? r.topics : []).map(t => `- ${t}`), '', `After this subject you can: ${r.endResult}`, '', `The test: ${r.test}`];
-  if (drops.length) lines.push('', 'What you asked for that this design drops (each needs your word: keep it here, move it, or drop it):', ...drops.map(d => `- ${d.words}`));
+  const asks = asksToShow(r);
+  if (asks.length) lines.push('', 'What you asked for, and where it is taught:', ...asks.map(a => `- ${a.words.length > ASK_SHOWN_CHARS ? a.words.slice(0, ASK_SHOWN_CHARS - 3) + '...' : a.words}: ${a.dropped ? `dropped on your word ("${a.owner}")` : a.kept ? `taught under ${a.kept.join('; ')}` : a.owner ? `you said "${a.owner}"; the design still has to place it` : 'NOT IN THIS DESIGN: needs your word (keep it here, move it, or drop it)'}`));
   lines.push('', 'On track, or not?');
   return lines.join('\n');
 }
@@ -71,16 +80,35 @@ export function askedSinceProblems(r, committed) {
     const problems = [];
     if (n.words !== a.words) problems.push(`asked item ${a.id} was reworded since the last commit: the owner's words never change`);
     if (n.when !== a.when || n.where !== a.where) problems.push(`asked item ${a.id}: when or where it was asked changed since the last commit`);
-    if (a.owner && JSON.stringify(n.owner) !== JSON.stringify(a.owner)) problems.push(`asked item ${a.id}: the owner's recorded word on it changed since the last commit (a word of theirs is never edited; a new word is a new entry in the prose, and the record keeps the one that stands)`);
+    if (a.owner && !laterWord(n.owner, a.owner)) problems.push(`asked item ${a.id}: the owner's recorded word on it was edited or taken away since the last commit (a later word of theirs replaces it; it is never edited in place)`);
     return problems;
   });
 }
 
 // the asks that hold the content: not dropped and not covered (no topics, or a topic no part covers)
+// an owner's word that stands may be replaced by a later word (a later date, other words), never edited in place or taken away
+const laterWord = (now, was) => !was || (now && now.date >= was.date && now.words !== was.words) || JSON.stringify(now) === JSON.stringify(was);
 export function unplacedAsks(r) {
   const covered = new Set((Array.isArray(r.parts) ? r.parts : []).flatMap(p => (p && Array.isArray(p.topics)) ? p.topics : []));
   return (Array.isArray(r.asked) ? r.asked : []).filter(a => a && !a.dropped && !(Array.isArray(a.kept) && a.kept.length && a.kept.every(t => covered.has(t))))
     .map(a => a.id + (a.owner ? ' (the owner said keep; no part covers it yet)' : a.kept ? ' (its topics are in no part yet)' : ' (undecided)'));
+}
+
+// approvals and tries are compared with the last commit the same way: cleared (an approval), or replaced by a later word, never edited
+export function ownerSinceProblems(r, committed) {
+  if (!committed) return [];
+  const problems = [];
+  ['goal', 'practice'].forEach(k => {
+    const was = committed.approved && committed.approved[k], now = r.approved && r.approved[k];
+    if (was && now && !laterWord(now, was)) problems.push(`approved.${k} was edited since the last commit: an approval is cleared (null) or replaced by the owner's later words, never edited`);
+  });
+  Object.entries(committed.tried || {}).forEach(([l, was]) => {
+    const now = r.tried && r.tried[l];
+    if (!now) { problems.push(`tried.${l} was taken away since the last commit: a try or review is replaced by a later one, never removed`); return; }
+    const same = JSON.stringify(now) === JSON.stringify(was);
+    if (!same && !(now.date >= was.date && (now.by !== was.by || now.fp !== was.fp || (now.by === 'owner' && now.words !== was.words) || (now.by === 'stand-in' && now.review !== was.review)))) problems.push(`tried.${l} was edited since the last commit: a later try or review replaces it, it is never edited in place`);
+  });
+  return problems;
 }
 
 /* ---------- gate 1 ---------- */
@@ -107,6 +135,7 @@ export function principleProblems(r, research) {
 
 // what each stage may open (SKILL.md, "What may be opened"); `opened` keeps one list per stage
 const RESEARCH_OK = /^(docs\/research\/|docs\/learning-science|https?:\/\/)/;
+const ASKS_OK = /^(chat\b|the brief|old-lessons:|docs\/|https?:\/\/|[^/\s]+\/[^/\s]+\.md\b)/;   // the owner's messages, briefs and course documents, the version they used
 const FORBIDDEN_EVERYWHERE = (id, p) => p.startsWith(`public/subjects/${id}/`) ? 'the subject\'s own lessons' : p.startsWith(`docs/learner-view/${id}-`) ? 'the subject\'s learner views'
   : p.startsWith(`docs/subjects/${id}/reviews/`) ? 'the subject\'s reviews' : (/^docs\/subjects\/([^/]+)\//.exec(p) || [])[1] && !p.startsWith(`docs/subjects/${id}/`) ? 'another subject\'s record' : p.startsWith('public/subjects/') ? 'another subject\'s lessons' : null;
 // the writer (gates 6 and 7) may open this record, the standard, the test subject for the data shape, this subject's own files, and this
@@ -119,15 +148,18 @@ export function openedProblems(id, r) {
   const notes = (Array.isArray(r.principles) ? r.principles : []).map(p => p && `docs/research/${p.note}.md`);
   const problems = [];
   [...o.asks, ...o.research, ...o.design].forEach(p => { const why = FORBIDDEN_EVERYWHERE(id, p); if (why) problems.push(`the designer opened ${why} before the gates were written: ${p}`); });
+  o.asks.filter(p => !ASKS_OK.test(p)).forEach(p => problems.push(`gate 0 opened ${p}, which is not one of the owner's messages, briefs or course documents, or the version they used (old-lessons:…)`));
   o.research.filter(p => !RESEARCH_OK.test(p)).forEach(p => problems.push(`gate 1 opened ${p}, which is not a research note, a source or the science document`));
   o.design.filter(p => !(p === `docs/subjects/${id}/design.md` || notes.includes(p) || p === 'docs/lesson-standard.md')).forEach(p => problems.push(`gates 2 to 5 opened ${p}; they may open only this record, the notes gate 1 cites and docs/lesson-standard.md`));
   o.writing.filter(p => !writingOk(id, p)).forEach(p => problems.push(`the writer opened ${p}; gates 6 and 7 may open only this record, the standard, the test subject, this subject's own files and its old material at the tag old-lessons`));
   if (Array.isArray(r.asked) && r.asked.length && o.asks.length === 0) problems.push('opened.asks is empty: the asks were written from sources (the owner\'s messages, briefs, course documents, the version they used), and those are listed');
   return problems;
 }
-// what was opened only grows: a path taken off a list after the fact hides a read
+// what was opened only grows: a path taken off a list after the fact hides a read. The one exception is a redesign: when `designedOn`
+// advances, gates 1 to 5 were run again, and the lists are the new pass's (the old pass's lists stay in the prose under History).
 export function openedSinceProblems(r, committed) {
   if (!committed || !committed.opened || typeof committed.opened !== 'object' || !r.opened || typeof r.opened !== 'object') return [];
+  if (isDate(r.designedOn) && (!committed.designedOn || r.designedOn > committed.designedOn)) return [];
   return ['asks', 'research', 'design', 'writing'].flatMap(k => (Array.isArray(committed.opened[k]) ? committed.opened[k] : []).filter(p => !(Array.isArray(r.opened[k]) && r.opened[k].includes(p))).map(p => `opened.${k} lost "${p}" since the last commit: what was opened is never un-opened`));
 }
 
@@ -189,7 +221,8 @@ export function blockProblems(r) {
   const checks = Object.fromEntries(parts.map(p => [p.id, p.check]));
   const principleIds = (Array.isArray(r.principles) ? r.principles : []).map(p => p && p.id);
   const cited = new Set(Object.values(blocks).flatMap(b => (b && Array.isArray(b.why)) ? b.why : []));
-  const problems = principleIds.filter(id => !cited.has(id)).map(id => `principle ${id} is cited by no lesson block: a principle that decides or supports nothing in a lesson is decoration (gate 1)`);
+  const settled = Boolean(r.approved && r.approved.practice);   // before the practice is approved the design is in flux: a new principle may wait for its block
+  const problems = settled ? principleIds.filter(id => !cited.has(id)).map(id => `principle ${id} is cited by no lesson block: a principle that decides or supports nothing in a lesson is decoration (gate 1)`) : [];
   const byPart = {};
   Object.entries(blocks).forEach(([id, b]) => {
     const where = `the block of lesson ${id}`;
@@ -212,12 +245,13 @@ export function designReviewProblems(r, reviews) {
   const d = r.designReview;
   if (d === null || d === undefined) return [];
   if (!d || typeof d !== 'object' || !isDate(d.date) || !isText(d.file, 1)) return ['designReview is neither null nor the date and file of the record\'s review'];
-  const verdict = reviews[d.file];
-  if (!verdict) return [`designReview names a review file that does not exist: ${d.file}`];
-  if (verdict === 'unreadable') return [`designReview: ${d.file} does not open with "Verdict: passes" or "Verdict: fails" and a "Reviewer:" line with a date`];
+  const rv = reviews[d.file];
+  if (!rv) return [`designReview names a review file that does not exist: ${d.file}`];
+  if (rv.verdict === 'unreadable') return [`designReview: ${d.file} does not open with "Verdict: passes" or "Verdict: fails", a "Reviewer:" line (who, which model, the date) and a "Reviewed:" line with the fingerprint of the design it reviewed`];
   return [];
 }
-export const designReviewed = (r, reviews) => Boolean(r.designReview) && reviews[r.designReview.file] === 'passes';
+// the record's review counts for the design it reviewed: its Reviewed fingerprint is the design's now
+export const designReviewed = (r, reviews) => Boolean(r.designReview) && Boolean(reviews[r.designReview.file]) && reviews[r.designReview.file].verdict === 'passes' && reviews[r.designReview.file].reviewed === designFingerprint(r);
 
 /* ---------- gates 6 and 7 ---------- */
 export function triedProblems(entry, where, reviews) {
@@ -232,19 +266,23 @@ export function triedProblems(entry, where, reviews) {
     if (!isDate(entry.date) || !isText(entry.review, 1)) return [`${where} is a stand-in review and needs a date and the review file`];
     const problems0 = fp;
     const problems = [...problems0, ...ownerWord(entry.waived, `${where}: waived (the owner's words for going on without their try)`)];
-    const verdict = reviews[entry.review];
-    if (!verdict) return [...problems, `${where} names a review file that does not exist: ${entry.review}`];
-    if (verdict === 'unreadable') problems.push(`${where}: ${entry.review} does not open with "Verdict: passes" or "Verdict: fails" and a "Reviewer:" line naming who reviewed and what they opened`);
+    const rv = reviews[entry.review];
+    if (!rv) return [...problems, `${where} names a review file that does not exist: ${entry.review}`];
+    if (rv.verdict === 'unreadable') problems.push(`${where}: ${entry.review} does not open with "Verdict: passes" or "Verdict: fails", a "Reviewer:" line (who, which model, the date) and a "Reviewed:" line with the fingerprint of the lesson it reviewed`);
+    else if (rv.reviewed !== entry.fp) problems.push(`${where}: the entry's fingerprint is not the one ${entry.review} says it reviewed (a review counts for the lesson it read)`);
+    if (!/^reviews\/[^/]+\.md$/.test(entry.review) || entry.review === 'reviews/design.md') problems.push(`${where}: a lesson's review is reviews/<lesson>.md, not ${entry.review}`);
     return problems;   // a review with a Disclosure is recorded as it is; it never passes (triedPasses), and a fresh reviewer runs it again
   }
   return [`${where} needs by: "owner" or "stand-in"`];
 }
 // a try or review passes for the lesson as it was tried: the entry's fingerprint is the lesson's now (a rewritten lesson is tried again)
 export const triedPasses = (entry, reviews, lessonFp) => Boolean(entry) && (lessonFp === undefined || entry.fp === lessonFp)
-  && (entry.by === 'owner' ? entry.passed === true : entry.by === 'stand-in' && reviews[entry.review] === 'passes');
+  && (entry.by === 'owner' ? entry.passed === true : entry.by === 'stand-in' && Boolean(reviews[entry.review]) && reviews[entry.review].verdict === 'passes' && reviews[entry.review].reviewed === entry.fp);
 export const lessonFp = (data, subjectId, lessonId) => data.subjects[subjectId] && data.subjects[subjectId].lessons[lessonId] ? lessonFingerprint(data, subjectId, lessonId) : undefined;
 export function triedShapeProblems(r, reviews) {
   if (!r.tried || typeof r.tried !== 'object' || Array.isArray(r.tried)) return ['the design record has no "tried" part (an object, one entry per lesson tried or reviewed)'];
   return Object.entries(r.tried).flatMap(([l, e]) => triedProblems(e, `tried.${l}`, reviews));
 }
 export const VERDICT_WORDS = VERDICTS;
+// designedOn: the date gates 1 to 5 were last run; a later date is a redesign
+export const designedOnProblems = r => r.designedOn === undefined ? ['the design record has no designedOn (the date gates 1 to 5 were last run)'] : isDate(r.designedOn) ? [] : ['designedOn is not a date'];

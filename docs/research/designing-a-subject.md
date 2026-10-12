@@ -17,7 +17,7 @@ to write Arabic numerals after Roman ones lost 40% of their raw score when the t
 *Educational Researcher* 16(8), 16–20; the studies are small doctoral experiments with children and immediate
 posttests). The other face of the same effect: in group-based mastery learning, effects on experimenter-made tests
 keyed to the objectives had a median of about +0.26, and on standardized tests about +0.04, "essentially zero"
-(Slavin, 1987, *RER* 57(2), 175–213). *Read: full text, Cohen pp. 16–17; Slavin abstract, pp. 175–177, the Table 1
+(Slavin, 1987, *RER* 57(2), 175–213). *Read: full: full text, Cohen pp. 16–17; Slavin abstract, pp. 175–177, the Table 1
 and Table 2 summaries and the section "Why are achievement effects of group-based mastery learning so modest?",
 2026-10-12.* Strength: moderate for the direction (old, small, school studies). **Design:** a check that repeats the
 practice items measures recall of those items; the end check and the gate 2 test must be new cases in the real form,
@@ -31,7 +31,7 @@ frameworks. The controlled evidence found is single courses: students in courses
 were more likely to report deep and less likely to report surface approaches (Wang, Su, Cheung, Wong & Kwong, 2013,
 *Assessment & Evaluation in Higher Education* 38(4), 477–491); a quasi-experiment and a before-after redesign reported
 better grades with no isolation of the cause. The research summaries for UbD are written by its author. No
-independent trial was found. *Read: Wang et al., abstract via search; UbD summary and the single-course studies,
+independent trial was found. *Read: abstract: Wang et al., abstract via search; UbD summary and the single-course studies,
 search summaries only; Wiggins & McTighe and Biggs, `rec`.* Strength: limited. **Design:** "start from the end result"
 rests on D1 and D9 (alignment and transfer), not on these frameworks. **Supports.**
 
@@ -44,7 +44,7 @@ Klein, 2008, *J. Educational Multimedia and Hypermedia* 17(2), 171–189); a six
 objectives against practice (Martin, Klein & Sullivan, 2007, *BJET* 38(4), 623–636). Objectives that name the
 information to be learned focus learning on it (Hamilton, 1985, *RER*, as quoted); in one dissertation the
 specificity of the object helped intentional learning and the specificity of the verb did nothing. The advance
-organiser and pretest evidence is in `learning-science.md` P1. *Read: Martin & Klein 2008 full text (abstract,
+organiser and pretest evidence is in `learning-science.md` P1. *Read: abstract: Martin & Klein 2008 full text (abstract,
 background, Results), 2026-10-12; Martin et al. 2007 abstract and literature review (OCR copy); Hamilton and the
 dissertation, `sec`.* Strength: limited to moderate. **Design:** the owner's paragraph is a design check for the owner
 (does this aim at the right thing), not a learning aid; the ban on "know, understand, recognize" in gate 2 is grounded
@@ -58,7 +58,7 @@ maths: active learning raised exam scores by g = 0.47 and cut failure from 33.8%
 time ranged from 10% to 100% and intensity could not be analysed (Freeman et al., 2014, *PNAS* 111(23), 8410–8415). In
 a crossover with 149 physics students, the active class gave 0.46 SD more learning and 0.56 SD less feeling of
 learning; perceived fluency of the lecturer predicted the feeling (Deslauriers et al., 2019, *PNAS* 116(39),
-19251–19257). *Read: full text on PMC (Freeman: Results, Methods, Discussion; Deslauriers: design, Table 3,
+19251–19257). *Read: full: full text on PMC (Freeman: Results, Methods, Discussion; Deslauriers: design, Table 3,
 interpretation), through a fetch that extracts the page, 2026-10-12.* Strength: strong for the direction (classroom,
 STEM, undergraduates); nothing on a phone app or on a best share. **Design:** most of a lesson is doing; no study
 sets the number, so `readingShare` (0.15 in scams) is a judgement call; and a learner's "it felt like a waste" or "I
@@ -73,7 +73,7 @@ examples, scaffolds or elicited explanation beat other instruction, d = 0.30 (un
 Brooks, Aldrich & Tenenbaum, 2011, *J. Educ. Psych.* 103(1), 1–18). For novices, studying worked examples "seems
 invariably superior" to solving the equivalent problems, and the advantage reverses only with expertise (Kirschner,
 Sweller & Clark, 2006, *Educational Psychologist* 41(2), 75–86, who also warn against assuming instruction should
-"exclusively focus on application"). *Read: full text, Alfieri, abstract and the moderator results for both analyses;
+"exclusively focus on application"). *Read: full: full text, Alfieri, abstract and the moderator results for both analyses;
 Kirschner et al., abstract, the worked-example section and Conclusions, 2026-10-12.* Strength: strong. **Design:** the
 practice of gate 3 starts with the real action shown done (a worked case in the real form), then completed, then done
 alone, with feedback; a worked example of the real action is part of the practice, not "reading" to be squeezed by
@@ -88,7 +88,7 @@ congruency nor elaborated retrieval 0.21, and the publication-bias-adjusted inte
 Problem-solving transfer was weak overall (d = 0.29, n.s.) but split: medical diagnosis and treatment, where practice
 and test scenarios were "essentially the same", d = 0.59; worked-example studies about 0.05. The authors' first
 principle: transfer is likeliest when the answers on practice and final tests are the same (Pan & Rickard, 2018,
-*Psychological Bulletin* 144(7), 710–756). *Read: full text, author copy (rickardlab.ucsd.edu): Abstract, Method
+*Psychological Bulletin* 144(7), 710–756). *Read: full: full text, author copy (rickardlab.ucsd.edu): Abstract, Method
 "Response congruency" with footnote 3, Results (single and simultaneous fits, PEESE), the problem-solving category,
 Discussion and "Potential Educational and Practical Implications", 2026-10-12.* Strength: moderate (cross-study
 moderator; mostly laboratory; the authors flag few category-learning studies). **Design:** this confirms the reading
@@ -106,7 +106,7 @@ on acquisition and transfer (Lim, Reiser & Olina, 2009, *ETR&D*). Merrill's firs
 activation, demonstration, application, integration) are a synthesis of design theories, not a tested model (Merrill,
 2002, *ETR&D* 50(3), 43–59); their support is correlational self-report: 140 students in 89 courses, strong
 correlations between perceived use of the principles, learning time and perceived mastery (Frick et al., 2009,
-*ETR&D* 57, 705–720). *Read: Costa et al., abstract via the repository record; Lim et al., abstract via a listing,
+*ETR&D* 57, 705–720). *Read: abstract: Costa et al., abstract via the repository record; Lim et al., abstract via a listing,
 `sec`; Merrill, `abs`; Frick et al., full text (abstract and Results), 2026-10-12.* Strength: moderate for whole-task
 design; limited for Merrill. **Design:** gate 4's parts are best practised as simpler versions of the whole real
 moment, not as isolated sub-skills taught first and joined at the end; this matches the skill's "each check is a
@@ -115,12 +115,12 @@ full texts not read: a judgement call.)
 
 **D8. "Deliberate practice" is not the model for a beginner's app.** Accumulated deliberate practice explained 26% of
 performance variance in games, 21% in music, 18% in sports, 4% in education and under 1% in professions (Macnamara,
-Hambrick & Oswald, 2014, *Psychological Science* 25(8), 1608–1618), and its definition is contested. *Read: abstract
+Hambrick & Oswald, 2014, *Psychological Science* 25(8), 1608–1618), and its definition is contested. *Read: abstract: abstract
 figures via search and a commentary by the same group, `sec`.* Strength: moderate that it explains less than claimed.
 **Design:** the practice of this app rests on retrieval, feedback and worked examples (D5, D6, `learning-science.md`
 P16 to P21), not on expert-performance research; the "doer effect" in online courseware (doing worth several times
 reading or watching; Koedinger et al., 2015, L@S, observational causal modelling, replicated by the vendor) points the
-same way. *Read: Koedinger, `sec`.* **Supports.**
+same way. *Read: summary: Koedinger, `sec`.* **Supports.**
 
 ### Trying it on a learner: the pilot and the stand-in
 
@@ -133,7 +133,7 @@ as well as learner data (Golas 1982); expert rankings of materials correlated ne
 (Rothkopf 1963) (all in Weston, 1986, *Canadian Journal of Educational Communication* 15(1), 5–17). A later controlled
 study separating tryout from revision: only versions revised with learner feedback improved learning, and the reviser
 mattered more than expected (Weston, Le Maistre, McAlpine & Bordonaro, 1997, *Instructional Science* 25, 369–386).
-*Read: Weston 1986 full text, pp. 5–8 and "Selection of learners", 2026-10-12 (the primary studies, `sec` through
+*Read: full: Weston 1986 full text, pp. 5–8 and "Selection of learners", 2026-10-12 (the primary studies, `sec` through
 it); Weston et al. 1997, abstract.* Strength: moderate that learner tryouts improve materials; limited on how many and
 which learners. **Design:** a pilot tried by someone who did not build it, before scale, caps the cost of a wrong
 design; the author or a subject expert is not that someone (also `learning-science.md` P27). **Decides:** gate 6
@@ -142,7 +142,7 @@ design; the author or a subject expert is not that someone (also `learning-scien
 **D10. One tryout finds a minority of the problems.** In usability testing, one user uncovers about 31% of the
 problems on average and five about 85%; Nielsen recommends several small rounds, retesting after each fix, and
 separate testers for different kinds of user (Nielsen, 2000, from Nielsen & Landauer, 1993). Heuristic review by
-experts missed about half of what watching users found, in compiled comparisons (`sec`). *Read: Nielsen's article in
+experts missed about half of what watching users found, in compiled comparisons (`sec`). *Read: full: Nielsen's article in
 full, 2026-10-12; the 1993 model paper and the compilations, `sec`.* Strength: limited (software interfaces, not
 lessons). **Design:** a single pass is a floor, not proof; fixes are re-checked by a fresh tryer (as the skill does),
 and two tryers who differ (D9's mixed aptitude) find more than one. **Supports.** (Would decide two stand-in reviews per
@@ -157,7 +157,7 @@ inconsistent (Martynova et al., 2025, BEA). A position paper names the "competen
 act partly knowing) and reports no test of its own (Yuan et al., 2026, arXiv 2601.05473). As judges, models agree with
 people about 80% of the time on chat preferences, with position, length and self-enhancement biases (Zheng et al.,
 2023, arXiv 2306.05685), and they recognise and favour their own writing (Panickssery, Bowman & Feng, 2024, NeurIPS).
-*Read: Yuan et al. full text (html, through a fetch); the others abstracts, 2026-10-12.* Strength: limited, recent,
+*Read: full: Yuan et al. full text (html, through a fetch); the others abstracts, 2026-10-12.* Strength: limited, recent,
 mostly preprints. **Design:** the stand-in is closest to an expert review with a checklist (D9's Golas: guideline-based
 revision helped), not a learner tryout. Its "before" (what I can do now) is the least valid part, so a "Gain: yes"
 from it is weak; it is most useful for defects it can show (a step the lesson never taught, a key that contradicts
@@ -172,7 +172,7 @@ tests either: a judgement call.)
 Barnett and Ceci's nine dimensions (domain, physical, temporal, functional, social context, modality and three of
 content) make "near" and "far" measurable and show far transfer is rare but conditional (2002, *Psych. Bulletin*
 128(4), 612–637); training general skills (chess, music, working memory) shows small effects that shrink with better
-designs (Sala & Gobet, 2017). *Read: abstracts, as in `learning-science.md` P25.* Strength: strong. **Design:** gate
+designs (Sala & Gobet, 2017). *Read: abstract: abstracts, as in `learning-science.md` P25.* Strength: strong. **Design:** gate
 2's real moment names the context dimensions (where, when, on what device, under what pressure), and the test sits in
 them; no subject promises general thinking. **Supports.** (The skill already does this; the taxonomy is a checklist
 for writing `realMoment`, not a finding that decides a different gate.)
@@ -184,7 +184,7 @@ asked for in instruction.** 87 empirical studies of user involvement in software
 12 found harm, 23 were unclear; the relation is "neither direct nor binary" (Bano & Zowghi, 2015, *Information and
 Software Technology* 58, 148–169). Choice raises motivation and effort (Patall et al., 2008, in `learning-science.md`
 P28). No study was found on learner- or client-set content against designer-set content in instructional design, on
-needs analysis improving outcomes, or on scope creep against dropped requirements. *Read: Bano & Zowghi abstract
+needs analysis improving outcomes, or on scope creep against dropped requirements. *Read: abstract: Bano & Zowghi abstract
 via search; Patall, `abs`.* Strength: limited, indirect. **Design:** gate 0 rests on the owner's standing and on the
 one-learner situation (the owner is the client and the learner), not on evidence. **Supports.**
 
@@ -197,7 +197,7 @@ features (Jansson & Smith; Perttula & Sipilä 2007) or to diverge from it (Smith
 named negative features removed it in one study (Chrysikou & Weisberg 2005). Experts may fixate more than novices
 (Kim & Ryu 2014). The 25 experiments vary widely in method, and part of "fixation" may be designers adopting an
 existing solution because it seems to meet the requirements (Vasconcelos & Crilly, 2016, *Design Studies* 42, 1–32).
-*Read: Vasconcelos & Crilly full text, section 1, section 2.2.4 "Instructions for reproduction" and the discussion of
+*Read: full: Vasconcelos & Crilly full text, section 1, section 2.2.4 "Instructions for reproduction" and the discussion of
 explanations, 2026-10-12; the primary studies through it, `sec`.* Strength: moderate (short idea-generation tasks,
 mostly students). **Design:** reading the old lessons with a warning not to copy them is not equivalent to not
 reading them; the existing content is opened only after the design is written. The same finding says why gate 0 is
@@ -211,7 +211,7 @@ evaluations: positive effects on examinations, larger for weaker students; self-
 in college (Kulik, Kulik & Bangert-Drowns, 1990, *RER* 60(2), 265–299). Group-based mastery in schools: modest effects
 on its own tests, none on standardized ones (D1). Criteria are "usually in the range of 80–90%" (Slavin, 1987); 95%
 gave higher achievement and worse attitudes than 85% (Block, 1971, as reported); a dissertation found 90% no better
-than 80%. *Read: Kulik abstract; Slavin full text as in D1; Block and the dissertation, `sec`.* Strength: moderate for
+than 80%. *Read: abstract: Kulik abstract; Slavin full text as in D1; Block and the dissertation, `sec`.* Strength: moderate for
 mastery, limited for any number. **Design:** "8 of 10" or "four of five notes" is a starting value tuned on data;
 the check's form (D6) matters more than its threshold; a hard gate risks dropout (`learning-science.md` P17, P28).
 Returns after a lesson are in `review-after-lessons.md` (R1 to R9), not repeated here. **Supports.**
@@ -225,7 +225,7 @@ knowledge, a well-designed problem, groups, older learners; Sinha & Kapur, *RER*
 phone does not meet; *read: press summaries only*. Stating objectives in place of practice (D3). Judging a lesson by
 how it feels, the learner's or the builder's (D4, D11). Training general thinking (D12). Long explanations before the
 first try have no direct test against short ones; what the evidence supports is explanation that is complete but
-followed at once by guided practice (D5, `learning-science.md` section 5). Strength: as cited. *Read: the sources as the notes cited read them; no source of its own.* **Supports.**
+followed at once by guided practice (D5, `learning-science.md` section 5). Strength: as cited. *Read: summary: the sources as the notes cited read them; no source of its own.* **Supports.**
 
 ## What the evidence does not settle
 

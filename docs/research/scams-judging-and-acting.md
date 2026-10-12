@@ -15,7 +15,7 @@ rate of 44% and a false-alarm rate of 24%). On the behavior task people were cau
 (response bias c -0.54, against +0.32 for detection), but their sensitivity was lower (d' 0.39; a miss rate of 28% and a
 false-alarm rate of 61%). The two tasks were correlated, not separable (r = .61 for sensitivity). The authors' reading:
 users have learned what to do about phishing, but not when to do it (Canfield, Fischhoff & Davis, 2016, *Human Factors*,
-doi 10.1177/0018720816665025). *Read: full text, author manuscript, Results (pp. 15-16) and General Discussion
+doi 10.1177/0018720816665025). *Read: full: full text, author manuscript, Results (pp. 15-16) and General Discussion
 (pp. 25-26), 2026-10-12.* **Design:** practice and test the decision the learner will take (act, check first, ignore),
 not a "scam or real" label; since looking at a message does not reliably tell the learner what it is, the action that
 protects is the same whatever the message looks like: check through your own channel. *(Corrected 2026-10-12 against
@@ -28,7 +28,7 @@ detect fakes and check only what looks wrong.
 with 21 IT experts about phishing they caught in their own inbox: they try to fit the message into their life, notice
 small discrepancies, and a feature of the message, usually a request to act such as a link, makes phishing a plausible
 explanation; only then do they investigate and resolve (Wash, 2020, *PACM HCI* CSCW). A survey of 297 ordinary users
-found the same broad process (Wash, Nthala & Rader, 2021, SOUPS). *Read: summaries of both.* **Design:** the trigger the
+found the same broad process (Wash, Nthala & Rader, 2021, SOUPS). *Read: summary: summaries of both.* **Design:** the trigger the
 learner trains on is the request ("what does this want me to do?") and whether it fits what they were expecting; the
 experts' technical investigation is replaced for a lay learner by checking through their own channel. **Supports.**
 
@@ -43,7 +43,7 @@ selection (Ho, Mirian, Luo et al., 2025, IEEE S&P). A 15-month study of more tha
 training did not make people more resilient and may have had side effects (Lain, Kostiainen & Čapkun, 2022, IEEE S&P).
 A follow-up found the small effect comes mainly from the periodic reminder, not the content, which is rarely consumed,
 and concluded phishing is "an attention problem, rather than a knowledge one" (Lain et al., CCS 2024, arXiv 2409.01378).
-*Read: full text, Ho et al. §4.2, §5.2 and §6 (engagement), and Lain et al. 2024 abstract and §8, 2026-10-12; Lain
+*Read: abstract: full text, Ho et al. §4.2, §5.2 and §6 (engagement), and Lain et al. 2024 abstract and §8, 2026-10-12; Lain
 2022 abstract only.* **Design:** reading about scams is close to worthless; time goes to deciding on real-looking
 messages, and the reminders (returns) are part of the treatment, not an add-on. *(Corrected 2026-10-12 against the full
 text: "about a third closed it at once" is 37 to 51% of sessions; "more than half had clicked" is over 56% at any point in
@@ -53,7 +53,7 @@ short screens of reading) and the returns over weeks as part of the treatment, i
 **SC4. Habit and autopilot lower suspicion, and training effects fade as habits take over.** In the Suspicion, Cognition
 and Automaticity Model, tested in two phishing experiments, habitual email handling predicted falling for phish beyond
 what people knew; the authors argue cue-spotting training addresses only one cause (Vishwanath, Harrison & Ng, 2016,
-*Communication Research*, doi 10.1177/0093650215627483). *Read: university summary and abstract.* **Design:** the check
+*Communication Research*, doi 10.1177/0093650215627483). *Read: abstract: university summary and abstract.* **Design:** the check
 must become the habitual response to a cue (a request for money, a login, a code), practiced fast and often, not a
 deliberate analysis the learner must remember to start. **Supports.**
 
@@ -61,7 +61,7 @@ deliberate analysis the learner must remember to start. **Supports.**
 put into high-arousal positive, high-arousal negative or calm states: both high-arousal states raised intent to buy
 falsely advertised products, in those who actually became aroused; the authors suggest postponing decisions until calm
 (Kircanski et al., 2018, *Psychology and Aging*, doi 10.1037/pag0000228). Attending to visceral cues in a phishing email
-reduced attention to deception cues (Wang et al., 2012, cited there). *Read: abstract and PMC summary.* **Design:** the
+reduced attention to deception cues (Wang et al., 2012, cited there). *Read: abstract: abstract and PMC summary.* **Design:** the
 taught move is to delay (hang up, close, call back later); practice includes urgent, frightening and exciting messages
 and live exchanges that push. **Supports.**
 
@@ -69,7 +69,7 @@ and live exchanges that push. **Supports.**
 training on how to allocate attention, notice context and hold off judgment cut responses to a later simulated phish to
 7.5% against 13.4% for added rule-based training; format (text or text plus graphics) made no difference (Jensen,
 Dinger, Wright & Thatcher, 2017, *JMIS* 34(2)). A follow-up with 453 students found better discrimination of legitimate
-from phishing emails (Nguyen, Jensen et al.). *Read: abstract and secondary summary.* **Design:** teach one short
+from phishing emails (Nguyen, Jensen et al.). *Read: abstract: abstract and secondary summary.* **Design:** teach one short
 routine of attention (what does it want; was I expecting it; how would I check it myself), not a list of red flags.
 **Supports** (would decide the one short routine in place of a list of red flags; full text not reachable 2026-10-12: a
 judgement call).
@@ -77,15 +77,14 @@ judgement call).
 **SC7. Active exposure to weakened scam tactics improves discernment and holds for weeks.** 3,000 adults in India,
 randomized: a 15-minute game exposing players to weakened scam tactics improved scam discernment more than videos and
 tips and more than a control game, and the gain held at 21 days; both the game and the videos at first made people more
-skeptical of genuine offers, which faded by day 21 (ShieldUp!, Google, 2025 preprint, arXiv 2503.12341). *Read:
-abstract.* Technique-based inoculation against misinformation transfers to new items using the same technique, with a
+skeptical of genuine offers, which faded by day 21 (ShieldUp!, Google, 2025 preprint, arXiv 2503.12341). *Read: abstract: abstract.* Technique-based inoculation against misinformation transfers to new items using the same technique, with a
 smaller effect for techniques not covered (Roozenbeek and colleagues, summarized). **Design:** the learner meets the
 pressure tactics in action, inside realistic exchanges, and the practice always contains genuine messages. **Supports.**
 
 **SC8. Fraud education must protect discrimination, not raise blanket suspicion; without a reminder it fades.** See
 `docs/learning-science.md` P26 (Burke et al., 2022: effect gone by six months without a reminder, kept with one at three
 months; text-only worse for the least sophisticated). A small pre-post study found brief phishing training raised
-false alarms on legitimate emails (poster, 31 participants; weak). *Read: Burke et al. in full (working-paper version),
+false alarms on legitimate emails (poster, 31 participants; weak). *Read: full: Burke et al. in full (working-paper version),
 as P26 records it; the poster, summary only.* **Design:** real messages are about half of every
 practice set; scoring treats "check first" on a real message as safe and acting on a scam as the failure; returns at
 weeks to months. **Supports.**
@@ -93,7 +92,7 @@ weeks to months. **Supports.**
 **SC9. If-then plans help held goals with a clear cue; nothing tests them on phishing.** See P26 (Gollwitzer & Sheeran
 2006; Sheeran, Listrom & Gollwitzer 2025). A search found no trial of if-then plans against phishing clicks. Plans can
 make responses fast but less flexible, which suits a rule ("a request for a code means I hang up") better than a
-judgement. *Read: abstracts and secondary summaries.* **Design:** one plan, cued by the request, rehearsed in practice;
+judgement. *Read: abstract: abstracts and secondary summaries.* **Design:** one plan, cued by the request, rehearsed in practice;
 never a substitute for practice. **Supports.**
 
 **General findings used** (`docs/research/review-after-lessons.md`): practice in the form of real use (R8, Pan & Rickard

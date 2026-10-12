@@ -24,6 +24,8 @@ async function main([subject, field, ...rest]) {
   const word = ownerWordFrom(rest);
   if (!word) throw new Error('an approval needs --words "<the owner\'s reply, quoted>" and --where "<where they said it>"');
   const { rest: _, ...w } = word;
+  const was = record.approved && record.approved[field];
+  if (was && was.words.trim().toLowerCase() === w.words.trim().toLowerCase()) throw new Error(`"${w.words}" is already the owner's word on the ${field} (${was.date}); a new approval needs their new words on the screen as it is now`);
   const entry = { ...w, fp: fingerprint(approvedText(record, field)), ...(field === 'goal' ? { shown: dropsToShow(record).map(d => d.id) } : {}) };
   await writeRecord(subject, { ...record, approved: { ...record.approved, [field]: entry } }, prose);
   console.log(`${subject}: ${field} approved on ${entry.date}, "${entry.words}" (${entry.where})${field === 'goal' ? `; shown as dropped: ${entry.shown.join(', ') || 'nothing'}` : ''}`);

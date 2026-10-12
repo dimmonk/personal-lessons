@@ -16,7 +16,7 @@ auditory imagery on a self-report scale, not to pitch discrimination; correlatio
 *Psychonomic Bulletin & Review*). Range
 matters: in Experiment 2 the errors of poor-pitch singers grew with the distance of the target from their own comfort
 pitch, and they drifted back toward it, though their vocal sweeps spanned nearly an octave; in Experiment 1 one poor-pitch
-singer no longer sang off pitch when the model voice matched her gender (a single case). *Read: full text, Pfordresher &
+singer no longer sang off pitch when the model voice matched her gender (a single case). *Read: full: full text, Pfordresher &
 Brown 2007, Experiment 2 and its discussion (pp. 14-17) and the general discussion; Pfordresher & Halpern 2013 in full,
 2026-10-12.* **Decides:** the range is found first (part 1) and every target in every part sits inside it, rather than
 fixed notes for everyone; melodies are practiced, not only single notes.
@@ -30,7 +30,7 @@ no-line group also improved, though not more than the control. The advantage was
 single notes (Berglin, Pfordresher & Demorest, 2022, *Psychology of Music*; the authors call the effects highly variable
 and the study short, with no delayed test). Beginners gain more than advanced singers (Wilson et al., 2005), and a live
 display without a right/wrong result did not help (Welch, 1984); both are known here through a later paper's summary
-(Blanco et al., 2021, *Frontiers in Psychology*), not read in full. *Read: full text (author manuscript), Berglin et al.
+(Blanco et al., 2021, *Frontiers in Psychology*), not read in full. *Read: full: full text (author manuscript), Berglin et al.
 2022, Method, Results and Discussion (pp. 6-21), 2026-10-12.* **Decides:** the pitch line is shown against the target
 while singing (it is the delivery's first capability), and melodies of three to five notes are the centre of the
 practice.
@@ -43,7 +43,7 @@ of a visual display that becomes the task itself, and several studies with sound
 Stapleton & Rodger, 2017, *Psychological Research*, Introduction and Discussion). In singing, as reported by a later
 paper, removing a live display dropped the experimental group back to the control group's level (Paney & Tharp, 2019); and
 Welch's studies found the opposite pattern, a worse score while the display was on and a better one later (Welch et al.,
-1989). *Read: full text, Dyer et al. 2017; Salmoni et al. 1984 and the singing studies through citing papers only (Dyer;
+1989). *Read: full: full text, Dyer et al. 2017; Salmoni et al. 1984 and the singing studies through citing papers only (Dyer;
 Blanco et al. 2021), 2026-10-12.* **Supports** (would decide the exercise shape "the line, then the same target with the
 line hidden"; full text of the primary papers not reachable 2026-10-12: a judgement call). The lesson's end check is without
 the line because the real moment has no line (gate 2), not because of this finding.
@@ -54,18 +54,18 @@ Chua, Jimenez-Diaz, Lewthwaite, Kim & Wulf, 2021, *Psychological Bulletin*), wit
 cautions found in the full text and after: the funnel plot and Egger test showed small-study effects, and a re-analysis
 that models publication bias (McKay et al., accepted at *Psychological Bulletin*) puts the corrected effects near zero
 (retention g = 0.15) and says the data favour no effect. The musical studies in the set are on instruments, not the voice.
-*Read: full text, Chua et al. 2021, Results (pp. 8-11) and Limitations; abstract and opening pages of McKay et al.,
+*Read: full: full text, Chua et al. 2021, Results (pp. 8-11) and Limitations; abstract and opening pages of McKay et al.,
 2026-10-12.* **Supports.** Writing instructions about the sound costs nothing and is natural for a pitch target, so it
 would not change if the finding were false.
 
 **S5. Straw and humming exercises reduce effort; evidence is from voice therapy.** Semi-occluded vocal tract exercises
 (straw phonation, humming, lip trills) lower the pressure needed to start the voice and the felt effort, and effects hold
 with regular practice (integrative and systematic reviews, 2024-2025, mostly in people with voice disorders). Not tested as
-a warm-up for singers. *Read: summaries.* **Design:** a short straw or hum warm-up is reasonable and low risk; it is not
+a warm-up for singers. *Read: summary: summaries.* **Design:** a short straw or hum warm-up is reasonable and low risk; it is not
 claimed to make anyone sing better. **Supports.**
 
 **S6. Spaced, short, regular practice** (general evidence: `docs/research/review-after-lessons.md`, R1-R6). **Design:** short
-daily sessions; the weekly review for Singing is singing, not questions. *Read: the notes cited; no source of its own.* **Supports.**
+daily sessions; the weekly review for Singing is singing, not questions. *Read: summary: the notes cited; no source of its own.* **Supports.**
 
 ## What the evidence does not settle
 - No controlled study was found of a months-long program for adult beginners with pitch accuracy as the outcome. The

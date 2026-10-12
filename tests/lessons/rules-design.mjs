@@ -8,7 +8,8 @@
 import { siteRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { GATE_FIELDS, LEARNING_KINDS, askedProblems, askedSinceProblems, unplacedAsks, principleProblems, openedProblems, openedSinceProblems, goalProblems,
-  practiceProblems, approvalProblems, partProblems, blockProblems, uncoveredTopics, designReviewProblems, designReviewed, triedShapeProblems, triedPasses, lessonFp, isText } from './design-shape.mjs';
+  practiceProblems, approvalProblems, partProblems, blockProblems, uncoveredTopics, designReviewProblems, designReviewed, triedShapeProblems, triedPasses, lessonFp, isText,
+  ownerSinceProblems, designedOnProblems } from './design-shape.mjs';
 export { LEARNING_KINDS, triedPasses } from './design-shape.mjs';
 export { READ_LEVELS } from './designs.mjs';
 
@@ -47,7 +48,7 @@ function recordProblems(id, r, research, reviews, built) {
   problems.push(...approvalProblems(r));
   if (reached >= 4) problems.push(...partProblems(r));
   if (reached >= 5) problems.push(...blockProblems(r));
-  problems.push(...designReviewProblems(r, reviews), ...triedShapeProblems(r, reviews));
+  problems.push(...designedOnProblems(r), ...designReviewProblems(r, reviews), ...triedShapeProblems(r, reviews));
   return problems;
 }
 
@@ -120,7 +121,7 @@ export const V69 = siteRule('V69', (input, check) => {
   for (const id of ids) {
     const r = designs[id], reviews = allReviews[id] || {}, built = id in input.data.subjects, c = committedDesigns[id];
     if (!r && c && !built) { checkEach(check, id, ['the design record was deleted since the last commit: a record is never removed (its asks are the owner\'s)']); continue; }
-    const shape = [...recordProblems(id, r, research, reviews, built), ...(r && !r.error ? [...askedSinceProblems(r, c), ...openedSinceProblems(r, c), ...(built ? designSinceProblems(r, c) : [])] : [])];
+    const shape = [...recordProblems(id, r, research, reviews, built), ...(r && !r.error ? [...askedSinceProblems(r, c), ...openedSinceProblems(r, c), ...ownerSinceProblems(r, c), ...(built ? designSinceProblems(r, c) : [])] : [])];
     checkEach(check, id, shape.length ? shape : built ? gateProblems(input.data, id, r, input.committedLock, reviews) : []);
   }
   checkEach(check, 'approvals', blanketProblems(designs));

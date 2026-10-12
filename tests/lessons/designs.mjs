@@ -11,7 +11,8 @@ export const REVIEWS_DIR = 'reviews';
 export const VERDICTS = ['passes', 'fails'];
 export const READ_LEVELS = ['full', 'abstract', 'summary'];
 const VERDICT_LINE = /^Verdict: (passes|fails)\s*$/;
-const REVIEWER_LINE = /^Reviewer: .+\d{4}-\d\d-\d\d/m;   // who, which model, the date
+const REVIEWER_LINE = /^Reviewer: [^\n]*\([^)]+\)[^\n]*\d{4}-\d\d-\d\d/m;   // who (which model), the date
+const REVIEWED_LINE = /^Reviewed: (sha256:[0-9a-f]{64})\s*$/m;              // the fingerprint of what was reviewed
 const DISCLOSURE_LINE = /^Disclosure: /m;
 // a finding opens a paragraph as **SC1. …** or **R2. …**
 const FINDING = /^\*\*([A-Z]{1,3}\d{1,2})\./gm;
@@ -26,29 +27,24 @@ export function parseRecord(text) {
   catch (error) { return { error: `its opening part is not JSON (${error.message})` }; }
 }
 
-// What a review file says: its verdict ('passes' or 'fails'), or why it cannot count: 'unreadable' (no verdict line, or no Reviewer line
-// naming who reviewed and what they opened), 'disclosed' (the reviewer saw the record, the block or the evidence, so the review runs again).
+// What a review file says: its verdict ('passes' or 'fails'), or why it cannot count: 'unreadable' (no verdict line, no Reviewer line naming
+// who (which model) and the date, or no Reviewed line with the fingerprint of what it reviewed), 'disclosed' (the reviewer saw the record,
+// the block or the evidence, so the review runs again). `reviewed` is that fingerprint: a review counts for that version only.
 export function reviewVerdict(text) {
-  const m = text.split('\n')[0].match(VERDICT_LINE);
-  if (!m || !REVIEWER_LINE.test(text)) return 'unreadable';
-  if (DISCLOSURE_LINE.test(text)) return 'disclosed';
-  return m[1];
+  const m = text.split('\n')[0].match(VERDICT_LINE), fp = text.match(REVIEWED_LINE);
+  if (!m || !REVIEWER_LINE.test(text) || !fp) return { verdict: 'unreadable', reviewed: fp ? fp[1] : null };
+  return { verdict: DISCLOSURE_LINE.test(text) ? 'disclosed' : m[1], reviewed: fp[1] };
 }
 
 export const findingIds = text => [...text.matchAll(FINDING)].map(m => m[1]);
 
-// how far a finding was read, from its "*Read: …*" line. The clause before the first semicolon says how the finding's own source was
-// read; companions come after it. Within that clause the weakest source named sets the level (a finding whose own clause names a full
-// text and an abstract was read as an abstract); 'summary' when it names neither a full text nor an abstract.
+// how far a finding was read, stated on its "*Read: <level>: …*" line: the level is the first word, full, abstract or summary, said by the
+// author, never inferred (a section named Abstract inside a full text is not an abstract read). A Read line without the level reads as
+// 'summary' (the weakest), so an unstated level never overstates.
 export function readLevel(paragraph) {
-  const m = paragraph.match(/\*Read:([^*]*)\*/);
-  if (!m) return null;
-  const s = m[1].replace(/\s+/g, ' ').split(';')[0].toLowerCase();
-  const full = /full text|full-text|manuscript|read in full|in full/.test(s), abstract = /abstract/.test(s);
-  const summary = /summar|press release|review of|secondary|record only|record page|wwc page|not reach|unreachable|not reachable/.test(s);
-  if (summary) return 'summary';
-  if (abstract) return 'abstract';
-  return full ? 'full' : 'summary';
+  const m = paragraph.match(/\*Read:\s*(full|abstract|summary):/i);
+  if (m) return m[1].toLowerCase();
+  return /\*Read:/.test(paragraph) ? 'summary' : null;
 }
 
 // { ids, marks: { [id]: { decides: true | false | null, read: level | null } } } for one note: a finding's paragraph runs to the next finding
@@ -84,10 +80,14 @@ export async function collectDesigns(designsDir) {
   return out;
 }
 
-// The records as committed at HEAD: { [id]: record } for every record that was committed and parses; a record never committed is absent.
+// The records as committed at HEAD, listed from git itself (a record whose folder was deleted is still here): { [id]: record } for every
+// record that was committed and parses; a record never committed is absent.
 export async function collectCommittedDesigns(designsDir) {
   const out = {};
-  for (const id of await subjectDirs(designsDir)) {
+  let names;
+  try { names = execFileSync('git', ['ls-tree', '--name-only', 'HEAD', './'], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString().split('\n').filter(Boolean).map(n => n.replace(/\/$/, '')); }
+  catch { return out; }
+  for (const id of names) {
     let text;
     try { text = execFileSync('git', ['show', `HEAD:./${id}/${RECORD_FILE}`], { cwd: designsDir, stdio: ['ignore', 'pipe', 'pipe'] }).toString(); }
     catch { continue; }
@@ -97,7 +97,7 @@ export async function collectCommittedDesigns(designsDir) {
   return out;
 }
 
-// { [subjectId]: { 'reviews/l3.md': 'passes' | 'fails' | 'disclosed' | 'unreadable' } }
+// { [subjectId]: { 'reviews/l3.md': { verdict: 'passes' | 'fails' | 'disclosed' | 'unreadable', reviewed: fingerprint | null } } }
 export async function collectReviews(designsDir) {
   const out = {};
   for (const id of await subjectDirs(designsDir)) {

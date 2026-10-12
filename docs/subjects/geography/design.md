@@ -46,7 +46,9 @@
         "words": "the world first",
         "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
-      "kept": null,
+      "kept": [
+        "the world first: the continents, the oceans and the big regions, on one map"
+      ],
       "dropped": false
     },
     {
@@ -59,7 +61,9 @@
         "words": "flags as a third form of each country",
         "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
-      "kept": null,
+      "kept": [
+        "each country's flag, as a third form of it beside its name and its place"
+      ],
       "dropped": false
     },
     {
@@ -72,7 +76,9 @@
         "words": "one line of what the country is",
         "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
       },
-      "kept": null,
+      "kept": [
+        "one line of what each country is, in the feedback when you place it"
+      ],
       "dropped": false
     }
   ],
@@ -177,6 +183,7 @@
   "realMoment": "A place named in a news story, in a conversation or in a travel plan, with no map in sight; a map on the phone that shows where you are but not what the named place is near.",
   "test": "Placing: 40 names drawn at random from every list of the subject (states, cities, countries, seas, rivers, mountain ranges), each tapped on a map with no names on it; at least 34 of 40 in the right place. Naming: 10 places lit on the blank map, named from memory by typing; at least 8 of 10. Both on two sittings at least a week apart. Judging: 10 places never practised, given as a story gives them (\"a town in Oaxaca\", \"the port of Mombasa, Kenya\"), placed by region on the blank map; at least 8 of 10. Distance: 10 pairs of places, the distance band and the travel-time band right for at least 8.",
   "out": "Map reading on the ground (the phone's map turns itself and finds you); outlines, populations, economies and climate; capitals of countries other than the ones the news uses as the government's name (Ottawa, Mexico City, Brussels, Beijing, Moscow, and the ones on each region's list); the geography of other planets, of the oceans' depths and of history (old borders, old names); navigation with a compass; towns under a quarter of a million people unless the news names them; the geography of the learner's own town. Canada's provinces are in (part 9) because the learner's own country is the one they will be asked about most.",
+  "designedOn": "2026-10-12",
   "approved": {
     "goal": null,
     "practice": null

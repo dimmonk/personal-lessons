@@ -13,13 +13,13 @@ Illustrative examples improved learning of declarative concepts (abstract concep
 definition), measured two days later by classifying new examples (Rawson, Thomas & Jacoby, 2015, *Educational
 Psychology Review* 27). Studying provided examples gave more long-term learning per minute than generating them or other
 example techniques (Zamary & Rawson, 2016); practice focused on examples beat practice focused on definitions for
-applying the concepts (Wissman, Zamary, Rawson & Dunlosky, 2023). *Read: search summaries of the papers and later
+applying the concepts (Wissman, Zamary, Rawson & Dunlosky, 2023). *Read: summary: search summaries of the papers and later
 citations, not the papers.* **Design:** each label is a short list of what it requires plus several provided examples,
 and practice is judging new examples, not restating definitions. **Supports.**
 
 **L2. Ordinary readers hold a different meaning for the most-thrown label.** Asked what socialism means, Americans in
 2018 most often said equality (23%), then government ownership or control (17%, down from 34% in 1949), then benefits
-and services such as free medicine (10%); 23% had no opinion (Gallup, 2018). *Read: full text, the article and its table of open-ended answers, 2026-10-12.* Gallup's data show that readers hold
+and services such as free medicine (10%); 23% had no opinion (Gallup, 2018). *Read: full: full text, the article and its table of open-ended answers, 2026-10-12.* Gallup's data show that readers hold
 a different meaning, not that the welfare reading is the commonest: equality was first, benefits and services third, and
 only 17% gave the public-ownership meaning the lesson tests.
 **Design:** the welfare-state reading of "socialist" is the wrong idea lesson 2 opens on (P29; a judgement call, since
@@ -30,7 +30,7 @@ welfare-versus-ownership line; if readers already took "socialist" to mean publi
 **L3. Party cues override content.** Liberal and conservative students judged a welfare policy by the position of their
 own party rather than by its content, even against their own ideology; the cue changed how they saw the policy's facts
 and morals, and they denied being swayed while expecting the other side to be (Cohen, 2003, *JPSP* 85(5), four
-studies). *Read: summaries and the abstract.* **Design:** practice separates the quoted words from who said them and
+studies). *Read: abstract: summaries and the abstract.* **Design:** practice separates the quoted words from who said them and
 from the commentary around them; later items put party cues back so the learner meets the pull in practice; the
 the learner sees their own accuracy on labels thrown from each side (P23 requires 3). **Supports** (would decide the
 party-cue items from lesson 4 on and the per-side results; full text not reachable 2026-10-12: a judgement call).
@@ -38,7 +38,7 @@ party-cue items from lesson 4 on and the per-side results; full text not reachab
 **L4. A "too little to tell" answer and a reason to be accurate shrink partisan answers.** Small payments for correct
 answers and for "don't know" cut partisan gaps in factual answers by roughly half (Bullock, Gerber, Hill & Huber, 2015,
 *QJPS* 10(4)); part of the gap is people answering for their side rather than from what they know. A later study found
-incentives can raise bias in other judgments (*Political Behavior*, 2017). *Read: abstract and summaries.* **Design:**
+incentives can raise bias in other judgments (*Political Behavior*, 2017). *Read: abstract: abstract and summaries.* **Design:**
 "too little to tell" is always an answer and is scored right when right; the score, not the side, is what the item asks for. **Supports.**
 
 **L5. Experts disagree, and simple schemes are coded more reliably.** Trained coders of party manifestos misclassified
@@ -46,7 +46,7 @@ text substantially and systematically against the project's own master codings; 
 scheme (Mikhaylov, Laver & Benoit, 2012, *Political Analysis* 20(1)). Non-experts given short instructions placed
 political sentences as reliably as experts once their answers were pooled (Benoit, Conway, Lauderdale, Laver &
 Mikhaylov, 2016, *APSR* 110(2)). Speech coders for populism are trained with a rubric and anchor speeches of fixed score
-and asked for a holistic grade with quoted passages (Hawkins, Global Populism Database appendix). *Read: abstracts and
+and asked for a holistic grade with quoted passages (Hawkins, Global Populism Database appendix). *Read: abstract: abstracts and
 the appendix summary.* **Design:** few requirements per label; anchor examples for each; the learner quotes (taps) the
 deciding words; items whose answer experts would argue over are not scored as right or wrong. **Supports.**
 
@@ -54,7 +54,7 @@ deciding words; items whose answer experts would argue over are not scored as ri
 a corrupt elite, with politics as the people's general will; it says little about what world is wanted, so it rides on
 a host ideology (socialism on the left, nativism on the right) (Mudde, 2004, *Government and Opposition* 39(4); restated
 in Mudde, 2021, *Government and Opposition* 56(4), 577-597, which says almost all successful populists combine populism
-with a host ideology, naming SYRIZA on the left and the AfD on the right). *Read: full text of Mudde (2021), section
+with a host ideology, naming SYRIZA on the left and the AfD on the right). *Read: full: full text of Mudde (2021), section
 "Populism: a definition", which restates the 2004 definition as his own; the 2004 paper itself not reached, 2026-10-12.*
 **Design:** "populist" is checked on its own question (who is set against whom), and the learner learns that it never
 decides left or right. **Decides:** that lesson 4 teaches "populist" as a question apart from side and pairs a left
@@ -69,7 +69,7 @@ exclusionary violence if necessary, and authority of a national chieftain who al
 closing definition is a system of authority meant to reinforce the unity, energy and purity of communities in which
 liberal democracy stands accused of producing division and decline. (An earlier version of this note said Payne adds
 violence and a leader principle; that came from a summary, and Paxton cites Payne only for "elements of a retrodictive
-theory", so it is dropped.) *Read: full text of Paxton (1998), pp. 6-7 (mobilizing passions), p. 7 and notes 13 and 29
+theory", so it is dropped.) *Read: full: full text of Paxton (1998), pp. 6-7 (mobilizing passions), p. 7 and notes 13 and 29
 (the fixed minimum), p. 21 (the closing definition), from an archive copy of the article, 2026-10-12; Griffin and Payne
 themselves not read.* **Design:** the subject draws one line (nation above all, rebirth from decline, democracy and
 opposition to be ended, violence against named enemies) and says it is one line among several (Paxton's list also has a
@@ -80,20 +80,20 @@ shared scholarly core, the subject could not score a "fascist" verdict as right 
 **L8. Most people link issues to sides well; labels are where they diverge.** High- and low-knowledge voters agree
 closely on which issues go with which party and ideology (Theodoridis, Henderson & Goggin, 2019, *Political Behavior*).
 Many Americans call themselves conservative while preferring policies usually called liberal (Claassen, Tucker & Smith,
-2015, *Political Behavior*). *Read: abstracts.* **Design:** the subject does not teach which side holds which issue;
+2015, *Political Behavior*). *Read: abstract: abstracts.* **Design:** the subject does not teach which side holds which issue;
 it teaches what each label requires, and that self-labels and thrown labels are unreliable evidence. **Supports.**
 
 **L9. Name the wrong idea, mark it wrong, give the correct reasoning (`learning-science.md` P29).** A meta-analysis of 44
 independent comparisons (n = 3,869) found refutation text, which states a common misconception, says it is wrong and gives
 the correct explanation, went with a moderate positive effect (g = 0.41; Schroeder & Kucera, 2022, *Educational Psychology
-Review*); framed around science misconceptions, and not tested on political beliefs. *Read: abstract, as
+Review*); framed around science misconceptions, and not tested on political beliefs. *Read: abstract: abstract, as
 `learning-science.md` states.* **Design:** each label family opens with its commonest wrong reading, marked wrong, then the
 line. **Supports.**
 
 **L10. Teach by contrast: cases in pairs, with the learner told what to compare (`learning-science.md` P12).** Case
 comparison beat sequential study and single cases in a meta-analysis of 57 experiments (d about 0.50; Alfieri, Nokes-Malach
 & Schunn, 2013), with weaker effects on delayed tests; adult novices also used a strategy more after comparing two cases
-(Gentner, Loewenstein & Thompson, 2003). *Read: abstracts, as `learning-science.md` states.* **Design:** a contrast pair in
+(Gentner, Loewenstein & Thompson, 2003). *Read: abstract: abstracts, as `learning-science.md` states.* **Design:** a contrast pair in
 each lesson (a welfare program beside public ownership; a nationalist text beside a fascist one), with what to compare
 named. **Supports.**
 
@@ -101,7 +101,7 @@ named. **Supports.**
 experiment with a US panel, a few minutes of material on fraud techniques made people less willing to invest in fraudulent
 offers, with much more muted effects on legitimate ones, and the effect faded by six months unless reminded (Burke, Kieffer,
 Mottola & Perez-Arce, 2022, *J. Economic Behavior & Organization*); investment fraud only, and worse outcomes for the least
-financially literate on text alone. *Read: full text (the working-paper version), as `learning-science.md` states.*
+financially literate on text alone. *Read: full: full text (the working-paper version), as `learning-science.md` states.*
 **Design:** earned, unearned and too-thin items appear together in every lesson. **Supports.**
 
 ## What the evidence does not settle

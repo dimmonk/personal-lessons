@@ -10,7 +10,7 @@ import { collectSite } from './site.mjs';
 import { DEFAULTS } from './paths.mjs';
 import { setIn, updateIn, removeIn, plain } from './immutable.mjs';
 import { CONTROLS, NO_CONTROL } from './controls-table.mjs';
-import { FIXTURE_FILES, FIXTURE_DESIGNS, FIXTURE_IDS, FIXTURE_REVIEWS, FIXTURE_RESEARCH, withTriedFps } from '../fixtures/fixture-subject/design.mjs';
+import { FIXTURE_FILES, FIXTURE_DESIGNS, FIXTURE_IDS, FIXTURE_REVIEWS, FIXTURE_RESEARCH, withTriedFps, withReviewFps } from '../fixtures/fixture-subject/design.mjs';
 import { lessonFingerprint } from './fingerprint.mjs';
 
 const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
@@ -19,8 +19,9 @@ const FIXTURE = new URL('../fixtures/fixture-subject/', import.meta.url);
 export async function baseline() {
   const loaded = await loadFromPublic(DEFAULTS.publicDir, { extra: FIXTURE_FILES.map(f => new URL(f, FIXTURE)) });
   const data = { ...loaded, subjects: Object.fromEntries(FIXTURE_IDS.map(id => [id, plain(loaded.subjects[id])])) };
-  const designs = withTriedFps(FIXTURE_DESIGNS, (id, l) => lessonFingerprint(data, id, l));
-  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs, committedDesigns: {}, reviews: FIXTURE_REVIEWS, research: FIXTURE_RESEARCH, held: null, committedHeld: null };
+  const fpOf = (id, l) => lessonFingerprint(data, id, l);
+  const designs = withTriedFps(FIXTURE_DESIGNS, fpOf);
+  return { data, lock: lockEntries(data), committedLock: null, site: await collectSite(DEFAULTS.publicDir), designs, committedDesigns: {}, reviews: withReviewFps(FIXTURE_REVIEWS, designs, fpOf), research: FIXTURE_RESEARCH, held: null, committedHeld: null };
 }
 
 const redRules = result => [...new Set(result.failures.map(f => f.rule))].sort();
@@ -33,8 +34,10 @@ const sameList = (a, b) => a.length === b.length && a.every((x, i) => x === b[i]
 function faultyInput(base, control) {
   const data = control.data ? control.data(base.data, { setIn, updateIn, removeIn }) : base.data;
   const lock = control.keepLock ? base.lock : lockEntries(data);
-  const designs = control.keepTriedFps ? base.designs : withTriedFps(base.designs, (id, l) => data.subjects[id] && data.subjects[id].lessons[l] ? lessonFingerprint(data, id, l) : base.designs[id].tried[l].fp);
-  const input = { ...base, data, lock, designs };
+  const fpOf = (id, l) => data.subjects[id] && data.subjects[id].lessons[l] ? lessonFingerprint(data, id, l) : base.designs[id].tried[l].fp;
+  const designs = control.keepTriedFps ? base.designs : withTriedFps(base.designs, fpOf);
+  const reviews = control.keepTriedFps ? base.reviews : withReviewFps(base.reviews, designs, fpOf);
+  const input = { ...base, data, lock, designs, reviews };
   return control.input ? control.input(input) : input;
 }
 

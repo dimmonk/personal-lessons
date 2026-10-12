@@ -9,12 +9,12 @@ let checks = 0, failures = [];
 const same = (a, b, what) => { checks += 1; if (JSON.stringify(a) !== JSON.stringify(b)) failures.push(`${what}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`); };
 const ok = (c, what) => { checks += 1; if (!c) failures.push(what); };
 
-// read levels: the weakest source named sets the level
-same(readLevel('x *Read: full text, pp. 3-4, 2026-10-12.*'), 'full', 'a full text');
-same(readLevel('x *Read: full text (Ho) and the abstract (Lain).*'), 'abstract', 'a full text and an abstract');
-same(readLevel('x *Read: abstract and secondary summaries.*'), 'summary', 'an abstract and summaries');
-same(readLevel('x *Read: the WWC page.*'), 'summary', 'a record page');
-same(readLevel('x *Read:\nfull text, broken across lines.*'), 'full', 'a Read line broken across lines');
+// read levels: stated as the first word of the Read line, never inferred; unstated reads as summary
+same(readLevel('x *Read: full: the paper, pp. 3-4, 2026-10-12.*'), 'full', 'a stated full read');
+same(readLevel('x *Read: abstract: Crossref and the abstract; a section named Abstract of another paper.*'), 'abstract', 'a stated abstract read');
+same(readLevel('x *Read: summary: a press release.*'), 'summary', 'a stated summary');
+same(readLevel('x *Read: full text, Rohrer, Abstract, Results.*'), 'summary', 'an unstated level reads as summary, whatever the words');
+same(readLevel('x *Read:\nfull: broken across lines.*'), 'full', 'a Read line broken across lines');
 same(readLevel('x no read line'), null, 'no Read line');
 
 // the real notes: every finding carries a mark and a Read line; the ones the records rely on read as the records say
@@ -27,17 +27,21 @@ same(research['scams-judging-and-acting'].marks.SC1, { decides: true, read: 'ful
 same(research['scams-judging-and-acting'].marks.SC3.read, 'abstract', 'SC3 rests on an abstract too');
 same(research['review-after-lessons'].marks.R8.decides, true, 'R8 decides the review');
 same(research['reading-other-people'].marks.O1, { decides: true, read: 'full' }, 'O1');
+same(research['reading-other-people'].marks.O8.read, 'full', 'O8 was read in full (a section named Abstract is not an abstract read)');
+same(research['learning-everyday-math'].marks.M4.read, 'full', 'M4 was read in full');
 
 // the real reviews: every verdict is read, and the disclosed ones are seen
 const reviews = await collectReviews(new URL('docs/subjects/', REPO));
 ok(Object.keys(reviews).length >= 7, 'fewer than seven subjects have reviews');
-for (const [id, files] of Object.entries(reviews)) Object.entries(files).forEach(([f, v]) => ok(['passes', 'fails', 'disclosed'].includes(v), `${id} ${f}: verdict read as "${v}"`));
-same(reviews.singing['reviews/l2.md'], 'disclosed', 'Singing l2 carries a Disclosure');
-same(reviews.scams['reviews/l3.md'], 'fails', 'Scams l3 fails');
-same(reviewVerdict('Verdict: passes\n\nReviewer: x, 2026-10-11\n'), 'passes', 'a bare passing review');
-same(reviewVerdict('Verdict: passes\n\nReviewer: x\n'), 'unreadable', 'a reviewer line without a date');
-same(reviewVerdict('Verdict: passes\n\nReviewer: x, 2026-10-11\nDisclosure: I read the record.\n'), 'disclosed', 'a disclosure');
-same(reviewVerdict('# no verdict\nReviewer: x, 2026-10-11\n'), 'unreadable', 'no verdict line');
+for (const [id, files] of Object.entries(reviews)) Object.entries(files).forEach(([f, v]) => { ok(['passes', 'fails', 'disclosed'].includes(v.verdict), `${id} ${f}: verdict read as "${v.verdict}"`); ok(/^sha256:[0-9a-f]{64}$/.test(v.reviewed || ''), `${id} ${f}: no Reviewed fingerprint`); });
+same(reviews.singing['reviews/l2.md'].verdict, 'disclosed', 'Singing l2 carries a Disclosure');
+same(reviews.scams['reviews/l3.md'].verdict, 'fails', 'Scams l3 fails');
+const FP = 'sha256:' + 'a'.repeat(64);
+same(reviewVerdict(`Verdict: passes\n\nReviewer: a stand-in (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\n`), { verdict: 'passes', reviewed: FP }, 'a passing review');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5)\nReviewed: ${FP}\n`).verdict, 'unreadable', 'a reviewer line without a date');
+same(reviewVerdict('Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11\n').verdict, 'unreadable', 'no Reviewed line');
+same(reviewVerdict(`Verdict: passes\n\nReviewer: x (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\nDisclosure: I read the record.\n`).verdict, 'disclosed', 'a disclosure');
+same(reviewVerdict(`# no verdict\nReviewer: x (Sonnet 5.5), 2026-10-11\nReviewed: ${FP}\n`).verdict, 'unreadable', 'no verdict line');
 
 // the real records: every one parses, and the gate 2 screen of each fits one screen
 const designs = await collectDesigns(new URL('docs/subjects/', REPO));

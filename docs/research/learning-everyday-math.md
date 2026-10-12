@@ -15,7 +15,7 @@ incorrect ones (Barbieri, Miller-Cotto, Clerjuste & Chawla, 2023). Alternating w
 problems alone: the IES panel rates this "moderate" evidence, from many laboratory experiments (for instance 8th and 9th
 graders in algebra, four example-and-problem pairs against eight problems: less time, a better post-test) and some
 classroom studies, and says it applies to mathematical problem solving (Pashler et al., 2007, IES practice guide,
-Recommendation 2). The advantage shrinks as the learner becomes competent (expertise reversal). *Read: full text, IES
+Recommendation 2). The advantage shrinks as the learner becomes competent (expertise reversal). *Read: full: full text, IES
 practice guide (Pashler et al., 2007), Recommendation 2, 2026-10-12; the Barbieri et al. meta-analysis only as its
 abstract and secondary summaries (the publisher page needs a login).* **Decides:** every lesson opens a new kind with
 one worked example before the learner solves anything of that kind, instead of giving problems with feedback only.
@@ -26,7 +26,7 @@ with prompts asking the learner to name the principle behind a worked step, gave
 transfer without extra study time (Atkinson, Renkl & Merrill, 2003, *J. Educ. Psych.* 95(4), 774–783; two
 experiments). Fading alone helped near transfer but not reliably far transfer. A caution from the abstract of the 2023
 meta-analysis in M1 (read as a search summary only): worked-example conditions that added self-explanation prompts did
-worse than those without, on average, so the "why this step" prompt rests on this one pair of experiments. *Read: the
+worse than those without, on average, so the "why this step" prompt rests on this one pair of experiments. *Read: abstract: the
 abstract via a search summary; more in `docs/learning-science.md` P17.* **Supports.** (Would decide the completion
 problems and the one "why this step" prompt per kind; full text not reachable 2026-10-12: a judgement call.)
 
@@ -43,7 +43,7 @@ turned into a number sentence with the missing quantity, and the learner compute
 partly by having children find the error in other children's key-word solutions. The authors list as limits that it
 was an efficacy study and that whether the effect lasts was not tested. A meta-analysis of 31 word-problem
 interventions for students with maths difficulties found g = 0.56, larger when the teaching focused on the problem's
-underlying structure and explicitly taught transfer. *Read: full text, Fuchs et al. (2020), Introduction, Method
+underlying structure and explicitly taught transfer. *Read: full: full text, Fuchs et al. (2020), Introduction, Method
 (Intervention) and Table 3, 2026-10-12; Jitendra et al. only through the WWC study page (the article is behind a
 publisher login); the meta-analysis only as a search summary. All are school students; none is an adult studying
 alone.* **Decides:** each kind of problem is taught as one fixed picture (a two-row table, a 100% bar, a sketch, a
@@ -57,7 +57,7 @@ interleaving combines three things at once (choosing the strategy from the probl
 trial did not separate them. Their own caveats: it probably takes more time per problem; the benefit may be smaller at
 short delays; students had probably had some blocked practice with a new skill first, so it should not replace that
 entirely; and feedback was given and may be necessary. So: introduce a new type on its own first, then mix it with the
-earlier ones, with feedback. *Read: full text, Rohrer et al. (2020), Abstract, Results and Discussion with its
+earlier ones, with feedback. *Read: full: full text, Rohrer et al. (2020), Abstract, Results and Discussion with its
 caveats (author-posted copy), 2026-10-12; R9 in `review-after-lessons.md`, P22 in `learning-science.md`.*
 **Decides:** from lesson 3 on, part of every lesson is mixed, unlabeled problems of all kinds so far, after the kind has
 been taught on its own, instead of a block of one kind per lesson.
@@ -71,7 +71,7 @@ transferred weakly (d = 0.29, not significant). The IES panel rates short-answer
 multiple-choice for remembering facts, with strong evidence (Pashler et al., 2007, Recommendation 5b); that is about
 recalling facts, not about solving. With answer options, students solved algebra items by checking the options forward
 instead of doing the calculation asked, which inflated multiple-choice scores most on exactly those items
-(*Educational Studies in Mathematics*, 2016, doi 10.1007/s10649-016-9725-4). *Read: full text, Pan & Rickard (2018),
+(*Educational Studies in Mathematics*, 2016, doi 10.1007/s10649-016-9725-4). *Read: full: full text, Pan & Rickard (2018),
 Results and the response-congruency definition, and Pashler et al. (2007), Recommendation 5b, 2026-10-12; the 2016
 study only as a search summary (the publisher page needs a login); strength limited. The direction is consistent with
 M3: picking from four numbers lets the learner skip the set-up, which is the part that is being learned.*
@@ -82,11 +82,11 @@ follows from gate 2's test, which asks for a typed number.)
 **M6. Feedback that shows the working and names the slip.** High-information feedback had the largest effect
 (d = 0.99, against 0.46 for corrective feedback; Wisniewski, Zierer & Hattie, 2020); in computer-based feedback,
 elaborated feedback 0.49 against 0.05 for right/wrong only (Van der Kleij et al., 2015). What makes errors useful is
-correction that analyses the reasoning behind the mistake (Metcalfe, 2017). *Read: via `learning-science.md` P19–P21.* **Supports.**
+correction that analyses the reasoning behind the mistake (Metcalfe, 2017). *Read: summary: via `learning-science.md` P19–P21.* **Supports.**
 
 **M7. A calculator does the arithmetic.** Across 54 studies, students who used calculators kept or improved their
 operational and problem-solving skills, and held more positive attitudes to mathematics (Ellington, 2003, *JRME* 34(5),
-433–463). Retention was not settled for lack of data. *Read: abstract and secondary summaries.* **So** the subject
+433–463). Retention was not settled for lack of data. *Read: abstract: abstract and secondary summaries.* **So** the subject
 teaches the set-up and the check; the multiplying is done on a calculator, as in real life. **Supports.**
 
 **M8. Checking whether an answer is sensible is a separate skill, and often missing.** Over 200 eighth graders were
@@ -94,7 +94,7 @@ generally unable to recognize reasonable answers, and over 60% of their strategi
 2010, *Int. J. Sci. Math. Educ.*). Adults did better than fifth graders, especially at judging whether an answer is
 practical in its setting (*Int. J. Sci. Math. Educ.*, 2022, doi 10.1007/s10763-022-10250-0; 160 participants).
 Estimation rests on flexible rounding and mental computation. No trial was found showing that teaching an
-estimate-first habit improves accuracy. *Read: search summaries.* **So** an estimate before the calculation is a
+estimate-first habit improves accuracy. *Read: summary: search summaries.* **So** an estimate before the calculation is a
 judgement call: it is the cheapest check against the errors that cost most in real life (a slipped decimal point, a
 ratio turned upside down), and the app can score it. **Supports.** (Would decide the typed estimate before every
 answer and the "your answer and your estimate disagree" prompt; full text not reachable 2026-10-12: a judgement call.)
@@ -105,11 +105,11 @@ maths is not stated explicitly. Reviews of adult numeracy teaching find little h
 they favour explicit teaching, and meaningful everyday contexts helped anxious adults' attitudes, while teaching that
 looks only at right answers with little support was linked to anxiety (New Zealand Ministry of Education, 2005; Thomas
 & Ward, 2010). A 2023 UK systematic review for the Multiply programme exists (Alma Economics for the DfE); its
-conclusions were not read. *Read: search summaries.* **So** most of M1–M8 is borrowed from school research; the pilot
+conclusions were not read. *Read: summary: search summaries.* **So** most of M1–M8 is borrowed from school research; the pilot
 (gate 6) is the real test for an adult on a phone. **Supports.**
 
 **M10. Spaced return of new problems** (R1–R6 in `review-after-lessons.md`): a problem type comes back in later
-sessions, as a new problem to solve (R8), until it is solved right in several sessions. *Read: the notes cited; no source of its own.* **Supports.** (Would decide that wrong kinds come back in later
+sessions, as a new problem to solve (R8), until it is solved right in several sessions. *Read: summary: the notes cited; no source of its own.* **Supports.** (Would decide that wrong kinds come back in later
 sessions as new problems; it rests on R2 and R4, read only as abstracts and summaries: a judgement call.)
 
 ## What the evidence does not settle

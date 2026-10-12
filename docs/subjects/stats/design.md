@@ -306,6 +306,7 @@
     }
   },
   "pilot": "l1",
+  "designedOn": "2026-10-10",
   "approved": {
     "goal": null,
     "practice": null
