@@ -895,7 +895,7 @@
     },
     "l16": {
       "part": "16",
-      "does": "About 12 minutes. (1) Shown first, about a minute: Belgium named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped; then Switzerland's Landlocked shown; then France lit and its name typed, shown done with its line. (2) One look at the region's labeled map, about a minute, Iberia, France and the Low Countries, the German-speaking three, Italy, then the five microstates as dots, with the Alps; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Austria and Switzerland asked back to back; the microstates named and tapped only; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "does": "About 12 minutes. (1) Shown first, about a minute: Belgium named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped; then Switzerland's Landlocked shown; then France lit and its name typed, shown done with its line. (2) One look at the region's labeled map, about a minute, as three views that a phone can read (names set in readable type; the five microstates named on lines from their dots): Iberia and France, the Low Countries and Germany, then the Alps and Italy with the five microstates, the Alps and the seas; the flag of each of the ten larger countries is shown large beside its name in the view that holds it, so the flags are taught before they are asked; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), the flags that look alike (the Netherlands and Luxembourg, Belgium and Germany) asked back to back, with a line in the feedback that tells each from the other, then half of them with a neighbor and the water tapped, or Landlocked (about 1); Austria and Switzerland asked back to back; the microstates named and tapped only; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
       "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
       "check": "12 items on western Europe's countries, on the blank map, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); the split is fixed, and within each form the places are drawn at random, preferring ones last asked in another form; the five microstates are drawn only among the 5 named and tapped, the one form the lesson asks them in; at least 10 of 12.",
       "why": [
@@ -1325,7 +1325,19 @@
       "public/app/lessons/place-view.js",
       "public/app/registry.js",
       "tests/lessons/",
-      "public/maps/europe-west.js"
+      "public/maps/europe-west.js",
+      "docs/subjects/geography/reviews/l16.md",
+      ".claude/skills/build-subject/SKILL.md",
+      "tools/design/record.mjs",
+      "tools/maps/",
+      "tools/learner-view/render-learner-view.mjs",
+      "public/app/",
+      "public/app.css",
+      "public/maps/",
+      "tests/fixtures/fixture-subject/",
+      "tests/e2e-atlas.mjs",
+      "tests/e2e-places.mjs",
+      "tests/e2e-controls.mjs"
     ]
   }
 }

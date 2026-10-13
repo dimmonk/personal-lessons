@@ -210,6 +210,9 @@ export const CONTROLS = [
     input: input => asDesign(input, null, { opened: { ...design(input).opened, design: [...design(input).opened.design, '.claude/skills/build-subject/SKILL.md', 'tools/design/record.mjs', 'tests/fixtures/fixture-subject/design.mjs'] } }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose gates 2 to 5 opened the engine\'s code', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, design: ['public/app/lessons/ask.js'] } }) },
   { rule: 'V69', name: 'a writer who opened the engine, the map data and the validator (allowed)', green: true, input: input => asDesign(input, null, { opened: { ...design(input).opened, writing: [...design(input).opened.writing, 'public/app/lessons/place-gen.js', 'public/maps/europe-west.js', 'tests/lessons/rules-shape.mjs'] } }) },
+  { rule: 'V69', name: 'a writer fixing a lesson who opened its review, the map build, the stylesheet, the browser checks and the learner-view tool (allowed)', green: true,
+    input: input => asDesign(input, null, { opened: { ...design(input).opened, writing: [...design(input).opened.writing, 'docs/subjects/fixture/reviews/l1.md', 'tools/maps/regions.mjs', 'public/app.css', 'tests/e2e-atlas.mjs', 'tools/learner-view/render-learner-view.mjs', '.claude/skills/build-subject/SKILL.md'] } }) },
+  { rule: 'V69', name: 'a lesson changed in a subject whose writer opened another subject\'s review', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, writing: ['docs/subjects/chorus/reviews/l1.md'] } }) },
   { rule: 'V69', name: 'a lesson changed in a subject whose writer opened another subject\'s lessons', input: input => asDesign(input, 'fixture/l1', { opened: { ...design(input).opened, writing: ['public/subjects/chorus/l1.lesson.js'] } }) },
   { rule: 'V69', name: 'a record of a subject not yet in the app whose designer opened another subject\'s record',
     input: input => ({ ...input, designs: { ...input.designs, ghost: { ...design(input), subject: 'ghost', tried: {}, designReview: null, opened: { ...design(input).opened, design: ['docs/subjects/ghost/design.md', 'docs/subjects/chorus/design.md'], writing: [] } } } }) },
@@ -424,4 +427,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 300;
+export const PINNED_CONTROL_COUNT = 302;
