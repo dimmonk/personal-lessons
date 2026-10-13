@@ -50,14 +50,13 @@ function centreOf(spec, parts) {
   return null;
 }
 
-// where the name goes and how big: inside the largest shape (the middle of a line), sized to its width, never under 4 units
-const FONT = { continent: 20, ocean: 18, region: 11, country: 9, state: 7, sea: 10, strait: 5, lake: 6, range: 8, river: 5, coast: 5 };
+// where the name goes: inside the largest shape (the middle of a line), or on the point of a dot. How big it is and which way a microstate's name leads away from
+// its dot are not the map's to say in map units: the app sets every name in pixels (place-view.js), and a spec's `lead` is the pixels it stands off the dot.
 function labelOf(spec, shapes, dot) {
-  if (dot) return { at: dot, fs: 5 };
-  if (spec.line) { const longest = [...shapes].sort((a, b) => lineLength(b) - lineLength(a))[0]; return { at: longest[Math.floor(longest.length / 2)], fs: FONT.river }; }
-  const largest = [...shapes].sort((a, b) => absArea(b) - absArea(a))[0], box = bboxOf(largest);
-  const at = spec.label || labelPoint([largest], 0.3), fit = (box[2] - box[0]) / Math.max(spec.name.length * 0.6, 1) * 1.5;
-  return { at: at.map(round1), fs: Math.round(Math.max(4, Math.min(FONT[spec.kind] || 8, fit)) * 10) / 10 };
+  if (dot) return { at: dot, ...(spec.lead ? { lead: spec.lead } : {}) };
+  if (spec.line) { const longest = [...shapes].sort((a, b) => lineLength(b) - lineLength(a))[0]; return { at: longest[Math.floor(longest.length / 2)] }; }
+  const largest = [...shapes].sort((a, b) => absArea(b) - absArea(a))[0];
+  return { at: (spec.label || labelPoint([largest], 0.3)).map(round1) };
 }
 
 export function buildRegion(R, all) {

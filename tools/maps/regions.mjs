@@ -112,7 +112,9 @@ async function usSpecs(load) {
 }
 
 /* ---------- western Europe ---------- */
-const MICROSTATES = ['Andorra', 'Monaco', 'Liechtenstein', 'San Marino', 'Vatican'];
+// the five microstates are dots, each with the pixels its name stands from its dot, right and down (the app draws a line between): chosen so that no two names touch
+// on a phone with western Europe in three panels (the pilot's look) and each name lies over the land or sea nearest its dot
+const MICROSTATES = { Andorra: [-40, 24], Monaco: [-28, 26], Liechtenstein: [-30, -24], 'San Marino': [34, -12], Vatican: [-34, 22] };
 const nameOf = f => ({ 'Czech Republic': 'Czechia' }[f.props.NAME_EN] || f.props.NAME_EN);
 const LEFT_OUT = ['Jersey', 'Guernsey', 'Isle of Man'];   // the crown dependencies are specks beside the countries a lesson asks
 const EUROPE_SEAS = [['atlantic', 'Atlantic Ocean', 'North Atlantic Ocean', 'ocean'], ['north-sea', 'North Sea', 'North Sea'], ['baltic-sea', 'Baltic Sea', 'Baltic Sea'],
@@ -125,7 +127,7 @@ const inView = (f, v) => f.polygons.some(p => p[0].some(([lon, lat]) => lon >= v
 async function europeSpecs(load) {
   const countries = (await load('countries50')).filter(f => inView(f, EUROPE_VIEW) && !LEFT_OUT.includes(f.props.NAME)), marine = await load('marine50'), ranges = await load('regions50'), pyr = await load('regions10');
   return [
-    ...countries.map(f => area([f], { id: slug(nameOf(f)), name: nameOf(f), kind: 'country', layer: 'countries', dot: MICROSTATES.includes(f.props.NAME), optional: true })),
+    ...countries.map(f => area([f], { id: slug(nameOf(f)), name: nameOf(f), kind: 'country', layer: 'countries', dot: f.props.NAME in MICROSTATES, ...(f.props.NAME in MICROSTATES ? { lead: MICROSTATES[f.props.NAME] } : {}), optional: true })),
     ...EUROPE_SEAS.map(([id, name, ne, kind = 'sea']) => water(find(marine, 'name', ne), { id, name, kind, layer: 'marine' })),
     // a strait is water too narrow for a finger: its outline, and a point at its middle that is tapped within a radius (3.7, as a microstate is)
     water(find(marine, 'name', 'Strait of Gibraltar'), { id: 'strait-of-gibraltar', name: 'Strait of Gibraltar', kind: 'strait', layer: 'marine', dot: true }),
