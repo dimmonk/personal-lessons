@@ -239,7 +239,7 @@ in names the pair, so the same seed is the same question and a try stores only i
 | `text` | a box under a `spoken` question, and "Not yet" | types words | matches an accepted answer (section 3.7); with `model`, never scored | every accepted answer, and the item's `reason` |
 | `order` | `steps` to put in order | taps `right.length` of them | the whole order, or `scored: 'first'` | the right order and `then` |
 | `exchange` | a call or chat whose turns follow the replies | picks a reply each turn | right if it reaches an `ok` end | the pushing lines marked, and where it could have ended |
-| `place` | the blank map of a region (3.11), with no names; with `mode: 'neighbor-water'` a button "Landlocked" once a neighbor is tapped | taps the map: the place; or a neighbor, then the water (or "Landlocked") | right if the tap is inside a right place's shape; the neighbor and water ones by the map data | "You tapped: <the place the tap was on>", the slip of that place; the right place lit and the tap marked |
+| `place` | the blank map of a region (3.11), with no names; with `mode: 'neighbor-water'` a button "Landlocked" in the row of the zoom buttons once a neighbor is tapped | taps the map: the place; or a neighbor, then the water (or "Landlocked") | right if the tap is inside a right place's shape; the neighbor and water ones by the map data | "You tapped: <the place the tap was on>", the slip of that place; the right place lit and the tap marked |
 | `sing` | the pitch strip (section 3.8) | sings after the target plays | section 3.8 | the result in words |
 
 - **A verdict** is a `choose` drawing on the subject's `verdict` list, so its words are typed once and are the same in
@@ -336,12 +336,17 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   shore held within a band of 4% of the map's width (on land or at sea), a canal (`kind: 'canal'`) a `line` held within 2%, and a strait
   (`kind: 'strait'`) water, like a sea (no hole, and the land under its outline is not it), with a `dot` at its middle so it is found
   within 2% of the map's width even where its outline is thinner than a finger. See 3.11 for what is built.
+  **A ground place no bigger than a fingertip** (Luxembourg: its box is at most 6% of the map's width wide and tall, divided by the zoom, so a map zoomed in
+  far enough stops treating it so) is held within 3% of the map's width of its outline, divided by the zoom, whatever larger place the tap is on: the
+  nearest such place when two are near, and it is the place a tap beside it is named for. It takes no tap from the place the tap is inside when that is
+  the one asked (both are right), and a place bigger than a fingertip gets no such radius (`PLACE_SMALL_TAP`, `placeSmallAt` in place.js).
 - *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
 - *A neighbor and its water*: two taps in order, kept in `Q.cur.many[askId]` until the second. The first must be inside a
   neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water.
   Neighbors and water are the map data's (computed by the build from the outlines: a border through a lake is not a border), so a
   lesson never lists them, and `of` is a place that is ground (the region's `land` kinds). The answer is
-  `{ n: [x, y, k], w: [x, y, k] | 'none' }`; after it every neighbor and every water of `of` is lit, `of` outlined, the taps marked.
+  `{ n: [x, y, k], w: [x, y, k] | 'none' }`; after it every neighbor of `of`, the water it touches and the water the learner tapped are lit (no other water: the map has no
+  names, so the water lit is named on it, each sea once), `of` outlined, the taps marked. Landlocked stands in the row of the zoom buttons, under the map.
 - *Feedback* (section 4.1): the mark, "You tapped: <place>" (or that the tap was on no place) with the slip's name, the right
   place lit on the same map and the tap marked beside it. In a check nothing is lit or marked until the end (X23). A worked
   item shows the place lit and the tap marked at once.
@@ -430,6 +435,10 @@ each question from the learner's range and a seed, and stores its tries under `s
   (`map-run.js`), by two fingers, by the buttons under it (zoom in, zoom out, the whole map) and by ctrl and the wheel; its zoom is
   kept across a screen painted again and reset when the question or step changes. An item's `figure` may be a map (a picture added to
   the feedback: the true map after a trap item).
+  On a phone (up to 520 px wide) a map that asks something is only as tall as the screen leaves room for what goes with it, with no scroll at 390 x 844 (X47): a
+  place asked on the map holds two lines for its line of help for as long as it is shown (the map does not move when the line changes after the first tap), then the map, then
+  one row with Landlocked and the zoom buttons; a lit place named from memory has its box and its button under a taller map. A map's frame is the color of water, so the
+  bars either side of a map that is taller than wide read as sea; the border between two countries is `--dim` on the country's `--rule`, over 3 to 1 (X46).
 - **Speech** starts only on a tap: "Hear the question" reads the first question, and each next question is read when
   the learner taps Next. Only a voice that is on the phone and in English is used; with none, the words are shown with
   one line saying so. "Hear it again" replays; leaving a screen or the page going to the background stops it. There is
@@ -845,8 +854,8 @@ Every other rule id below V84 is retired and never reused.
 | X43 | The mock interview: a draw, its first screen, its result, the second a week on, read aloud, on new items | a second mock that draws what the first asked |
 | X44 | The learner's own answers and date: the form, the stored shape, items reading them, the rounds before the date | going on before the answers are saved |
 | X45 | Civics' pilot walked end to end at 375 px | the pilot's check needing 15 of 17 |
-| X46 | The map block and the place ask on the test subject Atlas: the labelled map (names 12 pixels tall at every zoom, a tiny country's name set off its dot on a line, a map with a view opening on that part and its button going back to it, the flags with their names), a worked tap that says what is asked, a pinch and a drag that are not taps, the zoom buttons, a tap on a country with the slip named, a tap on a tiny country's circle named for it, water drawn in colors of its own, lit or not, a tap in the hole of a country, a dot found from a zoomed map with the zoom stored, land that is not the sea, a neighbor and its water, Landlocked right and wrong, a lit place named, nothing lit or marked in a check before its end, only numbers stored, 360 and 1200 px | a drag that counts as a tap |
-| X47 | A group of places made into questions on the test subject Atlas, lesson 2: a group of four different places to tap and three countries by their flags, each filed under its place, a miss coming back as the same place, a group of three lit places named and two neighbors and their water, a check drawn from the group with its split fixed by form (2 tap, 1 name, 1 flag, 1 border), no place twice and the dot only as a tap, nothing shown or marked between its questions, the tries stored under the places with only their seeds, and the review two days on asking the group on the place missed in the check, in another form; a flag asked for 40 pixels or more each way with no name, and its feedback with the name beside it and the line that tells it apart; a lesson put down at a group and at the check opening there; 360 and 1200 px | the draw ignoring its split |
+| X46 | The map block and the place ask on the test subject Atlas: the labelled map (names 12 pixels tall at every zoom, a tiny country's name set off its dot on a line, a map with a view opening on that part and its button going back to it, the flags with their names), a worked tap that says what is asked, a pinch and a drag that are not taps, the zoom buttons, a tap on a country with the slip named, a tap on a tiny country's circle named for it, water drawn in colors of its own, lit or not, a tap in the hole of a country, a dot found from a zoomed map with the zoom stored, land that is not the sea, a neighbor and its water, Landlocked right and wrong, a lit place named, nothing lit or marked in a check before its end, only numbers stored, the border of a country 3 to 1 or more against the country, 360 and 1200 px | a drag that counts as a tap |
+| X47 | A group of places made into questions on the test subject Atlas, lesson 2: a group of four different places to tap and three countries by their flags, each filed under its place, a miss coming back as the same place, a group of three lit places named and two neighbors and their water, a check drawn from the group with its split fixed by form (2 tap, 1 name, 1 flag, 1 border), no place twice and the dot only as a tap, nothing shown or marked between its questions, the tries stored under the places with only their seeds, and the review two days on asking the group on the place missed in the check, in another form; a flag asked for 40 pixels or more each way with no name, and its feedback with the name beside it and the line that tells it apart; a lesson put down at a group and at the check opening there; 360 and 1200 px; and on Geography's lesson 16 at 390 x 844 (`tests/e2e-fit.mjs`): Landlocked and Next on the screen after the first tap of a neighbor and its water, the map still where it was at 360 px, the box of a lit place named on the screen, a tap a finger's width beside Luxembourg named Luxembourg, and the feedback of a neighbor and its water lighting and naming only the water the place touches and the water tapped | the draw ignoring its split |
 
 A pilot walk asserts only what the walk shows; what another check owns is left to it, so a fault turns one check red.
 The sound checks (X8, X10, X11, X12, X16, X29) run in their own lanes, and a sound fault runs only them. X4, X6, X7 and
@@ -996,7 +1005,13 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   is drawn in water colors, lit or not; a tap on a microstate's circle is named for it; a worked place question shows what it asks; the `flags` block
   and a place's `flagLine` (3.5, 3.9: a flag is large, the feedback of a flag question shows it with its name and opens with the line that tells it
   apart); V73 counts the names a `flags` block prints; a lesson put down at the check opens at the check (5.1); the writer may open the review that sent
-  its lesson back, the skill, the map build, the stylesheet, the browser checks and the learner-view tool (V69); X46 and X47 each have faults for these. The service worker cache is v26.
+  its lesson back, the skill, the map build, the stylesheet, the browser checks and the learner-view tool (V69); X46 and X47 each have faults for these. The service worker cache is v26 (v27 below).
+
+- **2026-10-13, the second stand-in review of Geography's pilot** (its fixes 1 to 4 and 6, the engine and the stylesheet alone): a neighbor and its water keeps Landlocked
+  (in the row of the zoom buttons) and Next on a 390 x 844 screen, a map does not move when the line of help changes after the first tap, a lit place's box is on the screen,
+  a ground place the size of a fingertip is held within 3% of the map's width (3.7), the border between countries is over 3 to 1, and the feedback of a neighbor and its water
+  lights and names only the water the place touches and the water tapped (3.7); X46 and X47 (on Geography's lesson 16, `tests/e2e-fit.mjs`) each have faults for these.
+  The service worker cache is v27.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.
