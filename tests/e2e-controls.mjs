@@ -450,7 +450,7 @@ export const FAULTS = [
     edits: [replace('app/lessons/place-gen.js', 'const placeKey = (genId, placeId) => genId + PLACE_KEY_JOIN + placeId;', 'const placeKey = (genId, placeId) => genId;')] },
   // a big screen: a Fold opened out, turned and folded (X48, on Geography's lesson 16)
   { check: 'X48', name: 'a map kept under its question on a screen wide enough to stand beside it', only: ['X3', 'X47', 'X48'],
-    edits: [replace('app.css', '@container main (min-width:760px){', '@container main (min-width:7600px){')] },
+    edits: [replace('app.css', '@container main (min-width:720px){', '@container main (min-width:7200px){')] },
   // a question asked on a map fits a phone's screen, and the map's feedback names its water (9: X47, on Geography's lesson 16)
   { check: 'X47', name: 'Landlocked in a row of its own, under the zoom buttons', only: PLACE_SEEN,
     edits: [replace('app/lessons/place-view.js', '</svg></div>${mapZoomHtml(o.beside)}</figure>`;', '</svg></div>${mapZoomHtml()}${o.beside ? `<div class="opts">${o.beside}</div>` : \'\'}</figure>`;')] },

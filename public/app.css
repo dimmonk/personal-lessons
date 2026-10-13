@@ -32,7 +32,8 @@ mark{background:var(--accent);color:var(--bg)}
 .tabbar button.on{color:var(--text)}
 .tabbar span{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase}
 
-/* A tablet, or a folding phone opened out (a Galaxy Fold's inner screen is about 880 px wide and near square): the tab bar stays, the pages widen. */
+/* A tablet, or a folding phone opened out. Built for the owner's Galaxy Z Fold 8 Ultra: its inner screen (8in, 2504 x 2256) is about 752 x 835 CSS px
+   held upright and 835 x 752 turned, less the browser's bars; its cover screen is a phone. The tab bar stays, the pages widen. */
 @media(min-width:700px){
   .pane{--gut:32px;max-width:640px;padding-bottom:52px}
   .pane.read{max-width:760px}
@@ -526,10 +527,10 @@ table.ownsum td:last-child{white-space:normal}
    Measured on the column the screen gets (the rail taken off), so it follows a fold, an unfold or a turn of the device as it happens; a phone turned on
    its side is too short for it and keeps the map above. A screen of several maps (a key) reads down the page as before. */
 @media(min-height:600px) and (min-aspect-ratio:3/4){
-  @container main (min-width:760px){
-    .pane:has(.block-map):not(:has(.block-map ~ .block-map)){--textcol:clamp(280px,36cqw,380px);max-width:none;position:relative}
+  @container main (min-width:720px){
+    .pane:has(.block-map):not(:has(.block-map ~ .block-map)){--textcol:clamp(260px,34cqw,380px);max-width:none;position:relative}
     .pane:has(.block-map):not(:has(.block-map ~ .block-map))>:not(.actbar){width:var(--textcol)}
-    .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 32px);right:var(--gut);margin:0}
+    .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 24px);right:var(--gut);margin:0}
     .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .mapsvg{max-height:max(280px,calc(100vh - 272px));max-height:max(280px,calc(100dvh - 272px))}
   }
 }

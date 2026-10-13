@@ -1,11 +1,13 @@
-// The browser check of a big screen: X48. A folding phone opened out (a Galaxy Fold's inner screen, about 880 x 1000 and near square), the same
-// phone turned on its side, and folded shut again, on the real subject Geography (lesson 16, western Europe). Opened out or turned, a question asked on
+// The browser check of a big screen: X48, at the sizes of the owner's Galaxy Z Fold 8 Ultra. Its inner screen (2504 x 2256) is about 752 x 835 CSS px
+// upright and 835 x 752 turned, less the browser's bars; its cover screen (2520 x 1080) about 360 x 840. Opened out, with the bars showing, turned with
+// the bars showing, and folded shut again, on the real subject Geography (lesson 16, western Europe). Opened out or turned, a question asked on
 // a map shows the map beside the question, with the map, the question and Next all on the screen at once and no scrolling; a tap on the place still
 // answers it; folded, the map goes back under the question; and the pages of the app widen past a phone's column. tests/e2e-controls.mjs seeds a fault.
 
-const OPEN = { width: 882, height: 1000 };
-const TURNED = { width: 1104, height: 780 };
-const FOLDED = { width: 344, height: 882 };
+const OPEN = { width: 752, height: 835 };
+const BARS = { width: 752, height: 700 };
+const TURNED = { width: 835, height: 620 };
+const FOLDED = { width: 360, height: 840 };
 const MAP = '[data-map-ask] .mapsvg';
 
 const rectOf = (page, selector) => page.evaluate(s => {
@@ -37,7 +39,7 @@ async function besideChecks(c, page, size) {
   const ask = await rectOf(page, '.placeask'), map = await rectOf(page, MAP), zoom = await rectOf(page, '[data-map-ask] .mapzoom'), bar = await rectOf(page, '.actbar');
   const room = await pageSize(page);
   c.check(ask && map && map.left >= ask.right, `${label}: the map (from ${map && Math.round(map.left)} px) is not beside the question (to ${ask && Math.round(ask.right)} px)`);
-  c.check(map && map.width >= 400, `${label}: the map is ${map && Math.round(map.width)} px wide, not using the screen`);
+  c.check(map && map.width >= 380, `${label}: the map is ${map && Math.round(map.width)} px wide, not using the screen`);
   c.check(map && zoom && bar && map.top >= 0 && zoom.bottom <= bar.top, `${label}: the map and its zoom buttons (to ${zoom && Math.round(zoom.bottom)} px) run under the bar of Next (from ${bar && Math.round(bar.top)} px)`);
   c.check(await page.locator('#qNext').isVisible() && bar && bar.bottom <= size.height + 1, `${label}: Next is not on the screen`);
   c.check(room.w <= size.width && room.h <= size.height && room.y === 0, `${label}: the screen scrolls (${room.w} x ${room.h} px)`);
@@ -63,6 +65,8 @@ export async function X48(env) {
   await page.locator('#qNext').click();
 
   /* ---------- turned on its side, then folded shut, then opened again: the layout follows ---------- */
+  await page.setViewportSize(BARS);
+  await besideChecks(c, page, BARS);
   await page.setViewportSize(TURNED);
   await besideChecks(c, page, TURNED);
   await page.setViewportSize(FOLDED);
