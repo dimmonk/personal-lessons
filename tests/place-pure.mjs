@@ -109,6 +109,36 @@ async function suite(app) {
   check(inUs('colorado', -105.5, 39.0) && inUs('texas', -99.0, 31.0) && inUs('illinois', -89.5, 40.0) && inUs('washington', -120.5, 47.5) && inUs('florida', -81.5, 28.0), 'a tap in the middle of five states');
   check(inUs('hawaii', -155.5, 19.6, 'hawaii') && inUs('alaska', -150.0, 64.0, 'alaska') && !inUs('alaska', -105.5, 39.0), 'Hawaii and Alaska are found on their insets');
   check(inUs('pacific', -126.0, 36.0) && !inUs('pacific', -121.5, 36.8) && inUs('atlantic', -70.0, 38.0) && inUs('gulf-of-mexico', -90.0, 26.0), 'the Pacific, the Atlantic and the Gulf of Mexico, and not the land');
+  /* ---------- coasts, straits and canals (3.7, 3.11) ---------- */
+  // a coast is the shore of some states along one water, held within a band of 4% of the map's width: the shore of California, New Jersey and Texas is on
+  // the West, East and Gulf Coast, and the heart of the country is on none
+  check(inUs('west-coast', -118.5, 34.0) && inUs('east-coast', -74.4, 39.4) && inUs('gulf-coast', -94.8, 29.3), 'a tap on the shore of California, New Jersey and Texas is on the West, the East and the Gulf Coast');
+  check(!inUs('west-coast', -105.0, 39.7) && !inUs('west-coast', -119.8, 39.5) && !inUs('east-coast', -80.0, 40.4) && !inUs('gulf-coast', -74.4, 39.4) && !inUs('east-coast', -94.8, 29.3), 'Denver and Reno are on no coast, Pittsburgh is not on the East Coast, and Atlantic City is not on the Gulf Coast');
+  const offshore = at('us', 'lower48', -121.5, 34.0), shore = mapPlace(us, 'west-coast');
+  check(placeContains(us, shore, offshore[0], offshore[1], 1) && !placeContains(us, shore, offshore[0], offshore[1], 8), 'a tap at sea off the coast is on it, from a map that is not zoomed, and not from one zoomed in 8 times (the band shrinks)');
+  check(shore.line === true && shore.kind === 'coast' && shore.rings.length > 1 && !us.draw.includes('coast') && us.labelled.includes('coast'), 'a coast is lines of the kind coast, named on the labelled map and not drawn on the blank one');
+  same(score({ id: 'a', kind: 'place', prompt: 'x', map: 'us', right: 'west-coast' }, at('us', 'lower48', -118.5, 34.0)), 'ok', 'asked for the West Coast, a tap on the shore of California scores right');
+  same(placeAt(us, ...at('us', 'lower48', -120.5, 34.0).slice(0, 2), 1), 'pacific', 'a tap near a coast is named for the water or the land it is on, never as the coast');
+  check(!mapHtml(us, {}).includes('data-place="west-coast"') && /mp-coast lit" data-place="west-coast"/.test(mapHtml(us, { lit: ['west-coast'] })), 'a coast is not on the blank map, and is drawn once it is lit');
+  // a strait is water, with a point at its middle that is found within a radius that shrinks with the zoom (Natural Earth draws it as slivers along its two shores)
+  const gib = mapPlace(eu, 'strait-of-gibraltar'), gr = eu.size[0] * PLACE_DOT_TAP, gx = gib.dot[0] / 10, gy = gib.dot[1] / 10;
+  same([gib.kind, gib.rings.length > 0, eu.labelled.includes('strait')], ['strait', true, true], 'the Strait of Gibraltar is water of the kind strait, named on the labelled map');
+  same([score(ask('strait-of-gibraltar'), [gx, gy, 8]), score(ask('strait-of-gibraltar'), [gx + gr * 0.9, gy, 1]), score(ask('strait-of-gibraltar'), [gx + gr * 1.3, gy, 1]), score(ask('strait-of-gibraltar'), [gx + gr * 0.5, gy, 4])], ['ok', 'ok', 'no', 'no'], 'its middle is found within the radius of a dot, which shrinks as the map is zoomed in');
+  same(score(ask('strait-of-gibraltar'), at('europe-west', null, -3.7, 40.4)), 'no', 'Madrid is not the Strait of Gibraltar');
+  check(!mapHtml(eu, {}).includes('strait-of-gibraltar') && /mp-dot lit" data-place="strait-of-gibraltar"/.test(mapHtml(eu, { lit: ['strait-of-gibraltar'] })) && /mp-strait lit" data-place="strait-of-gibraltar"/.test(mapHtml(eu, { lit: ['strait-of-gibraltar'] })), 'a strait is not on the blank map (its dot would give it away), and is drawn with its dot once it is lit');
+  // a canal, a coast and a river are lines, found within a band that is the more generous the shorter or wider the thing is (the made-up region has a line of each)
+  const lineMap = kind => ({ id: `line-${kind}`, name: 'Line', size: [1000, 500], q: 10, land: ['country'], draw: [], labelled: [], rings: [[1000, 1000, 2000, 0]], places: [{ id: 'x', name: 'X', kind, line: true, rings: [0] }] });
+  const held = (kind, dy, k = 1) => { const map = lineMap(kind); return placeContains(map, mapPlace(map, 'x'), 200, 100 + dy, k); };
+  same([held('river', 13), held('river', 15), held('canal', 19), held('canal', 21), held('coast', 39), held('coast', 41)], [true, false, true, false, true, false], 'a river is held within 1.4% of the map\'s width, a canal within 2% and a coast within 4%');
+  same([held('canal', 15, 2), held('canal', 9, 2), held('coast', 15, 4), held('coast', 9, 4)], [false, true, false, true], 'and each band is narrower when the map is zoomed in');
+  same(mapPlace(lineMap('canal'), 'x').area, 0, 'a canal has no area');
+  // a strait's outline overlaps the coasts on either side, like a sea's, and the land under it is not the strait (a country, and a strait over its corner)
+  const steps = pts => pts.flatMap((p, i) => [Math.round((p[0] - (i ? pts[i - 1][0] : 0)) * 10), Math.round((p[1] - (i ? pts[i - 1][1] : 0)) * 10)]);
+  const strMap = { id: 'strait-test', name: 'Strait', size: [1000, 500], q: 10, land: ['country'], draw: ['country'], labelled: [],
+    rings: [steps([[0, 0], [400, 0], [400, 400], [0, 400]]), steps([[100, 100], [700, 100], [700, 300], [100, 300]])],
+    places: [{ id: 'land', name: 'Land', kind: 'country', rings: [0] }, { id: 'gut', name: 'Gut', kind: 'strait', rings: [1], dot: [3900, 2000] }] };
+  const inGut = (x, y, k = 1) => placeContains(strMap, mapPlace(strMap, 'gut'), x, y, k);
+  same([inGut(550, 200), inGut(250, 200), inGut(380, 200), inGut(380, 200, 8)], [true, false, true, false], 'a tap on the water of a strait is on it, a tap on the land under its outline is not, but one within the radius of its middle is, and less so when the map is zoomed in');
   const wd = mapOf('world'), inWd = (id, lon, lat) => { const p = at('world', null, lon, lat); return placeContains(wd, mapPlace(wd, id), p[0], p[1], 1); };
   check(inWd('africa', 20, 5) && inWd('asia', 100, 50) && inWd('europe', 10, 50) && inWd('south-america', -60, -10) && inWd('antarctica', 0, -80) && inWd('oceania', 134, -25), 'a tap in the middle of the continents');
   check(inWd('asia', 90, 60) && !inWd('europe', 90, 60) && inWd('europe', 40, 56), 'Siberia is Asia and Moscow is Europe: Russia is cut at the Urals');
@@ -190,6 +220,9 @@ const FAULTS = [
   ['a river\'s band twice as wide', s => s.replace('const PLACE_LINE_BAND = 0.014;', 'const PLACE_LINE_BAND = 0.03;')],
   ['Landlocked right for a place that touches the sea', s => s.replace("wet = w === PLACE_NONE ? !water.length :", "wet = w === PLACE_NONE ? true :")],
   ['a neighbor taken anywhere on the map', s => s.replace("const near = placeNeighborsOf(map, ask.of).some(id => placeContains(map, mapPlace(map, id), n[0], n[1], n[2]));", 'const near = true;')],
+  ['a coast found within a river\'s band only', s => s.replace('coast: 0.04,', 'coast: 0.014,')],
+  ['a canal found within a river\'s band only', s => s.replace('canal: PLACE_DOT_TAP }', 'canal: 0.014 }')],
+  ['a strait that holds the land under its outline', s => s.replace("const PLACE_WATER_KINDS = ['ocean', 'sea', 'strait'];", "const PLACE_WATER_KINDS = ['ocean', 'sea'];")],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];

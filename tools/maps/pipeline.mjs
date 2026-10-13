@@ -38,9 +38,11 @@ function shapesOf(raw, part, tol, closed, cover) {
 // a ring as the whole numbers the file holds: the first point, then the step to each next one (all in tenths)
 const toSteps = pts => pts.flatMap((p, i) => [Math.round((p[0] - (i ? pts[i - 1][0] : 0)) * Q), Math.round((p[1] - (i ? pts[i - 1][1] : 0)) * Q)]);
 
-// the centre of a microstate's outline in final units, in the part where it shows
+// The point a dot is found at, in final units, in the part where it shows: the centre of a microstate's outline, and for a strait the middle of the
+// extent of all its pieces (Natural Earth draws a narrow strait as slivers along its two shores, so no one piece is its middle).
 function centreOf(spec, parts) {
-  const biggest = [...spec.rings].sort((a, b) => b.length - a.length)[0], c = ringCentroid(biggest);
+  const biggest = [...spec.rings].sort((a, b) => b.length - a.length)[0], box = bboxOf(spec.rings.flat());
+  const c = spec.kind === 'strait' ? [(box[0] + box[2]) / 2, (box[1] + box[3]) / 2] : ringCentroid(biggest);
   for (const part of parts) {
     const [x, y] = part.project(c[0], c[1]), [x0, y0, x1, y1] = part.rect;
     if (x >= x0 && x <= x1 && y >= y0 && y <= y1) return [round1(x), round1(y)];
@@ -49,7 +51,7 @@ function centreOf(spec, parts) {
 }
 
 // where the name goes and how big: inside the largest shape (the middle of a line), sized to its width, never under 4 units
-const FONT = { continent: 20, ocean: 18, region: 11, country: 9, state: 7, sea: 10, lake: 6, range: 8, river: 5 };
+const FONT = { continent: 20, ocean: 18, region: 11, country: 9, state: 7, sea: 10, strait: 5, lake: 6, range: 8, river: 5, coast: 5 };
 function labelOf(spec, shapes, dot) {
   if (dot) return { at: dot, fs: 5 };
   if (spec.line) { const longest = [...shapes].sort((a, b) => lineLength(b) - lineLength(a))[0]; return { at: longest[Math.floor(longest.length / 2)], fs: FONT.river }; }

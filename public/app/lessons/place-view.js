@@ -43,7 +43,8 @@ function mapHtml(map, o = {}){
   const kindsOf = kinds => kinds.flatMap(kind => geom.places.filter(p => p.kind === kind));
   const water = geom.places.filter(p => PLACE_WATER_KINDS.includes(p.kind) && lit.has(p.id));
   const blank = kindsOf(map.draw), over = geom.places.filter(p => lit.has(p.id) && !map.draw.includes(p.kind) && !PLACE_WATER_KINDS.includes(p.kind));
-  const dots = geom.places.filter(p => p.dot), frames = (map.frames || []).map(f => `<rect class="map-frame" x="${mapNum(f.x)}" y="${mapNum(f.y)}" width="${mapNum(f.w)}" height="${mapNum(f.h)}"></rect>`).join('');
+  // a microstate's dot is drawn as the country it is; the dot of a strait is only the radius it is found within, and shows once the strait is lit
+  const dots = geom.places.filter(p => p.dot && (map.land.includes(p.kind) || lit.has(p.id))), frames = (map.frames || []).map(f => `<rect class="map-frame" x="${mapNum(f.x)}" y="${mapNum(f.y)}" width="${mapNum(f.w)}" height="${mapNum(f.h)}"></rect>`).join('');
   const names = o.labels === true ? geom.places.filter(p => map.labelled.includes(p.kind) && p.at).map(p => p.id) : o.labels || [];
   const dotHtml = p => `<circle class="mp mp-dot${mark(p.id)}" data-place="${esc(p.id)}" cx="${mapNum(p.dot[0] / map.q)}" cy="${mapNum(p.dot[1] / map.q)}" r="${MAP_PX.dot}" data-px="${MAP_PX.dot}"></circle>`;
   const alt = names.length ? SAY.mapAltNamed(map.name) : SAY.mapAlt(map.name);

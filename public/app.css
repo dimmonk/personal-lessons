@@ -514,15 +514,16 @@ table.ownsum td:last-child{white-space:normal}
 .mp-continent{stroke:var(--rule)}
 .mp-lake{fill:var(--footer)}
 .mp-river{fill:none;stroke:var(--dim);stroke-width:1.4px;stroke-linecap:round;stroke-linejoin:round}
-.mp-ocean,.mp-sea,.mp-range,.mp-desert,.mp-region{fill:none;stroke:none}
+.mp-ocean,.mp-sea,.mp-strait,.mp-range,.mp-desert,.mp-region{fill:none;stroke:none}
 .mp-dot{fill:var(--rule);stroke:var(--text);stroke-width:1.2px}
 .mp.lit{fill:var(--accent);fill-opacity:.9;stroke:var(--text)}
 .mp-range.lit,.mp-desert.lit,.mp-region.lit{fill-opacity:.55;stroke:var(--accent)}
-.mp-river.lit{fill:none;stroke:var(--accent);stroke-width:5px}
+.mp-river.lit,.mp-coast.lit,.mp-canal.lit{fill:none;stroke:var(--accent);stroke-width:5px;stroke-linecap:round;stroke-linejoin:round}
+.mp-coast,.mp-canal{fill:none;stroke:none}
 .mp-dot.lit{fill:var(--accent);stroke:var(--text)}
 .mp.focus{stroke:var(--accent);stroke-width:2.2px}
 .ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-width:2.4px;stroke-linejoin:round;pointer-events:none}
-.ml-sea,.ml-ocean,.ml-lake,.ml-river,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
+.ml-sea,.ml-ocean,.ml-strait,.ml-lake,.ml-river,.ml-canal,.ml-coast,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
 .mk-ring{fill:none;stroke:var(--text);stroke-width:2px;vector-effect:non-scaling-stroke}
 .mk-dot{fill:var(--text)}
 .mk-right .mk-ring{stroke:var(--green)}

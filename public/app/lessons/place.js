@@ -3,6 +3,7 @@
 // tools/maps/build-maps.mjs) and the scoring of a tap on it, so the player, the validator and the tests all score a tap the same way.
 //   region   { id, name, size: [w, h], q, land: [kind], draw: [kind], labelled: [kind], frames?, rings: [[x0, y0, dx, dy, ...]], places: [Place] }
 //   Place    { id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], fs?, neighbors?: [placeId], water?: [placeId] }
+//            kinds: country, state, continent, region (ground); ocean, sea, strait, lake (water); river, canal, coast (lines); range, desert
 //            Every number is in tenths of a unit of a map `w` units wide, north up. A ring is the first point, then the step to each next one.
 //            A place's rings are an outline in which a point is inside when it is inside an odd number of them (a country with a country inside
 //            it has a hole); a sea, a lake, a range and a desert have no holes, so a point is inside when it is inside any ring. A `line` (a river)
@@ -22,9 +23,10 @@ const PLACE_ZOOM_MAX = 8;
 const PLACE_DOT_TAP = 0.02;                // a dot is found within this share of the map's width of its point, at zoom 1 (and 1/k of it at zoom k): about a
                                            // fingertip on a phone, so a microstate wants a zoom in to be found
 const PLACE_LINE_BAND = 0.014;             // a river is found within this share of the map's width of its line, likewise
-const PLACE_UNION_KINDS = ['ocean', 'sea', 'lake', 'range', 'desert'];   // outlines with no holes
-const PLACE_WATER_KINDS = ['ocean', 'sea'];  // water whose outline overlaps the coast: a tap on land is never on it
-const PLACE_FIND_ORDER = ['lake', 'river', 'continent', 'range', 'desert', 'region', 'sea', 'ocean'];   // the order a tap finds what it is on (after dots and the map's land)
+const PLACE_LINE_BANDS = { coast: 0.04, canal: PLACE_DOT_TAP };   // a coast, which is wide, and a canal, which is short, are found within more (3.7)
+const PLACE_UNION_KINDS = ['ocean', 'sea', 'strait', 'lake', 'range', 'desert'];   // outlines with no holes
+const PLACE_WATER_KINDS = ['ocean', 'sea', 'strait'];  // water whose outline overlaps the coast: a tap on land is never on it
+const PLACE_FIND_ORDER = ['lake', 'river', 'canal', 'continent', 'range', 'desert', 'region', 'strait', 'sea', 'ocean'];   // the order a tap finds what it is on (after dots and the map's land); a coast is never what a tap is named as
 
 /* ---------- the geometry of a region, decoded once ---------- */
 const PLACE_GEOM = new WeakMap();
@@ -91,7 +93,7 @@ const placeOnLand = (map, geom, x, y) => geom.places.some(p => map.land.includes
 const placeNearDot = (map, place, x, y, k) => !!place.dot && Math.hypot(x - place.dot[0] / map.q, y - place.dot[1] / map.q) <= map.size[0] * PLACE_DOT_TAP / k;
 function placeInside(map, place, x, y, k){
   const geom = placeGeom(map);
-  if(place.line) return place.rings.some(i => placeLineDistance(geom.rings[i], x, y) <= map.size[0] * PLACE_LINE_BAND / k);
+  if(place.line) return place.rings.some(i => placeLineDistance(geom.rings[i], x, y) <= map.size[0] * (PLACE_LINE_BANDS[place.kind] || PLACE_LINE_BAND) / k);
   if(!place.rings.length || !placeInArea(geom, place, x, y)) return false;
   return !(PLACE_WATER_KINDS.includes(place.kind) && placeOnLand(map, geom, x, y));
 }

@@ -5,7 +5,8 @@
 //   labelled  the kinds named on the labelled map
 //   borders   which kinds have neighbours and water computed
 import { equalEarth, laea, albers } from './geo.mjs';
-import { slug, area, water, line, find, splitAtMeridian } from './specs.mjs';
+import { slug, area, water, line, coast, find, splitAtMeridian } from './specs.mjs';
+import { sharedEdges } from './topology.mjs';
 
 const WIDTH = 1000;
 
@@ -75,6 +76,13 @@ const CENSUS = {
   northeast: ['CT', 'ME', 'MA', 'NH', 'NJ', 'NY', 'PA', 'RI', 'VT']
 };
 const LAKES = ['Lake Superior', 'Lake Michigan', 'Lake Huron', 'Lake Erie', 'Lake Ontario'];
+// the states whose shore on each water is that water's coast (the lower 48; Alaska and Hawaii are on insets)
+const COASTS = {
+  west: ['california', 'oregon', 'washington'],
+  east: ['maine', 'new-hampshire', 'massachusetts', 'rhode-island', 'connecticut', 'new-york', 'new-jersey', 'delaware', 'maryland', 'virginia', 'north-carolina', 'south-carolina', 'georgia', 'florida'],
+  gulf: ['florida', 'alabama', 'mississippi', 'louisiana', 'texas']
+};
+const US_COAST_EPS = 0.25;   // degrees: as far from the water's outline as a coast edge may lie (the distance a state's water is found at, `borders.coast.eps` below)
 const US_RIVERS = ['Mississippi', 'Missouri', 'Ohio', 'Arkansas', 'Colorado', 'Columbia', 'Rio Grande', 'Snake', 'Tennessee', 'Hudson'];
 
 async function usSpecs(load) {
@@ -84,15 +92,20 @@ async function usSpecs(load) {
   const stateSpecs = states.map(f => area([f], { id: slug(f.props.name), name: f.props.name, kind: 'state', layer: 'states', code: f.props.postal, parts: [insetOf[f.props.postal] || 'lower48'] }));
   const regions = Object.entries(CENSUS).map(([id, codes]) => ({ id, name: { west: 'The West', midwest: 'The Midwest', south: 'The South', northeast: 'The Northeast' }[id], kind: 'region', members: stateSpecs.filter(s => codes.includes(s.code)).map(s => s.id) }));
   const only = { parts: ['lower48'] };
+  // water is not cut away under the insets (a tap on the sea beside Hawaii is the Pacific), and an ocean takes in the bays and gulfs inside it
+  const pacific = water(find(marine, 'name', ['North Pacific Ocean', 'Gulf of Alaska', 'Bering Sea', 'Bristol Bay', 'Cook Inlet']), { id: 'pacific', name: 'Pacific Ocean', kind: 'ocean', layer: 'marine', ...only, cover: true });
+  const atlantic = water(find(marine, 'name', ['North Atlantic Ocean', 'Gulf of Maine', 'Bay of Fundy', 'Chesapeake Bay', 'Straits of Florida']), { id: 'atlantic', name: 'Atlantic Ocean', kind: 'ocean', layer: 'marine', ...only, cover: true });
+  const gulf = water(find(marine, 'name', 'Gulf of Mexico'), { id: 'gulf-of-mexico', name: 'Gulf of Mexico', kind: 'sea', layer: 'marine', ...only, cover: true });
+  // the three coasts of the lower 48: the shore of the states along each water (a line, tapped within a band of it, 3.7)
+  const owners = sharedEdges(stateSpecs, () => true);
+  const coasts = [['west-coast', 'The West Coast', COASTS.west, pacific], ['east-coast', 'The East Coast', COASTS.east, atlantic], ['gulf-coast', 'The Gulf Coast', COASTS.gulf, gulf]]
+    .map(([id, name, ids, on]) => coast(stateSpecs.filter(s => ids.includes(s.id)), on, owners, US_COAST_EPS, { id, name, kind: 'coast', layer: 'coasts', ...only }));
   return [
     ...stateSpecs, ...regions,
     ...['Canada', 'Mexico'].map(n => area(find(countries, 'NAME', n), { id: slug(n), name: n, kind: 'country', layer: 'countries', ...only })),
     ...LAKES.map(n => water(find(lakes, 'name', n), { id: slug(n), name: n, kind: 'lake', layer: 'lakes', ...only })),
     ...US_RIVERS.map(n => line(find(rivers, 'name', n), { id: `${slug(n)}-river`, name: `${n} River`, kind: 'river', layer: 'rivers', ...only })),
-    // water is not cut away under the insets (a tap on the sea beside Hawaii is the Pacific), and an ocean takes in the bays and gulfs inside it
-    water(find(marine, 'name', ['North Pacific Ocean', 'Gulf of Alaska', 'Bering Sea', 'Bristol Bay', 'Cook Inlet']), { id: 'pacific', name: 'Pacific Ocean', kind: 'ocean', layer: 'marine', ...only, cover: true }),
-    water(find(marine, 'name', ['North Atlantic Ocean', 'Gulf of Maine', 'Bay of Fundy', 'Chesapeake Bay', 'Straits of Florida']), { id: 'atlantic', name: 'Atlantic Ocean', kind: 'ocean', layer: 'marine', ...only, cover: true }),
-    water(find(marine, 'name', 'Gulf of Mexico'), { id: 'gulf-of-mexico', name: 'Gulf of Mexico', kind: 'sea', layer: 'marine', ...only, cover: true }),
+    pacific, atlantic, gulf, ...coasts,
     ...[['ROCKY MOUNTAINS', 'Rocky Mountains', ranges], ['APPALACHIAN MTS.', 'Appalachian Mountains', ranges], ['CASCADE RANGE', 'Cascade Range', ranges], ['SIERRA NEVADA', 'Sierra Nevada', sierra]]
       .map(([n, name, src]) => area(find(src, 'NAME', n), { id: slug(name), name, kind: 'range', layer: 'ranges', ...only }))
   ];
@@ -114,6 +127,8 @@ async function europeSpecs(load) {
   return [
     ...countries.map(f => area([f], { id: slug(nameOf(f)), name: nameOf(f), kind: 'country', layer: 'countries', dot: MICROSTATES.includes(f.props.NAME), optional: true })),
     ...EUROPE_SEAS.map(([id, name, ne, kind = 'sea']) => water(find(marine, 'name', ne), { id, name, kind, layer: 'marine' })),
+    // a strait is water too narrow for a finger: its outline, and a point at its middle that is tapped within a radius (3.7, as a microstate is)
+    water(find(marine, 'name', 'Strait of Gibraltar'), { id: 'strait-of-gibraltar', name: 'Strait of Gibraltar', kind: 'strait', layer: 'marine', dot: true }),
     area(find(ranges, 'NAME', 'ALPS'), { id: 'alps', name: 'The Alps', kind: 'range', layer: 'ranges' }),
     area(find(pyr, 'NAME', 'PYRENEES'), { id: 'pyrenees', name: 'The Pyrenees', kind: 'range', layer: 'ranges' })
   ];
@@ -129,10 +144,10 @@ export const REGIONS = [
   { id: 'world', name: 'The world', ...frame(world), tol: 0.1, load: ['countries110', 'marine110'], specs: worldSpecs,
     land: ['continent'], draw: ['continent'], labelled: ['continent', 'ocean'] },
   { id: 'us', name: 'The United States', ...frame(usa), tol: 0.35, load: ['states50', 'countries50', 'marine50', 'lakes50', 'rivers50', 'regions50', 'regions10'], specs: usSpecs,
-    land: ['state', 'country'], draw: ['country', 'state', 'lake', 'river'], labelled: ['state', 'lake', 'river', 'range', 'ocean', 'sea'],
+    land: ['state', 'country'], draw: ['country', 'state', 'lake', 'river'], labelled: ['state', 'lake', 'river', 'coast', 'range', 'ocean', 'sea'],
     borders: { land: ['state', 'country'], water: ['ocean', 'sea', 'lake'], across: (a, b) => a.layer !== b.layer && (a.kind === 'state') !== (b.kind === 'state'),
       along: { eps: 8, minKm: 20 }, coast: { eps: 0.25, minKm: 15 } } },
   { id: 'europe-west', name: 'Europe, west', ...frame(europe), tol: 0.35, minVisible: 6, load: ['countries50', 'marine50', 'regions50', 'regions10'], specs: europeSpecs,
-    land: ['country'], draw: ['country'], labelled: ['country', 'sea', 'ocean', 'range'],
+    land: ['country'], draw: ['country'], labelled: ['country', 'sea', 'strait', 'ocean', 'range'],
     borders: { land: ['country'], water: ['ocean', 'sea'], across: () => false, along: { eps: 8, minKm: 20 }, coast: { eps: 0.2, minKm: 15 } } }
 ];

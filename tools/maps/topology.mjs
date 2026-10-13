@@ -70,6 +70,25 @@ export function bordersAlong(a, b, { eps, minKm }, onWater = () => false) {
   return longest >= minKm;
 }
 
+// ----- a coast: the stretches of the listed places' outlines that touch the water and that no other place shares, as open lines
+// (a coast edge is one only this layer's places have: the edge between two states is a border). A run of such edges is one line, so a coast cut by
+// a border (Florida's two shores) is as many lines as it has stretches; the water is any of its rings within `eps` degrees, as for a place's water below.
+export function coastLines(members, owners, water, eps) {
+  const rings = rawRings(water), lines = [];
+  for (const spec of members) {
+    for (const ring of rawRings(spec)) {
+      let run = [];
+      const flush = () => { if (run.length > 1) lines.push(run); run = []; };
+      for (const [a, b] of edgesOf(ring)) {
+        const shared = (owners.get(edgeKey(a, b)) || { ids: new Set() }).ids.size >= 2;
+        if (!shared && nearWater([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2], rings, eps)) { if (!run.length) run.push(a); run.push(b); } else flush();
+      }
+      flush();
+    }
+  }
+  return lines;
+}
+
 // ----- water: a coast edge (an edge no other place of its layer has) touches a water place when its middle is inside it or within `eps` degrees of it
 const insideAny = (pt, rings) => rings.some(r => pointInRing(pt[0], pt[1], r));
 function nearWater(pt, rings, eps) {
