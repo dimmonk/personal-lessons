@@ -120,6 +120,11 @@ export async function X46(env) {
   c.check(now.r.where === 'ok' && JSON.stringify(await lit(page)) === '["cedar"]' && await page.locator('.item .mk-right').count() === 1, `a tap in the hole of Alder, asked for Cedar, scored ${now.r && now.r.where} and lit ${JSON.stringify(await lit(page))}`);
   landFill = await fillOf(page, '.item .mp-country.lit');
   blankFill = await fillOf(page, '.item .mp-country:not(.lit)');
+  // the border between two countries stands out from the countries: at least 3 to 1, the contrast of a line a learner has to see (WCAG 1.4.11)
+  const border = await page.evaluate(() => { const el = document.querySelector('.item .mp-country:not(.lit)'), css = getComputedStyle(el); return [css.stroke, css.fill]; });
+  const light = rgb => { const [r, g, b] = (rgb.match(/[\d.]+/g) || [0, 0, 0]).slice(0, 3).map(v => { const u = Number(v) / 255; return u <= 0.03928 ? u / 12.92 : ((u + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+  const [hi, lo] = [light(border[0]), light(border[1])].sort((a, b) => b - a), ratio = (hi + 0.05) / (lo + 0.05);
+  c.check(ratio >= 3, `the border of a country (${border[0]}) is ${ratio.toFixed(1)} to 1 against the country (${border[1]}), under 3 to 1`);
   await next(page);
 
   // Speck: a dot found within a radius of its point, and the zoom the tap was made at is kept

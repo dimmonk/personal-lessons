@@ -428,6 +428,8 @@ export const FAULTS = [
     edits: [replace('app/lessons/place.js', 'const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));', 'const circle = null;')] },
   { check: 'X46', name: 'a worked question shown without the words of its question', only: MAP_SEEN,
     edits: [replace('app/lessons/place-view.js', '<p class="stem">${esc(paras(ask.prompt).join(\' \'))}</p>${mapHtml(map, { scope: `worked|', '${mapHtml(map, { scope: `worked|')] },
+  { check: 'X46', name: 'the border of a country drawn in a color close to the country\'s own', only: MAP_SEEN,
+    edits: [replace('app.css', '.mp{fill:var(--rule);stroke:var(--dim);', '.mp{fill:var(--rule);stroke:var(--disabled);')] },
   // a group of places made into questions (9: X47)
   { check: 'X47', name: 'a flag drawn too small to tell from the next', only: PLACE_SEEN,
     edits: [replace('app.css', '.flagbig{display:block;flex:0 0 auto;font-size:64px;line-height:1.1;min-width:80px;', '.flagbig{display:block;flex:0 0 auto;font-size:20px;line-height:1.1;min-width:20px;')] },

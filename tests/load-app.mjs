@@ -46,7 +46,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'isRecallAsk', 'recallListHtml', 'recallMarkHtml', 'recallClaimHtml', 'recallQuestionText', 'factHtml', 'spokenHtml', 'speechPick', 'claimTry', 'triesClaimed', 'claimedResults', 'resultOk',
   'interviewDay', 'roundDays', 'logOf', 'answersSectionHtml', 'answersFormHtml', 'answersFormOf', 'ANSWERS_PAGE',
   // maps and the place ask
-  'PLACE_NONE', 'PLACE_DOT_TAP', 'PLACE_LINE_BAND', 'PLACE_ZOOM_MAX', 'PLACE_MODES', 'mapOf', 'mapPlace', 'mapHasPlace', 'placeGeom', 'placeContains', 'placeAt', 'scorePlace', 'placeRightText', 'placeRightIds',
+  'PLACE_NONE', 'PLACE_DOT_TAP', 'PLACE_SMALL_TAP', 'placeSmallAt', 'PLACE_LINE_BAND', 'PLACE_ZOOM_MAX', 'PLACE_MODES', 'mapOf', 'mapPlace', 'mapHasPlace', 'placeGeom', 'placeContains', 'placeAt', 'scorePlace', 'placeRightText', 'placeRightIds',
   'placeNeighborsOf', 'placeWaterOf', 'placeTapOk', 'placeAskProblems', 'mapBlockProblems', 'mapHtml', 'mapBlockHtml', 'placeHtml', 'placeMarkHtml', 'placeMissHtml', 'placeWorkedHtml', 'placeLitIds',
   // a group of places made into questions
   'PLACE_GEN_FORMS', 'PLACE_SALTS', 'isPlaceGen', 'isMade', 'placeKey', 'placeKeyOf', 'placePairs', 'placePairAt', 'placeSeedOf', 'placeAllowedForms', 'placeItem', 'placeItems', 'placeDraw', 'placeSetPicks',

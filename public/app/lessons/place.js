@@ -23,6 +23,8 @@ const PLACE_NONE = 'none';                 // the answer of the "Landlocked" but
 const PLACE_ZOOM_MAX = 8;
 const PLACE_DOT_TAP = 0.02;                // a dot is found within this share of the map's width of its point, at zoom 1 (and 1/k of it at zoom k): about a
                                            // fingertip on a phone, so a microstate wants a zoom in to be found
+const PLACE_SMALL_TAP = 0.03;              // a ground place no bigger than a fingertip (its box at most twice this wide and tall) is found within this share of the map's
+                                           // width of its outline, at zoom 1 (and 1/k of it at zoom k): Luxembourg, about 7 pixels across on a phone, can be hit with a finger
 const PLACE_LINE_BAND = 0.014;             // a river is found within this share of the map's width of its line, likewise
 const PLACE_LINE_BANDS = { coast: 0.04, canal: PLACE_DOT_TAP };   // a coast, which is wide, and a canal, which is short, are found within more (3.7)
 const PLACE_UNION_KINDS = ['ocean', 'sea', 'strait', 'lake', 'range', 'desert'];   // outlines with no holes
@@ -50,7 +52,8 @@ function placeGeom(map){
   let geom = PLACE_GEOM.get(map);
   if(geom) return geom;
   const rings = map.rings.map(r => placeDecodeRing(r, map.q));
-  const byId = Object.fromEntries(map.places.map(p => [p.id, { ...p, area: p.line ? 0 : p.rings.reduce((n, i) => n + placeRingArea(rings[i].pts), 0) }]));
+  const boxOf = p => p.rings.reduce((b, i) => { const r = rings[i].box; return [Math.min(b[0], r[0]), Math.min(b[1], r[1]), Math.max(b[2], r[2]), Math.max(b[3], r[3])]; }, [Infinity, Infinity, -Infinity, -Infinity]);
+  const byId = Object.fromEntries(map.places.map(p => [p.id, { ...p, area: p.line ? 0 : p.rings.reduce((n, i) => n + placeRingArea(rings[i].pts), 0), box: p.rings.length ? boxOf(p) : null }]));
   geom = { rings, byId, places: map.places.map(p => byId[p.id]) };
   PLACE_GEOM.set(map, geom);
   return geom;
@@ -85,6 +88,17 @@ function placeLineDistance(ring, x, y){
   }
   return best;
 }
+// the distance from a point to the outline of a ring, which is closed (the last point joins the first)
+function placeRingDistance(ring, x, y){
+  const p = ring.pts, n = p.length;
+  let best = Infinity;
+  for(let i = 0; i < n; i += 2){
+    const j = (i + 2) % n, dx = p[j] - p[i], dy = p[j + 1] - p[i + 1], len = dx * dx + dy * dy;
+    const t = len ? Math.max(0, Math.min(1, ((x - p[i]) * dx + (y - p[i + 1]) * dy) / len)) : 0;
+    best = Math.min(best, Math.hypot(x - (p[i] + t * dx), y - (p[i + 1] + t * dy)));
+  }
+  return best;
+}
 function placeInArea(geom, place, x, y){
   const inside = place.rings.filter(i => placeInRing(geom.rings[i], x, y)).length;
   return PLACE_UNION_KINDS.includes(place.kind) ? inside > 0 : inside % 2 === 1;
@@ -98,7 +112,22 @@ function placeInside(map, place, x, y, k){
   if(!place.rings.length || !placeInArea(geom, place, x, y)) return false;
   return !(PLACE_WATER_KINDS.includes(place.kind) && placeOnLand(map, geom, x, y));
 }
-const placeContains = (map, place, x, y, k = 1) => placeNearDot(map, place, x, y, k) || placeInside(map, place, x, y, k);
+// The small ground place a tap is meant for: the nearest of the places whose box is no bigger than a fingertip when the tap is within PLACE_SMALL_TAP of
+// its outline (or inside it), whatever larger place the tap is on; null when it is near none. A place's own tap radius never takes a tap from the place
+// it is on when that is the one asked: it is only one more way to be right (placeContains).
+function placeSmallAt(map, x, y, k = 1){
+  const geom = placeGeom(map), reach = map.size[0] * PLACE_SMALL_TAP / k;
+  let best = null, bestAt = Infinity;
+  for(const place of geom.places){
+    const box = place.box;
+    if(!box || place.line || place.dot || !map.land.includes(place.kind) || Math.max(box[2] - box[0], box[3] - box[1]) > 2 * reach) continue;
+    if(x < box[0] - reach || x > box[2] + reach || y < box[1] - reach || y > box[3] + reach) continue;
+    const away = placeInside(map, place, x, y, k) ? 0 : Math.min(...place.rings.map(i => placeRingDistance(geom.rings[i], x, y)));
+    if(away <= reach && away < bestAt){ best = place; bestAt = away; }
+  }
+  return best ? best.id : null;
+}
+const placeContains = (map, place, x, y, k = 1) => placeNearDot(map, place, x, y, k) || placeInside(map, place, x, y, k) || placeSmallAt(map, x, y, k) === place.id;
 // The place a tap is on, as the app names it after a miss: a microstate's circle if the tap is on one (it is drawn over the land it lies in, so a tap on
 // it is the microstate, not the country under it; so is the dot of the kind asked for), else the smallest in the kind asked for if there is one, else the
 // first by what a learner would call it (a dot, a lake, a river, the land, a continent, a range, a sea, an ocean); null when it is on none.
@@ -108,6 +137,8 @@ function placeAt(map, x, y, k = 1, kind = null){
   const dot = ofKind => geom.places.filter(p => placeNearDot(map, p, x, y, k) && ofKind(p.kind))[0] || null;
   const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));
   if(circle) return circle.id;
+  const small = placeSmallAt(map, x, y, k);
+  if(small) return small;
   const asked = kind ? smallest(geom.places.filter(p => p.kind === kind)) : null;
   if(asked) return asked.id;
   for(const tier of [...map.land, ...PLACE_FIND_ORDER].filter((v, i, all) => all.indexOf(v) === i)){

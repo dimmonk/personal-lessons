@@ -511,7 +511,7 @@ table.ownsum td:last-child{white-space:normal}
 .mapsvg:active{cursor:grabbing}
 .map-water{fill:var(--water)}
 .map-frame{fill:none;stroke:var(--disabled);stroke-width:1;vector-effect:non-scaling-stroke}
-.mp{fill:var(--rule);stroke:var(--disabled);stroke-width:.8px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.mp{fill:var(--rule);stroke:var(--dim);stroke-width:.8px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .mp-continent{stroke:var(--rule)}
 .mp-lake{fill:var(--water)}
 .mp-river{fill:none;stroke:var(--dim);stroke-width:1.4px;stroke-linecap:round;stroke-linejoin:round}

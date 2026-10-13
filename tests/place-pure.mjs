@@ -15,7 +15,7 @@ async function suite(app) {
   let checks = 0;
   const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
   const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
-  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, placeHtml, placeMissHtml, PLACE_DOT_TAP, SAY } = app;
+  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, placeHtml, placeMissHtml, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
   const ask = (right, extra = {}) => ({ id: 'a', kind: 'place', prompt: 'x', map: 'europe-west', right, ...extra });
   const border = (of, map = 'europe-west') => ({ id: 'b', kind: 'place', mode: 'neighbor-water', prompt: 'x', map, of });
   const score = (a, tap) => scorePlace({}, a, tap);
@@ -87,6 +87,15 @@ async function suite(app) {
   same([placeAt(eu, smx, smy, 1, 'country'), placeAt(eu, smx + r * 0.5, smy, 1, 'country'), placeAt(eu, smx - r * 1.8, smy, 1, 'country')], ['san-marino', 'san-marino', 'italy'],
     'a tap on the circle of San Marino is named San Marino, not Italy under it, and one well away from it is Italy');
   same(placeAt(eu, smx + r * 0.5, smy, 4, 'country'), 'italy', 'a quarter of the circle at zoom 4 is a quarter of the way out: half the radius away is off the circle');
+  // a ground place no bigger than a fingertip (Luxembourg) is found within a radius of its outline, whatever larger place the tap is on, and the radius shrinks
+  // as the map is zoomed in; a place bigger than a fingertip (Belgium) has no such radius
+  const lux = mapPlace(eu, 'luxembourg'), [lx0, ly0, lx1, ly1] = lux.box, lmid = (ly0 + ly1) / 2, reach = eu.size[0] * PLACE_SMALL_TAP, bel = mapPlace(eu, 'belgium'), [bx0, , , by1] = bel.box;
+  same([score(ask('luxembourg'), [lx1 + reach * 0.8, lmid, 1]), score(ask('luxembourg'), [lx1 + reach * 1.3, lmid, 1]), score(ask('luxembourg'), [lx1 + reach * 0.8, lmid, 2]), score(ask('luxembourg'), [lx1 + reach * 0.4, lmid, 2]), score(ask('luxembourg'), [lx1 + reach * 0.1, lmid, 4])],
+    ['ok', 'no', 'no', 'ok', 'no'], 'a tap near the outline of Luxembourg, on the country beside it, is Luxembourg; a little further off is not, the radius is half as wide on a map zoomed in twice, and Luxembourg is no smaller than a fingertip zoomed in 4 times');
+  same([placeAt(eu, lx1 + reach * 0.8, lmid, 1, 'country'), placeAt(eu, lx0 - reach * 0.8, lmid, 1, 'country'), placeAt(eu, lx1 + reach * 1.3, lmid, 1, 'country')], ['luxembourg', 'luxembourg', 'germany'],
+    'the place a tap beside Luxembourg is on is named Luxembourg, and one further off is the country it is on');
+  same([score(ask('germany'), [lx1 + reach * 0.8, lmid, 1]), score(ask('belgium'), [bx0 - reach * 0.8, by1 - 5, 1]), score(ask('belgium'), [(bx0 + mapPlace(eu, 'belgium').box[2]) / 2, (bel.box[1] + by1) / 2 - 20, 1])], ['ok', 'no', 'ok'],
+    'the radius of a small place takes no tap from the place it is on when that is the one asked, and gives none to a place bigger than a fingertip');
   // a place with a hole (the isles: Cedar inside Alder)
   const isles = mapOf('isles');
   same(score({ id: 'a', kind: 'place', prompt: 'x', map: 'isles', right: 'cedar' }, [85, 70, 1]), 'ok', 'a tap in the hole of a country is in the country inside it');
@@ -229,6 +238,8 @@ const FAULTS = [
   ['a canal found within a river\'s band only', s => s.replace('canal: PLACE_DOT_TAP }', 'canal: 0.014 }')],
   ['a strait that holds the land under its outline', s => s.replace("const PLACE_WATER_KINDS = ['ocean', 'sea', 'strait'];", "const PLACE_WATER_KINDS = ['ocean', 'sea'];")],
   ['a tap on a microstate\'s circle named for the country under it', s => s.replace('const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));', 'const circle = null;')],
+  ['a small place found only inside its outline', s => s.replace('const PLACE_SMALL_TAP = 0.03;', 'const PLACE_SMALL_TAP = 0;')],
+  ['a tap beside a small place that does not shrink as the map is zoomed in', s => s.replace('map.size[0] * PLACE_SMALL_TAP / k;', 'map.size[0] * PLACE_SMALL_TAP;')],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];
