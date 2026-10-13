@@ -4,7 +4,8 @@
 // tests/e2e-own.mjs and e2e-wealth.mjs; the articles, the tap and the charts of step 5 (X15, X31, and the chart half of X20, which is in
 // tests/e2e-number.mjs beside the figure half; and X30, Stats' pilot walked) are in tests/e2e-feed.mjs and e2e-stats.mjs; the labels, the panel
 // and the sides of step 6 (X32, and X33, Ideology's pilot walked) are in tests/e2e-labels.mjs; the message, the line to write and the questions of
-// four asks of step 7 (X34, X35, and X36, Psychology's pilot walked) are in tests/e2e-account.mjs and e2e-psychology.mjs. Each is a function of the environment
+// four asks of step 7 (X34, X35, and X36, Psychology's pilot walked) are in tests/e2e-account.mjs and e2e-psychology.mjs; the map block and the place ask (X46)
+// are in tests/e2e-atlas.mjs. Each is a function of the environment
 // (e2e-env.mjs) that drives the real app, in Chromium, with the test subject loaded, and returns its checker: how many assertions it
 // made and which failed. tests/e2e-controls.mjs runs every one of them against the app with a seeded fault and requires exactly
 // that check to go red.
@@ -24,6 +25,7 @@ import { PRESSURE_CHECKS } from './e2e-pressure.mjs';
 import { SCAMS_CHECKS } from './e2e-scams.mjs';
 import { INTERVIEW_CHECKS, walkInterview } from './e2e-interview.mjs';
 import { CIVICS_CHECKS } from './e2e-civics.mjs';
+import { ATLAS_CHECKS } from './e2e-atlas.mjs';
 import { walkPressure } from './e2e-pressure.mjs';
 
 // A Monday. Reviews run Monday to Sunday, so the tests that move through days start on one and name the days they move to.
@@ -290,4 +292,4 @@ export async function X23(env) {
   return c;
 }
 
-export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X15: FEED_CHECKS.X15, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, X30: STATS_CHECKS.X30, X31: FEED_CHECKS.X31, X32: LABEL_CHECKS.X32, X33: LABEL_CHECKS.X33, X34: ACCOUNT_CHECKS.X34, X35: ACCOUNT_CHECKS.X35, X36: PSYCHOLOGY_CHECKS.X36, ...PRESSURE_CHECKS, ...SCAMS_CHECKS, ...INTERVIEW_CHECKS, ...CIVICS_CHECKS, ...SOUND_CHECKS };
+export const CHECKS = { X1, X2, X3, X5, X13: NUMBER_CHECKS.X13, X15: FEED_CHECKS.X15, X20: NUMBER_CHECKS.X20, X21, X22, X23, X24: OWN_CHECKS.X24, X25, X26: WEALTH_CHECKS.X26, X27: OWN_CHECKS.X27, X28: HISTORY_CHECKS.X28, X30: STATS_CHECKS.X30, X31: FEED_CHECKS.X31, X32: LABEL_CHECKS.X32, X33: LABEL_CHECKS.X33, X34: ACCOUNT_CHECKS.X34, X35: ACCOUNT_CHECKS.X35, X36: PSYCHOLOGY_CHECKS.X36, ...PRESSURE_CHECKS, ...SCAMS_CHECKS, ...INTERVIEW_CHECKS, ...CIVICS_CHECKS, ...ATLAS_CHECKS, ...SOUND_CHECKS };

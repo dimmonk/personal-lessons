@@ -11,6 +11,8 @@ const replace = (file, from, to) => ({ file, from, to });
 // The sound checks spend minutes in real time on real sound, so the two kinds of fault each run only the checks that can see them: a fault in
 // the sound or singing code runs the five sound checks (exactly one of them must go red), and every other fault runs the other checks.
 const sound = fault => ({ ...fault, only: Object.keys(SOUND_CHECKS) });
+// the checks that draw a map, or run the screens a map sits on
+const MAP_SEEN = ['X1', 'X2', 'X3', 'X15', 'X21', 'X23', 'X46'];
 
 export const FAULTS = [
   { check: 'X1', name: 'a question moves on by itself after two and a half seconds',
@@ -397,6 +399,21 @@ export const FAULTS = [
   { check: 'X28', name: 'a Back that does nothing inside the app',
     edits: [replace('app/init.js', "window.addEventListener('popstate', backInApp);", "void 0;")] },
   // sound and singing (9: X8, X10, X11, X12, X16; 3 to 9, 2026-10-11: X29)
+  // the map block and the place ask (9: X46). Only the checks that draw maps or share the screens they sit on can see these faults.
+  { check: 'X46', name: 'a drag that counts as a tap', only: MAP_SEEN,
+    edits: [replace('app/lessons/map-run.js', "if(e.type !== 'pointerup' || g.moved || g.multi) return;", "if(e.type !== 'pointerup') return;")] },
+  { check: 'X46', name: 'a pinch that counts as a tap', only: MAP_SEEN,
+    edits: [replace('app/lessons/map-run.js', 'multi: true, moved: true, pinch:', 'multi: false, moved: false, pinch:')] },
+  { check: 'X46', name: 'a tap read on the map as it was before it was zoomed', only: MAP_SEEN,
+    edits: [replace('app/lessons/map-run.js', 'const screen = mapScreen(g.svg, g.el, mapViewNow(g.el)), [x, y] = mapUnitAt(screen, e.clientX, e.clientY)', 'const screen = mapScreen(g.svg, g.el, { k: 1, cx: mapDims(g.el)[0] / 2, cy: mapDims(g.el)[1] / 2 }), [x, y] = mapUnitAt(screen, e.clientX, e.clientY)')] },
+  { check: 'X46', name: 'a tap stored without the zoom it was made at', only: MAP_SEEN,
+    edits: [replace('app/lessons/place-run.js', 'const tap = [x, y, k];', 'const tap = [x, y, 1];')] },
+  { check: 'X46', name: 'the right place lit before the answer', only: MAP_SEEN,
+    edits: [replace('app/lessons/place-view.js', 'lit: marked ? placeLitIds(map, ask) : [],', 'lit: placeLitIds(map, ask),')] },
+  { check: 'X46', name: 'Landlocked right for a country that touches the sea', only: MAP_SEEN,
+    edits: [replace('app/lessons/place.js', 'wet = w === PLACE_NONE ? !water.length :', 'wet = w === PLACE_NONE ? true :')] },
+  { check: 'X46', name: 'a tap on land that is on the sea because its outline covers it', only: MAP_SEEN,
+    edits: [replace('app/lessons/place.js', 'return !(PLACE_WATER_KINDS.includes(place.kind) && placeOnLand(map, geom, x, y));', 'return true;')] },
   sound({ check: 'X8', name: 'a sound system made when a sung question opens',
     edits: [replace('app/lessons/sing-run.js', "  singEnsure(inst, answered);\n  wireSingControls();", "  singEnsure(inst, answered);\n  audioContext();\n  wireSingControls();")] }),
   sound({ check: 'X8', name: 'the microphone asked for when a sung question opens',
@@ -442,6 +459,14 @@ function transformFor(fault) {
   return { transform, used };
 }
 
+// A check that runs over this long is stopped and counts as failed: a seeded fault can make a check's loop spin for ever, and that must be red, not a hang.
+export const CHECK_LIMIT_MS = 15 * 60 * 1000;
+export const withLimit = (promise, id) => {
+  let timer;
+  const stop = new Promise((_, reject) => { timer = setTimeout(() => reject(new Error(`${id} ran over ${CHECK_LIMIT_MS / 60000} minutes and was stopped`)), CHECK_LIMIT_MS); timer.unref(); });
+  return Promise.race([promise, stop]).finally(() => clearTimeout(timer));
+};
+
 // Runs every check against the app with one fault in it. Resolves to { red: [check ids that failed], errors }.
 export async function runWithFault(browser, fault) {
   const { transform, used } = transformFor(fault);
@@ -451,7 +476,7 @@ export async function runWithFault(browser, fault) {
   const ids = fault.only || Object.keys(CHECKS).filter(id => !(id in SOUND_CHECKS));
   const lane = async list => {
     for (const id of list) {
-      try { const c = await CHECKS[id](env); if (c.failures.length) { red.push(id); errors.push(c.failures[0]); } }
+      try { const c = await withLimit(CHECKS[id](env), id); if (c.failures.length) { red.push(id); errors.push(c.failures[0]); } }
       catch (error) { red.push(id); errors.push(`${id} crashed: ${error.message.split('\n')[0]}`); }
     }
   };
