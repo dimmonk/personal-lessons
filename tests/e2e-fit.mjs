@@ -108,8 +108,11 @@ export async function fitChecks(env, c) {
     await page.locator(MAP).scrollIntoViewIfNeeded();
     await tapUnit(page, point);
     const text = await env.screenText(page), score = await page.evaluate(() => Q.cur.score && Q.cur.score.ok);
-    c.check(asked === 'luxembourg' ? score === true : /You tapped: Luxembourg\./.test(text),
-      `a tap a finger's width beside Luxembourg on the whole map, asked for ${asked}, ${asked === 'luxembourg' ? 'did not score right' : `is named "${(text.match(/You tapped: [^.]*/) || ['nothing'])[0]}", not Luxembourg`}`);
+    // asked for Luxembourg, or for Germany (the country the tap is inside, which the small radius never takes a tap from), it is right; asked for any other
+    // place, it is a miss named Luxembourg
+    const right = ['luxembourg', 'germany'].includes(asked);
+    c.check(right ? score === true : /You tapped: Luxembourg\./.test(text),
+      `a tap a finger's width beside Luxembourg on the whole map, asked for ${asked}, ${right ? 'did not score right' : `is named "${(text.match(/You tapped: [^.]*/) || ['nothing'])[0]}", not Luxembourg`}`);
     await context.close();
   }
 
