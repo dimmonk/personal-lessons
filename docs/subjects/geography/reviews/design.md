@@ -1,118 +1,98 @@
 Verdict: passes
 
-# Record review: Geography (gate 5), fourth review
-Reviewer: an independent record reviewer (Opus 5.5), 2026-10-13; opened: .claude/skills/build-subject/SKILL.md, docs/subjects/geography/design.md, docs/subjects/geography/reviews/design.md (the third review), docs/research/knowing-where-places-are.md, docs/research/review-after-lessons.md and docs/research/designing-a-subject.md (their Read lines and marks, by search), docs/lesson-standard.md (sections 3 with 3.4, 3.5, 3.7, 3.10, 3.11; 4; 6; 10; the revision log of 11), public/app/lessons/place-gen.js, place-draw.js and gen.js (by search, only to confirm what the delivery claims, as briefed), public/maps/europe-west.js and us.js (by search, for the strait, the coasts and the microstates), tools/design/fp.mjs and tools/design/approve.mjs (run, `goal --show` only), tests/validate-lessons.mjs (run), git log -14 and the diff of ec7b6fe
-Reviewed: sha256:bb57a5cedc804e04fdb4b1748c77fd37eb00fab7452009ed549181a519d3814d
+# Record review: Geography (gate 5), sixth review
+Reviewer: an independent record reviewer (Opus 5.5), 2026-10-13; opened: .claude/skills/build-subject/SKILL.md, docs/subjects/geography/design.md (by search and by `git diff fb56bf1` of it), docs/subjects/geography/reviews/design.md (the fifth review), docs/subjects/geography/reviews/l16.md (the stand-in review, its head), docs/lesson-standard.md (3.5, 3.9, 3.10, 3.11, 10.1 and 10.3 by search; V70, V73 and V74 in 9.2 by search), tests/lessons/rules-lesson.mjs and controls-table.mjs (by search: the flags rules V73 and V74), tools/design/fp.mjs (run), tests/validate-lessons.mjs (run), git log fb56bf1..HEAD
+Reviewed: sha256:a36c9ebb687359891ecdc420789735272de415d4a4fae745ced730f730a15422
 
-`node tools/design/fp.mjs geography` prints the fingerprint above. `node tests/validate-lessons.mjs` passes (48,529
-checks). The research notes and the skill are unchanged since 08ee6a6, before the third review. The gate 2 screen is
-3,541 characters. The record's only change since the third review (ec7b6fe) is `delivery` and the gate 3 prose.
+`node tools/design/fp.mjs geography` prints the fingerprint above. `node tests/validate-lessons.mjs` reports one fault of
+55,410 checks: V69, lesson 16 changed while the record has no passing review of this design. That fault is this
+review's subject. No other rule fails, V73 (reading) on lesson 16 included.
 
-## The third review's fixes
+## The fifth review's fixes
 
-1. Gate 3, the pilot's needs: **done**, by way (a). What the fact checks name is now built and in the standard:
-   - the place group, a `FC.gen` with `places` in four forms (`tap`, `name`, `flag`, `border`), the seed naming a
-     (place, form) pair (3.5; a58aead, with the validator and tests in ca9bef4 and b9fa794);
-   - the check drawn from it, `draw: { gen, split, only? }`, holding the split exactly, drawing at random within a form,
-     preferring a place not yet used and one last met in another form, with `only` keeping a place to one form (3.4;
-     `placeDraw` in place-gen.js, called through schedule.js);
-   - V76 reading a drawn check's mix from its split (4.5; 935860d);
-   - the review asking a place group on the place missed last time, else the one met longest ago, in another form, and
-     honouring `only` (6.3; `placeReviewPick`, called through schedule.js);
-   - each place filed as its own item, `<generator>|<place>` (5.1).
+1. **Gate 3, `delivery`: done.**
+   - **The flags item** now says what 3.5 and 3.9 say. A `flags` block shows flags about 64 pixels wide. When a flag is
+     the question, the flag is bare and a `place` ask sits under it. V74 refuses a flag asked with its name beside it
+     (rules-lesson.mjs 170 to 172, with a control). With `names`, each flag has its name beside it on the look. A flag
+     question's feedback shows the flag with the name and opens with the place's `flagLine`. V73 counts the names a
+     flags block prints (rules-lesson.mjs 83 to 87). The item cites commits 0df30e6, 7cc9dcf and f9eea81.
+   - **The `map` block item** now names the things 3.9 lists:
+     - the `view` panels;
+     - names 12 pixels tall at every zoom;
+     - a microstate's name on a `lead` line from its dot;
+     - water in its own colors.
+   - **The map-data sizes** match 3.11's measurement of 2026-10-13: 235 KB in all, `world` 85.2, `us` 88.5,
+     `europe-west` 61.7. The item adds 3.11's line that the map data sets no name size.
+   - **The gate 3 prose** now says the same. Its "flags (emoji)" names the `flags` block and `flagLine`. A dated
+     sentence says what was "built after the first stand-in review", and it comes before "The pilot (l16) needs only
+     what is built".
+2. **Gate 5: done.**
+   - **l16's `feedback`** now says a flag item opens with the country's `flagLine`, "the one line that tells its flag
+     from the look-alike it is mistaken for". That is what `does` promises.
+   - **The gate 5 prose** has a new paragraph, dated by the stand-in review of 2026-10-13 (`reviews/l16.md`, verdict
+     fails, under the waiver of 2026-10-12). It says the review sent lesson 16 back for flags asked but never taught and
+     for a look a phone could not read. It says what the block now does about each, with the commits. It also says the
+     microstates' flags are not taught, and how the look's minute is to be measured.
 
-   The delivery list names each one with its commit and section. "The pilot (l16) needs only what is built" is now true
-   (gate 3 below).
-2. Gate 3, coasts, straits and canals: **done**. "What right is" now covers a coast (a band of 4% around its shore line)
-   and a strait (water, with a dot at its middle). A separate item covers the canal (a line held within 2%). Each is
-   marked BUILT with its commit (b62995b) and sections 3.7 and 3.11. What is not built is marked NOT BUILT: the Suez and
-   Panama canals (no data until their regions are built); Bering, Hormuz, the Bosphorus and the Dardanelles (no outline
-   in the data); other regions' coasts. All of this matches 3.7, 3.10 and 3.11. `us.js` holds the three coasts and
-   `europe-west.js` holds the Strait of Gibraltar with its dot.
+The record also gained `tried.l16`, which holds the failing stand-in review with its fingerprint and waiver (the fifth
+review's note on an empty `tried`). It also gained a statement in the l16 block that the microstates' flags are
+neither taught nor asked (the fifth review's note).
 
 ## Gate 0. What the owner asked for: passes
 
-Four asks, none dropped and none reworded since the last commit. Every owner entry carries words, a date and where;
-replaced words are kept in `previous`. Every `kept` topic is on the list and in a part. `opened.asks` holds the
-worklist and chat, and nothing gate 0 may not open. The one-line ask is covered by its topic, which now reads
-"(not tested)" on the owner's word "shown only".
+Unchanged. The asks are unchanged, each with words, date and where. Every `kept` topic is in a part. Flags of the
+microstates: the ask "flags as a third form of each country" keeps its words and its topic. The l16 block now says
+outright that the five microstates' flags are left out. This leaves the ask covered by a topic that parts cover, so no
+rejection fires. See the notes.
 
 ## Gate 1. The kind and the evidence: passes
 
-Nothing has changed since the third review: neither the record's principles nor the notes. `facts` and `judging` fit
-the moment. G2, G5, D5 and D6 decide; each is read in full in its note and names its choice, with the note's limits
-stated. The other principles claim no more than their notes. Not every principle only supports. Each principle is
-cited by a block.
+Unchanged. The principles, their marks and their choices are the same as in the fourth review. Each principle is cited
+by a block.
 
 ## Gate 2. The end result: passes
 
-The sentence is all doing. The real moment is a time and place. The test is done, not said, on:
-- places never practised;
-- pairs;
-- a second sitting a week later.
-
-Its bars are conventions (D15). Its placing section names every list. The one topic the test does not reach is the one
-line per country. That topic says "(not tested)" on the approved screen, and the owner's word on the ask is "shown
-only". The screen is under 5,000 characters, and the approval fingerprint is current (the validator passes).
+Unchanged. The sentence is about doing, and the moment is real. The test reaches every group of topics on new cases.
+The approval is current.
 
 ## Gate 3. The practice and delivery: passes
 
-What the practice gets right:
-- the answer is the place itself: a tap, a typed name, a flag to its country, a neighbor and the water;
-- each kind opens shown;
-- one look, then recall;
-- feedback comes at once: the place lit, the tap marked, one line;
-- `readingShare` is 0.1, as a judgement call (D4);
-- the practice approval is current;
-- nothing is swapped in because it exists.
+`practice`, `feedback` and `readingShare` (0.1) are unchanged. Against "Reject when":
+- **The input and action are the real moment's.** The practice is a tap on a blank map, a typed name, and a flag
+  tapped to its country.
+- **Reading is not most of the time.** V73 holds it on the built pilot.
+- **The first item of each kind is shown and worked.** That is D5, kept.
+- **The feedback is immediate and is the app's.**
+- **Nothing the pilot needs is missing.** Every capability lesson 16's block uses is in a delivery item marked BUILT,
+  with the standard's section and the commit:
+  - the `place` ask and the place group;
+  - the drawn check;
+  - the `map` block with `labels`, `lit` and `view`;
+  - names in pixels and `lead`;
+  - water colors;
+  - the `flags` block and `flagLine`.
 
-Every item of `delivery` is marked BUILT, with its commit and its section of the standard, or NOT BUILT. I checked the
-built ones against 3.4, 3.5, 3.7, 3.9, 3.11, 6.3 and 10.3, and against the code named above. Each says what the
-standard says. I found no delivery item the record needs that is missing from the list.
-
-The pilot, l16, reads as written against what is built:
-- **Shown step:** fixed worked items on `europe-west` (a `place` ask, the neighbor-and-water mode with Landlocked, a
-  `text` ask under a lit map).
-- **The look:** a `map` block with `labels`.
-- **Sets:** made from the group in each form. The microstates are kept to `tap` by `only`, which 3.4 applies to the
-  group's returns in a lesson and in the review. "Austria and Switzerland back to back" is an inner pair of
-  `{ gen, n: 1, with: { place } }` references (3.3, 3.5). A missed place comes back as itself three questions on (3.5).
-- **Check:** `draw: { gen, split: { tap: 5, name: 3, flag: 2, border: 2 }, only: { tap: [the five microstates] } }`.
-- **Data:** `europe-west` has the countries, the five microstates as dots, the seas and the Alps.
-- **Flags:** emoji text.
-- **The one line:** each place's `reason`.
-
-The not-built items (other regions, cities, capitals, parts of a state, the line of latitude or longitude, straits with
-no outline) are named, and the record says each later lesson waits for what it names. The rejection is "a delivery
-item is missing because the app cannot do it yet", and none is missing. How to read "planned before the first lesson"
-is a note, as in the two reviews before this one.
+  Each delivery item now says what sections 3 and 10 say. What is not built is marked NOT BUILT and is held for later
+  lessons. The gate 3 fields changed under the existing `approved.goal`, as the record rules allow.
 
 ## Gate 4. The form and the parts: passes
 
-`form` is this moment's. Every check is a smaller gate 2 test, in the form's actions, on a draw. Part 32's check asks
-only what the test's judging section asks. Every topic and every kept ask is in a part. There are 33 parts and 33
-blocks. The parts add up to the test:
-- placing, flags, naming, and borders and water: parts 1 to 30 and 33;
-- judging: part 32;
-- distance: part 31.
-
-The order builds from units (G4) and from the owner's "the world first".
+Unchanged: 33 parts and 33 blocks. Each check is a smaller gate 2 test in the form's actions, and the parts add up to
+the end result.
 
 ## Gate 5. Each lesson on paper: passes
 
-In every block:
-- the main activity is the part's action;
-- most of the time is recall;
-- the `check` is its part's, word for word;
-- every `why` names a principle of the record.
+The l16 block holds against "Reject when":
+- **The main activity is the part's action.** The look and the feedback carry the flags and the readable views.
+  Recall is still the place itself: a tap, a typed name, a flag to its country, a neighbor and the water.
+- **Most of the time is doing.** About 8 of 12 minutes are recall, 1 minute is the shown items (practice, D5) and 2
+  minutes are the check. The look keeps its one minute.
+- **The check is its part's, word for word.** It is unchanged.
+- **`why` names only gate 1 principles.** The list is unchanged.
+- **"Would the learner be closer?" Yes.** Flags are now taught before they are asked, and the look can be read.
 
-l32's traps take about 3 of 12 minutes. They are labelled practice only, so they are not its main activity. l16 shows
-one of each kind first, the typed name included. Its microstates are asked and checked in one form only. Its due mix
-starts once an earlier lesson exists.
-
-"If the learner did only this, would they be closer to the end result?" Yes, for every block. The pilot, l16, is still
-the lesson whose failure teaches most, and everything it names is now built. `designReview` goes into the record now
-that a review passes.
+`feedback` and `does` now agree. Every other block is unchanged and passes, as in the fourth review. The pilot is
+named (l16).
 
 ## Fixes needed
 
@@ -120,41 +100,30 @@ None.
 
 ## Notes
 
-- **How often a place comes back on later days.** The approved practice says "Places come back both ways, then on later
-  days until right three times". The gate 3 prose reads this as the group returning (2, 7 and 24 days), and that is
-  what is built. The review asks a place group strand on one place per due day (3.5, 6.3), and the strand leaves after
-  three good days. So in a group the size of l16's (about 15 places), most places do not come back on later days
-  through the review. They come back only through later lessons' due fifth and through l33. This fits the record's own
-  reading and is the designer's call (smaller groups, or one strand per few places, would return each place more
-  often). The pilot's try should show whether it holds.
-- **Planned before the first lesson.** Gate 3 step 5 reads "Anything it cannot do yet is built before any lesson, or the
-  subject waits", and its Pass line reads "planned before the first lesson". The record instead plans the other
-  regions, cities, capitals, parts of a state and the trap line after the pilot. The strict reading of the Pass line
-  would reject that. The rejection clause does not, and the pilot exists to cap a wrong design at one lesson. The owner
-  or the skill should settle which reading holds. (Carried over.)
-- **Labels in the delivery list.**
-  - The item headed "The review asking place groups" describes a lesson's `{ gen, n, with }` reference. The review's
-    pick is in the place-generator item.
-  - The place-generator item cites 3.10 ("Not built") among its sections.
-
-  Neither is wrong about what is built.
-- **Stale prose.** The gate 0 paragraph on `one-line` still argues "That is the ask's own scope, not a narrowing", and
-  quotes the owner's 2026-10-12 word for `where-places-are`. The record now rests on their "shown only" of 2026-10-13.
-  The gate 2 prose ends "the printed screen is asked again" and mentions neither 2026-10-13 approval. (Carried over.)
-- **Where the approval was given.** `approved.goal.where` does not say that the printed screen was pasted to the owner,
-  as the 2026-10-12 entry does. (Carried over.)
-- **The test against the practice.**
-  - The test's borders section says "10 places lit". The practice's `border` form shows the name (3.5), so the test
-    and the practice differ in the prompt but not in the answer.
-  - The test's distance section says "10 pairs of places" without "never asked as a pair", while part 31 says so.
-  - D6's choice says every practice item is answered with the place itself, but distance (two bands) and the traps (two
-    directions) are not.
-  - The paragraph's "It starts with the world, then the United States and Canada, then each region" says how the
-    lessons run.
-
-  (Carried over.)
-- **Alaska's Arctic coast.** 3.10 lists Alaska's Arctic coast as water that is not built, and l3 asks Alaska's water.
-  `delivery` still does not say so. It matters for l3, not for the pilot. (Carried over.)
-- **Part 12's flag.** Part 12's single flag can only be drawn from Canada, the United States and Mexico, so that part
-  of the check is close to fixed.
+- **`tried.l16` is stale by design.** Its `fp` is the lesson the stand-in read. Lesson 16 has changed since, so gate 6
+  needs a fresh stand-in review of the lesson as it is now. That review should be by a new reviewer, under a waiver
+  quoted again with its source. Recording the failing try is right.
+- **The look's minute.** The gate 5 prose now commits the second stand-in review to timing the look. If the look runs
+  much over a minute, the block cuts the look or `readingShare` is raised as a gate 3 change. That keeps the judgement
+  call honest. Hold to it.
+- **The microstates' flags.** The record now says plainly that they are left out. Andorra, Monaco, San Marino, Vatican
+  City and Liechtenstein are countries, and the ask says "each country". The cut is a design judgement on an owner's
+  ask. It is not a dropped ask, because the topic is still covered, but the owner has not seen it on a screen. Whether
+  to put it to them (`asked.mjs`, or a line in `out` on the next gate 2 screen) is the designer's call. Saying so is
+  better than leaving it implied.
+- **The wording of the views.** "the Alps and Italy with the five microstates, the Alps and the seas" names the Alps
+  twice. It also does not say which view holds Austria and Switzerland, though they are asked back to back.
+- **The flag contrast** (look-alikes asked back to back, with a `flagLine`) is a judgement call. Neither G2 nor G5 is
+  about contrasting pictures, and the block does not claim that either is.
+- **Microstate taps are cued.** The stand-in found that a microstate tap is a choice among five visible dots. Within
+  the record's "named and tapped only", that is a lesson-level matter for the writer, not a design fault.
+- **Part 12's check** still asks "1 flag with the country tapped" on Canada's provinces and territories, which have no
+  flags in the delivery list. It is carried over from earlier reviews and must be settled before part 12 is built.
+- **Carried over from the fourth review, still true:**
+  - a place's later-day returns go through one strand per group;
+  - "planned before the first lesson" against the rejection clause;
+  - the stale gate 0 and gate 2 prose;
+  - `approved.goal.where`;
+  - the test against the practice;
+  - Alaska's Arctic coast for l3.
 - **Copying.** No field names, quotes or follows another subject.

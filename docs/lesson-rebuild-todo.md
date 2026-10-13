@@ -58,6 +58,8 @@ nothing enforces; it is being rebuilt to end game, then every subject goes back 
 - [x] The build-subject skill audited from its outputs and its text (2026-10-12, `docs/build-subject-audit.md`, parts A and B)
 
 ## Parked (waits for your word on the other seven paragraphs)
+- [ ] Geography part 12: its check asks a flag of Canadian provinces, which have none (fix before lesson 12 is built)
+- [ ] Geography: the five microstates' flags are not asked (only tapped); ask the owner whether that stands
 - [ ] Three older browser-check faults (X3, X21, X22) also turn X45 and X46 red when every check runs: make each fault turn exactly its own check red
 - [ ] The other seven subjects' paragraphs and topics signed off, their dropped topics decided (Math, Wealth, Singing), Ideology's restored topics designed in
 - [ ] The five failing pilots fixed from their reviews (raw material on the branch `pilot-fixes-2026-10-12`), re-reviewed, deployed
