@@ -95,9 +95,10 @@ export async function X47(env) {
   const drawn = await queue(page);
   c.check(drawn.length === 5 && FORMS.map(f => count(drawn, f)).join() === '2,1,1,1', `the check asks ${FORMS.map(f => `${count(drawn, f)} ${f}`).join(', ')}, not 2 tap, 1 name, 1 flag, 1 border`);
   c.check(drawn.every(i => i.form === 'tap' || i.place !== 'speck') && drawn.every(i => i.key === `g-isles|${i.place}`) && new Set(drawn.map(i => i.place)).size === 5, `the check asks a place twice or in a form it is kept from (${drawn.map(i => `${i.place} ${i.form}`).join(', ')})`);
-  const missedForm = drawn[2], between = [];
+  // one place is missed on purpose: not the dot, which the check keeps to the one form, so that the review has another form to ask it in
+  const missedIn = drawn.findIndex(i => i.place !== 'speck'), missedForm = drawn[missedIn], between = [];
   for (let at = 0; at < 5; at++) {
-    await answer(page, at !== 2);
+    await answer(page, at !== missedIn);
     between.push(await page.evaluate(() => ({ feedback: document.querySelectorAll('[data-feedback]').length, marked: document.querySelectorAll('.item .mk-right, .item .mk-wrong').length,
       lit: Q.list[Q.at].item.values.form === 'name' ? 0 : document.querySelectorAll('.item .mp.lit').length })));
     await next(page);
@@ -106,7 +107,6 @@ export async function X47(env) {
   const text = await env.screenText(page);
   c.check(/4 of 5: passed/.test(text), `the result of the check is not 4 of 5: passed (${text.slice(0, 120)})`);
   c.check(await page.locator('[data-feedback]').count() === 5, 'the answers at the end are not all shown with their feedback');
-  await env.inspect(c, page, 'the result of a check drawn from a group of places');
 
   // what is stored: a try for each place, under its place, with the seed and numbers only
   const items = JSON.parse((await env.storage(page))['pl:atlas:items'] || '{}'), tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
