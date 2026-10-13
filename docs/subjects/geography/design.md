@@ -1305,7 +1305,21 @@
       "tests/fixtures/fixture-subject/design.mjs",
       "tools/design/record.mjs"
     ],
-    "writing": []
+    "writing": [
+      "docs/subjects/geography/design.md",
+      "docs/lesson-standard.md",
+      "tests/fixtures/fixture-subject/atlas-subject.js",
+      "tests/fixtures/fixture-subject/atlas-places.js",
+      "tests/fixtures/fixture-subject/atlas-items.js",
+      "tests/fixtures/fixture-subject/atlas-l1.lesson.js",
+      "tests/fixtures/fixture-subject/atlas-l2.lesson.js",
+      "tests/fixtures/fixture-subject/atlas-map.js",
+      "public/subjects/geography/subject.js",
+      "public/subjects/geography/gen-europe-west.js",
+      "public/subjects/geography/items-worked.js",
+      "public/subjects/geography/l16.lesson.js",
+      "docs/learner-view/geography-l16.md"
+    ]
   }
 }
 ---
