@@ -1,139 +1,160 @@
-Verdict: fails
+Verdict: passes
 
-# Record review: Geography (gate 5), third review
-Reviewer: an independent record reviewer (Opus 5.5), 2026-10-13; opened: .claude/skills/build-subject/SKILL.md, docs/subjects/geography/design.md, docs/subjects/geography/reviews/design.md (the second review), docs/research/knowing-where-places-are.md, docs/research/review-after-lessons.md and docs/research/designing-a-subject.md (finding headings, marks and Read lines), docs/lesson-standard.md (sections 3 with 3.11, 4 and 10, and its heading list), tools/design/fp.mjs (run), tools/design/approve.mjs (run with `goal --show` only), tests/validate-lessons.mjs (run), git diff of the record and the research notes between bcd87e8 and HEAD
-Reviewed: sha256:35d388d3845f66059d6b2871d8ab864ef9526fb1017b0d17e659a34b9562cf30
+# Record review: Geography (gate 5), fourth review
+Reviewer: an independent record reviewer (Opus 5.5), 2026-10-13; opened: .claude/skills/build-subject/SKILL.md, docs/subjects/geography/design.md, docs/subjects/geography/reviews/design.md (the third review), docs/research/knowing-where-places-are.md, docs/research/review-after-lessons.md and docs/research/designing-a-subject.md (their Read lines and marks, by search), docs/lesson-standard.md (sections 3 with 3.4, 3.5, 3.7, 3.10, 3.11; 4; 6; 10; the revision log of 11), public/app/lessons/place-gen.js, place-draw.js and gen.js (by search, only to confirm what the delivery claims, as briefed), public/maps/europe-west.js and us.js (by search, for the strait, the coasts and the microstates), tools/design/fp.mjs and tools/design/approve.mjs (run, `goal --show` only), tests/validate-lessons.mjs (run), git log -14 and the diff of ec7b6fe
+Reviewed: sha256:bb57a5cedc804e04fdb4b1748c77fd37eb00fab7452009ed549181a519d3814d
 
-`node tools/design/fp.mjs geography` prints the fingerprint above. `node tests/validate-lessons.mjs` passes (48,527
-checks). The research notes are unchanged since the second review. The gate 2 screen (`approve.mjs geography goal
---show`) is 3,541 characters and prints the reworded topic with "(not tested)".
+`node tools/design/fp.mjs geography` prints the fingerprint above. `node tests/validate-lessons.mjs` passes (48,529
+checks). The research notes and the skill are unchanged since 08ee6a6, before the third review. The gate 2 screen is
+3,541 characters. The record's only change since the third review (ec7b6fe) is `delivery` and the gate 3 prose.
 
-## The second review's fixes
+## The third review's fixes
 
-1. Gate 2, the one line per country: **done**, by the second exit. The owner's word "shown only, build the pilot"
-   (chat, 2026-10-13) is on the `one-line` ask (and on `where-places-are`, whose kept topic was reworded), the earlier
-   words kept in `previous`; the topic now reads "one line of what each country is, shown after each answer (not
-   tested)" on every list and part; the changed screen carries the same words in `approved.goal`, the earlier approval
-   in `approved.history`.
-2. Gate 4, part 32's trap pairs: **done**, by the second exit. Part 32's check and l32's are word for word "10 places
-   never practised ... at least 8 of the 10"; l32's `does` and the gate 5 prose say the traps are practice only and
-   "measured by nothing". "Madrid and New York" was replaced by "Reno and Los Angeles".
-3. Gate 3 `delivery`: **done** for what it asked. The trap item is "BUILT except its feedback's line and its cities",
-   the map block's line of latitude or longitude and cities as places are marked NOT BUILT, and the statuses match
-   3.7, 3.9, 3.10, 3.11 and 10.3 (map data for `world`, `us`, `europe-west`; the `place` ask and neighbor-and-water;
-   the lit-map `text` ask; generators, cities, capitals and parts of a state not built). Read afresh, the list now
-   says something the standard does not support (gate 3 below).
+1. Gate 3, the pilot's needs: **done**, by way (a). What the fact checks name is now built and in the standard:
+   - the place group, a `FC.gen` with `places` in four forms (`tap`, `name`, `flag`, `border`), the seed naming a
+     (place, form) pair (3.5; a58aead, with the validator and tests in ca9bef4 and b9fa794);
+   - the check drawn from it, `draw: { gen, split, only? }`, holding the split exactly, drawing at random within a form,
+     preferring a place not yet used and one last met in another form, with `only` keeping a place to one form (3.4;
+     `placeDraw` in place-gen.js, called through schedule.js);
+   - V76 reading a drawn check's mix from its split (4.5; 935860d);
+   - the review asking a place group on the place missed last time, else the one met longest ago, in another form, and
+     honouring `only` (6.3; `placeReviewPick`, called through schedule.js);
+   - each place filed as its own item, `<generator>|<place>` (5.1).
 
-The l16 note of the second review is taken: part 16's check and l16's draw the microstates only among the five named
-and tapped.
+   The delivery list names each one with its commit and section. "The pilot (l16) needs only what is built" is now true
+   (gate 3 below).
+2. Gate 3, coasts, straits and canals: **done**. "What right is" now covers a coast (a band of 4% around its shore line)
+   and a strait (water, with a dot at its middle). A separate item covers the canal (a line held within 2%). Each is
+   marked BUILT with its commit (b62995b) and sections 3.7 and 3.11. What is not built is marked NOT BUILT: the Suez and
+   Panama canals (no data until their regions are built); Bering, Hormuz, the Bosphorus and the Dardanelles (no outline
+   in the data); other regions' coasts. All of this matches 3.7, 3.10 and 3.11. `us.js` holds the three coasts and
+   `europe-west.js` holds the Strait of Gibraltar with its dot.
 
 ## Gate 0. What the owner asked for: passes
 
-Four asks, none dropped; each item's `words`, `when` and `where` are unchanged since the last commit; each owner
-entry carries words, date and where, and the replaced ones are kept in `previous`. Every `kept` topic is on the list
-and in a part. `opened.asks` holds the worklist and chat. The first two reviews' doubt (whether "in the feedback" in
-the `one-line` ask is the owner's) is now moot: the owner's own word on that ask is "shown only".
+Four asks, none dropped and none reworded since the last commit. Every owner entry carries words, a date and where;
+replaced words are kept in `previous`. Every `kept` topic is on the list and in a part. `opened.asks` holds the
+worklist and chat, and nothing gate 0 may not open. The one-line ask is covered by its topic, which now reads
+"(not tested)" on the owner's word "shown only".
 
 ## Gate 1. The kind and the evidence: passes
 
-Unchanged since the second review, and the notes unchanged. `facts` and `judging` fit the moment. G2, G5, D5 and D6
-decide, each `*Read: full: ...*` and **Decides** in its note, each naming its choice with the note's limits; every
-other principle claims no more than its note (R2 and R8 say less than their notes, which is allowed). Not every
-principle supports; every principle is cited by a block. G1's flag point is overruled openly by the owner's ask.
+Nothing has changed since the third review: neither the record's principles nor the notes. `facts` and `judging` fit
+the moment. G2, G5, D5 and D6 decide; each is read in full in its note and names its choice, with the note's limits
+stated. The other principles claim no more than their notes. Not every principle only supports. Each principle is
+cited by a block.
 
 ## Gate 2. The end result: passes
 
-The sentence is all doing; the real moment is a time and place; the test is done, not said, on places never
-practised and pairs, with conventional bars (D15) and two sittings a week apart; its placing section names every list.
-The one topic the test does not reach is the one line per country, and the topic itself now says "(not tested)" on the
-screen the owner approved, with their word on the ask that it is shown only. The skill gives no written exemption for
-an untested topic, but only the owner's word settles an ask, and the ask cannot leave the list without a drop the owner
-did not give; their recorded word on the exact screen is the settlement the skill allows. Screen under 5,000
-characters; approval fingerprint current (validator).
+The sentence is all doing. The real moment is a time and place. The test is done, not said, on:
+- places never practised;
+- pairs;
+- a second sitting a week later.
 
-## Gate 3. The practice and delivery: rejected
+Its bars are conventions (D15). Its placing section names every list. The one topic the test does not reach is the one
+line per country. That topic says "(not tested)" on the approved screen, and the owner's word on the ask is "shown
+only". The screen is under 5,000 characters, and the approval fingerprint is current (the validator passes).
 
-Sound: the practice is the place itself; each kind opens shown; one look, then recall; feedback at once, the place
-lit and the tap marked; `readingShare` 0.1 as a judgement call (D4); the practice approval is current. Nothing is
-swapped in because it exists.
+## Gate 3. The practice and delivery: passes
 
-Rejected: **the pilot needs what the delivery list marks not built, while the list and the gate 3 prose say "The pilot
-(l16) needs only what is built".** The skill: "Anything it cannot do yet is built before any lesson, or the subject
-waits"; "Pass when ... every `delivery` item exists in the app or is planned before the first lesson."
-- l16's check (as every fact check) reads "the split is fixed, and within each form the places are drawn at random,
-  preferring ones last asked in another form; the five microstates are drawn only among the 5 named and tapped". What
-  the standard builds (3.4) is a check of fixed items (not drawn), or one `draw: { strands, n }` that "picks n items of
-  the named strands at random", preferring items "no earlier check or retest of the lesson asked". Neither fixes a
-  split by form, and neither prefers a place last asked in another form; V76 does not read a drawn check (4.5), so not
-  even the mix is held. The record's own generator line names this as not built: "one that makes a `place` or naming
-  item from the map data (a place of the group, the form it was not last asked) is not (3.10)".
-- The same line says "the review asks a strand on a generator, so each group of places is a strand with its
-  generator": l16's places come back "on later days until right three times" (the approved practice) only through a
-  generator that is not built.
-So the pilot cannot be written to its block with what is built, and the delivery list does not plan that build before
-it.
+What the practice gets right:
+- the answer is the place itself: a tap, a typed name, a flag to its country, a neighbor and the water;
+- each kind opens shown;
+- one look, then recall;
+- feedback comes at once: the place lit, the tap marked, one line;
+- `readingShare` is 0.1, as a judgement call (D4);
+- the practice approval is current;
+- nothing is swapped in because it exists.
 
-Also missing from `delivery`: **what "right" is for a coast, a strait and a canal.** The test places "coasts" and
-"straits and canals", part 2's check names the coasts, parts 21 and 30 hold straits and canals; "What right is"
-covers a state, country, sea, ocean, lake, range, region, river and microstate, and the map-data line lists straits
-and canals only as places no region holds yet. Whether a coast is a shape, a band or its ocean, and whether a strait is
-a shape or a dot, is neither said nor marked built or not built. (Deserts have a rule in 3.7 and are listed as data
-not built, so they are covered.)
+Every item of `delivery` is marked BUILT, with its commit and its section of the standard, or NOT BUILT. I checked the
+built ones against 3.4, 3.5, 3.7, 3.9, 3.11, 6.3 and 10.3, and against the code named above. Each says what the
+standard says. I found no delivery item the record needs that is missing from the list.
+
+The pilot, l16, reads as written against what is built:
+- **Shown step:** fixed worked items on `europe-west` (a `place` ask, the neighbor-and-water mode with Landlocked, a
+  `text` ask under a lit map).
+- **The look:** a `map` block with `labels`.
+- **Sets:** made from the group in each form. The microstates are kept to `tap` by `only`, which 3.4 applies to the
+  group's returns in a lesson and in the review. "Austria and Switzerland back to back" is an inner pair of
+  `{ gen, n: 1, with: { place } }` references (3.3, 3.5). A missed place comes back as itself three questions on (3.5).
+- **Check:** `draw: { gen, split: { tap: 5, name: 3, flag: 2, border: 2 }, only: { tap: [the five microstates] } }`.
+- **Data:** `europe-west` has the countries, the five microstates as dots, the seas and the Alps.
+- **Flags:** emoji text.
+- **The one line:** each place's `reason`.
+
+The not-built items (other regions, cities, capitals, parts of a state, the line of latitude or longitude, straits with
+no outline) are named, and the record says each later lesson waits for what it names. The rejection is "a delivery
+item is missing because the app cannot do it yet", and none is missing. How to read "planned before the first lesson"
+is a note, as in the two reviews before this one.
 
 ## Gate 4. The form and the parts: passes
 
-`form` is this moment's. Every check is a smaller gate 2 test in the form's actions: part 32's check is now placing
-only, the action the test's judging section asks; the traps are out of every check. Every topic and every kept ask is
-in a part (the one-line topic on every country part, shown not tested); 33 parts, 33 blocks; the parts add up to the
-test (placing, flags, naming, borders and water in parts 1 to 30 and 33; judging in 32; distance in 31). The order
-builds from units (G4) and the owner's "the world first".
+`form` is this moment's. Every check is a smaller gate 2 test, in the form's actions, on a draw. Part 32's check asks
+only what the test's judging section asks. Every topic and every kept ask is in a part. There are 33 parts and 33
+blocks. The parts add up to the test:
+- placing, flags, naming, and borders and water: parts 1 to 30 and 33;
+- judging: part 32;
+- distance: part 31.
 
-## Gate 5. Each lesson on paper: passes, apart from what gate 3 sends back
+The order builds from units (G4) and from the owner's "the world first".
 
-Every block's main activity is its part's action; most of each lesson is recall; every `check` is its part's word for
-word; every `why` names a principle of the record. l32's traps are about 3 of 12 minutes, a different action from the
-part's, labelled practice only and measured by nothing: they are not its main activity, so not a rejection. l16
-shows one of each kind first, the typed name included; its microstates are asked and checked in one form only; its due
-mix is said to start once an earlier lesson exists. "If the learner did only this, would they be closer to the end
-result?" Yes for every block. The pilot, l16, is still the one whose failure teaches most. Its check, as written, waits
-on gate 3's fix.
+## Gate 5. Each lesson on paper: passes
+
+In every block:
+- the main activity is the part's action;
+- most of the time is recall;
+- the `check` is its part's, word for word;
+- every `why` names a principle of the record.
+
+l32's traps take about 3 of 12 minutes. They are labelled practice only, so they are not its main activity. l16 shows
+one of each kind first, the typed name included. Its microstates are asked and checked in one form only. Its due mix
+starts once an earlier lesson exists.
+
+"If the learner did only this, would they be closer to the end result?" Yes, for every block. The pilot, l16, is still
+the lesson whose failure teaches most, and everything it names is now built. `designReview` goes into the record now
+that a review passes.
 
 ## Fixes needed
 
-1. Gate 3, the pilot's needs. Either (a) add a delivery item for the draw the fact checks name (a fixed split by form,
-   places drawn at random within each form, preferring those last asked in another form, a place restricted to the
-   forms its lesson asked) and the place generator for the review strand, marked NOT BUILT and built before the pilot;
-   or (b) reword the fact checks (every part 1 to 30 and its block, word for word) to what 3.4 builds, and say how
-   l16's strand returns without a generator. Either way, correct "The pilot (l16) needs only what is built" in the
-   delivery list and the gate 3 prose so it is true.
-2. Gate 3, coasts, straits and canals: say in "What right is" how each is tapped and scored, and mark each built or not
-   built (with where in the standard).
-
-Then the record gets a fresh review for its new fingerprint.
+None.
 
 ## Notes
 
-- Step 5 of gate 3 reads "Anything it cannot do yet is built before any lesson, or the subject waits." The record plans
-  the other regions, cities, capitals, parts of a state and the trap line after the pilot ("every later lesson waits
-  for what it names"). The second review read "planned before the first lesson" as satisfied by that plan, and the
-  pilot exists to cap a wrong design at one lesson, so this review does not reject on it; the strict reading would.
-  The owner or the skill should settle which reading holds.
-- The prose is stale in three places: the gate 0 paragraph on `one-line` still argues "That is the ask's own scope, not
-  a narrowing" and quotes the old owner word for `where-places-are`, where the record now rests on the owner's "shown
-  only"; the gate 2 prose ends "the printed screen is asked again" and does not mention either 2026-10-13 approval.
-- `approved.goal.where` says "on the one line per country, the last change to the gate 2 screen", and the asks' where
-  says "asked whether the one line per country is shown only or tested". Neither says the printed screen was pasted, as
-  the 2026-10-12 entry did ("on the printed gate 2 screen"). The skill binds the approval to the screen as printed; if
-  it was the question alone, the screen should be pasted and their words asked on it.
-- The same words, "shown only, build the pilot", are recorded on two asks and the approval. The validator allows it;
-  it is one answer to one question, which reasonably covers the reworded topic under both asks and the screen.
-- Carried over, not fixed: D6's choice says every practice item is answered with the place itself, but distance (two
-  bands) and the traps (two directions) are not; the test's distance section says "10 pairs of places" without "never
-  asked as a pair" while part 31 says so; the paragraph's "It starts with the world, then the United States and
-  Canada, then each region" says how the lessons run.
-- 3.10 lists "Alaska's Arctic coast as water" as not built; l3 asks Alaska's water. A tap on the Pacific is still
-  right, but the feedback lights only part of Alaska's water. Worth a line in `delivery`.
-- Part 12's "1 flag with the country tapped" can draw only from Canada, the United States and Mexico, the three flags
-  l12 asks; fine, but the check is near-fixed.
-- `designReview` is not in the record yet; it goes in when a review passes.
-- Copying: no field names, quotes or follows another subject.
+- **How often a place comes back on later days.** The approved practice says "Places come back both ways, then on later
+  days until right three times". The gate 3 prose reads this as the group returning (2, 7 and 24 days), and that is
+  what is built. The review asks a place group strand on one place per due day (3.5, 6.3), and the strand leaves after
+  three good days. So in a group the size of l16's (about 15 places), most places do not come back on later days
+  through the review. They come back only through later lessons' due fifth and through l33. This fits the record's own
+  reading and is the designer's call (smaller groups, or one strand per few places, would return each place more
+  often). The pilot's try should show whether it holds.
+- **Planned before the first lesson.** Gate 3 step 5 reads "Anything it cannot do yet is built before any lesson, or the
+  subject waits", and its Pass line reads "planned before the first lesson". The record instead plans the other
+  regions, cities, capitals, parts of a state and the trap line after the pilot. The strict reading of the Pass line
+  would reject that. The rejection clause does not, and the pilot exists to cap a wrong design at one lesson. The owner
+  or the skill should settle which reading holds. (Carried over.)
+- **Labels in the delivery list.**
+  - The item headed "The review asking place groups" describes a lesson's `{ gen, n, with }` reference. The review's
+    pick is in the place-generator item.
+  - The place-generator item cites 3.10 ("Not built") among its sections.
+
+  Neither is wrong about what is built.
+- **Stale prose.** The gate 0 paragraph on `one-line` still argues "That is the ask's own scope, not a narrowing", and
+  quotes the owner's 2026-10-12 word for `where-places-are`. The record now rests on their "shown only" of 2026-10-13.
+  The gate 2 prose ends "the printed screen is asked again" and mentions neither 2026-10-13 approval. (Carried over.)
+- **Where the approval was given.** `approved.goal.where` does not say that the printed screen was pasted to the owner,
+  as the 2026-10-12 entry does. (Carried over.)
+- **The test against the practice.**
+  - The test's borders section says "10 places lit". The practice's `border` form shows the name (3.5), so the test
+    and the practice differ in the prompt but not in the answer.
+  - The test's distance section says "10 pairs of places" without "never asked as a pair", while part 31 says so.
+  - D6's choice says every practice item is answered with the place itself, but distance (two bands) and the traps (two
+    directions) are not.
+  - The paragraph's "It starts with the world, then the United States and Canada, then each region" says how the
+    lessons run.
+
+  (Carried over.)
+- **Alaska's Arctic coast.** 3.10 lists Alaska's Arctic coast as water that is not built, and l3 asks Alaska's water.
+  `delivery` still does not say so. It matters for l3, not for the pilot. (Carried over.)
+- **Part 12's flag.** Part 12's single flag can only be drawn from Canada, the United States and Mexico, so that part
+  of the check is close to fixed.
+- **Copying.** No field names, quotes or follows another subject.

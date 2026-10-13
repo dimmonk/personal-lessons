@@ -1279,6 +1279,10 @@
       "practice": []
     }
   },
+  "designReview": {
+    "date": "2026-10-13",
+    "file": "reviews/design.md"
+  },
   "tried": {},
   "opened": {
     "asks": [
