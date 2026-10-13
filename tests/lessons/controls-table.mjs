@@ -404,6 +404,8 @@ export const CONTROLS = [
   { rule: 'V70', name: 'a group named in a lesson with a form it does not ask', data: (d, h) => h.setIn(d, atlasLesson('l2', 'flow', 1, 'set', 'items', 0, 'with'), { form: 'dance' }) },
   { rule: 'V70', name: 'a group named in a lesson for more places than it can offer in that form', data: (d, h) => h.setIn(d, atlasLesson('l2', 'flow', 1, 'set', 'items', 1, 'n'), 4) },
   { rule: 'V70', name: 'a group named in a lesson with a place it does not have', data: (d, h) => h.setIn(d, atlasLesson('l2', 'flow', 1, 'set', 'items', 0, 'with'), { place: 'narnia' }) },
+  { rule: 'V76', name: 'a check drawn from a group whose split is over the most of a form the subject allows',
+    data: (d, h) => h.setIn(h.setIn(d, atlasMeta('mix'), [{ facet: 'form', value: 'flag', max: 0.5 }]), atlasLesson('l2', 'check', 'items', 'draw', 'split'), { tap: 1, flag: 3 }) },
   { rule: 'V72', name: 'a pass rule that needs more of a form than the drawn check asks', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'pass'), [{ where: { form: 'flag' }, right: { min: 2 } }]) },
   { rule: 'V72', name: 'a pass rule that counts a form the subject does not have', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'pass'), [{ where: { form: 'dance' }, right: { min: 1 } }]) },
   { rule: 'V74', name: 'a group that lists one spelling of a place twice', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'list', 0, 'accept'), ['Alder', 'alder']) },
@@ -416,4 +418,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 293;
+export const PINNED_CONTROL_COUNT = 294;

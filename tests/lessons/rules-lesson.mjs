@@ -299,7 +299,10 @@ export function mixProblems(meta, facetsList) {
 export const V76 = subjectRule('V76', (s, check) => {
   for (const lv of s.lessons) {
     lv.setRefs.forEach((refs, i) => checkEach(check, `${lv.label} group ${i + 1}`, mixProblems(s.meta, defsOf(s, refs).map(x => x.def.facets))));
-    if (!s.engine.checkIsDrawn(lv.lesson.check)) checkEach(check, `${lv.label} check`, mixProblems(s.meta, defsOf(s, lv.checkRefs).map(x => x.def.facets)));
+    const drawn = s.engine.checkIsDrawn(lv.lesson.check), draw = drawn ? lv.lesson.check.items.draw : null;
+    if (!drawn) checkEach(check, `${lv.label} check`, mixProblems(s.meta, defsOf(s, lv.checkRefs).map(x => x.def.facets)));
+    // a check drawn from a place group holds the mix its split fixes: as many of each form as the split says, each with that form's facets
+    else if ('gen' in draw) checkEach(check, `${lv.label} check`, mixProblems(s.meta, Object.entries(draw.split).flatMap(([form, n]) => Array.from({ length: n }, () => s.placeMadeOf(draw.gen).find(x => x.form === form).item.facets))));
   }
 });
 
