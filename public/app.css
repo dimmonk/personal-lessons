@@ -18,9 +18,10 @@ mark{background:var(--accent);color:var(--bg)}
 
 /* ---------- shell ---------- */
 .app{display:flex;min-height:100vh}
-.main{flex-grow:1;min-width:0;display:flex;flex-direction:column}
+.main{flex-grow:1;min-width:0;display:flex;flex-direction:column;container:main/inline-size}
 #screen{flex-grow:1;display:flex;flex-direction:column}
-.pane{width:100%;max-width:470px;margin:0 auto;padding:0 20px 44px;flex-grow:1;display:flex;flex-direction:column}
+/* --gut: the pane's side margin, which the bar at the foot of a screen reaches back across: 20px on a phone, 32px on a tablet, 40px with the rail */
+.pane{--gut:20px;width:100%;max-width:470px;margin:0 auto;padding:0 var(--gut) 44px;flex-grow:1;display:flex;flex-direction:column}
 #host{display:flex;flex-direction:column;flex-grow:1}
 .pane.read{max-width:700px}
 .pane.flush{padding-bottom:0}
@@ -31,12 +32,17 @@ mark{background:var(--accent);color:var(--bg)}
 .tabbar button.on{color:var(--text)}
 .tabbar span{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase}
 
+/* A tablet, or a folding phone opened out (a Galaxy Fold's inner screen is about 880 px wide and near square): the tab bar stays, the pages widen. */
+@media(min-width:700px){
+  .pane{--gut:32px;max-width:640px;padding-bottom:52px}
+  .pane.read{max-width:760px}
+}
 @media(min-width:1000px){
   .app{max-width:1280px;margin:0 auto}
   .rail{display:flex;flex-direction:column;flex:0 0 244px;width:244px;border-right:1px solid var(--divider);
     background:var(--footer);position:sticky;top:0;height:100vh;overflow-y:auto}
   .tabbar{display:none}
-  .pane{max-width:680px;padding:0 40px 56px}
+  .pane{--gut:40px;max-width:680px;padding-bottom:56px}
   .pane.read{max-width:760px}
 }
 @media(min-width:1282px){
@@ -147,7 +153,7 @@ mark{background:var(--accent);color:var(--bg)}
 .stat span{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--label)}
 
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-@media(min-width:1000px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .tile{display:flex;flex-direction:column;justify-content:space-between;gap:14px;width:100%;
   min-height:84px;padding:12px;border:1px solid var(--rule)}
 .tile:hover{border-color:var(--border)}
@@ -175,7 +181,7 @@ table.k td b{color:var(--text)}
 
 .eyebrow-row{display:flex;flex-direction:column;gap:16px;padding:26px 0 30px}
 .eyebrow-row h1{margin:0;font-size:29px;font-weight:800;letter-spacing:-.03em;line-height:1.08}
-@media(min-width:1000px){.eyebrow-row h1{font-size:36px}}
+@media(min-width:700px){.eyebrow-row h1{font-size:36px}}
 
 .hint{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--disabled);text-align:center;margin:0}
@@ -240,10 +246,10 @@ mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(-
 /* The bar sits over the foot of the page. A control scrolled into view (by a tap, a Tab or a script) must clear it, not stop under it. */
 html{scroll-padding-bottom:120px}
 .actbar{position:sticky;bottom:0;z-index:4;display:flex;flex-direction:column;gap:12px;
-  margin:24px -20px 0;margin-top:auto;padding:18px 20px calc(20px + env(safe-area-inset-bottom));
+  margin:24px calc(-1 * var(--gut)) 0;margin-top:auto;padding:18px var(--gut) calc(20px + env(safe-area-inset-bottom));
   border-top:1px solid var(--divider);background:var(--footer)}
 .actrow{display:flex;gap:10px}
-@media(min-width:1000px){.actbar{margin:24px -40px 0;margin-top:auto;padding:18px 40px 24px}}
+@media(min-width:1000px){.actbar{padding-bottom:24px}}
 
 /* ---------- search results ---------- */
 .resgroup{display:flex;flex-direction:column;gap:4px;padding:0 0 20px}
@@ -514,6 +520,18 @@ table.ownsum td:last-child{white-space:normal}
 @media(max-width:520px){
   .item .mapsvg{max-height:max(240px,calc(100vh - 548px));max-height:max(240px,calc(100dvh - 548px))}
   .placeask .mapsvg{max-height:max(240px,calc(100vh - 572px));max-height:max(240px,calc(100dvh - 572px))}
+}
+/* A screen with one map, wide enough and tall enough (a Fold opened out, a tablet, a laptop): the map stands beside what goes with it instead of under
+   it, so the map, the question and Next are all on the screen at once. Everything else keeps to a column on the left; the bar at the foot spans both.
+   Measured on the column the screen gets (the rail taken off), so it follows a fold, an unfold or a turn of the device as it happens; a phone turned on
+   its side is too short for it and keeps the map above. A screen of several maps (a key) reads down the page as before. */
+@media(min-height:600px) and (min-aspect-ratio:3/4){
+  @container main (min-width:760px){
+    .pane:has(.block-map):not(:has(.block-map ~ .block-map)){--textcol:clamp(280px,36cqw,380px);max-width:none;position:relative}
+    .pane:has(.block-map):not(:has(.block-map ~ .block-map))>:not(.actbar){width:var(--textcol)}
+    .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 32px);right:var(--gut);margin:0}
+    .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .mapsvg{max-height:max(280px,calc(100vh - 272px));max-height:max(280px,calc(100dvh - 272px))}
+  }
 }
 .map-water{fill:var(--water)}
 .map-frame{fill:none;stroke:var(--disabled);stroke-width:1;vector-effect:non-scaling-stroke}

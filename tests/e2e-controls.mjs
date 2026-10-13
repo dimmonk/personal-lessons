@@ -23,7 +23,8 @@ export const FAULTS = [
   { check: 'X2', name: 'the reason shows as soon as one of two asks is answered',
     edits: [replace('app/lessons/item-view.js', "<div class=\"asks\">${asks}</div>${state.feedback || ''}</div>`;",
       "<div class=\"asks\">${asks}</div>${state.feedback || (open.length > Object.keys(state.a).length && Object.keys(state.a).length ? `<div class=\"feedback\" data-feedback>${esc(paras(item.reason).join(' '))}</div>` : '')}</div>`;")] },
-  { check: 'X3', name: 'an answer button wider than a phone',
+  // (X45 drives US Civics through its answer buttons, which a button wider than the screen also breaks, so it is left out)
+  { check: 'X3', name: 'an answer button wider than a phone', only: ['X1', 'X2', 'X3', 'X22', 'X23'],
     edits: [replace('app.css', '.opt{display:flex;', '.opt{min-width:420px;display:flex;')] },
   { check: 'X5', name: 'a place saved under a key of its own',
     edits: [replace('app/lessons/player.js', "  saveSeenLesson(subj.id, lesson.id, { rev: lesson.rev, at });",
@@ -447,6 +448,9 @@ export const FAULTS = [
     edits: [replace('app/lessons/queue.js', 'if(inst.seed === undefined || (inst.ref && isPlaceGen(Q.data.gens[inst.ref.gen]))) return { ...inst, redo: true };', 'if(inst.seed === undefined) return { ...inst, redo: true };')] },
   { check: 'X47', name: 'the tries of a place group filed under the group alone', only: PLACE_SEEN,
     edits: [replace('app/lessons/place-gen.js', 'const placeKey = (genId, placeId) => genId + PLACE_KEY_JOIN + placeId;', 'const placeKey = (genId, placeId) => genId;')] },
+  // a big screen: a Fold opened out, turned and folded (X48, on Geography's lesson 16)
+  { check: 'X48', name: 'a map kept under its question on a screen wide enough to stand beside it', only: ['X3', 'X47', 'X48'],
+    edits: [replace('app.css', '@container main (min-width:760px){', '@container main (min-width:7600px){')] },
   // a question asked on a map fits a phone's screen, and the map's feedback names its water (9: X47, on Geography's lesson 16)
   { check: 'X47', name: 'Landlocked in a row of its own, under the zoom buttons', only: PLACE_SEEN,
     edits: [replace('app/lessons/place-view.js', '</svg></div>${mapZoomHtml(o.beside)}</figure>`;', '</svg></div>${mapZoomHtml()}${o.beside ? `<div class="opts">${o.beside}</div>` : \'\'}</figure>`;')] },
