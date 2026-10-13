@@ -973,7 +973,7 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   place named from memory needs no spoken block (V74, 3.7); an item's `figure` may be a map (3.9); `FC.ENGINE` is 15 and the service
   worker cache v23. The browser runner, which could not start on `main` (`withLimit` imported and never defined), is mended.
 
-- **2026-10-13, place groups** (commits a58aead, ca9bef4, b9fa794, b62995b and the one that follows): a place generator (`places` in place of `params`
+- **2026-10-13, place groups** (commits a58aead, ca9bef4, b9fa794, b62995b, 935860d and 698185a): a place generator (`places` in place of `params`
   and `make`, 3.5) makes a place in one of four forms from the map data; a check may draw from it with a fixed split by form, places drawn at
   random preferring those last asked in another form, and `only` (3.4); a lesson's reference and the review take places missed or met longest
   ago first (3.5, 6.3); a place of a group is an item of its own in the record, `<generator>|<place>` (5.1); V70 and V72 to V75 and V83 read
