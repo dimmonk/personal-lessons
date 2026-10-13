@@ -116,8 +116,11 @@ const checkIsDrawn = check => !Array.isArray(check.items);
 // a check of sung questions says "on the note" where others say "right"
 const checkIsSung = check => !checkIsDrawn(check) && flatRefs(check.items).some(r => typeof r === 'object' && r !== null && 'sing' in r);
 const rightWord = check => checkIsSung(check) ? 'on the note' : 'right';
+// A drawn check (3.4) draws `n` questions of the named strands, or from one place group (`gen`) as many of each form as its `split` says
+const drawSize = draw => 'gen' in draw ? Object.values(draw.split).reduce((n, k) => n + k, 0) : draw.n;
+const drawStrands = (data, draw) => 'gen' in draw ? [(data.gens[draw.gen] || lessonFail(`unknown generator ${draw.gen}`)).strand] : draw.strands;
 function checkSize(check){
-  return checkIsDrawn(check) ? check.items.draw.n : flatRefs(check.items).reduce((n, r) => n + refCount(r), 0);
+  return checkIsDrawn(check) ? drawSize(check.items.draw) : flatRefs(check.items).reduce((n, r) => n + refCount(r), 0);
 }
 // The sets of a lesson's flow, in order.
 const flowSets = lesson => lesson.flow.filter(step => step.set).map(step => step.set);

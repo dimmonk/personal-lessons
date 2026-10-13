@@ -111,7 +111,7 @@ function renderSubject(subj){
 const SCORED = ['baseline'];
 function triesWithDefs(subj){
   const data = dataOf(subj);
-  return firstTriesOutside(subj.id, SCORED).map(({ key, t }) => ({ t, def: definitionOf(data, key) })).filter(x => x.def);
+  return firstTriesOutside(subj.id, SCORED).map(({ key, t }) => ({ t, def: defOfTry(data, key, t) })).filter(x => x.def);
 }
 function facetRows(subj, rows){
   const meta = dataOf(subj).meta;
@@ -144,7 +144,7 @@ function comingBackRows(subj){
 // the answers the learner counted right on their own word ("my answer means the same", 5), each with the day: they still come back
 function claimedRows(subj){
   const data = dataOf(subj);
-  return allTries(subj.id).filter(({ t }) => triesClaimed(t) && t.context !== 'baseline').map(({ key, t }) => ({ def: definitionOf(data, key), t })).filter(x => x.def)
+  return allTries(subj.id).filter(({ t }) => triesClaimed(t) && t.context !== 'baseline').map(({ key, t }) => ({ def: defOfTry(data, key, t), t })).filter(x => x.def)
     .map(({ def, t }) => [recallQuestionText(def), shortDay(t.d)]);
 }
 // what the baseline found, in the one line it showed at the end, on the day it was taken

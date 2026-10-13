@@ -102,9 +102,10 @@ function answerAsk(askId, answer){
   focusAfterAnswer();
 }
 
-// a missed question comes back at least three questions later, until it is right (R2); a made one comes back with new numbers
+// a missed question comes back at least three questions later, until it is right (R2); a made one comes back with new numbers,
+// a place of a place group as itself (the miss is that place, and the seed is what makes it the same sitting's question)
 function redoOf(inst){
-  if(inst.seed === undefined) return { ...inst, redo: true };
+  if(inst.seed === undefined || (inst.ref && isPlaceGen(Q.data.gens[inst.ref.gen]))) return { ...inst, redo: true };
   const seed = freshSeed(Q.subj.id, inst.key, Q.run, Q.list.length + 1000);
   return { ...instanceOf(Q.data, inst.ref, seed), redo: true };
 }

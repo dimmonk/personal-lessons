@@ -121,7 +121,7 @@ function logEvent(type, detail){
 /* ---------- checks: runs, results, done marks ---------- */
 // What one stored try stands for in a pass rule.
 function outcomeOf(data, key, t){
-  const def = definitionOf(data, key);
+  const def = defOfTry(data, key, t);
   return { facets: def ? def.facets : {}, r: t.r, ok: t.ok, key, d: t.d, seed: t.seed };
 }
 // The runs of a lesson's check (context 'check', or 'retest'; a baseline lesson's check is run as 'baseline'), oldest first: [{ run, d, outcomes, complete }].

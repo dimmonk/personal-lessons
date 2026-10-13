@@ -24,7 +24,7 @@ function usedIds(data){
 const strandDefs = (data, strandId) => [...Object.values(data.items), ...Object.values(data.gens)].filter(d => d.strand === strandId);
 // the strands a lesson's check covers
 function checkStrands(data, lesson){
-  if(checkIsDrawn(lesson.check)) return lesson.check.items.draw.strands;
+  if(checkIsDrawn(lesson.check)) return drawStrands(data, lesson.check.items.draw);
   return [...new Set(flatRefs(lesson.check.items).map(r => (definitionOf(data, refId(r)) || {}).strand).filter(Boolean))];
 }
 // a baseline measures and teaches nothing, so it never owns a topic or starts the schedule of one
@@ -99,7 +99,8 @@ function freshSeed(subjectId, genId, run, k){
 }
 const genRef = (gen, extra = {}) => ({ gen: gen.id, n: 1, ...extra });
 function freshInstance(data, subjectId, def, run, k){
-  return def.make ? instanceOf(data, genRef(def), freshSeed(subjectId, def.id, run, k)) : instanceOf(data, def.id);
+  if(isPlaceGen(def)) return placeReviewInstance(data, subjectId, def, run, k);
+  return isMade(def) ? instanceOf(data, genRef(def), freshSeed(subjectId, def.id, run, k)) : instanceOf(data, def.id);
 }
 // Definitions in the order they should come back: never seen first, then the least recently seen. Ties keep their listed order.
 function leastSeen(subjectId, defs){
@@ -108,15 +109,15 @@ function leastSeen(subjectId, defs){
 // One instance of a strand that the learner has not seen: fresh numbers if the strand has a generator, else an item held in reserve
 // that was never tried. When none is left, the least recently seen item comes back and `repeat` says so (E9's rule, kept).
 function strandInstance(data, subjectId, strandId, run, k, taken, facets){
-  const defs = strandDefs(data, strandId).filter(d => !taken.includes(d.id) || d.make);
-  const gens = defs.filter(d => d.make);
+  const defs = strandDefs(data, strandId).filter(d => !taken.includes(d.id) || isMade(d));
+  const gens = defs.filter(isMade);
   // a strand with several generators (Math's printed totals: right ones and wrong ones) draws among them, by the run, among those that
   // match the facets asked for (a retest); taking them in turn would always hand the first kind to a one-question review
   if(gens.length){
     const alike = facets ? gens.filter(g => whereMatches(facets, g.facets)) : gens, pool = alike.length ? alike : gens;
     return { inst: freshInstance(data, subjectId, pool[hashSeed(`${run}|${strandId}|${k}`) % pool.length], run, k), repeat: false };
   }
-  const used = usedIds(data), fixed = defs.filter(d => !d.make);
+  const used = usedIds(data), fixed = defs.filter(d => !isMade(d));
   const near = list => facets ? [...list.filter(d => Object.entries(facets).every(([f, v]) => (d.facets || {})[f] === v)), ...list] : list;
   const bank = leastSeen(subjectId, fixed.filter(d => !used.has(d.id) && !seenBefore(subjectId, d.id)));
   if(bank.length) return { inst: instanceOf(data, near(bank)[0].id), repeat: false };
@@ -127,9 +128,10 @@ function strandInstance(data, subjectId, strandId, run, k, taken, facets){
 // What an earlier check or retest (of this lesson, when it is named) already asked comes last, so a second draw is a different set where it can be.
 // A question that needs the learner's own answers is left out until they are entered.
 function drawInstances(data, subjectId, draw, run, taken, lessonId){
+  if('gen' in draw) return placeDrawInstances(data, subjectId, draw, run);
   const answers = notesOf(subjectId).answers;
   const defs = draw.strands.flatMap(s => strandDefs(data, s)).filter(d => !taken.includes(d.id) && recallDefReady(d, answers));
-  const gens = defs.filter(d => d.make), fixed = defs.filter(d => !d.make);
+  const gens = defs.filter(isMade), fixed = defs.filter(d => !isMade(d));
   const earlier = new Set(allTries(subjectId).filter(({ t }) => ['check', 'retest'].includes(t.context) && (lessonId === undefined || t.lesson === lessonId)).map(({ key }) => key));
   const mixedUp = (list, label) => shuffled(list, hashSeed(`${run}|draw|${label}`));
   const picks = [...mixedUp(fixed.filter(d => !earlier.has(d.id)), 'new'), ...mixedUp(fixed.filter(d => earlier.has(d.id)), 'again')].slice(0, draw.n);

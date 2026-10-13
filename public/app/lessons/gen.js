@@ -62,7 +62,9 @@ function fillDeep(value, values){
 }
 const GEN_ONLY = ['params', 'make'];
 // One instance of a generator as an ordinary item: id kept (a try is stored under it), text filled, seed and values attached.
+// A place group (place-gen.js) names a place and a form by the seed instead of drawing numbers.
 function itemFromGen(gen, seed, fixed){
+  if(isPlaceGen(gen)) return placeItem(gen, seed);
   const values = genValues(gen, seed, fixed);
   const item = Object.fromEntries(Object.entries(gen).filter(([k]) => !GEN_ONLY.includes(k)));
   return { ...fillDeep(item, values), seed, values };
@@ -81,7 +83,14 @@ function instanceOf(data, ref, seed){
   if('sing' in ref) return { key: singKey(ref.sing), item: singItem(ref.sing), seed, ref };
   const gen = data.gens[ref.gen] || lessonFail(`unknown generator ${ref.gen}`);
   const item = itemFromGen(gen, seed, ref.with);
-  return { key: gen.id, item, seed, ref };
+  return { key: isPlaceGen(gen) ? placeKey(gen.id, item.values.place) : gen.id, item, seed, ref };
 }
-// The definition (an item, a generator or a sung question) behind a stored id, or null when the data no longer has it.
-const definitionOf = (data, id) => data.items[id] || data.gens[id] || singDefinition(id);
+// The definition (an item, a generator, a place of a place group or a sung question) behind a stored id, or null when the data no longer has it.
+const definitionOf = (data, id) => data.items[id] || data.gens[id] || (placeKeyOf(data, id) || {}).gen || singDefinition(id);
+// The question a stored try was made on: the definition, or for a place group the question its seed makes (its form is in its facets).
+function defOfTry(data, key, t){
+  const def = definitionOf(data, key);
+  return isPlaceGen(def) && t.seed !== undefined ? itemFromGen(def, t.seed) : def;
+}
+// a generator that makes its questions fresh: numbers drawn from parameters, or a place and a form named by the seed
+const isMade = def => !!(def && (def.make || def.places));

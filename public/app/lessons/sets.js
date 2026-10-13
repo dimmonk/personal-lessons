@@ -6,13 +6,15 @@
 // One reference as the instances the learner meets: a fixed item is one, a generator makes `n` with fresh seeds.
 function refInstances(data, subjectId, ref, run, k){
   if(typeof ref === 'string') return [instanceOf(data, ref)];
+  const gen = data.gens[ref.gen];
+  if(isPlaceGen(gen)) return placeSetInstances(data, subjectId, gen, ref, run, k);
   return Array.from({ length: ref.n }, (_, j) => instanceOf(data, ref, freshSeed(subjectId, ref.gen, run, k * 100 + j)));
 }
 // "Practice again": an item that was seen gives way to one of its strand the learner has not seen, when the strand holds one
 function unseenInPlace(data, subjectId, ref, taken){
   if(typeof ref !== 'string') return ref;
   const used = usedIds(data), mine = data.items[ref];
-  const spare = leastSeen(subjectId, strandDefs(data, mine.strand).filter(d => !d.make && !used.has(d.id) && !seenBefore(subjectId, d.id) && !taken.includes(d.id)));
+  const spare = leastSeen(subjectId, strandDefs(data, mine.strand).filter(d => !isMade(d) && !used.has(d.id) && !seenBefore(subjectId, d.id) && !taken.includes(d.id)));
   return spare.length ? spare[0].id : ref;
 }
 // the references of the earlier lessons' groups, the least recently seen first (never seen before seen)

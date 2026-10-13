@@ -47,7 +47,10 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'interviewDay', 'roundDays', 'logOf', 'answersSectionHtml', 'answersFormHtml', 'answersFormOf', 'ANSWERS_PAGE',
   // maps and the place ask
   'PLACE_NONE', 'PLACE_DOT_TAP', 'PLACE_LINE_BAND', 'PLACE_ZOOM_MAX', 'PLACE_MODES', 'mapOf', 'mapPlace', 'mapHasPlace', 'placeGeom', 'placeContains', 'placeAt', 'scorePlace', 'placeRightText', 'placeRightIds',
-  'placeNeighborsOf', 'placeWaterOf', 'placeTapOk', 'placeAskProblems', 'mapBlockProblems', 'mapHtml', 'mapBlockHtml', 'placeHtml', 'placeMarkHtml', 'placeMissHtml', 'placeWorkedHtml', 'placeLitIds'];
+  'placeNeighborsOf', 'placeWaterOf', 'placeTapOk', 'placeAskProblems', 'mapBlockProblems', 'mapHtml', 'mapBlockHtml', 'placeHtml', 'placeMarkHtml', 'placeMissHtml', 'placeWorkedHtml', 'placeLitIds',
+  // a group of places made into questions
+  'PLACE_GEN_FORMS', 'PLACE_SALTS', 'isPlaceGen', 'isMade', 'placeKey', 'placeKeyOf', 'placePairs', 'placePairAt', 'placeSeedOf', 'placeAllowedForms', 'placeItem', 'placeItems', 'placeDraw', 'placeSetPicks',
+  'placeReviewPick', 'placeMemory', 'placeOnlyOf', 'placeFreshSeed', 'placeDrawInstances', 'placeSetInstances', 'placeReviewInstance', 'drawSize', 'drawStrands', 'defOfTry', 'mergeOnly', 'placeGenProblems', 'placeDrawProblems', 'placeRefProblems'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {
