@@ -1318,7 +1318,14 @@
       "public/subjects/geography/gen-europe-west.js",
       "public/subjects/geography/items-worked.js",
       "public/subjects/geography/l16.lesson.js",
-      "docs/learner-view/geography-l16.md"
+      "docs/learner-view/geography-l16.md",
+      "public/app/lessons/place-gen.js",
+      "public/app/lessons/sets.js",
+      "public/app/lessons/player.js",
+      "public/app/lessons/place-view.js",
+      "public/app/registry.js",
+      "tests/lessons/",
+      "public/maps/europe-west.js"
     ]
   }
 }

@@ -167,8 +167,10 @@ const FORBIDDEN_EVERYWHERE = (id, p) => p.startsWith(`public/subjects/${id}/`) ?
   : p.startsWith('docs/learner-view/') ? 'a learner view' : p.startsWith('public/') ? 'the engine\'s code' : p.startsWith('tests/') || p.startsWith('tools/') ? 'the validator or the tools' : null;
 // the writer (gates 6 and 7) may open this record, the standard, the test subject for the data shape, this subject's own files, and this
 // subject's old material at the tag old-lessons (never another subject's lessons: a copied lesson becomes a template)
+// and the engine it builds on (the app's code, the map data, the validator), which is not a lesson to copy
 const writingOk = (id, p) => p === `docs/subjects/${id}/design.md` || p === 'docs/lesson-standard.md' || p.startsWith('tests/fixtures/fixture-subject/') || p.startsWith(`public/subjects/${id}/`)
-  || p.startsWith(`docs/learner-view/${id}-`) || p.startsWith(`old-lessons:public/subjects/${id}/`);
+  || p.startsWith(`docs/learner-view/${id}-`) || p.startsWith(`old-lessons:public/subjects/${id}/`)
+  || ((p.startsWith('public/app/') || p.startsWith('public/maps/') || p.startsWith('tests/lessons/')) && !p.startsWith('public/subjects/'));
 export function openedProblems(id, r) {
   const o = r.opened;
   if (!o || typeof o !== 'object' || Array.isArray(o) || !['asks', 'research', 'design', 'writing'].every(k => Array.isArray(o[k]) && o[k].every(p => typeof p === 'string'))) return ['the design record has no "opened" lists: what gate 0 (asks), gate 1 (research), gates 2 to 5 (design) and gates 6 and 7 (writing) read, one list each'];
