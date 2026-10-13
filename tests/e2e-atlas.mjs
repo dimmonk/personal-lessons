@@ -20,6 +20,13 @@ const screenOf = (page, x, y) => page.evaluate(([x, y]) => {
 const viewBox = page => page.evaluate(() => document.querySelector('[data-map-ask] .mapsvg, .block-map .mapsvg').getAttribute('viewBox').split(' ').map(Number));
 const tapAt = async (page, x, y) => { await page.locator(MAP).scrollIntoViewIfNeeded(); const [px, py] = await screenOf(page, x, y); await page.mouse.click(px, py); };
 const lit = page => page.locator('.item .mp.lit').evaluateAll(els => els.map(e => e.dataset.place));
+// how tall a name is on the screen in pixels (its size in units of the map times the pixels each unit takes), and where it and a dot are on the screen
+const nameHeight = (page, map, name) => page.evaluate(([map, name]) => {
+  const t = [...document.querySelectorAll('.block-map')[map].querySelectorAll('text.ml')].find(e => e.textContent === name);
+  return Number(t.getAttribute('font-size')) * t.getScreenCTM().a;
+}, [map, name]);
+const centreOf = (page, selector) => page.evaluate(sel => { const b = document.querySelector(sel).getBoundingClientRect(); return [b.left + b.width / 2, b.top + b.height / 2, b.width]; }, selector);
+const fillOf = (page, selector) => page.evaluate(sel => getComputedStyle(document.querySelector(sel)).fill, selector);
 const look = page => page.evaluate(() => ({ key: Q.list[Q.at].key, redo: !!Q.list[Q.at].redo, done: Q.cur.done, a: Q.cur.a, r: Q.cur.score ? Q.cur.score.r : null }));
 
 // two fingers moving apart over the open map, as a phone sends them (pointer events with two pointer ids), then both lifted
@@ -34,19 +41,36 @@ const pinch = page => page.evaluate(() => {
 /* ---------- X46 ---------- */
 export async function X46(env) {
   const c = env.checker('X46'), { context, page } = await env.freshPage(c);
+  let waterFills = [], landFill = '', blankFill = '';
   await openAtlas(env, page);
 
   // the map, with its names, once
   await jump(page, STEP.labelled);
   const names = await page.locator('.mapsvg text').allTextContents();
-  c.check(['Alder', 'Cedar', 'Birch', 'Speck', 'The sea'].every(n => names.includes(n)), `the labelled map does not name every place (${names.join(', ')})`);
-  c.check(await page.locator('.mapsvg[aria-label*="names shown"]').count() === 1, 'the labelled map does not say that it shows the names');
+  c.check(['Alder', 'Cedar', 'Birch', 'Speck', 'Crumb', 'The sea'].every(n => names.includes(n)), `the labelled map does not name every place (${names.join(', ')})`);
+  c.check(await page.locator('.mapsvg[aria-label*="names shown"]').count() === 2, 'a labelled map does not say that it shows the names');
+  // a name is set in pixels: as tall on the screen at every zoom, and legible (12 or more)
+  const small = await nameHeight(page, 0, 'Alder');
+  c.check(small >= 12 && small < 13, `a name is ${small.toFixed(1)} px tall on the screen, not 12`);
+  await page.locator('.block-map').first().locator('[data-map-zoom="in"]').click();
+  await page.locator('.block-map').first().locator('[data-map-zoom="in"]').click();
+  const zoomedName = await nameHeight(page, 0, 'Alder');
+  c.check(Math.abs(zoomedName - small) < 0.2, `a name is ${small.toFixed(1)} px tall on the whole map and ${zoomedName.toFixed(1)} px tall zoomed in: it should not change with the zoom`);
+  // a microstate's name stands off its dot on a line to it, and a map with a view opens on that part of the map and goes back to it
+  const dot = await centreOf(page, '.block-map:nth-of-type(2) .mp-dot[data-place="crumb"]'), name = await centreOf(page, '.block-map:nth-of-type(2) text.ml[data-dx="-40"]');
+  c.check(Math.hypot(dot[0] - name[0], dot[1] - name[1]) > 30 && await page.locator('.block-map:nth-of-type(2) line.ml-lead').count() === 1, 'the name of a microstate is not set off its dot on a line to it');
+  const home = (await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number);
+  c.check(Math.abs(home[2] - 100) < 0.5, `a map with a view of zoom 3 opens ${home[2]} units across, not 100`);
+  await page.locator('.block-map').nth(1).locator('[data-map-zoom="in"]').click();
+  await page.locator('.block-map').nth(1).locator('[data-map-zoom="reset"]').click();
+  c.check(Math.abs((await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number)[2] - 100) < 0.5, 'the button for the whole map does not go back to the part the map opened on');
   await env.inspect(c, page, 'the labelled map');
 
   // a worked tap: the place lit, the tap shown
   await jump(page, STEP.worked);
   c.check(JSON.stringify(await page.locator('.item .mp.lit, .block-map .mp.lit').evaluateAll(els => els.map(e => e.dataset.place))) === '["alder"]', 'the worked tap does not light the place');
   c.check(await page.locator('.block-map .mk-right').count() === 1 && await page.locator('.block-map text').count() === 0, 'the worked tap does not show the tap, or its map carries a name');
+  c.check(/Tap it on the map\./.test(await env.screenText(page)), 'the worked tap does not say what is asked');
 
   // the first group: Birch, Cedar, Speck
   await jump(page, STEP.taps);
@@ -92,6 +116,8 @@ export async function X46(env) {
   await tapAt(page, 85, 70);
   now = await look(page);
   c.check(now.r.where === 'ok' && JSON.stringify(await lit(page)) === '["cedar"]' && await page.locator('.item .mk-right').count() === 1, `a tap in the hole of Alder, asked for Cedar, scored ${now.r && now.r.where} and lit ${JSON.stringify(await lit(page))}`);
+  landFill = await fillOf(page, '.item .mp-country.lit');
+  blankFill = await fillOf(page, '.item .mp-country:not(.lit)');
   await next(page);
 
   // Speck: a dot found within a radius of its point, and the zoom the tap was made at is kept
@@ -107,9 +133,11 @@ export async function X46(env) {
 
   // the sea: the land under the sea's outline is not the sea
   c.check((await look(page)).key === 't-sea', 'the fourth question is not the tap on the sea');
-  await tapAt(page, 215, 70);   // Birch: inside the outline of the sea, which covers the whole map, and still not the sea
+  await tapAt(page, 258, 50);   // on the circle of Crumb, in Birch: inside the outline of the sea, which covers the whole map, and still not the sea
   now = await look(page);
-  c.check(now.done && now.r.where === 'no' && /You tapped: Birch\./.test(await env.screenText(page)) && JSON.stringify(await lit(page)) === '["sea"]', `a tap on land, asked for the sea, scored ${now.r && now.r.where}`);
+  c.check(now.done && now.r.where === 'no' && JSON.stringify(await lit(page)) === '["sea"]', `a tap on land, asked for the sea, scored ${now.r && now.r.where}`);
+  c.check(/You tapped: Crumb\./.test(await env.screenText(page)), `a tap on the circle of Crumb is named ${(await env.screenText(page)).match(/You tapped: [^.]*/)}, not Crumb`);
+  waterFills = [await fillOf(page, '.item .mp-sea.lit'), await fillOf(page, '.item .map-water')];
   await next(page);
 
   // the missed ones come back, and are answered right
@@ -122,6 +150,9 @@ export async function X46(env) {
   await tapAt(page, 150, 190);
   c.check((await look(page)).r.where === 'ok' && JSON.stringify(await lit(page)) === '["sea"]', 'a tap on the water, asked for the sea, did not score right');
   await next(page);
+
+  // water is drawn in a water color, lit or not, and never the land's
+  c.check(waterFills[0] !== landFill && waterFills[0] !== waterFills[1] && waterFills[1] !== blankFill && waterFills[0] !== blankFill, `the colors of lit water, water, lit land and land are ${[waterFills[0], waterFills[1], landFill, blankFill].join(' / ')}: they should all differ`);
 
   // the second group: a neighbor and its water; Landlocked; a lit place named
   await env.goOn(page);   // the break

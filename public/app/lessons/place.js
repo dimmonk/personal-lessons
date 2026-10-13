@@ -2,17 +2,18 @@
 // Lesson standard 3.7 (the `place` ask) and 3.9 (the `map` block). Pure: the geometry of a region of FC.maps (public/maps/, written by
 // tools/maps/build-maps.mjs) and the scoring of a tap on it, so the player, the validator and the tests all score a tap the same way.
 //   region   { id, name, size: [w, h], q, land: [kind], draw: [kind], labelled: [kind], frames?, rings: [[x0, y0, dx, dy, ...]], places: [Place] }
-//   Place    { id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], fs?, neighbors?: [placeId], water?: [placeId] }
+//   Place    { id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], lead?: [dx, dy], neighbors?: [placeId], water?: [placeId] }
 //            kinds: country, state, continent, region (ground); ocean, sea, strait, lake (water); river, canal, coast (lines); range, desert
 //            Every number is in tenths of a unit of a map `w` units wide, north up. A ring is the first point, then the step to each next one.
 //            A place's rings are an outline in which a point is inside when it is inside an odd number of them (a country with a country inside
 //            it has a hole); a sea, a lake, a range and a desert have no holes, so a point is inside when it is inside any ring. A `line` (a river)
-//            is open and is tapped within a band of it. A `dot` (a microstate) is tapped within a radius of its point. Land places (`land`
-//            kinds) have `neighbors` and `water`: stored, because the build worked them out from the outlines; the app computes none of it.
+//            is open and is tapped within a band of it. A `dot` (a microstate) is tapped within a radius of its point; its name stands `lead` pixels
+//            (right, down) from the point on the screen, on a line to it. Land places (`land` kinds) have `neighbors` and `water`: stored, because the build worked them out from the outlines; the app computes none of it.
 //   ask      { id, kind: 'place', prompt, map: regionId, right: placeId | [placeId], slips?: { placeId: slipId }, when? }
 //            { id, kind: 'place', mode: 'neighbor-water', prompt, map: regionId, of: placeId, when? }
 //            `right` as a list is any one of those places. `slips` names the slip of tapping the place it is keyed by.
-//   block    { kind: 'map', region, id?, labels?: true | [placeId], lit?: [placeId] }   the region drawn, no names unless `labels`
+//   block    { kind: 'map', region, id?, labels?: true | [placeId], lit?: [placeId], view?: [x, y, zoom] }   the region drawn, no names unless `labels`; it opens
+//            on the part of it round (x, y) at that zoom when it has a `view` (one panel of a look at a region too big to read whole)
 //   answer   [x, y, k]                      a tap: the point in units of the map and the zoom (1 to 8) the map was at
 //            { n: [x, y, k], w: [x, y, k] | 'none' }    neighbor-water: a tap on a neighbor, then on the water, or "Landlocked" ('none')
 //   result   'ok', a slip id, or 'no'
@@ -98,20 +99,22 @@ function placeInside(map, place, x, y, k){
   return !(PLACE_WATER_KINDS.includes(place.kind) && placeOnLand(map, geom, x, y));
 }
 const placeContains = (map, place, x, y, k = 1) => placeNearDot(map, place, x, y, k) || placeInside(map, place, x, y, k);
-// The place a tap is on, as the app names it after a miss: the smallest in the kind asked for if there is one, else the first by what a learner
-// would call it (a dot, a lake, a river, the land, a continent, a range, a sea, an ocean); null when it is on none.
+// The place a tap is on, as the app names it after a miss: a microstate's circle if the tap is on one (it is drawn over the land it lies in, so a tap on
+// it is the microstate, not the country under it; so is the dot of the kind asked for), else the smallest in the kind asked for if there is one, else the
+// first by what a learner would call it (a dot, a lake, a river, the land, a continent, a range, a sea, an ocean); null when it is on none.
 function placeAt(map, x, y, k = 1, kind = null){
   const geom = placeGeom(map), inside = place => placeInside(map, place, x, y, k);
   const smallest = list => list.filter(inside).sort((a, b) => a.area - b.area)[0] || null;
-  const dot = of => geom.places.filter(p => placeNearDot(map, p, x, y, k) && (!of || p.kind === of))[0] || null;
-  // inside an outline first (a tap in Switzerland is Switzerland, though Liechtenstein's dot is near), the kind asked for before the others; then a dot
-  const asked = kind ? smallest(geom.places.filter(p => p.kind === kind)) || dot(kind) : null;
+  const dot = ofKind => geom.places.filter(p => placeNearDot(map, p, x, y, k) && ofKind(p.kind))[0] || null;
+  const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));
+  if(circle) return circle.id;
+  const asked = kind ? smallest(geom.places.filter(p => p.kind === kind)) : null;
   if(asked) return asked.id;
   for(const tier of [...map.land, ...PLACE_FIND_ORDER].filter((v, i, all) => all.indexOf(v) === i)){
     const found = smallest(geom.places.filter(p => p.kind === tier));
     if(found) return found.id;
   }
-  const near = dot(null);
+  const near = dot(() => true);
   return near ? near.id : null;
 }
 
@@ -173,6 +176,9 @@ function mapBlockProblems(block, maps){
   const map = maps[block.region];
   if(!map) return [`the region "${block.region}" is not in the map data (${Object.keys(maps).join(', ')})`];
   const has = id => map.places.some(p => p.id === id), named = [...asList(block.lit), ...(Array.isArray(block.labels) ? block.labels : [])];
+  const [vx, vy, vk] = block.view || [], [w, h] = map.size;
   return [...named.filter(id => !has(id)).map(id => `"${id}" is not a place of the map ${block.region}`),
-    ...asList(block.lit).filter((id, i, all) => all.indexOf(id) !== i).map(id => `"${id}" is lit twice`)];
+    ...asList(block.lit).filter((id, i, all) => all.indexOf(id) !== i).map(id => `"${id}" is lit twice`),
+    ...(block.view && !(block.view.length === 3 && vx >= 0 && vx <= w && vy >= 0 && vy <= h && vk >= 1 && vk <= PLACE_ZOOM_MAX)
+      ? [`the view is [x, y, zoom]: a point on the map (0 to ${w} across, 0 to ${h} down) and a zoom from 1 to ${PLACE_ZOOM_MAX}`] : [])];
 }

@@ -3,10 +3,11 @@
 // lit, where a learner tapped), the `map` block, the `place` ask and its marks and miss lines. Nothing here reads the page or stores anything; the
 // zoom, the drag and the tap are map-run.js and place-run.js. Sizes that must stay the same on the screen however far the map is zoomed (a dot,
 // a mark) carry `data-px`: map-run.js turns the pixels into units of the map.
-//   o  { scope, lit: [placeId], focus: [placeId], labels: true | [placeId], marks: [{ x, y, state }], ask: askId | null }
-//      `ask` makes the map the thing a tap answers; `state` is 'neutral', 'right' or 'wrong'
+//   o  { scope, lit: [placeId], focus: [placeId], labels: true | [placeId], marks: [{ x, y, state }], ask: askId | null, view: [cx, cy, k] | null }
+//      `ask` makes the map the thing a tap answers; `state` is 'neutral', 'right' or 'wrong'; `view` is the part of the map it opens on (a panel)
 
-const MAP_PX = { dot: 5, mark: 9, markDot: 3 };
+// the pixels each of these takes on the screen, whatever the zoom: a name's height, a dot, a mark
+const MAP_PX = { label: 12, labelEdge: 3, dot: 5, mark: 9, markDot: 3, leadGap: 2 };
 const MAP_PATHS = new WeakMap();
 const mapNum = v => v.toFixed(1);
 // the outline of a place as SVG path data (cached: a region is drawn many times)
@@ -24,10 +25,13 @@ function mapPath(map, place){
 }
 const mapShapeHtml = (map, place, extra) => `<path class="mp mp-${esc(place.kind)}${extra}" data-place="${esc(place.id)}" d="${mapPath(map, place)}"${PLACE_UNION_KINDS.includes(place.kind) ? '' : ' fill-rule="evenodd"'}></path>`;
 
+// A name is set in pixels (`data-fpx`, `data-edge`) and placed by map-run.js, so it reads the same at every zoom and on every screen. A microstate's
+// name stands `lead` pixels from its dot (the map data says which way) on a line drawn to the dot; every other name is centred on its point.
 function mapLabelsHtml(map, ids, geom){
   return ids.map(id => geom.byId[id]).filter(p => p && p.at).map(p => {
-    const dot = !!p.dot, size = dot ? 5 : (p.fs || 8);
-    return `<text class="ml ml-${esc(p.kind)}" x="${mapNum(p.at[0])}" y="${mapNum(p.at[1] - (dot ? 7 : 0))}" font-size="${size}" text-anchor="middle" dominant-baseline="central">${esc(p.name)}</text>`;
+    const lead = p.lead || [0, p.dot ? -MAP_PX.dot - MAP_PX.label / 2 : 0], pos = `data-x="${mapNum(p.at[0])}" data-y="${mapNum(p.at[1])}" data-dx="${lead[0]}" data-dy="${lead[1]}"`;
+    const line = p.lead ? `<line class="ml-lead" ${pos} data-gap="${MAP_PX.dot + MAP_PX.leadGap}"></line>` : '';
+    return `${line}<text class="ml ml-${esc(p.kind)}" ${pos} data-fpx="${MAP_PX.label}" data-edge="${MAP_PX.labelEdge}" dominant-baseline="central">${esc(p.name)}</text>`;
   }).join('');
 }
 const mapMarkHtml = m => `<g class="mk mk-${esc(m.state || 'neutral')}" data-mark><circle class="mk-ring" cx="${mapNum(m.x)}" cy="${mapNum(m.y)}" r="${MAP_PX.mark}" data-px="${MAP_PX.mark}"></circle>
@@ -48,7 +52,7 @@ function mapHtml(map, o = {}){
   const names = o.labels === true ? geom.places.filter(p => map.labelled.includes(p.kind) && p.at).map(p => p.id) : o.labels || [];
   const dotHtml = p => `<circle class="mp mp-dot${mark(p.id)}" data-place="${esc(p.id)}" cx="${mapNum(p.dot[0] / map.q)}" cy="${mapNum(p.dot[1] / map.q)}" r="${MAP_PX.dot}" data-px="${MAP_PX.dot}"></circle>`;
   const alt = names.length ? SAY.mapAltNamed(map.name) : SAY.mapAlt(map.name);
-  return `<figure class="block-map" data-map="${esc(map.id)}" data-scope="${esc(o.scope || map.id)}" data-w="${width}" data-h="${height}"${o.ask ? ` data-map-ask="${esc(o.ask)}"` : ''}>
+  return `<figure class="block-map" data-map="${esc(map.id)}" data-scope="${esc(o.scope || map.id)}" data-w="${width}" data-h="${height}"${o.view ? ` data-view="${o.view.join(' ')}"` : ''}${o.ask ? ` data-map-ask="${esc(o.ask)}"` : ''}>
     <div class="mapframe"><svg class="mapsvg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(alt)}" preserveAspectRatio="xMidYMid meet">
       <rect class="map-water" x="0" y="0" width="${width}" height="${height}"></rect>
       ${water.map(p => mapShapeHtml(map, p, mark(p.id))).join('')}${blank.map(p => mapShapeHtml(map, p, mark(p.id))).join('')}${frames}
@@ -58,7 +62,7 @@ function mapHtml(map, o = {}){
 // the `map` block of a question or a teaching screen
 function mapBlockHtml(block, ctx){
   const map = mapOf(block.region);
-  return mapHtml(map, { scope: `${ctx.scope || ''}|${block.region}|${(block.lit || []).join(',')}`, lit: block.lit, labels: block.labels });
+  return mapHtml(map, { scope: `${ctx.scope || ''}|${block.region}|${(block.lit || []).join(',')}|${(block.view || []).join(',')}`, lit: block.lit, labels: block.labels, view: block.view });
 }
 
 /* ---------- the place ask ---------- */
@@ -95,7 +99,7 @@ function placeHtml(data, ask, st, ctx){
 function placeWorkedHtml(data, item){
   return (item.asks || []).filter(a => a.kind === 'place').map(ask => {
     const map = mapOf(ask.map), lit = placeLitIds(map, ask), at = lit.map(id => mapPlace(map, id).at).filter(Boolean)[0];
-    return mapHtml(map, { scope: `worked|${item.id}|${ask.id}`, lit, focus: ask.mode === 'neighbor-water' ? [ask.of] : [], marks: ask.mode === 'neighbor-water' || !at ? [] : [{ x: at[0], y: at[1], state: 'right' }] });
+    return `<p class="stem">${esc(paras(ask.prompt).join(' '))}</p>${mapHtml(map, { scope: `worked|${item.id}|${ask.id}`, lit, focus: ask.mode === 'neighbor-water' ? [ask.of] : [], marks: ask.mode === 'neighbor-water' || !at ? [] : [{ x: at[0], y: at[1], state: 'right' }] })}`;
   }).join('');
 }
 

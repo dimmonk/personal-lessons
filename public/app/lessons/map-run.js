@@ -5,6 +5,8 @@
 // kept in MAP_VIEW by the scope of the map, so a screen painted again for the next answer shows the map as the learner left it; the queue and the
 // player empty it when a question or a step changes (mapViewReset). Zooming moves the viewBox, so the shapes are never redrawn.
 //   view  { k, cx, cy }   the zoom (1 to PLACE_ZOOM_MAX) and the middle of what is shown, in units of the map
+// A map opens on its whole self, or on the part its block names (`data-view="cx cy k"`: a panel); the button for the whole map goes back to that.
+// What is drawn in pixels (a dot, a mark, a name and the line from a microstate to its name) is put back at the same size on the screen at every zoom.
 
 const MAP_TAP_SLOP = 8;
 const MAP_STEP = 1.6;
@@ -14,7 +16,11 @@ const mapViewReset = () => { MAP_VIEW = {}; };
 
 /* ---------- where things are ---------- */
 const mapDims = el => [Number(el.dataset.w), Number(el.dataset.h)];
-const mapViewNow = el => MAP_VIEW[el.dataset.scope] || { k: 1, cx: mapDims(el)[0] / 2, cy: mapDims(el)[1] / 2 };
+const mapViewHome = el => {
+  const [w, h] = mapDims(el), at = el.dataset.view ? el.dataset.view.split(' ').map(Number) : null;
+  return at ? mapClamp({ cx: at[0], cy: at[1], k: at[2] }, [w, h]) : { k: 1, cx: w / 2, cy: h / 2 };
+};
+const mapViewNow = el => MAP_VIEW[el.dataset.scope] || mapViewHome(el);
 function mapClamp(view, [w, h]){
   const k = Math.max(1, Math.min(PLACE_ZOOM_MAX, view.k)), vw = w / k, vh = h / k;
   return { k, cx: Math.max(vw / 2, Math.min(w - vw / 2, view.cx)), cy: Math.max(vh / 2, Math.min(h - vh / 2, view.cy)) };
@@ -30,9 +36,28 @@ const mapUnitAt = (screen, px, py) => [screen.vx + (px - screen.box.left - scree
 function mapApply(el, view){
   const svg = el.querySelector('.mapsvg');
   if(!svg) return;
-  const screen = mapScreen(svg, el, view);
+  const screen = mapScreen(svg, el, view), px = v => Number(v) / screen.s;
   svg.setAttribute('viewBox', `${screen.vx} ${screen.vy} ${screen.vw} ${screen.vh}`);
-  svg.querySelectorAll('[data-px]').forEach(c => c.setAttribute('r', String(Number(c.dataset.px) / screen.s)));
+  svg.querySelectorAll('[data-px]').forEach(c => c.setAttribute('r', String(px(c.dataset.px))));
+  svg.querySelectorAll('text[data-fpx]').forEach(t => mapPlaceName(t, px));
+  svg.querySelectorAll('line[data-gap]').forEach(l => mapPlaceLead(l, px));
+}
+// a name: its height in pixels, standing dx and dy pixels from its point, and on the side of the point it leads away to
+function mapPlaceName(t, px){
+  const dx = Number(t.dataset.dx), anchor = dx > 0 ? 'start' : dx < 0 ? 'end' : 'middle';
+  t.setAttribute('font-size', String(px(t.dataset.fpx)));
+  t.setAttribute('stroke-width', String(px(t.dataset.edge)));
+  t.setAttribute('text-anchor', anchor);
+  t.setAttribute('x', String(Number(t.dataset.x) + px(dx + (dx > 0 ? 2 : dx < 0 ? -2 : 0))));
+  t.setAttribute('y', String(Number(t.dataset.y) + px(t.dataset.dy)));
+}
+// the line from a microstate's dot to its name: from just off the dot to just short of the name
+function mapPlaceLead(l, px){
+  const dx = Number(l.dataset.dx), dy = Number(l.dataset.dy), gap = Number(l.dataset.gap), run = Math.hypot(dx, dy) || 1;
+  l.setAttribute('x1', String(Number(l.dataset.x) + px(dx * gap / run)));
+  l.setAttribute('y1', String(Number(l.dataset.y) + px(dy * gap / run)));
+  l.setAttribute('x2', String(Number(l.dataset.x) + px(dx)));
+  l.setAttribute('y2', String(Number(l.dataset.y) + px(dy)));
 }
 function mapSetView(el, view){
   const next = mapClamp(view, mapDims(el));
@@ -52,7 +77,7 @@ function mapZoomButton(button){
   const el = button.closest('[data-map]'), svg = el && el.querySelector('.mapsvg');
   if(!svg) return;
   const view = mapViewNow(el), box = svg.getBoundingClientRect(), what = button.dataset.mapZoom;
-  if(what === 'reset') return mapSetView(el, { k: 1, cx: mapDims(el)[0] / 2, cy: mapDims(el)[1] / 2 });
+  if(what === 'reset') return mapSetView(el, mapViewHome(el));
   mapSetView(el, mapZoomAbout(svg, el, view, what === 'in' ? view.k * MAP_STEP : view.k / MAP_STEP, box.left + box.width / 2, box.top + box.height / 2));
 }
 

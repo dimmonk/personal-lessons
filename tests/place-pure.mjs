@@ -82,6 +82,11 @@ async function suite(app) {
   same(score(ask('vatican-city'), [vx + r * 0.5, vy, 4]), 'no', 'half the radius away at zoom 4 is outside (the radius is a quarter)');
   same(score(ask('vatican-city'), [vx + r * 0.2, vy, 4]), 'ok', 'a fifth of the radius away at zoom 4 is inside');
   same(score(ask('italy'), at('europe-west', null, 14.27, 40.85)), 'ok', 'a tap in Italy away from the dot is Italy');
+  // a microstate's circle is drawn over the country it lies in: a tap on the circle is named for the microstate, and one well away from it for the country
+  const sm = mapPlace(eu, 'san-marino'), smx = sm.dot[0] / 10, smy = sm.dot[1] / 10;
+  same([placeAt(eu, smx, smy, 1, 'country'), placeAt(eu, smx + r * 0.5, smy, 1, 'country'), placeAt(eu, smx - r * 1.8, smy, 1, 'country')], ['san-marino', 'san-marino', 'italy'],
+    'a tap on the circle of San Marino is named San Marino, not Italy under it, and one well away from it is Italy');
+  same(placeAt(eu, smx + r * 0.5, smy, 4, 'country'), 'italy', 'a quarter of the circle at zoom 4 is a quarter of the way out: half the radius away is off the circle');
   // a place with a hole (the isles: Cedar inside Alder)
   const isles = mapOf('isles');
   same(score({ id: 'a', kind: 'place', prompt: 'x', map: 'isles', right: 'cedar' }, [85, 70, 1]), 'ok', 'a tap in the hole of a country is in the country inside it');
@@ -223,6 +228,7 @@ const FAULTS = [
   ['a coast found within a river\'s band only', s => s.replace('coast: 0.04,', 'coast: 0.014,')],
   ['a canal found within a river\'s band only', s => s.replace('canal: PLACE_DOT_TAP }', 'canal: 0.014 }')],
   ['a strait that holds the land under its outline', s => s.replace("const PLACE_WATER_KINDS = ['ocean', 'sea', 'strait'];", "const PLACE_WATER_KINDS = ['ocean', 'sea'];")],
+  ['a tap on a microstate\'s circle named for the country under it', s => s.replace('const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));', 'const circle = null;')],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];

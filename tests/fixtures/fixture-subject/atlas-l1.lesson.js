@@ -4,7 +4,7 @@ FC.lesson('atlas', {
   history: [{ rev: 1, date: '2026-10-12', change: 'First version, for the tests.' }],
   why: 'A place is where it is on the map. Find it on a map with no names.',
   flow: [
-    { title: 'The isles, with their names', show: [{ kind: 'map', region: 'isles', labels: true }] },
+    { title: 'The isles, with their names', show: [{ kind: 'map', region: 'isles', labels: true }, { kind: 'map', region: 'isles', labels: ['birch', 'crumb'], view: [235, 60, 3] }] },
     { worked: 'w-tap' },
     { set: { items: ['t-birch', 't-cedar', 't-speck', 't-sea'], order: 'listed' } },
     { set: { items: ['b-alder', 'b-cedar', 'n-cedar'], order: 'listed' } }

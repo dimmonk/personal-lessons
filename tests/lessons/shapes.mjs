@@ -31,7 +31,8 @@ function idTitle() { return obj({ id: str, title: str }); }
 // (`me` marks a line you sent, in a thread)
 const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str, me: bool });
 // a region of the map data (place.js), drawn blank unless `labels` names its places (true: every place the region labels) and lit where `lit` says
-export const MAP_BLOCK = obj({ kind: en('map'), region: str }, { id: str, labels: either(bool, arr(str)), lit: arr(str) });
+// `view` is the part of the map it opens on: the middle (x, y) in units of the map and the zoom
+export const MAP_BLOCK = obj({ kind: en('map'), region: str }, { id: str, labels: either(bool, arr(str)), lit: arr(str), view: arr(num) });
 export const PROSE = obj({ kind: en('prose') }, { id: str, text, lines: arr(SEGMENT), tone: en('wrong') });
 export const PAIR = obj({ kind: en('pair'), a: any, b: any, compare: text });
 // the everyday papers, and a household's: statement (401(k), IRA, brokerage), fees (a plan's fee sheet), paystub, matchrule (the plan's employer

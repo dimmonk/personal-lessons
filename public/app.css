@@ -3,6 +3,7 @@
   --divider:#241F19; --rule:#2E2820; --border:#3A3226; --disabled:#4A4438;
   --label:#6E6656; --dim:#A89E8D; --bodydim:#C9C1B2; --body:#E4DED2; --text:#F3EEE4;
   --green:#57C48E; --coral:#F0907E; --accent:#DFA83E;
+  --water:#1B2730; --water-lit:#3E6F8C;
   --sans:'Bricolage Grotesque','Helvetica Neue',Helvetica,sans-serif;
   --serif:Literata,Georgia,serif;
   --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
@@ -508,21 +509,23 @@ table.ownsum td:last-child{white-space:normal}
 .mapframe{position:relative;overflow:hidden;background:var(--footer);border:1px solid var(--rule)}
 .mapsvg{display:block;width:100%;height:auto;max-height:68vh;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;cursor:grab}
 .mapsvg:active{cursor:grabbing}
-.map-water{fill:var(--footer)}
+.map-water{fill:var(--water)}
 .map-frame{fill:none;stroke:var(--disabled);stroke-width:1;vector-effect:non-scaling-stroke}
 .mp{fill:var(--rule);stroke:var(--disabled);stroke-width:.8px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .mp-continent{stroke:var(--rule)}
-.mp-lake{fill:var(--footer)}
+.mp-lake{fill:var(--water)}
 .mp-river{fill:none;stroke:var(--dim);stroke-width:1.4px;stroke-linecap:round;stroke-linejoin:round}
 .mp-ocean,.mp-sea,.mp-strait,.mp-range,.mp-desert,.mp-region{fill:none;stroke:none}
 .mp-dot{fill:var(--rule);stroke:var(--text);stroke-width:1.2px}
 .mp.lit{fill:var(--accent);fill-opacity:.9;stroke:var(--text)}
+.mp-ocean.lit,.mp-sea.lit,.mp-strait.lit,.mp-lake.lit{fill:var(--water-lit);fill-opacity:1;stroke:var(--text)}
 .mp-range.lit,.mp-desert.lit,.mp-region.lit{fill-opacity:.55;stroke:var(--accent)}
 .mp-river.lit,.mp-coast.lit,.mp-canal.lit{fill:none;stroke:var(--accent);stroke-width:5px;stroke-linecap:round;stroke-linejoin:round}
 .mp-coast,.mp-canal{fill:none;stroke:none}
 .mp-dot.lit{fill:var(--accent);stroke:var(--text)}
 .mp.focus{stroke:var(--accent);stroke-width:2.2px}
-.ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-width:2.4px;stroke-linejoin:round;pointer-events:none}
+.ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-linejoin:round;pointer-events:none}
+.ml-lead{stroke:var(--text);stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none}
 .ml-sea,.ml-ocean,.ml-strait,.ml-lake,.ml-river,.ml-canal,.ml-coast,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
 .mk-ring{fill:none;stroke:var(--text);stroke-width:2px;vector-effect:non-scaling-stroke}
 .mk-dot{fill:var(--text)}
