@@ -214,17 +214,17 @@
   "practice": "Most of the time you answer on a map with no names: a name shown, you tap the place; a place lit, you type its name; a flag, you tap its country; a neighbor and the water tapped, or \"landlocked\"; a town you never met, placed from a story's clues; two places, the distance band.\nEach new kind of question starts with one done for you; each new group of places with one look at its map with names, then recall only.\nPlaces come back both ways, then on later days until right three times; after each answer the right place lights with one line of what the country is.",
   "feedback": "From the app, at once after each answer in a set (a check gives it all at the end): the right place lit on the same blank map, the learner's tap marked beside it after a miss, and one line: the unit it sits in, its neighbors and its water, and for a country one line of what it is. A distance lights both places and prints the straight-line miles beside the band; a story place names the clue that decided its region; a trap item shows the true map after the answer. A miss comes back three items later until right, and on later days by the schedule.",
   "delivery": [
-    "A `place` ask, NOT BUILT: a blank map drawn as shapes from offline data (no names, north-up, one projection for the world and one for the United States, projected in advance so the phone only draws); a tap scored by the shape it lands in; pinch-zoom and pan that never count against the learner; the right shape lit and the tap marked in the feedback.",
-    "What \"right\" is in the `place` ask, NOT BUILT: a state, province or country is its own shape; a city is inside its unit and in the part the item names (the unit split into halves or thirds, e.g. western Nevada); a river is a band drawn around its line; a range, a desert or a sea is its own area shape; a story place is right in its region (a coarser set of shapes).",
-    "A `map` block, NOT BUILT: the lesson's region drawn from the same data, with names for the one look at a new group, a place lit for naming, two places lit for a distance, and the true map after a trap item.",
-    "The map data, NOT BUILT: Natural Earth (public domain) countries, US states and Canadian provinces, rivers, lakes, seas, ranges and deserts, simplified and split into one file per region, each under 800 lines and listed in sw.js for offline; a budget of about 600 KB in all, measured when built; Alaska and Hawaii on insets of the US map.",
-    "Flags, BUILT as text: the emoji flags of countries render offline on iPhone and Android phones and are shown as the `place` ask's prompt; Kosovo and Palestine are to be checked on the phone; there are none for US states or Canadian provinces, so flags are asked for countries only.",
+    "A `place` ask, BUILT (3d39bc0, 2026-10-12; `docs/lesson-standard.md` 3.7): a blank north-up map with no names, drawn as shapes from the offline map data projected in advance; a tap scored by the shape it lands in; pinch, drag and zoom buttons that never count against the learner; the right place lit and the tap marked in the feedback (in a check, at the end).",
+    "What \"right\" is in the `place` ask: BUILT (3d39bc0) for a state, a country (Canada and Mexico whole on `us`), a sea, an ocean, a lake, a range and a world region as their own shapes, a river as a band around its line, a microstate as a dot whose radius shrinks with the zoom; so a story place is right in its region of `world`. NOT BUILT: a city, a capital and a part of a state (the unit split into halves or thirds, e.g. western Nevada) as places (3.10).",
+    "A `map` block, BUILT (3d39bc0; 3.9): a region of the map data drawn blank, north up, with `labels` for the one look at a new group and `lit` places (one for naming, two for a distance), and a map as an item's `figure`, the true map after a trap item. NOT BUILT: a line of latitude or longitude drawn through a place, which the trap item's feedback needs; and two cities lit for a distance, since cities are not places yet.",
+    "The map data, BUILT for three regions (6b7e3b7; 3.11): Natural Earth 5.1.2 (public domain) through `npm run maps`, one file per region in `public/maps/`, listed in sw.js for offline: `world` (continents, oceans, 20 regions), `us` (50 states and DC, 4 regions, the Great Lakes, 10 rivers, 4 ranges, Alaska and Hawaii on insets, Canada and Mexico whole) and `europe-west` (34 countries, 5 microstates as dots, 11 seas, the Alps, the Pyrenees); 228 KB in all, against the budget of about 600 KB. NOT BUILT: every other region the parts name (Canada's provinces, Mexico and Central America, the Caribbean, South America, the rest of Europe, Asia, Africa, the Pacific) and the places no region holds yet (deserts, straits and canals, the world's seas, lakes and rivers outside these three); each is a list in `tools/maps/regions.mjs` and a build.",
+    "Flags, BUILT as text: the emoji flags of countries render offline on iPhone and Android phones and are shown in a prose block as the `place` ask's question; Kosovo and Palestine are to be checked on the phone; there are none for US states or Canadian provinces, so flags are asked for countries only.",
     "The one line per country, BUILT: the item's `reason`, always shown after the answer; the lines themselves are content, written per region.",
-    "Generators that draw places fresh, NOT BUILT for places: `FC.gen` with a list of choices is built, but one that makes a `place` or naming item from the map data (a place of the group, the form it was not last asked) is not; the review asks a strand on a generator, so each group of places is a strand with its generator.",
-    "Naming a lit place, NOT BUILT as a shape: a `text` ask from memory with accepted spellings is built (one small misspelling forgiven, \"the\" optional, alternatives such as Türkiye / Turkey and Czechia / Czech Republic), but only under a `spoken` block that holds the question (`docs/lesson-standard.md` 3.7); a `text` ask whose question is a place lit on a `map` block, with no words, is a new item shape, built with the `map` block.",
-    "Borders and water, NOT BUILT: a `place` ask that takes a tap on any one neighbor's shape and a tap on the water's shape, with a \"Landlocked\" button in place of the water (as `tap` has \"Not given\").",
-    "The distance band, BUILT: a `choose` from the subject's `distance` and `travel` lists, the miles printed in the reason; lighting the two places needs the `map` block.",
-    "A trap item, BUILT except the map: two places named with no map in sight, and two asks in one item, each a `choose` from the subject's `direction` list (north or south of the first; east or west of it), as several asks in one item already are; after the answer the true map with both places lit and the line of latitude or longitude through the first, which needs the `map` block."
+    "Generators that draw places fresh, NOT BUILT for places: `FC.gen` with a list of choices is built, but one that makes a `place` or naming item from the map data (a place of the group, the form it was not last asked) is not (3.10); the review asks a strand on a generator, so each group of places is a strand with its generator.",
+    "Naming a lit place, BUILT (3d39bc0; 3.7): a `text` ask from memory with accepted spellings (one small misspelling forgiven, \"the\" optional, alternatives such as Türkiye / Turkey and Czechia / Czech Republic) whose question is one place lit on a `map` block, with no `spoken` block.",
+    "Borders and water, BUILT (3d39bc0; 3.7): the `place` ask's `mode: 'neighbor-water'`, a tap on any one neighbor, then a tap on the water or the button \"Landlocked\", both read from the neighbors and water the map data stores; after it every neighbor and every water is lit.",
+    "The distance band, BUILT: a `choose` from the subject's `distance` and `travel` lists, the miles printed in the reason; the two places lit on a `map` block are built for places the data holds, not for cities (above).",
+    "A trap item, BUILT except its feedback's line and its cities: two places named with no map in sight, and two asks in one item, each a `choose` from the subject's `direction` list (north or south of the first; east or west of it), and the true map as the item's `figure` (3d39bc0). NOT BUILT: the two cities lit on it (cities as places) and the line of latitude or longitude through the first; until both are, a trap's feedback can show only its region's map, so l32's traps wait for them."
   ],
   "readingShare": 0.1,
   "form": "A tap on a blank, north-up map with no names: a place named, its shape tapped; a flag shown, its country tapped; a neighbor and the water tapped, or \"Landlocked\"; a town never met, its region tapped from a story's clues; and the other way, a place lit and its name typed, or two places lit and the distance band and travel band chosen. Every check is these same actions on places or pairs drawn at random, feedback at the end, never a choice among names.",
@@ -373,7 +373,7 @@
     {
       "id": "16",
       "title": "Europe, west",
-      "check": "12 items on western Europe's countries, on the blank map, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); the split is fixed, and within each form the places are drawn at random, preferring ones last asked in another form; at least 10 of 12.",
+      "check": "12 items on western Europe's countries, on the blank map, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); the split is fixed, and within each form the places are drawn at random, preferring ones last asked in another form; the five microstates are drawn only among the 5 named and tapped, the one form the lesson asks them in; at least 10 of 12.",
       "topics": [
         "Europe, west and north",
         "the world's water, mountains and deserts",
@@ -557,7 +557,7 @@
     {
       "id": "32",
       "title": "Placing a place you have never heard of",
-      "check": "10 places never practised, each given as a story gives it (a town and its country or state, a port and its coast, a region and its neighbor), tapped by region on the blank world map; then 4 trap pairs never asked as a pair, north or south and east or west chosen with no map; feedback at the end; at least 8 of the 10 places and 3 of the 4 pairs.",
+      "check": "10 places never practised, each given as a story gives it (a town and its country or state, a port and its coast, a region and its neighbor), tapped by region on the blank world map, feedback at the end; at least 8 of the 10.",
       "topics": [
         "placing a place you have never heard of, from the clues a story gives"
       ]
@@ -879,7 +879,7 @@
       "part": "16",
       "does": "About 12 minutes. (1) Shown first, about a minute: Belgium named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped; then Switzerland's Landlocked shown; then France lit and its name typed, shown done with its line. (2) One look at the region's labeled map, about a minute, Iberia, France and the Low Countries, the German-speaking three, Italy, then the five microstates as dots, with the Alps; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Austria and Switzerland asked back to back; the microstates named and tapped only; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
       "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
-      "check": "12 items on western Europe's countries, on the blank map, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); the split is fixed, and within each form the places are drawn at random, preferring ones last asked in another form; at least 10 of 12.",
+      "check": "12 items on western Europe's countries, on the blank map, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); the split is fixed, and within each form the places are drawn at random, preferring ones last asked in another form; the five microstates are drawn only among the 5 named and tapped, the one form the lesson asks them in; at least 10 of 12.",
       "why": [
         "G1",
         "G2",
@@ -1191,9 +1191,9 @@
     },
     "l32": {
       "part": "32",
-      "does": "About 12 minutes. (1) Shown first, about a minute: one place never met, given as a story gives it, the clue that decides its region marked and the tap on the region shown. (2) Ten places never met, each from a story, tapped by region, about 4 minutes. (3) The traps, about 3 minutes: one shown first, done for the learner (San Diego and Reno: Reno is north of San Diego and west of it, though Nevada lies east of California; the true map shown with the line through San Diego); then about 8 pairs that placing by the unit or by a straightened map gets wrong, Rome and Philadelphia, Madrid and New York, Santiago and New York, Lima and Miami, Paris and Seattle among them, each with no map: north or south of the first, east or west of it chosen, the true map shown after each answer. They sit in this part because both are the same judgement with no map in sight: a place found from the unit it sits in, and where that unit misleads (G4, G5). (4) The check, about 4 minutes, on places and pairs never practised.",
+      "does": "About 12 minutes. (1) Shown first, about a minute: one place never met, given as a story gives it, the clue that decides its region marked and the tap on the region shown. (2) Ten places never met, each from a story, tapped by region, about 4 minutes. (3) The traps, practice only, about 3 minutes: one shown first, done for the learner (San Diego and Reno: Reno is north of San Diego and west of it, though Nevada lies east of California; the true map shown with the line through San Diego); then about 8 pairs that placing by the unit or by a straightened map gets wrong, Reno and Los Angeles (Reno is west), Rome and Philadelphia (Rome is north), Santiago and New York (Santiago is east), Lima and Miami (Lima is east), Paris and Seattle (Paris is north) among them, each with no map: north or south of the first, east or west of it chosen, the true map shown after each answer. They serve the part's action, placing a place from the unit it sits in, by showing where the unit or a straightened map misleads (G4, G5); the check and the gate 2 test do not ask them, so they are measured by nothing. (4) The check, about 4 minutes, on ten places never practised.",
       "feedback": "From the app, at once after each answer: the right region lit, the tap marked beside it after a miss, and one line naming the clue that decided the region; after a trap pair, the true map with both places lit, the line of latitude or longitude through the first, and one line on the unit that misleads (Nevada lies east of California, yet Reno is west of San Diego). The check gives it all at the end.",
-      "check": "10 places never practised, each given as a story gives it (a town and its country or state, a port and its coast, a region and its neighbor), tapped by region on the blank world map; then 4 trap pairs never asked as a pair, north or south and east or west chosen with no map; feedback at the end; at least 8 of the 10 places and 3 of the 4 pairs.",
+      "check": "10 places never practised, each given as a story gives it (a town and its country or state, a port and its coast, a region and its neighbor), tapped by region on the blank world map, feedback at the end; at least 8 of the 10.",
       "why": [
         "G4",
         "G5",
@@ -1361,13 +1361,16 @@ the test subject's data shape; no other subject, lesson or engine code). The own
   strands. Feedback at once (R7): the right place lit, the tap beside it, one line (G4: the unit is always named).
 - **readingShare 0.1**: the only reading is the one look at the labeled map, about a minute of a twelve-minute lesson;
   the worked item of each kind is practice, not reading (D5). The number is a judgement call (D4).
-- **Delivery**: the `place` ask, the `map` block, the map data, the place generators and the borders-and-water form are
-  not built; flags (emoji), the one line (`reason`) and the distance band (`choose`) are. Naming a lit place is a new
-  item shape: `text` from memory is built only under a `spoken` block (`docs/lesson-standard.md` 3.7), so a `text`
-  ask whose question is a place lit on a `map` block is built with the map (added after the record's review,
-  2026-10-12). A trap item is two places named with no map, north or south and east or west chosen from the subject's
-  `direction` list (a direction, never a name, as the distance item is a band), then the true map: built except the
-  map (also added after the review). Everything not built is built before the pilot, or the subject waits.
+- **Delivery** (brought up to date after the second review, 2026-10-13): built since the first review are the `place`
+  ask with its neighbor-and-water form and "Landlocked", the `map` block with `labels` and `lit` places and as a
+  `figure`, and a `text` ask naming a place lit on it (3d39bc0), and the map data for `world`, `us` and
+  `europe-west` (6b7e3b7); flags (emoji), the one line (`reason`) and the distance band (`choose`) were built
+  before. Not built: the other regions, the generators of place items, a city, a capital and a part of a state as
+  places, and a line of latitude or longitude drawn on a map. A trap item is two places named with no map, north or
+  south and east or west chosen from the subject's `direction` list (a direction, never a name, as the distance item
+  is a band), then the true map with both places lit and the line through the first: its asks and the map are built,
+  its cities and its line are not. The pilot (l16) needs only what is built; every later lesson waits for what it
+  names.
 
 ## Gate 4
 
@@ -1382,7 +1385,7 @@ region lists below are facts reused from the first plan under History.
   preference never overrides it). A fact check is a recall of the part's places, drawn fresh: for a fact subject the
   places are the content and the gate 2 test draws from the same lists, and every lesson asks each place both ways, so
   neither the form nor the place is new to the check. The new cases are elsewhere: part 31's pairs never asked as a
-  pair, part 32's places never practised and its trap pairs never asked, and the test's second sitting a week later
+  pair, part 32's places never practised, and the test's second sitting a week later
   (D1). (Corrected after the record's review, 2026-10-12: this said the new cases were "the other form and the draw",
   and the checks said both "the form its last set did not use" and a fixed split, which could clash.)
 - **The load sets the size.** A part is one sitting of about 12 minutes: a worked item, a minute's look, about 8
@@ -1424,7 +1427,7 @@ region lists below are facts reused from the first plan under History.
 | 29 | Island Southeast Asia and the Pacific | 10, the Pacific island states as dots | 10 of 12 |
 | 30 | The world's water, mountains and deserts | the seas, straits, ranges, deserts and rivers not yet placed | 10 of 12 |
 | 31 | How far | distance and travel bands | 8 of 10 new pairs |
-| 32 | Placing a place you have never heard of | story places, then the trap pairs | 8 of 10 new places, 3 of 4 new pairs |
+| 32 | Placing a place you have never heard of | story places, then the trap pairs as practice only | 8 of 10 new places |
 | 33 | The whole world, mixed | every list | 25 of 30; then the gate 2 test |
 
 **Why this order.** The owner's "the world first", and the units before the places in them (G4): the continents and
@@ -1442,8 +1445,10 @@ Every fact lesson has one shape (D5, G2, G3, R2, R7): one item done for the lear
 (about a minute, never again), recall in the practice's forms with misses back three items later, then the check; from
 lesson 2 a fifth of each later set is due places of earlier lessons (R9). The two judging lessons open with a worked
 case. Lesson 32 holds the traps as items of their own (G4, G5): two places named with no map, north or south and east
-or west of the first chosen, the true map after; one (San Diego and Reno) is done for the learner first, and part 32's
-check counts four new pairs. They sit with the story places because both are one judgement with no map in sight: a
+or west of the first chosen, the true map after; one (San Diego and Reno) is done for the learner first. The traps are practice only: part 32's check, like the gate 2
+test, asks only places never practised placed from a story's clues, so the traps are measured by nothing (changed after
+the second review, 2026-10-13: the check held four trap pairs, an action in neither `form` nor the test; and "Madrid
+and New York" was cut from the list, a third of a degree apart, for Reno and Los Angeles). They sit with the story places because both are one judgement with no map in sight: a
 place found from the unit it sits in, and where the unit (or a straightened map) misleads. "The size of Africa" was
 cut after the review: no principle of the record is about size. Reading is the one look, under a tenth of a lesson
 (D4). 33 blocks, one per part, `l1` to `l33`.
@@ -1452,7 +1457,8 @@ cut after the review: no principle of the record is about size. Reading is the o
 likely to fail: small shapes on a phone (Luxembourg, Belgium, the microstates), zoom, the flag ask, the
 neighbor-and-water ask with Landlocked (Switzerland, Austria), the one line per country, and whether twelve places
 asked four ways fit in twelve minutes. Its shown step does one of each kind it asks, the typed name included (France lit and named for the learner), since
-it is tried cold. Lesson 16 carries every one of these, so its failure sends back the part size
+it is tried cold. The five microstates are asked only named and tapped, so its check draws them only into the five
+named and tapped, never into a form the lesson did not ask them in (added after the second review, 2026-10-13). Lesson 16 carries every one of these, so its failure sends back the part size
 (gate 4) or a delivery item before 32 more lessons are built on them. It needs no earlier lesson: its due mix starts
 once one is built.
 
