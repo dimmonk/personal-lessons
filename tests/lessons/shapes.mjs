@@ -118,6 +118,9 @@ const ITEM_FIELDS = { id: str, strand: str, facets: map(str), blocks: arr(any), 
 const ITEM_OPTIONAL = { steps: arr(STEP_DEF), deciding: arr(str), need: text, has: map(any), fact: str, redraw: en('from-zero'), figure: any };
 export const ITEM = obj(ITEM_FIELDS, ITEM_OPTIONAL);
 export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), make: fn }, ITEM_OPTIONAL);
+// a place group (place-gen.js): a generator that makes one place in one of four forms from the map data; its forms and places are checked against the map by placeGenProblems
+const PLACE_ENTRY = obj({ id: str, name: str, reason: text, accept: arr(ACCEPT_ENTRY) }, { flag: str });
+export const PLACE_GEN = obj({ id: str, strand: str, places: obj({ map: str, forms: arr(str), words: map(text), list: arr(PLACE_ENTRY) }, { slips: map(str) }) }, { facets: map(str) });
 
 /* lessons */
 const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }), obj({ sing: obj({ task: str }, { seconds: int, maxSemitones: int, minSemitones: int, notes: int, maxStep: int, cents: int }), n: int }));
@@ -125,7 +128,9 @@ const SUPPORT = obj({}, { panel: bool, line: bool, shown: bool, leave: int, esti
 const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffle') },
   { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });
 const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
-const CHECK = obj({ items: either(arr(REF), obj({ draw: obj({ strands: arr(str), n: int }) })), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
+// a check drawn at random: n questions of the named strands, or from one place group as many of each form as the split says (3.4)
+const DRAW = obj({ draw: either(obj({ strands: arr(str), n: int }), obj({ gen: str, split: map(int) }, { only: map(arr(str)) })) });
+const CHECK = obj({ items: either(arr(REF), DRAW), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
   { spoken: bool, recall: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds
 export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str }) };

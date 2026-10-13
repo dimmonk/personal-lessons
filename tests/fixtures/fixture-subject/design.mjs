@@ -161,7 +161,9 @@ export const ATLAS_DESIGN = record('atlas', ['facts'], {
   delivery: ['a blank map drawn from data', 'a tap scored by the shape it lands in', 'a neighbor and its water, or Landlocked', 'a lit place named from memory'],
   form: 'A tap on a blank map with no names, or a lit place and its name typed.',
   readingShare: 0.9
-}, [{ id: '1', title: 'The isles', check: 'Three new places on the blank map: tap one, say what borders another, name a lit one; all three right.' }], { l1: '1' }, 'l1', { l1: owner('2026-10-12') }, '2026-10-12');
+}, [{ id: '1', title: 'The isles', check: 'Three new places on the blank map: tap one, say what borders another, name a lit one; all three right.' },
+  { id: '2', title: 'The isles again', check: 'Five places drawn at random on the blank map: two tapped by name, one named when lit, one tapped by its flag, one with its neighbor and water; at least 4 of 5 right.' }],
+{ l1: '1', l2: '2' }, 'l1', { l1: owner('2026-10-12'), l2: owner('2026-10-12') }, '2026-10-12');
 
 // the entries of `tried` carry the fingerprint of the lesson as tried; negative-controls.mjs fills it from the loaded data (withTriedFps)
 export const withTriedFps = (designs, fpOf) => Object.fromEntries(Object.entries(designs).map(([id, r]) => [id, { ...r, tried: Object.fromEntries(Object.entries(r.tried).map(([l, e]) => [l, { ...e, fp: fpOf(id, l) }])) }]));
@@ -173,6 +175,6 @@ export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 
   'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js', 'account-subject.js', 'account-items.js', 'account-l1.lesson.js',
   'pressure-subject.js', 'pressure-items.js', 'pressure-l0.lesson.js', 'pressure-l1.lesson.js',
   'interview-subject.js', 'interview-items.js', 'interview-l1.lesson.js', 'interview-l2.lesson.js', 'interview-l3.lesson.js', 'interview-l4.lesson.js',
-  'atlas-map.js', 'atlas-subject.js', 'atlas-items.js', 'atlas-l1.lesson.js'];
+  'atlas-map.js', 'atlas-subject.js', 'atlas-items.js', 'atlas-places.js', 'atlas-l1.lesson.js', 'atlas-l2.lesson.js'];
 // the ids of the test subjects, in the order they load
 export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview', 'atlas'];

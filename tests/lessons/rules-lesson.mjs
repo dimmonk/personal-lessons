@@ -12,9 +12,14 @@ const DRAWN_ITEM_SECONDS = 20;
 const GENERATOR_SEEDS = 200;   // V75: how many seeds a generator is run on
 const SAMPLE_SEEDS = 5;        // V74: how many instances of a generator are read as questions
 
-// The definitions a list of references stands for, one per question the learner meets: [{ id, def, ref }]
+// The definitions a list of references stands for, one per question the learner meets: [{ id, def, ref }]. A reference to a place group stands for
+// questions of the group in the form it names (or each of its forms in turn), since the group itself has no asks of its own to read.
 function defsOf(s, refs) {
-  return refs.flatMap(r => Array.from({ length: r.n }, () => ({ id: r.id, def: s.def(r.id), ref: r.ref })));
+  return refs.flatMap(r => Array.from({ length: r.n }, (_, k) => ({ id: r.id, def: s.engine.isPlaceGen(s.def(r.id)) ? placeQuestionFor(s, r.ref, k) : s.def(r.id), ref: r.ref })));
+}
+function placeQuestionFor(s, ref, k) {
+  const made = s.refDefs({ id: ref.gen, ref });
+  return made[k % made.length];
 }
 const strandsOfRefs = (s, refs) => unique(refs.map(r => s.def(r.id).strand));
 
@@ -22,8 +27,9 @@ const strandsOfRefs = (s, refs) => unique(refs.map(r => s.def(r.id).strand));
 function passProblems(s, lv) {
   const check = lv.lesson.check, problems = [];
   const drawn = s.engine.checkIsDrawn(check);
+  const draw = drawn ? check.items.draw : null, group = draw && 'gen' in draw;
   const defs = drawn ? [] : defsOf(s, lv.checkRefs).map(x => x.def);
-  const askIds = new Set(drawn ? Object.values(s.items).flatMap(i => i.asks.map(a => a.id)) : defs.flatMap(d => d.asks.map(a => a.id)));
+  const askIds = new Set(group ? s.placeMadeOf(draw.gen).flatMap(x => x.item.asks.map(a => a.id)) : drawn ? Object.values(s.items).flatMap(i => i.asks.map(a => a.id)) : defs.flatMap(d => d.asks.map(a => a.id)));
   const slipIds = (s.meta.lists.slip || []).map(x => x.id);
   check.pass.forEach((rule, i) => {
     const where = `pass rule ${i + 1}`;
@@ -38,6 +44,11 @@ function passProblems(s, lv) {
     if (!drawn) {
       const counted = defs.filter(d => s.engine.whereMatches(rule.where, d.facets) && (!rule.ask || d.asks.some(a => a.id === rule.ask)));
       if (rule.right && rule.right.min > counted.length) problems.push(`${where} needs ${rule.right.min} right and counts only ${counted.length} question${counted.length === 1 ? '' : 's'}`);
+    } else if (group) {
+      // the questions a draw from a place group asks: as many of each form as the split says, each with the group's facets and its form
+      const gen = s.gens[draw.gen], asked = Object.entries(draw.split).filter(([form]) => s.placeMadeOf(draw.gen).some(x => x.form === form
+        && s.engine.whereMatches(rule.where, x.item.facets) && (!rule.ask || x.item.asks.some(a => a.id === rule.ask)))).reduce((n, [, k]) => n + k, 0);
+      if (rule.right && rule.right.min > asked) problems.push(`${where} needs ${rule.right.min} right and the check draws only ${asked} that it counts`);
     } else if (rule.right && rule.right.min > check.items.draw.n) problems.push(`${where} needs ${rule.right.min} right and the check draws only ${check.items.draw.n}`);
   });
   return problems;
@@ -54,7 +65,7 @@ function recallCheckProblems(s, lv) {
     lv.checkRefs.filter(r => typeof r.ref === 'string' && (inFlow.has(r.id) || worked.has(r.id))).forEach(r => problems.push(`the check question "${r.id}" is also in the lesson's own groups or worked example`));
   }
   if (check.spoken) {
-    const defs = drawn ? [...Object.values(s.items), ...Object.values(s.gens)].filter(d => check.items.draw.strands.includes(d.strand)) : lv.checkRefs.map(r => s.def(r.id));
+    const defs = drawn ? s.itemLike.filter(d => s.engine.drawStrands(s.subject, check.items.draw).includes(d.strand)) : defsOf(s, lv.checkRefs).map(x => x.def);
     defs.filter(d => !d.blocks.some(b => b.kind === 'spoken')).forEach(d => problems.push(`the check is read aloud, and the question "${d.id}" has no spoken block`));
   }
   return problems;
@@ -80,7 +91,7 @@ function doingSeconds(s, lv) {
   // a timed group gives each question its seconds (the learner has no more, and a call or chat that is not timed counts as its own time)
   const group = (refs, support, seconds) => defsOf(s, refs).reduce((n, x) => n + (seconds && !x.def.asks.some(a => a.kind === 'exchange') ? seconds : asksTime(x.def, support)), 0);
   const sets = lv.sets.reduce((n, set, i) => n + group(lv.setRefs[i], set.support, set.seconds), 0);
-  const check = s.engine.checkIsDrawn(lv.lesson.check) ? lv.lesson.check.items.draw.n * DRAWN_ITEM_SECONDS : group(lv.checkRefs, null, lv.lesson.check.seconds);
+  const check = s.engine.checkIsDrawn(lv.lesson.check) ? s.engine.drawSize(lv.lesson.check.items.draw) * DRAWN_ITEM_SECONDS : group(lv.checkRefs, null, lv.lesson.check.seconds);
   const own = lv.lesson.flow.filter(step => step.own).length * DOING_SECONDS.form;   // the step on the learner's own data is doing, not reading
   return sets + check + own;
 }
@@ -199,7 +210,8 @@ function explainProblems(s, item) {
 }
 export const V74 = subjectRule('V74', (s, check) => {
   Object.values(s.items).forEach(i => checkEach(check, `item ${i.id}`, explainProblems(s, i)));
-  Object.values(s.gens).forEach(g => {
+  s.placeMade.forEach(x => checkEach(check, x.name, explainProblems(s, x.item)));
+  s.numberGens.forEach(g => {
     const problems = unique(Array.from({ length: SAMPLE_SEEDS }, (_, k) => k + 1).flatMap(seed => {
       try { return explainProblems(s, s.engine.itemFromGen(g, seed)); } catch (e) { return [`seed ${seed}: ${e.message}`]; }
     }));
@@ -245,8 +257,23 @@ function generatorProblems(s, gen) {
   }
   return [...problems];
 }
+// A place group has no numbers to draw: a seed names a pair of place and form. On every pair and on 200 seeds, the same seed makes the same question,
+// the question is the pair the seed names, and a seed made for a pair names that pair.
+function placeGroupSeedProblems(s, gen) {
+  const e = s.engine, problems = new Set(), pairs = e.placePairs(gen);
+  for (let seed = 0; seed < Math.max(GENERATOR_SEEDS, 2 * pairs.length); seed++) {
+    try {
+      const a = e.itemFromGen(gen, seed), b = e.itemFromGen(gen, seed), pair = pairs[seed % pairs.length];
+      if (JSON.stringify(a) !== JSON.stringify(b)) problems.add('the same seed does not give the same question');
+      if (a.values.place !== pair.place || a.values.form !== pair.form) problems.add(`seed ${seed} makes ${a.values.place} as ${a.values.form}, not the pair it names (${pair.place}, ${pair.form})`);
+    } catch (error) { problems.add(error.message); }
+  }
+  pairs.forEach(({ place, form }) => { if (e.itemFromGen(gen, e.placeSeedOf(gen, place, form, 3)).values.form !== form) problems.add(`the seed made for ${place} as ${form} makes another question`); });
+  return [...problems];
+}
 export const V75 = subjectRule('V75', (s, check) => {
-  Object.values(s.gens).forEach(g => checkEach(check, `generator ${g.id}`, generatorProblems(s, g)));
+  s.numberGens.forEach(g => checkEach(check, `generator ${g.id}`, generatorProblems(s, g)));
+  s.placeGens.forEach(g => checkEach(check, `generator ${g.id}`, placeGroupSeedProblems(s, g)));
 });
 
 /* ---------- V76: every group and check holds the subject's mix ---------- */

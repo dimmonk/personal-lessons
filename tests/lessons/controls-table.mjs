@@ -44,6 +44,7 @@ const interviewMeta = (...rest) => ['subjects', 'interview', 'meta', ...rest];
 // the test subject of the map block and the place ask
 const atlasItem = (id, ...rest) => ['subjects', 'atlas', 'items', id, ...rest];
 const atlasLesson = (id, ...rest) => ['subjects', 'atlas', 'lessons', id, ...rest];
+const atlasGen = (id, ...rest) => ['subjects', 'atlas', 'gens', id, ...rest];
 const atlasMeta = (...rest) => ['subjects', 'atlas', 'meta', ...rest];
 
 // V69: the last commit's lock with one lesson's content different, and a design record patched as given (reviews and research too)
@@ -382,7 +383,32 @@ export const CONTROLS = [
   { rule: 'V74', name: 'a place ask whose slip the subject does not list', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'slips'), { alder: 'nowhere' }) },
   { rule: 'V74', name: 'a lit place named from memory under a spoken block as well', data: (d, h) => h.updateIn(d, atlasItem('n-cedar', 'blocks'), blocks => [...blocks, { kind: 'spoken', text: 'What is the lit country called?' }]) },
   { rule: 'V74', name: 'a lit place named from memory with no place lit', data: (d, h) => h.removeIn(d, atlasItem('n-cedar', 'blocks', 0, 'lit')) },
-  { rule: 'V83', name: 'a place ask in a timed group', data: (d, h) => h.setIn(h.setIn(d, atlasMeta('timed'), true), atlasLesson('l1', 'flow', 3, 'set', 'seconds'), 15) }
+  { rule: 'V83', name: 'a place ask in a timed group', data: (d, h) => h.setIn(h.setIn(d, atlasMeta('timed'), true), atlasLesson('l1', 'flow', 3, 'set', 'seconds'), 15) },
+  // a group of places made into questions, and a check drawn from it by form
+  { rule: 'V70', name: 'a group of places of a region the map data does not have', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'map'), 'narnia') },
+  { rule: 'V70', name: 'a group that lists a place the map does not have', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'list', 0, 'id'), 'narnia') },
+  { rule: 'V70', name: 'a group that lists one place twice', data: (d, h) => h.updateIn(d, atlasGen('g-isles', 'places', 'list'), list => [...list, list[0]]) },
+  { rule: 'V70', name: 'a group asked in a form that is not one of the four', data: (d, h) => h.updateIn(d, atlasGen('g-isles', 'places', 'forms'), forms => [...forms, 'dance']) },
+  { rule: 'V70', name: 'a group asked in a form it has no words for', data: (d, h) => h.removeIn(d, atlasGen('g-isles', 'places', 'words', 'border')) },
+  { rule: 'V70', name: 'a place of a group with no reason', data: (d, h) => h.removeIn(d, atlasGen('g-isles', 'places', 'list', 0, 'reason')) },
+  { rule: 'V70', name: 'a place of a group with no accepted spellings', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'list', 0, 'accept'), []) },
+  { rule: 'V70', name: 'a group whose slip is keyed by a place the map does not have', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'slips'), { narnia: 'next-door' }) },
+  { rule: 'V70', name: 'a group in a strand the subject does not have', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'strand'), 'narnia') },
+  { rule: 'V70', name: 'a group asked in a form that is not a value of the subject\'s facet', data: (d, h) => h.updateIn(d, atlasMeta('facets', 'form', 'values'), values => values.filter(v => v.id !== 'flag')) },
+  { rule: 'V70', name: 'a check drawn from a group in a form the group does not ask', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'items', 'draw', 'split'), { tap: 2, dance: 1 }) },
+  { rule: 'V70', name: 'a check drawn from a group whose split asks nothing', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'items', 'draw', 'split'), { tap: 0, name: 0 }) },
+  { rule: 'V70', name: 'a check drawn from a group that keeps a place the group does not have', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'items', 'draw', 'only'), { tap: ['narnia'] }) },
+  { rule: 'V70', name: 'a check drawn from a group that keeps a place to a form it cannot be asked in', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'items', 'draw', 'only'), { flag: ['speck'] }) },
+  { rule: 'V70', name: 'a check drawn from a group that asks more of a form than the group has places for', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'items', 'draw', 'split'), { flag: 4 }) },
+  { rule: 'V70', name: 'a check drawn from a generator the subject does not have', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'items', 'draw', 'gen'), 'narnia') },
+  { rule: 'V70', name: 'a group named in a lesson with a form it does not ask', data: (d, h) => h.setIn(d, atlasLesson('l2', 'flow', 1, 'set', 'items', 0, 'with'), { form: 'dance' }) },
+  { rule: 'V70', name: 'a group named in a lesson for more places than it can offer in that form', data: (d, h) => h.setIn(d, atlasLesson('l2', 'flow', 1, 'set', 'items', 1, 'n'), 4) },
+  { rule: 'V70', name: 'a group named in a lesson with a place it does not have', data: (d, h) => h.setIn(d, atlasLesson('l2', 'flow', 1, 'set', 'items', 0, 'with'), { place: 'narnia' }) },
+  { rule: 'V72', name: 'a pass rule that needs more of a form than the drawn check asks', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'pass'), [{ where: { form: 'flag' }, right: { min: 2 } }]) },
+  { rule: 'V72', name: 'a pass rule that counts a form the subject does not have', data: (d, h) => h.setIn(d, atlasLesson('l2', 'check', 'pass'), [{ where: { form: 'dance' }, right: { min: 1 } }]) },
+  { rule: 'V74', name: 'a group that lists one spelling of a place twice', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'list', 0, 'accept'), ['Alder', 'alder']) },
+  { rule: 'V74', name: 'a group whose slip the subject does not list', data: (d, h) => h.setIn(d, atlasGen('g-isles', 'places', 'slips'), { alder: 'nowhere' }) },
+  { rule: 'V83', name: 'a group of places in a timed group', data: (d, h) => h.setIn(h.setIn(d, atlasMeta('timed'), true), atlasLesson('l2', 'flow', 1, 'set', 'seconds'), 15) }
 ];
 
 // Rules with no seeded fault of their own, and why
@@ -390,4 +416,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 269;
+export const PINNED_CONTROL_COUNT = 293;

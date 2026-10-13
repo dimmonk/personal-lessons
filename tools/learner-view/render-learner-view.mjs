@@ -212,7 +212,7 @@ function askLines(e, data, ask, marks, item) {
   return lines;
 }
 function questionLines(e, data, inst, support, label) {
-  const item = inst.item, lines = [`#### ${label}${inst.seed !== undefined ? ` (made with fresh numbers; this is seed ${inst.seed})` : ''}`, '', blocksText(item.blocks, support && support.shown ? item.deciding : [], data.subjects.__current.meta.refs || [], { rules: data.subjects.__current.meta.rules, panel: !!(support && support.panel) })];
+  const item = inst.item, lines = [`#### ${label}${inst.seed !== undefined ? (inst.item.values && inst.item.values.place ? ` (made from a group of places: ${inst.item.values.name}, ${inst.item.values.form}; this is seed ${inst.seed})` : ` (made with fresh numbers; this is seed ${inst.seed})`) : ''}`, '', blocksText(item.blocks, support && support.shown ? item.deciding : [], data.subjects.__current.meta.refs || [], { rules: data.subjects.__current.meta.rules, panel: !!(support && support.panel) })];
   if (support && support.panel && e.panelBlocksOf(item).length) { const own = e.itemRuleIds(item).map(id => data.subjects.__current.meta.rules[id]).filter(r => r.heading); lines.push(`Help on screen: ${own.length === 1 && e.itemRuleIds(item).length === 1 ? e.SAY.helpPanelNamed(own[0].heading) : e.SAY.helpPanel}`, ''); }
   if (support && support.shown) lines.push('Help on screen: the words that decide it are marked.', '');
   const shown = e.shownStepIds(item, support);
@@ -319,7 +319,17 @@ export function renderLesson(loaded, subjectId, lessonId) {
     '## The why', '', ...paras(lesson.why), ''];
   let n = 0;
   // a made question is shown with the seed of its place in the lesson, so the numbers in the view differ from one question to the next
-  const instance = ref => e.refId(ref) in subject.items ? { key: e.refId(ref), item: subject.items[e.refId(ref)] } : { key: e.refId(ref), item: e.itemFromGen(subject.gens[e.refId(ref)], n + 1, ref.with), seed: n + 1 };
+  // a place group is shown at the place and form its reference asks, the next one in turn for each question of the reference
+  const seedOf = (gen, ref) => {
+    if (!e.isPlaceGen(gen)) return n + 1;
+    const w = ref.with || {}, pairs = e.placePairs(gen).filter(p => (!w.form || p.form === w.form) && (!w.place || p.place === w.place)), pair = pairs[n % pairs.length];
+    return e.placeSeedOf(gen, pair.place, pair.form);
+  };
+  const instance = ref => {
+    if (e.refId(ref) in subject.items) return { key: e.refId(ref), item: subject.items[e.refId(ref)] };
+    const gen = subject.gens[e.refId(ref)], seed = seedOf(gen, ref);
+    return { key: e.refId(ref), item: e.itemFromGen(gen, seed, ref.with), seed };
+  };
   const rangeShown = { done: false }, needsRange = ref => isSung(ref) && e.SING_NEEDS_RANGE.includes(ref.sing.task);
   lesson.flow.forEach((step, i) => {
     const at = `Step ${i + 1}`;
@@ -362,7 +372,12 @@ export function renderLesson(loaded, subjectId, lessonId) {
   else out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : check.recall ? e.SAY.checkIntroAgain(size).replace(/ To pass:$/, '') : e.checkIsDrawn(check) ? e.SAY.checkIntroDrawn(size).replace(/ To pass:$/, '') : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
     ...(clockWords ? [clockWords.trim(), ''] : []), 'To pass:', ...check.pass.map(r => `- ${e.ruleText(subject, r, e.rightWord(check))}`), '');
   if (check.spoken) out.push(`The check is spoken: ${e.SAY.checkSpoken} Its first screen adds: ${e.SAY.checkUpdates}`, '');
-  if (e.checkIsDrawn(check)) {
+  if (e.checkIsDrawn(check) && 'gen' in check.items.draw) {
+    const draw = check.items.draw, gen = subject.gens[draw.gen], split = Object.entries(draw.split).filter(([, k]) => k > 0).map(([f, k]) => `${k} ${f}`).join(', ');
+    out.push(`The questions are drawn at random from one group of places (${gen.places.list.map(p => p.name).join(', ')}): ${split}, the same run drawing the same. Within a form the places are drawn at random, a place the draw has not used first and one last asked in another form before one last asked in this form${Object.keys(draw.only || {}).length ? `; ${Object.entries(draw.only).map(([f, ids]) => `${ids.join(', ')} only as ${f}`).join('; ')}` : ''}. One question of each form is shown here, as a learner would meet it:`, '');
+    Object.keys(draw.split).forEach(form => { const pair = e.placePairs(gen).find(p => p.form === form); out.push(...questionLines(e, data, { key: e.placeKey(gen.id, pair.place), item: e.itemFromGen(gen, e.placeSeedOf(gen, pair.place, form)), seed: e.placeSeedOf(gen, pair.place, form) }, null, `Question in the draw: ${form}`)); });
+  }
+  else if (e.checkIsDrawn(check)) {
     out.push(`The questions are drawn at random from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them), the same run drawing the same; what no earlier ${check.retest ? 'run of this check' : 'check'} asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:`, '');
     check.items.draw.strands.flatMap(id => Object.values(subject.items).filter(i => i.strand === id)).forEach(i => out.push(...questionLines(e, data, { key: i.id, item: i }, null, `Question in the draw: ${i.id}`)));
   }

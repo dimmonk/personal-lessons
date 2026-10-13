@@ -2,7 +2,7 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, MAP_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, MAP_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, PLACE_GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -278,9 +278,11 @@ function refProblems(ref, where, ctx) {
     return [...(ctx.engine.SING_TASKS.includes(ref.sing.task) ? [] : [`${where}: "${ref.sing.task}" is not a sung task (${ctx.engine.SING_TASKS.join(', ')})`]),
       ...(ref.n >= 1 ? [] : [`${where}: a sung task is asked at least once`])];
   }
-  const id = ctx.engine.refId(ref);
+  const id = ctx.engine.refId(ref), gen = ctx.subject.gens[id];
   if (typeof ref === 'string') return ctx.subject.items[id] ? [] : [`${where}: "${id}" is not an item of the subject`];
-  return ctx.subject.gens[id] ? [] : [`${where}: "${id}" is not a generator of the subject`];
+  if (!gen) return [`${where}: "${id}" is not a generator of the subject`];
+  // a reference to a place group names a form or a place of it, and asks no more places than it can offer in that form
+  return ctx.engine.isPlaceGen(gen) && ctx.soundGroups.has(id) ? ctx.engine.placeRefProblems(gen, ref, ctx.engine.placeOnlyOf(ctx.subject, id)).map(p => `${where}: ${id}: ${p}`) : [];
 }
 
 // Help that needs something in the questions it is given to: the "disagree" line needs an estimate and an exact answer to compare, and
@@ -295,6 +297,7 @@ function supportFitsProblems(set, where, ctx) {
     problems.push(`${where}: the group turns on the estimate check and none of its questions has an estimate and an exact answer`);
   }
   if (support.leave && defs.some(d => !(d.steps || []).length)) problems.push(`${where}: leaves the last steps to the learner, and a question of the group has no steps`);
+  if (defs.some(engine.isPlaceGen)) { problems.push(`${where}: a group of places takes no help`); return problems; }
   if (support.panel && defs.some(d => !engine.panelBlocksOf(d).length)) problems.push(`${where}: shows what the label needs beside the words, and a question of the group has no panel`);
   return problems;
 }
@@ -355,10 +358,18 @@ function lessonProblems(lesson, ctx) {
   problems.push(...ownAnswersProblems(lesson, where, ctx));
   const check = lesson.check;
   if (Array.isArray(check.items)) check.items.forEach(r => problems.push(...refProblems(r, `${where}.check.items`, ctx)));
+  else if ('gen' in check.items.draw) problems.push(...drawGroupProblems(check.items.draw, `${where}.check`, ctx));
   else check.items.draw.strands.filter(s => !subject.meta.strands.some(x => x.id === s)).forEach(s => problems.push(`${where}.check: "${s}" is not a strand of the subject`));
   if (check.seconds !== undefined && !subject.meta.timed) problems.push(`${where}.check has seconds in a subject that does not time its items`);
   if (check.recall && !Array.isArray(check.items)) problems.push(`${where}.check asks its questions again, and a check that is drawn at random has no questions to ask again`);
   return problems;
+}
+// A check drawn from a place group: the group is one of the subject's, and the split and the places it keeps to a form are the group's to ask
+function drawGroupProblems(draw, where, ctx) {
+  const gen = ctx.subject.gens[draw.gen];
+  if (!gen) return [`${where}: "${draw.gen}" is not a generator of the subject`];
+  if (!ctx.engine.isPlaceGen(gen)) return [`${where}: "${draw.gen}" is not a group of places, and only a group of places is drawn by form`];
+  return ctx.soundGroups.has(draw.gen) ? ctx.engine.placeDrawProblems(gen, draw).map(p => `${where}: ${p}`) : [];
 }
 // A lesson that asks about the learner's own answers (a senator, the capital) has a step before it where they enter them; a drawn check leaves such a
 // question out until they are entered.
@@ -418,6 +429,16 @@ function dateFieldProblems(meta) {
 }
 
 /* ---------- V70 ---------- */
+// a place group: its shape, then its places against the map data
+function groupProblems(gen, ctx) {
+  const shape = show(checkShape(gen, PLACE_GEN, `generator ${gen.id}`));
+  return shape.length ? shape : ctx.engine.placeGenProblems(gen, ctx.engine.maps).map(p => `generator ${gen.id}: ${p}`);
+}
+// every question a sound group can make is read as an item of the subject: its ask, its map, its facet and strand
+function madeProblems(gen, ctx) {
+  if (!ctx.soundGroups.has(gen.id)) return [];
+  return ctx.engine.placeItems(gen).flatMap(({ seed, values, ...item }) => itemProblems(item, `generator ${gen.id} (${values.place}, ${values.form})`, ctx, false));
+}
 function subjectProblems(s) {
   const { subject, meta, engine } = s;
   const problems = show(checkShape({ ...meta }, SUBJECT, 'the subject record'));
@@ -450,8 +471,10 @@ export const V70 = subjectRule('V70', (s, check) => {
   const ctx = { subject: s.subject, engine: s.engine, listIds: s.listIds, refIds: (s.meta.refs || []).map(r => r.id), ruleIds: Object.keys(s.meta.rules || {}),
     headedIds: Object.entries(s.meta.rules || {}).filter(([, r]) => r.heading).map(([id]) => id) };
   const items = Object.values(s.items), gens = Object.values(s.gens), lessons = s.lessonList;
+  // a place group is sound when its own shape and its places are, and only then are the questions it makes and the lessons that name it read
+  ctx.soundGroups = new Set(s.placeGens.filter(g => !groupProblems(g, ctx).length).map(g => g.id));
   items.forEach(i => checkEach(check, `item ${i.id}`, itemProblems(i, `item ${i.id}`, ctx, false)));
-  gens.forEach(g => checkEach(check, `generator ${g.id}`, itemProblems(g, `generator ${g.id}`, ctx, true)));
+  gens.forEach(g => checkEach(check, `generator ${g.id}`, s.engine.isPlaceGen(g) ? [...groupProblems(g, ctx), ...madeProblems(g, ctx)] : itemProblems(g, `generator ${g.id}`, ctx, true)));
   lessons.forEach(l => checkEach(check, `lesson ${l.id}`, lessonProblems(l, ctx)));
 });
 

@@ -45,14 +45,16 @@ function subjectText(s) {
     ...learnerStrings({ endResult, parts }, 'the subject record', true),
     ...Object.values(subject.lessons).flatMap(l => learnerStrings(l, `lesson ${l.id}`)),
     ...Object.values(subject.items).flatMap(i => learnerStrings(i, `item ${i.id}`)),
-    ...Object.values(subject.gens).flatMap(g => learnerStrings(g, `generator ${g.id}`))
+    ...s.numberGens.flatMap(g => learnerStrings(g, `generator ${g.id}`)),
+    // a place group is read as the questions it makes: what the learner is shown and asked, the names, the flags and the one line of each place
+    ...s.placeMade.flatMap(x => learnerStrings(x.item, x.name))
   ];
 }
 
 /* ---------- V4: no codes or ids in learner text ---------- */
 function everyId(s) {
   const { meta, subject } = s;
-  const asks = [...Object.values(subject.items), ...Object.values(subject.gens)];
+  const asks = s.itemLike;
   return [
     ...Object.keys(subject.lessons), ...Object.keys(subject.items), ...Object.keys(subject.gens),
     ...asks.flatMap(i => [...i.asks.flatMap(a => [a.id, ...(a.options || []).map(o => o.id), ...(a.steps || []).map(o => o.id), ...Object.keys(a.turns || {}), ...Object.values(a.turns || {}).flatMap(t => t.options.map(o => o.id)), ...Object.keys(a.ends || {})]), ...(i.steps || []).map(x => x.id), ...i.blocks.flatMap(b => s.engine.segmentsOf(b).map(x => x.id))]),
@@ -82,7 +84,7 @@ const feedbackOf = (item, where) => [
   ...item.blocks.flatMap((b, i) => (b.lines || []).flatMap((seg, j) => learnerStrings(seg.note, `${where}.blocks[${i}].lines[${j}].note`)))
 ];
 export const V36 = subjectRule('V36', (s, check) => {
-  const all = [...Object.values(s.items).map(i => [i, `item ${i.id}`]), ...Object.values(s.gens).map(g => [g, `generator ${g.id}`])];
+  const all = [...Object.values(s.items).map(i => [i, `item ${i.id}`]), ...s.numberGens.map(g => [g, `generator ${g.id}`]), ...s.placeMade.map(x => [x.item, x.name])];
   for (const [item, where] of all) {
     for (const { where: w, text } of feedbackOf(item, where)) check(!PRAISE.test(text.trim()), `${w}: praise or a bare verdict: "${text.slice(0, 40)}"`);
   }
