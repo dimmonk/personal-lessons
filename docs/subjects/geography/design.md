@@ -236,7 +236,12 @@
       "shown": [],
       "sentence": "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight."
     },
-    "practice": null,
+    "practice": {
+      "date": "2026-10-12",
+      "words": "on track.",
+      "where": "chat, 2026-10-12, on the printed practice screen",
+      "fp": "sha256:e3f60e24047b94a5c170af245c4897b4cbd901812de56b22f9bc6f0e687568b2"
+    },
     "history": {
       "goal": [],
       "practice": []
