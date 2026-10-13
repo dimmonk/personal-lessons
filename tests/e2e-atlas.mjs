@@ -104,6 +104,8 @@ export async function X46(env) {
   let now = await look(page);
   c.check(now.done && now.r.where === 'next-door', `a tap on Alder when Birch was asked scored ${now.r && now.r.where}, not the slip next-door`);
   c.check(JSON.stringify(await lit(page)) === '["birch"]' && await page.locator('.item .mk-wrong').count() === 1, `after the answer the lit places are ${JSON.stringify(await lit(page))}, and ${await page.locator('.item .mk-wrong').count()} tap is marked wrong`);
+  const missNames = await page.locator('.item .mapsvg text').allTextContents();
+  c.check(JSON.stringify(missNames) === '["Birch"]', `after a miss the map names ${JSON.stringify(missNames)}, not the right place Birch`);
   let text = await env.screenText(page);
   c.check(/You tapped: Alder\./.test(text) && /tapped the country next to it/.test(text) && /Not this one/.test(text) && /The answer: Birch/.test(text), 'the feedback does not say what the tap was on, the slip and the right place');
   c.check(await page.locator(`${MAP}`).count() === 0 && await page.locator('.item .mapsvg').count() === 1, 'the map still answers taps after the answer');

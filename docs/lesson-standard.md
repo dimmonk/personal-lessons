@@ -352,7 +352,8 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   `{ n: [x, y, k], w: [x, y, k] | 'none' }`; after it every neighbor of `of`, the water it touches and the water the learner tapped are lit (no other water: the map has no
   names, so the water lit is named on it, each sea once), `of` outlined, the taps marked. Landlocked stands in the row of the zoom buttons, under the map.
 - *Feedback* (section 4.1): the mark, "You tapped: <place>" (or that the tap was on no place) with the slip's name, the right
-  place lit on the same map and the tap marked beside it. In a check nothing is lit or marked until the end (X23). A worked
+  place lit on the same map and the tap marked beside it; after a miss the right place is also named on the map, so the name is learned
+  with where it is (a right tap names nothing). In a check nothing is lit or marked until the end (X23). A worked
   item shows the place lit and the tap marked at once.
 - *A lit place named from memory* is a `text` ask with `accept` under a `map` block with `lit` (one place): the lit map is the
   question, so it needs no `spoken` block and may not have one (V74).

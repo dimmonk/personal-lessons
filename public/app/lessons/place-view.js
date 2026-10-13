@@ -79,8 +79,9 @@ const placeWaterLit = (map, ask, answer) => [...new Set([...placeWaterOf(map, as
 function placeLitIds(map, ask, answer){
   return ask.mode === 'neighbor-water' ? [...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)] : placeRightIds(ask);
 }
-// the names a finished question puts on its map: the lit water of a neighbor and its water, so a sea can be told from the next (the map has no other names)
-const placeLabelIds = (map, ask, answer) => ask.mode === 'neighbor-water' ? placeWaterLit(map, ask, answer) : [];
+// the names a finished question puts on its map: the lit water of a neighbor and its water, so a sea can be told from the next; and the right place of a
+// question that was missed, so its name is learned with where it is (the map has no other names)
+const placeLabelIds = (map, ask, answer, missed = false) => ask.mode === 'neighbor-water' ? placeWaterLit(map, ask, answer) : missed ? placeRightIds(ask) : [];
 // each tap of an answer with the state the map marks it with: right when it is on a right place
 function placeTapsOf(map, ask, answer, marked){
   if(ask.mode !== 'neighbor-water'){
@@ -97,7 +98,7 @@ function placeTapsOf(map, ask, answer, marked){
 // tap on the water or the button "Landlocked".
 function placeHtml(data, ask, st, ctx){
   const map = mapOf(ask.map), answered = st.answer !== undefined, nw = ask.mode === 'neighbor-water', first = nw && !answered && st.many ? st.many.n : null;
-  const open = !answered && !st.marks && !st.locked, marked = !!st.marks;
+  const open = !answered && !st.marks && !st.locked, marked = !!st.marks, missed = marked && !nw && scorePlace(data, ask, st.answer) !== 'ok';
   const answer = answered ? st.answer : first ? { n: first } : undefined;
   // the line of help holds two lines of room for as long as it is there, so the map does not move when the line changes after the first tap
   const hint = !open ? '' : `<span class="forline holdline">${esc(nw ? (first ? SAY.placeWater : SAY.placeNeighbor) : SAY.placeOne)}</span>`;
@@ -106,7 +107,7 @@ function placeHtml(data, ask, st, ctx){
   const landlocked = nw && (first || answered) ? `<button type="button" class="opt${picked ? ' sel' : ''}${marked && waterNone ? ' right' : ''}${marked && picked && !waterNone ? ' wrong' : ''}" data-place-landlocked
     ${open ? '' : 'disabled'} aria-pressed="${picked}">${esc(SAY.placeLandlocked)}</button>` : '';
   const view = mapHtml(map, { scope: `${(ctx && ctx.scope) || ''}|${ask.id}`, ask: open ? ask.id : null, marks: placeTapsOf(map, ask, answer, marked), lit: marked ? placeLitIds(map, ask, answer) : [],
-    labels: marked ? placeLabelIds(map, ask, answer) : [], focus: marked && nw ? [ask.of] : [], beside: landlocked });
+    labels: marked ? placeLabelIds(map, ask, answer, missed) : [], focus: marked && nw ? [ask.of] : [], beside: landlocked });
   return `<div class="stepopen prompt placeask" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>${hint}${view}</div>`;
 }
 // the map of a worked question: the right place lit and the tap shown at its label point

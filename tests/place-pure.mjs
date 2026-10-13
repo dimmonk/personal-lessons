@@ -215,6 +215,9 @@ async function suite(app) {
   check(placeHtml({}, ask('belgium'), { many: {} }, { scope: 's' }).includes('data-map-ask="a"') && !placeHtml({}, ask('belgium'), { answer: [1, 2, 1], many: {} }, { scope: 's' }).includes('data-map-ask'), 'only an open place ask makes its map the thing a tap answers');
   const feedback = placeHtml({}, ask('belgium'), { answer: [5, 5, 1], many: {}, marks: true }, { scope: 's' });
   check(/mp-country lit" data-place="belgium"/.test(feedback) && !/mp-country lit" data-place="france"/.test(feedback) && feedback.includes('mk-wrong'), 'after the answer the right place is lit and the wrong tap marked');
+  const named = html => [...html.matchAll(/<text class="ml[^>]*>([^<]*)<\/text>/g)].map(m => m[1]), hit = at('europe-west', null, 4.35, 50.85);
+  same([named(feedback), named(placeHtml({}, ask('belgium'), { answer: hit, many: {}, marks: true }, { scope: 's' }))], [['Belgium'], []],
+    'after a miss the right place is named on the map, so the name is learned with the place; after a right tap nothing is named');
   const unmarked = placeHtml({}, ask('belgium'), { answer: [5, 5, 1], many: {}, locked: true }, { scope: 's' });
   check(!/ lit"/.test(unmarked) && unmarked.includes('mk-neutral'), 'in a check nothing is lit before the end');
   const nwOpen = placeHtml({}, border('belgium'), { many: { n: [5, 5, 1] } }, { scope: 's' }), nwShut = placeHtml({}, border('belgium'), { many: {} }, { scope: 's' });
@@ -233,7 +236,7 @@ async function suite(app) {
   return { checks, failures };
 }
 
-/* ---------- run, then seed a fault into place.js and see it go red ---------- */
+/* ---------- run, then seed a fault into place.js (or the file a fault names) and see it go red ---------- */
 const real = await suite(await loadApp({ fixture: true }));
 const FAULTS = [
   ['a dot\'s radius that does not shrink as the map is zoomed in', s => s.replace('map.size[0] * PLACE_DOT_TAP / k;', 'map.size[0] * PLACE_DOT_TAP;')],
@@ -250,15 +253,16 @@ const FAULTS = [
   ['a tap beside a small place that does not shrink as the map is zoomed in', s => s.replace('map.size[0] * PLACE_SMALL_TAP / k;', 'map.size[0] * PLACE_SMALL_TAP;')],
   ['a tap at sea off a shore never on its land', s => s.replace('if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;', 'return null;')],
   ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains')],
+  ['a missed place lit with no name', s => s.replace(': missed ? placeRightIds(ask) : [];', ': [];'), 'app/lessons/place-view.js'],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];
-for (const [name, mutate] of FAULTS) {
+for (const [name, mutate, file = 'app/lessons/place.js'] of FAULTS) {
   let changed = false;
-  const app = await loadApp({ fixture: true, seed: (src, text) => { if (src !== 'app/lessons/place.js') return text; const next = mutate(text); changed = next !== text; return next; } }).catch(e => ({ crashed: e }));
+  const app = await loadApp({ fixture: true, seed: (src, text) => { if (src !== file) return text; const next = mutate(text); changed = next !== text; return next; } }).catch(e => ({ crashed: e }));
   if (app.crashed) continue;   // a fault the app cannot even load is red enough
   const run = await suite(app).catch(e => ({ failures: [`crashed: ${e.message}`] }));
-  if (!changed) faultFailures.push(`the seeded fault "${name}" does not apply to place.js`);
+  if (!changed) faultFailures.push(`the seeded fault "${name}" does not apply to ${file}`);
   else if (!run.failures.length) faultFailures.push(`the seeded fault "${name}" did not turn any check red`);
 }
 

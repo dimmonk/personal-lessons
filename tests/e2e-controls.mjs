@@ -402,6 +402,8 @@ export const FAULTS = [
     edits: [replace('app/init.js', "window.addEventListener('popstate', backInApp);", "void 0;")] },
   // sound and singing (9: X8, X10, X11, X12, X16; 3 to 9, 2026-10-11: X29)
   // the map block and the place ask (9: X46). Only the checks that draw maps or share the screens they sit on can see these faults.
+  { check: 'X46', name: 'a missed place lit with no name', only: MAP_SEEN,
+    edits: [replace('app/lessons/place-view.js', ': missed ? placeRightIds(ask) : [];', ': [];')] },
   { check: 'X46', name: 'a drag that counts as a tap', only: MAP_SEEN,
     edits: [replace('app/lessons/map-run.js', "if(e.type !== 'pointerup' || g.moved || g.multi) return;", "if(e.type !== 'pointerup') return;")] },
   { check: 'X46', name: 'a pinch that counts as a tap', only: MAP_SEEN,
@@ -457,7 +459,7 @@ export const FAULTS = [
   { check: 'X47', name: 'the water that was tapped not lit in the feedback of a neighbor and its water', only: PLACE_SEEN,
     edits: [replace('app/lessons/place-view.js', '[...new Set([...placeWaterOf(map, ask.of), placeWaterTapped(map, answer && answer.w)].filter(Boolean))]', 'placeWaterOf(map, ask.of)')] },
   { check: 'X47', name: 'the lit water of a neighbor and its water left without its names', only: PLACE_SEEN,
-    edits: [replace('app/lessons/place-view.js', "const placeLabelIds = (map, ask, answer) => ask.mode === 'neighbor-water' ? placeWaterLit(map, ask, answer) : [];", 'const placeLabelIds = () => [];')] },
+    edits: [replace('app/lessons/place-view.js', "ask.mode === 'neighbor-water' ? placeWaterLit(map, ask, answer) : missed", "ask.mode === 'neighbor-water' ? [] : missed")] },
   sound({ check: 'X8', name: 'a sound system made when a sung question opens',
     edits: [replace('app/lessons/sing-run.js', "  singEnsure(inst, answered);\n  wireSingControls();", "  singEnsure(inst, answered);\n  audioContext();\n  wireSingControls();")] }),
   sound({ check: 'X8', name: 'the microphone asked for when a sung question opens',
