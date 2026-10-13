@@ -3,13 +3,13 @@
 function sortedSubjects(){
   let list = SUBJECTS.filter(s => APP.filter === 'all' || statusOf(s) === APP.filter);
   if(APP.sort === 'az') list = list.slice().sort((a,b) => a.name.localeCompare(b.name));
-  else list = list.slice().sort((a,b) => (RECENT[b.id]||0) - (RECENT[a.id]||0));
+  else { const recent = recentOf(); list = list.slice().sort((a,b) => (recent[b.id]||0) - (recent[a.id]||0)); }
   return list;
 }
 function continueTarget(){
-  const open = SUBJECTS.filter(s => statusOf(s) !== 'done' && RECENT[s.id] && resumePoint(s));
+  const recent = recentOf(), open = SUBJECTS.filter(s => statusOf(s) !== 'done' && recent[s.id] && resumePoint(s));
   if(!open.length) return null;
-  return open.sort((a,b) => (RECENT[b.id]||0) - (RECENT[a.id]||0))[0];
+  return open.sort((a,b) => (recent[b.id]||0) - (recent[a.id]||0))[0];
 }
 function progressMark(s){
   const status = statusOf(s);

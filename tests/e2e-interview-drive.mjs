@@ -69,7 +69,7 @@ export async function runRecall(page, { miss = [], every = null } = {}) {
 }
 // the text of the screen the learner is on
 export const screenText = page => page.evaluate(() => document.querySelector('#screen').textContent.replace(/\s+/g, ' ').trim());
-export const storedItems = async (page, subject) => JSON.parse(await page.evaluate(id => localStorage.getItem(`pl:${id}:items`), subject) || '{}');
-export const storedNotes = async (page, subject) => JSON.parse(await page.evaluate(id => localStorage.getItem(`pl:${id}:notes`), subject) || 'null');
-export const storedLog = async page => JSON.parse(await page.evaluate(() => localStorage.getItem('pl:log')) || '[]');
+export const storedItems = (page, subject) => page.evaluate(id => itemsOf(id), subject);
+export const storedNotes = (page, subject) => page.evaluate(id => Object.keys(notesOf(id)).length ? notesOf(id) : null, subject);
+export const storedLog = page => page.evaluate(() => logOf());
 export const triesOf = async (page, subject, key) => ((await storedItems(page, subject))[key] || { tries: [] }).tries;

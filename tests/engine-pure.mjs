@@ -175,9 +175,9 @@ function wholeCheck(app, run, wrong = []) {
 }
 
 {
-  // tries of the old lessons stay in storage and are never read
+  // a try of the old lessons (no run) in the record is never read
   const app = await fresh();
-  app.storage.set('pl:fixture:items', JSON.stringify({ 'u1/old-case': { tries: [{ d: '2026-09-01', rev: 4, engine: 5, mode: 'name', context: 'unit', steps: {}, name: 'x', ok: true }] } }));
+  app.storeApply([{ col: 'tries', id: 'old', doc: { subject: 'fixture', key: 'u1/old-case', at: 1, t: { d: '2026-09-01', rev: 4, engine: 5, mode: 'name', context: 'unit', steps: {}, name: 'x', ok: true } } }]);
   check(app.firstTries('fixture').length === 0 && !app.itemsOf('fixture')['u1/old-case'].tries.some(t => typeof t.run === 'string'), 'a try of the old lessons is not read');
   app.on('2026-10-01');
   app.recordTry('fixture', 'c-1', attempt('r1', 'practice', true));

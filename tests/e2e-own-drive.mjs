@@ -6,7 +6,7 @@ export const todayIn = page => page.evaluate(() => today());
 export const dayIn = (page, n) => page.evaluate(days => addDays(today(), days), n);
 // to the step on the learner's own data of a lesson (its place in the flow), the way a learner who has done the questions arrives
 export const jumpTo = (page, at) => page.evaluate(n => moveLesson(n), at);
-export const storedNotes = async (page, subject) => JSON.parse(await page.evaluate(id => localStorage.getItem(`pl:${id}:notes`), subject) || 'null');
+export const storedNotes = (page, subject) => page.evaluate(id => Object.keys(notesOf(id)).length ? notesOf(id) : null, subject);
 
 const box = (page, path) => page.locator(`#own-${path.replace(/\./g, '-')}`);
 // one account of the sheet form: { type, name?, balance, fees?, funds: [{ name, value, expense, kind? }] }; fund rows past the first are added with the button

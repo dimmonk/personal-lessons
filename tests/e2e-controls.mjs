@@ -63,7 +63,7 @@ export const FAULTS = [
   { check: 'X24', name: 'the accounts shown on the progress screen',
     edits: [replace('app/progress.js', "<p class=\"hintline\">${esc(n ? PROGRESS_SAY.logNote : PROGRESS_SAY.emptyLog)}</p>", "<p class=\"hintline\">${esc(n ? PROGRESS_SAY.logNote : PROGRESS_SAY.emptyLog)} ${esc(JSON.stringify(notesOf('ledger')))}</p>")] },
   { check: 'X24', name: 'delete that leaves the accounts on the phone',
-    edits: [replace('app/lessons/own-run.js', 'localStorage.removeItem(`pl:${subj.id}:notes`);', 'void 0;')] },
+    edits: [replace('app/lessons/own-run.js', 'deleteNotes(subj.id);', 'void 0;')] },
   { check: 'X27', name: 'every paper of a household open at once',
     edits: [replace('app/lessons/doc-view.js', "${i === chosen ? '' : 'hidden'}", "${''}")] },
   { check: 'X27', name: 'the paper the learner opened shut again when the screen is painted',

@@ -1,7 +1,7 @@
 /* ===================== LESSONS: ENTERING THE LEARNER'S OWN ANSWERS ===================== */
 // Lesson standard 3 (an `own` step on the form into `answers`), 5 and 7 (step 9). The learner types the answers that depend on where
-// they live and who holds office, and the date of their interview, from the page the form names. They are saved whole to `pl:<subject>:notes`
-// as `answers` and nowhere else, never scored against a truth and never sent anywhere. The same form is a step of a lesson and a screen of the
+// they live and who holds office, and the date of their interview, from the page the form names. They are saved whole to the subject's notes
+// as `answers` (kept with the learner's sign-in, app/sync.js) and nowhere else, never scored against a truth and never shared. The same form is a step of a lesson and a screen of the
 // subject (the answers change, and are looked up again before a mock interview). Needs the lesson player (LESSON, lessonShell, heading, goOn),
 // own.js, own-view.js and answers-view.js.
 //   ANSWERS: { form, draft: { [fieldId]: text }, problems: [{ path, text }], saved: bool, where: 'lesson' | 'screen', subj }

@@ -2,7 +2,7 @@
 // The shape of the lessons themselves is checked by the lesson validator (tests/validate-lessons.mjs).
 // Run: npm run test:data
 import { readFile } from 'node:fs/promises';
-import { loadApp, scriptList } from './load-app.mjs';
+import { loadApp, scriptList, classicScripts } from './load-app.mjs';
 import { FIXTURE_IDS } from './fixtures/fixture-subject/design.mjs';
 
 const app = await loadApp({ fixture: true });
@@ -41,7 +41,7 @@ await checkOfflineShell();
 // (a later file's paintResults once replaced the search screen's). Every top-level name is declared once.
 async function checkUniqueGlobals() {
   const owners = new Map();
-  for (const src of (await scriptList()).filter(f => f.startsWith('app/'))) {
+  for (const src of (await classicScripts()).filter(f => f.startsWith('app/'))) {
     const text = await readFile(new URL(`../public/${src}`, import.meta.url), 'utf8');
     for (const m of text.matchAll(/^(?:async\s+)?(?:function\s+|const\s+|let\s+)([A-Za-z_$][\w$]*)/gm)) {
       check(!owners.has(m[1]), `${src}: "${m[1]}" is already declared in ${owners.get(m[1])}`);

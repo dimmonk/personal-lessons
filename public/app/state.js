@@ -17,21 +17,23 @@ const SUBJECTS = FC.ids().map(buildSubject);
 
 /* ===================== STATE ===================== */
 
-const RECENT = storageLoad('pl:recent', {});
-function touch(id){ RECENT[id] = Date.now(); storageSave('pl:recent', RECENT); }
+// When each subject was last opened, and the screen last shown: kept in the account (app/store.js), so the app opens where it was left.
+const recentOf = () => storePref('recent', {});
+function touch(id){ storePrefPut('recent', { ...recentOf(), [id]: Date.now() }); }
 
-const SAVED = storageLoad('pl:app', {view:'library', subjectId:null, filter:'all', sort:'recent'});
-const APP = {
-  view:'library', subjectId:null, query:'',
-  filter: ['all','progress','done','new'].includes(SAVED.filter) ? SAVED.filter : 'all',
-  sort:   SAVED.sort === 'az' ? 'az' : 'recent'
-};
-if(SAVED.subjectId && SUBJECTS.some(s=>s.id===SAVED.subjectId)){
-  APP.subjectId = SAVED.subjectId;
-  if(SAVED.view === 'subject') APP.view = 'subject';
+const APP = { view:'library', subjectId:null, query:'', filter:'all', sort:'recent' };
+// the screen last shown, put back once the record is open (app/init.js)
+function restoreApp(){
+  const saved = storePref('app', {});
+  APP.filter = ['all','progress','done','new'].includes(saved.filter) ? saved.filter : 'all';
+  APP.sort = saved.sort === 'az' ? 'az' : 'recent';
+  if(saved.subjectId && SUBJECTS.some(s=>s.id===saved.subjectId)){
+    APP.subjectId = saved.subjectId;
+    if(saved.view === 'subject') APP.view = 'subject';
+  }
 }
 function saveApp(){
-  storageSave('pl:app', {
+  storePrefPut('app', {
     view: APP.view === 'subject' ? 'subject' : 'library',
     subjectId: APP.subjectId, filter: APP.filter, sort: APP.sort
   });

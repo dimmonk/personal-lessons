@@ -129,10 +129,11 @@ async function theRecord(env, c, page) {
   const text = await screenText(page);
   c.check(/Check passed, 16 of 17/.test(text) && /1 of 14 parts/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 220)})`);
   await env.inspect(c, page, 'the Civics subject screen after the lesson');
-  const items = await storedItems(page, 'civics'), seen = JSON.parse(await page.evaluate(() => localStorage.getItem('pl:civics:seen')) || '{}');
+  const items = await storedItems(page, 'civics'), seen = await page.evaluate(() => seenOf('civics'));
+  const engine = await page.evaluate(() => FC.ENGINE);   // the engine of the app as it runs, never a number written here
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t })));
   const inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 17 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false && t.engine === 14 && typeof t.a.say === 'string' && ['ok', 'no'].includes(t.r.say)), 'the check was not stored as 17 typed answers of lesson 1 without help');
+  c.check(inCheck.length === 17 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false && t.engine === engine && typeof t.a.say === 'string' && ['ok', 'no'].includes(t.r.say)), 'the check was not stored as 17 typed answers of lesson 1 without help');
   c.check(practice.length === 17 + 2 + 1 && practice.every(t => typeof t.a.say === 'string'), `the groups were not stored as 20 tries: 17 first tries, the three that came back (${practice.length})`);
   c.check(practice.filter(t => t.key === 'q17').map(t => t.a.say).join('|') === `${WRONG}|Executive branch` && practice.filter(t => t.key === 'q17').map(t => t.r.say).join() === 'no,ok', 'a miss is not stored as the words typed, then the answer that was right');
   c.check(tries.filter(t => t.key === 'q15').map(t => t.r.say).join() === 'no,ok,ok', 'a question missed in the group, then right when it came back, then right in the check, is not stored so');

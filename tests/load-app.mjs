@@ -16,7 +16,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'definitionOf', 'addDays', 'weekEnd', 'dayOf', 'itemsOf', 'recordTry', 'firstTries', 'checkRuns', 'completeRuns', 'lessonDone', 'lastCheck',
   'lessonsInOrder', 'usedIds', 'strandDefs', 'checkStrands', 'lessonsCovering', 'strandSchedules', 'dueStrands', 'retestDays', 'retestsDue',
   'strandInstance', 'retestInstances', 'drawInstances', 'buildSet', 'freshSeed', 'blockHtml', 'segmentsOf', 'itemHtml', 'feedbackHtml',
-  'paras', 'lessonFail', 'storageRead', 'rangeOf', 'saveNote', 'notesOf', 'checkIsSung', 'rightWord',
+  'paras', 'lessonFail', 'storeApply', 'rangeOf', 'saveNote', 'notesOf', 'checkIsSung', 'rightWord',
   // sound and singing
   'noteToMidi', 'midiToNote', 'hzToMidi', 'noteToHz', 'centsBetween', 'foldCents', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE', 'SING_PARAMS',
   'SING_RANGE_MIN_SPAN', 'SING_MELODY_HOLD_MS', 'SING_LOUD_LIMIT', 'SING_MISSED', 'SING_CENTS', 'singKey', 'isSingKey', 'singTaskProblems', 'singItem',
@@ -52,18 +52,22 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'PLACE_GEN_FORMS', 'PLACE_SALTS', 'isPlaceGen', 'isMade', 'placeKey', 'placeKeyOf', 'placePairs', 'placePairAt', 'placeSeedOf', 'placeAllowedForms', 'placeItem', 'placeItems', 'placeDraw', 'placeSetPicks',
   'placeReviewPick', 'flagsBlockProblems', 'placeMemory', 'placeOnlyOf', 'placeFreshSeed', 'placeDrawInstances', 'placeSetInstances', 'placeReviewInstance', 'drawSize', 'drawStrands', 'defOfTry', 'mergeOnly', 'placeGenProblems', 'placeDrawProblems', 'placeRefProblems'];
 
-// Every script the page loads, in load order. The page must not carry inline scripts.
-export async function scriptList() {
+// Every script the page loads, in load order: { src, module }. The page must not carry inline scripts. A module (the account, app/sync.js)
+// runs in a scope of its own, after the classic scripts, and only in a browser.
+async function scriptTags() {
   const html = await readFile(new URL('index.html', PUBLIC), 'utf8');
   const tags = [...html.matchAll(/<script\b([^>]*)>/g)].map(m => m[1]);
-  const srcs = tags.map(attrs => (attrs.match(/\bsrc="([^"]+)"/) || [])[1]);
-  if (srcs.some(src => !src)) throw new Error('public/index.html has an inline <script>; scripts must be files');
-  if (!srcs.includes(BOOT_SCRIPT)) throw new Error(`public/index.html does not load ${BOOT_SCRIPT}`);
-  return srcs;
+  const scripts = tags.map(attrs => ({ src: (attrs.match(/\bsrc="([^"]+)"/) || [])[1], module: /\btype="module"/.test(attrs) }));
+  if (scripts.some(s => !s.src)) throw new Error('public/index.html has an inline <script>; scripts must be files');
+  if (!scripts.some(s => s.src === BOOT_SCRIPT)) throw new Error(`public/index.html does not load ${BOOT_SCRIPT}`);
+  return scripts;
 }
+export const scriptList = async () => (await scriptTags()).map(s => s.src);
+// the scripts that share the page's one global scope
+export const classicScripts = async () => (await scriptTags()).filter(s => !s.module).map(s => s.src);
 
 export async function loadApp({ fixture = false, seed = null } = {}) {
-  const files = (await scriptList()).filter(src => src !== BOOT_SCRIPT);
+  const files = (await classicScripts()).filter(src => src !== BOOT_SCRIPT);
   const parts = await Promise.all(files.map(async src => {
     const text = await readFile(new URL(src, PUBLIC), 'utf8');
     return `/* ${src} */\n` + (seed ? seed(src, text) : text);
@@ -71,10 +75,8 @@ export async function loadApp({ fixture = false, seed = null } = {}) {
   const fixtureParts = fixture ? await Promise.all(FIXTURE_FILES.map(async f => `/* fixture/${f} */\n` + await readFile(new URL(f, FIXTURE), 'utf8'))) : [];
   const add = fixture ? FIXTURE_IDS.map(id => `\nSUBJECTS.push(buildSubject('${id}', SUBJECTS.length));`).join('') : '';
   const source = parts.join('\n') + '\n' + fixtureParts.join('\n') + add + `\nglobalThis.__app = { ${EXPORTS.join(', ')} };`;
-  // the app reads and writes localStorage; headless it gets an empty in-memory one, so nothing is read or kept
-  const memory = new Map();
-  const localStorage = { getItem: key => memory.has(key) ? memory.get(key) : null, setItem: (key, value) => memory.set(key, String(value)), removeItem: key => memory.delete(key) };
-  const context = vm.createContext({ console, localStorage });
+  // headless, the store has no account behind it (app/sync.js is a module and is not loaded): it starts empty and keeps what is written in memory
+  const context = vm.createContext({ console });
   vm.runInContext(source, context, { filename: 'public (scripts in load order)' });
-  return { ...context.__app, storage: memory, context };
+  return { ...context.__app, context };
 }

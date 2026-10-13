@@ -108,7 +108,7 @@ async function subjectScreen(env, c, page, { future, today }) {
   await page.locator('[data-action-done]').first().click();
   const done = (await O.storedNotes(page, 'ledger')).actions;
   c.check(done[0].done === today && done[1].done === today, 'a done mark did not stick');
-  await page.reload();
+  await env.reload(page);
   const after = await env.screenText(page), short = await page.evaluate(day => shortDay(day), today);
   c.check(after.includes(`Done ${short}`) && (await page.locator('[data-action-done]').count()) === 0, 'a done mark did not survive a reload');
   c.check(await page.locator('[data-trigger-clear="job"]').count() === 1 && /Marked /.test(after), 'a moment marked is not shown with its day and a way to clear it');
@@ -151,7 +151,7 @@ async function leavesAndGoes(env, c, page, dialogs) {
   c.check((await O.storedNotes(page, 'ledger')) !== null, 'keeping them still deleted them');
   await page.locator('[data-own-delete]').click();
   await page.locator('[data-own-delete-yes]').click();
-  c.check((await O.storedNotes(page, 'ledger')) === null && /Deleted from this phone/.test(await env.screenText(page)) && /No accounts yet/.test(await env.screenText(page)), 'delete did not take everything off the phone');
+  c.check((await O.storedNotes(page, 'ledger')) === null && /Deleted\./.test(await env.screenText(page)) && /No accounts yet/.test(await env.screenText(page)), 'delete did not take everything off the phone');
   c.check(dialogs.length === 0, `the browser asked with a dialog (${dialogs.join(', ')})`);
 }
 

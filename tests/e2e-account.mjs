@@ -157,7 +157,7 @@ async function theLineToWrite(env, c, page) {
   c.check(now.open.length === 1 && now.open[0].kind === 'text' && await page.locator('textarea[data-write="say"]').count() === 1, 'the box does not open when the tap is answered');
   c.check(!(await env.screenText(page)).includes(MODEL), 'the model line is on the page before the line is written');
   c.check(await page.locator('[data-write-answer="say"]').isDisabled() && await page.locator('[data-write-skip="say"]').isEnabled(), 'Answer is open with nothing written, or "Not yet" is not there');
-  c.check(/stays on this phone/.test(await env.screenText(page)), 'the box does not say that what is written stays on the phone');
+  c.check(/Only you can see what you write/.test(await env.screenText(page)), 'the box does not say that only the learner can see what is written');
   c.check(await page.locator('#qNext').isDisabled(), 'Next is open before the line is written');
   // typing: kept across a repaint, no longer than 400, trimmed when kept
   const box = page.locator('textarea[data-write="say"]');

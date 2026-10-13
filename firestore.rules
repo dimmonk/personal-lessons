@@ -1,0 +1,17 @@
+rules_version = '2';
+// Fieldcraft keeps one learner's record (app/sync.js). The first account to sign in claims it in config/owner; after that only that
+// account can read or write users/<its id>/, and nothing else in the database can be read or written by anyone.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function ownerDoc() { return /databases/$(database)/documents/config/owner; }
+    function isOwner(uid) { return request.auth != null && request.auth.uid == uid && exists(ownerDoc()) && get(ownerDoc()).data.uid == uid; }
+
+    match /config/owner {
+      allow get: if request.auth != null;
+      allow create: if request.auth != null && request.resource.data.keys().hasOnly(['uid']) && request.resource.data.uid == request.auth.uid;
+    }
+    match /users/{uid}/{part}/{id} {
+      allow read, write: if isOwner(uid) && part in ['tries', 'log', 'subjects', 'prefs'];
+    }
+  }
+}

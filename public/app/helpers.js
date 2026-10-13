@@ -4,21 +4,6 @@ const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 const screenEl = () => document.getElementById('screen');
 const pad2 = n => String(n).padStart(2,'0');
 
-// A failed save or read is reported on the console, never swallowed: the learner's record lives here.
-function storageSave(key, obj){
-  try{ localStorage.setItem(key, JSON.stringify(obj)); }
-  catch(e){ console.error('Could not save ' + key, e); }
-}
-function storageLoad(key, fallback){
-  try{
-    const raw = localStorage.getItem(key);
-    if(raw) return Object.assign(fallback, JSON.parse(raw));
-  }catch(e){
-    console.error('Could not read ' + key, e);
-  }
-  return fallback;
-}
-
 // A file the learner saves from the page: the log export, one subject's own data, a calendar file. Nothing is sent anywhere.
 function saveFile(name, body, type){
   const url = URL.createObjectURL(new Blob([body], { type }));

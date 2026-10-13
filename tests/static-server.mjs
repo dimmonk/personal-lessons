@@ -1,11 +1,14 @@
 // Minimal static server for public/, used by the browser tests and (without options) by tools/serve.mjs.
 //   fixture: true     the test subject (tests/fixtures/fixture-subject) is served under /__fixture/ and loaded by the page as a real subject
 //   transform(path, body, type)   change a file on its way out: how a seeded fault is put into the app for one run
+//   app/firebase-config.js is always served pointed at the local emulators, in a demo project of the server's own (tests/emulators.mjs):
+//   a test never reaches the real account
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { FIXTURE_FILES } from './fixtures/fixture-subject/design.mjs';
+import { newProjectId, testConfigModule } from './emulators.mjs';
 
 const ROOT = fileURLToPath(new URL('../public/', import.meta.url));
 const FIXTURE_ROOT = fileURLToPath(new URL('./fixtures/fixture-subject/', import.meta.url));
@@ -19,6 +22,7 @@ const withFixture = html => html.replace('<script src="app/registry.js"></script
   `<script src="app/registry.js"></script>\n${FIXTURE_FILES.map(f => `<script src="__fixture/${f}"></script>`).join('\n')}`);
 
 export function startServer({ port = 0, fixture = false, transform = null } = {}) {
+  const config = testConfigModule(newProjectId());
   const server = createServer(async (req, res) => {
     const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
     const rel = normalize(path === '/' ? '/index.html' : path);
@@ -27,6 +31,7 @@ export function startServer({ port = 0, fixture = false, transform = null } = {}
       const fromFixture = fixture && rel.startsWith('/__fixture/');
       let body = await readFile(fromFixture ? join(FIXTURE_ROOT, rel.slice('/__fixture/'.length)) : join(ROOT, rel));
       if (fixture && rel === '/index.html') body = Buffer.from(withFixture(body.toString()));
+      if (rel === '/app/firebase-config.js') body = Buffer.from(config);
       if (transform && /\.(js|css|html)$/.test(rel)) body = Buffer.from(transform(rel.replace(/^\//, ''), body.toString()));
       res.writeHead(200, { 'Content-Type': TYPES[extname(rel)] || 'application/octet-stream', 'Cache-Control': 'no-cache' });
       res.end(body);

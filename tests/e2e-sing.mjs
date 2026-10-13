@@ -29,10 +29,10 @@ async function openSung(env, c, { subject, lesson, width = 390, recorder = 'gran
   const { context, page } = await env.freshPage(c, width, { recorder });
   if (range || at) {
     await page.evaluate(([s, l, r, a]) => {
-      if (r) localStorage.setItem(`pl:${s}:notes`, JSON.stringify({ range: r }));
-      if (a) localStorage.setItem(`pl:${s}:seen`, JSON.stringify({ [l]: { rev: 1, at: a } }));
+      if (r) saveNote(s, 'range', r);
+      if (a) saveSeenLesson(s, l, { rev: 1, at: a });
     }, [subject, lesson, range, at]);
-    await page.reload();
+    await env.reload(page);
   }
   await env.clickVisible(page, `#screen [data-s="${subject}"]`);
   await env.clickVisible(page, `#screen [data-l="${lesson}"]`);
@@ -157,8 +157,11 @@ export async function X11(env) {
   const longest = (value) => Array.isArray(value) ? Math.max(value.length, ...value.map(longest)) : value && typeof value === 'object' ? Math.max(0, ...Object.values(value).map(longest)) : 0;
   c.check(keys.every(k => { try { return longest(JSON.parse(stored[k])) <= 12 || k === 'pl:log'; } catch { return false; } }), 'a stored list is longer than twelve');
   c.check(JSON.stringify(stored).length < 6000, `${JSON.stringify(stored).length} characters stored for two tries`);
-  const elsewhere = await page.evaluate(async () => ({ session: sessionStorage.length, caches: (await caches.keys()).length, databases: indexedDB.databases ? (await indexedDB.databases()).length : 0 }));
-  c.check(elsewhere.session === 0 && elsewhere.caches === 0 && elsewhere.databases === 0, `something is stored outside localStorage (${JSON.stringify(elsewhere)})`);
+  // the record is kept only in the account and the account's copy on the phone (Firebase's own databases, and the keys Firestore's tabs
+  // share in localStorage); nothing else is kept
+  const elsewhere = await page.evaluate(async () => ({ local: Object.keys(localStorage).filter(k => !k.startsWith('firestore_')).length, session: sessionStorage.length, caches: (await caches.keys()).length,
+    databases: (await indexedDB.databases()).map(d => d.name).filter(name => !/^(firestore\/|firebaseLocalStorageDb$|firebase-heartbeat-database$)/.test(name)) }));
+  c.check(elsewhere.local === 0 && elsewhere.session === 0 && elsewhere.caches === 0 && elsewhere.databases.length === 0, `something is stored outside the account (${JSON.stringify(elsewhere)})`);
   await context.close();
   return c;
 }
@@ -361,7 +364,7 @@ async function pilotHalf(env, c) {
   await D.sleep(page, 1500);
   await D.setMic(page, 0);
   await D.waitPhase(page, 'result', 12000);
-  c.check((await D.marksText(page)).join() === 'Warm-up done' && Object.keys(JSON.parse(await page.evaluate(() => localStorage.getItem('pl:singing:items') || '{}'))).length === 0, 'the warm-up was stored or did not finish');
+  c.check((await D.marksText(page)).join() === 'Warm-up done' && Object.keys(await page.evaluate(() => itemsOf('singing'))).length === 0, 'the warm-up was stored or did not finish');
   await finish(page);
   await env.goOn(page);   // the teaching screen
   // the range: nothing is stored before it, and it opens the first group

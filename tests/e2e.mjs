@@ -1,13 +1,14 @@
 // Drives the real app in Chromium. Run: npm run test:e2e
 //   1. every browser check of 9 built so far (e2e-checks.mjs, and the sound checks of e2e-sing.mjs), on the app with the test subjects loaded;
-//   2. the installable app: its name, manifest, service worker, offline load and fonts;
+//   2. the installable app: its name, manifest, service worker, the bar that offers a new version, offline load and fonts;
 //   3. every seeded fault (e2e-controls.mjs): the app with one fault in it must turn exactly one check red.
 import { chromium } from 'playwright';
 import { startServer } from './static-server.mjs';
-import { makeEnv } from './e2e-env.mjs';
+import { makeEnv, EXPECTED_ERROR } from './e2e-env.mjs';
 import { CHECKS } from './e2e-checks.mjs';
 import { SOUND_CHECKS, SOUND_LANES } from './e2e-sing.mjs';
 import { FAULTS, runWithFault, withLimit } from './e2e-controls.mjs';
+import { startEmulators } from './emulators.mjs';
 
 const FONT_FAMILIES = ['Bricolage Grotesque', 'Literata', 'JetBrains Mono'];
 const failures = [];
@@ -49,22 +50,38 @@ async function runChecks() {
 
 /* ---------- the installable app, without the test subject ---------- */
 async function testPwa() {
-  const server = await startServer();
+  // a deploy, played by the server: once `deployed`, it serves a service worker with a new cache name, as a new version of the app would
+  let deployed = false;
+  const server = await startServer({ transform: (path, body) => deployed && path === 'sw.js' ? body.replace(/const CACHE = 'fieldcraft-v\d+'/, "const CACHE = 'fieldcraft-vtest'") : body });
   const check = (ok, msg) => { checks++; if (!ok) failures.push(`PWA: ${msg}`); };
   const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
   const page = await context.newPage();
   page.on('pageerror', err => failures.push(`PWA: page error: ${err.message}`));
-  page.on('console', msg => { if (msg.type() === 'error') failures.push(`PWA: console error: ${msg.text()}`); });
+  page.on('console', msg => { if (msg.type() === 'error' && !EXPECTED_ERROR.test(msg.text())) failures.push(`PWA: console error: ${msg.text()}`); });
+  const env = makeEnv(browser, server);
   await page.goto(server.url);
-  await page.evaluate(() => localStorage.clear());
-  await page.reload();
+  await env.signIn(page);
   check(await page.title() === 'Fieldcraft · Pragmatic knowledge', `title is "${await page.title()}"`);
   const brand = (await page.locator('#screen .topbar .m').first().textContent()).trim();
   check(brand === 'Fieldcraft · Pragmatic knowledge', `library brand is "${brand}"`);
 
   await page.evaluate(() => navigator.serviceWorker.ready);
   await page.reload();
+  await env.recordOpen(page);
   check(await page.evaluate(() => !!navigator.serviceWorker.controller), 'service worker does not control the page');
+  check(await page.locator('#updateBar').count() === 0, 'the first service worker taking over offered a new version');
+
+  // a deploy: coming back to the app fetches the new service worker, and once it has taken over, a bar offers the new version
+  deployed = true;
+  await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
+  const offered = await page.locator('#updateBar').waitFor({ timeout: 15000 }).then(() => true, () => false);
+  check(offered, 'a new version that took over the page was not offered');
+  if (offered) {
+    await page.locator('#updateOpen').click();
+    await page.waitForLoadState('load');
+    await env.recordOpen(page);
+    check(await page.locator('#updateBar').count() === 0, 'the bar is still there once the new version is open');
+  }
 
   const cdp = await context.newCDPSession(page);
   const { url, errors } = await cdp.send('Page.getAppManifest');
@@ -82,7 +99,8 @@ async function testPwa() {
 
   await context.setOffline(true);
   await page.reload();
-  check((await page.locator('#screen').textContent()).trim().length > 40, 'app does not render offline');
+  const openOffline = await env.recordOpen(page).then(() => true, () => false);
+  check(openOffline && (await page.locator('#screen').textContent()).trim().length > 40, 'app does not open offline');
   // a search result quotes the end result in the serif (the library alone never asks for it)
   await page.locator('#screen [data-v="search"]:visible').first().click();
   await page.fill('#q', 'sing');
@@ -125,6 +143,7 @@ async function testFaults() {
 }
 
 let faultCount = 0;
+const stopEmulators = await startEmulators();
 try {
   await runChecks();
   if (wanted('PWA')) await testPwa();
@@ -133,6 +152,7 @@ try {
   failures.push(`crashed: ${err.stack || err}`);
 } finally {
   await browser.close();
+  await stopEmulators();
 }
 
 if (failures.length) {

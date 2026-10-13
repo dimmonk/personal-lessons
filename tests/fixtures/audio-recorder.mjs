@@ -29,7 +29,8 @@ export function startRecorder(mode) {
 
   for (const name of ['setTimeout', 'setInterval']) {
     const real = window[name];
-    window[name] = (...args) => { log.timers.push(name); return real(...args); };
+    // the account's own timers (Firestore, in vendor/firebase.js) are not the app's
+    window[name] = (...args) => { if (!/\/vendor\/firebase\.js/.test(new Error().stack)) log.timers.push(name); return real(...args); };
   }
 
   // the microphone: a voice-like sound (the second harmonic stronger than the first) at the pitch the test sets, or silence

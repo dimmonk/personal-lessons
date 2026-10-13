@@ -2,7 +2,7 @@
 // Lesson standard 3 (an `own` step), 5 and 7. After the sample questions, the same step on the learner's own data: the sheet of their
 // accounts when it is empty, the app's arithmetic on what they typed beside the lines of a sample to find on their own papers, and the
 // change made now or dated with a what, a where and a day (and a calendar file for the day). Nothing here is scored, stored as a try, logged
-// or sent: it is written to `pl:<subject>:notes` (sheet, actions, triggers) and shown only on the subject's own screens.
+// or shared: it is written to the subject's notes (sheet, actions, triggers; kept with the learner's sign-in) and shown only on the subject's own screens.
 // OWN is this visit's working state, replaced (never changed) at every step:
 //   { step, phase: 'sheet' | 'costs' | 'skipped', drafts: [account draft], problems: [{ path, text }], action: { draft, problems } }
 // Needs the lesson player (LESSON, lessonShell, heading, goOn), own.js and own-view.js.
@@ -159,7 +159,7 @@ function wireOwnSection(subj){
   on('[data-own-export]', () => saveFile(`fieldcraft-${subj.id}-${today()}.json`, ownExportBody(subj.id), 'application/json'));
   on('[data-own-delete]', () => again({ deleting: true, deleted: false }));
   on('[data-own-delete-no]', () => again({ deleting: false }));
-  on('[data-own-delete-yes]', () => { localStorage.removeItem(`pl:${subj.id}:notes`); again({ deleting: false, deleted: true }); });
+  on('[data-own-delete-yes]', () => { deleteNotes(subj.id); again({ deleting: false, deleted: true }); });
   on('[data-answers-edit]', () => go('answers'));
   on('[data-trigger-mark]', el => { markTrigger(subj.id, el.dataset.triggerMark); again({ deleted: false }); });
   on('[data-trigger-clear]', el => { clearTrigger(subj.id, el.dataset.triggerClear); again({ deleted: false }); });

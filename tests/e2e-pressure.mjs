@@ -34,9 +34,9 @@ const plainWords = async (c, page, env, label) => {
 async function heldClock(env, c, width) {
   const r = await env.freshPage(c, width);
   await r.page.clock.install();
-  await r.page.reload();
+  await env.reload(r.page);
   await r.page.clock.pauseAt(new Date(Date.now() + 1000));   // from here time moves only when the test moves it
-  await r.page.evaluate(() => { window.__timers = 0; ['setTimeout', 'setInterval'].forEach(n => { const real = window[n]; window[n] = (...a) => { window.__timers++; return real(...a); }; }); });
+  await r.page.evaluate(() => { window.__timers = 0; ['setTimeout', 'setInterval'].forEach(n => { const real = window[n]; window[n] = (...a) => { if (!/\/vendor\/firebase\.js/.test(new Error().stack)) window.__timers++; return real(...a); }; }); });
   return r;
 }
 const timerNow = page => page.evaluate(() => { const t = document.querySelector('[data-timer]'); return t && { role: t.getAttribute('role'), num: t.querySelector('[data-timer-num]').textContent, width: parseFloat(t.querySelector('[data-timer-bar]').style.width) }; });
@@ -310,7 +310,7 @@ export async function X39(env) {
   await jump(page, STEP.planned);
   c.check(await page.locator('[data-ask="act"]').count() === 1 && !/before you start/i.test(await env.screenText(page)), 'a group that rehearses the plan shows a plan screen when there is none');
   await jump(page, STEP.plan);
-  c.check(await page.locator('[data-own-plan] input').count() === 2 && /One plan, for when a request comes/.test(await env.screenText(page)) && /stays on this phone/.test(await env.screenText(page)), 'the plan step does not show its two boxes and say it stays on the phone');
+  c.check(await page.locator('[data-own-plan] input').count() === 2 && /One plan, for when a request comes/.test(await env.screenText(page)) && /Only you can see it/.test(await env.screenText(page)), 'the plan step does not show its two boxes and say it stays on the phone');
   await page.locator('#planSave').click();
   c.check(await page.locator('.fielderr').count() === 2 && (await notesOf(env, page)) === null, 'a plan with nothing written is saved or not refused under both boxes');
   await page.fill('#own-cue', 'a text wants a code');

@@ -1,5 +1,5 @@
 /* ===================== SCREENS: THE PROGRESS SCREEN, AND THE LOG EXPORT ===================== */
-// Every figure is computed from the practice record (pl:<subject>:items) and the log (pl:log); nothing is stored for the screen.
+// Every figure is computed from the practice record and the log (app/lessons/records.js); nothing is stored for the screen.
 // "First try" is the first try of a question in a sitting. The baseline is never shown as a result.
 
 const PROGRESS_SAY = {
@@ -7,7 +7,7 @@ const PROGRESS_SAY = {
   intro: 'First tries only: what you got right the first time a question came up. Anything missed came back, and is not counted again.',
   allFirst: 'All first tries',
   persistence: 'Showing up',
-  logNote: 'The log stays on this device. The file holds the log and, for every subject, your practice record, your places and your notes.',
+  logNote: 'Your progress is saved with your Google sign-in. The file holds the log and, for every subject, your practice record, your places and your notes.',
   exportLabel: n => `Export your log (${n} ${n === 1 ? 'entry' : 'entries'})`,
   emptyLog: 'Nothing is logged yet.',
   subjectPractice: figure => `practice ${figure}`
@@ -34,7 +34,7 @@ function practiceBlockHtml(){
 }
 
 // Everything the device holds for the learner, as one file (E19): the log, and for every subject its practice record, its places and
-// its notes. The site has no backend, so this is the only way it leaves the device.
+// its notes: a copy the learner keeps, beside the one saved with their sign-in (app/sync.js).
 const exportBody = () => JSON.stringify({ exported: today(), standard: FC.STANDARD, engine: FC.ENGINE, log: logOf(),
   subjects: Object.fromEntries(SUBJECTS.map(s => [s.id, { items: itemsOf(s.id), seen: seenOf(s.id), notes: notesOf(s.id) }])) }, null, 2);
 const exportLog = () => saveFile(`fieldcraft-log-${today()}.json`, exportBody(), 'application/json');
@@ -54,6 +54,7 @@ function renderProgress(){
       <p>parts finished across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. A part is finished when you have taken its check.</p>
     </div>
     ${practiceBlockHtml()}
+    <div class="block">${syncLineHtml()}</div>
     <div class="sect"><span class="m">By subject</span></div>
     <div class="rows">${SUBJECTS.map(s => `<button class="row" data-s="${s.id}" style="--accent:${s.accent}">
         <span class="sigil">${s.keyNo}</span>

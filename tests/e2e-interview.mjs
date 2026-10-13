@@ -185,7 +185,7 @@ async function nothingUntilATap(env, c, page) {
   c.check(await hearButton(page).count() === 1 && /Hear the question/.test(await hearButton(page).textContent()) && await page.locator('[data-spoken-words]').count() === 1, 'a question with a voice has no "Hear the question", or no words');
   await plainWords(c, page, env, 'a question that can be read aloud');
   // a reload puts the learner back in the middle of the group, and nothing is read then either
-  await page.reload();
+  await env.reload(page);
   await page.waitForTimeout(300);
   await env.openSubject(page, 'interview');
   await env.clickVisible(page, '#screen #resume');
@@ -453,7 +453,7 @@ async function withoutThem(env, c, page) {
   const tile = () => page.locator('[data-review-tile]').first().textContent().then(t => t.replace(/\s+/g, ' '));
   const strands = () => page.evaluate(() => dueStrands(FC.get('interview'), 'interview', weekEnd()).map(s => s.strand.id).sort());
   c.check((await strands()).filter(k => OWN_KEYS.includes(k)).length === 3, `the topics about your own answers are not due the week after their check (${await strands()})`);
-  await page.evaluate(() => localStorage.removeItem('pl:interview:notes'));
+  await page.evaluate(() => deleteNotes('interview'));
   c.check((await strands()).filter(k => OWN_KEYS.includes(k)).length === 0, `a topic about your own answers is due with no answer entered (${await strands()})`);
   await env.toLibrary(page);
   c.check(!/Quick answers/.test(await tile()) || !/senator|governor|capital/i.test(await tile()), 'the review tile shows a question about your own answers');

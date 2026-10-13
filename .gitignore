@@ -2,3 +2,5 @@
 node_modules/
 .firebase/
 tools/maps/.cache/
+firebase-debug.log
+firestore-debug.log

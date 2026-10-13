@@ -1,5 +1,5 @@
 /* ===================== LESSONS: THE LEARNER'S ONE PLAN, AND THEIR OWN WAYS IN ===================== */
-// Lesson standard 5 (`plan` and `setup` in `pl:<subject>:notes`) and 10.3 step 8. The plan is one if-then sentence the learner writes, cued
+// Lesson standard 5 (`plan` and `setup` in the subject's notes) and 10.3 step 8. The plan is one if-then sentence the learner writes, cued
 // by the request: { cue, then, saved }. The setup is a list of things the learner does on their own phone (save the bank's number from the back
 // of the card, check the app is installed): each is marked with the day the learner marked it, { [stepId]: 'YYYY-MM-DD' }. Neither is scored
 // against a truth, neither is a try; both are shown on the subject's own screens and leave the phone only in the file the learner saves.

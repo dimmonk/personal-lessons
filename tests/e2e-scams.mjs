@@ -227,7 +227,7 @@ export async function X42(env) {
   c.check([...seen].sort().join() === 'b-alert,b-buyer,b-call,b-code,b-happened,b-invoice,b-manager,b-parcel,b-popup,b-salon', `the baseline is not its ten questions (${seen})`);
   const line = await page.locator('[data-baseline-line]').textContent();
   c.check(/^Of \d+ scams, you did what a scam asked on \d+\. Of 4 real messages, you handled 4 the right way\.$/.test(line), `the baseline's one line does not say that all four real messages, an invoice and a code among them, were handled the right way (${line})`);
-  const tries = await page.evaluate(() => Object.entries(JSON.parse(localStorage.getItem('pl:scams:items') || '{}')).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))));
+  const tries = await page.evaluate(() => Object.entries(itemsOf('scams')).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))));
   c.check(tries.length === 10 && tries.find(t => t.key === 'b-manager').r.act === 'acted' && tries.find(t => t.key === 'b-invoice').ok === true && tries.find(t => t.key === 'b-code').ok === true && tries.find(t => t.key === 'b-call').r.call === 'ok', 'the baseline is not stored as ten tries, the real invoice and the code right, the call ended well and the scam acted on named as the slip');
   c.check(JSON.stringify(tries.find(t => t.key === 'b-call').a) === '{"call":["hang"]}' && tries.find(t => t.key === 'b-happened').a.order[0] === 'bank', 'the call and the steps are not stored as the replies and the steps picked');
   await plainWords(c, page, env, 'the result of the baseline');

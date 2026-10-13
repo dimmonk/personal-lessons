@@ -3,6 +3,7 @@
 import { APP_JARGON, abstractIn } from './plain-words.mjs';
 import { britishIn } from './american.mjs';
 import { startRecorder } from './fixtures/audio-recorder.mjs';
+import { isEmulatorUrl, newProjectId, testConfigModule } from './emulators.mjs';
 
 export const WIDTHS = [360, 390, 768, 1200, 1600];
 
@@ -13,8 +14,10 @@ const SKEW_SCRIPT = `(() => {
   window.Date = Skewed;
 })();`;
 
-// Console errors the tests expect and ignore: a request to another host is refused by the test, which logs it separately
-const EXPECTED_ERROR = /net::ERR_|Failed to fetch|Load failed/;
+// Console errors the tests expect and ignore: a request to another host is refused by the test, which logs it separately; with no
+// connection, a request fails and Firestore says it works offline; and a page whose clock a check has moved (setDay) sees the
+// account's times as in the future
+export const EXPECTED_ERROR = /net::ERR_|Failed to fetch|Load failed|Could not reach Cloud Firestore backend|Detected an update time that is in the future/;
 
 export function makeEnv(browser, server) {
   const origin = new URL(server.url).origin;
@@ -28,16 +31,21 @@ export function makeEnv(browser, server) {
   };
 
   // opts.recorder: a mode of startRecorder (tests/fixtures/audio-recorder.mjs); the sound system and the microphone are then watched, and the
-  // microphone answers from a sound the test chooses. opts.init: { script, arg }, run in the page before the app's own scripts
+  // microphone answers from a sound the test chooses. opts.init: { script, arg }, run in the page before the app's own scripts.
+  // opts.project: the account of an earlier page (its `project`), as a phone with its site data cleared, or a second device, would open it;
+  // opts.beforeSignIn(page): run on the sign-in screen, before signing in
   env.freshPage = async (c, width = 390, opts = {}) => {
     const context = await browser.newContext({ viewport: { width, height: 800 }, serviceWorkers: 'block' });
     await context.addInitScript(SKEW_SCRIPT);
     if (opts.recorder) await context.addInitScript(startRecorder, opts.recorder);
     if (opts.init) await context.addInitScript(opts.init.script, opts.init.arg);   // a script run in the page before the app's own: the phone's speech synthesis, stubbed
-    const outside = [];
+    // every page has an account of its own: a demo project on the local emulators (tests/emulators.mjs), which the checks may reach
+    const project = opts.project || newProjectId();
+    const outside = [], config = new URL('app/firebase-config.js', server.url).href, configBody = testConfigModule(project);
     await context.route('**/*', route => {
       const url = route.request().url();
-      if (url.startsWith(origin)) return route.continue();
+      if (url === config) return route.fulfill({ contentType: 'text/javascript', body: configBody });
+      if (url.startsWith(origin) || isEmulatorUrl(url)) return route.continue();
       outside.push(url);
       return route.abort();
     });
@@ -45,22 +53,47 @@ export function makeEnv(browser, server) {
     page.on('pageerror', err => c.check(false, `page error: ${err.message}`));
     page.on('console', msg => { if (msg.type() === 'error' && !EXPECTED_ERROR.test(msg.text())) c.check(false, `console error: ${msg.text()}`); });
     await page.goto(server.url);
-    await page.evaluate(() => { localStorage.clear(); sessionStorage.clear(); });
-    await page.reload();
-    return { context, page, outside };
+    if (opts.beforeSignIn) { await page.locator('#signIn').waitFor(); await opts.beforeSignIn(page); }
+    await env.signIn(page);
+    return { context, page, outside, project };
   };
   // makes it a given day ('2026-11-02') in this tab, whatever the real day is: the weeks of a review depend on the weekday, so a test fixes it.
   // The page's clock is put at noon of that day, so a change of clocks between now and then (the first Sunday of November) cannot move it a day.
   env.setDay = async (page, day) => {
     const [y, m, d] = day.split('-').map(Number), ms = new Date(y, m - 1, d, 12).getTime() - Date.now();
     await page.evaluate(n => sessionStorage.setItem('__skew', String(n)), ms);
+    await env.reload(page);
+  };
+  // signs in on the sign-in screen with the emulator's made-up Google account (as the learner would with theirs), and waits for the record
+  env.signIn = async page => {
+    await page.locator('#signIn').waitFor();
+    await page.evaluate(async () => {
+      const fb = await import('/vendor/firebase.js');
+      await fb.signInWithCredential(fb.getAuth(), fb.GoogleAuthProvider.credential(JSON.stringify({ sub: 'learner', email: 'learner@example.com', email_verified: true })));
+    });
+    await env.recordOpen(page);
+  };
+  env.recordOpen = page => page.locator('html[data-record="open"]').waitFor({ state: 'attached' });
+  // the page opened again once everything written is saved to the account, as a learner closing the app and opening it later
+  env.reload = async page => {
+    await page.evaluate(async () => { const fb = await import('/vendor/firebase.js'); await fb.waitForPendingWrites(fb.getFirestore()); });
     await page.reload();
+    await env.recordOpen(page);
   };
 
   /* ---------- reading the page ---------- */
   env.screenText = async page => (await page.locator('#screen').textContent()).replace(/\s+/g, ' ').trim();
   env.clickVisible = (page, selector) => page.locator(`${selector}:visible`).first().click();
-  env.storage = page => page.evaluate(() => Object.fromEntries(Object.keys(localStorage).map(k => [k, localStorage.getItem(k)])));
+  // the record as the app holds it, by the names it had before the account (pl:<subject>:items, :seen, :notes, pl:log, pl:app, pl:recent),
+  // each as JSON; a part with nothing in it is left out
+  env.storage = page => page.evaluate(() => {
+    const out = {}, put = (key, value) => { if (value && Object.keys(value).length) out[key] = JSON.stringify(value); };
+    new Set([...Object.keys(RECORD.subjects), ...Object.values(RECORD.tries).map(d => d.subject)]).forEach(id => {
+      put(`pl:${id}:items`, itemsOf(id)); put(`pl:${id}:seen`, seenOf(id)); put(`pl:${id}:notes`, notesOf(id));
+    });
+    put('pl:log', logOf()); put('pl:app', storePref('app', null)); put('pl:recent', storePref('recent', null));
+    return out;
+  });
   env.horizontalOverflow = page => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   // Text cut off inside a control (the page-level check can't see these). Deliberate ellipses are fine.
   env.clippedText = page => page.evaluate(() => [...document.querySelectorAll('button, .opt, .chip, .tile, .mark, .stat')]

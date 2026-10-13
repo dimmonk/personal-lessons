@@ -66,7 +66,7 @@ check(BLOCK_KINDS.includes('message') && ASK_KINDS.includes('text'), 'the engine
   // what is drawn
   const open = writeHtml(account, writeAsk, { answer: undefined, marks: false, typed: {} });
   check(/<textarea class="writebox"[^>]*maxlength="400"[^>]*data-write="say"[^>]*><\/textarea>/.test(open) && open.includes(SAY.writeNotYet) && open.includes(`>${SAY.answerBtn}<`) && /data-write-answer="say" disabled/.test(open), 'the line to write has a box, "Not yet", and an Answer that is shut until something is written');
-  check(open.includes(SAY.writePrivate) && open.includes(SAY.writeHint), 'it says what to do and that what is written stays on the phone');
+  check(open.includes(SAY.writePrivate) && open.includes(SAY.writeHint), 'it says what to do and that only the learner can see what is written');
   const drafted = writeHtml(account, writeAsk, { answer: undefined, marks: false, typed: { say: 'He ate it' } });
   check(drafted.includes('>He ate it</textarea>') && !/data-write-answer="say" disabled/.test(drafted), 'what was typed is kept in the box and opens Answer');
   const done = writeHtml(account, writeAsk, { answer: 'He ate it', marks: false, typed: {} });

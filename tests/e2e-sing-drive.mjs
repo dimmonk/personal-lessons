@@ -49,8 +49,8 @@ export const stripState = page => page.evaluate(() => {
   const svg = document.querySelector('.pitchstrip');
   return svg ? { line: svg.dataset.line, bars: svg.querySelectorAll('.bar').length, d: svg.querySelector('.voice').getAttribute('d') || '' } : null;
 });
-export const storedTries = (page, subject, key) => page.evaluate(([s, k]) => { const items = JSON.parse(localStorage.getItem(`pl:${s}:items`) || '{}'); return (items[k] || { tries: [] }).tries; }, [subject, key]);
-export const storedRange = (page, subject) => page.evaluate(s => { const n = JSON.parse(localStorage.getItem(`pl:${s}:notes`) || '{}'); return n.range || null; }, subject);
+export const storedTries = (page, subject, key) => page.evaluate(([s, k]) => (itemsOf(s)[k] || { tries: [] }).tries, [subject, key]);
+export const storedRange = (page, subject) => page.evaluate(s => notesOf(s).range || null, subject);
 
 // A hum with a slide up to `top` and down to `bottom` (half-step numbers), for the range: hold the bottom, slide up, hold the top; then slide down
 export async function singRange(page, bottom, top) {

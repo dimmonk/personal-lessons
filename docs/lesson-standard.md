@@ -578,7 +578,7 @@ opens on a banner and asks only a choice (V83).
 
 ## 5. The record and the learner's private data
 
-The storage key names never change (owner).
+The record's parts keep these names (owner). Since 2026-10-13 they are kept in the learner's account (Cloud Firestore, `public/app/sync.js`, approved by the owner that day), with a copy on the phone that works offline; `pl:<s>:items` and the rest are the names the export file and the browser checks give them.
 
 ### 5.1 Keys
 
@@ -589,7 +589,7 @@ The storage key names never change (owner).
 | `pl:<s>:seen` | `{ [lessonId]: { rev, at } }`: the revision last opened and the step reached; nothing else. A lesson opens at that step (the check's first screen too) while the check has not been taken, and at the why after it, or in another revision |
 | `pl:log`, `pl:app`, `pl:recent` | sessions, "this confused me" reports, claims, and the export |
 
-No other key is written (X5). Records of the old lessons stay untouched and unread, and stay in the export.
+No other part is written (X5). Records of the old lessons are never read, and were not moved into the account.
 
 ### 5.2 A try
 
@@ -607,8 +607,8 @@ No other key is written (X5). Records of the old lessons stay untouched and unre
 
 ### 5.3 Private data
 
-In `pl:<s>:notes` only. Never scored against a truth, never sent anywhere; it leaves the phone only in a file the
-learner saves. Built (`OWN_SLOTS` in `public/app/lessons/own.js`):
+In `pl:<s>:notes` only. Never scored against a truth and never shared: it is kept in the learner's own account, which
+no other account can read (`firestore.rules`), and leaves it only in a file the learner saves. Built (`OWN_SLOTS` in `public/app/lessons/own.js`):
 - `range: { low, high, set }` (Singing): measured, never typed.
 - `sheet: { accounts: [{ id, name, type, balance, holdings: [{ name, value, kind, expense }], fees, matchRule?,
   beneficiary }], mix }` (Wealth). `actions: [{ id, what, where, when, done?, repeat? }]`. `triggers: { [id]: date }`,

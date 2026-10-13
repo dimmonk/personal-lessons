@@ -1,10 +1,11 @@
 /* ===================== LESSONS: WHAT IS STORED, AND WHAT IS WORKED OUT FROM IT ===================== */
-// One practice record per subject (lesson standard 5). Every figure the app shows (done marks, check results, accuracy by
-// facet, slips, due dates) is computed from it; nothing is stored twice. Records are replaced, never edited in place.
-//   pl:<subject>:items   { [itemId or generatorId]: { tries: [Try] } }     the last twelve tries per item and context
-//   pl:<subject>:seen    { [lessonId]: { rev, at } }                       the revision last opened and the place (a step index)
-//   pl:<subject>:notes   the learner's private data for the subject (5): Singing's range, Wealth's sheet, the plan, Civics' answers and interview date
-//   pl:log               [{ d, type, subject?, lesson?, rev? }]            at most 500, oldest dropped first
+// One practice record per subject (lesson standard 5), kept in the learner's account through the store (app/store.js). Every figure the
+// app shows (done marks, check results, accuracy by facet, slips, due dates) is computed from it; nothing is stored twice. Records are
+// replaced, never edited in place.
+//   items   { [itemId or generatorId]: { tries: [Try] } }     the last twelve tries per item and context, one stored answer each
+//   seen    { [lessonId]: { rev, at } }                       the revision last opened and the place (a step index)
+//   notes   the learner's private data for the subject (5): Singing's range, Wealth's sheet, the plan, Civics' answers and interview date
+//   log     [{ d, type, subject?, lesson?, rev? }]            at most 500, oldest dropped first
 // Try = { d, run, lesson, rev, engine, context, sup, seed?, a, r, ok, ms? }
 
 const MAX_TRIES = 12;   // the last twelve tries of an item in each context, so a check's tries are never pushed out by practice
@@ -29,23 +30,22 @@ const shortDay = day => { const [y, m, d] = day.split('-').map(Number); return n
 let RUN_COUNTER = 0;
 const newRunId = () => Date.now().toString(36) + (RUN_COUNTER++).toString(36);
 
-function storageRead(key){
-  try{
-    const raw = localStorage.getItem(key);
-    return raw ? JSON.parse(raw) : null;
-  }catch(e){
-    console.error('Could not read ' + key, e);
-    return null;
-  }
-}
-
 /* ---------- the practice record ---------- */
-const itemsCache = {};
-function itemsOf(subjectId){
-  if(!itemsCache[subjectId]) itemsCache[subjectId] = storageRead(`pl:${subjectId}:items`) || {};
-  return itemsCache[subjectId];
+// The store's answers grouped by subject and item, oldest first, worked out again only when they change; `ids` gives the id a try is kept under.
+let GROUPED = { from: null, items: {}, ids: new Map() };
+function grouped(){
+  if(GROUPED.from === RECORD.tries) return GROUPED;
+  const items = {}, ids = new Map();
+  Object.entries(RECORD.tries).sort(([, a], [, b]) => a.at - b.at).forEach(([id, { subject, key, t }]) => {
+    const bySubject = items[subject] || (items[subject] = {});
+    (bySubject[key] || (bySubject[key] = { tries: [] })).tries.push(t);
+    ids.set(t, id);
+  });
+  GROUPED = { from: RECORD.tries, items, ids };
+  return GROUPED;
 }
-// Tries of the old lessons stay in storage untouched and are never read: they have no run (5).
+const itemsOf = subjectId => grouped().items[subjectId] || {};
+// Tries of the old lessons, which have no run, are never read (5).
 const isNewTry = t => typeof t.run === 'string';
 const rawTries = (subjectId, key) => (itemsOf(subjectId)[key] || { tries: [] }).tries;
 const triesOf = (subjectId, key) => rawTries(subjectId, key).filter(isNewTry);
@@ -62,9 +62,9 @@ function lastPerContext(tries){
 function recordTry(subjectId, key, attempt){
   const entry = { d: today(), run: attempt.run, lesson: attempt.lesson, rev: attempt.rev, engine: FC.ENGINE, context: attempt.context,
     sup: !!attempt.sup, ...(attempt.seed !== undefined ? { seed: attempt.seed } : {}), a: attempt.a, r: attempt.r, ok: !!attempt.ok, ...(attempt.ms !== undefined ? { ms: attempt.ms } : {}) };
-  const tries = lastPerContext([...rawTries(subjectId, key), entry]);
-  itemsCache[subjectId] = { ...itemsOf(subjectId), [key]: { tries } };
-  storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
+  storeTryAdd(subjectId, key, entry);
+  const tries = rawTries(subjectId, key), kept = new Set(lastPerContext(tries)), { ids } = grouped();
+  storeTriesDrop(tries.filter(t => !kept.has(t)).map(t => ids.get(t)));
   return entry;
 }
 // A claim (5): the try of a question just answered, with one miss counted on the learner's word ("my answer means the same"). The record replaces
@@ -74,8 +74,7 @@ function claimTry(subjectId, key, run, seed, askId){
   const tries = rawTries(subjectId, key), at = tries.map(t => t.run === run && t.seed === seed && t.r[askId] === 'no').lastIndexOf(true);
   if(at < 0) return null;
   const claim = claimedResults(tries[at].r, askId), made = { ...tries[at], r: claim.r, ok: claim.ok };
-  itemsCache[subjectId] = { ...itemsOf(subjectId), [key]: { tries: tries.map((t, i) => i === at ? made : t) } };
-  storageSave(`pl:${subjectId}:items`, itemsCache[subjectId]);
+  storeTryReplace(grouped().ids.get(tries[at]), made);
   logEvent('claim', { subject: subjectId, item: key });
   return made;
 }
@@ -95,28 +94,19 @@ const pct = (ok, n) => n ? Math.round(100 * ok / n) + '%' : '—';
 const outOf = list => list.length ? `${list.filter(x => (x.t || x).ok).length} of ${list.length} · ${pct(list.filter(x => (x.t || x).ok).length, list.length)}` : '—';
 
 /* ---------- place ---------- */
-const seenCache = {};
-function seenOf(subjectId){
-  if(!seenCache[subjectId]) seenCache[subjectId] = storageRead(`pl:${subjectId}:seen`) || {};
-  return seenCache[subjectId];
-}
-function saveSeenLesson(subjectId, lessonId, entry){
-  seenCache[subjectId] = { ...seenOf(subjectId), [lessonId]: entry };
-  storageSave(`pl:${subjectId}:seen`, seenCache[subjectId]);
-}
-const notesOf = subjectId => storageRead(`pl:${subjectId}:notes`) || {};
-// The learner's private data is replaced whole, never edited in place: the notes with one field changed.
-function saveNote(subjectId, field, value){
-  storageSave(`pl:${subjectId}:notes`, { ...notesOf(subjectId), [field]: value });
-}
+const seenOf = subjectId => subjectRecord(subjectId).seen;
+const saveSeenLesson = (subjectId, lessonId, entry) => storeSeenPut(subjectId, lessonId, entry);
+const notesOf = subjectId => subjectRecord(subjectId).notes;
+// The learner's private data is replaced one field at a time, never edited in place: the field is given its new value whole.
+const saveNote = (subjectId, field, value) => storeNotePut(subjectId, field, value);
+// every note of a subject deleted, as the learner asked
+const deleteNotes = subjectId => storeNotesClear(subjectId);
 // Singing's range (5): { low, high, set }, the lowest and highest notes the learner sang steadily, or null until it is measured
 const rangeOf = subjectId => notesOf(subjectId).range || null;
 
 /* ---------- the log (sessions; the export, E19) ---------- */
-const logOf = () => storageRead('pl:log') || [];
-function logEvent(type, detail){
-  storageSave('pl:log', [...logOf(), { d: today(), type, ...(detail || {}) }].slice(-MAX_LOG));
-}
+const logOf = () => Object.values(RECORD.log).sort((a, b) => a.at - b.at).map(entry => entry.e);
+const logEvent = (type, detail) => storeLogAdd({ d: today(), type, ...(detail || {}) }, MAX_LOG);
 
 /* ---------- checks: runs, results, done marks ---------- */
 // What one stored try stands for in a pass rule.

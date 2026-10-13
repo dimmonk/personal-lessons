@@ -154,7 +154,7 @@ export async function X47(env) {
   await env.clickVisible(resumed.page, '#screen [data-l="l2"]');
   for (const [name, at] of [['the second group', STEP.names], ['the check', STEP.check]]) {
     await jump(resumed.page, at);
-    await resumed.page.reload();
+    await env.reload(resumed.page);
     await env.openSubject(resumed.page, 'atlas');
     await env.clickVisible(resumed.page, '#screen [data-l="l2"]');
     const opened = await resumed.page.evaluate(() => LESSON.at);
