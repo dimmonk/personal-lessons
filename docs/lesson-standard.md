@@ -202,16 +202,18 @@ in names the pair, so the same seed is the same question and a try stores only i
 ```js
 { id, strand, facets?: { [facetId]: valueId },
   places: { map: regionId, forms: ['tap' | 'name' | 'flag' | 'border'], words: { [form]: Text }, slips?: { [placeId]: slipId },
-            list: [{ id, name, reason: Text, accept: [Entry], flag?: Text }] } }
+            list: [{ id, name, reason: Text, accept: [Entry], flag?: Text, flagLine?: Text }] } }
 ```
 
 | Form | The learner is shown | Answers | Made as |
 |---|---|---|---|
 | `tap` | the name | taps the place on the blank map | a `place` ask under a prose block with the name |
 | `name` | the place lit | types its name (`accept`, 3.7) | a `text` ask under a `map` block with `lit` |
-| `flag` | the flag (`flag`, text) | taps the country | a `place` ask under a prose block with the flag |
+| `flag` | the flag (`flag`, text), large, with no name | taps the country | a `place` ask under a `flags` block (3.9); the feedback opens with the place's `flagLine` and shows the flag with the name beside it |
 | `border` | the name | taps a neighbor, then the water or Landlocked | a `place` ask with `mode: 'neighbor-water'` |
 
+- A place's `flagLine` is the one thing that tells its flag from the one it is mistaken for ("Three upright stripes, black, yellow and red. Germany's
+  three stripes lie flat."): it is read in the feedback of a flag question, before the place's own line, and nowhere else.
 - A place is asked in a form only when it can be: a flag needs the place's `flag`, `border` a place that is ground with neighbors on the map
   (an island with none is never asked for them). `words` is the prompt of each form the group asks; `reason` is the place's one line, shown
   after every answer; `slips` keys the slip of tapping a place that is not the one asked, for the taps. Every question a group can make goes
@@ -321,7 +323,7 @@ no right or no wrong end; V74 refuses an exchange in which nobody pushes, or no 
 
 **`place`** `{ id, kind, prompt, map, right: placeId | [placeId], slips?, when? }`, or `{ id, kind, mode: 'neighbor-water', prompt, map, of, when? }`.
 `map` is a region of the map data (`FC.maps`, 3.11) and `right` the places of it that are right; a list is any one of them. The
-item's blocks hold the question (a prose block with the name, or a flag), never the answer: a `map` block of the same region
+item's blocks hold the question (a prose block with the name, or a `flags` block with the flag and no name), never the answer: a `map` block of the same region
 that has the right place lit is refused (V74). The learner taps the map; a tap is a tap only when one finger went down and up
 without moving more than 8 pixels and no second finger touched (pinch, drag and the zoom buttons never count). The answer is
 stored as the three numbers `[x, y, k]`: the point in units of the map and the zoom it was made at (1 to 8).
@@ -397,7 +399,8 @@ each question from the learner's range and a seed, and stores its tries under `s
 | `ref` | a value looked up: its text, the value, "Looked up <day>", "Source: …", a line to check the source, and after a year a line to look it up again | `ref` (an id of `subject.refs`) |
 | `panel` | what a label or word requires, printed from `subject.rules`, beside the item while the help lasts | `rules` |
 | `spoken` | a question read aloud by an on-device voice; its words shown, or held behind "Show the words" | `text`, `show?` |
-| `map` | a region of the map data drawn blank, north up, with `lit` places shown (one for naming, two for a distance); `labels` names its places (`true`: every kind the region labels; a list: those) | `region`, `id?`, `labels?: true \| [placeId]`, `lit?: [placeId]` |
+| `map` | a region of the map data drawn blank, north up, with `lit` places shown (one for naming, two for a distance); `labels` names its places (`true`: every kind the region labels; a list: those); `view` opens it on one part of the region (a panel) | `region`, `id?`, `labels?: true \| [placeId]`, `lit?: [placeId]`, `view?: [x, y, zoom]` |
+| `flags` | the flags of places of a place group (3.5), each about 64 pixels wide; with `names`, the name beside each; also the picture added to the feedback of a flag question | `gen`, `places: [placeId]`, `names?` |
 | `pitch` | the strip of a `sing` ask; made by the app, never written | none |
 
 - A `Segment` is `{ id, text, note?, para?, fine?, slip?, me? }`: every line that can be tapped or marked is one.
@@ -419,7 +422,11 @@ each question from the learner's range and a seed, and stores its tries under `s
 - **A map** is drawn from the map data by `public/app/lessons/place-view.js`: layers bottom to top are the lit water (so a sea's
   outline never covers a coast), the blank map in the order the region's `draw` lists, the insets' frames, lit ranges and regions
   (see-through), the dots of microstates, the names, and the marks of taps. Nothing on a blank map carries a name, in the picture or
-  the page; the one look at a labelled map (`labels`) is a teaching screen. A map is pinched, dragged and zoomed to 8 times
+  the page; the one look at a labelled map (`labels`) is a teaching screen. A name is set in pixels, not in units of the map: 12 pixels tall
+  on the screen at every zoom (`map-run.js` puts it back at each zoom), and a microstate's name stands off its dot on a line to it, the pixels
+  right and down in the place's `lead` (3.11). A region too crowded to read whole is shown as panels, each a `map` block with a `view`
+  that names only the places in it; the button for the whole map goes back to the part the map opened on. Water is drawn in a water color
+  (the map's sea, and a lit sea, lake or strait in a lighter one), never the land's. A map is pinched, dragged and zoomed to 8 times
   (`map-run.js`), by two fingers, by the buttons under it (zoom in, zoom out, the whole map) and by ctrl and the wheel; its zoom is
   kept across a screen painted again and reset when the question or step changes. An item's `figure` may be a map (a picture added to
   the feedback: the true map after a trap item).
@@ -434,7 +441,7 @@ each question from the learner's range and a seed, and stores its tries under `s
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
 - Map data beyond `world`, `us` and `europe-west` (3.11): every other region the design names is a list in `tools/maps/regions.mjs`
   and a build; a city, a capital and a part of a state (halves and thirds of a unit) as places; flags drawn from the map data (the emoji
-  flag is text in a prose block); Alaska's Arctic coast as water. The Suez and Panama canals, the straits other than Gibraltar and the
+  flag is text in the place group's list, shown large by a `flags` block); Alaska's Arctic coast as water. The Suez and Panama canals, the straits other than Gibraltar and the
   world's seas have no data until the regions that hold them are built (3.11, "Coasts, straits and canals").
 - Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
   the range as a lesson step with a check of its own, and a range typed by hand.
@@ -451,12 +458,13 @@ each question from the learner's range and a seed, and stores its tries under `s
 FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], draw: ['country'], labelled: ['country', 'sea', 'ocean', 'range'],
   frames?: [{ id, x, y, w, h }],          // the insets of a map
   rings: [[x0, y0, dx, dy, ...]],         // every outline once: the first point, then the step to each next, in tenths of a unit
-  places: [{ id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], fs?, neighbors?: [id], water?: [id] }] });
+  places: [{ id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], lead?: [dx, dy], neighbors?: [id], water?: [id] }] });
 ```
 
 - A place's `rings` name entries of the ring table, so a continent or a census region is its members' rings and no outline is stored
-  twice. `kind` is the kind of place (`country`, `state`, `continent`, `region`, `ocean`, `sea`, `strait`, `lake`, `river`, `canal`, `coast`, `range`); `at` and `fs`
-  are where its name goes and how big (3.9); `dot` a microstate (5 of them in `europe-west`), a point with a tap radius.
+  twice. `kind` is the kind of place (`country`, `state`, `continent`, `region`, `ocean`, `sea`, `strait`, `lake`, `river`, `canal`, `coast`, `range`); `at` is where
+  its name goes (3.9: its size is the app's, in pixels); `dot` a microstate (5 of them in `europe-west`), a point with a tap radius, and `lead` the pixels, right
+  and down, that its name stands from the dot (the app draws a line between). A tap on the circle of a dot is named for the microstate, not the country under it.
 - The build projects every outline in advance and cuts it to the frame; simplifies it (Douglas-Peucker, 0.1 to 0.35 of a unit)
   keeping every vertex two neighbors share, so a border is the same on both sides; rounds to tenths; drops a ring under 0.04 square units.
   The lower 48's water and neighbors are not cut away under an inset (a tap on the sea beside Hawaii is the Pacific); the lower 48's land is.
@@ -464,10 +472,10 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   is shared on land (a border through a lake is not one; Four Corners is not one), or, for a state and Canada or Mexico, when a
   stretch of 20 km of one's outline runs unbroken within 8 km of the other's; water is every sea, ocean or lake whose outline a coast
   reaches (a Great Lake lies inside the polygons of the states around it, so a lake is a state's water when a share of the lake's area is inside it).
-- Measured on 2026-10-13: `world` 85.4 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 89.0 KB (343 rings, 82 places:
+- Measured on 2026-10-13: `world` 85.2 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 88.5 KB (343 rings, 82 places:
   50 states and DC, 4 regions, Canada and Mexico, 5 Great Lakes, 10 rivers, 3 coasts, 4 ranges, Pacific, Atlantic, Gulf of Mexico),
-  `europe-west` 62.0 KB (132 rings, 49 places: 34 countries, 5 dots, 11 seas, the Strait of Gibraltar, the Atlantic, the Alps, the Pyrenees):
-  236 KB in all (about 80 KB compressed), against the design's budget of about 600 KB. Each file is under 450 lines (V47 holds 800).
+  `europe-west` 61.7 KB (132 rings, 49 places: 34 countries, 5 dots, 11 seas, the Strait of Gibraltar, the Atlantic, the Alps, the Pyrenees):
+  235 KB in all (about 80 KB compressed), against the design's budget of about 600 KB. Each file is under 450 lines (V47 holds 800).
 - `tests/place-pure.mjs` holds the data to known facts (Switzerland's neighbors and no water, Belgium's North Sea, Michigan's lakes,
   Nevada landlocked, a tap on each capital inside its country, the shore of California, New Jersey and Texas on the three coasts, the
   Strait of Gibraltar found within its radius); a change to the lists is checked by it and by V47.
@@ -562,7 +570,7 @@ The storage key names never change (owner).
 |---|---|
 | `pl:<s>:items` | **the only practice record**: `{ [itemId or genId or sing-<task> or genId\|placeId]: { tries: [Try] } }`, the last twelve tries per item in each context (a place of a place group, 3.5, is an item of its own: `g-europe\|france`) |
 | `pl:<s>:notes` | the learner's private data for the subject (section 5.3) |
-| `pl:<s>:seen` | `{ [lessonId]: { rev, at } }`: the revision last opened and the step reached; nothing else |
+| `pl:<s>:seen` | `{ [lessonId]: { rev, at } }`: the revision last opened and the step reached; nothing else. A lesson opens at that step (the check's first screen too) while the check has not been taken, and at the why after it, or in another revision |
 | `pl:log`, `pl:app`, `pl:recent` | sessions, "this confused me" reports, claims, and the export |
 
 No other key is written (X5). Records of the old lessons stay untouched and unread, and stay in the export.
@@ -688,7 +696,7 @@ are still due.
 - **A lesson**: a top bar (title, rev, draft line, step n of m); the why; each step: a teaching screen; a worked item
   answered step by step; a set, one item a screen (blocks, asks in order, the help while it lasts, the countdown if
   timed, then the feedback and Next); an own step. Between sets a screen says the learner can stop and the place is
-  kept. Back is always there and keeps the place.
+  kept. Back is always there and keeps the place; a lesson put down at any step, the check's first screen included, opens there.
 - **The end check**: one screen naming the check in plain words; the items, without help; then "8 of 10: passed" or
   "6 of 10: not yet", each pass rule met or not, the compared facet values, then each item's feedback, misses first; then
   the next lesson. A spoken mock interview's first screen says it is read aloud, to say each answer out loud and then
@@ -837,8 +845,8 @@ Every other rule id below V84 is retired and never reused.
 | X43 | The mock interview: a draw, its first screen, its result, the second a week on, read aloud, on new items | a second mock that draws what the first asked |
 | X44 | The learner's own answers and date: the form, the stored shape, items reading them, the rounds before the date | going on before the answers are saved |
 | X45 | Civics' pilot walked end to end at 375 px | the pilot's check needing 15 of 17 |
-| X46 | The map block and the place ask on the test subject Atlas: the labelled map, a worked tap, a pinch and a drag that are not taps, the zoom buttons, a tap on a country with the slip named, a tap in the hole of a country, a dot found from a zoomed map with the zoom stored, land that is not the sea, a neighbor and its water, Landlocked right and wrong, a lit place named, nothing lit or marked in a check before its end, only numbers stored, 360 and 1200 px | a drag that counts as a tap |
-| X47 | A group of places made into questions on the test subject Atlas, lesson 2: a group of four different places to tap and three countries by their flags, each filed under its place, a miss coming back as the same place, a group of three lit places named and two neighbors and their water, a check drawn from the group with its split fixed by form (2 tap, 1 name, 1 flag, 1 border), no place twice and the dot only as a tap, nothing shown or marked between its questions, the tries stored under the places with only their seeds, and the review two days on asking the group on the place missed in the check, in another form; 360 and 1200 px | the draw ignoring its split |
+| X46 | The map block and the place ask on the test subject Atlas: the labelled map (names 12 pixels tall at every zoom, a tiny country's name set off its dot on a line, a map with a view opening on that part and its button going back to it, the flags with their names), a worked tap that says what is asked, a pinch and a drag that are not taps, the zoom buttons, a tap on a country with the slip named, a tap on a tiny country's circle named for it, water drawn in colors of its own, lit or not, a tap in the hole of a country, a dot found from a zoomed map with the zoom stored, land that is not the sea, a neighbor and its water, Landlocked right and wrong, a lit place named, nothing lit or marked in a check before its end, only numbers stored, 360 and 1200 px | a drag that counts as a tap |
+| X47 | A group of places made into questions on the test subject Atlas, lesson 2: a group of four different places to tap and three countries by their flags, each filed under its place, a miss coming back as the same place, a group of three lit places named and two neighbors and their water, a check drawn from the group with its split fixed by form (2 tap, 1 name, 1 flag, 1 border), no place twice and the dot only as a tap, nothing shown or marked between its questions, the tries stored under the places with only their seeds, and the review two days on asking the group on the place missed in the check, in another form; a flag asked for 40 pixels or more each way with no name, and its feedback with the name beside it and the line that tells it apart; a lesson put down at a group and at the check opening there; 360 and 1200 px | the draw ignoring its split |
 
 A pilot walk asserts only what the walk shows; what another check owns is left to it, so a fault turns one check red.
 The sound checks (X8, X10, X11, X12, X16, X29) run in their own lanes, and a sound fault runs only them. X4, X6, X7 and
@@ -918,7 +926,7 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Civics**: lesson 1, the three branches, 17 questions answered from memory in four groups, then a recall check of
   all 17, 16 to pass. Not built: the other 111 questions, the news stories, the answers lesson (4), the mock interview as a lesson (14)
   and its retest, and the news story per due news strand in the review.
-- **Geography**: lesson 16, "Europe, west" (the pilot; draft): five questions shown done, one look at the labelled map, recall in four forms of a
+- **Geography**: lesson 16, "Europe, west" (the pilot; draft): five questions shown done, one look at the labelled map (three views, each readable on a phone, with the ten flags beside their names), recall in four forms of a
   place group of the ten countries from Portugal to Italy and the five microstates (`g-europe-west`, the microstates asked only as a name to tap), and a
   check drawn from the group (5 tapped, 3 named, 2 flags, 2 neighbors and water; 10 of 12). Not built: the other 32 parts. Its design record is
   `docs/subjects/geography/design.md`. Built for it on 2026-10-12: the map data
@@ -982,6 +990,13 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   ago first (3.5, 6.3); a place of a group is an item of its own in the record, `<generator>|<place>` (5.1); V70 and V72 to V75 and V83 read
   groups and drawn checks by form (V76 reads a drawn check's mix from its split), with 25 seeded faults; X47 and the test subject Atlas's lesson 2; coasts (three on the United States map),
   the strait kind (Gibraltar) and the canal band, with the bands of a river, a canal and a coast (3.7, 3.11). The service worker cache is v24.
+
+- **2026-10-13, the first stand-in review of Geography's pilot** (the commits that follow its review file): a map's names are set in pixels (12 tall at
+  every zoom) and a microstate's name on a line from its dot (`lead` replaces `fs` in the map data); a `map` block may open on a `view` (a panel); water
+  is drawn in water colors, lit or not; a tap on a microstate's circle is named for it; a worked place question shows what it asks; the `flags` block
+  and a place's `flagLine` (3.5, 3.9: a flag is large, the feedback of a flag question shows it with its name and opens with the line that tells it
+  apart); V73 counts the names a `flags` block prints; a lesson put down at the check opens at the check (5.1); the writer may open the review that sent
+  its lesson back, the skill, the map build, the stylesheet, the browser checks and the learner-view tool (V69); X46 and X47 each have faults for these. The service worker cache is v26.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.
