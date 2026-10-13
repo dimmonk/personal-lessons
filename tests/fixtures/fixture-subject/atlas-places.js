@@ -7,9 +7,9 @@ FC.gen('atlas', [{
     words: { tap: 'Tap it on the map.', name: 'What is the lit place called?', flag: 'Tap the country with this flag.', border: 'Tap a country next to it, then the water it touches.' },
     slips: { alder: 'next-door' },
     list: [
-      { id: 'alder', name: 'Alder', flag: '🚩', accept: ['Alder'], reason: 'Alder is the big country at the left, with Cedar inside it, and it touches the sea.' },
-      { id: 'birch', name: 'Birch', flag: '🏁', accept: ['Birch'], reason: 'Birch is the country at the right, next to Alder, and it touches the sea.' },
-      { id: 'cedar', name: 'Cedar', flag: '🏴', accept: ['Cedar'], reason: 'Cedar sits inside Alder, which is the only country next to it, so it has no coast.' },
+      { id: 'alder', name: 'Alder', flag: '🚩', flagLine: 'Its flag is one plain red pennant.', accept: ['Alder'], reason: 'Alder is the big country at the left, with Cedar inside it, and it touches the sea.' },
+      { id: 'birch', name: 'Birch', flag: '🏁', flagLine: 'Its flag is checkered.', accept: ['Birch'], reason: 'Birch is the country at the right, next to Alder, and it touches the sea.' },
+      { id: 'cedar', name: 'Cedar', flag: '🏴', flagLine: 'Its flag is plain black.', accept: ['Cedar'], reason: 'Cedar sits inside Alder, which is the only country next to it, so it has no coast.' },
       { id: 'speck', name: 'Speck', accept: ['Speck'], reason: 'Speck is a dot of a country below Birch, too small to be a shape.' },
       { id: 'sea', name: 'The sea', accept: ['The sea'], reason: 'The sea is the water around the countries.' }
     ]

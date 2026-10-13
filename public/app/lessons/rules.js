@@ -4,7 +4,7 @@
 
 // The ask kinds and block kinds built so far (10.3). A lesson that uses another fails V70 until its step is built.
 const ASK_KINDS = ['choose', 'number', 'form', 'sing', 'tap', 'text', 'exchange', 'order', 'place'];
-const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message', 'spoken', 'map'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message', 'spoken', 'map', 'flags'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (6)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));

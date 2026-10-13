@@ -29,7 +29,7 @@ export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseO
   'orderProblems', 'scoreOrder', 'orderScored', 'orderReady', 'TIMER_SECONDS', 'BUSY_TAPS_BEFORE',
   'recallProblems', 'recallEntryText', 'recallIsOwn', 'recallOwnKey', 'recallMatch', 'recallNeed',
   'PLACE_MODES', 'PLACE_NONE', 'mapOf', 'mapPlace', 'placeAskProblems', 'mapBlockProblems', 'placeRightIds', 'placeNeighborsOf', 'placeWaterOf', 'placeRightText',
-  'PLACE_GEN_FORMS', 'PLACE_FORM_FACET', 'isPlaceGen', 'isMade', 'drawSize', 'drawStrands', 'placeItem', 'placeItems', 'placePairs', 'placeGenProblems', 'placeDrawProblems', 'placeRefProblems', 'placeAllowedForms', 'placeOnlyOf', 'placeSeedOf', 'placeKey'];
+  'PLACE_GEN_FORMS', 'PLACE_FORM_FACET', 'isPlaceGen', 'isMade', 'drawSize', 'drawStrands', 'placeItem', 'placeItems', 'placePairs', 'placeGenProblems', 'placeDrawProblems', 'placeRefProblems', 'placeAllowedForms', 'placeOnlyOf', 'flagsBlockProblems', 'placeSeedOf', 'placeKey'];
 export const isDataFile = src => src === REGISTRY_FILE || src.startsWith('subjects/') || src.startsWith('maps/') || ENGINE_FILES.includes(src);
 
 export const asDirUrl = dir => dir instanceof URL ? new URL(dir.href.replace(/\/?$/, '/')) : new URL(`file://${dir.replace(/\/?$/, '/')}`);

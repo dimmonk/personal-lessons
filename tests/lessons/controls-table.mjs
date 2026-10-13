@@ -378,8 +378,12 @@ export const CONTROLS = [
   { rule: 'V70', name: 'a neighbor and its water of a place that is not ground', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'of'), 'sea') },
   { rule: 'V70', name: 'a neighbor and its water of a place the map does not have', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'of'), 'narnia') },
   { rule: 'V70', name: 'a neighbor and its water that has a right answer of its own', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'right'), 'birch') },
-  { rule: 'V70', name: 'a picture added to the feedback that is neither a figure nor a map', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'figure'), { kind: 'prose', text: 'Birch.' }) },
+  { rule: 'V70', name: 'a picture added to the feedback that is neither a figure, a map nor flags', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'figure'), { kind: 'prose', text: 'Birch.' }) },
   { rule: 'V70', name: 'a map block whose view is off the map', data: (d, h) => h.setIn(d, atlasLesson('l1', 'flow', 0, 'show', 1, 'view'), [999, 60, 3]) },
+  { rule: 'V70', name: 'a flags block of a place the group does not have', data: (d, h) => h.setIn(d, atlasLesson('l1', 'flow', 0, 'show', 2, 'places'), ['narnia']) },
+  { rule: 'V70', name: 'a flags block of a place that has no flag', data: (d, h) => h.setIn(d, atlasLesson('l1', 'flow', 0, 'show', 2, 'places'), ['speck']) },
+  { rule: 'V70', name: 'a flags block of a group that is not there', data: (d, h) => h.setIn(d, atlasLesson('l1', 'flow', 0, 'show', 2, 'gen'), 'narnia') },
+  { rule: 'V74', name: 'a flag above the question that asks for it, with the country\'s name beside it', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'blocks'), [{ kind: 'flags', gen: 'g-isles', places: ['birch'], names: true }]) },
   { rule: 'V74', name: 'a map with the right place lit above the question that asks for it', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'blocks'), [{ kind: 'map', region: 'isles', lit: ['birch'] }]) },
   { rule: 'V74', name: 'a map with a neighbor of the place asked about lit above its neighbors and water', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'blocks'), [{ kind: 'map', region: 'isles', lit: ['birch'] }]) },
   { rule: 'V74', name: 'a place ask whose slip the subject does not list', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'slips'), { alder: 'nowhere' }) },
@@ -420,4 +424,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 296;
+export const PINNED_CONTROL_COUNT = 300;

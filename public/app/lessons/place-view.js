@@ -103,6 +103,15 @@ function placeWorkedHtml(data, item){
   }).join('');
 }
 
+/* ---------- the flags block ---------- */
+// The flags of places of a place group (place-gen.js), each large enough to tell from the next on a phone: alone, to be told which country it is, or with the
+// name beside each (`names`) to be learned.
+function flagsHtml(block, ctx){
+  const list = ctx.data.gens[block.gen].places.list, rows = block.places.map(id => list.find(p => p.id === id)), flag = p => `<span class="flagbig">${esc(p.flag)}</span>`;
+  if(!block.names) return `<div class="block-flags" role="img" aria-label="${esc(SAY.flagAlt)}">${rows.map(flag).join('')}</div>`;
+  return `<ul class="block-flags flagkey">${rows.map(p => `<li>${flag(p)}<span class="flagtext">${esc(p.name)}</span></li>`).join('')}</ul>`;
+}
+
 // the mark after the answer, in the words of the other marks
 function placeMarkHtml(ask, answer, result){
   const ok = result === 'ok';

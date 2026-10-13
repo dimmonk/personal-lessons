@@ -537,4 +537,10 @@ table.ownsum td:last-child{white-space:normal}
 .mapzoom button{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--raised);border:1px solid var(--border);color:var(--text);font-size:20px;line-height:1}
 .mapzoom button:hover{border-color:var(--text)}
 .placeask .block-map{margin-top:10px}
+.block-flags{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0;padding:12px 16px;list-style:none;background:var(--raised)}
+.flagbig{display:block;flex:0 0 auto;font-size:64px;line-height:1.1;min-width:80px;text-align:center}
+.flagkey{flex-direction:column;align-items:stretch;gap:14px}
+.flagkey li{display:flex;align-items:center;gap:14px}
+.flagtext{font-family:var(--sans);font-size:15px;line-height:1.45;color:var(--body)}
+.flagtext b{display:block;font-weight:600;color:var(--text)}
 .placeask .opts{margin-top:10px}

@@ -11,7 +11,7 @@ const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', '
   'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
   'dateField', 'tol', 'standard', 'rules', 'side', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
   'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels',
-  'start', 'scored', 'danger', 'lit', 'region', 'mode']);
+  'start', 'scored', 'danger', 'lit', 'region', 'mode', 'places']);
 // the ids of a place ask: the region it is on and the place it asks about (a map block names its region in `region`, which is in the list above)
 const PLACE_IDS = ['map', 'of'];
 // block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own

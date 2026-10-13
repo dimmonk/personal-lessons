@@ -33,6 +33,8 @@ const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool,
 // a region of the map data (place.js), drawn blank unless `labels` names its places (true: every place the region labels) and lit where `lit` says
 // `view` is the part of the map it opens on: the middle (x, y) in units of the map and the zoom
 export const MAP_BLOCK = obj({ kind: en('map'), region: str }, { id: str, labels: either(bool, arr(str)), lit: arr(str), view: arr(num) });
+// the flags of places of a group of places (place-gen.js), large; with the names beside them (`names`)
+export const FLAGS_BLOCK = obj({ kind: en('flags'), gen: str, places: arr(str) }, { names: bool });
 export const PROSE = obj({ kind: en('prose') }, { id: str, text, lines: arr(SEGMENT), tone: en('wrong') });
 export const PAIR = obj({ kind: en('pair'), a: any, b: any, compare: text });
 // the everyday papers, and a household's: statement (401(k), IRA, brokerage), fees (a plan's fee sheet), paystub, matchrule (the plan's employer
@@ -120,7 +122,7 @@ const ITEM_OPTIONAL = { steps: arr(STEP_DEF), deciding: arr(str), need: text, ha
 export const ITEM = obj(ITEM_FIELDS, ITEM_OPTIONAL);
 export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), make: fn }, ITEM_OPTIONAL);
 // a place group (place-gen.js): a generator that makes one place in one of four forms from the map data; its forms and places are checked against the map by placeGenProblems
-const PLACE_ENTRY = obj({ id: str, name: str, reason: text, accept: arr(ACCEPT_ENTRY) }, { flag: str });
+const PLACE_ENTRY = obj({ id: str, name: str, reason: text, accept: arr(ACCEPT_ENTRY) }, { flag: str, flagLine: text });
 export const PLACE_GEN = obj({ id: str, strand: str, places: obj({ map: str, forms: arr(str), words: map(text), list: arr(PLACE_ENTRY) }, { slips: map(str) }) }, { facets: map(str) });
 
 /* lessons */

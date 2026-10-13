@@ -50,7 +50,7 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'placeNeighborsOf', 'placeWaterOf', 'placeTapOk', 'placeAskProblems', 'mapBlockProblems', 'mapHtml', 'mapBlockHtml', 'placeHtml', 'placeMarkHtml', 'placeMissHtml', 'placeWorkedHtml', 'placeLitIds',
   // a group of places made into questions
   'PLACE_GEN_FORMS', 'PLACE_SALTS', 'isPlaceGen', 'isMade', 'placeKey', 'placeKeyOf', 'placePairs', 'placePairAt', 'placeSeedOf', 'placeAllowedForms', 'placeItem', 'placeItems', 'placeDraw', 'placeSetPicks',
-  'placeReviewPick', 'placeMemory', 'placeOnlyOf', 'placeFreshSeed', 'placeDrawInstances', 'placeSetInstances', 'placeReviewInstance', 'drawSize', 'drawStrands', 'defOfTry', 'mergeOnly', 'placeGenProblems', 'placeDrawProblems', 'placeRefProblems'];
+  'placeReviewPick', 'flagsBlockProblems', 'placeMemory', 'placeOnlyOf', 'placeFreshSeed', 'placeDrawInstances', 'placeSetInstances', 'placeReviewInstance', 'drawSize', 'drawStrands', 'defOfTry', 'mergeOnly', 'placeGenProblems', 'placeDrawProblems', 'placeRefProblems'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {

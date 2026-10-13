@@ -50,6 +50,20 @@ async function runGroup(page, { miss = [] } = {}) {
   return done;
 }
 const count = (list, form) => list.filter(i => i.form === form).length;
+const NAMES = { alder: 'Alder', birch: 'Birch', cedar: 'Cedar' };
+
+// A flag asked for is large enough to tell from the next on a phone (40 px or more each way), carries no name, and after the answer the feedback shows it
+// with the name beside it and opens with the line that tells it apart.
+async function flagChecks(c, page, width, place) {
+  const asked = await page.locator('.item .block-flags .flagbig').first().boundingBox();
+  c.check(asked && asked.width >= 40 && asked.height >= 40, `${width}px: the flag asked for is ${asked && Math.round(asked.width)} by ${asked && Math.round(asked.height)} px, under 40`);
+  c.check(!(await page.locator('.item .block-flags').first().innerText()).includes(NAMES[place]), `${width}px: the flag asked for carries the name of its country`);
+  await answer(page, true);
+  const shown = await page.locator('.item [data-feedback] .flagkey li').allInnerTexts(), text = (await page.locator('#screen').textContent()).replace(/\s+/g, ' ');
+  const kept = await page.locator('.item [data-feedback] .flagkey .flagbig').first().boundingBox();
+  c.check(shown.length === 1 && shown[0].includes(NAMES[place]) && kept && kept.width >= 40 && kept.height >= 40, `${width}px: the feedback of a flag does not show the flag, large, with the name ${NAMES[place]} beside it (${JSON.stringify(shown)})`);
+  c.check(/Its flag is/.test(text), `${width}px: the feedback of a flag does not open with the line that tells it apart`);
+}
 
 /* ---------- X47 ---------- */
 export async function X47(env) {
@@ -155,7 +169,8 @@ export async function X47(env) {
     for (let seen = 0; seen < 5 && await wide.page.locator('#qNext').count(); seen++) {
       const info = await look(wide.page);
       if (seen === 0 || info.form === 'flag') await env.inspect(c, wide.page, `${width}px a ${info.form} question of a group of places`);
-      await answer(wide.page, true);
+      if (info.form === 'flag') await flagChecks(c, wide.page, width, info.place);
+      else await answer(wide.page, true);
       await next(wide.page);
     }
     await jump(wide.page, STEP.names);

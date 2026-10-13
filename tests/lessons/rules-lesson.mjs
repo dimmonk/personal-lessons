@@ -80,9 +80,11 @@ export const V72 = subjectRule('V72', (s, check) => {
 /* ---------- V73: most of the lesson is doing ---------- */
 // the words a panel prints on a teaching screen come from the subject's rules, and are read like any other
 const panelWords = (s, blocks) => blocks.flatMap(b => b.kind === 'panel' ? b.rules.map(id => s.meta.rules[id]) : []);
+// the names that a flags block prints beside its flags are read on a teaching screen too
+const flagWords = (s, blocks) => blocks.filter(b => b.kind === 'flags' && b.names).flatMap(b => b.places.map(id => s.gens[b.gen].places.list.find(p => p.id === id).name));
 function readingWords(s, lv) {
   const { lesson } = lv;
-  const parts = [lesson.why, ...lesson.flow.filter(x => x.show).map(x => ({ title: x.title, show: x.show, printed: panelWords(s, x.show) })),
+  const parts = [lesson.why, ...lesson.flow.filter(x => x.show).map(x => ({ title: x.title, show: x.show, printed: [...panelWords(s, x.show), ...flagWords(s, x.show)] })),
     ...lv.worked.map(id => { const i = s.items[id]; return { blocks: i.blocks, steps: i.steps, reason: i.reason, need: i.need }; })];
   return parts.flatMap(p => learnerStrings(p, '')).reduce((n, t) => n + wordCount(t.text), 0);
 }
@@ -165,6 +167,9 @@ function placeExplainProblems(s, item, ask, where, slipIds) {
   const given = ask.mode === 'neighbor-water' ? [...(map.places.find(p => p.id === ask.of) || {}).neighbors || [], ...(map.places.find(p => p.id === ask.of) || {}).water || []] : e.placeRightIds(ask);
   item.blocks.filter(b => b.kind === 'map' && b.region === ask.map).forEach(b => (b.lit || []).filter(id => given.includes(id))
     .forEach(id => problems.push(`${where}: the map above it has "${id}" lit, which is the answer`)));
+  // a flag asked for is shown bare: with the country's name beside it the tap would be given away
+  item.blocks.filter(b => b.kind === 'flags' && b.names).forEach(b => b.places.filter(id => given.includes(id))
+    .forEach(id => problems.push(`${where}: the flags above it name "${id}", which is the answer`)));
   return problems;
 }
 // An exchange is explained: every end says what happened next (the shape needs it) and a wrong end that names a slip names one the subject has, the

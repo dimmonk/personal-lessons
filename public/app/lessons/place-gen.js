@@ -5,10 +5,11 @@
 // group can be asked in names the pair, so the same seed is the same question, a try stores only the seed, and the record can say which form a
 // place was last asked in. Pure: no page, no storage; the record is passed in as `memory`.
 //   places { map, forms: ['tap' | 'name' | 'flag' | 'border'], words: { [form]: Text }, slips?: { [placeId]: slipId },
-//            list: [{ id, name, reason, accept: [Entry], flag? }] }
+//            list: [{ id, name, reason, accept: [Entry], flag?, flagLine? }] }
 //   tap     the name is shown, the place tapped on the blank map                         (a `place` ask)
 //   name    the place is lit, its name typed                                              (a `text` ask under a `map` block with `lit`)
-//   flag    the flag is shown, the country tapped                                         (a `place` ask)
+//   flag    the flag is shown (a `flags` block), the country tapped                      (a `place` ask); the feedback shows the flag with the name beside it
+//           and opens with the place's `flagLine`, the one thing that tells the flag from the one it is mistaken for
 //   border  the name is shown, a neighbor and then the water tapped, or Landlocked        (a `place` ask with mode 'neighbor-water')
 // A place is asked in a form only when it can be: a flag needs the place's flag, a border needs a place that is ground with neighbors on the map.
 // memory: { [placeId]: { form, ok, run } } how the learner last met each place of the group, from the practice record (schedule.js).
@@ -67,8 +68,9 @@ function placeItem(gen, seed){
   // the slip of tapping another place of the group (the place asked is never its own slip)
   const slips = Object.fromEntries(Object.entries(group.slips || {}).filter(([id]) => id !== place));
   const where = { id: 'where', kind: 'place', prompt: words, map: group.map, right: place, ...(Object.keys(slips).length ? { slips } : {}) };
+  const flags = names => ({ kind: 'flags', gen: gen.id, places: [place], ...(names ? { names: true } : {}) });
   const made = form === 'tap' ? tap([{ kind: 'prose', text: entry.name }], where)
-    : form === 'flag' ? tap([{ kind: 'prose', text: entry.flag }], where)
+    : form === 'flag' ? { ...tap([flags(false)], where), figure: flags(true), reason: entry.flagLine ? [entry.flagLine, entry.reason] : entry.reason }
     : form === 'border' ? tap([{ kind: 'prose', text: entry.name }], { id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: words, map: group.map, of: place })
     : tap([{ kind: 'map', region: group.map, lit: [place] }], { id: 'name', kind: 'text', prompt: words, accept: entry.accept });
   return { ...made, seed, values: { place, form, name: entry.name } };
@@ -165,6 +167,20 @@ function placeDrawProblems(gen, draw){
   if(!problems.length) Object.entries(draw.split).filter(([, n]) => n > 0).forEach(([f, n]) => {
     const can = ids.filter(id => placeAllowedForms(gen, id, draw.only || {}).includes(f)).length;
     if(can < n) problems.push(`the split asks ${n} in the form "${f}" and only ${can} place${can === 1 ? '' : 's'} can be asked in it`);
+  });
+  return problems;
+}
+// a `flags` block: { kind: 'flags', gen, places: [placeId], names? } shows the flags of places of a group, each with its name beside it when `names`
+function flagsBlockProblems(block, gens){
+  const gen = gens[block.gen];
+  if(!isPlaceGen(gen)) return [`"${block.gen}" is not a group of places, and only a group of places has flags`];
+  const list = gen.places.list, problems = [];
+  if(!block.places.length) problems.push('a flags block names at least one place');
+  placeDuplicates(block.places).forEach(id => problems.push(`the place "${id}" is named twice`));
+  block.places.forEach(id => {
+    const entry = list.find(p => p.id === id);
+    if(!entry) problems.push(`"${id}" is not a place of the group ${gen.id}`);
+    else if(!entry.flag) problems.push(`"${id}" has no flag in the group ${gen.id}`);
   });
   return problems;
 }

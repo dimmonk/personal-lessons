@@ -64,6 +64,8 @@ export async function X46(env) {
   await page.locator('.block-map').nth(1).locator('[data-map-zoom="in"]').click();
   await page.locator('.block-map').nth(1).locator('[data-map-zoom="reset"]').click();
   c.check(Math.abs((await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number)[2] - 100) < 0.5, 'the button for the whole map does not go back to the part the map opened on');
+  const key = await page.locator('.flagkey li').allTextContents();
+  c.check(key.length === 3 && key[0].includes('Alder') && key[1].includes('Birch') && key[2].includes('Cedar'), `the flags with their names are ${JSON.stringify(key)}`);
   await env.inspect(c, page, 'the labelled map');
 
   // a worked tap: the place lit, the tap shown

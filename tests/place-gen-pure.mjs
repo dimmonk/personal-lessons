@@ -16,7 +16,7 @@ const EUROPE = {
       ['belgium', 'Belgium', '🇧🇪'], ['france', 'France', '🇫🇷'], ['germany', 'Germany', '🇩🇪'], ['switzerland', 'Switzerland', '🇨🇭'], ['austria', 'Austria', '🇦🇹'],
       ['italy', 'Italy', '🇮🇹'], ['spain', 'Spain', '🇪🇸'], ['portugal', 'Portugal', '🇵🇹'], ['luxembourg', 'Luxembourg', '🇱🇺'],
       ['andorra', 'Andorra'], ['monaco', 'Monaco'], ['liechtenstein', 'Liechtenstein'], ['san-marino', 'San Marino'], ['vatican-city', 'Vatican City']
-    ].map(([id, name, flag]) => ({ id, name, accept: [name], reason: `${name} is in western Europe.`, ...(flag ? { flag } : {}) }))
+    ].map(([id, name, flag]) => ({ id, name, accept: [name], reason: `${name} is in western Europe.`, ...(flag ? { flag } : {}), ...(id === 'belgium' ? { flagLine: 'Its stripes stand upright.' } : {}) }))
   }
 };
 const MICRO = ['andorra', 'monaco', 'liechtenstein', 'san-marino', 'vatican-city'];
@@ -29,7 +29,7 @@ async function suite(app) {
   const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
   const { FC, placePairs, placePairAt, placeSeedOf, placeAllowedForms, placeItem, placeItems, placeDraw, placeSetPicks, placeReviewPick, placeKey, placeKeyOf, placeAskProblems,
     placeGenProblems, placeDrawProblems, placeRefProblems, recordTry, placeMemory, placeOnlyOf, placeDrawInstances, placeSetInstances, placeReviewInstance, instanceOf,
-    definitionOf, defOfTry, checkSize, checkStrands, drawSize, drawStrands, scoreItem, strandInstance, buildSet, mapPlace, mapOf, placeFreshSeed, mapBlockProblems } = app;
+    definitionOf, defOfTry, checkSize, checkStrands, drawSize, drawStrands, scoreItem, strandInstance, buildSet, mapPlace, mapOf, placeFreshSeed, mapBlockProblems, flagsBlockProblems } = app;
   const maps = FC.maps, ids = EUROPE.places.list.map(p => p.id);
   const atlas = FC.get('atlas'), isles = atlas.gens['g-isles'];
 
@@ -60,9 +60,15 @@ async function suite(app) {
     same([a.values.place, a.values.form, a.facets.form, a.seed], [p.place, p.form, p.form, seed], `${p.place} in ${p.form}: the question knows its place, form and seed`);
     const ask = a.asks[0], shown = JSON.stringify(a.blocks);
     same(ask.kind === 'place' ? placeAskProblems(ask, maps) : mapBlockProblems(a.blocks[0], maps), [], `${p.place} in ${p.form}: its ask and its map are sound`);
-    check(a.reason === entry.reason && a.strand === 'europe', `${p.place} in ${p.form}: the reason and strand are the place's and the group's`);
+    check(a.strand === 'europe', `${p.place} in ${p.form}: the strand is the group's`);
     if (p.form === 'tap') check(ask.kind === 'place' && ask.right === p.place && shown.includes(entry.name) && !a.blocks.some(x => x.kind === 'map'), `${p.place}: a name to tap, with no map above it`);
-    if (p.form === 'flag') check(ask.kind === 'place' && ask.right === p.place && shown.includes(entry.flag) && !shown.includes(entry.name), `${p.place}: a flag to tap that does not carry the name`);
+    if (p.form === 'flag') {
+      check(ask.kind === 'place' && ask.right === p.place && a.blocks.length === 1 && a.blocks[0].kind === 'flags' && a.blocks[0].places.join() === p.place && !a.blocks[0].names && !shown.includes(entry.name),
+        `${p.place}: a flag to tap that does not carry the name`);
+      same(flagsBlockProblems(a.blocks[0], { 'g-europe': EUROPE }), [], `${p.place}: the flag shown is a flag of the group`);
+      check(a.figure && a.figure.kind === 'flags' && a.figure.names === true && a.figure.places.join() === p.place, `${p.place}: the feedback shows the flag with its name beside it`);
+      same(a.reason, p.place === 'belgium' ? [entry.flagLine, entry.reason] : entry.reason, `${p.place}: the feedback opens with the line that tells its flag, when the place has one`);
+    } else check(a.reason === entry.reason && !a.figure, `${p.place} in ${p.form}: the reason is the place's and nothing is added to the feedback`);
     if (p.form === 'name') check(ask.kind === 'text' && a.blocks.length === 1 && a.blocks[0].kind === 'map' && a.blocks[0].lit[0] === p.place && !shown.includes(entry.name), `${p.place}: a lit place to name, with the name nowhere above it`);
     if (p.form === 'border') check(ask.mode === 'neighbor-water' && ask.of === p.place && shown.includes(entry.name), `${p.place}: a neighbor and its water of the place named`);
   }
@@ -165,6 +171,11 @@ async function suite(app) {
     same(placeDrawProblems(EUROPE, DRAW), [], 'a good draw has no problems');
     check(placeDrawProblems(EUROPE, { ...DRAW, split: { tap: 5, dance: 1 } })[0].includes('dance'), 'a form the group does not ask');
     check(placeDrawProblems(EUROPE, { ...DRAW, split: { tap: 0 } }).some(m => m.includes('no question')), 'a split that sums to zero');
+    // the flags block: places of the group that have a flag, and a line to tell each by when the block prints the lines
+    const flags = (places, more = {}) => flagsBlockProblems({ kind: 'flags', gen: 'g-europe', places, ...more }, { 'g-europe': EUROPE });
+    same([flags(['belgium', 'france']), flags(['belgium'], { names: true })], [[], []], 'good flags blocks have no problems');
+    check(flags(['narnia'])[0].includes('narnia') && flags(['andorra'])[0].includes('no flag') && flags(['belgium', 'belgium'])[0].includes('twice') && flags([])[0].includes('at least one'), 'flags of a place the group does not have, of one with no flag, twice, or none');
+    check(flagsBlockProblems({ kind: 'flags', gen: 'narnia', places: ['belgium'] }, { 'g-europe': EUROPE })[0].includes('narnia'), 'flags of a group that is not there');
     check(placeDrawProblems(EUROPE, { ...DRAW, only: { tap: ['narnia'] } })[0].includes('narnia'), 'a restricted place that is not in the group');
     check(placeDrawProblems(EUROPE, { ...DRAW, only: { flag: ['andorra'] } })[0].includes('cannot be asked'), 'a place kept to a form it cannot be asked in');
     check(placeDrawProblems(EUROPE, { ...DRAW, only: { tap: ['andorra'], name: ['andorra'] } }).some(m => m.includes('more than one form')), 'a place kept to two forms');
@@ -230,6 +241,8 @@ const FAULTS = [
   ['place-gen.js', 'a seed that does not name its pair', s => s.replace('pairs[seed % pairs.length]', 'pairs[(seed + 1) % pairs.length]')],
   ['place-gen.js', 'a review that skips the place missed last time', s => s.replace('const key = id => memory[id] ? [memory[id].ok ? 1 : 0, memory[id].run] : [1, \'\'];', 'const key = id => memory[id] ? [1, memory[id].run] : [1, \'\'];')],
   ['place-gen.js', 'a review that asks the form the place was last asked in', s => s.replace('from = other.length ? other : forms', 'from = forms')],
+  ['place-gen.js', 'a flag asked with the name beside it', s => s.replace("{ ...tap([flags(false)], where), figure: flags(true),", "{ ...tap([flags(true)], where), figure: flags(true),")],
+  ['place-gen.js', 'a flag item whose feedback leaves out the line that tells the flag', s => s.replace("reason: entry.flagLine ? [entry.flagLine, entry.reason] : entry.reason }", "reason: entry.reason }")],
   ['place-gen.js', 'a flag asked of a place with none', s => s.replace("f === 'flag' ? !!entry.flag :", "f === 'flag' ? true :")],
   ['place-draw.js', 'a memory that reads the first try, not the last', s => s.replace('last = tries[tries.length - 1]', 'last = tries[0]')],
   ['place-gen.js', 'a lesson that forgets what the checks keep to one form', s => s.replace('mergeOnly(only, l.check.items.draw.only || {})', 'only')]

@@ -253,6 +253,7 @@ const SAY = {
   // a map and the place ask (3.7, 3.9)
   mapAlt: name => `A map of ${name}, with no names on it.`,
   mapAltNamed: name => `A map of ${name}, with the names shown.`,
+  flagAlt: 'A flag',
   zoomIn: 'Zoom in',
   zoomOut: 'Zoom out',
   zoomReset: 'Show the whole map',

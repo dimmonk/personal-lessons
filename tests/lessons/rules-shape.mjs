@@ -2,7 +2,7 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, MAP_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, PLACE_GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, MAP_BLOCK, FLAGS_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, PLACE_GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -13,7 +13,7 @@ export const NOT_BUILT = {
 };
 
 /* ---------- the pieces ---------- */
-function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds = [], headed = []) {
+function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds = [], headed = [], gens = {}) {
   if (!block || typeof block !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(block.kind)) return [`${where} has a block of kind "${block.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (block.kind === 'pitch') return [`${where} is a pitch block, which only a sung question the app makes from a { sing } task may carry`];
@@ -44,11 +44,15 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
     const shape = show(checkShape(block, MAP_BLOCK, where));
     return shape.length ? shape : engine.mapBlockProblems(block, engine.maps).map(p => `${where}: ${p}`);
   }
+  if (block.kind === 'flags') {
+    const shape = show(checkShape(block, FLAGS_BLOCK, where));
+    return shape.length ? shape : engine.flagsBlockProblems(block, gens).map(p => `${where}: ${p}`);
+  }
   if (block.kind === 'chart') {
     const shape = show(checkShape(block, CHART, where));
     return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
   }
-  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine, ruleIds, headed), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine, ruleIds, headed)];
+  return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine, ruleIds, headed, gens), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine, ruleIds, headed, gens)];
 }
 
 // A message: a thread or a chat is the only form with lines of your own (`me`), an email has a subject, only the forms that carry a link or a button
@@ -231,7 +235,7 @@ function itemProblems(item, where, ctx, isGen) {
     if (!facet) problems.push(`${where}: facet "${f}" is not one of the subject's facets`);
     else if (!facet.values.some(x => x.id === v)) problems.push(`${where}: "${v}" is not a value of the facet ${f}`);
   });
-  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds)));
+  item.blocks.forEach((b, i) => problems.push(...blockProblems(b, `${where}.blocks[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds, ctx.gens)));
   problems.push(...labelProblems(item, where, subject, engine));
   const taps = item.asks.filter(a => a.kind === 'tap');
   if (taps.length > 1) problems.push(`${where}: a question has one tap, not ${taps.length}`);
@@ -248,8 +252,8 @@ function itemProblems(item, where, ctx, isGen) {
   problems.push(...duplicatesOf(segIds).map(id => `${where}: segment "${id}" appears twice`));
   problems.push(...duplicatesOf([...(item.steps || []).map(s => s.id)]).map(id => `${where}: step "${id}" appears twice`));
   if ('fact' in item) problems.push(...factProblems(item, where, subject));
-  if ('figure' in item && (!item.figure || !['figure', 'map'].includes(item.figure.kind))) problems.push(`${where}: the picture added to the feedback must be a figure or a map block`);
-  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds));
+  if ('figure' in item && (!item.figure || !['figure', 'map', 'flags'].includes(item.figure.kind))) problems.push(`${where}: the picture added to the feedback must be a figure, a map or a flags block`);
+  else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds, ctx.gens));
   return problems;
 }
 
@@ -320,7 +324,7 @@ function stepProblems(step, where, ctx) {
   const problems = show(checkShape(step, STEPS[kind], where));
   if (problems.length) return problems;
   const { subject, engine } = ctx;
-  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds)));
+  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds, ctx.gens)));
   if (kind === 'worked' && !subject.items[step.worked]) problems.push(`${where}: "${step.worked}" is not an item of the subject`);
   if (kind === 'own') problems.push(...ownStepProblems(step, where, ctx));
   if (kind === 'set') {
@@ -469,7 +473,7 @@ export const V70 = subjectRule('V70', (s, check) => {
   const problems = subjectProblems(s);
   if (problems.length) { checkEach(check, 'subject', problems); return; }
   const ctx = { subject: s.subject, engine: s.engine, listIds: s.listIds, refIds: (s.meta.refs || []).map(r => r.id), ruleIds: Object.keys(s.meta.rules || {}),
-    headedIds: Object.entries(s.meta.rules || {}).filter(([, r]) => r.heading).map(([id]) => id) };
+    headedIds: Object.entries(s.meta.rules || {}).filter(([, r]) => r.heading).map(([id]) => id), gens: s.gens };
   const items = Object.values(s.items), gens = Object.values(s.gens), lessons = s.lessonList;
   // a place group is sound when its own shape and its places are, and only then are the questions it makes and the lessons that name it read
   ctx.soundGroups = new Set(s.placeGens.filter(g => !groupProblems(g, ctx).length).map(g => g.id));
