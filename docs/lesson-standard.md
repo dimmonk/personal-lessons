@@ -877,8 +877,8 @@ X9 are not in force (X6 and X7 retired on 2026-10-12, section 11); the draft lin
 | retest (days) | | 28 | 28 | 7 (second mock) | | 21 | 14 | yearly action |
 | baseline lesson | | ● L0 | | | | | | |
 
-The `map` block, the `place` ask and the place group (3.5, 3.7, 3.9, 3.11) are built for Geography and run today only on the test subject
-Atlas (X46, X47); no shipped subject has them until Geography's pilot (lesson 16, western Europe) is written.
+The `map` block, the `place` ask and the place group (3.5, 3.7, 3.9, 3.11) are built for Geography and run in its pilot (lesson 16, western
+Europe), and on the test subject Atlas (X46, X47).
 
 ### 10.2 What a static, offline phone app cannot do, and the nearest it can
 
@@ -918,7 +918,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Civics**: lesson 1, the three branches, 17 questions answered from memory in four groups, then a recall check of
   all 17, 16 to pass. Not built: the other 111 questions, the news stories, the answers lesson (4), the mock interview as a lesson (14)
   and its retest, and the news story per due news strand in the review.
-- **Geography** has no lesson yet (its design record is `docs/subjects/geography/design.md`). Built for it on 2026-10-12: the map data
+- **Geography**: lesson 16, "Europe, west" (the pilot; draft): five questions shown done, one look at the labelled map, recall in four forms of a
+  place group of the ten countries from Portugal to Italy and the five microstates (`g-europe-west`, the microstates asked only as a name to tap), and a
+  check drawn from the group (5 tapped, 3 named, 2 flags, 2 neighbors and water; 10 of 12). Not built: the other 32 parts. Its design record is
+  `docs/subjects/geography/design.md`. Built for it on 2026-10-12: the map data
   for `world`, `us` and `europe-west` (3.11), the `map` block, the `place` ask and its neighbor-and-water form (3.7, 3.9), their rules
   (V70, V74, V83) and X46; flags are emoji text, the one line per country is `reason`, naming a lit place is a `text` ask under a lit
   map, the distance band a `choose`. Built for it on 2026-10-13: the place group (3.5: the four forms made from the map data, with
