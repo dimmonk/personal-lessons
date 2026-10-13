@@ -12,6 +12,8 @@ const SAYWORDS = { redraw: 'The same chart, drawn from zero' };
 let SEEN = new Set();
 // the regions of the map data, for the words about a map (set when a lesson is rendered)
 let MAPS = {};
+// the subject's generators, for the words about the flags of a group of places (set when a lesson is rendered)
+let GENS = {};
 
 /* ---------- blocks ---------- */
 const cellText = cell => String(cell);
@@ -45,7 +47,15 @@ function chartWords(block) {
 function mapWords(block) {
   const map = MAPS[block.region], name = id => map.places.find(p => p.id === id).name;
   const names = block.labels === true ? 'with the names of its places written on it (the one look at a labelled map)' : Array.isArray(block.labels) ? `with the names of ${block.labels.map(name).join(', ')} written on it` : 'with no names on it';
-  return `A map of ${map.name}, north up, ${names}${(block.lit || []).length ? `. Lit: ${block.lit.map(name).join(', ')}` : ''}. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.`;
+  const view = block.view ? `, opening on one part of it (zoom ${block.view[2]}, round the point ${block.view[0]} across and ${block.view[1]} down, of ${map.size[0]} by ${map.size[1]}), where the button for the whole map goes back to that part` : '';
+  const pixels = block.labels ? ' Every name is 12 pixels tall on the screen at every zoom; a tiny country\'s name stands off its dot on a line to it.' : '';
+  return `A map of ${map.name}, north up, ${names}${view}${(block.lit || []).length ? `. Lit: ${block.lit.map(name).join(', ')}` : ''}. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.${pixels}`;
+}
+// the flags of places of a group, each about 64 pixels wide on the screen, with the name beside each or none
+function flagsWords(block) {
+  const list = GENS[block.gen].places.list, said = block.places.map(id => list.find(p => p.id === id));
+  return block.names ? `${said.length > 1 ? 'The flags, each' : 'The flag,'} about 64 pixels wide with its name beside it: ${said.map(p => `${p.flag} ${p.name}`).join('; ')}.`
+    : `A flag, about 64 pixels wide, with no name beside it: ${said.map(p => p.flag).join(' ')}`;
 }
 const FORM_NAMES = { fees: 'fee sheet', paystub: 'pay stub', matchrule: 'match rule', beneficiary: 'beneficiary page', foreign: 'foreign account summary', table: 'plain table' };
 const formName = form => { const name = FORM_NAMES[form] || form; return `${/^[aeiou]/i.test(name) ? 'An' : 'A'} ${name}`; };
@@ -75,6 +85,7 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
   if (block.kind === 'article') return articleLines(block, deciding);
   if (block.kind === 'chart') return [chartWords(block)];
   if (block.kind === 'map') return [mapWords(block)];
+  if (block.kind === 'flags') return [flagsWords(block)];
   if (block.kind === 'pair') {
     return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding, refs, extra).join(' ')} | ${blockLines(block.b, deciding, refs, extra).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
   }
@@ -310,6 +321,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
   SEEN = new Set();
   const e = loaded.engine, data = { ...loaded, subjects: { ...loaded.subjects, __current: loaded.subjects[subjectId] } };
   MAPS = loaded.maps;
+  GENS = loaded.subjects[subjectId].gens;
   const subject = loaded.subjects[subjectId], lesson = subject.lessons[lessonId];
   if (!lesson) throw new Error(`${subjectId} has no lesson ${lessonId}`);
   const part = (subject.meta.parts.find(p => p.id === lesson.part) || {}).title;
@@ -338,7 +350,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
     else if (step.worked) {
       const item = subject.items[step.worked];
       out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || [], { rules: subject.meta.rules }),
-        ...item.asks.filter(a => a.kind === 'place').map(a => `\nThe map of ${MAPS[a.map].name} with ${e.placeRightText(a)} lit${a.mode === 'neighbor-water' ? '' : ' and the tap shown on it'}.`));
+        ...item.asks.filter(a => a.kind === 'place').map(a => `\nAbove the map: **${paras(a.prompt).join(' ')}**\nThe map of ${MAPS[a.map].name} with ${e.placeRightText(a)} lit${a.mode === 'neighbor-water' ? '' : ' and the tap shown on it'}.`));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
       const right = a => a.kind === 'place' ? e.placeRightText(a) : a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
       out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
@@ -362,7 +374,19 @@ export function renderLesson(loaded, subjectId, lessonId) {
         return;
       }
       out.push(`## ${at}: Questions`, '', `${count} question${count === 1 ? '' : 's'}, ${set.order}${help}${setWords}${set.mix ? `, with about ${Math.round(set.mix.share * 100)}% from earlier lessons mixed in, unlabeled` : ''}. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.`, '');
-      refs.forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(typeof ref === 'string' ? ref : { ...ref }), set.support, `Question ${++n}`)); });
+      refs.forEach(ref => {
+        const gen = typeof ref === 'string' ? null : subject.gens[e.refId(ref)], w = ref.with || {};
+        // a reference to a group of places that does not name one place asks `n` of the places the group can ask in that form: the lesson's own groups never
+        // ask a place kept to another form by a check, so every one of those is listed, and which ones the learner meets is said, not guessed
+        if (gen && e.isPlaceGen(gen) && w.form && !w.place) {
+          const only = e.placeOnlyOf(subject, gen.id), pool = gen.places.list.filter(p => e.placeAllowedForms(gen, p.id, only).includes(w.form));
+          out.push(`${ref.n} different places of these ${pool.length}: ${pool.map(p => p.name).join(', ')}. ${ref.n >= pool.length ? 'Every one of them is asked, in a random order.' : `${ref.n} of them are asked, drawn at random, the ones missed last time or met longest ago first.`} Each is asked as follows.`, '');
+          pool.forEach(p => out.push(...questionLines(e, data, { key: e.refId(ref), item: e.itemFromGen(gen, e.placeSeedOf(gen, p.id, w.form), ref.with), seed: e.placeSeedOf(gen, p.id, w.form) }, set.support, `Question: ${p.name}`)));
+          n += e.refCount(ref);
+          return;
+        }
+        for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(typeof ref === 'string' ? ref : { ...ref }), set.support, `Question ${++n}`));
+      });
       out.push('Then a screen: you can stop here, your place is kept.', '');
     }
   });
