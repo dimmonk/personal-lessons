@@ -23,8 +23,9 @@ const PLACE_NONE = 'none';                 // the answer of the "Landlocked" but
 const PLACE_ZOOM_MAX = 8;
 const PLACE_DOT_TAP = 0.02;                // a dot is found within this share of the map's width of its point, at zoom 1 (and 1/k of it at zoom k): about a
                                            // fingertip on a phone, so a microstate wants a zoom in to be found
-const PLACE_SMALL_TAP = 0.03;              // a ground place no bigger than a fingertip (its box at most twice this wide and tall) is found within this share of the map's
-                                           // width of its outline, at zoom 1 (and 1/k of it at zoom k): Luxembourg, about 7 pixels across on a phone, can be hit with a finger
+const PLACE_SMALL_TAP = 0.03;              // a fingertip: a ground place no bigger than one (its box at most twice this wide and tall) is found within this share of the map's
+                                           // width of its outline, at zoom 1 (and 1/k of it at zoom k): Luxembourg, about 7 pixels across on a phone, can be hit with a finger;
+                                           // and a tap at sea within it of a shore is on the land of that shore (placeShoreAt)
 const PLACE_LINE_BAND = 0.014;             // a river is found within this share of the map's width of its line, likewise
 const PLACE_LINE_BANDS = { coast: 0.04, canal: PLACE_DOT_TAP };   // a coast, which is wide, and a canal, which is short, are found within more (3.7)
 const PLACE_UNION_KINDS = ['ocean', 'sea', 'strait', 'lake', 'range', 'desert'];   // outlines with no holes
@@ -127,10 +128,28 @@ function placeSmallAt(map, x, y, k = 1){
   }
   return best ? best.id : null;
 }
-const placeContains = (map, place, x, y, k = 1) => placeNearDot(map, place, x, y, k) || placeInside(map, place, x, y, k) || placeSmallAt(map, x, y, k) === place.id;
+// The ground place of a kind a tap at sea just off its shore is meant for: the nearest of that kind whose outline is within a fingertip (PLACE_SMALL_TAP of
+// the map's width, divided by the zoom) of a tap that is on no land; null when the tap is on land or near no such shore. A shore at a phone's size is
+// thinner than a finger, so a tap on Portugal's coast that lands a few pixels out to sea is Portugal, not the Atlantic.
+function placeShoreAt(map, x, y, k, kind){
+  const geom = placeGeom(map), reach = map.size[0] * PLACE_SMALL_TAP / k;
+  if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;
+  let best = null, bestAt = Infinity;
+  for(const place of geom.places){
+    const box = place.box;
+    if(place.kind !== kind || !box || place.line || place.dot) continue;
+    if(x < box[0] - reach || x > box[2] + reach || y < box[1] - reach || y > box[3] + reach) continue;
+    const away = Math.min(...place.rings.map(i => placeRingDistance(geom.rings[i], x, y)));
+    if(away <= reach && away < bestAt){ best = place; bestAt = away; }
+  }
+  return best ? best.id : null;
+}
+const placeContains = (map, place, x, y, k = 1) => placeNearDot(map, place, x, y, k) || placeInside(map, place, x, y, k) || placeSmallAt(map, x, y, k) === place.id
+  || placeShoreAt(map, x, y, k, place.kind) === place.id;
 // The place a tap is on, as the app names it after a miss: a microstate's circle if the tap is on one (it is drawn over the land it lies in, so a tap on
-// it is the microstate, not the country under it; so is the dot of the kind asked for), else the smallest in the kind asked for if there is one, else the
-// first by what a learner would call it (a dot, a lake, a river, the land, a continent, a range, a sea, an ocean); null when it is on none.
+// it is the microstate, not the country under it; so is the dot of the kind asked for), else a place no bigger than a fingertip beside it (placeSmallAt), else
+// the land of the kind asked for whose shore a tap at sea is within a fingertip of (placeShoreAt), else the smallest in the kind asked for if there is one,
+// else the first by what a learner would call it (a dot, a lake, a river, the land, a continent, a range, a sea, an ocean); null when it is on none.
 function placeAt(map, x, y, k = 1, kind = null){
   const geom = placeGeom(map), inside = place => placeInside(map, place, x, y, k);
   const smallest = list => list.filter(inside).sort((a, b) => a.area - b.area)[0] || null;
@@ -139,6 +158,8 @@ function placeAt(map, x, y, k = 1, kind = null){
   if(circle) return circle.id;
   const small = placeSmallAt(map, x, y, k);
   if(small) return small;
+  const shore = kind ? placeShoreAt(map, x, y, k, kind) : null;
+  if(shore) return shore;
   const asked = kind ? smallest(geom.places.filter(p => p.kind === kind)) : null;
   if(asked) return asked.id;
   for(const tier of [...map.land, ...PLACE_FIND_ORDER].filter((v, i, all) => all.indexOf(v) === i)){

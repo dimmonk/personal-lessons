@@ -340,6 +340,10 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   far enough stops treating it so) is held within 3% of the map's width of its outline, divided by the zoom, whatever larger place the tap is on: the
   nearest such place when two are near, and it is the place a tap beside it is named for. It takes no tap from the place the tap is inside when that is
   the one asked (both are right), and a place bigger than a fingertip gets no such radius (`PLACE_SMALL_TAP`, `placeSmallAt` in place.js).
+  **A tap at sea just off a shore**, on no land, is on the land of that shore when land is asked: the nearest place of the kind asked whose outline is
+  within the same fingertip (3% of the map's width, divided by the zoom), because a coast at a phone's size is thinner than a finger (Portugal's west
+  coast). It is named that place after a miss, and it is right when that place is. When water is asked (the second tap of a neighbor and its water), the
+  same tap is the sea (`placeShoreAt` in place.js).
 - *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
 - *A neighbor and its water*: two taps in order, kept in `Q.cur.many[askId]` until the second. The first must be inside a
   neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water.

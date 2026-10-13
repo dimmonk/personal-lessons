@@ -15,7 +15,7 @@ async function suite(app) {
   let checks = 0;
   const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
   const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
-  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, placeHtml, placeMissHtml, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
+  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, placeHtml, placeMissHtml, placeGeom, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
   const ask = (right, extra = {}) => ({ id: 'a', kind: 'place', prompt: 'x', map: 'europe-west', right, ...extra });
   const border = (of, map = 'europe-west') => ({ id: 'b', kind: 'place', mode: 'neighbor-water', prompt: 'x', map, of });
   const score = (a, tap) => scorePlace({}, a, tap);
@@ -96,6 +96,14 @@ async function suite(app) {
     'the place a tap beside Luxembourg is on is named Luxembourg, and one further off is the country it is on');
   same([score(ask('germany'), [lx1 + reach * 0.8, lmid, 1]), score(ask('belgium'), [bx0 - reach * 0.8, by1 - 5, 1]), score(ask('belgium'), [(bx0 + mapPlace(eu, 'belgium').box[2]) / 2, (bel.box[1] + by1) / 2 - 20, 1])], ['ok', 'no', 'ok'],
     'the radius of a small place takes no tap from the place it is on when that is the one asked, and gives none to a place bigger than a fingertip');
+  // a tap at sea within a fingertip of a shore is on the land of that shore, when land is asked: a coast at a phone's size is thinner than a finger (Portugal's
+  // west coast, from its westernmost point); further out, on a zoomed map, or when the water is what is asked, it is the sea
+  const pt = mapPlace(eu, 'portugal'), rings = pt.rings.map(i => placeGeom(eu).rings[i]), ring = rings.reduce((a, b) => b.pts.length > a.pts.length ? b : a).pts, wi = [...Array(ring.length / 2).keys()].reduce((b, i) => ring[2 * i] < ring[2 * b] ? i : b, 0);
+  const [wx, wy] = [ring[2 * wi], ring[2 * wi + 1]], off = f => [wx - reach * f, wy];
+  same([placeAt(eu, ...off(0.6), 1), placeAt(eu, ...off(0.6), 1, 'country'), placeAt(eu, ...off(1.4), 1, 'country'), placeAt(eu, ...off(0.6), 2, 'country'), placeAt(eu, ...off(0.6), 1, 'ocean')],
+    ['atlantic', 'portugal', 'atlantic', 'atlantic', 'atlantic'], 'a tap at sea just off Portugal is the Atlantic, and Portugal when a country is asked; further out, or zoomed in twice, it is the Atlantic');
+  same([score(ask('portugal'), [...off(0.6), 1]), score(ask('portugal'), [...off(1.4), 1]), score(ask('spain'), [...off(0.6), 1])], ['ok', 'no', 'no'],
+    'asked for Portugal, a tap just off its coast scores right and one further out does not; it is never Spain, a country further away');
   // a place with a hole (the isles: Cedar inside Alder)
   const isles = mapOf('isles');
   same(score({ id: 'a', kind: 'place', prompt: 'x', map: 'isles', right: 'cedar' }, [85, 70, 1]), 'ok', 'a tap in the hole of a country is in the country inside it');
@@ -240,6 +248,8 @@ const FAULTS = [
   ['a tap on a microstate\'s circle named for the country under it', s => s.replace('const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));', 'const circle = null;')],
   ['a small place found only inside its outline', s => s.replace('const PLACE_SMALL_TAP = 0.03;', 'const PLACE_SMALL_TAP = 0;')],
   ['a tap beside a small place that does not shrink as the map is zoomed in', s => s.replace('map.size[0] * PLACE_SMALL_TAP / k;', 'map.size[0] * PLACE_SMALL_TAP;')],
+  ['a tap at sea off a shore never on its land', s => s.replace('if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;', 'return null;')],
+  ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains')],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];
