@@ -11,7 +11,9 @@ const NOT_TEXT = new Set(['id', 'kind', 'strand', 'strands', 'facets', 'part', '
   'from', 'answer', 'ok', 'slip', 'slips', 'goto', 'end', 'deciding', 'has', 'redraw', 'figure', 'fact', 'worked', 'set', 'items', 'gen', 'with', 'n', 'gaps', 'every',
   'dateField', 'tol', 'standard', 'rules', 'side', 'rev', 'readingShare', 'timed', 'seconds', 'complete', 'params', 'make', 'value', 'right', 'only', 'when', 'ask', 'where', 'retest',
   'tone', 'many', 'over', 'plan', 'draw', 'into', 'type', 'spoken', 'own', 'model', 'review', 'asOf', 'is', 'ref', 'list', 'trigger', 'shuffle', 'optional', 'in', 'pick', 'para', 'fine', 'labels',
-  'start', 'scored', 'danger']);
+  'start', 'scored', 'danger', 'lit', 'region', 'mode']);
+// the ids of a place ask: the region it is on and the place it asks about (a map block names its region in `region`, which is in the list above)
+const PLACE_IDS = ['map', 'of'];
 // block kinds whose words are quoted material (a message, an article, a statement): they may say anything, in words of their own
 // (what the other side of an exchange says is quoted too: the lines of a turn, not the replies the learner can pick or the app's words about it;
 // so are the answers a published list accepts, which are the list's own words)
@@ -24,7 +26,7 @@ function learnerStrings(value, where, quoted = false, out = []) {
   else if (value && typeof value === 'object') {
     const isQuote = quoted || QUOTING.includes(value.kind);
     // `model` is an item id in a step that shows a sample of the learner's own data, and the line to compare with in a text ask
-    Object.entries(value).filter(([k]) => !NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote || (k === 'lines' && 'options' in value) || k === 'accept', out));
+    Object.entries(value).filter(([k]) => (!NOT_TEXT.has(k) || (k === 'model' && value.kind === 'text')) && !(value.kind === 'place' && PLACE_IDS.includes(k))).forEach(([k, x]) => learnerStrings(x, `${where}.${k}`, isQuote || (k === 'lines' && 'options' in value) || k === 'accept', out));
   }
   return out;
 }

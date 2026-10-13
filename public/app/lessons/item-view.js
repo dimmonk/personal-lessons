@@ -1,7 +1,7 @@
 /* ===================== LESSONS: WHAT AN ITEM LOOKS LIKE ===================== */
 // Lesson standard 3.9 (blocks) and 4 (feedback). Pure HTML builders: the blocks an item shows, the asks, and the feedback
 // that opens when the last ask is answered. Nothing here stores anything or reads the page.
-// ctx for a block: { deciding: [segmentId] } marks those segments with the one highlight (mark.cue); { tap } makes the lines of an open tap ask
+// ctx for a block: { scope } names the screen a map is on (its zoom is kept by it); { deciding: [segmentId] } marks those segments with the one highlight (mark.cue); { tap } makes the lines of an open tap ask
 // buttons, and after the answer shows which were tapped: tap = { ids: [segmentId], picked: [segmentId], locked, marks, right: [segmentId] };
 // { panel: false } hides a panel block (a group without the help `panel`, a check, the review); on a teaching screen it is not set and a panel shows.
 
@@ -35,7 +35,7 @@ function pairHtml(block, ctx){
 }
 const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block),
   ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx), message: (block, ctx) => messageHtml(block, ctx),
-  spoken: (block, ctx) => spokenHtml(block, ctx) };
+  spoken: (block, ctx) => spokenHtml(block, ctx), map: (block, ctx) => mapBlockHtml(block, ctx) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
@@ -72,7 +72,7 @@ function tapHtml(data, ask, st){
 }
 const ASK_HTML = { choose: chooseHtml, number: (data, ask, st, ctx) => numberHtml(data, ask, st, ctx), form: (data, ask, st, ctx) => formHtml(data, ask, st, ctx), sing: (data, ask, st) => singAskHtml(data, ask, st),
   tap: (data, ask, st) => tapHtml(data, ask, st), text: (data, ask, st) => isRecallAsk(ask) ? recallAskHtml(data, ask, st) : writeHtml(data, ask, st),
-  exchange: (data, ask, st, ctx) => exchangeHtml(data, ask, st, ctx), order: (data, ask, st, ctx) => orderHtml(data, ask, st, ctx) };
+  exchange: (data, ask, st, ctx) => exchangeHtml(data, ask, st, ctx), order: (data, ask, st, ctx) => orderHtml(data, ask, st, ctx), place: (data, ask, st, ctx) => placeHtml(data, ask, st, ctx) };
 
 /* ---------- the item ---------- */
 // The item as it stands: its blocks (deciding words marked when `deciding` is on), then the asks open now, then, once
@@ -90,7 +90,7 @@ function itemHtml(data, inst, state){
   const hint = (support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '')
     + (support && support.panel && panelBlocksOf(item).length ? `<p class="hintline">${esc(panelHint(data, item))}</p>` : '');
   const asks = open.map(a => ASK_HTML[a.kind](data, a, { answer: state.a[a.id], many: state.many[a.id], marks: state.marks, locked: !!state.done, sing: state.sing,
-    typed: state.typed, looked: state.looked, calc: state.calc }, { item, support, answers: state.a })).join('');
+    typed: state.typed, looked: state.looked, calc: state.calc }, { item, support, answers: state.a, scope: ctx.scope })).join('');
   return `<div class="item" data-item="${esc(inst.key)}" ${inst.seed === undefined ? '' : `data-seed="${inst.seed}"`}>
     ${blocksHtml(item.blocks, ctx)}${hint}${steps}<div class="asks">${asks}</div>${state.feedback || ''}</div>`;
 }
@@ -146,6 +146,7 @@ function markHtml(data, ask, answer, result, item, answers){
   if(ask.kind === 'number') return numberMarkHtml(ask, answer, result, item, answers);
   if(ask.kind === 'form') return formMarksHtml(data, ask, answer, item);
   if(ask.kind === 'text') return isRecallAsk(ask) ? recallMarkHtml(ask, answer, result) : writeMarkHtml(ask, answer);
+  if(ask.kind === 'place') return placeMarkHtml(ask, answer, result);
   if(ask.kind === 'tap') return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? tapRightText(ask, item) : `${SAY.theAnswer}: ${tapRightText(ask, item)}`)}</span></div>`;
   const right = chooseOptions(data, ask).filter(o => o.ok).map(o => o.text);
   return `<div class="mark ${ok ? '' : 'no'}"><span class="verd">${esc(ok ? SAY.markRight : SAY.markNo)}</span><span class="ans">${esc(ok ? right.join('; ') : `${SAY.theAnswer}: ${right.join('; ')}`)}</span></div>`;
@@ -159,6 +160,7 @@ function missLine(data, ask, answer, result, item){
   if(ask.kind === 'number') return numberMissHtml(data, ask, answer, result);
   if(ask.kind === 'form') return formMissHtml(data, ask, answer, item);
   if(ask.kind === 'tap') return tapMissHtml(data, ask, answer, item);
+  if(ask.kind === 'place') return placeMissHtml(data, ask, answer, result);
   if(ask.kind === 'text') return '';
   const options = chooseOptions(data, ask), chosen = asList(answer).map(id => options.find(o => o.id === id)).filter(o => o && !o.ok);
   const lines = chosen.map(o => `<p><b>${esc(SAY.youChose)}: ${esc(o.text)}.</b> ${esc(o.then ? paras(o.then).join(' ') : o.slip ? SAY.slipLine(slipText(data, o.slip)) : '')}</p>`);

@@ -24,7 +24,7 @@ export function subjectView(data, subjectId) {
   const once = (name, make) => memo[name] || (memo[name] = make());
   const lessonNumber = l => Number((l.id.match(/(\d+)$/) || [])[1]);
   return {
-    data, engine: e, id: subjectId, label: subjectId, subject, meta,
+    data, engine: { ...e, maps: data.maps || {} }, id: subjectId, label: subjectId, subject, meta,
     items: subject.items, gens: subject.gens, lessonList,
     def: id => e.definitionOf(subject, id),
     get lessons() { return once('lessons', () => lessonList.map(l => lessonView(data, subjectId, l))); },

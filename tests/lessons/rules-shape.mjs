@@ -2,7 +2,7 @@
 // record), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, PROSE, MAP_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -40,6 +40,10 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
   }
   if (block.kind === 'message') return messageProblems(block, where, engine);
   if (block.kind === 'spoken') return show(checkShape(block, SPOKEN, where));
+  if (block.kind === 'map') {
+    const shape = show(checkShape(block, MAP_BLOCK, where));
+    return shape.length ? shape : engine.mapBlockProblems(block, engine.maps).map(p => `${where}: ${p}`);
+  }
   if (block.kind === 'chart') {
     const shape = show(checkShape(block, CHART, where));
     return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
@@ -148,6 +152,13 @@ function textProblems(ask, where, meta) {
 // the subject's private form into `answers`, or null
 const answersFormOf = meta => meta ? Object.values(meta.own || {}).find(f => f.into === 'answers') || null : null;
 
+// A place ask: the shape, then the region and the places it names, which are the map data's (place.js says what each kind of place ask needs of them)
+function placeShapeProblems(ask, where, engine) {
+  const problems = show(checkShape(ask, PLACE, where));
+  if (problems.length) return problems;
+  if (ask.mode === undefined && !('right' in ask)) return [`${where}: a place has a right answer (right)`];
+  return engine.placeAskProblems(ask, engine.maps).map(p => `${where}: ${p}`);
+}
 // An exchange: its turns are a path that always ends. The start and every goto are turns, every end is an end, a turn offers at least two replies
 // each of which goes on or ends, every turn can be reached, the turns do not loop, and there is a right end and a wrong one. (That each end is
 // explained, and that the other side really pushes, is V74's.)
@@ -192,6 +203,7 @@ function askProblems(ask, where, kinds, listIds, engine, meta = null) {
   if (ask.kind === 'text') return textProblems(ask, where, meta);
   if (ask.kind === 'exchange') return exchangeProblems(ask, where, engine);
   if (ask.kind === 'order') return orderShapeProblems(ask, where, engine);
+  if (ask.kind === 'place') return placeShapeProblems(ask, where, engine);
   if (ask.kind === 'number') return numberProblems(ask, where);
   if (ask.kind === 'form') return formProblems(ask, where, kinds, listIds);
   const problems = show(checkShape(ask, CHOOSE, where));
@@ -236,7 +248,7 @@ function itemProblems(item, where, ctx, isGen) {
   problems.push(...duplicatesOf(segIds).map(id => `${where}: segment "${id}" appears twice`));
   problems.push(...duplicatesOf([...(item.steps || []).map(s => s.id)]).map(id => `${where}: step "${id}" appears twice`));
   if ('fact' in item) problems.push(...factProblems(item, where, subject));
-  if ('figure' in item && (!item.figure || item.figure.kind !== 'figure')) problems.push(`${where}: the figure added to the feedback must be a figure block`);
+  if ('figure' in item && (!item.figure || !['figure', 'map'].includes(item.figure.kind))) problems.push(`${where}: the picture added to the feedback must be a figure or a map block`);
   else if ('figure' in item) problems.push(...blockProblems(item.figure, `${where}.figure`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds));
   return problems;
 }

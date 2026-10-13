@@ -10,6 +10,8 @@ const quote = lines => lines.map(l => `> ${l}`).join('\n');
 const SAYWORDS = { redraw: 'The same chart, drawn from zero' };
 // what has been described in full once in this lesson, so a lesson of many questions of one kind says it once
 let SEEN = new Set();
+// the regions of the map data, for the words about a map (set when a lesson is rendered)
+let MAPS = {};
 
 /* ---------- blocks ---------- */
 const cellText = cell => String(cell);
@@ -39,6 +41,12 @@ function chartWords(block) {
   return `A ${block.type === 'line' ? 'line chart' : 'bar chart'}, "${block.title}". The scale runs from ${y.from} to ${y.to}${y.unit ? `, in ${y.unit}` : ''}${cut ? ', and does not start at zero' : ', and starts at zero'}. `
     + `${block.series.map(s => `${s.name ? `${s.name}: ` : ''}${block.x.map((l, i) => `${l} ${s.values[i]}`).join(', ')}`).join('. ')}. ${block.labels ? 'The values are written on it. ' : ''}Source: ${block.source}.`;
 }
+// a map of the map data: north up, drawn with no names unless the block asks for them, with places lit; it can be pinched, dragged and zoomed with buttons
+function mapWords(block) {
+  const map = MAPS[block.region], name = id => map.places.find(p => p.id === id).name;
+  const names = block.labels === true ? 'with the names of its places written on it (the one look at a labelled map)' : Array.isArray(block.labels) ? `with the names of ${block.labels.map(name).join(', ')} written on it` : 'with no names on it';
+  return `A map of ${map.name}, north up, ${names}${(block.lit || []).length ? `. Lit: ${block.lit.map(name).join(', ')}` : ''}. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.`;
+}
 const FORM_NAMES = { fees: 'fee sheet', paystub: 'pay stub', matchrule: 'match rule', beneficiary: 'beneficiary page', foreign: 'foreign account summary', table: 'plain table' };
 const formName = form => { const name = FORM_NAMES[form] || form; return `${/^[aeiou]/i.test(name) ? 'An' : 'A'} ${name}`; };
 // extra: { rules, panel } what a panel prints and whether it is drawn (a question without the help shows none)
@@ -66,6 +74,7 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
   if (block.kind === 'figure') return FIGURE_WORDS[block.type](block.data);
   if (block.kind === 'article') return articleLines(block, deciding);
   if (block.kind === 'chart') return [chartWords(block)];
+  if (block.kind === 'map') return [mapWords(block)];
   if (block.kind === 'pair') {
     return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding, refs, extra).join(' ')} | ${blockLines(block.b, deciding, refs, extra).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
   }
@@ -174,7 +183,22 @@ function orderAskLines(e, ask, marks) {
   return [`**${paras(ask.prompt).join(' ')}**`, `- ${SAY.orderHint(ask.right.length, e.orderScored(ask))} The steps are offered mixed (never already in the right order): ${ask.steps.map(s => `"${s.text}"`).join('; ')}. Each tapped step is numbered; "${SAY.orderReset}" clears the taps; the answer is the order tapped once ${ask.right.length} are.`,
     ...(marks ? [`- Right: ${ask.right.map(text).join(', then ')}${e.orderScored(ask) === 'first' ? ' (only the first step counts)' : ''}. After a miss: "${SAY.orderYouPut}: …" and why the order matters: ${paras(ask.then).join(' ')}`] : [])];
 }
+// a place: a tap on a blank map (or, with its neighbor and water, two taps and a button "Landlocked"); the right place is lit after the answer and the tap marked
+function placeAskLines(e, data, ask, marks) {
+  const { SAY } = e, map = MAPS[ask.map], name = id => map.places.find(p => p.id === id).name, slips = data.subjects.__current.meta.lists.slip || [];
+  const out = [`**${paras(ask.prompt).join(' ')}**${ask.when ? ' (opens only after a certain answer)' : ''}`];
+  if (ask.mode === 'neighbor-water') {
+    const of = map.places.find(p => p.id === ask.of);
+    out.push(`- The map of ${map.name} with no names. "${SAY.placeNeighbor}" A tap on the map is a neighbor of ${of.name}; then "${SAY.placeWater}" and a button "${SAY.placeLandlocked}" in place of the water. Nothing is marked before the answer.`);
+    if (marks) out.push(`- Right: a tap on ${e.placeNeighborsOf(map, ask.of).map(name).join(', ')}, and then ${of.water.length ? `on ${of.water.map(name).join(', ')}` : 'the button "Landlocked" (it touches no water)'}. After the answer those places are lit, ${of.name} is outlined and the taps are marked. After a miss: "${SAY.youTapped}: …" and what is not so about it.`);
+    return out;
+  }
+  out.push(`- The map of ${map.name} with no names. "${SAY.placeOne}" The tap is the answer; it is right inside the shape of ${e.placeRightIds(ask).map(name).join(' or ')}${e.placeRightIds(ask).some(id => map.places.find(p => p.id === id).dot) ? ' (a dot of a small country is found within a short distance of it, shorter as the map is zoomed in)' : ''}. Nothing is marked before the answer.`);
+  if (marks) out.push(`- After the answer ${e.placeRightIds(ask).map(name).join(' and ')} is lit and the tap is marked. After a miss: "${SAY.youTapped}: <the place the tap was on>."${Object.entries(ask.slips || {}).map(([id, slip]) => ` Tapping ${name(id)} names the slip "${(slips.find(s => s.id === slip) || { text: slip }).text}".`).join('')}`);
+  return out;
+}
 function askLines(e, data, ask, marks, item) {
+  if (ask.kind === 'place') return placeAskLines(e, data, ask, marks);
   if (ask.kind === 'exchange') return exchangeAskLines(e, data, ask, marks);
   if (ask.kind === 'order') return orderAskLines(e, ask, marks);
   if (ask.kind === 'text') return textAskLines(e, ask, marks);
@@ -285,6 +309,7 @@ function ownLines(e, subject, lesson, step, at) {
 export function renderLesson(loaded, subjectId, lessonId) {
   SEEN = new Set();
   const e = loaded.engine, data = { ...loaded, subjects: { ...loaded.subjects, __current: loaded.subjects[subjectId] } };
+  MAPS = loaded.maps;
   const subject = loaded.subjects[subjectId], lesson = subject.lessons[lessonId];
   if (!lesson) throw new Error(`${subjectId} has no lesson ${lessonId}`);
   const part = (subject.meta.parts.find(p => p.id === lesson.part) || {}).title;
@@ -302,9 +327,10 @@ export function renderLesson(loaded, subjectId, lessonId) {
     else if (step.own) out.push(...ownLines(e, subject, lesson, step, at));
     else if (step.worked) {
       const item = subject.items[step.worked];
-      out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || [], { rules: subject.meta.rules }));
+      out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || [], { rules: subject.meta.rules }),
+        ...item.asks.filter(a => a.kind === 'place').map(a => `\nThe map of ${MAPS[a.map].name} with ${e.placeRightText(a)} lit${a.mode === 'neighbor-water' ? '' : ' and the tap shown on it'}.`));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
-      const right = a => a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      const right = a => a.kind === 'place' ? e.placeRightText(a) : a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
       out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
         ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
         ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');

@@ -44,7 +44,10 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   // answers from memory, the question read aloud, a claim, the learner's own answers and the interview date
   'recallTokens', 'recallVariants', 'recallMatch', 'scoreRecall', 'recallGiven', 'recallWithOwn', 'recallOwnEntries', 'recallDefReady', 'recallProblems', 'recallEntryText',
   'isRecallAsk', 'recallListHtml', 'recallMarkHtml', 'recallClaimHtml', 'recallQuestionText', 'factHtml', 'spokenHtml', 'speechPick', 'claimTry', 'triesClaimed', 'claimedResults', 'resultOk',
-  'interviewDay', 'roundDays', 'logOf', 'answersSectionHtml', 'answersFormHtml', 'answersFormOf', 'ANSWERS_PAGE'];
+  'interviewDay', 'roundDays', 'logOf', 'answersSectionHtml', 'answersFormHtml', 'answersFormOf', 'ANSWERS_PAGE',
+  // maps and the place ask
+  'PLACE_NONE', 'PLACE_DOT_TAP', 'PLACE_LINE_BAND', 'PLACE_ZOOM_MAX', 'PLACE_MODES', 'mapOf', 'mapPlace', 'mapHasPlace', 'placeGeom', 'placeContains', 'placeAt', 'scorePlace', 'placeRightText', 'placeRightIds',
+  'placeNeighborsOf', 'placeWaterOf', 'placeTapOk', 'placeAskProblems', 'mapBlockProblems', 'mapHtml', 'mapBlockHtml', 'placeHtml', 'placeMarkHtml', 'placeMissHtml', 'placeWorkedHtml', 'placeLitIds'];
 
 // Every script the page loads, in load order. The page must not carry inline scripts.
 export async function scriptList() {

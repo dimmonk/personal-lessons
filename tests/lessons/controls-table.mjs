@@ -41,6 +41,11 @@ const interviewItem = (id, ...rest) => ['subjects', 'interview', 'items', id, ..
 const interviewLesson = (id, ...rest) => ['subjects', 'interview', 'lessons', id, ...rest];
 const interviewMeta = (...rest) => ['subjects', 'interview', 'meta', ...rest];
 
+// the test subject of the map block and the place ask
+const atlasItem = (id, ...rest) => ['subjects', 'atlas', 'items', id, ...rest];
+const atlasLesson = (id, ...rest) => ['subjects', 'atlas', 'lessons', id, ...rest];
+const atlasMeta = (...rest) => ['subjects', 'atlas', 'meta', ...rest];
+
 // V69: the last commit's lock with one lesson's content different, and a design record patched as given (reviews and research too)
 const changed = (lock, key) => ({ ...lock, lessons: { ...lock.lessons, [key]: { ...lock.lessons[key], fp: 'sha256:' + '1'.repeat(64) } } });
 const asDesign = (input, lessonKey, patch, more = {}) => ({
@@ -356,7 +361,28 @@ export const CONTROLS = [
   { rule: 'V81', name: 'a private form into the answers with a field "Social Security number"',
     data: (d, h) => h.updateIn(d, interviewMeta('own', 'answers', 'fields'), fields => [...fields, { id: 'ssn', label: 'Social Security number', type: 'text', optional: true }]) },
   { rule: 'V84', name: 'questions from a published list and no source for it', data: (d, h) => h.removeIn(d, interviewMeta('refs')) },
-  { rule: 'V50', name: 'a checklist heading uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountMeta('rules', 'act', 'heading'), 'What counts as an item') }
+  { rule: 'V50', name: 'a checklist heading uses the engine\'s own word "item"', data: (d, h) => h.setIn(d, accountMeta('rules', 'act', 'heading'), 'What counts as an item') },
+  // the map block and the place ask
+  { rule: 'V70', name: 'a map block of a region the map data does not have', data: (d, h) => h.setIn(d, atlasLesson('l1', 'flow', 0, 'show', 0, 'region'), 'narnia') },
+  { rule: 'V70', name: 'a map block that lights a place the region does not have', data: (d, h) => h.setIn(d, atlasItem('n-cedar', 'blocks', 0, 'lit', 0), 'narnia') },
+  { rule: 'V70', name: 'a map block whose labels are neither true nor a list of places', data: (d, h) => h.setIn(d, atlasLesson('l1', 'flow', 0, 'show', 0, 'labels'), 'yes') },
+  { rule: 'V70', name: 'a map block that lights one place twice', data: (d, h) => h.setIn(d, atlasItem('n-cedar', 'blocks', 0, 'lit'), ['cedar', 'cedar']) },
+  { rule: 'V70', name: 'a place ask on a region the map data does not have', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'map'), 'narnia') },
+  { rule: 'V70', name: 'a place ask whose right answer is not a place of the map', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'right'), 'narnia') },
+  { rule: 'V70', name: 'a place ask with no right answer', data: (d, h) => h.removeIn(d, atlasItem('t-birch', 'asks', 0, 'right')) },
+  { rule: 'V70', name: 'a place ask that names its right answer twice', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'right'), ['birch', 'birch']) },
+  { rule: 'V70', name: 'a place ask whose slip is keyed by a place the map does not have', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'slips'), { narnia: 'next-door' }) },
+  { rule: 'V70', name: 'a place ask in a mode that is not built', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'mode'), 'distance') },
+  { rule: 'V70', name: 'a neighbor and its water of a place that is not ground', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'of'), 'sea') },
+  { rule: 'V70', name: 'a neighbor and its water of a place the map does not have', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'of'), 'narnia') },
+  { rule: 'V70', name: 'a neighbor and its water that has a right answer of its own', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'asks', 0, 'right'), 'birch') },
+  { rule: 'V70', name: 'a picture added to the feedback that is neither a figure nor a map', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'figure'), { kind: 'prose', text: 'Birch.' }) },
+  { rule: 'V74', name: 'a map with the right place lit above the question that asks for it', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'blocks'), [{ kind: 'map', region: 'isles', lit: ['birch'] }]) },
+  { rule: 'V74', name: 'a map with a neighbor of the place asked about lit above its neighbors and water', data: (d, h) => h.setIn(d, atlasItem('b-alder', 'blocks'), [{ kind: 'map', region: 'isles', lit: ['birch'] }]) },
+  { rule: 'V74', name: 'a place ask whose slip the subject does not list', data: (d, h) => h.setIn(d, atlasItem('t-birch', 'asks', 0, 'slips'), { alder: 'nowhere' }) },
+  { rule: 'V74', name: 'a lit place named from memory under a spoken block as well', data: (d, h) => h.updateIn(d, atlasItem('n-cedar', 'blocks'), blocks => [...blocks, { kind: 'spoken', text: 'What is the lit country called?' }]) },
+  { rule: 'V74', name: 'a lit place named from memory with no place lit', data: (d, h) => h.removeIn(d, atlasItem('n-cedar', 'blocks', 0, 'lit')) },
+  { rule: 'V83', name: 'a place ask in a timed group', data: (d, h) => h.setIn(h.setIn(d, atlasMeta('timed'), true), atlasLesson('l1', 'flow', 3, 'set', 'seconds'), 15) }
 ];
 
 // Rules with no seeded fault of their own, and why
@@ -364,4 +390,4 @@ export const NO_CONTROL = {};
 // The number of controls is pinned: a control taken away shows as a count below this, and raising the number is a change to this file,
 // which the commit-message hook holds to the owner's word.
 export const CONTROL_COUNT = CONTROLS.length;
-export const PINNED_CONTROL_COUNT = 249;
+export const PINNED_CONTROL_COUNT = 269;

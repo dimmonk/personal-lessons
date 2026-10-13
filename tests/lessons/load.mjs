@@ -14,7 +14,7 @@ import vm from 'node:vm';
 
 export const REGISTRY_FILE = 'app/registry.js';
 // the pure files of the engine the rules read from: nothing in them touches the page or storage
-export const ENGINE_FILES = ['app/helpers.js', 'app/lessons/view.js', 'app/lessons/gen.js', 'app/lessons/rules.js', 'app/lessons/number.js', 'app/lessons/form.js', 'app/lessons/own.js', 'app/lessons/sing-task.js', 'app/lessons/tap.js', 'app/lessons/exchange.js', 'app/lessons/order.js', 'app/lessons/timer.js', 'app/lessons/busy.js', 'app/lessons/chart.js', 'app/lessons/panel.js', 'app/lessons/recall.js', 'app/lessons/message-view.js', 'app/lessons/text-view.js', 'app/lessons/item-view.js',
+export const ENGINE_FILES = ['app/helpers.js', 'app/lessons/view.js', 'app/lessons/gen.js', 'app/lessons/rules.js', 'app/lessons/number.js', 'app/lessons/form.js', 'app/lessons/own.js', 'app/lessons/sing-task.js', 'app/lessons/tap.js', 'app/lessons/place.js', 'app/lessons/exchange.js', 'app/lessons/order.js', 'app/lessons/timer.js', 'app/lessons/busy.js', 'app/lessons/chart.js', 'app/lessons/panel.js', 'app/lessons/recall.js', 'app/lessons/message-view.js', 'app/lessons/text-view.js', 'app/lessons/item-view.js',
   'app/lessons/audio-notes.js'];
 export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseOptions', 'scoreChoose', 'askedAsks', 'shownStepIds', 'ruleCounts', 'ruleMet', 'ruleText',
   'checkResult', 'supportWeight', 'flatRefs', 'checkSize', 'checkIsDrawn', 'flowSets', 'refId', 'refCount', 'whereMatches', 'isRangeParam', 'drawParam', 'genValues',
@@ -27,7 +27,8 @@ export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseO
   'askIsScored', 'MESSAGE_FORMS', 'MESSAGE_LINK_FORMS', 'MESSAGE_YOURS', 'TEXT_MAX', 'writtenWords', 'textReady',
   'EXCHANGE_FORMS', 'exchangeWalk', 'scoreExchange', 'exchangePaths', 'exchangeReach', 'exchangeLoops', 'exchangeOptionEnds', 'exchangeRightOption', 'exchangeReview',
   'orderProblems', 'scoreOrder', 'orderScored', 'orderReady', 'TIMER_SECONDS', 'BUSY_TAPS_BEFORE',
-  'recallProblems', 'recallEntryText', 'recallIsOwn', 'recallOwnKey', 'recallMatch', 'recallNeed'];
+  'recallProblems', 'recallEntryText', 'recallIsOwn', 'recallOwnKey', 'recallMatch', 'recallNeed',
+  'PLACE_MODES', 'PLACE_NONE', 'mapOf', 'placeAskProblems', 'mapBlockProblems', 'placeRightIds', 'placeNeighborsOf', 'placeWaterOf', 'placeRightText'];
 export const isDataFile = src => src === REGISTRY_FILE || src.startsWith('subjects/') || src.startsWith('maps/') || ENGINE_FILES.includes(src);
 
 export const asDirUrl = dir => dir instanceof URL ? new URL(dir.href.replace(/\/?$/, '/')) : new URL(`file://${dir.replace(/\/?$/, '/')}`);

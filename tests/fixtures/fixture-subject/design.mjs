@@ -7,7 +7,7 @@ import { designFingerprint } from '../../lessons/design-shape.mjs';
 export const FIXTURE_RESEARCH = { 'umbrella-days': { ids: ['U1', 'U2', 'U3'], marks: { U1: { decides: true, read: 'full' }, U2: { decides: false, read: 'abstract' }, U3: { decides: false, read: 'summary' } } } };
 // the stand-in reviews of the test subjects: { [subjectId]: { 'reviews/<lesson>.md': verdict } }
 // each review names what it reviewed; negative-controls.mjs fills the fingerprints from the loaded data (withTriedFps, withReviewFps)
-export const FIXTURE_REVIEWS = Object.fromEntries(['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview'].map(id => [id, { 'reviews/design.md': { verdict: 'passes', reviewed: null }, ...(id === 'fixture' ? { 'reviews/l2.md': { verdict: 'passes', reviewed: null } } : {}) }]));
+export const FIXTURE_REVIEWS = Object.fromEntries(['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview', 'atlas'].map(id => [id, { 'reviews/design.md': { verdict: 'passes', reviewed: null }, ...(id === 'fixture' ? { 'reviews/l2.md': { verdict: 'passes', reviewed: null } } : {}) }]));
 export const withReviewFps = (reviews, designs, fpOf) => Object.fromEntries(Object.entries(reviews).map(([id, files]) => [id, Object.fromEntries(Object.entries(files).map(([f, rv]) => [f, { ...rv, reviewed: f === 'reviews/design.md' ? designFingerprint(designs[id]) : fpOf(id, f.replace(/^reviews\/|\.md$/g, '')), date: f === 'reviews/design.md' ? designs[id].designReview.date : designs[id].tried[f.replace(/^reviews\/|\.md$/g, '')].date }]))]));
 
 // an owner's word on a subject: their reply quoted, with where; every subject has its own words (the same words twice is a blanket)
@@ -152,15 +152,27 @@ export const INTERVIEW_DESIGN = record('interview', ['facts'], {
   { id: '4', title: 'A news story', check: 'Two new stories: who decided and whether it was theirs to decide; both right.' }
 ], { l1: '1', l2: '2', l3: '3', l4: '4' }, 'l1', { l1: owner('2026-10-11'), l2: owner('2026-10-11'), l3: owner('2026-10-11'), l4: owner('2026-10-11') }, '2026-10-11');
 
+export const ATLAS_DESIGN = record('atlas', ['facts'], {
+  goal: 'After this you can find a named place on a map with no names on it, say which places it borders and what water it touches, and name a place that is lit. It leaves out distances and the places beyond the isles.',
+  endResult: 'Put a named place on a map with no names on it, and say what it borders.',
+  realMoment: 'A place is named and there is no map in sight.',
+  test: 'Three new places on the blank map: tap one, say what borders another, name a lit one; all three right.',
+  practice: 'Tap the place on a blank map, then say what it borders, with the right place lit after each answer.',
+  delivery: ['a blank map drawn from data', 'a tap scored by the shape it lands in', 'a neighbor and its water, or Landlocked', 'a lit place named from memory'],
+  form: 'A tap on a blank map with no names, or a lit place and its name typed.',
+  readingShare: 0.9
+}, [{ id: '1', title: 'The isles', check: 'Three new places on the blank map: tap one, say what borders another, name a lit one; all three right.' }], { l1: '1' }, 'l1', { l1: owner('2026-10-12') }, '2026-10-12');
+
 // the entries of `tried` carry the fingerprint of the lesson as tried; negative-controls.mjs fills it from the loaded data (withTriedFps)
 export const withTriedFps = (designs, fpOf) => Object.fromEntries(Object.entries(designs).map(([id, r]) => [id, { ...r, tried: Object.fromEntries(Object.entries(r.tried).map(([l, e]) => [l, { ...e, fp: fpOf(id, l) }])) }]));
-export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN, account: ACCOUNT_DESIGN, pressure: PRESSURE_DESIGN, interview: INTERVIEW_DESIGN };
+export const FIXTURE_DESIGNS = { fixture: FIXTURE_DESIGN, chorus: CHORUS_DESIGN, till: TILL_DESIGN, ledger: LEDGER_DESIGN, feed: FEED_DESIGN, labels: LABELS_DESIGN, account: ACCOUNT_DESIGN, pressure: PRESSURE_DESIGN, interview: INTERVIEW_DESIGN, atlas: ATLAS_DESIGN };
 // the files of the test subjects, in load order, relative to this folder
 export const FIXTURE_FILES = ['subject.js', 'items-chance.js', 'gen-chance.js', 'items-timing.js', 'l1.lesson.js', 'l2.lesson.js',
   'chorus-subject.js', 'chorus-l1.lesson.js', 'chorus-l2.lesson.js', 'till-subject.js', 'till-items.js', 'till-l1.lesson.js',
   'ledger-subject.js', 'ledger-items.js', 'ledger-l1.lesson.js', 'feed-subject.js', 'feed-items.js', 'feed-l1.lesson.js',
   'labels-subject.js', 'labels-items.js', 'labels-l1.lesson.js', 'account-subject.js', 'account-items.js', 'account-l1.lesson.js',
   'pressure-subject.js', 'pressure-items.js', 'pressure-l0.lesson.js', 'pressure-l1.lesson.js',
-  'interview-subject.js', 'interview-items.js', 'interview-l1.lesson.js', 'interview-l2.lesson.js', 'interview-l3.lesson.js', 'interview-l4.lesson.js'];
+  'interview-subject.js', 'interview-items.js', 'interview-l1.lesson.js', 'interview-l2.lesson.js', 'interview-l3.lesson.js', 'interview-l4.lesson.js',
+  'atlas-map.js', 'atlas-subject.js', 'atlas-items.js', 'atlas-l1.lesson.js'];
 // the ids of the test subjects, in the order they load
-export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview'];
+export const FIXTURE_IDS = ['fixture', 'chorus', 'till', 'ledger', 'feed', 'labels', 'account', 'pressure', 'interview', 'atlas'];

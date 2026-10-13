@@ -7,7 +7,7 @@ import { learnerStrings } from './rules-vocab.mjs';
 
 // V73. The time a learner spends reading and the time they spend doing, in seconds. Named once, here.
 export const READING_WORDS_PER_MINUTE = 200;
-export const DOING_SECONDS = { choose: 15, tap: 15, number: 60, text: 30, order: 25, sing: 20, exchange: 45, form: 60 };
+export const DOING_SECONDS = { choose: 15, tap: 15, place: 15, number: 60, text: 30, order: 25, sing: 20, exchange: 45, form: 60 };
 const DRAWN_ITEM_SECONDS = 20;
 const GENERATOR_SEEDS = 200;   // V75: how many seeds a generator is run on
 const SAMPLE_SEEDS = 5;        // V74: how many instances of a generator are read as questions
@@ -145,6 +145,17 @@ function hasExplainProblems(s, item) {
   });
   return problems;
 }
+// A place: the slips it names are the subject's, and the map in the question never shows what is asked for (a lit place that is the right one, or a
+// neighbor or the water of the place asked about, would give the tap away)
+function placeExplainProblems(s, item, ask, where, slipIds) {
+  const problems = [], e = s.engine, map = e.maps[ask.map];
+  Object.values(ask.slips || {}).filter(id => !slipIds.includes(id)).forEach(id => problems.push(`${where}: the slip "${id}" is not in the subject's list of slips`));
+  if (!map) return problems;
+  const given = ask.mode === 'neighbor-water' ? [...(map.places.find(p => p.id === ask.of) || {}).neighbors || [], ...(map.places.find(p => p.id === ask.of) || {}).water || []] : e.placeRightIds(ask);
+  item.blocks.filter(b => b.kind === 'map' && b.region === ask.map).forEach(b => (b.lit || []).filter(id => given.includes(id))
+    .forEach(id => problems.push(`${where}: the map above it has "${id}" lit, which is the answer`)));
+  return problems;
+}
 // An exchange is explained: every end says what happened next (the shape needs it) and a wrong end that names a slip names one the subject has, the
 // other side really pushes (at least one turn says how), and a reply that holds off can run into more pressure. An order says why the order matters
 // (the shape needs it).
@@ -167,6 +178,7 @@ function explainProblems(s, item) {
     if (ask.kind === 'text') { problems.push(...textExplainProblems(s, ask, `ask ${ask.id}`)); return; }
     if (ask.kind === 'exchange') { problems.push(...exchangeExplainProblems(s, ask, `ask ${ask.id}`, ids)); return; }
     if (ask.kind === 'order') return;
+    if (ask.kind === 'place') { problems.push(...placeExplainProblems(s, item, ask, `ask ${ask.id}`, ids)); return; }
     const options = s.engine.chooseOptions(s.subject, ask), where = `ask ${ask.id}`;
     if (!options.some(o => o.ok)) problems.push(`${where} has no right option`);
     if (ask.many === undefined && options.filter(o => o.ok).length > 1) problems.push(`${where} has more than one right option and does not take several`);
@@ -175,8 +187,11 @@ function explainProblems(s, item) {
   });
   if (!flatAsks(s, item).some(a => s.engine.askIsScored(a))) problems.push('it has no ask that can be scored: a line written against a model is never marked');
   // a question answered from memory is read, or heard: its words are in a spoken block (and only one), never in the prompt, which a spoken check would give away
+  // (or a map with a place lit: the lit place is the question, and the words asked about it are the prompt)
   const recalled = flatAsks(s, item).some(a => a.kind === 'text' && 'accept' in a), spokenBlocks = item.blocks.filter(b => b.kind === 'spoken').length;
-  if (recalled && spokenBlocks !== 1) problems.push(`it asks a question from memory and has ${spokenBlocks} spoken blocks; the question is one`);
+  const litMaps = item.blocks.filter(b => b.kind === 'map' && (b.lit || []).length).length;
+  if (recalled && litMaps === 0 && spokenBlocks !== 1) problems.push(`it asks a question from memory and has ${spokenBlocks} spoken blocks; the question is one`);
+  if (recalled && litMaps > 0 && (spokenBlocks > 0 || litMaps > 1)) problems.push(`it asks a question from memory about a lit place and has ${litMaps} lit maps and ${spokenBlocks} spoken blocks; the question is the one lit map`);
   const segments = item.blocks.flatMap(b => s.engine.segmentsOf(b)).map(x => x.id);
   (item.deciding || []).filter(id => !segments.includes(id)).forEach(id => problems.push(`deciding "${id}" is not a segment of the blocks`));
   problems.push(...hasExplainProblems(s, item));

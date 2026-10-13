@@ -8,6 +8,7 @@ document.addEventListener('keydown', e => {
 });
 
 wireDocTabs();
+wireMaps();
 render();
 history.replaceState({ fc: 'base' }, '');
 syncHistory();

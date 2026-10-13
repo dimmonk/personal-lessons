@@ -502,3 +502,35 @@ table.ownsum td:last-child{white-space:normal}
 .acceptlist li.given{background:color-mix(in srgb,var(--green) 18%,transparent);color:var(--text)}
 .acceptlist .gave{margin-left:6px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
 .plainlink{color:var(--text);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+
+/* ---------- a map: the blank map, what is lit, where you tapped (lesson standard 3.9) ---------- */
+.block-map{display:flex;flex-direction:column;gap:8px;margin:0}
+.mapframe{position:relative;overflow:hidden;background:var(--footer);border:1px solid var(--rule)}
+.mapsvg{display:block;width:100%;height:auto;max-height:68vh;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;cursor:grab}
+.mapsvg:active{cursor:grabbing}
+.map-water{fill:var(--footer)}
+.map-frame{fill:none;stroke:var(--disabled);stroke-width:1;vector-effect:non-scaling-stroke}
+.mp{fill:var(--rule);stroke:var(--disabled);stroke-width:.8px;vector-effect:non-scaling-stroke;stroke-linejoin:round}
+.mp-continent{stroke:var(--rule)}
+.mp-lake{fill:var(--footer)}
+.mp-river{fill:none;stroke:var(--dim);stroke-width:1.4px;stroke-linecap:round;stroke-linejoin:round}
+.mp-ocean,.mp-sea,.mp-range,.mp-desert,.mp-region{fill:none;stroke:none}
+.mp-dot{fill:var(--rule);stroke:var(--text);stroke-width:1.2px}
+.mp.lit{fill:var(--accent);fill-opacity:.9;stroke:var(--text)}
+.mp-range.lit,.mp-desert.lit,.mp-region.lit{fill-opacity:.55;stroke:var(--accent)}
+.mp-river.lit{fill:none;stroke:var(--accent);stroke-width:5px}
+.mp-dot.lit{fill:var(--accent);stroke:var(--text)}
+.mp.focus{stroke:var(--accent);stroke-width:2.2px}
+.ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-width:2.4px;stroke-linejoin:round;pointer-events:none}
+.ml-sea,.ml-ocean,.ml-lake,.ml-river,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
+.mk-ring{fill:none;stroke:var(--text);stroke-width:2px;vector-effect:non-scaling-stroke}
+.mk-dot{fill:var(--text)}
+.mk-right .mk-ring{stroke:var(--green)}
+.mk-right .mk-dot{fill:var(--green)}
+.mk-wrong .mk-ring{stroke:var(--coral)}
+.mk-wrong .mk-dot{fill:var(--coral)}
+.mapzoom{display:flex;justify-content:flex-end;gap:6px}
+.mapzoom button{display:flex;align-items:center;justify-content:center;width:44px;height:44px;background:var(--raised);border:1px solid var(--border);color:var(--text);font-size:20px;line-height:1}
+.mapzoom button:hover{border-color:var(--text)}
+.placeask .block-map{margin-top:10px}
+.placeask .opts{margin-top:10px}

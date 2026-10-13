@@ -30,6 +30,8 @@ function idTitle() { return obj({ id: str, title: str }); }
 // a line that can be tapped or marked; `para` starts a new paragraph, `fine` is small print, `slip` names the slip of tapping it when it is not the line
 // (`me` marks a line you sent, in a thread)
 const SEGMENT = obj({ id: str, text: str }, { note: str, para: bool, fine: bool, slip: str, me: bool });
+// a region of the map data (place.js), drawn blank unless `labels` names its places (true: every place the region labels) and lit where `lit` says
+export const MAP_BLOCK = obj({ kind: en('map'), region: str }, { id: str, labels: either(bool, arr(str)), lit: arr(str) });
 export const PROSE = obj({ kind: en('prose') }, { id: str, text, lines: arr(SEGMENT), tone: en('wrong') });
 export const PAIR = obj({ kind: en('pair'), a: any, b: any, compare: text });
 // the everyday papers, and a household's: statement (401(k), IRA, brokerage), fees (a plan's fee sheet), paystub, matchrule (the plan's employer
@@ -79,6 +81,10 @@ const OPTION = obj({ id: str, text: str }, { ok: bool, slip: str, then: text, va
 export const CHOOSE = obj({ id: str, kind: en('choose'), prompt: text },
   { options: arr(OPTION), from: str, right: either(str, arr(str)), only: arr(str), many: bool, when: obj({ ask: str, is: arr(str) }),
     then: map(text), slips: map(str), answer: str, shuffle: bool });
+
+// a place ask (place.js): a tap on the map; or, with mode 'neighbor-water', a tap on a neighbor of `of` and then on its water or "Landlocked"
+export const PLACE = obj({ id: str, kind: en('place'), prompt: text, map: str },
+  { right: either(str, arr(str)), mode: en('neighbor-water'), of: str, slips: map(str), when: obj({ ask: str, is: arr(str) }) });
 
 // a tap ask (tap.js): the lines of the question, or of the block named by `in`, become tappable; `right` is the lines that decide it, or 'none'
 export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(str, arr(str)) }, { in: str, pick: int, none: text, when: obj({ ask: str, is: arr(str) }) });

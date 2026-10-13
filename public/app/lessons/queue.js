@@ -24,6 +24,7 @@ const freshCur = left => ({ a: {}, many: {}, done: false, score: null, typed: {}
 const questionSeconds = inst => Q.seconds && inst && !inst.item.asks.some(a => a.kind === 'exchange') ? Q.seconds : null;
 
 function startQueue(opts){
+  mapViewReset();
   singReset();
   timerStop();
   speechReset();
@@ -66,6 +67,7 @@ function paintQueue(){
   wireNumber();
   wireForm();
   wireTap();
+  wirePlace();
   wireText();
   wireRecall();
   wireSpeech();
@@ -133,6 +135,7 @@ function settle(inst, score, timedOut){
 }
 function nextQuestion(){
   if(!Q.cur.done) return;
+  mapViewReset();
   Q = { ...Q, at: Q.at + 1, cur: { ...freshCur(questionSeconds(Q.list[Q.at + 1])), calc: { open: Q.cur.calc.open, st: CALC_START } } };
   paintQueue();
   window.scrollTo(0, 0);

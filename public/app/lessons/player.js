@@ -23,6 +23,7 @@ function saveLessonPlace(){
 }
 function moveLesson(at){
   timerStop();
+  mapViewReset();
   LESSON = { ...LESSON, at, worked: null };
   saveLessonPlace();
   paintLesson();
@@ -90,7 +91,7 @@ function paintWorked(step){
   const working = committing || !steps.length ? '' : `<div class="answerline"><span class="m lab">${esc(SAY.workingLabel)}</span><ol class="lsteps">${list}</ol></div>`;
   const answer = finished ? workedAnswerHtml(data, inst) : '';
   const more = !committing && !finished ? `<div class="actbar"><button class="btn neutral" id="workedMore">${esc(w.shown ? SAY.workedNext : SAY.workedShow)}${icon('arrow')}</button></div>` : '';
-  lessonShell(`${heading(SAY.workedHeading, LESSON.lesson.title)}${blocksHtml(item.blocks, ctx)}${commit}${working}${answer}`, finished ? nextAction(SAY.goOn) : more);
+  lessonShell(`${heading(SAY.workedHeading, LESSON.lesson.title)}${blocksHtml(item.blocks, ctx)}${placeWorkedHtml(data, item)}${commit}${working}${answer}`, finished ? nextAction(SAY.goOn) : more);
   const set = patch => { LESSON = { ...LESSON, worked: { ...w, ...patch } }; paintWorked(step); };
   on('[data-commit]', el => set({ picked: el.dataset.commit, shown: 0 }));
   on('#workedSkip', () => set({ skipped: true }));
@@ -100,7 +101,7 @@ function paintWorked(step){
 // the right answers of a worked item, then why
 function workedAnswerHtml(data, inst){
   const item = inst.item;
-  const right = a => a.kind === 'text' ? (isRecallAsk(a) ? a.accept.map(recallEntryText).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? tapRightText(a, item) : a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
+  const right = a => a.kind === 'text' ? (isRecallAsk(a) ? a.accept.map(recallEntryText).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? tapRightText(a, item) : a.kind === 'place' ? placeRightText(a) : a.kind === 'number' ? numberRightText(a, item) : a.kind === 'form' ? a.fields.map(f => formFieldRight(data, a, f, item)).join('; ') : chooseOptions(data, a).filter(o => o.ok).map(o => o.text).join('; ');
   const marks = (item.asks || []).map(a => `<div class="mark"><span class="verd">${esc(a.kind === 'text' && !isRecallAsk(a) ? SAY.writeModel : SAY.workedAnswer)}</span><span class="ans">${esc(right(a))}</span></div>`).join('');
   const block = (label, text) => text.length ? `<div class="vblock">${lessonLabel(label)}${text.map(p => `<p>${esc(p)}</p>`).join('')}</div>` : '';
   const picture = item.figure ? `<div class="vblock">${blockHtml(item.figure, { data })}</div>` : '', redrawn = item.redraw === 'from-zero' ? redrawHtml(item) : '';
