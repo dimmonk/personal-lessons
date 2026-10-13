@@ -13,6 +13,8 @@ const replace = (file, from, to) => ({ file, from, to });
 const sound = fault => ({ ...fault, only: Object.keys(SOUND_CHECKS) });
 // the checks that draw a map, or run the screens a map sits on
 const MAP_SEEN = ['X1', 'X2', 'X3', 'X15', 'X21', 'X23', 'X46'];
+// the checks that run a group of places, a review or a drawn check: the ones that can see a fault in how a group is chosen and filed
+const PLACE_SEEN = ['X22', 'X43', 'X46', 'X47'];
 
 export const FAULTS = [
   { check: 'X1', name: 'a question moves on by itself after two and a half seconds',
@@ -414,6 +416,15 @@ export const FAULTS = [
     edits: [replace('app/lessons/place.js', 'wet = w === PLACE_NONE ? !water.length :', 'wet = w === PLACE_NONE ? true :')] },
   { check: 'X46', name: 'a tap on land that is on the sea because its outline covers it', only: MAP_SEEN,
     edits: [replace('app/lessons/place.js', 'return !(PLACE_WATER_KINDS.includes(place.kind) && placeOnLand(map, geom, x, y));', 'return true;')] },
+  // a group of places made into questions (9: X47)
+  { check: 'X47', name: 'a check drawn from a group of places that ignores its split', only: PLACE_SEEN,
+    edits: [replace('app/lessons/place-gen.js', 'const chosen = Array.from({ length: draw.split[form] }', 'const chosen = Array.from({ length: Math.min(draw.split[form], 1) }')] },
+  { check: 'X47', name: 'a review that asks the places answered right before the one missed', only: PLACE_SEEN,
+    edits: [replace('app/lessons/place-gen.js', 'const key = id => memory[id] ? [memory[id].ok ? 1 : 0, memory[id].run] : [1, \'\'];', 'const key = id => memory[id] ? [memory[id].ok ? 0 : 1, memory[id].run] : [1, \'\'];')] },
+  { check: 'X47', name: 'a missed place of a group that comes back as another place', only: PLACE_SEEN,
+    edits: [replace('app/lessons/queue.js', 'if(inst.seed === undefined || (inst.ref && isPlaceGen(Q.data.gens[inst.ref.gen]))) return { ...inst, redo: true };', 'if(inst.seed === undefined) return { ...inst, redo: true };')] },
+  { check: 'X47', name: 'the tries of a place group filed under the group alone', only: PLACE_SEEN,
+    edits: [replace('app/lessons/place-gen.js', 'const placeKey = (genId, placeId) => genId + PLACE_KEY_JOIN + placeId;', 'const placeKey = (genId, placeId) => genId;')] },
   sound({ check: 'X8', name: 'a sound system made when a sung question opens',
     edits: [replace('app/lessons/sing-run.js', "  singEnsure(inst, answered);\n  wireSingControls();", "  singEnsure(inst, answered);\n  audioContext();\n  wireSingControls();")] }),
   sound({ check: 'X8', name: 'the microphone asked for when a sung question opens',
