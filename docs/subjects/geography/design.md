@@ -8,9 +8,16 @@
       "when": "2026-10-12",
       "where": "the owner, in the cloud session that planned the subject (docs/research/knowing-where-places-are.md)",
       "owner": {
-        "date": "2026-10-12",
-        "words": "i already signed off psychology and geography so finish these 2",
-        "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
+        "date": "2026-10-13",
+        "words": "shown only, build the pilot",
+        "where": "chat, 2026-10-13, asked whether the one line per country is shown only or tested",
+        "previous": [
+          {
+            "date": "2026-10-12",
+            "words": "i already signed off psychology and geography so finish these 2",
+            "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
+          }
+        ]
       },
       "kept": [
         "the world first: the continents, the oceans and the big regions, on one map",
@@ -30,7 +37,7 @@
         "the world's water, mountains and deserts",
         "what a place borders: its neighbors on the map",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "how far: the distance band and the travel band between two places",
         "placing a place you have never heard of, from the clues a story gives",
         "the whole world, mixed"
@@ -73,12 +80,19 @@
       "when": "2026-10-12",
       "where": "the owner, on the first plan",
       "owner": {
-        "date": "2026-10-12",
-        "words": "one line of what the country is",
-        "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
+        "date": "2026-10-13",
+        "words": "shown only, build the pilot",
+        "where": "chat, 2026-10-13, asked whether the one line per country is shown only or tested",
+        "previous": [
+          {
+            "date": "2026-10-12",
+            "words": "one line of what the country is",
+            "where": "chat, 2026-10-12, the three changes on the first plan (docs/lesson-rebuild-todo.md)"
+          }
+        ]
       },
       "kept": [
-        "one line of what each country is, in the feedback when you place it"
+        "one line of what each country is, shown after each answer (not tested)"
       ],
       "dropped": false
     }
@@ -202,7 +216,7 @@
     "the world's water, mountains and deserts",
     "what a place borders: its neighbors on the map",
     "each country's flag, as a third form of it beside its name and its place",
-    "one line of what each country is, in the feedback when you place it",
+    "one line of what each country is, shown after each answer (not tested)",
     "how far: the distance band and the travel band between two places",
     "placing a place you have never heard of, from the clues a story gives",
     "the whole world, mixed"
@@ -330,7 +344,7 @@
         "Canada's provinces and territories; Mexico, Central America and the Caribbean",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -342,7 +356,7 @@
         "Canada's provinces and territories; Mexico, Central America and the Caribbean",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -354,7 +368,7 @@
         "Canada's provinces and territories; Mexico, Central America and the Caribbean",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -366,7 +380,7 @@
         "South America",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -378,7 +392,7 @@
         "Europe, west and north",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -390,7 +404,7 @@
         "Europe, west and north",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -402,7 +416,7 @@
         "Europe, east and south",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -414,7 +428,7 @@
         "Europe, east and south",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -426,7 +440,7 @@
         "the Middle East and North Africa",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -438,7 +452,7 @@
         "the Middle East and North Africa",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -450,7 +464,7 @@
         "West and Central Africa",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -462,7 +476,7 @@
         "West and Central Africa",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -474,7 +488,7 @@
         "East and Southern Africa",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -486,7 +500,7 @@
         "East and Southern Africa",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -498,7 +512,7 @@
         "South and Central Asia",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -510,7 +524,7 @@
         "South and Central Asia",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -522,7 +536,7 @@
         "East Asia, Southeast Asia and the Pacific",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -534,7 +548,7 @@
         "East Asia, Southeast Asia and the Pacific",
         "the world's water, mountains and deserts",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "what a place borders: its neighbors on the map"
       ]
     },
@@ -570,7 +584,7 @@
         "the whole world, mixed",
         "what a place borders: its neighbors on the map",
         "each country's flag, as a third form of it beside its name and its place",
-        "one line of what each country is, in the feedback when you place it",
+        "one line of what each country is, shown after each answer (not tested)",
         "how far: the distance band and the travel band between two places",
         "placing a place you have never heard of, from the clues a story gives"
       ]
@@ -1227,9 +1241,9 @@
   "approved": {
     "goal": {
       "date": "2026-10-13",
-      "words": "Approve the test line, build the pilot",
-      "where": "chat, 2026-10-13, on the changed test line of the gate 2 screen",
-      "fp": "sha256:c66fe6b851239b3db354b1ae45cad3794382dc1bcd179fad136adbc4ea5beda2",
+      "words": "shown only, build the pilot",
+      "where": "chat, 2026-10-13, on the one line per country, the last change to the gate 2 screen",
+      "fp": "sha256:824a39c95a4258898ce536807202a5bd39ef2ebdf28e2833a8c98f12aadb0b3c",
       "shown": [],
       "sentence": "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight."
     },
@@ -1246,6 +1260,14 @@
           "words": "I only want to do a single one. Do the geography since it easier to do the lessons for me when I'm currently mentally over worked",
           "where": "chat, 2026-10-12, on the printed gate 2 screen",
           "fp": "sha256:08aca41a669049ce03bc2ef847e1ba3305e264f151d3687f427f28f74486813b",
+          "shown": [],
+          "sentence": "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight."
+        },
+        {
+          "date": "2026-10-13",
+          "words": "Approve the test line, build the pilot",
+          "where": "chat, 2026-10-13, on the changed test line of the gate 2 screen",
+          "fp": "sha256:c66fe6b851239b3db354b1ae45cad3794382dc1bcd179fad136adbc4ea5beda2",
           "shown": [],
           "sentence": "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight."
         }
