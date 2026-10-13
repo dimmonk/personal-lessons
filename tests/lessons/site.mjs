@@ -1,9 +1,9 @@
-// What V47 reads from disk: the script files under public/app/ and public/subjects/, index.html's script tags and sw.js's SHELL.
+// What V47 reads from disk: the script files under public/app/, public/subjects/ and public/maps/, index.html's script tags and sw.js's SHELL.
 // Collected once and passed to the rules as plain data.
 import { readFile, readdir } from 'node:fs/promises';
 import { scriptSources, asDirUrl } from './load.mjs';
 
-const isLessonScript = path => /^(app|subjects)\/.+\.js$/.test(path);
+const isLessonScript = path => /^(app|subjects|maps)\/.+\.js$/.test(path);
 const clean = path => path.replace(/^\.?\//, '');
 
 async function readIfPresent(url) {
@@ -34,7 +34,7 @@ export function shellEntries(source) {
 
 export async function collectSite(publicDir) {
   const root = asDirUrl(publicDir);
-  const paths = [...await walk(new URL('app/', root), 'app/'), ...await walk(new URL('subjects/', root), 'subjects/')].filter(isLessonScript).sort();
+  const paths = [...await walk(new URL('app/', root), 'app/'), ...await walk(new URL('subjects/', root), 'subjects/'), ...await walk(new URL('maps/', root), 'maps/')].filter(isLessonScript).sort();
   const files = await Promise.all(paths.map(async path => ({ path, lines: (await readFile(new URL(path, root), 'utf8')).split('\n').length })));
   const html = await readIfPresent(new URL('index.html', root));
   const sw = await readIfPresent(new URL('sw.js', root));

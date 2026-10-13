@@ -5,8 +5,9 @@
   'use strict';
 
   const LESSON_STANDARD = 2;   // docs/lesson-standard.md version the engine implements
-  const ENGINE_WORDING = 14;    // goes up when the app's own wording changes
+  const ENGINE_WORDING = 15;    // goes up when the app's own wording changes
   let subjects = Object.freeze({});
+  let maps = Object.freeze({});   // the regions of public/maps/, by id (lesson standard 3.9, the map block and the place ask)
 
   function deepFreeze(value) {
     if (value && typeof value === 'object' && !Object.isFrozen(value)) {
@@ -53,6 +54,12 @@
     },
     items(id, list) { addAll(id, 'items', list, 'item'); },
     gen(id, list) { addAll(id, 'gens', list, 'generator'); },
+    // a region of the map data (tools/maps/build-maps.mjs writes one file for each): registered once, frozen like every other record
+    map(id, region) {
+      if (maps[id]) fail(`map ${id} registered twice`);
+      maps = Object.freeze({ ...maps, [id]: deepFreeze({ ...region, id }) });
+    },
+    get maps() { return maps; },
     get(id) { return subjects[id] || fail(`unknown subject "${id}"`); },
     has(id) { return !!subjects[id]; },
     ids() { return Object.keys(subjects); }

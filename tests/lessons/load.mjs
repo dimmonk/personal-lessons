@@ -7,7 +7,7 @@
 //                                             subject) evaluated last, as absolute URLs
 //   loadFromFiles(publicDirUrl, files, opts)  an explicit list, evaluated in order
 //
-// Result: { standard, subjects: { [id]: { meta, lessons, items, gens } }, engine }.
+// Result: { standard, subjects: { [id]: { meta, lessons, items, gens } }, maps: { [region]: the map data of public/maps/ }, engine }.
 // A list with no registry loads as { standard: null, subjects: {}, engine: null }.
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
@@ -28,7 +28,7 @@ export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseO
   'EXCHANGE_FORMS', 'exchangeWalk', 'scoreExchange', 'exchangePaths', 'exchangeReach', 'exchangeLoops', 'exchangeOptionEnds', 'exchangeRightOption', 'exchangeReview',
   'orderProblems', 'scoreOrder', 'orderScored', 'orderReady', 'TIMER_SECONDS', 'BUSY_TAPS_BEFORE',
   'recallProblems', 'recallEntryText', 'recallIsOwn', 'recallOwnKey', 'recallMatch', 'recallNeed'];
-export const isDataFile = src => src === REGISTRY_FILE || src.startsWith('subjects/') || ENGINE_FILES.includes(src);
+export const isDataFile = src => src === REGISTRY_FILE || src.startsWith('subjects/') || src.startsWith('maps/') || ENGINE_FILES.includes(src);
 
 export const asDirUrl = dir => dir instanceof URL ? new URL(dir.href.replace(/\/?$/, '/')) : new URL(`file://${dir.replace(/\/?$/, '/')}`);
 
@@ -51,7 +51,7 @@ export function scriptSources(html, where = 'index.html') {
 export async function loadFromFiles(publicDirUrl, files, { extra = [] } = {}) {
   const root = asDirUrl(publicDirUrl);
   const dataFiles = files.filter(isDataFile);
-  if (!dataFiles.includes(REGISTRY_FILE)) return { standard: null, subjects: {}, engine: null };
+  if (!dataFiles.includes(REGISTRY_FILE)) return { standard: null, subjects: {}, maps: {}, engine: null };
   const context = vm.createContext({ console });
   const sources = [...dataFiles.map(file => ({ file, url: new URL(file, root) })), ...extra.map(url => ({ file: url.pathname, url }))];
   for (const { file, url } of sources) {
@@ -62,7 +62,7 @@ export async function loadFromFiles(publicDirUrl, files, { extra = [] } = {}) {
   const FC = context.FC;
   if (!FC || typeof FC.ids !== 'function') throw new Error(`${REGISTRY_FILE} did not define FC.ids()`);
   const engine = vm.runInContext(`({ ${ENGINE_NAMES.join(', ')} })`, context);
-  return { standard: FC.STANDARD, subjects: Object.fromEntries(FC.ids().map(id => [id, FC.get(id)])), engine };
+  return { standard: FC.STANDARD, subjects: Object.fromEntries(FC.ids().map(id => [id, FC.get(id)])), maps: FC.maps, engine };
 }
 
 export async function fileListFor(publicDirUrl) {
