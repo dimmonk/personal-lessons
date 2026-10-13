@@ -226,6 +226,1002 @@
     "The distance band, BUILT: a `choose` from the subject's `distance` and `travel` lists, the miles printed in the reason; lighting the two places needs the `map` block."
   ],
   "readingShare": 0.1,
+  "form": "A tap on a blank, north-up map with no names: a place named, its shape tapped; a flag shown, its country tapped; a neighbor and the water tapped, or \"Landlocked\"; a town never met, its region tapped from a story's clues; and the other way, a place lit and its name typed, or two places lit and the distance band and travel band chosen. Every check is these same actions on places or pairs drawn at random, feedback at the end, never a choice among names.",
+  "parts": [
+    {
+      "id": "1",
+      "title": "The world on one map",
+      "check": "12 items on the continents, the oceans and the regions, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 8 named and tapped, 4 lit and named; at least 10 of 12.",
+      "topics": [
+        "the world first: the continents, the oceans and the big regions, on one map"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "The map of the United States",
+      "check": "12 items on the coasts, the four regions, the ranges, the rivers and the Great Lakes, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 8 named and tapped, 4 lit and named; at least 10 of 12.",
+      "topics": [
+        "the map of the United States: the coasts, the four regions, the mountain ranges and the big rivers"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "The West",
+      "check": "12 items on the West's states, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the states, region by region: the West, the Midwest, the South, the Northeast",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "4",
+      "title": "The Midwest",
+      "check": "12 items on the Midwest's states, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the states, region by region: the West, the Midwest, the South, the Northeast",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "5",
+      "title": "The South, from Texas to Kentucky",
+      "check": "12 items on the states of the South from Texas to Kentucky, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the states, region by region: the West, the Midwest, the South, the Northeast",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "6",
+      "title": "The South, the Atlantic side",
+      "check": "12 items on the Atlantic South's states and DC, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the states, region by region: the West, the Midwest, the South, the Northeast",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "7",
+      "title": "The Northeast",
+      "check": "12 items on the Northeast's states, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the states, region by region: the West, the Midwest, the South, the Northeast",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "8",
+      "title": "The cities west of the Mississippi",
+      "check": "12 items on the cities west of the Mississippi, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 lit as a dot and named; at least 10 of 12.",
+      "topics": [
+        "the big US cities, west and east of the Mississippi"
+      ]
+    },
+    {
+      "id": "9",
+      "title": "The cities east of the Mississippi",
+      "check": "12 items on the cities east of the Mississippi, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 lit as a dot and named; at least 10 of 12.",
+      "topics": [
+        "the big US cities, west and east of the Mississippi"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "The capitals of the West and the Midwest",
+      "check": "12 items on the capitals of the West and the Midwest, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 states lit and their capital typed; at least 10 of 12.",
+      "topics": [
+        "the state capitals the news uses for the state"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "The capitals of the South and the Northeast",
+      "check": "12 items on the capitals of the South and the Northeast, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 states lit and their capital typed; at least 10 of 12.",
+      "topics": [
+        "the state capitals the news uses for the state"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Canada",
+      "check": "12 items on Canada's provinces and territories, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 1 flag with the country tapped, 2 with a neighbor (a province or a US state) and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Canada's provinces and territories; Mexico, Central America and the Caribbean",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Mexico and Central America",
+      "check": "12 items on Mexico and Central America, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Canada's provinces and territories; Mexico, Central America and the Caribbean",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "The Caribbean",
+      "check": "12 items on the Caribbean's countries and islands, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Canada's provinces and territories; Mexico, Central America and the Caribbean",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "15",
+      "title": "South America",
+      "check": "12 items on South America's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "South America",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Europe, west",
+      "check": "12 items on western Europe's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Europe, west and north",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Europe, north",
+      "check": "12 items on the British Isles and the Nordic and Baltic countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Europe, west and north",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Europe, central and east",
+      "check": "12 items on central and eastern Europe's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Europe, east and south",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Europe, the Balkans and the south",
+      "check": "12 items on the Balkans' and southern Europe's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "Europe, east and south",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Türkiye, the Levant, Iraq and Iran",
+      "check": "12 items on Türkiye, the Levant, Iraq and Iran, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the Middle East and North Africa",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Arabia and North Africa",
+      "check": "12 items on the Arabian Peninsula's and North Africa's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "the Middle East and North Africa",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "22",
+      "title": "West Africa, the coast",
+      "check": "12 items on West Africa's coastal countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "West and Central Africa",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "23",
+      "title": "The Sahel and Central Africa",
+      "check": "12 items on the Sahel's and Central Africa's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "West and Central Africa",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "24",
+      "title": "East Africa and the Horn",
+      "check": "12 items on East Africa's and the Horn's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "East and Southern Africa",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Southern Africa",
+      "check": "12 items on Southern Africa's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "East and Southern Africa",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "26",
+      "title": "South Asia",
+      "check": "12 items on South Asia's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "South and Central Asia",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Central Asia and the Caucasus",
+      "check": "12 items on Central Asia's and the Caucasus's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "South and Central Asia",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "28",
+      "title": "East Asia and mainland Southeast Asia",
+      "check": "12 items on East Asia's and mainland Southeast Asia's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "East Asia, Southeast Asia and the Pacific",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Island Southeast Asia and the Pacific",
+      "check": "12 items on island Southeast Asia's and the Pacific's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "topics": [
+        "East Asia, Southeast Asia and the Pacific",
+        "the world's water, mountains and deserts",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "what a place borders: its neighbors on the map"
+      ]
+    },
+    {
+      "id": "30",
+      "title": "The world's water, mountains and deserts",
+      "check": "12 items on the world's seas, straits, rivers, ranges and deserts, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 8 named and tapped, 4 lit and named; at least 10 of 12.",
+      "topics": [
+        "the world's water, mountains and deserts"
+      ]
+    },
+    {
+      "id": "31",
+      "title": "How far",
+      "check": "10 pairs of places never asked as a pair (5 in the United States, 5 across the world), the distance band and the travel band chosen, feedback at the end; both bands right on at least 8.",
+      "topics": [
+        "how far: the distance band and the travel band between two places"
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Placing a place you have never heard of",
+      "check": "10 places never practised, each given as a story gives it (a town and its country or state, a port and its coast, a region and its neighbor), tapped by region on the blank world map, feedback at the end; at least 8 of 10.",
+      "topics": [
+        "placing a place you have never heard of, from the clues a story gives"
+      ]
+    },
+    {
+      "id": "33",
+      "title": "The whole world, mixed",
+      "check": "30 items drawn from every part, mixed, on the blank world and US maps, feedback at the end: 12 names tapped, 4 lit places named, 4 flags to their country, 4 places with a neighbor and the water, 3 places never practised placed from a story, 3 pairs given both bands; at least 25 of 30.",
+      "topics": [
+        "the whole world, mixed",
+        "what a place borders: its neighbors on the map",
+        "each country's flag, as a third form of it beside its name and its place",
+        "one line of what each country is, in the feedback when you place it",
+        "how far: the distance band and the travel band between two places",
+        "placing a place you have never heard of, from the clues a story gives"
+      ]
+    }
+  ],
+  "lessons": {
+    "l1": {
+      "part": "1",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Africa named, the tap on it shown, its line read; then one region lit and its name typed for the learner. (2) One look at the region's labeled map, about a minute, the continents, then the oceans, then the regions inside each continent that the later lessons use; never shown again. (3) Recall only, about 8 minutes: the continents and oceans named and tapped, then lit and named, then the regions named and tapped and lit and named, each region asked straight after its continent; a miss comes back three items later until right. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: for a region, the continent it is part of and the regions beside it. The check gives it all at the end.",
+      "check": "12 items on the continents, the oceans and the regions, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 8 named and tapped, 4 lit and named; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4"
+      ]
+    },
+    "l2": {
+      "part": "2",
+      "does": "About 12 minutes. (1) Shown first, half a minute: the Mississippi named, the tap on its band shown, its line read. (2) One look at the region's labeled map, about a minute, the coasts and the four regions first, then the ranges, the rivers and the Great Lakes; never shown again. (3) Recall only, about 8 minutes: the coasts and regions named and tapped, then lit and named; then the ranges, rivers and lakes the same way; the five Great Lakes as one set; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: for a range or river, the regions and states it runs through. The check gives it all at the end.",
+      "check": "12 items on the coasts, the four regions, the ranges, the rivers and the Great Lakes, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 8 named and tapped, 4 lit and named; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l3": {
+      "part": "3",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Nevada named and tapped, then its neighbor (California) and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, the Pacific states, the Mountain states, then Alaska and Hawaii on their insets; never shown again. (3) Recall only, about 8 minutes: the 13 states named and tapped (about 3 minutes), then lit and named (about 3), then half of them with a neighbor and the water tapped (about 2); Wyoming and Colorado, Idaho and Montana asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: the region and the part of it (the Pacific states, the Mountain states). The check gives it all at the end.",
+      "check": "12 items on the West's states, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l4": {
+      "part": "4",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Iowa named and tapped, then a neighbor and its water (Landlocked) shown. (2) One look at the region's labeled map, about a minute, the Great Lakes states, then the Plains states; never shown again. (3) Recall only, about 8 minutes: the 12 states named and tapped, then lit and named, then half with a neighbor and the water; Illinois and Indiana, the two Dakotas asked back to back; Idaho due beside Iowa; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water. The check gives it all at the end.",
+      "check": "12 items on the Midwest's states, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l5": {
+      "part": "5",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Arkansas named and tapped, then a neighbor and its water shown. (2) One look at the region's labeled map, about a minute, the Gulf states, then the inland states; never shown again. (3) Recall only, about 8 minutes: the 8 states named and tapped, then lit and named, then each with a neighbor and the water; Mississippi and Alabama, Tennessee and Kentucky asked back to back; the Gulf of Mexico and the rivers due; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water. The check gives it all at the end.",
+      "check": "12 items on the states of the South from Texas to Kentucky, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l6": {
+      "part": "6",
+      "does": "About 12 minutes. (1) Shown first, half a minute: South Carolina named and tapped, then a neighbor and its water shown. (2) One look at the region's labeled map, about a minute, Florida to Virginia along the coast, then West Virginia, Maryland, Delaware and DC on the zoomed map; never shown again. (3) Recall only, about 8 minutes: the 8 states and DC named and tapped, then lit and named, then each with a neighbor and the water; the two Carolinas, Virginia and West Virginia, Maryland and Delaware asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water. The check gives it all at the end.",
+      "check": "12 items on the Atlantic South's states and DC, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l7": {
+      "part": "7",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Vermont named and tapped, then a neighbor and its water (Landlocked) shown. (2) One look at the region's labeled map, about a minute, New England, then the three Mid-Atlantic states, on the zoomed map; never shown again. (3) Recall only, about 8 minutes: the 9 states named and tapped, then lit and named, then half with a neighbor and the water; Vermont and New Hampshire asked back to back; then the lower 48 once, mixed, as the first whole-map set; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water. The check gives it all at the end.",
+      "check": "12 items on the Northeast's states, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 3 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l8": {
+      "part": "8",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Houston named, the tap inside southeast Texas shown, its line read. (2) One look at the region's labeled map, about a minute, the cities by state, the Pacific coast, the Mountain West, Texas, the Plains; never shown again. (3) Recall only, about 8 minutes: about 20 cities named and tapped in their state and part of it (about 4 minutes), then lit as a dot and named (about 4); the Texas cities and the California cities each as a group; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: for a city, its state and the part of it, and the water it is on. The check gives it all at the end.",
+      "check": "12 items on the cities west of the Mississippi, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 lit as a dot and named; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l9": {
+      "part": "9",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Pittsburgh named, the tap inside western Pennsylvania shown, its line read. (2) One look at the region's labeled map, about a minute, the Great Lakes cities, the Ohio valley, the South, Florida, then the Northeast corridor from Washington to Boston; never shown again. (3) Recall only, about 8 minutes: about 20 cities named and tapped in their state and part of it, then lit as a dot and named; the corridor in order; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: for a city, its state and the part of it, and the water it is on. The check gives it all at the end.",
+      "check": "12 items on the cities east of the Mississippi, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 lit as a dot and named; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l10": {
+      "part": "10",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Sacramento named as \"California's government\", the dot tapped; then California lit and \"Sacramento\" typed, each shown. (2) One look at the region's labeled map, about a minute, the 25 capitals of the West and the Midwest as dots in their states; never shown again. (3) Recall only, about 8 minutes: the capitals not yet placed as cities named and tapped, then each state lit and its capital typed; the ones already placed as cities come back due; Springfield and Chicago, Jefferson City and Kansas City asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: the capital, its state and the part of it, and the bigger city a learner may confuse it with. The check gives it all at the end.",
+      "check": "12 items on the capitals of the West and the Midwest, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 states lit and their capital typed; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l11": {
+      "part": "11",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Albany named as \"New York's government\", the dot tapped; then New York lit and \"Albany\" typed, each shown. (2) One look at the region's labeled map, about a minute, the 25 capitals of the South and the Northeast as dots in their states; never shown again. (3) Recall only, about 8 minutes: the capitals not yet placed as cities named and tapped, then each state lit and its capital typed; Albany and New York City, Tallahassee and Miami, Harrisburg and Philadelphia asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: the capital, its state and the part of it, and the bigger city a learner may confuse it with. The check gives it all at the end.",
+      "check": "12 items on the capitals of the South and the Northeast, drawn at random on the blank US map, feedback at the end: 8 named and tapped (the right state, the right part of it), 4 states lit and their capital typed; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l12": {
+      "part": "12",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Saskatchewan named and tapped, then its neighbor to the south (Montana) and its water (Landlocked) shown; then Canada's flag shown and Canada tapped. (2) One look at the region's labeled map, about a minute, the Pacific province, the Prairies, Ontario and Quebec, the Atlantic provinces, then the three territories, with Hudson Bay; never shown again. (3) Recall only, about 8 minutes: the 13 provinces and territories named and tapped, then lit and named, then half with a neighbor (a province or the US state south of it) and the water; the flags of Canada, the United States and Mexico once each; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: for a province, the US state south of it; for Canada, what the country is in one line. The check gives it all at the end.",
+      "check": "12 items on Canada's provinces and territories, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 6 named and tapped, 3 lit and named, 1 flag with the country tapped, 2 with a neighbor (a province or a US state) and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l13": {
+      "part": "13",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Honduras named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, Mexico, then the seven countries of the isthmus in order from Mexico to Colombia, the Gulf of Mexico and the Panama Canal; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on Mexico and Central America, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l14": {
+      "part": "14",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Jamaica named and tapped, its flag shown and the country tapped, then its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the big islands from Cuba east, the Bahamas, then the small island states of the eastern Caribbean as dots, and the Caribbean Sea; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Haiti and the Dominican Republic asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on the Caribbean's countries and islands, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l15": {
+      "part": "15",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Peru named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the Pacific side, the north coast, then the Atlantic side and the south, with the Andes and the Amazon; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Paraguay and Uruguay asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on South America's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l16": {
+      "part": "16",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Belgium named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped; then Switzerland's Landlocked shown. (2) One look at the region's labeled map, about a minute, Iberia, France and the Low Countries, the German-speaking three, Italy, then the five microstates as dots, with the Alps; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Austria and Switzerland asked back to back; the microstates named and tapped only; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on western Europe's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l17": {
+      "part": "17",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Ireland named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the British Isles, the Nordic five, then the Baltic three, with the North Sea and the Baltic Sea; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Sweden and Norway, Latvia and Lithuania asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on the British Isles and the Nordic and Baltic countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l18": {
+      "part": "18",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Moldova named and tapped, its flag shown and the country tapped, then a neighbor and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, Poland to Hungary, then Romania and Moldova, then Belarus, Ukraine and Russia, with the Black Sea; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Czechia and Slovakia asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on central and eastern Europe's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l19": {
+      "part": "19",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Croatia named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the Balkans on the zoomed map, then Greece, Bulgaria, Cyprus and Malta, with the Adriatic and the Aegean; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Slovenia and Slovakia, Serbia and Kosovo asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on the Balkans' and southern Europe's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l20": {
+      "part": "20",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Jordan named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, Türkiye, the Levant on the zoomed map, then Iraq and Iran, with the Bosporus and the Persian Gulf; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Iran and Iraq asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on Türkiye, the Levant, Iraq and Iran, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l21": {
+      "part": "21",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Oman named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the Arabian Peninsula and the Gulf states on the zoomed map, then Egypt and the Maghreb from east to west, and Sudan, with the Red Sea, the Suez Canal and the Strait of Hormuz; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Qatar and Bahrain asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on the Arabian Peninsula's and North Africa's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l22": {
+      "part": "22",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Ghana named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the coast from Senegal to Nigeria in order, then Cape Verde, with the Gulf of Guinea; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Guinea and Guinea-Bissau asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on West Africa's coastal countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l23": {
+      "part": "23",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Chad named and tapped, its flag shown and the country tapped, then a neighbor and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, the Sahel from Mauritania to Chad, then Cameroon to the two Congos, with the Sahara, the Sahel and the Congo River; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); the two Congos asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on the Sahel's and Central Africa's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l24": {
+      "part": "24",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Kenya named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the Horn, then the Great Lakes states, then Kenya and Tanzania, with the Nile and Lake Victoria; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Rwanda and Burundi asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on East Africa's and the Horn's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l25": {
+      "part": "25",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Zambia named and tapped, its flag shown and the country tapped, then a neighbor and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, Angola and Mozambique as the two coasts, the inland states, South Africa with the two states inside and beside it, then Madagascar and Mauritius, with the Kalahari; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Zambia and Zimbabwe asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on Southern Africa's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l26": {
+      "part": "26",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Nepal named and tapped, its flag shown and the country tapped, then a neighbor and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, the subcontinent, then its northern rim and its islands, with the Himalayas, the Indus, the Ganges, the Arabian Sea and the Bay of Bengal; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Nepal and Bhutan asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on South Asia's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l27": {
+      "part": "27",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Uzbekistan named and tapped, its flag shown and the country tapped, then a neighbor and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, the five Central Asian states on the zoomed map, then the three of the Caucasus, with the Caspian Sea; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); Armenia and Azerbaijan, Kyrgyzstan and Tajikistan asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on Central Asia's and the Caucasus's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l28": {
+      "part": "28",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Laos named and tapped, its flag shown and the country tapped, then a neighbor and its water (Landlocked) tapped, each shown. (2) One look at the region's labeled map, about a minute, China, Mongolia, the two Koreas, Japan and Taiwan, then the mainland five, with the Yangtze, the Mekong and the Taiwan Strait; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); the two Koreas asked back to back; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on East Asia's and mainland Southeast Asia's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l29": {
+      "part": "29",
+      "does": "About 12 minutes. (1) Shown first, half a minute: Indonesia named and tapped, its flag shown and the country tapped, then a neighbor and its water tapped, each shown. (2) One look at the region's labeled map, about a minute, the island states from Malaysia to Timor-Leste, then Australia, New Zealand and Papua New Guinea, then the Pacific island states as dots in their three groups, with the South China Sea and the Strait of Malacca; never shown again. (3) Recall only, about 8 minutes: each place named and tapped (about 3 minutes), then lit and named (about 2), then each country's flag shown and the country tapped (about 2), then half of them with a neighbor and the water tapped, or Landlocked (about 1); the Pacific island states named and tapped only; a miss comes back three items later until right; from the second set on, a fifth of each set is due places of earlier lessons, unmarked. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water, and what the country is in one line; a flag item lights the country with its flag beside it. The check gives it all at the end.",
+      "check": "12 items on island Southeast Asia's and the Pacific's countries, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 5 named and tapped, 3 lit and named, 2 flags with the country tapped, 2 with a neighbor and the water tapped (or Landlocked); at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l30": {
+      "part": "30",
+      "does": "About 12 minutes. (1) Shown first, half a minute: the Strait of Gibraltar named, the tap on it shown, its line read. (2) One look at the region's labeled map, about a minute, the seas and straits not yet placed, then the ranges, the deserts and the rivers; never shown again. (3) Recall only, about 8 minutes: the new seas, straits and canals named and tapped, then lit and named, then the ranges, deserts and rivers the same way; the ones placed in the region lessons come back due as a third of every set; a miss comes back three items later until right. (4) The check, about 2 minutes.",
+      "feedback": "From the app, at once after each answer: the right place lit on the same blank map, the tap marked beside it after a miss, and one line naming the unit it sits in, its neighbors and its water: the countries or states it runs through or lies between, and why a ship or a story names it. The check gives it all at the end.",
+      "check": "12 items on the world's seas, straits, rivers, ranges and deserts, drawn at random on the blank map, each in the form its last set did not use, feedback at the end: 8 named and tapped, 4 lit and named; at least 10 of 12.",
+      "why": [
+        "G1",
+        "G2",
+        "G3",
+        "G4",
+        "D5",
+        "D6",
+        "R1",
+        "R2",
+        "R7",
+        "D4",
+        "R9",
+        "R4"
+      ]
+    },
+    "l31": {
+      "part": "31",
+      "does": "About 12 minutes. (1) Shown first, about a minute: one pair worked for the learner, both places lit, the straight-line miles, then the distance band and the travel band chosen with the reason. (2) Ten pairs inside the United States, then ten across the world, each two bands chosen, about 8 minutes; a miss comes back three items later until right. (3) The check, about 3 minutes, on pairs never asked as a pair.",
+      "feedback": "From the app, at once after each pair: both places lit on the blank map, the straight-line miles printed beside the bands, and one line on the travel band (a drive, a flight, an ocean crossed). The check gives it all at the end.",
+      "check": "10 pairs of places never asked as a pair (5 in the United States, 5 across the world), the distance band and the travel band chosen, feedback at the end; both bands right on at least 8.",
+      "why": [
+        "G7",
+        "D5",
+        "D6",
+        "R2",
+        "R7",
+        "D4"
+      ]
+    },
+    "l32": {
+      "part": "32",
+      "does": "About 12 minutes. (1) Shown first, about a minute: one place never met, given as a story gives it, the clue that decides its region marked and the tap on the region shown. (2) Ten places never met, each from a story, tapped by region, about 5 minutes. (3) The traps as contrast items, about 3 minutes: Reno against San Diego, Rome against New York, Europe against the United States, South America against North America, the size of Africa; the true map shown after each answer. (4) The check, about 3 minutes, on places never practised.",
+      "feedback": "From the app, at once after each answer: the right region lit, the tap marked beside it after a miss, and one line naming the clue that decided the region; after a trap item, the true map with both places lit. The check gives it all at the end.",
+      "check": "10 places never practised, each given as a story gives it (a town and its country or state, a port and its coast, a region and its neighbor), tapped by region on the blank world map, feedback at the end; at least 8 of 10.",
+      "why": [
+        "G4",
+        "G5",
+        "R8",
+        "D5",
+        "D6",
+        "R7",
+        "D4"
+      ]
+    },
+    "l33": {
+      "part": "33",
+      "does": "About 12 minutes. (1) Shown first, half a minute: one item of each kind replayed done (a name tapped, a lit place named, a flag, a neighbor and the water, a story place, a pair of bands). (2) A mixed set of due places from every part, in the form each was not last asked, with two places never met and two pairs, about 6 minutes; a miss comes back three items later until right. (3) The check, about 5 minutes. Then the gate 2 test as the retest, in two sittings a week or more apart.",
+      "feedback": "From the app, at once after each answer in the set: the right place lit, the tap beside it after a miss, its one line; the check and the retest give it all at the end.",
+      "check": "30 items drawn from every part, mixed, on the blank world and US maps, feedback at the end: 12 names tapped, 4 lit places named, 4 flags to their country, 4 places with a neighbor and the water, 3 places never practised placed from a story, 3 pairs given both bands; at least 25 of 30.",
+      "why": [
+        "G1",
+        "G3",
+        "R4",
+        "R8",
+        "R9",
+        "D5",
+        "D6",
+        "R7",
+        "D4"
+      ]
+    }
+  },
+  "pilot": "l16",
   "designedOn": "2026-10-12",
   "approved": {
     "goal": {
@@ -300,6 +1296,83 @@ the test subject's data shape; no other subject, lesson or engine code). Waits f
 - **Delivery**: the `place` ask, the `map` block, the map data, the place generators and the borders-and-water form are
   not built; flags (emoji), the one line (`reason`), naming (`text`) and the distance band (`choose`) are. Everything
   not built is built before the pilot, or the subject waits.
+
+## Gate 4
+
+Written 2026-10-12, blind (the record, the notes gate 1 cites, `docs/lesson-standard.md` sections 3, 4 and 10, this
+skill, `tools/design/` and the test subject's data shape; no other subject, lesson, learner view or engine code). The
+region lists below are facts reused from the first plan under History.
+
+- **The form** (`form`): every answer is the place itself, a tap on a blank north-up map or its name typed, as the real
+  moment and the gate 2 test ask (D6, G1). Each check is these actions, drawn at random from the part, in the form the
+  lesson's last set did not use, feedback at the end (a recall check: for a fact subject the places are the content and
+  the gate 2 test draws from the same lists; the new cases are the other form and the draw, and the cases never met are
+  part 32's and the test's two sittings a week apart, D1).
+- **The load sets the size.** A part is one sitting of about 12 minutes: a worked item, a minute's look, about 8
+  minutes of recall, the check. A country is asked four ways (tap, name, flag, neighbor and water), so a country part
+  holds about 10 to 14 countries plus its water; a state part 8 to 13 states asked three ways; a city or capital part
+  about 20 points asked two ways. Every big region of the topic list is therefore two parts.
+- **Topics.** Flags and the one line go on every part that has a country (12 to 29, and 33); "what a place borders" on
+  every state part (3 to 7) and every country part, where the neighbor-and-water ask is practised; each world region
+  part also places its own seas and rivers ("the world's water…"), so the water ask can be answered before part 30.
+
+| Part | Title | What it holds | Check |
+|---|---|---|---|
+| 1 | The world on one map | 7 continents, 5 oceans, the regions the later parts use | 10 of 12 |
+| 2 | The map of the United States | the coasts, the 4 regions, the ranges, the rivers, the Great Lakes | 10 of 12 |
+| 3 | The West | 13 states, Alaska and Hawaii on insets | 10 of 12 |
+| 4 | The Midwest | 12 states | 10 of 12 |
+| 5 | The South, from Texas to Kentucky | 8 states | 10 of 12 |
+| 6 | The South, the Atlantic side | 8 states and DC | 10 of 12 |
+| 7 | The Northeast | 9 states, then the lower 48 once | 10 of 12 |
+| 8, 9 | The cities west / east of the Mississippi | about 20 cities each | 10 of 12 |
+| 10, 11 | The capitals, West and Midwest / South and Northeast | 25 each, the ones already placed due | 10 of 12 |
+| 12 | Canada | 10 provinces, 3 territories, Hudson Bay; 3 flags | 10 of 12 |
+| 13 | Mexico and Central America | Mexico and the 7 of the isthmus, the Panama Canal | 10 of 12 |
+| 14 | The Caribbean | the big islands, the small island states as dots | 10 of 12 |
+| 15 | South America | 12 countries and French Guiana, the Andes, the Amazon | 10 of 12 |
+| 16 | Europe, west | Iberia to Italy, 10, and the 5 microstates | 10 of 12 |
+| 17 | Europe, north | the British Isles, the Nordic 5, the Baltic 3 | 10 of 12 |
+| 18 | Europe, central and east | Poland to Russia, 9, the Black Sea | 10 of 12 |
+| 19 | Europe, the Balkans and the south | 12, the Adriatic, the Aegean | 10 of 12 |
+| 20 | Türkiye, the Levant, Iraq and Iran | 8, the Bosporus, the Persian Gulf | 10 of 12 |
+| 21 | Arabia and North Africa | 13, the Red Sea, Suez, Hormuz | 10 of 12 |
+| 22 | West Africa, the coast | Senegal to Nigeria and Cape Verde, 12 | 10 of 12 |
+| 23 | The Sahel and Central Africa | Mauritania to the two Congos, 12 | 10 of 12 |
+| 24 | East Africa and the Horn | 12, the Nile, Lake Victoria | 10 of 12 |
+| 25 | Southern Africa | 12, the Kalahari | 10 of 12 |
+| 26 | South Asia | 8, the Himalayas, the Indus, the Ganges | 10 of 12 |
+| 27 | Central Asia and the Caucasus | 8, the Caspian | 10 of 12 |
+| 28 | East Asia and mainland Southeast Asia | 11, the Yangtze, the Mekong | 10 of 12 |
+| 29 | Island Southeast Asia and the Pacific | 10, the Pacific island states as dots | 10 of 12 |
+| 30 | The world's water, mountains and deserts | the seas, straits, ranges, deserts and rivers not yet placed | 10 of 12 |
+| 31 | How far | distance and travel bands | 8 of 10 new pairs |
+| 32 | Placing a place you have never heard of | story places, then the traps | 8 of 10 new places |
+| 33 | The whole world, mixed | every list | 25 of 30; then the gate 2 test |
+
+**Why this order.** The owner's "the world first", and the units before the places in them (G4): the continents and
+regions, then the US map's regions, then the states region by region, the cities and capitals that hang on the states,
+then the neighbors outward and the world region by region; then the water and mountains that tie the regions together,
+the two judging questions that draw on everything, and the whole. **Adds up**: parts 1 to 30 hold every list the gate 2
+test draws from, in all four of its fact forms; 31 and 32 are its two judging tests; 33 is a smaller test, and the test
+itself is its retest in two sittings. If every check passes and the returns hold, the test passes. "If the learner did
+only this, would they be closer?" Yes for every part: each is a share of the places a story names, answered as the
+moment asks.
+
+## Gate 5
+
+Every fact lesson has one shape (D5, G2, G3, R2, R7): one item done for the learner, the one look at the labeled map
+(about a minute, never again), recall in the practice's forms with misses back three items later, then the check; from
+lesson 2 a fifth of each later set is due places of earlier lessons (R9). The two judging lessons open with a worked
+case; lesson 32 holds the alignment traps as their own items (G5). Reading is the one look, under a tenth of a lesson
+(D4). 33 blocks, one per part, `l1` to `l33`.
+
+**The pilot is l16, Europe, west, not l1.** Lesson 1 places big shapes in two forms and cannot fail on what is most
+likely to fail: small shapes on a phone (Luxembourg, Belgium, the microstates), zoom, the flag ask, the
+neighbor-and-water ask with Landlocked (Switzerland, Austria), the one line per country, and whether twelve places
+asked four ways fit in twelve minutes. Lesson 16 carries every one of these, so its failure sends back the part size
+(gate 4) or a delivery item before 32 more lessons are built on them. It needs no earlier lesson: its due mix starts
+once one is built.
 
 # geography: design record (build-subject skill)
 
