@@ -259,6 +259,7 @@ const SAY = {
   zoomReset: 'Show the whole map',
   placeOne: 'Tap the place on the map. Pinch to zoom in and drag to move the map.',
   placeNeighbor: 'Tap a place that shares a border with it.',
+  placeWorked: 'Done for you: the answer is on the map. You tap it yourself in the questions after this.',
   placeWater: 'Now tap the water it touches, or tap Landlocked.',
   placeLandlocked: 'Landlocked',
   placeNextTo: name => `A place next to ${name}`,

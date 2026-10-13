@@ -6,6 +6,8 @@
 //   o  { scope, lit: [placeId], focus: [placeId], labels: true | [placeId], marks: [{ x, y, state }], ask: askId | null, view: [cx, cy, k] | null, beside: html }
 //      `beside` is a control that stands in the row of the zoom buttons, to their left (the button Landlocked: one row, so the map and the button both fit on a phone)
 //      `ask` makes the map the thing a tap answers; `state` is 'neutral', 'right' or 'wrong'; `view` is the part of the map it opens on (a panel)
+//      `focus` is the place a map is about (the country of a neighbor and its water): filled in full, and the land lit round it is drawn as a tint (`near`),
+//      so the place asked about is never mistaken for one of its neighbors
 
 // the pixels each of these takes on the screen, whatever the zoom: a name's height, a dot, a mark
 const MAP_PX = { label: 12, labelEdge: 3, dot: 5, mark: 9, markDot: 3, leadGap: 2 };
@@ -44,7 +46,8 @@ const mapZoomHtml = (beside = '') => `<div class="mapzoom">${beside}<button type
 // in the order the region lists, the insets' frames, lit ranges and regions (over the land, see-through), dots, names, marks.
 function mapHtml(map, o = {}){
   const geom = placeGeom(map), [width, height] = map.size, lit = new Set(o.lit || []), focus = new Set(o.focus || []);
-  const mark = id => (lit.has(id) ? ' lit' : '') + (focus.has(id) ? ' focus' : '');
+  const near = id => focus.size > 0 && lit.has(id) && !focus.has(id) && map.land.includes(geom.byId[id].kind);
+  const mark = id => (lit.has(id) ? ' lit' : '') + (near(id) ? ' near' : '') + (focus.has(id) ? ' focus' : '');
   const kindsOf = kinds => kinds.flatMap(kind => geom.places.filter(p => p.kind === kind));
   const water = geom.places.filter(p => PLACE_WATER_KINDS.includes(p.kind) && lit.has(p.id));
   const blank = kindsOf(map.draw), over = geom.places.filter(p => lit.has(p.id) && !map.draw.includes(p.kind) && !PLACE_WATER_KINDS.includes(p.kind));
@@ -79,9 +82,10 @@ const placeWaterLit = (map, ask, answer) => [...new Set([...placeWaterOf(map, as
 function placeLitIds(map, ask, answer){
   return ask.mode === 'neighbor-water' ? [...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)] : placeRightIds(ask);
 }
-// the names a finished question puts on its map: the lit water of a neighbor and its water, so a sea can be told from the next; and the right place of a
-// question that was missed, so its name is learned with where it is (the map has no other names)
-const placeLabelIds = (map, ask, answer, missed = false) => ask.mode === 'neighbor-water' ? placeWaterLit(map, ask, answer) : missed ? placeRightIds(ask) : [];
+// the names a finished question puts on its map: for a neighbor and its water, the place itself, every neighbor and the lit water, so each lit shape says
+// what it is; and the right place of a question that was missed, so its name is learned with where it is (the map has no other names)
+const placeLabelIds = (map, ask, answer, missed = false) => ask.mode === 'neighbor-water'
+  ? [ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)] : missed ? placeRightIds(ask) : [];
 // each tap of an answer with the state the map marks it with: right when it is on a right place
 function placeTapsOf(map, ask, answer, marked){
   if(ask.mode !== 'neighbor-water'){
@@ -110,11 +114,12 @@ function placeHtml(data, ask, st, ctx){
     labels: marked ? placeLabelIds(map, ask, answer, missed) : [], focus: marked && nw ? [ask.of] : [], beside: landlocked });
   return `<div class="stepopen prompt placeask" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>${hint}${view}</div>`;
 }
-// the map of a worked question: the right place lit and the tap shown at its label point
+// the map of a worked question: the right place lit and the tap shown at its label point, under a line that says it is done for the learner (the map
+// takes no tap here; the questions after it do)
 function placeWorkedHtml(data, item){
   return (item.asks || []).filter(a => a.kind === 'place').map(ask => {
     const map = mapOf(ask.map), lit = placeLitIds(map, ask), at = lit.map(id => mapPlace(map, id).at).filter(Boolean)[0];
-    return `<p class="stem">${esc(paras(ask.prompt).join(' '))}</p>${mapHtml(map, { scope: `worked|${item.id}|${ask.id}`, lit, labels: placeLabelIds(map, ask), focus: ask.mode === 'neighbor-water' ? [ask.of] : [], marks: ask.mode === 'neighbor-water' || !at ? [] : [{ x: at[0], y: at[1], state: 'right' }] })}`;
+    return `<p class="stem">${esc(paras(ask.prompt).join(' '))}</p><span class="forline">${esc(SAY.placeWorked)}</span>${mapHtml(map, { scope: `worked|${item.id}|${ask.id}`, lit, labels: placeLabelIds(map, ask), focus: ask.mode === 'neighbor-water' ? [ask.of] : [], marks: ask.mode === 'neighbor-water' || !at ? [] : [{ x: at[0], y: at[1], state: 'right' }] })}`;
   }).join('');
 }
 

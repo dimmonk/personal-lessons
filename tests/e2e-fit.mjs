@@ -130,12 +130,12 @@ export async function fitChecks(env, c) {
       const shown = await page.evaluate(() => {
         const map = FC.maps['europe-west'], litIds = [...document.querySelectorAll('.item .mp.lit')].map(e => e.dataset.place);
         const water = litIds.filter(id => ['sea', 'ocean', 'strait'].includes(mapPlace(map, id).kind));
-        const names = [...document.querySelectorAll('.item .mapsvg text.ml')].map(t => t.textContent);
-        return { water, names, wanted: water.map(id => mapPlace(map, id).name) };
+        const names = [...document.querySelectorAll('.item .mapsvg text.ml')].map(t => t.textContent), of = Q.list[Q.at].item.values.place;
+        return { water, names, wanted: [...new Set([of, ...placeNeighborsOf(map, of), ...water])].map(id => mapPlace(map, id).name) };
       });
       const want = [...new Set([...at.water, at.wrongId])].sort();
       c.check(JSON.stringify([...shown.water].sort()) === JSON.stringify(want), `the feedback of ${place} lights the water ${shown.water.join(', ')}, not the water it touches and the water tapped (${want.join(', ')})`);
-      c.check(JSON.stringify([...shown.names].sort()) === JSON.stringify([...shown.wanted].sort()) && shown.names.length > 0, `the feedback of ${place} names ${JSON.stringify(shown.names)} on the map, not the water lit (${JSON.stringify(shown.wanted)})`);
+      c.check(JSON.stringify([...shown.names].sort()) === JSON.stringify([...shown.wanted].sort()) && shown.names.length > 0, `the feedback of ${place} names ${JSON.stringify(shown.names)} on the map, not the place, its neighbors and the water lit (${JSON.stringify(shown.wanted)})`);
     } else c.check(false, 'no neighbor-and-water question of a country on a sea in Geography\'s lesson 16');
     await context.close();
   }

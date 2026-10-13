@@ -430,7 +430,7 @@ export const FAULTS = [
   { check: 'X46', name: 'a tap on the circle of a microstate named for the country under it', only: MAP_SEEN,
     edits: [replace('app/lessons/place.js', 'const circle = (kind ? dot(v => v === kind) : null) || dot(v => map.land.includes(v));', 'const circle = null;')] },
   { check: 'X46', name: 'a worked question shown without the words of its question', only: MAP_SEEN,
-    edits: [replace('app/lessons/place-view.js', '<p class="stem">${esc(paras(ask.prompt).join(\' \'))}</p>${mapHtml(map, { scope: `worked|', '${mapHtml(map, { scope: `worked|')] },
+    edits: [replace('app/lessons/place-view.js', '<p class="stem">${esc(paras(ask.prompt).join(\' \'))}</p><span class="forline">', '<span class="forline">')] },
   { check: 'X46', name: 'the border of a country drawn in a color close to the country\'s own', only: MAP_SEEN,
     edits: [replace('app.css', '.mp{fill:var(--rule);stroke:var(--dim);', '.mp{fill:var(--rule);stroke:var(--disabled);')] },
   // a group of places made into questions (9: X47)
@@ -463,7 +463,7 @@ export const FAULTS = [
   { check: 'X47', name: 'the water that was tapped not lit in the feedback of a neighbor and its water', only: PLACE_SEEN,
     edits: [replace('app/lessons/place-view.js', '[...new Set([...placeWaterOf(map, ask.of), placeWaterTapped(map, answer && answer.w)].filter(Boolean))]', 'placeWaterOf(map, ask.of)')] },
   { check: 'X47', name: 'the lit water of a neighbor and its water left without its names', only: PLACE_SEEN,
-    edits: [replace('app/lessons/place-view.js', "ask.mode === 'neighbor-water' ? placeWaterLit(map, ask, answer) : missed", "ask.mode === 'neighbor-water' ? [] : missed")] },
+    edits: [replace('app/lessons/place-view.js', '[ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)]', '[ask.of, ...placeNeighborsOf(map, ask.of)]')] },
   sound({ check: 'X8', name: 'a sound system made when a sung question opens',
     edits: [replace('app/lessons/sing-run.js', "  singEnsure(inst, answered);\n  wireSingControls();", "  singEnsure(inst, answered);\n  audioContext();\n  wireSingControls();")] }),
   sound({ check: 'X8', name: 'the microphone asked for when a sung question opens',

@@ -222,6 +222,13 @@ async function suite(app) {
   check(!/ lit"/.test(unmarked) && unmarked.includes('mk-neutral'), 'in a check nothing is lit before the end');
   const nwOpen = placeHtml({}, border('belgium'), { many: { n: [5, 5, 1] } }, { scope: 's' }), nwShut = placeHtml({}, border('belgium'), { many: {} }, { scope: 's' });
   check(nwOpen.includes('data-place-landlocked') && !nwShut.includes('data-place-landlocked'), 'Landlocked is offered once a neighbor is tapped');
+  // after a neighbor and its water, the place asked about is filled in full and its neighbors are a tint, and every one of them is named (Switzerland)
+  const swiss = placeHtml({}, border('switzerland'), { answer: { n: at('europe-west', null, 2.35, 48.85), w: 'none' }, many: {}, marks: true }, { scope: 's' });
+  const cls = id => (swiss.match(new RegExp(`class="mp ([^"]*)" data-place="${id}"`)) || [, ''])[1];
+  same([cls('switzerland'), cls('france'), cls('italy')], ['mp-country focus', 'mp-country lit near', 'mp-country lit near'], 'Switzerland is the place in focus and its neighbors are lit as a tint');
+  same(named(swiss).sort(), ['Austria', 'France', 'Germany', 'Italy', 'Liechtenstein', 'Switzerland'], 'Switzerland and each of its neighbors are named on the map');
+  const workedNw = app.placeWorkedHtml({}, { id: 'w', asks: [border('switzerland')] });
+  check(workedNw.includes(SAY.placeWorked) && !workedNw.includes('data-map-ask') && /class="mp mp-country focus" data-place="switzerland"/.test(workedNw), 'a worked map says it is done for the learner, takes no tap, and fills the place it is about');
 
   /* ---------- the problems a lesson is refused for ---------- */
   const maps = FC.maps;
@@ -254,6 +261,9 @@ const FAULTS = [
   ['a tap at sea off a shore never on its land', s => s.replace('if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;', 'return null;')],
   ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains')],
   ['a missed place lit with no name', s => s.replace(': missed ? placeRightIds(ask) : [];', ': [];'), 'app/lessons/place-view.js'],
+  ['the neighbors of a neighbor and its water left without their names', s => s.replace('[ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)]', 'placeWaterLit(map, ask, answer)'), 'app/lessons/place-view.js'],
+  ['the neighbors drawn as strong as the place they are next to', s => s.replace("(near(id) ? ' near' : '')", "''"), 'app/lessons/place-view.js'],
+  ['a worked map that does not say it is done for the learner', s => s.replace('<span class="forline">${esc(SAY.placeWorked)}</span>', ''), 'app/lessons/place-view.js'],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];

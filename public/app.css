@@ -548,7 +548,8 @@ table.ownsum td:last-child{white-space:normal}
 .mp-river.lit,.mp-coast.lit,.mp-canal.lit{fill:none;stroke:var(--accent);stroke-width:5px;stroke-linecap:round;stroke-linejoin:round}
 .mp-coast,.mp-canal{fill:none;stroke:none}
 .mp-dot.lit{fill:var(--accent);stroke:var(--text)}
-.mp.focus{stroke:var(--accent);stroke-width:2.2px}
+.mp.lit.near{fill-opacity:.38}
+.mp.focus{fill:var(--accent);fill-opacity:1;stroke:var(--text);stroke-width:2.2px}
 .ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-linejoin:round;pointer-events:none}
 .ml-lead{stroke:var(--text);stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none}
 .ml-sea,.ml-ocean,.ml-strait,.ml-lake,.ml-river,.ml-canal,.ml-coast,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
