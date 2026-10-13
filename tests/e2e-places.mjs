@@ -132,6 +132,20 @@ export async function X47(env) {
   c.check(/The review is done/.test(await env.screenText(page)), 'the review does not end after its one question');
   await context.close();
 
+  // a lesson opens where it was put down: at a group, and at the check's first screen too
+  const resumed = await env.freshPage(c);
+  await env.openSubject(resumed.page, 'atlas');
+  await env.clickVisible(resumed.page, '#screen [data-l="l2"]');
+  for (const [name, at] of [['the second group', STEP.names], ['the check', STEP.check]]) {
+    await jump(resumed.page, at);
+    await resumed.page.reload();
+    await env.openSubject(resumed.page, 'atlas');
+    await env.clickVisible(resumed.page, '#screen [data-l="l2"]');
+    const opened = await resumed.page.evaluate(() => LESSON.at);
+    c.check(opened === at, `a lesson put down at ${name} (step ${at}) opens at step ${opened}`);
+  }
+  await resumed.context.close();
+
   // a phone's width and a desktop's: a name to tap, a flag, a lit place to name and a neighbor and its water of a group
   for (const width of [360, 1200]) {
     const wide = await env.freshPage(c, width);

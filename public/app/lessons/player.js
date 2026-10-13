@@ -8,9 +8,14 @@ let LESSON = null;
 const stepTotal = lesson => lesson.flow.length + 2;
 const checkStep = lesson => lesson.flow.length + 1;
 
+// Where a lesson opens: the step the learner put it down at, in the revision they were on (the check's first screen is a step like the others),
+// and the why when they have not started, changed revision, or finished the check (then "Practice again" and the lesson's own screens take over).
+function lessonResumeAt(data, subjectId, lesson){
+  const saved = seenOf(subjectId)[lesson.id];
+  return saved && saved.rev === lesson.rev && saved.at > 0 && saved.at <= checkStep(lesson) && !lessonDone(data, subjectId, lesson) ? saved.at : 0;
+}
 function openLesson(subj, lessonId){
-  const data = FC.get(subj.id), lesson = data.lessons[lessonId], saved = seenOf(subj.id)[lessonId];
-  const resume = saved && saved.rev === lesson.rev && saved.at > 0 && saved.at < stepTotal(lesson) - 1 ? saved.at : 0;
+  const data = FC.get(subj.id), lesson = data.lessons[lessonId], resume = lessonResumeAt(data, subj.id, lesson);
   LESSON = { subj, data, lesson, at: resume, run: newRunId(), worked: null };
   APP.subjectId = subj.id; touch(subj.id);
   if(!resume) logEvent('start', { subject: subj.id, lesson: lessonId, rev: lesson.rev });

@@ -425,6 +425,8 @@ export const FAULTS = [
     edits: [replace('app/lessons/queue.js', 'if(inst.seed === undefined || (inst.ref && isPlaceGen(Q.data.gens[inst.ref.gen]))) return { ...inst, redo: true };', 'if(inst.seed === undefined) return { ...inst, redo: true };')] },
   { check: 'X47', name: 'the tries of a place group filed under the group alone', only: PLACE_SEEN,
     edits: [replace('app/lessons/place-gen.js', 'const placeKey = (genId, placeId) => genId + PLACE_KEY_JOIN + placeId;', 'const placeKey = (genId, placeId) => genId;')] },
+  { check: 'X47', name: 'a lesson put down at the check that opens at the why', only: PLACE_SEEN,
+    edits: [replace('app/lessons/player.js', 'saved.at <= checkStep(lesson)', 'saved.at < checkStep(lesson)')] },
   sound({ check: 'X8', name: 'a sound system made when a sung question opens',
     edits: [replace('app/lessons/sing-run.js', "  singEnsure(inst, answered);\n  wireSingControls();", "  singEnsure(inst, answered);\n  audioContext();\n  wireSingControls();")] }),
   sound({ check: 'X8', name: 'the microphone asked for when a sung question opens',

@@ -46,7 +46,7 @@ const lessonsDone = subj => subj.lessons.filter(l => lessonIsDone(subj, l.id)).l
 const partsDone = subj => subj.parts.filter(p => subj.lessons.some(l => l.part === p.id && lessonIsDone(subj, l.id))).length;
 const pctOf = subj => subj.parts.length ? Math.round(100 * partsDone(subj) / subj.parts.length) : 0;
 // where the learner has put a lesson down: a saved place beyond the start, in the lesson's current revision
-const lessonPlace = (subj, l) => { const s = seenOf(subj.id)[l.id]; return s && s.rev === l.rev && s.at > 0 && s.at < stepTotal(dataOf(subj).lessons[l.id]) - 1 ? s.at : 0; };
+const lessonPlace = (subj, l) => lessonResumeAt(dataOf(subj), subj.id, dataOf(subj).lessons[l.id]);
 function statusOf(subj){
   const d = partsDone(subj);
   if(subj.parts.length && d === subj.parts.length) return 'done';
