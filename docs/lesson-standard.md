@@ -116,7 +116,7 @@ Step = { show: [Block], title }            // a teaching screen: a rule, a wrong
 Set  = { items: [ItemRef | [ItemRef, ItemRef]],   // an inner pair is asked back to back, its order random
          order: 'listed' | 'shuffle', support?: Support, seconds?: 15 | 20,
          mix?: { from: [lessonId], share }, over?: 'busy', plan?: true }
-ItemRef = itemId | { gen: genId, n, with?: params } | { sing: { task, ...params }, n }
+ItemRef = itemId | { gen: genId, n, with?: params | { form?, place? } } | { sing: { task, ...params }, n }
 ```
 
 A lesson is `live` only through a passing entry in the design record's `tried` (V69); the lesson itself carries no
@@ -132,7 +132,8 @@ built, and cannot be practiced again. The results screen shows its line on its d
 ### 3.4 Checks and pass rules
 
 ```js
-Check = { items: [ItemRef] | { draw: { strands, n } }, feedback: 'at-end' | 'after-each', pass: [PassRule],
+Check = { items: [ItemRef] | { draw: { strands, n } | { gen, split: { [form]: n }, only?: { [form]: [placeId] } } },
+          feedback: 'at-end' | 'after-each', pass: [PassRule],
           order?: 'listed' | 'shuffle', recall?: true, spoken?: true, seconds?: 15 | 20, retest?: days }
 PassRule = { ask?, where?: { facet: value }, right?: { min }, wrong?: { max }, slip?, max?, of?: Text }
 ```
@@ -150,6 +151,16 @@ PassRule = { ask?, where?: { facet: value }, right?: { min }, wrong?: { max }, s
 - A drawn check (`draw`) picks `n` items of the named strands at random, the same run drawing the same; items no
   earlier check or retest of the lesson asked come first, and an item that reads the learner's own answers is left out
   until they are entered. It is how a mock interview is built.
+- **A check drawn from a place group** (`draw: { gen, split, only? }`) is as long as its split adds up to and holds exactly that many of
+  each form (`tap`, `name`, `flag`, `border`, 3.5), whatever the draw. Within a form the places are drawn at random, the same run drawing
+  the same, and the draw prefers (1) a place the draw has not used yet and (2) one the learner last met in another form (from the record,
+  5.1), so a check does not ask the same place twice while another can be asked, nor the form the place was last asked in while another
+  place can be. `only: { tap: [andorra, monaco] }` keeps those places to that form: they are drawn in it and in no other (the same list
+  is applied to the group's returns in a lesson and in the review, 6.3). The form with the fewest places to choose from is drawn first.
+  The pass rules count the forms by the facet `form` (a rule `{ where: { form: 'flag' }, right: { min: 2 } }`), and a rule cannot need more
+  of a form than the split asks (V72). V70 refuses a form the group does not ask, a split that adds up to nothing, a form asked for more
+  places than the group can be asked in it (after `only`), a place in `only` that the group does not have or cannot ask in that form, or
+  a place kept to two forms.
 - `spoken: true` reads each question aloud and holds its words behind "Show the words".
 - A check never has support (V79). A lesson is done when its check has one complete run, passed or not.
 
@@ -182,6 +193,38 @@ returns the derived values. `make` is pure: the same seed gives the same item. T
 `choose` puts its answer in a slot (`right: '{verdict}'`) or names values (the ask's `answer`, an option's `value`). A
 try stores the seed, never the numbers. Money is made in whole cents and compared by the stated rounding, so no float
 edge decides a mark.
+
+**A place group** is a generator that makes places instead of numbers: a `FC.gen` entry with `places` where a numeric one has `params`
+and `make` (it was chosen over a new source because the strand, the review, the lock, V70 to V77 and the record already treat a generator as
+the thing a strand returns as). Its seed is a choice, not a draw: the seed modulo the number of (place, form) pairs the group can be asked
+in names the pair, so the same seed is the same question and a try stores only its seed.
+
+```js
+{ id, strand, facets?: { [facetId]: valueId },
+  places: { map: regionId, forms: ['tap' | 'name' | 'flag' | 'border'], words: { [form]: Text }, slips?: { [placeId]: slipId },
+            list: [{ id, name, reason: Text, accept: [Entry], flag?: Text }] } }
+```
+
+| Form | The learner is shown | Answers | Made as |
+|---|---|---|---|
+| `tap` | the name | taps the place on the blank map | a `place` ask under a prose block with the name |
+| `name` | the place lit | types its name (`accept`, 3.7) | a `text` ask under a `map` block with `lit` |
+| `flag` | the flag (`flag`, text) | taps the country | a `place` ask under a prose block with the flag |
+| `border` | the name | taps a neighbor, then the water or Landlocked | a `place` ask with `mode: 'neighbor-water'` |
+
+- A place is asked in a form only when it can be: a flag needs the place's `flag`, `border` a place that is ground with neighbors on the map
+  (an island with none is never asked for them). `words` is the prompt of each form the group asks; `reason` is the place's one line, shown
+  after every answer; `slips` keys the slip of tapping a place that is not the one asked, for the taps. Every question a group can make goes
+  through V70 and V74 as an item, and the facet `form` (the form asked) is added to each, so the subject's facet `form` has a value for
+  each form in use.
+- **A try is filed under the place**: `<generatorId>|<placeId>` in `items` (5.1), so each place keeps its own last twelve tries per context,
+  and the engine reads from the record which form each place was last asked in and whether it was missed. A missed place comes back in a
+  lesson as itself, with its seed, three questions on.
+- **In a lesson**, `{ gen, n, with?: { form?, place? } }` asks `n` different places of the group (never one place twice in one reference;
+  V70 refuses an `n` above what the form can offer), the ones missed last time or met longest ago first, in a random order; in the form
+  named by `with.form`, else in the form each place was not last asked in. `with.place` names one place. A group takes no help (V70).
+- **In the review** (6.3) a strand that is a place group is asked on one place: the one missed last time, else the one met longest ago, in a
+  form it was not last asked in.
 
 ### 3.6 Asks
 
@@ -287,6 +330,10 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   point is inside when it is inside any ring; a sea never holds land (the land of the region, `land`, is taken out of it, because
   the outline of a sea overlaps the coast); a river (`line`) is held within a band of 1.4% of the map's width, and a microstate
   (`dot`) within 2% of it, both divided by the zoom the tap was made at, so a tap is as exact as a finger and a zoomed map asks more.
+  **Coasts, straits and canals** are those same shapes with a larger floor under the tap: a coast (`kind: 'coast'`) is a `line` along a
+  shore held within a band of 4% of the map's width (on land or at sea), a canal (`kind: 'canal'`) a `line` held within 2%, and a strait
+  (`kind: 'strait'`) water, like a sea (no hole, and the land under its outline is not it), with a `dot` at its middle so it is found
+  within 2% of the map's width even where its outline is thinner than a finger. See 3.11 for what is built.
 - *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
 - *A neighbor and its water*: two taps in order, kept in `Q.cur.many[askId]` until the second. The first must be inside a
   neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water.
@@ -386,8 +433,9 @@ each question from the learner's range and a seed, and stores its tries under `s
 - A private form into `lines` (Psychology part F), refused by V70 (`NOT_BUILT` in `tests/lessons/rules-shape.mjs`).
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
 - Map data beyond `world`, `us` and `europe-west` (3.11): every other region the design names is a list in `tools/maps/regions.mjs`
-  and a build; a generator that makes place items from the map data; a city, a capital and a part of a state (halves and thirds of a
-  unit) as places; flags drawn from the map data (the emoji flag is text in a prose block); Alaska's Arctic coast as water.
+  and a build; a city, a capital and a part of a state (halves and thirds of a unit) as places; flags drawn from the map data (the emoji
+  flag is text in a prose block); Alaska's Arctic coast as water. The Suez and Panama canals, the straits other than Gibraltar and the
+  world's seas have no data until the regions that hold them are built (3.11, "Coasts, straits and canals").
 - Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
   the range as a lesson step with a check of its own, and a range typed by hand.
 
@@ -407,7 +455,7 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
 ```
 
 - A place's `rings` name entries of the ring table, so a continent or a census region is its members' rings and no outline is stored
-  twice. `kind` is the kind of place (`country`, `state`, `continent`, `region`, `ocean`, `sea`, `lake`, `river`, `range`); `at` and `fs`
+  twice. `kind` is the kind of place (`country`, `state`, `continent`, `region`, `ocean`, `sea`, `strait`, `lake`, `river`, `canal`, `coast`, `range`); `at` and `fs`
   are where its name goes and how big (3.9); `dot` a microstate (5 of them in `europe-west`), a point with a tap radius.
 - The build projects every outline in advance and cuts it to the frame; simplifies it (Douglas-Peucker, 0.1 to 0.35 of a unit)
   keeping every vertex two neighbors share, so a border is the same on both sides; rounds to tenths; drops a ring under 0.04 square units.
@@ -416,12 +464,35 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   is shared on land (a border through a lake is not one; Four Corners is not one), or, for a state and Canada or Mexico, when a
   stretch of 20 km of one's outline runs unbroken within 8 km of the other's; water is every sea, ocean or lake whose outline a coast
   reaches (a Great Lake lies inside the polygons of the states around it, so a lake is a state's water when a share of the lake's area is inside it).
-- Measured on 2026-10-12: `world` 85.4 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 81.2 KB (262 rings, 79 places:
-  50 states and DC, 4 regions, Canada and Mexico, 5 Great Lakes, 10 rivers, 4 ranges, Pacific, Atlantic, Gulf of Mexico),
-  `europe-west` 61.7 KB (129 rings, 48 places: 34 countries, 5 dots, 11 seas, the Atlantic, the Alps, the Pyrenees): 228 KB in all
-  (78 KB compressed), against the design's budget of about 600 KB. Each file is under 400 lines (V47 holds 800).
+- Measured on 2026-10-13: `world` 85.4 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 89.0 KB (343 rings, 82 places:
+  50 states and DC, 4 regions, Canada and Mexico, 5 Great Lakes, 10 rivers, 3 coasts, 4 ranges, Pacific, Atlantic, Gulf of Mexico),
+  `europe-west` 62.0 KB (132 rings, 49 places: 34 countries, 5 dots, 11 seas, the Strait of Gibraltar, the Atlantic, the Alps, the Pyrenees):
+  236 KB in all (about 80 KB compressed), against the design's budget of about 600 KB. Each file is under 450 lines (V47 holds 800).
 - `tests/place-pure.mjs` holds the data to known facts (Switzerland's neighbors and no water, Belgium's North Sea, Michigan's lakes,
-  Nevada landlocked, a tap on each capital inside its country); a change to the lists is checked by it and by V47.
+  Nevada landlocked, a tap on each capital inside its country, the shore of California, New Jersey and Texas on the three coasts, the
+  Strait of Gibraltar found within its radius); a change to the lists is checked by it and by V47.
+
+**Coasts, straits and canals** (what right is for each, 3.7; decided 2026-10-13):
+- **A coast is built** (`us`). It is the shore of some places along one water, worked out by the build from their raw outlines (the stretches of
+  outline that no other place of the layer shares and that lie within `coast.eps` of the water's outline, `coastLines` in `topology.mjs`,
+  `coast(...)` in `specs.mjs`) and stored as open lines of `kind: 'coast'`, one place for each coast: `west-coast` (California, Oregon, Washington
+  on the Pacific), `east-coast` (Maine to Florida on the Atlantic) and `gulf-coast` (Florida to Texas on the Gulf of Mexico). It is scored like a
+  river: right when the tap is within a band of the line, a band of 4% of the map's width (a coast is wide) divided by the zoom, on land or at
+  sea. A coast is named on the labelled map, lit as a thick line in the feedback, never drawn on the blank map, and never what a wrong tap is
+  named as ("You tapped: The Pacific Ocean"). The coast of a country on another map (West Africa's coast, "a port and its coast") is the same
+  helper with that region's states or countries, one line in its list when the region is built; where a design means the countries along a coast,
+  the countries are the places.
+- **A strait is built** as a kind (`strait`), with data for the Strait of Gibraltar (`europe-west`). It is water, drawn from Natural Earth's outline
+  when lit, which for a narrow strait is slivers along its two shores; so it carries a point at the middle of the extent of its pieces, found
+  within the radius of a dot (2% of the map's width, divided by the zoom), and a tap on land inside its outline is not the strait unless it is
+  within that radius. Its dot is drawn only once the strait is lit. Natural Earth's marine layer also holds Malacca, Singapore, Makassar, Taiwan,
+  Korea, Luzon, Hudson, Davis, the Straits of Florida, the Channel and the Mozambique Channel, each one `water(...)` entry in the list of the
+  region that shows it. **Not built**: a strait with no outline in the data (Bering, Hormuz, the Bosphorus, the Dardanelles), which needs a point
+  given by hand in the list (one more field of the spec).
+- **A canal is built** as a kind (`canal`, a line held within a band of 2% of the map's width, the radius of a dot, so a short line is still a
+  target), held by tests on a made-up line; it has **no data**: the Suez and Panama canals are in Natural Earth (`rivers50`) but lie in
+  regions that are not built (the Middle East and North Africa; Mexico and Central America), and the world map shows continents, oceans and
+  regions only. Each is one `line(...)` entry with `kind: 'canal'` in its region's list when that region is built.
 
 ## 4. Feedback, support and fading, order and difficulty
 
@@ -476,7 +547,7 @@ opens on a banner and asks only a choice (V83).
 4. A missed item comes back after three other items (or at the end of the set when fewer remain) until right; a made or
    sung item comes back with a new seed. Checks, retests and baselines never repeat an item: a miss there makes its
    strand due.
-5. Every set and check holds the subject's `mix` (V76): an entry's number below 1 is a share of the items, 1 or more a
+5. Every set and check holds the subject's `mix` (V76; for a check drawn from a place group, the mix of its split): an entry's number below 1 is a share of the items, 1 or more a
    count; `{ facet, equal: true }` needs every value in equal number among the items that carry the facet. V76 reads
    the items a set names (a made one n times); a drawn check is not read.
 6. An exchange raises the pressure on a reply that holds off.
@@ -489,7 +560,7 @@ The storage key names never change (owner).
 
 | Key | Holds |
 |---|---|
-| `pl:<s>:items` | **the only practice record**: `{ [itemId or genId or sing-<task>]: { tries: [Try] } }`, the last twelve tries per item in each context |
+| `pl:<s>:items` | **the only practice record**: `{ [itemId or genId or sing-<task> or genId\|placeId]: { tries: [Try] } }`, the last twelve tries per item in each context (a place of a place group, 3.5, is an item of its own: `g-europe\|france`) |
 | `pl:<s>:notes` | the learner's private data for the subject (section 5.3) |
 | `pl:<s>:seen` | `{ [lessonId]: { rev, at } }`: the revision last opened and the step reached; nothing else |
 | `pl:log`, `pl:app`, `pl:recent` | sessions, "this confused me" reports, claims, and the export |
@@ -575,7 +646,9 @@ baseline never starts one.
 ### 6.3 What it asks
 
 - In its real form: a strand with a generator is asked on a made item (among several generators, drawn by the run, and
-  by matching facets in a retest); else on an item held in reserve (one no lesson names) never tried; with none left,
+  by matching facets in a retest); a strand that is a place group (3.5) is asked on one place of it, the one the learner missed last
+  time, else the one met longest ago, in a form it was not last asked in, and a place kept to one form by the check (`only`, 3.4) only
+  in that form; else on an item held in reserve (one no lesson names) never tried; with none left,
   the least recently seen tried item returns and the repeat is logged. A strand of one item returns as itself.
 - Subject by subject, each subject's part mixed in an order its run fixes; only questions, feedback after each, every
   miss asked again three items later until right. A subject's saved plan is shown once at the start of its part. Back
@@ -701,20 +774,20 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V60 | American English in every string | "colour" in a reason |
 | V62 | No abstract or textbook word | "utilize" in a reason |
 | V69 | The design record, in the skill's terms (its "The record"; this row is right to come from the skill). The record grows gate by gate: no gate's fields before the earlier gates are complete, gate 3 not before `approved.goal`, gate 4 not before `approved.practice`; a subject in the app needs the whole record. Owner words carry a date, the words and where they were said; an ask removed or reworded since the last commit is refused, and one is dropped only on the owner's word, and the topics an ask is taught under only grow without a new word of theirs; each approval's fingerprint binds the screen approved (the goal: the paragraph, the topics, the sentence, the test, and each ask with the topics it is placed under), one approval's words on two subjects are refused, and an approval or a try is cleared or replaced by a later word that keeps the one that stood (`approved.history`, a try's `previous`, an ask's `owner.previous`), never edited or taken away since the last commit; the same words again are refused. Every review names what it reviewed (`Reviewed:` a fingerprint) and counts for that version only; the record's own review (`designReview`, gate 5) must pass before a built subject's content changes; `designedOn` dates the design; a later date is a redesign, which may start new research, design and writing lists (never the asks) and needs its own record review dated on or after it. The subject record mirrors the approved sentence whenever it is written (V80: `approved.goal.sentence`; while a redesign's sentence waits for the owner, the record keeps the one it was built to). The pre-commit hook runs this tier on the staged tree, and the commit-message hook asks for the owner's word on a change to the gates, the tools, the hooks or the research notes. A record deleted since the last commit is refused. Each principle's decides or supports and its read level are its note's marks, one that decides is read in full and names its choice, and every principle is cited by a block once the practice is approved; `opened` holds nothing forbidden; one lesson block per part, its check the part's word for word. A stand-in review that carries a Disclosure does not count. Content is held, measured against the last commit's lock, while an ask or signed-off topic is in no part, the design opened what it may not, or an approval is missing; no lesson past the pilot (a baseline aside) before the pilot's try or review passed; no `live` lesson without a passing `tried` entry | no design record (and 60 more, one per refusal) |
-| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused | an ask of an unknown kind |
+| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
 | V71 | Every lesson's `part` is a part of the design record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order; the pilot is a lesson; and the subject record's `parts` (id and title) are the design record's whenever the subject record is written | a part with no lesson in a complete subject |
-| V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (support in a check is V79's) | a check item also in a set |
-| V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; doing is `DOING_SECONDS` (choose and tap 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20) | a why padded past the share |
-| V74 | Every ask can be scored and explained: a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a place's slips are the subject's, and the map above it never has the right place (or a neighbor or the water of the place asked about) lit; a lit place named from memory is the one lit map, with no spoken block; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
-| V75 | Generators: on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item | a trap that lands on the answer |
-| V76 | Every set and check holds the subject's `mix` | a set with none of a kind the mix requires |
+| V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's) | a check item also in a set |
+| V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; doing is `DOING_SECONDS` (choose, tap and place 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20; a place group's question by the form it is asked in) | a why padded past the share |
+| V74 | Every ask can be scored and explained (a place group: every question it can make): a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a place's slips are the subject's, and the map above it never has the right place (or a neighbor or the water of the place asked about) lit; a lit place named from memory is the one lit map, with no spoken block; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
+| V75 | Generators: on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item. A place group: on every (place, form) pair and 200 seeds the same seed the same question, the question is the pair the seed names, and a seed made for a pair names it | a trap that lands on the answer |
+| V76 | Every set and check holds the subject's `mix` (a check drawn at random by strands is not read; one drawn from a place group holds the mix its split fixes) | a set with none of a kind the mix requires |
 | V77 | Banks: each strand a check covers has three unseen items for its returns and one more per item of a retest, unless it has a generator or one item | a strand one item short |
 | V78 | Singing: tasks and parameters inside `SING_PARAMS`; the warm-up first and once, never in a check; no line in a check; sung checks `after-each`; every target inside the range | a hold of 9 seconds |
 | V79 | Fading: a set with support has a later set of the same strand with less or none; no support in a check | a lesson whose last set has the panel |
 | V80 | The subject record's `endResult` is the sentence the owner approved (`approved.goal.sentence`), and its `readingShare` is the design record's, held whenever the subject record is written; while a redesign waits for the owner, the record keeps what it was built to | one word changed |
 | V81 | Private forms: no field for an account number, login, password or Social Security number, fund rows included; every `into` is a slot of section 5.3 | a field "Account number" |
 | V82 | The failure (`danger.slip`) sits only on risky items, never on a real one, and can be made at least once | a real message whose wrong option is the failure |
-| V83 | A timed set holds only choose, tap, order or exchange; a busy set is timed and each item opens on a banner and asks one choice | a busy set that is not timed |
+| V83 | A timed set holds only choose, tap, order or exchange (a place group is none of them); a busy set is timed and each item opens on a banner and asks one choice | a busy set that is not timed |
 | V84 | A subject that asks from a published list names it in `refs` (a link and the day looked up) | questions from a published list and no source for it |
 
 Every other rule id below V84 is retired and never reused.
@@ -765,6 +838,7 @@ Every other rule id below V84 is retired and never reused.
 | X44 | The learner's own answers and date: the form, the stored shape, items reading them, the rounds before the date | going on before the answers are saved |
 | X45 | Civics' pilot walked end to end at 375 px | the pilot's check needing 15 of 17 |
 | X46 | The map block and the place ask on the test subject Atlas: the labelled map, a worked tap, a pinch and a drag that are not taps, the zoom buttons, a tap on a country with the slip named, a tap in the hole of a country, a dot found from a zoomed map with the zoom stored, land that is not the sea, a neighbor and its water, Landlocked right and wrong, a lit place named, nothing lit or marked in a check before its end, only numbers stored, 360 and 1200 px | a drag that counts as a tap |
+| X47 | A group of places made into questions on the test subject Atlas, lesson 2: a group of four different places to tap and three countries by their flags, each filed under its place, a miss coming back as the same place, a group of three lit places named and two neighbors and their water, a check drawn from the group with its split fixed by form (2 tap, 1 name, 1 flag, 1 border), no place twice and the dot only as a tap, nothing shown or marked between its questions, the tries stored under the places with only their seeds, and the review two days on asking the group on the place missed in the check, in another form; 360 and 1200 px | the draw ignoring its split |
 
 A pilot walk asserts only what the walk shows; what another check owns is left to it, so a fault turns one check red.
 The sound checks (X8, X10, X11, X12, X16, X29) run in their own lanes, and a sound fault runs only them. X4, X6, X7 and
@@ -803,8 +877,8 @@ X9 are not in force (X6 and X7 retired on 2026-10-12, section 11); the draft lin
 | retest (days) | | 28 | 28 | 7 (second mock) | | 21 | 14 | yearly action |
 | baseline lesson | | ● L0 | | | | | | |
 
-The `map` block and the `place` ask (3.7, 3.9, 3.11) are built for Geography and run today only on the test subject Atlas (X46);
-no shipped subject has them until Geography's pilot (lesson 16, western Europe) is written.
+The `map` block, the `place` ask and the place group (3.5, 3.7, 3.9, 3.11) are built for Geography and run today only on the test subject
+Atlas (X46, X47); no shipped subject has them until Geography's pilot (lesson 16, western Europe) is written.
 
 ### 10.2 What a static, offline phone app cannot do, and the nearest it can
 
@@ -847,8 +921,12 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Geography** has no lesson yet (its design record is `docs/subjects/geography/design.md`). Built for it on 2026-10-12: the map data
   for `world`, `us` and `europe-west` (3.11), the `map` block, the `place` ask and its neighbor-and-water form (3.7, 3.9), their rules
   (V70, V74, V83) and X46; flags are emoji text, the one line per country is `reason`, naming a lit place is a `text` ask under a lit
-  map, the distance band a `choose`. Not built: the rest of the regions (a list each in `tools/maps/regions.mjs`), place generators,
-  cities and capitals as places, parts of a state.
+  map, the distance band a `choose`. Built for it on 2026-10-13: the place group (3.5: the four forms made from the map data, with
+  spellings and a reason per place, a miss coming back as itself, a place filed as an item of its own), the check drawn from it by form
+  (3.4: a fixed split, places drawn at random preferring those last asked in another form, `only`), the review's pick of the place missed (6.3),
+  their rules (V70, V72 to V75, V83) and X47; the three coasts of the lower 48, the Strait of Gibraltar and the canal band (3.11). Not built:
+  the rest of the regions (a list each in `tools/maps/regions.mjs`), cities and capitals as places, parts of a state, the Suez and Panama
+  canals and the straits with no outline in the data (3.11).
 
 ## 11. Revision log
 
@@ -894,6 +972,13 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   the `map` block, the `place` ask and its neighbor-and-water form, V70, V74 and V83 for them, X46, the test subject Atlas; a lit
   place named from memory needs no spoken block (V74, 3.7); an item's `figure` may be a map (3.9); `FC.ENGINE` is 15 and the service
   worker cache v23. The browser runner, which could not start on `main` (`withLimit` imported and never defined), is mended.
+
+- **2026-10-13, place groups** (commits a58aead, ca9bef4, b9fa794, b62995b and the one that follows): a place generator (`places` in place of `params`
+  and `make`, 3.5) makes a place in one of four forms from the map data; a check may draw from it with a fixed split by form, places drawn at
+  random preferring those last asked in another form, and `only` (3.4); a lesson's reference and the review take places missed or met longest
+  ago first (3.5, 6.3); a place of a group is an item of its own in the record, `<generator>|<place>` (5.1); V70 and V72 to V75 and V83 read
+  groups and drawn checks by form (V76 reads a drawn check's mix from its split), with 25 seeded faults; X47 and the test subject Atlas's lesson 2; coasts (three on the United States map),
+  the strait kind (Gibraltar) and the canal band, with the bands of a river, a canal and a coast (3.7, 3.11). The service worker cache is v24.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.
