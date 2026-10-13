@@ -1288,12 +1288,25 @@
       "by": "stand-in",
       "date": "2026-10-13",
       "review": "reviews/l16.md",
-      "fp": "sha256:f96e9bafe3b49278cffebca435da4a15bf1279796e78ce4289b0ee3ecfc0d795",
       "waived": {
-        "date": "2026-10-12",
+        "date": "2026-10-13",
         "words": "just finish everything",
         "where": "chat, 2026-10-12"
-      }
+      },
+      "fp": "sha256:f8d10a1ed212c034307da652ae3be608b1d9233cebae4ba0dd0ff7ff4944580a",
+      "previous": [
+        {
+          "by": "stand-in",
+          "date": "2026-10-13",
+          "review": "reviews/l16.md",
+          "fp": "sha256:f96e9bafe3b49278cffebca435da4a15bf1279796e78ce4289b0ee3ecfc0d795",
+          "waived": {
+            "date": "2026-10-12",
+            "words": "just finish everything",
+            "where": "chat, 2026-10-12"
+          }
+        }
+      ]
     }
   },
   "opened": {
