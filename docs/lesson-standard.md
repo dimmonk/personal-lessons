@@ -60,6 +60,7 @@ public/subjects/<id>/subject.js       FC.subject   the subject record
 public/subjects/<id>/l<N>.lesson.js   FC.lesson    one lesson
 public/subjects/<id>/items-<k>.js     FC.items     fixed items, in as many files as needed
 public/subjects/<id>/gen-<k>.js       FC.gen       items made with fresh numbers
+public/maps/<region>.js               FC.map       one region of the map data (3.11), written by `npm run maps`
 ```
 
 `FC.ENGINE` goes up whenever the app's own wording changes. The app's own wording is `SAY` in `public/app/lessons/view.js`, written once.
@@ -193,6 +194,7 @@ edge decides a mark.
 | `text` | a box under a `spoken` question, and "Not yet" | types words | matches an accepted answer (section 3.7); with `model`, never scored | every accepted answer, and the item's `reason` |
 | `order` | `steps` to put in order | taps `right.length` of them | the whole order, or `scored: 'first'` | the right order and `then` |
 | `exchange` | a call or chat whose turns follow the replies | picks a reply each turn | right if it reaches an `ok` end | the pushing lines marked, and where it could have ended |
+| `place` | the blank map of a region (3.11), with no names; with `mode: 'neighbor-water'` a button "Landlocked" once a neighbor is tapped | taps the map: the place; or a neighbor, then the water (or "Landlocked") | right if the tap is inside a right place's shape; the neighbor and water ones by the map data | "You tapped: <the place the tap was on>", the slip of that place; the right place lit and the tap marked |
 | `sing` | the pitch strip (section 3.8) | sings after the target plays | section 3.8 | the result in words |
 
 - **A verdict** is a `choose` drawing on the subject's `verdict` list, so its words are typed once and are the same in
@@ -274,6 +276,29 @@ pushes. Nothing is marked before the end; then the pushing lines on the way are 
 could have ended right is named. V70 refuses a reply to a turn that does not exist, looping turns, unreachable turns, and
 no right or no wrong end; V74 refuses an exchange in which nobody pushes, or no reply that holds off meets more pressure.
 
+**`place`** `{ id, kind, prompt, map, right: placeId | [placeId], slips?, when? }`, or `{ id, kind, mode: 'neighbor-water', prompt, map, of, when? }`.
+`map` is a region of the map data (`FC.maps`, 3.11) and `right` the places of it that are right; a list is any one of them. The
+item's blocks hold the question (a prose block with the name, or a flag), never the answer: a `map` block of the same region
+that has the right place lit is refused (V74). The learner taps the map; a tap is a tap only when one finger went down and up
+without moving more than 8 pixels and no second finger touched (pinch, drag and the zoom buttons never count). The answer is
+stored as the three numbers `[x, y, k]`: the point in units of the map and the zoom it was made at (1 to 8).
+- *What a tap is on*: inside a place's outline, an outline being rings in which a point is inside when it is inside an odd number
+  of them (so the country in the hole of another is not the other); a sea, an ocean, a lake, a range and a desert have no holes, a
+  point is inside when it is inside any ring; a sea never holds land (the land of the region, `land`, is taken out of it, because
+  the outline of a sea overlaps the coast); a river (`line`) is held within a band of 1.4% of the map's width, and a microstate
+  (`dot`) within 2% of it, both divided by the zoom the tap was made at, so a tap is as exact as a finger and a zoomed map asks more.
+- *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
+- *A neighbor and its water*: two taps in order, kept in `Q.cur.many[askId]` until the second. The first must be inside a
+  neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water.
+  Neighbors and water are the map data's (computed by the build from the outlines: a border through a lake is not a border), so a
+  lesson never lists them, and `of` is a place that is ground (the region's `land` kinds). The answer is
+  `{ n: [x, y, k], w: [x, y, k] | 'none' }`; after it every neighbor and every water of `of` is lit, `of` outlined, the taps marked.
+- *Feedback* (section 4.1): the mark, "You tapped: <place>" (or that the tap was on no place) with the slip's name, the right
+  place lit on the same map and the tap marked beside it. In a check nothing is lit or marked until the end (X23). A worked
+  item shows the place lit and the tap marked at once.
+- *A lit place named from memory* is a `text` ask with `accept` under a `map` block with `lit` (one place): the lit map is the
+  question, so it needs no `spoken` block and may not have one (V74).
+
 ### 3.8 The sing ask
 
 A sung question is never a written item. A set or check names a task, `{ sing: { task, ...params }, n }`; the app makes
@@ -325,6 +350,7 @@ each question from the learner's range and a seed, and stores its tries under `s
 | `ref` | a value looked up: its text, the value, "Looked up <day>", "Source: …", a line to check the source, and after a year a line to look it up again | `ref` (an id of `subject.refs`) |
 | `panel` | what a label or word requires, printed from `subject.rules`, beside the item while the help lasts | `rules` |
 | `spoken` | a question read aloud by an on-device voice; its words shown, or held behind "Show the words" | `text`, `show?` |
+| `map` | a region of the map data drawn blank, north up, with `lit` places shown (one for naming, two for a distance); `labels` names its places (`true`: every kind the region labels; a list: those) | `region`, `id?`, `labels?: true \| [placeId]`, `lit?: [placeId]` |
 | `pitch` | the strip of a `sing` ask; made by the app, never written | none |
 
 - A `Segment` is `{ id, text, note?, para?, fine?, slip?, me? }`: every line that can be tapped or marked is one.
@@ -343,6 +369,13 @@ each question from the learner's range and a seed, and stores its tries under `s
 - **Tabs**: the first is open (or the one with a marked line, once there is one); a tap opens one and shuts the others;
   the choice survives repaints. Every paper stays in the page, and the tab of a paper with a marked line is marked.
 - **A figure shows the item's numbers**, never the learner's; theirs are in the marks and the line about their answer.
+- **A map** is drawn from the map data by `public/app/lessons/place-view.js`: layers bottom to top are the lit water (so a sea's
+  outline never covers a coast), the blank map in the order the region's `draw` lists, the insets' frames, lit ranges and regions
+  (see-through), the dots of microstates, the names, and the marks of taps. Nothing on a blank map carries a name, in the picture or
+  the page; the one look at a labelled map (`labels`) is a teaching screen. A map is pinched, dragged and zoomed to 8 times
+  (`map-run.js`), by two fingers, by the buttons under it (zoom in, zoom out, the whole map) and by ctrl and the wheel; its zoom is
+  kept across a screen painted again and reset when the question or step changes. An item's `figure` may be a map (a picture added to
+  the feedback: the true map after a trap item).
 - **Speech** starts only on a tap: "Hear the question" reads the first question, and each next question is read when
   the learner taps Next. Only a voice that is on the phone and in English is used; with none, the words are shown with
   one line saying so. "Hear it again" replays; leaving a screen or the page going to the background stops it. There is
@@ -352,8 +385,43 @@ each question from the learner's range and a seed, and stores its tries under `s
 
 - A private form into `lines` (Psychology part F), refused by V70 (`NOT_BUILT` in `tests/lessons/rules-shape.mjs`).
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
+- Map data beyond `world`, `us` and `europe-west` (3.11): every other region the design names is a list in `tools/maps/regions.mjs`
+  and a build; a generator that makes place items from the map data; a city, a capital and a part of a state (halves and thirds of a
+  unit) as places; flags drawn from the map data (the emoji flag is text in a prose block); Alaska's Arctic coast as water.
 - Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
   the range as a lesson step with a check of its own, and a range typed by hand.
+
+### 3.11 The map data
+
+`npm run maps` (`tools/maps/build-maps.mjs`) turns Natural Earth (public domain; version 5.1.2, fetched once into the ignored
+`tools/maps/.cache/`) into one script per region, `public/maps/<region>.js`, registered with `FC.map(id, region)` in the frozen
+`FC.maps`. Nothing is fetched when the app runs. A region is a list in `tools/maps/regions.mjs`: a projection fitted to a frame
+(Equal Earth for `world`; Albers USA, d3's layout, with Alaska and Hawaii on insets for `us`; Lambert equal-area for
+`europe-west`), and the places taken from Natural Earth by name. To add a region, add a list and run the build.
+
+```js
+FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], draw: ['country'], labelled: ['country', 'sea', 'ocean', 'range'],
+  frames?: [{ id, x, y, w, h }],          // the insets of a map
+  rings: [[x0, y0, dx, dy, ...]],         // every outline once: the first point, then the step to each next, in tenths of a unit
+  places: [{ id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], fs?, neighbors?: [id], water?: [id] }] });
+```
+
+- A place's `rings` name entries of the ring table, so a continent or a census region is its members' rings and no outline is stored
+  twice. `kind` is the kind of place (`country`, `state`, `continent`, `region`, `ocean`, `sea`, `lake`, `river`, `range`); `at` and `fs`
+  are where its name goes and how big (3.9); `dot` a microstate (5 of them in `europe-west`), a point with a tap radius.
+- The build projects every outline in advance and cuts it to the frame; simplifies it (Douglas-Peucker, 0.1 to 0.35 of a unit)
+  keeping every vertex two neighbors share, so a border is the same on both sides; rounds to tenths; drops a ring under 0.04 square units.
+  The lower 48's water and neighbors are not cut away under an inset (a tap on the sea beside Hawaii is the Pacific); the lower 48's land is.
+- `neighbors` and `water` are stored for every place of a `land` kind: two places are neighbors when an edge of their outlines
+  is shared on land (a border through a lake is not one; Four Corners is not one), or, for a state and Canada or Mexico, when a
+  stretch of 20 km of one's outline runs unbroken within 8 km of the other's; water is every sea, ocean or lake whose outline a coast
+  reaches (a Great Lake lies inside the polygons of the states around it, so a lake is a state's water when a share of the lake's area is inside it).
+- Measured on 2026-10-12: `world` 85.4 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 81.2 KB (262 rings, 79 places:
+  50 states and DC, 4 regions, Canada and Mexico, 5 Great Lakes, 10 rivers, 4 ranges, Pacific, Atlantic, Gulf of Mexico),
+  `europe-west` 61.7 KB (129 rings, 48 places: 34 countries, 5 dots, 11 seas, the Atlantic, the Alps, the Pyrenees): 228 KB in all
+  (78 KB compressed), against the design's budget of about 600 KB. Each file is under 400 lines (V47 holds 800).
+- `tests/place-pure.mjs` holds the data to known facts (Switzerland's neighbors and no water, Belgium's North Sea, Michigan's lakes,
+  Nevada landlocked, a tap on each capital inside its country); a change to the lists is checked by it and by V47.
 
 ## 4. Feedback, support and fading, order and difficulty
 
@@ -615,7 +683,8 @@ Each enforced by a validator rule (and by the browser checks on every screen as 
 data (`tests/lessons/controls-table.mjs`). A browser fault is a text change to one app file on its way to the browser
 (`transform` in `tests/static-server.mjs`, faults in `tests/e2e-controls.mjs`); a fault whose text is not in the file
 fails the run. The test subjects live in `tests/fixtures/fixture-subject/` and are never shipped: `fixture` ("Umbrella
-days"), `chorus`, `till`, `ledger`, `feed`, `labels`, `account`, `pressure`, `interview`. Review tests fix the weekday.
+days"), `chorus`, `till`, `ledger`, `feed`, `labels`, `account`, `pressure`, `interview`, `atlas` ("Atlas of the isles", a region of three countries,
+a dot and a sea made for the map block and the place ask). Review tests fix the weekday.
 
 ### 9.2 Validator rules (`tests/lessons/rules-index.mjs`)
 
@@ -636,7 +705,7 @@ days"), `chorus`, `till`, `ledger`, `feed`, `labels`, `account`, `pressure`, `in
 | V71 | Every lesson's `part` is a part of the design record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order; the pilot is a lesson; and the subject record's `parts` (id and title) are the design record's whenever the subject record is written | a part with no lesson in a complete subject |
 | V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (support in a check is V79's) | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; doing is `DOING_SECONDS` (choose and tap 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20) | a why padded past the share |
-| V74 | Every ask can be scored and explained: a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
+| V74 | Every ask can be scored and explained: a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a place's slips are the subject's, and the map above it never has the right place (or a neighbor or the water of the place asked about) lit; a lit place named from memory is the one lit map, with no spoken block; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
 | V75 | Generators: on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item | a trap that lands on the answer |
 | V76 | Every set and check holds the subject's `mix` | a set with none of a kind the mix requires |
 | V77 | Banks: each strand a check covers has three unseen items for its returns and one more per item of a retest, unless it has a generator or one item | a strand one item short |
@@ -695,6 +764,7 @@ Every other rule id below V84 is retired and never reused.
 | X43 | The mock interview: a draw, its first screen, its result, the second a week on, read aloud, on new items | a second mock that draws what the first asked |
 | X44 | The learner's own answers and date: the form, the stored shape, items reading them, the rounds before the date | going on before the answers are saved |
 | X45 | Civics' pilot walked end to end at 375 px | the pilot's check needing 15 of 17 |
+| X46 | The map block and the place ask on the test subject Atlas: the labelled map, a worked tap, a pinch and a drag that are not taps, the zoom buttons, a tap on a country with the slip named, a tap in the hole of a country, a dot found from a zoomed map with the zoom stored, land that is not the sea, a neighbor and its water, Landlocked right and wrong, a lit place named, nothing lit or marked in a check before its end, only numbers stored, 360 and 1200 px | a drag that counts as a tap |
 
 A pilot walk asserts only what the walk shows; what another check owns is left to it, so a fault turns one check red.
 The sound checks (X8, X10, X11, X12, X16, X29) run in their own lanes, and a sound fault runs only them. X4, X6, X7 and
@@ -732,6 +802,9 @@ X9 are not in force (X6 and X7 retired on 2026-10-12, section 11); the draft lin
 | facets and per-facet results | | ● genuine, channel, request | ● sound | ● level | ● side, sound | ● ordinary, control | ● kind | ● leave alone |
 | retest (days) | | 28 | 28 | 7 (second mock) | | 21 | 14 | yearly action |
 | baseline lesson | | ● L0 | | | | | | |
+
+The `map` block and the `place` ask (3.7, 3.9, 3.11) are built for Geography and run today only on the test subject Atlas (X46);
+no shipped subject has them until Geography's pilot (lesson 16, western Europe) is written.
 
 ### 10.2 What a static, offline phone app cannot do, and the nearest it can
 
@@ -771,6 +844,11 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Civics**: lesson 1, the three branches, 17 questions answered from memory in four groups, then a recall check of
   all 17, 16 to pass. Not built: the other 111 questions, the news stories, the answers lesson (4), the mock interview as a lesson (14)
   and its retest, and the news story per due news strand in the review.
+- **Geography** has no lesson yet (its design record is `docs/subjects/geography/design.md`). Built for it on 2026-10-12: the map data
+  for `world`, `us` and `europe-west` (3.11), the `map` block, the `place` ask and its neighbor-and-water form (3.7, 3.9), their rules
+  (V70, V74, V83) and X46; flags are emoji text, the one line per country is `reason`, naming a lit place is a `text` ask under a lit
+  map, the distance band a `choose`. Not built: the rest of the regions (a list each in `tools/maps/regions.mjs`), place generators,
+  cities and capitals as places, parts of a state.
 
 ## 11. Revision log
 
@@ -811,6 +889,11 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **2026-10-12, rounds fifteen and sixteen** (commits e06ed14 and 797a5f7): the fallback copy is 27ab552; a push that
   creates `main` (GitHub's all-zero before) is checked from the commit where the gates start, and any other push is
   checked against `main`.
+
+- **2026-10-12, maps** (commits 6b7e3b7, 3d39bc0, 3283580 and the one that follows): the map data (`FC.map`, `public/maps/`, `npm run maps`),
+  the `map` block, the `place` ask and its neighbor-and-water form, V70, V74 and V83 for them, X46, the test subject Atlas; a lit
+  place named from memory needs no spoken block (V74, 3.7); an item's `figure` may be a map (3.9); `FC.ENGINE` is 15 and the service
+  worker cache v23. The browser runner, which could not start on `main` (`withLimit` imported and never defined), is mended.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.
