@@ -1,7 +1,9 @@
 // The browser check of lesson standard 9 for a group of places made into questions: X47. It drives the real app in Chromium on lesson 2 of the test subject
 // "Atlas of the isles" (tests/fixtures/fixture-subject/atlas-places.js, atlas-l2.lesson.js): a lesson's group of places in two forms, a check drawn from
 // the group with its split fixed by form, and a review that asks the group on the place missed. X46 owns the map and the place ask themselves; this
-// asserts what the group adds. tests/e2e-controls.mjs runs it against the app with a seeded fault and requires exactly that check to go red.
+// asserts what the group adds, and (tests/e2e-fit.mjs) what a phone's screen holds of a question asked on a map, on Geography's lesson 16. tests/e2e-controls.mjs runs it against the app with a seeded fault and requires exactly that check to go red.
+
+import { fitChecks } from './e2e-fit.mjs';
 
 const MONDAY = '2026-11-02', WEDNESDAY = '2026-11-04';
 const MAP = '[data-map-ask] .mapsvg';
@@ -180,6 +182,8 @@ export async function X47(env) {
     }
     await wide.context.close();
   }
+  // a phone's screen holds a question asked on a map, on the real subject Geography (tests/e2e-fit.mjs)
+  await fitChecks(env, c);
   return c;
 }
 export const PLACE_GEN_CHECKS = { X47 };
