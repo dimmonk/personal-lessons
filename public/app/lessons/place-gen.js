@@ -10,7 +10,8 @@
 //   name    the place is lit, its name typed                                              (a `text` ask under a `map` block with `lit`)
 //   flag    the flag is shown (a `flags` block), the country tapped                      (a `place` ask); the feedback shows the flag with the name beside it
 //           and opens with the place's `flagLine`, the one thing that tells the flag from the one it is mistaken for
-//   border  the name is shown, a neighbor and then the water tapped, or Landlocked        (a `place` ask with mode 'neighbor-water')
+//   border  "What borders <name>?" (SAY.placeBorderAsk, so it never reads as a name to tap), a neighbor and then the water tapped, or Landlocked
+//           (a `place` ask with mode 'neighbor-water')
 // A place is asked in a form only when it can be: a flag needs the place's flag, a border needs a place that is ground with neighbors on the map.
 // memory: { [placeId]: { form, ok, run } } how the learner last met each place of the group, from the practice record (schedule.js).
 
@@ -71,7 +72,7 @@ function placeItem(gen, seed){
   const flags = names => ({ kind: 'flags', gen: gen.id, places: [place], ...(names ? { names: true } : {}) });
   const made = form === 'tap' ? tap([{ kind: 'prose', text: entry.name }], where)
     : form === 'flag' ? { ...tap([flags(false)], where), figure: flags(true), reason: entry.flagLine ? [entry.flagLine, entry.reason] : entry.reason }
-    : form === 'border' ? tap([{ kind: 'prose', text: entry.name }], { id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: words, map: group.map, of: place })
+    : form === 'border' ? tap([{ kind: 'prose', text: SAY.placeBorderAsk(entry.name) }], { id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: words, map: group.map, of: place })
     : tap([{ kind: 'map', region: group.map, lit: [place] }], { id: 'name', kind: 'text', prompt: words, accept: entry.accept });
   return { ...made, seed, values: { place, form, name: entry.name } };
 }

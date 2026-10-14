@@ -261,6 +261,8 @@ const SAY = {
   placeNeighbor: 'Tap a place that shares a border with it.',
   placeWorked: 'Done for you: the answer is on the map. You tap it yourself in the questions after this.',
   placeWater: 'Now tap the water it touches, or tap Landlocked.',
+  placeBorderAsk: name => `What borders ${name}?`,
+  placeUndo: 'Undo',
   placeLandlocked: 'Landlocked',
   placeNextTo: name => `A place next to ${name}`,
   placeWaterLabel: 'Water',

@@ -25,9 +25,10 @@
   const flags = [...PAIRS.map(pair => pair.map(id => one(id, 'flag'))), ...COUNTRIES.filter(id => !PAIRS.flat().includes(id)).map(id => one(id, 'flag'))];
 
   FC.lesson('geography', {
-    id: 'l16', part: '16', title: 'Europe, west', rev: 2, status: 'draft',
+    id: 'l16', part: '16', title: 'Europe, west', rev: 3, status: 'draft',
     history: [{ rev: 1, date: '2026-10-13', change: 'First version, the pilot of the subject.' },
-      { rev: 2, date: '2026-10-13', change: 'After the first stand-in review: the flags are taught before they are asked (each flag large beside its name, with the line that tells it from the one it is mistaken for, and the flags that look alike asked one after the other); the look is three views of the map with names readable on a phone and the five tiny countries named on lines; the lit sea is blue; the lit-place example says what is asked; the promise of the first screen is the ten larger countries.' }],
+      { rev: 2, date: '2026-10-13', change: 'After the first stand-in review: the flags are taught before they are asked (each flag large beside its name, with the line that tells it from the one it is mistaken for, and the flags that look alike asked one after the other); the look is three views of the map with names readable on a phone and the five tiny countries named on lines; the lit sea is blue; the lit-place example says what is asked; the promise of the first screen is the ten larger countries.' },
+      { rev: 3, date: '2026-10-14', change: 'After the owner\'s try: a neighbor and its water asks "What borders <place>?" instead of showing the bare name, so it never reads as a name to tap; Undo takes back the neighbor\'s tap; the place asked about is filled and its neighbors tinted and named; a worked map says it is done for the learner.' }],
     why: 'The news says a strike has shut the border between Belgium and France. If you cannot picture where Belgium is, what touches it and what water it is on, the story tells you little. In twelve minutes you will place the fifteen countries of western Europe on a blank map, name the ten larger ones and tell them by their flags, and say what touches each of those.',
     flow: [
       { worked: 'w-tap-belgium' },

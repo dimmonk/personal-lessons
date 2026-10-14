@@ -345,7 +345,9 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   coast). It is named that place after a miss, and it is right when that place is. When water is asked (the second tap of a neighbor and its water), the
   same tap is the sea (`placeShoreAt` in place.js).
 - *`slips`* is keyed by a place: a wrong tap inside it carries that slip. Otherwise a miss is `no`.
-- *A neighbor and its water*: two taps in order, kept in `Q.cur.many[askId]` until the second. The first must be inside a
+- *A neighbor and its water*: its question block reads "What borders <place>?" (a place group's border question is made with
+  `SAY.placeBorderAsk`), never the bare name, so it never reads as a name to tap. Two taps in order, kept in `Q.cur.many[askId]` until the second, and Undo (beside Landlocked, under the map) takes
+  the first back while the second is still to come. The first must be inside a
   neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water.
   Neighbors and water are the map data's (computed by the build from the outlines: a border through a lake is not a border), so a
   lesson never lists them, and `of` is a place that is ground (the region's `land` kinds). The answer is

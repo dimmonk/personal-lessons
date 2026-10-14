@@ -222,6 +222,8 @@ async function suite(app) {
   check(!/ lit"/.test(unmarked) && unmarked.includes('mk-neutral'), 'in a check nothing is lit before the end');
   const nwOpen = placeHtml({}, border('belgium'), { many: { n: [5, 5, 1] } }, { scope: 's' }), nwShut = placeHtml({}, border('belgium'), { many: {} }, { scope: 's' });
   check(nwOpen.includes('data-place-landlocked') && !nwShut.includes('data-place-landlocked'), 'Landlocked is offered once a neighbor is tapped');
+  const nwDone = placeHtml({}, border('belgium'), { answer: { n: [5, 5, 1], w: 'none' }, many: {}, marks: true }, { scope: 's' });
+  check(nwOpen.includes('data-place-undo') && !nwShut.includes('data-place-undo') && !nwDone.includes('data-place-undo'), 'Undo is offered once a neighbor is tapped and only until the question is answered');
   // after a neighbor and its water, the place asked about is filled in full and its neighbors are a tint, and every one of them is named (Switzerland)
   const swiss = placeHtml({}, border('switzerland'), { answer: { n: at('europe-west', null, 2.35, 48.85), w: 'none' }, many: {}, marks: true }, { scope: 's' });
   const cls = id => (swiss.match(new RegExp(`class="mp ([^"]*)" data-place="${id}"`)) || [, ''])[1];
@@ -260,6 +262,7 @@ const FAULTS = [
   ['a tap beside a small place that does not shrink as the map is zoomed in', s => s.replace('map.size[0] * PLACE_SMALL_TAP / k;', 'map.size[0] * PLACE_SMALL_TAP;')],
   ['a tap at sea off a shore never on its land', s => s.replace('if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;', 'return null;')],
   ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains')],
+  ['Undo never offered', s => s.replace('const undo = open && first ?', 'const undo = false ?'), 'app/lessons/place-view.js'],
   ['a missed place lit with no name', s => s.replace(': missed ? placeRightIds(ask) : [];', ': [];'), 'app/lessons/place-view.js'],
   ['the neighbors of a neighbor and its water left without their names', s => s.replace('[ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)]', 'placeWaterLit(map, ask, answer)'), 'app/lessons/place-view.js'],
   ['the neighbors drawn as strong as the place they are next to', s => s.replace("(near(id) ? ' near' : '')", "''"), 'app/lessons/place-view.js'],

@@ -403,6 +403,8 @@ export const FAULTS = [
     edits: [replace('app/init.js', "window.addEventListener('popstate', backInApp);", "void 0;")] },
   // sound and singing (9: X8, X10, X11, X12, X16; 3 to 9, 2026-10-11: X29)
   // the map block and the place ask (9: X46). Only the checks that draw maps or share the screens they sit on can see these faults.
+  { check: 'X46', name: 'Undo that keeps the neighbor\'s tap', only: MAP_SEEN,
+    edits: [replace('app/lessons/place-run.js', '  Q.cur = { ...Q.cur, many };\n  paintQueue();', '  paintQueue();')] },
   { check: 'X46', name: 'a missed place lit with no name', only: MAP_SEEN,
     edits: [replace('app/lessons/place-view.js', ': missed ? placeRightIds(ask) : [];', ': [];')] },
   { check: 'X46', name: 'a drag that counts as a tap', only: MAP_SEEN,

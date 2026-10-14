@@ -170,6 +170,12 @@ export async function X46(env) {
   await tapAt(page, 215, 70);   // Birch, next to Alder
   c.check(!(await look(page)).done && await page.locator('[data-place-landlocked]').count() === 1 && await page.locator('[data-feedback]').count() === 0, 'after the neighbor is tapped the question is over, or Landlocked is not offered, or the feedback is shown');
   c.check(/water it touches/.test(await env.screenText(page)) && await page.locator('.item .mk-neutral').count() === 1, 'the screen does not ask for the water, or the neighbor tapped is not marked');
+  c.check(/What borders Alder\?/.test(await env.screenText(page)), 'a neighbor and its water does not ask "What borders Alder?"');
+  // Undo takes the neighbor's tap back: no mark, no Landlocked, the question waits for a neighbor again; then the neighbor is tapped again
+  await page.locator('[data-place-undo]').click();
+  c.check(!(await look(page)).done && await page.locator('.item .mk-neutral').count() === 0 && await page.locator('[data-place-landlocked]').count() === 0 && await page.locator('[data-place-undo]').count() === 0,
+    'Undo does not take the neighbor\'s tap back');
+  await tapAt(page, 215, 70);   // Birch again
   await tapAt(page, 150, 190);   // the sea
   now = await look(page);
   c.check(now.done && now.r.borders === 'ok', `a neighbor and the sea of Alder scored ${now.r && now.r.borders}`);

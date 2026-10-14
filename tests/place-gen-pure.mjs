@@ -70,7 +70,7 @@ async function suite(app) {
       same(a.reason, p.place === 'belgium' ? [entry.flagLine, entry.reason] : entry.reason, `${p.place}: the feedback opens with the line that tells its flag, when the place has one`);
     } else check(a.reason === entry.reason && !a.figure, `${p.place} in ${p.form}: the reason is the place's and nothing is added to the feedback`);
     if (p.form === 'name') check(ask.kind === 'text' && a.blocks.length === 1 && a.blocks[0].kind === 'map' && a.blocks[0].lit[0] === p.place && !shown.includes(entry.name), `${p.place}: a lit place to name, with the name nowhere above it`);
-    if (p.form === 'border') check(ask.mode === 'neighbor-water' && ask.of === p.place && shown.includes(entry.name), `${p.place}: a neighbor and its water of the place named`);
+    if (p.form === 'border') check(ask.mode === 'neighbor-water' && ask.of === p.place && shown.includes(`What borders ${entry.name}?`), `${p.place}: a neighbor and its water asks what borders the place`);
   }
   same(placeItems(EUROPE).length, pairs.length, 'every pair makes a question');
   same(placeGenProblems(EUROPE, maps), [], 'a good group has no problems');
