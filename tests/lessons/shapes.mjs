@@ -122,7 +122,7 @@ const ITEM_OPTIONAL = { steps: arr(STEP_DEF), deciding: arr(str), need: text, ha
 export const ITEM = obj(ITEM_FIELDS, ITEM_OPTIONAL);
 export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), make: fn }, ITEM_OPTIONAL);
 // a place group (place-gen.js): a generator that makes one place in one of four forms from the map data; its forms and places are checked against the map by placeGenProblems
-const PLACE_ENTRY = obj({ id: str, name: str, reason: text, accept: arr(ACCEPT_ENTRY) }, { flag: str, flagLine: text });
+const PLACE_ENTRY = obj({ id: str, name: str, accept: arr(ACCEPT_ENTRY) }, { reason: text, area: str, cue: text, flag: str, flagLine: text, forms: arr(str) });   // reason, or area (placeGenProblems holds one of the two)
 export const PLACE_GEN = obj({ id: str, strand: str, places: obj({ map: str, forms: arr(str), words: map(text), list: arr(PLACE_ENTRY) }, { slips: map(str) }) }, { facets: map(str) });
 
 /* lessons */

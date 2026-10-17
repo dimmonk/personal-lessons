@@ -271,6 +271,12 @@ const SAY = {
   placeNotWater: (tapped, of) => `${of} does not touch ${tapped}.`,
   placeNoWater: name => `${name} is landlocked: it touches no sea.`,
   placeHasWater: (name, list) => `${name} touches ${list}.`,
+  // a place's feedback in the three steps of finding it (place-gen.js placeReasonOf)
+  placeInLine: area => `Area: ${area}.`,
+  placeTouchesLine: list => `Touches: ${list}.`,
+  placeTouchesNone: 'Touches: nothing on land; it is islands.',
+  placeWaterLine: list => `Water: ${list}.`,
+  placeWaterNone: 'Water: none; it is landlocked.',
   // a label pinned on words, what it needs, and the sides it is thrown from (3.9)
   pinnedOn: 'The words it is pinned on',
   panelHeading: 'What the label needs',

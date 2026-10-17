@@ -7,7 +7,7 @@
     },
     "geography": {
       "rev": 1,
-      "fp": "sha256:cc5fef7241d798853cd574188b7d33f746b8a8e2746df4ed5346cee463d856ce"
+      "fp": "sha256:76d358d7fee178d6bde454d8f53b9567fc610773d9d48b41b6f85cd1228de65e"
     },
     "ideology": {
       "rev": 6,
@@ -43,9 +43,53 @@
       "rev": 1,
       "fp": "sha256:580b2b867594d1ed2b21e3663fc368ca71eeff943af93d20a47e859c7af4946e"
     },
+    "geography/l1": {
+      "rev": 1,
+      "fp": "sha256:e4f39a7a0ea07b8ba3f91b7a88827bae27facea2db2679ff59872d3eb85b595c"
+    },
     "geography/l16": {
       "rev": 3,
       "fp": "sha256:8b7de315c1e31349343757853fe9fac14224c6d485c9697f7e5a798375bb8f68"
+    },
+    "geography/l1b": {
+      "rev": 1,
+      "fp": "sha256:3eabb3d0c35ee95124335b41757cd89bb825a7f6ff35cb9b0cbab6ce7f9f8411"
+    },
+    "geography/l1c": {
+      "rev": 1,
+      "fp": "sha256:fc85a6194962b60caa9e2822ea8ca2e95d6b58d628af3bb86dd4441a8d17adb8"
+    },
+    "geography/l2": {
+      "rev": 1,
+      "fp": "sha256:f50e486f1fff3f978a3aef54b06db63de05044c3924d6614d4e8816fcf19d603"
+    },
+    "geography/l2b": {
+      "rev": 1,
+      "fp": "sha256:0dfc80c2d47df7e265356d0a3f4cb379dd243a5e8d81b4c0dfb6719d0f1604f3"
+    },
+    "geography/l3": {
+      "rev": 1,
+      "fp": "sha256:480367672e761febb84d94c0bbefc813312dd6f08e6a361a4b5de004f841b7d7"
+    },
+    "geography/l4": {
+      "rev": 1,
+      "fp": "sha256:3c8ac5438c4b6981c9b149bcf8c720296104c93fbf312e764106a904aaa45973"
+    },
+    "geography/l5": {
+      "rev": 1,
+      "fp": "sha256:be762b054eb53343837c8a38bdfb6a70f963fa841fd991322e4f25a8faf9e74e"
+    },
+    "geography/l6": {
+      "rev": 1,
+      "fp": "sha256:711b2b1a7bfa9d935c27cb3bd3733f7b80f97c11b3713fd722a766967c74212e"
+    },
+    "geography/l7": {
+      "rev": 1,
+      "fp": "sha256:5af990ef790a1a8aaad4bfa0a37e834746e5d80b32c498c6df62c9b2fb0cf05b"
+    },
+    "geography/l7b": {
+      "rev": 1,
+      "fp": "sha256:66b867b84dad662292fcfe072aa243b7c8b8c6d9d350215c63b0211c81b0b8f4"
     },
     "ideology/l2": {
       "rev": 1,

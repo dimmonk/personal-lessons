@@ -73,6 +73,15 @@ async function suite(app) {
     if (p.form === 'border') check(ask.mode === 'neighbor-water' && ask.of === p.place && shown.includes(`What borders ${entry.name}?`), `${p.place}: a neighbor and its water asks what borders the place`);
   }
   same(placeItems(EUROPE).length, pairs.length, 'every pair makes a question');
+  // a place given the area it sits in, not a reason: its feedback is the three steps, the neighbors and water read from the map data, then its cue
+  const swiss = { map: 'europe-west', forms: ['tap'], words: { tap: 'Tap it.' }, list: [{ id: 'switzerland', name: 'Switzerland', accept: ['Switzerland'], area: 'the Alps', cue: 'It is the one with the cross.' }] };
+  same(placeItem({ id: 'g-swiss', strand: 'europe', places: swiss }, 0).reason,
+    ['Area: the Alps.', 'Touches: Austria, France, Germany, Italy and Liechtenstein.', 'Water: none; it is landlocked.', 'It is the one with the cross.'],
+    'a place given its area is fed back as its area, what touches it and its water, from the map data, then its cue');
+  same(placePairs({ id: 'g-kept', strand: 'europe', places: { ...swiss, forms: ['tap', 'name'], words: { tap: 'Tap it.', name: 'Name it.' }, list: [{ ...swiss.list[0], forms: ['tap'] }] } }).map(p => p.form), ['tap'],
+    "a place's own forms keep it to those of the group's forms");
+  check(placeGenProblems({ id: 'g-kept', places: { ...swiss, list: [{ ...swiss.list[0], forms: ['flag'] }] } }, maps).some(m => /keeps to the form "flag"/.test(m)), 'a place kept to a form its group does not ask is refused');
+  check(placeGenProblems({ id: 'g-swiss', places: { ...swiss, list: [{ ...swiss.list[0], reason: 'Both.' }] } }, maps).some(m => /either its own reason or the area/.test(m)), 'a place with both a reason and an area is refused');
   same(placeGenProblems(EUROPE, maps), [], 'a good group has no problems');
   // scored by the engine: the right tap is right, a tap elsewhere is not, the typed name is right
   const tapBelgium = placeItem(EUROPE, placeSeedOf(EUROPE, 'belgium', 'tap')), at = mapPlace(mapOf('europe-west'), 'belgium').at, subject = { meta: { lists: {} } };
@@ -242,7 +251,10 @@ const FAULTS = [
   ['place-gen.js', 'a review that skips the place missed last time', s => s.replace('const key = id => memory[id] ? [memory[id].ok ? 1 : 0, memory[id].run] : [1, \'\'];', 'const key = id => memory[id] ? [1, memory[id].run] : [1, \'\'];')],
   ['place-gen.js', 'a review that asks the form the place was last asked in', s => s.replace('from = other.length ? other : forms', 'from = forms')],
   ['place-gen.js', 'a flag asked with the name beside it', s => s.replace("{ ...tap([flags(false)], where), figure: flags(true),", "{ ...tap([flags(true)], where), figure: flags(true),")],
-  ['place-gen.js', 'a flag item whose feedback leaves out the line that tells the flag', s => s.replace("reason: entry.flagLine ? [entry.flagLine, entry.reason] : entry.reason }", "reason: entry.reason }")],
+  ['place-gen.js', 'a place given its area fed back without what touches it', s => s.replace("touches.length ? SAY.placeTouchesLine(joinWords(touches)) : SAY.placeTouchesNone,", "")],
+  ['place-gen.js', "a place's own forms ignored", s => s.replace("(!entry.forms || entry.forms.includes(f)) && ", "")],
+  ['place-gen.js', 'a place with both a reason and an area let through', s => s.replace("if(!p.reason === !p.area) problems.push", "if(false) problems.push")],
+  ['place-gen.js', 'a flag item whose feedback leaves out the line that tells the flag', s => s.replace("reason: entry.flagLine ? [entry.flagLine, ...asList(base.reason)] : base.reason }", "reason: base.reason }")],
   ['place-gen.js', 'a flag asked of a place with none', s => s.replace("f === 'flag' ? !!entry.flag :", "f === 'flag' ? true :")],
   ['place-draw.js', 'a memory that reads the first try, not the last', s => s.replace('last = tries[tries.length - 1]', 'last = tries[0]')],
   ['place-gen.js', 'a lesson that forgets what the checks keep to one form', s => s.replace('mergeOnly(only, l.check.items.draw.only || {})', 'only')]

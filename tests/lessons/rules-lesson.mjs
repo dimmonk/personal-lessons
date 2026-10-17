@@ -82,12 +82,13 @@ export const V72 = subjectRule('V72', (s, check) => {
 const panelWords = (s, blocks) => blocks.flatMap(b => b.kind === 'panel' ? b.rules.map(id => s.meta.rules[id]) : []);
 // the names that a flags block prints beside its flags are read on a teaching screen too
 const flagWords = (s, blocks) => blocks.filter(b => b.kind === 'flags' && b.names).flatMap(b => b.places.map(id => s.gens[b.gen].places.list.find(p => p.id === id).name));
+const wordsOf = parts => parts.flatMap(p => learnerStrings(p, '')).reduce((n, t) => n + wordCount(t.text), 0);
 function readingWords(s, lv) {
   const { lesson } = lv;
-  const parts = [lesson.why, ...lesson.flow.filter(x => x.show).map(x => ({ title: x.title, show: x.show, printed: [...panelWords(s, x.show), ...flagWords(s, x.show)] })),
-    ...lv.worked.map(id => { const i = s.items[id]; return { blocks: i.blocks, steps: i.steps, reason: i.reason, need: i.need }; })];
-  return parts.flatMap(p => learnerStrings(p, '')).reduce((n, t) => n + wordCount(t.text), 0);
+  return wordsOf([lesson.why, ...lesson.flow.filter(x => x.show).map(x => ({ title: x.title, show: x.show, printed: [...panelWords(s, x.show), ...flagWords(s, x.show)] }))]);
 }
+// a worked case is shown practice, the real action done step by step for the learner (build-subject, 2 and 4), so its time is doing, at reading speed
+const workedSeconds = (s, lv) => wordsOf(lv.worked.map(id => { const i = s.items[id]; return { blocks: i.blocks, steps: i.steps, reason: i.reason, need: i.need }; })) / READING_WORDS_PER_MINUTE * 60;
 function doingSeconds(s, lv) {
   const asksTime = (def, support) => s.engine.askedAsks(def, support).reduce((n, a) => n + (DOING_SECONDS[a.kind] || 0), 0);
   // a timed group gives each question its seconds (the learner has no more, and a call or chat that is not timed counts as its own time)
@@ -95,7 +96,7 @@ function doingSeconds(s, lv) {
   const sets = lv.sets.reduce((n, set, i) => n + group(lv.setRefs[i], set.support, set.seconds), 0);
   const check = s.engine.checkIsDrawn(lv.lesson.check) ? s.engine.drawSize(lv.lesson.check.items.draw) * DRAWN_ITEM_SECONDS : group(lv.checkRefs, null, lv.lesson.check.seconds);
   const own = lv.lesson.flow.filter(step => step.own).length * DOING_SECONDS.form;   // the step on the learner's own data is doing, not reading
-  return sets + check + own;
+  return sets + check + own + workedSeconds(s, lv);
 }
 export const V73 = subjectRule('V73', (s, check) => {
   for (const lv of s.lessons) {

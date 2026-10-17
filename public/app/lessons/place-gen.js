@@ -5,7 +5,12 @@
 // group can be asked in names the pair, so the same seed is the same question, a try stores only the seed, and the record can say which form a
 // place was last asked in. Pure: no page, no storage; the record is passed in as `memory`.
 //   places { map, forms: ['tap' | 'name' | 'flag' | 'border'], words: { [form]: Text }, slips?: { [placeId]: slipId },
-//            list: [{ id, name, reason, accept: [Entry], flag?, flagLine? }] }
+//            list: [{ id, name, reason | area, cue?, accept: [Entry], flag?, flagLine?, forms? }] }
+// A place's own `forms` keeps it to some of the group's forms, when the map data cannot answer one of them for it (Alaska's Arctic coast is not on the
+// map of the United States, so it is never asked for its water).
+// A place's feedback follows the way of thinking (the bigger area it sits in, what touches it, the water it is on): either its own `reason`, or
+// `area` (the bigger area, in words) and the map data's neighbors and water, made into three lines by placeReasonOf, with `cue` after them (the one
+// thing that tells it from the place it is mixed up with). The neighbors and water are never written by hand: the map data is their one source.
 //   tap     the name is shown, the place tapped on the blank map                         (a `place` ask)
 //   name    the place is lit, its name typed                                              (a `text` ask under a `map` block with `lit`)
 //   flag    the flag is shown (a `flags` block), the country tapped                      (a `place` ask); the feedback shows the flag with the name beside it
@@ -35,7 +40,7 @@ const PLACE_PAIRS = new WeakMap();
 // the forms a place of the group can be asked in, in the order the group lists its forms
 function placeFormsOf(gen, entry, map){
   const on = mapPlace(map, entry.id);
-  return gen.places.forms.filter(f => f === 'flag' ? !!entry.flag : f === 'border' ? !!(on.neighbors && on.neighbors.length && on.water) : true);
+  return gen.places.forms.filter(f => (!entry.forms || entry.forms.includes(f)) && (f === 'flag' ? !!entry.flag : f === 'border' ? !!(on.neighbors && on.neighbors.length && on.water) : true));
 }
 function placePairs(gen){
   let pairs = PLACE_PAIRS.get(gen);
@@ -62,16 +67,23 @@ function placeAllowedForms(gen, place, only = {}){
 }
 
 /* ---------- the question a seed makes ---------- */
+// the feedback lines of a place: its own reason, or the area it sits in, what touches it and its water, from the map data, then its cue
+function placeReasonOf(group, entry){
+  if(entry.reason) return entry.reason;
+  const map = mapOf(group.map), touches = placeNames(map, placeNeighborsOf(map, entry.id)), water = placeNames(map, placeWaterOf(map, entry.id));
+  return [SAY.placeInLine(entry.area), touches.length ? SAY.placeTouchesLine(joinWords(touches)) : SAY.placeTouchesNone,
+    water.length ? SAY.placeWaterLine(joinWords(water)) : SAY.placeWaterNone, ...(entry.cue ? [entry.cue] : [])];
+}
 function placeItem(gen, seed){
   const group = gen.places, { place, form } = placePairAt(gen, seed), entry = group.list.find(p => p.id === place);
-  const base = { id: gen.id, strand: gen.strand, facets: { ...(gen.facets || {}), [PLACE_FORM_FACET]: form }, reason: entry.reason };
+  const base = { id: gen.id, strand: gen.strand, facets: { ...(gen.facets || {}), [PLACE_FORM_FACET]: form }, reason: placeReasonOf(group, entry) };
   const words = group.words[form], tap = (blocks, ask) => ({ ...base, blocks, asks: [ask] });
   // the slip of tapping another place of the group (the place asked is never its own slip)
   const slips = Object.fromEntries(Object.entries(group.slips || {}).filter(([id]) => id !== place));
   const where = { id: 'where', kind: 'place', prompt: words, map: group.map, right: place, ...(Object.keys(slips).length ? { slips } : {}) };
   const flags = names => ({ kind: 'flags', gen: gen.id, places: [place], ...(names ? { names: true } : {}) });
   const made = form === 'tap' ? tap([{ kind: 'prose', text: entry.name }], where)
-    : form === 'flag' ? { ...tap([flags(false)], where), figure: flags(true), reason: entry.flagLine ? [entry.flagLine, entry.reason] : entry.reason }
+    : form === 'flag' ? { ...tap([flags(false)], where), figure: flags(true), reason: entry.flagLine ? [entry.flagLine, ...asList(base.reason)] : base.reason }
     : form === 'border' ? tap([{ kind: 'prose', text: SAY.placeBorderAsk(entry.name) }], { id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: words, map: group.map, of: place })
     : tap([{ kind: 'map', region: group.map, lit: [place] }], { id: 'name', kind: 'text', prompt: words, accept: entry.accept });
   return { ...made, seed, values: { place, form, name: entry.name } };
@@ -147,6 +159,8 @@ function placeGenProblems(gen, maps){
     if(!on) return problems.push(`the place "${p.id}" is not a place of the map ${group.map}`);
     if(!on.rings.length) problems.push(`the place "${p.id}" has no shape on the map to be tapped`);
     placeDuplicates(p.accept.map(a => typeof a === 'string' ? a : a.text)).forEach(a => problems.push(`the place "${p.id}" lists the spelling "${a}" twice`));
+    (p.forms || []).filter(f => !group.forms.includes(f)).forEach(f => problems.push(`the place "${p.id}" keeps to the form "${f}", which the group does not ask`));
+    if(!p.reason === !p.area) problems.push(`the place "${p.id}" needs either its own reason or the area it sits in (area), not both`);
   });
   Object.keys(group.slips || {}).filter(id => !map.places.some(x => x.id === id)).forEach(id => problems.push(`the slip is keyed by "${id}", which is not a place of the map ${group.map}`));
   if(!problems.length) group.forms.forEach(f => { if(!placePairs(gen).some(p => p.form === f)) problems.push(`no place of the group can be asked in the form "${f}"`); });
