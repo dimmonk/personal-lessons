@@ -229,7 +229,7 @@ function questionLines(e, data, inst, support, label) {
   const shown = e.shownStepIds(item, support);
   if (shown.length) lines.push('Help on screen: the working up to the last steps.', ...item.steps.filter(s => shown.includes(s.id)).map(s => `- ${s.does} ${s.working}`), '');
   e.askedAsks(item, support).forEach(a => lines.push(...askLines(e, data, a, true, item), ''));
-  lines.push(`After the answer: the deciding words are marked${(item.deciding || []).length ? '' : ' (none named)'}. Reason: ${paras(item.reason).join(' ')}`);
+  lines.push(`After the answer: ${(item.deciding || []).length ? 'the deciding words are marked. ' : ''}Reason: ${paras(item.reason).join(' ')}`);
   if (item.need) lines.push(`What you would need to see: ${paras(item.need).join(' ')}`);
   if (item.fact) { const f = data.subjects.__current.items[item.fact], a = f.asks.find(x => x.accept); lines.push(`${e.SAY.factHeading}: ${f.blocks.find(b => b.kind === 'spoken').text} Accepted: ${a.accept.map(x => e.recallEntryText(x)).join('; ')}.`); }
   if (item.has) e.hasLines(data.subjects.__current, item).forEach(g => lines.push(`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)));
