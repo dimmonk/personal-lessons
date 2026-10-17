@@ -41,7 +41,7 @@ function subjectText(s) {
     ...learnerStrings(meta.own || {}, 'the subject record'),
     // what a label needs: the key `rules` is also the list of rules a panel names (ids), so the subject's own rules are read here
     ...learnerStrings(meta.rules || {}, 'the subject record'),
-    // the end result and the parts are the owner's approved wording from the design record (V80, V71): the plain-words rules leave them alone
+    // the end result and the parts are the owner's own wording of what the subject is for: the plain-words rules leave them alone
     ...learnerStrings({ endResult, parts }, 'the subject record', true),
     ...Object.values(subject.lessons).flatMap(l => learnerStrings(l, `lesson ${l.id}`)),
     ...Object.values(subject.items).flatMap(i => learnerStrings(i, `item ${i.id}`)),

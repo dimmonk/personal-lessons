@@ -3,7 +3,7 @@
 // fixture subject (tests/fixtures/fixture-subject), registered as a real subject would be, so the engine runs on known data.
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
-import { FIXTURE_FILES, FIXTURE_IDS } from './fixtures/fixture-subject/design.mjs';
+import { FIXTURE_FILES, FIXTURE_IDS } from './fixtures/fixture-subject/files.mjs';
 
 const PUBLIC = new URL('../public/', import.meta.url);
 const FIXTURE = new URL('./fixtures/fixture-subject/', import.meta.url);

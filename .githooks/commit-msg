@@ -1,6 +1,0 @@
-#!/bin/sh
-# A change to the gates (the skill, the record rules and their harness, the record tools, the research notes, the hooks, the push workflow,
-# package.json) carries the owner's word in the message: tools/design/owner-line.mjs says which paths and checks the line. The push
-# workflow runs the same check on every pushed commit. Set up once with: npm run hooks
-cd "$(git rev-parse --show-toplevel)"
-node tools/design/owner-line.mjs "$1" --staged

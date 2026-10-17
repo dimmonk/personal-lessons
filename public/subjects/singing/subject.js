@@ -1,7 +1,6 @@
-// Singing: subject record (lesson standard 3). Only the pilot, lesson 2, is built: the subject screen lists every other part of the
-// design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design
-// record's, word for word (V80, V71). The subject has no key, no lists and no facets: every question is a sung one the app makes from
-// the learner's range. It has no strands yet: the review of a sung check is built after the pilot has been tried (10.3, step 2).
+// Singing: subject record (lesson standard 3). Only the pilot, lesson 2, is built: the subject screen lists every other part as not built yet. The
+// subject has no key, no lists and no facets: every question is a sung one the app makes from the learner's range. It has no strands yet: the review of
+// a sung check is built after the pilot has been tried (10.3, step 2).
 FC.subject('singing', {
   name: "Singing",
   rev: 3,

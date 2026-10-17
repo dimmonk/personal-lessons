@@ -5,9 +5,8 @@ import { runRules } from './lessons/run.mjs';
 import { parseTargetArgs } from './lessons/paths.mjs';
 import { readJsonIfPresent, readCommittedJson } from './lessons/lockfile.mjs';
 import { collectSite } from './lessons/site.mjs';
-import { collectDesigns, collectCommittedDesigns, collectReviews, collectResearch } from './lessons/designs.mjs';
 
-export async function gatherInput({ publicDir, lockFile, heldFile, designsDir, researchDir }) {
+export async function gatherInput({ publicDir, lockFile, heldFile }) {
   const data = await loadFromPublic(publicDir);
   return {
     data,
@@ -15,11 +14,7 @@ export async function gatherInput({ publicDir, lockFile, heldFile, designsDir, r
     committedLock: readCommittedJson(lockFile),
     held: heldFile ? await readJsonIfPresent(heldFile) : null,
     committedHeld: heldFile ? readCommittedJson(heldFile) : null,
-    site: await collectSite(publicDir),
-    designs: designsDir ? await collectDesigns(designsDir) : {},
-    committedDesigns: designsDir ? await collectCommittedDesigns(designsDir) : {},
-    reviews: designsDir ? await collectReviews(designsDir) : {},
-    research: researchDir ? await collectResearch(researchDir) : {}
+    site: await collectSite(publicDir)
   };
 }
 

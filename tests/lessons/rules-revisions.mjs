@@ -1,5 +1,4 @@
-// Revisions and files: V45 (revisions and history; a lesson is live only through the design record's `tried`, which V69 reads), V46 (the lock),
-// V47 (files), V58 (held findings).
+// Revisions and files: V45 (revisions and history), V46 (the lock), V47 (files), V58 (held findings).
 import { subjectRule, siteRule, heldRule, checkEach } from './rule.mjs';
 import { lockEntries } from './fingerprint.mjs';
 import { anchorProblems } from './lockfile.mjs';

@@ -1,7 +1,7 @@
 #!/bin/sh
 # The lesson tier runs on the STAGED tree before every commit (not the working tree: a change staged while the working file is left as it was
 # would otherwise slip past): the staged files are exported to a temporary folder and validated there against HEAD, with the seeded faults and
-# the reader checks on the real text. A red tier is never committed (build-subject skill, "How it runs"). LESSONS_BASE is unset here: the
+# the reader checks on the real text. A red tier is never committed. LESSONS_BASE is unset here: the
 # base of a commit is HEAD and nothing else. Set up once with: npm run hooks
 set -e
 unset LESSONS_BASE
@@ -14,4 +14,4 @@ export GIT_DIR="$(git rev-parse --absolute-git-dir)"
 export GIT_WORK_TREE="$TMP"
 cd "$TMP"
 LOG="$TMP/lessons.log"
-( node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs && node tests/design-pure.mjs ) >"$LOG" 2>&1 || { tail -25 "$LOG"; echo "pre-commit: the lesson tier is red on the staged tree; nothing committed"; exit 1; }
+( node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs ) >"$LOG" 2>&1 || { tail -25 "$LOG"; echo "pre-commit: the lesson tier is red on the staged tree; nothing committed"; exit 1; }

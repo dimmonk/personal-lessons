@@ -3,7 +3,7 @@
 // Run: npm run test:data
 import { readFile } from 'node:fs/promises';
 import { loadApp, scriptList, classicScripts } from './load-app.mjs';
-import { FIXTURE_IDS } from './fixtures/fixture-subject/design.mjs';
+import { FIXTURE_IDS } from './fixtures/fixture-subject/files.mjs';
 
 const app = await loadApp({ fixture: true });
 const { SUBJECTS } = app;

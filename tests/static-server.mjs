@@ -7,7 +7,7 @@ import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { FIXTURE_FILES } from './fixtures/fixture-subject/design.mjs';
+import { FIXTURE_FILES } from './fixtures/fixture-subject/files.mjs';
 import { newProjectId, testConfigModule } from './emulators.mjs';
 
 const ROOT = fileURLToPath(new URL('../public/', import.meta.url));

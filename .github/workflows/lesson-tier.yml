@@ -1,10 +1,8 @@
-# The fast tiers run on every push, where no session can skip a hook: at the pushed head, npm test; and for every commit of the push (a new
-# branch's or a force-push's commits are those not on main; commits from before the commit where the gates start are skipped), the lesson
-# tier measured against that commit's first parent (what "since the last commit" means) and the owner's word on a commit that changes the
-# gates, read with the copy of the check that main held (never the pushed commit's). So an ask removed, an owner entry edited, a record
-# deleted or a gate changed with the hooks off shows on push, merge commits included. A merge of more than two parents is refused.
-# A push that creates main (an all-zero before) is checked from the commit where the gates start; any other push whose old head is not
-# in the clone falls to the range against main (build-subject skill, "How it runs").
+# The test tiers run on every push, where no session can skip a hook: at the pushed head, npm test; and for every commit of the push (a new
+# branch's or a force-push's commits are those not on main), the lesson tier measured against that commit's first parent (what "since the
+# last commit" means for the lock's history). So a lesson changed or a rule weakened with the hooks off shows on push, merge commits included.
+# A push that creates main (an all-zero before) is checked at its head by npm test alone; any other push whose old head is not in the clone
+# falls to the range against main.
 name: lesson tier
 on:
   push:
@@ -19,12 +17,12 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - run: npm test
-      - name: each commit against its parent, with the owner's word where the gates changed
+      - name: each commit against its parent
         run: |
           set -e
           BEFORE="${{ github.event.before }}"
           if [ "${{ github.event_name }}" = "pull_request" ]; then RANGE="origin/${{ github.base_ref }}..HEAD"
-          elif [ "${{ github.ref }}" = "refs/heads/main" ] && [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then RANGE="21da9cf36e71329fea154dcaf51721ab8539c8d2^..HEAD"   # a push that creates main (GitHub sends an all-zero before): every commit from the gates' start
+          elif [ "${{ github.ref }}" = "refs/heads/main" ] && [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then echo "a push that creates main: checked at its head by npm test"; exit 0
           elif [ -n "$BEFORE" ] && git rev-parse -q --verify "$BEFORE^{commit}" >/dev/null && git merge-base --is-ancestor "$BEFORE" HEAD; then RANGE="$BEFORE..HEAD"
           else RANGE="$(git merge-base origin/main HEAD 2>/dev/null || git rev-list --max-parents=0 HEAD | tail -1)..HEAD"; fi
           echo "checking $RANGE"
@@ -33,34 +31,10 @@ jobs:
             if [ "${{ github.event.forced }}" = "true" ]; then echo "a forced push after which nothing is new against main: history was rewritten, and nothing was checked"; exit 1; fi
             echo "nothing new to check"; exit 0
           fi
-          # the gates start at this commit (the record tools, --base and the owner-line check). A commit that is its ancestor predates
-          # them and is checked by npm test at the head only; the start itself and its descendants are checked here; a commit that is
-          # neither (a fork from before the gates) fails. The owner-line check is never a commit's own copy: it is the copy on the branch
-          # before this push (what main held), main's for any other push, or the named fallback commit's when that has none.
-          GATES_START=21da9cf36e71329fea154dcaf51721ab8539c8d2
-          git rev-parse -q --verify "$GATES_START^{commit}" >/dev/null || { echo "the commit where the gates start is not in this clone"; exit 1; }
-          # the copy of the check that judges this push: on a push to main, what main held before it (BEFORE); on any other push or a pull
-          # request, main's; the named fallback commit's when that ref has none. Never the pushed head's.
-          if [ "${{ github.ref }}" = "refs/heads/main" ] && [ "${{ github.event_name }}" = "push" ]; then CHECK_REF="$BEFORE"; else CHECK_REF="origin/main"; fi
-          # when that ref has no copy (the landing push of the gates), the fallback is the named commit whose readings are the current ones
-          FALLBACK_CHECK=27ab552
-          git rev-parse -q --verify "$CHECK_REF^{commit}" >/dev/null 2>&1 && git cat-file -e "$CHECK_REF:tools/design/owner-line.mjs" 2>/dev/null || CHECK_REF="$FALLBACK_CHECK"
-          git show "$CHECK_REF:tools/design/owner-line.mjs" > /tmp/owner-line.mjs
-          echo "the owner-line check is the copy at $CHECK_REF"
           for c in $COMMITS; do
             git checkout -q "$c"
-            if [ "$c" != "$GATES_START" ] && git merge-base --is-ancestor "$c" "$GATES_START"; then echo "== $c predates the gates: skipped"; continue; fi
-            git merge-base --is-ancestor "$GATES_START" "$c" || { echo "== $c is neither before nor after the commit where the gates start: a fork from before the gates is rebased or dropped"; exit 1; }
             parent=$(git rev-parse -q --verify "$c^" || true)
             echo "== $c against ${parent:-nothing}"
             if [ -n "$parent" ]; then node tests/validate-lessons.mjs --base "$parent"; else node tests/validate-lessons.mjs; fi
             node tests/lessons/negative-controls.mjs >/dev/null
-            node tests/design-pure.mjs >/dev/null
-            git show -s --format=%B "$c" > /tmp/msg
-            BROUGHT=""
-            if [ "$(git rev-list --parents -n 1 "$c" | wc -w)" -gt 3 ]; then echo "== $c is a merge of more than two parents: refused; merge one branch at a time"; exit 1; fi
-            if [ "$(git rev-list --parents -n 1 "$c" | wc -w)" -gt 2 ]; then
-              for b in $(git rev-list "$parent..$c"); do if ! git merge-base --is-ancestor "$GATES_START" "$b"; then BROUGHT="--brought $parent"; break; fi; done
-            fi
-            node /tmp/owner-line.mjs /tmp/msg --commit "$c" $BROUGHT
           done

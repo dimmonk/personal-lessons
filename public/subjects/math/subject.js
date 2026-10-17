@@ -1,6 +1,4 @@
-// Basic Math: subject record (lesson standard 3). Only the pilot, lesson 1, is built: the subject screen lists every other part of the
-// design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design
-// record's, word for word (V80, V71).
+// Basic Math: subject record (lesson standard 3). Only the pilot, lesson 1, is built: the subject screen lists every other part as not built yet.
 FC.subject('math', {
   name: "Basic Math",
   rev: 6,

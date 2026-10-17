@@ -5,14 +5,10 @@
 //   committedLock        the lock of the last commit, or null
 //   site                 { files: [{ path, lines }], indexScripts, swShell } for V47
 //   held, committedHeld  { held: [message, ...] } the working list of held findings (V58), and the list of the last commit
-//   designs              { [subjectId]: design record } from docs/subjects/<id>/design.md, for V69, V71 and V80 (designs.mjs)
-//   committedDesigns     the records as committed at HEAD, for V69's check that no ask of the owner's was removed or reworded (designs.mjs)
-//   reviews, research    the verdict of every stand-in review and every research note's findings with their marks, for V69 (designs.mjs)
 // Every registered subject is held to every rule. V70 runs first: when a subject fails its shape, its other rules are skipped
 // and the run says so, because rules read the shape they were promised.
 import { subjectView } from './model.mjs';
 import { RULES } from './rules-index.mjs';
-import { subjectFingerprint } from './fingerprint.mjs';
 
 const byScope = (rules, scope) => rules.filter(r => r.scope === scope);
 
@@ -67,10 +63,7 @@ export function runRules(input, rules = RULES) {
   let lessons = 0;
   for (const id of subjectIds) {
     if (!data.subjects[id].meta) { report.checker('V70', id)(false, 'the subject has no subject record (FC.subject)'); continue; }
-    const committedLock = input.committedLock, mine = committedLock && committedLock.subjects && committedLock.subjects[id];
-    const subjectChanged = !committedLock ? true : !mine || mine.fp !== subjectFingerprint(data, id);
-    const sv = { ...subjectView(data, id), design: (input.designs || {})[id], committedDesign: (input.committedDesigns || {})[id], subjectChanged };
-    runScope(byScope(rules, 'subject'), sv, id, report);
+    runScope(byScope(rules, 'subject'), subjectView(data, id), id, report);
     lessons += Object.keys(data.subjects[id].lessons).length;
   }
   byScope(rules, 'site').forEach(r => runOne(r, input, '', report));

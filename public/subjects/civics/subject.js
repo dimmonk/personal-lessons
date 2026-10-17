@@ -1,8 +1,7 @@
-// US Civics & History: subject record (lesson standard 3). Only the pilot, lesson 1, is built: the subject screen lists every other part of the
-// design record as not built yet (V69 holds the rest back until the owner has tried the pilot). endResult and parts are the design record's, word for
-// word (V80, V71). The questions are the 128 of the 2025 civics test; each is a topic of its own (a question returns as itself), and each lesson names
-// the ones its part covers. The answers that depend on where the learner lives and who holds office are entered by the learner (own.answers); the app
-// stores no official's name.
+// US Civics & History: subject record (lesson standard 3). Only the pilot, lesson 1, is built: the subject screen lists every other part as not built
+// yet. The questions are the 128 of the 2025 civics test; each is a topic of its own (a question returns as itself), and each lesson names the ones its
+// part covers. The answers that depend on where the learner lives and who holds office are entered by the learner (own.answers); the app stores no
+// official's name.
 FC.subject("civics", {
   name: "US Civics & History",
   rev: 6,

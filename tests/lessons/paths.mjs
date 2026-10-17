@@ -6,9 +6,7 @@ export const REPO = new URL('../../', import.meta.url);
 export const DEFAULTS = {
   publicDir: new URL('public/', REPO),
   lockFile: new URL('tests/lessons.lock.json', REPO),
-  heldFile: new URL('tests/lessons/held-findings.json', REPO),
-  designsDir: new URL('docs/subjects/', REPO),
-  researchDir: new URL('docs/research/', REPO)
+  heldFile: new URL('tests/lessons/held-findings.json', REPO)
 };
 
 const toUrl = (p, trailingSlash) => {
@@ -16,8 +14,7 @@ const toUrl = (p, trailingSlash) => {
   return pathToFileURL(trailingSlash ? `${abs}/` : abs);
 };
 
-// Returns { publicDir, lockFile, heldFile, designsDir, researchDir, rest }. The design records (V69) sit in docs/subjects/ and the research notes in
-// docs/research/, beside public/. A target other than the app's own has no held-findings list unless one is named.
+// Returns { publicDir, lockFile, heldFile, rest }. A target other than the app's own has no held-findings list unless one is named.
 export function parseTargetArgs(argv) {
   const options = {};
   const rest = [];
@@ -34,9 +31,7 @@ export function parseTargetArgs(argv) {
   const lockFile = options.lock ? toUrl(options.lock, false) : DEFAULTS.lockFile;
   const own = !options.public;
   const heldFile = options.held ? toUrl(options.held, false) : own ? DEFAULTS.heldFile : null;
-  const designsDir = own ? DEFAULTS.designsDir : new URL('../docs/subjects/', publicDir);
-  const researchDir = own ? DEFAULTS.researchDir : new URL('../docs/research/', publicDir);
-  return { publicDir, lockFile, heldFile, designsDir, researchDir, rest };
+  return { publicDir, lockFile, heldFile, rest };
 }
 
 export const dirOf = fileUrl => dirname(fileUrl.pathname);

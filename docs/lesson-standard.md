@@ -1,8 +1,7 @@
 # Fieldcraft lesson standard, version 2 (the rules in force)
 
 Status: this file holds only the rules in force for building a lesson, as the code implements them on 2026-10-12
-(`FC.STANDARD` is 2). It is short on purpose: a writer reads it and nothing else, beside the design record and the
-validator. Everything that came before it, including the engine deleted on 2026-10-10 and the reports of how each step
+(`FC.STANDARD` is 2). It is short on purpose: a writer reads it and nothing else, beside the validator. Everything that came before it, including the engine deleted on 2026-10-10 and the reports of how each step
 was built, is in `docs/lesson-standard/history-v1.md`. Nothing in that file is a rule. A change to a rule here is a
 dated entry in section 11 and the edit in place.
 
@@ -32,21 +31,17 @@ wins. It does not outrank section 4's practice rules (feedback, support and fadi
 
 ## 2. Design
 
-Every subject is designed, rebuilt or audited through `.claude/skills/build-subject/SKILL.md`. Its gates are not
-restated here; read the skill.
+Every subject is designed, rebuilt or audited through `.claude/skills/build-subject/SKILL.md`; read the skill. Its plan
+for a subject (`docs/subjects/<id>/plan.md`) is prose for the people who build it and is read by no test. What the app
+and the validator know of a subject's design is in its subject record, `public/subjects/<id>/subject.js`, alone: the
+`endResult`, the `parts`, the `readingShare` and the rest of section 3.2. This standard says how a lesson is built.
 
-The design record, `docs/subjects/<id>/design.md`, is the single source of a subject's design. Its opening JSON holds
-what each gate decided: the kinds of learning and the principles behind them, the owner's paragraph and the end result,
-the practice and what the app must deliver, the most of a lesson that may be reading, the form, the parts and their
-checks, one block per lesson, the pilot, the owner's two approvals, the try or review of each lesson, and what the
-designer opened. V69 reads that JSON and refuses what is missing or inconsistent, and holds back any lesson the gates
-have not yet allowed. This standard says how a lesson is built once its block exists.
-
-Three fields of the subject record mirror the design record: `endResult` (the sentence the owner approved, `approved.goal.sentence`, held whenever the subject record is written) and `readingShare` (V80), and `parts` (V71).
+A lesson's `status` is `draft` until its author sets it to `live`, once the lesson has passed its two reviews: the
+learner's (a fresh reader goes through it cold from the learner view) and the research check. Neither the validator nor
+the hooks read the reviews or the status.
 
 **Old material.** A writer may take raw material (a story, a number, a line) from the tag `old-lessons`'s version of
-**this subject only** (`git show old-lessons:<path>`), once it fits a gate 5 block, and lists it in the record's
-`opened.writing`. Never another subject's lessons (the skill's "What may be opened"). Nothing is migrated.
+**this subject only** (`git show old-lessons:<path>`). Never another subject's lessons. Nothing is migrated.
 
 ## 3. The data model
 
@@ -70,10 +65,10 @@ public/maps/<region>.js               FC.map       one region of the map data (3
 ```js
 FC.subject('stats', {
   id, name, rev, standard: 2, history,
-  endResult: Text,                       // the sentence the owner approved (approved.goal.sentence), held when this record is written (V80)
-  parts: [{ id, title }],                // the design record's parts, word for word (V71)
+  endResult: Text,                       // the sentence that says what the learner can do after the subject
+  parts: [{ id, title }],                // the subject's parts, in order (V71)
   complete?: true,                       // set in the commit that adds the last part's lesson
-  readingShare: 0.25,                    // the design record's readingShare (V80); V73 measures against it
+  readingShare: 0.25,                    // the most of a lesson that may be reading, above 0 and below 1; V73 measures against it
   lists: { verdict: [{ id, text }], slip: [{ id, text }], trigger?: [...], ... },  // option lists, worded once
   rules?: { [ruleId]: { name, needs: [{ id, text }], heading? } },               // what a label or a word requires
   facets: { [facetId]: { name, values: [{ id, text }], compare?: true } },
@@ -88,11 +83,10 @@ FC.subject('stats', {
 ```
 
 - `parts` lets the offline app list each part that has no lesson as "Not built yet". Before `complete: true`, a part may
-  have no lesson; after it, every part has exactly one (V71). Two lessons for one part, a lesson for a part the record
+  have no lesson; after it, every part has exactly one (V71). Two lessons for one part, a lesson for a part the subject
   does not have, and lessons out of part order are always refused.
-- `endResult` is the sentence on the screen the owner signs off at gate 2 (the paragraph, the topics, the sentence and
-  the test), under `approved.goal`'s fingerprint, so V50 and V62 leave it alone. The parts' titles are the design
-  record's gate 4 words (V71), under no approval; V50 and V62 leave them alone too (section 8.2).
+- `endResult` is the owner's wording of what the subject is for, and the parts' titles are the cut of it into
+  parts; V50 and V62 leave both alone (section 8.2).
 - A facet with `compare: true` shows its values side by side at the end of a check, a retest and the review ("Labels
   thrown from the left: 3 of 3 beside from the right: 2 of 3"), when at least two of its values were met.
 - A rule with `heading` is a checklist of its own and stands alone in its panel: the heading replaces "What the label
@@ -103,7 +97,7 @@ FC.subject('stats', {
 
 ```js
 FC.lesson('stats', {
-  id: 'l2', part: 'B', role?: 'baseline',  // part is a gate 4 part id; only a baseline has part: null
+  id: 'l2', part: 'B', role?: 'baseline',  // part is a part id of the subject record; only a baseline has part: null
   title, rev, status: 'draft' | 'live', history,
   trigger?: triggerId,                     // a moment of lists.trigger the lesson waits for (section 5.4)
   why: Text,                               // one screen
@@ -119,8 +113,7 @@ Set  = { items: [ItemRef | [ItemRef, ItemRef]],   // an inner pair is asked back
 ItemRef = itemId | { gen: genId, n, with?: params | { form?, place? } } | { sing: { task, ...params }, n }
 ```
 
-A lesson is `live` only through a passing entry in the design record's `tried` (V69); the lesson itself carries no
-`tried`. Its revision and history are real fields: a history entry with a date and a change for every revision (V45).
+A lesson's `status` is `draft` until its author sets `live` (section 2). Its revision and history are real fields: a history entry with a date and a change for every revision (V45).
 
 A **baseline** (`role: 'baseline'`) has no part; its flow holds only screens that say how it goes; its check holds every
 answer to the end; it is shown first and run in the context `baseline`. Its first screen says what it is and gives the
@@ -730,19 +723,19 @@ are still due.
 
 ### 8.1 The words (owner-confirmed, 2026-10-12)
 
-One vocabulary, used with the owner, in every design record and document, and in the app's own wording. The learner's
+One vocabulary, used with the owner, in every plan and document, and in the app's own wording. The learner's
 column is what the screen says; the plain-words rule (V50) keeps the machinery's words off the screen.
 
 | Word | Means | The learner sees |
 |---|---|---|
 | **subject** | the whole thing on a tile: Psychology, Geography (never "module") | the subject's name |
-| **goal** | the paragraph the owner signs off: what you can do after the subject (`goal` in the design record) | nothing; it lives in the design record (the subject screen opens on the end result sentence, section 7) |
-| **topics** | the list the owner signs off under the paragraph: what the subject teaches; biases is a topic, each word on a words list is a topic (`topics`) | nothing; the list lives in the design record. "Topic" on screen is what the review brings back |
-| **part** | one piece of the end result, in order, covering some of the topics; the designer's cut of the topics into a sequence (`parts`) | a part's title, the design record's words |
+| **goal** | the paragraph that says what you can do after the subject (the plan's first sentence is the `endResult`) | the end result sentence, which the subject screen opens on (section 7) |
+| **topics** | the list under the paragraph: what the subject teaches; biases is a topic, each word on a words list is a topic | "Topic" on screen is what the review brings back |
+| **part** | one piece of the end result, in order, covering some of the topics; the designer's cut of the topics into a sequence (`parts`) | a part's title |
 | **lesson** | one sitting, serving one part, ending in that part's check | "lesson" |
 | **check** | the test at the end of a lesson, and the real-world test at the end of the subject | "the check" |
 | **item** | one thing you answer: an account, a message, a problem, a sung try | "question" ("try" when sung) |
-| **asks** | what the owner asked for, in their words: the must-keep list (`asked`) | nothing; it lives in the record |
+| **asks** | what the owner asked for, in their words: the must-keep list of the plan | nothing; it lives in the plan |
 | **review** | the weekly return of what is due | "This week's review" |
 
 ### 8.2 Rules for learner-facing text
@@ -764,8 +757,8 @@ Each enforced by a validator rule (and by the browser checks on every screen as 
 - **Titles**: no two lessons of a subject share one (V56).
 - **What is read**: every string a learner reads, including the subject's lists, rules, needs and private form labels,
   and a `text` ask's `model`. Quoted material (`message`, `article`, `document`, `chart`, `figure`, `spoken`) may say
-  anything for V50 and V62 but is still held to V60. `endResult` (the owner's approved sentence) and the parts' titles
-  (the design record's words) are exempt from V50 and V62 (section 3.2).
+  anything for V50 and V62 but is still held to V60. `endResult` and the parts' titles are exempt
+  from V50 and V62 (section 3.2).
 - There is no length cap on feedback; the most of a lesson that may be reading is the subject's `readingShare` (V73).
 
 ## 9. Validator rules and browser checks
@@ -793,7 +786,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 |---|---|---|
 | V4 | No code or id in learner text (section 8) | a reason that shows an item's id |
 | V36 | No praise or bare verdict opening feedback | a reason that opens "Correct." |
-| V45 | Revisions are real: `rev` at least 1, one history entry with a date and a change per revision, `standard` from 2 to the current version. (`live` is V69's: it reads the design record's `tried`, not the lesson.) | a lesson at revision 2 with one history entry |
+| V45 | Revisions are real: `rev` at least 1, one history entry with a date and a change per revision, `standard` from 2 to the current version. | a lesson at revision 2 with one history entry |
 | V46 | The lock: a lesson's fingerprint covers the lesson, the items and generators it names (text, parameters, the source of `make`) and the reserve items of its check's strands; a subject's covers its record. A deployed change needs a new `rev` | content that differs from the lock |
 | V47 | Every script is in `index.html` and `sw.js`'s `SHELL`, the lists are equal, and no file passes 800 lines | a file of 801 lines |
 | V50 | No app word to avoid or machinery word in authored text | a reason that says "item" |
@@ -801,9 +794,8 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V58 | Held findings (`tests/lessons/held-findings.json`) only shrink: one that no longer fires must go, and none may be added since the last commit | a held finding that no longer fires |
 | V60 | American English in every string | "colour" in a reason |
 | V62 | No abstract or textbook word | "utilize" in a reason |
-| V69 | The design record, in the skill's terms (its "The record"; this row is right to come from the skill). The record grows gate by gate: no gate's fields before the earlier gates are complete, gate 3 not before `approved.goal`, gate 4 not before `approved.practice`; a subject in the app needs the whole record. Owner words carry a date, the words and where they were said; an ask removed or reworded since the last commit is refused, and one is dropped only on the owner's word, and the topics an ask is taught under only grow without a new word of theirs; each approval's fingerprint binds the screen approved (the goal: the paragraph, the topics, the sentence, the test, and each ask with the topics it is placed under), one approval's words on two subjects are refused, and an approval or a try is cleared or replaced by a later word that keeps the one that stood (`approved.history`, a try's `previous`, an ask's `owner.previous`), never edited or taken away since the last commit; the same words again are refused. Every review names what it reviewed (`Reviewed:` a fingerprint) and counts for that version only; the record's own review (`designReview`, gate 5) must pass before a built subject's content changes; `designedOn` dates the design; a later date is a redesign, which may start new research, design and writing lists (never the asks) and needs its own record review dated on or after it. The subject record mirrors the approved sentence whenever it is written (V80: `approved.goal.sentence`; while a redesign's sentence waits for the owner, the record keeps the one it was built to). The pre-commit hook runs this tier on the staged tree, and the commit-message hook asks for the owner's word on a change to the gates, the tools, the hooks or the research notes. A record deleted since the last commit is refused. Each principle's decides or supports and its read level are its note's marks, one that decides is read in full and names its choice, and every principle is cited by a block once the practice is approved; `opened` holds nothing forbidden; one lesson block per part, its check the part's word for word. A stand-in review that carries a Disclosure does not count. Content is held, measured against the last commit's lock, while an ask or signed-off topic is in no part, the design opened what it may not, or an approval is missing; no lesson past the pilot (a baseline aside) before the pilot's try or review passed; no `live` lesson without a passing `tried` entry | no design record (and 60 more, one per refusal) |
 | V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
-| V71 | Every lesson's `part` is a part of the design record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order; the pilot is a lesson; and the subject record's `parts` (id and title) are the design record's whenever the subject record is written | a part with no lesson in a complete subject |
+| V71 | Every lesson's `part` is a part of the subject record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order | a part with no lesson in a complete subject |
 | V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's) | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; doing is `DOING_SECONDS` (choose, tap and place 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20; a place group's question by the form it is asked in) | a why padded past the share |
 | V74 | Every ask can be scored and explained (a place group: every question it can make): a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a place's slips are the subject's, and the map above it never has the right place (or a neighbor or the water of the place asked about) lit; a lit place named from memory is the one lit map, with no spoken block; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
@@ -812,7 +804,6 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V77 | Banks: each strand a check covers has three unseen items for its returns and one more per item of a retest, unless it has a generator or one item | a strand one item short |
 | V78 | Singing: tasks and parameters inside `SING_PARAMS`; the warm-up first and once, never in a check; no line in a check; sung checks `after-each`; every target inside the range | a hold of 9 seconds |
 | V79 | Fading: a set with support has a later set of the same strand with less or none; no support in a check | a lesson whose last set has the panel |
-| V80 | The subject record's `endResult` is the sentence the owner approved (`approved.goal.sentence`), and its `readingShare` is the design record's, held whenever the subject record is written; while a redesign waits for the owner, the record keeps what it was built to | one word changed |
 | V81 | Private forms: no field for an account number, login, password or Social Security number, fund rows included; every `into` is a slot of section 5.3 | a field "Account number" |
 | V82 | The failure (`danger.slip`) sits only on risky items, never on a real one, and can be made at least once | a real message whose wrong option is the failure |
 | V83 | A timed set holds only choose, tap, order or exchange (a place group is none of them); a busy set is timed and each item opens on a banner and asks one choice | a busy set that is not timed |
@@ -923,7 +914,7 @@ Europe), and on the test subject Atlas (X46, X47).
 
 ### 10.3 What is built
 
-Each subject has its pilot built, as `status: 'draft'`; every other lesson waits for the pilot's review (V69). No
+Each subject has its pilot built, as `status: 'draft'`; every other lesson waits for the pilot's two reviews. No
 subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Singing**: lesson 2, "Match a note" (opens with the range). Its record has no strands, lists or facets: the sung
   review is not built. The tasks `hold`, `slide`, `interval`, `melody` and `light` are tested on `chorus` only.
@@ -948,7 +939,7 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   and its retest, and the news story per due news strand in the review.
 - **Geography**: lesson 16, "Europe, west" (the pilot; draft): five questions shown done, one look at the labelled map (three views, each readable on a phone, with the ten flags beside their names), recall in four forms of a
   place group of the ten countries from Portugal to Italy and the five microstates (`g-europe-west`, the microstates asked only as a name to tap), and a
-  check drawn from the group (5 tapped, 3 named, 2 flags, 2 neighbors and water; 10 of 12). Not built: the other 32 parts. Its design record is
+  check drawn from the group (5 tapped, 3 named, 2 flags, 2 neighbors and water; 10 of 12). Not built: the other 32 parts. Its design is in
   `docs/subjects/geography/design.md`. Built for it on 2026-10-12: the map data
   for `world`, `us` and `europe-west` (3.11), the `map` block, the `place` ask and its neighbor-and-water form (3.7, 3.9), their rules
   (V70, V74, V83) and X46; flags are emoji text, the one line per country is `reason`, naming a lit place is a `text` ask under a lit
@@ -961,43 +952,9 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 
 ## 11. Revision log
 
-- **Version 2, 2026-10-12**: consolidated from version 1 (history-v1.md): sections 1 to 22 retired as history; 23 replaced by the build-subject skill; 24 and 25 absorbed into 6 and 3; 26.1 to 26.9 with the as-built decisions of 26.10 folded in. Three rules changed in substance, each an entry below.
-- **2026-10-12, live by review**: a lesson goes `live` through a passing entry in the design record's `tried`, the
-  owner's try or a stand-in review that passes (3.3, 9.2 V69, 10.3). Version 1 (26.7, V45) needed the owner's words
-  from a phone try.
-- **2026-10-12, the goal approved in place of the end result and the pilot**: the owner approves `approved.goal` (the
-  gate 2 screen: the paragraph, the topics, the sentence and the test, fingerprinted) and `approved.practice` (section
-  2, 9.2 V69). Version 1 (23.3, 23.4, 26.7) approved `endResult`, `practice` and the pilot.
+- **Version 2, 2026-10-12**: consolidated from version 1 (history-v1.md): sections 1 to 22 retired as history; 23 replaced by the build-subject skill; 24 and 25 absorbed into 6 and 3; 26.1 to 26.9 with the as-built decisions of 26.10 folded in. Its change in substance is the entry below.
 - **2026-10-12, X6 and X7 retired** (9.3): the draft line is asserted by the pilot walks; cold start measured per
   subject (X7, an owner rule) is no longer a check.
-
-- **2026-10-12, the skill's review loop** (commits e86d51d, e8fc74e, d9dcf4b and the one that follows): V69 reads the
-  record gate by gate; owner words carry a source and are append-only; approvals bind the printed gate 2 screen; every
-  review names the version it reviewed; a record review is a gate 5 field; the research notes state their read level;
-  `designedOn` dates a design; the two hooks hold the gates (9.1, 9.2 V69, section 2). Version 1 had none of these.
-
-- **2026-10-12, later**: the review loop's rounds four to twelve (commits e298e1e, fdbb6e3, fece38c, 21da9cf, 575563e, 68bd7df, c452c30,
-  6f42ca1 and the one that follows): owner entries append-only with their history (`approved.history`, `previous`); the same words
-  as an earlier approval refused, letters of any script counted; every review names the version it reviewed and its
-  date is the file's; a Disclosure voids a review; V80 and V71 hold the subject record's mirrors only when the record is
-  written; `designedOn` dates a design and a redesign needs its own review; the topics an ask is taught under only grow
-  without the owner's word; the lesson tier is measured against a base (`--base`, each pushed commit's parent in the
-  workflow, with the copy of the owner-line check that `main` held, never the pushed commit's); a merge is held for its
-  own changes (the remerge diff) and for what it brings in that was never checked; a commit from before the commit
-  where the gates start is checked by the tiers at the head, and a fork that is neither before nor after it fails; the pre-commit hook validates the staged tree with the base unset; the
-  gates (skill, record rules, tools, notes, hooks, workflow, package.json) change only with the owner's word in the
-  commit; gate 0's sources are the owner's own material and the project's records of their words, never a research
-  note, an audit, code or another subject's lessons; a forbidden read listed on any opened list is never erased; a
-  forced push after which nothing is new against `main` fails on push, and a fork from before the gates is rebased or
-  dropped.
-
-- **2026-10-12, round fourteen** (commits 2d0027d, 2b0b98d and the one that follows): a merge of more than two parents
-  is refused by the owner-line check, in the hook and on push, since git has no reading of what such a merge changed
-  itself; the push's fallback copy of the check, for a ref that has none, is the named commit 2d0027d; the check runs
-  as a script by any path, symlinks included, and its own test fails when a run stops before its end.
-- **2026-10-12, rounds fifteen and sixteen** (commits e06ed14 and 797a5f7): the fallback copy is 27ab552; a push that
-  creates `main` (GitHub's all-zero before) is checked from the commit where the gates start, and any other push is
-  checked against `main`.
 
 - **2026-10-12, maps** (commits 6b7e3b7, 3d39bc0, 3283580 and the one that follows): the map data (`FC.map`, `public/maps/`, `npm run maps`),
   the `map` block, the `place` ask and its neighbor-and-water form, V70, V74 and V83 for them, X46, the test subject Atlas; a lit
@@ -1015,14 +972,15 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   every zoom) and a microstate's name on a line from its dot (`lead` replaces `fs` in the map data); a `map` block may open on a `view` (a panel); water
   is drawn in water colors, lit or not; a tap on a microstate's circle is named for it; a worked place question shows what it asks; the `flags` block
   and a place's `flagLine` (3.5, 3.9: a flag is large, the feedback of a flag question shows it with its name and opens with the line that tells it
-  apart); V73 counts the names a `flags` block prints; a lesson put down at the check opens at the check (5.1); the writer may open the review that sent
-  its lesson back, the skill, the map build, the stylesheet, the browser checks and the learner-view tool (V69); X46 and X47 each have faults for these. The service worker cache is v26 (v27 below).
+  apart); V73 counts the names a `flags` block prints; a lesson put down at the check opens at the check (5.1); X46 and X47 each have faults for these. The service worker cache is v26 (v27 below).
 
 - **2026-10-13, the second stand-in review of Geography's pilot** (its fixes 1 to 4 and 6, the engine and the stylesheet alone): a neighbor and its water keeps Landlocked
   (in the row of the zoom buttons) and Next on a 390 x 844 screen, a map does not move when the line of help changes after the first tap, a lit place's box is on the screen,
   a ground place the size of a fingertip is held within 3% of the map's width (3.7), the border between countries is over 3 to 1, and the feedback of a neighbor and its water
   lights and names only the water the place touches and the water tapped (3.7); X46 and X47 (on Geography's lesson 16, `tests/e2e-fit.mjs`) each have faults for these.
   The service worker cache is v27.
+
+- **2026-10-17, the design-record process removed**: the record kept in each subject's `design.md` (as JSON), the owner approvals with their fingerprints, the lists of what the owner asked, tried and opened, the holds on content, the stand-in entries, the two rules that read the record (one for its shape, one for the mirrors of its sentence and reading share), the check of the owner's word in the commit message (its hook and its step in the push workflow) and the record tools are gone. The parts are read from the subject record alone (V71), and `endResult` and `readingShare` are the subject record's own (V73 measures against `readingShare`). A lesson's `status` is set by its author once its learner and research reviews pass (section 2). The pre-commit hook and the push workflow still run the lesson tier and its seeded faults. The old `docs/subjects/*/design.md` files stay as history prose.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

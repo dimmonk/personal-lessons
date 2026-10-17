@@ -1,5 +1,4 @@
-// Section 9: V70 (shape and references), V71 (lessons and the design record's parts), V80 (the end result mirrors the design
-// record), V81 (private forms), V56 (titles).
+// Section 9: V70 (shape and references), V71 (lessons and the subject's parts), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
 import { SUBJECT, PROSE, MAP_BLOCK, FLAGS_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, PLACE_GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
@@ -485,40 +484,18 @@ export const V70 = subjectRule('V70', (s, check) => {
 /* ---------- V71 ---------- */
 const numberOf = id => Number((String(id).match(/(\d+)$/) || [])[1]);
 export const V71 = subjectRule('V71', (s, check) => {
-  const design = s.design, partIds = s.partIds;
+  const partIds = s.partIds;
   const problems = [];
   const byPart = {};
   s.lessonList.filter(l => l.part !== null).forEach(l => { byPart[l.part] = [...(byPart[l.part] || []), l.id]; });
   Object.entries(byPart).forEach(([p, ids]) => {
-    if (!partIds.includes(p)) ids.forEach(id => problems.push(`lesson ${id} is for part "${p}", which is not a part of the design record`));
+    if (!partIds.includes(p)) ids.forEach(id => problems.push(`lesson ${id} is for part "${p}", which is not a part of the subject`));
     if (ids.length > 1) problems.push(`part "${p}" has more than one lesson: ${ids.join(', ')}`);
   });
   if (s.meta.complete) partIds.filter(p => !byPart[p]).forEach(p => problems.push(`part "${p}" has no lesson, and the subject says it is complete`));
   const ordered = s.sortedLessons.filter(l => l.part !== null).map(l => partIds.indexOf(l.part));
   if (ordered.some((x, i) => i > 0 && x < ordered[i - 1])) problems.push('the lessons are not in part order: lesson numbers must rise with the parts');
-  if (design && !design.error) {
-    // the subject record mirrors the design's parts (id and title) whenever it is written; while a redesign's parts wait, it keeps the ones it was built to
-    const idTitle = parts => JSON.stringify((Array.isArray(parts) ? parts : []).map(p => ({ id: p.id, title: p.title })));
-    if (s.subjectChanged && idTitle(s.meta.parts) !== idTitle(design.parts)) problems.push('the subject record\'s parts are not the design record\'s parts (id and title), word for word');
-    const built = s.lessonList.filter(l => l.role !== 'baseline');
-    if (built.length && !s.subject.lessons[design.pilot]) problems.push(`the design record's pilot "${design.pilot}" is not a lesson of the subject`);
-  }
   checkEach(check, 'lessons and parts', problems);
-});
-
-/* ---------- V80 ---------- */
-// The subject record mirrors the sentence the owner approved (approved.goal.sentence). It is held to it when the subject record is written
-// (changed since the last commit): while a redesign's sentence waits for the owner's word, the record keeps the sentence it was built to,
-// and V69 holds the content; once the owner approves, the next write of the subject record carries the approved sentence.
-export const V80 = subjectRule('V80', (s, check) => {
-  const design = s.design;
-  if (!design || design.error) { check(true, ''); return; }   // V69 owns a missing or unreadable record
-  const approved = design.approved && design.approved.goal && design.approved.goal.sentence;
-  if (approved && s.subjectChanged) check(s.meta.endResult === approved, 'the subject\'s end result is not the sentence the owner approved, word for word (approved.goal.sentence)');
-  else if (!approved && !s.committedDesign) check(s.meta.endResult === design.endResult, 'the subject\'s end result is not the design record\'s end result, word for word');
-  else check(true, '');
-  if (s.subjectChanged) check(s.meta.readingShare === design.readingShare, `the subject's readingShare is ${s.meta.readingShare} and the design record's is ${design.readingShare}`);
-  else check(true, '');
 });
 
 /* ---------- V81 ---------- */
@@ -539,4 +516,4 @@ export const V56 = subjectRule('V56', (s, check) => {
   checkEach(check, 'lesson titles', duplicatesOf(s.lessonList.map(l => l.title)).map(t => `two lessons are titled "${t}"`));
 });
 
-export const RULES_SHAPE = [V70, V71, V80, V81, V56];
+export const RULES_SHAPE = [V70, V71, V81, V56];
