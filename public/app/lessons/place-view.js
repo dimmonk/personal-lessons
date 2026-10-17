@@ -42,6 +42,9 @@ const mapMarkHtml = m => `<g class="mk mk-${esc(m.state || 'neutral')}" data-mar
 const mapZoomHtml = (beside = '') => `<div class="mapzoom">${beside}<button type="button" data-map-zoom="in" aria-label="${esc(SAY.zoomIn)}">+</button><button type="button" data-map-zoom="out" aria-label="${esc(SAY.zoomOut)}">&minus;</button>
   <button type="button" data-map-zoom="reset" aria-label="${esc(SAY.zoomReset)}">${SVG('<path d="M5 9V5h4M15 5h4v4M19 15v4h-4M9 19H5v-4"/>', 18)}</button></div>`;
 
+// the places a map names: `true` is every kind the region labels, a list is those places
+const mapNamedIds = (map, labels) => labels === true ? placeGeom(map).places.filter(p => map.labelled.includes(p.kind) && p.at).map(p => p.id) : labels || [];
+
 // The region as the learner meets it. Layers, bottom to top: lit water (a lit sea lies under the land, so its outline never covers a coast), the blank map
 // in the order the region lists, the insets' frames, lit ranges and regions (over the land, see-through), dots, names, marks.
 function mapHtml(map, o = {}){
@@ -53,7 +56,7 @@ function mapHtml(map, o = {}){
   const blank = kindsOf(map.draw), over = geom.places.filter(p => lit.has(p.id) && !map.draw.includes(p.kind) && !PLACE_WATER_KINDS.includes(p.kind));
   // a microstate's dot is drawn as the country it is; the dot of a strait is only the radius it is found within, and shows once the strait is lit
   const dots = geom.places.filter(p => p.dot && (map.land.includes(p.kind) || lit.has(p.id))), frames = (map.frames || []).map(f => `<rect class="map-frame" x="${mapNum(f.x)}" y="${mapNum(f.y)}" width="${mapNum(f.w)}" height="${mapNum(f.h)}"></rect>`).join('');
-  const names = o.labels === true ? geom.places.filter(p => map.labelled.includes(p.kind) && p.at).map(p => p.id) : o.labels || [];
+  const names = mapNamedIds(map, o.labels);
   const dotHtml = p => `<circle class="mp mp-dot${mark(p.id)}" data-place="${esc(p.id)}" cx="${mapNum(p.dot[0] / map.q)}" cy="${mapNum(p.dot[1] / map.q)}" r="${MAP_PX.dot}" data-px="${MAP_PX.dot}"></circle>`;
   const alt = names.length ? SAY.mapAltNamed(map.name) : SAY.mapAlt(map.name);
   return `<figure class="block-map" data-map="${esc(map.id)}" data-scope="${esc(o.scope || map.id)}" data-w="${width}" data-h="${height}"${o.view ? ` data-view="${o.view.join(' ')}"` : ''}${o.ask ? ` data-map-ask="${esc(o.ask)}"` : ''}>
@@ -63,10 +66,11 @@ function mapHtml(map, o = {}){
       ${over.map(p => mapShapeHtml(map, p, mark(p.id))).join('')}${dots.map(dotHtml).join('')}${mapLabelsHtml(map, names, geom)}${(o.marks || []).map(mapMarkHtml).join('')}
     </svg></div>${mapZoomHtml(o.beside)}</figure>`;
 }
-// the `map` block of a question or a teaching screen
+// the `map` block of a question or a teaching screen. A lit place is named on the map, as well as any names the block asks for, so the picture says
+// what it shows; only while a question asks the learner to name it (`ctx.nameAsked`, itemHtml) is its name kept off the map
 function mapBlockHtml(block, ctx){
-  const map = mapOf(block.region);
-  return mapHtml(map, { scope: `${ctx.scope || ''}|${block.region}|${(block.lit || []).join(',')}|${(block.view || []).join(',')}`, lit: block.lit, labels: block.labels, view: block.view });
+  const map = mapOf(block.region), named = [...new Set([...mapNamedIds(map, block.labels), ...(ctx.nameAsked ? [] : block.lit || [])])];
+  return mapHtml(map, { scope: `${ctx.scope || ''}|${block.region}|${(block.lit || []).join(',')}|${(block.view || []).join(',')}`, lit: block.lit, labels: named, view: block.view });
 }
 
 /* ---------- the place ask ---------- */
@@ -82,10 +86,10 @@ const placeWaterLit = (map, ask, answer) => [...new Set([...placeWaterOf(map, as
 function placeLitIds(map, ask, answer){
   return ask.mode === 'neighbor-water' ? [...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)] : placeRightIds(ask);
 }
-// the names a finished question puts on its map: for a neighbor and its water, the place itself, every neighbor and the lit water, so each lit shape says
-// what it is; and the right place of a question that was missed, so its name is learned with where it is (the map has no other names)
-const placeLabelIds = (map, ask, answer, missed = false) => ask.mode === 'neighbor-water'
-  ? [ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)] : missed ? placeRightIds(ask) : [];
+// the names a finished question puts on its map: every lit shape says what it is, so the name is learned with where it is (the map has no other names).
+// For a neighbor and its water, the place itself, every neighbor and the lit water; otherwise the right place, whether the tap was right or not
+const placeLabelIds = (map, ask, answer) => ask.mode === 'neighbor-water'
+  ? [ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)] : placeRightIds(ask);
 // each tap of an answer with the state the map marks it with: right when it is on a right place
 function placeTapsOf(map, ask, answer, marked){
   if(ask.mode !== 'neighbor-water'){
@@ -102,7 +106,7 @@ function placeTapsOf(map, ask, answer, marked){
 // tap on the water or the button "Landlocked"; Undo takes the neighbor's tap back while the water is still to come.
 function placeHtml(data, ask, st, ctx){
   const map = mapOf(ask.map), answered = st.answer !== undefined, nw = ask.mode === 'neighbor-water', first = nw && !answered && st.many ? st.many.n : null;
-  const open = !answered && !st.marks && !st.locked, marked = !!st.marks, missed = marked && !nw && scorePlace(data, ask, st.answer) !== 'ok';
+  const open = !answered && !st.marks && !st.locked, marked = !!st.marks;
   const answer = answered ? st.answer : first ? { n: first } : undefined;
   // the line of help holds two lines of room for as long as it is there, so the map does not move when the line changes after the first tap
   const hint = !open ? '' : `<span class="forline holdline">${esc(nw ? (first ? SAY.placeWater : SAY.placeNeighbor) : SAY.placeOne)}</span>`;
@@ -112,7 +116,7 @@ function placeHtml(data, ask, st, ctx){
   const landlocked = nw && (first || answered) ? `<button type="button" class="opt${picked ? ' sel' : ''}${marked && waterNone ? ' right' : ''}${marked && picked && !waterNone ? ' wrong' : ''}" data-place-landlocked
     ${open ? '' : 'disabled'} aria-pressed="${picked}">${esc(SAY.placeLandlocked)}</button>` : '';
   const view = mapHtml(map, { scope: `${(ctx && ctx.scope) || ''}|${ask.id}`, ask: open ? ask.id : null, marks: placeTapsOf(map, ask, answer, marked), lit: marked ? placeLitIds(map, ask, answer) : [],
-    labels: marked ? placeLabelIds(map, ask, answer, missed) : [], focus: marked && nw ? [ask.of] : [], beside: undo + landlocked });
+    labels: marked ? placeLabelIds(map, ask, answer) : [], focus: marked && nw ? [ask.of] : [], beside: undo + landlocked });
   return `<div class="stepopen prompt placeask" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>${hint}${view}</div>`;
 }
 // the map of a worked question: the right place lit and the tap shown at its label point, under a line that says it is done for the learner (the map

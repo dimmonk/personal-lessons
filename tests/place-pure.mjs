@@ -15,7 +15,7 @@ async function suite(app) {
   let checks = 0;
   const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
   const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
-  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, placeHtml, placeMissHtml, placeGeom, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
+  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, mapBlockHtml, placeHtml, placeMissHtml, placeGeom, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
   const ask = (right, extra = {}) => ({ id: 'a', kind: 'place', prompt: 'x', map: 'europe-west', right, ...extra });
   const border = (of, map = 'europe-west') => ({ id: 'b', kind: 'place', mode: 'neighbor-water', prompt: 'x', map, of });
   const score = (a, tap) => scorePlace({}, a, tap);
@@ -216,8 +216,11 @@ async function suite(app) {
   const feedback = placeHtml({}, ask('belgium'), { answer: [5, 5, 1], many: {}, marks: true }, { scope: 's' });
   check(/mp-country lit" data-place="belgium"/.test(feedback) && !/mp-country lit" data-place="france"/.test(feedback) && feedback.includes('mk-wrong'), 'after the answer the right place is lit and the wrong tap marked');
   const named = html => [...html.matchAll(/<text class="ml[^>]*>([^<]*)<\/text>/g)].map(m => m[1]), hit = at('europe-west', null, 4.35, 50.85);
-  same([named(feedback), named(placeHtml({}, ask('belgium'), { answer: hit, many: {}, marks: true }, { scope: 's' }))], [['Belgium'], []],
-    'after a miss the right place is named on the map, so the name is learned with the place; after a right tap nothing is named');
+  same([named(feedback), named(placeHtml({}, ask('belgium'), { answer: hit, many: {}, marks: true }, { scope: 's' }))], [['Belgium'], ['Belgium']],
+    'the right place is named on the map after a miss and after a right tap, so the name is learned with the place');
+  const lesson = { kind: 'map', region: 'europe-west', lit: ['belgium'] };
+  same([named(mapBlockHtml(lesson, {})), named(mapBlockHtml(lesson, { nameAsked: true }))], [['Belgium'], []],
+    'a lit place on a map block is named on the map, except while a question asks for its name');
   const unmarked = placeHtml({}, ask('belgium'), { answer: [5, 5, 1], many: {}, locked: true }, { scope: 's' });
   check(!/ lit"/.test(unmarked) && unmarked.includes('mk-neutral'), 'in a check nothing is lit before the end');
   const nwOpen = placeHtml({}, border('belgium'), { many: { n: [5, 5, 1] } }, { scope: 's' }), nwShut = placeHtml({}, border('belgium'), { many: {} }, { scope: 's' });
@@ -263,7 +266,8 @@ const FAULTS = [
   ['a tap at sea off a shore never on its land', s => s.replace('if(!map.land.includes(kind) || placeOnLand(map, geom, x, y)) return null;', 'return null;')],
   ['a tap at sea on the land of a shore however far out', s => s.replace('if(away <= reach && away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains', 'if(away < bestAt){ best = place; bestAt = away; }\n  }\n  return best ? best.id : null;\n}\nconst placeContains')],
   ['Undo never offered', s => s.replace('const undo = open && first ?', 'const undo = false ?'), 'app/lessons/place-view.js'],
-  ['a missed place lit with no name', s => s.replace(': missed ? placeRightIds(ask) : [];', ': [];'), 'app/lessons/place-view.js'],
+  ['a lit place with no name after its tap', s => s.replace('...placeWaterLit(map, ask, answer)] : placeRightIds(ask);', '...placeWaterLit(map, ask, answer)] : [];'), 'app/lessons/place-view.js'],
+  ['a lit place on a map block with no name', s => s.replace("...(ctx.nameAsked ? [] : block.lit || [])", "...[]"), 'app/lessons/place-view.js'],
   ['the neighbors of a neighbor and its water left without their names', s => s.replace('[ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)]', 'placeWaterLit(map, ask, answer)'), 'app/lessons/place-view.js'],
   ['the neighbors drawn as strong as the place they are next to', s => s.replace("(near(id) ? ' near' : '')", "''"), 'app/lessons/place-view.js'],
   ['a worked map that does not say it is done for the learner', s => s.replace('<span class="forline">${esc(SAY.placeWorked)}</span>', ''), 'app/lessons/place-view.js'],

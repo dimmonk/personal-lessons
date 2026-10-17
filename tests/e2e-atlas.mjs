@@ -71,7 +71,8 @@ export async function X46(env) {
   // a worked tap: the place lit, the tap shown
   await jump(page, STEP.worked);
   c.check(JSON.stringify(await page.locator('.item .mp.lit, .block-map .mp.lit').evaluateAll(els => els.map(e => e.dataset.place))) === '["alder"]', 'the worked tap does not light the place');
-  c.check(await page.locator('.block-map .mk-right').count() === 1 && await page.locator('.block-map text').count() === 0, 'the worked tap does not show the tap, or its map carries a name');
+  const workedNames = await page.locator('.block-map text').allTextContents();
+  c.check(await page.locator('.block-map .mk-right').count() === 1 && JSON.stringify(workedNames) === '["Alder"]', `the worked tap does not show the tap, or its map names ${JSON.stringify(workedNames)}, not the lit place Alder`);
   c.check(/Tap it on the map\./.test(await env.screenText(page)), 'the worked tap does not say what is asked');
 
   // the first group: Birch, Cedar, Speck
@@ -120,6 +121,8 @@ export async function X46(env) {
   await tapAt(page, 85, 70);
   now = await look(page);
   c.check(now.r.where === 'ok' && JSON.stringify(await lit(page)) === '["cedar"]' && await page.locator('.item .mk-right').count() === 1, `a tap in the hole of Alder, asked for Cedar, scored ${now.r && now.r.where} and lit ${JSON.stringify(await lit(page))}`);
+  const rightNames = await page.locator('.item .mapsvg text').allTextContents();
+  c.check(JSON.stringify(rightNames) === '["Cedar"]', `after a right tap the map names ${JSON.stringify(rightNames)}, not the place lit, Cedar`);
   landFill = await fillOf(page, '.item .mp-country.lit');
   blankFill = await fillOf(page, '.item .mp-country:not(.lit)');
   // the border between two countries stands out from the countries: at least 3 to 1, the contrast of a line a learner has to see (WCAG 1.4.11)
@@ -195,6 +198,8 @@ export async function X46(env) {
   await page.locator('input[data-recall="name"]').fill('cedar');
   await page.locator('[data-recall-answer="name"]').click();
   c.check((await look(page)).r.name === 'ok', 'the lit place named from memory did not score right');
+  const namedAfter = await page.locator('.item .mapsvg text').allTextContents();
+  c.check(JSON.stringify(namedAfter) === '["Cedar"]', `once the lit place is named from memory the map names ${JSON.stringify(namedAfter)}, not Cedar`);
   await next(page);
 
   // the check: nothing lit or marked right or wrong until the end; Landlocked wrong for a country that touches the sea

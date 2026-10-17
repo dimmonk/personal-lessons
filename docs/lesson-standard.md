@@ -356,11 +356,12 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
   learner tapped are lit (no other water), each of them named on the map (`of`, every neighbor and the lit water, each once: the map has no other
   names), the taps marked. Landlocked stands in the row of the zoom buttons, under the map.
 - *Feedback* (section 4.1): the mark, "You tapped: <place>" (or that the tap was on no place) with the slip's name, the right
-  place lit on the same map and the tap marked beside it; after a miss the right place is also named on the map, so the name is learned
-  with where it is (a right tap names nothing). In a check nothing is lit or marked until the end (X23). A worked
-  item shows the place lit and the tap marked at once, under the line "Done for you: the answer is on the map" (its map takes no tap).
+  place lit on the same map, named on it, and the tap marked beside it: a map is the picture, so a lit place always says what it is on the map
+  itself, after a right tap as after a miss, and the name is learned with where it is. In a check nothing is lit or marked until the end (X23). A worked
+  item shows the place lit, named and the tap marked at once, under the line "Done for you: the answer is on the map" (its map takes no tap).
 - *A lit place named from memory* is a `text` ask with `accept` under a `map` block with `lit` (one place): the lit map is the
-  question, so it needs no `spoken` block and may not have one (V74).
+  question, so it needs no `spoken` block and may not have one (V74). Its name is kept off the map only until the question is marked; then
+  the map names it.
 
 ### 3.8 The sing ask
 
@@ -436,7 +437,8 @@ each question from the learner's range and a seed, and stores its tries under `s
 - **A map** is drawn from the map data by `public/app/lessons/place-view.js`: layers bottom to top are the lit water (so a sea's
   outline never covers a coast), the blank map in the order the region's `draw` lists, the insets' frames, lit ranges and regions
   (see-through), the dots of microstates, the names, and the marks of taps. Nothing on a blank map carries a name, in the picture or
-  the page; the one look at a labelled map (`labels`) is a teaching screen. A name is set in pixels, not in units of the map: 12 pixels tall
+  the page; the one look at a labelled map (`labels`) is a teaching screen. A lit place is always named on the map itself, never only in the
+  text beside it (a map is the visual aid; the eye should not leave it for the name), except while a question asks for that name. A name is set in pixels, not in units of the map: 12 pixels tall
   on the screen at every zoom (`map-run.js` puts it back at each zoom), and a microstate's name stands off its dot on a line to it, the pixels
   right and down in the place's `lead` (3.11). A region too crowded to read whole is shown as panels, each a `map` block with a `view`
   that names only the places in it; the button for the whole map goes back to the part the map opened on. Water is drawn in a water color

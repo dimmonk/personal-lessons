@@ -405,8 +405,10 @@ export const FAULTS = [
   // the map block and the place ask (9: X46). Only the checks that draw maps or share the screens they sit on can see these faults.
   { check: 'X46', name: 'Undo that keeps the neighbor\'s tap', only: MAP_SEEN,
     edits: [replace('app/lessons/place-run.js', '  Q.cur = { ...Q.cur, many };\n  paintQueue();', '  paintQueue();')] },
-  { check: 'X46', name: 'a missed place lit with no name', only: MAP_SEEN,
-    edits: [replace('app/lessons/place-view.js', ': missed ? placeRightIds(ask) : [];', ': [];')] },
+  { check: 'X46', name: 'a lit place with no name after its tap', only: MAP_SEEN,
+    edits: [replace('app/lessons/place-view.js', '...placeWaterLit(map, ask, answer)] : placeRightIds(ask);', '...placeWaterLit(map, ask, answer)] : [];')] },
+  { check: 'X46', name: 'a lit place named from memory with no name once marked', only: MAP_SEEN,
+    edits: [replace('app/lessons/place-view.js', "...(ctx.nameAsked ? [] : block.lit || [])", "...[]")] },
   { check: 'X46', name: 'a drag that counts as a tap', only: MAP_SEEN,
     edits: [replace('app/lessons/map-run.js', "if(e.type !== 'pointerup' || g.moved || g.multi) return;", "if(e.type !== 'pointerup') return;")] },
   { check: 'X46', name: 'a pinch that counts as a tap', only: MAP_SEEN,

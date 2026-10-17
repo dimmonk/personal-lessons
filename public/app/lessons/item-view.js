@@ -85,7 +85,7 @@ function itemHtml(data, inst, state){
   const open = openAsks(item, support, state.a);
   const marked = state.marks || (support && support.shown);
   const ctx = { deciding: marked ? item.deciding || [] : [], sing: state.sing || null, data, scope: `${inst.key}|${inst.seed === undefined ? '' : inst.seed}`, tap: tapContext(item, open, state), speech: state.speech || null,
-    panel: !!(support && support.panel) };
+    panel: !!(support && support.panel), nameAsked: !marked && open.some(isRecallAsk) };
   const steps = shownStepsHtml(item, support);
   const hint = (support && support.shown && (item.deciding || []).length ? `<p class="hintline">${esc(SAY.helpMarked)}</p>` : '')
     + (support && support.panel && panelBlocksOf(item).length ? `<p class="hintline">${esc(panelHint(data, item))}</p>` : '');
