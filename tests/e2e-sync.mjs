@@ -33,7 +33,9 @@ async function X49(env) {
   c.check(JSON.stringify(await recordOf(env, cleared.page)) === JSON.stringify(record), 'the record on a cleared phone is not the one saved');
   await env.clickVisible(cleared.page, '[data-v="progress"]');
   c.check(await progressHead(cleared.page) === head, `the Progress screen on a cleared phone reads "${await progressHead(cleared.page)}", not "${head}"`);
-  c.check((await syncLine(cleared.page)).includes(SAVED), 'on a cleared phone, the line does not say everything is saved');
+  // the line settles once the account has answered, which takes longer on a busy machine: wait for it, as above
+  const settled = await cleared.page.waitForFunction(text => document.querySelector('[data-sync-line]').textContent.includes(text), SAVED, { timeout: 20000 }).then(() => true, () => false);
+  c.check(settled, `on a cleared phone, the line does not say everything is saved: "${await syncLine(cleared.page)}"`);
   await cleared.context.close();
   return c;
 }

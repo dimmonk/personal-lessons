@@ -1,753 +1,574 @@
-# Political Ideologies: Socialist, or not?
+# Political Ideologies: Story, democracy, end state
 
-Revision 1, draft (the screen carries the draft line). Part: Economy labels. Where the subject ends up: When a speech or a post is called "socialist", "fascist" or the like, check for yourself which label its own words earn.
+Revision 1, draft (the screen carries the draft line). Part: Story, democracy, end state. Where the subject ends up: After this subject you can read a post, a speech, a platform or a quote and name the ideology it speaks for, or say there is too little to tell, by answering the deciding questions, when someone argues a position or throws a label like "socialist" or "fascist".
 
 ## The why
 
-A label like “socialist” is a claim about what some words want done. People throw it from every side, and often it does not fit.
-Here you check a label against the words it is pinned on. You find what the words say, compare that with what the label needs, and decide: earned, not earned, or too little to tell.
+Two movements can agree on who owns the factories and still be enemies. Three more questions find the difference.
+In about fifteen minutes you will learn them, and the trap of judging a movement by its rallies and its police. The check is eight passages with one to three questions each; a passage counts when every answer on it is right, and seven of eight pass.
 
-## Step 1: Check the label, not the mood
+## Step 1: Question 3, what drives history
 
-A wrong idea, marked wrong: “Socialist means the government pays for things.”
-The right line: People use “socialist” in many ways. Here it means one thing you can check: the public or the workers own the main businesses. Paying for services with taxes is a different idea.
-
-A label pinned on words is a claim. You can check it in three steps.
-1. Find what the words say should be done. Leave out the tone, the insults and who is speaking.
-2. Read what the label needs. Each label needs a few things, and the words have to show every one.
-3. Decide. Earned: the words show every need. Not earned: they show something that does not fit, and you say which name fits instead. Too little to tell: the words are too vague to show the label or rule it out.
-
-## Step 2: What the four labels need
-
-A panel, "What the label needs":
-- Free-market (capitalist)
-  1. Businesses and property stay in private hands.
-  2. Buyers and sellers decide prices. The government does not fix them or run the business.
-- Social democrat
-  1. Taxes pay for broad services or benefits: health care, schools, pensions or meals.
-  2. Businesses stay private. They are taxed and regulated, not taken over.
-- Socialist
-  1. A main industry or a big company is named: such as power, rail, banks or hospitals.
-  2. The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count.
-- Communist
-  1. Nearly all property and business would be owned in common or by the state: farms, factories and shops, not just a few industries.
-  2. One central plan, not buyers and sellers, would decide what is made and what it costs.
-
-These are the plain meanings used here. People argue about the edges, so the words you judge sit well inside them.
-A socialist idea takes a few main industries into public or worker hands. A communist idea takes nearly everything. Each label is judged on its own needs, whichever side throws it.
-
-## Step 3: One label, different words
+Question 3 is the engine of the story: what makes history move? A fight over wealth between classes. A nation's fall and rebirth. A struggle between races. Freedom spreading. A divine or traditional order. Or a pure people sold out by an elite. A list of jobs to do names no engine: the answer is "the words do not say".
 
 | A | B |
 |---|---|
-| A post with a label pinned on words, from "Comment · @ray_w · 1h". Under it: "On a right-leaning news page". The commenter's words: **Socialist! The state is running medicine now.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):  > Every resident would get health insurance paid for by a payroll tax. > Doctors and hospitals would stay private and send their bills to the plan. | A post with a label pinned on words, from "Comment · @ray_w · 1h". Under it: "On a right-leaning news page". The commenter's words: **Socialist! The state is running medicine now.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):  > The county would buy every hospital in it and put the doctors on its payroll. > Care would be free to patients. |
+| “The owners take what the workers make. That has always been the fight.” | “Honest people built this country, and a gang of insiders sold it.” |
 
-Compare: Both posts say socialist. In the first, a tax pays the bills and the hospitals stay private. In the second, the county owns the hospitals. Only the second has the public owning a main industry.
+Compare: Both blame a few at the top. The first says history is a fight over wealth; the second, that a pure people was betrayed, with no owners and no class.
 
-## Step 4: A worked example
+## Step 2: Question 4, elections: six answers, and "the words do not say"
 
-A post with a label pinned on words, from "Comment · @dale_k · 2h". Under it: "On a right-leaning news page". The commenter's words: **This is socialism, plain and simple.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+Question 4 is what the words want done with elections and the constitution. It has six answers, and a seventh choice for words that give none: "the words do not say".
+Keep them and widen them: use the vote to change more, such as moving businesses into public hands. Defend them: leave elections and courts as they are, or bring back an older order. Go beyond them: a party rules for the workers. Abolish them for a leader or a movement. Keep the vote but attack the courts, the press and the civil service. Do away with the state altogether: "We will not capture it, we will dissolve it."
+Listen for who rules and for whom: a party "for the workers", or a leader who "is the nation's will".
 
-> The Cold Winters Plan would pay every household $300 toward its heating bill each year.
-> The money would come from a tax on the profits of the state’s power companies.
-> The power companies would stay privately owned and keep running as they do now.
-> “No family should have to choose between heat and food,” said the sponsor.
-> (small print) Said by a state senator at a committee hearing.
+| A | B |
+|---|---|
+| “The mines and mills will belong to the public. We will win the vote first, and leave voters free to turn us out.” | “The mines and mills will belong to the public. One party will rule in the workers' name. Elections can wait.” |
 
-A panel, "What the label needs":
-- Socialist
-  1. A main industry or a big company is named: such as power, rail, banks or hospitals.
-  2. The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count.
+Compare: The same public ownership, opposite answers to Question 4. The first keeps elections and uses them; the second puts a party in charge.
+
+## Step 3: Question 5, where it ends
+
+Question 5 is where the words want things to end. Some end states are a finish line: no classes and no state. Some are a return: a reborn nation, or a restored old order. A racial order is a fixed ranking of races. Some never finish: open competition, or equal results between groups. Rebirth builds something new; restoration wants the old order exactly as it was.
+
+## Step 4: Never judge by methods: the horseshoe error
+
+One-party rule, a leader cult, secret police, censorship, repression and violence are methods that travel: parties of the left, movements of the right and plain dictators all use them. What tells fascism from a dictator who only wants quiet is its own marks, met in part 4: a leader who claims to be the nation's will, state bodies in place of free unions, a doctrine of purifying struggle and mass mobilization. Mobilization never tells a movement of the right from a party of the left, which mobilizes too.
+When the methods match, go back to Question 1 and Question 2. Naming still waits for the telltale answers.
+
+| A | B |
+|---|---|
+| “One party, one leader, rallies in every square. The mills now belong to the state, for the working class.” | “One party, one leader, rallies in every square. The owners keep their mills but build what the state orders, for the nation.” |
+
+Compare: The methods are the same word for word. Questions 1 and 2 differ: the state owning for a class, against directed owners for the nation.
+
+## Step 5: A worked example
+
+“We were a great people once, and soft men let the nation rot. Parliament only talks. One movement and one leader will act, and the nation will rise again, whole and proud, for a thousand years.”
 
 Before the working, the learner may commit to a choice (not scored, not stored):
-**Do the words earn the label “socialist”?**
-- Earned
-- Not earned
-- Too little to tell
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth
+- The nation's decline and rebirth
+- A struggle between races
+- Freedom spreading to more people
+- A divine or traditional order
+- A pure people sold out by an elite
+- The words do not say
 
 The working, one step at a time:
-1. Find what the words say should be done. The plan pays $300 toward every heating bill, with a tax on the power companies’ profits. The sentence that settles who owns the companies is “The power companies would stay privately owned and keep running as they do now.”
-1. Read what the label needs. “Socialist” needs a main industry named, and the public or the workers owning it.
-1. Check each need against the words. The industry is there: the power companies. The owner is not, because they stay private. So the label is not earned.
-1. Name what the words do earn. A tax pays a benefit to every household, and the companies stay private. That is the social democrat idea.
+1. Question 3. Find what drives history. A great people once, soft men who let the nation “rot”, and a nation that will “rise again”: a fall, then a rebirth. Question 3: the nation's decline and rebirth.
+1. Question 4. Find what the words want done with elections. “Parliament only talks. One movement and one leader will act”: the parliament is pushed aside for a leader and a movement. Question 4: abolish elections for a leader or a movement.
+1. Question 5. Find where things end up. “Rise again, whole and proud, for a thousand years”: a nation reborn that lasts for good. Question 5: a reborn, eternal nation.
 
-Then the answer: Not earned / Social democrat / The power companies would stay privately owned and keep running as they do now. “Socialist” needs a main industry named and the public or the workers owning it. The plan names one, the power companies. But “The power companies would stay privately owned and keep running as they do now”, so no one but private owners owns them. A tax that pays part of every household’s heating bill is a benefit paid for by taxes, with business left private. That is what a social democrat idea is.
-What you would need to see: To earn “socialist”, the words would have to say the public or the workers would own the power companies.
-What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “The money would come from a tax on the profits of the state’s power companies.”
-- Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
-
-## Step 5: Questions
-
-4 questions, listed, with help (what the label needs, shown beside the words), with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
-
-#### Question 1
-
-A post with a label pinned on words, from "Comment · @maren_t · 5h". Under it: "On a right-leaning news page". The commenter's words: **Socialism again. Free buses for everyone.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
-
-> The Free Fares Plan would let everyone ride city buses at no charge.
-> A new 1% sales tax would cover the lost fares.
-> The buses would still be run by the same private contractors, who would be paid by the city for every trip they run.
-> “Getting to work should not cost a day’s pay,” said the mayor’s office.
-> (small print) Said by a spokesperson for the city transport office.
-
-A panel, "What the label needs":
-- Socialist
-  1. A main industry or a big company is named: such as power, rail, banks or hospitals.
-  2. The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count.
-
-Help on screen: What the label needs is shown beside the words.
-
-**Do the words earn the label “socialist”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat (right)
-- Socialist — if chosen: a slip: wrong-name
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Free Fares Plan would let everyone ride city buses at no charge." — if tapped: note: That is what riders get, not who owns the buses.
-- "A new 1% sales tax would cover the lost fares." — if tapped: note: That says where the money comes from.
-- "The buses would still be run by the same private contractors, who would be paid by the city for every trip they run." (right)
-- "“Getting to work should not cost a day’s pay,” said the mayor’s office." — if tapped: note: That is the reason given, not what the plan does.; slip: tapped the tone or the promise, not what it would do
-- "Said by a spokesperson for the city transport office." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. The plan names the city buses, but “The buses would still be run by the same private contractors, who would be paid by the city for every trip they run.” Nothing changes hands. A tax that pays for free rides is a service paid for by taxes, with the companies left private: a social democrat idea.
-What you would need to see: To earn “socialist”, the words would have to say the city or the drivers would own the bus companies.
-What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “The Free Fares Plan would let everyone ride city buses at no charge.”
-- Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
-
-#### Question 2
-
-A post with a label pinned on words, from "Post · Dockside Workers Network · 4h". Under it: "From a left-leaning workers’ group". The commenter's words: **Yes, this is socialism, and we are proud of it.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
-
-> The Metro Bus Plan would have the city buy the Metro Bus Company from its owners.
-> The city would run it as a public service, with riders and drivers on the board.
-> Fares would stay as they are.
-> (small print) Said by an organizer for the bus drivers’ union.
-
-A panel, "What the label needs":
-- Socialist
-  1. A main industry or a big company is named: such as power, rail, banks or hospitals.
-  2. The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count.
-
-Help on screen: What the label needs is shown beside the words.
-
-**Do the words earn the label “socialist”?**
-- Earned (right)
-- Not earned — if chosen: a slip: doubted
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist (right)
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Metro Bus Plan would have the city buy the Metro Bus Company from its owners." (right)
-- "The city would run it as a public service, with riders and drivers on the board." — if tapped: note: That says how it would be run, once the city owns it.
-- "Fares would stay as they are." — if tapped: note: That is about fares, not who owns the buses.
-- "Said by an organizer for the bus drivers’ union." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. “The Metro Bus Plan would have the city buy the Metro Bus Company from its owners” names the bus company and puts it in the city’s hands. It would then be run as a public service. Both needs are there.
-What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “The Metro Bus Plan would have the city buy the Metro Bus Company from its owners.”
-- Found: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. “The Metro Bus Plan would have the city buy the Metro Bus Company from its owners.”
-
-#### Question 3
-
-A post with a label pinned on words, from "Comment · @priya_o · 6h". Under it: "On a left-leaning news page". The commenter's words: **Capitalist nonsense, as usual.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
-
-> Our plan is to grow the economy and bring good jobs back to the county.
-> We will work with business, workers and local leaders.
-> (small print) Said by a candidate for county commissioner.
-
-A panel, "What the label needs":
-- Free-market (capitalist)
-  1. Businesses and property stay in private hands.
-  2. Buyers and sellers decide prices. The government does not fix them or run the business.
-
-Help on screen: What the label needs is shown beside the words.
-
-**Do the words earn the label “capitalist”?**
-- Earned — if chosen: a slip: believed
-- Not earned — if chosen: a slip: overreached
-- Too little to tell (right)
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: forced-name
-- Social democrat — if chosen: a slip: forced-name
-- Socialist — if chosen: a slip: forced-name
-- Communist — if chosen: a slip: forced-name
-- None of these four (right)
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Our plan is to grow the economy and bring good jobs back to the county." — if tapped: That is not the sentence.
-- "We will work with business, workers and local leaders." — if tapped: That is not the sentence.
-- "Said by a candidate for county commissioner." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" (right)
-
-After the answer: the deciding words are marked. Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our plan is to grow the economy and bring good jobs back to the county” says neither. It names no business, no owner and no price, so the words cannot show the label and cannot rule it out.
-What you would need to see: To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Missing: Businesses and property stay in private hands. The words do not say it.
-- Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
-
-#### Question 4
-
-A post with a label pinned on words, from "Comment · @gus_h · 3h". Under it: "On a right-leaning news page". The commenter's words: **Communists, every one of them.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
-
-> The Fair Share Plan would put a 5% tax on fortunes over $50 million.
-> The money would pay for pensions and free school meals in every school.
-> All businesses and property would stay with their private owners.
-> (small print) Said by a state representative in a speech.
-
-A panel, "What the label needs":
-- Communist
-  1. Nearly all property and business would be owned in common or by the state: farms, factories and shops, not just a few industries.
-  2. One central plan, not buyers and sellers, would decide what is made and what it costs.
-
-Help on screen: What the label needs is shown beside the words.
-
-**Do the words earn the label “communist”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat (right)
-- Socialist — if chosen: a slip: wrong-name
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Fair Share Plan would put a 5% tax on fortunes over $50 million." — if tapped: note: That says who pays, not who owns the businesses.
-- "The money would pay for pensions and free school meals in every school." — if tapped: note: That says where the money goes.
-- "All businesses and property would stay with their private owners." (right)
-- "Said by a state representative in a speech." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: “Communist” needs nearly all property and business owned in common or by the state, and one central plan deciding what is made and what it costs. The plan says “All businesses and property would stay with their private owners.” Neither need is there. A tax on large fortunes that pays for pensions and school meals is a benefit paid by taxes, with business left private: a social democrat idea.
-What you would need to see: To earn “communist”, the words would have to say that nearly all farms, factories and shops would be owned in common or by the state.
-What “Communist” needs, each need found (with its line) or missing:
-- Missing: Nearly all property and business would be owned in common or by the state: farms, factories and shops, not just a few industries. The words do not say it.
-- Missing: One central plan, not buyers and sellers, would decide what is made and what it costs. The words do not say it.
-
-Then a screen: you can stop here, your place is kept.
+Then the answer: The nation's decline and rebirth / Abolish them for a leader or a movement / A reborn, eternal nation. A fall and then “rise again” (Question 3: decline and rebirth), parliament pushed aside for “one movement and one leader” (Question 4: abolish), a nation “whole and proud, for a thousand years” (Question 5: reborn). Those three answers together are fascism's.
 
 ## Step 6: Questions
 
-8 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+7 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+
+#### Question 1
+
+“Once we were feared and admired. Then we grew soft, and our enemies laughed. But a nation can be born again, and ours will rise.”
+
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth (right)
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
+
+After the answer: Reason: A proud past, a fall (“grew soft”) and a nation “born again”. Question 3: the nation's decline and rebirth.
+
+#### Question 2
+
+“We will fix the potholes on Main Street, cut the bus fares and open the library on Sundays.”
+
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say (right)
+
+After the answer: Reason: A list of jobs: no fight, no fall, no order named as what drives history. Question 3: the words do not say.
+
+#### Question 3
+
+“The races of the earth are locked in a fight for room to live. Every war and every empire is that fight, and only the strongest blood will win it.”
+
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races (right)
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
+
+After the answer: Reason: History is a fight between races for room to live, won by “the strongest blood”. Question 3: a struggle between races.
+
+#### Question 4
+
+“Every age has made more people free: to speak, to worship, to choose their work and their neighbors. Our job is to carry that on.”
+
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people (right)
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
+
+After the answer: Reason: The story is freedom reaching “more people” age after age. Question 3: freedom spreading to more people.
 
 #### Question 5
 
-A post with a label pinned on words, from "Comment · @theo_b · 8h". Under it: "On a left-leaning news page". The commenter's words: **Free-market thinking again. Leave it to the market and watch who loses.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“The world has an order that God laid down, and a country is healthy when its laws and customs follow it. Trouble comes when people forget.”
 
-> The Lakeshore Bus Plan would sell the state-owned bus company to private firms.
-> The new owners could charge whatever fares riders will pay.
-> The state would only enforce safety rules and contracts.
-> (small print) Said by a state budget official on a radio show.
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order (right)
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
 
-**Do the words earn the label “free-market”?**
-- Earned (right)
-- Not earned — if chosen: a slip: doubted
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) (right)
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist — if chosen: a slip: wrong-name
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Lakeshore Bus Plan would sell the state-owned bus company to private firms." (right)
-- "The new owners could charge whatever fares riders will pay." — if tapped: note: That is about fares, once the company is sold.
-- "The state would only enforce safety rules and contracts." — if tapped: note: That says what the state would keep doing.
-- "Said by a state budget official on a radio show." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: “Free-market” needs businesses in private hands and prices decided by buyers and sellers. “The Lakeshore Bus Plan would sell the state-owned bus company to private firms” puts the company in private hands. “The new owners could charge whatever fares riders will pay” leaves the prices to buyers and sellers. Both needs are there.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Found: Businesses and property stay in private hands. “The Lakeshore Bus Plan would sell the state-owned bus company to private firms.”
-- Found: Buyers and sellers decide prices. The government does not fix them or run the business. “The new owners could charge whatever fares riders will pay.”
+After the answer: Reason: Trouble comes when people leave “an order that God laid down”. Question 3: a divine or traditional order.
 
 #### Question 6
 
-A post with a label pinned on words, from "Comment · @walt_p · 7h". Under it: "On a right-leaning news page". The commenter's words: **This is communism. Say it out loud.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“The mill owners grew fat while the mill hands went hungry. It has always been so: the rich and the working poor, in one long fight.”
 
-> The People’s Economy Act would end private ownership of farms, factories and shops.
-> Everything would be owned in common and run by the state.
-> One national plan would decide what is made, how much, and at what price.
-> Backers say it would end poverty in ten years.
-> (small print) Said by the author of a book on economics.
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth (right)
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
 
-**Do the words earn the label “communist”?**
-- Earned (right)
-- Not earned — if chosen: a slip: doubted
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist — if chosen: a slip: wrong-name
-- Communist (right)
-- None of these four — if chosen: a slip: missed-name
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The People’s Economy Act would end private ownership of farms, factories and shops." (right)
-- "Everything would be owned in common and run by the state." — if tapped: note: That says how it would be run, once private ownership has ended.
-- "One national plan would decide what is made, how much, and at what price." — if tapped: That is not the sentence.
-- "Backers say it would end poverty in ten years." — if tapped: note: That is a promise about results, not what the plan does.; slip: tapped the tone or the promise, not what it would do
-- "Said by the author of a book on economics." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: “Communist” needs nearly all property and business owned in common or by the state, and one central plan deciding what is made and what it costs. “The People’s Economy Act would end private ownership of farms, factories and shops” covers nearly everything. “One national plan would decide what is made, how much, and at what price” is the central plan. Both needs are there.
-What “Communist” needs, each need found (with its line) or missing:
-- Found: Nearly all property and business would be owned in common or by the state: farms, factories and shops, not just a few industries. “The People’s Economy Act would end private ownership of farms, factories and shops.”
-- Found: One central plan, not buyers and sellers, would decide what is made and what it costs. “One national plan would decide what is made, how much, and at what price.”
+After the answer: Reason: The engine is “one long fight” between “the rich and the working poor”, owners against workers. Question 3: class conflict over wealth.
 
 #### Question 7
 
-A post with a label pinned on words, from "Post · Fair Work Alliance · 9h". Under it: "From a left-leaning workers’ group". The commenter's words: **Yes, this is socialism. It is meant to be.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“The people who work and pay were robbed by a gang of insiders who care nothing for them. Take the country back from them.”
 
-> Every company with more than 500 workers would become owned by its workers.
-> Each worker would hold one vote, and the workers would elect the managers.
-> Owners would be paid a fair price for their shares by a public fund.
-> (small print) Said by a spokesperson for the alliance.
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite (right)
+- The words do not say — if chosen: a slip: wrong-story
 
-**Do the words earn the label “socialist”?**
-- Earned (right)
-- Not earned — if chosen: a slip: doubted
-- Too little to tell — if chosen: a slip: hedged
+After the answer: Reason: A pure people, “the people who work and pay”, robbed by “a gang of insiders”, and no owners, wages or class named. Question 3: a people sold out by an elite, the story populism tells.
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist (right)
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
+Then a screen: you can stop here, your place is kept.
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Every company with more than 500 workers would become owned by its workers." (right)
-- "Each worker would hold one vote, and the workers would elect the managers." — if tapped: note: That says how the companies would be run, once the workers own them.
-- "Owners would be paid a fair price for their shares by a public fund." — if tapped: note: That is how owners are paid, not who will own the companies.
-- "Said by a spokesperson for the alliance." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+## Step 7: Questions
 
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry or a big company named and the public or the workers owning it. “Every company with more than 500 workers would become owned by its workers” names the big companies and gives the ownership to the workers. Both needs are there.
-What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “Every company with more than 500 workers would become owned by its workers.”
-- Found: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. “Every company with more than 500 workers would become owned by its workers.”
+5 questions, shuffle, with each inner pair asked one after the other, in a random order, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Question 8
 
-A post with a label pinned on words, from "Post · Greenfield Renters Union · 1d". Under it: "From a left-leaning tenants’ group". The commenter's words: **We are social democrats, and this is our plan.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“Public ownership of the railways and the big banks is our aim. We will win it by law, at the polls, and if the voters turn against us, we will go.”
 
-> The county would take its three biggest power and water companies into public ownership.
-> They would be run by a public board, and the profits would go to the county.
-> Rates would stay as they are for now.
-> (small print) Said by the union’s president.
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them (right)
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement — if chosen: a slip: wrong-democracy
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order — if chosen: a slip: wrong-democracy
+- The words do not say — if chosen: a slip: wrong-democracy
 
-**Do the words earn the label “social democrat”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist (right)
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The county would take its three biggest power and water companies into public ownership." (right)
-- "They would be run by a public board, and the profits would go to the county." — if tapped: note: That says how they would be run, once the county owns them.
-- "Rates would stay as they are for now." — if tapped: note: That is about prices, not who owns the companies.
-- "Said by the union’s president." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: A social democrat idea needs taxes paying for broad services or benefits, and businesses staying private. “The county would take its three biggest power and water companies into public ownership” takes main industries out of private hands. Public ownership of main industries is the socialist idea, so that is the name the words earn.
-What you would need to see: To earn “social democrat”, the words would have to leave the companies in private hands and have taxes pay for services.
-What “Social democrat” needs, each need found (with its line) or missing:
-- Missing: Taxes pay for broad services or benefits: health care, schools, pensions or meals. The words do not say it.
-- Missing: Businesses stay private. They are taxed and regulated, not taken over. The words do not say it.
+After the answer: Reason: The aim is reached “by law, at the polls”, and the voters may “turn against us”. Question 4: keep elections and widen what they can do, here to change who owns the railways and banks.
 
 #### Question 9
 
-A post with a label pinned on words, from "Comment · @nina_v · 10h". Under it: "On a left-leaning news page". The commenter's words: **Capitalism at work, as always.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“Public ownership of the railways and the big banks is our aim. The party will take power for the workers and keep it; the old elections and courts will be put aside.”
 
-> Our economy should work better for everyone.
-> We have heard from hundreds of residents, and we are ready to act.
-> (small print) Said by a state commerce director in a speech.
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them — if chosen: a slip: wrong-democracy
+- Go beyond them: a party rules for the workers (right)
+- Abolish them for a leader or a movement — if chosen: a slip: wrong-democracy
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order — if chosen: a slip: wrong-democracy
+- The words do not say — if chosen: a slip: wrong-democracy
 
-**Do the words earn the label “capitalist”?**
-- Earned — if chosen: a slip: believed
-- Not earned — if chosen: a slip: overreached
-- Too little to tell (right)
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: forced-name
-- Social democrat — if chosen: a slip: forced-name
-- Socialist — if chosen: a slip: forced-name
-- Communist — if chosen: a slip: forced-name
-- None of these four (right)
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Our economy should work better for everyone." — if tapped: That is not the sentence.
-- "We have heard from hundreds of residents, and we are ready to act." — if tapped: That is not the sentence.
-- "Said by a state commerce director in a speech." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" (right)
-
-After the answer: the deciding words are marked. Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “Our economy should work better for everyone” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
-What you would need to see: To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Missing: Businesses and property stay in private hands. The words do not say it.
-- Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
+After the answer: Reason: The same public ownership, but “the party will take power … and keep it” and elections are “put aside”. Question 4: go beyond elections, to rule by a party. With the state as owner, as here, that pattern gets a name later.
 
 #### Question 10
 
-A post with a label pinned on words, from "Post · Heartland Business Group · 12h". Under it: "From a right-leaning business group". The commenter's words: **A free-market plan to keep our mills open.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“Our courts and our vote have outlasted wars and kings. We would defend them, mend them where they leak, and leave the rest alone.”
 
-> The Steel Jobs Plan would pay the three steel mills $2 billion over four years.
-> The state would also fix the price of steel at $900 a ton, whatever the market says.
-> The mills would stay privately owned.
-> (small print) Said by the group’s chairman.
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them — if chosen: a slip: wrong-democracy
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement — if chosen: a slip: wrong-democracy
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order (right)
+- The words do not say — if chosen: a slip: wrong-democracy
 
-**Do the words earn the label “free-market”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: forced-name
-- Social democrat — if chosen: a slip: forced-name
-- Socialist — if chosen: a slip: forced-name
-- Communist — if chosen: a slip: forced-name
-- None of these four (right)
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Steel Jobs Plan would pay the three steel mills $2 billion over four years." — if tapped: note: That is money paid out, not how prices are decided.
-- "The state would also fix the price of steel at $900 a ton, whatever the market says." (right)
-- "The mills would stay privately owned." — if tapped: note: That is half of it. The label also needs the prices left to buyers and sellers.
-- "Said by the group’s chairman." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
-
-After the answer: the deciding words are marked. Reason: “Free-market” needs businesses in private hands and prices decided by buyers and sellers. “The mills would stay privately owned” meets the first. But “The state would also fix the price of steel at $900 a ton, whatever the market says” takes the prices away from buyers and sellers. The words fit none of the four names: the state does not own the mills, no tax pays for a service, and no central plan runs the economy.
-What you would need to see: To earn “free-market”, the words would have to leave the price of steel to buyers and sellers.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Found: Businesses and property stay in private hands. “The mills would stay privately owned.”
-- Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
+After the answer: Reason: “Defend them, mend them”: the courts and the vote are kept as they are. Question 4: defend the constitutional order, the answer of anyone who wants it kept as it is. Alone it names no family.
 
 #### Question 11
 
-A post with a label pinned on words, from "Comment · @ed_m · 11h". Under it: "On a right-leaning news page". The commenter's words: **Socialist, obviously.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“Votes and courts are tools of the weak. There will be one movement, and its leader's word will be the word of the nation.”
 
-> It is time for a government that puts ordinary people first.
-> For too long, working families have been ignored.
-> (small print) Said by a candidate in a campaign video.
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them — if chosen: a slip: wrong-democracy
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement (right)
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order — if chosen: a slip: wrong-democracy
+- The words do not say — if chosen: a slip: wrong-democracy
 
-**Do the words earn the label “socialist”?**
-- Earned — if chosen: a slip: believed
-- Not earned — if chosen: a slip: overreached
-- Too little to tell (right)
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: forced-name
-- Social democrat — if chosen: a slip: forced-name
-- Socialist — if chosen: a slip: forced-name
-- Communist — if chosen: a slip: forced-name
-- None of these four (right)
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "It is time for a government that puts ordinary people first." — if tapped: That is not the sentence.
-- "For too long, working families have been ignored." — if tapped: That is not the sentence.
-- "Said by a candidate in a campaign video." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" (right)
-
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. “It is time for a government that puts ordinary people first” names no industry and says nothing about who would own anything. The words cannot show the label and cannot rule it out.
-What you would need to see: To judge “socialist”, the words would have to say which industry, and who would own it.
-What “Socialist” needs, each need found (with its line) or missing:
-- Missing: A main industry or a big company is named: such as power, rail, banks or hospitals. The words do not say it.
-- Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
+After the answer: Reason: Votes and courts are scorned and “one movement” with a leader speaks for the nation. Question 4: abolish elections for a leader and a movement. With a rebirth story this is fascism's answer; alone it names nothing.
 
 #### Question 12
 
-A post with a label pinned on words, from "Comment · @bo_j · 13h". Under it: "On a right-leaning news page". The commenter's words: **Communism, step one.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“Keep the vote, and keep voting. But the judges, the newspapers and the civil servants who stand in the way of what voters chose must be brought under the people's control.”
 
-> The Public Banking Act would have the state buy the three largest banks and the main railroad.
-> The state would run them for the public.
-> All other businesses, farms and shops would stay privately owned.
-> (small print) Said by the bill’s sponsor.
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them — if chosen: a slip: wrong-democracy
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement — if chosen: a slip: wrong-democracy
+- Keep the vote, but attack the courts, the press and the civil service (right)
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order — if chosen: a slip: wrong-democracy
+- The words do not say — if chosen: a slip: wrong-democracy
 
-**Do the words earn the label “communist”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
+After the answer: Reason: The vote stays (“keep voting”), while the judges, newspapers and civil servants are attacked. Question 4: keep the vote, but attack the courts, the press and the civil service. It is the answer of a family met later; alone it names nothing.
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist (right)
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
+Then a screen: you can stop here, your place is kept.
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Public Banking Act would have the state buy the three largest banks and the main railroad." — if tapped: note: That is a few main industries, which is not yet nearly everything.
-- "The state would run them for the public." — if tapped: note: That says how they would be run, once the state owns them.
-- "All other businesses, farms and shops would stay privately owned." (right)
-- "Said by the bill’s sponsor." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+## Step 8: Questions
 
-After the answer: the deciding words are marked. Reason: “Communist” needs nearly all property and business owned in common or by the state, and one central plan. “The Public Banking Act would have the state buy the three largest banks and the main railroad” covers a few industries, and “All other businesses, farms and shops would stay privately owned” leaves the rest alone. Public ownership of a few main industries is the socialist idea.
-What you would need to see: To earn “communist”, the words would have to say that nearly all farms, factories and shops would be owned in common or by the state.
-What “Communist” needs, each need found (with its line) or missing:
-- Missing: Nearly all property and business would be owned in common or by the state: farms, factories and shops, not just a few industries. The words do not say it.
-- Missing: One central plan, not buyers and sellers, would decide what is made and what it costs. The words do not say it.
+4 questions, shuffle, with each inner pair asked one after the other, in a random order, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+
+#### Question 13
+
+“In place of the old bourgeois society, with its classes and class antagonisms, we shall have an association, in which the free development of each is the condition for the free development of all.” And Engels: “The state is not ‘abolished’. It withers away.”
+Marx and Engels, The Communist Manifesto, 1848; Engels, 1878.
+
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state (right)
+- A reborn, eternal nation — if chosen: a slip: wrong-end
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point — if chosen: a slip: wrong-end
+- A restored old order — if chosen: a slip: wrong-end
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
+
+After the answer: Reason: A society with no “classes and class antagonisms”, and a state that “withers away”. Question 5: a society with no classes and no state.
+
+#### Question 14
+
+“No side should ever win this argument for good. Free people and free firms will keep competing, and where that leads is not ours to say.”
+
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state — if chosen: a slip: wrong-end
+- A reborn, eternal nation — if chosen: a slip: wrong-end
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point (right)
+- A restored old order — if chosen: a slip: wrong-end
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
+
+After the answer: Reason: No side wins “for good” and the result is “not ours to say”. Question 5: open competition with no end point.
+
+#### Question 15
+
+“What came before is dead and we do not want it back. Out of the nation's will we are forging a new nation, hard and proud, that will never fall again.”
+
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state — if chosen: a slip: wrong-end
+- A reborn, eternal nation (right)
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point — if chosen: a slip: wrong-end
+- A restored old order — if chosen: a slip: wrong-end
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
+
+After the answer: Reason: “We do not want it back”, but a “new nation … that will never fall again”. Question 5: a reborn, eternal nation. Fascism gives this answer, but one answer does not name it.
+
+#### Question 16
+
+“What came before was good, and we want it back: the king, the church, and the village as our grandfathers knew them.”
+
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state — if chosen: a slip: wrong-end
+- A reborn, eternal nation — if chosen: a slip: wrong-end
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point — if chosen: a slip: wrong-end
+- A restored old order (right)
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
+
+After the answer: Reason: “We want it back”: the king, the church and the village “as our grandfathers knew them”. Question 5: a restored old order. Reaction gives this answer, but one answer does not name it.
+
+Then a screen: you can stop here, your place is kept.
+
+## Step 9: Questions
+
+3 questions, shuffle, with each inner pair asked one after the other, in a random order, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+
+#### Question 17
+
+“One party, one Leader, a parade in every town. The secret police will find any who speak against us. The farms and factories are the state's now, taken from the landlords and bosses for those who work them.”
+
+**Question 1. Who would own the businesses and farms?**
+- Private owners — if chosen: a slip: wrong-own
+- The state (right)
+- The workers, in councils or co-ops — if chosen: a slip: wrong-own
+- Private owners, directed by the state — if chosen: a slip: wrong-own
+- The words do not say — if chosen: a slip: wrong-own
+
+**Question 2. Who is the story about?**
+- Class: owners against workers (right)
+- The nation — if chosen: a slip: wrong-unit
+- Race, as a natural rank to keep — if chosen: a slip: wrong-unit
+- Race or identity groups, as an unjust rank to undo — if chosen: a slip: wrong-unit
+- The individual — if chosen: a slip: wrong-unit
+- Tradition or faith — if chosen: a slip: wrong-unit
+- The people against an elite — if chosen: a slip: wrong-unit
+- The words do not say — if chosen: a slip: wrong-unit
+
+After the answer: Reason: The parade, the Leader and the secret police are methods and decide nothing. Question 1: “the state's now”. Question 2: landlords and bosses against “those who work them”, class. A party that rules for the workers, with the state owning, is the pattern of Marxism–Leninism.
+
+#### Question 18
+
+“One party, one Leader, a parade in every town. The secret police will find any who speak against us. The owners keep their factories, but they build what the nation needs, as the state orders. There are no classes here, only countrymen.”
+
+**Question 1. Who would own the businesses and farms?**
+- Private owners — if chosen: a slip: wrong-own
+- The state — if chosen: a slip: wrong-own
+- The workers, in councils or co-ops — if chosen: a slip: wrong-own
+- Private owners, directed by the state (right)
+- The words do not say — if chosen: a slip: wrong-own
+
+**Question 2. Who is the story about?**
+- Class: owners against workers — if chosen: a slip: wrong-unit
+- The nation (right)
+- Race, as a natural rank to keep — if chosen: a slip: wrong-unit
+- Race or identity groups, as an unjust rank to undo — if chosen: a slip: wrong-unit
+- The individual — if chosen: a slip: wrong-unit
+- Tradition or faith — if chosen: a slip: wrong-unit
+- The people against an elite — if chosen: a slip: wrong-unit
+- The words do not say — if chosen: a slip: wrong-unit
+
+After the answer: Reason: The same methods as the other, so they decide nothing. Question 1: “the owners keep their factories”, but “as the state orders”, directed. Question 2: “no classes here, only countrymen”, the nation. Both answers differ from the other passage; the methods do not. Naming waits for the questions still to come.
+
+#### Question 19
+
+“One party. One Leader. A face on every wall and an ear at every door. That is how this country will be run.”
+
+**Question 1. Who would own the businesses and farms?**
+- Private owners — if chosen: a slip: wrong-own
+- The state — if chosen: a slip: wrong-own
+- The workers, in councils or co-ops — if chosen: a slip: wrong-own
+- Private owners, directed by the state — if chosen: a slip: wrong-own
+- The words do not say (right)
+
+**Question 2. Who is the story about?**
+- Class: owners against workers — if chosen: a slip: wrong-unit
+- The nation — if chosen: a slip: wrong-unit
+- Race, as a natural rank to keep — if chosen: a slip: wrong-unit
+- Race or identity groups, as an unjust rank to undo — if chosen: a slip: wrong-unit
+- The individual — if chosen: a slip: wrong-unit
+- Tradition or faith — if chosen: a slip: wrong-unit
+- The people against an elite — if chosen: a slip: wrong-unit
+- The words do not say (right)
+
+After the answer: Reason: Only methods: one party, a leader cult, an ear at every door. parties of the left, movements of the right and plain dictators all use them, so they do not answer Question 1 or Question 2: the words do not say.
 
 Then a screen: you can stop here, your place is kept.
 
 ## The check
 
-6 new questions, no help. No answer is shown until the end. The questions come in mixed order.
+8 new questions, no help. No answer is shown until the end. The questions come in mixed order.
 
 To pass:
-- At least 5 right
-- At least 2 right among labels thrown from the left
-- At least 2 right among labels thrown from the right
+- At least 7 right
 
-#### Check question 13
+#### Check question 20
 
-A post with a label pinned on words, from "Comment · @hal_s · 2h". Under it: "On a right-leaning news page". The commenter's words: **Socialism, pure and simple.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+“The farmers, the nurses and the drivers carried this country, and the people in the capital sold it out from under them.”
 
-> The Clean Water Act would take over the state’s three private water companies.
-> They would be owned and run by the state as a public utility.
-> Customers would pay the state instead of the companies.
-> (small print) Said by the bill’s main sponsor.
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite (right)
+- The words do not say — if chosen: a slip: wrong-story
 
-**Do the words earn the label “socialist”?**
-- Earned (right)
-- Not earned — if chosen: a slip: doubted
-- Too little to tell — if chosen: a slip: hedged
+After the answer: Reason: The carrying people against “the people in the capital” who “sold it out”. Question 3: a people sold out by an elite.
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist (right)
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
+#### Check question 21
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Clean Water Act would take over the state’s three private water companies." — if tapped: That is not the sentence.
-- "They would be owned and run by the state as a public utility." (right)
-- "Customers would pay the state instead of the companies." — if tapped: note: That says who gets the bills, not who owns the companies.
-- "Said by the bill’s main sponsor." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+“Thirty years of parties talking have left the nation on its knees. The movement will end them all, and the Leader will raise the nation up again.”
 
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. “The Clean Water Act would take over the state’s three private water companies” names the industry. “They would be owned and run by the state as a public utility” puts it in public hands. Both needs are there.
-What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “The Clean Water Act would take over the state’s three private water companies.”
-- Found: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. “They would be owned and run by the state as a public utility.”
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth — if chosen: a slip: wrong-story
+- The nation's decline and rebirth (right)
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
 
-#### Check question 14
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them — if chosen: a slip: wrong-democracy
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement (right)
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order — if chosen: a slip: wrong-democracy
+- The words do not say — if chosen: a slip: wrong-democracy
 
-A post with a label pinned on words, from "Comment · @june_l · 3h". Under it: "On a left-leaning news page". The commenter's words: **Free-market greed, dressed up as a housing plan.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state — if chosen: a slip: wrong-end
+- A reborn, eternal nation (right)
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point — if chosen: a slip: wrong-end
+- A restored old order — if chosen: a slip: wrong-end
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
 
-> The Open Housing Plan would end all limits on rent.
-> The city would sell its 40 apartment buildings to private owners.
-> Owners could charge whatever tenants are willing to pay.
-> (small print) Said by a city councilmember on a talk show.
+After the answer: Reason: A nation “on its knees” raised “up again” (Question 3: decline and rebirth), the parties ended for “the movement” and “the Leader” (Question 4: abolish), and the nation raised again as the end state (Question 5: a reborn nation).
 
-**Do the words earn the label “free-market”?**
-- Earned (right)
-- Not earned — if chosen: a slip: doubted
-- Too little to tell — if chosen: a slip: hedged
+#### Check question 22
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) (right)
-- Social democrat — if chosen: a slip: wrong-name
-- Socialist — if chosen: a slip: wrong-name
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
+“Bosses and workers want opposite things, and always have. So win the elections, pass the laws, and hand the mills to the people who work in them.”
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Open Housing Plan would end all limits on rent." — if tapped: note: That ends the limits, but it does not say who decides the price after.
-- "The city would sell its 40 apartment buildings to private owners." — if tapped: That is not the sentence.
-- "Owners could charge whatever tenants are willing to pay." (right)
-- "Said by a city councilmember on a talk show." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+**Question 3. What drives history, in these words?**
+- Class conflict over wealth (right)
+- The nation's decline and rebirth — if chosen: a slip: wrong-story
+- A struggle between races — if chosen: a slip: wrong-story
+- Freedom spreading to more people — if chosen: a slip: wrong-story
+- A divine or traditional order — if chosen: a slip: wrong-story
+- A pure people sold out by an elite — if chosen: a slip: wrong-story
+- The words do not say — if chosen: a slip: wrong-story
 
-After the answer: the deciding words are marked. Reason: “Free-market” needs businesses and property in private hands and prices decided by buyers and sellers. “The city would sell its 40 apartment buildings to private owners” puts the buildings in private hands. “Owners could charge whatever tenants are willing to pay” leaves the prices to buyers and sellers. Both needs are there.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Found: Businesses and property stay in private hands. “The city would sell its 40 apartment buildings to private owners.”
-- Found: Buyers and sellers decide prices. The government does not fix them or run the business. “Owners could charge whatever tenants are willing to pay.”
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them (right)
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement — if chosen: a slip: wrong-democracy
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order — if chosen: a slip: wrong-democracy
+- The words do not say — if chosen: a slip: wrong-democracy
 
-#### Check question 15
+After the answer: Reason: “Bosses and workers want opposite things” (Question 3: class conflict), and the way is to “win the elections, pass the laws” (Question 4: keep elections and widen what they do).
 
-A post with a label pinned on words, from "Comment · @ivo_c · 4h". Under it: "On a right-leaning news page". The commenter's words: **Another socialist scheme.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+#### Check question 23
 
-> The Full Cover Plan would pay for every prescription drug, with no charge at the pharmacy.
-> A 1% tax on incomes over $200,000 would pay for it.
-> Drug companies and pharmacies would stay privately owned.
-> (small print) Said by a state senator in a news release.
+“The founders left us a sound constitution. Our job is to keep it from being torn up by every new fashion.”
 
-**Do the words earn the label “socialist”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
+**Question 4. What do the words want done with elections and the constitution?**
+- Keep them and widen them — if chosen: a slip: wrong-democracy
+- Go beyond them: a party rules for the workers — if chosen: a slip: wrong-democracy
+- Abolish them for a leader or a movement — if chosen: a slip: wrong-democracy
+- Keep the vote, but attack the courts, the press and the civil service — if chosen: a slip: wrong-democracy
+- Do away with the state altogether — if chosen: a slip: wrong-democracy
+- Defend them, or restore an older order (right)
+- The words do not say — if chosen: a slip: wrong-democracy
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat (right)
-- Socialist — if chosen: a slip: wrong-name
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
+After the answer: Reason: “Keep it from being torn up”: the constitution is kept. Question 4: defend the constitutional order.
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Full Cover Plan would pay for every prescription drug, with no charge at the pharmacy." — if tapped: note: That is what patients get, not who owns the drug companies.
-- "A 1% tax on incomes over $200,000 would pay for it." — if tapped: note: That says where the money comes from.
-- "Drug companies and pharmacies would stay privately owned." (right)
-- "Said by a state senator in a news release." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+#### Check question 24
 
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. The plan names the drug companies, but “Drug companies and pharmacies would stay privately owned”, so no one but private owners owns them. A tax that pays for every prescription is a benefit paid for by taxes, with business left private: a social democrat idea.
-What you would need to see: To earn “socialist”, the words would have to say the public or the workers would own the drug companies.
-What “Socialist” needs, each need found (with its line) or missing:
-- Found: A main industry or a big company is named: such as power, rail, banks or hospitals. “Drug companies and pharmacies would stay privately owned.”
-- Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
+“When the classes are gone there will be nothing left for a state to do, and it will fade away. Then everyone will work for everyone.”
 
-#### Check question 16
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state (right)
+- A reborn, eternal nation — if chosen: a slip: wrong-end
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point — if chosen: a slip: wrong-end
+- A restored old order — if chosen: a slip: wrong-end
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
 
-A post with a label pinned on words, from "Post · Rise Together Coalition · 5h". Under it: "From a left-leaning community group". The commenter's words: **This is what socialism looks like, and we are proud.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+After the answer: Reason: The classes “are gone” and the state “will fade away”. Question 5: a society with no classes and no state.
 
-> The Rise Together Plan would raise the minimum wage to $15 an hour.
-> It would make community college free for every resident.
-> Both would be paid for by a tax on large estates.
-> No company would change hands.
-> (small print) Said by a spokesperson for the coalition.
+#### Check question 25
 
-**Do the words earn the label “socialist”?**
-- Earned — if chosen: a slip: believed
-- Not earned (right)
-- Too little to tell — if chosen: a slip: hedged
+“There will never be a final winner. People, firms and ideas will keep competing, and the contest is the point.”
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: wrong-name
-- Social democrat (right)
-- Socialist — if chosen: a slip: wrong-name
-- Communist — if chosen: a slip: wrong-name
-- None of these four — if chosen: a slip: missed-name
+**Question 5. Where do the words want things to end up?**
+- A society with no classes and no state — if chosen: a slip: wrong-end
+- A reborn, eternal nation — if chosen: a slip: wrong-end
+- A racial order — if chosen: a slip: wrong-end
+- Open competition with no end point (right)
+- A restored old order — if chosen: a slip: wrong-end
+- Equal outcomes between groups — if chosen: a slip: wrong-end
+- The words do not say — if chosen: a slip: wrong-end
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The Rise Together Plan would raise the minimum wage to $15 an hour." — if tapped: note: That is a pay rule, not who owns anything.
-- "It would make community college free for every resident." — if tapped: note: That is a service paid for by taxes. It says nothing about who owns anything.
-- "Both would be paid for by a tax on large estates." — if tapped: note: That says where the money comes from.
-- "No company would change hands." (right)
-- "Said by a spokesperson for the coalition." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" — if chosen: The text does give one. It is marked above.
+After the answer: Reason: “never be a final winner” and “the contest is the point”. Question 5: open competition with no end point.
 
-After the answer: the deciding words are marked. Reason: “Socialist” needs a main industry named and the public or the workers owning it. No industry is named, and “No company would change hands” rules out any new owner. Free community college paid for by a tax on large estates is a service paid for by taxes, with business left private: a social democrat idea.
-What you would need to see: To earn “socialist”, the words would have to name an industry and say the public or the workers would own it.
-What “Socialist” needs, each need found (with its line) or missing:
-- Missing: A main industry or a big company is named: such as power, rail, banks or hospitals. The words do not say it.
-- Missing: The public or the workers would own it. Taxing it, regulating it or paying for what it sells does not count. The words do not say it.
+#### Check question 26
 
-#### Check question 17
+“Rallies every week, the Leader's face on every wall, and the party in every office. The land has been taken from the landlords and is now run by the state for the peasants who work it.”
 
-A post with a label pinned on words, from "Post · Prairie Business Alliance · 6h". Under it: "From a right-leaning business group". The commenter's words: **A free-market plan for a stronger state.** (the side the label is thrown from, right, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
+**Question 1. Who would own the businesses and farms?**
+- Private owners — if chosen: a slip: wrong-own
+- The state (right)
+- The workers, in councils or co-ops — if chosen: a slip: wrong-own
+- Private owners, directed by the state — if chosen: a slip: wrong-own
+- The words do not say — if chosen: a slip: wrong-own
 
-> We will unleash this state’s economy and let its people prosper.
-> Our plan is bold, and our plan is fair.
-> (small print) Said by the alliance’s director.
+**Question 2. Who is the story about?**
+- Class: owners against workers (right)
+- The nation — if chosen: a slip: wrong-unit
+- Race, as a natural rank to keep — if chosen: a slip: wrong-unit
+- Race or identity groups, as an unjust rank to undo — if chosen: a slip: wrong-unit
+- The individual — if chosen: a slip: wrong-unit
+- Tradition or faith — if chosen: a slip: wrong-unit
+- The people against an elite — if chosen: a slip: wrong-unit
+- The words do not say — if chosen: a slip: wrong-unit
 
-**Do the words earn the label “free-market”?**
-- Earned — if chosen: a slip: believed
-- Not earned — if chosen: a slip: overreached
-- Too little to tell (right)
+After the answer: Reason: Rallies, a leader cult and a party in every office are methods. Question 1: land “run by the state”. Question 2: landlords against “the peasants who work it”, class, and the party rules for them.
 
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: forced-name
-- Social democrat — if chosen: a slip: forced-name
-- Socialist — if chosen: a slip: forced-name
-- Communist — if chosen: a slip: forced-name
-- None of these four (right)
+#### Check question 27
 
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "We will unleash this state’s economy and let its people prosper." — if tapped: That is not the sentence.
-- "Our plan is bold, and our plan is fair." — if tapped: That is not the sentence.
-- "Said by the alliance’s director." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" (right)
+“Rallies every week, the Leader's face on every wall, and the party in every office. The mill owners keep their mills, but they work to the state's orders, for the good of the nation.”
 
-After the answer: the deciding words are marked. Reason: “Free-market” needs businesses in private hands and prices decided by buyers and sellers. “We will unleash this state’s economy and let its people prosper” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
-What you would need to see: To judge “free-market”, the words would have to say who owns the businesses, or who decides the prices.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Missing: Businesses and property stay in private hands. The words do not say it.
-- Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
+**Question 1. Who would own the businesses and farms?**
+- Private owners — if chosen: a slip: wrong-own
+- The state — if chosen: a slip: wrong-own
+- The workers, in councils or co-ops — if chosen: a slip: wrong-own
+- Private owners, directed by the state (right)
+- The words do not say — if chosen: a slip: wrong-own
 
-#### Check question 18
+**Question 2. Who is the story about?**
+- Class: owners against workers — if chosen: a slip: wrong-unit
+- The nation (right)
+- Race, as a natural rank to keep — if chosen: a slip: wrong-unit
+- Race or identity groups, as an unjust rank to undo — if chosen: a slip: wrong-unit
+- The individual — if chosen: a slip: wrong-unit
+- Tradition or faith — if chosen: a slip: wrong-unit
+- The people against an elite — if chosen: a slip: wrong-unit
+- The words do not say — if chosen: a slip: wrong-unit
 
-A post with a label pinned on words, from "Comment · @lena_r · 7h". Under it: "On a left-leaning news page". The commenter's words: **Capitalist spin, nothing more.** (the side the label is thrown from, left, is kept for the results and not drawn). Then, in a box headed "The words it is pinned on", each line apart (the lines are what is tapped; the commenter's words are not):
-
-> We will make this a city where good ideas can grow and good jobs stay.
-> The details will come this spring.
-> (small print) Said by the mayor’s economic adviser.
-
-**Do the words earn the label “capitalist”?**
-- Earned — if chosen: a slip: believed
-- Not earned — if chosen: a slip: overreached
-- Too little to tell (right)
-
-**Which name do the words earn instead?** (opens only after a certain answer)
-- Free-market (capitalist) — if chosen: a slip: forced-name
-- Social democrat — if chosen: a slip: forced-name
-- Socialist — if chosen: a slip: forced-name
-- Communist — if chosen: a slip: forced-name
-- None of these four (right)
-
-**Tap the sentence that decides it.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "We will make this a city where good ideas can grow and good jobs stay." — if tapped: That is not the sentence.
-- "The details will come this spring." — if tapped: That is not the sentence.
-- "Said by the mayor’s economic adviser." — if tapped: note: That says who said it, not what it would do.; slip: tapped who said it, not what it would do
-- A button: "Nothing here decides it" (right)
-
-After the answer: the deciding words are marked. Reason: “Capitalist” is the free-market label. It needs businesses in private hands and prices decided by buyers and sellers. “We will make this a city where good ideas can grow and good jobs stay” names no business, no owner and no price. The words cannot show the label and cannot rule it out.
-What you would need to see: To judge “capitalist”, the words would have to say who owns the businesses, or who decides the prices.
-What “Free-market (capitalist)” needs, each need found (with its line) or missing:
-- Missing: Businesses and property stay in private hands. The words do not say it.
-- Missing: Buyers and sellers decide prices. The government does not fix them or run the business. The words do not say it.
+After the answer: Reason: The same methods as the other, so they decide nothing. Question 1: owners “keep their mills” but “work to the state's orders”, directed. Question 2: “the good of the nation”, the nation, which the Leader speaks for.
 
 ## The result
-
-Under the rules, the facets the subject compares are shown side by side: "Which side threw it" (labels thrown from the left beside labels thrown from the right, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
 For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

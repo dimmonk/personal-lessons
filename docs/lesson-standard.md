@@ -931,8 +931,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   and Wealth's first ref (the reporting threshold, to be looked up the day lesson 6 is written).
 - **Stats**: lesson 1, find the claim and its number (what it claims, the line or "Not given", the verdict); three
   items in reserve. Not built: the plain size typed (part B), the retest (lesson 7).
-- **Ideology**: lesson 2, economy labels thrown from both sides, with the panel; four items in reserve. Not built: the
-  other labels, party cues, a label's name typed.
+- **Ideology**: rebuilt 2026-10-17 on the owner's own course (plan: `docs/subjects/ideology/plan.md`): seven lessons, 1 to 6
+  with 5b, each passage put to the five deciding questions in order (`ideoCase`, items-shape.js), then the family, named only on
+  its signature answers (`IDEO_SIGNATURE`) or "too little to tell"; slips name the known traps (the direction check, methods for
+  content, welfare for socialism, nationalism for fascism).
 - **Psychology**: lesson 1, "What did they do?" (the line that says what was done, written rewrites against a model);
   the one account of control names the National Domestic Violence Hotline, whose numbers must be checked against the
   published ones before the owner relies on them. Not built: the verdict list (lesson 2), the later words, `lines`, the
@@ -943,21 +945,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Civics**: lesson 1, the three branches, 17 questions answered from memory in four groups, then a recall check of
   all 17, 16 to pass. Not built: the other 111 questions, the news stories, the answers lesson (4), the mock interview as a lesson (14)
   and its retest, and the news story per due news strand in the review.
-- **Geography**: lesson 16, "Europe, west" (the pilot; draft): five questions shown done, one look at the labelled map (three views, each readable on a phone, with the ten flags beside their names), recall in four forms of a
-  place group of the ten countries from Portugal to Italy and the five microstates (`g-europe-west`, the microstates asked only as a name to tap), and a
-  check drawn from the group (5 tapped, 3 named, 2 flags, 2 neighbors and water; 10 of 12). Not built: the other 32 parts. Its design is in
-  `docs/subjects/geography/design.md`. Built for it on 2026-10-12: the map data
-  for `world`, `us` and `europe-west` (3.11), the `map` block, the `place` ask and its neighbor-and-water form (3.7, 3.9), their rules
-  (V70, V74, V83) and X46; flags are emoji text, the one line per country is `reason`, naming a lit place is a `text` ask under a lit
-  map, the distance band a `choose`. Built for it on 2026-10-13: the place group (3.5: the four forms made from the map data, with
-  spellings and a reason per place, a miss coming back as itself, a place filed as an item of its own), the check drawn from it by form
-  (3.4: a fixed split, places drawn at random preferring those last asked in another form, `only`), the review's pick of the place missed (6.3),
-  their rules (V70, V72 to V75, V83) and X47; the three coasts of the lower 48, the Strait of Gibraltar and the canal band (3.11). Not built:
-  the rest of the regions (a list each in `tools/maps/regions.mjs`), cities and capitals as places, parts of a state, the Suez and Panama
-  canals and the straits with no outline in the data (3.11).
-
-## 11. Revision log
-
+- **Geography**: parts 1 to 7b and 16 to 16b built (2026-10-17): the world, the United States region by region and mixed,
+  western Europe and its flags. Every lesson opens with the way of thinking (the area, what touches it, the water), shows its
+  names before any case, works a case in those steps and gives feedback in them (`area`, `cue`, place-gen.js). Not built:
+  parts 8 to 15 and 17 to 33 (cities, capitals, the other regions, distances).
 - **Version 2, 2026-10-12**: consolidated from version 1 (history-v1.md): sections 1 to 22 retired as history; 23 replaced by the build-subject skill; 24 and 25 absorbed into 6 and 3; 26.1 to 26.9 with the as-built decisions of 26.10 folded in. Its change in substance is the entry below.
 - **2026-10-12, X6 and X7 retired** (9.3): the draft line is asserted by the pilot walks; cold start measured per
   subject (X7, an owner rule) is no longer a check.

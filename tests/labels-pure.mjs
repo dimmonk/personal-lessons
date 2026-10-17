@@ -1,6 +1,6 @@
 // The pure half of step 6 (lesson standard 3, 3.9, 3 to 9): a label pinned on a post laid out, the panel and who sees it, each need found or
-// missing, the sides kept once and shown side by side, a pass rule counted by side; and what must be true of Ideology's pilot as data: what each
-// verdict, name and need says about the words, both sides in balance, no party, every quoted line really quoted in its reason. No browser: the app's
+// missing, the sides kept once and shown side by side, a pass rule counted by side; and what must be true of Ideology's five questions as data:
+// every passage asked in order with a slip on each wrong answer, the direction trap and too little to tell named, each lesson's teaching first, its one worked item, a new check and a strand with items held for the review. No browser: the app's
 // scripts are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/labels-pure.mjs
 import { loadApp } from './load-app.mjs';
@@ -90,60 +90,57 @@ same(LABEL_SIDES, SHAPE_SIDES, 'the sides a label is thrown from are the same in
   check(ruleMet({ where: { side: 'right' }, right: { min: 2 } }, run) === false && ruleMet({ where: { side: 'left' }, right: { min: 2 } }, run) === true, 'a side\'s rule counts only that side');
 }
 
-/* ---------- Ideology's pilot as data ---------- */
+/* ---------- Ideology's five questions as data: every lesson that exists ---------- */
 {
-  const meta = ideology.meta, lesson = ideology.lessons.l2, items = ideology.items;
-  const ids = refs => flatRefs(refs).map(refId);
-  const groups = flowSets(lesson).map(s => ids(s.items)), checkIds = ids(lesson.check.items), workedId = lesson.flow.find(s => s.worked).worked;
-  const used = new Set([...groups.flat(), ...checkIds, workedId]), reserve = Object.keys(items).filter(id => !used.has(id));
-  same(groups.map(g => g.length), [4, 8], 'the two groups are four and eight questions');
-  same([checkIds.length, reserve.length], [6, 4], 'the check is six questions and four are held in reserve');
-  same(Object.keys(meta.rules), ['market', 'socdem', 'socialist', 'communist'], 'the four labels of part 2');
-  same(meta.lists.name.map(o => o.id), [...Object.keys(meta.rules), 'none'], 'the names a question offers are the rules, then none of them');
-  meta.lists.name.filter(o => o.id !== 'none').forEach(o => same(o.text, meta.rules[o.id].name, `the name "${o.id}" is written once`));
-  const needIds = Object.values(meta.rules).flatMap(r => r.needs.map(n => n.id));
-  check(new Set(needIds).size === needIds.length && Object.values(meta.rules).every(r => r.needs.length >= 2 && r.needs.length <= 4), 'every label has two to four needs, each named once');
-  const stems = { socialist: /socialis/i, communist: /communis/i, 'free-market': /free-market/i, capitalist: /capitalis/i, 'social democrat': /social democrat/i };
-  const party = /\b(Democrat|Democratic|Republican|GOP|Libertarian|Green Party|Labour|Tory|Party)\b/;
-  const every = [workedId, ...groups.flat(), ...checkIds, ...reserve];
-  every.forEach(id => {
-    const item = items[id], post = item.blocks[0], verdict = item.asks[0], name = item.asks[1], words = item.asks[2];
-    const label = (verdict.prompt.match(/“([^”]+)”/) || [])[1], rule = itemRuleIds(item)[0];
-    check(item.blocks.length === 2 && post.kind === 'article' && post.form === 'post' && item.blocks[1].kind === 'panel' && item.blocks[1].rules.length === 1, `${id}: a labelled post and the one rule it is judged by`);
-    check(post.label.side === item.facets.side && LABEL_SIDES.includes(item.facets.side), `${id}: the side is kept once, in the label and the way the question is sorted`);
-    check(stems[label] && stems[label].test(post.label.text), `${id}: the commenter's words carry the label the question names ("${label}")`);
-    check(!party.test([post.source, post.label.by, ...post.lines.map(l => l.text)].join(' ')), `${id}: no party is named; party cues come back from lesson 4`);
-    check(post.lines.filter(l => l.fine).length === 1 && post.lines[post.lines.length - 1].fine, `${id}: who said it is one line of small print, last`);
-    check(post.lines.filter(l => !l.fine).every(l => l.id === item.asks[2].right[0] || item.asks[2].right === 'none' || l.note || (item.deciding.includes(l.id) && !l.note) || l.slip), `${id}: every line that is not the answer says why it is not, or is among the words that decide`);
-    same(verdict.right, { earned: 'earned', unearned: 'not-earned', thin: 'too-little' }[item.facets.fit], `${id}: the verdict is the fit`);
-    same(name.right, item.facets.fit === 'earned' ? rule : item.facets.fit === 'thin' ? 'none' : name.right, `${id}: the name of an earned label is the label's own, of a thin one none`);
-    check(item.facets.fit !== 'unearned' || (name.right !== rule && meta.lists.name.some(o => o.id === name.right)), `${id}: the name that fits instead is another of the names`);
-    same(Object.keys(item.has), meta.rules[rule].needs.map(n => n.id), `${id}: each need of the label is accounted for`);
-    const found = Object.values(item.has).filter(v => v !== null);
-    if (item.facets.fit === 'earned') check(found.length === Object.keys(item.has).length, `${id}: an earned label has every need found`);
-    else if (item.facets.fit === 'thin') check(found.length === 0 && words.right === 'none', `${id}: a label on words with too little to tell has nothing found and nothing to tap`);
-    else check(found.length < Object.keys(item.has).length && words.right !== 'none', `${id}: a label the words do not earn has a need missing and a sentence that shows it`);
-    const quoted = item.deciding.map(d => post.lines.find(l => l.id === d)).filter(Boolean).map(l => l.text.replace(/[.]$/, ''));
-    check(quoted.some(q => [].concat(item.reason).join(' ').includes(q)), `${id}: the reason quotes a line that decides it`);
-    check(item.facets.fit === 'earned' || !!item.need, `${id}: a label that is not earned says what the words would need`);
+  const meta = ideology.meta, ids = refs => flatRefs(refs).map(refId), ASK_ORDER = ['own', 'unit', 'story', 'democracy', 'end', 'family', 'marker'];
+  const lessons = Object.values(ideology.lessons).filter(l => l.flow && l.flow.length);   // a stub that defines nothing is skipped
+  const strandOf = lesson => meta.strands[meta.parts.findIndex(p => p.id === lesson.part)].id;
+  const workedOf = lesson => lesson.flow.filter(s => s.worked).map(s => s.worked);
+  const taught = new Set(lessons.flatMap(l => [...flowSets(l).flatMap(s => ids(s.items)), ...ids(l.check.items), ...workedOf(l)]));
+  check(lessons.some(l => l.id === 'l1'), 'Ideology has its first lesson');
+  const slipIds = meta.lists.slip.map(o => o.id);
+  Object.entries(ideology.items).forEach(([id, item]) => {
+    const asks = item.asks, at = asks.map(a => ASK_ORDER.indexOf(a.id));
+    check(asks.length >= 1 && asks.every(a => a.kind === 'choose'), `${id}: every ask is a choose ask`);
+    check(at.every((n, k) => n >= 0 && (k === 0 || n > at[k - 1])), `${id}: the asks come in the order ${ASK_ORDER.join(', ')} (${asks.map(a => a.id)})`);
+    asks.forEach(ask => {
+      const list = (meta.lists[ask.from] || []).map(o => o.id), slips = ask.slips;
+      // an ask may offer only part of its list (`only`), as lesson 3 offers the families it teaches; the slips and the traps are those of what is offered
+      const offered = ask.only ? list.filter(o => ask.only.includes(o)) : list, wrong = offered.filter(o => o !== ask.right);
+      check(ask.from === ask.id && list.length > 0, `${id}/${ask.id}: the ask is drawn from the list of its own name (${ask.from})`);
+      check(!ask.only || ask.only.every(o => list.includes(o)), `${id}/${ask.id}: everything it offers is an option of the list`);
+      check(offered.includes(ask.right), `${id}/${ask.id}: the right answer "${ask.right}" is an option of the list, and offered`);
+      same(Object.keys(slips).sort(), [...wrong].sort(), `${id}/${ask.id}: a slip on every wrong option and no other`);
+      check(Object.values(slips).every(s => slipIds.includes(s)), `${id}/${ask.id}: every slip is one the subject names`);
+      // the direction trap: the same noun, opposite families
+      if (ask.id === 'unit' && ['race-rank', 'identity-equal'].includes(ask.right) && wrong.length) same(slips[ask.right === 'race-rank' ? 'identity-equal' : 'race-rank'], 'skipped-direction', `${id}: the other direction of race is the slip skipped-direction`);
+      if (ask.id === 'family' && ask.right === 'idegal') ['nazism', 'fascism'].filter(w => wrong.includes(w)).forEach(w => same(slips[w], 'skipped-direction', `${id}: ${w} for identity-egalitarianism is skipped-direction`));
+      if (ask.id === 'family' && ['nazism', 'fascism'].includes(ask.right) && wrong.includes('idegal')) same(slips.idegal, 'skipped-direction', `${id}: identity-egalitarianism for ${ask.right} is skipped-direction`);
+      // too little to tell, both ways
+      if (ask.id === 'family' && ask.right === 'too-little') check(wrong.every(w => slips[w] === 'overreached'), `${id}: naming a family when the words say too little is overreached`);
+      if (ask.id === 'family' && ask.right !== 'too-little' && wrong.includes('too-little')) same(slips['too-little'], 'hedged', `${id}: too little to tell when the words settle it is hedged`);
+    });
+    check(!!item.reason && meta.facets.question.values.some(v => v.id === item.facets.question) && asks.some(a => a.id === item.facets.question), `${id}: the question it turns on is one of its asks`);
   });
-  // both sides in balance, everywhere
-  const side = id => items[id].facets.side, fit = id => items[id].facets.fit, count = (list, f, v) => list.filter(id => f(id) === v).length;
-  [...groups, checkIds, reserve].forEach((list, k) => same([count(list, side, 'left'), count(list, side, 'right')], [list.length / 2, list.length / 2], `group ${k + 1}: labels thrown from each side in equal number`));
-  const taught = [...groups.flat(), ...checkIds];
-  ['earned', 'unearned', 'thin'].forEach(f => ['left', 'right'].forEach(s => check(taught.some(id => fit(id) === f && side(id) === s), `every side throws a label of each kind (${s}, ${f})`)));
-  same(['earned', 'unearned', 'thin'].map(f => count(checkIds, fit, f)), [2, 2, 2], 'the check holds two of each kind');
-  same(['earned', 'unearned', 'thin'].map(f => count(reserve, fit, f)).map(n => n > 0), [true, true, true], 'the reserve holds each kind');
-  check(new Set(taught.map(id => items[id].blocks[0].lines.map(l => l.text).join())).size === taught.length, 'no two questions have the same words');
-  // the names asked for are used: socdem, socialist and none each fit a question
-  same([...new Set(taught.filter(id => fit(id) === 'unearned').map(id => items[id].asks[1].right))].sort(), ['none', 'socdem', 'socialist'], 'the names that fit instead cover the social democrat, the socialist and none of the four');
-  // the check by side
-  same(lesson.check.pass.map(r => [r.where ? r.where.side : null, r.right.min]), [[null, 5], ['left', 2], ['right', 2]], 'the check is 5 of 6, and 2 of 3 from each side');
-  check(ideology.meta.facets.side.compare === true, 'Ideology compares the sides at the end of a check and of the review');
-  // the worked question is shown with its panel and the step that names the tap
-  check(items[workedId].steps.every(s => !s.ask || items[workedId].asks.some(a => a.id === s.ask)) && items[workedId].steps.length === 4, 'the worked example works through four steps');
-  // the first group helps with the panel and the second does not
-  same(flowSets(lesson).map(s => s.support || null), [{ panel: true }, null], 'the first group shows what the label needs and the second does not');
+  lessons.forEach(lesson => {
+    const lid = lesson.id, strand = strandOf(lesson), setIds = flowSets(lesson).flatMap(s => ids(s.items)), checkIds = ids(lesson.check.items), worked = workedOf(lesson);
+    // the way of thinking before any worked item or set
+    const firstDoing = lesson.flow.findIndex(s => s.worked || s.set);
+    check(firstDoing >= 1 && lesson.flow.slice(0, firstDoing).every(s => s.show && s.show.length), `${lid}: the first steps are teaching screens, before any worked item or set`);
+    // one worked item, worked question by question
+    same(worked.length, 1, `${lid}: one worked item`);
+    const w = ideology.items[worked[0]];
+    check(!!w && Array.isArray(w.steps) && w.steps.length >= 1, `${lid}: the worked item has steps`);
+    if (w && w.steps) same(w.steps.filter(s => s.ask).map(s => s.ask), w.asks.map(a => a.id), `${lid}: the steps of the worked item name its asks, one each, in order`);
+    // the check is made of new passages
+    const own = new Set([...setIds, ...worked]);
+    check(checkIds.length >= 1 && checkIds.every(id => !own.has(id)), `${lid}: no item of the check is in the lesson's own sets or worked item`);
+    const strandAt = id => meta.strands.findIndex(s => s.id === id), here = strandAt(strand);   // from lesson 2 on, a set mixes in earlier material
+    check([...setIds, ...checkIds, ...worked].every(id => ideology.items[id] && strandAt(ideology.items[id].strand) >= 0 && strandAt(ideology.items[id].strand) <= here), `${lid}: every item the lesson uses is in its strand (${strand}) or an earlier one`);
+    // held back for the review
+    const spare = Object.values(ideology.items).filter(item => item.strand === strand && !taught.has(item.id));
+    check(spare.length >= 3, `${lid}: the strand ${strand} holds at least 3 items no lesson uses, for the review (${spare.length})`);
+  });
 }
 
 if (failures.length) {

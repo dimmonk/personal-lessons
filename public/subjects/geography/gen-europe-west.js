@@ -1,44 +1,61 @@
-// Geography, western Europe: the group of places the pilot (part 16) asks about, made into questions in four forms (a name to tap, a lit place to
-// name, a flag to tap, a neighbor and its water) from the map data `europe-west`. Ten countries, from Iberia to Italy, and the five microstates.
-// The five microstates are asked only as a name to tap: the lesson's check keeps them to that form (`only`), and the lesson's groups and the review
-// follow it (lesson standard 3.4, 3.5), so only the ten countries have a `flagLine`: the one thing that tells the flag from the one it is mistaken for,
-// shown beside the flag in the look and at the head of the feedback of a flag question. The seas are not in the group: a neighbor's water is read from the map data.
-FC.gen('geography', [{
-  id: 'g-europe-west', strand: 'europe-west',
-  places: {
-    map: 'europe-west', forms: ['tap', 'name', 'flag', 'border'],
-    words: { tap: 'Tap it on the map.', name: 'What is the lit place called?', flag: 'Tap the country with this flag.', border: 'Tap a country next to it, then the water it touches. If no water touches it, tap Landlocked.' },
-    list: [
-      { id: 'portugal', name: 'Portugal', flag: '🇵🇹', flagLine: "Two upright bands, green on the left and a wider band of red, with a gold sphere and a shield where they meet.", accept: ['Portugal'],
-        reason: 'Portugal is the country on the Atlantic coast west of Spain, which is its only neighbor, and its capital is Lisbon.' },
-      { id: 'spain', name: 'Spain', flag: '🇪🇸', flagLine: "Three flat stripes, red, yellow and red, the yellow one twice as wide, with a shield on the left.", accept: ['Spain'],
-        reason: 'Spain is the big country that fills most of the Iberian peninsula between the Atlantic and the Mediterranean, with Portugal to its west and France to its north, and its capital is Madrid.' },
-      { id: 'france', name: 'France', flag: '🇫🇷', flagLine: "Three upright stripes, blue, white and red, with the blue on the left.", accept: ['France'],
-        reason: 'France is the large country between the Atlantic and the Mediterranean, with Spain to its south and Germany, Switzerland and Italy to its east, and its capital is Paris.' },
-      { id: 'belgium', name: 'Belgium', flag: '🇧🇪', flagLine: "Three upright stripes, black, yellow and red. Germany's three stripes lie flat.", accept: ['Belgium'],
-        reason: 'Belgium is a small country on the North Sea between France and the Netherlands, and its capital, Brussels, is where the European Union has many of its offices.' },
-      { id: 'netherlands', name: 'Netherlands', flag: '🇳🇱', flagLine: "Three flat stripes, red, white and a deep blue. Luxembourg's blue is lighter.", accept: ['Netherlands'],
-        reason: 'The Netherlands is the low, flat country on the North Sea, north of Belgium and west of Germany, where much of the land lies below sea level, and its capital is Amsterdam.' },
-      { id: 'luxembourg', name: 'Luxembourg', flag: '🇱🇺', flagLine: "Three flat stripes, red, white and a light blue. The Netherlands' blue is deeper.", accept: ['Luxembourg'],
-        reason: 'Luxembourg is a tiny country with no coast, squeezed between Belgium, France and Germany.' },
-      { id: 'germany', name: 'Germany', flag: '🇩🇪', flagLine: "Three flat stripes, black, red and gold. Belgium's three stripes stand upright.", accept: ['Germany'],
-        reason: 'Germany is the large country at the middle of western Europe, with coasts on the North Sea and the Baltic Sea and nine neighbors, from France in the west to Poland in the east, and its capital is Berlin.' },
-      { id: 'austria', name: 'Austria', flag: '🇦🇹', flagLine: "Three flat stripes, red, white and red.", accept: ['Austria'],
-        reason: 'Austria is the mountain country with no coast that lies east of Switzerland and north of Italy, holds much of the eastern Alps, and has Vienna as its capital.' },
-      { id: 'switzerland', name: 'Switzerland', flag: '🇨🇭', flagLine: "A white cross on a red background.", accept: ['Switzerland'],
-        reason: 'Switzerland is the mountain country with no coast in the Alps between France, Germany, Austria and Italy, and its capital is Bern.' },
-      { id: 'italy', name: 'Italy', flag: '🇮🇹', flagLine: "Three upright stripes, green, white and red, with the green on the left. France has blue where Italy has green.", accept: ['Italy'],
-        reason: 'Italy is the boot-shaped country that reaches south from the Alps into the Mediterranean, with the Adriatic Sea on its east side, and its capital is Rome.' },
-      { id: 'andorra', name: 'Andorra', flag: '🇦🇩', accept: ['Andorra'],
-        reason: 'Andorra is a tiny country high in the Pyrenees mountains, between Spain and France, with no coast.' },
-      { id: 'monaco', name: 'Monaco', flag: '🇲🇨', accept: ['Monaco'],
-        reason: 'Monaco is a tiny city-country on the Mediterranean coast, with France all around it on land.' },
-      { id: 'liechtenstein', name: 'Liechtenstein', flag: '🇱🇮', accept: ['Liechtenstein'],
-        reason: 'Liechtenstein is a tiny country with no coast, in the Alps between Switzerland and Austria.' },
-      { id: 'san-marino', name: 'San Marino', flag: '🇸🇲', accept: ['San Marino'],
-        reason: 'San Marino is a tiny country on a mountain, completely surrounded by Italy, not far from the Adriatic coast.' },
-      { id: 'vatican-city', name: 'Vatican City', flag: '🇻🇦', accept: ['Vatican City', 'Vatican'],
-        reason: 'Vatican City is the smallest country in the world, a few city blocks inside Rome, and it is where the Pope lives.' }
-    ]
-  }
-}]);
+// Geography, western Europe: the two groups of places parts 16 and 16b ask about, made into questions from the map data `europe-west`. Fifteen places, from
+// Iberia to Italy: the ten larger countries and the five microstates. The map group (part 16) asks a name to tap, a lit place to name and a neighbor and its water.
+// The flag group (part 16b) asks a flag to tap, of the ten larger countries only (the five microstates' flags are not asked). Both are made from the one list of
+// places below, so a place has one name, one set of spellings, one area and one cue.
+// Each place's feedback is the way of thinking in three lines (place-gen.js placeReasonOf): the area it sits in (`area`, written here), what touches it and its
+// water (the map data's, never written by hand), then `cue`, the one thing that tells it from the place it is mixed up with. A wrong tap on a place that is
+// often mixed up carries its slip (the subject's `lists.slip`). A flag question opens its feedback with the place's `flagLine`, the one thing that tells the
+// flag from the one it is mistaken for.
+(() => {
+  const WORDS = { tap: 'Tap it on the map.', name: 'What is the lit place called?',
+    border: 'Tap a country next to it, then the water it touches. If no water touches it, tap Landlocked.' };
+  const FLAG_WORDS = { flag: 'Tap the country with this flag.' };
+  const IBERIA = 'Iberia, the peninsula in the far southwest of Europe', MAINLAND = 'the west of the mainland, between Iberia and the Alps';
+  const LOW = 'the Low Countries, the flat land on the North Sea', MIDDLE = 'the middle of western Europe, north of the Alps';
+  const ALPS = 'the Alps, the mountains between Germany and Italy', ITALY = "Italy's peninsula, the boot reaching into the Mediterranean";
+  const place = (id, name, flag, area, cue, flagLine, accept = [name]) => ({ id, name, flag, accept, area, cue, ...(flagLine ? { flagLine } : {}) });
+  const PLACES = [
+    place('portugal', 'Portugal', '🇵🇹', `${IBERIA}, its narrow Atlantic strip`, 'Tell it from Spain: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest.',
+      'Two upright bands, green on the left and a wider band of red, with a gold sphere and a shield where they meet.'),
+    place('spain', 'Spain', '🇪🇸', `${IBERIA}, most of it`, 'Tell it from Portugal: Spain is the large country that fills most of the peninsula; Portugal is the narrow strip on its west.',
+      'Three flat stripes, red, yellow and red, the yellow one twice as wide, with a shield on the left.'),
+    place('france', 'France', '🇫🇷', MAINLAND, 'It is the biggest country of the west of the mainland, with Spain under it and Belgium over it.',
+      'Three upright stripes, blue, white and red, with the blue on the left.'),
+    place('belgium', 'Belgium', '🇧🇪', LOW, 'Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.',
+      "Three upright stripes, black, yellow and red. Germany's three stripes lie flat."),
+    place('netherlands', 'Netherlands', '🇳🇱', LOW, 'Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.',
+      "Three flat stripes, red, white and a deep blue. Luxembourg's blue is lighter.", ['Netherlands', 'Holland']),
+    place('luxembourg', 'Luxembourg', '🇱🇺', LOW, "Tell it from Belgium: Luxembourg is the tiny one inland, on Belgium's southeast edge, with no coast.",
+      "Three flat stripes, red, white and a light blue. The Netherlands' blue is deeper."),
+    place('germany', 'Germany', '🇩🇪', MIDDLE, 'It is the big country across the middle, east of the Low Countries and France and north of Switzerland and Austria.',
+      "Three flat stripes, black, red and gold. Belgium's three stripes stand upright."),
+    place('austria', 'Austria', '🇦🇹', `${ALPS}, their eastern part`, 'Tell it from Switzerland: Austria is the longer one in the east; Switzerland is the smaller one in the west, the only one of the two that touches France.',
+      'Three flat stripes, red, white and red.'),
+    place('switzerland', 'Switzerland', '🇨🇭', `${ALPS}, their western part`, 'Tell it from Austria: Switzerland is the smaller one in the west, the only one of the two that touches France; Austria is the longer one in the east.',
+      'A white cross on a red background.'),
+    place('italy', 'Italy', '🇮🇹', ITALY, 'It is the boot, the one country of the region that reaches far south into the Mediterranean.',
+      'Three upright stripes, green, white and red, with the green on the left. France has blue where Italy has green.'),
+    place('andorra', 'Andorra', '🇦🇩', 'the Pyrenees, the mountains between Spain and France', 'Tell it from Monaco: Andorra is the tiny one up in the mountains; Monaco is on the coast.'),
+    place('monaco', 'Monaco', '🇲🇨', 'the Mediterranean coast, in the south of France', 'Tell it from Andorra: Monaco is the tiny one on the Mediterranean coast; Andorra is up in the mountains.'),
+    place('liechtenstein', 'Liechtenstein', '🇱🇮', ALPS, 'It is the tiny one between Switzerland and Austria.'),
+    place('san-marino', 'San Marino', '🇸🇲', `${ITALY}, inland on its east side`, 'Tell it from Vatican City: San Marino is the tiny one on the east side of Italy, near the Adriatic; Vatican City is in Rome, on the west side.'),
+    place('vatican-city', 'Vatican City', '🇻🇦', `${ITALY}, inside Rome on its west side`, 'Tell it from San Marino: Vatican City is the smallest country in the world, a few city blocks in Rome, on the west side; San Marino is on the east side.',
+      undefined, ['Vatican City', 'Vatican'])
+  ];
+  const bare = ({ flag, flagLine, ...rest }) => rest;
+  const flagged = ({ cue, ...rest }) => rest;
+  // the look-alikes: places mixed up with each other (the subject's lists.slip), keyed by place
+  const pairs = (slip, ids) => Object.fromEntries(ids.map(id => [id, slip]));
+
+  FC.gen('geography', [
+    { id: 'g-europe-west', strand: 'europe-west',
+      places: { map: 'europe-west', forms: ['tap', 'name', 'border'], words: WORDS,
+        slips: { ...pairs('spain-portugal', ['spain', 'portugal']), ...pairs('low-countries', ['belgium', 'netherlands', 'luxembourg']),
+          ...pairs('austria-switzerland', ['austria', 'switzerland', 'liechtenstein']), ...pairs('andorra-monaco', ['andorra', 'monaco']), ...pairs('inside-italy', ['san-marino', 'vatican-city']) },
+        list: PLACES.map(bare) } },
+    { id: 'g-europe-west-flags', strand: 'europe-west-flags',
+      places: { map: 'europe-west', forms: ['flag'], words: FLAG_WORDS,
+        slips: { ...pairs('flags-red-white-blue', ['netherlands', 'luxembourg']), ...pairs('flags-black-yellow-red', ['belgium', 'germany']), ...pairs('flags-blue-white-red', ['france', 'italy']) },
+        list: PLACES.filter(p => p.flagLine).map(flagged) } }
+  ]);
+})();

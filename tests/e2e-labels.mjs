@@ -5,10 +5,11 @@
 //        they are known, their words, then the words the label is pinned on with who said them last); the panel shows what the label needs on a
 //        teaching screen and in a worked example, beside the words in a group that helps, and nowhere else; the feedback lists each need found
 //        (with the line) or missing; the end of a check shows the sides side by side and each pass rule by side met or not; so does the review.
-//   X33  Ideology's pilot, "Socialist, or not?", walked end to end at 375 px by a learner who taps every answer: the wrong idea, the four labels,
-//        one label on two sets of words, the worked example, a first group of four, a second group of eight, the check of part 2 passed 5 of 6,
-//        the record, and the review two days later. It asserts only what the walk shows, and leaves the panel, the needs found or missing and the
-//        sides side by side to X32, so that a fault in those turns X32 red and no other.
+//   X33  Ideology's lesson 1, "The five questions", walked end to end at 375 px by a learner who taps every answer: the three teaching screens, the
+//        worked item with its two answers, a first set that asks Question 2 alone (the direction pair missed once, named and asked again), a second
+//        set that asks Question 1 alone (a welfare passage taken for state ownership, named and asked again), a third set that asks both, the check
+//        of eight passed 7 of 8, the record of the tries, and the review two days later. It asserts only what the walk shows, and leaves the panel,
+//        the needs found or missing and the sides side by side to X32, so that a fault in those turns X32 red and no other.
 import { britishIn } from './american.mjs';
 import { look, answerAll, jump } from './e2e-feed.mjs';
 
@@ -192,124 +193,147 @@ export async function X32(env) {
   return c;
 }
 
-/* ---------- X33: Ideology's pilot ---------- */
-const KEYS = ['verdict', 'name', 'words'];
+/* ---------- X33: Ideology's lesson 1, "The five questions" ---------- */
+const OWN_ASK = 'Question 1. Who would own the businesses and farms?', UNIT_ASK = 'Question 2. Who is the story about?';
+const askedNow = page => page.locator('.asks .prompt .stem, .asks .stem').allTextContents().then(t => t.map(s => s.replace(/\s+/g, ' ').trim()));
+// what the lesson's data says: the size of each set (a pair counts as two questions) and the ids of an item's asks
+const setSizes = page => page.evaluate(() => { const d = FC.get('ideology'); return flowSets(d.lessons.l1).map(s => flatRefs(s.items).length); });
+const asksOf = (page, key) => page.evaluate(k => FC.get('ideology').items[k].asks.map(a => a.id), key);
+// the pair of the lesson's step `at` (its teaching screens count from 1, after the why): both passages and what they compare are on the screen
+const pairShown = (page, text, at) => page.evaluate(([n, shown]) => {
+  const pair = ((FC.get('ideology').lessons.l1.flow[n] || {}).show || []).find(b => b.kind === 'pair'), clean = s => s.replace(/\s+/g, ' ').trim();
+  return !!pair && [pair.a.text, pair.b.text, pair.compare].every(s => shown.includes(clean(s)));
+}, [at, text]);
 async function theTeaching(env, c, page) {
   await env.inspect(c, page, 'the why');
-  c.check((await env.screenText(page)).includes('Step 1 of 8'), 'the lesson is not eight steps long (the why, six steps and the check)');
+  c.check((await env.screenText(page)).includes('Step 1 of 10'), 'the lesson is not ten steps long (the why, eight steps and the check)');
   await env.goOn(page);
   let text = await env.screenText(page);
-  c.check(/A wrong idea/.test(text) && /Socialist means the government pays for things/.test(text) && /Earned/.test(text) && /Not earned/.test(text) && /Too little to tell/.test(text), 'the first screen does not give the wrong idea and the three answers');
-  await env.inspect(c, page, 'the wrong idea and the three steps');
+  c.check(/Five questions place almost any ideology/.test(text) && ['1. Who owns, or should own', '2. Who is the story about', '3. What drives history', '4. What does it want done with elections', '5. Where should it all end'].every(q => text.includes(q)) && text.indexOf('1. Who owns') < text.indexOf('2. Who is the story') && text.indexOf('4. What does') < text.indexOf('5. Where'), 'the first screen does not give the five questions in order');
+  await env.inspect(c, page, 'the five questions');
   await env.goOn(page);
   text = await env.screenText(page);
-  c.check(['Free-market (capitalist)', 'Social democrat', 'Socialist', 'Communist'].every(n => text.includes(n)), 'the four labels are not all on their screen');
-  await env.inspect(c, page, 'the four labels');
+  c.check(/Question 1, who owns: ownership, not taxes/.test(text) && /do not change the owner/.test(text) && /the words do not say/.test(text), 'the screen on Question 1 does not say that taxes do not change the owner');
+  c.check(/Private owners, directed by the state/.test(text) && await pairShown(page, text, 1), 'the screen on Question 1 does not explain the fourth answer with its pair and what it compares');
+  await env.inspect(c, page, 'Question 1, ownership not taxes');
   await env.goOn(page);
-  c.check(await page.locator('.art-labelled').count() === 2, 'one label on two sets of words is not two posts');
-  c.check(/Only the second has the public owning a main industry/.test(await env.screenText(page)), 'the two posts do not say what to compare');
-  await env.inspect(c, page, 'one label, two sets of words');
+  text = await env.screenText(page);
+  c.check(/Question 2, who the story is about, and the direction check/.test(text) && /direction/i.test(text) && /Same noun, opposite families/.test(text), 'the screen on Question 2 does not give the direction check');
+  c.check(await pairShown(page, text, 2) && /Both are about race/.test(text), 'the two race passages are not set side by side with what they compare');
+  await env.inspect(c, page, 'Question 2 with the direction check and its pair');
+  await env.goOn(page);
+  text = await env.screenText(page);
+  c.check(/The one rule for naming: only on the telltale answers/.test(text) && /Otherwise say "too little to tell"/.test(text) && /A party's name or a harsh tone never counts/.test(text), 'the screen on the naming rule does not give the rule and the answer "too little to tell"');
+  c.check(['Marxism: class is the unit', 'Nazism: race, as a natural rank', 'Identity-egalitarianism: identity groups', 'Classical liberalism: the individual', 'Fascism: the nation'].every(row => text.includes(row)), 'the naming screen does not print the telltale answers of the five families met so far');
+  await env.inspect(c, page, 'the naming rule and the families met so far');
   await env.goOn(page);
 }
-async function theWorkedExample(env, c, page) {
-  c.check(await page.locator('[data-commit]').count() === 3, 'the worked example does not ask the learner to commit to one of the three answers');
-  await page.locator('[data-commit="earned"]').click();   // not scored, not stored
+async function theWorkedItem(env, c, page) {
+  c.check(await page.locator('[data-commit]').count() === 5, 'the worked item does not ask the learner to commit to one of the five owners');
+  await page.locator('[data-commit="private"]').click();   // not scored, not stored
+  await page.locator('#workedMore').click();
+  c.check(/Question 1\. Find who would own the businesses/.test(await env.screenText(page)) && !/Question 2\. Find who the story is about/.test(await env.screenText(page)), 'the working does not open on Question 1 alone');
   while (await page.locator('#workedMore').count()) await page.locator('#workedMore').click();
   const text = await env.screenText(page);
-  c.check(/The answer.*Not earned/.test(text) && /The answer.*Social democrat/.test(text) && /The answer.*privately owned/.test(text), 'the worked example does not end on its three answers');
-  c.check(/stay privately owned/.test(text) && /social democrat idea/i.test(text), 'the working does not name why the label fails and what the words earn');
-  c.check(await page.locator('mark.cue').count() >= 2, 'the worked example does not mark the lines that decide it');
-  await env.inspect(c, page, 'the worked example, finished');
+  const asks = await asksOf(page, 'w1-manifesto'), steps = await page.evaluate(() => FC.get('ideology').items['w1-manifesto'].steps.map(s => s.ask));
+  c.check(asks.slice(0, 2).join() === 'own,unit' && steps.join() === asks.join(), `the steps of the worked item are not one for each of its asks, own then unit (${asks} / ${steps})`);
+  c.check(/The answer.*The state/.test(text) && /The answer.*Class: owners against workers/.test(text), 'the worked item does not end on its answers, the state and class');
+  c.check(await page.locator('.mark .ans').count() === asks.length, `the worked item does not show one answer for each of its ${asks.length} asks`);
+  c.check(/Question 1\. Find who would own the businesses/.test(text) && /Question 2\. Find who the story is about/.test(text), 'the working does not go question by question');
+  await env.inspect(c, page, 'the worked item, finished');
   await env.goOn(page);
 }
-async function theFirstGroup(env, c, page) {
-  c.check((await env.screenText(page)).includes('Question 1 of 4'), 'the first group is not four questions');
-  const order = [];
-  const firsts = [];
-  for (let i = 0; i < 4; i++) {
-    const now = await look(page);
-    firsts.push(now.key);
-    c.check(now.open.length === 1 && now.open[0].id === 'verdict', `question ${i + 1} does not open with whether the label is earned`);
-    c.check(await page.locator('[data-feedback]').count() === 0, 'feedback is on the page before the answer');
-    await plainWords(c, page, env, `a question of the first group (${now.key})`);
-    if (now.key === 'p-jobs') {
-      await answerAll(page, { miss: { verdict: ['earned'] } });   // words with too little to tell, called earned: the name never opens
-      const text = await env.screenText(page);
-      c.check(/common slip: said the words earn a label they do not show/.test(text) && await page.locator('.mark.no').count() === 1, 'a label believed on words that say too little is not named as a slip');
-      order.push(...await page.evaluate(() => Object.keys(Q.cur.a)));
-      c.check(order.join() === 'verdict,words', `a verdict of "earned" opened a name (${order})`);
-    } else if (now.key === 'p-fortunes') {
-      await answerAll(page, { miss: { name: ['socialist'] } });   // right that it is not earned, wrong on the name
-      c.check(/common slip: named an idea the words do not earn/.test(await env.screenText(page)) && await page.locator('.mark.no').count() === 1 && await page.locator('.mark').count() === 3, 'a wrong name is not marked and named as a slip beside a right verdict and a right line');
-      c.check((await page.evaluate(() => Object.keys(Q.cur.a))).join() === KEYS.join(), 'the asks were not answered verdict, name, then the words');
-    } else await answerAll(page);
-    await next(page);
-  }
-  c.check(JSON.stringify(firsts.slice(0, 2).sort()) === '["p-bus","p-fares"]' && firsts.slice(2).join() === 'p-jobs,p-fortunes', `the pair is not asked first, back to back (${firsts})`);
-  const back = [];
-  while (await page.locator('#qNext').count()) { back.push(await look(page)); await answerAll(page); await next(page); }
-  c.check(back.length === 2 && back.every(b => b.redo) && back.map(b => b.key).sort().join() === 'p-fortunes,p-jobs', `the two misses did not both come back (${back.map(b => b.key)})`);
-  c.check(/2 of 4 right the first time/.test(await env.screenText(page)), 'the first group does not end on "2 of 4 right the first time"');
-  await env.goOn(page);
-}
-async function theSecondGroup(env, c, page) {
-  const asked = [];
+// A set is walked to its end: each question once, and a miss comes back later in the same set, so a question is told apart by `redo`.
+async function walkSet(env, c, page, { count, ask, prompt, label, miss, onMiss }) {
+  const firsts = [], back = [];
   while (await page.locator('#qNext').count()) {
     const now = await look(page);
-    asked.push(now);
-    c.check(now.open.length === 1 && now.open[0].id === 'verdict', 'a question does not open with whether the label is earned');
+    if (now.redo) { back.push(now.key); await answerAll(page); await next(page); continue; }
+    firsts.push(now.key);
+    const words = JSON.stringify(await askedNow(page));
+    c.check(now.open.length === 1 && now.open[0].id === ask && words.includes(prompt), `${now.key}: the ${label} set asks Question ${ask === 'unit' ? 2 : 1} alone (${now.open.map(a => a.id)})`);
     c.check(await page.locator('[data-feedback]').count() === 0, 'feedback is on the page before the answer');
-    await plainWords(c, page, env, 'a question to judge');
-    if (now.key === 'q-farms' && !now.redo) {
-      await answerAll(page, { miss: { verdict: ['not-earned'] } });   // a label the words earn, turned down
-      c.check(/common slip: turned down a label the words earn/.test(await env.screenText(page)), 'a label the words earn, turned down, is not named as a slip');
-    } else await answerAll(page);
+    await plainWords(c, page, env, `a question of the ${label} set (${now.key})`);
+    if (now.key === miss) { await answerAll(page, { miss: { [ask]: [onMiss.pick] } }); await onMiss.after(); }
+    else await answerAll(page);
     await next(page);
   }
-  const firsts = asked.filter(a => !a.redo);
-  c.check(firsts.length === 8 && new Set(firsts.map(a => a.key)).size === 8, `the second group is not eight different questions (${firsts.map(a => a.key)})`);
-  c.check(asked.filter(a => a.redo).map(a => a.key).join() === 'q-farms', 'the label turned down does not come back');
-  c.check(/7 of 8 right the first time/.test(await env.screenText(page)), 'the second group does not end on "7 of 8 right the first time"');
+  c.check(firsts.length === count && new Set(firsts).size === count, `the ${label} set is not ${count} different questions (${firsts})`);
+  c.check(back.join() === miss, `the miss on ${miss} did not come back once (${back})`);
+  return { firsts, back };
+}
+async function theQuestionTwoSet(env, c, page) {
+  const n = (await setSizes(page))[0];
+  c.check(n >= 6 && (await env.screenText(page)).includes(`Question 1 of ${n}`), `the first set does not open on "Question 1 of ${n}", the questions it holds`);
+  const { firsts } = await walkSet(env, c, page, { count: n, ask: 'unit', prompt: UNIT_ASK, label: 'first', miss: 'u-rank-keep', onMiss: { pick: 'identity-equal', after: async () => {   // the same noun, the other direction
+    c.check(/common slip: saw race or identity and skipped the direction check/.test(await env.screenText(page)) && await page.locator('.mark.no').count() === 1, 'the other direction of race is not named as skipping the direction check'); } } });
+  c.check(Math.abs(firsts.indexOf('u-rank-keep') - firsts.indexOf('u-rank-undo')) === 1, `the two race passages are not asked back to back (${firsts})`);
+  c.check(new RegExp(`${n - 1} of ${n} right the first time`).test(await env.screenText(page)), `the first set does not end on "${n - 1} of ${n} right the first time"`);
   await env.goOn(page);
 }
-async function theCheckOfPartTwo(env, c, page) {
+async function theQuestionOneSet(env, c, page) {
+  const n = (await setSizes(page))[1];
+  c.check(n >= 5 && (await env.screenText(page)).includes(`Question 1 of ${n}`), `the second set does not open on "Question 1 of ${n}", the questions it holds`);
+  const { firsts } = await walkSet(env, c, page, { count: n, ask: 'own', prompt: OWN_ASK, label: 'second', miss: 'o-childcare', onMiss: { pick: 'state', after: async () => {   // taxes and free services taken for state ownership
+    c.check(/common slip: misread who would own the businesses/.test(await env.screenText(page)) && await page.locator('.mark.no').count() === 1, 'a welfare passage taken for state ownership is not named as the wrong owner'); } } });
+  c.check(Math.abs(firsts.indexOf('o-childcare') - firsts.indexOf('o-right')) === 1, `the two welfare passages are not asked back to back (${firsts})`);
+  c.check(new RegExp(`${n - 1} of ${n} right the first time`).test(await env.screenText(page)), `the second set does not end on "${n - 1} of ${n} right the first time"`);
+  await env.goOn(page);
+}
+async function theBothQuestionsSet(env, c, page) {
+  const n = (await setSizes(page))[2];
+  c.check(n >= 4 && (await env.screenText(page)).includes(`Question 1 of ${n}`), `the third set does not open on "Question 1 of ${n}", the questions it holds`);
+  for (let i = 0; i < n; i++) {
+    const now = await look(page), asks = await asksOf(page, now.key);
+    c.check(now.open[0].id === 'own' && asks.slice(0, 2).join() === 'own,unit', `${now.key}: Question 1 does not come first, then Question 2 (${asks})`);
+    await answerAll(page);
+    c.check(await page.locator('.mark').count() === asks.length && await page.locator('.mark.no').count() === 0, `${now.key}: every answer is not marked right (${asks})`);
+    await next(page);
+  }
+  c.check(!await page.locator('#qNext').count() && new RegExp(`${n} of ${n} right the first time`).test(await env.screenText(page)), `the third set does not end on "${n} of ${n} right the first time"`);
+  await env.goOn(page);
+}
+async function theCheckOfEight(env, c, page) {
   let text = await env.screenText(page);
-  c.check(/Six new questions/.test(text) && /At least 5 right/.test(text) && /At least 2 right among labels thrown from the left/.test(text) && /At least 2 right among labels thrown from the right/.test(text), `the check does not name itself and its rules by side (${text.slice(0, 300)})`);
+  c.check(/Eight new/i.test(text) && /At least 7 right/.test(text), `the check does not name itself and its rule (${text.slice(0, 300)})`);
   await env.inspect(c, page, 'the first screen of the check');
   await env.goOn(page);
   const keys = [];
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < 8; i++) {
     const now = await look(page);
     keys.push(now.key);
-    c.check(!now.redo && now.open[0].id === 'verdict', 'a question of the check is not asked once, from the start');
-    await answerAll(page, now.key === 'k-rents' ? { miss: { verdict: ['not-earned'] } } : {});
+    c.check(!now.redo && now.open[0].id === 'own' && (await asksOf(page, now.key))[0] === 'own', `${now.key}: a question of the check is not asked once, from Question 1`);
+    await answerAll(page, now.key === 'k-tax' ? { miss: { own: ['state'] } } : {});
     c.check(await page.locator('#qNext').isEnabled(), 'the check leaves Next shut after an answer');
     await next(page);
   }
-  c.check([...keys].sort().join() === 'k-city,k-drugs,k-rents,k-unleash,k-wage,k-water', `the check is not the six questions of part 2 (${keys})`);
+  c.check([...keys].sort().join() === 'k-coop,k-farms,k-hiring,k-plants,k-shop,k-soil,k-tax,k-throne', `the check is not the eight new passages (${keys})`);
   text = await env.screenText(page);
   const rules = await page.locator('.done-screen > table.results tr td:last-child').allTextContents();
-  c.check(/5 of 6: passed/.test(text) && rules.length === 3 && rules.every(v => v === 'met'), `the check was not passed with its three rules met (${text.slice(0, 160)})`);
-  c.check(await page.locator('.resitem').count() === 6 && await page.locator('.resitem').first().locator('.mark.no').count() >= 1, 'the answers are not all shown with the missed one first');
+  c.check(/7 of 8: passed/.test(text) && rules.length === 1 && rules.every(v => v === 'met'), `the check was not passed 7 of 8 with its rule met (${text.slice(0, 160)})`);
+  c.check(await page.locator('.resitem').count() === 8 && await page.locator('.resitem').first().locator('.mark.no').count() >= 1, 'the answers are not all shown with the missed one first');
   await plainWords(c, page, env, 'the result of the check');
 }
 async function theRecord(env, c, page) {
   await env.clickVisible(page, '[data-v="subject"]');
   const text = await env.screenText(page);
-  c.check(/Check passed, 5 of 6/.test(text) && /1 of 6 parts/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 200)})`);
+  c.check(/Check passed, 7 of 8/.test(text) && /1 of 7 parts/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 200)})`);
   await env.inspect(c, page, 'the Ideology subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:ideology:items'] || '{}'), seen = JSON.parse(stored['pl:ideology:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 6 && inCheck.every(t => t.lesson === 'l2' && t.rev === 1 && t.sup === false), 'the check was not stored as six tries of lesson 2 without help');
-  c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
-  c.check(tries.every(t => Object.keys(t.a).every(k => KEYS.includes(k)) && typeof t.a.verdict === 'string' && Array.isArray(t.a.words) && (!('name' in t.a) || t.a.verdict === 'not-earned')),
-    'an answer is not stored as the verdict, the name only after "not earned", and the ids of the lines tapped');
+  c.check(inCheck.length === 8 && inCheck.every(t => t.lesson === 'l1' && t.rev === 1 && t.sup === false), 'the check was not stored as eight tries of lesson 1 without help');
+  c.check(tries.every(t => Object.keys(t.a).every(k => ['own', 'unit', 'family'].includes(k)) && Object.values(t.a).every(v => typeof v === 'string')), 'an answer is not stored as the option chosen for each question asked');
+  const heldAsks = await Promise.all(inCheck.map(async t => [t.key, Object.keys(t.a).sort().join(), (await asksOf(page, t.key)).sort().join()]));
+  c.check(heldAsks.every(([, held, asked]) => held === asked && held.includes('own')), `a try of the check does not hold an answer to each ask of its question (${JSON.stringify(heldAsks.filter(([, h, a]) => h !== a))})`);
+  c.check(practice.filter(t => ['u-class', 'u-rank-keep'].includes(t.key)).every(t => JSON.stringify(Object.keys(t.a)) === '["unit"]'), 'a try of the first set does not hold the unit ask alone');
   const slips = new Set(tries.flatMap(t => Object.values(t.r)));
-  ['believed', 'wrong-name', 'doubted'].forEach(slip => c.check(slips.has(slip), `the slip "${slip}" is not in the record`));
-  c.check(tries.filter(t => t.key === 'p-jobs').some(t => JSON.stringify(t.a.words) === '["none"]'), '"Nothing here decides it" is not stored as the answer "none"');
-  c.check(!tries.some(t => t.key === 'w-power'), 'the worked example was stored as a try');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l2: { rev: 1, at: 7 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
-  c.check(await page.evaluate(() => { const d = FC.get('ideology'); return lessonDone(d, 'ideology', d.lessons.l2) && lastCheck(d, 'ideology', d.lessons.l2).passed; }), 'the lesson is not done with the check passed');
+  ['skipped-direction', 'wrong-own'].forEach(slip => c.check(slips.has(slip), `the slip "${slip}" is not in the record`));
+  const direction = tries.filter(t => t.key === 'u-rank-keep');
+  c.check(direction.length === 2 && direction[0].a.unit === 'identity-equal' && direction[0].r.unit === 'skipped-direction' && direction[1].a.unit === 'race-rank', `the miss on the direction pair is not stored as a try and its second go (${JSON.stringify(direction.map(t => [t.a, t.r]))})`);
+  c.check(tries.filter(t => t.key === 'o-childcare').some(t => t.a.own === 'state' && t.r.own === 'wrong-own'), 'the welfare passage called state ownership is not stored as the wrong owner');
+  c.check(!tries.some(t => t.key === 'w1-manifesto'), 'the worked item was stored as a try');
+  c.check(JSON.stringify(seen) === JSON.stringify({ l1: { rev: 1, at: 9 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(await page.evaluate(() => { const d = FC.get('ideology'); return lessonDone(d, 'ideology', d.lessons.l1) && lastCheck(d, 'ideology', d.lessons.l1).passed; }), 'the lesson is not done with the check passed');
 }
 async function theIdeologyReview(env, c, page) {
   await env.setDay(page, WEDNESDAY);
@@ -319,7 +343,8 @@ async function theIdeologyReview(env, c, page) {
   await page.locator('[data-review-start]').first().click();
   await page.locator('#beginBlock').click();
   const now = await look(page);
-  c.check(await page.evaluate(() => Q.list[Q.at].item.strand) === 'economy-labels', `the review asked ${now.key}, which is not a question of the topic that came due`);
+  c.check(await page.evaluate(() => Q.list[Q.at].item.strand) === 'five-questions', `the review asked ${now.key}, which is not a question of the strand five-questions`);
+  c.check(now.open.length >= 1 && ['own', 'unit'].includes(now.open[0].id), `the review asks ${now.open.map(a => a.id)}, not a question of lesson 1`);
   await plainWords(c, page, env, 'a question of the review');
   await answerAll(page);
   await next(page);
@@ -329,15 +354,16 @@ export async function X33(env) {
   await env.setDay(page, MONDAY);
   await env.openSubject(page, 'ideology');
   const subject = await env.screenText(page);
-  c.check(/Socialist, or not\?/.test(subject) && (subject.match(/Not built yet/g) || []).length === 5, 'the subject screen does not list the pilot and the five parts not built yet');
-  c.check(subject.includes('Draft: not tried yet'), 'the pilot does not carry the draft line');
+  c.check(await page.locator('#screen [data-l="l1"]').count() === 1 && /The five questions/.test(subject), 'the subject screen does not list lesson 1, The five questions');
+  c.check(!subject.includes('Draft: not tried yet'), 'lesson 1, passed by its reviews and live, still carries the draft line');
   await env.inspect(c, page, 'the Ideology subject screen');
-  await env.clickVisible(page, '#screen [data-l="l2"]');
+  await env.clickVisible(page, '#screen [data-l="l1"]');
   await theTeaching(env, c, page);
-  await theWorkedExample(env, c, page);
-  await theFirstGroup(env, c, page);
-  await theSecondGroup(env, c, page);
-  await theCheckOfPartTwo(env, c, page);
+  await theWorkedItem(env, c, page);
+  await theQuestionTwoSet(env, c, page);
+  await theQuestionOneSet(env, c, page);
+  await theBothQuestionsSet(env, c, page);
+  await theCheckOfEight(env, c, page);
   await theRecord(env, c, page);
   await theIdeologyReview(env, c, page);
   await context.close();

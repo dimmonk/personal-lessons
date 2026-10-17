@@ -1,6 +1,6 @@
-// Geography, the world and the United States: the questions parts 1 to 7 open with, each shown done before the learner's first try, in the steps of the
+// Geography, the world, the United States and western Europe: the questions parts 1 to 7 and 16 open with, each shown done before the learner's first try, in the steps of the
 // way of thinking: the bigger area first, found from what the learner already knows (a lesson before, or the shape of the map), then what touches the
-// place, then its water. Each one's words and closing line are its group's (gen-world.js, gen-us-map.js and gen-us-states.js, loaded first), so a place has one line.
+// place, then its water. Each one's words and closing line are its group's (gen-world.js, gen-us-map.js, gen-us-states.js and gen-europe-west.js, loaded first), so a place has one line.
 (() => {
   const gens = FC.get('geography').gens, groupOf = id => gens[id].places;
   // the worked steps already walk the area, what touches it and the water, so the feedback line under them is the place's own reason or its cue
@@ -9,10 +9,13 @@
   const tap = (id, gen, strand, right, name, steps) => ({ id, strand, facets: { form: 'tap' }, blocks: [{ kind: 'prose', text: name }],
     asks: [{ id: 'where', kind: 'place', prompt: groupOf(gen).words.tap, map: groupOf(gen).map, right }], steps, reason: lineOf(gen, right) });
   const border = (id, gen, strand, of, name, steps) => ({ id, strand, facets: { form: 'border' }, blocks: [{ kind: 'prose', text: `What borders ${name}?` }],
-    asks: [{ id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: groupOf(gen).words.border, map: 'us', of }], steps, reason: lineOf(gen, of) });
+    asks: [{ id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: groupOf(gen).words.border, map: groupOf(gen).map, of }], steps, reason: lineOf(gen, of) });
   const named = (id, gen, strand, lit, accept, steps) => ({ id, strand, facets: { form: 'name' },
     blocks: [{ kind: 'prose', text: groupOf(gen).words.name }, { kind: 'map', region: groupOf(gen).map, lit: [lit] }],
     asks: [{ id: 'name', kind: 'text', prompt: groupOf(gen).words.name, accept }], steps, reason: lineOf(gen, lit) });
+  // a flag worked in the steps of reading a flag (part 16b): its closing line is the flag's own, the one that tells it from the flag it is mistaken for
+  const flag = (id, gen, strand, right, steps) => ({ id, strand, facets: { form: 'flag' }, blocks: [{ kind: 'flags', gen, places: [right] }],
+    asks: [{ id: 'where', kind: 'place', prompt: groupOf(gen).words.flag, map: groupOf(gen).map, right }], steps, reason: groupOf(gen).list.find(p => p.id === right).flagLine });
   const AREA = 'Area: which bigger area is it in?', TOUCH = 'Touches: what is next to it?', WATER = 'Water: what water is it on?';
 
   FC.items('geography', [
@@ -87,6 +90,26 @@
     border('w-border-vermont', 'g-us-northeast', 'us-northeast', 'vermont', 'Vermont', [
       step('area', AREA, 'Vermont is in New England, inland, along Canada.'),
       step('touch', TOUCH, 'Canada is along its top: tap Canada.'),
-      step('water', WATER, 'Its eastern neighbor reaches the Atlantic, but Vermont does not. So it is landlocked: tap Landlocked.')])
+      step('water', WATER, 'Its eastern neighbor reaches the Atlantic, but Vermont does not. So it is landlocked: tap Landlocked.')]),
+    tap('w-tap-belgium', 'g-europe-west', 'europe-west', 'belgium', 'Belgium', [
+      step('area', AREA, 'Belgium is in the Low Countries, the flat land on the North Sea. Start from France, the big country of the west named on the first screen.'),
+      step('touch', TOUCH, 'Belgium is the small country just north of France, with the Netherlands above it and Germany to its east.'),
+      step('water', WATER, 'Its short coast is on the North Sea, the sea named beside the Low Countries. Tap inside it.')]),
+    named('w-name-france', 'g-europe-west', 'europe-west', 'france', ['France'], [
+      step('area', AREA, 'The lit country is the biggest one in the west of the mainland, between Iberia and the Alps.'),
+      step('touch', TOUCH, 'Spain is under it, across the Pyrenees, with Belgium, Germany and Switzerland on its other sides, as the screens showed.'),
+      step('water', WATER, 'It has coasts on the Atlantic, the English Channel and the Mediterranean. The big country with those three coasts is France.')]),
+    border('w-border-belgium', 'g-europe-west', 'europe-west', 'belgium', 'Belgium', [
+      step('area', AREA, 'Belgium is in the Low Countries, on the North Sea, just north of France.'),
+      step('touch', TOUCH, 'France is along its south side: tap France.'),
+      step('water', WATER, 'Its coast is on the North Sea: tap the North Sea.')]),
+    border('w-landlocked-switzerland', 'g-europe-west', 'europe-west', 'switzerland', 'Switzerland', [
+      step('area', AREA, 'Switzerland is in the Alps, the mountains between Germany and Italy, with France on its west side.'),
+      step('touch', TOUCH, 'France is along its west side: tap France.'),
+      step('water', WATER, 'No sea or ocean reaches it: the Alps are inland, with other countries in between. So it is landlocked: tap Landlocked.')]),
+    flag('w-flag-belgium', 'g-europe-west-flags', 'europe-west-flags', 'belgium', [
+      step('read', 'Read the flag: how many stripes, which way they run, which colors.', 'Three stripes, standing upright, black, yellow and red from left to right.'),
+      step('tell', 'Tell it from the flag it is mistaken for.', "Germany has the same three colors in flat stripes, with red in the middle. Belgium's stripes stand upright, with yellow in the middle."),
+      step('find', 'Find the country.', 'Belgium is the small country in the Low Countries, just north of France, on the North Sea. Tap it.')])
   ]);
 })();

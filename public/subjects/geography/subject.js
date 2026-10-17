@@ -1,4 +1,4 @@
-// Geography: knowing where a place is when it is named, with no map in sight. Parts 1 to 7b and part 16 (Europe, west) are built, so the subject is not
+// Geography: knowing where a place is when it is named, with no map in sight. Parts 1 to 7b, 16 and 16b (Europe, west) are built, so the subject is not
 // complete. Its plan is docs/subjects/geography/design.md. Every lesson opens with the way of thinking (the area a place sits in, what touches it, its
 // water) and finds its worked cases by it, so the reading allowance is a quarter of a lesson: the method is never cut to fit the share (build-subject, 4).
 FC.subject('geography', {
@@ -28,6 +28,7 @@ FC.subject('geography', {
     { id: "14", title: "The Caribbean" },
     { id: "15", title: "South America" },
     { id: "16", title: "Europe, west" },
+    { id: "16b", title: "The flags of western Europe" },
     { id: "17", title: "Europe, north" },
     { id: "18", title: "Europe, central and east" },
     { id: "19", title: "Europe, the Balkans and the south" },
@@ -66,7 +67,15 @@ FC.subject('geography', {
       { id: 'two-short-ranges', text: 'The two short ranges near the Pacific: the Cascades run north to south near the top, the Sierra Nevada lower down, along the east side of California' },
       { id: 'two-ranges', text: 'The two long ranges: the Rockies run down the West; the Appalachians run down the East, behind the Atlantic coast' },
       { id: 'two-centrals', text: 'Central America is the narrow land between North and South America; Central Asia is the middle of Asia, east of the Caspian Sea' },
-      { id: 'connecticut-rhode-island', text: 'Connecticut and Rhode Island: Rhode Island is the tiny one on the east; Connecticut is the bigger one next to New York' }
+      { id: 'connecticut-rhode-island', text: 'Connecticut and Rhode Island: Rhode Island is the tiny one on the east; Connecticut is the bigger one next to New York' },
+      { id: 'spain-portugal', text: 'Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest' },
+      { id: 'low-countries', text: 'Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast' },
+      { id: 'austria-switzerland', text: 'Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them' },
+      { id: 'andorra-monaco', text: 'Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast' },
+      { id: 'inside-italy', text: 'San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic' },
+      { id: 'flags-red-white-blue', text: 'The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue' },
+      { id: 'flags-black-yellow-red', text: 'The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle' },
+      { id: 'flags-blue-white-red', text: 'The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right' }
     ]
   },
   facets: {
@@ -76,7 +85,7 @@ FC.subject('geography', {
   strands: [
     { id: 'world', title: 'The world' }, { id: 'us-map', title: 'The United States, as a whole' }, { id: 'us-west', title: 'The West' }, { id: 'us-midwest', title: 'The Midwest' },
     { id: 'us-south-central', title: 'The South, Texas to Kentucky' }, { id: 'us-south-atlantic', title: 'The South, the Atlantic side' }, { id: 'us-northeast', title: 'The Northeast' },
-    { id: 'europe-west', title: 'Western Europe' }
+    { id: 'europe-west', title: 'Western Europe' }, { id: 'europe-west-flags', title: 'The flags of western Europe' }
   ],
   // the shapes and names of the maps, and the day they were fetched (a lit place named from memory is answered against them)
   refs: [{ id: 'map-data', text: 'The shapes and names of the map', value: 'Natural Earth, public domain', asOf: '2026-10-12', source: 'https://www.naturalearthdata.com/' }],

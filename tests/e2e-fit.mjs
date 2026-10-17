@@ -8,11 +8,17 @@ const NARROW = { width: 360, height: 800 };
 const CLEAR = 8;   // the room a control keeps above the bar of Next, in pixels
 const MAP = '[data-map-ask] .mapsvg';
 
-// the step of Geography's lesson 16 whose first question is of this form ('tap', 'name', 'border'), moved to
+// the step of Geography's lesson 16 whose first question is of this form ('tap', 'name', 'border'), moved to: the lesson opens with its method, three screens of
+// names and four worked cases, then a set for each form, so every step of the flow is looked at
+// the first step with a question of this form, that question asked first (a group can mix forms in a shuffled order)
 const goToForm = (page, form) => page.evaluate(f => {
-  for (let at = 0; at < 12; at++) {
+  for (let at = 0; at <= LESSON.lesson.flow.length; at++) {
     moveLesson(at);
-    if (typeof Q !== 'undefined' && Q && Q.list && Q.list.length && Q.list[Q.at].item.values && Q.list[Q.at].item.values.form === f) return at;
+    if (typeof Q === 'undefined' || !Q || !Q.list || !Q.list.length) continue;
+    const k = Q.list.findIndex(q => q.item.values && q.item.values.form === f);
+    if (k < 0) continue;
+    if (k > 0) { Q.list = [Q.list[k], ...Q.list.filter((_, i) => i !== k)]; Q.cur = freshCur(questionSeconds(Q.list[0])); paintQueue(); }
+    return at;
   }
   return -1;
 }, form);
@@ -42,7 +48,14 @@ const aim = (page, place) => page.evaluate(place => {
 // the lesson at its first neighbor-and-water question of a country that touches a sea (a landlocked one is answered Landlocked and passed); its country, or null
 async function aBorderOfASea(page) {
   await goToForm(page, 'border');
-  for (let seen = 0; seen < 5; seen++) {
+  for (let seen = 0; seen < 8; seen++) {
+    // the neighbors and the names of a lesson are asked in one shuffled group: a name question on the way is answered and passed
+    if (await page.evaluate(() => Q.list[Q.at].item.values.form) === 'name') {
+      await page.locator('input[data-recall="name"]').fill(await page.evaluate(() => Q.list[Q.at].item.asks[0].accept[0]));
+      await page.locator('[data-recall-answer="name"]').click();
+      await page.locator('#qNext').click();
+      continue;
+    }
     const place = await thePlace(page), at = await aim(page, place);
     if (at.water.length) return place;
     await tapUnit(page, at.neighbor);
