@@ -1,7 +1,7 @@
 {
   "name": "fieldcraft",
   "private": true,
-  "description": "Fieldcraft \u2014 pragmatic knowledge. Static site in public/, no build step.",
+  "description": "Fieldcraft — pragmatic knowledge. Static site in public/, no build step.",
   "scripts": {
     "icons": "node scripts/render-icons.mjs",
     "maps": "node tools/maps/build-maps.mjs",
@@ -12,11 +12,12 @@
     "test:rules": "node tests/rules.mjs",
     "test:e2e": "node tests/e2e.mjs",
     "lock": "node tests/lessons/lock.mjs",
-    "test": "npm run test:data && npm run test:audio && npm run test:lessons",
+    "test": "npm run test:standard && npm run test:data && npm run test:audio && npm run test:lessons",
     "test:e2e:all": "node tests/e2e.mjs --all",
     "deploy": "npm test && firebase deploy --only hosting,firestore:rules --project fieldcraft-a795f",
     "hooks": "node tools/hooks/turn-on.mjs && echo \"hooks on: the lesson tier runs before every commit; a change to the gates needs the owner's word in the message\"",
-    "pretest": "node tools/hooks/turn-on.mjs"
+    "pretest": "node tools/hooks/turn-on.mjs",
+    "test:standard": "node .claude/standard/verify.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "6.0.0",
