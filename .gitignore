@@ -4,3 +4,6 @@ node_modules/
 tools/maps/.cache/
 firebase-debug.log
 firestore-debug.log
+
+# Throwaway worktree of origin/main that npm run deploy ships from (claude-config/standard/deploy)
+.deploy-worktree/

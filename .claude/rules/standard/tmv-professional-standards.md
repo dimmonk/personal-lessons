@@ -57,15 +57,23 @@ different TMV projects share emulator ports, they need a shared lock (see
 Members' `scripts/e2e.sh` — port a compatible lock, don't let one project's
 e2e run silently kill another's).
 
-**D. Deploy safety.** Every deploy script (`npm run deploy` / `deploy.sh`)
-should: refuse on a dirty tree, refuse unless `HEAD == origin/main` (naming
-the commits at risk), always name its hosting target explicitly (a bare
-`--only hosting` deploys every target a `firebase.json` declares — check for
-more than one before assuming otherwise), stamp a build/version file the app
-actually reads (not just writes and ignores), and use a scoped
-`--only functions:name` for any functions deploy — never a bare functions
-deploy that redeploys everything (this is enforced globally already via
-`~/.claude/scripts/hooks/enforce-scoped-function-deploy.js`).
+**D. Deploy safety.** Every Firebase app deploys through the shared core, `npm run deploy -- --only <targets>`
+(`standard/deploy/` in claude-config, vendored by `sync.mjs` to `.claude/standard/deploy/`; design:
+`docs/deploy-standard-design.md`). A project does not write a deploy script; it writes `deploy.config.mjs` (data and
+named hook functions) and the core does by construction what each script used to be asked to do:
+- ships `origin/main` fetched now, from a throwaway worktree, so nothing dirty or unpushed can ship (no dirty-tree or
+  `HEAD == origin/main` gate, and no escape hatch) and it prints what is NOT shipping;
+- always names its targets: no `--only`, bare `--only functions` and a bare `--only hosting` where a `firebase.json`
+  declares several targets are refused (functions are `functions:name`, one by one; the global
+  `~/.claude/scripts/hooks/enforce-scoped-function-deploy.js` still applies);
+- cuts a counted release the app actually reads (`<siteRoot>/version.json`, `{ revision, date, commit }`, copies stamped
+  from the one writer), committed as `chore: release N`, tagged `release-N`, pushed atomically with the branch;
+- checks the live site afterwards (version, copies, header samples, private paths) and exits 2 with the rollback and
+  `npm run deploy-check`;
+- makes `firebase.json`'s `predeploy` a guard that refuses a hand-typed `firebase deploy`.
+`npm run test:standard` holds the mirror (version file, copies, service-worker cache name, docs that hand out a command
+the core refuses) and `sync.mjs --check` holds the wiring against hand reverts. A new app starts from this, not from a
+copied script.
 
 **D1. Firebase Hosting cache headers: revalidate, don't re-download (measured 2026-09-26, Training App).** First-party JS/CSS
 served `no-store` is re-downloaded in full on every visit (918 KB → a cold boot every time). The fix is NOT plain
@@ -130,7 +138,7 @@ pins its invariant where one exists. An owner-uniqueness check
 writer.
 
 **H. Shipping cadence and commit hygiene.** Every logical change ships as its
-own commit; a deploy gets its own `chore: bump deploy stamp` commit; a
+own commit; a deploy gets its own `chore: release N` commit (cut, tagged `release-N` and pushed by `npm run deploy`, never by hand); a
 multi-step initiative runs as named phases in commit messages (not one giant
 commit). Small, frequent, reversible — never a week of uncommitted work.
 

@@ -2,8 +2,8 @@
 """
 What production's FUNCTIONS and Firestore RULES do not have yet.
 
-status.sh answers "is production current?" from the deploy stamp, and only a
-hosting deploy writes that stamp. Functions and rules deploy on their own and
+status.sh answers "is production current?" from the release tags, and only a
+hosting deploy cuts a release. Functions and rules deploy on their own and
 leave no trace in git, so a hosting-current report says nothing about them —
 a project can read "production is current" while its Cloud Functions still
 run code main has already replaced.

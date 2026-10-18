@@ -1,87 +1,56 @@
 #!/bin/bash
 # Report what work exists that production does not have.
 #
-# "Deployed" is defined by the deploy stamp: this project's deploy script
-# rewrites a small build/version file on every hosting deploy, and the
-# operator commits it (typically as "chore: bump deploy stamp (...)"). So the
-# last commit touching that file IS the last deploy, and anything on main
-# after it is unshipped.
+# "Deployed" is defined by the release tags: `npm run deploy` (the shared deploy standard, claude-config/standard/deploy)
+# cuts every hosting release as one commit `chore: release N`, tags it `release-N` and pushes both together. So the
+# highest `release-N` tag on origin IS the last deploy, and anything on main after it is unshipped:
+#   git log release-N..origin/main
+# The release file `<siteRoot>/version.json` ({ revision, date, commit }) is what ships and what clients read; the tag is
+# derived from it by the same writer in the same push, so the two must agree, and this reports when they do not.
 #
-# The stamp file's path differs per project — there is no universal name
-# across TMV apps. This script tries a short list of common locations and
-# uses the first one whose git history is non-empty; pass
-# `--stamp-file <path>` (relative to the repo root) to override when a
-# project's actual stamp file isn't in the candidate list below.
-#
-# That stamp covers HOSTING only. Cloud Functions and Firestore rules deploy
-# separately and write nothing to git, so functions-status.py checks them
-# against production directly (needs gcloud credentials).
+# That covers HOSTING only. Cloud Functions and Firestore rules deploy separately and write nothing to git, so
+# functions-status.py checks them against production directly (needs gcloud credentials).
 #
 # Read-only. Prints a report and exits; never merges, deploys or writes.
 set -u
 
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
-STAMP_FILE_OVERRIDE=""
-if [ "${1:-}" = "--stamp-file" ] && [ -n "${2:-}" ]; then
-  STAMP_FILE_OVERRIDE="$2"
-fi
-
 echo "Fetching..."
-git fetch --all --prune --quiet 2>&1 | grep -v '^$' || true
+git fetch --all --prune --tags --quiet 2>&1 | grep -v '^$' || true
 echo
 
-# Candidate deploy-stamp files. Add a project's actual stamp file here once
-# it's confirmed, or pass --stamp-file to override without editing this list.
-#
-# Selection is by MOST RECENTLY COMMITTED, not by list order, and a candidate
-# that no longer exists in the tree is skipped. Order-based selection picked a
-# same-named decoy on TMV-Members: `public/version.json` was a dead file from a
-# backup import with one commit (Jan 2) and no readers or writers, while the
-# real stamp — `public/js/foundation/version.js`, rewritten by the deploy's own
-# predeploy hook every single time — sat second in the list. Result: the last
-# deploy resolved to the initial commit and the tool reported 3,137 undeployed
-# commits. A deploy stamp is by definition the file that MOVES on every deploy,
-# so recency is the signal; a name is only a hint.
-CANDIDATES=(
-  "public/js/foundation/version.js"
-  "public/version.json"
-  "public/version.js"
-  "src/version.json"
-  "version.json"
-)
+# The highest release-N tag, numerically (not alphabetically: release-9 sorts after release-10 as text).
+TAG_N=$(git tag --list 'release-*' | sed -n 's/^release-\([0-9][0-9]*\)$/\1/p' | sort -n | tail -1)
 
-STAMP_FILE=""
-STAMP=""
-if [ -n "$STAMP_FILE_OVERRIDE" ]; then
-  STAMP_FILE="$STAMP_FILE_OVERRIDE"
-  STAMP=$(git log -1 --format=%H -- "$STAMP_FILE")
-else
-  BEST_TS=0
-  for f in "${CANDIDATES[@]}"; do
-    # A deleted file is not this project's stamp, whatever its history says.
-    [ -f "$f" ] || continue
-    h=$(git log -1 --format=%H -- "$f")
-    [ -n "$h" ] || continue
-    ts=$(git log -1 --format=%ct -- "$f")
-    if [ "${ts:-0}" -gt "$BEST_TS" ]; then
-      BEST_TS="$ts"
-      STAMP_FILE="$f"
-      STAMP="$h"
-    fi
-  done
-fi
-
-if [ -z "$STAMP" ]; then
-  echo "!! No deploy-stamp commit found (tried: ${CANDIDATES[*]})."
-  echo "!! Cannot tell what is deployed from git history alone."
-  echo "!! Check this project's deploy script for the file it writes, then re-run:"
-  echo "!!   bash $0 --stamp-file <path/from/repo/root>"
+if [ -z "$TAG_N" ]; then
+  echo "!! No release-N tag found. This project has not adopted the shared deploy standard,"
+  echo "!! so git cannot say what is deployed. Seed the tag at the commit that is live, then re-run:"
+  echo "!!   git tag release-<N> <commit> && git push origin release-<N>"
   exit 1
 fi
+STAMP="release-$TAG_N"
 
-echo "LAST DEPLOY  (stamp file: $STAMP_FILE)"
+echo "LAST DEPLOY  ($STAMP)"
 git --no-pager log -1 --format='  %h  %ad  %s' --date=short "$STAMP"
+echo
+
+# The release file(s) at origin/main: revision must equal the highest tag, or the counter guard will refuse the next cut.
+VERSION_FILES=$(git ls-tree -r --name-only origin/main 2>/dev/null | grep -E '(^|/)version\.json$' | grep -v node_modules || true)
+for f in $VERSION_FILES; do
+  REV=$(git show "origin/main:$f" 2>/dev/null | python3 -c 'import json,sys
+try:
+    d=json.load(sys.stdin)
+    print(d["revision"] if list(d.keys())==["revision","date","commit"] else "")
+except Exception:
+    print("")')
+  [ -n "$REV" ] || continue
+  if [ "$REV" = "$TAG_N" ]; then
+    echo "  $f: revision $REV (matches $STAMP)"
+  else
+    echo "  !! $f: revision $REV but the highest tag is $STAMP — a rewound file or a release commit that lost its tag; the next deploy will refuse"
+  fi
+done
 echo
 
 echo "UNDEPLOYED ON main"
@@ -92,6 +61,25 @@ else
   git --no-pager log --format='  %h  %ad  %s' --date=short "$STAMP"..origin/main
 fi
 echo
+
+# What the sites serve right now: each release line's origin in deploy.config.mjs, its /version.json. Best effort.
+if [ -f deploy.config.mjs ]; then
+  LIVE=$(node --input-type=module -e "
+    const { default: config } = await import(process.cwd() + '/deploy.config.mjs');
+    for (const [key, line] of Object.entries(config.releases)) console.log(key + ' ' + line.origin);
+  " 2>/dev/null || true)
+  if [ -n "$LIVE" ]; then
+    echo "LIVE  (/version.json of each release line)"
+    printf '%s\n' "$LIVE" | while read -r KEY ORIGIN; do
+      BODY=$(curl -fsS --max-time 8 "$ORIGIN/version.json" 2>/dev/null || true)
+      LIVE_REV=$(printf '%s' "$BODY" | python3 -c 'import json,sys
+try: print(json.load(sys.stdin)["revision"])
+except Exception: print("?")')
+      echo "  $KEY  $ORIGIN  revision $LIVE_REV"
+    done
+    echo
+  fi
+fi
 
 python3 "$(dirname "$0")/functions-status.py" || echo "  !! functions/rules check crashed — check them by hand"
 echo
@@ -113,7 +101,7 @@ echo "LOCAL STATE"
 echo "  branch:  $(git rev-parse --abbrev-ref HEAD)"
 DIRTY=$(git status --porcelain --untracked-files=no)
 if [ -n "$DIRTY" ]; then
-  echo "  tree:    DIRTY — deploy will refuse (if this project's deploy script guards on it). Files:"
+  echo "  tree:    DIRTY (npm run deploy ships origin/main from its own worktree, so this does not block it). Files:"
   echo "$DIRTY" | sed 's/^/             /'
 else
   echo "  tree:    clean"

@@ -14,10 +14,11 @@
     "lock": "node tests/lessons/lock.mjs",
     "test": "npm run test:standard && npm run test:data && npm run test:audio && npm run test:lessons",
     "test:e2e:all": "node tests/e2e.mjs --all",
-    "deploy": "npm test && firebase deploy --only hosting,firestore:rules --project fieldcraft-a795f",
+    "deploy": "node .claude/standard/deploy/deploy.mjs",
     "hooks": "node tools/hooks/turn-on.mjs && echo \"hooks on: the lesson tier runs before every commit\"",
     "pretest": "node tools/hooks/turn-on.mjs",
-    "test:standard": "node .claude/standard/verify.mjs"
+    "test:standard": "node .claude/standard/verify.mjs",
+    "deploy-check": "node .claude/standard/deploy/deploy-check.mjs"
   },
   "devDependencies": {
     "@firebase/rules-unit-testing": "6.0.0",

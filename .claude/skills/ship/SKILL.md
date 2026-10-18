@@ -1,6 +1,6 @@
 ---
 name: ship
-description: Pull cloud/mobile work and deploy it from this desktop. Use when the user says "ship", "ship it", "deploy", "deploy what's pending", "what's undeployed", or asks to get work done in a phone/web/cloud session onto production. Lists undeployed commits and unmerged branches, merges what is ready, runs the tests, deploys, and commits the deploy stamp.
+description: Pull cloud/mobile work and deploy it from this desktop. Use when the user says "ship", "ship it", "deploy", "deploy what's pending", "what's undeployed", or asks to get work done in a phone/web/cloud session onto production. Lists undeployed commits and unmerged branches, merges what is ready, runs the tests and deploys with the project's `npm run deploy`, which cuts, tags and pushes the release itself.
 ---
 
 # ship
@@ -10,8 +10,8 @@ desktop; the work was written elsewhere (phone, web, a cloud session) and lives
 on GitHub. Git is the handoff — nothing else transfers.
 
 **Global skill — works the same way across every project.** What differs per
-project (test commands, deploy command, stamp file(s), hosting target names,
-known pre-existing failures) is never hardcoded here: read it fresh from that
+project (test commands, hosting target names, known pre-existing failures) is
+never hardcoded here: read it fresh from that
 project's own CLAUDE.md / package.json / deploy script every run, per
 `~/.claude/rules/read-before-writing.md`. Don't assume one project's layout
 carries over to the next — check.
@@ -34,14 +34,21 @@ about to ship.
 If it reports 0 undeployed commits, all functions current, rules current and no
 unmerged branches: say "production is current", stop. Nothing to do.
 
-The deploy stamp only moves on a HOSTING deploy, so "0 undeployed commits" says
-nothing about functions or rules. Never report production current from that
-line alone — a project can look current on the stamp while Cloud Functions
-still run old code.
+"Deployed" is a git question: every hosting release is a commit `chore: release N`
+tagged `release-N`, so the highest `release-N` tag on origin is the last deploy and
+`git log release-N..origin/main` lists what is undeployed. `status.sh` reads those
+tags, cross-checks them against the release file `<siteRoot>/version.json`
+(`{ revision, date, commit }`, served at `/version.json`) and prints what each site
+serves now. A file and a tag that disagree are flagged: the next deploy will refuse
+until they are reconciled.
 
-`status.sh` auto-detects the deploy-stamp file from a short candidate list. If
-it reports it can't find one, check this project's deploy script for the file
-it actually writes and re-run with `--stamp-file <path>`.
+The tags only move on a HOSTING deploy, so "0 undeployed commits" says nothing about
+functions or rules. Never report production current from that line alone — a project
+can look current on its tags while Cloud Functions still run old code.
+
+If `status.sh` finds no `release-N` tag, the project has not adopted the shared
+deploy standard (`standard/deploy` in claude-config, run as `npm run deploy`);
+say so and stop rather than guessing from some other file.
 
 ## 2. Merge anything still on a branch
 
@@ -90,18 +97,19 @@ Any other failing test stops the deploy — report it and stop.
 
 ## 4. Deploy
 
-Use **this project's own canonical deploy command** — check its CLAUDE.md /
-package.json first; never assume a name or run the underlying deploy tool
-(e.g. `firebase deploy`) directly if the project wraps it. A wrapper script
-commonly exists to stamp a version file, refuse a dirty tree, or trigger an
-in-app update notice — bypassing it loses whatever it does.
+Every Firebase project deploys with the shared command, `npm run deploy -- --only
+<targets>` (`.claude/standard/deploy/`, configured by the project's
+`deploy.config.mjs`). Never run `firebase deploy` directly: the project's
+`firebase.json` predeploy guard refuses it, and it would skip the count, the
+commit, the tag and the live check. The command ships `origin/main` from a
+throwaway worktree, so nothing unpushed or uncommitted in this checkout ships; it
+prints what is NOT shipping before it starts.
 
-If the deploy targets a hosting provider that supports multiple named
-targets (e.g. Firebase Hosting with more than one entry in `firebase.json`), a
-bare "deploy hosting" call can deploy **every** target declared, not just the
-one intended — check for more than one target before assuming a hosting
-deploy only touched the site you meant, and name the target explicitly when
-the project has more than one.
+`--only` is mandatory and names targets: `hosting:<name>` (or bare `hosting` in a
+one-site project), `functions:<name>`, `firestore:rules`, `firestore:indexes`,
+`storage`. A run releases at most one hosting target; named functions, rules,
+indexes and storage can share its list. Read the accepted names from the usage the
+command prints when it refuses a list, or from the project's CLAUDE.md.
 
 Functions and rules deploy separately and scoped: a single named function
 (never a bare functions deploy that redeploys everything), rules-only when
@@ -112,26 +120,23 @@ them.
 If it fails on auth, the desktop is not logged in — log in with this
 project's provider CLI (e.g. `firebase login`).
 
-## 5. The release commit
+## 5. The release commit and tag
 
-A counted-release deploy script (TMV-Members, TMV Training, TMV-Payroll, Rentals:
-`npm run deploy` / `./deploy.sh`) cuts the release itself: it writes the version
-file, commits it as `chore: release N`, pushes it and fast-forwards your checkout.
-Then there is nothing to commit; if the script says your checkout is not at the
-release commit, `git pull`.
+`npm run deploy` cuts the release itself: it writes `<siteRoot>/version.json`,
+stamps the project's declared copies, commits them alone as `chore: release N`,
+tags the commit `release-N`, pushes branch and tag together and fast-forwards
+your checkout. There is nothing to commit here, ever. If it says your checkout is
+not at the release commit, `git pull`.
 
-Only a project whose deploy script writes a stamp without committing it needs a
-commit here. Commit exactly the file(s) it wrote, or the next deploy trips the
-dirty-tree guard:
-
-```bash
-git add <the stamp file(s) the deploy script wrote>
-git commit -m "chore: release <N>"
-git push
-```
-
-A functions- or rules-only deploy is not a release and writes no stamp. The last
-release commit is what lets the *next* run of this skill tell what is deployed.
+A failure after the push (an upload, or a hook that runs before it) leaves the
+release commit and tag standing: the message says so and gives `npm run
+deploy-check -- <target> N`, which tells whether release N went live; if not, the
+next run cuts the next revision. A failed live check exits 2 with the console
+rollback and the command to re-check the previous revision (`npm run deploy-check
+-- <target> N-1`); if the CDN was only slow, re-check N itself instead of rolling
+back. A functions- or rules-only deploy is not a release: no count, no commit,
+no tag. The highest `release-N` tag is what lets the *next* run of this skill tell
+what is deployed.
 
 ## 6. Report
 
@@ -150,8 +155,8 @@ Four lines max:
   change (e.g. a GitHub Actions job on push to `main` with a deploy token in
   repo secrets) — a change to the project's deploy security posture. Propose,
   do not build it unasked.
-- Per-project specifics (test commands, deploy command, stamp file(s),
-  hosting target names, any currently-known pre-existing test failures) live
-  in that project's own CLAUDE.md/docs. This skill reads them fresh each run
+- Per-project specifics (test commands, hosting target names, any
+  currently-known pre-existing test failures) live in that project's own
+  CLAUDE.md/docs. This skill reads them fresh each run
   instead of caching them here, so it stays correct as those projects change
   and works unmodified on a project it has never run against before.

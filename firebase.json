@@ -42,6 +42,9 @@
           }
         ]
       }
+    ],
+    "predeploy": [
+      "node .claude/standard/deploy/predeploy-guard.mjs"
     ]
   },
   "firestore": {
