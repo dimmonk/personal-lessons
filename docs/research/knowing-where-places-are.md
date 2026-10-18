@@ -85,6 +85,19 @@ Marchon & Hanley, 1984, *Environment and Behavior* 16, 139–157). *Read: abstra
 is out of this subject: the phone's own map turns itself and finds the reader. What the phone cannot do is tell the reader
 what a named place is near, and that is what this subject teaches. **Supports.**
 
+## How geographers describe where a place is
+
+**G8. Geography teaches location as relative location: a place described by the region it is in and what surrounds it.**
+The *Guidelines for Geographic Education* (Joint Committee on Geographic Education of the National Council for Geographic
+Education and the Association of American Geographers, 1984) set out the five themes US geography teaching has used since:
+location, place, human-environment interaction, movement and region. Location is taught two ways, absolute (a grid
+reference, latitude and longitude) and relative (a place's position in relation to other places: the region it belongs to,
+its neighbours, the water and land around it), and relative location is the one used to reason about a place
+(*Geography for Life: National Geography Standards*, 1994; 2nd ed. 2012, standards 1 and 3). *Read: summary: the themes and
+the two kinds of location as the standards and their teaching guides state them; the 1984 booklet itself not read.*
+**Design:** the subject's way of thinking is relative location, in the order G4's hierarchy gives it: the region a place is
+in first, then what touches it (its neighbours), then its water; feedback gives the same three. **Supports** (with G4).
+
 ## Distances
 
 **G7. No study was found on learning how far apart places are.** The design's bet is the one the rest of the app rests
