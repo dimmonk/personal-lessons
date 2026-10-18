@@ -104,6 +104,18 @@ Mottola & Perez-Arce, 2022, *J. Economic Behavior & Organization*); investment f
 financially literate on text alone. *Read: full: full text (the working-paper version), as `learning-science.md` states.*
 **Design:** earned, unearned and too-thin items appear together in every lesson. **Supports.**
 
+**L12. Political scientists place an ideology by its answers to a few core questions, not by its name or methods.**
+Freeden's morphological approach treats each ideology as a particular arrangement of core concepts (liberty, equality,
+the state, the community, property) and tells ideologies apart by which concepts sit at the core and how each is read
+(Freeden, *Ideologies and Political Theory: A Conceptual Approach*, Oxford, 1996). The standard textbook does the same:
+each ideology is set out by its view of human nature, of society and its basic unit (class, nation, race, individual),
+of the economy and property, and of the state, and socialism is defined by social ownership of the means of production
+as against the welfare state (Heywood, *Political Ideologies: An Introduction*, 7th ed., 2021, chapters 1 to 4); fascism by
+its core myth, not its methods (L7). *Read: summary: the approach and the textbook's chapter structure and definitions, not
+the full books.* **Design:** the owner's five questions (who owns, the unit, the engine, the attitude to democracy, the end
+state) are this way of placing an ideology, as the plan uses them; the family is named from the answers, and a passage
+whose answers are not given is "too little to tell". **Supports.**
+
 ## What the evidence does not settle
 - No study was found of teaching adults to check thrown political labels. Every design choice here is an inference
   from concept learning (L1), classification research (`learning-science.md`) and political-behavior findings (L2–L8).
