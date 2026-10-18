@@ -385,7 +385,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
           n += e.refCount(ref);
           return;
         }
-        for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(typeof ref === 'string' ? ref : { ...ref }), set.support, `Question ${++n}`));
+        for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(typeof ref === 'string' ? ref : { ...ref }), set.support, `Item ${++n}`));
       });
       out.push('Then a screen: you can stop here, your place is kept.', '');
     }

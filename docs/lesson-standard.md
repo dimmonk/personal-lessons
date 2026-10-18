@@ -878,7 +878,7 @@ Every other rule id below V84 is retired and never reused.
 | X33 | Ideology's pilot walked end to end at 375 px | a slip of the pilot no longer named |
 | X34 | The message forms friend, thread and note; a headed checklist | a thread's lines all drawn at the left, yours too |
 | X35 | A line to write and an item of four asks | an item with a blank line to write counted wrong |
-| X36 | Psychology's pilot walked end to end at 375 px | a slip of the pilot no longer named |
+| X36 | Psychology's lesson 1, "The five questions", walked end to end at 375 px | a slip of lesson 1 no longer named, its worked story cut or moved, its asks reversed |
 | X37 | The forms sms, email, popup, chat, call and banner | a link that can be followed |
 | X38 | `order` and the busy task | the steps of an order offered in the right order |
 | X39 | The plan and the own ways in | the plan kept under a key of its own |
@@ -961,10 +961,11 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   with 5b, each passage put to the five deciding questions in order (`ideoCase`, items-shape.js), then the family, named only on
   its signature answers (`IDEO_SIGNATURE`) or "too little to tell"; slips name the known traps (the direction check, methods for
   content, welfare for socialism, nationalism for fascism).
-- **Psychology**: lesson 1, "What did they do?" (the line that says what was done, written rewrites against a model);
-  the one account of control names the National Domestic Violence Hotline, whose numbers must be checked against the
-  published ones before the owner relies on them. Not built: the verdict list (lesson 2), the later words, `lines`, the
-  plan.
+- **Psychology**: rebuilt 2026-10-18 (plan: `docs/subjects/psychology/plan.md`): seven lessons, each story put to the deciding
+  questions in order (`psyCase`, items-shape.js: what is going on, one moment or a pattern), then the name, given only on its
+  telltale signs (`PSY_SIGNATURE`) or "too little to tell", then the response written once per name (`PSY_ACT`); slips name the
+  known traps (the situation skipped, a moment taken for a pattern, the order of act and story, one part of DARVO). The stories
+  that show fear or control name the National Domestic Violence Hotline (US).
 - **Scams**: lesson 0, the baseline (eight messages on 20 seconds, one call, one order), and lesson 3, act, check or
   leave (three pairs, then eight timed). Not built: lessons 1, 2, 4 to 6, the banner and busy task in a lesson, the plan
   and setup in a lesson, the four-week retest, the caller's voice.

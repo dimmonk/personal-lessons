@@ -1,7 +1,5 @@
 // The pure half of step 7 (lesson standard 3, 3.9, 3 to 9): a message laid out in its three forms, a line the learner writes against a model
-// (kept, never scored), questions of four asks that open one after the other, a checklist with a heading of its own; and what must be true of
-// Psychology's pilot as data: what each line of an account is, where the lines that say what was done are, both ways of saying it again, the
-// next step when nothing was done, the safety wording only where a pattern of control appears and nothing that diagnoses. No browser: the
+// (kept, never scored), questions of four asks that open one after the other, a checklist with a heading of its own. No browser: the
 // app's scripts are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/account-pure.mjs
 import { loadApp } from './load-app.mjs';
@@ -15,7 +13,7 @@ const app = await loadApp({ fixture: true });
 const { FC, scoreItem, openAsks, itemAnswered, itemHtml, feedbackHtml, blockHtml, messageHtml, writeHtml, writeMarkHtml, panelHtml, hasHtml, panelHint, hasLines,
   MESSAGE_FORMS, TEXT_MAX, writtenWords, textReady, askIsScored, SAY, tapSegments, tapRightIds, segmentsOf, flowSets, flatRefs, refId, itemRuleIds, checkResult,
   askedAsks, chooseOptions, ASK_KINDS, BLOCK_KINDS } = app;
-const account = FC.get('account'), psychology = FC.get('psychology'), labels = FC.get('labels');
+const account = FC.get('account'), labels = FC.get('labels');
 
 /* ---------- the forms of a message: one list, in the engine and in the validator's shape ---------- */
 same(MESSAGE_FORMS, SHAPE_FORMS, 'the forms of a message are the same in the engine and in the validator\'s shape');
@@ -116,92 +114,6 @@ check(BLOCK_KINDS.includes('message') && ASK_KINDS.includes('text'), 'the engine
   const has = hasHtml(account, g1);
   check(has.includes(`>${act.heading}<`) && !has.includes('What “What they did” needs') && has.includes('class="found"'), 'the needs found or missing are listed under the heading');
   same([panelHint(account, g1), panelHint(labels, labels.items['g-1'])], [SAY.helpPanelNamed(act.heading), SAY.helpPanel], 'the line over the questions names the checklist, or says the label as before');
-}
-
-/* ---------- Psychology's pilot as data ---------- */
-{
-  const meta = psychology.meta, lesson = psychology.lessons.l1, items = psychology.items;
-  const ids = refs => flatRefs(refs).map(refId);
-  const groups = flowSets(lesson).map(s => ids(s.items)), checkIds = ids(lesson.check.items), workedId = lesson.flow.find(s => s.worked).worked;
-  const used = new Set([...groups.flat(), ...checkIds, workedId]), reserve = Object.keys(items).filter(id => !used.has(id));
-  same(groups.map(g => g.length), [4, 8], 'the two groups are four and eight accounts');
-  same([checkIds.length, reserve.length], [6, 4], 'the check is six accounts and four are held in reserve');
-  same(lesson.flow.map(s => s.show ? 'show' : s.worked ? 'worked' : 'set'), ['show', 'worked', 'set', 'set'], 'the lesson is a teaching screen, a worked account and two groups');
-  same(flowSets(lesson).map(s => s.support || null), [{ panel: true }, null], 'the first group has the checklist beside the account and the second does not');
-  same(lesson.check.pass, [{ right: { min: 5 } }], 'the check is 5 of 6');
-  same(meta.lists.step.map(o => o.id), ['find-out', 'watch', 'limit', 'help'], 'the four next steps');
-  same(Object.keys(meta.rules), ['act'], 'one checklist: what counts as what they did');
-  same(meta.facets.account.values.map(v => v.id), ['ordinary', 'word', 'unclear', 'control'], 'the four ways an account can read, in the words of the design');
-  same(meta.facets.account.values.map(v => v.text), ['an ordinary moment', 'the word fits', 'can’t tell yet', 'a pattern of control'], 'the four judgments are worded as the design words them');
-  const every = [workedId, ...groups.flat(), ...checkIds, ...reserve];
-  const kind = id => items[id].facets.account, count = (list, k) => list.filter(id => kind(id) === k).length;
-  const form = id => items[id].blocks[0].form, forms = list => [...new Set(list.map(form))].sort();
-  const slipIds = meta.lists.slip.map(s => s.id);
-  every.forEach(id => {
-    const item = items[id], message = item.blocks[0], tap = item.asks[0], none = tap.right === 'none', act = none ? [] : tap.right;
-    check(item.blocks.length === 2 && message.kind === 'message' && item.blocks[1].kind === 'panel' && item.blocks[1].rules.join() === 'act', `${id}: a message and the one checklist`);
-    check(MESSAGE_FORMS.includes(message.form) && message.lines.length >= 4 && message.lines.length <= 6, `${id}: a message of four to six lines`);
-    check(message.form === 'thread' || !message.lines.some(l => l.me), `${id}: only a thread has lines of your own`);
-    check(tap.id === 'act' && tap.kind === 'tap' && tap.none === 'Nothing here says what they did', `${id}: the first ask is the tap, with "Nothing here says what they did" always offered`);
-    check(item.asks.length <= 2, `${id}: lesson 1 asks at most two things of an account`);
-    check(act.length === tap.pick || (act.length === 1 && tap.pick === undefined) || none, `${id}: the tap wants as many lines as say what was done`);
-    check(act.length <= 2 && (act.length < 2 || tap.pick === 2), `${id}: one line or two say what was done`);
-    check(Object.values(item.has).every(v => none ? v === null : act.includes(v)), `${id}: what counts as what they did is found in a line that says it, or in none`);
-    check(none ? item.deciding.length >= 2 : JSON.stringify(item.deciding) === JSON.stringify(act), `${id}: the words marked after the answer`);
-    // every line that does not say what was done says what it is instead, as a slip of tapping it
-    message.lines.filter(l => !act.includes(l.id)).forEach(l => check(!!l.note && slipIds.includes(l.slip), `${id}.${l.id}: a line that is not the act says what it is and names the slip of tapping it`));
-    message.lines.filter(l => act.includes(l.id)).forEach(l => check(!l.note && !l.slip, `${id}.${l.id}: a line that says what was done has no note and no slip`));
-    // the reason quotes the line that says what was done
-    const reason = [].concat(item.reason).join(' ');
-    if (none) check(/^None of these lines says something/.test(reason) && !!item.need && item.asks[1].id === 'next' && item.asks[1].right === 'find-out', `${id}: nothing was done: the reason says so, says what would be needed, and the next step is to find out`);
-    else act.forEach(a => check(reason.includes(message.lines.find(l => l.id === a).text.replace(/\.$/, '')), `${id}: the reason quotes the line that says what was done (${a})`));
-    // a thread's act lines are the other person's; the learner's own lines are never the act
-    if (message.form === 'thread') check(act.every(a => !message.lines.find(l => l.id === a).me), `${id}: in a thread the lines that say what was done are the other person's`);
-    // never a diagnosis, never a party's name: the words the app writes (not the quoted ones) hold neither
-    const written = [reason, [].concat(item.need || ''), ...(item.steps || []).map(s => s.working), ...message.lines.map(l => l.note || ''), ...item.asks.slice(1).flatMap(a => [a.prompt, a.model || '', ...(a.options || []).flatMap(o => [o.text, o.then || '']), ...Object.values(a.then || {})])].flat().join(' ');
-    check(!/narcissis|gaslight|sociopath|psychopath|abuser|abusive|disorder|diagnos|bipolar|borderline/i.test(written), `${id}: nothing the app writes diagnoses anyone`);
-    check(!/Hotline|1-800|88788/.test(written) === (kind(id) !== 'control'), `${id}: the helpline is named in an account of control and nowhere else`);
-  });
-  // the unclear accounts with nothing done: two in the practice, one in the check, one in reserve
-  const nothing = every.filter(id => items[id].asks[0].right === 'none');
-  same(nothing.sort(), ['a-toxic', 'k-fake', 'r-cold'], 'the accounts that say nothing the person did');
-  nothing.forEach(id => same(items[id].asks[1].then && Object.keys(items[id].asks[1].then).sort(), ['help', 'limit', 'watch'], `${id}: each next step that is not the right one has its own line`));
-  // saying it again: pick it in the first group, write it in the second, once in the worked account
-  const says = id => (items[id].asks[1] || {}).id === 'say' ? items[id].asks[1].kind : null;
-  same(groups.map(g => g.filter(says).map(says)), [['choose', 'choose'], ['text', 'text']], 'two to pick in the first group, two to write in the second');
-  same(says(workedId), 'choose', 'the worked account picks the fair line');
-  every.filter(id => says(id) === 'choose').forEach(id => {
-    const options = items[id].asks[1].options;
-    check(options.length === 4 && options.filter(o => o.ok).length === 1, `${id}: four ways to say it, one of them fair`);
-    same(options.filter(o => !o.ok).map(o => o.slip).sort(), ['kept-label', 'softened', 'swapped-guess'], `${id}: the three that are not fair are named as the slips they are`);
-  });
-  const place = ['a-karaoke', 'a-cancel'].map(id => items[id].asks[1].options.findIndex(o => o.ok));
-  check(new Set(place).size > 1, 'the fair line is not always in the same place');
-  every.filter(id => says(id) === 'text').forEach(id => {
-    const ask = items[id].asks[1], act = items[id].blocks[0].lines.find(l => l.id === items[id].asks[0].right[0]).text.toLowerCase().match(/[a-z]+/g);
-    check(typeof ask.model === 'string' && ask.model.length > 10 && ask.model.toLowerCase().match(/[a-z]+/g).filter(w => w.length > 3 && act.includes(w)).length >= 3, `${id}: the model line says what the account says was done`);
-  });
-  // the mix: about half ordinary in every group and the check, a pattern of control once in the practice and not in the check, the words fit twice in the second group and in the check
-  [groups[0], groups[1], checkIds].forEach((list, k) => same(count(list, 'ordinary') / list.length, 0.5, `group ${k + 1}: half the accounts are ordinary moments`));
-  same(['ordinary', 'word', 'unclear', 'control'].map(k => count(groups[1], k)), [4, 2, 1, 1], 'the second group: four ordinary, two where the word fits, one that cannot be told, one pattern of control');
-  same(['ordinary', 'word', 'unclear', 'control'].map(k => count(checkIds, k)), [3, 2, 1, 0], 'the check: three ordinary, two where the word fits, one that cannot be told');
-  same(['ordinary', 'word', 'unclear', 'control'].map(k => count(groups[0], k)), [2, 0, 2, 0], 'the first group: two ordinary and two that cannot be told');
-  check(reserve.every(id => kind(id) !== 'control') && count(reserve, 'ordinary') === 2, 'the reserve holds no pattern of control, so a review never asks one cold');
-  [groups[0], groups[1], checkIds, reserve].forEach((list, k) => check(forms(list).length >= (k === 0 ? 2 : 3), `group ${k + 1}: accounts in more than one form`));
-  same(forms(checkIds), ['friend', 'note', 'thread'], 'the check has every form');
-  same(every.filter(id => kind(id) === 'control'), ['b-phone'], 'one pattern of control in the whole lesson');
-  // what is said about control is calm, accurate and names where to turn
-  const control = [].concat(items['b-phone'].reason).join(' ');
-  check(/safety matter/.test(control) && control.includes('National Domestic Violence Hotline') && control.includes('1-800-799-7233') && control.includes('text START to 88788') && /A friend can call too/.test(control) && /phone or computer they cannot see/.test(control), 'the control account names the hotline, its number and text line, says a friend can call, and warns about a phone that is watched');
-  check(!/abus|danger|victim|manipulat/i.test(control), 'the control account does not name or diagnose anyone');
-  check(items['b-phone'].asks[0].pick === 2, 'the control account asks for the two acts');
-  // no person is named twice, and no two accounts have the same words
-  const who = every.map(id => items[id].asks[0].prompt);
-  same(who.length, new Set(who).size, 'no two accounts ask about the same person');
-  check(new Set(every.map(id => items[id].blocks[0].lines.map(l => l.text).join())).size === every.length, 'no two accounts have the same words');
-  // the worked account
-  const w = items[workedId];
-  check(w.steps.length === 3 && w.steps.every(s => !s.ask || w.asks.some(a => a.id === s.ask)) && w.steps.filter(s => s.ask).length === 2, 'the worked account works through three steps, two of them tied to an ask');
 }
 
 if (failures.length) {

@@ -1,8 +1,10 @@
 // The pure half of step 6 (lesson standard 3, 3.9, 3 to 9): a label pinned on a post laid out, the panel and who sees it, each need found or
-// missing, the sides kept once and shown side by side, a pass rule counted by side; and what must be true of Ideology's five questions as data:
-// every passage asked in order with a slip on each wrong answer, the direction trap and too little to tell named, each lesson's teaching first, its one worked item, a new check and a strand with items held for the review. No browser: the app's
+// missing, the sides kept once and shown side by side, a pass rule counted by side; and what must be true of the deciding questions as data, in Ideology
+// and Psychology: every story asked in order with a slip on each wrong answer, each subject's named traps and too little to tell, each lesson's teaching
+// first, its one worked item, a new check and a strand with items held for the review. No browser: the app's
 // scripts are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/labels-pure.mjs
+import vm from 'node:vm';
 import { loadApp } from './load-app.mjs';
 import { LABEL_SIDES as SHAPE_SIDES } from './lessons/shapes.mjs';
 
@@ -90,56 +92,87 @@ same(LABEL_SIDES, SHAPE_SIDES, 'the sides a label is thrown from are the same in
   check(ruleMet({ where: { side: 'right' }, right: { min: 2 } }, run) === false && ruleMet({ where: { side: 'left' }, right: { min: 2 } }, run) === true, 'a side\'s rule counts only that side');
 }
 
-/* ---------- Ideology's five questions as data: every lesson that exists ---------- */
-{
-  const meta = ideology.meta, ids = refs => flatRefs(refs).map(refId), ASK_ORDER = ['own', 'unit', 'story', 'democracy', 'end', 'family', 'marker'];
-  const lessons = Object.values(ideology.lessons).filter(l => l.flow && l.flow.length);   // a stub that defines nothing is skipped
+/* ---------- the deciding questions as data, in every subject built on them (Ideology, Psychology): every lesson that exists ---------- */
+// a subject whose stories are put to its deciding questions in a fixed order, then named: every ask a choose ask drawn from the list of its own name,
+// in that order, with a slip on every wrong option; `traps` holds the subject's own named traps; each lesson's teaching first, its one worked item
+// worked ask by ask, a check of new stories, items only from its strand or earlier ones, and at least three held back for the review.
+function decidingQuestions(subjectId, ASK_ORDER, traps) {
+  const data = FC.get(subjectId), meta = data.meta, ids = refs => flatRefs(refs).map(refId);
+  const lessons = Object.values(data.lessons).filter(l => l.flow && l.flow.length);   // a stub that defines nothing is skipped
   const strandOf = lesson => meta.strands[meta.parts.findIndex(p => p.id === lesson.part)].id;
   const workedOf = lesson => lesson.flow.filter(s => s.worked).map(s => s.worked);
   const taught = new Set(lessons.flatMap(l => [...flowSets(l).flatMap(s => ids(s.items)), ...ids(l.check.items), ...workedOf(l)]));
-  check(lessons.some(l => l.id === 'l1'), 'Ideology has its first lesson');
+  check(lessons.some(l => l.id === 'l1'), `${subjectId} has its first lesson`);
   const slipIds = meta.lists.slip.map(o => o.id);
-  Object.entries(ideology.items).forEach(([id, item]) => {
+  Object.entries(data.items).forEach(([id, item]) => {
     const asks = item.asks, at = asks.map(a => ASK_ORDER.indexOf(a.id));
-    check(asks.length >= 1 && asks.every(a => a.kind === 'choose'), `${id}: every ask is a choose ask`);
-    check(at.every((n, k) => n >= 0 && (k === 0 || n > at[k - 1])), `${id}: the asks come in the order ${ASK_ORDER.join(', ')} (${asks.map(a => a.id)})`);
+    check(asks.length >= 1 && asks.every(a => a.kind === 'choose'), `${subjectId}/${id}: every ask is a choose ask`);
+    check(at.every((n, k) => n >= 0 && (k === 0 || n > at[k - 1])), `${subjectId}/${id}: the asks come in the order ${ASK_ORDER.join(', ')} (${asks.map(a => a.id)})`);
     asks.forEach(ask => {
       const list = (meta.lists[ask.from] || []).map(o => o.id), slips = ask.slips;
-      // an ask may offer only part of its list (`only`), as lesson 3 offers the families it teaches; the slips and the traps are those of what is offered
+      // an ask may offer only part of its list (`only`), as a lesson offers the names it teaches; the slips and the traps are those of what is offered
       const offered = ask.only ? list.filter(o => ask.only.includes(o)) : list, wrong = offered.filter(o => o !== ask.right);
-      check(ask.from === ask.id && list.length > 0, `${id}/${ask.id}: the ask is drawn from the list of its own name (${ask.from})`);
-      check(!ask.only || ask.only.every(o => list.includes(o)), `${id}/${ask.id}: everything it offers is an option of the list`);
-      check(offered.includes(ask.right), `${id}/${ask.id}: the right answer "${ask.right}" is an option of the list, and offered`);
-      same(Object.keys(slips).sort(), [...wrong].sort(), `${id}/${ask.id}: a slip on every wrong option and no other`);
-      check(Object.values(slips).every(s => slipIds.includes(s)), `${id}/${ask.id}: every slip is one the subject names`);
-      // the direction trap: the same noun, opposite families
-      if (ask.id === 'unit' && ['race-rank', 'identity-equal'].includes(ask.right) && wrong.length) same(slips[ask.right === 'race-rank' ? 'identity-equal' : 'race-rank'], 'skipped-direction', `${id}: the other direction of race is the slip skipped-direction`);
-      if (ask.id === 'family' && ask.right === 'idegal') ['nazism', 'fascism'].filter(w => wrong.includes(w)).forEach(w => same(slips[w], 'skipped-direction', `${id}: ${w} for identity-egalitarianism is skipped-direction`));
-      if (ask.id === 'family' && ['nazism', 'fascism'].includes(ask.right) && wrong.includes('idegal')) same(slips.idegal, 'skipped-direction', `${id}: identity-egalitarianism for ${ask.right} is skipped-direction`);
-      // too little to tell, both ways
-      if (ask.id === 'family' && ask.right === 'too-little') check(wrong.every(w => slips[w] === 'overreached'), `${id}: naming a family when the words say too little is overreached`);
-      if (ask.id === 'family' && ask.right !== 'too-little' && wrong.includes('too-little')) same(slips['too-little'], 'hedged', `${id}: too little to tell when the words settle it is hedged`);
+      check(ask.from === ask.id && list.length > 0, `${subjectId}/${id}/${ask.id}: the ask is drawn from the list of its own name (${ask.from})`);
+      check(!ask.only || ask.only.every(o => list.includes(o)), `${subjectId}/${id}/${ask.id}: everything it offers is an option of the list`);
+      check(offered.includes(ask.right), `${subjectId}/${id}/${ask.id}: the right answer "${ask.right}" is an option of the list, and offered`);
+      same(Object.keys(slips).sort(), [...wrong].sort(), `${subjectId}/${id}/${ask.id}: a slip on every wrong option and no other`);
+      check(Object.values(slips).every(s => slipIds.includes(s)), `${subjectId}/${id}/${ask.id}: every slip is one the subject names`);
+      traps(id, ask, wrong, slips, item);
     });
-    check(!!item.reason && meta.facets.question.values.some(v => v.id === item.facets.question) && asks.some(a => a.id === item.facets.question), `${id}: the question it turns on is one of its asks`);
+    check(!!item.reason && meta.facets.question.values.some(v => v.id === item.facets.question) && asks.some(a => a.id === item.facets.question), `${subjectId}/${id}: the question it turns on is one of its asks`);
   });
   lessons.forEach(lesson => {
-    const lid = lesson.id, strand = strandOf(lesson), setIds = flowSets(lesson).flatMap(s => ids(s.items)), checkIds = ids(lesson.check.items), worked = workedOf(lesson);
+    const lid = `${subjectId}/${lesson.id}`, strand = strandOf(lesson), setIds = flowSets(lesson).flatMap(s => ids(s.items)), checkIds = ids(lesson.check.items), worked = workedOf(lesson);
     // the way of thinking before any worked item or set
     const firstDoing = lesson.flow.findIndex(s => s.worked || s.set);
     check(firstDoing >= 1 && lesson.flow.slice(0, firstDoing).every(s => s.show && s.show.length), `${lid}: the first steps are teaching screens, before any worked item or set`);
     // one worked item, worked question by question
     same(worked.length, 1, `${lid}: one worked item`);
-    const w = ideology.items[worked[0]];
+    const w = data.items[worked[0]];
     check(!!w && Array.isArray(w.steps) && w.steps.length >= 1, `${lid}: the worked item has steps`);
     if (w && w.steps) same(w.steps.filter(s => s.ask).map(s => s.ask), w.asks.map(a => a.id), `${lid}: the steps of the worked item name its asks, one each, in order`);
-    // the check is made of new passages
+    // the check is made of new stories
     const own = new Set([...setIds, ...worked]);
     check(checkIds.length >= 1 && checkIds.every(id => !own.has(id)), `${lid}: no item of the check is in the lesson's own sets or worked item`);
     const strandAt = id => meta.strands.findIndex(s => s.id === id), here = strandAt(strand);   // from lesson 2 on, a set mixes in earlier material
-    check([...setIds, ...checkIds, ...worked].every(id => ideology.items[id] && strandAt(ideology.items[id].strand) >= 0 && strandAt(ideology.items[id].strand) <= here), `${lid}: every item the lesson uses is in its strand (${strand}) or an earlier one`);
+    check([...setIds, ...checkIds, ...worked].every(id => data.items[id] && strandAt(data.items[id].strand) >= 0 && strandAt(data.items[id].strand) <= here), `${lid}: every item the lesson uses is in its strand (${strand}) or an earlier one`);
     // held back for the review
-    const spare = Object.values(ideology.items).filter(item => item.strand === strand && !taught.has(item.id));
+    const spare = Object.values(data.items).filter(item => item.strand === strand && !taught.has(item.id));
     check(spare.length >= 3, `${lid}: the strand ${strand} holds at least 3 items no lesson uses, for the review (${spare.length})`);
+  });
+}
+
+// too little to tell, both ways: naming when the words say too little is overreached; too little when they settle it is hedged
+const tooLittle = (id, ask, wrong, slips, named) => {
+  if (ask.id !== named) return;
+  if (ask.right === 'too-little') check(wrong.every(w => slips[w] === 'overreached'), `${id}: naming when the words say too little is overreached`);
+  if (ask.right !== 'too-little' && wrong.includes('too-little')) same(slips['too-little'], 'hedged', `${id}: too little to tell when the words settle it is hedged`);
+};
+
+decidingQuestions('ideology', ['own', 'unit', 'story', 'democracy', 'end', 'family', 'marker'], (id, ask, wrong, slips) => {
+  // the direction trap: the same noun, opposite families
+  if (ask.id === 'unit' && ['race-rank', 'identity-equal'].includes(ask.right) && wrong.length) same(slips[ask.right === 'race-rank' ? 'identity-equal' : 'race-rank'], 'skipped-direction', `${id}: the other direction of race is the slip skipped-direction`);
+  if (ask.id === 'family' && ask.right === 'idegal') ['nazism', 'fascism'].filter(w => wrong.includes(w)).forEach(w => same(slips[w], 'skipped-direction', `${id}: ${w} for identity-egalitarianism is skipped-direction`));
+  if (ask.id === 'family' && ['nazism', 'fascism'].includes(ask.right) && wrong.includes('idegal')) same(slips.idegal, 'skipped-direction', `${id}: identity-egalitarianism for ${ask.right} is skipped-direction`);
+  tooLittle(id, ask, wrong, slips, 'family');
+});
+
+{
+  // Psychology's response to each name is written once (PSY_ACT, items-shape.js): an item that asks both keys the act to its name, or to outside help
+  const PSY_ACT = vm.runInContext('PSY_ACT', app.context);
+  decidingQuestions('psychology', ['kind', 'span', 'name', 'resolve', 'act'], (id, ask, wrong, slips, item) => {
+    // the situation checked before the character: years for a reaction to something hard is skipped-situation; years for once is a moment taken for a pattern
+    if (ask.id === 'span' && ask.right === 'situation' && wrong.includes('years')) same(slips.years, 'skipped-situation', `${id}: years for a reaction to something hard is skipped-situation`);
+    if (ask.id === 'span' && ask.right === 'once' && wrong.includes('years')) same(slips.years, 'moment-as-pattern', `${id}: years for once is moment-as-pattern`);
+    // the look-alikes the course separates by one detail
+    const pairTrap = (a, b, slip) => { if (ask.id === 'name' && [a, b].includes(ask.right)) { const other = ask.right === a ? b : a; if (wrong.includes(other)) same(slips[other], slip, `${id}: ${other} for ${ask.right} is ${slip}`); } };
+    pairTrap('dissonance', 'motivated', 'timing');
+    pairTrap('darvo', 'deflect', 'part-for-whole');
+    tooLittle(id, ask, wrong, slips, 'name');
+    if (ask.id === 'act') {
+      const name = (item.asks.find(a => a.id === 'name') || {}).right;
+      if (name) check([].concat(PSY_ACT[name]).includes(ask.right) || ask.right === 'help', `${id}: the response "${ask.right}" is one written for ${name} (${PSY_ACT[name]}), or outside help`);
+    }
   });
 }
 

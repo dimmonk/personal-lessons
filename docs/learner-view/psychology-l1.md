@@ -1,554 +1,493 @@
-# Psychology: What did they do?
+# Psychology: The five questions
 
-Revision 1, draft (the screen carries the draft line). Part: What they did. Where the subject ends up: When someone reaches for a word like "narcissist", "gaslighting" or "manipulative", check it against what the person actually did: say what they did, whether it shows one bad moment or a pattern, and what to do next.
+Revision 2, draft (the screen carries the draft line). Part: The five questions. Where the subject ends up: After this subject you can hear a story about someone, or catch one in your own head, and say what is going on, whether it is one moment or a lasting pattern, the name that fits or that there is too little to tell, and what to do about it, when someone reaches for "narcissist", "gaslighting" or "toxic".
 
 ## The why
 
-A friend says her boss is “toxic”. You have a word and one side of the story. First, find out what the person did.
-You read short accounts, tap the line that says what someone did, and see what the other lines are.
+A friend says her ex is "a narcissist". A coworker calls a disagreement "gaslighting". How unpleasant it sounds will not tell you if they are right. Five questions will.
+In about twenty minutes you will learn the five and use the first two on real stories. In the check, a story counts as right only when both answers are right.
 
-## Step 1: What they did is not what you make of it
+## Step 1: Five questions, before any name
 
-A wrong idea, marked wrong: “He’s selfish” tells you what he did.
-The right line: A word like “selfish” tells you what someone makes of it. What they did is something you could have seen or heard.
+Put these to any story, in order. The name comes last.
+1. What is going on: a mind talking itself into something, a move made on someone, a lasting way someone is, or an ordinary reaction? This decides which names to look among.
+2. One moment, or the same shape over and over? This separates a bad day from a pattern.
+3. What does it do for them: ease a clash between what they did and what they believe, keep admiration coming, keep someone from leaving, get out of blame? Things that look the same can do different jobs.
+4. What is the nearest look-alike, and what one detail separates them? Naming the detail stops you naming by feel.
+5. What would prove this read wrong? If nothing could, it is a verdict, not a read.
+Today you practice 1 and 2. Questions 3 to 5 do their work later, when two names look alike.
 
-A panel, "What counts as what they did":
-  1. It says something they did or said.
-  2. Anyone there could have seen or heard it. It has no guess about why.
+## Step 2: Question 1, what is going on
 
-These lines are not what someone did:
-A guess about why: “he wants attention”.
-A feeling: “I felt invisible”.
-A word for the person: “selfish”, “rude”, “toxic”.
-Some accounts have no line about what the person did. Then say so.
+A mind talking itself into something: reasoning toward what you want to believe. "It was on sale, so it was a good buy", about a coat she never wears. Nobody else is acted on.
+A move made on someone: something done to another person in one exchange, like denying a promise and blaming them for being disorganized.
+A lasting way someone is: the story is about how a person is with everyone, at work and at home, over years.
+An ordinary reaction or slip: a fair response, or a normal mistake. Not everything needs a name.
+A lasting way is made of many moves, so the two look alike. One exchange is a move; years of the same thing with everyone is a lasting way.
 
-## Step 2: A worked example
+| A | B |
+|---|---|
+| At Tuesday's meeting, he took credit for your idea in front of the boss. | For eight years, at three jobs, he has taken credit for whatever his team does. |
 
-A message from a friend about someone: "Maya", Text message · 9:41 PM.
+Compare: The same act. The first is one exchange, a move; the second is what he is like everywhere, for years, a lasting way.
 
-> Dev is such a selfish roommate.
-> He ate the leftovers I’d saved for lunch.
-> He doesn’t think about anyone but himself.
-> It made me so mad.
+## Step 3: Question 2, one moment or a pattern: the situation first
 
-A panel, "What counts as what they did":
-  1. It says something they did or said.
-  2. Anyone there could have seen or heard it. It has no guess about why.
+Everyone gets defensive, makes excuses and wants attention sometimes. A pattern is the same shape over and over, for months or years. One bad season can explain almost anything; a shape that keeps coming back is about the person.
+Look at the situation before the character. When we snap, it was a hard week; when they snap, it is who they are. So look first for grief, illness, a new job, no sleep. A reaction to a hard time is not a pattern.
+The four answers: a reaction to a hard time; once or twice, with no pattern (the story says it is rare); over and over, for months or years; or the story does not say (one scene, nothing about other times).
+"You always do this", said in an argument, is a claim, not a record. Count only what the story shows.
+
+| A | B |
+|---|---|
+| The week his father died, he snapped at a waiter over a cold coffee. | For twenty years he has snapped at waiters, cashiers and assistants, in every city he has lived in. |
+
+Compare: The same act. The first is a reaction to a hard time; the second comes back over and over, for years.
+
+| A | B |
+|---|---|
+| Your sister forgot to call you back. She always calls back within the hour. | Your new neighbor did not wave back this morning. |
+
+Compare: The first says it is rare: once or twice, with no pattern. The second is one scene with nothing about other times: the story does not say.
+
+## Step 4: The one rule for giving a name
+
+Later you give a name, but only when the story shows that name's telltale signs together, written out as each name is taught. A lasting way someone is also needs years and many people: one person or one bad season can explain almost anything. Otherwise the answer is "too little to tell": a right answer, not a dodge.
+Two answers that sound alike. "Ordinary": the facts in the story show a normal reason for it (stress, a fair point, a slip that was put right). "Too little to tell": the facts are too few to see what is going on at all, so you find out more before naming anything.
+
+| A | B |
+|---|---|
+| At a party, a man you just met talked about himself for twenty minutes. | For twenty years, with everyone, he has turned every talk to himself and gone cold on anyone who outshines him. |
+
+Compare: The first is too little to tell: one evening, one sign. The second shows signs together, for years, with everyone: now a name can be tested, once you know the names.
+
+How much you dislike someone never counts. "Toxic", "narc" and "sociopath" are insults, not names. Names here are guesses to test, never a diagnosis of anyone, yourself included.
+
+## Step 5: A worked example
+
+Ten years, every job, every friendship: he is the misunderstood genius, and everyone else eventually turns out to be an idiot or an enemy.
+
+Before the working, the learner may commit to a choice (not scored, not stored):
+**Question 1. What is going on here?**
+- A mind talking itself into something
+- A move made on someone
+- A lasting way someone is
+- An ordinary reaction or slip: none of these
 
 The working, one step at a time:
-1. Find the line you could have seen or heard. “He ate the leftovers I’d saved for lunch.” Anyone there could have seen it.
-1. Name what the other lines are. “Selfish” is a word. “He doesn’t think about anyone” is a guess. “It made me so mad” is a feeling. None is something he did.
-1. Say it without the word. Dev ate the leftovers Maya had saved for lunch. Now you can judge whether that is selfish.
+1. Question 1. Find what is going on. Not one argument and not one move on one person: "every job, every friendship". It is how he is with everyone. Question 1: a lasting way someone is.
+1. Question 2. One moment, or the same shape over and over? "Ten years", and with many people at work and outside it. No hard time is named that would explain it. Question 2: over and over, for months or years.
 
-Then the answer: He ate the leftovers I’d saved for lunch. / Dev ate the leftovers Maya had saved for lunch. Only “He ate the leftovers I’d saved for lunch” is something Dev did. The rest is a word, a guess and a feeling.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “He ate the leftovers I’d saved for lunch.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “He ate the leftovers I’d saved for lunch.”
+Then the answer: A lasting way someone is / Over and over, for months or years. "Every job, every friendship" makes it a way he is with everyone (Question 1), and "ten years" with many people makes it a pattern (Question 2). Which pattern needs more signs, in later lessons; it would change if this started after one loss.
 
-## Step 3: Questions
+## Step 6: Questions
 
-4 questions, listed, with help (the checklist of what counts, shown beside the words). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+8 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1
+#### Item 1
 
-A message from a friend about someone: "Priya", Text message · Tuesday, 7:12 PM.
+“I know I said I'd never date someone who does that again, but he's different.” Said while listing three of the exact habits she swore off.
 
-> Marcus is so rude to me.
-> At karaoke he looked at his phone while I was singing.
-> He clearly thinks my singing is boring.
-> I felt invisible.
-> We’ve been friends for six years.
+**Question 1. What is going on here?**
+- A mind talking itself into something (right)
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-A panel, "What counts as what they did":
-  1. It says something they did or said.
-  2. Anyone there could have seen or heard it. It has no guess about why.
+After the answer: Reason: She is talking herself past her own rule; no one else is acted on. Question 1: a mind talking itself into something.
 
-Help on screen: What counts as what they did is shown beside the words.
+#### Item 2
 
-**Tap the line that says what Marcus did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Marcus is so rude to me." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "At karaoke he looked at his phone while I was singing." (right)
-- "He clearly thinks my singing is boring." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I felt invisible." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "We’ve been friends for six years." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+A coworker denies ever agreeing to the deadline, then says you are the one who's always disorganized. The email trail says otherwise.
 
-**Priya’s word for Marcus is “rude”. Which line says what he did instead?**
-- Marcus is a little rude. — if chosen: A softer word is still a word for the person. It does not say what they did.
-- Marcus looked at his phone because he was bored. — if chosen: That is a guess about why they did it. The account does not say why.
-- Marcus looked at his phone while Priya sang. (right)
-- Marcus has no manners with Priya. — if chosen: That still says what kind of person they are. It does not say what they did.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone (right)
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-After the answer: the deciding words are marked. Reason: “At karaoke he looked at his phone while I was singing” is the line about something Marcus did. “Rude” is a word for him, “he clearly thinks my singing is boring” is a guess about his mind, and “I felt invisible” is how Priya felt. How long they have been friends is background.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “At karaoke he looked at his phone while I was singing.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “At karaoke he looked at his phone while I was singing.”
+After the answer: Reason: Denial and blame aimed at you, in an exchange. Question 1: a move made on someone.
 
-#### Question 2
+#### Item 3
 
-A text thread you are in: "Jonas", Text thread · Friday, 6:30 PM.
+She's withdrawn and short-tempered this week. She just found out her father is sick.
 
-> (Jonas, at the left) Can’t do Saturday after all. Work called me in.
-> (you, at the right) That’s the third time you’ve flaked on me.
-> (you, at the right) You obviously don’t care about our plans.
-> (Jonas, at the left) I’m wiped.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these (right)
 
-A panel, "What counts as what they did":
-  1. It says something they did or said.
-  2. Anyone there could have seen or heard it. It has no guess about why.
+After the answer: Reason: A fair response to frightening news. Question 1: an ordinary reaction. Not everything needs a name.
 
-Help on screen: What counts as what they did is shown beside the words.
+#### Item 4
 
-**Tap the line that says what Jonas did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Can’t do Saturday after all. Work called me in." (right)
-- "That’s the third time you’ve flaked on me." — if tapped: note: That is your word for it, and a count of times. It is not what he did this time.; slip: tapped a word or a verdict about the person, not what they did
-- "You obviously don’t care about our plans." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I’m wiped." — if tapped: note: That is how he says he feels, not what he did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+“The bad reviews of my restaurant are all from people who don't understand real food.” Said about every bad review, while quoting every good one.
 
-**You called it “flaking”. Which line says what Jonas did instead?**
-- Jonas canceled Saturday because work called him in. (right)
-- Jonas canceled because he did not want to come. — if chosen: That is a guess about why they did it. The account does not say why.
-- Jonas flaked on you again. — if chosen: That still says what kind of person they are. It does not say what they did.
-- Jonas is a little flaky. — if chosen: A softer word is still a word for the person. It does not say what they did.
+**Question 1. What is going on here?**
+- A mind talking itself into something (right)
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-After the answer: the deciding words are marked. Reason: “Can’t do Saturday after all. Work called me in.” is what Jonas did: he canceled. The two lines in the middle are yours: a word for him and a guess about why. “I’m wiped” is how he says he feels.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “Can’t do Saturday after all. Work called me in.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “Can’t do Saturday after all. Work called me in.”
+After the answer: Reason: His own reasoning about the reviews; no one is acted on. Question 1: a mind talking itself into something.
 
-#### Question 3
+#### Item 5
 
-Your own note, written after an argument: "Your note", Written the night after the argument.
+“I've put four years into this degree, I can't switch majors now.” Said about a major she dislikes every class of.
 
-> Sam is so dismissive.
-> When I said I wanted to move the wedding date, he told me it was not happening and left the room.
-> He just wants everything his way.
-> I felt like nothing I say matters.
-> We’ve been together four years.
+**Question 1. What is going on here?**
+- A mind talking itself into something (right)
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-A panel, "What counts as what they did":
-  1. It says something they did or said.
-  2. Anyone there could have seen or heard it. It has no guess about why.
+After the answer: Reason: She is reasoning herself into staying; nobody else is acted on. Question 1: a mind talking itself into something.
 
-Help on screen: What counts as what they did is shown beside the words.
+#### Item 6
 
-**Tap the line that says what Sam did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Sam is so dismissive." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "When I said I wanted to move the wedding date, he told me it was not happening and left the room." (right)
-- "He just wants everything his way." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I felt like nothing I say matters." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "We’ve been together four years." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+He failed the course and told his parents the professor had it in for him, so they would stop asking about his grades.
 
-After the answer: the deciding words are marked. Reason: “When I said I wanted to move the wedding date, he told me it was not happening and left the room” is what Sam did: something he said and something he did. The other lines are a word for him, a guess about what he wants, a feeling, and background.
-What you would need to see: To say more than what he did, you would need to know whether he has done this before and why the date matters to him. A note written after an argument is one side.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “When I said I wanted to move the wedding date, he told me it was not happening and left the room.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “When I said I wanted to move the wedding date, he told me it was not happening and left the room.”
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone (right)
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-#### Question 4
+After the answer: Reason: The excuse is aimed at his parents, to make them stop asking. Question 1: a move made on someone. Compare the degree: an excuse she tells herself, with no one acted on.
 
-A message from a friend about someone: "Ines", Text message · Sunday, 8:03 AM.
+#### Item 7
 
-> My manager is toxic. I can’t stand working for her.
-> She obviously wants me to quit.
-> I dread Mondays now.
-> I’ve been at this job for two years.
+At last night's family dinner, your cousin cut off every story you told with "Nobody cares about your job," then talked about his new boat.
 
-A panel, "What counts as what they did":
-  1. It says something they did or said.
-  2. Anyone there could have seen or heard it. It has no guess about why.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone (right)
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-Help on screen: What counts as what they did is shown beside the words.
+After the answer: Reason: One dinner, one exchange aimed at you. Question 1: a move made on someone. One bad evening is never, by itself, a lasting way someone is.
 
-**Tap the line that says what Ines’s manager did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "My manager is toxic. I can’t stand working for her." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "She obviously wants me to quit." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I dread Mondays now." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "I’ve been at this job for two years." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" (right)
+#### Item 8
 
-**What is the best next step?**
-- Find out what happened (right)
-- Watch whether it repeats — if chosen: Watching helps once you know what to watch for. Nothing here says what they did.
-- Say what they did and where your limit is — if chosen: A limit needs something they did to name. Nothing here names one.
-- Get help from outside — if chosen: Outside help is for when someone is not safe. This account does not say that.
+Every holiday for twenty years, at every gathering, her cousin turns the talk to his own money and his own trips.
 
-After the answer: the deciding words are marked. Reason: None of these lines says something the manager did. “Toxic” is a word for her, “she obviously wants me to quit” is a guess about her mind, and “I dread Mondays” is how Ines feels. There is nothing yet to check the word against.
-What you would need to see: To check “toxic”, you would need a line about something she said or did, such as ‘she took my name off the schedule’.
-What counts as what they did, each need found (with its line) or missing:
-- Missing: It says something they did or said. The words do not say it.
-- Missing: Anyone there could have seen or heard it. It has no guess about why. The words do not say it.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is (right)
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
+
+After the answer: Reason: "Every holiday for twenty years", at every gathering: the story is about how he is, not one exchange. Question 1: a lasting way someone is.
 
 Then a screen: you can stop here, your place is kept.
 
-## Step 4: Questions
+## Step 7: Questions
 
-8 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+6 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 5
+#### Item 9
 
-A message from a friend about someone: "Tomás", Text message · Wednesday, 6:20 PM.
+Your normally easygoing neighbor snapped at you over the parking spot. His wife had surgery yesterday.
 
-> Rita is so inconsiderate.
-> She rang our bell at midnight and woke the baby.
-> Her flight got in three hours late.
-> She should have called first.
-> I was up until two.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness (right)
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: skipped-situation
+- The story does not say — if chosen: a slip: wrong-span
 
-**Tap the line that says what Rita did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Rita is so inconsiderate." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "She rang our bell at midnight and woke the baby." (right)
-- "Her flight got in three hours late." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- "She should have called first." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "I was up until two." — if tapped: note: That is about the one telling it, not about the person the account is about.; slip: tapped what the teller did, not what the person did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+After the answer: Reason: Something hard is going on: his wife's surgery. Question 2: a reaction to a hard time. Check the situation before the character.
 
-**Say it without the word “inconsiderate”, in your own words.**
-- Write it in your own words, then tap Answer. Or tap Not yet to see a model line. Nothing is marked: it is not scored. "Not yet" answers with nothing written. What you write stays on this phone. At most 400 characters.
-- After: "Your words" (what was written, or "You did not write one.") beside "A model line": Rita rang the bell at midnight and woke the baby. Yours will not match word for word. Compare what each one says.
+#### Item 10
 
-After the answer: the deciding words are marked. Reason: “She rang our bell at midnight and woke the baby” is what Rita did. “Inconsiderate” and “she should have called first” are Tomás’s verdict on her. Her late flight is what was going on around it, and “I was up until two” is about Tomás.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “She rang our bell at midnight and woke the baby.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “She rang our bell at midnight and woke the baby.”
+For fifteen years, at three schools, the music teacher has screamed at a student until they cried at least once a term.
 
-#### Question 6
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years (right)
+- The story does not say — if chosen: a slip: wrong-span
 
-A text thread you are in: "Dana", Text thread · Saturday, 2:15 PM.
+After the answer: Reason: Fifteen years, three schools, every term. Question 2: over and over, for months or years.
 
-> (Dana, at the left) Here’s your jacket. I spilled coffee on the sleeve, sorry.
-> (you, at the right) You are SO careless.
-> (you, at the right) You never respect my stuff.
-> (you, at the right) That jacket cost $140.
-> (Dana, at the left) I feel awful about it.
+#### Item 11
 
-**Tap the line that says what Dana did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Here’s your jacket. I spilled coffee on the sleeve, sorry." (right)
-- "You are SO careless." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "You never respect my stuff." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "That jacket cost $140." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- "I feel awful about it." — if tapped: note: That is how she says she feels, not what she did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+A friend who is always on time was an hour late to your birthday dinner, apologized, and has been on time every time since.
 
-After the answer: the deciding words are marked. Reason: “Here’s your jacket. I spilled coffee on the sleeve, sorry.” is what Dana did: she handed back the jacket and said what happened to it. “Careless” and “you never respect my stuff” are your word and your guess. “I feel awful about it” is how she says she feels.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “Here’s your jacket. I spilled coffee on the sleeve, sorry.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “Here’s your jacket. I spilled coffee on the sleeve, sorry.”
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern (right)
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say — if chosen: a slip: wrong-span
 
-#### Question 7
+After the answer: Reason: Always on time before, and every time since. Question 2: once or twice, with no pattern.
 
-Your own note, written after an argument: "Your note", Written after dinner.
+#### Item 12
 
-> Ana is always so flaky.
-> Ana walked into the restaurant thirty minutes after we sat down.
-> She obviously thinks my time isn’t worth anything.
-> I sat there feeling like an idiot.
-> Her train was stuck outside the city.
+At the open house, the real estate agent ignored your questions and talked only to your husband.
 
-**Tap the line that says what Ana did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Ana is always so flaky." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "Ana walked into the restaurant thirty minutes after we sat down." (right)
-- "She obviously thinks my time isn’t worth anything." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I sat there feeling like an idiot." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "Her train was stuck outside the city." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say (right)
 
-After the answer: the deciding words are marked. Reason: “Ana walked into the restaurant thirty minutes after we sat down” is what she did. “Always so flaky” is a word for her, and “she obviously thinks my time isn’t worth anything” is a guess about her mind. Feeling like an idiot is how you felt, and the stuck train is what was going on around it.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “Ana walked into the restaurant thirty minutes after we sat down.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “Ana walked into the restaurant thirty minutes after we sat down.”
+After the answer: Reason: One afternoon with a stranger: nothing about other times or other people. Question 2: the story does not say. Compare the friend who was late: there the story says it was rare.
 
-#### Question 8
+#### Item 13
 
-A message from a friend about someone: "Kayla", Text message · Thursday, 8:55 AM.
+The week he lost his job, he swore he had never said something hurtful that he did say. A month later he admitted he had honestly forgotten. His family says it is not like him.
 
-> The man next door is so hostile.
-> This morning I waved and he walked past without a word.
-> He’s decided he doesn’t like us.
-> I felt kind of stupid standing there.
-> We moved in last month.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness (right)
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: skipped-situation
+- The story does not say — if chosen: a slip: wrong-span
 
-**Tap the line that says what the neighbor did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "The man next door is so hostile." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "This morning I waved and he walked past without a word." (right)
-- "He’s decided he doesn’t like us." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I felt kind of stupid standing there." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "We moved in last month." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+After the answer: Reason: It came the week he lost his job, he truly misremembered, and it is "not like him". Question 2: a reaction to a hard time.
 
-**Say it without the word “hostile”, in your own words.**
-- Write it in your own words, then tap Answer. Or tap Not yet to see a model line. Nothing is marked: it is not scored. "Not yet" answers with nothing written. What you write stays on this phone. At most 400 characters.
-- After: "Your words" (what was written, or "You did not write one.") beside "A model line": The neighbor walked past Kayla without a word when she waved. Yours will not match word for word. Compare what each one says.
+#### Item 14
 
-After the answer: the deciding words are marked. Reason: “This morning I waved and he walked past without a word” is what the neighbor did. “Hostile” is a word for him and “he’s decided he doesn’t like us” is a guess about what he thinks. Feeling stupid is how Kayla felt, and the move is background.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “This morning I waved and he walked past without a word.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “This morning I waved and he walked past without a word.”
+She says something hurtful, then denies having said it. She has done this in every serious relationship for a decade, and the other person always ends up apologizing.
 
-#### Question 9
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years (right)
+- The story does not say — if chosen: a slip: wrong-span
 
-A message from a friend about someone: "Nate", Text message · Monday, 10:02 PM.
+After the answer: Reason: Every serious relationship, for a decade, with the same ending. Question 2: over and over, for months or years. The act is the same as his; Question 2 is what separates them.
 
-> Cal is such a mooch.
-> On the 3rd he borrowed $20 from me and hasn’t paid it back.
-> On the 14th he borrowed $40, and when I brought up the $20 he changed the subject.
-> He figures I’ll never push.
-> I’m sick of feeling like an ATM.
+Then a screen: you can stop here, your place is kept.
 
-**Tap the two lines that say what Cal did.**
-- Tap two sentences in the text above, then tap Answer. Nothing is marked before the answer; Answer opens when that many are tapped.
-- "Cal is such a mooch." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "On the 3rd he borrowed $20 from me and hasn’t paid it back." (right)
-- "On the 14th he borrowed $40, and when I brought up the $20 he changed the subject." (right)
-- "He figures I’ll never push." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I’m sick of feeling like an ATM." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+## Step 8: Questions
 
-After the answer: the deciding words are marked. Reason: “On the 3rd he borrowed $20 from me and hasn’t paid it back” and “On the 14th he borrowed $40, and when I brought up the $20 he changed the subject” are two things Cal did, eleven days apart. “Mooch” is a word for him. “He figures I’ll never push” is a guess and the last line is a feeling.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “On the 3rd he borrowed $20 from me and hasn’t paid it back.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “On the 14th he borrowed $40, and when I brought up the $20 he changed the subject.”
+4 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 10
+#### Item 15
 
-A text thread you are in: "Alex", Text thread · Monday to Wednesday.
+In every meeting for the six years you have worked with her, and at every team dinner, she cuts people off to tell her own story.
 
-> (you, at the right) We need to talk about the move.
-> (Alex, at the left) I’m not discussing this. Drop it.
-> (you, at the right) You always shut down when it gets hard.
-> (Alex, at the left) Stop texting me about it.
-> (you, at the right) You just want to make me feel small.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is (right)
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-**Tap the two lines that say what Alex did.**
-- Tap two sentences in the text above, then tap Answer. Nothing is marked before the answer; Answer opens when that many are tapped.
-- "We need to talk about the move." — if tapped: note: That is about the one telling it, not about the person the account is about.; slip: tapped what the teller did, not what the person did
-- "I’m not discussing this. Drop it." (right)
-- "You always shut down when it gets hard." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "Stop texting me about it." (right)
-- "You just want to make me feel small." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years (right)
+- The story does not say — if chosen: a slip: wrong-span
 
-After the answer: the deciding words are marked. Reason: “I’m not discussing this. Drop it.” and “Stop texting me about it.” are the two things Alex did: he shut the talk down on Monday and again on Wednesday. “You always shut down when it gets hard” is your word for it, and “you just want to make me feel small” is your guess about why he does it.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “I’m not discussing this. Drop it.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “Stop texting me about it.”
+After the answer: Reason: Every meeting and dinner, with everyone (Question 1: a lasting way someone is), for six years (Question 2: over and over, for months or years).
 
-#### Question 11
+#### Item 16
 
-Your own note, written after an argument: "Your note", Written on the plane home.
+At his mother's funeral, your brother was cold and short with everyone, and left early.
 
-> Chris is being so passive-aggressive about my trip.
-> When I asked about visiting my mom in March, he said we’ll see and changed the channel.
-> He wants me to feel guilty.
-> I can’t stop going over it.
-> My mom has been sick since January.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these (right)
 
-**Tap the line that says what Chris did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Chris is being so passive-aggressive about my trip." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "When I asked about visiting my mom in March, he said we’ll see and changed the channel." (right)
-- "He wants me to feel guilty." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I can’t stop going over it." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "My mom has been sick since January." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness (right)
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: skipped-situation
+- The story does not say — if chosen: a slip: wrong-span
 
-After the answer: the deciding words are marked. Reason: “When I asked about visiting my mom in March, he said we’ll see and changed the channel” is what Chris did. The rest is a word for him, a guess about what he wants, a feeling, and background.
-What you would need to see: To say more than what he did, you would need to know what “we’ll see” means to him and whether he has done this before. A note written after an argument has one side and one moment.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “When I asked about visiting my mom in March, he said we’ll see and changed the channel.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “When I asked about visiting my mom in March, he said we’ll see and changed the channel.”
+After the answer: Reason: A funeral is as hard as it gets (Question 2: a reaction to a hard time), and coldness in grief is ordinary (Question 1). Blaming his character here skips the situation.
 
-#### Question 12
+#### Item 17
 
-A message from a friend about someone: "Hannah", Text message · Friday, 11:48 PM.
+He read three studies backing his diet closely and with enthusiasm, then waved off the one against it as "funded by industry", without checking who paid for the other three.
 
-> Don’t laugh, but I think Cole is a little controlling.
-> He just likes to know where I am.
-> He checks my phone every night and reads my messages.
-> He told me not to see Alyssa anymore, so I haven’t.
-> He’s stressed about money, that’s all.
-> I’m probably overreacting.
+**Question 1. What is going on here?**
+- A mind talking itself into something (right)
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-**Tap the two lines that say what Cole did.**
-- Tap two sentences in the text above, then tap Answer. Nothing is marked before the answer; Answer opens when that many are tapped.
-- "Don’t laugh, but I think Cole is a little controlling." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "He just likes to know where I am." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "He checks my phone every night and reads my messages." (right)
-- "He told me not to see Alyssa anymore, so I haven’t." (right)
-- "He’s stressed about money, that’s all." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I’m probably overreacting." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say (right)
 
-After the answer: the deciding words are marked. Reason: “He checks my phone every night and reads my messages” and “He told me not to see Alyssa anymore, so I haven’t” are two things Cole did. The other lines are Hannah’s word for it, her guesses about why (“he just likes to know where I am”, “he’s stressed about money”) and her doubt about herself. Here you only tap what he did. One message cannot say what it adds up to. But being watched, being told who to see, and doubting yourself, all together, are a safety matter and not only a word to check. If that sounds like your life or a friend’s, the National Domestic Violence Hotline is free and private, at any hour: call 1-800-799-7233, or text START to 88788. A friend can call too. If someone checks your phone, use a phone or computer they cannot see.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “He checks my phone every night and reads my messages.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “He told me not to see Alyssa anymore, so I haven’t.”
+After the answer: Reason: His own reasoning, no one acted on (Question 1: a mind talking itself into something). One reading session, nothing about other times (Question 2: the story does not say).
+
+#### Item 18
+
+Your partner promised to call the plumber, forgot, and when you mentioned it said, "If you didn't nag me so much I'd remember things." You ended up apologizing.
+
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone (right)
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
+
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say (right)
+
+After the answer: Reason: The forgetting is turned into your fault, and you end up apologizing (Question 1: a move made on someone). One evening, nothing about other times (Question 2: the story does not say).
 
 Then a screen: you can stop here, your place is kept.
 
 ## The check
 
-6 new questions, no help. No answer is shown until the end. The questions come in mixed order.
+8 new questions, no help. No answer is shown until the end. The questions come in mixed order.
 
 To pass:
-- At least 5 right
+- At least 7 right
 
-#### Check question 13
+#### Check question 19
 
-A message from a friend about someone: "Rosa", Text message · Thursday, 5:40 PM.
+Your manager takes credit for her team's work in front of the directors. She has done it at every company she has worked for, for twelve years.
 
-> Pete is so lazy.
-> He left at 4:55 while I was still packing the last order.
-> He never thinks about how much I’m carrying.
-> His shift ends at 5.
-> I was furious.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is (right)
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-**Tap the line that says what Pete did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Pete is so lazy." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "He left at 4:55 while I was still packing the last order." (right)
-- "He never thinks about how much I’m carrying." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "His shift ends at 5." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- "I was furious." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years (right)
+- The story does not say — if chosen: a slip: wrong-span
 
-After the answer: the deciding words are marked. Reason: “He left at 4:55 while I was still packing the last order” is what Pete did. “Lazy” is a word for him and “he never thinks about how much I’m carrying” is a guess about his mind. His shift ending at 5 is what was going on around it, and “I was furious” is how Rosa felt.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “He left at 4:55 while I was still packing the last order.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “He left at 4:55 while I was still packing the last order.”
+After the answer: Reason: Every company (Question 1: a lasting way someone is), twelve years (Question 2: over and over, for months or years).
 
-#### Check question 14
+#### Check question 20
 
-A text thread you are in: "Ben", Text thread · Sunday, 9:10 PM.
+Since the move across the country two weeks ago, your usually cheerful sister cries easily and snaps at her kids.
 
-> (you, at the right) Why is it freezing in here?
-> (Ben, at the left) I turned the heat down to 60 while you were out.
-> (you, at the right) You’re trying to freeze me out.
-> (you, at the right) You are so cheap.
-> (Ben, at the left) The bill came and it scared me.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these (right)
 
-**Tap the line that says what Ben did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Why is it freezing in here?" — if tapped: note: That is about the one telling it, not about the person the account is about.; slip: tapped what the teller did, not what the person did
-- "I turned the heat down to 60 while you were out." (right)
-- "You’re trying to freeze me out." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "You are so cheap." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "The bill came and it scared me." — if tapped: note: That is how he says he feels, not what he did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness (right)
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: skipped-situation
+- The story does not say — if chosen: a slip: wrong-span
 
-After the answer: the deciding words are marked. Reason: “I turned the heat down to 60 while you were out” is what Ben did. “You’re trying to freeze me out” is your guess about why, and “you are so cheap” is your word for him. “The bill came and it scared me” is how he says he feels.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “I turned the heat down to 60 while you were out.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “I turned the heat down to 60 while you were out.”
+After the answer: Reason: A big move two weeks ago, and "usually cheerful" (Question 2: a reaction to a hard time). A fair reaction (Question 1: ordinary).
 
-#### Check question 15
+#### Check question 21
 
-Your own note, written after an argument: "Your note", Written after the party.
+After buying the pricier phone, he spends the evening reading only the articles that say it was the smarter buy.
 
-> Sofia is so self-absorbed.
-> At the party she talked about her new job for the whole hour we were together.
-> She only wants an audience.
-> I felt like furniture.
-> She starts Monday at a hospital she has wanted to work at for years.
+**Question 1. What is going on here?**
+- A mind talking itself into something (right)
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-**Tap the line that says what Sofia did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Sofia is so self-absorbed." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "At the party she talked about her new job for the whole hour we were together." (right)
-- "She only wants an audience." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I felt like furniture." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "She starts Monday at a hospital she has wanted to work at for years." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say (right)
 
-After the answer: the deciding words are marked. Reason: “At the party she talked about her new job for the whole hour we were together” is what Sofia did. “Self-absorbed” is a word for her and “she only wants an audience” is a guess about what she wants. “I felt like furniture” is how you felt, and her new job is the background.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “At the party she talked about her new job for the whole hour we were together.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “At the party she talked about her new job for the whole hour we were together.”
+After the answer: Reason: His own reasoning about his own purchase, no one acted on (Question 1: a mind talking itself into something); one evening (Question 2: the story does not say).
 
-#### Check question 16
+#### Check question 22
 
-A message from a friend about someone: "Leo", Text message · Tuesday, 12:30 PM.
+Your friend forgot your birthday this year. She has remembered it for fifteen years.
 
-> My manager is a bully.
-> On Monday she read out my sales numbers to the whole team and said they were the worst.
-> Two weeks ago she corrected my mistake in front of a customer.
-> She enjoys seeing me squirm.
-> I shake before every meeting now.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these (right)
 
-**Tap the two lines that say what Leo’s manager did.**
-- Tap two sentences in the text above, then tap Answer. Nothing is marked before the answer; Answer opens when that many are tapped.
-- "My manager is a bully." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "On Monday she read out my sales numbers to the whole team and said they were the worst." (right)
-- "Two weeks ago she corrected my mistake in front of a customer." (right)
-- "She enjoys seeing me squirm." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I shake before every meeting now." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern (right)
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say — if chosen: a slip: wrong-span
 
-After the answer: the deciding words are marked. Reason: “On Monday she read out my sales numbers to the whole team and said they were the worst” and “Two weeks ago she corrected my mistake in front of a customer” are two things Leo’s manager did. “Bully” is a word for her, “she enjoys seeing me squirm” is a guess about what she feels, and “I shake before every meeting now” is how Leo feels.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “On Monday she read out my sales numbers to the whole team and said they were the worst.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “Two weeks ago she corrected my mistake in front of a customer.”
+After the answer: Reason: Once in fifteen years (Question 2: once or twice, with no pattern), and forgetting happens (Question 1: ordinary).
 
-#### Check question 17
+#### Check question 23
 
-A text thread you are in: "Jess", Text thread · Over two weeks.
+When you showed him his own text, he said, "You're twisting my words like you always do," and you ended up apologizing.
 
-> (Jess, at the left) Can’t come Thursday, sorry.
-> (you, at the right) You’re so flaky.
-> (Jess, at the left) Can’t come Saturday either. Something came up.
-> (you, at the right) You just don’t want to see me anymore.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone (right)
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-**Tap the two lines that say what Jess did.**
-- Tap two sentences in the text above, then tap Answer. Nothing is marked before the answer; Answer opens when that many are tapped.
-- "Can’t come Thursday, sorry." (right)
-- "You’re so flaky." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "Can’t come Saturday either. Something came up." (right)
-- "You just don’t want to see me anymore." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- A button: "Nothing here says what they did" — if chosen: The text does give one. It is marked above.
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say (right)
 
-After the answer: the deciding words are marked. Reason: “Can’t come Thursday, sorry.” and “Can’t come Saturday either. Something came up.” are the two things Jess did: she canceled twice. “You’re so flaky” is your word for her, and “you just don’t want to see me anymore” is your guess about why.
-What counts as what they did, each need found (with its line) or missing:
-- Found: It says something they did or said. “Can’t come Thursday, sorry.”
-- Found: Anyone there could have seen or heard it. It has no guess about why. “Can’t come Saturday either. Something came up.”
+After the answer: Reason: Aimed at you, and you end up apologizing (Question 1: a move made on someone). One exchange; "like you always do" is his claim about you, not a record of him (Question 2: the story does not say).
 
-#### Check question 18
+#### Check question 24
 
-Your own note, written after an argument: "Your note", Written after dinner.
+When her landlord asked about the late rent, she said, "Maybe if you fixed the heat, I'd have paid on time," though the heat works fine.
 
-> Priyanka is so fake.
-> She was being weird at dinner. I just know she talks about me behind my back.
-> I feel so stupid for trusting her.
-> We’ve been friends since college.
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone (right)
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
 
-**Tap the line that says what Priyanka did.**
-- Tap a sentence in the text above. Nothing is marked before the answer, and a tap is the answer.
-- "Priyanka is so fake." — if tapped: note: That is a word or a verdict about the person, not something they did.; slip: tapped a word or a verdict about the person, not what they did
-- "She was being weird at dinner. I just know she talks about me behind my back." — if tapped: note: That is a guess about why, not something they did.; slip: tapped a guess about why, not what they did
-- "I feel so stupid for trusting her." — if tapped: note: That is how it felt, not something they did.; slip: tapped how it felt, not what they did
-- "We’ve been friends since college." — if tapped: note: That is background, not something they did.; slip: tapped background, not what they did
-- A button: "Nothing here says what they did" (right)
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: moment-as-pattern
+- The story does not say (right)
 
-**What is the best next step?**
-- Find out what happened (right)
-- Watch whether it repeats — if chosen: Watching helps once you know what to watch for. Nothing here says what they did.
-- Say what they did and where your limit is — if chosen: A limit needs something they did to name. Nothing here names one.
-- Get help from outside — if chosen: Outside help is for when someone is not safe. This account does not say that.
+After the answer: Reason: A false excuse aimed at the landlord to turn the blame on him (Question 1: a move made on someone); one exchange, nothing about other times (Question 2: the story does not say).
 
-After the answer: the deciding words are marked. Reason: None of these lines says something Priyanka did. “Fake” is a word for her, “she was being weird” does not say what she did, and “I just know she talks about me behind my back” is a guess. Feeling stupid is how you felt.
-What you would need to see: To check “fake”, you would need a line about something she said or did, such as ‘she told Dana what I said about the trip’.
-What counts as what they did, each need found (with its line) or missing:
-- Missing: It says something they did or said. The words do not say it.
-- Missing: Anyone there could have seen or heard it. It has no guess about why. The words do not say it.
+#### Check question 25
+
+For twenty years, in four restaurants, the chef has thrown pans at cooks who make a mistake, and laughed about it afterward.
+
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is (right)
+- An ordinary reaction or slip: none of these — if chosen: a slip: wrong-kind
+
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness — if chosen: a slip: wrong-span
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years (right)
+- The story does not say — if chosen: a slip: wrong-span
+
+After the answer: Reason: Four restaurants, many cooks (Question 1: a lasting way someone is), twenty years (Question 2: over and over, for months or years).
+
+#### Check question 26
+
+In her first stressful week at a new job, she snapped at a fair correction, then apologized the next day.
+
+**Question 1. What is going on here?**
+- A mind talking itself into something — if chosen: a slip: wrong-kind
+- A move made on someone — if chosen: a slip: wrong-kind
+- A lasting way someone is — if chosen: a slip: moment-as-pattern
+- An ordinary reaction or slip: none of these (right)
+
+**Question 2. One moment, or a lasting pattern?**
+- A reaction to a hard time: grief, stress, illness (right)
+- Once or twice, with no pattern — if chosen: a slip: wrong-span
+- Over and over, for months or years — if chosen: a slip: skipped-situation
+- The story does not say — if chosen: a slip: wrong-span
+
+After the answer: Reason: A stressful first week, and she apologized (Question 2: a reaction to a hard time; Question 1: ordinary).
 
 ## The result
 

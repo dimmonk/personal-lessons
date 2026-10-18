@@ -18,8 +18,8 @@
       "fp": "sha256:f2793899f98e07638907f45e5a61287ea9d99d57d3b6ab23c9fcc21311115b87"
     },
     "psychology": {
-      "rev": 8,
-      "fp": "sha256:861719518cec06741e4d21b667549cd96cdd4e427c175ad02cf81ff065f56474"
+      "rev": 9,
+      "fp": "sha256:d38dda187164a04db6aed80d12299256f759131738a64fc5ccf87c360b0ce12b"
     },
     "scams": {
       "rev": 6,
@@ -128,8 +128,40 @@
       "fp": "sha256:6a99a59719ea06509038046667cec53f94dcc8603e4863847f65a2bb8b2ede14"
     },
     "psychology/l1": {
+      "rev": 2,
+      "fp": "sha256:296c49c2ff37e628a841997473e00408b03364da8ef3b40916b7a70c90804678"
+    },
+    "psychology/l2": {
       "rev": 1,
-      "fp": "sha256:cb7185c4ac80381a7614f43afc28c20886632e790462ec0105356831b835b973"
+      "fp": "sha256:a2a20918e578ae87332640f68abd4e5eeb5eb8daaec38c02e4a06ee2fee82a16"
+    },
+    "psychology/l2a": {
+      "rev": 1,
+      "fp": "sha256:1b79d3d4a6b3c09ae19481dfa98371334ca956f9f09fcbeb009451c832ef22cc"
+    },
+    "psychology/l2b": {
+      "rev": 1,
+      "fp": "sha256:3cbbc6ab51ba4320d620496c356254ea3372b074ff0ad5e54ac47462b544b1da"
+    },
+    "psychology/l3": {
+      "rev": 1,
+      "fp": "sha256:c4c1034127b7f473e785a933b7d01bcc1feb7fcc6791442e85d6975926067a69"
+    },
+    "psychology/l4": {
+      "rev": 1,
+      "fp": "sha256:ef186970691a0e3c12fba5e3e3b80c23cef5d5a8f98fd1103a2adc9fa1336930"
+    },
+    "psychology/l5": {
+      "rev": 4,
+      "fp": "sha256:a9a032f8a18dc9bff1dda4f2082265b7c2930915a89d2012fb8770ab7100f5a6"
+    },
+    "psychology/l6": {
+      "rev": 2,
+      "fp": "sha256:c6abd4788a6202334d6b17b8eef2aa39fc8bfe624d51ee51589ef37925973900"
+    },
+    "psychology/l7": {
+      "rev": 1,
+      "fp": "sha256:c0da5b40cae75f0162ca4d8ba92c6dffe28cfa6dc391c26108dd072a55b517dc"
     },
     "scams/l0": {
       "rev": 1,
