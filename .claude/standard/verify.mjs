@@ -14,6 +14,8 @@ import { fileURLToPath } from 'node:url';
 export const LOCK_PATH = '.claude/standard.lock.json';
 export const DEPLOY_CONFIG = 'deploy.config.mjs';
 const ONLY_LIST = /--only[\s=]+["']?([^\s`'"|)]+)/g;
+// Only a deploy command is held to the `--only` vocabulary: `firebase emulators:start --only firestore,auth` is a different command.
+const DEPLOY_COMMAND = /\bfirebase deploy\b|\bnpm run deploy\b/;
 const NPM_RUN = /\bnpm run ([A-Za-z0-9:_-]+)/g;
 // A line that names the bare form to warn against it ("bare" is the reliable marker); no instruction to USE it says so.
 const IS_WARNING = /\bbare\b|never|wrong|aborts|instead of|rather than/i;
@@ -43,7 +45,7 @@ export function findEditedCopies(projectDir, lock) {
 
 const readJson = (file) => JSON.parse(readFileSync(file, 'utf8'));
 
-/** Problems in the live docs: a bare `--only functions` (or a bare `hosting` where the project has no bare release), an npm script the project lacks. */
+/** Problems in the live docs: a bare `--only functions` in a deploy command (or a bare `hosting` where the project has no bare release), an npm script the project lacks. */
 export function docsProblems(projectDir, config, scripts) {
   const bareHostingOk = 'hosting' in config.releases;
   return config.liveDocs.flatMap((doc) => {
@@ -51,7 +53,7 @@ export function docsProblems(projectDir, config, scripts) {
     if (!existsSync(file)) return []; // a doc may be renamed; the sweep list is not a manifest
     return readFileSync(file, 'utf8').split('\n').flatMap((line, i) => {
       const where = `${doc}:${i + 1}`;
-      const bare = [...line.matchAll(ONLY_LIST)].flatMap((m) => m[1].split(',')).filter((w) => w === 'functions' || (w === 'hosting' && !bareHostingOk));
+      const bare = !DEPLOY_COMMAND.test(line) ? [] : [...line.matchAll(ONLY_LIST)].flatMap((m) => m[1].split(',')).filter((w) => w === 'functions' || (w === 'hosting' && !bareHostingOk));
       const bareProblem = IS_WARNING.test(line) ? [] : [...new Set(bare)].map((w) => `${where}: hands out a bare \`--only ${w}\`: ${line.trim()}`);
       const missing = [...line.matchAll(NPM_RUN)].map((m) => m[1]).filter((name) => !(name in scripts))
         .map((name) => `${where}: names \`npm run ${name}\`, which package.json does not define`);

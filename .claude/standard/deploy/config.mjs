@@ -13,7 +13,7 @@ import { BARE_HOSTING, hostingBlockFor, mappedHostingTargets } from './targets.m
 export const CONFIG_FILE = 'deploy.config.mjs';
 const TOP_KEYS = ['app', 'releases', 'hooks', 'liveDocs'];
 const TOP_HOOKS = ['preflight', 'beforeFunctions'];
-const RELEASE_KEYS = ['repo', 'origin', 'siteRoot', 'copies', 'notes', 'check', 'hooks'];
+const RELEASE_KEYS = ['repo', 'origin', 'siteRoot', 'copies', 'sentryFiles', 'notes', 'check', 'hooks'];
 const RELEASE_HOOKS = ['build', 'assemble', 'check', 'afterRelease'];
 const CHECK_KEYS = ['samples', 'discovered', 'privatePaths'];
 const COPY_KEYS = ['path', 'kind', 'cachePrefix'];
@@ -118,9 +118,12 @@ function lineProblems(key, line, ctx) {
   if (!isText(line.siteRoot) || !insideOf(ctx.root, '.', line.siteRoot)) return [...problems, `${where}.siteRoot: required, a directory inside the repo ("." for the repo root)`];
   const copies = line.copies ?? [];
   if (!Array.isArray(copies)) return [...problems, `${where}.copies: must be an array`];
+  const sentry = line.sentryFiles ?? [];
+  const sentryBad = !Array.isArray(sentry) || !sentry.every((f) => isText(f) && insideOf(ctx.root, line.siteRoot, f))
+    ? [`${where}.sentryFiles: must be an array of paths under the release's siteRoot "${line.siteRoot}"`] : [];
   const paths = copies.map((c) => c?.path);
   const duplicated = paths.filter((p, i) => paths.indexOf(p) !== i).map((p) => `${where}.copies: "${p}" is listed twice`);
-  return [...problems, ...duplicated, ...copies.flatMap((c, i) => copyConfigProblems(c, i, line, ctx.root, where))];
+  return [...problems, ...sentryBad, ...duplicated, ...copies.flatMap((c, i) => copyConfigProblems(c, i, line, ctx.root, where))];
 }
 
 /**
@@ -150,6 +153,7 @@ export function normalizeConfig(raw, ctx) {
     origin: line.origin,
     siteRoot: line.siteRoot,
     copies: Object.freeze((line.copies ?? []).map((c) => Object.freeze({ ...c }))),
+    sentryFiles: Object.freeze([...(line.sentryFiles ?? [])]),
     notes: line.notes ? Object.freeze({ ...line.notes }) : null,
     check: Object.freeze({ samples: line.check.samples, discovered: line.check.discovered ?? {}, privatePaths: line.check.privatePaths }),
     hooks: Object.freeze(noHook(line.hooks, RELEASE_HOOKS)),

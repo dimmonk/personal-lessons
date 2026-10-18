@@ -1,6 +1,6 @@
 {
   "source": "github.com/dimmonk/claude-config",
-  "commit": "679d9003a5c0b6292916123f818e826fd1379d7b",
+  "commit": "aa36680ec562bba3f863a0269a1d84f039a86e7c",
   "kinds": [
     "all",
     "ui",
@@ -62,17 +62,17 @@
     ".claude/hooks/standard/run-node.sh": "6256930560ae66a8d712045dfa41ffda456b9a37a584f74fac5dbeca274eb693",
     ".claude/hooks/standard/package.json": "8005a3491db7d92f36ac66369861589f9c47123d3a7c71e643fc2c06168cd45a",
     ".claude/rules/standard/vendored-standard.md": "79ccd1ba5fbb85b3573179438303decb162920657eca985d0b6f7d343ba1d519",
-    ".claude/standard/verify.mjs": "c3c43827f2eca3a4fcdc332cb48c1c09c0000f88c77a18d93043c9b72d49dabf",
-    ".claude/standard/deploy/config.mjs": "1b93dcb0505a51db534a2151c285d668388dbb7a6b40b8dce85464983e524fd6",
+    ".claude/standard/verify.mjs": "7186d12bbdbefb8215b7d8605c57e309a8929be787737a68c30391e00c23d329",
+    ".claude/standard/deploy/config.mjs": "8e016000d44f3073513df2968da22f16450194858ca1d774ce3c2a6940a31393",
     ".claude/standard/deploy/deploy-check.mjs": "0588019f1f9bd41fba5bc4bbed2ca99685b60ec32419b63dd846d21945256d48",
-    ".claude/standard/deploy/deploy.mjs": "83b42bc86a4c6a2d9152082856be08787065766e8b9a7b4a0acbaf071ef5c007",
+    ".claude/standard/deploy/deploy.mjs": "3c2f1a6180cffb947fd090e01aecf2c7209df900fe722d3a4826760184553244",
     ".claude/standard/deploy/firebase-cli.mjs": "938cfd1fc5ed247c769a4ec1cffba375dd52a7dfb6d610172a80a380297ec8e3",
     ".claude/standard/deploy/functions-release.mjs": "c19829667d6f18fe449fc673fdc003b08b1faaf1440e08c858f35639409765c2",
     ".claude/standard/deploy/git.mjs": "c44325ef29bc59e5f6edfb6e17655eb9cf0df071b8969b84e66c265816163102",
     ".claude/standard/deploy/install-check.mjs": "ee2e94955f96622beefa66fe7dee8c28483b151352c5b99a6eb58044eb2e5ad5",
     ".claude/standard/deploy/lock.mjs": "5655369332a85b77e859399812b91417ef19bc9d0bacc8a5424692171c435b86",
     ".claude/standard/deploy/predeploy-guard.mjs": "70f985e9247c54e740ea1fde5aef34f82d8749d34f62d3d3b821faf0cb149a81",
-    ".claude/standard/deploy/release-file.mjs": "e69fd3c70d3b00e6770ec345880ded5bfb69a0c4a1c58876731994e7b0708770",
+    ".claude/standard/deploy/release-file.mjs": "2e8e665c7bd3dc459091b6682912b6db2de6ca7312ee13698850186d09b5b894",
     ".claude/standard/deploy/release-notes.mjs": "2db087e24847c2da845b7d2d3e931293d15e765946a2392a61a29b26c709d5ff",
     ".claude/standard/deploy/targets.mjs": "82e14b573602b9d37c6c200a0f3bcb396667de84bf1c206275bfe4f22ec31702"
   }

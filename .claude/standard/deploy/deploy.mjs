@@ -7,7 +7,7 @@
  *
  * The run, in order, stopping at the first failure (design 2.5):
  *   1  parse the list (syntax)            2  fetch, report what is not shipping, add the worktree(s), load the config from
- *   the shipped tree and resolve the list 3  pinned CLI, root and functions installs   4  preflight
+ *   the shipped tree and resolve the list 3  pinned CLI, root and functions installs (checked, linked)   4  preflight
  *   5  the release line: tag check, cut, build, commit, tag, atomic push   6  functions record, beforeFunctions
  *   7  assemble   8  firebase deploy   9  live check, check hook   10  afterRelease   11  fast-forward the caller
  *
@@ -15,7 +15,7 @@
  * Exit codes: 0 done, 1 refused or failed, 2 the live check failed (roll back), 75 the pinned CLI is not installed.
  */
 import { randomUUID } from 'node:crypto';
-import { existsSync, readFileSync, realpathSync, symlinkSync } from 'node:fs';
+import { existsSync, lstatSync, readFileSync, realpathSync, symlinkSync } from 'node:fs';
 import { constants as osConstants } from 'node:os';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -118,40 +118,62 @@ async function openRepo(ctx, where) {
 // Steps
 // ---------------------------------------------------------------------------
 
-/** 3: the pinned CLI, every repo's root install against the lock being shipped, the functions tree when functions are listed. */
-function checkInstalls(repos) {
+/** Refuse unless the primary's install at `modules` matches `lock`, the lock being shipped. @param {{ requireDev: boolean, fix: string, why: string }} how */
+function assertInstall(modules, lock, how) {
+  const problems = installProblems(lock, modules, { requireDev: how.requireDev });
+  if (problems.length === 0) return;
+  throw fail(`ABORTED: ${modules} was not installed from the lock being shipped:\n${problems.slice(0, MAX_LISTED_PROBLEMS).map((p) => `  ${p}`).join('\n')}\n`
+    + `  ${how.why}\n  Fix it:  ${how.fix}`);
+}
+
+/** Link the primary's install into the worktree, unless the worktree already has something there. */
+function linkInto(modules, link) {
+  if (lstatSync(link, { throwIfNoEntry: false }) === undefined) symlinkSync(modules, link);
+}
+
+/** The functions sources of firebase.json, or [] when it declares none. */
+function declaredFunctionsSources(firebaseJson) {
+  return [firebaseJson.functions].flat().filter((f) => f && typeof f.source === 'string').map((f) => f.source);
+}
+
+/**
+ * 3: every repo's root install against the lock being shipped, then linked into its worktree. The project's functions
+ * installs get the same check and link when it declares functions (required when a functions target is listed, optional
+ * otherwise), so a preflight or build hook run for `--only hosting` finds node_modules where the tool looks for it.
+ */
+function linkInstalls(repos, project, firebaseJson, functionsListed) {
   repos.forEach(({ primary, worktree }) => {
-    const lock = join(worktree, 'package-lock.json');
-    if (!existsSync(lock)) return;
     const modules = join(primary, 'node_modules');
-    if (!existsSync(modules)) throw fail(`ABORTED: ${modules} does not exist.\n  Fix it:  (cd ${JSON.stringify(primary)} && npm ci)`);
-    const problems = installProblems(lock, modules, { requireDev: true });
-    if (problems.length > 0) {
-      throw fail(`ABORTED: ${modules} was not installed from the lock being shipped:\n${problems.slice(0, MAX_LISTED_PROBLEMS).map((p) => `  ${p}`).join('\n')}\n`
-        + `  A build or preflight from a stale install is wrong.\n  Fix it:  pull main into ${primary}, then (npm ci), and re-run.`);
+    const lock = join(worktree, 'package-lock.json');
+    if (existsSync(lock) && !existsSync(modules)) throw fail(`ABORTED: ${modules} does not exist.\n  Fix it:  (cd ${JSON.stringify(primary)} && npm ci)`);
+    if (existsSync(lock)) {
+      assertInstall(modules, lock, { requireDev: true, why: 'A build or preflight from a stale install is wrong.', fix: `pull main into ${primary}, then (npm ci), and re-run.` });
     }
+    if (existsSync(modules)) linkInto(modules, join(worktree, 'node_modules'));
   });
+  const { primary, worktree } = project;
+  const sources = functionsListed ? functionsSources(firebaseJson) : declaredFunctionsSources(firebaseJson);
+  for (const source of sources) {
+    const modules = join(primary, source, 'node_modules');
+    if (!existsSync(modules)) {
+      if (!functionsListed) continue;
+      throw fail(`ABORTED: ${modules} does not exist; the CLI cannot load the functions bundle.\n  Fix it:  (cd ${JSON.stringify(join(primary, source))} && npm ci)`);
+    }
+    const lock = join(worktree, source, 'package-lock.json');
+    if (functionsListed || existsSync(lock)) {
+      assertInstall(modules, lock, {
+        requireDev: false, fix: `pull main into ${primary}, then (cd ${source} && npm ci), and re-run.`,
+        why: functionsListed ? 'Deploying would discover main\'s functions through a different dependency tree.' : 'A build or preflight from a stale install is wrong.',
+      });
+    }
+    linkInto(modules, join(worktree, source, 'node_modules'));
+  }
 }
 
 function functionsSources(firebaseJson) {
-  const sources = [firebaseJson.functions].flat().filter(Boolean).map((f) => f.source);
-  if (sources.length === 0 || sources.some((s) => typeof s !== 'string')) throw fail('a functions target is listed but firebase.json has no functions block with a source');
+  const sources = declaredFunctionsSources(firebaseJson);
+  if (sources.length === 0 || [firebaseJson.functions].flat().filter(Boolean).some((f) => typeof f.source !== 'string')) throw fail('a functions target is listed but firebase.json has no functions block with a source');
   return sources;
-}
-
-/** The functions dependency tree: refuse unless the primary's install matches the shipped lock, then link it into the worktree. */
-function linkFunctionsInstall({ primary, worktree, firebaseJson }) {
-  for (const source of functionsSources(firebaseJson)) {
-    const modules = join(primary, source, 'node_modules');
-    if (!existsSync(modules)) throw fail(`ABORTED: ${modules} does not exist; the CLI cannot load the functions bundle.\n  Fix it:  (cd ${JSON.stringify(join(primary, source))} && npm ci)`);
-    const problems = installProblems(join(worktree, source, 'package-lock.json'), modules, { requireDev: false });
-    if (problems.length > 0) {
-      throw fail(`ABORTED: ${modules} was not installed from the lock being shipped:\n${problems.slice(0, MAX_LISTED_PROBLEMS).map((p) => `  ${p}`).join('\n')}\n`
-        + `  Deploying would discover main's functions through a different dependency tree.\n  Fix it:  pull main into ${primary}, then (cd ${source} && npm ci), and re-run.`);
-    }
-    const link = join(worktree, source, 'node_modules');
-    if (!existsSync(link)) symlinkSync(modules, link);
-  }
 }
 
 /**
@@ -308,9 +330,8 @@ async function execute(deps, words, cleanup) {
 
 async function deployOpened(ctx, { project, repos, lineWt, line, key, config, firebaseJson, targets }) {
   const cli = pinnedCli(ctx.primary);
-  checkInstalls(repos);
   const functions = hasFunctionsTarget(targets.words);
-  if (functions) linkFunctionsInstall({ primary: ctx.primary, worktree: ctx.worktree, firebaseJson });
+  linkInstalls(repos, project, firebaseJson, functions);
   const validatedFiles = [...VALIDATED_FILES, ...(functions ? functionsSources(firebaseJson).map((s) => join(s, 'package-lock.json')) : [])];
   await runHook(config.hooks.preflight, 'preflight', ctx);
   const landed = line ? await releaseLine(ctx, key, line, lineWt, validatedFiles) : null;

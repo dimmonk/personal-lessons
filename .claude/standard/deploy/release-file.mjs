@@ -166,12 +166,25 @@ export function stampCopy(copy, source, release) {
   return source.replace(kind.line, kind.render(release));
 }
 
-/** The Sentry release tag a classic or module copy must carry when the project names an `app`. @param {string} app */
-export const sentryTagLiteral = (app) => `'${app}@' + RELEASE`;
+/** How the Sentry release tag is shown to a person: the two spellings of the same thing. @param {string} app */
+export const sentryTagLiteral = (app) => `'${app}@' + RELEASE or \`${app}@\${RELEASE}\``;
+
+const escapeRegExp = (text) => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const RELEASE_REF = String.raw`RELEASE(?:\.revision)?\b`;
+
+/**
+ * Whether `source` writes the Sentry release tag `app@<release>`: string concatenation (`'app@' + RELEASE`, either quote) or
+ * a template literal (`` `app@${RELEASE}` ``), the release being `RELEASE` itself or `RELEASE.revision`.
+ * @param {string} source @param {string} app
+ */
+export function carriesSentryTag(source, app) {
+  const name = escapeRegExp(app);
+  return new RegExp(`(?:'${name}@'|"${name}@")\\s*\\+\\s*${RELEASE_REF}|\`${name}@\\$\\{\\s*${RELEASE_REF}\\s*\\}`).test(source);
+}
 
 /**
  * Every problem in the mirror: version.json valid, every copy naming it, each worker naming its cache from it, and (when
- * `app` is set and the line has classic or module copies) at least one of those carrying the Sentry tag `app@RELEASE`.
+ * `app` is set and the line has classic or module copies or `sentryFiles`) at least one of those carrying the Sentry tag `app@RELEASE` (see carriesSentryTag for the spellings).
  * @param {string} root the repo root @param {{ siteRoot: string, copies: object[] }} line @param {string} [app]
  */
 export function mirrorProblems(root, line, app) {
@@ -181,18 +194,24 @@ export function mirrorProblems(root, line, app) {
   const sources = line.copies.map((copy) => ({ copy, source: readSource(join(root, copy.path)) }));
   const copyReports = sources.flatMap(({ copy, source }) => (
     source === null ? [`${copy.path}: is missing`] : copyProblems(copy, read.release, source).map((p) => `${copy.path}: ${p}`)));
-  return [...copyReports, ...sentryProblems(sources, app)];
+  return [...copyReports, ...sentryProblems(root, line, sources, app)];
 }
 
 function readSource(file) {
   try { return readFileSync(file, 'utf8'); } catch { return null; }
 }
 
-function sentryProblems(sources, app) {
+/** Where the tag may live: the classic and module copies, and the files the line names as `sentryFiles` (a Sentry init that is not itself a copy). */
+function sentryProblems(root, line, sources, app) {
   if (!app) return [];
-  const boots = sources.filter(({ copy, source }) => source !== null && copy.kind !== 'sw');
-  if (boots.length === 0 || boots.some(({ source }) => source.includes(sentryTagLiteral(app)))) return [];
-  return [`no ${boots.map(({ copy }) => copy.path).join(' or ')} carries the Sentry release tag ${sentryTagLiteral(app)}`];
+  const named = (line.sentryFiles ?? []).map((path) => ({ path, source: readSource(join(root, path)) }));
+  const missing = named.filter(({ source }) => source === null).map(({ path }) => `${path}: is missing`);
+  const present = [
+    ...sources.filter(({ copy, source }) => copy.kind !== 'sw' && source !== null).map(({ copy, source }) => ({ path: copy.path, source })),
+    ...named.filter(({ source }) => source !== null),
+  ];
+  if (present.some(({ source }) => carriesSentryTag(source, app))) return [];
+  return [...missing, ...(present.length === 0 ? [] : [`no ${present.map(({ path }) => path).join(' or ')} carries the Sentry release tag ${sentryTagLiteral(app)}`])];
 }
 
 // ---------------------------------------------------------------------------
