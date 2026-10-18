@@ -14,8 +14,10 @@ neighbors, the coast, roughly how far. In the National Geographic–Roper survey
 December 2005 to January 2006), 63% could not find Iraq on a map of the Middle East, about 75% could not find Israel or
 Iran, and fewer than half could find New York or Ohio on a map of the United States. *Read: summary: the press reports of the
 survey (Washington Times, RFE/RL, the Associated Press copy); the survey's own tables were not reached.* **Design:** the
-practice is a name shown and the place tapped on a map with no names on it; recognizing an outline or a flag is never the
-practice, because no real moment asks for it. **Supports.**
+practice is a name shown and the place tapped on a map with no names on it; recognizing an outline is never the practice,
+because no real moment asks for it. Telling a country by its flag is practised because the owner's end result asks for it
+("tell a country by its flag", the subject's sentence): its real moment is a flag seen on the news, a ship or a uniform, and its
+practice is that flag shown and the country tapped (G9). **Supports.**
 
 ## Learning places from a map
 
@@ -97,6 +99,19 @@ its neighbours, the water and land around it), and relative location is the one 
 the two kinds of location as the standards and their teaching guides state them; the 1984 booklet itself not read.*
 **Design:** the subject's way of thinking is relative location, in the order G4's hierarchy gives it: the region a place is
 in first, then what touches it (its neighbours), then its water; feedback gives the same three. **Supports** (with G4).
+
+## How a flag is told from another
+
+**G9. Flag specialists describe a flag in a fixed order: how the field is divided, the colours from the hoist, then the
+emblem; and look-alikes differ in one of those.** Vexillological description, as in the *Flags of the World* reference and
+Whitney Smith's *Flags Through the Ages and Across the World* (1975), states the layout first (stripes and their direction,
+a cross, a canton), then the colours in order from the hoist (the pole side) or the top, then the charges (an emblem, a
+star, a shield); the CIA World Factbook's flag entries follow the same order ("three equal vertical bands of ..."), and the
+look-alike pairs a learner confuses (the Netherlands and Luxembourg, Chad and Romania, Indonesia and Monaco) differ in one
+of those three: a shade, a proportion, or an emblem. *Read: summary: the Factbook's flag entries read directly; the
+descriptive order of the vexillological references as their conventions state it, not the books themselves.* **Design:**
+a flags lesson reads every flag in that order (layout, colours, emblem), shows look-alikes side by side with the one feature
+that differs (P12), and its flag lines are the Factbook's descriptions. **Supports.**
 
 ## Distances
 
