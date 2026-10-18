@@ -30,7 +30,7 @@ function paintAnswers(){
   const inner = `${heading(SAY.answersEyebrow, SAY.answersTitle)}${body}`;
   const save = `<div class="actbar"><button class="btn neutral" id="answersSave">${esc(SAY.answersSave)}${icon('arrow')}</button></div>`;
   if(where === 'lesson') lessonShell(inner, saved ? nextAction(SAY.goOn) : save);
-  else screenEl().innerHTML = `<div class="pane read flush" style="--accent:${subj.accent}"><div class="topbar"><button class="iconbtn" data-v="subject" aria-label="Back to ${esc(subj.name)}">${icon('back', 20)}</button><span class="spacer"></span></div>
+  else screenEl().innerHTML = `<div class="pane read flush" style="--accent:${subj.accent}">${backBar('subject', subj.name)}
     ${inner}${saved ? `<div class="actbar"><button class="btn neutral" data-v="subject">${esc(SAY.toSubject)}${icon('arrow')}</button></div>` : save}</div>`;
   document.querySelectorAll('[data-own-answers] [data-path]').forEach(box => { box.oninput = box.onchange = () => setAnswers({ draft: { ...ANSWERS.draft, [box.dataset.path]: box.value } }); });
   on('[data-v]', el => go(el.dataset.v));

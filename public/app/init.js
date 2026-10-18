@@ -14,8 +14,7 @@ wireMaps();
 function startApp(){
   restoreApp();
   render();
-  history.replaceState({ fc: 'base' }, '');
-  syncHistory();
+  startHistory();
   window.addEventListener('popstate', backInApp);
   document.documentElement.dataset.record = 'open';
 }

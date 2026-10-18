@@ -99,9 +99,9 @@ const leaveReview = () => { REVIEW = null; go('library'); };
 function reviewShell(inner, actions){
   const part = REVIEW.parts[REVIEW.at];
   screenEl().innerHTML = `<div class="pane read flush" style="--accent:${part.subj.accent}">
-    <div class="topbar"><button class="iconbtn" id="leaveReview" aria-label="Back to the library">${icon('back', 20)}</button><span class="spacer"></span></div>
+    ${backBar('library', 'Library')}
     <p class="m unitbar">${esc(REVIEW_TEXT.tab)} &middot; ${esc(part.subj.name)}</p>${inner}${actions || ''}</div>`;
-  on('#leaveReview', leaveReview);
+  on('.topbar [data-v]', leaveReview);
 }
 
 /* ---------- running it ---------- */
@@ -171,7 +171,7 @@ function paintReviewResults(){
   const skipped = SUBJECTS.some(s => dueStrands(FC.get(s.id), s.id, today()).length);
   const next = SUBJECTS.map(s => nextDueDay(FC.get(s.id), s.id, today())).filter(Boolean).sort()[0] || null;
   screenEl().innerHTML = `<div class="pane">
-    <div class="topbar"><button class="back" data-v="library">${icon('back', 18)}Library</button></div>
+    ${backBar('library', 'Library')}
     <div class="done-screen results">
       <h2>${T.resultsTitle}</h2>
       <p>${esc(T.resultsNote)} ${esc(SAY.stakes)}</p>

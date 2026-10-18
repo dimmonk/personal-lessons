@@ -38,3 +38,5 @@ const ICON = {
   mic:     '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/>'
 };
 const icon = (name, w) => SVG(ICON[name], w);
+// The bar at the top of a screen below the library: one back control, named for the screen it goes back to. The phone's Back presses it.
+const backBar = (view, label) => `<div class="topbar"><button class="back" data-v="${view}">${icon('back', 18)}${esc(label)}</button></div>`;

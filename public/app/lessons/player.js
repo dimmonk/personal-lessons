@@ -48,7 +48,7 @@ function lessonBarText(){
 function lessonShell(inner, actions){
   const { subj } = LESSON;
   screenEl().innerHTML = `<div class="pane read flush" style="--accent:${subj.accent}">
-    <div class="topbar"><button class="iconbtn" data-v="subject" aria-label="Back to ${esc(subj.name)}">${icon('back', 20)}</button><span class="spacer"></span></div>
+    ${backBar('subject', subj.name)}
     <p class="m unitbar">${lessonBarText()}</p>${inner}${actions || ''}</div>`;
   on('[data-v]', el => go(el.dataset.v));
 }

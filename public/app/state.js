@@ -68,21 +68,39 @@ function stopAudio(){
   stopMeter();
   speechStop();
 }
-// The phone's Back button must go back inside the app, not out of it. The app is one page, so one history entry is added when the learner
-// leaves the library, and a Back that comes to the entry below it does what the screen's own back control does (backInApp); Back at the
-// library is the browser's own, and leaves. Coming back to the library by the screen's own control drops the added entry (history.back()),
-// so the next Back leaves at once; the Back that drop causes is not a learner's Back, and only re-syncs (the learner may have moved on).
-const inApp = () => !!(history.state && history.state.fc === 'in');
-let droppingEntry = false;
+// The phone's Back button and the screen's own back control do the same thing: go up one screen. The browser's history mirrors the path
+// from the library to the screen shown, one entry per screen ({ fc: 'app', depth }), so Back always has an entry of the app to land on,
+// and Back at the library is the browser's own and leaves. Entries are added only when the learner taps their way deeper; a Back is never
+// answered by adding one, because Chrome on Android skips an entry added without a tap, and the next Back would leave the app.
+const PARENT = { library: null, subject: 'library', review: 'library', progress: 'library', search: 'library', reviewrun: 'library',
+  lesson: 'subject', results: 'subject', answers: 'subject', range: 'subject' };
+const depthOf = view => PARENT[view] ? 1 + depthOf(PARENT[view]) : 0;
+const historyDepth = () => history.state && history.state.fc === 'app' ? history.state.depth : 0;
+let poppingTo = null;   // the depth the app itself is going back to with history.go; its popstate is not a learner's Back
+let answeringBack = false;   // while a Back is answered, history only ever goes back, never gains an entry
 function syncHistory(){
-  if(APP.view !== 'library' && !inApp()) history.pushState({ fc: 'in' }, '');
-  else if(APP.view === 'library' && inApp() && !droppingEntry){ droppingEntry = true; history.back(); }
+  if(poppingTo !== null) return;
+  const want = depthOf(APP.view), have = historyDepth();
+  if(!answeringBack) for(let d = have + 1; d <= want; d++) history.pushState({ fc: 'app', depth: d }, '');
+  if(want < have){ poppingTo = want; history.go(want - have); }
 }
+function startHistory(){
+  if(!(history.state && history.state.fc === 'app')) history.replaceState({ fc: 'app', depth: 0 }, '');
+  syncHistory();
+}
+// A Back (or Forward) that lands on an entry of the app: the screen's own back control is pressed once for each screen gone up, so the
+// screen tidies up as it does for a tap. A Forward is undone.
 function backInApp(){
-  if(droppingEntry){ droppingEntry = false; syncHistory(); return; }
-  if(inApp() || APP.view === 'library') return;
-  const back = document.querySelector('#screen .topbar [data-v], #screen .topbar #leaveReview');
-  if(back) back.click(); else go('library');
+  const landed = historyDepth();
+  if(poppingTo !== null){ const meant = poppingTo; poppingTo = null; if(landed !== meant) syncHistory(); return; }
+  answeringBack = true;
+  try {
+    for(let up = depthOf(APP.view) - landed; up > 0; up--){
+      const back = document.querySelector('#screen .topbar [data-v]');
+      if(back) back.click(); else go(PARENT[APP.view] || 'library');
+    }
+  } finally { answeringBack = false; }
+  syncHistory();
 }
 function go(view, extra){
   stopAudio();

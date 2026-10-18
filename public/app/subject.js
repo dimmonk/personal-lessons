@@ -60,7 +60,7 @@ function renderSubject(subj){
   const done = partsDone(subj), total = subj.parts.length, resume = resumePoint(subj);
   const hasRecord = allTries(subj.id).length > 0;
   screenEl().innerHTML = `<div class="pane" style="--accent:${subj.accent}">
-    <div class="topbar"><button class="back" data-v="library">${icon('back',18)}Library</button></div>
+    ${backBar('library', 'Library')}
 
     <div style="display:flex;flex-direction:column;gap:12px;padding:10px 0 22px">
       <div style="display:flex;align-items:center;gap:10px">
@@ -161,7 +161,7 @@ function renderResults(subj){
   const perLesson = subj.lessons.filter(l => l.part !== null).map(l => [l.title, outOf(rows.filter(x => x.t.lesson === l.id).map(x => x.t))]);
   const section = (title, list) => `<div class="sect top"><span class="m">${esc(title)}</span></div>${table(list)}`;
   screenEl().innerHTML = `<div class="pane read" style="--accent:${subj.accent}">
-    <div class="topbar"><button class="back" data-v="subject">${icon('back',18)}${esc(subj.name)}</button></div>
+    ${backBar('subject', subj.name)}
     <div class="eyebrow-row"><span class="m a">${esc(subj.name)}</span><h1>${esc(SAY.resultsHeading)}</h1></div>
     <p class="forline">First tries only: what you got right the first time a question came up. No grade, and nothing is compared with anyone.</p>
     ${section('Right the first time, by lesson', perLesson)}

@@ -395,13 +395,17 @@ export const FAULTS = [
     edits: [replace('subjects/civics/items-government.js', '"Name the three branches of government."', '"Name three branches of government."')] },
   { check: 'X45', name: 'the check of Civics\' pilot asked in the order of the groups',
     edits: [replace('subjects/civics/l1.lesson.js', 'recall: true, order: "shuffle", feedback: "at-end",', 'recall: true, feedback: "at-end",')] },
-  // the Back button of the phone (3 to 9, 2026-10-11: X28)
-  { check: 'X28', name: 'leaving the library adds nothing to the history, so Back leaves the app',
-    edits: [replace('app/state.js', "if(APP.view !== 'library' && !inApp()) history.pushState({ fc: 'in' }, '');", "if(false) history.pushState({ fc: 'in' }, '');")] },
-  { check: 'X28', name: 'the added entry kept after coming back to the library',
-    edits: [replace('app/state.js', "else if(APP.view === 'library' && inApp() && !droppingEntry){ droppingEntry = true; history.back(); }", "else if(false){ void 0; }")] },
+  // the Back button of the phone (3 to 9, 2026-10-11 and 2026-10-18: X28)
+  { check: 'X28', name: 'going deeper adds nothing to the history, so Back leaves the app',
+    edits: [replace('app/state.js', "if(!answeringBack) for(let d = have + 1; d <= want; d++)", "if(false) for(let d = have + 1; d <= want; d++)")] },
+  { check: 'X28', name: 'the entries kept after coming back to the library by the screen\'s own control',
+    edits: [replace('app/state.js', "if(want < have){ poppingTo = want; history.go(want - have); }", "if(false){ void 0; }")] },
+  { check: 'X28', name: 'a Back answered by adding an entry, which Chrome on Android skips',
+    edits: [replace('app/state.js', "  answeringBack = true;\n", "  answeringBack = false;\n")] },
   { check: 'X28', name: 'a Back that does nothing inside the app',
     edits: [replace('app/init.js', "window.addEventListener('popstate', backInApp);", "void 0;")] },
+  { check: 'X28', name: 'a lesson\'s back control that scrolls away with the page',
+    edits: [replace('app.css', ".topbar:has(.back){position:sticky;", ".topbar:has(.back){position:static;")] },
   // sound and singing (9: X8, X10, X11, X12, X16; 3 to 9, 2026-10-11: X29)
   // the map block and the place ask (9: X46). Only the checks that draw maps or share the screens they sit on can see these faults.
   { check: 'X46', name: 'Undo that keeps the neighbor\'s tap', only: MAP_SEEN,

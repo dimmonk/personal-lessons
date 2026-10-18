@@ -126,7 +126,7 @@ export function makeEnv(browser, server) {
   /* ---------- driving the app ---------- */
   // the library from wherever the learner is: its own control where there is one, else back out of the lesson or the review
   env.toLibrary = async page => {
-    for (const back of ['[data-v="library"]', '#leaveReview', '[data-v="subject"]']) {
+    for (const back of ['[data-v="library"]', '[data-v="subject"]']) {
       if (await page.locator(`${back}:visible`).count()) {
         await env.clickVisible(page, back);
         if (back === '[data-v="library"]') return;
