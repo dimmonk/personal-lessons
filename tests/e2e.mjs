@@ -52,7 +52,7 @@ async function runChecks() {
 async function testPwa() {
   // a deploy, played by the server: once `deployed`, it serves a service worker with a new cache name, as a new version of the app would
   let deployed = false;
-  const server = await startServer({ transform: (path, body) => deployed && path === 'sw.js' ? body.replace(/const CACHE = 'fieldcraft-v\d+'/, "const CACHE = 'fieldcraft-vtest'") : body });
+  const server = await startServer({ transform: (path, body) => deployed && path === 'sw.js' ? body.replace(/^const RELEASE = \d+;$/m, 'const RELEASE = 99999;') : body });
   const check = (ok, msg) => { checks++; if (!ok) failures.push(`PWA: ${msg}`); };
   const context = await browser.newContext({ viewport: { width: 390, height: 800 } });
   const page = await context.newPage();

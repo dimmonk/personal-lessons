@@ -33,7 +33,7 @@ async function checkOfflineShell() {
   const html = await readFile(new URL('../public/index.html', import.meta.url), 'utf8');
   const styles = [...html.matchAll(/<link rel="stylesheet" href="([^"]+)"/g)].map(m => m[1]);
   for (const path of [...await scriptList(), ...styles]) check(shell.has(path), `sw.js: SHELL is missing ${path}`);
-  check(/const CACHE = 'fieldcraft-v\d+'/.test(sw), 'sw.js: no cache name');
+  check(/^const RELEASE = \d+;$/m.test(sw) && sw.includes('const CACHE = `fieldcraft-${RELEASE}`;'), 'sw.js: the cache name is not fieldcraft-<RELEASE>');
 }
 await checkOfflineShell();
 

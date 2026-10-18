@@ -2,7 +2,9 @@
 // The page, its scripts and its stylesheet are network-first, so a new deploy shows up
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
-const CACHE = 'fieldcraft-v37';
+// The release number below is stamped by npm run deploy (deploy.config.mjs); the cache name derives from it.
+const RELEASE = 34;
+const CACHE = `fieldcraft-${RELEASE}`;
 const SHELL = [
   './', 'manifest.json', 'app.css', 'app/helpers.js', 'app/store.js', 'app/account.js', 'app/registry.js', 'maps/europe-west.js', 'maps/us.js', 'maps/world.js', 'subjects/civics/subject.js', 'subjects/civics/items-government.js', 'subjects/civics/l1.lesson.js',
   'subjects/geography/subject.js', 'subjects/geography/gen-europe-west.js', 'subjects/geography/gen-world.js', 'subjects/geography/gen-us-map.js', 'subjects/geography/gen-us-states.js', 'subjects/geography/items-worked-us.js', 'subjects/geography/l1.lesson.js', 'subjects/geography/l1b.lesson.js', 'subjects/geography/l1c.lesson.js', 'subjects/geography/l2.lesson.js', 'subjects/geography/l2b.lesson.js', 'subjects/geography/l3.lesson.js', 'subjects/geography/l4.lesson.js', 'subjects/geography/l5.lesson.js', 'subjects/geography/l6.lesson.js', 'subjects/geography/l7.lesson.js', 'subjects/geography/l7b.lesson.js', 'subjects/geography/l16.lesson.js', 'subjects/geography/l16b.lesson.js',
