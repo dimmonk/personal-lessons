@@ -382,7 +382,12 @@ table.ownsum{max-width:none;margin:0}
 table.ownsum td:last-child{white-space:normal}
 .ownactionform{display:flex;flex-direction:column;gap:14px;padding:16px;background:var(--raised);border:1px solid var(--border)}
 .lesson + .ownform{margin-top:18px}
-.doc-statement .doc-rows td.amt,.doc-fees .doc-rows td.amt,.doc-paystub .doc-rows td.amt,.doc-matchrule .doc-rows td.amt,.doc-beneficiary .doc-rows td.amt,.doc-foreign .doc-rows td.amt,.doc-table .doc-rows td.amt{white-space:normal;overflow-wrap:break-word}
+.doc-statement .doc-rows td.amt,.doc-fees .doc-rows td.amt,.doc-paystub .doc-rows td.amt,.doc-matchrule .doc-rows td.amt,.doc-beneficiary .doc-rows td.amt,.doc-foreign .doc-rows td.amt{white-space:normal;overflow-wrap:break-word}
+/* a plain table on a narrow phone: the first columns keep each word whole, rather than one letter to a line; the last one takes the rest */
+.doc-table .doc-rows td:not(.amt){padding-right:10px;overflow-wrap:break-word}
+.doc-table .doc-rows th:not(.amt){padding-right:10px}
+.doc-table .doc-rows td.amt{white-space:normal;overflow-wrap:anywhere}
+.doc-table .doc-rows th.amt{white-space:normal}
 
 /* ---------- an article, a chart, a line to tap, 1,000 people ---------- */
 .block-article{display:flex;flex-direction:column;gap:8px;padding:16px;background:var(--raised);border:1px solid var(--border)}
