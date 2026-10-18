@@ -28,7 +28,10 @@ Before any plan, read the field's own literature and write `docs/research/<subje
   questions do they ask, what distinctions do they rely on, what mistakes do novices make that experts do not?
 - **What does the learning research say about this kind of skill?** (recall of facts, judging cases, a procedure, a
   body skill, a habit each learn differently).
-- Each finding with its source, what was read (the paper or book, not a search summary), and how strong it is.
+- Each finding with its source, what was read (the paper or book, not a search summary), how strong it is, and the
+  passage it rests on, quoted or closely paraphrased with its page or section, so a reviewer can check the claim against
+  the source in a minute. A choice whose passage cannot be found and quoted is a judgement call, and the note says so.
+- The sources live in the research note only: never in a lesson, and never something the owner is asked to read.
 
 The subject's **way of thinking** is what this research finds, in plain words. It is never taken from another subject,
 another subject's plan or lessons, or an earlier pattern in this project: two subjects may end up alike only if their
@@ -73,7 +76,7 @@ Two fresh agents that did not write it:
 - **The learner** (`review.md`): goes through it cold as a beginner, from the learner view only, writes down the way
   of deciding before the first case, does the check, and lists every place it got stuck.
 - **The research check**: reads the lesson and the plan against the step 2 note and step 3, and lists every claim or
-  choice with no source, every place the lesson departs from how the field's experts reason, every structure that
+  choice with no source or whose quoted passage does not support it, every place the lesson departs from how the field's experts reason, every structure that
   looks carried over from another subject rather than drawn from this one's research, and every wrong fact.
 
 Fix everything they find and check again with fresh agents, until both pass. The owner's own try is welcome and
