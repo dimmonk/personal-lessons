@@ -1,26 +1,23 @@
 // The regions the app has maps for. A region is a name, a projection fitted to a frame, and lists of places taken from Natural Earth by
-// name. To add a region, add an entry here (copy the nearest one and change its lists) and run `npm run maps`.
+// name. To add a region, add an entry here (copy the nearest one and change its lists) and run `npm run maps`. A region of the countries in a window of the world is
+// a config of window.mjs (regions-americas.mjs, regions-eurasia.mjs, regions-africa.mjs), not an entry written out here.
 //   land      the kinds of place that are ground; water on top of them is not water (a tap on a coast that the sea's outline overlaps)
 //   draw      the kinds drawn on a blank map, in this order (the others show only when lit)
 //   labelled  the kinds named on the labelled map
 //   borders   which kinds have neighbours and water computed
 import { equalEarth, laea, albers } from './geo.mjs';
-import { slug, area, water, line, coast, find, splitAtMeridian } from './specs.mjs';
+import { citySpecs } from './cities.mjs';
+import { WIDTH, WORLD_VIEW, singlePart } from './fit.mjs';
+import { worldSpecs } from './world-specs.mjs';
+import { windowRegion } from './window.mjs';
+import { slug, area, water, line, coast, find, nameOf } from './specs.mjs';
 import { sharedEdges } from './topology.mjs';
+import { AMERICAS } from './regions-americas.mjs';
+import { EURASIA } from './regions-eurasia.mjs';
+import { AFRICA } from './regions-africa.mjs';
+import { WORLD_FEATURES } from './regions-world.mjs';
 
-const WIDTH = 1000;
-
-/* ---------- projections fitted to a frame ---------- */
-// one projection, its frame the bounding box of a longitude/latitude window, scaled to WIDTH units across
-function singlePart(raw, view) {
-  const flip = (lon, lat) => { const [x, y] = raw(lon, lat); return [x, -y]; };
-  const edge = [];
-  for (let lon = view.lon[0]; lon <= view.lon[1]; lon += 0.25) edge.push([lon, view.lat[0]], [lon, view.lat[1]]);
-  for (let lat = view.lat[0]; lat <= view.lat[1]; lat += 0.25) edge.push([view.lon[0], lat], [view.lon[1], lat]);
-  const xs = edge.map(([lon, lat]) => flip(lon, lat)[0]), ys = edge.map(([lon, lat]) => flip(lon, lat)[1]);
-  const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)], s = WIDTH / (x1 - x0);
-  return { size: [WIDTH, (y1 - y0) * s], parts: [{ id: 'main', project: (lon, lat) => { const [x, y] = flip(lon, lat); return [(x - x0) * s, (y - y0) * s]; }, rect: [0, 0, WIDTH, (y1 - y0) * s] }] };
-}
+/* ---------- the United States: a projection of its own, Albers USA ---------- */
 // the United States as d3's albersUsa lays it out: the lower 48, Alaska and Hawaii on insets at the lower left; one frame
 function albersUsa() {
   const k = 1070, s = WIDTH / (0.91 * k), at = (x, y) => [(x + 0.455 * k) * s, (y + 0.238 * k) * s];
@@ -34,38 +31,6 @@ function albersUsa() {
   const box = p => { const [x0, y0, x1, y1] = p.rect; return { id: p.id, x: x0, y: y0, w: x1 - x0, h: y1 - y0 }; };
   // the lower 48's neighbours and water stop at the insets: what lies under an inset is covered by it
   return { size: [WIDTH, 0.476 * k * s], parts: [{ ...lower48, cut: [alaska.rect, hawaii.rect] }, alaska, hawaii], frames: [alaska, hawaii].map(box) };
-}
-
-/* ---------- the world ---------- */
-const CONTINENTS = { Africa: 'Africa', Antarctica: 'Antarctica', Asia: 'Asia', Europe: 'Europe', 'North America': 'North America', Oceania: 'Oceania', 'South America': 'South America' };
-const OCEANS = [['pacific', 'Pacific Ocean', ['North Pacific Ocean', 'South Pacific Ocean']], ['atlantic', 'Atlantic Ocean', ['North Atlantic Ocean', 'South Atlantic Ocean']],
-  ['indian', 'Indian Ocean', ['INDIAN OCEAN']], ['southern', 'Southern Ocean', ['SOUTHERN OCEAN']], ['arctic', 'Arctic Ocean', ['Arctic Ocean']]];
-// the big regions are the United Nations' (Natural Earth's SUBREGION), with Russia's part east of the Urals as Northern Asia; South America is a
-// continent and its own region, so it is only the continent
-const REGION_NAMES = { 'Northern America': 'Northern America', 'Central America': 'Central America', Caribbean: 'The Caribbean',
-  'Northern Europe': 'Northern Europe', 'Western Europe': 'Western Europe', 'Eastern Europe': 'Eastern Europe', 'Southern Europe': 'Southern Europe',
-  'Northern Africa': 'Northern Africa', 'Western Africa': 'West Africa', 'Middle Africa': 'Central Africa', 'Eastern Africa': 'East Africa', 'Southern Africa': 'Southern Africa',
-  'Western Asia': 'Western Asia', 'Central Asia': 'Central Asia', 'Southern Asia': 'South Asia', 'Eastern Asia': 'East Asia', 'South-Eastern Asia': 'Southeast Asia',
-  'Australia and New Zealand': 'Australia and New Zealand', Melanesia: 'Melanesia', Micronesia: 'Micronesia', Polynesia: 'Polynesia', 'Northern Asia': 'Northern Asia' };
-
-async function worldSpecs(load) {
-  const countries = await load('countries110'), marine = await load('marine110');
-  const carriers = [];
-  for (const f of countries) {
-    const continent = CONTINENTS[f.props.CONTINENT];
-    if (!continent) continue;
-    if (f.props.NAME === 'Russia') {
-      const { west, east } = splitAtMeridian(f, 60);
-      carriers.push({ f: west, continent: 'Europe', subregion: 'Eastern Europe', tag: 'russia-west' }, { f: east, continent: 'Asia', subregion: 'Northern Asia', tag: 'russia-east' });
-    } else carriers.push({ f, continent, subregion: f.props.SUBREGION, tag: slug(f.props.NAME) });
-  }
-  const hidden = carriers.map(c => area([c.f], { id: `c-${c.tag}`, name: c.tag, kind: 'country', layer: 'countries', hidden: true }));
-  const membersOf = pick => carriers.filter(pick).map(c => `c-${c.tag}`);
-  const continents = Object.values(CONTINENTS).map(name => ({ id: slug(name), name, kind: 'continent', members: membersOf(c => c.continent === name) }));
-  const regions = Object.entries(REGION_NAMES).filter(([sub]) => carriers.some(c => c.subregion === sub))
-    .map(([sub, name]) => ({ id: slug(name), name, kind: 'region', members: membersOf(c => c.subregion === sub) }));
-  const oceans = OCEANS.map(([id, name, names]) => water(find(marine, 'name', names), { id, name, kind: 'ocean', layer: 'marine' }));
-  return [...hidden, ...continents, ...oceans, ...regions];
 }
 
 /* ---------- the United States ---------- */
@@ -107,7 +72,8 @@ async function usSpecs(load) {
     ...US_RIVERS.map(n => line(find(rivers, 'name', n), { id: `${slug(n)}-river`, name: `${n} River`, kind: 'river', layer: 'rivers', ...only })),
     pacific, atlantic, gulf, ...coasts,
     ...[['ROCKY MOUNTAINS', 'Rocky Mountains', ranges], ['APPALACHIAN MTS.', 'Appalachian Mountains', ranges], ['CASCADE RANGE', 'Cascade Range', ranges], ['SIERRA NEVADA', 'Sierra Nevada', sierra]]
-      .map(([n, name, src]) => area(find(src, 'NAME', n), { id: slug(name), name, kind: 'range', layer: 'ranges', ...only }))
+      .map(([n, name, src]) => area(find(src, 'NAME', n), { id: slug(name), name, kind: 'range', layer: 'ranges', ...only })),
+    ...citySpecs(await load('places10'))
   ];
 }
 
@@ -115,7 +81,6 @@ async function usSpecs(load) {
 // the five microstates are dots, each with the pixels its name stands from its dot, right and down (the app draws a line between): chosen so that no two names touch
 // on a phone with western Europe in three panels (the pilot's look) and each name lies over the land or sea nearest its dot
 const MICROSTATES = { Andorra: [-40, 24], Monaco: [-28, 26], Liechtenstein: [-30, -24], 'San Marino': [34, -12], Vatican: [-34, 22] };
-const nameOf = f => ({ 'Czech Republic': 'Czechia' }[f.props.NAME_EN] || f.props.NAME_EN);
 const LEFT_OUT = ['Jersey', 'Guernsey', 'Isle of Man'];   // the crown dependencies are specks beside the countries a lesson asks
 const EUROPE_SEAS = [['atlantic', 'Atlantic Ocean', 'North Atlantic Ocean', 'ocean'], ['north-sea', 'North Sea', 'North Sea'], ['baltic-sea', 'Baltic Sea', 'Baltic Sea'],
   ['mediterranean', 'Mediterranean Sea', 'Mediterranean Sea'], ['bay-of-biscay', 'Bay of Biscay', 'Bay of Biscay'], ['english-channel', 'English Channel', 'English Channel'],
@@ -138,18 +103,20 @@ async function europeSpecs(load) {
 
 /* ---------- the list ---------- */
 const frame = (fitted, extra) => ({ size: fitted.size, parts: fitted.parts, frames: fitted.frames, ...extra });
-const world = singlePart(equalEarth(), { lon: [-180, 180], lat: [-90, 90] });
+const world = singlePart(equalEarth(), WORLD_VIEW);
 const europe = singlePart(laea(10, 50), EUROPE_VIEW);
 const usa = albersUsa();
 
 export const REGIONS = [
   { id: 'world', name: 'The world', ...frame(world), tol: 0.1, load: ['countries110', 'marine110'], specs: worldSpecs,
     land: ['continent'], draw: ['continent'], labelled: ['continent', 'ocean'] },
-  { id: 'us', name: 'The United States', ...frame(usa), tol: 0.35, load: ['states50', 'countries50', 'marine50', 'lakes50', 'rivers50', 'regions50', 'regions10'], specs: usSpecs,
+  { id: 'us', name: 'The United States', ...frame(usa), tol: 0.35, load: ['states50', 'countries50', 'marine50', 'lakes50', 'rivers50', 'regions50', 'regions10', 'places10'], specs: usSpecs,
     land: ['state', 'country'], draw: ['country', 'state', 'lake', 'river'], labelled: ['state', 'lake', 'river', 'coast', 'range', 'ocean', 'sea'],
     borders: { land: ['state', 'country'], water: ['ocean', 'sea', 'lake'], across: (a, b) => a.layer !== b.layer && (a.kind === 'state') !== (b.kind === 'state'),
       along: { eps: 8, minKm: 20 }, coast: { eps: 0.25, minKm: 15 } } },
   { id: 'europe-west', name: 'Europe, west', ...frame(europe), tol: 0.35, minVisible: 6, load: ['countries50', 'marine50', 'regions50', 'regions10'], specs: europeSpecs,
     land: ['country'], draw: ['country'], labelled: ['country', 'sea', 'strait', 'ocean', 'range'],
-    borders: { land: ['country'], water: ['ocean', 'sea'], across: () => false, along: { eps: 8, minKm: 20 }, coast: { eps: 0.2, minKm: 15 } } }
+    borders: { land: ['country'], water: ['ocean', 'sea'], across: () => false, along: { eps: 8, minKm: 20 }, coast: { eps: 0.2, minKm: 15 } } },
+  ...[...AMERICAS, ...EURASIA, ...AFRICA].map(windowRegion),
+  WORLD_FEATURES
 ];

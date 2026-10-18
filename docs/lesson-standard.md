@@ -458,10 +458,8 @@ each question from the learner's range and a seed, and stores its tries under `s
 
 - A private form into `lines` (Psychology part F), refused by V70 (`NOT_BUILT` in `tests/lessons/rules-shape.mjs`).
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
-- Map data beyond `world`, `us` and `europe-west` (3.11): every other region the design names is a list in `tools/maps/regions.mjs`
-  and a build; a city, a capital and a part of a state (halves and thirds of a unit) as places; flags drawn from the map data (the emoji
-  flag is text in the place group's list, shown large by a `flags` block); Alaska's Arctic coast as water. The Suez and Panama canals, the straits other than Gibraltar and the
-  world's seas have no data until the regions that hold them are built (3.11, "Coasts, straits and canals").
+- A part of a state (halves and thirds of a unit) as a place; flags drawn from the map data (the emoji flag is text in the place group's list,
+  shown large by a `flags` block); Alaska's Arctic coast as water; the Strait of Hormuz and the Bering Strait as outlines (they are points, 3.11).
 - Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
   the range as a lesson step with a check of its own, and a range typed by hand.
 
@@ -471,7 +469,11 @@ each question from the learner's range and a seed, and stores its tries under `s
 `tools/maps/.cache/`) into one script per region, `public/maps/<region>.js`, registered with `FC.map(id, region)` in the frozen
 `FC.maps`. Nothing is fetched when the app runs. A region is a list in `tools/maps/regions.mjs`: a projection fitted to a frame
 (Equal Earth for `world`; Albers USA, d3's layout, with Alaska and Hawaii on insets for `us`; Lambert equal-area for
-`europe-west`), and the places taken from Natural Earth by name. To add a region, add a list and run the build.
+`europe-west`), and the places taken from Natural Earth by name. To add a region, add a list and run the build. Eighteen regions are made by one factory
+(`tools/maps/window.mjs`, lists in `regions-americas.mjs`, `regions-eurasia.mjs`, `regions-africa.mjs`): a window of the world laid out 1000 units across by a
+Lambert equal-area (an Albers conic for Canada), the countries that have ground in the frame (the ones the part asks must show, the rest are neighbors and are left
+out when only a sliver shows), and the seas, straits, canals, rivers, lakes, ranges and deserts the part names; `regions-world.mjs` gathers those lists for
+`world-features`, so a name is written once and an id is the same on every map (`france`, `sahara`, `strait-of-hormuz`).
 
 ```js
 FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], draw: ['country'], labelled: ['country', 'sea', 'ocean', 'range'],
@@ -481,9 +483,21 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
 ```
 
 - A place's `rings` name entries of the ring table, so a continent or a census region is its members' rings and no outline is stored
-  twice. `kind` is the kind of place (`country`, `state`, `continent`, `region`, `ocean`, `sea`, `strait`, `lake`, `river`, `canal`, `coast`, `range`); `at` is where
-  its name goes (3.9: its size is the app's, in pixels); `dot` a microstate (5 of them in `europe-west`), a point with a tap radius, and `lead` the pixels, right
+  twice. `kind` is the kind of place (`country`, `state`, `province`, `continent`, `region`, `ocean`, `sea`, `strait`, `lake`, `river`, `canal`, `coast`, `range`, `desert`, `city`); `at` is where
+  its name goes (3.9: its size is the app's, in pixels); `dot` a microstate, a small island state, a city or a strait with no outline, a point with a tap radius, and `lead` the pixels, right
   and down, that its name stands from the dot (the app draws a line between). A tap on the circle of a dot is named for the microstate, not the country under it.
+- **Dots of the kind `city`** (`us`: the 50 state capitals and 34 big cities, Dallas–Fort Worth and Minneapolis–St. Paul as one dot each; `tools/maps/cities.mjs`, from
+  Natural Earth's populated places) have no outline (`rings: []`), are not ground, not in `draw` and not in `labelled`: the blank map shows none, a lit city is drawn as a dot
+  and named on its map (a lit place always is), and `labels: true` names none. Found within the radius of a dot (2% of the map's width, divided by the zoom); a tap on a city is
+  named for it when a city is asked and for the state it is in when a state is, a tap on a state is never on a city. A city's id is its name (`denver`), except where a state
+  has it (`new-york-city`, `washington-dc`). A capital that is also a big city is one place; Minneapolis–St. Paul is `minneapolis-st-paul` and the capital `st-paul` is a dot beside it.
+- **Where a dot's name stands**: a spec's `lead` is `[dx, dy]` pixels by hand (the five microstates of `europe-west`), or `'auto'`: the build sets it clear of the other dots and
+  names of the same `groups` (a lesson's cities: west, east, the capitals of the West and Midwest, the capitals of the South and Northeast; a region's island states) as
+  they stand on a phone's map (360 pixels across) looked at in panels zoomed 3 times, and leaves it out (the name stands over its dot) when nothing is in the way (`leads.mjs`).
+  A city may lie over its state's name. The file holds only whole numbers, never `'auto'`.
+- **A point given by hand** (`point: [lon, lat]` in a spec, no outline): the Strait of Hormuz and the Bering Strait, which Natural Earth does not draw; a strait with an
+  outline (the Bosporus, from the 10 m marine layer) has its dot at the middle of its extent as Gibraltar does. A strait or sea whose outline stops short of a shore has a patch drawn
+  by hand (`SEA_PATCHES` in `window.mjs`: the Gulf of Aqaba, which the Red Sea of the data ends before, so Jordan is on the Red Sea).
 - The build projects every outline in advance and cuts it to the frame; simplifies it (Douglas-Peucker, 0.1 to 0.35 of a unit)
   keeping every vertex two neighbors share, so a border is the same on both sides; rounds to tenths; drops a ring under 0.04 square units.
   The lower 48's water and neighbors are not cut away under an inset (a tap on the sea beside Hawaii is the Pacific); the lower 48's land is.
@@ -491,10 +505,23 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   is shared on land (a border through a lake is not one; Four Corners is not one), or, for a state and Canada or Mexico, when a
   stretch of 20 km of one's outline runs unbroken within 8 km of the other's; water is every sea, ocean or lake whose outline a coast
   reaches (a Great Lake lies inside the polygons of the states around it, so a lake is a state's water when a share of the lake's area is inside it).
+  In the 18 regions of countries a lake is not water (`borders.water` is oceans and seas): Uganda is landlocked, Lake Victoria a lake it lies on; the Caspian is a sea in Natural Earth.
+- Natural Earth's own choices, kept: Western Sahara and Kosovo are places of their own, Palestine (the West Bank and Gaza) is one place, Northern Cyprus is Cyprus and Somaliland is
+  Somalia, Taiwan is a country, dependencies (Puerto Rico, the Faroes) are left out unless a part asks them (Puerto Rico), France's polygons in South America are French Guiana.
+- Measured on 2026-10-18: the three above, and: `americas-north` 61.8 KB (13 provinces and territories, the United States and Greenland, 3 oceans, 6 seas, 4 lakes), `mexico-central` 28.6 KB (the
+  Panama Canal), `caribbean` 23.0 KB (7 island states as dots), `south-america` 60.1 KB (French Guiana, the Andes, the Amazon), `europe-north` 58.0 KB, `europe-east` 64.3 KB (the Danube, the Carpathians),
+  `balkans` 36.7 KB, `middle-east` 43.8 KB (the Bosporus, Hormuz), `arabia-north-africa` 86.2 KB (the Suez Canal, 3 dots), `africa-west` 36.2 KB, `africa-central` 59.3 KB (the Sahara, the Sahel, the Congo),
+  `africa-east` 37.9 KB (the Nile, Lake Victoria), `africa-south` 30.6 KB (the Kalahari), `asia-south` 47.0 KB, `asia-central` 49.2 KB (the Caucasus, the Caspian), `asia-east` 90.7 KB (the Yangtze, the
+  Mekong, the Taiwan Strait), `asia-islands` 64.5 KB (12 dots, the Strait of Malacca), `world-features` 142.8 KB (96 places: 7 continents, 5 oceans, 51 seas, 7 straits, 2 canals, 9 rivers, Lake Victoria,
+  8 ranges, 5 deserts, the Sahel), and `us` 97.8 KB with its 84 cities: 1265 KB in all (the design's budget was about 600 KB for the first three; the whole is under 1.5 MB, which `tests/place-pure.mjs` holds). Each
+  file is under 560 lines (V47 holds 800). A region of a wide window (`arabia-north-africa`, `africa-west`, `asia-central`) is 0.4 to 0.6 as tall as it is wide: at a phone's width it is read as panels.
 - Measured on 2026-10-13: `world` 85.2 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 88.5 KB (343 rings, 82 places:
   50 states and DC, 4 regions, Canada and Mexico, 5 Great Lakes, 10 rivers, 3 coasts, 4 ranges, Pacific, Atlantic, Gulf of Mexico),
   `europe-west` 61.7 KB (132 rings, 49 places: 34 countries, 5 dots, 11 seas, the Strait of Gibraltar, the Atlantic, the Alps, the Pyrenees):
   235 KB in all (about 80 KB compressed), against the design's budget of about 600 KB. Each file is under 450 lines (V47 holds 800).
+- `tests/maps-pure.mjs` holds the 18 regions and the cities to known facts: every place a part asks is on its map, a tap on a capital is inside its country, landlocked countries have no water and
+  islands have a sea, dots are dots, Hormuz is found within the radius of its point, the Suez and Panama canals are found beside them and not in the desert, the cities are found and named as dots,
+  and no `'auto'` is left in a file.
 - `tests/place-pure.mjs` holds the data to known facts (Switzerland's neighbors and no water, Belgium's North Sea, Michigan's lakes,
   Nevada landlocked, a tap on each capital inside its country, the shore of California, New Jersey and Texas on the three coasts, the
   Strait of Gibraltar found within its radius); a change to the lists is checked by it and by V47.
@@ -509,17 +536,16 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   named as ("You tapped: The Pacific Ocean"). The coast of a country on another map (West Africa's coast, "a port and its coast") is the same
   helper with that region's states or countries, one line in its list when the region is built; where a design means the countries along a coast,
   the countries are the places.
-- **A strait is built** as a kind (`strait`), with data for the Strait of Gibraltar (`europe-west`). It is water, drawn from Natural Earth's outline
+- **A strait is built** as a kind (`strait`), with data for Gibraltar (`europe-west`, `world-features`), the Bosporus and Hormuz (`middle-east`), Taiwan, Malacca and Makassar. It is water, drawn from Natural Earth's outline
   when lit, which for a narrow strait is slivers along its two shores; so it carries a point at the middle of the extent of its pieces, found
   within the radius of a dot (2% of the map's width, divided by the zoom), and a tap on land inside its outline is not the strait unless it is
-  within that radius. Its dot is drawn only once the strait is lit. Natural Earth's marine layer also holds Malacca, Singapore, Makassar, Taiwan,
+  within that radius. Its dot is drawn only once the strait is lit. Natural Earth's marine layer also holds Singapore,
   Korea, Luzon, Hudson, Davis, the Straits of Florida, the Channel and the Mozambique Channel, each one `water(...)` entry in the list of the
-  region that shows it. **Not built**: a strait with no outline in the data (Bering, Hormuz, the Bosphorus, the Dardanelles), which needs a point
-  given by hand in the list (one more field of the spec).
+  region that shows it. A strait with no outline in the data (Bering, Hormuz) is a place with no rings and a `point` given by hand (3.11), found within the radius, drawn as its lit dot.
+  **Not built**: the Dardanelles (the 10 m outline is there; no part names it).
 - **A canal is built** as a kind (`canal`, a line held within a band of 2% of the map's width, the radius of a dot, so a short line is still a
-  target), held by tests on a made-up line; it has **no data**: the Suez and Panama canals are in Natural Earth (`rivers50`) but lie in
-  regions that are not built (the Middle East and North Africa; Mexico and Central America), and the world map shows continents, oceans and
-  regions only. Each is one `line(...)` entry with `kind: 'canal'` in its region's list when that region is built.
+  target), held by tests on a made-up line and on the data: the Panama Canal (`mexico-central`, `world-features`) and the Suez Canal (`arabia-north-africa`, `world-features`), each one `line(...)` entry with
+  `kind: 'canal'` from Natural Earth's rivers layer, not drawn on a blank map and drawn as a thick line once lit.
 
 ## 4. Feedback, support and fading, order and difficulty
 

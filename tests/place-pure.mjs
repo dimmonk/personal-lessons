@@ -10,6 +10,9 @@ import { REGIONS } from '../tools/maps/regions.mjs';
 // where a longitude and latitude fall on a region's map, by the projection the build used (part: 'main', or an inset of the United States)
 const projectOf = (region, part = null) => { const R = REGIONS.find(r => r.id === region), p = R.parts.find(x => !part || x.id === part); return (lon, lat) => p.project(lon, lat).map(v => Math.round(v * 10) / 10); };
 
+// the whole of public/maps/: the design's budget was about 600 KB for the first three regions; the 18 more of Geography's parts 12 to 30 and the US cities bring it to this
+const MAPS_BUDGET_KB = 1500;
+
 async function suite(app) {
   const failures = [];
   let checks = 0;
@@ -22,20 +25,20 @@ async function suite(app) {
   const at = (region, part, lon, lat, k = 1) => [...projectOf(region, part)(lon, lat), k];
 
   /* ---------- the data is there, frozen, and within its budget ---------- */
-  same(Object.keys(FC.maps).sort(), ['europe-west', 'isles', 'us', 'world'], 'the regions registered (the test region among them)');
+  const files = (await readdir(new URL('../public/maps/', import.meta.url))).filter(f => f.endsWith('.js'));
+  same(Object.keys(FC.maps).sort(), [...files.map(f => f.replace(/\.js$/, '')), 'isles'].sort(), 'every file of public/maps/ is a region registered (the test region among them)');
   check(Object.isFrozen(FC.maps) && Object.isFrozen(FC.maps.world) && Object.isFrozen(FC.maps.world.rings), 'a region is frozen like every other record');
   let duplicate = false;
   try { FC.map('world', FC.maps.world); } catch (e) { duplicate = /registered twice/.test(e.message); }
   check(duplicate, 'a region registered twice is refused');
-  const files = (await readdir(new URL('../public/maps/', import.meta.url))).filter(f => f.endsWith('.js'));
   let bytes = 0;
   for (const f of files) {
     const text = await readFile(new URL(`../public/maps/${f}`, import.meta.url), 'utf8');
     bytes += Buffer.byteLength(text);
     check(text.split('\n').length < 800, `${f} is under 800 lines`);
   }
-  check(bytes < 600 * 1024, `the maps are ${Math.round(bytes / 1024)} KB, over the design's budget of about 600 KB`);
-  for (const id of ['world', 'us', 'europe-west']) {
+  check(bytes < MAPS_BUDGET_KB * 1024, `the maps are ${Math.round(bytes / 1024)} KB, over the budget of ${MAPS_BUDGET_KB} KB`);
+  for (const id of files.map(f => f.replace(/\.js$/, ''))) {
     const map = mapOf(id), [w, h] = map.size;
     const outside = map.places.filter(p => p.at && (p.at[0] < 0 || p.at[0] > w || p.at[1] < 0 || p.at[1] > h));
     same(outside.map(p => p.id), [], `${id}: every label point is on the map`);

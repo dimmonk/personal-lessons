@@ -19,6 +19,7 @@ for (const R of REGIONS.filter(r => !wanted.length || wanted.includes(r.id))) {
   const built = buildRegion(R, await R.specs(load));
   const bytes = await writeMap(R, mapSource(R, built, sourceNote(R.load)));
   total += bytes;
+  if (built.dropped.length) console.log(`  ${R.id}: only a sliver in the frame, left out: ${built.dropped.join(', ')}`);
   console.log(`${R.id.padEnd(12)} ${(bytes / 1024).toFixed(1).padStart(7)} KB  ${String(built.rings.length).padStart(4)} rings  ${String(built.places.length).padStart(3)} places  ${((Date.now() - started) / 1000).toFixed(1)}s`);
 }
 console.log(`${'total'.padEnd(12)} ${(total / 1024).toFixed(1).padStart(7)} KB`);

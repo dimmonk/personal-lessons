@@ -3,10 +3,11 @@
 import { bboxOf, absArea, ringCentroid, clipRing, clipLine, cutOut, simplify, labelPoint } from './geo.mjs';
 import { sharedEdges, neighborsFromEdges, bordersAlong, waterOf, isLake } from './topology.mjs';
 import { pointInRing } from './geo.mjs';
+import { assignLeads, AUTO_LEAD } from './leads.mjs';
 
 const Q = 10;                       // coordinates are stored in tenths of a unit
 const round1 = v => Math.round(v * Q) / Q;
-const MIN_AREA = 0.04;              // a ring smaller than this (square units) is not kept
+const MIN_AREA = 0.04;              // a ring smaller than this (square units) is not kept (a region may say `minArea` for a larger one)
 const MIN_LINE = 0.6;               // nor a line shorter than this (units)
 const lineLength = pts => pts.slice(1).reduce((n, p, i) => n + Math.hypot(p[0] - pts[i][0], p[1] - pts[i][1]), 0);
 const outlinesOf = spec => (spec.line ? spec.lines : spec.rings) || [];
@@ -28,21 +29,26 @@ function pinShared(specs) {
 }
 
 // one raw outline through one part of the projection: cut to that part's frame, simplified, rounded; the pieces that show
-function shapesOf(raw, part, tol, closed, cover) {
+function shapesOf(raw, part, tol, closed, cover, minArea) {
   const projected = raw.map(p => { const [x, y] = part.project(p[0], p[1]); return [x, y, p[2]]; });
   const pieces = closed ? cutOut(clipRing(projected, part.rect), cover ? [] : part.cut || []) : clipLine(projected, part.rect);
   return pieces.filter(p => p.length)
     .map(p => simplify(p, tol, closed).map(([x, y]) => [round1(x), round1(y)]))
-    .filter(p => closed ? p.length >= 3 && absArea(p) >= MIN_AREA : p.length >= 2 && lineLength(p) >= MIN_LINE);
+    .filter(p => closed ? p.length >= 3 && absArea(p) >= minArea : p.length >= 2 && lineLength(p) >= MIN_LINE);
 }
 // a ring as the whole numbers the file holds: the first point, then the step to each next one (all in tenths)
 const toSteps = pts => pts.flatMap((p, i) => [Math.round((p[0] - (i ? pts[i - 1][0] : 0)) * Q), Math.round((p[1] - (i ? pts[i - 1][1] : 0)) * Q)]);
 
-// The point a dot is found at, in final units, in the part where it shows: the centre of a microstate's outline, and for a strait the middle of the
-// extent of all its pieces (Natural Earth draws a narrow strait as slivers along its two shores, so no one piece is its middle).
-function centreOf(spec, parts) {
+function outlineCentre(spec) {
   const biggest = [...spec.rings].sort((a, b) => b.length - a.length)[0], box = bboxOf(spec.rings.flat());
-  const c = spec.kind === 'strait' ? [(box[0] + box[2]) / 2, (box[1] + box[3]) / 2] : ringCentroid(biggest);
+  return spec.kind === 'strait' ? [(box[0] + box[2]) / 2, (box[1] + box[3]) / 2] : ringCentroid(biggest);
+}
+
+// The point a dot is found at, in final units, in the part where it shows: the centre of a microstate's outline, and for a strait the middle of the
+// extent of all its pieces (Natural Earth draws a narrow strait as slivers along its two shores, so no one piece is its middle). A spec with a `point`
+// ([lon, lat], given by hand or taken from a populated place) is found there: a strait with no outline in the data, a city.
+function centreOf(spec, parts) {
+  const c = spec.point || outlineCentre(spec);
   for (const part of parts) {
     const [x, y] = part.project(c[0], c[1]), [x0, y0, x1, y1] = part.rect;
     if (x >= x0 && x <= x1 && y >= y0 && y <= y1) return [round1(x), round1(y)];
@@ -53,7 +59,7 @@ function centreOf(spec, parts) {
 // where the name goes: inside the largest shape (the middle of a line), or on the point of a dot. How big it is and which way a microstate's name leads away from
 // its dot are not the map's to say in map units: the app sets every name in pixels (place-view.js), and a spec's `lead` is the pixels it stands off the dot.
 function labelOf(spec, shapes, dot) {
-  if (dot) return { at: dot, ...(spec.lead ? { lead: spec.lead } : {}) };
+  if (dot) return { at: dot, ...(spec.lead && spec.lead !== AUTO_LEAD ? { lead: spec.lead } : {}) };
   if (spec.line) { const longest = [...shapes].sort((a, b) => lineLength(b) - lineLength(a))[0]; return { at: longest[Math.floor(longest.length / 2)] }; }
   const largest = [...shapes].sort((a, b) => absArea(b) - absArea(a))[0];
   return { at: (spec.label || labelPoint([largest], 0.3)).map(round1) };
@@ -64,13 +70,13 @@ export function buildRegion(R, all) {
   if (twice) throw new Error(`${R.id}: two places are called "${twice}"`);
   pinShared(all);
   // 1. the outline of every spec that has its own, through the parts it shows in
-  const drawn = new Map();
+  const drawn = new Map(), dropped = [];
   for (const spec of all.filter(s => !s.members)) {
     const open = spec.line === true, mine = parts.filter(p => !spec.parts || spec.parts.includes(p.id));
-    const shapes = outlinesOf(spec).flatMap(raw => mine.flatMap(part => shapesOf(raw, part, R.tol, !open, spec.cover)));
+    const shapes = outlinesOf(spec).flatMap(raw => mine.flatMap(part => shapesOf(raw, part, R.tol, !open, spec.cover, R.minArea || MIN_AREA)));
     const dot = spec.dot ? centreOf(spec, mine) : null;
     const seen = open ? 1 : shapes.reduce((n, s) => n + absArea(s), 0);
-    if (spec.optional && seen < R.minVisible && !dot) continue;       // a country with a sliver in the frame is left out
+    if (spec.optional && seen < R.minVisible && !dot) { dropped.push(spec.id); continue; }       // a country with a sliver in the frame is left out
     if (!shapes.length && !dot) throw new Error(`${R.id}: ${spec.id} has nothing in the frame`);
     drawn.set(spec.id, { spec, shapes, dot });
   }
@@ -86,11 +92,12 @@ export function buildRegion(R, all) {
     if (spec.hidden) continue;
     const place = { id: spec.id, name: spec.name, kind: spec.kind, ...(spec.line ? { line: true } : {}), rings: members ? members.flatMap(id => at.get(id)) : at.get(spec.id) };
     if (own && own.dot) place.dot = own.dot.map(v => Math.round(v * Q));
-    if (spec.label !== false && shapes.length) Object.assign(place, labelOf(spec, shapes, own && own.dot));
+    if (spec.label !== false && (shapes.length || (own && own.dot))) Object.assign(place, labelOf(spec, shapes, own && own.dot));
     places.push({ place, spec });
   }
   if (R.borders) addBorders(R, specs, places, parts);
-  return { size: R.size, rings, places: places.map(p => p.place), frames: R.frames || [] };
+  assignLeads(R, places);
+  return { size: R.size, rings, places: places.map(p => p.place), frames: R.frames || [], dropped };
 }
 
 // neighbours and water for the land places, from the raw outlines

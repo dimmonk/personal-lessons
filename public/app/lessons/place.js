@@ -3,12 +3,12 @@
 // tools/maps/build-maps.mjs) and the scoring of a tap on it, so the player, the validator and the tests all score a tap the same way.
 //   region   { id, name, size: [w, h], q, land: [kind], draw: [kind], labelled: [kind], frames?, rings: [[x0, y0, dx, dy, ...]], places: [Place] }
 //   Place    { id, name, kind, rings: [ringIndex], line?, dot?: [x, y], at?: [x, y], lead?: [dx, dy], neighbors?: [placeId], water?: [placeId] }
-//            kinds: country, state, continent, region (ground); ocean, sea, strait, lake (water); river, canal, coast (lines); range, desert
+//            kinds: country, state, province, continent, region (ground); ocean, sea, strait, lake (water); river, canal, coast (lines); range, desert; city (a dot with no outline)
 //            Every number is in tenths of a unit of a map `w` units wide, north up. A ring is the first point, then the step to each next one.
 //            A place's rings are an outline in which a point is inside when it is inside an odd number of them (a country with a country inside
 //            it has a hole); a sea, a lake, a range and a desert have no holes, so a point is inside when it is inside any ring. A `line` (a river)
-//            is open and is tapped within a band of it. A `dot` (a microstate) is tapped within a radius of its point; its name stands `lead` pixels
-//            (right, down) from the point on the screen, on a line to it. Land places (`land` kinds) have `neighbors` and `water`: stored, because the build worked them out from the outlines; the app computes none of it.
+//            is open and is tapped within a band of it. A `dot` (a microstate, a small island state, a city, a strait given by a point) is tapped within a radius of its point; its name stands `lead` pixels
+//            (right, down) from the point on the screen, on a line to it. A `city` has no rings: it is drawn only once lit and named when lit or listed in `labels` (like a strait's dot). Land places (`land` kinds) have `neighbors` and `water`: stored, because the build worked them out from the outlines; the app computes none of it.
 //   ask      { id, kind: 'place', prompt, map: regionId, right: placeId | [placeId], slips?: { placeId: slipId }, when? }
 //            { id, kind: 'place', mode: 'neighbor-water', prompt, map: regionId, of: placeId, when? }
 //            `right` as a list is any one of those places. `slips` names the slip of tapping the place it is keyed by.

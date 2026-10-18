@@ -36,3 +36,14 @@ export function splitAtMeridian(feature, lon) {
   }
   return { west: { ...feature, polygons: west }, east: { ...feature, polygons: east } };
 }
+
+/* ---------- the names a country goes by, and the places a window of countries is made of ---------- */
+// Natural Earth's English names, with the few the app says another way
+const COUNTRY_NAMES = { 'Czech Republic': 'Czechia', Turkey: 'Türkiye', 'Ivory Coast': "Côte d'Ivoire", 'East Timor': 'Timor-Leste', 'The Bahamas': 'Bahamas',
+  'United States of America': 'United States', "People's Republic of China": 'China', 'The Gambia': 'Gambia' };
+export const nameOf = f => COUNTRY_NAMES[f.props.NAME_EN] || f.props.NAME_EN;
+// places Natural Earth draws as a country that the app counts as part of another: the polygons are joined to the one they belong to
+export const JOINED = { Cyprus: ['N. Cyprus'], Somalia: ['Somaliland'] };
+// features of the countries layer that are not places of a map (a speck of a dependency, a special region beside a country)
+export const NEVER_DRAWN = ['Hong Kong', 'Macao', 'Aruba', 'Curaçao', 'Sint Maarten', 'Falkland Is.', 'Fr. S. Antarctic Lands', 'Antarctica', 'Åland', 'Br. Indian Ocean Ter.', 'Siachen Glacier', 'Jersey', 'Guernsey', 'Isle of Man', 'Faeroe Is.'];
+export const polygonsIn = (feature, inFrame) => ({ ...feature, polygons: feature.polygons.filter(p => p[0].some(([lon, lat]) => inFrame(lon, lat))) });

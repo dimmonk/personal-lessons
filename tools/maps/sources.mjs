@@ -14,7 +14,8 @@ export const LAYERS = {
   states50: 'ne_50m_admin_1_states_provinces',
   marine110: 'ne_110m_geography_marine_polys', marine50: 'ne_50m_geography_marine_polys',
   lakes50: 'ne_50m_lakes', rivers50: 'ne_50m_rivers_lake_centerlines',
-  regions50: 'ne_50m_geography_regions_polys', regions10: 'ne_10m_geography_regions_polys'
+  regions50: 'ne_50m_geography_regions_polys', regions10: 'ne_10m_geography_regions_polys',
+  marine10: 'ne_10m_geography_marine_polys', places10: 'ne_10m_populated_places_simple'
 };
 
 async function fetchLayer(file) {
@@ -34,10 +35,11 @@ const ringOf = coords => {
   const last = ring[ring.length - 1], first = ring[0];
   return last[0] === first[0] && last[1] === first[1] ? ring.slice(0, -1) : ring;
 };
-// polygons: [[outer, ...holes]]; lines: [[point, ...]]
+// polygons: [[outer, ...holes]]; lines: [[point, ...]]; point: [lon, lat] (a populated place)
 function featureOf(f) {
   const g = f.geometry, props = f.properties || {};
   if (!g) return { props, polygons: [], lines: [] };
+  if (g.type === 'Point') return { props, polygons: [], lines: [], point: g.coordinates.slice(0, 2) };
   if (g.type === 'Polygon') return { props, polygons: [g.coordinates.map(ringOf)], lines: [] };
   if (g.type === 'MultiPolygon') return { props, polygons: g.coordinates.map(p => p.map(ringOf)), lines: [] };
   if (g.type === 'LineString') return { props, polygons: [], lines: [g.coordinates.map(([lon, lat]) => [lon, lat, 0])] };
