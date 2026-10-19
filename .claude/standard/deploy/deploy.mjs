@@ -7,7 +7,8 @@
  *
  * The run, in order, stopping at the first failure (design 2.5):
  *   1  parse the list (syntax)            2  fetch, report what is not shipping, add the worktree(s), load the config from
- *   the shipped tree and resolve the list 3  pinned CLI, root and functions installs (checked, linked)   4  preflight
+ *   the shipped tree and resolve the list 3  pinned CLI, root and functions installs (checked, linked)   4  the checks
+ *   (../checks.mjs: typecheck, lint, unit tests, whichever the project defines; a failure refuses), then preflight
  *   5  the release line: tag check, cut, build, commit, tag, atomic push   6  functions record, beforeFunctions
  *   7  assemble   8  firebase deploy   9  live check, check hook   10  afterRelease   11  fast-forward the caller
  *
@@ -19,6 +20,7 @@ import { existsSync, lstatSync, readFileSync, realpathSync, symlinkSync } from '
 import { constants as osConstants } from 'node:os';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { runChecks } from '../checks.mjs';
 import { CONFIG_FILE, loadConfig } from './config.mjs';
 import { checkDeployment, headerBlocks } from './deploy-check.mjs';
 import { createRunner, deployArgs, hasFunctionsTarget, killRunning, pinnedCli } from './firebase-cli.mjs';
@@ -196,9 +198,27 @@ async function assertTrackedUnchanged(ctx, worktree, label, allowed = []) {
     + '  A hook writes build output (ignored or untracked files) only; a change to a tracked file belongs in a commit on main.');
 }
 
+/**
+ * 4: the checks of each repo's shipped tree, unless they already passed at its current commit. A failure refuses before
+ * anything is cut or uploaded. A recut after a raced push lands on a newer origin/main, so it runs them again there.
+ */
+async function assertChecked(ctx, worktree) {
+  const head = await headSha(ctx.run, worktree);
+  if (ctx.checked.get(worktree) === head) return;
+  try {
+    const ran = await runChecks(ctx.run, worktree, ctx.log);
+    ctx.log(ran.length === 0 ? `no checks defined in ${worktree}/package.json` : `checks passed: ${ran.join(', ')}`);
+  } catch (error) {
+    throw fail(`REFUSED: the checks failed on origin/main, so nothing was cut or deployed.\n${error.message}\n`
+      + '  Fix it on main (the same command fails in your checkout), push, and re-run.');
+  }
+  ctx.checked.set(worktree, head);
+}
+
 /** 5a-5d: refuse unless origin's highest tag is the file's revision, then cut, build and commit. */
 async function cutOnce(ctx, key, line, lineWt, validatedFiles) {
   await assertValidatedTree(ctx, lineWt, lineWt.repo === ctx.repo ? validatedFiles : ['package-lock.json']);
+  await assertChecked(ctx, lineWt.worktree);
   const tagged = await highestRemoteRevision(ctx.run, lineWt.worktree);
   const current = currentRelease(lineWt.worktree, line.siteRoot);
   if (tagged !== current.revision) {
@@ -313,7 +333,7 @@ async function openLine(ctx, project, line) {
 async function execute(deps, words, cleanup) {
   const where = await locate(runnerFor(deps, [{ repo: deps.cwd }]).run, deps.cwd);
   const base = {
-    ...deps, ...where, cleanup, runId: randomUUID(), targets: words,
+    ...deps, ...where, cleanup, runId: randomUUID(), targets: words, checked: new Map(),
     log: (line) => deps.out(`[deploy] ${line}\n`), warn: (line) => deps.err(`[deploy] ${line}\n`),
   };
   const projectPlace = { ...where, worktree: join(where.repo, WORKTREE_DIR) };
@@ -333,6 +353,7 @@ async function deployOpened(ctx, { project, repos, lineWt, line, key, config, fi
   const functions = hasFunctionsTarget(targets.words);
   linkInstalls(repos, project, firebaseJson, functions);
   const validatedFiles = [...VALIDATED_FILES, ...(functions ? functionsSources(firebaseJson).map((s) => join(s, 'package-lock.json')) : [])];
+  for (const { worktree } of repos) await assertChecked(ctx, worktree);
   await runHook(config.hooks.preflight, 'preflight', ctx);
   const landed = line ? await releaseLine(ctx, key, line, lineWt, validatedFiles) : null;
   const live = landed ? withRelease(ctx, key, landed.release) : ctx;
