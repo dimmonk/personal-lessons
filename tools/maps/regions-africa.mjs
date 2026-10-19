@@ -18,7 +18,7 @@ export const AFRICA = [
   { id: 'africa-east', name: 'East Africa and the Horn', project: laea(38, 3), view: { lon: [22, 58], lat: [-14, 20] }, tol: 0.25,
     asked: ['South Sudan', 'Ethiopia', 'Eritrea', 'Djibouti', 'Somalia', 'Kenya', 'Uganda', 'Rwanda', 'Burundi', 'Tanzania', 'Seychelles', 'Comoros'], dots: dots(['Seychelles', 'Comoros']),
     skip: ['France'], oceans: ['indian'], seas: [['red-sea', 'Red Sea', 'Red Sea'], ['gulf-of-aden', 'Gulf of Aden', 'Gulf of Aden'], ['mozambique-channel', 'Mozambique Channel', 'Mozambique Channel']],
-    rivers: [['nile-river', 'Nile River', ['Nile', 'Bahr el Jebel', 'El Bahr el Abyad', 'El Bahr el Azraq', 'Victoria Nile', 'Albert Nile', 'Atbara']]], lakes: [['lake-victoria', 'Lake Victoria', 'Lake Victoria']] },
+    rivers: [['nile-river', 'Nile River', ['Nile', 'Bahr el Jebel', 'El Bahr el Abyad', 'El Bahr el Azraq', 'Victoria Nile', 'Albert Nile', 'Atbara']]] },
   // part 25: Angola and Mozambique, the inland states, South Africa with the two inside and beside it, Madagascar and Mauritius; the Kalahari
   { id: 'africa-south', name: 'Southern Africa', project: laea(32, -20), view: { lon: [8, 60], lat: [-36, -3] }, tol: 0.25,
     asked: ['Angola', 'Mozambique', 'Namibia', 'Botswana', 'Zambia', 'Zimbabwe', 'Malawi', 'South Africa', 'Lesotho', 'Eswatini', 'Madagascar', 'Mauritius'], dots: dots(['Mauritius']),

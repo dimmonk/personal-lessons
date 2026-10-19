@@ -11,17 +11,18 @@ const MAP = '[data-map-ask] .mapsvg';
 // the step of Geography's lesson 16 whose first question is of this form ('tap', 'name', 'border'), moved to: the lesson opens with its method, three screens of
 // names and four worked cases, then a set for each form, so every step of the flow is looked at
 // the first step with a question of this form, that question asked first (a group can mix forms in a shuffled order)
-const goToForm = (page, form) => page.evaluate(f => {
+// the first item of a form, leaving out the places in `avoid`
+const goToForm = (page, form, avoid = []) => page.evaluate(([f, avoid]) => {
   for (let at = 0; at <= LESSON.lesson.flow.length; at++) {
     moveLesson(at);
     if (typeof Q === 'undefined' || !Q || !Q.list || !Q.list.length) continue;
-    const k = Q.list.findIndex(q => q.item.values && q.item.values.form === f);
+    const k = Q.list.findIndex(q => q.item.values && q.item.values.form === f && !avoid.includes(q.item.values.place));
     if (k < 0) continue;
     if (k > 0) { Q.list = [Q.list[k], ...Q.list.filter((_, i) => i !== k)]; Q.cur = freshCur(questionSeconds(Q.list[0])); paintQueue(); }
     return at;
   }
   return -1;
-}, form);
+}, [form, avoid]);
 const rectOf = (page, selector) => page.evaluate(s => {
   const el = document.querySelector(s);
   if (!el) return null;
@@ -111,7 +112,8 @@ export async function fitChecks(env, c) {
     await page.setViewportSize(PHONE);
     await env.openSubject(page, 'geography');
     await env.clickVisible(page, '#screen [data-l="l16"]');
-    await goToForm(page, 'tap');
+    // not Germany: the tap is inside Germany, so asked for Germany it is right with or without the radius, and proves nothing
+    await goToForm(page, 'tap', ['germany']);
     // half the radius from the east edge of Luxembourg, on Germany: a finger's width of error
     const point = await page.evaluate(() => {
       const map = FC.maps['europe-west'], lux = mapPlace(map, 'luxembourg'), reach = map.size[0] * PLACE_SMALL_TAP;

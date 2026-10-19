@@ -12,7 +12,7 @@ export const EURASIA = [
       ['english-channel', 'English Channel', 'English Channel']] },
   // part 18: Poland to the west of Russia, the Black Sea
   { id: 'europe-east', name: 'Europe, east', project: laea(30, 52), view: { lon: [12, 56], lat: [41, 62] }, tol: 0.3,
-    asked: ['Poland', 'Czechia', 'Slovakia', 'Hungary', 'Romania', 'Moldova', 'Belarus', 'Ukraine', 'Russia'],
+    asked: ['Poland', 'Czechia', 'Slovakia', 'Hungary', 'Romania', 'Moldova', 'Belarus', 'Ukraine', 'Russia'], beyond: ['arctic', 'pacific'],
     seas: [['black-sea', 'Black Sea', 'Black Sea'], ['sea-of-azov', 'Sea of Azov', 'Sea of Azov', 'sea', 'marine10'], ['baltic-sea', 'Baltic Sea', 'Baltic Sea'], ['caspian-sea', 'Caspian Sea', 'Caspian Sea']],
     rivers: [['danube-river', 'Danube River', ['Danube', 'Donau']]], ranges: [['carpathians', 'The Carpathians', 'regions50', 'CARPATHIAN MOUNTAINS']] },
   // part 19: the Balkans, Greece, Bulgaria, Cyprus and Malta; the Adriatic and the Aegean

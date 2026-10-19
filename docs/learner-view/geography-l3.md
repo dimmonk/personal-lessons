@@ -66,7 +66,7 @@ Then the answer: A place next to Nevada: Arizona, California, Idaho, Oregon and 
 
 13 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Wyoming, tap; this is seed 19)
+#### Item 1 (made from a group of places: Wyoming, tap; this is seed 20)
 
 Wyoming
 
@@ -76,7 +76,7 @@ Wyoming
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Colorado, Idaho, Montana, Nebraska, South Dakota and Utah. Water: none; it is landlocked. Tell it from Colorado: both are rectangles; Wyoming is the northern one, under Montana.
 
-#### Question 2 (made from a group of places: Colorado, tap; this is seed 28)
+#### Item 2 (made from a group of places: Colorado, tap; this is seed 29)
 
 Colorado
 
@@ -86,7 +86,7 @@ Colorado
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Kansas, Nebraska, New Mexico, Oklahoma, Utah and Wyoming. Water: none; it is landlocked. Tell it from Wyoming: both are rectangles; Colorado is the southern one, over New Mexico.
 
-#### Question 3 (made from a group of places: Idaho, tap; this is seed 16)
+#### Item 3 (made from a group of places: Idaho, tap; this is seed 17)
 
 Idaho
 
@@ -96,7 +96,7 @@ Idaho
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-#### Question 4 (made from a group of places: Montana, tap; this is seed 13)
+#### Item 4 (made from a group of places: Montana, tap; this is seed 14)
 
 Montana
 
@@ -106,7 +106,7 @@ Montana
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Idaho, North Dakota, South Dakota and Wyoming. Water: none; it is landlocked. Tell it from Idaho: Montana is the wide one along Canada; Idaho is the narrow one west of it.
 
-#### Question 5 (made from a group of places: Washington, tap; this is seed 0)
+#### Item 5 (made from a group of places: Washington, tap; this is seed 0)
 
 Washington
 
@@ -116,7 +116,7 @@ Washington
 
 After the answer: Reason: Area: the West, its Pacific side. Touches: Canada, Idaho and Oregon. Water: Pacific Ocean. It is the top corner on the left, and it is a state, not the capital, Washington, D.C., on the other coast.
 
-#### Question 6 (made from a group of places: Oregon, tap; this is seed 3)
+#### Item 6 (made from a group of places: Oregon, tap; this is seed 3)
 
 Oregon
 
@@ -126,7 +126,7 @@ Oregon
 
 After the answer: Reason: Area: the West, its Pacific side. Touches: California, Idaho, Nevada and Washington. Water: Pacific Ocean. It is the middle one of the three Pacific states, between Washington and California.
 
-#### Question 7 (made from a group of places: California, tap; this is seed 6)
+#### Item 7 (made from a group of places: California, tap; this is seed 6)
 
 California
 
@@ -136,7 +136,7 @@ California
 
 After the answer: Reason: Area: the West, its Pacific side. Touches: Arizona, Mexico, Nevada and Oregon. Water: Pacific Ocean. It is the long one down the Pacific coast, the state with the most people.
 
-#### Question 8 (made from a group of places: Alaska, tap; this is seed 9)
+#### Item 8 (made from a group of places: Alaska, tap; this is seed 9)
 
 Alaska
 
@@ -144,9 +144,9 @@ Alaska
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Alaska. Nothing is marked before the answer.
 - After the answer Alaska is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Wyoming names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Colorado names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Idaho names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada". Tapping Montana names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada".
 
-After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
+After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Arctic Ocean and Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
 
-#### Question 9 (made from a group of places: Hawaii, tap; this is seed 11)
+#### Item 9 (made from a group of places: Hawaii, tap; this is seed 12)
 
 Hawaii
 
@@ -154,9 +154,9 @@ Hawaii
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Hawaii. Nothing is marked before the answer.
 - After the answer Hawaii is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Wyoming names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Colorado names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Idaho names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada". Tapping Montana names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada".
 
-After the answer: Reason: Area: the West, its Pacific side. Touches: nothing on land; it is islands. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.
+After the answer: Reason: Area: the West, its Pacific side. Touches: no other place by land. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.
 
-#### Question 10 (made from a group of places: Nevada, tap; this is seed 22)
+#### Item 10 (made from a group of places: Nevada, tap; this is seed 23)
 
 Nevada
 
@@ -166,7 +166,7 @@ Nevada
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, California, Idaho, Oregon and Utah. Water: none; it is landlocked. It is the one just east of California, with a slanted west side.
 
-#### Question 11 (made from a group of places: Utah, tap; this is seed 25)
+#### Item 11 (made from a group of places: Utah, tap; this is seed 26)
 
 Utah
 
@@ -176,7 +176,7 @@ Utah
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, Colorado, Idaho, Nevada and Wyoming. Water: none; it is landlocked. It is the rectangle with a corner cut out at the top right, where Wyoming sits.
 
-#### Question 12 (made from a group of places: Arizona, tap; this is seed 31)
+#### Item 12 (made from a group of places: Arizona, tap; this is seed 32)
 
 Arizona
 
@@ -186,7 +186,7 @@ Arizona
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: California, Mexico, Nevada, New Mexico and Utah. Water: none; it is landlocked. It is the bottom left of the four corner states, east of California and on the Mexican border.
 
-#### Question 13 (made from a group of places: New Mexico, tap; this is seed 34)
+#### Item 13 (made from a group of places: New Mexico, tap; this is seed 35)
 
 New Mexico
 
@@ -202,7 +202,7 @@ Then a screen: you can stop here, your place is kept.
 
 7 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 14 (made from a group of places: Wyoming, name; this is seed 20)
+#### Item 14 (made from a group of places: Wyoming, name; this is seed 21)
 
 A map of The United States, north up, with no names on it. Lit: Wyoming. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -215,7 +215,7 @@ A map of The United States, north up, with no names on it. Lit: Wyoming. The lea
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Colorado, Idaho, Montana, Nebraska, South Dakota and Utah. Water: none; it is landlocked. Tell it from Colorado: both are rectangles; Wyoming is the northern one, under Montana.
 
-#### Question 15 (made from a group of places: Colorado, name; this is seed 29)
+#### Item 15 (made from a group of places: Colorado, name; this is seed 30)
 
 A map of The United States, north up, with no names on it. Lit: Colorado. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -226,7 +226,7 @@ A map of The United States, north up, with no names on it. Lit: Colorado. The le
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Kansas, Nebraska, New Mexico, Oklahoma, Utah and Wyoming. Water: none; it is landlocked. Tell it from Wyoming: both are rectangles; Colorado is the southern one, over New Mexico.
 
-#### Question 16 (made from a group of places: Idaho, name; this is seed 17)
+#### Item 16 (made from a group of places: Idaho, name; this is seed 18)
 
 A map of The United States, north up, with no names on it. Lit: Idaho. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -237,7 +237,7 @@ A map of The United States, north up, with no names on it. Lit: Idaho. The learn
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-4 different places of these 11: Washington, Oregon, California, Montana, Idaho, Wyoming, Nevada, Utah, Colorado, Arizona, New Mexico. 4 of them are asked, drawn at random, the ones missed last time or met longest ago first. Each is asked as follows.
+4 different places of these 12: Washington, Oregon, California, Alaska, Montana, Idaho, Wyoming, Nevada, Utah, Colorado, Arizona, New Mexico. 4 of them are asked, drawn at random, the ones missed last time or met longest ago first. Each is asked as follows.
 
 #### Question: Washington (made from a group of places: Washington, border; this is seed 2)
 
@@ -269,7 +269,17 @@ What borders California?
 
 After the answer: Reason: Area: the West, its Pacific side. Touches: Arizona, Mexico, Nevada and Oregon. Water: Pacific Ocean. It is the long one down the Pacific coast, the state with the most people.
 
-#### Question: Montana (made from a group of places: Montana, border; this is seed 15)
+#### Question: Alaska (made from a group of places: Alaska, border; this is seed 11)
+
+What borders Alaska?
+
+**Tap any one state or country next to it, then the water it touches. If no water touches it, tap Landlocked.**
+- The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Alaska; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
+- Right: a tap on Canada, and then on Arctic Ocean, Pacific Ocean. After the answer those places are lit, Alaska is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
+
+After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Arctic Ocean and Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
+
+#### Question: Montana (made from a group of places: Montana, border; this is seed 16)
 
 What borders Montana?
 
@@ -279,7 +289,7 @@ What borders Montana?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Idaho, North Dakota, South Dakota and Wyoming. Water: none; it is landlocked. Tell it from Idaho: Montana is the wide one along Canada; Idaho is the narrow one west of it.
 
-#### Question: Idaho (made from a group of places: Idaho, border; this is seed 18)
+#### Question: Idaho (made from a group of places: Idaho, border; this is seed 19)
 
 What borders Idaho?
 
@@ -289,7 +299,7 @@ What borders Idaho?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-#### Question: Wyoming (made from a group of places: Wyoming, border; this is seed 21)
+#### Question: Wyoming (made from a group of places: Wyoming, border; this is seed 22)
 
 What borders Wyoming?
 
@@ -299,7 +309,7 @@ What borders Wyoming?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Colorado, Idaho, Montana, Nebraska, South Dakota and Utah. Water: none; it is landlocked. Tell it from Colorado: both are rectangles; Wyoming is the northern one, under Montana.
 
-#### Question: Nevada (made from a group of places: Nevada, border; this is seed 24)
+#### Question: Nevada (made from a group of places: Nevada, border; this is seed 25)
 
 What borders Nevada?
 
@@ -309,7 +319,7 @@ What borders Nevada?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, California, Idaho, Oregon and Utah. Water: none; it is landlocked. It is the one just east of California, with a slanted west side.
 
-#### Question: Utah (made from a group of places: Utah, border; this is seed 27)
+#### Question: Utah (made from a group of places: Utah, border; this is seed 28)
 
 What borders Utah?
 
@@ -319,7 +329,7 @@ What borders Utah?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, Colorado, Idaho, Nevada and Wyoming. Water: none; it is landlocked. It is the rectangle with a corner cut out at the top right, where Wyoming sits.
 
-#### Question: Colorado (made from a group of places: Colorado, border; this is seed 30)
+#### Question: Colorado (made from a group of places: Colorado, border; this is seed 31)
 
 What borders Colorado?
 
@@ -329,7 +339,7 @@ What borders Colorado?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Kansas, Nebraska, New Mexico, Oklahoma, Utah and Wyoming. Water: none; it is landlocked. Tell it from Wyoming: both are rectangles; Colorado is the southern one, over New Mexico.
 
-#### Question: Arizona (made from a group of places: Arizona, border; this is seed 33)
+#### Question: Arizona (made from a group of places: Arizona, border; this is seed 34)
 
 What borders Arizona?
 
@@ -339,7 +349,7 @@ What borders Arizona?
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: California, Mexico, Nevada, New Mexico and Utah. Water: none; it is landlocked. It is the bottom left of the four corner states, east of California and on the Mexican border.
 
-#### Question: New Mexico (made from a group of places: New Mexico, border; this is seed 36)
+#### Question: New Mexico (made from a group of places: New Mexico, border; this is seed 37)
 
 What borders New Mexico?
 

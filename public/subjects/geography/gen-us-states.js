@@ -18,8 +18,7 @@
       state('washington', 'Washington', PACIFIC, 'It is the top corner on the left, and it is a state, not the capital, Washington, D.C., on the other coast.', ['Washington', 'Washington State']),
       state('oregon', 'Oregon', PACIFIC, 'It is the middle one of the three Pacific states, between Washington and California.'),
       state('california', 'California', PACIFIC, 'It is the long one down the Pacific coast, the state with the most people.'),
-      // Alaska's north coast is on the Arctic Ocean, which this map does not draw, so it is never asked for its water
-      { ...state('alaska', 'Alaska', PACIFIC, 'It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.'), forms: ['tap', 'name'] },
+      state('alaska', 'Alaska', PACIFIC, 'It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.'),
       state('hawaii', 'Hawaii', PACIFIC, 'It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.'),
       state('montana', 'Montana', MOUNTAIN, 'Tell it from Idaho: Montana is the wide one along Canada; Idaho is the narrow one west of it.'),
       state('idaho', 'Idaho', MOUNTAIN, 'Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.'),

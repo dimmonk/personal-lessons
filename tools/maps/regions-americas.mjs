@@ -8,8 +8,7 @@ export const AMERICAS = [
   { id: 'americas-north', name: 'Canada', project: conic(-96, 50, 70), view: { lon: [-142, -50], lat: [41.5, 83.5] }, tol: 0.6, minArea: 0.3, minVisible: 40,
     asked: ['United States', 'Greenland'], provinces: 'CAN', oceans: ['pacific', 'atlantic', 'arctic'],
     seas: [['hudson-bay', 'Hudson Bay', 'Hudson Bay'], ['james-bay', 'James Bay', 'James Bay'], ['gulf-of-saint-lawrence', 'Gulf of Saint Lawrence', 'Gulf of Saint Lawrence'],
-      ['baffin-bay', 'Baffin Bay', 'Baffin Bay'], ['beaufort-sea', 'Beaufort Sea', 'Beaufort Sea'], ['labrador-sea', 'Labrador Sea', 'Labrador Sea']],
-    lakes: [['lake-superior', 'Lake Superior', 'Lake Superior'], ['lake-huron', 'Lake Huron', 'Lake Huron'], ['lake-erie', 'Lake Erie', 'Lake Erie'], ['lake-ontario', 'Lake Ontario', 'Lake Ontario']] },
+      ['baffin-bay', 'Baffin Bay', 'Baffin Bay'], ['beaufort-sea', 'Beaufort Sea', 'Beaufort Sea'], ['labrador-sea', 'Labrador Sea', 'Labrador Sea']] },
   // part 13: Mexico and the seven countries of the isthmus, the Panama Canal, the Caribbean Sea and the Gulf of Mexico
   { id: 'mexico-central', name: 'Mexico and Central America', project: laea(-88, 17), view: { lon: [-119, -74], lat: [6, 33] }, tol: 0.35,
     asked: ['Mexico', 'Guatemala', 'Belize', 'Honduras', 'El Salvador', 'Nicaragua', 'Costa Rica', 'Panama', 'Colombia', 'United States'], oceans: ['pacific', 'atlantic'],

@@ -51,11 +51,13 @@ function mapWords(block) {
   const pixels = block.labels ? ' Every name is 12 pixels tall on the screen at every zoom; a tiny country\'s name stands off its dot on a line to it.' : '';
   return `A map of ${map.name}, north up, ${names}${view}${(block.lit || []).length ? `. Lit: ${block.lit.map(name).join(', ')}` : ''}. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.${pixels}`;
 }
+// a flag in words: its emoji, or for a drawn flag (no emoji draws Kosovo's) what it is said to look like
+const flagSaid = flag => (typeof flag === 'string' ? flag : flag.said);
 // the flags of places of a group, each about 64 pixels wide on the screen, with the name beside each or none
 function flagsWords(block) {
   const list = GENS[block.gen].places.list, said = block.places.map(id => list.find(p => p.id === id));
-  return block.names ? `${said.length > 1 ? 'The flags, each' : 'The flag,'} about 64 pixels wide with its name beside it: ${said.map(p => `${p.flag} ${p.name}`).join('; ')}.`
-    : `A flag, about 64 pixels wide, with no name beside it: ${said.map(p => p.flag).join(' ')}`;
+  return block.names ? `${said.length > 1 ? 'The flags, each' : 'The flag,'} about 64 pixels wide with its name beside it: ${said.map(p => `${flagSaid(p.flag)} ${p.name}`).join('; ')}.`
+    : `A flag, about 64 pixels wide, with no name beside it: ${said.map(p => flagSaid(p.flag)).join(' ')}`;
 }
 const FORM_NAMES = { fees: 'fee sheet', paystub: 'pay stub', matchrule: 'match rule', beneficiary: 'beneficiary page', foreign: 'foreign account summary', table: 'plain table' };
 const formName = form => { const name = FORM_NAMES[form] || form; return `${/^[aeiou]/i.test(name) ? 'An' : 'A'} ${name}`; };
@@ -399,7 +401,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
   if (e.checkIsDrawn(check) && 'gen' in check.items.draw) {
     const draw = check.items.draw, gen = subject.gens[draw.gen], split = Object.entries(draw.split).filter(([, k]) => k > 0).map(([f, k]) => `${k} ${f}`).join(', ');
     out.push(`The questions are drawn at random from one group of places (${gen.places.list.map(p => p.name).join(', ')}): ${split}, the same run drawing the same. Within a form the places are drawn at random, a place the draw has not used first and one last asked in another form before one last asked in this form${Object.keys(draw.only || {}).length ? `; ${Object.entries(draw.only).map(([f, ids]) => `${ids.join(', ')} only as ${f}`).join('; ')}` : ''}. One question of each form is shown here, as a learner would meet it:`, '');
-    Object.keys(draw.split).forEach(form => { const pair = e.placePairs(gen).find(p => p.form === form); out.push(...questionLines(e, data, { key: e.placeKey(gen.id, pair.place), item: e.itemFromGen(gen, e.placeSeedOf(gen, pair.place, form)), seed: e.placeSeedOf(gen, pair.place, form) }, null, `Question in the draw: ${form}`)); });
+    Object.keys(draw.split).forEach(form => { const pair = e.placePairs(gen).find(p => p.form === form && e.placeAllowedForms(gen, p.place, draw.only || {}).includes(form)); out.push(...questionLines(e, data, { key: e.placeKey(gen.id, pair.place), item: e.itemFromGen(gen, e.placeSeedOf(gen, pair.place, form)), seed: e.placeSeedOf(gen, pair.place, form) }, null, `Question in the draw: ${form}`)); });
   }
   else if (e.checkIsDrawn(check)) {
     out.push(`The questions are drawn at random from the topics: ${check.items.draw.strands.join(', ')} (${check.items.draw.n} of them), the same run drawing the same; what no earlier ${check.retest ? 'run of this check' : 'check'} asked comes first, and a question about the learner's own answers is left out until they are entered. Each is shown here once, as a learner would meet it:`, '');

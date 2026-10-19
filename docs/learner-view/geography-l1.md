@@ -48,7 +48,7 @@ Then the answer: Africa. Africa is the big continent at the middle of the map, s
 
 12 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: North America, tap; this is seed 0)
+#### Item 1 (made from a group of places: North America, tap; this is seed 0)
 
 North America
 
@@ -58,7 +58,7 @@ North America
 
 After the answer: Reason: North America is the continent at the top left of the map, from Canada and Alaska down to Panama, between the Pacific and the Atlantic.
 
-#### Question 2 (made from a group of places: South America, tap; this is seed 2)
+#### Item 2 (made from a group of places: South America, tap; this is seed 2)
 
 South America
 
@@ -68,7 +68,7 @@ South America
 
 After the answer: Reason: South America is the continent below North America, joined to it at Panama, between the Pacific and the Atlantic.
 
-#### Question 3 (made from a group of places: Europe, tap; this is seed 4)
+#### Item 3 (made from a group of places: Europe, tap; this is seed 4)
 
 Europe
 
@@ -78,7 +78,7 @@ Europe
 
 After the answer: Reason: Europe is the small continent north of Africa and west of Asia, joined to Asia on land, with the Atlantic to its west.
 
-#### Question 4 (made from a group of places: Africa, tap; this is seed 6)
+#### Item 4 (made from a group of places: Africa, tap; this is seed 6)
 
 Africa
 
@@ -88,7 +88,7 @@ Africa
 
 After the answer: Reason: Africa is the big continent at the middle of the map, south of Europe across the Mediterranean, between the Atlantic and the Indian Ocean.
 
-#### Question 5 (made from a group of places: Asia, tap; this is seed 8)
+#### Item 5 (made from a group of places: Asia, tap; this is seed 8)
 
 Asia
 
@@ -98,7 +98,7 @@ Asia
 
 After the answer: Reason: Asia is the biggest continent, east of Europe and Africa, from the Arctic down to the Indian Ocean and across to the Pacific.
 
-#### Question 6 (made from a group of places: Oceania, tap; this is seed 10)
+#### Item 6 (made from a group of places: Oceania, tap; this is seed 10)
 
 Oceania
 
@@ -108,7 +108,7 @@ Oceania
 
 After the answer: Reason: Oceania is Australia, New Zealand and the islands around them, at the bottom right of the map, between the Indian Ocean and the Pacific.
 
-#### Question 7 (made from a group of places: Antarctica, tap; this is seed 12)
+#### Item 7 (made from a group of places: Antarctica, tap; this is seed 12)
 
 Antarctica
 
@@ -118,7 +118,7 @@ Antarctica
 
 After the answer: Reason: Antarctica is the frozen continent at the bottom of the map, around the South Pole, with the Southern Ocean all around it.
 
-#### Question 8 (made from a group of places: Pacific Ocean, tap; this is seed 14)
+#### Item 8 (made from a group of places: Pacific Ocean, tap; this is seed 14)
 
 Pacific Ocean
 
@@ -128,7 +128,7 @@ Pacific Ocean
 
 After the answer: Reason: The Pacific is the biggest ocean, between the Americas on one side and Asia and Oceania on the other; on this map it shows at both edges.
 
-#### Question 9 (made from a group of places: Atlantic Ocean, tap; this is seed 16)
+#### Item 9 (made from a group of places: Atlantic Ocean, tap; this is seed 16)
 
 Atlantic Ocean
 
@@ -138,7 +138,7 @@ Atlantic Ocean
 
 After the answer: Reason: The Atlantic is the ocean between the Americas to its west and Europe and Africa to its east.
 
-#### Question 10 (made from a group of places: Indian Ocean, tap; this is seed 18)
+#### Item 10 (made from a group of places: Indian Ocean, tap; this is seed 18)
 
 Indian Ocean
 
@@ -148,7 +148,7 @@ Indian Ocean
 
 After the answer: Reason: The Indian Ocean is the ocean south of Asia, between Africa to its west and Australia to its east.
 
-#### Question 11 (made from a group of places: Arctic Ocean, tap; this is seed 20)
+#### Item 11 (made from a group of places: Arctic Ocean, tap; this is seed 20)
 
 Arctic Ocean
 
@@ -158,7 +158,7 @@ Arctic Ocean
 
 After the answer: Reason: The Arctic is the small frozen ocean at the very top of the map, around the North Pole, north of North America, Europe and Asia.
 
-#### Question 12 (made from a group of places: Southern Ocean, tap; this is seed 22)
+#### Item 12 (made from a group of places: Southern Ocean, tap; this is seed 22)
 
 Southern Ocean
 
@@ -174,7 +174,7 @@ Then a screen: you can stop here, your place is kept.
 
 4 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 13 (made from a group of places: Oceania, name; this is seed 11)
+#### Item 13 (made from a group of places: Oceania, name; this is seed 11)
 
 A map of The world, north up, with no names on it. Lit: Oceania. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -187,7 +187,7 @@ A map of The world, north up, with no names on it. Lit: Oceania. The learner can
 
 After the answer: Reason: Oceania is Australia, New Zealand and the islands around them, at the bottom right of the map, between the Indian Ocean and the Pacific.
 
-#### Question 14 (made from a group of places: Indian Ocean, name; this is seed 19)
+#### Item 14 (made from a group of places: Indian Ocean, name; this is seed 19)
 
 A map of The world, north up, with no names on it. Lit: Indian Ocean. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -199,7 +199,7 @@ A map of The world, north up, with no names on it. Lit: Indian Ocean. The learne
 
 After the answer: Reason: The Indian Ocean is the ocean south of Asia, between Africa to its west and Australia to its east.
 
-#### Question 15 (made from a group of places: Arctic Ocean, name; this is seed 21)
+#### Item 15 (made from a group of places: Arctic Ocean, name; this is seed 21)
 
 A map of The world, north up, with no names on it. Lit: Arctic Ocean. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -211,7 +211,7 @@ A map of The world, north up, with no names on it. Lit: Arctic Ocean. The learne
 
 After the answer: Reason: The Arctic is the small frozen ocean at the very top of the map, around the North Pole, north of North America, Europe and Asia.
 
-#### Question 16 (made from a group of places: Southern Ocean, name; this is seed 23)
+#### Item 16 (made from a group of places: Southern Ocean, name; this is seed 23)
 
 A map of The world, north up, with no names on it. Lit: Southern Ocean. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -245,16 +245,16 @@ North America
 
 After the answer: Reason: North America is the continent at the top left of the map, from Canada and Alaska down to Panama, between the Pacific and the Atlantic.
 
-#### Question in the draw: name (made from a group of places: North America, name; this is seed 1)
+#### Question in the draw: name (made from a group of places: Oceania, name; this is seed 11)
 
-A map of The world, north up, with no names on it. Lit: North America. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
+A map of The world, north up, with no names on it. Lit: Oceania. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
 **What is the lit place called?**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
-  - North America
+  - Oceania
 
-After the answer: Reason: North America is the continent at the top left of the map, from Canada and Alaska down to Panama, between the Pacific and the Atlantic.
+After the answer: Reason: Oceania is Australia, New Zealand and the islands around them, at the bottom right of the map, between the Indian Ocean and the Pacific.
 
 ## The result
 

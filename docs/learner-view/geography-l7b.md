@@ -14,7 +14,7 @@ Now the states come mixed, from every region. For each one, the same three quest
 
 21 questions, shuffle, with each inner pair asked one after the other, in a random order, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Idaho, tap; this is seed 16)
+#### Item 1 (made from a group of places: Idaho, tap; this is seed 17)
 
 Idaho
 
@@ -24,7 +24,7 @@ Idaho
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-#### Question 2 (made from a group of places: Iowa, tap; this is seed 18)
+#### Item 2 (made from a group of places: Iowa, tap; this is seed 18)
 
 Iowa
 
@@ -34,7 +34,7 @@ Iowa
 
 After the answer: Reason: Area: the Midwest, out on the Plains. Touches: Illinois, Minnesota, Missouri, Nebraska, South Dakota and Wisconsin. Water: none; it is landlocked. It sits between two rivers, the Mississippi on its east and the Missouri on its west. Not Idaho, far west in the mountains.
 
-#### Question 3 (made from a group of places: Washington, tap; this is seed 0)
+#### Item 3 (made from a group of places: Washington, tap; this is seed 0)
 
 Washington
 
@@ -44,7 +44,7 @@ Washington
 
 After the answer: Reason: Area: the West, its Pacific side. Touches: Canada, Idaho and Oregon. Water: Pacific Ocean. It is the top corner on the left, and it is a state, not the capital, Washington, D.C., on the other coast.
 
-#### Question 4 (made from a group of places: Washington, D.C., tap; this is seed 24)
+#### Item 4 (made from a group of places: Washington, D.C., tap; this is seed 24)
 
 Washington, D.C.
 
@@ -54,7 +54,7 @@ Washington, D.C.
 
 After the answer: Reason: Area: the South, between Maryland and Virginia; the capital, not a state. Touches: Maryland and Virginia. Water: none; it is landlocked. It is not Washington State, in the far northwest.
 
-#### Question 5 (made from a group of places: Ohio, tap; this is seed 0)
+#### Item 5 (made from a group of places: Ohio, tap; this is seed 0)
 
 Ohio
 
@@ -64,7 +64,7 @@ Ohio
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Indiana, Kentucky, Michigan, Pennsylvania and West Virginia. Water: Lake Erie. It is the eastern end of the Midwest, on Lake Erie, next to Pennsylvania; not the Ohio River, which runs along its bottom.
 
-#### Question 6 (made from a group of places: Kentucky, tap; this is seed 21)
+#### Item 6 (made from a group of places: Kentucky, tap; this is seed 21)
 
 Kentucky
 
@@ -74,7 +74,7 @@ Kentucky
 
 After the answer: Reason: Area: the South, inland, north of the Gulf states. Touches: Illinois, Indiana, Missouri, Ohio, Tennessee, Virginia and West Virginia. Water: none; it is landlocked. Tell it from Tennessee: Kentucky is the one to the north, on the Ohio River.
 
-#### Question 7 (made from a group of places: Virginia, tap; this is seed 12)
+#### Item 7 (made from a group of places: Virginia, tap; this is seed 12)
 
 Virginia
 
@@ -84,7 +84,7 @@ Virginia
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: District of Columbia, Kentucky, Maryland, North Carolina, Tennessee and West Virginia. Water: Atlantic Ocean. Tell it from West Virginia: Virginia is the one on the Atlantic; West Virginia is inland, west of it.
 
-#### Question 8 (made from a group of places: Pennsylvania, tap; this is seed 24)
+#### Item 8 (made from a group of places: Pennsylvania, tap; this is seed 24)
 
 Pennsylvania
 
@@ -134,9 +134,9 @@ Alaska
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Alaska. Nothing is marked before the answer.
 - After the answer Alaska is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Wyoming names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Colorado names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Idaho names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada". Tapping Montana names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada".
 
-After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
+After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Arctic Ocean and Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
 
-#### Question: Hawaii (made from a group of places: Hawaii, tap; this is seed 11)
+#### Question: Hawaii (made from a group of places: Hawaii, tap; this is seed 12)
 
 Hawaii
 
@@ -144,9 +144,9 @@ Hawaii
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Hawaii. Nothing is marked before the answer.
 - After the answer Hawaii is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Wyoming names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Colorado names the slip "Wyoming and Colorado are both rectangles: Wyoming is the northern one, under Montana; Colorado is the southern one, over New Mexico". Tapping Idaho names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada". Tapping Montana names the slip "Idaho and Montana sit side by side: Idaho is the narrow one on the west; Montana is the wide one along Canada".
 
-After the answer: Reason: Area: the West, its Pacific side. Touches: nothing on land; it is islands. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.
+After the answer: Reason: Area: the West, its Pacific side. Touches: no other place by land. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.
 
-#### Question: Montana (made from a group of places: Montana, tap; this is seed 13)
+#### Question: Montana (made from a group of places: Montana, tap; this is seed 14)
 
 Montana
 
@@ -156,7 +156,7 @@ Montana
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Idaho, North Dakota, South Dakota and Wyoming. Water: none; it is landlocked. Tell it from Idaho: Montana is the wide one along Canada; Idaho is the narrow one west of it.
 
-#### Question: Idaho (made from a group of places: Idaho, tap; this is seed 16)
+#### Question: Idaho (made from a group of places: Idaho, tap; this is seed 17)
 
 Idaho
 
@@ -166,7 +166,7 @@ Idaho
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-#### Question: Wyoming (made from a group of places: Wyoming, tap; this is seed 19)
+#### Question: Wyoming (made from a group of places: Wyoming, tap; this is seed 20)
 
 Wyoming
 
@@ -176,7 +176,7 @@ Wyoming
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Colorado, Idaho, Montana, Nebraska, South Dakota and Utah. Water: none; it is landlocked. Tell it from Colorado: both are rectangles; Wyoming is the northern one, under Montana.
 
-#### Question: Nevada (made from a group of places: Nevada, tap; this is seed 22)
+#### Question: Nevada (made from a group of places: Nevada, tap; this is seed 23)
 
 Nevada
 
@@ -186,7 +186,7 @@ Nevada
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, California, Idaho, Oregon and Utah. Water: none; it is landlocked. It is the one just east of California, with a slanted west side.
 
-#### Question: Utah (made from a group of places: Utah, tap; this is seed 25)
+#### Question: Utah (made from a group of places: Utah, tap; this is seed 26)
 
 Utah
 
@@ -196,7 +196,7 @@ Utah
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, Colorado, Idaho, Nevada and Wyoming. Water: none; it is landlocked. It is the rectangle with a corner cut out at the top right, where Wyoming sits.
 
-#### Question: Colorado (made from a group of places: Colorado, tap; this is seed 28)
+#### Question: Colorado (made from a group of places: Colorado, tap; this is seed 29)
 
 Colorado
 
@@ -206,7 +206,7 @@ Colorado
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Kansas, Nebraska, New Mexico, Oklahoma, Utah and Wyoming. Water: none; it is landlocked. Tell it from Wyoming: both are rectangles; Colorado is the southern one, over New Mexico.
 
-#### Question: Arizona (made from a group of places: Arizona, tap; this is seed 31)
+#### Question: Arizona (made from a group of places: Arizona, tap; this is seed 32)
 
 Arizona
 
@@ -216,7 +216,7 @@ Arizona
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: California, Mexico, Nevada, New Mexico and Utah. Water: none; it is landlocked. It is the bottom left of the four corner states, east of California and on the Mexican border.
 
-#### Question: New Mexico (made from a group of places: New Mexico, tap; this is seed 34)
+#### Question: New Mexico (made from a group of places: New Mexico, tap; this is seed 35)
 
 New Mexico
 
@@ -358,7 +358,7 @@ Texas
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Texas. Nothing is marked before the answer.
 - After the answer Texas is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
 #### Question: Louisiana (made from a group of places: Louisiana, tap; this is seed 3)
 
@@ -368,7 +368,7 @@ Louisiana
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Louisiana. Nothing is marked before the answer.
 - After the answer Louisiana is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico. It is the boot, where the Mississippi River reaches the Gulf.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the boot, where the Mississippi River reaches the Gulf.
 
 #### Question: Mississippi (made from a group of places: Mississippi, tap; this is seed 6)
 
@@ -378,7 +378,7 @@ Mississippi
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Mississippi. Nothing is marked before the answer.
 - After the answer Mississippi is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
 
 #### Question: Alabama (made from a group of places: Alabama, tap; this is seed 9)
 
@@ -388,7 +388,7 @@ Alabama
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Alabama. Nothing is marked before the answer.
 - After the answer Alabama is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
 
 #### Question: Oklahoma (made from a group of places: Oklahoma, tap; this is seed 12)
 
@@ -661,9 +661,9 @@ A map of The United States, north up, with no names on it. Lit: Alaska. The lear
 - The accepted answers shown after (Accepted answers):
   - Alaska
 
-After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
+After the answer: Reason: Area: the West, its Pacific side. Touches: Canada. Water: Arctic Ocean and Pacific Ocean. It is drawn in a box at the bottom left; really it is far to the northwest, beyond Canada, with the Arctic Ocean along its top.
 
-#### Question: Hawaii (made from a group of places: Hawaii, name; this is seed 12)
+#### Question: Hawaii (made from a group of places: Hawaii, name; this is seed 13)
 
 A map of The United States, north up, with no names on it. Lit: Hawaii. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -672,9 +672,9 @@ A map of The United States, north up, with no names on it. Lit: Hawaii. The lear
 - The accepted answers shown after (Accepted answers):
   - Hawaii
 
-After the answer: Reason: Area: the West, its Pacific side. Touches: nothing on land; it is islands. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.
+After the answer: Reason: Area: the West, its Pacific side. Touches: no other place by land. Water: Pacific Ocean. It is drawn in a box at the bottom left; really it is far out in the Pacific, southwest of California.
 
-#### Question: Montana (made from a group of places: Montana, name; this is seed 14)
+#### Question: Montana (made from a group of places: Montana, name; this is seed 15)
 
 A map of The United States, north up, with no names on it. Lit: Montana. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -685,7 +685,7 @@ A map of The United States, north up, with no names on it. Lit: Montana. The lea
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Idaho, North Dakota, South Dakota and Wyoming. Water: none; it is landlocked. Tell it from Idaho: Montana is the wide one along Canada; Idaho is the narrow one west of it.
 
-#### Question: Idaho (made from a group of places: Idaho, name; this is seed 17)
+#### Question: Idaho (made from a group of places: Idaho, name; this is seed 18)
 
 A map of The United States, north up, with no names on it. Lit: Idaho. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -696,7 +696,7 @@ A map of The United States, north up, with no names on it. Lit: Idaho. The learn
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-#### Question: Wyoming (made from a group of places: Wyoming, name; this is seed 20)
+#### Question: Wyoming (made from a group of places: Wyoming, name; this is seed 21)
 
 A map of The United States, north up, with no names on it. Lit: Wyoming. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -707,7 +707,7 @@ A map of The United States, north up, with no names on it. Lit: Wyoming. The lea
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Colorado, Idaho, Montana, Nebraska, South Dakota and Utah. Water: none; it is landlocked. Tell it from Colorado: both are rectangles; Wyoming is the northern one, under Montana.
 
-#### Question: Nevada (made from a group of places: Nevada, name; this is seed 23)
+#### Question: Nevada (made from a group of places: Nevada, name; this is seed 24)
 
 A map of The United States, north up, with no names on it. Lit: Nevada. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -718,7 +718,7 @@ A map of The United States, north up, with no names on it. Lit: Nevada. The lear
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, California, Idaho, Oregon and Utah. Water: none; it is landlocked. It is the one just east of California, with a slanted west side.
 
-#### Question: Utah (made from a group of places: Utah, name; this is seed 26)
+#### Question: Utah (made from a group of places: Utah, name; this is seed 27)
 
 A map of The United States, north up, with no names on it. Lit: Utah. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -729,7 +729,7 @@ A map of The United States, north up, with no names on it. Lit: Utah. The learne
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, Colorado, Idaho, Nevada and Wyoming. Water: none; it is landlocked. It is the rectangle with a corner cut out at the top right, where Wyoming sits.
 
-#### Question: Colorado (made from a group of places: Colorado, name; this is seed 29)
+#### Question: Colorado (made from a group of places: Colorado, name; this is seed 30)
 
 A map of The United States, north up, with no names on it. Lit: Colorado. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -740,7 +740,7 @@ A map of The United States, north up, with no names on it. Lit: Colorado. The le
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Kansas, Nebraska, New Mexico, Oklahoma, Utah and Wyoming. Water: none; it is landlocked. Tell it from Wyoming: both are rectangles; Colorado is the southern one, over New Mexico.
 
-#### Question: Arizona (made from a group of places: Arizona, name; this is seed 32)
+#### Question: Arizona (made from a group of places: Arizona, name; this is seed 33)
 
 A map of The United States, north up, with no names on it. Lit: Arizona. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -751,7 +751,7 @@ A map of The United States, north up, with no names on it. Lit: Arizona. The lea
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: California, Mexico, Nevada, New Mexico and Utah. Water: none; it is landlocked. It is the bottom left of the four corner states, east of California and on the Mexican border.
 
-#### Question: New Mexico (made from a group of places: New Mexico, name; this is seed 35)
+#### Question: New Mexico (made from a group of places: New Mexico, name; this is seed 36)
 
 A map of The United States, north up, with no names on it. Lit: New Mexico. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -874,7 +874,7 @@ What borders Texas?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Texas; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Arkansas, Louisiana, Mexico, New Mexico, Oklahoma, and then on Gulf of Mexico. After the answer those places are lit, Texas is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
 #### Question: Louisiana (made from a group of places: Louisiana, border; this is seed 5)
 
@@ -884,7 +884,7 @@ What borders Louisiana?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Louisiana; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Arkansas, Mississippi, Texas, and then on Gulf of Mexico. After the answer those places are lit, Louisiana is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico. It is the boot, where the Mississippi River reaches the Gulf.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the boot, where the Mississippi River reaches the Gulf.
 
 #### Question: Mississippi (made from a group of places: Mississippi, border; this is seed 8)
 
@@ -894,7 +894,7 @@ What borders Mississippi?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Mississippi; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Alabama, Arkansas, Louisiana, Tennessee, and then on Gulf of Mexico. After the answer those places are lit, Mississippi is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
 
 #### Question: Alabama (made from a group of places: Alabama, border; this is seed 11)
 
@@ -904,7 +904,7 @@ What borders Alabama?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Alabama; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Florida, Georgia, Mississippi, Tennessee, and then on Gulf of Mexico. After the answer those places are lit, Alabama is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
 
 #### Question: Oklahoma (made from a group of places: Oklahoma, border; this is seed 14)
 
@@ -955,7 +955,7 @@ Then a screen: you can stop here, your place is kept.
 To pass:
 - At least 10 right
 
-#### Check question 22 (made from a group of places: Nevada, tap; this is seed 22)
+#### Check question 22 (made from a group of places: Nevada, tap; this is seed 23)
 
 Nevada
 
@@ -965,7 +965,7 @@ Nevada
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Arizona, California, Idaho, Oregon and Utah. Water: none; it is landlocked. It is the one just east of California, with a slanted west side.
 
-#### Check question 23 (made from a group of places: Utah, name; this is seed 26)
+#### Check question 23 (made from a group of places: Utah, name; this is seed 27)
 
 A map of The United States, north up, with no names on it. Lit: Utah. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -1005,7 +1005,7 @@ Louisiana
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Louisiana. Nothing is marked before the answer.
 - After the answer Louisiana is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico. It is the boot, where the Mississippi River reaches the Gulf.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the boot, where the Mississippi River reaches the Gulf.
 
 #### Check question 27 (made from a group of places: Mississippi, name; this is seed 7)
 
@@ -1016,7 +1016,7 @@ A map of The United States, north up, with no names on it. Lit: Mississippi. The
 - The accepted answers shown after (Accepted answers):
   - Mississippi
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
 
 #### Check question 28 (made from a group of places: Florida, tap; this is seed 0)
 

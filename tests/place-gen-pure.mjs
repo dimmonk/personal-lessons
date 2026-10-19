@@ -80,9 +80,20 @@ async function suite(app) {
     'a place given its area is fed back as its area, what touches it and its water, from the map data, then its cue');
   same(placePairs({ id: 'g-kept', strand: 'europe', places: { ...swiss, forms: ['tap', 'name'], words: { tap: 'Tap it.', name: 'Name it.' }, list: [{ ...swiss.list[0], forms: ['tap'] }] } }).map(p => p.form), ['tap'],
     "a place's own forms keep it to those of the group's forms");
+  // a lit place to name rejects the group's other names typed exactly
+  const nameOfBelgium = placeItems(EUROPE).find(i => i.values.place === 'belgium' && i.values.form === 'name').asks[0];
+  check(nameOfBelgium.reject.includes('France') && !nameOfBelgium.reject.includes('Belgium'), "a lit place's name question rejects the other places' names of its group, never its own");
+  // a capital: tapped as itself, named from the place it lights (its state)
+  const capital = { map: 'europe-west', forms: ['tap', 'name'], words: { tap: 'Tap it.', name: 'Name the capital of the lit country.' }, list: [{ id: 'vatican-city', name: 'Rome', accept: ['Rome'], area: 'Italy', lights: 'italy' }] };
+  const named = placeItems({ id: 'g-capital', strand: 'europe', places: capital }).find(i => i.values.form === 'name');
+  same(named.blocks[0].lit, ['italy'], 'a place that lights another is named from the place it lights');
+  check(placeGenProblems({ id: 'g-capital', places: { ...capital, list: [{ ...capital.list[0], lights: 'atlantis' }] } }, maps).some(m => /lights "atlantis"/.test(m)), 'a place that lights a place not on the map is refused');
   check(placeGenProblems({ id: 'g-kept', places: { ...swiss, list: [{ ...swiss.list[0], forms: ['flag'] }] } }, maps).some(m => /keeps to the form "flag"/.test(m)), 'a place kept to a form its group does not ask is refused');
   check(placeGenProblems({ id: 'g-swiss', places: { ...swiss, list: [{ ...swiss.list[0], reason: 'Both.' }] } }, maps).some(m => /either its own reason or the area/.test(m)), 'a place with both a reason and an area is refused');
   same(placeGenProblems(EUROPE, maps), [], 'a good group has no problems');
+  // a city is a dot with no outline (the map of the United States): it can be tapped, so a group of cities is sound
+  const cities = { map: 'us', forms: ['tap', 'name'], words: { tap: 'Tap it.', name: 'Name it.' }, list: [{ id: 'houston', name: 'Houston', accept: ['Houston'], reason: 'Houston is in Texas.' }] };
+  same(placeGenProblems({ id: 'g-city', strand: 'us-cities', places: cities }, maps), [], 'a city drawn as a dot, with no outline, can be asked');
   // scored by the engine: the right tap is right, a tap elsewhere is not, the typed name is right
   const tapBelgium = placeItem(EUROPE, placeSeedOf(EUROPE, 'belgium', 'tap')), at = mapPlace(mapOf('europe-west'), 'belgium').at, subject = { meta: { lists: {} } };
   check(scoreItem(subject, tapBelgium, null, { where: [...at, 1] }).ok === true && scoreItem(subject, tapBelgium, null, { where: [1, 1, 1] }).ok === false, 'a tap on Belgium is right and a tap at the corner of the map is not');
@@ -252,6 +263,9 @@ const FAULTS = [
   ['place-gen.js', 'a review that asks the form the place was last asked in', s => s.replace('from = other.length ? other : forms', 'from = forms')],
   ['place-gen.js', 'a flag asked with the name beside it', s => s.replace("{ ...tap([flags(false)], where), figure: flags(true),", "{ ...tap([flags(true)], where), figure: flags(true),")],
   ['place-gen.js', 'a place given its area fed back without what touches it', s => s.replace("touches.length ? SAY.placeTouchesLine(joinWords(touches)) : SAY.placeTouchesNone,", "")],
+  ['place-gen.js', "a lit place's name question that forgives another place's name", s => s.replace("reject: group.list.filter(p => p.id !== place)", "reject: [].filter(p => p.id !== place)")],
+  ['place-gen.js', 'a capital named from its own dot, not its state', s => s.replace("lit: [entry.lights || place]", "lit: [place]")],
+  ['place-gen.js', 'a dot with no outline refused as having no shape', s => s.replace('!on.rings.length && !on.dot', '!on.rings.length')],
   ['place-gen.js', "a place's own forms ignored", s => s.replace("(!entry.forms || entry.forms.includes(f)) && ", "")],
   ['place-gen.js', 'a place with both a reason and an area let through', s => s.replace("if(!p.reason === !p.area) problems.push", "if(false) problems.push")],
   ['place-gen.js', 'a flag item whose feedback leaves out the line that tells the flag', s => s.replace("reason: entry.flagLine ? [entry.flagLine, ...asList(base.reason)] : base.reason }", "reason: base.reason }")],

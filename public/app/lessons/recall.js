@@ -141,6 +141,8 @@ const recallNeed = ask => ask.count || 1;
 function recallMatch(ask, typed){
   const tokens = recallTokens(typed);
   if(!tokens.length || tokens.length > RECALL_MAX) return null;
+  // a typed answer that is exactly another thing's name (`reject`: Iran when Iraq is lit) is that other answer, never a small misspelling of this one
+  if(ask.reject && ask.reject.length && recallExact({ accept: ask.reject }, tokens)) return null;
   const entries = recallEntriesOf(ask), need = recallNeed(ask);
   let best = null;
   const walk = (at, cost, used) => {
@@ -151,6 +153,10 @@ function recallMatch(ask, typed){
   };
   walk(0, 0, []);
   return best;
+}
+// the typed words are exactly one of the accepted answers, with no misspelling forgiven
+function recallExact(ask, tokens){
+  return ask.accept.map(recallCompile).some(entry => recallSpans(tokens, 0, entry).some(span => span.end === tokens.length && span.cost === 0));
 }
 const scoreRecall = (data, ask, answer) => recallMatch(ask, answer) ? 'ok' : 'no';
 // the accepted answers printed, each with whether the typed words gave it

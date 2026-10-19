@@ -39,7 +39,7 @@ Then the answer: Southeast Asia. Southeast Asia is the part of Asia south of Chi
 
 8 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Western Asia, tap; this is seed 0)
+#### Item 1 (made from a group of places: Western Asia, tap; this is seed 0)
 
 Western Asia
 
@@ -49,7 +49,7 @@ Western Asia
 
 After the answer: Reason: Western Asia is the part of Asia next to Europe and Africa, from Türkiye through Arabia to Iran, also called the Middle East.
 
-#### Question 2 (made from a group of places: Central Asia, tap; this is seed 2)
+#### Item 2 (made from a group of places: Central Asia, tap; this is seed 2)
 
 Central Asia
 
@@ -59,7 +59,7 @@ Central Asia
 
 After the answer: Reason: Central Asia is the middle of Asia, from the Caspian Sea east to China, south of Northern Asia and north of South Asia.
 
-#### Question 3 (made from a group of places: South Asia, tap; this is seed 4)
+#### Item 3 (made from a group of places: South Asia, tap; this is seed 4)
 
 South Asia
 
@@ -69,7 +69,7 @@ South Asia
 
 After the answer: Reason: South Asia is the part of Asia around India that points down into the Indian Ocean, south of the Himalayas.
 
-#### Question 4 (made from a group of places: East Asia, tap; this is seed 6)
+#### Item 4 (made from a group of places: East Asia, tap; this is seed 6)
 
 East Asia
 
@@ -79,7 +79,7 @@ East Asia
 
 After the answer: Reason: East Asia is the part of Asia from China to Japan and Korea, on the Pacific, with Southeast Asia below it.
 
-#### Question 5 (made from a group of places: Southeast Asia, tap; this is seed 8)
+#### Item 5 (made from a group of places: Southeast Asia, tap; this is seed 8)
 
 Southeast Asia
 
@@ -89,7 +89,7 @@ Southeast Asia
 
 After the answer: Reason: Southeast Asia is the part of Asia south of China, from Myanmar and Vietnam down to the islands of Indonesia and the Philippines.
 
-#### Question 6 (made from a group of places: Northern Asia, tap; this is seed 10)
+#### Item 6 (made from a group of places: Northern Asia, tap; this is seed 10)
 
 Northern Asia
 
@@ -99,7 +99,7 @@ Northern Asia
 
 After the answer: Reason: Northern Asia is the top of Asia, the Russian part, from Europe to the Pacific along the Arctic Ocean.
 
-#### Question 7 (made from a group of places: Australia and New Zealand, tap; this is seed 12)
+#### Item 7 (made from a group of places: Australia and New Zealand, tap; this is seed 12)
 
 Australia and New Zealand
 
@@ -109,7 +109,7 @@ Australia and New Zealand
 
 After the answer: Reason: Australia and New Zealand are the two countries of Oceania south of the islands of Melanesia, between the Indian Ocean and the Pacific.
 
-#### Question 8 (made from a group of places: Melanesia, tap; this is seed 14)
+#### Item 8 (made from a group of places: Melanesia, tap; this is seed 14)
 
 Melanesia
 
@@ -125,7 +125,7 @@ Then a screen: you can stop here, your place is kept.
 
 3 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 9 (made from a group of places: Western Asia, name; this is seed 1)
+#### Item 9 (made from a group of places: Western Asia, name; this is seed 1)
 
 A map of The world, north up, with no names on it. Lit: Western Asia. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -140,7 +140,7 @@ A map of The world, north up, with no names on it. Lit: Western Asia. The learne
 
 After the answer: Reason: Western Asia is the part of Asia next to Europe and Africa, from Türkiye through Arabia to Iran, also called the Middle East.
 
-#### Question 10 (made from a group of places: Central Asia, name; this is seed 3)
+#### Item 10 (made from a group of places: Central Asia, name; this is seed 3)
 
 A map of The world, north up, with no names on it. Lit: Central Asia. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -151,7 +151,7 @@ A map of The world, north up, with no names on it. Lit: Central Asia. The learne
 
 After the answer: Reason: Central Asia is the middle of Asia, from the Caspian Sea east to China, south of Northern Asia and north of South Asia.
 
-#### Question 11 (made from a group of places: Southeast Asia, name; this is seed 9)
+#### Item 11 (made from a group of places: Southeast Asia, name; this is seed 9)
 
 A map of The world, north up, with no names on it. Lit: Southeast Asia. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 

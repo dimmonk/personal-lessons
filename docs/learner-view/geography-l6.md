@@ -66,7 +66,7 @@ Then the answer: A place next to South Carolina: Georgia and North Carolina. Wat
 
 9 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: South Carolina, tap; this is seed 6)
+#### Item 1 (made from a group of places: South Carolina, tap; this is seed 6)
 
 South Carolina
 
@@ -76,7 +76,7 @@ South Carolina
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Georgia and North Carolina. Water: Atlantic Ocean. Tell it from North Carolina: South Carolina is the smaller triangle to the south.
 
-#### Question 2 (made from a group of places: North Carolina, tap; this is seed 9)
+#### Item 2 (made from a group of places: North Carolina, tap; this is seed 9)
 
 North Carolina
 
@@ -86,7 +86,7 @@ North Carolina
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Georgia, South Carolina, Tennessee and Virginia. Water: Atlantic Ocean. Tell it from South Carolina: North Carolina is the wider one to the north, under Virginia.
 
-#### Question 3 (made from a group of places: Virginia, tap; this is seed 12)
+#### Item 3 (made from a group of places: Virginia, tap; this is seed 12)
 
 Virginia
 
@@ -96,7 +96,7 @@ Virginia
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: District of Columbia, Kentucky, Maryland, North Carolina, Tennessee and West Virginia. Water: Atlantic Ocean. Tell it from West Virginia: Virginia is the one on the Atlantic; West Virginia is inland, west of it.
 
-#### Question 4 (made from a group of places: West Virginia, tap; this is seed 15)
+#### Item 4 (made from a group of places: West Virginia, tap; this is seed 15)
 
 West Virginia
 
@@ -106,7 +106,7 @@ West Virginia
 
 After the answer: Reason: Area: the South, inland, in the Appalachian Mountains. Touches: Kentucky, Maryland, Ohio, Pennsylvania and Virginia. Water: none; it is landlocked. Tell it from Virginia: West Virginia is the one with no coast, west of Virginia.
 
-#### Question 5 (made from a group of places: Maryland, tap; this is seed 18)
+#### Item 5 (made from a group of places: Maryland, tap; this is seed 18)
 
 Maryland
 
@@ -116,7 +116,7 @@ Maryland
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Delaware, District of Columbia, Pennsylvania, Virginia and West Virginia. Water: Atlantic Ocean. It wraps around Chesapeake Bay and around D.C.; Delaware is the small strip east of it.
 
-#### Question 6 (made from a group of places: Delaware, tap; this is seed 21)
+#### Item 6 (made from a group of places: Delaware, tap; this is seed 21)
 
 Delaware
 
@@ -126,7 +126,7 @@ Delaware
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Maryland and Pennsylvania. Water: Atlantic Ocean. It is the small strip on the Atlantic, east of Maryland.
 
-#### Question 7 (made from a group of places: Florida, tap; this is seed 0)
+#### Item 7 (made from a group of places: Florida, tap; this is seed 0)
 
 Florida
 
@@ -136,7 +136,7 @@ Florida
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Alabama and Georgia. Water: Atlantic Ocean and Gulf of Mexico. It is the long peninsula at the bottom right, with water on three sides.
 
-#### Question 8 (made from a group of places: Georgia, tap; this is seed 3)
+#### Item 8 (made from a group of places: Georgia, tap; this is seed 3)
 
 Georgia
 
@@ -146,7 +146,7 @@ Georgia
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Alabama, Florida, North Carolina, South Carolina and Tennessee. Water: Atlantic Ocean. It is right on top of Florida, between Alabama and South Carolina.
 
-#### Question 9 (made from a group of places: Washington, D.C., tap; this is seed 24)
+#### Item 9 (made from a group of places: Washington, D.C., tap; this is seed 24)
 
 Washington, D.C.
 
@@ -162,7 +162,7 @@ Then a screen: you can stop here, your place is kept.
 
 7 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 10 (made from a group of places: North Carolina, name; this is seed 10)
+#### Item 10 (made from a group of places: North Carolina, name; this is seed 10)
 
 A map of The United States, north up, with no names on it. Lit: North Carolina. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -175,7 +175,7 @@ A map of The United States, north up, with no names on it. Lit: North Carolina. 
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Georgia, South Carolina, Tennessee and Virginia. Water: Atlantic Ocean. Tell it from South Carolina: North Carolina is the wider one to the north, under Virginia.
 
-#### Question 11 (made from a group of places: South Carolina, name; this is seed 7)
+#### Item 11 (made from a group of places: South Carolina, name; this is seed 7)
 
 A map of The United States, north up, with no names on it. Lit: South Carolina. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -186,7 +186,7 @@ A map of The United States, north up, with no names on it. Lit: South Carolina. 
 
 After the answer: Reason: Area: the South, on the Atlantic coast. Touches: Georgia and North Carolina. Water: Atlantic Ocean. Tell it from North Carolina: South Carolina is the smaller triangle to the south.
 
-#### Question 12 (made from a group of places: Virginia, name; this is seed 13)
+#### Item 12 (made from a group of places: Virginia, name; this is seed 13)
 
 A map of The United States, north up, with no names on it. Lit: Virginia. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 

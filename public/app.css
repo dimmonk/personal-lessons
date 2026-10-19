@@ -561,7 +561,7 @@ table.ownsum td:last-child{white-space:normal}
 .mp.lit.near{fill-opacity:.38}
 .mp.focus{fill:var(--accent);fill-opacity:1;stroke:var(--text);stroke-width:2.2px}
 .ml{fill:var(--text);font-family:var(--sans);font-weight:600;paint-order:stroke;stroke:var(--bg);stroke-linejoin:round;pointer-events:none}
-.ml-lead{stroke:var(--text);stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none}
+.ml-lead,.ml-auto{stroke:var(--text);stroke-width:1px;vector-effect:non-scaling-stroke;pointer-events:none}
 .ml-sea,.ml-ocean,.ml-strait,.ml-lake,.ml-river,.ml-canal,.ml-coast,.ml-range{fill:var(--dim);font-style:italic;font-weight:500}
 .mk-ring{fill:none;stroke:var(--text);stroke-width:2px;vector-effect:non-scaling-stroke}
 .mk-dot{fill:var(--text)}
@@ -578,6 +578,7 @@ table.ownsum td:last-child{white-space:normal}
 .placeask .holdline{display:block;min-height:3em}
 .block-flags{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:0;padding:12px 16px;list-style:none;background:var(--raised)}
 .flagbig{display:block;flex:0 0 auto;font-size:64px;line-height:1.1;min-width:80px;text-align:center}
+.flagbig .flagart{display:block;width:80px;height:auto;margin:0 auto}
 .flagkey{flex-direction:column;align-items:stretch;gap:14px}
 .flagkey li{display:flex;align-items:center;gap:14px}
 .flagtext{font-family:var(--sans);font-size:15px;line-height:1.45;color:var(--body)}

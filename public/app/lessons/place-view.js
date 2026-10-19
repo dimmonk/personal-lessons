@@ -29,12 +29,14 @@ function mapPath(map, place){
 const mapShapeHtml = (map, place, extra) => `<path class="mp mp-${esc(place.kind)}${extra}" data-place="${esc(place.id)}" d="${mapPath(map, place)}"${PLACE_UNION_KINDS.includes(place.kind) ? '' : ' fill-rule="evenodd"'}></path>`;
 
 // A name is set in pixels (`data-fpx`, `data-edge`) and placed by map-run.js, so it reads the same at every zoom and on every screen. A microstate's
-// name stands `lead` pixels from its dot (the map data says which way) on a line drawn to the dot; every other name is centred on its point.
+// name stands `lead` pixels from its dot (the map data says which way) on a line drawn to the dot; every other name is centred on its point, unless it would sit
+// on another name (map-run.js sets it off along a lead, placeNameLeads).
 function mapLabelsHtml(map, ids, geom){
   return ids.map(id => geom.byId[id]).filter(p => p && p.at).map(p => {
     const lead = p.lead || [0, p.dot ? -MAP_PX.dot - MAP_PX.label / 2 : 0], pos = `data-x="${mapNum(p.at[0])}" data-y="${mapNum(p.at[1])}" data-dx="${lead[0]}" data-dy="${lead[1]}"`;
-    const line = p.lead ? `<line class="ml-lead" ${pos} data-gap="${MAP_PX.dot + MAP_PX.leadGap}"></line>` : '';
-    return `${line}<text class="ml ml-${esc(p.kind)}" ${pos} data-fpx="${MAP_PX.label}" data-edge="${MAP_PX.labelEdge}" dominant-baseline="central">${esc(p.name)}</text>`;
+    // a name with no lead of its own has a line waiting, hidden, for when it has to step off another (map-run.js): the map is never given or taken an element after it is drawn
+    const line = p.lead ? `<line class="ml-lead" data-name="${esc(p.id)}" ${pos} data-gap="${MAP_PX.dot + MAP_PX.leadGap}"></line>` : `<line class="ml-auto" data-name="${esc(p.id)}" ${pos} display="none"></line>`;
+    return `${line}<text class="ml ml-${esc(p.kind)}" ${pos} data-name="${esc(p.id)}"${p.lead ? ' data-fixed' : ''} data-fpx="${MAP_PX.label}" data-edge="${MAP_PX.labelEdge}" dominant-baseline="central">${esc(p.name)}</text>`;
   }).join('');
 }
 const mapMarkHtml = m => `<g class="mk mk-${esc(m.state || 'neutral')}" data-mark><circle class="mk-ring" cx="${mapNum(m.x)}" cy="${mapNum(m.y)}" r="${MAP_PX.mark}" data-px="${MAP_PX.mark}"></circle>
@@ -74,10 +76,10 @@ function mapBlockHtml(block, ctx){
 }
 
 /* ---------- the place ask ---------- */
-// the water a tap of a neighbor and its water was on: the sea, ocean or strait under it, or null (a tap on land, off the map or not made)
+// the water a tap of a neighbor and its water was on: the sea, ocean, strait or lake under it, or null (a tap on land, off the map or not made)
 function placeWaterTapped(map, tap){
   const id = placeTapOk(tap) ? placeAt(map, tap[0], tap[1], tap[2], 'sea') : null;
-  return id && PLACE_WATER_KINDS.includes(mapPlace(map, id).kind) ? id : null;
+  return id && [...PLACE_WATER_KINDS, 'lake'].includes(mapPlace(map, id).kind) ? id : null;
 }
 // the water a neighbor and its water lights once it is answered: the water the place touches (the right answer) and the water the learner tapped, no other
 const placeWaterLit = (map, ask, answer) => [...new Set([...placeWaterOf(map, ask.of), placeWaterTapped(map, answer && answer.w)].filter(Boolean))];
@@ -99,7 +101,7 @@ function placeTapsOf(map, ask, answer, marked){
   const taps = [], n = answer && answer.n, w = answer && answer.w;
   const on = (ids, t) => ids.some(id => placeContains(map, mapPlace(map, id), t[0], t[1], t[2]));
   if(placeTapOk(n)) taps.push({ x: n[0], y: n[1], state: marked ? (on(placeNeighborsOf(map, ask.of), n) ? 'right' : 'wrong') : 'neutral' });
-  if(placeTapOk(w)) taps.push({ x: w[0], y: w[1], state: marked ? (on(placeWaterOf(map, ask.of), w) ? 'right' : 'wrong') : 'neutral' });
+  if(placeTapOk(w)) taps.push({ x: w[0], y: w[1], state: marked ? (on(placeWaterRightOf(map, ask.of), w) ? 'right' : 'wrong') : 'neutral' });
   return taps;
 }
 // st: { answer, many: { n }, marks, locked }. A tap on the map answers it (place-run.js); a neighbor and its water takes a tap on a neighbor, then a
@@ -131,8 +133,20 @@ function placeWorkedHtml(data, item){
 /* ---------- the flags block ---------- */
 // The flags of places of a place group (place-gen.js), each large enough to tell from the next on a phone: alone, to be told which country it is, or with the
 // name beside each (`names`) to be learned.
+// A flag is its emoji. A flag no emoji draws (Kosovo's 🇽🇰 is two letters on most phones) is a picture drawn from a small spec in the data:
+//   { box: [w, h], layers: [['rect', fill, x, y, w, h] | ['path', fill, d] | ['star', fill, cx, cy, r]], said: the flag in words, for a view with no pictures (never its name) }
+// The picture is hidden from a screen reader as the emoji is: the block says what it is (SAY.flagAlt), and the name, when it is shown, is beside it.
+const FLAG_STAR_INNER = 0.382;
+const flagStar = (cx, cy, r) => Array.from({ length: 10 }, (_, i) => { const a = (i * 36 - 90) * Math.PI / 180, d = i % 2 ? r * FLAG_STAR_INNER : r; return `${mapNum(cx + d * Math.cos(a))} ${mapNum(cy + d * Math.sin(a))}`; }).join('L');
+function flagLayerHtml([kind, fill, ...a]){
+  if(kind === 'rect') return `<rect x="${a[0]}" y="${a[1]}" width="${a[2]}" height="${a[3]}" fill="${esc(fill)}"></rect>`;
+  if(kind === 'star') return `<path d="M${flagStar(a[0], a[1], a[2])}Z" fill="${esc(fill)}"></path>`;
+  return `<path d="${esc(a[0])}" fill="${esc(fill)}"></path>`;
+}
+const flagHtml = flag => typeof flag === 'string' ? esc(flag)
+  : `<svg class="flagart" viewBox="0 0 ${flag.box[0]} ${flag.box[1]}" aria-hidden="true" focusable="false">${flag.layers.map(flagLayerHtml).join('')}</svg>`;
 function flagsHtml(block, ctx){
-  const list = ctx.data.gens[block.gen].places.list, rows = block.places.map(id => list.find(p => p.id === id)), flag = p => `<span class="flagbig">${esc(p.flag)}</span>`;
+  const list = ctx.data.gens[block.gen].places.list, rows = block.places.map(id => list.find(p => p.id === id)), flag = p => `<span class="flagbig">${flagHtml(p.flag)}</span>`;
   if(!block.names) return `<div class="block-flags" role="img" aria-label="${esc(SAY.flagAlt)}">${rows.map(flag).join('')}</div>`;
   return `<ul class="block-flags flagkey">${rows.map(p => `<li>${flag(p)}<span class="flagtext">${esc(p.name)}</span></li>`).join('')}</ul>`;
 }
@@ -157,10 +171,10 @@ function placeMissHtml(data, ask, answer, result){
     out.push(line(tapped, tapped ? SAY.placeNotNeighbor(tapped, of.name) : ''));
   }
   const water = placeWaterOf(map, ask.of);
-  if(w === PLACE_NONE){ if(water.length) out.push(`<p><b>${esc(SAY.youChose)}: ${esc(SAY.placeLandlocked)}.</b> ${esc(SAY.placeHasWater(of.name, joinWords(placeNames(map, water))))}</p>`); }
-  else if(!placeTapOk(w) || !on(water, w)){
+  if(w === PLACE_NONE){ if(water.length) out.push(`<p><b>${esc(SAY.youChose)}: ${esc(SAY.placeLandlocked)}.</b> ${esc(SAY.placeHasWater(of.name, joinWords(placeWaterNames(map, water))))}</p>`); }
+  else if(!placeTapOk(w) || !on(placeWaterRightOf(map, ask.of), w)){
     const tapped = placeTappedName(map, placeTapOk(w) ? w : null, 'sea');
-    out.push(line(tapped, water.length ? (tapped ? SAY.placeNotWater(tapped, of.name) : SAY.placeHasWater(of.name, joinWords(placeNames(map, water)))) : SAY.placeNoWater(of.name)));
+    out.push(line(tapped, water.length ? (tapped ? SAY.placeNotWater(tapped, of.name) : SAY.placeHasWater(of.name, joinWords(placeWaterNames(map, water)))) : SAY.placeNoWater(of.name)));
   }
   return out.length ? `<div class="vblock">${out.join('')}</div>` : '';
 }

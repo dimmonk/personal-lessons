@@ -58,7 +58,7 @@ Then the answer: A place next to Arkansas: Louisiana, Mississippi, Missouri, Okl
 
 8 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Mississippi, tap; this is seed 6)
+#### Item 1 (made from a group of places: Mississippi, tap; this is seed 6)
 
 Mississippi
 
@@ -66,9 +66,9 @@ Mississippi
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Mississippi. Nothing is marked before the answer.
 - After the answer Mississippi is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
 
-#### Question 2 (made from a group of places: Alabama, tap; this is seed 9)
+#### Item 2 (made from a group of places: Alabama, tap; this is seed 9)
 
 Alabama
 
@@ -76,9 +76,9 @@ Alabama
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Alabama. Nothing is marked before the answer.
 - After the answer Alabama is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
 
-#### Question 3 (made from a group of places: Tennessee, tap; this is seed 18)
+#### Item 3 (made from a group of places: Tennessee, tap; this is seed 18)
 
 Tennessee
 
@@ -88,7 +88,7 @@ Tennessee
 
 After the answer: Reason: Area: the South, inland, north of the Gulf states. Touches: Alabama, Arkansas, Georgia, Kentucky, Mississippi, Missouri, North Carolina and Virginia. Water: none; it is landlocked. Tell it from Kentucky: Tennessee is the long, thin one to the south.
 
-#### Question 4 (made from a group of places: Kentucky, tap; this is seed 21)
+#### Item 4 (made from a group of places: Kentucky, tap; this is seed 21)
 
 Kentucky
 
@@ -98,7 +98,7 @@ Kentucky
 
 After the answer: Reason: Area: the South, inland, north of the Gulf states. Touches: Illinois, Indiana, Missouri, Ohio, Tennessee, Virginia and West Virginia. Water: none; it is landlocked. Tell it from Tennessee: Kentucky is the one to the north, on the Ohio River.
 
-#### Question 5 (made from a group of places: Texas, tap; this is seed 0)
+#### Item 5 (made from a group of places: Texas, tap; this is seed 0)
 
 Texas
 
@@ -106,9 +106,9 @@ Texas
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Texas. Nothing is marked before the answer.
 - After the answer Texas is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
-#### Question 6 (made from a group of places: Louisiana, tap; this is seed 3)
+#### Item 6 (made from a group of places: Louisiana, tap; this is seed 3)
 
 Louisiana
 
@@ -116,9 +116,9 @@ Louisiana
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Louisiana. Nothing is marked before the answer.
 - After the answer Louisiana is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico. It is the boot, where the Mississippi River reaches the Gulf.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the boot, where the Mississippi River reaches the Gulf.
 
-#### Question 7 (made from a group of places: Oklahoma, tap; this is seed 12)
+#### Item 7 (made from a group of places: Oklahoma, tap; this is seed 12)
 
 Oklahoma
 
@@ -128,7 +128,7 @@ Oklahoma
 
 After the answer: Reason: Area: the South, inland, north of the Gulf states. Touches: Arkansas, Colorado, Kansas, Missouri, New Mexico and Texas. Water: none; it is landlocked. It is the pan with a handle pointing west, on top of Texas.
 
-#### Question 8 (made from a group of places: Arkansas, tap; this is seed 15)
+#### Item 8 (made from a group of places: Arkansas, tap; this is seed 15)
 
 Arkansas
 
@@ -144,7 +144,7 @@ Then a screen: you can stop here, your place is kept.
 
 11 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 9 (made from a group of places: Mississippi, name; this is seed 7)
+#### Item 9 (made from a group of places: Mississippi, name; this is seed 7)
 
 A map of The United States, north up, with no names on it. Lit: Mississippi. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -155,9 +155,9 @@ A map of The United States, north up, with no names on it. Lit: Mississippi. The
 - The accepted answers shown after (Accepted answers):
   - Mississippi
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
 
-#### Question 10 (made from a group of places: Alabama, name; this is seed 10)
+#### Item 10 (made from a group of places: Alabama, name; this is seed 10)
 
 A map of The United States, north up, with no names on it. Lit: Alabama. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -166,9 +166,9 @@ A map of The United States, north up, with no names on it. Lit: Alabama. The lea
 - The accepted answers shown after (Accepted answers):
   - Alabama
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
 
-#### Question 11 (made from a group of places: Tennessee, name; this is seed 19)
+#### Item 11 (made from a group of places: Tennessee, name; this is seed 19)
 
 A map of The United States, north up, with no names on it. Lit: Tennessee. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -189,7 +189,7 @@ What borders Texas?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Texas; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Arkansas, Louisiana, Mexico, New Mexico, Oklahoma, and then on Gulf of Mexico. After the answer those places are lit, Texas is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
 #### Question: Louisiana (made from a group of places: Louisiana, border; this is seed 5)
 
@@ -199,7 +199,7 @@ What borders Louisiana?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Louisiana; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Arkansas, Mississippi, Texas, and then on Gulf of Mexico. After the answer those places are lit, Louisiana is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico. It is the boot, where the Mississippi River reaches the Gulf.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Mississippi and Texas. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the boot, where the Mississippi River reaches the Gulf.
 
 #### Question: Mississippi (made from a group of places: Mississippi, border; this is seed 8)
 
@@ -209,7 +209,7 @@ What borders Mississippi?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Mississippi; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Alabama, Arkansas, Louisiana, Tennessee, and then on Gulf of Mexico. After the answer those places are lit, Mississippi is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Alabama, Arkansas, Louisiana and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Alabama: Mississippi is the western one, beside the river it is named for and Louisiana. Not the Mississippi River itself.
 
 #### Question: Alabama (made from a group of places: Alabama, border; this is seed 11)
 
@@ -219,7 +219,7 @@ What borders Alabama?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Alabama; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Florida, Georgia, Mississippi, Tennessee, and then on Gulf of Mexico. After the answer those places are lit, Alabama is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Florida, Georgia, Mississippi and Tennessee. Water: Gulf of Mexico, part of the Atlantic Ocean. Tell it from Mississippi: Alabama is the eastern one, next to Georgia and Florida.
 
 #### Question: Oklahoma (made from a group of places: Oklahoma, border; this is seed 14)
 
@@ -261,7 +261,7 @@ What borders Kentucky?
 
 After the answer: Reason: Area: the South, inland, north of the Gulf states. Touches: Illinois, Indiana, Missouri, Ohio, Tennessee, Virginia and West Virginia. Water: none; it is landlocked. Tell it from Tennessee: Kentucky is the one to the north, on the Ohio River.
 
-#### Question 16 (made from a group of places: Gulf of Mexico, tap; this is seed 32)
+#### Item 16 (made from a group of places: Gulf of Mexico, tap; this is seed 32)
 
 Gulf of Mexico
 
@@ -271,7 +271,7 @@ Gulf of Mexico
 
 After the answer: Reason: The Gulf of Mexico is the sea along the bottom of the South, from Texas round to Florida, with Mexico on its other side.
 
-#### Question 17 (made from a group of places: Mississippi River, tap; this is seed 0)
+#### Item 17 (made from a group of places: Mississippi River, tap; this is seed 0)
 
 Mississippi River
 
@@ -281,7 +281,7 @@ Mississippi River
 
 After the answer: Reason: The Mississippi runs straight down the middle of the country, from near the Canadian border to the Gulf of Mexico.
 
-#### Question 18 (made from a group of places: Tennessee River, tap; this is seed 8)
+#### Item 18 (made from a group of places: Tennessee River, tap; this is seed 8)
 
 Tennessee River
 
@@ -291,7 +291,7 @@ Tennessee River
 
 After the answer: Reason: The Tennessee loops through the South, down and back up, and runs into the Ohio just before the Ohio meets the Mississippi.
 
-#### Question 19 (made from a group of places: Arkansas River, tap; this is seed 6)
+#### Item 19 (made from a group of places: Arkansas River, tap; this is seed 6)
 
 Arkansas River
 
@@ -320,7 +320,7 @@ Texas
 - The map of The United States with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Texas. Nothing is marked before the answer.
 - After the answer Texas is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Mississippi names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Alabama names the slip "Mississippi and Alabama look alike: Mississippi is the western one, by the river; Alabama is east of it". Tapping Tennessee names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it". Tapping Kentucky names the slip "Tennessee and Kentucky lie one on the other: Kentucky is the northern one, on the Ohio River; Tennessee is the long one under it".
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
 #### Question in the draw: name (made from a group of places: Texas, name; this is seed 1)
 
@@ -331,7 +331,7 @@ A map of The United States, north up, with no names on it. Lit: Texas. The learn
 - The accepted answers shown after (Accepted answers):
   - Texas
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
 #### Question in the draw: border (made from a group of places: Texas, border; this is seed 2)
 
@@ -341,7 +341,7 @@ What borders Texas?
 - The map of The United States with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Texas; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Arkansas, Louisiana, Mexico, New Mexico, Oklahoma, and then on Gulf of Mexico. After the answer those places are lit, Texas is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
+After the answer: Reason: Area: the South, along the Gulf of Mexico. Touches: Arkansas, Louisiana, Mexico, New Mexico and Oklahoma. Water: Gulf of Mexico, part of the Atlantic Ocean. It is the biggest state in the lower 48, with Mexico across the Rio Grande.
 
 ## The result
 

@@ -39,17 +39,40 @@ function mapApply(el, view){
   const screen = mapScreen(svg, el, view), px = v => Number(v) / screen.s;
   svg.setAttribute('viewBox', `${screen.vx} ${screen.vy} ${screen.vw} ${screen.vh}`);
   svg.querySelectorAll('[data-px]').forEach(c => c.setAttribute('r', String(px(c.dataset.px))));
-  svg.querySelectorAll('text[data-fpx]').forEach(t => mapPlaceName(t, px));
+  svg.querySelectorAll('text[data-fpx]').forEach(t => { delete t.dataset.adx; delete t.dataset.ady; mapPlaceName(t, px); });
   svg.querySelectorAll('line[data-gap]').forEach(l => mapPlaceLead(l, px));
+  mapSeparateNames(svg, screen, px);
+}
+// Names that would sit on one another are set apart (placeNameLeads): the one that gives way steps off along a short lead, on a line to its point as a microstate's name is.
+// What a lead is is in pixels, so it is worked out for the screen the map is on at the zoom it is at, and again each time either changes. Only attributes change, never
+// the elements of the map (the observer of wireMaps would take that for a new screen).
+function mapSeparateNames(svg, screen, px){
+  const texts = [...svg.querySelectorAll('text[data-fpx][data-name]')], lines = new Map([...svg.querySelectorAll('line.ml-auto, line.ml-lead')].map(l => [l.dataset.name, l]));
+  const names = texts.map(t => ({ id: t.dataset.name, x: (Number(t.dataset.x) - screen.vx) * screen.s + screen.ox, y: (Number(t.dataset.y) - screen.vy) * screen.s + screen.oy,
+    chars: t.textContent.length, lead: [Number(t.dataset.dx), Number(t.dataset.dy)], fixed: t.hasAttribute('data-fixed') }));
+  const moved = placeNameLeads(names, [screen.box.width, screen.box.height]);
+  lines.forEach(l => { if(l.classList.contains('ml-auto')){ l.setAttribute('display', 'none'); l.removeAttribute('data-gap'); } });
+  for(const t of texts){
+    const lead = moved[t.dataset.name], line = lines.get(t.dataset.name);
+    // the line of a name the map data leads stays where the data puts it unless the name had to step off the edge of the screen: then it follows the name
+    if(line && line.classList.contains('ml-lead')){ Object.assign(line.dataset, { dx: t.dataset.dx, dy: t.dataset.dy }); if(lead) Object.assign(line.dataset, { dx: String(lead[0]), dy: String(lead[1]) }); mapPlaceLead(line, px); }
+    if(!lead) continue;
+    [t.dataset.adx, t.dataset.ady] = lead.map(String);
+    mapPlaceName(t, px);
+    if(!line || line.classList.contains('ml-lead')) continue;
+    Object.assign(line.dataset, { dx: String(lead[0]), dy: String(lead[1]), gap: t.dataset.edge });
+    line.setAttribute('display', 'inline');
+    mapPlaceLead(line, px);
+  }
 }
 // a name: its height in pixels, standing dx and dy pixels from its point, and on the side of the point it leads away to
 function mapPlaceName(t, px){
-  const dx = Number(t.dataset.dx), anchor = dx > 0 ? 'start' : dx < 0 ? 'end' : 'middle';
+  const led = t.dataset.adx !== undefined, dx = Number(led ? t.dataset.adx : t.dataset.dx), dy = Number(led ? t.dataset.ady : t.dataset.dy), anchor = dx > 0 ? 'start' : dx < 0 ? 'end' : 'middle';
   t.setAttribute('font-size', String(px(t.dataset.fpx)));
   t.setAttribute('stroke-width', String(px(t.dataset.edge)));
   t.setAttribute('text-anchor', anchor);
   t.setAttribute('x', String(Number(t.dataset.x) + px(dx + (dx > 0 ? 2 : dx < 0 ? -2 : 0))));
-  t.setAttribute('y', String(Number(t.dataset.y) + px(t.dataset.dy)));
+  t.setAttribute('y', String(Number(t.dataset.y) + px(dy)));
 }
 // the line from a microstate's dot to its name: from just off the dot to just short of the name
 function mapPlaceLead(l, px){

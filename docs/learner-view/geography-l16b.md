@@ -1,6 +1,6 @@
 # Geography: The flags of western Europe
 
-Revision 1, draft (the screen carries the draft line). Part: The flags of western Europe. Where the subject ends up: After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.
+Revision 1, live. Part: The flags of western Europe. Where the subject ends up: After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.
 
 ## The why
 
@@ -66,7 +66,7 @@ Then the answer: Belgium. Three upright stripes, black, yellow and red. Germany'
 
 10 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Netherlands, flag; this is seed 4)
+#### Item 1 (made from a group of places: Netherlands, flag; this is seed 4)
 
 A flag, about 64 pixels wide, with no name beside it: 🇳🇱
 
@@ -74,11 +74,11 @@ A flag, about 64 pixels wide, with no name beside it: 🇳🇱
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Netherlands. Nothing is marked before the answer.
 - After the answer Netherlands is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Luxembourg names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Belgium names the slip "The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle". Tapping Germany names the slip "The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle". Tapping France names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right". Tapping Italy names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right".
 
-After the answer: Reason: Three flat stripes, red, white and a deep blue. Luxembourg's blue is lighter. Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea.
+After the answer: Reason: Three flat stripes, red, white and a deep blue. Luxembourg's blue is lighter. Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea, part of the Atlantic Ocean.
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇳🇱 Netherlands.
 
-#### Question 2 (made from a group of places: Luxembourg, flag; this is seed 5)
+#### Item 2 (made from a group of places: Luxembourg, flag; this is seed 5)
 
 A flag, about 64 pixels wide, with no name beside it: 🇱🇺
 
@@ -90,7 +90,7 @@ After the answer: Reason: Three flat stripes, red, white and a light blue. The N
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇱🇺 Luxembourg.
 
-#### Question 3 (made from a group of places: Belgium, flag; this is seed 3)
+#### Item 3 (made from a group of places: Belgium, flag; this is seed 3)
 
 A flag, about 64 pixels wide, with no name beside it: 🇧🇪
 
@@ -98,11 +98,11 @@ A flag, about 64 pixels wide, with no name beside it: 🇧🇪
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Belgium. Nothing is marked before the answer.
 - After the answer Belgium is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Netherlands names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Luxembourg names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Germany names the slip "The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle". Tapping France names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right". Tapping Italy names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right".
 
-After the answer: Reason: Three upright stripes, black, yellow and red. Germany's three stripes lie flat. Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea.
+After the answer: Reason: Three upright stripes, black, yellow and red. Germany's three stripes lie flat. Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean.
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇧🇪 Belgium.
 
-#### Question 4 (made from a group of places: Germany, flag; this is seed 6)
+#### Item 4 (made from a group of places: Germany, flag; this is seed 6)
 
 A flag, about 64 pixels wide, with no name beside it: 🇩🇪
 
@@ -110,11 +110,11 @@ A flag, about 64 pixels wide, with no name beside it: 🇩🇪
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Germany. Nothing is marked before the answer.
 - After the answer Germany is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Netherlands names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Luxembourg names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Belgium names the slip "The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle". Tapping France names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right". Tapping Italy names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right".
 
-After the answer: Reason: Three flat stripes, black, red and gold. Belgium's three stripes stand upright. Area: the middle of western Europe, north of the Alps. Touches: Austria, Belgium, Czechia, Denmark, France, Luxembourg, Netherlands, Poland and Switzerland. Water: Baltic Sea and North Sea.
+After the answer: Reason: Three flat stripes, black, red and gold. Belgium's three stripes stand upright. Area: the middle of western Europe, north of the Alps. Touches: Austria, Belgium, Czechia, Denmark, France, Luxembourg, Netherlands, Poland and Switzerland. Water: Baltic Sea, part of the Atlantic Ocean and North Sea, part of the Atlantic Ocean.
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇩🇪 Germany.
 
-#### Question 5 (made from a group of places: France, flag; this is seed 2)
+#### Item 5 (made from a group of places: France, flag; this is seed 2)
 
 A flag, about 64 pixels wide, with no name beside it: 🇫🇷
 
@@ -122,11 +122,11 @@ A flag, about 64 pixels wide, with no name beside it: 🇫🇷
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of France. Nothing is marked before the answer.
 - After the answer France is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Netherlands names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Luxembourg names the slip "The flags of the Netherlands and Luxembourg are both flat red, white and blue stripes: the Netherlands has the deeper blue; Luxembourg has the lighter blue". Tapping Belgium names the slip "The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle". Tapping Germany names the slip "The flags of Belgium and Germany both have black, yellow and red: Belgium has upright stripes with yellow in the middle; Germany has flat stripes with red in the middle". Tapping Italy names the slip "The flags of France and Italy both have three upright stripes with white in the middle: France has blue on the left; Italy has green on the left and red on the right".
 
-After the answer: Reason: Three upright stripes, blue, white and red, with the blue on the left. Area: the west of the mainland, between Iberia and the Alps. Touches: Andorra, Belgium, Germany, Italy, Luxembourg, Monaco, Spain and Switzerland. Water: Atlantic Ocean, Bay of Biscay, English Channel, Gulf of Lion, Mediterranean Sea, North Sea and Tyrrhenian Sea.
+After the answer: Reason: Three upright stripes, blue, white and red, with the blue on the left. Area: the west of the mainland, between Iberia and the Alps. Touches: Andorra, Belgium, Germany, Italy, Luxembourg, Monaco, Spain and Switzerland. Water: Bay of Biscay, part of the Atlantic Ocean, English Channel, part of the Atlantic Ocean, Gulf of Lion, Mediterranean Sea, North Sea, part of the Atlantic Ocean and Tyrrhenian Sea.
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇫🇷 France.
 
-#### Question 6 (made from a group of places: Italy, flag; this is seed 9)
+#### Item 6 (made from a group of places: Italy, flag; this is seed 9)
 
 A flag, about 64 pixels wide, with no name beside it: 🇮🇹
 
@@ -138,7 +138,7 @@ After the answer: Reason: Three upright stripes, green, white and red, with the 
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇮🇹 Italy.
 
-#### Question 7 (made from a group of places: Portugal, flag; this is seed 0)
+#### Item 7 (made from a group of places: Portugal, flag; this is seed 0)
 
 A flag, about 64 pixels wide, with no name beside it: 🇵🇹
 
@@ -150,7 +150,7 @@ After the answer: Reason: Two upright bands, green on the left and a wider band 
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇵🇹 Portugal.
 
-#### Question 8 (made from a group of places: Spain, flag; this is seed 1)
+#### Item 8 (made from a group of places: Spain, flag; this is seed 1)
 
 A flag, about 64 pixels wide, with no name beside it: 🇪🇸
 
@@ -162,7 +162,7 @@ After the answer: Reason: Three flat stripes, red, yellow and red, the yellow on
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇪🇸 Spain.
 
-#### Question 9 (made from a group of places: Austria, flag; this is seed 7)
+#### Item 9 (made from a group of places: Austria, flag; this is seed 7)
 
 A flag, about 64 pixels wide, with no name beside it: 🇦🇹
 
@@ -174,7 +174,7 @@ After the answer: Reason: Three flat stripes, red, white and red. Area: the Alps
 A picture is added to the feedback:
 The flag, about 64 pixels wide with its name beside it: 🇦🇹 Austria.
 
-#### Question 10 (made from a group of places: Switzerland, flag; this is seed 8)
+#### Item 10 (made from a group of places: Switzerland, flag; this is seed 8)
 
 A flag, about 64 pixels wide, with no name beside it: 🇨🇭
 

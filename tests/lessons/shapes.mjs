@@ -97,7 +97,7 @@ export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(s
 // learner entered in the form into `answers`; `count` is how many different ones a question wants
 export const ACCEPT_ENTRY = either(str, obj({ text: str, parts: arr(str) }));
 export const TEXT = obj({ id: str, kind: en('text'), prompt: text },
-  { model: text, accept: either(arr(ACCEPT_ENTRY), obj({ own: str })), count: int, when: obj({ ask: str, is: arr(str) }) });
+  { model: text, accept: either(arr(ACCEPT_ENTRY), obj({ own: str })), reject: arr(ACCEPT_ENTRY), count: int, when: obj({ ask: str, is: arr(str) }) });
 // a question read aloud (speech-view.js); `show: false` holds its words back behind "Show the words"
 export const SPOKEN = obj({ kind: en('spoken'), text: str }, { show: bool });
 
@@ -122,7 +122,9 @@ const ITEM_OPTIONAL = { steps: arr(STEP_DEF), deciding: arr(str), need: text, ha
 export const ITEM = obj(ITEM_FIELDS, ITEM_OPTIONAL);
 export const GEN = obj({ ...ITEM_FIELDS, params: map(arr(either(str, num))), make: fn }, ITEM_OPTIONAL);
 // a place group (place-gen.js): a generator that makes one place in one of four forms from the map data; its forms and places are checked against the map by placeGenProblems
-const PLACE_ENTRY = obj({ id: str, name: str, accept: arr(ACCEPT_ENTRY) }, { reason: text, area: str, cue: text, flag: str, flagLine: text, forms: arr(str) });   // reason, or area (placeGenProblems holds one of the two)
+// a flag is an emoji, or a drawn flag { box, layers, said } for one no emoji draws (Kosovo's; placeGenProblems holds the layers)
+const DRAWN_FLAG = obj({ box: arr(num), layers: arr(any), said: str });
+const PLACE_ENTRY = obj({ id: str, name: str, accept: arr(ACCEPT_ENTRY) }, { reason: text, area: str, cue: text, flag: either(str, DRAWN_FLAG), flagLine: text, forms: arr(str), lights: str });   // reason, or area (placeGenProblems holds one of the two)
 export const PLACE_GEN = obj({ id: str, strand: str, places: obj({ map: str, forms: arr(str), words: map(text), list: arr(PLACE_ENTRY) }, { slips: map(str) }) }, { facets: map(str) });
 
 /* lessons */

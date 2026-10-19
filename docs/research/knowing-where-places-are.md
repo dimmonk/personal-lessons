@@ -100,6 +100,12 @@ the two kinds of location as the standards and their teaching guides state them;
 **Design:** the subject's way of thinking is relative location, in the order G4's hierarchy gives it: the region a place is
 in first, then what touches it (its neighbours), then its water; feedback gives the same three. **Supports** (with G4).
 
+**The water rule (a judgement call).** A place's water is the seas and oceans its coast touches and the lakes of 15,000 km²
+or more (the Great Lakes, Victoria, Tanganyika, Malawi, the Caspian); "Landlocked" means none of these. The threshold is the
+design's own, chosen so the lakes a news story treats as a coast count and small lakes (Geneva, Titicaca) do not; no study sets
+it. A marginal sea counts with the ocean it belongs to under the IHO's *Limits of Oceans and Seas* (S-23), so a tap on the
+Atlantic is right for a Bay of Biscay coast.
+
 ## How a flag is told from another
 
 **G9. Flag specialists describe a flag in a fixed order: how the field is divided, the colours from the hoist, then the

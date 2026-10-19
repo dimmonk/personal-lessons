@@ -25,12 +25,14 @@ export function sharedEdges(specs, inside) {
   }
   return owners;
 }
-// Two places are neighbours when an edge they share lies on land: a border drawn through a lake (Michigan and Illinois, in Lake Michigan) is not
-// one. `onWater(point)` says whether a point is in a lake.
+// Two places are neighbours when an edge they share lies on land: a border drawn through a lake is not one when a state or province is on it (Michigan and Illinois, in Lake
+// Michigan; Ohio and Canada, in Lake Erie). `onWater(point)` says whether a point is in a lake. The border between two countries is one wherever it runs: Tanzania and the Congo
+// face each other across Lake Tanganyika.
+export const DIVISION_KINDS = ['state', 'province'];
 export function neighborsFromEdges(specs, owners, onWater) {
-  const next = Object.fromEntries(specs.map(s => [s.id, new Set()]));
+  const next = Object.fromEntries(specs.map(s => [s.id, new Set()])), division = new Set(specs.filter(s => DIVISION_KINDS.includes(s.kind)).map(s => s.id));
   for (const { ids, mid } of owners.values()) {
-    if (ids.size < 2 || onWater(mid)) continue;
+    if (ids.size < 2 || (onWater(mid) && [...ids].some(id => division.has(id)))) continue;
     for (const a of ids) for (const b of ids) if (a !== b) next[a].add(b);
   }
   return next;
@@ -109,19 +111,26 @@ function lakeShare(spec, lake) {
   return inLake ? inBoth / inLake : 0;
 }
 export const isLake = w => w.kind === 'lake';
-export function waterOf(spec, owners, waters, { eps = 0.12, minKm = 15, lakeMin = 0.006 } = {}) {
-  const coast = rawRings(spec).flatMap(edgesOf).filter(([a, b]) => (owners.get(edgeKey(a, b)) || { ids: new Set() }).ids.size < 2);
-  const total = coast.reduce((n, [a, b]) => n + km(a, b), 0);
-  const need = Math.min(minKm, total / 2);
+// A water is a place's when the place's coast (the edges no other place of the layer has) runs along it for `minKm`, or for `minShare` of the whole coast where that is less (Israel's 11 km at Eilat,
+// on the Gulf of Aqaba, are 6% of its coast and the Red Sea's whole shore): an edge runs along a water when its middle is inside the water's outline or within `eps` degrees of it. An island state is
+// on every ocean within `islandReach` degrees, since the sea the data draws across the islands of a chain (the Caribbean Sea over the Lesser Antilles) leaves the ocean beyond them out of reach of
+// the shore that faces it. A lake the place's outline reaches into (the Great Lakes, Lake Victoria: the polygons of the states and countries around them cover the lake) is also the place's when
+// `lakeMin` of the lake's own area is inside it. Where Natural Earth's outline of a sea runs past the limit S-23 gives it (the Adriatic to Corfu) the sea is cut at the limit (limits.mjs), not here.
+export const COAST_RULE = { minShare: 0.05, islandReach: 2 };
+const coastEdge = (owners, [a, b]) => (owners.get(edgeKey(a, b)) || { ids: new Set() }).ids.size < 2;
+export function waterOf(spec, owners, waters, { eps = 0.12, minKm = 15, lakeMin = 0.006, minShare = COAST_RULE.minShare, islandReach = COAST_RULE.islandReach } = {}) {
+  const edges = rawRings(spec).flatMap(edgesOf), coast = edges.filter(e => coastEdge(owners, e));
+  const total = coast.reduce((n, [a, b]) => n + km(a, b), 0), need = Math.min(minKm, total * minShare);
+  const island = !!spec.dot && coast.length === edges.length;
   return waters.filter(w => {
-    if (isLake(w)) return lakeShare(spec, w) >= lakeMin;
-    const rings = rawRings(w);
+    if (isLake(w) && lakeShare(spec, w) >= lakeMin) return true;
+    const rings = rawRings(w), reach = island && w.kind === 'ocean' ? Math.max(eps, islandReach) : eps;
     const bbox = rings.flat().reduce((bb, p) => [Math.min(bb[0], p[0]), Math.min(bb[1], p[1]), Math.max(bb[2], p[0]), Math.max(bb[3], p[1])], [Infinity, Infinity, -Infinity, -Infinity]);
     let touching = 0;
     for (const [a, b] of coast) {
       const mid = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2];
-      if (mid[0] < bbox[0] - eps || mid[0] > bbox[2] + eps || mid[1] < bbox[1] - eps || mid[1] > bbox[3] + eps) continue;
-      if (nearWater(mid, rings, eps)) touching += km(a, b);
+      if (mid[0] < bbox[0] - reach || mid[0] > bbox[2] + reach || mid[1] < bbox[1] - reach || mid[1] > bbox[3] + reach) continue;
+      if (nearWater(mid, rings, reach)) touching += km(a, b);
     }
     return touching >= need && touching > 0;
   }).map(w => w.id);

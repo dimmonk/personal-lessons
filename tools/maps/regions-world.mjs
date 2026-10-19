@@ -22,8 +22,9 @@ const ADDED = {
 };
 const WINDOWS = [...AMERICAS, ...EURASIA, ...AFRICA];
 const gathered = key => [...ADDED[key] || [], ...WINDOWS.flatMap(w => w[key] || [])].filter((e, i, all) => all.findIndex(x => x[0] === e[0]) === i);
+// the one lake part 30 asks is Lake Victoria; the regions' lakes are the big lakes with ground in their frames (lakes.mjs), not a list
 const cfg = { seas: gathered('seas'), straits: gathered('straits'), rivers: gathered('rivers'), canals: gathered('canals'), ranges: gathered('ranges'),
-  lakes: gathered('lakes').filter(l => l[0] === 'lake-victoria') };
+  lakes: [['lake-victoria', 'Lake Victoria', 'Lake Victoria']] };
 const world = singlePart(equalEarth(), WORLD_VIEW);
 const LAYERS = ['countries110', 'marine110', 'marine50', 'marine10', 'rivers50', 'lakes50', 'regions50'];
 

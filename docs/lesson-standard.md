@@ -202,13 +202,14 @@ A place's feedback follows the way of thinking every Geography lesson opens with
 it, the water it is on): either its own `reason`, or its `area` in words, from which the app makes three lines, "Area:",
 "Touches:" and "Water:", the last two read from the map data's neighbors and water (never written by hand), then `cue`,
 the one thing that tells it from the place it is mixed up with (`placeReasonOf` in place-gen.js). A place has one or the
-other, never both.
+other, never both. A place's `lights` names the place its name question lights instead of itself (a capital, tapped as its
+dot, is named from its state lit), and its `forms` keeps it to some of its group's forms.
 
 | Form | The learner is shown | Answers | Made as |
 |---|---|---|---|
 | `tap` | the name | taps the place on the blank map | a `place` ask under a prose block with the name |
 | `name` | the place lit | types its name (`accept`, 3.7) | a `text` ask under a `map` block with `lit` |
-| `flag` | the flag (`flag`, text), large, with no name | taps the country | a `place` ask under a `flags` block (3.9); the feedback opens with the place's `flagLine` and shows the flag with the name beside it |
+| `flag` | the flag (`flag`: an emoji, or for a flag no emoji draws a drawn spec, see 3.9), large, with no name | taps the country | a `place` ask under a `flags` block (3.9); the feedback opens with the place's `flagLine` and shows the flag with the name beside it |
 | `border` | the name | taps a neighbor, then the water or Landlocked | a `place` ask with `mode: 'neighbor-water'` |
 
 - A place's `flagLine` is the one thing that tells its flag from the one it is mistaken for ("Three upright stripes, black, yellow and red. Germany's
@@ -292,7 +293,7 @@ chosen and nothing is marked until the end.
 - *A line to write*, `{ id, kind, prompt, model, when? }`: the words are never scored (no entry in `r`); the item is
   right or wrong by its other asks, and needs one that is scored (V74). At most 400 characters, trimmed. "Not yet"
   answers with nothing. The feedback shows the words beside "A model line", neither marked. Stored as `a: { say }`.
-- *An answer from memory*, `{ id, kind, prompt, accept: [Entry] | { own: 'answers.q23' }, count? }`, under a `spoken`
+- *An answer from memory*, `{ id, kind, prompt, accept: [Entry] | { own: 'answers.q23' }, reject?: [Entry], count? }` (`reject`: another thing's name, typed exactly, is a miss and never a forgiven misspelling; a place group fills it with its other places' names), under a `spoken`
   block that holds the question. An `Entry` is a string (words in brackets are optional; a bracket that offers a choice
   may be said with either half) or `{ text, parts }` (parts in any order). `count: n` needs n different accepted answers
   in what was typed. `accept.own` reads the learner's own entry. The item's `reason` is the meaning line, shown after
@@ -347,8 +348,18 @@ stored as the three numbers `[x, y, k]`: the point in units of the map and the z
 - *A neighbor and its water*: its question block reads "What borders <place>?" (a place group's border question is made with
   `SAY.placeBorderAsk`), never the bare name, so it never reads as a name to tap. Two taps in order, kept in `Q.cur.many[askId]` until the second, and Undo (beside Landlocked, under the map) takes
   the first back while the second is still to come. The first must be inside a
-  neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water.
-  Neighbors and water are the map data's (computed by the build from the outlines: a border through a lake is not a border), so a
+  neighbor of `of`, the second inside one of its water or the button "Landlocked" (`'none'`), right only when `of` has no water at all.
+  **One water rule for every map** (decided 2026-10-18): a place's water is its seas, its oceans and the big lakes that lie on it or against its shore (the Great Lakes, Lake Victoria,
+  Lake Tanganyika, Lake Malawi, the Caspian Sea), so Ontario is on the Great Lakes and Uganda on Lake Victoria; "Landlocked" is right only for a place that touches none of them (Rwanda on
+  Lake Kivu and Chad on Lake Chad are landlocked: those lakes are too small). A lesson never says that a lake does not count.
+  **A sea is part of its ocean** (decided 2026-10-18): a marginal sea that the IHO's *Limits of Oceans and Seas* (S-23, 3rd edition) gives an ocean carries `partOf: <ocean>` in the map data
+  (`PART_OF`, `tools/maps/limits.mjs`, set when the ocean is a place of the map): the Bay of Biscay, the English Channel, the North Sea, the Irish Sea, the Baltic, the Caribbean Sea, the Gulf of Mexico,
+  the Labrador Sea of the Atlantic; the East China, Yellow, South China, Philippine, Bering and Tasman seas of the Pacific; the Arabian Sea, the Bay of Bengal, the Gulf of Aden, the Red Sea and the
+  Persian Gulf of the Indian Ocean; the Barents and Beaufort seas of the Arctic. The Mediterranean is not the Atlantic's (S-23 gives it a chapter of its own, with the Adriatic, Ionian and Aegean in it), nor are
+  the Black Sea, Azov or the Caspian an ocean's. The water answer takes a tap on the ocean as right where a place's water is a part of it (`placeWaterRightOf`: France, on the Bay of Biscay, is right
+  with a tap on the Atlantic; Italy is not), and the feedback names both: "the Bay of Biscay, part of the Atlantic Ocean" (`SAY.placePartOf`), the ocean named alone when it is in the water list already.
+  `water` itself, which the gen text and Landlocked read, is unchanged.
+  Neighbors and water are the map data's (computed by the build from the outlines: a border through a lake between two states or provinces is not a border; one between two countries is), so a
   lesson never lists them, and `of` is a place that is ground (the region's `land` kinds). The answer is
   `{ n: [x, y, k], w: [x, y, k] | 'none' }`; after it `of` is filled in full and every neighbor of it
   lit as a lighter tint (`focus` and `near`, so the place asked about is never read as one of its neighbors), the water it touches and the water the
@@ -417,6 +428,11 @@ each question from the learner's range and a seed, and stores its tries under `s
 | `flags` | the flags of places of a place group (3.5), each about 64 pixels wide; with `names`, the name beside each; also the picture added to the feedback of a flag question | `gen`, `places: [placeId]`, `names?` |
 | `pitch` | the strip of a `sing` ask; made by the app, never written | none |
 
+A place's `flag` is its emoji, or, when no emoji draws it, a drawn flag `{ box: [w, h], layers: [['rect', fill, x, y, w, h] | ['path', fill, d] | ['star', fill, cx, cy, r]], said }` that the `flags` block draws as an
+inline SVG about 80 pixels wide, hidden from a screen reader as the emoji is (`flagHtml`, `place-view.js`; the validator checks the spec, `flagProblems`, `place-gen.js`). Kosovo is the one: 🇽🇰 is not in the Unicode standard
+and shows as two letters on most phones, so its flag is drawn (blue, the country in gold from the map data's outline, six white stars in an arc) in `gen-balkans.js`; `said` is the flag in words with
+no name, for a view with no pictures.
+
 - A `Segment` is `{ id, text, note?, para?, fine?, slip?, me? }`: every line that can be tapped or marked is one.
   `para` starts a paragraph, `fine` is small print, `me` a line you sent (a thread only).
 - **A message** has at least one line; a thread or chat has at least one from the other person (V70), and names who
@@ -439,7 +455,9 @@ each question from the learner's range and a seed, and stores its tries under `s
   the page; the one look at a labelled map (`labels`) is a teaching screen. A lit place is always named on the map itself, never only in the
   text beside it (a map is the visual aid; the eye should not leave it for the name), except while a question asks for that name. A name is set in pixels, not in units of the map: 12 pixels tall
   on the screen at every zoom (`map-run.js` puts it back at each zoom), and a microstate's name stands off its dot on a line to it, the pixels
-  right and down in the place's `lead` (3.11). A region too crowded to read whole is shown as panels, each a `map` block with a `view`
+  right and down in the place's `lead` (3.11). Two names that would sit on one another (Haiti under the Dominican Republic on a lit map) are set apart on the screen: the first
+  stays on its point and the later one steps off along a short lead, on a line to its point as a microstate's does (`placeNameLeads` in `place.js`, run by `map-run.js` at each zoom and screen
+  size; a name the map data leads is never moved). A region too crowded to read whole is shown as panels, each a `map` block with a `view`
   that names only the places in it; the button for the whole map goes back to the part the map opened on. Water is drawn in a water color
   (the map's sea, and a lit sea, lake or strait in a lighter one), never the land's. A map is pinched, dragged and zoomed to 8 times
   (`map-run.js`), by two fingers, by the buttons under it (zoom in, zoom out, the whole map) and by ctrl and the wheel; its zoom is
@@ -459,7 +477,7 @@ each question from the learner's range and a seed, and stores its tries under `s
 - A private form into `lines` (Psychology part F), refused by V70 (`NOT_BUILT` in `tests/lessons/rules-shape.mjs`).
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
 - A part of a state (halves and thirds of a unit) as a place; flags drawn from the map data (the emoji flag is text in the place group's list,
-  shown large by a `flags` block); Alaska's Arctic coast as water; the Strait of Hormuz and the Bering Strait as outlines (they are points, 3.11).
+  shown large by a `flags` block; a flag with no emoji, Kosovo's, is a small drawn spec in the list, below); the Strait of Hormuz and the Bering Strait as outlines (they are points, 3.11).
 - Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
   the range as a lesson step with a check of its own, and a range typed by hand.
 
@@ -486,6 +504,9 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   twice. `kind` is the kind of place (`country`, `state`, `province`, `continent`, `region`, `ocean`, `sea`, `strait`, `lake`, `river`, `canal`, `coast`, `range`, `desert`, `city`); `at` is where
   its name goes (3.9: its size is the app's, in pixels); `dot` a microstate, a small island state, a city or a strait with no outline, a point with a tap radius, and `lead` the pixels, right
   and down, that its name stands from the dot (the app draws a line between). A tap on the circle of a dot is named for the microstate, not the country under it.
+- **Cities of the `world` map** (parts 31 and 32): 42 dots of the kind `city` from `WORLD_CITIES` in `cities.mjs`, found and named as the cities of `us` are, in the one group `world-cities`; the pairs the traps
+  and the distances name (San Diego and Reno, Reno and Los Angeles, Rome and Philadelphia, Santiago and New York City, Lima and Miami, Paris and Seattle) and others across the six continents. A city of both maps is one id and
+  one name on both (`new-york-city`).
 - **Dots of the kind `city`** (`us`: the 50 state capitals and 34 big cities, Dallas–Fort Worth and Minneapolis–St. Paul as one dot each; `tools/maps/cities.mjs`, from
   Natural Earth's populated places) have no outline (`rings: []`), are not ground, not in `draw` and not in `labelled`: the blank map shows none, a lit city is drawn as a dot
   and named on its map (a lit place always is), and `labels: true` names none. Found within the radius of a dot (2% of the map's width, divided by the zoom); a tap on a city is
@@ -502,10 +523,33 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   keeping every vertex two neighbors share, so a border is the same on both sides; rounds to tenths; drops a ring under 0.04 square units.
   The lower 48's water and neighbors are not cut away under an inset (a tap on the sea beside Hawaii is the Pacific); the lower 48's land is.
 - `neighbors` and `water` are stored for every place of a `land` kind: two places are neighbors when an edge of their outlines
-  is shared on land (a border through a lake is not one; Four Corners is not one), or, for a state and Canada or Mexico, when a
-  stretch of 20 km of one's outline runs unbroken within 8 km of the other's; water is every sea, ocean or lake whose outline a coast
-  reaches (a Great Lake lies inside the polygons of the states around it, so a lake is a state's water when a share of the lake's area is inside it).
-  In the 18 regions of countries a lake is not water (`borders.water` is oceans and seas): Uganda is landlocked, Lake Victoria a lake it lies on; the Caspian is a sea in Natural Earth.
+  is shared on land (a border through a lake is not one when a state or province is on it; one between countries is, Tanzania and the Congo in Lake Tanganyika; Four Corners is not one), or, for a state and
+  Canada or Mexico, when a stretch of 20 km of one's outline runs unbroken within 8 km of the other's; water is every sea, ocean or big lake whose outline a coast
+  reaches, or that lies inside the place's polygon (a Great Lake lies inside the polygons of the states around it, so a lake is a place's water when a share of the lake's area is inside it).
+  **Neighbors of a country are the whole world's** (`tools/maps/world-borders.mjs`): a window cuts a country's borders off (Russia on the map of eastern Europe lacks Norway, China, Mongolia, North Korea), so the
+  build works out the land neighbors of every country over the whole countries layer, by the edges two countries share, in every region (a window, `europe-west`, and Canada and Mexico on `us`). A neighbor with
+  no shape in the frame, or a sliver of one, is a place of the kind `country` with `rings: []` and no `at`, `neighbors` or `water`, kept only while a country that shows has it as a neighbor: it is named in the feedback
+  and cannot be tapped, as Russia's Arctic is, and the right answer to the neighbor question stays a tap on a neighbor that shows (`placeAskProblems` fails a country whose neighbors all lack a shape). A country
+  that has a place on the map is that place's polygons: France's in South America are French Guiana's (Brazil is not France's neighbor). The United States, which is its states on `us`, and Canada, which is its
+  provinces on `americas-north`, are not neighbors but a border. Natural Earth draws Botswana and Zambia meeting at one point, Kazungula, where they have a border of 150 m: `POINT_BORDERS` names it (Namibia and
+  Zimbabwe meet at the same point and have none). The coast of a country is the edges no country of the world shares, so a window does not make a land border a shore. The province of Quebec is named `Quebec`
+  in the data (`PROVINCE_NAMES`, `window.mjs`), as the lessons say it.
+  **The coast rule** (`waterOf`, `topology.mjs`): a coast is the edges of a place's outline that no country (or state) of the layer shares, and a water is the place's when its coast runs along it for 15 km,
+  or for 5% of the place's whole coast where that is less (Israel's 11 km at Eilat, on the Gulf of Aqaba, are 6% of its coast and the Red Sea's whole shore: Israel and Jordan are both on it). An island state
+  (a dot with no land border) is on every ocean within 2 degrees of its shore, since Natural Earth draws the Caribbean Sea across the whole chain of the Lesser Antilles and leaves the Atlantic beyond them
+  out of reach (Barbados, Antigua and Barbuda, Dominica, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and Grenada are on the Atlantic and the Caribbean Sea; Jamaica, well off the Atlantic, is on the
+  Caribbean only). The constants are `COAST_RULE`. Where Natural Earth's outline of a sea runs past the limit S-23 gives it, the sea is cut at the limit and no country is listed by hand: the Adriatic
+  runs on south past the line from Cape Santa Maria di Leuca to Cape Linguetta to Corfu and the coast of Albania beyond the Karaburun peninsula, which are the Ionian's (`SEA_LIMITS`, `limits.mjs`), so Greece
+  is not on the Adriatic and Albania is on the Adriatic and the Ionian. A stretch rule (a sea counts for a stretch of coast by its share of it) was tried and left: no share tells Corfu's Adriatic shore
+  from Albania's Ionian one, and it lost Djibouti's Red Sea and Quebec's Labrador Sea.
+  **The one water rule, in every region of the states, provinces and countries** (`borders.water` is oceans, seas and lakes): a lake is big, and so water, when its outline holds 15,000 square
+  kilometers or more in Natural Earth's lakes layer (`tools/maps/lakes.mjs`: the Great Lakes, Victoria, Tanganyika, Malawi, Great Bear, Great Slave, Winnipeg, Baikal, Ladoga, Balkhash), and a
+  window of the world has every big lake with ground in its frame (`lakeSpecs`, `window.mjs`), no list to keep. A smaller lake or a reservoir is scenery, not water. The Caspian is a sea in
+  Natural Earth's marine layer and is listed with the seas of a part. An ocean takes in the bays and seas inside it that are not places of their own (the Atlantic the Bay of Fundy and the Gulf of Maine,
+  the Pacific the Bering Sea and the Sea of Okhotsk, the Arctic the Barents, White, Kara, Laptev, Chukchi and Beaufort seas), and a sea takes in the water beside it that Natural Earth's 50 m outline leaves
+  out (`SEA_ALSO` in `window.mjs`: the Gulf of Honduras into the Caribbean Sea for Guatemala, the Alboran Sea into the Mediterranean for Morocco, the Bight of Benin from the 10 m layer into the Gulf of
+  Guinea for Togo and Benin). The water a country touches beyond its frame is in its `water` as a place with no shape (`beyond`: Russia's Arctic and Pacific coasts on `europe-east`; it is in the file,
+  named in the feedback, and cannot be tapped). On the map of the United States the Arctic Ocean is drawn in the Alaska inset, so Alaska's water is the Pacific and the Arctic.
 - Natural Earth's own choices, kept: Western Sahara and Kosovo are places of their own, Palestine (the West Bank and Gaza) is one place, Northern Cyprus is Cyprus and Somaliland is
   Somalia, Taiwan is a country, dependencies (Puerto Rico, the Faroes) are left out unless a part asks them (Puerto Rico), France's polygons in South America are French Guiana.
 - Measured on 2026-10-18: the three above, and: `americas-north` 61.8 KB (13 provinces and territories, the United States and Greenland, 3 oceans, 6 seas, 4 lakes), `mexico-central` 28.6 KB (the
@@ -513,14 +557,14 @@ FC.map('europe-west', { name, size: [1000, 1015.9], q: 10, land: ['country'], dr
   `balkans` 36.7 KB, `middle-east` 43.8 KB (the Bosporus, Hormuz), `arabia-north-africa` 86.2 KB (the Suez Canal, 3 dots), `africa-west` 36.2 KB, `africa-central` 59.3 KB (the Sahara, the Sahel, the Congo),
   `africa-east` 37.9 KB (the Nile, Lake Victoria), `africa-south` 30.6 KB (the Kalahari), `asia-south` 47.0 KB, `asia-central` 49.2 KB (the Caucasus, the Caspian), `asia-east` 90.7 KB (the Yangtze, the
   Mekong, the Taiwan Strait), `asia-islands` 64.5 KB (12 dots, the Strait of Malacca), `world-features` 142.8 KB (96 places: 7 continents, 5 oceans, 51 seas, 7 straits, 2 canals, 9 rivers, Lake Victoria,
-  8 ranges, 5 deserts, the Sahel), and `us` 97.8 KB with its 84 cities: 1265 KB in all (the design's budget was about 600 KB for the first three; the whole is under 1.5 MB, which `tests/place-pure.mjs` holds). Each
+  8 ranges, 5 deserts, the Sahel), and `us` 97.8 KB with its 84 cities: 1265 KB in all (measured before the one water rule, the Arctic Ocean of the Alaska inset and the 42 cities of the `world` map, which bring the whole to about 1280 KB) (the design's budget was about 600 KB for the first three; the whole is under 1.5 MB, which `tests/place-pure.mjs` holds). Each
   file is under 560 lines (V47 holds 800). A region of a wide window (`arabia-north-africa`, `africa-west`, `asia-central`) is 0.4 to 0.6 as tall as it is wide: at a phone's width it is read as panels.
 - Measured on 2026-10-13: `world` 85.2 KB (298 rings, 32 places: 7 continents, 5 oceans, 20 regions), `us` 88.5 KB (343 rings, 82 places:
   50 states and DC, 4 regions, Canada and Mexico, 5 Great Lakes, 10 rivers, 3 coasts, 4 ranges, Pacific, Atlantic, Gulf of Mexico),
   `europe-west` 61.7 KB (132 rings, 49 places: 34 countries, 5 dots, 11 seas, the Strait of Gibraltar, the Atlantic, the Alps, the Pyrenees):
   235 KB in all (about 80 KB compressed), against the design's budget of about 600 KB. Each file is under 450 lines (V47 holds 800).
 - `tests/maps-pure.mjs` holds the 18 regions and the cities to known facts: every place a part asks is on its map, a tap on a capital is inside its country, landlocked countries have no water and
-  islands have a sea, dots are dots, Hormuz is found within the radius of its point, the Suez and Panama canals are found beside them and not in the desert, the cities are found and named as dots,
+  islands have a sea, one water rule (Ontario on the Great Lakes, New Brunswick on the Atlantic, Guatemala on the Caribbean, Morocco on the Mediterranean, Togo and Benin on the Gulf of Guinea, Alaska on the Arctic, Russia on the Arctic and Pacific, Uganda on Lake Victoria; Rwanda and Ethiopia landlocked), the whole world's neighbors (Russia's Norway, China, Mongolia and North Korea beyond the frame, no shape and no tap; Botswana and Zambia), the coast rule (not Greece on the Adriatic; Israel and Jordan on the Red Sea; the Lesser Antilles on the Atlantic; a made-up island), Quebec's name, the 42 cities of the `world` map (parts 31 and 32), dots are dots, Hormuz is found within the radius of its point, the Suez and Panama canals are found beside them and not in the desert, the cities are found and named as dots,
   and no `'auto'` is left in a file.
 - `tests/place-pure.mjs` holds the data to known facts (Switzerland's neighbors and no water, Belgium's North Sea, Michigan's lakes,
   Nevada landlocked, a tap on each capital inside its country, the shore of California, New Jersey and Texas on the three coasts, the

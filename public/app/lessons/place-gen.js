@@ -6,6 +6,8 @@
 // place was last asked in. Pure: no page, no storage; the record is passed in as `memory`.
 //   places { map, forms: ['tap' | 'name' | 'flag' | 'border'], words: { [form]: Text }, slips?: { [placeId]: slipId },
 //            list: [{ id, name, reason | area, cue?, accept: [Entry], flag?, flagLine?, forms? }] }
+// A place's own `lights` is the place its name question lights instead of itself: a state capital is tapped as its dot, and named from its state lit
+// ("What is the capital of the lit state?").
 // A place's own `forms` keeps it to some of the group's forms, when the map data cannot answer one of them for it (Alaska's Arctic coast is not on the
 // map of the United States, so it is never asked for its water).
 // A place's feedback follows the way of thinking (the bigger area it sits in, what touches it, the water it is on): either its own `reason`, or
@@ -40,7 +42,7 @@ const PLACE_PAIRS = new WeakMap();
 // the forms a place of the group can be asked in, in the order the group lists its forms
 function placeFormsOf(gen, entry, map){
   const on = mapPlace(map, entry.id);
-  return gen.places.forms.filter(f => (!entry.forms || entry.forms.includes(f)) && (f === 'flag' ? !!entry.flag : f === 'border' ? !!(on.neighbors && on.neighbors.length && on.water) : true));
+  return gen.places.forms.filter(f => (!entry.forms || entry.forms.includes(f)) && (f === 'flag' ? !!entry.flag : f === 'border' ? !!(on.neighbors && on.neighbors.some(id => mapPlace(map, id).rings.length) && on.water) : true));
 }
 function placePairs(gen){
   let pairs = PLACE_PAIRS.get(gen);
@@ -70,7 +72,7 @@ function placeAllowedForms(gen, place, only = {}){
 // the feedback lines of a place: its own reason, or the area it sits in, what touches it and its water, from the map data, then its cue
 function placeReasonOf(group, entry){
   if(entry.reason) return entry.reason;
-  const map = mapOf(group.map), touches = placeNames(map, placeNeighborsOf(map, entry.id)), water = placeNames(map, placeWaterOf(map, entry.id));
+  const map = mapOf(group.map), touches = placeNames(map, placeNeighborsOf(map, entry.id)), water = placeWaterNames(map, placeWaterOf(map, entry.id));
   return [SAY.placeInLine(entry.area), touches.length ? SAY.placeTouchesLine(joinWords(touches)) : SAY.placeTouchesNone,
     water.length ? SAY.placeWaterLine(joinWords(water)) : SAY.placeWaterNone, ...(entry.cue ? [entry.cue] : [])];
 }
@@ -85,7 +87,9 @@ function placeItem(gen, seed){
   const made = form === 'tap' ? tap([{ kind: 'prose', text: entry.name }], where)
     : form === 'flag' ? { ...tap([flags(false)], where), figure: flags(true), reason: entry.flagLine ? [entry.flagLine, ...asList(base.reason)] : base.reason }
     : form === 'border' ? tap([{ kind: 'prose', text: SAY.placeBorderAsk(entry.name) }], { id: 'borders', kind: 'place', mode: 'neighbor-water', prompt: words, map: group.map, of: place })
-    : tap([{ kind: 'map', region: group.map, lit: [place] }], { id: 'name', kind: 'text', prompt: words, accept: entry.accept });
+    : tap([{ kind: 'map', region: group.map, lit: [entry.lights || place] }], { id: 'name', kind: 'text', prompt: words, accept: entry.accept,
+      // the other places' names of the group: typed for this place, each is a miss, not a forgiven misspelling (Iran for Iraq)
+      reject: group.list.filter(p => p.id !== place).flatMap(p => p.accept).filter(a => !entry.accept.includes(a)) });
   return { ...made, seed, values: { place, form, name: entry.name } };
 }
 // every question a group can make, one for each pair (the validator reads them all)
@@ -157,8 +161,10 @@ function placeGenProblems(gen, maps){
   group.list.forEach(p => {
     const on = map.places.find(x => x.id === p.id);
     if(!on) return problems.push(`the place "${p.id}" is not a place of the map ${group.map}`);
-    if(!on.rings.length) problems.push(`the place "${p.id}" has no shape on the map to be tapped`);
+    if(!on.rings.length && !on.dot) problems.push(`the place "${p.id}" has no shape or dot on the map to be tapped`);
     placeDuplicates(p.accept.map(a => typeof a === 'string' ? a : a.text)).forEach(a => problems.push(`the place "${p.id}" lists the spelling "${a}" twice`));
+    if(p.lights && !map.places.some(x => x.id === p.lights)) problems.push(`the place "${p.id}" lights "${p.lights}", which is not a place of the map ${group.map}`);
+    if('flag' in p) flagProblems(p.flag).forEach(m => problems.push(`the flag of "${p.id}": ${m}`));
     (p.forms || []).filter(f => !group.forms.includes(f)).forEach(f => problems.push(`the place "${p.id}" keeps to the form "${f}", which the group does not ask`));
     if(!p.reason === !p.area) problems.push(`the place "${p.id}" needs either its own reason or the area it sits in (area), not both`);
   });
@@ -182,6 +188,24 @@ function placeDrawProblems(gen, draw){
   if(!problems.length) Object.entries(draw.split).filter(([, n]) => n > 0).forEach(([f, n]) => {
     const can = ids.filter(id => placeAllowedForms(gen, id, draw.only || {}).includes(f)).length;
     if(can < n) problems.push(`the split asks ${n} in the form "${f}" and only ${can} place${can === 1 ? '' : 's'} can be asked in it`);
+  });
+  return problems;
+}
+// A flag is an emoji or a drawn flag (place-view.js, flagHtml); the layers of a drawn one are a rect [x, y, w, h], a path [d] or a star [cx, cy, r], each after its fill
+const FLAG_LAYERS = { rect: 4, path: 1, star: 3 };
+// the problems of a flag, for the validator: [string]
+function flagProblems(flag){
+  if(typeof flag === 'string') return flag ? [] : ['the flag is empty'];
+  if(!flag || typeof flag !== 'object') return ['a flag is an emoji or a drawn flag { box, layers, said }'];
+  const num = v => Number.isFinite(v), problems = [];
+  if(!(Array.isArray(flag.box) && flag.box.length === 2 && flag.box.every(v => num(v) && v > 0))) problems.push('a drawn flag has a box [width, height] of two positive numbers');
+  if(!(typeof flag.said === 'string' && flag.said)) problems.push('a drawn flag has the words it is said in (`said`)');
+  if(!(Array.isArray(flag.layers) && flag.layers.length)) return [...problems, 'a drawn flag has layers'];
+  flag.layers.forEach((l, i) => {
+    const [kind, fill, ...a] = Array.isArray(l) ? l : [];
+    if(!(kind in FLAG_LAYERS)) return problems.push(`layer ${i} of a drawn flag is a rect, a path or a star`);
+    if(typeof fill !== 'string' || !/^#[0-9a-f]{6}$/i.test(fill)) problems.push(`layer ${i} of a drawn flag is filled with a color like #244AA5`);
+    if(a.length !== FLAG_LAYERS[kind] || (kind === 'path' ? typeof a[0] !== 'string' : !a.every(num))) problems.push(`layer ${i}, a ${kind}, takes ${FLAG_LAYERS[kind]} ${kind === 'path' ? 'string' : 'numbers'} after its fill`);
   });
   return problems;
 }

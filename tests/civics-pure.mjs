@@ -121,6 +121,9 @@ right(interview, 'vote', 'u.s. citizens');
 right(interview, 'vote', 'citizens');
 check(recallMatch(interview.items.oath.asks[0], 'defend the constitution and obey the laws of the united states').used.length === 2, 'two different answers are two');
 check(recallMatch(interview.items.oath.asks[0], 'defend the constitution, defend the constitution') === null, 'the same answer twice is not two');
+// another thing's name typed exactly is that other answer, not a misspelling of this one; a near miss of this one is still forgiven
+const iraq = { id: 'name', kind: 'text', accept: ['Iraq'], reject: ['Iran'] };
+check(recallMatch(iraq, 'Iran') === null && recallMatch(iraq, 'Irak').cost === 1 && recallMatch({ ...iraq, reject: [] }, 'Iran').cost === 1, 'a rejected name typed exactly is a miss, a misspelling still forgiven');
 check(recallMatch(interview.items.law.asks[0], 'constitutoin').cost === 1 && recallMatch(interview.items.law.asks[0], 'constitution').cost === 0, 'a misspelling costs one, a right word nothing');
 
 /* ---------- the accepted answers are sound ---------- */

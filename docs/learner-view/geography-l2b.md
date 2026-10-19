@@ -68,7 +68,7 @@ Then the answer: Ohio River. The Ohio runs west from the Northeast, along the bo
 
 10 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Mississippi River, tap; this is seed 0)
+#### Item 1 (made from a group of places: Mississippi River, tap; this is seed 0)
 
 Mississippi River
 
@@ -78,7 +78,7 @@ Mississippi River
 
 After the answer: Reason: The Mississippi runs straight down the middle of the country, from near the Canadian border to the Gulf of Mexico.
 
-#### Question 2 (made from a group of places: Missouri River, tap; this is seed 2)
+#### Item 2 (made from a group of places: Missouri River, tap; this is seed 2)
 
 Missouri River
 
@@ -88,7 +88,7 @@ Missouri River
 
 After the answer: Reason: The Missouri comes in from the Rockies in the northwest, across the Plains of the Midwest, and runs into the Mississippi in the middle of the country.
 
-#### Question 3 (made from a group of places: Ohio River, tap; this is seed 4)
+#### Item 3 (made from a group of places: Ohio River, tap; this is seed 4)
 
 Ohio River
 
@@ -98,7 +98,7 @@ Ohio River
 
 After the answer: Reason: The Ohio runs west from the Northeast, along the bottom of the Midwest, and runs into the Mississippi.
 
-#### Question 4 (made from a group of places: Arkansas River, tap; this is seed 6)
+#### Item 4 (made from a group of places: Arkansas River, tap; this is seed 6)
 
 Arkansas River
 
@@ -108,7 +108,7 @@ Arkansas River
 
 After the answer: Reason: The Arkansas runs east from the Rockies, across the Plains and into the South, and runs into the Mississippi.
 
-#### Question 5 (made from a group of places: Tennessee River, tap; this is seed 8)
+#### Item 5 (made from a group of places: Tennessee River, tap; this is seed 8)
 
 Tennessee River
 
@@ -118,7 +118,7 @@ Tennessee River
 
 After the answer: Reason: The Tennessee loops through the South, down and back up, and runs into the Ohio just before the Ohio meets the Mississippi.
 
-#### Question 6 (made from a group of places: Colorado River, tap; this is seed 10)
+#### Item 6 (made from a group of places: Colorado River, tap; this is seed 10)
 
 Colorado River
 
@@ -128,7 +128,7 @@ Colorado River
 
 After the answer: Reason: The Colorado runs southwest from the Rockies, through the Grand Canyon, to Mexico, all in the West.
 
-#### Question 7 (made from a group of places: Columbia River, tap; this is seed 12)
+#### Item 7 (made from a group of places: Columbia River, tap; this is seed 12)
 
 Columbia River
 
@@ -138,7 +138,7 @@ Columbia River
 
 After the answer: Reason: The Columbia runs from Canada through the far northwest corner of the West to the Pacific.
 
-#### Question 8 (made from a group of places: Snake River, tap; this is seed 14)
+#### Item 8 (made from a group of places: Snake River, tap; this is seed 14)
 
 Snake River
 
@@ -148,7 +148,7 @@ Snake River
 
 After the answer: Reason: The Snake bends west across the northern West and runs into the Columbia.
 
-#### Question 9 (made from a group of places: Rio Grande, tap; this is seed 16)
+#### Item 9 (made from a group of places: Rio Grande, tap; this is seed 16)
 
 Rio Grande
 
@@ -158,7 +158,7 @@ Rio Grande
 
 After the answer: Reason: The Rio Grande runs south from the Rockies, then along the border with Mexico to the Gulf of Mexico.
 
-#### Question 10 (made from a group of places: Hudson River, tap; this is seed 18)
+#### Item 10 (made from a group of places: Hudson River, tap; this is seed 18)
 
 Hudson River
 
@@ -174,7 +174,7 @@ Then a screen: you can stop here, your place is kept.
 
 4 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 11 (made from a group of places: Mississippi River, name; this is seed 1)
+#### Item 11 (made from a group of places: Mississippi River, name; this is seed 1)
 
 A map of The United States, north up, with no names on it. Lit: Mississippi River. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -188,7 +188,7 @@ A map of The United States, north up, with no names on it. Lit: Mississippi Rive
 
 After the answer: Reason: The Mississippi runs straight down the middle of the country, from near the Canadian border to the Gulf of Mexico.
 
-#### Question 12 (made from a group of places: Missouri River, name; this is seed 3)
+#### Item 12 (made from a group of places: Missouri River, name; this is seed 3)
 
 A map of The United States, north up, with no names on it. Lit: Missouri River. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -200,7 +200,7 @@ A map of The United States, north up, with no names on it. Lit: Missouri River. 
 
 After the answer: Reason: The Missouri comes in from the Rockies in the northwest, across the Plains of the Midwest, and runs into the Mississippi in the middle of the country.
 
-#### Question 13 (made from a group of places: Ohio River, name; this is seed 5)
+#### Item 13 (made from a group of places: Ohio River, name; this is seed 5)
 
 A map of The United States, north up, with no names on it. Lit: Ohio River. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -212,7 +212,7 @@ A map of The United States, north up, with no names on it. Lit: Ohio River. The 
 
 After the answer: Reason: The Ohio runs west from the Northeast, along the bottom of the Midwest, and runs into the Mississippi.
 
-#### Question 14 (made from a group of places: Tennessee River, name; this is seed 9)
+#### Item 14 (made from a group of places: Tennessee River, name; this is seed 9)
 
 A map of The United States, north up, with no names on it. Lit: Tennessee River. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 

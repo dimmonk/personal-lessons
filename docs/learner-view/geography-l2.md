@@ -76,7 +76,7 @@ Then the answer: Lake Michigan. Lake Michigan is the one Great Lake wholly in th
 
 17 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: The West Coast, tap; this is seed 0)
+#### Item 1 (made from a group of places: The West Coast, tap; this is seed 0)
 
 The West Coast
 
@@ -86,7 +86,7 @@ The West Coast
 
 After the answer: Reason: The West Coast is the shore of the lower 48 on the Pacific: California, Oregon and Washington.
 
-#### Question 2 (made from a group of places: The East Coast, tap; this is seed 2)
+#### Item 2 (made from a group of places: The East Coast, tap; this is seed 2)
 
 The East Coast
 
@@ -96,7 +96,7 @@ The East Coast
 
 After the answer: Reason: The East Coast is the shore on the Atlantic, from Maine down to Florida.
 
-#### Question 3 (made from a group of places: The Gulf Coast, tap; this is seed 4)
+#### Item 3 (made from a group of places: The Gulf Coast, tap; this is seed 4)
 
 The Gulf Coast
 
@@ -106,7 +106,7 @@ The Gulf Coast
 
 After the answer: Reason: The Gulf Coast is the shore on the Gulf of Mexico, from Texas round to Florida.
 
-#### Question 4 (made from a group of places: The West, tap; this is seed 6)
+#### Item 4 (made from a group of places: The West, tap; this is seed 6)
 
 The West
 
@@ -116,7 +116,7 @@ The West
 
 After the answer: Reason: The West is the big region on the left, from the Rocky Mountains to the Pacific, with Alaska and Hawaii.
 
-#### Question 5 (made from a group of places: The Midwest, tap; this is seed 8)
+#### Item 5 (made from a group of places: The Midwest, tap; this is seed 8)
 
 The Midwest
 
@@ -126,7 +126,7 @@ The Midwest
 
 After the answer: Reason: The Midwest is the region in the middle and the north, from the Great Lakes across the Plains, between the West and the Northeast.
 
-#### Question 6 (made from a group of places: The South, tap; this is seed 10)
+#### Item 6 (made from a group of places: The South, tap; this is seed 10)
 
 The South
 
@@ -136,7 +136,7 @@ The South
 
 After the answer: Reason: The South is the region along the bottom and the southeast, from Texas to Florida and up to Delaware.
 
-#### Question 7 (made from a group of places: The Northeast, tap; this is seed 12)
+#### Item 7 (made from a group of places: The Northeast, tap; this is seed 12)
 
 The Northeast
 
@@ -146,7 +146,7 @@ The Northeast
 
 After the answer: Reason: The Northeast is the small region in the top right corner, New England and the states from New York to Pennsylvania.
 
-#### Question 8 (made from a group of places: Rocky Mountains, tap; this is seed 14)
+#### Item 8 (made from a group of places: Rocky Mountains, tap; this is seed 14)
 
 Rocky Mountains
 
@@ -156,7 +156,7 @@ Rocky Mountains
 
 After the answer: Reason: The Rocky Mountains run down the West from Montana to New Mexico, the long range in the middle of the West.
 
-#### Question 9 (made from a group of places: Appalachian Mountains, tap; this is seed 16)
+#### Item 9 (made from a group of places: Appalachian Mountains, tap; this is seed 16)
 
 Appalachian Mountains
 
@@ -166,7 +166,7 @@ Appalachian Mountains
 
 After the answer: Reason: The Appalachian Mountains run down the East, from Pennsylvania to Alabama, behind the East Coast.
 
-#### Question 10 (made from a group of places: Cascade Range, tap; this is seed 18)
+#### Item 10 (made from a group of places: Cascade Range, tap; this is seed 18)
 
 Cascade Range
 
@@ -176,7 +176,7 @@ Cascade Range
 
 After the answer: Reason: The Cascade Range runs north to south through Washington and Oregon, near the Pacific.
 
-#### Question 11 (made from a group of places: Sierra Nevada, tap; this is seed 20)
+#### Item 11 (made from a group of places: Sierra Nevada, tap; this is seed 20)
 
 Sierra Nevada
 
@@ -186,7 +186,7 @@ Sierra Nevada
 
 After the answer: Reason: The Sierra Nevada runs down the east side of California, along the border with Nevada.
 
-#### Question 12 (made from a group of places: Lake Superior, tap; this is seed 22)
+#### Item 12 (made from a group of places: Lake Superior, tap; this is seed 22)
 
 Lake Superior
 
@@ -196,7 +196,7 @@ Lake Superior
 
 After the answer: Reason: Lake Superior is the biggest and westernmost Great Lake, between Minnesota, Wisconsin, Michigan and Canada.
 
-#### Question 13 (made from a group of places: Lake Michigan, tap; this is seed 24)
+#### Item 13 (made from a group of places: Lake Michigan, tap; this is seed 24)
 
 Lake Michigan
 
@@ -206,7 +206,7 @@ Lake Michigan
 
 After the answer: Reason: Lake Michigan is the one Great Lake wholly in the United States, between Wisconsin, Illinois, Indiana and Michigan.
 
-#### Question 14 (made from a group of places: Lake Huron, tap; this is seed 26)
+#### Item 14 (made from a group of places: Lake Huron, tap; this is seed 26)
 
 Lake Huron
 
@@ -216,7 +216,7 @@ Lake Huron
 
 After the answer: Reason: Lake Huron is the Great Lake east of Michigan's mitten, between Michigan and Canada.
 
-#### Question 15 (made from a group of places: Lake Erie, tap; this is seed 28)
+#### Item 15 (made from a group of places: Lake Erie, tap; this is seed 28)
 
 Lake Erie
 
@@ -226,7 +226,7 @@ Lake Erie
 
 After the answer: Reason: Lake Erie is the shallow Great Lake south of Canada, along Ohio, Pennsylvania and New York.
 
-#### Question 16 (made from a group of places: Lake Ontario, tap; this is seed 30)
+#### Item 16 (made from a group of places: Lake Ontario, tap; this is seed 30)
 
 Lake Ontario
 
@@ -236,7 +236,7 @@ Lake Ontario
 
 After the answer: Reason: Lake Ontario is the smallest and easternmost Great Lake, between New York and Canada.
 
-#### Question 17 (made from a group of places: Gulf of Mexico, tap; this is seed 32)
+#### Item 17 (made from a group of places: Gulf of Mexico, tap; this is seed 32)
 
 Gulf of Mexico
 
@@ -252,7 +252,7 @@ Then a screen: you can stop here, your place is kept.
 
 2 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 18 (made from a group of places: Rocky Mountains, name; this is seed 15)
+#### Item 18 (made from a group of places: Rocky Mountains, name; this is seed 15)
 
 A map of The United States, north up, with no names on it. Lit: Rocky Mountains. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -266,7 +266,7 @@ A map of The United States, north up, with no names on it. Lit: Rocky Mountains.
 
 After the answer: Reason: The Rocky Mountains run down the West from Montana to New Mexico, the long range in the middle of the West.
 
-#### Question 19 (made from a group of places: Appalachian Mountains, name; this is seed 17)
+#### Item 19 (made from a group of places: Appalachian Mountains, name; this is seed 17)
 
 A map of The United States, north up, with no names on it. Lit: Appalachian Mountains. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -299,17 +299,17 @@ The West Coast
 
 After the answer: Reason: The West Coast is the shore of the lower 48 on the Pacific: California, Oregon and Washington.
 
-#### Question in the draw: name (made from a group of places: The West Coast, name; this is seed 1)
+#### Question in the draw: name (made from a group of places: Rocky Mountains, name; this is seed 15)
 
-A map of The United States, north up, with no names on it. Lit: The West Coast. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
+A map of The United States, north up, with no names on it. Lit: Rocky Mountains. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
 **What is the lit place called?**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
-  - The West Coast
-  - Pacific Coast
+  - Rocky Mountains
+  - Rockies
 
-After the answer: Reason: The West Coast is the shore of the lower 48 on the Pacific: California, Oregon and Washington.
+After the answer: Reason: The Rocky Mountains run down the West from Montana to New Mexico, the long range in the middle of the West.
 
 ## The result
 

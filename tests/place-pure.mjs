@@ -18,7 +18,7 @@ async function suite(app) {
   let checks = 0;
   const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
   const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
-  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, mapBlockHtml, placeHtml, placeMissHtml, placeGeom, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
+  const { FC, mapOf, mapPlace, placeContains, placeAt, scorePlace, placeRightText, placeAskProblems, mapBlockProblems, mapHtml, mapBlockHtml, placeHtml, placeMissHtml, placeGeom, placeNameLeads, placeNameBox, flagsHtml, flagProblems, PLACE_DOT_TAP, PLACE_SMALL_TAP, SAY } = app;
   const ask = (right, extra = {}) => ({ id: 'a', kind: 'place', prompt: 'x', map: 'europe-west', right, ...extra });
   const border = (of, map = 'europe-west') => ({ id: 'b', kind: 'place', mode: 'neighbor-water', prompt: 'x', map, of });
   const score = (a, tap) => scorePlace({}, a, tap);
@@ -45,7 +45,7 @@ async function suite(app) {
     const own = map.places.filter(p => p.rings.length && p.at && !p.dot && !placeContains(map, mapPlace(map, p.id), p.at[0], p.at[1], 1) && !['river', 'sea', 'ocean', 'region'].includes(p.kind));
     same(own.map(p => p.id), [], `${id}: the label point of a shape is inside it`);
     check(map.places.every(p => p.rings.every(i => Number.isInteger(i) && i >= 0 && i < map.rings.length)) && new Set(map.places.map(p => p.id)).size === map.places.length, `${id}: places name rings that exist and have ids of their own`);
-    check(map.places.filter(p => map.land.includes(p.kind) && p.kind !== 'continent').every(p => Array.isArray(p.neighbors) && Array.isArray(p.water)), `${id}: every land place has its neighbors and water stored`);
+    check(map.places.filter(p => map.land.includes(p.kind) && p.kind !== 'continent' && (p.rings.length || p.dot)).every(p => Array.isArray(p.neighbors) && Array.isArray(p.water)), `${id}: every land place that shows has its neighbors and water stored (a neighbour beyond the frame has none)`);
   }
 
   /* ---------- real places on the real map ---------- */
@@ -180,7 +180,7 @@ async function suite(app) {
   check(near(eu, 'vatican-city').join() === 'italy' && near(eu, 'monaco').join() === 'france' && near(eu, 'liechtenstein').includes('switzerland') && near(eu, 'andorra').includes('spain'), 'the microstates border the countries around them');
   check(wet(eu, 'france').includes('mediterranean') && wet(eu, 'france').includes('english-channel') && wet(eu, 'france').includes('bay-of-biscay'), 'France touches the Mediterranean, the Channel and the Bay of Biscay');
   check(wet(eu, 'italy').includes('adriatic') && wet(eu, 'italy').includes('tyrrhenian') && !wet(eu, 'austria').length, 'Italy touches the Adriatic and the Tyrrhenian Sea; Austria touches none');
-  check(Object.values(eu.places).every(p => !p.neighbors || p.neighbors.every(n => mapPlace(eu, n).neighbors.includes(p.id))), 'if A borders B then B borders A');
+  check(Object.values(eu.places).every(p => !p.neighbors || p.neighbors.every(n => !mapPlace(eu, n).neighbors || mapPlace(eu, n).neighbors.includes(p.id))), 'if A borders B then B borders A (a neighbour beyond the frame has no shape and lists none)');
   check(near(us, 'nevada').join() === 'arizona,california,idaho,oregon,utah' && wet(us, 'nevada').length === 0, 'Nevada: five neighbors and no water');
   check(near(us, 'utah').join() === 'arizona,colorado,idaho,nevada,wyoming', 'Utah and New Mexico touch at one point only: they are not neighbors');
   check(wet(us, 'michigan').includes('lake-michigan') && wet(us, 'michigan').includes('lake-superior') && wet(us, 'michigan').includes('lake-huron') && !near(us, 'michigan').includes('illinois'), 'Michigan touches three Great Lakes, and does not border Illinois (a border through a lake is not one)');
@@ -200,7 +200,13 @@ async function suite(app) {
   same(score(border('belgium'), { n: sw[1] }), 'no', 'Belgium: a neighbor and no water (not answered)');
   same(score(border('belgium'), [1, 2, 3]), 'no', 'a neighbor and its water answered as one tap');
   same(placeRightText(border('switzerland')), 'A place next to Switzerland: Austria, France, Germany, Italy and Liechtenstein. Landlocked.', 'the answer in words: landlocked');
-  same(placeRightText(border('belgium')), 'A place next to Belgium: France, Germany, Luxembourg and Netherlands. Water: North Sea.', 'the answer in words: water');
+  same(placeRightText(border('belgium')), 'A place next to Belgium: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean.', 'the answer in words: water, with the ocean a sea is part of');
+  // a sea is part of its ocean in the IHO's Limits of Oceans and Seas: a tap on the ocean is right where a place's water is a part of it (France: the Bay of Biscay), the feedback names both, and the Mediterranean is not the Atlantic's
+  const ocean = at('europe-west', null, -10.5, 47.0), med = at('europe-west', null, 5.0, 40.0);
+  same([mapPlace(eu, 'bay-of-biscay').partOf, mapPlace(eu, 'north-sea').partOf, mapPlace(eu, 'mediterranean').partOf, mapPlace(eu, 'adriatic').partOf], ['atlantic', 'atlantic', undefined, undefined], 'a sea carries the ocean it is part of; the Mediterranean and its seas carry none');
+  same([score(border('france'), { n: sw[1], w: ocean }), score(border('belgium'), { n: sw[1], w: ocean }), score(border('france'), { n: sw[1], w: med }), score(border('italy'), { n: sw[1], w: ocean }), score(border('portugal'), { n: at('europe-west', null, -3.7, 40.4), w: med })],
+    ['ok', 'ok', 'ok', 'no', 'no'], 'a tap on the Atlantic is right for France and Belgium (their seas are part of it), not for Italy, whose seas are the Mediterranean\'s; the Mediterranean is not Portugal\'s');
+  check(placeRightText(border('france')).includes('Bay of Biscay, part of the Atlantic Ocean') && !placeRightText(border('france')).includes('Mediterranean Sea, part'), 'the feedback names a sea with the ocean it is part of');
   same(score(border('cedar', 'isles'), { n: [30, 30, 1], w: 'none' }), 'ok', 'the test region: Alder next to Cedar, and Landlocked');
   same(score(border('alder', 'isles'), { n: [215, 70, 1], w: [5, 5, 1] }), 'ok', 'the test region: Birch next to Alder, and the sea at the corner');
 
@@ -248,6 +254,62 @@ async function suite(app) {
   check(placeAskProblems(border('belgium', 'europe-west'), maps).length === 0 && placeAskProblems({ ...border('belgium'), right: 'france' }, maps).length === 1, 'a neighbor and water has no right answer of its own');
   same(mapBlockProblems({ kind: 'map', region: 'world', lit: ['africa'], labels: ['asia'] }, maps), [], 'a good map block has no problems');
   check(mapBlockProblems({ kind: 'map', region: 'world', lit: ['narnia'] }, maps).length === 1 && mapBlockProblems({ kind: 'map', region: 'narnia' }, maps).length === 1, 'a lit place that is not on the map, and a region that is not');
+
+  /* ---------- a flag no emoji draws is drawn from the data ---------- */
+  const geography = FC.get('geography'), listed = Object.values(geography.gens).filter(g => g.places).flatMap(g => g.places.list.filter(p => 'flag' in p).map(p => ({ gen: g.id, ...p })));
+  const kosovo = listed.find(p => p.id === 'kosovo' && p.gen === 'g-balkans-flags');
+  same(listed.flatMap(p => flagProblems(p.flag).map(m => `${p.gen}/${p.id}: ${m}`)), [], 'every flag in Geography is an emoji or a well-formed drawn flag');
+  same([typeof kosovo.flag, listed.filter(p => typeof p.flag === 'string' && /^\u{1F1FD}\u{1F1F0}$/u.test(p.flag)).length, listed.filter(p => typeof p.flag !== 'string').map(p => p.id)], ['object', 0, ['kosovo', 'syria']],
+    'two flags are drawn: Kosovo\'s, which has no emoji (its code 🇽🇰 shows as two letters on most phones and is nowhere in the data), and Syria\'s, whose emoji may show the design before 2025');
+  const ctx = { data: { gens: { g: { places: { list: [kosovo, { id: 'albania', name: 'Albania', flag: '🇦🇱' }] } } } } };
+  const shown = flagsHtml({ kind: 'flags', gen: 'g', places: ['kosovo', 'albania'], names: true }, ctx), blind = flagsHtml({ kind: 'flags', gen: 'g', places: ['kosovo'] }, ctx);
+  check(/<svg class="flagart" viewBox="0 0 70 50" aria-hidden="true"/.test(shown) && (shown.match(/<svg/g) || []).length === 1 && shown.includes('🇦🇱') && shown.includes('>Kosovo<') && !shown.includes('🇽🇰'), 'a flag with names: Kosovo drawn as a picture beside its name, Albania as its emoji');
+  check((blind.match(/<path/g) || []).length === 7 && blind.includes('fill="#244AA5"') && !/Kosovo|🇽🇰/.test(blind), 'a flag asked with no name: the blue field, the gold map and six stars, and nothing that says Kosovo');
+  const bad = [{ box: [70, 50] }, { box: [70, 50], said: 'x', layers: [['circle', '#000000', 1]] }, { box: [0, 50], said: 'x', layers: [['rect', 'blue', 0, 0, 1, 1]] }, { box: [70, 50], said: 'x', layers: [['star', '#000000', 1, 2]] }, 42];
+  same(bad.map(f => flagProblems(f).length > 0), bad.map(() => true), 'a drawn flag with no layers, an unknown layer, a bad box, a color that is not hex or too few numbers is a problem');
+
+  /* ---------- names that would sit on one another step off along a lead ---------- */
+  const crowd = (id, x, y, chars, extra = {}) => ({ id, x, y, chars, lead: [0, 0], ...extra });
+  const boxes = (names, pushed) => names.map(n => placeNameBox(n, pushed[n.id] || n.lead));
+  const meet = (a, b) => Math.min(a[2], b[2]) - Math.max(a[0], b[0]) > 0 && Math.min(a[3], b[3]) - Math.max(a[1], b[1]) > 0;
+  const pair = [crowd('first', 100, 100, 5), crowd('second', 104, 102, 18)], pushed = placeNameLeads(pair, [360, 300]), set = boxes(pair, pushed);
+  same([Object.keys(pushed), meet(set[0], set[1])], [['second'], false], 'two names on one another: the first stays, the second steps off along a lead and both read');
+  same(placeNameLeads([crowd('a', 50, 50, 5), crowd('b', 250, 200, 5)], [360, 300]), {}, 'names that stand clear are left where their points put them');
+  const leds = [crowd('fixed', 100, 100, 5, { fixed: true, lead: [24, 24] }), crowd('also', 100, 100, 5, { fixed: true, lead: [24, 24] })];
+  same(placeNameLeads(leds, [360, 300]), {}, 'a name the map data leads (a microstate) is never moved');
+  const corner = [crowd('top', 10, 8, 20), crowd('under', 14, 10, 20)], cornerLeads = placeNameLeads(corner, [360, 300]), cb = boxes(corner, cornerLeads);
+  check(cb.every(b => b[0] >= 0 && b[1] >= 0) && !meet(cb[0], cb[1]), 'a name stepping off stays on the screen');
+  // a name near the edge of the screen is not cut off: it steps to the side away from the edge, even a name the map data leads (Boston, led to the right of its dot on the east coast)
+  const edge = [crowd('east', 340, 100, 8, { fixed: true, lead: [40, -10] }), crowd('west', 20, 150, 8, { fixed: true, lead: [-40, 10] }), crowd('middle', 180, 150, 8, { fixed: true, lead: [40, 0] }), crowd('top', 180, 6, 8)];
+  const edgeLeads = placeNameLeads(edge, [360, 300]), eb = boxes(edge, edgeLeads);
+  same([edgeLeads.east, edgeLeads.west, edgeLeads.middle], [[-40, -10], [40, 10], undefined], 'a name the map data leads that would be cut off by the edge steps to the other side of its point, and one in the middle stays');
+  check(eb.every(b => b[0] >= 0 && b[1] >= 0 && b[2] <= 360 && b[3] <= 300), 'no name near the edge of the screen is cut off');
+  {
+    // every named dot of every region, alone on a phone's map (360 across), stands on the screen once it has stepped off the edge
+    const cut = [];
+    for (const m of Object.values(FC.maps).filter(x => x.places)) {
+      const k = 360 / m.size[0], h = m.size[1] * k;
+      for (const q of m.places.filter(x => x.at)) {
+        const name = { id: q.id, x: q.at[0] * k, y: q.at[1] * k, chars: q.name.length, lead: q.lead || [0, q.dot ? -8.5 : 0], fixed: !!q.lead }, b = placeNameBox(name, placeNameLeads([name], [360, h])[q.id] || name.lead);
+        if (b[0] < 0 || b[2] > 360 || b[1] < 0 || b[3] > h) cut.push(`${m.id}/${q.id}`);
+      }
+    }
+    same(cut, [], 'no name on any region, alone on a phone\'s map, is cut off by the edge of the screen');
+  }
+  // Haiti under the Dominican Republic: the neighbor feedback of lesson 14 at the width of a phone, the whole region in view
+  const namesOf = (map, id) => { const q = map.places.find(x => x.id === id), k = 360 / map.size[0]; return { id, x: q.at[0] * k, y: q.at[1] * k, chars: q.name.length, lead: q.lead || [0, q.dot ? -8.5 : 0], fixed: !!q.lead }; };
+  const carib = mapOf('caribbean'), haiti = mapPlace(carib, 'haiti'), onMap = [haiti.id, ...haiti.neighbors, ...haiti.water].map(id => namesOf(carib, id));
+  const sat = boxes(onMap, {}), clash = onMap.some((a, i) => onMap.some((b, j) => j > i && meet(sat[i], sat[j]))), fix = placeNameLeads(onMap, [360, carib.size[1] * 360 / carib.size[0]]), after = boxes(onMap, fix);
+  check(clash && !onMap.some((a, i) => onMap.some((b, j) => j > i && meet(after[i], after[j]))), 'on the Haiti map (Haiti, the Dominican Republic and the water) two names sat on one another, and none does once they step off');
+  check(!fix.haiti && !!fix['dominican-republic'], 'Haiti, the place asked, stays on its own ground and the Dominican Republic\'s name steps off');
+  // over every neighbor and water feedback of every region at that width: most had names on one another, almost none has
+  let crowded = 0, still = 0;
+  for (const m of Object.values(FC.maps).filter(x => x.places)) for (const p of m.places.filter(x => x.neighbors && x.neighbors.length)) {
+    const names = [p.id, ...p.neighbors, ...p.water].filter(id => m.places.some(x => x.id === id && x.at)).map(id => namesOf(m, id)), w = boxes(names, {}), u = boxes(names, placeNameLeads(names, [360, m.size[1] * 360 / m.size[0]]));
+    const hit = list => list.some((a, i) => list.some((b, j) => j > i && meet(a, b)));
+    crowded += hit(w) ? 1 : 0; still += hit(u) ? 1 : 0;
+  }
+  check(crowded > 100 && still <= crowded * 0.12, `names set apart: ${crowded} neighbor-and-water maps had names on one another, ${still} still do (at most 12% of them)`);
   return { checks, failures };
 }
 
@@ -258,6 +320,7 @@ const FAULTS = [
   ['a sea that holds the land under its outline', s => s.replace('return !(PLACE_WATER_KINDS.includes(place.kind) && placeOnLand(map, geom, x, y));', 'return true;')],
   ['a country with a hole that holds the hole', s => s.replace("return PLACE_UNION_KINDS.includes(place.kind) ? inside > 0 : inside % 2 === 1;", 'return inside > 0;')],
   ['a river\'s band twice as wide', s => s.replace('const PLACE_LINE_BAND = 0.014;', 'const PLACE_LINE_BAND = 0.03;')],
+  ['a tap on the ocean a sea is part of not counted', s => s.replace('placeWaterRightOf(map, ask.of).some(id => placeContains', 'placeWaterOf(map, ask.of).some(id => placeContains')],
   ['Landlocked right for a place that touches the sea', s => s.replace("wet = w === PLACE_NONE ? !water.length :", "wet = w === PLACE_NONE ? true :")],
   ['a neighbor taken anywhere on the map', s => s.replace("const near = placeNeighborsOf(map, ask.of).some(id => placeContains(map, mapPlace(map, id), n[0], n[1], n[2]));", 'const near = true;')],
   ['a coast found within a river\'s band only', s => s.replace('coast: 0.04,', 'coast: 0.014,')],
@@ -274,6 +337,12 @@ const FAULTS = [
   ['the neighbors of a neighbor and its water left without their names', s => s.replace('[ask.of, ...placeNeighborsOf(map, ask.of), ...placeWaterLit(map, ask, answer)]', 'placeWaterLit(map, ask, answer)'), 'app/lessons/place-view.js'],
   ['the neighbors drawn as strong as the place they are next to', s => s.replace("(near(id) ? ' near' : '')", "''"), 'app/lessons/place-view.js'],
   ['a worked map that does not say it is done for the learner', s => s.replace('<span class="forline">${esc(SAY.placeWorked)}</span>', ''), 'app/lessons/place-view.js'],
+  ['a name that steps off onto the name it gave way to', s => s.replace('return placed.reduce((n, o) => n + placeBoxOverlap(b, o), 0)', 'return 0 * placed.reduce((n, o) => n + placeBoxOverlap(b, o), 0)').replace('placed.reduce((n, o) => n + placeBoxOverlap(b, o), 0) + outside(b) * 40', 'outside(b) * 40')],
+  ['a drawn flag shown as its emoji', s => s.replace("const flagHtml = flag => typeof flag === 'string' ? esc(flag)", "const flagHtml = flag => true ? esc(flag)"), 'app/lessons/place-view.js'],
+  ['a drawn flag that is not checked', s => s.replace("if(typeof flag === 'string') return flag ? [] : ['the flag is empty'];", "return [];"), 'app/lessons/place-gen.js'],
+  ['a name the map data leads cut off by the edge left where it is', s => s.replace('if((!name.fixed && cost(name, lead) > 0) || clipped){', 'if(!name.fixed && cost(name, lead) > 0){')],
+  ['a name that steps off the screen', s => s.replace(' + outside(b) * 40;', ';')],
+  ['a name the map data leads moved', s => s.replace('if((!name.fixed && cost(name, lead) > 0) || clipped){', 'if(cost(name, lead) > 0 || clipped){')],
   ['a tap that is not three numbers scored as a tap', s => s.replace('Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;', 'true;')]
 ];
 const faultFailures = [];

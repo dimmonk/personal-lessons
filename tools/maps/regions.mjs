@@ -12,6 +12,8 @@ import { worldSpecs } from './world-specs.mjs';
 import { windowRegion } from './window.mjs';
 import { slug, area, water, line, coast, find, nameOf } from './specs.mjs';
 import { sharedEdges } from './topology.mjs';
+import { withWorldBorders } from './world-borders.mjs';
+import { partOf, limited } from './limits.mjs';
 import { AMERICAS } from './regions-americas.mjs';
 import { EURASIA } from './regions-eurasia.mjs';
 import { AFRICA } from './regions-africa.mjs';
@@ -60,17 +62,19 @@ async function usSpecs(load) {
   // water is not cut away under the insets (a tap on the sea beside Hawaii is the Pacific), and an ocean takes in the bays and gulfs inside it
   const pacific = water(find(marine, 'name', ['North Pacific Ocean', 'Gulf of Alaska', 'Bering Sea', 'Bristol Bay', 'Cook Inlet']), { id: 'pacific', name: 'Pacific Ocean', kind: 'ocean', layer: 'marine', ...only, cover: true });
   const atlantic = water(find(marine, 'name', ['North Atlantic Ocean', 'Gulf of Maine', 'Bay of Fundy', 'Chesapeake Bay', 'Straits of Florida']), { id: 'atlantic', name: 'Atlantic Ocean', kind: 'ocean', layer: 'marine', ...only, cover: true });
-  const gulf = water(find(marine, 'name', 'Gulf of Mexico'), { id: 'gulf-of-mexico', name: 'Gulf of Mexico', kind: 'sea', layer: 'marine', ...only, cover: true });
+  const gulf = water(find(marine, 'name', 'Gulf of Mexico'), { id: 'gulf-of-mexico', name: 'Gulf of Mexico', kind: 'sea', layer: 'marine', ...partOf('gulf-of-mexico'), ...only, cover: true });
+  // Alaska's north shore is on the Arctic Ocean (with the Beaufort and Chukchi seas inside it): drawn in the Alaska inset, where the Pacific is not
+  const arctic = water(find(marine, 'name', ['Arctic Ocean', 'Beaufort Sea', 'Chukchi Sea']), { id: 'arctic', name: 'Arctic Ocean', kind: 'ocean', layer: 'marine', parts: ['alaska'], cover: true });
   // the three coasts of the lower 48: the shore of the states along each water (a line, tapped within a band of it, 3.7)
   const owners = sharedEdges(stateSpecs, () => true);
   const coasts = [['west-coast', 'The West Coast', COASTS.west, pacific], ['east-coast', 'The East Coast', COASTS.east, atlantic], ['gulf-coast', 'The Gulf Coast', COASTS.gulf, gulf]]
     .map(([id, name, ids, on]) => coast(stateSpecs.filter(s => ids.includes(s.id)), on, owners, US_COAST_EPS, { id, name, kind: 'coast', layer: 'coasts', ...only }));
   return [
     ...stateSpecs, ...regions,
-    ...['Canada', 'Mexico'].map(n => area(find(countries, 'NAME', n), { id: slug(n), name: n, kind: 'country', layer: 'countries', ...only })),
+    ...withWorldBorders(countries, ['Canada', 'Mexico'].map(n => area(find(countries, 'NAME', n), { id: slug(n), name: n, kind: 'country', layer: 'countries', ...only })), { ignore: f => f.props.NAME === 'United States of America' }),
     ...LAKES.map(n => water(find(lakes, 'name', n), { id: slug(n), name: n, kind: 'lake', layer: 'lakes', ...only })),
     ...US_RIVERS.map(n => line(find(rivers, 'name', n), { id: `${slug(n)}-river`, name: `${n} River`, kind: 'river', layer: 'rivers', ...only })),
-    pacific, atlantic, gulf, ...coasts,
+    pacific, atlantic, gulf, arctic, ...coasts,
     ...[['ROCKY MOUNTAINS', 'Rocky Mountains', ranges], ['APPALACHIAN MTS.', 'Appalachian Mountains', ranges], ['CASCADE RANGE', 'Cascade Range', ranges], ['SIERRA NEVADA', 'Sierra Nevada', sierra]]
       .map(([n, name, src]) => area(find(src, 'NAME', n), { id: slug(name), name, kind: 'range', layer: 'ranges', ...only })),
     ...citySpecs(await load('places10'))
@@ -88,12 +92,14 @@ const EUROPE_SEAS = [['atlantic', 'Atlantic Ocean', 'North Atlantic Ocean', 'oce
   ['balearic', 'Balearic Sea', 'Balearic Sea'], ['gulf-of-lion', 'Gulf of Lion', 'Golfe du Lion']];
 const EUROPE_VIEW = { lon: [-11.5, 19.5], lat: [35.5, 59.5] };
 const inView = (f, v) => f.polygons.some(p => p[0].some(([lon, lat]) => lon >= v.lon[0] && lon <= v.lon[1] && lat >= v.lat[0] && lat <= v.lat[1]));
+// the polygons of a country that have ground in the frame: France's in South America and the Indian Ocean are not France's on this map
+const inFrameOnly = f => ({ ...f, polygons: f.polygons.filter(p => p[0].some(([lon, lat]) => { const [x, y] = europe.parts[0].project(lon, lat), [x0, y0, x1, y1] = europe.parts[0].rect; return x >= x0 && x <= x1 && y >= y0 && y <= y1; })) });
 
 async function europeSpecs(load) {
-  const countries = (await load('countries50')).filter(f => inView(f, EUROPE_VIEW) && !LEFT_OUT.includes(f.props.NAME)), marine = await load('marine50'), ranges = await load('regions50'), pyr = await load('regions10');
+  const all = await load('countries50'), countries = all.filter(f => inView(f, EUROPE_VIEW) && !LEFT_OUT.includes(f.props.NAME)), marine = await load('marine50'), ranges = await load('regions50'), pyr = await load('regions10');
   return [
-    ...countries.map(f => area([f], { id: slug(nameOf(f)), name: nameOf(f), kind: 'country', layer: 'countries', dot: f.props.NAME in MICROSTATES, ...(f.props.NAME in MICROSTATES ? { lead: MICROSTATES[f.props.NAME] } : {}), optional: true })),
-    ...EUROPE_SEAS.map(([id, name, ne, kind = 'sea']) => water(find(marine, 'name', ne), { id, name, kind, layer: 'marine' })),
+    ...withWorldBorders(all, countries.map(f => area([inFrameOnly(f)], { id: slug(nameOf(f)), name: nameOf(f), kind: 'country', layer: 'countries', dot: f.props.NAME in MICROSTATES, ...(f.props.NAME in MICROSTATES ? { lead: MICROSTATES[f.props.NAME] } : {}), optional: true }))),
+    ...EUROPE_SEAS.map(([id, name, ne, kind = 'sea']) => limited(id, water(find(marine, 'name', ne), { id, name, kind, layer: 'marine', ...partOf(id) }))),
     // a strait is water too narrow for a finger: its outline, and a point at its middle that is tapped within a radius (3.7, as a microstate is)
     water(find(marine, 'name', 'Strait of Gibraltar'), { id: 'strait-of-gibraltar', name: 'Strait of Gibraltar', kind: 'strait', layer: 'marine', dot: true }),
     area(find(ranges, 'NAME', 'ALPS'), { id: 'alps', name: 'The Alps', kind: 'range', layer: 'ranges' }),
@@ -108,7 +114,7 @@ const europe = singlePart(laea(10, 50), EUROPE_VIEW);
 const usa = albersUsa();
 
 export const REGIONS = [
-  { id: 'world', name: 'The world', ...frame(world), tol: 0.1, load: ['countries110', 'marine110'], specs: worldSpecs,
+  { id: 'world', name: 'The world', ...frame(world), tol: 0.1, load: ['countries110', 'marine110', 'places10'], specs: worldSpecs,
     land: ['continent'], draw: ['continent'], labelled: ['continent', 'ocean'] },
   { id: 'us', name: 'The United States', ...frame(usa), tol: 0.35, load: ['states50', 'countries50', 'marine50', 'lakes50', 'rivers50', 'regions50', 'regions10', 'places10'], specs: usSpecs,
     land: ['state', 'country'], draw: ['country', 'state', 'lake', 'river'], labelled: ['state', 'lake', 'river', 'coast', 'range', 'ocean', 'sea'],

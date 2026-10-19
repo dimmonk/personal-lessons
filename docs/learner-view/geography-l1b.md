@@ -49,7 +49,7 @@ Then the answer: West Africa. West Africa is the bulge of Africa on the Atlantic
 
 12 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Northern America, tap; this is seed 0)
+#### Item 1 (made from a group of places: Northern America, tap; this is seed 0)
 
 Northern America
 
@@ -59,7 +59,7 @@ Northern America
 
 After the answer: Reason: Northern America is the top of North America: Canada, the United States and Greenland, with Central America below it.
 
-#### Question 2 (made from a group of places: Central America, tap; this is seed 2)
+#### Item 2 (made from a group of places: Central America, tap; this is seed 2)
 
 Central America
 
@@ -69,7 +69,7 @@ Central America
 
 After the answer: Reason: Central America is the narrow part of North America from Mexico down to Panama, between the Pacific and the Caribbean Sea.
 
-#### Question 3 (made from a group of places: The Caribbean, tap; this is seed 4)
+#### Item 3 (made from a group of places: The Caribbean, tap; this is seed 4)
 
 The Caribbean
 
@@ -79,7 +79,7 @@ The Caribbean
 
 After the answer: Reason: The Caribbean is the islands of North America in the Caribbean Sea, east of Central America and south of Florida.
 
-#### Question 4 (made from a group of places: Northern Europe, tap; this is seed 6)
+#### Item 4 (made from a group of places: Northern Europe, tap; this is seed 6)
 
 Northern Europe
 
@@ -89,7 +89,7 @@ Northern Europe
 
 After the answer: Reason: Northern Europe is the top of Europe: the British Isles, the Nordic countries and the Baltic states, with Western Europe below it.
 
-#### Question 5 (made from a group of places: Western Europe, tap; this is seed 8)
+#### Item 5 (made from a group of places: Western Europe, tap; this is seed 8)
 
 Western Europe
 
@@ -99,7 +99,7 @@ Western Europe
 
 After the answer: Reason: Western Europe is the part of Europe from France to Germany and the Alps, between Northern Europe and Southern Europe, with Eastern Europe to its east.
 
-#### Question 6 (made from a group of places: Southern Europe, tap; this is seed 10)
+#### Item 6 (made from a group of places: Southern Europe, tap; this is seed 10)
 
 Southern Europe
 
@@ -109,7 +109,7 @@ Southern Europe
 
 After the answer: Reason: Southern Europe is the part of Europe on the Mediterranean, from Spain and Portugal through Italy to Greece and the Balkans.
 
-#### Question 7 (made from a group of places: Eastern Europe, tap; this is seed 12)
+#### Item 7 (made from a group of places: Eastern Europe, tap; this is seed 12)
 
 Eastern Europe
 
@@ -119,7 +119,7 @@ Eastern Europe
 
 After the answer: Reason: Eastern Europe is the part of Europe east of Western Europe, from Poland to Russia, with Asia beyond it.
 
-#### Question 8 (made from a group of places: Northern Africa, tap; this is seed 14)
+#### Item 8 (made from a group of places: Northern Africa, tap; this is seed 14)
 
 Northern Africa
 
@@ -129,7 +129,7 @@ Northern Africa
 
 After the answer: Reason: Northern Africa is the top of Africa on the Mediterranean, from Morocco to Egypt, with the Sahara in it and West Africa below it.
 
-#### Question 9 (made from a group of places: West Africa, tap; this is seed 16)
+#### Item 9 (made from a group of places: West Africa, tap; this is seed 16)
 
 West Africa
 
@@ -139,7 +139,7 @@ West Africa
 
 After the answer: Reason: West Africa is the bulge of Africa on the Atlantic, south of Northern Africa and west of Central Africa.
 
-#### Question 10 (made from a group of places: Central Africa, tap; this is seed 18)
+#### Item 10 (made from a group of places: Central Africa, tap; this is seed 18)
 
 Central Africa
 
@@ -149,7 +149,7 @@ Central Africa
 
 After the answer: Reason: Central Africa is the middle of Africa, east of West Africa and west of East Africa, with Southern Africa below it.
 
-#### Question 11 (made from a group of places: East Africa, tap; this is seed 20)
+#### Item 11 (made from a group of places: East Africa, tap; this is seed 20)
 
 East Africa
 
@@ -159,7 +159,7 @@ East Africa
 
 After the answer: Reason: East Africa is the side of Africa on the Indian Ocean, from the Horn down to Mozambique, east of Central Africa.
 
-#### Question 12 (made from a group of places: Southern Africa, tap; this is seed 22)
+#### Item 12 (made from a group of places: Southern Africa, tap; this is seed 22)
 
 Southern Africa
 
@@ -175,7 +175,7 @@ Then a screen: you can stop here, your place is kept.
 
 3 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 13 (made from a group of places: Northern America, name; this is seed 1)
+#### Item 13 (made from a group of places: Northern America, name; this is seed 1)
 
 A map of The world, north up, with no names on it. Lit: Northern America. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -188,7 +188,7 @@ A map of The world, north up, with no names on it. Lit: Northern America. The le
 
 After the answer: Reason: Northern America is the top of North America: Canada, the United States and Greenland, with Central America below it.
 
-#### Question 14 (made from a group of places: Central America, name; this is seed 3)
+#### Item 14 (made from a group of places: Central America, name; this is seed 3)
 
 A map of The world, north up, with no names on it. Lit: Central America. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -199,7 +199,7 @@ A map of The world, north up, with no names on it. Lit: Central America. The lea
 
 After the answer: Reason: Central America is the narrow part of North America from Mexico down to Panama, between the Pacific and the Caribbean Sea.
 
-#### Question 15 (made from a group of places: West Africa, name; this is seed 17)
+#### Item 15 (made from a group of places: West Africa, name; this is seed 17)
 
 A map of The world, north up, with no names on it. Lit: West Africa. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 

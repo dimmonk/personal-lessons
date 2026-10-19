@@ -72,14 +72,19 @@ export function buildRegion(R, all) {
   // 1. the outline of every spec that has its own, through the parts it shows in
   const drawn = new Map(), dropped = [];
   for (const spec of all.filter(s => !s.members)) {
+    if (spec.offMap) { drawn.set(spec.id, { spec, shapes: [], dot: null }); continue; }   // water a country touches beyond the frame: a place with no shape
     const open = spec.line === true, mine = parts.filter(p => !spec.parts || spec.parts.includes(p.id));
     const shapes = outlinesOf(spec).flatMap(raw => mine.flatMap(part => shapesOf(raw, part, R.tol, !open, spec.cover, R.minArea || MIN_AREA)));
     const dot = spec.dot ? centreOf(spec, mine) : null;
     const seen = open ? 1 : shapes.reduce((n, s) => n + absArea(s), 0);
-    if (spec.optional && seen < R.minVisible && !dot) { dropped.push(spec.id); continue; }       // a country with a sliver in the frame is left out
+    if (spec.optional && seen < R.minVisible && !dot) {                                          // a country with a sliver in the frame is left out, or kept as a neighbour with no shape
+      if (spec.worldNeighbors) drawn.set(spec.id, { spec, shapes: [], dot: null }); else dropped.push(spec.id);
+      continue;
+    }
     if (!shapes.length && !dot) throw new Error(`${R.id}: ${spec.id} has nothing in the frame`);
     drawn.set(spec.id, { spec, shapes, dot });
   }
+  const shapeless = withoutShape(all, drawn, dropped);
   const specs = all.filter(s => s.members || drawn.has(s.id));
   // 2. the ring table, then the places that name rings in it
   const rings = [], at = new Map();
@@ -90,19 +95,29 @@ export function buildRegion(R, all) {
     if (members && !members.length) throw new Error(`${R.id}: ${spec.id} has no member in the frame`);
     const shapes = members ? members.flatMap(id => drawn.get(id).shapes) : own.shapes;
     if (spec.hidden) continue;
-    const place = { id: spec.id, name: spec.name, kind: spec.kind, ...(spec.line ? { line: true } : {}), rings: members ? members.flatMap(id => at.get(id)) : at.get(spec.id) };
+    const place = { id: spec.id, name: spec.name, kind: spec.kind, ...(spec.line ? { line: true } : {}), ...(spec.partOf && drawn.has(spec.partOf) ? { partOf: spec.partOf } : {}), rings: members ? members.flatMap(id => at.get(id)) : at.get(spec.id) };
     if (own && own.dot) place.dot = own.dot.map(v => Math.round(v * Q));
     if (spec.label !== false && (shapes.length || (own && own.dot))) Object.assign(place, labelOf(spec, shapes, own && own.dot));
     places.push({ place, spec });
   }
-  if (R.borders) addBorders(R, specs, places, parts);
+  if (R.borders) addBorders(R, specs, places, parts, shapeless);
   assignLeads(R, places);
   return { size: R.size, rings, places: places.map(p => p.place), frames: R.frames || [], dropped };
 }
 
-// neighbours and water for the land places, from the raw outlines
-function addBorders(R, specs, places, parts) {
-  const b = R.borders, land = specs.filter(s => b.land.includes(s.kind)), water = specs.filter(s => b.water.includes(s.kind));
+// The countries with no shape in the frame: neighbours of a country that shows (window.mjs `withWorldBorders`) and countries with only a sliver in the frame. They are places so that the feedback
+// can name them, and are kept only while a country that shows has them as a neighbour; the rest are left out. Returns their ids.
+function withoutShape(all, drawn, dropped) {
+  const bare = all.filter(s => drawn.has(s.id) && !drawn.get(s.id).shapes.length && !drawn.get(s.id).dot && s.kind === 'country' && !s.members);
+  const wanted = new Set(all.filter(s => drawn.has(s.id) && !bare.includes(s)).flatMap(s => s.worldNeighbors || []));
+  for (const s of bare.filter(x => !wanted.has(x.id))) { drawn.delete(s.id); if (!s.offMap) dropped.push(s.id); }
+  return new Set(bare.filter(s => wanted.has(s.id)).map(s => s.id));
+}
+
+// neighbours and water for the land places, from the raw outlines. A country's neighbours are those of the whole world (world-borders.mjs), the places of its own layer beside it by
+// the edges of the window, and its coast is what no country of the world shares.
+function addBorders(R, specs, places, parts, shapeless) {
+  const b = R.borders, land = specs.filter(s => b.land.includes(s.kind) && !shapeless.has(s.id)), water = specs.filter(s => b.water.includes(s.kind));
   const inFrame = p => parts.some(part => { const [x, y] = part.project(p[0], p[1]), [x0, y0, x1, y1] = part.rect; return x >= x0 && x <= x1 && y >= y0 && y <= y1; });
   const lakes = water.filter(isLake), onWater = pt => lakes.some(l => (l.rings || []).some(r => pointInRing(pt[0], pt[1], r)));
   const owners = sharedEdges(land, inFrame), next = neighborsFromEdges(land, owners, onWater);
@@ -110,8 +125,8 @@ function addBorders(R, specs, places, parts) {
     if (x.id < y.id && b.across(x, y) && bordersAlong(x, y, b.along, onWater)) { next[x.id].add(y.id); next[y.id].add(x.id); }
   }
   for (const { place, spec } of places) {
-    if (!b.land.includes(spec.kind)) continue;
-    place.neighbors = [...next[spec.id]].sort();
-    place.water = waterOf(spec, owners, water, b.coast).sort();
+    if (!b.land.includes(spec.kind) || shapeless.has(spec.id)) continue;
+    place.neighbors = [...new Set([...next[spec.id], ...(spec.worldNeighbors || [])])].sort();
+    place.water = waterOf(spec, spec.coastOwners || owners, water, b.coast).sort();
   }
 }

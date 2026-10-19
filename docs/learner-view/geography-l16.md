@@ -1,6 +1,6 @@
 # Geography: Europe, west
 
-Revision 4, draft (the screen carries the draft line). Part: Europe, west. Where the subject ends up: After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.
+Revision 4, live. Part: Europe, west. Where the subject ends up: After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.
 
 ## The why
 
@@ -8,7 +8,7 @@ The news says a strike has shut the border between Belgium and France. If you ca
 
 ## Step 1: How to find a country
 
-The same three questions as for any place. What bigger area is it in? That tells you where on the map to look. What touches it? Its neighbors pin the exact spot, and they are what the news names. What water is it on? Coast or inland is often the point of the story. Western Europe is crowded, so find the area first. Iberia is the peninsula in the far southwest, with Portugal and Spain; France is the big country beside it. The Low Countries (Belgium, the Netherlands and Luxembourg) lie on the North Sea, with Germany across the middle. The Alps hold Switzerland and Austria, and Italy is the boot below them. Five tiny countries sit among these. After every answer the feedback gives you the three: Area, Touches, Water.
+The same three questions as for any place. What bigger area is it in? That tells you where on the map to look. What touches it? Its neighbors pin the exact spot, and they are what the news names. What water is it on? Coast or inland is often the point of the story. Western Europe is crowded, so find the area first. Iberia is the peninsula in the far southwest, with Portugal and Spain; France is the big country beside it. The Low Countries (Belgium, the Netherlands and Luxembourg) lie on the North Sea, with Germany across the middle. The Alps hold Switzerland and Austria, and Italy is the boot below them. Five tiny countries sit among these. After every answer the feedback gives you the three: Area, Touches, Water. On the world map of the continents, France, the Low Countries, Germany, Switzerland and Austria are Western Europe, and Portugal, Spain, Italy and the tiny countries among them are Southern Europe; this map takes them together as Europe's west.
 
 ## Step 2: Iberia and France
 
@@ -83,7 +83,7 @@ Then the answer: A place next to Switzerland: Austria, France, Germany, Italy an
 
 15 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Austria, tap; this is seed 21)
+#### Item 1 (made from a group of places: Austria, tap; this is seed 21)
 
 Austria
 
@@ -93,7 +93,7 @@ Austria
 
 After the answer: Reason: Area: the Alps, the mountains between Germany and Italy, their eastern part. Touches: Czechia, Germany, Hungary, Italy, Liechtenstein, Slovakia, Slovenia and Switzerland. Water: none; it is landlocked. Tell it from Switzerland: Austria is the longer one in the east; Switzerland is the smaller one in the west, the only one of the two that touches France.
 
-#### Question 2 (made from a group of places: Switzerland, tap; this is seed 24)
+#### Item 2 (made from a group of places: Switzerland, tap; this is seed 24)
 
 Switzerland
 
@@ -103,7 +103,7 @@ Switzerland
 
 After the answer: Reason: Area: the Alps, the mountains between Germany and Italy, their western part. Touches: Austria, France, Germany, Italy and Liechtenstein. Water: none; it is landlocked. Tell it from Austria: Switzerland is the smaller one in the west, the only one of the two that touches France; Austria is the longer one in the east.
 
-#### Question 3 (made from a group of places: Portugal, tap; this is seed 0)
+#### Item 3 (made from a group of places: Portugal, tap; this is seed 0)
 
 Portugal
 
@@ -113,7 +113,7 @@ Portugal
 
 After the answer: Reason: Area: Iberia, the peninsula in the far southwest of Europe, its narrow Atlantic strip. Touches: Spain. Water: Atlantic Ocean. Tell it from Spain: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest.
 
-#### Question 4 (made from a group of places: Spain, tap; this is seed 3)
+#### Item 4 (made from a group of places: Spain, tap; this is seed 3)
 
 Spain
 
@@ -123,7 +123,7 @@ Spain
 
 After the answer: Reason: Area: Iberia, the peninsula in the far southwest of Europe, most of it. Touches: Andorra, France and Portugal. Water: Atlantic Ocean, Balearic Sea, Bay of Biscay, Gulf of Lion and Mediterranean Sea. Tell it from Portugal: Spain is the large country that fills most of the peninsula; Portugal is the narrow strip on its west.
 
-#### Question 5 (made from a group of places: France, tap; this is seed 6)
+#### Item 5 (made from a group of places: France, tap; this is seed 6)
 
 France
 
@@ -131,9 +131,9 @@ France
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of France. Nothing is marked before the answer.
 - After the answer France is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Spain names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Portugal names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Belgium names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Netherlands names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Luxembourg names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Austria names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Switzerland names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Liechtenstein names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Andorra names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping Monaco names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping San Marino names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic". Tapping Vatican City names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic".
 
-After the answer: Reason: Area: the west of the mainland, between Iberia and the Alps. Touches: Andorra, Belgium, Germany, Italy, Luxembourg, Monaco, Spain and Switzerland. Water: Atlantic Ocean, Bay of Biscay, English Channel, Gulf of Lion, Mediterranean Sea, North Sea and Tyrrhenian Sea. It is the biggest country of the west of the mainland, with Spain under it and Belgium over it.
+After the answer: Reason: Area: the west of the mainland, between Iberia and the Alps. Touches: Andorra, Belgium, Germany, Italy, Luxembourg, Monaco, Spain and Switzerland. Water: Bay of Biscay, part of the Atlantic Ocean, English Channel, part of the Atlantic Ocean, Gulf of Lion, Mediterranean Sea, North Sea, part of the Atlantic Ocean and Tyrrhenian Sea. It is the biggest country of the west of the mainland, with Spain under it and Belgium over it.
 
-#### Question 6 (made from a group of places: Belgium, tap; this is seed 9)
+#### Item 6 (made from a group of places: Belgium, tap; this is seed 9)
 
 Belgium
 
@@ -141,9 +141,9 @@ Belgium
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Belgium. Nothing is marked before the answer.
 - After the answer Belgium is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Spain names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Portugal names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Netherlands names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Luxembourg names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Austria names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Switzerland names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Liechtenstein names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Andorra names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping Monaco names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping San Marino names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic". Tapping Vatican City names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic".
 
-After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
 
-#### Question 7 (made from a group of places: Netherlands, tap; this is seed 12)
+#### Item 7 (made from a group of places: Netherlands, tap; this is seed 12)
 
 Netherlands
 
@@ -151,9 +151,9 @@ Netherlands
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Netherlands. Nothing is marked before the answer.
 - After the answer Netherlands is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Spain names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Portugal names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Belgium names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Luxembourg names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Austria names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Switzerland names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Liechtenstein names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Andorra names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping Monaco names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping San Marino names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic". Tapping Vatican City names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic".
 
-After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea. Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea, part of the Atlantic Ocean. Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.
 
-#### Question 8 (made from a group of places: Luxembourg, tap; this is seed 15)
+#### Item 8 (made from a group of places: Luxembourg, tap; this is seed 15)
 
 Luxembourg
 
@@ -163,7 +163,7 @@ Luxembourg
 
 After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium, France and Germany. Water: none; it is landlocked. Tell it from Belgium: Luxembourg is the tiny one inland, on Belgium's southeast edge, with no coast.
 
-#### Question 9 (made from a group of places: Germany, tap; this is seed 18)
+#### Item 9 (made from a group of places: Germany, tap; this is seed 18)
 
 Germany
 
@@ -171,9 +171,9 @@ Germany
 - The map of Europe, west with no names. "Tap the place on the map. Pinch to zoom in and drag to move the map." The tap is the answer; it is right inside the shape of Germany. Nothing is marked before the answer.
 - After the answer Germany is lit and the tap is marked. After a miss: "You tapped: <the place the tap was on>." Tapping Spain names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Portugal names the slip "Spain and Portugal share the Iberian peninsula: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest". Tapping Belgium names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Netherlands names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Luxembourg names the slip "Belgium, the Netherlands and Luxembourg sit together: the Netherlands is the northern one, on the North Sea; Belgium is the middle one, next to France; Luxembourg is the tiny one inland, with no coast". Tapping Austria names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Switzerland names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Liechtenstein names the slip "Austria and Switzerland are both mountain countries with no coast: Switzerland is the smaller one in the west, the only one that touches France; Austria is the longer one in the east; tiny Liechtenstein sits between them". Tapping Andorra names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping Monaco names the slip "Andorra and Monaco are both tiny: Andorra is up in the mountains between Spain and France; Monaco is on the Mediterranean coast". Tapping San Marino names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic". Tapping Vatican City names the slip "San Marino and Vatican City are both tiny countries inside Italy: Vatican City is in Rome, on the west side; San Marino is on the east side, near the Adriatic".
 
-After the answer: Reason: Area: the middle of western Europe, north of the Alps. Touches: Austria, Belgium, Czechia, Denmark, France, Luxembourg, Netherlands, Poland and Switzerland. Water: Baltic Sea and North Sea. It is the big country across the middle, east of the Low Countries and France and north of Switzerland and Austria.
+After the answer: Reason: Area: the middle of western Europe, north of the Alps. Touches: Austria, Belgium, Czechia, Denmark, France, Luxembourg, Netherlands, Poland and Switzerland. Water: Baltic Sea, part of the Atlantic Ocean and North Sea, part of the Atlantic Ocean. It is the big country across the middle, east of the Low Countries and France and north of Switzerland and Austria.
 
-#### Question 10 (made from a group of places: Italy, tap; this is seed 27)
+#### Item 10 (made from a group of places: Italy, tap; this is seed 27)
 
 Italy
 
@@ -183,7 +183,7 @@ Italy
 
 After the answer: Reason: Area: Italy's peninsula, the boot reaching into the Mediterranean. Touches: Austria, France, San Marino, Slovenia, Switzerland and Vatican City. Water: Adriatic Sea, Ionian Sea, Mediterranean Sea and Tyrrhenian Sea. It is the boot, the one country of the region that reaches far south into the Mediterranean.
 
-#### Question 11 (made from a group of places: Andorra, tap; this is seed 30)
+#### Item 11 (made from a group of places: Andorra, tap; this is seed 30)
 
 Andorra
 
@@ -193,7 +193,7 @@ Andorra
 
 After the answer: Reason: Area: the Pyrenees, the mountains between Spain and France. Touches: France and Spain. Water: none; it is landlocked. Tell it from Monaco: Andorra is the tiny one up in the mountains; Monaco is on the coast.
 
-#### Question 12 (made from a group of places: Monaco, tap; this is seed 33)
+#### Item 12 (made from a group of places: Monaco, tap; this is seed 33)
 
 Monaco
 
@@ -203,7 +203,7 @@ Monaco
 
 After the answer: Reason: Area: the Mediterranean coast, in the south of France. Touches: France. Water: Mediterranean Sea. Tell it from Andorra: Monaco is the tiny one on the Mediterranean coast; Andorra is up in the mountains.
 
-#### Question 13 (made from a group of places: Liechtenstein, tap; this is seed 36)
+#### Item 13 (made from a group of places: Liechtenstein, tap; this is seed 36)
 
 Liechtenstein
 
@@ -213,7 +213,7 @@ Liechtenstein
 
 After the answer: Reason: Area: the Alps, the mountains between Germany and Italy. Touches: Austria and Switzerland. Water: none; it is landlocked. It is the tiny one between Switzerland and Austria.
 
-#### Question 14 (made from a group of places: San Marino, tap; this is seed 39)
+#### Item 14 (made from a group of places: San Marino, tap; this is seed 39)
 
 San Marino
 
@@ -223,7 +223,7 @@ San Marino
 
 After the answer: Reason: Area: Italy's peninsula, the boot reaching into the Mediterranean, inland on its east side. Touches: Italy. Water: none; it is landlocked. Tell it from Vatican City: San Marino is the tiny one on the east side of Italy, near the Adriatic; Vatican City is in Rome, on the west side.
 
-#### Question 15 (made from a group of places: Vatican City, tap; this is seed 42)
+#### Item 15 (made from a group of places: Vatican City, tap; this is seed 42)
 
 Vatican City
 
@@ -252,7 +252,7 @@ A map of Europe, west, north up, with no names on it. Lit: Belgium. The learner 
 - The accepted answers shown after (Accepted answers):
   - Belgium
 
-After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
 
 #### Question: Netherlands (made from a group of places: Netherlands, name; this is seed 13)
 
@@ -264,7 +264,7 @@ A map of Europe, west, north up, with no names on it. Lit: Netherlands. The lear
   - Netherlands
   - Holland
 
-After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea. Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea, part of the Atlantic Ocean. Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.
 
 #### Question: Austria (made from a group of places: Austria, name; this is seed 22)
 
@@ -298,7 +298,7 @@ What borders Belgium?
 - The map of Europe, west with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Belgium; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on France, Germany, Luxembourg, Netherlands, and then on North Sea. After the answer those places are lit, Belgium is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
 
 #### Question: Netherlands (made from a group of places: Netherlands, border; this is seed 14)
 
@@ -308,7 +308,7 @@ What borders Netherlands?
 - The map of Europe, west with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Netherlands; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
 - Right: a tap on Belgium, Germany, and then on North Sea. After the answer those places are lit, Netherlands is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea. Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: Belgium and Germany. Water: North Sea, part of the Atlantic Ocean. Tell it from Belgium: the Netherlands is the northern one, along the North Sea, north of Belgium and west of Germany.
 
 #### Question: Austria (made from a group of places: Austria, border; this is seed 23)
 
@@ -351,26 +351,26 @@ Portugal
 
 After the answer: Reason: Area: Iberia, the peninsula in the far southwest of Europe, its narrow Atlantic strip. Touches: Spain. Water: Atlantic Ocean. Tell it from Spain: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest.
 
-#### Question in the draw: name (made from a group of places: Portugal, name; this is seed 1)
+#### Question in the draw: name (made from a group of places: Belgium, name; this is seed 10)
 
-A map of Europe, west, north up, with no names on it. Lit: Portugal. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
+A map of Europe, west, north up, with no names on it. Lit: Belgium. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
 **What is the lit place called?**
 - The same box, checking and feedback as above.
 - The accepted answers shown after (Accepted answers):
-  - Portugal
+  - Belgium
 
-After the answer: Reason: Area: Iberia, the peninsula in the far southwest of Europe, its narrow Atlantic strip. Touches: Spain. Water: Atlantic Ocean. Tell it from Spain: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
 
-#### Question in the draw: border (made from a group of places: Portugal, border; this is seed 2)
+#### Question in the draw: border (made from a group of places: Belgium, border; this is seed 11)
 
-What borders Portugal?
+What borders Belgium?
 
 **Tap a country next to it, then the water it touches. If no water touches it, tap Landlocked.**
-- The map of Europe, west with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Portugal; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
-- Right: a tap on Spain, and then on Atlantic Ocean. After the answer those places are lit, Portugal is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
+- The map of Europe, west with no names. "Tap a place that shares a border with it." A tap on the map is a neighbor of Belgium; then "Now tap the water it touches, or tap Landlocked." and a button "Landlocked" in place of the water. Nothing is marked before the answer.
+- Right: a tap on France, Germany, Luxembourg, Netherlands, and then on North Sea. After the answer those places are lit, Belgium is outlined and the taps are marked. After a miss: "You tapped: …" and what is not so about it.
 
-After the answer: Reason: Area: Iberia, the peninsula in the far southwest of Europe, its narrow Atlantic strip. Touches: Spain. Water: Atlantic Ocean. Tell it from Spain: Portugal is the narrow strip on the Atlantic side, in the west; Spain is the large country that fills the rest.
+After the answer: Reason: Area: the Low Countries, the flat land on the North Sea. Touches: France, Germany, Luxembourg and Netherlands. Water: North Sea, part of the Atlantic Ocean. Tell it from the Netherlands and Luxembourg: Belgium is the middle one of the three, between France and the Netherlands.
 
 ## The result
 

@@ -37,3 +37,22 @@ export function citySpecs(places) {
     return { id: IDS[name] || slug(name), name, kind: 'city', layer: 'cities', rings: [], point: at(ne, state).point, dot: true, lead: 'auto', groups, parts: [PARTS[state] || 'lower48'] };
   });
 }
+
+// The cities of the `world` map (parts 31 and 32 of Geography): the pairs a distance and a direction are asked of, in the United States and across the world, among them the pairs the traps
+// name (San Diego and Reno, Reno and Los Angeles, Rome and Philadelphia, Santiago and New York, Lima and Miami, Paris and Seattle). Each is a dot of the kind `city` at its Natural Earth populated place,
+// as on the map of the United States, and a city of both maps is one id on both (New York City is `new-york-city` in the two).
+//   [Natural Earth's name, its country's ISO code, the name the map says (when it is not Natural Earth's)]
+export const WORLD_CITIES = [['New York', 'USA', 'New York City'], ['Los Angeles', 'USA'], ['San Diego', 'USA'], ['Seattle', 'USA'], ['Philadelphia', 'USA'], ['Miami', 'USA'], ['Reno', 'USA'],
+  ['Chicago', 'USA'], ['Honolulu', 'USA'], ['Anchorage', 'USA'], ['Mexico City', 'MEX'], ['Toronto', 'CAN'], ['Lima', 'PER'], ['Santiago', 'CHL'], ['Buenos Aires', 'ARG'], ['São Paulo', 'BRA'],
+  ['Bogota', 'COL', 'Bogotá'], ['London', 'GBR'], ['Paris', 'FRA'], ['Madrid', 'ESP'], ['Rome', 'ITA'], ['Berlin', 'DEU'], ['Moscow', 'RUS'], ['Istanbul', 'TUR'], ['Reykjavík', 'ISL'],
+  ['Cairo', 'EGY'], ['Lagos', 'NGA'], ['Nairobi', 'KEN'], ['Johannesburg', 'ZAF'], ['Cape Town', 'ZAF'], ['Dubai', 'ARE'], ['New Delhi', 'IND'], ['Mumbai', 'IND'], ['Beijing', 'CHN'], ['Shanghai', 'CHN'],
+  ['Tokyo', 'JPN'], ['Seoul', 'KOR'], ['Bangkok', 'THA'], ['Singapore', 'SGP'], ['Jakarta', 'IDN'], ['Sydney', 'AUS'], ['Auckland', 'NZL']];
+
+export function worldCitySpecs(places) {
+  return WORLD_CITIES.map(([ne, country, shown]) => {
+    const hit = places.find(f => tidy(f.props.name) === ne && f.props.adm0_a3 === country);
+    if (!hit) throw new Error(`world cities: no populated place ${ne}, ${country}`);
+    const name = shown || ne;
+    return { id: IDS[name] || slug(name), name, kind: 'city', layer: 'cities', rings: [], point: hit.point, dot: true, lead: 'auto', groups: ['world-cities'] };
+  });
+}

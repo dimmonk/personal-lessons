@@ -62,7 +62,7 @@ Then the answer: A place next to Vermont: Canada, Massachusetts, New Hampshire a
 
 9 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Vermont, tap; this is seed 6)
+#### Item 1 (made from a group of places: Vermont, tap; this is seed 6)
 
 Vermont
 
@@ -72,7 +72,7 @@ Vermont
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Canada, Massachusetts, New Hampshire and New York. Water: none; it is landlocked. Tell it from New Hampshire: Vermont is wide at the top and narrow at the bottom, with no coast.
 
-#### Question 2 (made from a group of places: New Hampshire, tap; this is seed 3)
+#### Item 2 (made from a group of places: New Hampshire, tap; this is seed 3)
 
 New Hampshire
 
@@ -82,7 +82,7 @@ New Hampshire
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Canada, Maine, Massachusetts and Vermont. Water: Atlantic Ocean. Tell it from Vermont: New Hampshire is narrow at the top and wide at the bottom, with a short coast.
 
-#### Question 3 (made from a group of places: Maine, tap; this is seed 0)
+#### Item 3 (made from a group of places: Maine, tap; this is seed 0)
 
 Maine
 
@@ -92,7 +92,7 @@ Maine
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Canada and New Hampshire. Water: Atlantic Ocean. It is the big one at the very top right, touching only New Hampshire.
 
-#### Question 4 (made from a group of places: Massachusetts, tap; this is seed 9)
+#### Item 4 (made from a group of places: Massachusetts, tap; this is seed 9)
 
 Massachusetts
 
@@ -102,7 +102,7 @@ Massachusetts
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Connecticut, New Hampshire, New York, Rhode Island and Vermont. Water: Atlantic Ocean. It is the one across the middle of New England, with the hook of Cape Cod.
 
-#### Question 5 (made from a group of places: Rhode Island, tap; this is seed 12)
+#### Item 5 (made from a group of places: Rhode Island, tap; this is seed 12)
 
 Rhode Island
 
@@ -112,7 +112,7 @@ Rhode Island
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Connecticut and Massachusetts. Water: Atlantic Ocean. Tell it from Connecticut: Rhode Island is the tiny one on the east.
 
-#### Question 6 (made from a group of places: Connecticut, tap; this is seed 15)
+#### Item 6 (made from a group of places: Connecticut, tap; this is seed 15)
 
 Connecticut
 
@@ -122,7 +122,7 @@ Connecticut
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Massachusetts, New York and Rhode Island. Water: Atlantic Ocean. Tell it from Rhode Island: Connecticut is the bigger one on the west, next to New York.
 
-#### Question 7 (made from a group of places: New York, tap; this is seed 18)
+#### Item 7 (made from a group of places: New York, tap; this is seed 18)
 
 New York
 
@@ -132,7 +132,7 @@ New York
 
 After the answer: Reason: Area: the Northeast, its Mid-Atlantic part, below New England. Touches: Canada, Connecticut, Massachusetts, New Jersey, Pennsylvania and Vermont. Water: Atlantic Ocean, Lake Erie and Lake Ontario. It reaches from New York City on the Atlantic up to two Great Lakes.
 
-#### Question 8 (made from a group of places: New Jersey, tap; this is seed 21)
+#### Item 8 (made from a group of places: New Jersey, tap; this is seed 21)
 
 New Jersey
 
@@ -142,7 +142,7 @@ New Jersey
 
 After the answer: Reason: Area: the Northeast, its Mid-Atlantic part, below New England. Touches: New York and Pennsylvania. Water: Atlantic Ocean. It is the small one on the Atlantic between New York City and Pennsylvania.
 
-#### Question 9 (made from a group of places: Pennsylvania, tap; this is seed 24)
+#### Item 9 (made from a group of places: Pennsylvania, tap; this is seed 24)
 
 Pennsylvania
 
@@ -158,7 +158,7 @@ Then a screen: you can stop here, your place is kept.
 
 7 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 10 (made from a group of places: Vermont, name; this is seed 7)
+#### Item 10 (made from a group of places: Vermont, name; this is seed 7)
 
 A map of The United States, north up, with no names on it. Lit: Vermont. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -171,7 +171,7 @@ A map of The United States, north up, with no names on it. Lit: Vermont. The lea
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Canada, Massachusetts, New Hampshire and New York. Water: none; it is landlocked. Tell it from New Hampshire: Vermont is wide at the top and narrow at the bottom, with no coast.
 
-#### Question 11 (made from a group of places: New Hampshire, name; this is seed 4)
+#### Item 11 (made from a group of places: New Hampshire, name; this is seed 4)
 
 A map of The United States, north up, with no names on it. Lit: New Hampshire. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -182,7 +182,7 @@ A map of The United States, north up, with no names on it. Lit: New Hampshire. T
 
 After the answer: Reason: Area: the Northeast, in New England, the top right corner. Touches: Canada, Maine, Massachusetts and Vermont. Water: Atlantic Ocean. Tell it from Vermont: New Hampshire is narrow at the top and wide at the bottom, with a short coast.
 
-#### Question 12 (made from a group of places: Connecticut, name; this is seed 16)
+#### Item 12 (made from a group of places: Connecticut, name; this is seed 16)
 
 A map of The United States, north up, with no names on it. Lit: Connecticut. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 

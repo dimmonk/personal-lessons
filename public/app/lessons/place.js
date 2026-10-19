@@ -30,6 +30,8 @@ const PLACE_LINE_BAND = 0.014;             // a river is found within this share
 const PLACE_LINE_BANDS = { coast: 0.04, canal: PLACE_DOT_TAP };   // a coast, which is wide, and a canal, which is short, are found within more (3.7)
 const PLACE_UNION_KINDS = ['ocean', 'sea', 'strait', 'lake', 'range', 'desert'];   // outlines with no holes
 const PLACE_WATER_KINDS = ['ocean', 'sea', 'strait'];  // water whose outline overlaps the coast: a tap on land is never on it
+const PLACE_NAME_GLYPH = 6.8, PLACE_NAME_PAD = 6, PLACE_NAME_H = 15, PLACE_NAME_GAP = 2;   // a name 12 pixels tall: about this wide for each letter, and this tall
+const PLACE_NAME_LEADS = [24, 40, 56].flatMap(d => [[d, 0], [-d, 0], [d, -d * 0.7], [-d, -d * 0.7], [d, d * 0.7], [-d, d * 0.7], [0, -d], [0, d]]);   // the leads a name that would sit on another steps off along, short ones first
 const PLACE_FIND_ORDER = ['lake', 'river', 'canal', 'continent', 'range', 'desert', 'region', 'strait', 'sea', 'ocean'];   // the order a tap finds what it is on (after dots and the map's land); a coast is never what a tap is named as
 
 /* ---------- the geometry of a region, decoded once ---------- */
@@ -174,13 +176,18 @@ function placeAt(map, x, y, k = 1, kind = null){
 const placeRightIds = ask => ask.mode === 'neighbor-water' ? [] : asList(ask.right);
 const placeNeighborsOf = (map, id) => mapPlace(map, id).neighbors || [];
 const placeWaterOf = (map, id) => mapPlace(map, id).water || [];
+// A sea carries `partOf`, the ocean the IHO's Limits of Oceans and Seas gives it (the Bay of Biscay is part of the Atlantic). The water a tap may be on for a place is its water and the oceans its seas are part
+// of: a tap on the Atlantic is right for France, whose water is the Bay of Biscay and the Channel. The parent is named beside the sea in the feedback unless it is in the water list already.
+const placeParentOf = (map, id) => { const parent = mapPlace(map, id).partOf; return parent && mapHasPlace(map, parent) ? parent : null; };
+const placeWaterRightOf = (map, id) => { const water = placeWaterOf(map, id); return [...new Set([...water, ...water.map(w => placeParentOf(map, w)).filter(Boolean)])]; };
+const placeWaterNames = (map, ids) => ids.map(id => { const parent = placeParentOf(map, id), name = mapPlace(map, id).name; return parent && !ids.includes(parent) ? SAY.placePartOf(name, mapPlace(map, parent).name) : name; });
 const placeTapOk = tap => Array.isArray(tap) && tap.length === 3 && tap.every(Number.isFinite) && tap[2] >= 1;
 const placeNames = (map, ids) => ids.map(id => mapPlace(map, id).name);
 function scoreNeighborWater(map, ask, answer){
   const n = answer && answer.n, w = answer && answer.w;
   if(!placeTapOk(n) || !(w === PLACE_NONE || placeTapOk(w))) return 'no';
   const near = placeNeighborsOf(map, ask.of).some(id => placeContains(map, mapPlace(map, id), n[0], n[1], n[2]));
-  const water = placeWaterOf(map, ask.of), wet = w === PLACE_NONE ? !water.length : water.some(id => placeContains(map, mapPlace(map, id), w[0], w[1], w[2]));
+  const water = placeWaterOf(map, ask.of), wet = w === PLACE_NONE ? !water.length : placeWaterRightOf(map, ask.of).some(id => placeContains(map, mapPlace(map, id), w[0], w[1], w[2]));
   return near && wet ? 'ok' : 'no';
 }
 // 'ok' when the tap is inside one of the right places; else the slip of the place the tap is on, if the ask names one; else 'no'
@@ -198,7 +205,7 @@ function placeRightText(ask){
   const map = mapOf(ask.map);
   if(ask.mode !== 'neighbor-water') return joinWords(placeNames(map, placeRightIds(ask)), 'or');
   const of = mapPlace(map, ask.of), water = placeWaterOf(map, ask.of);
-  return `${SAY.placeNextTo(of.name)}: ${joinWords(placeNames(map, placeNeighborsOf(map, ask.of)))}. ${water.length ? `${SAY.placeWaterLabel}: ${joinWords(placeNames(map, water))}` : SAY.placeLandlocked}.`;
+  return `${SAY.placeNextTo(of.name)}: ${joinWords(placeNames(map, placeNeighborsOf(map, ask.of)))}. ${water.length ? `${SAY.placeWaterLabel}: ${joinWords(placeWaterNames(map, water))}` : SAY.placeLandlocked}.`;
 }
 // what a learner's tap was on, in words (null when it was on nothing)
 const placeTappedName = (map, tap, kind) => { const id = tap ? placeAt(map, tap[0], tap[1], tap[2], kind) : null; return id ? mapPlace(map, id).name : null; };
@@ -213,7 +220,7 @@ function placeAskProblems(ask, maps){
     if(!has(ask.of)) return [...problems, `"${ask.of}" is not a place of the map ${ask.map}`];
     const of = map.places.find(p => p.id === ask.of);
     if(!of.neighbors || !of.water) problems.push(`"${ask.of}" is a ${of.kind}, which has no neighbors or water: ask it of a place that is ground (${map.land.join(', ')})`);
-    else if(!of.neighbors.length) problems.push(`"${ask.of}" has no neighbors on the map ${ask.map}`);
+    else if(!of.neighbors.some(id => map.places.some(q => q.id === id && q.rings.length))) problems.push(`"${ask.of}" has no neighbor with a shape on the map ${ask.map} to tap (the ones beyond the frame are named in the feedback, not tapped)`);
     return problems;
   }
   if('of' in ask) problems.push('`of` belongs to a neighbor and its water');
@@ -233,4 +240,33 @@ function mapBlockProblems(block, maps){
     ...asList(block.lit).filter((id, i, all) => all.indexOf(id) !== i).map(id => `"${id}" is lit twice`),
     ...(block.view && !(block.view.length === 3 && vx >= 0 && vx <= w && vy >= 0 && vy <= h && vk >= 1 && vk <= PLACE_ZOOM_MAX)
       ? [`the view is [x, y, zoom]: a point on the map (0 to ${w} across, 0 to ${h} down) and a zoom from 1 to ${PLACE_ZOOM_MAX}`] : [])];
+}
+
+/* ---------- names that would sit on one another ---------- */
+// The box on the screen of a name set `lead` pixels (right, down) from its point [x, y]: centred on the point with no lead, else on the side it leads to.
+function placeNameBox(name, lead){
+  const w = name.chars * PLACE_NAME_GLYPH + PLACE_NAME_PAD, [dx, dy] = lead, x = name.x + dx, y = name.y + dy;
+  const x0 = dx > 0 ? x + PLACE_NAME_GAP : dx < 0 ? x - PLACE_NAME_GAP - w : x - w / 2;
+  return [x0, y - PLACE_NAME_H / 2, x0 + w, y + PLACE_NAME_H / 2];
+}
+const placeBoxOverlap = (a, b) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
+// Two names on a lit map that would sit on one another (Haiti under the Dominican Republic) are both read: the first stays where its point puts it, and the later one
+// steps off along a short lead, the one that leaves it least on another name or off the screen (a name that already stands clear keeps its place). `names` are in
+// the order they matter, [{ id, x, y, chars, lead: [dx, dy], fixed? }] in pixels of the screen, which is [w, h] wide and tall; a `fixed` name (a microstate's, which
+// the map data leads) is never moved. Returns { [id]: [dx, dy] } for the names moved; their lines are drawn to their points (map-run.js).
+function placeNameLeads(names, [width, height]){
+  const placed = [], moved = {};
+  const outside = b => Math.max(0, -b[0]) + Math.max(0, -b[1]) + Math.max(0, b[2] - width) + Math.max(0, b[3] - height);
+  const cost = (name, lead) => { const b = placeNameBox(name, lead); return placed.reduce((n, o) => n + placeBoxOverlap(b, o), 0) + outside(b) * 40; };
+  for(const name of names){
+    let lead = name.lead;
+    // a name that would be cut off by the edge of the screen steps off to the side away from the edge, even a name the map data leads (the east coast's cities, on the right of their dots)
+    const clipped = outside(placeNameBox(name, lead)) > 0, [dx, dy] = lead, away = clipped ? [[-dx, dy], [dx, -dy], [-dx, -dy]].filter(o => o[0] !== dx || o[1] !== dy) : [], clear = away.find(o => cost(name, o) === 0);
+    if((!name.fixed && cost(name, lead) > 0) || clipped){
+      const best = clear ? { lead: clear } : PLACE_NAME_LEADS.reduce((pick, o) => { const c = cost(name, o) + Math.hypot(o[0], o[1]) * 0.01; return c < pick.cost - 1e-9 ? { lead: o, cost: c } : pick; }, { lead, cost: cost(name, lead) });
+      if(best.lead !== lead){ lead = best.lead; moved[name.id] = lead; }
+    }
+    placed.push(placeNameBox(name, lead));
+  }
+  return moved;
 }

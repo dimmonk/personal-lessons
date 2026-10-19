@@ -58,7 +58,7 @@ Then the answer: A place next to Iowa: Illinois, Minnesota, Missouri, Nebraska, 
 
 13 questions, shuffle, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1 (made from a group of places: Illinois, tap; this is seed 6)
+#### Item 1 (made from a group of places: Illinois, tap; this is seed 6)
 
 Illinois
 
@@ -68,7 +68,7 @@ Illinois
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Indiana, Iowa, Kentucky, Missouri and Wisconsin. Water: Lake Michigan. Tell it from Indiana: Illinois is the western one, on the Mississippi, with Chicago at its top on Lake Michigan.
 
-#### Question 2 (made from a group of places: Indiana, tap; this is seed 3)
+#### Item 2 (made from a group of places: Indiana, tap; this is seed 3)
 
 Indiana
 
@@ -78,7 +78,7 @@ Indiana
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Illinois, Kentucky, Michigan and Ohio. Water: Lake Michigan. Tell it from Illinois: Indiana is the eastern one of the two, between Illinois and Ohio.
 
-#### Question 3 (made from a group of places: North Dakota, tap; this is seed 24)
+#### Item 3 (made from a group of places: North Dakota, tap; this is seed 24)
 
 North Dakota
 
@@ -88,7 +88,7 @@ North Dakota
 
 After the answer: Reason: Area: the Midwest, out on the Plains. Touches: Canada, Minnesota, Montana and South Dakota. Water: none; it is landlocked. Tell it from South Dakota: North Dakota is the top one, on the Canadian border.
 
-#### Question 4 (made from a group of places: South Dakota, tap; this is seed 27)
+#### Item 4 (made from a group of places: South Dakota, tap; this is seed 27)
 
 South Dakota
 
@@ -98,7 +98,7 @@ South Dakota
 
 After the answer: Reason: Area: the Midwest, out on the Plains. Touches: Iowa, Minnesota, Montana, Nebraska, North Dakota and Wyoming. Water: none; it is landlocked. Tell it from North Dakota: South Dakota is the lower one, over Nebraska.
 
-#### Question 5 (made from a group of places: Idaho, tap; this is seed 16)
+#### Item 5 (made from a group of places: Idaho, tap; this is seed 17)
 
 Idaho
 
@@ -108,7 +108,7 @@ Idaho
 
 After the answer: Reason: Area: the West, its mountain half, inland. Touches: Canada, Montana, Nevada, Oregon, Utah, Washington and Wyoming. Water: none; it is landlocked. Tell it from Montana: Idaho is narrow, wide at the bottom and thin at the top; Montana is the wide one east of it. Not Iowa, in the middle of the country.
 
-#### Question 6 (made from a group of places: Iowa, tap; this is seed 18)
+#### Item 6 (made from a group of places: Iowa, tap; this is seed 18)
 
 Iowa
 
@@ -118,7 +118,7 @@ Iowa
 
 After the answer: Reason: Area: the Midwest, out on the Plains. Touches: Illinois, Minnesota, Missouri, Nebraska, South Dakota and Wisconsin. Water: none; it is landlocked. It sits between two rivers, the Mississippi on its east and the Missouri on its west. Not Idaho, far west in the mountains.
 
-#### Question 7 (made from a group of places: Ohio, tap; this is seed 0)
+#### Item 7 (made from a group of places: Ohio, tap; this is seed 0)
 
 Ohio
 
@@ -128,7 +128,7 @@ Ohio
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Indiana, Kentucky, Michigan, Pennsylvania and West Virginia. Water: Lake Erie. It is the eastern end of the Midwest, on Lake Erie, next to Pennsylvania; not the Ohio River, which runs along its bottom.
 
-#### Question 8 (made from a group of places: Michigan, tap; this is seed 9)
+#### Item 8 (made from a group of places: Michigan, tap; this is seed 9)
 
 Michigan
 
@@ -138,7 +138,7 @@ Michigan
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Canada, Indiana, Ohio and Wisconsin. Water: Lake Erie, Lake Huron, Lake Michigan and Lake Superior. It is the mitten, with a second piece above it, the only state in two pieces among the lakes.
 
-#### Question 9 (made from a group of places: Wisconsin, tap; this is seed 12)
+#### Item 9 (made from a group of places: Wisconsin, tap; this is seed 12)
 
 Wisconsin
 
@@ -148,7 +148,7 @@ Wisconsin
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Illinois, Iowa, Michigan and Minnesota. Water: Lake Michigan and Lake Superior. It is the one west of Lake Michigan, across the water from Michigan's mitten.
 
-#### Question 10 (made from a group of places: Minnesota, tap; this is seed 15)
+#### Item 10 (made from a group of places: Minnesota, tap; this is seed 15)
 
 Minnesota
 
@@ -158,7 +158,7 @@ Minnesota
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Canada, Iowa, North Dakota, South Dakota and Wisconsin. Water: Lake Superior. It is the top one, on Canada, where the Mississippi starts.
 
-#### Question 11 (made from a group of places: Missouri, tap; this is seed 21)
+#### Item 11 (made from a group of places: Missouri, tap; this is seed 21)
 
 Missouri
 
@@ -168,7 +168,7 @@ Missouri
 
 After the answer: Reason: Area: the Midwest, out on the Plains. Touches: Arkansas, Illinois, Iowa, Kansas, Kentucky, Nebraska, Oklahoma and Tennessee. Water: none; it is landlocked. It is south of Iowa, where the Missouri River meets the Mississippi.
 
-#### Question 12 (made from a group of places: Nebraska, tap; this is seed 30)
+#### Item 12 (made from a group of places: Nebraska, tap; this is seed 30)
 
 Nebraska
 
@@ -178,7 +178,7 @@ Nebraska
 
 After the answer: Reason: Area: the Midwest, out on the Plains. Touches: Colorado, Iowa, Kansas, Missouri, South Dakota and Wyoming. Water: none; it is landlocked. It is under South Dakota, with a notch cut from its bottom left where Colorado sits.
 
-#### Question 13 (made from a group of places: Kansas, tap; this is seed 33)
+#### Item 13 (made from a group of places: Kansas, tap; this is seed 33)
 
 Kansas
 
@@ -194,7 +194,7 @@ Then a screen: you can stop here, your place is kept.
 
 7 questions, shuffle, with about 20% from earlier lessons mixed in, unlabeled. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 14 (made from a group of places: Illinois, name; this is seed 7)
+#### Item 14 (made from a group of places: Illinois, name; this is seed 7)
 
 A map of The United States, north up, with no names on it. Lit: Illinois. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -207,7 +207,7 @@ A map of The United States, north up, with no names on it. Lit: Illinois. The le
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Indiana, Iowa, Kentucky, Missouri and Wisconsin. Water: Lake Michigan. Tell it from Indiana: Illinois is the western one, on the Mississippi, with Chicago at its top on Lake Michigan.
 
-#### Question 15 (made from a group of places: Indiana, name; this is seed 4)
+#### Item 15 (made from a group of places: Indiana, name; this is seed 4)
 
 A map of The United States, north up, with no names on it. Lit: Indiana. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
@@ -218,7 +218,7 @@ A map of The United States, north up, with no names on it. Lit: Indiana. The lea
 
 After the answer: Reason: Area: the Midwest, around the Great Lakes. Touches: Illinois, Kentucky, Michigan and Ohio. Water: Lake Michigan. Tell it from Illinois: Indiana is the eastern one of the two, between Illinois and Ohio.
 
-#### Question 16 (made from a group of places: North Dakota, name; this is seed 25)
+#### Item 16 (made from a group of places: North Dakota, name; this is seed 25)
 
 A map of The United States, north up, with no names on it. Lit: North Dakota. The learner can pinch to zoom, drag to move it and use the buttons to zoom in, zoom out and show the whole map.
 
