@@ -19,6 +19,24 @@ function progressMark(s){
   return `<span class="pct">${pctOf(s)}%</span><span class="meter"><i style="width:${pctOf(s)}%"></i></span>`;
 }
 
+function subjectRow(s){
+  return `<button class="row" data-s="${s.id}" style="--accent:${s.accent}">
+        <span class="sigil">${s.keyNo}</span>
+        <span class="grow">
+          <span class="t">${esc(s.name)}</span>
+          <span class="s">${s.parts.length} units &middot; ${s.lessons.length} built</span>
+        </span>
+        <span class="end">${progressMark(s)}</span>
+        ${icon('chevron')}
+      </button>`;
+}
+// The subjects shown, on their fields in the fields' order (FC.FIELDS); a field with none of them is left out.
+function shelvesHtml(list){
+  return FC.FIELDS.map(f => [f, list.filter(s => s.field === f.id)]).filter(([, mine]) => mine.length)
+    .map(([f, mine]) => `<div class="sect top"><span class="m">${esc(f.name)}</span></div>
+    <div class="rows">${mine.map(subjectRow).join('')}</div>`).join('');
+}
+
 function renderLibrary(){
   const counts = {all: SUBJECTS.length, progress:0, done:0, new:0};
   SUBJECTS.forEach(s => counts[statusOf(s)]++);
@@ -44,17 +62,7 @@ function renderLibrary(){
       <span class="m">All subjects</span>
       <button class="linkbtn" id="sortBtn">${APP.sort === 'az' ? 'A&ndash;Z' : 'Recent'}${icon('caret',12)}</button>
     </div>
-    ${list.length ? `<div class="rows">${list.map(s => `
-      <button class="row" data-s="${s.id}" style="--accent:${s.accent}">
-        <span class="sigil">${s.keyNo}</span>
-        <span class="grow">
-          <span class="t">${esc(s.name)}</span>
-          <span class="s">${s.parts.length} parts &middot; ${s.lessons.length} built</span>
-        </span>
-        <span class="end">${progressMark(s)}</span>
-        ${icon('chevron')}
-      </button>`).join('')}</div>`
-    : `<p class="empty">Nothing in this filter yet.</p>`}
+    ${list.length ? shelvesHtml(list) : `<p class="empty">Nothing in this filter yet.</p>`}
   </div>`;
 
   on('[data-s]', el => openSubject(el.dataset.s));
@@ -80,7 +88,7 @@ function continueCard(s){
   return `<div class="block"><div class="card" style="--accent:${s.accent}">
     <div class="ch">
       <span class="m a">Continue</span>
-      <span class="m" style="letter-spacing:.1em">${partsDone(s)} / ${s.parts.length} parts</span>
+      <span class="m" style="letter-spacing:.1em">${partsDone(s)} / ${s.parts.length} units</span>
     </div>
     <div style="display:flex;flex-direction:column;gap:4px">
       <span class="cn">${esc(s.name)}</span>

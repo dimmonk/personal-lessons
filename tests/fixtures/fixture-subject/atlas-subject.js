@@ -2,6 +2,7 @@
 // (a tap on a shape, a tap on a microstate's dot, a neighbor and its water, "Landlocked") and a lit place named from memory. Never shipped.
 FC.subject('atlas', {
   name: 'Atlas of the isles',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-12', change: 'Made for the tests of the map block and the place ask.' }],

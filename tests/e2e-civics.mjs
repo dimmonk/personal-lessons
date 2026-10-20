@@ -127,7 +127,7 @@ async function theCheck(env, c, page) {
 async function theRecord(env, c, page) {
   await env.clickVisible(page, '[data-v="subject"]');
   const text = await screenText(page);
-  c.check(/Check passed, 16 of 17/.test(text) && /1 of 14 parts/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 220)})`);
+  c.check(/Check passed, 16 of 17/.test(text) && /1 of 14 units/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 220)})`);
   await env.inspect(c, page, 'the Civics subject screen after the lesson');
   const items = await storedItems(page, 'civics'), seen = await page.evaluate(() => seenOf('civics'));
   const engine = await page.evaluate(() => FC.ENGINE);   // the engine of the app as it runs, never a number written here

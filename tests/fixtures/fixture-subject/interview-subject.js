@@ -4,6 +4,7 @@
 // random, read aloud with its words held back, and taken a second time a week later. Never shipped.
 FC.subject('interview', {
   name: 'Quick answers',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-11', change: 'Made for the tests of answers from memory, questions read aloud, the learner\'s own answers and the mock interview.' }],

@@ -3,7 +3,8 @@
 // a sung check is built after the pilot has been tried (10.3, step 2).
 FC.subject('singing', {
   name: "Singing",
-  rev: 3,
+  field: "skills",
+  rev: 4,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-08",
@@ -11,7 +12,8 @@ FC.subject('singing', {
     { rev: 2, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 3, date: "2026-10-10",
-      change: "Step 2, sound: the record is complete for the sung questions (no lists, facets or strands, because every question is a sung one made from the learner's range), and lesson 2, Match a note, is added as the pilot." }
+      change: "Step 2, sound: the record is complete for the sung questions (no lists, facets or strands, because every question is a sung one made from the learner's range), and lesson 2, Match a note, is added as the pilot." },
+    { rev: 4, date: "2026-10-20", change: "Placed on a field of the library (skills), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "Sing a short melody you have just heard, in your own range, in tune and without any display, with long notes held steady and no pushing.",
   parts: [

@@ -3,6 +3,7 @@
 // a mixed group, a generator, an end check with pass rules, strands, a retest) and nothing else. It is never shipped.
 FC.subject('fixture', {
   name: 'Umbrella days',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-10', change: 'Made for the tests of the practice engine.' }],

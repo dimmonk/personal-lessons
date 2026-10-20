@@ -3,7 +3,8 @@
 // not built yet.
 FC.subject('scams', {
   name: "Scams & Social Engineering",
-  rev: 6,
+  field: "communication",
+  rev: 7,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -17,7 +18,8 @@ FC.subject('scams', {
     { rev: 5, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 6, date: "2026-10-11",
-      change: "Step 8, pressure: the record holds what the pilot and the baseline need (the three actions, the slips, whether a message is real or a scam, what it wants and how it arrives, which slip is the failure, the one topic that comes back in the review, and a clock on every message), and lessons 3, Act, check or leave, and 0, Before you start, are added. The old baseline, which marked a real invoice and a code the learner had asked for as something wrong, is gone." }
+      change: "Step 8, pressure: the record holds what the pilot and the baseline need (the three actions, the slips, whether a message is real or a scam, what it wants and how it arrives, which slip is the failure, the one topic that comes back in the review, and a clock on every message), and lessons 3, Act, check or leave, and 0, Before you start, are added. The old baseline, which marked a real invoice and a code the learner had asked for as something wrong, is gone." },
+    { rev: 7, date: "2026-10-20", change: "Placed on a field of the library (communication), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.",
   parts: [

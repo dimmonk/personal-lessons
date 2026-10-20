@@ -4,7 +4,8 @@
 // are the answers each question can take.
 FC.subject('psychology', {
   name: "Psychology",
-  rev: 9,
+  field: "mind",
+  rev: 10,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-04",
@@ -24,7 +25,8 @@ FC.subject('psychology', {
     { rev: 8, date: "2026-10-11",
       change: "Step 7, accounts: the record holds what lesson 1 needs (what counts as what someone did, the four ways an account can read, the next steps, the common slips, and the one topic that comes back in the review), and lesson 1, What did they do?, is added as the pilot." },
     { rev: 9, date: "2026-10-18",
-      change: "Rebuilt on the owner's own course: the five deciding questions first, then each name given only on its telltale signs, then what to do. Nine lessons replace the pilot, with additions: situation before character, dissonance in depth, anchors and hindsight, traps in your own head, and the response to each name." }
+      change: "Rebuilt on the owner's own course: the five deciding questions first, then each name given only on its telltale signs, then what to do. Nine lessons replace the pilot, with additions: situation before character, dissonance in depth, anchors and hindsight, traps in your own head, and the response to each name." },
+    { rev: 10, date: "2026-10-20", change: "Placed on a field of the library (mind), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "After this subject you can hear a story about someone, or catch one in your own head, and say what is going on, whether it is one moment or a lasting pattern, the name that fits or that there is too little to tell, and what to do about it, when someone reaches for \"narcissist\", \"gaslighting\" or \"toxic\".",
   parts: [

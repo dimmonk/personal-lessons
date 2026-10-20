@@ -1,7 +1,8 @@
 // Basic Math: subject record (lesson standard 3). Only the pilot, lesson 1, is built: the subject screen lists every other part as not built yet.
 FC.subject('math', {
   name: "Basic Math",
-  rev: 6,
+  field: "numbers",
+  rev: 7,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -15,7 +16,8 @@ FC.subject('math', {
     { rev: 5, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 6, date: "2026-10-10",
-      change: "Step 3, numbers: the record holds what lesson 1 needs (the right and wrong list for a printed total, the six common slips, the three kinds of question, and the two topics that come back in the review), and lesson 1, Ballpark and check, is added as the pilot." }
+      change: "Step 3, numbers: the record holds what lesson 1 needs (the right and wrong list for a printed total, the six common slips, the three kinds of question, and the two topics that come back in the review), and lesson 1, Ballpark and check, is added as the pilot." },
+    { rev: 7, date: "2026-10-20", change: "Placed on a field of the library (numbers), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "Work out the number an everyday situation needs (a scaled amount, a percent, an area and how much to buy, the cost of a loan or the growth of savings), set up from the situation, with a calculator for the arithmetic, and tell whether the answer is sensible.",
   parts: [

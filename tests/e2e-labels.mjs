@@ -317,7 +317,7 @@ async function theCheckOfEight(env, c, page) {
 async function theRecord(env, c, page) {
   await env.clickVisible(page, '[data-v="subject"]');
   const text = await env.screenText(page);
-  c.check(/Check passed, 7 of 8/.test(text) && /1 of 7 parts/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 200)})`);
+  c.check(/Check passed, 7 of 8/.test(text) && /1 of 7 units/.test(text) && /Practice again/.test(text), `the subject screen does not show the check passed and one part done (${text.slice(0, 200)})`);
   await env.inspect(c, page, 'the Ideology subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:ideology:items'] || '{}'), seen = JSON.parse(stored['pl:ideology:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');

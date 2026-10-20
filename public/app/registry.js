@@ -6,6 +6,16 @@
 
   const LESSON_STANDARD = 2;   // docs/lesson-standard.md version the engine implements
   const ENGINE_WORDING = 15;    // goes up when the app's own wording changes
+  // The shelves of the library: Field > Subject > Unit > Lesson (docs/HANDOFF.md, "Terms"). Each subject record names its field;
+  // a field with no subject is not shown.
+  const FIELDS = [
+    { id: 'communication', name: 'Communication' },
+    { id: 'mind', name: 'Mind' },
+    { id: 'society', name: 'Society' },
+    { id: 'numbers', name: 'Numbers & Money' },
+    { id: 'world', name: 'World' },
+    { id: 'skills', name: 'Skills' }
+  ];
   let subjects = Object.freeze({});
   let maps = Object.freeze({});   // the regions of public/maps/, by id (lesson standard 3.9, the map block and the place ask)
 
@@ -43,7 +53,10 @@
     STANDARD: LESSON_STANDARD,
     ENGINE: ENGINE_WORDING,
 
+    FIELDS: deepFreeze(FIELDS),
+
     subject(id, meta) {
+      if (!FIELDS.some(f => f.id === meta.field)) fail(`${id}: field "${meta.field}" is not one of ${FIELDS.map(f => f.id).join(', ')}`);
       update(id, () => ({ meta: { ...meta, id } }));
     },
     lesson(id, lesson) {

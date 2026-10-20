@@ -75,7 +75,7 @@ function renderSubject(subj){
     <div style="display:flex;flex-direction:column;gap:10px;padding-bottom:20px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
         <span class="m">Progress</span>
-        <span class="m" style="letter-spacing:.08em">${done} of ${total} parts</span>
+        <span class="m" style="letter-spacing:.08em">${done} of ${total} units</span>
       </div>
       <div class="segs">${subj.parts.map(p => `<i class="${subj.lessons.some(l => l.part === p.id && lessonIsDone(subj, l.id)) ? 'on' : ''}"></i>`).join('')}</div>
     </div>
@@ -83,7 +83,7 @@ function renderSubject(subj){
     ${resume ? `<div class="block"><button class="btn" id="resume">${esc(lessonPlace(subj, resume) > 0 ? SAY.resume : SAY.start)}: ${esc(resume.title)}${icon('arrow',17)}</button></div>` : ''}
 
     <div class="sect"><span class="m">${esc(SAY.lessonsHeading)}</span>
-      <span class="m s">${total} parts &middot; ${subj.lessons.filter(l => l.part !== null).length} built</span></div>
+      <span class="m s">${total} units &middot; ${subj.lessons.filter(l => l.part !== null).length} built</span></div>
     <div class="rows">${courseRows(subj)}</div>
 
     ${againSection(subj)}

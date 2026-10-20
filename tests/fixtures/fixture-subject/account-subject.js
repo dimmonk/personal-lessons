@@ -4,6 +4,7 @@
 // and a checklist with a heading of its own in the panel. Never shipped.
 FC.subject('account', {
   name: 'Told by a friend',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-11', change: 'Made for the tests of the message block, the written line and questions of four asks.' }],

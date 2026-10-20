@@ -2,7 +2,8 @@
 // yet.
 FC.subject('stats', {
   name: "Statistical Claims",
-  rev: 6,
+  field: "numbers",
+  rev: 7,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -16,7 +17,8 @@ FC.subject('stats', {
     { rev: 5, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 6, date: "2026-10-11",
-      change: "Step 5, articles and charts: the record holds what lesson 1 needs (the three answers, the five kinds of claim, the nine common slips, how a claim is sorted, and the one topic that comes back in the review), and lesson 1, Find the claim and its number, is added as the pilot." }
+      change: "Step 5, articles and charts: the record holds what lesson 1 needs (the three answers, the five kinds of claim, the nine common slips, how a claim is sorted, and the one topic that comes back in the review), and lesson 1, Find the claim and its number, is added as the pilot." },
+    { rev: 7, date: "2026-10-20", change: "Placed on a field of the library (numbers), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "When you meet a number on your phone (a headline and its article, a chart, an ad, a post or a report) and are about to believe, share or act on it, you can tell whether it shows what it is used to claim, point to what is wrong or missing when it does not, and say how big it is in plain terms (so many in 1,000).",
   parts: [

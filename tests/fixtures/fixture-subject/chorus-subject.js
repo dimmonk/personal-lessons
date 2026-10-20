@@ -2,6 +2,7 @@
 // interval, melody, light), the line that fades, and a check without the line, on the real sung-question code. It is never shipped.
 FC.subject('chorus', {
   name: 'Sing along',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-10', change: 'Made for the tests of the sung questions.' }],

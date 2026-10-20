@@ -3,9 +3,10 @@
 // water) and finds its worked cases by it, so the reading allowance is a quarter of a lesson: the method is never cut to fit the share (build-subject, 4).
 FC.subject('geography', {
   name: 'Geography',
-  rev: 1,
+  field: 'world',
+  rev: 2,
   standard: 2,
-  history: [{ rev: 1, date: '2026-10-13', change: 'First version: the pilot, Europe, west (part 16).' }],
+  history: [{ rev: 1, date: '2026-10-13', change: 'First version: the pilot, Europe, west (part 16).' }, { rev: 2, date: '2026-10-20', change: 'Placed on a field of the library (world), one of the shelves Field, Subject, Unit, Lesson.' }],
   endResult: "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.",
   parts: [
     { id: "1", title: "The continents and the oceans" },

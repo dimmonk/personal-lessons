@@ -3,6 +3,7 @@
 // saved plan and the own ways in, and a baseline lesson with its one closing line. Never shipped.
 FC.subject('pressure', {
   name: 'Under pressure',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-11', change: 'Made for the tests of the message forms, timed groups, the call that pushes back, steps in order, the busy task, the plan and the baseline.' }],

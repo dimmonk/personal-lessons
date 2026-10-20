@@ -3,6 +3,7 @@
 // "your answer and your estimate disagree"), steps left to the learner, and every kind of document and figure. It is never shipped.
 FC.subject('till', {
   name: 'At the till',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-10', change: 'Made for the tests of the typed number, the documents and the figures.' }],

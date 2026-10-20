@@ -3,7 +3,8 @@
 // and the answers, not the tone, the methods or a party's name, point to the ideology. The lists are the answers each question can take.
 FC.subject('ideology', {
   name: "Political Ideologies",
-  rev: 7,
+  field: "society",
+  rev: 8,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -19,7 +20,8 @@ FC.subject('ideology', {
     { rev: 6, date: "2026-10-11",
       change: "Step 6, labels: the record holds what lesson 2 needs (the three verdicts, the four names and what each needs, the nine common slips, the side a label is thrown from, and the one topic that comes back in the review), and lesson 2, Socialist, or not?, is added as the pilot." },
     { rev: 7, date: "2026-10-17",
-      change: "Rebuilt on the owner's own course: the five deciding questions first, then each family placed by its answers. Six lessons replace the label-checking pilot." }
+      change: "Rebuilt on the owner's own course: the five deciding questions first, then each family placed by its answers. Six lessons replace the label-checking pilot." },
+    { rev: 8, date: "2026-10-20", change: "Placed on a field of the library (society), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "After this subject you can read a post, a speech, a platform or a quote and name the ideology it speaks for, or say there is too little to tell, by answering the deciding questions, when someone argues a position or throws a label like \"socialist\" or \"fascist\".",
   parts: [

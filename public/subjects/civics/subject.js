@@ -4,7 +4,8 @@
 // official's name.
 FC.subject("civics", {
   name: "US Civics & History",
-  rev: 6,
+  field: "society",
+  rev: 7,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -18,7 +19,8 @@ FC.subject("civics", {
     { rev: 5, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 6, date: "2026-10-11",
-      change: "Step 9, recall and speech: the record holds the 17 questions of lesson 1, Who does what, each a topic that comes back as itself, the source of the list (USCIS form M-1778, 09/25, looked up 2026-10-11), the form for the answers that depend on where you live and who holds office, and the interview date the review counts its rounds from. Lesson 1 is added as the pilot." }
+      change: "Step 9, recall and speech: the record holds the 17 questions of lesson 1, Who does what, each a topic that comes back as itself, the source of the list (USCIS form M-1778, 09/25, looked up 2026-10-11), the form for the answers that depend on where you live and who holds office, and the interview date the review counts its rounds from. Lesson 1 is added as the pilot." },
+    { rev: 7, date: "2026-10-20", change: "Placed on a field of the library (society), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "Read a news story about the US government and know who made the final call and whether they were allowed to; answer the citizenship interview questions.",
   parts: [

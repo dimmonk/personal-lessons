@@ -3,6 +3,7 @@
 // the start), the chart (bars on a cut axis, a line from zero, redrawn from zero in the feedback) and the 1,000-people figure. Never shipped.
 FC.subject('feed', {
   name: 'On the feed',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-11', change: 'Made for the tests of the articles, the tap, the charts and the people figure.' }],

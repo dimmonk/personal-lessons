@@ -4,6 +4,7 @@
 // shown side by side at the end of a check and of the review, and a subject that sorts its questions in equal number from each side. Never shipped.
 FC.subject('labels', {
   name: 'Pinned labels',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-11', change: 'Made for the tests of the labelled post, the panel and the sides.' }],

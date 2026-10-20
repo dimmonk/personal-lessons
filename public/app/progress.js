@@ -41,7 +41,7 @@ const exportLog = () => saveFile(`fieldcraft-log-${today()}.json`, exportBody(),
 
 function subjectLine(s){
   const firsts = subjectFirstTries(s.id);
-  return [`${partsDone(s)}/${s.parts.length} parts`, ...(firsts.length ? [esc(PROGRESS_SAY.subjectPractice(outOf(firsts)))] : [])].join(' &middot; ');
+  return [`${partsDone(s)}/${s.parts.length} units`, ...(firsts.length ? [esc(PROGRESS_SAY.subjectPractice(outOf(firsts)))] : [])].join(' &middot; ');
 }
 function renderProgress(){
   const totalParts = SUBJECTS.reduce((a,s) => a + s.parts.length, 0);
@@ -51,7 +51,7 @@ function renderProgress(){
     <div class="topbar"><span class="m">Progress</span></div>
     <div class="mast">
       <h1>${doneParts} of ${totalParts}</h1>
-      <p>parts finished across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. A part is finished when you have taken its check.</p>
+      <p>units finished across ${numWord(SUBJECTS.length)} subject${SUBJECTS.length===1?'':'s'}. A unit is finished when you have taken its check.</p>
     </div>
     ${practiceBlockHtml()}
     <div class="block">${syncLineHtml()}</div>

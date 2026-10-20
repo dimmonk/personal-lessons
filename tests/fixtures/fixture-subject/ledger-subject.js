@@ -4,6 +4,7 @@
 // the calendar file, the moments a learner marks (a lesson that waits for one), and the export and delete controls. It is never shipped.
 FC.subject('ledger', {
   name: 'Household papers',
+  field: 'skills',
   rev: 1,
   standard: 2,
   history: [{ rev: 1, date: '2026-10-10', change: 'Made for the tests of the papers, the form, the private sheet and the dated changes.' }],

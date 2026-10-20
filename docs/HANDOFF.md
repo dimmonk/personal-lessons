@@ -5,6 +5,14 @@ Written 2026-10-05, after every subject was rebuilt in the interactive format; s
 ## 1. What this is
 Fieldcraft ("Pragmatic knowledge") is a static learning web app for the owner's own use: https://fieldcraft.web.app. Firebase project `fieldcraft-a795f`, site `fieldcraft`; deploy with `npm run deploy` (the site and the database rules, `firestore.rules`). GitHub `dimmonk/personal-lessons`, branch `main`. Plain HTML/CSS/JS in `public/`, no build step, installable PWA. Progress lives in the owner's account (Google sign-in, Cloud Firestore; `public/app/sync.js` and `public/app/store.js`), with a copy on the phone that works offline and catches up when back online; the plan is `docs/sync.md`. Before 2026-10-13 it lived in localStorage under `pl:`; the first sign-in on a phone moves that into the account (`public/app/legacy-move.js`). The record's parts keep their names (items, seen, notes, log, app, recent). The reader is a beginner: every unit is written so someone with no background can follow it.
 
+## Terms (approved by the owner 2026-10-20)
+Largest to smallest, in every screen, doc and message:
+- **Field**: a shelf of the library (Communication, Mind, Society, Numbers & Money, World, Skills). The list is `FIELDS` in `public/app/registry.js`; each subject record names its own `field`.
+- **Subject**: one expert discipline with its own way of thinking, built with the build-subject skill. A broad area that covers several disciplines is a Field, not a Subject (so Communication is a Field and Debating a Subject in it).
+- **Unit**: a group of lessons in a subject. In the data it is still the record's `parts` and a lesson's `part` (renaming the key would change every lesson's fingerprint and reset saved places for nothing the learner sees).
+- **Lesson**: one sitting.
+- **Topic**: something taught that comes back in the review (a strand). The same topic can be taught in more than one subject; that is how overlap is handled, never by filing a subject twice.
+
 ## 2. State
 Every subject is in the interactive format of `docs/lesson-standard.md` (version 1, with the decisions of 2026-10-05 in sections 17 and 17 of the history (docs/lesson-standard/history-v1.md)). The old card format is gone: no data, no screens, one engine (`public/app/lessons/*.js`).
 

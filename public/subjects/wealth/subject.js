@@ -2,7 +2,8 @@
 // yet. The learner's own accounts and dated actions are private data (5): the forms below say what the app may ask for.
 FC.subject('wealth', {
   name: "Wealth Preservation",
-  rev: 6,
+  field: "numbers",
+  rev: 7,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-05",
@@ -16,7 +17,8 @@ FC.subject('wealth', {
     { rev: 5, date: "2026-10-10",
       change: "Rebuilt for the practice engine (lesson standard 26, standard 2): the old key, units and stories are gone. The record now holds the end result and the parts from the design record; lessons are added one at a time." },
     { rev: 6, date: "2026-10-10",
-      change: "Step 4, documents and your own data: the record holds what lesson 2 needs (change it or leave it, the slips of reading a fee sheet, the kind of question that comes back in the review) and the private forms for the learner's accounts and dated changes, and lesson 2, What it costs a year, in dollars, is added as the pilot." }
+      change: "Step 4, documents and your own data: the record holds what lesson 2 needs (change it or leave it, the slips of reading a fee sheet, the kind of question that comes back in the review) and the private forms for the learner's accounts and dated changes, and lesson 2, What it costs a year, in dollars, is added as the pilot." },
+    { rev: 7, date: "2026-10-20", change: "Placed on a field of the library (numbers), one of the shelves Field, Subject, Unit, Lesson." }
   ],
   endResult: "Run the yearly check on your own US accounts: work out what each costs you a year in dollars, your biggest single bet, how far your mix has drifted, whether you take the full employer match, which foreign holdings need a US filing, and who inherits each account; then make the changes it calls for and leave alone what it clears.",
   parts: [

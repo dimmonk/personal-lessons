@@ -2,40 +2,40 @@
   "standard": 2,
   "subjects": {
     "civics": {
-      "rev": 6,
-      "fp": "sha256:e710684b6dc31a2b09622b6b6bf06d09cb6e0baa6c2cf5767b36d005307bbcaa"
+      "rev": 7,
+      "fp": "sha256:70b7bd730685ae5f0f9fd0ad26859aa84e06d23cf1467a9afed12d4c771543a7"
     },
     "geography": {
-      "rev": 1,
-      "fp": "sha256:7e93dbe522a911471c8042bae077c9cda3ac80239290cdb089990032df38f1a1"
+      "rev": 2,
+      "fp": "sha256:5b0758ed27b2aa12f2d2e38c7f73777d64f51faac2f7e7c6b7e36f44956c4c71"
     },
     "ideology": {
-      "rev": 7,
-      "fp": "sha256:61d2222369cfaaa83abf32404faec8db8042f2f7c40e093af8457847589d9fc2"
+      "rev": 8,
+      "fp": "sha256:8f331b9c467abf83fb8297c7bf030dec568a1e9a15c891ab7c66a29f67a5f0e8"
     },
     "math": {
-      "rev": 6,
-      "fp": "sha256:f2793899f98e07638907f45e5a61287ea9d99d57d3b6ab23c9fcc21311115b87"
+      "rev": 7,
+      "fp": "sha256:7d2b13fb4b233856abdec46c87a889e19435383c91556ca42d6d84785252f6ee"
     },
     "psychology": {
-      "rev": 9,
-      "fp": "sha256:d38dda187164a04db6aed80d12299256f759131738a64fc5ccf87c360b0ce12b"
+      "rev": 10,
+      "fp": "sha256:f4a6a1d67d13154989529b10b71a72649949687e01269cf1fa08d67121591a65"
     },
     "scams": {
-      "rev": 6,
-      "fp": "sha256:43d867108d6e149053583f303c546d5f99b0d6cfe376e5ac3339537e1b43023a"
+      "rev": 7,
+      "fp": "sha256:89ee6cf19eada28315ab8993423c7b938d50d487c3fa0c5041e71d72ebba41b8"
     },
     "singing": {
-      "rev": 3,
-      "fp": "sha256:0bc7ee4bbf2b64ae6383411dd928d016b8edd15de32fb7e03a3e373c682469af"
+      "rev": 4,
+      "fp": "sha256:4697220f527c698dcb9141d9c6a5a8e790135ae325db2a0f673fb853ac85aebd"
     },
     "stats": {
-      "rev": 6,
-      "fp": "sha256:9368b609cbb70169f6e44c357f3d2b7bc526e59edcaa1840f83c0e8c74afc134"
+      "rev": 7,
+      "fp": "sha256:88fd05fe9e572cbe7b330405ebbc63b93d399fa012cf239fedce1fd6759b0a35"
     },
     "wealth": {
-      "rev": 6,
-      "fp": "sha256:7e499c87d78f0139a238a2dea61b8550c1712f71502c6b6b9431d5a31d5e13bf"
+      "rev": 7,
+      "fp": "sha256:905c8e0e618d13bbaa71d2d87815daf8f2cc7f5fb74d53551a2cf3cfc429345d"
     }
   },
   "lessons": {

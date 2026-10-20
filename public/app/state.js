@@ -8,12 +8,13 @@ function buildSubject(id, index){
   const data = FC.get(id), meta = data.meta;
   const lessons = lessonsInOrder(data).map(l => ({ id: l.id, part: l.part, title: l.title, rev: l.rev, status: l.status, role: l.role || null, trigger: l.trigger || null }));
   return {
-    id, name: meta.name, rev: meta.rev, endResult: meta.endResult, parts: meta.parts, lessons,
+    id, name: meta.name, field: meta.field, rev: meta.rev, endResult: meta.endResult, parts: meta.parts, lessons,
     accent: ACCENTS[index % ACCENTS.length],
     keyNo: pad2(index + 1)
   };
 }
 const SUBJECTS = FC.ids().map(buildSubject);
+
 
 /* ===================== STATE ===================== */
 
