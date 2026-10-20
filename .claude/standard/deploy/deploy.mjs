@@ -26,12 +26,12 @@ import { checkDeployment, headerBlocks } from './deploy-check.mjs';
 import { createRunner, deployArgs, hasFunctionsTarget, killRunning, pinnedCli } from './firebase-cli.mjs';
 import { writeFunctionsRelease } from './functions-release.mjs';
 import {
-  WORKTREE_DIR, addWorktree, changedBetween, checkoutHasOrigin, commitRelease, fastForwardCaller, fetchMain, gitDirOf, headSha,
-  highestRemoteRevision, modifiedTracked, notShippingReport, pushWithRecut, releaseTag, removeWorktree, removeWorktreeSync,
+  addWorktree, changedBetween, checkoutHasOrigin, commitRelease, deployCacheRoot, fastForwardCaller, fetchMain, gitDirOf, headSha,
+  highestRemoteRevision, modifiedTracked, notShippingReport, pushWithRecut, releaseTag, removeWorktree, removeWorktreeSync, worktreePathFor,
 } from './git.mjs';
 import { installProblems } from './install-check.mjs';
 import { LockHeldError, acquireLock, releaseLock } from './lock.mjs';
-import { COMMIT_LENGTH, currentRelease, cutRelease, localDay } from './release-file.mjs';
+import { COMMIT_LENGTH, SEED_REVISION, currentRelease, cutRelease, localDay } from './release-file.mjs';
 import { TargetError, hostingBlockFor, parseOnly, resolveTargets } from './targets.mjs';
 import { RUN_ID_VAR } from './predeploy-guard.mjs';
 
@@ -50,18 +50,19 @@ const readJson = (file, what) => {
 // What is left behind on every way out: worktrees and locks. No tag is made before its push lands, so none is to drop.
 // ---------------------------------------------------------------------------
 
-function createCleanup() {
+function createCleanup(cacheRoot) {
   const worktrees = [];
   const locks = [];
   return {
+    cacheRoot,
     trackWorktree: (repo, worktree) => worktrees.push({ repo, worktree }),
     trackLock: (file) => locks.push(file),
     async run(run) {
-      for (const { repo, worktree } of worktrees) await removeWorktree(run, repo, worktree);
+      for (const { repo, worktree } of worktrees) await removeWorktree(run, repo, worktree, cacheRoot);
       locks.forEach(releaseLock);
     },
     runSync(runSync) {
-      for (const { repo, worktree } of worktrees) removeWorktreeSync(runSync, repo, worktree);
+      for (const { repo, worktree } of worktrees) removeWorktreeSync(runSync, repo, worktree, cacheRoot);
       locks.forEach(releaseLock);
     },
   };
@@ -110,9 +111,10 @@ async function openRepo(ctx, where) {
   const main = await fetchMain(ctx.run, where.repo);
   (await notShippingReport(ctx.run, where.repo)).forEach((line) => ctx.log(line));
   ctx.log(`Shipping origin/main ${main.short}  ${main.subject}  (${where.repo})`);
-  const worktree = join(where.repo, WORKTREE_DIR);
+  const worktree = worktreePathFor(ctx.cacheRoot, where.repo);
   ctx.cleanup.trackWorktree(where.repo, worktree);
-  await addWorktree(ctx.run, where.repo, worktree, main.sha);
+  await addWorktree(ctx.run, where.repo, worktree, main.sha, ctx.cacheRoot);
+  linkRootInstall(where.primary, worktree);
   return { ...where, worktree, main };
 }
 
@@ -133,15 +135,26 @@ function linkInto(modules, link) {
   if (lstatSync(link, { throwIfNoEntry: false }) === undefined) symlinkSync(modules, link);
 }
 
+/**
+ * The worktree sits in the cache, not under the primary, so node resolution cannot walk up into the primary's node_modules:
+ * the root install is linked in as soon as the worktree exists, before deploy.config.mjs (and the hooks and scripts it
+ * imports) is loaded from it. Whether that install matches the lock is checked later, by {@link linkInstalls}.
+ */
+function linkRootInstall(primary, worktree) {
+  const modules = join(primary, 'node_modules');
+  if (existsSync(modules)) linkInto(modules, join(worktree, 'node_modules'));
+}
+
 /** The functions sources of firebase.json, or [] when it declares none. */
 function declaredFunctionsSources(firebaseJson) {
   return [firebaseJson.functions].flat().filter((f) => f && typeof f.source === 'string').map((f) => f.source);
 }
 
 /**
- * 3: every repo's root install against the lock being shipped, then linked into its worktree. The project's functions
- * installs get the same check and link when it declares functions (required when a functions target is listed, optional
- * otherwise), so a preflight or build hook run for `--only hosting` finds node_modules where the tool looks for it.
+ * 3: every repo's root install against the lock being shipped (linked into its worktree when that was opened, see
+ * {@link linkRootInstall}). The project's functions installs get the same check, and are linked, when it declares functions
+ * (required when a functions target is listed, optional otherwise), so a preflight or build hook run for `--only hosting`
+ * finds node_modules where the tool looks for it.
  */
 function linkInstalls(repos, project, firebaseJson, functionsListed) {
   repos.forEach(({ primary, worktree }) => {
@@ -151,7 +164,6 @@ function linkInstalls(repos, project, firebaseJson, functionsListed) {
     if (existsSync(lock)) {
       assertInstall(modules, lock, { requireDev: true, why: 'A build or preflight from a stale install is wrong.', fix: `pull main into ${primary}, then (npm ci), and re-run.` });
     }
-    if (existsSync(modules)) linkInto(modules, join(worktree, 'node_modules'));
   });
   const { primary, worktree } = project;
   const sources = functionsListed ? functionsSources(firebaseJson) : declaredFunctionsSources(firebaseJson);
@@ -221,7 +233,8 @@ async function cutOnce(ctx, key, line, lineWt, validatedFiles) {
   await assertChecked(ctx, lineWt.worktree);
   const tagged = await highestRemoteRevision(ctx.run, lineWt.worktree);
   const current = currentRelease(lineWt.worktree, line.siteRoot);
-  if (tagged !== current.revision) {
+  const firstRelease = tagged === null && current.revision === SEED_REVISION; // a new project: no tag yet, the file still the seed
+  if (tagged !== current.revision && !firstRelease) {
     throw fail(`REFUSED: origin's highest release tag is ${tagged === null ? 'absent' : releaseTag(tagged)} but ${line.siteRoot}/version.json says revision ${current.revision}. `
       + 'The counter and the tags must agree before a release is cut (a rewound version.json, or a release commit that lost its tag). Nothing was changed.');
   }
@@ -237,7 +250,7 @@ async function cutOnce(ctx, key, line, lineWt, validatedFiles) {
 /** 5: the release of one line, pushed. */
 async function releaseLine(ctx, key, line, lineWt, validatedFiles) {
   const landed = await pushWithRecut({
-    run: ctx.run, repo: lineWt.repo, worktree: lineWt.worktree, log: ctx.log, attempt: () => cutOnce(ctx, key, line, lineWt, validatedFiles),
+    run: ctx.run, repo: lineWt.repo, worktree: lineWt.worktree, cacheRoot: ctx.cacheRoot, log: ctx.log, attempt: () => cutOnce(ctx, key, line, lineWt, validatedFiles),
   });
   ctx.log(`pushed ${landed.commit} (chore: release ${landed.revision}) and tag ${releaseTag(landed.revision)} to origin/main of ${lineWt.repo}`);
   return landed;
@@ -333,10 +346,10 @@ async function openLine(ctx, project, line) {
 async function execute(deps, words, cleanup) {
   const where = await locate(runnerFor(deps, [{ repo: deps.cwd }]).run, deps.cwd);
   const base = {
-    ...deps, ...where, cleanup, runId: randomUUID(), targets: words, checked: new Map(),
+    ...deps, ...where, cleanup, cacheRoot: cleanup.cacheRoot, runId: randomUUID(), targets: words, checked: new Map(),
     log: (line) => deps.out(`[deploy] ${line}\n`), warn: (line) => deps.err(`[deploy] ${line}\n`),
   };
-  const projectPlace = { ...where, worktree: join(where.repo, WORKTREE_DIR) };
+  const projectPlace = { ...where, worktree: worktreePathFor(base.cacheRoot, where.repo) };
   const opened = await openProject(contextFor(deps, base, [projectPlace]), words);
   const { project, config, targets } = opened;
   const line = targets.hosting ? config.releases[targets.hosting] : null;
@@ -382,8 +395,13 @@ export async function runDeploy(deps) {
     deps.err(`[deploy] REFUSED: ${error.message}\n`);
     return 1;
   }
+  let cacheRoot;
+  try { cacheRoot = deployCacheRoot(deps.env); } catch (error) {
+    deps.err(`[deploy] REFUSED: ${error.message}\n`);
+    return 1;
+  }
   const boot = runnerFor(deps, [{ repo: deps.cwd }]);
-  const cleanup = createCleanup();
+  const cleanup = createCleanup(cacheRoot);
   const uninstall = installSignalCleanup(cleanup, boot.runSync);
   try {
     await execute(deps, words, cleanup);

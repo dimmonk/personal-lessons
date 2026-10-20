@@ -5,5 +5,10 @@ tools/maps/.cache/
 firebase-debug.log
 firestore-debug.log
 
-# Throwaway worktree of origin/main that npm run deploy ships from (claude-config/standard/deploy)
-.deploy-worktree/
+# >>> claude-config standard ignores (managed by standard/sync.mjs; edit them in claude-config)
+*-debug.log
+firebase-export-*/
+*.zip
+.DS_Store
+.claude/settings.local.json
+# <<< claude-config standard ignores

@@ -28,6 +28,8 @@ export const RELEASE_KEYS = Object.freeze(['revision', 'date', 'commit']);
 export const VERSION_FILE = 'version.json';
 /** The revision of a development build: not a release, so it matches no counted one. */
 export const DEV_REVISION = 0;
+/** The revision a new project's committed release file starts at: nothing shipped yet, so the first deploy cuts revision 1. */
+export const SEED_REVISION = 0;
 const RELEASE_DATE = /^(\d{4})-(\d{2})-(\d{2})$/;
 const RELEASE_COMMIT = /^[0-9a-f]{8}$/;
 export const COMMIT_LENGTH = 8;
@@ -67,24 +69,26 @@ function isCalendarDay(date) {
 
 /**
  * What is wrong with a parsed release file (version.json, the live `/version.json`): exactly `{ revision, date, commit }`
- * with a positive integer, a real `YYYY-MM-DD` day and 8 lowercase hex characters.
+ * with a positive integer, a real `YYYY-MM-DD` day and 8 lowercase hex characters. `seed` also accepts SEED_REVISION, for the
+ * file committed in a project that has not shipped yet; the live `/version.json` is never a seed.
  * @param {unknown} value
+ * @param {{ seed?: boolean }} [options]
  * @returns {string[]}
  */
-export function releaseProblems(value) {
+export function releaseProblems(value, { seed = false } = {}) {
   if (value === null || typeof value !== 'object' || Array.isArray(value)) return ['is not a JSON object'];
   const problems = [];
   const keys = Object.keys(value);
   if (keys.join(',') !== RELEASE_KEYS.join(',')) problems.push(`keys are [${keys.join(', ')}], not [${RELEASE_KEYS.join(', ')}]`);
   const { revision, date, commit } = value;
-  if (!Number.isSafeInteger(revision) || revision < 1) problems.push(`revision ${JSON.stringify(revision)} is not a positive integer`);
+  if (!Number.isSafeInteger(revision) || revision < (seed ? SEED_REVISION : 1)) problems.push(`revision ${JSON.stringify(revision)} is not a positive integer`);
   if (!isCalendarDay(date)) problems.push(`date ${JSON.stringify(date)} is not a YYYY-MM-DD day`);
   if (typeof commit !== 'string' || !RELEASE_COMMIT.test(commit)) problems.push(`commit ${JSON.stringify(commit)} is not 8 lowercase hex characters`);
   return problems;
 }
 
 /**
- * A release file, parsed and valid, or the reasons it is not.
+ * A release file committed in a repo, parsed and valid (a seed revision included), or the reasons it is not.
  * @param {string} file
  * @returns {{ release: { revision: number, date: string, commit: string } } | { problems: string[] }}
  */
@@ -93,7 +97,7 @@ export function readReleaseFile(file) {
   try { parsed = JSON.parse(readFileSync(file, 'utf8')); } catch (error) {
     return { problems: [`unreadable (${error.message})`] };
   }
-  const problems = releaseProblems(parsed);
+  const problems = releaseProblems(parsed, { seed: true });
   return problems.length > 0 ? { problems } : { release: parsed };
 }
 

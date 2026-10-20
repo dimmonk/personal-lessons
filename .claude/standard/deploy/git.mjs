@@ -1,15 +1,22 @@
 /**
  * The git side of a deploy: every call goes through the `run` the caller passes (ctx.run), so tests stub one function.
  *
- * What ships is a throwaway worktree at origin/main, inside the repo so node resolution walks up into the primary's
- * node_modules (ADR-0152). A release is one commit of the release paths alone, `chore: release N`, tagged `release-N` and
+ * What ships is a throwaway worktree at origin/main under a per-user cache root, never inside a project folder: the core
+ * links the primary's installed node_modules into it (see deploy.mjs), so node resolution still finds them. A release is one commit of the release paths alone, `chore: release N`, tagged `release-N` and
  * pushed with the branch in one atomic push; a push that raced another window is not rebased (the release file would
  * conflict): the cut is thrown away and made again from the new origin/main, up to five times.
  */
-import { rmSync } from 'node:fs';
-import { basename } from 'node:path';
+import { createHash } from 'node:crypto';
+import { homedir } from 'node:os';
+import { basename, dirname, isAbsolute, join, resolve } from 'node:path';
+import { SEED_REVISION } from './release-file.mjs';
 
-export const WORKTREE_DIR = '.deploy-worktree';
+/** Overrides the cache root (tests, or a machine whose caches live elsewhere). Must be an absolute path. */
+export const CACHE_ENV = 'CLAUDE_DEPLOY_CACHE';
+const DEFAULT_CACHE = ['Library', 'Caches', 'claude-deploy'];
+/** The worktree's own folder name inside its `<repo>-<hash>` folder. */
+const WORKTREE_NAME = 'worktree';
+const PATH_HASH_LENGTH = 8;
 export const MAX_PUSH_ATTEMPTS = 5;
 export const MAIN_BRANCH = 'main';
 /** The full name, so no tag or branch spelled `origin/main` can stand in for it. */
@@ -19,6 +26,20 @@ const REMOTE_TAG = /^[0-9a-f]+\trefs\/tags\/release-(\d+)$/;
 
 /** The tag of a release. @param {number} revision */
 export const releaseTag = (revision) => `${TAG_PREFIX}${revision}`;
+
+/** The per-user folder every deploy worktree lives under, outside every project folder. @param {NodeJS.ProcessEnv} env */
+export function deployCacheRoot(env) {
+  const override = env[CACHE_ENV];
+  if (override === undefined || override === '') return join(homedir(), ...DEFAULT_CACHE);
+  if (!isAbsolute(override)) throw new Error(`${CACHE_ENV} must be an absolute path, not ${JSON.stringify(override)}`);
+  return resolve(override);
+}
+
+/** Where `repo` (an absolute checkout path) gets its deploy worktree: `<cache>/<folder>-<hash of the path>/worktree`. */
+export function worktreePathFor(cacheRoot, repo) {
+  const hash = createHash('sha256').update(resolve(repo)).digest('hex').slice(0, PATH_HASH_LENGTH);
+  return join(cacheRoot, `${basename(repo)}-${hash}`, WORKTREE_NAME);
+}
 
 const git = (run, repo, args, opts = {}) => run('git', ['-C', repo, ...args], { quiet: true, cwd: repo, ...opts });
 const lines = (text) => text.split('\n').filter(Boolean);
@@ -52,35 +73,36 @@ export async function notShippingReport(run, repo) {
   ];
 }
 
-/** The deploy worktree is the one directory this module deletes outright; nothing else is ever removed by name. */
-function assertOwned(worktree) {
-  if (basename(worktree) !== WORKTREE_DIR) throw new Error(`refusing to remove ${worktree}: it is not a ${WORKTREE_DIR}`);
+/** Everything this module removes or cleans is a worktree of the cache root: never a folder the user works in. */
+function assertOwned(worktree, cacheRoot) {
+  const path = resolve(worktree);
+  if (basename(path) !== WORKTREE_NAME || dirname(dirname(path)) !== resolve(cacheRoot)) {
+    throw new Error(`refusing to touch ${worktree}: it is not a deploy worktree under ${cacheRoot}`);
+  }
 }
 
 /**
- * Forget a worktree, registered or not, and the directory itself: a run that was killed leaves one behind, and a process
- * still running in it can re-create the directory after git removed it. Never throws for a failed removal: it runs on every
- * way out, and the next `addWorktree` reports a directory it cannot clear.
+ * Forget a worktree: git removes it and its registration, and a run that was killed leaves one behind that the next run
+ * removes the same way. Never throws for a failed removal: it runs on every way out, and the next `addWorktree` reports a
+ * directory git cannot clear.
  */
-export async function removeWorktree(run, repo, worktree) {
-  assertOwned(worktree);
+export async function removeWorktree(run, repo, worktree, cacheRoot) {
+  assertOwned(worktree, cacheRoot);
   await git(run, repo, ['worktree', 'remove', '--force', worktree]).catch(() => {});
-  try { rmSync(worktree, { recursive: true, force: true }); } catch { /* reported by the next addWorktree */ }
   await git(run, repo, ['worktree', 'prune']).catch(() => {});
 }
 
 /** The same for the signal handler, where nothing async can finish. */
-export function removeWorktreeSync(runSync, repo, worktree) {
-  assertOwned(worktree);
+export function removeWorktreeSync(runSync, repo, worktree, cacheRoot) {
+  assertOwned(worktree, cacheRoot);
   const quiet = (args) => { try { runSync('git', ['-C', repo, ...args], { quiet: true }); } catch { /* best effort on the way out */ } };
   quiet(['worktree', 'remove', '--force', worktree]);
-  try { rmSync(worktree, { recursive: true, force: true }); } catch { /* best effort on the way out */ }
   quiet(['worktree', 'prune']);
 }
 
 /** A detached worktree at `sha`; a left-over one from a killed run is removed first. */
-export async function addWorktree(run, repo, worktree, sha) {
-  await removeWorktree(run, repo, worktree);
+export async function addWorktree(run, repo, worktree, sha, cacheRoot) {
+  await removeWorktree(run, repo, worktree, cacheRoot);
   await git(run, repo, ['worktree', 'add', '--detach', '--quiet', worktree, sha]);
 }
 
@@ -141,12 +163,13 @@ export async function settlePush(run, worktree, revision) {
   const landed = await git(run, worktree, ['merge-base', '--is-ancestor', sha, MAIN_REMOTE_REF]).then(() => true, () => false);
   if (landed) return 'landed';
   if (remote !== base) return 'raced';
-  return (await highestRemoteRevision(run, worktree)) === revision - 1 ? 'failed' : 'raced';
+  // No release tag yet is the seed: a new project's first release (revision 1) follows revision 0.
+  return ((await highestRemoteRevision(run, worktree)) ?? SEED_REVISION) === revision - 1 ? 'failed' : 'raced';
 }
 
 /** The worktree as a fresh checkout of origin/main: the discarded cut's files and build output must not ship. */
-async function resetToMain(run, worktree) {
-  assertOwned(worktree); // `clean -x` deletes ignored files: it must never run in a checkout the user works in
+async function resetToMain(run, worktree, cacheRoot) {
+  assertOwned(worktree, cacheRoot); // `clean -x` deletes ignored files: it must never run in a checkout the user works in
   await git(run, worktree, ['reset', '--hard', '--quiet', MAIN_REMOTE_REF]);
   // -x: build output is usually ignored. node_modules stays: the core links the primary's installed tree in as one.
   await git(run, worktree, ['clean', '-fdxq', '-e', 'node_modules']);
@@ -159,7 +182,7 @@ async function resetToMain(run, worktree) {
  * with nothing standing. The local `release-N` is made once the push landed, at the commit origin holds.
  * @returns {Promise<{ revision: number }>} what `attempt` returned for the push that landed
  */
-export async function pushWithRecut({ run, repo, worktree, attempt, log, tries = MAX_PUSH_ATTEMPTS }) {
+export async function pushWithRecut({ run, repo, worktree, cacheRoot, attempt, log, tries = MAX_PUSH_ATTEMPTS }) {
   for (let n = 1; n <= tries; n += 1) {
     const cut = await attempt();
     const push = await pushRelease(run, worktree, cut.revision);
@@ -178,7 +201,7 @@ export async function pushWithRecut({ run, repo, worktree, attempt, log, tries =
         + `Nothing was deployed. Release ${cut.revision} may or may not stand on origin/main; when origin answers, re-run: a release that landed is not cut twice.`);
     }
     log(`push of release ${cut.revision} was rejected (attempt ${n}/${tries}); taking the new origin/main and cutting again...`);
-    await resetToMain(run, worktree);
+    await resetToMain(run, worktree, cacheRoot);
   }
   throw new Error(`could not push the release commit to origin/main after ${tries} tries: main moved every time. Nothing was deployed and no release stands.`);
 }

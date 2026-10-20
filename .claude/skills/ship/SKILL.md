@@ -66,7 +66,7 @@ gh pr checks <pr-number>
   as a known issue in this project's own docs/CLAUDE.md — is pre-existing and
   not a blocker for shipping. A failure unique to the branch, or one you can't
   confirm is the same pre-existing failure, is — stop and tell the user.
-- No PR for the branch → list it, ask before merging.
+- No PR for the branch → run the tests on it; if they pass, merge it.
 - No CI configured for this repo → `gh pr checks` reports nothing; treat the
   branch as unverified rather than merging blind, and say so.
 

@@ -145,7 +145,7 @@ commit). Small, frequent, reversible — never a week of uncommitted work.
 **I. The redesign/UI standard**, once a project reaches that phase: a
 read-only design-token reference the app's CSS is measured against (never
 edited freestyle), every prototype built mobile-first before touching the
-real app (`prototype-mobile-first` skill), one modal constructor / one
+real app (`prototype` skill), one modal constructor / one
 bottom-sheet host / one breakpoint module instead of scattered
 implementations, WCAG measured (a real contrast check), not eyeballed.
 

@@ -1,7 +1,7 @@
 /**
- * One deploy per checkout at a time. A run owns `<repo>/.deploy-worktree`; a second run from the same checkout would remove
- * it as a "left-over from a killed run" while the first is still building or uploading from it, and the first run's own
- * cleanup would then remove the second's. The lock lives in the checkout's git directory (not the working tree, so it is
+ * One deploy per checkout at a time. A run owns the checkout's deploy worktree (under the deploy cache root, git.mjs); a
+ * second run from the same checkout would remove it as a "left-over from a killed run" while the first is still building
+ * or uploading from it, and the first run's own cleanup would then remove the second's. The lock lives in the checkout's git directory (not the working tree, so it is
  * never untracked noise) and holds the owner's pid; a lock whose process is gone is a killed run's and is taken over.
  */
 import { randomBytes } from 'node:crypto';
@@ -14,7 +14,7 @@ const TAKE_TRIES = 3;
 /** Another live process holds the lock. Exit code 1, like every refusal. */
 export class LockHeldError extends Error {
   constructor(file, pid) {
-    super(`another \`npm run deploy\` (pid ${pid}) is running from this checkout: two runs would share one .deploy-worktree and `
+    super(`another \`npm run deploy\` (pid ${pid}) is running from this checkout: two runs would share one deploy worktree and `
       + `remove each other's. Wait for it to finish (lock: ${file}).`);
     this.name = 'LockHeldError';
   }
