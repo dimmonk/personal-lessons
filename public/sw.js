@@ -3,7 +3,7 @@
 // whole on the next load; the cached copy is only the offline fallback. Fonts and icons
 // are served from cache and refreshed in the background.
 // The release number below is stamped by npm run deploy (deploy.config.mjs); the cache name derives from it.
-const RELEASE = 37;
+const RELEASE = 38;
 const CACHE = `fieldcraft-${RELEASE}`;
 const SHELL = [
   './', 'manifest.json', 'app.css', 'app/helpers.js', 'app/store.js', 'app/account.js', 'app/registry.js', 'maps/europe-west.js', 'maps/us.js', 'maps/world.js', 'maps/africa-central.js', 'maps/africa-east.js', 'maps/africa-south.js', 'maps/africa-west.js', 'maps/americas-north.js', 'maps/arabia-north-africa.js', 'maps/asia-central.js', 'maps/asia-east.js', 'maps/asia-islands.js', 'maps/asia-south.js', 'maps/balkans.js', 'maps/caribbean.js', 'maps/europe-east.js', 'maps/europe-north.js', 'maps/mexico-central.js', 'maps/middle-east.js', 'maps/south-america.js', 'maps/world-features.js', 'subjects/civics/subject.js', 'subjects/civics/items-government.js', 'subjects/civics/l1.lesson.js',
