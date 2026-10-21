@@ -495,8 +495,22 @@ export const V71 = subjectRule('V71', (s, check) => {
   if (s.meta.complete) partIds.filter(p => !byPart[p]).forEach(p => problems.push(`part "${p}" has no lesson, and the subject says it is complete`));
   const ordered = s.sortedLessons.filter(l => l.part !== null).map(l => partIds.indexOf(l.part));
   if (ordered.some((x, i) => i > 0 && x < ordered[i - 1])) problems.push('the lessons are not in part order: lesson numbers must rise with the parts');
+  problems.push(...unitProblems(s.meta.units, partIds));
   checkEach(check, 'lessons and parts', problems);
 });
+// A subject's units, when it has them, hold every part once, in part order, a run each.
+function unitProblems(units, partIds) {
+  if (!units) return [];
+  const listed = units.flatMap(u => u.parts);
+  return [
+    ...duplicatesOf(units.map(u => u.id)).map(id => `unit "${id}" appears twice`),
+    ...units.filter(u => !u.parts.length).map(u => `unit "${u.id}" holds no part`),
+    ...listed.filter(p => !partIds.includes(p)).map(p => `a unit holds part "${p}", which is not a part of the subject`),
+    ...partIds.filter(p => !listed.includes(p)).map(p => `part "${p}" is in no unit`),
+    ...duplicatesOf(listed).map(p => `part "${p}" is in more than one unit`),
+    ...(listed.join() !== partIds.filter(p => listed.includes(p)).join() ? ['the units do not hold the parts in their order'] : [])
+  ];
+}
 
 /* ---------- V81 ---------- */
 const PRIVATE_FIELD = /account\s*(number|no\b|#)|acct|routing|iban|swift|\bpassword\b|passcode|\bpin\b|log-?in|username|user\s*name|social\s*security|\bssn\b|card\s*number/i;

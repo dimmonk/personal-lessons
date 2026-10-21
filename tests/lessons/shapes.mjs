@@ -21,7 +21,9 @@ export const SUBJECT = obj(
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
     strands: arr(idTitle(), { empty: true }), readingShare: num },
   { rules: map(obj({ name: str, needs: arr(idText) }, { heading: str })), review: obj({}, { gaps: arr(int), every: int, dateField: str }), timed: bool,
-    refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })), own: map(FORM), complete: bool,
+    refs: arr(obj({ id: str, text: str, value: any, asOf: str, source: str })),
+    // units (docs/HANDOFF.md, "Terms"): groups of the subject's lessons, each a run of its parts in order (V71)
+    units: arr(obj({ id: str, title: str, parts: arr(str) })), own: map(FORM), complete: bool,
     // the slip that is the failure, the facet the questions are sorted by, and which of its values is the risky one and which is the real one (V82)
     danger: obj({ slip: str, facet: str, risky: str, real: str }) });
 function idTitle() { return obj({ id: str, title: str }); }

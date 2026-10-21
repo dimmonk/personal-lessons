@@ -9,7 +9,7 @@ Fieldcraft ("Pragmatic knowledge") is a static learning web app for the owner's 
 Largest to smallest, in every screen, doc and message:
 - **Field**: a shelf of the library (Communication, Mind, Society, Numbers & Money, World, Skills). The list is `FIELDS` in `public/app/registry.js`; each subject record names its own `field`.
 - **Subject**: one expert discipline with its own way of thinking, built with the build-subject skill. A broad area that covers several disciplines is a Field, not a Subject (so Communication is a Field and Debating a Subject in it).
-- **Unit**: a group of lessons in a subject. In the data it is still the record's `parts` and a lesson's `part` (renaming the key would change every lesson's fingerprint and reset saved places for nothing the learner sees).
+- **Unit**: a group of lessons in a subject: the record's optional `units` ({ id, title, parts }), each a run of its lessons in order (V71). A subject with few lessons has no units. Note the data's `parts` are lesson slots (one lesson each, built or planned), not units: screens count them as lessons.
 - **Lesson**: one sitting.
 - **Topic**: something taught that comes back in the review (a strand). The same topic can be taught in more than one subject; that is how overlap is handled, never by filing a subject twice.
 

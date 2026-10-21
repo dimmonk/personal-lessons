@@ -29,14 +29,20 @@ function partRow(part, number){
     <span class="grow"><span class="t" data-owner-words>${esc(part.title)}</span><span class="s">${esc(SAY.notBuilt)}</span></span>
   </div>`;
 }
-// the lessons in part order, with a row for each part that has none yet
-function courseRows(subj){
-  const baseline = subj.lessons.filter(l => l.part === null).map(l => lessonRow(subj, l, '·'));
-  const parts = subj.parts.map((p, i) => {
-    const l = subj.lessons.find(x => x.part === p.id);
+// the lessons in part order, with a row for each part that has none yet; under a heading for each unit when the subject has units
+function courseHtml(subj){
+  const rowOf = p => {
+    const i = subj.parts.indexOf(p), l = subj.lessons.find(x => x.part === p.id);
     return l ? lessonRow(subj, l, i + 1) : partRow(p, i + 1);
-  });
-  return [...baseline, ...parts].join('');
+  };
+  const baseline = subj.lessons.filter(l => l.part === null).map(l => lessonRow(subj, l, '·')).join('');
+  if(!subj.units) return `<div class="rows">${baseline}${subj.parts.map(rowOf).join('')}</div>`;
+  return (baseline ? `<div class="rows">${baseline}</div>` : '') + subj.units.map((u, k) => {
+    const parts = u.parts.map(id => subj.parts.find(p => p.id === id));
+    const done = parts.filter(p => subj.lessons.some(l => l.part === p.id && lessonIsDone(subj, l.id))).length;
+    return `<div class="sect top"><span class="m">${esc(SAY.unitHeading(k + 1, u.title))}</span><span class="m s">${done} of ${parts.length}</span></div>
+    <div class="rows">${parts.map(rowOf).join('')}</div>`;
+  }).join('');
 }
 function againSection(subj){
   const done = subj.lessons.filter(l => lessonIsDone(subj, l.id) && flowSets(dataOf(subj).lessons[l.id]).length);
@@ -75,7 +81,7 @@ function renderSubject(subj){
     <div style="display:flex;flex-direction:column;gap:10px;padding-bottom:20px">
       <div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px">
         <span class="m">Progress</span>
-        <span class="m" style="letter-spacing:.08em">${done} of ${total} units</span>
+        <span class="m" style="letter-spacing:.08em">${done} of ${total} lessons</span>
       </div>
       <div class="segs">${subj.parts.map(p => `<i class="${subj.lessons.some(l => l.part === p.id && lessonIsDone(subj, l.id)) ? 'on' : ''}"></i>`).join('')}</div>
     </div>
@@ -83,8 +89,8 @@ function renderSubject(subj){
     ${resume ? `<div class="block"><button class="btn" id="resume">${esc(lessonPlace(subj, resume) > 0 ? SAY.resume : SAY.start)}: ${esc(resume.title)}${icon('arrow',17)}</button></div>` : ''}
 
     <div class="sect"><span class="m">${esc(SAY.lessonsHeading)}</span>
-      <span class="m s">${total} units &middot; ${subj.lessons.filter(l => l.part !== null).length} built</span></div>
-    <div class="rows">${courseRows(subj)}</div>
+      <span class="m s">${total} lessons &middot; ${subj.lessons.filter(l => l.part !== null).length} built</span></div>
+    ${courseHtml(subj)}
 
     ${againSection(subj)}
 

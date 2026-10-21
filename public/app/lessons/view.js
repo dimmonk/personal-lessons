@@ -26,6 +26,7 @@ const SAY = {
   stakes: 'Nothing here is graded. A miss only decides what comes back.',
   draft: 'Draft: not tried yet',
   notBuilt: 'Not built yet',
+  unitHeading: (n, title) => `Unit ${n} · ${title}`,
   notStarted: 'Not started',
   next: 'Next',
   goOn: 'Go on',

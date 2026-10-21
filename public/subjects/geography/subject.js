@@ -4,9 +4,9 @@
 FC.subject('geography', {
   name: 'Geography',
   field: 'world',
-  rev: 2,
+  rev: 3,
   standard: 2,
-  history: [{ rev: 1, date: '2026-10-13', change: 'First version: the pilot, Europe, west (part 16).' }, { rev: 2, date: '2026-10-20', change: 'Placed on a field of the library (world), one of the shelves Field, Subject, Unit, Lesson.' }],
+  history: [{ rev: 1, date: '2026-10-13', change: 'First version: the pilot, Europe, west (part 16).' }, { rev: 2, date: '2026-10-20', change: 'Placed on a field of the library (world), one of the shelves Field, Subject, Unit, Lesson.' }, { rev: 3, date: '2026-10-20', change: 'Its 54 lessons grouped into seven units by region.' }],
   endResult: "After this subject you can put a named place on a map with no names, say what it borders and what water it is on, name a place that is lit, tell a country by its flag, and say roughly how far it is from you, when a place is named in the news, by a person or in a travel plan with no map in sight.",
   parts: [
     { id: "1", title: "The continents and the oceans" },
@@ -63,6 +63,15 @@ FC.subject('geography', {
     { id: "31", title: "How far" },
     { id: "32", title: "Placing a place you have never heard of" },
     { id: "33", title: "The whole world, mixed" }
+  ],
+  units: [
+    { id: "frame", title: "The world at a glance", parts: ["1", "1b", "1c"] },
+    { id: "us", title: "The United States", parts: ["2", "2b", "3", "4", "5", "6", "7", "7b", "8", "9", "10", "11"] },
+    { id: "americas", title: "The rest of the Americas", parts: ["12", "13", "13b", "14", "14b", "15", "15b"] },
+    { id: "europe", title: "Europe", parts: ["16", "16b", "17", "17b", "18", "18b", "19", "19b"] },
+    { id: "mideast-africa", title: "The Middle East and Africa", parts: ["20", "20b", "21", "21b", "22", "22b", "23", "23b", "24", "24b", "25", "25b"] },
+    { id: "asia", title: "Asia and the Pacific", parts: ["26", "26b", "27", "27b", "28", "28b", "29", "29b"] },
+    { id: "whole", title: "The whole world", parts: ["30", "31", "32", "33"] }
   ],
   // the places most often mixed up, each named and told apart (a wrong tap on one carries its slip)
   lists: {

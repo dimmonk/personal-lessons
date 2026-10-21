@@ -9,6 +9,7 @@ FC.subject('fixture', {
   history: [{ rev: 1, date: '2026-10-10', change: 'Made for the tests of the practice engine.' }],
   endResult: 'Read a one-line weather forecast and decide, in a few seconds, whether to bring an umbrella.',
   parts: [{ id: '1', title: 'Read the chance' }, { id: '2', title: 'Read the timing' }],
+  units: [{ id: 'a', title: 'Chance', parts: ['1'] }, { id: 'b', title: 'Timing', parts: ['2'] }],
   complete: true,
   lists: {
     verdict: [{ id: 'bring', text: 'Bring an umbrella' }, { id: 'leave', text: 'Leave it at home' }],

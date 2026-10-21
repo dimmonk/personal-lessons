@@ -1,5 +1,5 @@
 /* ===================== SCREENS: SEARCH ===================== */
-// Search indexes what a learner has a right to see before doing it: subject names and end results, the units of each subject,
+// Search indexes what a learner has a right to see before doing it: subject names and end results, the lessons of each subject (planned ones included),
 // lesson titles and the one screen each lesson opens with. Questions are never indexed (the learner has not met them, and a
 // return needs one they have not seen).
 
@@ -9,9 +9,9 @@ function searchIndex(){
   INDEX = SUBJECTS.flatMap(s => {
     const data = dataOf(s);
     return [
-      { g: 'Subjects', s, t: s.name, sub: `${s.parts.length} units`, go: () => openSubject(s.id) },
+      { g: 'Subjects', s, t: s.name, sub: `${s.parts.length} lessons`, go: () => openSubject(s.id) },
       { g: 'Subjects', s, t: s.endResult, quote: true, owner: true, sub: `${s.name} · where it ends up`, go: () => openSubject(s.id) },
-      ...s.parts.map((p, i) => ({ g: 'Units', s, t: p.title, owner: true, sub: `${s.name} · unit ${i + 1}`, go: () => openSubject(s.id) })),
+      ...s.parts.filter(p => !s.lessons.some(l => l.part === p.id)).map(p => ({ g: 'Lessons', s, t: p.title, owner: true, sub: `${s.name} · ${SAY.notBuilt}`, go: () => openSubject(s.id) })),
       ...s.lessons.map(l => ({ g: 'Lessons', s, t: l.title, sub: `${s.name} · ${SAY.rev(l.rev)}`, go: () => openLesson(s, l.id) })),
       ...s.lessons.map(l => ({ g: 'Lessons', s, t: paras(data.lessons[l.id].why).join(' '), quote: true, sub: `${s.name} · ${l.title}`, go: () => openLesson(s, l.id) })),
       ...data.meta.strands.map(st => ({ g: 'Topics', s, t: st.title, sub: `${s.name} · comes back in the review`, go: () => openSubject(s.id) }))
@@ -52,13 +52,13 @@ function paintResults(){
   const q = APP.query.trim();
   if(!q){
     box.innerHTML = `<p class="empty">Everything is searchable: subject names, where each subject ends up,
-      the units, and the lessons.</p>`;
+      and the lessons.</p>`;
     return;
   }
   const hits = searchIndex().filter(e => e.t.toLowerCase().includes(q.toLowerCase()));
   if(!hits.length){ box.innerHTML = `<p class="empty">Nothing matches &ldquo;${esc(q)}&rdquo;.</p>`; return; }
 
-  const order = ['Subjects','Units','Lessons','Topics'];
+  const order = ['Subjects','Lessons','Topics'];
   const groups = order.map(g => [g, hits.filter(h => h.g === g)]).filter(([,list]) => list.length);
   let n = 0;
 

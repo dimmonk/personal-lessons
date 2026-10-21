@@ -72,6 +72,8 @@ export const CONTROLS = [
   { rule: 'V70', name: 'a document of a form that is not one', data: (d, h) => h.setIn(d, tillLesson('l1', 'flow', 0, 'show', 0, 'form'), 'menu') },
   { rule: 'V70', name: 'a bar part with no percent', data: (d, h) => h.removeIn(d, tillLesson('l1', 'flow', 1, 'show', 1, 'data', 'parts', 0, 'pct')) },
   { rule: 'V71', name: 'a part with no lesson in a subject that says it is complete', data: (d, h) => h.removeIn(d, lesson('l2')) },
+  { rule: 'V71', name: 'a part in no unit', data: (d, h) => h.setIn(d, meta('units'), [{ id: 'a', title: 'Chance', parts: ['1'] }]) },
+  { rule: 'V71', name: 'units that hold the parts out of order', data: (d, h) => h.setIn(d, meta('units'), [{ id: 'b', title: 'Timing', parts: ['2'] }, { id: 'a', title: 'Chance', parts: ['1'] }]) },
   { rule: 'V72', name: 'a check question that is also in a group', data: (d, h) => h.setIn(d, lesson('l1', 'check', 'items', 0), 'c-1') },
   { rule: 'V73', name: 'a why padded far past the reading share', data: (d, h) => h.setIn(d, lesson('l2', 'why'), padding) },
   { rule: 'V74', name: 'a wrong option with no line of its own and no slip',

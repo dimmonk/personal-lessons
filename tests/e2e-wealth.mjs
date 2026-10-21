@@ -143,7 +143,7 @@ async function theCheck(env, c, page) {
 async function theRecord(env, c, page) {
   await env.clickVisible(page, '[data-v="subject"]');
   const text = await env.screenText(page);
-  c.check(/Check passed, 3 of 3/.test(text) && /1 of 8 units/.test(text) && /Practice again/.test(text) && /Work 401\(k\) \(401\(k\) from a job\)/.test(text), `the subject screen does not show the check passed and the account (${text.slice(0, 200)})`);
+  c.check(/Check passed, 3 of 3/.test(text) && /1 of 8 lessons/.test(text) && /Practice again/.test(text) && /Work 401\(k\) \(401\(k\) from a job\)/.test(text), `the subject screen does not show the check passed and the account (${text.slice(0, 200)})`);
   await env.inspect(c, page, 'the Wealth subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:wealth:items'] || '{}'), seen = JSON.parse(stored['pl:wealth:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');

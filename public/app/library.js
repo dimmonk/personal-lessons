@@ -24,7 +24,7 @@ function subjectRow(s){
         <span class="sigil">${s.keyNo}</span>
         <span class="grow">
           <span class="t">${esc(s.name)}</span>
-          <span class="s">${s.parts.length} units &middot; ${s.lessons.length} built</span>
+          <span class="s">${s.parts.length} lessons &middot; ${s.lessons.length} built</span>
         </span>
         <span class="end">${progressMark(s)}</span>
         ${icon('chevron')}
@@ -88,7 +88,7 @@ function continueCard(s){
   return `<div class="block"><div class="card" style="--accent:${s.accent}">
     <div class="ch">
       <span class="m a">Continue</span>
-      <span class="m" style="letter-spacing:.1em">${partsDone(s)} / ${s.parts.length} units</span>
+      <span class="m" style="letter-spacing:.1em">${partsDone(s)} / ${s.parts.length} lessons</span>
     </div>
     <div style="display:flex;flex-direction:column;gap:4px">
       <span class="cn">${esc(s.name)}</span>
