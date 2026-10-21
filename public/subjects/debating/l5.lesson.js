@@ -4,8 +4,9 @@
 // some weeks and months later; F6: the personal-experience studies measured respect and set persuasion aside). (2) Keep every line true (F6: a published comment warns that a false personal
 // story earns more respect than facts; F9: do not make people believe what is wrong). The rule to check each line is the lesson's own, said so. Plan: docs/subjects/debating/plan.md.
 FC.lesson('debating', {
-  id: 'l5', part: '5', title: 'What a true story gets you', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-21', change: 'First version. The plan\'s "why a fact alone fails" was dropped because lesson 2 and the corrected research already say a correction works somewhat on a checkable fact; this lesson reads what a true story got (a hearing, a small move or neither) and checks your own story line by line against what happened.' }],
+  id: 'l5', part: '5', title: 'What a true story gets you', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-21', change: 'First version. The plan\'s "why a fact alone fails" was dropped because lesson 2 and the corrected research already say a correction works somewhat on a checkable fact; this lesson reads what a true story got (a hearing, a small move or neither) and checks your own story line by line against what happened.' },
+    { rev: 2, date: '2026-10-21', change: 'After the third learner review: a hearing can now come without a "but" and a brush-off can say "sorry", so the reading no longer rests on those words; the line the facts do not support is sometimes an added feeling or a motive and not a changed number; the answer "Neither shows in what they said" now reads "Neither a hearing nor a move".' }],
   why: [
     'You tell your neighbor Pam about the winter your brother slept in his car. She says, "I am sorry that happened to Lee. I mean it. I still don\'t want a shelter on our street." The story got you something real. It did not change her mind.',
     'In about fifteen minutes you will learn what a true story did in the studies, how to tell a hearing from a changed mind, and how to check that every line of your story is true.'
@@ -22,7 +23,7 @@ FC.lesson('debating', {
       show: [
         { kind: 'prose', text: [
           'In 15 studies on moral disagreements (disputes about right and wrong, such as how to treat people in need), people respected an opposing view more when it was backed by personal experience, most of all when the experience was about the issue and involved harm. Those studies measured respect. They put aside whether anyone was persuaded. Nothing here says the same holds for other kinds of disagreement, so the practice uses moral ones.',
-          'So when someone listens to your story, check what you got from their last lines. Sorting a reply into these three is our reading, not a finding. A hearing: they show they took in the story itself ("I am sorry that happened", "that is heavy") and their view stays. A small move: part of their view shifts, even if they keep a reservation. Neither: a flat "okay", a change of subject, or an argument that ignores your story. If any part of their view shifted, call it a move, even if they were polite too.',
+          'So when someone listens to your story, check what you got from their last lines. Sorting a reply into these three is our reading, not a finding. A hearing: they show they took in the story itself ("I am sorry that happened", "that is heavy") and nothing in their view shifts, whether or not they say so. A small move: part of their view shifts, even if they keep a reservation. Neither: a flat "okay", a change of subject, or an argument that ignores your story. If any part of their view shifted, call it a move, even if they were polite too.',
           'The talk is all you can see. The studies measured shifts in surveys, some of them weeks or months later, so "neither" in the room does not show the story failed.'] }
       ] },
     { title: 'Keep every line true',

@@ -3,11 +3,11 @@
 // studies measured respect and set persuasion aside; the story tests measured shifts in later surveys). (2) A story you plan to tell, line by line against what happened: tap the line you
 // could not honestly say, or say every line is true (F6: a published comment warns that a false personal story would earn more respect than facts; Aristotle: do not make people believe what
 // is wrong). The cue is always in the lines: a hearing can be curt, a move can be quiet and keep a reservation, a brush-off can be cheerful, so tone never gives the answer away. The cases are moral disagreements because that is what the personal-experience studies covered (F6); the reading of a reply as a hearing, a small move or neither is the lesson's own coding. The people
-// and their stories are invented. Items a lesson does not name wait for the review.
+// and their stories are invented. After the third review the cue patterns were broken: a hearing can come without "but" and a brush-off can say "sorry", and the line the facts do not support is sometimes a number, sometimes a feeling or a motive added to the facts. Items a lesson does not name wait for the review.
 (() => {
   const S = 'true-story';
   const REASON = {
-    hearing: 'They showed they took in the story itself and kept their view where it was. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.',
+    hearing: 'They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.',
     move: 'Part of their own view shifted, so it is a small move, whatever else they said. The studies found small shifts in attitudes. Count it as a step and not a win.',
     neither: 'They showed no sign of taking in the story itself, whether by a flat "okay", a change of subject or an argument that ignores it, and nothing about their view shifted. That does not show the story failed, since the studies measured shifts in surveys, some of them weeks or months later. It does mean there is nothing to count from this talk.',
     true: 'Every line matches what happened, so there is nothing to cut. Tell it as it is.',
@@ -59,14 +59,14 @@
       'Ellen says she would drop the rule for emergencies.'),
     R('b5-neither', 'neither', 'Your neighbor Hal thinks aid should end after two years. You tell him about someone on your street, which is true.', [
       ['s1', 'You: "She lost her housing aid two weeks before she found work, and slept at her sister\'s for a month."'],
-      ['s2', 'Hal: "The real issue is the budget. We spend more on aid than the county takes in."']], ['s2'],
-      'Hal argues the budget and does not mention the woman on your street.'),
-    T('b5-t1', 'What happened: last March your sister Mara\'s landlord raised her rent from $1,100 to $1,400. He gave her 60 days\' notice, and she moved out of the neighborhood in May. You helped her pack. You plan to tell it to a neighbor who is against rent limits.', [
+      ['s2', 'Hal: "Sorry, that was my phone buzzing. But the real issue is the budget. We spend more on aid than the county takes in."']], ['s2'],
+      'Hal apologizes for his phone, argues the budget and does not mention the woman on your street.'),
+    T('b5-t1', 'What happened: last March your sister Mara\'s landlord raised her rent from $1,100 to $1,400. He gave her 60 days\' notice, and she moved out of the neighborhood in May. You helped her pack. He never said why he raised it. You plan to tell it to a neighbor who is against rent limits.', [
       ['s1', 'My sister\'s rent went up $300 last March.'],
-      ['s2', 'She moved out of the neighborhood in May.'],
-      ['s3', 'I helped her pack.'],
-      ['s4', 'Her landlord gave her one day\'s notice.']], 's4',
-      'The facts say the landlord gave 60 days\' notice, not one day.'),
+      ['s2', 'Her landlord raised it to push her out.'],
+      ['s3', 'She moved out of the neighborhood in May.'],
+      ['s4', 'I helped her pack.']], 's2',
+      'The facts say he never said why he raised it, so you cannot say he meant to push her out.'),
     T('b5-t2', 'What happened: your father worked at the plant for 31 years. It closed in 2019, and he was given two weeks\' notice. You were in college and came home the weekend he told the family. You plan to tell it to a coworker who is against a notice law.', [
       ['s1', 'My father worked at the plant for 31 years.'],
       ['s2', 'It closed in 2019.'],
@@ -92,18 +92,18 @@
       'Pat now says children get seen first, which she did not say before.'),
     R('c5-hearing', 'hearing', 'Your coworker Lena is against driver\'s licenses for people without papers. You tell her about Luis, which is true.', [
       ['s1', 'You: "He drove six years without a license because he could not get one. One stop, and his car was impounded and he lost his job."'],
-      ['s2', 'Lena: "That is a heavy thing to carry around. It does not move me on the licenses, but I am glad I heard it."']], ['s2'],
-      'Lena calls it heavy and says it does not move her.'),
+      ['s2', 'Lena: "That is a heavy thing to carry around. I am glad I heard it."']], ['s2'],
+      'Lena calls it heavy and says she is glad she heard it, and says nothing that changes what she thinks of the licenses.'),
     R('c5-hearing2', 'hearing', 'Your friend Mia thinks teenagers who commit serious crimes should be tried as adults. You tell her about your nephew, which is true.', [
       ['s1', 'You: "He was sixteen. He was tried as an adult after a fight, and he is in an adult prison now."'],
       ['s2', 'Mia: "God, I can\'t imagine being you. Some of them have done things that need a hard answer, though. I am holding my position."']], ['s2'],
       'Mia says she cannot imagine being you and holds her position.'),
-    T('c5-t1', 'What happened: your mother cleaned offices at the hospital for 22 years. In 2018 she was let go with two weeks\' notice, and the work went to a contractor. After five months she found part-time work at a school. You plan to tell it to a coworker who is against a notice law.', [
+    T('c5-t1', 'What happened: your mother cleaned offices at the hospital for 22 years. In 2018 she was let go with two weeks\' notice, and the work went to a contractor. After five months she found part-time work at a school. She never told you how she felt about it. You plan to tell it to a coworker who is against a notice law.', [
       ['s1', 'My mother cleaned offices at the hospital for 22 years.'],
       ['s2', 'In 2018 she was let go with two weeks\' notice.'],
-      ['s3', 'The work went to a contractor.'],
-      ['s4', 'After that she never worked again.']], 's4',
-      'The facts say she found part-time work at a school after five months.'),
+      ['s3', 'She cried every night that year.'],
+      ['s4', 'The work went to a contractor.']], 's3',
+      'The facts say she never told you how she felt, so you cannot say she cried every night.'),
     T('c5-t2', 'What happened: in May your friend Dev\'s apartment building lost heat for nine days. He has two small kids. You took the kids in for three nights, and the landlord fixed the boiler on day nine. You plan to tell it to a neighbor who is against a heating rule.', [
       ['s1', 'In May my friend Dev\'s building lost heat for nine days.'],
       ['s2', 'He has two small kids.'],

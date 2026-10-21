@@ -1,6 +1,6 @@
 # Debating: What a true story gets you
 
-Revision 1, draft (the screen carries the draft line). Part: What a true story gets you. Where the subject ends up: After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.
+Revision 2, draft (the screen carries the draft line). Part: What a true story gets you. Where the subject ends up: After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.
 
 ## The why
 
@@ -16,7 +16,7 @@ These were trained canvassers and strangers, on two topics. Nothing shows the sa
 ## Step 2: A hearing is not a changed mind
 
 In 15 studies on moral disagreements (disputes about right and wrong, such as how to treat people in need), people respected an opposing view more when it was backed by personal experience, most of all when the experience was about the issue and involved harm. Those studies measured respect. They put aside whether anyone was persuaded. Nothing here says the same holds for other kinds of disagreement, so the practice uses moral ones.
-So when someone listens to your story, check what you got from their last lines. Sorting a reply into these three is our reading, not a finding. A hearing: they show they took in the story itself ("I am sorry that happened", "that is heavy") and their view stays. A small move: part of their view shifts, even if they keep a reservation. Neither: a flat "okay", a change of subject, or an argument that ignores your story. If any part of their view shifted, call it a move, even if they were polite too.
+So when someone listens to your story, check what you got from their last lines. Sorting a reply into these three is our reading, not a finding. A hearing: they show they took in the story itself ("I am sorry that happened", "that is heavy") and nothing in their view shifts, whether or not they say so. A small move: part of their view shifts, even if they keep a reservation. Neither: a flat "okay", a change of subject, or an argument that ignores your story. If any part of their view shifted, call it a move, even if they were polite too.
 The talk is all you can see. The studies measured shifts in surveys, some of them weeks or months later, so "neither" in the room does not show the story failed.
 
 ## Step 3: Keep every line true
@@ -36,14 +36,14 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move.
 - A small move: part of their view shifted.
-- Neither shows in what they said.
+- Neither a hearing nor a move.
 
 The working, one step at a time:
 1. Look for a shift in their view. Pam says "I still don't want a shelter on our street." Nothing in her view has moved.
 1. Look for a sign they took in the story itself. She says she is sorry about Lee and means it. She heard the story.
 1. Count what you got. A hearing. It is not a changed mind, and you cannot tell from this talk whether it will matter later.
 
-Then the answer: A hearing: they took you seriously, and their view did not move. Pam says she is sorry and means it, and then says she still does not want the shelter. They showed they took in the story itself and kept their view where it was. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
+Then the answer: A hearing: they took you seriously, and their view did not move. Pam says she is sorry and means it, and then says she still does not want the shelter. They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
 
 ## Step 5: Questions
 
@@ -59,7 +59,7 @@ You: "She arrived in 1951 with two suitcases. A church family gave her a room fo
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. — if chosen: a slip: took-for-hearing
 - A small move: part of their view shifted. (right)
-- Neither shows in what they said. — if chosen: a slip: took-for-nothing
+- Neither a hearing nor a move. — if chosen: a slip: took-for-nothing
 
 After the answer: the deciding words are marked. Reason: Anil stays wary, but he now says what he would sign on to. Part of their own view shifted, so it is a small move, whatever else they said. The studies found small shifts in attitudes. Count it as a step and not a win.
 
@@ -73,7 +73,7 @@ You: "Dana spent eleven years in prison for something she did not do, before DNA
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. — if chosen: Gwen says nothing about Dana or her eleven years. Being cheerful is not the same as taking the story in.
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. (right)
+- Neither a hearing nor a move. (right)
 
 After the answer: the deciding words are marked. Reason: Gwen is cheerful and answers nothing about Dana. They showed no sign of taking in the story itself, whether by a flat "okay", a change of subject or an argument that ignores it, and nothing about their view shifted. That does not show the story failed, since the studies measured shifts in surveys, some of them weeks or months later. It does mean there is nothing to count from this talk.
 
@@ -87,9 +87,9 @@ You: "He spent his last four months in pain that no medicine could touch." Dee: 
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. (right)
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. — if chosen: Dee answers the story. She says she is sorry you watched your father go through it.
+- Neither a hearing nor a move. — if chosen: Dee answers the story. She says she is sorry you watched your father go through it.
 
-After the answer: the deciding words are marked. Reason: Dee says she is sorry you watched it, and says she cannot back the law. They showed they took in the story itself and kept their view where it was. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
+After the answer: the deciding words are marked. Reason: Dee says she is sorry you watched it, and says she cannot back the law. They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -107,9 +107,9 @@ You: "He sat in jail for eleven days over a fine he could not pay, and lost his 
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. (right)
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. — if chosen: a slip: took-for-nothing
+- Neither a hearing nor a move. — if chosen: a slip: took-for-nothing
 
-After the answer: the deciding words are marked. Reason: Marcus takes the story in and says he reads bail differently. They showed they took in the story itself and kept their view where it was. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
+After the answer: the deciding words are marked. Reason: Marcus takes the story in and says he reads bail differently. They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
 
 #### Item 5
 
@@ -121,7 +121,7 @@ You: "She waited until her appendix burst because she was afraid to go in." Elle
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. — if chosen: a slip: took-for-hearing
 - A small move: part of their view shifted. (right)
-- Neither shows in what they said. — if chosen: a slip: took-for-nothing
+- Neither a hearing nor a move. — if chosen: a slip: took-for-nothing
 
 After the answer: the deciding words are marked. Reason: Ellen says she would drop the rule for emergencies. Part of their own view shifted, so it is a small move, whatever else they said. The studies found small shifts in attitudes. Count it as a step and not a win.
 
@@ -129,31 +129,31 @@ After the answer: the deciding words are marked. Reason: Ellen says she would dr
 
 Your neighbor Hal thinks aid should end after two years. You tell him about someone on your street, which is true.
 
-You: "She lost her housing aid two weeks before she found work, and slept at her sister's for a month." Hal: "The real issue is the budget. We spend more on aid than the county takes in."
+You: "She lost her housing aid two weeks before she found work, and slept at her sister's for a month." Hal: "Sorry, that was my phone buzzing. But the real issue is the budget. We spend more on aid than the county takes in."
 
 **What did your story get you?**
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. — if chosen: a slip: took-for-hearing
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. (right)
+- Neither a hearing nor a move. (right)
 
-After the answer: the deciding words are marked. Reason: Hal argues the budget and does not mention the woman on your street. They showed no sign of taking in the story itself, whether by a flat "okay", a change of subject or an argument that ignores it, and nothing about their view shifted. That does not show the story failed, since the studies measured shifts in surveys, some of them weeks or months later. It does mean there is nothing to count from this talk.
+After the answer: the deciding words are marked. Reason: Hal apologizes for his phone, argues the budget and does not mention the woman on your street. They showed no sign of taking in the story itself, whether by a flat "okay", a change of subject or an argument that ignores it, and nothing about their view shifted. That does not show the story failed, since the studies measured shifts in surveys, some of them weeks or months later. It does mean there is nothing to count from this talk.
 
 #### Item 7
 
-What happened: last March your sister Mara's landlord raised her rent from $1,100 to $1,400. He gave her 60 days' notice, and she moved out of the neighborhood in May. You helped her pack. You plan to tell it to a neighbor who is against rent limits.
+What happened: last March your sister Mara's landlord raised her rent from $1,100 to $1,400. He gave her 60 days' notice, and she moved out of the neighborhood in May. You helped her pack. He never said why he raised it. You plan to tell it to a neighbor who is against rent limits.
 
-My sister's rent went up $300 last March. She moved out of the neighborhood in May. I helped her pack. Her landlord gave her one day's notice.
+My sister's rent went up $300 last March. Her landlord raised it to push her out. She moved out of the neighborhood in May. I helped her pack.
 
 **Tap the line you could not honestly say.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "My sister's rent went up $300 last March." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
+- "Her landlord raised it to push her out." (right)
 - "She moved out of the neighborhood in May." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "I helped her pack." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- "Her landlord gave her one day's notice." (right)
 - A button: "Every line is true." — if chosen: The text does give one. It is marked above.
 
-After the answer: the deciding words are marked. Reason: The facts say the landlord gave 60 days' notice, not one day. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
+After the answer: the deciding words are marked. Reason: The facts say he never said why he raised it, so you cannot say he meant to push her out. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
 #### Item 8
 
@@ -206,7 +206,7 @@ You: "Nia slept in her car for a month after a layoff and got a $300 ticket for 
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. — if chosen: a slip: took-for-hearing
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. (right)
+- Neither a hearing nor a move. (right)
 
 After the answer: the deciding words are marked. Reason: Joan says "Okay" and moves to the check. They showed no sign of taking in the story itself, whether by a flat "okay", a change of subject or an argument that ignores it, and nothing about their view shifted. That does not show the story failed, since the studies measured shifts in surveys, some of them weeks or months later. It does mean there is nothing to count from this talk.
 
@@ -220,7 +220,7 @@ You: "When he was six we had no insurance for a year, and a broken arm waited th
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. — if chosen: a slip: took-for-hearing
 - A small move: part of their view shifted. (right)
-- Neither shows in what they said. — if chosen: a slip: took-for-nothing
+- Neither a hearing nor a move. — if chosen: a slip: took-for-nothing
 
 After the answer: the deciding words are marked. Reason: Pat now says children get seen first, which she did not say before. Part of their own view shifted, so it is a small move, whatever else they said. The studies found small shifts in attitudes. Count it as a step and not a win.
 
@@ -228,15 +228,15 @@ After the answer: the deciding words are marked. Reason: Pat now says children g
 
 Your coworker Lena is against driver's licenses for people without papers. You tell her about Luis, which is true.
 
-You: "He drove six years without a license because he could not get one. One stop, and his car was impounded and he lost his job." Lena: "That is a heavy thing to carry around. It does not move me on the licenses, but I am glad I heard it."
+You: "He drove six years without a license because he could not get one. One stop, and his car was impounded and he lost his job." Lena: "That is a heavy thing to carry around. I am glad I heard it."
 
 **What did your story get you?**
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. (right)
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. — if chosen: a slip: took-for-nothing
+- Neither a hearing nor a move. — if chosen: a slip: took-for-nothing
 
-After the answer: the deciding words are marked. Reason: Lena calls it heavy and says it does not move her. They showed they took in the story itself and kept their view where it was. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
+After the answer: the deciding words are marked. Reason: Lena calls it heavy and says she is glad she heard it, and says nothing that changes what she thinks of the licenses. They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
 
 #### Check question 13
 
@@ -248,25 +248,25 @@ You: "He was sixteen. He was tried as an adult after a fight, and he is in an ad
 (the options come in an order that depends on the seed of the question)
 - A hearing: they took you seriously, and their view did not move. (right)
 - A small move: part of their view shifted. — if chosen: a slip: took-for-move
-- Neither shows in what they said. — if chosen: a slip: took-for-nothing
+- Neither a hearing nor a move. — if chosen: a slip: took-for-nothing
 
-After the answer: the deciding words are marked. Reason: Mia says she cannot imagine being you and holds her position. They showed they took in the story itself and kept their view where it was. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
+After the answer: the deciding words are marked. Reason: Mia says she cannot imagine being you and holds her position. They showed they took in the story itself, and nothing in their view shifted. That is a hearing. In the studies of personal experience, people showed more respect for a view backed by experience, and those studies put aside whether anyone changed their mind. Count it as a hearing, not a changed mind.
 
 #### Check question 14
 
-What happened: your mother cleaned offices at the hospital for 22 years. In 2018 she was let go with two weeks' notice, and the work went to a contractor. After five months she found part-time work at a school. You plan to tell it to a coworker who is against a notice law.
+What happened: your mother cleaned offices at the hospital for 22 years. In 2018 she was let go with two weeks' notice, and the work went to a contractor. After five months she found part-time work at a school. She never told you how she felt about it. You plan to tell it to a coworker who is against a notice law.
 
-My mother cleaned offices at the hospital for 22 years. In 2018 she was let go with two weeks' notice. The work went to a contractor. After that she never worked again.
+My mother cleaned offices at the hospital for 22 years. In 2018 she was let go with two weeks' notice. She cried every night that year. The work went to a contractor.
 
 **Tap the line you could not honestly say.**
 - Tap a sentence in the text above. The lines of one block can be tapped; the rest cannot. Nothing is marked before the answer, and a tap is the answer.
 - "My mother cleaned offices at the hospital for 22 years." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
 - "In 2018 she was let go with two weeks' notice." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
+- "She cried every night that year." (right)
 - "The work went to a contractor." — if tapped: note: This line matches what happened.; slip: flagged a line of the story that was true
-- "After that she never worked again." (right)
 - A button: "Every line is true." — if chosen: The text does give one. It is marked above.
 
-After the answer: the deciding words are marked. Reason: The facts say she found part-time work at a school after five months. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
+After the answer: the deciding words are marked. Reason: The facts say she never told you how she felt, so you cannot say she cried every night. Cut or fix the line that goes beyond what happened. An invented line can earn respect as well as a true one, and it is still a lie.
 
 #### Check question 15
 
@@ -318,6 +318,6 @@ After the answer: the deciding words are marked. Reason: The facts say you were 
 
 ## The result
 
-Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time). The same is shown at the end of the weekly review.
+Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time); "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time); "Which experience to tell" (one about the issue itself beside one with harm in it beside what happened to you, not someone else beside an experience, not a statistic, each as "n of m" right the first time); "What works against you" (a line that looks down on them beside too many steps in a row beside a story stretched past what happened beside a restatement with something added beside a start they do not accept, each as "n of m" right the first time); "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
 For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

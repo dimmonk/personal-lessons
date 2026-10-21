@@ -116,6 +116,22 @@ debate only as the contrast case.
   it is stated as the lesson's inference and is not graded.
 - **Use:** lower the stakes of the position and give a clear argument to judge; keep in mind that your own arguments are produced the same
   way (the abstract's "not after the truth").
+- **Read in full on 2026-10-21 (SSRN copy of BBS 34(2):57-74 with the open peer commentary; page numbers are the journal's, from the running heads of that copy).** Passages now held
+  verbatim: sect. 2.2 (p. 62): looking for counterarguments against one's own claims is hard, but "the difficulty ... should be easily overcome by having them challenge someone else's
+  claims rather than defending their own"; "all participants were able to find counterarguments against a claim (which was not theirs) and to do so very quickly" (Shaw 1996). Sect. 3.4
+  (pp. 64-65): when "arguments among people who disagree but have a common interest in the truth", the confirmation bias "contributes to an efficient form of division of cognitive labor";
+  alone or "with people who hold similar views, one's arguments will not be critically evaluated. This is when the confirmation bias is most likely to lead to poor outcomes." Sect. 4.2.1
+  (pp. 66-67), Lord et al. 1979 as the authors report it: two studies of the death penalty with "almost identical" methodologies; "the studies that yielded a conclusion not in line with the
+  participants' opinions were consistently rated as having been much more poorly conducted"; "When people disagree with the conclusion of an argument, they often spend more time evaluating
+  it (Edwards & Smith 1996) ... mostly devoted to finding counterarguments." Concluding section (p. 72): "Individuals thinking on their own ... can assess only their own hypotheses, ... they are
+  both judge and party, or rather judge and advocate, and this is not an optimal stance for pursuing the truth"; looking for flaws in one's own arguments is "a painstakingly acquired ability to
+  exert some limited control over one's own biases", and "In most discussions, rather than looking for flaws in our own arguments, it is easier to let the other person find them and only then
+  adjust our arguments, if necessary." **Counterweight, Wolfe's commentary (BBS 34(2):92-93, same copy):** "reasoning biases are common even in the context of argumentation" and people "are
+  subject to fallacies and suboptimal performance in generating, comprehending, and evaluating arguments" (against M&S's "people are good at evaluating arguments"); in Wolfe's lab experiments "the
+  myside bias was pervasive. However, it was not linked to participant's personal opinions. People exhibited the myside bias when arguing for the side with which they personally disagreed just as
+  often as for the side with which they agreed"; "presenting and rebutting other-side information consistently leads to better ratings of agreement, argument quality, and impressions of authors
+  than does excluding other-side information" (Wolfe's own experiments as he reports them; the experiments themselves were not read). **Lesson 9 says only these.** It says "ask someone with
+  nothing at stake" is the lesson's inference (M&S p. 72 supports "easier to let the other person find them", not a tested method). It says nothing about numeracy or ability.
 
 ### F4. On a topic tied to a side, the same numbers get read the side's way (Kahan; the Persson replication)
 - **Read:** the abstract of Kahan, Peters, Dawson & Slovic 2017, "Motivated numeracy and enlightened self-government", *Behavioural Public
@@ -150,8 +166,7 @@ debate only as the contrast case.
   are reported as replicating the narrative-exchange effect (d = 0.08, 0.04), and the note does not hold an arguments-only result
   for them. The people who talked to voters were canvassers (230), trained, not volunteers in the lessons' sense.
 - **Santoro, Broockman, Kalla & Porat 2025** (the group's later test), "Listen for a change? A longitudinal field experiment on listening's
-  potential to enhance persuasion", *PNAS* 122(8), e2421982122, https://doi.org/10.1073/pnas.2421982122. **Read: the abstract only**, from the
-  Crossref registry record (the PNAS page blocked download). Passages: preregistered; "trained professional canvassers, acting as
+  potential to enhance persuasion", *PNAS* 122(8), e2421982122, https://doi.org/10.1073/pnas.2421982122. **Read in full on 2026-10-21** (Europe PMC copy, PMC11873821, CC BY-NC-ND; before that only the abstract was read). Passages: preregistered; "trained professional canvassers, acting as
   confederates, had ~10 min video conversations with U.S. participants (N = 1,485) about unauthorized immigration"; the team randomized
   whether the confederate "shared a persuasive narrative about an undocumented immigrant" and whether they "practiced high-quality
   nonjudgmental listening"; outcomes right after and five weeks later. "Sharing a persuasive narrative meaningfully and durably reduced
@@ -159,6 +174,16 @@ debate only as the contrast case.
   Surprisingly, however, the listening manipulation did not enhance persuasion: Sharing a persuasive narrative was just as effective in the
   absence of high-quality listening." **Effect on the lessons:** the narrative is the part with evidence; "without judging" must not be taught
   as the active ingredient, and listening is taught as good for how the person sees you, not as a way to persuade more.
+- **Santoro 2025 full-text passages (2026-10-21), used by lesson 6.** Conditions: a 2 x 2 (listen or not, narrative or not); 1,485 completed ~10-minute Zoom chats with people who opposed in-state college
+  tuition for undocumented immigrants (recruited from social media ads, told they would talk with a "fellow participant"); outcomes immediately and five weeks later. Listening was
+  "multiple probing follow-up questions, nodded their head, made eye contact, and avoided expressing judgment". Narrative alone vs placebo: policy and prejudice about 0.25 SD
+  immediately and about 0.20 SD at five weeks. Listening + narrative vs narrative alone: d = 0.06 and 0.07 immediately (not significant), -0.02 at five weeks; "we do not find evidence that
+  adding listening to a persuasive intervention meaningfully enhances persuasion"; listening alone: about 0.09 SD, adjusted p = .062, "decayed to zero in the long term". Mechanisms (Table 3):
+  listening raised liking, respect, felt understood (0.79 SD), lowered defensiveness (-0.23 SD) and did not raise elaboration or learning. Authors: "adding listening to persuasive appeals may
+  not be worth the added costs if persuasion is the goal" and "listening can make others feel respected, less defensive, and increasing their liking". Limits they state: one persuasive method
+  (a detailed narrative; listening "may enhance the persuasiveness of facts or other persuasive methods"), people willing to talk to a stranger on video, video not text or in person, one
+  topic, only opponents of the policy; the confederates were told to avoid the kind of listening that tailors the message to the person's concerns. They also review three text-chat studies
+  (Chen et al.: an elaboration question raised perceived receptiveness and did not change views; Minson et al.; Argyle et al.) that found no added persuasion either.
 - **Use:** the best direct field evidence for what to do when arguments alone will not do: share a relevant story (and, in the first
   test, ask for theirs). Honest framing: small, from trained canvassers on strangers, topics were
   immigration and transgender policy, in the US. It is not shown to work on a family argument, or a close relative.
@@ -171,14 +196,30 @@ debate only as the contrast case.
   Experiences "issue-relevant and involve harm" work best, via perceived rationality. The authors "leave aside the
   question of persuasion". Commentary: "a false personal story will have more power to create respect than facts"
   (a warning that stories are exploitable).
+- **Read in full on 2026-10-21** (Europe PMC copy, PMC8017692, PNAS 118(6):e2008389118; before that only the abstract and the commentary). Held now: the opponent in the vignettes and in Study 5
+  (a real face-to-face talk about guns with 153 people stopped in public in North Carolina, a team member taking the opposing side) **based their own stance** on the experience or on facts.
+  Study 7 (n = 273, guns): relevant personal experience beat facts and beat "nonrelevant personal experiences (i.e., had their business go into bankruptcy)"; "no significant difference between
+  facts and nonrelevant personal experiences." Study 8 (n = 255): harm-based (used a gun to protect my family) beat nonharm personal experiences (took a firearm safety course) on rationality and
+  respect, and "nonharm (but still relevant) experiences were significantly more effective ... compared with facts". Study 9 (n = 408): a "personalness gradient": they themselves suffered
+  (respect M = 5.08), a friend or relative suffered (4.66), they read about someone who suffered (4.21). Study 13: doubt of the truth was highest "when opponents based their stance on facts in
+  matters of morality/politics"; "personal experiences only have an advantage in moral disagreement - for agreement (whether moral or nonmoral) and for nonmoral disagreement, facts foster
+  respect just as well (Study 13)" (the nonmoral topic was blender preferences). Study 15 (immigration, n = 1,412): a layperson's experience beat a scientist's research on respect. Authors:
+  "we leave aside the question of persuasion"; "We speculate that personal experiences might be deployed early in conversations to first build a foundation of mutual respect, and then facts
+  could be introduced"; "It is an open question of whether these results apply cross-culturally." Samples are mostly MTurk and a few representative samples; Study 12 (CNN/Fox transcripts)
+  had a significant total effect on rationality but not on respect. Nothing in the paper tests length, a story told about someone else, or a non-judging manner.
 - **Use:** explains why the clip's "pathos beats logos" has something to it: in a moral disagreement a story gets you a
   hearing that a statistic does not. It does not show the other person changed their mind. Teach honesty: share a true
   experience; do not invent one.
 
 ### F7. Receptive language and restating the other side first (Yeomans et al. 2020; Rapoport via Dennett)
-- **Read:** only the abstract of Yeomans, Minson, Collins, Chen & Gino 2020, *OBHDP* 160:131-148 (repository
-  abstract page); Dennett's four "Rapoport's Rules" as quoted by The Marginalian (2014 article on *Intuition Pumps*).
-  I did not read either book or the full Yeomans paper.
+- **Read:** the **full text** of Yeomans, Minson, Collins, Chen & Gino 2020, *OBHDP* 160:131-148 (author manuscript, Imperial College repository, read 2026-10-21; before that only the abstract);
+  Dennett's four steps from Rapoport as quoted by The Marginalian (2014 article on *Intuition Pumps*; the book itself not read). **Correction found on reading the full text:** the "receptiveness
+  recipe" (Study 4, 771 writers and 1,548 raters on MTurk) is four wording markers, "positive statements, rather than negations; explicit acknowledgement of understanding; finding points of
+  agreement; and hedging to soften claims", and it is **not** a restatement of the other side's view. Writers given the recipe were rated by disagreeing readers as more receptive (beta .57),
+  better future collaborators (.28) and their replies as more persuasive (.24, a -3 to +3 slider rating of a written reply, not a change of attitude); the recipe made the task feel harder.
+  The unreceptive replies had more negations ("no", "wrong") and explanatory reasoning ("because", "why I"). "You" was a sign of understanding where speakers restated their partner's position
+  (a post-hoc observation, with the authors' own caution about actions versus beliefs). The review section says "conflict resolution practitioners advise engaging partisans in an exercise of
+  restating each other's positions" (Coltri 2010, second-hand) and that Chen, Minson & Tormala 2010 found an elaboration question made people more willing to talk with the counterpart again.
 - **Strength:** weak to moderate. Yeomans: the abstract says a "receptiveness recipe" made writers rated better
   collaborators and messages "more convincing" (Study 4), and receptive language early predicts less later escalation.
   Rapoport's Rules are an expert's rule of thumb (Dennett: engaging first makes the other "a more receptive audience"),
@@ -224,6 +265,10 @@ debate only as the contrast case.
   mock, or jeer at us" (II.2). Anger settles toward "those who are serious when we are serious", toward "those who admit their fault and are
   sorry", and toward those who "do not insult or mock" (II.3). **Limit:** this is Aristotle's account of how to stir or settle a hearer; the
   lessons use only the two directions (slights anger, seriousness and an honest sorry calm) and call them an untested account.
+- **Slight (II.2, reread 2026-10-21 for lesson 8):** "There are three kinds of slighting - contempt, spite, and insolence"; "The persons with whom we get angry are those who laugh, mock, or jeer at us,
+  for such conduct is insolent"; also "those who speak ill of us, and show contempt for us, in connexion with the things we ourselves most care about"; and those who "oppose us though they are our
+  inferiors" because "they seem to think us inferior to themselves". Lesson 8 uses only this: a line that mocks, jeers or shows contempt for the person is a slight. Calling someone "stupid" is
+  contempt by this account; no claim is made about anyone's ability.
 - **Argument (I.1-I.2):** the enthymeme (the short argument) "is, in general, the most effective of the modes of persuasion" (I.1) and is
   "the substance of rhetorical persuasion". It "must consist of few propositions"; a familiar fact need not be mentioned, "the hearer adds it
   himself" (I.2). Rhetoric addresses hearers who "cannot take in at a glance a complicated argument, or follow a long chain of reasoning";
@@ -346,3 +391,40 @@ type and the next reply, not definitions of terms.
   harm-focused and short.
 - **Review fixes (2026-10-21, after the lesson 4 and 5 reviews).** Lesson 5's cases are now moral disagreements (F6 covered moral disputes; nothing read shows the advantage for other disputes), and the hearing, small move, neither coding is stated in the lesson as ours. Lesson 4 says an omitted step must be a fact the listener really grants, gives no step count from Aristotle (the practice's two steps fine, five or six too many is ours), and has worked examples for the argument-did-not-land and two-things question types.
 - **Round 2 fixes (2026-10-21).** Lesson 4's "why it did not land" items now have You-lines of about the same length whatever the answer, and replies that show the reaction (lost where we are, a flat contradiction of the opening claim) without naming it. Lesson 5 no longer says "door-to-door" (the note holds only canvassers and voters), defines moral disagreement, attitudes and canvassers, calls the one-real-person-and-short shape ours (only issue-relevance and harm come from Kubin), and softens Aristotle's limit to "persuading". Lesson 4's anger line says "mocks or jeers at them", the wording the note holds. The learner-view printer shows slip codes; the real app prints each slip's text from the subject's list (`slipText` in `public/app/lessons/rules.js`, used in `item-view.js`).
+- **Round 3 fixes for lessons 4 and 5 (2026-10-21, after the third learner review; both lessons were deployed, so both are at revision 2).** The review found answer patterns, not wrong claims.
+  Lesson 4: "neither" always came with an emotional reply, so a practice question was added where "neither" goes with a reply that questions the speaker and a long You-line; the answer now reads
+  "Neither: the reply is about something else". Lesson 5: every hearing reply was "sorry ... but", so a hearing can come without "but" (Lena) and a brush-off can say "sorry" (Hal's phone); the
+  answer "Neither shows in what they said" now reads "Neither a hearing nor a move"; the false line in a story was always a changed number, so it is now sometimes an inference (a landlord's
+  motive) or an added feeling (a mother who "cried every night"), and the step says a hearing leaves their view unshifted "whether or not they say so". No claim changed.
+- **Lesson 6 (2026-10-21), "Restating, and asking for the reason".** Claims: (1) the best field test of listening (Santoro et al. 2025, full text; passages under F5): closely listening made the person
+  like and trust the canvasser more, feel more understood and less defensive, and added no persuasion to a story, at the time and five weeks later; one topic, strangers, a story as the only persuasive
+  method, video chats; the test did not look at facts or arguments. (2) Saying a view back fairly is advice: Rapoport's four steps as Dennett gives them (via The Marginalian; the book not read), and
+  conflict practitioners' restating exercise (Coltri 2010, second-hand through Yeomans et al.); **no test of restating alone was found**. The receptive wording that Yeomans et al. tested (say what you
+  understood, find agreement, soften, avoid "no" and "wrong") raised ratings of written replies by disagreeing readers online; those are ratings, not changed minds. (3) "How would that work?":
+  Sloman & Vives 2022 (abstract and introduction, as in F8; the full paper was behind a paywall and was not re-read) report that "some attempts to replicate this reduction of polarization have been
+  unsuccessful" and that understanding and extremity fall after explanation "only for consequentialist issues, not those based on protected values"; the lesson says "issues people judge by what
+  happens" and "a rule whatever happens" for those two terms, which is a plain-words paraphrase. Meyer et al. 2024: reflecting on reasons lowered belief on average in a survey but not for high
+  conspiracy thinking; street epistemology "only anecdotal support". Fernbach et al. 2013 was not read. **Ours, said in the lesson and not a finding:** sorting a view into what they think would
+  happen, a line they will not cross, or a figure someone could check; the test "would they keep the view if the thing they fear did not happen?"; and the check that a restatement says only what they
+  said (a motive, a stronger word, a claim not made). **Graded:** the reading of a view and the tap on a line of a restatement that is beyond their words (both read from the words given). **Not
+  claimed:** any effect of restating or asking on a family argument; that a line they will not cross can be moved by anything; any use of Fisher & Ury or Gottman (not read).
+- **Lesson 7 (2026-10-21), "Which true experience to share".** Kubin et al. 2021 full text (F6): the three differences the studies compared (about the issue; harm in it; who it happened to) and the
+  advantage for moral disagreement only; respect and perceived rationality, not persuasion; US samples; the opponent based their own stance on the experience. **Graded:** which of three true things
+  that happened to the learner the studies rank highest, written so that one option is better than the others on every difference (some answers chain two studies: a relevant no-harm experience beat
+  facts in Study 8 and an unrelated one equalled facts in Study 7). **Ours:** "keep it short" (length untested), a story about someone close to you (Kubin's opponents spoke of their own or a friend's
+  or relative's experience; telling it as the reason for your own stance is the studies' form), keeping every line true. **Dropped from the plan:** "plus one fact" (the authors' speculation only) and
+  "non-judging" as an ingredient (Santoro: listening added nothing to a story). Moral versus nonmoral is taught as the edge of the finding (Study 13) and not graded; the cases are political or moral
+  disagreements.
+- **Lesson 8 (2026-10-21), "Replies that work against you".** The plan's bad moves (mocking, calling someone stupid, dumping facts, the invented story) were reshaped: the long chain (Aristotle I.2),
+  the start the hearer does not grant (I.2) and the stretched story (Aristotle I.1; Van Bavel et al.'s published comment, F6) are already in lessons 4 and 5, and a restatement with something added is
+  lesson 6's check. What the evidence adds is Aristotle's account of a slight (II.2, quoted under F9) and that calm comes toward those who "do not insult or mock" (II.3). **Graded:** which of three
+  replies to one last line does one of the five things (a slight; five steps in a row; a start they have said they do not accept; a story stretched past the facts given; a restatement with something
+  added); the other two are fine, and a blunt line aimed at their point is fine. **Ours:** that five steps is too many (Aristotle gives no number), and the check of a draft. **Not claimed:** that any
+  of these moves has been tested in a talk like yours; that "stupid" is false or true.
+- **Lesson 9 (2026-10-21), "Checking your own side".** Mercier & Sperber full text and Wolfe's commentary (passages under F3). **Graded:** in a note that states its own test and applies it to two
+  sources, the line that stops using the test, or that none does (the facts in the case decide, and eight of twenty notes keep to the test, some with different verdicts the facts justify). The task is
+  a consistency check inside a text, so it rests on the studies only as the reason to run the check. **Ours, said in the lesson and not graded:** write down the test used on the side you doubt and
+  hold the side you like to it; show your reasons to someone with nothing riding on it. **Not claimed:** that the person you disagree with is a fair judge; any claim about numeracy or ability (Kahan's
+  full text was not read; F4 is not used); that holding to one test improves accuracy (nothing read tests it).
+- **Pass marks for lessons 6 to 9** (7 of 8) are judgement calls with no source.
+- **Fixes after the Unit 3 reviews (2026-10-21).** Lesson 6: every restatement has four lines whatever its answer (line count gave it away); "the best field test" is now "a large field test" (the note's own judgement, not a source's); "how would that work?" is kept apart from reflecting on reasons (Meyer's survey is a different move; the reviewer reports Fernbach's original found no effect when people only listed reasons, which was not read here). Lesson 7: Study 9's pairwise tests were not available (the main text gives F(4,403) = 4.79 and three means only; the supplement could not be fetched), so who it happened to is taught as a pattern and never graded, every option in an item happened to the same person, and the ranking items were replaced; topics are "mostly guns", the blender result is one study (13), and nationality is "American as far as the paper says"; every right story is on the teller's side. Lesson 8: calm or warm replies can be the damaging ones and blunt or stark replies can be fine, so the five tests, not tone, decide. Lesson 9: "and they find some" is dropped (M&S say the time is "mostly devoted to finding counterarguments"); one line says a consistent test is not a sound test; "let the other person find them" is about the person you are arguing with, and "someone with no stake" is ours.

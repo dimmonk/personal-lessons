@@ -104,6 +104,10 @@
       ['s1', 'You: "The fee pays for drains, drains stop flooding, flooding cracks asphalt, cracked asphalt costs the city repairs, repairs drain the same fund, so the fee ends up saving money."'],
       ['s2', 'Hugh: "Sorry, you went from drains to asphalt to the fund and I lost where we are."']], ['s1', 's2'],
       'Hugh says he lost where you were.'),
+    built('b4-neither', 'neither', 'You want your neighbor Ms. Reyes to back a $25 fee to trim the street trees.', [
+      ['s1', 'You: "The big maple dropped a limb on a parked car last spring, and a trimming crew costs $25 a household for the whole street. Trimming now costs far less than a limb through a windshield."'],
+      ['s2', 'Ms. Reyes: "Who asked you to push this? Is the tree company paying you?"']], ['s2'],
+      'Ms. Reyes wants to know who put you up to it and whether the tree company pays you.'),
     built('b4-start', 'start', 'You want your coworker Nora to approve the rollout of the new billing software.', [
       ['s1', 'You: "The pilot at the Dayton site ran flawlessly, so there is no reason our rollout will be rough. Billing will be fine, and everyone will be trained by April."'],
       ['s2', 'Nora: "That Dayton pilot crashed twice in its first week, from what I read."']], ['s1', 's2'],

@@ -19,8 +19,9 @@ type before I answered") is welcome but not scored (D4).
 2. **Expect a small move, not a win.** Corrections usually move people at least somewhat, then the gains often fade; what blocks is often a link
    between the claim and the person's group (Nyhan), and arguments alone did nothing in the best field test on immigration (F2, F5). No claim about ability.
 3. **Lower the stakes before you argue** (an inference from F3, with weak support from F7/F8, not a finding). Restate their view fairly, ask for their reasons; a person with an opinion to defend
-   treats your argument as one to rebut, and only someone with no axe to grind judges it fairly (F3, F7, F8). Careful listening
-   improved how the persuader was seen but added no persuasion to a story (F5, Santoro et al. 2025).
+   treats your argument as one to rebut, and only someone with no axe to grind judges it fairly (F3, F7, F8). The best field test of careful listening (Santoro et al. 2025, read in full
+   2026-10-21) found it made the persuader better liked and trusted, made the listener feel understood and less defensive, and added no persuasion to a story, so listening is taught
+   for how you are seen, not as a way to persuade (F5).
 4. **Use all three means, honestly.** Be credible, mind their state, keep the argument short; in one set of studies on moral disagreements personal experience
    earned more respect than facts (F6; respect is not persuasion; nothing read shows it for other disputes), and a shared story moved views a little where arguments alone did not (F5).
 5. **Let someone with no stake test your own side.** People who argue a side look for support for it, and people with no axe to grind judge arguments well, so the check on your reasons is someone with nothing at stake (F3; an inference from a passage about judging others' arguments, marked in the note).
@@ -36,13 +37,13 @@ type before I answered") is welcome but not scored (D4).
 - **Argumentation theory / dialogue types:** lesson 1 (F1). "A show for an audience" was dropped as a kind: it was the lessons'
   own category, and Walton's only audience type is Debate (a formal contest to persuade a third party), which he treats with
   political debate as a mixed talk (F1). **Backfire effect:** lesson 2, as a myth (F2). **Identity
-  and motivated reasoning:** lessons 2 and 9 (F3, F4). **Deep canvassing:** lesson 7, small effect stated (F5).
-- **Street epistemology / Socratic questions:** lesson 6, limits stated; brand dropped (F8). **Competitive debate and
+  and motivated reasoning:** lessons 2 and 9 (F3, F4). **Deep canvassing:** lessons 5 and 7, small effect stated (F5).
+- **Street epistemology / Socratic questions:** lesson 6, limits stated (only stories and one survey behind it; "how would that work?" lowered rated understanding in some tests and not in all, and only on issues judged by what happens); brand dropped (F8). **Competitive debate and
   pragma-dialectics rules:** dropped, reasons in research note section 2 (judgement call).
 - Cases are set in everyday US situations; no claim about Canada versus US norms (nothing read supports one).
 
 ## Lessons (Unit 1 to 4), each with its check and source
-*Built 2026-10-20, rebuilt 2026-10-21 after two failed rounds of fresh reviews (docs/subjects/debating/review-*.md). In the data one unit holds one
+*Built 2026-10-20, rebuilt 2026-10-21 (lessons 4 to 9 added the same day as drafts; lessons 4 and 5 reworded after their third review) after two failed rounds of fresh reviews (docs/subjects/debating/review-*.md). In the data one unit holds one
 lesson (validator V71 refuses two lessons for one part), so the ten lessons below are ten units in the app; the four groups here are the
 plan's grouping, kept in the subject record's `units`. What changed at the root: lesson 1 now teaches Walton and Krabbe's six kinds, each case
 holds its own cue so one answer holds, and a talk that changes kind is asked by the line where it changes; lesson 2 teaches a way of deciding (read the cause behind the pushback, pick the move the studies back) with four parallel statements that never differ in tone or length; lesson 3 turns on what the other person does in the last
@@ -74,16 +75,32 @@ lines (answers, hits at you, threatens or blocks, comes back after a change of s
    invented stories: F6 commentary, Aristotle I.1). The cases are moral disagreements, because the personal-experience studies covered those (F6); reading a reply as a hearing, a small move or neither is the lesson's own coding, said so. Check: 8 new questions, 7 right. What makes a story relevant, short and harm-focused stays
    in lesson 7. Source F5, F6, F9.
 
-**Unit 3: The moves**
-6. *Restate, then ask for the reason.* Fair restatement; "how would that work?" and "how sure are you?"; when they do
-   not work (sacred values, deep belief). Check: choose or write the restatement, then the question, in 8 cases. Source
-   F7 (marked practice-based), F8, F3; P19.
-7. *Share one true experience.* Relevant, harm-focused, short, non-judging; plus one fact. Check: pick or build the
-   reply from options in 8 cases. Source F5, F6.
-8. *The bad moves.* Look-alikes: mocking, labelling "stupid", fact-dumping, the invented story. Check: spot the move in
-   8 replies and replace it. Source F2, F5, F6, F10; P12, P29.
-9. *Check your own side.* Where your own reasoning leans toward your side; let someone else test it (F3, an inference). Check: 6
-   cases, find the myside move. Source F3, F4.
+**Unit 3: The moves** *(built 2026-10-21 as drafts; all four lessons reshaped by the evidence, now read in full: Santoro et al. 2025, Kubin et al. 2021, Mercier & Sperber 2011, Yeomans et al. 2020)*
+6. *Restating, and asking for the reason.* What listening got in the best field test (liking, trust, feeling understood, less defensiveness, and no persuasion added to a story),
+   a fair restatement (nothing added to what they said), and the question "How would that work?" with its limits. Two decisions, each its own question: read what their view rests on
+   (what they think would happen; a line they will not cross, where they grant the result or pass it by and keep the view; a figure or date someone could check), and tap the line of
+   a restatement that says more than they said (or say nothing is added). Check: 8 new questions, 7 right. **Changed from the plan** ("choose or write the restatement, then the
+   question"): (a) listening added no persuasion to a story in the best field test, so it is taught for how you are seen; (b) restating alone has no test (Rapoport's four steps as
+   Dennett gives them, practice-based; Yeomans's recipe is four wording markers, which raised ratings of written replies, not minds), so only the fairness of a restatement against the
+   person's words is graded, and it is the lesson's own check; (c) "how would that work?" is graded only as a reading of what a view rests on, because the tests found the drop only on
+   issues judged by what happens and some repeats failed; (d) "how sure are you?" is dropped (one online survey; street epistemology has only anecdotes). Source F5, F7, F8.
+7. *Which true experience to share* (was "Share one true experience"). Kubin et al. compared experiences that differ in three ways (about the issue itself; harm in it; who it happened
+   to), the advantage held for moral disagreements and not for ordinary matters, and the outcome was respect, not persuasion. The practice is one decision: of three true things that
+   happened to you, which the studies rank highest on the two pairwise differences (about the issue; harm); who it happened to is taught as a pattern and not graded (Study 9's pairwise tests were not available). Check: 8 new questions, 7 right. **Changed from the plan** ("relevant, harm-focused, short, non-judging; plus one fact"):
+   "plus one fact" is dropped (the authors only guess that facts could follow experiences), "non-judging" is not taught as an ingredient (listening added nothing to a story,
+   Santoro), "short" stays as the lesson's own advice (length was not tested). Source F6.
+8. *Replies that work against you* (was "The bad moves"). **Changed from the plan** ("mocking, labelling stupid, fact-dumping, the invented story"): the invented story, the long
+   chain and the restatement with something added are already taught in lessons 4 to 6; "stupid" as a label has no test and the research note makes no claim about ability. What the
+   evidence does give is Aristotle's account of a slight (mocking, jeering and contempt anger people, II.2; calm comes toward those who do not mock, II.3). So the lesson is the
+   look-alike practice (P12) and a second pass on the earlier lessons (P22) in your own writing: three replies to the same last line, one works against you (a slight; five steps in a
+   row; a start they do not accept; a story stretched past what happened; a restatement with something added); the other two are fine, blunt or warm, long or short. Check: 8 new
+   questions, 7 right. Source F9, F6 commentary, lessons 4 to 6.
+9. *Checking your own side.* People with an opinion to defend look mainly for arguments for it and rate near-identical studies as better done when they agree (Mercier & Sperber,
+   read in full), with the counterweight stated (groups that disagree and want the right answer do well; a lab researcher's commentary reports the one-sided habit in people arguing a
+   side they do not hold, and better ratings for arguments that meet the other side). The practice is one decision: in a note that states its own test and applies it to two sources,
+   tap the line that stops using it, or say none does (the lesson's way of making the check visible; 12 of 20 notes break it, 8 keep it, some with different verdicts that the
+   facts justify). Showing your reasons to someone with nothing riding on it is the lesson's own inference, untested, said so and not graded. Check: 8 new notes, 7 right.
+   Source F3 (the plan's "an inference" is now backed by M&S's "easier to let the other person find" the flaws; still not a tested method), F4 not used (abstracts only).
 
 **Unit 4: Put it together**
 10. *Mixed live exchanges.* Multi-turn cases: type, goal, then each next move, feedback names what decided. Check: the

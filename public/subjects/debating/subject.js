@@ -1,17 +1,19 @@
 // Debating: subject record (lesson standard 3). Its plan is docs/subjects/debating/plan.md and its sources are docs/research/debating.md. The way of
 // thinking is: name the kind of conversation first (what it started from, what each person is trying to get, what would count as done, and whether it has changed), expect a small
 // move and not a win, and pick keep going, change the subject or leave by what the other person is doing. A part is one lesson (V71), so the plan's ten lessons are ten parts, grouped into the
-// plan's four units; only the first five parts are built, and the subject screen lists the rest as not built.
+// plan's four units; only the first nine parts are built, and the subject screen lists the last as not built.
 FC.subject('debating', {
   name: "Debating",
   field: "communication",
-  rev: 2,
+  rev: 3,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-21",
       change: "First version, on the research note (docs/research/debating.md), rebuilt after two failed reviews: the record holds what the first three lessons need (Walton and Krabbe's six kinds of conversation with no 'show', what facts do and why people hold on, keep going or change the subject or leave, and the slips each lesson names). The end result says 'early in a disagreement' and not 'in the first minute'." },
     { rev: 2, date: "2026-10-21",
-      change: "Lessons 4 and 5 added (Aristotle's three means read as what a reply puts in question; what a true story gets you). Part 5 is retitled 'What a true story gets you': the plan's 'why a fact alone fails' contradicted the corrected research (a correction works somewhat on a checkable fact). New slips, facets and topics for the two lessons." }
+      change: "Lessons 4 and 5 added (Aristotle's three means read as what a reply puts in question; what a true story gets you). Part 5 is retitled 'What a true story gets you': the plan's 'why a fact alone fails' contradicted the corrected research (a correction works somewhat on a checkable fact). New slips, facets and topics for the two lessons." },
+    { rev: 3, date: "2026-10-21",
+      change: "Lessons 6 to 9 added (what listening and restating got in the field tests, how to check a restatement, and the question 'how would that work?'; which true experience to tell; replies that work against you; checking your own side with one test). Part 7 is retitled 'Which true experience to share' and part 8 'Replies that work against you': the studies compare experiences that differ in relevance and harm (who it happened to is taught but not graded), and the plan's bad moves were already taught in lessons 4 and 5. New slips, facets and topics. Lessons 4 and 5 were reworded after their third review (answer patterns)." }
   ],
   endResult: "After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.",
   parts: [
@@ -21,8 +23,8 @@ FC.subject('debating', {
     { id: "4", title: "Character, emotion, argument" },
     { id: "5", title: "What a true story gets you" },
     { id: "6", title: "Restate, then ask for the reason" },
-    { id: "7", title: "Share one true experience" },
-    { id: "8", title: "The bad moves" },
+    { id: "7", title: "Which true experience to share" },
+    { id: "8", title: "Replies that work against you" },
     { id: "9", title: "Check your own side" },
     { id: "10", title: "Mixed live exchanges" }
   ],
@@ -73,7 +75,16 @@ FC.subject('debating', {
       { id: "took-for-hearing", text: "took a shift in their view, or a brush-off, for a hearing that changed nothing" },
       { id: "took-for-move", text: "took a hearing, or a brush-off, for a changed mind" },
       { id: "took-for-nothing", text: "saw nothing in a talk that got a hearing or a small move" },
-      { id: "flagged-true", text: "flagged a line of the story that was true" }
+      { id: "flagged-true", text: "flagged a line of the story that was true" },
+      { id: "read-as-result", text: "took a view for one that rests on what would happen" },
+      { id: "read-as-line", text: "took a view for a line they will not cross" },
+      { id: "read-as-figure", text: "took a view for a figure someone could check" },
+      { id: "flagged-fair", text: "flagged a line of the restatement that said what they said" },
+      { id: "chose-unrelated", text: "chose an experience that is not about the issue" },
+      { id: "chose-no-harm", text: "chose an experience with no harm in it" },
+      { id: "chose-statistic", text: "chose a statistic over an experience of your own" },
+      { id: "flagged-fine", text: "flagged a reply that was fine" },
+      { id: "flagged-same", text: "flagged a line that kept to the note's own test" }
     ]
   },
   // how the questions are sorted on the results screen: the kind of conversation, and the move
@@ -116,6 +127,31 @@ FC.subject('debating', {
     telling: { name: "Your story, line by line", compare: true, values: [
       { id: "true", text: "every line true" },
       { id: "invented", text: "a line you could not say" }
+    ] },
+    rest: { name: "What their view rests on", compare: true, values: [
+      { id: "result", text: "what they think would happen" },
+      { id: "line", text: "a line they will not cross" },
+      { id: "figure", text: "a figure someone could check" }
+    ] },
+    restated: { name: "Your restatement", compare: true, values: [
+      { id: "fair", text: "says only what they said" },
+      { id: "added", text: "says more than they said" }
+    ] },
+    experience: { name: "Which experience to tell", compare: true, values: [
+      { id: "issue", text: "one about the issue itself" },
+      { id: "harm", text: "one with harm in it" },
+      { id: "story", text: "an experience, not a statistic" }
+    ] },
+    problem: { name: "What works against you", compare: true, values: [
+      { id: "slight", text: "a line that looks down on them" },
+      { id: "long", text: "too many steps in a row" },
+      { id: "stretched", text: "a story stretched past what happened" },
+      { id: "added", text: "a restatement with something added" },
+      { id: "start", text: "a start they do not accept" }
+    ] },
+    standard: { name: "Whether one test is used for both", compare: true, values: [
+      { id: "same", text: "the same test throughout" },
+      { id: "broken", text: "a line that drops the test" }
     ] }
   },
   mix: [],
@@ -124,7 +160,11 @@ FC.subject('debating', {
     { id: "why-dig-in", title: "Why people dig in" },
     { id: "when-to-stop", title: "Your goal, and when to leave" },
     { id: "three-means", title: "Character, emotion, argument" },
-    { id: "true-story", title: "What a true story gets you" }
+    { id: "true-story", title: "What a true story gets you" },
+    { id: "fair-listening", title: "Restating, and asking for the reason" },
+    { id: "true-experience", title: "Which true experience to share" },
+    { id: "bad-moves", title: "Replies that work against you" },
+    { id: "own-side", title: "Checking your own side" }
   ],
   readingShare: 0.35
 });

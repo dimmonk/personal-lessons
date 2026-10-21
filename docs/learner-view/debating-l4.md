@@ -1,6 +1,6 @@
 # Debating: Character, emotion, argument
 
-Revision 1, draft (the screen carries the draft line). Part: Character, emotion, argument. Where the subject ends up: After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.
+Revision 2, draft (the screen carries the draft line). Part: Character, emotion, argument. Where the subject ends up: After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.
 
 ## The why
 
@@ -66,7 +66,7 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 (the options come in an order that depends on the seed of the question)
 - It was too long to follow.
 - It started from something they do not accept.
-- Neither: the reply is not about how it was built.
+- Neither: the reply is about something else.
 
 The working, one step at a time:
 1. Read what the reply goes at. Rosa does not reject a claim and does not talk about herself. She says she lost you at the lawsuit.
@@ -157,7 +157,7 @@ Then a screen: you can stop here, your place is kept.
 
 ## Step 10: Questions
 
-5 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+6 questions, shuffle. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
 #### Item 4
 
@@ -219,7 +219,7 @@ You: "The fee pays for drains, drains stop flooding, flooding cracks asphalt, cr
 (the options come in an order that depends on the seed of the question)
 - It was too long to follow. (right)
 - It started from something they do not accept. — if chosen: a slip: read-start
-- Neither: the reply is not about how it was built. — if chosen: a slip: read-neither
+- Neither: the reply is about something else. — if chosen: a slip: read-neither
 
 After the answer: the deciding words are marked. Reason: Hugh says he lost where you were. The reply says the steps were too many to follow. Aristotle says a long chain of reasoning is hard to follow, so an argument should have few steps.
 
@@ -233,9 +233,23 @@ You: "The pilot at the Dayton site ran flawlessly, so there is no reason our rol
 (the options come in an order that depends on the seed of the question)
 - It was too long to follow. — if chosen: a slip: read-length
 - It started from something they do not accept. (right)
-- Neither: the reply is not about how it was built. — if chosen: a slip: read-neither
+- Neither: the reply is about something else. — if chosen: a slip: read-neither
 
 After the answer: the deciding words are marked. Reason: Nora says the pilot you rely on crashed twice. The reply refuses where the argument began. Aristotle says reasoning from a starting point people do not accept fails to win them. Start from something they already grant.
+
+#### Item 9
+
+You want your neighbor Ms. Reyes to back a $25 fee to trim the street trees.
+
+You: "The big maple dropped a limb on a parked car last spring, and a trimming crew costs $25 a household for the whole street. Trimming now costs far less than a limb through a windshield." Ms. Reyes: "Who asked you to push this? Is the tree company paying you?"
+
+**Why did the argument not land?**
+(the options come in an order that depends on the seed of the question)
+- It was too long to follow. — if chosen: a slip: read-length
+- It started from something they do not accept. — if chosen: a slip: read-start
+- Neither: the reply is about something else. (right)
+
+After the answer: the deciding words are marked. Reason: Ms. Reyes wants to know who put you up to it and whether the tree company pays you. The argument was short and began from something they would grant, and the reply does not go at it. It is about something else.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -246,7 +260,7 @@ Then a screen: you can stop here, your place is kept.
 To pass:
 - At least 7 right
 
-#### Check question 9
+#### Check question 10
 
 You tell your friend Lou that restaurants should stop adding the tip for big groups. You have never worked in a restaurant.
 
@@ -260,7 +274,7 @@ You: "Customers feel tricked when a tip shows up on the bill." Lou: "Not exactly
 
 After the answer: the deciding words are marked. Reason: Lou says it is not your field and wonders why anyone should take your word. The reply is about you: your sense, your honesty or whether you are on their side. More reasons would skip it. Aristotle says trust is built by what the speaker says, so the next line has to show good sense, honesty or goodwill.
 
-#### Check question 10
+#### Check question 11
 
 You and your sister Kay disagree about selling Dad's truck.
 
@@ -274,7 +288,7 @@ You: "It is worth about $9,000, and it sits in the driveway." Kay: "Ugh. Everyth
 
 After the answer: the deciding words are marked. Reason: Kay says her chest is tight and wants to drop it. The reply says how they feel, and says nothing against your reasons. Aristotle says people judge differently when pained or hostile than when pleased and friendly, so reasons will not be weighed fairly yet. What calms, in his account: being taken seriously, no mocking, a sorry where you owe one. That is a philosopher's account, not a tested method.
 
-#### Check question 11
+#### Check question 12
 
 You tell Ms. Ortiz, a library board member, that evening hours would bring in more readers.
 
@@ -288,7 +302,7 @@ You: "Two branches that opened late saw more visits." Ms. Ortiz: "Two branches i
 
 After the answer: the deciding words are marked. Reason: Ms. Ortiz questions the two branches and what else changed. The reply goes at the reasons, a step or a number, and says nothing about you or about how they feel. The answer is the argument: a step or two, from something they already accept.
 
-#### Check question 12
+#### Check question 13
 
 Your coworker Ana questions the budget numbers you shared.
 
@@ -302,7 +316,7 @@ You: "Here is the budget. Spending rose four percent." Ana: "The table skips las
 
 After the answer: the deciding words are marked. Reason: Ana says the table skips a year, and then says the vendor pays you. One part questions you, and the other goes at the reasons. The reply says nothing of how they feel.
 
-#### Check question 13
+#### Check question 14
 
 You tell your uncle Rob that a teen curfew lowered break-ins in two towns.
 
@@ -316,7 +330,7 @@ You: "Two towns saw break-ins fall after a curfew." Rob: "You don't even have ki
 
 After the answer: the deciding words are marked. Reason: Rob says you have no kids, and then says he is too angry to listen. One part questions you, and the other says how they feel. The trust part and the feeling part each need their own answer, and the argument is not in question.
 
-#### Check question 14
+#### Check question 15
 
 You are explaining to your aunt Vi why her library branch should stay open.
 
@@ -326,11 +340,11 @@ You: "People read here, reading raises scores, scores raise home values, values 
 (the options come in an order that depends on the seed of the question)
 - It was too long to follow. (right)
 - It started from something they do not accept. — if chosen: a slip: read-start
-- Neither: the reply is not about how it was built. — if chosen: a slip: read-neither
+- Neither: the reply is about something else. — if chosen: a slip: read-neither
 
 After the answer: the deciding words are marked. Reason: Vi says she has lost the thread at the taxes. The reply says the steps were too many to follow. Aristotle says a long chain of reasoning is hard to follow, so an argument should have few steps.
 
-#### Check question 15
+#### Check question 16
 
 You are telling your friend Tom to skip the extended warranty on his new washer.
 
@@ -340,11 +354,11 @@ You: "Those warranties are all scams, because the company pockets the fee and ne
 (the options come in an order that depends on the seed of the question)
 - It was too long to follow. — if chosen: a slip: read-length
 - It started from something they do not accept. (right)
-- Neither: the reply is not about how it was built. — if chosen: a slip: read-neither
+- Neither: the reply is about something else. — if chosen: a slip: read-neither
 
 After the answer: the deciding words are marked. Reason: Tom says a warranty paid for his brother-in-law's washer, which breaks "never pays a claim". The reply refuses where the argument began. Aristotle says reasoning from a starting point people do not accept fails to win them. Start from something they already grant.
 
-#### Check question 16
+#### Check question 17
 
 You tell your neighbor Mr. Lang the drain fee is worth $40.
 
@@ -354,12 +368,12 @@ You: "The drains flooded our street twice last year, and the fee pays to clear t
 (the options come in an order that depends on the seed of the question)
 - It was too long to follow. — if chosen: a slip: read-length
 - It started from something they do not accept. — if chosen: a slip: read-start
-- Neither: the reply is not about how it was built. (right)
+- Neither: the reply is about something else. (right)
 
 After the answer: the deciding words are marked. Reason: Mr. Lang says his basement flooded and he is still sick over it. The argument was short and began from something they would grant, and the reply does not go at it. It is about something else.
 
 ## The result
 
-Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time). The same is shown at the end of the weekly review.
+Under the rules, the facets the subject compares are shown side by side: "The kind of conversation" (persuading beside deciding together beside bargaining beside finding out together beside asking beside a quarrel beside a talk that changed kind, each as "n of m" right the first time); "What the disagreement is about" (a fact someone could check beside a view about a group or a policy beside a fact and a view, mixed, each as "n of m" right the first time); "The right move" (keep going beside change the subject beside leave the talk, each as "n of m" right the first time); "What their reply is about" (whether they can trust you beside how they feel beside the argument itself beside two of these at once, each as "n of m" right the first time); "Why the argument did not land" (too long to follow beside started from something they do not accept beside neither: the reply was about something else, each as "n of m" right the first time); "What your story got you" (a hearing beside a small move beside neither, each as "n of m" right the first time); "Your story, line by line" (every line true beside a line you could not say, each as "n of m" right the first time); "What their view rests on" (what they think would happen beside a line they will not cross beside a figure someone could check, each as "n of m" right the first time); "Your restatement" (says only what they said beside says more than they said, each as "n of m" right the first time); "Which experience to tell" (one about the issue itself beside one with harm in it beside what happened to you, not someone else beside an experience, not a statistic, each as "n of m" right the first time); "What works against you" (a line that looks down on them beside too many steps in a row beside a story stretched past what happened beside a restatement with something added beside a start they do not accept, each as "n of m" right the first time); "Whether one test is used for both" (the same test throughout beside a line that drops the test, each as "n of m" right the first time). The same is shown at the end of the weekly review.
 
 For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.

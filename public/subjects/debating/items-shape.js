@@ -62,16 +62,38 @@ const dbPickFrom = (texts, slipOf, right, prompt, then, id) => ({ id, kind: 'cho
 const dbMeansAsk = (right, then) => dbPickFrom(DB_MEANS_TEXT, key => DB_MEANS_SLIP[key], right, 'What is their reply about?', then, 'means');
 const dbPairAsk = (right, then) => dbPickFrom(DB_PAIR_TEXT, () => 'wrong-pair', right, 'Their reply is about two of these. Which two?', then, 'means');
 // the argument you gave did not land: too long to follow, started from something they do not accept, or neither (the reply is about something else)
-const DB_BUILD_TEXT = { length: 'It was too long to follow.', start: 'It started from something they do not accept.', neither: 'Neither: the reply is not about how it was built.' };
+const DB_BUILD_TEXT = { length: 'It was too long to follow.', start: 'It started from something they do not accept.', neither: 'Neither: the reply is about something else.' };
 const DB_BUILD_SLIP = { length: 'read-length', start: 'read-start', neither: 'read-neither' };
 const dbBuildAsk = (right, then) => dbPickFrom(DB_BUILD_TEXT, key => DB_BUILD_SLIP[key], right, 'Why did the argument not land?', then, 'build');
 // the first line of your own reply, written against a model and never scored
 const dbWriteAsk = model => ({ id: 'say', kind: 'text', prompt: 'Write the first line of your reply.', model });
 
 // lesson 5: what a true story got you, read from the other person's last lines (a hearing, a small move or neither); and the check of your own story, line by line
-const DB_RESULT_TEXT = { hearing: 'A hearing: they took you seriously, and their view did not move.', move: 'A small move: part of their view shifted.', neither: 'Neither shows in what they said.' };
+const DB_RESULT_TEXT = { hearing: 'A hearing: they took you seriously, and their view did not move.', move: 'A small move: part of their view shifted.', neither: 'Neither a hearing nor a move.' };
 const DB_RESULT_SLIP = { hearing: 'took-for-hearing', move: 'took-for-move', neither: 'took-for-nothing' };
 const dbResultAsk = (right, then) => dbPickFrom(DB_RESULT_TEXT, key => DB_RESULT_SLIP[key], right, 'What did your story get you?', then, 'result');
 // a story you plan to tell, line by line: tap the one you could not honestly say, or say that every line is true. A true line tapped by mistake says it matches what happened.
 const dbDraft = (falseId, ...rows) => dbTalk(...rows.map(([id, text]) => id === falseId ? [id, text] : [id, text, 'This line matches what happened.', 'flagged-true']));
 const dbTrueAsk = falseId => ({ id: 'true', kind: 'tap', prompt: 'Tap the line you could not honestly say.', in: 'talk', right: falseId ? [falseId] : 'none', none: 'Every line is true.' });
+
+// lesson 6: what their view rests on, read from their words (what they think would happen, a line they will not cross, or a figure someone could check; the lesson's own reading, said so),
+// and a restatement of their words, line by line: tap the line that says more than they said, or say nothing is added. The three answers are written once, to one form.
+const DB_REST_TEXT = { result: 'What they think would happen.', line: 'A line they will not cross, whatever happens.', figure: 'A figure or date someone could check.' };
+const DB_REST_SLIP = { result: 'read-as-result', line: 'read-as-line', figure: 'read-as-figure' };
+const dbRestAsk = (right, then) => dbPickFrom(DB_REST_TEXT, key => DB_REST_SLIP[key], right, 'What does their view rest on?', then, 'rest');
+// a draft in which a line can be tapped: `note` and `slip` go on every line that is fine, so a tap on one says it is fine
+const dbMarked = (note, slip) => (badId, ...rows) => dbTalk(...rows.map(([id, text]) => id === badId ? [id, text] : [id, text, note, slip]));
+const dbRestated = dbMarked('This line says what they said.', 'flagged-fair');
+const dbRestateAsk = badId => ({ id: 'restated', kind: 'tap', prompt: 'Tap the line that says more than they said.', in: 'talk', right: badId ? [badId] : 'none', none: 'Nothing is added.' });
+
+// lesson 7: which true experience to tell (Kubin et al. 2021, docs/research/debating.md, F6): three or four things that happened, one that is about the issue, involves harm and
+// happened to you (or, where the choice is between those, is the one the studies rank higher). A pick among the experiences written for the one question; each wrong pick names the
+// difference the studies found (unrelated to the issue, no harm in it, happened to someone else, a statistic instead).
+const dbShareAsk = rows => dbPick('share', 'Which one do you tell?', rows);
+
+// lesson 8: three replies to the same last line; one works against you. The wrong picks are the replies that are fine.
+const dbBadAsk = rows => dbPick('bad', 'Which reply works against you?', rows.map(([text, bad]) => [text, bad ? true : 'flagged-fine']));
+
+// lesson 9: a note that sets its own test and then applies it; tap the line that stops using it, or say every line keeps to it. The lines that keep to the test carry a note and a slip.
+const dbEvenNote = dbMarked('This line keeps to the note\'s own test.', 'flagged-same');
+const dbEvenAsk = breakId => ({ id: 'same', kind: 'tap', prompt: 'Tap the line that stops using the note\'s own test.', in: 'talk', right: breakId ? [breakId] : 'none', none: 'Every line keeps to it.' });

@@ -5,8 +5,9 @@
 // the teaching), asked as one of three, as a pair when the reply is about two, and, for arguments, too long to follow, started from something they do not accept, or neither. What to say
 // next is written against a model line and never scored. Plan: docs/subjects/debating/plan.md.
 FC.lesson('debating', {
-  id: 'l4', part: '4', title: 'Character, emotion, argument', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-21', change: 'First version, on Aristotle\'s Rhetoric (I.1, I.2, II.1 to II.3, read in full): the three means, what builds trust (good sense, honesty, goodwill, shown in what is said), how feelings change judgment and what calms or angers, and a short argument from what the hearer accepts. The practice reads what the other person\'s reply puts in question; the writing of the next line is not scored.' }],
+  id: 'l4', part: '4', title: 'Character, emotion, argument', rev: 2, status: 'draft',
+  history: [{ rev: 1, date: '2026-10-21', change: 'First version, on Aristotle\'s Rhetoric (I.1, I.2, II.1 to II.3, read in full): the three means, what builds trust (good sense, honesty, goodwill, shown in what is said), how feelings change judgment and what calms or angers, and a short argument from what the hearer accepts. The practice reads what the other person\'s reply puts in question; the writing of the next line is not scored.' },
+    { rev: 2, date: '2026-10-21', change: 'After the third learner review: the "neither" answer now reads "Neither: the reply is about something else", and a practice question was added in which "neither" goes with a reply that questions the speaker (and a long You-line), so "neither" no longer always comes with a feeling.' }],
   why: [
     'At a block meeting you give your neighbor Carl reasons for a $15 fee increase. He answers, "Funny, coming from someone who has lived here two years." You could give him another reason. It would not land, because his reply was not about your reasons.',
     'In about fifteen minutes you will learn Aristotle\'s three things that persuade, how to tell which one a reply is about, and what makes an argument easy to follow.'
@@ -49,7 +50,7 @@ FC.lesson('debating', {
     { worked: 'w4-build' },
     { worked: 'w4-pair' },
     { set: { items: ['a4-ravi', 'a4-walt', 'a4-beth'], order: 'listed' } },
-    { set: { items: ['b4-joy', 'b4-lu', 'b4-mike', 'b4-long', 'b4-start'], order: 'shuffle' } }
+    { set: { items: ['b4-joy', 'b4-lu', 'b4-mike', 'b4-long', 'b4-start', 'b4-neither'], order: 'shuffle' } }
   ],
   check: {
     items: ['c4-trust', 'c4-feeling', 'c4-arg', 'c4-p1', 'c4-p2', 'c4-long', 'c4-start', 'c4-neither'],

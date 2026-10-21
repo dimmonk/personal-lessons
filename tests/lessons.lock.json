@@ -6,8 +6,8 @@
       "fp": "sha256:70b7bd730685ae5f0f9fd0ad26859aa84e06d23cf1467a9afed12d4c771543a7"
     },
     "debating": {
-      "rev": 2,
-      "fp": "sha256:7505f45ffd863d48d852fca2151e97e3826fe20374682a37ea9bd78299f3ad0c"
+      "rev": 3,
+      "fp": "sha256:c4a378775d17887261ed4be6cbb001535a03f45ad3d2e51256ef7abe5b6773af"
     },
     "geography": {
       "rev": 3,
@@ -60,12 +60,28 @@
       "fp": "sha256:1d2615c16e93b9ad34bdca7c0af72a3b03bc295fbfea997f9d87719f48089c04"
     },
     "debating/l4": {
-      "rev": 1,
-      "fp": "sha256:e355b6d22f5f46ca0df9303a091d8fec23dd4112dd1cfa03cd703f3420da2ef1"
+      "rev": 2,
+      "fp": "sha256:3a90e7db19d90df924a16e8f35b5d17072d08fa97ea32266a468365e7fe4d8d5"
     },
     "debating/l5": {
+      "rev": 2,
+      "fp": "sha256:48f026386576eb70ef307a0356738c7f4c1a13039f3fb69d3f0905c25f5d80e7"
+    },
+    "debating/l6": {
       "rev": 1,
-      "fp": "sha256:a5e18666fa56f923387bdae60b1f743a2393bb767f6179442ecae592021f95ff"
+      "fp": "sha256:2465a588c96ed2d35059fc3b3008b692f8d21d0341a6be3f45508cb652548447"
+    },
+    "debating/l7": {
+      "rev": 1,
+      "fp": "sha256:1fb5875ac725d614f30fab1739fcea9770639140d3c1d63916c980764ea7b440"
+    },
+    "debating/l8": {
+      "rev": 1,
+      "fp": "sha256:327ec7fc9c5c39873afa19b658b3872a9cd421cf97d0aedd60947c4e501840ae"
+    },
+    "debating/l9": {
+      "rev": 1,
+      "fp": "sha256:a3fc583f9f7bbeaee5cc9f8503439fec0e1934050835bd77e5a7d2e33d9a6865"
     },
     "geography/l1": {
       "rev": 1,
