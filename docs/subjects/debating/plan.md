@@ -8,9 +8,13 @@ worth continuing, and then choose a next move (offer one fact, tell one true sto
 research does and does not show about each, **when** someone at work, in your family or with a neighbour disagrees with you.
 (F1, F5, F7; P16, D6)
 
-**Real-world test:** 12 new, unseen short exchanges (mixed: the six kinds of talk, a talk that changes kind, a person fused with
-a group position). For each: name the kind, say continue / change topic / leave, and pick the best next reply from four. Pass: 10 of 12. Later returns repeat it on fresh cases (P24). A self-check in life ("I named the
-type before I answered") is welcome but not scored (D4).
+**Real-world test:** 12 new, unseen short exchanges in the real form (a talk, a text thread, a post), mixed, each asking the one decision it calls for
+from lessons 1 to 9: the kind of talk (and a talk that changes kind), what a disagreement is about (including a person defending a group's view), keep going / change the
+subject / leave, what a reply is about, what a true story got you, what a view rests on, which true experience to tell, which reply works against you, whether a note keeps its
+own test, and why an argument did not land. Pass: 10 of 12. **That pass mark is ours; no source gives one.** The line you write is never scored. Later returns repeat it on fresh cases (P24). A self-check in life
+("I named the type before I answered") is welcome but not scored (D4).
+**Changed from the first plan** ("name the kind, say continue / change topic / leave, and pick the best next reply from four"): no source ranks one reply above another, so "best reply" would
+be graded on our own call; and asking the kind and the move of every exchange would repeat two decisions twelve times and leave eight of the nine earlier decisions unmixed.
 
 ## The way of thinking (what experts do; research note section 1)
 1. **Name the kind of talk first.** Walton and Krabbe's six kinds (persuading, deciding together, bargaining, finding out together,
@@ -43,7 +47,7 @@ type before I answered") is welcome but not scored (D4).
 - Cases are set in everyday US situations; no claim about Canada versus US norms (nothing read supports one).
 
 ## Lessons (Unit 1 to 4), each with its check and source
-*Built 2026-10-20, rebuilt 2026-10-21 (lessons 4 to 9 added the same day as drafts; lessons 4 and 5 reworded after their third review) after two failed rounds of fresh reviews (docs/subjects/debating/review-*.md). In the data one unit holds one
+*Built 2026-10-20, rebuilt 2026-10-21 (lessons 4 to 10 added the same day as drafts; lessons 4 and 5 reworded after their third review) after two failed rounds of fresh reviews (docs/subjects/debating/review-*.md). In the data one unit holds one
 lesson (validator V71 refuses two lessons for one part), so the ten lessons below are ten units in the app; the four groups here are the
 plan's grouping, kept in the subject record's `units`. What changed at the root: lesson 1 now teaches Walton and Krabbe's six kinds, each case
 holds its own cue so one answer holds, and a talk that changes kind is asked by the line where it changes; lesson 2 teaches a way of deciding (read the cause behind the pushback, pick the move the studies back) with four parallel statements that never differ in tone or length; lesson 3 turns on what the other person does in the last
@@ -103,5 +107,9 @@ lines (answers, hits at you, threatens or blocks, comes back after a change of s
    Source F3 (the plan's "an inference" is now backed by M&S's "easier to let the other person find" the flaws; still not a tested method), F4 not used (abstracts only).
 
 **Unit 4: Put it together**
-10. *Mixed live exchanges.* Multi-turn cases: type, goal, then each next move, feedback names what decided. Check: the
-    real-world test above on new cases. Source all; P22, P24, D6.
+10. *Mixed live exchanges* (built 2026-10-21 as a draft). The real-world test above, taught as mixed practice: one worked exchange (the order we go through: kind of talk, still answering, what the
+    reply is about, what to check before you send; the order is ours and untested), eight practice exchanges in a mixed order (the first three with the deciding words marked, the next five with nothing
+    marked), then the check of twelve. Each decision keeps the strength it had in its own lesson (readings graded; the keep, change or leave rule is lesson 3's own and said so; the line you write
+    never scored). Three more exchanges wait for the review and are not practiced in the lesson (a second why-an-argument-did-not-land, a restatement line by line, a story line by line). Mixing rests on P22 and P23 (the evidence is for pictures
+    and school math; verbal categories are limited, so it is a judgment call, said in the lesson, and learners are told it is meant to feel harder); the returns on P24. No exchange comes from lessons 1 to 9.
+    Source: all; P22, P23, P24, D6.

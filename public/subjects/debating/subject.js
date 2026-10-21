@@ -1,19 +1,22 @@
 // Debating: subject record (lesson standard 3). Its plan is docs/subjects/debating/plan.md and its sources are docs/research/debating.md. The way of
 // thinking is: name the kind of conversation first (what it started from, what each person is trying to get, what would count as done, and whether it has changed), expect a small
 // move and not a win, and pick keep going, change the subject or leave by what the other person is doing. A part is one lesson (V71), so the plan's ten lessons are ten parts, grouped into the
-// plan's four units; only the first nine parts are built, and the subject screen lists the last as not built.
+// plan's four units; all ten are built, and the tenth mixes the decisions of the first nine on new exchanges (the plan's real-world test).
 FC.subject('debating', {
   name: "Debating",
   field: "communication",
-  rev: 3,
+  rev: 4,
   standard: 2,
+  complete: true,
   history: [
     { rev: 1, date: "2026-10-21",
       change: "First version, on the research note (docs/research/debating.md), rebuilt after two failed reviews: the record holds what the first three lessons need (Walton and Krabbe's six kinds of conversation with no 'show', what facts do and why people hold on, keep going or change the subject or leave, and the slips each lesson names). The end result says 'early in a disagreement' and not 'in the first minute'." },
     { rev: 2, date: "2026-10-21",
       change: "Lessons 4 and 5 added (Aristotle's three means read as what a reply puts in question; what a true story gets you). Part 5 is retitled 'What a true story gets you': the plan's 'why a fact alone fails' contradicted the corrected research (a correction works somewhat on a checkable fact). New slips, facets and topics for the two lessons." },
     { rev: 3, date: "2026-10-21",
-      change: "Lessons 6 to 9 added (what listening and restating got in the field tests, how to check a restatement, and the question 'how would that work?'; which true experience to tell; replies that work against you; checking your own side with one test). Part 7 is retitled 'Which true experience to share' and part 8 'Replies that work against you': the studies compare experiences that differ in relevance and harm (who it happened to is taught but not graded), and the plan's bad moves were already taught in lessons 4 and 5. New slips, facets and topics. Lessons 4 and 5 were reworded after their third review (answer patterns)." }
+      change: "Lessons 6 to 9 added (what listening and restating got in the field tests, how to check a restatement, and the question 'how would that work?'; which true experience to tell; replies that work against you; checking your own side with one test). Part 7 is retitled 'Which true experience to share' and part 8 'Replies that work against you': the studies compare experiences that differ in relevance and harm (who it happened to is taught but not graded), and the plan's bad moves were already taught in lessons 4 and 5. New slips, facets and topics. Lessons 4 and 5 were reworded after their third review (answer patterns)." },
+    { rev: 4, date: "2026-10-21",
+      change: "Lesson 10 added (mixed live exchanges, the real-world test): the subject is complete. One new topic, no new slips or facets (each exchange asks a decision a lesson before it already named). The plan's test (name the kind, keep going, change the subject or leave, and pick the best reply from four) was changed: no source ranks one reply above another, so each of twelve exchanges asks the one decision it calls for, in its own lesson's graded form." }
   ],
   endResult: "After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.",
   parts: [
@@ -164,7 +167,8 @@ FC.subject('debating', {
     { id: "fair-listening", title: "Restating, and asking for the reason" },
     { id: "true-experience", title: "Which true experience to share" },
     { id: "bad-moves", title: "Replies that work against you" },
-    { id: "own-side", title: "Checking your own side" }
+    { id: "own-side", title: "Checking your own side" },
+    { id: "put-together", title: "Mixed live exchanges" }
   ],
   readingShare: 0.35
 });
