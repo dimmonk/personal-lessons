@@ -4,7 +4,7 @@ const TABBED = ['library','review','progress','subject'];
 
 function render(){
   const subj = currentSubject();
-  document.documentElement.style.setProperty('--accent', subj ? subj.accent : '#DFA83E');
+  document.documentElement.style.setProperty('--accent', subj ? subj.accent : 'var(--a1)');
   renderRail();
   renderTabbar();
   switch(APP.view){

@@ -43,6 +43,11 @@ function subjectLine(s){
   const firsts = subjectFirstTries(s.id);
   return [`${partsDone(s)}/${s.parts.length} lessons`, ...(firsts.length ? [esc(PROGRESS_SAY.subjectPractice(outOf(firsts)))] : [])].join(' &middot; ');
 }
+// the theme switch (app/theme.js): following the phone, or always light, or always dark
+const themeBlockHtml = () => `<div class="sect"><span class="m">${esc(THEME_SAY.title)}</span></div>
+    <div class="chips" role="group" aria-label="${esc(THEME_SAY.title)}">${THEMES.map(t =>
+      `<button class="chip ${themeChoice() === t ? 'on' : ''}" data-theme-pick="${t}" aria-pressed="${themeChoice() === t}">${esc(THEME_SAY[t])}</button>`).join('')}</div>`;
+
 function renderProgress(){
   const totalParts = SUBJECTS.reduce((a,s) => a + s.parts.length, 0);
   const doneParts  = SUBJECTS.reduce((a,s) => a + partsDone(s), 0);
@@ -55,6 +60,7 @@ function renderProgress(){
     </div>
     ${practiceBlockHtml()}
     <div class="block">${syncLineHtml()}</div>
+    ${themeBlockHtml()}
     <div class="sect"><span class="m">By subject</span></div>
     <div class="rows">${SUBJECTS.map(s => `<button class="row" data-s="${s.id}" style="--accent:${s.accent}">
         <span class="sigil">${s.keyNo}</span>
@@ -69,4 +75,5 @@ function renderProgress(){
   </div>`;
   on('[data-s]', el => openSubject(el.dataset.s));
   on('#exportLog', exportLog);
+  on('[data-theme-pick]', el => { setTheme(el.dataset.themePick); renderProgress(); });
 }

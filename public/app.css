@@ -1,12 +1,29 @@
 :root{
+  color-scheme:dark;
   --bg:#14120F; --footer:#17140F; --raised:#1A1712; --field:#1D1A15;
   --divider:#241F19; --rule:#2E2820; --border:#3A3226; --disabled:#4A4438;
   --label:#6E6656; --dim:#A89E8D; --bodydim:#C9C1B2; --body:#E4DED2; --text:#F3EEE4;
-  --green:#57C48E; --coral:#F0907E; --accent:#DFA83E;
+  --green:#57C48E; --coral:#F0907E;
   --water:#1B2730; --water-lit:#3E6F8C;
+  --wrong-bg:#1F1512; --wrong-text:#D6C9C0;
+  /* the subjects' colours, one each in turn (app/state.js); --accent is the open subject's */
+  --a1:#DFA83E; --a2:#57C48E; --a3:#62AFEE; --a4:#C39BF0; --a5:#F0907E;
+  --accent:var(--a1);
   --sans:'Bricolage Grotesque','Helvetica Neue',Helvetica,sans-serif;
   --serif:Literata,Georgia,serif;
   --mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+/* The light theme (app/theme.js sets data-theme from the phone's setting or the learner's choice): warm paper, the same order of
+   tones turned round, and each colour deepened so text on it and it on the page both reach 4.5:1 */
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#F5F1E8; --footer:#EEE9DE; --raised:#FBF9F4; --field:#FFFFFF;
+  --divider:#E7E0D3; --rule:#DCD3C3; --border:#C4B9A5; --disabled:#ADA392;
+  --label:#6C6250; --dim:#62594B; --bodydim:#463F35; --body:#2B2620; --text:#1A1713;
+  --green:#1C7A4D; --coral:#B0432B;
+  --water:#CFDFE8; --water-lit:#7FA9C6;
+  --wrong-bg:#F5E4DE; --wrong-text:#4A3A33;
+  --a1:#93620C; --a2:#1C7A4D; --a3:#22649F; --a4:#7447AE; --a5:#B0432B;
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -240,8 +257,8 @@ table.k td b{color:var(--text)}
 mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(--text);font-weight:600;padding:0;border:none}
 .blocks{display:flex;flex-direction:column;gap:14px}
 .block-prose{padding:16px;background:var(--raised)}
-.wrongidea{margin:0 0 16px;padding:14px 16px;background:#1F1512}
-.wrongidea p{margin:6px 0 0;color:#D6C9C0}
+.wrongidea{margin:0 0 16px;padding:14px 16px;background:var(--wrong-bg)}
+.wrongidea p{margin:6px 0 0;color:var(--wrong-text)}
 .pairgrid{display:grid;grid-template-columns:1fr;gap:10px}
 @media(min-width:560px){.pairgrid{grid-template-columns:1fr 1fr}}
 .pairside .block-prose{height:100%}

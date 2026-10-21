@@ -33,9 +33,9 @@ export function makeEnv(browser, server) {
   // opts.recorder: a mode of startRecorder (tests/fixtures/audio-recorder.mjs); the sound system and the microphone are then watched, and the
   // microphone answers from a sound the test chooses. opts.init: { script, arg }, run in the page before the app's own scripts.
   // opts.project: the account of an earlier page (its `project`), as a phone with its site data cleared, or a second device, would open it;
-  // opts.beforeSignIn(page): run on the sign-in screen, before signing in
+  // opts.beforeSignIn(page): run on the sign-in screen, before signing in; opts.colorScheme: the phone's own setting, 'light' or 'dark' (dark if not given)
   env.freshPage = async (c, width = 390, opts = {}) => {
-    const context = await browser.newContext({ viewport: { width, height: 800 }, serviceWorkers: 'block' });
+    const context = await browser.newContext({ viewport: { width, height: 800 }, serviceWorkers: 'block', colorScheme: opts.colorScheme || 'dark' });
     await context.addInitScript(SKEW_SCRIPT);
     if (opts.recorder) await context.addInitScript(startRecorder, opts.recorder);
     if (opts.init) await context.addInitScript(opts.init.script, opts.init.arg);   // a script run in the page before the app's own: the phone's speech synthesis, stubbed

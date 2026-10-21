@@ -2,7 +2,8 @@
 // One list of subjects, built from the FC registry's frozen data. A subject's lessons are the ones registered, in part order;
 // its parts are listed in the subject record. SUBJECTS holds new objects; nothing registered is changed.
 
-const ACCENTS = ['#DFA83E','#57C48E','#62AFEE','#C39BF0','#F0907E'];
+// the subjects' colours, named by their tokens in app.css so each theme gives its own shade
+const ACCENTS = ['var(--a1)','var(--a2)','var(--a3)','var(--a4)','var(--a5)'];
 
 function buildSubject(id, index){
   const data = FC.get(id), meta = data.meta;
