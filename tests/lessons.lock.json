@@ -5,6 +5,10 @@
       "rev": 7,
       "fp": "sha256:70b7bd730685ae5f0f9fd0ad26859aa84e06d23cf1467a9afed12d4c771543a7"
     },
+    "debating": {
+      "rev": 1,
+      "fp": "sha256:aa1d208612dc369dc94801aeadeb13be617c5f2b367b53e844f8cf56e68b7e50"
+    },
     "geography": {
       "rev": 3,
       "fp": "sha256:0e9cb08ffe76e78ca564094ae9515181ea6e8f087869b43fedff684a65ca1fcb"
@@ -42,6 +46,18 @@
     "civics/l1": {
       "rev": 1,
       "fp": "sha256:580b2b867594d1ed2b21e3663fc368ca71eeff943af93d20a47e859c7af4946e"
+    },
+    "debating/l1": {
+      "rev": 1,
+      "fp": "sha256:87fd5c82cb0687c0aa53bc5d7aab0d58b0eae02c727a62faf80ebbf949b63f64"
+    },
+    "debating/l2": {
+      "rev": 1,
+      "fp": "sha256:e2ce8b96b23c0cbf1b5934e2a461cc7672bbff1cffaa09e6073b5861ca0f5980"
+    },
+    "debating/l3": {
+      "rev": 1,
+      "fp": "sha256:1d2615c16e93b9ad34bdca7c0af72a3b03bc295fbfea997f9d87719f48089c04"
     },
     "geography/l1": {
       "rev": 1,
