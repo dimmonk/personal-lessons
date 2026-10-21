@@ -21,6 +21,15 @@ const KIND_ASK = 'Question 1. What is going on here?', SPAN_ASK = 'Question 2. O
 const askedNow = page => page.locator('.asks .prompt .stem, .asks .stem').allTextContents().then(t => t.map(s => s.replace(/\s+/g, ' ').trim()));
 // what the lesson's data says: the size of each set (a pair counts as two questions) and the ids of an item's asks
 const setSizes = page => page.evaluate(() => { const d = FC.get('psychology'); return flowSets(d.lessons.l1).map(s => flatRefs(s.items).length); });
+// The one walk sees one random order, in which two questions that are not kept together still land side by side about 2 times in 5. So
+// the pairs are also checked on the group the app builds for each of a fixed list of runs: the same runs every time, so the result never
+// depends on the clock, and a pair broken apart is found side by side in all of them only by a chance too small to meet.
+const PAIR_RUNS = Array.from({ length: 40 }, (_, i) => `pairs-${i}`);
+const pairsApart = (page, at, pairs) => page.evaluate(([n, want, runs]) => {
+  const d = FC.get('psychology'), set = flowSets(d.lessons.l1)[n];
+  return runs.flatMap(run => { const keys = buildSet(d, 'psychology', d.lessons.l1, set, run).map(i => i.key);
+    return want.filter(([a, b]) => Math.abs(keys.indexOf(a) - keys.indexOf(b)) !== 1).map(([a, b]) => `${a}/${b} in ${run}`); });
+}, [at, pairs, PAIR_RUNS]);
 const asksOf = (page, key) => page.evaluate(k => FC.get('psychology').items[k].asks.map(a => a.id), key);
 // every pair of the lesson's step `at` (its teaching screens count from 1, after the why): both passages and what they compare are on the screen
 const pairsShown = (page, text, at, count) => page.evaluate(([n, shown, want]) => {
@@ -93,6 +102,8 @@ async function theQuestionOneSet(env, c, page) {
   const { firsts } = await walkSet(env, c, page, { count: n, ask: 'kind', prompt: KIND_ASK, label: 'first', miss: 'q1-dinner', onMiss: { pick: 'pattern', after: async () => {   // one dinner taken for a lasting way
     c.check(/common slip: took one moment for a lasting pattern/.test(await env.screenText(page)) && await page.locator('.mark.no').count() === 1, 'one dinner taken for a lasting way is not named as a moment taken for a pattern'); } } });
   c.check(Math.abs(firsts.indexOf('q1-dinner') - firsts.indexOf('q1-cousin')) === 1 && Math.abs(firsts.indexOf('q1-degree') - firsts.indexOf('q1-blame')) === 1, `the pairs of the first set are not asked back to back (${firsts})`);
+  const apartOne = await pairsApart(page, 0, [['q1-dinner', 'q1-cousin'], ['q1-degree', 'q1-blame']]);
+  c.check(!apartOne.length, `the pairs of the first set are not always built back to back (${apartOne.slice(0, 4)})`);
   c.check(new RegExp(`${n - 1} of ${n} right the first time`).test(await env.screenText(page)), `the first set does not end on "${n - 1} of ${n} right the first time"`);
   await env.goOn(page);
 }
@@ -102,6 +113,8 @@ async function theQuestionTwoSet(env, c, page) {
   const { firsts } = await walkSet(env, c, page, { count: n, ask: 'span', prompt: SPAN_ASK, label: 'second', miss: 'q2-deny-stress', onMiss: { pick: 'years', after: async () => {   // a hard week taken for a pattern
     c.check(/common slip: blamed the person when the story shows something hard going on/.test(await env.screenText(page)) && await page.locator('.mark.no').count() === 1, 'a hard week taken for a pattern is not named as skipping the situation'); } } });
   c.check(Math.abs(firsts.indexOf('q2-deny-stress') - firsts.indexOf('q2-deny-decade')) === 1 && Math.abs(firsts.indexOf('q2-late') - firsts.indexOf('q2-unsaid')) === 1, `the pairs of the second set are not asked back to back (${firsts})`);
+  const apartTwo = await pairsApart(page, 1, [['q2-deny-stress', 'q2-deny-decade'], ['q2-late', 'q2-unsaid']]);
+  c.check(!apartTwo.length, `the pairs of the second set are not always built back to back (${apartTwo.slice(0, 4)})`);
   c.check(new RegExp(`${n - 1} of ${n} right the first time`).test(await env.screenText(page)), `the second set does not end on "${n - 1} of ${n} right the first time"`);
   await env.goOn(page);
 }
