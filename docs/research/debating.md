@@ -165,7 +165,7 @@ debate only as the contrast case.
 
 ### F6. Personal experience earns respect better than facts, but respect is not persuasion (Kubin et al. 2021)
 - **Read:** Kubin, Puryear, Schein & Gray 2021, *PNAS* 2021 (full text: abstract and the passage on persuasion);
-  plus the Van Bavel et al. 2021 commentary on it (PMC7923648).
+  plus the Van Bavel et al. 2021 commentary on it (PMC7923648; the warning about false stories and the respect-versus-rationality distinction checked against the full text on 2026-10-21).
 - **Strength:** moderate (15 studies, but outcome is respect and perceived rationality, mostly US online samples).
 - **Passages:** abstract: opponents "respect moral beliefs more when they are supported by personal experiences".
   Experiences "issue-relevant and involve harm" work best, via perceived rationality. The authors "leave aside the
@@ -201,19 +201,48 @@ debate only as the contrast case.
   that sometimes loosen a view, with the limits stated: they do not work on values the person treats as sacred or on
   deeply committed believers. Street epistemology as a brand is dropped (anecdote only); its core question is kept.
 
-### F9. Aristotle's three means: character, emotion, argument (Rhetoric I.1-2)
-- **Read:** Rhetoric Book I, ch. 1 and 2 (W. R. Roberts translation, MIT Internet Classics Archive). Book II
-  (which treats the emotions and character in detail) not read.
-- **Strength:** the best-known account (moderate as a description: a philosopher's analysis, not experiment).
-- **Passages:** ch. 2: persuasion comes from the speaker's character, the hearers' emotions, or the argument itself;
-  character "may almost be called the most effective means of persuasion". Our judgements differ "when we are pleased
-  and friendly" and when we are pained and hostile. Ch. 1: earlier handbooks said nothing of the enthymeme (the
-  argument-proof, a "rhetorical syllogism", ch. 2) and fixed on "non-essentials"; stirring prejudice, pity or anger is a
-  mere appeal to the judge. Ch. 2: rhetoric addresses hearers who cannot "follow a long chain of reasoning", so
-  arguments must be short.
-- **Use:** confirms ethos (whether you are credible and decent) and pathos (the listener's state) shape the result
-  more than the clip's "logos loses" suggests as a slogan; but **corrects** it: Aristotle calls argument the core of
-  the art and treats raw emotional appeal as the weak part. Short, plain arguments are his own advice.
+### F9. Aristotle's three means: character, emotion, argument (Rhetoric I.1-2, II.1-3)
+- **Read (rewritten 2026-10-21 for lessons 4 and 5; the earlier version read only I.1-2):** *Rhetoric*, W. Rhys Roberts translation
+  (MIT Internet Classics Archive, classics.mit.edu), full text of **Book I, parts 1 and 2, and Book II, parts 1, 2 and 3** (II.1: the
+  speaker's character and the hearers' frame of mind, with the definition of the emotions; II.2: anger; II.3: growing calm). **Not read:**
+  II.4-II.26 (the other emotions, the characters of hearers by age and fortune, the common lines of argument) and Book III (style and
+  arrangement). Greek not read; one translation.
+- **Strength:** the best-known account in the field, a philosopher's analysis of speeches to law courts, assemblies and ceremonies, built from
+  observation and thought, not experiment. Moderate as a description of persuading; **not a tested method**, and applying it to a talk
+  with a neighbor is our step, not his.
+- **The three means (I.2):** persuasion by "the personal character of the speaker", by "putting the audience into a certain frame of mind", or
+  by "the proof, or apparent proof, provided by the words of the speech itself". Character: "We believe good men more fully and more readily
+  than others". It "should be achieved by what the speaker says, not by what people think of his character before he begins to speak"; his
+  character "may almost be called the most effective means of persuasion". Frame of mind: judgements "are not the same" when "pleased and
+  friendly" as when "pained and hostile".
+- **What builds trust (II.1):** three things "inspire confidence in the orator's own character": "good sense, good moral character, and
+  goodwill". The reasoning: false statements and bad advice come from want of good sense, from not saying what one thinks (moral badness), or
+  from not being well disposed to the hearers. The lesson's sample lines for each (checking the numbers; saying what cuts against one's side;
+  wanting it to work for them too) are **ours**, not Aristotle's.
+- **Feelings (II.1-II.3):** the emotions "so change men as to affect their judgements" and come with pain or pleasure; friendly hearers regard the
+  accused as having done little wrong, hostile hearers the opposite (II.1). Anger is a reaction to a slight, and people are angered by "those who laugh,
+  mock, or jeer at us" (II.2). Anger settles toward "those who are serious when we are serious", toward "those who admit their fault and are
+  sorry", and toward those who "do not insult or mock" (II.3). **Limit:** this is Aristotle's account of how to stir or settle a hearer; the
+  lessons use only the two directions (slights anger, seriousness and an honest sorry calm) and call them an untested account.
+- **Argument (I.1-I.2):** the enthymeme (the short argument) "is, in general, the most effective of the modes of persuasion" (I.1) and is
+  "the substance of rhetorical persuasion". It "must consist of few propositions"; a familiar fact need not be mentioned, "the hearer adds it
+  himself" (I.2). Rhetoric addresses hearers who "cannot take in at a glance a complicated argument, or follow a long chain of reasoning";
+  long chains "will necessarily be hard to follow owing to their length", and reasoning from premises "not generally admitted or believed" will
+  "fail to win assent" (I.2). In I.1, before some audiences even the exactest knowledge does not make it easy to convince, because "there are people
+  whom one cannot instruct", so use notions "possessed by everybody". The example (a like case used as proof) is "as persuasive" as the
+  enthymeme, though enthymemes "excite the louder applause" (I.2). His own limit (I.1): "we must not make people believe what is wrong".
+- **Correction of the earlier note (2026-10-21):** it said Aristotle "calls argument the core and character the strongest". He says both: the
+  enthymeme is "in general, the most effective of the modes of persuasion" (I.1) and character "may almost be called the most effective" (I.2). He
+  does not rank them, and the lessons do not. It also said stirring prejudice, pity or anger is "a mere appeal to the judge" without context: that
+  is I.1 on law-court handbooks, and it adds that in a political debate the listener decides his own vital interests, so there is "no need to prove
+  anything except that the facts are what the supporter of a measure maintains". II.1 then says the orator must also make his character look right
+  and put his hearers in the right frame of mind.
+- **Not claimed:** that a person's reply can be sorted into the three by Aristotle's method (that reading, and the rule "answer the one the reply
+  is about", is ours and nobody has tested it; the lesson grades only the reading of the reply, not that the answer works); any tested way
+  to build credibility; that the "example" of I.2 (a like case from the past, such as earlier tyrants who asked for a bodyguard) is the same thing as a
+  personal story.
+- **Use:** confirms that who is speaking, the hearer's state and the argument each shape the result, none above the others, and that the argument
+  should be short and begin from what the hearer already grants.
 
 ### F10. Bonhoeffer on stupidity (letter "After Ten Years", in *Letters and Papers from Prison*)
 - **Read:** a published English reprint (Substack and Open Culture copies; translator not named). Not the critical
@@ -239,8 +268,8 @@ debate only as the contrast case.
 - **Deep canvassing by name:** the term is kept out of lessons; the move taught is the one with evidence (F5).
 - **Cross-cultural (Canada vs US) norms:** nothing in the sources read speaks to it; all studies are US samples.
   Cases are set in everyday US situations (work, neighbours, relatives), no claim about cultural difference is made.
-- **Ethos as a taught skill:** the sources give no tested "how to build credibility". Teach it as what Aristotle
-  lists (be fair, informed, kind), and as the effect of F5 and F7 moves. **Judgement call.**
+- **Ethos as a taught skill:** no tested "how to build credibility" was found. Lesson 4 teaches what Aristotle lists (II.1: good sense, good moral
+  character, goodwill, shown in what is said), with sample lines of our own. **Judgement call.**
 
 ## 3. What learning research says for this kind of skill
 The skill is judging a live situation and choosing a next move from memory: a case-judgment skill with a habit
@@ -296,3 +325,24 @@ type and the next reply, not definitions of terms.
   Expert practice without a direct test: restating the other side first (F7: abstract of Yeomans et al. and Rapoport's rules; weak). Contested: asking for the reason
   (F8: replications mixed; fails on sacred values). The end result and plan now say the learner chooses a move knowing what the research does and does not show about each.
 - **Pass marks** (7 of 8 in each check, 10 of 12 in the plan's final test) are judgement calls with no source.
+- **Lesson 4 (2026-10-21).** Teaches F9: the three means; trust built by "good sense, good moral character, and goodwill" in what is said (II.1, I.2); feelings
+  change judgement, slights anger and seriousness and an honest sorry calm (II.1-II.3); a short argument, few steps, from what the hearer grants (I.2). The practice is one
+  decision a question: what the other person's last reply puts in question (trust, feeling, argument, as a pair when it is about two), and for an argument that did not land, too
+  long to follow, started from something they do not accept (both I.2), or neither. **Graded:** the reading of the reply (each reply holds its own cue: a reply about the speaker's
+  sense, honesty or goodwill; one that states a feeling or what stung; one that goes at a step or a number). **Ours and not graded:** that the next line should answer the means the reply
+  puts in question, the sample lines, and the model replies (written, unscored, with the model shown). Tone never decides it (a calm reply states a feeling, an angry one goes at a
+  step, a friendly one questions the speaker). Argument claims stay within I.2 (no tested effect of short arguments is claimed). The plan's "label the means in eight replies, fix one"
+  was changed to reading the other person's reply: labelling a sentence is recall of a taxonomy, one sentence often holds two means, and the practice in real use is to decide what
+  to answer. Aristotle's own definition (I.2) of the art is "observing in any given case the available means of persuasion".
+- **Lesson 5 (2026-10-21), retitled "What a true story gets you".** The plan's "Why a fact alone fails, and a story helps" contradicted the corrected research: a correction works
+  somewhat on a checkable fact (F2), and the arguments-alone null in F5 is about attitudes toward a group on immigration, not facts. Lesson 2 already teaches that. Lesson 5 takes what it
+  leaves open. (1) **What a true story got you**, read from their last lines (a hearing, a small move, or neither): F6 (Kubin et al. 2021, 15 studies, respect more when the experience is
+  issue-relevant and involves harm; the authors "leave aside the question of persuasion") and Van Bavel et al.'s commentary (the passages read on 2026-10-21, PMC7923648: it separates respecting the person and finding their reasoning rational from respecting the position itself; "a false personal story will have more power to create respect than facts, including those facts that would serve to correct the narrative"); F5
+  (story effects measured in surveys, some weeks or months later, so "neither" in the room does not show the story failed). **Graded:** the reading of the lines (a hearing restates
+  an unchanged view while taking them seriously; a move states a shift in their own view, even a reserved one; neither answers nothing about the story). (2) **Keep every line true:**
+  the story is a draft line by line against stated facts; tap the line the facts do not support, or say every line is true. Sources for why: the Van Bavel warning and Aristotle's
+  "we must not make people believe what is wrong" (I.1). **Ours:** the rule to check each line, and the labelled claim that a hearing is the most some talks give. No claim about
+  how often a story moves anyone in one conversation, and none about family arguments (the tests were canvassers and strangers). Not covered here (lesson 7): what makes a story relevant,
+  harm-focused and short.
+- **Review fixes (2026-10-21, after the lesson 4 and 5 reviews).** Lesson 5's cases are now moral disagreements (F6 covered moral disputes; nothing read shows the advantage for other disputes), and the hearing, small move, neither coding is stated in the lesson as ours. Lesson 4 says an omitted step must be a fact the listener really grants, gives no step count from Aristotle (the practice's two steps fine, five or six too many is ours), and has worked examples for the argument-did-not-land and two-things question types.
+- **Round 2 fixes (2026-10-21).** Lesson 4's "why it did not land" items now have You-lines of about the same length whatever the answer, and replies that show the reaction (lost where we are, a flat contradiction of the opening claim) without naming it. Lesson 5 no longer says "door-to-door" (the note holds only canvassers and voters), defines moral disagreement, attitudes and canvassers, calls the one-real-person-and-short shape ours (only issue-relevance and harm come from Kubin), and softens Aristotle's limit to "persuading". Lesson 4's anger line says "mocks or jeers at them", the wording the note holds. The learner-view printer shows slip codes; the real app prints each slip's text from the subject's list (`slipText` in `public/app/lessons/rules.js`, used in `item-view.js`).

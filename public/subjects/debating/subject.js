@@ -1,15 +1,17 @@
 // Debating: subject record (lesson standard 3). Its plan is docs/subjects/debating/plan.md and its sources are docs/research/debating.md. The way of
 // thinking is: name the kind of conversation first (what it started from, what each person is trying to get, what would count as done, and whether it has changed), expect a small
 // move and not a win, and pick keep going, change the subject or leave by what the other person is doing. A part is one lesson (V71), so the plan's ten lessons are ten parts, grouped into the
-// plan's four units; only the first three parts are built, and the subject screen lists the rest as not built.
+// plan's four units; only the first five parts are built, and the subject screen lists the rest as not built.
 FC.subject('debating', {
   name: "Debating",
   field: "communication",
-  rev: 1,
+  rev: 2,
   standard: 2,
   history: [
     { rev: 1, date: "2026-10-21",
-      change: "First version, on the research note (docs/research/debating.md), rebuilt after two failed reviews: the record holds what the first three lessons need (Walton and Krabbe's six kinds of conversation with no 'show', what facts do and why people hold on, keep going or change the subject or leave, and the slips each lesson names). The end result says 'early in a disagreement' and not 'in the first minute'." }
+      change: "First version, on the research note (docs/research/debating.md), rebuilt after two failed reviews: the record holds what the first three lessons need (Walton and Krabbe's six kinds of conversation with no 'show', what facts do and why people hold on, keep going or change the subject or leave, and the slips each lesson names). The end result says 'early in a disagreement' and not 'in the first minute'." },
+    { rev: 2, date: "2026-10-21",
+      change: "Lessons 4 and 5 added (Aristotle's three means read as what a reply puts in question; what a true story gets you). Part 5 is retitled 'What a true story gets you': the plan's 'why a fact alone fails' contradicted the corrected research (a correction works somewhat on a checkable fact). New slips, facets and topics for the two lessons." }
   ],
   endResult: "After this subject you can tell, early in a disagreement, what kind of conversation it is and whether it is worth continuing, and then choose a next move (offer one fact, tell one true story, restate their view, or ask for their reason) knowing what the research does and does not show about each, when someone at work, in your family or in your neighborhood disagrees with you.",
   parts: [
@@ -17,7 +19,7 @@ FC.subject('debating', {
     { id: "2", title: "Why people dig in" },
     { id: "3", title: "Your goal, and when to leave" },
     { id: "4", title: "Character, emotion, argument" },
-    { id: "5", title: "Why a fact alone fails, and a story helps" },
+    { id: "5", title: "What a true story gets you" },
     { id: "6", title: "Restate, then ask for the reason" },
     { id: "7", title: "Share one true experience" },
     { id: "8", title: "The bad moves" },
@@ -60,7 +62,18 @@ FC.subject('debating', {
       { id: "aimed-for-win", text: "aimed for a concession instead of the next small step on offer" },
       { id: "parting-shot", text: "ended with a jab instead of a clean line" },
       { id: "wrong-line", text: "used a line that belongs to a different move" },
-      { id: "wrong-act", text: "argued on when the first move was to get away from the people at you" }
+      { id: "wrong-act", text: "argued on when the first move was to get away from the people at you" },
+      { id: "took-for-trust", text: "took a reply for a question about whether they can trust you" },
+      { id: "took-for-feeling", text: "took a reply for a statement of how they feel" },
+      { id: "took-for-argument", text: "took a reply for a challenge to the argument" },
+      { id: "wrong-pair", text: "named the wrong two things in a reply about two" },
+      { id: "read-length", text: "put it down to an argument that was too long, when the reply showed something else" },
+      { id: "read-start", text: "put it down to an argument that started from something they do not accept, when the reply showed something else" },
+      { id: "read-neither", text: "decided the reply was not about how the argument was built, when it was" },
+      { id: "took-for-hearing", text: "took a shift in their view, or a brush-off, for a hearing that changed nothing" },
+      { id: "took-for-move", text: "took a hearing, or a brush-off, for a changed mind" },
+      { id: "took-for-nothing", text: "saw nothing in a talk that got a hearing or a small move" },
+      { id: "flagged-true", text: "flagged a line of the story that was true" }
     ]
   },
   // how the questions are sorted on the results screen: the kind of conversation, and the move
@@ -83,13 +96,35 @@ FC.subject('debating', {
       { id: "continue", text: "keep going" },
       { id: "change", text: "change the subject" },
       { id: "leave", text: "leave the talk" }
+    ] },
+    means: { name: "What their reply is about", compare: true, values: [
+      { id: "trust", text: "whether they can trust you" },
+      { id: "feeling", text: "how they feel" },
+      { id: "argument", text: "the argument itself" },
+      { id: "two", text: "two of these at once" }
+    ] },
+    build: { name: "Why the argument did not land", compare: true, values: [
+      { id: "length", text: "too long to follow" },
+      { id: "start", text: "started from something they do not accept" },
+      { id: "neither", text: "neither: the reply was about something else" }
+    ] },
+    result: { name: "What your story got you", compare: true, values: [
+      { id: "hearing", text: "a hearing" },
+      { id: "move", text: "a small move" },
+      { id: "neither", text: "neither" }
+    ] },
+    telling: { name: "Your story, line by line", compare: true, values: [
+      { id: "true", text: "every line true" },
+      { id: "invented", text: "a line you could not say" }
     ] }
   },
   mix: [],
   strands: [
     { id: "kinds-of-talk", title: "What kind of conversation is this?" },
     { id: "why-dig-in", title: "Why people dig in" },
-    { id: "when-to-stop", title: "Your goal, and when to leave" }
+    { id: "when-to-stop", title: "Your goal, and when to leave" },
+    { id: "three-means", title: "Character, emotion, argument" },
+    { id: "true-story", title: "What a true story gets you" }
   ],
   readingShare: 0.35
 });

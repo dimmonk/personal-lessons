@@ -49,3 +49,29 @@ const dbCueAsk = (...lines) => ({ id: 'cue', kind: 'tap', prompt: lines.length >
 const dbPick = (id, prompt, rows) => ({ id, kind: 'choose', prompt, shuffle: true, options: rows.map(([text, mark], i) => ({ id: String.fromCharCode(97 + i), text, ...(mark === true ? { ok: true } : { slip: mark }) })) });
 const dbAimAsk = rows => dbPick('aim', 'What is a fair aim for the next few lines?', rows);
 const dbSayAsk = (rows, prompt = 'Which line do you say?') => dbPick('say', prompt, rows);
+
+// lesson 4: what the other person's last reply is about. Aristotle's three means of persuasion (docs/research/debating.md, F9) are the three answers: whether they can trust you
+// (what your words show of good sense, honesty and goodwill), how they feel (their frame of mind), the argument itself. The three answers are written once, to one form, and each is
+// right in some scenes; a reply that is about two things is asked as a pair. The reading of a reply is graded; what to say next is written, never scored.
+const DB_MEANS_TEXT = { trust: 'Whether they can trust you.', feeling: 'How they feel right now.', argument: 'The argument itself.' };
+const DB_MEANS_SLIP = { trust: 'took-for-trust', feeling: 'took-for-feeling', argument: 'took-for-argument' };
+const DB_PAIR_TEXT = { 'trust-feeling': 'Whether they can trust you, and how they feel.', 'trust-argument': 'Whether they can trust you, and the argument.', 'feeling-argument': 'How they feel, and the argument.' };
+// a pick among the answers of one list: the right one, and for each wrong one its slip and, where it is the likely one, a line
+const dbPickFrom = (texts, slipOf, right, prompt, then, id) => ({ id, kind: 'choose', prompt, shuffle: true,
+  options: Object.entries(texts).map(([key, text]) => ({ id: key, text, ...(key === right ? { ok: true } : { slip: slipOf(key), ...(then && then[key] ? { then: then[key] } : {}) }) })) });
+const dbMeansAsk = (right, then) => dbPickFrom(DB_MEANS_TEXT, key => DB_MEANS_SLIP[key], right, 'What is their reply about?', then, 'means');
+const dbPairAsk = (right, then) => dbPickFrom(DB_PAIR_TEXT, () => 'wrong-pair', right, 'Their reply is about two of these. Which two?', then, 'means');
+// the argument you gave did not land: too long to follow, started from something they do not accept, or neither (the reply is about something else)
+const DB_BUILD_TEXT = { length: 'It was too long to follow.', start: 'It started from something they do not accept.', neither: 'Neither: the reply is not about how it was built.' };
+const DB_BUILD_SLIP = { length: 'read-length', start: 'read-start', neither: 'read-neither' };
+const dbBuildAsk = (right, then) => dbPickFrom(DB_BUILD_TEXT, key => DB_BUILD_SLIP[key], right, 'Why did the argument not land?', then, 'build');
+// the first line of your own reply, written against a model and never scored
+const dbWriteAsk = model => ({ id: 'say', kind: 'text', prompt: 'Write the first line of your reply.', model });
+
+// lesson 5: what a true story got you, read from the other person's last lines (a hearing, a small move or neither); and the check of your own story, line by line
+const DB_RESULT_TEXT = { hearing: 'A hearing: they took you seriously, and their view did not move.', move: 'A small move: part of their view shifted.', neither: 'Neither shows in what they said.' };
+const DB_RESULT_SLIP = { hearing: 'took-for-hearing', move: 'took-for-move', neither: 'took-for-nothing' };
+const dbResultAsk = (right, then) => dbPickFrom(DB_RESULT_TEXT, key => DB_RESULT_SLIP[key], right, 'What did your story get you?', then, 'result');
+// a story you plan to tell, line by line: tap the one you could not honestly say, or say that every line is true. A true line tapped by mistake says it matches what happened.
+const dbDraft = (falseId, ...rows) => dbTalk(...rows.map(([id, text]) => id === falseId ? [id, text] : [id, text, 'This line matches what happened.', 'flagged-true']));
+const dbTrueAsk = falseId => ({ id: 'true', kind: 'tap', prompt: 'Tap the line you could not honestly say.', in: 'talk', right: falseId ? [falseId] : 'none', none: 'Every line is true.' });

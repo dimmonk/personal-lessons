@@ -21,8 +21,8 @@ type before I answered") is welcome but not scored (D4).
 3. **Lower the stakes before you argue** (an inference from F3, with weak support from F7/F8, not a finding). Restate their view fairly, ask for their reasons; a person with an opinion to defend
    treats your argument as one to rebut, and only someone with no axe to grind judges it fairly (F3, F7, F8). Careful listening
    improved how the persuader was seen but added no persuasion to a story (F5, Santoro et al. 2025).
-4. **Use all three means, honestly.** Be credible, mind their state, keep the argument short; in one set of studies personal experience
-   earned more respect than facts (F6; respect is not persuasion), and a shared story moved views a little where arguments alone did not (F5).
+4. **Use all three means, honestly.** Be credible, mind their state, keep the argument short; in one set of studies on moral disagreements personal experience
+   earned more respect than facts (F6; respect is not persuasion; nothing read shows it for other disputes), and a shared story moved views a little where arguments alone did not (F5).
 5. **Let someone with no stake test your own side.** People who argue a side look for support for it, and people with no axe to grind judge arguments well, so the check on your reasons is someone with nothing at stake (F3; an inference from a passage about judging others' arguments, marked in the note).
 
 ## What it teaches (every ask, and what the evidence did to it)
@@ -59,11 +59,20 @@ lines (answers, hits at you, threatens or blocks, comes back after a change of s
    nothing is answered, leave on a threat or block, a failed change, or a pile-on. Check: 8 talks, choose the move, tap the deciding line, then pick the
    aim, the words or the first act. Source F1, F2, F5 (small effects); the rule, aims and lines are judgement calls, marked and graded as the lesson's own rule.
 
-**Unit 2: The three means**
-4. *Character, emotion, argument.* What each looks like in a sentence; which is missing in a failing reply; short
-   arguments. Check: label means in 8 replies, fix one. Source F9; P12.
-5. *Why a fact alone fails, and a story helps.* The arguments-only versus story result; respect is not persuasion; no
-   invented stories. Check: pick the reply that fits the case. Source F5, F6.
+**Unit 2: The three means** *(built 2026-10-21, both lessons reshaped by the evidence)*
+4. *Character, emotion, argument.* Aristotle's three means (Rhetoric I.1-2, II.1-3, read in full): trust built by what you say (good sense,
+   honest character, goodwill), feelings that change judgement (slights anger, seriousness and an honest sorry calm), a short argument from what
+   the hearer grants. Practice is reading what the other person's last reply puts in question (trust, feeling, argument, two at once), and why an
+   argument did not land (too long, a start they do not accept, or neither), with a worked example of each question type; the next line is written against a model and never scored. Check: 8
+   new exchanges, 7 right. **Changed from the plan** ("label means in 8 replies, fix one"): labelling a sentence is recall of a taxonomy, one
+   sentence often holds two means, and the real-use decision is what to answer; the reading of the reply is graded, and "answer the one it is about"
+   is the lesson's own method, said so and not graded. Source F9; P12.
+5. *What a true story gets you* (was "Why a fact alone fails, and a story helps"). **Retitled and reshaped:** the corrected research says a
+   correction works somewhat on a checkable fact (F2, lesson 2), and the arguments-alone null in F5 is about attitudes toward a group, so "a fact
+   alone fails" was wrong as a lesson. Lesson 5 reads what a true story got you from their last lines (a hearing, a small move, neither: respect is
+   not persuasion, F6; the story effects were measured in later surveys, F5) and checks your own story line by line against what happened (no
+   invented stories: F6 commentary, Aristotle I.1). The cases are moral disagreements, because the personal-experience studies covered those (F6); reading a reply as a hearing, a small move or neither is the lesson's own coding, said so. Check: 8 new questions, 7 right. What makes a story relevant, short and harm-focused stays
+   in lesson 7. Source F5, F6, F9.
 
 **Unit 3: The moves**
 6. *Restate, then ask for the reason.* Fair restatement; "how would that work?" and "how sure are you?"; when they do
