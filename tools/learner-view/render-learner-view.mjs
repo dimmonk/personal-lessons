@@ -14,6 +14,9 @@ let SEEN = new Set();
 let MAPS = {};
 // the subject's generators, for the words about the flags of a group of places (set when a lesson is rendered)
 let GENS = {};
+// the app's own wording (SAY), for the blocks that print it (set when a lesson is rendered)
+let SAYS = {};
+// one tone of an example sound, in words: its note, when it starts, how long, and how it moves (in hundredths of a half-step off the note)
 
 /* ---------- blocks ---------- */
 const cellText = cell => String(cell);
@@ -94,6 +97,10 @@ function blockLines(block, deciding = [], refs = [], extra = {}) {
   if (block.kind === 'chart') return [chartWords(block)];
   if (block.kind === 'map') return [mapWords(block)];
   if (block.kind === 'flags') return [flagsWords(block)];
+  if (block.kind === 'tones') {
+    return [`**${SAYS.tonesHeading}**`, '', ...paras(block.says), '', `Buttons, one for each sound; nothing sounds until one is tapped. A tap plays it (the line under them reads "${SAYS.tonesPlaying}"), a second tap stops it, and moving on stops it:`,
+      ...block.examples.map(x => `- "${x.label}"`)];
+  }
   if (block.kind === 'pair') {
     return ['| A | B |', '|---|---|', `| ${blockLines(block.a, deciding, refs, extra).join(' ')} | ${blockLines(block.b, deciding, refs, extra).join(' ')} |`, '', `Compare: ${paras(block.compare).join(' ')}`];
   }
@@ -253,10 +260,10 @@ function questionLines(e, data, inst, support, label) {
 // what the learner sees and hears, with a sample range to show the shape of the plan. Every sentence the app prints is read from SAY.
 const SAMPLE_RANGE = { low: 'A2', high: 'E4' };
 const seconds = ms => `${ms / 1000} second${ms === 1000 ? '' : 's'}`;
-function singLines(e, ref, support, label) {
+function singLines(e, ref, support, label, summary = false) {
   const { SAY } = e, task = ref.sing, kind = task.task, item = e.singItem(task), ask = item.asks[0], plan = e.singPlan(ask, SAMPLE_RANGE, 1);
   const free = e.SING_FREE.includes(kind), line = free || (support && support.line);
-  const heard = plan.hear.length ? `the app plays ${plan.hear.length === 1 ? 'the note' : `the ${plan.hear.length} notes`} (${plan.hear.map(h => seconds(h.ms)).join(', ')}), ignoring the microphone while it plays and for a quarter of a second after, then` : 'then';
+  const heard = plan.hear.length ? `the app plays ${plan.hear.length === 1 ? 'the note' : `the ${plan.hear.length} notes`} in a soft hum-like tone, not a voice (${plan.hear.map(h => seconds(h.ms)).join(', ')}), ignoring the microphone while it plays and for a quarter of a second after, then` : 'then';
   const windows = plan.windows.map(w => seconds(w.ms)).join(' + ');
   const strip = line ? `the strip shows ${plan.bars.length ? 'the note as a bar and ' : ''}the voice as a line, drawn as it is sung` : `an empty strip with the words "${SAY.stripHidden}"`;
   const lines = [`#### ${label}: ${item.label} (a sung question${free ? '; nothing to match' : "; the notes are made fresh from the learner's range, inside it"})`, '', `**${paras(ask.prompt).join(' ')}**`, '',
@@ -264,21 +271,25 @@ function singLines(e, ref, support, label) {
     `- On the tap: the microphone turns on (it stays on for the group), ${heard} the learner sings in a window of ${windows}${plan.holdNeedMs ? `, and must stay on the note for ${seconds(plan.holdNeedMs)}` : ''}.`,
     `- While singing: ${strip}.`];
   if (kind === 'light') lines.push(`- Before the first of these in a group: two notes to set the scale, neither scored. "${SAY.singScaleLoud}" then "${SAY.singScaleTalk}"`);
-  if (kind === 'range') lines.push(`- The two windows say: "${SAY.singUp}" then "${SAY.singDown}" The lowest and highest steady notes are saved as the learner's range, once. If they are closer than a fifth: "${SAY.singNarrow}" and nothing is saved.`);
+  if (kind === 'range') lines.push(`- The two windows say: "${SAY.singUp}" then "${SAY.singDown}" The lowest and highest steady notes are saved as the learner's range, once. If the two ends are too close together: "${SAY.singNarrow}" and nothing is saved.`);
   if (kind === 'warmup') lines.push(`- It is not scored, stored or counted, and there is a "${SAY.singSkip}" link. It ends with "${SAY.singWarmupDone}".`);
   else if (kind === 'range') lines.push(`- After the try: "${SAY.singRangeSaved}". Reason: ${item.reason}`);
-  else lines.push(`- After the try, in words: ${Object.values(SAY.singWord).filter(w => w !== SAY.singWord.missed).join(', ')}${kind === 'hold' || kind === 'melody' ? ', and how long the note stayed steady' : ''}. The strip then shows ${plan.bars.length ? 'the note and ' : ''}the voice, with or without the line. Reason: ${item.reason}`);
-  if (kind !== 'warmup') lines.push(`- Nothing heard: "${SAY.singNothing}" The try is not counted and can be made again.${kind === 'range' ? '' : ' A miss comes back three tries later with a new note.'}`);
+  else {
+    const words = ['on', 'shadeUnder', 'shadeOver', 'wellUnder', 'wellOver', 'missed', ...(plan.turns ? ['slidUp', 'slidDown', 'hunt'] : [])].map(k => SAY.singWord[k]);
+    lines.push(`- After the try, in words${plan.hear.length > 1 ? ', one line for each note' : ''}: ${words.join(', ')}${kind === 'hold' || kind === 'melody' ? ', and how long the note stayed steady' : ''}. The strip then shows ${plan.bars.length ? 'the note and ' : ''}the voice, with or without the line. Reason: ${item.reason}`);
+    lines.push(`- After a miss, a line for each note that was off says which way to move and how far, for example "${SAY.singVoice.shadeUnder()}" or "${SAY.singVoice.wellOver(2)}"${plan.turns ? `; a note that slid onto the note says "${SAY.singSlidLine(1)}", and one that wandered up and down says "${SAY.singHuntLine}"` : ''}${kind === 'hold' ? `; a hold that broke says how long it stayed on and where it went, for example "${SAY.singHeldLine(1.4, task.seconds)}" then "${SAY.singDriftLine(-1)}", or, when it was off from the first moment, "${SAY.singStartLine(SAY.singVoice.shadeUnder())}"` : ''}${kind === 'melody' ? `; a long last note that did not hold says which way it went, for example "${SAY.singDriftLine(-1)}"` : ''}.`);
+  }
+  if (kind !== 'warmup') lines.push(`- Nothing heard: "${SAY.singNothing}" The try is not counted and can be made again.${kind === 'range' || summary ? '' : ' A miss comes back three tries later with a new note.'}`);
   lines.push(kind === 'warmup' ? '- Stored: nothing.' : `- Stored: numbers only (${kind === 'range' ? 'how much range was found' : 'how far off each note was, in whole hundredths of a half-step'}); no sound is recorded or sent anywhere.`, '');
   return lines;
 }
 const isSung = ref => typeof ref === 'object' && ref !== null && 'sing' in ref;
 // the sung questions of a group, each described once and its repeats named; `from` tries have been asked before it
-function sungRefLines(e, refs, support, label, from) {
+function sungRefLines(e, refs, support, label, from, summary = false) {
   let at = from;
   return refs.flatMap(ref => {
-    const first = `${label} ${at + 1}`, n = e.refCount(ref), lines = singLines(e, ref, support, first);
-    const more = n > 1 ? [`${label.replace(/y$/, 'ies')} ${at + 2} to ${at + n}: the same question, each with a new note drawn from the range.`, ''] : [];
+    const first = `${label} ${at + 1}`, n = e.refCount(ref), lines = singLines(e, ref, support, first, summary);
+    const more = n === 2 ? [`${label} ${at + 2}: the same question, with a new note drawn from the range.`, ''] : n > 2 ? [`${label.replace(/y$/, 'ies')} ${at + 2} to ${at + n}: the same question, each with a new note drawn from the range.`, ''] : [];
     at += n;
     return [...lines, ...more];
   });
@@ -337,6 +348,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
   const e = loaded.engine, data = { ...loaded, subjects: { ...loaded.subjects, __current: loaded.subjects[subjectId] } };
   MAPS = loaded.maps;
   GENS = loaded.subjects[subjectId].gens;
+  SAYS = e.SAY;
   const subject = loaded.subjects[subjectId], lesson = subject.lessons[lessonId];
   if (!lesson) throw new Error(`${subjectId} has no lesson ${lessonId}`);
   const part = (subject.meta.parts.find(p => p.id === lesson.part) || {}).title;
@@ -380,8 +392,11 @@ export function renderLesson(loaded, subjectId, lessonId) {
         + (set.plan ? ', with the learner\'s saved plan shown once first when there is one' : '');
       const help = set.support ? `, with help (${Object.entries(set.support).map(([k, v]) => v === true ? (k === 'panel' && checklist ? 'the checklist of what counts, shown beside the words' : HELP_WORDS[k] || k) : `${k} ${v}`).join(', ')})` : '';
       if (sung) {
-        out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum with the line drawn. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}. A missed try comes back at least three tries later, with a new note, until it is on the note.`, '');
-        out.push(...rangeFirst(e, refs, rangeShown), ...sungRefLines(e, refs, set.support, 'Try', n));
+        const summary = set.feedback === 'at-end';
+        const guess = set.guess ? ` After each try, ${summary ? '' : 'before the result, '}the screen asks "${e.SAY.singGuessAsk(refs[0].sing.task)}" with three buttons, ${Object.values(e.SAY.singGuessWord).map(w => `"${w}"`).join(', ')}; the answer is kept with the try and never scored, and ${summary ? 'the list at the end of the group' : 'the result then'} shows "${e.SAY.singGuessSaid('Under')}" (for example) with "${e.SAY.singGuessSame}" or, when the app measured it another way, for example "${e.SAY.singGuessOther('a shade over', 1, ['hold', 'melody'].includes(refs[0].sing.task) ? 'ended' : undefined)}"` : '';
+        const shown = summary ? ' No result is shown after a try: the strip stays empty, and the break screen at the end of the group lists how each try went, in the order sung. A missed try does not come back.' : ' A missed try comes back at least three tries later, with a new note, until it is on the note.';
+        out.push(`## ${at}: ${refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'Warm-up' : 'Tries'}`, '', refs.every(r => isSung(r) && r.sing.task === 'warmup') ? 'A hum; a line on the screen follows your voice. It is not scored and can be skipped.' : `${count} ${count === 1 ? 'try' : 'tries'}, ${set.order}${help}.${shown}${guess}`, '');
+        out.push(...rangeFirst(e, refs, rangeShown), ...sungRefLines(e, refs, set.support, 'Try', n, set.feedback === 'at-end'));
         n += count;
         if (!refs.every(r => isSung(r) && r.sing.task === 'warmup')) out.push('Then a screen: you can stop here, your place is kept.', '');
         else out.push('Then the next step: a warm-up has no break screen.', '');
@@ -408,7 +423,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
   const check = lesson.check, size = e.checkSize(check), baseline = lesson.role === 'baseline';
   const clockWords = check.seconds ? ` ${e.SAY.checkTimed(check.seconds)} A call is not on a clock.` : '';
   if (baseline) out.push('## The baseline', '', `${e.SAY.baselineIntro(size)}${clockWords}`, `It is not passed or failed: no rule is shown, nothing is shown per question${check.order === 'shuffle' ? ', and the questions come in mixed order' : ''}. It is stored as tries in the context "baseline", never counted in the results by lesson or in the schedule of a topic, and taken once.`, '');
-  else out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : check.recall ? e.SAY.checkIntroAgain(size).replace(/ To pass:$/, '') : e.checkIsDrawn(check) ? e.SAY.checkIntroDrawn(size).replace(/ To pass:$/, '') : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
+  else out.push('## The check', '', `${e.checkIsSung(check) ? `${size} new tries, with no line.` : e.checkHasSung(check) ? e.SAY.checkIntroMixed(e.checkParts(check).written, e.checkParts(check).sung).replace(/ To pass:$/, '') : check.recall ? e.SAY.checkIntroAgain(size).replace(/ To pass:$/, '') : e.checkIsDrawn(check) ? e.SAY.checkIntroDrawn(size).replace(/ To pass:$/, '') : `${size} new questions, no help.`} ${check.feedback === 'at-end' ? 'No answer is shown until the end.' : e.checkIsSung(check) ? 'The result, in words, is shown after each try.' : 'The answer is shown after each question.'}${check.order === 'shuffle' ? ' The questions come in mixed order.' : ''}${check.retest ? ` It comes back once, on new questions, ${check.retest} days after the first time.` : ''}`, '',
     ...(clockWords ? [clockWords.trim(), ''] : []), 'To pass:', ...check.pass.map(r => `- ${e.ruleText(subject, r, e.rightWord(check))}`), '');
   if (check.spoken) out.push(`The check is spoken: ${e.SAY.checkSpoken} Its first screen adds: ${e.SAY.checkUpdates}`, '');
   if (e.checkIsDrawn(check) && 'gen' in check.items.draw) {
@@ -421,7 +436,10 @@ export function renderLesson(loaded, subjectId, lessonId) {
     check.items.draw.strands.flatMap(id => Object.values(subject.items).filter(i => i.strand === id)).forEach(i => out.push(...questionLines(e, data, { key: i.id, item: i }, null, `Question in the draw: ${i.id}`)));
   }
   else if (e.checkIsSung(check)) out.push(...rangeFirst(e, e.flatRefs(check.items), rangeShown), ...sungRefLines(e, e.flatRefs(check.items), null, 'Check try', n));
-  else e.flatRefs(check.items).forEach(ref => { for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(ref), null, `Check question ${++n}`)); });
+  else e.flatRefs(check.items).forEach(ref => {
+    if (isSung(ref)) { out.push(...rangeFirst(e, [ref], rangeShown), ...sungRefLines(e, [ref], null, 'Check try', n)); n += e.refCount(ref); return; }
+    for (let k = 0; k < e.refCount(ref); k++) out.push(...questionLines(e, data, instance(ref), null, `Check question ${++n}`));
+  });
   // a compared facet is shown only when the check's questions carry two or more of its values (panel.js facetSplits): a check of questions with no level shows none
   const checkDefs = e.checkIsDrawn(check) ? ('strands' in check.items.draw ? Object.values(subject.items).filter(i => check.items.draw.strands.includes(i.strand)) : [])
     : e.flatRefs(check.items).map(r => subject.items[e.refId(r)]).filter(Boolean);
@@ -430,9 +448,19 @@ export function renderLesson(loaded, subjectId, lessonId) {
     const d = subject.meta.danger, text = (facet, v) => subject.meta.facets[facet].values.find(x => x.id === v).text, slip = subject.meta.lists.slip.find(x => x.id === d.slip).text;
     out.push('## The result', '', `One screen headed "${e.SAY.baselineDone}" with the one line the baseline ends on, for example "${e.SAY.baselineLine(text(d.facet, d.risky), 6, slip, 1, text(d.facet, d.real), 4, 4)}", then "${e.SAY.baselineNote}" and the way on to the next lesson. No pass, no rule, no answer. The subject's results screen shows the same line, on the day it was taken, under "${e.SAY.baselineRow('Oct 11')}".`, '');
   } else {
-  out.push('## The result', '', ...(compared.length ? [`Under the rules, the facets the subject compares are shown side by side: ${compared.map(f => `"${f.name}" (${f.values.map(v => v.text).join(' beside ')}, each as "n of m" right the first time)`).join('; ')}. The same is shown at the end of the weekly review.`, ''] : []), e.checkIsSung(check) ? 'For example "4 of 5 on the note: passed" or "3 of 5: not yet", each rule above shown as met or not met. The result of each try was shown as it was sung.' : 'For example "4 of 5: passed" or "3 of 5: not yet", each rule above shown as met or not met, then every answer with its feedback, the missed ones first.', '');
+  out.push('## The result', '', ...(compared.length ? [`Under the rules, the facets the subject compares are shown side by side: ${compared.map(f => `"${f.name}" (${f.values.map(v => v.text).join(' beside ')}, each as "n of m" right the first time)`).join('; ')}. The same is shown at the end of the weekly review.`, ''] : []), resultExample(e, check, size), '');
   }
   return out.join('\n');
+}
+
+// what the result screen says, with this check's own numbers
+function resultExample(e, check, size) {
+  const need = Math.max(...check.pass.map(r => r.right ? r.right.min : 0)), sung = e.checkIsSung(check);
+  const passed = e.SAY.checkPassed(size, size, sung), notYet = e.SAY.checkNotYet(Math.max(0, need - 1), size);
+  const each = check.feedback === 'at-end' ? ', then every answer with its feedback, the missed ones first.' : sung ? '. The result of each try was shown as it was sung.' : '. The answer to each was shown as it was given.';
+  return e.checkHasSung(check) && !sung
+    ? `A line such as "${passed}" or "${e.SAY.checkNotYet(size - 2, size)}" (all questions and tries together), then each rule above shown as met or not met${each}`
+    : `For example "${passed}" or "${notYet}", each rule above shown as met or not met${each}`;
 }
 
 async function main() {

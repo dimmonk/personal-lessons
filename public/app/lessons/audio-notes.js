@@ -8,6 +8,13 @@ const NEEDLE_FULL_CENTS = 100;   // the needle is all the way over at this dista
 const RANGE_LOW_HZ = 70;         // the voice range the pitch finder listens to
 const RANGE_HIGH_HZ = 1100;
 const DEFAULT_NOTES = ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4'];
+// The note a sung question plays is a soft hum-like tone, richer than a sine: the strength of the first four harmonics, the first (the note
+// itself) strongest and the rest falling away fast. It is not a voice and does not sound like one: a voice has formants, vibrato and an
+// uneven start, and its harmonics change with the vowel. The evidence for a target that sounds human is about a real voice, best the
+// singer's own (research note V3: Lévêque et al. 2012, Pfordresher & Mantell 2014); a made tone like this one probably keeps most of the
+// gap. What it gives over a sine is a fuller tone, easier to hear in the singer's own part of the range. The numbers are a judgement call,
+// not measured from a voice; the note itself stays the strongest, so the note heard is the note asked.
+const AUDIO_VOICE_HARMONICS = [1, 0.4, 0.15, 0.06];
 
 const AUDIO_A4_HZ = 440;
 const AUDIO_NOTE_SEMITONES = { C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 };

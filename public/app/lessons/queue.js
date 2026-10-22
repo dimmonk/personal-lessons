@@ -5,7 +5,8 @@
 // Nothing advances by itself: the learner taps Next.
 //
 // Q: { subj, data, list: [instance], at, cur: { a, many, done, score, left, taps, arrived, timedOut, words }, log, context, feedback: 'after-each' | 'at-end',
-//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt, spoken }
+//      support, redo, run, owner(instance) -> { lesson, rev }, shell(inner, actions), onDone(log), firstTotal, keepMic, seconds, over, busyAt, spoken, guess }
+// `guess`: a sung question asks the learner whether the note was under, on or over before it shows the result (sing-run.js)
 // A spoken run (`spoken`, the mock interview) holds the words of every question that is read aloud behind "Show the words" (speech-run.js).
 // A timed group or check (`seconds`, 4) gives each question that many seconds, counted on the frame clock (timer-run.js); at zero the question
 // stops with a timeout and waits for Next. A call or chat that pushes back is not timed. In a busy group (`over: 'busy'`) the banner of a question
@@ -30,7 +31,7 @@ function startQueue(opts){
   speechReset();
   // a question about the learner's own answers is asked with what they entered (recall.js); one whose answer is not entered is not asked
   const answers = notesOf(opts.subj.id).answers, list = opts.list.map(inst => recallWithOwn(inst, answers)).filter(inst => !inst.ownMissing);
-  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, seconds: null, over: null, spoken: false, ...opts, list, at: 0, log: [], firstTotal: list.length, busyAt: 0 };
+  Q = { support: null, redo: false, feedback: 'after-each', keepMic: false, seconds: null, over: null, spoken: false, guess: false, ...opts, list, at: 0, log: [], firstTotal: list.length, busyAt: 0 };
   Q.cur = freshCur(questionSeconds(Q.list[0]));
   paintQueue();
 }
@@ -52,7 +53,7 @@ function paintQueue(){
   }
   const inst = queueItem(), cur = Q.cur, sung = isSung(inst), busy = Q.over === 'busy', waiting = busy && !cur.arrived;
   const marks = cur.done && Q.feedback === 'after-each';
-  const body = waiting ? '' : itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, done: cur.done, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done) : null,
+  const body = waiting ? '' : itemHtml(Q.data, inst, { a: cur.a, many: cur.many, marks, done: cur.done, support: Q.support, sing: sung ? singView(inst, Q.support, cur.done, Q.feedback === 'after-each') : null,
     typed: cur.typed, looked: cur.looked, calc: cur.calc, speech: speechView(inst, cur),
     feedback: marks ? feedbackHtml(Q.data, inst, Q.support, cur.a, cur.score, { claim: Q.context !== 'baseline' }) : '' });
   const clock = cur.left === null || waiting ? '' : cur.done ? (cur.timedOut ? `<p class="timerup" data-timer-up>${esc(SAY.timerUp)}</p>` : '') : timerHtml(cur.left, Q.seconds);

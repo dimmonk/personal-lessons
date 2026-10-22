@@ -8,7 +8,9 @@
 // page is hidden, or when the learner turns it off.
 // SING is this question's try, replaced (never changed) at every step; the queue (queue.js) owns the question.
 //   { key, ask, plans, stage, phase, tryNo, lineOn, windowStartS, windowEndS, windowIdx, readings, points, answer, failure }
-//   phase: ready | starting | hear | sing | nothing | failed | result
+//   phase: ready | starting | hear | sing | nothing | failed | guess | result
+//   guess: the window has closed in a group that asks first (`guess`), and the learner says whether the note was under, on or over before
+//   the result is shown; the scored numbers wait in `answer` until then
 //   plans: the plans of the try (sing-task.js); a light question first has two for the learner's loud and talking notes (stage 0, 1)
 // Needs the queue (Q, answerAsk), the sound and microphone files, sing-task.js, sing-score.js and sing-strip.js.
 
@@ -66,13 +68,16 @@ function singButtonOf(s, plan){
   return { label: SING_FREE.includes(s.ask.task) ? SAY.singStart : plan.hear.length > 1 ? SAY.singGoMany : SAY.singGo };
 }
 // The view the strip and the controls are drawn from. The line and the targets are drawn only while the set's support shows the line
-// (a hum is always drawn: it has nothing else); once the try is scored the result is always drawn.
-function singView(inst, support, answered){
+// (a hum is always drawn: it has nothing else); once the try is scored the result is drawn, unless the group holds its results to the end
+// (`shown` false: Q.feedback 'at-end').
+function singView(inst, support, answered, shown = true){
   const s = singEnsure(inst, answered), plan = s.plans[s.stage], free = SING_FREE.includes(s.ask.task);
-  const showLine = free || !!(support && support.line), result = s.phase === 'result';
+  const showLine = free || !!(support && support.line), result = s.phase === 'result' && shown;
   const aiming = ['hear', 'sing', 'nothing'].includes(s.phase);
+  const guessing = s.phase === 'guess';
   return { plan, showLine, bars: plan.bars.length > 0 && (result || (showLine && aiming)), path: result || showLine ? voicePath(plan, s.points) : '',
-    hidden: !showLine && !result, prompt: singPromptOf(s), status: singStatusOf(s, plan), button: singButtonOf(s, plan),
+    hidden: !showLine && !result, prompt: guessing ? SAY.singGuessAsk(s.ask.task) : singPromptOf(s), status: singStatusOf(s, plan), button: singButtonOf(s, plan),
+    guess: guessing,
     skip: s.ask.task === 'warmup' && SING_IDLE.includes(s.phase),
     micLine: meterIsOn() ? SAY.micIsOn : s.phase === 'result' ? '' : SAY.micPrivate, micOff: meterIsOn() };
 }
@@ -81,7 +86,7 @@ function singRepaint(){
   const strip = document.querySelector('[data-sing-strip]'), controls = document.querySelector('[data-sing-ask]');
   const inst = Q && Q.list[Q.at];
   if(!SING || !strip || !controls || !inst || !isSung(inst)) return;   // the group has ended, or the screen has moved on
-  const view = singView(inst, Q.support, SING.phase === 'result');
+  const view = singView(inst, Q.support, SING.phase === 'result', Q.feedback === 'after-each');
   strip.innerHTML = stripHtml(view);
   controls.innerHTML = singControlsHtml(view);
   wireSingControls();
@@ -90,6 +95,7 @@ function wireSingControls(){
   on('#singGo', singTap);
   on('#singSkip', singSkip);
   on('#singMicOff', () => stopAudio());
+  on('[data-guess]', el => singGuess(el.dataset.guess));
 }
 function wireSing(inst, answered){
   singEnsure(inst, answered);
@@ -150,6 +156,18 @@ function singFinish(){
   if(plan.scale) return singScaleDone(s, plan);
   const answer = singScored(s, plan);
   if(answer.retry) return singRetry(answer.retry);
+  if(Q.guess && SING_GUESS_TASKS.includes(s.ask.task)){
+    setSing({ phase: 'guess', answer });
+    return singRepaint();
+  }
+  setSing({ phase: 'result', answer });
+  answerAsk(s.ask.id, answer);
+}
+// the learner says what they heard: kept with the numbers of the try, never scored, and then the result is shown
+function singGuess(word){
+  const s = SING;
+  if(!s || s.phase !== 'guess' || !SING_GUESS_WORDS.includes(word)) return;
+  const answer = { ...s.answer, guess: singGuessValue(word) };
   setSing({ phase: 'result', answer });
   answerAsk(s.ask.id, answer);
 }

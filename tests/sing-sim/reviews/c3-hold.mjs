@@ -1,0 +1,33 @@
+// Confirmation review 3's cases (its scratch script c3/hold.mjs), ported as written: each case is kept in tests/sing-cases.lock.json.
+import { A, run, ask, holdPlan, reseed } from './h.mjs';
+const h = ask('hold', { seconds: 2 }), p = holdPlan(2);
+const vib = (amp, hz=5.5, base=0) => ms => base + amp*Math.sin(2*Math.PI*hz*ms/1000);
+run('Y1 vibrato +-40 2.9s', h, p, [{ note:'D4', ms:2900, fn: vib(40) }]);
+run('Y2 vibrato +-55 2.9s', h, p, [{ note:'D4', ms:2900, fn: vib(55) }]);
+run('Y3 vibrato +-80 5Hz 2.9s', h, p, [{ note:'D4', ms:2900, fn: vib(80,5) }]);
+run('Y4 vibrato +-40 that sinks to -90 after 1s', h, p, [{ note:'D4', ms:2900, fn: ms => 40*Math.sin(2*Math.PI*5.5*ms/1000) + along2(ms) }]);
+function along2(ms){ return ms < 1000 ? 0 : Math.max(-90, -(ms-1000)*0.15); }
+run('Y5 two-step slide -300 -> -150 -> 0 then on', h, p, [{ note:'D4', path:[[0,-300],[150,-150],[450,-150],[600,0],[2900,0]] }]);
+run('Y6 two-step slide -300 -> -150 -> -70 stays', h, p, [{ note:'D4', path:[[0,-300],[150,-150],[450,-150],[600,-70],[2900,-70]] }]);
+reseed(21); run('Y7 on, jitter 10, 10% dropouts', h, p, [{ note:'D4', ms:2900, jitter:10, drop:0.1 }]);
+reseed(22); run('Y8 on, jitter 10, 25% dropouts', h, p, [{ note:'D4', ms:2900, jitter:10, drop:0.25 }]);
+reseed(23); run('Y9 on, jitter 25 (shaky)', h, p, [{ note:'D4', ms:2900, jitter:25 }]);
+reseed(24); run('Y10 on, 5% fifth errors', h, p, [{ note:'D4', ms:2900, jitter:8, fifth:0.05 }]);
+reseed(25); run('Y11 on, 10% octave errors', h, p, [{ note:'D4', ms:2900, jitter:8, octave:0.1 }]);
+reseed(26); run('Y12 -70, jitter 15, 20% dropouts', h, p, [{ note:'D4', ms:2900, cents:-70, jitter:15, drop:0.2 }]);
+run('Y13 late 0.8s, on 2.1s (ends at window end)', h, p, [{ note:'D4', at:800, ms:2150 }]);
+run('Y14 late 1.2s, on rest (1.8s)', h, p, [{ note:'D4', at:1200, ms:1800 }]);
+run('Y15 extremely short 0.3s', h, p, [{ note:'D4', ms:300 }]);
+run('Y16 short 0.3s at -80', h, p, [{ note:'D4', ms:300, cents:-80 }]);
+run('Y17 note only in last 200ms', h, p, [{ note:'D4', at:2800, ms:200 }]);
+run('Y18 on 2.1s, then last 200ms -150 (release fall)', h, p, [{ note:'D4', path:[[0,0],[2100,0],[2300,-150]] }]);
+run('Y19 on 1.6s, fall-off -300 last 250ms (fails)', h, p, [{ note:'D4', path:[[0,0],[1600,0],[1850,-300]] }]);
+run('Y20 octave low hold with -70 end', h, p, [{ note:'D3', path:[[0,0],[1200,0],[1600,-70],[2900,-70]] }]);
+run('Y21 on, breath gap 0.15s at 1s (2 nulls)', h, p, [{ note:'D4', ms:1000 }, { note:'D4', at:1150, ms:1750 }]);
+run('Y22 on 1.2s, off -150 0.3s, back on 1.4s', h, p, [{ note:'D4', path:[[0,0],[1200,0],[1250,-150],[1500,-150],[1550,0],[2900,0]] }]);
+run('Y23 on 1.2, dip -80 0.2s, back on 1.4 (brief)', h, p, [{ note:'D4', path:[[0,0],[1200,0],[1250,-80],[1400,-80],[1450,0],[2900,0]] }]);
+run('Y24 on 1s, -80 1s, then rose +80 to end', h, p, [{ note:'D4', path:[[0,0],[1000,0],[1100,-80],[2000,-80],[2100,80],[2900,80]] }]);
+run('Y25 -70 0.5s then on 1.5s then -70', h, p, [{ note:'D4', path:[[0,-70],[500,-70],[600,0],[2000,0],[2100,-70],[2900,-70]] }]);
+run('Y26 +70 then crossed to -70', h, p, [{ note:'D4', path:[[0,70],[1200,70],[1600,-70],[2900,-70]] }]);
+run('Y27 on 1.9s exactly then stop', h, p, [{ note:'D4', ms:1950 }]);
+run('Y28 -40 (within) slowly to -60 (out) at end', h, p, [{ note:'D4', path:[[0,-40],[1500,-45],[2900,-65]] }]);

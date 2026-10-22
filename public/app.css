@@ -330,6 +330,10 @@ table.k.results td:last-child{text-align:right;font-family:var(--mono);color:var
 .pitchstrip .voice{fill:none;stroke:var(--text);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
 .singask .btn{align-self:flex-start;width:auto;padding:0 22px}
 .singsay{margin:0;min-height:1.5em;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--dim)}
+/* example sounds on a teaching screen */
+.block-tones .opt.tone{flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;text-align:left}
+.block-tones .toneicon{display:flex;flex:none}
+.block-tones .opt.tone[aria-pressed="true"]{border-color:var(--text);color:var(--text)}
 
 /* ---------- a typed number, its calculator, documents and figures ---------- */
 .numframe{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}

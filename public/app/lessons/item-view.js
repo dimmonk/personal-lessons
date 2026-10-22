@@ -40,7 +40,7 @@ function pairHtml(block, ctx){
 }
 const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pitchHtml(block, ctx), document: (block, ctx) => documentHtml(block, ctx), figure: block => figureHtml(block),
   ref: (block, ctx) => refHtml(block, ctx), article: (block, ctx) => articleHtml(block, ctx), chart: block => chartHtml(block), panel: (block, ctx) => panelHtml(block, ctx), message: (block, ctx) => messageHtml(block, ctx),
-  spoken: (block, ctx) => spokenHtml(block, ctx), map: (block, ctx) => mapBlockHtml(block, ctx), flags: (block, ctx) => flagsHtml(block, ctx) };
+  spoken: (block, ctx) => spokenHtml(block, ctx), map: (block, ctx) => mapBlockHtml(block, ctx), flags: (block, ctx) => flagsHtml(block, ctx), tones: block => tonesHtml(block) };
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }

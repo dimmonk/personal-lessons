@@ -205,6 +205,20 @@ function wholeCheck(app, run, wrong = []) {
   check(l2.length === 3 && l2.every(i => i.item.strand === 'timing') && new Set(l2.map(i => i.key)).size === 3, 'a retest never repeats a question within itself');
 }
 
+/* ---------- a retest of a check with sung tries (3.8, 6.4) ---------- */
+{
+  const app = await fresh();
+  app.on('2026-10-01');
+  const d = app.FC.get('chorus'), l1 = d.lessons.l1, lesson = { ...l1, check: { ...l1.check, retest: 7 } };
+  const rt = app.retestInstances(d, 'chorus', lesson, 'rt');
+  check(rt.length === app.checkSize(l1.check) && rt.every(i => i.key === 'sing-match' && i.item.asks[0].kind === 'sing' && i.item.asks[0].task === 'match')
+    && new Set(rt.map(i => i.seed)).size === rt.length, 'a retest of a sung check sings as many new targets of its own task as the check');
+  app.recordTry('chorus', 'sing-match', attempt('x', 'check', true, { seed: rt[0].seed }));
+  check(!app.retestInstances(d, 'chorus', lesson, 'rt').some(i => i.seed === rt[0].seed), 'and never on a target a try already sang');
+  const two = d.lessons.l2, rt2 = app.retestInstances(d, 'chorus', { ...two, check: { ...two.check, retest: 7 } }, 'rt2');
+  check(rt2.length === 1 && rt2[0].item.asks[0].minSemitones === 2 && rt2[0].item.asks[0].maxSemitones === 5, 'a sung retest keeps the task\'s own settings');
+}
+
 /* ---------- a drawn check ---------- */
 {
   const app = await fresh(), d = data(app);

@@ -18,8 +18,8 @@ export const ENGINE_FILES = ['app/helpers.js', 'app/lessons/view.js', 'app/lesso
   'app/lessons/audio-notes.js'];
 export const ENGINE_NAMES = ['ASK_KINDS', 'BLOCK_KINDS', 'RETURN_GAPS', 'chooseOptions', 'scoreChoose', 'askedAsks', 'shownStepIds', 'ruleCounts', 'ruleMet', 'ruleText',
   'checkResult', 'supportWeight', 'flatRefs', 'checkSize', 'checkIsDrawn', 'flowSets', 'refId', 'refCount', 'whereMatches', 'isRangeParam', 'drawParam', 'genValues',
-  'itemFromGen', 'slotsIn', 'segmentsOf', 'definitionOf', 'seededRandom', 'asList', 'checkIsSung', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE',
-  'SING_RANGE_MIN_SPAN', 'singTaskProblems', 'singPlan', 'singKey', 'isSingKey', 'noteToMidi', 'singItem', 'rightWord', 'SING_LOUD_LIMIT', 'SING_MELODY_HOLD_MS', 'SAY',
+  'itemFromGen', 'slotsIn', 'segmentsOf', 'definitionOf', 'seededRandom', 'asList', 'checkIsSung', 'checkHasSung', 'checkParts', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE',
+  'SING_RANGE_MIN_SPAN', 'SING_GUESS_TASKS', 'audioBlockProblems', 'singTaskProblems', 'singPlan', 'singKey', 'isSingKey', 'noteToMidi', 'singItem', 'rightWord', 'SING_LOUD_LIMIT', 'SING_MELODY_HOLD_MS', 'SAY',
   'parseTyped', 'fmtNumber', 'frameParts', 'slotCount', 'numberAnswers', 'numbersMatch', 'scoreNumber', 'tolOf', 'withinTol', 'isEstimateAsk', 'frameFilled',
   'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'CALC_EXTRAS', 'calcExtraKeys', 'ESTIMATE_TRAP_GAP', 'NUMBER_BAND', 'formFieldAsk', 'formFieldText', 'formFieldRight', 'OWN_SLOTS', 'OWN_REQUIRED', 'ownValidDay', 'OWN_WORKS', 'OWN_ACCOUNT', 'OWN_KIND',
   'tapPick', 'tapRightIds', 'tapSegments', 'scoreTap', 'tapRightText', 'TAP_NONE', 'chartProblems', 'chartFromZero', 'chartTicks',

@@ -2,7 +2,7 @@
 // Lesson standard 3.9 (the `pitch` block) and 3.8 (the line). The strip shows time across and the learner's voice up, the targets as
 // bars and the voice as a line drawn as they sing. It is drawn from a view the sing controller (sing-run.js) builds: these functions only
 // turn a view into HTML and a list of points into a path, so nothing here reads the page, the sound system or storage.
-// A view: { plan, showLine, bars, path, status, prompt, button, skip, micLine, micOff, hidden }
+// A view: { plan, showLine, bars, path, status, prompt, button, skip, micLine, micOff, hidden, guess }
 // Needs esc, SAY, noteToMidi, hzToMidi, RANGE_LOW_HZ, RANGE_HIGH_HZ (audio-notes.js) and the SING_ constants (sing-task.js, sing-score.js).
 
 const STRIP = { w: 300, h: 140, pad: 8, barMin: 8 };
@@ -63,34 +63,63 @@ function singControlsHtml(view){
   const button = view.button ? `<button class="btn sm" id="singGo" ${view.button.disabled ? 'disabled' : ''}>${esc(view.button.label)}</button>` : '';
   const skip = view.skip ? `<button class="linkish" id="singSkip">${esc(SAY.singSkip)}</button>` : '';
   const mic = view.micLine ? `<p class="hintline">${esc(view.micLine)}</p>${view.micOff ? `<button class="linkish" id="singMicOff">${esc(SAY.micTurnOff)}</button>` : ''}` : '';
-  return `<p class="stem">${esc(view.prompt)}</p><p class="singsay" role="status" aria-live="polite">${esc(view.status)}</p>${button}${skip}${mic}`;
+  const guess = view.guess ? `<div class="opts" data-guess-row>${SING_GUESS_WORDS.map(w => `<button class="opt" data-guess="${w}">${esc(SAY.singGuessWord[w])}</button>`).join('')}</div>` : '';
+  return `<p class="stem">${esc(view.prompt)}</p><p class="singsay" role="status" aria-live="polite">${esc(view.status)}</p>${guess}${button}${skip}${mic}`;
 }
 function singAskHtml(data, ask, st){
   return st.sing ? `<div class="stepopen prompt singask" data-ask="${esc(ask.id)}" data-sing-ask>${singControlsHtml(st.sing)}</div>` : '';
 }
 
 /* ---------- the result of a try, in words (never numbers) ---------- */
-const tenths = ms => Math.round(ms / 100) / 10;
-// the marks after a sung answer: one for a note, one for each note of a run, one for a hold, one for the range
+// seconds in tenths, never rounded up: a hold 50 ms short never shows the seconds it needed
+const tenths = ms => Math.floor(ms / 100) / 10;
+// the marks after a sung answer: one for a note, one for each note of a run, one for a hold, one for the range. Every word comes from singJudge
+// (sing-judge.js), the one reading of what each note was.
 function singMarksHtml(ask, answer, ok){
   const mark = (good, label, detail) => `<div class="mark ${good ? '' : 'no'}"><span class="verd">${esc(label)}</span>${detail ? `<span class="ans">${esc(detail)}</span>` : ''}</div>`;
   if(ask.task === 'range') return mark(ok, SAY.singRangeSaved);
   if(ask.task === 'warmup') return mark(true, SAY.singWarmupDone);
-  if(ask.task === 'hold') return mark(ok, SAY.singHeld(tenths(answer.holdMs), ask.seconds));
-  const words = answer.cents.map(c => ({ key: singWordKey(ask, c), good: singOnNote(ask, c) }));
-  const notes = words.map((w, i) => words.length > 1 ? mark(w.good, SAY.singNoteN(i + 1), SAY.singWord[w.key]) : mark(w.good, SAY.singWord[w.key]));
-  const long = ask.task === 'melody' ? [mark(answer.holdMs >= SING_MELODY_HOLD_MS, SAY.singHeld(tenths(answer.holdMs), SING_MELODY_HOLD_MS / 1000))] : [];
+  const judged = singJudge(ask, answer);
+  // what the learner said they heard, beside what was measured: never scored, so it is marked only as agreeing or not
+  const said = Number.isInteger(answer.guess) ? [mark(singGuessAgrees(ask, answer), SAY.singGuessSaid(SAY.singGuessWord[singGuessWord(answer.guess)]), singGuessAgrees(ask, answer) ? SAY.singGuessSame : singGuessOtherText(ask, answer))] : [];
+  if(ask.task === 'hold'){ const h = judged.last; return [mark(ok, SAY.singHeld(tenths(answer.holdMs), ask.seconds) + singHowText(h)), ...said].join(''); }
+  const notes = judged.notes.map((j, i) => judged.notes.length > 1 ? mark(j.good, SAY.singNoteN(i + 1), SAY.singWord[j.key]) : mark(j.good, SAY.singWord[j.key]));
+  const long = ask.task === 'melody' ? [mark(answer.holdMs >= SING_MELODY_HOLD_MS, SAY.singHeld(tenths(answer.holdMs), SING_MELODY_HOLD_MS / 1000) + (['offStart', 'steady'].includes(judged.last.id) ? singHowText(judged.last) : ''))] : [];   // the note's own mark already names a drift, a wander or a stop
   const loud = ask.task === 'light' && answer.loud > SING_LOUD_LIMIT ? [mark(false, SAY.singLoud)] : [];
-  return [...notes, ...long, ...loud].join('');
+  return [...notes, ...long, ...loud, ...said].join('');
 }
-// after a miss, one line on what the voice did
+// what the app measured, when the learner heard it another way: which way their note really was from what they heard
+function singGuessOtherText(ask, answer){
+  const m = singMeasured(ask, answer);
+  if(!m) return SAY.singGuessUnheard;
+  return m.side === null ? SAY.singGuessNeither(SAY.singWord[m.key].toLowerCase()) : SAY.singGuessOther(SAY.singWord[m.key].toLowerCase(), m.side - answer.guess, m.part);
+}
+// one line on how far off a note was and which way to move, in half-steps (defined in lesson 2 of Singing)
+const singVoiceLine = (ask, cents) => { const key = singWordKey(ask, cents); return SAY.singVoice[key](singHalfSteps(cents)); };
+// how a held note went, after "Steady for n seconds": its outcome and parts (sing-judge.js)
+const singHowText = j => j.id === 'missed' ? '' : SAY.singHeldHow(j.id, j.parts.middle ? j.parts.middle.kind : null, j.parts.endSide, j.parts.begin ? j.parts.begin.kind : null);
+// one judged line in words (singJudgeNote's lines)
+function singLineText(ask, [kind, value], need){
+  switch(kind){
+    case 'voice': return singVoiceLine(ask, value);
+    case 'start': return SAY.singStartLine(singVoiceLine(ask, value));
+    case 'slid': return SAY.singSlidLine(value);
+    case 'slidOff': return SAY.singSlidOffLine(value);
+    case 'stopped': return SAY.singStoppedLine(tenths(value), need / 1000);
+    case 'hunt': return SAY.singHuntLine;
+    case 'drift': return SAY.singDriftLine(value);
+    case 'further': return SAY.singFurtherLine(value);
+    case 'found': return SAY.singFoundLine;
+    case 'wander': return SAY.singDriftLine(0);
+    case 'held': return SAY.singHeldLine(tenths(value), need / 1000);
+    default: return SAY.singVoice.missed();
+  }
+}
+// after a try, the lines of each note that needs one, in the note's own order (singJudge), and a loud light note
 function singMissHtml(ask, answer){
-  const line = (text, n) => `<p>${n ? `<b>${esc(SAY.singNoteN(n))}.</b> ` : ''}${esc(text)}</p>`;
-  if(ask.task === 'hold') return `<div class="vblock">${line(SAY.singHeldLine(tenths(answer.holdMs), ask.seconds))}</div>`;
-  const off = answer.cents.map((c, i) => ({ c, i })).filter(x => !singOnNote(ask, x.c))
-    .map(x => line(SAY.singVoice[singWordKey(ask, x.c)], answer.cents.length > 1 ? x.i + 1 : 0));
-  const long = ask.task === 'melody' && answer.holdMs < SING_MELODY_HOLD_MS ? [line(SAY.singHeldLine(tenths(answer.holdMs), SING_MELODY_HOLD_MS / 1000))] : [];
+  const line = (text, n) => `<p>${n ? `<b>${esc(SAY.singNoteN(n))}.</b> ` : ''}${esc(text)}</p>`, judged = singJudge(ask, answer), many = judged.notes.length > 1;
+  const lines = judged.notes.flatMap((j, i) => j.lines.filter(l => l[0] !== 'missed' || many).map((l, k) => line(singLineText(ask, l, j.need), many && k === 0 ? i + 1 : 0)));
   const loud = ask.task === 'light' && answer.loud > SING_LOUD_LIMIT ? [line(SAY.singLoudLine)] : [];
-  const lines = [...off, ...long, ...loud];
-  return lines.length ? `<div class="vblock">${lines.join('')}</div>` : '';
+  const all = [...lines, ...loud];
+  return all.length ? `<div class="vblock">${all.join('')}</div>` : '';
 }

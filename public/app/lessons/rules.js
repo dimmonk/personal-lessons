@@ -4,7 +4,7 @@
 
 // The ask kinds and block kinds built so far (10.3). A lesson that uses another fails V70 until its step is built.
 const ASK_KINDS = ['choose', 'number', 'form', 'sing', 'tap', 'text', 'exchange', 'order', 'place'];
-const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message', 'spoken', 'map', 'flags'];
+const BLOCK_KINDS = ['prose', 'pair', 'pitch', 'document', 'figure', 'ref', 'article', 'chart', 'panel', 'message', 'spoken', 'map', 'flags', 'tones'];
 const RETURN_GAPS = [2, 7, 24];   // days: after the check or a miss, after the first good day, after the second (6)
 
 const sameIds = (a, b) => a.length === b.length && a.every(x => b.includes(x));
@@ -92,8 +92,10 @@ const facetValueText = (data, facet, value) => (((data.meta.facets || {})[facet]
 const slipText = (data, slip) => ((((data.meta.lists || {}).slip) || []).find(s => s.id === slip) || { text: slip }).text;
 // A pass rule in plain words, for the check's first screen and its result: "At least 8 right", "None wrong among control patterns". `of` names
 // what a rule counts when a facet cannot ("At least 3 right (what the account costs a year)").
-// A sung check says "on the note" where others say "right" (the caller passes the word).
+// A sung check says "on the note" where others say "right" (the caller passes the word), and so does a rule that counts only sung tries
+// (`ask: 'sing'`) in a check that also has written questions.
 function ruleText(data, rule, right = 'right'){
+  if(rule.ask === 'sing') right = SING_RIGHT;
   const scope = rule.where ? ' among ' + Object.entries(rule.where).map(([f, v]) => facetValueText(data, f, v)).join(', ') : '';
   const parts = [
     ...(rule.right ? [`At least ${rule.right.min} ${right}${scope}`] : []),
@@ -113,9 +115,14 @@ const refCount = ref => typeof ref === 'object' && ref !== null ? ref.n : 1;
 // Item references of a list, pairs flattened: [ItemRef]
 const flatRefs = items => items.flatMap(r => Array.isArray(r) ? r : [r]);
 const checkIsDrawn = check => !Array.isArray(check.items);
-// a check of sung questions says "on the note" where others say "right"
-const checkIsSung = check => !checkIsDrawn(check) && flatRefs(check.items).some(r => typeof r === 'object' && r !== null && 'sing' in r);
-const rightWord = check => checkIsSung(check) ? 'on the note' : 'right';
+// a check of sung questions only says "on the note" where others say "right"; a check with both (`checkHasSung`) counts each by its own rule
+const SING_RIGHT = 'on the note';
+const isSungRef = r => typeof r === 'object' && r !== null && 'sing' in r;
+const checkHasSung = check => !checkIsDrawn(check) && flatRefs(check.items).some(isSungRef);
+const checkIsSung = check => checkHasSung(check) && flatRefs(check.items).every(isSungRef);
+const rightWord = check => checkIsSung(check) ? SING_RIGHT : 'right';
+// how many written questions and sung tries a check has: { written, sung }
+const checkParts = check => checkIsDrawn(check) ? { written: checkSize(check), sung: 0 } : flatRefs(check.items).reduce((n, r) => isSungRef(r) ? { ...n, sung: n.sung + refCount(r) } : { ...n, written: n.written + refCount(r) }, { written: 0, sung: 0 });
 // A drawn check (3.4) draws `n` questions of the named strands, or from one place group (`gen`) as many of each form as its `split` says
 const drawSize = draw => 'gen' in draw ? Object.values(draw.split).reduce((n, k) => n + k, 0) : draw.n;
 const drawStrands = (data, draw) => 'gen' in draw ? [(data.gens[draw.gen] || lessonFail(`unknown generator ${draw.gen}`)).strand] : draw.strands;

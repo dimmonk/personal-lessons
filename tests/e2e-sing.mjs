@@ -2,7 +2,7 @@
 // what it is asked for, what it never hears, what it does when it is refused), X11 (only numbers are stored), X12 (the sung screens fit a phone,
 // in plain words) and X16 (the sing ask: known pitches fed in as the microphone are scored on and off at 25 cents, an octave away counts, a hold is
 // timed, each note of a run is scored, the line is drawn only with the line, the range is stored once and every target lies inside it, the
-// microphone is released).
+// microphone is released; and the retest of a check with sung tries, due after its days, sung on new targets and kept).
 //
 // What is real here: the app's own sound code runs in Chromium, and so do its AudioContext, analyser, pitch finder and frame loop. The page's
 // getUserMedia answers from a sound this test sets (tests/fixtures/audio-recorder.mjs), so the real analyser reads a real stream. The test plays
@@ -16,7 +16,7 @@ import * as D from './e2e-sing-drive.mjs';
 
 const RANGE = { low: 'A2', high: 'E4', set: '2026-10-10' };   // 45 to 64 half-steps
 const LOW = 45, HIGH = 64, MIDDLE = [48, 61];
-const MUSIC_WORDS = /\b(cents?|hertz|hz|semitones?|half-steps?|octaves?|pitch|frequency|larynx|diaphragm)\b/i;
+const MUSIC_WORDS = /\b(cents?|hertz|hz|semitones?|octaves?|pitch|frequency|larynx|diaphragm)\b/i;
 const frames = (page, n = 3) => page.evaluate(n => new Promise(done => { const tick = left => left ? requestAnimationFrame(() => tick(left - 1)) : done(); tick(n); }), n);
 const labelOf = page => page.locator('.qlabel').first().textContent().then(t => t.trim());
 // a played note (Hz) lies within [low, high] half-steps
@@ -30,7 +30,7 @@ async function openSung(env, c, { subject, lesson, width = 390, recorder = 'gran
   if (range || at) {
     await page.evaluate(([s, l, r, a]) => {
       if (r) saveNote(s, 'range', r);
-      if (a) saveSeenLesson(s, l, { rev: 1, at: a });
+      if (a) saveSeenLesson(s, l, { rev: FC.get(s).lessons[l].rev, at: a });
     }, [subject, lesson, range, at]);
     await env.reload(page);
   }
@@ -47,7 +47,9 @@ async function sungTry(page, how) {
   const during = await D.stripState(page);
   await how(page, heard[0].hz, heard);
   await D.waitOutcome(page);
-  return { heard, during, phase: await D.phase(page), marks: await D.marksText(page), say: await D.sayText(page), after: await D.stripState(page) };
+  const guessText = await page.evaluate(() => document.querySelector('#screen').textContent);
+  const guessed = await D.answerGuess(page);
+  return { heard, during, guessed, guessText, phase: await D.phase(page), marks: await D.marksText(page), say: await D.sayText(page), after: await D.stripState(page) };
 }
 const note = (cents, seconds = 1.4) => (page, hz) => D.singNote(page, hz, cents, seconds);
 const mic = page => recorded(page);
@@ -63,12 +65,14 @@ async function singRun(page, heard, cents, seconds) {
 const tries = (page, subject, key) => D.storedTries(page, subject, key);
 
 /* ---------- X8: nothing sounds, nothing listens, until a tap ---------- */
-async function untouched(c, page, label) {
+// `before`: what earlier taps on the page already made (a later screen is judged on what it adds)
+async function untouched(c, page, label, before = { contexts: 0 }) {
   await frames(page);
   await page.waitForTimeout(400);
   const seen = await mic(page), made = await page.evaluate(() => AUDIO_STATE.ctx !== null);
-  c.check(seen.contexts === 0 && !made, `${label}: a sound system was made before any tap`);
-  c.check(seen.oscillators === 0, `${label}: a sound was scheduled before any tap`);
+  const sounding = (await D.appOscillators(page)).filter(o => !o.ended).length;
+  c.check(seen.contexts === before.contexts && (before.contexts > 0 || !made), `${label}: a sound system was made before any tap`);
+  c.check(before.contexts > 0 ? sounding === 0 : seen.oscillators === 0, `${label}: a sound was scheduled before any tap`);
   c.check(seen.micCalls === 0, `${label}: the microphone was asked for before any tap`);
 }
 export async function X8(env) {
@@ -94,7 +98,25 @@ export async function X8(env) {
   const after = await mic(page);
   c.check(before.contexts === 0 && after.contexts === 1 && after.micCalls === 1 && after.oscillators >= 1, 'a tap on the button did not start the sound and the microphone');
   await context.close();
+  await examplesHalf(env, c);
   return c;
+}
+// example sounds on a teaching screen (lesson 3, steps 3 and 4): nothing before a tap, a tap plays without the microphone, the screen's Go on stops it
+async function examplesHalf(env, c) {
+  const { context, page } = await openSung(env, c, { subject: 'singing', lesson: 'l3', at: 3 });
+  await untouched(c, page, 'a teaching screen with example sounds, before a tap');
+  const buttons = page.locator('[data-tone]');
+  c.check(await buttons.count() === 3, `the screen does not show three example sounds (${await buttons.count()})`);
+  await buttons.nth(1).click();
+  await page.waitForFunction(() => __rec.oscillators.filter(o => !o.fake && !o.offline).length >= 2, null, { timeout: 8000 });
+  const playing = await mic(page);
+  c.check(playing.contexts === 1 && playing.micCalls === 0 && playing.oscillators === 2, `a tap on an example sound made ${playing.contexts} sound systems, ${playing.oscillators} tones and ${playing.micCalls} microphone requests`);
+  c.check(await buttons.nth(1).getAttribute('aria-pressed') === 'true', 'the example sound playing is not shown as playing');
+  await env.goOn(page);
+  await D.sleep(page, 300);
+  c.check((await D.appOscillators(page)).every(o => o.ended), 'an example sound kept playing after the learner moved on');
+  await untouched(c, page, 'the next teaching screen, before a tap', { contexts: 1 });
+  await context.close();
 }
 
 /* ---------- X10: the microphone ---------- */
@@ -139,7 +161,7 @@ export async function X10(env) {
 }
 
 /* ---------- X11: only numbers are stored ---------- */
-const NUMBER_FIELDS = ['cents', 'holdMs', 'loud', 'span', 'steady'];
+const NUMBER_FIELDS = ['cents', 'start', 'end', 'turns', 'left', 'land', 'holdMs', 'loud', 'span', 'steady', 'guess'];
 export async function X11(env) {
   const c = env.checker('X11'), { context, page } = await openSung(env, c, { subject: 'singing', lesson: 'l2', range: RANGE, at: 3 });
   await sungTry(page, note(0)); await finish(page);
@@ -191,10 +213,16 @@ export async function X12(env) {
     await D.singNote(page, heard[0].hz, 5, 1.4); await D.waitOutcome(page);
     await inspectSung(env, c, page, `${width}px a question with the line, after the result`);
     await page.evaluate(() => moveLesson(4)); await inspectSung(env, c, page, `${width}px a question with no line`);
+    const noLine = await D.tapAndHear(page);
+    await D.singNote(page, noLine[0].hz, 5, 1.4); await D.waitPhase(page, 'guess');
+    await inspectSung(env, c, page, `${width}px saying under, on or over before the result`);
+    await D.answerGuess(page, 'under'); await inspectSung(env, c, page, `${width}px the result beside what was said`);
     await page.evaluate(() => moveLesson(checkStep(LESSON.lesson))); await inspectSung(env, c, page, `${width}px the check's first screen`);
     await env.goOn(page); await inspectSung(env, c, page, `${width}px a question in the check`);
     await env.clickVisible(page, '[data-v="subject"]'); await inspectSung(env, c, page, `${width}px the subject, with its range`);
     c.check((await env.screenText(page)).includes('Your range') && (await page.locator('[data-own="range"]').textContent()).includes('A2 to E4'), `${width}px: the subject does not show the learner's range`);
+    await env.clickVisible(page, '#screen [data-l="l3"]');
+    await page.evaluate(() => moveLesson(3)); await inspectSung(env, c, page, `${width}px example sounds on a teaching screen`);
     await context.close();
   }
   return c;
@@ -227,8 +255,8 @@ async function tasksHalf(env, c) {
   c.check(inTolerance.marks.join() === 'On the note', `a note 20 off is "${inTolerance.marks}"`);
   await finish(page);
   const over = await sungTry(page, note(40));
-  c.check(over.marks.join() === 'A shade over' && await page.locator('.mark.no').count() === 1, `a note 40 over is "${over.marks}"`);
-  c.check((await page.locator('.feedback').textContent()).includes('Your voice sat a shade over the note.'), 'no line says how the voice sat after a miss');
+  c.check(over.marks.join() === 'A little over' && await page.locator('.mark.no').count() === 1, `a note 40 over is "${over.marks}"`);
+  c.check((await page.locator('.feedback').textContent()).includes('Your voice sat a little over the note, within half a half-step: sing a touch lower.'), 'no line says how the voice sat after a miss, which way to move and how far');
   c.check(!(await page.locator('.feedback').textContent()).includes('40'), 'the result shows a number');
   c.check((await tries(page, 'chorus', 'sing-match'))[2].ok === false, 'a note outside the tolerance was stored as right');
   await finish(page);
@@ -263,7 +291,7 @@ async function tasksHalf(env, c) {
   await finish(page);
   const broken = await sungTry(page, async (p, hz) => { await D.singNote(p, hz, 0, 0.9); await D.setMic(p, D.centsUp(hz, 60)); await D.sleep(p, 1700); await D.setMic(p, 0); });
   const heldMs = (await tries(page, 'chorus', 'sing-hold'))[1].a.sing.holdMs;
-  c.check(/^Steady for [01](\.\d)? of 2 seconds$/.test(broken.marks[0]) && heldMs < 1300 && heldMs > 500 && await page.locator('.mark.no').count() === 1, `a hold that broke off is "${broken.marks}" (${heldMs} ms)`);
+  c.check(/^Steady for [01](\.\d)? of 2 seconds, then rose over$/.test(broken.marks[0]) && heldMs < 1300 && heldMs > 500 && await page.locator('.mark.no').count() === 1, `a hold that broke off is "${broken.marks}" (${heldMs} ms)`);
   await finish(page);
   await sungTry(page, note(0, 2.6)); await finish(page);
   await env.goOn(page);
@@ -286,7 +314,7 @@ async function tasksHalf(env, c) {
   c.check(check1.marks.join() === 'On the note', 'a check shows its result after each try');
   await finish(page);
   const check2 = await sungTry(page, note(50));
-  c.check(check2.marks.join() === 'A shade over', `a check note 50 over is "${check2.marks}"`);
+  c.check(check2.marks.join() === 'A little over', `a check note 50 over is "${check2.marks}"`);
   await finish(page);
   c.check((await env.screenText(page)).includes('1 of 2 on the note: passed'), `the check result reads "${(await env.screenText(page)).slice(60, 200)}"`);
   c.check((await mic(page)).tracks.every(t => t === 'ended'), 'the microphone is still on after the group ended');
@@ -384,7 +412,11 @@ async function pilotHalf(env, c) {
       c.check(await labelOf(page) === `Match the note · ${i + 1} of ${count}`, `${name}: the label of try ${i + 1} reads "${await labelOf(page)}"`);
       const t = await sungTry(page, note(cents[i % cents.length]));
       played.push(Math.round(D.midiOfHz(t.heard[0].hz)));
-      c.check(t.marks.join() === 'On the note', `${name}: try ${i + 1} sung ${cents[i % cents.length]} off is "${t.marks}"`);
+      c.check(t.marks[0] === 'On the note', `${name}: try ${i + 1} sung ${cents[i % cents.length]} off is "${t.marks}"`);
+      // without the line the learner says under, on or over before the result, and it is kept with the try and never scored
+      c.check(line ? t.guessed === null : t.guessed === 3 && t.guessText.includes('was your note under, on or over') && !t.guessText.includes('On the note') && t.marks.includes('You said: On The app measured it the same way.'),
+        `${name}: try ${i + 1} ${line ? 'asked what was heard with the line on' : `did not ask under, on or over before the result (${t.guessed}, ${t.marks})`}`);
+      if (!line) { const kept = (await tries(page, 'singing', 'sing-match')).pop(); c.check(kept.a.sing.guess === 0 && kept.ok === true, `${name}: what was heard is not kept with the try (${JSON.stringify(kept.a)})`); }
       if (i === 0) c.check(t.during && t.during.line === (line ? 'on' : 'off') && t.during.bars === (line ? 1 : 0), `${name}: the strip while singing is ${JSON.stringify(t.during)}`);
       await finish(page);
     }
@@ -392,6 +424,7 @@ async function pilotHalf(env, c) {
   };
   await group('the tries with the line', true, 8, [-8, 12, -15, 6, 18, -4, 10, -12]);
   await group('the tries without the line', false, 8, [9, -11, 4, -17, 14, -6, 12, -3]);
+  await env.goOn(page);   // one thing to do away from the phone
   c.check(played.every(m => m >= lowM && m <= highM) && played.some(m => m !== played[0]), `a target fell outside the stored range ${range.low} to ${range.high}, or they never changed (${played.join(' ')})`);
   await env.goOn(page);   // the check's first screen
   const verdicts = [0, 0, 0, 60, 0];
@@ -420,10 +453,103 @@ async function pilotHalf(env, c) {
 }
 const noteMidi = name => ({ C: 0, D: 2, E: 4, F: 5, G: 7, A: 9, B: 11 }[name[0]] + (name[1] === '#' ? 1 : 0) + 12 * (Number(name.slice(-1)) + 1));
 
+// the forms the reviews of Singing 1 to 6 asked for (2026-10-22): a note that slides into its note is named for the slide and is not on it; a group
+// that holds its results to the end shows none after a try and lists every try on its break screen; a check with stories and sung tries says both
+async function formsHalf(env, c) {
+  const { context, page } = await openSung(env, c, { subject: 'singing', lesson: 'l3', range: RANGE, at: 8 });
+  const scoop = await sungTry(page, async (page, hz) => { await D.setMic(page, D.centsUp(hz, -300)); await D.sleep(page, 350); await D.setMic(page, hz); await D.sleep(page, 1100); await D.setMic(page, 0); });
+  c.check(scoop.marks.join() === 'Sliding up into it' && await page.locator('.mark.no').count() === 1 && (await page.locator('.feedback').textContent()).includes('slid up into it'), `a note that started low and slid up is "${scoop.marks}"`);
+  await finish(page);
+  const clean = await sungTry(page, note(5));
+  c.check(clean.marks.join() === 'On the note', `a note sung on from the start is "${clean.marks}"`);
+  await finish(page);
+  const hunt = await sungTry(page, async (page, hz) => { for (const off of [-250, 130, -100, 70, 0]) { await D.setMic(page, D.centsUp(hz, off)); await D.sleep(page, 350); } await D.sleep(page, 300); await D.setMic(page, 0); });
+  c.check(hunt.marks.join() === 'Hunting for the note' && (await page.locator('.feedback').textContent()).includes('wandered up and down'), `a note that wandered up and down before it settled is "${hunt.marks}"`);
+  await context.close();
+  // a hold in a group that asks first: the answer is shown back, about where the note ended
+  const held = await openSung(env, c, { subject: 'singing', lesson: 'l4', range: RANGE, at: 7 });
+  const askedHold = await sungTry(held.page, note(5, 2.6));
+  c.check(askedHold.guessText.includes('where did your note end') && askedHold.marks.some(m => m.includes('You said: On')) && askedHold.marks.some(m => m.includes('The app measured it the same way.')), `a hold asked under, on or over did not show the answer back (${askedHold.marks})`);
+  await finish(held.page);
+  await held.page.evaluate(() => moveLesson(11));
+  for (let i = 0; i < 3; i++) {
+    const t = await sungTry(held.page, note(5, 4.4));
+    c.check(t.guessed === 3 && t.marks.length === 0 && t.after.d === '' && t.after.bars === 0, `a try in a group that holds its results showed one (${t.marks}, ${JSON.stringify(t.after)})`);
+    await finish(held.page);
+  }
+  const summary = held.page.locator('[data-summary]');
+  c.check(await summary.count() === 1 && await held.page.locator('.resitem').count() === 3 && (await env.screenText(held.page)).includes('Steady for 4 seconds'), 'the break screen does not list how each of the three tries went');
+  await held.page.evaluate(() => moveLesson(checkStep(LESSON.lesson)));
+  const intro = await env.screenText(held.page);
+  c.check(intro.includes('Five new questions with no help, then five new tries with no line.') && intro.includes('At least 4 right (the stories)') && intro.includes('At least 4 on the note (the held notes, each steady for 2 seconds)'), 'the check with stories and held notes does not say both and count each');
+  await held.context.close();
+}
+
+// The retest of a check with sung tries (lesson standard 6.4): Singing's lesson 12 check, stored as done on one day, comes due seven days later
+// as its own block of the weekly review; its stories run, and its three tunes are sung on new targets, scored and kept as retest tries.
+const RETEST_DAY = '2026-11-02', RETEST_DUE = '2026-11-09';
+async function retestHalf(env, c) {
+  const { context, page } = await env.freshPage(c, 390, { recorder: 'grant' });
+  await env.setDay(page, RETEST_DAY);
+  const first = await page.evaluate(range => {
+    saveNote('singing', 'range', range);
+    const data = FC.get('singing'), lesson = data.lessons.l12, run = 'r-first';
+    const insts = flatRefs(lesson.check.items).flatMap((ref, k) => refInstances(data, 'singing', ref, run, k));
+    insts.forEach(inst => {
+      const sung = inst.item.asks[0].kind === 'sing';
+      recordTry('singing', inst.key, { run, lesson: 'l12', rev: lesson.rev, context: 'check', seed: inst.seed,
+        a: sung ? { sing: { cents: [0, 0, 0, 0, 0], holdMs: 2500 } } : Object.fromEntries(inst.item.asks.map(a => [a.id, a.right])),
+        r: Object.fromEntries(inst.item.asks.map(a => [a.id, 'ok'])), ok: true });
+    });
+    return { size: insts.length, seeds: insts.filter(i => i.seed !== undefined).map(i => i.seed), done: lessonDone(data, 'singing', lesson) };
+  }, RANGE);
+  c.check(first.size === 9 && first.done, `lesson 12's check was not stored as done (${JSON.stringify(first)})`);
+  await env.setDay(page, '2026-11-08');
+  const early = await page.evaluate(() => retestsDue(FC.get('singing'), 'singing', '2026-11-08').length);
+  await env.setDay(page, RETEST_DUE);
+  const due = await page.evaluate(() => retestsDue(FC.get('singing'), 'singing', weekEnd()).map(r => r.lesson.id));
+  c.check(early === 0 && due.join() === 'l12', `the sung check's retest did not come due after its seven days (the day before: ${early}, on the day: ${due})`);
+  await env.clickVisible(page, '[data-v="review"]');
+  await page.locator('[data-review-start]').first().click();
+  const blocks = await page.evaluate(() => REVIEW.parts.flatMap(p => p.blocks.map(b => b.kind)));
+  c.check(blocks.includes('retest'), `the review does not hold the sung check's retest (${blocks})`);
+  // any topics due first are answered, then the retest
+  while (await page.evaluate(() => REVIEW && REVIEW.parts[REVIEW.at] && REVIEW.parts[REVIEW.at].blocks[REVIEW.block].kind === 'questions')) {
+    if (await page.locator('#beginBlock').count()) await page.locator('#beginBlock').click();
+    await env.runQueue(page);
+  }
+  const intro = await env.screenText(page);
+  c.check(intro.includes('you see how each one went as you go'), `the retest's first screen does not say the results show as you go (${intro.slice(0, 160)})`);
+  await page.locator('#beginBlock').click();
+  const kinds = await page.evaluate(() => Q.list.map(i => i.item.asks[0].kind === 'sing' ? `${i.key}|${i.seed}` : 'story'));
+  const sungKeys = kinds.filter(k => k !== 'story');
+  c.check(kinds.length === 9 && sungKeys.length === 3 && sungKeys.every(k => k.startsWith('sing-melody|') && !first.seeds.includes(Number(k.split('|')[1]))),
+    `the retest does not hold three tunes on new targets beside its six stories (${kinds.join(', ')})`);
+  let sung = 0;
+  for (let i = 0; await page.locator('#qNext').count() && i < 12; i++) {
+    const isSung = await page.evaluate(() => Q.list[Q.at].item.asks[0].kind === 'sing');
+    if (isSung) {
+      const heard = await D.tapAndHear(page);
+      await D.waitPhase(page, 'sing');
+      await singRun(page, heard, heard.map(() => 0), heard.map((_, k) => k === heard.length - 1 ? 2.6 : 0.9));
+      await D.waitOutcome(page);
+      sung += (await D.marksText(page)).some(m => m.includes('Steady for 2 seconds')) ? 1 : 0;
+    } else await env.answerQuestion(page, true);
+    await page.locator('#qNext').click();
+  }
+  const kept = (await tries(page, 'singing', 'sing-melody')).filter(t => t.context === 'retest');
+  c.check(sung === 3 && kept.length === 3 && kept.every(t => t.ok && t.lesson === 'l12' && t.d === RETEST_DUE && Array.isArray(t.a.sing.cents)),
+    `the retest's tunes were not sung, scored and kept as retest tries (${sung} sung well, ${JSON.stringify(kept.map(t => [t.context, t.ok, t.d]))})`);
+  const result = await env.screenText(page);
+  c.check(/Second check: Find the cause/.test(result) && result.includes('on the note'), `the retest's result does not name the second check and count the tunes on the note (${result.slice(0, 200)})`);
+  await context.close();
+}
+
 export async function X16(env) {
   const c = env.checker('X16');
-  const halves = [tasksHalf, pilotHalf].map(half => half(env, c).catch(error => c.check(false, `${half.name} stopped: ${String(error.stack || error).split('\n').slice(0, 4).join(' / ')}`)));
-  await Promise.all(halves);
+  // two lanes, as before: the test subject's tasks beside the pilot and then the forms the reviews asked for
+  const runHalf = half => half(env, c).catch(error => c.check(false, `${half.name} stopped: ${String(error.stack || error).split('\n').slice(0, 4).join(' / ')}`));
+  await Promise.all([runHalf(tasksHalf).then(() => runHalf(retestHalf)), runHalf(pilotHalf).then(() => runHalf(formsHalf))]);
   return c;
 }
 

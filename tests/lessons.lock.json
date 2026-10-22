@@ -30,8 +30,8 @@
       "fp": "sha256:1ed6031c7cc2bcf07465a0af564fa5204c70619a3d13db1e020cb9900959e397"
     },
     "singing": {
-      "rev": 4,
-      "fp": "sha256:4697220f527c698dcb9141d9c6a5a8e790135ae325db2a0f673fb853ac85aebd"
+      "rev": 6,
+      "fp": "sha256:1e5e337d3c886658dc07cbcd35543bf66f4dd08e29e9bfa38009f7a8e3f60e70"
     },
     "stats": {
       "rev": 9,
@@ -555,9 +555,53 @@
       "rev": 1,
       "fp": "sha256:e3e7739b62f7b59d8a8942d60ce7fe31ff9b26c8ab02a17d64dbf9913cfc089a"
     },
-    "singing/l2": {
+    "singing/l1": {
       "rev": 1,
-      "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
+      "fp": "sha256:5b590f92e0cd5d6b2eda120d5b2f7b475aa6b5beac53e60a9c739cc82c5133c9"
+    },
+    "singing/l10": {
+      "rev": 1,
+      "fp": "sha256:d75dbf7aab0f702f1dcb8e5648a4224fee8f754dfdda4a9963379ab1c4285fa2"
+    },
+    "singing/l11": {
+      "rev": 1,
+      "fp": "sha256:0a8e1f668c9227181137de375577a831b0d299b4c11ec2f415ceeb9a8bd27587"
+    },
+    "singing/l12": {
+      "rev": 1,
+      "fp": "sha256:e2b2e5fc5c58e62f259df9b793ad94757957b8bf491527898cf4384e416225ab"
+    },
+    "singing/l2": {
+      "rev": 2,
+      "fp": "sha256:8df83f74633a3e182aa81de7b51a1d0360374cededd396f1542400089b647a9d"
+    },
+    "singing/l3": {
+      "rev": 1,
+      "fp": "sha256:2a7b6f84edc1269c3ebb154f97b5348699e5c40927e74fa45e2e818320f272b0"
+    },
+    "singing/l4": {
+      "rev": 1,
+      "fp": "sha256:2f84d4d6684e2f41fd8cbd6e2f775f4211c44eaa7a0aa101e73fdd52fe212736"
+    },
+    "singing/l5": {
+      "rev": 1,
+      "fp": "sha256:66d3d2bd6ef1948c99f63a63c66c30aa821061975259453a96e5a4def0d74e68"
+    },
+    "singing/l6": {
+      "rev": 1,
+      "fp": "sha256:26d642a4822629b5eb79b0dc761897b4203aa1b12bfdfb7d03528a0a4a2b8993"
+    },
+    "singing/l7": {
+      "rev": 1,
+      "fp": "sha256:fb77a2c16fe50859926089357265526c542ee97be610c6e9a3fa704ae696d713"
+    },
+    "singing/l8": {
+      "rev": 1,
+      "fp": "sha256:394e9c35eed27e71c83c6cdd8c3a107e5efff50222f50aa8035a8c56bce9d382"
+    },
+    "singing/l9": {
+      "rev": 1,
+      "fp": "sha256:69c09b9339331c0619e4cbaff276dff79ae1ded9c4a24e3d6dceb38d21b951b7"
     },
     "stats/l0": {
       "rev": 1,

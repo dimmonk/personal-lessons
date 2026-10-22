@@ -48,6 +48,7 @@ const SAY = {
   breakTitle: 'You can stop here',
   breakLine: 'Your place is kept. Come back to this lesson any time.',
   groupResult: (ok, n) => `${ok} of ${n} right the first time`,
+  everyTry: 'How each try went',
   helpMarked: 'The words that decide it are marked.',
   helpSteps: 'The working is shown up to the last steps. The rest is yours.',
   // an answer
@@ -83,6 +84,7 @@ const SAY = {
   checkHeading: 'The check',
   checkIntro: n => `${cap(numWord(n))} new question${n === 1 ? '' : 's'}, with no help. To pass:`,
   checkIntroSung: n => `${cap(numWord(n))} new ${n === 1 ? 'try' : 'tries'}, with no line. To pass:`,
+  checkIntroMixed: (written, sung) => `${cap(numWord(written))} new question${written === 1 ? '' : 's'} with no help, then ${numWord(sung)} new ${sung === 1 ? 'try' : 'tries'} with no line. To pass:`,
   checkNoFeedback: 'You will not see any answer until the end.',
   checkTimed: s => `You have ${s} seconds for each. The clock only shows the time: nothing moves on until you tap Next.`,
   checkStart: 'Start the check',
@@ -109,7 +111,8 @@ const SAY = {
   yourRange: 'Your range',
   rangeAgain: 'Find my range again',
   rangeIs: (low, high) => `${low} to ${high}`,
-  // sung questions (3.8): the app's words around a try. A learner never sees a music word here: no cents, hertz, half-step, octave or pitch
+  // sung questions (3.8): the app's words around a try. A learner never sees a music word here (no cents, hertz, octave or pitch) except
+  // "half-step", the one measure, which Singing's lesson 2 defines with a tune everyone knows before any result uses it
   singToGoOn: 'Sing above to go on',
   singLabel: { warmup: 'Warm-up', range: 'Find your range', match: 'Match the note', hold: 'Hold the note', slide: 'Slide to the note',
     interval: 'Sing both notes', melody: 'Sing the tune', light: 'Sing it lightly' },
@@ -120,8 +123,8 @@ const SAY = {
     match: () => 'Listen to the note, then sing it back on “oo”.',
     hold: task => `Listen to the note, then sing it back on “oo” and keep it steady for ${task.seconds} seconds.`,
     slide: () => 'Listen to the two notes. Then slide smoothly from the first to the second and stay on the second.',
-    interval: () => 'Listen to the two notes, then sing them back one after the other on “oo”.',
-    melody: task => `Listen to the ${numWord(task.notes)} notes, then sing them back in order on “oo”. Keep the last one steady.`,
+    interval: task => `Listen to the two notes, ${task.maxSemitones <= 3 ? 'a small step apart' : task.minSemitones >= 4 ? 'a big jump apart' : 'a step or a jump apart'}, then sing them back one after the other on “oo”.`,
+    melody: task => `Listen to the ${numWord(task.notes)} notes${task.noteMs > SING_MELODY_MS ? ', played slowly' : ''}, then sing them back in order on “oo”. Keep the last one steady.`,
     light: () => 'Listen to the note, then sing it back lightly, no louder than you talk.'
   },
   singReason: {
@@ -130,7 +133,7 @@ const SAY = {
     match: 'Hear the note in your head before you sing it. Your voice finds it faster when you know the sound you are aiming for.',
     hold: 'Keep your ear on the note while you hold it. When the sound drifts, bring it back to the note you heard.',
     slide: 'Aim for the second note and let your voice travel there smoothly. The landing is what counts.',
-    interval: 'Hear the gap between the two notes in your head first. The second note is where beginners most often fall short.',
+    interval: 'Hear both notes in your head first. On a big jump, people who struggle to sing in tune most often fall short of the far note.',
     melody: 'Hear the whole tune in your head first, then sing it note by note. The last note is the one to keep steady.',
     light: 'A top note that is easy sounds light. If it comes out loud, ease off the volume and keep the note.'
   },
@@ -156,16 +159,56 @@ const SAY = {
   micTurnOff: 'Turn the microphone off',
   stripLabel: 'Your voice as a line against the note',
   stripHidden: 'No line this time. Listen, sing, and see how you did afterwards.',
-  singWord: { on: 'On the note', shadeUnder: 'A shade under', shadeOver: 'A shade over', wellUnder: 'Well under', wellOver: 'Well over', missed: 'Not heard' },
-  singVoice: { on: 'Your voice sat on the note.', shadeUnder: 'Your voice sat a shade under the note.', shadeOver: 'Your voice sat a shade over the note.',
-    wellUnder: 'Your voice sat well under the note.', wellOver: 'Your voice sat well over the note.', missed: 'That note was not heard.' },
+  singWord: { on: 'On the note', littleUnder: 'A little under', littleOver: 'A little over', shadeUnder: 'A shade under', shadeOver: 'A shade over', wellUnder: 'Well under', wellOver: 'Well over', missed: 'Not heard',
+    slidUp: 'Sliding up into it', slidDown: 'Sliding down onto it', hunt: 'Hunting for the note', sank: 'Sank under', rose: 'Rose over', wander: 'Wandered off and back', stopped: 'On the note, then stopped' },
+  // after a miss: how far off, and which way to move (a shade: less than a half-step; well: about n half-steps)
+  singVoice: { on: () => 'Your voice sat on the note.',
+    littleUnder: () => 'Your voice sat a little under the note, within half a half-step: sing a touch higher.',
+    littleOver: () => 'Your voice sat a little over the note, within half a half-step: sing a touch lower.',
+    shadeUnder: () => 'Your voice sat a shade under the note: sing a little higher, less than a half-step.',
+    shadeOver: () => 'Your voice sat a shade over the note: sing a little lower, less than a half-step.',
+    wellUnder: n => `Your voice sat well under the note, about ${numWord(n)} half-step${n === 1 ? '' : 's'}: sing that much higher.`,
+    wellOver: n => `Your voice sat well over the note, about ${numWord(n)} half-step${n === 1 ? '' : 's'}: sing that much lower.`,
+    missed: () => 'That note was not heard.' },
+  singSlidLine: dir => dir > 0 ? 'Your voice started under the note and slid up into it. Aim at the note itself, so you are on it from the start.'
+    : 'Your voice started over the note and slid down onto it. Aim at the note itself, so you are on it from the start.',
+  // how a held note went, after "Steady for n seconds", by its outcome and parts (sing-judge.js)
+  singHeldHow: (id, middle, end, began) => {
+    const then = end < 0 ? ', then sank under' : ', then rose over';
+    if(id === 'steady') return began === 'slid' ? ', after sliding into it' : '';
+    if(id === 'heldThenDrift' || id === 'drift') return then;
+    if(id === 'offStart') return ', off the note from the start' + ({ found: ', then found it', crossed: then, further: end < 0 ? ', then sank further' : ', then rose further' }[middle] || '');
+    return id === 'wander' ? ', wandered off and back' : id === 'stopped' ? ', then the sound stopped' : '';
+  },
+  singSlidOffLine: dir => dir > 0 ? 'Your voice started under the note and slid up, but did not settle on it.' : 'Your voice started over the note and slid down, but did not settle on it.',
+  singStoppedLine: (seconds, need) => `Your voice stayed on the note, but the sound stopped or broke after ${seconds} second${seconds === 1 ? '' : 's'}; this one needs ${need}. Keep going until the time is up, and if the air runs out, breathe a little earlier and fuller next time.`,
+  singFoundLine: 'Then you found the note: aim at it from the first moment next time.',
+  singHuntLine: 'Your voice wandered up and down before it settled. Hear the note in your head before you sing; if it still wanders, slow down.',
+  singStartLine: line => line.replace('Your voice sat', 'From the first moment your voice sat'),
+  singDriftLine: side => side < 0 ? 'Then it sank under the note: keep listening, and nudge it back up as soon as you hear it drop.'
+    : side > 0 ? 'Then it rose over the note: keep listening, and ease it back down as soon as you hear it climb.'
+    : 'It wandered off the note and back: keep the loudness even and your ear on the note.',
+  singFurtherLine: side => side < 0 ? 'Then it sank further under: keep listening, and nudge it back up as soon as you hear it drop.'
+    : 'Then it rose further over: keep listening, and ease it back down as soon as you hear it climb.',
   singNoteN: n => `Note ${n}`,
-  singHeld: (seconds, need) => seconds >= need ? `Steady for ${need} seconds` : `Steady for ${seconds} of ${need} seconds`,
-  singHeldLine: (seconds, need) => `You stayed on the note for ${seconds} seconds. This one needs ${need}.`,
+  singHeld: (seconds, need) => seconds >= need ? `Steady for ${need} seconds` : seconds > 0 ? `Steady for ${seconds} of ${need} seconds` : `Not steady on the note for any of the ${need} seconds`,
+  singHeldLine: (seconds, need) => `You stayed on the note for ${seconds} second${seconds === 1 ? '' : 's'}. This one needs ${need}.`,
   singLoud: 'Louder than you talk',
   singLoudLine: 'That was louder than your talking voice. Sing it again with less force and keep the note.',
   singRangeSaved: 'Your range is saved',
   singWarmupDone: 'Warm-up done',
+  // saying what you heard before the result (3.8), and example sounds on a teaching screen (3.9)
+  singGuessAsk: task => task === 'interval' ? 'Before you see how it went: was your last note under, on or over?'
+    : task === 'melody' ? 'Before you see how it went: where did your last note end, under, on or over?'
+    : task === 'hold' ? 'Before you see how it went: where did your note end, under, on or over?' : 'Before you see how it went: was your note under, on or over?',
+  singGuessWord: { under: 'Under', on: 'On', over: 'Over' },
+  singGuessSaid: word => `You said: ${word}`,
+  singGuessSame: 'The app measured it the same way.',
+  singGuessOther: (measured, dir, part) => `The app measured: ${measured}. Your note ${part || 'was'} ${dir > 0 ? 'higher' : 'lower'} than it sounded to you.`,
+  singGuessNeither: measured => `The app measured: ${measured}. It went both ways, so it was neither under nor over.`,
+  singGuessUnheard: 'The app did not hear that note.',
+  tonesHeading: 'Hear it',
+  tonesPlaying: 'Playing. Tap to stop.',
   // a form of several fields (3), a dated value looked up, the papers of a household (3.9)
   formHint: 'Type each number, then tap Answer.',
   formHintChoose: 'Type each number and choose where asked, then tap Answer.',

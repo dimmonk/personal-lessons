@@ -109,7 +109,8 @@ Step = { show: [Block], title }            // a teaching screen: a rule, a wrong
      | { own: formId, model?: itemId, work?: workId, repeat?: 'year' }   // the same step on the learner's own data (section 5.4); `work` on the sheet only, and required there; `repeat` (sheet only) makes its changes come back every year
 Set  = { items: [ItemRef | [ItemRef, ItemRef]],   // an inner pair is asked back to back, its order random
          order: 'listed' | 'shuffle', support?: Support, seconds?: 15 | 20,
-         mix?: { from: [lessonId], share }, over?: 'busy', plan?: true }
+         mix?: { from: [lessonId], share }, over?: 'busy', plan?: true, guess?: true,     // guess: a sung group asks under, on or over first (3.8)
+         feedback?: 'at-end' }                    // a sung group with guess that holds its results to the end of the group (3.8)
 ItemRef = itemId | { gen: genId, n, with?: params | { form?, place? } } | { sing: { task, ...params }, n }
 ```
 
@@ -155,6 +156,11 @@ PassRule = { ask?, where?: { facet: value }, right?: { min }, wrong?: { max }, s
   places than the group can be asked in it (after `only`), a place in `only` that the group does not have or cannot ask in that form, or
   a place kept to two forms.
 - `spoken: true` reads each question aloud and holds its words behind "Show the words".
+- **A check with written questions and sung tries** (a lesson that teaches a decision and a sung skill) holds both, shows its results
+  `after-each` (V78), and counts each part with its own rule by ask: `{ ask: 'landing', right: { min: 4 }, of: 'the stories' }` and
+  `{ ask: 'sing', right: { min: 4 }, of: 'the sung notes' }`; a rule by the `sing` ask reads "on the note". Its first screen says both
+  ("Five new questions with no help, then five new tries with no line", `SAY.checkIntroMixed`); `checkIsSung` is true only when every
+  question is sung, `checkHasSung` when any is.
 - A check never has support (V79). A lesson is done when its check has one complete run, passed or not.
 
 ### 3.5 The item and the generator
@@ -389,22 +395,70 @@ each question from the learner's range and a seed, and stores its tries under `s
 
 - **Tasks**: `warmup` (a hum with the line, unscored, skippable by "Skip the warm-up"; a step of its own, the first of
   every sung lesson, never asked again, not stored), `range`, `match`, `hold` (`seconds` 2 to 6), `slide`
-  (`maxSemitones`), `interval` (`minSemitones`, `maxSemitones`), `melody` (`notes` 3 to 5, `maxStep`), `light`. `cents` (5 to 100, default 25) is a setting of the
-  task, so the tolerance travels with its questions.
+  (`maxSemitones`), `interval` (`minSemitones`, `maxSemitones`), `melody` (`notes` 3 to 5, `maxStep`, and if it likes `noteMs` 800 to 1600, a slower
+  tune: `SING_OPTIONS`), `light`. `cents` (5 to 100, default 25) is a setting of the task, so the tolerance travels with its questions.
 - **Targets**: match and hold notes from the middle 60% of the range, light notes from its top fifth; every note of
   every task inside the range (V78 makes each task on 200 seeds over five ranges).
 - **Turn-taking**: a tap plays the target (a note 1.5 s; the two notes of a slide or interval 1 s each; a melody's notes
-  0.8 s and its last 3 s; 0.12 s between). The microphone is ignored while it plays and for 0.25 s after; the window is
+  0.8 s, or its `noteMs`, and its last 3 s; 0.12 s between). The target is a soft hum-like tone (`AUDIO_VOICE_HARMONICS`: the note itself
+  strongest, three weaker harmonics above it), fuller than a sine; it is not a voice and no screen calls it one. The microphone is ignored while it plays and for 0.25 s after; the window is
   each note plus 0.4 s (a hold: its seconds plus 1 s). Sound runs on the audio clock and readings on the frame loop
   (about every 50 ms); there are no timers.
+- **A sung run** (an interval, a tune) is not scored in fixed slots. Its readings are moved into the run's own octave (the one in which
+  they sit closest to the notes of the windows they fall in) and aligned to the played notes in order by dynamic programming
+  (`singRunParts`). Only voiced readings make up a note: a silence between notes (unvoiced readings) is its own, never part of a note's
+  cost or length, so the singer's gaps between detached notes, short or long, fit as well as legato. Each note gets a stretch, costed by
+  how far its readings sit from that note and by a duration prior: each note but the last lasts about its played length at the singer's
+  own tempo (0.7 to 1.6 times the played one) and lag, shorter costing a quarter as much as longer; the last note starts near where the
+  rhythm puts it and is held, shorter than its played length (or the end of the listening) costing an eighth. A note's onset is the first
+  sound, the voice sounding again after a silence, or a step to a new note that it sings on (a change of more than a shade over 0.15 s, or
+  a legato step of a half-step over 0.25 s either side of a glide); a stretch that begins at an onset is preferred. The tempos and lags
+  that line the onsets up best are each split (and, when the onsets do not decide, one tempo in each band), and the split whose own cost,
+  pitch and timing together, is least wins. A common offset (a tune sung sharp, flat or drifting) is read from that split against the true
+  notes, up to a shade, and the split is made again with it taken out. Every note gets its own stretch, so a wrong note, even at its
+  neighbour's pitch or a note held across two, is named where it sat; a note is "Not heard" only when the voice was silent for three
+  quarters of its time inside the listening; every voiced reading belongs to a note. A stretch's leading glide from the note before is
+  left out (up to 0.3 s). A run whose last note is held is listened to long enough for a singer 1.5 times slower than played. All weights
+  are judgement calls, measured in `tests/sing-sim.mjs`, which runs every scenario any review of this scoring has used
+  (`tests/sing-sim/`). A gap in clear sound is a stop only when no reading in it was voiced.
 - **Scoring**: a note's error is the median of the middle 60% of its clear readings, each folded to the octave nearest
-  the target; at least 5 clear readings (a slide's last 0.4 s, 3). A hold is the longest unbroken run inside the
-  tolerance (a gap over 0.12 s breaks it). An interval needs both notes on; a melody `ceil(0.8 n)` notes on and its last
+  the target; at least 5 clear readings (a slide's last 0.4 s, 3). A match or a light note also stores `start`, the middle of its first 5
+  clear readings: one that starts more than a shade off and moves more than a shade to where it sits slid into the note (`singSlid`), is
+  named "Sliding up into it" (or "Sliding down onto it") and is not on the note. A hold stores `end`, the middle of its last 5 clear
+  readings, so a hold that broke says whether it sank or rose (`singDrift`). A hold also stores `start`: off from the start when its start
+  is off, otherwise sank or rose by its end. A match or a light note stores `turns`, the times it turned back by more than a shade; two or
+  more is a hunt, "Hunting for the note", not on the note (`singHunted`), named before a slide. A melody stores its last note's `end`. What
+  was measured (`singMeasured`) is one reading for the mark and for the "You said" line, so they never disagree; a hold is asked where it
+  ended and shows the answer back. A note's track is first cleaned and centered (`singCentered`): a reading more than 300 hundredths of a half-step from
+  the median of itself and its three neighbours each side (counted in readings) is a slip of the pitch finder and is left out, and each
+  reading is replaced by the mean of the cleaned readings within 0.1 s either side (at least one either side), so a natural wobble of five to
+  seven a second is judged by its middle at 50 or 66.7 ms between readings (judgement calls). A note's `start` is the middle of that track over its
+  first 0.15 s, `land` over 0.5 to 0.75 s in (a slide moved more than a shade from `start` to `land`), and a held note's `end` over its last
+  quarter of a second before the release (the last 0.25 s before any stop, which is part of stopping); its turns are counted on it.
+  A note's error is the interquartile mean of the middle of its cleaned readings (so a vibrato counts by its middle). A held note
+  (a hold, a tune's last note) is judged on a longer center, the mean over 0.2 s either side (two cycles of a vibrato at five a second): a hold
+  is the longest unbroken run of that track inside the tolerance; a gap in clear sound over 0.28 s breaks it, and the center never reaches across one (longer than three
+  readings lost in a row at 66.7 ms, shorter than a breath). A hold also stores `left`, the time its track was off the note after it first
+  reached it, leaving out the release before each stop and the end: a hold that broke with `left` 0 stopped (its sound stopped), otherwise it wandered. An interval needs both notes on; a melody `ceil(0.8 n)` notes on and its last
   held 2 s; a light note must be on and its median loudness at most 1.15 times the learner's talking note, measured in
   the same set from two unscored notes (loud, then talking). A missed note in a run counts as 1200 off. **Silence is not
   a miss**: nothing is stored, and "Try again" makes the same question again.
 - **Words**: "On the note", "A shade under", "A shade over", "Well under", "Well over", "Not heard" (`SAY.singWord`); a
-  shade is up to 100 hundredths of a half-step past the tolerance. Never cents or hertz.
+  shade is more than 50 and up to 100 hundredths of a half-step off; with a tolerance under 50, a note off by up to 50 is "A little under"
+  or "A little over" (`SING_LITTLE_CENTS`), never "a shade". A held note (a hold, a melody's last note) is named from its start and its end by
+  one function (`singHeldShape`): off from the start only when it began off, not by sliding in, and ended off on the same side; otherwise a
+  slide into it, and then sank or rose by its end. Its guess is measured at its end. After a miss, one line for each note that was off says which way to
+  move and how far: less than a half-step for a shade, about n half-steps for well (`SAY.singVoice`). "Half-step" is the one music word on
+  a screen, defined in Singing's lesson 2 with the Jaws theme before any result uses it; never cents, hertz, semitone, octave or pitch.
+  When the learner said something else first, the result says which way their note really was ("The app measured: a shade over. Your note
+  was higher than it sounded to you.").
+- **A group that holds its results to the end** (`feedback: 'at-end'` on a group with `guess`, V78): after each try the learner says
+  under, on or over and sees nothing else (the strip stays empty, no marks); the break screen lists how each try went in the order sung
+  ("How each try went"), and a miss does not come back. Feedback after every few tries builds the learner's own judgement (Singing's V14).
+- **Saying what you heard first** (`guess: true` on a group): when the window closes, the screen asks "Before you see how it went: was
+  your note under, on or over?" (a run: its last note) with three buttons, and only then shows the result, with "You said: Under" and whether
+  the app measured it the same way. The answer is kept with the try's numbers as `guess` (-1, 0, 1) and never scored. Only a group of `match`,
+  `hold`, `slide`, `interval`, `melody` or `light` questions with no line asks it (V78); a check never does.
 - **The strip** (`pitch` block) is drawn around the target, the bar the height of the tolerance; a voice an octave away
   is drawn on the bar. With `support: { line: true }` targets and voice are drawn while singing; without it the strip is
   empty and the result is drawn after. A hum is always drawn.
@@ -435,6 +489,7 @@ each question from the learner's range and a seed, and stores its tries under `s
 | `map` | a region of the map data drawn blank, north up, with `lit` places shown (one for naming, two for a distance); `labels` names its places (`true`: every kind the region labels; a list: those); `view` opens it on one part of the region (a panel) | `region`, `id?`, `labels?: true \| [placeId]`, `lit?: [placeId]`, `view?: [x, y, zoom]` |
 | `flags` | the flags of places of a place group (3.5), each about 64 pixels wide; with `names`, the name beside each; also the picture added to the feedback of a flag question | `gen`, `places: [placeId]`, `names?` |
 | `pitch` | the strip of a `sing` ask; made by the app, never written | none |
+| `tones` | example sounds the app makes, on a teaching screen only (never on a question, never in a `pair`): "Hear it", the sentence that says what to listen for, and a button for each sound; a tap plays it, a second stops it, moving on stops it; nothing sounds before a tap | `says` (at most 3 sentences), `examples: [{ label, play: [{ note, at?, ms \| path: [[ms, cents]], cents? }] }]` (at most 4 examples of 4 tones, a tone at most 4 s, an example at most 6 s: `AUDIO_LIMITS`) |
 
 A place's `flag` is its emoji, or, when no emoji draws it, a drawn flag `{ box: [w, h], layers: [['rect', fill, x, y, w, h] | ['path', fill, d] | ['star', fill, cx, cy, r]], said }` that the `flags` block draws as an
 inline SVG about 80 pixels wide, hidden from a screen reader as the emoji is (`flagHtml`, `place-view.js`; the validator checks the spec, `flagProblems`, `place-gen.js`). Kosovo is the one: 🇽🇰 is not in the Unicode standard
@@ -486,7 +541,7 @@ no name, for a view with no pictures.
 - Recorded voices: calls are transcripts, read by an on-device voice where one exists.
 - A part of a state (halves and thirds of a unit) as a place; flags drawn from the map data (the emoji flag is text in the place group's list,
   shown large by a `flags` block; a flag with no emoji, Kosovo's, is a small drawn spec in the list, below); the Strait of Hormuz and the Bering Strait as outlines (they are points, 3.11).
-- Singing's review (to be: a warm-up, then each due lesson's check, without the line), the retest of a sung check,
+- Singing's review (to be: a warm-up, then each due lesson's check, without the line),
   the range as a lesson step with a check of its own, and a range typed by hand.
 
 ### 3.11 The map data
@@ -789,7 +844,9 @@ baseline never starts one.
 
 A check with `retest: n` comes back once, whole, n days after its first complete run, on new items of the same strands
 and facet values, as its own block of the review with an intro, its pass rules and no warning. The tile counts its
-items with the week's.
+items with the week's. A check with sung tries comes back the same way: each sung try is made again from its own task on a target no try of
+that task has sung (`retestInstances`), the range exercise runs first if no range is stored, its results show after each try as
+in the check (the intro says so), and "on the note" words its rules. Its `retest` is at least 1, so it is sung on a later day (V78).
 
 ### 6.5 The tile and the results
 
@@ -903,7 +960,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V58 | Held findings (`tests/lessons/held-findings.json`) only shrink: one that no longer fires must go, and none may be added since the last commit | a held finding that no longer fires |
 | V60 | American English in every string | "colour" in a reason |
 | V62 | No abstract or textbook word | "utilize" in a reason |
-| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; a step on the sheet names a work the app has, and the sheet holds the groups, fields, limits and refs that work reads, and only account and fund kinds the app knows; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
+| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly (example sounds directly on a teaching screen only, inside `AUDIO_LIMITS`, labels distinct); a step on the sheet names a work the app has, and the sheet holds the groups, fields, limits and refs that work reads, and only account and fund kinds the app knows; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
 | V71 | Every lesson's `part` is a part of the subject record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order | a part with no lesson in a complete subject |
 | V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's) | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; a worked case is shown practice and counts as doing, at the same 200 words a minute; doing is `DOING_SECONDS` (choose, tap and place 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20; a place group's question by the form it is asked in) | a why padded past the share |
@@ -911,7 +968,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V75 | Generators: no range that gives one value; on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item. A place group: on every (place, form) pair and 200 seeds the same seed the same question, the question is the pair the seed names, and a seed made for a pair names it | a trap that lands on the answer |
 | V76 | Every set and check holds the subject's `mix` (a check drawn at random by strands is not read; one drawn from a place group holds the mix its split fixes) | a set with none of a kind the mix requires |
 | V77 | Banks: each strand a check covers has three unseen items for its returns and one more per item of a retest, unless it has a generator or one item | a strand one item short |
-| V78 | Singing: tasks and parameters inside `SING_PARAMS`; the warm-up first and once, never in a check; no line in a check; sung checks `after-each`; every target inside the range | a hold of 9 seconds |
+| V78 | Singing: tasks and parameters inside `SING_PARAMS` and `SING_OPTIONS`; the warm-up first and once, never in a check; no line in a check; sung checks `after-each`; every target inside the range; a group that asks what you heard holds only questions with a note to judge and has no line | a hold of 9 seconds |
 | V79 | Fading: a set with support has a later set of the same strand with less or none; no support in a check | a lesson whose last set has the panel |
 | V81 | Private forms: no field for an account number, login, password or Social Security number, fund rows included; every `into` is a slot of section 5.3 | a field "Account number" |
 | V82 | The failure (`danger.slip`) sits only on risky items, never on a real one, and can be made at least once | a real message whose wrong option is the failure |
@@ -928,14 +985,14 @@ Every other rule id below V84 is retired and never reused.
 | X2 | No feedback before the last ask is answered | the reason shown when one of two asks is answered |
 | X3 | Every screen at every width from 360 to 1600 px: no sideways scroll, no cut text, plain words and American English as shown (owner's words left out) | an answer button wider than a phone |
 | X5 | The stored keys are those of section 5.1 | a place saved under a key of its own |
-| X8 | No sound, no sound system and no microphone request before a tap | a sound system made when a sung item opens |
+| X8 | No sound, no sound system and no microphone request before a tap; example sounds play only on a tap, never ask for the microphone, and stop when the learner goes on | a sound system made when a sung item opens |
 | X10 | The microphone: the constraints, one request per set, the refusals, the app never hears its own note | the microphone hears the app's own note |
 | X11 | Only numbers are stored from singing | the readings of a try stored with its answer |
 | X12 | Sung screens fit at 360 and 390 px, in plain words with no music word | a button on a sung item wider than a phone |
 | X13 | `number`: tolerance in and out, a trap's line, the estimate first with no calculator, "disagree" in practice and never in a check | the disagree line shown in a check |
 | X14 | `text` from memory: every matching rule, "name two", the box, "Not yet", every accepted answer shown, a claim and its return | a repeated answer counted twice for "name two" |
 | X15 | `tap`: the named block's lines only, "Not given", two lines in any order, a third refused, a slip, a note, nothing marked before the answer, the marks with `shown`, nothing between check items | the right line marked before the answer |
-| X16 | `sing`: known pitches fed as the microphone scored on and off, octave folding, holds timed, each melody note, every result word, the line only with `line`, the range stored once, the microphone released | the line drawn in a check |
+| X16 | `sing`: known pitches fed as the microphone scored on and off, octave folding, holds timed, each melody note, every result word, the line only with `line`, under, on or over asked before the result where the group asks it and kept with the try, the range stored once, the microphone released; a slide into the note named and not on it, a group that holds its results showing none until its break screen, a check of stories and sung tries saying both | the line drawn in a check; a group that holds its results showing each; a slide into the note counted as on |
 | X17 | The clock: frame-clock countdown, a late frame counted a quarter second, an answer stops it, at zero a timeout and the screen waits, a timed check shows only the time | an item that moves on when its time runs out |
 | X18 | `exchange`: turns follow replies, pressure on a reply that holds off, nothing marked before the end, then the pushing turns and the first chance named | the pressure turn of a reply that holds off never shown |
 | X19 | `spoken`: nothing read on opening, a tap reads with an on-device voice, replay, next read at Next, leaving stops it, no voice shows the words | a question read aloud as soon as it opens |
@@ -1025,8 +1082,9 @@ Europe), and on the test subject Atlas (X46, X47).
 
 Each subject has its pilot built, as `status: 'draft'`; every other lesson waits for the pilot's two reviews. No
 subject is `complete`, so each part after the pilot shows "Not built yet".
-- **Singing**: lesson 2, "Match a note" (opens with the range). Its record has no strands, lists or facets: the sung
-  review is not built. The tasks `hold`, `slide`, `interval`, `melody` and `light` are tested on `chorus` only.
+- **Singing**: rebuilt to its plan of 2026-10-22 (`docs/subjects/singing/plan.md`): twelve parts in five units, all twelve lessons built (the range and
+  the seven checks, Match a note, the note check with example sounds, a steady hold, steps and leaps, short tunes, then air and sound, ending on the
+  tune test on two different days). Two topics of judging questions (`fit`, `landing`).
 - **Math**: rebuilt 2026-10-22 (plan: `docs/subjects/math/plan.md`): fifteen parts in six units; lessons 1 to 8 built, every problem a
   generator in the way of thinking's steps (`MATH.problem`, `subjects/math/kit.js`: what is asked and given, a rough answer typed first,
   the kind and its picture, the exact answer and a look back), faded by `leave`. Not built: lessons 9 to 15; the 14-day retest belongs to
@@ -1119,6 +1177,21 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   (4.5). Pure tests in `tests/number-pure.mjs`, with a seeded fault (fresh seeds that ignore the numbers met) run there.
 - **2026-10-22, angle buttons** (Math's plan, gap G3, the refresher unit): `calc: ['trig']` adds sin, cos and tan to the calculator, of the
   number shown in degrees, held like √; tan of 90° is an error (`CALC_TRIG` in `number.js`). Pure tests in `tests/number-pure.mjs`.
+- **2026-10-22, Singing's engine gaps** (its plan, "Engine gaps"): a sung group may ask under, on or over before the result (`guess`, 3.3, 3.8;
+  kept as `guess` in the try's numbers, never scored; V78); the example sounds (`tones`) are a block of a teaching screen in this engine (3.9;
+  `tones.js`; V70; X8); the target of a sung question is a hum-like tone (3.8, `AUDIO_VOICE_HARMONICS`; checked by the pitch finder in
+  `tests/audio-pure.mjs`); a melody may be slowed (`noteMs`, `SING_OPTIONS`; V78). Moving to another step of a lesson stops every sound.
+  Singing's `readingShare` is 0.4 for its judging lessons. `FC.ENGINE` is 20 (the sung-note wording).
+
+- **2026-10-22, after Singing's first reviews**: a single note's start and a hold's end are kept and judged (`start`, `end`; a slide into
+  the note is not on it), results say which way and how far in half-steps, a check may hold written questions and sung tries with a rule
+  for each by ask (3.4), and a sung group may hold its results to its end (`feedback: 'at-end'`, 3.3, 3.8; V78). X16 checks all three.
+  Round 2: a hunt (`turns`), a hold's start, one reading of what was measured, a hold's guess shown back (3.8); X16 checks the hunt and
+  the hold's answer.
+
+- **2026-10-22, the retest of a check with sung tries** (Singing's plan: the tune test on two different days): a check with sung tries
+  may carry `retest` (6.4); its sung tries are made again on new targets; V78 refuses a sung check's retest under one day. Singing's
+  lesson 12 uses it (`retest: 7`). Checked in `tests/engine-pure.mjs`, with a seeded fault in `tests/lessons/controls-table.mjs`.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

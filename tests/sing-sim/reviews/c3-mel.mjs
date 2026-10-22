@@ -1,0 +1,24 @@
+// Confirmation review 3's cases (its scratch script c3/mel.mjs), ported as written: each case is kept in tests/sing-cases.lock.json.
+import { A, run, ask, melPlan, reseed } from './h.mjs';
+const N = ['D4','E4','A4','G4','F#4'];
+const me = ask('melody', { notes: 5 }), p = melPlan(N);
+const tune = (cs, lastTones, off=150, len=800, extra={}) => [...N.slice(0,4).map((n,i) => ({ note:n, at:i*1200+off, ms:len, cents:cs[i]||0, ...(extra[i]||{}) })), ...lastTones.map(t => ({ note:'F#4', ...t, at: 4800 + (t.at||0) }))];
+const vib = (amp, hz=5.5, base=0) => ms => base + amp*Math.sin(2*Math.PI*hz*ms/1000);
+run('Z1 one wrong middle note: note 3 well under -250', me, p, tune([0,0,-250,0], [{ ms:2900 }]));
+run('Z2 one wrong middle note: note 3 sung as note 2 (E4 instead of A4)', me, p, [...tune([0,0,0,0],[{ms:2900}]).filter(t=>t.at!==2550), { note:'E4', at:2550, ms:800 }]);
+run('Z3 note 3 an octave low (folds on)', me, p, [...tune([0,0,0,0],[{ms:2900}]).filter(t=>t.at!==2550), { note:'A3', at:2550, ms:800 }]);
+run('Z4 note 3 silent (forgot it)', me, p, tune([0,0,0,0],[{ms:2900}]).filter(t=>t.at!==2550));
+run('Z5 note 2 and 3 swapped order', me, p, [{note:'D4',at:150,ms:800},{note:'A4',at:1350,ms:800},{note:'E4',at:2550,ms:800},{note:'G4',at:3750,ms:800},{note:'F#4',at:4800,ms:2900}]);
+run('Z6 every note 0.9s late (bleeds into next window)', me, p, tune([], [{ ms:2900 }], 900, 800).map(t => t.note==='F#4' ? { ...t, at: 4800+900, ms: 2400 } : t));
+run('Z7 last note starts 2.2s late, only 0.75s', me, p, tune([], [{ at:2200, ms:750 }]));
+run('Z8 last note in last 200ms only', me, p, tune([], [{ at:3200, ms:200 }]));
+run('Z9 last note vibrato +-55', me, p, tune([], [{ ms:2900, fn: vib(55) }]));
+run('Z10 last note two-step slide -300,-150, then on', me, p, tune([], [{ path:[[0,-300],[150,-150],[450,-150],[600,0],[2900,0]] }]));
+run('Z11 last note brief -80 dip 0.2s at 1s (continuous)', me, p, tune([], [{ path:[[0,0],[1000,0],[1050,-80],[1200,-80],[1250,0],[2900,0]] }]));
+reseed(31); run('Z12 whole tune, jitter 12, 20% dropouts', me, p, tune([0,0,0,0],[{ ms:2900, jitter:12, drop:0.2 }], 150, 800, {0:{jitter:12,drop:.2},1:{jitter:12,drop:.2},2:{jitter:12,drop:.2},3:{jitter:12,drop:.2}}));
+run('Z13 very short notes 0.25s each, last 2.9', me, p, tune([], [{ ms:2900 }], 150, 250));
+run('Z14 very short notes 0.2s each (4 readings)', me, p, tune([], [{ ms:2900 }], 150, 200));
+run('Z15 note 3 a shade over +70 only; last off -70 throughout', me, p, tune([0,0,70,0], [{ ms:2900, cents:-70 }]));
+run('Z16 note 3 hunts, last on', me, p, tune([0,0,0,0], [{ ms:2900 }], 150, 800, {2:{ path:[[0,-250],[200,100],[400,-120],[600,60],[800,0]] }}));
+run('Z17 last note glides -250 over 1s to on, then on 1.9s', me, p, tune([], [{ path:[[0,-250],[1000,0],[2900,0]] }]));
+run('Z18 tune all on, last note ends with fall-off -400 last 0.3s (pass)', me, p, tune([], [{ path:[[0,0],[2500,0],[2800,-400]] }]));

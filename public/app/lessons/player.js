@@ -27,6 +27,7 @@ function saveLessonPlace(){
   saveSeenLesson(subj.id, lesson.id, { rev: lesson.rev, at });
 }
 function moveLesson(at){
+  stopAudio();   // an example sound on a teaching screen stops when the learner moves on
   timerStop();
   mapViewReset();
   LESSON = { ...LESSON, at, worked: null };
@@ -76,6 +77,7 @@ function paintWhy(){
 }
 function paintShow(step){
   lessonShell(`${heading(SAY.showHeading, step.title)}${blocksHtml(step.show, { data: LESSON.data, scope: `show|${LESSON.lesson.id}|${LESSON.at}` })}`, nextAction(SAY.goOn));
+  wireTones(step.show);
   on('#fwd', goOn);
 }
 
@@ -122,9 +124,12 @@ function startSet(step){
   const run = newRunId();
   const list = buildSet(data, subj.id, lesson, set, run, { again: LESSON.again === true });
   const next = () => LESSON.again ? goOnAgain() : goOn();
-  startQueueWithRange({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: 'after-each', support: set.support || null, redo: true,
-    seconds: set.seconds || null, over: set.over || null,
-    owner: lessonOwner(), shell: lessonShell, onDone: log => log.every(e => e.unscored) ? next() : paintBreak(log) });
+  // a group that holds its results to the end (`feedback: 'at-end'`, sung groups only, 3.8) shows them together on the break screen, and a
+  // miss does not come back, since the learner has not seen it yet
+  const summary = set.feedback === 'at-end';
+  startQueueWithRange({ subj, data, list, run, context: LESSON.again ? 'again' : 'practice', feedback: summary ? 'at-end' : 'after-each', support: set.support || null, redo: !summary,
+    seconds: set.seconds || null, over: set.over || null, guess: !!set.guess,
+    owner: lessonOwner(), shell: lessonShell, onDone: log => log.every(e => e.unscored) ? next() : paintBreak(log, summary) });
 }
 // A sung run needs the learner's range; when it is not set yet, the range exercise runs first and the run follows it (3.8).
 // The range try belongs to the lesson's practice, not to the run it opens, so a check's size and result are not changed by it.
@@ -132,15 +137,23 @@ function startQueueWithRange(opts){
   const needs = opts.list.some(i => i.item.asks.some(a => a.kind === 'sing' && SING_NEEDS_RANGE.includes(a.task)));
   if(!needs || rangeOf(opts.subj.id)) return startQueue(opts);
   const run = newRunId(), range = instanceOf(opts.data, { sing: { task: 'range' }, n: 1 }, freshSeed(opts.subj.id, 'sing-range', run, 0));
-  startQueue({ ...opts, list: [range], run, context: 'practice', support: null, redo: false, feedback: 'after-each', keepMic: true, onDone: () => startQueue(opts) });
+  startQueue({ ...opts, list: [range], run, context: 'practice', support: null, redo: false, feedback: 'after-each', keepMic: true, guess: false, onDone: () => startQueue(opts) });
 }
-function paintBreak(log){
+function paintBreak(log, summary = false){
   const firsts = log.filter(e => e.first && !e.unscored), ok = firsts.filter(e => e.ok).length;
   const more = LESSON.again ? nextSetAt() >= 0 : true;
-  lessonShell(`<div class="done-screen"><h2>${esc(SAY.breakTitle)}</h2><p>${esc(SAY.groupResult(ok, firsts.length))}</p><p>${esc(SAY.breakLine)}</p></div>`, nextAction(more ? SAY.goOn : SAY.toSubject));
+  lessonShell(`<div class="done-screen"><h2>${esc(SAY.breakTitle)}</h2><p>${esc(SAY.groupResult(ok, firsts.length))}</p><p>${esc(SAY.breakLine)}</p></div>${summary ? triesSummaryHtml(firsts) : ''}`, nextAction(more ? SAY.goOn : SAY.toSubject));
   on('#fwd', () => LESSON.again ? goOnAgain() : goOn());
   window.scrollTo(0, 0);
   focusScreenHead();
+}
+
+// the result of every try of a group that held its results to the end, in the order they were sung
+function triesSummaryHtml(tries){
+  return `<div class="vblock" data-summary><span class="m">${esc(SAY.everyTry)}</span></div>` + tries.map((e, i) => {
+    const ask = singAskOf(e.inst), answer = e.a[ask.id];
+    return `<div class="resitem"><p class="m qlabel">${esc(SAY.singTry(e.inst.item.label, i + 1, tries.length))}</p><div class="feedback"><div class="marks">${singMarksHtml(ask, answer, e.ok)}</div>${singMissHtml(ask, answer)}</div></div>`;
+  }).join('');
 }
 
 /* ---------- practice again: a finished lesson's groups once more, on questions not seen before ---------- */
@@ -175,7 +188,7 @@ function paintCheckIntro(){
     return on('#fwd', startCheck);
   }
   const rules = check.pass.map(rule => `<li>${esc(ruleText(data, rule, rightWord(check)))}</li>`).join('');
-  const intro = checkIsSung(check) ? SAY.checkIntroSung(n) : check.recall ? SAY.checkIntroAgain(n) : checkIsDrawn(check) ? SAY.checkIntroDrawn(n) : SAY.checkIntro(n);
+  const intro = checkIsSung(check) ? SAY.checkIntroSung(n) : checkHasSung(check) ? SAY.checkIntroMixed(checkParts(check).written, checkParts(check).sung) : check.recall ? SAY.checkIntroAgain(n) : checkIsDrawn(check) ? SAY.checkIntroDrawn(n) : SAY.checkIntro(n);
   // a check that is spoken (the mock interview) says how it goes and sends the learner to the page where the answers that change are posted
   const spoken = check.spoken ? `<p>${esc(SAY.checkSpoken)}</p><p data-updates>${esc(SAY.checkUpdates)}</p>` : '';
   lessonShell(`${heading(SAY.checkHeading, lesson.title)}<div class="lesson"><p>${esc(intro)}</p><ul>${rules}</ul>

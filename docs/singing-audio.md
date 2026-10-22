@@ -1,4 +1,4 @@
-# Singing: sound, notes and audio examples (built 2026-10-09; recorded clips still open)
+# Singing: sound, notes and audio examples (built 2026-10-09, carried into the practice engine 2026-10-22; recorded clips still open)
 
 Written 2026-10-09, the day after the Singing subject shipped (commits `8995c05` and `7180403`, live at https://fieldcraft.web.app). To continue in a new session, say: "Read docs/HANDOFF.md and docs/singing-audio.md in /Users/dim/Documents/PersonalLessons and continue from what is left at the end."
 
@@ -39,13 +39,46 @@ Each button is labeled with the key's own answer for what it plays, so the words
 
 **What it never stores or sends.** The sound from the microphone is looked at on the device and thrown away. It is never recorded, saved or sent anywhere, and a line on the tool says so. Nothing from the tool is written to `localStorage`, scored, counted in progress or logged. Every sound stops, and the microphone goes off, on any repaint, Back, Next, a jump in the card list, leaving the unit, closing a card sheet, and the page being hidden. Sound starts only on a tap: no sound system exists, and nothing sounds, when a card opens.
 
+## Built on 2026-10-22, for the rebuilt subject (plan of 2026-10-22, "Engine gaps")
+
+The old cards and their `audio` block were deleted with the old engine on 2026-10-10; what is described above is how they worked. In the practice
+engine the pieces are:
+
+- **Example sounds on a teaching screen** (`tones` block, `public/app/lessons/tones.js`): the same numbers and limits as before
+  (`audioBlockProblems`, `AUDIO_LIMITS` in `audio-notes.js`), headed "Hear it", with the sentence that says what to listen for and a button for
+  each sound. It sits directly on a teaching screen only (V70: never on a question, where it would give the answer away, and never inside a
+  `pair`). A tap plays, a second tap stops, another button replaces it; "Go on", Back, leaving and hiding the page stop it (`moveLesson` and
+  `go` call `stopAudio`). It never asks for the microphone. Used in Singing lesson 2 (the Jaws theme, a half-step), lesson 3 (the five
+  things the note check finds), lesson 4 (a steady hold and one that sinks) and lesson 5 (a step, a jump, a jump that falls short). Each
+  sound is what the app's own scoring would call it: "a shade" is 75 hundredths of a half-step off (the old Unit Four's 30 is "on the note"
+  at the tolerance of 50 these lessons use), and two tones 75 apart near D4 beat about 13 times a second, a fast flutter or roughness, not
+  a slow wobble. Browser check: X8.
+- **Saying what you heard first** (`guess: true` on a sung group): when the window closes the screen asks under, on or over, then shows the
+  result with "You said: ..." and whether the app measured it the same way. Kept as `guess` (-1, 0, 1) beside the try's numbers, never
+  scored. Used in the groups without the line of lessons 2 to 6. Browser checks: X12 (the screen at 360 and 390 px), X16 (asked, kept).
+- **A fuller target tone**: the note a sung question plays is a soft hum-like tone (`AUDIO_VOICE_HARMONICS`), richer than a sine. It is not
+  a voice: the evidence that people copy a human model better is about a real voice, best their own (research note V3: Lévêque et al.
+  2012, Pfordresher & Mantell 2014), and a made tone probably keeps most of that gap. What it gives is a fuller tone, easier to hear in the
+  singer's own part of the range. The numbers are a judgement call; the pitch finder reads the tone as its note (`tests/audio-pure.mjs`).
+  Example sounds stay sines, so their beating is clean.
+- **A slower tune**: a `melody` may set `noteMs` (800 to 1600) for each note but the last (`SING_OPTIONS`); lesson 6 learns a tune slowly first.
+
+- **How a note starts and a hold ends** (after the reviews, 2026-10-22): a match stores where its first quarter second was (`start`), so a
+  slide into the note is named and not counted as on, and how often it turned back (`turns`), so a hunt is named too (research note V23);
+  a hold stores where it started and ended, so a broken hold says off from the start, sank or rose. Each example sound of lessons 3 and 4
+  scores as what it is called (`tests/sing-pure.mjs`). Results after a miss say which way to move and about how many half-steps. Browser check: X16.
+
+Still only a person with a phone can say whether the hum-like target is pleasant to sing against, whether the slide threshold suits a real
+voice in a real room, and whether the question before the result feels
+natural or slows practice down too much.
+
 ## What has been measured, and what only a person with a phone can check
 
 **Measured (run on 2026-10-09).**
 - The lesson side: `node tests/validate-lessons.mjs` (the rules V64 to V68 and every older rule on the data) and `node tests/lessons/negative-controls.mjs` (a seeded fault for each new rule, and for each prose check on `says` and the button labels: each turns exactly its own rule red). The numbers in the Unit Four sounds are checked against the app's own limits.
 - The pitch finder and the verdict, on made-up signals: `node tests/audio-pure.mjs` (579 checks and 9 seeded faults, each turning its own group red). This proves the arithmetic, not a real voice.
 - The browser checks of section 3.8 item 9 (X8 to X12) are part of `npm test` and ran green on 2026-10-10: 95 sound checks inside 44,272 browser checks. They render each example sound offline and measure its pitch, feed known notes in as the microphone, and check that nothing sounds, no microphone is requested and nothing is stored before or without a tap. The same behavior was then checked on the live site: before any tap there is no sound system, no sound and no microphone request; a tap on a note makes one sound; only "Start the microphone" asks for the microphone.
-- How big the wobble is: a second note 30 cents off a D beats against it about five times a second, which is the slow wobble the two cards describe. This is arithmetic, not listening.
+- How big the beating is: a second note 30 cents off a D beats against it about five times a second, which is what the old cards called a slow wobble; the rebuilt lesson 3 plays 75 off, about 13 beats a second, and calls it a fast flutter or roughness. This is arithmetic, not listening.
 
 **Only a person with a phone can check these.**
 - That each example sound really sounds the way its `says` line describes: the wobble is easy to hear, the slide is clear, the match sounds like one note, the hunt sounds like searching. They were designed from numbers and have not been heard by the owner.

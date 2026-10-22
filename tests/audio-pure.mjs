@@ -10,7 +10,7 @@ import vm from 'node:vm';
 const FILES = ['app/lessons/audio-notes.js', 'app/lessons/audio-pitch.js'];
 const NAMES = ['ON_NOTE_CENTS', 'NEEDLE_FULL_CENTS', 'RANGE_LOW_HZ', 'RANGE_HIGH_HZ', 'DEFAULT_NOTES', 'AUDIO_LIMITS', 'noteToHz', 'centsBetween',
   'centsToHz', 'foldCents', 'centsToNote', 'noteVerdict', 'needlePercent', 'onNoteZone', 'audioBlockProblems', 'audioToneEndMs', 'detectPitch',
-  'medianOf', 'pitchHistory', 'steadyReading', 'PITCH_CLARITY_MIN', 'PITCH_MIN_READINGS'];
+  'medianOf', 'pitchHistory', 'steadyReading', 'PITCH_CLARITY_MIN', 'PITCH_MIN_READINGS', 'AUDIO_VOICE_HARMONICS'];
 const sources = await Promise.all(FILES.map(async f => `/* ${f} */\n` + await readFile(new URL(`../public/${f}`, import.meta.url), 'utf8')));
 
 function load(seed) {
@@ -150,6 +150,13 @@ function pitchChecks(A, tag) {
     const slide = A.detectPitch(signal(A.centsToHz(d4, -300), rate, { endHz: d4 }), rate);
     check(slide !== null && cents(slide.hz, d4) > -300 && cents(slide.hz, d4) < 0, `${tag}: a slide up to D4 at ${rate} reads ${slide ? cents(slide.hz, d4).toFixed(0) : null} cents`);
   }
+  // the hum-like tone a sung question plays: the note itself is the strongest harmonic, so the pitch finder (and an ear) hears the note asked
+  const voice = A.AUDIO_VOICE_HARMONICS.map((a, i) => [i + 1, a]);
+  check(A.AUDIO_VOICE_HARMONICS[0] === Math.max(...A.AUDIO_VOICE_HARMONICS) && A.AUDIO_VOICE_HARMONICS.length >= 2, `${tag}: the hum-like tone's note is not its strongest harmonic`);
+  for (const rate of [44100, 48000]) for (const note of ['A2', 'E3', 'D4', 'A4', 'E5']) {
+    const want = A.noteToHz(note), got = A.detectPitch(signal(want, rate, { harmonics: voice }), rate);
+    check(got !== null && Math.abs(cents(got.hz, want)) < 5, `${tag}: the hum-like tone at ${note} (${rate}) reads ${got ? cents(got.hz, want).toFixed(1) : null} cents off`);
+  }
   // a window too short to hold two repeats of the lowest note is refused loudly, not read wrongly
   let threw = false;
   try { A.detectPitch(new Float32Array(512), 44100); } catch (err) { threw = err instanceof RangeError || /too few/.test(err.message); }
@@ -188,6 +195,7 @@ const controls = [
   { name: 'a pitch finder with no volume gate', group: 2, seed: s => s.replace('if(pitchRms(samples) < PITCH_RMS_MIN) return null;', '') },
   { name: 'a pitch finder that takes the highest peak, not the first', group: 2, seed: s => s.replace('const chosen = peaks.find(p => nsdf[p] >= PITCH_PEAK_RATIO * highest);', 'const chosen = peaks.find(p => nsdf[p] >= highest);') },
   { name: 'a pitch finder that takes the first peak at all', group: 2, seed: s => s.replace('const chosen = peaks.find(p => nsdf[p] >= PITCH_PEAK_RATIO * highest);', 'const chosen = peaks[0];') },
+  { name: 'a hum-like tone whose second harmonic is stronger than the note', group: 2, seed: s => s.replace('const AUDIO_VOICE_HARMONICS = [1, 0.4, 0.15, 0.06];', 'const AUDIO_VOICE_HARMONICS = [0.3, 1, 0.15, 0.06];') },
   { name: 'a pitch finder that accepts any clarity', group: 2, seed: s => s.replace('const PITCH_CLARITY_MIN = 0.85;', 'const PITCH_CLARITY_MIN = -1;') }
 ];
 for (const c of controls) {

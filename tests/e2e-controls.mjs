@@ -517,6 +517,18 @@ export const FAULTS = [
     edits: [replace('app/lessons/sing-run.js', "function renderRangeAgain(subj){\n  const data = FC.get(subj.id), run = newRunId();", "function renderRangeAgain(subj){\n  const data = FC.get(subj.id), run = newRunId();\n  saveNote(subj.id, 'range', null);")] }),
   sound({ check: 'X29', name: 'the range exercise run again stored as a try',
     edits: [replace('app/lessons/sing-run.js', "item: { ...inst.item, unscored: true } }]", "item: inst.item }]")] }),
+  sound({ check: 'X8', name: 'an example sound that plays when its teaching screen opens',
+    edits: [replace('app/lessons/tones.js', "els.forEach((el, k) => { if(tones[k]) wireToneBlock(el, tones[k]); });", "els.forEach((el, k) => { if(tones[k]){ wireToneBlock(el, tones[k]); startExample(tones[k].examples[0], () => {}); } });")] }),
+  sound({ check: 'X8', name: 'an example sound that keeps playing after the learner goes on',
+    edits: [replace('app/lessons/player.js', "  stopAudio();   // an example sound on a teaching screen stops when the learner moves on\n", "")] }),
+  sound({ check: 'X16', name: 'what the learner said they heard not kept with the try',
+    edits: [replace('app/lessons/sing-run.js', "const answer = { ...s.answer, guess: singGuessValue(word) };", "const answer = { ...s.answer };")] }),
+  sound({ check: 'X16', name: 'a group that holds its results to the end showing each one after its try',
+    edits: [replace('app/lessons/queue.js', "singView(inst, Q.support, cur.done, Q.feedback === 'after-each')", "singView(inst, Q.support, cur.done, true)")] }),
+  sound({ check: 'X16', name: 'a note that slid into its note counted as on it',
+    edits: [replace('app/lessons/sing-task.js', "case 'match': return cents.length === 1 && on(cents[0]) && !singSlid(answer) && !singHunted(answer);", "case 'match': return cents.length === 1 && on(cents[0]) && !singHunted(answer);")] }),
+  sound({ check: 'X16', name: 'a sung try left out of the retest of its check',
+    edits: [replace('app/lessons/schedule.js', "if(typeof ref === 'object' && 'sing' in ref){", "if(false){")] }),
   sound({ check: 'X16', name: 'the microphone left on when the learner leaves',
     edits: [replace('app/state.js', "function go(view, extra){\n  stopAudio();", "function go(view, extra){")] })
 ];

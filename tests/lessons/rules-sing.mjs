@@ -2,7 +2,11 @@
 // the learner's range, so what a lesson can get wrong is small and all of it is here: the task and its numbers inside the limits of 3.8
 // (the app's own list, SING_PARAMS, read out of public/app/lessons/sing-task.js, so the validator and the phone cannot disagree), the warm-up
 // first in every lesson that sings, a check without the line that shows its result after each try, and every target inside the range
-// (S1): each task is made on 200 seeds over ranges from the narrowest allowed to a wide one, and no note may fall outside.
+// (S1): each task is made on 200 seeds over ranges from the narrowest allowed to a wide one, and no note may fall outside. A group that asks the
+// learner what they heard before the result (`guess`) holds only sung questions with a note to judge, and never shows the line: the learner
+// says what they heard before they see anything. A group that holds its results to the end (`feedback: 'at-end'`, feedback after every few
+// tries, research note V14) is such a group: sung questions with a note to judge, no line, and the learner says what they heard on each try.
+// A check with sung tries that comes back as a retest does so on a later day (at least one whole day after it).
 import { subjectRule, checkEach } from './rule.mjs';
 import { unique } from './text.mjs';
 
@@ -35,8 +39,10 @@ function lessonProblems(s, lv) {
   const e = s.engine, lesson = lv.lesson, drawn = e.checkIsDrawn(lesson.check);
   const setRefs = lv.sets.flatMap(set => e.flatRefs(set.items)), checkRefs = drawn ? [] : e.flatRefs(lesson.check.items);
   const sung = [...setRefs, ...checkRefs].filter(isSung);
-  if (!sung.length) return [];
-  const problems = [];
+  const atEnd = lv.sets.filter(set => set.feedback === 'at-end' && !(set.guess && e.flatRefs(set.items).every(r => isSung(r) && e.SING_GUESS_TASKS.includes(r.sing.task))))
+    .map(() => 'a group that holds its results to the end is a sung group that asks what you heard on each try (guess: true), so the learner judges each one');
+  if (!sung.length) return atEnd;
+  const problems = [...atEnd];
   unique(sung.map(r => JSON.stringify(r.sing))).map(x => JSON.parse(x)).forEach(task => {
     e.singTaskProblems(task).forEach(p => problems.push(p));
     if (!e.singTaskProblems(task).length) targetProblems(e, task).forEach(p => problems.push(p));
@@ -47,6 +53,15 @@ function lessonProblems(s, lv) {
   if ([...setRefs.slice(1), ...checkRefs].some(r => isSung(r) && r.sing.task === 'warmup')) problems.push('the warm-up belongs at the start of the lesson, once, and never in the check');
   if (lesson.check.support && lesson.check.support.line) problems.push('the check shows the line; a check of sung questions never does');
   if (checkRefs.some(isSung) && lesson.check.feedback !== 'after-each') problems.push('a check of sung questions shows its result after each try (feedback "after-each")');
+  // a check with sung tries may come back as a retest (6.4), on new targets; it is there to sing them again on a later day (research note
+  // V2, V18), so it comes back after at least one whole day
+  if (checkRefs.some(isSung) && 'retest' in lesson.check && !(Number.isInteger(lesson.check.retest) && lesson.check.retest >= 1))
+    problems.push(`a check with sung tries comes back on a later day: retest is a whole number of days, at least 1 (it is ${lesson.check.retest})`);
+  lv.sets.filter(set => set.guess).forEach(set => {
+    const refs = e.flatRefs(set.items);
+    if (!refs.every(r => isSung(r) && e.SING_GUESS_TASKS.includes(r.sing.task))) problems.push(`a group that asks what you heard holds only sung questions with a note to judge (${e.SING_GUESS_TASKS.join(', ')})`);
+    if (set.support && set.support.line) problems.push('a group that asks what you heard shows the line, so the learner sees the answer before saying it');
+  });
   return problems;
 }
 

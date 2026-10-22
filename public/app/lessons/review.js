@@ -18,6 +18,7 @@ const REVIEW_TEXT = {
   intro: (name, n) => `${name}. ${cap(numWord(n))} question${n === 1 ? '' : 's'}, each on something you have not seen before. ${SAY.stakes}`,
   timed: s => `Each question has ${s} seconds. The clock only shows the time: nothing moves on until you tap Next.`,
   retestIntro: title => `A second check of “${title}”, on new questions. No help, and no answer until the end.`,
+  retestIntroEach: title => `A second check of “${title}”, on new questions. No help; you see how each one went as you go.`,
   retestResult: title => `Second check: ${title}`,
   resultsTitle: 'The review is done',
   resultsNote: 'These are your first tries. Anything missed was asked again before the end.',
@@ -117,7 +118,7 @@ function renderReviewRun(){
 function paintBlockIntro(part, block){
   const T = REVIEW_TEXT, retest = block.kind === 'retest';
   reviewShell(`<div class="eyebrow-row"><span class="m a">${esc(part.subj.name)}</span><h1>${esc(retest ? T.retestResult(block.lesson.title) : T.title)}</h1></div>
-    <div class="lesson"><p>${esc(retest ? T.retestIntro(block.lesson.title) : T.intro(part.subj.name, block.list.length))}</p>${!retest && part.data.meta.timed ? `<p>${esc(T.timed(TIMER_REVIEW_SECONDS))}</p>` : ''}</div>${!retest && notesOf(part.subj.id).plan ? `<div class="lesson"><p>${esc(planWordsOf(part.data).before)}</p></div>${planSentenceHtml(notesOf(part.subj.id).plan)}` : ''}`,
+    <div class="lesson"><p>${esc(retest ? (block.lesson.check.feedback === 'after-each' ? T.retestIntroEach : T.retestIntro)(block.lesson.title) : T.intro(part.subj.name, block.list.length))}</p>${!retest && part.data.meta.timed ? `<p>${esc(T.timed(TIMER_REVIEW_SECONDS))}</p>` : ''}</div>${!retest && notesOf(part.subj.id).plan ? `<div class="lesson"><p>${esc(planWordsOf(part.data).before)}</p></div>${planSentenceHtml(notesOf(part.subj.id).plan)}` : ''}`,
     `<div class="actbar"><button class="btn neutral" id="beginBlock">${T.begin}${icon('arrow')}</button></div>`);
   on('#beginBlock', () => { REVIEW = { ...REVIEW, phase: 'run' }; render(); window.scrollTo(0, 0); });
 }
@@ -127,11 +128,12 @@ function runQuestions(part, block){
 }
 function runRetest(part, block){
   const run = newRunId(), lesson = block.lesson;
-  startQueue({ subj: part.subj, data: part.data, list: retestInstances(part.data, part.subj.id, lesson, run), run, context: 'retest', feedback: lesson.check.feedback, support: null, redo: false,
+  // a check with sung tries needs the learner's range, as the check did (3.8)
+  startQueueWithRange({ subj: part.subj, data: part.data, list: retestInstances(part.data, part.subj.id, lesson, run), run, context: 'retest', feedback: lesson.check.feedback, support: null, redo: false,
     spoken: !!lesson.check.spoken, owner: () => ({ lesson: lesson.id, rev: lesson.rev }), shell: reviewShell, onDone: log => paintRetestResult(part, lesson, log, run) });
 }
 function paintRetestResult(part, lesson, log, run, counted = false){
-  const scrolled = window.scrollY, result = checkResult(part.data, lesson.check.pass, queueOutcomes(log)), T = REVIEW_TEXT;
+  const scrolled = window.scrollY, result = checkResult(part.data, lesson.check.pass, queueOutcomes(log), rightWord(lesson.check)), T = REVIEW_TEXT;
   const rows = result.lines.map(l => `<tr><td>${esc(l.text)}</td><td>${esc(l.met ? SAY.ruleMet : SAY.ruleNotMet)}</td></tr>`).join('');
   const each = lesson.check.feedback === 'at-end' ? `<div class="vblock"><span class="m">${esc(SAY.checkEveryAnswer)}</span></div>${checkAnswersHtml(part.data, log)}` : '';
   reviewShell(`<div class="done-screen results"><h2>${esc(result.passed ? SAY.checkPassed(result.right, result.total) : SAY.checkNotYet(result.right, result.total))}</h2>

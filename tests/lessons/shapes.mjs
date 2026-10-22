@@ -86,6 +86,11 @@ export const PANEL = obj({ kind: en('panel'), rules: arr(str) });
 export const CHART = obj({ kind: en('chart'), type: en('bars', 'line'), title: str, x: arr(str), y: obj({ from: num, to: num, step: num }, { unit: str }),
   series: arr(obj({ values: arr(num) }, { name: str })), source: str }, { labels: bool });
 
+// example sounds on a teaching screen (tones.js): a sentence that says what to listen for, and a button for each sound, each a few tones the app
+// makes (a steady note, or one moving along a path of [ms, cents]); the numbers are held by the app's own audioBlockProblems (audio-notes.js)
+const TONE = obj({ note: str }, { at: num, ms: num, cents: num, path: arr(arr(num)) });
+export const TONES = obj({ kind: en('tones'), says: text, examples: arr(obj({ label: str, play: arr(TONE) })) });
+
 /* asks (3): choose, number, form, tap, text, exchange and order */
 // a call or chat that branches on the learner's reply (exchange.js): turns, each with what the other side says and the replies to pick, and the ends
 export const EXCHANGE_OPTION = either(obj({ id: str, text: str, goto: str }), obj({ id: str, text: str, end: str }));
@@ -143,10 +148,10 @@ const PLACE_ENTRY = obj({ id: str, name: str, accept: arr(ACCEPT_ENTRY) }, { rea
 export const PLACE_GEN = obj({ id: str, strand: str, places: obj({ map: str, forms: arr(str), words: map(text), list: arr(PLACE_ENTRY) }, { slips: map(str) }) }, { facets: map(str) });
 
 /* lessons */
-const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }), obj({ sing: obj({ task: str }, { seconds: int, maxSemitones: int, minSemitones: int, notes: int, maxStep: int, cents: int }), n: int }));
+const REF = either(str, obj({ gen: str, n: int }, { with: map(any) }), obj({ sing: obj({ task: str }, { seconds: int, maxSemitones: int, minSemitones: int, notes: int, maxStep: int, noteMs: int, cents: int }), n: int }));
 const SUPPORT = obj({}, { panel: bool, line: bool, shown: bool, leave: int, estimateCheck: bool });
 const SET = obj({ items: arr(either(REF, arr(REF))), order: en('listed', 'shuffle') },
-  { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool });
+  { support: SUPPORT, seconds: en(15, 20), mix: obj({ from: arr(str), share: num }), over: en('busy'), plan: bool, guess: bool, feedback: en('at-end') });
 const PASS = obj({}, { ask: str, where: map(str), right: obj({ min: int }), wrong: obj({ max: int }), slip: str, max: int, of: text });
 // a check drawn at random: n questions of the named strands, or from one place group as many of each form as the split says (3.4)
 const DRAW = obj({ draw: either(obj({ strands: arr(str), n: int }), obj({ gen: str, split: map(int) }, { only: map(arr(str)) })) });

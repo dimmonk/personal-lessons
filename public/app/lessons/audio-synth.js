@@ -1,6 +1,6 @@
 /* ===================== SOUND: MAKING NOTES ===================== */
-// Lesson standard section 3.8, items 2 and 4. The app makes its own sounds with Web Audio: a sine for each tone, with a quick
-// fade in and out. There are no sound files, no setTimeout and no setInterval: every sound is put on the sound system's own
+// Lesson standard section 3.8, items 2 and 4. The app makes its own sounds with Web Audio: a sine for each tone (the target of a sung
+// question: a fuller, hum-like tone), with a quick fade in and out. There are no sound files, no setTimeout and no setInterval: every sound is put on the sound system's own
 // clock, and a button learns that its sound is over from the last oscillator's "ended" event.
 // Nothing here runs at load. The one AudioContext is made on the first tap (audioContext) and never earlier.
 // Needs noteToHz, centsToHz, audioToneLengthMs and audioToneEndMs from audio-notes.js.
@@ -30,14 +30,19 @@ function audioContext(){
 function audioQuietUntil(){ return AUDIO_STATE.quietUntil; }
 
 /* ---------- one tone, one example ---------- */
-// One tone on the sound clock: a sine at the note (plus its cents), or moving along its path. A path is straight in cents:
-// an exponential ramp in hertz is a straight line in cents, because a cent is a fixed ratio.
+// The hum-like tone of a sung question's target (AUDIO_VOICE_HARMONICS): the harmonics as sine terms, made on the context that plays it.
+function voiceWave(ctx){
+  const imag = Float32Array.from([0, ...AUDIO_VOICE_HARMONICS]);
+  return ctx.createPeriodicWave(new Float32Array(imag.length), imag);
+}
+// One tone on the sound clock: a sine at the note (plus its cents), or moving along its path; with `voice`, the hum-like tone. A path is
+// straight in cents: an exponential ramp in hertz is a straight line in cents, because a cent is a fixed ratio.
 function scheduleTone(ctx, destination, tone, t0){
   const start = t0 + (tone.at || 0) / 1000, length = audioToneLengthMs(tone) / 1000, end = start + length;
   const base = noteToHz(tone.note), hzAt = cents => centsToHz(base, cents);
   const points = tone.path || [[0, tone.cents || 0]];
   const osc = ctx.createOscillator(), gain = ctx.createGain();
-  osc.type = 'sine';
+  if(tone.voice) osc.setPeriodicWave(voiceWave(ctx)); else osc.type = 'sine';
   osc.frequency.setValueAtTime(hzAt(points[0][1]), start);
   points.slice(1).forEach(([ms, cents]) => osc.frequency.exponentialRampToValueAtTime(hzAt(cents), start + ms / 1000));
   const fade = Math.min(AUDIO_FADE_S, length / 2);

@@ -4,7 +4,8 @@ FC.lesson('chorus', {
   why: 'Hear a note, then sing it back. The line shows your voice at first and then goes away.',
   flow: [
     { set: { items: [{ sing: { task: 'warmup' }, n: 1 }], order: 'listed' } },
-    { title: 'How a try goes', show: [{ kind: 'prose', text: 'Tap Hear the note, listen to all of it, then sing it back.' }] },
+    { title: 'How a try goes', show: [{ kind: 'prose', text: 'Tap Hear the note, listen to all of it, then sing it back.' },
+      { kind: 'tones', says: 'Two notes that start together sound like one.', examples: [{ label: 'A match', play: [{ note: 'D4', ms: 1500 }, { note: 'D4', ms: 1500 }] }, { label: 'A shade under', play: [{ note: 'D4', ms: 1500 }, { note: 'D4', ms: 1500, cents: -30 }] }] }] },
     { set: { items: [{ sing: { task: 'match' }, n: 4 }], order: 'listed', support: { line: true } } },
     { set: { items: [{ sing: { task: 'match' }, n: 2 }], order: 'listed' } },
     { set: { items: [{ sing: { task: 'hold', seconds: 2 }, n: 2 }], order: 'listed' } },

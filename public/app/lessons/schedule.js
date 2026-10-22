@@ -151,11 +151,16 @@ function drawInstances(data, subjectId, draw, run, taken, lessonId){
   for(let k = 0; picks.length < draw.n && gens.length; k++) picks.push(gens[k % gens.length]);
   return shuffled(picks, hashSeed(`${run}|draw`)).map((d, k) => freshInstance(data, subjectId, d, run, k));
 }
-// A check's items on new questions: one new instance of the strand (and the facets) of each original, or a new draw.
+// A check's items on new questions: one new instance of the strand (and the facets) of each original, or a new draw. A sung question (3.8)
+// is made again from its own task with a seed no try of that task has used, so a retest of a check with sung tries sings new targets.
 function retestInstances(data, subjectId, lesson, run){
   if(checkIsDrawn(lesson.check)) return drawInstances(data, subjectId, lesson.check.items.draw, run, [], lesson.id);
   const taken = [], out = [], drawn = new Set();   // drawn: the numbers of the made questions already in this retest
   flatRefs(lesson.check.items).forEach(ref => {
+    if(typeof ref === 'object' && 'sing' in ref){
+      for(let k = 0; k < refCount(ref); k++) out.push(instanceOf(data, ref, freshSeed(subjectId, singKey(ref.sing), run, out.length)));
+      return;
+    }
     const original = definitionOf(data, refId(ref));
     for(let k = 0; k < refCount(ref); k++){
       const pick = strandInstance(data, subjectId, original.strand, run, out.length, taken, original.facets, drawn);

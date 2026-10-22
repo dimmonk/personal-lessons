@@ -40,7 +40,16 @@ export async function singNote(page, hz, cents, seconds, level) {
   await sleep(page, seconds * 1000);
   await setMic(page, 0);
 }
-export const waitOutcome = (page, timeout = 12000) => waitPhase(page, ['result', 'nothing', 'failed', 'ready'], timeout);
+export const waitOutcome = (page, timeout = 12000) => waitPhase(page, ['result', 'nothing', 'failed', 'ready', 'guess'], timeout);
+// In a group that asks what the learner heard, the window closes on three buttons (under, on, over) before the result. Taps `word` and waits for
+// the result; returns how many buttons there were, or null when the try did not ask.
+export async function answerGuess(page, word = 'on') {
+  if (await phase(page) !== 'guess') return null;
+  const shown = await page.locator('[data-guess]').count();
+  await page.locator(`[data-guess="${word}"]`).click();
+  await waitPhase(page, 'result');
+  return shown;
+}
 
 // The words on the screen after a try: the marks of the feedback, or the line the app says when nothing was heard
 export const marksText = page => page.evaluate(() => [...document.querySelectorAll('[data-feedback] .mark')].map(m => [...m.children].map(x => x.textContent.trim()).join(' ')));

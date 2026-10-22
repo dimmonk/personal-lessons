@@ -1,7 +1,7 @@
 // Section 9: V70 (shape and references), V71 (lessons and the subject's parts), V81 (private forms), V56 (titles).
 import { subjectRule, checkEach } from './rule.mjs';
 import { checkShape } from './schema.mjs';
-import { SUBJECT, PROSE, MAP_BLOCK, FLAGS_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, PLACE_GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
+import { SUBJECT, TONES, PROSE, MAP_BLOCK, FLAGS_BLOCK, PLACE, PAIR, CHOOSE, NUMBER, FORM_ASK, TAP, TEXT, SPOKEN, EXCHANGE, ORDER, MESSAGE, DOCUMENT, REF_BLOCK, FIGURE, FIGURE_DATA, ARTICLE, PANEL, CHART, ITEM, GEN, PLACE_GEN, LESSON, STEPS, stepKind, SLOTS } from './shapes.mjs';
 import { duplicatesOf } from './text.mjs';
 
 const show = problems => problems.map(p => `${p.path} ${p.message}`);
@@ -16,6 +16,7 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
   if (!block || typeof block !== 'object') return [`${where} must be an object`];
   if (!kinds.includes(block.kind)) return [`${where} has a block of kind "${block.kind}", which is not built (built: ${kinds.join(', ')})`];
   if (block.kind === 'pitch') return [`${where} is a pitch block, which only a sung question the app makes from a { sing } task may carry`];
+  if (block.kind === 'tones') return [`${where} is a block of example sounds, which sits directly on a teaching screen only: a sound on a question would give its answer away`];
   if (block.kind === 'ref') {
     const shape = show(checkShape(block, REF_BLOCK, where));
     return shape.length ? shape : refIds.includes(block.ref) ? [] : [`${where}: "${block.ref}" is not one of the subject's refs`];
@@ -53,6 +54,18 @@ function blockProblems(block, where, kinds, refIds = [], engine = null, ruleIds 
     return shape.length ? shape : engine.chartProblems(block).map(p => `${where}: ${p}`);
   }
   return [...show(checkShape(block, PAIR, where)), ...blockProblems(block.a, `${where}.a`, kinds, refIds, engine, ruleIds, headed, gens), ...blockProblems(block.b, `${where}.b`, kinds, refIds, engine, ruleIds, headed, gens)];
+}
+
+// Example sounds on a teaching screen (3.9): the shape, the app's own limits on the numbers (audioBlockProblems), at most three sentences of what
+// to listen for, and a label for each button that no other button of the block has.
+const TONES_SAYS_SENTENCES = 3;
+function tonesProblems(block, where, engine) {
+  const shape = show(checkShape(block, TONES, where));
+  if (shape.length) return shape;
+  const sentences = [].concat(block.says).join(' ').split(/(?<=[.!?])\s+/).filter(x => x.trim()).length;
+  return [...engine.audioBlockProblems(block).map(p => `${where}: ${p}`),
+    ...(sentences > TONES_SAYS_SENTENCES ? [`${where}: what to listen for is ${sentences} sentences; it is at most ${TONES_SAYS_SENTENCES}`] : []),
+    ...duplicatesOf(block.examples.map(e => e.label)).map(l => `${where}: two sounds share the label "${l}"`)];
 }
 
 // A message: a thread or a chat is the only form with lines of your own (`me`), an email has a subject, only the forms that carry a link or a button
@@ -381,7 +394,7 @@ function stepProblems(step, where, ctx) {
   const problems = show(checkShape(step, STEPS[kind], where));
   if (problems.length) return problems;
   const { subject, engine } = ctx;
-  if (kind === 'show') step.show.forEach((b, i) => problems.push(...blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds, ctx.gens)));
+  if (kind === 'show') step.show.forEach((b, i) => problems.push(...(b && b.kind === 'tones' ? tonesProblems(b, `${where}.show[${i}]`, engine) : blockProblems(b, `${where}.show[${i}]`, engine.BLOCK_KINDS, ctx.refIds, engine, ctx.ruleIds, ctx.headedIds, ctx.gens))));
   if (kind === 'worked' && !subject.items[step.worked]) problems.push(`${where}: "${step.worked}" is not an item of the subject`);
   if (kind === 'own') problems.push(...ownStepProblems(step, where, ctx));
   if (kind === 'set') {

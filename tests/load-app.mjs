@@ -16,13 +16,14 @@ export const EXPORTS = ['SUBJECTS', 'buildSubject', 'FC', 'esc', 'SAY', 'ASK_KIN
   'definitionOf', 'addDays', 'weekEnd', 'dayOf', 'itemsOf', 'recordTry', 'firstTries', 'checkRuns', 'completeRuns', 'lessonDone', 'lastCheck',
   'lessonsInOrder', 'usedIds', 'strandDefs', 'checkStrands', 'lessonsCovering', 'strandSchedules', 'dueStrands', 'retestDays', 'retestsDue',
   'strandInstance', 'retestInstances', 'drawInstances', 'buildSet', 'freshSeed', 'refInstances', 'blockHtml', 'segmentsOf', 'itemHtml', 'feedbackHtml',
-  'paras', 'lessonFail', 'storeApply', 'rangeOf', 'saveNote', 'notesOf', 'checkIsSung', 'rightWord',
+  'paras', 'lessonFail', 'storeApply', 'rangeOf', 'saveNote', 'notesOf', 'checkIsSung', 'checkHasSung', 'checkParts', 'rightWord',
   // sound and singing
   'noteToMidi', 'midiToNote', 'hzToMidi', 'noteToHz', 'centsBetween', 'foldCents', 'SING_TASKS', 'SING_FREE', 'SING_NEEDS_RANGE', 'SING_PARAMS',
   'SING_RANGE_MIN_SPAN', 'SING_MELODY_HOLD_MS', 'SING_LOUD_LIMIT', 'SING_MISSED', 'SING_CENTS', 'singKey', 'isSingKey', 'singTaskProblems', 'singItem',
   'singDefinition', 'singPlan', 'singScalePlan', 'singExample', 'singOk', 'scoreSing', 'singWordKey', 'singMiddle', 'singTop',
-  'singNoteCents', 'singHoldMs', 'singLevel', 'singAnswer', 'singFindRange', 'steadyNotes', 'middleOf', 'stripAxis', 'voicePath', 'stripMidi',
-  'singMarksHtml', 'singMissHtml', 'stripHtml', 'pitchHtml',
+  'singNoteCents', 'singRunParts', 'singHoldMs', 'singLevel', 'singAnswer', 'singFindRange', 'steadyNotes', 'middleOf', 'stripAxis', 'voicePath', 'stripMidi',
+  'singMarksHtml', 'singMissHtml', 'stripHtml', 'pitchHtml', 'SING_OPTIONS', 'SING_GUESS_WORDS', 'SING_GUESS_TASKS', 'singGuessValue', 'singGuessWord',
+  'singMeasuredSide', 'singGuessAgrees', 'singSlid', 'singHunted', 'singMeasured', 'singJudge', 'SING_OUTCOMES', 'singDrift', 'singHalfSteps', 'SING_SHADE_CENTS', 'singControlsHtml', 'tonesHtml', 'audioBlockProblems',
   // typed numbers, documents and figures
   'parseTyped', 'fmtNumber', 'typedText', 'frameParts', 'slotCount', 'numberValue', 'numberAnswers', 'frameFilled', 'isEstimateAsk', 'tolOf', 'withinTol',
   'numbersMatch', 'scoreNumber', 'estimateTyped', 'estimatesDisagree', 'estimateOff', 'calcPress', 'calcValue', 'CALC_START', 'CALC_EXTRAS', 'calcExtraKeys', 'NUMBER_BAND', 'numberHtml',
