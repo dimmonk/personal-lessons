@@ -52,23 +52,15 @@ say so and stop rather than guessing from some other file.
 
 ## 2. Merge anything still on a branch
 
-For each unmerged branch, check CI before merging:
+There is no GitHub CI on any project, so verify each unmerged branch locally:
+check it out, run the tests, and merge it if they pass.
 
-```bash
-gh pr list --head <branch> --state open
-gh pr checks <pr-number>
-```
-
-- Green → merge it (`gh pr merge <n> --merge`).
 - Red → **check whether `main` fails the same way** before treating it as this
-  branch's problem: `gh run list --branch main --limit 3`, then compare the
-  failing test. A failure already present on `main` — and already documented
-  as a known issue in this project's own docs/CLAUDE.md — is pre-existing and
-  not a blocker for shipping. A failure unique to the branch, or one you can't
-  confirm is the same pre-existing failure, is — stop and tell the user.
-- No PR for the branch → run the tests on it; if they pass, merge it.
-- No CI configured for this repo → `gh pr checks` reports nothing; treat the
-  branch as unverified rather than merging blind, and say so.
+  branch's problem: run the same test on `main` and compare. A failure already
+  present on `main` — and already documented as a known issue in this
+  project's own docs/CLAUDE.md — is pre-existing and not a blocker for
+  shipping. A failure unique to the branch, or one you can't confirm is the
+  same pre-existing failure, is — stop and tell the user.
 
 Skip this step entirely if everything is already on `main`.
 
@@ -151,10 +143,8 @@ Four lines max:
 - Deploys only work where this project's provider credentials are.
   Cloud/remote sessions typically have none — if this skill is running in
   one, say so and stop at step 3 rather than failing at step 4.
-- If the user wants merging to deploy automatically, that is a CI workflow
-  change (e.g. a GitHub Actions job on push to `main` with a deploy token in
-  repo secrets) — a change to the project's deploy security posture. Propose,
-  do not build it unasked.
+- Deploys run from the Mac only. Never add GitHub Actions or any other CI to
+  test or deploy; Steven turned it off on every repo.
 - Per-project specifics (test commands, hosting target names, any
   currently-known pre-existing test failures) live in that project's own
   CLAUDE.md/docs. This skill reads them fresh each run
