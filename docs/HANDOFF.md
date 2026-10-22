@@ -14,6 +14,8 @@ Largest to smallest, in every screen, doc and message:
 - **Topic**: something taught that comes back in the review (a strand). The same topic can be taught in more than one subject; that is how overlap is handled, never by filing a subject twice.
 
 ## 2. State
+**2026-10-22/23: the six remaining subjects rebuilt with build-subject** and live: Scams (release 46), Statistical Claims (47), Wealth Preservation (48), Basic Math (49), US Civics & History (50), Math refreshers, the owner's ask for school math as short reminders (51), Singing (52). Each has `docs/research/<id>.md`, `docs/subjects/<id>/plan.md` and its review and fix records in `docs/subjects/<id>/`; every lesson passed a fresh learner review and a research check and is `live`. Singing's note judging (`public/app/lessons/sing-judge.js`) is held by `tests/sing-sim/`, which keeps every reviewer scenario. The table below predates this rebuild.
+
 Every subject is in the interactive format of `docs/lesson-standard.md` (version 1, with the decisions of 2026-10-05 in sections 17 and 17 of the history (docs/lesson-standard/history-v1.md)). The old card format is gone: no data, no screens, one engine (`public/app/lessons/*.js`).
 
 | Subject | Units | Kinds | Specimens |
