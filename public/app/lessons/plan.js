@@ -10,6 +10,9 @@ function planFromDraft(form, draft, day){
   const r = ownRecord(form.fields, {}, draft);
   return { plan: { cue: r.value.cue, then: r.value.then, saved: day }, problems: Object.entries(r.problems).map(([path, text]) => ({ path, text })) };
 }
+// the subject's own words around its plan (`words` of its form into the plan): the step's title and how to write it, the line once saved, and the
+// line that shows it again before practice and the review. Each subject's moment differs (a request for money, a number about to move you).
+const planWordsOf = data => (Object.values(data.meta.own || {}).find(f => f.into === 'plan') || lessonFail('the subject has no plan form')).words;
 const planTrim = text => String(text).trim().replace(/[.,;:!?\s]+$/, '');
 // the plan as one sentence: "If a text asks for a code, I will hang up and call the number on my card."
 const planSentence = plan => `${SAY.planIf} ${planTrim(plan.cue)}, ${SAY.planThen} ${planTrim(plan.then)}.`;

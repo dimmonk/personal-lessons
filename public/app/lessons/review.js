@@ -117,7 +117,7 @@ function renderReviewRun(){
 function paintBlockIntro(part, block){
   const T = REVIEW_TEXT, retest = block.kind === 'retest';
   reviewShell(`<div class="eyebrow-row"><span class="m a">${esc(part.subj.name)}</span><h1>${esc(retest ? T.retestResult(block.lesson.title) : T.title)}</h1></div>
-    <div class="lesson"><p>${esc(retest ? T.retestIntro(block.lesson.title) : T.intro(part.subj.name, block.list.length))}</p>${!retest && part.data.meta.timed ? `<p>${esc(T.timed(TIMER_REVIEW_SECONDS))}</p>` : ''}</div>${!retest && notesOf(part.subj.id).plan ? `<div class="lesson"><p>${esc(SAY.planBefore)}</p></div>${planSentenceHtml(notesOf(part.subj.id).plan)}` : ''}`,
+    <div class="lesson"><p>${esc(retest ? T.retestIntro(block.lesson.title) : T.intro(part.subj.name, block.list.length))}</p>${!retest && part.data.meta.timed ? `<p>${esc(T.timed(TIMER_REVIEW_SECONDS))}</p>` : ''}</div>${!retest && notesOf(part.subj.id).plan ? `<div class="lesson"><p>${esc(planWordsOf(part.data).before)}</p></div>${planSentenceHtml(notesOf(part.subj.id).plan)}` : ''}`,
     `<div class="actbar"><button class="btn neutral" id="beginBlock">${T.begin}${icon('arrow')}</button></div>`);
   on('#beginBlock', () => { REVIEW = { ...REVIEW, phase: 'run' }; render(); window.scrollTo(0, 0); });
 }

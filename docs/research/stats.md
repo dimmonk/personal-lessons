@@ -162,10 +162,14 @@ be found is marked **judgement call**.
 - **What it means here.** The lesson on cause does not teach Hill's list (it is for weighing a body of studies, which a
   phone reader does not have). It teaches his fundamental question, asked of one article: what else could explain this?
   The usual answers are named (other differences between the groups, the arrow running the other way, a bounce back from
-  an extreme, nothing to compare with), and the case where the answer is "nothing else, the groups were split by chance"
-  (Hill's "experiment") is the claim that holds. Temporality (which came first) is the "arrow" answer.
-- **Supporting.** Bergstrom & West's syllabus (read) lists under "Causality": "correlation is not causation",
-  "regression to the mean presented as a treatment effect", "selection presented as transformation". Spiegelhalter
+  an extreme, nothing to compare with), and the case where the answer is "only luck, the groups were split by chance"
+  (Hill's "experiment") is the claim that holds, when the groups are big enough and the gap clear enough for luck to be
+  unlikely. Temporality (which came first) is the "arrow" answer. Hill starts from an association already "beyond what we
+  would care to attribute to the play of chance" (his opening, as quoted in the standard summaries), and Wakeford (2015) names
+  chance beside bias and confounding: chance is the first other explanation, so a split by chance leaves luck, and a trial of
+  a handful of people does not settle it (added 2026-10-22 after the research review of lessons 6 to 9).
+- **Supporting.** Bergstrom & West's syllabus (read) lists under "Causality": "Regression to the mean pitched as treatment
+  effect" and "Selection masked as transformation" (corrected 2026-10-22 to the page's wording). Spiegelhalter
   (2017), T2: "Suggest a cause when only an association is observed." Informed Health Choices: "Belief that association
   means causation".
 

@@ -1,5 +1,5 @@
 // The pure half of step 5 (lesson standard 3, 3.9, 3 to 9): a tap scored, a chart's axis and bars worked out from its data, the cut chart
-// redrawn from zero, the 1,000 people, an article laid out, and the numbers and sorting of Stats' pilot lesson. No browser: the app's scripts
+// redrawn from zero, the 1,000 people, an article laid out. (The numbers and sorting of Statistical Claims are in tests/stats-lessons-pure.mjs.) No browser: the app's scripts
 // are loaded as in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/stats-pure.mjs
 import { loadApp } from './load-app.mjs';
@@ -131,59 +131,6 @@ const chartOf = (over = {}) => ({ kind: 'chart', type: 'bars', title: 'T', x: ['
   check(/Ad<\/span>Maker/.test(html) && /mark class="cue" data-seg="a"/.test(html), 'an ad is marked as an ad, and a deciding line is marked');
   check(!/art-head/.test(articleHtml({ ...block, form: 'post', headline: undefined }, {})) && /Report summary/.test(articleHtml({ ...block, form: 'report' }, {})), 'a post has no headline, and a report is marked as one');
   check(blockHtml({ kind: 'chart', ...chartOf() }, {}).includes('block-chart'), 'a chart is a block');
-}
-
-/* ---------- Stats' pilot: the sorting, the numbers, the sets ---------- */
-{
-  const lesson = stats.lessons.l1, items = Object.values(stats.items), byId = stats.items;
-  const inLesson = new Set([...lesson.flow.filter(s => s.worked).map(s => s.worked), ...lesson.flow.filter(s => s.set).flatMap(s => flatRefs(s.set.items).map(refId)), ...flatRefs(lesson.check.items).map(refId)]);
-  same(items.length, 17, 'seventeen questions: the worked one, eight in the groups, five in the check, three in reserve');
-  same(items.filter(i => !inLesson.has(i.id)).map(i => i.id).sort(), ['r-debt', 'r-solar', 'r-stopsign'], 'the three held in reserve are named by no lesson');
-  const kinds = new Set();
-  items.forEach(item => {
-    const where = `question ${item.id}`, [kind, line, verdict] = item.asks;
-    same(item.asks.map(a => a.id), ['kind', 'line', 'verdict'], `${where}: the three asks in order`);
-    const right = a => app.chooseOptions(stats, a).filter(o => o.ok).map(o => o.id);
-    same(right(kind).length, 1, `${where}: one right kind`);
-    kinds.add(right(kind)[0]);
-    same(right(verdict), [{ holds: 'holds', outruns: 'not-shown', unclear: 'unclear' }[item.facets.fit]], `${where}: the verdict that goes with how it is sorted`);
-    check(app.chooseOptions(stats, kind).filter(o => !o.ok).every(o => o.slip && o.slip.startsWith('took-')) && app.chooseOptions(stats, verdict).filter(o => !o.ok).every(o => o.slip), `${where}: every wrong answer names a slip`);
-    check(line.right === TAP_NONE ? item.facets.fit === 'unclear' : item.facets.fit !== 'unclear', `${where}: only a claim that cannot be told has no number to find`);
-    const article = item.blocks.find(b => b.kind === 'article'), lines = article.lines;
-    if (line.right !== TAP_NONE) {
-      same(line.right.length, 1, `${where}: one line gives the number`);
-      check(/\d/.test(lines.find(l => l.id === line.right[0]).text), `${where}: the line that gives the number has a digit in it`);
-      check(item.deciding.includes(line.right[0]), `${where}: the line with the number is among the deciding words`);
-      // another line with a number in it, which could be taken for the answer, says what it is
-      check(lines.filter(l => l.id !== line.right[0] && /\d/.test(l.text)).every(l => l.note), `${where}: a line with a number in it, other than the answer, carries no note saying what it is`);
-    } else check(lines.every(l => !/\d/.test(l.text) || l.note), `${where}: a line with a number in it, when nothing is given, says what the number is`);
-    check(item.deciding.every(id => segmentsOf(article).some(s => s.id === id)), `${where}: every deciding line is in the text`);
-    if (item.facets.fit !== 'holds') check(item.deciding.includes('h') || article.form === 'post', `${where}: the headline is among the deciding words when the claim goes further than the text`);
-    check(article.form === 'post' ? !article.headline : !!article.headline, `${where}: a headline for every form but a post`);
-  });
-  same([...kinds].sort(), ['cause', 'compare', 'forecast', 'most', 'size'], 'every kind of claim appears');
-  // the sets
-  const setIds = lesson.flow.filter(s => s.set).map(s => flatRefs(s.set.items).map(refId)), fits = ids => ids.map(id => byId[id].facets.fit);
-  same(setIds.map(ids => ids.length), [3, 5], 'a group of three and a group of five');
-  same(fits(setIds[0]), ['outruns', 'holds', 'unclear'], 'the first group: one of each');
-  same([...fits(setIds[1])].sort(), ['holds', 'holds', 'outruns', 'outruns', 'unclear'], 'the second group: two sound, two that go further than their text, one that cannot be told');
-  same([...fits(flatRefs(lesson.check.items).map(refId))].sort(), ['holds', 'holds', 'outruns', 'outruns', 'unclear'], 'the check: two sound, two that go further, one that cannot be told');
-  same(lesson.flow.filter(s => s.set).map(s => s.set.support || null), [{ shown: true }, null], 'help in the first group only');
-  // the check, as a pass rule reads it
-  const outcome = (id, ok, r = {}) => ({ facets: byId[id].facets, r, ok });
-  const ids = flatRefs(lesson.check.items).map(refId);
-  const run = oks => ids.map((id, i) => outcome(id, oks[i], oks[i] ? {} : { verdict: byId[id].facets.fit === 'holds' ? 'doubted' : 'believed' }));
-  check(checkResult(stats, lesson.check.pass, run([true, true, true, true, true])).passed && checkResult(stats, lesson.check.pass, run([false, true, true, true, true])).passed, '4 of 5 passes');
-  check(!checkResult(stats, lesson.check.pass, run([false, false, true, true, true])).passed, '3 of 5 does not pass');
-  const turnedDown = ids.map((id, i) => outcome(id, byId[id].facets.fit !== 'holds', byId[id].facets.fit === 'holds' ? { verdict: 'doubted' } : {}));
-  check(!checkResult(stats, lesson.check.pass, turnedDown).passed, 'turning down both sound claims does not pass, whatever else is right');
-  same(checkResult(stats, lesson.check.pass, run([true, true, true, true, true])).lines.map(l => l.text), ['At least 4 right', 'At most 1 turned down a claim that holds up'], 'the rules in words');
-  // the figures in the claims are what the text says they are
-  same([Math.round((25 - 22) / 25 * 100), 25 - 22], [12, 3], 'the coffee: 25 to 22 in 1,000 is 12% fewer, 3 fewer in 1,000');
-  same(Math.round(1860 / 1980 * 100), 94, 'the deliveries: 1,860 of 1,980 is 94%');
-  same(180 / 30, 6, 'the reading scores: 30 of 180 is one in six');
-  check(87 / 112 > 0.5 && 31 > 19 && 212 > 170 && 82 > 80, 'the stop sign, the crashes, the pets and the commute say what their numbers say');
-  same(byId['w-coffee'].figure.data.rows.map(r => r.count), [25, 22], 'the worked story draws the same two counts as its text');
 }
 
 if (failures.length) {

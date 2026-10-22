@@ -291,8 +291,8 @@ const SAYPLAIN = { optional: ' (optional)' };
 function planLines(e, subject, step, at) {
   const { SAY } = e, form = subject.meta.own[step.own];
   if (form.into === 'setup') return [`## ${at}: ${SAY.setupTitle}`, '', `${SAY.setupHow} Each of these is a row with "${SAY.setupMark}" (the day is kept) and, once done, "${SAY.setupUndo}":`, '', ...form.fields.map(f => `- ${f.label}`), '', SAY.setupNote, ''];
-  return [`## ${at}: ${SAY.planTitle}`, '', `${SAY.planHow} ${SAY.planPrivate}`, '', ...form.fields.map(f => `- ${f.label}${f.hint ? ` (for example: ${f.hint})` : ''}`), '',
-    `Buttons: "${SAY.planSave}" (both boxes must be filled in; the plan is kept as one sentence, "${SAY.planIf} <when>, ${SAY.planThen} <what>.", with the day it was saved) and "${SAY.planSkip}". Once saved: "${SAY.planSaved}" and "${SAY.planChange}". A group of questions that rehearses the plan shows it once first: "${SAY.planBeforeTitle}", "${SAY.planBefore}", and the sentence, when there is one.`, ''];
+  return [`## ${at}: ${form.words.title}`, '', `${form.words.how} ${SAY.planPrivate}`, '', ...form.fields.map(f => `- ${f.label}${f.hint ? ` (for example: ${f.hint})` : ''}`), '',
+    `Buttons: "${SAY.planSave}" (both boxes must be filled in; the plan is kept as one sentence, "${SAY.planIf} <when>, ${SAY.planThen} <what>.", with the day it was saved) and "${SAY.planSkip}". Once saved: "${form.words.saved}" and "${SAY.planChange}". A group of questions that rehearses the plan shows it once first: "${SAY.planBeforeTitle}", "${form.words.before}", and the sentence, when there is one. The review shows the same line and the sentence at the start of the subject's part.`, ''];
 }
 // the step where the learner enters the answers that depend on where they live and who holds office, and the day of their interview
 function answersLines(e, subject, step, at) {

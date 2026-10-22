@@ -4,7 +4,7 @@
 FC.subject('scams', {
   name: "Scams & Social Engineering",
   field: "communication",
-  rev: 10,
+  rev: 11,
   complete: true,
   standard: 2,
   history: [
@@ -23,7 +23,8 @@ FC.subject('scams', {
     { rev: 7, date: "2026-10-20", change: "Placed on a field of the library (communication), one of the shelves Field, Subject, Unit, Lesson." },
     { rev: 8, date: "2026-10-22", change: "Rewritten to the plan built from the research on how fraud investigators, consumer agencies and bank fraud teams decide: twelve parts in four units (the move, the scripts, under pressure, if it already went out), one topic for each lesson, the kinds of request, the first steps after a loss, and the learner’s own setup and plan. Lessons 1 to 6 are built beside the pilot and the baseline." },
     { rev: 9, date: "2026-10-22", change: "One rule for every lesson, after the two reviews of lessons 1 to 6: do what it says when you started it; check first, a way you already had, when you did not and it uses the name of a company you have an account with or a person you know; leave it when neither, and tell someone you know in person when someone known only online wants money. The reading share is a fifth, not a sixth, because each lesson of the scripts now names the wrong idea it corrects beside the rule." },
-    { rev: 10, date: "2026-10-22", change: "Lessons 7 to 12 built on the one rule, so every part has its lesson and the subject is complete: bills and payments, your details, what looks prove nothing, calls and chats that push (with real calls you placed, where staying is right, and messages over the busy task), your plan with the real-world test and its four-week retest, and the first hour after a loss. The first steps after a loss are now one per kind of loss (money, a password, your device, your Social Security number), worded as the FTC gives them, with the wrong first moves beside them." }
+    { rev: 10, date: "2026-10-22", change: "Lessons 7 to 12 built on the one rule, so every part has its lesson and the subject is complete: bills and payments, your details, what looks prove nothing, calls and chats that push (with real calls you placed, where staying is right, and messages over the busy task), your plan with the real-world test and its four-week retest, and the first hour after a loss. The first steps after a loss are now one per kind of loss (money, a password, your device, your Social Security number), worded as the FTC gives them, with the wrong first moves beside them." },
+    { rev: 11, date: "2026-10-22", change: "The plan step's words are now the subject's own (the app no longer holds them), unchanged for the learner." }
   ],
   endResult: "When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.",
   parts: [
@@ -108,7 +109,11 @@ FC.subject('scams', {
       { id: "word", label: "Agree a secret word with my family", type: "date" }] },
     plan: { into: "plan", fields: [
       { id: "cue", label: "When this happens", type: "text", hint: "someone I did not call asks for a code, money or my sign-in" },
-      { id: "then", label: "Then I will", type: "text", hint: "end it and call back on the number I have" }] }
+      { id: "then", label: "Then I will", type: "text", hint: "end it and call back on the number I have" }],
+      words: { title: "One plan, for when a request comes",
+        how: "Write one plan in your own words. Start from the moment: a message that wants money, a code, your details or your device. Then say what you will do.",
+        saved: "Your plan is saved. You will see it again before the practice that rehearses it.",
+        before: "This is the plan you wrote. Practice it on the next messages." } }
   },
   review: { gaps: [1, 7, 24], every: 60 },
   readingShare: 0.2

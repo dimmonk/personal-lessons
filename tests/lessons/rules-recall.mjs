@@ -3,7 +3,8 @@
 // the app can say how old it is (refs, 3; V70 holds each ref's day to be a real one). Nothing here repeats V70.
 import { subjectRule, checkEach } from './rule.mjs';
 
-const ASKS_FROM_LIST = item => item.asks.some(a => a.kind === 'text' && 'accept' in a);
+// a text ask checked against accepted answers, unless they are the subject's own lessons' words (`taught`), which no one else publishes
+const ASKS_FROM_LIST = item => item.asks.some(a => a.kind === 'text' && 'accept' in a && !a.taught);
 export const V84 = subjectRule('V84', (s, check) => {
   if (!Object.values(s.items).some(ASKS_FROM_LIST)) { check(true, ''); return; }
   const refs = s.meta.refs || [];

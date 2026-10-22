@@ -180,7 +180,7 @@ PassRule = { ask?, where?: { facet: value }, right?: { min }, wrong?: { max }, s
 
 **A generator** (`FC.gen`) is an item whose numbers are made fresh: the item fields plus
 `params: { name: [min, max, step] | [choice, ...] }` and `make(pick, params)`. A parameter is a range when it is three
-numbers with the step above zero and min at most max; any other list is a list of choices. `pick(name)` returns that
+numbers with the step above zero and min at most max; any other list is a list of choices. A range whose step reaches past its max gives only its min, so V75 refuses it: three numbers meant as choices are a range to the engine, and are written as two choices, or four or more. `pick(name)` returns that
 parameter's value for the seed; every parameter is drawn first, in the order listed (`with` fixes some), and `make`
 returns the derived values. `make` is pure: the same seed gives the same item. Text fills `{name}` slots. A made
 `choose` puts its answer in a slot (`right: '{verdict}'`) or names values (the ask's `answer`, an option's `value`). A
@@ -293,7 +293,7 @@ chosen and nothing is marked until the end.
 - *A line to write*, `{ id, kind, prompt, model, when? }`: the words are never scored (no entry in `r`); the item is
   right or wrong by its other asks, and needs one that is scored (V74). At most 400 characters, trimmed. "Not yet"
   answers with nothing. The feedback shows the words beside "A model line", neither marked. Stored as `a: { say }`.
-- *An answer from memory*, `{ id, kind, prompt, accept: [Entry] | { own: 'answers.q23' }, reject?: [Entry], count? }` (`reject`: another thing's name, typed exactly, is a miss and never a forgiven misspelling; a place group fills it with its other places' names), under a `spoken`
+- *An answer from memory*, `{ id, kind, prompt, accept: [Entry] | { own: 'answers.q23' }, reject?: [Entry], count?, taught? }` (`taught: true`: the accepted answers are the subject's own lessons' words, such as Stats' six questions, not a published list, so V84 asks no source for them) (`reject`: another thing's name, typed exactly, is a miss and never a forgiven misspelling; a place group fills it with its other places' names), under a `spoken`
   block that holds the question. An `Entry` is a string (words in brackets are optional; a bracket that offers a choice
   may be said with either half) or `{ text, parts }` (parts in any order). `count: n` needs n different accepted answers
   in what was typed. `accept.own` reads the learner's own entry. The item's `reason` is the meaning line, shown after
@@ -686,8 +686,11 @@ no other account can read (`firestore.rules`), and leaves it only in a file the 
 - `sheet: { accounts: [{ id, name, type, balance, holdings: [{ name, value, kind, expense }], fees, matchRule?,
   beneficiary }], mix }` (Wealth). `actions: [{ id, what, where, when, done?, repeat? }]`. `triggers: { [id]: date }`,
   marked on the subject screen or at the step that waits, with no form.
-- `plan: { cue, then, saved }` (Scams): two boxes of at most 80 characters, kept as "If <when>, I will <what>.",
-  changeable and skippable. `setup: { [fieldId]: day }`: things the learner does on their own phone, each "Done now" or
+- `plan: { cue, then, saved }` (Scams, Stats): two boxes of at most 80 characters, kept as "If <when>, I will <what>.",
+  changeable and skippable. The words around it are the subject's own, on its form into the plan (`words: { title, how, saved, before }`:
+  the step's title, how to write it, the line once saved, and the line that shows it again before a group that rehearses it and at the
+  start of the subject's part of the review), since each subject's moment differs; V70 refuses a plan form without them, or words on
+  another form (decided 2026-10-22, when Stats added its plan). `setup: { [fieldId]: day }`: things the learner does on their own phone, each "Done now" or
   "Not done".
 - `answers: { q23: '…', …, interviewDate? }` (Civics): the answers the list says vary, in its own words, and the
   interview day, saved whole with the day saved. Two senators are one entry with a semicolon between.
@@ -875,7 +878,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's) | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; a worked case is shown practice and counts as doing, at the same 200 words a minute; doing is `DOING_SECONDS` (choose, tap and place 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20; a place group's question by the form it is asked in) | a why padded past the share |
 | V74 | Every ask can be scored and explained (a place group: every question it can make): a right option and a line or slip on each wrong one; a tap's right lines are lines of the item and among `deciding`; a place's slips are the subject's, and the map above it never has the right place (or a neighbor or the water of the place asked about) lit; a lit place named from memory is the one lit map, with no spoken block; a `tol`; an estimate before its exact answer; `accept` entries distinct, `count` within them; an item with a scored ask; `reason` on every item, `deciding` ids that exist; `has` exactly the panel's needs | a wrong option with no `then` |
-| V75 | Generators: on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item. A place group: on every (place, form) pair and 200 seeds the same seed the same question, the question is the pair the seed names, and a seed made for a pair names it | a trap that lands on the answer |
+| V75 | Generators: no range that gives one value; on 200 seeds, finite values inside `params`, every slot filled, every trap outside the answer's tolerance, a right option that shows the answer, the same seed the same item. A place group: on every (place, form) pair and 200 seeds the same seed the same question, the question is the pair the seed names, and a seed made for a pair names it | a trap that lands on the answer |
 | V76 | Every set and check holds the subject's `mix` (a check drawn at random by strands is not read; one drawn from a place group holds the mix its split fixes) | a set with none of a kind the mix requires |
 | V77 | Banks: each strand a check covers has three unseen items for its returns and one more per item of a retest, unless it has a generator or one item | a strand one item short |
 | V78 | Singing: tasks and parameters inside `SING_PARAMS`; the warm-up first and once, never in a check; no line in a check; sung checks `after-each`; every target inside the range | a hold of 9 seconds |
@@ -883,7 +886,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V81 | Private forms: no field for an account number, login, password or Social Security number, fund rows included; every `into` is a slot of section 5.3 | a field "Account number" |
 | V82 | The failure (`danger.slip`) sits only on risky items, never on a real one, and can be made at least once | a real message whose wrong option is the failure |
 | V83 | A timed set holds only choose, tap, order or exchange (a place group is none of them); a busy set is timed and each item opens on a banner and asks one choice | a busy set that is not timed |
-| V84 | A subject that asks from a published list names it in `refs` (a link and the day looked up) | questions from a published list and no source for it |
+| V84 | A subject that asks from a published list names it in `refs` (a link and the day looked up); a `text` ask marked `taught` answers from the subject's own lessons and needs none | questions from a published list and no source for it |
 
 Every other rule id below V84 is retired and never reused.
 
@@ -916,7 +919,7 @@ Every other rule id below V84 is retired and never reused.
 | X27 | Papers, tabs, a value looked up, a form answered whole and scored field by field | every paper of a household open at once |
 | X28 | The phone's Back button inside the app | Back leaves the app from inside it |
 | X29 | "Find my range again": unscored, replaces the range, Back keeps the old | the old range thrown away when the exercise opens |
-| X30 | Stats' pilot walked end to end at 375 px, ending with the review two days later | a slip of the pilot no longer named |
+| X30 | Stats' lesson 1 walked end to end at 375 px, ending with the review two days later; then lessons 2 to 9 walked whole (typed sizes and changes, the six questions from memory, the plan skipped) and lesson 9's second check four weeks on, eight new questions of the same kinds | a slip of the pilot no longer named |
 | X31 | The four article forms drawn at 360 and 390 px | the headline drawn under the story |
 | X32 | A labelled post, the panel only where the help is, needs found or missing, pass rules by side, sides compared | the panel drawn in every set, not only where the help is on |
 | X33 | Ideology's pilot walked end to end at 375 px | a slip of the pilot no longer named |
@@ -999,8 +1002,10 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
 - **Wealth**: lesson 2, what an account costs a year, with the sheet, the costs and dated changes; the strand "What an
   account costs a year". Not built: the other lessons' arithmetic, the yearly check, editing accounts outside a step,
   and Wealth's first ref (the reporting threshold, to be looked up the day lesson 6 is written).
-- **Stats**: lesson 1, find the claim and its number (what it claims, the line or "Not given", the verdict); three
-  items in reserve. Not built: the plain size typed (part B), the retest (lesson 7).
+- **Stats**: complete (2026-10-22, plan: `docs/subjects/stats/plan.md`): the baseline and lessons 1 to 9, each claim put to the
+  standing questions (what it claims, the line or "Not given", the verdict) with the lesson's own between them (a size typed, what else
+  could explain it, a chart's change); lesson 9 asks the six questions from memory, offers the plan, and its check comes back on new
+  questions after 28 days. Tests: `tests/stats-lessons-pure.mjs`, `tests/stats-late-pure.mjs`, X30.
 - **Ideology**: rebuilt 2026-10-17 on the owner's own course (plan: `docs/subjects/ideology/plan.md`): seven lessons, 1 to 6
   with 5b, each passage put to the five deciding questions in order (`ideoCase`, items-shape.js), then the family, named only on
   its signature answers (`IDEO_SIGNATURE`) or "too little to tell"; slips name the known traps (the direction check, methods for

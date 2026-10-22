@@ -25,7 +25,11 @@ FC.subject('pressure', {
   danger: { slip: 'acted', facet: 'genuine', risky: 'scam', real: 'genuine' },
   strands: [{ id: 'decide', title: 'Act, check or leave' }],
   own: {
-    plan: { into: 'plan', fields: [{ id: 'cue', label: 'When this happens', type: 'text', hint: 'a text wants a code' }, { id: 'then', label: 'Then I will', type: 'text', hint: 'hang up and call the number on my card' }] },
+    plan: { into: 'plan', fields: [{ id: 'cue', label: 'When this happens', type: 'text', hint: 'a text wants a code' }, { id: 'then', label: 'Then I will', type: 'text', hint: 'hang up and call the number on my card' }],
+      words: { title: 'One plan, for when a request comes',
+        how: 'Write one plan in your own words. Start from the moment: a message that wants money, a code, your details or your device. Then say what you will do.',
+        saved: 'Your plan is saved. You will see it again before the practice that rehearses it.',
+        before: 'This is the plan you wrote. Practice it on the next messages.' } },
     setup: { into: 'setup', fields: [{ id: 'bank', label: 'Save my bank’s number from the back of my card', type: 'date' }, { id: 'app', label: 'Check my bank’s app is on my phone', type: 'date' }] }
   },
   readingShare: 0.9

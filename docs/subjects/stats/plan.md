@@ -29,6 +29,14 @@ The field has no single checklist (Spiegelhalter T1–T2, Gal T8, Full Fact T12,
 6. **Verdict:** holds up / does not show it / cannot tell from this (something needed is missing, T8).
 The judgment is of the conclusion, not of the number alone (T1, T12). No method jargon is needed (T14).
 
+**One verdict rule, the same in every lesson** (fixed 2026-10-22 after the first reviews, `fixes-l0-5.md`). The claim is what a reader takes
+away from the headline, in plain words ("up 55%" means worse than before; T12: "draw out exactly what someone means"), so the claim chosen and
+the verdict never pull apart. It holds up when the text shows that claim; it does not show it when the text itself shows the claim goes too far,
+in numbers or in words (its numbers say less, it is about other people, something else could explain it); you cannot tell when something needed is
+not in the text at all (T8). So "Not given" is not always "cannot tell", and a number given can still leave the one thing needed missing. A claim
+that one thing makes another happen holds only on groups split by chance (T9). No verdict can be read off a word, a form or a place: strong
+words, ads, "Not given" and the sentence to tap each fall on both sides (tests/stats-lessons-pure.mjs asserts it).
+
 ## What it teaches, covering every ask
 
 The owner's asks are the old units at the tag `old-lessons` (titles in the owner's words) and the approved design
@@ -70,14 +78,15 @@ drinkers had fewer heart attacks"). Check: 5 new items, 4 of 5 right, at most on
 (readers cannot hear finer kinds; the pilot's stand-in review missed only kind labels), T12, P15.
 
 **L2. How big is it: out of how many.** A count or a sum turned into a rate ("1,200 cases in a city of 400,000 = 3 in
-1,000"); "percentage points" recognized and turned back into counts. `number` ask with a frame ("__ in 1,000"), `tol:
+1,000"); "percentage points" recognized and turned back into counts; a sum of money said for each person and each year (T6: "about £1 per place per week"). `number` ask with a frame ("__ in 1,000"), `tol:
 { round: 1 }`, traps for the common slips (dividing the wrong way); a generator (`FC.gen`) for fresh numbers after the
 fixed items, because this step recurs on every item. Check: 5 typed sizes, 4 of 5. Why: T6, T5 (points "too subtle"),
 T17, P10 requires 6.
 
 **L3. A risk, before and after.** "Cuts your risk by half" typed as before and after in 1,000 over the stated time, then
-whether the headline's word fits. Two-blank `number` frame, the `people` figure in the feedback, a generator. Wrong idea:
-"50% less means half of people are spared". Check: 5 items, both numbers right on 4 of 5, the word judged. Why: T5
+whether each size the headline gives fits it: a share of the risk ("halves") against the drop as a share, a number of people ("spares 1 in
+1,000", "keeps half of patients") against how many fewer have it; strong words with no number decide nothing. Two-blank `number` frame, the `people` figure in the feedback, a generator. Wrong idea:
+"50% less means half of people are spared". Check: 5 items, both numbers right on 4 of 5, the headline's sizes judged. Why: T5
 (persuasion gap, Gigerenzer's "from 20 in 100 to 10 in 100 over 10 years"), T16, T17.
 
 **L4. A test says yes.** Count 1,000 people: how many have it, how many of them test positive, how many of the rest test
@@ -89,7 +98,7 @@ frequencies), T17.
 
 **L5. Compared with what.** No comparison; a picked start; totals where rates are needed; a different mix inside the
 totals; counted a new way or looked for harder at one end; one target-gaming item. Opens with a contrast pair (`pair`
-block, then `[a, b]` items asked back to back): fair and unfair on one topic. Check: 6 items, verdict and line on 5.
+block, then `[a, b]` items asked back to back): fair and unfair on one topic; the different mix is shown worked on two hospitals before it is asked. Check: 6 items, verdict and line on 5.
 Why: T7, T2 ("no context or comparative perspective"), P12.
 
 **L6. Who was counted, and how.** How many; who chose to answer or did not answer; only the survivors; the people the
@@ -101,9 +110,9 @@ T13, T15 (sample size is the best-taught rule).
 
 **L7. Could anything else explain it?** Hill's question on one article: a fourth ask, `choose` from the item's own
 options, names the other explanation (other differences between the groups, the arrow the other way, a bounce back from
-an extreme, nothing to compare with) or "nothing else: the groups were split by chance". Worked pair: a randomized trial
-(holds) beside a survey of people who chose (does not show the cause); placebo taught in the trial. Check: 6 items with
-two sound trials, 5 right. Why: T9, T3 (33% of releases), T4.
+an extreme, nothing to compare with) or "only luck: the groups were split by chance" (luck, as in lesson 6's margin, rules
+out a trial of a handful of people). Worked pair: a randomized trial (holds) beside a survey of people who chose (does not
+show the cause); placebo taught in the trial. Check: 6 items with two sound trials and one too small to rule out luck, 5 right. Why: T9, T3 (33% of releases), T4.
 
 **Unit 4. Charts and the whole item**
 

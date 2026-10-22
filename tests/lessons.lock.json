@@ -26,16 +26,16 @@
       "fp": "sha256:f4a6a1d67d13154989529b10b71a72649949687e01269cf1fa08d67121591a65"
     },
     "scams": {
-      "rev": 10,
-      "fp": "sha256:6ec8185fea6d6f5d7a36ddac968487deee9edf45e561ba6cc22020d77a1a86a0"
+      "rev": 11,
+      "fp": "sha256:1ed6031c7cc2bcf07465a0af564fa5204c70619a3d13db1e020cb9900959e397"
     },
     "singing": {
       "rev": 4,
       "fp": "sha256:4697220f527c698dcb9141d9c6a5a8e790135ae325db2a0f673fb853ac85aebd"
     },
     "stats": {
-      "rev": 7,
-      "fp": "sha256:88fd05fe9e572cbe7b330405ebbc63b93d399fa012cf239fedce1fd6759b0a35"
+      "rev": 9,
+      "fp": "sha256:7f5115f01b5107ee7fef0a9c8b6e674d38671839ee9d6b01dd317680f59c3372"
     },
     "wealth": {
       "rev": 7,
@@ -427,9 +427,45 @@
       "rev": 1,
       "fp": "sha256:eea7de846413ca81f61f8bb30f19eb1f8921ecef828912b35c6ae6600f67c353"
     },
-    "stats/l1": {
+    "stats/l0": {
       "rev": 1,
-      "fp": "sha256:d2c1e900786b6426538a9ea577e3e6351576b15c40129922402dfe406c84b1c9"
+      "fp": "sha256:e185cab2298b08262af1d95d095536bfc2f26bb7f2b4b7d84ca27a697a245106"
+    },
+    "stats/l1": {
+      "rev": 2,
+      "fp": "sha256:fd9563175a1050fdc65ca951a59cf9494cfc8ba44ccdd8ff2c87c96ba6dbb689"
+    },
+    "stats/l2": {
+      "rev": 1,
+      "fp": "sha256:c19fb2b884338eb1adc7a761491c05a88e1035abf0965681c9bacebd8127ed2f"
+    },
+    "stats/l3": {
+      "rev": 1,
+      "fp": "sha256:62e49a2ba40a885490618e633045f9e718d80e1e3de4663fa0f763a59d7dbb5a"
+    },
+    "stats/l4": {
+      "rev": 1,
+      "fp": "sha256:022393295dcae9a43a8f13b6a1afc12023e4479e32413f8af98dd86f17d9ce62"
+    },
+    "stats/l5": {
+      "rev": 1,
+      "fp": "sha256:659697beb8147cba1db6a8668ace93b65e3bb795239b2f3493055ec2f0132dce"
+    },
+    "stats/l6": {
+      "rev": 1,
+      "fp": "sha256:7bbaa9b88f4e16781f819a8d3300bf99d5c238c0b2d96b29bd5273f7953125d7"
+    },
+    "stats/l7": {
+      "rev": 1,
+      "fp": "sha256:35c7693256de19ccf2faae07b34e0fb480bd40f21433082627fe6e95afb6cc00"
+    },
+    "stats/l8": {
+      "rev": 1,
+      "fp": "sha256:a6cfdb60398e36443f62c6580c4388550faed623b5c0db4ac865c9bcbe5472e5"
+    },
+    "stats/l9": {
+      "rev": 1,
+      "fp": "sha256:3ce992adffbc86dc6535588d6eacba935724dc8a50a978596b6888e8c9ab6557"
     },
     "wealth/l2": {
       "rev": 1,

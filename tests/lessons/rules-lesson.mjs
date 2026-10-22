@@ -231,6 +231,11 @@ const inParam = (def, v, e) => e.isRangeParam(def)
   : def.includes(v);
 function generatorProblems(s, gen) {
   const e = s.engine, problems = new Set();
+  // three numbers are a range [min, max, step] (lesson standard 3.5); one whose step reaches past its max gives only its min, which is a list of
+  // three choices written by mistake ([3, 5, 10] is always 3)
+  Object.entries(gen.params).forEach(([name, def]) => {
+    if (e.isRangeParam(def) && def[2] > def[1] - def[0]) problems.add(`${name} is [${def.join(', ')}], which the engine reads as a range that only ever gives ${def[0]}: write choices as a list of two, or four or more, or a range whose step fits`);
+  });
   for (let seed = 1; seed <= GENERATOR_SEEDS; seed++) {
     try {
       const values = e.genValues(gen, seed);

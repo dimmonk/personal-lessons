@@ -13,14 +13,14 @@ function paintPlanStep(step){
   paintPlan();
 }
 function paintPlan(){
-  const { subj, data } = LESSON, form = ownFormOf(data, PLAN.step.own), saved = notesOf(subj.id).plan;
+  const { subj, data } = LESSON, form = ownFormOf(data, PLAN.step.own), saved = notesOf(subj.id).plan, words = form.words;
   const editor = PLAN.editing
-    ? `<div class="lesson"><p>${esc(SAY.planHow)}</p><p class="privateline">${esc(SAY.planPrivate)}</p></div>${planFormHtml(form, PLAN.draft, PLAN.problems)}`
-    : `<div class="lesson"><p>${esc(SAY.planSaved)}</p></div>${planSentenceHtml(saved)}`;
+    ? `<div class="lesson"><p>${esc(words.how)}</p><p class="privateline">${esc(SAY.planPrivate)}</p></div>${planFormHtml(form, PLAN.draft, PLAN.problems)}`
+    : `<div class="lesson"><p>${esc(words.saved)}</p></div>${planSentenceHtml(saved)}`;
   const actions = PLAN.editing
     ? `<div class="actbar"><button class="btn neutral" id="planSave">${esc(SAY.planSave)}${icon('arrow')}</button><button class="btn ghost" id="planSkip">${esc(SAY.planSkip)}</button></div>`
     : `<div class="actbar"><button class="btn neutral" id="fwd">${esc(SAY.goOn)}${icon('arrow')}</button><button class="btn ghost" id="planChange">${esc(SAY.planChange)}</button></div>`;
-  lessonShell(`${heading(SAY.planEyebrow, SAY.planTitle)}${editor}`, actions);
+  lessonShell(`${heading(SAY.planEyebrow, words.title)}${editor}`, actions);
   document.querySelectorAll('[data-own-plan] [data-path]').forEach(box => {
     box.oninput = () => setPlan({ draft: { ...PLAN.draft, [box.dataset.path]: box.value } });
   });
@@ -58,6 +58,6 @@ function wireSetupRows(subj, repaint){
 // the plan shown once before the group it is rehearsed in
 function paintPlanBefore(step, then){
   const plan = notesOf(LESSON.subj.id).plan;
-  lessonShell(`${heading(SAY.planEyebrow, SAY.planBeforeTitle)}<div class="lesson"><p>${esc(SAY.planBefore)}</p></div>${planSentenceHtml(plan)}`, nextAction(SAY.goOn));
+  lessonShell(`${heading(SAY.planEyebrow, SAY.planBeforeTitle)}<div class="lesson"><p>${esc(planWordsOf(LESSON.data).before)}</p></div>${planSentenceHtml(plan)}`, nextAction(SAY.goOn));
   on('#fwd', then);
 }

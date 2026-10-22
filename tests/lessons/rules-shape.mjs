@@ -420,6 +420,8 @@ function ownFormsProblems(meta, engine) {
     check(form.fields, need.fields, 'field');
     if (need.rows) { if (!form.rows) problems.push(`${where} has no rows for the funds, which the app reads`); else check(form.rows.fields, need.rows, 'fund field'); }
     else if (form.rows) problems.push(`${where} has rows, which a form into "${form.into}" does not take`);
+    if (form.into === 'plan' && !form.words) problems.push(`${where} has no words (title, how, saved, before), which the plan step and the review show`);
+    if (form.into !== 'plan' && form.words) problems.push(`${where} has words, which only a form into "plan" takes`);
   });
   return problems;
 }

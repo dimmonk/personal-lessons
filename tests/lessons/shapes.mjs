@@ -15,7 +15,8 @@ const MIX_ENTRY = either(obj({ facet: str, value: str }, { min: num, max: num })
 // `over` or under `under` is kept and the learner is told why it looks wrong.
 const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text', 'date') },
   { list: str, unit: str, hint: str, optional: bool, warn: obj({ text: text }, { over: num, under: num }) });
-const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }) });
+// `words`: a plan form's own wording around the plan (its title, how to write it, the line once saved, the line before practice and the review)
+const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }), words: obj({ title: text, how: text, saved: text, before: text }) });
 export const SUBJECT = obj(
   { id: str, name: str, field: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
@@ -96,10 +97,11 @@ export const TAP = obj({ id: str, kind: en('tap'), prompt: text, right: either(s
 
 // a text ask is a line the learner writes against a `model` (text-view.js, never scored), or an answer from memory checked against what a list accepts
 // (`accept`, recall.js): each accepted answer is words (brackets are optional), or words said in parts in any order; or `{ own }`, the answer the
-// learner entered in the form into `answers`; `count` is how many different ones a question wants
+// learner entered in the form into `answers`; `count` is how many different ones a question wants; `taught: true` says the accepted answers are the
+// subject's own lessons' words (Stats' six questions), not a published list, so V84 asks no source for them
 export const ACCEPT_ENTRY = either(str, obj({ text: str, parts: arr(str) }));
 export const TEXT = obj({ id: str, kind: en('text'), prompt: text },
-  { model: text, accept: either(arr(ACCEPT_ENTRY), obj({ own: str })), reject: arr(ACCEPT_ENTRY), count: int, when: obj({ ask: str, is: arr(str) }) });
+  { model: text, accept: either(arr(ACCEPT_ENTRY), obj({ own: str })), reject: arr(ACCEPT_ENTRY), count: int, taught: bool, when: obj({ ask: str, is: arr(str) }) });
 // a question read aloud (speech-view.js); `show: false` holds its words back behind "Show the words"
 export const SPOKEN = obj({ kind: en('spoken'), text: str }, { show: bool });
 
