@@ -39,7 +39,24 @@ const BLOCK_HTML = { prose: proseHtml, pair: pairHtml, pitch: (block, ctx) => pi
 function blockHtml(block, ctx = {}){
   return (BLOCK_HTML[block.kind] || lessonFail(`unknown block kind ${block.kind}`))(block, ctx);
 }
-const blocksHtml = (blocks, ctx) => `<div class="blocks">${blockPieces(blocks).map(p => p.tabs ? documentTabsHtml(p.tabs, ctx) : blockHtml(p.block, ctx)).join('')}</div>`;
+// A screen of several pictures (maps, flags, figures, charts) keeps each with the line just above it that names it, as one figure: on a wide
+// screen the figures stand side by side instead of down the page. One picture is drawn as it is.
+const FIGURE_KINDS = ['map', 'flags', 'figure', 'chart'];
+const isFigure = piece => !!piece.block && FIGURE_KINDS.includes(piece.block.kind);
+const isCaption = piece => !!piece.block && piece.block.kind === 'prose' && piece.block.tone !== 'wrong';
+function figureGroups(pieces){
+  return pieces.reduce((groups, piece, i) => {
+    if(isFigure(piece)) return [...groups, { figure: [...(isCaption(pieces[i - 1] || {}) ? [pieces[i - 1]] : []), piece] }];
+    if(isCaption(piece) && isFigure(pieces[i + 1] || {})) return groups;
+    return [...groups, piece];
+  }, []);
+}
+function blocksHtml(blocks, ctx){
+  const pieces = blockPieces(blocks), pieceHtml = p => p.tabs ? documentTabsHtml(p.tabs, ctx) : blockHtml(p.block, ctx);
+  const maps = blocks.filter(b => b.kind === 'map').length > 1 ? ' maps' : '';
+  if(pieces.filter(isFigure).length < 2) return `<div class="blocks${maps}">${pieces.map(pieceHtml).join('')}</div>`;
+  return `<div class="blocks figs${maps}">${figureGroups(pieces).map(g => g.figure ? `<div class="bfig">${g.figure.map(pieceHtml).join('')}</div>` : pieceHtml(g)).join('')}</div>`;
+}
 // every segment of a block, pairs included; the rows of a document are its segments, and the headline of an article is the first of its
 const segmentsOf = block => block.kind === 'pair' ? [...segmentsOf(block.a), ...segmentsOf(block.b)]
   : block.kind === 'document' ? block.rows.map(row => ({ id: row.id, text: row.cells.join(' ') }))

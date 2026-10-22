@@ -47,7 +47,7 @@ function renderLibrary(){
   const cont = continueTarget();
   const list = sortedSubjects();
 
-  screenEl().innerHTML = `<div class="pane">
+  screenEl().innerHTML = `<div class="pane split"><div class="split-side">
     <div class="topbar"><span class="m">Fieldcraft &middot; Pragmatic knowledge</span></div>
     <div class="mast">
       <h1>${cap(numWord(SUBJECTS.length))} ${SUBJECTS.length === 1 ? 'subject' : 'subjects'}.</h1>
@@ -58,12 +58,13 @@ function renderLibrary(){
     ${cont ? continueCard(cont) : ''}
     <div class="chips">${chips.map(([k,label]) =>
       `<button class="chip ${APP.filter===k?'on':''}" data-f="${k}">${esc(label)}</button>`).join('')}</div>
+    </div><div class="split-main">
     <div class="sect">
       <span class="m">All subjects</span>
       <button class="linkbtn" id="sortBtn">${APP.sort === 'az' ? 'A&ndash;Z' : 'Recent'}${icon('caret',12)}</button>
     </div>
     ${list.length ? shelvesHtml(list) : `<p class="empty">Nothing in this filter yet.</p>`}
-  </div>`;
+  </div></div>`;
 
   on('[data-s]', el => openSubject(el.dataset.s));
   on('[data-f]', el => { APP.filter = el.dataset.f; saveApp(); renderLibrary(); });

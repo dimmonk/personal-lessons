@@ -52,7 +52,7 @@ function renderProgress(){
   const totalParts = SUBJECTS.reduce((a,s) => a + s.parts.length, 0);
   const doneParts  = SUBJECTS.reduce((a,s) => a + partsDone(s), 0);
 
-  screenEl().innerHTML = `<div class="pane">
+  screenEl().innerHTML = `<div class="pane split"><div class="split-side">
     <div class="topbar"><span class="m">Progress</span></div>
     <div class="mast">
       <h1>${doneParts} of ${totalParts}</h1>
@@ -61,6 +61,7 @@ function renderProgress(){
     ${practiceBlockHtml()}
     <div class="block">${syncLineHtml()}</div>
     ${themeBlockHtml()}
+    </div><div class="split-main">
     <div class="sect"><span class="m">By subject</span></div>
     <div class="rows">${SUBJECTS.map(s => `<button class="row" data-s="${s.id}" style="--accent:${s.accent}">
         <span class="sigil">${s.keyNo}</span>
@@ -72,7 +73,7 @@ function renderProgress(){
         </span>
         ${icon('chevron')}
       </button>`).join('')}</div>
-  </div>`;
+  </div></div>`;
   on('[data-s]', el => openSubject(el.dataset.s));
   on('#exportLog', exportLog);
   on('[data-theme-pick]', el => { setTheme(el.dataset.themePick); renderProgress(); });

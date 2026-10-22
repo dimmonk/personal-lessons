@@ -2,12 +2,14 @@
 // upright and 835 x 752 turned, less the browser's bars; its cover screen (2520 x 1080) about 360 x 840. Opened out, with the bars showing, turned with
 // the bars showing, and folded shut again, on the real subject Geography (lesson 16, western Europe). Opened out or turned, a question asked on
 // a map shows the map beside the question, with the map, the question and Next all on the screen at once and no scrolling; a tap on the place still
-// answers it; folded, the map goes back under the question; and the pages of the app widen past a phone's column. tests/e2e-controls.mjs seeds a fault.
+// answers it; folded, the map goes back under the question; the pages of the app widen past a phone's column, a subject's lessons run in two
+// columns, and on a desktop (1440 x 900) a list screen's side stands beside its list and a screen of two maps shows them side by side. tests/e2e-controls.mjs seeds a fault.
 
 const OPEN = { width: 752, height: 835 };
 const BARS = { width: 752, height: 700 };
 const TURNED = { width: 835, height: 620 };
 const FOLDED = { width: 360, height: 840 };
+const DESKTOP = { width: 1440, height: 900 };
 const MAP = '[data-map-ask] .mapsvg';
 
 const rectOf = (page, selector) => page.evaluate(s => {
@@ -16,6 +18,11 @@ const rectOf = (page, selector) => page.evaluate(s => {
   const b = el.getBoundingClientRect();
   return { top: b.top, bottom: b.bottom, left: b.left, right: b.right, width: b.width };
 }, selector);
+// the first two lessons of the subject on the screen side by side, in one row
+const twoColumns = page => page.evaluate(() => {
+  const [a, b] = [...document.querySelectorAll('#screen [data-l]')].map(e => e.getBoundingClientRect());
+  return !!a && !!b && Math.abs(a.top - b.top) < 2 && b.left > a.right;
+});
 const pageSize = page => page.evaluate(() => ({ w: document.documentElement.scrollWidth, h: document.documentElement.scrollHeight, y: scrollY }));
 // the first step of lesson 16 whose question is tapped on the map, moved to; its step, or -1
 const goToTap = page => page.evaluate(() => {
@@ -78,6 +85,20 @@ export async function X48(env) {
   const [x2, y2] = await placeOnScreen(page, MAP);
   await page.mouse.click(x2, y2);
   c.check(await page.evaluate(() => Q.cur.done) && await page.locator('.mark:not(.no)').count() > 0, `${OPEN.width}x${OPEN.height} after folding: a tap on the place asked for was not marked right`);
+
+  /* ---------- opened out, a list in two columns; on a desktop, the side beside the list and a key's maps side by side ---------- */
+  await env.openSubject(page, 'geography');
+  c.check(await twoColumns(page), `${OPEN.width}px: Geography's lessons run in one column`);
+  await page.setViewportSize(DESKTOP);
+  await env.toLibrary(page);
+  const side = await rectOf(page, '#screen .split-side'), list = await rectOf(page, '#screen .split-main');
+  c.check(side && list && list.left >= side.right && list.top <= side.top + 1, `${DESKTOP.width}px: the library's subjects are not beside its side`);
+  await env.openSubject(page, 'geography');
+  c.check(await twoColumns(page), `${DESKTOP.width}px: Geography's lessons run in one column`);
+  await env.clickVisible(page, '#screen [data-l="l1"]');
+  await page.evaluate(() => moveLesson(2));
+  const maps = await page.locator('.blocks.figs .block-map').evaluateAll(els => els.map(e => { const b = e.getBoundingClientRect(); return { top: b.top, left: b.left, bottom: b.bottom }; }));
+  c.check(maps.length === 2 && Math.abs(maps[0].top - maps[1].top) < 40 && maps[1].left > maps[0].left && maps[1].bottom <= DESKTOP.height, `${DESKTOP.width}x${DESKTOP.height}: the two maps of lesson 1's names are not side by side on the screen (${JSON.stringify(maps)})`);
 
   await context.close();
   return c;

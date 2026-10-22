@@ -65,9 +65,9 @@ function ownDataSection(subj){
 function renderSubject(subj){
   const done = partsDone(subj), total = subj.parts.length, resume = resumePoint(subj);
   const hasRecord = allTries(subj.id).length > 0;
-  screenEl().innerHTML = `<div class="pane" style="--accent:${subj.accent}">
+  screenEl().innerHTML = `<div class="pane split" style="--accent:${subj.accent}">
     ${backBar('library', 'Library')}
-
+    <div class="split-side">
     <div style="display:flex;flex-direction:column;gap:12px;padding:10px 0 22px">
       <div style="display:flex;align-items:center;gap:10px">
         <span class="sigil" style="width:30px;height:30px;flex:0 0 30px">${subj.keyNo}</span>
@@ -87,7 +87,7 @@ function renderSubject(subj){
     </div>
 
     ${resume ? `<div class="block"><button class="btn" id="resume">${esc(lessonPlace(subj, resume) > 0 ? SAY.resume : SAY.start)}: ${esc(resume.title)}${icon('arrow',17)}</button></div>` : ''}
-
+    </div><div class="split-main">
     <div class="sect"><span class="m">${esc(SAY.lessonsHeading)}</span>
       <span class="m s">${total} lessons &middot; ${subj.lessons.filter(l => l.part !== null).length} built</span></div>
     ${courseHtml(subj)}
@@ -101,7 +101,7 @@ function renderSubject(subj){
         <span class="grow"><span class="t" style="font-weight:500">${esc(SAY.resultsHeading)}</span></span>
         ${icon('chevron')}
       </button></div>` : ''}
-  </div>`;
+  </div></div>`;
 
   on('[data-v]', el => go(el.dataset.v));
   on('[data-l]', el => openLesson(subj, el.dataset.l));

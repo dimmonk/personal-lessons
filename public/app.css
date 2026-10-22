@@ -62,16 +62,30 @@ mark{background:var(--accent);color:var(--bg)}
   .pane.read{max-width:760px}
 }
 @media(min-width:1000px){
-  .app{max-width:1280px;margin:0 auto}
   .rail{display:flex;flex-direction:column;flex:0 0 244px;width:244px;border-right:1px solid var(--divider);
     background:var(--footer);position:sticky;top:0;height:100vh;overflow-y:auto}
   .tabbar{display:none}
   .pane{--gut:40px;max-width:680px;padding-bottom:56px}
   .pane.read{max-width:760px}
 }
-@media(min-width:1282px){
-  .app{border-right:1px solid var(--divider)}
-  .rail{border-left:1px solid var(--divider)}
+
+/* A screen that is mostly a list (the library, a subject, progress) has a side (what it is, where you are, what to do next) and the list.
+   On a phone the side sits above the list. With room (a Fold opened out, a tablet) the list runs in two columns; with more room (a laptop or a
+   desktop) the side stands on the left of the list, and on a subject it stays on the screen while the list scrolls, its Start button with it. */
+.split-side,.split-main{display:flex;flex-direction:column;min-width:0}
+.split-main{container:list/inline-size}
+@container main (min-width:700px){ .pane.split{max-width:none} }
+@container list (min-width:620px){
+  .split-main .rows{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
+  .split-main .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@container list (min-width:960px){ .split-main .grid{grid-template-columns:repeat(4,minmax(0,1fr))} }
+@container main (min-width:980px){
+  .pane.split{max-width:1400px;display:grid;grid-template-columns:minmax(280px,340px) minmax(0,1fr);column-gap:56px;align-items:start}
+  .pane.split>.topbar{grid-column:1/-1}
+  .pane.split>.topbar ~ .split-side{position:sticky;top:60px}
+  .split-side .chips{flex-wrap:wrap;overflow-x:visible}
+  .split-main>.sect:first-child{padding-top:20px}
 }
 
 /* ---------- rail ---------- */
@@ -262,6 +276,14 @@ mark.cue{background:color-mix(in srgb,var(--accent) 26%,transparent);color:var(-
 .pairgrid{display:grid;grid-template-columns:1fr;gap:10px}
 @media(min-width:560px){.pairgrid{grid-template-columns:1fr 1fr}}
 .pairside .block-prose{height:100%}
+.bfig{display:flex;flex-direction:column;gap:14px;min-width:0}
+/* several pictures on a wide screen: side by side, each under the line that names it; the text that goes with all of them keeps a reading width */
+@container main (min-width:980px){
+  .pane.read:has(.blocks.figs){max-width:1240px}
+  .blocks.figs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 24px;align-items:start}
+  .blocks.figs>:not(.bfig){grid-column:1/-1;max-width:680px}
+  .pane.read:has(.blocks.figs)>:not(.blocks):not(.topbar):not(.actbar):not(.eyebrow-row){max-width:680px}
+}
 .compare{margin:12px 0 0;font-family:var(--sans);font-size:15px;line-height:1.5;color:var(--text)}
 .m.lab{display:block;margin-bottom:8px}
 
@@ -552,13 +574,13 @@ table.ownsum td:last-child{white-space:normal}
 /* A screen with one map, wide enough and tall enough (a Fold opened out, a tablet, a laptop): the map stands beside what goes with it instead of under
    it, so the map, the question and Next are all on the screen at once. Everything else keeps to a column on the left; the bar at the foot spans both.
    Measured on the column the screen gets (the rail taken off), so it follows a fold, an unfold or a turn of the device as it happens; a phone turned on
-   its side is too short for it and keeps the map above. A screen of several maps (a key) reads down the page as before. */
+   its side is too short for it and keeps the map above. A screen of several maps (a key, .blocks.maps) is not this: on a wide screen its maps stand side by side (.blocks.figs). */
 @media(min-height:600px) and (min-aspect-ratio:3/4){
   @container main (min-width:720px){
-    .pane:has(.block-map):not(:has(.block-map ~ .block-map)){--textcol:clamp(260px,34cqw,380px);max-width:none;position:relative}
-    .pane:has(.block-map):not(:has(.block-map ~ .block-map))>:not(.actbar){width:var(--textcol)}
-    .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 24px);right:var(--gut);margin:0}
-    .pane:has(.block-map):not(:has(.block-map ~ .block-map)) .mapsvg{max-height:max(280px,calc(100vh - 272px));max-height:max(280px,calc(100dvh - 272px))}
+    .pane:has(.block-map):not(:has(.blocks.maps)){--textcol:clamp(260px,34cqw,380px);max-width:none;position:relative}
+    .pane:has(.block-map):not(:has(.blocks.maps))>:not(.actbar){width:var(--textcol)}
+    .pane:has(.block-map):not(:has(.blocks.maps)) .block-map{position:absolute;top:60px;width:auto;left:calc(var(--gut) + var(--textcol) + 24px);right:var(--gut);margin:0}
+    .pane:has(.block-map):not(:has(.blocks.maps)) .mapsvg{max-height:max(280px,calc(100vh - 272px));max-height:max(280px,calc(100dvh - 272px))}
   }
 }
 .map-water{fill:var(--water)}
@@ -598,5 +620,6 @@ table.ownsum td:last-child{white-space:normal}
 .flagbig .flagart{display:block;width:80px;height:auto;margin:0 auto}
 .flagkey{flex-direction:column;align-items:stretch;gap:14px}
 .flagkey li{display:flex;align-items:center;gap:14px}
+@container main (min-width:700px){ .flagkey{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))} }
 .flagtext{font-family:var(--sans);font-size:15px;line-height:1.45;color:var(--body)}
 .flagtext b{display:block;font-weight:600;color:var(--text)}

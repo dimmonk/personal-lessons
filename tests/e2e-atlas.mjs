@@ -57,8 +57,8 @@ export async function X46(env) {
   const zoomedName = await nameHeight(page, 0, 'Alder');
   c.check(Math.abs(zoomedName - small) < 0.2, `a name is ${small.toFixed(1)} px tall on the whole map and ${zoomedName.toFixed(1)} px tall zoomed in: it should not change with the zoom`);
   // a microstate's name stands off its dot on a line to it, and a map with a view opens on that part of the map and goes back to it
-  const dot = await centreOf(page, '.block-map:nth-of-type(2) .mp-dot[data-place="crumb"]'), name = await centreOf(page, '.block-map:nth-of-type(2) text.ml[data-dx="-40"]');
-  c.check(Math.hypot(dot[0] - name[0], dot[1] - name[1]) > 30 && await page.locator('.block-map:nth-of-type(2) line.ml-lead').count() === 1, 'the name of a microstate is not set off its dot on a line to it');
+  const dot = await centreOf(page, '.bfig:nth-child(2 of .bfig) .block-map .mp-dot[data-place="crumb"]'), name = await centreOf(page, '.bfig:nth-child(2 of .bfig) .block-map text.ml[data-dx="-40"]');
+  c.check(Math.hypot(dot[0] - name[0], dot[1] - name[1]) > 30 && await page.locator('.bfig:nth-child(2 of .bfig) .block-map line.ml-lead').count() === 1, 'the name of a microstate is not set off its dot on a line to it');
   const home = (await page.locator('.block-map').nth(1).locator('.mapsvg').getAttribute('viewBox')).split(' ').map(Number);
   c.check(Math.abs(home[2] - 100) < 0.5, `a map with a view of zoom 3 opens ${home[2]} units across, not 100`);
   await page.locator('.block-map').nth(1).locator('[data-map-zoom="in"]').click();
