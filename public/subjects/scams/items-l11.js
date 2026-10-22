@@ -1,0 +1,223 @@
+// Scams, lesson 11 "Your plan, and all of it": twelve mixed messages from every kind the lessons taught (your device, your accounts, money to strangers,
+// bills, your details, the looks, a government name) and a chat that pushes, half real; then the check, the subject's real-world test: twelve new messages,
+// half real, and two calls, one that pushes and one you placed yourself. Every answer is the subject's one rule (plan.md, "The rule"). Its four-week
+// retest draws on the reserve in items-l11r.js. Invented senders and people, except the government offices the rule names.
+(() => {
+const L = scamLine;
+const A = "all";
+const all = spec => scamItem({ strand: A, ...spec });
+FC.items("scams", [
+  // ----- practice: twelve mixed and a chat that pushes -----
+  all({
+    id: "l11g-virus-fake", genuine: "scam", channel: "popup", request: "device",
+    context: "A pop-up covers the page you were reading on your laptop. You have no dealings with System Alert.",
+    message: scamPopup("System Alert", "On your laptop", [L("g1a", "WARNING: your computer is infected."), L("g1b", "Call 1-555-0190 now so a technician can remove it.")], "Call now"),
+    right: "leave",
+    say: ["The “technician” got into your laptop and then wanted $300.", "There is nobody to check with: you have no dealings with them.", "You closed the page. The laptop was fine."],
+    deciding: ["g1b"], reason: "You have no dealings with them, so you close it. A real security warning never tells you to call a number." }),
+  all({
+    id: "l11g-update-real", genuine: "genuine", channel: "popup", request: "device",
+    context: "You opened your phone’s Settings and tapped “Software update.”",
+    message: scamPopup("Settings", "On your phone", [L("g2a", "An update is ready."), L("g2b", "Install now? Your phone will restart.")], "Install"),
+    right: "act",
+    say: ["Your phone updated and restarted.", "Not needed: you opened Settings and tapped “Software update” yourself.", "Your phone stays on the old version."],
+    deciding: ["g2b"], reason: "You started it: you opened Settings yourself and tapped “Software update.”" }),
+  all({
+    id: "l11g-signin-fake", genuine: "scam", channel: "sms", request: "login",
+    context: "You have an Alderwick account, and its app is on your phone. You have never been to Ohio.",
+    message: scamSms("Alderwick", "Text message · 6:02 AM", [L("g3a", "New sign-in to your account from Ohio."), L("g3b", "Not you? Sign in at the link to lock your account.")], "alderwick-lock.example/in"),
+    right: "check", howPrompt: "How do you check, and fix it if needed?", own: "The Alderwick app, opened myself", theirs: "The link in the text I got", alt: { how: "search", text: "The sign-in page I find by searching for Alderwick" },
+    say: ["The page kept your password. That was the sign-in it warned about.", "The app shows no sign-in from Ohio.", "You are safe, but it uses the name of an account you have, and the app settles it."],
+    deciding: ["g3b"], reason: "You did not start it, and it uses the name of an account you have, so you check in the app, and change the password there if needed." }),
+  all({
+    id: "l11g-camera-real", genuine: "genuine", channel: "popup", request: "device",
+    context: "You got Scanly from your app store. You just opened it and tapped “Scan a receipt.”",
+    message: scamPopup("Scanly", "In the app", [L("g4a", "Allow Scanly to use your camera?"), L("g4b", "It is needed to scan.")], "Allow"),
+    right: "act",
+    say: ["The camera opened, and you scanned the receipt.", "Not needed: you tapped “Scan a receipt” a moment ago.", "You cannot scan anything."],
+    deciding: ["g4a"], reason: "You started it: it answers the “Scan a receipt” you just tapped, in an app you got yourself." }),
+  all({
+    id: "l11g-parcel-fake", genuine: "scam", channel: "chat", request: "money", tell: true,
+    tellAlt: { text: "Block them, and keep it to myself", then: "Keeping it to yourself is what the script needs. Someone outside the chat can see what you cannot from inside it." }, 
+    context: "You have chatted with Victor on a dating site for six weeks. You have never met or spoken by phone.",
+    message: scamChat("Victor", "Chat on the dating site", [L("g5a", "I sent you a gift, but it is stuck at customs."), L("g5b", "Can you pay the $700 fee? I will pay you back when I visit.")]),
+    right: "leave",
+    say: ["The $700 was gone, and then the gift needed another fee.", "There is nothing of yours to check with: everything you know about Victor came from him.", "You sent nothing."],
+    deciding: ["g5b"], reason: "You know Victor only online, so you leave it, and because he wants money you tell someone you know in person." }),
+  all({
+    id: "l11g-lend-real", genuine: "genuine", channel: "chat", request: "money", offers: true,
+    context: "Omar is a friend. You have his number saved. You had not talked about money.",
+    message: scamChat("Omar", "Chat with a friend", [L("g6a", "Can you lend me $50 till Friday? Send it in PayLane."), L("g6b", "Or call me at 1-555-0131, I have a new phone.")]),
+    right: "check", own: "Call Omar on his saved number", theirs: "Call the new number he writes", theirsHow: "number", alt: { how: "reply", text: "My question in the chat, to make sure it is him" },
+    say: ["This time it was Omar. You could not have known: a taken-over chat looks the same.", "Omar answers his saved number and says yes. You send it.", "Omar finds the $50 somewhere else."],
+    deciding: ["g6a"], reason: "You did not agree this, and Omar is someone you know, so you check on the number you already have." }),
+  all({
+    id: "l11g-tax-fake", genuine: "scam", channel: "email", request: "money",
+    context: "Wren Tax Services does your taxes every year. Its number is on last year’s invoice.",
+    message: scamEmail("Wren Tax Services", "Email · April 10", "Your tax payment", [L("g7a", "Your return is done. You owe $640."), L("g7b", "This year, pay it to our account below, and we will pass it on.")]),
+    right: "check", own: "Call Wren on the number on last year’s invoice", theirs: "Reply to the email I got", theirsHow: "reply", alt: { how: "search", text: "The number I find by searching for Wren" },
+    say: ["The $640 went to a stranger. Your tax was still unpaid.", "Wren says it never takes tax money; you pay the government directly.", "You are safe, but it uses Wren’s name, and one call settles it."],
+    deciding: ["g7b"], reason: "A new place to pay is not what you agreed, and it uses the name of someone you deal with, so you check on the invoice’s number." }),
+  all({
+    id: "l11g-yoga-real", genuine: "genuine", channel: "sms", request: "money",
+    context: "At class on Monday you told your yoga teacher, Leah, you would pay for the month, $60 in PayLane, when she texted.",
+    message: scamSms("Leah (yoga)", "Text message · Monday 8:00 PM", [L("g8a", "Great class today."), L("g8b", "The month is $60 in PayLane.")]),
+    right: "act",
+    say: ["You sent Leah $60.", "Leah said yes. Not needed: you agreed it at class.", "Leah is still waiting for the month."],
+    deciding: ["g8b"], reason: "You agreed this at class: the amount and the way to pay." }),
+  all({
+    id: "l11g-survey-fake", genuine: "scam", channel: "sms", request: "details",
+    context: "You have never heard of Prize Survey.",
+    message: scamSms("Prize Survey", "Text message · 2:50 PM", [L("g9a", "Claim your $1,000 reward."), L("g9b", "Enter your birthday and home address at the link.")], "prize-survey.example/claim"),
+    right: "leave",
+    say: ["No reward came, only more “prizes.”", "There is nobody to check with: you have no dealings with them.", "You deleted it."],
+    deciding: ["g9b"], reason: "You have no dealings with them, so you leave it." }),
+  all({
+    id: "l11g-insurer-real", genuine: "genuine", channel: "call", request: "details",
+    context: "You called Linden Mutual on the number on your insurance card to add a driver.",
+    message: scamCall("Linden Mutual", "Your call, a minute in", [L("g10a", "I can add her now."), L("g10b", "What is your policy number and your date of birth?")]),
+    right: "act",
+    say: ["The new driver was added.", "Not needed: you called the number on your own card.", "Nobody is added."],
+    deciding: ["g10b"], reason: "You started it: you called the number on your own insurance card." }),
+  all({
+    id: "l11g-ssa-fake", genuine: "scam", channel: "call", request: "details",
+    context: "You get Social Security. Its number is on the letters it sends you.",
+    message: scamCall("Social Security", "Incoming call · 10:30 AM", [L("g11a", "Your Social Security number has been suspended."), L("g11b", "Confirm it now, or your payments stop today.")]),
+    right: "check", own: "Hang up and call the number on a letter Social Security sent me", theirs: "Call back the number my phone shows for the call", theirsHow: "callerid", alt: { how: "search", text: "The number I find by searching for Social Security" },
+    say: ["With your number, someone opened a credit card in your name.", "Social Security says your number is fine and nobody called.", "You are safe, but it uses a government office’s name, and the letter’s number settles it."],
+    deciding: ["g11b"], reason: "A government office has your records, so you hang up and call it on a number you know, from its letter. No government office calls to get your details." }),
+  all({
+    id: "l11g-doctor-real", genuine: "genuine", channel: "email", request: "money", offers: true,
+    context: "You saw Dr. Okafor at Brookside Clinic last month. The clinic’s app is on your phone.",
+    message: scamEmail("Brookside Clinic", "Email · Tuesday", "balance", [L("g12a", "you have a balance of $40 from your visit"), L("g12b", "pay at the link below, thank you")], "brookside-clinic.example/pay"),
+    right: "check", own: "The clinic’s app on my phone", theirs: "The link in the email I got", alt: { how: "search", text: "The number I find by searching for Brookside" },
+    say: ["This time the link was real. You could not have told.", "The app shows the $40, and you pay it there.", "The $40 stays unpaid."],
+    deciding: ["g12b"], reason: "Plain writing proves nothing. You did not start it, and it uses your clinic’s name, so you go in through the app." }),
+  exItem({
+    id: "l11x-refund", strand: A, channel: "chat", request: "device",
+    context: "You have an account with Thistlewick. A chat window opens on a page you reached from an ad.",
+    prompt: "“Thistlewick help” writes to you. What do you write back?", from: "Thistlewick help", detail: "Chat on a page you reached from an ad",
+    turns: [
+      { lines: ["We owe you a $90 refund.", "Install this screen-sharing app so I can put it in your account."], push: "It dangles money owed to you.",
+        give: "Install the app", hold: "Tell him to send the refund to your card", leave: "Close the chat and open my orders in the Thistlewick app" },
+      { lines: ["The refund system needs your screen. It expires in 15 minutes."], push: "It gives a deadline.",
+        give: "Install the app", hold: "Tell him you will do it tonight", leave: "Close the chat and open my orders in the Thistlewick app" },
+      { lines: ["If you close this chat, the refund is canceled and your account is locked."], push: "It threatens the cost of stopping.",
+        give: "Install the app", leave: "Close the chat and open my orders in the Thistlewick app" }],
+    gave: "There was no refund. With the app he could see and use everything on your screen, and he did.",
+    left: "Your orders page showed no refund owed, and nothing wrong.",
+    reason: "It uses a shop’s name you have an account with, so you check on your orders page. Nobody sending you money needs your screen." }),
+
+  // ----- the check: the real-world test -----
+  all({
+    id: "l11k-track-fake", genuine: "scam", channel: "sms", request: "device",
+    context: "You have no account with Swiftline Couriers.",
+    message: scamSms("Swiftline Couriers", "Text message · 9:40 AM", [L("k1a", "We could not deliver your parcel."), L("k1b", "Install our tracking app from the link to choose a new time.")], "swiftline-track.example/app"),
+    right: "leave",
+    say: ["The app was not a tracker. It wanted access to everything on your phone.", "There is nobody to check with: you have no account with Swiftline.", "You deleted it."],
+    deciding: ["k1b"], reason: "You have no account with them, so you leave it." }),
+  all({
+    id: "l11k-photos-real", genuine: "genuine", channel: "chat", request: "device",
+    context: "This morning you texted your sister Ines to send you the photos from the trip.",
+    message: scamChat("Ines", "Chat with your sister", [L("k2a", "Here they are! 48 photos."), L("k2b", "Open the album at the link.")], "photos-share.example/trip"),
+    right: "act",
+    say: ["You saw all 48 photos.", "Ines said yes. Not needed: you asked her for them this morning.", "You never see the photos."],
+    deciding: ["k2b"], reason: "You started it: you asked Ines for the photos this morning, and this is what you asked for." }),
+  all({
+    id: "l11k-code-fake", genuine: "scam", channel: "call", request: "login",
+    context: "You bank with Penhallow Credit Union. Its number is on your card.",
+    message: scamCall("Penhallow CU", "Incoming call · 3:20 PM", [L("k3a", "We are moving you to our new app."), L("k3b", "Read me the code we just texted to finish it.")]),
+    right: "check", own: "Hang up and call the number on the back of my card", theirs: "Call back the number my phone shows for the call", theirsHow: "callerid", alt: { how: "transfer", text: "Get put through to her manager" },
+    say: ["The code let them into your account.", "Penhallow says there is no new app and nobody called.", "You are safe, but it uses your credit union’s name, and the card’s number settles it."],
+    deciding: ["k3b"], reason: "A code read back settles it, and it uses your credit union’s name, so you hang up and call the card’s number." }),
+  all({
+    id: "l11k-reset-real", genuine: "genuine", channel: "email", request: "login",
+    context: "A moment ago you tapped “Forgot password” on the Thistlewick site you typed in.",
+    message: scamEmail("Thistlewick", "Email · just now", "Reset your password", [L("k4a", "Use the link below to choose a new password."), L("k4b", "It works for one hour.")], "thistlewick.example/reset"),
+    right: "act",
+    say: ["You chose a new password and signed in.", "Not needed: you tapped “Forgot password” a moment ago.", "You stay locked out."],
+    deciding: ["k4a"], reason: "You started it: you tapped “Forgot password” a moment ago, and this answers it." }),
+  all({
+    id: "l11k-crypto-fake", genuine: "scam", channel: "chat", request: "money", tell: true,
+    context: "You met Kai on a chess site two months ago. You have never met or spoken by phone.",
+    message: scamChat("Kai", "Chat on the chess site", [L("k5a", "Put $300 of crypto in my trading group."), L("k5b", "We all doubled our money last month.")], "kai-trading.example/join"),
+    right: "leave",
+    say: ["The group showed your $300 growing. To take it out, you had to pay a fee, and nothing came back.", "There is nothing of yours to check with: everything you know about Kai came from Kai.", "You sent nothing."],
+    deciding: ["k5a"], reason: "You know Kai only online, so you leave it, and you tell someone you know in person." }),
+  all({
+    id: "l11k-car-real", genuine: "genuine", channel: "sms", request: "money", offers: true,
+    context: "Your daughter Maya is texting from her saved number. You had not talked about money.",
+    message: scamSms("Maya", "Text message · 12:15 PM", [L("k6a", "My car needs a $200 repair before I can drive home."), L("k6b", "Can you pay the shop at this link?")], "dons-garage.example/pay"),
+    right: "check", own: "Call Maya on her saved number, and her husband if she does not answer", theirs: "The link in the text I got", alt: { how: "search", text: "The garage’s number I find by searching" },
+    say: ["This time it was Maya. You could not have known: a stolen phone looks the same.", "Maya answers and says yes. You pay the shop.", "Maya waits for the repair."],
+    deciding: ["k6a"], reason: "You did not agree this, and Maya is someone you know, so you check on the numbers you have." }),
+  all({
+    id: "l11k-irs-fake", genuine: "scam", channel: "call", request: "money",
+    context: "You pay federal tax. The IRS’s number is on the letters it has sent you.",
+    message: scamCall("IRS", "Incoming call · 11:05 AM", [L("k7a", "You owe $2,100 in back taxes."), L("k7b", "Pay today with gift cards, or officers will arrest you.")]),
+    right: "check", own: "Hang up and call the number on a letter the IRS sent me", theirs: "Call back the number my phone shows for the call", theirsHow: "callerid", alt: { how: "number", text: "Call the IRS payment line he gives me", then: "That line came from the caller, so whoever answers it is on his side." },
+    say: ["The gift cards were emptied in minutes. You owed nothing.", "The IRS says you owe nothing and nobody called.", "You are safe, but it uses a government office’s name, and its letter’s number settles it."],
+    deciding: ["k7b"], reason: "A government office has your records, so you hang up and call it on a number you know. Gift cards and a threat of arrest settle it." }),
+  all({
+    id: "l11k-table-real", genuine: "genuine", channel: "popup", request: "money",
+    context: "You opened the Juniper Bistro app and booked a table for eight on Saturday.",
+    message: scamPopup("Juniper Bistro", "In the app", [L("k8a", "Tables for eight need a $20 deposit."), L("k8b", "Pay with your saved card?")], "Pay $20"),
+    right: "act",
+    say: ["Your table was booked.", "Not needed: you are booking the table yourself, right now.", "The table is not held."],
+    deciding: ["k8b"], reason: "You started it: you are booking the table in the app yourself." }),
+  all({
+    id: "l11k-renew-fake", genuine: "scam", channel: "email", request: "details",
+    context: "Your car is insured with Linden Mutual, and the Linden app is on your phone.",
+    message: scamEmail("Linden Mutual", "Email · Thursday", "Renewal", [L("k9a", "To renew your policy, we must confirm who you are."), L("k9b", "Reply with your Social Security number and date of birth.")]),
+    right: "check", own: "The Linden app, opened myself", theirs: "Reply to the email I got", theirsHow: "reply", alt: { how: "search", text: "The number I find by searching for Linden" },
+    say: ["Your reply went to a stranger, who opened a card in your name.", "The app shows your renewal, with nothing to confirm.", "You are safe, but it uses your insurer’s name, and the app settles it."],
+    deciding: ["k9b"], reason: "You did not start it, and it uses your insurer’s name, so you check in the app." }),
+  all({
+    id: "l11k-shop-real", genuine: "genuine", channel: "email", request: "details", offers: true,
+    context: "You have never shopped at Fennel & Co. and have no account there.",
+    message: scamEmail("Fennel & Co.", "Email · Saturday", "Join our list", [L("k10a", "Get our catalog by mail."), L("k10b", "Send us your home address and birthday at the link.")], "fennel-co.example/list"),
+    right: "leave",
+    say: ["You gave your address and birthday to a shop you had never used.", "There is nobody to check with: you have no account with them.", "You deleted it."],
+    deciding: ["k10b"], reason: "You did not start it and you have no account with them, so you leave it, real or not." }),
+  all({
+    id: "l11k-prize-fake", genuine: "scam", channel: "banner", request: "money",
+    context: "You have never heard of Lucky Draw.",
+    message: scamBanner("Lucky Draw", "Now", [L("k11a", "You won a $1,000 gift card! Pay $5 shipping to claim.")]),
+    right: "leave",
+    say: ["You paid $5 and gave your card number. Charges you never made followed.", "There is nobody to check with: you have no dealings with them.", "You swiped it away."],
+    deciding: ["k11a"], reason: "You have no dealings with them, so you leave it. Real prizes are free." }),
+  all({
+    id: "l11k-mail-real", genuine: "genuine", channel: "email", request: "login", offers: true,
+    context: "Your email is with Fernbrook, and the Fernbrook app is on your phone.",
+    message: scamEmail("Fernbrook", "Email · Monday", "Review your security", [L("k12a", "We added a new security setting to your account."), L("k12b", "Sign in at the link to review it.")], "fernbrook.example/security"),
+    right: "check", own: "The Fernbrook app on my phone", theirs: "The link in the email I got", alt: { how: "search", text: "The sign-in page I find by searching for Fernbrook" },
+    say: ["This time the link was real. You could not have told.", "The app shows the new setting, and you look at it there.", "The new setting waits until you next open the app."],
+    deciding: ["k12b"], reason: "You did not start it, and it uses the name of your email service, so you go in through the app." }),
+  exItem({
+    id: "l11x-medicare", strand: A, channel: "call", request: "details",
+    context: "You have Medicare. Its number is on your Medicare card.",
+    prompt: "A call says it is Medicare. What do you say?", from: "Medicare", detail: "Incoming call · 9:15 AM",
+    turns: [
+      { lines: ["We are sending everyone new cards.", "Confirm your Medicare number and your bank account so it is not canceled."], push: "It says you will lose something.",
+        give: "Give her the numbers", hold: "Tell her to mail you a form", leave: "Say “I’ll call back on the number I have,” and hang up" },
+      { lines: ["Forms take months, and your card ends this week."], push: "It hurries you.",
+        give: "Give her the numbers", hold: "Tell her you will find your card first", leave: "Say “I’ll call back on the number I have,” and hang up" },
+      { lines: ["If you hang up, your doctor visits will not be covered."], push: "It threatens the cost of stopping.",
+        give: "Give her the numbers", leave: "Say “I’ll call back on the number I have,” and hang up" }],
+    gave: "Your Medicare number was used to bill for care you never had, and your bank account was emptied.",
+    left: "The number on your Medicare card said no new cards were being sent and nobody had called.",
+    reason: "A government office has your records, so you hang up and call it on the number on your card. No government office calls to get your details." }),
+  realExItem({
+    id: "l11x-delivery", strand: A, channel: "call", request: "details",
+    context: "You called Thistlewick on the number in its app, to change where your order is delivered.",
+    prompt: "Thistlewick answers. What do you say?", from: "Thistlewick", detail: "Your call, a minute in",
+    turns: [
+      { lines: ["I can change that.", "First, the last four digits of the card on the order, and your zip code."], push: "It wants your details at once.",
+        stay: "Give her the four digits and the zip code", hold: "Tell her you will call back after dinner", leave: "Hang up and call the app’s number again" },
+      { lines: ["The van is loaded within the hour. After that it goes to the old address."], push: "It gives a deadline.",
+        stay: "Give her the four digits and the zip code", leave: "Hang up" }],
+    stayed: "The order came to the new address.",
+    hung: "Nothing was wrong: you had called the number in the shop’s own app. The order went to the old address.",
+    reason: "You started it: you called the number in the shop’s own app, so you are talking to the shop." })
+]);
+})();

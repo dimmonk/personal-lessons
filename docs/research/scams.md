@@ -29,8 +29,9 @@ you know.** FTC, "How To Recognize and Avoid Phishing Scams" (consumer.ftc.gov, 
 click a link, first ask "Do I have an account with the company or know the person who contacted me?"; if not, report and
 delete it; if so, "contact the company using a phone number or website you know is real — not the information in the
 email". *Strength:* moderate (official guidance, not a study; it agrees with S3 to S5). *Use:* the subject's three actions
-come from here: **do it** (I started it), **check first, a way I already had** (it involves something of mine), **leave
-it** (nothing of mine is involved).
+come from here: **do it** (I started it), **check first, a way I already had** (I have an account with them or know the
+person), **leave it** (neither). The FTC's question names the sender, not the subject of the message, so a pop-up "about your computer" from nobody
+you deal with is left, and a text "from" your bank is checked (rule wording settled 2026-10-22, plan.md "The rule").
 
 **S3. The FTC's four signs are about what the contact claims and asks, never about how it looks.** FTC, "How To Avoid a
 Scam" (consumer.ftc.gov, read 2026-10-22): "Scammers PRETEND to be from an organization you know"; "say there's a PROBLEM
@@ -176,6 +177,133 @@ methods combined"; email the most common contact, then phone calls, then texts. 
 and payment by transfer, crypto and gift card; a job offer that asks for money or a check to deposit belongs in the money
 lesson.
 
+## A2. Added 2026-10-22, after the research review of lessons 1 to 6 (each read on the page named, that day)
+
+**S23. Family and friends asking for money: check through a number you know.** FTC, "Scammers Use Fake Emergencies To Steal Your Money"
+(consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money). "Use a phone number you know is right to call or message the family
+member" and "Ask them if they're really in trouble"; "Call someone else in your family or circle of friends", even if the caller "said to keep it a
+secret"; "don't trust the voice on the line — even if it sounds like your family member or friend"; they ask to pay "by wiring money", "sending
+cryptocurrency, using a payment app, or by putting money on a gift card". The page also suggests to "try asking a question only the real person would
+know the answer to", so a lesson never marks that move wrong; it offers the call to the number you have instead. *Strength:* moderate (official
+guidance, agreeing with the FBI's family secret word, S4). *Use:* step 3 of the rule covers people you know: money they ask for that you had not
+agreed is checked on the number you already have, whoever's name is on the message.
+
+**S24. Prizes are free.** FTC, "Fake Prize, Sweepstakes, and Lottery Scams" (consumer.ftc.gov/articles/fake-prize-sweepstakes-and-lottery-scams):
+"Real prizes are free"; "If you have to pay to get your prize, it's a scam." The page says nothing about a prize you did not enter, so no lesson says
+such a prize cannot exist. *Strength:* moderate (official guidance). *Use:* the settling line on prizes.
+
+**S25. Advance-fee loans: a real lender may charge to apply; a fee to get the loan is the trick.** FTC, "What To Know About Advance-Fee Loans"
+(consumer.ftc.gov/articles/what-know-about-advance-fee-loans): "Real lenders can require an application or appraisal fee before they consider your
+loan application"; "Any up-front fee that the lender wants to collect before granting the loan is a cue to walk away"; be wary of fees described as
+"insurance," "processing," or "paperwork"; "Nobody legit will tell you that paying a fee guarantees that you'll get a loan." *Strength:* moderate.
+*Use:* the loan line says "a fee to get a loan you were told is approved", never "a real loan never charges anything".
+
+**S26. A code is for you to type, never to read to someone who contacted you.** FTC consumer alert, "Google Voice scam: How the verification code
+scam works and how to avoid it" (consumer.ftc.gov/consumer-alerts/2021/10/...), read 2026-10-22: scammers posing as buyers say they "want to verify
+that you're a real person"; with the code "they'll try to use it to create a Google Voice number linked to your phone number"; "No matter what the
+story is, don't share your Google Voice verification code", nor "any verification code" with someone "if you didn't contact them first." *Strength:*
+moderate. *Use:* the code line is worded "A code is only for you to type, on the page or app you opened yourself. Never read it to anyone." The
+outcome of reading it to a buyer is the one the FTC names (a number set up in your name, used to cheat others).
+
+**S27. Investment scams by people met online: gains you cannot take out.** FBI IC3 PSA230314 (ic3.gov/PSA/2023/PSA230314): "Criminals target victims
+using dating applications (apps), social media platforms, professional networking sites"; "Once trust is established with victims, criminals introduce
+the topic of cryptocurrency"; "When victims attempt to withdraw their money, they are told they need to pay a fee or taxes"; "Victims are unable to get
+their money back, even if they pay"; advice: "Do not invest per the advice of someone you meet solely online." *Strength:* moderate (FBI, from
+complaints). *Use:* step 4 of the rule (someone met only online is not someone you know) and the investment outcomes.
+
+**S28. Tech support and refund scams, and numbers from a search.** FTC, "How To Spot, Avoid, and Report Tech Support Scams" (as S11), read again
+2026-10-22: scammers try to "show up in online search results for tech support or run their own display ads online"; they "ask for remote access
+to your computer"; in refund scams they claim they "refunded you too much money" and pressure you to pay it back; to check a charge, contact the
+company using "a phone number you know is real". *Strength:* moderate. *Use:* "a number a web search shows" is a wrong way to check (a distractor
+that is not from the message); the refund-call reason is the FTC's.
+
+**S29. A sign-in approval you did not start means someone has your password.** CISA, "Implementing Number Matching in MFA Applications" (fact sheet,
+October 2022, text extracted from the PDF): the login flow is "1. The user enters their username and password", then a push the user accepts; in "MFA
+fatigue" the "threat actor bombards a user with mobile application push notifications until the user either approves the request by accident or out of
+annoyance". *Strength:* moderate (agency guidance). *Use:* the approval pair in lesson 5: approve only the sign-in you are doing now; an approval you
+did not start is checked by opening the account's own app and changing the password (step 3). That a push can only come after the password was typed
+is read from CISA's login flow; that changing the password is the next move is S13's advice for a password given away.
+
+**S30. Apps and what they may reach.** FTC, "How To Protect Your Privacy on Apps" (consumer.ftc.gov/articles/how-protect-your-privacy-apps): "Some
+apps may ask for access to information from your device, like your location, your contacts, or your photos"; "Consider turning off unnecessary
+permissions or deleting apps that request a lot of permissions." *Strength:* moderate for that much. *Judgement call:* the page gives no test for
+"needs"; the lessons do not teach one. An "Allow" request is judged by the rule: it is done when it answers what you just tapped in an app you got
+yourself (the camera after "Scan"), and left when it answers nothing you did (an app from an ad that asks for your texts). That an app reading your
+texts can read the codes sent to you by text is a judgement call drawn from S26 (codes arrive by text) and is said as a possibility, never as what
+always happens. FTC, "Job Scams" (consumer.ftc.gov/articles/job-scams): "No honest potential employer will ever send you a check to deposit and then
+tell you to send on part of the money"; work-from-home offers that leave you "paying for starter kits, so-called training, or certifications".
+
+**S31. Government imposters: hang up and call the agency at a number you know.** FTC, "How To Avoid a Government Impersonation Scam"
+(consumer.ftc.gov/articles/how-avoid-government-impersonation-scam), read 2026-10-22: "Government agencies will never call, email, text, or message
+you on social media to ask for money or personal information"; "No government agency will demand you wire money or pay with gift cards,
+cryptocurrency, or a payment app"; "Neither the IRS nor its debt collectors will threaten to arrest you"; "Hang up the phone and call the government
+agency directly at a number you know is correct", not the number given or the caller ID; with no number, find the official one on the agency's
+website. *Strength:* moderate (official guidance). *Use:* the rule's step 3 counts an agency as one you deal with (it holds your records), so its
+name is checked on a number you know, never paid. The family-word line follows S4 and S23 together: a caller who cannot say the word is not
+believed, and you hang up and call the person on the number you have; the lessons do not claim such a caller cannot be family.
+On sign-in codes and approvals: S29 shows one way a push comes (after the password); S26 shows a code can be made to come with no password at all.
+So the lessons say "a code or approval you did not ask for means someone is trying to get into that account", never "someone has your password".
+On reading texts: only Android lets an app ask to read text messages (judgement call from the platforms' own permission lists, not a cited page);
+the lessons say "on an Android phone".
+
+## A3. Added 2026-10-22 for lessons 7 to 12 (each read on the page named, that day)
+
+**S32. What your details are worth, and quizzes that collect them.** FTC, "What To Know About Identity Theft"
+(consumer.ftc.gov/articles/what-know-about-identity-theft): thieves with your information can "buy things with your credit cards", "get new credit
+cards in your name", "open a phone, electricity, or gas account in your name", "steal your tax refund"; "If you think someone stole your identity,
+report it to the Federal Trade Commission", at IdentityTheft.gov; a credit freeze: "contact each of the three credit bureaus"; "Get and review your credit
+reports. Accounts in your name that you don't recognize could be a sign of identity theft." AARP, "Online quizzes" (aarp.org/money/scams-fraud/info-2023/online-quiz):
+quiz answers "might even match your answers to the security questions you use to log in"; "If, for example, you share the name of your childhood pet, you
+may be disclosing part of one of your passwords"; "When accounts require security questions, treat your answers like passwords by making them random
+and long." FTC fake emergencies (as S23): "The scammer may already know a lot about you", "They may know your name, where you live, and other information
+they could have found on social media sites". *Strength:* moderate (official guidance; AARP is a consumer group, not a study). *Use:* lesson 8 (what
+details let someone do, quizzes, security answers) and lesson 9's belief "they knew my details". The outcomes in lesson 8 are drawn from the FTC's list.
+
+**S33. Official names, caller ID and payments you made yourself.** FTC, "How To Avoid a Scam" (as S3), read again: scammers "make up a name that sounds
+official"; "They use technology to change the phone number that appears on your caller ID. So the name and number you see might not be real."
+FTC, "Mobile Payment Apps: How To Avoid a Scam When You Use One" (consumer.ftc.gov/articles/mobile-payment-apps-how-avoid-scam-when-you-use-one):
+scammers want payment by app because "once you do, it's hard for you to get your money back." *Strength:* moderate. *Use:* lesson 9's beliefs "it
+looked official", "the number on my screen was my bank's", "my bank would have stopped it" (said as "a payment you make yourself goes through; once
+it is sent, it is hard to get back", never "the bank cannot see it"). The padlock belief rests on S9d (search excerpts only, limited), so the lesson
+says "most copied websites show the padlock too", not a figure. The "friendly and helpful" belief rests on S7 (Friendship and Source Credibility among
+the commonest tactics in real pitches) and S10 (victims more often said they liked the person).
+
+**S34. The first steps after a loss, by kind.** FTC, "What To Do if You Were Scammed" (as S13), read again for each kind: bank transfer: "Report it
+to your bank or credit union immediately" and "Ask them to reverse the payment and refund your money"; payment app: "Report it to the payment app
+immediately"; wire: "Report it to the wire transfer company immediately", "Tell them a scammer tricked you"; gift card: "Contact the gift card issuer
+immediately. Use the number on the back of the card", "Keep the gift card and the receipt, if you have it"; cryptocurrency: "Contact the cryptocurrency
+exchange or ATM operator immediately", "Ask them to reverse the transaction"; debit card: "Use the number on the back of your card or log in to your
+account online or through their app"; username and password: "Create a new, strong password for the account that was compromised" and "Turn on
+two-factor authentication on the account"; remote access: "Update your security software", "Run a scan and delete anything it identifies as a
+problem", "Change your passwords and turn on two-factor authentication"; Social Security number: "Go to IdentityTheft.gov to report it", "Get a
+customized recovery plan"; then "Report a scammer to the FTC at ReportFraud.ftc.gov". FTC, "How To Recover Your Hacked Email or Social Media Account":
+"First, make sure your computer security software is up to date, then run a scan." FTC, "How To Recognize, Remove, and Avoid Malware": "Immediately stop
+logging into online accounts". FTC, "Lost or Stolen Credit, ATM, and Debit Cards": "don't wait to report it"; "Follow up immediately in writing"; for a
+debit card "what you owe depends on how quickly you report it." *Strength:* strong (official, current US guidance). *Use:* lesson 12's first step for
+each kind of loss and the two after it. Where the sources give no order between two steps (a freeze and the credit reports; two-step sign-in and the
+change on other accounts), the lesson asks for both as "the next two", not an order (a departure from the plan's "order the next two", made so that no
+order is invented).
+
+*Final round, 2026-10-22 (after the research review of lessons 7 to 12):* the FTC lost-card page also says that for a credit card "The maximum you
+might be responsible for is $50", while for a debit card "what you owe depends on how quickly you report it", so lesson 12 says each. The FTC's
+wording for money is "Ask them to reverse the payment and refund your money"; the lessons say "request that they reverse it", never that they will.
+For a number that has already been used to open an account, the IdentityTheft.gov recovery steps begin with calling the company where the fraud
+happened (per the reviewer's search; the page did not render as text here), which the first-step list does not offer, so lesson 12 uses only numbers
+that went out and have not been used (a leak, a call, a stolen card).
+
+**S35. One password per account.** CISA, "Use Strong Passwords" (cisa.gov/secure-our-world/use-strong-passwords): "Use a different strong password for
+each account"; its story: Emma knew she'd been hacked "because she'd used the same password on both accounts", after "her password was a part of a
+company breach that was posted online." *Strength:* moderate (agency guidance). *Use:* lesson 12's "change it anywhere you used the same one".
+
+**S36. Fake checks and toll texts.** FTC, "How To Spot, Avoid, and Report Fake Check Scams" (consumer.ftc.gov/articles/how-spot-avoid-and-report-fake-check-scams):
+buyers "'accidentally' send a check for too much, and ask you to refund the balance"; "Even if you see the funds in your account, that doesn't mean it's a
+good check"; "It can take weeks for a bank to figure out that the check is a fake"; "you're stuck paying the money back to the bank"; "Never use money
+from a check to send gift cards, money orders, cryptocurrency, or to wire money". FTC consumer alert on unpaid-toll texts (consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam):
+"You get a text out of the blue that says you have unpaid tolls and need to pay immediately"; the link goes to "a page to enter your bank or credit card
+info"; "Reach out to the state's tolling agency using a phone number or website you know is real — not the info from the text." *Strength:* moderate.
+*Use:* lesson 7 (the overpaying buyer; the small fee by link, checked in your own toll account's app when you have one, left when you have none).
+A change of bank details on a real bill is S4 (FBI IC3 PSA I-091124: verify "requests for changes in account information" by a second channel).
+
 ## B. What the learning research says about this kind of skill
 
 The skill is two things at once: judging a contact (what it wants, whether it fits) and a behavior under pressure (stop,
@@ -236,13 +364,14 @@ What practitioners do, put together from S1 to S16:
    the padlock and knowing your details prove nothing.
 2. **Ask whether it fits something you started** (S1, S2). A code you just asked for, a bill you always pay the usual way:
    act normally. Out of the blue: go on.
-3. **If it involves something of yours, go in your own way; if not, leave it** (S2, S4, S5). Your bank's app, the number on
+3. **If you did not start it and you have an account with them or know the person, go in your own way; if neither, leave it** (S2, S4, S5,
+   S23; the FTC's own test is "Do I have an account with the company or know the person who contacted me?"). Your bank's app, the number on
    your card, the site you type yourself, the family secret word. Never the link, number, reply or transfer the contact
    gives you, because those belong to the sender.
 4. **Pressure is the sign to stop, and some requests settle it outright** (S3, S6, S11). Hurry, secrecy, fear, a prize, a
    "safe account", a code read back, a gift card or crypto, a fee to get your money back, money to someone you have not met:
    end it. Ending a contact is free; honest senders give you time (S3, S10).
-5. **When there is no channel of your own, tell someone you know in person** (S15).
+5. **When there is no channel of your own (someone known only online), leave it and tell someone you know in person** (S15, S27).
 6. **If something already went out, speed decides: the bank or payment company first, on its own number, then passwords,
    then reports, and ignore the offer to recover it** (S13).
 
@@ -277,6 +406,13 @@ caller gives or the caller ID (S4, S5); "they knew my details" (S9c); "only gree
 - FTC tech support, recovery, romance, credit freeze, what to do if scammed: consumer.ftc.gov articles of those names
 - CFPB Ask 1017: https://www.consumerfinance.gov/ask-cfpb/how-do-i-get-my-money-back-after-i-discovered-an-unauthorized-transaction-or-money-missing-from-my-bank-account-en-1017/
 - FTC Consumer Sentinel 2024 release: https://www.ftc.gov/news-events/news/press-releases/2025/03/new-ftc-data-show-big-jump-reported-losses-fraud-125-billion-2024
+- FTC fake emergencies: https://consumer.ftc.gov/articles/scammers-use-fake-emergencies-steal-your-money
+- FTC prizes: https://consumer.ftc.gov/articles/fake-prize-sweepstakes-and-lottery-scams ; advance-fee loans: https://consumer.ftc.gov/articles/what-know-about-advance-fee-loans ; job scams: https://consumer.ftc.gov/articles/job-scams
+- FTC Google Voice code alert: https://consumer.ftc.gov/consumer-alerts/2021/10/google-voice-scam-how-verification-code-scam-works-and-how-avoid-it
+- FBI IC3 PSA230314: https://www.ic3.gov/PSA/2023/PSA230314
+- FTC tech support: https://consumer.ftc.gov/articles/how-spot-avoid-and-report-tech-support-scams ; apps: https://consumer.ftc.gov/articles/how-protect-your-privacy-apps
+- CISA number matching fact sheet: https://www.cisa.gov/sites/default/files/publications/fact-sheet-implement-number-matching-in-mfa-applications-508c.pdf
+- FTC government impersonation: https://consumer.ftc.gov/articles/how-avoid-government-impersonation-scam
 - Hadnagy 2010, contents: https://oreilly.com/library/view/social-engineering-the/9780470639535
 - Canfield et al. 2016: https://scholarsmine.mst.edu/engman_syseng_facwork/545
 - Jensen et al. 2017: https://jmis-web.org/articles/1343
@@ -284,3 +420,8 @@ caller gives or the caller ID (S4, S5); "they knew my details" (S9c); "only gree
 - ShieldUp! 2025: https://arxiv.org/abs/2503.12341
 - Sheng et al. 2010 (abstract): https://www.cybsafe.com/research/who-falls-for-phish-a-demographic-analysis-of-phishing-susceptibility-and-effectiveness-of-interventions
 - Ho et al. 2025, Lain et al. 2022/2024, Vishwanath et al. 2016, Kircanski et al. 2018: as listed in scams-judging-and-acting.md
+- FTC identity theft: https://consumer.ftc.gov/articles/what-know-about-identity-theft ; AARP quizzes: https://www.aarp.org/money/scams-fraud/info-2023/online-quiz
+- FTC payment apps: https://consumer.ftc.gov/articles/mobile-payment-apps-how-avoid-scam-when-you-use-one ; lost or stolen cards: https://consumer.ftc.gov/articles/lost-or-stolen-credit-atm-and-debit-cards
+- FTC hacked accounts: https://consumer.ftc.gov/articles/how-recover-your-hacked-email-or-social-media-account ; malware: https://consumer.ftc.gov/articles/how-recognize-remove-avoid-malware
+- CISA strong passwords: https://www.cisa.gov/secure-our-world/use-strong-passwords
+- FTC fake checks: https://consumer.ftc.gov/articles/how-spot-avoid-and-report-fake-check-scams ; toll texts: https://consumer.ftc.gov/consumer-alerts/2025/01/got-text-about-unpaid-tolls-its-probably-scam

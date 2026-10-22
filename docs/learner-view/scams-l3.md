@@ -1,18 +1,21 @@
 # Scams & Social Engineering: Act, check or leave
 
-Revision 1, draft (the screen carries the draft line). Part: Act, check or leave, on mixed messages. Where the subject ends up: When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.
+Revision 4, live. Part: Act, check or leave. Where the subject ends up: When a message, call or offer asks you to act, you stop, see what it wants, and check it through a channel you already had before doing anything, while handling real messages normally; and if something already went out, you make the first calls at once.
 
 ## The why
 
-A text, a call or a pop-up wants something from you: a tap, a payment, a code, a call. Half the ones you get are real.
+A text, a call or a pop-up wants something from you: a tap, a payment, a code, a call. Many of them are real.
 You see messages as they arrive and choose what you would do: do what it says, check first through a way you already had, or leave it.
 
-## Step 1: Three questions, then choose
+## Step 1: The rule: three questions, then choose
 
-1. What does it want? A payment, a code, your details, or your phone or computer.
-2. Did I start this, just now, here? A code you just asked for is yours. A message out of the blue is not.
-3. Is there a way I already had? Your bank’s app, the number on your card, the shop’s order page. Never the link, number or reply the message gives you.
-Then choose. Do what it says only when you started it. Check first when you did not and you have a way of your own. Leave it when nothing of yours is involved.
+1. What does it want? Money, a sign-in or a code, your details, or your phone or computer. If it wants none of these, there is nothing to decide.
+2. Did I start it? A code or link I just asked for, a call back I asked for on a number I already had, a payment I agreed beforehand (the amount, or how it is worked out, and the way to pay). Then do what it says. A message that says “as you asked” is only its word: what counts is what you remember doing.
+3. If not: do I have an account with them, or know the person? My bank, my shop, a government office that has my records, my boss, my grandson. Then check first, through a way I already had: their app, the number on my card, an address I type, the number I have saved. Never the link, number or reply the message gives you. Checking beats just leaving it: a real one gets dealt with, and a fake one using a name I know is something that person or company needs to hear.
+If I have neither, leave it: delete it, close it, hang up. Someone I know only online (a friend, a match or a contact from a forum or game I have never met, not a buyer I deal with once) does not count as someone I know: their name, photos and story all came from them. If they want money, I also tell someone I know in person.
+
+A wrong idea, marked wrong: It really is from my bank, so I can do what it says.
+The right line: A real message you did not start is checked your own way, the same as a copy, because from outside they look the same.
 
 ## Step 2: A worked example
 
@@ -32,17 +35,17 @@ Before the working, the learner may commit to a choice (not scored, not stored):
 
 The working, one step at a time:
 1. See what it wants. It wants you to confirm your sign-in through its link, now.
-1. Check whether you started it. You did not. You did nothing with your card today.
-1. Find a way you already had. The Calderwood app is on your phone.
-1. Choose. Check first, in the app. Leave the link alone.
+1. See whether you started it. You did not. You did nothing with your card today.
+1. See whether you deal with them. Yes: it uses the name of your bank, Calderwood.
+1. Choose. Check first, in the Calderwood app. Leave the link alone.
 
-Then the answer: Check first, a way I already had / The Calderwood app on my phone. It wants your sign-in, you did not start it, and you already have the Calderwood app. Going in through the app settles it, and nothing the text gave you is needed.
+Then the answer: Check first, a way I already had / The Calderwood app on my phone. It wants your sign-in, you did not start it, and it uses the name of your bank. So you check, in the app you already have, and nothing the text gave you is needed.
 
 ## Step 3: Questions
 
 6 questions, listed, with each inner pair asked one after the other, in a random order. A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 1
+#### Item 1
 
 You just tapped “Text me a code” on the Marlowe & Finch sign-in page.
 
@@ -53,61 +56,52 @@ A text message: "Marlowe & Finch", Text message · 9:02 AM.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: A minute spent on something you started. You were already on the right page.
+- Check first, a way I already had — if chosen: Checking was not needed: you asked for this code a moment ago, on the page you are on.
 - Leave it — if chosen: You are still signed out, and the code runs out in ten minutes.
 
-**How do you check?** (opens only after a certain answer)
-- The number the text came from — if chosen: The message gave you that, so the sender decides who answers.
-- The Marlowe & Finch page I am on (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+After the answer: the deciding words are marked. Reason: You started it: you asked for this code a moment ago, on the page you are on. Typing it there is what it is for.
 
-After the answer: the deciding words are marked. Reason: You asked for this code a moment ago, on the page you are on. Using it there is exactly what it is for.
+#### Item 2
 
-#### Question 2
+You are cooking dinner. A code arrives on your phone, and a moment later a text from a number you do not know.
 
-A code just arrived on your phone. You did not request one.
-
-A text message: "Unknown number", Text message · 9:04 AM.
+A text message: "Unknown number", Text message · 7:04 PM.
 
 > Hi, I sent you a code by mistake.
 > Can you read it back to me?
 
 **What do you do?**
 - Do what it says — if chosen: They typed your code into your account’s sign-in and were in. You never saw it happen.
-- Check first, a way I already had — if chosen: Safe, but there is nothing to check. A code belongs to whoever asked for it, and no one needs it read back.
+- Check first, a way I already had — if chosen: There is nobody to check with: you do not know who this is. The code is only for you to type, never to read to anyone.
 - Leave it (right)
 
-**How do you check?** (opens only after a certain answer)
-- The sign-in page of the account the code is for (right)
-- The number the text came from — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+After the answer: the deciding words are marked. Reason: You did not start it and you do not know the sender, so you leave it. A code is only for you to type on a page you opened yourself; never read it to anyone.
 
-After the answer: the deciding words are marked. Reason: A one-time code is only ever for the person who asked for it. No honest sender needs it read back to them.
+#### Item 3
 
-#### Question 3
+You ordered a jacket from Thistlewick Outfitters on Monday, and you have an account there. You have not been in touch with them about the delivery.
 
-You ordered a jacket from Thistlewick Outfitters on Monday.
+A text message: "Thistlewick Outfitters", Text message · Wednesday 10:05 AM.
 
-A text message: "Thistlewick Outfitters", Text message · Tuesday 10:05 AM.
-
-> Your jacket is on its way and should arrive Thursday.
-> You can follow it any time in your Thistlewick account.
+> We could not deliver your jacket today.
+> Sign in at the link to choose a new day.
+> (the link in it, drawn as words and never one that can be followed: thistlewick.example/delivery)
 
 **What do you do?**
-- Do what it says — if chosen: There was nothing to do, so nothing happened.
-- Check first, a way I already had — if chosen: The account shows the same news the email did. A minute spent.
-- Leave it (right)
+- Do what it says — if chosen: This time the link was real and you chose a new day. You could not have known that, and next time the same text could be a copy.
+- Check first, a way I already had (right)
+- Leave it — if chosen: Your jacket waits at the depot and goes back after a week.
 
 **How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The details in the email — if chosen: The message gave you that, so the sender decides who answers.
-- My Thistlewick account (right)
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
+- The page the link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
+- My Thistlewick account, at the address I type myself (right)
 
-After the answer: the deciding words are marked. Reason: It wants nothing from you. It tells you what you already expect, so there is nothing to act on and nothing to check.
+After the answer: the deciding words are marked. Reason: You did not start it, and you have an account with Thistlewick. So you go in your own way, at the address you type. Its link is never the way.
 
-#### Question 4
+#### Item 4
 
-You ordered a jacket from Thistlewick Outfitters on Monday.
+You have never used Quillfeather Parcel, and you have not ordered anything this month.
 
 A text message: "Quillfeather Parcel", Text message · 3:31 PM.
 
@@ -117,19 +111,14 @@ A text message: "Quillfeather Parcel", Text message · 3:31 PM.
 
 **What do you do?**
 - Do what it says — if chosen: The page took your card number, then charged it again and again.
-- Check first, a way I already had (right)
-- Leave it — if chosen: You are safe. The jacket was never held, and you can see that on the order page.
+- Check first, a way I already had — if chosen: There is nobody to check with: you have no account with Quillfeather and no parcel coming.
+- Leave it (right)
 
-**How do you check?** (opens only after a certain answer)
-- My Thistlewick order page (right)
-- The link in the text — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+After the answer: the deciding words are marked. Reason: You did not start it, you have no account with Quillfeather, and you are expecting nothing. So you leave it. A fee by link to release a parcel is the request.
 
-After the answer: the deciding words are marked. Reason: You are expecting a parcel, which is what makes this believable. A fee to release it is the request, and the shop’s own order page tells you the truth.
+#### Item 5
 
-#### Question 5
-
-Calderwood Bank is your bank. You did not buy anything today.
+Calderwood Bank is your bank. You have been at home all day.
 
 A text message: "Calderwood Bank", Text message · 4:40 PM.
 
@@ -144,14 +133,14 @@ A text message: "Calderwood Bank", Text message · 4:40 PM.
 
 **How do you check?** (opens only after a certain answer)
 - The Calderwood app on my phone (right)
-- The link in the text — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- The page the link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: A real alert and a fake one can look the same. The move is the same too: you did not start this, so go in through the app you already have, never through the link.
+After the answer: the deciding words are marked. Reason: A real alert and a fake one can look the same. The move is the same too: you did not start this and it is your bank, so go in through the app you already have, never through the link.
 
-#### Question 6
+#### Item 6
 
-Calderwood Bank is your bank. You did not buy anything today.
+Calderwood Bank is your bank. You have been at home all day.
 
 A text message: "Calderwood Bank", Text message · 4:41 PM.
 
@@ -165,21 +154,21 @@ A text message: "Calderwood Bank", Text message · 4:41 PM.
 - Leave it — if chosen: You are safe, but you never learned there was no charge. Had it been real, leaving it would have cost money.
 
 **How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The link in the text — if chosen: The message gave you that, so the sender decides who answers.
+- The Calderwood number I find by searching on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
+- The page the link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
 - The Calderwood app on my phone (right)
 
-After the answer: the deciding words are marked. Reason: It looks exactly like the real alert, and the move is the same: you did not start this, so go in through your own app. How it looks never decides it.
+After the answer: the deciding words are marked. Reason: It is word for word the real alert, on purpose: the move is the same, you did not start this and it uses your bank’s name, so go in through your own app. How it looks never decides it.
 
 Then a screen: you can stop here, your place is kept.
 
 ## Step 4: Questions
 
-8 questions, shuffle, each question on a 20 second clock (the clock only shows the time, counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
+9 questions, shuffle, each question on a 20 second clock (the clock only shows the time, counted on the frame clock: at zero the question stops, whatever is not answered is a timeout, a miss that is not a slip, and the screen waits for Next; a live call or chat is not timed). A missed question comes back at least three questions later, until it is right. After each answer: the right answer, the deciding words, the reason, and one line on the learner's own choice if it was wrong.
 
-#### Question 7
+#### Item 7
 
-You hired Femi Iwu to tile your bathroom. The quote said: pay by bank transfer when the job is done.
+You hired Femi Iwu to tile your bathroom. The quote said: pay by bank transfer to the account on the quote when the job is done.
 
 An email: "Iwu Tiling", Email · Friday.
 
@@ -191,19 +180,14 @@ An email: "Iwu Tiling", Email · Friday.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You called Femi on the number from the quote. He said the job was done. It cost a minute and was not needed: nothing changed from what you agreed.
+- Check first, a way I already had — if chosen: You called Femi on the number from the quote. He said the job was done. Not needed: nothing changed from what you agreed.
 - Leave it — if chosen: The bill goes unpaid, and Femi has to chase you.
 
-**How do you check?** (opens only after a certain answer)
-- The account on my quote (right)
-- The details in the email — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+After the answer: the deciding words are marked. Reason: You started it: you agreed the amount and the way to pay beforehand, and this wants exactly that. Paying the account on your quote is right.
 
-After the answer: the deciding words are marked. Reason: You hired him, the amount is the quote, and the way to pay is the one you already agreed. Paying through that way is right.
+#### Item 8
 
-#### Question 8
-
-You hired Femi Iwu to tile your bathroom. The quote said: pay by bank transfer when the job is done.
+You hired Femi Iwu to tile your bathroom. The quote said: pay by bank transfer to the account on the quote when the job is done.
 
 An email: "Iwu Tiling", Email · Friday.
 
@@ -216,82 +200,71 @@ An email: "Iwu Tiling", Email · Friday.
 **What do you do?**
 - Do what it says — if chosen: The $1,860 went to a stranger’s account. Banks can rarely get it back.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, but Femi is still waiting for his money.
+- Leave it — if chosen: You are safe, but Femi, whom you hired, is still waiting for his money.
 
 **How do you check?** (opens only after a certain answer)
 - Femi’s number from my quote (right)
-- The number or address in the email — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- My reply to the email — if chosen: The address in the message belongs to the sender, so the reply goes to the sender.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: New bank details sent in a message are the oldest trick for this. A real change is confirmed on a number you already had.
+After the answer: the deciding words are marked. Reason: New bank details are not what you agreed, so you did not start this. Femi is someone you deal with, so you check on the number from your quote.
 
-#### Question 9
+#### Item 9
 
 You are reading a recipe on a website.
 
 A pop-up on a screen: "Security alert", On a web page.
 
 > Your computer is infected!
-> Do not turn it off. Call Pinecrest Support now.
+> Do not turn it off. Call Pinecrest Help now.
 > [a button: "Call 1-555-0142"]
 
 **What do you do?**
 - Do what it says — if chosen: A stranger asked to see your screen, then for payment in gift cards. Your computer was fine before they touched it.
-- Check first, a way I already had — if chosen: There is nothing to check. A web page cannot know what is on your computer, so leaving it is the whole answer.
+- Check first, a way I already had — if chosen: There is nobody to check with: you have no account with Pinecrest Help.
 - Leave it (right)
 
-**How do you check?** (opens only after a certain answer)
-- The number on the pop-up — if chosen: The message gave you that, so the sender decides who answers.
-- My own antivirus program, or a shop I know (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+After the answer: the deciding words are marked. Reason: You did not start it and you have no account with Pinecrest Help, so you leave it. A web page cannot see inside your computer.
 
-After the answer: the deciding words are marked. Reason: A web page cannot see inside your computer. It shows this to frighten you into calling, and the number belongs to the scammer.
-
-#### Question 10
+#### Item 10
 
 Priya Raman is your boss at Kestrel Dental. You have her number saved.
 
 A text message: "Priya R. (new number)", Text message · 11:20 AM.
 
-> Hi, it’s Priya. I’m in a meeting and can’t talk.
 > Please buy four $100 gift cards for a client and send me the codes here.
+> It’s Priya. I’m in a meeting and can’t talk.
 
 **What do you do?**
-- Do what it says — if chosen: You sent four codes. The gift cards were emptied within minutes, and the money cannot be traced.
+- Do what it says — if chosen: You sent four codes. The gift cards were emptied within minutes.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, but if Priya really needed something, she is waiting.
+- Leave it — if chosen: You kept your money, but it uses your boss’s name. A minute on her saved number lets her know someone is using it.
 
 **How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- A reply to this number — if chosen: The message gave you that, so the sender decides who answers.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
+- My reply to this number — if chosen: You would be asking the sender, who answers its own question.
 - Priya’s number that I already have (right)
 
-After the answer: the deciding words are marked. Reason: A boss who cannot talk, on a new number, wanting money in a hurry, is the shape of this trick. Her real number is the one already in your phone.
+After the answer: the deciding words are marked. Reason: Gift cards settle that it is a scam, and it uses the name of someone you know. So you check on her saved number, never by replying.
 
-#### Question 11
+#### Item 11
 
-You pay for Lumenfall, a video service, every month.
+You are not a member of Ironwood Gym.
 
-An email: "Lumenfall", Email · October 1.
+A text message: "Ironwood Gym", Text message · 10:15 AM.
 
-> Subject: **Your October receipt**
->
-> Thanks for being a member.
-> We charged $12.99 to your card on file. No action needed.
+> Join Ironwood Gym this week for just $10 a month!
+> Sign up and pay at the link.
+> (the link in it, drawn as words and never one that can be followed: ironwood.example/join)
 
 **What do you do?**
-- Do what it says — if chosen: There was nothing to do, so nothing happened.
-- Check first, a way I already had — if chosen: The account shows the $12.99 charge, as expected. A minute spent.
+- Do what it says — if chosen: You paid $10 and joined a gym you had not planned to join.
+- Check first, a way I already had — if chosen: There is nobody to check with: you have no account with Ironwood.
 - Leave it (right)
 
-**How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The details in the email — if chosen: The message gave you that, so the sender decides who answers.
-- My Lumenfall account (right)
+After the answer: the deciding words are marked. Reason: You did not start it and you have no account with Ironwood, so you leave it, real or not. Nothing here needs an answer.
 
-After the answer: the deciding words are marked. Reason: It tells you something you already know, and says no action is needed.
-
-#### Question 12
+#### Item 12
 
 You just tapped “Forgot my password” on the Thistlewick Outfitters site.
 
@@ -299,23 +272,18 @@ An email: "Thistlewick Outfitters", Email · 8:15 AM.
 
 > Subject: **Reset your password**
 >
-> You asked to reset your password.
-> Use the link within an hour. If this was not you, ignore this email.
+> Use the link within an hour to reset your password.
+> If you did not ask for this, ignore this email.
 > (the link in it, drawn as words and never one that can be followed: thistlewick.example/reset)
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You went to the site yourself and asked again. It worked, and it cost you a few minutes.
+- Check first, a way I already had — if chosen: You went to the site yourself and asked again. Not needed: you had asked a moment ago.
 - Leave it — if chosen: You are still locked out, and the link expires in an hour.
 
-**How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The link in the email — if chosen: The message gave you that, so the sender decides who answers.
-- The Thistlewick site I am on (right)
+After the answer: the deciding words are marked. Reason: You started it: you asked for this reset a moment ago, so the email is the answer to your own request.
 
-After the answer: the deciding words are marked. Reason: You asked for this reset a moment ago, so the email is the answer to your own request. Using it is right.
-
-#### Question 13
+#### Item 13
 
 Penhallow Credit Union is your credit union.
 
@@ -330,32 +298,55 @@ A text message: "Penhallow CU", Text message · 1:05 PM.
 - Leave it — if chosen: If the payment was fraud, it goes through.
 
 **How do you check?** (opens only after a certain answer)
-- The number on the back of my card (right)
-- The number in the text — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- The number printed on the card (right)
+- The number the text gave me — if chosen: The number came with the message, so whoever answers it is on the sender’s side.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: You did not start this and it touches your money, so you go in through a number you already had. That the number in the text is real this time does not make it the way to check.
+After the answer: the deciding words are marked. Reason: You did not start this and it is your credit union, so you go in through a number you already had. That the number in the text is real this time does not make it the way to check.
 
-#### Question 14
+#### Item 14
 
-Your phone rings. The screen shows a number you do not know.
+Calderwood is your bank. You have not called it today. Your phone rings from a number you do not know.
 
 An incoming call, the caller's words as a transcript: "Fraud team", Incoming call · 5:20 PM.
 
-> This is the fraud team at Calderwood Bank.
-> We blocked a payment on your card. To unblock it, read me the six-digit code we just texted you.
+> This is the fraud team at Calderwood Bank, calling you back as you asked.
+> To unblock your card, read me the six-digit code we just texted you.
+> Please hurry, before more money goes.
 
 **What do you do?**
 - Do what it says — if chosen: The code was your sign-in code. They were in your account within seconds.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, though a real block would still be waiting.
+- Leave it — if chosen: You are safe, but it uses your bank’s name. A call to the number on your card tells you whether anything is really blocked.
 
 **How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The number that called me — if chosen: The message gave you that, so the sender decides who answers.
-- The number on the back of my card (right)
+- Get put through to a manager — if chosen: A transfer goes to someone the caller picked, who will say what the caller needs.
+- Calling back the number my phone shows for the call — if chosen: The number on your screen can be changed to show any name and number.
+- The number printed on the card (right)
 
-After the answer: the deciding words are marked. Reason: No bank needs you to read out a code it just texted you. You did not start this call, and you hold a number of your own to settle it.
+After the answer: the deciding words are marked. Reason: A code read back settles that it is a scam, and it uses the name of your bank. So you hang up and check on the number on your card.
+
+#### Item 15
+
+You met Theo in a gardening group online four months ago. You chat most days, and you have never met or heard his voice.
+
+A chat, with its history: "Theo", Chat in the gardening group.
+
+> (Theo, at the left) My mother is in the hospital and the bill is due today.
+> (Theo, at the left) Could you lend me $600? I will pay you back next week.
+
+**What do you do?**
+- Do what it says — if chosen: You sent $600. A week later there was a new bill, and no money came back.
+- Check first, a way I already had — if chosen: There is nothing of yours to check with: his number, his photos and his story all came from him.
+- Leave it (right)
+
+**What else do you do?** (opens only after a certain answer)
+- Have them prove who they are first — if chosen: Any proof would come from them, the same as everything else you know about them.
+- Keep chatting, but send nothing — if chosen: Every message gives them another try. The ones who lose nothing are mostly the ones who stop.
+- Tell the friend from the same group, who knows them too — if chosen: That friend met them the same way you did and knows only what they were shown.
+- Tell someone I know in person about it (right)
+
+After the answer: the deciding words are marked. Reason: Someone you know only online is not someone you know: every way to check him came from him. So you leave it, and because he wants money you tell someone you know in person.
 
 Then a screen: you can stop here, your place is kept.
 
@@ -370,75 +361,57 @@ To pass:
 - None checked through the link, number or reply the message gave
 - At most 1 wrong among real messages
 
-#### Check question 15
-
-You ordered a drill from Hobnail Hardware for pickup today.
-
-A text message: "Hobnail Hardware", Text message · 10:12 AM.
-
-> Your order is ready for pickup.
-> Show this code at the counter: 5521.
-
-**What do you do?**
-- Do what it says (right)
-- Check first, a way I already had — if chosen: The order page says ready for pickup. A minute spent and not needed.
-- Leave it — if chosen: Your drill stays on the shelf.
-
-**How do you check?** (opens only after a certain answer)
-- My Hobnail order page (right)
-- The details in the text — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-
-After the answer: the deciding words are marked. Reason: You placed this order and it is ready. The code only works at their counter, and nothing is wanted from you but to go and get it.
-
 #### Check question 16
 
-Fenwick Electric sends your power bill every month. You pay it in the Fenwick app.
+You call Linden Mutual about your car insurance, on the number printed on your insurance card. Someone answers.
 
-An email: "Fenwick Electric", Email · October 14.
+An incoming call, the caller's words as a transcript: "Linden Mutual", You called · 10:12 AM.
 
-> Subject: **Your October bill**
->
-> Your bill is $62.10, due October 28.
-> Pay in the Fenwick app or the way you usually pay.
+> Linden Mutual, this is Sam.
+> Can you confirm your date of birth so I can open your policy?
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: You opened the app and saw the same bill. A minute spent and not needed: it is the way you already pay.
-- Leave it — if chosen: The bill goes unpaid until the late fee.
+- Check first, a way I already had — if chosen: You hung up and called the same number again, and got the same question. Not needed: you made this call.
+- Leave it — if chosen: You hang up, and your question about the policy goes unanswered.
 
-**How do you check?** (opens only after a certain answer)
-- The details in the email — if chosen: The message gave you that, so the sender decides who answers.
-- The Fenwick app on my phone (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-
-After the answer: the deciding words are marked. Reason: It is the bill you get every month, for the amount you expect, and it points you to the way you already pay. Paying that way is right.
+After the answer: the deciding words are marked. Reason: You started it: you called the number on your card yourself. Confirming who you are is part of the call you made.
 
 #### Check question 17
 
-You listed a lamp for sale on Bramblecote Market.
+At dinner on Sunday you told your sister Rosa you would pay her back $45 for the concert ticket, through PayLane, the app you always use with her.
 
-A chat, with its history: "Dana on Bramblecote Market", Chat about the lamp.
+A text message: "Rosa", Text message · Monday 9:30 AM.
 
-> (Dana on Bramblecote Market, at the left) Hi, is the lamp still for sale?
-> (you, at the right) Yes, it is. $25.
-> (Dana on Bramblecote Market, at the left) Great. I can pick it up Saturday morning.
+> Hi! It was $45 for your ticket.
+> Send it in PayLane when you can.
 
 **What do you do?**
 - Do what it says (right)
-- Check first, a way I already had — if chosen: The app shows Dana’s profile and no problem. A minute spent and not needed.
-- Leave it — if chosen: You missed a buyer.
+- Check first, a way I already had — if chosen: You called Rosa. She laughed and said yes. Not needed: you agreed this at dinner.
+- Leave it — if chosen: Rosa is still waiting for the $45 you promised.
 
-**How do you check?** (opens only after a certain answer)
-- A reply in the chat — if chosen: The message gave you that, so the sender decides who answers.
-- The Bramblecote Market app (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-
-After the answer: the deciding words are marked. Reason: A buyer wanting a pickup time wants nothing risky: no payment link, no code, no details. Answering is how a sale happens.
+After the answer: the deciding words are marked. Reason: You started it: you agreed the amount and the way to pay at dinner, and this wants exactly that.
 
 #### Check question 18
 
-Marrowbeck Mobile is your phone company. You did not just sign in to anything.
+You are not a customer of Saltmarsh Pizza.
+
+A text message: "Saltmarsh Pizza", Text message · 5:30 PM.
+
+> Text us your birthday for a free pizza on your big day!
+> Saltmarsh Pizza, now open on Main Street.
+
+**What do you do?**
+- Do what it says — if chosen: You sent your birthday to a shop you do not know.
+- Check first, a way I already had — if chosen: There is nobody to check with: you have no account with Saltmarsh.
+- Leave it (right)
+
+After the answer: the deciding words are marked. Reason: You did not start it and you have no account with them, so you leave it, real or not.
+
+#### Check question 19
+
+Marrowbeck Mobile is your phone company. You are watching TV at home.
 
 A text message: "Marrowbeck Mobile", Text message · 6:48 PM.
 
@@ -452,20 +425,20 @@ A text message: "Marrowbeck Mobile", Text message · 6:48 PM.
 - Leave it — if chosen: A stranger stays signed in to your account.
 
 **How do you check?** (opens only after a certain answer)
-- The link in the text — if chosen: The message gave you that, so the sender decides who answers.
+- The page the link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
 - The Marrowbeck app on my phone (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: You did not start this and it is about your account, so you go in through the app you already have. A real message and a fake one look alike, so the link is never the way.
+After the answer: the deciding words are marked. Reason: You did not start this and it is your phone company, so you go in through the app you already have. A real message and a fake one look alike, so the link is never the way.
 
-#### Check question 19
+#### Check question 20
 
 Penhallow Credit Union is your credit union.
 
 A text message: "Penhallow CU", Text message · 3:12 PM.
 
-> Your card was used for a $310.00 purchase in another state.
 > If this was not you, call 1-555-0188 now.
+> Your card was used for a $310.00 purchase in another state.
 
 **What do you do?**
 - Do what it says — if chosen: The number was real this time. A fake alert would have sent you to a scammer.
@@ -473,56 +446,59 @@ A text message: "Penhallow CU", Text message · 3:12 PM.
 - Leave it — if chosen: A real fraud goes on, and the money keeps leaving.
 
 **How do you check?** (opens only after a certain answer)
-- The number in the text — if chosen: The message gave you that, so the sender decides who answers.
-- The number on the back of my card (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- The number the text gave me — if chosen: The number came with the message, so whoever answers it is on the sender’s side.
+- The number printed on the card (right)
+- The Penhallow number I find by searching on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: It is about your money and you did not start it, so you use a number you already had. The number inside the message is the sender’s, whoever the sender is.
-
-#### Check question 20
-
-You have a dental cleaning booked on Thursday.
-
-An incoming call, the caller's words as a transcript: "Kestrel Dental", Incoming call · 9:40 AM.
-
-> Hi, this is Kestrel Dental.
-> We need to move your cleaning from Thursday at 3 to Friday at 3. Call us back if Friday does not work.
-
-**What do you do?**
-- Do what it says — if chosen: You called back for no reason. It cost a few minutes.
-- Check first, a way I already had — if chosen: You called the number on your appointment card. They confirmed Friday. Not needed.
-- Leave it (right)
-
-**How do you check?** (opens only after a certain answer)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
-- The number that called me — if chosen: The message gave you that, so the sender decides who answers.
-- The number on my appointment card (right)
-
-After the answer: the deciding words are marked. Reason: It tells you a new time and wants nothing risky from you: no money, no code, no details. If Friday suits you, there is nothing to do.
+After the answer: the deciding words are marked. Reason: You did not start it and it is your credit union, so you use a number you already had. The number inside the message is the sender’s, whoever the sender is.
 
 #### Check question 21
 
-You are waiting for a parcel from Thistlewick Outfitters.
+You go to Kestrel Dental. Its number is on your appointment card.
 
-A text message: "Quillfeather Parcel", Text message · 12:30 PM.
+An email: "Kestrel Dental", Email · 9:40 AM.
 
-> Your address is incomplete, so we could not deliver.
+> Subject: **Before your visit**
+>
+> We are missing your insurance details for Thursday.
+> Enter your member number at the link before your visit.
+> (the link in it, drawn as words and never one that can be followed: kestreldental.example/insurance)
+
+**What do you do?**
+- Do what it says — if chosen: This time the link was the office’s. You could not have known that, and a copy would have kept your number.
+- Check first, a way I already had (right)
+- Leave it — if chosen: You fill in a form at the desk on Thursday. If the email was a copy, nobody at the office learns that someone is using its name.
+
+**How do you check?** (opens only after a certain answer)
+- The page the email’s link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
+- The number on my appointment card (right)
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
+
+After the answer: the deciding words are marked. Reason: You did not start it and it is your dentist, so you check on the number on your appointment card, not through the link.
+
+#### Check question 22
+
+You are waiting for a parcel from Thistlewick Outfitters, where you have an account. You have not been in touch with them about it.
+
+A text message: "Thistlewick Outfitters", Text message · 12:30 PM.
+
+> As you asked, we tried to deliver again, but your address is incomplete.
 > Update it here within 24 hours or the parcel goes back.
-> (the link in it, drawn as words and never one that can be followed: quillfeather-address.example/update)
+> (the link in it, drawn as words and never one that can be followed: thistlewick-address.example/update)
 
 **What do you do?**
 - Do what it says — if chosen: The page asked for your card “to confirm you live there”. The card was charged.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, and the parcel arrived on its day.
+- Leave it — if chosen: You are safe, but it uses the name of a shop you deal with. Your account would have told you in a minute.
 
 **How do you check?** (opens only after a certain answer)
-- My Thistlewick order page (right)
-- The link in the text — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- My Thistlewick account, at the address I type myself (right)
+- The page the link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: You expect a parcel, and this wants your details through its own link. The shop’s order page shows where the parcel really is.
+After the answer: the deciding words are marked. Reason: You did not start it and it uses the name of a shop you have an account with, so you check in your account, at the address you type.
 
-#### Check question 22
+#### Check question 23
 
 Fenwick Electric sends your power bill. You pay it in the Fenwick app.
 
@@ -537,38 +513,33 @@ An email: "Fenwick Electric", Email · 7:02 AM.
 **What do you do?**
 - Do what it says — if chosen: You paid $240, and the power was never going to be cut.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, but if you were truly behind, you would not know.
+- Leave it — if chosen: You are safe, but it uses your power company’s name, and the app would show what you really owe.
 
 **How do you check?** (opens only after a certain answer)
-- The link in the email — if chosen: The message gave you that, so the sender decides who answers.
-- The Fenwick app on my phone (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- The page the email’s link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
+- Fenwick’s app (right)
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: A threat with a two-hour clock and a demand to pay by gift card is pressure, not a bill. Your own app shows what you really owe.
+After the answer: the deciding words are marked. Reason: Gift cards and a two-hour clock settle that it is a scam, and it uses your power company’s name, so you check in your own app.
 
-#### Check question 23
+#### Check question 24
 
-You listed a lamp for sale on Bramblecote Market.
+You listed a lamp for sale on Bramblecote Market. A buyer you do not know writes in the app’s chat.
 
 A chat, with its history: "Buyer on Bramblecote Market", Chat about the lamp.
 
-> (Buyer on Bramblecote Market, at the left) I will take it. I already paid $25.
+> (Buyer on Bramblecote Market, at the left) I will take the lamp. I already paid $25.
 > (Buyer on Bramblecote Market, at the left) Tap my link to receive the money.
 > (the link in it, drawn as words and never one that can be followed: bramblecote-pay.example/receive)
 
 **What do you do?**
 - Do what it says — if chosen: The page asked for your card “to receive” the payment. The card was charged.
-- Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, but you cannot tell whether a real buyer paid.
+- Check first, a way I already had — if chosen: There is nobody to check with: you do not know the buyer. Money you are owed shows up in the app by itself.
+- Leave it (right)
 
-**How do you check?** (opens only after a certain answer)
-- The Bramblecote Market app, where payments show up (right)
-- The link in the chat — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+After the answer: the deciding words are marked. Reason: You do not know the buyer, so you leave it. Money you are owed arrives in your own account, never by tapping a buyer’s link.
 
-After the answer: the deciding words are marked. Reason: Money you are owed arrives in your own account, never by tapping a buyer’s link. The marketplace app shows whether anything was paid.
-
-#### Check question 24
+#### Check question 25
 
 Your grandson Eli lives in another city. You have his number saved.
 
@@ -580,16 +551,16 @@ An incoming call, the caller's words as a transcript: "Unknown number", Incoming
 **What do you do?**
 - Do what it says — if chosen: You sent $1,800. Eli was home, safe, and had no idea.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, but if Eli were truly in trouble, he would not reach you.
+- Leave it — if chosen: You kept your money, but it uses your grandson’s name. If Eli were truly in trouble, his own number would tell you.
 
 **How do you check?** (opens only after a certain answer)
 - Eli’s number that I already have (right)
-- The number that called me — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- Get his new number and call that — if chosen: The number came with the message, so whoever answers it is on the sender’s side.
+- Call back the number my phone shows for the call — if chosen: The number on your screen can be changed to show any name and number.
 
-After the answer: the deciding words are marked. Reason: A loved one in trouble, a new number, a secret and a sum of money, all at once, is the plan and not a coincidence. Eli’s own number settles it in a minute.
+After the answer: the deciding words are marked. Reason: It uses the name of someone you know, so you check on the number you already have. A secret and a sum of money at once is the plan, not a coincidence.
 
-#### Check question 25
+#### Check question 26
 
 You watch Lumenfall on your TV and pay each month.
 
@@ -602,16 +573,16 @@ A text message: "Lumenfall", Text message · 9:15 PM.
 **What do you do?**
 - Do what it says — if chosen: The page took your card number and then used it.
 - Check first, a way I already had (right)
-- Leave it — if chosen: You are safe, and the account stays as it was.
+- Leave it — if chosen: You are safe, but it uses the name of a service you pay for, and your account would have shown the truth.
 
 **How do you check?** (opens only after a certain answer)
-- My Lumenfall account on my TV (right)
-- The link in the text — if chosen: The message gave you that, so the sender decides who answers.
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+- The Lumenfall app (right)
+- The page the link opens on my phone — if chosen: The link came with the message, so the sender decides where it goes. A copy of a real page looks the same.
+- The number I find by searching for them on my phone — if chosen: Scammers buy ads and put up pages so that their page or number is the one a search shows. It is not a way you already had.
 
-After the answer: the deciding words are marked. Reason: It wants your payment details through its own link, and you did not start it. Your own account shows the truth.
+After the answer: the deciding words are marked. Reason: You did not start it and it uses the name of a service you pay for, so your own account shows the truth.
 
-#### Check question 26
+#### Check question 27
 
 You have chatted with Ioana on a language app for five weeks. You have never met her or spoken on a live call.
 
@@ -619,20 +590,21 @@ A chat, with its history: "Ioana on the language app", Chat history and today’
 
 > (Ioana on the language app, at the left) Good morning! I miss our talks.
 > (you, at the right) I hope you are safe.
-> (Ioana on the language app, at the left) I am stuck in Lisbon. My wallet was stolen and my bank has blocked my card.
+> (Ioana on the language app, at the left) I am stuck in Lisbon. My wallet was stolen.
 > (Ioana on the language app, at the left) Could you send $1,100 to my friend so I can fly home and finally meet you?
 
 **What do you do?**
 - Do what it says — if chosen: You sent $1,100. Ioana wrote again the next day with a bigger emergency.
-- Check first, a way I already had — if chosen: You have no way to reach Ioana except this chat, so checking through it lets her vouch for herself. Telling someone you know in person is the move.
+- Check first, a way I already had — if chosen: There is nothing of yours to check with: everything you know about Ioana came from Ioana.
 - Leave it (right)
 
-**How do you check?** (opens only after a certain answer)
-- A reply in the chat — if chosen: The message gave you that, so the sender decides who answers.
-- A friend or relative I know in person (right)
-- Reply and check with them — if chosen: You would be checking with the sender, who answers its own question.
+**What else do you do?** (opens only after a certain answer)
+- Tell someone I know in person about it (right)
+- Have them prove who they are first — if chosen: Any proof would come from them, the same as everything else you know about them.
+- Keep chatting, but send nothing — if chosen: Every message gives them another try. The ones who lose nothing are mostly the ones who stop.
+- Report the profile to the site, and leave it at that — if chosen: Reporting helps the site, but it does not tell anyone who can look at it with you. Tell someone you know in person too.
 
-After the answer: the deciding words are marked. Reason: Weeks of kind messages, then an emergency and a request for money, from someone you have never met or seen live. You have no way of your own to check her, so the answer is no, and you tell someone you know in person.
+After the answer: the deciding words are marked. Reason: Someone you know only online is not someone you know, so you leave it, and because she wants money you tell someone you know in person.
 
 ## The result
 

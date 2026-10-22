@@ -288,7 +288,7 @@ export const FAULTS = [
   { check: 'X41', name: 'the second group of Scams without its clock',
     edits: [replace('subjects/scams/l3.lesson.js', 'order: "shuffle", seconds: 20 } }', 'order: "shuffle" } }')] },
   { check: 'X41', name: 'the second group of Scams one message short',
-    edits: [replace('subjects/scams/l3.lesson.js', '"g-credit", "g-call"], order', '"g-credit"], order')] },
+    edits: [replace('subjects/scams/l3.lesson.js', '"g-call", "g-online"], order', '"g-call"], order')] },
   { check: 'X41', name: 'the review of a subject with a clock not saying so',
     edits: [replace('app/lessons/review.js', "${!retest && part.data.meta.timed ?", "${false && part.data.meta.timed ?")] },
   { check: 'X42', name: 'the scam done on purpose in the baseline no longer named as the failure in Scams',

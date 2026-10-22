@@ -1,7 +1,12 @@
 // The pure half of step 8 (lesson standard 3, 3.9, 4, 5, 3 to 9): the six forms of a message laid out, a call that pushes back walked down every
 // path, steps put in order, the countdown's arithmetic, the busy task, the plan and the own ways in, a baseline kept apart from every figure; and what
-// must be true of Scams' pilot and baseline as data: half of every group real, a real message never marked as the failure whatever it contains, a real
-// invoice paid the way you already pay, no scam whose best action is to do what it says, invented names only. No browser: the app's scripts are loaded as
+// must be true of Scams' lessons as data: half of every group real, a real message never marked as the failure whatever it contains, a real
+// invoice paid the way you already pay, no scam whose best action is to do what it says, invented names only; and of lessons 1 to 6: each lesson's
+// questions belong to its own topic, the kind of request has one right answer and its line moves, every answer follows the subject's one rule (only a
+// message that wants something is asked what to do; how to check only when checking is right; what else only after leaving it), the way to check has one way
+// you already had among wrong ones not all from the message,
+// and each call or chat that pushes can be ended at every turn; and of lessons 7 to 12: their calls that push and the real calls you placed, the busy
+// task's banners, the real-world test with its retest and reserve, and the first step after each kind of loss. No browser: the app's scripts are loaded as
 // in tests/load-app.mjs, with the test subjects (tests/fixtures/fixture-subject).
 // Run: node tests/pressure-pure.mjs
 import { loadApp } from './load-app.mjs';
@@ -141,19 +146,20 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
   same(baselineLine(scams, []), 'Of 0 scams, you did what a scam asked on 0. Of 0 real messages, you handled 0 the right way.', 'the one line with nothing answered');
 }
 
-/* ---------- Scams: what must be true of the pilot and the baseline as data ---------- */
+/* ---------- Scams: what must be true of the baseline, the pilot and lessons 1 to 6 as data ---------- */
 {
   const meta = scams.meta, items = scams.items, l0 = scams.lessons.l0, l3 = scams.lessons.l3;
   check(meta.timed === true && meta.danger.slip === 'acted' && meta.danger.risky === 'scam' && meta.danger.real === 'genuine', 'Scams has a clock on its messages and names the failure');
   same(meta.lists.action.map(a => a.id), ['act', 'check', 'leave'], 'the three actions, written once');
   same(meta.lists.slip.map(s => s.id), ['acted', 'their-way', 'habit'], 'the slips');
-  same(Object.keys(scams.lessons).sort(), ['l0', 'l3'], 'only the pilot and the baseline are built');
+  same(Object.keys(scams.lessons).sort(), ['l0', 'l1', 'l10', 'l11', 'l12', 'l2', 'l3', 'l4', 'l5', 'l6', 'l7', 'l8', 'l9'], 'the baseline and all twelve lessons are built');
+  check(meta.complete === true && meta.parts.length === 12, 'the subject is complete, with twelve parts');
   check(l0.role === 'baseline' && l0.part === null && l3.part === 'C', 'lesson 0 is the baseline, lesson 3 is part C');
   const group = refs => refs.flatMap(r => Array.isArray(r) ? r : [r]);
   const sets = l3.flow.filter(s => s.set).map(s => group(s.set.items)), checkIds = l3.check.items, baseIds = l0.check.items;
   const all = [...sets.flat(), ...checkIds, ...baseIds, l3.flow[1].worked];
   check(new Set(all).size === all.length, 'no message is in two places of the pilot or the baseline');
-  same([sets[0].length, sets[1].length, checkIds.length, baseIds.length], [6, 8, 12, 10], 'six in the pairs, eight mixed, twelve in the check, ten in the baseline');
+  same([sets[0].length, sets[1].length, checkIds.length, baseIds.length], [6, 9, 12, 10], 'six in the pairs, nine mixed, twelve in the check, ten in the baseline');
   same(l3.flow.filter(s => s.set).map(s => s.set.seconds || null), [null, 20], 'the pairs are untimed, the mixed group has 20 seconds');
   same([l3.check.seconds, l0.check.seconds, l3.check.feedback, l0.check.feedback], [20, 20, 'at-end', 'at-end'], 'the check and the baseline give 20 seconds and show nothing until the end');
   const real = id => items[id].facets.genuine === 'genuine', facet = id => items[id].facets;
@@ -182,13 +188,31 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
     const text = JSON.stringify([i.reason, act(i).then, i.steps || []]);
     check(!SAYS_SCAM.test(text), `${i.id}: a real message is called a scam or a fake in its feedback`);
   });
-  // the way in: one right way, the two others are the sender's
-  Object.values(items).filter(i => i.asks[1] && i.asks[1].id === 'via').forEach(i => {
-    const via = i.asks[1];
-    check(via.options.length === 3 && via.options.filter(o => o.ok).length === 1 && via.options.filter(o => o.slip === 'their-way').length === 2 && via.when.ask === 'act' && via.when.is.join() === 'check', `${i.id}: how to check has one way you already had and two that are the sender's, and opens only after "check"`);
-    check(new Set(via.options.map(o => o.text)).size === 3, `${i.id}: the ways to check are three different ways`);
+  // the one rule (plan.md, "The rule"): only a message that wants something is an act, check or leave question; "How do you check?" is asked exactly
+  // when checking is right, with one way you already had, at least one way the message gave, and three different ways; "What else do you do?" only
+  // after leaving it, with telling someone you know in person the one right answer
+  const actItems = Object.values(items).filter(i => i.asks[0].id === 'act'), viaOf = i => i.asks.find(a => a.id === 'via'), tellOf = i => i.asks.find(a => a.id === 'tell');
+  actItems.forEach(i => {
+    check(i.facets.request !== 'none', `${i.id}: a message that wants nothing is asked what to do (doing and leaving it are the same)`);
+    check(!!viaOf(i) === (right(i.id) === 'check'), `${i.id}: "How do you check?" is not asked exactly when checking is right`);
+    if (tellOf(i)) check(right(i.id) === 'leave' && i.facets.request === 'money' && tellOf(i).when.is.join() === 'leave' && tellOf(i).options.filter(o => o.ok).map(o => o.id).join() === 'tell', `${i.id}: "What else do you do?" is not asked after leaving it, on money, with telling someone the one right answer`);
   });
-  const rotations = new Set(Object.values(items).filter(i => i.asks[1] && i.asks[1].id === 'via').map(i => i.asks[1].options.findIndex(o => o.ok)));
+  actItems.filter(viaOf).forEach(i => {
+    const via = viaOf(i);
+    check(via.options.length === 3 && via.options.filter(o => o.ok).length === 1 && via.options.some(o => o.slip === 'their-way') && via.when.ask === 'act' && via.when.is.join() === 'check', `${i.id}: how to check has not one way you already had and one the message gave, or opens other than after "check"`);
+    check(new Set(via.options.map(o => o.text)).size === 3, `${i.id}: the ways to check are three different ways`);
+    check(new Set(via.options.map(o => o.id)).size === 3, `${i.id}: two ways to check are the same move`);
+    check(via.options.filter(o => !o.ok).some(o => /\b(my|I)\b/i.test(o.text)), `${i.id}: only the right way to check is worded as the learner's own`);
+  });
+  // no question offers the same option twice, in its words or in its reason
+  Object.values(items).forEach(i => i.asks.filter(a => a.kind === 'choose' && a.options).forEach(a => {
+    const norm = t => t.toLowerCase().replace(/\b(calling|call)\b/g, 'call').replace(/[^a-z ]/g, '');
+    check(new Set(a.options.map(o => norm(o.text))).size === a.options.length, `${i.id}: "${a.prompt}" offers the same option twice`);
+    const thens = a.options.filter(o => o.then).map(o => o.then);
+    check(new Set(thens).size === thens.length, `${i.id}: "${a.prompt}" gives two options the same reason, so they are the same move`);
+  }));
+  check(new Set(actItems.filter(tellOf).map(i => tellOf(i).options.findIndex(o => o.ok))).size >= 3, 'the right "What else do you do?" answer is not in varied places');
+  const rotations = new Set(actItems.filter(viaOf).map(i => viaOf(i).options.findIndex(o => o.ok)));
   check(rotations.size === 3, 'the right way to check is in each of the three places across the messages');
   // the line that decides is a line of the message, and every message has the three consequences
   Object.values(items).filter(i => i.asks[0].id === 'act').forEach(i => {
@@ -199,15 +223,15 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
   // forms: every channel of the facet is met somewhere, and a message's form matches its channel
   const forms = Object.values(items).flatMap(i => i.blocks.filter(b => b.kind === 'message').map(b => [b.form, i.facets.channel, i.id]));
   forms.forEach(([form, channel, id]) => check(form === channel, `${id}: the message is drawn as ${form} and sorted as ${channel}`));
-  same([...new Set(forms.map(f => f[0]))].sort(), ['call', 'chat', 'email', 'popup', 'sms'], 'the pilot and the baseline meet five of the six forms (the banner belongs to the busy task of part D)');
+  same([...new Set(forms.map(f => f[0]))].sort(), ['banner', 'call', 'chat', 'email', 'popup', 'sms'], 'the lessons meet all six forms of a message');
   // the check holds the case with no way of your own, and the pilot a message of each want
-  check(act('s-romance') && right('s-romance') === 'leave' && act('s-romance').slips.act === 'acted', 'the stranger you only know online is left, and doing what he says is the failure');
+  check(act('s-romance') && right('s-romance') === 'leave' && act('s-romance').slips.act === 'acted' && !!tellOf(items['s-romance']) && !!tellOf(items['g-online']), 'the stranger you only know online is left, practised before the check, and doing what she says is the failure');
   same(new Set(Object.values(items).map(i => i.facets.request)).size, 5, 'every kind of request is met');
   // the baseline: a call that pushes back, and what already happened scored on the first step
   check(items['b-call'].asks[0].kind === 'exchange' && items['b-happened'].asks[0].kind === 'order' && items['b-happened'].asks[0].scored === 'first' && items['b-happened'].asks[0].right[0] === 'bank', 'the baseline has the call and the first step after a loss');
   // reserve: three unseen messages for the review of the one topic, held by no lesson
-  const used = new Set(all), reserve = Object.keys(items).filter(id => !used.has(id));
-  same(reserve.sort(), ['r-clinic', 'r-gift', 'r-statement'], 'three messages are held in reserve for the review');
+  const used = new Set(all), reserve = Object.keys(items).filter(id => !used.has(id) && items[id].strand === 'act-check-leave');
+  same(reserve.sort(), ['r-clinic', 'r-gift', 'r-renew'], 'three messages are held in reserve for the review');
   // invented names: no real company, bank, courier or app; links are on .example and numbers are 555
   const DENY = /\b(chase bank|jpmorgan|wells fargo|bank of america|citibank|citi\b|paypal|venmo|zelle|cash app|western union|amazon|google|apple|microsoft|facebook|instagram|netflix|walmart|target\b|costco|ebay|etsy|craigslist|usps|fedex|\bups\b|dhl|norton|mcafee|geek squad|visa\b|mastercard|whatsapp|telegram|geico|comcast|verizon|at&t|t-mobile|spotify|uber|lyft)\b/i;
   const everything = JSON.stringify(Object.values(items)) + JSON.stringify(scams.lessons) + JSON.stringify(meta);
@@ -223,6 +247,76 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
     const result = scoreChoose(scams, i.asks[0], a), want = a === right(i.id) ? 'ok' : (i.asks[0].slips[a] || 'no');
     check(result === want, `${i.id}: ${a} scores ${result}, wanted ${want}`);
   }));
+  // lessons 1 to 6: every question of a lesson belongs to the lesson's own topic, and its practice is half real
+  const lessonIds = lesson => [...lesson.flow.filter(x => x.worked).map(x => x.worked), ...lesson.flow.filter(x => x.set).flatMap(x => group(x.set.items)), ...lesson.check.items];
+  const TOPICS = { l1: 'want', l2: 'own-way', l3: 'act-check-leave', l4: 'device', l5: 'accounts', l6: 'strangers', l7: 'bills', l8: 'about-you', l9: 'looks', l10: 'pushes', l11: 'all', l12: 'first-hour' };
+  Object.entries(TOPICS).forEach(([id, strand]) => lessonIds(scams.lessons[id]).forEach(q => check(items[q].strand === strand, `${q}: a question of lesson ${id.slice(1)} is not in its topic "${strand}"`)));
+  same(scams.lessons.l1.check.pass, [{ right: { min: 9 } }], 'the check of lesson 1 wants 9 of 10 right');
+  same(scams.lessons.l2.check.pass.map(r => r.slip || r.right.min), [7, 'their-way'], 'the check of lesson 2 wants 7 of 8 right and no check through the sender\'s way');
+  // lesson 1: the line that wants something is tapped (or "nothing" is), and the kind of request has one right answer, the one the question is sorted by
+  lessonIds(scams.lessons.l1).forEach(q => {
+    const [kind, line] = items[q].asks;
+    check(line.kind === 'tap' && kind.kind === 'choose' && kind.from === 'want' && kind.right === items[q].facets.request, `${q}: the kind of request is not the one the question is sorted by`);
+    check((line.right === 'none') === (kind.right === 'none') && (line.right === 'none' || (items[q].deciding.length === 1 && line.right[0] === items[q].deciding[0])), `${q}: the tapped line is not the deciding line, or "nothing" does not go with no line`);
+  });
+  // lesson 1: the line that wants something is not always in one place
+  const where = lessonIds(scams.lessons.l1).filter(q => items[q].asks[1].right !== 'none').map(q => { const ls = items[q].blocks.flatMap(b => b.lines || []).map(l => l.id), at = ls.indexOf(items[q].asks[1].right[0]); return at === 0 ? 'first' : at === ls.length - 1 ? 'last' : 'middle'; });
+  check(['first', 'middle', 'last'].every(w => where.filter(x => x === w).length >= 3), `the line that wants something is not first, in the middle and last at least three times each in lesson 1 (${where})`);
+  // lesson 2: one way you already had, at least one the message gave, and in some questions a way that is neither (a number a web search shows)
+  [...lessonIds(scams.lessons.l2)].forEach(q => {
+    const via = items[q].asks[0];
+    check(via.id === 'via' && via.options.length === 3 && via.options.filter(o => o.ok).length === 1 && via.options.some(o => o.slip === 'their-way'), `${q}: how to check has not one way you already had and one the message gave`);
+    check(new Set(via.options.map(o => o.text)).size === 3, `${q}: the ways to check are not three different ways`);
+  });
+  check(new Set(lessonIds(scams.lessons.l2).map(q => items[q].asks[0].options.findIndex(o => o.ok))).size === 3, 'the right way to check is in each of the three places across lesson 2');
+  check(lessonIds(scams.lessons.l2).filter(q => items[q].asks[0].options.some(o => !o.ok && !o.slip)).length >= 4, 'lesson 2 does not offer a wrong way that is neither yours nor the message\'s (so the right one is not always the only one not from the message)');
+  // the calls and chats that push: pressure at every turn, and the right end open at every turn
+  const allExchanges = ['l4', 'l5', 'l6'].flatMap(id => lessonIds(scams.lessons[id]).filter(q => items[q].asks[0].kind === 'exchange'));
+  const exchanges = allExchanges.filter(q => items[q].facets.genuine === 'scam');
+  same(exchanges.length, 6, 'lessons 4 to 6 each hold two calls or chats that push');
+  // a real contact where going along is right, so ending every call is not the answer by habit
+  const realExchanges = allExchanges.filter(q => items[q].facets.genuine === 'genuine');
+  check(realExchanges.length >= 2 && realExchanges.every(q => { const ex = items[q].asks[0]; return Object.values(ex.turns).flatMap(t => t.options).some(o => o.end && ex.ends[o.end].ok) && Object.values(ex.turns).flatMap(t => t.options).filter(o => o.end && ex.ends[o.end].ok).every(o => !/hang up|stop replying|send nothing/i.test(o.text)); }), 'lessons 4 to 6 do not hold real calls or chats where going along, not ending it, is right');
+  exchanges.forEach(q => {
+    const ex = items[q].asks[0], turns = Object.values(ex.turns);
+    check(items[q].facets.genuine === 'scam' && turns.every(t => t.push && t.options.some(o => o.end && ex.ends[o.end].ok && !ex.ends[o.end].slip)), `${q}: a turn does not push, or ending it right is not there at every turn`);
+    check(turns.every(t => t.options.some(o => o.end && !ex.ends[o.end].ok && ex.ends[o.end].slip === 'acted')), `${q}: giving in is not there at every turn, named as the failure`);
+    check(Object.values(ex.turns).flatMap(t => t.options).filter(o => 'goto' in o).every(o => ex.turns[o.goto].push), `${q}: holding off does not meet more pressure`);
+  });
+  ['l4', 'l5', 'l6'].forEach(id => {
+    const l = scams.lessons[id], inSets = l.flow.filter(x => x.set).flatMap(x => group(x.set.items)).filter(q => items[q].asks[0].kind === 'exchange' && items[q].facets.genuine === 'scam');
+    check(inSets.length === 1 && l.check.items.filter(q => items[q].asks[0].kind === 'exchange').length === 1, `lesson ${id.slice(1)}: one call or chat that pushes in its practice and one in its check`);
+    same(l.check.pass, [{ slip: 'acted', max: 0 }, { slip: 'their-way', max: 0 }, { where: { genuine: 'genuine' }, wrong: { max: 1 } }], `lesson ${id.slice(1)}: the check wants no scam acted on, no check through the sender's way and at most one real message wrong`);
+  });
+  // lessons 7 to 11: every call or chat that pushes can be ended right at every turn and given in to at every turn, and holding off meets more pressure;
+  // the real calls you placed (lessons 10 and 11) are won by staying with them; each lesson's check has the real-world bar
+  const laterEx = ['l7', 'l8', 'l9', 'l10', 'l11'].flatMap(id => lessonIds(scams.lessons[id])).filter(q => items[q].asks[0].kind === 'exchange');
+  laterEx.forEach(q => {
+    const ex = items[q].asks[0], turns = Object.values(ex.turns), opts = turns.flatMap(t => t.options);
+    check(turns.every(t => t.push) && opts.filter(o => 'goto' in o).every(o => ex.turns[o.goto].push), `${q}: a turn does not push, or holding off does not meet more pressure`);
+    if (items[q].facets.genuine === 'scam') check(turns.every(t => t.options.some(o => o.end && ex.ends[o.end].ok) && t.options.some(o => o.end && ex.ends[o.end].slip === 'acted')), `${q}: ending it right, or giving in named as the failure, is not there at every turn`);
+    else check(turns.every(t => t.options.some(o => o.end && ex.ends[o.end].ok && !/hang up|stop replying|send nothing/i.test(o.text))) && !JSON.stringify(ex).includes('"acted"'), `${q}: a real call you placed is not won by staying with it, or carries the failure`);
+  });
+  check(laterEx.filter(q => items[q].facets.genuine === 'genuine').length >= 2, 'lessons 10 and 11 hold real calls where staying with it, not hanging up, is right');
+  ['l7', 'l8', 'l9', 'l10', 'l11'].forEach(id => same(scams.lessons[id].check.pass, [{ slip: 'acted', max: 0 }, { slip: 'their-way', max: 0 }, { where: { genuine: 'genuine' }, wrong: { max: 1 } }], `lesson ${id.slice(1)}: the check has the real-world bar`));
+  // lesson 10: ten banners over the busy task, half real, each opening on its banner
+  const busySet = scams.lessons.l10.flow.find(x => x.set && x.set.over === 'busy').set;
+  check(busySet.items.length === 10 && busySet.items.filter(real).length === 5 && busySet.items.every(q => items[q].blocks[0].form === 'banner'), 'lesson 10 does not run ten banners, half real, over the busy task');
+  // lesson 11: the real-world test, fourteen new questions, two of them calls, with its four-week retest and a reserve for every question of it
+  const l11 = scams.lessons.l11, l11used = new Set(Object.values(scams.lessons).flatMap(lessonIds));
+  check(l11.check.retest === 28 && l11.check.items.length === 14 && l11.check.items.filter(q => items[q].asks[0].kind === 'exchange').length === 2 && l11.flow.some(x => x.own === 'plan') && l11.flow.some(x => x.set && x.set.plan), 'lesson 11 is not the plan, then the real-world test with two calls and a retest at four weeks');
+  const reserve11 = Object.values(items).filter(i => i.strand === 'all' && !l11used.has(i.id));
+  check(reserve11.length >= 17 && l11.check.items.every(q => reserve11.filter(r => JSON.stringify(r.facets) === JSON.stringify(items[q].facets)).length >= l11.check.items.filter(o => JSON.stringify(items[o].facets) === JSON.stringify(items[q].facets)).length), 'lesson 11\'s reserve does not hold three returns and a new question like each of the check\'s fourteen');
+  // lesson 12: the first step is the one for the kind of loss, the next two are two of four, and the check wants every first step right
+  const FIRST = { money: 'mover', login: 'password', device: 'scan', details: 'idtheft' };
+  lessonIds(scams.lessons.l12).concat(Object.keys(items).filter(id => id.startsWith('l12r-'))).forEach(q => {
+    const [first, next] = items[q].asks;
+    check(first.from === 'first' && first.right === FIRST[items[q].facets.request] && first.only.length === 5, `${q}: the first step is not the one for its kind of loss`);
+    check(next.many === true && next.options.length === 4 && next.options.filter(o => o.ok).length === 2, `${q}: the next steps are not two of four`);
+    check(items[q].facets.genuine === 'scam' || !JSON.stringify(items[q].asks).includes('"acted"'), `${q}: a real loss carries the failure`);
+  });
+  same(scams.lessons.l12.check.pass, [{ ask: 'first', wrong: { max: 0 }, of: 'the first step' }], 'lesson 12: the check wants every first step right');
+  check(new Set(lessonIds(scams.lessons.l12).map(q => items[q].asks[0].only.indexOf(items[q].asks[0].right))).size >= 3, 'lesson 12: the right first step is not in different places');
   // the asks the engine knows
   check(ASK_KINDS.includes('exchange') && ASK_KINDS.includes('order'), 'the engine builds the call and the order');
 }

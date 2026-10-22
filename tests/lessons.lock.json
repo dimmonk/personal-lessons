@@ -26,8 +26,8 @@
       "fp": "sha256:f4a6a1d67d13154989529b10b71a72649949687e01269cf1fa08d67121591a65"
     },
     "scams": {
-      "rev": 7,
-      "fp": "sha256:89ee6cf19eada28315ab8993423c7b938d50d487c3fa0c5041e71d72ebba41b8"
+      "rev": 10,
+      "fp": "sha256:6ec8185fea6d6f5d7a36ddac968487deee9edf45e561ba6cc22020d77a1a86a0"
     },
     "singing": {
       "rev": 4,
@@ -372,12 +372,56 @@
       "fp": "sha256:c0da5b40cae75f0162ca4d8ba92c6dffe28cfa6dc391c26108dd072a55b517dc"
     },
     "scams/l0": {
+      "rev": 4,
+      "fp": "sha256:62657702a78f5ad39c2e9c71a8041a86732bfcd3b32c3a73f21075acd894122f"
+    },
+    "scams/l1": {
+      "rev": 4,
+      "fp": "sha256:36323374b182f2fde2d90a7010fd1ef956f6b9e2bd85c87ca0415aa5dd44b7ca"
+    },
+    "scams/l10": {
       "rev": 1,
-      "fp": "sha256:1b70adbbee86c00174186acb8f74b7cce3084035f74cc373677da6a082cd23f0"
+      "fp": "sha256:a47afa624754d7b3d321f6d18b0ad746a845fe8cc4d544af87f5cb31dcae576f"
+    },
+    "scams/l11": {
+      "rev": 1,
+      "fp": "sha256:871b59e044287f89c9f9095f761d0d8422b0c930beff28661b2e7cdff60fe23c"
+    },
+    "scams/l12": {
+      "rev": 1,
+      "fp": "sha256:57bcc28c920f476d8d8e666980ae0b0a43921b9ff3ddbc11c0b4ed4b8985147c"
+    },
+    "scams/l2": {
+      "rev": 4,
+      "fp": "sha256:5f48f8dd4ab5aac35e73d8512be36a0eeb50a08cfe249c5f64827f5ce9651796"
     },
     "scams/l3": {
+      "rev": 4,
+      "fp": "sha256:9522358adca522f84625827c150e0c9e2e4a8310a48723cc584c1f2af5b19a53"
+    },
+    "scams/l4": {
+      "rev": 4,
+      "fp": "sha256:c8ec7ba6bb316340eacbb8e641967a9db978b81b1e8bf1f0115cb74cff2a7a08"
+    },
+    "scams/l5": {
+      "rev": 4,
+      "fp": "sha256:57c3345cd9853e86719b88c1a577a27ea6866e1e3937e7e04fc32f8b476c9125"
+    },
+    "scams/l6": {
+      "rev": 4,
+      "fp": "sha256:2567daf0fc1c93ce4bef12761902f82232eebcd83a492e1814e7ec3e6ad8c853"
+    },
+    "scams/l7": {
       "rev": 1,
-      "fp": "sha256:89b8016ef43c3002eee51c4e7373bdf7f19a4ac06da797514f9c2cec46593bf4"
+      "fp": "sha256:0562f67669822725eb2fae24b7c025a5666b1b9e2c0ec8d222460d43e7530673"
+    },
+    "scams/l8": {
+      "rev": 1,
+      "fp": "sha256:354922d01f056895d569f68fc96616cd9922c07aa5062d235034073d52d91a89"
+    },
+    "scams/l9": {
+      "rev": 1,
+      "fp": "sha256:e3e7739b62f7b59d8a8942d60ce7fe31ff9b26c8ab02a17d64dbf9913cfc089a"
     },
     "singing/l2": {
       "rev": 1,
