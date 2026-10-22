@@ -13,10 +13,14 @@ const idText = obj({ id: str, text: str });
 const MIX_ENTRY = either(obj({ facet: str, value: str }, { min: num, max: num }), obj({ facet: str, equal: bool }));
 // A field of a private form (5). A choice reads its words from one of the subject's lists. `warn` is the plausible range: a number over
 // `over` or under `under` is kept and the learner is told why it looks wrong.
+// `for` keeps an account field to accounts of those kinds (ids of the list the field `type` reads).
 const FORM_FIELD = obj({ id: str, label: str, type: en('choose', 'number', 'text', 'date') },
-  { list: str, unit: str, hint: str, optional: bool, warn: obj({ text: text }, { over: num, under: num }) });
+  { list: str, unit: str, hint: str, optional: bool, for: arr(str), warn: obj({ text: text }, { over: num, under: num }) });
+// A group of the sheet beside its accounts (own.js): a record of fields, or with `many` a list of rows; `optional` lets it be saved blank.
+const FORM_GROUP = obj({ id: str, label: str, fields: arr(FORM_FIELD) }, { how: text, many: bool, optional: bool, together: arr(arr(str)) });
+// `limits` are the thresholds the subject's lessons teach, which the app's arithmetic on the sheet compares with (own-work.js)
 // `words`: a plan form's own wording around the plan (its title, how to write it, the line once saved, the line before practice and the review)
-const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }), words: obj({ title: text, how: text, saved: text, before: text }) });
+const FORM = obj({ into: en(...SLOTS), fields: arr(FORM_FIELD) }, { rows: obj({ id: str, label: str, fields: arr(FORM_FIELD) }), groups: arr(FORM_GROUP), limits: map(num), words: obj({ title: text, how: text, saved: text, before: text }) });
 export const SUBJECT = obj(
   { id: str, name: str, field: str, rev: int, standard: int, history, endResult: text, parts: arr(idTitle()),
     lists: map(arr(idText, { empty: true })), facets: map(obj({ name: str, values: arr(idText) }, { compare: bool })), mix: arr(MIX_ENTRY, { empty: true }),
@@ -142,7 +146,7 @@ const DRAW = obj({ draw: either(obj({ strands: arr(str), n: int }), obj({ gen: s
 const CHECK = obj({ items: either(arr(REF), DRAW), feedback: en('at-end', 'after-each'), pass: arr(PASS) },
   { spoken: bool, recall: bool, seconds: en(15, 20), retest: int, support: SUPPORT, order: en('listed', 'shuffle') });
 // a step is one of four shapes, told apart by the field it holds
-export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str }) };
+export const STEPS = { show: obj({ title: str, show: arr(any) }), worked: obj({ worked: str }), set: obj({ set: SET }), own: obj({ own: str }, { model: str, work: str, repeat: str }) };
 export const stepKind = step => Object.keys(STEPS).find(k => step && typeof step === 'object' && k in step);
 export const LESSON = obj(
   { id: str, part: nullable(str), title: str, rev: int, status: en(...STATUSES), history, why: text, flow: arr(any), check: CHECK },

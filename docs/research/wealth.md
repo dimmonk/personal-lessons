@@ -322,13 +322,293 @@ a **judgment** (change or leave, flag or clear), and an **action** done once and
   US document (D6, R8). **Return:** spaced return with a later return at weeks to months (P24, P26 requires 2, R4); for this
   subject the yearly check is the natural return.
 
+## L. US figures and rules for 2026, looked up for the lessons (2026-10-22)
+
+Each is a dated reference in the subject record (`refs`) where a lesson shows it; the lessons never ask them from memory.
+
+**W37. 2026 contribution limits.** IRS news release IR-2025-111 (13 November 2025), "401(k) limit increases to $24,500 for 2026,
+IRA limit increases to $7,500". *Read: full page text.* Strength: strong (the rule). The 401(k) employee limit "is increased to
+$24,500, up from $23,500 for 2025"; the IRA limit "is increased to $7,500 from $7,000"; catch-up at 50 and over $8,000 (401(k))
+and $1,100 (IRA). IRS "Retirement topics: 401(k) and profit-sharing plan contribution limits" (*read: full page text*): employer
+matching contributions do not count toward the employee's own limit. IRS Publication 969 (*read: full text*): "For 2026, if you
+have self-only HDHP coverage, you can contribute up to $4,400"; family coverage $8,750.
+*Use:* lesson 4's order of saving names the rungs' yearly limits as dated references.
+
+**W38. Money in a 401(k) is taxed when it comes out; a Roth's qualified withdrawals are not taxed.** IRS "401(k) plan overview":
+"Elective deferrals to the plan and investment gains are not subject to federal income taxes until distributed from the plan";
+"Qualified distributions from a Roth account aren't included in income." *Read: search-returned page text (irs.gov).* Strength:
+strong (the rule). *Use:* lesson 5's placement: interest and trades inside a 401(k) or IRA are not taxed each year; in a brokerage
+account they are (W25).
+
+**W39. A gain held over a year is long-term and taxed at a lower rate; a short-term gain is taxed as ordinary income.** IRS Tax
+Topic 409, "Capital gains and losses" (page updated 24 September 2026). *Read: full page text.* Strength: strong (the rule).
+"Generally, if you hold the asset for more than one year before you dispose of it, your capital gain or loss is long-term." "Net
+short-term capital gains are subject to taxation as ordinary income at graduated tax rates." The long-term rate is 0%, 15% or 20%
+by taxable income ("no higher than 15%" for most individuals). The $3,000 limit on a net loss against other income is the same as W26.
+*Use:* lesson 5's sell-or-wait: no sale, no tax that year; a sale after a year is taxed at the lower rate. The rates in a lesson's
+cases are given on the case's own papers, not taught as numbers to remember.
+
+**W40. Thresholds this subject uses that no source fixes (judgement calls, said so in the lessons):** a buffer of three months of
+spending as the floor and six as the point past which more cash is idle (W19); bills due in five years or less kept out of
+stocks (W18: money needed soon has no capacity for a fall; the five years is a convention); 10% of everything in one company
+(W14b); a 5-point band (W15).
+
+## M. Added after the first reviews of lessons 1-6 (2026-10-22)
+
+Both reviews of lessons 1 to 6 found moves the lessons asked for without teaching, and facts stated more widely than a source
+allows. Each fix below rests on a passage read on 2026-10-22.
+
+**W41. FDIC: per depositor, per bank, per ownership category; joint deposits counted per owner; more cover at another bank or
+in another category; investments not covered.** FDIC, "Understanding Deposit Insurance". *Read: full page text (fetched).*
+Strength: strong (the agency's own words). "FDIC deposit insurance covers $250,000 per depositor, per FDIC-insured bank, for each
+account ownership category." The categories listed: "Single Accounts", "Joint Accounts", "Certain Retirement Accounts", "Trust
+Accounts", "Employee Benefit Plan Accounts", "Corporation / Partnership / Unincorporated Association Accounts", "Government
+Accounts". Joint accounts: you are "insured separately for your ownership interest up to $250,000 for all of your joint ownership
+account deposits". Across categories "you may qualify for more than $250,000"; across banks, "up to $250,000 for your single
+account deposits at each FDIC-insured bank". Not covered: "Stock investments", "Bond investments", "Mutual funds"; the insurance
+"does not cover non-deposit investment products, even those offered by FDIC-insured banks".
+*Use:* lesson 1 teaches the two ways to put money over the limit back under cover (another bank, or another ownership category)
+and gives a joint account and a second bank as look-alikes that are covered; the sheet asks for the bank's name and whose name a
+bank account is in, and the app adds bank accounts up by bank and by kind of ownership (one name; joint with one other person,
+counted as two owners' shares). Other categories (trusts, a business) are left to the bank: the app does not count them.
+Where the papers say it: 12 CFR 328.6 (eCFR; *read: search-returned text*) requires an insured bank's advertising to carry the
+official statement "Member of the Federal Deposit Insurance Corporation" or a short form such as "Member FDIC" or "FDIC-Insured".
+Strength: strong. The sample bank papers carry "Member FDIC"; the sample fund papers carry "Not FDIC insured" (W41's list).
+
+**W42. A 401(k)'s money is held in a trust apart from the employer; its funds are not deposits.** IRS, "Retirement topics -
+Bankruptcy of employer" (irs.gov). *Read: search-returned page text, 2026-10-22; the DOL FAQ first cited now returns 404.* Strength:
+strong (the regulator). The law "protects participants' retirement plan assets from the bankrupt employer's creditors by requiring the
+assets be kept separate from the employer's assets and held in trust or invested in insurance". A plan's brokerage window can sit
+under SIPC, so the lesson says a 401(k) "usually" has neither. With W41's list of
+what FDIC does not cover (mutual funds), the 401(k) on lesson 1's list is marked "neither FDIC nor SIPC": its money is safe from
+the employer failing because it is held in trust, and a fall in its funds is the owner's.
+
+**W43. Cash is the safest and lowest-returning kind of holding; its risk is inflation.** SEC, Office of Investor Education,
+"Beginners' Guide to Asset Allocation, Diversification, and Rebalancing". *Read: page text via fetch.* Strength: strong as
+regulator guidance. Cash and cash equivalents "are the safest investments, but offer the lowest return of the three major asset
+categories"; "The principal concern for investors investing in cash equivalents is inflation risk"; "Stocks have historically had
+the greatest risk and highest returns among the three major asset categories." CFPB, "An essential guide to building an emergency
+fund" (*read: page text via fetch*): keep it "safe, accessible", a bank or credit union account being "generally considered one of
+the safest places", in a "dedicated account"; "even a small amount can provide some financial security".
+*Use:* replaces the earlier "cash past six months loses to rising prices every year", which no source says: the lesson says cash
+past the buffer and the bills usually earns less than stocks over the long run, and inflation is its risk. Cash for the buffer
+is what sits in a bank or credit union account (checking, savings, a money market account), not stocks or a retirement account.
+Counting a yearly bill as a twelfth of it in "a usual month" is arithmetic, not a sourced rule (**judgement call** on the form).
+
+**W44. The words on real 401(k) papers: "expense ratio", "Total Annual Operating Expenses", administrative fees on the quarterly
+statement.** US Department of Labor, EBSA, *A Look at 401(k) Plan Fees* (2019 edition). *Read: full text (PDF).* Strength:
+strong. Investment fees "generally are assessed as a percentage of assets invested"; the yearly comparative chart gives "fee and
+expense information on the costs of running each investment option (expense ratio)"; its model chart "shows the Total Annual
+Operating Expenses", "expenses that reduce the rate of return". Plan administration fees cover "plan recordkeeping, accounting,
+legal, and trustee services" and, when charged to participants, are "allocated among participants' individual accounts in
+proportion to each account balance ... or passed through as a flat fee"; "You also will receive a quarterly statement with
+information on fees and expenses for administrative or individual services actually paid from your individual account."
+*Use:* lesson 3's fee sheet heads its percent column "Expense ratio" and names the plan's own fee an administrative fee, and the
+rule says where each is printed.
+
+**W45. Matches in steps, vesting, and the true-up.** IRS, "Issue Snapshot - Vesting schedules for matching contributions" and
+"Operating a 401(k) plan" (*read: search-returned page text*): a safe harbor plan's basic match is "100% of the first 3% of
+compensation deferred plus 50% of the next 2%"; in words, "dollar-for-dollar, up to 3 percent ... and 50 cents on the dollar for
+the employee's contribution that exceeds 3 percent, but not 5 percent". IRS, "Retirement topics - Vesting" (*read: page text via
+fetch*): employee contributions "are always 100% vested"; employer contributions may vest on a schedule such as "100% vesting
+after 3 years of service" or 20% a year to year 6; "Amounts that are not vested may be forfeited by employees when they are paid
+their account balance." True-up: many plans match each paycheck, so a learner who reaches the yearly limit early may lose part of
+the match unless the plan makes a year-end "true-up" (SHRM, "Consider 401(k) True-Up Payments"; Paylocity glossary; *read: search
+summaries only*; strength limited). Strength of the IRS passages: strong.
+*Use:* lesson 4 teaches a match in two steps (the rate that takes it all is where the last step ends), vesting (it changes when
+the employer's money is yours, not the rate to put in), and the own step says to check vesting and a true-up in the plan's summary.
+
+**W46. The order of saving: versions differ on the first rung.** Search summaries (2026-10-22) of the r/Bogleheads getting-started
+text, a Bogleheads chapter talk (Bogle Center, 2021) and practitioner pages: all put the full match before high-interest debt;
+some put a full emergency fund first, others a small starter buffer, then the match, high-interest debt, then the full 3-6 months.
+*Read: search summaries only; the wiki refused.* Strength: limited. The lesson teaches the starter-buffer version (W19 found that
+even about a month of savings goes with much less hardship), says the order is a common one and not a law, and marks the cases
+so one order follows from it. **Judgement call:** an IRA before more 401(k) money (an IRA may hold any fund the owner picks, so
+its costs can be lower than the plan's list); the HSA before both rests on Publication 969's three tax breaks (W24).
+
+**W47. What is taxed each year in a brokerage account without a sale.** IRS Publication 550 (*read: full text via curl*):
+"Taxable interest includes interest you receive from bank accounts, loans you make to others, and other sources." "Capital gain
+distributions (capital gain dividends) are paid to you or credited to your account by mutual funds ... They will be shown in Form
+1099-DIV, box 2a"; "Report capital gain distributions as long-term capital gains, regardless of how long you owned your shares";
+"Ordinary dividends are the most common type of distribution from a corporation or a mutual fund." IRS Tax Topic 409 (*read*):
+the holding period counts "from the day after the day you acquired the asset". Strength: strong.
+*Use:* lesson 5 says your own gain on a fund is taxed when you sell it, while a fund's payouts (interest, dividends, the gains it
+pays out) are taxed each year in a brokerage account; inside a 401(k) or IRA neither is taxed until money comes out (W38), so a
+switch there is not taxed.
+
+**W48. A wash sale, its name on the tax form, and where the loss goes.** IRS Publication 550 (*read*): under the wash sale rules
+"add the disallowed loss to the cost of the new stock or securities". IRS, Instructions for Form 1099-B (*read: full text via
+curl*): the broker reports "the loss disallowed due to a wash sale (box 1g)". Strength: strong.
+*Use:* lesson 5 names the rule ("a wash sale"), says the loss is not lost for good (it is added to the new shares' cost and counts
+when they are sold), and names the line on the broker's form.
+
+**W49. Employer stock in a 401(k) has a tax rule of its own when it leaves the plan.** IRS Publication 575 (*read: full text via
+curl*): "If you receive a distribution of employer securities from a qualified retirement plan, you may be able to defer the tax on
+the net unrealized appreciation (NUA) in the securities." Strength: strong for the rule's existence.
+*Use:* lesson 6 says to sell first where a sale is not taxed (inside the 401(k), W38), that shares in a brokerage account may owe
+tax on the gain (lesson 5), and that employer stock that has grown a lot in a 401(k) is worth one question to a tax preparer before
+it is sold there; the lesson does not teach the rule itself.
+
+## N. Looked up for lessons 7 to 12 (2026-10-22)
+
+Every cross-border and estate fact the lessons use is quoted here from the agency's own page or the statute; where only a summary
+could be read, the "Read" line says so. A threshold no source fixes is marked **judgement call**.
+
+**W50. The FBAR is FinCEN Form 114, filed online with FinCEN, not with the tax return; due April 15, extended automatically to
+October 15.** IRS, "Report of Foreign Bank and Financial Accounts (FBAR)" (*read: page text via fetch*): you report foreign accounts
+"by filing an FBAR on FinCEN Form 114"; it is filed through FinCEN's BSA E-Filing System, not with the federal tax return; "You're
+allowed an automatic extension to October 15 if you fail to meet the FBAR annual due date of April 15"; a U.S. person includes "a
+citizen, resident". FinCEN, "Report Foreign Bank and Financial Accounts" (*read: page text via fetch*): filing is required when "the
+aggregate value of the foreign financial accounts exceeds $10,000 at any time during the calendar year", and individuals "may
+electronically file their FBAR through the BSA E-Filing System." Strength: strong (the rule). The FinCEN instructions sum each
+account's maximum value for the year (research review of lessons 1-6 confirmed the app's sum); *read: as that review states*.
+*Use:* lesson 9 sums each account's highest balance, not its year-end balance, and names where the report goes.
+
+**W51. Form 8938 goes with the tax return; an RRSP still counts toward both reports.** IRS, "Comparison of Form 8938 and FBAR
+Requirements" (W31, thresholds for a person living in the US). Rev. Proc. 2014-55 (*read: text via fetch*), section 5.01: the
+procedure "does not, however, affect any reporting obligations that a beneficiary or annuitant" of a Canadian retirement plan may
+have, naming the FBAR (31 U.S.C. 5314); section 7: the taxpayer "may need to report his interest in the RRSP under section 6038D"
+(Form 8938). Section 4.02: an eligible individual "will be treated as having made the election" to defer US tax on the plan's
+undistributed income. Strength: strong. *Use:* the RRSP raises no tax flag of its own (W33) and is still added into the FBAR and
+Form 8938 totals.
+
+**W52. A TFSA kept after leaving Canada: not taxed in Canada, possibly taxed where you live; money added while non-resident is
+taxed 1% a month.** Canada Revenue Agency, "How non-residency affects your TFSA" (*read: page text via fetch*): "If you become a
+non-resident, you are allowed to keep your existing TFSA"; "Any income you earn in your account, such as interest, dividends, or
+capital gains will not be taxed in Canada"; "However, income you earn through your TFSA may be taxed in your country of residence";
+"Only residents of Canada may contribute to their TFSA tax-free"; a non-resident contribution "is subject to a 1% tax for each month
+the contribution remains in the account." CRA, "Tax on non-resident contributions" (*read*): "Non-resident contributions are taxed in
+Canada at a rate of 1% per month". Strength: strong for Canada's side. The US side (no treaty status, possible foreign-trust forms) is
+W33's practitioner summaries, limited; the lesson says only that the US "may tax its income every year" and sends it to a preparer.
+
+**W53. Money taken out of an RRSP while living outside Canada has Canadian tax withheld.** CRA, "Tax rates on withdrawals" (*read:
+page text via fetch*): "For non-residents of Canada, withholding is 25% unless reduced by a treaty." Strength: strong. *Use:* a line
+in lesson 9 that a withdrawal is a question for the cross-border preparer; no rate is taught.
+
+**W54. Money in a 401(k) is shielded by federal law from most claims against its owner.** 29 U.S.C. 1056(d)(1) (ERISA; *read:
+statute text, Cornell LII*): "Each pension plan shall provide that benefits provided under the plan may not be assigned or
+alienated." *Patterson v. Shumate*, 504 U.S. 753 (1992), syllabus (*read, Cornell LII*): the anti-alienation provision "in a
+qualified pension plan constitutes a restriction on transfer enforceable under ... applicable nonbankruptcy law", so the plan
+interest stays out of the bankruptcy estate. Strength: strong; the statute has exceptions (a divorce order, a federal tax levy), so
+the lesson says "most claims". An IRA's protection outside bankruptcy depends on state law (not read here: **judgement call** to
+count it as reachable). *Use:* lesson 8 and the `cover` work leave a 401(k) out of what a claim could reach, and say so; the
+review of lessons 1-6 noted the earlier work counted it.
+
+**W55. An LLC keeps a claim against the business away from the owner's own assets; a sole owner without one is liable personally.**
+US Small Business Administration, "Choose a business structure" (*read: page text via fetch*): a sole proprietorship's "business
+assets and liabilities are not separate from your personal assets and liabilities" and "You can be held personally liable for the
+debts and obligations of the business"; "LLCs protect you from personal liability in most instances", and personal assets "won't
+be at risk in case your LLC faces bankruptcy or lawsuits." Strength: strong as agency guidance. Using an LLC for one rental property
+is the same reasoning applied to a rental business (**judgement call**, with W20's "create a corporation and transfer such risks to
+it"). An LLC does nothing for a claim from your own driving or your own home: the SBA passage is about the business's debts and
+suits (the lesson's look-alike).
+
+**W56. A loan against your stocks can force a sale at the bottom.** FINRA Rule 2264, Margin Disclosure Statement (*read: rule text as
+returned by search, finra.org*): "The firm can sell your securities or other assets without contacting you"; "You are not entitled
+to choose which securities or other assets in your account(s) are liquidated or sold to meet a margin call." Strength: strong (the
+statement every firm must give). FTC, "Cosigning a Loan FAQs" (*read: page text via fetch*): "You may have to pay up to the full amount
+of the debt if the borrower does not pay." *Use:* lesson 8's losses no insurer carries (W22: nothing covers a fall in prices), which
+the matrix answers by avoiding or taking less.
+
+**W57. The spending rate for 2026: 3.9%.** Morningstar, *The State of Retirement Income* (December 2025) and "What's a Safe
+Retirement Withdrawal Rate for 2026?" (Benz and others). *Read: search summaries and secondary reports (BenefitsPro, 4 December 2025,
+"Safe retirement withdrawal rate adjusted to 3.9% for new retirees"); Morningstar's own pages refused (403).* Reported: 3.9% is "the
+highest starting withdrawal rate ... for steady, inflation-adjusted spending over 30 years, with a 90% chance" of the money lasting;
+3.7% for 2025 (W28, read in full), 4.0% for 2023; flexible spending allows more. Strength: moderate (the 2025 study was read in
+full and the method is the same; the 2026 number only through summaries). *Use:* the subject's `ref` safeRate, dated, is the line
+lesson 11 and the `rate` work compare with (replacing the sheet's fixed 4%, which the first review found above the study's figure).
+Each later year's draw is the first year's raised by the rise in prices (Bengen, W28: "followed by inflation-adjusted withdrawals").
+
+**W58. A beneficiary page is the plan's own; an estate named as beneficiary is not a person.** IRS, "Retirement topics -
+Beneficiary" (*read: page text via fetch*): "The owner must designate the beneficiary under procedures established by the plan." IRS
+Publication 590-B (*read: full text via curl*): rules differ when "The beneficiary isn't an individual (for example, the beneficiary
+is the owner's estate)", and then "the 5-year rule" can apply. With W29 (*Egelhoff*, *Kennedy*: the plan pays the person the plan
+documents name, even against a divorce decree). Strength: strong. *Use:* lesson 10 checks each page, not the will; "my estate" or no
+one named sends the account through the will instead of straight to a person (the plan's own rule decides who gets an unnamed
+account, said so); a backup (contingent) named is practice the IRS passage does not require (**judgement call**, common practice).
+
+**W59. A durable power of attorney names who can act on your money if you cannot.** FINRA, "Financial Planning for Diminished
+Capacity" (*read: page text via fetch*): "A financial power of attorney gives someone the legal authority to make financial decisions
+for you if you cannot." "The document is called 'durable' because it remains in effect even if you become incapacitated." CFPB,
+*Considering a financial caregiver* (2021) (*read: search summary of the guide*): "A court can name a guardian or conservator to
+manage your money and property if the court decides that you can't manage your money by yourself—and you don't have a power of
+attorney in place." Strength: strong for the FINRA passage, moderate for the CFPB one as read.
+
+**W60. Gifts and a spouse who is not a citizen.** IRS, "Frequently asked questions on gift taxes" (*read: page text via fetch*): the
+annual exclusion is $19,000 per recipient for 2025 and 2026, and "The donor is generally responsible for paying the gift tax." 26
+U.S.C. 2056(d)(1) (*read: statute text, Cornell LII*): "if the surviving spouse of the decedent is not a citizen of the United
+States— (A) no deduction shall be allowed under subsection (a)", unless (d)(2)(A) the property passes "in a qualified domestic
+trust". With W30 ($15,000,000 filing threshold for 2026). Strength: strong. *Use:* lesson 10's estate check: far under the line,
+leave it (gifting to cut estate tax does nothing there); near it, and above all with a spouse who is not a US citizen, an estate
+lawyer who works on both sides of the border.
+
+**W61. Decision rules written down before the items of lessons 7 to 12** (each item's right answer checked against them in
+`tests/own-later-pure.mjs`):
+- L7: stock share = stocks ÷ (stocks + bonds + cash held in the invested accounts), bank accounts left out (they are the buffer, L2);
+  5 points or more off the chosen share: move the drift's dollars, inside a 401(k) or IRA (W15, W38); under 5: leave; a target-date
+  fund rebalances itself; news is never the trigger (W16, W17).
+- L8: could you pay it from savings without real harm: keep it; if not, can someone carry it for a price (insurance, an LLC for a
+  rental or business): pass it on; if no one can: avoid it or take less (W20, W55, W56). A claim could reach everything owned less
+  what is owed, except a 401(k) (W54); over the liability limits (plus any umbrella): change (W21, judgement call).
+- L9: FBAR on the sum of each account's highest balance over $10,000; Form 8938 on the year-end and highest sums against the filing
+  status's two lines; a TFSA or a Canadian fund outside an RRSP is a flag; an RRSP alone is not (W50-W53, W31-W33).
+- L10: each page: someone named, the right person after a change in the family, a backup; the will covers the rest; estate tax
+  checked against the dated line (W29, W30, W58-W60).
+- L11: draw = a year's spending less income that keeps coming; rate = draw ÷ the invested accounts (bank cash left out); over the
+  dated estimate: change; next year: the draw raised by the rise in prices (W27, W28, W57).
+- L12: each of the eight lines of the yearly check by its own lesson's rule; a line that passes no rule is left alone (W2, W3).
+
+**W70. SIPC counts by separate capacity; a wash-sale remedy that keeps the mix.** SIPC, "Investors with multiple accounts" (sipc.org;
+*read: page text via fetch, 2026-10-22*): "SIPC protection of customers with multiple accounts is determined by 'separate capacity.'"
+"Each separate capacity is protected up to $500,000 for securities and cash (including a $250,000 limit for cash only)." "Accounts
+held in the same capacity are combined for purposes of the SIPC protection limits." Capacities listed include an individual account,
+a joint account, a trust account, an IRA and a Roth IRA. Strength: strong. *Use:* the sheet asks whose name a brokerage account is in,
+and the app adds brokerage accounts up by firm and capacity, against $500,000 and their cash against $250,000.
+Wash sale: Publication 550 says the rule reaches "substantially identical stock or securities" (W48), not only the same fund, and
+gives no test for two index funds. Buying a similar fund that follows a different index, or waiting past 30 days, keeps both the loss
+and the mix (lesson 5's one-mix rule); that a different index is not substantially identical is practitioners' usual reading and a
+**judgement call** (no IRS ruling read).
+
+**W71. The 2026 long-term gain rates follow taxable income: 0% low in the brackets, 15% for most.** IRS Rev. Proc. 2025-32 (the 2026
+inflation adjustments), *read: search summaries of its table (Kiplinger, "IRS Updates Capital Gains Tax Thresholds for 2026", and tax
+tables quoting §4.03), not the IRS PDF itself*. Strength: moderate as read (several summaries agree). A single filer pays 0% on long-term
+gains up to $49,450 of taxable income and 15% from $49,451 to $545,500; married filing jointly 0% up to $98,900, 15% to $613,700. With W39
+(short-term gains taxed as ordinary income) this means a household whose top bracket is 12% usually pays 0% on a long-term gain.
+*Use:* lesson 5 pairs 15% on a long-term gain only with a 22% or 24% top rate (a single filer in the 22% bracket has taxable income
+above $49,450); the 12% rate appears only where no long-term gain is taxed (a loss against other income).
+
+
+**W62. A 401(k) owes a current spouse unless the spouse waived it in writing.** 26 U.S.C. 417(a)(2) (*read: statute text, Cornell LII*):
+an election away from the spouse's benefit is valid only if "the spouse of the participant consents in writing to such election" and the
+consent "is witnessed by a plan representative or a notary public"; a 401(k) escapes the annuity rules only by paying the whole account to the
+surviving spouse unless the spouse consents (26 U.S.C. 401(a)(11)(B)(iii), as cited by the research review of lessons 7-12; *read: as that
+review states*). Strength: strong. *Use:* lesson 10 no longer says who would get a 401(k) whose page names a former spouse after a remarriage
+(the current spouse may have the stronger claim); it says the page decides first, exceptions exist, and the safe move is to fix the page.
+
+**W63. Many states cancel a former spouse's designation at divorce.** *Sveen v. Melin*, 584 U.S. ___ (2018), syllabus (*read: Cornell LII*):
+Minnesota's statute provides that "the dissolution or annulment of a marriage revokes any revocable ... beneficiary designation" to a former
+spouse, and its retroactive use "does not violate the Contracts Clause". Such statutes (Uniform Probate Code 2-804) reach an IRA or an
+individual life policy, not an ERISA plan (W29, *Egelhoff*). Strength: strong for the holding; which states have such a law was not read
+(**judgement call** to say "many states"). *Use:* lesson 10's exceptions, and why every item asks only whether a page needs a fix.
+
+**W64. An IRA is shielded in bankruptcy up to a federal cap; home shields vary by state.** 11 U.S.C. 522(n) (*read: statute text, Cornell
+LII*): IRA assets exempted "shall not exceed $1,000,000" (adjusted to $1,711,975 from April 1, 2025, per the page's note), "without regard to
+amounts attributable to rollover contributions". Outside bankruptcy, and for a home (homestead), protection is set by each state (not read
+here: **judgement call**). *Use:* lesson 8 and the `cover` work count an IRA and the home as reachable "to be safe", and say so; only the
+401(k) (W54) is left out.
+
+**W65. The spending-rate research measures withdrawals before tax.** Bengen (W28) and Morningstar (W57) test the amount taken from the
+portfolio; taxes on it are paid out of that amount. Every dollar out of a 401(k) or traditional IRA is taxed (W38). *Use:* lesson 11 adds the
+tax on withdrawals to the spending before dividing, the items show it, and the sheet's group asks for it (left blank, the work says the rate is
+higher than shown). The "about a tenth of savings" line for a small loss in lesson 8 is a **judgement call**, said so in the lesson.
+
 ## What the evidence does not settle
 
 - How expert planners actually reason, step by step (W5): no study found.
 - The thresholds (10% in one company, a 5-point band, three to six months of expenses, liability limits at net worth, a
   3.5-4% starting spending rate) are conventions, each marked above; only the 5-point band and the spending rate rest on a
   read study, and both studies say their numbers are reasonable, not optimal.
-- The order of saving (W24) is a practitioners' consensus read only through summaries.
+- The order of saving (W24, W46) is a practitioners' consensus read only through summaries, and its versions differ on the first rung.
 - TFSA and Canadian-fund treatment (W32, W33) rest on practitioner summaries beyond the IRS's PFIC rules themselves.
 - Whether the behavior gap teaching changes behavior is untested; the subject leans on set-once fixes (target-date funds, a
   written rebalancing rule, automatic contributions) because Morningstar's gap is smallest in all-in-one funds (W17).
@@ -362,4 +642,16 @@ a **judgment** (change or leave, flag or clear), and an **action** done once and
 - Egelhoff: https://www.law.cornell.edu/supct/html/99-1529.ZS.html ; Kennedy: https://www.law.cornell.edu/supct/html/07-636.ZS.html
 - IRS Estate Tax: https://www.irs.gov/businesses/small-businesses-self-employed/estate-tax
 - IRS FBAR: https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar ; Form 8938 comparison: https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements
+- IRS IR-2025-111 (2026 limits): https://www.irs.gov/newsroom/401k-limit-increases-to-24500-for-2026-ira-limit-increases-to-7500 ; 401(k) limits page: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits ; 401(k) overview: https://www.irs.gov/retirement-plans/plan-participant-employee/401k-resource-guide-plan-participants-401k-plan-overview ; Tax Topic 409: https://www.irs.gov/taxtopics/tc409
+- FDIC, Understanding Deposit Insurance: https://www.fdic.gov/resources/deposit-insurance/understanding-deposit-insurance ; DOL, A Look at 401(k) Plan Fees: https://www.dol.gov/sites/dolgov/files/ebsa/about-ebsa/our-activities/resource-center/publications/401k-plan-fees.pdf
+- SEC asset allocation guide: https://www.sec.gov/about/reports-publications/investorpubsassetallocationhtm ; CFPB emergency fund: https://www.consumerfinance.gov/an-essential-guide-to-building-an-emergency-fund/
+- IRS vesting: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-vesting ; vesting snapshot: https://www.irs.gov/retirement-plans/issue-snapshot-vesting-schedules-for-matching-contributions ; Operating a 401(k): https://www.irs.gov/retirement-plans/operating-a-401k-plan ; SHRM true-up: https://shrm.org/topics-tools/news/benefits-compensation/consider-401k-true-payments-employer-matching-contributions
+- IRS, Bankruptcy of employer: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-bankruptcy-of-employer ; SIPC multiple accounts: https://www.sipc.org/for-investors/investors-with-multiple-accounts
+- IRS Form 1099-B instructions: https://www.irs.gov/instructions/i1099b ; Pub 575: https://www.irs.gov/publications/p575
 - IRS Form 8621 instructions: https://www.irs.gov/instructions/i8621 ; Rev. Proc. 2014-55: https://www.irs.gov/irb/2014-44_IRB
+- FinCEN FBAR: https://www.fincen.gov/report-foreign-bank-and-financial-accounts ; CRA TFSA non-residents: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/non-resident.html ; CRA non-resident contributions: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/owing-tax/non-resident.html ; CRA RRSP withdrawals: https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/making-withdrawals/tax-rates-on-withdrawals.html
+- 29 U.S.C. 1056: https://www.law.cornell.edu/uscode/text/29/1056 ; Patterson v. Shumate: https://www.law.cornell.edu/supct/html/91-913.ZS.html ; 26 U.S.C. 2056: https://www.law.cornell.edu/uscode/text/26/2056
+- SBA business structures: https://www.sba.gov/business-guide/launch-your-business/choose-business-structure ; FINRA Rule 2264: https://www.finra.org/rules-guidance/rulebooks/finra-rules/2264 ; FTC cosigning: https://consumer.ftc.gov/articles/cosigning-loan-faqs
+- Morningstar 2026 (refused; summary): https://www.morningstar.com/retirement/whats-safe-retirement-withdrawal-rate-2026 ; BenefitsPro: https://www.benefitspro.com/2025/12/04/safe-retirement-withdrawal-rate-adjusted-to-39-for-new-retirees/
+- 26 U.S.C. 417: https://www.law.cornell.edu/uscode/text/26/417 ; Sveen v. Melin: https://www.law.cornell.edu/supremecourt/text/16-1432 ; 11 U.S.C. 522: https://www.law.cornell.edu/uscode/text/11/522
+- IRS beneficiary: https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-beneficiary ; Pub 590-B: https://www.irs.gov/publications/p590b ; FINRA diminished capacity: https://www.finra.org/investors/insights/five-tips-prepare-diminished-capacity ; CFPB caregiver guide: https://files.consumerfinance.gov/f/documents/cfpb_considering-a-financial-caregiver-know-your-options_guide_2021-05.pdf ; IRS gift tax FAQ: https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes

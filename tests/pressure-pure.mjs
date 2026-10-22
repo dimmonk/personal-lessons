@@ -18,7 +18,7 @@ const check = (ok, msg) => { checks++; if (!ok) failures.push(msg); };
 const same = (a, b, msg) => check(JSON.stringify(a) === JSON.stringify(b), `${msg}: got ${JSON.stringify(a)}, wanted ${JSON.stringify(b)}`);
 const app = await loadApp({ fixture: true });
 const { FC, SAY, MESSAGE_FORMS, MESSAGE_LINK_FORMS, MESSAGE_YOURS, messageHtml, scoreExchange, exchangeWalk, exchangePaths, exchangeReach, exchangeLoops, exchangeReview,
-  scoreOrder, orderShown, orderReady, orderProblems, orderRightText, TIMER_SECONDS, timerAfter, timerShown, timerShare, timerHtml, BUSY_THINGS, BUSY_BINS, BUSY_TAPS_BEFORE, busyThing, busyHtml,
+  scoreOrder, orderShown, orderReady, orderOpen, orderProblems, orderRightText, TIMER_SECONDS, timerAfter, timerShown, timerShare, timerHtml, BUSY_THINGS, BUSY_BINS, BUSY_TAPS_BEFORE, busyThing, busyHtml,
   planFromDraft, planSentence, setupMarked, setupCleared, setupDone, baselineLine, checkContext, recordTry, completeRuns, lessonDone, dueStrands, chooseOptions,
   scoreChoose, ASK_KINDS, itemHtml, feedbackHtml } = app;
 const pressure = FC.get('pressure'), scams = FC.get('scams');
@@ -72,7 +72,9 @@ same(MESSAGE_FORMS.slice(3), ['sms', 'email', 'popup', 'chat', 'call', 'banner']
   const whole = pressure.items['o-1'].asks[0], first = pressure.items['o-2'].asks[0];
   check(scoreOrder(pressure, whole, ['bank', 'pass', 'report']) === 'ok' && scoreOrder(pressure, whole, ['bank', 'report', 'pass']) === 'no' && scoreOrder(pressure, whole, ['pass', 'bank', 'report']) === 'no', 'an order scored in whole needs every step in its place');
   check(scoreOrder(pressure, first, ['bank', 'wait', 'report']) === 'ok' && scoreOrder(pressure, first, ['pass', 'bank', 'report']) === 'no', 'an order scored on its first step needs only that');
-  check(orderReady(whole, ['bank', 'pass']) === false && orderReady(whole, ['bank', 'pass', 'report']) === true, 'an order is ready when as many steps are tapped as the right order holds');
+  const closed = pressure.items['b-4'].asks[0];   // every step belongs: answered when all are tapped
+  check(orderReady(closed, ['bank', 'pass']) === false && orderReady(closed, ['bank', 'pass', 'report']) === true, 'an order whose steps all belong is ready when all are tapped');
+  check(orderOpen(whole) && orderReady(whole, ['bank', 'pass', 'report']) === false && !orderOpen(closed), 'an order with a step that does not belong waits for Answer, whatever the count');
   same(orderRightText(whole), 'Call my bank on the number on my card, then Change my password on the real site, then Report it', 'the right order in words');
   let inOrder = 0;
   for (let k = 0; k < 400; k++) {

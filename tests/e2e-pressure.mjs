@@ -60,6 +60,7 @@ export async function walkPressure(env, c, page, label) {
   await jump(page, STEP.order);
   await tapIf('[data-order-step="wait"]'); await at('steps in order, one tapped');
   for (const id of ['pass', 'report']) await tapIf(`[data-order-step="${id}"]`);
+  await tapIf('[data-order-answer]');
   await at('steps in order, answered wrong');
   await jump(page, STEP.busy); await at('the busy task, before the banner');
   await tapIf('[data-busy-bin]'); await tapIf('[data-busy-bin]'); await at('the busy task, with its banner');
@@ -249,7 +250,8 @@ export async function X38(env) {
   const shown = () => page.evaluate(() => [...document.querySelectorAll('[data-order-step]')].map(b => ({ id: b.dataset.orderStep, no: b.querySelector('.orderno') && b.querySelector('.orderno').textContent, off: b.disabled })));
   let steps = await shown();
   c.check(steps.length === 4 && steps.slice(0, 3).map(s => s.id).join() !== 'bank,pass,report', `the steps are offered in the right order (${steps.map(s => s.id)})`);
-  c.check(/Tap the three steps in the order you would do them\./.test(await env.screenText(page)), 'the question does not say how many steps to tap');
+  c.check(/Tap the steps you would do, in order, leaving out any that do not belong, then Answer\./.test(await env.screenText(page)) && !/three steps/.test(await env.screenText(page)), 'a question with a step that does not belong tells how many to tap');
+  c.check(await page.locator('[data-order-answer]').isDisabled(), 'Answer is open before a step is tapped');
   await page.locator('[data-order-step="bank"]').click();
   steps = await shown();
   c.check(steps.find(s => s.id === 'bank').no === '1' && steps.find(s => s.id === 'bank').off && await page.locator('[data-order-reset]').count() === 1, 'a tapped step is not numbered and shut');
@@ -260,6 +262,8 @@ export async function X38(env) {
   await page.locator('[data-order-step="pass"]').click();
   c.check(await page.locator('[data-feedback]').count() === 0, 'the order is answered before every step is tapped');
   await page.locator('[data-order-step="report"]').click();
+  c.check(await page.locator('[data-feedback]').count() === 0, 'the order is answered by its taps alone, before Answer, though a step does not belong');
+  await page.locator('[data-order-answer]').click();
   let text = await env.screenText(page);
   c.check(await page.locator('.mark.no').count() === 1 && /The answer: Call my bank on the number on my card, then Change my password on the real site, then Report it/.test(text) && /You put: Wait a few days, then Change my password/.test(text) && /A bank can sometimes stop a payment in the first hours/.test(text), `a wrong order is not marked with the right order, what was put and why it matters`);
   await nextQ(page);
@@ -268,10 +272,12 @@ export async function X38(env) {
   await page.locator('[data-order-step="bank"]').click();
   await page.locator('[data-order-step="wait"]').click();
   await page.locator('[data-order-step="report"]').click();
+  await page.locator('[data-order-answer]').click();
   c.check(await page.locator('.mark:not(.no)').count() === 1 && await page.locator('.mark.no').count() === 0, 'an order with the right first step is not right when the rest is not');
   await nextQ(page);
   c.check((await now(page)).redo === true && (await now(page)).key === 'o-1', 'the order that was missed did not come back');
   for (const id of ['bank', 'pass', 'report']) await page.locator(`[data-order-step="${id}"]`).click();
+  await page.locator('[data-order-answer]').click();
   const tries = await triesOf(env, page);
   c.check(JSON.stringify(tries.filter(t => t.key === 'o-1').map(t => [t.a.order, t.r.order])) === '[[["wait","pass","report"],"no"],[["bank","pass","report"],"ok"]]', `the orders are not stored as the steps tapped and their result (${JSON.stringify(tries.map(t => [t.key, t.a, t.r]))})`);
   // the busy task

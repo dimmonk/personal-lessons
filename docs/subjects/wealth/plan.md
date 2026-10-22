@@ -1,7 +1,8 @@
 # Wealth Preservation: plan (build-subject step 4, 2026-10-22)
 
-Evidence: `docs/research/wealth.md` (W1-W36) and `docs/learning-science.md` (P, D, R ids). Nothing here is drawn from another
-subject. Not personalized advice: the subject teaches how planners and economists reason; the learner applies it to their own sheet.
+Evidence: `docs/research/wealth.md` (W1-W61, W70-W71) and `docs/learning-science.md` (P, D, R ids). Nothing here is drawn from another
+subject. Not personalized advice: the subject teaches how planners and economists reason; the learner applies it to their own sheet, and wherever
+the app prints a move on the learner's own numbers it says it applies the rule's line and is not advice.
 
 ## What you'll be able to do, and when
 
@@ -57,25 +58,42 @@ your own data (`own`) ending in a change made now or dated (W35; `actions`, .ics
 Reading is the rule and the line only (P6). From unit B on, sets `mix` earlier lessons (P22, R9).
 
 **Unit A. See it all**
-1. **Your list, and what could lose it.** All accounts, type, balance, what protects each (FDIC, SIPC, neither, and that neither
-   covers a fall). Check: a sample household's papers as `document` tabs → a `form` ask (type, balance) per account; `choose` the
-   protection. Own: `sheet`. *Why:* planner step 1 (W1, W22).
-2. **Money you need soon.** Months of spending in cash; known bills inside about five years sitting in stocks; too little, enough,
-   or idle cash losing to inflation. Check: generator (`number` months, `choose` call), one household that is fine. Own: needs a
-   spending figure and a bills list (gap 2). *Why:* capacity before tolerance (W18, W19, W27).
+1. **Your list, and what could lose it.** All accounts, type, balance, what protects each: FDIC per person, per bank, per kind of
+   ownership; SIPC per firm and capacity, $250,000 of it cash (W70); a 401(k) usually neither (held in a trust apart from the employer); nothing covers a fall. "Change it" here is
+   moving the part over the limit to another bank or another kind of ownership. Look-alikes: two banks, and an account in one name beside
+   a joint one, each under its limit (W41, W42). Check: a sample household's papers as `document` tabs → a `form` ask (balance, protection)
+   per account; `choose` the call and where the extra goes. Own: `sheet` (bank or firm, whose name), the app adding up by bank and kind of
+   ownership, and by firm and capacity. *Why:* planner step 1 (W1, W22, W41).
+2. **Money you need soon.** Cash is what a bank account holds; a usual month counts a yearly bill as a twelfth; a bill due in five years
+   or less is kept out of stocks and put aside before the months are counted; too little, enough, or more than it needs (cash usually
+   earns less than stocks over the long run; inflation is its risk, W43). Look-alikes: a bill soon in stocks, one far off in stocks, one
+   soon already in savings. Check: generator (`number` months, `choose` call), two households that are fine. Own: a spending figure and a
+   bills list with where each bill's money is now (gap 2); the app decides as the lesson does (its worked household is a test). *Why:* capacity before tolerance (W18, W19, W43).
 
 **Unit B. The certain leaks**
-3. **What it costs a year, in dollars.** The built pilot (`l2` now, part 2; renumbered when parts change). *Why:* W6-W12.
-4. **The full match, then the order of saving.** Rate that takes the whole match and dollars a year short (`document` paystub +
-   matchrule, generator); then the rungs put in order (`order` ask) with a case where a rung does not apply. Own: rate changed on the
-   plan site or dated; trigger `job`. *Why:* W23, W24.
-5. **Taxes: where each fund sits, sell or wait, a loss used.** Tap the misplaced fund across two accounts; a sale's tax now versus
-   waiting; a loss sale with a buy-back inside 30 days (`choose`, `tap`, a `number` for tax saved). Own: placement flags from the sheet
-   (gap 1). *Why:* W25, W26.
+3. **What it costs a year, in dollars.** The papers' own words (expense ratio, administrative fee, W44); fund names that never tell the
+   cost; the costly fund either the stock or the bond fund; a switch inside a 401(k) or IRA is not taxed, in a brokerage account a gain is
+   (W47). *Why:* W6-W12, W44.
+4. **The full match, then the order of saving.** The match rule from the plan's summary, in one step or two (W45); the stub's dollars
+   turned into a share of pay; vesting (when the money is yours, not the rate); the rate that takes the whole match and the dollars left
+   (`document` paystub + matchrule, generator); then the order, a common one whose versions differ (W46, a judgement call): about a month
+   of cash, the match, a high-rate card, cash to three months, HSA, IRA, more 401(k), brokerage, each with its reason, leaving out a step
+   that is done, owes nothing or is not open (`order` ask). Own: the match in one or two steps, vesting and a true-up to check; trigger
+   `job`. *Why:* W23, W24, W45, W46.
+5. **Taxes: where each fund sits, sell or wait, a loss used.** Placement: a swap only when the 401(k) holds stocks (look-alike: a 401(k)
+   of bonds only), the tax on the bonds' payout; sell or wait: the tax saved against what the dearer fund costs meanwhile, which decides
+   both ways (a big gain waits, a small gain on a big fund switches now), and a switch inside a 401(k) is not taxed (look-alike); the bonds'
+   gain checked before a swap; a wash sale (the same fund or one substantially identical) named, its loss added to the new shares' cost, the remedy
+   keeping the mix (wait past 30 days, or a similar fund on a different index) (W25, W26, W38, W39, W47, W48, W70, W71).
+   `choose` and `number`. Own: placement (deferred accounts only), with the tax on last year's bond payouts when the tax rate is typed,
+   and the lines to read before any sale (cost basis, the day bought). *Why:* W25, W26. As built: the misplaced fund is a `choose` on the
+   swap (a `tap` reads prose lines; a document's rows are not tappable).
 
 **Unit C. Risks you did not choose**
-6. **Your biggest single bet.** One company's share across all accounts (employer stock, RSUs); a broad index fund cleared.
-   Generator `number` + `choose`. Own: share; sell-down dated. *Why:* W13, W14 (10% is a judgement call).
+6. **Your biggest single bet.** One company's share across all accounts (employer stock, RSUs) over the total of the list; a broad fund
+   of hundreds or thousands of companies cleared; where to sell first (inside the 401(k), no tax; employer stock that has grown, a question
+   for a preparer, W49). Generator `number` + `choose`. Own: share grouped by the company typed; sell-down dated. *Why:* W13, W14 (10% is a
+   judgement call).
 7. **Mix and drift, and your own hands.** Split across accounts, drift against your chosen mix, the trade and which account takes
    it; leave under 5 points or a target-date fund; a news-of-a-fall case (`article`) where the rule says hold. *Why:* W15-W17.
 8. **A loss you could not pay.** The frequency-severity matrix on cases (retain, reduce, transfer, avoid); net worth against

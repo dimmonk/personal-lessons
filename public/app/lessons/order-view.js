@@ -11,8 +11,10 @@ function orderHtml(data, ask, st, ctx){
     return `<button type="button" class="${cls}" data-order-step="${esc(s.id)}" ${locked || at >= 0 ? 'disabled' : ''} aria-pressed="${at >= 0}">${at >= 0 ? `<span class="orderno">${at + 1}</span>` : ''}${esc(s.text)}</button>`;
   }).join('');
   const reset = !locked && picked.length ? `<button type="button" class="linkish" data-order-reset>${esc(SAY.orderReset)}</button>` : '';
+  const submit = !locked && orderOpen(ask) ? `<div class="numacts"><button type="button" class="btn sm" data-order-answer ${picked.length ? '' : 'disabled'}>${esc(SAY.answerBtn)}</button></div>` : '';
+  const hint = orderOpen(ask) ? SAY.orderHintOpen(orderScored(ask)) : SAY.orderHint(ask.right.length, orderScored(ask));
   return `<div class="stepopen prompt orderask" data-ask="${esc(ask.id)}"><p class="stem">${esc(paras(ask.prompt).join(' '))}</p>
-    <span class="forline">${esc(SAY.orderHint(ask.right.length, orderScored(ask)))}</span><div class="opts">${buttons}</div>${reset}</div>`;
+    <span class="forline">${esc(hint)}</span><div class="opts">${buttons}</div>${reset}${submit}</div>`;
 }
 // the mark under the question: right, or the right order
 function orderMarkHtml(ask, answer, result){

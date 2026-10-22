@@ -35,42 +35,46 @@ function ownFundHtml(form, lists, fund, i, j, problems, warnings){
     <button type="button" class="linkish" data-remove-fund="${i}.${j}">${esc(SAY.ownRemoveFund)}</button></div>`;
 }
 function ownAccountHtml(form, lists, draft, i, problems, warnings){
-  const head = form.fields.map(f => ownFieldHtml(f, lists, draft[f.id], `accounts.${i}.${f.id}`, problems)).join('');
+  const head = ownFieldsFor(form.fields, draft.type).map(f => ownFieldHtml(f, lists, draft[f.id], `accounts.${i}.${f.id}`, problems)).join('');
   const funds = form.rows ? (draft.holdings || []).map((h, j) => ownFundHtml(form, lists, h, i, j, problems, warnings)).join('')
     + `<button type="button" class="btn ghost sm" data-add-fund="${i}">${esc(SAY.ownAddFund)}</button>` : '';
   return `<section class="owncard" data-account="${i}"><h2 class="owntitle">${esc(SAY.ownAccountN(i + 1))}</h2>${head}${funds}
     <button type="button" class="linkish" data-remove-account="${i}">${esc(SAY.ownRemoveAccount)}</button></section>`;
 }
-function sheetEditorHtml(form, lists, drafts, problems, warnings){
+// a group beside the accounts: its boxes, or its rows with a button for another
+function ownGroupHtml(form, lists, id, draft, problems){
+  const group = ownGroupOf(form, id), at = `groups.${id}`, how = group.how ? `<p class="forline">${esc(group.how)}</p>` : '';
+  const fields = (record, path) => group.fields.map(f => ownFieldHtml(f, lists, record[f.id], `${path}.${f.id}`, problems)).join('');
+  const body = group.many
+    ? draft.map((row, j) => `<div class="ownfund" data-row="${j}"><p class="m lab">${esc(SAY.ownRowN(j + 1))}</p>${fields(row, `${at}.${j}`)}
+        <button type="button" class="linkish" data-remove-row="${esc(id)}.${j}">${esc(SAY.ownRemoveRow)}</button></div>`).join('')
+      + `<button type="button" class="btn ghost sm" data-add-row="${esc(id)}">${esc(SAY.ownAddRow)}</button>`
+    : fields(draft, at);
+  return `<section class="owncard" data-group="${esc(id)}"><h2 class="owntitle">${esc(group.label)}${group.optional ? esc(SAY.ownOptional) : ''}</h2>${how}${body}</section>`;
+}
+function sheetEditorHtml(form, lists, drafts, problems, warnings, groups){
+  const more = Object.entries(groups || {}).map(([id, draft]) => ownGroupHtml(form, lists, id, draft, problems)).join('');
   return `<div class="ownform" data-own-sheet>${drafts.map((d, i) => ownAccountHtml(form, lists, d, i, problems, warnings)).join('')}
-    <button type="button" class="btn ghost sm" data-add-account>${esc(SAY.ownAddAccount)}</button></div>`;
+    <button type="button" class="btn ghost sm" data-add-account>${esc(SAY.ownAddAccount)}</button>${more}</div>`;
 }
 
-/* ---------- what the accounts cost ---------- */
-const ownTypeText = (lists, account) => (((lists || {}).accountType || []).find(o => o.id === account.type) || { text: account.type }).text;
-const ownAccountTitle = (lists, account) => account.name ? `${account.name} (${ownTypeText(lists, account)})` : ownTypeText(lists, account);
-// the arithmetic of one account as a statement: each fund, its yearly cost, the dollars, the fees, the total
-function ownCostDocument(lists, account){
-  const cost = ownAccountCost(account);
-  const rows = [...cost.funds.map((f, i) => ({ id: `fund${i}`, cells: [`${f.name}, ${ownWhole(f.value)}`, `${Number(f.expense.toFixed(3))}%`, ownMoney(f.dollars)] })),
-    ...(cost.fees ? [{ id: 'fees', cells: [SAY.ownFees, '', ownMoney(cost.fees)] }] : []),
-    { id: 'total', strong: true, cells: [SAY.ownThisCosts, '', `${ownMoney(cost.total)} ${SAY.ownAYear}`] }];
-  return { kind: 'document', form: 'statement', title: ownAccountTitle(lists, account), head: [SAY.ownFundCol, SAY.ownRateCol, SAY.ownDollarsCol], rows };
-}
-function ownCostsHtml(form, lists, accounts){
-  const total = ownSheetCost(accounts), balance = ownSheetBalance(accounts);
-  const docs = accounts.map(a => documentHtml(ownCostDocument(lists, a), {})).join('');
-  const gaps = ownBalanceGaps(accounts).map(g => `<p class="ownwarn" role="status">${esc(ownAccountTitle(lists, accounts[g.i]))}: ${esc(SAY.ownGap(ownWhole(g.funds), ownWhole(g.balance)))}</p>`).join('');
+/* ---------- the app's arithmetic on the sheet ---------- */
+// The work of a step (own-work.js) drawn: its tables, the funds that miss their balance, the plausible-range warnings, then its lines, a flag
+// set apart as something to look at, a total in bold
+function ownWorkHtml(form, workId, sheet, ctx){
+  const work = ownWork(workId, sheet, ctx), accounts = sheet.accounts;
+  const docs = work.docs.map(d => documentHtml(d, {})).join('');
+  const gaps = ownBalanceGaps(accounts).map(g => `<p class="ownwarn" role="status">${esc(ownAccountTitle(ctx.lists, accounts[g.i]))}: ${esc(SAY.ownGap(ownWhole(g.funds), ownWhole(g.balance)))}</p>`).join('');
   const warns = ownWarnings(form, accounts).map(w => `<p class="ownwarn" role="status">${esc(w.who ? `${w.who}: ${w.text}` : w.text)}</p>`).join('');
-  const pct = balance ? fmtNumber(total / balance * 100) : '0';
-  return `<div class="blocks" data-own-costs>${docs}</div>${gaps}${warns}
-    <p class="owntotal" data-own-total><b>${esc(SAY.ownAllCost)} ${esc(ownMoney(total))} ${esc(SAY.ownAYear)}</b>, ${esc(SAY.ownAPercent(pct))}.</p>`;
+  const lines = work.lines.map(l => l.strong !== undefined ? `<p class="owntotal" data-own-total><b>${esc(l.strong)}</b>${esc(l.text)}</p>`
+    : l.flag ? `<p class="ownwarn" data-own-flag role="status">${esc(l.text)}</p>` : `<p class="owntotal" data-own-line>${esc(l.text)}</p>`).join('');
+  return `<div class="blocks" data-own-work="${esc(workId)}">${docs}</div>${gaps}${warns}${lines}`;
 }
 
 /* ---------- dated actions ---------- */
 function ownActionRowHtml(action, subjectId){
   const done = action.done ? esc(SAY.ownDoneOn(action.done)) : esc(SAY.ownDueOn(action.when));
-  return `<li class="ownaction" data-action="${esc(action.id)}"><span class="owntext"><b>${esc(action.what)}</b><span class="ownwhere">${esc(action.where)} &middot; ${done}</span></span>
+  return `<li class="ownaction" data-action="${esc(action.id)}"><span class="owntext"><b>${esc(action.what)}</b><span class="ownwhere">${esc(action.where)} &middot; ${done}${action.repeat === 'year' ? ` &middot; ${esc(SAY.ownEveryYear)}` : ''}</span></span>
     <span class="ownbtns">${action.done ? '' : `<button type="button" class="btn ghost sm" data-action-done="${esc(action.id)}">${esc(SAY.ownMarkDone)}</button>`}
     <button type="button" class="btn ghost sm" data-action-ics="${esc(action.id)}">${esc(SAY.ownCalendar)}</button></span></li>`;
 }
@@ -82,6 +86,18 @@ function ownActionFormHtml(form, draft, problems){
 }
 
 /* ---------- the subject screen ---------- */
+// the groups the learner has filled in beside the accounts, each field as it was typed
+function ownGroupsSummaryHtml(data, sheet){
+  const form = Object.values(data.meta.own || {}).find(f => f.into === 'sheet'), lists = data.meta.lists;
+  // a number in its unit: dollars as money, a unit after the number, a year (no unit) as typed
+  const shown = (field, value) => field.type === 'number' ? (field.unit === 'dollars' ? ownWhole(value) : field.unit ? `${fmtNumber(value)} ${field.unit}` : String(value))
+    : field.type === 'choose' ? ((lists[field.list] || []).find(o => o.id === value) || { text: value }).text : String(value);
+  const record = (group, r) => group.fields.filter(f => r[f.id] !== undefined).map(f => `${f.label}: ${shown(f, r[f.id])}`).join('; ');
+  return ((form || {}).groups || []).filter(g => (sheet || {})[g.id]).map(g => {
+    const held = sheet[g.id], rows = g.many ? held.map(r => record(g, r)) : [record(g, held)];
+    return rows.length ? `<span class="m lab">${esc(g.label)}</span><ul class="ownactions">${rows.map(r => `<li class="ownaction"><span class="owntext">${esc(r)}</span></li>`).join('')}</ul>` : '';
+  }).join('');
+}
 // "Your accounts and dates": what is stored, the dated actions with their calendar files and done marks, the moments the learner has
 // marked, and the two controls that take it out of the phone or off it.
 function ownSectionHtml(subj, data, state){
@@ -97,7 +113,7 @@ function ownSectionHtml(subj, data, state){
         <button type="button" class="btn ghost sm" data-own-delete-no>${esc(SAY.ownDeleteNo)}</button></div></div>`
     : `<button type="button" class="btn ghost sm" data-own-delete ${hasAny ? '' : 'disabled'}>${esc(has('sheet') ? SAY.ownDelete : has('answers') ? SAY.answersDelete : SAY.planDelete)}</button>`;
   const sheetHtml = has('sheet') ? `<span class="m lab">${esc(SAY.ownAccountsHeading)}</span>
-    ${accounts.length ? `<table class="k results ownsum">${accountRows}</table>` : `<p class="hintline">${esc(SAY.ownNoSheet)}</p>`}` : '';
+    ${accounts.length ? `<table class="k results ownsum">${accountRows}</table>` : `<p class="hintline">${esc(SAY.ownNoSheet)}</p>`}${ownGroupsSummaryHtml(data, notes.sheet)}` : '';
   const actionsHtml = has('actions') ? `<span class="m lab">${esc(SAY.ownActionsHeading)}</span>
     ${actions.length ? ownActionListHtml(actions, subj.id) : `<p class="hintline">${esc(SAY.ownNoActions)}</p>`}` : '';
   return `<div class="sect top"><span class="m">${esc(has('sheet') ? SAY.ownSection : has('answers') ? SAY.answersSection : SAY.planSection)}</span></div><div class="ownsection" data-own="private">

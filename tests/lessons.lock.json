@@ -38,8 +38,8 @@
       "fp": "sha256:7f5115f01b5107ee7fef0a9c8b6e674d38671839ee9d6b01dd317680f59c3372"
     },
     "wealth": {
-      "rev": 7,
-      "fp": "sha256:905c8e0e618d13bbaa71d2d87815daf8f2cc7f5fb74d53551a2cf3cfc429345d"
+      "rev": 9,
+      "fp": "sha256:732b812abab95546d7b23c03d663f4c4d25843b31590f55d3909908500afbee6"
     }
   },
   "lessons": {
@@ -467,9 +467,53 @@
       "rev": 1,
       "fp": "sha256:3ce992adffbc86dc6535588d6eacba935724dc8a50a978596b6888e8c9ab6557"
     },
+    "wealth/l1": {
+      "rev": 1,
+      "fp": "sha256:31d4a81d28d397c2638fa0db3170bcc979891214a6b24f0c1235b301d6510ca8"
+    },
+    "wealth/l10": {
+      "rev": 1,
+      "fp": "sha256:7141cf4859e32c97c754b2a8b2c8a50f5ded15fa1b24dae1c8bbc9482ad1eea2"
+    },
+    "wealth/l11": {
+      "rev": 1,
+      "fp": "sha256:d4b586214661d3c53d1a4b824ef87d42f1e4b2996270f52fe5ba00a4b7833d06"
+    },
+    "wealth/l12": {
+      "rev": 1,
+      "fp": "sha256:74bace27c2f6ef4d0739ad99023e1d7fc1ac58fd6bf3bc842d6fdfe7683d97a2"
+    },
     "wealth/l2": {
       "rev": 1,
-      "fp": "sha256:b6d0fe2b74f857b552ef2e4b6e9e26546e7ed3ddf72d5b8cc771943d001049d3"
+      "fp": "sha256:fdb866185da061dc409ae6a75ab42caa9fc06a82d029c7ab15baa7ab8a998e0b"
+    },
+    "wealth/l3": {
+      "rev": 1,
+      "fp": "sha256:6419d3ff2f410ea7c49fdb4f32f13a8a7c00bb549d9ec247ad70e238d16470a9"
+    },
+    "wealth/l4": {
+      "rev": 1,
+      "fp": "sha256:de4196c36f28191dc2da5b17fae81a6e42d62438fd190528be0dbb230da08926"
+    },
+    "wealth/l5": {
+      "rev": 1,
+      "fp": "sha256:b51b8e6729370309f12d3e496581941390bbfcf1f92214c9fab6bb3463fe562d"
+    },
+    "wealth/l6": {
+      "rev": 1,
+      "fp": "sha256:745805d4cfdcb5c8c26947db1d1a40300c972c49c246b26af29d66b8c274a6e5"
+    },
+    "wealth/l7": {
+      "rev": 1,
+      "fp": "sha256:747e522aff1f8724baea860036a6e19848f81a8371420ebb18bf6bb685a71f9c"
+    },
+    "wealth/l8": {
+      "rev": 1,
+      "fp": "sha256:77ca61d7e3ff8325ba6d79a06703fce995765043ac912933fe8ab915f9a51704"
+    },
+    "wealth/l9": {
+      "rev": 1,
+      "fp": "sha256:125524ae1915e5010b68ea92355b72d1ed160a68c898dc372ba6643fc711a034"
     }
   }
 }

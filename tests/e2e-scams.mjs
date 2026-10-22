@@ -220,8 +220,9 @@ export async function X42(env) {
       c.check(await page.locator('[data-xopt]').count() === 3 && /fraud team at Calderwood Bank/.test(await env.screenText(page)), 'the call does not open on the caller and three replies');
       await page.locator('[data-xopt="hang"]').click();
     } else if (s.key === 'b-happened') {
-      c.check(/Tap the three steps in the order you would do them/.test(await env.screenText(page)) && await page.locator('[data-order-step]').count() === 4, 'the steps after a loss are not four to choose three from');
-      for (const id of ['bank', 'pass', 'report']) { if (await page.locator('#qNext').isEnabled()) break; await page.locator(`[data-order-step="${id}"]`).click(); }
+      c.check(/Tap the steps you would do, in order, leaving out any that do not belong, then Answer\./.test(await env.screenText(page)) && await page.locator('[data-order-step]').count() === 4, 'the steps after a loss are not four to choose from, leaving one out');
+      for (const id of ['bank', 'pass', 'report']) await page.locator(`[data-order-step="${id}"]`).click();
+      await page.locator('[data-order-answer]').click();
     } else {
       c.check(s.left > 19 && s.left <= 20, `${s.key}: a message of the baseline is not on a 20 second clock (${s.left})`);
       if (s.key === 'b-manager') await answer(page, 'act');   // the one scam done on purpose: gift cards sent to a "manager"

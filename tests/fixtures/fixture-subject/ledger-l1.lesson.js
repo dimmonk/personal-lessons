@@ -17,7 +17,7 @@ FC.lesson('ledger', {
       ] },
     { worked: 'l-sheet' },
     { set: { items: [{ gen: 'l-gen', n: 2 }], order: 'listed' } },
-    { own: 'sheet', model: 'l-sheet' }
+    { own: 'sheet', model: 'l-sheet', work: 'cost' }
   ],
   check: { items: [{ gen: 'l-gen', n: 2 }], feedback: 'at-end', pass: [{ right: { min: 2 } }] }
 });

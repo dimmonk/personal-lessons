@@ -4,7 +4,8 @@
 // change made now or dated with a what, a where and a day (and a calendar file for the day). Nothing here is scored, stored as a try, logged
 // or shared: it is written to the subject's notes (sheet, actions, triggers; kept with the learner's sign-in) and shown only on the subject's own screens.
 // OWN is this visit's working state, replaced (never changed) at every step:
-//   { step, phase: 'sheet' | 'costs' | 'skipped', drafts: [account draft], problems: [{ path, text }], action: { draft, problems } }
+//   { step, phase: 'sheet' | 'work' | 'skipped', drafts: [account draft], groups: { [groupId]: draft }, problems: [{ path, text }], action: { draft, problems } }
+// The step's `work` (own-work.js) says what the app works out, and which groups of the sheet it needs beside the accounts.
 // Needs the lesson player (LESSON, lessonShell, heading, goOn), own.js and own-view.js.
 
 let OWN = null;
@@ -20,6 +21,11 @@ const ownBoxId = path => `#own-${path.replace(/\./g, '-')}`;
 
 /* ---------- the drafts ---------- */
 // The drafts with one box's text put in: the account's own field, or a field of one of its funds
+// the groups' drafts with one box's text put in ("groups.bills.1.amount", "groups.spending.monthly")
+function ownSetGroupAt(groups, path, value){
+  const [, id, a, b] = path.split('.');
+  return { ...groups, [id]: b === undefined ? { ...groups[id], [a]: value } : groups[id].map((row, j) => j === Number(a) ? { ...row, [b]: value } : row) };
+}
 function ownSetAt(drafts, path, value){
   const [, i, key, j, field] = path.split('.');
   return drafts.map((a, ai) => ai !== Number(i) ? a : key === 'holdings'
@@ -35,15 +41,19 @@ function paintOwn(step){
   if(into === 'setup') return paintSetupStep(step);
   if(into === 'answers') return paintAnswersStep(step);
   if(lesson.trigger && !triggersOf(subj.id)[lesson.trigger]) return paintOwnWait();
-  const form = ownFormOf(data, step.own), accounts = sheetAccounts(subj.id);
-  OWN = { step, phase: accounts.length ? 'costs' : 'sheet', drafts: accounts.length ? ownDraftsFromSheet(form, accounts) : [ownEmptyAccount(form)], problems: [], action: { draft: {}, problems: [] } };
+  const form = ownFormOf(data, step.own), sheet = notesOf(subj.id).sheet || {}, accounts = sheet.accounts || [];
+  const ready = accounts.length > 0 && !ownMissingGroups(step.work, sheet).length;
+  OWN = { step, phase: ready ? 'work' : 'sheet', drafts: accounts.length ? ownDraftsFromSheet(form, accounts) : [ownEmptyAccount(form)],
+    groups: ownGroupDrafts(form, OWN_WORKS[step.work].needs, sheet), problems: [], action: { draft: {}, problems: [] } };
   paintOwnPhase();
 }
 function paintOwnPhase(){
   if(OWN.phase === 'sheet') return paintOwnSheet();
   if(OWN.phase === 'skipped') return paintOwnSkipped();
-  paintOwnCosts();
+  paintOwnWork();
 }
+// what the work reads besides the sheet: the subject's lists, its dated values, the thresholds its lessons teach, and this year
+const ownWorkCtx = (data, form) => ({ lists: data.meta.lists, refs: data.meta.refs || [], limits: form.limits || {}, year: Number(today().slice(0, 4)) });
 
 /* ---------- waiting for a moment ---------- */
 function paintOwnWait(){
@@ -62,18 +72,29 @@ function paintOwnSheet(){
   const warnings = ownDraftWarnings(form, lists, OWN.drafts);
   const has = sheetAccounts(subj.id).length > 0;
   lessonShell(`${heading(SAY.ownEyebrow, SAY.ownSheetTitle)}<div class="lesson"><p>${esc(SAY.ownSheetHow)}</p><p class="privateline">${esc(SAY.ownPrivate)}</p></div>
-    ${sheetEditorHtml(form, lists, OWN.drafts, OWN.problems, warnings)}`,
+    ${sheetEditorHtml(form, lists, OWN.drafts, OWN.problems, warnings, OWN.groups)}`,
     `<div class="actbar"><button class="btn neutral" id="ownSave">${esc(SAY.ownSave)}${icon('arrow')}</button>
-      ${has ? `<button class="btn ghost" id="ownBack">${esc(SAY.ownCostsTitle)}</button>` : `<button class="btn ghost" id="ownSkip">${esc(SAY.ownNoAccounts)}</button>`}</div>`);
+      ${has ? `<button class="btn ghost" id="ownBack">${esc(SAY.ownBack)}</button>` : `<button class="btn ghost" id="ownSkip">${esc(SAY.ownNoAccounts)}</button>`}</div>`);
   wireOwnSheet(form);
 }
 function wireOwnSheet(form){
   document.querySelectorAll('[data-path]').forEach(box => {
-    const sync = () => setOwn({ drafts: ownSetAt(OWN.drafts, box.dataset.path, box.value) });
+    const path = box.dataset.path, group = path.startsWith('groups.');
+    const sync = () => setOwn(group ? { groups: ownSetGroupAt(OWN.groups, path, box.value) } : { drafts: ownSetAt(OWN.drafts, path, box.value) });
     box.oninput = sync;
-    box.onchange = sync;
+    // the kind of an account decides which of its fields show (`for`), so a new kind paints the account again
+    box.onchange = /^accounts\.\d+\.type$/.test(path) ? () => { sync(); paintOwnSheet(); focusOn(ownBoxId(path)); } : sync;
   });
   const edit = (drafts, focus) => { setOwn({ drafts, problems: [] }); paintOwnSheet(); if(focus) focusOn(focus); };
+  const editGroups = (groups, focus) => { setOwn({ groups, problems: [] }); paintOwnSheet(); if(focus) focusOn(focus); };
+  on('[data-add-row]', el => {
+    const id = el.dataset.addRow, rows = OWN.groups[id];
+    editGroups({ ...OWN.groups, [id]: [...rows, ownEmptyRow(ownGroupOf(form, id))] }, `[data-group="${id}"] [data-row="${rows.length}"] input`);
+  });
+  on('[data-remove-row]', el => {
+    const [id, at] = el.dataset.removeRow.split('.'), left = without(OWN.groups[id], Number(at));
+    editGroups({ ...OWN.groups, [id]: left.length ? left : [ownEmptyRow(ownGroupOf(form, id))] });
+  });
   on('[data-add-account]', () => { const next = ownEmptyAccount(form); edit([...OWN.drafts, next], `[data-account="${OWN.drafts.length}"] select, [data-account="${OWN.drafts.length}"] input`); });
   on('[data-remove-account]', el => { const at = Number(el.dataset.removeAccount), left = without(OWN.drafts, at); edit(left.length ? left : [ownEmptyAccount(form)]); });
   on('[data-add-fund]', el => {
@@ -85,19 +106,24 @@ function wireOwnSheet(form){
     edit(OWN.drafts.map((a, i) => i === at ? { ...a, holdings: without(a.holdings, fund) } : a));
   });
   on('#ownSave', () => saveSheet(form));
-  on('#ownBack', () => { setOwn({ phase: 'costs', drafts: ownDraftsFromSheet(form, sheetAccounts(LESSON.subj.id)), problems: [] }); paintOwnCosts(); window.scrollTo(0, 0); });
+  on('#ownBack', () => {
+    const sheet = notesOf(LESSON.subj.id).sheet || {};
+    setOwn({ phase: 'work', drafts: ownDraftsFromSheet(form, sheet.accounts || []), groups: ownGroupDrafts(form, OWN_WORKS[OWN.step.work].needs, sheet), problems: [] });
+    paintOwnWork(); window.scrollTo(0, 0);
+  });
   on('#ownSkip', () => { setOwn({ phase: 'skipped' }); paintOwnSkipped(); window.scrollTo(0, 0); });
 }
 function saveSheet(form){
-  const { subj, data } = LESSON, saved = ownSheetFromDraft(form, data.meta.lists, OWN.drafts);
-  if(saved.problems.length){
-    setOwn({ problems: saved.problems });
+  const { subj, data } = LESSON, saved = ownSheetFromDraft(form, data.meta.lists, OWN.drafts), more = ownGroupsFromDraft(form, data.meta.lists, OWN.groups);
+  const problems = [...saved.problems, ...more.problems];
+  if(problems.length){
+    setOwn({ problems });
     paintOwnSheet();
-    return focusOn(ownBoxId(saved.problems[0].path));
+    return focusOn(ownBoxId(problems[0].path));
   }
-  saveNote(subj.id, 'sheet', { ...(notesOf(subj.id).sheet || {}), accounts: saved.accounts });
-  setOwn({ phase: 'costs', problems: [] });
-  paintOwnCosts();
+  saveNote(subj.id, 'sheet', { ...(notesOf(subj.id).sheet || {}), accounts: saved.accounts, ...more.groups });
+  setOwn({ phase: 'work', problems: [] });
+  paintOwnWork();
   window.scrollTo(0, 0);
   focusScreenHead();
 }
@@ -106,14 +132,15 @@ function paintOwnSkipped(){
   on('#fwd', goOn);
 }
 
-/* ---------- what it costs, and the change ---------- */
-function paintOwnCosts(){
+/* ---------- what the app works out, and the change ---------- */
+function paintOwnWork(){
   const { subj, data } = LESSON, form = ownFormOf(data, OWN.step.own), actionForm = ownActionFormOf(data), lists = data.meta.lists;
   const model = OWN.step.model ? data.items[OWN.step.model] : null;
   const modelHtml = model ? `<div class="vblock soft">${lessonLabel(SAY.ownModelHeading)}<p>${esc(SAY.ownModelLine)}</p></div>
     ${blocksHtml(model.blocks, { deciding: model.deciding || [], data, scope: `own|${model.id}` })}` : '';
-  lessonShell(`${heading(SAY.ownEyebrow, SAY.ownCostsTitle)}<div class="lesson"><p>${esc(SAY.ownCostsHow)}</p></div>${ownCostsHtml(form, lists, sheetAccounts(subj.id))}${modelHtml}
-    <div class="ownsection"><h2 class="owntitle">${esc(SAY.ownActionHeading)}</h2><p class="forline">${esc(SAY.ownActionHow)}</p>
+  const work = OWN.step.work;
+  lessonShell(`${heading(SAY.ownEyebrow, SAY.workTitle[work])}<div class="lesson"><p>${esc(SAY.workHow[work])}</p></div>${ownWorkHtml(form, work, notesOf(subj.id).sheet, ownWorkCtx(data, form))}${modelHtml}
+    <div class="ownsection"><h2 class="owntitle">${esc(SAY.ownActionHeading)}</h2><p class="forline">${esc(OWN.step.repeat ? SAY.ownActionHowYear : SAY.ownActionHow)}</p>
     ${ownActionListHtml(actionsOf(subj.id), subj.id)}${ownActionFormHtml(actionForm, OWN.action.draft, OWN.action.problems)}<p class="hintline">${esc(SAY.ownNothing)}</p></div>`,
     `<div class="actbar"><button class="btn neutral" id="fwd">${esc(SAY.goOn)}${icon('arrow')}</button><button class="btn ghost" id="ownChange">${esc(SAY.ownChange)}</button></div>`);
   document.querySelectorAll('[data-own-action] [data-path]').forEach(box => {
@@ -121,21 +148,21 @@ function paintOwnCosts(){
   });
   on('[data-save-action]', () => saveAction(actionForm, false));
   on('[data-action-now]', () => saveAction(actionForm, true));
-  wireActionRows(subj, paintOwnCosts);
-  on('#ownChange', () => { setOwn({ phase: 'sheet', drafts: ownDraftsFromSheet(form, sheetAccounts(subj.id)), problems: [] }); paintOwnSheet(); window.scrollTo(0, 0); focusScreenHead(); });
+  wireActionRows(subj, paintOwnWork);
+  on('#ownChange', () => { setOwn({ phase: 'sheet', drafts: ownDraftsFromSheet(form, sheetAccounts(subj.id)), groups: ownGroupDrafts(form, OWN_WORKS[OWN.step.work].needs, notesOf(subj.id).sheet), problems: [] }); paintOwnSheet(); window.scrollTo(0, 0); focusScreenHead(); });
   on('#fwd', goOn);
 }
 // "Done now" needs only what and where; a day needs a day that is not past
 function saveAction(form, doneNow){
-  const { subj } = LESSON, made = ownActionFromDraft(form, OWN.action.draft, today(), doneNow, ownNewId('x'));
+  const { subj } = LESSON, made = ownActionFromDraft(form, OWN.action.draft, today(), doneNow, ownNewId('x'), OWN.step.repeat);
   if(made.problems.length){
     setOwn({ action: { ...OWN.action, problems: made.problems } });
-    paintOwnCosts();
+    paintOwnWork();
     return focusOn(ownBoxId(made.problems[0].path));
   }
   saveNote(subj.id, 'actions', [...actionsOf(subj.id), made.action]);
   setOwn({ action: { draft: {}, problems: [] } });
-  paintOwnCosts();
+  paintOwnWork();
   focusOn(`[data-action="${made.action.id}"]`);
 }
 // a calendar file and a done mark for each action listed (in the lesson and on the subject screen); `repaint` shows the change

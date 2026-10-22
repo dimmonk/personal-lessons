@@ -6,7 +6,7 @@
     "icons": "node scripts/render-icons.mjs",
     "maps": "node tools/maps/build-maps.mjs",
     "vendor": "node tools/vendor/firebase.mjs",
-    "test:data": "node tests/validate-data.mjs && node tests/engine-pure.mjs && node tests/number-pure.mjs && node tests/own-pure.mjs && node tests/stats-pure.mjs && node tests/stats-lessons-pure.mjs && node tests/stats-late-pure.mjs && node tests/labels-pure.mjs && node tests/account-pure.mjs && node tests/pressure-pure.mjs && node tests/civics-pure.mjs && node tests/place-pure.mjs && node tests/maps-pure.mjs && node tests/place-gen-pure.mjs",
+    "test:data": "node tests/validate-data.mjs && node tests/engine-pure.mjs && node tests/number-pure.mjs && node tests/own-pure.mjs && node tests/own-later-pure.mjs && node tests/stats-pure.mjs && node tests/stats-lessons-pure.mjs && node tests/stats-late-pure.mjs && node tests/labels-pure.mjs && node tests/account-pure.mjs && node tests/pressure-pure.mjs && node tests/civics-pure.mjs && node tests/place-pure.mjs && node tests/maps-pure.mjs && node tests/place-gen-pure.mjs",
     "test:audio": "node tests/audio-pure.mjs && node tests/sing-pure.mjs",
     "test:lessons": "node tests/validate-lessons.mjs && node tests/lessons/negative-controls.mjs",
     "test:rules": "node tests/rules.mjs",

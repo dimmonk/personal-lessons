@@ -3,12 +3,16 @@
 // the validator and the tests all score an order the same way.
 //   ask    { id, kind: 'order', prompt, steps: [{ id, text }], right: [stepId], scored?: 'whole' | 'first', then: Text, when? }
 //   `steps` are all the steps offered (a step that is in none of `right` is one that does not belong); `right` is the order of the steps the learner
-//   taps, so the learner taps `right.length` of them. 'whole' (the default) is right when every step is in its place; 'first' is right when the
+//   taps. When every step belongs, the order is the answer as soon as all are tapped; when some do not belong, which to leave out is part of the
+//   question, so the learner is not told how many to tap and answers with Answer once at least one is tapped. 'whole' (the default) is right when every step is in its place; 'first' is right when the
 //   first step tapped is the right first step (the rest are still tapped, and shown against the right order). `then` is why the order matters.
 //   answer  [stepId, ...]     result  'ok' or 'no'
 
 const orderScored = ask => ask.scored || 'whole';
-const orderReady = (ask, picked) => picked.length === ask.right.length;
+// some steps offered belong in no order: the learner chooses which to leave out
+const orderOpen = ask => ask.steps.length > ask.right.length;
+// the taps answer the ask by themselves only when every step belongs and all are tapped
+const orderReady = (ask, picked) => !orderOpen(ask) && picked.length === ask.right.length;
 function scoreOrder(data, ask, answer){
   const picked = asList(answer);
   const ok = orderScored(ask) === 'first' ? picked[0] === ask.right[0] : picked.length === ask.right.length && picked.every((id, i) => id === ask.right[i]);

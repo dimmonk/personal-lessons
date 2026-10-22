@@ -1,35 +1,38 @@
-// Wealth, lesson 2: What it costs a year, in dollars (part 2). The pilot (docs/subjects/wealth/design.md, gate 5). The rule, a worked account,
-// one with the last steps left to the learner, two alone (one to leave), the same step on the learner's own accounts (the sheet first when it is
-// empty, then a change made now or dated), and the check of part 2: three new accounts, cost within a tenth and change or leave right on all three.
+// Wealth, lesson 2: Money you need soon (part 2, unit A). Capacity before nerve: money needed soon has no room for a fall, whatever the
+// learner's nerve (research W18); a small buffer matters (W19); cash is what a bank account holds, safe and low-earning, its risk inflation
+// (W43); the three and six months and the five years are conventions, said so (W40). The rule says what counts as cash and as a usual month,
+// that a bill's money is put aside before the months are counted, and what each call does (P9), with the novice's wrong idea (P29); a worked
+// household (P10), one with the last steps left (P17), then the look-alikes (a bill soon in stocks beside one far off and one already in
+// savings, P12) and the other two calls, the learner's own spending and bills (plan gap 2), and the check: five new households, two fine.
 FC.lesson('wealth', {
-  id: 'l2', part: '2', title: 'What it costs a year, in dollars', rev: 1, status: 'draft',
-  history: [{ rev: 1, date: '2026-10-10', change: 'First version, built as the pilot of Wealth under the practice engine. Not tried on a phone yet.' }],
+  id: 'l2', part: '2', title: 'Money you need soon', rev: 1, status: 'live',
+  history: [{ rev: 1, date: '2026-10-22', change: 'First version, built to the plan (docs/subjects/wealth/plan.md, lesson 2), and fixed after its first two reviews: what counts as cash and as a usual month, a bill’s money put aside before the months, a bill already in savings, no claim that cash loses every year. Not tried on a phone yet.' }],
   why: [
-    'A fund’s cost is a small-looking percent. In dollars it is not small: 0.95% of $38,400 is $364.80 every year, whether the fund did well or badly.',
-    'Here you read a fee sheet, turn the percents into dollars, and decide: change a fund, or leave it alone. Then you do the same on your own accounts.'
+    'Leo keeps the $45,000 for his home down payment, due in three years, in a stock fund. He says he stays calm when prices fall.',
+    'A planner puts a different question: if the fund is down the year the bill comes, can the bill wait? Here you count cash in months and check the bills ahead.'
   ],
   flow: [
     { title: 'The rule',
       show: [
         { kind: 'prose', text: [
-          'Every fund takes a yearly cost, written as a percent of what you hold. To get dollars: what you hold × the percent ÷ 100. Then add any fee the plan takes on top.',
-          'Change a fund only when another fund of the same kind, on the same list, costs less. Leave it alone when nothing of its kind costs less: switching only costs you time.'] },
+          'Cash is money you can spend within days without selling anything: checking, savings, a money market account at a bank, and cash sitting in a brokerage account. Not stocks, and not a 401(k).',
+          'First the bills: money for a big bill due in five years or less stays out of stocks, put aside in savings. Then divide the rest of your cash by a usual month: rent, food, bills, with a yearly bill counted as a twelfth.',
+          'Under three months: build it up. Three to six: enough. Past six, with the bills put aside: invest the rest for the long run; cash usually earns less than stocks over the years, and rising prices are its risk. Three, six and five are common rules, not laws.'] },
         { kind: 'prose', tone: 'wrong', text: [
-          '“Pick the cheapest fund on the list.”',
-          'Pick the cheapest of the same kind. A bond fund costs less than a stock fund, but it holds something else, so it is not a swap.'] }
+          '“I stay calm in a fall, so my down payment can sit in stocks.”',
+          'Calm does not move the date. If the fund is down when the bill comes, you sell low or miss the bill.'] }
       ] },
-    { worked: 'w-statement' },
-    { set: { items: [{ gen: 'g-cost-leave', n: 1 }], order: 'listed', support: { leave: 2 } } },
-    { set: { items: [{ gen: 'g-cost-change', n: 1 }, { gen: 'g-cost-leave', n: 1 }], order: 'shuffle' } },
-    { own: 'sheet', model: 'w-statement' }
+    { worked: 'w-cash' },
+    { set: { items: [{ gen: 'g-cash-fine', n: 1 }], order: 'listed', support: { leave: 3 } } },
+    { set: { items: [[{ gen: 'g-cash-stocks', n: 1 }, { gen: 'g-cash-fine', n: 1 }], [{ gen: 'g-cash-stocks', n: 1 }, { gen: 'g-cash-held', n: 1 }], { gen: 'g-cash-short', n: 1 }, { gen: 'g-cash-idle', n: 1 }], order: 'shuffle' } },
+    { own: 'sheet', model: 'w-cash', work: 'cash' }
   ],
   check: {
-    items: [{ gen: 'g-cost-change', n: 2 }, { gen: 'g-cost-leave', n: 1 }],
+    items: [{ gen: 'g-cash-short', n: 1 }, { gen: 'g-cash-stocks', n: 1 }, { gen: 'g-cash-idle', n: 1 }, { gen: 'g-cash-fine', n: 1 }, { gen: 'g-cash-held', n: 1 }],
     feedback: 'at-end', order: 'shuffle',
     pass: [
-      { ask: 'cost', right: { min: 3 }, of: 'what the account costs a year, to within a tenth' },
-      { ask: 'call', right: { min: 3 }, of: 'change it or leave it' },
-      { ask: 'call', where: { call: 'leave' }, wrong: { max: 0 } },
-      { ask: 'switch', wrong: { max: 0 }, of: 'the fund to switch to' }]
+      { ask: 'months', right: { min: 4 }, of: 'months of spending, to within a tenth' },
+      { ask: 'call', right: { min: 4 }, of: 'what the cash needs' },
+      { ask: 'call', where: { call: 'leave' }, wrong: { max: 0 } }]
   }
 });

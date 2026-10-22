@@ -3,12 +3,17 @@
 // they mark (`triggers`) are kept in the subject's notes and nowhere else, and never scored against a truth. This file is the pure half:
 // what a typed field must be, how a draft becomes the stored shape, the app's arithmetic on what was typed, the plausible-range
 // warnings, and the calendar file (.ics) of a dated action. No page and no storage here (own-store.js, own-run.js).
-//   sheet    { accounts: [{ id, type, name?, balance, fees, holdings: [{ name, value, kind?, expense }] }], mix? }
+//   sheet    { accounts: [{ id, type, name?, institution?, owner?, balance, fees, highest?, holdings: [{ name, value, kind?, expense?, company? }] }],
+//              [groupId]: { [fieldId]: value } | null | [{ [fieldId]: value }] }   (the form's groups: what you spend, the bills ahead, the match...)
 //   actions  [{ id, what, where, when, done?, repeat? }]
 //   triggers { [triggerId]: 'YYYY-MM-DD' }
 //   answers  { [fieldId]: text, interviewDate?: 'YYYY-MM-DD', saved: 'YYYY-MM-DD' }   (Civics, step 9)
-// A private form (`subject.own`) is { into, fields: [Field], rows?: { id, label, fields: [Field] } }, a Field is
-// { id, label, type: 'choose' | 'number' | 'text' | 'date', list?, unit?, places?, optional?, warn?: { over?, under?, text } }.
+// A private form (`subject.own`) is { into, fields: [Field], rows?: { id, label, fields: [Field] }, groups?: [Group], limits?: { name: number } }, a Field is
+// { id, label, type: 'choose' | 'number' | 'text' | 'date', list?, unit?, places?, optional?, for?: [accountType], warn?: { over?, under?, text } }
+// (`for`: an account field shown and read only for accounts of those kinds). A Group (the sheet only) is { id, label, how?, fields, many?, optional? }:
+// facts about the household beside the accounts, kept at sheet[id], a record or, with `many`, a list of rows; `together: [[fieldId]]` names optional
+// fields that are filled all or none (a second step of a match: its cents and its share of pay), so one is never kept without the other. A group is asked by the step whose
+// work needs it (own-work.js); saved wholly blank it is kept as null (an `optional` group) or an empty list (`many`), so it is not asked again.
 // Nothing here may hold an account number, a login or a password: a field refuses a run of OWN_MAX_DIGITS or more digits.
 
 // The forms a subject may keep, and the fields the app reads from each (the sheet form is read by the costs and the summary, the form for
@@ -16,7 +21,7 @@
 // validator says so (V70).
 const OWN_SLOTS = ['sheet', 'actions', 'plan', 'setup', 'answers'];
 const OWN_REQUIRED = {
-  sheet: { fields: { type: 'choose', balance: 'number', fees: 'number' }, rows: { name: 'text', value: 'number', expense: 'number' } },
+  sheet: { fields: { type: 'choose', balance: 'number', fees: 'number' }, rows: { name: 'text', value: 'number', expense: 'number' } },   // a fund's expense may be optional: blank, it costs nothing in the sum and is named
   actions: { fields: { what: 'text', where: 'text', when: 'date' } },
   plan: { fields: { cue: 'text', then: 'text' } },
   setup: { fields: {}, allType: 'date' },  // every field of the setup is a thing marked done on a day
@@ -29,7 +34,7 @@ const ownDigitRun = text => new RegExp(`\\d{${OWN_MAX_DIGITS},}`).test(String(te
 let OWN_COUNTER = 0;
 const ownNewId = prefix => prefix + Date.now().toString(36) + (OWN_COUNTER++).toString(36);
 const ownMoney = value => '$' + fmtNumber(value, 2);   // what something costs: always to the cent
-const ownWhole = value => '$' + fmtNumber(value);        // what is held: cents only when there are some
+const ownWhole = value => '$' + (Number.isInteger(value) ? fmtNumber(value) : fmtNumber(value, 2));   // what is held: cents only when there are some, then both digits
 const ownRound = value => Math.round(value * 100) / 100;
 
 /* ---------- a field and a record ---------- */
@@ -68,11 +73,13 @@ const ownBlank = (fields, draft) => fields.every(f => String((draft || {})[f.id]
 // The stored accounts from the drafts of the sheet form: { accounts, problems: [{ path, text }] }. A fund row left wholly blank is dropped,
 // and so is an account left wholly blank; the fees of an account are 0 when left blank. `path` is where the message belongs
 // ("accounts.0.holdings.1.value"); with nothing left to keep, the message is under the first field of the first account.
+// the account fields that apply to an account of this kind (a field with `for` only to those kinds)
+const ownFieldsFor = (fields, type) => fields.filter(f => !f.for || f.for.includes(type));
 function ownSheetFromDraft(form, lists, drafts){
   const rowFields = form.rows ? form.rows.fields : [], problems = [];
   const accounts = drafts.map((draft, i) => {
     if(ownBlank(form.fields, draft) && (draft.holdings || []).every(row => ownBlank(rowFields, row))) return null;
-    const head = ownRecord(form.fields, lists, draft);
+    const head = ownRecord(ownFieldsFor(form.fields, draft.type), lists, draft);
     Object.entries(head.problems).forEach(([id, text]) => problems.push({ path: `accounts.${i}.${id}`, text }));
     const holdings = (draft.holdings || []).map((row, j) => {
       if(ownBlank(rowFields, row)) return null;
@@ -93,9 +100,45 @@ const ownDraftsFromSheet = (form, accounts) => accounts.map(a => ({
 const ownEmptyAccount = form => ({ id: ownNewId('a'), ...Object.fromEntries(form.fields.map(f => [f.id, ''])), holdings: [ownEmptyHolding(form)] });
 const ownEmptyHolding = form => Object.fromEntries((form.rows ? form.rows.fields : []).map(f => [f.id, '']));
 
+/* ---------- the groups beside the accounts ---------- */
+const ownGroupOf = (form, id) => (form.groups || []).find(g => g.id === id) || lessonFail(`the sheet has no group ${id}`);
+const ownEmptyRow = group => Object.fromEntries(group.fields.map(f => [f.id, '']));
+// the drafts (all text) of the named groups, from what is stored: a record of boxes, or a list of rows with one blank row to start
+const ownGroupDrafts = (form, ids, sheet) => Object.fromEntries(ids.map(id => {
+  const group = ownGroupOf(form, id), held = (sheet || {})[id];
+  const text = record => Object.fromEntries(group.fields.map(f => [f.id, ownText((record || {})[f.id])]));
+  return [id, group.many ? (held && held.length ? held.map(text) : [ownEmptyRow(group)]) : text(held)];
+}));
+// The stored groups from their drafts: { groups: { [id]: value }, problems: [{ path, text }] }. A row of a list left wholly blank is dropped; a
+// record left wholly blank is null when the group is optional, and asks for its fields when it is not. Fields filled together that are partly
+// filled ask for the blank ones.
+const ownTogetherProblems = (group, draft, at) => (group.together || []).flatMap(ids => {
+  const blank = ids.filter(id => String((draft || {})[id] === undefined ? '' : draft[id]).trim() === '');
+  return blank.length && blank.length < ids.length ? blank.map(id => ({ path: `${at}.${id}`, text: SAY.ownTogether })) : [];
+});
+function ownGroupsFromDraft(form, lists, drafts){
+  const problems = [];
+  const groups = Object.fromEntries(Object.entries(drafts).map(([id, draft]) => {
+    const group = ownGroupOf(form, id), at = `groups.${id}`;
+    if(group.many) return [id, draft.map((row, j) => {
+      if(ownBlank(group.fields, row)) return null;
+      const r = ownRecord(group.fields, lists, row);
+      Object.entries(r.problems).forEach(([f, text]) => problems.push({ path: `${at}.${j}.${f}`, text }));
+      problems.push(...ownTogetherProblems(group, row, `${at}.${j}`));
+      return r.value;
+    }).filter(Boolean)];
+    if(group.optional && ownBlank(group.fields, draft)) return [id, null];
+    const r = ownRecord(group.fields, lists, draft);
+    Object.entries(r.problems).forEach(([f, text]) => problems.push({ path: `${at}.${f}`, text }));
+    problems.push(...ownTogetherProblems(group, draft, at));
+    return [id, r.value];
+  }));
+  return { groups, problems };
+}
+
 /* ---------- the app's arithmetic on what was typed ---------- */
-// What a fund costs in a year in dollars: its value times its yearly cost in percent, to the cent
-const ownHoldingDollars = h => ownRound(h.value * h.expense / 100);
+// What a fund costs in a year in dollars: its value times its yearly cost in percent, to the cent (nothing while its cost is not typed)
+const ownHoldingDollars = h => h.expense === undefined ? 0 : ownRound(h.value * h.expense / 100);
 // What an account costs in a year: its funds, then the fees taken from it
 function ownAccountCost(account){
   const funds = (account.holdings || []).map(h => ({ name: h.name, value: h.value, expense: h.expense, dollars: ownHoldingDollars(h) }));
@@ -126,11 +169,12 @@ const ownDraftWarnings = (form, lists, drafts) => ownWarningsOf(form, drafts.map
 
 /* ---------- dated actions ---------- */
 // An action from the draft of the action form and the day it is made: a date to do it by, or done now
-function ownActionFromDraft(form, draft, today, doneNow, id){
+// `repeat` is 'year' for an action saved in a step that comes back every year (the yearly check): its calendar file repeats
+function ownActionFromDraft(form, draft, today, doneNow, id, repeat){
   const fields = doneNow ? form.fields.filter(f => f.type !== 'date') : form.fields;
   const r = ownRecord(fields, {}, draft), problems = Object.entries(r.problems).map(([field, text]) => ({ path: field, text }));
   if(!doneNow && r.value.when !== undefined && r.value.when < today) problems.push({ path: 'when', text: SAY.ownPast });
-  const action = { id, what: r.value.what, where: r.value.where, when: doneNow ? today : r.value.when, ...(doneNow ? { done: today } : {}) };
+  const action = { id, what: r.value.what, where: r.value.where, when: doneNow ? today : r.value.when, ...(doneNow ? { done: today } : {}), ...(repeat ? { repeat } : {}) };
   return { action, problems };
 }
 const ownMarkDone = (actions, id, today) => actions.map(a => a.id === id ? { ...a, done: today } : a);

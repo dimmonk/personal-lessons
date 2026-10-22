@@ -193,7 +193,8 @@ function exchangeAskLines(e, data, ask, marks) {
 // steps put in order: the learner taps them in the order they would do them
 function orderAskLines(e, ask, marks) {
   const { SAY } = e, text = id => ask.steps.find(s => s.id === id).text;
-  return [`**${paras(ask.prompt).join(' ')}**`, `- ${SAY.orderHint(ask.right.length, e.orderScored(ask))} The steps are offered mixed (never already in the right order): ${ask.steps.map(s => `"${s.text}"`).join('; ')}. Each tapped step is numbered; "${SAY.orderReset}" clears the taps; the answer is the order tapped once ${ask.right.length} are.`,
+  const open = ask.steps.length > ask.right.length;
+  return [`**${paras(ask.prompt).join(' ')}**`, `- ${open ? SAY.orderHintOpen(e.orderScored(ask)) : SAY.orderHint(ask.right.length, e.orderScored(ask))} The steps are offered mixed (never already in the right order): ${ask.steps.map(s => `"${s.text}"`).join('; ')}. Each tapped step is numbered; "${SAY.orderReset}" clears the taps; ${open ? `the answer is the order tapped when "${SAY.answerBtn}" is pressed (the right order has ${ask.right.length}, which the screen does not say).` : `the answer is the order tapped once ${ask.right.length} are.`}`,
     ...(marks ? [`- Right: ${ask.right.map(text).join(', then ')}${e.orderScored(ask) === 'first' ? ' (only the first step counts)' : ''}. After a miss: "${SAY.orderYouPut}: …" and why the order matters: ${paras(ask.then).join(' ')}`] : [])];
 }
 // a place: a tap on a blank map (or, with its neighbor and water, two taps and a button "Landlocked"); the right place is lit after the answer and the tap marked
@@ -285,7 +286,7 @@ function rangeFirst(e, refs, shown) {
 
 /* ---------- the step on the learner's own data ---------- */
 // What the learner meets, in order. Every sentence the app prints is read from SAY; the fields are read from the subject's private forms.
-const fieldWords = f => `${f.label}${f.optional ? SAYPLAIN.optional : ''} (${f.type === 'choose' ? 'choose one' : f.type === 'number' ? `a number${f.unit ? `, in ${f.unit}` : ''}` : f.type === 'date' ? 'a day' : 'words'})${f.warn ? `; over ${f.warn.over}: "${f.warn.text}"` : ''}`;
+const fieldWords = f => `${f.label}${f.optional ? SAYPLAIN.optional : ''} (${f.type === 'choose' ? 'choose one' : f.type === 'number' ? `a number${f.unit ? `, in ${f.unit}` : ''}` : f.type === 'date' ? 'a day' : 'words'})${f.warn ? `; ${f.warn.over !== undefined ? `over ${f.warn.over}` : `under ${f.warn.under}`}: "${f.warn.text}"` : ''}`;
 const SAYPLAIN = { optional: ' (optional)' };
 // the plan: two boxes, the sentence they make, kept as { cue, then, saved }; the own ways in: things marked done on a day
 function planLines(e, subject, step, at) {
@@ -306,12 +307,18 @@ function ownLines(e, subject, lesson, step, at) {
   if (subject.meta.own[step.own].into === 'answers') return answersLines(e, subject, step, at);
   const { SAY } = e, form = subject.meta.own[step.own], actions = Object.values(subject.meta.own).find(f => f.into === 'actions'), lists = subject.meta.lists;
   const model = step.model ? subject.items[step.model] : null, trigger = lesson.trigger && ((lists.trigger || []).find(t => t.id === lesson.trigger) || {}).text;
-  const out = [`## ${at}: On your own accounts`, '', 'The same step on the learner\'s own data. Nothing here is scored, stored as a try, logged or sent: it is written to this phone only (the sheet, the dated changes and the moments marked).', ''];
+  const out = [`## ${at}: On your own accounts`, '', 'The same step on the learner\'s own data. Nothing here is scored, stored as a try or logged: it is kept in the learner\'s own account with their sign-in, with a copy on this phone, and shared with no one (the sheet, the dated changes and the moments marked).', ''];
   if (trigger) out.push(`**Waits for a moment.** Until the learner marks "${trigger}" (on this screen, or on the subject screen) the step says "${SAY.ownWaitTitle}": "${SAY.ownWaitLine(trigger)}" with "${SAY.ownWaitMark}" and "${SAY.ownWaitLater}".`, '');
   out.push(`**The sheet, when it is empty.** "${SAY.ownSheetTitle}": ${SAY.ownSheetHow} ${SAY.ownPrivate}`, '',
     ...form.fields.map(f => `- ${fieldWords(f)}`), ...(form.rows ? [`- ${form.rows.label}, one row for each, added with "${SAY.ownAddFund}":`, ...form.rows.fields.map(f => `  - ${fieldWords(f)}`)] : []), '',
     `Each account has "${SAY.ownRemoveAccount}" and the sheet has "${SAY.ownAddAccount}". Refused, with a line under the field and nothing stored: a field left empty, a word where a number goes, and any run of ${e.OWN_MAX_DIGITS || 8} or more digits ("${SAY.ownDigits}"). A fund row or an account left wholly blank is dropped. Buttons: "${SAY.ownSave}", and "${SAY.ownNoAccounts}" (then "${SAY.ownNoAccountsLine}").`, '');
-  out.push(`**What it costs.** "${SAY.ownCostsTitle}": ${SAY.ownCostsHow} Each account is a statement of its funds (value, yearly cost, dollars a year), the fees, and "${SAY.ownThisCosts}" in dollars; then "${SAY.ownAllCost}" in dollars with its share of what is in the accounts. A yearly cost over the form's own limit is warned about and kept; funds that add up to a different balance are said so.`, '');
+  const work = e.OWN_WORKS[step.work], groups = (form.groups || []).filter(g => work.needs.includes(g.id));
+  const kinds = id => (lists.accountType || []).filter(o => id.includes(o.id)).map(o => o.text).join(', ');
+  form.fields.filter(f => f.for).forEach(f => out.push(`(The field "${f.label}" shows only for: ${kinds(f.for)}.)`, ''));
+  if (groups.length) out.push(`**Beside the accounts, when not filled in yet** (the sheet opens on them even when it has accounts):`, '',
+    ...groups.flatMap(g => [`- "${g.label}"${g.optional ? ' (optional: may be left blank)' : ''}${g.how ? `: ${g.how}` : ''}${g.many ? ` One line each, added with "${SAY.ownAddRow}", removed with "${SAY.ownRemoveRow}".` : ''}`,
+      ...g.fields.map(f => `  - ${fieldWords(f)}`)]), '');
+  out.push(`**What the app works out.** "${SAY.workTitle[step.work]}": ${SAY.workHow[step.work]} It shows its table${work.needs.length ? ' from the accounts and the groups above' : ' from the accounts'}, then its lines; a line that calls for a look is set off. A yearly cost over the form's own limit is warned about and kept; funds that add up to a different balance are said so. "${SAY.ownChange}" opens the sheet again.`, '');
   if (model) out.push(`**The lines to find.** "${SAY.ownModelHeading}": ${SAY.ownModelLine} The sample of the worked example is shown again with its deciding lines marked:`, '', blocksText(model.blocks, model.deciding || [], subject.meta.refs || []));
   out.push(`**The change.** "${SAY.ownActionHeading}": ${SAY.ownActionHow}`, '', ...actions.fields.map(f => `- ${fieldWords(f)}`), '',
     `Buttons: "${SAY.ownSaveAction}" (the day may not be in the past) and "${SAY.ownDoneNow}" (needs only what and where, and is marked done today). Each change is listed with "${SAY.ownCalendar}", which saves a calendar file (.ics) for its day with a reminder at nine, and "${SAY.ownMarkDone}". "${SAY.ownNothing}" Then "${SAY.goOn}".`, '');
@@ -354,7 +361,7 @@ export function renderLesson(loaded, subjectId, lessonId) {
       out.push(`## ${at}: A worked example`, '', blocksText(item.blocks, [], subject.meta.refs || [], { rules: subject.meta.rules }),
         ...item.asks.filter(a => a.kind === 'place').map(a => `\nAbove the map: **${paras(a.prompt).join(' ')}**\nThe map of ${MAPS[a.map].name} with ${e.placeRightText(a)} lit${a.mode === 'neighbor-water' ? '' : ' and the tap shown on it'}.`));
       if (item.asks.length && item.asks[0].kind === 'choose') out.push('Before the working, the learner may commit to a choice (not scored, not stored):', ...askLines(e, data, item.asks[0], false, item), '');
-      const right = a => a.kind === 'place' ? e.placeRightText(a) : a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
+      const right = a => a.kind === 'place' ? e.placeRightText(a) : a.kind === 'text' ? (a.accept ? a.accept.map(x => e.recallEntryText(x)).join('; ') : paras(a.model).join(' ')) : a.kind === 'tap' ? e.tapRightText(a, item) : a.kind === 'number' ? e.frameFilled(a, e.numberAnswers(item, a)) : a.kind === 'form' ? a.fields.map(f => e.formFieldRight(subject, a, f, item)).join('; ') : a.kind === 'order' ? a.right.map(id => a.steps.find(x => x.id === id).text).join(', then ') : e.chooseOptions(subject, a).filter(o => o.ok).map(o => o.text).join('; ');
       out.push('The working, one step at a time:', ...(item.steps || []).map(s => `${'1.'} ${s.does} ${s.working}`), '', `Then the answer: ${item.asks.map(right).join(' / ').replace(/\.$/, '')}. ${paras(item.reason).join(' ')}`, ...(item.need ? [`What you would need to see: ${paras(item.need).join(' ')}`] : []),
         ...(item.has ? e.hasLines(subject, item).flatMap(g => [`${(g.heading || e.SAY.hasHeading(g.name))}, each need found (with its line) or missing:`, ...g.needs.map(n => `- ${n.found ? `${e.SAY.hasFound}: ${n.text} “${n.found.text}”` : `${e.SAY.hasMissing}: ${n.text} ${e.SAY.hasNowhere}`}`)]) : []),
         ...(item.figure ? ['', 'A picture follows:', ...blockLines(item.figure)] : []), '');

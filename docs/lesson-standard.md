@@ -106,7 +106,7 @@ FC.lesson('stats', {
 Step = { show: [Block], title }            // a teaching screen: a rule, a wrong idea, a contrast pair, a map
      | { worked: itemId }                  // an item shown answered, step by step (one optional choice to commit to first)
      | { set: Set }
-     | { own: formId, model?: itemId }     // the same step on the learner's own data (section 5.4)
+     | { own: formId, model?: itemId, work?: workId, repeat?: 'year' }   // the same step on the learner's own data (section 5.4); `work` on the sheet only, and required there; `repeat` (sheet only) makes its changes come back every year
 Set  = { items: [ItemRef | [ItemRef, ItemRef]],   // an inner pair is asked back to back, its order random
          order: 'listed' | 'shuffle', support?: Support, seconds?: 15 | 20,
          mix?: { from: [lessonId], share }, over?: 'busy', plan?: true }
@@ -237,7 +237,7 @@ dot, is named from its state lit), and its `forms` keeps it to some of its group
 | `form` | rows of number and choice fields, answered whole | fills them in | field by field, as `number` and `choose` | a line per missed field, in its own kind's words |
 | `tap` | the `lines` of block `in` become buttons; `none` adds a "Not given" button | taps one line (`pick: n`: n) | right if the tapped set is `right` | "You tapped …" and the line's `note` and slip |
 | `text` | a box under a `spoken` question, and "Not yet" | types words | matches an accepted answer (section 3.7); with `model`, never scored | every accepted answer, and the item's `reason` |
-| `order` | `steps` to put in order | taps `right.length` of them | the whole order, or `scored: 'first'` | the right order and `then` |
+| `order` | `steps` to put in order | taps `right.length` of them; with a step that belongs in no order, taps those it would do and Answer | the whole order, or `scored: 'first'` | the right order and `then` |
 | `exchange` | a call or chat whose turns follow the replies | picks a reply each turn | right if it reaches an `ok` end | the pushing lines marked, and where it could have ended |
 | `place` | the blank map of a region (3.11), with no names; with `mode: 'neighbor-water'` a button "Landlocked" in the row of the zoom buttons once a neighbor is tapped | taps the map: the place; or a neighbor, then the water (or "Landlocked") | right if the tap is inside a right place's shape; the neighbor and water ones by the map data | "You tapped: <the place the tap was on>", the slip of that place; the right place lit and the tap marked |
 | `sing` | the pitch strip (section 3.8) | sings after the target plays | section 3.8 | the result in words |
@@ -310,8 +310,10 @@ chosen and nothing is marked until the end.
   baseline or after "Not yet". A pass rule by ask counts a claim as right.
 
 **`order`** `{ id, kind, prompt, steps: [{ id, text }], right: [stepId], scored?: 'whole' | 'first', then, when? }`.
-Every step is offered, mixed and never already in order; `steps` may hold one that belongs in no order; the learner taps
-`right.length` of them, each numbered and shut, and "Start again" clears them. `scored: 'first'` is right when the
+Every step is offered, mixed and never already in order; `steps` may hold one that belongs in no order. When every step belongs, the
+learner taps them all and is told how many; when one does not, leaving it out is part of the question, so the count is not given and the
+learner taps the steps they would do and presses Answer (open once one is tapped). Each tapped step is numbered and shut, and "Start
+again" clears them. `scored: 'first'` is right when the
 first step is.
 
 **`exchange`** `{ id, kind, prompt, form: 'call' | 'chat', from, detail, start, turns: { id: { lines, push?, options:
@@ -683,8 +685,12 @@ No other part is written (X5). Records of the old lessons are never read, and we
 In `pl:<s>:notes` only. Never scored against a truth and never shared: it is kept in the learner's own account, which
 no other account can read (`firestore.rules`), and leaves it only in a file the learner saves. Built (`OWN_SLOTS` in `public/app/lessons/own.js`):
 - `range: { low, high, set }` (Singing): measured, never typed.
-- `sheet: { accounts: [{ id, name, type, balance, holdings: [{ name, value, kind, expense }], fees, matchRule?,
-  beneficiary }], mix }` (Wealth). `actions: [{ id, what, where, when, done?, repeat? }]`. `triggers: { [id]: date }`,
+- `sheet: { accounts: [{ id, name, type, institution?, owner?, balance, holdings: [{ name, value, kind?, expense?, company? }], fees, highest? }], [groupId]: record | null | [rows] }`
+  (Wealth). The sheet form may carry `groups` beside its accounts (`{ id, label, fields, how?, many?, optional? }`: what you spend, the bills
+  ahead, the employer match in one step or two, the tax rate and last year's bond payouts, the insurance limits, the mix chosen, income after work), kept at `sheet[groupId]` as a record, or with `many` a
+  list of rows; a group saved wholly blank is `null` (when `optional`) or `[]`, so it is not asked again. An account field with `for: [accountType]`
+  is shown and read only for those kinds (the bank or firm of a bank or brokerage account, whose name a bank account is in, the highest balance of an account outside the US). A fund's yearly cost is optional: left blank it adds nothing to the cost and the cost work names it. `limits` holds the thresholds the subject's lessons
+  teach (Wealth: 3 and 6 months, 5 years, 10%, 5 points), which the work compares with. `actions: [{ id, what, where, when, done?, repeat? }]`. `triggers: { [id]: date }`,
   marked on the subject screen or at the step that waits, with no form.
 - `plan: { cue, then, saved }` (Scams, Stats): two boxes of at most 80 characters, kept as "If <when>, I will <what>.",
   changeable and skippable. The words around it are the subject's own, on its form into the plan (`words: { title, how, saved, before }`:
@@ -708,11 +714,25 @@ told it looks wrong). A row or account left wholly blank is dropped; blank fees 
 1. If the lesson has `trigger` and the moment is not marked: "It happened" (marks today) or "Come back to it later".
 2. A lesson that needs private data an earlier lesson makes opens that form first when it is empty (Singing's range,
    Wealth's sheet). "I have no account to look at yet" goes on and stores nothing.
-3. The app's arithmetic on what was typed (Wealth: each fund's value times its yearly cost over 100, the fees, the
-   total of each account and of all, in dollars first and as a share second), its warnings, and funds that add up to a
-   different balance than typed.
+3. The app's arithmetic on what was typed: the step's `work` (`OWN_WORKS` in `public/app/lessons/own-work.js`, the works of lessons 7 to 12 in `own-work-later.js`), each a pure function of the
+   stored sheet giving tables and lines, a line that calls for a look set apart: `cost` (each fund's value times its yearly cost over 100, the
+   fees, the totals, in dollars first and as a share second), `list` (each account's share and what pays if the bank or firm fails; bank accounts added up by
+   bank and by kind of ownership, one name against the FDIC limit and joint with one other against twice it, brokerage accounts by firm against SIPC's, the part over flagged), `cash` (the bills due within the limit's years put aside first, months of spending on the rest of the cash you can reach, too little or idle),
+   `match` (the employer's money left each year, a match in two steps counted to where the last step ends, and a line to check vesting and a true-up), `placement` (bonds taxed every year while a 401(k) or IRA holds stocks, a Roth or HSA not counted, the tax on last year's bond payouts when the rate is typed, and what to read before a sale), `share` (one
+   company across accounts, grouped by the company typed, against everything, with where to sell first), `drift` (the stock share of the invested accounts against the mix chosen, and the money to move; a fund not marked, or one that mixes
+   by age beside other funds, leaves it not settled with no move; one that mixes by age alone needs nothing), `cover` (what a claim could reach, every account but a
+   401(k) plus what else is owned less what is owed, never below zero, against the lower of the car and home liability limits plus an umbrella), `foreign` (the highest balances outside the US against the FBAR and Form 8938 lines; a TFSA, an RRSP,
+   a fund held abroad), `heirs` (each account with what decides who gets it, and everything against the estate tax line looked up), `rate` (a year's spending plus the tax on withdrawals, less income after work,
+   over the invested accounts, held unrounded against the starting rate looked up), `yearly` (every work above on one sheet: each part "look at it", "not settled" when
+   the sheet lacks what it needs, "check by hand" where the sheet cannot settle it, or "nothing to change"; the spending rate only once income after work
+   is typed). A work that lacks what it needs says so (`open`) and never prints "nothing to change". A work reads only the sheet, the subject's `limits`, its dated `refs`
+   (parsed for their numbers) and what each account kind and fund kind means (`OWN_ACCOUNT`, `OWN_KIND`). When the sheet lacks a group the
+   work needs, the step opens the sheet form on that group first. Then its warnings, and funds that add up to a different balance than typed. Where a
+   line calls for a look (often a dollar move on the learner's own numbers), the work ends with one line saying it applies the rule's line to their numbers and is
+   not advice (`SAY.workNotAdvice`).
 4. The sample's lines to find (`model`, its deciding lines marked).
-5. The change: what, where and a day, or "I did it now". Each change has "Add to my calendar" and "Mark done".
+5. The change: what, where and a day, or "I did it now". Each change has "Add to my calendar" and "Mark done". In a step with `repeat: 'year'`
+   (the yearly check) each change is saved with `repeat: 'year'`, listed with "every year", and its calendar file repeats.
 "Go on" is never held back, except on the `answers` form, which must be saved first; a lesson is done by its check. A
 lesson that asks a question reading an own answer has a step that enters them first (V70). A question whose own answer
 is not entered is not asked, drawn or due.
@@ -873,7 +893,7 @@ a dot and a sea made for the map block and the place ask). Review tests fix the 
 | V58 | Held findings (`tests/lessons/held-findings.json`) only shrink: one that no longer fires must go, and none may be added since the last commit | a held finding that no longer fires |
 | V60 | American English in every string | "colour" in a reason |
 | V62 | No abstract or textbook word | "utilize" in a reason |
-| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
+| V70 | Shape: every subject, lesson, step, set, item, block, ask, generator, form and pass rule matches section 3 exactly; a step on the sheet names a work the app has, and the sheet holds the groups, fields, limits and refs that work reads, and only account and fund kinds the app knows; ids unique; every reference exists; `seconds` only where `timed`; what is not built is refused. A place group (3.5) is read against the map data (the region, each place on it, a form that is one of the four and has its words, a reason and spellings for each place, no place or spelling twice, a slip keyed by a place of the map) and every question it can make is read as an item (so its strand and its `form` facet exist); a check drawn from one (3.4) asks only forms the group asks, a split above zero, a number of each form the group can ask after `only`, and keeps only places the group has to forms they can be asked in; a lesson's reference to one names a form and a place it has and no more places than the form offers, and a set holding one takes no help | an ask of an unknown kind |
 | V71 | Every lesson's `part` is a part of the subject record; every part has exactly one lesson once the subject is `complete`; only a `role: 'baseline'` lesson has no part; lessons are in part order | a part with no lesson in a complete subject |
 | V72 | A check is its part's: no fixed item also in a set or the worked item, or with `recall` only items the sets asked, each once; a spoken check's every item has a `spoken` block; every pass rule says `right`, `wrong` or `slip`, has `max` only with a slip, names an ask, facet value or slip that exists, and needs no `min` above what it counts (for a check drawn from a place group: what its split asks of the forms the rule selects; support in a check is V79's) | a check item also in a set |
 | V73 | Reading (the why, teaching screens and panels on them, at 200 words a minute) stays within `readingShare` of the lesson's time; a worked case is shown practice and counts as doing, at the same 200 words a minute; doing is `DOING_SECONDS` (choose, tap and place 15, number 60, text 30, order 25, sing 20, exchange 45, form 60, an own step 60, a drawn item 20; a place group's question by the form it is asked in) | a why padded past the share |
@@ -999,9 +1019,12 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   review is not built. The tasks `hold`, `slide`, `interval`, `melody` and `light` are tested on `chorus` only.
 - **Math**: lesson 1 (rough totals, estimate first, and printed totals checked); two strands with generators (prices
   in cents ending in 9). The 14-day retest belongs to lesson 7.
-- **Wealth**: lesson 2, what an account costs a year, with the sheet, the costs and dated changes; the strand "What an
-  account costs a year". Not built: the other lessons' arithmetic, the yearly check, editing accounts outside a step,
-  and Wealth's first ref (the reporting threshold, to be looked up the day lesson 6 is written).
+- **Wealth**: rebuilt 2026-10-22 to its plan (`docs/subjects/wealth/plan.md`): twelve parts in four units; lessons 1 to 6 built (the list
+  and what protects it, money needed soon, what it costs (the pilot, now part 3), the match and the order of saving, taxes, one big bet),
+  each ending on its own work on the learner's sheet; refs for 2026 (FDIC, SIPC, the 401(k), IRA and HSA limits, the loss limit, the FBAR
+  and Form 8938 lines); lessons 7 to 12 built the same day (the mix and its drift, a loss you could not pay, accounts outside the US,
+  beneficiary pages and papers, the spending rate, the whole yearly check whose change repeats every year), so the subject is `complete`.
+  Not built: editing accounts outside a step.
 - **Stats**: complete (2026-10-22, plan: `docs/subjects/stats/plan.md`): the baseline and lessons 1 to 9, each claim put to the
   standing questions (what it claims, the line or "Not given", the verdict) with the lesson's own between them (a size typed, what else
   could explain it, a chart's change); lesson 9 asks the six questions from memory, offers the plan, and its check comes back on new
@@ -1054,6 +1077,20 @@ subject is `complete`, so each part after the pilot shows "Not built yet".
   The service worker cache is v27.
 
 - **2026-10-17, the design-record process removed**: the record kept in each subject's `design.md` (as JSON), the owner approvals with their fingerprints, the lists of what the owner asked, tried and opened, the holds on content, the stand-in entries, the two rules that read the record (one for its shape, one for the mirrors of its sentence and reading share), the check of the owner's word in the commit message (its hook and its step in the push workflow) and the record tools are gone. The parts are read from the subject record alone (V71), and `endResult` and `readingShare` are the subject record's own (V73 measures against `readingShare`). A lesson's `status` is set by its author once its learner and research reviews pass (section 2). The pre-commit hook and the push workflow still run the lesson tier and its seeded faults. The old `docs/subjects/*/design.md` files stay as history prose.
+
+- **2026-10-22, the own step's work** (Wealth's plan, engine gaps 1 to 3): an own step on the sheet names its `work` (5.4, `own-work.js`): ten
+  works, each a pure function of the sheet; the sheet's `groups` beside its accounts (what you spend, the bills ahead, the match, the
+  insurance limits, the mix chosen, income after work), an account field kept to some kinds (`for`), and the form's `limits`; a group a work
+  needs is asked in the step when it is not held yet, and a blank one is kept so it is not asked again; the subject screen lists the groups
+  filled in. V70 reads a step's work against the sheet and V81 reads the groups' fields, each with seeded faults; `tests/own-pure.mjs` holds
+  every work's arithmetic and Wealth's made questions against it. Money held with cents prints both digits. Wealth's list of moments has
+  "I will stop working within a year" (`retire`) for the spending rate. `FC.ENGINE` is 16.
+
+- **2026-10-22, Wealth's lessons 7 to 12** (plan lessons 7 to 12): the works of lessons 7 to 11 move to `own-work-later.js`, with `heirs` and
+  `yearly` added; `cover` leaves a 401(k) out of what a claim could reach (ERISA's anti-alienation rule); `rate` reads the dated value `safeRate`
+  (3.9% for 2026) in place of the sheet's 4% limit; a work may say it is not settled (`open`); an own step may carry `repeat: 'year'` (V70 refuses
+  any other beat, or one off the sheet, with a seeded fault), and its changes repeat in the calendar. `tests/own-later-pure.mjs` holds each worked
+  household typed in against its work and each made question against its rule.
 
 A future change to a rule is a dated entry here and the edit in place, in the section that holds the rule. Never a new
 section that overrides older ones: this file always reads as one set of rules in force.

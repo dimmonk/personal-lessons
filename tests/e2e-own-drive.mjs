@@ -9,10 +9,12 @@ export const jumpTo = (page, at) => page.evaluate(n => moveLesson(n), at);
 export const storedNotes = (page, subject) => page.evaluate(id => Object.keys(notesOf(id)).length ? notesOf(id) : null, subject);
 
 const box = (page, path) => page.locator(`#own-${path.replace(/\./g, '-')}`);
-// one account of the sheet form: { type, name?, balance, fees?, funds: [{ name, value, expense, kind? }] }; fund rows past the first are added with the button
+// one account of the sheet form: { type, name?, institution?, owner?, balance, fees?, funds: [{ name, value, expense?, kind?, company? }] }; fund rows past the first are added with the button
 export async function typeAccount(page, at, account) {
   await box(page, `accounts.${at}.type`).selectOption(account.type);
   if (account.name !== undefined) await box(page, `accounts.${at}.name`).fill(account.name);
+  if (account.institution !== undefined) await box(page, `accounts.${at}.institution`).fill(account.institution);
+  if (account.owner !== undefined) await box(page, `accounts.${at}.owner`).selectOption(account.owner);
   await box(page, `accounts.${at}.balance`).fill(account.balance);
   if (account.fees !== undefined) await box(page, `accounts.${at}.fees`).fill(account.fees);
   for (let j = 0; j < (account.funds || []).length; j++) {
@@ -20,8 +22,9 @@ export async function typeAccount(page, at, account) {
     const f = account.funds[j], p = `accounts.${at}.holdings.${j}`;
     await box(page, `${p}.name`).fill(f.name);
     await box(page, `${p}.value`).fill(f.value);
-    await box(page, `${p}.expense`).fill(f.expense);
+    if (f.expense !== undefined) await box(page, `${p}.expense`).fill(f.expense);
     if (f.kind) await box(page, `${p}.kind`).selectOption(f.kind);
+    if (f.company !== undefined) await box(page, `${p}.company`).fill(f.company);
   }
 }
 // the dated change: what, where and a day

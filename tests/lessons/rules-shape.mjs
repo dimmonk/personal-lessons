@@ -300,6 +300,12 @@ function supportFitsProblems(set, where, ctx) {
     problems.push(`${where}: the group turns on the estimate check and none of its questions has an estimate and an exact answer`);
   }
   if (support.leave && defs.some(d => !(d.steps || []).length)) problems.push(`${where}: leaves the last steps to the learner, and a question of the group has no steps`);
+  // an ask the help leaves to the learner can never open when it waits on an ask the help answers (the given answer is not a choice made)
+  if (support.leave) defs.forEach(d => {
+    const steps = d.steps || [], given = steps.slice(0, Math.max(0, steps.length - support.leave)).map(s => s.ask).filter(Boolean);
+    (d.asks || []).filter(a => !given.includes(a.id) && a.when && given.includes(a.when.ask))
+      .forEach(a => problems.push(`${where}: the help answers "${a.when.ask}" of ${d.id}, so "${a.id}", which waits on it, never opens: leave more steps`));
+  });
   if (defs.some(engine.isPlaceGen)) { problems.push(`${where}: a group of places takes no help`); return problems; }
   if (support.panel && defs.some(d => !engine.panelBlocksOf(d).length)) problems.push(`${where}: shows what the label needs beside the words, and a question of the group has no panel`);
   return problems;
@@ -314,6 +320,44 @@ function ownStepProblems(step, where, ctx) {
   if (step.model && !subject.items[step.model]) problems.push(`${where}: the model "${step.model}" is not an item of the subject`);
   if (step.model && form.into !== 'sheet') problems.push(`${where}: only a step on the sheet shows a model`);
   if (form.into === 'sheet' && !Object.values(own).some(f => f.into === 'actions')) problems.push(`${where}: the subject has no private form for actions, which the step ends in`);
+  if (form.into === 'sheet') problems.push(...workProblems(step, form, where, ctx));
+  else if (step.work) problems.push(`${where}: only a step on the sheet names a work`);
+  if (step.repeat !== undefined && (step.repeat !== 'year' || form.into !== 'sheet')) problems.push(`${where}: repeat is 'year', on a step on the sheet only (its changes come back every year)`);
+  return problems;
+}
+// A step on the sheet names the work the app shows (own-work.js), and the sheet holds what that work reads: the groups it needs with the
+// fields it reads, the account fields beyond the ones every sheet has, the thresholds (`limits`), the dated values (`refs`) and, when it reads
+// what an account kind or a fund kind means, only kinds the app knows.
+function workProblems(step, form, where, ctx) {
+  const { subject, engine } = ctx, work = step.work && engine.OWN_WORKS[step.work];
+  if (!step.work) return [`${where}: a step on the sheet names the work the app shows (one of ${Object.keys(engine.OWN_WORKS).join(', ')})`];
+  if (!work) return [`${where}: "${step.work}" is not a work the app has (${Object.keys(engine.OWN_WORKS).join(', ')})`];
+  const problems = [], groups = form.groups || [];
+  Object.entries(work.reads).forEach(([gid, fields]) => {
+    const group = groups.find(g => g.id === gid);
+    if (!group) { problems.push(`${where}: the work "${step.work}" reads the group "${gid}", which the sheet does not have`); return; }
+    Object.entries(fields).forEach(([fid, type]) => {
+      const f = group.fields.find(x => x.id === fid);
+      if (!f) problems.push(`${where}: the work "${step.work}" reads "${fid}" of the group "${gid}", which it does not have`);
+      else if (f.type !== type) problems.push(`${where}: "${fid}" of the group "${gid}" is a ${f.type}, the work reads a ${type}`);
+    });
+  });
+  work.needs.filter(g => !groups.some(x => x.id === g)).forEach(g => problems.push(`${where}: the work "${step.work}" needs the group "${g}", which the sheet does not have`));
+  Object.entries(work.fields || {}).forEach(([fid, type]) => {
+    const f = form.fields.find(x => x.id === fid);
+    if (!f || f.type !== type) problems.push(`${where}: the work "${step.work}" reads the account field "${fid}" (a ${type}), which the sheet does not have`);
+  });
+  Object.entries(work.rowFields || {}).forEach(([fid, type]) => {
+    const f = ((form.rows || {}).fields || []).find(x => x.id === fid);
+    if (!f || f.type !== type) problems.push(`${where}: the work "${step.work}" reads the fund field "${fid}" (a ${type}), which the sheet does not have`);
+  });
+  work.limits.filter(l => typeof (form.limits || {})[l] !== 'number').forEach(l => problems.push(`${where}: the work "${step.work}" compares with the limit "${l}", which the sheet does not give`));
+  work.refs.filter(r => !(subject.meta.refs || []).some(x => x.id === r)).forEach(r => problems.push(`${where}: the work "${step.work}" reads the value looked up "${r}", which the subject does not have`));
+  if (work.lists) {
+    const lists = subject.meta.lists || {};
+    (lists.accountType || []).filter(o => !engine.OWN_ACCOUNT[o.id]).forEach(o => problems.push(`${where}: the work "${step.work}" reads what each kind of account means, and the app does not know "${o.id}"`));
+    (lists.kind || []).filter(o => !engine.OWN_KIND[o.id]).forEach(o => problems.push(`${where}: the work "${step.work}" reads what each fund holds, and the app does not know "${o.id}"`));
+  }
   return problems;
 }
 
@@ -418,6 +462,18 @@ function ownFormsProblems(meta, engine) {
       fields.filter(f => f.type !== 'choose' && f.list).forEach(f => problems.push(`${where}: ${label} "${f.id}" is not a choice and names a list`));
     };
     check(form.fields, need.fields, 'field');
+    (form.groups || []).forEach(g => check(g.fields, {}, `field of the group ${g.id}`));
+    // fields filled together or not at all: each a field of its group, and optional (a required one is always filled)
+    (form.groups || []).forEach(g => (g.together || []).flat().forEach(fid => {
+      const f = g.fields.find(x => x.id === fid);
+      if (!f) problems.push(`${where}: the group ${g.id} fills "${fid}" together with others, and has no such field`);
+      else if (!f.optional) problems.push(`${where}: the group ${g.id} fills "${fid}" together with others, and it is not optional`);
+    }));
+    problems.push(...duplicatesOf((form.groups || []).map(g => g.id)).map(g => `${where}: the group "${g}" appears twice`));
+    if ((form.groups || form.limits) && form.into !== 'sheet') problems.push(`${where} has groups or limits, which only the sheet takes`);
+    const kinds = (lists.accountType || []).map(o => o.id);
+    form.fields.filter(f => f.for).forEach(f => f.for.filter(k => !kinds.includes(k)).forEach(k => problems.push(`${where}: field "${f.id}" is kept to accounts of the kind "${k}", which the list of account kinds does not have`)));
+    [...(form.rows ? form.rows.fields : []), ...(form.groups || []).flatMap(g => g.fields)].filter(f => f.for).forEach(f => problems.push(`${where}: "${f.id}" is kept to some kinds of account, and only an account's own field can be`));
     if (need.rows) { if (!form.rows) problems.push(`${where} has no rows for the funds, which the app reads`); else check(form.rows.fields, need.rows, 'fund field'); }
     else if (form.rows) problems.push(`${where} has rows, which a form into "${form.into}" does not take`);
     if (form.into === 'plan' && !form.words) problems.push(`${where} has no words (title, how, saved, before), which the plan step and the review show`);
@@ -520,7 +576,7 @@ export const V81 = subjectRule('V81', (s, check) => {
   const problems = [];
   Object.entries(s.meta.own || {}).forEach(([formId, form]) => {
     if (!SLOTS.includes(form.into)) problems.push(`form ${formId} writes into "${form.into}", which is not a slot of the learner's private data`);
-    [...form.fields, ...(form.rows ? form.rows.fields : [])].forEach(f => {
+    [...form.fields, ...(form.rows ? form.rows.fields : []), ...(form.groups || []).flatMap(g => g.fields)].forEach(f => {
       if (PRIVATE_FIELD.test(f.label) || PRIVATE_FIELD.test(f.id)) problems.push(`form ${formId} has a field "${f.label}", which would hold an account number, a login, a password or a Social Security number`);
     });
   });

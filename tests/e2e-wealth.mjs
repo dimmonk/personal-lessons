@@ -1,4 +1,4 @@
-// X26: Wealth's pilot lesson, "What it costs a year, in dollars", end to end on a phone (375 px). Not one of the checks the standard lists in 9:
+// X26: Wealth's pilot lesson, "What it costs a year, in dollars" (lesson 3 since 2026-10-22), end to end on a phone (375 px). Not one of the checks the standard lists in 9:
 // it was added with step 4 (3 to 9), the way step 3 ran Math's pilot. The test plays a learner who types every answer: the rule and the worked
 // account (the household's papers as tabs); a first group with the last steps left to the learner, one dollar figure typed as a percent used for
 // dollars (a named slip) and the question coming back with new numbers; a second group, one switch to the wrong kind of fund (a named slip);
@@ -33,18 +33,48 @@ async function answerAll(env, page, opts = {}) {
   }
 }
 
+// answers a question mixed in from an earlier lesson as a learner who has it right: each open ask by its own kind
+async function answerRight(env, page) {
+  for (;;) {
+    const ask = await page.evaluate(() => {
+      const i = Q.list[Q.at], data = FC.get('wealth'), open = openAsks(i.item, Q.support, Q.cur.a).filter(a => !(a.id in Q.cur.a))[0];
+      if (!open) return null;
+      if (open.kind === 'choose') return { id: open.id, kind: 'choose', right: chooseOptions(data, open).find(o => o.ok).id };
+      if (open.kind === 'number') return { id: open.id, kind: 'number', values: numberAnswers(i.item, open) };
+      if (open.kind === 'order') return { id: open.id, kind: 'order', steps: open.right };
+      return { id: open.id, kind: 'form', fields: open.fields.map(f => f.type === 'number' ? { id: f.id, value: numberAnswers(i.item, formFieldAsk(f))[0] }
+        : { id: f.id, option: chooseOptions(data, formFieldAsk(f)).find(o => o.ok).id }) };
+    });
+    if (!ask) return;
+    if (ask.kind === 'choose') await env.tap(page, ask.id, ask.right);
+    else if (ask.kind === 'number') await D.typeAnswer(page, ask.id, ask.values.map(D.cents));
+    else if (ask.kind === 'order') {
+      for (const step of ask.steps) await page.locator(`[data-ask="${ask.id}"] [data-order-step="${step}"]`).click();
+      if (await page.locator(`[data-ask="${ask.id}"] [data-order-answer]`).count()) await page.locator(`[data-ask="${ask.id}"] [data-order-answer]`).click();
+    }
+    else {
+      for (const f of ask.fields) {
+        if ('value' in f) await page.locator(`[data-ask="${ask.id}"] input[data-field="${f.id}"]`).fill(String(f.value));
+        else await page.locator(`[data-ask="${ask.id}"] [data-field="${f.id}"][data-fopt="${f.option}"]`).click();
+      }
+      await page.locator(`[data-form-answer="${ask.id}"]`).click();
+    }
+  }
+}
+
 async function theRuleAndTheWorkedAccount(env, c, page) {
   await env.inspect(c, page, 'the why');
   c.check((await env.screenText(page)).includes('Step 1 of 7'), 'the lesson is not seven steps long (the why, five steps and the check)');
   await env.goOn(page);
   let text = await env.screenText(page);
-  c.check(/A wrong idea/.test(text) && /same kind/.test(text) && /÷ 100/.test(text), 'the rule does not give the arithmetic, the same-kind test and the wrong idea');
+  c.check(/A wrong idea/.test(text) && /same kind/.test(text) && /÷ 100/.test(text) && /expense ratio/.test(text) && /administrative fee/.test(text) && /In a brokerage account, selling a fund at a gain is taxed/.test(text),
+    'the rule does not give the arithmetic, the papers’ words, the same-kind test, the tax on a switch outside a 401(k) and the wrong idea');
   await env.inspect(c, page, 'the rule');
   await env.goOn(page);
   while (await page.locator('#workedMore').count()) await page.locator('#workedMore').click();
   text = await env.screenText(page);
   c.check(/\$38,400 × 0\.95% = \$364\.80/.test(text) && /Together \$469\.62 a year/.test(text), 'the working is not shown step by step in dollars');
-  c.check(/The answer.*0\.95%.*0\.07%/.test(text) && /\$469\.62 a year/.test(text) && /Change it/.test(text) && /Index 500 Fund/.test(text), 'the worked account does not end on its four answers');
+  c.check(/The answer.*0\.95%.*0\.07%/.test(text) && /\$469\.62 a year/.test(text) && /Change it/.test(text) && /Crestline 500 Fund/.test(text), 'the worked account does not end on its four answers');
   c.check(await page.locator('.doc-tabs [data-doc-tab]').count() === 2 && await page.locator('.block-doc mark.cue').count() >= 3, 'the statement and the fee sheet are not two tabs with the deciding lines marked');
   await env.inspect(c, page, 'the worked account, finished');
   await env.goOn(page);
@@ -53,7 +83,7 @@ async function theFirstGroup(env, c, page) {
   c.check((await env.screenText(page)).includes('Question 1 of 1'), 'the first group is not one account');
   const first = await look(page);
   c.check(first.key === 'g-cost-leave' && first.open.length === 1 && first.open[0].id === 'cost', 'the first account does not leave only the dollars and the decision to the learner');
-  c.check(/Find each fund’s yearly cost on the fee sheet\./.test(await env.screenText(page)) && /The working is shown up to the last steps/.test(await env.screenText(page)), 'the first group does not show the working up to the last steps');
+  c.check(/Find each fund’s expense ratio on the fee sheet\./.test(await env.screenText(page)) && /The working is shown up to the last steps/.test(await env.screenText(page)), 'the first group does not show the working up to the last steps');
   await plainWords(c, page, env, 'an account with its first steps shown');
   await D.typeAnswer(page, 'cost', [D.cents(first.values.percentWhole)]);   // each percent used as if it were dollars
   c.check((await look(page)).open[0].id === 'call', 'the decision does not open after the dollars');
@@ -74,17 +104,24 @@ async function theFirstGroup(env, c, page) {
 }
 async function theSecondGroup(env, c, page) {
   let slipped = false, asked = [];
+  const mixed = [];
   while (await page.locator('#qNext').count()) {
     const now = await look(page);
+    if (!/^g-cost-/.test(now.key)) {   // a question of lessons 1 or 2, mixed in unlabelled
+      mixed.push(now);
+      await answerRight(env, page);
+      await next(page);
+      continue;
+    }
     asked.push(now);
     c.check(await page.locator('.block-doc mark.cue').count() === 0 && await page.locator('[data-feedback]').count() === 0, 'a line is marked or a mark shown before the answer');
     c.check(now.open[0].id === 'rates' && now.open.length === 1, 'an account alone does not start with the fee sheet to read');
     await plainWords(c, page, env, 'an account to judge');
     if (now.facets.call === 'change' && !slipped && !now.redo) {
       slipped = true;
-      await answerAll(env, page, { switchTo: 'bonds' });
+      await answerAll(env, page, { switchTo: 'other' });
       const text = await env.screenText(page);
-      c.check(/holds bonds, not/.test(text), 'switching to the cheapest fund of a different kind does not say what is different');
+      c.check(/It would change what your money is in/.test(text), 'switching to the cheapest fund of a different kind does not say what is different');
       c.check(await page.locator('.mark.no').count() === 1, 'the wrong fund to switch to is not the one miss');
     } else await answerAll(env, page);
     await next(page);
@@ -92,7 +129,8 @@ async function theSecondGroup(env, c, page) {
   const firsts = asked.filter(a => !a.redo), redone = asked.filter(a => a.redo);
   c.check(firsts.length === 2 && new Set(firsts.map(a => a.facets.call)).size === 2, `the second group is not one account to change and one to leave alone (${firsts.map(a => a.facets.call)})`);
   c.check(redone.length === 1 && redone[0].facets.call === 'change', 'the account missed does not come back as the same kind of account');
-  c.check(/1 of 2 right the first time/.test(await env.screenText(page)), 'the second group does not end on "1 of 2 right the first time"');
+  c.check(mixed.length === 1 && /^g-(list|cash)-/.test(mixed[0].key), `the second group does not mix in one question of lessons 1 and 2 (${mixed.map(m => m.key)})`);
+  c.check(/2 of 3 right the first time/.test(await env.screenText(page)), 'the second group does not end on "2 of 3 right the first time"');
   await env.goOn(page);
 }
 async function theOwnAccounts(env, c, page) {
@@ -120,7 +158,7 @@ async function theOwnAccounts(env, c, page) {
 }
 async function theCheck(env, c, page) {
   let text = await env.screenText(page);
-  c.check(/Three new questions/.test(text) && /At least 3 right \(what the account costs a year, to within a tenth\)/.test(text) && /At least 3 right \(change it or leave it\)/.test(text)
+  c.check(/Three new questions/.test(text) && /At least 3 right \(what the account costs a year, to within a dollar\)/.test(text) && /At least 3 right \(change it or leave it\)/.test(text)
     && /None wrong among accounts to leave alone/.test(text) && /None wrong \(the fund to switch to\)/.test(text), `the check does not name itself and its rules (${text.slice(0, 300)})`);
   await env.inspect(c, page, 'the first screen of the check');
   await env.goOn(page);
@@ -143,28 +181,30 @@ async function theCheck(env, c, page) {
 async function theRecord(env, c, page) {
   await env.clickVisible(page, '[data-v="subject"]');
   const text = await env.screenText(page);
-  c.check(/Check passed, 3 of 3/.test(text) && /1 of 8 lessons/.test(text) && /Practice again/.test(text) && /Work 401\(k\) \(401\(k\) from a job\)/.test(text), `the subject screen does not show the check passed and the account (${text.slice(0, 200)})`);
+  c.check(/Check passed, 3 of 3/.test(text) && /1 of 12 lessons/.test(text) && /Practice again/.test(text) && /Work 401\(k\) \(401\(k\) from a job\)/.test(text), `the subject screen does not show the check passed and the account (${text.slice(0, 200)})`);
   await env.inspect(c, page, 'the Wealth subject screen after the lesson');
   const stored = await env.storage(page), items = JSON.parse(stored['pl:wealth:items'] || '{}'), seen = JSON.parse(stored['pl:wealth:seen'] || '{}');
   const tries = Object.entries(items).flatMap(([key, e]) => e.tries.map(t => ({ key, ...t }))), inCheck = tries.filter(t => t.context === 'check'), practice = tries.filter(t => t.context === 'practice');
-  c.check(inCheck.length === 3 && inCheck.every(t => t.lesson === 'l2' && t.rev === 1 && t.sup === false && t.ok), 'the check was not stored as three right tries of lesson 2 without help');
+  c.check(inCheck.length === 3 && inCheck.every(t => t.lesson === 'l3' && t.rev === 1 && t.sup === false && t.ok), 'the check was not stored as three right tries of lesson 3 without help');
   c.check(practice.some(t => t.sup === true) && practice.some(t => t.sup === false), 'the practice was not stored with and without help');
   c.check(tries.some(t => t.r.cost === 'percent-as-dollars') && tries.some(t => t.r.switch === 'wrong-kind') && tries.every(t => typeof t.seed === 'number'), 'the two slips and the seed of each made account are not in the record');
   c.check(tries.every(t => Object.values(t.a.rates || { r1: [0] }).every(v => Array.isArray(v) && typeof v[0] === 'number') && (t.a.cost === undefined || (Array.isArray(t.a.cost) && typeof t.a.cost[0] === 'number'))
     && (t.a.call === undefined || typeof t.a.call === 'string')), 'an answer is not stored as the numbers typed and the option chosen');
   c.check(!/Work 401|Summit/.test(JSON.stringify(items)), 'the record of tries holds the learner\'s own accounts');
-  c.check(JSON.stringify(seen) === JSON.stringify({ l2: { rev: 1, at: 6 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
-  c.check(await page.evaluate(() => { const d = FC.get('wealth'); return lessonDone(d, 'wealth', d.lessons.l2) && lastCheck(d, 'wealth', d.lessons.l2).passed; }), 'the lesson is not done with the check passed');
+  c.check(JSON.stringify(seen) === JSON.stringify({ l3: { rev: 1, at: 6 } }), `the place saved is not the end of the lesson (${JSON.stringify(seen)})`);
+  c.check(await page.evaluate(() => { const d = FC.get('wealth'); return lessonDone(d, 'wealth', d.lessons.l3) && lastCheck(d, 'wealth', d.lessons.l3).passed; }), 'the lesson is not done with the check passed');
 }
 
 export async function X26(env) {
   const c = env.checker('X26'), { context, page } = await env.freshPage(c, 375);
   await env.openSubject(page, 'wealth');
   const subject = await env.screenText(page);
-  c.check(/What it costs a year, in dollars/.test(subject) && (subject.match(/Not built yet/g) || []).length === 7, 'the subject screen does not list the pilot and the seven parts not built yet');
-  c.check(subject.includes('Draft: not tried yet') && /Your accounts and dates/.test(subject) && /I started a job in the US/.test(subject), 'the pilot does not carry the draft line, or the subject has no place for your accounts and moments');
+  const unbuilt = await page.evaluate(() => { const d = FC.get('wealth'); return d.meta.parts.filter(p => !Object.values(d.lessons).some(l => l.part === p.id)).length; });
+  c.check(/What it costs a year, in dollars/.test(subject) && (subject.match(/Not built yet/g) || []).length === unbuilt, `the subject screen does not list the pilot and the ${unbuilt} parts not built yet`);
+  // every Wealth lesson passed its two reviews and is live (docs/subjects/wealth/review-final.md): no draft line on the subject screen
+  c.check(!subject.includes('Draft: not tried yet') && /Your accounts and dates/.test(subject) && /I started a job in the US/.test(subject), 'a live lesson still carries the draft line, or the subject has no place for your accounts and moments');
   await env.inspect(c, page, 'the Wealth subject screen');
-  await env.clickVisible(page, '#screen [data-l="l2"]');
+  await env.clickVisible(page, '#screen [data-l="l3"]');
   await theRuleAndTheWorkedAccount(env, c, page);
   await theFirstGroup(env, c, page);
   await theSecondGroup(env, c, page);
